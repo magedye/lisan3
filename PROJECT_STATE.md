@@ -1,10 +1,32 @@
 # Lisanapp Canonical Consolidation — Project State
 
 ## Repository State
-- **Branch**: `v7.1-execution`
-- **HEAD**: `6c98d56f32eb11ab7fcb3d62ae2676019ecbeeb7` Disable line-ending conversion repo-wide to preserve package checksums
-- **Remotes**: `origin git@github.com:magedye/tafser.git`
-- **Working Tree**: Many untracked and deleted files (mostly in `../V7` parent context). Active directory contains new consolidation files.
+- **Repository root**: `D:\APP\tafseer\lisanapp3` (dedicated Git repository for Lisanapp)
+- **Branch**: `main`
+- **HEAD**: `0e5f256deede286252c299aa2541ea5a8a6b0753` — baseline commit
+  `chore: establish governed Lisanapp implementation baseline` (202 tracked files)
+- **Remotes**: none configured (no push authorized)
+- **Working Tree**: CLEAN at baseline SHA
+
+### Git Provenance Note (2026-08-22)
+The previously recorded parent-repository reference (`tafseer` repo,
+branch `v7.1-execution`, HEAD `6c98d56f32eb11ab7fcb3d62ae2676019ecbeeb7`)
+does **NOT** identify the Lisanapp candidate: the entire `lisanapp3/`
+directory was untracked in that repository. An independent read-only
+adversarial V3 review discovered this provenance defect; this dedicated
+repository was initialized so candidate revisions identify only this
+product. The independent V3 verdict remains **V3_NOT_CONFIRMED** until a
+fresh independent review is performed against a committed candidate SHA.
+Do not treat pre-baseline evidence as candidate-SHA verification.
+
+### Pre-Baseline Evidence Continuity
+All prior execution evidence (pytest 45 collected / 5 E2E journeys,
+Ruff, Pyright 1.1.411 [5 errors / 62 warnings], Schemathesis v4.25.0
+trace, Cosmic Ray 108 mutations / 82 killed / 26 survived) was executed
+against the pre-baseline working tree whose content is captured by the
+baseline SHA. It supports continuity of state but does not by itself
+constitute verified-against-committed-candidate evidence; the V4 gate
+must re-execute verification against this SHA.
 
 ## Active Authorities
 - UX Constitution v4.0 (for frontend reference)
@@ -49,4 +71,4 @@
   - Replaced official_status with 4 axes: Epistemic, Review, Freshness, Publication on `SemanticClaim`.
   - Added `ReviewDecision` tracking and endpoints.
   - Publication strictly governed by Epistemic State, Review State, and Validated Corpus Snapshot.
-- **Next Action**: Proceed with WP-04 Slices E/F/G (Governance, Steward, Knowledge).
+- **Next Action**: Submit baseline SHA `0e5f256deede286252c299aa2541ea5a8a6b0753` for a fresh independent read-only review (or the next gate required by project policy) before any V4 execution. Known open defects from the prior independent review remain unresolved and must not be repaired silently.
