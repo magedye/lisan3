@@ -1,0 +1,35 @@
+# Python virtualenv and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.hypothesis/
+.mypy_cache/
+
+# Local SQLite runtime/test databases (not part of source history)
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+
+# Frontend dependencies and build outputs (also covered by frontend/.gitignore)
+node_modules/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+
+# IDE / OS local state
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Secrets / local environment overrides
+.env
+.env.*
+!.env.example
+
+# Logs and transient output
+*.log

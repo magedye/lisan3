@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Hypothesis Record",
+  "type": "object",
+  "required": [
+    "hypothesis_id",
+    "statement",
+    "status",
+    "falsification_condition",
+    "run_id",
+    "canonical_artifact_id",
+    "canonical_artifact_sha256",
+    "qac_version",
+    "qac_sha256",
+    "skill_version",
+    "methodology_version",
+    "validator_version",
+    "source_profile",
+    "created_at"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canonical_artifact_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "canonical_artifact_sha256": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "qac_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "qac_sha256": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "skill_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "methodology_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "validator_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_profile": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "hypothesis_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "statement": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "falsification_condition": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": true
+}

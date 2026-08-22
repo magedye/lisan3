@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lisan.local/schemas/lock-internal-result-artifact-v1.schema.json",
+  "title": "LOCK_INTERNAL_RESULT governed artifact v1.0-candidate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "artifact_type", "result_id", "authority_status", "root",
+    "claim_scope", "governed_corpus_refs", "evidence_refs", "dependency_refs",
+    "counterevidence_refs", "narrative"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0-candidate"},
+    "artifact_type": {"const": "LOCK_INTERNAL_RESULT_ARTIFACT"},
+    "result_id": {"type": "string", "minLength": 1},
+    "authority_status": {"const": "STRUCTURED_LOCK_RESULT_NO_OWNER_OR_RELEASE_ACCEPTANCE"},
+    "root": {"type": "string", "minLength": 1},
+    "claim_scope": {"type": "string", "minLength": 1},
+    "governed_corpus_refs": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^[1-9][0-9]{0,2}:[1-9][0-9]{0,2}$"}
+    },
+    "evidence_refs": {
+      "type": "array", "minItems": 1, "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "dependency_refs": {
+      "type": "array", "minItems": 1, "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "counterevidence_refs": {
+      "type": "array", "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "narrative": {"type": "string", "minLength": 1}
+  }
+}

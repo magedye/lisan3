@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Controlled Deviation Record v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "enhancement_id",
+    "label",
+    "problem_statement",
+    "evidence",
+    "proposed_change",
+    "compliance_check",
+    "risk_assessment",
+    "regression_plan",
+    "rollback",
+    "adoption_state"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "enhancement_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "label": {
+      "const": "CANDIDATE_METHODOLOGICAL_ENHANCEMENT"
+    },
+    "compliance_check": {
+      "type": "object",
+      "required": [
+        "quranic_sovereignty",
+        "falsifiability",
+        "evidence_memory_separation",
+        "traceability",
+        "external_leakage"
+      ],
+      "additionalProperties": false
+    },
+    "adoption_state": {
+      "enum": [
+        "PROPOSED",
+        "EXPERIMENTAL",
+        "OWNER_ADOPTED",
+        "REJECTED"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

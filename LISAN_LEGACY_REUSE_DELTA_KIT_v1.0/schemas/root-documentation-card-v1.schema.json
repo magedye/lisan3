@@ -1,0 +1,191 @@
+
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lisan.local/schemas/root-documentation-card-v1.schema.json",
+  "title": "Root Documentation Card v1.0-candidate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "artifact_type", "root", "root_identity_status", "claim_scope",
+    "canonical_profile", "official_lisan_status", "confidence", "formal_root_definition",
+    "root_core_explanation", "operational_specification", "conceptual_structure",
+    "corpus_coverage", "corpus_refs", "semantic_family", "local_realizations", "decisive_contexts",
+    "discriminating_predictions", "rejection_or_revision_conditions", "counterevidence", "counterevidence_search",
+    "unresolved_assignments", "evidence_refs", "root_core_evidence_sources", "dependency_refs", "result_artifact_ref",
+    "reopen_condition", "lock_eligibility", "lock_block_reasons", "owner_accepted",
+    "release_accepted"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0-candidate"},
+    "artifact_type": {"const": "ROOT_DOCUMENTATION_CARD"},
+    "root": {"type": "string", "minLength": 1},
+    "root_identity_status": {"enum": ["CONFIRMED", "ROOT_ASSIGNMENT_UNCERTAIN", "HOMOGRAPHY_CANDIDATE", "LEXEME_PARTITION_CANDIDATE"]},
+    "claim_scope": {"type": "string", "minLength": 1},
+    "canonical_profile": {
+      "type": "object", "additionalProperties": false,
+      "required": ["artifact_id", "sha256"],
+      "properties": {
+        "artifact_id": {"type": "string", "minLength": 1},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "official_lisan_status": {"$ref": "#/$defs/officialStatus"},
+    "confidence": {"enum": ["LOW", "MODERATE", "HIGH", "UNRESOLVED"]},
+    "formal_root_definition": {"type": "string"},
+    "root_core_explanation": {"type": "string"},
+    "operational_specification": {
+      "type": "object", "additionalProperties": false,
+      "required": ["required", "permitted", "excluded", "unknown"],
+      "properties": {
+        "required": {"type": "array", "items": {"$ref": "#/$defs/specItem"}},
+        "permitted": {"type": "array", "items": {"$ref": "#/$defs/specItem"}},
+        "excluded": {"type": "array", "items": {"$ref": "#/$defs/excludedItem"}},
+        "unknown": {"type": "array", "items": {"$ref": "#/$defs/specItem"}}
+      }
+    },
+    "conceptual_structure": {
+      "type": "object", "additionalProperties": false,
+      "required": ["structure_type", "focal_relation", "invariants"],
+      "properties": {
+        "structure_type": {"type": "string"}, "focal_relation": {"type": "string"},
+        "invariants": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "corpus_coverage": {
+      "type": "object", "additionalProperties": false,
+      "required": ["index_total", "index_examined", "deep_analysis_total", "context_diversity", "structural_stability"],
+      "properties": {
+        "index_total": {"type": "integer", "minimum": 0},
+        "index_examined": {"type": "integer", "minimum": 0},
+        "deep_analysis_total": {"type": "integer", "minimum": 0},
+        "context_diversity": {"type": "string", "minLength": 1},
+        "structural_stability": {"type": "string", "minLength": 1}
+      }
+    },
+    "corpus_refs": {
+      "type": "array",
+      "items": {"type": "string", "pattern": "^[1-9][0-9]{0,2}:[1-9][0-9]{0,2}$"},
+      "uniqueItems": true
+    },
+    "semantic_family": {
+      "type": "object", "additionalProperties": false,
+      "required": ["relation_map_ref", "essential_neighbor_cards", "unresolved_essential_boundaries", "unresolved_nonblocking_boundaries"],
+      "properties": {
+        "relation_map_ref": {"type": "string"},
+        "essential_neighbor_cards": {"type": "array", "items": {"type": "string"}},
+        "unresolved_essential_boundaries": {"type": "array", "items": {"type": "string"}},
+        "unresolved_nonblocking_boundaries": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "local_realizations": {"type": "array"},
+    "decisive_contexts": {"type": "array"},
+    "discriminating_predictions": {"type": "array", "items": {"type": "string"}},
+    "rejection_or_revision_conditions": {"type": "array", "items": {"type": "string"}},
+    "counterevidence": {"type": "array"},
+    "counterevidence_search": {
+      "type": "object", "additionalProperties": false,
+      "required": ["performed", "scope", "searched_corpus_refs", "result", "counterevidence_refs"],
+      "properties": {
+        "performed": {"type": "boolean"},
+        "scope": {"type": "string", "minLength": 1},
+        "searched_corpus_refs": {
+          "type": "array",
+          "items": {"type": "string", "pattern": "^[1-9][0-9]{0,2}:[1-9][0-9]{0,2}$"},
+          "uniqueItems": true
+        },
+        "result": {"enum": ["NOT_RUN", "NO_COUNTEREVIDENCE_FOUND", "COUNTEREVIDENCE_FOUND"]},
+        "counterevidence_refs": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"result": {"const": "COUNTEREVIDENCE_FOUND"}}},
+          "then": {"properties": {"counterevidence_refs": {"minItems": 1}}}
+        },
+        {
+          "if": {"properties": {"result": {"enum": ["NOT_RUN", "NO_COUNTEREVIDENCE_FOUND"]}}},
+          "then": {"properties": {"counterevidence_refs": {"maxItems": 0}}}
+        }
+      ]
+    },
+    "unresolved_assignments": {"type": "array", "items": {"type": "string"}},
+    "evidence_refs": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "root_core_evidence_sources": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/evidenceSource"}},
+    "dependency_refs": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "result_artifact_ref": {"type": "string", "minLength": 1},
+    "reopen_condition": {"type": "string", "minLength": 1},
+    "lock_eligibility": {"enum": ["ELIGIBLE", "BLOCKED", "NOT_APPLICABLE"]},
+    "lock_block_reasons": {"type": "array", "items": {"type": "string"}},
+    "owner_accepted": {"const": false},
+    "release_accepted": {"const": false}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"official_lisan_status": {"const": "LOCK_INTERNAL_RESULT"}}},
+      "then": {
+        "properties": {
+          "formal_root_definition": {"minLength": 1},
+          "corpus_refs": {"minItems": 1},
+          "evidence_refs": {"minItems": 1},
+          "dependency_refs": {"minItems": 1},
+          "counterevidence_search": {
+            "properties": {
+              "performed": {"const": true},
+              "searched_corpus_refs": {"minItems": 1},
+              "result": {"enum": ["NO_COUNTEREVIDENCE_FOUND", "COUNTEREVIDENCE_FOUND"]}
+            }
+          },
+          "discriminating_predictions": {"minItems": 1},
+          "rejection_or_revision_conditions": {"minItems": 1},
+          "unresolved_assignments": {"maxItems": 0},
+          "lock_eligibility": {"const": "ELIGIBLE"},
+          "lock_block_reasons": {"maxItems": 0}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"lock_eligibility": {"const": "BLOCKED"}}},
+      "then": {"properties": {"lock_block_reasons": {"minItems": 1}}}
+    }
+  ],
+  "$defs": {
+    "officialStatus": {"enum": ["UNKNOWN", "CANDIDATE_HYPOTHESIS", "SPARSE_EVIDENCE_CEILING", "LOCK_BLOCKED", "LOCK_INTERNAL_RESULT", "REVALIDATION_REQUIRED"]},
+    "claimType": {"enum": ["OBSERVATION", "CONSTRAINT", "HYPOTHESIS", "INFERENCE", "RESULT", "UNKNOWN"]},
+    "layer": {"enum": ["ABSTRACT_ROOT_CORE", "FORM_MORPHOLOGY", "CONSTRUCTION_SYNTAX", "PARTICIPANTS_ARGUMENTS", "DISCOURSE_CONTEXT", "UNKNOWN"]},
+    "evidenceSource": {
+      "type": "object", "additionalProperties": false,
+      "required": ["ref", "source_type", "authority_role"],
+      "properties": {
+        "ref": {"type": "string", "minLength": 1},
+        "source_type": {"enum": ["CANON_QURAN", "QAC_STRUCTURAL", "GLOSS_TRANSLATION", "DERIVED_READ_MODEL", "SUBSTITUTION_PROBE", "LETTER_SEMANTICS", "MORPHOLOGICAL_WEIGHT", "ORTHOGRAPHY_RASM", "INTERNAL_DERIVED_KNOWLEDGE", "EXTERNAL_REFERENCE"]},
+        "authority_role": {"enum": ["PRIMARY_QURANIC_EVIDENCE", "SUPPORTING_ONLY", "PROBE_ONLY", "PRESENT_NOT_USED", "DERIVED_BOUNDARY_QUESTION"]}
+      }
+    },
+    "specItem": {
+      "type": "object", "additionalProperties": false,
+      "required": ["statement", "claim_type", "layer_attribution", "scope", "evidence_refs", "counterevidence_refs", "dependency_refs"],
+      "properties": {
+        "statement": {"type": "string", "minLength": 1},
+        "claim_type": {"$ref": "#/$defs/claimType"},
+        "layer_attribution": {"$ref": "#/$defs/layer"},
+        "scope": {"type": "string", "minLength": 1},
+        "evidence_refs": {"type": "array", "items": {"type": "string"}},
+        "counterevidence_refs": {"type": "array", "items": {"type": "string"}},
+        "dependency_refs": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "excludedItem": {
+      "type": "object", "additionalProperties": false,
+      "required": ["statement", "claim_type", "layer_attribution", "scope", "evidence_refs", "counterevidence_refs", "dependency_refs", "positive_exclusion_evidence_refs"],
+      "properties": {
+        "statement": {"type": "string", "minLength": 1},
+        "claim_type": {"$ref": "#/$defs/claimType"},
+        "layer_attribution": {"$ref": "#/$defs/layer"},
+        "scope": {"type": "string", "minLength": 1},
+        "evidence_refs": {"type": "array", "items": {"type": "string"}},
+        "counterevidence_refs": {"type": "array", "items": {"type": "string"}},
+        "dependency_refs": {"type": "array", "items": {"type": "string"}},
+        "positive_exclusion_evidence_refs": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+      }
+    }
+  }
+}

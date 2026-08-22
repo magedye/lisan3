@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lisanapp | Analytics Dashboard</title>
+<!-- Fonts: IBM Plex Sans Arabic & JetBrains Mono -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#a43a3a",
+                    "outline-variant": "#bbcabf",
+                    "primary-fixed-dim": "#4edea3",
+                    "primary-fixed": "#6ffbbe",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed-variant": "#842225",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#2a313d",
+                    "surface-container": "#e7eefe",
+                    "on-secondary": "#ffffff",
+                    "outline": "#6c7a71",
+                    "on-secondary-fixed": "#001a42",
+                    "status-stale": "#F97316",
+                    "on-tertiary-fixed": "#410005",
+                    "on-background": "#151c27",
+                    "status-hypothesis": "#3B82F6",
+                    "surface": "#f9f9ff",
+                    "on-primary-fixed": "#002113",
+                    "status-rejected": "#EF4444",
+                    "on-error-container": "#93000a",
+                    "status-supported": "#10B981",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#d3daea",
+                    "inverse-primary": "#4edea3",
+                    "status-owner": "#8B5CF6",
+                    "surface-tint": "#006c49",
+                    "on-surface-variant": "#3c4a42",
+                    "inverse-on-surface": "#ebf1ff",
+                    "primary": "#006c49",
+                    "surface-container-high": "#e2e8f8",
+                    "on-tertiary-container": "#711419",
+                    "on-primary-container": "#00422b",
+                    "surface-card": "#FFFFFF",
+                    "on-tertiary": "#ffffff",
+                    "primary-container": "#10b981",
+                    "on-secondary-fixed-variant": "#004395",
+                    "surface-bright": "#f9f9ff",
+                    "background": "#f9f9ff",
+                    "surface-background": "#F9FAFB",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#005236",
+                    "surface-variant": "#dce2f3",
+                    "surface-container-low": "#f0f3ff",
+                    "on-primary": "#ffffff",
+                    "status-blocked": "#F59E0B",
+                    "surface-container-highest": "#dce2f3",
+                    "secondary-fixed": "#d8e2ff",
+                    "secondary-fixed-dim": "#adc6ff",
+                    "secondary-container": "#2170e4",
+                    "on-secondary-container": "#fefcff",
+                    "border-subtle": "#E5E7EB",
+                    "tertiary-fixed-dim": "#ffb3af",
+                    "tertiary-fixed": "#ffdad7",
+                    "on-surface": "#151c27",
+                    "tertiary-container": "#fc7c78",
+                    "secondary": "#0058be"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "panel-width-inspector": "400px",
+                    "base": "4px",
+                    "gutter": "24px",
+                    "stack-lg": "32px",
+                    "stack-sm": "8px",
+                    "stack-md": "16px",
+                    "margin-page": "40px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["IBM Plex Sans Arabic", "sans-serif"],
+                    "quran-verse-display": ["Traditional Quranic Font", "serif"],
+                    "mono-technical": ["JetBrains Mono", "monospace"],
+                    "body-md": ["IBM Plex Sans Arabic", "sans-serif"],
+                    "body-lg": ["IBM Plex Sans Arabic", "sans-serif"],
+                    "headline-md": ["IBM Plex Sans Arabic", "sans-serif"],
+                    "label-sm": ["IBM Plex Sans Arabic", "sans-serif"]
+            },
+            "fontSize": {
+                    "headline-lg": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+                    "quran-verse-display": ["32px", { "lineHeight": "56px", "fontWeight": "400" }],
+                    "mono-technical": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+                    "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                    "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                    "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                    "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Chart pseudo-elements for simple CSS visualizations */
+        .pie-chart {
+            background: conic-gradient(
+                #10B981 0% 35%, 
+                #F59E0B 35% 44%, 
+                #F97316 44% 44%, 
+                #E5E7EB 44% 100%
+            );
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="bg-surface-background text-on-background font-body-md text-body-md antialiased overflow-hidden flex h-screen rtl">
+<!-- Shared Component: SideNavBar -->
+<nav class="flex flex-col h-full rtl bg-surface-container-lowest border-l border-border-subtle fixed top-0 right-0 h-screen w-64 z-50">
+<!-- Brand Header -->
+<div class="p-gutter border-b border-border-subtle flex items-center gap-stack-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">dataset</span>
+</div>
+<div>
+<h1 class="text-headline-lg font-headline-lg font-bold text-primary">ليسان</h1>
+<p class="font-label-sm text-label-sm text-on-surface-variant">منصة الأبحاث المحكمة</p>
+</div>
+</div>
+<!-- Navigation Tabs -->
+<div class="flex-1 overflow-y-auto py-stack-md">
+<ul class="flex flex-col gap-base px-base">
+<!-- Active Tab: الرئيسية (Dashboard/Home) -->
+<li>
+<a class="flex items-center gap-stack-sm px-4 py-3 rounded-lg text-primary font-bold border-r-4 border-primary bg-surface-container-low hover:bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">home</span>
+<span>الرئيسية</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-stack-sm px-4 py-3 rounded-lg text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">science</span>
+<span>الأبحاث</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-stack-sm px-4 py-3 rounded-lg text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">library_books</span>
+<span>المعرفة</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-stack-sm px-4 py-3 rounded-lg text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">fact_check</span>
+<span>المراجعة</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-stack-sm px-4 py-3 rounded-lg text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">gavel</span>
+<span>الحوكمة</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-stack-sm px-4 py-3 rounded-lg text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span>العمليات</span>
+</a>
+</li>
+</ul>
+</div>
+<!-- CTA & Footer Tabs -->
+<div class="p-gutter border-t border-border-subtle flex flex-col gap-stack-md">
+<button class="w-full bg-primary text-on-primary py-2 rounded-lg font-body-md flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined">add</span>
+                بدء بحث جديد
+            </button>
+<div class="flex flex-col gap-base">
+<a class="flex items-center gap-stack-sm px-2 py-2 text-on-surface-variant font-label-sm text-label-sm hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">help</span>
+                    المساعدة
+                </a>
+<a class="flex items-center gap-stack-sm px-2 py-2 text-on-surface-variant font-label-sm text-label-sm hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">settings_applications</span>
+                    الإعدادات
+                </a>
+</div>
+</div>
+</nav>
+<!-- Main Workspace -->
+<main class="flex-1 mr-64 flex flex-col h-full bg-surface-background">
+<!-- Shared Component: TopAppBar -->
+<header class="flex justify-between items-center w-full px-margin-page py-2 rtl bg-surface border-b border-border-subtle docked full-width top-0 sticky z-40">
+<!-- Right side (Breadcrumbs / Links) -->
+<div class="flex items-center gap-gutter">
+<h2 class="font-headline-md text-headline-md font-extrabold text-primary">ليسان | محرك الأبحاث</h2>
+<div class="h-6 w-px bg-border-subtle mx-2"></div>
+<nav class="flex items-center gap-stack-md">
+<a class="font-mono-technical text-mono-technical text-on-surface-variant hover:text-primary hover:bg-surface-container-low px-2 py-1 rounded transition-colors" href="#">{ن ش ز}</a>
+<a class="font-mono-technical text-mono-technical text-on-surface-variant hover:text-primary hover:bg-surface-container-low px-2 py-1 rounded transition-colors" href="#">منهجية v2.1</a>
+<a class="font-mono-technical text-mono-technical text-on-surface-variant hover:text-primary hover:bg-surface-container-low px-2 py-1 rounded transition-colors" href="#">Corpus-72</a>
+</nav>
+</div>
+<!-- Left side (Actions, Search on left logic reversed for RTL context, Trailing actions) -->
+<div class="flex items-center gap-stack-md">
+<div class="relative">
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="bg-surface-container-lowest border border-border-subtle rounded-full py-1.5 pr-10 pl-4 font-body-md text-sm focus:outline-none focus:border-primary w-64" placeholder="بحث..." type="text"/>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 text-sm font-label-sm text-primary border border-primary rounded hover:bg-surface-container-low transition-colors">بوابة النقاء</button>
+<button class="px-3 py-1.5 text-sm font-label-sm text-on-surface-variant border border-border-subtle rounded hover:bg-surface-container-low transition-colors">المختبر الأعمى</button>
+</div>
+<div class="flex items-center gap-1 border-r border-border-subtle pr-4 ml-2">
+<button class="p-2 text-on-surface-variant hover:text-primary rounded-full hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-primary rounded-full hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined">history</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-primary rounded-full hover:bg-surface-container-low transition-colors">
+<img alt="الباحث" class="w-8 h-8 rounded-full border border-border-subtle object-cover" data-alt="A professional, minimalist avatar illustration of a researcher in a modern, light-mode academic setting, featuring neutral tones and sharp, clean lines." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfOm67U3xmdIzbZwBzDwOA7qySRV24evX67NptIlVL__2_N5bGcOdoV61JFyGid5NEXCuIuxEsI5tD7uIzCEU_ImObwTPA6xudKaFnzXxmeB3Gku0xKBPH0UQ4iGQ-hSbMehV4dCMY6p1dtuO5xCq96cPZUkGRy3iokAaEmTNkRNZ02vXw6ap8tR712hHWG7WcPdOxGBHWs7NijjgIXDo0wHViPHdeNiLOe5df-myEuM-2N0SimfA"/>
+</button>
+</div>
+</div>
+</header>
+<!-- Canvas / Scrollable Content -->
+<div class="flex-1 overflow-y-auto p-margin-page">
+<div class="flex justify-between items-end mb-stack-lg">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-1">تحليلات حالة الأبحاث</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">نظرة عامة على بوابات المنهجية وحالة الجذور اللغوية بعد إعادة التحقق.</p>
+</div>
+<div class="flex items-center gap-2 font-mono-technical text-mono-technical text-on-surface-variant bg-surface-card px-3 py-1.5 rounded border border-border-subtle shadow-sm">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>آخر تحديث: قبل دقيقتين</span>
+</div>
+</div>
+<!-- Bento Grid: Top Summary Cards -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-stack-lg">
+<!-- Total Roots -->
+<div class="bg-surface-card rounded-xl border border-border-subtle p-stack-md flex flex-col gap-2 relative overflow-hidden">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">إجمالي الجذور</span>
+<span class="material-symbols-outlined text-outline">database</span>
+</div>
+<div class="font-headline-lg text-headline-lg text-on-background mt-2">128</div>
+<div class="font-mono-technical text-mono-technical text-on-surface-variant mt-1 opacity-80">عبر جميع الطبقات المعرفية</div>
+<!-- Decorative subtle accent -->
+<div class="absolute bottom-0 left-0 w-full h-1 bg-border-subtle"></div>
+</div>
+<!-- Internally Locked -->
+<div class="bg-surface-card rounded-xl border border-border-subtle border-b-4 border-b-status-supported p-stack-md flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">مقفل داخلياً (ناجح)</span>
+<span class="material-symbols-outlined text-status-supported">lock</span>
+</div>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-headline-lg text-headline-lg text-on-background">45</span>
+<span class="font-mono-technical text-mono-technical text-status-supported bg-status-supported/10 px-2 py-0.5 rounded">35%</span>
+</div>
+<div class="font-mono-technical text-mono-technical text-on-surface-variant mt-1 opacity-80">LOCK_INTERNAL_RESULT</div>
+</div>
+<!-- Locked/Blocked -->
+<div class="bg-surface-card rounded-xl border border-border-subtle border-b-4 border-b-status-blocked p-stack-md flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">مقفل / محظور</span>
+<span class="material-symbols-outlined text-status-blocked">gavel</span>
+</div>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-headline-lg text-headline-lg text-on-background">12</span>
+<span class="font-mono-technical text-mono-technical text-status-blocked bg-status-blocked/10 px-2 py-0.5 rounded">9%</span>
+</div>
+<div class="font-mono-technical text-mono-technical text-on-surface-variant mt-1 opacity-80">LOCK_BLOCKED</div>
+</div>
+<!-- Stale -->
+<div class="bg-surface-card rounded-xl border border-border-subtle border-b-4 border-b-status-stale p-stack-md flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">متعفن / متقادم</span>
+<span class="material-symbols-outlined text-status-stale">hourglass_bottom</span>
+</div>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-headline-lg text-headline-lg text-on-background">0</span>
+<span class="font-mono-technical text-mono-technical text-status-stale bg-status-stale/10 px-2 py-0.5 rounded">0%</span>
+</div>
+<div class="font-mono-technical text-mono-technical text-on-surface-variant mt-1 opacity-80">بعد جولة إعادة التحقق</div>
+</div>
+</div>
+<!-- Middle Section: Charts -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter mb-stack-lg">
+<!-- Status Distribution Chart (Pie) -->
+<div class="bg-surface-card rounded-xl border border-border-subtle p-stack-md flex flex-col col-span-1">
+<h3 class="font-headline-md text-headline-md text-on-background mb-stack-md">التوزيع الإبستيمولوجي</h3>
+<div class="flex-1 flex flex-col items-center justify-center gap-stack-md">
+<!-- CSS Pie Chart Placeholder -->
+<div class="w-48 h-48 pie-chart shadow-inner relative flex items-center justify-center">
+<div class="w-32 h-32 bg-surface-card rounded-full flex flex-col items-center justify-center">
+<span class="font-headline-lg text-headline-lg text-on-background">128</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">إجمالي</span>
+</div>
+</div>
+<!-- Legend -->
+<div class="w-full flex flex-col gap-2 mt-4 font-mono-technical text-mono-technical text-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-status-supported"></div><span>مقفل داخلياً</span></div>
+<span class="text-on-surface-variant">35%</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-status-blocked"></div><span>محظور منهجياً</span></div>
+<span class="text-on-surface-variant">9%</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-border-subtle"></div><span>قيد البحث (مفتوح)</span></div>
+<span class="text-on-surface-variant">56%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Most Common Failure Gates Chart (Bar) -->
+<div class="bg-surface-card rounded-xl border border-border-subtle p-stack-md flex flex-col col-span-2">
+<div class="flex justify-between items-center mb-stack-md">
+<h3 class="font-headline-md text-headline-md text-on-background">بوابات الإخفاق الشائعة</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">خاص بحالة LOCK_BLOCKED</span>
+</div>
+<div class="flex-1 flex flex-col justify-center gap-stack-md">
+<!-- Bar 1 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-end font-mono-technical text-mono-technical text-sm">
+<span class="text-on-background">قابلية الدحض (Falsifiability Gate)</span>
+<span class="text-status-blocked font-bold">42%</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2.5 overflow-hidden flex">
+<div class="bg-status-blocked h-2.5 rounded-full" style="width: 42%"></div>
+</div>
+</div>
+<!-- Bar 2 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-end font-mono-technical text-mono-technical text-sm">
+<span class="text-on-background">التمايز الدلالي (Distinctiveness Gate)</span>
+<span class="text-status-blocked font-bold opacity-90">38%</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2.5 overflow-hidden flex">
+<div class="bg-status-blocked h-2.5 rounded-full opacity-90" style="width: 38%"></div>
+</div>
+</div>
+<!-- Bar 3 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-end font-mono-technical text-mono-technical text-sm">
+<span class="text-on-background">التسرب السياقي (Contextual Leakage)</span>
+<span class="text-status-blocked font-bold opacity-70">20%</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2.5 overflow-hidden flex">
+<div class="bg-status-blocked h-2.5 rounded-full opacity-70" style="width: 20%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Section: Recent Activity Table -->
+<div class="bg-surface-card rounded-xl border border-border-subtle overflow-hidden flex flex-col">
+<div class="p-stack-md border-b border-border-subtle flex justify-between items-center bg-surface-background/50">
+<h3 class="font-headline-md text-headline-md text-on-background">الجذور النشطة مؤخراً</h3>
+<button class="font-label-sm text-label-sm text-primary flex items-center gap-1 hover:underline">
+                        عرض السجل الكامل
+                        <span class="material-symbols-outlined text-[16px]">arrow_left_alt</span>
+</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-right border-collapse">
+<thead>
+<tr class="bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant border-b border-border-subtle">
+<th class="py-3 px-stack-md font-semibold">الجذر اللغوي</th>
+<th class="py-3 px-stack-md font-semibold">الحالة الإبستيمولوجية</th>
+<th class="py-3 px-stack-md font-semibold">نوع النشاط</th>
+<th class="py-3 px-stack-md font-semibold text-left">آخر تحديث</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-sm text-on-background">
+<!-- Row 1 -->
+<tr class="border-b border-border-subtle hover:bg-surface-container-low transition-colors group cursor-pointer">
+<td class="py-3 px-stack-md">
+<div class="inline-flex items-center gap-2 bg-surface-background border border-border-subtle rounded px-2 py-1 font-mono-technical text-mono-technical font-bold text-primary group-hover:border-primary transition-colors">
+                                        {ن ش ز}
+                                    </div>
+</td>
+<td class="py-3 px-stack-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-status-supported/10 text-status-supported font-mono-technical text-mono-technical text-xs border border-status-supported/20">
+<span class="w-1.5 h-1.5 rounded-full bg-status-supported"></span>
+                                        LOCK_INTERNAL
+                                    </span>
+</td>
+<td class="py-3 px-stack-md text-on-surface-variant font-mono-technical">إعادة تحقق جماعي (Mass Reval)</td>
+<td class="py-3 px-stack-md text-left text-on-surface-variant font-mono-technical">قبل دقيقتين</td>
+</tr>
+<!-- Row 2 -->
+<tr class="border-b border-border-subtle hover:bg-surface-container-low transition-colors group cursor-pointer">
+<td class="py-3 px-stack-md">
+<div class="inline-flex items-center gap-2 bg-surface-background border border-border-subtle rounded px-2 py-1 font-mono-technical text-mono-technical font-bold text-primary group-hover:border-primary transition-colors">
+                                        {ض ر ب}
+                                    </div>
+</td>
+<td class="py-3 px-stack-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-status-blocked/10 text-status-blocked font-mono-technical text-mono-technical text-xs border border-status-blocked/20">
+<span class="w-1.5 h-1.5 rounded-full bg-status-blocked"></span>
+                                        LOCK_BLOCKED
+                                    </span>
+</td>
+<td class="py-3 px-stack-md text-on-surface-variant font-mono-technical">إخفاق التمايز (Gate Failure)</td>
+<td class="py-3 px-stack-md text-left text-on-surface-variant font-mono-technical">قبل 15 دقيقة</td>
+</tr>
+<!-- Row 3 -->
+<tr class="border-b border-border-subtle hover:bg-surface-container-low transition-colors group cursor-pointer">
+<td class="py-3 px-stack-md">
+<div class="inline-flex items-center gap-2 bg-surface-background border border-border-subtle rounded px-2 py-1 font-mono-technical text-mono-technical font-bold text-primary group-hover:border-primary transition-colors">
+                                        {ق و م}
+                                    </div>
+</td>
+<td class="py-3 px-stack-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-mono-technical text-mono-technical text-xs border border-border-subtle">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                                        DRAFT_OPEN
+                                    </span>
+</td>
+<td class="py-3 px-stack-md text-on-surface-variant font-mono-technical">تحديث افتراض (Hypothesis Update)</td>
+<td class="py-3 px-stack-md text-left text-on-surface-variant font-mono-technical">قبل ساعة</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer">
+<td class="py-3 px-stack-md">
+<div class="inline-flex items-center gap-2 bg-surface-background border border-border-subtle rounded px-2 py-1 font-mono-technical text-mono-technical font-bold text-primary group-hover:border-primary transition-colors">
+                                        {ع ق ل}
+                                    </div>
+</td>
+<td class="py-3 px-stack-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-status-supported/10 text-status-supported font-mono-technical text-mono-technical text-xs border border-status-supported/20">
+<span class="w-1.5 h-1.5 rounded-full bg-status-supported"></span>
+                                        LOCK_INTERNAL
+                                    </span>
+</td>
+<td class="py-3 px-stack-md text-on-surface-variant font-mono-technical">تدقيق حوكمة (Governance Audit)</td>
+<td class="py-3 px-stack-md text-left text-on-surface-variant font-mono-technical">قبل 3 ساعات</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</main>
+</body></html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Audit Log - Lisanapp</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-bright": "#f9f9ff",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#002113",
+                        "surface-dim": "#d3daea",
+                        "inverse-primary": "#4edea3",
+                        "surface": "#f9f9ff",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#d8e2ff",
+                        "on-secondary-fixed-variant": "#004395",
+                        "on-error": "#ffffff",
+                        "on-tertiary-container": "#711419",
+                        "inverse-on-surface": "#ebf1ff",
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#0058be",
+                        "surface-variant": "#dce2f3",
+                        "surface-container": "#e7eefe",
+                        "background": "#f9f9ff",
+                        "primary-fixed": "#6ffbbe",
+                        "on-primary": "#ffffff",
+                        "outline": "#6c7a71",
+                        "secondary-container": "#2170e4",
+                        "status-owner": "#8B5CF6",
+                        "surface-container-lowest": "#ffffff",
+                        "border-subtle": "#E5E7EB",
+                        "on-surface": "#151c27",
+                        "status-stale": "#F97316",
+                        "on-background": "#151c27",
+                        "on-tertiary-fixed": "#410005",
+                        "on-primary-container": "#00422b",
+                        "on-primary-fixed-variant": "#005236",
+                        "on-tertiary-fixed-variant": "#842225",
+                        "primary-container": "#10b981",
+                        "status-rejected": "#EF4444",
+                        "surface-container-highest": "#dce2f3",
+                        "surface-tint": "#006c49",
+                        "status-supported": "#10B981",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#ffdad7",
+                        "surface-container-low": "#f0f3ff",
+                        "tertiary-container": "#fc7c78",
+                        "outline-variant": "#bbcabf",
+                        "primary": "#006c49",
+                        "inverse-surface": "#2a313d",
+                        "tertiary-fixed-dim": "#ffb3af",
+                        "tertiary": "#a43a3a",
+                        "surface-background": "#F9FAFB",
+                        "surface-card": "#FFFFFF",
+                        "secondary-fixed-dim": "#adc6ff",
+                        "status-hypothesis": "#3B82F6",
+                        "on-secondary-container": "#fefcff",
+                        "on-surface-variant": "#3c4a42",
+                        "surface-container-high": "#e2e8f8",
+                        "on-secondary-fixed": "#001a42",
+                        "primary-fixed-dim": "#4edea3",
+                        "status-blocked": "#F59E0B",
+                        "on-error-container": "#93000a"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.125rem",
+                        lg: "0.25rem",
+                        xl: "0.5rem",
+                        full: "0.75rem"
+                    },
+                    spacing: {
+                        "stack-sm": "8px",
+                        "panel-width-inspector": "400px",
+                        "stack-lg": "32px",
+                        "margin-page": "40px",
+                        "gutter": "24px",
+                        "stack-md": "16px",
+                        "base": "4px"
+                    },
+                    fontFamily: {
+                        "headline-lg": ["IBM Plex Sans Arabic"],
+                        "body-lg": ["IBM Plex Sans Arabic"],
+                        "body-md": ["IBM Plex Sans Arabic"],
+                        "quran-verse-display": ["Traditional Quranic Font"],
+                        "headline-md": ["IBM Plex Sans Arabic"],
+                        "label-sm": ["IBM Plex Sans Arabic"],
+                        "mono-technical": ["jetbrainsMono"]
+                    },
+                    fontSize: {
+                        "headline-lg": ["24px", { lineHeight: "32px", fontWeight: "700" }],
+                        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+                        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+                        "quran-verse-display": ["32px", { lineHeight: "56px", fontWeight: "400" }],
+                        "headline-md": ["20px", { lineHeight: "28px", fontWeight: "600" }],
+                        "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }],
+                        "mono-technical": ["13px", { lineHeight: "20px", fontWeight: "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        /* Custom scrollbar for high-density technical feel */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f0f3ff; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #bbcabf; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6c7a71; 
+        }
+    </style>
+</head>
+<body class="bg-surface-background text-on-surface font-body-md overflow-hidden flex h-screen rtl">
+<!-- Global Shell: SideNavBar -->
+<aside class="fixed top-0 right-0 h-screen w-64 border-l border-border-subtle bg-surface-container-lowest flex flex-col rtl z-50">
+<!-- Header -->
+<div class="px-6 py-8 flex flex-col items-center border-b border-border-subtle">
+<div class="w-12 h-12 bg-primary-container text-on-primary-container rounded-lg flex items-center justify-center mb-4 shadow-sm">
+<span class="material-symbols-outlined text-2xl" data-icon="book" data-weight="fill">book</span>
+</div>
+<h1 class="font-headline-md text-headline-md font-bold text-primary">ليسان</h1>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">منصة الأبحاث المحكمة</p>
+</div>
+<!-- Primary Action CTA -->
+<div class="px-4 py-6 border-b border-border-subtle">
+<button class="w-full bg-primary text-on-primary hover:bg-surface-tint transition-colors duration-200 py-3 rounded flex items-center justify-center gap-2 font-headline-md text-[14px]">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span>
+                بدء بحث جديد
+            </button>
+</div>
+<!-- Navigation Links -->
+<nav class="flex-1 overflow-y-auto py-4 flex flex-col gap-1 px-3">
+<a class="flex items-center gap-3 px-4 py-3 rounded text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+                الرئيسية
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="science">science</span>
+                الأبحاث
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="library_books">library_books</span>
+                المعرفة
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="fact_check">fact_check</span>
+                المراجعة
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="gavel">gavel</span>
+                الحوكمة
+            </a>
+<!-- Active State: Operations -->
+<a class="flex items-center gap-3 px-4 py-3 rounded text-primary font-bold border-r-4 border-primary bg-surface-container-low scale-[0.98] transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="settings" data-weight="fill">settings</span>
+                العمليات
+            </a>
+</nav>
+<!-- Footer Links -->
+<div class="mt-auto border-t border-border-subtle p-4 flex flex-col gap-1">
+<a class="flex items-center gap-3 px-4 py-2 rounded text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200 text-sm" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="help">help</span>
+                المساعدة
+            </a>
+<a class="flex items-center gap-3 px-4 py-2 rounded text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200 text-sm" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="settings_applications">settings_applications</span>
+                الإعدادات
+            </a>
+</div>
+</aside>
+<!-- Main Workspace -->
+<div class="flex-1 mr-64 flex flex-col h-screen bg-surface-background">
+<!-- TopAppBar -->
+<header class="docked full-width top-0 sticky z-40 border-b border-border-subtle bg-surface flex justify-between items-center w-full px-margin-page py-2 rtl shadow-sm">
+<div class="flex items-center gap-gutter">
+<span class="font-headline-md text-headline-md font-extrabold text-primary">ليسان | محرك الأبحاث</span>
+<nav class="hidden lg:flex gap-6 mr-8 border-r border-border-subtle pr-8">
+<a class="font-mono-technical text-mono-technical text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors py-1 px-2 rounded" href="#">
+                        {ن ش ز}
+                    </a>
+<a class="font-mono-technical text-mono-technical text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors py-1 px-2 rounded" href="#">
+                        منهجية v2.1
+                    </a>
+<a class="font-mono-technical text-mono-technical text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors py-1 px-2 rounded" href="#">
+                        Corpus-72
+                    </a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex gap-2">
+<button class="font-label-sm text-label-sm px-3 py-1.5 rounded border border-border-subtle text-on-surface-variant hover:bg-surface-container-low transition-colors">بوابة النقاء</button>
+<button class="font-label-sm text-label-sm px-3 py-1.5 rounded bg-surface-dim text-on-surface hover:bg-surface-container-high transition-colors">المختبر الأعمى</button>
+</div>
+<div class="flex items-center gap-2 border-r border-border-subtle pr-4">
+<button class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-surface-container-low text-on-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="notifications">notifications</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-surface-container-low text-on-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="history">history</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-surface-container-low text-on-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content Area: Audit Log -->
+<main class="flex-1 overflow-y-auto p-margin-page flex flex-col gap-stack-lg">
+<!-- Page Header & Toolbar -->
+<div class="flex flex-col gap-4">
+<div class="flex justify-between items-end">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-1">سجل التدقيق المؤسسي (Audit Log)</h2>
+<p class="font-body-md text-on-surface-variant text-sm">مراقبة وتسجيل كافة التعديلات الإبستيمية والإجرائية داخل مساحة البحث.</p>
+</div>
+<div class="flex gap-3">
+<button class="flex items-center gap-2 px-4 py-2 border border-border-subtle bg-surface-card rounded text-sm font-label-sm hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-[18px]" data-icon="download">download</span>
+                            تصدير السجل (CSV)
+                        </button>
+<button class="flex items-center gap-2 px-4 py-2 bg-primary-container text-on-primary-container rounded text-sm font-label-sm hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-[18px]" data-icon="filter_list">filter_list</span>
+                            عوامل التصفية
+                        </button>
+</div>
+</div>
+<!-- Filters Bar -->
+<div class="bg-surface-card border border-border-subtle rounded p-3 flex gap-4 items-center">
+<div class="flex-1 relative">
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]" data-icon="search">search</span>
+<input class="w-full bg-surface-container-lowest border border-border-subtle rounded pl-3 pr-10 py-1.5 text-sm font-mono-technical focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="البحث برقم المعرف، الكيان، أو المستخدم..." type="text"/>
+</div>
+<div class="flex items-center gap-2 border-r border-border-subtle pr-4">
+<span class="text-xs font-label-sm text-on-surface-variant">الكيان:</span>
+<select class="bg-surface-container-lowest border border-border-subtle rounded px-2 py-1.5 text-sm font-mono-technical focus:outline-none">
+<option>الكل (All Entities)</option>
+<option>الجذور (Roots)</option>
+<option>الفرضيات (Hypotheses)</option>
+</select>
+</div>
+<div class="flex items-center gap-2 border-r border-border-subtle pr-4">
+<span class="text-xs font-label-sm text-on-surface-variant">التاريخ:</span>
+<div class="flex items-center gap-1 bg-surface-container-lowest border border-border-subtle rounded px-2 py-1.5 text-sm font-mono-technical">
+<span>آخر 24 ساعة</span>
+<span class="material-symbols-outlined text-[14px]" data-icon="arrow_drop_down">arrow_drop_down</span>
+</div>
+</div>
+</div>
+</div>
+<!-- High-Density Data Grid -->
+<div class="bg-surface-card border border-border-subtle rounded overflow-hidden shadow-sm flex-1 flex flex-col">
+<div class="overflow-x-auto flex-1">
+<table class="w-full text-right border-collapse whitespace-nowrap">
+<thead class="bg-surface-container-low border-b border-border-subtle sticky top-0 z-10">
+<tr>
+<th class="px-4 py-3 font-label-sm text-on-surface-variant w-48">الفاعل (Actor)</th>
+<th class="px-4 py-3 font-label-sm text-on-surface-variant">الإجراء (Action)</th>
+<th class="px-4 py-3 font-label-sm text-on-surface-variant w-40">الوقت (Timestamp)</th>
+<th class="px-4 py-3 font-label-sm text-on-surface-variant">الكيان المتأثر (Entity)</th>
+<th class="px-4 py-3 font-label-sm text-on-surface-variant">الحالة (State Transition)</th>
+<th class="px-4 py-3 font-label-sm text-on-surface-variant">السبب (Reason)</th>
+<th class="px-4 py-3 font-label-sm text-on-surface-variant">الأثر (Impact)</th>
+</tr>
+</thead>
+<tbody class="font-mono-technical text-mono-technical text-on-surface text-sm divide-y divide-border-subtle">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="px-4 py-3">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-[10px]">USR</div>
+<div class="flex flex-col">
+<span>د. أحمد باحث</span>
+<span class="text-[10px] text-on-surface-variant">ID: usr_8f92a</span>
+</div>
+</div>
+</td>
+<td class="px-4 py-3">
+<span class="inline-flex items-center gap-1 text-status-owner bg-status-owner/10 px-2 py-0.5 rounded text-xs border border-status-owner/20">
+<span class="material-symbols-outlined text-[12px]" data-icon="edit">edit</span>
+                                        UPDATE_HYPOTHESIS
+                                    </span>
+</td>
+<td class="px-4 py-3 text-on-surface-variant text-[11px]">2024-10-27T14:32:01Z</td>
+<td class="px-4 py-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[14px] text-primary" data-icon="hub">hub</span>
+<span>الجذر {ق ر أ}</span>
+<span class="text-[10px] bg-surface-variant px-1 rounded text-on-surface-variant">root_104</span>
+</div>
+</td>
+<td class="px-4 py-3">
+<div class="flex flex-col gap-1 text-[11px]">
+<div class="text-error line-through opacity-70 flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]" data-icon="remove">remove</span>
+                                            "دلالة الجمع"
+                                        </div>
+<div class="text-status-supported flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]" data-icon="add">add</span>
+                                            "دلالة الجمع والضم"
+                                        </div>
+</div>
+</td>
+<td class="px-4 py-3 text-xs max-w-[200px] truncate" title="توسيع الدلالة بناءً على سياق الآية 75 من سورة القيامة">
+                                    توسيع الدلالة بناءً على سياق الآية...
+                                </td>
+<td class="px-4 py-3">
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-status-hypothesis" title="تغيير في الفرضية"></span>
+<span class="text-[10px]">Moderate</span>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="px-4 py-3">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-dim text-on-surface flex items-center justify-center font-bold text-[10px]">SYS</div>
+<div class="flex flex-col">
+<span>نظام الحوكمة الآلي</span>
+<span class="text-[10px] text-on-surface-variant">ID: sys_auto_gov</span>
+</div>
+</div>
+</td>
+<td class="px-4 py-3">
+<span class="inline-flex items-center gap-1 text-error bg-error/10 px-2 py-0.5 rounded text-xs border border-error/20">
+<span class="material-symbols-outlined text-[12px]" data-icon="block">block</span>
+                                        FLAG_EVIDENCE
+                                    </span>
+</td>
+<td class="px-4 py-3 text-on-surface-variant text-[11px]">2024-10-27T14:15:22Z</td>
+<td class="px-4 py-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[14px] text-tertiary" data-icon="menu_book">menu_book</span>
+<span>مرجع (لسان العرب)</span>
+<span class="text-[10px] bg-surface-variant px-1 rounded text-on-surface-variant">evd_992</span>
+</div>
+</td>
+<td class="px-4 py-3">
+<div class="flex items-center gap-2 text-[11px]">
+<span class="text-on-surface-variant">ACTIVE</span>
+<span class="material-symbols-outlined text-[12px] text-on-surface-variant" data-icon="arrow_forward">arrow_forward</span>
+<span class="text-error font-bold">QUARANTINED</span>
+</div>
+</td>
+<td class="px-4 py-3 text-xs text-error">
+                                    انتهاك قاعدة المختبر الأعمى (تفعيل تلقائي)
+                                </td>
+<td class="px-4 py-3">
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-error" title="تأثير حرج"></span>
+<span class="text-[10px] text-error">Critical</span>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="px-4 py-3">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-bold text-[10px]">ADM</div>
+<div class="flex flex-col">
+<span>مدير المنهجية</span>
+<span class="text-[10px] text-on-surface-variant">ID: adm_001</span>
+</div>
+</div>
+</td>
+<td class="px-4 py-3">
+<span class="inline-flex items-center gap-1 text-status-supported bg-status-supported/10 px-2 py-0.5 rounded text-xs border border-status-supported/20">
+<span class="material-symbols-outlined text-[12px]" data-icon="check_circle">check_circle</span>
+                                        APPROVE_PHASE
+                                    </span>
+</td>
+<td class="px-4 py-3 text-on-surface-variant text-[11px]">2024-10-27T10:05:00Z</td>
+<td class="px-4 py-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[14px] text-primary" data-icon="account_tree">account_tree</span>
+<span>مشروع {ن ش ز}</span>
+<span class="text-[10px] bg-surface-variant px-1 rounded text-on-surface-variant">prj_042</span>
+</div>
+</td>
+<td class="px-4 py-3">
+<div class="flex items-center gap-2 text-[11px]">
+<span class="text-status-blocked">IN_REVIEW</span>
+<span class="material-symbols-outlined text-[12px] text-on-surface-variant" data-icon="arrow_forward">arrow_forward</span>
+<span class="text-status-supported font-bold">PUBLISHED</span>
+</div>
+</td>
+<td class="px-4 py-3 text-xs text-on-surface-variant">
+                                    استيفاء جميع معايير بوابة النقاء
+                                </td>
+<td class="px-4 py-3">
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-status-supported" title="تأثير هيكلي"></span>
+<span class="text-[10px]">Global</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination / Footer of Grid -->
+<div class="bg-surface-container-low border-t border-border-subtle p-3 flex justify-between items-center text-xs font-mono-technical text-on-surface-variant">
+<div>إظهار 1 إلى 3 من أصل 1,245 سجل</div>
+<div class="flex gap-1">
+<button class="px-2 py-1 rounded border border-border-subtle bg-surface hover:bg-surface-container-high disabled:opacity-50" disabled="">السابق</button>
+<button class="px-2 py-1 rounded border border-border-subtle bg-primary text-on-primary">1</button>
+<button class="px-2 py-1 rounded border border-border-subtle bg-surface hover:bg-surface-container-high">2</button>
+<button class="px-2 py-1 rounded border border-border-subtle bg-surface hover:bg-surface-container-high">3</button>
+<span class="px-2 py-1">...</span>
+<button class="px-2 py-1 rounded border border-border-subtle bg-surface hover:bg-surface-container-high">التالي</button>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

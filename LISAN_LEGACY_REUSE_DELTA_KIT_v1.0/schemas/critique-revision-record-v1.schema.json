@@ -1,0 +1,72 @@
+
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lisan.local/schemas/critique-revision-record-v1.schema.json",
+  "title": "Critique Revision Record v1.0-candidate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "artifact_type", "critique_id", "rejected_or_weakened_claim_id",
+    "critique_validity", "replacement_supplied_by_critique", "replacement_classification",
+    "replacement_adopted", "revision_cycle_id", "revision_artifact_ref", "parent_result_artifact_ref",
+    "replacement_result_artifact_ref", "replacement_claim_id", "corpus_rerun_artifact_ref",
+    "hypothesis_set_refs", "comparison_result_ref", "falsification_result_ref",
+    "corpus_reopened", "hypotheses_rebuilt",
+    "family_differentiation_reopened", "falsification_reopened", "evidence_refs",
+    "official_lisan_status", "owner_accepted", "release_accepted"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0-candidate"},
+    "artifact_type": {"const": "CRITIQUE_REVISION_RECORD"},
+    "critique_id": {"type": "string", "minLength": 1},
+    "rejected_or_weakened_claim_id": {"type": "string", "minLength": 1},
+    "critique_validity": {"enum": ["VALID", "PARTIAL", "INVALID", "UNKNOWN"]},
+    "replacement_supplied_by_critique": {"type": "boolean"},
+    "replacement_classification": {"enum": ["DERIVED_CRITIQUE_INPUT", "NOT_APPLICABLE"]},
+    "replacement_adopted": {"type": "boolean"},
+    "revision_cycle_id": {"type": "string"},
+    "revision_artifact_ref": {"type": "string"},
+    "parent_result_artifact_ref": {"type": "string"},
+    "replacement_result_artifact_ref": {"type": "string"},
+    "replacement_claim_id": {"type": "string"},
+    "corpus_rerun_artifact_ref": {"type": "string"},
+    "hypothesis_set_refs": {"type": "array", "items": {"enum": ["H1", "H2", "C0"]}, "uniqueItems": true},
+    "comparison_result_ref": {"type": "string"},
+    "falsification_result_ref": {"type": "string"},
+    "corpus_reopened": {"type": "boolean"},
+    "hypotheses_rebuilt": {"type": "boolean"},
+    "family_differentiation_reopened": {"type": "boolean"},
+    "falsification_reopened": {"type": "boolean"},
+    "evidence_refs": {"type": "array", "items": {"type": "string"}},
+    "official_lisan_status": {"enum": ["UNKNOWN", "CANDIDATE_HYPOTHESIS", "SPARSE_EVIDENCE_CEILING", "LOCK_BLOCKED", "LOCK_INTERNAL_RESULT", "REVALIDATION_REQUIRED"]},
+    "owner_accepted": {"const": false},
+    "release_accepted": {"const": false}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"replacement_supplied_by_critique": {"const": true}}},
+      "then": {"properties": {"replacement_classification": {"const": "DERIVED_CRITIQUE_INPUT"}}}
+    },
+    {
+      "if": {"properties": {"replacement_adopted": {"const": true}}},
+      "then": {
+        "properties": {
+          "revision_cycle_id": {"minLength": 1},
+          "revision_artifact_ref": {"minLength": 1},
+          "parent_result_artifact_ref": {"minLength": 1},
+          "replacement_result_artifact_ref": {"minLength": 1},
+          "replacement_claim_id": {"minLength": 1},
+          "corpus_rerun_artifact_ref": {"minLength": 1},
+          "hypothesis_set_refs": {"minItems": 3},
+          "comparison_result_ref": {"minLength": 1},
+          "falsification_result_ref": {"minLength": 1},
+          "evidence_refs": {"minItems": 1},
+          "corpus_reopened": {"const": true},
+          "hypotheses_rebuilt": {"const": true},
+          "family_differentiation_reopened": {"const": true},
+          "falsification_reopened": {"const": true}
+        }
+      }
+    }
+  ]
+}

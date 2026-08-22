@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Lisan Test Record",
+  "type": "object",
+  "required": [
+    "test_id",
+    "test_class",
+    "target",
+    "oracle",
+    "success_criterion",
+    "failure_criterion",
+    "claim_supported",
+    "claim_not_supported",
+    "independence_notes"
+  ],
+  "properties": {
+    "test_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "test_class": {
+      "enum": [
+        "EXECUTABLE_VALIDATION",
+        "BEHAVIORAL_REGRESSION",
+        "RESEARCH_VALIDITY_EVIDENCE"
+      ]
+    },
+    "target": {
+      "type": "string",
+      "minLength": 1
+    },
+    "oracle": {
+      "type": "string",
+      "minLength": 1
+    },
+    "success_criterion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "failure_criterion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claim_supported": {
+      "type": "string"
+    },
+    "claim_not_supported": {
+      "type": "string"
+    },
+    "independence_notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

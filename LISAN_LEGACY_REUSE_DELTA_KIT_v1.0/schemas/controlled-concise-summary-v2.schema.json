@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Controlled Concise Semantic Summary v2",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "target",
+    "claim_scope",
+    "result_summary",
+    "lock_state",
+    "semantic_boundary",
+    "coverage",
+    "contamination_status",
+    "canonical_status",
+    "release_status",
+    "blockers",
+    "reopen_condition"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.0"
+    },
+    "target": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claim_scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "result_summary": {
+      "type": "string"
+    },
+    "lock_state": {
+      "enum": [
+        "LOCKED_SCOPE_ONLY",
+        "LOCK_BLOCKED",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "semantic_boundary": {
+      "type": "object",
+      "required": [
+        "REQUIRED",
+        "PERMITTED",
+        "EXCLUDED",
+        "UNKNOWN"
+      ],
+      "properties": {
+        "REQUIRED": {
+          "type": "array"
+        },
+        "PERMITTED": {
+          "type": "array"
+        },
+        "EXCLUDED": {
+          "type": "array"
+        },
+        "UNKNOWN": {
+          "type": "array"
+        }
+      },
+      "additionalProperties": false
+    },
+    "coverage": {
+      "type": "object",
+      "required": [
+        "index",
+        "deep_analysis",
+        "context_diversity"
+      ],
+      "additionalProperties": true
+    },
+    "contamination_status": {
+      "type": "object",
+      "required": [
+        "documentary_prior_isolation",
+        "parametric_prior_risk",
+        "observed_ungrounded_conventional_gloss"
+      ],
+      "properties": {
+        "documentary_prior_isolation": {
+          "enum": [
+            "VERIFIED",
+            "NOT_VERIFIED"
+          ]
+        },
+        "parametric_prior_risk": {
+          "const": "PRESENT"
+        },
+        "observed_ungrounded_conventional_gloss": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "canonical_status": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "VERIFIED",
+            "CANON_PENDING",
+            "PROVISIONAL_USER_SUPPLIED"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "release_status": {
+      "type": "object",
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "value": {
+          "enum": [
+            "EXPLORATORY",
+            "VERIFIED_FOR_PACKAGE_PROFILE",
+            "RESEARCH_READY"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "blockers": {
+      "type": "array"
+    },
+    "reopen_condition": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

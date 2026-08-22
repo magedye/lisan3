@@ -1,0 +1,357 @@
+<!DOCTYPE html><html dir="rtl" lang="ar"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>مستكشف المعرفة | ليسان</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#fefcff",
+                        "surface-variant": "#dce2f3",
+                        "primary-fixed-dim": "#4edea3",
+                        "on-tertiary-fixed": "#410005",
+                        "status-blocked": "#F59E0B",
+                        "primary-fixed": "#6ffbbe",
+                        "inverse-surface": "#2a313d",
+                        "secondary-fixed-dim": "#adc6ff",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "primary-container": "#10b981",
+                        "on-primary-fixed-variant": "#005236",
+                        "surface": "#f9f9ff",
+                        "on-primary-fixed": "#002113",
+                        "on-surface-variant": "#3c4a42",
+                        "surface-tint": "#006c49",
+                        "secondary-fixed": "#d8e2ff",
+                        "on-primary": "#ffffff",
+                        "inverse-primary": "#4edea3",
+                        "outline-variant": "#bbcabf",
+                        "surface-container": "#e7eefe",
+                        "on-secondary": "#ffffff",
+                        "status-hypothesis": "#3B82F6",
+                        "primary": "#006c49",
+                        "inverse-on-surface": "#ebf1ff",
+                        "tertiary-fixed-dim": "#ffb3af",
+                        "surface-card": "#FFFFFF",
+                        "surface-background": "#F9FAFB",
+                        "on-tertiary-fixed-variant": "#842225",
+                        "on-secondary-fixed": "#001a42",
+                        "status-stale": "#F97316",
+                        "on-secondary-fixed-variant": "#004395",
+                        "surface-container-highest": "#dce2f3",
+                        "border-subtle": "#E5E7EB",
+                        "status-rejected": "#EF4444",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "secondary": "#0058be",
+                        "surface-container-low": "#f0f3ff",
+                        "background": "#f9f9ff",
+                        "status-supported": "#10B981",
+                        "tertiary-container": "#fc7c78",
+                        "on-primary-container": "#00422b",
+                        "surface-container-high": "#e2e8f8",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#711419",
+                        "on-surface": "#151c27",
+                        "surface-dim": "#d3daea",
+                        "tertiary-fixed": "#ffdad7",
+                        "outline": "#6c7a71",
+                        "status-owner": "#8B5CF6",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#2170e4",
+                        "on-background": "#151c27",
+                        "surface-bright": "#f9f9ff",
+                        "tertiary": "#a43a3a",
+                        "status-green": "#22c55e",
+                        "status-amber": "#f59e0b",
+                        "status-blue": "#3b82f6",
+                        "status-gray": "#6b7280",
+                        "status-orange": "#f97316",
+                        "status-red": "#ef4444"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "base": "4px",
+                        "margin-page": "40px",
+                        "stack-lg": "32px",
+                        "panel-width-inspector": "400px",
+                        "gutter": "24px",
+                        "stack-sm": "8px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["IBM Plex Sans Arabic", "sans-serif"],
+                        "label-sm": ["IBM Plex Sans Arabic", "sans-serif"],
+                        "headline-md": ["IBM Plex Sans Arabic", "sans-serif"],
+                        "body-md": ["IBM Plex Sans Arabic", "sans-serif"],
+                        "quran-verse-display": ["Traditional Quranic Font", "serif"],
+                        "mono-technical": ["monospace"],
+                        "headline-lg": ["IBM Plex Sans Arabic", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'IBM Plex Sans Arabic', sans-serif; background-color: #f9f9ff; }
+        .graph-container { position: relative; width: 100%; height: 600px; overflow: hidden; background: #ffffff; border: 1px solid #E5E7EB; border-radius: 0.5rem; }
+        .node { position: absolute; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; font-family: monospace; font-weight: bold; color: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .node:hover { transform: scale(1.1); box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        .node.locked { background-color: #10B981; } /* status-supported */
+        .node.blocked { background-color: #F59E0B; } /* status-blocked */
+        .node.hypothesis { background-color: #3B82F6; } /* status-hypothesis */
+        .node.unknown { background-color: #6b7280; } /* status-gray */
+        .node.stale { background-color: #F97316; } /* status-stale */
+        .node.rejected { background-color: #EF4444; } /* status-rejected */
+        
+        .edge { position: absolute; transform-origin: top left; z-index: 0; }
+        .edge.solid { border-top: 2px solid #94a3b8; }
+        .edge.dashed { border-top: 2px dashed #94a3b8; }
+        .edge.thin { border-top: 1px solid #cbd5e1; }
+        
+        .info-card { display: none; position: absolute; background: white; border: 1px solid #E5E7EB; border-radius: 0.25rem; padding: 16px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); z-index: 50; width: 250px; }
+        .info-card.active { display: block; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface flex h-screen overflow-hidden">
+<!-- Top AppBar (JSON execution) -->
+<header class="bg-surface dark:bg-surface-dim border-b border-border-subtle docked full-width top-0 sticky z-40 flex justify-between items-center w-full px-margin-page py-2 rtl fixed w-full top-0 left-0">
+<div class="flex items-center gap-4">
+<h1 class="font-headline-md text-headline-md font-extrabold text-primary">ليسان | محرك الأبحاث</h1>
+<nav class="hidden md:flex gap-6 mr-8">
+<a class="text-on-surface-variant font-body-md hover:text-primary hover:bg-surface-container-low transition-colors" href="#">{ن ش ز}</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary hover:bg-surface-container-low transition-colors" href="#">منهجية v2.1</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary hover:bg-surface-container-low transition-colors" href="#">Corpus-72</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-on-primary px-4 py-2 rounded font-body-md hover:opacity-80 transition-opacity">بوابة النقاء</button>
+<button class="border border-border-subtle px-4 py-2 rounded text-on-surface-variant font-body-md hover:bg-surface-container-low transition-colors">المختبر الأعمى</button>
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">notifications</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">history</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">account_circle</span>
+</div>
+<img alt="الباحث" class="w-8 h-8 rounded-full object-cover ml-2 border border-border-subtle" data-alt="A small circular avatar placeholder image for the researcher profile, simple geometric shapes, light background, minimalist style, 50x50 pixels, professional aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfxkhWKcsDhqC4VIbY9sQuHSJbckMPVUVB_gyFzqRWXJ0xdfgjLz-Munh6Z4PY-jYFVgs8AJw3KpZJuNxMpYpw7m5OcLukr7CdOSZlzIqJKPf-B3ynLhYJtdcl656LeXFJJK4jOJwKulMBx-5it-ybx0Ts7JNdaXZ7MMtWc2rc_Y1TSxRVsHL_omOpbnJoDqQFOxMbZiZ6nRrjYAWUtE296HIcaFX9e1XJXR0NZgR3QdMTrb8QLMc">
+</div>
+</header>
+<!-- Side NavBar (JSON execution) -->
+<aside class="bg-surface-container-lowest dark:bg-inverse-surface fixed top-0 right-0 h-screen w-64 border-l border-border-subtle flex flex-col h-full rtl pt-16 z-30">
+<div class="p-4 border-b border-border-subtle flex flex-col items-center">
+<h2 class="text-headline-lg font-headline-lg font-bold text-primary dark:text-primary-fixed-dim mb-1">ليسان</h2>
+<p class="text-label-sm font-label-sm text-on-surface-variant text-center">منصة الأبحاث المحكمة</p>
+<button class="mt-4 bg-primary text-on-primary w-full py-2 rounded font-body-md hover:opacity-80 transition-opacity">بدء بحث جديد</button>
+</div>
+<nav class="flex-1 overflow-y-auto py-4">
+<ul class="flex flex-col gap-2 px-2">
+<li class=""><a class="flex items-center gap-3 p-2 rounded text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#"><span class="material-symbols-outlined">home</span> الرئيسية</a></li>
+<li class=""><a class="flex items-center gap-3 p-2 rounded text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#"><span class="material-symbols-outlined">science</span> الأبحاث</a></li>
+<li class=""><a class="flex items-center gap-3 p-2 rounded text-primary font-bold border-r-4 border-primary bg-surface-container-low" href="#"><span class="material-symbols-outlined">library_books</span> المعرفة</a></li>
+<li class=""><a class="flex items-center gap-3 p-2 rounded text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#"><span class="material-symbols-outlined">fact_check</span> المراجعة</a></li>
+<li class=""><a class="flex items-center gap-3 p-2 rounded text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#"><span class="material-symbols-outlined">gavel</span> الحوكمة</a></li>
+<li class=""><a class="flex items-center gap-3 p-2 rounded text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#"><span class="material-symbols-outlined">settings</span> العمليات</a></li>
+</ul>
+</nav>
+<div class="p-4 border-t border-border-subtle">
+<ul class="flex flex-col gap-2">
+<li class=""><a class="flex items-center gap-3 p-2 rounded text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#"><span class="material-symbols-outlined">help</span> المساعدة</a></li>
+<li class=""><a class="flex items-center gap-3 p-2 rounded text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#"><span class="material-symbols-outlined">settings_applications</span> الإعدادات</a></li>
+</ul>
+</div>
+</aside>
+<!-- Main Workspace -->
+<main class="flex-1 ml-0 mr-64 mt-16 p-margin-page overflow-y-auto bg-surface-background relative">
+<!-- Global Banner -->
+<div class="bg-status-stale text-on-primary p-4 rounded-lg mb-6 flex items-center gap-3 shadow-sm">
+<span class="material-symbols-outlined">warning</span>
+<p class="font-body-md font-bold">14 جذراً أصبحت بحاجة إلى إعادة فحص (STALE) بسبب تغيير عتبة الأدلة في مركز الحوكمة.</p>
+</div>
+<div class="flex justify-between items-end mb-6">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">مستكشف المعرفة</h2>
+<p class="font-body-md text-on-surface-variant">تحليل وتتبع حالة الجذور اللغوية والعلاقات الدلالية.</p>
+</div>
+<button class="border border-border-subtle bg-surface-card text-on-surface px-4 py-2 rounded-lg font-body-md flex items-center gap-2 hover:bg-surface-container-low transition-colors shadow-sm" id="pulseBtn">
+<span class="material-symbols-outlined text-status-hypothesis">radar</span> محاكاة البطلان المتعدي
+            </button>
+</div>
+<!-- Top Filter Bar -->
+<div class="bg-surface-card p-4 rounded-lg border border-border-subtle mb-6 flex flex-wrap gap-4 items-center shadow-sm">
+<div class="flex-1 min-w-[200px]">
+<label class="block font-label-sm text-on-surface-variant mb-1">بحث عن جذر</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute right-3 top-2 text-on-surface-variant">search</span>
+<input class="w-full pl-3 pr-10 py-2 border border-border-subtle rounded-md bg-surface text-on-surface focus:outline-none focus:border-primary font-mono-technical" dir="ltr" placeholder="مثال: ن ش ز" type="text">
+</div>
+</div>
+<div class="flex-1 min-w-[200px]">
+<label class="block font-label-sm text-on-surface-variant mb-1">الحالة الإبستيمية</label>
+<select class="w-full p-2 border border-border-subtle rounded-md bg-surface text-on-surface focus:outline-none focus:border-primary font-body-md">
+<option value="all">الكل</option>
+<option value="locked">LOCK_INTERNAL_RESULT</option>
+<option value="blocked">LOCK_BLOCKED</option>
+<option value="hypothesis">CANDIDATE_HYPOTHESIS</option>
+</select>
+</div>
+<div class="flex-1 min-w-[200px]">
+<label class="block font-label-sm text-on-surface-variant mb-1">الحقل الدلالي</label>
+<select class="w-full p-2 border border-border-subtle rounded-md bg-surface text-on-surface focus:outline-none focus:border-primary font-body-md">
+<option value="all">الكل</option>
+<option value="social">اجتماعي (Social)</option>
+<option value="legal">قانوني (Legal)</option>
+<option value="physical">فيزيائي (Physical)</option>
+</select>
+</div>
+</div>
+<div class="flex gap-6 h-[700px]">
+<!-- Main Graph Area -->
+<div class="flex-1 flex flex-col">
+<div class="bg-surface-card border border-border-subtle rounded-lg flex-1 relative overflow-hidden shadow-sm" id="graphContainer">
+<!-- Graph nodes will be injected here via JS -->
+<!-- Info Card -->
+<div class="info-card" id="infoCard">
+<div class="flex justify-between items-start mb-2 border-b border-border-subtle pb-2">
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface" dir="ltr" id="cardTitle">{ن ش ز}</h3>
+<span class="px-2 py-1 text-xs rounded text-white bg-status-supported" id="cardStatus">LOCKED</span>
+</div>
+<p class="font-body-md text-on-surface-variant mb-4 text-sm">نواة المعنى: الارتفاع والبروز المادي أو المعنوي.</p>
+<button class="w-full bg-surface-container-low text-primary border border-border-subtle py-2 rounded text-sm font-bold hover:bg-surface-container-high transition-colors">فتح مساحة العمل</button>
+</div>
+<div class="edge solid" style="width: 141.598px; left: 330px; top: 230px; transform: rotate(137.862deg);"></div><div class="edge dashed" style="width: 127.328px; left: 330px; top: 230px; transform: rotate(-43.4089deg);"></div><div class="edge solid" style="width: 263.059px; left: 225px; top: 325px; transform: rotate(-8.74616deg);"></div><div class="edge solid" style="width: 179.025px; left: 485px; top: 285px; transform: rotate(125.91deg);"></div><div class="edge solid" style="width: 142.522px; left: 640px; top: 440px; transform: rotate(-52.125deg);"></div><div class="edge thin" style="width: 133.417px; left: 640px; top: 440px; transform: rotate(12.9946deg);"></div><div class="edge dashed" style="width: 282.931px; left: 532.5px; top: 532.5px; transform: rotate(-46.4321deg);"></div><div class="edge solid" style="width: 181.004px; left: 277.5px; top: 177.5px; transform: rotate(147.407deg);"></div><div class="edge thin" style="width: 74.2462px; left: 330px; top: 230px; transform: rotate(-135deg);"></div><div class="edge thin" style="width: 252.017px; left: 485px; top: 285px; transform: rotate(79.1359deg);"></div><div class="node locked text-sm" style="width: 60px; height: 60px; left: 300px; top: 200px; z-index: 10;">{ن ش ز}</div><div class="node locked text-sm" style="width: 50px; height: 50px; left: 200px; top: 300px; z-index: 10;">{ع ل و}</div><div class="node blocked text-sm" style="width: 70px; height: 70px; left: 450px; top: 250px; z-index: 10;">{ق و م}</div><div class="node hypothesis text-sm" style="width: 45px; height: 45px; left: 400px; top: 120px; z-index: 10;">{ن ف ر}</div><div class="node locked text-sm" style="width: 80px; height: 80px; left: 600px; top: 400px; z-index: 10;">{ك ت ب}</div><div class="node stale text-sm" style="width: 65px; height: 65px; left: 500px; top: 500px; z-index: 10;">{ع م ل}</div><div class="node unknown text-sm" style="width: 55px; height: 55px; left: 700px; top: 300px; z-index: 10;">{ف ع ل}</div><div class="node locked text-sm" style="width: 50px; height: 50px; left: 150px; top: 450px; z-index: 10;">{ر ز ق}</div><div class="node hypothesis text-sm" style="width: 40px; height: 40px; left: 750px; top: 450px; z-index: 10;">{ق ر أ}</div><div class="node rejected text-sm" style="width: 60px; height: 60px; left: 350px; top: 400px; z-index: 10;">{ح ك م}</div><div class="node locked text-sm" style="width: 55px; height: 55px; left: 250px; top: 150px; z-index: 10;">{س م ع}</div><div class="node blocked text-sm" style="width: 50px; height: 50px; left: 100px; top: 250px; z-index: 10;">{ب ص ر}</div></div>
+</div>
+<!-- Knowledge Summary Panel -->
+<div class="w-panel-width-inspector bg-surface-card border border-border-subtle rounded-lg p-6 shadow-sm overflow-y-auto"><h3 class="font-headline-md text-headline-md font-bold text-on-surface mb-6 border-b border-border-subtle pb-2">ملخص المعرفة</h3><div class="grid grid-cols-2 gap-4 mb-6"><div class="bg-surface-container-low p-4 rounded border border-border-subtle text-center"><span class="block text-3xl font-bold text-primary mb-1">128</span><span class="font-label-sm text-on-surface-variant">إجمالي الجذور</span></div><div class="bg-surface-container-low p-4 rounded border border-border-subtle text-center"><span class="block text-3xl font-bold text-on-surface mb-1">12</span><span class="font-label-sm text-on-surface-variant">عائلات دلالية</span></div></div><div class="mb-6 p-3 bg-error-container text-on-error-container rounded-lg border border-error flex items-start gap-2"><span class="material-symbols-outlined text-sm">gavel</span><div class="text-xs font-bold">تحذير: النقاء المنهجي (Methodological Purity)<br><span class="font-normal">لم يتم استيفاء شروط العزل الدلالي الكامل لهذا النطاق.</span></div></div><h4 class="font-label-sm text-on-surface-variant mb-3 uppercase tracking-wider">تغطية الاستقصاء (Investigation Coverage)</h4><div class="grid grid-cols-2 gap-2 mb-6"><div class="p-2 bg-surface border border-border-subtle rounded"><div class="text-xs text-on-surface-variant">الوقوعات المحللة</div><div class="font-bold text-sm">1,420</div></div><div class="p-2 bg-surface border border-border-subtle rounded"><div class="text-xs text-on-surface-variant">الصيغ المفحوصة</div><div class="font-bold text-sm">42</div></div><div class="p-2 bg-surface border border-border-subtle rounded"><div class="text-xs text-on-surface-variant">الجيران الحرجون</div><div class="font-bold text-sm">8</div></div><div class="p-2 bg-surface border border-border-subtle rounded"><div class="text-xs text-on-surface-variant">اختبارات التكذيب</div><div class="font-bold text-sm">15</div></div></div><div class="space-y-2 mb-6"><button class="w-full flex items-center justify-center gap-2 bg-secondary text-on-secondary py-2 rounded font-bold text-sm hover:opacity-90 transition-opacity"><span class="material-symbols-outlined text-sm">refresh</span> إعادة إنتاج النتيجة (Reproduction)</button><p class="text-[10px] text-center text-on-surface-variant italic">Prototype UI - Backend Contract Missing</p></div><h4 class="font-label-sm text-on-surface-variant mb-3 uppercase tracking-wider">توزيع الحالة</h4><div class="space-y-3"><div class="flex items-center justify-between p-2 rounded bg-surface hover:bg-surface-container-low border border-transparent hover:border-border-subtle"><div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-status-supported"></span><span class="font-mono-technical text-sm text-on-surface">LOCK_INTERNAL</span></div><span class="font-bold text-on-surface">45</span></div><div class="flex items-center justify-between p-2 rounded bg-surface hover:bg-surface-container-low border border-transparent hover:border-border-subtle"><div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-status-blocked"></span><span class="font-mono-technical text-sm text-on-surface">LOCK_BLOCKED</span></div><span class="font-bold text-on-surface">12</span></div><div class="flex items-center justify-between p-2 rounded bg-surface hover:bg-surface-container-low border border-transparent hover:border-border-subtle"><div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-status-hypothesis"></span><span class="font-mono-technical text-sm text-on-surface">CANDIDATE</span></div><span class="font-bold text-on-surface">28</span></div><div class="flex items-center justify-between p-2 rounded bg-surface hover:bg-surface-container-low border border-transparent hover:border-border-subtle"><div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-status-stale"></span><span class="font-mono-technical text-sm text-on-surface">STALE</span></div><span class="font-bold text-on-surface">14</span></div><div class="flex items-center justify-between p-2 rounded bg-surface hover:bg-surface-container-low border border-transparent hover:border-border-subtle"><div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-status-gray"></span><span class="font-mono-technical text-sm text-on-surface">UNKNOWN</span></div><span class="font-bold text-on-surface">29</span></div></div></div>
+</div>
+</main>
+<script>
+        // Simple visualization script to generate nodes and edges
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('graphContainer');
+            const infoCard = document.getElementById('infoCard');
+            const width = container.clientWidth;
+            const height = container.clientHeight;
+
+            const roots = [
+                { id: '{ن ش ز}', status: 'locked', size: 60, x: 300, y: 200 },
+                { id: '{ع ل و}', status: 'locked', size: 50, x: 200, y: 300 },
+                { id: '{ق و م}', status: 'blocked', size: 70, x: 450, y: 250 },
+                { id: '{ن ف ر}', status: 'hypothesis', size: 45, x: 400, y: 120 },
+                { id: '{ك ت ب}', status: 'locked', size: 80, x: 600, y: 400 },
+                { id: '{ع م ل}', status: 'stale', size: 65, x: 500, y: 500 },
+                { id: '{ف ع ل}', status: 'unknown', size: 55, x: 700, y: 300 },
+                { id: '{ر ز ق}', status: 'locked', size: 50, x: 150, y: 450 },
+                { id: '{ق ر أ}', status: 'hypothesis', size: 40, x: 750, y: 450 },
+                { id: '{ح ك م}', status: 'rejected', size: 60, x: 350, y: 400 },
+                { id: '{س م ع}', status: 'locked', size: 55, x: 250, y: 150 },
+                { id: '{ب ص ر}', status: 'blocked', size: 50, x: 100, y: 250 }
+            ];
+
+            const edges = [
+                { source: 0, target: 1, type: 'solid' },
+                { source: 0, target: 3, type: 'dashed' },
+                { source: 1, target: 2, type: 'solid' },
+                { source: 2, target: 9, type: 'solid' },
+                { source: 4, target: 6, type: 'solid' },
+                { source: 4, target: 8, type: 'thin' },
+                { source: 5, target: 6, type: 'dashed' },
+                { source: 10, target: 11, type: 'solid' },
+                { source: 0, target: 10, type: 'thin' },
+                { source: 2, target: 5, type: 'thin' }
+            ];
+
+            // Draw edges
+            edges.forEach(e => {
+                const source = roots[e.source];
+                const target = roots[e.target];
+                
+                const sx = source.x + source.size / 2;
+                const sy = source.y + source.size / 2;
+                const tx = target.x + target.size / 2;
+                const ty = target.y + target.size / 2;
+                
+                const length = Math.sqrt(Math.pow(tx - sx, 2) + Math.pow(ty - sy, 2));
+                const angle = Math.atan2(ty - sy, tx - sx) * 180 / Math.PI;
+                
+                const edgeEl = document.createElement('div');
+                edgeEl.className = `edge ${e.type}`;
+                edgeEl.style.width = `${length}px`;
+                edgeEl.style.left = `${sx}px`;
+                edgeEl.style.top = `${sy}px`;
+                edgeEl.style.transform = `rotate(${angle}deg)`;
+                
+                container.appendChild(edgeEl);
+            });
+
+            // Draw nodes
+            roots.forEach(root => {
+                const nodeEl = document.createElement('div');
+                nodeEl.className = `node ${root.status} text-sm`;
+                nodeEl.style.width = `${root.size}px`;
+                nodeEl.style.height = `${root.size}px`;
+                nodeEl.style.left = `${root.x}px`;
+                nodeEl.style.top = `${root.y}px`;
+                nodeEl.style.zIndex = 10;
+                nodeEl.innerText = root.id;
+                
+                nodeEl.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const rect = container.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    
+                    infoCard.style.left = `${Math.min(x + 20, width - 270)}px`;
+                    infoCard.style.top = `${Math.min(y + 20, height - 150)}px`;
+                    
+                    document.getElementById('cardTitle').innerText = root.id;
+                    const statusSpan = document.getElementById('cardStatus');
+                    statusSpan.innerText = root.status.toUpperCase();
+                    
+                    // Simple color mapping for card badge
+                    const colors = {
+                        locked: 'bg-status-supported',
+                        blocked: 'bg-status-blocked',
+                        hypothesis: 'bg-status-hypothesis',
+                        unknown: 'bg-status-gray',
+                        stale: 'bg-status-stale',
+                        rejected: 'bg-status-rejected'
+                    };
+                    statusSpan.className = `px-2 py-1 text-xs rounded text-white font-mono-technical ${colors[root.status]}`;
+                    
+                    infoCard.classList.add('active');
+                });
+                
+                container.appendChild(nodeEl);
+            });
+
+            container.addEventListener('click', () => {
+                infoCard.classList.remove('active');
+            });
+
+            // Pulse effect simulation
+            document.getElementById('pulseBtn').addEventListener('click', () => {
+                const nodes = document.querySelectorAll('.node.locked, .node.hypothesis');
+                nodes.forEach(n => {
+                    n.style.transform = 'scale(1.2)';
+                    n.style.boxShadow = '0 0 15px rgba(249, 115, 22, 0.8)';
+                    setTimeout(() => {
+                        n.style.transform = '';
+                        n.style.boxShadow = '';
+                    }, 500);
+                });
+            });
+        });
+    </script>
+
+
+</body></html>

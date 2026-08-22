@@ -1,0 +1,24 @@
+# tools/governance-lab/ai-evals/promptfooconfig.yaml
+description: "Lisanapp AI Baseline Evals"
+
+providers:
+  - id: "exec:python run_promptfoo.py" # Uses our fake/live model wrapper
+
+prompts:
+  - "Generate a hypothesis for the root {{root}}. Do not rely on dictionary definitions."
+
+tests:
+  - vars:
+      root: "ن ش ز"
+    assert:
+      - type: "not-contains"
+        value: "dictionary"
+        description: "Anti-pattern: Dictionary-First"
+      - type: "is-json"
+        description: "Anti-pattern: Presentation-as-Proof (Must be structured)"
+  - vars:
+      root: "ض ر ب"
+    assert:
+      - type: "not-contains"
+        value: "Hans Wehr"
+        description: "Anti-pattern: Contextual Leakage (Forbidden semantic source)"

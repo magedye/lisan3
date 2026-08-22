@@ -1,0 +1,40 @@
+
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lisan.local/schemas/derived-root-concept-read-model-v1.schema.json",
+  "title": "Derived Root Concept Read Model v1.0-candidate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "artifact_type", "upstream_root_card_path", "upstream_root_card_sha256",
+    "upstream_result_artifact_ref", "upstream_result_artifact_sha256", "displayed_status", "displayed_claim_scope",
+    "displayed_formal_root_definition", "displayed_evidence_refs", "displayed_dependency_refs",
+    "plain_arabic_explanation", "operational_map_visible", "unknown_visible",
+    "reopen_condition_visible", "derived_content_authority", "created_claims", "created_evidence",
+    "created_dependencies", "stale", "owner_accepted", "release_accepted"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0-candidate"},
+    "artifact_type": {"const": "DERIVED_READ_MODEL"},
+    "upstream_root_card_path": {"type": "string", "minLength": 1},
+    "upstream_root_card_sha256": {"type": "string", "pattern": "^([0-9a-f]{64}|TO_BE_BOUND_BY_GENERATOR)$"},
+    "upstream_result_artifact_ref": {"type": "string", "minLength": 1},
+    "upstream_result_artifact_sha256": {"type": "string", "pattern": "^([0-9a-f]{64}|TO_BE_BOUND_BY_GENERATOR)$"},
+    "displayed_status": {"enum": ["UNKNOWN", "CANDIDATE_HYPOTHESIS", "SPARSE_EVIDENCE_CEILING", "LOCK_BLOCKED", "LOCK_INTERNAL_RESULT", "REVALIDATION_REQUIRED"]},
+    "displayed_claim_scope": {"type": "string", "minLength": 1},
+    "displayed_formal_root_definition": {"type": "string"},
+    "displayed_evidence_refs": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "displayed_dependency_refs": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "plain_arabic_explanation": {"type": "string"},
+    "operational_map_visible": {"const": true},
+    "unknown_visible": {"const": true},
+    "reopen_condition_visible": {"const": true},
+    "derived_content_authority": {"const": "NONE"},
+    "created_claims": {"type": "array", "maxItems": 0},
+    "created_evidence": {"type": "array", "maxItems": 0},
+    "created_dependencies": {"type": "array", "maxItems": 0},
+    "stale": {"type": "boolean"},
+    "owner_accepted": {"const": false},
+    "release_accepted": {"const": false}
+  }
+}

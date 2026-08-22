@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Standardized Distinction Card v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "target_root",
+    "neighbor_root_or_lexeme",
+    "morphological_profile",
+    "syntactic_occurrences",
+    "contextual_distribution",
+    "falsification_tests",
+    "substitution_tests",
+    "semantic_boundaries",
+    "distinctive_residue",
+    "decisive_contexts",
+    "exclusions",
+    "confidence",
+    "dependencies",
+    "evidence_refs"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "target_root": {
+      "type": "string",
+      "minLength": 1
+    },
+    "neighbor_root_or_lexeme": {
+      "type": "string",
+      "minLength": 1
+    },
+    "falsification_tests": {
+      "type": "array",
+      "minItems": 1
+    },
+    "substitution_tests": {
+      "type": "array",
+      "minItems": 1
+    },
+    "distinctive_residue": {
+      "type": "array",
+      "minItems": 1
+    },
+    "confidence": {
+      "enum": [
+        "LOW",
+        "MODERATE",
+        "HIGH",
+        "UNRESOLVED"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

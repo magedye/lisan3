@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Governed Ask - Lisan Research</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config injected from Design System -->
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-highest": "#dce2f3",
+                      "surface-container-high": "#e2e8f8",
+                      "on-primary-fixed": "#002113",
+                      "on-secondary-container": "#fefcff",
+                      "surface-tint": "#006c49",
+                      "on-tertiary": "#ffffff",
+                      "error": "#ba1a1a",
+                      "tertiary-fixed": "#ffdad7",
+                      "on-tertiary-container": "#711419",
+                      "tertiary": "#a43a3a",
+                      "secondary-fixed-dim": "#adc6ff",
+                      "background": "#f9f9ff",
+                      "on-tertiary-fixed": "#410005",
+                      "on-secondary-fixed": "#001a42",
+                      "on-secondary": "#ffffff",
+                      "on-surface-variant": "#3c4a42",
+                      "on-primary": "#ffffff",
+                      "secondary-container": "#2170e4",
+                      "surface-background": "#F9FAFB",
+                      "tertiary-fixed-dim": "#ffb3af",
+                      "primary-fixed-dim": "#4edea3",
+                      "surface-container": "#e7eefe",
+                      "on-error-container": "#93000a",
+                      "status-rejected": "#EF4444",
+                      "secondary-fixed": "#d8e2ff",
+                      "on-tertiary-fixed-variant": "#842225",
+                      "surface-bright": "#f9f9ff",
+                      "surface-variant": "#dce2f3",
+                      "surface-card": "#FFFFFF",
+                      "on-surface": "#151c27",
+                      "error-container": "#ffdad6",
+                      "inverse-on-surface": "#ebf1ff",
+                      "surface-container-low": "#f0f3ff",
+                      "primary-fixed": "#6ffbbe",
+                      "primary": "#006c49",
+                      "on-error": "#ffffff",
+                      "inverse-primary": "#4edea3",
+                      "status-blocked": "#F59E0B",
+                      "on-background": "#151c27",
+                      "on-secondary-fixed-variant": "#004395",
+                      "outline-variant": "#bbcabf",
+                      "status-supported": "#10B981",
+                      "outline": "#6c7a71",
+                      "border-subtle": "#E5E7EB",
+                      "secondary": "#0058be",
+                      "primary-container": "#10b981",
+                      "surface-container-lowest": "#ffffff",
+                      "inverse-surface": "#2a313d",
+                      "surface-dim": "#d3daea",
+                      "on-primary-fixed-variant": "#005236",
+                      "surface": "#f9f9ff",
+                      "status-owner": "#8B5CF6",
+                      "tertiary-container": "#fc7c78",
+                      "status-stale": "#F97316",
+                      "on-primary-container": "#00422b",
+                      "status-hypothesis": "#3B82F6"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-page": "40px",
+                      "gutter": "24px",
+                      "stack-sm": "8px",
+                      "panel-width-inspector": "400px",
+                      "base": "4px",
+                      "stack-md": "16px",
+                      "stack-lg": "32px"
+              },
+              "fontFamily": {
+                      "body-md": ["IBM Plex Sans Arabic", "sans-serif"],
+                      "mono-technical": ["JetBrains Mono", "monospace"],
+                      "headline-lg": ["IBM Plex Sans Arabic", "sans-serif"],
+                      "headline-md": ["IBM Plex Sans Arabic", "sans-serif"],
+                      "headline-sm": ["IBM Plex Sans Arabic", "sans-serif"],
+                      "label-sm": ["IBM Plex Sans Arabic", "sans-serif"],
+                      "quran-verse-display": ["Traditional Arabic", "serif"],
+                      "body-lg": ["IBM Plex Sans Arabic", "sans-serif"]
+              },
+              "fontSize": {
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "mono-technical": ["13px", {"lineHeight": "20px", "fontWeight": "400"}],
+                      "headline-lg": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                      "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                      "headline-sm": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                      "quran-verse-display": ["32px", {"lineHeight": "56px", "fontWeight": "400"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=JetBrains+Mono:wght@400&display=swap');
+        body { font-family: 'IBM Plex Sans Arabic', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .icon-fill { font-variation-settings: 'FILL' 1; }
+        
+        /* Custom Scrollbar for inner content */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #dce2f3; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #bbcabf; }
+    </style>
+</head>
+<body class="bg-surface-background text-on-surface h-screen overflow-hidden flex flex-col md:flex-row rtl">
+<!-- Shared Component: SideNavBar -->
+<nav class="hidden md:flex flex-col h-full rtl bg-surface-container-lowest dark:bg-inverse-surface fixed top-0 right-0 h-screen w-64 border-l border-border-subtle z-50">
+<!-- Brand Header -->
+<div class="p-gutter flex flex-col gap-stack-sm border-b border-border-subtle">
+<h1 class="text-headline-lg font-headline-lg font-bold text-primary dark:text-primary-fixed-dim">ليسان</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">منصة الأبحاث المحكمة</p>
+</div>
+<!-- CTA -->
+<div class="p-gutter">
+<button class="w-full bg-primary text-on-primary py-2 px-4 rounded-lg flex items-center justify-center gap-2 hover:bg-surface-tint transition-colors">
+<span class="material-symbols-outlined icon-fill">add</span>
+<span class="font-label-sm text-label-sm">بدء بحث جديد</span>
+</button>
+</div>
+<!-- Main Navigation -->
+<ul class="flex-1 overflow-y-auto px-4 space-y-2">
+<li><a class="flex items-center gap-3 p-3 rounded-DEFAULT text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high transition-colors duration-200" href="#"><span class="material-symbols-outlined" data-icon="home">home</span>الرئيسية</a></li>
+<!-- Active Tab: الأبحاث -->
+<li><a class="flex items-center gap-3 p-3 rounded-DEFAULT text-primary font-bold border-r-4 border-primary bg-surface-container-low transition-colors duration-200" href="#"><span class="material-symbols-outlined icon-fill" data-icon="science">science</span>الأبحاث</a></li>
+<li><a class="flex items-center gap-3 p-3 rounded-DEFAULT text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high transition-colors duration-200" href="#"><span class="material-symbols-outlined" data-icon="library_books">library_books</span>المعرفة</a></li>
+<li><a class="flex items-center gap-3 p-3 rounded-DEFAULT text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high transition-colors duration-200" href="#"><span class="material-symbols-outlined" data-icon="fact_check">fact_check</span>المراجعة</a></li>
+<li><a class="flex items-center gap-3 p-3 rounded-DEFAULT text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high transition-colors duration-200" href="#"><span class="material-symbols-outlined" data-icon="gavel">gavel</span>الحوكمة</a></li>
+<li><a class="flex items-center gap-3 p-3 rounded-DEFAULT text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high transition-colors duration-200" href="#"><span class="material-symbols-outlined" data-icon="settings">settings</span>العمليات</a></li>
+</ul>
+<!-- Footer Navigation -->
+<ul class="p-4 border-t border-border-subtle space-y-2">
+<li><a class="flex items-center gap-3 p-3 rounded-DEFAULT text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high transition-colors duration-200" href="#"><span class="material-symbols-outlined" data-icon="help">help</span>المساعدة</a></li>
+<li><a class="flex items-center gap-3 p-3 rounded-DEFAULT text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high transition-colors duration-200" href="#"><span class="material-symbols-outlined" data-icon="settings_applications">settings_applications</span>الإعدادات</a></li>
+</ul>
+</nav>
+<!-- Main Workspace -->
+<main class="flex-1 flex flex-col md:mr-64 h-screen bg-surface-background relative">
+<!-- Shared Component: TopAppBar -->
+<header class="docked full-width top-0 sticky z-40 border-b border-border-subtle bg-surface dark:bg-surface-dim flex justify-between items-center w-full px-margin-page py-2 rtl">
+<div class="flex items-center gap-gutter">
+<span class="font-headline-md text-headline-md font-extrabold text-primary dark:text-inverse-primary">ليسان | محرك الأبحاث</span>
+<nav class="hidden lg:flex gap-6">
+<a class="font-headline-sm text-headline-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low px-2 py-1 rounded" href="#">ن ش ز</a>
+<a class="font-headline-sm text-headline-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low px-2 py-1 rounded" href="#">منهجية v2.1</a>
+<a class="font-headline-sm text-headline-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low px-2 py-1 rounded" href="#">Corpus-72</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex gap-2 mr-4">
+<span class="px-3 py-1 bg-surface-container-low border border-border-subtle rounded-full font-label-sm text-label-sm text-on-surface-variant">بوابة النقاء</span>
+<span class="px-3 py-1 bg-surface-container-low border border-border-subtle rounded-full font-label-sm text-label-sm text-on-surface-variant">المختبر الأعمى</span>
+</div>
+<button class="p-2 text-on-surface-variant hover:bg-surface-container-low rounded-full transition-colors"><span class="material-symbols-outlined" data-icon="notifications">notifications</span></button>
+<button class="p-2 text-on-surface-variant hover:bg-surface-container-low rounded-full transition-colors"><span class="material-symbols-outlined" data-icon="history">history</span></button>
+<button class="p-2 text-on-surface-variant hover:bg-surface-container-low rounded-full transition-colors"><span class="material-symbols-outlined" data-icon="account_circle">account_circle</span></button>
+</div>
+</header>
+<!-- Governed Ask Chat Interface -->
+<div class="flex-1 flex flex-col overflow-hidden relative">
+<!-- Fixed Context Strip -->
+<div class="bg-surface-container-lowest border-b border-border-subtle p-4 px-margin-page flex items-center justify-between shrink-0">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">chat_bubble</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">استعلام موجه</h2>
+</div>
+<div class="flex gap-3">
+<button class="px-4 py-2 rounded-full border border-border-subtle bg-surface text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container-high transition-colors">تحليل الجذور</button>
+<button class="px-4 py-2 rounded-full border border-border-subtle bg-surface text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container-high transition-colors">مقارنة دلالية</button>
+<button class="px-4 py-2 rounded-full border border-border-subtle bg-surface text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container-high transition-colors">تحليل سياقي</button>
+</div>
+</div>
+<!-- Chat History Area -->
+<div class="flex-1 overflow-y-auto p-margin-page flex flex-col gap-stack-lg">
+<!-- User Prompt Simulation -->
+<div class="flex gap-4 max-w-4xl mr-auto w-full">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-surface-variant">person</span>
+</div>
+<div class="flex-1">
+<div class="bg-surface-container-lowest border border-border-subtle rounded-xl rounded-tr-none p-4 inline-block shadow-sm">
+<p class="font-body-md text-body-md text-on-surface">ما هو التحليل الدلالي لجذر (ف ج ر) في السياق القرآني؟</p>
+</div>
+</div>
+</div>
+<!-- System Response: Answer Card (Insufficient Evidence State) -->
+<div class="flex gap-4 max-w-5xl ml-auto w-full">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary icon-fill">robot_2</span>
+</div>
+<div class="flex-1 flex flex-col gap-stack-sm">
+<!-- Epistemic Status Badges Cluster -->
+<div class="flex gap-2 mb-2">
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm border border-border-subtle"><span class="material-symbols-outlined text-[14px]">science</span> الحالة: معلق</span>
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded bg-error-container text-on-error-container font-label-sm text-label-sm border border-tertiary-fixed-dim"><span class="material-symbols-outlined text-[14px]">warning</span> الدليل: غير كافٍ</span>
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm border border-border-subtle"><span class="material-symbols-outlined text-[14px]">update</span> التحديث: الآن</span>
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm border border-border-subtle"><span class="material-symbols-outlined text-[14px]">verified</span> الحوكمة: L1</span>
+</div>
+<!-- Structured Answer Card -->
+<div class="bg-surface-card border-l-4 border-l-status-blocked border-y border-r border-border-subtle rounded-lg p-6 shadow-sm flex flex-col gap-stack-md relative overflow-hidden">
+<!-- Visual Banner for State -->
+<div class="absolute top-0 right-0 w-full h-1 bg-status-blocked opacity-20"></div>
+<header class="flex justify-between items-start border-b border-border-subtle pb-4">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">نتيجة الاستعلام: بيانات غير مكتملة</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">لم يتم العثور على مسار تحليلي موثق كافٍ للإجابة بيقين منهجي.</p>
+</div>
+<span class="material-symbols-outlined text-status-blocked text-3xl">sim_card_alert</span>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
+<!-- Established & Supported -->
+<div class="flex flex-col gap-4">
+<section>
+<h4 class="font-label-sm text-label-sm text-outline tracking-wide uppercase mb-2 flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">check_circle</span> الثوابت (Established)</h4>
+<p class="font-body-md text-body-md text-on-surface-variant bg-surface-background p-3 rounded border border-border-subtle">الجذر (ف ج ر) متواتر في الاستخدام القرآني، يرتبط ظاهرياً بالشق أو الظهور.</p>
+</section>
+<section>
+<h4 class="font-label-sm text-label-sm text-outline tracking-wide uppercase mb-2 flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">description</span> الأدلة المدعومة (Supported Evidence)</h4>
+<p class="font-mono-technical text-mono-technical text-on-surface-variant bg-surface-background p-3 rounded border border-border-subtle">0/4 مسارات اكتملت. <br/>تم فحص المعاجم التراثية الأساسية، تعارض في التأصيل الدقيق بين المادي والمعنوي.</p>
+</section>
+</div>
+<!-- Hypotheses & Unresolved -->
+<div class="flex flex-col gap-4">
+<section>
+<h4 class="font-label-sm text-label-sm text-outline tracking-wide uppercase mb-2 flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">lightbulb</span> الفرضيات الحالية (Current Hypotheses)</h4>
+<ul class="list-disc list-inside font-body-md text-body-md text-on-surface-variant space-y-1 bg-surface-background p-3 rounded border border-border-subtle">
+<li>ارتباط بالانفجار المادي (تشقق الأرض).</li>
+<li>ارتباط بظهور النور (الفجر).</li>
+</ul>
+</section>
+<section>
+<h4 class="font-label-sm text-label-sm text-tertiary tracking-wide uppercase mb-2 flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">help</span> نقاط غير محسومة (Unresolved Points)</h4>
+<div class="bg-tertiary-fixed text-on-tertiary-container p-3 rounded border border-tertiary-fixed-dim font-body-md text-body-md">
+                                            مطلوب تحديد الخيط الناظم (Root Concept) الذي يربط بين الدلالة المادية (تشقق) والزمانية (وقت الفجر) والوصفية (الفجور).
+                                        </div>
+</section>
+</div>
+</div>
+<div class="border-t border-border-subtle pt-4 mt-2">
+<section class="mb-4">
+<h4 class="font-label-sm text-label-sm text-outline tracking-wide uppercase mb-1">القيود (Limitations)</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">غياب تحليل سياقي شامل للآيات التي ورد فيها الجذر خارج سياق "الوقت".</p>
+</section>
+<!-- Actionable Area -->
+<div class="bg-surface-container-low p-4 rounded-lg border border-border-subtle flex items-center justify-between">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">الخطوة البحثية التالية</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">تتطلب هذه الحالة إطلاق مسار بحثي منهجي لجمع الأدلة وتوثيقها.</p>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-sm text-label-sm flex items-center gap-2 hover:bg-surface-tint transition-all shadow-sm">
+<span class="material-symbols-outlined">rocket_launch</span>
+                                        إنشاء مسار بحثي (Create Research Run)
+                                    </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Fixed Input Area with Autocomplete Simulation -->
+<div class="bg-surface-container-lowest border-t border-border-subtle p-4 relative shrink-0">
+<!-- Autocomplete Suggestion Panel (Simulated state) -->
+<div class="absolute bottom-full left-4 right-4 mb-2 bg-surface-card border border-border-subtle rounded-lg shadow-lg overflow-hidden max-w-2xl mx-auto z-20">
+<div class="p-2 bg-surface-container-lowest border-b border-border-subtle flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-sm">search</span>
+<span class="font-mono-technical text-mono-technical text-on-surface-variant">اقتراحات قرآنية...</span>
+</div>
+<ul class="py-1">
+<li class="px-4 py-3 hover:bg-surface-container-low cursor-pointer flex justify-between items-center group transition-colors">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary group-hover:icon-fill">menu_book</span>
+<span class="font-quran-verse-display text-[24px] leading-none text-on-surface">وَالْفَجْرِ</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface border border-border-subtle px-2 py-1 rounded">سورة الفجر - آية 1</span>
+</li>
+<li class="px-4 py-3 hover:bg-surface-container-low cursor-pointer flex justify-between items-center group transition-colors border-t border-border-subtle">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline">history</span>
+<span class="font-body-md text-body-md text-on-surface">بحث سابق: "الفجر" في المعاجم</span>
+</div>
+</li>
+</ul>
+</div>
+<div class="max-w-4xl mx-auto flex gap-4 items-end relative z-10">
+<button class="p-3 text-on-surface-variant hover:text-primary hover:bg-surface-container-low rounded-full transition-colors shrink-0">
+<span class="material-symbols-outlined">add_circle</span>
+</button>
+<div class="flex-1 bg-surface border border-border-subtle rounded-xl flex items-center px-4 py-2 focus-within:border-primary focus-within:ring-1 focus-within:ring-primary transition-all">
+<input class="w-full bg-transparent border-none focus:ring-0 font-body-md text-body-md text-on-surface placeholder-on-surface-variant p-2" placeholder="أدخل استعلامك أو نصاً قرآنياً..." type="text" value="والفجر"/>
+<span class="text-xs text-on-surface-variant font-mono-technical ml-2">↵</span>
+</div>
+<button class="p-3 bg-primary text-on-primary rounded-xl hover:bg-surface-tint transition-colors shrink-0 shadow-sm flex items-center justify-center">
+<span class="material-symbols-outlined icon-fill">send</span>
+</button>
+</div>
+<div class="text-center mt-2">
+<span class="font-mono-technical text-[11px] text-on-surface-variant">يعمل محرك الاستعلام وفق بروتوكول الحوكمة L1. الإجابات تخضع للتدقيق المنهجي.</span>
+</div>
+</div>
+</div>
+</main>
+</body></html>

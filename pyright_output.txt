@@ -1,0 +1,150 @@
+d:\APP\tafseer\lisanapp3\backend\domain\schemas.py
+  d:\APP\tafseer\lisanapp3\backend\domain\schemas.py:52:7 - error: Class declaration "GateReportBase" is obscured by a declaration of the same name (reportRedeclaration)
+  d:\APP\tafseer\lisanapp3\backend\domain\schemas.py:61:7 - error: Class declaration "GateReportCreate" is obscured by a declaration of the same name (reportRedeclaration)
+  d:\APP\tafseer\lisanapp3\backend\domain\schemas.py:65:7 - error: Class declaration "GateReportResponse" is obscured by a declaration of the same name (reportRedeclaration)
+d:\APP\tafseer\lisanapp3\backend\domain\services\ai_context.py
+  d:\APP\tafseer\lisanapp3\backend\domain\services\ai_context.py:37:9 - warning: Argument of type "list[dict[str, Column[str]]]" cannot be assigned to parameter "value" of type "Column[str]" in function "__setitem__"
+    "list[dict[str, Column[str]]]" is not assignable to "Column[str]" (reportArgumentType)
+  d:\APP\tafseer\lisanapp3\backend\domain\services\ai_context.py:47:9 - warning: Argument of type "list[dict[str, Column[str]]]" cannot be assigned to parameter "value" of type "Column[str]" in function "__setitem__"
+    "list[dict[str, Column[str]]]" is not assignable to "Column[str]" (reportArgumentType)
+  d:\APP\tafseer\lisanapp3\backend\domain\services\ai_context.py:60:9 - warning: Argument of type "list[dict[str, Column[str]]]" cannot be assigned to parameter "value" of type "Column[str]" in function "__setitem__"
+    "list[dict[str, Column[str]]]" is not assignable to "Column[str]" (reportArgumentType)
+  d:\APP\tafseer\lisanapp3\backend\domain\services\ai_context.py:69:13 - warning: Argument of type "Literal['GRANTED']" cannot be assigned to parameter "value" of type "Column[str]" in function "__setitem__"
+    "Literal['GRANTED']" is not assignable to "Column[str]" (reportArgumentType)
+  d:\APP\tafseer\lisanapp3\backend\domain\services\ai_context.py:71:13 - warning: Argument of type "list[str]" cannot be assigned to parameter "value" of type "Column[str]" in function "__setitem__"
+    "list[str]" is not assignable to "Column[str]" (reportArgumentType)
+  d:\APP\tafseer\lisanapp3\backend\domain\services\ai_context.py:74:13 - warning: Argument of type "Literal['BLIND_LAB_RESTRICTED']" cannot be assigned to parameter "value" of type "Column[str]" in function "__setitem__"
+    "Literal['BLIND_LAB_RESTRICTED']" is not assignable to "Column[str]" (reportArgumentType)
+d:\APP\tafseer\lisanapp3\backend\domain\services\ai_tools.py
+  d:\APP\tafseer\lisanapp3\backend\domain\services\ai_tools.py:17:9 - warning: Argument of type "dict[str, ((...) -> Unknown) | str]" cannot be assigned to parameter "value" of type "(...) -> Unknown" in function "__setitem__"
+    Type "dict[str, ((...) -> Unknown) | str]" is not assignable to type "(...) -> Unknown" (reportArgumentType)
+  d:\APP\tafseer\lisanapp3\backend\domain\services\ai_tools.py:20:23 - error: Object of type "(...) -> Unknown" is not subscriptable (reportIndexIssue)
+  d:\APP\tafseer\lisanapp3\backend\domain\services\ai_tools.py:26:18 - error: Object of type "(...) -> Unknown" is not subscriptable (reportIndexIssue)
+d:\APP\tafseer\lisanapp3\backend\domain\services\corpus\importer.py
+  d:\APP\tafseer\lisanapp3\backend\domain\services\corpus\importer.py:19:81 - warning: Expression of type "None" cannot be assigned to parameter of type "str"
+    "None" is not assignable to "str" (reportArgumentType)
+d:\APP\tafseer\lisanapp3\backend\domain\services\corpus\tanzil.py
+  d:\APP\tafseer\lisanapp3\backend\domain\services\corpus\tanzil.py:10:45 - warning: Expression of type "None" cannot be assigned to parameter of type "str"
+    "None" is not assignable to "str" (reportArgumentType)
+d:\APP\tafseer\lisanapp3\backend\domain\services\isolation.py
+  d:\APP\tafseer\lisanapp3\backend\domain\services\isolation.py:61:12 - warning: Invalid conditional operand of type "ColumnElement[bool] | None"
+    Method __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\APP\tafseer\lisanapp3\backend\domain\services\isolation.py:62:19 - warning: Cannot assign to attribute "is_contaminated" for class "IsolationState"
+    Expression of type "Literal['PRIOR_CONTAMINATED']" cannot be assigned to attribute "is_contaminated" of class "IsolationState"
+      "Literal['PRIOR_CONTAMINATED']" is not assignable to "Column[str]" (reportAttributeAccessIssue)
+  d:\APP\tafseer\lisanapp3\backend\domain\services\isolation.py:63:19 - warning: Cannot assign to attribute "contamination_reason" for class "IsolationState"
+    Expression of type "str" cannot be assigned to attribute "contamination_reason" of class "IsolationState"
+      "str" is not assignable to "Column[str]" (reportAttributeAccessIssue)
+d:\APP\tafseer\lisanapp3\backend\domain\services\registry_admission.py
+  d:\APP\tafseer\lisanapp3\backend\domain\services\registry_admission.py:24:12 - warning: Invalid conditional operand of type "ColumnElement[bool]"
+    Method __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\APP\tafseer\lisanapp3\backend\domain\services\registry_admission.py:42:18 - warning: Invalid conditional operand of type "ColumnElement[bool]"
+    Method __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\APP\tafseer\lisanapp3\backend\domain\services\registry_admission.py:48:12 - warning: Invalid conditional operand of type "ColumnElement[bool]"
+    Method __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\APP\tafseer\lisanapp3\backend\domain\services\registry_admission.py:67:18 - warning: Invalid conditional operand of type "ColumnElement[bool]"
+    Method __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\APP\tafseer\lisanapp3\backend\domain\services\registry_admission.py:88:12 - warning: Invalid conditional operand of type "ColumnElement[bool] | Unbound | None"
+    Method __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\APP\tafseer\lisanapp3\backend\domain\services\registry_admission.py:91:17 - warning: "snapshot" is possibly unbound (reportPossiblyUnboundVariable)
+d:\APP\tafseer\lisanapp3\backend\main.py
+  d:\APP\tafseer\lisanapp3\backend\main.py:57:63 - warning: Argument of type "SemanticClaim" cannot be assigned to parameter "claim" of type "SemanticClaimResponse | None" in function "__init__"
+    Type "SemanticClaim" is not assignable to type "SemanticClaimResponse | None"
+      "SemanticClaim" is not assignable to "SemanticClaimResponse"
+      "SemanticClaim" is not assignable to "None" (reportArgumentType)
+  d:\APP\tafseer\lisanapp3\backend\main.py:133:9 - warning: Cannot assign to attribute "current_stage" for class "ResearchRun"
+    Expression of type "Literal['ISOLATION_PREFLIGHT']" cannot be assigned to attribute "current_stage" of class "ResearchRun"
+      "Literal['ISOLATION_PREFLIGHT']" is not assignable to "Column[str]" (reportAttributeAccessIssue)
+  d:\APP\tafseer\lisanapp3\backend\main.py:149:8 - warning: Invalid conditional operand of type "ColumnElement[bool]"
+    Method __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\APP\tafseer\lisanapp3\backend\main.py:156:8 - warning: Invalid conditional operand of type "ColumnElement[bool]"
+    Method __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\APP\tafseer\lisanapp3\backend\main.py:156:12 - warning: "current_stage" is not a known attribute of "None" (reportOptionalMemberAccess)
+  d:\APP\tafseer\lisanapp3\backend\main.py:157:13 - warning: Cannot assign to attribute "current_stage" for class "ResearchRun"
+    Expression of type "Literal['CORPUS_COLLECTION']" cannot be assigned to attribute "current_stage" of class "ResearchRun"
+      "Literal['CORPUS_COLLECTION']" is not assignable to "Column[str]" (reportAttributeAccessIssue)
+  d:\APP\tafseer\lisanapp3\backend\main.py:157:13 - warning: "current_stage" is not a known attribute of "None" (reportOptionalMemberAccess)
+  d:\APP\tafseer\lisanapp3\backend\main.py:185:8 - warning: Invalid conditional operand of type "ColumnElement[bool]"
+    Method __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\APP\tafseer\lisanapp3\backend\main.py:204:9 - warning: Cannot assign to attribute "current_stage" for class "ResearchRun"
+    Expression of type "Literal['STRUCTURAL_OBSERVATION']" cannot be assigned to attribute "current_stage" of class "ResearchRun"
+      "Literal['STRUCTURAL_OBSERVATION']" is not assignable to "Column[str]" (reportAttributeAccessIssue)
+  d:\APP\tafseer\lisanapp3\backend\main.py:204:9 - warning: "current_stage" is not a known attribute of "None" (reportOptionalMemberAccess)
+  d:\APP\tafseer\lisanapp3\backend\main.py:247:8 - warning: Invalid conditional operand of type "ColumnElement[bool] | None"
+    Method __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\APP\tafseer\lisanapp3\backend\main.py:268:8 - warning: Invalid conditional operand of type "ColumnElement[bool]"
+    Method __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\APP\tafseer\lisanapp3\backend\main.py:268:12 - warning: "current_stage" is not a known attribute of "None" (reportOptionalMemberAccess)
+  d:\APP\tafseer\lisanapp3\backend\main.py:269:13 - warning: Cannot assign to attribute "current_stage" for class "ResearchRun"
+    Expression of type "Literal['HYPOTHESIS_GENERATION']" cannot be assigned to attribute "current_stage" of class "ResearchRun"
+      "Literal['HYPOTHESIS_GENERATION']" is not assignable to "Column[str]" (reportAttributeAccessIssue)
+  d:\APP\tafseer\lisanapp3\backend\main.py:269:13 - warning: "current_stage" is not a known attribute of "None" (reportOptionalMemberAccess)
+  d:\APP\tafseer\lisanapp3\backend\main.py:294:8 - warning: Invalid conditional operand of type "ColumnElement[bool] | None"
+    Method __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\APP\tafseer\lisanapp3\backend\main.py:314:9 - warning: Cannot assign to attribute "current_stage" for class "ResearchRun"
+    Expression of type "Literal['DIFFERENTIATION']" cannot be assigned to attribute "current_stage" of class "ResearchRun"
+      "Literal['DIFFERENTIATION']" is not assignable to "Column[str]" (reportAttributeAccessIssue)
+  d:\APP\tafseer\lisanapp3\backend\main.py:314:9 - warning: "current_stage" is not a known attribute of "None" (reportOptionalMemberAccess)
+  d:\APP\tafseer\lisanapp3\backend\main.py:342:13 - warning: Cannot assign to attribute "status" for class "ResearchRun"
+    Expression of type "Literal['LOCK_BLOCKED']" cannot be assigned to attribute "status" of class "ResearchRun"
+      "Literal['LOCK_BLOCKED']" is not assignable to "Column[str]" (reportAttributeAccessIssue)
+  d:\APP\tafseer\lisanapp3\backend\main.py:342:13 - warning: "status" is not a known attribute of "None" (reportOptionalMemberAccess)
+  d:\APP\tafseer\lisanapp3\backend\main.py:382:38 - warning: Cannot access attribute "core_conceptual_domain" for class "SemanticClaimCreate"
+    Attribute "core_conceptual_domain" is unknown (reportAttributeAccessIssue)
+  d:\APP\tafseer\lisanapp3\backend\main.py:383:37 - warning: Cannot access attribute "boundary_distinctions" for class "SemanticClaimCreate"
+    Attribute "boundary_distinctions" is unknown (reportAttributeAccessIssue)
+  d:\APP\tafseer\lisanapp3\backend\main.py:384:38 - warning: Cannot access attribute "contextual_adaptations" for class "SemanticClaimCreate"
+    Attribute "contextual_adaptations" is unknown (reportAttributeAccessIssue)
+  d:\APP\tafseer\lisanapp3\backend\main.py:389:9 - warning: Cannot assign to attribute "status" for class "ResearchRun"
+    Expression of type "Literal['LOCK_INTERNAL_RESULT']" cannot be assigned to attribute "status" of class "ResearchRun"
+      "Literal['LOCK_INTERNAL_RESULT']" is not assignable to "Column[str]" (reportAttributeAccessIssue)
+  d:\APP\tafseer\lisanapp3\backend\main.py:389:9 - warning: "status" is not a known attribute of "None" (reportOptionalMemberAccess)
+  d:\APP\tafseer\lisanapp3\backend\main.py:419:15 - warning: Cannot assign to attribute "review_state" for class "SemanticClaim"
+    Expression of type "Literal['APPROVED']" cannot be assigned to attribute "review_state" of class "SemanticClaim"
+      "Literal['APPROVED']" is not assignable to "Column[str]" (reportAttributeAccessIssue)
+  d:\APP\tafseer\lisanapp3\backend\main.py:421:15 - warning: Cannot assign to attribute "review_state" for class "SemanticClaim"
+    Expression of type "Literal['REJECTED']" cannot be assigned to attribute "review_state" of class "SemanticClaim"
+      "Literal['REJECTED']" is not assignable to "Column[str]" (reportAttributeAccessIssue)
+  d:\APP\tafseer\lisanapp3\backend\main.py:422:15 - warning: Cannot assign to attribute "publication_state" for class "SemanticClaim"
+    Expression of type "Literal['BLOCKED']" cannot be assigned to attribute "publication_state" of class "SemanticClaim"
+      "Literal['BLOCKED']" is not assignable to "Column[str]" (reportAttributeAccessIssue)
+  d:\APP\tafseer\lisanapp3\backend\main.py:454:11 - warning: Cannot assign to attribute "publication_state" for class "SemanticClaim"
+    Expression of type "Literal['PUBLISHED']" cannot be assigned to attribute "publication_state" of class "SemanticClaim"
+      "Literal['PUBLISHED']" is not assignable to "Column[str]" (reportAttributeAccessIssue)
+  d:\APP\tafseer\lisanapp3\backend\main.py:595:14 - warning: Cannot assign to attribute "status" for class "ChangeProposal"
+    Expression of type "Literal['APPROVED']" cannot be assigned to attribute "status" of class "ChangeProposal"
+      "Literal['APPROVED']" is not assignable to "Column[str]" (reportAttributeAccessIssue)
+  d:\APP\tafseer\lisanapp3\backend\main.py:596:10 - warning: Cannot assign to attribute "active_revision" for class "GovernanceRule"
+    Expression of type "ColumnElement[int]" cannot be assigned to attribute "active_revision" of class "GovernanceRule"
+      "ColumnElement[int]" is not assignable to "Column[int]" (reportAttributeAccessIssue)
+  d:\APP\tafseer\lisanapp3\backend\main.py:625:12 - warning: Invalid conditional operand of type "ColumnElement[bool] | None"
+    Method __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\APP\tafseer\lisanapp3\backend\main.py:626:19 - warning: Cannot assign to attribute "freshness_state" for class "SemanticClaim"
+    Expression of type "Literal['REVALIDATION_REQUIRED']" cannot be assigned to attribute "freshness_state" of class "SemanticClaim"
+      "Literal['REVALIDATION_REQUIRED']" is not assignable to "Column[str]" (reportAttributeAccessIssue)
+  d:\APP\tafseer\lisanapp3\backend\main.py:715:18 - warning: Argument of type "Column[str]" cannot be assigned to parameter "claim_id" of type "str" in function "__init__"
+    "Column[str]" is not assignable to "str" (reportArgumentType)
+  d:\APP\tafseer\lisanapp3\backend\main.py:716:23 - warning: Argument of type "Column[str]" cannot be assigned to parameter "contract_type" of type "str" in function "__init__"
+    "Column[str]" is not assignable to "str" (reportArgumentType)
+  d:\APP\tafseer\lisanapp3\backend\main.py:717:27 - warning: Argument of type "Column[str] | Literal['UNKNOWN']" cannot be assigned to parameter "target_expression" of type "str" in function "__init__"
+    Type "Column[str] | Literal['UNKNOWN']" is not assignable to type "str"
+      "Column[str]" is not assignable to "str" (reportArgumentType)
+  d:\APP\tafseer\lisanapp3\backend\main.py:718:25 - warning: Argument of type "Column[str]" cannot be assigned to parameter "epistemic_state" of type "str" in function "__init__"
+    "Column[str]" is not assignable to "str" (reportArgumentType)
+  d:\APP\tafseer\lisanapp3\backend\main.py:719:22 - warning: Argument of type "Column[str]" cannot be assigned to parameter "review_state" of type "str" in function "__init__"
+    "Column[str]" is not assignable to "str" (reportArgumentType)
+  d:\APP\tafseer\lisanapp3\backend\main.py:720:25 - warning: Argument of type "Column[str]" cannot be assigned to parameter "freshness_state" of type "str" in function "__init__"
+    "Column[str]" is not assignable to "str" (reportArgumentType)
+  d:\APP\tafseer\lisanapp3\backend\main.py:721:27 - warning: Argument of type "Column[str]" cannot be assigned to parameter "publication_state" of type "str" in function "__init__"
+    "Column[str]" is not assignable to "str" (reportArgumentType)
+  d:\APP\tafseer\lisanapp3\backend\main.py:722:22 - warning: Argument of type "List[DependencyRecord]" cannot be assigned to parameter "dependencies" of type "list[DependencyRecordResponse]" in function "__init__"
+    "List[DependencyRecord]" is not assignable to "list[DependencyRecordResponse]"
+      Type parameter "_T@list" is invariant, but "DependencyRecord" is not the same as "DependencyRecordResponse"
+      Consider switching from "list" to "Sequence" which is covariant (reportArgumentType)
+  d:\APP\tafseer\lisanapp3\backend\main.py:791:85 - warning: Cannot access attribute "claim_id" for class "type[AIExecutionRecord]"
+    Attribute "claim_id" is unknown (reportAttributeAccessIssue)
+  d:\APP\tafseer\lisanapp3\backend\main.py:796:36 - warning: Cannot access attribute "target_expression" for class "SemanticClaim"
+    Attribute "target_expression" is unknown (reportAttributeAccessIssue)
+  d:\APP\tafseer\lisanapp3\backend\main.py:833:12 - warning: Invalid conditional operand of type "ColumnElement[bool]"
+    Method __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+5 errors, 62 warnings, 0 informations

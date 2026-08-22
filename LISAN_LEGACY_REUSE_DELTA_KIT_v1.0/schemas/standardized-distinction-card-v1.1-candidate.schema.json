@@ -1,0 +1,153 @@
+
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lisan.local/schemas/standardized-distinction-card-v1.1-candidate.schema.json",
+  "title": "Standardized Distinction Card v1.1-candidate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "artifact_type", "card_id", "family_id", "target", "neighbor", "claim_scope",
+    "comparison_level", "target_comparison_layer", "neighbor_comparison_layer", "selection_basis", "essentiality", "threatened_claims", "corpus_coverage",
+    "shared_region", "axis_analysis", "convergence_instances", "divergence_instances",
+    "decisive_contexts", "substitution_probes", "falsification_tests", "boundary_tests",
+    "coverage_tests", "generality_tests", "discriminating_predictions", "semantic_boundaries",
+    "distinctive_residue", "exclusions", "counterevidence", "unresolved_points",
+    "unresolved_assignment", "dependencies", "evidence_refs", "confidence",
+    "official_lisan_status", "lock_eligibility", "lock_block_reasons", "owner_accepted",
+    "release_accepted"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.1-candidate"},
+    "artifact_type": {"const": "STANDARDIZED_DISTINCTION_CARD"},
+    "card_id": {"type": "string", "minLength": 1},
+    "family_id": {"type": "string", "minLength": 1},
+    "target": {"type": "string", "minLength": 1},
+    "neighbor": {"type": "string", "minLength": 1},
+    "claim_scope": {"type": "string", "minLength": 1},
+    "comparison_level": {"enum": ["ROOT", "LEXEME", "FORM", "CONSTRUCTION", "LOCAL_MEANING"]},
+    "target_comparison_layer": {"enum": ["ROOT", "LEXEME", "FORM", "CONSTRUCTION", "LOCAL_MEANING"]},
+    "neighbor_comparison_layer": {"enum": ["ROOT", "LEXEME", "FORM", "CONSTRUCTION", "LOCAL_MEANING"]},
+    "selection_basis": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "essentiality": {"enum": ["ESSENTIAL", "SUPPORTING", "EXPLORATORY"]},
+    "threatened_claims": {"type": "array", "items": {"type": "string"}},
+    "corpus_coverage": {
+      "type": "object", "additionalProperties": false,
+      "required": ["target_index", "neighbor_index", "target_deep_analysis", "neighbor_deep_analysis", "context_diversity", "structural_stability"],
+      "properties": {
+        "target_index": {"$ref": "#/$defs/coveragePair"},
+        "neighbor_index": {"$ref": "#/$defs/coveragePair"},
+        "target_deep_analysis": {"type": "integer", "minimum": 0},
+        "neighbor_deep_analysis": {"type": "integer", "minimum": 0},
+        "context_diversity": {"type": "string", "minLength": 1},
+        "structural_stability": {"type": "string", "minLength": 1}
+      }
+    },
+    "shared_region": {"type": "array", "items": {"type": "string"}},
+    "axis_analysis": {"type": "array", "minItems": 16, "maxItems": 16, "items": {"$ref": "#/$defs/axisFinding"}},
+    "convergence_instances": {"type": "array"},
+    "divergence_instances": {"type": "array"},
+    "decisive_contexts": {"type": "array"},
+    "substitution_probes": {"type": "array", "items": {"$ref": "#/$defs/probe"}},
+    "falsification_tests": {"type": "array", "items": {"type": "string"}},
+    "boundary_tests": {"type": "array", "items": {"type": "string"}},
+    "coverage_tests": {"type": "array", "items": {"type": "string"}},
+    "generality_tests": {"type": "array", "items": {"type": "string"}},
+    "discriminating_predictions": {"type": "array", "items": {"$ref": "#/$defs/prediction"}},
+    "semantic_boundaries": {
+      "type": "object", "additionalProperties": false,
+      "required": ["shared", "target_only", "neighbor_only"],
+      "properties": {
+        "shared": {"type": "array"}, "target_only": {"type": "array"}, "neighbor_only": {"type": "array"}
+      }
+    },
+    "distinctive_residue": {"type": "array", "items": {"$ref": "#/$defs/residue"}},
+    "exclusions": {"type": "array"},
+    "counterevidence": {"type": "array"},
+    "unresolved_points": {"type": "array", "items": {"type": "string"}},
+    "unresolved_assignment": {"type": "boolean"},
+    "dependencies": {"type": "array", "items": {"$ref": "#/$defs/dependency"}},
+    "evidence_refs": {"type": "array", "items": {"type": "string"}},
+    "confidence": {"enum": ["LOW", "MODERATE", "HIGH", "UNRESOLVED"]},
+    "official_lisan_status": {"$ref": "#/$defs/officialStatus"},
+    "lock_eligibility": {"enum": ["ELIGIBLE", "BLOCKED", "NOT_APPLICABLE"]},
+    "lock_block_reasons": {"type": "array", "items": {"type": "string"}},
+    "owner_accepted": {"const": false},
+    "release_accepted": {"const": false}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"confidence": {"const": "UNRESOLVED"}}},
+      "then": {
+        "properties": {
+          "unresolved_points": {"minItems": 1},
+          "lock_block_reasons": {"minItems": 1}
+        }
+      },
+      "else": {
+        "properties": {
+          "distinctive_residue": {"minItems": 1},
+          "evidence_refs": {"minItems": 1}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"lock_eligibility": {"const": "BLOCKED"}}},
+      "then": {"properties": {"lock_block_reasons": {"minItems": 1}}}
+    }
+  ],
+  "$defs": {
+    "officialStatus": {"enum": ["UNKNOWN", "CANDIDATE_HYPOTHESIS", "SPARSE_EVIDENCE_CEILING", "LOCK_BLOCKED", "LOCK_INTERNAL_RESULT", "REVALIDATION_REQUIRED"]},
+    "claimType": {"enum": ["OBSERVATION", "CONSTRAINT", "HYPOTHESIS", "INFERENCE", "RESULT", "UNKNOWN"]},
+    "layer": {"enum": ["ABSTRACT_ROOT_CORE", "FORM_MORPHOLOGY", "CONSTRUCTION_SYNTAX", "PARTICIPANTS_ARGUMENTS", "DISCOURSE_CONTEXT", "UNKNOWN"]},
+    "coveragePair": {
+      "type": "object", "additionalProperties": false, "required": ["examined", "total"],
+      "properties": {"examined": {"type": "integer", "minimum": 0}, "total": {"type": "integer", "minimum": 0}}
+    },
+    "axisFinding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["axis_id", "applicability", "claim_type", "finding", "layer_attribution", "evidence_refs", "counterevidence_refs"],
+      "properties": {
+        "axis_id": {"pattern": "^AX-C(0[1-9]|1[0-6])$"},
+        "applicability": {"enum": ["APPLICABLE", "NOT_APPLICABLE", "UNKNOWN"]},
+        "claim_type": {"$ref": "#/$defs/claimType"},
+        "finding": {"type": "string", "minLength": 1},
+        "layer_attribution": {"$ref": "#/$defs/layer"},
+        "evidence_refs": {"type": "array", "items": {"type": "string"}},
+        "counterevidence_refs": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "probe": {
+      "type": "object", "additionalProperties": false, "required": ["probe", "evidence_role"],
+      "properties": {"probe": {"type": "string", "minLength": 1}, "evidence_role": {"const": "PROBE_ONLY"}}
+    },
+    "prediction": {
+      "type": "object", "additionalProperties": false,
+      "required": ["statement", "preregistered", "evidence_refs"],
+      "properties": {
+        "statement": {"type": "string", "minLength": 1},
+        "preregistered": {"type": "boolean"},
+        "evidence_refs": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "residue": {
+      "type": "object", "additionalProperties": false,
+      "required": ["statement", "polarity", "layer_attribution", "evidence_refs", "discriminating_test_refs"],
+      "properties": {
+        "statement": {"type": "string", "minLength": 1},
+        "polarity": {"const": "POSITIVE"},
+        "layer_attribution": {"enum": ["ABSTRACT_ROOT_CORE", "FORM_MORPHOLOGY", "CONSTRUCTION_SYNTAX", "PARTICIPANTS_ARGUMENTS", "DISCOURSE_CONTEXT"]},
+        "evidence_refs": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "discriminating_test_refs": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+      }
+    },
+    "dependency": {
+      "type": "object", "additionalProperties": false,
+      "required": ["dependency_id", "status", "used_as"],
+      "properties": {
+        "dependency_id": {"type": "string", "minLength": 1},
+        "status": {"enum": ["ACTIVE", "UNKNOWN", "LOCK_BLOCKED", "REVALIDATION_REQUIRED"]},
+        "used_as": {"enum": ["MATERIAL_SUPPORT", "BOUNDARY_ONLY", "QUESTION_ONLY", "SUFFICIENT_SUPPORT"]}
+      }
+    }
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Lisan Release Gate Report",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "candidate",
+    "checks",
+    "independent_review",
+    "owner_acceptance",
+    "verdict",
+    "blockers"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "candidate": {
+      "type": "object",
+      "required": [
+        "version",
+        "revision",
+        "package_sha256"
+      ]
+    },
+    "checks": {
+      "type": "object",
+      "required": [
+        "canon_001",
+        "package_validation",
+        "schema_validation",
+        "source_firewall_negative_tests",
+        "lock_negative_tests",
+        "runtime_budget",
+        "row_level_provenance",
+        "controlled_summary",
+        "behavioral_regressions",
+        "known_limitations_documented",
+        "no_open_constitutional_conflict"
+      ],
+      "additionalProperties": {
+        "type": "boolean"
+      }
+    },
+    "independent_review": {
+      "type": "object",
+      "required": [
+        "present",
+        "reviewer",
+        "report_ref"
+      ]
+    },
+    "owner_acceptance": {
+      "type": "object",
+      "required": [
+        "signed",
+        "authority",
+        "date"
+      ]
+    },
+    "verdict": {
+      "enum": [
+        "BLOCKED",
+        "TECHNICALLY_RELEASE_READY",
+        "INDEPENDENTLY_REVIEWED",
+        "RELEASE_ACCEPTED"
+      ]
+    },
+    "blockers": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "verdict": {
+            "const": "TECHNICALLY_RELEASE_READY"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "checks": {
+            "properties": {
+              "canon_001": {
+                "const": true
+              },
+              "package_validation": {
+                "const": true
+              },
+              "schema_validation": {
+                "const": true
+              },
+              "source_firewall_negative_tests": {
+                "const": true
+              },
+              "lock_negative_tests": {
+                "const": true
+              },
+              "runtime_budget": {
+                "const": true
+              },
+              "row_level_provenance": {
+                "const": true
+              },
+              "controlled_summary": {
+                "const": true
+              },
+              "behavioral_regressions": {
+                "const": true
+              },
+              "known_limitations_documented": {
+                "const": true
+              },
+              "no_open_constitutional_conflict": {
+                "const": true
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "verdict": {
+            "const": "INDEPENDENTLY_REVIEWED"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "independent_review": {
+            "properties": {
+              "present": {
+                "const": true
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "verdict": {
+            "const": "RELEASE_ACCEPTED"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "independent_review": {
+            "properties": {
+              "present": {
+                "const": true
+              }
+            }
+          },
+          "owner_acceptance": {
+            "properties": {
+              "signed": {
+                "const": true
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

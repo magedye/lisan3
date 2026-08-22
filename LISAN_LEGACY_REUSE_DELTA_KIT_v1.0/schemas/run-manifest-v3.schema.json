@@ -1,0 +1,230 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Lisan Run Manifest v3",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "run_mode",
+    "target",
+    "source_access",
+    "initial_hypothesis_freeze",
+    "internal_reference_policy",
+    "output_structure",
+    "canonical_status"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "3.0"
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "run_mode": {
+      "enum": [
+        "QURAN_INTERNAL_CUMULATIVE_RUN",
+        "OPTIONAL_INDEPENDENT_REDISCOVERY_AUDIT",
+        "CRITICAL_HERITAGE_REVIEW",
+        "METHODOLOGY_AUDIT_RUN"
+      ]
+    },
+    "target": {
+      "type": "object",
+      "required": [
+        "type",
+        "expression",
+        "claim_scope"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "ROOT",
+            "LEXEME",
+            "LEMMA",
+            "FORM",
+            "CONSTRUCTION",
+            "VERSE_TOPIC"
+          ]
+        },
+        "expression": {
+          "type": "string",
+          "minLength": 1
+        },
+        "claim_scope": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "source_access": {
+      "type": "object",
+      "required": [
+        "canonical_quran",
+        "structural_resources",
+        "internal_semantic_memory",
+        "external_semantic_sources"
+      ],
+      "additionalProperties": true
+    },
+    "initial_hypothesis_freeze": {
+      "type": "object",
+      "required": [
+        "required",
+        "completed",
+        "artifact_ref",
+        "sha256"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "required": {
+          "type": "boolean"
+        },
+        "completed": {
+          "type": "boolean"
+        },
+        "artifact_ref": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string"
+        }
+      }
+    },
+    "internal_reference_policy": {
+      "type": "object",
+      "required": [
+        "references_present",
+        "required_open_stage",
+        "manifest_ref"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "references_present": {
+          "type": "boolean"
+        },
+        "required_open_stage": {
+          "type": "string",
+          "minLength": 1
+        },
+        "manifest_ref": {
+          "type": "string"
+        }
+      }
+    },
+    "output_structure": {
+      "type": "object",
+      "required": [
+        "required_layers",
+        "internal_result_snapshot_ref"
+      ],
+      "properties": {
+        "required_layers": {
+          "const": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "methodology_version": {
+      "const": "7.1.0"
+    },
+    "skill_version": {
+      "const": "7.1.0"
+    },
+    "methodology_contract_version": {
+      "const": "7.3.0"
+    },
+    "skill_contract_version": {
+      "const": "7.3.0"
+    },
+    "release_stage": {
+      "const": "candidate"
+    },
+    "canonical_status": {
+      "enum": [
+        "VERIFIED",
+        "CANON_PENDING",
+        "PROVISIONAL_USER_SUPPLIED"
+      ]
+    }
+  },
+  "additionalProperties": true,
+  "oneOf": [
+    {
+      "title": "Current v7.3 candidate contract",
+      "required": ["methodology_contract_version", "skill_contract_version", "release_stage"],
+      "not": {"anyOf": [{"required": ["methodology_version"]}, {"required": ["skill_version"]}]}
+    },
+    {
+      "title": "Read-only v7.1 legacy contract",
+      "required": ["methodology_version", "skill_version"],
+      "not": {"anyOf": [{"required": ["methodology_contract_version"]}, {"required": ["skill_contract_version"]}, {"required": ["release_stage"]}]}
+    }
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "run_mode": {
+            "const": "QURAN_INTERNAL_CUMULATIVE_RUN"
+          },
+          "internal_reference_policy": {
+            "properties": {
+              "references_present": {
+                "const": true
+              }
+            },
+            "required": [
+              "references_present"
+            ]
+          }
+        },
+        "required": [
+          "run_mode",
+          "internal_reference_policy"
+        ]
+      },
+      "then": {
+        "properties": {
+          "initial_hypothesis_freeze": {
+            "properties": {
+              "required": {
+                "const": true
+              },
+              "completed": {
+                "const": true
+              },
+              "artifact_ref": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-fA-F]{64}$"
+              }
+            }
+          },
+          "internal_reference_policy": {
+            "properties": {
+              "required_open_stage": {
+                "const": "AFTER_INITIAL_HYPOTHESIS_FREEZE"
+              },
+              "manifest_ref": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

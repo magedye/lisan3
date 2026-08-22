@@ -1,0 +1,183 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Six Layer Result Package v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "research_identity",
+    "result_artifact_path",
+    "methodology_observations_ref",
+    "technical_term_first_use",
+    "layer_1_abstract_root_core",
+    "layer_2_semantic_family",
+    "layer_3_morphology_syntax",
+    "layer_4_contextual_impact",
+    "internal_result_snapshot",
+    "layer_5_critical_heritage_review",
+    "layer_6_standard_conclusion"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "research_identity": {
+      "type": "object",
+      "required": [
+        "run_id",
+        "target",
+        "corpus_profile",
+        "canon_status",
+        "freeze_ref",
+        "internal_references"
+      ],
+      "additionalProperties": true
+    },
+    "result_artifact_path": {
+      "type": "string",
+      "pattern": "_CUMULATIVE_RESULT\\.md$"
+    },
+    "methodology_observations_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "technical_term_first_use": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["arabic_label", "english_identifier", "arabic_explanation"],
+        "additionalProperties": true
+      }
+    },
+    "layer_1_abstract_root_core": {
+      "type": "object",
+      "required": [
+        "specifications",
+        "formulations",
+        "scope",
+        "decisive_contexts",
+        "falsification"
+      ],
+      "additionalProperties": true
+    },
+    "layer_2_semantic_family": {
+      "type": "object",
+      "required": [
+        "family_map_ref",
+        "distinction_card_refs",
+        "unresolved_boundaries"
+      ],
+      "properties": {
+        "family_map_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "distinction_card_refs": {
+          "type": "array",
+          "minItems": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "layer_3_morphology_syntax": {
+      "type": "object",
+      "required": [
+        "form_contributions",
+        "syntactic_contributions",
+        "operators"
+      ],
+      "properties": {
+        "form_contributions": {
+          "type": "array"
+        },
+        "syntactic_contributions": {
+          "type": "array"
+        },
+        "operators": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["operator_id", "arabic_label", "english_identifier", "arabic_explanation", "evidence_scope", "application_scope"],
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "layer_4_contextual_impact": {
+      "type": "object",
+      "required": [
+        "contextual_realizations",
+        "requested_verse_analysis"
+      ],
+      "additionalProperties": true
+    },
+    "internal_result_snapshot": {
+      "type": "object",
+      "required": [
+        "ref",
+        "sha256"
+      ],
+      "properties": {
+        "ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-fA-F]{64}$"
+        }
+      },
+      "additionalProperties": true
+    },
+    "layer_5_critical_heritage_review": {
+      "type": "object",
+      "required": [
+        "opened_after_snapshot",
+        "reviewed_opinions",
+        "impact_statement",
+        "confidence_promotion"
+      ],
+      "properties": {
+        "opened_after_snapshot": {
+          "const": true
+        },
+        "confidence_promotion": {
+          "const": false
+        }
+      },
+      "additionalProperties": true
+    },
+    "layer_6_standard_conclusion": {
+      "type": "object",
+      "required": [
+        "root_core_summary",
+        "distinction_summary",
+        "morphology_context_summary",
+        "limits",
+        "exclusions",
+        "confidence",
+        "dependency_ids",
+        "reopen_conditions",
+        "open_questions"
+      ],
+      "properties": {
+        "root_core_summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "distinction_summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "confidence": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

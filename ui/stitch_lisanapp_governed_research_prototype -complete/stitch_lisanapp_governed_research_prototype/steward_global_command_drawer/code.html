@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html class="light" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Steward Global Command Drawer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#f9f9ff",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#002113",
+                        "surface-dim": "#d3daea",
+                        "inverse-primary": "#4edea3",
+                        "surface": "#f9f9ff",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#d8e2ff",
+                        "on-secondary-fixed-variant": "#004395",
+                        "on-error": "#ffffff",
+                        "on-tertiary-container": "#711419",
+                        "inverse-on-surface": "#ebf1ff",
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#0058be",
+                        "surface-variant": "#dce2f3",
+                        "surface-container": "#e7eefe",
+                        "background": "#f9f9ff",
+                        "primary-fixed": "#6ffbbe",
+                        "on-primary": "#ffffff",
+                        "outline": "#6c7a71",
+                        "secondary-container": "#2170e4",
+                        "status-owner": "#8B5CF6",
+                        "surface-container-lowest": "#ffffff",
+                        "border-subtle": "#E5E7EB",
+                        "on-surface": "#151c27",
+                        "status-stale": "#F97316",
+                        "on-background": "#151c27",
+                        "on-tertiary-fixed": "#410005",
+                        "on-primary-container": "#00422b",
+                        "on-primary-fixed-variant": "#005236",
+                        "on-tertiary-fixed-variant": "#842225",
+                        "primary-container": "#10b981",
+                        "status-rejected": "#EF4444",
+                        "surface-container-highest": "#dce2f3",
+                        "surface-tint": "#006c49",
+                        "status-supported": "#10B981",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#ffdad7",
+                        "surface-container-low": "#f0f3ff",
+                        "tertiary-container": "#fc7c78",
+                        "outline-variant": "#bbcabf",
+                        "primary": "#006c49",
+                        "inverse-surface": "#2a313d",
+                        "tertiary-fixed-dim": "#ffb3af",
+                        "tertiary": "#a43a3a",
+                        "surface-background": "#F9FAFB",
+                        "surface-card": "#FFFFFF",
+                        "secondary-fixed-dim": "#adc6ff",
+                        "status-hypothesis": "#3B82F6",
+                        "on-secondary-container": "#fefcff",
+                        "on-surface-variant": "#3c4a42",
+                        "surface-container-high": "#e2e8f8",
+                        "on-secondary-fixed": "#001a42",
+                        "primary-fixed-dim": "#4edea3",
+                        "status-blocked": "#F59E0B",
+                        "on-error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-sm": "8px",
+                        "panel-width-inspector": "400px",
+                        "stack-lg": "32px",
+                        "margin-page": "40px",
+                        "gutter": "24px",
+                        "stack-md": "16px",
+                        "base": "4px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["IBM Plex Sans Arabic"],
+                        "body-lg": ["IBM Plex Sans Arabic"],
+                        "body-md": ["IBM Plex Sans Arabic"],
+                        "quran-verse-display": ["Traditional Quranic Font"],
+                        "headline-md": ["IBM Plex Sans Arabic"],
+                        "label-sm": ["IBM Plex Sans Arabic"],
+                        "mono-technical": ["jetbrainsMono"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "quran-verse-display": ["32px", { "lineHeight": "56px", "fontWeight": "400" }],
+                        "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "mono-technical": ["13px", { "lineHeight": "20px", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface-background text-on-background font-body-md min-h-screen overflow-hidden flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-surface border-b border-border-subtle docked full-width top-0 sticky z-40 flex justify-between items-center w-full px-margin-page py-2 rtl">
+<div class="flex items-center gap-gutter">
+<span class="font-headline-md text-headline-md font-extrabold text-primary">ليسان | محرك الأبحاث</span>
+<nav class="hidden md:flex items-center gap-stack-md">
+<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container-low px-2 py-1 rounded transition-colors" href="#">{ن ش ز}</a>
+<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container-low px-2 py-1 rounded transition-colors" href="#">منهجية v2.1</a>
+<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container-low px-2 py-1 rounded transition-colors" href="#">Corpus-72</a>
+</nav>
+</div>
+<div class="flex items-center gap-stack-md">
+<button class="text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors px-3 py-1 rounded-full font-label-sm text-label-sm border border-border-subtle">مختبر أعمى</button>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-full font-label-sm text-label-sm hover:opacity-90 transition-opacity">بوابة النقاء</button>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors" data-weight="fill">notifications</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors" data-weight="fill">history</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors" data-weight="fill" onclick="document.getElementById('steward-drawer').classList.toggle('translate-x-full');">account_circle</span>
+</div>
+</div>
+</header>
+<div class="flex flex-1 overflow-hidden relative">
+<!-- Main Content Area -->
+<main class="flex-1 overflow-y-auto p-margin-page bg-surface-background transition-all duration-300 pr-[280px]"> <!-- Added padding to account for fixed sidenav -->
+<div class="max-w-4xl mx-auto space-y-stack-lg">
+<h1 class="font-headline-lg text-headline-lg text-primary">لوحة القيادة</h1>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Dummy Content Cards -->
+<div class="bg-surface-card border border-border-subtle rounded-xl p-stack-md shadow-sm">
+<div class="flex justify-between items-start mb-stack-sm">
+<h3 class="font-headline-md text-headline-md text-on-surface">مشروع بحثي: النور</h3>
+<span class="bg-surface-container-low text-primary px-2 py-1 rounded text-label-sm font-label-sm font-mono-technical">ID: RUN-892</span>
+</div>
+<p class="text-on-surface-variant text-body-md mb-stack-md">تحليل السياق الدلالي لجذر "ن و ر" في السور المدنية.</p>
+<div class="flex gap-2">
+<span class="inline-flex items-center gap-1 bg-surface-container text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">fact_check</span>مراجعة</span>
+<span class="inline-flex items-center gap-1 bg-primary-container text-on-primary-container px-2 py-1 rounded font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">science</span>مختبر</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- SideNavBar (Persistent) -->
+<nav class="fixed top-0 right-0 h-screen w-64 border-l border-border-subtle bg-surface-container-lowest flex flex-col rtl pt-[64px] z-30">
+<div class="p-stack-md flex-1 overflow-y-auto space-y-2">
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-primary font-bold border-r-4 border-primary bg-surface-container-low transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-weight="fill">home</span>
+<span class="font-body-md text-body-md">الرئيسية</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-weight="fill">science</span>
+<span class="font-body-md text-body-md">الأبحاث</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-weight="fill">library_books</span>
+<span class="font-body-md text-body-md">المعرفة</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-weight="fill">fact_check</span>
+<span class="font-body-md text-body-md">المراجعة</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-weight="fill">gavel</span>
+<span class="font-body-md text-body-md">الحوكمة</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-weight="fill">settings</span>
+<span class="font-body-md text-body-md">العمليات</span>
+</a>
+</div>
+<div class="p-stack-md border-t border-border-subtle mt-auto space-y-2">
+<button class="w-full bg-primary text-on-primary py-2 rounded-lg font-headline-md text-headline-md hover:opacity-90 transition-opacity mb-4">بدء بحث جديد</button>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-weight="fill">help</span>
+<span class="font-body-md text-body-md">المساعدة</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-weight="fill">settings_applications</span>
+<span class="font-body-md text-body-md">الإعدادات</span>
+</a>
+</div>
+</nav>
+<!-- Steward Global Command Drawer -->
+<aside class="fixed top-0 left-0 h-screen w-panel-width-inspector bg-surface-card border-r border-border-subtle shadow-[4px_0_20px_rgba(0,0,0,0.05)] transform -translate-x-full transition-transform duration-300 z-50 flex flex-col rtl" id="steward-drawer">
+<!-- Drawer Header -->
+<div class="p-stack-md border-b border-border-subtle flex justify-between items-center bg-surface-container-lowest">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[28px]" data-weight="fill">terminal</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">المراقب العام</h2>
+<p class="font-mono-technical text-mono-technical text-on-surface-variant text-label-sm">Steward Command Interface</p>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-error transition-colors p-2 rounded-full hover:bg-error-container" onclick="document.getElementById('steward-drawer').classList.add('-translate-x-full');">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<!-- Command Input Area -->
+<div class="p-stack-md border-b border-border-subtle bg-surface-container-low">
+<label class="block font-label-sm text-label-sm text-on-surface mb-2" for="command-input">إدخال النية (نص حر)</label>
+<div class="relative">
+<textarea class="w-full bg-surface-card border border-border-subtle rounded-lg p-3 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary resize-none placeholder:text-on-surface-variant/50" id="command-input" placeholder="مثال: ترقية حالة الفرضية رقم 142 إلى 'معتمدة' وتحديث المراجع..." rows="3"></textarea>
+<div class="absolute bottom-3 left-3 flex gap-2">
+<button class="p-1.5 bg-surface text-on-surface-variant rounded hover:text-primary hover:bg-surface-container border border-border-subtle transition-colors" title="إرفاق سياق">
+<span class="material-symbols-outlined text-[18px]">attachment</span>
+</button>
+<button class="px-3 py-1.5 bg-primary text-on-primary rounded font-label-sm text-label-sm hover:opacity-90 transition-opacity flex items-center gap-1" onclick="simulateCommandParsing()">
+<span class="material-symbols-outlined text-[16px]">send</span> تحليل
+                         </button>
+</div>
+</div>
+</div>
+<!-- Scrollable Content Area -->
+<div class="flex-1 overflow-y-auto p-stack-md bg-surface-background space-y-stack-md">
+<!-- State 1: Parsed Command (Hidden initially) -->
+<div class="hidden space-y-stack-md" id="state-parsed">
+<div class="bg-surface-card border border-border-subtle rounded-lg p-stack-md">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-[20px]">code_blocks</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">الأمر المُفسّر</h3>
+</div>
+<div class="bg-inverse-surface rounded p-3 mb-3 overflow-x-auto">
+<pre class="font-mono-technical text-mono-technical text-inverse-on-surface text-sm">{
+  "action": "UPDATE_STATUS",
+  "target": "HYP-142",
+  "new_status": "SUPPORTED",
+  "cascade_updates": true
+}</pre>
+</div>
+<div class="flex items-center gap-2 text-status-supported font-label-sm text-label-sm bg-surface-container px-2 py-1 rounded inline-flex">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                            تم التحليل بنجاح
+                        </div>
+</div>
+<!-- Authorization & Validation Check -->
+<div class="bg-surface-card border border-border-subtle rounded-lg p-stack-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">فحص الصلاحيات والمنهجية</h3>
+<div class="space-y-2">
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low">
+<span class="font-body-md text-body-md text-on-surface">صلاحية المستخدم (Steward)</span>
+<span class="material-symbols-outlined text-status-supported">check</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low border border-error-container" id="val-fail-mock">
+<span class="font-body-md text-body-md text-on-surface">الاعتماد المرجعي</span>
+<span class="material-symbols-outlined text-error">close</span>
+</div>
+<p class="font-label-sm text-label-sm text-error mt-1 px-2">خطأ: الفرضية HYP-142 تفتقر إلى مراجعة ثانية من الأقران.</p>
+</div>
+</div>
+</div>
+<!-- State 2: Validated & Ready (Hidden initially) -->
+<div class="hidden space-y-stack-md" id="state-validated">
+<!-- Impact Preview -->
+<div class="bg-surface-card border border-primary-container rounded-lg p-stack-md relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1 h-full bg-primary-container"></div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">visibility</span>
+                            معاينة الأثر المعرفي
+                        </h3>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<div class="bg-surface-container rounded p-2 flex-shrink-0">
+<span class="material-symbols-outlined text-on-surface-variant">account_tree</span>
+</div>
+<div>
+<p class="font-body-md text-body-md text-on-surface font-bold">تحديث الشجرة الدلالية</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">سيتم نقل 3 جذور فرعية تحت مظلة الفرضية المعتمدة.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="bg-surface-container rounded p-2 flex-shrink-0">
+<span class="material-symbols-outlined text-on-surface-variant">history_edu</span>
+</div>
+<div>
+<p class="font-body-md text-body-md text-on-surface font-bold">سجل التدقيق (Audit Log)</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">تسجيل الإجراء تحت معرف <span class="font-mono-technical">TX-9982</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Drawer Footer (Actions) -->
+<div class="p-stack-md border-t border-border-subtle bg-surface-container-lowest flex justify-end gap-3">
+<button class="px-4 py-2 border border-border-subtle rounded-lg font-body-md text-body-md text-on-surface hover:bg-surface-container-low transition-colors" onclick="resetDrawer()">إلغاء</button>
+<button class="px-6 py-2 bg-primary text-on-primary rounded-lg font-headline-md text-headline-md hover:opacity-90 transition-opacity opacity-50 cursor-not-allowed flex items-center gap-2" disabled="" id="exec-btn">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+                    تنفيذ
+                </button>
+</div>
+</aside>
+</div>
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-border-subtle full-width bottom-0 flex justify-between items-center px-margin-page py-4 w-full rtl z-40 relative">
+<span class="font-label-sm text-label-sm font-mono-technical text-mono-technical text-on-surface-variant">© 2024 لیسان للبحوث اللغوية | Hash: 0x8F2...4A | Trace: QN-992-82</span>
+<div class="flex gap-4">
+<a class="font-label-sm text-label-sm font-mono-technical text-mono-technical text-on-surface-variant hover:underline" href="#">سياسة الخصوصية</a>
+<a class="font-label-sm text-label-sm font-mono-technical text-mono-technical text-on-surface-variant hover:underline" href="#">شروط الاستخدام</a>
+<a class="font-label-sm text-label-sm font-mono-technical text-mono-technical text-on-surface-variant hover:underline" href="#">توثيق المنهجية</a>
+</div>
+</footer>
+<script>
+        function simulateCommandParsing() {
+            const input = document.getElementById('command-input').value;
+            const parsedState = document.getElementById('state-parsed');
+            const valFailMock = document.getElementById('val-fail-mock');
+            const validatedState = document.getElementById('state-validated');
+            const execBtn = document.getElementById('exec-btn');
+
+            if (!input.trim()) return;
+
+            parsedState.classList.remove('hidden');
+            
+            // Simple logic to show different states based on input length for demo purposes
+            if (input.length < 20) {
+                // Show validation failure
+                valFailMock.classList.remove('hidden');
+                valFailMock.nextElementSibling.classList.remove('hidden');
+                validatedState.classList.add('hidden');
+                execBtn.disabled = true;
+                execBtn.classList.add('opacity-50', 'cursor-not-allowed');
+            } else {
+                // Show success validation and impact
+                valFailMock.classList.add('hidden');
+                valFailMock.nextElementSibling.classList.add('hidden');
+                setTimeout(() => {
+                    validatedState.classList.remove('hidden');
+                    execBtn.disabled = false;
+                    execBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                }, 800); // slight delay for effect
+            }
+        }
+
+        function resetDrawer() {
+            document.getElementById('command-input').value = '';
+            document.getElementById('state-parsed').classList.add('hidden');
+            document.getElementById('state-validated').classList.add('hidden');
+            const execBtn = document.getElementById('exec-btn');
+            execBtn.disabled = true;
+            execBtn.classList.add('opacity-50', 'cursor-not-allowed');
+        }
+    </script>
+</body></html>

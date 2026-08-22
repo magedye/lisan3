@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Quality &amp; Purity Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-highest": "#dce2f3",
+                      "surface-container-high": "#e2e8f8",
+                      "on-primary-fixed": "#002113",
+                      "on-secondary-container": "#fefcff",
+                      "surface-tint": "#006c49",
+                      "on-tertiary": "#ffffff",
+                      "error": "#ba1a1a",
+                      "tertiary-fixed": "#ffdad7",
+                      "on-tertiary-container": "#711419",
+                      "tertiary": "#a43a3a",
+                      "secondary-fixed-dim": "#adc6ff",
+                      "background": "#f9f9ff",
+                      "on-tertiary-fixed": "#410005",
+                      "on-secondary-fixed": "#001a42",
+                      "on-secondary": "#ffffff",
+                      "on-surface-variant": "#3c4a42",
+                      "on-primary": "#ffffff",
+                      "secondary-container": "#2170e4",
+                      "surface-background": "#F9FAFB",
+                      "tertiary-fixed-dim": "#ffb3af",
+                      "primary-fixed-dim": "#4edea3",
+                      "surface-container": "#e7eefe",
+                      "on-error-container": "#93000a",
+                      "status-rejected": "#EF4444",
+                      "secondary-fixed": "#d8e2ff",
+                      "on-tertiary-fixed-variant": "#842225",
+                      "surface-bright": "#f9f9ff",
+                      "surface-variant": "#dce2f3",
+                      "surface-card": "#FFFFFF",
+                      "on-surface": "#151c27",
+                      "error-container": "#ffdad6",
+                      "inverse-on-surface": "#ebf1ff",
+                      "surface-container-low": "#f0f3ff",
+                      "primary-fixed": "#6ffbbe",
+                      "primary": "#006c49",
+                      "on-error": "#ffffff",
+                      "inverse-primary": "#4edea3",
+                      "status-blocked": "#F59E0B",
+                      "on-background": "#151c27",
+                      "on-secondary-fixed-variant": "#004395",
+                      "outline-variant": "#bbcabf",
+                      "status-supported": "#10B981",
+                      "outline": "#6c7a71",
+                      "border-subtle": "#E5E7EB",
+                      "secondary": "#0058be",
+                      "primary-container": "#10b981",
+                      "surface-container-lowest": "#ffffff",
+                      "inverse-surface": "#2a313d",
+                      "surface-dim": "#d3daea",
+                      "on-primary-fixed-variant": "#005236",
+                      "surface": "#f9f9ff",
+                      "status-owner": "#8B5CF6",
+                      "tertiary-container": "#fc7c78",
+                      "status-stale": "#F97316",
+                      "on-primary-container": "#00422b",
+                      "status-hypothesis": "#3B82F6"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-page": "40px",
+                      "gutter": "24px",
+                      "stack-sm": "8px",
+                      "panel-width-inspector": "400px",
+                      "base": "4px",
+                      "stack-md": "16px",
+                      "stack-lg": "32px"
+              },
+              "fontFamily": {
+                      "body-md": [
+                              "IBM Plex Sans Arabic"
+                      ],
+                      "mono-technical": [
+                              "jetbrainsMono"
+                      ],
+                      "headline-lg": [
+                              "IBM Plex Sans Arabic"
+                      ],
+                      "headline-md": [
+                              "IBM Plex Sans Arabic"
+                      ],
+                      "label-sm": [
+                              "IBM Plex Sans Arabic"
+                      ],
+                      "quran-verse-display": [
+                              "Traditional Quranic Font"
+                      ],
+                      "body-lg": [
+                              "IBM Plex Sans Arabic"
+                      ]
+              },
+              "fontSize": {
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "mono-technical": [
+                              "13px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "quran-verse-display": [
+                              "32px",
+                              {
+                                      "lineHeight": "56px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Global state object
+            const state = {
+                falsifiabilityPassed: false,
+                heritageBiasPassed: false
+            };
+
+            // Event listener for Steward confirm action
+            document.addEventListener('stewardConfirmed', () => {
+                state.falsifiabilityPassed = true;
+                updateLockGateReport();
+            });
+
+            // Re-check purity button
+            const recheckPurityBtn = document.getElementById('recheck-purity-btn');
+            if (recheckPurityBtn) {
+                recheckPurityBtn.addEventListener('click', () => {
+                    // Simulate checking process
+                    recheckPurityBtn.disabled = true;
+                    recheckPurityBtn.innerHTML = '<span class="material-symbols-outlined animate-spin" data-icon="refresh">refresh</span><span>جاري الفحص...</span>';
+                    
+                    setTimeout(() => {
+                        state.heritageBiasPassed = true;
+                        updatePurityDetector();
+                        recheckPurityBtn.style.display = 'none';
+                    }, 1500);
+                });
+            }
+
+            // Steward Drawer Toggle
+            const openStewardBtn = document.getElementById('open-steward-btn');
+            const stewardDrawer = document.getElementById('steward-drawer');
+            const closeStewardBtn = document.getElementById('close-steward-btn');
+            const confirmOrderBtn = document.getElementById('confirm-order-btn');
+
+            if (openStewardBtn && stewardDrawer) {
+                openStewardBtn.addEventListener('click', () => {
+                    stewardDrawer.classList.remove('translate-x-full');
+                });
+            }
+
+            if (closeStewardBtn && stewardDrawer) {
+                closeStewardBtn.addEventListener('click', () => {
+                    stewardDrawer.classList.add('translate-x-full');
+                });
+            }
+            
+            if (confirmOrderBtn) {
+                 confirmOrderBtn.addEventListener('click', () => {
+                     document.dispatchEvent(new CustomEvent('stewardConfirmed'));
+                     if(stewardDrawer) stewardDrawer.classList.add('translate-x-full');
+                 });
+            }
+
+            function updateLockGateReport() {
+                const passCountEl = document.getElementById('lock-pass-count');
+                const failCountEl = document.getElementById('lock-fail-count');
+                const falsifiabilityRow = document.getElementById('row-falsifiability');
+                
+                if (state.falsifiabilityPassed) {
+                    if (passCountEl) passCountEl.textContent = '9';
+                    if (failCountEl) failCountEl.textContent = '1';
+                    
+                    if (falsifiabilityRow) {
+                        falsifiabilityRow.classList.remove('bg-status-blocked', 'bg-opacity-10');
+                        falsifiabilityRow.classList.add('hover:bg-surface-container-lowest');
+                        
+                        const statusCell = falsifiabilityRow.querySelector('td:nth-child(2)');
+                        if (statusCell) {
+                             statusCell.innerHTML = `
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-mono-technical bg-surface-container text-on-surface-variant border border-outline-variant">
+                                    <span class="w-2 h-2 rounded-full bg-status-supported ml-2"></span> PASS
+                                </span>
+                             `;
+                        }
+                        const iconCell = falsifiabilityRow.querySelector('td:nth-child(3)');
+                        if(iconCell) {
+                            iconCell.innerHTML = `<span class="material-symbols-outlined text-status-supported text-lg" data-icon="check_circle">check_circle</span>`;
+                        }
+                    }
+                }
+            }
+
+            function updatePurityDetector() {
+                const heritageRow = document.getElementById('row-heritage-bias');
+                const detectorHeader = document.getElementById('purity-detector-header');
+                const detectorStatus = document.getElementById('purity-detector-status');
+                const detectorIconContainer = document.getElementById('purity-detector-icon-container');
+                const detectorIcon = document.getElementById('purity-detector-icon');
+                const detectorBorder = document.getElementById('purity-detector-container');
+                const detectorBg = document.getElementById('purity-detector-bg');
+                
+                if (state.heritageBiasPassed) {
+                    if (heritageRow) {
+                        heritageRow.classList.remove('bg-status-blocked', 'bg-opacity-10');
+                        heritageRow.classList.add('hover:bg-surface-container-lowest');
+                        
+                        const statusCell = heritageRow.querySelector('td:nth-child(2)');
+                        if (statusCell) {
+                             statusCell.innerHTML = `
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-mono-technical bg-surface-container text-on-surface-variant border border-outline-variant">
+                                    <span class="w-2 h-2 rounded-full bg-status-supported ml-2"></span> PASS
+                                </span>
+                             `;
+                        }
+                        const iconCell = heritageRow.querySelector('td:nth-child(3)');
+                        if(iconCell) {
+                            iconCell.innerHTML = `<span class="material-symbols-outlined text-status-supported text-lg" data-icon="check_circle">check_circle</span>`;
+                        }
+                    }
+
+                    if (detectorHeader) {
+                        detectorHeader.innerHTML = 'كاشف النقاء المنهجي';
+                    }
+                    if (detectorStatus) {
+                        detectorStatus.textContent = 'الوضع: اجتياز (Clear)';
+                        detectorStatus.className = 'font-label-sm text-label-sm text-status-supported mt-1 font-mono-technical';
+                    }
+                    if (detectorIconContainer) {
+                        detectorIconContainer.className = 'w-10 h-10 rounded-full bg-status-supported flex items-center justify-center text-white';
+                    }
+                    if (detectorIcon) {
+                        detectorIcon.setAttribute('data-icon', 'check_circle');
+                        detectorIcon.textContent = 'check_circle';
+                    }
+                    if (detectorBorder) {
+                        detectorBorder.classList.remove('border-status-blocked');
+                        detectorBorder.classList.add('border-status-supported');
+                    }
+                    if (detectorBg) {
+                        detectorBg.classList.remove('bg-status-blocked');
+                        detectorBg.classList.add('bg-status-supported');
+                    }
+                    
+                    const warningPill = document.getElementById('heritage-warning-pill');
+                    if (warningPill) {
+                         warningPill.style.display = 'none';
+                    }
+                }
+            }
+        });
+    </script>
+</head>
+<body class="bg-surface-background font-body-md text-on-surface h-screen flex overflow-hidden rtl relative">
+<!-- SideNavBar -->
+<nav aria-label="Sidebar Navigation" class="fixed top-0 right-0 h-screen w-64 border-l border-border-subtle flex flex-col h-full rtl bg-surface-container-lowest dark:bg-inverse-surface z-50 hidden md:flex">
+<div class="px-gutter py-stack-md flex-shrink-0 flex items-center justify-center border-b border-border-subtle bg-surface-container-lowest">
+<div aria-label="Lisanapp Logo" class="text-headline-lg font-headline-lg font-bold text-primary dark:text-primary-fixed-dim">
+                ليسان
+                <span class="block text-label-sm font-label-sm text-on-surface-variant font-normal mt-1">منصة الأبحاث المحكمة</span>
+</div>
+</div>
+<div class="px-gutter py-stack-md mt-4">
+<button class="w-full flex items-center justify-center space-x-2 space-x-reverse bg-primary text-on-primary py-2 px-4 rounded-lg font-headline-md text-headline-md hover:bg-surface-container-high hover:text-primary transition-colors duration-200">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+<span>بدء بحث جديد</span>
+</button>
+</div>
+<div class="flex-1 overflow-y-auto mt-4 px-4 space-y-1">
+<a class="flex items-center space-x-3 space-x-reverse px-4 py-3 rounded-lg text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span>الرئيسية</span>
+</a>
+<a class="flex items-center space-x-3 space-x-reverse px-4 py-3 rounded-lg text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="science">science</span>
+<span>الأبحاث</span>
+</a>
+<a class="flex items-center space-x-3 space-x-reverse px-4 py-3 rounded-lg text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="library_books">library_books</span>
+<span>المعرفة</span>
+</a>
+<!-- Active State for Dashboard/Review -->
+<a class="flex items-center space-x-3 space-x-reverse px-4 py-3 rounded-lg text-primary font-bold border-r-4 border-primary bg-surface-container-low transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="fact_check">fact_check</span>
+<span>المراجعة</span>
+</a>
+<a class="flex items-center space-x-3 space-x-reverse px-4 py-3 rounded-lg text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="gavel">gavel</span>
+<span>الحوكمة</span>
+</a>
+<a class="flex items-center space-x-3 space-x-reverse px-4 py-3 rounded-lg text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span>العمليات</span>
+</a>
+</div>
+<div class="mt-auto px-4 py-stack-md border-t border-border-subtle space-y-1">
+<a class="flex items-center space-x-3 space-x-reverse px-4 py-3 rounded-lg text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+<span>المساعدة</span>
+</a>
+<a class="flex items-center space-x-3 space-x-reverse px-4 py-3 rounded-lg text-on-surface-variant font-body-md hover:bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="settings_applications">settings_applications</span>
+<span>الإعدادات</span>
+</a>
+</div>
+</nav>
+<!-- Main Content Area -->
+<div class="flex-1 flex flex-col md:mr-64 w-full h-full overflow-hidden">
+<!-- TopAppBar -->
+<header class="flex justify-between items-center w-full px-margin-page py-2 rtl docked full-width top-0 sticky z-40 bg-surface dark:bg-surface-dim border-b border-border-subtle">
+<div class="flex items-center space-x-4 space-x-reverse">
+<span class="font-headline-md text-headline-md font-extrabold text-primary">ليسان | محرك الأبحاث</span>
+<nav class="hidden md:flex items-center space-x-4 space-x-reverse ml-4">
+<a class="font-headline-sm text-headline-sm font-mono-technical text-mono-technical text-on-surface-variant hover:text-primary hover:bg-surface-container-low px-2 py-1 rounded transition-colors" href="#">{ن ش ز}</a>
+<a class="font-headline-sm text-headline-sm font-mono-technical text-mono-technical text-on-surface-variant hover:text-primary hover:bg-surface-container-low px-2 py-1 rounded transition-colors" href="#">منهجية v2.1</a>
+<a class="font-headline-sm text-headline-sm font-mono-technical text-mono-technical text-on-surface-variant hover:text-primary hover:bg-surface-container-low px-2 py-1 rounded transition-colors" href="#">Corpus-72</a>
+</nav>
+</div>
+<div class="flex items-center space-x-4 space-x-reverse">
+<button class="bg-primary text-on-primary font-headline-sm text-headline-sm px-4 py-2 rounded-lg hover:opacity-80 transition-opacity">بوابة النقاء</button>
+<button class="bg-surface-container-high text-on-surface font-headline-sm text-headline-sm px-4 py-2 rounded-lg border border-border-subtle hover:bg-surface-container-highest transition-colors">المختبر الأعمى</button>
+<div class="flex items-center space-x-2 space-x-reverse border-r border-border-subtle pr-4">
+<button aria-label="notifications" class="text-on-surface-variant hover:text-primary transition-colors p-1 rounded-full hover:bg-surface-container-low">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button aria-label="history" class="text-on-surface-variant hover:text-primary transition-colors p-1 rounded-full hover:bg-surface-container-low">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+</button>
+<button aria-label="account_circle" class="text-on-surface-variant hover:text-primary transition-colors p-1 rounded-full hover:bg-surface-container-low">
+<img alt="الباحث" class="w-8 h-8 rounded-full object-cover" data-alt="A small circular avatar placeholder image for a user profile picture, minimalist, light background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-khEX_N4zWrGGrpTyx0izVeu3DG6MdSMR-r6h2FZJ2NOYwVPFu0cTWnx_MmYMSJjVhxDLvaj2ShBCy4N9HoCgm-c7yn_L_5vkdwUc2tcN030KYhegzesfmxBR3T-PuQD0zKlB5RK9nemTjKeF14FtGqmuW-do9iVxOx5NGOPpo4a62ROcbNIGX4KGf_AXzqJxCQ6R6C7KHtta3L8-itiF5JZtxUVVp-Hhz9UelA_1rvbRCk8DBiY"/>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Workspace Canvas -->
+<main class="flex-1 overflow-y-auto p-margin-page bg-surface-background relative">
+<div class="max-w-7xl mx-auto space-y-stack-lg pb-24">
+<!-- Page Header -->
+<div class="flex justify-between items-end border-b border-border-subtle pb-4">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold">لوحة الجودة والنقاء</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">تحليل منهجي لمدى التزام البحث بمعايير الحوكمة والنقاء اللغوي.</p>
+</div>
+<button class="flex items-center space-x-2 space-x-reverse bg-surface-container-highest text-on-surface px-4 py-2 rounded border border-outline-variant hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined" data-icon="download">download</span>
+<span class="font-label-sm text-label-sm">تصدير التقرير</span>
+</button>
+</div>
+<!-- 2-Column Grid -->
+<div class="grid grid-cols-1 xl:grid-cols-2 gap-gutter">
+<!-- Column 1: Quality Profile -->
+<div class="space-y-stack-md">
+<div class="bg-surface-card border border-border-subtle rounded-xl p-6 shadow-sm">
+<div class="flex items-center space-x-2 space-x-reverse mb-6 border-b border-border-subtle pb-4">
+<span class="material-symbols-outlined text-primary" data-icon="analytics">analytics</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">ملف الجودة</h2>
+</div>
+<div class="space-y-4">
+<!-- Dimension 1 -->
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="font-body-md text-body-md text-on-surface font-semibold">تغطية المتن (Corpus Coverage)</span>
+<span class="font-mono-technical text-mono-technical text-status-supported">94%</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2">
+<div class="bg-status-supported h-2 rounded-full" style="width: 94%"></div>
+</div>
+</div>
+<!-- Dimension 2 -->
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="font-body-md text-body-md text-on-surface font-semibold">قوة الأدلة (Evidence Strength)</span>
+<span class="font-mono-technical text-mono-technical text-status-supported">88%</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2">
+<div class="bg-status-supported h-2 rounded-full" style="width: 88%"></div>
+</div>
+</div>
+<!-- Dimension 3 -->
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="font-body-md text-body-md text-on-surface font-semibold">الاتساق الداخلي (Internal Consistency)</span>
+<span class="font-mono-technical text-mono-technical text-primary">98%</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2">
+<div class="bg-primary h-2 rounded-full" style="width: 98%"></div>
+</div>
+</div>
+<!-- Dimension 4 -->
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="font-body-md text-body-md text-on-surface font-semibold">تمايز الجوار (Neighbor Differentiation)</span>
+<span class="font-mono-technical text-mono-technical text-status-blocked">72%</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2">
+<div class="bg-status-blocked h-2 rounded-full" style="width: 72%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-card border border-border-subtle rounded-xl p-6 shadow-sm overflow-hidden relative">
+<div class="absolute top-0 right-0 w-2 h-full bg-status-blocked"></div>
+<div class="flex items-center space-x-2 space-x-reverse mb-6 border-b border-border-subtle pb-4">
+<span class="material-symbols-outlined text-status-blocked" data-icon="policy">policy</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">تقرير بوابات القفل (Lock Gate Report)</h2>
+</div>
+<div class="grid grid-cols-3 gap-4 mb-6">
+<div class="bg-surface-container-low p-4 rounded text-center border border-border-subtle">
+<div class="font-headline-lg text-headline-lg text-status-supported" id="lock-pass-count">8</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">اجتاز</div>
+</div>
+<div class="bg-surface-container-high p-4 rounded text-center border border-status-blocked bg-opacity-20">
+<div class="font-headline-lg text-headline-lg text-status-blocked" id="lock-fail-count">2</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">فشل (مراجعة)</div>
+</div>
+<div class="bg-surface-variant p-4 rounded text-center border border-border-subtle">
+<div class="font-headline-lg text-headline-lg text-on-surface-variant">1</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">غير مطبق</div>
+</div>
+</div>
+<button class="w-full flex items-center justify-center space-x-2 space-x-reverse bg-primary text-on-primary py-3 rounded-lg font-headline-md text-headline-md hover:bg-opacity-90 transition-colors" id="open-steward-btn">
+<span class="material-symbols-outlined" data-icon="assignment_ind">assignment_ind</span>
+<span>طلب مراجعة متخصص</span>
+</button>
+</div>
+</div>
+<!-- Column 2: Purity Detector -->
+<div class="space-y-stack-md">
+<div class="bg-surface-card border-2 border-status-blocked rounded-xl shadow-sm overflow-hidden relative" id="purity-detector-container">
+<!-- Ambient background warning -->
+<div class="absolute inset-0 bg-status-blocked opacity-5 pointer-events-none" id="purity-detector-bg"></div>
+<div class="p-6 relative z-10">
+<div class="flex justify-between items-start mb-6 border-b border-border-subtle pb-4">
+<div class="flex items-center space-x-3 space-x-reverse">
+<div class="w-10 h-10 rounded-full bg-status-blocked flex items-center justify-center text-white" id="purity-detector-icon-container">
+<span class="material-symbols-outlined" data-icon="warning" id="purity-detector-icon">warning</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface" id="purity-detector-header">كاشف النقاء المنهجي</h2>
+<p class="font-label-sm text-label-sm text-status-blocked mt-1 font-mono-technical" id="purity-detector-status">الوضع: تحذير أصفر (Amber)</p>
+</div>
+</div>
+<span class="bg-surface-container-high text-on-surface-variant px-3 py-1 rounded-full font-label-sm text-label-sm border border-outline-variant" id="heritage-warning-pill">
+                                        تشابه 78% مع تعريف لسان العرب
+                                    </span>
+</div>
+<!-- 8-Dimension Purity Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-right border-collapse">
+<thead>
+<tr class="border-b border-border-subtle text-on-surface-variant font-label-sm text-label-sm">
+<th class="py-2 font-normal">البعد المنهجي</th>
+<th class="py-2 font-normal">الحالة</th>
+<th class="py-2 font-normal pl-2">النتيجة</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md">
+<!-- Row 1 -->
+<tr class="border-b border-surface-variant hover:bg-surface-container-lowest transition-colors">
+<td class="py-3 text-on-surface">أولوية المعاجم (Dictionary-First)</td>
+<td class="py-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-mono-technical bg-surface-container text-on-surface-variant border border-outline-variant">
+<span class="w-2 h-2 rounded-full bg-status-supported ml-2"></span> PASS
+                                                    </span>
+</td>
+<td class="py-3 pl-2"><span class="material-symbols-outlined text-status-supported text-lg" data-icon="check_circle">check_circle</span></td>
+</tr>
+<!-- Row 2 -->
+<tr class="border-b border-surface-variant hover:bg-surface-container-lowest transition-colors">
+<td class="py-3 text-on-surface">تسرب السياق (Contextual Leakage)</td>
+<td class="py-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-mono-technical bg-surface-container text-on-surface-variant border border-outline-variant">
+<span class="w-2 h-2 rounded-full bg-status-supported ml-2"></span> PASS
+                                                    </span>
+</td>
+<td class="py-3 pl-2"><span class="material-symbols-outlined text-status-supported text-lg" data-icon="check_circle">check_circle</span></td>
+</tr>
+<!-- Row 3 - FAILED -> AMBER -->
+<tr class="border-b border-surface-variant bg-status-blocked bg-opacity-10 transition-colors" id="row-heritage-bias">
+<td class="py-3 text-on-surface font-semibold">التحيز التراثي (Heritage Bias)</td>
+<td class="py-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-mono-technical bg-surface-container-high text-status-blocked border border-status-blocked">
+<span class="w-2 h-2 rounded-full bg-status-blocked ml-2"></span> AMBER
+                                                    </span>
+</td>
+<td class="py-3 pl-2"><span class="material-symbols-outlined text-status-blocked text-lg" data-icon="warning">warning</span></td>
+</tr>
+<!-- Row 4 -->
+<tr class="border-b border-surface-variant hover:bg-surface-container-lowest transition-colors">
+<td class="py-3 text-on-surface">تجريد الجذور (Root Abstraction)</td>
+<td class="py-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-mono-technical bg-surface-container text-on-surface-variant border border-outline-variant">
+<span class="w-2 h-2 rounded-full bg-status-supported ml-2"></span> PASS
+                                                    </span>
+</td>
+<td class="py-3 pl-2"><span class="material-symbols-outlined text-status-supported text-lg" data-icon="check_circle">check_circle</span></td>
+</tr>
+<!-- Row 5 - FAILED -->
+<tr class="border-b border-surface-variant bg-status-blocked bg-opacity-10 transition-colors" id="row-falsifiability">
+<td class="py-3 text-on-surface font-semibold">القابلية للدحض (Falsifiability)</td>
+<td class="py-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-mono-technical bg-surface-container-high text-status-blocked border border-status-blocked">
+<span class="w-2 h-2 rounded-full bg-status-blocked ml-2"></span> FAIL
+                                                    </span>
+</td>
+<td class="py-3 pl-2"><span class="material-symbols-outlined text-status-blocked text-lg" data-icon="error">error</span></td>
+</tr>
+<!-- Row 6 -->
+<tr class="border-b border-surface-variant hover:bg-surface-container-lowest transition-colors">
+<td class="py-3 text-on-surface">الاستدلال الدائري (Circular Reasoning)</td>
+<td class="py-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-mono-technical bg-surface-container text-on-surface-variant border border-outline-variant">
+<span class="w-2 h-2 rounded-full bg-status-supported ml-2"></span> PASS
+                                                    </span>
+</td>
+<td class="py-3 pl-2"><span class="material-symbols-outlined text-status-supported text-lg" data-icon="check_circle">check_circle</span></td>
+</tr>
+<!-- Row 7 -->
+<tr class="border-b border-surface-variant hover:bg-surface-container-lowest transition-colors">
+<td class="py-3 text-on-surface">الاعتماد الخارجي (External Dependency)</td>
+<td class="py-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-mono-technical bg-surface-container text-on-surface-variant border border-outline-variant">
+<span class="w-2 h-2 rounded-full bg-surface-dim ml-2"></span> N/A
+                                                    </span>
+</td>
+<td class="py-3 pl-2"><span class="material-symbols-outlined text-on-surface-variant text-lg" data-icon="remove">remove</span></td>
+</tr>
+<!-- Row 8 - FAILED -->
+<tr class="hover:bg-surface-container-lowest bg-status-blocked bg-opacity-10 transition-colors">
+<td class="py-3 text-on-surface font-semibold">التمايز (Distinctiveness)</td>
+<td class="py-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-mono-technical bg-surface-container-high text-status-blocked border border-status-blocked">
+<span class="w-2 h-2 rounded-full bg-status-blocked ml-2"></span> FAIL
+                                                    </span>
+</td>
+<td class="py-3 pl-2"><span class="material-symbols-outlined text-status-blocked text-lg" data-icon="error">error</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mt-4 pt-4 border-t border-border-subtle flex justify-end">
+<button class="flex items-center space-x-2 space-x-reverse bg-surface-container-highest text-on-surface px-4 py-2 rounded-lg border border-outline-variant hover:bg-surface-variant transition-colors font-headline-sm text-headline-sm" id="recheck-purity-btn">
+<span class="material-symbols-outlined" data-icon="autorenew">autorenew</span>
+<span>إعادة فحص النقاء</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="flex justify-between items-center px-margin-page py-4 w-full rtl full-width bottom-0 border-t border-border-subtle bg-surface-container-low dark:bg-inverse-surface mt-auto">
+<div class="font-label-sm text-label-sm font-mono-technical text-mono-technical text-on-surface-variant dark:text-surface-variant">
+                © 2024 لیسان للبحوث اللغوية | Hash: 0x8F2...4A | Trace: QN-992-82
+             </div>
+<div class="flex space-x-6 space-x-reverse">
+<a class="font-label-sm text-label-sm font-mono-technical text-mono-technical text-on-surface-variant dark:text-surface-variant hover:underline transition-all duration-200" href="#">سياسة الخصوصية</a>
+<a class="font-label-sm text-label-sm font-mono-technical text-mono-technical text-on-surface-variant dark:text-surface-variant hover:underline transition-all duration-200" href="#">شروط الاستخدام</a>
+<a class="font-label-sm text-label-sm font-mono-technical text-mono-technical text-on-surface-variant dark:text-surface-variant hover:underline transition-all duration-200" href="#">توثيق المنهجية</a>
+</div>
+</footer>
+</div>
+<!-- Global Steward Drawer -->
+<div class="fixed inset-y-0 right-0 w-[400px] bg-surface-container-lowest border-l border-border-subtle shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-[60] flex flex-col" id="steward-drawer">
+<div class="flex items-center justify-between p-6 border-b border-border-subtle">
+<div class="flex items-center space-x-3 space-x-reverse">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="admin_panel_settings">admin_panel_settings</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">إجراءات المنسق (Steward)</h2>
+</div>
+<button class="text-on-surface-variant hover:bg-surface-container-low p-2 rounded-full transition-colors" id="close-steward-btn">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+<div class="flex-1 overflow-y-auto p-6 space-y-6">
+<div class="bg-surface-container-low p-4 rounded-lg border border-border-subtle">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">طلب مراجعة حالي</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">يوجد طلب مراجعة لبوابة القفل "القابلية للدحض". هل تريد تجاوز هذه البوابة وتأكيد الإجراء؟</p>
+<div class="bg-surface-variant p-3 rounded text-sm font-mono-technical text-on-surface-variant mb-4">
+                Gate: Falsifiability<br/>
+                Status: FAIL<br/>
+                Req: Override &amp; Approve
+            </div>
+<button class="w-full flex items-center justify-center space-x-2 space-x-reverse bg-primary text-on-primary py-2 px-4 rounded font-headline-sm text-headline-sm hover:bg-opacity-90 transition-colors" id="confirm-order-btn">
+<span class="material-symbols-outlined" data-icon="check">check</span>
+<span>تأكيد التجاوز والموافقة</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>

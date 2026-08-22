@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Initial Hypothesis Freeze v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "target",
+    "corpus_snapshot_ref",
+    "corpus_snapshot_sha256",
+    "observations",
+    "constraints",
+    "unknowns",
+    "hypotheses",
+    "closed_sources",
+    "frozen_at",
+    "sha256"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target": {
+      "type": "string",
+      "minLength": 1
+    },
+    "corpus_snapshot_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "corpus_snapshot_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{64}$"
+    },
+    "observations": {
+      "type": "array",
+      "minItems": 1
+    },
+    "constraints": {
+      "type": "array"
+    },
+    "unknowns": {
+      "type": "array"
+    },
+    "hypotheses": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "hypothesis_id",
+          "statement",
+          "predictions",
+          "falsification_conditions"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "closed_sources": {
+      "type": "array",
+      "contains": {
+        "const": "SEMANTIC_DEFINITION_REGISTRY"
+      }
+    },
+    "frozen_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{64}$"
+    }
+  },
+  "additionalProperties": true
+}

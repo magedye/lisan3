@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Optional Rediscovery Audit Manifest v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "audit_id",
+    "target",
+    "trigger",
+    "source_isolation",
+    "documentary_isolation",
+    "parametric_prior_risk",
+    "production_result_ref",
+    "audit_result_ref",
+    "comparison_state",
+    "production_block"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "audit_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target": {
+      "type": "string",
+      "minLength": 1
+    },
+    "trigger": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_isolation": {
+      "type": "object",
+      "required": [
+        "semantic_registry",
+        "prior_results",
+        "working_cards",
+        "external_semantic_sources",
+        "structural_allowlist"
+      ],
+      "properties": {
+        "semantic_registry": {
+          "const": "DENY"
+        },
+        "prior_results": {
+          "const": "DENY"
+        },
+        "working_cards": {
+          "const": "DENY"
+        },
+        "external_semantic_sources": {
+          "const": "DENY"
+        },
+        "structural_allowlist": {
+          "const": "ALLOW_FILTERED"
+        }
+      },
+      "additionalProperties": false
+    },
+    "documentary_isolation": {
+      "enum": [
+        "VERIFIED",
+        "NOT_VERIFIED"
+      ]
+    },
+    "parametric_prior_risk": {
+      "const": "PRESENT"
+    },
+    "production_result_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "audit_result_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "comparison_state": {
+      "enum": [
+        "MATCH",
+        "PARTIAL_MATCH",
+        "CONFLICT",
+        "INCONCLUSIVE"
+      ]
+    },
+    "production_block": {
+      "const": false
+    }
+  },
+  "additionalProperties": false
+}

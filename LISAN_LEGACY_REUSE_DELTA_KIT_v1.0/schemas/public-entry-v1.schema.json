@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Lisan Public Entry v1",
+  "type": "object",
+  "required": ["entry_id", "display_title_ar", "source_claim_id", "source_semantic_entry", "source_version", "source_status", "source_hash_or_provenance", "public_render_version", "publication_status", "public_gloss"],
+  "properties": {
+    "entry_id": {"type": "string", "minLength": 1},
+    "display_title_ar": {"type": "string", "minLength": 1},
+    "source_claim_id": {"type": ["string", "null"]},
+    "source_semantic_entry": {"type": ["string", "null"]},
+    "source_version": {"type": ["string", "null"]},
+    "source_status": {"type": ["string", "null"]},
+    "source_hash_or_provenance": {"type": ["string", "null"]},
+    "public_render_version": {"type": "string", "minLength": 1},
+    "publication_status": {"enum": ["NOT_YET_SUPPORTED", "PUBLISHABLE", "WITHDRAWN", "REVALIDATION_REQUIRED"]},
+    "public_gloss": {"type": ["string", "null"]},
+    "explicit_divergence_label": {"type": ["string", "null"]},
+    "divergence_rationale": {"type": ["string", "null"]},
+    "owner_approval_ref": {"type": ["string", "null"]}
+  },
+  "additionalProperties": true
+}

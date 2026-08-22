@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "letter-semantics-pilot-v1.schema.json",
+  "title": "Lisan bounded letter-semantics pilot",
+  "type": "object",
+  "required": ["pilot_id", "program_status", "source", "letters", "observations", "semantic_hypotheses", "objections", "registry_entries_added", "root_core_eligibility", "verdict", "owner_accepted"],
+  "properties": {
+    "program_status": {"const": "PROVISIONAL_RESEARCH_PROGRAM"},
+    "letters": {"type": "array", "minItems": 1, "maxItems": 3, "uniqueItems": true},
+    "semantic_hypotheses": {"type": "array", "maxItems": 0},
+    "registry_entries_added": {"const": 0},
+    "root_core_eligibility": {"const": "PROHIBITED"},
+    "verdict": {"const": "UNKNOWN_NO_ADOPTION"},
+    "owner_accepted": {"const": false}
+  },
+  "additionalProperties": true
+}
