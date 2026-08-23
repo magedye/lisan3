@@ -6,6 +6,7 @@ __pycache__/
 .ruff_cache/
 .hypothesis/
 .mypy_cache/
+.schemathesis/
 
 # Local SQLite runtime/test databases (not part of source history)
 *.db
@@ -19,6 +20,8 @@ node_modules/
 out/
 coverage/
 *.tsbuildinfo
+playwright-report/
+test-results/
 
 # IDE / OS local state
 .idea/
