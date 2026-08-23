@@ -1,74 +1,59 @@
-# Lisanapp Canonical Consolidation — Project State
+# Lisanapp Project State
 
-## Repository State
-- **Repository root**: `D:\APP\tafseer\lisanapp3` (dedicated Git repository for Lisanapp)
-- **Branch**: `main`
-- **HEAD**: `0e5f256deede286252c299aa2541ea5a8a6b0753` — baseline commit
-  `chore: establish governed Lisanapp implementation baseline` (202 tracked files)
-- **Remotes**: none configured (no push authorized)
-- **Working Tree**: CLEAN at baseline SHA
+State context only. Canonical repository contracts and runtime evidence remain authoritative.
 
-### Git Provenance Note (2026-08-22)
-The previously recorded parent-repository reference (`tafseer` repo,
-branch `v7.1-execution`, HEAD `6c98d56f32eb11ab7fcb3d62ae2676019ecbeeb7`)
-does **NOT** identify the Lisanapp candidate: the entire `lisanapp3/`
-directory was untracked in that repository. An independent read-only
-adversarial V3 review discovered this provenance defect; this dedicated
-repository was initialized so candidate revisions identify only this
-product. The independent V3 verdict remains **V3_NOT_CONFIRMED** until a
-fresh independent review is performed against a committed candidate SHA.
-Do not treat pre-baseline evidence as candidate-SHA verification.
+## Repository
 
-### Pre-Baseline Evidence Continuity
-All prior execution evidence (pytest 45 collected / 5 E2E journeys,
-Ruff, Pyright 1.1.411 [5 errors / 62 warnings], Schemathesis v4.25.0
-trace, Cosmic Ray 108 mutations / 82 killed / 26 survived) was executed
-against the pre-baseline working tree whose content is captured by the
-baseline SHA. It supports continuity of state but does not by itself
-constitute verified-against-committed-candidate evidence; the V4 gate
-must re-execute verification against this SHA.
+- Root: `D:\APP\tafseer\lisanapp3`
+- Branch: `main`
+- V3 remediation implementation commit: `1deab3251ac1dc53ef772d10f99c9fd32284e557`
+- Final candidate identity: the commit containing this state file; resolve with `git rev-parse HEAD`
+- Remote publication: not authorized and not performed
+- Owner-added untracked files are intentionally preserved and excluded from the candidate
 
-## Active Authorities
-- UX Constitution v4.0 (for frontend reference)
-- Canonical Implementation Reference (to be generated)
-- Semantic Extraction Revised Skill
+## Gate State
 
-## Current Progress
-- **Environment Discovery**: `py.exe` successfully discovered and used to construct a project-local `.venv`. Python blocker is **RESOLVED**.
-- **WP-00**: Complete
-- **WP-01**: Complete (Legacy classification verified, skills reconciled)
-- **WP-02**: Complete (Backend `.venv` configured, OpenAPI generated successfully, SQLite persisted, migrations executed)
-- **WP-03**: Complete (Frontend built successfully, typed API clients generated)
-- **WP-04 Slice A**: Complete (Ask Lisan & Research Run boundary implemented and verified)
-- **WP-04 Slice G**: Complete (Knowledge Explorer, Audit Logs, Provenance, Reproduction Manifests, Quality Dimension Schemas)
-- **V3 Phase Gate**: `V3_PARTIAL` (Missing canonical Corpus evidence [TESTED_WITH_FIXTURES], AI tested with fake provider only [TESTED_WITH_FAKE_PROVIDER], E2E stubs only [CONFIGURED_NOT_EXECUTED]).
-- **Corpus Admission**: `CORPUS_ARTIFACT_VERIFICATION_PENDING`
-- **WP-04 Slice B**: Complete (Blind Lab isolation boundary, corpus, and structural observation implemented, Hardened)
-- **WP-04 Slice C**: Complete (Semantic Analysis, Hypothesis, Neighbor differentiation, Falsification, and Gate evaluation implemented)
-- **AI Runtime Integration**: COMPLETE
-  - The AI-First Governed Runtime has been integrated via **Pydantic AI**.
-  - `AIExecutionRecord` table established for full provenance.
-  - `ModelProvider` protocol upgraded to Pydantic AI `Agent`.
-  - Fake vs Live Verification Status: **TESTED_WITH_FAKE_PROVIDER** (using Pydantic AI `TestModel`).
-  - `AIContextBuilder` enforces Blind Lab Isolation, strictly limiting context available to the AI.
-  - `SemanticSkillLoader` implemented to resolve and snapshot canonical skill (`skills/lisan-semantic-extraction/SKILL.md`).
-- **Tooling & Governance Checkpoint**:
-  - **Tooling Reference**: `docs/canonical/LISAN_TOOLING_ADOPTION_REFERENCE.md` (Linked from canonical).
-  - **Pydantic AI**: ADOPTED (Replaced custom ModelProvider/FakeModelProvider).
-  - **Hypothesis**: ADOPTED (Added `test_properties.py` for invariant testing).
-  - **Promptfoo**: ADOPTED (Baseline created in `tools/governance-lab/ai-evals/`).
-  - **Ruff / Pyright**: ADOPTED (Installed and available for V1 checks).
-  - **Tanzil Admission**: Recommended `ADMIT_AS_CANONICAL_TEXT`.
-  - **QAC Admission**: Recommended `ADMIT_AS_AUXILIARY_STRUCTURAL_SOURCE`.
-- **Corpus Production Adapter**: IMPLEMENTED and TESTED_WITH_FIXTURES
-  - Tanzil: `SOURCE_ROLE_APPROVED`, `ARTIFACT_VERIFICATION_PENDING`, `CANONICAL_ACTIVATION_PENDING` (Tests use fixtures until explicit artifact hashing).
-  - QAC: `SOURCE_ROLE_APPROVED`, `ARTIFACT_VERIFICATION_PENDING`, `CANONICAL_ACTIVATION_PENDING` (Tests use fixtures).
-  - QAC morphological data strictly isolated (Semantic fields like ONTOLOGY and SEM quarantined).
-  - Cross-source alignment logic implemented.
-  - `CorpusSnapshot` persisted model introduced.
-  - Verification: `CORPUS_ADAPTER_VERIFIED_FOR_ADMITTED_SOURCES` (tested against deterministic local stubs).
-- **WP-04 Slice D (Review & Publication)**: COMPLETE
-  - Replaced official_status with 4 axes: Epistemic, Review, Freshness, Publication on `SemanticClaim`.
-  - Added `ReviewDecision` tracking and endpoints.
-  - Publication strictly governed by Epistemic State, Review State, and Validated Corpus Snapshot.
-- **Next Action**: Submit baseline SHA `0e5f256deede286252c299aa2541ea5a8a6b0753` for a fresh independent read-only review (or the next gate required by project policy) before any V4 execution. Known open defects from the prior independent review remain unresolved and must not be repaired silently.
+- Implementation state: `V3_REMEDIATED_AWAITING_INDEPENDENT_REVIEW`
+- Independent state: `V3_NOT_CONFIRMED`
+- V4 entry: `V4_ENTRY_BLOCKED`
+- V4/R1/R2/R3 have not begun
+
+No implementation thread claim may grant independent confirmation or release acceptance.
+
+## Remediation Completed
+
+- F1: restored canonical Alembic squash `80330541af56`, added reversible forward migration `f4c0a1b2c3d4`, and verified all 19 tables plus every model column from a fresh `base -> head` database. Runtime/test startup does not use `Base.metadata.create_all()`.
+- F4: separated source-role approval, artifact presence, expected canonical hash, hash verification, import validation, and production activation. Local/fixture hashes remain `UNVERIFIED` and cannot create production `VALIDATED` snapshots.
+- F5: audit API is read-only; Purity and Internal Lock are derived from current DB evidence; forged/stale/manual GateReports cannot authorize locking, claim creation, isolation release, or publication; unsupported Purity dimensions remain `NOT_EVALUATED` and fail closed.
+- F3: focused Cosmic Ray profiles cover registry admission, Corpus authority, and Gate authority. Latest implementation evidence has zero critical survivors; any retained survivor is documented as equivalent.
+- Hypothesis: DB-backed generated properties exercise exact entity traceability, dependency binding, multi-entity isolation, gate sequencing, invalid audit mutation rejection, and AI non-authority.
+- F6: runtime OpenAPI, canonical OpenAPI, and frontend TypeScript bindings are synchronized and reproducible; Schemathesis four-check profile and frontend production build pass.
+- E2E: five Playwright journeys use the production Next.js frontend against FastAPI and isolated file-backed Alembic persistence; teardown leaves no repository Node child process.
+
+## Latest Implementation-Side Evidence
+
+- `pytest -q --hypothesis-show-statistics`: 62 passed; Hypothesis properties produced 114 passing examples.
+- `pytest tests/e2e -q`: 5 passed; new repository Node processes after teardown: 0.
+- Alembic fresh `base -> head`: `80330541af56 -> f4c0a1b2c3d4`; 19/19 table parity and exact per-table column parity.
+- Schemathesis 4.25.0, all 32 operations, required four checks: 1,389 generated and passed; 0 failures; 0 errors.
+- Registry Cosmic Ray: 116 total, 113 killed, 3 equivalent survivors, 0 critical survivors.
+- Corpus authority Cosmic Ray: 99 total, 99 killed, 0 survivors.
+- Gate authority Cosmic Ray: 164 total, 163 killed, 1 equivalent survivor, 0 critical survivors.
+- Ruff V3 tracked scope: pass. Exact `ruff check .` is reserved for the clean detached candidate because preserved owner-untracked Python files are outside candidate scope.
+- Pyright: 0 errors, 184 legacy SQLAlchemy typing warnings.
+- `npm ci`: pass, 0 vulnerabilities reported by npm audit; `npm run build`: pass.
+- OpenAPI pair SHA-256: `E4F1B9F9498ED17A606BEC915F070AF26AD58B407E3F8C8177FD5725DF9C2E5D`; regeneration mismatch count: 0.
+
+The complete profile must be rerun in a fresh detached clean checkout of the final candidate commit before handoff.
+
+## Tool Status Outside This V3 Remediation Gate
+
+- Promptfoo: `CONFIGURED_NOT_EXECUTABLE` (configuration exists; CLI and referenced runner are absent).
+- pip-audit: `NOT_CONFIGURED_NOT_EXECUTED`.
+- accessibility/axe profile: `NOT_CONFIGURED_NOT_EXECUTED`.
+
+The canonical V3 phase-gate list does not make these three mandatory for this bounded remediation package; the canonical V4/release profile is broader. Their absence does not grant any V4 status.
+
+## Exact Next Action
+
+Run a fresh independent, read-only V3 review against the final 40-character candidate SHA. Keep `V4_ENTRY_BLOCKED` unless that separate review grants `V3_INDEPENDENTLY_CONFIRMED`.
