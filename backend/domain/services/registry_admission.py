@@ -15,7 +15,7 @@ class SemanticRegistryAdmissionPolicy:
         reasons: list[str] = []
 
         # 1. Epistemic State
-        if claim.epistemic_state not in ["LOCK_INTERNAL_RESULT"]:
+        if claim.epistemic_state != "LOCK_INTERNAL_RESULT":
             reasons.append(
                 f"Claim epistemic state is '{claim.epistemic_state}', expected 'LOCK_INTERNAL_RESULT'"
             )
@@ -45,8 +45,10 @@ class SemanticRegistryAdmissionPolicy:
                 )
 
         # 3. Freshness State
-        if claim.freshness_state == "REVALIDATION_REQUIRED":
-            reasons.append("Claim freshness state is 'REVALIDATION_REQUIRED'")
+        if claim.freshness_state != "CURRENT":
+            reasons.append(
+                f"Claim freshness state is '{claim.freshness_state}', expected 'CURRENT'"
+            )
 
         # 4. Admitted & Activated Corpus Snapshot
         run = (
@@ -68,6 +70,24 @@ class SemanticRegistryAdmissionPolicy:
                 reasons.append(
                     f"CorpusSnapshot validation_status is '{snapshot.validation_status}', expected 'VALIDATED'"
                 )
+            elif not snapshot.canonical_text_hash or snapshot.canonical_text_hash == "UNKNOWN":
+                reasons.append(
+                    "CorpusSnapshot validation_status is 'VALIDATED' but canonical_text_hash is missing or 'UNKNOWN'"
+                )
+
+            # Ensure the claim's corpus snapshot dependency matches the run's snapshot
+            from backend.domain.models import DependencyRecord
+            claim_snapshot_deps = db.query(DependencyRecord).filter(
+                DependencyRecord.dependent_claim_id == claim.id,
+                DependencyRecord.dependency_type == "CORPUS_SNAPSHOT"
+            ).all()
+            
+            if claim_snapshot_deps:
+                for dep in claim_snapshot_deps:
+                    if dep.dependency_ref != run.corpus_snapshot:
+                        reasons.append(
+                            f"Claim CORPUS_SNAPSHOT dependency '{dep.dependency_ref}' does not match ResearchRun snapshot '{run.corpus_snapshot}'"
+                        )
 
             # 5. Blind Lab Contamination
             # We assume contamination sets status to LOCK_BLOCKED earlier, but checking here adds defense-in-depth.
@@ -83,6 +103,18 @@ class SemanticRegistryAdmissionPolicy:
             )
             if not lock_gate:
                 reasons.append("Missing PASSED GateReport for 'INTERNAL_LOCK'")
+                
+            purity_gate = (
+                db.query(GateReport)
+                .filter(
+                    GateReport.research_run_id == run.id,
+                    GateReport.gate_code == "PURITY_CHECK",
+                    GateReport.status == "PASSED",
+                )
+                .first()
+            )
+            if not purity_gate:
+                reasons.append("Missing required PASSED GateReport for 'PURITY_CHECK'")
 
         # Fixture/Test Registry invariant
         if (

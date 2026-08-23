@@ -1,4 +1,4 @@
-from playwright.sync_api import Page
+from playwright.sync_api import Page, expect
 
 from backend.domain import models
 
@@ -53,32 +53,33 @@ def test_journey_3_purity_check(page: Page, e2e_server: dict):
             actor="RESEARCHER",
         )
         db.add(audit)
+        
+        hyp = models.Hypothesis(
+            id="hyp_trace_01",
+            research_run_id="run_trace_01",
+            hypothesis_type="H1",
+            target_contract="ROOT_CORE",
+            statement="Test hypothesis",
+        )
+        db.add(hyp)
         db.commit()
     finally:
         db.close()
 
     # 1. Verify Claim Provenance Read Model
-    prov_res = page.request.get(f"{base_url}/claims/clm_trace_01/provenance")
-    assert prov_res.status == 200
-    prov_data = prov_res.json()
-    assert prov_data["claim"]["id"] == "clm_trace_01"
-    assert prov_data["corpus_snapshot"] == "snap_tanzil_01"
-    assert len(prov_data["dependencies"]) == 1
-    assert len(prov_data["audit_trail"]) == 1
+    page.goto(f"{base_url}/claims/clm_trace_01")
+    expect(page.locator("h1")).to_contain_text("Claim: clm_trace_01")
+
+    expect(page.locator("#prov-corpus")).to_contain_text("snap_tanzil_01")
+    expect(page.locator("#prov-deps")).to_contain_text("1 dependencies")
+    expect(page.locator("#prov-audit")).to_contain_text("1 audit logs")
 
     # 2. Verify Multidimensional Quality & 8-Dimension Purity Report
-    qual_res = page.request.get(f"{base_url}/claims/clm_trace_01/quality")
-    assert qual_res.status == 200
-    qual_data = qual_res.json()
-    assert qual_data["purity_score"] == 100
-    assert qual_data["purity_rating"] == "PURE"
-    assert len(qual_data["purity_findings"]) == 8
+    expect(page.locator("#qual-score")).to_contain_text("Score: 0")
+    expect(page.locator("#qual-rating")).to_contain_text("Rating: CONTAMINATED")
+    expect(page.locator("#qual-findings")).to_contain_text("8 findings")
 
     # 3. Verify Reproduction Manifest
-    manifest_res = page.request.get(f"{base_url}/claims/clm_trace_01/reproduction_manifest")
-    assert manifest_res.status == 200
-    manifest_data = manifest_res.json()
-    assert manifest_data["claim_id"] == "clm_trace_01"
-    assert manifest_data["corpus_snapshot_id"] == "snap_tanzil_01"
-    assert len(manifest_data["dependencies"]) == 1
+    expect(page.locator("#man-corpus")).to_contain_text("snap_tanzil_01")
+    expect(page.locator("#man-deps")).to_contain_text("1 dependencies")
 

@@ -1,5 +1,4 @@
-from playwright.sync_api import Page
-
+from playwright.sync_api import Page, expect
 
 def test_journey_5_steward_command(page: Page, e2e_server: dict):
     """
@@ -8,37 +7,21 @@ def test_journey_5_steward_command(page: Page, e2e_server: dict):
     """
     base_url = e2e_server["base_url"]
 
+    # Navigate to Steward Center
+    page.goto(f"{base_url}/steward")
+    expect(page.locator("h1")).to_contain_text("Steward Command Center")
+
     # 1. Execute Valid Governed Steward Command
-    steward_res = page.request.post(
-        f"{base_url}/steward/commands",
-        data={
-            "command_type": "METHODOLOGY_DIRECTIVE",
-            "intent": "Mandate explicit negative boundary distinction before lock",
-            "parameters": {"scope": "ALL_RUNS", "priority": "HIGH"},
-        },
-    )
-    assert steward_res.status == 200
-    cmd_data = steward_res.json()
-    assert cmd_data["execution_status"] == "SUCCESS"
-    cmd_id = cmd_data["id"]
+    page.click("button:has-text('Execute Valid Command')")
+    expect(page.locator("#cmd-status")).to_contain_text("Status: SUCCESS", timeout=10000)
 
     # 2. Verify Audit Log recorded the Steward action
-    audit_res = page.request.get(f"{base_url}/audit?entity_type=StewardCommand&entity_id={cmd_id}")
-    assert audit_res.status == 200
-    audit_logs = audit_res.json()
-    assert len(audit_logs) == 1
-    assert audit_logs[0]["actor"] == "STEWARD"
-    assert audit_logs[0]["action"] == "EXECUTE"
+    page.click("button:has-text('View Audit Logs')")
+    expect(page.locator(".log-actor").first).to_contain_text("STEWARD")
+    expect(page.locator(".log-action").first).to_contain_text("EXECUTE")
 
     # 3. Attempt Forbidden Steward Action (Force semantic truth / bypass invariants)
-    forbidden_res = page.request.post(
-        f"{base_url}/steward/commands",
-        data={
-            "command_type": "FORCE_ESTABLISH_SEMANTIC_TRUTH",
-            "intent": "Bypass gate check and force lock directly",
-            "parameters": {"target_expression": "اختلاق"},
-        },
-    )
-    assert forbidden_res.status in [400, 403]
-    assert "violates immutable domain constraints" in forbidden_res.json()["detail"].lower()
+    page.click("button:has-text('Execute Forbidden Command')")
+    expect(page.locator("#cmd-error")).to_contain_text("violates immutable domain constraints", ignore_case=True, timeout=10000)
+
 

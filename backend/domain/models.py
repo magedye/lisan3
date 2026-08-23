@@ -216,6 +216,21 @@ class CorpusSnapshot(Base):
     validation_status = Column(String, default="PENDING")
     created_at = Column(DateTime, default=datetime.datetime.utcnow)
 
+    from sqlalchemy.orm import validates
+
+    @validates('validation_status', 'canonical_text_hash')
+    def validate_hash(self, key, value):
+        if key == 'validation_status':
+            status = value
+            text_hash = self.canonical_text_hash
+        else:
+            text_hash = value
+            status = self.validation_status
+        
+        if status == "VALIDATED" and text_hash in (None, "", "UNKNOWN", "placeholder", "synthetic", "unverified"):
+            raise ValueError(f"Cannot set validation_status to VALIDATED with invalid hash: {text_hash}")
+        return value
+
 
 class CorpusOccurrence(Base):
     __tablename__ = "corpus_occurrences"

@@ -128,3 +128,40 @@ def test_slice_a_end_to_end():
     assert retrieved["current_stage"] == "PREFLIGHT"
 
     db.close()
+
+
+def test_alembic_models_parity():
+    import os
+    import alembic.config
+    import alembic.command
+    from sqlalchemy import create_engine, inspect
+    from backend.infrastructure.database import Base
+
+    db_path = "test_alembic_parity.db"
+    if os.path.exists(db_path):
+        os.remove(db_path)
+
+    try:
+        engine = create_engine(f"sqlite:///{db_path}")
+        alembic_cfg = alembic.config.Config("backend/alembic.ini")
+        alembic_cfg.set_main_option("script_location", "backend/alembic")
+        alembic_cfg.set_main_option("sqlalchemy.url", f"sqlite:///{db_path}")
+
+        alembic.command.upgrade(alembic_cfg, "head")
+
+        inspector = inspect(engine)
+        alembic_tables = set(inspector.get_table_names())
+        
+        model_tables = set(Base.metadata.tables.keys())
+        if "alembic_version" in alembic_tables:
+            alembic_tables.remove("alembic_version")
+            
+        assert alembic_tables == model_tables, f"Mismatch between Alembic tables ({len(alembic_tables)}) and Model tables ({len(model_tables)}). Diff: {alembic_tables.symmetric_difference(model_tables)}"
+    finally:
+        if 'engine' in locals():
+            engine.dispose()
+        if os.path.exists(db_path):
+            try:
+                os.remove(db_path)
+            except PermissionError:
+                pass

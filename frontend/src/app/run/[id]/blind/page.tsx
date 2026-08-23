@@ -21,17 +21,17 @@ export default function BlindLabPage() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const runRes = await fetch(`http://localhost:8000/runs/${runId}`);
+        const runRes = await fetch(`/api/runs/${runId}`);
         if (!runRes.ok) throw new Error("Run not found");
         setRun(await runRes.json());
 
-        const isoRes = await fetch(`http://localhost:8000/runs/${runId}/blind`);
+        const isoRes = await fetch(`/api/runs/${runId}/blind`);
         if (isoRes.ok) {
           const isoData = await isoRes.json();
           setIsoState(isoData);
           
           if (isoData.is_contaminated !== "PRIOR_CONTAMINATED") {
-            const corpusRes = await fetch(`http://localhost:8000/runs/${runId}/corpus`);
+            const corpusRes = await fetch(`/api/runs/${runId}/corpus`);
             if (corpusRes.ok) {
               setCorpus(await corpusRes.json());
             }
@@ -49,7 +49,7 @@ export default function BlindLabPage() {
   const startPreflight = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`http://localhost:8000/runs/${runId}/blind/preflight`, {
+      const res = await fetch(`/api/runs/${runId}/blind/preflight`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -73,7 +73,7 @@ export default function BlindLabPage() {
     e.preventDefault();
     setObsError(null);
     try {
-      const res = await fetch(`http://localhost:8000/runs/${runId}/observations`, {
+      const res = await fetch(`/api/runs/${runId}/observations`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -97,7 +97,7 @@ export default function BlindLabPage() {
 
   const triggerContamination = async () => {
     try {
-      await fetch(`http://localhost:8000/runs/${runId}/read_semantic_dictionary`);
+      await fetch(`/api/runs/${runId}/read_semantic_dictionary`);
       window.location.reload();
     } catch (err) {
       console.error(err);

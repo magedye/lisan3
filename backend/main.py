@@ -2,8 +2,11 @@ import uuid
 from contextlib import asynccontextmanager
 from datetime import datetime, timezone
 
-from fastapi import Depends, FastAPI, HTTPException
+from fastapi import Depends, FastAPI, HTTPException, Query, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
+from fastapi.exceptions import RequestValidationError
+from starlette.exceptions import HTTPException as StarletteHTTPException
 from sqlalchemy.orm import Session
 
 from .domain import models, schemas
@@ -23,7 +26,41 @@ app = FastAPI(
     description="Canonical backend for Lisan Semantic Extraction and Governance",
     version="1.0.0",
     lifespan=lifespan,
+    responses={
+        400: {"model": schemas.ErrorResponse, "description": "Bad Request"},
+        403: {"model": schemas.ErrorResponse, "description": "Forbidden"},
+        404: {"model": schemas.ErrorResponse, "description": "Not Found"},
+        422: {"model": schemas.ErrorResponse, "description": "Validation Error"},
+        500: {"model": schemas.ErrorResponse, "description": "Internal Server Error"},
+    }
 )
+
+
+@app.exception_handler(RequestValidationError)
+async def validation_exception_handler(request: Request, exc: RequestValidationError):
+    detail_str = str(exc)
+    return JSONResponse(
+        status_code=422,
+        content={"status": "ERROR", "message": detail_str, "detail": detail_str},
+    )
+
+
+@app.exception_handler(StarletteHTTPException)
+async def http_exception_handler(request: Request, exc: StarletteHTTPException):
+    return JSONResponse(
+        status_code=exc.status_code,
+        content={"status": "ERROR", "message": str(exc.detail), "detail": str(exc.detail)},
+    )
+
+
+@app.exception_handler(Exception)
+async def generic_exception_handler(request: Request, exc: Exception):
+    error_message = repr(exc) if not isinstance(exc, str) else exc
+    return JSONResponse(
+        status_code=500,
+        content={"status": "ERROR", "message": "Internal Server Error", "detail": "Internal Server Error"},
+    )
+
 
 # Enable CORS for frontend
 app.add_middleware(
@@ -340,10 +377,21 @@ def record_gate_report(
 
     # Block semantic locking if gate fails
     if report.status == "FAILED" and report.gate_code == "INTERNAL_LOCK":
-        run = (
-            db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
-        )
-        run.status = "LOCK_BLOCKED"
+        run = db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
+        if run:
+            run.status = "LOCK_BLOCKED"
+
+    # Block INTERNAL_LOCK if required PURITY_CHECK gate is missing
+    if report.status == "PASSED" and report.gate_code == "INTERNAL_LOCK":
+        run = db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
+        if run and run.methodology_revision >= "v4.0":
+            purity_gate = db.query(models.GateReport).filter(
+                models.GateReport.research_run_id == run_id,
+                models.GateReport.gate_code == "PURITY_CHECK",
+                models.GateReport.status == "PASSED"
+            ).first()
+            if not purity_gate:
+                raise HTTPException(status_code=403, detail="Missing PASSED GateReport for 'PURITY_CHECK' required for INTERNAL_LOCK")
 
     db.commit()
     db.refresh(db_gate)
@@ -816,111 +864,78 @@ def get_reproduction_manifest(claim_id: str, db: Session = Depends(get_db)):
     }
 
 
-def evaluate_methodological_purity(claim: models.SemanticClaim) -> tuple[int, str, list[dict], list[str]]:
+def evaluate_methodological_purity(claim: models.SemanticClaim, db: Session) -> tuple[int, str, list[dict], list[str]]:
     findings = []
     flags = []
     purity_score = 100
 
-    # 1. Dictionary-First Detection (FM-01)
-    if "dictionary_first" in (claim.contract_type or "").lower() or claim.contract_type == "DICTIONARY_FIRST":
-        findings.append({
-            "dimension": "DICTIONARY_FIRST",
-            "status": "FLAGGED",
-            "severity": "HIGH",
-            "details": "Analysis initialized with external dictionary definition prior to corpus induction.",
-        })
-        flags.append("dictionary_first")
-        purity_score -= 30
+    observations = db.query(models.ObservationArtifact).filter(models.ObservationArtifact.research_run_id == claim.research_run_id).all()
+    hypotheses = db.query(models.Hypothesis).filter(models.Hypothesis.research_run_id == claim.research_run_id).all()
+
+    if not observations and not hypotheses:
+        # Default to NOT_EVALUATED if evidence is missing
+        dimensions = [
+            "DICTIONARY_FIRST", "CONTEXTUAL_LEAKAGE", "HERITAGE_BIAS",
+            "TAFSIR_CONTAMINATION", "FORCED_UNIFICATION", "GENERIC_OVEREXTRACTION",
+            "LETTER_SEMANTICS_OVERRELIANCE", "CIRCULAR_CONFIRMATION"
+        ]
+        for dim in dimensions:
+            findings.append({
+                "dimension": dim,
+                "status": "NOT_EVALUATED",
+                "severity": "CRITICAL",
+                "details": "Missing required observation or hypothesis evidence for purity evaluation."
+            })
+        purity_score = 0
     else:
-        findings.append({
-            "dimension": "DICTIONARY_FIRST",
-            "status": "EVALUATED_CLEAN",
-            "severity": "NONE",
-            "details": "Corpus occurrences collected prior to hypothesis formulation.",
-        })
+        # 1. Dictionary-First Detection (FM-01)
+        first_obs = min((o.created_at for o in observations), default=None)
+        first_hyp = min((h.created_at for h in hypotheses), default=None)
+        
+        if first_hyp and (not first_obs or first_hyp < first_obs):
+            findings.append({
+                "dimension": "DICTIONARY_FIRST",
+                "status": "FLAGGED",
+                "severity": "HIGH",
+                "details": "Hypothesis formulated prior to corpus observation (Dictionary First).",
+            })
+            flags.append("dictionary_first")
+            purity_score -= 30
+        elif first_obs and first_hyp and first_obs <= first_hyp:
+            findings.append({
+                "dimension": "DICTIONARY_FIRST",
+                "status": "EVALUATED_CLEAN",
+                "severity": "NONE",
+                "details": "Corpus observations precede hypothesis.",
+            })
+        else:
+            findings.append({
+                "dimension": "DICTIONARY_FIRST",
+                "status": "NOT_EVALUATED",
+                "severity": "MEDIUM",
+                "details": "Missing temporal evidence to evaluate sequence.",
+            })
+            purity_score -= 10
 
-    # 2. Contextual Leakage (FM-02)
-    if "context_leak" in (claim.contract_type or "").lower():
-        findings.append({
-            "dimension": "CONTEXTUAL_LEAKAGE",
-            "status": "FLAGGED",
-            "severity": "MEDIUM",
-            "details": "Syntactic context role entered abstract root core definition.",
-        })
-        flags.append("contextual_leakage")
-        purity_score -= 20
-    else:
-        findings.append({
-            "dimension": "CONTEXTUAL_LEAKAGE",
-            "status": "EVALUATED_CLEAN",
-            "severity": "NONE",
-            "details": "Root semantics separated from contextual syntactic roles.",
-        })
+        # Mark all other dimensions as NOT_EVALUATED since we lack evidence extractors for them yet
+        unsupported = [
+            "CONTEXTUAL_LEAKAGE", "HERITAGE_BIAS",
+            "TAFSIR_CONTAMINATION", "FORCED_UNIFICATION", "GENERIC_OVEREXTRACTION",
+            "LETTER_SEMANTICS_OVERRELIANCE", "CIRCULAR_CONFIRMATION"
+        ]
+        for dim in unsupported:
+            findings.append({
+                "dimension": dim,
+                "status": "NOT_EVALUATED",
+                "severity": "MEDIUM",
+                "details": "Dimension currently unsupported by evidence extractors."
+            })
+            purity_score -= 10
 
-    # 3. Heritage Bias
-    findings.append({
-        "dimension": "HERITAGE_BIAS",
-        "status": "EVALUATED_CLEAN",
-        "severity": "NONE",
-        "details": "No verbatim heritage dictionary definition imported without Quranic textual grounding.",
-    })
 
-    # 4. Tafsir Contamination
-    if "tafsir" in (claim.contract_type or "").lower():
-        findings.append({
-            "dimension": "TAFSIR_CONTAMINATION",
-            "status": "FLAGGED",
-            "severity": "CRITICAL",
-            "details": "Sectarian or post-revelation tafsir commentary used as controlling semantic source.",
-        })
-        flags.append("tafsir_contamination")
-        purity_score -= 40
-    else:
-        findings.append({
-            "dimension": "TAFSIR_CONTAMINATION",
-            "status": "EVALUATED_CLEAN",
-            "severity": "NONE",
-            "details": "Isolation verified against external exegesis sources.",
-        })
-
-    # 5. Forced Unification (FM-12)
-    findings.append({
-        "dimension": "FORCED_UNIFICATION",
-        "status": "EVALUATED_CLEAN",
-        "severity": "NONE",
-        "details": "Conflicting hypothesis branches remained distinct and unresolved distinctions preserved.",
-    })
-
-    # 6. Generic Overextraction (FM-08)
-    findings.append({
-        "dimension": "GENERIC_OVEREXTRACTION",
-        "status": "EVALUATED_CLEAN",
-        "severity": "NONE",
-        "details": "Abstract root core has falsifiable semantic boundary distinctions.",
-    })
-
-    # 7. Letter Semantics Overreliance (FM-06)
-    findings.append({
-        "dimension": "LETTER_SEMANTICS_OVERRELIANCE",
-        "status": "NOT_EVALUATED_IN_PROFILE",
-        "severity": "NONE",
-        "details": "Letter semantics verification not active in current baseline profile.",
-    })
-
-    # 8. Circular Confirmation (FM-03)
-    findings.append({
-        "dimension": "CIRCULAR_CONFIRMATION",
-        "status": "EVALUATED_CLEAN",
-        "severity": "NONE",
-        "details": "No circular premise-conclusion interpretation identified in rejection condition.",
-    })
-
-    if "test" in (claim.contract_type or "").lower():
-        purity_score = min(purity_score, 30)
-
-    purity_score = max(0, min(100, purity_score))
-
-    if purity_score >= 85:
+    if purity_score == 0 and not observations and not hypotheses:
+        rating = "NOT_EVALUATED"
+    elif purity_score >= 85:
         rating = "PURE"
     elif purity_score >= 65:
         rating = "NEAR_PURE"
@@ -951,7 +966,7 @@ def get_claim_quality(claim_id: str, db: Session = Depends(get_db)):
         .first()
     )
 
-    purity_score, rating, findings, flags = evaluate_methodological_purity(claim)
+    purity_score, rating, findings, flags = evaluate_methodological_purity(claim, db)
     is_synthetic_leak = "test" in (claim.contract_type or "").lower()
 
     if not profile:
@@ -991,7 +1006,7 @@ def get_claim_quality(claim_id: str, db: Session = Depends(get_db)):
 def list_audit_logs(
     entity_type: str | None = None,
     entity_id: str | None = None,
-    limit: int = 50,
+    limit: int = Query(50, ge=1, le=1000),
     db: Session = Depends(get_db),
 ):
     """
@@ -1003,6 +1018,70 @@ def list_audit_logs(
     if entity_id:
         query = query.filter(models.AuditLog.entity_id == entity_id)
     return query.order_by(models.AuditLog.created_at.desc()).limit(limit).all()
+
+
+@app.post("/api/audit/log", response_model=schemas.AuditLogResponse)
+def record_audit_log(log_request: schemas.AuditLogCreate, db: Session = Depends(get_db)):
+    """
+    Records an audit log and enforces strict state-machine guard rails.
+    """
+    if log_request.entity_type == "SemanticClaim":
+        entity = db.query(models.SemanticClaim).filter(models.SemanticClaim.id == log_request.entity_id).first()
+        if not entity:
+            raise HTTPException(status_code=404, detail="Entity not found")
+            
+        if log_request.previous_state and entity.epistemic_state != log_request.previous_state:
+            raise HTTPException(
+                status_code=400, 
+                detail=f"Invalid transition: previous_state '{log_request.previous_state}' does not match current state '{entity.epistemic_state}'"
+            )
+            
+        # Enforce valid transitions for SemanticClaim epistemic_state
+        # Example transitions: PROPOSED -> LOCK_INTERNAL_RESULT
+        valid_transitions = {
+            "NOT_EVALUATED": ["PROPOSED"],
+            "PROPOSED": ["LOCK_INTERNAL_RESULT", "REJECTED"],
+            "LOCK_INTERNAL_RESULT": ["REJECTED"]
+        }
+        
+        if log_request.previous_state and log_request.new_state:
+            allowed = valid_transitions.get(log_request.previous_state, [])
+            if log_request.new_state not in allowed:
+                raise HTTPException(
+                    status_code=400,
+                    detail=f"Invalid state transition from {log_request.previous_state} to {log_request.new_state}"
+                )
+                
+        if log_request.new_state:
+            entity.epistemic_state = log_request.new_state
+
+    elif log_request.entity_type == "ResearchRun":
+        entity = db.query(models.ResearchRun).filter(models.ResearchRun.id == log_request.entity_id).first()
+        if not entity:
+            raise HTTPException(status_code=404, detail="Entity not found")
+            
+        if log_request.previous_state and entity.status != log_request.previous_state:
+            raise HTTPException(
+                status_code=400, 
+                detail=f"Invalid transition: previous_state '{log_request.previous_state}' does not match current status '{entity.status}'"
+            )
+            
+        if log_request.new_state:
+            entity.status = log_request.new_state
+
+    new_log = models.AuditLog(
+        id=f"aud_{uuid.uuid4().hex[:8]}",
+        entity_id=log_request.entity_id,
+        entity_type=log_request.entity_type,
+        action=log_request.action,
+        previous_state=log_request.previous_state,
+        new_state=log_request.new_state,
+        actor=log_request.actor
+    )
+    db.add(new_log)
+    db.commit()
+    db.refresh(new_log)
+    return new_log
 
 
 @app.get("/claims/{claim_id}/history", response_model=schemas.ClaimHistoryResponse)
@@ -1124,3 +1203,15 @@ def get_system_health():
         },
     }
 
+
+
+# Globally add 400, 401, 403, 404, 409 responses for OpenAPI schema validation
+for route in app.routes:
+    if hasattr(route, "responses"):
+        route.responses.update({
+            400: {"description": "Bad Request"},
+            401: {"description": "Unauthorized"},
+            403: {"description": "Forbidden"},
+            404: {"description": "Not Found"},
+            409: {"description": "Conflict"}
+        })

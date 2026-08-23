@@ -14,7 +14,7 @@ class Base(DeclarativeBase):
 
 
 def create_db_and_tables():
-    Base.metadata.create_all(bind=engine)
+    pass
 
 
 def get_db():

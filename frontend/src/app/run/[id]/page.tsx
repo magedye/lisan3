@@ -12,7 +12,7 @@ export default function ResearchRunPage() {
   useEffect(() => {
     async function fetchRun() {
       try {
-        const res = await fetch(`http://localhost:8000/runs/${runId}`);
+        const res = await fetch(`/api/runs/${runId}`);
         if (res.ok) {
           const data = await res.json();
           setRun(data);

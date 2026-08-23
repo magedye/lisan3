@@ -17,7 +17,7 @@ export default function AskLisan() {
     setResult(null);
 
     try {
-      const res = await fetch("http://localhost:8000/ask", {
+      const res = await fetch("/api/ask", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ expression, contract_type: contractType })
@@ -36,7 +36,7 @@ export default function AskLisan() {
   const startResearch = async () => {
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:8000/runs", {
+      const res = await fetch("/api/runs", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

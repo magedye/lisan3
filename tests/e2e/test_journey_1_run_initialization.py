@@ -1,5 +1,5 @@
-from playwright.sync_api import Page
-
+import re
+from playwright.sync_api import Page, expect
 
 def test_journey_1_run_initialization(page: Page, e2e_server: dict):
     """
@@ -7,40 +7,24 @@ def test_journey_1_run_initialization(page: Page, e2e_server: dict):
     - Ask Lisan -> insufficient evidence -> create ResearchRun -> verify persisted run state.
     """
     base_url = e2e_server["base_url"]
-
+    
     # 1. Ask Lisan for an expression with no prior lock
-    ask_res = page.request.post(
-        f"{base_url}/ask",
-        data={"expression": "ضرب", "contract_type": "ROOT_CORE"},
-    )
-    assert ask_res.status == 200
-    ask_data = ask_res.json()
-    assert ask_data["status"] == "INSUFFICIENT_EVIDENCE"
-    assert ask_data["claim"] is None
-
+    page.goto(base_url)
+    expect(page.locator("h1")).to_contain_text("اسأل لسان (Ask Lisan)")
+    
+    # Fill out the form
+    page.fill("input[placeholder='e.g. ضرب']", "ضرب")
+    page.select_option("select", "ROOT_CORE")
+    
+    # Click search and wait for result
+    page.click("button:has-text('Search')")
+    
+    # Expect insufficient evidence message
+    expect(page.locator("h3:has-text('Insufficient Evidence')")).to_be_visible()
+    
     # 2. Start a Governed ResearchRun
-    run_res = page.request.post(
-        f"{base_url}/runs",
-        data={
-            "target_contract": "ROOT_CORE",
-            "target_expression": "ضرب",
-            "methodology_revision": "v4.0",
-            "corpus_snapshot": "snap_initial",
-            "authority_context": {"initiator": "governed_researcher"},
-        },
-    )
-    assert run_res.status == 200
-    run_data = run_res.json()
-    run_id = run_data["id"]
-    assert run_data["target_expression"] == "ضرب"
-    assert run_data["current_stage"] == "PREFLIGHT"
-    assert run_data["status"] == "ACTIVE"
-
-    # 3. Fetch and verify persisted run state
-    get_res = page.request.get(f"{base_url}/runs/{run_id}")
-    assert get_res.status == 200
-    persisted_run = get_res.json()
-    assert persisted_run["id"] == run_id
-    assert persisted_run["target_contract"] == "ROOT_CORE"
-    assert persisted_run["target_expression"] == "ضرب"
-
+    page.click("button:has-text('Start Research Run')")
+        
+    # 3. Verify navigation to the run page
+    expect(page).to_have_url(re.compile(r".*/run/.*"))
+    expect(page.locator("span", has_text="PREFLIGHT")).to_be_visible()

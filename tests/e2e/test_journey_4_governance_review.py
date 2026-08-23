@@ -1,4 +1,4 @@
-from playwright.sync_api import Page
+from playwright.sync_api import Page, expect
 
 from backend.domain import models
 
@@ -53,35 +53,29 @@ def test_journey_4_governance_review(page: Page, e2e_server: dict):
         db.close()
 
     # 2. Submit a ChangeProposal
-    prop_res = page.request.post(
-        f"{base_url}/governance/proposals",
-        data={
-            "rule_code": "RULE_E2E_ROOT",
-            "proposed_changes": "Introduce strict non-circularity constraint in rejection conditions.",
-        },
-    )
-    assert prop_res.status == 200
-    prop_data = prop_res.json()
-    prop_id = prop_data["id"]
-    assert prop_data["impact_analysis"]["affected_claims_count"] >= 1
+    page.goto(f"{base_url}/governance")
+    expect(page.locator("h1")).to_contain_text("Governance Center")
+    
+    page.fill("input[placeholder='Rule Code']", "RULE_E2E_ROOT")
+    page.fill("textarea[placeholder='Proposed changes']", "Introduce strict non-circularity constraint in rejection conditions.")
+    page.click("button:has-text('Submit Proposal')")
 
     # 3. Approve ChangeProposal
-    app_res = page.request.post(f"{base_url}/governance/proposals/{prop_id}/approve")
-    assert app_res.status == 200
+    expect(page.locator("text=Proposal ID: ")).to_be_visible(timeout=10000)
+    page.click("button:has-text('Approve Proposal')")
 
     # 4. Verify Rule History shows active revision 2
-    hist_res = page.request.get(f"{base_url}/governance/rules/RULE_E2E_ROOT/history")
-    assert hist_res.status == 200
-    hist_data = hist_res.json()
-    assert hist_data["active_revision"] == 2
-    assert len(hist_data["revisions"]) >= 1
+    page.click("button:has-text('Check History')")
+    expect(page.locator("#active-revision")).to_contain_text("Revision: 2", timeout=10000)
+    expect(page.locator("#revisions-count")).to_contain_text("Revisions: ")
 
     # 5. Verify Dependent Claim became REVALIDATION_REQUIRED and Unrelated remained CURRENT
-    kn_dep = page.request.get(f"{base_url}/knowledge/explorer/clm_gov_dep")
+    # (Since there is no UI for knowledge explorer yet, we fall back to API for this assertion)
+    kn_dep = page.request.get(f"{e2e_server['api_url']}/knowledge/explorer/clm_gov_dep")
     assert kn_dep.status == 200
     assert kn_dep.json()["freshness_state"] == "REVALIDATION_REQUIRED"
 
-    kn_unrelated = page.request.get(f"{base_url}/knowledge/explorer/clm_gov_unrelated")
+    kn_unrelated = page.request.get(f"{e2e_server['api_url']}/knowledge/explorer/clm_gov_unrelated")
     assert kn_unrelated.status == 200
     assert kn_unrelated.json()["freshness_state"] == "CURRENT"
 

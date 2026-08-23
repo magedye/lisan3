@@ -67,13 +67,21 @@ def setup_claim(test_db):
     test_db.add(run)
 
     # Setup Gate Report
-    gate = models.GateReport(
+    gate1 = models.GateReport(
         id=f"gate_{uuid.uuid4().hex[:8]}",
         research_run_id=run_id,
         gate_code="INTERNAL_LOCK",
         status="PASSED",
     )
-    test_db.add(gate)
+    test_db.add(gate1)
+    
+    gate2 = models.GateReport(
+        id=f"gate_{uuid.uuid4().hex[:8]}",
+        research_run_id=run_id,
+        gate_code="PURITY_CHECK",
+        status="PASSED",
+    )
+    test_db.add(gate2)
 
     # Setup Claim
     claim_id = f"clm_{uuid.uuid4().hex[:8]}"
@@ -209,6 +217,44 @@ def test_unlocked_epistemic_state_blocks_publication(test_db, setup_claim):
     )
     assert res.status_code == 403
     assert "Claim epistemic state is 'HYPOTHESIS'" in res.json()["detail"]
+
+
+def test_non_current_freshness_blocks_publication(test_db, setup_claim):
+    claim_id = setup_claim["claim_id"]
+    claim = test_db.query(models.SemanticClaim).filter(models.SemanticClaim.id == claim_id).first()
+    claim.freshness_state = "STALE"
+    claim.review_state = "APPROVED"
+    test_db.commit()
+
+    res = client.post(
+        f"/claims/{claim_id}/publish",
+        json={"publisher_identity": "admin", "target_registry": "public"},
+    )
+    assert res.status_code == 403
+    assert "Claim freshness state is 'STALE'" in res.json()["detail"]
+
+
+def test_corpus_snapshot_mismatch_blocks_publication(test_db, setup_claim):
+    claim_id = setup_claim["claim_id"]
+    claim = test_db.query(models.SemanticClaim).filter(models.SemanticClaim.id == claim_id).first()
+    claim.review_state = "APPROVED"
+    
+    # Add a mismatching dependency
+    dep = models.DependencyRecord(
+        id="dep_mismatch",
+        dependent_claim_id=claim_id,
+        dependency_type="CORPUS_SNAPSHOT",
+        dependency_ref="wrong_snapshot_id"
+    )
+    test_db.add(dep)
+    test_db.commit()
+
+    res = client.post(
+        f"/claims/{claim_id}/publish",
+        json={"publisher_identity": "admin", "target_registry": "public"},
+    )
+    assert res.status_code == 403
+    assert "does not match ResearchRun snapshot" in res.json()["detail"]
 
 
 def test_unvalidated_corpus_snapshot_blocks_publication(test_db, setup_claim):

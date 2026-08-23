@@ -30,15 +30,18 @@ class CorpusImporter:
 
         # 3. Create Snapshot
         snapshot_id = f"snap_{uuid.uuid4().hex[:8]}"
+        text_hash = expected_tanzil_hash or "UNKNOWN"
+        val_status = "VALIDATED" if text_hash not in (None, "", "UNKNOWN", "placeholder", "synthetic", "unverified") else "UNVERIFIED"
+
         snapshot = CorpusSnapshot(
             id=snapshot_id,
             canonical_text_source="TANZIL_QURAN_UTHMANI",
             canonical_text_version="v1.0.2",
-            canonical_text_hash=expected_tanzil_hash or "UNKNOWN",
+            canonical_text_hash=text_hash,
             structural_source="QAC_MORPHOLOGY_SYNTAX",
             structural_source_version="v0.4",
             import_revision="v1",
-            validation_status="VALIDATED",
+            validation_status=val_status,
         )
         db.add(snapshot)
 

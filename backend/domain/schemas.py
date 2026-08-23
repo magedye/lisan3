@@ -2,7 +2,18 @@ from datetime import datetime
 from enum import Enum
 from typing import Any
 
-from pydantic import BaseModel, ConfigDict
+from pydantic import BaseModel, ConfigDict, field_validator
+from datetime import timezone
+
+class BaseSchema(BaseModel):
+    @field_validator('*', mode='after')
+    @classmethod
+    def force_utc(cls, v):
+        from datetime import datetime
+        if isinstance(v, datetime) and v.tzinfo is None:
+            return v.replace(tzinfo=timezone.utc)
+        return v
+
 
 
 class ResearchStage(str, Enum):
@@ -25,7 +36,7 @@ class OfficialStatus(str, Enum):
 
 
 # --- Research Run Schemas ---
-class ResearchRunBase(BaseModel):
+class ResearchRunBase(BaseSchema):
     target_contract: str
     target_expression: str
     methodology_revision: str
@@ -49,7 +60,7 @@ class ResearchRunResponse(ResearchRunBase):
 
 
 # --- Semantic Claim Schemas ---
-class SemanticClaimBase(BaseModel):
+class SemanticClaimBase(BaseSchema):
     contract_type: str
     # The 4 Canonical Independent Axes (UX Constitution v4.0 §5)
     epistemic_state: str = "UNRESOLVED"
@@ -78,7 +89,7 @@ class SemanticClaimResponse(SemanticClaimBase):
     research_run_id: str
 
 
-class ReviewDecisionBase(BaseModel):
+class ReviewDecisionBase(BaseSchema):
     reviewer_identity: str
     decision: str
     rationale: str | None = None
@@ -97,7 +108,7 @@ class ReviewDecisionResponse(ReviewDecisionBase):
     model_config = ConfigDict(from_attributes=True)
 
 
-class PublicationRequest(BaseModel):
+class PublicationRequest(BaseSchema):
     publisher_identity: str
     target_registry: str
 
@@ -105,18 +116,18 @@ class PublicationRequest(BaseModel):
 
 
 # --- Ask Lisan Schemas ---
-class AskLisanRequest(BaseModel):
+class AskLisanRequest(BaseSchema):
     expression: str
     contract_type: str
 
 
-class AskLisanResponse(BaseModel):
+class AskLisanResponse(BaseSchema):
     status: str  # e.g. INSUFFICIENT_EVIDENCE, FOUND
     claim: SemanticClaimResponse | None = None
 
 
 # --- Blind Lab Schemas ---
-class IsolationStateBase(BaseModel):
+class IsolationStateBase(BaseSchema):
     target_contract: str
     corpus_snapshot: str
     methodology_reference: str
@@ -137,7 +148,7 @@ class IsolationStateResponse(IsolationStateBase):
     model_config = ConfigDict(from_attributes=True)
 
 
-class ObservationArtifactBase(BaseModel):
+class ObservationArtifactBase(BaseSchema):
     occurrence_ref: str
     form: str | None = None
     syntax: str | None = None
@@ -158,7 +169,7 @@ class ObservationArtifactResponse(ObservationArtifactBase):
     model_config = ConfigDict(from_attributes=True)
 
 
-class CorpusOccurrenceBase(BaseModel):
+class CorpusOccurrenceBase(BaseSchema):
     snapshot_id: str
     expression: str
     verse_ref: str
@@ -173,7 +184,7 @@ class CorpusOccurrenceResponse(CorpusOccurrenceBase):
 
 
 # --- Slice C Schemas ---
-class RejectionCondition(BaseModel):
+class RejectionCondition(BaseSchema):
     challenging_finding: str
     search_location: str
     verification_method: str
@@ -193,7 +204,7 @@ class RejectionCondition(BaseModel):
                 raise ValueError("Rejection condition cannot be circular.")
 
 
-class HypothesisBase(BaseModel):
+class HypothesisBase(BaseSchema):
     hypothesis_type: str  # H1, H2, C0
     target_contract: str
     scope: str
@@ -217,7 +228,7 @@ class HypothesisResponse(HypothesisBase):
     model_config = ConfigDict(from_attributes=True)
 
 
-class EssentialNeighborBase(BaseModel):
+class EssentialNeighborBase(BaseSchema):
     shared_domain: str
     positive_distinguishing_candidate: str
     relevant_differentiation_axes: list[str]
@@ -240,7 +251,7 @@ class EssentialNeighborResponse(EssentialNeighborBase):
     model_config = ConfigDict(from_attributes=True)
 
 
-class GateReportBase(BaseModel):
+class GateReportBase(BaseSchema):
     gate_code: str
     status: str
     evidence_refs: list[str]
@@ -262,7 +273,7 @@ class GateReportResponse(GateReportBase):
 
 
 # --- AI Runtime Schemas ---
-class AIExecutionRecordBase(BaseModel):
+class AIExecutionRecordBase(BaseSchema):
     analysis_stage: str
     provider: str
     model: str
@@ -287,7 +298,7 @@ class AIExecutionRecordResponse(AIExecutionRecordBase):
     model_config = ConfigDict(from_attributes=True)
 
 
-class HypothesisProposal(BaseModel):
+class HypothesisProposal(BaseSchema):
     hypothesis_type: str
     target_contract: str
     scope: str
@@ -298,7 +309,7 @@ class HypothesisProposal(BaseModel):
     rejection_condition: RejectionCondition
 
 
-class EssentialNeighborProposal(BaseModel):
+class EssentialNeighborProposal(BaseSchema):
     shared_domain: str
     positive_distinguishing_candidate: str
     relevant_differentiation_axes: list[str]
@@ -308,7 +319,7 @@ class EssentialNeighborProposal(BaseModel):
 
 
 # --- Governance (Slice E) ---
-class GovernanceRuleBase(BaseModel):
+class GovernanceRuleBase(BaseSchema):
     rule_code: str
     description: str
 
@@ -325,7 +336,7 @@ class GovernanceRuleResponse(GovernanceRuleBase):
     model_config = ConfigDict(from_attributes=True)
 
 
-class RuleRevisionResponse(BaseModel):
+class RuleRevisionResponse(BaseSchema):
     id: str
     rule_code: str
     revision_number: int
@@ -336,12 +347,12 @@ class RuleRevisionResponse(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
 
-class ChangeProposalCreate(BaseModel):
+class ChangeProposalCreate(BaseSchema):
     rule_code: str
     proposed_changes: str
 
 
-class ChangeProposalResponse(BaseModel):
+class ChangeProposalResponse(BaseSchema):
     id: str
     rule_code: str
     proposed_changes: str
@@ -352,7 +363,7 @@ class ChangeProposalResponse(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
 
-class RuleHistoryResponse(BaseModel):
+class RuleHistoryResponse(BaseSchema):
     rule_code: str
     description: str | None = None
     active_revision: int
@@ -362,7 +373,7 @@ class RuleHistoryResponse(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
 
-class DependencyRecordResponse(BaseModel):
+class DependencyRecordResponse(BaseSchema):
     id: str
     dependent_claim_id: str
     dependency_type: str
@@ -373,7 +384,7 @@ class DependencyRecordResponse(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
 
-class KnowledgeNode(BaseModel):
+class KnowledgeNode(BaseSchema):
     claim_id: str
     contract_type: str
     target_expression: str
@@ -388,7 +399,7 @@ class KnowledgeNode(BaseModel):
 
 
 # --- Steward (Slice F) ---
-class StewardCommandBase(BaseModel):
+class StewardCommandBase(BaseSchema):
     command_type: str
     intent: str
     parameters: dict
@@ -409,7 +420,7 @@ class StewardCommandResponse(StewardCommandBase):
 
 
 # --- Knowledge & Operations (Slice G) ---
-class AuditLogResponse(BaseModel):
+class AuditLogResponse(BaseSchema):
     id: str
     entity_id: str
     entity_type: str
@@ -422,7 +433,24 @@ class AuditLogResponse(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
 
-class ClaimRevisionItem(BaseModel):
+class ErrorResponse(BaseSchema):
+    status: str
+    message: str
+    details: dict | None = None
+
+    model_config = ConfigDict(from_attributes=True)
+
+
+class AuditLogCreate(BaseSchema):
+    entity_id: str
+    entity_type: str
+    action: str
+    previous_state: str | None = None
+    new_state: str | None = None
+    actor: str
+
+
+class ClaimRevisionItem(BaseSchema):
     revision_id: int
     epistemic_state: str
     review_state: str
@@ -433,7 +461,7 @@ class ClaimRevisionItem(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
 
-class ClaimHistoryResponse(BaseModel):
+class ClaimHistoryResponse(BaseSchema):
     claim_id: str
     current_revision: int
     revisions: list[ClaimRevisionItem] = []
@@ -443,7 +471,7 @@ class ClaimHistoryResponse(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
 
-class PurityFinding(BaseModel):
+class PurityFinding(BaseSchema):
     dimension: str
     status: str  # EVALUATED_CLEAN, FLAGGED, NOT_EVALUATED_IN_PROFILE
     severity: str  # NONE, LOW, MEDIUM, HIGH, CRITICAL
@@ -452,7 +480,7 @@ class PurityFinding(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
 
-class QualityProfileResponse(BaseModel):
+class QualityProfileResponse(BaseSchema):
     id: str
     claim_id: str
     purity_score: int
@@ -471,7 +499,7 @@ class QualityProfileResponse(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
 
-class ReproductionManifestResponse(BaseModel):
+class ReproductionManifestResponse(BaseSchema):
     claim_id: str
     target_expression: str | None = None
     methodology_revision: str | None = None

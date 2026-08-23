@@ -65,10 +65,30 @@ def test_corpus_importer_integration():
 
     assert snapshot.canonical_text_source == "TANZIL_QURAN_UTHMANI"
     assert snapshot.structural_source == "QAC_MORPHOLOGY_SYNTAX"
+    assert snapshot.validation_status == "UNVERIFIED"
 
     occurrences = db.query(CorpusOccurrence).filter_by(snapshot_id=snapshot.id).all()
     assert len(occurrences) == 1
     assert occurrences[0].verse_ref == "1:1"
     assert occurrences[0].text == "بِسْمِ اللَّهِ"
+
+    db.close()
+
+
+def test_f4_corpus_validation_invariant_regression():
+    db = TestingSessionLocal()
+    tanzil_raw = "1|1|بِسْمِ اللَّهِ\n"
+    qac_raw = "(1:1:1:1)|bis'mi|N|POS:N|ROOT:smw"
+
+    # Counterexample: Attempt to import without verifying hash (passing None)
+    snapshot = CorpusImporter.import_corpus_snapshot(db, tanzil_raw, qac_raw, expected_tanzil_hash=None)
+    assert snapshot.canonical_text_hash == "UNKNOWN"
+    assert snapshot.validation_status == "UNVERIFIED"
+    
+    # Attempt to bypass invariant at the ORM layer
+    with pytest.raises(ValueError, match="Cannot set validation_status to VALIDATED with invalid hash: UNKNOWN"):
+        snapshot.validation_status = "VALIDATED"
+        db.add(snapshot)
+        db.commit()
 
     db.close()
