@@ -1,19 +1,19 @@
-from datetime import datetime
+from datetime import datetime, timezone
 from enum import Enum
 from typing import Any
 
 from pydantic import BaseModel, ConfigDict, field_validator
-from datetime import timezone
+
 
 class BaseSchema(BaseModel):
-    @field_validator('*', mode='after')
+    @field_validator("*", mode="after")
     @classmethod
     def force_utc(cls, v):
         from datetime import datetime
+
         if isinstance(v, datetime) and v.tzinfo is None:
             return v.replace(tzinfo=timezone.utc)
         return v
-
 
 
 class ResearchStage(str, Enum):
@@ -56,7 +56,6 @@ class ResearchRunResponse(ResearchRunBase):
     updated_at: datetime
 
     model_config = ConfigDict(from_attributes=True)
-
 
 
 # --- Semantic Claim Schemas ---
@@ -441,15 +440,6 @@ class ErrorResponse(BaseSchema):
     model_config = ConfigDict(from_attributes=True)
 
 
-class AuditLogCreate(BaseSchema):
-    entity_id: str
-    entity_type: str
-    action: str
-    previous_state: str | None = None
-    new_state: str | None = None
-    actor: str
-
-
 class ClaimRevisionItem(BaseSchema):
     revision_id: int
     epistemic_state: str
@@ -509,4 +499,3 @@ class ReproductionManifestResponse(BaseSchema):
     generated_at: datetime
 
     model_config = ConfigDict(from_attributes=True)
-

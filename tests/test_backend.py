@@ -73,10 +73,14 @@ def test_research_run_persistence():
     from backend.domain.schemas import ResearchRunCreate
 
     try:
-        ResearchRunCreate(
-            target_contract="ROOT_CORE",
-            target_expression="TEST",
-            # missing required methodology_revision
+        ResearchRunCreate.model_validate(
+            {
+                "target_contract": "ROOT_CORE",
+                "target_expression": "TEST",
+                "corpus_snapshot": "snapshot_test",
+                "authority_context": {},
+                # missing required methodology_revision
+            }
         )
         assert False, "Should fail validation"
     except ValueError:
@@ -130,38 +134,42 @@ def test_slice_a_end_to_end():
     db.close()
 
 
-def test_alembic_models_parity():
-    import os
-    import alembic.config
+def test_alembic_models_parity(tmp_path):
     import alembic.command
+    import alembic.config
     from sqlalchemy import create_engine, inspect
+
     from backend.infrastructure.database import Base
 
-    db_path = "test_alembic_parity.db"
-    if os.path.exists(db_path):
-        os.remove(db_path)
+    db_path = tmp_path / "test_alembic_parity.db"
 
     try:
-        engine = create_engine(f"sqlite:///{db_path}")
-        alembic_cfg = alembic.config.Config("backend/alembic.ini")
-        alembic_cfg.set_main_option("script_location", "backend/alembic")
-        alembic_cfg.set_main_option("sqlalchemy.url", f"sqlite:///{db_path}")
+        database_url = f"sqlite:///{db_path.as_posix()}"
+        engine = create_engine(database_url)
+        alembic_cfg = alembic.config.Config("alembic.ini")
+        alembic_cfg.set_main_option("script_location", "alembic")
+        alembic_cfg.set_main_option("sqlalchemy.url", database_url)
 
         alembic.command.upgrade(alembic_cfg, "head")
 
         inspector = inspect(engine)
         alembic_tables = set(inspector.get_table_names())
-        
+
         model_tables = set(Base.metadata.tables.keys())
-        if "alembic_version" in alembic_tables:
-            alembic_tables.remove("alembic_version")
-            
-        assert alembic_tables == model_tables, f"Mismatch between Alembic tables ({len(alembic_tables)}) and Model tables ({len(model_tables)}). Diff: {alembic_tables.symmetric_difference(model_tables)}"
+        alembic_tables.discard("alembic_version")
+
+        assert alembic_tables == model_tables, (
+            f"Mismatch between Alembic tables ({len(alembic_tables)}) and Model tables ({len(model_tables)}). Diff: {alembic_tables.symmetric_difference(model_tables)}"
+        )
+        for table_name, table in Base.metadata.tables.items():
+            migrated_columns = {
+                column["name"] for column in inspector.get_columns(table_name)
+            }
+            model_columns = set(table.columns.keys())
+            assert migrated_columns == model_columns, (
+                f"Column mismatch for {table_name}: "
+                f"{migrated_columns.symmetric_difference(model_columns)}"
+            )
     finally:
-        if 'engine' in locals():
+        if "engine" in locals():
             engine.dispose()
-        if os.path.exists(db_path):
-            try:
-                os.remove(db_path)
-            except PermissionError:
-                pass

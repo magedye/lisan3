@@ -277,7 +277,7 @@ def test_purity_contamination_detection(test_db):
         contract_type="tafsir_contaminated_contract",
         abstract_root_core="معنى متأثر بتفسير متأخر",
         epistemic_state="UNRESOLVED",
-        research_run_id="run_123"
+        research_run_id="run_123",
     )
     test_db.add(claim)
 
@@ -296,39 +296,30 @@ def test_purity_contamination_detection(test_db):
     data = res.json()
     assert data["purity_score"] == 0
 
-    
-def test_post_audit_log_invalid_transition(setup_claim, test_db):
+
+def test_audit_api_is_read_only_and_cannot_mutate_domain_state(setup_claim, test_db):
     claim = test_db.query(models.SemanticClaim).first()
-    
-    resp = client.post("/api/audit/log", json={
-        "entity_id": claim.id,
-        "entity_type": "SemanticClaim",
-        "action": "MUTATE",
-        "previous_state": "INVALID_STATE",
-        "new_state": "REJECTED",
-        "actor": "SYSTEM"
-    })
-    assert resp.status_code == 400
+    run = test_db.query(models.ResearchRun).first()
+    claim_state = claim.epistemic_state
+    run_state = run.status
 
-    resp = client.post("/api/audit/log", json={
-        "entity_id": claim.id,
-        "entity_type": "SemanticClaim",
-        "action": "MUTATE",
-        "previous_state": "LOCK_INTERNAL_RESULT",
-        "new_state": "NOT_EVALUATED",
-        "actor": "SYSTEM"
-    })
-    assert resp.status_code == 400
+    resp = client.post(
+        "/api/audit/log",
+        json={
+            "entity_id": claim.id,
+            "entity_type": "SemanticClaim",
+            "action": "MUTATE",
+            "previous_state": claim_state,
+            "new_state": "LOCK_INTERNAL_RESULT",
+            "actor": "UNTRUSTED_CLIENT",
+        },
+    )
 
-    resp = client.post("/api/audit/log", json={
-        "entity_id": claim.id,
-        "entity_type": "SemanticClaim",
-        "action": "MUTATE",
-        "previous_state": "LOCK_INTERNAL_RESULT",
-        "new_state": "REJECTED",
-        "actor": "SYSTEM"
-    })
-    assert resp.status_code == 200
+    assert resp.status_code == 404
+    test_db.refresh(claim)
+    test_db.refresh(run)
+    assert claim.epistemic_state == claim_state
+    assert run.status == run_state
 
 
 def test_get_reproduction_manifest(test_db, setup_claim):
@@ -351,3 +342,13 @@ def test_operations_health():
     assert data["status"] == "HEALTHY"
     assert data["configuration"]["ai_governance"] == "enforced"
 
+
+def test_missing_run_semantic_dictionary_is_contractual_404():
+    response = client.get("/runs/missing/read_semantic_dictionary")
+
+    assert response.status_code == 404
+    assert response.json() == {
+        "status": "ERROR",
+        "message": "Run not found",
+        "detail": "Run not found",
+    }

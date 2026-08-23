@@ -9,6 +9,7 @@ from sqlalchemy import (
     ForeignKey,
     Integer,
     String,
+    event,
 )
 from sqlalchemy.orm import relationship
 
@@ -62,6 +63,7 @@ class PublicationState(str, enum.Enum):
 
 class OfficialStatus(str, enum.Enum):
     """Legacy alias preserved for compatibility."""
+
     UNRESOLVED = "UNRESOLVED"
     LOCK_BLOCKED = "LOCK_BLOCKED"
     LOCK_INTERNAL_RESULT = "LOCK_INTERNAL_RESULT"
@@ -214,22 +216,34 @@ class CorpusSnapshot(Base):
     structural_source_version = Column(String)
     import_revision = Column(String)
     validation_status = Column(String, default="PENDING")
+    source_role_status = Column(String, nullable=False, default="SOURCE_ROLE_PENDING")
+    artifact_presence_status = Column(
+        String, nullable=False, default="ARTIFACT_MISSING"
+    )
+    expected_canonical_text_hash = Column(String, nullable=True)
+    hash_verification_status = Column(String, nullable=False, default="HASH_UNVERIFIED")
+    import_validation_status = Column(String, nullable=False, default="IMPORT_PENDING")
+    activation_status = Column(
+        String, nullable=False, default="CANONICAL_ACTIVATION_PENDING"
+    )
+    artifact_provenance = Column(String, nullable=True)
+    fixture_only = Column(Boolean, nullable=False, default=True)
     created_at = Column(DateTime, default=datetime.datetime.utcnow)
 
-    from sqlalchemy.orm import validates
 
-    @validates('validation_status', 'canonical_text_hash')
-    def validate_hash(self, key, value):
-        if key == 'validation_status':
-            status = value
-            text_hash = self.canonical_text_hash
-        else:
-            text_hash = value
-            status = self.validation_status
-        
-        if status == "VALIDATED" and text_hash in (None, "", "UNKNOWN", "placeholder", "synthetic", "unverified"):
-            raise ValueError(f"Cannot set validation_status to VALIDATED with invalid hash: {text_hash}")
-        return value
+@event.listens_for(CorpusSnapshot, "before_insert")
+@event.listens_for(CorpusSnapshot, "before_update")
+def enforce_corpus_snapshot_validation(_mapper, _connection, snapshot):
+    if snapshot.validation_status != "VALIDATED":
+        return
+
+    from backend.domain.services.corpus.authority import production_validation_failures
+
+    failures = production_validation_failures(snapshot)
+    if failures:
+        raise ValueError(
+            "Cannot persist production VALIDATED CorpusSnapshot: " + "; ".join(failures)
+        )
 
 
 class CorpusOccurrence(Base):
@@ -356,15 +370,20 @@ class QualityProfile(Base):
     id = Column(String, primary_key=True, index=True)
     claim_id = Column(String, ForeignKey("semantic_claims.id"))
     purity_score = Column(Integer)  # 0 to 100
-    purity_rating = Column(String, default="PURE")  # PURE, NEAR_PURE, SUSPICIOUS, CONTAMINATED
-    purity_findings = Column(JSON, default=list)  # Structured list of PurityFinding objects
+    purity_rating = Column(
+        String, default="PURE"
+    )  # PURE, NEAR_PURE, SUSPICIOUS, CONTAMINATED
+    purity_findings = Column(
+        JSON, default=list
+    )  # Structured list of PurityFinding objects
     synthetic_data_leak = Column(Boolean, default=False)
     external_data_leak = Column(Boolean, default=False)
     corpus_coverage = Column(Integer, default=0)
     deep_analysis_coverage = Column(Integer, default=0)
     reproducibility_score = Column(Integer, default=0)
     unresolved_conflict_burden = Column(Integer, default=0)
-    methodological_purity_flags = Column(JSON, default=list)  # e.g. ["tafsir_contamination", "dictionary_first"]
+    methodological_purity_flags = Column(
+        JSON, default=list
+    )  # e.g. ["tafsir_contamination", "dictionary_first"]
     evaluation_summary = Column(String)
     created_at = Column(DateTime, default=datetime.datetime.utcnow)
-

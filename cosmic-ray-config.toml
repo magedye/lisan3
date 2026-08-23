@@ -1,7 +1,7 @@
 [cosmic-ray]
 module-path = "backend/domain/services/registry_admission.py"
-test-command = ".venv/Scripts/pytest.exe tests/test_slice_d.py"
-timeout = 10.0
+test-command = ".venv/Scripts/python.exe -c \"exec(open('tests/test_registry_mutation.py', encoding='utf-8').read())\""
+timeout = 30.0
 exclude-modules = [
     "backend/main.py",
     "backend/domain/models.py",

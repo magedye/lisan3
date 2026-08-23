@@ -5,7 +5,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 
-from backend.domain.models import CorpusOccurrence
+from backend.domain.models import CorpusOccurrence, CorpusSnapshot
 from backend.domain.services.corpus.importer import CorpusImporter
 from backend.domain.services.corpus.qac import QACAdapter
 from backend.domain.services.corpus.tanzil import TanzilAdapter
@@ -66,6 +66,10 @@ def test_corpus_importer_integration():
     assert snapshot.canonical_text_source == "TANZIL_QURAN_UTHMANI"
     assert snapshot.structural_source == "QAC_MORPHOLOGY_SYNTAX"
     assert snapshot.validation_status == "UNVERIFIED"
+    assert snapshot.fixture_only is True
+    assert snapshot.expected_canonical_text_hash is None
+    assert snapshot.hash_verification_status == "ARTIFACT_VERIFICATION_PENDING"
+    assert snapshot.activation_status == "CANONICAL_ACTIVATION_PENDING"
 
     occurrences = db.query(CorpusOccurrence).filter_by(snapshot_id=snapshot.id).all()
     assert len(occurrences) == 1
@@ -80,15 +84,37 @@ def test_f4_corpus_validation_invariant_regression():
     tanzil_raw = "1|1|بِسْمِ اللَّهِ\n"
     qac_raw = "(1:1:1:1)|bis'mi|N|POS:N|ROOT:smw"
 
-    # Counterexample: Attempt to import without verifying hash (passing None)
-    snapshot = CorpusImporter.import_corpus_snapshot(db, tanzil_raw, qac_raw, expected_tanzil_hash=None)
-    assert snapshot.canonical_text_hash == "UNKNOWN"
+    # A caller-supplied, locally matching hash is parsing evidence, not authority.
+    local_hash = hashlib.sha256(tanzil_raw.encode("utf-8")).hexdigest()
+    snapshot = CorpusImporter.import_corpus_snapshot(
+        db, tanzil_raw, qac_raw, expected_tanzil_hash=local_hash
+    )
+    assert snapshot.canonical_text_hash == local_hash
+    assert snapshot.expected_canonical_text_hash is None
     assert snapshot.validation_status == "UNVERIFIED"
-    
-    # Attempt to bypass invariant at the ORM layer
-    with pytest.raises(ValueError, match="Cannot set validation_status to VALIDATED with invalid hash: UNKNOWN"):
-        snapshot.validation_status = "VALIDATED"
-        db.add(snapshot)
-        db.commit()
 
+    # The persistence boundary rejects promotion while canonical authority is pending.
+    with pytest.raises(
+        ValueError,
+        match="canonical admission has no authority-bound expected hash",
+    ):
+        snapshot.validation_status = "VALIDATED"
+        db.flush()
+
+    db.rollback()
+
+    # A literal hash cannot establish production validation through direct ORM writes.
+    forged = CorpusSnapshot(
+        id="snap_forged",
+        canonical_text_source="TANZIL_QURAN_UTHMANI",
+        canonical_text_version="v1.0.2",
+        canonical_text_hash="abc",
+        validation_status="VALIDATED",
+        fixture_only=False,
+    )
+    db.add(forged)
+    with pytest.raises(ValueError, match="authority-bound expected hash"):
+        db.flush()
+
+    db.rollback()
     db.close()

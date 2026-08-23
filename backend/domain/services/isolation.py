@@ -2,7 +2,8 @@ import uuid
 
 from sqlalchemy.orm import Session
 
-from ..models import GateReport, IsolationEvent, IsolationState
+from ..models import IsolationEvent, IsolationState
+from .gates import INTERNAL_LOCK, has_valid_gate
 
 
 class IsolationContaminationException(Exception):
@@ -19,18 +20,7 @@ class BlindLabIsolationService:
         Enforce that semantic dictionaries/prior knowledge cannot be accessed
         until the authoritative internal-lock condition has actually been reached.
         """
-        # Check if INTERNAL_LOCK gate has passed
-        lock_gate = (
-            db.query(GateReport)
-            .filter(
-                GateReport.research_run_id == run_id,
-                GateReport.gate_code == "INTERNAL_LOCK",
-                GateReport.status == "PASSED",
-            )
-            .first()
-        )
-
-        if not lock_gate:
+        if not has_valid_gate(db, run_id, INTERNAL_LOCK):
             # Create an auditable isolation event for the blocked read attempt
             event = IsolationEvent(
                 id=f"evt_{uuid.uuid4().hex[:8]}",

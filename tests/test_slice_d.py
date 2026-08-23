@@ -49,7 +49,7 @@ def setup_claim(test_db):
         canonical_text_source="TANZIL",
         canonical_text_version="v1",
         canonical_text_hash="hash",
-        validation_status="VALIDATED",
+        validation_status="UNVERIFIED",
     )
     test_db.add(snap)
 
@@ -74,7 +74,7 @@ def setup_claim(test_db):
         status="PASSED",
     )
     test_db.add(gate1)
-    
+
     gate2 = models.GateReport(
         id=f"gate_{uuid.uuid4().hex[:8]}",
         research_run_id=run_id,
@@ -116,7 +116,7 @@ def test_publish_unapproved_claim_fails(setup_claim):
     )
 
 
-def test_approve_and_publish_claim(setup_claim):
+def test_review_approval_cannot_bypass_corpus_and_gate_authority(setup_claim):
     claim_id = setup_claim["claim_id"]
 
     # Review
@@ -136,8 +136,87 @@ def test_approve_and_publish_claim(setup_claim):
         json={"publisher_identity": "admin", "target_registry": "public"},
     )
 
-    assert res.status_code == 200
-    assert res.json()["publication_state"] == "PUBLISHED"
+    assert res.status_code == 403
+    detail = res.json()["detail"]
+    assert "validation_status is 'UNVERIFIED'" in detail
+    assert "Missing PASSED GateReport for 'INTERNAL_LOCK'" in detail
+    assert "Missing required PASSED GateReport for 'PURITY_CHECK'" in detail
+
+
+def test_client_passed_gate_status_is_ignored_and_derived(test_db, setup_claim):
+    run_id = setup_claim["run_id"]
+
+    purity_response = client.post(
+        f"/runs/{run_id}/gates",
+        json={
+            "gate_code": "PURITY_CHECK",
+            "status": "PASSED",
+            "evidence_refs": ["client:forged"],
+            "evaluated_revision": "forged",
+        },
+    )
+    assert purity_response.status_code == 200
+    assert purity_response.json()["status"] == "FAILED"
+    assert purity_response.json()["evidence_refs"] == []
+
+    lock_response = client.post(
+        f"/runs/{run_id}/gates",
+        json={
+            "gate_code": "INTERNAL_LOCK",
+            "status": "PASSED",
+            "evidence_refs": ["client:forged"],
+            "evaluated_revision": "forged",
+        },
+    )
+    assert lock_response.status_code == 200
+    assert lock_response.json()["status"] == "FAILED"
+    run = test_db.get(models.ResearchRun, run_id)
+    assert run.status == "LOCK_BLOCKED"
+
+
+def test_forged_passed_gates_do_not_authorize_claim_creation(setup_claim):
+    run_id = setup_claim["run_id"]
+
+    response = client.post(
+        f"/runs/{run_id}/claims",
+        json={"contract_type": "ROOT_CORE", "research_run_id": run_id},
+    )
+
+    assert response.status_code == 403
+    assert "valid INTERNAL_LOCK gate not passed" in response.json()["detail"]
+
+
+def test_dependency_on_another_claim_does_not_satisfy_traceability(
+    test_db, setup_claim
+):
+    claim = test_db.get(models.SemanticClaim, setup_claim["claim_id"])
+    claim.review_state = "APPROVED"
+    other_claim = models.SemanticClaim(
+        id="clm_other_entity",
+        research_run_id=setup_claim["run_id"],
+        contract_type="ROOT_CORE",
+    )
+    test_db.add(other_claim)
+    test_db.add(
+        models.DependencyRecord(
+            id="dep_other_entity",
+            dependent_claim_id=other_claim.id,
+            dependency_type="CORPUS_SNAPSHOT",
+            dependency_ref=setup_claim["snapshot_id"],
+        )
+    )
+    test_db.commit()
+
+    response = client.post(
+        f"/claims/{claim.id}/publish",
+        json={"publisher_identity": "admin", "target_registry": "public"},
+    )
+
+    assert response.status_code == 403
+    assert (
+        "Claim must have exactly one CORPUS_SNAPSHOT dependency"
+        in response.json()["detail"]
+    )
 
 
 def test_reject_claim_blocks_publication(test_db, setup_claim):
@@ -206,7 +285,11 @@ def test_stale_review_blocks_publication(test_db, setup_claim):
 
 def test_unlocked_epistemic_state_blocks_publication(test_db, setup_claim):
     claim_id = setup_claim["claim_id"]
-    claim = test_db.query(models.SemanticClaim).filter(models.SemanticClaim.id == claim_id).first()
+    claim = (
+        test_db.query(models.SemanticClaim)
+        .filter(models.SemanticClaim.id == claim_id)
+        .first()
+    )
     claim.epistemic_state = "HYPOTHESIS"
     claim.review_state = "APPROVED"
     test_db.commit()
@@ -221,7 +304,11 @@ def test_unlocked_epistemic_state_blocks_publication(test_db, setup_claim):
 
 def test_non_current_freshness_blocks_publication(test_db, setup_claim):
     claim_id = setup_claim["claim_id"]
-    claim = test_db.query(models.SemanticClaim).filter(models.SemanticClaim.id == claim_id).first()
+    claim = (
+        test_db.query(models.SemanticClaim)
+        .filter(models.SemanticClaim.id == claim_id)
+        .first()
+    )
     claim.freshness_state = "STALE"
     claim.review_state = "APPROVED"
     test_db.commit()
@@ -236,15 +323,19 @@ def test_non_current_freshness_blocks_publication(test_db, setup_claim):
 
 def test_corpus_snapshot_mismatch_blocks_publication(test_db, setup_claim):
     claim_id = setup_claim["claim_id"]
-    claim = test_db.query(models.SemanticClaim).filter(models.SemanticClaim.id == claim_id).first()
+    claim = (
+        test_db.query(models.SemanticClaim)
+        .filter(models.SemanticClaim.id == claim_id)
+        .first()
+    )
     claim.review_state = "APPROVED"
-    
+
     # Add a mismatching dependency
     dep = models.DependencyRecord(
         id="dep_mismatch",
         dependent_claim_id=claim_id,
         dependency_type="CORPUS_SNAPSHOT",
-        dependency_ref="wrong_snapshot_id"
+        dependency_ref="wrong_snapshot_id",
     )
     test_db.add(dep)
     test_db.commit()
@@ -260,10 +351,14 @@ def test_corpus_snapshot_mismatch_blocks_publication(test_db, setup_claim):
 def test_unvalidated_corpus_snapshot_blocks_publication(test_db, setup_claim):
     claim_id = setup_claim["claim_id"]
     snap_id = setup_claim["snapshot_id"]
-    snap = test_db.query(models.CorpusSnapshot).filter(models.CorpusSnapshot.id == snap_id).first()
+    snap = (
+        test_db.query(models.CorpusSnapshot)
+        .filter(models.CorpusSnapshot.id == snap_id)
+        .first()
+    )
     snap.validation_status = "PENDING"
     test_db.commit()
-    
+
     # Approve review
     res_rev = client.post(
         f"/claims/{claim_id}/reviews",
@@ -282,9 +377,11 @@ def test_unvalidated_corpus_snapshot_blocks_publication(test_db, setup_claim):
 def test_missing_internal_lock_gate_blocks_publication(test_db, setup_claim):
     claim_id = setup_claim["claim_id"]
     run_id = setup_claim["run_id"]
-    
+
     # Delete gate report
-    test_db.query(models.GateReport).filter(models.GateReport.research_run_id == run_id).delete()
+    test_db.query(models.GateReport).filter(
+        models.GateReport.research_run_id == run_id
+    ).delete()
     test_db.commit()
 
     # Approve review
@@ -304,7 +401,11 @@ def test_missing_internal_lock_gate_blocks_publication(test_db, setup_claim):
 def test_synthetic_fixture_blocks_publication(test_db, setup_claim):
     claim_id = setup_claim["claim_id"]
     run_id = setup_claim["run_id"]
-    run = test_db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
+    run = (
+        test_db.query(models.ResearchRun)
+        .filter(models.ResearchRun.id == run_id)
+        .first()
+    )
     run.target_contract = "test_fixture_synthetic"
     test_db.commit()
 
@@ -318,5 +419,7 @@ def test_synthetic_fixture_blocks_publication(test_db, setup_claim):
         json={"publisher_identity": "admin", "target_registry": "public"},
     )
     assert res.status_code == 403
-    assert "Synthetic fixtures and tests cannot be admitted to production registry" in res.json()["detail"]
-
+    assert (
+        "Synthetic fixtures and tests cannot be admitted to production registry"
+        in res.json()["detail"]
+    )

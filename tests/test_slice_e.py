@@ -65,7 +65,7 @@ def setup_governance(test_db):
         canonical_text_source="TANZIL",
         canonical_text_version="v1",
         canonical_text_hash="hash",
-        validation_status="VALIDATED",
+        validation_status="UNVERIFIED",
     )
     test_db.add(snap)
 
@@ -145,20 +145,52 @@ def test_transitive_invalidation(test_db, setup_governance):
     test_db.refresh(claim)
     assert claim.freshness_state == "REVALIDATION_REQUIRED"
 
+
 def test_rule_mutation_scope(test_db, setup_governance):
     # Rule A will be mutated.
     rule_code_a = setup_governance["rule_code"]
-    
+
     # Rule B should remain untouched.
     rule_code_b = f"RULE_{uuid.uuid4().hex[:8]}"
-    client.post("/governance/rules", json={"rule_code": rule_code_b, "description": "Unrelated Rule"})
-    
+    client.post(
+        "/governance/rules",
+        json={"rule_code": rule_code_b, "description": "Unrelated Rule"},
+    )
+
     # Setup dependent claim for Rule B
     run_id = f"run_{uuid.uuid4().hex[:8]}"
-    test_db.add(models.ResearchRun(id=run_id, target_contract="t", target_expression="t", methodology_revision="1", corpus_snapshot="snap", authority_context="t", status="LOCK"))
+    test_db.add(
+        models.ResearchRun(
+            id=run_id,
+            target_contract="t",
+            target_expression="t",
+            methodology_revision="1",
+            corpus_snapshot="snap",
+            authority_context="t",
+            status="LOCK",
+        )
+    )
     claim_id_b = f"clm_{uuid.uuid4().hex[:8]}"
-    test_db.add(models.SemanticClaim(id=claim_id_b, research_run_id=run_id, contract_type="t", epistemic_state="LOCK_INTERNAL_RESULT", review_state="PENDING_REVIEW", freshness_state="CURRENT", publication_state="UNPUBLISHED"))
-    test_db.add(models.DependencyRecord(id=f"dep_{uuid.uuid4().hex[:8]}", dependent_claim_id=claim_id_b, dependency_type="GOVERNANCE_RULE", dependency_ref=rule_code_b, dependency_revision=1))
+    test_db.add(
+        models.SemanticClaim(
+            id=claim_id_b,
+            research_run_id=run_id,
+            contract_type="t",
+            epistemic_state="LOCK_INTERNAL_RESULT",
+            review_state="PENDING_REVIEW",
+            freshness_state="CURRENT",
+            publication_state="UNPUBLISHED",
+        )
+    )
+    test_db.add(
+        models.DependencyRecord(
+            id=f"dep_{uuid.uuid4().hex[:8]}",
+            dependent_claim_id=claim_id_b,
+            dependency_type="GOVERNANCE_RULE",
+            dependency_ref=rule_code_b,
+            dependency_revision=1,
+        )
+    )
     test_db.commit()
 
     # Create proposal for Rule A
@@ -167,15 +199,22 @@ def test_rule_mutation_scope(test_db, setup_governance):
         json={"rule_code": rule_code_a, "proposed_changes": "Update rule A"},
     )
     proposal_id = res.json()["id"]
-    
+
     # Approve proposal for Rule A
     client.post(f"/governance/proposals/{proposal_id}/approve")
-    
-    # Check that Rule B is untouched
-    rule_b = test_db.query(models.GovernanceRule).filter(models.GovernanceRule.rule_code == rule_code_b).first()
-    assert rule_b.active_revision == 1
-    
-    # Check that Claim B is still CURRENT
-    claim_b = test_db.query(models.SemanticClaim).filter(models.SemanticClaim.id == claim_id_b).first()
-    assert claim_b.freshness_state == "CURRENT"
 
+    # Check that Rule B is untouched
+    rule_b = (
+        test_db.query(models.GovernanceRule)
+        .filter(models.GovernanceRule.rule_code == rule_code_b)
+        .first()
+    )
+    assert rule_b.active_revision == 1
+
+    # Check that Claim B is still CURRENT
+    claim_b = (
+        test_db.query(models.SemanticClaim)
+        .filter(models.SemanticClaim.id == claim_id_b)
+        .first()
+    )
+    assert claim_b.freshness_state == "CURRENT"

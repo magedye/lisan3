@@ -3,13 +3,19 @@ from contextlib import asynccontextmanager
 from datetime import datetime, timezone
 
 from fastapi import Depends, FastAPI, HTTPException, Query, Request
+from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from fastapi.exceptions import RequestValidationError
-from starlette.exceptions import HTTPException as StarletteHTTPException
 from sqlalchemy.orm import Session
+from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from .domain import models, schemas
+from .domain.services.gates import (
+    INTERNAL_LOCK,
+    has_valid_gate,
+    record_gate_evaluation,
+)
+from .domain.services.purity import evaluate_methodological_purity
 from .infrastructure.database import create_db_and_tables, get_db
 
 
@@ -32,7 +38,7 @@ app = FastAPI(
         404: {"model": schemas.ErrorResponse, "description": "Not Found"},
         422: {"model": schemas.ErrorResponse, "description": "Validation Error"},
         500: {"model": schemas.ErrorResponse, "description": "Internal Server Error"},
-    }
+    },
 )
 
 
@@ -49,7 +55,11 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
 async def http_exception_handler(request: Request, exc: StarletteHTTPException):
     return JSONResponse(
         status_code=exc.status_code,
-        content={"status": "ERROR", "message": str(exc.detail), "detail": str(exc.detail)},
+        content={
+            "status": "ERROR",
+            "message": str(exc.detail),
+            "detail": str(exc.detail),
+        },
     )
 
 
@@ -58,7 +68,11 @@ async def generic_exception_handler(request: Request, exc: Exception):
     error_message = repr(exc) if not isinstance(exc, str) else exc
     return JSONResponse(
         status_code=500,
-        content={"status": "ERROR", "message": "Internal Server Error", "detail": "Internal Server Error"},
+        content={
+            "status": "ERROR",
+            "message": "Internal Server Error",
+            "detail": "Internal Server Error",
+        },
     )
 
 
@@ -257,8 +271,10 @@ def read_semantic_dictionary(run_id: str, db: Session = Depends(get_db)):
     try:
         BlindLabIsolationService.enforce_semantic_isolation(db, run_id)
         return {"data": "This is a secret semantic definition"}
+    except LookupError as exc:
+        raise HTTPException(status_code=404, detail="Run not found") from exc
     except IsolationContaminationException as e:
-        raise HTTPException(status_code=403, detail=str(e))
+        raise HTTPException(status_code=403, detail=str(e)) from e
 
 
 @app.post("/runs/{run_id}/record_contamination")
@@ -279,7 +295,7 @@ def create_hypothesis(
     run = db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
     if not run:
         raise HTTPException(status_code=404, detail="Run not found")
-        
+
     state = (
         db.query(models.IsolationState)
         .filter(models.IsolationState.research_run_id == run_id)
@@ -363,35 +379,19 @@ def add_neighbor(
 def record_gate_report(
     run_id: str, report: schemas.GateReportCreate, db: Session = Depends(get_db)
 ):
-    db_gate = models.GateReport(
-        id=f"gate_{uuid.uuid4().hex[:8]}",
-        research_run_id=run_id,
-        gate_code=report.gate_code,
-        status=report.status,
-        evidence_refs=report.evidence_refs,
-        failure_reason=report.failure_reason,
-        evaluated_revision=report.evaluated_revision,
-        required_action=report.required_action,
-    )
-    db.add(db_gate)
+    try:
+        db_gate = record_gate_evaluation(db, run_id, report.gate_code)
+    except LookupError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
 
-    # Block semantic locking if gate fails
-    if report.status == "FAILED" and report.gate_code == "INTERNAL_LOCK":
-        run = db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
-        if run:
+    if db_gate.gate_code == INTERNAL_LOCK and db_gate.status != "PASSED":
+        run = (
+            db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
+        )
+        if run is not None:
             run.status = "LOCK_BLOCKED"
-
-    # Block INTERNAL_LOCK if required PURITY_CHECK gate is missing
-    if report.status == "PASSED" and report.gate_code == "INTERNAL_LOCK":
-        run = db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
-        if run and run.methodology_revision >= "v4.0":
-            purity_gate = db.query(models.GateReport).filter(
-                models.GateReport.research_run_id == run_id,
-                models.GateReport.gate_code == "PURITY_CHECK",
-                models.GateReport.status == "PASSED"
-            ).first()
-            if not purity_gate:
-                raise HTTPException(status_code=403, detail="Missing PASSED GateReport for 'PURITY_CHECK' required for INTERNAL_LOCK")
 
     db.commit()
     db.refresh(db_gate)
@@ -402,21 +402,13 @@ def record_gate_report(
 def create_claim(
     run_id: str, claim: schemas.SemanticClaimCreate, db: Session = Depends(get_db)
 ):
-    # Check if INTERNAL_LOCK gate has passed
-    lock_gate = (
-        db.query(models.GateReport)
-        .filter(
-            models.GateReport.research_run_id == run_id,
-            models.GateReport.gate_code == "INTERNAL_LOCK",
-            models.GateReport.status == "PASSED",
-        )
-        .first()
-    )
-
-    if not lock_gate:
+    run = db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
+    if run is None:
+        raise HTTPException(status_code=404, detail="ResearchRun not found")
+    if not has_valid_gate(db, run_id, INTERNAL_LOCK):
         raise HTTPException(
             status_code=403,
-            detail="Cannot create SemanticClaim: INTERNAL_LOCK gate not passed",
+            detail="Cannot create SemanticClaim: valid INTERNAL_LOCK gate not passed",
         )
 
     db_claim = models.SemanticClaim(
@@ -436,8 +428,25 @@ def create_claim(
         contextual_adaptations=claim.contextual_adaptations,
     )
     db.add(db_claim)
-
-    run = db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
+    db.add(
+        models.DependencyRecord(
+            id=f"dep_{uuid.uuid4().hex[:8]}",
+            dependent_claim_id=db_claim.id,
+            dependency_type="CORPUS_SNAPSHOT",
+            dependency_ref=run.corpus_snapshot,
+        )
+    )
+    db.add(
+        models.AuditLog(
+            id=f"aud_{uuid.uuid4().hex[:8]}",
+            entity_id=db_claim.id,
+            entity_type="SemanticClaim",
+            action="CREATE_AFTER_INTERNAL_LOCK",
+            previous_state=None,
+            new_state="LOCK_INTERNAL_RESULT",
+            actor="DOMAIN_GATE_SERVICE",
+        )
+    )
     run.status = "LOCK_INTERNAL_RESULT"
 
     db.commit()
@@ -531,7 +540,7 @@ def ai_propose_hypothesis(run_id: str, db: Session = Depends(get_db)):
     run = db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
     if not run:
         raise HTTPException(status_code=404, detail="Run not found")
-        
+
     context = AIContextBuilder.build_research_context(db, run_id)
     model = get_ai_model()
     provider_name = get_provider_name()
@@ -581,7 +590,7 @@ def ai_propose_hypothesis(run_id: str, db: Session = Depends(get_db)):
 @app.post("/governance/rules", response_model=schemas.GovernanceRuleResponse)
 def create_rule(rule: schemas.GovernanceRuleCreate, db: Session = Depends(get_db)):
     from sqlalchemy.exc import IntegrityError
-    
+
     db_rule = models.GovernanceRule(
         id=f"rule_{uuid.uuid4().hex[:8]}",
         rule_code=rule.rule_code,
@@ -601,7 +610,9 @@ def create_rule(rule: schemas.GovernanceRuleCreate, db: Session = Depends(get_db
         db.commit()
     except IntegrityError:
         db.rollback()
-        raise HTTPException(status_code=409, detail="Governance rule already exists or invalid")
+        raise HTTPException(
+            status_code=409, detail="Governance rule already exists or invalid"
+        )
     db.refresh(db_rule)
     return db_rule
 
@@ -713,11 +724,22 @@ def execute_steward_command(
     # 2. Enforce absolute negative boundaries (Steward constraints)
     forbidden_intents = ["ROOT_CORE", "BYPASS", "FORCE", "OVERRIDE"]
     if any(f in cmd.intent.upper() for f in forbidden_intents):
-        raise HTTPException(status_code=403, detail="Intent violates immutable domain constraints.")
-        
-    forbidden_commands = ["PASS_GATE", "FORCE_LOCK", "APPROVE_REVIEW", "PUBLISH_CLAIM", "ESTABLISH_ROOT_CORE"]
+        raise HTTPException(
+            status_code=403, detail="Intent violates immutable domain constraints."
+        )
+
+    forbidden_commands = [
+        "PASS_GATE",
+        "FORCE_LOCK",
+        "APPROVE_REVIEW",
+        "PUBLISH_CLAIM",
+        "ESTABLISH_ROOT_CORE",
+    ]
     if cmd.command_type in forbidden_commands:
-        raise HTTPException(status_code=403, detail="Steward cannot bypass epistemic lifecycle gates, locks, or publication.")
+        raise HTTPException(
+            status_code=403,
+            detail="Steward cannot bypass epistemic lifecycle gates, locks, or publication.",
+        )
 
     # 3. Execute governed command
     # In a real system, dispatch to the actual domain service
@@ -737,16 +759,18 @@ def execute_steward_command(
         result_summary=result_summary,
     )
     db.add(db_cmd)
-    
+
     # Audit log
-    db.add(models.AuditLog(
-        id=f"aud_{uuid.uuid4().hex[:8]}",
-        entity_id=cmd_id,
-        entity_type="StewardCommand",
-        action="EXECUTE",
-        new_state="SUCCESS",
-        actor="STEWARD"
-    ))
+    db.add(
+        models.AuditLog(
+            id=f"aud_{uuid.uuid4().hex[:8]}",
+            entity_id=cmd_id,
+            entity_type="StewardCommand",
+            action="EXECUTE",
+            new_state="SUCCESS",
+            actor="STEWARD",
+        )
+    )
     db.commit()
     db.refresh(db_cmd)
 
@@ -755,19 +779,32 @@ def execute_steward_command(
 
 # --- Knowledge & Operations
 
+
 @app.get("/knowledge/explorer/{claim_id}", response_model=schemas.KnowledgeNode)
 def get_knowledge_explorer(claim_id: str, db: Session = Depends(get_db)):
     """
     Returns an aggregated read-only view of a given semantic node.
     """
-    claim = db.query(models.SemanticClaim).filter(models.SemanticClaim.id == claim_id).first()
+    claim = (
+        db.query(models.SemanticClaim)
+        .filter(models.SemanticClaim.id == claim_id)
+        .first()
+    )
     if not claim:
         raise HTTPException(status_code=404, detail="Claim not found")
 
-    run = db.query(models.ResearchRun).filter(models.ResearchRun.id == claim.research_run_id).first()
+    run = (
+        db.query(models.ResearchRun)
+        .filter(models.ResearchRun.id == claim.research_run_id)
+        .first()
+    )
 
-    dependencies = db.query(models.DependencyRecord).filter(models.DependencyRecord.dependent_claim_id == claim_id).all()
-    
+    dependencies = (
+        db.query(models.DependencyRecord)
+        .filter(models.DependencyRecord.dependent_claim_id == claim_id)
+        .all()
+    )
+
     # Check rules that might invalidate this claim (reverse lookup)
     affected_by = []
     for dep in dependencies:
@@ -785,7 +822,9 @@ def get_knowledge_explorer(claim_id: str, db: Session = Depends(get_db)):
         affected_by=affected_by,
     )
 
+
 # --- Provenance API ---
+
 
 @app.get("/claims/{claim_id}/provenance")
 def get_claim_provenance(claim_id: str, db: Session = Depends(get_db)):
@@ -811,9 +850,14 @@ def get_claim_provenance(claim_id: str, db: Session = Depends(get_db)):
         .filter(models.ResearchRun.id == claim.research_run_id)
         .first()
     )
-    
+
     # Audit trail for this claim
-    audit_trail = db.query(models.AuditLog).filter(models.AuditLog.entity_id == claim_id).order_by(models.AuditLog.created_at.asc()).all()
+    audit_trail = (
+        db.query(models.AuditLog)
+        .filter(models.AuditLog.entity_id == claim_id)
+        .order_by(models.AuditLog.created_at.asc())
+        .all()
+    )
 
     provenance_tree = {
         "claim": {
@@ -822,12 +866,24 @@ def get_claim_provenance(claim_id: str, db: Session = Depends(get_db)):
             "epistemic_state": claim.epistemic_state,
         },
         "dependencies": [
-            {"type": d.dependency_type, "ref": d.dependency_ref, "rev": d.dependency_revision}
+            {
+                "type": d.dependency_type,
+                "ref": d.dependency_ref,
+                "rev": d.dependency_revision,
+            }
             for d in deps
         ],
         "research_run": None,
         "corpus_snapshot": None,
-        "audit_trail": [{"action": a.action, "actor": a.actor, "new_state": a.new_state, "timestamp": a.created_at.isoformat()} for a in audit_trail]
+        "audit_trail": [
+            {
+                "action": a.action,
+                "actor": a.actor,
+                "new_state": a.new_state,
+                "timestamp": a.created_at.isoformat(),
+            }
+            for a in audit_trail
+        ],
     }
 
     if run:
@@ -840,111 +896,54 @@ def get_claim_provenance(claim_id: str, db: Session = Depends(get_db)):
     return provenance_tree
 
 
-@app.get("/claims/{claim_id}/reproduction_manifest", response_model=schemas.ReproductionManifestResponse)
+@app.get(
+    "/claims/{claim_id}/reproduction_manifest",
+    response_model=schemas.ReproductionManifestResponse,
+)
 def get_reproduction_manifest(claim_id: str, db: Session = Depends(get_db)):
     """
     Returns the complete information required to reproduce a claim, fulfilling Slice G requirements.
     """
-    claim = db.query(models.SemanticClaim).filter(models.SemanticClaim.id == claim_id).first()
+    claim = (
+        db.query(models.SemanticClaim)
+        .filter(models.SemanticClaim.id == claim_id)
+        .first()
+    )
     if not claim:
         raise HTTPException(status_code=404, detail="Claim not found")
-        
-    deps = db.query(models.DependencyRecord).filter(models.DependencyRecord.dependent_claim_id == claim_id).all()
-    ai_records = db.query(models.AIExecutionRecord).filter(models.AIExecutionRecord.research_run_id == claim.research_run_id).all()
-    run = db.query(models.ResearchRun).filter(models.ResearchRun.id == claim.research_run_id).first()
-    
+
+    deps = (
+        db.query(models.DependencyRecord)
+        .filter(models.DependencyRecord.dependent_claim_id == claim_id)
+        .all()
+    )
+    ai_records = (
+        db.query(models.AIExecutionRecord)
+        .filter(models.AIExecutionRecord.research_run_id == claim.research_run_id)
+        .all()
+    )
+    run = (
+        db.query(models.ResearchRun)
+        .filter(models.ResearchRun.id == claim.research_run_id)
+        .first()
+    )
+
     return {
         "claim_id": claim.id,
         "target_expression": claim.abstract_root_core,
         "methodology_revision": run.methodology_revision if run else None,
         "corpus_snapshot_id": run.corpus_snapshot if run else None,
         "ai_execution_traces": [r.id for r in ai_records],
-        "dependencies": [{"type": d.dependency_type, "ref": d.dependency_ref, "rev": d.dependency_revision} for d in deps],
-        "generated_at": datetime.now(timezone.utc)
+        "dependencies": [
+            {
+                "type": d.dependency_type,
+                "ref": d.dependency_ref,
+                "rev": d.dependency_revision,
+            }
+            for d in deps
+        ],
+        "generated_at": datetime.now(timezone.utc),
     }
-
-
-def evaluate_methodological_purity(claim: models.SemanticClaim, db: Session) -> tuple[int, str, list[dict], list[str]]:
-    findings = []
-    flags = []
-    purity_score = 100
-
-    observations = db.query(models.ObservationArtifact).filter(models.ObservationArtifact.research_run_id == claim.research_run_id).all()
-    hypotheses = db.query(models.Hypothesis).filter(models.Hypothesis.research_run_id == claim.research_run_id).all()
-
-    if not observations and not hypotheses:
-        # Default to NOT_EVALUATED if evidence is missing
-        dimensions = [
-            "DICTIONARY_FIRST", "CONTEXTUAL_LEAKAGE", "HERITAGE_BIAS",
-            "TAFSIR_CONTAMINATION", "FORCED_UNIFICATION", "GENERIC_OVEREXTRACTION",
-            "LETTER_SEMANTICS_OVERRELIANCE", "CIRCULAR_CONFIRMATION"
-        ]
-        for dim in dimensions:
-            findings.append({
-                "dimension": dim,
-                "status": "NOT_EVALUATED",
-                "severity": "CRITICAL",
-                "details": "Missing required observation or hypothesis evidence for purity evaluation."
-            })
-        purity_score = 0
-    else:
-        # 1. Dictionary-First Detection (FM-01)
-        first_obs = min((o.created_at for o in observations), default=None)
-        first_hyp = min((h.created_at for h in hypotheses), default=None)
-        
-        if first_hyp and (not first_obs or first_hyp < first_obs):
-            findings.append({
-                "dimension": "DICTIONARY_FIRST",
-                "status": "FLAGGED",
-                "severity": "HIGH",
-                "details": "Hypothesis formulated prior to corpus observation (Dictionary First).",
-            })
-            flags.append("dictionary_first")
-            purity_score -= 30
-        elif first_obs and first_hyp and first_obs <= first_hyp:
-            findings.append({
-                "dimension": "DICTIONARY_FIRST",
-                "status": "EVALUATED_CLEAN",
-                "severity": "NONE",
-                "details": "Corpus observations precede hypothesis.",
-            })
-        else:
-            findings.append({
-                "dimension": "DICTIONARY_FIRST",
-                "status": "NOT_EVALUATED",
-                "severity": "MEDIUM",
-                "details": "Missing temporal evidence to evaluate sequence.",
-            })
-            purity_score -= 10
-
-        # Mark all other dimensions as NOT_EVALUATED since we lack evidence extractors for them yet
-        unsupported = [
-            "CONTEXTUAL_LEAKAGE", "HERITAGE_BIAS",
-            "TAFSIR_CONTAMINATION", "FORCED_UNIFICATION", "GENERIC_OVEREXTRACTION",
-            "LETTER_SEMANTICS_OVERRELIANCE", "CIRCULAR_CONFIRMATION"
-        ]
-        for dim in unsupported:
-            findings.append({
-                "dimension": dim,
-                "status": "NOT_EVALUATED",
-                "severity": "MEDIUM",
-                "details": "Dimension currently unsupported by evidence extractors."
-            })
-            purity_score -= 10
-
-
-    if purity_score == 0 and not observations and not hypotheses:
-        rating = "NOT_EVALUATED"
-    elif purity_score >= 85:
-        rating = "PURE"
-    elif purity_score >= 65:
-        rating = "NEAR_PURE"
-    elif purity_score >= 40:
-        rating = "SUSPICIOUS"
-    else:
-        rating = "CONTAMINATED"
-
-    return purity_score, rating, findings, flags
 
 
 @app.get("/claims/{claim_id}/quality", response_model=schemas.QualityProfileResponse)
@@ -1002,6 +1001,7 @@ def get_claim_quality(claim_id: str, db: Session = Depends(get_db)):
 
 # --- Audit & History Read Models (Slice G) ---
 
+
 @app.get("/audit", response_model=list[schemas.AuditLogResponse])
 def list_audit_logs(
     entity_type: str | None = None,
@@ -1020,81 +1020,31 @@ def list_audit_logs(
     return query.order_by(models.AuditLog.created_at.desc()).limit(limit).all()
 
 
-@app.post("/api/audit/log", response_model=schemas.AuditLogResponse)
-def record_audit_log(log_request: schemas.AuditLogCreate, db: Session = Depends(get_db)):
-    """
-    Records an audit log and enforces strict state-machine guard rails.
-    """
-    if log_request.entity_type == "SemanticClaim":
-        entity = db.query(models.SemanticClaim).filter(models.SemanticClaim.id == log_request.entity_id).first()
-        if not entity:
-            raise HTTPException(status_code=404, detail="Entity not found")
-            
-        if log_request.previous_state and entity.epistemic_state != log_request.previous_state:
-            raise HTTPException(
-                status_code=400, 
-                detail=f"Invalid transition: previous_state '{log_request.previous_state}' does not match current state '{entity.epistemic_state}'"
-            )
-            
-        # Enforce valid transitions for SemanticClaim epistemic_state
-        # Example transitions: PROPOSED -> LOCK_INTERNAL_RESULT
-        valid_transitions = {
-            "NOT_EVALUATED": ["PROPOSED"],
-            "PROPOSED": ["LOCK_INTERNAL_RESULT", "REJECTED"],
-            "LOCK_INTERNAL_RESULT": ["REJECTED"]
-        }
-        
-        if log_request.previous_state and log_request.new_state:
-            allowed = valid_transitions.get(log_request.previous_state, [])
-            if log_request.new_state not in allowed:
-                raise HTTPException(
-                    status_code=400,
-                    detail=f"Invalid state transition from {log_request.previous_state} to {log_request.new_state}"
-                )
-                
-        if log_request.new_state:
-            entity.epistemic_state = log_request.new_state
-
-    elif log_request.entity_type == "ResearchRun":
-        entity = db.query(models.ResearchRun).filter(models.ResearchRun.id == log_request.entity_id).first()
-        if not entity:
-            raise HTTPException(status_code=404, detail="Entity not found")
-            
-        if log_request.previous_state and entity.status != log_request.previous_state:
-            raise HTTPException(
-                status_code=400, 
-                detail=f"Invalid transition: previous_state '{log_request.previous_state}' does not match current status '{entity.status}'"
-            )
-            
-        if log_request.new_state:
-            entity.status = log_request.new_state
-
-    new_log = models.AuditLog(
-        id=f"aud_{uuid.uuid4().hex[:8]}",
-        entity_id=log_request.entity_id,
-        entity_type=log_request.entity_type,
-        action=log_request.action,
-        previous_state=log_request.previous_state,
-        new_state=log_request.new_state,
-        actor=log_request.actor
-    )
-    db.add(new_log)
-    db.commit()
-    db.refresh(new_log)
-    return new_log
-
-
 @app.get("/claims/{claim_id}/history", response_model=schemas.ClaimHistoryResponse)
 def get_claim_history(claim_id: str, db: Session = Depends(get_db)):
     """
     Returns the complete history and revision timeline of a SemanticClaim.
     """
-    claim = db.query(models.SemanticClaim).filter(models.SemanticClaim.id == claim_id).first()
+    claim = (
+        db.query(models.SemanticClaim)
+        .filter(models.SemanticClaim.id == claim_id)
+        .first()
+    )
     if not claim:
         raise HTTPException(status_code=404, detail="Claim not found")
 
-    reviews = db.query(models.ReviewDecision).filter(models.ReviewDecision.claim_id == claim_id).order_by(models.ReviewDecision.created_at.desc()).all()
-    audits = db.query(models.AuditLog).filter(models.AuditLog.entity_id == claim_id).order_by(models.AuditLog.created_at.desc()).all()
+    reviews = (
+        db.query(models.ReviewDecision)
+        .filter(models.ReviewDecision.claim_id == claim_id)
+        .order_by(models.ReviewDecision.created_at.desc())
+        .all()
+    )
+    audits = (
+        db.query(models.AuditLog)
+        .filter(models.AuditLog.entity_id == claim_id)
+        .order_by(models.AuditLog.created_at.desc())
+        .all()
+    )
 
     revisions = [
         schemas.ClaimRevisionItem(
@@ -1116,17 +1066,33 @@ def get_claim_history(claim_id: str, db: Session = Depends(get_db)):
     )
 
 
-@app.get("/governance/rules/{rule_code}/history", response_model=schemas.RuleHistoryResponse)
+@app.get(
+    "/governance/rules/{rule_code}/history", response_model=schemas.RuleHistoryResponse
+)
 def get_rule_history(rule_code: str, db: Session = Depends(get_db)):
     """
     Returns the revision history and change proposals for a governance rule.
     """
-    rule = db.query(models.GovernanceRule).filter(models.GovernanceRule.rule_code == rule_code).first()
+    rule = (
+        db.query(models.GovernanceRule)
+        .filter(models.GovernanceRule.rule_code == rule_code)
+        .first()
+    )
     if not rule:
         raise HTTPException(status_code=404, detail="Rule not found")
 
-    revisions = db.query(models.RuleRevision).filter(models.RuleRevision.rule_code == rule_code).order_by(models.RuleRevision.revision_number.desc()).all()
-    proposals = db.query(models.ChangeProposal).filter(models.ChangeProposal.rule_code == rule_code).order_by(models.ChangeProposal.created_at.desc()).all()
+    revisions = (
+        db.query(models.RuleRevision)
+        .filter(models.RuleRevision.rule_code == rule_code)
+        .order_by(models.RuleRevision.revision_number.desc())
+        .all()
+    )
+    proposals = (
+        db.query(models.ChangeProposal)
+        .filter(models.ChangeProposal.rule_code == rule_code)
+        .order_by(models.ChangeProposal.created_at.desc())
+        .all()
+    )
 
     return schemas.RuleHistoryResponse(
         rule_code=rule.rule_code,
@@ -1139,7 +1105,10 @@ def get_rule_history(rule_code: str, db: Session = Depends(get_db)):
 
 # --- AI Execution Traces Read Model (Slice G) ---
 
-@app.get("/runs/{run_id}/ai/traces", response_model=list[schemas.AIExecutionRecordResponse])
+
+@app.get(
+    "/runs/{run_id}/ai/traces", response_model=list[schemas.AIExecutionRecordResponse]
+)
 def get_run_ai_traces(run_id: str, db: Session = Depends(get_db)):
     """
     Returns AI execution traces for a research run, exposing only governed technical metadata.
@@ -1157,7 +1126,11 @@ def get_ai_trace_by_id(trace_id: str, db: Session = Depends(get_db)):
     """
     Returns a specific AI execution record by ID.
     """
-    record = db.query(models.AIExecutionRecord).filter(models.AIExecutionRecord.id == trace_id).first()
+    record = (
+        db.query(models.AIExecutionRecord)
+        .filter(models.AIExecutionRecord.id == trace_id)
+        .first()
+    )
     if not record:
         raise HTTPException(status_code=404, detail="AI trace not found")
     return record
@@ -1171,23 +1144,24 @@ def get_run_reproduction_manifest(run_id: str, db: Session = Depends(get_db)):
     run = db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
     if not run:
         raise HTTPException(status_code=404, detail="Run not found")
-        
+
     return {
         "run_id": run.id,
         "corpus_snapshot": run.corpus_snapshot,
         "methodology_revision": run.methodology_revision,
         "tools": [
             {"tool": "TanzilAdapter", "version": "1.0.0"},
-            {"tool": "QACAdapter", "version": "1.0.0"}
+            {"tool": "QACAdapter", "version": "1.0.0"},
         ],
         "ai_model": "pydantic-ai-v1 (Simulated/Local)",
         "gate_reports": [],
         "reproduction_level": "REPRODUCTION_MANIFEST_COMPLETE",
-        "replay_guarantee": "NOT_EXACT_AI_REPLAY"
+        "replay_guarantee": "NOT_EXACT_AI_REPLAY",
     }
 
 
 # --- Operational / Health ---
+
 
 @app.get("/operations/health")
 def get_system_health():
@@ -1204,14 +1178,15 @@ def get_system_health():
     }
 
 
-
 # Globally add 400, 401, 403, 404, 409 responses for OpenAPI schema validation
 for route in app.routes:
     if hasattr(route, "responses"):
-        route.responses.update({
-            400: {"description": "Bad Request"},
-            401: {"description": "Unauthorized"},
-            403: {"description": "Forbidden"},
-            404: {"description": "Not Found"},
-            409: {"description": "Conflict"}
-        })
+        route.responses.update(
+            {
+                400: {"description": "Bad Request"},
+                401: {"description": "Unauthorized"},
+                403: {"description": "Forbidden"},
+                404: {"description": "Not Found"},
+                409: {"description": "Conflict"},
+            }
+        )

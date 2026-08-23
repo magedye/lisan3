@@ -2,7 +2,15 @@ from typing import Any
 
 from sqlalchemy.orm import Session
 
-from backend.domain.models import CorpusSnapshot, GateReport, ResearchRun, SemanticClaim
+from backend.domain.models import (
+    CorpusSnapshot,
+    DependencyRecord,
+    ResearchRun,
+    ReviewDecision,
+    SemanticClaim,
+)
+from backend.domain.services.corpus.authority import is_production_validated
+from backend.domain.services.gates import INTERNAL_LOCK, PURITY_CHECK, has_valid_gate
 
 
 class SemanticRegistryAdmissionPolicy:
@@ -26,8 +34,6 @@ class SemanticRegistryAdmissionPolicy:
                 f"Claim review state is '{claim.review_state}', expected 'APPROVED'"
             )
         else:
-            from backend.domain.models import ReviewDecision
-
             latest_review = (
                 db.query(ReviewDecision)
                 .filter(
@@ -56,6 +62,7 @@ class SemanticRegistryAdmissionPolicy:
             .filter(ResearchRun.id == claim.research_run_id)
             .first()
         )
+        snapshot = None
         if not run:
             reasons.append("Claim is not linked to a valid ResearchRun")
         else:
@@ -70,63 +77,43 @@ class SemanticRegistryAdmissionPolicy:
                 reasons.append(
                     f"CorpusSnapshot validation_status is '{snapshot.validation_status}', expected 'VALIDATED'"
                 )
-            elif not snapshot.canonical_text_hash or snapshot.canonical_text_hash == "UNKNOWN":
+            elif not is_production_validated(snapshot):
                 reasons.append(
-                    "CorpusSnapshot validation_status is 'VALIDATED' but canonical_text_hash is missing or 'UNKNOWN'"
+                    "CorpusSnapshot is not authority-verified and production-active"
                 )
 
-            # Ensure the claim's corpus snapshot dependency matches the run's snapshot
-            from backend.domain.models import DependencyRecord
-            claim_snapshot_deps = db.query(DependencyRecord).filter(
-                DependencyRecord.dependent_claim_id == claim.id,
-                DependencyRecord.dependency_type == "CORPUS_SNAPSHOT"
-            ).all()
-            
-            if claim_snapshot_deps:
-                for dep in claim_snapshot_deps:
-                    if dep.dependency_ref != run.corpus_snapshot:
-                        reasons.append(
-                            f"Claim CORPUS_SNAPSHOT dependency '{dep.dependency_ref}' does not match ResearchRun snapshot '{run.corpus_snapshot}'"
-                        )
+            claim_snapshot_dependencies = (
+                db.query(DependencyRecord)
+                .filter(
+                    DependencyRecord.dependent_claim_id == claim.id,
+                    DependencyRecord.dependency_type == "CORPUS_SNAPSHOT",
+                )
+                .all()
+            )
+            if len(claim_snapshot_dependencies) != 1:
+                reasons.append("Claim must have exactly one CORPUS_SNAPSHOT dependency")
+            elif claim_snapshot_dependencies[0].dependency_ref != run.corpus_snapshot:
+                reasons.append(
+                    f"Claim CORPUS_SNAPSHOT dependency '{claim_snapshot_dependencies[0].dependency_ref}' does not match ResearchRun snapshot '{run.corpus_snapshot}'"
+                )
 
             # 5. Blind Lab Contamination
             # We assume contamination sets status to LOCK_BLOCKED earlier, but checking here adds defense-in-depth.
             # 6. Required GateReport results
-            lock_gate = (
-                db.query(GateReport)
-                .filter(
-                    GateReport.research_run_id == run.id,
-                    GateReport.gate_code == "INTERNAL_LOCK",
-                    GateReport.status == "PASSED",
-                )
-                .first()
-            )
-            if not lock_gate:
+            if not has_valid_gate(db, run.id, INTERNAL_LOCK):
                 reasons.append("Missing PASSED GateReport for 'INTERNAL_LOCK'")
-                
-            purity_gate = (
-                db.query(GateReport)
-                .filter(
-                    GateReport.research_run_id == run.id,
-                    GateReport.gate_code == "PURITY_CHECK",
-                    GateReport.status == "PASSED",
-                )
-                .first()
-            )
-            if not purity_gate:
+            if not has_valid_gate(db, run.id, PURITY_CHECK):
                 reasons.append("Missing required PASSED GateReport for 'PURITY_CHECK'")
 
         # Fixture/Test Registry invariant
-        if (
-            run
-            and run.target_contract.startswith("test_fixture_")
-            or (snapshot and snapshot.canonical_text_hash == "synthetic")
+        if (run and run.target_contract.startswith("test_fixture_")) or (
+            snapshot and snapshot.fixture_only
         ):
             reasons.append(
                 "Synthetic fixtures and tests cannot be admitted to production registry"
             )
 
-        if len(reasons) > 0:
+        if reasons:
             return {"status": "NOT_ELIGIBLE", "reasons": reasons}
 
         return {"status": "ELIGIBLE", "reasons": []}

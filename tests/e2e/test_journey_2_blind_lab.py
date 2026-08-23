@@ -1,5 +1,6 @@
-from playwright.sync_api import Page, expect
 import re
+
+from playwright.sync_api import Page, expect
 
 
 def test_journey_2_blind_lab(page: Page, e2e_server: dict):
@@ -13,8 +14,10 @@ def test_journey_2_blind_lab(page: Page, e2e_server: dict):
     page.goto(base_url)
     page.fill("input[placeholder='e.g. ضرب']", "كتب")
     page.click("button:has-text('Search')")
-    expect(page.locator("h3:has-text('Insufficient Evidence')")).to_be_visible(timeout=10000)
-    
+    expect(page.locator("h3:has-text('Insufficient Evidence')")).to_be_visible(
+        timeout=10000
+    )
+
     page.click("button:has-text('Start Research Run')")
     expect(page).to_have_url(re.compile(r".*/run/.*"))
 
@@ -29,14 +32,19 @@ def test_journey_2_blind_lab(page: Page, e2e_server: dict):
     # 2. Preflight Isolation
     expect(page.locator("text=Isolation Preflight Required")).to_be_visible()
     page.click("button:has-text('Start Preflight Isolation')")
-    
+
     # Wait for reload and verify isolation status
-    expect(page.locator("span", has_text="Isolation: CLEAN")).to_be_visible(timeout=10000)
+    expect(page.locator("span", has_text="Isolation: CLEAN")).to_be_visible(
+        timeout=10000
+    )
 
     # 3. Add observation
     page.fill("input[placeholder='e.g. past tense verb, pattern fa\\'ala']", "كُتِبَ")
-    page.fill("input[placeholder='e.g. transitive, takes direct object']", "فعل ماض مبني للمجهول")
-    page.once("dialog", lambda dialog: dialog.accept()) # accept the success alert
+    page.fill(
+        "input[placeholder='e.g. transitive, takes direct object']",
+        "فعل ماض مبني للمجهول",
+    )
+    page.once("dialog", lambda dialog: dialog.accept())  # accept the success alert
     page.click("button:has-text('Save Observation')")
 
     # Wait for the observation to be processed
@@ -44,8 +52,8 @@ def test_journey_2_blind_lab(page: Page, e2e_server: dict):
 
     # 4. Attempt prohibited semantic read
     page.click("button:has-text('Simulate Prohibited Semantic Read')")
-    
+
     # 5. Verify Isolation Remains CLEAN since the backend blocked the read
-    expect(page.locator("span", has_text="Isolation: CLEAN")).to_be_visible(timeout=10000)
-
-
+    expect(page.locator("span", has_text="Isolation: CLEAN")).to_be_visible(
+        timeout=10000
+    )

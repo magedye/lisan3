@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 from fastapi.openapi.utils import get_openapi
 
@@ -13,9 +14,15 @@ def export_openapi():
         description=app.description,
         routes=app.routes,
     )
-    with open("contracts/api/openapi.json", "w") as f:
-        json.dump(openapi_schema, f, indent=2)
-    print("OpenAPI spec generated at contracts/api/openapi.json")
+    rendered = json.dumps(openapi_schema, indent=2, ensure_ascii=False) + "\n"
+    targets = (
+        Path("contracts/api/openapi.json"),
+        Path("frontend/openapi.json"),
+    )
+    for target in targets:
+        with target.open("w", encoding="utf-8", newline="\n") as output:
+            output.write(rendered)
+        print(f"OpenAPI spec generated at {target.as_posix()}")
 
 
 if __name__ == "__main__":

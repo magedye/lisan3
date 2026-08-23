@@ -1,9 +1,16 @@
+import hashlib
 import uuid
 
 from sqlalchemy.orm import Session
 
 from backend.domain.models import CorpusOccurrence, CorpusSnapshot
 from backend.domain.services.corpus.alignment import CrossSourceAligner
+from backend.domain.services.corpus.authority import (
+    ARTIFACT_PRESENT,
+    CANONICAL_ACTIVATION_PENDING,
+    IMPORT_VALIDATED,
+    get_canonical_admission,
+)
 from backend.domain.services.corpus.qac import QACAdapter
 from backend.domain.services.corpus.tanzil import TanzilAdapter
 
@@ -30,18 +37,28 @@ class CorpusImporter:
 
         # 3. Create Snapshot
         snapshot_id = f"snap_{uuid.uuid4().hex[:8]}"
-        text_hash = expected_tanzil_hash or "UNKNOWN"
-        val_status = "VALIDATED" if text_hash not in (None, "", "UNKNOWN", "placeholder", "synthetic", "unverified") else "UNVERIFIED"
+        actual_text_hash = hashlib.sha256(tanzil_raw.encode("utf-8")).hexdigest()
+        admission = get_canonical_admission("TANZIL_QURAN_UTHMANI")
+        if admission is None:
+            raise ValueError("Tanzil has no canonical admission record")
 
         snapshot = CorpusSnapshot(
             id=snapshot_id,
             canonical_text_source="TANZIL_QURAN_UTHMANI",
             canonical_text_version="v1.0.2",
-            canonical_text_hash=text_hash,
+            canonical_text_hash=actual_text_hash,
             structural_source="QAC_MORPHOLOGY_SYNTAX",
             structural_source_version="v0.4",
             import_revision="v1",
-            validation_status=val_status,
+            validation_status="UNVERIFIED",
+            source_role_status=admission.source_role_status,
+            artifact_presence_status=ARTIFACT_PRESENT,
+            expected_canonical_text_hash=admission.expected_hash,
+            hash_verification_status=admission.artifact_verification_status,
+            import_validation_status=IMPORT_VALIDATED,
+            activation_status=CANONICAL_ACTIVATION_PENDING,
+            artifact_provenance="TEST_FIXTURE_INPUT",
+            fixture_only=True,
         )
         db.add(snapshot)
 
