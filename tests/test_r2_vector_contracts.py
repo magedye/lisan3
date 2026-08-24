@@ -208,9 +208,7 @@ def test_handoff_contract_rejects_invalid_hashes_and_checkout_paths():
     with pytest.raises(ValidationError, match="SHA-256"):
         governed_manifest(artifact_sha256="g" * 64)
     with pytest.raises(ValidationError, match="immutable artifact reference"):
-        governed_manifest(
-            artifact_location="D:/APP/tafseer/LISAN-Quran-Embedding/exports/model"
-        )
+        governed_manifest(artifact_location="D:/external-checkout/exports/model")
 
 
 def test_handoff_contract_requires_metrics_for_every_supported_space():
