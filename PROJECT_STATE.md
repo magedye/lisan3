@@ -9,8 +9,10 @@ State context only. Canonical repository contracts and runtime evidence remain a
 - R1 remediation baseline: `8a4a8884ac9b3ce353ed00c0948cf878ff8daa40`
 - V3 remediation implementation commit: `1deab3251ac1dc53ef772d10f99c9fd32284e557`
 - Independently reviewed V3 candidate: `6bb6505484dd649d092032a36d456f9f7fba5da1`
-- Review provenance: fresh independent read-only review in a clean detached checkout of that exact SHA.
-- This state record is post-review administrative history. Any later state-only commit does not replace or extend the independently reviewed V3 candidate.
+- V3 review provenance: fresh independent read-only review in a clean detached checkout of that exact SHA.
+- Independently reviewed R1 candidate: `a0d10d7fd5ff8845d3071b7e68f1500f92fd9563`
+- R1 review provenance: fresh focused independent read-only review in a clean detached checkout of that exact SHA.
+- This state record is post-review administrative history. Any later state-only commit does not replace or extend either independently reviewed candidate.
 - Remote publication: not authorized and not performed
 - Owner-added untracked files are intentionally preserved and excluded from the candidate
 
@@ -20,12 +22,13 @@ State context only. Canonical repository contracts and runtime evidence remain a
 - V3 independent state: `V3_INDEPENDENTLY_CONFIRMED`
 - V3 confirmation applies only to: `6bb6505484dd649d092032a36d456f9f7fba5da1`
 - V4 entry: `V4_ENTRY_UNBLOCKED_NOT_STARTED`
-- R1: `R1_IMPLEMENTED_VERIFIED_AWAITING_INDEPENDENT_REVIEW`
+- R1: `R1_INDEPENDENTLY_CONFIRMED`
+- R1 confirmation applies only to: `a0d10d7fd5ff8845d3071b7e68f1500f92fd9563`
 - R2: `NOT_STARTED`
 - R3: `NOT_STARTED`
 - `V4_COMPLETE`, `TECHNICALLY_RELEASE_READY`, and `RELEASE_ACCEPTED` are not established.
 
-No implementation thread claim may grant independent confirmation or release acceptance. The recorded V3 status above is the independent review result, not an implementation claim.
+No implementation thread claim may grant independent confirmation or release acceptance. The recorded V3 and R1 independent statuses above are review results, not implementation claims.
 
 ## Hybrid Retrieval Architecture
 
@@ -34,8 +37,8 @@ No implementation thread claim may grant independent confirmation or release acc
 - Activation Gate: `V3_INDEPENDENTLY_CONFIRMED — SATISFIED`
 - V3 confirmation provenance remains limited to: `6bb6505484dd649d092032a36d456f9f7fba5da1`
 - Execution order: `R1 → R2 → R3`
-- Current retrieval phase: `R1_IMPLEMENTED_VERIFIED_AWAITING_INDEPENDENT_REVIEW`
-- R1 was separately authorized and now has implementation-side evidence only; R2 and R3 remain phase-gated.
+- Current retrieval phase: `R1_INDEPENDENTLY_CONFIRMED`
+- R1 is independently confirmed only for its reviewed candidate; R2 and R3 remain `NOT_STARTED` pending separate owner authorization.
 - The R1 graph is a SQLite-derived projection of governed state, rebuildable without mutating canonical sources. NetworkX is in-process and disposable; React Flow is a read-only Knowledge Explorer with a textual provenance fallback. No Vector, embeddings, Qdrant, Neo4j, RDF persistence, or graph server was introduced.
 
 ## Remediation Completed
@@ -75,7 +78,7 @@ No implementation thread claim may grant independent confirmation or release acc
 
 ## Sequencing
 
-- The Hybrid Retrieval canonical contract is durable in Git, recognizes `V3_INDEPENDENTLY_CONFIRMED` as satisfied for its reviewed candidate, and orders work `R1 -> R2 -> R3`.
+- The Hybrid Retrieval canonical contract is durable in Git, recognizes `V3_INDEPENDENTLY_CONFIRMED` and `R1_INDEPENDENTLY_CONFIRMED` as satisfied for their respective reviewed candidates, and orders work `R1 -> R2 -> R3`.
 - It does not establish V4-before-R1 precedence. V4 must be performed on the later actual release candidate and is not a substitute for R1 acceptance.
 - No R1/R2/R3 implementation has begun during documentation reconciliation.
 
@@ -90,8 +93,16 @@ No implementation thread claim may grant independent confirmation or release acc
 - The repository-owned `run_r1_critical_mutations.py` deterministically selects 32 authority-critical mutations across eligibility, Gate/isolation checks, rebuild filtering, run/entity scope, dependency vocabulary, reachability, and presentation authority. Its exact-count and source-fingerprint checks fail closed on profile drift. The focused profile kills every non-equivalent critical mutation; the retained `CLEAN ==` to `CLEAN <=` survivor is equivalent because current Gate evaluation independently requires exact `CLEAN` isolation.
 - Schemathesis 4.25.0 selected both R1 graph operations with the required four checks: 56 generated cases passed, 0 failures, 0 errors. Runtime OpenAPI, both committed OpenAPI files, and regenerated TypeScript bindings match exactly.
 - Ruff passes for every Git-tracked Python file. Pyright reports 0 errors and 144 existing SQLAlchemy typing warnings.
-- This is not independent review, release readiness, R2/R3 activation, or V4 evidence.
+- This implementation-side evidence does not by itself establish independent review, release readiness, R2/R3 activation, or V4 evidence; the separate candidate-bound R1 review result is recorded below.
+
+## Independent R1 Evidence (Candidate-Bound)
+
+- Reviewed candidate: `a0d10d7fd5ff8845d3071b7e68f1500f92fd9563`.
+- A fresh focused read-only review in a clean detached checkout confirmed the change was limited to R1 regression/mutation verification and state artifacts, with no production, R2, or R3 behavior change.
+- The exact reachability regression passed; the focused R1 graph suite passed 19 tests; relevant Blind Lab/isolation coverage passed 3 tests; Ruff passed; Pyright reported 0 errors.
+- The reproducible R1 Cosmic Ray profile selected 32 authority-critical mutations from a 231-mutation universe: 31 killed, 1 independently equivalent survivor, and 0 non-equivalent critical survivors. The previously surviving `read:351 AddNot` reachability mutation was killed.
+- Independent result: `R1_INDEPENDENTLY_CONFIRMED`. This result applies only to the reviewed candidate above and does not establish R2/R3 activation, V4 completion, technical release readiness, or release acceptance.
 
 ## Exact Next Action
 
-Perform a fresh, read-only independent R1 review of the exact committed candidate SHA against the canonical R1 acceptance-to-evidence map. Do not begin R2, R3, or V4 implementation.
+`R2 Vector Discovery acceptance-to-evidence planning and implementation`, only under separate owner authorization. Do not begin R3 or V4 implementation.
