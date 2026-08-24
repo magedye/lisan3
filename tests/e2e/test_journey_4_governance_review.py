@@ -62,7 +62,13 @@ def test_journey_4_governance_review(page: Page, e2e_server: dict):
 
     # 3. Approve ChangeProposal
     expect(page.locator("text=Proposal ID: ")).to_be_visible(timeout=10000)
-    page.click("button:has-text('Approve Proposal')")
+    with page.expect_response(
+        lambda response: response.request.method == "POST"
+        and "/governance/proposals/" in response.url
+        and response.url.endswith("/approve")
+    ) as approval_response:
+        page.click("button:has-text('Approve Proposal')")
+    assert approval_response.value.status == 200
 
     # 4. Verify Rule History shows active revision 2
     page.click("button:has-text('Check History')")
@@ -78,4 +84,3 @@ def test_journey_4_governance_review(page: Page, e2e_server: dict):
     kn_unrelated = page.request.get(f"{e2e_server['api_url']}/knowledge/explorer/clm_gov_unrelated")
     assert kn_unrelated.status == 200
     assert kn_unrelated.json()["freshness_state"] == "CURRENT"
-
