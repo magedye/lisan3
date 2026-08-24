@@ -481,169 +481,32 @@ Production frontend remains Next.js/TypeScript.
 
 ---
 
-## 12. New Canonical Hybrid Retrieval Architecture
+## 12. Hybrid Retrieval Continuity Summary
 
-The owner has saved the canonical document:
+This handoff is continuity context only. It is not a normative source for
+Hybrid Retrieval architecture, tooling adoption, graph policy, vector policy,
+or embedding selection.
+
+The canonical Hybrid Retrieval architecture is:
 
 `docs/canonical/LISAN_HYBRID_KNOWLEDGE_RETRIEVAL_ARCHITECTURE.md`
 
-Status:
+Canonical tooling adoption policy is:
 
-`CANONICAL — APPROVED / EXECUTION_GATED`
+`docs/canonical/LISAN_TOOLING_ADOPTION_REFERENCE.md`
 
-Its governing principle:
+Current continuity state:
 
-> **Retrieval discovers candidates. Evidence resolves them. Governance decides what can become governed knowledge.**
+- Hybrid Retrieval architecture: `CANONICAL — APPROVED / EXECUTION_GATED`.
+- V3 activation gate: satisfied only for independently reviewed candidate
+  `6bb6505484dd649d092032a36d456f9f7fba5da1`.
+- Current retrieval phase: `R1_NOT_STARTED`.
+- High-level order: `R1 → R2 → R3`; each later phase remains gated by verified
+  predecessor phases.
 
-The architecture introduces future:
-
-### R1 — Knowledge Graph Foundation
-
-- SQLite graph projection
-- `KnowledgeNode`
-- `KnowledgeEdge`
-- governed graph vocabulary
-- NetworkX analysis
-- React Flow Knowledge Explorer
-- provenance
-- rebuildability
-
-### R2 — Vector Discovery
-
-- embedding benchmark
-- separate embedding spaces
-- `sqlite-vec` Spike
-- derived vector index
-- candidate neighbor discovery
-- candidate counterevidence discovery
-- provenance
-
-### R3 — Governed Hybrid Retrieval
-
-```text
-Exact Retrieval
-+
-Vector Discovery
-+
-Graph Retrieval
-        ↓
-RetrievalCandidate Set
-        ↓
-EvidenceResolver
-        ↓
-Pydantic AI Runtime
-        ↓
-Hypothesis / Differentiation
-        ↓
-Counterevidence / Falsification
-        ↓
-GateReport
-```
-
-### Activation gate
-
-R1/R2/R3 MUST NOT begin until:
-
-`V3_INDEPENDENTLY_CONFIRMED`
-
----
-
-## 13. Hybrid Retrieval Authority Boundary
-
-Always preserve:
-
-```text
-Vector similarity ≠ semantic evidence
-Graph connectivity ≠ semantic truth
-AI proposal ≠ canonical claim
-Retrieval score ≠ epistemic confidence
-```
-
-Graph and Vector outputs are:
-
-`DERIVED / DISCOVERY`
-
-Canonical/structural exact retrieval remains the source-resolution path.
-
-A Vector/Graph candidate must pass through source resolution, research evaluation, counterevidence/falsification, Gates, and Governance before it can influence governed knowledge.
-
----
-
-## 14. Hybrid Retrieval Tool Decisions
-
-Current intended statuses:
-
-- NetworkX → `ADOPT_NEXT_AFTER_V3`
-- React Flow / `@xyflow/react` → `ADOPT_NEXT_AFTER_V3`
-- sqlite-vec → `APPROVED_FOR_EVALUATION`
-- Embedding model → `TO_BE_SELECTED_BY_BENCHMARK`
-- Qdrant Embedded/Local → `CONDITIONAL_LATER`
-- Qdrant Server → `DO_NOT_ADOPT_NOW`
-- Neo4j → `DO_NOT_ADOPT_NOW`
-- RDFLib → `APPROVED_FOR_EVALUATION`
-- RDF/OWL → `CONDITIONAL_LATER`
-- Protégé → `LAB_ONLY`
-- Haystack/LlamaIndex → `CONDITIONAL_LATER`, external-source retrieval only
-- LangChain → `DO_NOT_ADOPT_NOW`
-- Prolog → `DO_NOT_ADOPT_NOW`
-
-Do not change these statuses from agent preference alone.
-
----
-
-## 15. Embedding Policy
-
-Do not select an embedding model by popularity or intuition.
-
-R2 requires a reproducible benchmark with:
-
-- known close candidates
-- known non-neighbors
-- difficult lexical distinctions
-- contextual outliers
-- candidate counterevidence
-- false-positive traps
-
-Use measurable evaluation such as:
-
-- Recall@K
-- Precision@K
-- MRR
-- nDCG@K
-- False Positive Rate
-
-Do not use one universal embedding space for everything.
-
-Potential spaces include:
-
-- `VERSE_CONTEXT`
-- `STRUCTURAL_PROFILE`
-- `HYPOTHESIS`
-- `CLAIM`
-- `ROOT_CANDIDATE`
-- `EXTERNAL_RESEARCH`
-
-Cross-space similarity must fail closed unless explicitly defined.
-
----
-
-## 16. Knowledge Graph Policy
-
-The graph is a **derived projection**, not a second canonical database.
-
-Initial persistence remains SQLite.
-
-NetworkX is in-process analysis, not persistence.
-
-Do not adopt Neo4j now.
-
-Every graph edge must retain origin/provenance, conceptually distinguishing:
-
-- `DOMAIN_PROJECTION`
-- `GOVERNED_ASSERTION`
-- `DISCOVERY_CANDIDATE`
-
-Candidate graph relations must never be rendered as established canonical knowledge.
+Before any R1/R2/R3 work, read the two canonical documents above together with
+applicable `AGENTS.md` policy. Do not infer architecture, adoption, graph,
+vector, or embedding rules from this handoff.
 
 ---
 

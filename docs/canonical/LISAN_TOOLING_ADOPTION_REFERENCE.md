@@ -25,7 +25,9 @@
 |---|---|
 | `ACTIVE_BASELINE` | معتمد ومستخدم في المشروع الآن |
 | `ADOPT_NEXT` | معتمد مبدئياً ويجب إدخاله عند الوصول إلى مرحلته |
+| `ADOPT_NEXT_AFTER_V3` | Approved only for the next applicable post-V3 phase; it is not globally adopted or available outside that phase. |
 | `APPROVED_FOR_EVALUATION` | يسمح بعمل Spike/تقييم قبل الاعتماد النهائي |
+| `TO_BE_SELECTED_BY_BENCHMARK` | No implementation choice is approved; selection requires the canonical benchmark and evidence process before adoption. |
 | `CONDITIONAL_LATER` | لا يستخدم إلا إذا تحقق Trigger واضح |
 | `LAB_ONLY` | يستخدم للاختبار/التقييم ولا يدخل Runtime الإنتاجي |
 | `PENDING_ADMISSION` | مصدر/أداة مرشحة تحتاج Admission رسمي قبل اعتمادها |
@@ -1244,7 +1246,7 @@ The agent MUST NOT introduce these without demonstrated need and explicit archit
 |---|---|
 | LangGraph | `DO_NOT_ADOPT_NOW` |
 | Instructor | `DO_NOT_ADOPT_NOW` |
-| Qdrant | `DO_NOT_ADOPT_NOW` |
+| Qdrant Server | `DO_NOT_ADOPT_NOW` |
 | Neo4j | `DO_NOT_ADOPT_NOW` |
 | Redis | `DO_NOT_ADOPT_NOW` |
 | Celery | `DO_NOT_ADOPT_NOW` |
@@ -1333,10 +1335,13 @@ Use SQLite/FTS indexes for local retrieval.
 
 ## Phase D — Slices D–G
 
-Adopt as needed:
+React Flow remains `ADOPT_NEXT_AFTER_V3` with activation state
+`V3_GATE_SATISFIED / R1_ALLOWED` for the R1 Knowledge Explorer only; it is
+not an unconditional Phase D adoption and does not activate R2 or R3 tooling.
+
+Adopt as needed within their applicable approved phases:
 
 ```text
-React Flow
 Recharts
 Playwright
 Vitest / Testing Library
