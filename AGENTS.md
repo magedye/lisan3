@@ -46,6 +46,9 @@ Tool adoption:
 Semantic runtime:
 - `skills/lisan-semantic-extraction/SKILL.md`
 
+Hybrid Retrieval:
+- `docs/canonical/LISAN_HYBRID_KNOWLEDGE_RETRIEVAL_ARCHITECTURE.md`
+
 Execution request:
 - `PROMPT/1.MD`
 

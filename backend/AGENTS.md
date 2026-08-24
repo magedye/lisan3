@@ -18,6 +18,10 @@ Current baseline:
 Do not introduce microservices, distributed queues, authentication systems,
 or remote infrastructure without an approved requirement.
 
+For Graph, Vector, Knowledge Explorer, EvidenceResolver, retrieval, or
+hybrid-search changes, read and follow
+`docs/canonical/LISAN_HYBRID_KNOWLEDGE_RETRIEVAL_ARCHITECTURE.md`.
+
 ## Layer Boundaries
 
 Keep HTTP routes thin.

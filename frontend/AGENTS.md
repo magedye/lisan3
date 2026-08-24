@@ -11,6 +11,10 @@ Use the Stitch Golden Prototype as a visual/interaction reference only.
 Do not treat Stitch HTML, fixtures, or prototype state transitions
 as semantic/domain authority.
 
+For Knowledge Explorer, Semantic Differentiation candidate discovery, graph
+visualization, or retrieval-provenance UI changes, read and follow
+`docs/canonical/LISAN_HYBRID_KNOWLEDGE_RETRIEVAL_ARCHITECTURE.md`.
+
 ## Stack
 
 Preserve the approved frontend baseline:

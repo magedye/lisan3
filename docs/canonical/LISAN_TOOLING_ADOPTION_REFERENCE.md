@@ -313,7 +313,9 @@ Backend contract
 
 ## 4.6 React Flow / `@xyflow/react`
 
-**Status:** `ADOPT_NEXT`
+**Adoption Decision:** `ADOPT_NEXT_AFTER_V3`
+
+**Activation State:** `V3_GATE_SATISFIED / R1_ALLOWED`
 
 ### Stage
 
@@ -321,12 +323,8 @@ Knowledge Explorer / Dependency Graph.
 
 ### Role
 
-عرض:
-
-- semantic relationships،
-- dependencies،
-- invalidation paths،
-- provenance relationships.
+Display semantic relationships, dependencies, invalidation paths, and
+provenance relationships.
 
 ### Rule
 
@@ -640,24 +638,23 @@ Prefer deterministic search for canonical Quran evidence.
 
 ---
 
-## 7.2 Qdrant / Vector DB
+## 7.2 Qdrant
 
-**Status:** `DO_NOT_ADOPT_NOW`
+### Qdrant Server
 
-### Reason
+**Adoption Decision:** `DO_NOT_ADOPT_NOW`
 
-Canonical Quran retrieval is:
+Do not introduce a vector server for R1–R3. Canonical Quranic retrieval is
+local, structured, exact, and morphology-sensitive; vector similarity must
+never replace exact Evidence resolution.
 
-- small,
-- structured,
-- exact,
-- morphology-sensitive.
+### Qdrant Embedded / Local
 
-Vector similarity must not replace exact Evidence resolution.
+**Adoption Decision:** `CONDITIONAL_LATER`
 
-### Reconsider for
-
-external literature / candidate discovery only.
+Consider only after a successful `sqlite-vec` R2 evaluation demonstrates a
+concrete local limitation. This is an upgrade path for derived candidate
+discovery, never a canonical Evidence store.
 
 ---
 
@@ -681,6 +678,29 @@ Potential use for:
 Must remain separable from Blind Lab and Source Role Policy.
 
 Do not make either framework the Lisan core architecture.
+
+---
+
+## 7.4 Hybrid Retrieval Tooling
+
+The Hybrid Retrieval architecture contract is authoritative for architecture
+and phase order. This section records adoption policy only.
+
+| Tool or concern | Adoption Decision | Activation or constraint |
+|---|---|---|
+| NetworkX | `ADOPT_NEXT_AFTER_V3` | `V3_GATE_SATISFIED / R1_ALLOWED`; in-process analysis only, not persistence or semantic authority. |
+| `sqlite-vec` | `APPROVED_FOR_EVALUATION` | Evaluate in R2 only, after R1 verification; the derived index must be rebuildable. |
+| Embedding model | `TO_BE_SELECTED_BY_BENCHMARK` | R2 requires a reproducible benchmark; no model is selected by popularity or provider affinity. |
+| RDFLib | `APPROVED_FOR_EVALUATION` | Evaluation/export interoperability only; not R1–R3 runtime inference. |
+| RDF/OWL | `CONDITIONAL_LATER` | No ontology reasoning may create Quranic semantic authority. |
+| Protégé | `LAB_ONLY` | May inspect derived exports; never a production authority path. |
+| LangChain | `DO_NOT_ADOPT_NOW` | Do not introduce it as runtime architecture. |
+| Prolog | `DO_NOT_ADOPT_NOW` | Do not introduce a second inference or authority system. |
+
+Vector embeddings, similarity, Graph projections, traversal, and AI-generated
+candidates remain derived. Exact canonical Evidence resolves conflicts, and
+neither Graph nor Vector outputs may directly establish semantic truth, Gate
+success, or publication state.
 
 ---
 

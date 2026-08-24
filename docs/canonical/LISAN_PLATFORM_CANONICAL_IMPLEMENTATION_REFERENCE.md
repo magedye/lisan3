@@ -2,6 +2,10 @@
 
 *See the [Tooling Adoption Reference](./LISAN_TOOLING_ADOPTION_REFERENCE.md) for canonical rules regarding allowed tools and frameworks.*
 
+Hybrid Retrieval, Knowledge Graph, Vector Discovery, EvidenceResolver, and
+their AI Runtime integration are governed by
+[`LISAN_HYBRID_KNOWLEDGE_RETRIEVAL_ARCHITECTURE.md`](./LISAN_HYBRID_KNOWLEDGE_RETRIEVAL_ARCHITECTURE.md).
+
 ## Product Mission
 Transform the current materials into a single governed, maintainable, testable Lisan application implementation that connects the already-designed Stitch Golden UX to a real governed backend and semantic runtime.
 

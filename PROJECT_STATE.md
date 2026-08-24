@@ -26,6 +26,17 @@ State context only. Canonical repository contracts and runtime evidence remain a
 
 No implementation thread claim may grant independent confirmation or release acceptance. The recorded V3 status above is the independent review result, not an implementation claim.
 
+## Hybrid Retrieval Architecture
+
+- Architecture state: `CANONICAL_APPROVED`
+- Canonical reference: `docs/canonical/LISAN_HYBRID_KNOWLEDGE_RETRIEVAL_ARCHITECTURE.md`
+- Activation Gate: `V3_INDEPENDENTLY_CONFIRMED — SATISFIED`
+- V3 confirmation provenance remains limited to: `6bb6505484dd649d092032a36d456f9f7fba5da1`
+- Execution order: `R1 → R2 → R3`
+- Current retrieval phase: `R1_NOT_STARTED`
+- R1 is activation-allowed only for a separately authorized bounded work package; R2 and R3 remain phase-gated.
+- Documentation reconciliation makes the authority path durable; it does not implement Retrieval, Graph, Vector, embeddings, or any R1/R2/R3 capability.
+
 ## Remediation Completed
 
 - F1: restored canonical Alembic squash `80330541af56`, added reversible forward migration `f4c0a1b2c3d4`, and verified all 19 tables plus every model column from a fresh `base -> head` database. The dedicated migration-parity and E2E startup paths use Alembic rather than `Base.metadata.create_all()`.
@@ -63,10 +74,10 @@ No implementation thread claim may grant independent confirmation or release acc
 
 ## Sequencing
 
-- The Hybrid Retrieval canonical contract activates R1 after `V3_INDEPENDENTLY_CONFIRMED` and orders work `R1 -> R2 -> R3`.
+- The Hybrid Retrieval canonical contract is durable in Git, recognizes `V3_INDEPENDENTLY_CONFIRMED` as satisfied for its reviewed candidate, and orders work `R1 -> R2 -> R3`.
 - It does not establish V4-before-R1 precedence. V4 must be performed on the later actual release candidate and is not a substitute for R1 acceptance.
-- No R1/R2/R3 implementation has begun in this state-reconciliation task.
+- No R1/R2/R3 implementation has begun during documentation reconciliation.
 
 ## Exact Next Action
 
-Prepare and execute a separately authorized R1 Knowledge Graph Foundation work package, using its canonical acceptance-to-evidence map. Do not begin R2, R3, or V4 implementation in that work package.
+After this documentation/governance candidate is accepted, prepare and execute a separately authorized R1 Knowledge Graph Foundation work package using its canonical acceptance-to-evidence map. Do not begin R2, R3, or V4 implementation in that work package.
