@@ -12,11 +12,16 @@
 - [x] Full pytest, Ruff, Pyright, and migration checkpoint
 - [x] Durable governance report and PROJECT_STATE update
 - [x] Coherent candidate commit and clean detached exact-SHA R2 verification
+- [x] External immutable model-artifact handoff contract and fail-closed checks
+- [x] Governance Review E2E root-cause classification and race-free assertion
 - [x] R3 and V4 remain not started
 
 Production model selection, inference, production vector population, API/UI,
 EvidenceResolver, and hybrid orchestration are explicitly deferred.
 
-Candidate: `c64d4531c918c47943b45423ee02d0fc501ad2f6`. The bounded detached R2
-profile passed. Exact-SHA full-suite green is not claimed because the broader
-run had one out-of-scope Governance Review E2E failure.
+Code candidate: `2449ac4db7102a0a62ae9622c6f668bb71602ef8`. Its clean detached
+profile passed: 130 pytest tests, six Playwright journeys, production frontend
+build, Ruff, Pyright (0 errors / 252 existing warnings), migration reversibility,
+and 29/29 authority-critical R2 mutations killed. The next genuine dependency
+is an accepted external model artifact + governed manifest + independent
+model-review evidence; R3 and V4 remain deferred.

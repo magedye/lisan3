@@ -57,6 +57,29 @@ No model weights, downloads, inference implementation, default model,
 production provider, production vector population, production-active index,
 API, UI, OpenAPI change, TypeScript binding, R3 artifact, or V4 work exists.
 
+## Governed external artifact handoff
+
+Future production integration is contract-only and repository-independent.
+`GovernedModelArtifactManifest` requires an immutable `artifact://` reference,
+artifact/tokenizer/config SHA-256 values, model ID/revision/dimension,
+normalization, supported spaces, Quran snapshot/version/hash, benchmark metrics,
+known limitations, license, reproducibility evidence, independent model-review
+evidence, and Blind-Lab/provenance/exposure declarations. It cannot name a
+checkout path, import research Python, invoke training, load weights, or select
+a provider.
+
+The later governed integration must construct decision-bound
+`GovernedModelArtifactRequirements` from accepted authority records, verify the
+exported artifact bytes before loading anything, and reject a missing/evaluation
+manifest, hash mismatch, unsupported revision/dimension/space, incompatible
+normalization/configuration, stale time window, unapproved Blind-Lab state,
+unknown/prohibited provenance or exposure, and mismatched Quran corpus binding.
+All current checks use synthetic artifact bytes and manifests only.
+
+`LISAN-Quran-Embedding` remains an external artifact producer. LISAN3 has no
+runtime path, source, Git, virtual-environment, or experiment-file dependency
+on that checkout.
+
 ## Deferred `LISAN-Quran-Embedding` responsibilities
 
 The separate research track owns:
@@ -67,7 +90,8 @@ The separate research track owns:
 - preprocessing/configuration handoff;
 - benchmark evidence sufficient to change a model from `NOT_ADOPTED`;
 - a governed manifest decision reference that satisfies the production handoff;
-- later production vector population and full R2 acceptance evidence.
+- the evidence that must exist before LISAN3 may begin production vector
+  population and complete R2 acceptance.
 
 The current adapter boundary fails closed without that handoff.
 
@@ -154,35 +178,52 @@ its provenance remain unaffected.
   non-E2E tests passed; the live sqlite-vec Spike passed; all 29 selected
   critical mutations were killed; the frozen benchmark was unchanged; and the
   checkout remained clean;
-- a broader detached full-suite attempt reached 117 passed with one Governance
-  Review E2E failure (`Revision: 1` observed instead of `Revision: 2`). A
-  focused retry then encountered an intermittent Next build setup failure.
-  These signals are outside the changed R2/API/UI surface and were not repaired
-  in this scope; exact-SHA full-suite green is not claimed.
+- clean detached verification of code candidate
+  `2449ac4db7102a0a62ae9622c6f668bb71602ef8`: fresh lockfile dependencies,
+  frontend production build, Ruff, Pyright (0 errors / 252 existing warnings),
+  full pytest (130 passed), all six Playwright E2E journeys, migration parity,
+  and the R2 critical Cosmic Ray profile (291 universe / 29 selected / 29
+  killed / 0 survivors) passed. `pip check` found no broken requirements and
+  production-only `npm audit` reported zero vulnerabilities. The detached
+  checkout had no Git changes after moving generated verification caches outside
+  it.
 
-Schemathesis and OpenAPI/TypeScript regeneration are not applicable because no
-API or contract endpoint was added. Browser E2E/frontend behavior was outside
-the affected surface, but the broad regression attempt and its non-green result
-are recorded above rather than omitted.
+Schemathesis and OpenAPI/TypeScript regeneration remain inapplicable because no
+API or OpenAPI contract endpoint was added.
+
+## Governance Review E2E signal
+
+Classification: `TEST_DEFECT`.
+
+The governing service already increments `active_revision` and persists the
+new immutable revision in its approval transaction. The E2E test clicked the
+async approval handler and immediately queried history, allowing `Revision: 1`
+to be observed before the `POST .../approve` response completed. The test now
+waits for that exact successful POST response before querying history. Focused
+and full browser suites pass; no product governance behavior was weakened or
+changed.
 
 ## Interim state and remaining dependency
 
 - R2 benchmark: completed;
 - production embedding-model selection: blocked/deferred;
-- model-agnostic infrastructure: implemented and tested in this execution
-  context at candidate `c64d4531c918c47943b45423ee02d0fc501ad2f6`, pending
-  independent candidate review;
+- model-agnostic infrastructure: `IMPLEMENTED` and `TESTED` in code candidate
+  `2449ac4db7102a0a62ae9622c6f668bb71602ef8`, pending independent review;
+- immutable external-model handoff boundary: ready and fail-closed; it does not
+  activate a model or production vector state;
 - production embedding model: not selected;
 - R2: not independently confirmed and not complete;
 - R3: `NOT_STARTED`;
 - V4: `NOT_STARTED`.
 
-Exact next action: obtain fresh independent read-only review of bounded R2
-implementation candidate `c64d4531c918c47943b45423ee02d0fc501ad2f6`. In
-parallel but under its own authority, `LISAN-Quran-Embedding` must resolve the
-governed model handoff before any production vector population or full R2
-closure. The unrelated E2E signal may be triaged separately if authorized. Do
-not begin R3.
+User-requested readiness indicator (not a canonical lifecycle state):
+`LISAN3_MODEL_INDEPENDENT_WORK_COMPLETE`.
+
+Exact next action: obtain an accepted `LISAN-Quran-Embedding` exported model
+artifact + manifest + independent model-review evidence. Then construct the
+governed decision requirements, verify the artifact without source-checkout
+coupling, integrate it into R2, run complete R2 acceptance, and request one
+fresh independent R2 review. Do not begin R3.
 
 ## Official sqlite-vec implementation sources
 

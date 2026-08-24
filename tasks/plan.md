@@ -90,8 +90,22 @@ derived result non-authoritative, and stop before R3 or V4.
   coherent commit(s), and verify the exact SHA in a clean detached worktree.
 
 Candidate `c64d4531c918c47943b45423ee02d0fc501ad2f6` passed the bounded detached
-R2 profile. A broader full-suite attempt reached 117 passed with one unrelated
-Governance Review E2E failure, so exact-SHA full-suite green is not claimed.
+R2 profile. Its historical broader attempt reached 117 passed before the
+Governance Review E2E race was classified; Phase 6 below is the superseding
+model-independent completion checkpoint.
+
+### Phase 6: Model-independent completion checkpoint
+
+- [x] Extend the existing manifest boundary into a portable, immutable external
+  artifact handoff with all required model, corpus, provenance, Blind-Lab,
+  benchmark, reproducibility, and independent-review fields.
+- [x] Test every required fail-closed handoff rejection without loading a model.
+- [x] Classify and correct the Governance Review E2E signal as a test race.
+- [x] Verify code candidate `2449ac4db7102a0a62ae9622c6f668bb71602ef8` in a
+  clean detached checkout: full pytest/E2E, frontend build, migration profile,
+  Ruff, Pyright, and critical mutation profile.
+
+R3 remains `NOT_STARTED`; V4 remains release-candidate-bound and is not run.
 
 ## Risks and Mitigations
 
@@ -108,4 +122,6 @@ Governance Review E2E failure, so exact-SHA full-suite green is not claimed.
 
 `LISAN-Quran-Embedding` owns governed production model selection, exact model
 artifact/revision handoff, per-space decision if approved, and the later
-benchmark evidence that can populate a production-governed vector state.
+benchmark evidence that can populate a production-governed vector state. The
+exact remaining dependency is an accepted immutable exported artifact + governed
+manifest + independent model-review evidence, not the research checkout.
