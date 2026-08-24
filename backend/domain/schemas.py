@@ -383,7 +383,7 @@ class DependencyRecordResponse(BaseSchema):
     model_config = ConfigDict(from_attributes=True)
 
 
-class KnowledgeNode(BaseSchema):
+class LegacyKnowledgeExplorerClaim(BaseSchema):
     claim_id: str
     contract_type: str
     target_expression: str
@@ -395,6 +395,53 @@ class KnowledgeNode(BaseSchema):
     affected_by: list[str]  # List of rules/snapshots that can invalidate this node
 
     model_config = ConfigDict(from_attributes=True)
+
+
+# --- R1 Knowledge Graph read models ---
+class GraphKnowledgeNodeResponse(BaseSchema):
+    node_id: str
+    entity_type: str
+    entity_id: str
+    entity_revision: str
+    projection_revision: str
+    created_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+
+class GraphKnowledgeEdgeResponse(BaseSchema):
+    edge_id: str
+    source_node_id: str
+    edge_type: str
+    target_node_id: str
+    edge_origin: str
+    edge_status: str
+    provenance_ref: str
+    valid_from_revision: str
+    invalidated_at: datetime | None = None
+    presentation_label: str
+
+    model_config = ConfigDict(from_attributes=True)
+
+
+class GraphAnalysisResponse(BaseSchema):
+    node_count: int
+    edge_count: int
+    cycle_node_ids: list[str]
+    reachable_node_ids: list[str]
+
+
+class KnowledgeGraphResponse(BaseSchema):
+    run_id: str
+    projection_revision: str
+    nodes: list[GraphKnowledgeNodeResponse]
+    edges: list[GraphKnowledgeEdgeResponse]
+    analysis: GraphAnalysisResponse
+    authority_notice: str
+
+
+class KnowledgeGraphRebuildResponse(KnowledgeGraphResponse):
+    rebuilt: bool
 
 
 # --- Steward (Slice F) ---

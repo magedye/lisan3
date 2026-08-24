@@ -390,6 +390,46 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/runs/{run_id}/knowledge-graph": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * Get Knowledge Graph
+         * @description Return a Blind-Lab-safe, read-only graph slice for an internally locked run.
+         */
+        get: operations["get_knowledge_graph_runs__run_id__knowledge_graph_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/runs/{run_id}/knowledge-graph/rebuild": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /**
+         * Rebuild Knowledge Graph
+         * @description Explicitly rebuilds the disposable graph projection after Blind Lab release.
+         */
+        post: operations["rebuild_knowledge_graph_runs__run_id__knowledge_graph_rebuild_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/claims/{claim_id}/provenance": {
         parameters: {
             query?: never;
@@ -884,6 +924,58 @@ export interface components {
              */
             created_at: string;
         };
+        /** GraphAnalysisResponse */
+        GraphAnalysisResponse: {
+            /** Node Count */
+            node_count: number;
+            /** Edge Count */
+            edge_count: number;
+            /** Cycle Node Ids */
+            cycle_node_ids: string[];
+            /** Reachable Node Ids */
+            reachable_node_ids: string[];
+        };
+        /** GraphKnowledgeEdgeResponse */
+        GraphKnowledgeEdgeResponse: {
+            /** Edge Id */
+            edge_id: string;
+            /** Source Node Id */
+            source_node_id: string;
+            /** Edge Type */
+            edge_type: string;
+            /** Target Node Id */
+            target_node_id: string;
+            /** Edge Origin */
+            edge_origin: string;
+            /** Edge Status */
+            edge_status: string;
+            /** Provenance Ref */
+            provenance_ref: string;
+            /** Valid From Revision */
+            valid_from_revision: string;
+            /** Invalidated At */
+            invalidated_at?: string | null;
+            /** Presentation Label */
+            presentation_label: string;
+        };
+        /** GraphKnowledgeNodeResponse */
+        GraphKnowledgeNodeResponse: {
+            /** Node Id */
+            node_id: string;
+            /** Entity Type */
+            entity_type: string;
+            /** Entity Id */
+            entity_id: string;
+            /** Entity Revision */
+            entity_revision: string;
+            /** Projection Revision */
+            projection_revision: string;
+            /**
+             * Created At
+             * Format: date-time
+             */
+            created_at: string;
+        };
         /** HypothesisCreate */
         HypothesisCreate: {
             /** Hypothesis Type */
@@ -978,8 +1070,38 @@ export interface components {
              */
             created_at: string;
         };
-        /** KnowledgeNode */
-        KnowledgeNode: {
+        /** KnowledgeGraphRebuildResponse */
+        KnowledgeGraphRebuildResponse: {
+            /** Run Id */
+            run_id: string;
+            /** Projection Revision */
+            projection_revision: string;
+            /** Nodes */
+            nodes: components["schemas"]["GraphKnowledgeNodeResponse"][];
+            /** Edges */
+            edges: components["schemas"]["GraphKnowledgeEdgeResponse"][];
+            analysis: components["schemas"]["GraphAnalysisResponse"];
+            /** Authority Notice */
+            authority_notice: string;
+            /** Rebuilt */
+            rebuilt: boolean;
+        };
+        /** KnowledgeGraphResponse */
+        KnowledgeGraphResponse: {
+            /** Run Id */
+            run_id: string;
+            /** Projection Revision */
+            projection_revision: string;
+            /** Nodes */
+            nodes: components["schemas"]["GraphKnowledgeNodeResponse"][];
+            /** Edges */
+            edges: components["schemas"]["GraphKnowledgeEdgeResponse"][];
+            analysis: components["schemas"]["GraphAnalysisResponse"];
+            /** Authority Notice */
+            authority_notice: string;
+        };
+        /** LegacyKnowledgeExplorerClaim */
+        LegacyKnowledgeExplorerClaim: {
             /** Claim Id */
             claim_id: string;
             /** Contract Type */
@@ -3180,7 +3302,169 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": components["schemas"]["KnowledgeNode"];
+                    "application/json": components["schemas"]["LegacyKnowledgeExplorerClaim"];
+                };
+            };
+            /** @description Bad Request */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Unauthorized */
+            401: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Forbidden */
+            403: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Not Found */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Conflict */
+            409: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Internal Server Error */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+        };
+    };
+    get_knowledge_graph_runs__run_id__knowledge_graph_get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                run_id: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["KnowledgeGraphResponse"];
+                };
+            };
+            /** @description Bad Request */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Unauthorized */
+            401: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Forbidden */
+            403: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Not Found */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Conflict */
+            409: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Internal Server Error */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+        };
+    };
+    rebuild_knowledge_graph_runs__run_id__knowledge_graph_rebuild_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                run_id: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["KnowledgeGraphRebuildResponse"];
                 };
             };
             /** @description Bad Request */

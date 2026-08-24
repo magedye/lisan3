@@ -4,11 +4,13 @@ import enum
 from sqlalchemy import (
     JSON,
     Boolean,
+    CheckConstraint,
     Column,
     DateTime,
     ForeignKey,
     Integer,
     String,
+    UniqueConstraint,
     event,
 )
 from sqlalchemy.orm import relationship
@@ -337,6 +339,114 @@ class DependencyRecord(Base):
     dependency_ref = Column(String, nullable=False)  # e.g. rule_code
     dependency_revision = Column(Integer)
     created_at = Column(DateTime, default=datetime.datetime.utcnow)
+
+
+# --- R1 Knowledge Graph projection ---
+# These tables are derived from the governed records above.  They must never be
+# used as a second source of semantic authority.
+class GraphEdgeOrigin(str, enum.Enum):
+    DOMAIN_PROJECTION = "DOMAIN_PROJECTION"
+    GOVERNED_ASSERTION = "GOVERNED_ASSERTION"
+    DISCOVERY_CANDIDATE = "DISCOVERY_CANDIDATE"
+
+
+class GraphEdgeStatus(str, enum.Enum):
+    ACTIVE = "ACTIVE"
+    INVALIDATED = "INVALIDATED"
+    GOVERNED = "GOVERNED"
+    CANDIDATE = "CANDIDATE"
+
+
+class GraphEdgeType(str, enum.Enum):
+    OCCURS_IN = "OCCURS_IN"
+    SUPPORTS = "SUPPORTS"
+    CHALLENGES = "CHALLENGES"
+    DEPENDS_ON = "DEPENDS_ON"
+    DERIVED_FROM = "DERIVED_FROM"
+    USES_CORPUS = "USES_CORPUS"
+    USES_METHODOLOGY = "USES_METHODOLOGY"
+    EVALUATED_BY = "EVALUATED_BY"
+    INVALIDATED_BY = "INVALIDATED_BY"
+    GENERATED_IN = "GENERATED_IN"
+    NEIGHBOR_OF = "NEIGHBOR_OF"
+    DISTINGUISHED_FROM = "DISTINGUISHED_FROM"
+
+
+class KnowledgeNode(Base):
+    __tablename__ = "knowledge_nodes"
+    __table_args__ = (
+        UniqueConstraint("entity_type", "entity_id", name="uq_knowledge_node_entity"),
+    )
+
+    node_id = Column(String, primary_key=True)
+    entity_type = Column(String, nullable=False)
+    entity_id = Column(String, nullable=False)
+    entity_revision = Column(String, nullable=False)
+    projection_revision = Column(String, nullable=False)
+    created_at = Column(DateTime, nullable=False)
+
+
+class KnowledgeEdge(Base):
+    __tablename__ = "knowledge_edges"
+    __table_args__ = (
+        CheckConstraint(
+            "edge_origin IN ('DOMAIN_PROJECTION', 'GOVERNED_ASSERTION', 'DISCOVERY_CANDIDATE')",
+            name="ck_knowledge_edge_origin",
+        ),
+        CheckConstraint(
+            "edge_status IN ('ACTIVE', 'INVALIDATED', 'GOVERNED', 'CANDIDATE')",
+            name="ck_knowledge_edge_status",
+        ),
+        CheckConstraint(
+            "edge_type IN ('OCCURS_IN', 'SUPPORTS', 'CHALLENGES', 'DEPENDS_ON', "
+            "'DERIVED_FROM', 'USES_CORPUS', 'USES_METHODOLOGY', 'EVALUATED_BY', "
+            "'INVALIDATED_BY', 'GENERATED_IN', 'NEIGHBOR_OF', 'DISTINGUISHED_FROM')",
+            name="ck_knowledge_edge_type",
+        ),
+    )
+
+    edge_id = Column(String, primary_key=True)
+    source_node_id = Column(String, ForeignKey("knowledge_nodes.node_id"), nullable=False)
+    edge_type = Column(String, nullable=False)
+    target_node_id = Column(String, ForeignKey("knowledge_nodes.node_id"), nullable=False)
+    edge_origin = Column(String, nullable=False)
+    edge_status = Column(String, nullable=False)
+    provenance_ref = Column(String, nullable=False)
+    valid_from_revision = Column(String, nullable=False)
+    invalidated_at = Column(DateTime, nullable=True)
+
+
+@event.listens_for(KnowledgeEdge, "before_insert")
+@event.listens_for(KnowledgeEdge, "before_update")
+def enforce_knowledge_edge_authority(_mapper, _connection, edge):
+    """Fail closed when a graph relation lacks governed vocabulary or origin."""
+    valid_types = {item.value for item in GraphEdgeType}
+    valid_origins = {item.value for item in GraphEdgeOrigin}
+    valid_statuses = {item.value for item in GraphEdgeStatus}
+    if edge.edge_type not in valid_types:
+        raise ValueError("Unsupported governed graph edge type")
+    if edge.edge_origin not in valid_origins:
+        raise ValueError("Unsupported graph edge origin")
+    if edge.edge_status not in valid_statuses:
+        raise ValueError("Unsupported graph edge status")
+    if not edge.provenance_ref:
+        raise ValueError("Graph edges require provenance")
+    if edge.edge_origin == GraphEdgeOrigin.DISCOVERY_CANDIDATE.value:
+        if edge.edge_status != GraphEdgeStatus.CANDIDATE.value:
+            raise ValueError("Discovery candidates must remain candidate edges")
+    elif edge.edge_origin == GraphEdgeOrigin.GOVERNED_ASSERTION.value:
+        if edge.edge_status != GraphEdgeStatus.GOVERNED.value:
+            raise ValueError("Governed assertions require governed status")
+    elif edge.edge_status not in {
+        GraphEdgeStatus.ACTIVE.value,
+        GraphEdgeStatus.INVALIDATED.value,
+    }:
+        raise ValueError("Domain projections require an active or invalidated status")
+    if edge.edge_type in {
+        GraphEdgeType.NEIGHBOR_OF.value,
+        GraphEdgeType.DISTINGUISHED_FROM.value,
+    } and edge.edge_origin == GraphEdgeOrigin.DOMAIN_PROJECTION.value:
+        raise ValueError("Semantic neighbor relations cannot be domain projections")
 
 
 # --- Steward (Slice F) ---

@@ -19,7 +19,7 @@ State context only. Canonical repository contracts and runtime evidence remain a
 - V3 independent state: `V3_INDEPENDENTLY_CONFIRMED`
 - V3 confirmation applies only to: `6bb6505484dd649d092032a36d456f9f7fba5da1`
 - V4 entry: `V4_ENTRY_UNBLOCKED_NOT_STARTED`
-- R1: `NOT_STARTED`
+- R1: `R1_IMPLEMENTED_VERIFIED_AWAITING_INDEPENDENT_REVIEW`
 - R2: `NOT_STARTED`
 - R3: `NOT_STARTED`
 - `V4_COMPLETE`, `TECHNICALLY_RELEASE_READY`, and `RELEASE_ACCEPTED` are not established.
@@ -33,9 +33,9 @@ No implementation thread claim may grant independent confirmation or release acc
 - Activation Gate: `V3_INDEPENDENTLY_CONFIRMED — SATISFIED`
 - V3 confirmation provenance remains limited to: `6bb6505484dd649d092032a36d456f9f7fba5da1`
 - Execution order: `R1 → R2 → R3`
-- Current retrieval phase: `R1_NOT_STARTED`
-- R1 is activation-allowed only for a separately authorized bounded work package; R2 and R3 remain phase-gated.
-- Documentation reconciliation makes the authority path durable; it does not implement Retrieval, Graph, Vector, embeddings, or any R1/R2/R3 capability.
+- Current retrieval phase: `R1_IMPLEMENTED_VERIFIED_AWAITING_INDEPENDENT_REVIEW`
+- R1 was separately authorized and now has implementation-side evidence only; R2 and R3 remain phase-gated.
+- The R1 graph is a SQLite-derived projection of governed state, rebuildable without mutating canonical sources. NetworkX is in-process and disposable; React Flow is a read-only Knowledge Explorer with a textual provenance fallback. No Vector, embeddings, Qdrant, Neo4j, RDF persistence, or graph server was introduced.
 
 ## Remediation Completed
 
@@ -78,6 +78,13 @@ No implementation thread claim may grant independent confirmation or release acc
 - It does not establish V4-before-R1 precedence. V4 must be performed on the later actual release candidate and is not a substitute for R1 acceptance.
 - No R1/R2/R3 implementation has begun during documentation reconciliation.
 
+## R1 Implementation-Side Evidence
+
+- Forward migration `b7e4c1d9a5f2` adds `KnowledgeNode` and `KnowledgeEdge` projection storage after the accepted migration head. Fresh migration/model parity passed.
+- Projection/rebuild, provenance, governed vocabulary, candidate non-authority, NetworkX reconstruction, multi-run scope isolation, and Blind Lab graph denial are covered by focused tests and the complete pytest suite.
+- Runtime OpenAPI, committed OpenAPI contracts, generated TypeScript types, React Flow Knowledge Explorer, textual provenance fallback, focused Schemathesis, and Browser E2E were verified on the implementation candidate worktree.
+- This is not independent review, release readiness, R2/R3 activation, or V4 evidence.
+
 ## Exact Next Action
 
-After this documentation/governance candidate is accepted, prepare and execute a separately authorized R1 Knowledge Graph Foundation work package using its canonical acceptance-to-evidence map. Do not begin R2, R3, or V4 implementation in that work package.
+Perform a fresh, read-only independent R1 review of the exact committed candidate SHA against the canonical R1 acceptance-to-evidence map. Do not begin R2, R3, or V4 implementation.

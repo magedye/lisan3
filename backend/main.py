@@ -15,6 +15,12 @@ from .domain.services.gates import (
     has_valid_gate,
     record_gate_evaluation,
 )
+from .domain.services.knowledge_graph import (
+    PROJECTION_REVISION,
+    GraphAccessForbidden,
+    GraphSourceNotFound,
+    KnowledgeGraphService,
+)
 from .domain.services.purity import evaluate_methodological_purity
 from .infrastructure.database import create_db_and_tables, get_db
 
@@ -780,7 +786,9 @@ def execute_steward_command(
 # --- Knowledge & Operations
 
 
-@app.get("/knowledge/explorer/{claim_id}", response_model=schemas.KnowledgeNode)
+@app.get(
+    "/knowledge/explorer/{claim_id}", response_model=schemas.LegacyKnowledgeExplorerClaim
+)
 def get_knowledge_explorer(claim_id: str, db: Session = Depends(get_db)):
     """
     Returns an aggregated read-only view of a given semantic node.
@@ -810,7 +818,7 @@ def get_knowledge_explorer(claim_id: str, db: Session = Depends(get_db)):
     for dep in dependencies:
         affected_by.append(dep.dependency_ref)
 
-    return schemas.KnowledgeNode(
+    return schemas.LegacyKnowledgeExplorerClaim(
         claim_id=claim.id,
         contract_type=claim.contract_type,
         target_expression=run.target_expression if run else "UNKNOWN",
@@ -821,6 +829,65 @@ def get_knowledge_explorer(claim_id: str, db: Session = Depends(get_db)):
         dependencies=dependencies,
         affected_by=affected_by,
     )
+
+
+def _graph_response(run_id: str, db: Session) -> schemas.KnowledgeGraphResponse:
+    nodes, edges, analysis = KnowledgeGraphService.read(db, run_id)
+    return schemas.KnowledgeGraphResponse(
+        run_id=run_id,
+        projection_revision=PROJECTION_REVISION,
+        nodes=[schemas.GraphKnowledgeNodeResponse.model_validate(node) for node in nodes],
+        edges=[
+            schemas.GraphKnowledgeEdgeResponse(
+                edge_id=edge.edge_id,
+                source_node_id=edge.source_node_id,
+                edge_type=edge.edge_type,
+                target_node_id=edge.target_node_id,
+                edge_origin=edge.edge_origin,
+                edge_status=edge.edge_status,
+                provenance_ref=edge.provenance_ref,
+                valid_from_revision=edge.valid_from_revision,
+                invalidated_at=edge.invalidated_at,
+                presentation_label=KnowledgeGraphService.presentation_label(edge),
+            )
+            for edge in edges
+        ],
+        analysis=schemas.GraphAnalysisResponse(**analysis),
+        authority_notice=(
+            "Graph connectivity is derived projection, not semantic truth or "
+            "epistemic confidence."
+        ),
+    )
+
+
+@app.get(
+    "/runs/{run_id}/knowledge-graph", response_model=schemas.KnowledgeGraphResponse
+)
+def get_knowledge_graph(run_id: str, db: Session = Depends(get_db)):
+    """Return a Blind-Lab-safe, read-only graph slice for an internally locked run."""
+    try:
+        return _graph_response(run_id, db)
+    except GraphSourceNotFound as exc:
+        raise HTTPException(status_code=404, detail="Run not found") from exc
+    except GraphAccessForbidden as exc:
+        raise HTTPException(status_code=403, detail=str(exc)) from exc
+
+
+@app.post(
+    "/runs/{run_id}/knowledge-graph/rebuild",
+    response_model=schemas.KnowledgeGraphRebuildResponse,
+)
+def rebuild_knowledge_graph(run_id: str, db: Session = Depends(get_db)):
+    """Explicitly rebuilds the disposable graph projection after Blind Lab release."""
+    try:
+        KnowledgeGraphService.require_read_access(db, run_id)
+        KnowledgeGraphService.rebuild(db)
+        graph = _graph_response(run_id, db)
+        return schemas.KnowledgeGraphRebuildResponse(**graph.model_dump(), rebuilt=True)
+    except GraphSourceNotFound as exc:
+        raise HTTPException(status_code=404, detail="Run not found") from exc
+    except GraphAccessForbidden as exc:
+        raise HTTPException(status_code=403, detail=str(exc)) from exc
 
 
 # --- Provenance API ---

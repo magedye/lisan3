@@ -1886,7 +1886,179 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/KnowledgeNode"
+                  "$ref": "#/components/schemas/LegacyKnowledgeExplorerClaim"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "409": {
+            "description": "Conflict"
+          }
+        }
+      }
+    },
+    "/runs/{run_id}/knowledge-graph": {
+      "get": {
+        "summary": "Get Knowledge Graph",
+        "description": "Return a Blind-Lab-safe, read-only graph slice for an internally locked run.",
+        "operationId": "get_knowledge_graph_runs__run_id__knowledge_graph_get",
+        "parameters": [
+          {
+            "name": "run_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Run Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/KnowledgeGraphResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "409": {
+            "description": "Conflict"
+          }
+        }
+      }
+    },
+    "/runs/{run_id}/knowledge-graph/rebuild": {
+      "post": {
+        "summary": "Rebuild Knowledge Graph",
+        "description": "Explicitly rebuilds the disposable graph projection after Blind Lab release.",
+        "operationId": "rebuild_knowledge_graph_runs__run_id__knowledge_graph_rebuild_post",
+        "parameters": [
+          {
+            "name": "run_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Run Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/KnowledgeGraphRebuildResponse"
                 }
               }
             }
@@ -3624,6 +3796,144 @@
         ],
         "title": "GovernanceRuleResponse"
       },
+      "GraphAnalysisResponse": {
+        "properties": {
+          "node_count": {
+            "type": "integer",
+            "title": "Node Count"
+          },
+          "edge_count": {
+            "type": "integer",
+            "title": "Edge Count"
+          },
+          "cycle_node_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Cycle Node Ids"
+          },
+          "reachable_node_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Reachable Node Ids"
+          }
+        },
+        "type": "object",
+        "required": [
+          "node_count",
+          "edge_count",
+          "cycle_node_ids",
+          "reachable_node_ids"
+        ],
+        "title": "GraphAnalysisResponse"
+      },
+      "GraphKnowledgeEdgeResponse": {
+        "properties": {
+          "edge_id": {
+            "type": "string",
+            "title": "Edge Id"
+          },
+          "source_node_id": {
+            "type": "string",
+            "title": "Source Node Id"
+          },
+          "edge_type": {
+            "type": "string",
+            "title": "Edge Type"
+          },
+          "target_node_id": {
+            "type": "string",
+            "title": "Target Node Id"
+          },
+          "edge_origin": {
+            "type": "string",
+            "title": "Edge Origin"
+          },
+          "edge_status": {
+            "type": "string",
+            "title": "Edge Status"
+          },
+          "provenance_ref": {
+            "type": "string",
+            "title": "Provenance Ref"
+          },
+          "valid_from_revision": {
+            "type": "string",
+            "title": "Valid From Revision"
+          },
+          "invalidated_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Invalidated At"
+          },
+          "presentation_label": {
+            "type": "string",
+            "title": "Presentation Label"
+          }
+        },
+        "type": "object",
+        "required": [
+          "edge_id",
+          "source_node_id",
+          "edge_type",
+          "target_node_id",
+          "edge_origin",
+          "edge_status",
+          "provenance_ref",
+          "valid_from_revision",
+          "presentation_label"
+        ],
+        "title": "GraphKnowledgeEdgeResponse"
+      },
+      "GraphKnowledgeNodeResponse": {
+        "properties": {
+          "node_id": {
+            "type": "string",
+            "title": "Node Id"
+          },
+          "entity_type": {
+            "type": "string",
+            "title": "Entity Type"
+          },
+          "entity_id": {
+            "type": "string",
+            "title": "Entity Id"
+          },
+          "entity_revision": {
+            "type": "string",
+            "title": "Entity Revision"
+          },
+          "projection_revision": {
+            "type": "string",
+            "title": "Projection Revision"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "node_id",
+          "entity_type",
+          "entity_id",
+          "entity_revision",
+          "projection_revision",
+          "created_at"
+        ],
+        "title": "GraphKnowledgeNodeResponse"
+      },
       "HypothesisCreate": {
         "properties": {
           "hypothesis_type": {
@@ -3872,7 +4182,98 @@
         ],
         "title": "IsolationStateResponse"
       },
-      "KnowledgeNode": {
+      "KnowledgeGraphRebuildResponse": {
+        "properties": {
+          "run_id": {
+            "type": "string",
+            "title": "Run Id"
+          },
+          "projection_revision": {
+            "type": "string",
+            "title": "Projection Revision"
+          },
+          "nodes": {
+            "items": {
+              "$ref": "#/components/schemas/GraphKnowledgeNodeResponse"
+            },
+            "type": "array",
+            "title": "Nodes"
+          },
+          "edges": {
+            "items": {
+              "$ref": "#/components/schemas/GraphKnowledgeEdgeResponse"
+            },
+            "type": "array",
+            "title": "Edges"
+          },
+          "analysis": {
+            "$ref": "#/components/schemas/GraphAnalysisResponse"
+          },
+          "authority_notice": {
+            "type": "string",
+            "title": "Authority Notice"
+          },
+          "rebuilt": {
+            "type": "boolean",
+            "title": "Rebuilt"
+          }
+        },
+        "type": "object",
+        "required": [
+          "run_id",
+          "projection_revision",
+          "nodes",
+          "edges",
+          "analysis",
+          "authority_notice",
+          "rebuilt"
+        ],
+        "title": "KnowledgeGraphRebuildResponse"
+      },
+      "KnowledgeGraphResponse": {
+        "properties": {
+          "run_id": {
+            "type": "string",
+            "title": "Run Id"
+          },
+          "projection_revision": {
+            "type": "string",
+            "title": "Projection Revision"
+          },
+          "nodes": {
+            "items": {
+              "$ref": "#/components/schemas/GraphKnowledgeNodeResponse"
+            },
+            "type": "array",
+            "title": "Nodes"
+          },
+          "edges": {
+            "items": {
+              "$ref": "#/components/schemas/GraphKnowledgeEdgeResponse"
+            },
+            "type": "array",
+            "title": "Edges"
+          },
+          "analysis": {
+            "$ref": "#/components/schemas/GraphAnalysisResponse"
+          },
+          "authority_notice": {
+            "type": "string",
+            "title": "Authority Notice"
+          }
+        },
+        "type": "object",
+        "required": [
+          "run_id",
+          "projection_revision",
+          "nodes",
+          "edges",
+          "analysis",
+          "authority_notice"
+        ],
+        "title": "KnowledgeGraphResponse"
+      },
+      "LegacyKnowledgeExplorerClaim": {
         "properties": {
           "claim_id": {
             "type": "string",
@@ -3929,7 +4330,7 @@
           "dependencies",
           "affected_by"
         ],
-        "title": "KnowledgeNode"
+        "title": "LegacyKnowledgeExplorerClaim"
       },
       "ObservationArtifactCreate": {
         "properties": {

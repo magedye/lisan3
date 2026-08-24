@@ -17,7 +17,7 @@ implementation exists.
 
 | Golden capability | Phase | Planned backend/read-model scope | Authority boundary |
 |---|---|---|---|
-| Knowledge Explorer | `R1 — PLANNED / ACTIVATION_ALLOWED_POST_V3` | Graph projection; `KnowledgeNode` / `KnowledgeEdge`; NetworkX analysis; provenance; React Flow visualization | Graph output is derived and read-only. |
+| Knowledge Explorer | `R1 — IMPLEMENTED / VERIFIED_FOR_PROFILE_AWAITING_INDEPENDENT_REVIEW` | Graph projection; `KnowledgeNode` / `KnowledgeEdge`; NetworkX analysis; provenance; React Flow visualization | Graph output is derived and read-only; candidate relations are visibly non-established. |
 | Semantic Differentiation Lab | `R2/R3 — PLANNED` | Vector discovery; embedding-space identity; `RetrievalCandidate`; `EvidenceResolver` | Candidates require governed Evidence resolution. |
 | Purity Detector | `R2/R3 — OPTIONAL_ASSISTANCE_PLANNED` | Exact-source comparison and vector candidate similarity | Vector output is candidate evidence only. |
 | Dependency / Provenance Views | `R1/R3 — PLANNED` | Governed graph projection; graph paths; source-layer provenance | Canonical dependency records remain authoritative. |
