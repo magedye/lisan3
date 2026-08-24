@@ -2,6 +2,7 @@ import uuid
 from datetime import datetime
 from unittest.mock import patch
 
+import networkx as nx
 import pytest
 from fastapi.testclient import TestClient
 from hypothesis import given, settings
@@ -286,6 +287,106 @@ def test_networkx_analysis_reconstructs_from_persisted_projection(graph_sources,
         assert graph.number_of_nodes() == analysis["node_count"]
         assert graph.number_of_edges() == analysis["edge_count"]
         assert graph.graph == {}
+    finally:
+        db.close()
+
+
+def test_reachability_is_exact_and_excludes_unreachable_cross_scope_and_blind_lab_material(
+    graph_sources,
+):
+    db = TestingSessionLocal()
+    try:
+        other_run = models.ResearchRun(
+            id="run_other_reachable",
+            target_contract="LOCAL_MEANING",
+            target_expression="عدل",
+            methodology_revision="method-other",
+            corpus_snapshot="missing-other",
+            authority_context={"source": "test"},
+        )
+        blocked_run = models.ResearchRun(
+            id="run_blind_lab_blocked",
+            target_contract="LOCAL_MEANING",
+            target_expression="قول",
+            methodology_revision="method-blocked",
+            corpus_snapshot="missing-blocked",
+            authority_context={"source": "test"},
+        )
+        db.add_all(
+            [
+                other_run,
+                models.IsolationState(
+                    id="iso_other_reachable",
+                    research_run_id=other_run.id,
+                    target_contract=other_run.target_contract,
+                    corpus_snapshot=other_run.corpus_snapshot,
+                    methodology_reference=other_run.methodology_revision,
+                    allowed_sources=["QURAN_CORPUS"],
+                    is_contaminated="CLEAN",
+                ),
+                models.SemanticClaim(
+                    id="claim_other_reachable",
+                    research_run_id=other_run.id,
+                    contract_type="LOCAL_MEANING",
+                ),
+                blocked_run,
+                models.IsolationState(
+                    id="iso_blind_lab_blocked",
+                    research_run_id=blocked_run.id,
+                    target_contract=blocked_run.target_contract,
+                    corpus_snapshot=blocked_run.corpus_snapshot,
+                    methodology_reference=blocked_run.methodology_revision,
+                    allowed_sources=["QURAN_CORPUS"],
+                    is_contaminated="PRIOR_CONTAMINATED",
+                ),
+                models.SemanticClaim(
+                    id="claim_blind_lab_blocked",
+                    research_run_id=blocked_run.id,
+                    contract_type="LOCAL_MEANING",
+                ),
+            ]
+        )
+        db.commit()
+
+        eligible_run_ids = {graph_sources["run_id"], other_run.id, blocked_run.id}
+        with patch.object(
+            knowledge_graph,
+            "has_valid_gate",
+            side_effect=lambda _db, run_id, _gate: run_id in eligible_run_ids,
+        ):
+            knowledge_graph.KnowledgeGraphService.rebuild(db)
+            persisted_node_ids = {
+                node.node_id for node in db.query(models.KnowledgeNode).all()
+            }
+            nodes, edges, analysis = knowledge_graph.KnowledgeGraphService.read(
+                db, graph_sources["run_id"]
+            )
+
+        scoped_node_ids = {node.node_id for node in nodes}
+        graph = knowledge_graph.KnowledgeGraphService.to_networkx(nodes, edges)
+        run_node_id = "node::RESEARCH_RUN::run_r1"
+        expected_reachable_node_ids = {
+            "node::CORPUS_SNAPSHOT::snap_r1",
+            "node::GATE_REPORT::gate_r1",
+            "node::METHODOLOGY_REFERENCE::method-r1",
+        }
+        unreachable_node_ids = {
+            "node::DEPENDENCY_RECORD::dep_r1",
+            "node::GOVERNANCE_RULE::rule_r1",
+            "node::SEMANTIC_CLAIM::claim_r1",
+        }
+
+        assert "node::RESEARCH_RUN::run_other_reachable" in persisted_node_ids
+        assert "node::SEMANTIC_CLAIM::claim_other_reachable" in persisted_node_ids
+        assert "node::RESEARCH_RUN::run_blind_lab_blocked" not in persisted_node_ids
+        assert "node::SEMANTIC_CLAIM::claim_blind_lab_blocked" not in persisted_node_ids
+        assert "node::RESEARCH_RUN::run_other_reachable" not in scoped_node_ids
+        assert "node::SEMANTIC_CLAIM::claim_other_reachable" not in scoped_node_ids
+        assert unreachable_node_ids <= scoped_node_ids
+        assert set(analysis["reachable_node_ids"]) == expected_reachable_node_ids
+        assert analysis["reachable_node_ids"]
+        assert not unreachable_node_ids.intersection(analysis["reachable_node_ids"])
+        assert set(nx.descendants(graph, run_node_id)) == expected_reachable_node_ids
     finally:
         db.close()
 
