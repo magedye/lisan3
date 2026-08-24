@@ -1,20 +1,18 @@
-# R2 Vector Discovery Checklist
+# R2 Model-Agnostic Vector Infrastructure Checklist
 
-- [x] Benchmark corpus and manifest
-- [x] Candidate-model execution and per-space metrics
-- [ ] Reversible migration and model parity
-- [ ] sqlite-vec derived index and recovery Spike
-- [ ] Provenance, deterministic rebuild, staleness/invalidation
-- [ ] Neighbor and counterevidence candidate discovery
-- [ ] Blind Lab, cross-run, cross-space, and graph-boundary adversarial tests
-- [ ] Explicit API contracts and generated artifacts
-- [ ] Arabic RTL candidate UI and browser E2E
-- [ ] Critical mutation profile
-- [ ] Full R2 phase verification
-- [ ] Candidate commit and clean detached exact-SHA verification
-- [x] PROJECT_STATE evidence update
-- [x] Stop before R3 and V4
+- [x] Canonical continuation permission established
+- [x] Frozen benchmark and `EMBEDDING_MODEL_SELECTION_BLOCKED` preserved
+- [x] Embedding-space and model-handoff contracts
+- [x] Evaluation-only migration and model parity
+- [x] Deterministic rebuild, deletion/recovery, and stale invalidation
+- [x] Cross-space, cross-run, source, and Blind Lab rejection
+- [x] Typed `RetrievalCandidate` non-authority boundary
+- [x] Isolated sqlite-vec correctness/performance Spike
+- [x] Focused Hypothesis and authority-negative tests
+- [x] Full pytest, Ruff, Pyright, and migration checkpoint
+- [x] Durable governance report and PROJECT_STATE update
+- [ ] Coherent candidate commit and clean detached exact-SHA verification
+- [x] R3 and V4 remain not started
 
-Blocked at the authorized stop condition: `EMBEDDING_MODEL_SELECTION_BLOCKED`.
-No runtime/index/API/UI task may proceed until independent architecture review
-resolves the recorded decision boundary.
+Production model selection, inference, production vector population, API/UI,
+EvidenceResolver, and hybrid orchestration are explicitly deferred.

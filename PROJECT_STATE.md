@@ -24,7 +24,10 @@ State context only. Canonical repository contracts and runtime evidence remain a
 - V4 entry: `V4_ENTRY_UNBLOCKED_NOT_STARTED`
 - R1: `R1_INDEPENDENTLY_CONFIRMED`
 - R1 confirmation applies only to: `a0d10d7fd5ff8845d3071b7e68f1500f92fd9563`
-- R2: `NOT_STARTED`
+- R2 benchmark: completed with `EMBEDDING_MODEL_SELECTION_BLOCKED`
+- R2 model-agnostic infrastructure: implementation-side `IMPLEMENTED` and
+  `TESTED`; independent review and complete R2 acceptance are not established
+- Production embedding model: not selected; evaluated models remain `NOT_ADOPTED`
 - R3: `NOT_STARTED`
 - `V4_COMPLETE`, `TECHNICALLY_RELEASE_READY`, and `RELEASE_ACCEPTED` are not established.
 
@@ -37,8 +40,10 @@ No implementation thread claim may grant independent confirmation or release acc
 - Activation Gate: `V3_INDEPENDENTLY_CONFIRMED — SATISFIED`
 - V3 confirmation provenance remains limited to: `6bb6505484dd649d092032a36d456f9f7fba5da1`
 - Execution order: `R1 → R2 → R3`
-- Current retrieval phase: `R1_INDEPENDENTLY_CONFIRMED`
-- R1 is independently confirmed only for its reviewed candidate; R2 and R3 remain `NOT_STARTED` pending separate owner authorization.
+- Current retrieval phase: bounded model-agnostic R2 infrastructure checkpoint
+- R1 is independently confirmed only for its reviewed candidate. The owner
+  separately authorized bounded model-agnostic R2 infrastructure while model
+  selection is deferred; R3 remains `NOT_STARTED`.
 - The R1 graph is a SQLite-derived projection of governed state, rebuildable without mutating canonical sources. NetworkX is in-process and disposable; React Flow is a read-only Knowledge Explorer with a textual provenance fallback. No Vector, embeddings, Qdrant, Neo4j, RDF persistence, or graph server was introduced.
 
 ## Remediation Completed
@@ -80,9 +85,9 @@ No implementation thread claim may grant independent confirmation or release acc
 
 - The Hybrid Retrieval canonical contract is durable in Git, recognizes `V3_INDEPENDENTLY_CONFIRMED` and `R1_INDEPENDENTLY_CONFIRMED` as satisfied for their respective reviewed candidates, and orders work `R1 -> R2 -> R3`.
 - It does not establish V4-before-R1 precedence. V4 must be performed on the later actual release candidate and is not a substitute for R1 acceptance.
-- R1 is independently confirmed. R2 runtime implementation has not begun;
-  only the separately authorized benchmark evaluation described below exists.
-  R3 remains `NOT_STARTED`.
+- R1 is independently confirmed. The separately authorized R2 benchmark and
+  model-agnostic infrastructure checkpoint described below now exist; no
+  production model/vector runtime exists. R3 remains `NOT_STARTED`.
 
 ## R1 Implementation-Side Evidence
 
@@ -114,9 +119,57 @@ No implementation thread claim may grant independent confirmation or release acc
 - Decision: `EMBEDDING_MODEL_SELECTION_BLOCKED`. No default/production model was selected and no thresholds or labels were changed after execution.
 - Two complete cached executions produced byte-identical `results.json` evidence with runner + manifest + corpus input SHA-256 `2c6f22ff2ee31299c0342aa53d097fb1990880decabc56385920b1cb622b9d25` and result SHA-256 `DC2F6F6B353773BA2E1DDFAC618F51B8C21E401E2ED9A8B1A16E89CDCC575B56`.
 - `sqlite-vec==0.1.9` is a development evaluation dependency only. Import compatibility with Python 3.12 / SQLite 3.49.1 was observed, but the R2 persistence/filter/rebuild/recovery/performance Spike was not executed after the authorized model-selection stop condition. Its status remains `APPROVED_FOR_EVALUATION`.
-- No R2 migration, embedding persistence, vector runtime, API, UI, OpenAPI binding, Schemathesis, E2E, or mutation profile was implemented or claimed. R2 is `NOT_READY`; R3 and V4 remain `NOT_STARTED`.
+- At that benchmark stop boundary, no R2 migration, embedding persistence,
+  vector runtime, API, UI, OpenAPI binding, Schemathesis, E2E, or mutation
+  profile had been implemented or claimed. The later model-agnostic
+  infrastructure checkpoint is recorded separately below. R2 was `NOT_READY`;
+  R3 and V4 remained `NOT_STARTED`.
 - Durable evaluation report: `tools/governance-lab/reports/R2_VECTOR_BENCHMARK_DECISION.md`; machine-readable results: `tools/governance-lab/vector-benchmark/r2/results.json`.
+
+## R2 Model-Agnostic Vector Infrastructure Evidence
+
+- The benchmark above remains frozen and unchanged. Production model selection
+  is delegated to `LISAN-Quran-Embedding`; no model weights, inference, default
+  provider, or production vector population was added.
+- Canonical R2 authority permits this bounded continuation because verified R1
+  activates R2 and the R2 scope separately includes embedding-space contracts,
+  sqlite-vec evaluation, index schema/lifecycle, provenance, and tests. Complete
+  R2 acceptance remains unavailable without a qualifying adopted model.
+- Reversible migration `c9e2a7f4b6d1` adds evaluation-only derived embedding
+  persistence. Constraints admit only `BENCHMARK_ONLY` or
+  `SYNTHETIC_EVALUATION` and reject production-eligible state.
+- Provider-independent manifest/adapter contracts have no adapter
+  implementation. Production handoff fails closed without a governed decision
+  reference for the requested space.
+- Deterministic rebuild, deletion/recovery, source/model/config invalidation,
+  current/stale rejection, and all six embedding-space boundaries are tested.
+- Blind Lab checks reject missing isolation, pre-lock, contaminated, ineligible,
+  cross-run, and cross-space access. Blocked access does not mark contamination.
+- `RetrievalCandidate` remains `VECTOR` / `CANDIDATE` /
+  `DERIVED_DISCOVERY_NON_AUTHORITATIVE`; similarity is not confidence and no
+  SemanticClaim, Gate, Internal Lock, review/publication state, or KnowledgeEdge
+  is mutated.
+- sqlite-vec v0.1.9 result: `SQLITE_VEC_EVALUATION_PASSED` for 5,000
+  deterministic 32-dimensional synthetic vectors. Build was 0.627351 seconds;
+  100-query p95 was 52.904200 ms under predeclared 5-second/100-ms limits.
+  Canonical status remains `APPROVED_FOR_EVALUATION`.
+- Focused R2 profile: 30 passed. Full pytest: 118 passed. Fresh migration
+  parity, downgrade/re-upgrade, and `alembic check`: passed. Ruff: passed.
+  Pyright: 0 errors and 144 existing SQLAlchemy-style warnings. pip check and
+  `git diff --check`: passed.
+- Authority-critical Cosmic Ray: 291 universe / 29 selected / 29 killed / 0
+  survivors, bound to vector service SHA-256
+  `3382eed7668bfcaa05c8c9ec77d57881987faab8f205aef80b14e3719edb2799`.
+- Durable report:
+  `tools/governance-lab/reports/R2_MODEL_AGNOSTIC_VECTOR_INFRASTRUCTURE.md`;
+  Spike result: `tools/governance-lab/vector-spike/r2/results.json`.
+- This is implementation-side evidence only. R2 is not independently confirmed
+  or complete; no API/UI/R3/V4 work was performed.
 
 ## Exact Next Action
 
-Independent architecture review of `EMBEDDING_MODEL_SELECTION_BLOCKED`: authorize an expanded candidate set, per-space model selection, or a governed benchmark/threshold revision. Then rerun the exact R2 benchmark before any default-model adoption or vector runtime implementation. Do not begin R3 or V4 implementation.
+Create and clean-detached-verify the coherent bounded R2 infrastructure
+candidate, then obtain fresh independent read-only review of its exact SHA.
+Separately, `LISAN-Quran-Embedding` must resolve the governed production model
+handoff before production vector population or complete R2 acceptance. Do not
+begin R3 or V4 implementation.

@@ -1,87 +1,107 @@
-# Implementation Plan: R2 Vector Discovery
+# Implementation Plan: R2 Model-Agnostic Vector Infrastructure
 
 ## Overview
 
-Implement only R2 candidate discovery on the verified R1 baseline. The vector
-layer is derived, rebuildable, run-scoped, embedding-space-scoped, and
-non-authoritative. Model adoption follows a reproducible Arabic-focused
-benchmark; sqlite-vec remains an evaluation until the recorded Spike evidence
-satisfies the canonical R2 acceptance criteria.
+Continue only the R2 infrastructure that remains valid while production
+embedding-model selection is deferred to `LISAN-Quran-Embedding`. Preserve the
+frozen benchmark decision, use only synthetic/evaluation vectors, keep every
+derived result non-authoritative, and stop before R3 or V4.
+
+## Authority Decision
+
+- Canonical R2 activation follows verified R1; the recorded R1 candidate is
+  independently confirmed and the owner has separately authorized this bounded
+  R2 continuation.
+- The canonical R2 scope separately names embedding-space definitions,
+  sqlite-vec evaluation, index schema/lifecycle, provenance, and tests. Those
+  slices can be implemented without satisfying the full R2 acceptance item that
+  requires an adopted model.
+- `R2_VERIFIED_FOR_PROFILE` remains unavailable while model selection is
+  blocked. No production model, production vector population, API/UI retrieval
+  path, EvidenceResolver, hybrid orchestration, R3, or V4 is in scope.
 
 ## Architecture Decisions
 
-- Preserve the local FastAPI/SQLAlchemy/SQLite modular monolith; no vector
-  server, microservice, Qdrant, or R3 EvidenceResolver.
-- Keep provenance in a normal SQLAlchemy table and nearest-neighbor data in a
-  disposable sqlite-vec virtual table keyed by embedding ID.
-- Fail closed on run, Blind Lab eligibility, embedding space, source revision,
-  model revision, configuration, and index revision mismatches.
-- Return typed `RetrievalCandidate` results marked `VECTOR`, `CANDIDATE`, and
-  `DERIVED_NON_AUTHORITATIVE`; never persist them as KnowledgeEdges.
-- Use fixture/synthetic benchmark labels only as evaluation data, never as
-  Quranic semantic authority.
+- Persist only derived evaluation records through SQLAlchemy/Alembic. Their
+  schema makes synthetic/benchmark provenance, run, embedding space, model
+  identity, source revision/hash, configuration hash, index revision, and stale
+  state explicit.
+- Keep the production model handoff as a provider-independent protocol and
+  manifest-validation boundary. No adapter implementation, weights, inference,
+  download, default model, or production provider is introduced.
+- Fail closed when a governed model decision reference is absent from a
+  production manifest request.
+- Use `sqlite-vec==0.1.9` only in an isolated technical Spike with deterministic
+  synthetic vectors. The Spike result cannot change its canonical
+  `APPROVED_FOR_EVALUATION` status.
+- Every query is explicitly run- and embedding-space-scoped. Cross-space,
+  cross-run, stale, ineligible, contaminated, or pre-lock access is rejected.
+- Return typed candidates labeled `VECTOR`, `CANDIDATE`, and
+  `DERIVED_DISCOVERY_NON_AUTHORITATIVE`; similarity/distance is retrieval
+  metadata, never confidence.
 
 ## Task List
 
-### Phase 1: Benchmark and evaluation contract
+### Phase 1: Authority and frozen evidence
 
-- [x] Task 1: Add a provenance-bearing R2 benchmark corpus, exact model
-  revisions, deterministic metrics, and predeclared selection thresholds.
-- [x] Task 2: Execute all candidate models per embedding space and record the
-  benchmark decision without forcing a winner.
+- [x] Confirm canonical permission for bounded model-agnostic R2 continuation.
+- [x] Preserve the benchmark thresholds, labels, judgments, model results, and
+  `EMBEDDING_MODEL_SELECTION_BLOCKED` decision unchanged.
 
-### Checkpoint: Benchmark
+### Phase 2: Contracts and persistence
 
-- [x] Corpus schema validation and reproducibility test pass.
-- [x] Recall@K, Precision@K, MRR, nDCG@K, and FPR are reported per space.
+- [x] Add provider-independent embedding-space, manifest, adapter, evaluation
+  vector, and typed `RetrievalCandidate` contracts.
+- [x] Add a reversible Alembic migration and derived evaluation-vector model
+  with fail-closed provenance and lifecycle constraints.
 
-### Phase 2: Derived vector foundation
+### Checkpoint: Contract and migration
 
-- [ ] Task 3: Add the reversible R2 migration, embedding provenance model,
-  sqlite-vec loader, and rebuild lifecycle.
-- [ ] Task 4: Add run/space-scoped neighbor and counterevidence discovery with
-  stale/model/config rejection and Blind Lab fail-closed policy.
+- [x] Focused schema/manifest negative paths pass.
+- [x] Fresh Alembic `base -> head`, downgrade/upgrade, model parity, and
+  `alembic check` pass.
 
-### Checkpoint: Backend
+### Phase 3: Lifecycle and isolation
 
-- [ ] Focused model/service/API tests and Hypothesis invariants pass.
-- [ ] Migration from zero, parity, deletion survival, and deterministic rebuild pass.
+- [x] Implement deterministic evaluation-only rebuild, deletion/recovery,
+  model/config invalidation, and stale-vector exclusion.
+- [x] Enforce Blind Lab eligibility, source eligibility, run isolation,
+  embedding-space isolation, and candidate non-authority.
 
-### Phase 3: Contracts and UI
+### Checkpoint: Infrastructure
 
-- [ ] Task 5: Add explicit R2 schemas/routes/errors and regenerate OpenAPI plus
-  TypeScript bindings.
-- [ ] Task 6: Add the bounded Arabic RTL candidate-discovery surface with
-  provenance and non-authority labels, then cover it in Playwright.
+- [x] Focused pytest and Hypothesis invariants pass.
+- [x] Canonical source and R1 graph/claim state remain unchanged under vector
+  rebuild, query, deletion, and blocked access.
 
-### Checkpoint: Integration
+### Phase 4: sqlite-vec Spike and evidence
 
-- [ ] R2 Schemathesis operations pass the four required checks.
-- [ ] Browser journey passes with clean candidate/discovery semantics.
+- [x] Execute isolated synthetic-vector persistence, filtered KNN,
+  deterministic ordering, reopen/recovery, deletion, invalidation, and local
+  performance checks.
+- [x] Record the exact `SQLITE_VEC_EVALUATION_PASSED` or blocker result without
+  promoting sqlite-vec or selecting a model.
 
-### Phase 4: Hardening and candidate
+### Phase 5: Candidate checkpoint
 
-- [ ] Task 7: Add and execute the authority-critical R2 mutation profile.
-- [ ] Task 8: Record sqlite-vec compatibility/performance/recovery evidence,
-  review the change across correctness/readability/architecture/security/
-  performance, and fix only required R2 findings.
-- [ ] Task 9: Run the complete R2 phase profile, update PROJECT_STATE from
-  executed evidence, commit the exact candidate, and repeat verification from
-  a clean detached worktree.
+- [x] Run Ruff, Pyright, full pytest, migration checks, affected mutation
+  checks where justified, and adversarial code review.
+- [ ] Update the durable R2 governance report and `PROJECT_STATE.md`, create
+  coherent commit(s), and verify the exact SHA in a clean detached worktree.
 
 ## Risks and Mitigations
 
 | Risk | Impact | Mitigation |
 |---|---|---|
-| Benchmark labels become semantic authority | High | Explicit fixture/synthetic provenance and non-authority schema fields |
-| Cached vector leaks pre-lock or cross-run material | High | Run-scoped queries, current eligibility checks, stale purge on rebuild, adversarial tests |
-| sqlite-vec extension is unavailable in migration/runtime | High | Pinned package, connection loader, fresh-resolution/migration checks, explicit recovery result |
-| Model/config drift silently changes results | High | Exact model revision/config hash and fail-closed current-profile matching |
-| Similarity appears as confidence | High | `similarity_score` only, authority notice, no confidence field, UI wording tests |
-| R2 relation enters R1 graph truth | High | No KnowledgeEdge writes and graph-count/non-mutation tests |
+| Evaluation tables imply model adoption | High | Evaluation-only provenance and production-ineligible constraints |
+| Cached vectors bypass Blind Lab | High | Current lock/isolation checks on rebuild and every query |
+| Cross-space similarity becomes a universal score | High | Explicit enum plus fail-closed equality validation and negative tests |
+| Model/config drift silently reuses vectors | High | Exact manifest fingerprint and stale invalidation |
+| Candidate score mutates semantic authority | High | Typed non-authority contract and canonical-state immutability tests |
+| sqlite-vec pre-v1 behavior drifts | Medium | Pin 0.1.9, verify actual loaded version, isolate the Spike, retain fallback removal path |
 
-## Open Questions
+## Remaining External Dependency
 
-- `EMBEDDING_MODEL_SELECTION_BLOCKED`: no candidate qualified in every space.
-  Independent architecture review must authorize an expanded model set,
-  per-space model choice, or a governed benchmark/threshold revision.
+`LISAN-Quran-Embedding` owns governed production model selection, exact model
+artifact/revision handoff, per-space decision if approved, and the later
+benchmark evidence that can populate a production-governed vector state.

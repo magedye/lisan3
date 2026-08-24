@@ -1,0 +1,41 @@
+{
+  "canonical_adoption_status": "APPROVED_FOR_EVALUATION",
+  "checks": {
+    "deletion": true,
+    "deterministic_query": true,
+    "failure_recovery": true,
+    "filtered_run_space": true,
+    "model_config_invalidation": true,
+    "persistence_after_reopen": true,
+    "provenance_linkage": true,
+    "rebuild_equivalence": true,
+    "vector_count": true
+  },
+  "embedding_model_selection": "EMBEDDING_MODEL_SELECTION_BLOCKED",
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10",
+    "sqlite": "3.49.1",
+    "sqlite_vec": "v0.1.9"
+  },
+  "observed_performance": {
+    "build_seconds": 0.627351,
+    "query_mean_milliseconds": 33.911764,
+    "query_p95_milliseconds": 52.9042
+  },
+  "performance_passed": true,
+  "predeclared_performance_thresholds": {
+    "max_build_seconds": 5.0,
+    "max_query_p95_milliseconds": 100.0
+  },
+  "production_vector_state": "NOT_CREATED",
+  "profile": {
+    "dimensions": 32,
+    "query_runs": 100,
+    "top_k": 10,
+    "vector_count": 5000
+  },
+  "provenance_class": "SYNTHETIC_EVALUATION",
+  "runner_sha256": "291d72abbc3b50a54c139f30bdc44885470c82a91de223899174e93700a700ab",
+  "status": "SQLITE_VEC_EVALUATION_PASSED"
+}
