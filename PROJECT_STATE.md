@@ -7,22 +7,28 @@ State context only. Canonical repository contracts and runtime evidence remain a
 - Root: `D:\APP\tafseer\lisanapp3`
 - Branch: `main`
 - V3 remediation implementation commit: `1deab3251ac1dc53ef772d10f99c9fd32284e557`
-- Final candidate identity: the commit containing this state file; resolve with `git rev-parse HEAD`
+- Independently reviewed V3 candidate: `6bb6505484dd649d092032a36d456f9f7fba5da1`
+- Review provenance: fresh independent read-only review in a clean detached checkout of that exact SHA.
+- This state record is post-review administrative history. Any later state-only commit does not replace or extend the independently reviewed V3 candidate.
 - Remote publication: not authorized and not performed
 - Owner-added untracked files are intentionally preserved and excluded from the candidate
 
 ## Gate State
 
-- Implementation state: `V3_REMEDIATED_AWAITING_INDEPENDENT_REVIEW`
-- Independent state: `V3_NOT_CONFIRMED`
-- V4 entry: `V4_ENTRY_BLOCKED`
-- V4/R1/R2/R3 have not begun
+- V3 implementation state: `V3_REMEDIATED`
+- V3 independent state: `V3_INDEPENDENTLY_CONFIRMED`
+- V3 confirmation applies only to: `6bb6505484dd649d092032a36d456f9f7fba5da1`
+- V4 entry: `V4_ENTRY_UNBLOCKED_NOT_STARTED`
+- R1: `NOT_STARTED`
+- R2: `NOT_STARTED`
+- R3: `NOT_STARTED`
+- `V4_COMPLETE`, `TECHNICALLY_RELEASE_READY`, and `RELEASE_ACCEPTED` are not established.
 
-No implementation thread claim may grant independent confirmation or release acceptance.
+No implementation thread claim may grant independent confirmation or release acceptance. The recorded V3 status above is the independent review result, not an implementation claim.
 
 ## Remediation Completed
 
-- F1: restored canonical Alembic squash `80330541af56`, added reversible forward migration `f4c0a1b2c3d4`, and verified all 19 tables plus every model column from a fresh `base -> head` database. Runtime/test startup does not use `Base.metadata.create_all()`.
+- F1: restored canonical Alembic squash `80330541af56`, added reversible forward migration `f4c0a1b2c3d4`, and verified all 19 tables plus every model column from a fresh `base -> head` database. The dedicated migration-parity and E2E startup paths use Alembic rather than `Base.metadata.create_all()`.
 - F4: separated source-role approval, artifact presence, expected canonical hash, hash verification, import validation, and production activation. Local/fixture hashes remain `UNVERIFIED` and cannot create production `VALIDATED` snapshots.
 - F5: audit API is read-only; Purity and Internal Lock are derived from current DB evidence; forged/stale/manual GateReports cannot authorize locking, claim creation, isolation release, or publication; unsupported Purity dimensions remain `NOT_EVALUATED` and fail closed.
 - F3: focused Cosmic Ray profiles cover registry admission, Corpus authority, and Gate authority. Latest implementation evidence has zero critical survivors; any retained survivor is documented as equivalent.
@@ -30,30 +36,37 @@ No implementation thread claim may grant independent confirmation or release acc
 - F6: runtime OpenAPI, canonical OpenAPI, and frontend TypeScript bindings are synchronized and reproducible; Schemathesis four-check profile and frontend production build pass.
 - E2E: five Playwright journeys use the production Next.js frontend against FastAPI and isolated file-backed Alembic persistence; teardown leaves no repository Node child process.
 
-## Latest Implementation-Side Evidence
+## Independent V3 Evidence (Candidate-Bound)
 
-- `pytest -q --hypothesis-show-statistics`: 62 passed; Hypothesis properties produced 114 passing examples.
-- `pytest tests/e2e -q`: 5 passed; new repository Node processes after teardown: 0.
-- Alembic fresh `base -> head`: `80330541af56 -> f4c0a1b2c3d4`; 19/19 table parity and exact per-table column parity.
-- Schemathesis 4.25.0, all 32 operations, required four checks: 1,389 generated and passed; 0 failures; 0 errors.
-- Registry Cosmic Ray: 116 total, 113 killed, 3 equivalent survivors, 0 critical survivors.
-- Corpus authority Cosmic Ray: 99 total, 99 killed, 0 survivors.
-- Gate authority Cosmic Ray: 164 total, 163 killed, 1 equivalent survivor, 0 critical survivors.
-- Ruff V3 tracked scope: pass. Exact `ruff check .` is reserved for the clean detached candidate because preserved owner-untracked Python files are outside candidate scope.
-- Pyright: 0 errors, 184 legacy SQLAlchemy typing warnings.
-- `npm ci`: pass, 0 vulnerabilities reported by npm audit; `npm run build`: pass.
-- OpenAPI pair SHA-256: `E4F1B9F9498ED17A606BEC915F070AF26AD58B407E3F8C8177FD5725DF9C2E5D`; regeneration mismatch count: 0.
+- Fresh detached review command profile: 62 pytest tests passed; the five Playwright E2E journeys passed and left no Next start process.
+- Fresh Alembic `base -> head`: `80330541af56 -> f4c0a1b2c3d4`; exact 19/19 model table and column parity.
+- Schemathesis 4.25.0 on a live FastAPI server: all 32 operations, required four checks, 1,389 generated and passed; 0 failures; 0 errors.
+- Cosmic Ray: Registry 116 total / 113 killed / 3 equivalent survivors; Corpus 99 / 99 killed / 0 survivors; Gates 164 / 163 killed / 1 equivalent survivor; 0 critical survivors.
+- Ruff: pass. Pyright: 0 errors and 184 existing SQLAlchemy typing warnings.
+- `npm ci` and production `npm run build`: pass. Runtime OpenAPI, both committed OpenAPI files, and regenerated frontend TypeScript bindings matched exactly.
 
-The complete profile must be rerun in a fresh detached clean checkout of the final candidate commit before handoff.
+## Unresolved Independent Status Axes
 
-## Tool Status Outside This V3 Remediation Gate
-
+- AI profile: governed exploratory runtime only; fake/test-provider execution remains test evidence, not live-AI or methodology-eval verification.
+- Corpus authority: no authority-bound expected canonical hash or production activation is currently evidenced for Tanzil/QAC; fixture/imported snapshots remain unverified and cannot enter production canonical knowledge.
 - Promptfoo: `CONFIGURED_NOT_EXECUTABLE` (configuration exists; CLI and referenced runner are absent).
 - pip-audit: `NOT_CONFIGURED_NOT_EXECUTED`.
 - accessibility/axe profile: `NOT_CONFIGURED_NOT_EXECUTED`.
 
-The canonical V3 phase-gate list does not make these three mandatory for this bounded remediation package; the canonical V4/release profile is broader. Their absence does not grant any V4 status.
+## V4 Entry Plan (Not Started)
+
+- V4 is the release gate, run only on the actual release candidate; it is not granted by V3 confirmation.
+- Establish the V4 candidate identity first, then execute the full project-defined verification, frontend/backend builds, tests, contracts, migrations, critical E2E, security/authorization checks, and accessibility/performance checks where executable.
+- Apply the tooling adoption reference at execution time: full pytest, Hypothesis, Schemathesis, applicable Promptfoo suite, focused Cosmic Ray, Playwright, frontend build, OpenAPI/client sync, Ruff, type checking, pip-audit, npm audit, and accessibility checks. Selected Z3 invariants remain conditional on adoption.
+- Resolve tool availability and applicability before classifying V4: Promptfoo requires a real applicable AI-eval target/baseline; pip-audit and npm audit require executable dependency-audit profiles; accessibility requires an executable baseline. Do not claim tool execution from installation or configuration alone.
+- V4 completion remains blocked until its candidate-bound required evidence is executed and independently assessed. No V4 implementation, release publication, or release acceptance is authorized by this record.
+
+## Sequencing
+
+- The Hybrid Retrieval canonical contract activates R1 after `V3_INDEPENDENTLY_CONFIRMED` and orders work `R1 -> R2 -> R3`.
+- It does not establish V4-before-R1 precedence. V4 must be performed on the later actual release candidate and is not a substitute for R1 acceptance.
+- No R1/R2/R3 implementation has begun in this state-reconciliation task.
 
 ## Exact Next Action
 
-Run a fresh independent, read-only V3 review against the final 40-character candidate SHA. Keep `V4_ENTRY_BLOCKED` unless that separate review grants `V3_INDEPENDENTLY_CONFIRMED`.
+Prepare and execute a separately authorized R1 Knowledge Graph Foundation work package, using its canonical acceptance-to-evidence map. Do not begin R2, R3, or V4 implementation in that work package.
