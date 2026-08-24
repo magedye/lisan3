@@ -1,0 +1,88 @@
+{
+  "schema_version": "R2_BENCHMARK_V1",
+  "authority_notice": "All relevance labels are benchmark fixtures for candidate-discovery evaluation. They are not Quranic semantic evidence, accepted counterevidence, or governed claims.",
+  "provenance": {
+    "fixture_quran_fragments": "Exact text already present in repository tests; retained byte-for-byte and still fixture-only.",
+    "synthetic_cases": "Hand-authored Arabic evaluation fixtures derived from LISAN-HKR-ARCH sections 8, 11, 13, 22, 25, 26, 30, 34, and 38."
+  },
+  "spaces": {
+    "VERSE_CONTEXT": {
+      "documents": [
+        {"id": "vc_basmala", "text": "بِسْمِ اللَّهِ", "provenance": "tests/test_corpus_adapter.py:26", "source_role": "TEST_FIXTURE"},
+        {"id": "vc_staff", "text": "اضرب بعصاك", "provenance": "tests/test_slice_b.py:71", "source_role": "TEST_FIXTURE"},
+        {"id": "vc_staff_synthetic", "text": "أمرٌ باستعمال العصا في فعلٍ مادي", "provenance": "synthetic:r2:v1", "source_role": "SYNTHETIC"},
+        {"id": "vc_writing", "text": "كتب الباحث ملاحظته في سجل التجربة", "provenance": "synthetic:r2:v1", "source_role": "SYNTHETIC"},
+        {"id": "vc_name_trap", "text": "ذكر اسم الباحث في أول التقرير", "provenance": "synthetic:r2:v1", "source_role": "SYNTHETIC"}
+      ],
+      "queries": [
+        {"id": "vc_q1", "text": "سياق الأمر باستعمال العصا", "relevance": {"vc_staff_synthetic": 2, "vc_staff": 1}, "false_positive_traps": ["vc_writing"], "case_types": ["KNOWN_CLOSE", "DIFFICULT_LEXICAL_DISTINCTION"]},
+        {"id": "vc_q2", "text": "افتتاح الكلام باسم الله", "relevance": {"vc_basmala": 2}, "false_positive_traps": ["vc_name_trap"], "case_types": ["CONTEXTUAL_OUTLIER", "FALSE_POSITIVE_TRAP"]}
+      ]
+    },
+    "STRUCTURAL_PROFILE": {
+      "documents": [
+        {"id": "sp_passive", "text": "فعل ماض مبني للمجهول مع حذف الفاعل", "provenance": "synthetic:r2:v1", "source_role": "SYNTHETIC"},
+        {"id": "sp_active", "text": "فعل ماض مبني للمعلوم وفاعله مذكور", "provenance": "synthetic:r2:v1", "source_role": "SYNTHETIC"},
+        {"id": "sp_transitive", "text": "فعل متعد يتطلب مفعولا به ظاهرا", "provenance": "synthetic:r2:v1", "source_role": "SYNTHETIC"},
+        {"id": "sp_nominal", "text": "جملة اسمية من مبتدأ وخبر", "provenance": "synthetic:r2:v1", "source_role": "SYNTHETIC"},
+        {"id": "sp_passive_trap", "text": "باحث سلبي لا يشارك في العمل", "provenance": "synthetic:r2:v1", "source_role": "SYNTHETIC"}
+      ],
+      "queries": [
+        {"id": "sp_q1", "text": "بناء فعلي لا يظهر فيه من قام بالفعل", "relevance": {"sp_passive": 2}, "false_positive_traps": ["sp_passive_trap"], "case_types": ["DIFFICULT_LEXICAL_DISTINCTION", "FALSE_POSITIVE_TRAP"]},
+        {"id": "sp_q2", "text": "تركيب فعلي يطلب مفعولا", "relevance": {"sp_transitive": 2}, "false_positive_traps": ["sp_nominal"], "case_types": ["KNOWN_CLOSE", "KNOWN_NON_NEIGHBOR"]}
+      ]
+    },
+    "HYPOTHESIS": {
+      "documents": [
+        {"id": "hy_knowledge", "text": "قد يدل الجذر على إحاطة المدرك بحقيقة الشيء", "provenance": "synthetic:r2:v1", "source_role": "SYNTHETIC"},
+        {"id": "hy_knowledge_alt", "text": "الفرض البديل أن الدلالة تقتصر على ظهور العلامة دون الإحاطة", "provenance": "synthetic:r2:v1", "source_role": "SYNTHETIC"},
+        {"id": "hy_counter", "text": "يوجد استعمال محتمل لا تتحقق فيه الإحاطة ويهدد الفرضية", "provenance": "synthetic:r2:v1", "source_role": "SYNTHETIC"},
+        {"id": "hy_motion", "text": "قد يدل الجذر على حركة الجسم من موضع إلى موضع", "provenance": "synthetic:r2:v1", "source_role": "SYNTHETIC"},
+        {"id": "hy_certainty_trap", "text": "هذه نتيجة يقينية نهائية لا تحتاج إلى اختبار", "provenance": "synthetic:r2:v1", "source_role": "SYNTHETIC"}
+      ],
+      "queries": [
+        {"id": "hy_q1", "text": "فرضية الإحاطة بحقيقة الشيء", "relevance": {"hy_knowledge": 2, "hy_knowledge_alt": 1}, "false_positive_traps": ["hy_motion"], "case_types": ["KNOWN_CLOSE", "KNOWN_NON_NEIGHBOR"]},
+        {"id": "hy_q2", "text": "ابحث عن احتمال يعارض دعوى الإحاطة", "relevance": {"hy_counter": 2, "hy_knowledge_alt": 1}, "false_positive_traps": ["hy_certainty_trap"], "case_types": ["CANDIDATE_COUNTEREVIDENCE", "FALSE_POSITIVE_TRAP"]}
+      ]
+    },
+    "CLAIM": {
+      "documents": [
+        {"id": "cl_vector", "text": "التشابه المتجهي يقترح مرشحا ولا يثبت حقيقة دلالية", "provenance": "synthetic:r2:v1", "source_role": "SYNTHETIC"},
+        {"id": "cl_vector_bad", "text": "ارتفاع درجة التشابه يثبت صحة الادعاء الدلالي", "provenance": "synthetic:r2:v1", "source_role": "SYNTHETIC"},
+        {"id": "cl_graph", "text": "اتصال عقد الرسم إسقاط مشتق وليس دليلا على الحقيقة", "provenance": "synthetic:r2:v1", "source_role": "SYNTHETIC"},
+        {"id": "cl_exact", "text": "الدليل المقبول يحسم التعارض مع المرشح المشتق", "provenance": "synthetic:r2:v1", "source_role": "SYNTHETIC"},
+        {"id": "cl_score_trap", "text": "حصل النموذج على درجة مرتفعة في اختبار السرعة", "provenance": "synthetic:r2:v1", "source_role": "SYNTHETIC"}
+      ],
+      "queries": [
+        {"id": "cl_q1", "text": "ادعاء يحدد أن المتجه أداة اكتشاف فقط", "relevance": {"cl_vector": 2, "cl_exact": 1}, "false_positive_traps": ["cl_vector_bad"], "case_types": ["KNOWN_CLOSE", "AUTHORITY_BOUNDARY"]},
+        {"id": "cl_q2", "text": "مرشح مضاد لدعوى أن التشابه لا يثبت الحقيقة", "relevance": {"cl_vector_bad": 2}, "false_positive_traps": ["cl_score_trap"], "case_types": ["CANDIDATE_COUNTEREVIDENCE", "FALSE_POSITIVE_TRAP"]}
+      ]
+    },
+    "ROOT_CANDIDATE": {
+      "documents": [
+        {"id": "rc_ilm", "text": "علم: إدراك منظم يتعلق بحقيقة الشيء", "provenance": "synthetic:r2:v1", "source_role": "SYNTHETIC"},
+        {"id": "rc_marifa", "text": "عرف: تعرف الشيء بعلامة أو تمييز", "provenance": "synthetic:r2:v1", "source_role": "SYNTHETIC"},
+        {"id": "rc_darb", "text": "ضرب: إيقاع فعل مادي على شيء", "provenance": "synthetic:r2:v1", "source_role": "SYNTHETIC"},
+        {"id": "rc_kitaba", "text": "كتب: جمع الحروف وتقييدها في نص", "provenance": "synthetic:r2:v1", "source_role": "SYNTHETIC"},
+        {"id": "rc_ilm_trap", "text": "عَلَم: راية مرفوعة للدلالة على مكان", "provenance": "synthetic:r2:v1", "source_role": "SYNTHETIC"}
+      ],
+      "queries": [
+        {"id": "rc_q1", "text": "مرشح جذري في مجال الإدراك والمعرفة", "relevance": {"rc_ilm": 2, "rc_marifa": 1}, "false_positive_traps": ["rc_ilm_trap"], "case_types": ["KNOWN_CLOSE", "DIFFICULT_LEXICAL_DISTINCTION"]},
+        {"id": "rc_q2", "text": "مرشح يصف تدوين الحروف", "relevance": {"rc_kitaba": 2}, "false_positive_traps": ["rc_darb"], "case_types": ["KNOWN_NON_NEIGHBOR", "CONTEXTUAL_OUTLIER"]}
+      ]
+    },
+    "EXTERNAL_RESEARCH": {
+      "documents": [
+        {"id": "er_dictionary", "text": "تعريف معجمي خارجي يقترح معنى أوليا للاختبار", "provenance": "synthetic:r2:v1", "source_role": "EXTERNAL_FIXTURE"},
+        {"id": "er_tafsir", "text": "مادة تفسيرية خارجية تقترح قراءة سياقية", "provenance": "synthetic:r2:v1", "source_role": "EXTERNAL_FIXTURE"},
+        {"id": "er_linguistics", "text": "بحث لساني يقارن البنية الدلالية بين ألفاظ متجاورة", "provenance": "synthetic:r2:v1", "source_role": "EXTERNAL_FIXTURE"},
+        {"id": "er_corpus", "text": "سجل داخلي من Corpus مقبول وليس مصدرا خارجيا", "provenance": "synthetic:r2:v1", "source_role": "SYNTHETIC"},
+        {"id": "er_authority_trap", "text": "المصدر الخارجي يحكم الحقيقة القرآنية مباشرة", "provenance": "synthetic:r2:v1", "source_role": "EXTERNAL_FIXTURE"}
+      ],
+      "queries": [
+        {"id": "er_q1", "text": "دراسة خارجية للمقارنة بين الجيران الدلاليين", "relevance": {"er_linguistics": 2}, "false_positive_traps": ["er_corpus"], "case_types": ["KNOWN_CLOSE", "SOURCE_ROLE"]},
+        {"id": "er_q2", "text": "مصدر خارجي قد يقترح معنى لكنه لا يملك سلطة", "relevance": {"er_dictionary": 2, "er_tafsir": 1}, "false_positive_traps": ["er_authority_trap"], "case_types": ["AUTHORITY_BOUNDARY", "FALSE_POSITIVE_TRAP"]}
+      ]
+    }
+  }
+}

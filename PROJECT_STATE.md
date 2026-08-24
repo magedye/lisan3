@@ -80,7 +80,9 @@ No implementation thread claim may grant independent confirmation or release acc
 
 - The Hybrid Retrieval canonical contract is durable in Git, recognizes `V3_INDEPENDENTLY_CONFIRMED` and `R1_INDEPENDENTLY_CONFIRMED` as satisfied for their respective reviewed candidates, and orders work `R1 -> R2 -> R3`.
 - It does not establish V4-before-R1 precedence. V4 must be performed on the later actual release candidate and is not a substitute for R1 acceptance.
-- No R1/R2/R3 implementation has begun during documentation reconciliation.
+- R1 is independently confirmed. R2 runtime implementation has not begun;
+  only the separately authorized benchmark evaluation described below exists.
+  R3 remains `NOT_STARTED`.
 
 ## R1 Implementation-Side Evidence
 
@@ -103,6 +105,18 @@ No implementation thread claim may grant independent confirmation or release acc
 - The reproducible R1 Cosmic Ray profile selected 32 authority-critical mutations from a 231-mutation universe: 31 killed, 1 independently equivalent survivor, and 0 non-equivalent critical survivors. The previously surviving `read:351 AddNot` reachability mutation was killed.
 - Independent result: `R1_INDEPENDENTLY_CONFIRMED`. This result applies only to the reviewed candidate above and does not establish R2/R3 activation, V4 completion, technical release readiness, or release acceptance.
 
+## R2 Benchmark Evidence and Stop Boundary
+
+- R2 execution baseline: `3a8c77aea1b2b919ca817f9dce3d84e236006702` on `main`; owner files `check_db2.py` and `debug_proxy.py` remained untracked and untouched.
+- The reproducible benchmark covers six separate embedding spaces, 30 candidate documents, 12 queries, all required case classes, explicit fixture/synthetic provenance, and non-authority labels.
+- Evaluated exact revisions of multilingual E5 small, Arabic E5 NLI Matryoshka, and paraphrase multilingual MiniLM; each produced 384-dimensional normalized local CPU embeddings.
+- Macro nDCG@3 was `0.687701`, `0.852049`, and `0.751876` respectively. No candidate satisfied every predeclared per-space threshold. `CLAIM` and `STRUCTURAL_PROFILE` had no qualifying model; the aggregate leader also failed the `ROOT_CANDIDATE` false-positive trap.
+- Decision: `EMBEDDING_MODEL_SELECTION_BLOCKED`. No default/production model was selected and no thresholds or labels were changed after execution.
+- Two complete cached executions produced byte-identical `results.json` evidence with runner + manifest + corpus input SHA-256 `2c6f22ff2ee31299c0342aa53d097fb1990880decabc56385920b1cb622b9d25` and result SHA-256 `DC2F6F6B353773BA2E1DDFAC618F51B8C21E401E2ED9A8B1A16E89CDCC575B56`.
+- `sqlite-vec==0.1.9` is a development evaluation dependency only. Import compatibility with Python 3.12 / SQLite 3.49.1 was observed, but the R2 persistence/filter/rebuild/recovery/performance Spike was not executed after the authorized model-selection stop condition. Its status remains `APPROVED_FOR_EVALUATION`.
+- No R2 migration, embedding persistence, vector runtime, API, UI, OpenAPI binding, Schemathesis, E2E, or mutation profile was implemented or claimed. R2 is `NOT_READY`; R3 and V4 remain `NOT_STARTED`.
+- Durable evaluation report: `tools/governance-lab/reports/R2_VECTOR_BENCHMARK_DECISION.md`; machine-readable results: `tools/governance-lab/vector-benchmark/r2/results.json`.
+
 ## Exact Next Action
 
-`R2 Vector Discovery acceptance-to-evidence planning and implementation`, only under separate owner authorization. Do not begin R3 or V4 implementation.
+Independent architecture review of `EMBEDDING_MODEL_SELECTION_BLOCKED`: authorize an expanded candidate set, per-space model selection, or a governed benchmark/threshold revision. Then rerun the exact R2 benchmark before any default-model adoption or vector runtime implementation. Do not begin R3 or V4 implementation.

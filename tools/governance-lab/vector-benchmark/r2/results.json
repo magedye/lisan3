@@ -1,0 +1,224 @@
+{
+  "schema_version": "R2_BENCHMARK_RESULTS_V1",
+  "authority_notice": "All relevance labels are benchmark fixtures for candidate-discovery evaluation. They are not Quranic semantic evidence, accepted counterevidence, or governed claims.",
+  "input_sha256": "2c6f22ff2ee31299c0342aa53d097fb1990880decabc56385920b1cb622b9d25",
+  "top_k": 3,
+  "normalization": "L2",
+  "complete_candidate_set": true,
+  "results": [
+    {
+      "candidate_id": "multilingual-e5-small",
+      "model_name": "intfloat/multilingual-e5-small",
+      "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+      "embedding_dimension": 384,
+      "spaces": {
+        "CLAIM": {
+          "query_count": 2,
+          "document_count": 5,
+          "recall_at_k": 0.5,
+          "precision_at_k": 0.333333,
+          "mrr": 0.375,
+          "ndcg_at_k": 0.329501,
+          "false_positive_rate": 0.0
+        },
+        "EXTERNAL_RESEARCH": {
+          "query_count": 2,
+          "document_count": 5,
+          "recall_at_k": 1.0,
+          "precision_at_k": 0.5,
+          "mrr": 0.75,
+          "ndcg_at_k": 0.793441,
+          "false_positive_rate": 0.0
+        },
+        "HYPOTHESIS": {
+          "query_count": 2,
+          "document_count": 5,
+          "recall_at_k": 0.5,
+          "precision_at_k": 0.333333,
+          "mrr": 0.5,
+          "ndcg_at_k": 0.521296,
+          "false_positive_rate": 0.0
+        },
+        "ROOT_CANDIDATE": {
+          "query_count": 2,
+          "document_count": 5,
+          "recall_at_k": 1.0,
+          "precision_at_k": 0.5,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.98197,
+          "false_positive_rate": 1.0
+        },
+        "STRUCTURAL_PROFILE": {
+          "query_count": 2,
+          "document_count": 5,
+          "recall_at_k": 0.5,
+          "precision_at_k": 0.166667,
+          "mrr": 0.625,
+          "ndcg_at_k": 0.5,
+          "false_positive_rate": 0.5
+        },
+        "VERSE_CONTEXT": {
+          "query_count": 2,
+          "document_count": 5,
+          "recall_at_k": 1.0,
+          "precision_at_k": 0.5,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "false_positive_rate": 0.5
+        }
+      },
+      "macro": {
+        "recall_at_k": 0.75,
+        "precision_at_k": 0.388889,
+        "mrr": 0.708333,
+        "ndcg_at_k": 0.687701,
+        "false_positive_rate": 0.333333
+      },
+      "qualifies": false
+    },
+    {
+      "candidate_id": "arabic-e5-nli-matryoshka",
+      "model_name": "Omartificial-Intelligence-Space/E5-all-nli-triplet-Matryoshka",
+      "model_revision": "fa55cb14c32088a13bc7af8f8b2149e4da8c9742",
+      "embedding_dimension": 384,
+      "spaces": {
+        "CLAIM": {
+          "query_count": 2,
+          "document_count": 5,
+          "recall_at_k": 0.5,
+          "precision_at_k": 0.333333,
+          "mrr": 0.625,
+          "ndcg_at_k": 0.5,
+          "false_positive_rate": 0.5
+        },
+        "EXTERNAL_RESEARCH": {
+          "query_count": 2,
+          "document_count": 5,
+          "recall_at_k": 1.0,
+          "precision_at_k": 0.5,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.898354,
+          "false_positive_rate": 0.0
+        },
+        "HYPOTHESIS": {
+          "query_count": 2,
+          "document_count": 5,
+          "recall_at_k": 1.0,
+          "precision_at_k": 0.666667,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.98197,
+          "false_positive_rate": 0.0
+        },
+        "ROOT_CANDIDATE": {
+          "query_count": 2,
+          "document_count": 5,
+          "recall_at_k": 1.0,
+          "precision_at_k": 0.5,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.98197,
+          "false_positive_rate": 1.0
+        },
+        "STRUCTURAL_PROFILE": {
+          "query_count": 2,
+          "document_count": 5,
+          "recall_at_k": 1.0,
+          "precision_at_k": 0.333333,
+          "mrr": 0.666667,
+          "ndcg_at_k": 0.75,
+          "false_positive_rate": 0.0
+        },
+        "VERSE_CONTEXT": {
+          "query_count": 2,
+          "document_count": 5,
+          "recall_at_k": 1.0,
+          "precision_at_k": 0.5,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "false_positive_rate": 0.5
+        }
+      },
+      "macro": {
+        "recall_at_k": 0.916667,
+        "precision_at_k": 0.472222,
+        "mrr": 0.881945,
+        "ndcg_at_k": 0.852049,
+        "false_positive_rate": 0.333333
+      },
+      "qualifies": false
+    },
+    {
+      "candidate_id": "paraphrase-multilingual-minilm",
+      "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "model_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+      "embedding_dimension": 384,
+      "spaces": {
+        "CLAIM": {
+          "query_count": 2,
+          "document_count": 5,
+          "recall_at_k": 0.75,
+          "precision_at_k": 0.333333,
+          "mrr": 0.5,
+          "ndcg_at_k": 0.576113,
+          "false_positive_rate": 0.5
+        },
+        "EXTERNAL_RESEARCH": {
+          "query_count": 2,
+          "document_count": 5,
+          "recall_at_k": 0.75,
+          "precision_at_k": 0.333333,
+          "mrr": 0.75,
+          "ndcg_at_k": 0.453171,
+          "false_positive_rate": 0.5
+        },
+        "HYPOTHESIS": {
+          "query_count": 2,
+          "document_count": 5,
+          "recall_at_k": 1.0,
+          "precision_at_k": 0.666667,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.98197,
+          "false_positive_rate": 0.0
+        },
+        "ROOT_CANDIDATE": {
+          "query_count": 2,
+          "document_count": 5,
+          "recall_at_k": 1.0,
+          "precision_at_k": 0.5,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "false_positive_rate": 0.5
+        },
+        "STRUCTURAL_PROFILE": {
+          "query_count": 2,
+          "document_count": 5,
+          "recall_at_k": 0.5,
+          "precision_at_k": 0.166667,
+          "mrr": 0.6,
+          "ndcg_at_k": 0.5,
+          "false_positive_rate": 1.0
+        },
+        "VERSE_CONTEXT": {
+          "query_count": 2,
+          "document_count": 5,
+          "recall_at_k": 1.0,
+          "precision_at_k": 0.5,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "false_positive_rate": 0.0
+        }
+      },
+      "macro": {
+        "recall_at_k": 0.833333,
+        "precision_at_k": 0.416667,
+        "mrr": 0.808333,
+        "ndcg_at_k": 0.751876,
+        "false_positive_rate": 0.416667
+      },
+      "qualifies": false
+    }
+  ],
+  "decision": {
+    "status": "EMBEDDING_MODEL_SELECTION_BLOCKED",
+    "reason": "no candidate satisfied every per-space threshold"
+  }
+}

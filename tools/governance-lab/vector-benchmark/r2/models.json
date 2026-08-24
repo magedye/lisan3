@@ -1,0 +1,48 @@
+{
+  "schema_version": "R2_MODEL_CANDIDATES_V1",
+  "authority_notice": "Candidate model metadata for derived retrieval evaluation only; this file does not establish semantic authority.",
+  "library": "sentence-transformers==6.0.0",
+  "normalization": "L2",
+  "output_dimension": 384,
+  "top_k": 3,
+  "selection_policy": {
+    "required_per_space": {
+      "recall_at_k": 0.9,
+      "mrr": 0.75,
+      "ndcg_at_k": 0.75,
+      "false_positive_rate": 0.5
+    },
+    "precision_at_k": "reported_not_gated because the corpus intentionally has one or two relevant candidates per query while top_k is fixed at three",
+    "material_tie": "block selection when macro nDCG@K differs by less than 0.02, or when the top two differ by less than 0.05 and each leads at least two embedding spaces",
+    "winner": "highest qualifying macro nDCG@K; local footprint is a tie-break only after quality is not materially different"
+  },
+  "candidates": [
+    {
+      "id": "multilingual-e5-small",
+      "model_name": "intfloat/multilingual-e5-small",
+      "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+      "query_prefix": "query: ",
+      "document_prefix": "passage: ",
+      "trust_remote_code": false,
+      "source": "https://huggingface.co/intfloat/multilingual-e5-small"
+    },
+    {
+      "id": "arabic-e5-nli-matryoshka",
+      "model_name": "Omartificial-Intelligence-Space/E5-all-nli-triplet-Matryoshka",
+      "model_revision": "fa55cb14c32088a13bc7af8f8b2149e4da8c9742",
+      "query_prefix": "",
+      "document_prefix": "",
+      "trust_remote_code": false,
+      "source": "https://huggingface.co/Omartificial-Intelligence-Space/E5-all-nli-triplet-Matryoshka"
+    },
+    {
+      "id": "paraphrase-multilingual-minilm",
+      "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "model_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+      "query_prefix": "",
+      "document_prefix": "",
+      "trust_remote_code": false,
+      "source": "https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+    }
+  ]
+}
