@@ -9,8 +9,8 @@ from sqlalchemy import engine_from_config, pool
 
 from alembic import context
 
-# Import Base and models to register metadata
-from backend.infrastructure.database import Base
+# Importing the model module registers every table on the shared Base metadata.
+from backend.domain.models import Base
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.

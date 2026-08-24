@@ -1,5 +1,6 @@
 import uuid
 from datetime import datetime
+from unittest.mock import patch
 
 import pytest
 from fastapi.testclient import TestClient
@@ -112,6 +113,29 @@ def test_graph_read_is_blocked_before_internal_lock(graph_sources):
     response = client.get(f"/runs/{graph_sources['run_id']}/knowledge-graph")
     assert response.status_code == 403
     assert "before Internal Lock" in response.json()["detail"]
+    db = TestingSessionLocal()
+    try:
+        isolation = (
+            db.query(models.IsolationState)
+            .filter(models.IsolationState.research_run_id == graph_sources["run_id"])
+            .one()
+        )
+        assert isolation.is_contaminated == "CLEAN"
+        assert db.query(models.KnowledgeNode).count() == 0
+        assert db.query(models.KnowledgeEdge).count() == 0
+    finally:
+        db.close()
+
+
+def test_prelock_run_cannot_enter_graph_persistence(graph_sources):
+    db = TestingSessionLocal()
+    try:
+        knowledge_graph.KnowledgeGraphService.rebuild(db)
+        assert db.query(models.KnowledgeNode).count() == 0
+        assert db.query(models.KnowledgeEdge).count() == 0
+        assert db.get(models.SemanticClaim, graph_sources["claim_id"]) is not None
+    finally:
+        db.close()
 
 
 def test_projection_rebuild_is_deterministic_and_provenance_bound(
@@ -166,20 +190,30 @@ def test_corpus_dependency_projects_only_to_the_matching_snapshot(
     allow_graph_access(monkeypatch)
     db = TestingSessionLocal()
     try:
-        db.add(
-            models.DependencyRecord(
-                id="dep_corpus_r1",
-                dependent_claim_id=graph_sources["claim_id"],
-                dependency_type="CORPUS_SNAPSHOT",
-                dependency_ref=graph_sources["snapshot_id"],
-                dependency_revision=4,
-            )
+        dependency_snapshot = models.CorpusSnapshot(
+            id="snap_dependency_r1",
+            canonical_text_source="fixture-dependency",
+            canonical_text_version="v2",
+            canonical_text_hash="fixture-dependency-hash",
+            import_revision="import-dependency-r1",
+        )
+        db.add_all(
+            [
+                dependency_snapshot,
+                models.DependencyRecord(
+                    id="dep_corpus_r1",
+                    dependent_claim_id=graph_sources["claim_id"],
+                    dependency_type="CORPUS_SNAPSHOT",
+                    dependency_ref=dependency_snapshot.id,
+                    dependency_revision=4,
+                ),
+            ]
         )
         db.commit()
     finally:
         db.close()
     projection = rebuild_via_api(graph_sources["run_id"])
-    snapshot_node = f"node::CORPUS_SNAPSHOT::{graph_sources['snapshot_id']}"
+    snapshot_node = "node::CORPUS_SNAPSHOT::snap_dependency_r1"
     corpus_edges = [
         edge
         for edge in projection["edges"]
@@ -205,6 +239,39 @@ def test_contaminated_blind_lab_run_cannot_read_graph(graph_sources, monkeypatch
     response = client.get(f"/runs/{graph_sources['run_id']}/knowledge-graph")
     assert response.status_code == 403
     assert "contaminated" in response.json()["detail"]
+
+    db = TestingSessionLocal()
+    try:
+        knowledge_graph.KnowledgeGraphService.rebuild(db)
+        assert db.query(models.KnowledgeNode).count() == 0
+        assert db.query(models.KnowledgeEdge).count() == 0
+    finally:
+        db.close()
+
+
+def test_rebuild_removes_projection_when_run_becomes_ineligible(
+    graph_sources, monkeypatch
+):
+    allow_graph_access(monkeypatch)
+    rebuild_via_api(graph_sources["run_id"])
+    db = TestingSessionLocal()
+    try:
+        assert db.query(models.KnowledgeNode).count() > 0
+        isolation = (
+            db.query(models.IsolationState)
+            .filter(models.IsolationState.research_run_id == graph_sources["run_id"])
+            .one()
+        )
+        isolation.is_contaminated = "PRIOR_CONTAMINATED"
+        db.commit()
+
+        knowledge_graph.KnowledgeGraphService.rebuild(db)
+
+        assert db.query(models.KnowledgeNode).count() == 0
+        assert db.query(models.KnowledgeEdge).count() == 0
+        assert db.get(models.SemanticClaim, graph_sources["claim_id"]) is not None
+    finally:
+        db.close()
 
 
 def test_networkx_analysis_reconstructs_from_persisted_projection(graph_sources, monkeypatch):
@@ -274,6 +341,82 @@ def test_graph_scope_does_not_expose_another_run(graph_sources, monkeypatch):
     projection = rebuild_via_api(graph_sources["run_id"])
     node_ids = {node["node_id"] for node in projection["nodes"]}
     assert "node::SEMANTIC_CLAIM::claim_other" not in node_ids
+    db = TestingSessionLocal()
+    try:
+        assert (
+            db.get(models.KnowledgeNode, "node::SEMANTIC_CLAIM::claim_other") is None
+        )
+    finally:
+        db.close()
+
+
+@settings(max_examples=12, deadline=None)
+@given(
+    eligibility=st.lists(
+        st.tuples(st.booleans(), st.booleans()), min_size=1, max_size=6
+    )
+)
+def test_mixed_run_eligibility_materially_controls_persisted_projection(
+    eligibility,
+):
+    locked_run_ids: set[str] = set()
+    expected_claim_node_ids: set[str] = set()
+    property_engine = create_engine("sqlite:///:memory:")
+    Base.metadata.create_all(bind=property_engine)
+    property_session = sessionmaker(bind=property_engine)
+    db = property_session()
+    try:
+        for index, (has_lock, is_clean) in enumerate(eligibility):
+            run_id = f"mixed_run_{index}"
+            claim_id = f"mixed_claim_{index}"
+            if has_lock:
+                locked_run_ids.add(run_id)
+            if has_lock and is_clean:
+                expected_claim_node_ids.add(f"node::SEMANTIC_CLAIM::{claim_id}")
+            db.add_all(
+                [
+                    models.ResearchRun(
+                        id=run_id,
+                        target_contract="ROOT_CORE",
+                        target_expression=str(index),
+                        methodology_revision="method-r1",
+                        corpus_snapshot="missing",
+                        authority_context={"source": "property"},
+                    ),
+                    models.IsolationState(
+                        id=f"mixed_iso_{index}",
+                        research_run_id=run_id,
+                        target_contract="ROOT_CORE",
+                        corpus_snapshot="missing",
+                        methodology_reference="method-r1",
+                        allowed_sources=["QURAN_CORPUS"],
+                        is_contaminated="CLEAN" if is_clean else "PRIOR_CONTAMINATED",
+                    ),
+                    models.SemanticClaim(
+                        id=claim_id,
+                        research_run_id=run_id,
+                        contract_type="ROOT_CORE",
+                    ),
+                ]
+            )
+        db.commit()
+        with patch.object(
+            knowledge_graph,
+            "has_valid_gate",
+            side_effect=lambda _db, run_id, _gate: run_id in locked_run_ids,
+        ):
+            knowledge_graph.KnowledgeGraphService.rebuild(db)
+
+        projected_claim_node_ids = {
+            node.node_id
+            for node in db.query(models.KnowledgeNode)
+            .filter(models.KnowledgeNode.entity_type == "SEMANTIC_CLAIM")
+            .all()
+        }
+        assert projected_claim_node_ids == expected_claim_node_ids
+    finally:
+        db.close()
+        property_engine.dispose()
 
 
 def test_candidate_edge_cannot_be_promoted_or_presented_as_established(
@@ -303,6 +446,19 @@ def test_candidate_edge_cannot_be_promoted_or_presented_as_established(
     assert response.status_code == 200
     candidate_response = next(edge for edge in response.json()["edges"] if edge["edge_id"] == "candidate_r1")
     assert candidate_response["presentation_label"] == "DISCOVERY_CANDIDATE_NOT_ESTABLISHED"
+
+
+@pytest.mark.parametrize(
+    ("origin", "expected_label"),
+    [
+        ("DISCOVERY_CANDIDATE", "DISCOVERY_CANDIDATE_NOT_ESTABLISHED"),
+        ("GOVERNED_ASSERTION", "GOVERNED_ASSERTION"),
+        ("DOMAIN_PROJECTION", "DERIVED_PROJECTION"),
+    ],
+)
+def test_edge_origin_presentation_labels_preserve_authority(origin, expected_label):
+    edge = models.KnowledgeEdge(edge_origin=origin)
+    assert knowledge_graph.KnowledgeGraphService.presentation_label(edge) == expected_label
 
 
 @settings(max_examples=12, deadline=None)

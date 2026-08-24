@@ -46,6 +46,20 @@ class KnowledgeGraphService:
     """Builds SQLite-derived projections; it never writes canonical source records."""
 
     @staticmethod
+    def _is_projection_eligible(db: Session, run: models.ResearchRun) -> bool:
+        """Return whether current canonical state permits graph projection."""
+        isolation = (
+            db.query(models.IsolationState)
+            .filter(models.IsolationState.research_run_id == run.id)
+            .one_or_none()
+        )
+        return bool(
+            isolation
+            and isolation.is_contaminated == "CLEAN"
+            and has_valid_gate(db, run.id, INTERNAL_LOCK)
+        )
+
+    @staticmethod
     def require_read_access(db: Session, run_id: str) -> models.ResearchRun:
         run = db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
         if run is None:
@@ -126,7 +140,11 @@ class KnowledgeGraphService:
             rule.rule_code: rule
             for rule in db.query(models.GovernanceRule).order_by(models.GovernanceRule.rule_code)
         }
-        runs = db.query(models.ResearchRun).order_by(models.ResearchRun.id).all()
+        runs = [
+            run
+            for run in db.query(models.ResearchRun).order_by(models.ResearchRun.id)
+            if KnowledgeGraphService._is_projection_eligible(db, run)
+        ]
         claims = db.query(models.SemanticClaim).order_by(models.SemanticClaim.id).all()
         claims_by_run: dict[str, list[models.SemanticClaim]] = {}
         for claim in claims:

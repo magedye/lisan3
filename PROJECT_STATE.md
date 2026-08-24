@@ -6,6 +6,7 @@ State context only. Canonical repository contracts and runtime evidence remain a
 
 - Root: `D:\APP\tafseer\lisanapp3`
 - Branch: `main`
+- R1 remediation baseline: `8a4a8884ac9b3ce353ed00c0948cf878ff8daa40`
 - V3 remediation implementation commit: `1deab3251ac1dc53ef772d10f99c9fd32284e557`
 - Independently reviewed V3 candidate: `6bb6505484dd649d092032a36d456f9f7fba5da1`
 - Review provenance: fresh independent read-only review in a clean detached checkout of that exact SHA.
@@ -81,8 +82,14 @@ No implementation thread claim may grant independent confirmation or release acc
 ## R1 Implementation-Side Evidence
 
 - Forward migration `b7e4c1d9a5f2` adds `KnowledgeNode` and `KnowledgeEdge` projection storage after the accepted migration head. Fresh migration/model parity passed.
-- Projection/rebuild, provenance, governed vocabulary, candidate non-authority, NetworkX reconstruction, multi-run scope isolation, and Blind Lab graph denial are covered by focused tests and the complete pytest suite.
-- Runtime OpenAPI, committed OpenAPI contracts, generated TypeScript types, React Flow Knowledge Explorer, textual provenance fallback, focused Schemathesis, and Browser E2E were verified on the implementation candidate worktree.
+- Blind Lab projection now selects only runs with a current valid Internal Lock Gate and a present `CLEAN` isolation state. Rebuild replaces the disposable graph, so pre-lock, contaminated, and newly ineligible sources have no persisted or NetworkX-visible projection while canonical records remain unchanged.
+- The R1 canonical contract permits string-like opaque `provenance_ref` values and does not establish an R1 referential provenance registry. Edge origin, provenance presence, governed vocabulary, and candidate non-authority remain enforced and tested without adding a new provenance architecture.
+- Root Alembic now imports the registered domain model metadata. Fresh `base -> head`, project parity, and `alembic check` all pass; no migration history changed.
+- Clean Python resolution passes with `pydantic-ai-slim[openai]==2.33.0`, preserving the used Agent/TestModel/OpenAI runtime while avoiding the unused `web` extra that conflicted with the intentional `uvicorn==0.30.1` pin. Clean `npm ci` installed 480 packages and the production frontend build passed.
+- Complete pytest: 81 passed. Focused R1 graph profile: 18 passed, including generated mixed eligibility and adversarial stale/scope cases. Journey 6 passed against production Next.js, live FastAPI, and isolated file-backed Alembic SQLite.
+- Focused Cosmic Ray exercised 32 authority-critical mutations across eligibility, Gate/isolation checks, rebuild filtering, run/entity scope, dependency vocabulary, and presentation authority. Every non-equivalent critical mutation was killed; one isolation-string comparison survivor is equivalent over the canonical two-value vocabulary.
+- Schemathesis 4.25.0 selected both R1 graph operations with the required four checks: 56 generated cases passed, 0 failures, 0 errors. Runtime OpenAPI, both committed OpenAPI files, and regenerated TypeScript bindings match exactly.
+- Ruff passes for every Git-tracked Python file. Pyright reports 0 errors and 144 existing SQLAlchemy typing warnings.
 - This is not independent review, release readiness, R2/R3 activation, or V4 evidence.
 
 ## Exact Next Action
