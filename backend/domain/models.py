@@ -8,7 +8,9 @@ from sqlalchemy import (
     Column,
     DateTime,
     ForeignKey,
+    Index,
     Integer,
+    LargeBinary,
     String,
     UniqueConstraint,
     event,
@@ -406,9 +408,13 @@ class KnowledgeEdge(Base):
     )
 
     edge_id = Column(String, primary_key=True)
-    source_node_id = Column(String, ForeignKey("knowledge_nodes.node_id"), nullable=False)
+    source_node_id = Column(
+        String, ForeignKey("knowledge_nodes.node_id"), nullable=False
+    )
     edge_type = Column(String, nullable=False)
-    target_node_id = Column(String, ForeignKey("knowledge_nodes.node_id"), nullable=False)
+    target_node_id = Column(
+        String, ForeignKey("knowledge_nodes.node_id"), nullable=False
+    )
     edge_origin = Column(String, nullable=False)
     edge_status = Column(String, nullable=False)
     provenance_ref = Column(String, nullable=False)
@@ -442,11 +448,114 @@ def enforce_knowledge_edge_authority(_mapper, _connection, edge):
         GraphEdgeStatus.INVALIDATED.value,
     }:
         raise ValueError("Domain projections require an active or invalidated status")
-    if edge.edge_type in {
-        GraphEdgeType.NEIGHBOR_OF.value,
-        GraphEdgeType.DISTINGUISHED_FROM.value,
-    } and edge.edge_origin == GraphEdgeOrigin.DOMAIN_PROJECTION.value:
+    if (
+        edge.edge_type
+        in {
+            GraphEdgeType.NEIGHBOR_OF.value,
+            GraphEdgeType.DISTINGUISHED_FROM.value,
+        }
+        and edge.edge_origin == GraphEdgeOrigin.DOMAIN_PROJECTION.value
+    ):
         raise ValueError("Semantic neighbor relations cannot be domain projections")
+
+
+# --- R2 derived vector evaluation infrastructure ---
+# These records are disposable evaluation state. The current schema deliberately
+# rejects production-eligible vectors until a governed model handoff exists.
+class SemanticEmbedding(Base):
+    __tablename__ = "semantic_embeddings"
+    __table_args__ = (
+        CheckConstraint(
+            "embedding_space IN ('VERSE_CONTEXT', 'STRUCTURAL_PROFILE', "
+            "'HYPOTHESIS', 'CLAIM', 'ROOT_CANDIDATE', 'EXTERNAL_RESEARCH')",
+            name="ck_semantic_embedding_space",
+        ),
+        CheckConstraint(
+            "provenance_class IN ('BENCHMARK_ONLY', 'SYNTHETIC_EVALUATION')",
+            name="ck_semantic_embedding_provenance",
+        ),
+        CheckConstraint(
+            "production_eligible = 0",
+            name="ck_semantic_embedding_evaluation_only",
+        ),
+        CheckConstraint("dimensions > 0", name="ck_semantic_embedding_dimensions"),
+        CheckConstraint(
+            "lifecycle_state IN ('CURRENT', 'STALE')",
+            name="ck_semantic_embedding_lifecycle",
+        ),
+        CheckConstraint(
+            "(lifecycle_state = 'CURRENT' AND source_eligible = 1 "
+            "AND invalidated_reason IS NULL) OR "
+            "(lifecycle_state = 'STALE' AND invalidated_reason IS NOT NULL)",
+            name="ck_semantic_embedding_current_eligibility",
+        ),
+        UniqueConstraint(
+            "research_run_id",
+            "entity_type",
+            "entity_id",
+            "embedding_space",
+            "embedding_model",
+            "embedding_model_revision",
+            "model_config_hash",
+            "source_revision",
+            name="uq_semantic_embedding_identity",
+        ),
+        Index(
+            "ix_semantic_embeddings_current_scope",
+            "research_run_id",
+            "embedding_space",
+            "lifecycle_state",
+            "model_config_hash",
+        ),
+    )
+
+    id = Column(String, primary_key=True)
+    research_run_id = Column(String, ForeignKey("research_runs.id"), nullable=False)
+    entity_type = Column(String, nullable=False)
+    entity_id = Column(String, nullable=False)
+    embedding_space = Column(String, nullable=False)
+    embedding_model = Column(String, nullable=False)
+    embedding_model_revision = Column(String, nullable=False)
+    model_config_hash = Column(String, nullable=False)
+    source_revision = Column(String, nullable=False)
+    source_hash = Column(String, nullable=False)
+    vector = Column(LargeBinary, nullable=False)
+    dimensions = Column(Integer, nullable=False)
+    provenance_class = Column(String, nullable=False)
+    production_eligible = Column(Boolean, nullable=False, default=False)
+    source_eligible = Column(Boolean, nullable=False, default=True)
+    index_revision = Column(String, nullable=False)
+    lifecycle_state = Column(String, nullable=False, default="CURRENT")
+    invalidated_reason = Column(String, nullable=True)
+    created_at = Column(DateTime, nullable=False, default=datetime.datetime.utcnow)
+
+
+@event.listens_for(SemanticEmbedding, "before_insert")
+@event.listens_for(SemanticEmbedding, "before_update")
+def enforce_semantic_embedding_evaluation_boundary(_mapper, _connection, embedding):
+    from backend.domain.vector_contracts import (
+        EmbeddingSpace,
+        ExperimentalVectorProvenance,
+    )
+
+    if embedding.embedding_space not in {item.value for item in EmbeddingSpace}:
+        raise ValueError("Unsupported embedding space")
+    if embedding.provenance_class not in {
+        item.value for item in ExperimentalVectorProvenance
+    }:
+        raise ValueError("Unsupported experimental vector provenance")
+    if embedding.production_eligible:
+        raise ValueError("R2 evaluation infrastructure cannot store production vectors")
+    if embedding.dimensions <= 0 or len(embedding.vector) != embedding.dimensions * 4:
+        raise ValueError("Vector BLOB must contain exactly dimensions float32 values")
+    if embedding.lifecycle_state == "CURRENT":
+        if not embedding.source_eligible or embedding.invalidated_reason is not None:
+            raise ValueError("Current vectors require an eligible source")
+    elif embedding.lifecycle_state == "STALE":
+        if not embedding.invalidated_reason:
+            raise ValueError("Stale vectors require an invalidation reason")
+    else:
+        raise ValueError("Unsupported vector lifecycle state")
 
 
 # --- Steward (Slice F) ---
