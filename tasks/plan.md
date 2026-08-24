@@ -86,8 +86,12 @@ derived result non-authoritative, and stop before R3 or V4.
 
 - [x] Run Ruff, Pyright, full pytest, migration checks, affected mutation
   checks where justified, and adversarial code review.
-- [ ] Update the durable R2 governance report and `PROJECT_STATE.md`, create
+- [x] Update the durable R2 governance report and `PROJECT_STATE.md`, create
   coherent commit(s), and verify the exact SHA in a clean detached worktree.
+
+Candidate `c64d4531c918c47943b45423ee02d0fc501ad2f6` passed the bounded detached
+R2 profile. A broader full-suite attempt reached 117 passed with one unrelated
+Governance Review E2E failure, so exact-SHA full-suite green is not claimed.
 
 ## Risks and Mitigations
 

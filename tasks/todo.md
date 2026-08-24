@@ -11,8 +11,12 @@
 - [x] Focused Hypothesis and authority-negative tests
 - [x] Full pytest, Ruff, Pyright, and migration checkpoint
 - [x] Durable governance report and PROJECT_STATE update
-- [ ] Coherent candidate commit and clean detached exact-SHA verification
+- [x] Coherent candidate commit and clean detached exact-SHA R2 verification
 - [x] R3 and V4 remain not started
 
 Production model selection, inference, production vector population, API/UI,
 EvidenceResolver, and hybrid orchestration are explicitly deferred.
+
+Candidate: `c64d4531c918c47943b45423ee02d0fc501ad2f6`. The bounded detached R2
+profile passed. Exact-SHA full-suite green is not claimed because the broader
+run had one out-of-scope Governance Review E2E failure.

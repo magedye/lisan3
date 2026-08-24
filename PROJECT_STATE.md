@@ -153,10 +153,10 @@ No implementation thread claim may grant independent confirmation or release acc
   deterministic 32-dimensional synthetic vectors. Build was 0.627351 seconds;
   100-query p95 was 52.904200 ms under predeclared 5-second/100-ms limits.
   Canonical status remains `APPROVED_FOR_EVALUATION`.
-- Focused R2 profile: 30 passed. Full pytest: 118 passed. Fresh migration
-  parity, downgrade/re-upgrade, and `alembic check`: passed. Ruff: passed.
-  Pyright: 0 errors and 144 existing SQLAlchemy-style warnings. pip check and
-  `git diff --check`: passed.
+- Pre-commit focused R2 profile: 30 passed; full pytest: 118 passed. Fresh
+  migration parity, downgrade/re-upgrade, and `alembic check`: passed. Ruff:
+  passed. Pyright: 0 errors and 144 existing SQLAlchemy-style warnings. pip
+  check and `git diff --check`: passed.
 - Authority-critical Cosmic Ray: 291 universe / 29 selected / 29 killed / 0
   survivors, bound to vector service SHA-256
   `3382eed7668bfcaa05c8c9ec77d57881987faab8f205aef80b14e3719edb2799`.
@@ -165,11 +165,23 @@ No implementation thread claim may grant independent confirmation or release acc
   Spike result: `tools/governance-lab/vector-spike/r2/results.json`.
 - This is implementation-side evidence only. R2 is not independently confirmed
   or complete; no API/UI/R3/V4 work was performed.
+- Coherent implementation commits are `a18e4615dd6581f61c01e6ca6a1fc298a4855f6c`,
+  `4ab5d6f6d3f989bffe77b23f646c895afb462aca`, and candidate
+  `c64d4531c918c47943b45423ee02d0fc501ad2f6`.
+- Clean detached verification of candidate `c64d4531c918c47943b45423ee02d0fc501ad2f6`
+  passed Ruff, Pyright (0 errors / 144 existing warnings), all 112 non-E2E
+  tests, the live sqlite-vec Spike, the 29/29 critical mutation profile, the
+  frozen-benchmark comparison, and final clean-worktree checks.
+- A broader detached full-suite attempt installed the lockfile dependencies and
+  reached 117 passed with one out-of-scope Governance Review E2E failure
+  (`Revision: 1` observed instead of `Revision: 2`). A focused retry then hit
+  an intermittent Next build setup failure. Therefore exact-SHA full-suite
+  green is not claimed; no R2 or frontend code was changed in response.
 
 ## Exact Next Action
 
-Create and clean-detached-verify the coherent bounded R2 infrastructure
-candidate, then obtain fresh independent read-only review of its exact SHA.
-Separately, `LISAN-Quran-Embedding` must resolve the governed production model
-handoff before production vector population or complete R2 acceptance. Do not
-begin R3 or V4 implementation.
+Obtain fresh independent read-only review of bounded R2 implementation candidate
+`c64d4531c918c47943b45423ee02d0fc501ad2f6`. Separately,
+`LISAN-Quran-Embedding` must resolve the governed production model handoff before
+production vector population or complete R2 acceptance. The unrelated E2E
+signal may be triaged in its own authorized scope. Do not begin R3 or V4.

@@ -137,8 +137,9 @@ its provenance remain unaffected.
 
 ## Verification evidence
 
-- focused R2 contract/persistence/lifecycle/Spike profile: 30 passed;
-- full pytest: 118 passed;
+- pre-commit focused R2 contract/persistence/lifecycle/Spike profile: 30 passed;
+- pre-commit full pytest against the same tracked implementation content: 118
+  passed;
 - fresh Alembic `base -> head` model/table/column parity: passed;
 - R2 downgrade to `b7e4c1d9a5f2`, re-upgrade to head, and `alembic check`: passed;
 - Ruff across every Git-tracked Python file: passed;
@@ -148,27 +149,40 @@ its provenance remain unaffected.
 - authority-critical Cosmic Ray profile: 291-universe / 29 selected / 29
   killed / 0 survivors, source SHA-256
   `3382eed7668bfcaa05c8c9ec77d57881987faab8f205aef80b14e3719edb2799`.
+- clean detached candidate `c64d4531c918c47943b45423ee02d0fc501ad2f6`:
+  Ruff passed; Pyright reported 0 errors / 144 existing warnings; all 112
+  non-E2E tests passed; the live sqlite-vec Spike passed; all 29 selected
+  critical mutations were killed; the frozen benchmark was unchanged; and the
+  checkout remained clean;
+- a broader detached full-suite attempt reached 117 passed with one Governance
+  Review E2E failure (`Revision: 1` observed instead of `Revision: 2`). A
+  focused retry then encountered an intermittent Next build setup failure.
+  These signals are outside the changed R2/API/UI surface and were not repaired
+  in this scope; exact-SHA full-suite green is not claimed.
 
-Schemathesis, OpenAPI/TypeScript regeneration, browser E2E, and frontend build
-are not applicable because no API, contract endpoint, UI, or frontend behavior
-was added.
+Schemathesis and OpenAPI/TypeScript regeneration are not applicable because no
+API or contract endpoint was added. Browser E2E/frontend behavior was outside
+the affected surface, but the broad regression attempt and its non-green result
+are recorded above rather than omitted.
 
 ## Interim state and remaining dependency
 
 - R2 benchmark: completed;
 - production embedding-model selection: blocked/deferred;
 - model-agnostic infrastructure: implemented and tested in this execution
-  context, pending independent candidate review;
+  context at candidate `c64d4531c918c47943b45423ee02d0fc501ad2f6`, pending
+  independent candidate review;
 - production embedding model: not selected;
 - R2: not independently confirmed and not complete;
 - R3: `NOT_STARTED`;
 - V4: `NOT_STARTED`.
 
-Exact next action: create the coherent implementation candidate and verify its
-exact SHA in a clean detached worktree; then obtain fresh independent read-only
-review of this bounded R2 infrastructure candidate. In parallel but under its
-own authority, `LISAN-Quran-Embedding` must resolve the governed model handoff
-before any production vector population or full R2 closure. Do not begin R3.
+Exact next action: obtain fresh independent read-only review of bounded R2
+implementation candidate `c64d4531c918c47943b45423ee02d0fc501ad2f6`. In
+parallel but under its own authority, `LISAN-Quran-Embedding` must resolve the
+governed model handoff before any production vector population or full R2
+closure. The unrelated E2E signal may be triaged separately if authorized. Do
+not begin R3.
 
 ## Official sqlite-vec implementation sources
 
