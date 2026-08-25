@@ -1,127 +1,74 @@
-# Implementation Plan: R2 Model-Agnostic Vector Infrastructure
+# LISAN3 Canonically Bounded Production UI Completion
 
-## Overview
+## Goal and Boundary
 
-Continue only the R2 infrastructure that remains valid while production
-embedding-model selection is deferred to `LISAN-Quran-Embedding`. Preserve the
-frozen benchmark decision, use only synthetic/evaluation vectors, keep every
-derived result non-authoritative, and stop before R3 or V4.
+Complete every currently executable Golden/Stitch production surface over the
+existing LISAN3 contracts, add only minimal read exposure for already
+authorized persisted capability, and leave model-dependent retrieval surfaces
+explicitly blocked. Do not select or integrate a model, populate production
+vectors, implement EvidenceResolver/hybrid retrieval, begin R3, or execute V4.
 
-## Authority Decision
+## Evidence-Driven Task List
 
-- Canonical R2 activation follows verified R1; the recorded R1 candidate is
-  independently confirmed and the owner has separately authorized this bounded
-  R2 continuation.
-- The canonical R2 scope separately names embedding-space definitions,
-  sqlite-vec evaluation, index schema/lifecycle, provenance, and tests. Those
-  slices can be implemented without satisfying the full R2 acceptance item that
-  requires an adopted model.
-- `R2_VERIFIED_FOR_PROFILE` remains unavailable while model selection is
-  blocked. No production model, production vector population, API/UI retrieval
-  path, EvidenceResolver, hybrid orchestration, R3, or V4 is in scope.
+### 1. Authority, Git and asset inventory
 
-## Architecture Decisions
+- [x] Verify branch, HEAD, upstream and dirty/untracked owner artifacts.
+- [x] Reconcile current state with the newer owner-provided independent
+  stabilization review outcome.
+- [x] Inspect all 28 matched Golden HTML/screenshot pairs and classify each
+  exactly once.
 
-- Persist only derived evaluation records through SQLAlchemy/Alembic. Their
-  schema makes synthetic/benchmark provenance, run, embedding space, model
-  identity, source revision/hash, configuration hash, index revision, and stale
-  state explicit.
-- Keep the production model handoff as a provider-independent protocol and
-  manifest-validation boundary. No adapter implementation, weights, inference,
-  download, default model, or production provider is introduced.
-- Fail closed when a governed model decision reference is absent from a
-  production manifest request.
-- Use `sqlite-vec==0.1.9` only in an isolated technical Spike with deterministic
-  synthetic vectors. The Spike result cannot change its canonical
-  `APPROVED_FOR_EVALUATION` status.
-- Every query is explicitly run- and embedding-space-scoped. Cross-space,
-  cross-run, stale, ineligible, contaminated, or pre-lock access is rejected.
-- Return typed candidates labeled `VECTOR`, `CANDIDATE`, and
-  `DERIVED_DISCOVERY_NON_AUTHORITATIVE`; similarity/distance is retrieval
-  metadata, never confidence.
+### 2. Production contracts and read exposure
 
-## Task List
+- [x] Inventory the eight existing production routes and OpenAPI contracts.
+- [x] Add minimal persisted read models for Attention, Run Workspace, direct
+  Claim, and Governance Overview.
+- [x] Keep workspace claim visibility fail-closed behind existing CLEAN
+  isolation and current Internal Lock checks.
+- [x] Make quality GET genuinely read-only and align historical nullable run
+  linkage with the persisted schema.
+- [x] Regenerate OpenAPI and TypeScript bindings.
 
-### Phase 1: Authority and frozen evidence
+### 3. Golden design system and reusable UI
 
-- [x] Confirm canonical permission for bounded model-agnostic R2 continuation.
-- [x] Preserve the benchmark thresholds, labels, judgments, model results, and
-  `EMBEDDING_MODEL_SELECTION_BLOCKED` decision unchanged.
+- [x] Implement the native Arabic RTL shell, responsive right sidebar,
+  typography, semantic color/status system, cards/tables/forms/dialogs, focus
+  states and loading/empty/error primitives.
+- [x] Implement reusable four-axis status presentation without collapsing
+  Epistemic, Review, Freshness or Publication.
 
-### Phase 2: Contracts and persistence
+### 4. Governed production surfaces
 
-- [x] Add provider-independent embedding-space, manifest, adapter, evaluation
-  vector, and typed `RetrievalCandidate` contracts.
-- [x] Add a reversible Alembic migration and derived evaluation-vector model
-  with fail-closed provenance and lifecycle constraints.
+- [x] Complete Home/Attention/Ask/Run Builder using real backend data.
+- [x] Complete Run Workspace, Hypothesis/observation views, Gate results and
+  blocked/released claim states.
+- [x] Complete Blind Lab without simulation or bypass actions.
+- [x] Complete R1 Knowledge Explorer with derived-authority labeling and text
+  provenance fallback.
+- [x] Complete Claim traceability, balanced evidence/counterevidence, purity,
+  stale warnings, provenance and history.
+- [x] Complete Governance, corpus lifecycle, review queue, confirmations,
+  Steward and read-only Audit.
+- [x] Leave Semantic Differentiation absent and classified
+  `BLOCKED_BY_R2_CONFIRMATION`.
 
-### Checkpoint: Contract and migration
+### 5. Verification and durable evidence
 
-- [x] Focused schema/manifest negative paths pass.
-- [x] Fresh Alembic `base -> head`, downgrade/upgrade, model parity, and
-  `alembic check` pass.
+- [x] Focused read-model/status tests pass.
+- [x] ESLint and Next production build pass at the implementation checkpoint.
+- [x] All eight Playwright journeys pass, including real-data, fail-closed,
+  RTL, form-label and mobile-menu checks.
+- [x] Record the 28-screen coverage and UI/backend contract matrices.
+- [ ] Create coherent commits and bind the candidate SHA.
+- [ ] Run the full authorized verification profile from a clean detached
+  checkout, including live route/console and desktop/tablet/mobile evidence.
+- [ ] Record final candidate-bound evidence in the completion checkpoint and
+  `PROJECT_STATE.md`.
+- [ ] Request a fresh independent read-only review; do not self-grant it.
 
-### Phase 3: Lifecycle and isolation
+## Completion Claim Ceiling
 
-- [x] Implement deterministic evaluation-only rebuild, deletion/recovery,
-  model/config invalidation, and stale-vector exclusion.
-- [x] Enforce Blind Lab eligibility, source eligibility, run isolation,
-  embedding-space isolation, and candidate non-authority.
-
-### Checkpoint: Infrastructure
-
-- [x] Focused pytest and Hypothesis invariants pass.
-- [x] Canonical source and R1 graph/claim state remain unchanged under vector
-  rebuild, query, deletion, and blocked access.
-
-### Phase 4: sqlite-vec Spike and evidence
-
-- [x] Execute isolated synthetic-vector persistence, filtered KNN,
-  deterministic ordering, reopen/recovery, deletion, invalidation, and local
-  performance checks.
-- [x] Record the exact `SQLITE_VEC_EVALUATION_PASSED` or blocker result without
-  promoting sqlite-vec or selecting a model.
-
-### Phase 5: Candidate checkpoint
-
-- [x] Run Ruff, Pyright, full pytest, migration checks, affected mutation
-  checks where justified, and adversarial code review.
-- [x] Update the durable R2 governance report and `PROJECT_STATE.md`, create
-  coherent commit(s), and verify the exact SHA in a clean detached worktree.
-
-Candidate `c64d4531c918c47943b45423ee02d0fc501ad2f6` passed the bounded detached
-R2 profile. Its historical broader attempt reached 117 passed before the
-Governance Review E2E race was classified; Phase 6 below is the superseding
-model-independent completion checkpoint.
-
-### Phase 6: Model-independent completion checkpoint
-
-- [x] Extend the existing manifest boundary into a portable, immutable external
-  artifact handoff with all required model, corpus, provenance, Blind-Lab,
-  benchmark, reproducibility, and independent-review fields.
-- [x] Test every required fail-closed handoff rejection without loading a model.
-- [x] Classify and correct the Governance Review E2E signal as a test race.
-- [x] Verify code candidate `2449ac4db7102a0a62ae9622c6f668bb71602ef8` in a
-  clean detached checkout: full pytest/E2E, frontend build, migration profile,
-  Ruff, Pyright, and critical mutation profile.
-
-R3 remains `NOT_STARTED`; V4 remains release-candidate-bound and is not run.
-
-## Risks and Mitigations
-
-| Risk | Impact | Mitigation |
-|---|---|---|
-| Evaluation tables imply model adoption | High | Evaluation-only provenance and production-ineligible constraints |
-| Cached vectors bypass Blind Lab | High | Current lock/isolation checks on rebuild and every query |
-| Cross-space similarity becomes a universal score | High | Explicit enum plus fail-closed equality validation and negative tests |
-| Model/config drift silently reuses vectors | High | Exact manifest fingerprint and stale invalidation |
-| Candidate score mutates semantic authority | High | Typed non-authority contract and canonical-state immutability tests |
-| sqlite-vec pre-v1 behavior drifts | Medium | Pin 0.1.9, verify actual loaded version, isolate the Spike, retain fallback removal path |
-
-## Remaining External Dependency
-
-`LISAN-Quran-Embedding` owns governed production model selection, exact model
-artifact/revision handoff, per-space decision if approved, and the later
-benchmark evidence that can populate a production-governed vector state. The
-exact remaining dependency is an accepted immutable exported artifact + governed
-manifest + independent model-review evidence, not the research checkout.
+The implementation agent may establish `IMPLEMENTED`, `TESTED`, and a bounded
+candidate-specific UI verification profile. It may not establish
+`INDEPENDENTLY_REVIEWED`, `TECHNICALLY_RELEASE_READY`, `V4_COMPLETE`, or
+`RELEASE_ACCEPTED`.
