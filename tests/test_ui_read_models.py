@@ -137,7 +137,7 @@ def seed_workspace(db):
 
 
 def test_attention_center_returns_only_persisted_records(test_db):
-    run, claim, snapshot, proposal = seed_workspace(test_db)
+    run, _, snapshot, proposal = seed_workspace(test_db)
 
     response = client.get("/attention")
 
