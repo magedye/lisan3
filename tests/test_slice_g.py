@@ -274,6 +274,13 @@ def test_multidimensional_quality_and_purity_findings(test_db, setup_claim):
     for exp in expected:
         assert exp in dimensions
 
+    assert (
+        test_db.query(models.QualityProfile)
+        .filter(models.QualityProfile.claim_id == claim_id)
+        .count()
+        == 0
+    )
+
 
 def test_purity_contamination_detection(test_db):
     claim_id = f"clm_tafsir_{uuid.uuid4().hex[:6]}"

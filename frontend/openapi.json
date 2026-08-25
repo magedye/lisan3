@@ -246,6 +246,81 @@
         }
       }
     },
+    "/attention": {
+      "get": {
+        "summary": "Get Attention Center",
+        "description": "Read-only projection of persisted work that currently needs attention.",
+        "operationId": "get_attention_center_attention_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AttentionCenterResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "409": {
+            "description": "Conflict"
+          }
+        }
+      }
+    },
     "/runs/{run_id}": {
       "get": {
         "summary": "Get Run",
@@ -268,6 +343,92 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/ResearchRunResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "409": {
+            "description": "Conflict"
+          }
+        }
+      }
+    },
+    "/runs/{run_id}/workspace": {
+      "get": {
+        "summary": "Get Run Workspace",
+        "description": "Aggregate persisted run artifacts without bypassing Blind Lab release.",
+        "operationId": "get_run_workspace_runs__run_id__workspace_get",
+        "parameters": [
+          {
+            "name": "run_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Run Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RunWorkspaceResponse"
                 }
               }
             }
@@ -1250,6 +1411,91 @@
         }
       }
     },
+    "/claims/{claim_id}": {
+      "get": {
+        "summary": "Get Claim",
+        "operationId": "get_claim_claims__claim_id__get",
+        "parameters": [
+          {
+            "name": "claim_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Claim Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SemanticClaimResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "409": {
+            "description": "Conflict"
+          }
+        }
+      }
+    },
     "/claims/{claim_id}/reviews": {
       "post": {
         "summary": "Submit Review Decision",
@@ -1463,6 +1709,81 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/AIExecutionRecordResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "409": {
+            "description": "Conflict"
+          }
+        }
+      }
+    },
+    "/governance/overview": {
+      "get": {
+        "summary": "Get Governance Overview",
+        "description": "Read-only governance, review, and source-admission projection.",
+        "operationId": "get_governance_overview_governance_overview_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GovernanceOverviewResponse"
                 }
               }
             }
@@ -3171,6 +3492,60 @@
         ],
         "title": "AskLisanResponse"
       },
+      "AttentionCenterResponse": {
+        "properties": {
+          "recent_runs": {
+            "items": {
+              "$ref": "#/components/schemas/ResearchRunResponse"
+            },
+            "type": "array",
+            "title": "Recent Runs",
+            "default": []
+          },
+          "review_required_claims": {
+            "items": {
+              "$ref": "#/components/schemas/SemanticClaimResponse"
+            },
+            "type": "array",
+            "title": "Review Required Claims",
+            "default": []
+          },
+          "freshness_attention_claims": {
+            "items": {
+              "$ref": "#/components/schemas/SemanticClaimResponse"
+            },
+            "type": "array",
+            "title": "Freshness Attention Claims",
+            "default": []
+          },
+          "pending_proposals": {
+            "items": {
+              "$ref": "#/components/schemas/ChangeProposalResponse"
+            },
+            "type": "array",
+            "title": "Pending Proposals",
+            "default": []
+          },
+          "recent_changes": {
+            "items": {
+              "$ref": "#/components/schemas/AuditLogResponse"
+            },
+            "type": "array",
+            "title": "Recent Changes",
+            "default": []
+          },
+          "corpus_snapshots": {
+            "items": {
+              "$ref": "#/components/schemas/CorpusSnapshotResponse"
+            },
+            "type": "array",
+            "title": "Corpus Snapshots",
+            "default": []
+          }
+        },
+        "type": "object",
+        "title": "AttentionCenterResponse"
+      },
       "AuditLogResponse": {
         "properties": {
           "id": {
@@ -3409,6 +3784,81 @@
           "created_at"
         ],
         "title": "CorpusOccurrenceResponse"
+      },
+      "CorpusSnapshotResponse": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "canonical_text_source": {
+            "type": "string",
+            "title": "Canonical Text Source"
+          },
+          "canonical_text_version": {
+            "type": "string",
+            "title": "Canonical Text Version"
+          },
+          "validation_status": {
+            "type": "string",
+            "title": "Validation Status"
+          },
+          "source_role_status": {
+            "type": "string",
+            "title": "Source Role Status"
+          },
+          "artifact_presence_status": {
+            "type": "string",
+            "title": "Artifact Presence Status"
+          },
+          "hash_verification_status": {
+            "type": "string",
+            "title": "Hash Verification Status"
+          },
+          "import_validation_status": {
+            "type": "string",
+            "title": "Import Validation Status"
+          },
+          "activation_status": {
+            "type": "string",
+            "title": "Activation Status"
+          },
+          "artifact_provenance": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Artifact Provenance"
+          },
+          "fixture_only": {
+            "type": "boolean",
+            "title": "Fixture Only"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "canonical_text_source",
+          "canonical_text_version",
+          "validation_status",
+          "source_role_status",
+          "artifact_presence_status",
+          "hash_verification_status",
+          "import_validation_status",
+          "activation_status",
+          "fixture_only",
+          "created_at"
+        ],
+        "title": "CorpusSnapshotResponse"
       },
       "DependencyRecordResponse": {
         "properties": {
@@ -3743,6 +4193,52 @@
           "created_at"
         ],
         "title": "GateReportResponse"
+      },
+      "GovernanceOverviewResponse": {
+        "properties": {
+          "rules": {
+            "items": {
+              "$ref": "#/components/schemas/GovernanceRuleResponse"
+            },
+            "type": "array",
+            "title": "Rules",
+            "default": []
+          },
+          "proposals": {
+            "items": {
+              "$ref": "#/components/schemas/ChangeProposalResponse"
+            },
+            "type": "array",
+            "title": "Proposals",
+            "default": []
+          },
+          "review_queue": {
+            "items": {
+              "$ref": "#/components/schemas/SemanticClaimResponse"
+            },
+            "type": "array",
+            "title": "Review Queue",
+            "default": []
+          },
+          "freshness_queue": {
+            "items": {
+              "$ref": "#/components/schemas/SemanticClaimResponse"
+            },
+            "type": "array",
+            "title": "Freshness Queue",
+            "default": []
+          },
+          "corpus_snapshots": {
+            "items": {
+              "$ref": "#/components/schemas/CorpusSnapshotResponse"
+            },
+            "type": "array",
+            "title": "Corpus Snapshots",
+            "default": []
+          }
+        },
+        "type": "object",
+        "title": "GovernanceOverviewResponse"
       },
       "GovernanceRuleCreate": {
         "properties": {
@@ -5000,6 +5496,81 @@
         ],
         "title": "RuleRevisionResponse"
       },
+      "RunWorkspaceResponse": {
+        "properties": {
+          "run": {
+            "$ref": "#/components/schemas/ResearchRunResponse"
+          },
+          "isolation_state": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/IsolationStateResponse"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "observations": {
+            "items": {
+              "$ref": "#/components/schemas/ObservationArtifactResponse"
+            },
+            "type": "array",
+            "title": "Observations",
+            "default": []
+          },
+          "hypotheses": {
+            "items": {
+              "$ref": "#/components/schemas/HypothesisResponse"
+            },
+            "type": "array",
+            "title": "Hypotheses",
+            "default": []
+          },
+          "neighbors": {
+            "items": {
+              "$ref": "#/components/schemas/EssentialNeighborResponse"
+            },
+            "type": "array",
+            "title": "Neighbors",
+            "default": []
+          },
+          "gates": {
+            "items": {
+              "$ref": "#/components/schemas/GateReportResponse"
+            },
+            "type": "array",
+            "title": "Gates",
+            "default": []
+          },
+          "claims": {
+            "items": {
+              "$ref": "#/components/schemas/SemanticClaimResponse"
+            },
+            "type": "array",
+            "title": "Claims",
+            "default": []
+          },
+          "claims_visible": {
+            "type": "boolean",
+            "title": "Claims Visible"
+          },
+          "audit_events": {
+            "items": {
+              "$ref": "#/components/schemas/AuditLogResponse"
+            },
+            "type": "array",
+            "title": "Audit Events",
+            "default": []
+          }
+        },
+        "type": "object",
+        "required": [
+          "run",
+          "claims_visible"
+        ],
+        "title": "RunWorkspaceResponse"
+      },
       "SemanticClaimCreate": {
         "properties": {
           "contract_type": {
@@ -5305,15 +5876,21 @@
             "title": "Id"
           },
           "research_run_id": {
-            "type": "string",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
             "title": "Research Run Id"
           }
         },
         "type": "object",
         "required": [
           "contract_type",
-          "id",
-          "research_run_id"
+          "id"
         ],
         "title": "SemanticClaimResponse"
       },

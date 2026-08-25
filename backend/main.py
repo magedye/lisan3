@@ -81,6 +81,44 @@ app.add_middleware(
 )
 
 
+def _claim_responses(claims: list[models.SemanticClaim]):
+    return [
+        schemas.SemanticClaimResponse.model_validate(claim, from_attributes=True)
+        for claim in claims
+    ]
+
+
+def _run_claims_visible(db: Session, run_id: str) -> bool:
+    isolation_state = (
+        db.query(models.IsolationState)
+        .filter(models.IsolationState.research_run_id == run_id)
+        .first()
+    )
+    return bool(
+        isolation_state
+        and isolation_state.is_contaminated == "CLEAN"
+        and has_valid_gate(db, run_id, INTERNAL_LOCK)
+    )
+
+
+def _released_claims(
+    db: Session, claims: list[models.SemanticClaim]
+) -> list[models.SemanticClaim]:
+    visibility_by_run: dict[str, bool] = {}
+    released: list[models.SemanticClaim] = []
+    for claim in claims:
+        if claim.research_run_id is None:
+            released.append(claim)
+            continue
+        if claim.research_run_id not in visibility_by_run:
+            visibility_by_run[claim.research_run_id] = _run_claims_visible(
+                db, claim.research_run_id
+            )
+        if visibility_by_run[claim.research_run_id]:
+            released.append(claim)
+    return released
+
+
 @app.get("/health")
 def health_check():
     return {"status": "ok", "message": "Lisanapp Backend is running"}
@@ -137,6 +175,72 @@ def create_run(run: schemas.ResearchRunCreate, db: Session = Depends(get_db)):
     return db_run
 
 
+@app.get("/attention", response_model=schemas.AttentionCenterResponse)
+def get_attention_center(db: Session = Depends(get_db)):
+    """Read-only projection of persisted work that currently needs attention."""
+    recent_runs = (
+        db.query(models.ResearchRun)
+        .order_by(models.ResearchRun.updated_at.desc())
+        .limit(8)
+        .all()
+    )
+    review_required_claims = (
+        db.query(models.SemanticClaim)
+        .filter(
+            models.SemanticClaim.review_state.in_(
+                [
+                    "NOT_REVIEWED",
+                    "REVIEW_REQUIRED",
+                    "IN_REVIEW",
+                    "OWNER_DECISION_REQUIRED",
+                    "PENDING_REVIEW",
+                ]
+            )
+        )
+        .order_by(models.SemanticClaim.created_at.desc())
+        .limit(8)
+        .all()
+    )
+    freshness_attention_claims = (
+        db.query(models.SemanticClaim)
+        .filter(models.SemanticClaim.freshness_state != "CURRENT")
+        .order_by(models.SemanticClaim.created_at.desc())
+        .limit(8)
+        .all()
+    )
+    pending_proposals = (
+        db.query(models.ChangeProposal)
+        .filter(models.ChangeProposal.status == "PROPOSED")
+        .order_by(models.ChangeProposal.created_at.desc())
+        .limit(8)
+        .all()
+    )
+    recent_changes = (
+        db.query(models.AuditLog)
+        .order_by(models.AuditLog.created_at.desc())
+        .limit(8)
+        .all()
+    )
+    corpus_snapshots = (
+        db.query(models.CorpusSnapshot)
+        .order_by(models.CorpusSnapshot.created_at.desc())
+        .limit(20)
+        .all()
+    )
+    return schemas.AttentionCenterResponse(
+        recent_runs=recent_runs,
+        review_required_claims=_claim_responses(
+            _released_claims(db, review_required_claims)
+        ),
+        freshness_attention_claims=_claim_responses(
+            _released_claims(db, freshness_attention_claims)
+        ),
+        pending_proposals=pending_proposals,
+        recent_changes=recent_changes,
+        corpus_snapshots=corpus_snapshots,
+    )
+
+
 @app.get("/runs/{run_id}", response_model=schemas.ResearchRunResponse)
 def get_run(run_id: str, db: Session = Depends(get_db)):
     db_run = (
@@ -145,6 +249,75 @@ def get_run(run_id: str, db: Session = Depends(get_db)):
     if not db_run:
         raise HTTPException(status_code=404, detail="Run not found")
     return db_run
+
+
+@app.get("/runs/{run_id}/workspace", response_model=schemas.RunWorkspaceResponse)
+def get_run_workspace(run_id: str, db: Session = Depends(get_db)):
+    """Aggregate persisted run artifacts without bypassing Blind Lab release."""
+    db_run = (
+        db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
+    )
+    if not db_run:
+        raise HTTPException(status_code=404, detail="Run not found")
+
+    isolation_state = (
+        db.query(models.IsolationState)
+        .filter(models.IsolationState.research_run_id == run_id)
+        .first()
+    )
+    observations = (
+        db.query(models.ObservationArtifact)
+        .filter(models.ObservationArtifact.research_run_id == run_id)
+        .order_by(models.ObservationArtifact.created_at.asc())
+        .all()
+    )
+    hypotheses = (
+        db.query(models.Hypothesis)
+        .filter(models.Hypothesis.research_run_id == run_id)
+        .order_by(models.Hypothesis.created_at.asc())
+        .all()
+    )
+    hypothesis_ids = [item.id for item in hypotheses]
+    neighbors = (
+        db.query(models.EssentialNeighbor)
+        .filter(models.EssentialNeighbor.hypothesis_id.in_(hypothesis_ids))
+        .order_by(models.EssentialNeighbor.created_at.asc())
+        .all()
+        if hypothesis_ids
+        else []
+    )
+    gates = (
+        db.query(models.GateReport)
+        .filter(models.GateReport.research_run_id == run_id)
+        .order_by(models.GateReport.created_at.asc())
+        .all()
+    )
+    claims_visible = _run_claims_visible(db, run_id)
+    claims = (
+        db.query(models.SemanticClaim)
+        .filter(models.SemanticClaim.research_run_id == run_id)
+        .order_by(models.SemanticClaim.created_at.asc())
+        .all()
+        if claims_visible
+        else []
+    )
+    audit_events = (
+        db.query(models.AuditLog)
+        .filter(models.AuditLog.entity_id == run_id)
+        .order_by(models.AuditLog.created_at.desc())
+        .all()
+    )
+    return schemas.RunWorkspaceResponse(
+        run=db_run,
+        isolation_state=isolation_state,
+        observations=observations,
+        hypotheses=hypotheses,
+        neighbors=neighbors,
+        gates=gates,
+        claims=_claim_responses(claims),
+        claims_visible=claims_visible,
+        audit_events=audit_events,
+    )
 
 
 @app.get("/runs/{run_id}/blind", response_model=schemas.IsolationStateResponse)
@@ -454,6 +627,23 @@ def create_claim(
     return db_claim
 
 
+@app.get("/claims/{claim_id}", response_model=schemas.SemanticClaimResponse)
+def get_claim(claim_id: str, db: Session = Depends(get_db)):
+    claim = (
+        db.query(models.SemanticClaim)
+        .filter(models.SemanticClaim.id == claim_id)
+        .first()
+    )
+    if not claim:
+        raise HTTPException(status_code=404, detail="Claim not found")
+    if claim.research_run_id and not _run_claims_visible(db, claim.research_run_id):
+        raise HTTPException(
+            status_code=403,
+            detail="Claim is not released from Blind Lab isolation",
+        )
+    return claim
+
+
 @app.post("/claims/{claim_id}/reviews", response_model=schemas.ReviewDecisionResponse)
 def submit_review_decision(
     claim_id: str, review: schemas.ReviewDecisionCreate, db: Session = Depends(get_db)
@@ -585,6 +775,60 @@ def ai_propose_hypothesis(run_id: str, db: Session = Depends(get_db)):
 
 
 # --- Governance Endpoints (Slice E) ---
+
+
+@app.get("/governance/overview", response_model=schemas.GovernanceOverviewResponse)
+def get_governance_overview(db: Session = Depends(get_db)):
+    """Read-only governance, review, and source-admission projection."""
+    rules = (
+        db.query(models.GovernanceRule)
+        .order_by(models.GovernanceRule.rule_code.asc())
+        .limit(100)
+        .all()
+    )
+    proposals = (
+        db.query(models.ChangeProposal)
+        .order_by(models.ChangeProposal.created_at.desc())
+        .limit(100)
+        .all()
+    )
+    review_queue = (
+        db.query(models.SemanticClaim)
+        .filter(
+            models.SemanticClaim.review_state.in_(
+                [
+                    "NOT_REVIEWED",
+                    "REVIEW_REQUIRED",
+                    "IN_REVIEW",
+                    "OWNER_DECISION_REQUIRED",
+                    "PENDING_REVIEW",
+                ]
+            )
+        )
+        .order_by(models.SemanticClaim.created_at.desc())
+        .limit(100)
+        .all()
+    )
+    freshness_queue = (
+        db.query(models.SemanticClaim)
+        .filter(models.SemanticClaim.freshness_state != "CURRENT")
+        .order_by(models.SemanticClaim.created_at.desc())
+        .limit(100)
+        .all()
+    )
+    corpus_snapshots = (
+        db.query(models.CorpusSnapshot)
+        .order_by(models.CorpusSnapshot.created_at.desc())
+        .limit(100)
+        .all()
+    )
+    return schemas.GovernanceOverviewResponse(
+        rules=rules,
+        proposals=proposals,
+        review_queue=_claim_responses(_released_claims(db, review_queue)),
+        freshness_queue=_claim_responses(_released_claims(db, freshness_queue)),
+        corpus_snapshots=corpus_snapshots,
+    )
 
 
 @app.post("/governance/rules", response_model=schemas.GovernanceRuleResponse)
@@ -1029,35 +1273,42 @@ def get_claim_quality(claim_id: str, db: Session = Depends(get_db)):
     purity_score, rating, findings, flags = evaluate_methodological_purity(claim, db)
     is_synthetic_leak = "test" in (claim.contract_type or "").lower()
 
-    if not profile:
-        profile = models.QualityProfile(
-            id=f"qual_{uuid.uuid4().hex[:8]}",
-            claim_id=claim_id,
-            purity_score=purity_score,
-            purity_rating=rating,
-            purity_findings=findings,
-            synthetic_data_leak=is_synthetic_leak,
-            external_data_leak=False,
-            corpus_coverage=90,
-            deep_analysis_coverage=70,
-            reproducibility_score=100,
-            unresolved_conflict_burden=0,
-            methodological_purity_flags=flags,
-            evaluation_summary=f"Purity evaluated as {rating} across 8 canonical dimensions (UX Constitution v4.0 §6.4).",
+    summary = (
+        f"Purity evaluated as {rating} across 8 canonical dimensions "
+        "(UX Constitution v4.0 §6.4)."
+    )
+    if profile:
+        stored = schemas.QualityProfileResponse.model_validate(
+            profile, from_attributes=True
         )
-        db.add(profile)
-        db.commit()
-        db.refresh(profile)
-    else:
-        # Update existing profile
-        profile.purity_score = purity_score
-        profile.purity_rating = rating
-        profile.purity_findings = findings
-        profile.methodological_purity_flags = flags
-        db.commit()
-        db.refresh(profile)
+        return stored.model_copy(
+            update={
+                "purity_score": purity_score,
+                "purity_rating": rating,
+                "purity_findings": findings,
+                "methodological_purity_flags": flags,
+                "evaluation_summary": summary,
+            }
+        )
 
-    return profile
+    # GET remains a read: derive an unpersisted profile when no governed profile
+    # has been stored. This also makes concurrent React development reads safe.
+    return schemas.QualityProfileResponse(
+        id=f"derived:{claim_id}",
+        claim_id=claim_id,
+        purity_score=purity_score,
+        purity_rating=rating,
+        purity_findings=findings,
+        synthetic_data_leak=is_synthetic_leak,
+        external_data_leak=False,
+        corpus_coverage=90,
+        deep_analysis_coverage=70,
+        reproducibility_score=100,
+        unresolved_conflict_burden=0,
+        methodological_purity_flags=flags,
+        evaluation_summary=summary,
+        created_at=datetime.now(timezone.utc),
+    )
 
 
 # --- Audit & History Read Models (Slice G) ---

@@ -85,7 +85,10 @@ class SemanticClaimCreate(SemanticClaimBase):
 
 class SemanticClaimResponse(SemanticClaimBase):
     id: str
-    research_run_id: str
+    # Historical/governance claims may predate ResearchRun linkage. The create
+    # contract still requires a run, while read models must preserve that
+    # persisted distinction instead of failing serialization.
+    research_run_id: str | None = None
 
 
 class ReviewDecisionBase(BaseSchema):
@@ -546,3 +549,50 @@ class ReproductionManifestResponse(BaseSchema):
     generated_at: datetime
 
     model_config = ConfigDict(from_attributes=True)
+
+
+# --- Production UI read models ---
+class CorpusSnapshotResponse(BaseSchema):
+    id: str
+    canonical_text_source: str
+    canonical_text_version: str
+    validation_status: str
+    source_role_status: str
+    artifact_presence_status: str
+    hash_verification_status: str
+    import_validation_status: str
+    activation_status: str
+    artifact_provenance: str | None = None
+    fixture_only: bool
+    created_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+
+class AttentionCenterResponse(BaseSchema):
+    recent_runs: list[ResearchRunResponse] = []
+    review_required_claims: list[SemanticClaimResponse] = []
+    freshness_attention_claims: list[SemanticClaimResponse] = []
+    pending_proposals: list[ChangeProposalResponse] = []
+    recent_changes: list[AuditLogResponse] = []
+    corpus_snapshots: list[CorpusSnapshotResponse] = []
+
+
+class RunWorkspaceResponse(BaseSchema):
+    run: ResearchRunResponse
+    isolation_state: IsolationStateResponse | None = None
+    observations: list[ObservationArtifactResponse] = []
+    hypotheses: list[HypothesisResponse] = []
+    neighbors: list[EssentialNeighborResponse] = []
+    gates: list[GateReportResponse] = []
+    claims: list[SemanticClaimResponse] = []
+    claims_visible: bool
+    audit_events: list[AuditLogResponse] = []
+
+
+class GovernanceOverviewResponse(BaseSchema):
+    rules: list[GovernanceRuleResponse] = []
+    proposals: list[ChangeProposalResponse] = []
+    review_queue: list[SemanticClaimResponse] = []
+    freshness_queue: list[SemanticClaimResponse] = []
+    corpus_snapshots: list[CorpusSnapshotResponse] = []

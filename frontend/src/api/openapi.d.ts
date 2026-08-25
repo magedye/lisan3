@@ -55,6 +55,26 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/attention": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * Get Attention Center
+         * @description Read-only projection of persisted work that currently needs attention.
+         */
+        get: operations["get_attention_center_attention_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/runs/{run_id}": {
         parameters: {
             query?: never;
@@ -64,6 +84,26 @@ export interface paths {
         };
         /** Get Run */
         get: operations["get_run_runs__run_id__get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/runs/{run_id}/workspace": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * Get Run Workspace
+         * @description Aggregate persisted run artifacts without bypassing Blind Lab release.
+         */
+        get: operations["get_run_workspace_runs__run_id__workspace_get"];
         put?: never;
         post?: never;
         delete?: never;
@@ -242,6 +282,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/claims/{claim_id}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Get Claim */
+        get: operations["get_claim_claims__claim_id__get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/claims/{claim_id}/reviews": {
         parameters: {
             query?: never;
@@ -291,6 +348,26 @@ export interface paths {
          *     This does NOT create a domain Hypothesis immediately. It returns the AI Execution Record.
          */
         post: operations["ai_propose_hypothesis_runs__run_id__ai_propose_hypothesis_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/governance/overview": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * Get Governance Overview
+         * @description Read-only governance, review, and source-admission projection.
+         */
+        get: operations["get_governance_overview_governance_overview_get"];
+        put?: never;
+        post?: never;
         delete?: never;
         options?: never;
         head?: never;
@@ -679,6 +756,39 @@ export interface components {
             status: string;
             claim?: components["schemas"]["SemanticClaimResponse"] | null;
         };
+        /** AttentionCenterResponse */
+        AttentionCenterResponse: {
+            /**
+             * Recent Runs
+             * @default []
+             */
+            recent_runs: components["schemas"]["ResearchRunResponse"][];
+            /**
+             * Review Required Claims
+             * @default []
+             */
+            review_required_claims: components["schemas"]["SemanticClaimResponse"][];
+            /**
+             * Freshness Attention Claims
+             * @default []
+             */
+            freshness_attention_claims: components["schemas"]["SemanticClaimResponse"][];
+            /**
+             * Pending Proposals
+             * @default []
+             */
+            pending_proposals: components["schemas"]["ChangeProposalResponse"][];
+            /**
+             * Recent Changes
+             * @default []
+             */
+            recent_changes: components["schemas"]["AuditLogResponse"][];
+            /**
+             * Corpus Snapshots
+             * @default []
+             */
+            corpus_snapshots: components["schemas"]["CorpusSnapshotResponse"][];
+        };
         /** AuditLogResponse */
         AuditLogResponse: {
             /** Id */
@@ -780,6 +890,36 @@ export interface components {
             text: string;
             /** Id */
             id: string;
+            /**
+             * Created At
+             * Format: date-time
+             */
+            created_at: string;
+        };
+        /** CorpusSnapshotResponse */
+        CorpusSnapshotResponse: {
+            /** Id */
+            id: string;
+            /** Canonical Text Source */
+            canonical_text_source: string;
+            /** Canonical Text Version */
+            canonical_text_version: string;
+            /** Validation Status */
+            validation_status: string;
+            /** Source Role Status */
+            source_role_status: string;
+            /** Artifact Presence Status */
+            artifact_presence_status: string;
+            /** Hash Verification Status */
+            hash_verification_status: string;
+            /** Import Validation Status */
+            import_validation_status: string;
+            /** Activation Status */
+            activation_status: string;
+            /** Artifact Provenance */
+            artifact_provenance?: string | null;
+            /** Fixture Only */
+            fixture_only: boolean;
             /**
              * Created At
              * Format: date-time
@@ -900,6 +1040,34 @@ export interface components {
              * Format: date-time
              */
             created_at: string;
+        };
+        /** GovernanceOverviewResponse */
+        GovernanceOverviewResponse: {
+            /**
+             * Rules
+             * @default []
+             */
+            rules: components["schemas"]["GovernanceRuleResponse"][];
+            /**
+             * Proposals
+             * @default []
+             */
+            proposals: components["schemas"]["ChangeProposalResponse"][];
+            /**
+             * Review Queue
+             * @default []
+             */
+            review_queue: components["schemas"]["SemanticClaimResponse"][];
+            /**
+             * Freshness Queue
+             * @default []
+             */
+            freshness_queue: components["schemas"]["SemanticClaimResponse"][];
+            /**
+             * Corpus Snapshots
+             * @default []
+             */
+            corpus_snapshots: components["schemas"]["CorpusSnapshotResponse"][];
         };
         /** GovernanceRuleCreate */
         GovernanceRuleCreate: {
@@ -1378,6 +1546,43 @@ export interface components {
              */
             created_at: string;
         };
+        /** RunWorkspaceResponse */
+        RunWorkspaceResponse: {
+            run: components["schemas"]["ResearchRunResponse"];
+            isolation_state?: components["schemas"]["IsolationStateResponse"] | null;
+            /**
+             * Observations
+             * @default []
+             */
+            observations: components["schemas"]["ObservationArtifactResponse"][];
+            /**
+             * Hypotheses
+             * @default []
+             */
+            hypotheses: components["schemas"]["HypothesisResponse"][];
+            /**
+             * Neighbors
+             * @default []
+             */
+            neighbors: components["schemas"]["EssentialNeighborResponse"][];
+            /**
+             * Gates
+             * @default []
+             */
+            gates: components["schemas"]["GateReportResponse"][];
+            /**
+             * Claims
+             * @default []
+             */
+            claims: components["schemas"]["SemanticClaimResponse"][];
+            /** Claims Visible */
+            claims_visible: boolean;
+            /**
+             * Audit Events
+             * @default []
+             */
+            audit_events: components["schemas"]["AuditLogResponse"][];
+        };
         /** SemanticClaimCreate */
         SemanticClaimCreate: {
             /** Contract Type */
@@ -1494,7 +1699,7 @@ export interface components {
             /** Id */
             id: string;
             /** Research Run Id */
-            research_run_id: string;
+            research_run_id?: string | null;
         };
         /** StewardCommandCreate */
         StewardCommandCreate: {
@@ -1787,6 +1992,85 @@ export interface operations {
             };
         };
     };
+    get_attention_center_attention_get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["AttentionCenterResponse"];
+                };
+            };
+            /** @description Bad Request */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Unauthorized */
+            401: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Forbidden */
+            403: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Not Found */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Conflict */
+            409: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Internal Server Error */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+        };
+    };
     get_run_runs__run_id__get: {
         parameters: {
             query?: never;
@@ -1805,6 +2089,87 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["ResearchRunResponse"];
+                };
+            };
+            /** @description Bad Request */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Unauthorized */
+            401: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Forbidden */
+            403: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Not Found */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Conflict */
+            409: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Internal Server Error */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+        };
+    };
+    get_run_workspace_runs__run_id__workspace_get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                run_id: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["RunWorkspaceResponse"];
                 };
             };
             /** @description Bad Request */
@@ -2704,6 +3069,87 @@ export interface operations {
             };
         };
     };
+    get_claim_claims__claim_id__get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                claim_id: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["SemanticClaimResponse"];
+                };
+            };
+            /** @description Bad Request */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Unauthorized */
+            401: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Forbidden */
+            403: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Not Found */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Conflict */
+            409: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Internal Server Error */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+        };
+    };
     submit_review_decision_claims__claim_id__reviews_post: {
         parameters: {
             query?: never;
@@ -2892,6 +3338,85 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["AIExecutionRecordResponse"];
+                };
+            };
+            /** @description Bad Request */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Unauthorized */
+            401: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Forbidden */
+            403: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Not Found */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Conflict */
+            409: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Internal Server Error */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+        };
+    };
+    get_governance_overview_governance_overview_get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["GovernanceOverviewResponse"];
                 };
             };
             /** @description Bad Request */
