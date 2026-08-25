@@ -212,10 +212,36 @@ No implementation thread claim may grant independent confirmation or release acc
 - User-requested readiness indicator (not a canonical lifecycle state):
   `LISAN3_MODEL_INDEPENDENT_WORK_COMPLETE`.
 
+## Runtime and Golden UX Stabilization Checkpoint
+
+- Implementation candidate:
+  `b95894365e03e49c4a47ad4f489549b55fc34730`; status is implementation-side
+  `IMPLEMENTED` and `TESTED`, not independently reviewed or release accepted.
+- The active local DB failure was a pre-V3 database at legacy revision
+  `5542b3a62e23` against the intentional canonical root squash. The DB state was
+  `STALE_CONTEXT`; cwd-relative configuration and unconditional readiness were
+  separately corrected as a `PRODUCT_DEFECT`. No DB was deleted or stamped.
+- Backend and Alembic now share a deterministic repository-local SQLite target,
+  operational readiness fails closed on revision/table/column mismatch, and
+  startup instructions are reproducible from the root README.
+- The Golden Arabic RTL shell and truthful Attention Center are wired to the
+  existing Ask/Create Run interaction; `/audit` is now a production route over
+  the existing read-only backend contract. No Stitch fixture state or remote
+  prototype asset was introduced.
+- Clean detached verification applied the full migration chain to a fresh DB,
+  passed 134 pytest tests including seven Playwright journeys, Ruff, ESLint,
+  frontend production build, `pip check`, and production `npm audit`; Pyright
+  reported 0 errors and 145 existing warnings. Live backend readiness and all
+  eight frontend routes returned HTTP 200; Chromium reported no console errors.
+- Full durable evidence and inventories:
+  `docs/LISAN3_STABILIZATION_CHECKPOINT.md`.
+- R2 remains at the model-independent checkpoint; model selection/integration,
+  R3, and V4 remain unstarted.
+
 ## Exact Next Action
 
-Obtain the accepted `LISAN-Quran-Embedding` exported model artifact, governed
-manifest, and independent model-review evidence. Then form the decision-bound
-requirements, verify the immutable artifact without any research-checkout
-coupling, integrate only that accepted model into R2, run complete R2
-acceptance, and request one fresh independent R2 review. Do not begin R3 or V4.
+Request one fresh, independent, read-only review of stabilization candidate
+`b95894365e03e49c4a47ad4f489549b55fc34730` against
+`docs/LISAN3_STABILIZATION_CHECKPOINT.md`. Do not begin R3, V4, production
+embedding integration, or model work unless a later explicit owner instruction
+authorizes it.
