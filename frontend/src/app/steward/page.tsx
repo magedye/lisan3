@@ -1,15 +1,16 @@
 "use client";
 
+import type { components } from "@/api/openapi";
 import { useState } from "react";
 
+type StewardCommand = components["schemas"]["StewardCommandResponse"];
+type AuditLog = components["schemas"]["AuditLogResponse"];
+type CommandError = { detail?: string; message?: string };
+
 export default function StewardPage() {
-  const [commandType, setCommandType] = useState("METHODOLOGY_DIRECTIVE");
-  const [intent, setIntent] = useState("");
-  const [targetExpression, setTargetExpression] = useState("");
-  
-  const [result, setResult] = useState<any>(null);
-  const [error, setError] = useState<any>(null);
-  const [auditLogs, setAuditLogs] = useState<any[]>([]);
+  const [result, setResult] = useState<StewardCommand | null>(null);
+  const [error, setError] = useState<CommandError | null>(null);
+  const [auditLogs, setAuditLogs] = useState<AuditLog[]>([]);
 
   const executeValid = async () => {
     setError(null);
@@ -23,9 +24,9 @@ export default function StewardPage() {
       })
     });
     if (res.ok) {
-      setResult(await res.json());
+      setResult((await res.json()) as StewardCommand);
     } else {
-      setError(await res.json());
+      setError((await res.json()) as CommandError);
     }
   };
 
@@ -41,16 +42,16 @@ export default function StewardPage() {
       })
     });
     if (res.ok) {
-      setResult(await res.json());
+      setResult((await res.json()) as StewardCommand);
     } else {
-      setError(await res.json());
+      setError((await res.json()) as CommandError);
     }
   };
 
   const fetchLogs = async (cmdId: string) => {
     const res = await fetch(`/api/audit?entity_type=StewardCommand&entity_id=${cmdId}`);
     if (res.ok) {
-      setAuditLogs(await res.json());
+      setAuditLogs((await res.json()) as AuditLog[]);
     }
   };
 

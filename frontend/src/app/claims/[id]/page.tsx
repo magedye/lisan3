@@ -1,28 +1,37 @@
 "use client";
 
+import type { components } from "@/api/openapi";
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
+
+type QualityProfile = components["schemas"]["QualityProfileResponse"];
+type ReproductionManifest = components["schemas"]["ReproductionManifestResponse"];
+type Provenance = {
+  corpus_snapshot: string;
+  dependencies: unknown[];
+  audit_trail: unknown[];
+};
 
 export default function ClaimPage() {
   const params = useParams();
   const claimId = params.id as string;
 
-  const [provenance, setProvenance] = useState<any>(null);
-  const [quality, setQuality] = useState<any>(null);
-  const [manifest, setManifest] = useState<any>(null);
+  const [provenance, setProvenance] = useState<Provenance | null>(null);
+  const [quality, setQuality] = useState<QualityProfile | null>(null);
+  const [manifest, setManifest] = useState<ReproductionManifest | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchClaimData() {
       try {
         const provRes = await fetch(`/api/claims/${claimId}/provenance`);
-        if (provRes.ok) setProvenance(await provRes.json());
+        if (provRes.ok) setProvenance((await provRes.json()) as Provenance);
 
         const qualRes = await fetch(`/api/claims/${claimId}/quality`);
-        if (qualRes.ok) setQuality(await qualRes.json());
+        if (qualRes.ok) setQuality((await qualRes.json()) as QualityProfile);
 
         const manRes = await fetch(`/api/claims/${claimId}/reproduction_manifest`);
-        if (manRes.ok) setManifest(await manRes.json());
+        if (manRes.ok) setManifest((await manRes.json()) as ReproductionManifest);
       } catch (err) {
         console.error(err);
       } finally {

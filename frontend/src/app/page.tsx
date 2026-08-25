@@ -1,33 +1,36 @@
 "use client";
 
-import { useState } from "react";
+import type { components } from "@/api/openapi";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
-export default function AskLisan() {
+type AskResponse = components["schemas"]["AskLisanResponse"];
+
+export default function AttentionCenter() {
   const [expression, setExpression] = useState("");
   const [contractType, setContractType] = useState("ROOT_CORE");
   const [loading, setLoading] = useState(false);
-  const [result, setResult] = useState<string | null>(null);
-  const [claim, setClaim] = useState<any>(null);
+  const [result, setResult] = useState<AskResponse | null>(null);
+  const [error, setError] = useState<string | null>(null);
   const router = useRouter();
 
-  const handleAsk = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleAsk = async (event: React.FormEvent) => {
+    event.preventDefault();
     setLoading(true);
     setResult(null);
+    setError(null);
 
     try {
-      const res = await fetch("/api/ask", {
+      const response = await fetch("/api/ask", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ expression, contract_type: contractType })
+        body: JSON.stringify({ expression, contract_type: contractType }),
       });
-      const data = await res.json();
-      setResult(data.status);
-      setClaim(data.claim);
-    } catch (err) {
-      console.error(err);
-      setResult("ERROR");
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      setResult((await response.json()) as AskResponse);
+    } catch {
+      setError("تعذّر الاتصال بالخدمة الخلفية. تحقّق من جاهزية قاعدة البيانات.");
     } finally {
       setLoading(false);
     }
@@ -35,8 +38,9 @@ export default function AskLisan() {
 
   const startResearch = async () => {
     setLoading(true);
+    setError(null);
     try {
-      const res = await fetch("/api/runs", {
+      const response = await fetch("/api/runs", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -44,76 +48,105 @@ export default function AskLisan() {
           target_expression: expression,
           methodology_revision: "v7.1",
           corpus_snapshot: "current",
-          authority_context: { initiator: "local_user" }
-        })
+          authority_context: { initiator: "local_user" },
+        }),
       });
-      const runData = await res.json();
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const runData = (await response.json()) as { id: string };
       router.push(`/run/${runData.id}`);
-    } catch (err) {
-      console.error(err);
+    } catch {
+      setError("تعذّر إنشاء مسار البحث. لم تُكتب حالة بحث جديدة.");
       setLoading(false);
     }
   };
 
   return (
-    <main className="min-h-screen p-12 bg-slate-50 flex justify-center items-start">
-      <div className="w-full max-w-2xl bg-white p-8 rounded-xl shadow-sm border border-slate-200 mt-20">
-        <h1 className="text-3xl font-bold text-slate-800 mb-6">اسأل لسان (Ask Lisan)</h1>
-        
-        <form onSubmit={handleAsk} className="space-y-4">
+    <main className="page-frame">
+      <section className="page-heading">
+        <div>
+          <span className="eyebrow">Golden UX · Attention Center</span>
+          <h1>مركز الانتباه — اسأل لسان (Ask Lisan)</h1>
+          <p>ابدأ من سؤال موثّق، ثم انتقل إلى مسار بحث محكوم عند غياب الدليل.</p>
+        </div>
+        <span className="truth-badge">لا بيانات نموذجية</span>
+      </section>
+
+      <section className="attention-grid" aria-label="ملخص مركز الانتباه">
+        <article className="attention-card attention-notice">
+          <span className="card-kicker">التنبيهات التشغيلية</span>
+          <strong>عقد قراءة مركز الانتباه غير متاح بعد</strong>
+          <p>لن تعرض الواجهة مهام أو أرقامًا افتراضية. استخدم المسارات الفعلية أدناه.</p>
+        </article>
+        <Link className="attention-card linked-card" href="/audit">
+          <span className="card-kicker">قابل للتتبع</span>
+          <strong>سجل التدقيق</strong>
+          <p>اقرأ أحداث النظام المسجلة من واجهة التدقيق الفعلية.</p>
+        </Link>
+        <Link className="attention-card linked-card" href="/governance">
+          <span className="card-kicker">ضوابط مستقلة</span>
+          <strong>مركز الحوكمة</strong>
+          <p>راجع المقترحات وسجل المراجعات دون اختزال حالات السلطة.</p>
+        </Link>
+      </section>
+
+      <section className="ask-panel">
+        <div className="section-title">
           <div>
-            <label className="block text-sm font-medium text-slate-700 mb-1">Target Expression</label>
-            <input 
-              type="text" 
+            <span className="eyebrow">مدخل بحث فعلي</span>
+            <h2>اسأل عن لفظ أو جذر</h2>
+          </div>
+          <span className="contract-note">بحث عقدي، لا إجابة مولّدة</span>
+        </div>
+
+        <form onSubmit={handleAsk} className="ask-form">
+          <label>
+            <span>اللفظ المستهدف</span>
+            <input
+              type="text"
               value={expression}
-              onChange={(e) => setExpression(e.target.value)}
-              className="w-full border border-slate-300 rounded-md p-2"
+              onChange={(event) => setExpression(event.target.value)}
               placeholder="e.g. ضرب"
               required
             />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-slate-700 mb-1">Contract Type</label>
-            <select 
-              value={contractType}
-              onChange={(e) => setContractType(e.target.value)}
-              className="w-full border border-slate-300 rounded-md p-2"
-            >
-              <option value="ROOT_CORE">Root Core (المعنى المحوري)</option>
-              <option value="LOCAL_MEANING">Local Meaning (المعنى الموضعي)</option>
+          </label>
+          <label>
+            <span>نوع العقد الدلالي</span>
+            <select value={contractType} onChange={(event) => setContractType(event.target.value)}>
+              <option value="ROOT_CORE">المعنى المحوري (Root Core)</option>
+              <option value="LOCAL_MEANING">المعنى الموضعي (Local Meaning)</option>
             </select>
-          </div>
-          <button 
-            type="submit" 
-            disabled={loading}
-            className="w-full bg-primary-600 hover:bg-primary-500 text-white font-medium py-2 rounded-md transition-colors"
-          >
-            {loading ? "Searching..." : "Search"}
+          </label>
+          <button type="submit" disabled={loading} className="primary-action">
+            {loading ? "Searching..." : "Search — بحث"}
           </button>
         </form>
 
-        {result === "INSUFFICIENT_EVIDENCE" && (
-          <div className="mt-8 p-6 bg-amber-50 border border-amber-200 rounded-md">
-            <h3 className="text-lg font-semibold text-amber-800">Insufficient Evidence</h3>
-            <p className="text-amber-700 mt-1">
-              No locked semantic claim exists for <strong>{expression}</strong> ({contractType}).
+        {error && <div className="result-panel error-panel" role="alert">{error}</div>}
+
+        {result?.status === "INSUFFICIENT_EVIDENCE" && (
+          <div className="result-panel evidence-gap">
+            <h3>Insufficient Evidence — الدليل غير كافٍ</h3>
+            <p>
+              لا توجد دعوى دلالية مقفلة للفظ <strong>{expression}</strong> ضمن العقد {contractType}.
             </p>
-            <button 
-              onClick={startResearch}
-              className="mt-4 px-4 py-2 bg-amber-600 hover:bg-amber-500 text-white rounded-md text-sm font-medium transition-colors"
-            >
-              Start Research Run
+            <button onClick={startResearch} className="secondary-action" disabled={loading}>
+              Start Research Run — ابدأ مسار بحث
             </button>
           </div>
         )}
 
-        {result === "FOUND" && claim && (
-          <div className="mt-8 p-6 bg-green-50 border border-green-200 rounded-md">
-            <h3 className="text-lg font-semibold text-green-800">Found Locked Claim</h3>
-            <p className="text-green-700 mt-1">Status: {claim.official_status}</p>
+        {result?.status === "FOUND" && result.claim && (
+          <div className="result-panel found-panel">
+            <h3>دعوى دلالية موجودة</h3>
+            <dl className="state-grid">
+              <div><dt>المعرف</dt><dd>{result.claim.id}</dd></div>
+              <div><dt>المعرفي</dt><dd>{result.claim.epistemic_state}</dd></div>
+              <div><dt>المراجعة</dt><dd>{result.claim.review_state}</dd></div>
+              <div><dt>النشر</dt><dd>{result.claim.publication_state}</dd></div>
+            </dl>
           </div>
         )}
-      </div>
+      </section>
     </main>
   );
 }

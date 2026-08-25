@@ -1,12 +1,15 @@
 "use client";
 
+import type { components } from "@/api/openapi";
 import { useState } from "react";
+
+type RuleHistory = components["schemas"]["RuleHistoryResponse"];
 
 export default function GovernancePage() {
   const [ruleCode, setRuleCode] = useState("RULE_E2E_ROOT");
   const [proposedChanges, setProposedChanges] = useState("");
   const [proposalId, setProposalId] = useState("");
-  const [history, setHistory] = useState<any>(null);
+  const [history, setHistory] = useState<RuleHistory | null>(null);
 
   const submitProposal = async () => {
     const res = await fetch("/api/governance/proposals", {
@@ -15,7 +18,7 @@ export default function GovernancePage() {
       body: JSON.stringify({ rule_code: ruleCode, proposed_changes: proposedChanges })
     });
     if (res.ok) {
-      const data = await res.json();
+      const data = (await res.json()) as { id: string };
       setProposalId(data.id);
     }
   };
@@ -27,7 +30,7 @@ export default function GovernancePage() {
   const checkHistory = async () => {
     const res = await fetch(`/api/governance/rules/${ruleCode}/history`);
     if (res.ok) {
-      setHistory(await res.json());
+      setHistory((await res.json()) as RuleHistory);
     }
   };
 

@@ -1,12 +1,15 @@
 "use client";
 
+import type { components } from "@/api/openapi";
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
+
+type ResearchRun = components["schemas"]["ResearchRunResponse"];
 
 export default function ResearchRunPage() {
   const params = useParams();
   const runId = params.id as string;
-  const [run, setRun] = useState<any>(null);
+  const [run, setRun] = useState<ResearchRun | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -15,7 +18,7 @@ export default function ResearchRunPage() {
         const res = await fetch(`/api/runs/${runId}`);
         if (res.ok) {
           const data = await res.json();
-          setRun(data);
+          setRun(data as ResearchRun);
         }
       } catch (err) {
         console.error(err);

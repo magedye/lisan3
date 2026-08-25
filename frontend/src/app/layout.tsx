@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { AppShell } from "@/components/app-shell";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
-  title: "Lisanapp",
-  description: "Lisan Quranic Semantic Extraction and Governance",
+  title: "لسان | منصة البحث الدلالي المحكوم",
+  description: "منصة لسان للاستخراج الدلالي القرآني والحوكمة",
 };
 
 export default function RootLayout({
@@ -16,8 +14,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
-      <body className={`${inter.className} antialiased bg-slate-50 text-slate-900`}>
-        {children}
+      <body>
+        <AppShell>{children}</AppShell>
       </body>
     </html>
   );

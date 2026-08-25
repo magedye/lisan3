@@ -1,15 +1,36 @@
 "use client";
 
+import type { components } from "@/api/openapi";
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
+
+type ResearchRun = components["schemas"]["ResearchRunResponse"];
+type IsolationState = components["schemas"]["IsolationStateResponse"];
+type CorpusOccurrence = components["schemas"]["CorpusOccurrenceResponse"];
+
+function errorMessage(caught: unknown) {
+  return caught instanceof Error ? caught.message : "Unexpected request failure";
+}
+
+function validationMessage(payload: unknown) {
+  if (!payload || typeof payload !== "object" || !("detail" in payload)) {
+    return "Validation failed";
+  }
+  const detail = payload.detail;
+  if (typeof detail === "string") return detail;
+  if (Array.isArray(detail) && detail[0] && typeof detail[0].msg === "string") {
+    return detail[0].msg;
+  }
+  return "Validation failed";
+}
 
 export default function BlindLabPage() {
   const params = useParams();
   const runId = params.id as string;
   
-  const [run, setRun] = useState<any>(null);
-  const [isoState, setIsoState] = useState<any>(null);
-  const [corpus, setCorpus] = useState<any[]>([]);
+  const [run, setRun] = useState<ResearchRun | null>(null);
+  const [isoState, setIsoState] = useState<IsolationState | null>(null);
+  const [corpus, setCorpus] = useState<CorpusOccurrence[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -23,22 +44,22 @@ export default function BlindLabPage() {
       try {
         const runRes = await fetch(`/api/runs/${runId}`);
         if (!runRes.ok) throw new Error("Run not found");
-        setRun(await runRes.json());
+        setRun((await runRes.json()) as ResearchRun);
 
         const isoRes = await fetch(`/api/runs/${runId}/blind`);
         if (isoRes.ok) {
-          const isoData = await isoRes.json();
+          const isoData = (await isoRes.json()) as IsolationState;
           setIsoState(isoData);
           
           if (isoData.is_contaminated !== "PRIOR_CONTAMINATED") {
             const corpusRes = await fetch(`/api/runs/${runId}/corpus`);
             if (corpusRes.ok) {
-              setCorpus(await corpusRes.json());
+              setCorpus((await corpusRes.json()) as CorpusOccurrence[]);
             }
           }
         }
-      } catch (err: any) {
-        setError(err.message);
+      } catch (caught: unknown) {
+        setError(errorMessage(caught));
       } finally {
         setLoading(false);
       }
@@ -47,6 +68,7 @@ export default function BlindLabPage() {
   }, [runId]);
 
   const startPreflight = async () => {
+    if (!run) return;
     setLoading(true);
     try {
       const res = await fetch(`/api/runs/${runId}/blind/preflight`, {
@@ -82,16 +104,16 @@ export default function BlindLabPage() {
           syntax
         })
       });
-      const data = await res.json();
+      const data: unknown = await res.json();
       if (!res.ok) {
-        setObsError(data.detail[0]?.msg || data.detail || "Validation failed");
+        setObsError(validationMessage(data));
       } else {
         alert("Observation recorded successfully!");
         setForm("");
         setSyntax("");
       }
-    } catch (err: any) {
-      setObsError(err.message);
+    } catch (caught: unknown) {
+      setObsError(errorMessage(caught));
     }
   };
 
@@ -106,6 +128,7 @@ export default function BlindLabPage() {
 
   if (loading) return <div className="p-12 text-center">Loading Blind Lab state...</div>;
   if (error) return <div className="p-12 text-center text-red-600">{error}</div>;
+  if (!run) return <div className="p-12 text-center text-red-600">Run not found.</div>;
 
   return (
     <main className="min-h-screen p-12 bg-slate-50">
