@@ -1,5 +1,4 @@
 import uuid
-from contextlib import asynccontextmanager
 from datetime import datetime, timezone
 
 from fastapi import Depends, FastAPI, HTTPException, Query, Request
@@ -22,22 +21,12 @@ from .domain.services.knowledge_graph import (
     KnowledgeGraphService,
 )
 from .domain.services.purity import evaluate_methodological_purity
-from .infrastructure.database import create_db_and_tables, get_db
-
-
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    # On startup
-    create_db_and_tables()
-    yield
-    # On shutdown
-
+from .infrastructure.database import database_schema_status, get_db
 
 app = FastAPI(
     title="Lisanapp API",
     description="Canonical backend for Lisan Semantic Extraction and Governance",
     version="1.0.0",
-    lifespan=lifespan,
     responses={
         400: {"model": schemas.ErrorResponse, "description": "Bad Request"},
         403: {"model": schemas.ErrorResponse, "description": "Forbidden"},
@@ -1231,18 +1220,23 @@ def get_run_reproduction_manifest(run_id: str, db: Session = Depends(get_db)):
 
 
 @app.get("/operations/health")
-def get_system_health():
+def get_system_health(db: Session = Depends(get_db)):
     """
     System health and configuration dump.
     """
-    return {
-        "status": "HEALTHY",
+    database = database_schema_status(db)
+    payload = {
+        "status": "HEALTHY" if database["status"] == "CURRENT" else "BLOCKED",
         "configuration": {
             "environment": "trusted_local_single_user",
             "ai_governance": "enforced",
             "auth": "mocked",
         },
+        "database": database,
     }
+    if database["status"] != "CURRENT":
+        return JSONResponse(status_code=503, content=payload)
+    return payload
 
 
 # Globally add 400, 401, 403, 404, 409 responses for OpenAPI schema validation

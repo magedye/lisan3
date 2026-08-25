@@ -2,7 +2,7 @@ import uuid
 
 import pytest
 from fastapi.testclient import TestClient
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, text
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 
@@ -18,6 +18,11 @@ engine = create_engine(
 )
 TestingSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base.metadata.create_all(bind=engine)
+with engine.begin() as connection:
+    connection.execute(text("CREATE TABLE alembic_version (version_num VARCHAR(32))"))
+    connection.execute(
+        text("INSERT INTO alembic_version VALUES ('c9e2a7f4b6d1')")
+    )
 
 client = TestClient(app)
 
@@ -341,6 +346,7 @@ def test_operations_health():
     data = res.json()
     assert data["status"] == "HEALTHY"
     assert data["configuration"]["ai_governance"] == "enforced"
+    assert data["database"]["status"] == "CURRENT"
 
 
 def test_missing_run_semantic_dictionary_is_contractual_404():

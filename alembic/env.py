@@ -11,10 +11,13 @@ from alembic import context
 
 # Importing the model module registers every table on the shared Base metadata.
 from backend.domain.models import Base
+from backend.infrastructure.database import SQLALCHEMY_DATABASE_URL
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
 config = context.config
+if config.get_main_option("sqlalchemy.url") == "sqlite:///lisanapp.db":
+    config.set_main_option("sqlalchemy.url", SQLALCHEMY_DATABASE_URL.replace("%", "%%"))
 
 # Interpret the config file for Python logging.
 # This line sets up loggers basically.
