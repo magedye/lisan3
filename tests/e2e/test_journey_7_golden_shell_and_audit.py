@@ -1,3 +1,5 @@
+import re
+
 from playwright.sync_api import Page, expect
 
 from backend.domain.models import AuditLog, ResearchRun, SemanticClaim
@@ -40,12 +42,14 @@ def test_journey_7_golden_shell_and_real_audit(page: Page, e2e_server: dict):
     page.goto(e2e_server["base_url"])
     expect(page.get_by_role("navigation", name="التنقل الرئيسي")).to_be_visible()
     expect(page.get_by_role("heading", name="مركز الانتباه — اسأل لسان (Ask Lisan)")).to_be_visible()
-    expect(page.get_by_text("لا بيانات نموذجية", exact=True)).to_be_visible()
+    expect(page.locator(".status-badge.status-positive")).to_contain_text(
+        "بيانات فعلية فقط"
+    )
 
     page.get_by_placeholder("e.g. ضرب").fill("نور")
     page.get_by_role("button", name="Search — بحث").click()
     found_claim = page.locator(".found-panel")
-    expect(found_claim).to_contain_text("المعرفي")
+    expect(found_claim).to_contain_text("الحالة المعرفية")
     expect(found_claim).to_contain_text("LOCK_INTERNAL_RESULT")
     expect(found_claim).to_contain_text("المراجعة")
     expect(found_claim).to_contain_text("NOT_REVIEWED")
@@ -54,8 +58,10 @@ def test_journey_7_golden_shell_and_real_audit(page: Page, e2e_server: dict):
     expect(found_claim).to_contain_text("النشر")
     expect(found_claim).to_contain_text("PRIVATE_WORKING")
 
-    page.get_by_role("link", name="سجل التدقيق").first.click()
+    page.get_by_role("link", name=re.compile("التشغيل والتدقيق")).first.click()
     expect(page).to_have_url(f"{e2e_server['base_url']}/audit")
     expect(page.get_by_role("heading", name="سجل التدقيق")).to_be_visible()
     expect(page.get_by_text("RouteSmoke", exact=True)).to_be_visible()
-    expect(page.get_by_text("READ_MODEL_AVAILABLE", exact=True)).to_be_visible()
+    expect(
+        page.get_by_role("cell", name="READ_MODEL_AVAILABLE", exact=True)
+    ).to_be_visible()

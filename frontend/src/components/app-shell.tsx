@@ -2,12 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 const navigation = [
-  { href: "/", label: "مركز الانتباه", marker: "⌂" },
-  { href: "/governance", label: "الحوكمة", marker: "◇" },
-  { href: "/steward", label: "مركز المشرف", marker: "△" },
-  { href: "/audit", label: "سجل التدقيق", marker: "≡" },
+  { href: "/", label: "مركز الانتباه", marker: "⌂", description: "البحث والتشغيلات" },
+  { href: "/governance", label: "الحوكمة والمراجعة", marker: "◇", description: "القواعد والقبول" },
+  { href: "/steward", label: "Steward", marker: "△", description: "أوامر محكومة" },
+  { href: "/audit", label: "التشغيل والتدقيق", marker: "≡", description: "الأحداث والتتبع" },
 ];
 
 function isActive(pathname: string, href: string) {
@@ -16,15 +17,30 @@ function isActive(pathname: string, href: string) {
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="app-shell">
-      <aside className="app-sidebar">
-        <Link className="brand" href="/" aria-label="لسان — الصفحة الرئيسية">
-          <span className="brand-mark" aria-hidden="true">ل</span>
+      <button
+        type="button"
+        className="mobile-menu-button"
+        aria-expanded={menuOpen}
+        aria-controls="primary-sidebar"
+        onClick={() => setMenuOpen((value) => !value)}
+      >
+        <span aria-hidden="true">☰</span>
+        <span>القائمة</span>
+      </button>
+      {menuOpen && (
+        <button className="sidebar-backdrop" aria-label="إغلاق القائمة" onClick={() => setMenuOpen(false)} />
+      )}
+
+      <aside id="primary-sidebar" className={`app-sidebar${menuOpen ? " sidebar-open" : ""}`}>
+        <Link className="brand" href="/" aria-label="لسان — الصفحة الرئيسية" onClick={() => setMenuOpen(false)}>
+          <span className="brand-mark" aria-hidden="true">لـ</span>
           <span>
             <strong>لسان</strong>
-            <small>منصة البحث الدلالي المحكوم</small>
+            <small>Lisan Governed Research</small>
           </span>
         </Link>
 
@@ -35,9 +51,13 @@ export function AppShell({ children }: { children: React.ReactNode }) {
               href={item.href}
               className={isActive(pathname, item.href) ? "active" : undefined}
               aria-current={isActive(pathname, item.href) ? "page" : undefined}
+              onClick={() => setMenuOpen(false)}
             >
-              <span aria-hidden="true">{item.marker}</span>
-              {item.label}
+              <span className="nav-marker" aria-hidden="true">{item.marker}</span>
+              <span>
+                <b>{item.label}</b>
+                <small>{item.description}</small>
+              </span>
             </Link>
           ))}
         </nav>
@@ -45,16 +65,22 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         <div className="sidebar-context">
           <span className="status-dot" aria-hidden="true" />
           <span>
-            <strong>مساحة عمل محلية</strong>
-            <small>البيانات المعروضة من العقود الفعلية فقط</small>
+            <strong>مساحة عمل محلية موثوقة</strong>
+            <small>لا صلاحية معرفية مستنتجة من الواجهة</small>
           </span>
         </div>
       </aside>
 
       <div className="app-content">
         <header className="topbar">
-          <span>بيئة لسان البحثية</span>
-          <span className="context-chip">RTL · Trusted local</span>
+          <div>
+            <strong>بيئة البحث الدلالي المحكوم</strong>
+            <span>العقود الفعلية · بيانات محلية</span>
+          </div>
+          <div className="topbar-actions">
+            <Link href="/steward" className="button button-secondary button-small">فتح Steward</Link>
+            <span className="context-chip">RTL · LOCAL</span>
+          </div>
         </header>
         {children}
       </div>

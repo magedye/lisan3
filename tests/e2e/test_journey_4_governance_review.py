@@ -56,18 +56,21 @@ def test_journey_4_governance_review(page: Page, e2e_server: dict):
     page.goto(f"{base_url}/governance")
     expect(page.locator("h1")).to_contain_text("Governance Center")
     
-    page.fill("input[placeholder='Rule Code']", "RULE_E2E_ROOT")
-    page.fill("textarea[placeholder='Proposed changes']", "Introduce strict non-circularity constraint in rejection conditions.")
+    page.fill("#proposal-rule-code", "RULE_E2E_ROOT")
+    page.fill("#proposed-changes", "Introduce strict non-circularity constraint in rejection conditions.")
     page.click("button:has-text('Submit Proposal')")
 
     # 3. Approve ChangeProposal
-    expect(page.locator("text=Proposal ID: ")).to_be_visible(timeout=10000)
+    expect(
+        page.get_by_role("status").filter(has_text="Proposal ID:")
+    ).to_be_visible(timeout=10000)
+    page.click("button:has-text('Approve Proposal')")
     with page.expect_response(
         lambda response: response.request.method == "POST"
         and "/governance/proposals/" in response.url
         and response.url.endswith("/approve")
     ) as approval_response:
-        page.click("button:has-text('Approve Proposal')")
+        page.get_by_role("button", name="تأكيد الاعتماد").click()
     assert approval_response.value.status == 200
 
     # 4. Verify Rule History shows active revision 2

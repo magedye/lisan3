@@ -1,107 +1,156 @@
 "use client";
 
 import type { components } from "@/api/openapi";
+import { EmptyState, ErrorState, LoadingState, PageHeader, Panel } from "@/components/page-primitives";
+import { StatusAxes } from "@/components/status-axes";
+import { apiFetch } from "@/lib/api";
+import { useApiResource } from "@/lib/use-api-resource";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 type AskResponse = components["schemas"]["AskLisanResponse"];
+type AttentionResponse = components["schemas"]["AttentionCenterResponse"];
+type ResearchRun = components["schemas"]["ResearchRunResponse"];
 
 export default function AttentionCenter() {
+  const attention = useApiResource<AttentionResponse>("/api/attention");
   const [expression, setExpression] = useState("");
   const [contractType, setContractType] = useState("ROOT_CORE");
-  const [loading, setLoading] = useState(false);
+  const [methodologyRevision, setMethodologyRevision] = useState("");
+  const [corpusSnapshot, setCorpusSnapshot] = useState("");
+  const [submitting, setSubmitting] = useState(false);
   const [result, setResult] = useState<AskResponse | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  const [actionError, setActionError] = useState<string | null>(null);
   const router = useRouter();
 
-  const handleAsk = async (event: React.FormEvent) => {
+  async function handleAsk(event: React.FormEvent) {
     event.preventDefault();
-    setLoading(true);
+    setSubmitting(true);
     setResult(null);
-    setError(null);
-
+    setActionError(null);
     try {
-      const response = await fetch("/api/ask", {
+      const response = await apiFetch<AskResponse>("/api/ask", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ expression, contract_type: contractType }),
       });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      setResult((await response.json()) as AskResponse);
-    } catch {
-      setError("تعذّر الاتصال بالخدمة الخلفية. تحقّق من جاهزية قاعدة البيانات.");
+      setResult(response);
+    } catch (reason) {
+      setActionError(reason instanceof Error ? reason.message : "تعذر الاتصال بالخدمة الخلفية.");
     } finally {
-      setLoading(false);
+      setSubmitting(false);
     }
-  };
+  }
 
-  const startResearch = async () => {
-    setLoading(true);
-    setError(null);
+  async function startResearch() {
+    if (!methodologyRevision.trim() || !corpusSnapshot.trim()) {
+      setActionError("أدخل مرجع المنهجية ومعرّف Corpus Snapshot الفعليين قبل إنشاء التشغيل.");
+      return;
+    }
+    setSubmitting(true);
+    setActionError(null);
     try {
-      const response = await fetch("/api/runs", {
+      const run = await apiFetch<ResearchRun>("/api/runs", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           target_contract: contractType,
           target_expression: expression,
-          methodology_revision: "v7.1",
-          corpus_snapshot: "current",
-          authority_context: { initiator: "local_user" },
+          methodology_revision: methodologyRevision,
+          corpus_snapshot: corpusSnapshot,
+          authority_context: { initiator: "trusted_local_user" },
         }),
       });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      const runData = (await response.json()) as { id: string };
-      router.push(`/run/${runData.id}`);
-    } catch {
-      setError("تعذّر إنشاء مسار البحث. لم تُكتب حالة بحث جديدة.");
-      setLoading(false);
+      router.push(`/run/${run.id}`);
+    } catch (reason) {
+      setActionError(reason instanceof Error ? reason.message : "تعذر إنشاء تشغيل البحث.");
+      setSubmitting(false);
     }
-  };
+  }
+
+  const data = attention.data;
 
   return (
     <main className="page-frame">
-      <section className="page-heading">
-        <div>
-          <span className="eyebrow">Golden UX · Attention Center</span>
-          <h1>مركز الانتباه — اسأل لسان (Ask Lisan)</h1>
-          <p>ابدأ من سؤال موثّق، ثم انتقل إلى مسار بحث محكوم عند غياب الدليل.</p>
-        </div>
-        <span className="truth-badge">لا بيانات نموذجية</span>
-      </section>
+      <PageHeader
+        eyebrow="RES-HOME-01 · Golden Production"
+        title="مركز الانتباه — اسأل لسان (Ask Lisan)"
+        description="نقطة دخول إلى البحث المحكوم: بيانات الانتباه من الحالة المحفوظة، والإجابة من العقود القائمة فقط."
+        actions={<span className="status-badge status-positive"><span aria-hidden="true">●</span> بيانات فعلية فقط</span>}
+      />
 
-      <section className="attention-grid" aria-label="ملخص مركز الانتباه">
-        <article className="attention-card attention-notice">
-          <span className="card-kicker">التنبيهات التشغيلية</span>
-          <strong>عقد قراءة مركز الانتباه غير متاح بعد</strong>
-          <p>لن تعرض الواجهة مهام أو أرقامًا افتراضية. استخدم المسارات الفعلية أدناه.</p>
-        </article>
-        <Link className="attention-card linked-card" href="/audit">
-          <span className="card-kicker">قابل للتتبع</span>
-          <strong>سجل التدقيق</strong>
-          <p>اقرأ أحداث النظام المسجلة من واجهة التدقيق الفعلية.</p>
-        </Link>
-        <Link className="attention-card linked-card" href="/governance">
-          <span className="card-kicker">ضوابط مستقلة</span>
-          <strong>مركز الحوكمة</strong>
-          <p>راجع المقترحات وسجل المراجعات دون اختزال حالات السلطة.</p>
-        </Link>
-      </section>
+      {attention.loading && <LoadingState label="جارٍ تجميع مركز الانتباه من السجلات الفعلية…" />}
+      {attention.error && <ErrorState message={attention.error} retry={attention.reload} />}
+      {data && (
+        <>
+          <section className="metric-grid" aria-label="ملخص الانتباه الفعلي">
+            <article className="metric-card information">
+              <span>أحدث تشغيلات البحث</span>
+              <strong>{data.recent_runs.length}</strong>
+              <small>معروضة من ResearchRun المحفوظ</small>
+            </article>
+            <article className="metric-card warning">
+              <span>تحتاج مراجعة</span>
+              <strong>{data.review_required_claims.length}</strong>
+              <small>وفق محور المراجعة المستقل</small>
+            </article>
+            <article className="metric-card stale">
+              <span>تحتاج تحديثاً</span>
+              <strong>{data.freshness_attention_claims.length}</strong>
+              <small>STALE / INVALIDATED / REVALIDATION</small>
+            </article>
+            <article className="metric-card positive">
+              <span>مقترحات حوكمة معلقة</span>
+              <strong>{data.pending_proposals.length}</strong>
+              <small>PROPOSED فقط</small>
+            </article>
+          </section>
 
-      <section className="ask-panel">
-        <div className="section-title">
-          <div>
-            <span className="eyebrow">مدخل بحث فعلي</span>
-            <h2>اسأل عن لفظ أو جذر</h2>
+          <div className="two-column">
+            <Panel title="أبحاث حديثة" eyebrow="Resume · Durable Runs">
+              {data.recent_runs.length === 0 ? (
+                <EmptyState title="لا توجد تشغيلات بحث" detail="أنشئ تشغيلاً من مسار عدم كفاية الأدلة أدناه." />
+              ) : (
+                <div className="stack">
+                  {data.recent_runs.map((run) => (
+                    <Link key={run.id} href={`/run/${run.id}`} className="list-card">
+                      <strong>{run.target_expression}</strong>
+                      <span>{run.current_stage} · {run.status}</span>
+                      <small className="technical-text">{run.id} · {run.methodology_revision}</small>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </Panel>
+
+            <Panel title="تغيّرات حديثة" eyebrow="Audit-backed">
+              {data.recent_changes.length === 0 ? (
+                <EmptyState title="لا توجد أحداث مسجلة" detail="لن تملأ الواجهة هذا القسم بسجلات تجريبية." />
+              ) : (
+                <div className="stack">
+                  {data.recent_changes.slice(0, 5).map((event) => (
+                    <div className="list-card" key={event.id}>
+                      <strong>{event.action}</strong>
+                      <span>{event.entity_type}</span>
+                      <small>{new Intl.DateTimeFormat("ar", { dateStyle: "medium", timeStyle: "short" }).format(new Date(event.created_at))}</small>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </Panel>
           </div>
-          <span className="contract-note">بحث عقدي، لا إجابة مولّدة</span>
-        </div>
+        </>
+      )}
 
-        <form onSubmit={handleAsk} className="ask-form">
-          <label>
+      <Panel title="اسأل عن لفظ أو جذر" eyebrow="Governed Ask" className="ask-workspace">
+        <form onSubmit={handleAsk} className="form-grid form-grid-3" id="ask">
+          <label className="form-field">
             <span>اللفظ المستهدف</span>
             <input
+              id="ask-expression"
+              name="expression"
+              className="input"
               type="text"
               value={expression}
               onChange={(event) => setExpression(event.target.value)}
@@ -109,45 +158,61 @@ export default function AttentionCenter() {
               required
             />
           </label>
-          <label>
+          <label className="form-field">
             <span>نوع العقد الدلالي</span>
-            <select value={contractType} onChange={(event) => setContractType(event.target.value)}>
+            <select id="ask-contract" name="contract_type" className="select" value={contractType} onChange={(event) => setContractType(event.target.value)}>
               <option value="ROOT_CORE">المعنى المحوري (Root Core)</option>
               <option value="LOCAL_MEANING">المعنى الموضعي (Local Meaning)</option>
             </select>
           </label>
-          <button type="submit" disabled={loading} className="primary-action">
-            {loading ? "Searching..." : "Search — بحث"}
-          </button>
-        </form>
-
-        {error && <div className="result-panel error-panel" role="alert">{error}</div>}
-
-        {result?.status === "INSUFFICIENT_EVIDENCE" && (
-          <div className="result-panel evidence-gap">
-            <h3>Insufficient Evidence — الدليل غير كافٍ</h3>
-            <p>
-              لا توجد دعوى دلالية مقفلة للفظ <strong>{expression}</strong> ضمن العقد {contractType}.
-            </p>
-            <button onClick={startResearch} className="secondary-action" disabled={loading}>
-              Start Research Run — ابدأ مسار بحث
+          <div className="form-field">
+            <span aria-hidden="true">&nbsp;</span>
+            <button type="submit" disabled={submitting} className="button button-primary">
+              {submitting ? "جارٍ البحث…" : "Search — بحث"}
             </button>
           </div>
+        </form>
+
+        {actionError && <div className="state-card error-state" role="alert"><strong>تعذر إكمال الإجراء</strong><p>{actionError}</p></div>}
+
+        {result?.status === "INSUFFICIENT_EVIDENCE" && (
+          <section className="panel panel-warning" aria-labelledby="insufficient-title">
+            <h3 id="insufficient-title">Insufficient Evidence — الأدلة الحالية غير كافية</h3>
+            <p>لا توجد دعوى دلالية مقفلة للفظ <strong>{expression}</strong> ضمن العقد <span className="technical-text">{contractType}</span>. لا تُنشئ الواجهة جواباً بديلاً.</p>
+            <div className="form-grid">
+              <label className="form-field">
+                <span>مرجع المنهجية</span>
+                <input id="run-methodology" name="methodology_revision" className="input" value={methodologyRevision} onChange={(event) => setMethodologyRevision(event.target.value)} placeholder="مرجع منهجية موجود" required />
+              </label>
+              <label className="form-field">
+                <span>Corpus Snapshot</span>
+                <input id="run-corpus" name="corpus_snapshot" className="input technical-text" list="known-corpus-snapshots" value={corpusSnapshot} onChange={(event) => setCorpusSnapshot(event.target.value)} placeholder="معرّف snapshot موجود" required />
+                <datalist id="known-corpus-snapshots">
+                  {data?.corpus_snapshots.map((snapshot) => <option key={snapshot.id} value={snapshot.id}>{snapshot.activation_status}</option>)}
+                </datalist>
+              </label>
+            </div>
+            <div className="button-row">
+              <button type="button" onClick={startResearch} className="button button-secondary" disabled={submitting}>Start Research Run — ابدأ تشغيل بحث</button>
+            </div>
+          </section>
         )}
 
         {result?.status === "FOUND" && result.claim && (
-          <div className="result-panel found-panel">
-            <h3>دعوى دلالية موجودة</h3>
-            <dl className="state-grid">
-              <div><dt>المعرف</dt><dd>{result.claim.id}</dd></div>
-              <div><dt>المعرفي</dt><dd>{result.claim.epistemic_state}</dd></div>
-              <div><dt>المراجعة</dt><dd>{result.claim.review_state}</dd></div>
-              <div><dt>الحداثة</dt><dd>{result.claim.freshness_state}</dd></div>
-              <div><dt>النشر</dt><dd>{result.claim.publication_state}</dd></div>
-            </dl>
-          </div>
+          <section className="panel panel-information found-panel">
+            <div className="panel-heading">
+              <div><span className="eyebrow">Governed Claim</span><h2>دعوى دلالية موجودة</h2></div>
+              <Link className="button button-secondary button-small" href={`/claims/${result.claim.id}`}>فتح التتبّع الكامل</Link>
+            </div>
+            <StatusAxes
+              epistemic={result.claim.epistemic_state}
+              review={result.claim.review_state}
+              freshness={result.claim.freshness_state}
+              publication={result.claim.publication_state}
+            />
+          </section>
         )}
-      </section>
+      </Panel>
     </main>
   );
 }

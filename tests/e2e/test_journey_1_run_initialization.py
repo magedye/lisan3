@@ -25,8 +25,10 @@ def test_journey_1_run_initialization(page: Page, e2e_server: dict):
     expect(page.locator("h3:has-text('Insufficient Evidence')")).to_be_visible()
 
     # 2. Start a Governed ResearchRun
+    page.fill("#run-methodology", "method-e2e")
+    page.fill("#run-corpus", "snap-e2e")
     page.click("button:has-text('Start Research Run')")
 
     # 3. Verify navigation to the run page
     expect(page).to_have_url(re.compile(r".*/run/.*"))
-    expect(page.locator("span", has_text="PREFLIGHT")).to_be_visible()
+    expect(page.get_by_label("تسلسل مراحل البحث").get_by_text("PREFLIGHT", exact=True)).to_be_visible()

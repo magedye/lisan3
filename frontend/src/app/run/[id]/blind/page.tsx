@@ -1,228 +1,188 @@
 "use client";
 
 import type { components } from "@/api/openapi";
-import { useEffect, useState } from "react";
+import { EmptyState, ErrorState, LoadingState, PageHeader, Panel } from "@/components/page-primitives";
+import { StatusBadge } from "@/components/status-axes";
+import { apiFetch } from "@/lib/api";
 import { useParams } from "next/navigation";
+import { useEffect, useState } from "react";
 
 type ResearchRun = components["schemas"]["ResearchRunResponse"];
 type IsolationState = components["schemas"]["IsolationStateResponse"];
 type CorpusOccurrence = components["schemas"]["CorpusOccurrenceResponse"];
-
-function errorMessage(caught: unknown) {
-  return caught instanceof Error ? caught.message : "Unexpected request failure";
-}
-
-function validationMessage(payload: unknown) {
-  if (!payload || typeof payload !== "object" || !("detail" in payload)) {
-    return "Validation failed";
-  }
-  const detail = payload.detail;
-  if (typeof detail === "string") return detail;
-  if (Array.isArray(detail) && detail[0] && typeof detail[0].msg === "string") {
-    return detail[0].msg;
-  }
-  return "Validation failed";
-}
+type Observation = components["schemas"]["ObservationArtifactResponse"];
 
 export default function BlindLabPage() {
   const params = useParams();
   const runId = params.id as string;
-  
   const [run, setRun] = useState<ResearchRun | null>(null);
-  const [isoState, setIsoState] = useState<IsolationState | null>(null);
+  const [isolation, setIsolation] = useState<IsolationState | null>(null);
   const [corpus, setCorpus] = useState<CorpusOccurrence[]>([]);
   const [loading, setLoading] = useState(true);
+  const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
-
-  // Observation form
+  const [notice, setNotice] = useState<string | null>(null);
   const [form, setForm] = useState("");
   const [syntax, setSyntax] = useState("");
-  const [obsError, setObsError] = useState<string | null>(null);
+  const [revision, setRevision] = useState(0);
 
   useEffect(() => {
-    async function fetchData() {
+    const controller = new AbortController();
+    async function fetchBlindLab() {
       try {
-        const runRes = await fetch(`/api/runs/${runId}`);
-        if (!runRes.ok) throw new Error("Run not found");
-        setRun((await runRes.json()) as ResearchRun);
-
-        const isoRes = await fetch(`/api/runs/${runId}/blind`);
-        if (isoRes.ok) {
-          const isoData = (await isoRes.json()) as IsolationState;
-          setIsoState(isoData);
-          
-          if (isoData.is_contaminated !== "PRIOR_CONTAMINATED") {
-            const corpusRes = await fetch(`/api/runs/${runId}/corpus`);
-            if (corpusRes.ok) {
-              setCorpus((await corpusRes.json()) as CorpusOccurrence[]);
-            }
-          }
+        const runData = await apiFetch<ResearchRun>(`/api/runs/${runId}`, { signal: controller.signal });
+        setRun(runData);
+        const isolationResponse = await fetch(`/api/runs/${runId}/blind`, { cache: "no-store", signal: controller.signal });
+        if (isolationResponse.status === 404) {
+          setIsolation(null);
+          setCorpus([]);
+          return;
         }
-      } catch (caught: unknown) {
-        setError(errorMessage(caught));
+        if (!isolationResponse.ok) throw new Error(`تعذر تحميل حالة العزل: HTTP ${isolationResponse.status}`);
+        const isolationData = (await isolationResponse.json()) as IsolationState;
+        setIsolation(isolationData);
+        if (isolationData.is_contaminated === "CLEAN") {
+          setCorpus(await apiFetch<CorpusOccurrence[]>(`/api/runs/${runId}/corpus`, { signal: controller.signal }));
+        } else {
+          setCorpus([]);
+        }
+      } catch (reason) {
+        if (reason instanceof DOMException && reason.name === "AbortError") return;
+        setError(reason instanceof Error ? reason.message : "تعذر تحميل المختبر المعزول.");
       } finally {
-        setLoading(false);
+        if (!controller.signal.aborted) setLoading(false);
       }
     }
-    fetchData();
-  }, [runId]);
+    void fetchBlindLab();
+    return () => controller.abort();
+  }, [runId, revision]);
 
-  const startPreflight = async () => {
+  async function startPreflight() {
     if (!run) return;
-    setLoading(true);
+    setBusy(true);
+    setError(null);
     try {
-      const res = await fetch(`/api/runs/${runId}/blind/preflight`, {
+      await apiFetch<IsolationState>(`/api/runs/${runId}/blind/preflight`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           target_contract: run.target_contract,
           corpus_snapshot: run.corpus_snapshot,
           methodology_reference: run.methodology_revision,
-          allowed_sources: ["QURAN_CORPUS"]
-        })
+          allowed_sources: ["QURAN_CORPUS"],
+        }),
       });
-      if (res.ok) {
-        window.location.reload();
-      }
-    } catch (err) {
-      console.error(err);
+      setNotice("اكتمل فحص العزل وسُجلت حالة CLEAN. محاولة القراءة المحظورة المرفوضة لا تعني تلوثاً فعلياً.");
+      setRevision((value) => value + 1);
+    } catch (reason) {
+      setError(reason instanceof Error ? reason.message : "تعذر بدء فحص العزل.");
     } finally {
-      setLoading(false);
+      setBusy(false);
     }
-  };
+  }
 
-  const submitObservation = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setObsError(null);
+  async function submitObservation(event: React.FormEvent) {
+    event.preventDefault();
+    if (!corpus[0]) {
+      setError("لا يمكن تسجيل ملاحظة دون موضع Corpus فعلي متاح في snapshot هذا التشغيل.");
+      return;
+    }
+    setBusy(true);
+    setError(null);
+    setNotice(null);
     try {
-      const res = await fetch(`/api/runs/${runId}/observations`, {
+      const observation = await apiFetch<Observation>(`/api/runs/${runId}/observations`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          occurrence_ref: corpus[0]?.id || "unknown",
-          form,
-          syntax
-        })
+        body: JSON.stringify({ occurrence_ref: corpus[0].id, form, syntax }),
       });
-      const data: unknown = await res.json();
-      if (!res.ok) {
-        setObsError(validationMessage(data));
-      } else {
-        alert("Observation recorded successfully!");
-        setForm("");
-        setSyntax("");
-      }
-    } catch (caught: unknown) {
-      setObsError(errorMessage(caught));
+      setForm("");
+      setSyntax("");
+      setNotice(`سُجلت الملاحظة البنيوية ${observation.id} دون استنتاج دلالي.`);
+    } catch (reason) {
+      setError(reason instanceof Error ? reason.message : "تعذر تسجيل الملاحظة.");
+    } finally {
+      setBusy(false);
     }
-  };
+  }
 
-  const triggerContamination = async () => {
-    try {
-      await fetch(`/api/runs/${runId}/read_semantic_dictionary`);
-      window.location.reload();
-    } catch (err) {
-      console.error(err);
-    }
-  };
-
-  if (loading) return <div className="p-12 text-center">Loading Blind Lab state...</div>;
-  if (error) return <div className="p-12 text-center text-red-600">{error}</div>;
-  if (!run) return <div className="p-12 text-center text-red-600">Run not found.</div>;
+  if (loading) return <main className="page-frame"><LoadingState label="جارٍ تحميل حدود Blind Lab…" /></main>;
+  if (error && !run) return <main className="page-frame"><ErrorState message={error} retry={() => { setLoading(true); setError(null); setRevision((value) => value + 1); }} /></main>;
+  if (!run) return <main className="page-frame"><ErrorState message="Run not found." /></main>;
 
   return (
-    <main className="min-h-screen p-12 bg-slate-50">
-      <div className="max-w-5xl mx-auto space-y-8">
-        
-        {/* Header */}
-        <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
-          <div className="flex justify-between items-center mb-4">
-            <h1 className="text-3xl font-bold text-slate-800">Blind Lab Isolation</h1>
-            <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-mono">{runId}</span>
-          </div>
-          <div className="flex space-x-4 space-x-reverse">
-            <span className="px-3 py-1 bg-blue-50 text-blue-700 border border-blue-200 rounded text-sm font-medium">Stage: {run.current_stage}</span>
-            {isoState && (
-              <span className={`px-3 py-1 border rounded text-sm font-medium ${isoState.is_contaminated === 'CLEAN' ? 'bg-green-50 text-green-700 border-green-200' : 'bg-red-50 text-red-700 border-red-200'}`}>
-                Isolation: {isoState.is_contaminated}
-              </span>
-            )}
-          </div>
-        </div>
-
-        {/* Preflight Block */}
-        {!isoState && (
-          <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
-            <h2 className="text-xl font-semibold mb-4">Isolation Preflight Required</h2>
-            <p className="text-slate-600 mb-6">Before corpus analysis, the research run must be formally isolated and its sources locked.</p>
-            <button onClick={startPreflight} className="bg-primary-600 hover:bg-primary-500 text-white px-6 py-2 rounded-md font-medium transition-colors">
-              Start Preflight Isolation
-            </button>
-          </div>
-        )}
-
-        {/* Contamination Alert */}
-        {isoState?.is_contaminated === "PRIOR_CONTAMINATED" && (
-          <div className="bg-red-50 border border-red-200 p-8 rounded-xl shadow-sm">
-            <h2 className="text-xl font-bold text-red-800 mb-2">Isolation Breached</h2>
-            <p className="text-red-700 mb-4">{isoState.contamination_reason}</p>
-            <p className="text-red-600 text-sm font-mono p-4 bg-red-100 rounded">Progression to internal lock is permanently blocked for this run.</p>
-          </div>
-        )}
-
-        {/* Active Lab */}
-        {isoState && isoState.is_contaminated === "CLEAN" && (
-          <div className="grid grid-cols-2 gap-8">
-            {/* Corpus Section */}
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-              <h2 className="text-xl font-semibold mb-4 text-slate-800">Admitted Corpus</h2>
-              {corpus.length === 0 ? (
-                <p className="text-slate-500 italic">No occurrences found in snapshot: {isoState.corpus_snapshot}</p>
-              ) : (
-                <div className="space-y-4">
-                  {corpus.map((c, i) => (
-                    <div key={i} className="p-4 bg-slate-50 border border-slate-100 rounded-md">
-                      <div className="flex justify-between mb-2">
-                        <span className="text-sm font-bold text-slate-700">{c.expression}</span>
-                        <span className="text-xs font-mono text-slate-500">{c.verse_ref}</span>
-                      </div>
-                      <p className="text-slate-800 font-serif text-lg">{c.text}</p>
-                    </div>
-                  ))}
-                </div>
-              )}
-              
-              <div className="mt-8 border-t pt-4">
-                <p className="text-xs text-slate-500 mb-2">Simulation Tools:</p>
-                <button onClick={triggerContamination} className="text-xs bg-slate-200 hover:bg-red-200 hover:text-red-800 text-slate-600 px-3 py-1 rounded transition-colors">
-                  Simulate Prohibited Semantic Read
-                </button>
-              </div>
-            </div>
-
-            {/* Observation Section */}
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-              <h2 className="text-xl font-semibold mb-4 text-slate-800">Record Structural Observation</h2>
-              <p className="text-sm text-slate-600 mb-6">Record raw morphological and syntactic observations. Do not include semantic conclusions.</p>
-              
-              <form onSubmit={submitObservation} className="space-y-4">
-                <div>
-                  <label className="block text-sm font-medium text-slate-700 mb-1">Form (Morphology)</label>
-                  <input type="text" value={form} onChange={e => setForm(e.target.value)} className="w-full border border-slate-300 rounded p-2 text-sm" placeholder="e.g. past tense verb, pattern fa'ala" />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-slate-700 mb-1">Syntax / Construction</label>
-                  <input type="text" value={syntax} onChange={e => setSyntax(e.target.value)} className="w-full border border-slate-300 rounded p-2 text-sm" placeholder="e.g. transitive, takes direct object" />
-                </div>
-                {obsError && <div className="p-3 bg-red-50 text-red-700 border border-red-200 rounded text-sm">{obsError}</div>}
-                <button type="submit" className="w-full bg-slate-800 hover:bg-slate-700 text-white font-medium py-2 rounded transition-colors">
-                  Save Observation
-                </button>
-              </form>
-            </div>
-          </div>
-        )}
+    <main className="page-frame">
+      <div className="isolation-banner" role="status">
+        <div><strong>مختبر معزول — قبل القفل الداخلي</strong><span>التعريفات السابقة وOwner answers والمعاجم والتفاسير غير المقبولة غير متاحة في هذا السياق.</span></div>
+        <StatusBadge label="العزل" value={isolation?.is_contaminated ?? "UNKNOWN"} />
       </div>
+
+      <PageHeader
+        eyebrow="BLIND-LAB · Epistemic Boundary"
+        title={`المختبر المعزول: ${run.target_expression}`}
+        description="Corpus → Observations → Structure → Hypotheses. الواجهة تعرض فقط ما تسمح به عقود العزل الحالية."
+        actions={<span className="status-badge status-information"><span aria-hidden="true">●</span><span className="technical-text">{runId}</span></span>}
+      />
+
+      {error && <ErrorState message={error} />}
+      {notice && <div className="panel panel-information" role="status">{notice}</div>}
+
+      {!isolation && (
+        <Panel title="فحص العزل مطلوب" eyebrow="Isolation Preflight" className="panel-warning">
+          <p>قبل قراءة Corpus أو تسجيل الملاحظات، يجب تثبيت snapshot والمنهجية والمصادر المسموح بها في عقد العزل.</p>
+          <div className="context-strip">
+            <span>Corpus <b className="technical-text">{run.corpus_snapshot}</b></span>
+            <span>المنهجية <b className="technical-text">{run.methodology_revision}</b></span>
+            <span>المصدر المسموح <b className="technical-text">QURAN_CORPUS</b></span>
+          </div>
+          <button type="button" onClick={startPreflight} className="button button-primary" disabled={busy}>بدء فحص العزل — Start Preflight Isolation</button>
+        </Panel>
+      )}
+
+      {isolation?.is_contaminated === "PRIOR_CONTAMINATED" && (
+        <Panel title="تم اكتشاف تلوث فعلي بالمعرفة السابقة" eyebrow="PRIOR_CONTAMINATED" className="panel-danger">
+          <p>{isolation.contamination_reason || "لم يسجل سبب إضافي."}</p>
+          <p><strong>القفل الداخلي محجوب لهذا التشغيل.</strong> هذا يختلف عن محاولة قراءة محظورة رفضها النظام قبل كشف المحتوى.</p>
+        </Panel>
+      )}
+
+      {isolation?.is_contaminated === "CLEAN" && (
+        <div className="two-column equal-columns">
+          <Panel title="Corpus المقبول في التشغيل" eyebrow="Admitted source only">
+            {corpus.length === 0 ? (
+              <EmptyState title="لا توجد مواضع في snapshot" detail={`لم يعثر العقد على مواضع مرتبطة بالمعرّف ${isolation.corpus_snapshot}.`} />
+            ) : (
+              <div className="stack">{corpus.map((item) => (
+                <article className="list-card" key={item.id}>
+                  <div className="list-row"><div><strong>{item.expression}</strong><small className="technical-text">{item.verse_ref}</small></div><StatusBadge label="Corpus" value={item.snapshot_id} /></div>
+                  <p className="quran-text">{item.text}</p>
+                </article>
+              ))}</div>
+            )}
+          </Panel>
+
+          <Panel title="سجّل ملاحظة بنيوية" eyebrow="No semantic conclusion">
+            <p>صف الصيغة والبناء فقط. لا تدخل تعريفاً دلالياً أو نتيجة مأخوذة من prior.</p>
+            <form className="form-grid" onSubmit={submitObservation}>
+              <label className="form-field">
+                <span>الصيغة / Morphology</span>
+                <input id="observation-form" name="form" className="input" value={form} onChange={(event) => setForm(event.target.value)} placeholder="e.g. past tense verb, pattern fa'ala" required />
+              </label>
+              <label className="form-field">
+                <span>البناء / Syntax</span>
+                <input id="observation-syntax" name="syntax" className="input" value={syntax} onChange={(event) => setSyntax(event.target.value)} placeholder="e.g. transitive, takes direct object" required />
+              </label>
+              <div className="form-field form-field-full">
+                <button className="button button-primary" type="submit" disabled={busy || corpus.length === 0}>حفظ الملاحظة — Save Observation</button>
+              </div>
+            </form>
+            <div className="panel panel-muted">
+              <strong>حد العزل</strong>
+              <p>القراءة المحظورة تُرفض من backend. رفض المحاولة لا يغيّر الحالة إلى PRIOR_CONTAMINATED؛ التلوث الفعلي له سجل منفصل.</p>
+            </div>
+          </Panel>
+        </div>
+      )}
     </main>
   );
 }

@@ -3,6 +3,13 @@ from pathlib import Path
 import pytest
 
 HOME_PAGE = Path(__file__).parents[1] / "frontend" / "src" / "app" / "page.tsx"
+STATUS_COMPONENT = (
+    Path(__file__).parents[1]
+    / "frontend"
+    / "src"
+    / "components"
+    / "status-axes.tsx"
+)
 STATUS_AXES = (
     ("المعرفي", "epistemic_state"),
     ("المراجعة", "review_state"),
@@ -13,10 +20,9 @@ STATUS_AXES = (
 
 @pytest.mark.parametrize(("label", "field"), STATUS_AXES)
 def test_found_claim_renders_each_independent_status_axis(label: str, field: str):
-    source = HOME_PAGE.read_text(encoding="utf-8")
-    found_claim_view = source.split(
-        'result?.status === "FOUND" && result.claim', maxsplit=1
-    )[1]
+    home_source = HOME_PAGE.read_text(encoding="utf-8")
+    component_source = STATUS_COMPONENT.read_text(encoding="utf-8")
 
-    assert f"<dt>{label}</dt>" in found_claim_view
-    assert f"{{result.claim.{field}}}" in found_claim_view
+    assert f'{field.split("_", maxsplit=1)[0]}:' in component_source
+    assert label in component_source
+    assert f"{field.split('_', maxsplit=1)[0]}={{result.claim.{field}}}" in home_source

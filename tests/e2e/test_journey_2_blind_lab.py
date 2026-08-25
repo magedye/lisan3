@@ -2,6 +2,8 @@ import re
 
 from playwright.sync_api import Page, expect
 
+from backend.domain import models
+
 
 def test_journey_2_blind_lab(page: Page, e2e_server: dict):
     """
@@ -9,6 +11,25 @@ def test_journey_2_blind_lab(page: Page, e2e_server: dict):
     - Enter Blind Lab -> preflight -> verify isolation -> attempt prohibited prior access -> verify blocking.
     """
     base_url = e2e_server["base_url"]
+    with e2e_server["db_session"]() as session:
+        session.add_all(
+            [
+                models.CorpusSnapshot(
+                    id="snap_e2e_blind",
+                    canonical_text_source="fixture",
+                    canonical_text_version="v1",
+                    canonical_text_hash="fixture-hash",
+                ),
+                models.CorpusOccurrence(
+                    id="occ_e2e_blind",
+                    snapshot_id="snap_e2e_blind",
+                    expression="كتب",
+                    verse_ref="fixture:1",
+                    text="نص قرآني تجريبي مميز صراحة للاختبار",
+                ),
+            ]
+        )
+        session.commit()
 
     # 1. Ask Lisan and Create ResearchRun
     page.goto(base_url)
@@ -18,6 +39,8 @@ def test_journey_2_blind_lab(page: Page, e2e_server: dict):
         timeout=10000
     )
 
+    page.fill("#run-methodology", "method-e2e")
+    page.fill("#run-corpus", "snap_e2e_blind")
     page.click("button:has-text('Start Research Run')")
     expect(page).to_have_url(re.compile(r".*/run/.*"))
 
@@ -27,16 +50,14 @@ def test_journey_2_blind_lab(page: Page, e2e_server: dict):
 
     # Navigate to Blind Lab
     page.goto(f"{base_url}/run/{run_id}/blind")
-    expect(page.locator("h1")).to_contain_text("Blind Lab Isolation")
+    expect(page.locator("h1")).to_contain_text("المختبر المعزول")
 
     # 2. Preflight Isolation
-    expect(page.locator("text=Isolation Preflight Required")).to_be_visible()
+    expect(page.get_by_role("heading", name="فحص العزل مطلوب")).to_be_visible()
     page.click("button:has-text('Start Preflight Isolation')")
 
     # Wait for reload and verify isolation status
-    expect(page.locator("span", has_text="Isolation: CLEAN")).to_be_visible(
-        timeout=10000
-    )
+    expect(page.get_by_label("العزل: CLEAN")).to_be_visible(timeout=10000)
 
     # 3. Add observation
     page.fill("input[placeholder='e.g. past tense verb, pattern fa\\'ala']", "كُتِبَ")
@@ -44,16 +65,15 @@ def test_journey_2_blind_lab(page: Page, e2e_server: dict):
         "input[placeholder='e.g. transitive, takes direct object']",
         "فعل ماض مبني للمجهول",
     )
-    page.once("dialog", lambda dialog: dialog.accept())  # accept the success alert
     page.click("button:has-text('Save Observation')")
-
-    # Wait for the observation to be processed
-    # In a real test, we would verify it appeared in a list, but the UI just shows an alert
+    expect(page.get_by_text(re.compile("سُجلت الملاحظة البنيوية"))).to_be_visible()
 
     # 4. Attempt prohibited semantic read
-    page.click("button:has-text('Simulate Prohibited Semantic Read')")
+    blocked = page.request.get(
+        f"{e2e_server['api_url']}/runs/{run_id}/read_semantic_dictionary"
+    )
+    assert blocked.status == 403
 
     # 5. Verify Isolation Remains CLEAN since the backend blocked the read
-    expect(page.locator("span", has_text="Isolation: CLEAN")).to_be_visible(
-        timeout=10000
-    )
+    page.reload()
+    expect(page.get_by_label("العزل: CLEAN")).to_be_visible(timeout=10000)
