@@ -20,8 +20,8 @@ start R3 or V4, establish independent review, or grant release acceptance.
 - The backend configured `sqlite:///./lisanapp.db`, so its target depended on
   the process working directory. Root Alembic also used a relative URL.
 - The active runtime file was
-  `D:\APP\tafseer\lisanapp3\lisanapp.db`, with 8 application tables and
-  `alembic_version=5542b3a62e23`.
+  `D:\APP\tafseer\lisanapp3\lisanapp.db`, with 7 application tables plus
+  `alembic_version` at revision `5542b3a62e23`.
 - Revision `5542b3a62e23` belongs to the retained `backend/alembic/` legacy
   chain. Its history reaches the governed baseline
   `0e5f256deede286252c299aa2541ea5a8a6b0753`; it is not an ancestor in the

@@ -142,6 +142,7 @@ export default function AttentionCenter() {
               <div><dt>المعرف</dt><dd>{result.claim.id}</dd></div>
               <div><dt>المعرفي</dt><dd>{result.claim.epistemic_state}</dd></div>
               <div><dt>المراجعة</dt><dd>{result.claim.review_state}</dd></div>
+              <div><dt>الحداثة</dt><dd>{result.claim.freshness_state}</dd></div>
               <div><dt>النشر</dt><dd>{result.claim.publication_state}</dd></div>
             </dl>
           </div>

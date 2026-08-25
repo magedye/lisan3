@@ -100,7 +100,12 @@ def ask_lisan(request: schemas.AskLisanRequest, db: Session = Depends(get_db)):
     )
 
     if claim:
-        return schemas.AskLisanResponse(status="FOUND", claim=claim)
+        return schemas.AskLisanResponse(
+            status="FOUND",
+            claim=schemas.SemanticClaimResponse.model_validate(
+                claim, from_attributes=True
+            ),
+        )
 
     # AI Fallback
     try:

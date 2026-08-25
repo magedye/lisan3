@@ -134,6 +134,46 @@ def test_slice_a_end_to_end():
     db.close()
 
 
+def test_ask_found_claim_returns_all_four_status_axes():
+    db = TestingSessionLocal()
+    db.query(models.SemanticClaim).delete()
+    db.query(models.ResearchRun).delete()
+    db.add_all(
+        [
+            models.ResearchRun(
+                id="run_found_axes",
+                target_contract="ROOT_CORE",
+                target_expression="نور",
+                methodology_revision="v4.0",
+                corpus_snapshot="snap_found_axes",
+                authority_context={"source": "test"},
+            ),
+            models.SemanticClaim(
+                id="claim_found_axes",
+                research_run_id="run_found_axes",
+                contract_type="ROOT_CORE",
+                epistemic_state="LOCK_INTERNAL_RESULT",
+                review_state="NOT_REVIEWED",
+                freshness_state="REVALIDATION_REQUIRED",
+                publication_state="PRIVATE_WORKING",
+            ),
+        ]
+    )
+    db.commit()
+    db.close()
+
+    response = client.post(
+        "/ask", json={"expression": "نور", "contract_type": "ROOT_CORE"}
+    )
+
+    assert response.status_code == 200
+    claim = response.json()["claim"]
+    assert claim["epistemic_state"] == "LOCK_INTERNAL_RESULT"
+    assert claim["review_state"] == "NOT_REVIEWED"
+    assert claim["freshness_state"] == "REVALIDATION_REQUIRED"
+    assert claim["publication_state"] == "PRIVATE_WORKING"
+
+
 def test_alembic_models_parity(tmp_path):
     import alembic.command
     import alembic.config
