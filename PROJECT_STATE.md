@@ -238,10 +238,40 @@ No implementation thread claim may grant independent confirmation or release acc
 - R2 remains at the model-independent checkpoint; model selection/integration,
   R3, and V4 remain unstarted.
 
+## Stabilization Review Remediation Candidate
+
+- Candidate: `f202a1e703b8da97bb0df419c9149052758505cc`, direct child of documentation
+  checkpoint `643230b1ad883d1caaca6813f0d03a26b1e09621`.
+- Status is implementation-side `IMPLEMENTED` and `TESTED`; the supplied
+  independent-review blockers are addressed, but the candidate has not yet
+  received a fresh independent read-only review.
+- The found-claim UI and real Journey 7 now require all four independent axes:
+  Epistemic, Review, Freshness, and Publication. A focused parameterized test
+  fails separately if any axis is absent.
+- The existing `/ask` found-claim response now converts its ORM result through
+  the existing `SemanticClaimResponse` contract. This closes the HTTP 500
+  exposed by the new real-data Journey 7 path without changing a schema,
+  model, migration, or authority value.
+- `UI_BACKEND_CONTRACT_MATRIX.md` is reconciled to the implemented/tested Home
+  Ask/Create Run flow and read-only `/audit` behavior without claiming the
+  unavailable Attention Center read model or full Golden/Stitch completion.
+  Its stale R1 wording is corrected only for independently confirmed candidate
+  `a0d10d7fd5ff8845d3071b7e68f1500f92fd9563`.
+- The stabilization report now records the legacy inventory as 7 application
+  tables plus `alembic_version`.
+- Exact-SHA clean detached verification passed: focused UI 4, relevant pytest
+  13, Journey 7 1, all Playwright journeys 7, full pytest 139, Ruff, ESLint,
+  Next production build, `pip check`, `npm audit --omit=dev`, fresh Alembic
+  base-to-head at `c9e2a7f4b6d1`, live backend/frontend smoke, and
+  `git diff --check`. Pyright reported 0 errors and 144 existing warnings.
+- No R2 service, model integration, migration, R3, or V4 artifact changed.
+  Production model integration, R3, and V4 remain unstarted. Owner files
+  `check_db2.py` and `debug_proxy.py` remain untracked and untouched.
+
 ## Exact Next Action
 
 Request one fresh, independent, read-only review of stabilization candidate
-`b95894365e03e49c4a47ad4f489549b55fc34730` against
+`f202a1e703b8da97bb0df419c9149052758505cc` against
 `docs/LISAN3_STABILIZATION_CHECKPOINT.md`. Do not begin R3, V4, production
 embedding integration, or model work unless a later explicit owner instruction
 authorizes it.

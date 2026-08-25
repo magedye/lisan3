@@ -1,7 +1,8 @@
 # LISAN3 Stabilization Checkpoint
 
-Status: `IMPLEMENTED` and `TESTED` for implementation candidate
-`b95894365e03e49c4a47ad4f489549b55fc34730`.
+Status: `IMPLEMENTED` and `TESTED` for remediation candidate
+`f202a1e703b8da97bb0df419c9149052758505cc`, building on implementation
+candidate `b95894365e03e49c4a47ad4f489549b55fc34730`.
 
 This checkpoint preserves the completed model-independent R2 work. It does not
 select or execute an embedding model, activate production vector population,
@@ -134,6 +135,59 @@ Detached worktree candidate:
 
 No unexplained local runtime blocker remains for a fresh SQLite initialization,
 backend startup, production frontend startup, or current production routes.
-The 145 Pyright warnings and SQLAlchemy `datetime.utcnow()` deprecation warnings
+The Pyright warnings and SQLAlchemy `datetime.utcnow()` deprecation warnings
 remain non-blocking pre-existing quality debt. This checkpoint is not an
 independent review and does not change the R2/R3/V4/model boundary.
+
+## Independent-review blocker remediation
+
+- Remediation candidate:
+  `f202a1e703b8da97bb0df419c9149052758505cc`, direct child of the final
+  documentation checkpoint `643230b1ad883d1caaca6813f0d03a26b1e09621`.
+- The found-claim panel now always renders the four independent UX axes:
+  `epistemic_state`, `review_state`, `freshness_state`, and
+  `publication_state`.
+- Exercising the real found-claim path exposed an existing response-validation
+  defect: the SQLAlchemy claim could not be nested directly in
+  `AskLisanResponse`. The route now validates that object through the existing
+  `SemanticClaimResponse` contract with `from_attributes=True`; no model,
+  migration, or status authority changed.
+- Focused parameterized source coverage fails independently for each missing
+  axis. Backend coverage requires all four values from a persisted found claim,
+  and Journey 7 renders all four values before exercising the real `/audit`
+  read model.
+- `UI_BACKEND_CONTRACT_MATRIX.md` now describes the implemented and tested
+  Home Ask/Create Run behavior and read-only `/audit` behavior. It explicitly
+  leaves the unavailable Attention Center read model and full Golden/Stitch
+  completion unclaimed.
+- The matrix records `R1_INDEPENDENTLY_CONFIRMED` only for canonical reviewed
+  candidate `a0d10d7fd5ff8845d3071b7e68f1500f92fd9563`; later R1/R3 and R2/R3
+  mappings remain planned.
+- The legacy database inventory is corrected to 7 application tables plus
+  `alembic_version`, not 8 application tables.
+
+## Remediation candidate clean-checkout verification
+
+Clean detached checkout:
+`f202a1e703b8da97bb0df419c9149052758505cc`.
+
+- Fresh `npm ci`: 480 packages installed from the lockfile.
+- Focused four-axis UI coverage: 4 passed.
+- Relevant backend/runtime profile: 13 passed.
+- Journey 7: 1 passed; all seven Playwright journeys: 7 passed.
+- Full stabilization pytest profile: 139 passed.
+- Ruff and ESLint: passed.
+- Pyright: 0 errors and 144 existing non-blocking warnings; no warning cleanup
+  was performed.
+- Next production build: passed and emitted all eight production routes.
+- `pip check`: no broken requirements; `npm audit --omit=dev`: 0
+  vulnerabilities.
+- Fresh Alembic base-to-head applied all four canonical migrations and reached
+  `c9e2a7f4b6d1`; the full profile also reported no new upgrade operations.
+- Live Uvicorn smoke: `/health`, `/operations/health`, and `/audit` returned
+  HTTP 200. Live production Next smoke: `/` and `/audit` returned HTTP 200.
+- `git diff --check` passed, the exact detached HEAD matched the candidate, and
+  the detached Git status was clean after verification.
+- The candidate changes no migration, embedding/model integration, R2 service,
+  R3, or V4 artifact. R2 remains at its prior model-independent checkpoint;
+  production model integration, R3, and V4 remain unstarted.
