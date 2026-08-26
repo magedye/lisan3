@@ -36,7 +36,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       )}
 
       <aside id="primary-sidebar" className={`app-sidebar${menuOpen ? " sidebar-open" : ""}`}>
-        <Link className="brand" href="/" aria-label="لسان — الصفحة الرئيسية" onClick={() => setMenuOpen(false)}>
+        <Link className="brand" href="/" aria-label="لـ لسان Lisan Governed Research — الصفحة الرئيسية" onClick={() => setMenuOpen(false)}>
           <span className="brand-mark" aria-hidden="true">لـ</span>
           <span>
             <strong>لسان</strong>
