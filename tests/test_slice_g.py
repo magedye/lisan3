@@ -21,7 +21,7 @@ Base.metadata.create_all(bind=engine)
 with engine.begin() as connection:
     connection.execute(text("CREATE TABLE alembic_version (version_num VARCHAR(32))"))
     connection.execute(
-        text("INSERT INTO alembic_version VALUES ('c9e2a7f4b6d1')")
+        text("INSERT INTO alembic_version VALUES ('d4f7a2c8e901')")
     )
 
 client = TestClient(app)
@@ -145,7 +145,7 @@ def test_knowledge_explorer(test_db, setup_claim):
     assert "snap_canonical_01" in data["affected_by"]
 
 
-def test_knowledge_explorer_not_found():
+def test_knowledge_explorer_not_found(test_db):
     res = client.get("/knowledge/explorer/nonexistent_claim")
     assert res.status_code == 404
 
@@ -385,7 +385,7 @@ def test_get_reproduction_manifest(test_db, setup_claim):
     assert "generated_at" in data
 
 
-def test_operations_health():
+def test_operations_health(test_db):
     res = client.get("/operations/health")
     assert res.status_code == 200
     data = res.json()
@@ -394,7 +394,7 @@ def test_operations_health():
     assert data["database"]["status"] == "CURRENT"
 
 
-def test_missing_run_semantic_dictionary_is_contractual_404():
+def test_missing_run_semantic_dictionary_is_contractual_404(test_db):
     response = client.get("/runs/missing/read_semantic_dictionary")
 
     assert response.status_code == 404
