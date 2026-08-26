@@ -7,6 +7,7 @@ from backend.domain.models import CorpusOccurrence, CorpusSnapshot
 from backend.domain.services.corpus.alignment import CrossSourceAligner
 from backend.domain.services.corpus.authority import (
     ARTIFACT_PRESENT,
+    ARTIFACT_VERIFICATION_PENDING,
     CANONICAL_ACTIVATION_PENDING,
     IMPORT_VALIDATED,
     get_canonical_admission,
@@ -53,8 +54,8 @@ class CorpusImporter:
             validation_status="UNVERIFIED",
             source_role_status=admission.source_role_status,
             artifact_presence_status=ARTIFACT_PRESENT,
-            expected_canonical_text_hash=admission.expected_hash,
-            hash_verification_status=admission.artifact_verification_status,
+            expected_canonical_text_hash=None,
+            hash_verification_status=ARTIFACT_VERIFICATION_PENDING,
             import_validation_status=IMPORT_VALIDATED,
             activation_status=CANONICAL_ACTIVATION_PENDING,
             artifact_provenance="TEST_FIXTURE_INPUT",

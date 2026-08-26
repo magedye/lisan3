@@ -8,6 +8,9 @@ HASH_VERIFIED = "HASH_VERIFIED"
 IMPORT_VALIDATED = "IMPORT_VALIDATED"
 CANONICAL_ACTIVATION_PENDING = "CANONICAL_ACTIVATION_PENDING"
 PRODUCTION_ACTIVE = "PRODUCTION_ACTIVE"
+CANON_001_ARTIFACT_IDENTITY_MATCH_CONFIRMED = (
+    "CANON_001_ARTIFACT_IDENTITY_MATCH_CONFIRMED"
+)
 
 
 @dataclass(frozen=True)
@@ -18,18 +21,50 @@ class CorpusAdmissionRecord:
     artifact_verification_status: str
     activation_status: str
     authority_reference: str
+    source_name: str | None = None
+    canonical_text_version: str | None = None
+    artifact_reference: str | None = None
+    expected_bytes: int | None = None
+    artifact_format: str | None = None
+    identity_index_reference: str | None = None
+    identity_index_sha256: str | None = None
+    expected_verse_count: int | None = None
+    verification_revision: str | None = None
+    provenance_reference: str | None = None
+    canon_001_reconciliation: str | None = None
 
 
-# Application enforcement of the current canonical admission records.  Neither
-# source has an authority-bound artifact hash or production activation yet.
+# Application enforcement of the current canonical admission records. Tanzil
+# is verified through import but deliberately remains pending production
+# activation. QAC remains pending artifact verification and is not required for
+# Tanzil canonical-text admission.
 CANONICAL_CORPUS_ADMISSIONS: dict[str, CorpusAdmissionRecord] = {
     "TANZIL_QURAN_UTHMANI": CorpusAdmissionRecord(
         source_id="TANZIL_QURAN_UTHMANI",
         source_role_status=SOURCE_ROLE_APPROVED,
-        expected_hash=None,
-        artifact_verification_status=ARTIFACT_VERIFICATION_PENDING,
+        expected_hash=(
+            "ac0724796cbbda0f4801470fbbd11d0f"
+            "3c5802067bae0493466d0128b0c667af"
+        ),
+        artifact_verification_status=HASH_VERIFIED,
         activation_status=CANONICAL_ACTIVATION_PENDING,
         authority_reference="docs/canonical/ADMISSION_TANZIL.md",
+        source_name="Tanzil Quran Text (Uthmani)",
+        canonical_text_version="1.1",
+        artifact_reference="data/corpus/tanzil/tanzil-uthmani-1.1.txt",
+        expected_bytes=1_334_737,
+        artifact_format="TANZIL_UTHMANI_1_1_ONE_VERSE_PER_LINE_UTF8_LF",
+        identity_index_reference=(
+            "data/corpus/tanzil/quran-verse-index-v1.0.json"
+        ),
+        identity_index_sha256=(
+            "0d0a2273e82ebb0d9848ccbf831f1bb2"
+            "97c0fb255413c5aeb299bbfaf2bbc967"
+        ),
+        expected_verse_count=6_236,
+        verification_revision="LISAN3_TANZIL_ADMISSION_V1_2026_08_26",
+        provenance_reference="docs/canonical/ADMISSION_TANZIL.md#artifact-provenance",
+        canon_001_reconciliation=CANON_001_ARTIFACT_IDENTITY_MATCH_CONFIRMED,
     ),
     "QAC_MORPHOLOGY_SYNTAX": CorpusAdmissionRecord(
         source_id="QAC_MORPHOLOGY_SYNTAX",
@@ -52,6 +87,15 @@ class SnapshotLifecycle(Protocol):
     import_validation_status: str
     activation_status: str
     artifact_provenance: str | None
+    artifact_reference: str | None
+    artifact_size_bytes: int | None
+    artifact_format: str | None
+    artifact_verified_at: object | None
+    artifact_verification_revision: str | None
+    identity_index_reference: str | None
+    identity_index_sha256: str | None
+    verse_count: int | None
+    canon_001_reconciliation: str | None
     fixture_only: bool
     validation_status: str
 
@@ -60,8 +104,8 @@ def get_canonical_admission(source_id: str) -> CorpusAdmissionRecord | None:
     return CANONICAL_CORPUS_ADMISSIONS.get(source_id)
 
 
-def production_validation_failures(snapshot: SnapshotLifecycle) -> list[str]:
-    """Return every failed authority boundary for production validation."""
+def import_validation_failures(snapshot: SnapshotLifecycle) -> list[str]:
+    """Return every failed boundary for authority-bound import validation."""
     failures: list[str] = []
     admission = get_canonical_admission(snapshot.canonical_text_source)
 
@@ -84,14 +128,78 @@ def production_validation_failures(snapshot: SnapshotLifecycle) -> list[str]:
         failures.append("artifact hash is not verified")
     if snapshot.import_validation_status != IMPORT_VALIDATED:
         failures.append("import validation has not passed")
-    if admission.activation_status != PRODUCTION_ACTIVE:
-        failures.append("canonical admission is not production-active")
-    if snapshot.activation_status != PRODUCTION_ACTIVE:
-        failures.append("snapshot is not production-active")
     if not snapshot.artifact_provenance:
         failures.append("artifact provenance is missing")
     if snapshot.fixture_only:
         failures.append("test fixtures cannot become production canonical artifacts")
+    metadata_checks = (
+        (
+            "canonical_text_version",
+            admission.canonical_text_version,
+            "canonical text version is not authority-bound",
+        ),
+        (
+            "artifact_reference",
+            admission.artifact_reference,
+            "artifact reference is not authority-bound",
+        ),
+        (
+            "artifact_size_bytes",
+            admission.expected_bytes,
+            "artifact byte size is not authority-bound",
+        ),
+        (
+            "artifact_format",
+            admission.artifact_format,
+            "artifact format is not authority-bound",
+        ),
+        (
+            "artifact_verification_revision",
+            admission.verification_revision,
+            "artifact verification revision is not authority-bound",
+        ),
+        (
+            "identity_index_reference",
+            admission.identity_index_reference,
+            "identity index reference is not authority-bound",
+        ),
+        (
+            "identity_index_sha256",
+            admission.identity_index_sha256,
+            "identity index hash is not authority-bound",
+        ),
+        (
+            "verse_count",
+            admission.expected_verse_count,
+            "verse count is not authority-bound",
+        ),
+        (
+            "canon_001_reconciliation",
+            admission.canon_001_reconciliation,
+            "CANON-001 reconciliation is not the recorded factual match",
+        ),
+    )
+    for field, expected, message in metadata_checks:
+        if expected is not None and getattr(snapshot, field, None) != expected:
+            failures.append(message)
+    if (
+        admission.verification_revision is not None
+        and getattr(snapshot, "artifact_verified_at", None) is None
+    ):
+        failures.append("artifact verification timestamp is missing")
+    return failures
+
+
+def production_validation_failures(snapshot: SnapshotLifecycle) -> list[str]:
+    """Return every failed authority boundary for production validation."""
+    failures = import_validation_failures(snapshot)
+    admission = get_canonical_admission(snapshot.canonical_text_source)
+    if admission is None:
+        return failures
+    if admission.activation_status != PRODUCTION_ACTIVE:
+        failures.append("canonical admission is not production-active")
+    if snapshot.activation_status != PRODUCTION_ACTIVE:
+        failures.append("snapshot is not production-active")
     return failures
 
 

@@ -96,7 +96,7 @@ def test_f4_corpus_validation_invariant_regression():
     # The persistence boundary rejects promotion while canonical authority is pending.
     with pytest.raises(
         ValueError,
-        match="canonical admission has no authority-bound expected hash",
+        match="snapshot expected hash is not authority-bound",
     ):
         snapshot.validation_status = "VALIDATED"
         db.flush()
@@ -113,7 +113,7 @@ def test_f4_corpus_validation_invariant_regression():
         fixture_only=False,
     )
     db.add(forged)
-    with pytest.raises(ValueError, match="authority-bound expected hash"):
+    with pytest.raises(ValueError, match="snapshot expected hash is not authority-bound"):
         db.flush()
 
     db.rollback()

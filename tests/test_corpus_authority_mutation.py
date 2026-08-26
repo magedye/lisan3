@@ -115,7 +115,7 @@ def test_corpus_authority_decision_matrix():
 
         authority.CANONICAL_CORPUS_ADMISSIONS[source_id] = original
         pending = authority.production_validation_failures(snapshot())
-        assert any("no authority-bound expected hash" in item for item in pending)
+        assert any("snapshot expected hash is not authority-bound" in item for item in pending)
         assert any("not production-active" in item for item in pending)
     finally:
         authority.CANONICAL_CORPUS_ADMISSIONS[source_id] = original
