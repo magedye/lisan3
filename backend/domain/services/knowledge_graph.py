@@ -10,7 +10,7 @@ import networkx as nx
 from sqlalchemy.orm import Session
 
 from .. import models
-from .gates import INTERNAL_LOCK, has_valid_gate
+from .claim_visibility import ClaimReleasePolicy
 
 PROJECTION_REVISION = "R1_GRAPH_PROJECTION_V1"
 
@@ -48,33 +48,16 @@ class KnowledgeGraphService:
     @staticmethod
     def _is_projection_eligible(db: Session, run: models.ResearchRun) -> bool:
         """Return whether current canonical state permits graph projection."""
-        isolation = (
-            db.query(models.IsolationState)
-            .filter(models.IsolationState.research_run_id == run.id)
-            .one_or_none()
-        )
-        return bool(
-            isolation
-            and isolation.is_contaminated == "CLEAN"
-            and has_valid_gate(db, run.id, INTERNAL_LOCK)
-        )
+        return ClaimReleasePolicy.evaluate_run(db, run.id).released
 
     @staticmethod
     def require_read_access(db: Session, run_id: str) -> models.ResearchRun:
         run = db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
         if run is None:
             raise GraphSourceNotFound(run_id)
-        isolation = (
-            db.query(models.IsolationState)
-            .filter(models.IsolationState.research_run_id == run_id)
-            .first()
-        )
-        if isolation and isolation.is_contaminated == "PRIOR_CONTAMINATED":
-            raise GraphAccessForbidden("Graph access blocked: Blind Lab run is contaminated")
-        if not has_valid_gate(db, run_id, INTERNAL_LOCK):
-            raise GraphAccessForbidden(
-                "Graph access blocked before Internal Lock; this is not contamination"
-            )
+        decision = ClaimReleasePolicy.evaluate_run(db, run_id)
+        if not decision.released:
+            raise GraphAccessForbidden(f"Graph access blocked: {decision.reason}")
         return run
 
     @staticmethod

@@ -169,7 +169,9 @@ def test_run_workspace_exposes_claims_only_after_existing_release_checks(
     test_db, monkeypatch
 ):
     run, claim, *_ = seed_workspace(test_db)
-    monkeypatch.setattr("backend.main.has_valid_gate", lambda *_args: True)
+    monkeypatch.setattr(
+        "backend.domain.services.claim_visibility.has_valid_gate", lambda *_args: True
+    )
 
     response = client.get(f"/runs/{run.id}/workspace")
 
@@ -198,7 +200,9 @@ def test_direct_claim_and_governance_overview_release_after_existing_checks(
     test_db, monkeypatch
 ):
     _, claim, *_ = seed_workspace(test_db)
-    monkeypatch.setattr("backend.main.has_valid_gate", lambda *_args: True)
+    monkeypatch.setattr(
+        "backend.domain.services.claim_visibility.has_valid_gate", lambda *_args: True
+    )
 
     claim_response = client.get(f"/claims/{claim.id}")
     overview_response = client.get("/governance/overview")

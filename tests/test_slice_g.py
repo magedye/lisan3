@@ -35,6 +35,13 @@ def override_get_db():
         db.close()
 
 
+@pytest.fixture(autouse=True)
+def released_claim_policy(monkeypatch):
+    monkeypatch.setattr(
+        "backend.domain.services.claim_visibility.has_valid_gate", lambda *_args: True
+    )
+
+
 @pytest.fixture
 def test_db():
     app.dependency_overrides[get_db] = override_get_db
@@ -58,6 +65,18 @@ def setup_claim(test_db):
         status="ACTIVE",
     )
     test_db.add(run)
+
+    test_db.add(
+        models.IsolationState(
+            id=f"iso_{uuid.uuid4().hex[:8]}",
+            research_run_id=run_id,
+            target_contract=run.target_contract,
+            corpus_snapshot=run.corpus_snapshot,
+            methodology_reference=run.methodology_revision,
+            allowed_sources=["QURAN_CORPUS"],
+            is_contaminated="CLEAN",
+        )
+    )
 
     claim_id = f"clm_{uuid.uuid4().hex[:8]}"
     claim = models.SemanticClaim(
@@ -283,6 +302,24 @@ def test_multidimensional_quality_and_purity_findings(test_db, setup_claim):
 
 
 def test_purity_contamination_detection(test_db):
+    run = models.ResearchRun(
+        id="run_123",
+        target_contract="ROOT_CORE",
+        target_expression="test",
+        methodology_revision="v4.0",
+        corpus_snapshot="snapshot_test",
+        authority_context={"source": "test"},
+    )
+    isolation = models.IsolationState(
+        id="isolation_run_123",
+        research_run_id=run.id,
+        target_contract=run.target_contract,
+        corpus_snapshot=run.corpus_snapshot,
+        methodology_reference=run.methodology_revision,
+        allowed_sources=["QURAN_CORPUS"],
+        is_contaminated="CLEAN",
+    )
+    test_db.add_all([run, isolation])
     claim_id = f"clm_tafsir_{uuid.uuid4().hex[:6]}"
     claim = models.SemanticClaim(
         id=claim_id,

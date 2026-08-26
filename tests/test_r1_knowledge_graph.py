@@ -12,7 +12,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 
 from backend.domain import models
-from backend.domain.services import knowledge_graph
+from backend.domain.services import claim_visibility, knowledge_graph
 from backend.infrastructure.database import Base, get_db
 from backend.main import app
 
@@ -101,7 +101,9 @@ def graph_sources():
 
 
 def allow_graph_access(monkeypatch):
-    monkeypatch.setattr(knowledge_graph, "has_valid_gate", lambda *_args: True)
+    monkeypatch.setattr(
+        "backend.domain.services.claim_visibility.has_valid_gate", lambda *_args: True
+    )
 
 
 def rebuild_via_api(run_id: str):
@@ -113,7 +115,7 @@ def rebuild_via_api(run_id: str):
 def test_graph_read_is_blocked_before_internal_lock(graph_sources):
     response = client.get(f"/runs/{graph_sources['run_id']}/knowledge-graph")
     assert response.status_code == 403
-    assert "before Internal Lock" in response.json()["detail"]
+    assert "Current Internal Lock is not valid" in response.json()["detail"]
     db = TestingSessionLocal()
     try:
         isolation = (
@@ -350,7 +352,7 @@ def test_reachability_is_exact_and_excludes_unreachable_cross_scope_and_blind_la
 
         eligible_run_ids = {graph_sources["run_id"], other_run.id, blocked_run.id}
         with patch.object(
-            knowledge_graph,
+            claim_visibility,
             "has_valid_gate",
             side_effect=lambda _db, run_id, _gate: run_id in eligible_run_ids,
         ):
@@ -502,7 +504,7 @@ def test_mixed_run_eligibility_materially_controls_persisted_projection(
             )
         db.commit()
         with patch.object(
-            knowledge_graph,
+            claim_visibility,
             "has_valid_gate",
             side_effect=lambda _db, run_id, _gate: run_id in locked_run_ids,
         ):

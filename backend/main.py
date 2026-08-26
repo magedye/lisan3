@@ -9,6 +9,7 @@ from sqlalchemy.orm import Session
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from .domain import models, schemas
+from .domain.services.claim_visibility import ClaimReleasePolicy
 from .domain.services.gates import (
     INTERNAL_LOCK,
     has_valid_gate,
@@ -89,34 +90,26 @@ def _claim_responses(claims: list[models.SemanticClaim]):
 
 
 def _run_claims_visible(db: Session, run_id: str) -> bool:
-    isolation_state = (
-        db.query(models.IsolationState)
-        .filter(models.IsolationState.research_run_id == run_id)
-        .first()
-    )
-    return bool(
-        isolation_state
-        and isolation_state.is_contaminated == "CLEAN"
-        and has_valid_gate(db, run_id, INTERNAL_LOCK)
-    )
+    return ClaimReleasePolicy.evaluate_run(db, run_id).released
 
 
 def _released_claims(
     db: Session, claims: list[models.SemanticClaim]
 ) -> list[models.SemanticClaim]:
-    visibility_by_run: dict[str, bool] = {}
-    released: list[models.SemanticClaim] = []
-    for claim in claims:
-        if claim.research_run_id is None:
-            released.append(claim)
-            continue
-        if claim.research_run_id not in visibility_by_run:
-            visibility_by_run[claim.research_run_id] = _run_claims_visible(
-                db, claim.research_run_id
-            )
-        if visibility_by_run[claim.research_run_id]:
-            released.append(claim)
-    return released
+    return ClaimReleasePolicy.filter_released_claims(db, claims)
+
+
+def _require_released_claim(db: Session, claim_id: str) -> models.SemanticClaim:
+    claim = db.get(models.SemanticClaim, claim_id)
+    if claim is None:
+        raise HTTPException(status_code=404, detail="Claim not found")
+    decision = ClaimReleasePolicy.evaluate_claim(db, claim)
+    if not decision.released:
+        raise HTTPException(
+            status_code=403,
+            detail="Claim is not released from Blind Lab isolation",
+        )
+    return claim
 
 
 @app.get("/health")
@@ -127,15 +120,18 @@ def health_check():
 @app.post("/ask", response_model=schemas.AskLisanResponse)
 def ask_lisan(request: schemas.AskLisanRequest, db: Session = Depends(get_db)):
     # Check if a claim exists
-    claim = (
+    claims = (
         db.query(models.SemanticClaim)
         .join(models.ResearchRun)
         .filter(
             models.ResearchRun.target_expression == request.expression,
             models.SemanticClaim.contract_type == request.contract_type,
         )
-        .first()
+        .order_by(models.SemanticClaim.created_at.desc())
+        .all()
     )
+    released = _released_claims(db, claims)
+    claim = released[0] if released else None
 
     if claim:
         return schemas.AskLisanResponse(
@@ -236,7 +232,9 @@ def get_attention_center(db: Session = Depends(get_db)):
             _released_claims(db, freshness_attention_claims)
         ),
         pending_proposals=pending_proposals,
-        recent_changes=recent_changes,
+        recent_changes=ClaimReleasePolicy.filter_released_audit_logs(
+            db, recent_changes
+        ),
         corpus_snapshots=corpus_snapshots,
     )
 
@@ -629,19 +627,7 @@ def create_claim(
 
 @app.get("/claims/{claim_id}", response_model=schemas.SemanticClaimResponse)
 def get_claim(claim_id: str, db: Session = Depends(get_db)):
-    claim = (
-        db.query(models.SemanticClaim)
-        .filter(models.SemanticClaim.id == claim_id)
-        .first()
-    )
-    if not claim:
-        raise HTTPException(status_code=404, detail="Claim not found")
-    if claim.research_run_id and not _run_claims_visible(db, claim.research_run_id):
-        raise HTTPException(
-            status_code=403,
-            detail="Claim is not released from Blind Lab isolation",
-        )
-    return claim
+    return _require_released_claim(db, claim_id)
 
 
 @app.post("/claims/{claim_id}/reviews", response_model=schemas.ReviewDecisionResponse)
@@ -1031,13 +1017,7 @@ def get_knowledge_explorer(claim_id: str, db: Session = Depends(get_db)):
     """
     Returns an aggregated read-only view of a given semantic node.
     """
-    claim = (
-        db.query(models.SemanticClaim)
-        .filter(models.SemanticClaim.id == claim_id)
-        .first()
-    )
-    if not claim:
-        raise HTTPException(status_code=404, detail="Claim not found")
+    claim = _require_released_claim(db, claim_id)
 
     run = (
         db.query(models.ResearchRun)
@@ -1136,13 +1116,7 @@ def get_claim_provenance(claim_id: str, db: Session = Depends(get_db)):
     """
     Traces a semantic claim back to its roots: Dependencies, Run, and Snapshots.
     """
-    claim = (
-        db.query(models.SemanticClaim)
-        .filter(models.SemanticClaim.id == claim_id)
-        .first()
-    )
-    if not claim:
-        raise HTTPException(status_code=404, detail="Claim not found")
+    claim = _require_released_claim(db, claim_id)
 
     deps = (
         db.query(models.DependencyRecord)
@@ -1209,13 +1183,7 @@ def get_reproduction_manifest(claim_id: str, db: Session = Depends(get_db)):
     """
     Returns the complete information required to reproduce a claim, fulfilling Slice G requirements.
     """
-    claim = (
-        db.query(models.SemanticClaim)
-        .filter(models.SemanticClaim.id == claim_id)
-        .first()
-    )
-    if not claim:
-        raise HTTPException(status_code=404, detail="Claim not found")
+    claim = _require_released_claim(db, claim_id)
 
     deps = (
         db.query(models.DependencyRecord)
@@ -1256,13 +1224,7 @@ def get_claim_quality(claim_id: str, db: Session = Depends(get_db)):
     """
     Evaluates the multidimensional methodological purity and data isolation of a SemanticClaim.
     """
-    claim = (
-        db.query(models.SemanticClaim)
-        .filter(models.SemanticClaim.id == claim_id)
-        .first()
-    )
-    if not claim:
-        raise HTTPException(status_code=404, detail="Claim not found")
+    claim = _require_released_claim(db, claim_id)
 
     profile = (
         db.query(models.QualityProfile)
@@ -1329,7 +1291,15 @@ def list_audit_logs(
         query = query.filter(models.AuditLog.entity_type == entity_type)
     if entity_id:
         query = query.filter(models.AuditLog.entity_id == entity_id)
-    return query.order_by(models.AuditLog.created_at.desc()).limit(limit).all()
+    logs = query.order_by(models.AuditLog.created_at.desc()).limit(limit).all()
+    if entity_id:
+        claim = db.get(models.SemanticClaim, entity_id)
+        if claim is not None and not ClaimReleasePolicy.is_claim_released(db, claim):
+            raise HTTPException(
+                status_code=403,
+                detail="Claim audit is not released from Blind Lab isolation",
+            )
+    return ClaimReleasePolicy.filter_released_audit_logs(db, logs)
 
 
 @app.get("/claims/{claim_id}/history", response_model=schemas.ClaimHistoryResponse)
@@ -1337,13 +1307,7 @@ def get_claim_history(claim_id: str, db: Session = Depends(get_db)):
     """
     Returns the complete history and revision timeline of a SemanticClaim.
     """
-    claim = (
-        db.query(models.SemanticClaim)
-        .filter(models.SemanticClaim.id == claim_id)
-        .first()
-    )
-    if not claim:
-        raise HTTPException(status_code=404, detail="Claim not found")
+    claim = _require_released_claim(db, claim_id)
 
     reviews = (
         db.query(models.ReviewDecision)
