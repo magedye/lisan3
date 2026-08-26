@@ -6,6 +6,10 @@ State context only. Canonical repository contracts and runtime evidence remain a
 
 - Root: `D:\APP\tafseer\lisanapp3`
 - Branch: `main`
+- UI completion implementation candidate: `4a6ef34be5fd0916b9285deba96a27507bafac30`
+- UI completion state: implementation-side `IMPLEMENTED`, `TESTED`, and
+  `VERIFIED_FOR_PROFILE` for the UI Completion profile; independent UI review
+  is not established
 - R1 remediation baseline: `8a4a8884ac9b3ce353ed00c0948cf878ff8daa40`
 - V3 remediation implementation commit: `1deab3251ac1dc53ef772d10f99c9fd32284e557`
 - Independently reviewed V3 candidate: `6bb6505484dd649d092032a36d456f9f7fba5da1`
@@ -24,6 +28,10 @@ State context only. Canonical repository contracts and runtime evidence remain a
 - V4 entry: `V4_ENTRY_UNBLOCKED_NOT_STARTED`
 - R1: `R1_INDEPENDENTLY_CONFIRMED`
 - R1 confirmation applies only to: `a0d10d7fd5ff8845d3071b7e68f1500f92fd9563`
+- Stabilization remediation independent state:
+  `STABILIZATION_REMEDIATION_INDEPENDENTLY_CONFIRMED`
+- Stabilization confirmation applies only to owner-supplied candidate:
+  `f202a1e703b8da97bb0df419c9149052758505cc`
 - R2 benchmark: completed with `EMBEDDING_MODEL_SELECTION_BLOCKED`
 - R2 model-agnostic infrastructure: implementation-side `IMPLEMENTED` and
   `TESTED` at `2449ac4db7102a0a62ae9622c6f668bb71602ef8`; independent review
@@ -238,13 +246,13 @@ No implementation thread claim may grant independent confirmation or release acc
 - R2 remains at the model-independent checkpoint; model selection/integration,
   R3, and V4 remain unstarted.
 
-## Stabilization Review Remediation Candidate
+## Stabilization Review Remediation Confirmation
 
 - Candidate: `f202a1e703b8da97bb0df419c9149052758505cc`, direct child of documentation
   checkpoint `643230b1ad883d1caaca6813f0d03a26b1e09621`.
-- Status is implementation-side `IMPLEMENTED` and `TESTED`; the supplied
-  independent-review blockers are addressed, but the candidate has not yet
-  received a fresh independent read-only review.
+- The owner supplied the fresh independent result
+  `PASS — STABILIZATION_REMEDIATION_INDEPENDENTLY_CONFIRMED`. The result is
+  bound only to the candidate above and is not extended by later UI commits.
 - The found-claim UI and real Journey 7 now require all four independent axes:
   Epistemic, Review, Freshness, and Publication. A focused parameterized test
   fails separately if any axis is absent.
@@ -268,10 +276,32 @@ No implementation thread claim may grant independent confirmation or release acc
   Production model integration, R3, and V4 remain unstarted. Owner files
   `check_db2.py` and `debug_proxy.py` remain untracked and untouched.
 
+## UI Completion Checkpoint
+
+- Initial task HEAD: `9cb924fd7cac8c2106258881e3b2e7253cfd4268`.
+- Exact implementation candidate:
+  `4a6ef34be5fd0916b9285deba96a27507bafac30`.
+- All 28 Golden/Stitch pairs are classified exactly once: 8 current
+  executable, 7 inventory-time backend gaps resolved with minimal reads,
+  0 blocked only by a model artifact, 1 blocked by R2 confirmation/R3, and
+  12 reference-only or superseded.
+- All eight current production routes use real backend contracts and explicit
+  loading, empty, error, blocked, and domain-specific non-current states.
+- Exact-candidate detached verification passed 130 non-E2E tests, all 8
+  Playwright journeys, Ruff, ESLint, Next build, generated-contract parity,
+  `pip check`, production `npm audit`, live route smoke, browser console review,
+  desktop/tablet/mobile visual review, and `git diff --check`. Pyright reported
+  0 errors and 160 warnings.
+- Durable evidence: `docs/LISAN3_UI_COMPLETION_CHECKPOINT.md`,
+  `docs/STITCH_PRODUCTION_COVERAGE_MATRIX.md`, and
+  `docs/evidence/ui/`.
+- No model work, production vector activation, EvidenceResolver, R3, V4,
+  release action, or push was performed.
+
 ## Exact Next Action
 
-Request one fresh, independent, read-only review of stabilization candidate
-`f202a1e703b8da97bb0df419c9149052758505cc` against
-`docs/LISAN3_STABILIZATION_CHECKPOINT.md`. Do not begin R3, V4, production
-embedding integration, or model work unless a later explicit owner instruction
-authorizes it.
+Request one fresh, independent, read-only Sol review of the UI implementation
+candidate and its direct documentation-only checkpoint. Bind every conclusion
+to the exact SHAs, actively test the completion claim against the canonical
+authority and 28-screen matrix, and do not remediate or begin model/R2/R3/V4
+work in that review context.

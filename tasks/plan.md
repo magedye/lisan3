@@ -59,12 +59,13 @@ vectors, implement EvidenceResolver/hybrid retrieval, begin R3, or execute V4.
 - [x] All eight Playwright journeys pass, including real-data, fail-closed,
   RTL, form-label and mobile-menu checks.
 - [x] Record the 28-screen coverage and UI/backend contract matrices.
-- [ ] Create coherent commits and bind the candidate SHA.
-- [ ] Run the full authorized verification profile from a clean detached
+- [x] Create coherent commits and bind the candidate SHA.
+- [x] Run the full authorized verification profile from a clean detached
   checkout, including live route/console and desktop/tablet/mobile evidence.
-- [ ] Record final candidate-bound evidence in the completion checkpoint and
+- [x] Record final candidate-bound evidence in the completion checkpoint and
   `PROJECT_STATE.md`.
-- [ ] Request a fresh independent read-only review; do not self-grant it.
+- [x] Prepare the exact prompt for a fresh independent read-only review; do not
+  self-grant it.
 
 ## Completion Claim Ceiling
 

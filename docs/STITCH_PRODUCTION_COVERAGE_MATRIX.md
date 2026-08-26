@@ -1,6 +1,6 @@
 # Stitch Production Coverage Matrix
 
-Status date: 2026-08-25. This matrix is descriptive evidence, not a new
+Status date: 2026-08-26. This matrix is descriptive evidence, not a new
 authority source. Canonical product, UX, registry, and status contracts retain
 precedence. The inspected asset root is:
 
@@ -84,7 +84,12 @@ Classification count: 8 `CURRENT_EXECUTABLE`, 7 `CURRENT_BACKEND_GAP`,
 - Loading, empty, error, blocked, stale, contamination, and confirmation states
   are explicit. Forms have programmatic labels and stable `id` or `name`
   attributes; tabs and dialogs use native/ARIA semantics.
-- Full Playwright evidence at the implementation checkpoint: 8 passed. Focused
-  production read-model/status tests: 8 passed. ESLint and the Next production
-  build pass. Exact candidate-bound detached evidence is recorded in
-  `LISAN3_UI_COMPLETION_CHECKPOINT.md` after candidate verification.
+- Exact implementation candidate:
+  `4a6ef34be5fd0916b9285deba96a27507bafac30`.
+- Clean detached verification: 130 non-E2E tests and all 8 Playwright journeys
+  passed; Ruff, ESLint, Next production build, generated OpenAPI/TypeScript
+  parity, `pip check`, production `npm audit`, runtime route smoke, console
+  review, and `git diff --check` passed. Pyright reported 0 errors and 160
+  warnings.
+- Candidate-bound desktop, tablet, and mobile screenshots and their SHA-256
+  hashes are recorded in `docs/LISAN3_UI_COMPLETION_CHECKPOINT.md`.
