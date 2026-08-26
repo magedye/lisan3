@@ -370,7 +370,52 @@ No implementation thread claim may grant independent confirmation or release acc
 - The administrative documentation commit that records this verdict is not
   independently reviewed for product behavior.
 
+## Corpus and Methodology Authority Checkpoint
+
+- Starting HEAD: `28d355653a915016b179e223852f2b978dc44605`;
+  implementation candidate:
+  `382c7aefdde8cf5fde160b98fe3b705384ddadbb`.
+- Read-only external reconciliation verified the Tanzil Uthmani 1.1 candidate
+  at 6,236 verses, 1,334,737 bytes, and SHA-256
+  `ac0724796cbbda0f4801470fbbd11d0f3c5802067bae0493466d0128b0c667af`.
+  The external CANON-001 manifest explicitly does not grant LISAN3 production
+  activation, so no authority was transferred into this repository.
+- The QAC morphology v0.4 candidate was verified at 6,309,503 bytes and
+  SHA-256
+  `a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46`.
+  It remains auxiliary structural evidence only; its semantic/gloss/ontology
+  fields are excluded, and the current LISAN3 QAC importer does not validate
+  the real tab-separated artifact format.
+- The live LISAN3 database still has zero CorpusSnapshots and zero ResearchRuns.
+  Tanzil and QAC remain `SOURCE_ROLE_APPROVED`; neither has a LISAN3-bound
+  expected hash, validated import, or `PRODUCTION_ACTIVE` activation.
+- Migration `e8b3f6a1c204` adds a durable Methodology revision registry and seeds
+  `LISAN_QURANIC_SEMANTIC_EXTRACTION@6bb1c10a0f9a`, bound to the governing
+  skill source and SHA-256
+  `43c0a40b3f465fa95695607c2de838effd07946966c57ad15275d0051e92a288`.
+  Provenance fields are immutable; lifecycle and eligibility remain separately
+  mutable for future retirement or revocation.
+- ResearchRun admission now requires both a production-valid CorpusSnapshot and
+  a current, eligible, source-matching Methodology revision. The live Run Builder
+  remains unavailable only because no production-active CorpusSnapshot exists.
+- Full affected verification passed: 146 non-E2E tests, affected Playwright
+  Journey 1, Ruff, Pyright with 0 errors and 177 existing warnings, ESLint,
+  Next production build, OpenAPI regeneration parity, Alembic base-to-head and
+  model parity, and live readiness. A clean detached checkout of the exact
+  candidate passed 15 focused tests, Ruff, clean Git status, and contract hash
+  parity.
+- The prior requalification Corpus blocker therefore remains. No pilot or
+  remaining batch may start; any later Corpus activation closes only that
+  blocker and still requires a fresh pilot rerun and separate authorization.
+- No UI Completion workstream, LQE implementation, model integration, R3, V4,
+  release, push, or external repository mutation was performed. Owner artifacts
+  `.hermes/`, `check_db2.py`, and `debug_proxy.py` remain untouched.
+
 ## Exact Next Action
 
-Await separate owner authorization for the next project workstream. Do not
-infer authority for model integration, R2, R3, V4, or release work.
+Await separate owner authorization for a bounded LISAN3 Corpus admission slice:
+bind the exact Tanzil Uthmani 1.1 artifact and expected hash under LISAN3
+authority, implement and validate the real one-verse-per-line import, reconcile
+6,236 verse identities, and obtain an explicit production-activation decision.
+Do not infer authority for requalification batches, UI Completion, model work,
+R2/R3, V4, or release.
