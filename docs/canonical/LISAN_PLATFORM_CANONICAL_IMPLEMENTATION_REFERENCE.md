@@ -39,6 +39,18 @@ All semantic changes must trace back through:
 - **Workflow vs Epistemic States**: Workflow progression (e.g., analysis stage) never automatically grants epistemic lock or publication authority.
 - **Governance Rules**: Existing governing revisions cannot be mutated in place. New revisions must be created, triggering transitive invalidation assessments.
 
+## Methodology Revision Authority
+- The active methodology source is `skills/lisan-semantic-extraction/SKILL.md`.
+- Every ResearchRun-eligible revision is an immutable registry record bound to
+  the source path and SHA-256, its authority reference, allowed use, and its
+  independent `CURRENT` or `RETIRED` lifecycle state.
+- Identity, provenance, source binding, and allowed use cannot be mutated after
+  insert; only lifecycle and eligibility may change to retire or revoke future use.
+- ResearchRun admission accepts only a present, `CURRENT`, explicitly eligible
+  registry revision whose source bytes still match the recorded SHA-256.
+- A source change requires a new registry revision. Retiring or revoking a
+  revision prevents future run admission without rewriting historical runs.
+
 ### Tooling and Verification
 
 Lisanapp uses strict evidence-based verification. Test coverage is divided into standard unit tests (`pytest`), randomized invariant checking (`hypothesis`), property-based contract checking (`schemathesis`), bounding mutation checking (`cosmic-ray`), and canonical journeys (`playwright`).

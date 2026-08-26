@@ -55,6 +55,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/methodologies": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** List Methodology Revisions */
+        get: operations["list_methodology_revisions_methodologies_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/attention": {
         parameters: {
             query?: never;
@@ -1295,6 +1312,35 @@ export interface components {
             /** Affected By */
             affected_by: string[];
         };
+        /** MethodologyRevisionResponse */
+        MethodologyRevisionResponse: {
+            /** Id */
+            id: string;
+            /** Methodology Id */
+            methodology_id: string;
+            /** Revision */
+            revision: string;
+            /**
+             * Lifecycle State
+             * @enum {string}
+             */
+            lifecycle_state: "CURRENT" | "RETIRED";
+            /** Authority Reference */
+            authority_reference: string;
+            /** Source Reference */
+            source_reference: string;
+            /** Source Sha256 */
+            source_sha256: string;
+            /** Allowed Use */
+            allowed_use: string;
+            /** Research Run Eligible */
+            research_run_eligible: boolean;
+            /**
+             * Created At
+             * Format: date-time
+             */
+            created_at: string;
+        };
         /** ObservationArtifactCreate */
         ObservationArtifactCreate: {
             /** Occurrence Ref */
@@ -2018,6 +2064,85 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content?: never;
+            };
+        };
+    };
+    list_methodology_revisions_methodologies_get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["MethodologyRevisionResponse"][];
+                };
+            };
+            /** @description Bad Request */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Unauthorized */
+            401: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Forbidden */
+            403: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Not Found */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Conflict */
+            409: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Internal Server Error */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
             };
         };
     };

@@ -172,12 +172,25 @@ def test_unknown_or_unadmitted_run_authority_cannot_create_research_run(test_db)
         canonical_text_hash="unverified",
     )
     test_db.add(snapshot)
+    methodology = models.MethodologyRevision(
+        id="methodology-current-test",
+        methodology_id="LISAN_QURANIC_SEMANTIC_EXTRACTION",
+        revision="test-revision",
+        lifecycle_state="CURRENT",
+        authority_reference="canonical:test",
+        source_reference="skills/lisan-semantic-extraction/SKILL.md",
+        source_sha256="43c0a40b3f465fa95695607c2de838effd07946966c57ad15275d0051e92a288",
+        allowed_use="QURAN_INTERNAL_CUMULATIVE_RUN",
+        research_run_eligible=True,
+    )
+    test_db.add(methodology)
     test_db.commit()
     payload["corpus_snapshot"] = snapshot.id
+    payload["methodology_revision"] = methodology.id
 
     unavailable = client.post("/runs", json=payload)
     assert unavailable.status_code == 503
-    assert "Methodology" in unavailable.json()["detail"]
+    assert "CorpusSnapshot" in unavailable.json()["detail"]
     assert test_db.query(models.ResearchRun).count() == 0
 
     attention = client.get("/attention")
@@ -185,7 +198,7 @@ def test_unknown_or_unadmitted_run_authority_cannot_create_research_run(test_db)
     admission = attention.json()["run_admission"]
     assert admission["available"] is False
     assert admission["corpus_snapshot_ids"] == []
-    assert admission["methodology_revisions"] == []
+    assert admission["methodology_revisions"] == [methodology.id]
 
 
 def test_arbitrary_steward_command_is_honestly_unsupported_and_audited(test_db):

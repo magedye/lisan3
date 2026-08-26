@@ -60,6 +60,21 @@ class ResearchRunResponse(ResearchRunBase):
     model_config = ConfigDict(from_attributes=True)
 
 
+class MethodologyRevisionResponse(BaseSchema):
+    id: str
+    methodology_id: str
+    revision: str
+    lifecycle_state: Literal["CURRENT", "RETIRED"]
+    authority_reference: str
+    source_reference: str
+    source_sha256: str
+    allowed_use: str
+    research_run_eligible: bool
+    created_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+
 # --- Semantic Claim Schemas ---
 class SemanticClaimBase(BaseSchema):
     contract_type: str

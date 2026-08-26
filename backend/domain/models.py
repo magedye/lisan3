@@ -14,6 +14,7 @@ from sqlalchemy import (
     String,
     UniqueConstraint,
     event,
+    inspect,
 )
 from sqlalchemy.orm import relationship
 
@@ -72,6 +73,59 @@ class OfficialStatus(str, enum.Enum):
     LOCK_BLOCKED = "LOCK_BLOCKED"
     LOCK_INTERNAL_RESULT = "LOCK_INTERNAL_RESULT"
     REVALIDATION_REQUIRED = "REVALIDATION_REQUIRED"
+
+
+class MethodologyRevision(Base):
+    __tablename__ = "methodology_revisions"
+    __table_args__ = (
+        CheckConstraint(
+            "lifecycle_state IN ('CURRENT', 'RETIRED')",
+            name="ck_methodology_revision_lifecycle",
+        ),
+        CheckConstraint(
+            "length(source_sha256) = 64",
+            name="ck_methodology_revision_source_sha256",
+        ),
+        UniqueConstraint(
+            "methodology_id",
+            "revision",
+            name="uq_methodology_revision_identity",
+        ),
+    )
+
+    id = Column(String, primary_key=True)
+    methodology_id = Column(String, nullable=False, index=True)
+    revision = Column(String, nullable=False)
+    lifecycle_state = Column(String, nullable=False)
+    authority_reference = Column(String, nullable=False)
+    source_reference = Column(String, nullable=False)
+    source_sha256 = Column(String, nullable=False)
+    allowed_use = Column(String, nullable=False)
+    research_run_eligible = Column(Boolean, nullable=False, default=False)
+    created_at = Column(DateTime, nullable=False, default=datetime.datetime.utcnow)
+
+
+@event.listens_for(MethodologyRevision, "before_update")
+def enforce_methodology_revision_immutability(_mapper, _connection, revision):
+    immutable_fields = (
+        "methodology_id",
+        "revision",
+        "authority_reference",
+        "source_reference",
+        "source_sha256",
+        "allowed_use",
+        "created_at",
+    )
+    changed = [
+        field
+        for field in immutable_fields
+        if inspect(revision).attrs[field].history.has_changes()
+    ]
+    if changed:
+        raise ValueError(
+            "Methodology revision provenance is immutable; create a new revision "
+            "instead of changing: " + ", ".join(changed)
+        )
 
 
 class ResearchRun(Base):

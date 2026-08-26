@@ -249,6 +249,84 @@
         }
       }
     },
+    "/methodologies": {
+      "get": {
+        "summary": "List Methodology Revisions",
+        "operationId": "list_methodology_revisions_methodologies_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/MethodologyRevisionResponse"
+                  },
+                  "type": "array",
+                  "title": "Response List Methodology Revisions Methodologies Get"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "409": {
+            "description": "Conflict"
+          }
+        }
+      }
+    },
     "/attention": {
       "get": {
         "summary": "Get Attention Center",
@@ -4862,6 +4940,69 @@
           "affected_by"
         ],
         "title": "LegacyKnowledgeExplorerClaim"
+      },
+      "MethodologyRevisionResponse": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "methodology_id": {
+            "type": "string",
+            "title": "Methodology Id"
+          },
+          "revision": {
+            "type": "string",
+            "title": "Revision"
+          },
+          "lifecycle_state": {
+            "type": "string",
+            "enum": [
+              "CURRENT",
+              "RETIRED"
+            ],
+            "title": "Lifecycle State"
+          },
+          "authority_reference": {
+            "type": "string",
+            "title": "Authority Reference"
+          },
+          "source_reference": {
+            "type": "string",
+            "title": "Source Reference"
+          },
+          "source_sha256": {
+            "type": "string",
+            "title": "Source Sha256"
+          },
+          "allowed_use": {
+            "type": "string",
+            "title": "Allowed Use"
+          },
+          "research_run_eligible": {
+            "type": "boolean",
+            "title": "Research Run Eligible"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "methodology_id",
+          "revision",
+          "lifecycle_state",
+          "authority_reference",
+          "source_reference",
+          "source_sha256",
+          "allowed_use",
+          "research_run_eligible",
+          "created_at"
+        ],
+        "title": "MethodologyRevisionResponse"
       },
       "ObservationArtifactCreate": {
         "properties": {

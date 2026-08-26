@@ -21,7 +21,7 @@ Base.metadata.create_all(bind=engine)
 with engine.begin() as connection:
     connection.execute(text("CREATE TABLE alembic_version (version_num VARCHAR(32))"))
     connection.execute(
-        text("INSERT INTO alembic_version VALUES ('d4f7a2c8e901')")
+        text("INSERT INTO alembic_version VALUES ('e8b3f6a1c204')")
     )
 
 client = TestClient(app)

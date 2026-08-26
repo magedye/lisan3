@@ -185,6 +185,21 @@ def create_run(run: schemas.ResearchRunCreate, db: Session = Depends(get_db)):
     return db_run
 
 
+@app.get(
+    "/methodologies",
+    response_model=list[schemas.MethodologyRevisionResponse],
+)
+def list_methodology_revisions(db: Session = Depends(get_db)):
+    return (
+        db.query(models.MethodologyRevision)
+        .order_by(
+            models.MethodologyRevision.methodology_id,
+            models.MethodologyRevision.revision,
+        )
+        .all()
+    )
+
+
 @app.get("/attention", response_model=schemas.AttentionCenterResponse)
 def get_attention_center(db: Session = Depends(get_db)):
     """Read-only projection of persisted work that currently needs attention."""

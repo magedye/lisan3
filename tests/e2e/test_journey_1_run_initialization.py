@@ -22,11 +22,13 @@ def test_journey_1_run_initialization(page: Page, e2e_server: dict):
     # Expect insufficient evidence message
     expect(page.locator("h3:has-text('Insufficient Evidence')")).to_be_visible()
 
-    # 2. Current canonical authority has no admitted production Corpus or
-    # Methodology registry, so the UI must not accept free-text identifiers.
+    # 2. A governed Methodology revision exists, but current canonical authority
+    # has no admitted production Corpus, so no Run Builder controls are exposed.
     unavailable = page.locator("#run-admission-unavailable")
     expect(unavailable).to_contain_text("Run Builder unavailable")
-    expect(unavailable).to_contain_text("No canonical Methodology")
+    expect(unavailable).to_contain_text(
+        "No authority-verified, production-active CorpusSnapshot"
+    )
     expect(page.locator("#run-methodology")).to_have_count(0)
     expect(page.locator("#run-corpus")).to_have_count(0)
 
