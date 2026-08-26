@@ -2,10 +2,12 @@ import re
 
 from playwright.sync_api import Page, expect
 
-from backend.domain.models import AuditLog, ResearchRun, SemanticClaim
+from backend.domain.models import AuditLog, IsolationState, ResearchRun, SemanticClaim
 
 
-def test_journey_7_golden_shell_and_real_audit(page: Page, e2e_server: dict):
+def test_journey_7_golden_shell_and_real_audit(
+    page: Page, e2e_server: dict, monkeypatch
+):
     session_factory = e2e_server["db_session"]
     with session_factory() as session:
         session.add_all(
@@ -27,6 +29,15 @@ def test_journey_7_golden_shell_and_real_audit(page: Page, e2e_server: dict):
                     freshness_state="REVALIDATION_REQUIRED",
                     publication_state="PRIVATE_WORKING",
                 ),
+                IsolationState(
+                    id="isolation_e2e_status_axes",
+                    research_run_id="run_e2e_status_axes",
+                    target_contract="ROOT_CORE",
+                    corpus_snapshot="snap_e2e_status_axes",
+                    methodology_reference="v4.0",
+                    allowed_sources=["QURAN_CORPUS"],
+                    is_contaminated="CLEAN",
+                ),
                 AuditLog(
                     id="aud_e2e_golden_shell",
                     entity_id="route_audit",
@@ -47,6 +58,13 @@ def test_journey_7_golden_shell_and_real_audit(page: Page, e2e_server: dict):
     )
 
     page.get_by_placeholder("e.g. ضرب").fill("نور")
+    page.get_by_role("button", name="Search — بحث").click()
+    expect(page.locator("h3:has-text('Insufficient Evidence')")).to_be_visible()
+    expect(page.locator("#run-admission-unavailable")).to_be_visible()
+
+    monkeypatch.setattr(
+        "backend.domain.services.claim_visibility.has_valid_gate", lambda *_args: True
+    )
     page.get_by_role("button", name="Search — بحث").click()
     found_claim = page.locator(".found-panel")
     expect(found_claim).to_contain_text("الحالة المعرفية")

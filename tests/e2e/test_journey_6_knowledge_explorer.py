@@ -1,14 +1,15 @@
 from playwright.sync_api import Page, expect
 
 from backend.domain import models
-from backend.domain.services import knowledge_graph
 
 
 def test_journey_6_knowledge_explorer_uses_real_graph_projection(
     page: Page, e2e_server: dict, monkeypatch
 ):
     """R1: backend projection -> read-only React Flow -> provenance table."""
-    monkeypatch.setattr(knowledge_graph, "has_valid_gate", lambda *_args: True)
+    monkeypatch.setattr(
+        "backend.domain.services.claim_visibility.has_valid_gate", lambda *_args: True
+    )
     db = e2e_server["db_session"]()
     try:
         snapshot = models.CorpusSnapshot(

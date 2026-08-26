@@ -27,26 +27,21 @@ def test_journey_2_blind_lab(page: Page, e2e_server: dict):
                     verse_ref="fixture:1",
                     text="نص قرآني تجريبي مميز صراحة للاختبار",
                 ),
+                models.ResearchRun(
+                    id="run_e2e_blind",
+                    target_contract="ROOT_CORE",
+                    target_expression="كتب",
+                    methodology_revision="method-e2e-fixture",
+                    corpus_snapshot="snap_e2e_blind",
+                    authority_context={"source": "explicit-e2e-fixture"},
+                ),
             ]
         )
         session.commit()
 
-    # 1. Ask Lisan and Create ResearchRun
-    page.goto(base_url)
-    page.fill("input[placeholder='e.g. ضرب']", "كتب")
-    page.click("button:has-text('Search')")
-    expect(page.locator("h3:has-text('Insufficient Evidence')")).to_be_visible(
-        timeout=10000
-    )
-
-    page.fill("#run-methodology", "method-e2e")
-    page.fill("#run-corpus", "snap_e2e_blind")
-    page.click("button:has-text('Start Research Run')")
-    expect(page).to_have_url(re.compile(r".*/run/.*"))
-
-    # Extract Run ID from URL
-    run_url = page.url
-    run_id = run_url.split("/")[-1]
+    # 1. Exercise an explicitly seeded fixture run; production Run Builder is
+    # unavailable until canonical Corpus and Methodology authority exists.
+    run_id = "run_e2e_blind"
 
     # Navigate to Blind Lab
     page.goto(f"{base_url}/run/{run_id}/blind")

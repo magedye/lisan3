@@ -6,7 +6,9 @@ from backend.domain import models
 def test_journey_8_golden_production_routes_are_rtl_responsive_and_real(
     page: Page, e2e_server: dict, monkeypatch
 ):
-    monkeypatch.setattr("backend.main.has_valid_gate", lambda *_args: True)
+    monkeypatch.setattr(
+        "backend.domain.services.claim_visibility.has_valid_gate", lambda *_args: True
+    )
     with e2e_server["db_session"]() as session:
         snapshot = models.CorpusSnapshot(
             id="snap_e2e_ui",

@@ -3,7 +3,7 @@ from playwright.sync_api import Page, expect
 from backend.domain import models
 
 
-def test_journey_4_governance_review(page: Page, e2e_server: dict):
+def test_journey_4_governance_review(page: Page, e2e_server: dict, monkeypatch):
     """
     Journey 4: Governance Rule Change, Impact Analysis, & Transitive Invalidation
     - Rule/Proposal -> impact -> approved revision -> affected claim becomes REVALIDATION_REQUIRED -> unrelated claim unchanged.
@@ -22,8 +22,28 @@ def test_journey_4_governance_review(page: Page, e2e_server: dict):
         )
         db.add(rule)
 
+        run = models.ResearchRun(
+            id="run_gov_review",
+            target_contract="ROOT_CORE",
+            target_expression="governance",
+            methodology_revision="method-e2e-fixture",
+            corpus_snapshot="snapshot-e2e-fixture",
+            authority_context={"source": "e2e"},
+        )
+        isolation = models.IsolationState(
+            id="isolation_gov_review",
+            research_run_id=run.id,
+            target_contract=run.target_contract,
+            corpus_snapshot=run.corpus_snapshot,
+            methodology_reference=run.methodology_revision,
+            allowed_sources=["QURAN_CORPUS"],
+            is_contaminated="CLEAN",
+        )
+        db.add_all([run, isolation])
+
         claim_dep = models.SemanticClaim(
             id="clm_gov_dep",
+            research_run_id=run.id,
             contract_type="ROOT_CORE",
             epistemic_state="LOCK_INTERNAL_RESULT",
             review_state="NOT_REVIEWED",
@@ -32,6 +52,7 @@ def test_journey_4_governance_review(page: Page, e2e_server: dict):
         )
         claim_unrelated = models.SemanticClaim(
             id="clm_gov_unrelated",
+            research_run_id=run.id,
             contract_type="ROOT_CORE",
             epistemic_state="LOCK_INTERNAL_RESULT",
             review_state="NOT_REVIEWED",
@@ -51,6 +72,10 @@ def test_journey_4_governance_review(page: Page, e2e_server: dict):
         db.commit()
     finally:
         db.close()
+
+    monkeypatch.setattr(
+        "backend.domain.services.claim_visibility.has_valid_gate", lambda *_args: True
+    )
 
     # 2. Submit a ChangeProposal
     page.goto(f"{base_url}/governance")

@@ -1,12 +1,10 @@
-import re
-
 from playwright.sync_api import Page, expect
 
 
 def test_journey_1_run_initialization(page: Page, e2e_server: dict):
     """
-    Journey 1: Governed Research
-    - Ask Lisan -> insufficient evidence -> create ResearchRun -> verify persisted run state.
+    Journey 1: Governed Research entry boundary
+    - Ask Lisan -> insufficient evidence -> honest Run Builder unavailable state.
     """
     base_url = e2e_server["base_url"]
 
@@ -24,11 +22,22 @@ def test_journey_1_run_initialization(page: Page, e2e_server: dict):
     # Expect insufficient evidence message
     expect(page.locator("h3:has-text('Insufficient Evidence')")).to_be_visible()
 
-    # 2. Start a Governed ResearchRun
-    page.fill("#run-methodology", "method-e2e")
-    page.fill("#run-corpus", "snap-e2e")
-    page.click("button:has-text('Start Research Run')")
+    # 2. Current canonical authority has no admitted production Corpus or
+    # Methodology registry, so the UI must not accept free-text identifiers.
+    unavailable = page.locator("#run-admission-unavailable")
+    expect(unavailable).to_contain_text("Run Builder unavailable")
+    expect(unavailable).to_contain_text("No canonical Methodology")
+    expect(page.locator("#run-methodology")).to_have_count(0)
+    expect(page.locator("#run-corpus")).to_have_count(0)
 
-    # 3. Verify navigation to the run page
-    expect(page).to_have_url(re.compile(r".*/run/.*"))
-    expect(page.get_by_label("تسلسل مراحل البحث").get_by_text("PREFLIGHT", exact=True)).to_be_visible()
+    rejected = page.request.post(
+        f"{e2e_server['api_url']}/runs",
+        data={
+            "target_contract": "ROOT_CORE",
+            "target_expression": "ضرب",
+            "methodology_revision": "ARBITRARY_METHOD",
+            "corpus_snapshot": "NONEXISTENT_SNAPSHOT",
+            "authority_context": {"source": "e2e"},
+        },
+    )
+    assert rejected.status == 422

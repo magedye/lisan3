@@ -77,7 +77,9 @@ def test_journey_3_purity_check(page: Page, e2e_server: dict, monkeypatch):
     finally:
         db.close()
 
-    monkeypatch.setattr("backend.main.has_valid_gate", lambda *_args: True)
+    monkeypatch.setattr(
+        "backend.domain.services.claim_visibility.has_valid_gate", lambda *_args: True
+    )
 
     # 1. Verify Claim Provenance Read Model
     page.goto(f"{base_url}/claims/clm_trace_01")
@@ -90,6 +92,8 @@ def test_journey_3_purity_check(page: Page, e2e_server: dict, monkeypatch):
     # 2. Verify Multidimensional Quality & 8-Dimension Purity Report
     expect(page.locator("#qual-rating")).to_contain_text("CONTAMINATED")
     expect(page.locator("#qual-findings")).to_contain_text("8 findings")
+    expect(page.locator("#quality-availability")).to_contain_text("UNAVAILABLE")
+    expect(page.get_by_text("QualityProfile unavailable", exact=False)).to_be_visible()
 
     # 3. Verify Reproduction Manifest
     expect(page.locator("#man-corpus")).to_contain_text("snap_tanzil_01")
