@@ -294,6 +294,22 @@ class ObservationArtifact(Base):
 
 class CorpusSnapshot(Base):
     __tablename__ = "corpus_snapshots"
+    __table_args__ = (
+        UniqueConstraint(
+            "canonical_text_source",
+            "canonical_text_version",
+            "canonical_text_hash",
+            name="uq_corpus_snapshot_artifact_identity",
+        ),
+        CheckConstraint(
+            "artifact_size_bytes IS NULL OR artifact_size_bytes > 0",
+            name="ck_corpus_snapshot_artifact_size_positive",
+        ),
+        CheckConstraint(
+            "verse_count IS NULL OR verse_count > 0",
+            name="ck_corpus_snapshot_verse_count_positive",
+        ),
+    )
 
     id = Column(String, primary_key=True, index=True)
     canonical_text_source = Column(String, nullable=False)
@@ -314,6 +330,15 @@ class CorpusSnapshot(Base):
         String, nullable=False, default="CANONICAL_ACTIVATION_PENDING"
     )
     artifact_provenance = Column(String, nullable=True)
+    artifact_reference = Column(String, nullable=True)
+    artifact_size_bytes = Column(Integer, nullable=True)
+    artifact_format = Column(String, nullable=True)
+    artifact_verified_at = Column(DateTime, nullable=True)
+    artifact_verification_revision = Column(String, nullable=True)
+    identity_index_reference = Column(String, nullable=True)
+    identity_index_sha256 = Column(String, nullable=True)
+    verse_count = Column(Integer, nullable=True)
+    canon_001_reconciliation = Column(String, nullable=True)
     fixture_only = Column(Boolean, nullable=False, default=True)
     created_at = Column(DateTime, default=datetime.datetime.utcnow)
 
@@ -321,26 +346,82 @@ class CorpusSnapshot(Base):
 @event.listens_for(CorpusSnapshot, "before_insert")
 @event.listens_for(CorpusSnapshot, "before_update")
 def enforce_corpus_snapshot_validation(_mapper, _connection, snapshot):
-    if snapshot.validation_status != "VALIDATED":
-        return
+    from backend.domain.services.corpus.authority import (
+        IMPORT_VALIDATED,
+        PRODUCTION_ACTIVE,
+        import_validation_failures,
+        production_validation_failures,
+    )
 
-    from backend.domain.services.corpus.authority import production_validation_failures
-
-    failures = production_validation_failures(snapshot)
+    failures: list[str] = []
+    if snapshot.import_validation_status == IMPORT_VALIDATED:
+        failures.extend(import_validation_failures(snapshot))
+    if (
+        snapshot.validation_status == "VALIDATED"
+        or snapshot.activation_status == PRODUCTION_ACTIVE
+    ):
+        failures.extend(production_validation_failures(snapshot))
     if failures:
         raise ValueError(
-            "Cannot persist production VALIDATED CorpusSnapshot: " + "; ".join(failures)
+            "Cannot persist CorpusSnapshot lifecycle transition: "
+            + "; ".join(dict.fromkeys(failures))
+        )
+
+
+@event.listens_for(CorpusSnapshot, "before_update")
+def preserve_imported_corpus_provenance(_mapper, _connection, snapshot):
+    state = inspect(snapshot)
+    import_history = state.attrs.import_validation_status.history
+    was_import_validated = (
+        snapshot.import_validation_status == "IMPORT_VALIDATED"
+        or "IMPORT_VALIDATED" in import_history.deleted
+    )
+    if not was_import_validated:
+        return
+
+    immutable_fields = (
+        "canonical_text_source",
+        "canonical_text_version",
+        "canonical_text_hash",
+        "source_role_status",
+        "artifact_presence_status",
+        "expected_canonical_text_hash",
+        "hash_verification_status",
+        "import_validation_status",
+        "artifact_provenance",
+        "artifact_reference",
+        "artifact_size_bytes",
+        "artifact_format",
+        "artifact_verified_at",
+        "artifact_verification_revision",
+        "identity_index_reference",
+        "identity_index_sha256",
+        "verse_count",
+        "canon_001_reconciliation",
+        "fixture_only",
+    )
+    changed = [field for field in immutable_fields if state.attrs[field].history.has_changes()]
+    if changed:
+        raise ValueError(
+            "Cannot mutate imported CorpusSnapshot provenance: " + ", ".join(changed)
         )
 
 
 class CorpusOccurrence(Base):
     __tablename__ = "corpus_occurrences"
+    __table_args__ = (
+        UniqueConstraint(
+            "snapshot_id", "verse_ref", name="uq_corpus_occurrence_snapshot_verse"
+        ),
+    )
 
     id = Column(String, primary_key=True, index=True)
-    snapshot_id = Column(String, index=True)
+    snapshot_id = Column(
+        String, ForeignKey("corpus_snapshots.id"), nullable=False, index=True
+    )
     expression = Column(String)
-    verse_ref = Column(String)
-    text = Column(String)
+    verse_ref = Column(String, nullable=False)
+    text = Column(String, nullable=False)
     created_at = Column(DateTime, default=datetime.datetime.utcnow)
 
 

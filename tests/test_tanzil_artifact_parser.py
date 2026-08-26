@@ -78,6 +78,24 @@ def test_malformed_utf8_fails_even_under_a_matching_test_authority():
         TanzilArtifactParser(admission).parse(raw_bytes, index_bytes)
 
 
+def test_malformed_record_fails_even_under_a_matching_test_authority():
+    raw_bytes = RAW_PATH.read_bytes().replace(
+        "بِسْمِ".encode(), b"\t" + "بِسْمِ".encode(), 1
+    )
+    index = json.loads(INDEX_PATH.read_text(encoding="utf-8"))
+    admission, index_bytes = _authority_for(raw_bytes, index)
+
+    with pytest.raises(ValueError, match="Malformed Tanzil record"):
+        TanzilArtifactParser(admission).parse(raw_bytes, index_bytes)
+
+
+def test_wrong_authority_verse_count_fails_closed():
+    with pytest.raises(ValueError, match="verse_count does not match authority"):
+        TanzilArtifactParser(
+            replace(_admission(), expected_verse_count=6_235)
+        ).parse(RAW_PATH.read_bytes(), INDEX_PATH.read_bytes())
+
+
 @pytest.mark.parametrize(
     ("mutation", "message"),
     [
