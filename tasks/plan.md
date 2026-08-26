@@ -11,13 +11,22 @@ card schemas, mutate runtime data, rerun roots, or authorize remaining batches.
 ## Dependency order
 
 ```text
-authority reconciliation
-    -> blocker correction
-    -> structural and Purity contracts
-    -> implementation slices
+completed enabling-governance reconciliation
+    -> Stage A: QAC provenance and artifact qualification (not admission)
+    -> Stage B: structural domain/persistence capability
+    -> Stage C: real QAC importer and validation
+    -> Stage D: QAC structural-source admission decision
+    -> Stage E: separate production activation
+    -> morphology-independent and morphology-dependent Purity evaluators
     -> focused verification
     -> exact-SHA independent review
+    -> same five-root pilot rerun only after separate acceptance/authorization
 ```
+
+Stages A-C produce prerequisite evidence but cannot grant structural-role
+approval. Stage D does not pre-authorize `APPROVED`, and Stage E remains an
+independent lifecycle transition. No stage in this plan is automatically
+authorized by recording the sequence.
 
 ## Task 1: Reconcile QAC authority
 
@@ -66,21 +75,41 @@ checks for every contract section, and focused documentation validation.
 
 **Dependencies:** Tasks 1 and 2.
 
-## Task 4: Persist current state and implementation slices
+## Task 4: Persist current state and future dependency sequence
 
 **Acceptance criteria:**
 
 - PROJECT_STATE identifies the corrected current blocker state and preserves
   `LOCK_BLOCKED`, null Root Cores, quarantine, and
   `DO_NOT_START_REMAINING_BATCHES`.
-- The future work is split into eight independently reviewable slices; no slice
-  is treated as authorized by this plan.
+- The future work records the ordered QAC lifecycle above, followed by the
+  independently reviewable Purity, verification, review, and pilot-rerun work;
+  no stage or slice is treated as authorized by this plan.
 
 **Verification:** state-to-canonical cross-check and scoped Git inspection.
 
 **Dependencies:** Tasks 1-3.
 
-## Checkpoint: Candidate review readiness
+## Task 5: Reconcile the QAC admission sequence
+
+**Acceptance criteria:**
+
+- Artifact/provenance qualification is explicitly separate from admission.
+- Structural domain/persistence and real-importer validation evidence precede
+  the structural-source admission decision.
+- The admission result is not pre-authorized, and production activation remains
+  a later independent transition.
+- The existing five-axis fail-closed QAC state, all eight Purity contracts, and
+  sealed-pilot evidence remain unchanged.
+
+**Verification:** canonical cross-reference and state consistency, focused QAC
+authority tests, Purity-contract completeness sanity, all nine sealed artifact
+hashes, and `git diff --check`.
+
+**Dependencies:** Tasks 1-4 and the independent review finding
+`QAC_ADMISSION_SEQUENCE_RECONCILIATION`.
+
+## Historical checkpoint: enabling-governance candidate review readiness
 
 - [x] Focused V1/V2 checks pass.
 - [x] Original sealed evidence hashes still match.

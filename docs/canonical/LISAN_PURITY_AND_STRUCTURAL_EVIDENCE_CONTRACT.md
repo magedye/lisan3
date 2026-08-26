@@ -1,6 +1,6 @@
 # Lisan Purity and Structural Evidence Contract
 
-Authority revision: `LISAN3_PURITY_STRUCTURAL_CONTRACT_V1_2026_08_26`
+Authority revision: `LISAN3_PURITY_STRUCTURAL_CONTRACT_V2_2026_08_27`
 
 ## Purpose and current boundary
 
@@ -377,25 +377,36 @@ Current gaps are:
 8. no occurrence-coverage service exposing complete root/lemma/form evidence to
    the semantic methodology and Purity evaluators.
 
-## Ordered implementation slices
+## Ordered future dependency sequence
 
-1. **QAC provenance/admission closure:** acquire and pin the exact artifact;
-   verify provenance/license; bind expected hash; review fields; record an
-   explicit source-role decision. This slice does not activate the source.
-2. **Structural persistence/domain support:** add the annotation model,
+1. **Stage A — QAC provenance and artifact qualification:** acquire and pin the
+   exact artifact; verify provenance/license; bind the expected hash candidate;
+   inventory the real format and fields; define importer and structural mapping
+   requirements. This stage is not admission and leaves structural role
+   authorization `NOT_APPROVED`, the importer `NOT_IMPLEMENTED`, source role
+   `SOURCE_ROLE_PENDING`, and production activation `NOT_AUTHORIZED`.
+2. **Stage B — Structural persistence/domain support:** add the annotation model,
    migration, schemas, provenance binding, word/segment identity, indexes,
    constraints, and immutable/fail-closed rules.
-3. **Real QAC importer:** parse the admitted real format, preserve segments,
-   reject prohibited fields, reconcile to Tanzil, import deterministically, and
-   provide no guessing fallback.
-4. **Morphology-independent Purity evaluators:** implement the six dimensions
+3. **Stage C — Real QAC importer and validation:** parse the qualified real
+   artifact, preserve segments, reject prohibited fields, reconcile to Tanzil,
+   validate persistence deterministically, and provide no guessing fallback.
+   This validation evidence does not admit the source or authorize production.
+4. **Stage D — QAC structural-source admission decision:** only after Stages
+   A-C are evidenced may governance explicitly decide `APPROVED` or
+   `NOT_APPROVED`; no result is pre-authorized.
+5. **Stage E — Production activation:** consider a separate activation
+   transition only after an approved structural role, validated importer,
+   governed artifact, persistence/reconciliation evidence, and required
+   verification.
+6. **Morphology-independent Purity evaluators:** implement the six dimensions
    identified above with complete evidence and negative-path tests.
-5. **Morphology-dependent Purity evaluators:** complete contextual leakage and
+7. **Morphology-dependent Purity evaluators:** complete contextual leakage and
    forced unification after structural evidence is admitted and available.
-6. **Focused V1/V2 verification:** verify authority, schema, migration,
+8. **Focused V1/V2 verification:** verify authority, schema, migration,
    import/reconciliation, all eight result contracts, and fail-closed gates; no
    broad release claim.
-7. **Fresh independent review:** review the exact committed candidate SHA in a
+9. **Fresh independent review:** review the exact committed candidate SHA in a
    clean read-only context against this contract.
-8. **Same five-root pilot rerun:** only after explicit independent acceptance for
+10. **Same five-root pilot rerun:** only after explicit independent acceptance for
    the intended profile. Remaining batches stay unauthorized.

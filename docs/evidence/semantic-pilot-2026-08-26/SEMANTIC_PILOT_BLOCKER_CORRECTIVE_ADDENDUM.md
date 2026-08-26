@@ -33,6 +33,9 @@ fail-closed. QAC is `PENDING_ADMISSION` / `SOURCE_ROLE_PENDING`, its structural
 role is `NOT_APPROVED`, and its provenance/license evidence is `PENDING`.
 Closing those open facts requires exact external evidence and a later explicit
 owner admission decision; neither is supplied by this addendum.
+The later decision must follow separate artifact qualification,
+domain/persistence capability, and real-importer validation evidence; none of
+those prerequisites pre-authorizes its result.
 
 ### 2. Physical artifact
 

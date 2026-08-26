@@ -594,11 +594,53 @@ unchanged.
   `docs/canonical/LISAN_PURITY_AND_STRUCTURAL_EVIDENCE_CONTRACT.md` and
   `tasks/plan.md`; each slice requires separate authorization.
 
+## QAC Admission-Sequence Reconciliation Checkpoint
+
+- Corrective task starting branch/HEAD: `main` /
+  `981e56d478f37de62464028d2832f4bdd24c7c9b`.
+- The independent review verdict on that candidate was
+  `SEMANTIC_ENABLING_GOVERNANCE_REJECTED_WITH_FINDINGS`, with the one required
+  finding `QAC_ADMISSION_SEQUENCE_RECONCILIATION`.
+- QAC remains fail-closed on all five independent axes: artifact identity
+  `PENDING`; provenance/license `PENDING`; structural role `NOT_APPROVED`; real
+  importer `NOT_IMPLEMENTED`; production activation `NOT_AUTHORIZED`. Runtime
+  authority remains `SOURCE_ROLE_PENDING`.
+- The corrected lifecycle is Stage A, QAC provenance and artifact
+  qualification; Stage B, structural domain/persistence capability; Stage C,
+  real QAC importer and validation; Stage D, a separate structural-source
+  admission decision; and Stage E, a separate production-activation
+  transition. Stages A-C cannot grant approval, Stage D does not pre-authorize
+  `APPROVED`, and Stage E cannot inherit admission automatically.
+- The tooling reference's stale current Tanzil `PENDING_ADMISSION` label is
+  reconciled to `ACTIVE_BASELINE` with lifecycle
+  `PRODUCTION_ACTIVE_FOR_EXACT_AUTHORIZED_SNAPSHOT`, matching
+  `docs/canonical/ADMISSION_TANZIL.md`. Tanzil qualification, runtime, and
+  artifacts were not reopened or changed.
+- All eight Purity evidence contracts, `NOT_EVALUATED` fail-closed behavior,
+  the morphology dependency split, and the ROOT_CARD / TERM_CARD derived
+  read-model boundary remain unchanged. No evaluator was implemented.
+- The sealed five-root evidence set was not edited. All five runs remain
+  `LOCK_BLOCKED`, all five `root_core` values remain null, and
+  `DO_NOT_START_REMAINING_BATCHES` remains in force.
+- Focused V1 passed: five QAC authority/adapter tests; canonical status and
+  ordered-dependency consistency; completeness of all eight Purity contracts;
+  all nine sealed artifact hashes; and `git diff --check`. No Python changed,
+  so Ruff was not applicable. An initial custom order assertion matched the
+  earlier five-axis label instead of the Stage E heading; classified
+  `TEST_DEFECT`, corrected, and passed without repository remediation.
+- This is a documentation/governance-only corrective candidate. It does not
+  acquire or import QAC, implement persistence/importers/evaluators, rerun a
+  root, authorize admission or activation, modify LQE, push, or grant
+  independent review. Candidate identity is the commit containing this
+  checkpoint; the full SHA is returned in the execution handoff because a
+  commit cannot embed its own SHA.
+
 ## Exact Next Action
 
-Perform a fresh independent read-only review of the exact committed enabling-
-governance candidate against repository authority, the unchanged sealed pilot
-evidence, and the success criteria in `tasks/plan.md`. If and only if that
-candidate is accepted for this profile, obtain a separate owner authorization
-for Slice 1, QAC provenance/admission closure. Do not import or activate QAC,
-rerun the five pilot roots, or start remaining batches under that review.
+Perform a fresh independent read-only review of the exact committed QAC
+admission-sequence reconciliation candidate against repository authority, the
+five-axis state, the A-E dependency order, and the unchanged sealed pilot
+evidence. Do not authorize Stage A or any later stage, acquire or import QAC,
+approve or activate QAC, implement persistence/importers/Purity evaluators,
+rerun the five pilot roots, modify LQE, or start remaining batches under that
+review.

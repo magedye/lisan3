@@ -533,7 +533,9 @@ Avoid redundant abstraction.
 
 ## 6.1 Tanzil Quran Text
 
-**Status:** `PENDING_ADMISSION`
+**Status:** `ACTIVE_BASELINE`
+
+**Governed source lifecycle:** `PRODUCTION_ACTIVE_FOR_EXACT_AUTHORIZED_SNAPSHOT`
 
 ### Priority
 
@@ -541,11 +543,12 @@ Avoid redundant abstraction.
 
 ### Stage
 
-Resolve current production Canonical Corpus `CONTRACT_GAP`.
+Maintain the exact governed production-active snapshot recorded in
+`docs/canonical/ADMISSION_TANZIL.md`.
 
-### Proposed role
+### Current role
 
-Primary local Quran text dataset candidate.
+Primary local Quran text dataset.
 
 Use for:
 
@@ -555,15 +558,12 @@ Use for:
 - checksums,
 - offline research.
 
-### Admission required
+### Governed authority
 
-Before calling it canonical:
-
-- verify source/version,
-- inspect license/terms,
-- record file hashes,
-- establish Corpus identity,
-- document admission decision.
+`docs/canonical/ADMISSION_TANZIL.md` owns the exact source/version, license,
+artifact and identity-index hashes, Corpus identity, admission, and production
+activation decision. A different artifact, version, or snapshot requires its
+own governed decision and cannot inherit this status.
 
 ### Rule
 
@@ -612,6 +612,11 @@ exact artifact and provenance verification, a real-format importer with Tanzil
 reconciliation, field-by-field domain review, and a separate explicit
 source-role admission decision. Synthetic fixture parsing is not real importer
 or admission evidence.
+
+The dependency order is: provenance/artifact qualification (which is not
+admission), structural domain/persistence capability, real-artifact importer
+validation, a separate structural-source admission decision, and only then a
+separate production-activation decision.
 
 QAC semantic ontology must NOT automatically become Lisan semantic authority.
 

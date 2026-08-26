@@ -1,6 +1,6 @@
 # Quranic Arabic Corpus Pending Admission Record
 
-Authority revision: `LISAN3_QAC_PENDING_ADMISSION_V2_2026_08_26`
+Authority revision: `LISAN3_QAC_PENDING_ADMISSION_V3_2026_08_27`
 
 ## Source identity
 
@@ -24,18 +24,35 @@ use, or authorize semantic-pilot execution.
 | Real importer | `NOT_IMPLEMENTED` | A synthetic pipe-delimited fixture parser exists. It is not evidence of a parser for an admitted QAC distribution, and current fixture import discards structural annotations. |
 | Production activation | `NOT_AUTHORIZED` | No admitted artifact or role exists. `CANONICAL_ACTIVATION_PENDING` is fail-closed runtime storage, not an activation decision. |
 
-## Evidence required before admission can close
+## Required lifecycle and dependency sequence
 
-1. Pin the exact acquisition URL, upstream version/release, artifact filename,
-   byte size, file format, and SHA-256.
-2. Verify license, attribution, redistribution, and modification obligations for
-   that exact artifact.
-3. Review each proposed field against the structural-only role below.
-4. Implement and test a real-format importer that preserves source lineage and
-   reconciles every annotation to an admitted Tanzil snapshot without changing
-   Tanzil text or verse identity.
-5. Record a separate explicit source-role admission decision. Artifact and
-   importer evidence do not grant that decision automatically.
+The following stages are ordered prerequisites. Completion of one stage does
+not grant the state owned by a later stage.
+
+1. **QAC provenance and artifact qualification:** pin the exact acquisition
+   URL, upstream version/release, artifact filename, byte size, file format,
+   and SHA-256; verify license and provenance obligations; inventory proposed
+   fields, prohibited semantic fields, importer requirements, and structural
+   mappings. This qualification is not admission. Structural role
+   authorization remains `NOT_APPROVED`, the importer remains
+   `NOT_IMPLEMENTED`, and production activation remains `NOT_AUTHORIZED`.
+2. **Structural domain and persistence capability:** establish the separate
+   provenance-bound token/segment annotation model, identity, constraints, and
+   reconciliation boundary required for permitted structural fields. Tanzil
+   remains Quran-text and verse-identity authority.
+3. **Real QAC importer and validation:** implement and test deterministic
+   parsing of the qualified real artifact, complete format and segment
+   preservation, prohibited-field rejection, Tanzil reconciliation, immutable
+   provenance binding, fail-closed malformed/unsupported input behavior, and
+   relevant persistence validation.
+4. **QAC structural-source admission decision:** only after the preceding
+   evidence exists may governance explicitly decide `APPROVED` or
+   `NOT_APPROVED` for the proposed structural role. Qualification, domain, and
+   importer evidence never grant approval automatically.
+5. **Production activation:** only after an approved structural role, validated
+   importer, governed artifact, persistence/reconciliation evidence, and the
+   required verification may a separate production-activation transition be
+   considered.
 
 ## Maximum proposed future role
 
@@ -70,6 +87,8 @@ alignment must fail closed and remain outside canonical knowledge.
 
 ## Current consequence
 
-No QAC artifact may be imported or activated, and no semantic-pilot run may
-claim QAC-derived morphology, syntax, root, or lemma evidence while any of the
-five axes above remains open.
+No QAC artifact may enter canonical knowledge or be activated for production,
+and no semantic-pilot run may claim QAC-derived morphology, syntax, root, or
+lemma evidence while any of the five axes above remains open. A future,
+separately authorized non-production importer-validation exercise against a
+qualified artifact is prerequisite evidence, not admission or activation.

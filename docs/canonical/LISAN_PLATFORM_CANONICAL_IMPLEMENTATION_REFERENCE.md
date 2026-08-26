@@ -75,7 +75,11 @@ All semantic changes must trace back through:
   remain a source-provenanced annotation layer keyed to Tanzil identity. Tanzil
   canonical-text import does not inherit QAC semantic/gloss/ontology fields and
   does not depend on a real-format QAC importer. The five-axis state and future
-  boundary are owned by `docs/canonical/ADMISSION_QAC.md`.
+  boundary are owned by `docs/canonical/ADMISSION_QAC.md`. QAC provenance and
+  artifact qualification is not admission. Structural domain/persistence and
+  real-importer validation evidence must precede a separate structural-source
+  admission decision, and production activation is a later independent
+  lifecycle transition.
 
 ## Purity and Structural Evidence Authority
 
