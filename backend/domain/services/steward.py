@@ -83,4 +83,3 @@ class StewardCommandService:
             summary="Unsupported: no canonical executable Steward command is registered.",
             audit_action="REJECT_UNSUPPORTED",
         )
-

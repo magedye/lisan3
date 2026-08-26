@@ -237,6 +237,9 @@
               }
             }
           },
+          "503": {
+            "description": "Governed run authority unavailable"
+          },
           "401": {
             "description": "Unauthorized"
           },
@@ -3318,6 +3321,9 @@
                 }
               }
             }
+          },
+          "503": {
+            "description": "Database schema is not ready"
           },
           "401": {
             "description": "Unauthorized"

@@ -156,7 +156,11 @@ def ask_lisan(request: schemas.AskLisanRequest, db: Session = Depends(get_db)):
     return schemas.AskLisanResponse(status="INSUFFICIENT_EVIDENCE", claim=None)
 
 
-@app.post("/runs", response_model=schemas.ResearchRunResponse)
+@app.post(
+    "/runs",
+    response_model=schemas.ResearchRunResponse,
+    responses={503: {"description": "Governed run authority unavailable"}},
+)
 def create_run(run: schemas.ResearchRunCreate, db: Session = Depends(get_db)):
     admission = ResearchRunAdmissionPolicy.evaluate(
         db, run.corpus_snapshot, run.methodology_revision
@@ -1391,7 +1395,10 @@ def get_run_reproduction_manifest(run_id: str, db: Session = Depends(get_db)):
 # --- Operational / Health ---
 
 
-@app.get("/operations/health")
+@app.get(
+    "/operations/health",
+    responses={503: {"description": "Database schema is not ready"}},
+)
 def get_system_health(db: Session = Depends(get_db)):
     """
     System health and configuration dump.
