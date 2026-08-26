@@ -25,7 +25,7 @@ class ResearchRunAdmissionPolicy:
     @staticmethod
     def eligible_corpus_snapshot_ids(db: Session) -> list[str]:
         return [
-            snapshot.id
+            str(snapshot.id)
             for snapshot in db.query(models.CorpusSnapshot)
             .order_by(models.CorpusSnapshot.id)
             .all()
