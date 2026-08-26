@@ -492,9 +492,57 @@ checkpoint below supersedes its zero-snapshot and unbound-hash statements.
   independent review, V4 completion, technical release readiness, or release
   acceptance.
 
+## Fresh Five-Root Semantic Requalification Pilot — Blocked Checkpoint
+
+- Task starting HEAD:
+  `67dccb9017b6d9500a90d7564358daf8192b4190`.
+- Pilot evidence candidate:
+  `6b5313b7696f01a54f76cb907cd722f822ff22ae`.
+- The exact active CorpusSnapshot and current eligible Methodology were
+  independently re-read from the live database before execution:
+  `snap_tanzil_1_1_ac0724796cbb` and
+  `LISAN_QURANIC_SEMANTIC_EXTRACTION@6bb1c10a0f9a`.
+- Exactly five fresh ResearchRuns were admitted: `run_d7519288` (ع د ل),
+  `run_8d696d64` (أ م ن), `run_1a24ffab` (س ل م), `run_68c7b72c`
+  (ح م د), and `run_5f72ad9d` (ش ك ر). No remaining root was started.
+- Each run has a `CLEAN` Blind Lab state. The active isolation service blocked
+  one prohibited prior-semantic read per run and persisted an IsolationEvent;
+  no run became `PRIOR_CONTAMINATED`.
+- The production snapshot is text-only: `structural_source` and
+  `structural_source_version` are null, and all 6,236 verse-level occurrence
+  records have an empty expression. With QAC import unauthorized and no
+  authority-approved deterministic morphology fallback, exact root occurrence,
+  form, and construction coverage is not verifiable.
+- Canonical `PURITY_CHECK` and `INTERNAL_LOCK` evaluations failed for all five
+  runs. Seven Purity dimensions have no current evidence extractors, so a
+  later observation/hypothesis sequence alone cannot establish a valid
+  Internal Lock. No SemanticClaim, Root Core, semantic boundary, neighbor
+  result, ROOT_CARD, TERM_CARD, ReviewDecision, or publication state was
+  created.
+- Persisted runtime status per run is `LOCK_BLOCKED`; the implementation-side
+  pilot outcome is `REQUALIFICATION_REQUIRED`. Root Core values remain null.
+- The LQE-safe view exports no semantic truth and no inferred structural rows;
+  every root is `LQE_REQUALIFICATION_REQUIRED`.
+- Verification passed: 21 focused pytest tests; JSON/YAML structural validation;
+  five-run runtime traceability readback; deterministic SHA-256 verification for
+  nine evidence artifacts; scoped staged-path verification; and
+  `git diff --cached --check`.
+- Durable evidence:
+  `docs/evidence/semantic-pilot-2026-08-26/SEMANTIC_PILOT_BLOCKER_REPORT.md`.
+- Failure classes: `EXTERNAL_DEPENDENCY` for the unavailable admitted
+  morphology/root source, `PRODUCT_DEFECT` for unevaluable mandatory Purity
+  dimensions, and `AUTHORITY_CONFLICT` at the unresolved derived-card contract
+  boundary.
+- No QAC import, model/embedding work, R2, R3, V4, release, push, remaining
+  semantic batch, or external `D:\APP\tafseer\LISAN-Quran-Embedding` mutation
+  occurred. Owner-untracked `.hermes/`, `check_db2.py`, and `debug_proxy.py`
+  remain present and untouched.
+
 ## Exact Next Action
 
-Obtain separate owner authorization for a fresh semantic requalification pilot
-rerun against the exact active snapshot. Do not start the pilot or any remaining
-root batch under this activation authorization; preserve
-`DO_NOT_START_REMAINING_BATCHES`.
+Perform a fresh independent read-only review of the exact pilot evidence
+candidate. If the blocker verdict is accepted, obtain a separate owner decision
+for a bounded enabling scope that admits or explicitly approves a deterministic
+root/morphology source and implements evidence-backed evaluators for all
+mandatory Purity dimensions. Do not restart the five pilot roots or start
+remaining batches before that enabling candidate is independently reviewed.
