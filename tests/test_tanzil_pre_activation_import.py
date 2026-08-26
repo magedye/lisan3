@@ -201,7 +201,7 @@ def test_production_activation_and_imported_provenance_mutation_fail_closed(
     ).snapshot
 
     snapshot.activation_status = PRODUCTION_ACTIVE
-    with pytest.raises(ValueError, match="admission is not production-active"):
+    with pytest.raises(ValueError, match="production-active snapshot must be VALIDATED"):
         db.flush()
     db.rollback()
 
@@ -246,6 +246,35 @@ def test_tanzil_provenance_migration_is_reversible_and_matches_models(tmp_path):
     command.upgrade(config, "head")
     inspector = sa.inspect(engine)
     assert "artifact_reference" in {
+        item["name"] for item in inspector.get_columns("corpus_snapshots")
+    }
+    engine.dispose()
+
+
+def test_tanzil_migration_rejects_legacy_duplicates_before_schema_changes(tmp_path):
+    database_path = tmp_path / "duplicate-legacy-corpus.db"
+    config = Config("alembic.ini")
+    config.set_main_option("script_location", "alembic")
+    config.set_main_option("sqlalchemy.url", f"sqlite:///{database_path.as_posix()}")
+    command.upgrade(config, "e8b3f6a1c204")
+    engine = create_engine(f"sqlite:///{database_path.as_posix()}")
+    with engine.begin() as connection:
+        for snapshot_id in ("legacy_duplicate_a", "legacy_duplicate_b"):
+            connection.execute(
+                sa.text(
+                    "INSERT INTO corpus_snapshots "
+                    "(id, canonical_text_source, canonical_text_version, "
+                    "canonical_text_hash) VALUES "
+                    "(:id, 'LEGACY', '1', 'same-hash')"
+                ),
+                {"id": snapshot_id},
+            )
+
+    with pytest.raises(RuntimeError, match="duplicate snapshot artifact identities"):
+        command.upgrade(config, "head")
+
+    inspector = sa.inspect(engine)
+    assert "artifact_reference" not in {
         item["name"] for item in inspector.get_columns("corpus_snapshots")
     }
     engine.dispose()

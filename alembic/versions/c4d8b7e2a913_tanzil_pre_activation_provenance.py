@@ -19,16 +19,43 @@ depends_on: str | Sequence[str] | None = None
 
 def upgrade() -> None:
     connection = op.get_bind()
-    incomplete = connection.execute(
-        sa.text(
-            "SELECT COUNT(*) FROM corpus_occurrences "
-            "WHERE snapshot_id IS NULL OR verse_ref IS NULL OR text IS NULL"
-        )
-    ).scalar_one()
-    if incomplete:
+    preflight_failures = {
+        "incomplete occurrence rows": connection.execute(
+            sa.text(
+                "SELECT COUNT(*) FROM corpus_occurrences "
+                "WHERE snapshot_id IS NULL OR verse_ref IS NULL OR text IS NULL"
+            )
+        ).scalar_one(),
+        "orphan occurrence rows": connection.execute(
+            sa.text(
+                "SELECT COUNT(*) FROM corpus_occurrences AS occurrence "
+                "LEFT JOIN corpus_snapshots AS snapshot "
+                "ON snapshot.id = occurrence.snapshot_id "
+                "WHERE snapshot.id IS NULL"
+            )
+        ).scalar_one(),
+        "duplicate snapshot artifact identities": connection.execute(
+            sa.text(
+                "SELECT COUNT(*) FROM ("
+                "SELECT 1 FROM corpus_snapshots "
+                "GROUP BY canonical_text_source, canonical_text_version, "
+                "canonical_text_hash HAVING COUNT(*) > 1)"
+            )
+        ).scalar_one(),
+        "duplicate snapshot verse identities": connection.execute(
+            sa.text(
+                "SELECT COUNT(*) FROM ("
+                "SELECT 1 FROM corpus_occurrences "
+                "GROUP BY snapshot_id, verse_ref HAVING COUNT(*) > 1)"
+            )
+        ).scalar_one(),
+    }
+    violations = [
+        f"{label}: {count}" for label, count in preflight_failures.items() if count
+    ]
+    if violations:
         raise RuntimeError(
-            "Cannot add corpus occurrence identity constraints: "
-            f"{incomplete} incomplete rows exist"
+            "Cannot add governed corpus identity constraints: " + "; ".join(violations)
         )
 
     with op.batch_alter_table("corpus_snapshots") as batch_op:

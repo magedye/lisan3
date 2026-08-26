@@ -357,6 +357,11 @@ def enforce_corpus_snapshot_validation(_mapper, _connection, snapshot):
     if snapshot.import_validation_status == IMPORT_VALIDATED:
         failures.extend(import_validation_failures(snapshot))
     if (
+        snapshot.activation_status == PRODUCTION_ACTIVE
+        and snapshot.validation_status != "VALIDATED"
+    ):
+        failures.append("production-active snapshot must be VALIDATED")
+    if (
         snapshot.validation_status == "VALIDATED"
         or snapshot.activation_status == PRODUCTION_ACTIVE
     ):

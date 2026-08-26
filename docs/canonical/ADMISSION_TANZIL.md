@@ -64,16 +64,26 @@ SOURCE_ROLE_APPROVED
 → ARTIFACT_PRESENT
 → EXPECTED_HASH_BOUND
 → HASH_VERIFIED
-→ import validation pending until persisted service evidence passes
+→ IMPORT_VALIDATED
 → CANONICAL_ACTIVATION_PENDING
 ```
+
+The governed pre-activation import is persisted as
+`snap_tanzil_1_1_ac0724796cbb`, with 6,236 deterministic
+`CorpusOccurrence` records bound one-to-one to the identity index. The
+verification/import timestamp is `2026-08-26T16:01:38.564773Z`; an exact
+re-import readback created no second snapshot or occurrence set.
+
+`validation_status` remains `PENDING`. Neither `VALIDATED` nor
+`PRODUCTION_ACTIVE` is implied by import validation. A separate explicit owner
+decision and a separately governed activation transition remain required.
 
 Allowed fields are Surah, Ayah, and exact Quran text. Translation, tafsir,
 gloss, and external semantic fields are forbidden.
 
 External CANON-001 reconciliation is factual only: the source name, version,
 artifact size, verse count, and SHA-256 match. After successful LISAN3 import
-validation the evidence record may state
+validation the persisted evidence record states
 `CANON_001_ARTIFACT_IDENTITY_MATCH_CONFIRMED`; it must not import external
 adoption or activation status.
 

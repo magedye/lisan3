@@ -51,6 +51,27 @@ All semantic changes must trace back through:
 - A source change requires a new registry revision. Retiring or revoking a
   revision prevents future run admission without rewriting historical runs.
 
+## Canonical Corpus Pre-Activation Authority
+
+- `docs/canonical/ADMISSION_TANZIL.md` owns the LISAN3 Tanzil source identity,
+  exact version, immutable artifact/index references, expected hashes, format,
+  provenance, and pre-activation lifecycle boundary.
+- A caller-supplied matching hash is parsing evidence only. Import validation
+  requires the authority-bound expected hash to exist before bytes are read and
+  verified.
+- The canonical text layer preserves every admitted verse record byte-for-byte
+  after strict UTF-8 decoding. It performs no Unicode normalization.
+- The governed importer reconciles the artifact to the authority-bound 114-surah,
+  6,236-identity index, then persists one deterministic snapshot identity and
+  one deterministic occurrence identity per verse. An exact retry verifies and
+  reuses that state; it cannot create a competing snapshot.
+- `IMPORT_VALIDATED`, `VALIDATED`, and `PRODUCTION_ACTIVE` are distinct. Import
+  validation does not grant production activation, and ResearchRun admission
+  continues to require a separately production-active snapshot.
+- QAC remains an optional auxiliary morphology/syntax candidate. Tanzil
+  canonical-text import does not inherit QAC semantic/gloss/ontology fields and
+  does not depend on a real-format QAC importer.
+
 ### Tooling and Verification
 
 Lisanapp uses strict evidence-based verification. Test coverage is divided into standard unit tests (`pytest`), randomized invariant checking (`hypothesis`), property-based contract checking (`schemathesis`), bounding mutation checking (`cosmic-ray`), and canonical journeys (`playwright`).
