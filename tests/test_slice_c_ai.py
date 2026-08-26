@@ -52,23 +52,27 @@ def setup_db():
 
 
 def test_ai_slice_c_integrated_flow():
-    # 1. Setup Run and Blind Lab
-    resp = client.post(
-        "/runs",
-        json={
-            "target_contract": "ROOT_CORE",
-            "target_expression": "ن ش ز",
-            "methodology_revision": "v7.1",
-            "corpus_snapshot": "snap1",
-            "authority_context": {"initiator": "local_user"},
-        },
+    # 1. Setup an explicit fixture Run and Blind Lab. Production run admission
+    # intentionally rejects arbitrary methodology and Corpus identifiers.
+    run_id = "run_slice_c_ai_fixture"
+    db = TestingSessionLocal()
+    db.add(
+        models.ResearchRun(
+            id=run_id,
+            target_contract="ROOT_CORE",
+            target_expression="ن ش ز",
+            methodology_revision="v7.1-test-fixture",
+            corpus_snapshot="snap1-test-fixture",
+            authority_context={"profile": "test_fixture"},
+        )
     )
-    run_id = resp.json()["id"]
+    db.commit()
+    db.close()
     client.post(
         f"/runs/{run_id}/blind/preflight",
         json={
             "target_contract": "ROOT_CORE",
-            "corpus_snapshot": "snap1",
+            "corpus_snapshot": "snap1-test-fixture",
             "methodology_reference": "ref_v1",
             "allowed_sources": ["QURAN_CORPUS"],
         },

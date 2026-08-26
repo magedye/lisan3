@@ -167,18 +167,22 @@ def test_registry_admission_decision_matrix():
     _, claim, _, _ = build_case("epistemic")
     claim.epistemic_state = "ZZZ_INVALID"
     assert any("epistemic state" in reason for reason in reasons(claim))
+    db.rollback()
 
     _, claim, _, _ = build_case("epistemic_lower")
     claim.epistemic_state = "AAA_INVALID"
     assert any("epistemic state" in reason for reason in reasons(claim))
+    db.rollback()
 
     _, claim, _, _ = build_case("review_state")
     claim.review_state = "AAA_INVALID"
     assert any("review state" in reason for reason in reasons(claim))
+    db.rollback()
 
     _, claim, _, _ = build_case("review_state_higher")
     claim.review_state = "ZZZ_INVALID"
     assert any("review state" in reason for reason in reasons(claim))
+    db.rollback()
 
     _, claim, review, _ = build_case("review_revision")
     review.evaluated_claim_revision = 1001
@@ -193,10 +197,12 @@ def test_registry_admission_decision_matrix():
     _, claim, _, _ = build_case("freshness")
     claim.freshness_state = "AAA_INVALID"
     assert any("freshness state" in reason for reason in reasons(claim))
+    db.rollback()
 
     _, claim, _, _ = build_case("freshness_higher")
     claim.freshness_state = "ZZZ_INVALID"
     assert any("freshness state" in reason for reason in reasons(claim))
+    db.rollback()
 
     run, claim, _, _ = build_case("snapshot_status")
     db.execute(

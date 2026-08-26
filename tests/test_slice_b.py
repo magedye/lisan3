@@ -46,26 +46,33 @@ def setup_db():
     app.dependency_overrides.clear()
 
 
-def test_slice_b_end_to_end():
-    # 1. Create a fresh Research Run
-    response = client.post(
-        "/runs",
-        json={
-            "target_contract": "ROOT_CORE",
-            "target_expression": "ضرب",
-            "methodology_revision": "v7.1",
-            "corpus_snapshot": "snap1",
-            "authority_context": {"initiator": "local_user"},
-        },
+def create_fixture_run(run_id: str) -> str:
+    db = TestingSessionLocal()
+    db.add(
+        models.ResearchRun(
+            id=run_id,
+            target_contract="ROOT_CORE",
+            target_expression="ضرب",
+            methodology_revision="v7.1-test-fixture",
+            corpus_snapshot="snap1-test-fixture",
+            authority_context={"profile": "test_fixture"},
+        )
     )
-    run_id = response.json()["id"]
+    db.commit()
+    db.close()
+    return run_id
+
+
+def test_slice_b_end_to_end():
+    # 1. Create an explicit test-only run for this downstream Blind Lab slice.
+    run_id = create_fixture_run("run_slice_b_end_to_end")
 
     # 2. Setup mock corpus
     db = TestingSessionLocal()
     db.add(
         models.CorpusOccurrence(
             id="c1",
-            snapshot_id="snap1",
+            snapshot_id="snap1-test-fixture",
             expression="ضرب",
             verse_ref="2:60",
             text="اضرب بعصاك",
@@ -79,7 +86,7 @@ def test_slice_b_end_to_end():
         f"/runs/{run_id}/blind/preflight",
         json={
             "target_contract": "ROOT_CORE",
-            "corpus_snapshot": "snap1",
+            "corpus_snapshot": "snap1-test-fixture",
             "methodology_reference": "ref_v1",
             "allowed_sources": ["QURAN_CORPUS"],
         },
@@ -103,25 +110,15 @@ def test_slice_b_end_to_end():
 
 
 def test_observation_rejection():
-    # 1. Create Run
-    response = client.post(
-        "/runs",
-        json={
-            "target_contract": "ROOT_CORE",
-            "target_expression": "ضرب",
-            "methodology_revision": "v7.1",
-            "corpus_snapshot": "snap1",
-            "authority_context": {"initiator": "local_user"},
-        },
-    )
-    run_id = response.json()["id"]
+    # 1. Create an explicit test-only run.
+    run_id = create_fixture_run("run_slice_b_observation")
 
     # 2. Preflight
     client.post(
         f"/runs/{run_id}/blind/preflight",
         json={
             "target_contract": "ROOT_CORE",
-            "corpus_snapshot": "snap1",
+            "corpus_snapshot": "snap1-test-fixture",
             "methodology_reference": "ref_v1",
             "allowed_sources": ["QURAN_CORPUS"],
         },
@@ -162,23 +159,13 @@ def test_observation_rejection():
 
 
 def test_contamination_audit():
-    # Create run and preflight
-    response = client.post(
-        "/runs",
-        json={
-            "target_contract": "ROOT_CORE",
-            "target_expression": "ضرب",
-            "methodology_revision": "v7.1",
-            "corpus_snapshot": "snap1",
-            "authority_context": {"initiator": "local_user"},
-        },
-    )
-    run_id = response.json()["id"]
+    # Create an explicit test-only run and preflight.
+    run_id = create_fixture_run("run_slice_b_contamination")
     client.post(
         f"/runs/{run_id}/blind/preflight",
         json={
             "target_contract": "ROOT_CORE",
-            "corpus_snapshot": "snap1",
+            "corpus_snapshot": "snap1-test-fixture",
             "methodology_reference": "ref_v1",
             "allowed_sources": ["QURAN_CORPUS"],
         },
