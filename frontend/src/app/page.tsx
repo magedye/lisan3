@@ -44,6 +44,10 @@ export default function AttentionCenter() {
   }
 
   async function startResearch() {
+    if (!data?.run_admission.available) {
+      setActionError("إنشاء تشغيل بحث غير متاح حتى تُقبل موارد Corpus والمنهجية من السلطة الحالية.");
+      return;
+    }
     if (!methodologyRevision.trim() || !corpusSnapshot.trim()) {
       setActionError("أدخل مرجع المنهجية ومعرّف Corpus Snapshot الفعليين قبل إنشاء التشغيل.");
       return;
@@ -175,26 +179,39 @@ export default function AttentionCenter() {
 
         {actionError && <div className="state-card error-state" role="alert"><strong>تعذر إكمال الإجراء</strong><p>{actionError}</p></div>}
 
-        {result?.status === "INSUFFICIENT_EVIDENCE" && (
+        {result?.status === "INSUFFICIENT_EVIDENCE" && data && (
           <section className="panel panel-warning" aria-labelledby="insufficient-title">
             <h3 id="insufficient-title">Insufficient Evidence — الأدلة الحالية غير كافية</h3>
             <p>لا توجد دعوى دلالية مقفلة للفظ <strong>{expression}</strong> ضمن العقد <span className="technical-text">{contractType}</span>. لا تُنشئ الواجهة جواباً بديلاً.</p>
-            <div className="form-grid">
-              <label className="form-field">
-                <span>مرجع المنهجية</span>
-                <input id="run-methodology" name="methodology_revision" className="input" value={methodologyRevision} onChange={(event) => setMethodologyRevision(event.target.value)} placeholder="مرجع منهجية موجود" required />
-              </label>
-              <label className="form-field">
-                <span>Corpus Snapshot</span>
-                <input id="run-corpus" name="corpus_snapshot" className="input technical-text" list="known-corpus-snapshots" value={corpusSnapshot} onChange={(event) => setCorpusSnapshot(event.target.value)} placeholder="معرّف snapshot موجود" required />
-                <datalist id="known-corpus-snapshots">
-                  {data?.corpus_snapshots.map((snapshot) => <option key={snapshot.id} value={snapshot.id}>{snapshot.activation_status}</option>)}
-                </datalist>
-              </label>
-            </div>
-            <div className="button-row">
-              <button type="button" onClick={startResearch} className="button button-secondary" disabled={submitting}>Start Research Run — ابدأ تشغيل بحث</button>
-            </div>
+            {!data.run_admission.available ? (
+              <div id="run-admission-unavailable" className="state-card" role="status">
+                <strong>Run Builder unavailable — موارد البحث غير مقبولة حالياً</strong>
+                <ul>{data.run_admission.blockers.map((blocker) => <li key={blocker}>{blocker}</li>)}</ul>
+                <p>لن تقبل الواجهة معرّفات Corpus أو منهجية مكتوبة كنص حر.</p>
+              </div>
+            ) : (
+              <>
+                <div className="form-grid">
+                  <label className="form-field">
+                    <span>مرجع المنهجية المقبول</span>
+                    <select id="run-methodology" name="methodology_revision" className="select" value={methodologyRevision} onChange={(event) => setMethodologyRevision(event.target.value)} required>
+                      <option value="">اختر منهجية محكومة</option>
+                      {data.run_admission.methodology_revisions.map((revision) => <option key={revision} value={revision}>{revision}</option>)}
+                    </select>
+                  </label>
+                  <label className="form-field">
+                    <span>Corpus Snapshot المقبول</span>
+                    <select id="run-corpus" name="corpus_snapshot" className="select technical-text" value={corpusSnapshot} onChange={(event) => setCorpusSnapshot(event.target.value)} required>
+                      <option value="">اختر snapshot محكوماً</option>
+                      {data.run_admission.corpus_snapshot_ids.map((snapshotId) => <option key={snapshotId} value={snapshotId}>{snapshotId}</option>)}
+                    </select>
+                  </label>
+                </div>
+                <div className="button-row">
+                  <button type="button" onClick={startResearch} className="button button-secondary" disabled={submitting}>Start Research Run — ابدأ تشغيل بحث</button>
+                </div>
+              </>
+            )}
           </section>
         )}
 

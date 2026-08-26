@@ -2103,7 +2103,6 @@
     "/steward/commands": {
       "post": {
         "summary": "Execute Steward Command",
-        "description": "Structured StewardCommand workflow where user inputs intention,\nsystem parses structural dependencies, confirms action boundary,\nevaluates against rules, executes governed command, and logs result.",
         "operationId": "execute_steward_command_steward_commands_post",
         "requestBody": {
           "content": {
@@ -3541,9 +3540,15 @@
             "type": "array",
             "title": "Corpus Snapshots",
             "default": []
+          },
+          "run_admission": {
+            "$ref": "#/components/schemas/RunAdmissionStateResponse"
           }
         },
         "type": "object",
+        "required": [
+          "run_admission"
+        ],
         "title": "AttentionCenterResponse"
       },
       "AuditLogResponse": {
@@ -5495,6 +5500,43 @@
           "created_at"
         ],
         "title": "RuleRevisionResponse"
+      },
+      "RunAdmissionStateResponse": {
+        "properties": {
+          "available": {
+            "type": "boolean",
+            "title": "Available"
+          },
+          "corpus_snapshot_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Corpus Snapshot Ids",
+            "default": []
+          },
+          "methodology_revisions": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Methodology Revisions",
+            "default": []
+          },
+          "blockers": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Blockers",
+            "default": []
+          }
+        },
+        "type": "object",
+        "required": [
+          "available"
+        ],
+        "title": "RunAdmissionStateResponse"
       },
       "RunWorkspaceResponse": {
         "properties": {

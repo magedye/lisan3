@@ -150,3 +150,86 @@ def test_same_claim_resources_become_available_after_release_conditions(
     assert claim.abstract_root_core in client.get("/attention").text
     assert claim.abstract_root_core in client.get("/governance/overview").text
     assert claim.abstract_root_core in client.get(f"/runs/{run.id}/workspace").text
+
+
+def test_unknown_or_unadmitted_run_authority_cannot_create_research_run(test_db):
+    payload = {
+        "target_contract": "ROOT_CORE",
+        "target_expression": "test",
+        "methodology_revision": "ARBITRARY_METHODOLOGY",
+        "corpus_snapshot": "NONEXISTENT_SNAPSHOT",
+        "authority_context": {"profile": "adversarial-admission"},
+    }
+    unknown = client.post("/runs", json=payload)
+    assert unknown.status_code == 422
+    assert test_db.query(models.ResearchRun).count() == 0
+
+    snapshot = models.CorpusSnapshot(
+        id="snapshot_pending_admission",
+        canonical_text_source="TANZIL_QURAN_UTHMANI",
+        canonical_text_version="v1.0.2",
+        canonical_text_hash="unverified",
+    )
+    test_db.add(snapshot)
+    test_db.commit()
+    payload["corpus_snapshot"] = snapshot.id
+
+    unavailable = client.post("/runs", json=payload)
+    assert unavailable.status_code == 503
+    assert "Methodology" in unavailable.json()["detail"]
+    assert test_db.query(models.ResearchRun).count() == 0
+
+    attention = client.get("/attention")
+    assert attention.status_code == 200
+    admission = attention.json()["run_admission"]
+    assert admission["available"] is False
+    assert admission["corpus_snapshot_ids"] == []
+    assert admission["methodology_revisions"] == []
+
+
+def test_arbitrary_steward_command_is_honestly_unsupported_and_audited(test_db):
+    response = client.post(
+        "/steward/commands",
+        json={
+            "command_type": "ARBITRARY_COMMAND",
+            "intent": "arbitrary input",
+            "parameters": {"marker": "NO_FAKE_SUCCESS"},
+        },
+    )
+    assert response.status_code == 200
+    data = response.json()
+    assert data["execution_status"] == "UNSUPPORTED"
+    assert data["evaluated_rules"] is None
+    assert "PASS" not in response.text
+    assert '"SUCCESS"' not in response.text
+
+    audit = client.get(
+        f"/audit?entity_type=StewardCommand&entity_id={data['id']}"
+    )
+    assert audit.status_code == 200
+    assert [(item["action"], item["new_state"]) for item in audit.json()] == [
+        ("REJECT_UNSUPPORTED", "UNSUPPORTED")
+    ]
+
+
+def test_forbidden_steward_command_records_only_actual_rejection(test_db):
+    response = client.post(
+        "/steward/commands",
+        json={
+            "command_type": "FORCE_LOCK",
+            "intent": "Force the Internal Lock",
+            "parameters": {},
+        },
+    )
+    assert response.status_code == 403
+
+    command = test_db.query(models.StewardCommand).one()
+    assert command.execution_status == "REJECTED"
+    assert command.evaluated_rules is None
+    audit = (
+        test_db.query(models.AuditLog)
+        .filter(models.AuditLog.entity_id == command.id)
+        .one()
+    )
+    assert audit.action == "REJECT_AUTHORITY_BOUNDARY"
+    assert audit.new_state == "REJECTED"

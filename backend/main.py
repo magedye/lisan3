@@ -22,6 +22,8 @@ from .domain.services.knowledge_graph import (
     KnowledgeGraphService,
 )
 from .domain.services.purity import evaluate_methodological_purity
+from .domain.services.run_admission import ResearchRunAdmissionPolicy
+from .domain.services.steward import StewardAuthorityRejected, StewardCommandService
 from .infrastructure.database import database_schema_status, get_db
 
 app = FastAPI(
@@ -156,6 +158,14 @@ def ask_lisan(request: schemas.AskLisanRequest, db: Session = Depends(get_db)):
 
 @app.post("/runs", response_model=schemas.ResearchRunResponse)
 def create_run(run: schemas.ResearchRunCreate, db: Session = Depends(get_db)):
+    admission = ResearchRunAdmissionPolicy.evaluate(
+        db, run.corpus_snapshot, run.methodology_revision
+    )
+    if not admission.accepted:
+        raise HTTPException(
+            status_code=422 if admission.status == "INVALID_REFERENCE" else 503,
+            detail="Run admission denied: " + "; ".join(admission.reasons),
+        )
     run_id = f"run_{uuid.uuid4().hex[:8]}"
     db_run = models.ResearchRun(
         id=run_id,
@@ -236,6 +246,7 @@ def get_attention_center(db: Session = Depends(get_db)):
             db, recent_changes
         ),
         corpus_snapshots=corpus_snapshots,
+        run_admission=ResearchRunAdmissionPolicy.current_state(db),
     )
 
 
@@ -940,71 +951,10 @@ def approve_proposal(proposal_id: str, db: Session = Depends(get_db)):
 def execute_steward_command(
     cmd: schemas.StewardCommandCreate, db: Session = Depends(get_db)
 ):
-    """
-    Structured StewardCommand workflow where user inputs intention,
-    system parses structural dependencies, confirms action boundary,
-    evaluates against rules, executes governed command, and logs result.
-    """
-    # 1. Parse Dependencies & Rules (Mock implementation for Slice F)
-    evaluated_rules = {
-        "applied_rules": ["RULE_CORE_1", "RULE_GOV_2"],
-        "compliance": "PASS",
-    }
-
-    # 2. Enforce absolute negative boundaries (Steward constraints)
-    forbidden_intents = ["ROOT_CORE", "BYPASS", "FORCE", "OVERRIDE"]
-    if any(f in cmd.intent.upper() for f in forbidden_intents):
-        raise HTTPException(
-            status_code=403, detail="Intent violates immutable domain constraints."
-        )
-
-    forbidden_commands = [
-        "PASS_GATE",
-        "FORCE_LOCK",
-        "APPROVE_REVIEW",
-        "PUBLISH_CLAIM",
-        "ESTABLISH_ROOT_CORE",
-    ]
-    if cmd.command_type in forbidden_commands:
-        raise HTTPException(
-            status_code=403,
-            detail="Steward cannot bypass epistemic lifecycle gates, locks, or publication.",
-        )
-
-    # 3. Execute governed command
-    # In a real system, dispatch to the actual domain service
-    result_summary = (
-        f"Executed {cmd.command_type} successfully based on intent: {cmd.intent}"
-    )
-
-    # 4. Log the proven result
-    cmd_id = f"steward_{uuid.uuid4().hex[:8]}"
-    db_cmd = models.StewardCommand(
-        id=cmd_id,
-        command_type=cmd.command_type,
-        intent=cmd.intent,
-        parameters=cmd.parameters,
-        evaluated_rules=evaluated_rules,
-        execution_status="SUCCESS",
-        result_summary=result_summary,
-    )
-    db.add(db_cmd)
-
-    # Audit log
-    db.add(
-        models.AuditLog(
-            id=f"aud_{uuid.uuid4().hex[:8]}",
-            entity_id=cmd_id,
-            entity_type="StewardCommand",
-            action="EXECUTE",
-            new_state="SUCCESS",
-            actor="STEWARD",
-        )
-    )
-    db.commit()
-    db.refresh(db_cmd)
-
-    return db_cmd
+    try:
+        return StewardCommandService.execute(db, cmd)
+    except StewardAuthorityRejected as exc:
+        raise HTTPException(status_code=403, detail=str(exc)) from exc
 
 
 # --- Knowledge & Operations

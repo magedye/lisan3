@@ -86,7 +86,7 @@ export default function StewardPage() {
             <label className="form-field">
               <span>Command Type</span>
               <input id="steward-command-type" name="command_type" className="input technical-text" value={commandType} onChange={(event) => setCommandType(event.target.value)} placeholder="نوع أمر مدعوم" required />
-              <small>العقد الخلفي هو الذي يقبل أو يرفض النوع.</small>
+              <small>لا توجد أوامر تنفيذية محكومة مسجلة حالياً؛ يعيد backend حالة UNSUPPORTED أو REJECTED بصراحة.</small>
             </label>
             <label className="form-field">
               <span>النية</span>

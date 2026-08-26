@@ -37,7 +37,7 @@ def test_db():
         db.close()
 
 
-def test_execute_steward_command(test_db):
+def test_unimplemented_steward_command_is_unsupported(test_db):
     res = client.post(
         "/steward/commands",
         json={
@@ -50,9 +50,9 @@ def test_execute_steward_command(test_db):
     assert res.status_code == 200
     data = res.json()
     assert data["command_type"] == "CREATE_CLAIM"
-    assert data["execution_status"] == "SUCCESS"
-    assert "RULE_CORE_1" in data["evaluated_rules"]["applied_rules"]
-    assert "SUCCESS" in data["execution_status"]
+    assert data["execution_status"] == "UNSUPPORTED"
+    assert data["evaluated_rules"] is None
+    assert "no canonical executable Steward command" in data["result_summary"]
 
 
 def test_execute_steward_command_invalid(test_db):
@@ -66,4 +66,4 @@ def test_execute_steward_command_invalid(test_db):
     )
 
     assert res.status_code == 403
-    assert "Intent violates immutable domain constraints" in res.json()["detail"]
+    assert "cannot bypass epistemic lifecycle" in res.json()["detail"]

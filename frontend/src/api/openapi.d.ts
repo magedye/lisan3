@@ -434,12 +434,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /**
-         * Execute Steward Command
-         * @description Structured StewardCommand workflow where user inputs intention,
-         *     system parses structural dependencies, confirms action boundary,
-         *     evaluates against rules, executes governed command, and logs result.
-         */
+        /** Execute Steward Command */
         post: operations["execute_steward_command_steward_commands_post"];
         delete?: never;
         options?: never;
@@ -788,6 +783,7 @@ export interface components {
              * @default []
              */
             corpus_snapshots: components["schemas"]["CorpusSnapshotResponse"][];
+            run_admission: components["schemas"]["RunAdmissionStateResponse"];
         };
         /** AuditLogResponse */
         AuditLogResponse: {
@@ -1545,6 +1541,26 @@ export interface components {
              * Format: date-time
              */
             created_at: string;
+        };
+        /** RunAdmissionStateResponse */
+        RunAdmissionStateResponse: {
+            /** Available */
+            available: boolean;
+            /**
+             * Corpus Snapshot Ids
+             * @default []
+             */
+            corpus_snapshot_ids: string[];
+            /**
+             * Methodology Revisions
+             * @default []
+             */
+            methodology_revisions: string[];
+            /**
+             * Blockers
+             * @default []
+             */
+            blockers: string[];
         };
         /** RunWorkspaceResponse */
         RunWorkspaceResponse: {

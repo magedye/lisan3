@@ -569,6 +569,13 @@ class CorpusSnapshotResponse(BaseSchema):
     model_config = ConfigDict(from_attributes=True)
 
 
+class RunAdmissionStateResponse(BaseSchema):
+    available: bool
+    corpus_snapshot_ids: list[str] = []
+    methodology_revisions: list[str] = []
+    blockers: list[str] = []
+
+
 class AttentionCenterResponse(BaseSchema):
     recent_runs: list[ResearchRunResponse] = []
     review_required_claims: list[SemanticClaimResponse] = []
@@ -576,6 +583,7 @@ class AttentionCenterResponse(BaseSchema):
     pending_proposals: list[ChangeProposalResponse] = []
     recent_changes: list[AuditLogResponse] = []
     corpus_snapshots: list[CorpusSnapshotResponse] = []
+    run_admission: RunAdmissionStateResponse
 
 
 class RunWorkspaceResponse(BaseSchema):
