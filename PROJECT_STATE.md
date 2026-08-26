@@ -6,6 +6,8 @@ State context only. Canonical repository contracts and runtime evidence remain a
 
 - Root: `D:\APP\tafseer\lisanapp3`
 - Branch: `main`
+- Tanzil production-activation implementation candidate:
+  `a1d910f11735ec4ba0e9324dbb82b800efd485f6`
 - UI governance-remediation implementation candidate:
   `43c27e6dd2393d24be21805b4b2ea42b78d15955`
 - UI completion state: `IMPLEMENTED`, `TESTED`, `VERIFIED_FOR_PROFILE`, and
@@ -93,9 +95,9 @@ No implementation thread claim may grant independent confirmation or release acc
 ## Unresolved Independent Status Axes
 
 - AI profile: governed exploratory runtime only; fake/test-provider execution remains test evidence, not live-AI or methodology-eval verification.
-- Corpus authority: Tanzil 1.1 now has an authority-bound artifact/hash,
-  validated real-format import, and a non-fixture persisted pre-activation
-  snapshot. Production activation is not granted. QAC artifact verification and
+- Corpus authority: exact Tanzil 1.1 snapshot
+  `snap_tanzil_1_1_ac0724796cbb` is `VALIDATED` and `PRODUCTION_ACTIVE` after
+  governed owner-authorized activation. QAC artifact verification and
   real-format import remain pending and separate.
 - Promptfoo: `CONFIGURED_NOT_EXECUTABLE` (configuration exists; CLI and referenced runner are absent).
 - pip-audit: `NOT_CONFIGURED_NOT_EXECUTED`.
@@ -417,7 +419,7 @@ checkpoint below supersedes its zero-snapshot and unbound-hash statements.
   release, push, or external repository mutation was performed. Owner artifacts
   `.hermes/`, `check_db2.py`, and `debug_proxy.py` remain untouched.
 
-## Tanzil Governed Pre-Activation Checkpoint
+## Tanzil Governed Pre-Activation Checkpoint (Superseded by Activation)
 
 - Task starting HEAD:
   `29e5e1a75df6ee5c2a7d797b915a29cf512ab798`.
@@ -457,15 +459,42 @@ checkpoint below supersedes its zero-snapshot and unbound-hash statements.
   remains future work and was not made a Tanzil dependency.
 - Durable decision evidence:
   `docs/evidence/corpus/TANZIL_PRE_ACTIVATION_DECISION_EVIDENCE.md`.
-- `PRODUCTION_ACTIVATION_NOT_GRANTED`. No production activation, model work,
-  R2 completion, R3, V4, release, push, or LQE repository mutation occurred.
+- This historical boundary was superseded only by the separately authorized
+  exact-snapshot production activation recorded below.
 - Owner-untracked `.hermes/`, `check_db2.py`, and `debug_proxy.py` remain
   present and untouched.
 
+## Tanzil Production Activation Checkpoint
+
+- Task starting HEAD: `4fe63673bd9a7057ce87b43d8bb2aa6e0f34a5c3`.
+- Activation implementation candidate:
+  `a1d910f11735ec4ba0e9324dbb82b800efd485f6`.
+- Immediate live re-verification passed for the exact 1.1 artifact hash/size,
+  114-surah/6,236-verse identity index, 6,236 deterministic non-fixture
+  occurrences, absence of a competing active snapshot, current Methodology,
+  and `CURRENT` schema at `c4d8b7e2a913`.
+- Live snapshot `snap_tanzil_1_1_ac0724796cbb` is now `VALIDATED` and
+  `PRODUCTION_ACTIVE`. It is the only production-active snapshot.
+- Audit `aud_tanzil_production_activation_ac0724796cbb` records actor
+  `OWNER_AUTHORITY`, timestamp `2026-08-26T16:52:00.806969Z`, prior/new state,
+  reason, exact artifact/index evidence, and decision reference.
+- Production-path `POST /runs` persisted `run_3410bc36`; unknown authority
+  identifiers remained rejected. Live `/attention` and the real browser showed
+  only the exact governed Corpus/Methodology pair.
+- The prior `BLOCKED_CORPUS_PENDING` requirement is resolved. No semantic pilot
+  or remaining batch was started; `DO_NOT_START_REMAINING_BATCHES` remains in
+  force pending separate owner authorization.
+- QAC is unchanged and remains separate. No QAC import, model/embedding work,
+  R2, R3, V4, release, push, or external LQE mutation occurred.
+- Durable evidence:
+  `docs/evidence/corpus/TANZIL_PRODUCTION_ACTIVATION_EVIDENCE.md`.
+- This is implementation-side activation evidence; it does not establish
+  independent review, V4 completion, technical release readiness, or release
+  acceptance.
+
 ## Exact Next Action
 
-Owner reviews the pre-activation evidence and makes a separate explicit Tanzil
-production-activation decision. If authorized, implement only the governed
-activation transition and independently verify Run admission against its exact
-candidate. Do not infer authorization for semantic requalification batches,
-QAC import, model work, R2/R3, V4, or release.
+Obtain separate owner authorization for a fresh semantic requalification pilot
+rerun against the exact active snapshot. Do not start the pilot or any remaining
+root batch under this activation authorization; preserve
+`DO_NOT_START_REMAINING_BATCHES`.

@@ -90,10 +90,11 @@ The governed pre-activation import is persisted as
 verification/import timestamp is `2026-08-26T16:01:38.564773Z`; an exact
 re-import readback created no second snapshot or occurrence set.
 
-Before execution, `validation_status` remains `PENDING` and
-`activation_status` remains `CANONICAL_ACTIVATION_PENDING`. Only the governed
-activation service may atomically transition those fields to `VALIDATED` and
-`PRODUCTION_ACTIVE` after every prerequisite passes.
+The governed activation service reverified every prerequisite and atomically
+transitioned the live snapshot at `2026-08-26T16:52:00.806969Z` to
+`validation_status=VALIDATED` and `activation_status=PRODUCTION_ACTIVE`.
+Durable execution evidence is recorded in
+`docs/evidence/corpus/TANZIL_PRODUCTION_ACTIVATION_EVIDENCE.md`.
 
 Allowed fields are Surah, Ayah, and exact Quran text. Translation, tafsir,
 gloss, and external semantic fields are forbidden.
@@ -104,5 +105,5 @@ validation the persisted evidence record states
 `CANON_001_ARTIFACT_IDENTITY_MATCH_CONFIRMED`; it must not import external
 adoption or activation status.
 
-`PRODUCTION_ACTIVATION_AUTHORIZED_FOR_EXACT_SNAPSHOT`
+`PRODUCTION_ACTIVE_FOR_EXACT_AUTHORIZED_SNAPSHOT`
 **decision rationale**: Provides deterministic, static, heavily verified Uthmani text without injecting semantic bias, suitable for the Blind Lab corpus.
