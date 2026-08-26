@@ -68,9 +68,22 @@ All semantic changes must trace back through:
 - `IMPORT_VALIDATED`, `VALIDATED`, and `PRODUCTION_ACTIVE` are distinct. Import
   validation does not grant production activation, and ResearchRun admission
   continues to require a separately production-active snapshot.
-- QAC remains an optional auxiliary morphology/syntax candidate. Tanzil
+- QAC remains `PENDING_ADMISSION` with machine-readable state
+  `SOURCE_ROLE_PENDING`. Its proposed auxiliary morphology/syntax role is not
+  approved: no exact artifact, completed provenance/license review, real-format
+  importer, or production activation exists. If separately admitted, QAC must
+  remain a source-provenanced annotation layer keyed to Tanzil identity. Tanzil
   canonical-text import does not inherit QAC semantic/gloss/ontology fields and
-  does not depend on a real-format QAC importer.
+  does not depend on a real-format QAC importer. The five-axis state and future
+  boundary are owned by `docs/canonical/ADMISSION_QAC.md`.
+
+## Purity and Structural Evidence Authority
+
+`docs/canonical/LISAN_PURITY_AND_STRUCTURAL_EVIDENCE_CONTRACT.md` owns the
+implementation contract for all eight mandatory Purity dimensions and the
+future provenance-bound structural annotation boundary. Every dimension remains
+fail-closed: `NOT_EVALUATED` is not clean and blocks `PURITY_CHECK`. This
+contract does not itself admit a structural source or establish a Purity result.
 
 ### Tooling and Verification
 

@@ -530,7 +530,7 @@ class ClaimHistoryResponse(BaseSchema):
 
 class PurityFinding(BaseSchema):
     dimension: str
-    status: str  # EVALUATED_CLEAN, FLAGGED, NOT_EVALUATED_IN_PROFILE
+    status: str  # EVALUATED_CLEAN, FLAGGED, NOT_EVALUATED
     severity: str  # NONE, LOW, MEDIUM, HIGH, CRITICAL
     details: str
 

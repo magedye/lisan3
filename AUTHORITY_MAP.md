@@ -3,7 +3,14 @@
 ## Precedence Level
 1. **Owner Instruction**: Latest explicit owner instruction in chat; `PROMPT/1.MD` is the durable execution request when it does not conflict with a later instruction.
 2. **Repository Policy**: Root `AGENTS.md` and applicable scoped `AGENTS.md` files.
-3. **Canonical Engineering and Governance References**: `docs/canonical/LISAN_PLATFORM_CANONICAL_IMPLEMENTATION_REFERENCE.md`, `docs/canonical/LISAN_TOOLING_ADOPTION_REFERENCE.md`, and `docs/canonical/LISAN_HYBRID_KNOWLEDGE_RETRIEVAL_ARCHITECTURE.md` within their stated scopes.
+3. **Canonical Engineering and Governance References**:
+   `docs/canonical/LISAN_PLATFORM_CANONICAL_IMPLEMENTATION_REFERENCE.md`,
+   `docs/canonical/LISAN_TOOLING_ADOPTION_REFERENCE.md`,
+   `docs/canonical/LISAN_HYBRID_KNOWLEDGE_RETRIEVAL_ARCHITECTURE.md`,
+   `docs/canonical/ADMISSION_TANZIL.md`,
+   `docs/canonical/ADMISSION_QAC.md`, and
+   `docs/canonical/LISAN_PURITY_AND_STRUCTURAL_EVIDENCE_CONTRACT.md` within their
+   stated scopes.
 4. **Canonical UX/Product Contract**: `ui/Lisanapp Governed UX Constitution & Implementation Reference — النسخة 4.0 (Final).md` for UX and product behavior.
 5. **Active Derived Semantic Runtime**: `skills/lisan-semantic-extraction/SKILL.md`, subordinate to higher authority.
 6. **Accepted Registries, Schemas, and Backend/API Contracts**: Only artifacts that exist and are accepted within their defined authority.

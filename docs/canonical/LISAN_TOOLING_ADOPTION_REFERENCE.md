@@ -575,11 +575,24 @@ Popularity does not automatically make a source authoritative.
 
 **Status:** `PENDING_ADMISSION`
 
+**Machine-readable source-role state:** `SOURCE_ROLE_PENDING`
+
+The five admission axes are independently open:
+
+- artifact identity: `PENDING`;
+- provenance and license: `PENDING`;
+- structural role authorization: `NOT_APPROVED`;
+- real importer: `NOT_IMPLEMENTED`;
+- production activation: `NOT_AUTHORIZED`.
+
+`docs/canonical/ADMISSION_QAC.md` owns the detailed admission record and the
+evidence required to change these states.
+
 ### Priority
 
 **High**
 
-### Proposed role
+### Proposed future role
 
 Auxiliary structural/morphological source.
 
@@ -594,9 +607,17 @@ Use candidate data for:
 
 ### Authority boundary
 
-QAC structural annotation may become admitted structural evidence after review.
+QAC structural annotation may become admitted structural evidence only after
+exact artifact and provenance verification, a real-format importer with Tanzil
+reconciliation, field-by-field domain review, and a separate explicit
+source-role admission decision. Synthetic fixture parsing is not real importer
+or admission evidence.
 
 QAC semantic ontology must NOT automatically become Lisan semantic authority.
+
+Glosses, translations, ontologies, semantic labels, dictionary or tafsir
+content, derived Root Core content, confidence claims, and research conclusions
+are prohibited from the proposed structural role.
 
 External semantic content remains subject to Source Role Policy.
 

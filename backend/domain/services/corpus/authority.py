@@ -2,6 +2,7 @@ from dataclasses import dataclass
 from typing import Protocol
 
 SOURCE_ROLE_APPROVED = "SOURCE_ROLE_APPROVED"
+SOURCE_ROLE_PENDING = "SOURCE_ROLE_PENDING"
 ARTIFACT_PRESENT = "ARTIFACT_PRESENT"
 ARTIFACT_VERIFICATION_PENDING = "ARTIFACT_VERIFICATION_PENDING"
 HASH_VERIFIED = "HASH_VERIFIED"
@@ -39,7 +40,8 @@ class CorpusAdmissionRecord:
 
 # Application enforcement of the current canonical admission records. Tanzil
 # production activation is owner-authorized only for the exact bound snapshot.
-# QAC remains pending artifact verification and is not required for Tanzil
+# QAC remains pending source-role admission, artifact/provenance verification,
+# real-format import, and activation. It is not required for Tanzil
 # canonical-text admission.
 CANONICAL_CORPUS_ADMISSIONS: dict[str, CorpusAdmissionRecord] = {
     "TANZIL_QURAN_UTHMANI": CorpusAdmissionRecord(
@@ -72,7 +74,7 @@ CANONICAL_CORPUS_ADMISSIONS: dict[str, CorpusAdmissionRecord] = {
     ),
     "QAC_MORPHOLOGY_SYNTAX": CorpusAdmissionRecord(
         source_id="QAC_MORPHOLOGY_SYNTAX",
-        source_role_status=SOURCE_ROLE_APPROVED,
+        source_role_status=SOURCE_ROLE_PENDING,
         expected_hash=None,
         artifact_verification_status=ARTIFACT_VERIFICATION_PENDING,
         activation_status=CANONICAL_ACTIVATION_PENDING,

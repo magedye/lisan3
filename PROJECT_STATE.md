@@ -375,10 +375,13 @@ No implementation thread claim may grant independent confirmation or release acc
 - The administrative documentation commit that records this verdict is not
   independently reviewed for product behavior.
 
-## Prior Corpus and Methodology Authority Checkpoint (Superseded for Tanzil)
+## Prior Corpus and Methodology Authority Checkpoint (Superseded)
 
 This records the pre-admission checkpoint. The newer Tanzil pre-activation
-checkpoint below supersedes its zero-snapshot and unbound-hash statements.
+checkpoint below supersedes its zero-snapshot and unbound-hash statements. Its
+external QAC artifact and `SOURCE_ROLE_APPROVED` statements are historical only
+and are superseded by the current five-axis QAC reconciliation below; no such
+artifact is admitted or part of the current candidate.
 
 - Starting HEAD: `28d355653a915016b179e223852f2b978dc44605`;
   implementation candidate:
@@ -494,6 +497,11 @@ checkpoint below supersedes its zero-snapshot and unbound-hash statements.
 
 ## Fresh Five-Root Semantic Requalification Pilot — Blocked Checkpoint
 
+This section preserves the evidence-candidate checkpoint. Its original blocker
+classification and proposed next action are superseded by the later enabling-
+governance reconciliation checkpoint; the underlying five-run facts remain
+unchanged.
+
 - Task starting HEAD:
   `67dccb9017b6d9500a90d7564358daf8192b4190`.
 - Pilot evidence candidate:
@@ -529,20 +537,68 @@ checkpoint below supersedes its zero-snapshot and unbound-hash statements.
   `git diff --cached --check`.
 - Durable evidence:
   `docs/evidence/semantic-pilot-2026-08-26/SEMANTIC_PILOT_BLOCKER_REPORT.md`.
-- Failure classes: `EXTERNAL_DEPENDENCY` for the unavailable admitted
-  morphology/root source, `PRODUCT_DEFECT` for unevaluable mandatory Purity
-  dimensions, and `AUTHORITY_CONFLICT` at the unresolved derived-card contract
-  boundary.
+- The original blocker classifications are corrected by
+  `docs/evidence/semantic-pilot-2026-08-26/SEMANTIC_PILOT_BLOCKER_CORRECTIVE_ADDENDUM.md`.
+  In particular, QAC was not admitted, product importer/domain gaps are
+  separate from the artifact dependency, and derived cards are not semantic or
+  Internal-Lock prerequisites.
 - No QAC import, model/embedding work, R2, R3, V4, release, push, remaining
   semantic batch, or external `D:\APP\tafseer\LISAN-Quran-Embedding` mutation
   occurred. Owner-untracked `.hermes/`, `check_db2.py`, and `debug_proxy.py`
   remain present and untouched.
 
+## Semantic-Pilot Enabling-Governance Reconciliation Checkpoint
+
+- Task starting branch/HEAD: `main` /
+  `e916abc11572766fe932bd1549f53392634f2f72`; direct pilot-evidence parent in
+  the task lineage: `6b5313b7696f01a54f76cb907cd722f822ff22ae`.
+- The independent evidence review verdict is
+  `SEMANTIC_PILOT_BLOCKER_VERDICT_NOT_CONFIRMED`, while overall readiness remains
+  `SEMANTIC_PILOT_BLOCKED`.
+- QAC is reconciled across five independent axes: artifact identity `PENDING`;
+  provenance/license `PENDING`; structural role `NOT_APPROVED`; real importer
+  `NOT_IMPLEMENTED`; production activation `NOT_AUTHORIZED`. Runtime authority
+  is fail-closed as `SOURCE_ROLE_PENDING`. No QAC artifact was accessed,
+  imported, or activated.
+- Tanzil remains sole canonical Quran text and verse-identity authority. The
+  preferred future morphology boundary is a separate, provenance-bound
+  token/segment annotation layer; it must not mutate the current production
+  CorpusSnapshot or Tanzil occurrences.
+- The structural blocker is decomposed into authority/provenance, physical
+  artifact, real importer, domain/persistence, and downstream research-evidence
+  gaps. Importer and persistence capability gaps are `PRODUCT_DEFECT`, not
+  collapsed into the physical `EXTERNAL_DEPENDENCY`.
+- Purity remains an independent `PRODUCT_DEFECT` for enablement. The canonical
+  contract now defines mandatory inputs, lineage, decision rules, diagnostics,
+  levels and tests for all eight dimensions. `NOT_EVALUATED` remains blocking
+  and never means clean.
+- Morphology-independent implementation set: `DICTIONARY_FIRST`,
+  `HERITAGE_BIAS`, `TAFSIR_CONTAMINATION`, `GENERIC_OVEREXTRACTION`,
+  `LETTER_SEMANTICS_OVERRELIANCE`, and `CIRCULAR_CONFIRMATION`.
+  `CONTEXTUAL_LEAKAGE` is partially implementable but final-clean coverage is
+  morphology-dependent; `FORCED_UNIFICATION` materially depends on structural
+  occurrence evidence.
+- ROOT_CARD / TERM_CARD absence is a descriptive
+  `DERIVED_PRESENTATION_CONTRACT_GAP`, not a persisted status and not a corpus,
+  Purity, or Internal-Lock blocker. No card schema was implemented.
+- Original sealed pilot files and their hash manifest were not modified. The
+  corrective addendum changes interpretation/classification only.
+- All five named ResearchRuns remain `LOCK_BLOCKED`, with `root_core: null`,
+  occurrence coverage `NOT_VERIFIED`, clean isolation and prior quarantine.
+  They were not rerun. `DO_NOT_START_REMAINING_BATCHES` remains in force.
+- No real QAC importer, full Purity evaluator, semantic result, LQE change,
+  external-workspace use, production activation, release, or push occurred.
+  Owner-untracked `.hermes/`, `check_db2.py`, and `debug_proxy.py` remain
+  untouched.
+- Ordered future slices are recorded in
+  `docs/canonical/LISAN_PURITY_AND_STRUCTURAL_EVIDENCE_CONTRACT.md` and
+  `tasks/plan.md`; each slice requires separate authorization.
+
 ## Exact Next Action
 
-Perform a fresh independent read-only review of the exact pilot evidence
-candidate. If the blocker verdict is accepted, obtain a separate owner decision
-for a bounded enabling scope that admits or explicitly approves a deterministic
-root/morphology source and implements evidence-backed evaluators for all
-mandatory Purity dimensions. Do not restart the five pilot roots or start
-remaining batches before that enabling candidate is independently reviewed.
+Perform a fresh independent read-only review of the exact committed enabling-
+governance candidate against repository authority, the unchanged sealed pilot
+evidence, and the success criteria in `tasks/plan.md`. If and only if that
+candidate is accepted for this profile, obtain a separate owner authorization
+for Slice 1, QAC provenance/admission closure. Do not import or activate QAC,
+rerun the five pilot roots, or start remaining batches under that review.

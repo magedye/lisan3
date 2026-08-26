@@ -6,6 +6,12 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 
 from backend.domain.models import CorpusOccurrence, CorpusSnapshot
+from backend.domain.services.corpus.authority import (
+    ARTIFACT_VERIFICATION_PENDING,
+    CANONICAL_ACTIVATION_PENDING,
+    SOURCE_ROLE_PENDING,
+    get_canonical_admission,
+)
 from backend.domain.services.corpus.importer import CorpusImporter
 from backend.domain.services.corpus.qac import QACAdapter
 from backend.domain.services.corpus.tanzil import TanzilAdapter
@@ -20,6 +26,16 @@ engine = create_engine(
 )
 TestingSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base.metadata.create_all(bind=engine)
+
+
+def test_qac_authority_remains_pending_and_fail_closed():
+    admission = get_canonical_admission("QAC_MORPHOLOGY_SYNTAX")
+
+    assert admission is not None
+    assert admission.source_role_status == SOURCE_ROLE_PENDING
+    assert admission.expected_hash is None
+    assert admission.artifact_verification_status == ARTIFACT_VERIFICATION_PENDING
+    assert admission.activation_status == CANONICAL_ACTIVATION_PENDING
 
 
 def test_tanzil_adapter_hash_validation():
