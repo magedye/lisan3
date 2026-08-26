@@ -1,0 +1,40 @@
+TARGET: "أ م ن"
+CONTRACT_TYPE: "ROOT_CORE"
+OFFICIAL_STATUS: "LOCK_BLOCKED"
+CONFIDENCE: "UNRESOLVED"
+
+COVERAGE_PROFILE:
+  INDEX_COVERAGE: "NOT_VERIFIED: the bound snapshot contains 6,236 verse records, but no admitted root/lemma annotations resolve أ م ن occurrences."
+  DEEP_ANALYSIS_COVERAGE: "NOT_STARTED: stopped during AUTHORITY_PREFLIGHT under NO_VALID_FALLBACK."
+  FORM_COVERAGE: "NOT_VERIFIED"
+  CONSTRUCTION_COVERAGE: "NOT_VERIFIED"
+  CONTEXT_DIVERSITY: "NOT_VERIFIED"
+  NEIGHBOR_COVERAGE: "NOT_STARTED; حفظ / صدق / طمأنينة / وثق / يقين / سلم remained unexamined and no prior conclusion was loaded."
+  UNRESOLVED_ITEMS: "Exact occurrence inventory, morphology, constructions, hypotheses, boundaries, differentiation, counterevidence, and falsification."
+
+ABSTRACT_ROOT_CORE: null
+ROOT_DEFINITION: null
+ROOT_MEANING: null
+ROOT_CONCEPT: null
+
+DISTINCTIVE_RESIDUE_AND_NEIGHBORS:
+  SHARED_DOMAIN: null
+  STATUS: "UNRESOLVED"
+
+LAYER_SEPARATION:
+  ROOT_CONTRIBUTION: null
+  FORM_CONTRIBUTION: null
+  CONSTRUCTION_CONTRIBUTION: null
+  CONTEXTUAL_EFFECT: null
+  UNRESOLVED_ASSIGNMENT: "All semantic assignments remain unresolved because structural coverage was not authority-verifiable."
+
+FALSIFICATION_AND_EVIDENCE:
+  REJECTION_CONDITION: null
+  SUPPORTING_EVIDENCE: "Corpus and methodology identity only; no semantic supporting evidence was created."
+  COUNTEREVIDENCE: null
+  UNRESOLVED_CASES: "All root occurrences and semantic tests."
+
+DEPENDENCY_AND_SCOPE:
+  VALIDATION_SCOPE: "AUTHORITY_PREFLIGHT and Blind Lab isolation only."
+  UPSTREAM_DEPENDENCIES: "ResearchRun run_8d696d64; CorpusSnapshot snap_tanzil_1_1_ac0724796cbb; Methodology LISAN_QURANIC_SEMANTIC_EXTRACTION@6bb1c10a0f9a; isolation iso_b3ce9e2a; gates gate_b164800a and gate_21aa18c7."
+  REOPEN_CONDITION: "An authority-admitted structural source or explicitly approved deterministic morphology fallback becomes available, and the canonical Purity dimensions become evaluable."

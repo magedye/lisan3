@@ -1,0 +1,106 @@
+{
+  "pilot_id": "semantic_requalification_pilot_2026_08_26",
+  "starting_head": "67dccb9017b6d9500a90d7564358daf8192b4190",
+  "scope": {
+    "authorized_roots": ["ع د ل", "أ م ن", "س ل م", "ح م د", "ش ك ر"],
+    "remaining_batches": "DO_NOT_START_REMAINING_BATCHES"
+  },
+  "corpus": {
+    "snapshot_id": "snap_tanzil_1_1_ac0724796cbb",
+    "source": "TANZIL_QURAN_UTHMANI",
+    "version": "1.1",
+    "sha256": "ac0724796cbbda0f4801470fbbd11d0f3c5802067bae0493466d0128b0c667af",
+    "verse_count": 6236,
+    "surah_count": 114,
+    "validation_status": "VALIDATED",
+    "activation_status": "PRODUCTION_ACTIVE",
+    "fixture_only": false,
+    "structural_source": null,
+    "structural_source_version": null,
+    "distinct_occurrence_expressions": [""]
+  },
+  "methodology": {
+    "id": "LISAN_QURANIC_SEMANTIC_EXTRACTION@6bb1c10a0f9a",
+    "revision": "git-blob:6bb1c10a0f9a09bf9a59c29c45e2252efc9832fb",
+    "allowed_use": "QURAN_INTERNAL_CUMULATIVE_RUN",
+    "lifecycle_state": "CURRENT",
+    "research_run_eligible": true,
+    "source_reference": "skills/lisan-semantic-extraction/SKILL.md",
+    "source_sha256": "43c0a40b3f465fa95695607c2de838effd07946966c57ad15275d0051e92a288"
+  },
+  "runs": [
+    {
+      "root": "ع د ل",
+      "run_id": "run_d7519288",
+      "isolation_id": "iso_dd20e1ac",
+      "isolation_state": "CLEAN",
+      "blocked_prior_read_event": "evt_3c01de4d",
+      "purity_gate_id": "gate_df0726eb",
+      "internal_lock_gate_id": "gate_7bd67cdb",
+      "status": "LOCK_BLOCKED",
+      "result_artifact": "adl-result.yaml"
+    },
+    {
+      "root": "أ م ن",
+      "run_id": "run_8d696d64",
+      "isolation_id": "iso_b3ce9e2a",
+      "isolation_state": "CLEAN",
+      "blocked_prior_read_event": "evt_85741902",
+      "purity_gate_id": "gate_b164800a",
+      "internal_lock_gate_id": "gate_21aa18c7",
+      "status": "LOCK_BLOCKED",
+      "result_artifact": "amn-result.yaml"
+    },
+    {
+      "root": "س ل م",
+      "run_id": "run_1a24ffab",
+      "isolation_id": "iso_2879988d",
+      "isolation_state": "CLEAN",
+      "blocked_prior_read_event": "evt_0071978b",
+      "purity_gate_id": "gate_4ea7f549",
+      "internal_lock_gate_id": "gate_40f28761",
+      "status": "LOCK_BLOCKED",
+      "result_artifact": "slm-result.yaml"
+    },
+    {
+      "root": "ح م د",
+      "run_id": "run_68c7b72c",
+      "isolation_id": "iso_36c5e9d2",
+      "isolation_state": "CLEAN",
+      "blocked_prior_read_event": "evt_5cd6e895",
+      "purity_gate_id": "gate_8c9ddd8f",
+      "internal_lock_gate_id": "gate_411ee895",
+      "status": "LOCK_BLOCKED",
+      "result_artifact": "hmd-result.yaml"
+    },
+    {
+      "root": "ش ك ر",
+      "run_id": "run_5f72ad9d",
+      "isolation_id": "iso_97b73c20",
+      "isolation_state": "CLEAN",
+      "blocked_prior_read_event": "evt_0605e14b",
+      "purity_gate_id": "gate_78a0d7d1",
+      "internal_lock_gate_id": "gate_fe490d8c",
+      "status": "LOCK_BLOCKED",
+      "result_artifact": "shkr-result.yaml"
+    }
+  ],
+  "blockers": [
+    {
+      "failure_class": "EXTERNAL_DEPENDENCY",
+      "code": "NO_AUTHORITY_VERIFIABLE_ROOT_MORPHOLOGY",
+      "effect": "Exact root occurrence, form, and construction coverage cannot be established from the text-only snapshot."
+    },
+    {
+      "failure_class": "PRODUCT_DEFECT",
+      "code": "PURITY_DIMENSIONS_NOT_EVALUABLE",
+      "effect": "Seven canonical Purity dimensions are always NOT_EVALUATED, so INTERNAL_LOCK cannot pass and SemanticClaim creation remains correctly fail-closed."
+    },
+    {
+      "failure_class": "AUTHORITY_CONFLICT",
+      "code": "NO_ACCEPTED_DERIVED_CARD_CONTRACT",
+      "effect": "No accepted ROOT_CARD or TERM_CARD schema/validator exists; cards were not invented."
+    }
+  ],
+  "readiness": "SEMANTIC_PILOT_BLOCKED"
+}
