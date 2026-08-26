@@ -11,6 +11,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 
+from backend.domain.services.corpus.activation import TanzilProductionActivationService
+from backend.domain.services.corpus.importer import TanzilPreActivationImporter
 from backend.infrastructure.database import get_db
 from backend.main import app
 
@@ -43,6 +45,10 @@ def e2e_server(tmp_path_factory):
     alembic_cfg.set_main_option("script_location", "alembic")
     alembic_cfg.set_main_option("sqlalchemy.url", f"sqlite:///{db_path.as_posix()}")
     alembic.command.upgrade(alembic_cfg, "head")
+
+    with TestSession() as session:
+        TanzilPreActivationImporter.import_candidate(session)
+        TanzilProductionActivationService.activate(session)
 
     def override_db():
         db = TestSession()

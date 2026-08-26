@@ -1,6 +1,6 @@
 # Tanzil Quranic Text — LISAN3 Admission Record
 
-**authority revision**: `LISAN3_TANZIL_ADMISSION_V1_2026_08_26`
+**authority revision**: `LISAN3_TANZIL_ACTIVATION_V2_2026_08_26`
 **source_id**: `TANZIL_QURAN_UTHMANI`
 **source_name**: Tanzil Quran Text (Uthmani)
 **source_role**: Primary Canonical Text Source / `SOURCE_ROLE_APPROVED`
@@ -57,7 +57,23 @@ recomputed the source and destination byte size and SHA-256 before binding
 this record. The external report supports provenance only; its governance
 status is not imported into LISAN3.
 
-## Current lifecycle and boundary
+## Owner production activation decision
+
+The owner explicitly authorized production activation on 2026-08-26 for only:
+
+`snap_tanzil_1_1_ac0724796cbb`
+
+The authorization is conditional on immediate live re-verification of the
+artifact, import, occurrences, competing-active-snapshot boundary, and current
+Methodology eligibility. The canonical transition must persist an audit record
+with actor `OWNER_AUTHORITY`; it does not authorize QAC, semantic batches,
+retrieval/model work, V4, or release.
+
+The artifact verification revision stored on the snapshot remains
+`LISAN3_TANZIL_ADMISSION_V1_2026_08_26`; the activation decision is a later,
+separate authority revision and does not rewrite artifact provenance.
+
+## Authorized lifecycle and boundary
 
 ```text
 SOURCE_ROLE_APPROVED
@@ -65,7 +81,7 @@ SOURCE_ROLE_APPROVED
 → EXPECTED_HASH_BOUND
 → HASH_VERIFIED
 → IMPORT_VALIDATED
-→ CANONICAL_ACTIVATION_PENDING
+→ PRODUCTION_ACTIVE
 ```
 
 The governed pre-activation import is persisted as
@@ -74,9 +90,10 @@ The governed pre-activation import is persisted as
 verification/import timestamp is `2026-08-26T16:01:38.564773Z`; an exact
 re-import readback created no second snapshot or occurrence set.
 
-`validation_status` remains `PENDING`. Neither `VALIDATED` nor
-`PRODUCTION_ACTIVE` is implied by import validation. A separate explicit owner
-decision and a separately governed activation transition remain required.
+Before execution, `validation_status` remains `PENDING` and
+`activation_status` remains `CANONICAL_ACTIVATION_PENDING`. Only the governed
+activation service may atomically transition those fields to `VALIDATED` and
+`PRODUCTION_ACTIVE` after every prerequisite passes.
 
 Allowed fields are Surah, Ayah, and exact Quran text. Translation, tafsir,
 gloss, and external semantic fields are forbidden.
@@ -87,5 +104,5 @@ validation the persisted evidence record states
 `CANON_001_ARTIFACT_IDENTITY_MATCH_CONFIRMED`; it must not import external
 adoption or activation status.
 
-`PRODUCTION_ACTIVATION_NOT_GRANTED`
+`PRODUCTION_ACTIVATION_AUTHORIZED_FOR_EXACT_SNAPSHOT`
 **decision rationale**: Provides deterministic, static, heavily verified Uthmani text without injecting semantic bias, suitable for the Blind Lab corpus.

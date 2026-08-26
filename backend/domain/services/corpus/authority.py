@@ -29,42 +29,46 @@ class CorpusAdmissionRecord:
     identity_index_reference: str | None = None
     identity_index_sha256: str | None = None
     expected_verse_count: int | None = None
+    expected_surah_count: int | None = None
     verification_revision: str | None = None
     provenance_reference: str | None = None
     canon_001_reconciliation: str | None = None
+    authorized_snapshot_id: str | None = None
+    activation_decision_reference: str | None = None
 
 
 # Application enforcement of the current canonical admission records. Tanzil
-# is verified through import but deliberately remains pending production
-# activation. QAC remains pending artifact verification and is not required for
-# Tanzil canonical-text admission.
+# production activation is owner-authorized only for the exact bound snapshot.
+# QAC remains pending artifact verification and is not required for Tanzil
+# canonical-text admission.
 CANONICAL_CORPUS_ADMISSIONS: dict[str, CorpusAdmissionRecord] = {
     "TANZIL_QURAN_UTHMANI": CorpusAdmissionRecord(
         source_id="TANZIL_QURAN_UTHMANI",
         source_role_status=SOURCE_ROLE_APPROVED,
         expected_hash=(
-            "ac0724796cbbda0f4801470fbbd11d0f"
-            "3c5802067bae0493466d0128b0c667af"
+            "ac0724796cbbda0f4801470fbbd11d0f3c5802067bae0493466d0128b0c667af"
         ),
         artifact_verification_status=HASH_VERIFIED,
-        activation_status=CANONICAL_ACTIVATION_PENDING,
+        activation_status=PRODUCTION_ACTIVE,
         authority_reference="docs/canonical/ADMISSION_TANZIL.md",
         source_name="Tanzil Quran Text (Uthmani)",
         canonical_text_version="1.1",
         artifact_reference="data/corpus/tanzil/tanzil-uthmani-1.1.txt",
         expected_bytes=1_334_737,
         artifact_format="TANZIL_UTHMANI_1_1_ONE_VERSE_PER_LINE_UTF8_LF",
-        identity_index_reference=(
-            "data/corpus/tanzil/quran-verse-index-v1.0.json"
-        ),
+        identity_index_reference=("data/corpus/tanzil/quran-verse-index-v1.0.json"),
         identity_index_sha256=(
-            "0d0a2273e82ebb0d9848ccbf831f1bb2"
-            "97c0fb255413c5aeb299bbfaf2bbc967"
+            "0d0a2273e82ebb0d9848ccbf831f1bb297c0fb255413c5aeb299bbfaf2bbc967"
         ),
         expected_verse_count=6_236,
+        expected_surah_count=114,
         verification_revision="LISAN3_TANZIL_ADMISSION_V1_2026_08_26",
         provenance_reference="docs/canonical/ADMISSION_TANZIL.md#artifact-provenance",
         canon_001_reconciliation=CANON_001_ARTIFACT_IDENTITY_MATCH_CONFIRMED,
+        authorized_snapshot_id="snap_tanzil_1_1_ac0724796cbb",
+        activation_decision_reference=(
+            "docs/canonical/ADMISSION_TANZIL.md#owner-production-activation-decision"
+        ),
     ),
     "QAC_MORPHOLOGY_SYNTAX": CorpusAdmissionRecord(
         source_id="QAC_MORPHOLOGY_SYNTAX",
@@ -78,6 +82,7 @@ CANONICAL_CORPUS_ADMISSIONS: dict[str, CorpusAdmissionRecord] = {
 
 
 class SnapshotLifecycle(Protocol):
+    id: str
     canonical_text_source: str
     canonical_text_hash: str
     source_role_status: str
@@ -198,6 +203,11 @@ def production_validation_failures(snapshot: SnapshotLifecycle) -> list[str]:
         return failures
     if admission.activation_status != PRODUCTION_ACTIVE:
         failures.append("canonical admission is not production-active")
+    if (
+        admission.authorized_snapshot_id is not None
+        and snapshot.id != admission.authorized_snapshot_id
+    ):
+        failures.append("snapshot identity is not owner-authorized for production")
     if snapshot.activation_status != PRODUCTION_ACTIVE:
         failures.append("snapshot is not production-active")
     return failures

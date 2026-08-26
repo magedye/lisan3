@@ -1,10 +1,12 @@
+import re
+
 from playwright.sync_api import Page, expect
 
 
 def test_journey_1_run_initialization(page: Page, e2e_server: dict):
     """
     Journey 1: Governed Research entry boundary
-    - Ask Lisan -> insufficient evidence -> honest Run Builder unavailable state.
+    - Ask Lisan -> insufficient evidence -> exact governed Run Builder choices.
     """
     base_url = e2e_server["base_url"]
 
@@ -22,15 +24,13 @@ def test_journey_1_run_initialization(page: Page, e2e_server: dict):
     # Expect insufficient evidence message
     expect(page.locator("h3:has-text('Insufficient Evidence')")).to_be_visible()
 
-    # 2. A governed Methodology revision exists, but current canonical authority
-    # has no admitted production Corpus, so no Run Builder controls are exposed.
-    unavailable = page.locator("#run-admission-unavailable")
-    expect(unavailable).to_contain_text("Run Builder unavailable")
-    expect(unavailable).to_contain_text(
-        "No authority-verified, production-active CorpusSnapshot"
-    )
-    expect(page.locator("#run-methodology")).to_have_count(0)
-    expect(page.locator("#run-corpus")).to_have_count(0)
+    # 2. Only the exact active Corpus and eligible Methodology are selectable.
+    methodology = page.locator("#run-methodology")
+    corpus = page.locator("#run-corpus")
+    expect(methodology.locator("option")).to_have_count(2)
+    expect(corpus.locator("option")).to_have_count(2)
+    methodology.select_option("LISAN_QURANIC_SEMANTIC_EXTRACTION@6bb1c10a0f9a")
+    corpus.select_option("snap_tanzil_1_1_ac0724796cbb")
 
     rejected = page.request.post(
         f"{e2e_server['api_url']}/runs",
@@ -43,3 +43,6 @@ def test_journey_1_run_initialization(page: Page, e2e_server: dict):
         },
     )
     assert rejected.status == 422
+
+    page.get_by_role("button", name="Start Research Run — ابدأ تشغيل بحث").click()
+    expect(page).to_have_url(re.compile(r"/run/run_[0-9a-f]+$"))

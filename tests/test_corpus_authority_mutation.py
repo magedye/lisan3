@@ -17,10 +17,12 @@ def test_corpus_authority_decision_matrix():
         artifact_verification_status=distinct(authority.HASH_VERIFIED),
         activation_status=distinct(authority.PRODUCTION_ACTIVE),
         authority_reference="canonical:test",
+        authorized_snapshot_id="authorized-snapshot",
     )
 
     def snapshot(**overrides):
         values = {
+            "id": "authorized-snapshot",
             "canonical_text_source": source_id,
             "canonical_text_hash": distinct("b" * 64),
             "source_role_status": distinct(authority.SOURCE_ROLE_APPROVED),
@@ -65,6 +67,7 @@ def test_corpus_authority_decision_matrix():
             ({"import_validation_status": "ZZZ_INVALID"}, "has not passed"),
             ({"activation_status": "AAA_INVALID"}, "not production-active"),
             ({"activation_status": "ZZZ_INVALID"}, "not production-active"),
+            ({"id": "lookalike-snapshot"}, "not owner-authorized"),
             ({"artifact_provenance": None}, "provenance is missing"),
             ({"artifact_provenance": ""}, "provenance is missing"),
             ({"fixture_only": True}, "test fixtures"),
@@ -115,8 +118,12 @@ def test_corpus_authority_decision_matrix():
 
         authority.CANONICAL_CORPUS_ADMISSIONS[source_id] = original
         pending = authority.production_validation_failures(snapshot())
-        assert any("snapshot expected hash is not authority-bound" in item for item in pending)
-        assert any("not production-active" in item for item in pending)
+        assert any(
+            "snapshot expected hash is not authority-bound" in item for item in pending
+        )
+        assert not any(
+            "canonical admission is not production-active" in item for item in pending
+        )
     finally:
         authority.CANONICAL_CORPUS_ADMISSIONS[source_id] = original
 

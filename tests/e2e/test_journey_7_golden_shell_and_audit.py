@@ -52,7 +52,9 @@ def test_journey_7_golden_shell_and_real_audit(
 
     page.goto(e2e_server["base_url"])
     expect(page.get_by_role("navigation", name="التنقل الرئيسي")).to_be_visible()
-    expect(page.get_by_role("heading", name="مركز الانتباه — اسأل لسان (Ask Lisan)")).to_be_visible()
+    expect(
+        page.get_by_role("heading", name="مركز الانتباه — اسأل لسان (Ask Lisan)")
+    ).to_be_visible()
     expect(page.locator(".status-badge.status-positive")).to_contain_text(
         "بيانات فعلية فقط"
     )
@@ -60,7 +62,10 @@ def test_journey_7_golden_shell_and_real_audit(
     page.get_by_placeholder("e.g. ضرب").fill("نور")
     page.get_by_role("button", name="Search — بحث").click()
     expect(page.locator("h3:has-text('Insufficient Evidence')")).to_be_visible()
-    expect(page.locator("#run-admission-unavailable")).to_be_visible()
+    expect(page.locator("#run-methodology")).to_contain_text(
+        "LISAN_QURANIC_SEMANTIC_EXTRACTION@6bb1c10a0f9a"
+    )
+    expect(page.locator("#run-corpus")).to_contain_text("snap_tanzil_1_1_ac0724796cbb")
 
     monkeypatch.setattr(
         "backend.domain.services.claim_visibility.has_valid_gate", lambda *_args: True
