@@ -109,9 +109,11 @@ export default function ClaimPage() {
 
         <Panel title="النقاء المنهجي" eyebrow="Eight dimensions · separate from quality">
           <div className="button-row">
+            <span id="quality-availability"><StatusBadge label="QualityProfile" value={quality.available ? "AVAILABLE" : "UNAVAILABLE"} /></span>
             <span id="qual-rating"><StatusBadge label="التقييم" value={quality.purity_rating} /></span>
             <span id="qual-findings" className="status-badge status-neutral"><span aria-hidden="true">●</span>{quality.purity_findings.length} findings</span>
           </div>
+          {!quality.available && <div className="state-card" role="status"><strong>QualityProfile unavailable — لم يُقيّم ملف الجودة</strong><p>المعروض أدناه اشتقاق حتمي للنقاء المنهجي فقط؛ المقاييس الأخرى غير متاحة ولا تُستكمل بقيم افتراضية.</p></div>}
           <p>{quality.evaluation_summary}</p>
           <div className="stack">{quality.purity_findings.map((finding) => (
             <article className="list-card" key={finding.dimension}>

@@ -940,6 +940,11 @@ export interface components {
              */
             created_at: string;
         };
+        /**
+         * EpistemicState
+         * @enum {string}
+         */
+        EpistemicState: "OBSERVATION" | "HYPOTHESIS" | "TESTED" | "SUPPORTED" | "LOCK_BLOCKED" | "LOCK_INTERNAL_RESULT" | "REJECTED" | "UNRESOLVED";
         /** ErrorResponse */
         ErrorResponse: {
             /** Status */
@@ -998,6 +1003,11 @@ export interface components {
              */
             created_at: string;
         };
+        /**
+         * FreshnessState
+         * @enum {string}
+         */
+        FreshnessState: "CURRENT" | "STALE" | "INVALIDATED" | "REVALIDATION_REQUIRED";
         /** GateReportCreate */
         GateReportCreate: {
             /** Gate Code */
@@ -1331,6 +1341,11 @@ export interface components {
             /** Target Registry */
             target_registry: string;
         };
+        /**
+         * PublicationState
+         * @enum {string}
+         */
+        PublicationState: "PRIVATE_WORKING" | "REVIEWABLE" | "PUBLISHABLE" | "PUBLISHED" | "WITHDRAWN";
         /** PurityFinding */
         PurityFinding: {
             /** Dimension */
@@ -1344,12 +1359,19 @@ export interface components {
         };
         /** QualityProfileResponse */
         QualityProfileResponse: {
+            /** Available */
+            available: boolean;
+            /**
+             * Source
+             * @enum {string}
+             */
+            source: "PERSISTED_QUALITY_PROFILE" | "DERIVED_METHODOLOGICAL_PURITY_ONLY";
             /** Id */
-            id: string;
+            id?: string | null;
             /** Claim Id */
             claim_id: string;
             /** Purity Score */
-            purity_score: number;
+            purity_score?: number | null;
             /**
              * Purity Rating
              * @default PURE
@@ -1361,29 +1383,26 @@ export interface components {
              */
             purity_findings: components["schemas"]["PurityFinding"][];
             /** Synthetic Data Leak */
-            synthetic_data_leak: boolean;
+            synthetic_data_leak?: boolean | null;
             /** External Data Leak */
-            external_data_leak: boolean;
+            external_data_leak?: boolean | null;
             /** Corpus Coverage */
-            corpus_coverage: number;
+            corpus_coverage?: number | null;
             /** Deep Analysis Coverage */
-            deep_analysis_coverage: number;
+            deep_analysis_coverage?: number | null;
             /** Reproducibility Score */
-            reproducibility_score: number;
+            reproducibility_score?: number | null;
             /** Unresolved Conflict Burden */
-            unresolved_conflict_burden: number;
+            unresolved_conflict_burden?: number | null;
             /**
              * Methodological Purity Flags
              * @default []
              */
             methodological_purity_flags: string[];
             /** Evaluation Summary */
-            evaluation_summary: string;
-            /**
-             * Created At
-             * Format: date-time
-             */
-            created_at: string;
+            evaluation_summary?: string | null;
+            /** Created At */
+            created_at?: string | null;
         };
         /** RejectionCondition */
         RejectionCondition: {
@@ -1480,8 +1499,11 @@ export interface components {
         ReviewDecisionCreate: {
             /** Reviewer Identity */
             reviewer_identity: string;
-            /** Decision */
-            decision: string;
+            /**
+             * Decision
+             * @enum {string}
+             */
+            decision: "APPROVED" | "REJECTED";
             /** Rationale */
             rationale?: string | null;
         };
@@ -1489,8 +1511,11 @@ export interface components {
         ReviewDecisionResponse: {
             /** Reviewer Identity */
             reviewer_identity: string;
-            /** Decision */
-            decision: string;
+            /**
+             * Decision
+             * @enum {string}
+             */
+            decision: "APPROVED" | "REJECTED";
             /** Rationale */
             rationale?: string | null;
             /** Id */
@@ -1505,6 +1530,11 @@ export interface components {
              */
             created_at: string;
         };
+        /**
+         * ReviewState
+         * @enum {string}
+         */
+        ReviewState: "NOT_REVIEWED" | "REVIEW_REQUIRED" | "IN_REVIEW" | "APPROVED" | "REJECTED" | "OWNER_DECISION_REQUIRED";
         /** RuleHistoryResponse */
         RuleHistoryResponse: {
             /** Rule Code */
@@ -1603,26 +1633,14 @@ export interface components {
         SemanticClaimCreate: {
             /** Contract Type */
             contract_type: string;
-            /**
-             * Epistemic State
-             * @default UNRESOLVED
-             */
-            epistemic_state: string;
-            /**
-             * Review State
-             * @default NOT_REVIEWED
-             */
-            review_state: string;
-            /**
-             * Freshness State
-             * @default CURRENT
-             */
-            freshness_state: string;
-            /**
-             * Publication State
-             * @default PRIVATE_WORKING
-             */
-            publication_state: string;
+            /** @default UNRESOLVED */
+            epistemic_state: components["schemas"]["EpistemicState"];
+            /** @default NOT_REVIEWED */
+            review_state: components["schemas"]["ReviewState"];
+            /** @default CURRENT */
+            freshness_state: components["schemas"]["FreshnessState"];
+            /** @default PRIVATE_WORKING */
+            publication_state: components["schemas"]["PublicationState"];
             /**
              * Revision Id
              * @default 1
@@ -1661,26 +1679,14 @@ export interface components {
         SemanticClaimResponse: {
             /** Contract Type */
             contract_type: string;
-            /**
-             * Epistemic State
-             * @default UNRESOLVED
-             */
-            epistemic_state: string;
-            /**
-             * Review State
-             * @default NOT_REVIEWED
-             */
-            review_state: string;
-            /**
-             * Freshness State
-             * @default CURRENT
-             */
-            freshness_state: string;
-            /**
-             * Publication State
-             * @default PRIVATE_WORKING
-             */
-            publication_state: string;
+            /** @default UNRESOLVED */
+            epistemic_state: components["schemas"]["EpistemicState"];
+            /** @default NOT_REVIEWED */
+            review_state: components["schemas"]["ReviewState"];
+            /** @default CURRENT */
+            freshness_state: components["schemas"]["FreshnessState"];
+            /** @default PRIVATE_WORKING */
+            publication_state: components["schemas"]["PublicationState"];
             /**
              * Revision Id
              * @default 1

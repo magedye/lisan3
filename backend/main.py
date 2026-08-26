@@ -199,7 +199,6 @@ def get_attention_center(db: Session = Depends(get_db)):
                     "REVIEW_REQUIRED",
                     "IN_REVIEW",
                     "OWNER_DECISION_REQUIRED",
-                    "PENDING_REVIEW",
                 ]
             )
         )
@@ -598,16 +597,19 @@ def create_claim(
         research_run_id=run_id,
         contract_type=claim.contract_type,
         epistemic_state="LOCK_INTERNAL_RESULT",  # Since it passed internal lock
-        review_state="PENDING_REVIEW",
+        review_state=models.ReviewState.NOT_REVIEWED.value,
         freshness_state="CURRENT",
-        publication_state="UNPUBLISHED",
+        publication_state=models.PublicationState.PRIVATE_WORKING.value,
         index_coverage=claim.index_coverage,
         deep_analysis_coverage=claim.deep_analysis_coverage,
         abstract_root_core=claim.abstract_root_core,
         root_definition=claim.root_definition,
-        core_conceptual_domain=claim.core_conceptual_domain,
-        boundary_distinctions=claim.boundary_distinctions,
-        contextual_adaptations=claim.contextual_adaptations,
+        root_meaning=claim.root_meaning,
+        root_concept=claim.root_concept,
+        rejection_condition=claim.rejection_condition,
+        supporting_evidence=claim.supporting_evidence,
+        counterevidence=claim.counterevidence,
+        unresolved_cases=claim.unresolved_cases,
     )
     db.add(db_claim)
     db.add(
@@ -667,7 +669,6 @@ def submit_review_decision(
         claim.review_state = "APPROVED"
     elif review.decision == "REJECTED":
         claim.review_state = "REJECTED"
-        claim.publication_state = "BLOCKED"
 
     db.commit()
     db.refresh(db_review)
@@ -798,7 +799,6 @@ def get_governance_overview(db: Session = Depends(get_db)):
                     "REVIEW_REQUIRED",
                     "IN_REVIEW",
                     "OWNER_DECISION_REQUIRED",
-                    "PENDING_REVIEW",
                 ]
             )
         )
@@ -1183,42 +1183,44 @@ def get_claim_quality(claim_id: str, db: Session = Depends(get_db)):
     )
 
     purity_score, rating, findings, flags = evaluate_methodological_purity(claim, db)
-    is_synthetic_leak = "test" in (claim.contract_type or "").lower()
-
     summary = (
         f"Purity evaluated as {rating} across 8 canonical dimensions "
         "(UX Constitution v4.0 §6.4)."
     )
     if profile:
-        stored = schemas.QualityProfileResponse.model_validate(
-            profile, from_attributes=True
-        )
-        return stored.model_copy(
-            update={
-                "purity_score": purity_score,
-                "purity_rating": rating,
-                "purity_findings": findings,
-                "methodological_purity_flags": flags,
-                "evaluation_summary": summary,
-            }
+        return schemas.QualityProfileResponse(
+            available=True,
+            source="PERSISTED_QUALITY_PROFILE",
+            id=profile.id,
+            claim_id=profile.claim_id,
+            purity_score=profile.purity_score,
+            purity_rating=profile.purity_rating,
+            purity_findings=profile.purity_findings or [],
+            synthetic_data_leak=profile.synthetic_data_leak,
+            external_data_leak=profile.external_data_leak,
+            corpus_coverage=profile.corpus_coverage,
+            deep_analysis_coverage=profile.deep_analysis_coverage,
+            reproducibility_score=profile.reproducibility_score,
+            unresolved_conflict_burden=profile.unresolved_conflict_burden,
+            methodological_purity_flags=profile.methodological_purity_flags or [],
+            evaluation_summary=profile.evaluation_summary,
+            created_at=profile.created_at,
         )
 
-    # GET remains a read: derive an unpersisted profile when no governed profile
-    # has been stored. This also makes concurrent React development reads safe.
+    # The purity calculation is deterministic and explicitly identified as the
+    # only derived portion. Missing QualityProfile metrics remain unavailable.
     return schemas.QualityProfileResponse(
-        id=f"derived:{claim_id}",
+        available=False,
+        source="DERIVED_METHODOLOGICAL_PURITY_ONLY",
         claim_id=claim_id,
         purity_score=purity_score,
         purity_rating=rating,
         purity_findings=findings,
-        synthetic_data_leak=is_synthetic_leak,
-        external_data_leak=False,
-        corpus_coverage=90,
-        deep_analysis_coverage=70,
-        reproducibility_score=100,
-        unresolved_conflict_burden=0,
         methodological_purity_flags=flags,
-        evaluation_summary=summary,
+        evaluation_summary=(
+            summary
+            + " No persisted QualityProfile exists; all other quality metrics are unavailable."
+        ),
         created_at=datetime.now(timezone.utc),
     )
 

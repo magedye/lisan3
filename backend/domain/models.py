@@ -99,15 +99,44 @@ class ResearchRun(Base):
 
 class SemanticClaim(Base):
     __tablename__ = "semantic_claims"
+    __table_args__ = (
+        CheckConstraint(
+            "epistemic_state IN ('OBSERVATION', 'HYPOTHESIS', 'TESTED', "
+            "'SUPPORTED', 'LOCK_BLOCKED', 'LOCK_INTERNAL_RESULT', 'REJECTED', "
+            "'UNRESOLVED')",
+            name="ck_semantic_claim_epistemic_state",
+        ),
+        CheckConstraint(
+            "review_state IN ('NOT_REVIEWED', 'REVIEW_REQUIRED', 'IN_REVIEW', "
+            "'APPROVED', 'REJECTED', 'OWNER_DECISION_REQUIRED')",
+            name="ck_semantic_claim_review_state",
+        ),
+        CheckConstraint(
+            "freshness_state IN ('CURRENT', 'STALE', 'INVALIDATED', "
+            "'REVALIDATION_REQUIRED')",
+            name="ck_semantic_claim_freshness_state",
+        ),
+        CheckConstraint(
+            "publication_state IN ('PRIVATE_WORKING', 'REVIEWABLE', "
+            "'PUBLISHABLE', 'PUBLISHED', 'WITHDRAWN')",
+            name="ck_semantic_claim_publication_state",
+        ),
+    )
 
     id = Column(String, primary_key=True, index=True)
     research_run_id = Column(String, ForeignKey("research_runs.id"))
     contract_type = Column(String, nullable=False)
     # The 4 Canonical Independent Axes (UX Constitution v4.0 §5)
-    epistemic_state = Column(String, default=EpistemicState.UNRESOLVED.value)
-    review_state = Column(String, default=ReviewState.NOT_REVIEWED.value)
-    freshness_state = Column(String, default=FreshnessState.CURRENT.value)
-    publication_state = Column(String, default=PublicationState.PRIVATE_WORKING.value)
+    epistemic_state = Column(
+        String, nullable=False, default=EpistemicState.UNRESOLVED.value
+    )
+    review_state = Column(String, nullable=False, default=ReviewState.NOT_REVIEWED.value)
+    freshness_state = Column(
+        String, nullable=False, default=FreshnessState.CURRENT.value
+    )
+    publication_state = Column(
+        String, nullable=False, default=PublicationState.PRIVATE_WORKING.value
+    )
 
     revision_id = Column(Integer, default=1)
 

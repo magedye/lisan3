@@ -3911,6 +3911,20 @@
         ],
         "title": "DependencyRecordResponse"
       },
+      "EpistemicState": {
+        "type": "string",
+        "enum": [
+          "OBSERVATION",
+          "HYPOTHESIS",
+          "TESTED",
+          "SUPPORTED",
+          "LOCK_BLOCKED",
+          "LOCK_INTERNAL_RESULT",
+          "REJECTED",
+          "UNRESOLVED"
+        ],
+        "title": "EpistemicState"
+      },
       "ErrorResponse": {
         "properties": {
           "status": {
@@ -4076,6 +4090,16 @@
           "created_at"
         ],
         "title": "EssentialNeighborResponse"
+      },
+      "FreshnessState": {
+        "type": "string",
+        "enum": [
+          "CURRENT",
+          "STALE",
+          "INVALIDATED",
+          "REVALIDATION_REQUIRED"
+        ],
+        "title": "FreshnessState"
       },
       "GateReportCreate": {
         "properties": {
@@ -5004,6 +5028,17 @@
         ],
         "title": "PublicationRequest"
       },
+      "PublicationState": {
+        "type": "string",
+        "enum": [
+          "PRIVATE_WORKING",
+          "REVIEWABLE",
+          "PUBLISHABLE",
+          "PUBLISHED",
+          "WITHDRAWN"
+        ],
+        "title": "PublicationState"
+      },
       "PurityFinding": {
         "properties": {
           "dimension": {
@@ -5034,8 +5069,27 @@
       },
       "QualityProfileResponse": {
         "properties": {
-          "id": {
+          "available": {
+            "type": "boolean",
+            "title": "Available"
+          },
+          "source": {
             "type": "string",
+            "enum": [
+              "PERSISTED_QUALITY_PROFILE",
+              "DERIVED_METHODOLOGICAL_PURITY_ONLY"
+            ],
+            "title": "Source"
+          },
+          "id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
             "title": "Id"
           },
           "claim_id": {
@@ -5043,7 +5097,14 @@
             "title": "Claim Id"
           },
           "purity_score": {
-            "type": "integer",
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
             "title": "Purity Score"
           },
           "purity_rating": {
@@ -5060,27 +5121,69 @@
             "default": []
           },
           "synthetic_data_leak": {
-            "type": "boolean",
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
             "title": "Synthetic Data Leak"
           },
           "external_data_leak": {
-            "type": "boolean",
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
             "title": "External Data Leak"
           },
           "corpus_coverage": {
-            "type": "integer",
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
             "title": "Corpus Coverage"
           },
           "deep_analysis_coverage": {
-            "type": "integer",
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
             "title": "Deep Analysis Coverage"
           },
           "reproducibility_score": {
-            "type": "integer",
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
             "title": "Reproducibility Score"
           },
           "unresolved_conflict_burden": {
-            "type": "integer",
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
             "title": "Unresolved Conflict Burden"
           },
           "methodological_purity_flags": {
@@ -5092,28 +5195,34 @@
             "default": []
           },
           "evaluation_summary": {
-            "type": "string",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
             "title": "Evaluation Summary"
           },
           "created_at": {
-            "type": "string",
-            "format": "date-time",
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
             "title": "Created At"
           }
         },
         "type": "object",
         "required": [
-          "id",
-          "claim_id",
-          "purity_score",
-          "synthetic_data_leak",
-          "external_data_leak",
-          "corpus_coverage",
-          "deep_analysis_coverage",
-          "reproducibility_score",
-          "unresolved_conflict_burden",
-          "evaluation_summary",
-          "created_at"
+          "available",
+          "source",
+          "claim_id"
         ],
         "title": "QualityProfileResponse"
       },
@@ -5334,6 +5443,10 @@
           },
           "decision": {
             "type": "string",
+            "enum": [
+              "APPROVED",
+              "REJECTED"
+            ],
             "title": "Decision"
           },
           "rationale": {
@@ -5363,6 +5476,10 @@
           },
           "decision": {
             "type": "string",
+            "enum": [
+              "APPROVED",
+              "REJECTED"
+            ],
             "title": "Decision"
           },
           "rationale": {
@@ -5404,6 +5521,18 @@
           "created_at"
         ],
         "title": "ReviewDecisionResponse"
+      },
+      "ReviewState": {
+        "type": "string",
+        "enum": [
+          "NOT_REVIEWED",
+          "REVIEW_REQUIRED",
+          "IN_REVIEW",
+          "APPROVED",
+          "REJECTED",
+          "OWNER_DECISION_REQUIRED"
+        ],
+        "title": "ReviewState"
       },
       "RuleHistoryResponse": {
         "properties": {
@@ -5620,23 +5749,19 @@
             "title": "Contract Type"
           },
           "epistemic_state": {
-            "type": "string",
-            "title": "Epistemic State",
+            "$ref": "#/components/schemas/EpistemicState",
             "default": "UNRESOLVED"
           },
           "review_state": {
-            "type": "string",
-            "title": "Review State",
+            "$ref": "#/components/schemas/ReviewState",
             "default": "NOT_REVIEWED"
           },
           "freshness_state": {
-            "type": "string",
-            "title": "Freshness State",
+            "$ref": "#/components/schemas/FreshnessState",
             "default": "CURRENT"
           },
           "publication_state": {
-            "type": "string",
-            "title": "Publication State",
+            "$ref": "#/components/schemas/PublicationState",
             "default": "PRIVATE_WORKING"
           },
           "revision_id": {
@@ -5776,23 +5901,19 @@
             "title": "Contract Type"
           },
           "epistemic_state": {
-            "type": "string",
-            "title": "Epistemic State",
+            "$ref": "#/components/schemas/EpistemicState",
             "default": "UNRESOLVED"
           },
           "review_state": {
-            "type": "string",
-            "title": "Review State",
+            "$ref": "#/components/schemas/ReviewState",
             "default": "NOT_REVIEWED"
           },
           "freshness_state": {
-            "type": "string",
-            "title": "Freshness State",
+            "$ref": "#/components/schemas/FreshnessState",
             "default": "CURRENT"
           },
           "publication_state": {
-            "type": "string",
-            "title": "Publication State",
+            "$ref": "#/components/schemas/PublicationState",
             "default": "PRIVATE_WORKING"
           },
           "revision_id": {

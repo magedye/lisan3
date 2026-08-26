@@ -1,8 +1,10 @@
 from datetime import datetime, timezone
 from enum import Enum
-from typing import Any
+from typing import Any, Literal
 
 from pydantic import BaseModel, ConfigDict, field_validator
+
+from .models import EpistemicState, FreshnessState, PublicationState, ReviewState
 
 
 class BaseSchema(BaseModel):
@@ -62,10 +64,10 @@ class ResearchRunResponse(ResearchRunBase):
 class SemanticClaimBase(BaseSchema):
     contract_type: str
     # The 4 Canonical Independent Axes (UX Constitution v4.0 §5)
-    epistemic_state: str = "UNRESOLVED"
-    review_state: str = "NOT_REVIEWED"
-    freshness_state: str = "CURRENT"
-    publication_state: str = "PRIVATE_WORKING"
+    epistemic_state: EpistemicState = EpistemicState.UNRESOLVED
+    review_state: ReviewState = ReviewState.NOT_REVIEWED
+    freshness_state: FreshnessState = FreshnessState.CURRENT
+    publication_state: PublicationState = PublicationState.PRIVATE_WORKING
     revision_id: int = 1
     index_coverage: str | None = None
     deep_analysis_coverage: str | None = None
@@ -93,7 +95,7 @@ class SemanticClaimResponse(SemanticClaimBase):
 
 class ReviewDecisionBase(BaseSchema):
     reviewer_identity: str
-    decision: str
+    decision: Literal["APPROVED", "REJECTED"]
     rationale: str | None = None
 
 
@@ -521,20 +523,24 @@ class PurityFinding(BaseSchema):
 
 
 class QualityProfileResponse(BaseSchema):
-    id: str
+    available: bool
+    source: Literal[
+        "PERSISTED_QUALITY_PROFILE", "DERIVED_METHODOLOGICAL_PURITY_ONLY"
+    ]
+    id: str | None = None
     claim_id: str
-    purity_score: int
+    purity_score: int | None = None
     purity_rating: str = "PURE"  # PURE, NEAR_PURE, SUSPICIOUS, CONTAMINATED
     purity_findings: list[PurityFinding] = []
-    synthetic_data_leak: bool
-    external_data_leak: bool
-    corpus_coverage: int
-    deep_analysis_coverage: int
-    reproducibility_score: int
-    unresolved_conflict_burden: int
+    synthetic_data_leak: bool | None = None
+    external_data_leak: bool | None = None
+    corpus_coverage: int | None = None
+    deep_analysis_coverage: int | None = None
+    reproducibility_score: int | None = None
+    unresolved_conflict_burden: int | None = None
     methodological_purity_flags: list[str] = []
-    evaluation_summary: str
-    created_at: datetime
+    evaluation_summary: str | None = None
+    created_at: datetime | None = None
 
     model_config = ConfigDict(from_attributes=True)
 

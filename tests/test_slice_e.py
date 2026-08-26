@@ -87,9 +87,9 @@ def setup_governance(test_db):
         research_run_id=run_id,
         contract_type="test",
         epistemic_state="LOCK_INTERNAL_RESULT",
-        review_state="PENDING_REVIEW",
+        review_state="REVIEW_REQUIRED",
         freshness_state="CURRENT",
-        publication_state="UNPUBLISHED",
+        publication_state="PRIVATE_WORKING",
     )
     test_db.add(claim)
 
@@ -177,9 +177,9 @@ def test_rule_mutation_scope(test_db, setup_governance):
             research_run_id=run_id,
             contract_type="t",
             epistemic_state="LOCK_INTERNAL_RESULT",
-            review_state="PENDING_REVIEW",
+            review_state="REVIEW_REQUIRED",
             freshness_state="CURRENT",
-            publication_state="UNPUBLISHED",
+            publication_state="PRIVATE_WORKING",
         )
     )
     test_db.add(

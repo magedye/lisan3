@@ -90,9 +90,9 @@ def setup_claim(test_db):
         research_run_id=run_id,
         contract_type="test",
         epistemic_state="LOCK_INTERNAL_RESULT",
-        review_state="PENDING_REVIEW",
+        review_state="REVIEW_REQUIRED",
         freshness_state="CURRENT",
-        publication_state="UNPUBLISHED",
+        publication_state="PRIVATE_WORKING",
     )
     test_db.add(claim)
     test_db.commit()
@@ -111,7 +111,7 @@ def test_publish_unapproved_claim_fails(setup_claim):
 
     assert res.status_code == 403
     assert (
-        "Claim review state is 'PENDING_REVIEW', expected 'APPROVED'"
+        "Claim review state is 'REVIEW_REQUIRED', expected 'APPROVED'"
         in res.json()["detail"]
     )
 
@@ -239,7 +239,7 @@ def test_reject_claim_blocks_publication(test_db, setup_claim):
         .first()
     )
     assert claim.review_state == "REJECTED"
-    assert claim.publication_state == "BLOCKED"
+    assert claim.publication_state == "PRIVATE_WORKING"
 
     # Publish
     res = client.post(

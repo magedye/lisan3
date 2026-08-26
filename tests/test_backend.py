@@ -107,7 +107,7 @@ def test_slice_a_end_to_end():
     assert response.status_code == 200
     assert response.json()["status"] == "INSUFFICIENT_EVIDENCE"
 
-    # 2. Create Research Run
+    # 2. Run creation fails closed because neither arbitrary identifier is authority.
     response = client.post(
         "/runs",
         json={
@@ -118,23 +118,14 @@ def test_slice_a_end_to_end():
             "authority_context": {"initiator": "local_user"},
         },
     )
-    assert response.status_code == 200
-    run_data = response.json()
-    assert run_data["target_expression"] == "ضرب"
-    assert "id" in run_data
-    run_id = run_data["id"]
-
-    # 3. Retrieve Durable Checkpoint
-    response = client.get(f"/runs/{run_id}")
-    assert response.status_code == 200
-    retrieved = response.json()
-    assert retrieved["id"] == run_id
-    assert retrieved["current_stage"] == "PREFLIGHT"
+    assert response.status_code == 422
+    assert "CorpusSnapshot 'current' does not exist" in response.json()["detail"]
+    assert db.query(models.ResearchRun).count() == 0
 
     db.close()
 
 
-def test_ask_found_claim_returns_all_four_status_axes():
+def test_ask_found_claim_returns_all_four_status_axes(monkeypatch):
     db = TestingSessionLocal()
     db.query(models.SemanticClaim).delete()
     db.query(models.ResearchRun).delete()
@@ -157,10 +148,22 @@ def test_ask_found_claim_returns_all_four_status_axes():
                 freshness_state="REVALIDATION_REQUIRED",
                 publication_state="PRIVATE_WORKING",
             ),
+            models.IsolationState(
+                id="isolation_found_axes",
+                research_run_id="run_found_axes",
+                target_contract="ROOT_CORE",
+                corpus_snapshot="snap_found_axes",
+                methodology_reference="v4.0",
+                allowed_sources=["QURAN_CORPUS"],
+                is_contaminated="CLEAN",
+            ),
         ]
     )
     db.commit()
     db.close()
+    monkeypatch.setattr(
+        "backend.domain.services.claim_visibility.has_valid_gate", lambda *_args: True
+    )
 
     response = client.post(
         "/ask", json={"expression": "نور", "contract_type": "ROOT_CORE"}

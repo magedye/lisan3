@@ -50,6 +50,7 @@ def test_db():
         yield db
     finally:
         db.close()
+        app.dependency_overrides.pop(get_db, None)
 
 
 @pytest.fixture

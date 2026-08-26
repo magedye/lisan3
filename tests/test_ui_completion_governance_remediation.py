@@ -3,6 +3,7 @@ import uuid
 import pytest
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
+from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 
@@ -233,3 +234,119 @@ def test_forbidden_steward_command_records_only_actual_rejection(test_db):
     )
     assert audit.action == "REJECT_AUTHORITY_BOUNDARY"
     assert audit.new_state == "REJECTED"
+
+
+def test_claim_creation_and_review_persist_only_independent_canonical_axes(
+    test_db, monkeypatch
+):
+    run, existing_claim, _ = _seed_unreleased_claim(test_db)
+    monkeypatch.setattr("backend.main.has_valid_gate", lambda *_args: True)
+
+    created = client.post(
+        f"/runs/{run.id}/claims",
+        json={"contract_type": "ROOT_CORE", "research_run_id": run.id},
+    )
+    assert created.status_code == 200
+    assert {
+        axis: created.json()[axis]
+        for axis in (
+            "epistemic_state",
+            "review_state",
+            "freshness_state",
+            "publication_state",
+        )
+    } == {
+        "epistemic_state": "LOCK_INTERNAL_RESULT",
+        "review_state": "NOT_REVIEWED",
+        "freshness_state": "CURRENT",
+        "publication_state": "PRIVATE_WORKING",
+    }
+
+    publication_before = existing_claim.publication_state
+    rejected = client.post(
+        f"/claims/{existing_claim.id}/reviews",
+        json={
+            "reviewer_identity": "reviewer",
+            "decision": "REJECTED",
+            "rationale": "adversarial regression",
+        },
+    )
+    assert rejected.status_code == 200
+    test_db.refresh(existing_claim)
+    assert existing_claim.review_state == "REJECTED"
+    assert existing_claim.publication_state == publication_before
+
+
+def test_database_rejects_noncanonical_claim_axis_values(test_db):
+    test_db.add(
+        models.SemanticClaim(
+            id="claim_invalid_axis",
+            contract_type="ROOT_CORE",
+            epistemic_state="UNRESOLVED",
+            review_state="PENDING_REVIEW",
+            freshness_state="CURRENT",
+            publication_state="UNPUBLISHED",
+        )
+    )
+    with pytest.raises(IntegrityError):
+        test_db.commit()
+    test_db.rollback()
+
+
+def test_missing_quality_profile_never_manufactures_quality_metrics(
+    test_db, monkeypatch
+):
+    _, claim, _ = _seed_unreleased_claim(test_db)
+    monkeypatch.setattr(
+        "backend.domain.services.claim_visibility.has_valid_gate", lambda *_args: True
+    )
+
+    response = client.get(f"/claims/{claim.id}/quality")
+    assert response.status_code == 200
+    data = response.json()
+    assert data["available"] is False
+    assert data["source"] == "DERIVED_METHODOLOGICAL_PURITY_ONLY"
+    assert data["corpus_coverage"] is None
+    assert data["deep_analysis_coverage"] is None
+    assert data["reproducibility_score"] is None
+    assert data["unresolved_conflict_burden"] is None
+    assert data["synthetic_data_leak"] is None
+    assert data["external_data_leak"] is None
+    assert test_db.query(models.QualityProfile).count() == 0
+
+
+def test_stored_quality_profile_is_returned_without_overwriting_metrics(
+    test_db, monkeypatch
+):
+    _, claim, _ = _seed_unreleased_claim(test_db)
+    monkeypatch.setattr(
+        "backend.domain.services.claim_visibility.has_valid_gate", lambda *_args: True
+    )
+    test_db.add(
+        models.QualityProfile(
+            id="quality_stored",
+            claim_id=claim.id,
+            purity_score=41,
+            purity_rating="SUSPICIOUS",
+            purity_findings=[],
+            synthetic_data_leak=True,
+            external_data_leak=False,
+            corpus_coverage=23,
+            deep_analysis_coverage=34,
+            reproducibility_score=45,
+            unresolved_conflict_burden=56,
+            methodological_purity_flags=["stored-flag"],
+            evaluation_summary="Stored governed evaluation",
+        )
+    )
+    test_db.commit()
+
+    response = client.get(f"/claims/{claim.id}/quality")
+    assert response.status_code == 200
+    data = response.json()
+    assert data["available"] is True
+    assert data["source"] == "PERSISTED_QUALITY_PROFILE"
+    assert data["purity_score"] == 41
+    assert data["corpus_coverage"] == 23
+    assert data["deep_analysis_coverage"] == 34
+    assert data["reproducibility_score"] == 45
