@@ -93,7 +93,10 @@ No implementation thread claim may grant independent confirmation or release acc
 ## Unresolved Independent Status Axes
 
 - AI profile: governed exploratory runtime only; fake/test-provider execution remains test evidence, not live-AI or methodology-eval verification.
-- Corpus authority: no authority-bound expected canonical hash or production activation is currently evidenced for Tanzil/QAC; fixture/imported snapshots remain unverified and cannot enter production canonical knowledge.
+- Corpus authority: Tanzil 1.1 now has an authority-bound artifact/hash,
+  validated real-format import, and a non-fixture persisted pre-activation
+  snapshot. Production activation is not granted. QAC artifact verification and
+  real-format import remain pending and separate.
 - Promptfoo: `CONFIGURED_NOT_EXECUTABLE` (configuration exists; CLI and referenced runner are absent).
 - pip-audit: `NOT_CONFIGURED_NOT_EXECUTED`.
 - accessibility/axe profile: `NOT_CONFIGURED_NOT_EXECUTED`.
@@ -370,7 +373,10 @@ No implementation thread claim may grant independent confirmation or release acc
 - The administrative documentation commit that records this verdict is not
   independently reviewed for product behavior.
 
-## Corpus and Methodology Authority Checkpoint
+## Prior Corpus and Methodology Authority Checkpoint (Superseded for Tanzil)
+
+This records the pre-admission checkpoint. The newer Tanzil pre-activation
+checkpoint below supersedes its zero-snapshot and unbound-hash statements.
 
 - Starting HEAD: `28d355653a915016b179e223852f2b978dc44605`;
   implementation candidate:
@@ -411,11 +417,55 @@ No implementation thread claim may grant independent confirmation or release acc
   release, push, or external repository mutation was performed. Owner artifacts
   `.hermes/`, `check_db2.py`, and `debug_proxy.py` remain untouched.
 
+## Tanzil Governed Pre-Activation Checkpoint
+
+- Task starting HEAD:
+  `29e5e1a75df6ee5c2a7d797b915a29cf512ab798`.
+- Final implementation candidate:
+  `69d0a27b2a2ca99d8c62dcf6344f42de51c17175`.
+- Coherent implementation lineage:
+  `eafa60f4666a334ed9ac85061548166277b67790`,
+  `3da42df9d3d89d0d52e7cba18602d5834c26a2d5`, and the final candidate above.
+- LISAN3 authority binds Tanzil Uthmani 1.1 at 1,334,737 bytes and SHA-256
+  `ac0724796cbbda0f4801470fbbd11d0f3c5802067bae0493466d0128b0c667af`.
+  The strict UTF-8/LF artifact is preserved without normalization.
+- The authority-bound identity index reconciles 114 surahs and exactly 6,236
+  unique, complete, ordered verse identities to exact physical artifact lines.
+- Live snapshot `snap_tanzil_1_1_ac0724796cbb` records
+  `SOURCE_ROLE_APPROVED`, `ARTIFACT_PRESENT`, `HASH_VERIFIED`, and
+  `IMPORT_VALIDATED`; `validation_status=PENDING` and
+  `activation_status=CANONICAL_ACTIVATION_PENDING` remain deliberate.
+- The live snapshot has exactly 6,236 deterministic non-fixture occurrences.
+  Exact re-import reused the snapshot and created no competing rows.
+- External CANON-001 reconciliation is limited to
+  `CANON_001_ARTIFACT_IDENTITY_MATCH_CONFIRMED`; no external governance state
+  or activation was imported.
+- Live Alembic head is `c4d8b7e2a913`. Live `POST /runs` returned HTTP 503
+  for the pre-activation snapshot and left the ResearchRun count at zero.
+- Final exact-SHA clean verification passed 35 affected tests, all tracked
+  Python Ruff checks, Pyright with 0 errors and 177 warnings, `pip check`, fresh
+  migration plus `alembic check`, artifact/index hashes, `git diff --check`,
+  and clean candidate status. The first detached Pyright invocation was an
+  environment defect because that worktree had no local `.venv`; binding
+  Pyright to the repository interpreter resolved imports and passed.
+- The Tanzil artifact/provenance/hash/import part of the requalification Corpus
+  blocker is resolved. Production-active Corpus authority remains blocked, and
+  pilot/remaining-batches authorization remains separate. No requalification
+  batch was started and `DO_NOT_START_REMAINING_BATCHES` was not changed.
+- QAC remains an auxiliary morphology/syntax candidate with semantic, gloss,
+  and ontology fields excluded from semantic authority. Its real TSV importer
+  remains future work and was not made a Tanzil dependency.
+- Durable decision evidence:
+  `docs/evidence/corpus/TANZIL_PRE_ACTIVATION_DECISION_EVIDENCE.md`.
+- `PRODUCTION_ACTIVATION_NOT_GRANTED`. No production activation, model work,
+  R2 completion, R3, V4, release, push, or LQE repository mutation occurred.
+- Owner-untracked `.hermes/`, `check_db2.py`, and `debug_proxy.py` remain
+  present and untouched.
+
 ## Exact Next Action
 
-Await separate owner authorization for a bounded LISAN3 Corpus admission slice:
-bind the exact Tanzil Uthmani 1.1 artifact and expected hash under LISAN3
-authority, implement and validate the real one-verse-per-line import, reconcile
-6,236 verse identities, and obtain an explicit production-activation decision.
-Do not infer authority for requalification batches, UI Completion, model work,
-R2/R3, V4, or release.
+Owner reviews the pre-activation evidence and makes a separate explicit Tanzil
+production-activation decision. If authorized, implement only the governed
+activation transition and independently verify Run admission against its exact
+candidate. Do not infer authorization for semantic requalification batches,
+QAC import, model work, R2/R3, V4, or release.
