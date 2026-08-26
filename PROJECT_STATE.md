@@ -6,10 +6,16 @@ State context only. Canonical repository contracts and runtime evidence remain a
 
 - Root: `D:\APP\tafseer\lisanapp3`
 - Branch: `main`
-- UI completion implementation candidate: `4a6ef34be5fd0916b9285deba96a27507bafac30`
-- UI completion state: implementation-side `IMPLEMENTED`, `TESTED`, and
-  `VERIFIED_FOR_PROFILE` for the UI Completion profile; independent UI review
-  is not established
+- UI governance-remediation implementation candidate:
+  `43c27e6dd2393d24be21805b4b2ea42b78d15955`
+- UI completion state: implementation-side `IMPLEMENTED`, `TESTED`,
+  `VERIFIED_FOR_PROFILE`, and `AWAITING_INDEPENDENT_UI_REVIEW` for the five
+  governance/data-integrity blockers. Independent review is not established
+  for this remediation candidate.
+- Prior UI completion candidate `4a6ef34be5fd0916b9285deba96a27507bafac30`
+  received the independent verdict `UI_COMPLETION_INDEPENDENT_REVIEW_FAILED`;
+  documentation checkpoint `e0238aea767a8314463c4734a3d48c3a191e4850`
+  records that pre-remediation state.
 - R1 remediation baseline: `8a4a8884ac9b3ce353ed00c0948cf878ff8daa40`
 - V3 remediation implementation commit: `1deab3251ac1dc53ef772d10f99c9fd32284e557`
 - Independently reviewed V3 candidate: `6bb6505484dd649d092032a36d456f9f7fba5da1`
@@ -298,10 +304,47 @@ No implementation thread claim may grant independent confirmation or release acc
 - No model work, production vector activation, EvidenceResolver, R3, V4,
   release action, or push was performed.
 
+## UI Governance and Data-Integrity Remediation Checkpoint
+
+- Starting checkpoint: `e0238aea767a8314463c4734a3d48c3a191e4850`;
+  remediated implementation candidate:
+  `43c27e6dd2393d24be21805b4b2ea42b78d15955`.
+- One `ClaimReleasePolicy` now governs Ask, direct claim, provenance,
+  reproduction, quality, history, legacy Explorer, aggregate projections,
+  audit reads, workspace claims, and R1 graph projection/read. It derives
+  release from an existing linked run, `CLEAN` isolation, and a dynamically
+  valid current Internal Lock.
+- `/ask` returns `INSUFFICIENT_EVIDENCE` before release and the governed claim
+  only after release. Unique semantic, evidence, and audit markers are covered
+  by negative and positive production-path regressions.
+- `POST /runs` now rejects unknown snapshots and fails closed while canonical
+  Corpus activation and a Methodology registry/fallback are unavailable. The
+  UI exposes that unavailable state and offers no free-text authority inputs.
+- No Steward command is currently registered as executable. Arbitrary input is
+  persisted/audited as `UNSUPPORTED`; authority-bypassing input is persisted
+  and audited as `REJECTED`; no fixed rules, `PASS`, or fake `SUCCESS` remain.
+- SemanticClaim persistence and public schemas use only the four canonical
+  axes. Migration `d4f7a2c8e901` deterministically reconciles known legacy/null
+  values with before/after audit evidence, refuses unknown meaning, adds DB
+  constraints, and supports a tested downgrade. Review rejection no longer
+  mutates Publication.
+- A stored QualityProfile is returned unchanged. Without one, only the
+  deterministic methodological-purity derivation is identified as derived;
+  all other metrics are unavailable/null and the frontend says so.
+- Clean detached exact-SHA verification passed: full pytest 156, explicit
+  Playwright 8, Ruff, Pyright with 0 errors and 177 existing warnings, ESLint,
+  Next production build, OpenAPI/TypeScript regeneration parity, fresh
+  Alembic/model parity at `d4f7a2c8e901`, `pip check`, production npm audit
+  with 0 vulnerabilities, route smoke, and Git diff/status checks.
+- The non-blocking Governance ARIA tab pattern was not touched and remains a
+  separate UI-quality follow-up. No model integration, production vector,
+  R2/R3, V4, release, push, or `LISAN-Quran-Embedding` work was performed.
+- Durable evidence: `docs/LISAN3_UI_GOVERNANCE_REMEDIATION_CHECKPOINT.md`.
+
 ## Exact Next Action
 
-Request one fresh, independent, read-only Sol review of the UI implementation
-candidate and its direct documentation-only checkpoint. Bind every conclusion
-to the exact SHAs, actively test the completion claim against the canonical
-authority and 28-screen matrix, and do not remediate or begin model/R2/R3/V4
-work in that review context.
+Request one fresh, independent, read-only review of remediation candidate
+`43c27e6dd2393d24be21805b4b2ea42b78d15955` and its direct
+documentation-only checkpoint. Bind every conclusion to those exact SHAs,
+actively rerun the five governance/data-integrity counterexamples, and do not
+remediate or begin model/R2/R3/V4 work in that review context.
