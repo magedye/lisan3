@@ -8,10 +8,12 @@ State context only. Canonical repository contracts and runtime evidence remain a
 - Branch: `main`
 - UI governance-remediation implementation candidate:
   `43c27e6dd2393d24be21805b4b2ea42b78d15955`
-- UI completion state: implementation-side `IMPLEMENTED`, `TESTED`,
-  `VERIFIED_FOR_PROFILE`, and `AWAITING_INDEPENDENT_UI_REVIEW` for the five
-  governance/data-integrity blockers. Independent review is not established
-  for this remediation candidate.
+- UI completion state: `IMPLEMENTED`, `TESTED`, `VERIFIED_FOR_PROFILE`, and
+  `INDEPENDENTLY_REVIEWED` for the bounded UI Completion profile.
+- UI independent-review provenance: product-behavior conclusions are bound to
+  implementation candidate `43c27e6dd2393d24be21805b4b2ea42b78d15955`;
+  the reviewed documentation checkpoint is
+  `c3f1ffe1b44d632323ff706c2c83a91831e1c450`.
 - Prior UI completion candidate `4a6ef34be5fd0916b9285deba96a27507bafac30`
   received the independent verdict `UI_COMPLETION_INDEPENDENT_REVIEW_FAILED`;
   documentation checkpoint `e0238aea767a8314463c4734a3d48c3a191e4850`
@@ -22,12 +24,18 @@ State context only. Canonical repository contracts and runtime evidence remain a
 - V3 review provenance: fresh independent read-only review in a clean detached checkout of that exact SHA.
 - Independently reviewed R1 candidate: `a0d10d7fd5ff8845d3071b7e68f1500f92fd9563`
 - R1 review provenance: fresh focused independent read-only review in a clean detached checkout of that exact SHA.
-- This state record is post-review administrative history. Any later state-only commit does not replace or extend either independently reviewed candidate.
+- This state record is post-review administrative history. Its later
+  state-only commit is not independently reviewed for product behavior and
+  does not replace or extend any independently reviewed candidate.
 - Remote publication: not authorized and not performed
 - Owner-added untracked files are intentionally preserved and excluded from the candidate
 
 ## Gate State
 
+- UI Completion profile: `IMPLEMENTED`, `TESTED`, `VERIFIED_FOR_PROFILE`,
+  `INDEPENDENTLY_REVIEWED`
+- UI Completion independent review applies only to:
+  `43c27e6dd2393d24be21805b4b2ea42b78d15955`
 - V3 implementation state: `V3_REMEDIATED`
 - V3 independent state: `V3_INDEPENDENTLY_CONFIRMED`
 - V3 confirmation applies only to: `6bb6505484dd649d092032a36d456f9f7fba5da1`
@@ -43,6 +51,8 @@ State context only. Canonical repository contracts and runtime evidence remain a
   `TESTED` at `2449ac4db7102a0a62ae9622c6f668bb71602ef8`; independent review
   and complete R2 acceptance are not established
 - Production embedding model: not selected; evaluated models remain `NOT_ADOPTED`
+- Production vector retrieval: not established
+- R2 completion and independent confirmation: not established
 - R3: `NOT_STARTED`
 - `V4_COMPLETE`, `TECHNICALLY_RELEASE_READY`, and `RELEASE_ACCEPTED` are not established.
 
@@ -341,10 +351,26 @@ No implementation thread claim may grant independent confirmation or release acc
   R2/R3, V4, release, push, or `LISAN-Quran-Embedding` work was performed.
 - Durable evidence: `docs/LISAN3_UI_GOVERNANCE_REMEDIATION_CHECKPOINT.md`.
 
+## Independent UI Completion Review (Candidate-Bound)
+
+- Independent verdict: `INDEPENDENTLY_REVIEWED`, bound to implementation
+  candidate `43c27e6dd2393d24be21805b4b2ea42b78d15955` and reviewed documentation
+  checkpoint `c3f1ffe1b44d632323ff706c2c83a91831e1c450`.
+- The review confirmed closure of the claim-release/Blind Lab bypass, Steward
+  fabricated success, Run Builder invalid authority admission,
+  noncanonical/coupled status-axis behavior, and manufactured Quality metrics.
+  Detailed candidate-bound evidence remains in
+  `docs/LISAN3_UI_GOVERNANCE_REMEDIATION_CHECKPOINT.md`.
+- The Governance ARIA tab issue remains an optional, non-blocking UI-quality
+  follow-up and does not reopen the completed UI Completion profile.
+- This review does not establish `TECHNICALLY_RELEASE_READY`, `V4_COMPLETE`,
+  `RELEASE_ACCEPTED`, production embedding-model adoption, production vector
+  retrieval, R2 completion or confirmation, or R3 completion. Existing V3 and
+  R1 independent-review provenance and all other phase states remain unchanged.
+- The administrative documentation commit that records this verdict is not
+  independently reviewed for product behavior.
+
 ## Exact Next Action
 
-Request one fresh, independent, read-only review of remediation candidate
-`43c27e6dd2393d24be21805b4b2ea42b78d15955` and its direct
-documentation-only checkpoint. Bind every conclusion to those exact SHAs,
-actively rerun the five governance/data-integrity counterexamples, and do not
-remediate or begin model/R2/R3/V4 work in that review context.
+Await separate owner authorization for the next project workstream. Do not
+infer authority for model integration, R2, R3, V4, or release work.

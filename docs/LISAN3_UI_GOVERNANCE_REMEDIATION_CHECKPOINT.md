@@ -2,8 +2,8 @@
 
 Status date: 2026-08-26.
 
-This is implementation-side, candidate-bound evidence. It does not grant
-independent review, V4, technical release readiness, or release acceptance.
+This is candidate-bound implementation and independent-review evidence. It
+does not grant V4, technical release readiness, or release acceptance.
 
 ## Candidate and Scope
 
@@ -15,8 +15,11 @@ independent review, V4, technical release readiness, or release acceptance.
   `UI_COMPLETION_INDEPENDENT_REVIEW_FAILED`.
 - Exact remediation implementation candidate:
   `43c27e6dd2393d24be21805b4b2ea42b78d15955`.
-- Allowed candidate state: `IMPLEMENTED`, `TESTED`,
-  `VERIFIED_FOR_PROFILE`, `AWAITING_INDEPENDENT_UI_REVIEW`.
+- UI Completion profile state: `IMPLEMENTED`, `TESTED`,
+  `VERIFIED_FOR_PROFILE`, `INDEPENDENTLY_REVIEWED`.
+- Independent product-behavior review applies only to remediation candidate
+  `43c27e6dd2393d24be21805b4b2ea42b78d15955`. Its reviewed documentation
+  checkpoint is `c3f1ffe1b44d632323ff706c2c83a91831e1c450`.
 
 The work is limited to the five blocking governance/data-integrity findings.
 No UI redesign, model integration, production vector activation, R2, R3, V4,
@@ -117,17 +120,30 @@ resources; unknown/unadmitted runs cannot persist; arbitrary Steward commands
 cannot claim success; noncanonical axes cannot persist or cross-mutate; and a
 missing QualityProfile cannot create invented metrics.
 
+## Independent UI Completion Review Acceptance
+
+The fresh independent review returned `INDEPENDENTLY_REVIEWED` for exact
+implementation candidate `43c27e6dd2393d24be21805b4b2ea42b78d15955`, using
+documentation checkpoint `c3f1ffe1b44d632323ff706c2c83a91831e1c450`. It
+confirmed closure of the claim-release/Blind Lab bypass, Steward fabricated
+success, Run Builder invalid authority admission, noncanonical/coupled
+status-axis behavior, and manufactured Quality metrics.
+
+The later administrative documentation commit records that verdict only; it
+is not independently reviewed for product behavior. The review does not
+establish `TECHNICALLY_RELEASE_READY`, `V4_COMPLETE`, `RELEASE_ACCEPTED`,
+production embedding-model adoption, production vector retrieval, R2
+completion or confirmation, or R3 completion. Existing V3 and R1
+independent-review provenance and all other phase states remain unchanged.
+
 ## Remaining Boundary and Next Action
 
 No blocking defect remains inside this remediation scope. Current Corpus and
 Methodology authority remains unavailable by canonical design, so Run Builder
 correctly stays unavailable. The Governance ARIA tab pattern remains a
-non-blocking separate UI-quality follow-up because its component was not
-touched.
+non-blocking optional UI-quality follow-up and does not reopen the completed UI
+Completion profile.
 
-Exact next action: perform one fresh, independent, read-only UI Completion
-review of implementation candidate
-`43c27e6dd2393d24be21805b4b2ea42b78d15955` and the direct documentation-only
-checkpoint containing this report. Reproduce the five original counterexamples
-and bind the verdict to both exact SHAs; do not remediate or begin model,
-production vector, R2/R3, V4, or release work in that review context.
+Exact next action: await separate owner authorization for the next project
+workstream. Do not infer authority for model integration, production vector,
+R2, R3, V4, or release work.
