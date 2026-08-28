@@ -635,12 +635,68 @@ unchanged.
   checkpoint; the full SHA is returned in the execution handoff because a
   commit cannot embed its own SHA.
 
+## QAC Stage-A Provenance and Artifact Qualification Checkpoint
+
+- Task starting branch/HEAD: `main` /
+  `d69d1cadc9c13ccf542b4ebc25e358f7a7846052`, the exact independently
+  confirmed QAC admission-sequence baseline.
+- A concrete QAC morphology 0.4 candidate was found read-only under the
+  authorized V7 local source area. Thirteen local candidate/renamed copies are
+  byte-identical: 6,309,503 bytes, SHA-256
+  `a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46`.
+- An in-memory fetch from an immutable third-party mirror commit reproduced the
+  same byte size and hash. That is public byte corroboration, not upstream
+  authority.
+- At `2026-08-26T23:50:10.7789646Z`, a read-only GET of the official download
+  endpoint returned an HTTP 200 HTML page containing only a contact-email POST
+  form, with no direct artifact link or checksum. No owner email was supplied
+  or fabricated and no POST was made, so no official bytes were obtained. The
+  binding classification is `DIRECT_OFFICIAL_BYTE_BINDING_UNAVAILABLE`; the
+  official size/hash and candidate comparison remain not computable.
+- The historical `a1d129...` lead is classified as an exact candidate/public-
+  mirror byte match with the direct official upstream byte chain unresolved.
+- Real-format inspection found a CRLF ASCII/UTF-8-compatible TSV artifact with
+  128,219 ordered segments over 77,429 words and all 6,236 verse identities;
+  zero malformed rows, duplicate locations, or ordering/contiguity violations;
+  208 intentional empty first-person singular pronoun suffix surfaces; and one
+  internal-space proper-name form at `37:130`.
+- All QAC verse references map to the active Tanzil identity set. Read-only
+  word-count diagnostics identify 112 embedded-opening-basmala offsets and four
+  residual tokenization differences at `2:181`, `8:6`, `13:37`, and `37:130`.
+  This is Stage-C requirements evidence, not production alignment.
+- The combined provenance/license axis remains `PENDING`: official GPLv3, QAC
+  no-change/attribution, FAQ non-commercial/research/citation language, the
+  embedded historical Tanzil CC BY-ND 3.0 notice, and Tanzil's current CC BY
+  3.0/no-change page are not authoritatively reconciled. Local use remains
+  pending clarification; raw public/private repository redistribution is not
+  qualified. The raw artifact was not copied into or committed by LISAN3, and
+  no runtime expected hash was bound.
+- Final QAC state is unchanged: artifact identity `PENDING`;
+  provenance/license `PENDING`; structural role `NOT_APPROVED`; real importer
+  `NOT_IMPLEMENTED`; production activation `NOT_AUTHORIZED`; runtime role
+  `SOURCE_ROLE_PENDING`.
+- Durable evidence:
+  `docs/evidence/qac-stage-a-2026-08-27/QAC_STAGE_A_QUALIFICATION.md` and its
+  machine-readable manifest, field disposition, reconciliation, requirements,
+  prerequisite, and hash artifacts. The factual holder/maintainer request is
+  `QAC_LICENSE_CLARIFICATION_REQUEST.md` with status `PREPARED_NOT_SENT`.
+- No Stage B/C/D/E work, database mutation, QAC import, Purity implementation,
+  semantic run, remaining batch, sealed-pilot edit, LQE access/modification,
+  release, push, or external historical-workspace modification occurred.
+- Owner-untracked `.hermes/`, `check_db2.py`, and `debug_proxy.py` remain
+  present and untouched.
+- The prior Stage-A result was
+  `QAC_PROVENANCE_AND_ARTIFACT_QUALIFICATION_BLOCKED`. The bounded
+  official-binding/license continuation result is
+  `QAC_STAGE_A_OFFICIAL_BINDING_AND_LICENSE_BLOCKED`. This checkpoint does not
+  self-grant independent review or any later lifecycle state.
+
 ## Exact Next Action
 
-Perform a fresh independent read-only review of the exact committed QAC
-admission-sequence reconciliation candidate against repository authority, the
-five-axis state, the A-E dependency order, and the unchanged sealed pilot
-evidence. Do not authorize Stage A or any later stage, acquire or import QAC,
-approve or activate QAC, implement persistence/importers/Purity evaluators,
-rerun the five pilot roots, modify LQE, or start remaining batches under that
-review.
+The owner submits an authorized contact email through the official QAC download
+form, preserves and provides the delivered raw response bytes, and sends the
+prepared factual clarification request to the official QAC contact. Then
+compare the official byte size/SHA-256 with the Stage-A candidate and record the
+authoritative response without broadening Stage A. Do not commit or redistribute
+the raw artifact unless the response clearly qualifies that action. Do not
+authorize or start Stage B, C, D, or E under that blocker-resolution action.

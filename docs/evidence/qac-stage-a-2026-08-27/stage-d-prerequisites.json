@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "current_decision": "NOT_APPROVED",
+  "decision_owner": "Stage D explicit structural-source admission decision",
+  "automatic_approval": false,
+  "source_artifact_sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+  "prerequisites": [
+    {
+      "evidence_stage": "A",
+      "requirement": "Authoritative upstream project/version/release identity",
+      "evidence_present": true,
+      "evidence": "Official QAC download and 0.4 release-notes pages."
+    },
+    {
+      "evidence_stage": "A",
+      "requirement": "Exact candidate byte identity, real format, counts, field disposition, and reproducible independent hash check",
+      "evidence_present": true,
+      "evidence": "Stage-A manifest plus local bytes and immutable public-mirror byte match."
+    },
+    {
+      "evidence_stage": "A",
+      "requirement": "Direct official acquisition/byte-chain evidence for the candidate artifact",
+      "evidence_present": false,
+      "blocker": "A read-only GET of the official endpoint exposed only a contact-email POST form and no direct artifact link or checksum. No owner contact email was supplied, so official response bytes were not obtained."
+    },
+    {
+      "evidence_stage": "A",
+      "requirement": "Unambiguous license and redistribution/modification conditions for the combined QAC/Tanzil file",
+      "evidence_present": false,
+      "blocker": "Official GPLv3, QAC no-change/attribution terms, FAQ non-commercial/research/citation language, the embedded historical Tanzil CC BY-ND 3.0 notice, and Tanzil's current CC BY 3.0/no-change page are not authoritatively reconciled."
+    },
+    {
+      "evidence_stage": "B",
+      "requirement": "Accepted separate structural-source and token/segment persistence design, migrations, constraints, and contracts",
+      "evidence_present": false,
+      "blocker": "Stage B was not authorized or implemented."
+    },
+    {
+      "evidence_stage": "C",
+      "requirement": "Real-artifact parser/importer with deterministic, idempotent, fail-closed validation",
+      "evidence_present": false,
+      "blocker": "Stage C was not authorized or implemented; the current parser is fixture-only."
+    },
+    {
+      "evidence_stage": "C",
+      "requirement": "Complete active-Tanzil reconciliation and negative-path evidence for every segment",
+      "evidence_present": false,
+      "blocker": "Stage A established identity compatibility and mismatch requirements only, not production alignment."
+    },
+    {
+      "evidence_stage": "C",
+      "requirement": "Prohibited semantic-field quarantine/rejection and immutable provenance-binding evidence",
+      "evidence_present": false,
+      "blocker": "Requires the future real importer and persistence boundary."
+    }
+  ],
+  "stage_d_rule": "Only after every mandatory prerequisite exists may Stage D explicitly decide APPROVED or NOT_APPROVED; no earlier evidence pre-answers that decision."
+}

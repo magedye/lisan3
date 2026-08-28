@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "read-only identity and whitespace-count diagnostic; not import or surface-alignment proof",
+  "qac_source_artifact": {
+    "sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+    "embedded_tanzil_version_claim": "Uthmani 1.0.2",
+    "verse_reference_grammar": "(surah:ayah:word:segment), one-based"
+  },
+  "active_tanzil": {
+    "source_id": "TANZIL_QURAN_UTHMANI",
+    "version": "1.1",
+    "text_path": "data/corpus/tanzil/tanzil-uthmani-1.1.txt",
+    "text_byte_size": 1334737,
+    "text_sha256": "ac0724796cbbda0f4801470fbbd11d0f3c5802067bae0493466d0128b0c667af",
+    "identity_index_path": "data/corpus/tanzil/quran-verse-index-v1.0.json",
+    "identity_index_byte_size": 306105,
+    "identity_index_sha256": "0d0a2273e82ebb0d9848ccbf831f1bb297c0fb255413c5aeb299bbfaf2bbc967",
+    "verse_count": 6236,
+    "surah_count": 114
+  },
+  "identity_result": {
+    "qac_reference_count": 6236,
+    "tanzil_reference_count": 6236,
+    "reference_sets_equal": true,
+    "qac_only_reference_count": 0,
+    "tanzil_only_reference_count": 0
+  },
+  "word_count_diagnostic": {
+    "raw_mismatch_verse_count": 116,
+    "embedded_opening_basmala_adjustment_count": 112,
+    "embedded_opening_basmala_policy": "Active Tanzil 1.1 includes four basmala whitespace tokens at each surah start except surahs 1 and 9; QAC word locators exclude those added tokens.",
+    "residual_mismatch_verse_count": 4,
+    "residual_mismatches": [
+      {
+        "verse_ref": "2:181",
+        "qac_word_count": 13,
+        "adjusted_tanzil_word_count": 14,
+        "class": "TANZIL_1_1_BA_DA_MA_SPLIT"
+      },
+      {
+        "verse_ref": "8:6",
+        "qac_word_count": 11,
+        "adjusted_tanzil_word_count": 12,
+        "class": "TANZIL_1_1_BA_DA_MA_SPLIT"
+      },
+      {
+        "verse_ref": "13:37",
+        "qac_word_count": 19,
+        "adjusted_tanzil_word_count": 20,
+        "class": "TANZIL_1_1_BA_DA_MA_SPLIT"
+      },
+      {
+        "verse_ref": "37:130",
+        "qac_word_count": 3,
+        "adjusted_tanzil_word_count": 4,
+        "class": "QAC_INTERNAL_SPACE_COLLAPSES_TWO_TANZIL_WORDS"
+      }
+    ]
+  },
+  "known_non_count_mismatch_classes": [
+    {
+      "class": "TANZIL_2021_SMALL_YEH_RENDERING_CHANGE",
+      "evidence": "https://github.com/kaisdukes/quranic-corpus/issues/52",
+      "requirement": "Stage C must use an explicit reviewed transliteration/orthography mapping and must not infer equality from word counts."
+    }
+  ],
+  "stage_c_requirements": [
+    "Treat Tanzil as sole Quran-text and verse-identity authority; never overwrite its text from QAC FORM.",
+    "Parse and retain the complete one-based QAC word/segment locator before alignment.",
+    "Handle the 112 embedded opening-basmala offsets explicitly and test surahs 1 and 9 as negative boundaries.",
+    "Resolve the three ba'da ma word splits and the 37:130 internal-space form through an explicit reviewed exception registry.",
+    "Apply a versioned Buckwalter-to-Arabic and orthographic comparison profile; record exact mismatch diagnostics and fail closed on unregistered differences.",
+    "Require all 6,236 verse references and every token/segment to align uniquely; missing, duplicate, ambiguous, or text-mismatched records remain outside canonical knowledge."
+  ]
+}

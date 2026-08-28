@@ -70,11 +70,13 @@ All semantic changes must trace back through:
   continues to require a separately production-active snapshot.
 - QAC remains `PENDING_ADMISSION` with machine-readable state
   `SOURCE_ROLE_PENDING`. Its proposed auxiliary morphology/syntax role is not
-  approved: no exact artifact, completed provenance/license review, real-format
-  importer, or production activation exists. If separately admitted, QAC must
-  remain a source-provenanced annotation layer keyed to Tanzil identity. Tanzil
-  canonical-text import does not inherit QAC semantic/gloss/ontology fields and
-  does not depend on a real-format QAC importer. The five-axis state and future
+  approved: Stage-A evidence has identified exact candidate bytes, but no
+  authority-bound upstream artifact, completed provenance/license review,
+  real-format importer, or production activation exists. If separately
+  admitted, QAC must remain a source-provenanced annotation layer keyed to
+  Tanzil identity. Tanzil canonical-text import does not inherit QAC
+  semantic/gloss/ontology fields and does not depend on a real-format QAC
+  importer. The five-axis state and future
   boundary are owned by `docs/canonical/ADMISSION_QAC.md`. QAC provenance and
   artifact qualification is not admission. Structural domain/persistence and
   real-importer validation evidence must precede a separate structural-source

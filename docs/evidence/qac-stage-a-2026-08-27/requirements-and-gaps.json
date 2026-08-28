@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "source_artifact_sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+  "stage_c_importer_requirements": [
+    "Accept the exact uncompressed CRLF ASCII/UTF-8-compatible artifact; hash raw bytes before decoding or newline conversion.",
+    "Require the literal TSV header LOCATION, FORM, TAG, FEATURES at physical line 57 after preserving/validating both copyright blocks.",
+    "Split records on tabs into exactly four fields; never parse this distribution as pipe-delimited fixture data.",
+    "Parse LOCATION with the exact one-based grammar (surah:ayah:word:segment) and preserve segment order and multi-segment words.",
+    "Preserve FORM exactly, including 208 intentional empty PRON suffix surfaces and the one internal-space form at (37:130:3:1).",
+    "Preserve the top-level TAG and the ordered pipe-delimited FEATURES tokens without inventing meanings for unknown keys or flags.",
+    "Recognize PREFIX, STEM, and SUFFIX record kinds; PN is a grammatical proper-name tag, not semantic ontology authority.",
+    "Reject wrong hash/size, decoding failure, changed header/notices, wrong column count, malformed locator, noncontiguous indices, duplicate locator, order regression, or unsupported feature vocabulary before persistence.",
+    "Reject or quarantine prohibited semantic fields if a different distribution adds gloss, translation, ontology, semantic labels/relations, meaning, or confidence data.",
+    "Use deterministic location ordering and stable source-bound annotation identities; an exact retry must be idempotent.",
+    "Perform complete Tanzil reconciliation under the separately versioned rules in tanzil-reconciliation.json and fail closed on every unregistered ambiguity."
+  ],
+  "stage_b_persistence_gap_analysis": [
+    {
+      "current_surface": "CorpusSnapshot.structural_source and structural_source_version",
+      "gap": "Two descriptive strings cannot bind an independently hashed structural artifact, its license/provenance, parser revision, reconciliation profile, or lifecycle.",
+      "minimum_future_capability": "Separate structural-source snapshot/admission identity with source ID/version/hash/size/reference/provenance and immutable verification metadata."
+    },
+    {
+      "current_surface": "CorpusOccurrence",
+      "gap": "Verse-level row has only snapshot_id, expression, verse_ref, and text, with one row per verse; it cannot preserve 128,219 segment annotations.",
+      "minimum_future_capability": "Separate annotation table keyed to Tanzil snapshot/occurrence plus word and segment indices, without changing Tanzil text."
+    },
+    {
+      "current_surface": "No token/segment annotation model or migration",
+      "gap": "No columns/constraints exist for source-bound FORM, TAG/POS, lemma, root, record kind, voice, or ordered feature tokens.",
+      "minimum_future_capability": "Provenance-bound structural annotation schema with uniqueness, ordering, null/empty-form semantics, and explicit permitted-field constraints."
+    },
+    {
+      "current_surface": "QACAdapter",
+      "gap": "Synthetic pipe parser does not parse the real TSV header/records, strips whitespace, misnames LEM as LEMMA, and has fictional semantic fixture fields.",
+      "minimum_future_capability": "Stage-C parser built from the qualified real grammar; no implementation is authorized in Stage A."
+    },
+    {
+      "current_surface": "CorpusImporter fixture path",
+      "gap": "Parsed QAC annotations are discarded while only Tanzil verse text is persisted; fixture-only state cannot prove structural import.",
+      "minimum_future_capability": "Transactional, idempotent annotation persistence with full-count and reconciliation validation after Stage B exists."
+    },
+    {
+      "current_surface": "Pydantic/API schemas",
+      "gap": "No structural-source snapshot or token/segment annotation read/write contracts exist.",
+      "minimum_future_capability": "Governed API/read models exposing structural evidence and provenance without exposing it as semantic truth."
+    },
+    {
+      "current_surface": "Alignment/coverage services",
+      "gap": "No complete root/lemma/form occurrence coverage service or immutable exception registry exists for active Tanzil 1.1.",
+      "minimum_future_capability": "Complete, diagnostics-bearing reconciliation and coverage services with negative-path tests."
+    }
+  ]
+}

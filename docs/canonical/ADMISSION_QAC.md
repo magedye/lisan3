@@ -1,6 +1,6 @@
 # Quranic Arabic Corpus Pending Admission Record
 
-Authority revision: `LISAN3_QAC_PENDING_ADMISSION_V3_2026_08_27`
+Authority revision: `LISAN3_QAC_PENDING_ADMISSION_V4_2026_08_27`
 
 ## Source identity
 
@@ -18,11 +18,28 @@ use, or authorize semantic-pilot execution.
 
 | Axis | State | Current evidence |
 |---|---|---|
-| Artifact identity | `PENDING` | No exact repository artifact, release identity, byte identity, or expected SHA-256 is recorded. |
-| Provenance and license | `PENDING` | The upstream URL is known. The prior GNU GPL claim and exact attribution obligations have not been verified against a pinned artifact. |
+| Artifact identity | `PENDING` | Stage-A evidence identifies a 6,309,503-byte morphology 0.4 candidate with SHA-256 `a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46`. A read-only GET of the official endpoint exposed only an email-gated POST form and no direct artifact link or checksum, so the result is `DIRECT_OFFICIAL_BYTE_BINDING_UNAVAILABLE`. The raw file is external and uncommitted; no runtime expected hash is authority-bound. |
+| Provenance and license | `PENDING` | Official project/version/release identity is established, but GPLv3, QAC no-change/attribution terms, FAQ non-commercial/research/citation language, the embedded historical Tanzil CC BY-ND 3.0 notice, and Tanzil's current CC BY 3.0/no-change page are not authoritatively reconciled. Local use is pending clarification; public/private repository redistribution is not qualified. |
 | Structural role authorization | `NOT_APPROVED` | QAC is only a proposed auxiliary structural source. No canonical admission decision has approved its role. |
 | Real importer | `NOT_IMPLEMENTED` | A synthetic pipe-delimited fixture parser exists. It is not evidence of a parser for an admitted QAC distribution, and current fixture import discards structural annotations. |
 | Production activation | `NOT_AUTHORIZED` | No admitted artifact or role exists. `CANONICAL_ACTIVATION_PENDING` is fail-closed runtime storage, not an activation decision. |
+
+## Stage-A qualification evidence
+
+The bounded `2026-08-27` Stage-A inspection is recorded at
+`docs/evidence/qac-stage-a-2026-08-27/QAC_STAGE_A_QUALIFICATION.md` with a
+machine-readable artifact manifest, field disposition, real-format importer
+requirements, Tanzil reconciliation diagnostic, persistence gap analysis, and
+Stage-D prerequisite checklist.
+
+It establishes a concrete, byte-reproducible candidate and resolves the
+historical `a1d129...` value as an exact candidate/public-mirror byte match. A
+read-only official-endpoint attempt could not obtain bytes without submitting
+owner contact data, so it does not establish the direct official download byte
+chain. The remaining license questions and an exact factual request are
+recorded in the evidence package with status `PREPARED_NOT_SENT`. Therefore
+neither pending early axis transitions to `VERIFIED`, and the candidate hash is
+not copied into runtime authority.
 
 ## Required lifecycle and dependency sequence
 

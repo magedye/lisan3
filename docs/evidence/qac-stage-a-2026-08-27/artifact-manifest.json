@@ -1,0 +1,340 @@
+{
+  "schema_version": "1.0.0",
+  "task": "QAC_PROVENANCE_AND_ARTIFACT_QUALIFICATION",
+  "stage": "A",
+  "evidence_date": "2026-08-27",
+  "starting_sha": "d69d1cadc9c13ccf542b4ebc25e358f7a7846052",
+  "result": "QAC_STAGE_A_OFFICIAL_BINDING_AND_LICENSE_BLOCKED",
+  "lineage": {
+    "prior_result": "QAC_PROVENANCE_AND_ARTIFACT_QUALIFICATION_BLOCKED",
+    "continuation_scope": "Official byte binding and authoritative license clarification only"
+  },
+  "scope_boundary": {
+    "performed": "Stage-A official-binding attempt and license/provenance qualification evidence only",
+    "not_performed": [
+      "Stage B persistence",
+      "Stage C importer",
+      "Stage D admission decision",
+      "Stage E activation",
+      "Purity implementation",
+      "semantic root runs",
+      "LQE work"
+    ]
+  },
+  "upstream": {
+    "project": "Quranic Arabic Corpus",
+    "publisher_maintainer": "Copyright holder and release contact Kais Dukes; project initiated at the University of Leeds; official site footer says maintained by the quran.com team",
+    "canonical_download": "https://corpus.quran.com/download/default.jsp",
+    "release_notes": "https://corpus.quran.com/releasenotes.jsp",
+    "release": "morphology version 0.4",
+    "release_date": "2011-05-01",
+    "candidate_filename": "quranic-corpus-morphology-0.4.txt",
+    "official_acquisition": "Submit a contact email on the official download page and retain the response bytes without text-mode conversion.",
+    "official_checksum_published_on_inspected_pages": false,
+    "immutable_official_artifact_revision_found_on_inspected_pages": false
+  },
+  "official_binding_attempt": {
+    "classification": "DIRECT_OFFICIAL_BYTE_BINDING_UNAVAILABLE",
+    "attempted_at_utc": "2026-08-26T23:50:10.7789646Z",
+    "endpoint": "https://corpus.quran.com/download/default.jsp",
+    "request_method": "GET",
+    "contact_email_submitted": false,
+    "response": {
+      "http_status": 200,
+      "final_url": "https://corpus.quran.com/download/default.jsp",
+      "content_type": "text/html; charset=UTF-8",
+      "content_length_bytes": 7272,
+      "last_modified": null,
+      "server": "cloudflare"
+    },
+    "form": {
+      "method": "POST",
+      "action": "/download/default.jsp",
+      "contact_email_field": "txtEmail",
+      "hidden_fields": [
+        "downloadID",
+        "validEmail"
+      ]
+    },
+    "direct_artifact_link_found": false,
+    "official_artifact_obtained": false,
+    "official_artifact_filename": null,
+    "official_artifact_byte_size": null,
+    "official_artifact_sha256": null,
+    "comparison_to_candidate": "NOT_COMPUTABLE",
+    "reason": "The official page requires submission of a real contact email before delivery. No owner email was supplied or authorized, and no email was fabricated or inferred.",
+    "owner_action_required": "Owner submits an authorized contact email through the official form, preserves the delivered response bytes unchanged outside the repository, and provides those bytes for size/SHA-256 comparison."
+  },
+  "candidate_artifact": {
+    "source_classification": "LOCAL_CANDIDATE_BYTES_NOT_YET_BOUND_AS_UPSTREAM_ARTIFACT",
+    "local_path": "D:\\APP\\tafseer\\V7\\v7.3.0-candidate\\مهارة لسان القرآن\\assets\\quran\\qac\\quranic-corpus-morphology-0.4.txt",
+    "repository_disposition": "EXTERNAL_READ_ONLY_NOT_COPIED_NOT_COMMITTED",
+    "filename": "quranic-corpus-morphology-0.4.txt",
+    "byte_size": 6309503,
+    "sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+    "container": "uncompressed plain text",
+    "encoding": "US-ASCII byte repertoire; strict ASCII and UTF-8 decoding both pass",
+    "utf8_bom": false,
+    "line_endings": "CRLF",
+    "crlf_count": 128276,
+    "lf_count": 128276,
+    "bare_cr_count": 0,
+    "final_newline": "CRLF",
+    "physical_line_count": 128276,
+    "header_line": 57,
+    "comment_lines_before_header": 54,
+    "blank_lines_before_header": 2,
+    "columns": [
+      "LOCATION",
+      "FORM",
+      "TAG",
+      "FEATURES"
+    ],
+    "record_count": 128219,
+    "surah_count": 114,
+    "verse_count": 6236,
+    "word_count": 77429,
+    "segment_count": 128219,
+    "unique_location_count": 128219,
+    "max_segments_per_word": 5,
+    "empty_form_count": 208,
+    "empty_form_classes": [
+      {
+        "tag": "PRON",
+        "features": "SUFFIX|PRON:1S",
+        "count": 208
+      }
+    ],
+    "internal_space_form_count": 1,
+    "internal_space_forms": [
+      {
+        "line": 96372,
+        "location": "(37:130:3:1)",
+        "form": "<ilo yaAsiyna"
+      }
+    ],
+    "empty_tag_count": 0,
+    "empty_features_count": 0,
+    "malformed_record_count": 0,
+    "duplicate_location_count": 0,
+    "order_violation_count": 0,
+    "noncontiguous_segment_word_count": 0,
+    "noncontiguous_word_verse_count": 0,
+    "header_identity": "Quranic Arabic Corpus (morphology, version 0.4)",
+    "header_copyright": "Copyright (C) 2011 Kais Dukes",
+    "embedded_text_identity": "Tanzil Quran Text (Uthmani, version 1.0.2)",
+    "transformed": false
+  },
+  "local_candidate_copies": [
+    {
+      "path": "D:\\APP\\tafseer\\V7\\90_WORKSPACE_ARCHIVE\\aborted_v7.3.1-candidate_20260821\\07_REFERENCE_INPUTS\\QAC_STRUCTURAL_NOTES.txt",
+      "filename": "QAC_STRUCTURAL_NOTES.txt",
+      "classification": "HISTORICAL_LISAN_RENAMED_BYTE_DUPLICATE",
+      "byte_size": 6309503,
+      "sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+      "encoding": "US-ASCII byte repertoire",
+      "line_endings": "CRLF",
+      "container": "uncompressed plain text",
+      "record_count": 128219,
+      "byte_relation_to_primary": "IDENTICAL"
+    },
+    {
+      "path": "D:\\APP\\tafseer\\V7\\90_WORKSPACE_ARCHIVE\\aborted_v7.3.1-candidate_20260821\\مهارة لسان القرآن\\assets\\quran\\qac\\quranic-corpus-morphology-0.4.txt",
+      "filename": "quranic-corpus-morphology-0.4.txt",
+      "classification": "LOCAL_QAC_NAMED_BYTE_COPY",
+      "byte_size": 6309503,
+      "sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+      "encoding": "US-ASCII byte repertoire",
+      "line_endings": "CRLF",
+      "container": "uncompressed plain text",
+      "record_count": 128219,
+      "byte_relation_to_primary": "IDENTICAL"
+    },
+    {
+      "path": "D:\\APP\\tafseer\\V7\\90_WORKSPACE_ARCHIVE\\root_cleanup_20260821_legacy_materials\\v7.2\\07_REFERENCE_INPUTS\\QAC_STRUCTURAL_NOTES.txt",
+      "filename": "QAC_STRUCTURAL_NOTES.txt",
+      "classification": "HISTORICAL_LISAN_RENAMED_BYTE_DUPLICATE",
+      "byte_size": 6309503,
+      "sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+      "encoding": "US-ASCII byte repertoire",
+      "line_endings": "CRLF",
+      "container": "uncompressed plain text",
+      "record_count": 128219,
+      "byte_relation_to_primary": "IDENTICAL"
+    },
+    {
+      "path": "D:\\APP\\tafseer\\V7\\90_WORKSPACE_ARCHIVE\\root_cleanup_20260821_legacy_materials\\v7.2\\مهارة لسان القرآن\\assets\\quran\\qac\\quranic-corpus-morphology-0.4.txt",
+      "filename": "quranic-corpus-morphology-0.4.txt",
+      "classification": "LOCAL_QAC_NAMED_BYTE_COPY",
+      "byte_size": 6309503,
+      "sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+      "encoding": "US-ASCII byte repertoire",
+      "line_endings": "CRLF",
+      "container": "uncompressed plain text",
+      "record_count": 128219,
+      "byte_relation_to_primary": "IDENTICAL"
+    },
+    {
+      "path": "D:\\APP\\tafseer\\V7\\independent-review-236cf915181a46798f49b3a112c3f9b0\\07_REFERENCE_INPUTS\\QAC_STRUCTURAL_NOTES.txt",
+      "filename": "QAC_STRUCTURAL_NOTES.txt",
+      "classification": "HISTORICAL_LISAN_RENAMED_BYTE_DUPLICATE",
+      "byte_size": 6309503,
+      "sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+      "encoding": "US-ASCII byte repertoire",
+      "line_endings": "CRLF",
+      "container": "uncompressed plain text",
+      "record_count": 128219,
+      "byte_relation_to_primary": "IDENTICAL"
+    },
+    {
+      "path": "D:\\APP\\tafseer\\V7\\independent-review-236cf915181a46798f49b3a112c3f9b0\\مهارة لسان القرآن\\assets\\quran\\qac\\quranic-corpus-morphology-0.4.txt",
+      "filename": "quranic-corpus-morphology-0.4.txt",
+      "classification": "LOCAL_QAC_NAMED_BYTE_COPY",
+      "byte_size": 6309503,
+      "sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+      "encoding": "US-ASCII byte repertoire",
+      "line_endings": "CRLF",
+      "container": "uncompressed plain text",
+      "record_count": 128219,
+      "byte_relation_to_primary": "IDENTICAL"
+    },
+    {
+      "path": "D:\\APP\\tafseer\\V7\\independent-review-315b949d74a74f95b1ddc3c02878abb6\\07_REFERENCE_INPUTS\\QAC_STRUCTURAL_NOTES.txt",
+      "filename": "QAC_STRUCTURAL_NOTES.txt",
+      "classification": "HISTORICAL_LISAN_RENAMED_BYTE_DUPLICATE",
+      "byte_size": 6309503,
+      "sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+      "encoding": "US-ASCII byte repertoire",
+      "line_endings": "CRLF",
+      "container": "uncompressed plain text",
+      "record_count": 128219,
+      "byte_relation_to_primary": "IDENTICAL"
+    },
+    {
+      "path": "D:\\APP\\tafseer\\V7\\independent-review-315b949d74a74f95b1ddc3c02878abb6\\مهارة لسان القرآن\\assets\\quran\\qac\\quranic-corpus-morphology-0.4.txt",
+      "filename": "quranic-corpus-morphology-0.4.txt",
+      "classification": "LOCAL_QAC_NAMED_BYTE_COPY",
+      "byte_size": 6309503,
+      "sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+      "encoding": "US-ASCII byte repertoire",
+      "line_endings": "CRLF",
+      "container": "uncompressed plain text",
+      "record_count": 128219,
+      "byte_relation_to_primary": "IDENTICAL"
+    },
+    {
+      "path": "D:\\APP\\tafseer\\V7\\independent-review-e12942680c5c44aaac726c8dedc17d5e\\07_REFERENCE_INPUTS\\QAC_STRUCTURAL_NOTES.txt",
+      "filename": "QAC_STRUCTURAL_NOTES.txt",
+      "classification": "HISTORICAL_LISAN_RENAMED_BYTE_DUPLICATE",
+      "byte_size": 6309503,
+      "sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+      "encoding": "US-ASCII byte repertoire",
+      "line_endings": "CRLF",
+      "container": "uncompressed plain text",
+      "record_count": 128219,
+      "byte_relation_to_primary": "IDENTICAL"
+    },
+    {
+      "path": "D:\\APP\\tafseer\\V7\\independent-review-e12942680c5c44aaac726c8dedc17d5e\\مهارة لسان القرآن\\assets\\quran\\qac\\quranic-corpus-morphology-0.4.txt",
+      "filename": "quranic-corpus-morphology-0.4.txt",
+      "classification": "LOCAL_QAC_NAMED_BYTE_COPY",
+      "byte_size": 6309503,
+      "sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+      "encoding": "US-ASCII byte repertoire",
+      "line_endings": "CRLF",
+      "container": "uncompressed plain text",
+      "record_count": 128219,
+      "byte_relation_to_primary": "IDENTICAL"
+    },
+    {
+      "path": "D:\\APP\\tafseer\\V7\\v7.3.0-candidate\\07_REFERENCE_INPUTS\\QAC_STRUCTURAL_NOTES.txt",
+      "filename": "QAC_STRUCTURAL_NOTES.txt",
+      "classification": "HISTORICAL_LISAN_RENAMED_BYTE_DUPLICATE",
+      "byte_size": 6309503,
+      "sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+      "encoding": "US-ASCII byte repertoire",
+      "line_endings": "CRLF",
+      "container": "uncompressed plain text",
+      "record_count": 128219,
+      "byte_relation_to_primary": "IDENTICAL"
+    },
+    {
+      "path": "D:\\APP\\tafseer\\V7\\v7.3.0-candidate\\مهارة لسان القرآن\\assets\\quran\\qac\\quranic-corpus-morphology-0.4.txt",
+      "filename": "quranic-corpus-morphology-0.4.txt",
+      "classification": "LOCAL_QAC_NAMED_BYTE_COPY",
+      "byte_size": 6309503,
+      "sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+      "encoding": "US-ASCII byte repertoire",
+      "line_endings": "CRLF",
+      "container": "uncompressed plain text",
+      "record_count": 128219,
+      "byte_relation_to_primary": "IDENTICAL"
+    },
+    {
+      "path": "D:\\APP\\tafseer\\V7\\مهارة لسان القرآن\\assets\\quran\\qac\\quranic-corpus-morphology-0.4.txt",
+      "filename": "quranic-corpus-morphology-0.4.txt",
+      "classification": "LOCAL_QAC_NAMED_BYTE_COPY",
+      "byte_size": 6309503,
+      "sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+      "encoding": "US-ASCII byte repertoire",
+      "line_endings": "CRLF",
+      "container": "uncompressed plain text",
+      "record_count": 128219,
+      "byte_relation_to_primary": "IDENTICAL"
+    }
+  ],
+  "public_byte_reproduction": {
+    "classification": "THIRD_PARTY_IMMUTABLE_MIRROR_CORROBORATION_NOT_UPSTREAM_AUTHORITY",
+    "repository": "https://github.com/bnjasim/quranic-corpus",
+    "commit": "74416e4881d79e09713c170c7234226cb1785555",
+    "raw_url": "https://raw.githubusercontent.com/bnjasim/quranic-corpus/74416e4881d79e09713c170c7234226cb1785555/quranic-corpus-morphology-0.4.txt",
+    "observed_http_status": 200,
+    "observed_byte_size": 6309503,
+    "observed_sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+    "observed_etag": "\"b154315e0f2eeaa527ad48816b14a84e972f2e88b9b477c5cbceee9417e33eae\""
+  },
+  "historical_hash_disposition": {
+    "lead": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+    "classification": "EXACT_CANDIDATE_ARTIFACT_MATCH + EXACT_PUBLIC_MIRROR_BYTE_MATCH + DIRECT_OFFICIAL_UPSTREAM_BYTE_CHAIN_UNRESOLVED"
+  },
+  "provenance": {
+    "status": "PENDING",
+    "established": "Official project, maintainer, version, release date, download location, candidate header identity, and exact public-mirror byte reproduction.",
+    "unresolved": "The official endpoint supplied no bytes without owner contact-email submission, and no official checksum or immutable release reference binds its eventual response to the candidate bytes."
+  },
+  "license": {
+    "status": "PENDING",
+    "official_license_page": "https://corpus.quran.com/license.jsp",
+    "official_faq": "https://corpus.quran.com/faq.jsp",
+    "official_download_terms": "https://corpus.quran.com/download/default.jsp",
+    "official_tanzil_text_license": "https://tanzil.net/docs/text_license",
+    "candidate_header_claims": [
+      "QAC annotation: GNU General Public License; verbatim copying/distribution allowed; changing not allowed; QAC attribution/link and notice retention required.",
+      "Embedded Tanzil Uthmani 1.0.2 text: Creative Commons BY-ND 3.0 Unported; verbatim copying/distribution allowed; changing not allowed; Tanzil attribution/link and notice retention required."
+    ],
+    "current_tanzil_page_claim": "Creative Commons Attribution 3.0, while separately stating that verbatim copying/distribution is allowed but changing the text is not allowed and attribution/link/notice retention are required.",
+    "conflict": "Official GPLv3 modification and commercial-conveyance rights conflict with QAC no-change and FAQ non-commercial/research/citation language. The embedded historical Tanzil CC BY-ND 3.0 notice also differs from Tanzil's current CC BY 3.0 label while both state no change.",
+    "local_use": "PENDING_AUTHORITY_CLARIFICATION",
+    "raw_redistribution_with_repository_or_application": "NOT_QUALIFIED",
+    "public_repository_redistribution": "NOT_QUALIFIED",
+    "private_repository_redistribution": "NOT_QUALIFIED",
+    "independent_end_user_acquisition": "UNRESOLVED",
+    "separate_derived_structural_annotations": "UNRESOLVED; semantic and gloss content remains excluded from the proposed structural role regardless.",
+    "raw_repository_commit_permitted": "NOT_QUALIFIED; keep the raw artifact local and uncommitted pending authoritative clarification.",
+    "clarification_request": "docs/evidence/qac-stage-a-2026-08-27/QAC_LICENSE_CLARIFICATION_REQUEST.md",
+    "request_sent": false
+  },
+  "five_axis_final_state": {
+    "artifact_identity": "PENDING",
+    "provenance_license": "PENDING",
+    "structural_role_authorization": "NOT_APPROVED",
+    "real_importer": "NOT_IMPLEMENTED",
+    "production_activation": "NOT_AUTHORIZED",
+    "runtime_source_role": "SOURCE_ROLE_PENDING"
+  },
+  "blockers": [
+    "DIRECT_OFFICIAL_BYTE_BINDING_UNAVAILABLE: the email-gated official endpoint supplied no artifact bytes during the read-only GET attempt.",
+    "PROVENANCE_LICENSE=PENDING: authoritative sources do not reconcile GPLv3, QAC no-change, FAQ non-commercial/research/citation, or historical/current Tanzil terms for the requested local-use and redistribution cases."
+  ],
+  "exact_owner_action": "Use an owner-authorized contact email in the official download form, preserve and provide the delivered raw bytes, and send the prepared factual clarification request to the official QAC contact. Do not commit or redistribute the raw artifact unless the response clearly qualifies that action."
+}
