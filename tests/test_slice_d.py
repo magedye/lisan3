@@ -34,10 +34,14 @@ client = TestClient(app)
 
 @pytest.fixture
 def test_db():
+    Base.metadata.drop_all(bind=engine)
+    Base.metadata.create_all(bind=engine)
     app.dependency_overrides[get_db] = override_get_db
     db = TestingSessionLocal()
-    yield db
-    db.close()
+    try:
+        yield db
+    finally:
+        db.close()
 
 
 @pytest.fixture

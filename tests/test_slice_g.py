@@ -7,7 +7,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 
 from backend.domain import models
-from backend.infrastructure.database import Base, get_db
+from backend.infrastructure.database import Base, get_db, canonical_migration_heads
 from backend.main import app
 
 SQLALCHEMY_DATABASE_URL = "sqlite:///:memory:"
@@ -17,12 +17,6 @@ engine = create_engine(
     poolclass=StaticPool,
 )
 TestingSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-Base.metadata.create_all(bind=engine)
-with engine.begin() as connection:
-    connection.execute(text("CREATE TABLE alembic_version (version_num VARCHAR(32))"))
-    connection.execute(
-        text("INSERT INTO alembic_version VALUES ('e8b3f6a1c204')")
-    )
 
 client = TestClient(app)
 
@@ -44,6 +38,13 @@ def released_claim_policy(monkeypatch):
 
 @pytest.fixture
 def test_db():
+    Base.metadata.drop_all(bind=engine)
+    Base.metadata.create_all(bind=engine)
+    with engine.begin() as connection:
+        connection.execute(text("CREATE TABLE IF NOT EXISTS alembic_version (version_num VARCHAR(32))"))
+        connection.execute(text("DELETE FROM alembic_version"))
+        for head in canonical_migration_heads():
+            connection.execute(text("INSERT INTO alembic_version VALUES (:head)"), {"head": head})
     app.dependency_overrides[get_db] = override_get_db
     db = TestingSessionLocal()
     try:

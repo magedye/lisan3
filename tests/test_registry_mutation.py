@@ -34,7 +34,7 @@ def test_registry_admission_decision_matrix():
         db.execute(
             models.CorpusSnapshot.__table__.insert().values(
                 id=snapshot_id,
-                canonical_text_source="TANZIL_QURAN_UTHMANI",
+                canonical_text_source=f"TANZIL_{suffix}",
                 canonical_text_version="v1.0.2",
                 canonical_text_hash="a" * 64,
                 validation_status="VALIDATED",
