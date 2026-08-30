@@ -7,7 +7,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 
 from backend.domain import models
-from backend.infrastructure.database import Base, get_db, canonical_migration_heads
+from backend.infrastructure.database import Base, canonical_migration_heads, get_db
 from backend.main import app
 
 SQLALCHEMY_DATABASE_URL = "sqlite:///:memory:"
