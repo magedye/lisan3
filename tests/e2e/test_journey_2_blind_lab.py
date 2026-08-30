@@ -15,14 +15,14 @@ def test_journey_2_blind_lab(page: Page, e2e_server: dict):
         session.add_all(
             [
                 models.CorpusSnapshot(
-                    id="snap_e2e_blind",
+                    id="snap_e2e_blind_j2",
                     canonical_text_source="fixture",
                     canonical_text_version="v1",
-                    canonical_text_hash="fixture-hash",
+                    canonical_text_hash="fixture-hash-j2",
                 ),
                 models.CorpusOccurrence(
-                    id="occ_e2e_blind",
-                    snapshot_id="snap_e2e_blind",
+                    id="occ_e2e_blind_j2",
+                    snapshot_id="snap_e2e_blind_j2",
                     expression="كتب",
                     verse_ref="fixture:1",
                     text="نص قرآني تجريبي مميز صراحة للاختبار",

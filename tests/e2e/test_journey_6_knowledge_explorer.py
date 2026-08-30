@@ -13,10 +13,10 @@ def test_journey_6_knowledge_explorer_uses_real_graph_projection(
     db = e2e_server["db_session"]()
     try:
         snapshot = models.CorpusSnapshot(
-            id="snap_e2e_graph",
+            id="snap_e2e_graph_j6",
             canonical_text_source="fixture",
             canonical_text_version="v1",
-            canonical_text_hash="fixture-hash",
+            canonical_text_hash="fixture-hash-j6",
         )
         run = models.ResearchRun(
             id="run_e2e_graph",

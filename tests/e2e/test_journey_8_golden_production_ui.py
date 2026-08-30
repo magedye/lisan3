@@ -11,10 +11,10 @@ def test_journey_8_golden_production_routes_are_rtl_responsive_and_real(
     )
     with e2e_server["db_session"]() as session:
         snapshot = models.CorpusSnapshot(
-            id="snap_e2e_ui",
+            id="snap_e2e_ui_j8",
             canonical_text_source="fixture",
             canonical_text_version="v1",
-            canonical_text_hash="fixture-hash",
+            canonical_text_hash="fixture-hash-j8",
         )
         run = models.ResearchRun(
             id="run_e2e_ui",
