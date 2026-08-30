@@ -32,7 +32,7 @@ def test_journey_2_blind_lab(page: Page, e2e_server: dict):
                     target_contract="ROOT_CORE",
                     target_expression="كتب",
                     methodology_revision="method-e2e-fixture",
-                    corpus_snapshot="snap_e2e_blind",
+                    corpus_snapshot="snap_e2e_blind_j2",
                     authority_context={"source": "explicit-e2e-fixture"},
                 ),
             ]
