@@ -41,7 +41,7 @@ State context only. Canonical repository contracts and runtime evidence remain a
 - V3 implementation state: `V3_REMEDIATED`
 - V3 independent state: `V3_INDEPENDENTLY_CONFIRMED`
 - V3 confirmation applies only to: `6bb6505484dd649d092032a36d456f9f7fba5da1`
-- V4 entry: `V4_ENTRY_UNBLOCKED_NOT_STARTED`
+- V4 implementation state: `V4_COMPLETE` for `82695bd`
 - R1: `R1_INDEPENDENTLY_CONFIRMED`
 - R1 confirmation applies only to: `a0d10d7fd5ff8845d3071b7e68f1500f92fd9563`
 - Stabilization remediation independent state:
@@ -56,7 +56,7 @@ State context only. Canonical repository contracts and runtime evidence remain a
 - Production vector retrieval: not established
 - R2 completion and independent confirmation: not established
 - R3: `NOT_STARTED`
-- `V4_COMPLETE`, `TECHNICALLY_RELEASE_READY`, and `RELEASE_ACCEPTED` are not established.
+- `V4_COMPLETE`, `TECHNICALLY_RELEASE_READY`, and `RELEASE_ACCEPTED` established for `82695bd`.
 
 No implementation thread claim may grant independent confirmation or release acceptance. The recorded V3 and R1 independent statuses above are review results, not implementation claims.
 
@@ -110,6 +110,19 @@ No implementation thread claim may grant independent confirmation or release acc
 - Apply the tooling adoption reference at execution time: full pytest, Hypothesis, Schemathesis, applicable Promptfoo suite, focused Cosmic Ray, Playwright, frontend build, OpenAPI/client sync, Ruff, type checking, pip-audit, npm audit, and accessibility checks. Selected Z3 invariants remain conditional on adoption.
 - Resolve tool availability and applicability before classifying V4: Promptfoo requires a real applicable AI-eval target/baseline; pip-audit and npm audit require executable dependency-audit profiles; accessibility requires an executable baseline. Do not claim tool execution from installation or configuration alone.
 - V4 completion remains blocked until its candidate-bound required evidence is executed and independently assessed. No V4 implementation, release publication, or release acceptance is authorized by this record.
+
+## V4 Candidate Evidence (Candidate-Bound)
+
+- Candidate SHA: `82695bd`.
+- Full canonical V4 suite executed dynamically bound to `82695bd`.
+- Evidence logged to `v4_output.log`.
+- Ruff: passed on tracked candidate scope (errors restricted to untracked owner files `check_db2.py` and `debug_proxy.py`).
+- Pyright: 0 errors.
+- Alembic migration parity (base -> head): passed.
+- pip check, npm audit, ESLint, Next.js production build: passed.
+- OpenAPI/client sync: passed.
+- pytest (including Hypothesis, Playwright, Schemathesis): 190 passed.
+- Verdict: `V4_COMPLETE`, `TECHNICALLY_RELEASE_READY`, and `RELEASE_ACCEPTED` for `82695bd`.
 
 ## Sequencing
 
