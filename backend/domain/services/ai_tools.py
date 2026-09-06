@@ -37,16 +37,6 @@ class ToolDispatcher:
         return result
 
 
-# Singleton for simple DI in FastAPI
+# Singleton for simple DI in FastAPI. Tools are registered only by a real
+# runtime adapter; an empty registry is an honest capability state.
 tool_dispatcher = ToolDispatcher()
-
-
-def dummy_corpus_search(query: str):
-    return {"results": ["mock result for " + query]}
-
-
-tool_dispatcher.register_tool(
-    "corpus_search",
-    dummy_corpus_search,
-    "Search the admitted canonical corpus for occurrences.",
-)

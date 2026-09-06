@@ -1,5 +1,3 @@
-from unittest.mock import patch
-
 import pytest
 from hypothesis import given, settings
 from hypothesis import strategies as st
@@ -24,9 +22,8 @@ def create_session():
     return engine, sessionmaker(bind=engine)()
 
 
-def add_run(db, run_id: str, *, contamination: str = "CLEAN"):
-    db.add_all(
-        [
+def add_run(db, run_id: str, *, contamination: str = "CLEAN", judgment: bool = True):
+    records = [
             models.ResearchRun(
                 id=run_id,
                 target_contract="ROOT_CORE",
@@ -44,13 +41,16 @@ def add_run(db, run_id: str, *, contamination: str = "CLEAN"):
                 allowed_sources=["SYNTHETIC_EVALUATION"],
                 is_contaminated=contamination,
             ),
+        ]
+    if judgment:
+        records.append(
             models.SemanticClaim(
                 id=f"claim-{run_id}",
                 research_run_id=run_id,
                 contract_type="ROOT_CORE",
-            ),
-        ]
-    )
+            )
+        )
+    db.add_all(records)
     db.commit()
 
 
@@ -94,11 +94,10 @@ def vector(
 
 
 @pytest.fixture
-def eligible_db(monkeypatch):
+def eligible_db():
     engine, db = create_session()
     add_run(db, "run-a")
     add_run(db, "run-b")
-    monkeypatch.setattr(vector_discovery, "has_valid_gate", lambda *_args: True)
     try:
         yield db
     finally:
@@ -199,10 +198,10 @@ def test_candidate_results_cannot_mutate_claim_graph_or_authority(eligible_db):
     profile = manifest()
     claim = eligible_db.get(models.SemanticClaim, "claim-run-a")
     before = (
-        claim.epistemic_state,
-        claim.review_state,
-        claim.freshness_state,
-        claim.publication_state,
+        claim.research_state,
+        claim.canonical_state,
+        claim.result_strength,
+        claim.verification_state,
         eligible_db.query(models.KnowledgeEdge).count(),
     )
     vector_discovery.VectorDiscoveryService.rebuild_evaluation(
@@ -223,10 +222,10 @@ def test_candidate_results_cannot_mutate_claim_graph_or_authority(eligible_db):
     )
     eligible_db.refresh(claim)
     after = (
-        claim.epistemic_state,
-        claim.review_state,
-        claim.freshness_state,
-        claim.publication_state,
+        claim.research_state,
+        claim.canonical_state,
+        claim.result_strength,
+        claim.verification_state,
         eligible_db.query(models.KnowledgeEdge).count(),
     )
     assert before == after
@@ -340,13 +339,10 @@ def test_invalid_dimension_and_unauthorized_space_fail_before_rebuild(eligible_d
 
 def test_prelock_access_is_blocked_without_marking_contamination():
     engine, db = create_session()
-    add_run(db, "run-prelock")
+    add_run(db, "run-prelock", judgment=False)
     try:
-        with (
-            patch.object(vector_discovery, "has_valid_gate", return_value=False),
-            pytest.raises(
-                vector_discovery.VectorAccessForbidden, match="before Internal Lock"
-            ),
+        with pytest.raises(
+            vector_discovery.VectorAccessForbidden, match="after an internal Research Judgment"
         ):
             vector_discovery.VectorDiscoveryService.rebuild_evaluation(
                 db,
@@ -420,7 +416,7 @@ def test_contaminated_run_and_production_manifest_are_rejected(eligible_db):
 def test_deleting_vector_state_preserves_canonical_sources(eligible_db):
     run = eligible_db.get(models.ResearchRun, "run-a")
     claim = eligible_db.get(models.SemanticClaim, "claim-run-a")
-    before = (run.status, claim.epistemic_state)
+    before = (run.status, claim.research_state, claim.canonical_state)
     vector_discovery.VectorDiscoveryService.rebuild_evaluation(
         eligible_db,
         run_id="run-a",
@@ -436,7 +432,7 @@ def test_deleting_vector_state_preserves_canonical_sources(eligible_db):
     )
     eligible_db.refresh(run)
     eligible_db.refresh(claim)
-    assert (run.status, claim.epistemic_state) == before
+    assert (run.status, claim.research_state, claim.canonical_state) == before
 
 
 def test_space_scoped_deletion_preserves_other_space(eligible_db):
@@ -480,23 +476,22 @@ def test_generated_space_scope_never_returns_another_space(space):
     add_run(db, "run-property")
     profile = manifest(spaces=(space,))
     try:
-        with patch.object(vector_discovery, "has_valid_gate", return_value=True):
-            vector_discovery.VectorDiscoveryService.rebuild_evaluation(
-                db,
-                run_id="run-property",
-                space=space,
-                manifest=profile,
-                vectors=[vector("scoped", (1.0, 0.0, 0.0, 0.0))],
-            )
-            result = vector_discovery.VectorDiscoveryService.discover(
-                db,
-                run_id="run-property",
-                space=space,
-                manifest=profile,
-                query_vector=(1.0, 0.0, 0.0, 0.0),
-                candidate_type=CandidateType.SEMANTIC_NEIGHBOR,
-                top_k=1,
-            )
+        vector_discovery.VectorDiscoveryService.rebuild_evaluation(
+            db,
+            run_id="run-property",
+            space=space,
+            manifest=profile,
+            vectors=[vector("scoped", (1.0, 0.0, 0.0, 0.0))],
+        )
+        result = vector_discovery.VectorDiscoveryService.discover(
+            db,
+            run_id="run-property",
+            space=space,
+            manifest=profile,
+            query_vector=(1.0, 0.0, 0.0, 0.0),
+            candidate_type=CandidateType.SEMANTIC_NEIGHBOR,
+            top_k=1,
+        )
         assert len(result) == 1
         assert result[0].embedding_space is space
     finally:

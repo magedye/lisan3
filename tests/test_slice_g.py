@@ -29,22 +29,19 @@ def override_get_db():
         db.close()
 
 
-@pytest.fixture(autouse=True)
-def released_claim_policy(monkeypatch):
-    monkeypatch.setattr(
-        "backend.domain.services.claim_visibility.has_valid_gate", lambda *_args: True
-    )
-
-
 @pytest.fixture
 def test_db():
     Base.metadata.drop_all(bind=engine)
     Base.metadata.create_all(bind=engine)
     with engine.begin() as connection:
-        connection.execute(text("CREATE TABLE IF NOT EXISTS alembic_version (version_num VARCHAR(32))"))
+        connection.execute(
+            text("CREATE TABLE IF NOT EXISTS alembic_version (version_num VARCHAR(32))")
+        )
         connection.execute(text("DELETE FROM alembic_version"))
         for head in canonical_migration_heads():
-            connection.execute(text("INSERT INTO alembic_version VALUES (:head)"), {"head": head})
+            connection.execute(
+                text("INSERT INTO alembic_version VALUES (:head)"), {"head": head}
+            )
     app.dependency_overrides[get_db] = override_get_db
     db = TestingSessionLocal()
     try:
@@ -56,6 +53,8 @@ def test_db():
 
 @pytest.fixture
 def setup_claim(test_db):
+    # A Research Judgment on a clean-isolation run is released by the source
+    # boundary alone; no lock/gate/review is required to read it.
     run_id = f"run_{uuid.uuid4().hex[:8]}"
     run = models.ResearchRun(
         id=run_id,
@@ -80,26 +79,27 @@ def setup_claim(test_db):
         )
     )
 
-    claim_id = f"clm_{uuid.uuid4().hex[:8]}"
+    claim_id = f"jud_{uuid.uuid4().hex[:8]}"
     claim = models.SemanticClaim(
         id=claim_id,
         research_run_id=run_id,
         contract_type="ROOT_CORE",
-        abstract_root_core="العلم هو الإحاطة بحقيقة الشيء",
-        epistemic_state="LOCK_INTERNAL_RESULT",
-        review_state="NOT_REVIEWED",
-        freshness_state="CURRENT",
-        publication_state="PRIVATE_WORKING",
+        research_state="PREFERRED",
+        canonical_state="NOT_CANONICAL",
+        result_strength="STRONG",
+        verification_state="NOT_VERIFIED",
+        preferred_conclusion="العلم هو الإحاطة بحقيقة الشيء",
+        plain_explanation="العلم هو الإحاطة بحقيقة الشيء",
     )
     test_db.add(claim)
 
     audit = models.AuditLog(
         id=f"aud_{uuid.uuid4().hex[:8]}",
         entity_id=claim_id,
-        entity_type="SemanticClaim",
+        entity_type="ResearchJudgment",
         action="CREATE",
         actor="SYSTEM",
-        new_state="LOCK_INTERNAL_RESULT",
+        new_state="PREFERRED",
     )
     test_db.add(audit)
 
@@ -114,14 +114,14 @@ def setup_claim(test_db):
     ai_rec = models.AIExecutionRecord(
         id=f"ai_{uuid.uuid4().hex[:8]}",
         research_run_id=run_id,
-        analysis_stage="HYPOTHESIS_GENERATION",
+        analysis_stage="RESEARCH_JUDGMENT",
         provider="pydantic-ai",
         model="TestModel",
         skill_version="v4.0",
         prompt_revision="rev_1",
         tools_available=["corpus_search", "lexical_lookup"],
         input_artifact_refs=[run_id],
-        output_artifact_refs=["hyp_1"],
+        output_artifact_refs=["judgment:1"],
         execution_status="SUCCESS",
     )
     test_db.add(ai_rec)
@@ -137,10 +137,10 @@ def test_knowledge_explorer(test_db, setup_claim):
     data = res.json()
     assert data["claim_id"] == claim_id
     assert data["target_expression"] == "علم"
-    assert data["epistemic_state"] == "LOCK_INTERNAL_RESULT"
-    assert data["review_state"] == "NOT_REVIEWED"
-    assert data["freshness_state"] == "CURRENT"
-    assert data["publication_state"] == "PRIVATE_WORKING"
+    assert data["research_state"] == "PREFERRED"
+    assert data["canonical_state"] == "NOT_CANONICAL"
+    assert data["result_strength"] == "STRONG"
+    assert data["verification_state"] == "NOT_VERIFIED"
     assert len(data["dependencies"]) == 1
     assert data["dependencies"][0]["dependency_ref"] == "snap_canonical_01"
     assert "snap_canonical_01" in data["affected_by"]
@@ -153,14 +153,13 @@ def test_knowledge_explorer_not_found(test_db):
 
 def test_audit_logs_read_model(test_db, setup_claim):
     claim_id = setup_claim["claim_id"]
-    # List all
     res = client.get("/audit")
     assert res.status_code == 200
-    logs = res.json()
-    assert len(logs) >= 1
+    assert len(res.json()) >= 1
 
-    # Filter by entity_type and entity_id
-    res_filtered = client.get(f"/audit?entity_type=SemanticClaim&entity_id={claim_id}")
+    res_filtered = client.get(
+        f"/audit?entity_type=ResearchJudgment&entity_id={claim_id}"
+    )
     assert res_filtered.status_code == 200
     filtered_logs = res_filtered.json()
     assert len(filtered_logs) == 1
@@ -168,28 +167,29 @@ def test_audit_logs_read_model(test_db, setup_claim):
     assert filtered_logs[0]["actor"] == "SYSTEM"
 
 
-def test_claim_history_read_model(test_db, setup_claim):
+def test_judgment_history_read_model(test_db, setup_claim):
     claim_id = setup_claim["claim_id"]
-    # Add a review decision
-    rev = models.ReviewDecision(
-        id=f"rev_{uuid.uuid4().hex[:8]}",
+    record = models.VerificationRecord(
+        id=f"ver_{uuid.uuid4().hex[:8]}",
         claim_id=claim_id,
-        reviewer_identity="expert_1",
-        decision="APPROVED",
-        rationale="Evidence validated against canonical corpus.",
+        verifier_identity="expert_1",
+        verification_type="INDEPENDENT",
+        decision="VERIFIED",
+        rationale="Independently reproduced against the admitted corpus.",
+        evidence_refs=[],
         evaluated_claim_revision=1,
     )
-    test_db.add(rev)
+    test_db.add(record)
     test_db.commit()
 
-    res = client.get(f"/claims/{claim_id}/history")
+    res = client.get(f"/judgments/{claim_id}/history")
     assert res.status_code == 200
     data = res.json()
     assert data["claim_id"] == claim_id
     assert data["current_revision"] == 1
     assert len(data["revisions"]) >= 1
-    assert len(data["review_decisions"]) == 1
-    assert data["review_decisions"][0]["decision"] == "APPROVED"
+    assert len(data["verification_records"]) == 1
+    assert data["verification_records"][0]["decision"] == "VERIFIED"
     assert len(data["audit_events"]) >= 1
 
 
@@ -239,18 +239,16 @@ def test_ai_traces_read_model(test_db, setup_claim):
     run_id = setup_claim["run_id"]
     ai_rec_id = setup_claim["ai_rec_id"]
 
-    # List traces for run
     res = client.get(f"/runs/{run_id}/ai/traces")
     assert res.status_code == 200
     traces = res.json()
     assert len(traces) == 1
     assert traces[0]["id"] == ai_rec_id
-    assert traces[0]["analysis_stage"] == "HYPOTHESIS_GENERATION"
+    assert traces[0]["analysis_stage"] == "RESEARCH_JUDGMENT"
     assert traces[0]["provider"] == "pydantic-ai"
     assert traces[0]["execution_status"] == "SUCCESS"
     assert "tools_available" in traces[0]
 
-    # Get specific trace by id
     res_single = client.get(f"/ai/traces/{ai_rec_id}")
     assert res_single.status_code == 200
     single = res_single.json()
@@ -260,28 +258,25 @@ def test_ai_traces_read_model(test_db, setup_claim):
 
 def test_get_provenance(test_db, setup_claim):
     claim_id = setup_claim["claim_id"]
-    res = client.get(f"/claims/{claim_id}/provenance")
+    res = client.get(f"/judgments/{claim_id}/provenance")
     assert res.status_code == 200
     data = res.json()
     assert data["claim"]["id"] == claim_id
+    assert data["claim"]["research_state"] == "PREFERRED"
     assert len(data["audit_trail"]) == 1
     assert data["audit_trail"][0]["action"] == "CREATE"
     assert len(data["dependencies"]) == 1
     assert data["dependencies"][0]["type"] == "CORPUS_SNAPSHOT"
 
 
-def test_multidimensional_quality_and_purity_findings(test_db, setup_claim):
+def test_methodology_diagnostics_expose_all_named_dimensions(test_db, setup_claim):
     claim_id = setup_claim["claim_id"]
-    res = client.get(f"/claims/{claim_id}/quality")
+    res = client.get(f"/judgments/{claim_id}/diagnostics")
     assert res.status_code == 200
     data = res.json()
     assert data["claim_id"] == claim_id
-    assert data["purity_score"] == 0
-    assert data["purity_rating"] == "NOT_EVALUATED"
-    assert len(data["purity_findings"]) == 8
 
-    # Verify canonical 8 dimensions from UX Constitution §6.4
-    dimensions = [f["dimension"] for f in data["purity_findings"]]
+    dimensions = [finding["dimension"] for finding in data["findings"]]
     expected = [
         "DICTIONARY_FIRST",
         "CONTEXTUAL_LEAKAGE",
@@ -295,6 +290,10 @@ def test_multidimensional_quality_and_purity_findings(test_db, setup_claim):
     for exp in expected:
         assert exp in dimensions
 
+    # Diagnostics guide challenge/review; on a clean run none is a hard failure,
+    # and no QualityProfile metrics are manufactured.
+    assert data["hard_blockers"] == []
+    assert all(finding["hard_blocker"] is False for finding in data["findings"])
     assert (
         test_db.query(models.QualityProfile)
         .filter(models.QualityProfile.claim_id == claim_id)
@@ -303,9 +302,9 @@ def test_multidimensional_quality_and_purity_findings(test_db, setup_claim):
     )
 
 
-def test_purity_contamination_detection(test_db):
+def test_diagnostics_hidden_for_contaminated_source_boundary(test_db):
     run = models.ResearchRun(
-        id="run_123",
+        id="run_contaminated",
         target_contract="ROOT_CORE",
         target_expression="test",
         methodology_revision="v4.0",
@@ -313,55 +312,46 @@ def test_purity_contamination_detection(test_db):
         authority_context={"source": "test"},
     )
     isolation = models.IsolationState(
-        id="isolation_run_123",
+        id="isolation_run_contaminated",
         research_run_id=run.id,
         target_contract=run.target_contract,
         corpus_snapshot=run.corpus_snapshot,
         methodology_reference=run.methodology_revision,
         allowed_sources=["QURAN_CORPUS"],
-        is_contaminated="CLEAN",
+        is_contaminated="PRIOR_CONTAMINATED",
+        contamination_reason="actual prohibited-source read",
     )
     test_db.add_all([run, isolation])
-    claim_id = f"clm_tafsir_{uuid.uuid4().hex[:6]}"
+    claim_id = f"jud_tafsir_{uuid.uuid4().hex[:6]}"
     claim = models.SemanticClaim(
         id=claim_id,
-        contract_type="tafsir_contaminated_contract",
-        abstract_root_core="معنى متأثر بتفسير متأخر",
-        epistemic_state="UNRESOLVED",
-        research_run_id="run_123",
+        contract_type="ROOT_CORE",
+        research_state="UNRESOLVED",
+        result_strength="UNRESOLVED",
+        research_run_id=run.id,
     )
     test_db.add(claim)
-
-    hyp = models.Hypothesis(
-        id=f"hyp_{uuid.uuid4().hex[:8]}",
-        research_run_id="run_123",
-        hypothesis_type="H1",
-        target_contract="tafsir_contaminated_contract",
-        statement="Test hypothesis",
-    )
-    test_db.add(hyp)
     test_db.commit()
 
-    res = client.get(f"/claims/{claim_id}/quality")
-    assert res.status_code == 200
-    data = res.json()
-    assert data["purity_score"] == 0
+    # A contaminated source boundary hides the judgment from all read APIs.
+    res = client.get(f"/judgments/{claim_id}/diagnostics")
+    assert res.status_code == 403
 
 
 def test_audit_api_is_read_only_and_cannot_mutate_domain_state(setup_claim, test_db):
     claim = test_db.query(models.SemanticClaim).first()
     run = test_db.query(models.ResearchRun).first()
-    claim_state = claim.epistemic_state
+    claim_state = claim.research_state
     run_state = run.status
 
     resp = client.post(
         "/api/audit/log",
         json={
             "entity_id": claim.id,
-            "entity_type": "SemanticClaim",
+            "entity_type": "ResearchJudgment",
             "action": "MUTATE",
             "previous_state": claim_state,
-            "new_state": "LOCK_INTERNAL_RESULT",
+            "new_state": "PREFERRED",
             "actor": "UNTRUSTED_CLIENT",
         },
     )
@@ -369,17 +359,17 @@ def test_audit_api_is_read_only_and_cannot_mutate_domain_state(setup_claim, test
     assert resp.status_code == 404
     test_db.refresh(claim)
     test_db.refresh(run)
-    assert claim.epistemic_state == claim_state
+    assert claim.research_state == claim_state
     assert run.status == run_state
 
 
 def test_get_reproduction_manifest(test_db, setup_claim):
     claim_id = setup_claim["claim_id"]
-    res = client.get(f"/claims/{claim_id}/reproduction_manifest")
+    res = client.get(f"/judgments/{claim_id}/reproduction-manifest")
     assert res.status_code == 200
     data = res.json()
     assert data["claim_id"] == claim_id
-    assert data["target_expression"] == "العلم هو الإحاطة بحقيقة الشيء"
+    assert data["target_expression"] == "علم"
     assert len(data["dependencies"]) == 1
     assert data["dependencies"][0]["type"] == "CORPUS_SNAPSHOT"
     assert len(data["ai_execution_traces"]) == 1

@@ -111,9 +111,13 @@ or AI output is not canonical merely because it exists.
 Preserve canonical Lisan invariants, including:
 
 - analysis stages remain separate from official status axes;
-- Epistemic, Review, Freshness, and Publication remain independent;
+- `research_state` and `canonical_state` remain distinct; result strength,
+  completeness, falsification, and verification are qualification facts rather
+  than parallel lifecycle axes;
 - failed critical Gates cannot be bypassed;
-- Steward cannot establish semantic truth or force Gate success;
+- research has no administrative Lock/Purity gate; hard source, evidence,
+  coverage, falsification, and canonicalization policies cannot be bypassed;
+- Steward cannot establish semantic truth or force canonicalization;
 - AI output is proposal/analysis, not canonical evidence by itself;
 - Blind Lab isolation is enforced beyond UI visibility;
 - fixture or unverified-source results cannot enter canonical knowledge.

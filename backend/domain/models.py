@@ -22,57 +22,48 @@ from ..infrastructure.database import Base
 
 
 class ResearchStage(str, enum.Enum):
-    PREFLIGHT = "PREFLIGHT"
-    ISOLATION_PREFLIGHT = "ISOLATION_PREFLIGHT"
-    CORPUS_COLLECTION = "CORPUS_COLLECTION"
-    STRUCTURAL_OBSERVATION = "STRUCTURAL_OBSERVATION"
-    HYPOTHESIS_GENERATION = "HYPOTHESIS_GENERATION"
-    DIFFERENTIATION = "DIFFERENTIATION"
-    LOCKING = "LOCKING"
+    RESEARCH = "RESEARCH"
+    CHALLENGE = "CHALLENGE"
+    JUDGMENT = "JUDGMENT"
+    CANONICALIZATION = "CANONICALIZATION"
 
 
-class EpistemicState(str, enum.Enum):
-    OBSERVATION = "OBSERVATION"
-    HYPOTHESIS = "HYPOTHESIS"
-    TESTED = "TESTED"
-    SUPPORTED = "SUPPORTED"
-    LOCK_BLOCKED = "LOCK_BLOCKED"
-    LOCK_INTERNAL_RESULT = "LOCK_INTERNAL_RESULT"
+class ResearchState(str, enum.Enum):
+    PREFERRED = "PREFERRED"
+    UNRESOLVED = "UNRESOLVED"
     REJECTED = "REJECTED"
+
+
+class CanonicalState(str, enum.Enum):
+    NOT_CANONICAL = "NOT_CANONICAL"
+    ACCEPTED = "ACCEPTED"
+    REOPEN_REQUIRED = "REOPEN_REQUIRED"
+
+
+class ResultStrength(str, enum.Enum):
+    WEAK = "WEAK"
+    MODERATE = "MODERATE"
+    STRONG = "STRONG"
     UNRESOLVED = "UNRESOLVED"
 
 
-class ReviewState(str, enum.Enum):
-    NOT_REVIEWED = "NOT_REVIEWED"
-    REVIEW_REQUIRED = "REVIEW_REQUIRED"
-    IN_REVIEW = "IN_REVIEW"
-    APPROVED = "APPROVED"
-    REJECTED = "REJECTED"
-    OWNER_DECISION_REQUIRED = "OWNER_DECISION_REQUIRED"
+class VerificationState(str, enum.Enum):
+    NOT_REQUIRED = "NOT_REQUIRED"
+    NOT_VERIFIED = "NOT_VERIFIED"
+    VERIFIED = "VERIFIED"
 
 
-class FreshnessState(str, enum.Enum):
-    CURRENT = "CURRENT"
-    STALE = "STALE"
-    INVALIDATED = "INVALIDATED"
-    REVALIDATION_REQUIRED = "REVALIDATION_REQUIRED"
+class FalsificationStatus(str, enum.Enum):
+    NOT_REQUIRED = "NOT_REQUIRED"
+    NOT_RUN = "NOT_RUN"
+    PASSED = "PASSED"
+    FAILED = "FAILED"
 
 
-class PublicationState(str, enum.Enum):
-    PRIVATE_WORKING = "PRIVATE_WORKING"
-    REVIEWABLE = "REVIEWABLE"
-    PUBLISHABLE = "PUBLISHABLE"
-    PUBLISHED = "PUBLISHED"
-    WITHDRAWN = "WITHDRAWN"
-
-
-class OfficialStatus(str, enum.Enum):
-    """Legacy alias preserved for compatibility."""
-
-    UNRESOLVED = "UNRESOLVED"
-    LOCK_BLOCKED = "LOCK_BLOCKED"
-    LOCK_INTERNAL_RESULT = "LOCK_INTERNAL_RESULT"
-    REVALIDATION_REQUIRED = "REVALIDATION_REQUIRED"
+class ClaimScope(str, enum.Enum):
+    UNIVERSAL = "UNIVERSAL"
+    REPRESENTATIVE = "REPRESENTATIVE"
+    LOCAL = "LOCAL"
 
 
 class MethodologyRevision(Base):
@@ -137,7 +128,7 @@ class ResearchRun(Base):
     methodology_revision = Column(String, nullable=False)
     corpus_snapshot = Column(String, nullable=False)
     authority_context = Column(JSON, nullable=False)
-    current_stage = Column(String, default=ResearchStage.PREFLIGHT.value)
+    current_stage = Column(String, default=ResearchStage.RESEARCH.value)
     status = Column(String, default="ACTIVE")
     created_at = Column(DateTime, default=datetime.datetime.utcnow)
     updated_at = Column(
@@ -145,7 +136,6 @@ class ResearchRun(Base):
     )
 
     claims = relationship("SemanticClaim", back_populates="research_run")
-    gate_reports = relationship("GateReport", back_populates="research_run")
     ai_execution_records = relationship(
         "AIExecutionRecord", back_populates="research_run"
     )
@@ -155,94 +145,92 @@ class SemanticClaim(Base):
     __tablename__ = "semantic_claims"
     __table_args__ = (
         CheckConstraint(
-            "epistemic_state IN ('OBSERVATION', 'HYPOTHESIS', 'TESTED', "
-            "'SUPPORTED', 'LOCK_BLOCKED', 'LOCK_INTERNAL_RESULT', 'REJECTED', "
-            "'UNRESOLVED')",
-            name="ck_semantic_claim_epistemic_state",
+            "research_state IN ('PREFERRED', 'UNRESOLVED', 'REJECTED')",
+            name="ck_semantic_claim_research_state",
         ),
         CheckConstraint(
-            "review_state IN ('NOT_REVIEWED', 'REVIEW_REQUIRED', 'IN_REVIEW', "
-            "'APPROVED', 'REJECTED', 'OWNER_DECISION_REQUIRED')",
-            name="ck_semantic_claim_review_state",
+            "canonical_state IN ('NOT_CANONICAL', 'ACCEPTED', 'REOPEN_REQUIRED')",
+            name="ck_semantic_claim_canonical_state",
         ),
         CheckConstraint(
-            "freshness_state IN ('CURRENT', 'STALE', 'INVALIDATED', "
-            "'REVALIDATION_REQUIRED')",
-            name="ck_semantic_claim_freshness_state",
+            "result_strength IN ('WEAK', 'MODERATE', 'STRONG', 'UNRESOLVED')",
+            name="ck_semantic_claim_result_strength",
         ),
         CheckConstraint(
-            "publication_state IN ('PRIVATE_WORKING', 'REVIEWABLE', "
-            "'PUBLISHABLE', 'PUBLISHED', 'WITHDRAWN')",
-            name="ck_semantic_claim_publication_state",
+            "verification_state IN ('NOT_REQUIRED', 'NOT_VERIFIED', 'VERIFIED')",
+            name="ck_semantic_claim_verification_state",
+        ),
+        CheckConstraint(
+            "falsification_status IN ('NOT_REQUIRED', 'NOT_RUN', 'PASSED', 'FAILED')",
+            name="ck_semantic_claim_falsification_status",
+        ),
+        CheckConstraint(
+            "claim_scope IN ('UNIVERSAL', 'REPRESENTATIVE', 'LOCAL')",
+            name="ck_semantic_claim_scope",
         ),
     )
 
     id = Column(String, primary_key=True, index=True)
     research_run_id = Column(String, ForeignKey("research_runs.id"))
     contract_type = Column(String, nullable=False)
-    # The 4 Canonical Independent Axes (UX Constitution v4.0 §5)
-    epistemic_state = Column(
-        String, nullable=False, default=EpistemicState.UNRESOLVED.value
+    research_state = Column(
+        String, nullable=False, default=ResearchState.UNRESOLVED.value
     )
-    review_state = Column(String, nullable=False, default=ReviewState.NOT_REVIEWED.value)
-    freshness_state = Column(
-        String, nullable=False, default=FreshnessState.CURRENT.value
+    canonical_state = Column(
+        String, nullable=False, default=CanonicalState.NOT_CANONICAL.value
     )
-    publication_state = Column(
-        String, nullable=False, default=PublicationState.PRIVATE_WORKING.value
+    result_strength = Column(
+        String, nullable=False, default=ResultStrength.UNRESOLVED.value
     )
+    verification_state = Column(
+        String, nullable=False, default=VerificationState.NOT_REQUIRED.value
+    )
+    falsification_status = Column(
+        String, nullable=False, default=FalsificationStatus.NOT_REQUIRED.value
+    )
+    claim_scope = Column(String, nullable=False, default=ClaimScope.LOCAL.value)
+    sampling_basis = Column(String)
 
     revision_id = Column(Integer, default=1)
 
-    # Coverage Profile
-    index_coverage = Column(String)
-    deep_analysis_coverage = Column(String)
+    # Host-derived coverage; the AI/client cannot self-certify it.
+    research_completeness = Column(JSON, nullable=False, default=dict)
 
-    # Core Semantics
-    abstract_root_core = Column(String)
-    root_definition = Column(String)
-    root_meaning = Column(String)
+    # Semantic result and layer attribution.
+    preferred_conclusion = Column(String)
     root_concept = Column(String)
+    plain_explanation = Column(String)
+    semantic_boundary = Column(String)
+    layer_attribution = Column(JSON, nullable=False, default=dict)
 
     # Falsification
-    rejection_condition = Column(String)
-    supporting_evidence = Column(JSON)
-    counterevidence = Column(JSON)
-    unresolved_cases = Column(JSON)
+    rejection_condition = Column(JSON)
+    supporting_evidence = Column(JSON, nullable=False, default=list)
+    counterevidence = Column(JSON, nullable=False, default=list)
+    unresolved_cases = Column(JSON, nullable=False, default=list)
+    hard_cases = Column(JSON, nullable=False, default=list)
+    strongest_counterexample = Column(String)
+    strongest_competitor = Column(String)
+    reopen_conditions = Column(JSON, nullable=False, default=list)
+    accepted_at = Column(DateTime)
 
     created_at = Column(DateTime, default=datetime.datetime.utcnow)
 
     research_run = relationship("ResearchRun", back_populates="claims")
 
 
-class ReviewDecision(Base):
-    __tablename__ = "review_decisions"
+class VerificationRecord(Base):
+    __tablename__ = "verification_records"
 
     id = Column(String, primary_key=True, index=True)
     claim_id = Column(String, ForeignKey("semantic_claims.id"))
-    reviewer_identity = Column(String, nullable=False)
-    decision = Column(String, nullable=False)  # APPROVED, REJECTED, REQUEST_REVISION
+    verifier_identity = Column(String, nullable=False)
+    verification_type = Column(String, nullable=False)
+    decision = Column(String, nullable=False)  # VERIFIED, REJECTED
     rationale = Column(String)
+    evidence_refs = Column(JSON, nullable=False, default=list)
     evaluated_claim_revision = Column(Integer, nullable=False, default=1)
     created_at = Column(DateTime, default=datetime.datetime.utcnow)
-
-
-class GateReport(Base):
-    __tablename__ = "gate_reports"
-
-    id = Column(String, primary_key=True, index=True)
-    research_run_id = Column(String, ForeignKey("research_runs.id"))
-    gate_code = Column(String, nullable=False)
-    display_name = Column(String, nullable=True)
-    status = Column(String, nullable=False)  # PASSED, FAILED, BLOCKED
-    evidence_refs = Column(JSON, nullable=True)
-    failure_reason = Column(String)
-    evaluated_revision = Column(String)
-    required_action = Column(String)
-
-    created_at = Column(DateTime, default=datetime.datetime.utcnow)
-
-    research_run = relationship("ResearchRun", back_populates="gate_reports")
 
 
 class AIExecutionRecord(Base):

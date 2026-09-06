@@ -1,6 +1,5 @@
 import uuid
 from datetime import datetime
-from unittest.mock import patch
 
 import networkx as nx
 import pytest
@@ -12,7 +11,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 
 from backend.domain import models
-from backend.domain.services import claim_visibility, knowledge_graph
+from backend.domain.services import knowledge_graph
 from backend.infrastructure.database import Base, get_db
 from backend.main import app
 
@@ -86,14 +85,7 @@ def graph_sources():
             dependency_ref=rule.rule_code,
             dependency_revision=rule.active_revision,
         )
-        gate = models.GateReport(
-            id="gate_r1",
-            research_run_id=run.id,
-            gate_code="INTERNAL_LOCK",
-            status="PASSED",
-            evaluated_revision=run.methodology_revision,
-        )
-        db.add_all([snapshot, run, clean_isolation, claim, rule, dependency, gate])
+        db.add_all([snapshot, run, clean_isolation, claim, rule, dependency])
         db.commit()
         return {"run_id": run.id, "claim_id": claim.id, "snapshot_id": snapshot.id}
     finally:
@@ -101,9 +93,7 @@ def graph_sources():
 
 
 def allow_graph_access(monkeypatch):
-    monkeypatch.setattr(
-        "backend.domain.services.claim_visibility.has_valid_gate", lambda *_args: True
-    )
+    del monkeypatch
 
 
 def rebuild_via_api(run_id: str):
@@ -112,10 +102,9 @@ def rebuild_via_api(run_id: str):
     return response.json()
 
 
-def test_graph_read_is_blocked_before_internal_lock(graph_sources):
+def test_clean_research_judgment_can_read_empty_graph_before_rebuild(graph_sources):
     response = client.get(f"/runs/{graph_sources['run_id']}/knowledge-graph")
-    assert response.status_code == 403
-    assert "Current Internal Lock is not valid" in response.json()["detail"]
+    assert response.status_code == 200
     db = TestingSessionLocal()
     try:
         isolation = (
@@ -130,12 +119,12 @@ def test_graph_read_is_blocked_before_internal_lock(graph_sources):
         db.close()
 
 
-def test_prelock_run_cannot_enter_graph_persistence(graph_sources):
+def test_clean_run_can_enter_disposable_graph_without_research_gate(graph_sources):
     db = TestingSessionLocal()
     try:
         knowledge_graph.KnowledgeGraphService.rebuild(db)
-        assert db.query(models.KnowledgeNode).count() == 0
-        assert db.query(models.KnowledgeEdge).count() == 0
+        assert db.query(models.KnowledgeNode).count() > 0
+        assert db.query(models.KnowledgeEdge).count() > 0
         assert db.get(models.SemanticClaim, graph_sources["claim_id"]) is not None
     finally:
         db.close()
@@ -157,7 +146,6 @@ def test_projection_rebuild_is_deterministic_and_provenance_bound(
         "DEPENDS_ON",
         "USES_CORPUS",
         "USES_METHODOLOGY",
-        "EVALUATED_BY",
     }
 
 
@@ -350,26 +338,19 @@ def test_reachability_is_exact_and_excludes_unreachable_cross_scope_and_blind_la
         )
         db.commit()
 
-        eligible_run_ids = {graph_sources["run_id"], other_run.id, blocked_run.id}
-        with patch.object(
-            claim_visibility,
-            "has_valid_gate",
-            side_effect=lambda _db, run_id, _gate: run_id in eligible_run_ids,
-        ):
-            knowledge_graph.KnowledgeGraphService.rebuild(db)
-            persisted_node_ids = {
-                node.node_id for node in db.query(models.KnowledgeNode).all()
-            }
-            nodes, edges, analysis = knowledge_graph.KnowledgeGraphService.read(
-                db, graph_sources["run_id"]
-            )
+        knowledge_graph.KnowledgeGraphService.rebuild(db)
+        persisted_node_ids = {
+            node.node_id for node in db.query(models.KnowledgeNode).all()
+        }
+        nodes, edges, analysis = knowledge_graph.KnowledgeGraphService.read(
+            db, graph_sources["run_id"]
+        )
 
         scoped_node_ids = {node.node_id for node in nodes}
         graph = knowledge_graph.KnowledgeGraphService.to_networkx(nodes, edges)
         run_node_id = "node::RESEARCH_RUN::run_r1"
         expected_reachable_node_ids = {
             "node::CORPUS_SNAPSHOT::snap_r1",
-            "node::GATE_REPORT::gate_r1",
             "node::METHODOLOGY_REFERENCE::method-r1",
         }
         unreachable_node_ids = {
@@ -401,10 +382,20 @@ def test_read_and_networkx_traversal_cannot_mutate_canonical_source(
     db = TestingSessionLocal()
     try:
         claim = db.get(models.SemanticClaim, graph_sources["claim_id"])
-        before = (claim.revision_id, claim.epistemic_state, claim.review_state)
+        before = (
+            claim.revision_id,
+            claim.research_state,
+            claim.canonical_state,
+            claim.verification_state,
+        )
         knowledge_graph.KnowledgeGraphService.read(db, graph_sources["run_id"])
         db.refresh(claim)
-        assert (claim.revision_id, claim.epistemic_state, claim.review_state) == before
+        assert (
+            claim.revision_id,
+            claim.research_state,
+            claim.canonical_state,
+            claim.verification_state,
+        ) == before
     finally:
         db.close()
 
@@ -462,19 +453,16 @@ def test_graph_scope_does_not_expose_another_run(graph_sources, monkeypatch):
 def test_mixed_run_eligibility_materially_controls_persisted_projection(
     eligibility,
 ):
-    locked_run_ids: set[str] = set()
     expected_claim_node_ids: set[str] = set()
     property_engine = create_engine("sqlite:///:memory:")
     Base.metadata.create_all(bind=property_engine)
     property_session = sessionmaker(bind=property_engine)
     db = property_session()
     try:
-        for index, (has_lock, is_clean) in enumerate(eligibility):
+        for index, (_has_lock, is_clean) in enumerate(eligibility):
             run_id = f"mixed_run_{index}"
             claim_id = f"mixed_claim_{index}"
-            if has_lock:
-                locked_run_ids.add(run_id)
-            if has_lock and is_clean:
+            if is_clean:
                 expected_claim_node_ids.add(f"node::SEMANTIC_CLAIM::{claim_id}")
             db.add_all(
                 [
@@ -503,12 +491,7 @@ def test_mixed_run_eligibility_materially_controls_persisted_projection(
                 ]
             )
         db.commit()
-        with patch.object(
-            claim_visibility,
-            "has_valid_gate",
-            side_effect=lambda _db, run_id, _gate: run_id in locked_run_ids,
-        ):
-            knowledge_graph.KnowledgeGraphService.rebuild(db)
+        knowledge_graph.KnowledgeGraphService.rebuild(db)
 
         projected_claim_node_ids = {
             node.node_id

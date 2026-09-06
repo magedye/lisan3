@@ -2,23 +2,20 @@
 
 import type { components } from "@/api/openapi";
 import { EmptyState, ErrorState, LoadingState, PageHeader, Panel } from "@/components/page-primitives";
-import { StatusAxes, StatusBadge } from "@/components/status-axes";
+import { ResearchStatus, StatusBadge } from "@/components/status-axes";
 import { useApiResource } from "@/lib/use-api-resource";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useState } from "react";
 
 type Workspace = components["schemas"]["RunWorkspaceResponse"];
-type View = "overview" | "artifacts" | "gates";
+type View = "overview" | "artifacts" | "judgments";
 
 const stages = [
-  "PREFLIGHT",
-  "ISOLATION_PREFLIGHT",
-  "CORPUS_COLLECTION",
-  "STRUCTURAL_OBSERVATION",
-  "HYPOTHESIS_GENERATION",
-  "DIFFERENTIATION",
-  "LOCKING",
+  "RESEARCH",
+  "CHALLENGE",
+  "JUDGMENT",
+  "CANONICALIZATION",
 ];
 
 export default function ResearchRunPage() {
@@ -38,7 +35,7 @@ export default function ResearchRunPage() {
       <PageHeader
         eyebrow="RES-RUN-DETAIL · Persisted Workspace"
         title={`تشغيل البحث: ${run.target_expression}`}
-        description="مساحة بحث مستأنفة من SQLite؛ المراحل ليست حالة معرفية، والمواد المقفلة لا تظهر قبل تحقق حدود العزل والقفل القائمة."
+        description="مساحة بحث مستأنفة من SQLite؛ نقاط التقدم وصفية، وحكم البحث منفصل عن الاعتماد الرسمي."
         actions={
           <>
             <Link className="button button-primary button-small" href={`/run/${run.id}/blind`}>فتح المختبر المعزول</Link>
@@ -59,7 +56,7 @@ export default function ResearchRunPage() {
         {([
           ["overview", "نظرة عامة"],
           ["artifacts", "المواد البحثية"],
-          ["gates", "البوابات والنتائج"],
+          ["judgments", "الأحكام البحثية"],
         ] as const).map(([value, label]) => (
           <button key={value} className="tab" role="tab" type="button" aria-selected={view === value} onClick={() => setView(value)}>{label}</button>
         ))}
@@ -71,14 +68,14 @@ export default function ResearchRunPage() {
             <div className="progression" aria-label="تسلسل مراحل البحث">
               {stages.map((stage) => <span key={stage} className={run.current_stage === stage ? "active" : undefined}>{stage}</span>)}
             </div>
-            <p className="field-error">اكتمال مرحلة أو فحص لا يعني صحة الفرضية ولا يمنح قفلاً معرفياً.</p>
+            <p className="field-error">نقطة التقدم لا تمنح سلطة؛ الدليل والدحض يبرران الحكم، والاعتماد انتقال منفصل.</p>
           </Panel>
 
           <section className="metric-grid" aria-label="جرد المواد المحفوظة">
             <article className="metric-card information"><span>الملاحظات البنيوية</span><strong>{data.observations.length}</strong><small>ObservationArtifact</small></article>
             <article className="metric-card warning"><span>الفرضيات</span><strong>{data.hypotheses.length}</strong><small>H1 / H2 / C0</small></article>
-            <article className="metric-card stale"><span>تقارير البوابات</span><strong>{data.gates.length}</strong><small>قائمة ديناميكية من العقد</small></article>
-            <article className="metric-card positive"><span>الدعاوى المتاحة</span><strong>{data.claims.length}</strong><small>{data.claims_visible ? "حدود الإتاحة محققة" : "محجوبة قبل الإتاحة"}</small></article>
+            <article className="metric-card stale"><span>الحالات غير المحسومة</span><strong>{data.research_judgments.filter((item) => item.research_state === "UNRESOLVED").length}</strong><small>نتيجة صحيحة لا تحتاج Lock</small></article>
+            <article className="metric-card positive"><span>الأحكام البحثية</span><strong>{data.research_judgments.length}</strong><small>{data.judgments_visible ? "حد المصدر صالح" : "محجوبة بسبب حد المصدر"}</small></article>
           </section>
 
           <Panel title="نقطة الاستئناف الدائمة" eyebrow="Durable checkpoint retrieved">
@@ -127,26 +124,14 @@ export default function ResearchRunPage() {
         </div>
       )}
 
-      {view === "gates" && (
-        <>
-          <Panel title="تقارير بوابات القفل" eyebrow="Dynamic GateReport list">
-            {data.gates.length === 0 ? <EmptyState title="لا توجد تقارير بوابات" detail="لن تفترض الواجهة عدداً ثابتاً أو حالة نجاح." /> : (
-              <div className="gate-list">{data.gates.map((gate) => (
-                <article className="gate-card" key={gate.id}>
-                  <div><h3 className="technical-text">{gate.gate_code}</h3><p>Revision: {gate.evaluated_revision}</p></div>
-                  <div><StatusBadge label="الحالة" value={gate.status} /><p>{gate.failure_reason || gate.required_action || "لا يوجد سبب أو إجراء إضافي مسجل."}</p></div>
-                </article>
-              ))}</div>
-            )}
-          </Panel>
-
-          <Panel title="الدعاوى المرتبطة" eyebrow="Four independent axes">
-            {!data.claims_visible && <div className="state-card"><strong>المواد المقفلة غير متاحة</strong><p>الإتاحة تفشل مغلقة حتى يتحقق Internal Lock القائم مع عزل CLEAN. لا تعرض الواجهة prior أو تعريفاً سابقاً.</p></div>}
-            {data.claims_visible && data.claims.length === 0 && <EmptyState title="لا توجد دعاوى" detail="اجتياز حدود الإتاحة لا يعني وجود دعوى محفوظة." />}
-            <div className="stack">{data.claims.map((claim) => (
+      {view === "judgments" && (
+          <Panel title="الأحكام البحثية" eyebrow="Research state ≠ Canonical state">
+            {!data.judgments_visible && <div className="state-card"><strong>الأحكام غير متاحة</strong><p>يوجد غياب لعزل المصدر أو تلوث فعلي؛ لا توجد بوابة Lock إدارية.</p></div>}
+            {data.judgments_visible && data.research_judgments.length === 0 && <EmptyState title="لا توجد أحكام بحثية" detail="يمكن حفظ UNRESOLVED أو ترجيح مؤهل دون قرار مالك." />}
+            <div className="stack">{data.research_judgments.map((claim) => (
               <article className="list-card" key={claim.id}>
-                <div className="list-row"><div><strong>{claim.abstract_root_core || claim.root_definition || "دعوى دون نص دلالي مسجل"}</strong><small className="technical-text">{claim.id}</small></div><Link className="button button-secondary button-small" href={`/claims/${claim.id}`}>فتح التتبّع</Link></div>
-                <StatusAxes epistemic={claim.epistemic_state} review={claim.review_state} freshness={claim.freshness_state} publication={claim.publication_state} compact />
+                <div className="list-row"><div><strong>{claim.preferred_conclusion || claim.root_concept || "نتيجة غير محسومة"}</strong><small className="technical-text">{claim.id}</small></div><Link className="button button-secondary button-small" href={`/claims/${claim.id}`}>فتح التتبّع</Link></div>
+                <ResearchStatus research={claim.research_state} canonical={claim.canonical_state} compact />
                 <div className="evidence-grid">
                   <div className="evidence-column"><h3>الأدلة المؤيدة</h3><pre>{JSON.stringify(claim.supporting_evidence ?? {}, null, 2)}</pre></div>
                   <div className="evidence-column counter"><h3>الأدلة المعارضة</h3><pre>{JSON.stringify(claim.counterevidence ?? {}, null, 2)}</pre></div>
@@ -154,7 +139,6 @@ export default function ResearchRunPage() {
               </article>
             ))}</div>
           </Panel>
-        </>
       )}
 
       <details className="raw-details">

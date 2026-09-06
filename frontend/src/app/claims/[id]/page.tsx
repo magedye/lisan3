@@ -2,24 +2,24 @@
 
 import type { components } from "@/api/openapi";
 import { EmptyState, ErrorState, LoadingState, PageHeader, Panel } from "@/components/page-primitives";
-import { StatusAxes, StatusBadge } from "@/components/status-axes";
+import { ResearchStatus, StatusBadge } from "@/components/status-axes";
 import { apiFetch } from "@/lib/api";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
 type Claim = components["schemas"]["SemanticClaimResponse"];
-type Quality = components["schemas"]["QualityProfileResponse"];
+type Diagnostics = components["schemas"]["MethodologyDiagnosticsResponse"];
 type Manifest = components["schemas"]["ReproductionManifestResponse"];
 type History = components["schemas"]["ClaimHistoryResponse"];
 type Provenance = {
-  claim: { id: string; contract_type: string; epistemic_state: string };
+  claim: { id: string; contract_type: string; research_state: string; canonical_state: string };
   dependencies: Array<{ type: string; ref: string; rev: number | null }>;
   research_run: { id: string; methodology_revision: string } | null;
   corpus_snapshot: string | null;
   audit_trail: Array<{ action: string; actor: string; new_state: string | null; timestamp: string }>;
 };
-type ClaimBundle = { claim: Claim; quality: Quality; manifest: Manifest; history: History; provenance: Provenance };
+type ClaimBundle = { claim: Claim; diagnostics: Diagnostics; manifest: Manifest; history: History; provenance: Provenance };
 
 export default function ClaimPage() {
   const params = useParams();
@@ -35,24 +35,24 @@ export default function ClaimPage() {
       try {
         // Establish claim visibility first. The dependent reads must never race
         // ahead of the Blind Lab release boundary enforced by this contract.
-        const claim = await apiFetch<Claim>(`/api/claims/${claimId}`, {
+        const claim = await apiFetch<Claim>(`/api/judgments/${claimId}`, {
           signal: controller.signal,
         });
         const provenance = await apiFetch<Provenance>(
-          `/api/claims/${claimId}/provenance`,
+          `/api/judgments/${claimId}/provenance`,
           { signal: controller.signal },
         );
-        const quality = await apiFetch<Quality>(`/api/claims/${claimId}/quality`, {
+        const diagnostics = await apiFetch<Diagnostics>(`/api/judgments/${claimId}/diagnostics`, {
           signal: controller.signal,
         });
         const manifest = await apiFetch<Manifest>(
-          `/api/claims/${claimId}/reproduction_manifest`,
+          `/api/judgments/${claimId}/reproduction-manifest`,
           { signal: controller.signal },
         );
-        const history = await apiFetch<History>(`/api/claims/${claimId}/history`, {
+        const history = await apiFetch<History>(`/api/judgments/${claimId}/history`, {
           signal: controller.signal,
         });
-        setBundle({ claim, provenance, quality, manifest, history });
+        setBundle({ claim, provenance, diagnostics, manifest, history });
       } catch (reason) {
         if (reason instanceof DOMException && reason.name === "AbortError") return;
         setError(reason instanceof Error ? reason.message : "تعذر تحميل تتبع الدعوى.");
@@ -67,24 +67,24 @@ export default function ClaimPage() {
   if (loading) return <main className="page-frame"><LoadingState label="جارٍ بناء سلسلة تتبّع الدعوى…" /></main>;
   if (error || !bundle) return <main className="page-frame"><ErrorState message={error ?? "Claim not found."} retry={() => { setLoading(true); setError(null); setRevision((value) => value + 1); }} /></main>;
 
-  const { claim, provenance, quality, manifest, history } = bundle;
-  const claimText = claim.abstract_root_core || claim.root_definition || claim.root_meaning || claim.root_concept;
+  const { claim, provenance, diagnostics, manifest, history } = bundle;
+  const claimText = claim.preferred_conclusion || claim.root_concept;
 
   return (
     <main className="page-frame">
       <PageHeader
         eyebrow="CLAIM TRACEABILITY · Governed Read Model"
         title={claimText || "دعوى دلالية دون نص مسجل"}
-        description={`العقد: ${claim.contract_type}. تُعرض الحالة والدليل والمعارضات والمراجعة والمصدر دون استكمال معنى مفقود.`}
+        description={`العقد: ${claim.contract_type}. يُعرض حكم البحث منفصلاً عن الاعتماد، مع الدليل والمعارضات والمصدر.`}
         actions={<span className="status-badge status-information"><span aria-hidden="true">●</span><span className="technical-text">{claim.id}</span></span>}
       />
 
-      <StatusAxes epistemic={claim.epistemic_state} review={claim.review_state} freshness={claim.freshness_state} publication={claim.publication_state} />
+      <ResearchStatus research={claim.research_state} canonical={claim.canonical_state} strength={claim.result_strength} verification={claim.verification_state} />
 
-      {claim.freshness_state !== "CURRENT" && (
+      {claim.canonical_state === "REOPEN_REQUIRED" && (
         <div className="panel panel-warning" role="alert">
-          <strong>هذه الدعوى ليست CURRENT.</strong>
-          <p>لا تُعرض كحقيقة حالية؛ راجع سجل الإبطال والمراجعات قبل أي استخدام.</p>
+          <strong>هذه النتيجة تحتاج إعادة فتح البحث.</strong>
+          <p>لا تُسترجع كنتيجة معتمدة حتى معالجة الدليل الجديد والتحقق من النسخة الحالية.</p>
         </div>
       )}
 
@@ -107,15 +107,13 @@ export default function ClaimPage() {
           </div>
         </Panel>
 
-        <Panel title="النقاء المنهجي" eyebrow="Eight dimensions · separate from quality">
+        <Panel title="التشخيصات المنهجية" eyebrow="Diagnostics · not research gates">
           <div className="button-row">
-            <span id="quality-availability"><StatusBadge label="QualityProfile" value={quality.available ? "AVAILABLE" : "UNAVAILABLE"} /></span>
-            <span id="qual-rating"><StatusBadge label="التقييم" value={quality.purity_rating} /></span>
-            <span id="qual-findings" className="status-badge status-neutral"><span aria-hidden="true">●</span>{quality.purity_findings.length} findings</span>
+            <span id="qual-findings" className="status-badge status-neutral"><span aria-hidden="true">●</span>{diagnostics.findings.length} findings</span>
+            <StatusBadge label="Hard blockers" value={diagnostics.hard_blockers.length ? "FAILED" : "CLEAN"} />
           </div>
-          {!quality.available && <div className="state-card" role="status"><strong>QualityProfile unavailable — لم يُقيّم ملف الجودة</strong><p>المعروض أدناه اشتقاق حتمي للنقاء المنهجي فقط؛ المقاييس الأخرى غير متاحة ولا تُستكمل بقيم افتراضية.</p></div>}
-          <p>{quality.evaluation_summary}</p>
-          <div className="stack">{quality.purity_findings.map((finding) => (
+          <p>غياب extractor يظهر `NOT_EVALUATED` ولا يتحول إلى بوابة فشل عامة.</p>
+          <div className="stack">{diagnostics.findings.map((finding) => (
             <article className="list-card" key={finding.dimension}>
               <div className="list-row"><div><strong className="technical-text">{finding.dimension}</strong><span>{finding.details}</span></div><StatusBadge label={finding.severity} value={finding.status} /></div>
             </article>
@@ -123,15 +121,15 @@ export default function ClaimPage() {
         </Panel>
       </div>
 
-      <Panel title="التاريخ والمراجعة" eyebrow={`Revision ${history.current_revision}`}>
-        {history.review_decisions.length === 0 && history.audit_events.length === 0 ? (
-          <EmptyState title="لا يوجد تاريخ مراجعة أو تدقيق" detail="تعرض الواجهة السجل الفعلي فقط." />
+      <Panel title="التاريخ والتحقق" eyebrow={`Revision ${history.current_revision}`}>
+        {history.verification_records.length === 0 && history.audit_events.length === 0 ? (
+          <EmptyState title="لا يوجد تاريخ تحقق أو تدقيق" detail="تعرض الواجهة السجل الفعلي فقط." />
         ) : (
           <div className="two-column equal-columns">
             <div>
-              <h3>قرارات المراجعة</h3>
-              <div className="stack">{history.review_decisions.map((review) => (
-                <article className="list-card" key={review.id}><StatusBadge label="القرار" value={review.decision} /><strong>{review.reviewer_identity}</strong><span>{review.rationale || "لا توجد حيثيات مسجلة"}</span><small>Revision {review.evaluated_claim_revision}</small></article>
+              <h3>سجلات التحقق</h3>
+              <div className="stack">{history.verification_records.map((verification) => (
+                <article className="list-card" key={verification.id}><StatusBadge label="القرار" value={verification.decision} /><strong>{verification.verifier_identity}</strong><span>{verification.rationale || "لا توجد حيثيات مسجلة"}</span><small>Revision {verification.evaluated_claim_revision}</small></article>
               ))}</div>
             </div>
             <div>

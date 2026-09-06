@@ -34,10 +34,10 @@ client = TestClient(app)
 def setup_db():
     app.dependency_overrides[get_db] = override_get_db
     db = TestingSessionLocal()
-    db.query(models.GateReport).delete()
     db.query(models.EssentialNeighbor).delete()
     db.query(models.Hypothesis).delete()
     db.query(models.ObservationArtifact).delete()
+    db.query(models.CorpusOccurrence).delete()
     db.query(models.IsolationEvent).delete()
     db.query(models.IsolationState).delete()
     db.query(models.ResearchRun).delete()
@@ -47,9 +47,10 @@ def setup_db():
     app.dependency_overrides.clear()
 
 
-def test_slice_c_end_to_end():
-    # 1. Setup an explicit fixture Run and Blind Lab. Production run admission
-    # intentionally rejects arbitrary methodology and Corpus identifiers.
+def test_slice_c_hypothesis_and_neighbor_flow():
+    # The simplified contract keeps the free research flow (hypotheses,
+    # falsification conditions, neighbor differentiation) but no longer routes
+    # it through a LOCK gate or a gate-authorized claim-creation endpoint.
     run_id = "run_slice_c_fixture"
     db = TestingSessionLocal()
     db.add(
@@ -62,19 +63,23 @@ def test_slice_c_end_to_end():
             authority_context={"profile": "test_fixture"},
         )
     )
+    db.add(
+        models.CorpusOccurrence(
+            id="occ_c1",
+            snapshot_id="snap1-test-fixture",
+            expression="ن ش ز",
+            verse_ref="58:11",
+            text="انشزوا فانشزوا",
+        )
+    )
     db.commit()
     db.close()
-    client.post(
-        f"/runs/{run_id}/blind/preflight",
-        json={
-            "target_contract": "ROOT_CORE",
-            "corpus_snapshot": "snap1-test-fixture",
-            "methodology_reference": "ref_v1",
-            "allowed_sources": ["QURAN_CORPUS"],
-        },
-    )
 
-    # 2. Hypothesis (H1)
+    # Host-derived source-isolation preflight (a resumable checkpoint, not a gate).
+    pre = client.post(f"/runs/{run_id}/blind/preflight")
+    assert pre.status_code == 200
+
+    # Hypothesis (H1) with a resolvable admitted-occurrence evidence reference.
     hyp_resp = client.post(
         f"/runs/{run_id}/hypotheses",
         json={
@@ -82,7 +87,7 @@ def test_slice_c_end_to_end():
             "target_contract": "ROOT_CORE",
             "scope": "All corpus occurrences",
             "statement": "Primary meaning is rising/elevation",
-            "supporting_evidence_refs": ["obs_1", "obs_2"],
+            "supporting_evidence_refs": ["occurrence:occ_c1"],
             "counterevidence_refs": [],
             "unresolved_cases": [],
             "rejection_condition": {
@@ -98,7 +103,7 @@ def test_slice_c_end_to_end():
     assert hyp_resp.status_code == 200
     hyp_id = hyp_resp.json()["id"]
 
-    # 3. Rejection Condition validation (Circular logic rejected)
+    # A circular rejection condition is still rejected deterministically.
     circular_resp = client.post(
         f"/runs/{run_id}/hypotheses",
         json={
@@ -122,7 +127,7 @@ def test_slice_c_end_to_end():
     assert circular_resp.status_code == 422
     assert "circular" in circular_resp.text.lower()
 
-    # 4. Essential Neighbor
+    # Essential Neighbor differentiation advances the run into CHALLENGE.
     nbr_resp = client.post(
         f"/hypotheses/{hyp_id}/neighbors",
         json={
@@ -138,27 +143,47 @@ def test_slice_c_end_to_end():
     )
     assert nbr_resp.status_code == 200
 
-    # 5. Gate Report (Failed INTERNAL_LOCK) for {ن ش ز}
-    gate_resp = client.post(
-        f"/runs/{run_id}/gates",
+    run_final = client.get(f"/runs/{run_id}")
+    assert run_final.json()["current_stage"] == "CHALLENGE"
+
+
+def test_hypothesis_rejects_unresolvable_cross_prefix_evidence():
+    run_id = "run_slice_c_evidence"
+    db = TestingSessionLocal()
+    db.add(
+        models.ResearchRun(
+            id=run_id,
+            target_contract="ROOT_CORE",
+            target_expression="ن ش ز",
+            methodology_revision="v7.1-test-fixture",
+            corpus_snapshot="snap1-test-fixture",
+            authority_context={"profile": "test_fixture"},
+        )
+    )
+    db.commit()
+    db.close()
+    client.post(f"/runs/{run_id}/blind/preflight")
+
+    # An occurrence reference that is absent from the run corpus cannot be invented.
+    resp = client.post(
+        f"/runs/{run_id}/hypotheses",
         json={
-            "gate_code": "INTERNAL_LOCK",
-            "status": "FAILED",
-            "evidence_refs": [hyp_id],
-            "evaluated_revision": "v1",
-            "failure_reason": "Insufficient distinguishing evidence",
+            "hypothesis_type": "H1",
+            "target_contract": "ROOT_CORE",
+            "scope": "All corpus occurrences",
+            "statement": "Unsupported claim",
+            "supporting_evidence_refs": ["occurrence:does_not_exist"],
+            "counterevidence_refs": [],
+            "unresolved_cases": [],
+            "rejection_condition": {
+                "challenging_finding": "A concrete falsifier",
+                "search_location": "Corpus",
+                "verification_method": "Structural check",
+                "confounder_control": "Same form",
+                "failure_consequence": "Hypothesis falsified",
+            },
+            "provenance": "Steward",
         },
     )
-    assert gate_resp.status_code == 200
-
-    # 6. Verify SemanticClaim generation is blocked because gate failed
-    claim_resp = client.post(
-        f"/runs/{run_id}/claims",
-        json={"contract_type": "ROOT_CORE", "research_run_id": run_id},
-    )
-    assert claim_resp.status_code == 403
-    assert "not passed" in claim_resp.text
-
-    # 7. Check Run status is LOCK_BLOCKED
-    run_final = client.get(f"/runs/{run_id}")
-    assert run_final.json()["status"] == "LOCK_BLOCKED"
+    assert resp.status_code == 422
+    assert "absent or outside the run corpus" in resp.text

@@ -99,13 +99,10 @@ def _active_snapshot(test_db, monkeypatch) -> models.CorpusSnapshot:
     return snapshot
 
 
-def _payload(snapshot_id: str, methodology_id: str) -> dict:
+def _payload() -> dict:
     return {
-        "target_contract": "ROOT_CORE",
+        "target_contract": "ROOT_CONCEPT",
         "target_expression": "test",
-        "methodology_revision": methodology_id,
-        "corpus_snapshot": snapshot_id,
-        "authority_context": {"profile": "methodology-authority-test"},
     }
 
 
@@ -169,8 +166,10 @@ def test_registry_read_model_and_active_authorities_admit_run(test_db, monkeypat
         }
     ]
 
-    admitted = client.post("/runs", json=_payload(snapshot.id, methodology.id))
+    admitted = client.post("/runs", json=_payload())
     assert admitted.status_code == 200
+    assert admitted.json()["corpus_snapshot"] == snapshot.id
+    assert admitted.json()["methodology_revision"] == methodology.id
     assert test_db.query(models.ResearchRun).count() == 1
 
 
@@ -181,15 +180,17 @@ def test_unknown_retired_and_hash_drift_reject_future_admission(
     test_db.add(methodology)
     snapshot = _active_snapshot(test_db, monkeypatch)
 
-    unknown = client.post("/runs", json=_payload(snapshot.id, "UNKNOWN_METHOD"))
+    unknown = client.post(
+        "/runs", json={**_payload(), "methodology_revision": "UNKNOWN_METHOD"}
+    )
     assert unknown.status_code == 422
-    assert "does not exist" in unknown.json()["detail"]
+    assert "extra_forbidden" in unknown.text
     assert test_db.query(models.ResearchRun).count() == 0
 
     methodology.lifecycle_state = "RETIRED"
     methodology.research_run_eligible = False
     test_db.commit()
-    retired = client.post("/runs", json=_payload(snapshot.id, methodology.id))
+    retired = client.post("/runs", json=_payload())
     assert retired.status_code == 503
     assert test_db.query(models.ResearchRun).count() == 0
 
@@ -198,11 +199,9 @@ def test_unknown_retired_and_hash_drift_reject_future_admission(
     drifted_methodology = _methodology(source_sha256="0" * 64)
     test_db.add(drifted_methodology)
     test_db.commit()
-    drifted = client.post(
-        "/runs", json=_payload(snapshot.id, drifted_methodology.id)
-    )
+    drifted = client.post("/runs", json=_payload())
     assert drifted.status_code == 503
-    assert "hash does not match" in drifted.json()["detail"]
+    assert "No eligible current Methodology revision" in drifted.json()["detail"]
     assert test_db.query(models.ResearchRun).count() == 0
 
 
@@ -220,10 +219,11 @@ def test_methodology_migration_seeds_source_bound_revision_and_is_reversible(
         record = connection.execute(
             sa.text(
                 "SELECT id, lifecycle_state, source_reference, source_sha256, "
-                "allowed_use, research_run_eligible FROM methodology_revisions"
+                "allowed_use, research_run_eligible FROM methodology_revisions "
+                "WHERE lifecycle_state='CURRENT'"
             )
         ).one()
-        assert record.id == "LISAN_QURANIC_SEMANTIC_EXTRACTION@6bb1c10a0f9a"
+        assert record.id == "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4"
         assert record.lifecycle_state == "CURRENT"
         assert record.source_reference == SOURCE_REFERENCE
         assert record.source_sha256 == SOURCE_SHA256
@@ -238,5 +238,5 @@ def test_methodology_migration_seeds_source_bound_revision_and_is_reversible(
     with engine.connect() as connection:
         assert connection.execute(
             sa.text("SELECT count(*) FROM methodology_revisions")
-        ).scalar_one() == 1
+        ).scalar_one() == 2
     engine.dispose()

@@ -673,16 +673,6 @@
             }
           }
         ],
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/IsolationStateCreate"
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
             "description": "Successful Response",
@@ -1302,10 +1292,10 @@
         }
       }
     },
-    "/runs/{run_id}/gates": {
+    "/runs/{run_id}/judgments": {
       "post": {
-        "summary": "Record Gate Report",
-        "operationId": "record_gate_report_runs__run_id__gates_post",
+        "summary": "Create Research Judgment",
+        "operationId": "create_research_judgment_runs__run_id__judgments_post",
         "parameters": [
           {
             "name": "run_id",
@@ -1322,102 +1312,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/GateReportCreate"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Successful Response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/GateReportResponse"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Bad Request",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "422": {
-            "description": "Validation Error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "500": {
-            "description": "Internal Server Error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "409": {
-            "description": "Conflict"
-          }
-        }
-      }
-    },
-    "/runs/{run_id}/claims": {
-      "post": {
-        "summary": "Create Claim",
-        "operationId": "create_claim_runs__run_id__claims_post",
-        "parameters": [
-          {
-            "name": "run_id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "title": "Run Id"
-            }
-          }
-        ],
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/SemanticClaimCreate"
+                "$ref": "#/components/schemas/ResearchJudgmentCreate"
               }
             }
           }
@@ -1492,10 +1387,10 @@
         }
       }
     },
-    "/claims/{claim_id}": {
+    "/judgments/{claim_id}": {
       "get": {
-        "summary": "Get Claim",
-        "operationId": "get_claim_claims__claim_id__get",
+        "summary": "Get Research Judgment",
+        "operationId": "get_research_judgment_judgments__claim_id__get",
         "parameters": [
           {
             "name": "claim_id",
@@ -1577,10 +1472,10 @@
         }
       }
     },
-    "/claims/{claim_id}/reviews": {
+    "/judgments/{claim_id}/verification": {
       "post": {
-        "summary": "Submit Review Decision",
-        "operationId": "submit_review_decision_claims__claim_id__reviews_post",
+        "summary": "Record Independent Verification",
+        "operationId": "record_independent_verification_judgments__claim_id__verification_post",
         "parameters": [
           {
             "name": "claim_id",
@@ -1597,7 +1492,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ReviewDecisionCreate"
+                "$ref": "#/components/schemas/VerificationRecordCreate"
               }
             }
           }
@@ -1608,7 +1503,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ReviewDecisionResponse"
+                  "$ref": "#/components/schemas/VerificationRecordResponse"
                 }
               }
             }
@@ -1672,10 +1567,10 @@
         }
       }
     },
-    "/claims/{claim_id}/publish": {
+    "/judgments/{claim_id}/canonicalize": {
       "post": {
-        "summary": "Publish Claim",
-        "operationId": "publish_claim_claims__claim_id__publish_post",
+        "summary": "Canonicalize Research Judgment",
+        "operationId": "canonicalize_research_judgment_judgments__claim_id__canonicalize_post",
         "parameters": [
           {
             "name": "claim_id",
@@ -1692,7 +1587,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/PublicationRequest"
+                "$ref": "#/components/schemas/CanonicalizationRequest"
               }
             }
           }
@@ -1767,11 +1662,11 @@
         }
       }
     },
-    "/runs/{run_id}/ai/propose_hypothesis": {
+    "/runs/{run_id}/ai/research-judgment": {
       "post": {
-        "summary": "Ai Propose Hypothesis",
-        "description": "AI assistant proposes a Hypothesis based on strict context rules.\nThis does NOT create a domain Hypothesis immediately. It returns the AI Execution Record.",
-        "operationId": "ai_propose_hypothesis_runs__run_id__ai_propose_hypothesis_post",
+        "summary": "Ai Create Research Judgment",
+        "description": "Execute the model as a research actor. Deterministic host validation decides\nwhether its structured Research Judgment may be persisted; it can never\nperform canonicalization.",
+        "operationId": "ai_create_research_judgment_runs__run_id__ai_research_judgment_post",
         "parameters": [
           {
             "name": "run_id",
@@ -1789,7 +1684,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AIExecutionRecordResponse"
+                  "$ref": "#/components/schemas/AIResearchJudgmentResponse"
                 }
               }
             }
@@ -2287,7 +2182,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/LegacyKnowledgeExplorerClaim"
+                  "$ref": "#/components/schemas/KnowledgeExplorerJudgment"
                 }
               }
             }
@@ -2523,11 +2418,11 @@
         }
       }
     },
-    "/claims/{claim_id}/provenance": {
+    "/judgments/{claim_id}/provenance": {
       "get": {
         "summary": "Get Claim Provenance",
         "description": "Traces a semantic claim back to its roots: Dependencies, Run, and Snapshots.",
-        "operationId": "get_claim_provenance_claims__claim_id__provenance_get",
+        "operationId": "get_claim_provenance_judgments__claim_id__provenance_get",
         "parameters": [
           {
             "name": "claim_id",
@@ -2607,11 +2502,11 @@
         }
       }
     },
-    "/claims/{claim_id}/reproduction_manifest": {
+    "/judgments/{claim_id}/reproduction-manifest": {
       "get": {
         "summary": "Get Reproduction Manifest",
         "description": "Returns the complete information required to reproduce a claim, fulfilling Slice G requirements.",
-        "operationId": "get_reproduction_manifest_claims__claim_id__reproduction_manifest_get",
+        "operationId": "get_reproduction_manifest_judgments__claim_id__reproduction_manifest_get",
         "parameters": [
           {
             "name": "claim_id",
@@ -2693,11 +2588,10 @@
         }
       }
     },
-    "/claims/{claim_id}/quality": {
+    "/judgments/{claim_id}/diagnostics": {
       "get": {
-        "summary": "Get Claim Quality",
-        "description": "Evaluates the multidimensional methodological purity and data isolation of a SemanticClaim.",
-        "operationId": "get_claim_quality_claims__claim_id__quality_get",
+        "summary": "Get Methodology Diagnostics",
+        "operationId": "get_methodology_diagnostics_judgments__claim_id__diagnostics_get",
         "parameters": [
           {
             "name": "claim_id",
@@ -2715,7 +2609,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/QualityProfileResponse"
+                  "$ref": "#/components/schemas/MethodologyDiagnosticsResponse"
                 }
               }
             }
@@ -2904,11 +2798,11 @@
         }
       }
     },
-    "/claims/{claim_id}/history": {
+    "/judgments/{claim_id}/history": {
       "get": {
         "summary": "Get Claim History",
         "description": "Returns the complete history and revision timeline of a SemanticClaim.",
-        "operationId": "get_claim_history_claims__claim_id__history_get",
+        "operationId": "get_claim_history_judgments__claim_id__history_get",
         "parameters": [
           {
             "name": "claim_id",
@@ -3534,6 +3428,49 @@
         ],
         "title": "AIExecutionRecordResponse"
       },
+      "AIResearchJudgmentResponse": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "CREATED",
+              "VALIDATION_FAILED",
+              "EXECUTION_FAILED"
+            ],
+            "title": "Status"
+          },
+          "trace": {
+            "$ref": "#/components/schemas/AIExecutionRecordResponse"
+          },
+          "judgment": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/SemanticClaimResponse"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "failure_reason": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Failure Reason"
+          }
+        },
+        "type": "object",
+        "required": [
+          "status",
+          "trace"
+        ],
+        "title": "AIResearchJudgmentResponse"
+      },
       "AskLisanRequest": {
         "properties": {
           "expression": {
@@ -3585,20 +3522,20 @@
             "title": "Recent Runs",
             "default": []
           },
-          "review_required_claims": {
+          "canonicalization_candidates": {
             "items": {
               "$ref": "#/components/schemas/SemanticClaimResponse"
             },
             "type": "array",
-            "title": "Review Required Claims",
+            "title": "Canonicalization Candidates",
             "default": []
           },
-          "freshness_attention_claims": {
+          "reopen_required_claims": {
             "items": {
               "$ref": "#/components/schemas/SemanticClaimResponse"
             },
             "type": "array",
-            "title": "Freshness Attention Claims",
+            "title": "Reopen Required Claims",
             "default": []
           },
           "pending_proposals": {
@@ -3696,6 +3633,29 @@
         ],
         "title": "AuditLogResponse"
       },
+      "CanonicalState": {
+        "type": "string",
+        "enum": [
+          "NOT_CANONICAL",
+          "ACCEPTED",
+          "REOPEN_REQUIRED"
+        ],
+        "title": "CanonicalState"
+      },
+      "CanonicalizationRequest": {
+        "properties": {
+          "rationale": {
+            "type": "string",
+            "title": "Rationale"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "rationale"
+        ],
+        "title": "CanonicalizationRequest"
+      },
       "ChangeProposalCreate": {
         "properties": {
           "rule_code": {
@@ -3772,12 +3732,12 @@
             "title": "Revisions",
             "default": []
           },
-          "review_decisions": {
+          "verification_records": {
             "items": {
-              "$ref": "#/components/schemas/ReviewDecisionResponse"
+              "$ref": "#/components/schemas/VerificationRecordResponse"
             },
             "type": "array",
-            "title": "Review Decisions",
+            "title": "Verification Records",
             "default": []
           },
           "audit_events": {
@@ -3802,21 +3762,20 @@
             "type": "integer",
             "title": "Revision Id"
           },
-          "epistemic_state": {
-            "type": "string",
-            "title": "Epistemic State"
+          "research_state": {
+            "$ref": "#/components/schemas/ResearchState"
           },
-          "review_state": {
-            "type": "string",
-            "title": "Review State"
+          "canonical_state": {
+            "$ref": "#/components/schemas/CanonicalState"
           },
-          "freshness_state": {
-            "type": "string",
-            "title": "Freshness State"
+          "result_strength": {
+            "$ref": "#/components/schemas/ResultStrength"
           },
-          "publication_state": {
-            "type": "string",
-            "title": "Publication State"
+          "verification_state": {
+            "$ref": "#/components/schemas/VerificationState"
+          },
+          "falsification_status": {
+            "$ref": "#/components/schemas/FalsificationStatus"
           },
           "created_at": {
             "type": "string",
@@ -3827,13 +3786,23 @@
         "type": "object",
         "required": [
           "revision_id",
-          "epistemic_state",
-          "review_state",
-          "freshness_state",
-          "publication_state",
+          "research_state",
+          "canonical_state",
+          "result_strength",
+          "verification_state",
+          "falsification_status",
           "created_at"
         ],
         "title": "ClaimRevisionItem"
+      },
+      "ClaimScope": {
+        "type": "string",
+        "enum": [
+          "UNIVERSAL",
+          "REPRESENTATIVE",
+          "LOCAL"
+        ],
+        "title": "ClaimScope"
       },
       "CorpusOccurrenceResponse": {
         "properties": {
@@ -3994,20 +3963,6 @@
           "created_at"
         ],
         "title": "DependencyRecordResponse"
-      },
-      "EpistemicState": {
-        "type": "string",
-        "enum": [
-          "OBSERVATION",
-          "HYPOTHESIS",
-          "TESTED",
-          "SUPPORTED",
-          "LOCK_BLOCKED",
-          "LOCK_INTERNAL_RESULT",
-          "REJECTED",
-          "UNRESOLVED"
-        ],
-        "title": "EpistemicState"
       },
       "ErrorResponse": {
         "properties": {
@@ -4175,137 +4130,15 @@
         ],
         "title": "EssentialNeighborResponse"
       },
-      "FreshnessState": {
+      "FalsificationStatus": {
         "type": "string",
         "enum": [
-          "CURRENT",
-          "STALE",
-          "INVALIDATED",
-          "REVALIDATION_REQUIRED"
+          "NOT_REQUIRED",
+          "NOT_RUN",
+          "PASSED",
+          "FAILED"
         ],
-        "title": "FreshnessState"
-      },
-      "GateReportCreate": {
-        "properties": {
-          "gate_code": {
-            "type": "string",
-            "title": "Gate Code"
-          },
-          "status": {
-            "type": "string",
-            "title": "Status"
-          },
-          "evidence_refs": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array",
-            "title": "Evidence Refs"
-          },
-          "failure_reason": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Failure Reason"
-          },
-          "evaluated_revision": {
-            "type": "string",
-            "title": "Evaluated Revision"
-          },
-          "required_action": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Required Action"
-          }
-        },
-        "type": "object",
-        "required": [
-          "gate_code",
-          "status",
-          "evidence_refs",
-          "evaluated_revision"
-        ],
-        "title": "GateReportCreate"
-      },
-      "GateReportResponse": {
-        "properties": {
-          "gate_code": {
-            "type": "string",
-            "title": "Gate Code"
-          },
-          "status": {
-            "type": "string",
-            "title": "Status"
-          },
-          "evidence_refs": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array",
-            "title": "Evidence Refs"
-          },
-          "failure_reason": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Failure Reason"
-          },
-          "evaluated_revision": {
-            "type": "string",
-            "title": "Evaluated Revision"
-          },
-          "required_action": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Required Action"
-          },
-          "id": {
-            "type": "string",
-            "title": "Id"
-          },
-          "research_run_id": {
-            "type": "string",
-            "title": "Research Run Id"
-          },
-          "created_at": {
-            "type": "string",
-            "format": "date-time",
-            "title": "Created At"
-          }
-        },
-        "type": "object",
-        "required": [
-          "gate_code",
-          "status",
-          "evidence_refs",
-          "evaluated_revision",
-          "id",
-          "research_run_id",
-          "created_at"
-        ],
-        "title": "GateReportResponse"
+        "title": "FalsificationStatus"
       },
       "GovernanceOverviewResponse": {
         "properties": {
@@ -4325,20 +4158,20 @@
             "title": "Proposals",
             "default": []
           },
-          "review_queue": {
+          "canonicalization_candidates": {
             "items": {
               "$ref": "#/components/schemas/SemanticClaimResponse"
             },
             "type": "array",
-            "title": "Review Queue",
+            "title": "Canonicalization Candidates",
             "default": []
           },
-          "freshness_queue": {
+          "reopen_required": {
             "items": {
               "$ref": "#/components/schemas/SemanticClaimResponse"
             },
             "type": "array",
-            "title": "Freshness Queue",
+            "title": "Reopen Required",
             "default": []
           },
           "corpus_snapshots": {
@@ -4681,53 +4514,6 @@
         ],
         "title": "HypothesisResponse"
       },
-      "IsolationStateCreate": {
-        "properties": {
-          "target_contract": {
-            "type": "string",
-            "title": "Target Contract"
-          },
-          "corpus_snapshot": {
-            "type": "string",
-            "title": "Corpus Snapshot"
-          },
-          "methodology_reference": {
-            "type": "string",
-            "title": "Methodology Reference"
-          },
-          "allowed_sources": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array",
-            "title": "Allowed Sources"
-          },
-          "is_contaminated": {
-            "type": "string",
-            "title": "Is Contaminated",
-            "default": "CLEAN"
-          },
-          "contamination_reason": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Contamination Reason"
-          }
-        },
-        "type": "object",
-        "required": [
-          "target_contract",
-          "corpus_snapshot",
-          "methodology_reference",
-          "allowed_sources"
-        ],
-        "title": "IsolationStateCreate"
-      },
       "IsolationStateResponse": {
         "properties": {
           "target_contract": {
@@ -4790,6 +4576,61 @@
           "created_at"
         ],
         "title": "IsolationStateResponse"
+      },
+      "KnowledgeExplorerJudgment": {
+        "properties": {
+          "claim_id": {
+            "type": "string",
+            "title": "Claim Id"
+          },
+          "contract_type": {
+            "type": "string",
+            "title": "Contract Type"
+          },
+          "target_expression": {
+            "type": "string",
+            "title": "Target Expression"
+          },
+          "research_state": {
+            "$ref": "#/components/schemas/ResearchState"
+          },
+          "canonical_state": {
+            "$ref": "#/components/schemas/CanonicalState"
+          },
+          "result_strength": {
+            "$ref": "#/components/schemas/ResultStrength"
+          },
+          "verification_state": {
+            "$ref": "#/components/schemas/VerificationState"
+          },
+          "dependencies": {
+            "items": {
+              "$ref": "#/components/schemas/DependencyRecordResponse"
+            },
+            "type": "array",
+            "title": "Dependencies"
+          },
+          "affected_by": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Affected By"
+          }
+        },
+        "type": "object",
+        "required": [
+          "claim_id",
+          "contract_type",
+          "target_expression",
+          "research_state",
+          "canonical_state",
+          "result_strength",
+          "verification_state",
+          "dependencies",
+          "affected_by"
+        ],
+        "title": "KnowledgeExplorerJudgment"
       },
       "KnowledgeGraphRebuildResponse": {
         "properties": {
@@ -4882,64 +4723,89 @@
         ],
         "title": "KnowledgeGraphResponse"
       },
-      "LegacyKnowledgeExplorerClaim": {
+      "MethodologyDiagnosticsResponse": {
         "properties": {
           "claim_id": {
             "type": "string",
             "title": "Claim Id"
           },
-          "contract_type": {
-            "type": "string",
-            "title": "Contract Type"
-          },
-          "target_expression": {
-            "type": "string",
-            "title": "Target Expression"
-          },
-          "epistemic_state": {
-            "type": "string",
-            "title": "Epistemic State"
-          },
-          "review_state": {
-            "type": "string",
-            "title": "Review State"
-          },
-          "freshness_state": {
-            "type": "string",
-            "title": "Freshness State"
-          },
-          "publication_state": {
-            "type": "string",
-            "title": "Publication State"
-          },
-          "dependencies": {
+          "findings": {
             "items": {
-              "$ref": "#/components/schemas/DependencyRecordResponse"
+              "$ref": "#/components/schemas/MethodologyFinding"
             },
             "type": "array",
-            "title": "Dependencies"
+            "title": "Findings",
+            "default": []
           },
-          "affected_by": {
+          "hard_blockers": {
             "items": {
               "type": "string"
             },
             "type": "array",
-            "title": "Affected By"
+            "title": "Hard Blockers",
+            "default": []
+          },
+          "warnings": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Warnings",
+            "default": []
+          },
+          "evaluated_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Evaluated At"
           }
         },
         "type": "object",
         "required": [
           "claim_id",
-          "contract_type",
-          "target_expression",
-          "epistemic_state",
-          "review_state",
-          "freshness_state",
-          "publication_state",
-          "dependencies",
-          "affected_by"
+          "evaluated_at"
         ],
-        "title": "LegacyKnowledgeExplorerClaim"
+        "title": "MethodologyDiagnosticsResponse"
+      },
+      "MethodologyFinding": {
+        "properties": {
+          "dimension": {
+            "type": "string",
+            "title": "Dimension"
+          },
+          "status": {
+            "type": "string",
+            "title": "Status"
+          },
+          "severity": {
+            "type": "string",
+            "title": "Severity"
+          },
+          "details": {
+            "type": "string",
+            "title": "Details"
+          },
+          "evidence_refs": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Evidence Refs",
+            "default": []
+          },
+          "hard_blocker": {
+            "type": "boolean",
+            "title": "Hard Blocker",
+            "default": false
+          }
+        },
+        "type": "object",
+        "required": [
+          "dimension",
+          "status",
+          "severity",
+          "details"
+        ],
+        "title": "MethodologyFinding"
       },
       "MethodologyRevisionResponse": {
         "properties": {
@@ -5157,222 +5023,6 @@
         ],
         "title": "ObservationArtifactResponse"
       },
-      "PublicationRequest": {
-        "properties": {
-          "publisher_identity": {
-            "type": "string",
-            "title": "Publisher Identity"
-          },
-          "target_registry": {
-            "type": "string",
-            "title": "Target Registry"
-          }
-        },
-        "type": "object",
-        "required": [
-          "publisher_identity",
-          "target_registry"
-        ],
-        "title": "PublicationRequest"
-      },
-      "PublicationState": {
-        "type": "string",
-        "enum": [
-          "PRIVATE_WORKING",
-          "REVIEWABLE",
-          "PUBLISHABLE",
-          "PUBLISHED",
-          "WITHDRAWN"
-        ],
-        "title": "PublicationState"
-      },
-      "PurityFinding": {
-        "properties": {
-          "dimension": {
-            "type": "string",
-            "title": "Dimension"
-          },
-          "status": {
-            "type": "string",
-            "title": "Status"
-          },
-          "severity": {
-            "type": "string",
-            "title": "Severity"
-          },
-          "details": {
-            "type": "string",
-            "title": "Details"
-          }
-        },
-        "type": "object",
-        "required": [
-          "dimension",
-          "status",
-          "severity",
-          "details"
-        ],
-        "title": "PurityFinding"
-      },
-      "QualityProfileResponse": {
-        "properties": {
-          "available": {
-            "type": "boolean",
-            "title": "Available"
-          },
-          "source": {
-            "type": "string",
-            "enum": [
-              "PERSISTED_QUALITY_PROFILE",
-              "DERIVED_METHODOLOGICAL_PURITY_ONLY"
-            ],
-            "title": "Source"
-          },
-          "id": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Id"
-          },
-          "claim_id": {
-            "type": "string",
-            "title": "Claim Id"
-          },
-          "purity_score": {
-            "anyOf": [
-              {
-                "type": "integer"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Purity Score"
-          },
-          "purity_rating": {
-            "type": "string",
-            "title": "Purity Rating",
-            "default": "PURE"
-          },
-          "purity_findings": {
-            "items": {
-              "$ref": "#/components/schemas/PurityFinding"
-            },
-            "type": "array",
-            "title": "Purity Findings",
-            "default": []
-          },
-          "synthetic_data_leak": {
-            "anyOf": [
-              {
-                "type": "boolean"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Synthetic Data Leak"
-          },
-          "external_data_leak": {
-            "anyOf": [
-              {
-                "type": "boolean"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "External Data Leak"
-          },
-          "corpus_coverage": {
-            "anyOf": [
-              {
-                "type": "integer"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Corpus Coverage"
-          },
-          "deep_analysis_coverage": {
-            "anyOf": [
-              {
-                "type": "integer"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Deep Analysis Coverage"
-          },
-          "reproducibility_score": {
-            "anyOf": [
-              {
-                "type": "integer"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Reproducibility Score"
-          },
-          "unresolved_conflict_burden": {
-            "anyOf": [
-              {
-                "type": "integer"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Unresolved Conflict Burden"
-          },
-          "methodological_purity_flags": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array",
-            "title": "Methodological Purity Flags",
-            "default": []
-          },
-          "evaluation_summary": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Evaluation Summary"
-          },
-          "created_at": {
-            "anyOf": [
-              {
-                "type": "string",
-                "format": "date-time"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Created At"
-          }
-        },
-        "type": "object",
-        "required": [
-          "available",
-          "source",
-          "claim_id"
-        ],
-        "title": "QualityProfileResponse"
-      },
       "RejectionCondition": {
         "properties": {
           "challenging_finding": {
@@ -5475,6 +5125,178 @@
         ],
         "title": "ReproductionManifestResponse"
       },
+      "ResearchJudgmentCreate": {
+        "properties": {
+          "contract_type": {
+            "type": "string",
+            "enum": [
+              "ROOT_CONCEPT",
+              "LEXEME",
+              "LOCAL_MEANING",
+              "VERSE_MEANING",
+              "SEMANTIC_DIFFERENCE"
+            ],
+            "title": "Contract Type"
+          },
+          "research_state": {
+            "$ref": "#/components/schemas/ResearchState"
+          },
+          "claim_scope": {
+            "$ref": "#/components/schemas/ClaimScope"
+          },
+          "sampling_basis": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Sampling Basis"
+          },
+          "result_strength": {
+            "$ref": "#/components/schemas/ResultStrength"
+          },
+          "preferred_conclusion": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Preferred Conclusion"
+          },
+          "root_concept": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Root Concept"
+          },
+          "plain_explanation": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Plain Explanation"
+          },
+          "semantic_boundary": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Semantic Boundary"
+          },
+          "layer_attribution": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "title": "Layer Attribution",
+            "default": {}
+          },
+          "supporting_evidence_refs": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Supporting Evidence Refs",
+            "default": []
+          },
+          "counterevidence_refs": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Counterevidence Refs",
+            "default": []
+          },
+          "unresolved_cases": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Unresolved Cases",
+            "default": []
+          },
+          "hard_cases": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Hard Cases",
+            "default": []
+          },
+          "strongest_counterexample": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Strongest Counterexample"
+          },
+          "strongest_competitor": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Strongest Competitor"
+          },
+          "rejection_condition": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/RejectionCondition"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "falsification_status": {
+            "$ref": "#/components/schemas/FalsificationStatus",
+            "default": "NOT_REQUIRED"
+          },
+          "reopen_conditions": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Reopen Conditions",
+            "default": []
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "contract_type",
+          "research_state",
+          "claim_scope",
+          "result_strength"
+        ],
+        "title": "ResearchJudgmentCreate"
+      },
       "ResearchRunCreate": {
         "properties": {
           "target_contract": {
@@ -5484,33 +5306,22 @@
           "target_expression": {
             "type": "string",
             "title": "Target Expression"
-          },
-          "methodology_revision": {
-            "type": "string",
-            "title": "Methodology Revision"
-          },
-          "corpus_snapshot": {
-            "type": "string",
-            "title": "Corpus Snapshot"
-          },
-          "authority_context": {
-            "additionalProperties": true,
-            "type": "object",
-            "title": "Authority Context"
           }
         },
+        "additionalProperties": false,
         "type": "object",
         "required": [
           "target_contract",
-          "target_expression",
-          "methodology_revision",
-          "corpus_snapshot",
-          "authority_context"
+          "target_expression"
         ],
         "title": "ResearchRunCreate"
       },
       "ResearchRunResponse": {
         "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
           "target_contract": {
             "type": "string",
             "title": "Target Contract"
@@ -5531,10 +5342,6 @@
             "additionalProperties": true,
             "type": "object",
             "title": "Authority Context"
-          },
-          "id": {
-            "type": "string",
-            "title": "Id"
           },
           "current_stage": {
             "$ref": "#/components/schemas/ResearchStage"
@@ -5556,12 +5363,12 @@
         },
         "type": "object",
         "required": [
+          "id",
           "target_contract",
           "target_expression",
           "methodology_revision",
           "corpus_snapshot",
           "authority_context",
-          "id",
           "current_stage",
           "status",
           "created_at",
@@ -5572,114 +5379,31 @@
       "ResearchStage": {
         "type": "string",
         "enum": [
-          "PREFLIGHT",
-          "ISOLATION_PREFLIGHT",
-          "CORPUS_COLLECTION",
-          "STRUCTURAL_OBSERVATION",
-          "HYPOTHESIS_GENERATION",
-          "DIFFERENTIATION",
-          "LOCKING"
+          "RESEARCH",
+          "CHALLENGE",
+          "JUDGMENT",
+          "CANONICALIZATION"
         ],
         "title": "ResearchStage"
       },
-      "ReviewDecisionCreate": {
-        "properties": {
-          "reviewer_identity": {
-            "type": "string",
-            "title": "Reviewer Identity"
-          },
-          "decision": {
-            "type": "string",
-            "enum": [
-              "APPROVED",
-              "REJECTED"
-            ],
-            "title": "Decision"
-          },
-          "rationale": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Rationale"
-          }
-        },
-        "type": "object",
-        "required": [
-          "reviewer_identity",
-          "decision"
-        ],
-        "title": "ReviewDecisionCreate"
-      },
-      "ReviewDecisionResponse": {
-        "properties": {
-          "reviewer_identity": {
-            "type": "string",
-            "title": "Reviewer Identity"
-          },
-          "decision": {
-            "type": "string",
-            "enum": [
-              "APPROVED",
-              "REJECTED"
-            ],
-            "title": "Decision"
-          },
-          "rationale": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Rationale"
-          },
-          "id": {
-            "type": "string",
-            "title": "Id"
-          },
-          "claim_id": {
-            "type": "string",
-            "title": "Claim Id"
-          },
-          "evaluated_claim_revision": {
-            "type": "integer",
-            "title": "Evaluated Claim Revision"
-          },
-          "created_at": {
-            "type": "string",
-            "format": "date-time",
-            "title": "Created At"
-          }
-        },
-        "type": "object",
-        "required": [
-          "reviewer_identity",
-          "decision",
-          "id",
-          "claim_id",
-          "evaluated_claim_revision",
-          "created_at"
-        ],
-        "title": "ReviewDecisionResponse"
-      },
-      "ReviewState": {
+      "ResearchState": {
         "type": "string",
         "enum": [
-          "NOT_REVIEWED",
-          "REVIEW_REQUIRED",
-          "IN_REVIEW",
-          "APPROVED",
-          "REJECTED",
-          "OWNER_DECISION_REQUIRED"
+          "PREFERRED",
+          "UNRESOLVED",
+          "REJECTED"
         ],
-        "title": "ReviewState"
+        "title": "ResearchState"
+      },
+      "ResultStrength": {
+        "type": "string",
+        "enum": [
+          "WEAK",
+          "MODERATE",
+          "STRONG",
+          "UNRESOLVED"
+        ],
+        "title": "ResultStrength"
       },
       "RuleHistoryResponse": {
         "properties": {
@@ -5853,25 +5577,17 @@
             "title": "Neighbors",
             "default": []
           },
-          "gates": {
-            "items": {
-              "$ref": "#/components/schemas/GateReportResponse"
-            },
-            "type": "array",
-            "title": "Gates",
-            "default": []
-          },
-          "claims": {
+          "research_judgments": {
             "items": {
               "$ref": "#/components/schemas/SemanticClaimResponse"
             },
             "type": "array",
-            "title": "Claims",
+            "title": "Research Judgments",
             "default": []
           },
-          "claims_visible": {
+          "judgments_visible": {
             "type": "boolean",
-            "title": "Claims Visible"
+            "title": "Judgments Visible"
           },
           "audit_events": {
             "items": {
@@ -5885,302 +5601,12 @@
         "type": "object",
         "required": [
           "run",
-          "claims_visible"
+          "judgments_visible"
         ],
         "title": "RunWorkspaceResponse"
       },
-      "SemanticClaimCreate": {
-        "properties": {
-          "contract_type": {
-            "type": "string",
-            "title": "Contract Type"
-          },
-          "epistemic_state": {
-            "$ref": "#/components/schemas/EpistemicState",
-            "default": "UNRESOLVED"
-          },
-          "review_state": {
-            "$ref": "#/components/schemas/ReviewState",
-            "default": "NOT_REVIEWED"
-          },
-          "freshness_state": {
-            "$ref": "#/components/schemas/FreshnessState",
-            "default": "CURRENT"
-          },
-          "publication_state": {
-            "$ref": "#/components/schemas/PublicationState",
-            "default": "PRIVATE_WORKING"
-          },
-          "revision_id": {
-            "type": "integer",
-            "title": "Revision Id",
-            "default": 1
-          },
-          "index_coverage": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Index Coverage"
-          },
-          "deep_analysis_coverage": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Deep Analysis Coverage"
-          },
-          "abstract_root_core": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Abstract Root Core"
-          },
-          "root_definition": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Root Definition"
-          },
-          "root_meaning": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Root Meaning"
-          },
-          "root_concept": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Root Concept"
-          },
-          "rejection_condition": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Rejection Condition"
-          },
-          "supporting_evidence": {
-            "anyOf": [
-              {
-                "additionalProperties": true,
-                "type": "object"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Supporting Evidence"
-          },
-          "counterevidence": {
-            "anyOf": [
-              {
-                "additionalProperties": true,
-                "type": "object"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Counterevidence"
-          },
-          "unresolved_cases": {
-            "anyOf": [
-              {
-                "additionalProperties": true,
-                "type": "object"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Unresolved Cases"
-          },
-          "research_run_id": {
-            "type": "string",
-            "title": "Research Run Id"
-          }
-        },
-        "type": "object",
-        "required": [
-          "contract_type",
-          "research_run_id"
-        ],
-        "title": "SemanticClaimCreate"
-      },
       "SemanticClaimResponse": {
         "properties": {
-          "contract_type": {
-            "type": "string",
-            "title": "Contract Type"
-          },
-          "epistemic_state": {
-            "$ref": "#/components/schemas/EpistemicState",
-            "default": "UNRESOLVED"
-          },
-          "review_state": {
-            "$ref": "#/components/schemas/ReviewState",
-            "default": "NOT_REVIEWED"
-          },
-          "freshness_state": {
-            "$ref": "#/components/schemas/FreshnessState",
-            "default": "CURRENT"
-          },
-          "publication_state": {
-            "$ref": "#/components/schemas/PublicationState",
-            "default": "PRIVATE_WORKING"
-          },
-          "revision_id": {
-            "type": "integer",
-            "title": "Revision Id",
-            "default": 1
-          },
-          "index_coverage": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Index Coverage"
-          },
-          "deep_analysis_coverage": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Deep Analysis Coverage"
-          },
-          "abstract_root_core": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Abstract Root Core"
-          },
-          "root_definition": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Root Definition"
-          },
-          "root_meaning": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Root Meaning"
-          },
-          "root_concept": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Root Concept"
-          },
-          "rejection_condition": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Rejection Condition"
-          },
-          "supporting_evidence": {
-            "anyOf": [
-              {
-                "additionalProperties": true,
-                "type": "object"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Supporting Evidence"
-          },
-          "counterevidence": {
-            "anyOf": [
-              {
-                "additionalProperties": true,
-                "type": "object"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Counterevidence"
-          },
-          "unresolved_cases": {
-            "anyOf": [
-              {
-                "additionalProperties": true,
-                "type": "object"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Unresolved Cases"
-          },
           "id": {
             "type": "string",
             "title": "Id"
@@ -6195,12 +5621,204 @@
               }
             ],
             "title": "Research Run Id"
+          },
+          "contract_type": {
+            "type": "string",
+            "title": "Contract Type"
+          },
+          "research_state": {
+            "$ref": "#/components/schemas/ResearchState"
+          },
+          "canonical_state": {
+            "$ref": "#/components/schemas/CanonicalState"
+          },
+          "result_strength": {
+            "$ref": "#/components/schemas/ResultStrength"
+          },
+          "verification_state": {
+            "$ref": "#/components/schemas/VerificationState"
+          },
+          "falsification_status": {
+            "$ref": "#/components/schemas/FalsificationStatus"
+          },
+          "claim_scope": {
+            "$ref": "#/components/schemas/ClaimScope"
+          },
+          "sampling_basis": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Sampling Basis"
+          },
+          "revision_id": {
+            "type": "integer",
+            "title": "Revision Id"
+          },
+          "research_completeness": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Research Completeness"
+          },
+          "preferred_conclusion": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Preferred Conclusion"
+          },
+          "root_concept": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Root Concept"
+          },
+          "plain_explanation": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Plain Explanation"
+          },
+          "semantic_boundary": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Semantic Boundary"
+          },
+          "layer_attribution": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "title": "Layer Attribution"
+          },
+          "rejection_condition": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/RejectionCondition"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "supporting_evidence": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Supporting Evidence"
+          },
+          "counterevidence": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Counterevidence"
+          },
+          "unresolved_cases": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Unresolved Cases"
+          },
+          "hard_cases": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Hard Cases"
+          },
+          "strongest_counterexample": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Strongest Counterexample"
+          },
+          "strongest_competitor": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Strongest Competitor"
+          },
+          "reopen_conditions": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Reopen Conditions"
+          },
+          "accepted_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Accepted At"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
           }
         },
         "type": "object",
         "required": [
+          "id",
           "contract_type",
-          "id"
+          "research_state",
+          "canonical_state",
+          "result_strength",
+          "verification_state",
+          "falsification_status",
+          "claim_scope",
+          "revision_id",
+          "research_completeness",
+          "layer_attribution",
+          "supporting_evidence",
+          "counterevidence",
+          "unresolved_cases",
+          "hard_cases",
+          "reopen_conditions",
+          "created_at"
         ],
         "title": "SemanticClaimResponse"
       },
@@ -6290,6 +5908,125 @@
           "created_at"
         ],
         "title": "StewardCommandResponse"
+      },
+      "VerificationRecordCreate": {
+        "properties": {
+          "decision": {
+            "type": "string",
+            "enum": [
+              "VERIFIED",
+              "REJECTED"
+            ],
+            "title": "Decision"
+          },
+          "verification_type": {
+            "type": "string",
+            "title": "Verification Type"
+          },
+          "rationale": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Rationale"
+          },
+          "evidence_refs": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Evidence Refs",
+            "default": []
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "decision",
+          "verification_type"
+        ],
+        "title": "VerificationRecordCreate"
+      },
+      "VerificationRecordResponse": {
+        "properties": {
+          "decision": {
+            "type": "string",
+            "enum": [
+              "VERIFIED",
+              "REJECTED"
+            ],
+            "title": "Decision"
+          },
+          "verification_type": {
+            "type": "string",
+            "title": "Verification Type"
+          },
+          "rationale": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Rationale"
+          },
+          "evidence_refs": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Evidence Refs",
+            "default": []
+          },
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "claim_id": {
+            "type": "string",
+            "title": "Claim Id"
+          },
+          "verifier_identity": {
+            "type": "string",
+            "title": "Verifier Identity"
+          },
+          "evaluated_claim_revision": {
+            "type": "integer",
+            "title": "Evaluated Claim Revision"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "decision",
+          "verification_type",
+          "id",
+          "claim_id",
+          "verifier_identity",
+          "evaluated_claim_revision",
+          "created_at"
+        ],
+        "title": "VerificationRecordResponse"
+      },
+      "VerificationState": {
+        "type": "string",
+        "enum": [
+          "NOT_REQUIRED",
+          "NOT_VERIFIED",
+          "VERIFIED"
+        ],
+        "title": "VerificationState"
       }
     }
   }

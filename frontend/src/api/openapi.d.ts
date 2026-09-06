@@ -265,7 +265,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/runs/{run_id}/gates": {
+    "/runs/{run_id}/judgments": {
         parameters: {
             query?: never;
             header?: never;
@@ -274,40 +274,23 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** Record Gate Report */
-        post: operations["record_gate_report_runs__run_id__gates_post"];
+        /** Create Research Judgment */
+        post: operations["create_research_judgment_runs__run_id__judgments_post"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
     };
-    "/runs/{run_id}/claims": {
+    "/judgments/{claim_id}": {
         parameters: {
             query?: never;
             header?: never;
             path?: never;
             cookie?: never;
         };
-        get?: never;
-        put?: never;
-        /** Create Claim */
-        post: operations["create_claim_runs__run_id__claims_post"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/claims/{claim_id}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** Get Claim */
-        get: operations["get_claim_claims__claim_id__get"];
+        /** Get Research Judgment */
+        get: operations["get_research_judgment_judgments__claim_id__get"];
         put?: never;
         post?: never;
         delete?: never;
@@ -316,7 +299,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/claims/{claim_id}/reviews": {
+    "/judgments/{claim_id}/verification": {
         parameters: {
             query?: never;
             header?: never;
@@ -325,15 +308,15 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** Submit Review Decision */
-        post: operations["submit_review_decision_claims__claim_id__reviews_post"];
+        /** Record Independent Verification */
+        post: operations["record_independent_verification_judgments__claim_id__verification_post"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
     };
-    "/claims/{claim_id}/publish": {
+    "/judgments/{claim_id}/canonicalize": {
         parameters: {
             query?: never;
             header?: never;
@@ -342,15 +325,15 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** Publish Claim */
-        post: operations["publish_claim_claims__claim_id__publish_post"];
+        /** Canonicalize Research Judgment */
+        post: operations["canonicalize_research_judgment_judgments__claim_id__canonicalize_post"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
     };
-    "/runs/{run_id}/ai/propose_hypothesis": {
+    "/runs/{run_id}/ai/research-judgment": {
         parameters: {
             query?: never;
             header?: never;
@@ -360,11 +343,12 @@ export interface paths {
         get?: never;
         put?: never;
         /**
-         * Ai Propose Hypothesis
-         * @description AI assistant proposes a Hypothesis based on strict context rules.
-         *     This does NOT create a domain Hypothesis immediately. It returns the AI Execution Record.
+         * Ai Create Research Judgment
+         * @description Execute the model as a research actor. Deterministic host validation decides
+         *     whether its structured Research Judgment may be persisted; it can never
+         *     perform canonicalization.
          */
-        post: operations["ai_propose_hypothesis_runs__run_id__ai_propose_hypothesis_post"];
+        post: operations["ai_create_research_judgment_runs__run_id__ai_research_judgment_post"];
         delete?: never;
         options?: never;
         head?: never;
@@ -519,7 +503,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/claims/{claim_id}/provenance": {
+    "/judgments/{claim_id}/provenance": {
         parameters: {
             query?: never;
             header?: never;
@@ -530,7 +514,7 @@ export interface paths {
          * Get Claim Provenance
          * @description Traces a semantic claim back to its roots: Dependencies, Run, and Snapshots.
          */
-        get: operations["get_claim_provenance_claims__claim_id__provenance_get"];
+        get: operations["get_claim_provenance_judgments__claim_id__provenance_get"];
         put?: never;
         post?: never;
         delete?: never;
@@ -539,7 +523,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/claims/{claim_id}/reproduction_manifest": {
+    "/judgments/{claim_id}/reproduction-manifest": {
         parameters: {
             query?: never;
             header?: never;
@@ -550,7 +534,7 @@ export interface paths {
          * Get Reproduction Manifest
          * @description Returns the complete information required to reproduce a claim, fulfilling Slice G requirements.
          */
-        get: operations["get_reproduction_manifest_claims__claim_id__reproduction_manifest_get"];
+        get: operations["get_reproduction_manifest_judgments__claim_id__reproduction_manifest_get"];
         put?: never;
         post?: never;
         delete?: never;
@@ -559,18 +543,15 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/claims/{claim_id}/quality": {
+    "/judgments/{claim_id}/diagnostics": {
         parameters: {
             query?: never;
             header?: never;
             path?: never;
             cookie?: never;
         };
-        /**
-         * Get Claim Quality
-         * @description Evaluates the multidimensional methodological purity and data isolation of a SemanticClaim.
-         */
-        get: operations["get_claim_quality_claims__claim_id__quality_get"];
+        /** Get Methodology Diagnostics */
+        get: operations["get_methodology_diagnostics_judgments__claim_id__diagnostics_get"];
         put?: never;
         post?: never;
         delete?: never;
@@ -599,7 +580,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/claims/{claim_id}/history": {
+    "/judgments/{claim_id}/history": {
         parameters: {
             query?: never;
             header?: never;
@@ -610,7 +591,7 @@ export interface paths {
          * Get Claim History
          * @description Returns the complete history and revision timeline of a SemanticClaim.
          */
-        get: operations["get_claim_history_claims__claim_id__history_get"];
+        get: operations["get_claim_history_judgments__claim_id__history_get"];
         put?: never;
         post?: never;
         delete?: never;
@@ -755,6 +736,18 @@ export interface components {
              */
             created_at: string;
         };
+        /** AIResearchJudgmentResponse */
+        AIResearchJudgmentResponse: {
+            /**
+             * Status
+             * @enum {string}
+             */
+            status: "CREATED" | "VALIDATION_FAILED" | "EXECUTION_FAILED";
+            trace: components["schemas"]["AIExecutionRecordResponse"];
+            judgment?: components["schemas"]["SemanticClaimResponse"] | null;
+            /** Failure Reason */
+            failure_reason?: string | null;
+        };
         /** AskLisanRequest */
         AskLisanRequest: {
             /** Expression */
@@ -776,15 +769,15 @@ export interface components {
              */
             recent_runs: components["schemas"]["ResearchRunResponse"][];
             /**
-             * Review Required Claims
+             * Canonicalization Candidates
              * @default []
              */
-            review_required_claims: components["schemas"]["SemanticClaimResponse"][];
+            canonicalization_candidates: components["schemas"]["SemanticClaimResponse"][];
             /**
-             * Freshness Attention Claims
+             * Reopen Required Claims
              * @default []
              */
-            freshness_attention_claims: components["schemas"]["SemanticClaimResponse"][];
+            reopen_required_claims: components["schemas"]["SemanticClaimResponse"][];
             /**
              * Pending Proposals
              * @default []
@@ -823,6 +816,16 @@ export interface components {
              * Format: date-time
              */
             created_at: string;
+        };
+        /**
+         * CanonicalState
+         * @enum {string}
+         */
+        CanonicalState: "NOT_CANONICAL" | "ACCEPTED" | "REOPEN_REQUIRED";
+        /** CanonicalizationRequest */
+        CanonicalizationRequest: {
+            /** Rationale */
+            rationale: string;
         };
         /** ChangeProposalCreate */
         ChangeProposalCreate: {
@@ -863,10 +866,10 @@ export interface components {
              */
             revisions: components["schemas"]["ClaimRevisionItem"][];
             /**
-             * Review Decisions
+             * Verification Records
              * @default []
              */
-            review_decisions: components["schemas"]["ReviewDecisionResponse"][];
+            verification_records: components["schemas"]["VerificationRecordResponse"][];
             /**
              * Audit Events
              * @default []
@@ -877,20 +880,22 @@ export interface components {
         ClaimRevisionItem: {
             /** Revision Id */
             revision_id: number;
-            /** Epistemic State */
-            epistemic_state: string;
-            /** Review State */
-            review_state: string;
-            /** Freshness State */
-            freshness_state: string;
-            /** Publication State */
-            publication_state: string;
+            research_state: components["schemas"]["ResearchState"];
+            canonical_state: components["schemas"]["CanonicalState"];
+            result_strength: components["schemas"]["ResultStrength"];
+            verification_state: components["schemas"]["VerificationState"];
+            falsification_status: components["schemas"]["FalsificationStatus"];
             /**
              * Created At
              * Format: date-time
              */
             created_at: string;
         };
+        /**
+         * ClaimScope
+         * @enum {string}
+         */
+        ClaimScope: "UNIVERSAL" | "REPRESENTATIVE" | "LOCAL";
         /** CorpusOccurrenceResponse */
         CorpusOccurrenceResponse: {
             /** Snapshot Id */
@@ -957,11 +962,6 @@ export interface components {
              */
             created_at: string;
         };
-        /**
-         * EpistemicState
-         * @enum {string}
-         */
-        EpistemicState: "OBSERVATION" | "HYPOTHESIS" | "TESTED" | "SUPPORTED" | "LOCK_BLOCKED" | "LOCK_INTERNAL_RESULT" | "REJECTED" | "UNRESOLVED";
         /** ErrorResponse */
         ErrorResponse: {
             /** Status */
@@ -1021,49 +1021,10 @@ export interface components {
             created_at: string;
         };
         /**
-         * FreshnessState
+         * FalsificationStatus
          * @enum {string}
          */
-        FreshnessState: "CURRENT" | "STALE" | "INVALIDATED" | "REVALIDATION_REQUIRED";
-        /** GateReportCreate */
-        GateReportCreate: {
-            /** Gate Code */
-            gate_code: string;
-            /** Status */
-            status: string;
-            /** Evidence Refs */
-            evidence_refs: string[];
-            /** Failure Reason */
-            failure_reason?: string | null;
-            /** Evaluated Revision */
-            evaluated_revision: string;
-            /** Required Action */
-            required_action?: string | null;
-        };
-        /** GateReportResponse */
-        GateReportResponse: {
-            /** Gate Code */
-            gate_code: string;
-            /** Status */
-            status: string;
-            /** Evidence Refs */
-            evidence_refs: string[];
-            /** Failure Reason */
-            failure_reason?: string | null;
-            /** Evaluated Revision */
-            evaluated_revision: string;
-            /** Required Action */
-            required_action?: string | null;
-            /** Id */
-            id: string;
-            /** Research Run Id */
-            research_run_id: string;
-            /**
-             * Created At
-             * Format: date-time
-             */
-            created_at: string;
-        };
+        FalsificationStatus: "NOT_REQUIRED" | "NOT_RUN" | "PASSED" | "FAILED";
         /** GovernanceOverviewResponse */
         GovernanceOverviewResponse: {
             /**
@@ -1077,15 +1038,15 @@ export interface components {
              */
             proposals: components["schemas"]["ChangeProposalResponse"][];
             /**
-             * Review Queue
+             * Canonicalization Candidates
              * @default []
              */
-            review_queue: components["schemas"]["SemanticClaimResponse"][];
+            canonicalization_candidates: components["schemas"]["SemanticClaimResponse"][];
             /**
-             * Freshness Queue
+             * Reopen Required
              * @default []
              */
-            freshness_queue: components["schemas"]["SemanticClaimResponse"][];
+            reopen_required: components["schemas"]["SemanticClaimResponse"][];
             /**
              * Corpus Snapshots
              * @default []
@@ -1216,24 +1177,6 @@ export interface components {
              */
             created_at: string;
         };
-        /** IsolationStateCreate */
-        IsolationStateCreate: {
-            /** Target Contract */
-            target_contract: string;
-            /** Corpus Snapshot */
-            corpus_snapshot: string;
-            /** Methodology Reference */
-            methodology_reference: string;
-            /** Allowed Sources */
-            allowed_sources: string[];
-            /**
-             * Is Contaminated
-             * @default CLEAN
-             */
-            is_contaminated: string;
-            /** Contamination Reason */
-            contamination_reason?: string | null;
-        };
         /** IsolationStateResponse */
         IsolationStateResponse: {
             /** Target Contract */
@@ -1260,6 +1203,23 @@ export interface components {
              * Format: date-time
              */
             created_at: string;
+        };
+        /** KnowledgeExplorerJudgment */
+        KnowledgeExplorerJudgment: {
+            /** Claim Id */
+            claim_id: string;
+            /** Contract Type */
+            contract_type: string;
+            /** Target Expression */
+            target_expression: string;
+            research_state: components["schemas"]["ResearchState"];
+            canonical_state: components["schemas"]["CanonicalState"];
+            result_strength: components["schemas"]["ResultStrength"];
+            verification_state: components["schemas"]["VerificationState"];
+            /** Dependencies */
+            dependencies: components["schemas"]["DependencyRecordResponse"][];
+            /** Affected By */
+            affected_by: string[];
         };
         /** KnowledgeGraphRebuildResponse */
         KnowledgeGraphRebuildResponse: {
@@ -1291,26 +1251,51 @@ export interface components {
             /** Authority Notice */
             authority_notice: string;
         };
-        /** LegacyKnowledgeExplorerClaim */
-        LegacyKnowledgeExplorerClaim: {
+        /** MethodologyDiagnosticsResponse */
+        MethodologyDiagnosticsResponse: {
             /** Claim Id */
             claim_id: string;
-            /** Contract Type */
-            contract_type: string;
-            /** Target Expression */
-            target_expression: string;
-            /** Epistemic State */
-            epistemic_state: string;
-            /** Review State */
-            review_state: string;
-            /** Freshness State */
-            freshness_state: string;
-            /** Publication State */
-            publication_state: string;
-            /** Dependencies */
-            dependencies: components["schemas"]["DependencyRecordResponse"][];
-            /** Affected By */
-            affected_by: string[];
+            /**
+             * Findings
+             * @default []
+             */
+            findings: components["schemas"]["MethodologyFinding"][];
+            /**
+             * Hard Blockers
+             * @default []
+             */
+            hard_blockers: string[];
+            /**
+             * Warnings
+             * @default []
+             */
+            warnings: string[];
+            /**
+             * Evaluated At
+             * Format: date-time
+             */
+            evaluated_at: string;
+        };
+        /** MethodologyFinding */
+        MethodologyFinding: {
+            /** Dimension */
+            dimension: string;
+            /** Status */
+            status: string;
+            /** Severity */
+            severity: string;
+            /** Details */
+            details: string;
+            /**
+             * Evidence Refs
+             * @default []
+             */
+            evidence_refs: string[];
+            /**
+             * Hard Blocker
+             * @default false
+             */
+            hard_blocker: boolean;
         };
         /** MethodologyRevisionResponse */
         MethodologyRevisionResponse: {
@@ -1380,76 +1365,6 @@ export interface components {
              */
             created_at: string;
         };
-        /** PublicationRequest */
-        PublicationRequest: {
-            /** Publisher Identity */
-            publisher_identity: string;
-            /** Target Registry */
-            target_registry: string;
-        };
-        /**
-         * PublicationState
-         * @enum {string}
-         */
-        PublicationState: "PRIVATE_WORKING" | "REVIEWABLE" | "PUBLISHABLE" | "PUBLISHED" | "WITHDRAWN";
-        /** PurityFinding */
-        PurityFinding: {
-            /** Dimension */
-            dimension: string;
-            /** Status */
-            status: string;
-            /** Severity */
-            severity: string;
-            /** Details */
-            details: string;
-        };
-        /** QualityProfileResponse */
-        QualityProfileResponse: {
-            /** Available */
-            available: boolean;
-            /**
-             * Source
-             * @enum {string}
-             */
-            source: "PERSISTED_QUALITY_PROFILE" | "DERIVED_METHODOLOGICAL_PURITY_ONLY";
-            /** Id */
-            id?: string | null;
-            /** Claim Id */
-            claim_id: string;
-            /** Purity Score */
-            purity_score?: number | null;
-            /**
-             * Purity Rating
-             * @default PURE
-             */
-            purity_rating: string;
-            /**
-             * Purity Findings
-             * @default []
-             */
-            purity_findings: components["schemas"]["PurityFinding"][];
-            /** Synthetic Data Leak */
-            synthetic_data_leak?: boolean | null;
-            /** External Data Leak */
-            external_data_leak?: boolean | null;
-            /** Corpus Coverage */
-            corpus_coverage?: number | null;
-            /** Deep Analysis Coverage */
-            deep_analysis_coverage?: number | null;
-            /** Reproducibility Score */
-            reproducibility_score?: number | null;
-            /** Unresolved Conflict Burden */
-            unresolved_conflict_burden?: number | null;
-            /**
-             * Methodological Purity Flags
-             * @default []
-             */
-            methodological_purity_flags: string[];
-            /** Evaluation Summary */
-            evaluation_summary?: string | null;
-            /** Created At */
-            created_at?: string | null;
-        };
         /** RejectionCondition */
         RejectionCondition: {
             /** Challenging Finding */
@@ -1491,23 +1406,77 @@ export interface components {
              */
             generated_at: string;
         };
+        /** ResearchJudgmentCreate */
+        ResearchJudgmentCreate: {
+            /**
+             * Contract Type
+             * @enum {string}
+             */
+            contract_type: "ROOT_CONCEPT" | "LEXEME" | "LOCAL_MEANING" | "VERSE_MEANING" | "SEMANTIC_DIFFERENCE";
+            research_state: components["schemas"]["ResearchState"];
+            claim_scope: components["schemas"]["ClaimScope"];
+            /** Sampling Basis */
+            sampling_basis?: string | null;
+            result_strength: components["schemas"]["ResultStrength"];
+            /** Preferred Conclusion */
+            preferred_conclusion?: string | null;
+            /** Root Concept */
+            root_concept?: string | null;
+            /** Plain Explanation */
+            plain_explanation?: string | null;
+            /** Semantic Boundary */
+            semantic_boundary?: string | null;
+            /**
+             * Layer Attribution
+             * @default {}
+             */
+            layer_attribution: {
+                [key: string]: string;
+            };
+            /**
+             * Supporting Evidence Refs
+             * @default []
+             */
+            supporting_evidence_refs: string[];
+            /**
+             * Counterevidence Refs
+             * @default []
+             */
+            counterevidence_refs: string[];
+            /**
+             * Unresolved Cases
+             * @default []
+             */
+            unresolved_cases: string[];
+            /**
+             * Hard Cases
+             * @default []
+             */
+            hard_cases: string[];
+            /** Strongest Counterexample */
+            strongest_counterexample?: string | null;
+            /** Strongest Competitor */
+            strongest_competitor?: string | null;
+            rejection_condition?: components["schemas"]["RejectionCondition"] | null;
+            /** @default NOT_REQUIRED */
+            falsification_status: components["schemas"]["FalsificationStatus"];
+            /**
+             * Reopen Conditions
+             * @default []
+             */
+            reopen_conditions: string[];
+        };
         /** ResearchRunCreate */
         ResearchRunCreate: {
             /** Target Contract */
             target_contract: string;
             /** Target Expression */
             target_expression: string;
-            /** Methodology Revision */
-            methodology_revision: string;
-            /** Corpus Snapshot */
-            corpus_snapshot: string;
-            /** Authority Context */
-            authority_context: {
-                [key: string]: unknown;
-            };
         };
         /** ResearchRunResponse */
         ResearchRunResponse: {
+            /** Id */
+            id: string;
             /** Target Contract */
             target_contract: string;
             /** Target Expression */
@@ -1520,8 +1489,6 @@ export interface components {
             authority_context: {
                 [key: string]: unknown;
             };
-            /** Id */
-            id: string;
             current_stage: components["schemas"]["ResearchStage"];
             /** Status */
             status: string;
@@ -1540,47 +1507,17 @@ export interface components {
          * ResearchStage
          * @enum {string}
          */
-        ResearchStage: "PREFLIGHT" | "ISOLATION_PREFLIGHT" | "CORPUS_COLLECTION" | "STRUCTURAL_OBSERVATION" | "HYPOTHESIS_GENERATION" | "DIFFERENTIATION" | "LOCKING";
-        /** ReviewDecisionCreate */
-        ReviewDecisionCreate: {
-            /** Reviewer Identity */
-            reviewer_identity: string;
-            /**
-             * Decision
-             * @enum {string}
-             */
-            decision: "APPROVED" | "REJECTED";
-            /** Rationale */
-            rationale?: string | null;
-        };
-        /** ReviewDecisionResponse */
-        ReviewDecisionResponse: {
-            /** Reviewer Identity */
-            reviewer_identity: string;
-            /**
-             * Decision
-             * @enum {string}
-             */
-            decision: "APPROVED" | "REJECTED";
-            /** Rationale */
-            rationale?: string | null;
-            /** Id */
-            id: string;
-            /** Claim Id */
-            claim_id: string;
-            /** Evaluated Claim Revision */
-            evaluated_claim_revision: number;
-            /**
-             * Created At
-             * Format: date-time
-             */
-            created_at: string;
-        };
+        ResearchStage: "RESEARCH" | "CHALLENGE" | "JUDGMENT" | "CANONICALIZATION";
         /**
-         * ReviewState
+         * ResearchState
          * @enum {string}
          */
-        ReviewState: "NOT_REVIEWED" | "REVIEW_REQUIRED" | "IN_REVIEW" | "APPROVED" | "REJECTED" | "OWNER_DECISION_REQUIRED";
+        ResearchState: "PREFERRED" | "UNRESOLVED" | "REJECTED";
+        /**
+         * ResultStrength
+         * @enum {string}
+         */
+        ResultStrength: "WEAK" | "MODERATE" | "STRONG" | "UNRESOLVED";
         /** RuleHistoryResponse */
         RuleHistoryResponse: {
             /** Rule Code */
@@ -1658,116 +1595,74 @@ export interface components {
              */
             neighbors: components["schemas"]["EssentialNeighborResponse"][];
             /**
-             * Gates
+             * Research Judgments
              * @default []
              */
-            gates: components["schemas"]["GateReportResponse"][];
-            /**
-             * Claims
-             * @default []
-             */
-            claims: components["schemas"]["SemanticClaimResponse"][];
-            /** Claims Visible */
-            claims_visible: boolean;
+            research_judgments: components["schemas"]["SemanticClaimResponse"][];
+            /** Judgments Visible */
+            judgments_visible: boolean;
             /**
              * Audit Events
              * @default []
              */
             audit_events: components["schemas"]["AuditLogResponse"][];
         };
-        /** SemanticClaimCreate */
-        SemanticClaimCreate: {
-            /** Contract Type */
-            contract_type: string;
-            /** @default UNRESOLVED */
-            epistemic_state: components["schemas"]["EpistemicState"];
-            /** @default NOT_REVIEWED */
-            review_state: components["schemas"]["ReviewState"];
-            /** @default CURRENT */
-            freshness_state: components["schemas"]["FreshnessState"];
-            /** @default PRIVATE_WORKING */
-            publication_state: components["schemas"]["PublicationState"];
-            /**
-             * Revision Id
-             * @default 1
-             */
-            revision_id: number;
-            /** Index Coverage */
-            index_coverage?: string | null;
-            /** Deep Analysis Coverage */
-            deep_analysis_coverage?: string | null;
-            /** Abstract Root Core */
-            abstract_root_core?: string | null;
-            /** Root Definition */
-            root_definition?: string | null;
-            /** Root Meaning */
-            root_meaning?: string | null;
-            /** Root Concept */
-            root_concept?: string | null;
-            /** Rejection Condition */
-            rejection_condition?: string | null;
-            /** Supporting Evidence */
-            supporting_evidence?: {
-                [key: string]: unknown;
-            } | null;
-            /** Counterevidence */
-            counterevidence?: {
-                [key: string]: unknown;
-            } | null;
-            /** Unresolved Cases */
-            unresolved_cases?: {
-                [key: string]: unknown;
-            } | null;
-            /** Research Run Id */
-            research_run_id: string;
-        };
         /** SemanticClaimResponse */
         SemanticClaimResponse: {
-            /** Contract Type */
-            contract_type: string;
-            /** @default UNRESOLVED */
-            epistemic_state: components["schemas"]["EpistemicState"];
-            /** @default NOT_REVIEWED */
-            review_state: components["schemas"]["ReviewState"];
-            /** @default CURRENT */
-            freshness_state: components["schemas"]["FreshnessState"];
-            /** @default PRIVATE_WORKING */
-            publication_state: components["schemas"]["PublicationState"];
-            /**
-             * Revision Id
-             * @default 1
-             */
-            revision_id: number;
-            /** Index Coverage */
-            index_coverage?: string | null;
-            /** Deep Analysis Coverage */
-            deep_analysis_coverage?: string | null;
-            /** Abstract Root Core */
-            abstract_root_core?: string | null;
-            /** Root Definition */
-            root_definition?: string | null;
-            /** Root Meaning */
-            root_meaning?: string | null;
-            /** Root Concept */
-            root_concept?: string | null;
-            /** Rejection Condition */
-            rejection_condition?: string | null;
-            /** Supporting Evidence */
-            supporting_evidence?: {
-                [key: string]: unknown;
-            } | null;
-            /** Counterevidence */
-            counterevidence?: {
-                [key: string]: unknown;
-            } | null;
-            /** Unresolved Cases */
-            unresolved_cases?: {
-                [key: string]: unknown;
-            } | null;
             /** Id */
             id: string;
             /** Research Run Id */
             research_run_id?: string | null;
+            /** Contract Type */
+            contract_type: string;
+            research_state: components["schemas"]["ResearchState"];
+            canonical_state: components["schemas"]["CanonicalState"];
+            result_strength: components["schemas"]["ResultStrength"];
+            verification_state: components["schemas"]["VerificationState"];
+            falsification_status: components["schemas"]["FalsificationStatus"];
+            claim_scope: components["schemas"]["ClaimScope"];
+            /** Sampling Basis */
+            sampling_basis?: string | null;
+            /** Revision Id */
+            revision_id: number;
+            /** Research Completeness */
+            research_completeness: {
+                [key: string]: unknown;
+            };
+            /** Preferred Conclusion */
+            preferred_conclusion?: string | null;
+            /** Root Concept */
+            root_concept?: string | null;
+            /** Plain Explanation */
+            plain_explanation?: string | null;
+            /** Semantic Boundary */
+            semantic_boundary?: string | null;
+            /** Layer Attribution */
+            layer_attribution: {
+                [key: string]: string;
+            };
+            rejection_condition?: components["schemas"]["RejectionCondition"] | null;
+            /** Supporting Evidence */
+            supporting_evidence: string[];
+            /** Counterevidence */
+            counterevidence: string[];
+            /** Unresolved Cases */
+            unresolved_cases: string[];
+            /** Hard Cases */
+            hard_cases: string[];
+            /** Strongest Counterexample */
+            strongest_counterexample?: string | null;
+            /** Strongest Competitor */
+            strongest_competitor?: string | null;
+            /** Reopen Conditions */
+            reopen_conditions: string[];
+            /** Accepted At */
+            accepted_at?: string | null;
+            /**
+             * Created At
+             * Format: date-time
+             */
+            created_at: string;
         };
         /** StewardCommandCreate */
         StewardCommandCreate: {
@@ -1806,6 +1701,58 @@ export interface components {
              */
             created_at: string;
         };
+        /** VerificationRecordCreate */
+        VerificationRecordCreate: {
+            /**
+             * Decision
+             * @enum {string}
+             */
+            decision: "VERIFIED" | "REJECTED";
+            /** Verification Type */
+            verification_type: string;
+            /** Rationale */
+            rationale?: string | null;
+            /**
+             * Evidence Refs
+             * @default []
+             */
+            evidence_refs: string[];
+        };
+        /** VerificationRecordResponse */
+        VerificationRecordResponse: {
+            /**
+             * Decision
+             * @enum {string}
+             */
+            decision: "VERIFIED" | "REJECTED";
+            /** Verification Type */
+            verification_type: string;
+            /** Rationale */
+            rationale?: string | null;
+            /**
+             * Evidence Refs
+             * @default []
+             */
+            evidence_refs: string[];
+            /** Id */
+            id: string;
+            /** Claim Id */
+            claim_id: string;
+            /** Verifier Identity */
+            verifier_identity: string;
+            /** Evaluated Claim Revision */
+            evaluated_claim_revision: number;
+            /**
+             * Created At
+             * Format: date-time
+             */
+            created_at: string;
+        };
+        /**
+         * VerificationState
+         * @enum {string}
+         */
+        VerificationState: "NOT_REQUIRED" | "NOT_VERIFIED" | "VERIFIED";
     };
     responses: never;
     parameters: never;
@@ -2477,11 +2424,7 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody: {
-            content: {
-                "application/json": components["schemas"]["IsolationStateCreate"];
-            };
-        };
+        requestBody?: never;
         responses: {
             /** @description Successful Response */
             200: {
@@ -3053,7 +2996,7 @@ export interface operations {
             };
         };
     };
-    record_gate_report_runs__run_id__gates_post: {
+    create_research_judgment_runs__run_id__judgments_post: {
         parameters: {
             query?: never;
             header?: never;
@@ -3064,92 +3007,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["GateReportCreate"];
-            };
-        };
-        responses: {
-            /** @description Successful Response */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["GateReportResponse"];
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["ErrorResponse"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["ErrorResponse"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["ErrorResponse"];
-                };
-            };
-            /** @description Conflict */
-            409: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-            /** @description Validation Error */
-            422: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["ErrorResponse"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["ErrorResponse"];
-                };
-            };
-        };
-    };
-    create_claim_runs__run_id__claims_post: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                run_id: string;
-            };
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": components["schemas"]["SemanticClaimCreate"];
+                "application/json": components["schemas"]["ResearchJudgmentCreate"];
             };
         };
         responses: {
@@ -3223,7 +3081,7 @@ export interface operations {
             };
         };
     };
-    get_claim_claims__claim_id__get: {
+    get_research_judgment_judgments__claim_id__get: {
         parameters: {
             query?: never;
             header?: never;
@@ -3304,7 +3162,7 @@ export interface operations {
             };
         };
     };
-    submit_review_decision_claims__claim_id__reviews_post: {
+    record_independent_verification_judgments__claim_id__verification_post: {
         parameters: {
             query?: never;
             header?: never;
@@ -3315,7 +3173,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["ReviewDecisionCreate"];
+                "application/json": components["schemas"]["VerificationRecordCreate"];
             };
         };
         responses: {
@@ -3325,7 +3183,7 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": components["schemas"]["ReviewDecisionResponse"];
+                    "application/json": components["schemas"]["VerificationRecordResponse"];
                 };
             };
             /** @description Bad Request */
@@ -3389,7 +3247,7 @@ export interface operations {
             };
         };
     };
-    publish_claim_claims__claim_id__publish_post: {
+    canonicalize_research_judgment_judgments__claim_id__canonicalize_post: {
         parameters: {
             query?: never;
             header?: never;
@@ -3400,7 +3258,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["PublicationRequest"];
+                "application/json": components["schemas"]["CanonicalizationRequest"];
             };
         };
         responses: {
@@ -3474,7 +3332,7 @@ export interface operations {
             };
         };
     };
-    ai_propose_hypothesis_runs__run_id__ai_propose_hypothesis_post: {
+    ai_create_research_judgment_runs__run_id__ai_research_judgment_post: {
         parameters: {
             query?: never;
             header?: never;
@@ -3491,7 +3349,7 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": components["schemas"]["AIExecutionRecordResponse"];
+                    "application/json": components["schemas"]["AIResearchJudgmentResponse"];
                 };
             };
             /** @description Bad Request */
@@ -3981,7 +3839,7 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": components["schemas"]["LegacyKnowledgeExplorerClaim"];
+                    "application/json": components["schemas"]["KnowledgeExplorerJudgment"];
                 };
             };
             /** @description Bad Request */
@@ -4207,7 +4065,7 @@ export interface operations {
             };
         };
     };
-    get_claim_provenance_claims__claim_id__provenance_get: {
+    get_claim_provenance_judgments__claim_id__provenance_get: {
         parameters: {
             query?: never;
             header?: never;
@@ -4288,7 +4146,7 @@ export interface operations {
             };
         };
     };
-    get_reproduction_manifest_claims__claim_id__reproduction_manifest_get: {
+    get_reproduction_manifest_judgments__claim_id__reproduction_manifest_get: {
         parameters: {
             query?: never;
             header?: never;
@@ -4369,7 +4227,7 @@ export interface operations {
             };
         };
     };
-    get_claim_quality_claims__claim_id__quality_get: {
+    get_methodology_diagnostics_judgments__claim_id__diagnostics_get: {
         parameters: {
             query?: never;
             header?: never;
@@ -4386,7 +4244,7 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": components["schemas"]["QualityProfileResponse"];
+                    "application/json": components["schemas"]["MethodologyDiagnosticsResponse"];
                 };
             };
             /** @description Bad Request */
@@ -4533,7 +4391,7 @@ export interface operations {
             };
         };
     };
-    get_claim_history_claims__claim_id__history_get: {
+    get_claim_history_judgments__claim_id__history_get: {
         parameters: {
             query?: never;
             header?: never;

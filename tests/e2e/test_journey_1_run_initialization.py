@@ -29,7 +29,7 @@ def test_journey_1_run_initialization(page: Page, e2e_server: dict):
     corpus = page.locator("#run-corpus")
     expect(methodology.locator("option")).to_have_count(2)
     expect(corpus.locator("option")).to_have_count(2)
-    methodology.select_option("LISAN_QURANIC_SEMANTIC_EXTRACTION@6bb1c10a0f9a")
+    methodology.select_option("LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4")
     corpus.select_option("snap_tanzil_1_1_ac0724796cbb")
 
     rejected = page.request.post(

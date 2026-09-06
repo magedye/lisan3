@@ -3,7 +3,7 @@
 import type { components } from "@/api/openapi";
 import { ConfirmDialog } from "@/components/confirm-dialog";
 import { EmptyState, ErrorState, LoadingState, PageHeader, Panel } from "@/components/page-primitives";
-import { StatusAxes, StatusBadge } from "@/components/status-axes";
+import { ResearchStatus, StatusBadge } from "@/components/status-axes";
 import { apiFetch } from "@/lib/api";
 import { useApiResource } from "@/lib/use-api-resource";
 import Link from "next/link";
@@ -106,13 +106,13 @@ export default function GovernancePage() {
       <PageHeader
         eyebrow="GOVERNANCE CENTER · Current contracts"
         title="مركز الحوكمة — Governance Center"
-        description="القواعد والمقترحات والمراجعات وقبول المصادر من الحالة المحفوظة. الواجهة لا تنشئ سلطة ولا تعدّل revision قائماً في مكانه."
+        description="القواعد والمقترحات ومرشحات الاعتماد وقبول المصادر من الحالة المحفوظة. البحث لا ينتظر مسار مراجعة إداري."
         actions={<StatusBadge label="المسار" value="CHANGE_PROPOSAL_REQUIRED" />}
       />
 
       <nav className="tabs" role="tablist" aria-label="أقسام مركز الحوكمة">
         <button className="tab" role="tab" type="button" aria-selected={tab === "rules"} onClick={() => setTab("rules")}>القواعد والمقترحات</button>
-        <button className="tab" role="tab" type="button" aria-selected={tab === "review"} onClick={() => setTab("review")}>قائمة المراجعة</button>
+        <button className="tab" role="tab" type="button" aria-selected={tab === "review"} onClick={() => setTab("review")}>مرشحات الاعتماد</button>
         <button className="tab" role="tab" type="button" aria-selected={tab === "sources"} onClick={() => setTab("sources")}>المصادر والقبول</button>
       </nav>
 
@@ -126,8 +126,8 @@ export default function GovernancePage() {
           <section className="metric-grid">
             <article className="metric-card information"><span>القواعد</span><strong>{overview.data.rules.length}</strong><small>GovernanceRule</small></article>
             <article className="metric-card warning"><span>المقترحات المفتوحة</span><strong>{overview.data.proposals.filter((item) => item.status === "PROPOSED").length}</strong><small>تحتاج قراراً صريحاً</small></article>
-            <article className="metric-card stale"><span>تحتاج Revalidation</span><strong>{overview.data.freshness_queue.length}</strong><small>محور الحداثة مستقل</small></article>
-            <article className="metric-card positive"><span>المراجعة البشرية</span><strong>{overview.data.review_queue.length}</strong><small>لا تمنحها الواجهة تلقائياً</small></article>
+            <article className="metric-card stale"><span>تحتاج إعادة فتح</span><strong>{overview.data.reopen_required.length}</strong><small>REOPEN_REQUIRED</small></article>
+            <article className="metric-card positive"><span>مرشحة للاعتماد</span><strong>{overview.data.canonicalization_candidates.length}</strong><small>تحقق مستقل ثم قرار Host</small></article>
           </section>
 
           <div className="two-column">
@@ -183,10 +183,10 @@ export default function GovernancePage() {
       )}
 
       {tab === "review" && overview.data && (
-        <Panel title="قائمة المراجعة البشرية" eyebrow="Four independent axes">
-          {overview.data.review_queue.length === 0 ? <EmptyState title="قائمة المراجعة فارغة" detail="لا توجد دعاوى بحالة مراجعة معلقة في البيانات الحالية." /> : (
-            <div className="stack">{overview.data.review_queue.map((claim) => (
-              <article className="list-card" key={claim.id}><div className="list-row"><div><strong>{claim.abstract_root_core || claim.root_definition || claim.contract_type}</strong><small className="technical-text">{claim.id}</small></div><Link className="button button-secondary button-small" href={`/claims/${claim.id}`}>فتح الدعوى</Link></div><StatusAxes epistemic={claim.epistemic_state} review={claim.review_state} freshness={claim.freshness_state} publication={claim.publication_state} compact /></article>
+        <Panel title="مرشحات الاعتماد" eyebrow="Research Judgment → Verification → Canonicalization">
+          {overview.data.canonicalization_candidates.length === 0 ? <EmptyState title="لا توجد مرشحات" detail="لا توجد نتائج قوية مفضلة تنتظر الاعتماد." /> : (
+            <div className="stack">{overview.data.canonicalization_candidates.map((claim) => (
+              <article className="list-card" key={claim.id}><div className="list-row"><div><strong>{claim.preferred_conclusion || claim.root_concept || claim.contract_type}</strong><small className="technical-text">{claim.id}</small></div><Link className="button button-secondary button-small" href={`/claims/${claim.id}`}>فتح الحكم</Link></div><ResearchStatus research={claim.research_state} canonical={claim.canonical_state} compact /></article>
             ))}</div>
           )}
         </Panel>

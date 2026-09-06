@@ -10,19 +10,21 @@ STATUS_COMPONENT = (
     / "components"
     / "status-axes.tsx"
 )
-STATUS_AXES = (
-    ("المعرفي", "epistemic_state"),
-    ("المراجعة", "review_state"),
-    ("الحداثة", "freshness_state"),
-    ("النشر", "publication_state"),
+# The simplified contract replaces the four independent lifecycle axes with the
+# two decision-bearing states (research + canonical) plus optional strength and
+# verification facts. See SIMPLIFIED_AI_AUTHORITY_AND_GOVERNANCE_CONTRACT.md.
+RESEARCH_STATUS_FACTS = (
+    ("حالة البحث", "research", "research_state"),
+    ("الحالة المعتمدة", "canonical", "canonical_state"),
 )
 
 
-@pytest.mark.parametrize(("label", "field"), STATUS_AXES)
-def test_found_claim_renders_each_independent_status_axis(label: str, field: str):
+@pytest.mark.parametrize(("label", "prop", "field"), RESEARCH_STATUS_FACTS)
+def test_found_claim_renders_each_research_status_fact(
+    label: str, prop: str, field: str
+):
     home_source = HOME_PAGE.read_text(encoding="utf-8")
     component_source = STATUS_COMPONENT.read_text(encoding="utf-8")
 
-    assert f'{field.split("_", maxsplit=1)[0]}:' in component_source
     assert label in component_source
-    assert f"{field.split('_', maxsplit=1)[0]}={{result.claim.{field}}}" in home_source
+    assert f"{prop}={{result.claim.{field}}}" in home_source

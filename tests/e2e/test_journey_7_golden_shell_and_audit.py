@@ -63,7 +63,7 @@ def test_journey_7_golden_shell_and_real_audit(
     page.get_by_role("button", name="Search — بحث").click()
     expect(page.locator("h3:has-text('Insufficient Evidence')")).to_be_visible()
     expect(page.locator("#run-methodology")).to_contain_text(
-        "LISAN_QURANIC_SEMANTIC_EXTRACTION@6bb1c10a0f9a"
+        "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4"
     )
     expect(page.locator("#run-corpus")).to_contain_text("snap_tanzil_1_1_ac0724796cbb")
 

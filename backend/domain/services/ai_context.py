@@ -2,15 +2,21 @@ from typing import Any
 
 from sqlalchemy.orm import Session
 
-from ..models import CorpusOccurrence, Hypothesis, ObservationArtifact, ResearchRun
-from .isolation import BlindLabIsolationService, IsolationContaminationException
+from ..models import (
+    CorpusOccurrence,
+    Hypothesis,
+    IsolationState,
+    ObservationArtifact,
+    ResearchRun,
+    SemanticClaim,
+)
 
 
 class AIContextBuilder:
     """
     Builds the exact contextual payload allowed for the AI model during a specific run stage.
-    Critically, it enforces Blind Lab isolation. If INTERNAL_LOCK is not passed, it strictly
-    excludes prohibited prior semantic artifacts (Root Cores, dictionary definitions, etc.).
+    The evidence context contains admitted Quran material and same-run artifacts
+    only. Accepted project memory is labelled separately and never becomes evidence.
     """
 
     @staticmethod
@@ -18,6 +24,15 @@ class AIContextBuilder:
         run = db.query(ResearchRun).filter(ResearchRun.id == run_id).first()
         if not run:
             raise ValueError(f"Run {run_id} not found")
+        isolation = (
+            db.query(IsolationState)
+            .filter(IsolationState.research_run_id == run_id)
+            .one_or_none()
+        )
+        if isolation is None:
+            raise ValueError("Source isolation has not been initialized")
+        if isolation.is_contaminated != "CLEAN":
+            raise PermissionError("Run has actual prohibited-source contamination")
 
         # Start with standard allowed context
         context = {
@@ -28,10 +43,22 @@ class AIContextBuilder:
             "stage": run.current_stage,
         }
 
-        # Load admitted corpus artifacts
+        context["source_policy"] = {
+            "evidence_sources": ["ADMITTED_CANONICAL_QURAN", "SAME_RUN_ARTIFACTS"],
+            "prohibited": [
+                "MODEL_MEMORY_AS_EVIDENCE",
+                "DICTIONARY_OR_TAFSIR_IN_INTERNAL_INDUCTION",
+                "UNTRACED_PRIOR_ANSWERS",
+            ],
+        }
+
+        # Load target-scoped admitted corpus artifacts.
         occurrences = (
             db.query(CorpusOccurrence)
-            .filter(CorpusOccurrence.snapshot_id == run.corpus_snapshot)
+            .filter(
+                CorpusOccurrence.snapshot_id == run.corpus_snapshot,
+                CorpusOccurrence.expression == run.target_expression,
+            )
             .all()
         )
         context["corpus_occurrences"] = [
@@ -62,16 +89,26 @@ class AIContextBuilder:
             for h in hypotheses
         ]
 
-        # Enforce Blind Lab Isolation
-        try:
-            # Check if internal lock is achieved. If so, full semantic knowledge might be permitted.
-            BlindLabIsolationService.enforce_semantic_isolation(db, run_id)
-            context["semantic_knowledge_access"] = "GRANTED"
-            # Here we would load semantic registries if requested, but for now we just flag it.
-            context["prior_semantics"] = ["(Simulated admitted post-lock definitions)"]
-        except IsolationContaminationException:
-            # BLOCKED!
-            context["semantic_knowledge_access"] = "BLIND_LAB_RESTRICTED"
-            # Strictly do NOT append any prior dictionary or Root Core data.
+        accepted = (
+            db.query(SemanticClaim)
+            .join(ResearchRun, SemanticClaim.research_run_id == ResearchRun.id)
+            .filter(
+                ResearchRun.target_expression == run.target_expression,
+                SemanticClaim.contract_type == "ROOT_CONCEPT",
+                SemanticClaim.canonical_state == "ACCEPTED",
+            )
+            .order_by(SemanticClaim.accepted_at.desc(), SemanticClaim.created_at.desc())
+            .first()
+        )
+        context["accepted_project_knowledge"] = (
+            None
+            if accepted is None
+            else {
+                "claim_id": accepted.id,
+                "root_concept": accepted.root_concept,
+                "role": "PROJECT_KNOWLEDGE_NOT_PRIMARY_EVIDENCE",
+                "evidence_refs": list(accepted.supporting_evidence or []),
+            }
+        )
 
         return context

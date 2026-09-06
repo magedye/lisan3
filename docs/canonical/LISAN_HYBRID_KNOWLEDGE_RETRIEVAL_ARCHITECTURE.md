@@ -1,5 +1,12 @@
 # Lisan Hybrid Knowledge Retrieval Architecture Contract
 
+> **Semantic-governance amendment — 2026-09-06:** this document continues to
+> govern retrieval, projection, and EvidenceResolver boundaries. Any reference
+> below to four status axes, Purity/Lock Gates, or Internal Lock is historical
+> and is superseded by `SIMPLIFIED_AI_AUTHORITY_AND_GOVERNANCE_CONTRACT.md`.
+> Retrieval outputs remain non-authoritative; current admission uses the single
+> server-owned canonicalization policy.
+
 **Document ID:** `LISAN-HKR-ARCH`
 **Version:** `1.0`
 **Status:** `CANONICAL — APPROVED / EXECUTION_GATED`

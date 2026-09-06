@@ -75,22 +75,17 @@ def test_ai_context_builder_blind_lab_enforcement():
     db.close()
 
     # Enter preflight
-    client.post(
-        f"/runs/{run_id}/blind/preflight",
-        json={
-            "target_contract": "ROOT_CORE",
-            "corpus_snapshot": "snap1-test-fixture",
-            "methodology_reference": "ref_v1",
-            "allowed_sources": ["QURAN_CORPUS"],
-        },
-    )
+    client.post(f"/runs/{run_id}/blind/preflight")
 
     db = TestingSessionLocal()
     context = AIContextBuilder.build_research_context(db, run_id)
     db.close()
 
-    # Internal lock not passed, semantic knowledge must be restricted
-    assert context["semantic_knowledge_access"] == "BLIND_LAB_RESTRICTED"
+    assert context["source_policy"]["evidence_sources"] == [
+        "ADMITTED_CANONICAL_QURAN",
+        "SAME_RUN_ARTIFACTS",
+    ]
+    assert context["accepted_project_knowledge"] is None
     assert "prior_semantics" not in context
 
 

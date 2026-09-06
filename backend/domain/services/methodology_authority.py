@@ -58,7 +58,10 @@ def methodology_authority_failures(
 def eligible_methodology_revision_ids(db: Session) -> list[str]:
     revisions = (
         db.query(models.MethodologyRevision)
-        .order_by(models.MethodologyRevision.id)
+        .order_by(
+            models.MethodologyRevision.created_at,
+            models.MethodologyRevision.id,
+        )
         .all()
     )
     return [

@@ -9,7 +9,6 @@ from sqlalchemy import delete, select, text
 from sqlalchemy.orm import Session
 
 from backend.domain import models
-from backend.domain.services.gates import INTERNAL_LOCK, has_valid_gate
 from backend.domain.vector_contracts import (
     CandidateType,
     EmbeddingModelManifest,
@@ -57,9 +56,16 @@ def _require_run_access(db: Session, run_id: str) -> models.ResearchRun:
         raise VectorAccessForbidden(
             "Vector access blocked: Blind Lab isolation is absent or contaminated"
         )
-    if not has_valid_gate(db, run_id, INTERNAL_LOCK):
+    judgment_exists = (
+        db.query(models.SemanticClaim)
+        .filter(models.SemanticClaim.research_run_id == run_id)
+        .first()
+        is not None
+    )
+    if not judgment_exists:
         raise VectorAccessForbidden(
-            "Vector access blocked before Internal Lock; this is not contamination"
+            "Vector access is available only after an internal Research Judgment; "
+            "this preserves source isolation and is not a research gate"
         )
     return run
 

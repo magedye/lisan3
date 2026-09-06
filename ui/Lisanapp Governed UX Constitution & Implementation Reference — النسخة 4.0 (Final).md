@@ -1,5 +1,15 @@
 # Lisanapp Governed UX Constitution & Implementation Reference
 
+> **Status-governance amendment — 2026-09-06:** visual, RTL, accessibility,
+> progressive-disclosure, traceability, and direct-write protections in this
+> document remain authoritative. References to four semantic status axes,
+> Internal Lock, Purity Gate, mandatory review/publication workflow, or prior
+> knowledge hidden until Lock are superseded by
+> `SIMPLIFIED_AI_AUTHORITY_AND_GOVERNANCE_CONTRACT.md`. Current UI uses Research
+> State and Canonical State, exposes diagnostics without generic blocking, and
+> permits AI Research Judgments while reserving Canonical Acceptance to an
+> explicit server-owned action.
+
 ## النسخة النهائية 4.0 — النواة المعتمدة لبناء تطبيق لسان من الصفر
 
 ---
@@ -104,9 +114,9 @@
 - **الجذر:** `{ك ت ب}`
 - **المنهجية:** `V7.3`
 - **Corpus:** `CANON-001`
-- **الحالة المعرفية:** `LOCK_INTERNAL_RESULT`
-- **المراجعة:** `NOT_REVIEWED`
-- **الحداثة:** `CURRENT`
+- **حالة البحث:** `PREFERRED | UNRESOLVED | REJECTED`
+- **الحالة المعتمدة:** `NOT_CANONICAL | ACCEPTED | REOPEN_REQUIRED`
+- **قوة النتيجة/التحقق:** صفات تأهيلية تظهر عند الحاجة وليست محاور workflow.
 
 ### 4.3 المفتش السياقي (Contextual Inspector)
 لوحة جانبية قابلة للفتح لأي عنصر. تعرض:
@@ -114,18 +124,15 @@
 
 ---
 
-# 5. النموذج الصحيح لعرض الحالة (المحاور الأربعة)
+# 5. النموذج الصحيح لعرض الحالة
 
-لا يُستخدم سلم واحد للنضج. تُعرض أربعة محاور مستقلة:
-
-| المحور | الحالات الممكنة |
+| الحالة | القيم |
 | :--- | :--- |
-| **الحالة المعرفية (Epistemic)** | `OBSERVATION`, `HYPOTHESIS`, `TESTED`, `SUPPORTED`, `LOCK_BLOCKED`, `LOCK_INTERNAL_RESULT`, `REJECTED`, `UNRESOLVED` |
-| **حالة المراجعة (Review)** | `NOT_REVIEWED`, `REVIEW_REQUIRED`, `IN_REVIEW`, `APPROVED`, `REJECTED`, `OWNER_DECISION_REQUIRED` |
-| **حالة الحداثة (Freshness)** | `CURRENT`, `STALE`, `INVALIDATED`, `REVALIDATION_REQUIRED` |
-| **حالة النشر (Publication)** | `PRIVATE_WORKING`, `REVIEWABLE`, `PUBLISHABLE`, `PUBLISHED`, `WITHDRAWN` |
+| **حالة البحث (Research)** | `PREFERRED`, `UNRESOLVED`, `REJECTED` |
+| **الحالة المعتمدة (Canonical)** | `NOT_CANONICAL`, `ACCEPTED`, `REOPEN_REQUIRED` |
 
-**قاعدة UX:** لكل محور (نص، رمز، لون، تفسير مختصر). لا يعتمد المستخدم على اللون وحده.
+تعرض قوة النتيجة واكتمالها والدحض والتحقق كحقائق تأهيلية، لا كمحاور حالة
+إدارية. لكل حالة نص ورمز وتفسير، ولا يعتمد المستخدم على اللون وحده.
 
 ---
 
@@ -133,7 +140,7 @@
 
 ## 6.1 بطاقة الحالة (العنصر الأهم)
 ```markdown
-**الحالة المعرفية:** موقوف عن القفل `LOCK_BLOCKED`
+**حالة البحث:** `UNRESOLVED`
 **السبب:** التفريق مع الجار X غير مكتمل.
 **الإجراء التالي:** تشغيل اختبار الاستبدال Y.
 ```
@@ -155,18 +162,15 @@
 - اكتمال التبعيات، اكتمال provenance والاستشهاد
 - الالتزام بالمنهجية، وضوح الحدود والدحض
 - عبء التعارضات غير المحسومة، قابلية إعادة الإنتاج
-- الثبات عبر التحليلات المتكررة، حالة المراجعة البشرية، الكفاية التفسيرية
+- الثبات عبر التحليلات المتكررة، حالة التحقق عند الاعتماد، الكفاية التفسيرية
 
-## 6.4 كاشف النقاء المنهجي (Methodological Purity Detector) — مستحدث
+## 6.4 التشخيصات المنهجية
 
-### 6.4.1 مؤشر النقاء البصري
+### 6.4.1 حالة التشخيص
 
-| الإشارة | المعنى | الإجراء |
-| :--- | :--- | :--- |
-| 🟢 **نقي منهجياً** | لا توجد علامات تلوث بالموروث | النتيجة جاهزة للمراجعة |
-| 🟡 **شبه نقي** | توجد علامات طفيفة تحتاج تحقق | مراجعة بشرية مطلوبة |
-| 🟠 **مشكوك فيه** | توجد علامات تلوث واضحة | إعادة تحليل مطلوبة |
-| 🔴 **ملوث منهجياً** | تلوث حاسم بالموروث | رفض النتيجة وإعادة التشغيل |
+كل تشخيص يعرض `EVALUATED_CLEAN`, `FLAGGED`, أو `NOT_EVALUATED` مع السبب
+والدليل وما إذا أثبت خرقًا صلبًا. لا تعرض درجة نقاء رقمية أو لونًا تجميعيًا
+يوحي باليقين.
 
 ### 6.4.2 أبعاد النقاء الثمانية
 
@@ -184,26 +188,21 @@
 ### 6.4.3 التكامل مع المختبر المعزول
 
 - **المرحلة 1: الوقاية (Prevention):** المختبر المعزول يمنع الوصول إلى المعاجم والتفاسير *أثناء* التحليل.
-- **المرحلة 2: التشخيص (Diagnosis):** بعد القفل، الكاشف يفحص النتيجة *مقارنة* بالموروث (خارج المختبر).
+- **المرحلة 2: التشخيص (Diagnosis):** يمكن فحص النتيجة خارج evidence context
+  دون تحويل المصدر المقارن إلى دليل قرآني.
 
-### 6.4.4 التكامل مع مسار الإصدار (Purity Gate)
+### 6.4.4 التكامل مع الاعتماد
 
-- 🟢 نقي → مراجعة بشرية → إصدار
-- 🟡 شبه نقي → مراجعة بشرية مكثفة → إصدار مشروط
-- 🟠 مشكوك فيه → إعادة تحليل → لا إصدار
-- 🔴 ملوث → رفض → إعادة تشغيل في Blind Lab
+التشخيص تحذير افتراضيًا. يصبح مانعًا فقط إذا أثبت خرق مصدر/دليل/تغطية/
+دحض ماديًا للادعاء. غياب extractor لا يمنع البحث.
 
 ---
 
-# 7. بوابات القفل (Lock Gates)
+# 7. قرار الاعتماد
 
-- لا يُثبت عدد البوابات داخل الواجهة.
-- تقرأ الواجهة القائمة من `GateReport` الخاص بإصدار المنهجية المستخدم.
-- كل بوابة تعرض: الاسم العربي، `gate_code`، الحالة، الأدلة، سبب الفشل، revision الذي قُيمت عليه، الإجراء المطلوب إن وجد.
-
-**الحالات المعروضة:** `PASS`, `FAIL`, `NOT_APPLICABLE`
-
-**عرض مبسط:** `8 اجتازت | 2 فشلت | 1 غير منطبقة` مع التنبيه: "هذا ملخص للبوابات وليس درجة ثقة."
+لا توجد بوابات بحث. تعرض الواجهة نتيجة canonicalization واحدة مع أسباب كل
+شرط قابل للتحقق: المصدر/المنهج، التغطية، الأدلة، الدحض، التحقق المستقل، العزل،
+والتفويض. الفشل لا يغير الحكم البحثي ولا الحالة المعتمدة.
 
 ---
 
@@ -212,7 +211,8 @@
 ## 8.1 الرئيسية — مركز الانتباه
 
 ترتيب الأولويات:
-1. **يحتاج انتباهك:** مراجعات معلقة، تعارضات مفتوحة، نتائج أصبحت `STALE`، تشغيلات توقفت، نتائج تحتاج Revalidation، مصادر تنتظر Admission، تنبيهات النقاء المنهجي.
+1. **يحتاج انتباهك:** نتائج `REOPEN_REQUIRED`، تعارضات مفتوحة، تشغيلات توقفت،
+   نتائج قوية مرشحة للاعتماد، مصادر تنتظر Admission، وتنبيهات منهجية.
 2. **أبحاث جارية:** آخر Research Runs وحالتها.
 3. **استئناف العمل:** آخر Checkpoints القابلة للاستئناف.
 4. **تغيرات حديثة:** النتائج، القرارات، والمنهجيات التي تغيرت.
@@ -255,15 +255,16 @@
 ## 8.4 المختبر المعزول (Blind Lab)
 
 - **وضع مستقل وواضح بصرياً.**
-- يظهر أعلى الشاشة: **مختبر معزول — قبل القفل الداخلي**.
-- يبدأ بالحالة: `UNKNOWN`.
-- **قبل القفل:** تُحجب النتائج السابقة، Semantic Definition Registry، priors، owner answers، glossary/tafsir/dictionaries غير المسموح بها، post-lock comparison.
-- **تحذير العزل:** **العزل سليم** أو **تم اكتشاف تلوث بالمعرفة السابقة — لا يمكن القفل.** `PRIOR_CONTAMINATED`.
+- يظهر أعلى الشاشة: **مختبر استقراء قرآني معزول**.
+- يبدأ بحالة بحث `UNRESOLVED`.
+- في الاستقراء الداخلي تُحجب المصادر الدلالية الخارجية وذاكرة النموذج؛ ويمكن
+  عرض نتيجة مشروع مقبولة خارج مادة الدليل بوصفها نقطة بداية قابلة للتتبع.
+- **تحذير العزل:** **العزل سليم** أو **تم اكتشاف تلوث بمصدر محظور — لا يمكن ترجيح النتيجة.** `PRIOR_CONTAMINATED`.
 - **سير المختبر:**
   ```text
-  Corpus → Observations → Structure → Hypotheses → Negative Boundary → Falsification → Lexical Differentiation → Counterevidence → Gates → Internal Lock
+  Corpus/Evidence → Observation & Hypotheses → Challenge/Falsification → Research Judgment
   ```
-- **بعد القفل:** يصبح **مقارنة النتائج السابقة** متاحاً في مساحة منفصلة.
+- **الاعتماد:** مسار منفصل للتحقق المستقل ثم Canonical Authorization.
 
 ## 8.5 عارض الفصل الطبقي
 
@@ -321,12 +322,13 @@ ROOT + FORM/MORPHOLOGY + CONSTRUCTION/SYNTAX + ARGUMENT SEMANTICS + CONTEXTUAL F
 
 ## 8.7 واجهة إدارة الحوكمة والمراجعة
 
-- **قائمة المراجعة:** العناصر التي تحتاج مراجعة بشرية (`LOCK_INTERNAL_RESULT` بانتظار `OWNER_ACCEPTED`).
+- **قائمة الاعتماد:** النتائج البحثية القوية المرشحة للتحقق المستقل والاعتماد.
 - **سجل القرارات:** تاريخ كامل لقرارات القبول/الرفض/التأجيل.
 - **إدارة التعارضات:** عرض وحل التعارضات المنهجية (`OPEN_AUTHORITY_QUESTION`).
 - **إدارة التغييرات:** مراجعة مقترحات التعديل مع `Impact Analysis`.
 - **أوامر الوصي (Steward Commands):** استقبال ومعاينة أوامر التغيير قبل اعتمادها.
-- **مسار الإصدار:** لا يمكن الإصدار دون توثيق `Methodology Version` و `Corpus Snapshot` و `Review Decision` واجتياز **بوابة النقاء المنهجي** (`Purity Gate`).
+- **مسار الاعتماد:** لا يمكن قبول النتيجة دون توثيق `Methodology Version` و
+  `Corpus Snapshot` والدليل والتغطية والدحض والتحقق المستقل وقرار Host صريح.
 
 ---
 
@@ -527,14 +529,15 @@ ROOT + FORM/MORPHOLOGY + CONSTRUCTION/SYNTAX + ARGUMENT SEMANTICS + CONTEXTUAL F
 - نتيجة مكتملة بنيوياً.
 - فرضية مع C0.
 - فشل Gate.
-- `LOCK_BLOCKED`, `UNKNOWN`, `REJECTED`, `STALE`.
+- `PREFERRED`, `UNRESOLVED`, `REJECTED`, `REOPEN_REQUIRED`.
 - `PRIOR_CONTAMINATED`.
-- Review required, Owner decision required.
+- Verification required and Canonicalization rejected.
 - **نتيجة ملوثة منهجياً (HERITAGE_BIAS_SUSPECTED).**
 
 ## `{ن ش ز}`
 - لا يُستخدم كـfixture يتوقع تعريفاً دلالياً.
-- يُستخدم فقط لاختبار عرض `LOCK_BLOCKED / NOT_ESTABLISHED`.
+- لا يُستخدم لإثبات معنى؛ يبقى fixture لحالة `UNRESOLVED` ما لم توجد نتيجة
+  بحثية متحققة مستقلة.
 
 ---
 
@@ -545,16 +548,16 @@ ROOT + FORM/MORPHOLOGY + CONSTRUCTION/SYNTAX + ARGUMENT SEMANTICS + CONTEXTUAL F
 1. كل ادعاء يمكن تتبع مصدره ودليله وRun الخاص به.
 2. UNKNOWN ظاهر وغير مخفي.
 3. Counterevidence ظاهر وغير ثانوي.
-4. الحالات المعرفية والمراجعة والحداثة والنشر منفصلة.
+4. حالة البحث منفصلة عن حالة الاعتماد، وحقائق التأهيل ظاهرة دون lifecycle زائد.
 5. لا توجد نسبة واحدة توصف بأنها احتمال صحة.
-6. بوابات القفل تأتي من العقد لا من hard-coded frontend logic.
-7. Blind Lab لا يكشف priors قبل القفل.
+6. لا توجد بوابة بحث شكلية؛ شروط الاعتماد تأتي من backend policy.
+7. Blind Lab لا يدخل المصادر المحظورة أو prior memory في evidence context.
 8. Derived views لا ترفع السلطة.
 9. المستخدم لا يستطيع تنفيذ انتقال غير مصرح به.
 10. Steward يعرض Preview قبل التغيير.
 11. التغيير الحاكم يمر عبر Change Proposal.
 12. corpus غير المقبول لا يستخدم في تشغيل علمي.
-13. STALE لا يعرض كحقيقة حالية.
+13. `REOPEN_REQUIRED` لا يعرض كنتيجة مقبولة حالية.
 14. الإبطال قابل للتتبع.
 15. إعادة الإنتاج مرتبطة بـrevision والمنهجية وcorpus.
 16. الرسوم لها بدائل نصية/جدولية.
@@ -562,8 +565,8 @@ ROOT + FORM/MORPHOLOGY + CONSTRUCTION/SYNTAX + ARGUMENT SEMANTICS + CONTEXTUAL F
 18. لا يعتمد البحث أو الاستئناف على ذاكرة المحادثة فقط.
 19. يمكن للمستخدم الجديد فهم الأساسيات عبر Onboarding Launchpad.
 20. مفتش الاعتماديات يُظهر التأثير المتعدي بوضوح.
-21. **كاشف النقاء المنهجي يعمل ويمنع نشر النتائج الملوثة (`Purity Gate`).**
-22. **تقرير النقاء يُظهر الأبعاد الثمانية مع أسباب وتوصيات لكل بُعد.**
+21. التشخيصات المنهجية ظاهرة، والتلوث الفعلي بالمصدر المحظور يمنع الترجيح والاعتماد.
+22. التقرير يميز `EVALUATED_CLEAN`, `FLAGGED`, و`NOT_EVALUATED` ولا يحول غياب extractor إلى Gate.
 23. يمكن للمستخدم التبديل بين مستويات العرض الثلاثة دون فقدان السياق.
 24. جميع المكونات الرئيسية تجتاز اختبارات Accessibility.
 25. النظام يحافظ على أداء مقبول تحت 100 مستخدم متزامن.
@@ -582,13 +585,12 @@ ROOT + FORM/MORPHOLOGY + CONSTRUCTION/SYNTAX + ARGUMENT SEMANTICS + CONTEXTUAL F
 | التغطية | `Coverage` |
 | شرط النقض | `Rejection Condition` |
 | التفريق الدلالي | `Semantic Differentiation` |
-| الحالة المعرفية | `Epistemic Status` |
-| حالة المراجعة | `Review Status` |
-| حالة الحداثة | `Freshness Status` |
-| حالة النشر | `Publication Status` |
+| حالة البحث | `Research State` |
+| الحالة المعتمدة | `Canonical State` |
+| التحقق المستقل | `Verification State` |
 | الجيران الدلاليون | `Semantic Neighbors` |
 | الأدلة المعارضة | `Counterevidence` |
-| بوابة القفل | `Lock Gate` |
+| قرار الاعتماد | `Canonicalization Decision` |
 | سجل الاعتماديات | `Dependency Ledger` |
 | المختبر المعزول | `Blind Lab` |
 | تشغيل البحث | `Research Run` |
@@ -603,7 +605,7 @@ ROOT + FORM/MORPHOLOGY + CONSTRUCTION/SYNTAX + ARGUMENT SEMANTICS + CONTEXTUAL F
 | النقاء المنهجي | `Methodological Purity` |
 | كاشف النقاء المنهجي | `Methodological Purity Detector` |
 | التلوث بالموروث | `Heritage Bias` |
-| بوابة النقاء | `Purity Gate` |
+| التشخيصات المنهجية | `Methodological Diagnostics` |
 | غلاف المعرفة | `Knowledge Envelope` |
 
 ---

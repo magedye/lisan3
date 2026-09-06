@@ -1,133 +1,82 @@
-# Semantic-Pilot Enabling Governance Plan
+# AI Authority and Governance Simplification Plan
 
-## Goal and boundary
+Authority: latest owner instruction dated 2026-09-06. This plan supersedes the
+older Purity-gated pilot-enabling plan for semantic research governance. It does
+not authorize QAC/corpus admission, retrieval work, release, merge, push, or a
+new semantic conclusion.
 
-Reconcile QAC authority, correct the sealed five-root pilot blocker
-classification through an additive record, define evidence contracts for all
-eight mandatory Purity dimensions, and leave an implementation-ready plan.
-This candidate does not activate or import QAC, implement Purity evaluators or
-card schemas, mutate runtime data, rerun roots, or authorize remaining batches.
+## Outcome
 
-## Dependency order
+Allow AI to create evidence-bound Research Judgments without administrative
+lock/review/publication lifecycle, while preserving source isolation,
+claim-sensitive coverage, evidence resolution, falsification, provenance, and
+an explicit server-owned canonicalization boundary.
 
-```text
-completed enabling-governance reconciliation
-    -> Stage A: QAC provenance and artifact qualification (not admission)
-    -> Stage B: structural domain/persistence capability
-    -> Stage C: real QAC importer and validation
-    -> Stage D: QAC structural-source admission decision
-    -> Stage E: separate production activation
-    -> morphology-independent and morphology-dependent Purity evaluators
-    -> focused verification
-    -> exact-SHA independent review
-    -> same five-root pilot rerun only after separate acceptance/authorization
-```
+## Ordered slices
 
-Stages A-C produce prerequisite evidence but cannot grant structural-role
-approval. Stage D does not pre-authorize `APPROVED`, and Stage E remains an
-independent lifecycle transition. No stage in this plan is automatically
-authorized by recording the sequence.
+### V0 — Baseline
 
-## Task 1: Reconcile QAC authority
+- Record HEAD, worktree custody, authoritative files, current skill, schemas,
+  gates, statuses, and focused test evidence.
+- Preserve all unrelated and owner-untracked files.
 
-**Acceptance criteria:**
+### V1 — Complexity audit
 
-- Canonical and machine-readable records agree that artifact identity and
-  provenance are pending, structural use is not approved, the real importer is
-  not implemented, and production activation is not authorized.
-- The proposed structural-only field boundary and prohibited semantic fields
-  are explicit without granting evidence authority.
-- Tanzil remains the sole Quran text and verse-identity authority.
+- Classify every meaningful current rule, status, gate, preflight, lock, and
+  approval by value, cost, enforcement, and disposition.
+- Record why each removed or softened control was excessive and its replacement.
 
-**Verification:** focused authority tests, canonical-reference consistency
-search, Ruff on the affected Python module, and `git diff --check`.
+### V2 — Minimal contract
 
-**Dependencies:** None.
+- Define AI MAY, AI MUST, AI MUST NOT, HOST ENFORCES, and
+  CANONICALIZATION REQUIRES.
+- Define the accepted-root memory and reopening boundary without numeric
+  confidence thresholds.
 
-## Task 2: Correct the sealed pilot blocker state
+### V3-A — Authority and runtime instructions
 
-**Acceptance criteria:**
+- Update the authority map and canonical implementation reference.
+- Replace fail-closed all-dimension Purity governance with diagnostic treatment
+  plus hard source/evidence boundaries.
+- Reduce the prompt and active semantic skill to goals, source/tool limits,
+  semantic layering, required outputs, and actual success/failure conditions.
+- Keep `main skills/` as historical reference, not a parallel runtime.
 
-- The original pilot report and its recorded hash remain unchanged.
-- An additive corrective record decomposes authority, artifact, importer,
-  domain/persistence, and research-evidence gaps.
-- ROOT_CARD and TERM_CARD are classified only as a derived presentation
-  contract gap, never as a semantic or Internal Lock blocker.
+### V3-B — Enforced contracts
 
-**Verification:** recompute the original nine artifact hashes and inspect the
-corrective record against current gate code.
+- Replace the four axes and lock lifecycle with Research and Canonical states.
+- Auto-resolve run and isolation preflight authority.
+- Add deterministic evidence, coverage, falsification, and layer validators.
+- Permit AI Research Judgment; deny AI canonical acceptance.
+- Add independent verification and one explicit canonicalization transition.
+- Retrieve accepted root results and reopen them on material new evidence.
+- Remove simulated tool claims and gate-dependent visibility.
+- Update only the minimal status-dependent UI and generated API contract.
 
-**Dependencies:** Task 1.
+### V4 — Qualification
 
-## Task 3: Define structural and Purity contracts
+- Cover root, lexeme, local verse meaning, comparison, weak unresolved result,
+  isolation failure, accepted-memory retrieval, reopening, falsification,
+  incomplete coverage, and unavailable tool/validator.
+- Run migration round-trip/parity, backend focused/full tests, frontend tests,
+  type/build checks, and scoped security/invariant checks as feasible.
+- Measure the ordinary research journey before and after.
 
-**Acceptance criteria:**
+## Acceptance map
 
-- All eight mandatory dimensions define inputs, lineage, decision rules,
-  diagnostics, dependency level, fixtures, and negative tests.
-- `NOT_EVALUATED` remains blocking and can never equal clean.
-- Morphology-independent and morphology-dependent evaluator slices are exact.
-- The future annotation layer is separately provenance-bound and cannot mutate
-  or replace Tanzil text authority.
+| Requirement | Implementation evidence | Executed evidence | Completion rule |
+|---|---|---|---|
+| AI can issue Research Judgment | schema, service, AI endpoint | successful preferred/unresolved tests | no lock/review owner input required |
+| Source integrity | isolated context/tool policy | prohibited-source negative test | actual contamination blocks |
+| Coverage | server-derived profile | universal incomplete-coverage rejection | AI cannot self-certify |
+| Evidence traceability | reference resolver | missing/cross-run ref rejection | all asserted refs resolve |
+| Falsification | structured important-result rule | missing/failed falsification rejection | preferred important result cannot bypass |
+| Canonical authority | verification + canonicalization policy | AI/self-promotion rejection; accepted transition | only server-owned explicit transition accepts |
+| Accepted root memory | accepted lookup + reopen service | retrieval and new-evidence tests | reopened result is not returned as accepted |
+| Simplicity | removed axes/gates/manual fields | OpenAPI and journey count comparison | methodological protections remain |
 
-**Verification:** dimension-name parity with `PURITY_DIMENSIONS`, completeness
-checks for every contract section, and focused documentation validation.
+## Stop condition
 
-**Dependencies:** Tasks 1 and 2.
-
-## Task 4: Persist current state and future dependency sequence
-
-**Acceptance criteria:**
-
-- PROJECT_STATE identifies the corrected current blocker state and preserves
-  `LOCK_BLOCKED`, null Root Cores, quarantine, and
-  `DO_NOT_START_REMAINING_BATCHES`.
-- The future work records the ordered QAC lifecycle above, followed by the
-  independently reviewable Purity, verification, review, and pilot-rerun work;
-  no stage or slice is treated as authorized by this plan.
-
-**Verification:** state-to-canonical cross-check and scoped Git inspection.
-
-**Dependencies:** Tasks 1-3.
-
-## Task 5: Reconcile the QAC admission sequence
-
-**Acceptance criteria:**
-
-- Artifact/provenance qualification is explicitly separate from admission.
-- Structural domain/persistence and real-importer validation evidence precede
-  the structural-source admission decision.
-- The admission result is not pre-authorized, and production activation remains
-  a later independent transition.
-- The existing five-axis fail-closed QAC state, all eight Purity contracts, and
-  sealed-pilot evidence remain unchanged.
-
-**Verification:** canonical cross-reference and state consistency, focused QAC
-authority tests, Purity-contract completeness sanity, all nine sealed artifact
-hashes, and `git diff --check`.
-
-**Dependencies:** Tasks 1-4 and the independent review finding
-`QAC_ADMISSION_SEQUENCE_RECONCILIATION`.
-
-## Historical checkpoint: enabling-governance candidate review readiness
-
-- [x] Focused V1/V2 checks pass.
-- [x] Original sealed evidence hashes still match.
-- [x] Only authorized paths are staged.
-- [x] Owner-untracked files remain untouched.
-- [x] One coherent candidate commit is created and not pushed.
-- [x] Independent review remains a later exact-SHA gate.
-
-## Risks and mitigations
-
-| Risk | Mitigation |
-|---|---|
-| Pending QAC is accidentally promoted | Use existing `SOURCE_ROLE_PENDING`; require a later explicit admission decision. |
-| Historical evidence is silently rewritten | Keep every hashed pilot artifact byte-identical and add a corrective record. |
-| Purity contracts become cosmetic | Require resolvable lineage, diagnostics, fixtures, and negative tests per dimension. |
-| Structural annotations replace Tanzil | Use a separate annotation entity bound to Tanzil `verse_ref` and independent source provenance. |
-
-## Open authority boundary
-
-No QAC artifact acquisition, hash binding, source-role approval, import,
-activation, pilot rerun, or remaining-root work is authorized by this plan.
+Stop only for a genuine authority conflict or external blocker. Ordinary test,
+migration, documentation, or refactor failures are implementation work, not a
+reason to preserve the old complexity.

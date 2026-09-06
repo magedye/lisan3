@@ -2,7 +2,7 @@
 
 import type { components } from "@/api/openapi";
 import { EmptyState, ErrorState, LoadingState, PageHeader, Panel } from "@/components/page-primitives";
-import { StatusAxes } from "@/components/status-axes";
+import { ResearchStatus } from "@/components/status-axes";
 import { apiFetch } from "@/lib/api";
 import { useApiResource } from "@/lib/use-api-resource";
 import Link from "next/link";
@@ -16,9 +16,7 @@ type ResearchRun = components["schemas"]["ResearchRunResponse"];
 export default function AttentionCenter() {
   const attention = useApiResource<AttentionResponse>("/api/attention");
   const [expression, setExpression] = useState("");
-  const [contractType, setContractType] = useState("ROOT_CORE");
-  const [methodologyRevision, setMethodologyRevision] = useState("");
-  const [corpusSnapshot, setCorpusSnapshot] = useState("");
+  const [contractType, setContractType] = useState("ROOT_CONCEPT");
   const [submitting, setSubmitting] = useState(false);
   const [result, setResult] = useState<AskResponse | null>(null);
   const [actionError, setActionError] = useState<string | null>(null);
@@ -48,10 +46,6 @@ export default function AttentionCenter() {
       setActionError("إنشاء تشغيل بحث غير متاح حتى تُقبل موارد Corpus والمنهجية من السلطة الحالية.");
       return;
     }
-    if (!methodologyRevision.trim() || !corpusSnapshot.trim()) {
-      setActionError("أدخل مرجع المنهجية ومعرّف Corpus Snapshot الفعليين قبل إنشاء التشغيل.");
-      return;
-    }
     setSubmitting(true);
     setActionError(null);
     try {
@@ -61,9 +55,6 @@ export default function AttentionCenter() {
         body: JSON.stringify({
           target_contract: contractType,
           target_expression: expression,
-          methodology_revision: methodologyRevision,
-          corpus_snapshot: corpusSnapshot,
-          authority_context: { initiator: "trusted_local_user" },
         }),
       });
       router.push(`/run/${run.id}`);
@@ -95,14 +86,14 @@ export default function AttentionCenter() {
               <small>معروضة من ResearchRun المحفوظ</small>
             </article>
             <article className="metric-card warning">
-              <span>تحتاج مراجعة</span>
-              <strong>{data.review_required_claims.length}</strong>
-              <small>وفق محور المراجعة المستقل</small>
+              <span>مرشحة للاعتماد</span>
+              <strong>{data.canonicalization_candidates.length}</strong>
+              <small>نتائج قوية بعد البحث، لا تتطلب قراراً أثناء البحث</small>
             </article>
             <article className="metric-card stale">
-              <span>تحتاج تحديثاً</span>
-              <strong>{data.freshness_attention_claims.length}</strong>
-              <small>STALE / INVALIDATED / REVALIDATION</small>
+              <span>أعيد فتحها</span>
+              <strong>{data.reopen_required_claims.length}</strong>
+              <small>REOPEN_REQUIRED بسبب دليل أو حاكم جديد</small>
             </article>
             <article className="metric-card positive">
               <span>مقترحات حوكمة معلقة</span>
@@ -165,8 +156,11 @@ export default function AttentionCenter() {
           <label className="form-field">
             <span>نوع العقد الدلالي</span>
             <select id="ask-contract" name="contract_type" className="select" value={contractType} onChange={(event) => setContractType(event.target.value)}>
-              <option value="ROOT_CORE">المعنى المحوري (Root Core)</option>
+              <option value="ROOT_CONCEPT">مفهوم الجذر (Root Concept)</option>
+              <option value="LEXEME">معنى المفردة العام</option>
               <option value="LOCAL_MEANING">المعنى الموضعي (Local Meaning)</option>
+              <option value="VERSE_MEANING">معنى الآية</option>
+              <option value="SEMANTIC_DIFFERENCE">الفرق بين مفردتين</option>
             </select>
           </label>
           <div className="form-field">
@@ -182,50 +176,33 @@ export default function AttentionCenter() {
         {result?.status === "INSUFFICIENT_EVIDENCE" && data && (
           <section className="panel panel-warning" aria-labelledby="insufficient-title">
             <h3 id="insufficient-title">Insufficient Evidence — الأدلة الحالية غير كافية</h3>
-            <p>لا توجد دعوى دلالية مقفلة للفظ <strong>{expression}</strong> ضمن العقد <span className="technical-text">{contractType}</span>. لا تُنشئ الواجهة جواباً بديلاً.</p>
+            <p>لا توجد نتيجة بحثية مفضلة أو نتيجة معتمدة للفظ <strong>{expression}</strong> ضمن العقد <span className="technical-text">{contractType}</span>. لا تُنشئ الواجهة جواباً بديلاً.</p>
             {!data.run_admission.available ? (
               <div id="run-admission-unavailable" className="state-card" role="status">
                 <strong>Run Builder unavailable — موارد البحث غير مقبولة حالياً</strong>
                 <ul>{data.run_admission.blockers.map((blocker) => <li key={blocker}>{blocker}</li>)}</ul>
-                <p>لن تقبل الواجهة معرّفات Corpus أو منهجية مكتوبة كنص حر.</p>
+                <p>المضيف يحل Corpus والمنهجية الفعليين؛ غياب سلطة صالحة يمنع التشغيل.</p>
               </div>
             ) : (
-              <>
-                <div className="form-grid">
-                  <label className="form-field">
-                    <span>مرجع المنهجية المقبول</span>
-                    <select id="run-methodology" name="methodology_revision" className="select" value={methodologyRevision} onChange={(event) => setMethodologyRevision(event.target.value)} required>
-                      <option value="">اختر منهجية محكومة</option>
-                      {data.run_admission.methodology_revisions.map((revision) => <option key={revision} value={revision}>{revision}</option>)}
-                    </select>
-                  </label>
-                  <label className="form-field">
-                    <span>Corpus Snapshot المقبول</span>
-                    <select id="run-corpus" name="corpus_snapshot" className="select technical-text" value={corpusSnapshot} onChange={(event) => setCorpusSnapshot(event.target.value)} required>
-                      <option value="">اختر snapshot محكوماً</option>
-                      {data.run_admission.corpus_snapshot_ids.map((snapshotId) => <option key={snapshotId} value={snapshotId}>{snapshotId}</option>)}
-                    </select>
-                  </label>
-                </div>
-                <div className="button-row">
-                  <button type="button" onClick={startResearch} className="button button-secondary" disabled={submitting}>Start Research Run — ابدأ تشغيل بحث</button>
-                </div>
-              </>
+              <div className="button-row">
+                <button type="button" onClick={startResearch} className="button button-secondary" disabled={submitting}>Start Research Run — ابدأ تشغيل بحث</button>
+                <small>سيحل المضيف المصدر والمنهجية وسياسة العزل تلقائياً.</small>
+              </div>
             )}
           </section>
         )}
 
-        {result?.status === "FOUND" && result.claim && (
+        {(result?.status === "ACCEPTED_RESULT" || result?.status === "PREFERRED_RESEARCH_RESULT") && result.claim && (
           <section className="panel panel-information found-panel">
             <div className="panel-heading">
-              <div><span className="eyebrow">Governed Claim</span><h2>دعوى دلالية موجودة</h2></div>
+              <div><span className="eyebrow">Research Judgment</span><h2>{result.status === "ACCEPTED_RESULT" ? "نتيجة معتمدة" : "ترجيح بحثي"}</h2></div>
               <Link className="button button-secondary button-small" href={`/claims/${result.claim.id}`}>فتح التتبّع الكامل</Link>
             </div>
-            <StatusAxes
-              epistemic={result.claim.epistemic_state}
-              review={result.claim.review_state}
-              freshness={result.claim.freshness_state}
-              publication={result.claim.publication_state}
+            <ResearchStatus
+              research={result.claim.research_state}
+              canonical={result.claim.canonical_state}
+              strength={result.claim.result_strength}
+              verification={result.claim.verification_state}
             />
           </section>
         )}

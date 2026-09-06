@@ -40,48 +40,57 @@ def test_status_axis_migration_reconciles_with_audit_and_is_reversible(tmp_path)
         engine, review_state="PENDING_REVIEW", publication_state="UNPUBLISHED"
     )
 
+    # Upgrading to head first reconciles the legacy four axes (d4f7a2c8e901)
+    # and then collapses them into the simplified two-state model
+    # (research_state + canonical_state) via f1a6c3d9e204.
     alembic.command.upgrade(config, "head")
     with engine.begin() as connection:
-        axes = connection.execute(
+        states = connection.execute(
             sa.text(
-                "SELECT review_state, publication_state FROM semantic_claims "
-                "WHERE id='claim_legacy_axes'"
+                "SELECT research_state, canonical_state, result_strength "
+                "FROM semantic_claims WHERE id='claim_legacy_axes'"
             )
         ).one()
-        assert axes == ("REVIEW_REQUIRED", "PRIVATE_WORKING")
+        assert states.research_state == "PREFERRED"
+        assert states.canonical_state == "NOT_CANONICAL"
+        assert states.result_strength == "MODERATE"
         audit = connection.execute(
             sa.text(
                 "SELECT action, previous_state, new_state, actor FROM audit_logs "
-                "WHERE entity_id='claim_legacy_axes'"
+                "WHERE entity_id='claim_legacy_axes' "
+                "AND action='SIMPLIFY_AI_GOVERNANCE_STATUS'"
             )
         ).one()
-        assert audit.action == "RECONCILE_CANONICAL_STATUS_AXES"
-        assert json.loads(audit.previous_state)["review_state"] == "PENDING_REVIEW"
-        assert json.loads(audit.new_state)["publication_state"] == "PRIVATE_WORKING"
-        assert audit.actor == "ALEMBIC_D4F7A2C8E901"
+        assert audit.actor == "ALEMBIC_F1A6C3D9E204"
+        assert (
+            json.loads(audit.previous_state)["epistemic_state"]
+            == "LOCK_INTERNAL_RESULT"
+        )
+        assert json.loads(audit.new_state)["research_state"] == "PREFERRED"
         with pytest.raises(IntegrityError):
             connection.execute(
                 sa.text(
-                    "UPDATE semantic_claims SET publication_state='UNPUBLISHED' "
+                    "UPDATE semantic_claims SET research_state='UNPUBLISHED' "
                     "WHERE id='claim_legacy_axes'"
                 )
             )
 
-    alembic.command.downgrade(config, "c9e2a7f4b6d1")
+    # Reversing only the simplification restores the pre-simplification axes.
+    alembic.command.downgrade(config, "c4d8b7e2a913")
     with engine.connect() as connection:
         restored = connection.execute(
             sa.text(
-                "SELECT review_state, publication_state FROM semantic_claims "
+                "SELECT epistemic_state FROM semantic_claims "
                 "WHERE id='claim_legacy_axes'"
             )
         ).one()
-        assert restored == ("PENDING_REVIEW", "UNPUBLISHED")
+        assert restored.epistemic_state == "LOCK_INTERNAL_RESULT"
         assert (
             connection.execute(
                 sa.text(
                     "SELECT count(*) FROM audit_logs "
                     "WHERE entity_id='claim_legacy_axes' "
-                    "AND action='RECONCILE_CANONICAL_STATUS_AXES'"
+                    "AND action='SIMPLIFY_AI_GOVERNANCE_STATUS'"
                 )
             ).scalar_one()
             == 0

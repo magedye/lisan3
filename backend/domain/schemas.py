@@ -4,7 +4,14 @@ from typing import Any, Literal
 
 from pydantic import BaseModel, ConfigDict, field_validator
 
-from .models import EpistemicState, FreshnessState, PublicationState, ReviewState
+from .models import (
+    CanonicalState,
+    ClaimScope,
+    FalsificationStatus,
+    ResearchState,
+    ResultStrength,
+    VerificationState,
+)
 
 
 class BaseSchema(BaseModel):
@@ -19,39 +26,26 @@ class BaseSchema(BaseModel):
 
 
 class ResearchStage(str, Enum):
-    PREFLIGHT = "PREFLIGHT"
-    ISOLATION_PREFLIGHT = "ISOLATION_PREFLIGHT"
-    CORPUS_COLLECTION = "CORPUS_COLLECTION"
-    STRUCTURAL_OBSERVATION = "STRUCTURAL_OBSERVATION"
-    HYPOTHESIS_GENERATION = "HYPOTHESIS_GENERATION"
-    DIFFERENTIATION = "DIFFERENTIATION"
-    LOCKING = "LOCKING"
-
-
-class OfficialStatus(str, Enum):
-    UNKNOWN = "UNKNOWN"
-    CANDIDATE_HYPOTHESIS = "CANDIDATE_HYPOTHESIS"
-    SPARSE_EVIDENCE_CEILING = "SPARSE_EVIDENCE_CEILING"
-    LOCK_BLOCKED = "LOCK_BLOCKED"
-    LOCK_INTERNAL_RESULT = "LOCK_INTERNAL_RESULT"
-    REVALIDATION_REQUIRED = "REVALIDATION_REQUIRED"
+    RESEARCH = "RESEARCH"
+    CHALLENGE = "CHALLENGE"
+    JUDGMENT = "JUDGMENT"
+    CANONICALIZATION = "CANONICALIZATION"
 
 
 # --- Research Run Schemas ---
-class ResearchRunBase(BaseSchema):
+class ResearchRunCreate(BaseSchema):
+    target_contract: str
+    target_expression: str
+    model_config = ConfigDict(extra="forbid")
+
+
+class ResearchRunResponse(BaseSchema):
+    id: str
     target_contract: str
     target_expression: str
     methodology_revision: str
     corpus_snapshot: str
     authority_context: dict[str, Any]
-
-
-class ResearchRunCreate(ResearchRunBase):
-    pass
-
-
-class ResearchRunResponse(ResearchRunBase):
-    id: str
     current_stage: ResearchStage
     status: str
     created_at: datetime
@@ -75,63 +69,110 @@ class MethodologyRevisionResponse(BaseSchema):
     model_config = ConfigDict(from_attributes=True)
 
 
-# --- Semantic Claim Schemas ---
-class SemanticClaimBase(BaseSchema):
-    contract_type: str
-    # The 4 Canonical Independent Axes (UX Constitution v4.0 §5)
-    epistemic_state: EpistemicState = EpistemicState.UNRESOLVED
-    review_state: ReviewState = ReviewState.NOT_REVIEWED
-    freshness_state: FreshnessState = FreshnessState.CURRENT
-    publication_state: PublicationState = PublicationState.PRIVATE_WORKING
-    revision_id: int = 1
-    index_coverage: str | None = None
-    deep_analysis_coverage: str | None = None
-    abstract_root_core: str | None = None
-    root_definition: str | None = None
-    root_meaning: str | None = None
+class RejectionCondition(BaseSchema):
+    challenging_finding: str
+    search_location: str
+    verification_method: str
+    confounder_control: str
+    failure_consequence: str
+
+    def model_post_init(self, __context: Any) -> None:
+        circular_phrases = [
+            "if wrong",
+            "if incorrect",
+            "if it fails",
+            "reject if false",
+        ]
+        combined = f"{self.challenging_finding} {self.verification_method}".lower()
+        for phrase in circular_phrases:
+            if phrase in combined:
+                raise ValueError("Rejection condition cannot be circular.")
+
+
+# --- Research Judgment Schemas ---
+class ResearchJudgmentCreate(BaseSchema):
+    contract_type: Literal[
+        "ROOT_CONCEPT",
+        "LEXEME",
+        "LOCAL_MEANING",
+        "VERSE_MEANING",
+        "SEMANTIC_DIFFERENCE",
+    ]
+    research_state: ResearchState
+    claim_scope: ClaimScope
+    sampling_basis: str | None = None
+    result_strength: ResultStrength
+    preferred_conclusion: str | None = None
     root_concept: str | None = None
-    rejection_condition: str | None = None
-    supporting_evidence: dict[str, Any] | None = None
-    counterevidence: dict[str, Any] | None = None
-    unresolved_cases: dict[str, Any] | None = None
+    plain_explanation: str | None = None
+    semantic_boundary: str | None = None
+    layer_attribution: dict[str, str] = {}
+    supporting_evidence_refs: list[str] = []
+    counterevidence_refs: list[str] = []
+    unresolved_cases: list[str] = []
+    hard_cases: list[str] = []
+    strongest_counterexample: str | None = None
+    strongest_competitor: str | None = None
+    rejection_condition: RejectionCondition | None = None
+    falsification_status: FalsificationStatus = FalsificationStatus.NOT_REQUIRED
+    reopen_conditions: list[str] = []
+
+    model_config = ConfigDict(extra="forbid")
 
 
-class SemanticClaimCreate(SemanticClaimBase):
-    research_run_id: str
-
-
-class SemanticClaimResponse(SemanticClaimBase):
+class SemanticClaimResponse(BaseSchema):
     id: str
-    # Historical/governance claims may predate ResearchRun linkage. The create
-    # contract still requires a run, while read models must preserve that
-    # persisted distinction instead of failing serialization.
     research_run_id: str | None = None
+    contract_type: str
+    research_state: ResearchState
+    canonical_state: CanonicalState
+    result_strength: ResultStrength
+    verification_state: VerificationState
+    falsification_status: FalsificationStatus
+    claim_scope: ClaimScope
+    sampling_basis: str | None = None
+    revision_id: int
+    research_completeness: dict[str, Any]
+    preferred_conclusion: str | None = None
+    root_concept: str | None = None
+    plain_explanation: str | None = None
+    semantic_boundary: str | None = None
+    layer_attribution: dict[str, str]
+    rejection_condition: RejectionCondition | None = None
+    supporting_evidence: list[str]
+    counterevidence: list[str]
+    unresolved_cases: list[str]
+    hard_cases: list[str]
+    strongest_counterexample: str | None = None
+    strongest_competitor: str | None = None
+    reopen_conditions: list[str]
+    accepted_at: datetime | None = None
+    created_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
 
 
-class ReviewDecisionBase(BaseSchema):
-    reviewer_identity: str
-    decision: Literal["APPROVED", "REJECTED"]
+class VerificationRecordCreate(BaseSchema):
+    decision: Literal["VERIFIED", "REJECTED"]
+    verification_type: str
     rationale: str | None = None
+    evidence_refs: list[str] = []
+    model_config = ConfigDict(extra="forbid")
 
 
-class ReviewDecisionCreate(ReviewDecisionBase):
-    pass
-
-
-class ReviewDecisionResponse(ReviewDecisionBase):
+class VerificationRecordResponse(VerificationRecordCreate):
     id: str
     claim_id: str
+    verifier_identity: str
     evaluated_claim_revision: int
     created_at: datetime
 
     model_config = ConfigDict(from_attributes=True)
 
 
-class PublicationRequest(BaseSchema):
-    publisher_identity: str
-    target_registry: str
-
-    model_config = ConfigDict(from_attributes=True)
+class CanonicalizationRequest(BaseSchema):
+    rationale: str
+    model_config = ConfigDict(extra="forbid")
 
 
 # --- Ask Lisan Schemas ---
@@ -155,8 +196,8 @@ class IsolationStateBase(BaseSchema):
     contamination_reason: str | None = None
 
 
-class IsolationStateCreate(IsolationStateBase):
-    pass
+class IsolationStateCreate(BaseSchema):
+    model_config = ConfigDict(extra="forbid")
 
 
 class IsolationStateResponse(IsolationStateBase):
@@ -203,26 +244,6 @@ class CorpusOccurrenceResponse(CorpusOccurrenceBase):
 
 
 # --- Slice C Schemas ---
-class RejectionCondition(BaseSchema):
-    challenging_finding: str
-    search_location: str
-    verification_method: str
-    confounder_control: str
-    failure_consequence: str
-
-    def model_post_init(self, __context: Any) -> None:
-        circular_phrases = [
-            "if wrong",
-            "if incorrect",
-            "if it fails",
-            "reject if false",
-        ]
-        combined = f"{self.challenging_finding} {self.verification_method}".lower()
-        for phrase in circular_phrases:
-            if phrase in combined:
-                raise ValueError("Rejection condition cannot be circular.")
-
-
 class HypothesisBase(BaseSchema):
     hypothesis_type: str  # H1, H2, C0
     target_contract: str
@@ -270,27 +291,6 @@ class EssentialNeighborResponse(EssentialNeighborBase):
     model_config = ConfigDict(from_attributes=True)
 
 
-class GateReportBase(BaseSchema):
-    gate_code: str
-    status: str
-    evidence_refs: list[str]
-    failure_reason: str | None = None
-    evaluated_revision: str
-    required_action: str | None = None
-
-
-class GateReportCreate(GateReportBase):
-    pass
-
-
-class GateReportResponse(GateReportBase):
-    id: str
-    research_run_id: str
-    created_at: datetime
-
-    model_config = ConfigDict(from_attributes=True)
-
-
 # --- AI Runtime Schemas ---
 class AIExecutionRecordBase(BaseSchema):
     analysis_stage: str
@@ -315,6 +315,13 @@ class AIExecutionRecordResponse(AIExecutionRecordBase):
     created_at: datetime
 
     model_config = ConfigDict(from_attributes=True)
+
+
+class AIResearchJudgmentResponse(BaseSchema):
+    status: Literal["CREATED", "VALIDATION_FAILED", "EXECUTION_FAILED"]
+    trace: AIExecutionRecordResponse
+    judgment: SemanticClaimResponse | None = None
+    failure_reason: str | None = None
 
 
 class HypothesisProposal(BaseSchema):
@@ -403,14 +410,14 @@ class DependencyRecordResponse(BaseSchema):
     model_config = ConfigDict(from_attributes=True)
 
 
-class LegacyKnowledgeExplorerClaim(BaseSchema):
+class KnowledgeExplorerJudgment(BaseSchema):
     claim_id: str
     contract_type: str
     target_expression: str
-    epistemic_state: str
-    review_state: str
-    freshness_state: str
-    publication_state: str
+    research_state: ResearchState
+    canonical_state: CanonicalState
+    result_strength: ResultStrength
+    verification_state: VerificationState
     dependencies: list[DependencyRecordResponse]
     affected_by: list[str]  # List of rules/snapshots that can invalidate this node
 
@@ -509,10 +516,11 @@ class ErrorResponse(BaseSchema):
 
 class ClaimRevisionItem(BaseSchema):
     revision_id: int
-    epistemic_state: str
-    review_state: str
-    freshness_state: str
-    publication_state: str
+    research_state: ResearchState
+    canonical_state: CanonicalState
+    result_strength: ResultStrength
+    verification_state: VerificationState
+    falsification_status: FalsificationStatus
     created_at: datetime
 
     model_config = ConfigDict(from_attributes=True)
@@ -522,40 +530,29 @@ class ClaimHistoryResponse(BaseSchema):
     claim_id: str
     current_revision: int
     revisions: list[ClaimRevisionItem] = []
-    review_decisions: list[ReviewDecisionResponse] = []
+    verification_records: list[VerificationRecordResponse] = []
     audit_events: list[AuditLogResponse] = []
 
     model_config = ConfigDict(from_attributes=True)
 
 
-class PurityFinding(BaseSchema):
+class MethodologyFinding(BaseSchema):
     dimension: str
     status: str  # EVALUATED_CLEAN, FLAGGED, NOT_EVALUATED
     severity: str  # NONE, LOW, MEDIUM, HIGH, CRITICAL
     details: str
+    evidence_refs: list[str] = []
+    hard_blocker: bool = False
 
     model_config = ConfigDict(from_attributes=True)
 
 
-class QualityProfileResponse(BaseSchema):
-    available: bool
-    source: Literal[
-        "PERSISTED_QUALITY_PROFILE", "DERIVED_METHODOLOGICAL_PURITY_ONLY"
-    ]
-    id: str | None = None
+class MethodologyDiagnosticsResponse(BaseSchema):
     claim_id: str
-    purity_score: int | None = None
-    purity_rating: str = "PURE"  # PURE, NEAR_PURE, SUSPICIOUS, CONTAMINATED
-    purity_findings: list[PurityFinding] = []
-    synthetic_data_leak: bool | None = None
-    external_data_leak: bool | None = None
-    corpus_coverage: int | None = None
-    deep_analysis_coverage: int | None = None
-    reproducibility_score: int | None = None
-    unresolved_conflict_burden: int | None = None
-    methodological_purity_flags: list[str] = []
-    evaluation_summary: str | None = None
-    created_at: datetime | None = None
+    findings: list[MethodologyFinding] = []
+    hard_blockers: list[str] = []
+    warnings: list[str] = []
+    evaluated_at: datetime
 
     model_config = ConfigDict(from_attributes=True)
 
@@ -599,8 +596,8 @@ class RunAdmissionStateResponse(BaseSchema):
 
 class AttentionCenterResponse(BaseSchema):
     recent_runs: list[ResearchRunResponse] = []
-    review_required_claims: list[SemanticClaimResponse] = []
-    freshness_attention_claims: list[SemanticClaimResponse] = []
+    canonicalization_candidates: list[SemanticClaimResponse] = []
+    reopen_required_claims: list[SemanticClaimResponse] = []
     pending_proposals: list[ChangeProposalResponse] = []
     recent_changes: list[AuditLogResponse] = []
     corpus_snapshots: list[CorpusSnapshotResponse] = []
@@ -613,15 +610,14 @@ class RunWorkspaceResponse(BaseSchema):
     observations: list[ObservationArtifactResponse] = []
     hypotheses: list[HypothesisResponse] = []
     neighbors: list[EssentialNeighborResponse] = []
-    gates: list[GateReportResponse] = []
-    claims: list[SemanticClaimResponse] = []
-    claims_visible: bool
+    research_judgments: list[SemanticClaimResponse] = []
+    judgments_visible: bool
     audit_events: list[AuditLogResponse] = []
 
 
 class GovernanceOverviewResponse(BaseSchema):
     rules: list[GovernanceRuleResponse] = []
     proposals: list[ChangeProposalResponse] = []
-    review_queue: list[SemanticClaimResponse] = []
-    freshness_queue: list[SemanticClaimResponse] = []
+    canonicalization_candidates: list[SemanticClaimResponse] = []
+    reopen_required: list[SemanticClaimResponse] = []
     corpus_snapshots: list[CorpusSnapshotResponse] = []

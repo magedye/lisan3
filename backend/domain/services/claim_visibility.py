@@ -1,11 +1,10 @@
-"""Canonical release boundary for SemanticClaim-derived reads."""
+"""Visibility boundary for evidence-bound Research Judgments."""
 
 from dataclasses import dataclass
 
 from sqlalchemy.orm import Session
 
 from backend.domain import models
-from backend.domain.services.gates import INTERNAL_LOCK, has_valid_gate
 
 
 @dataclass(frozen=True)
@@ -15,7 +14,7 @@ class ClaimReleaseDecision:
 
 
 class ClaimReleasePolicy:
-    """Derive claim visibility from current run, isolation, and Gate authority."""
+    """Hide only results whose source boundary cannot be trusted."""
 
     @staticmethod
     def evaluate_run(db: Session, run_id: str | None) -> ClaimReleaseDecision:
@@ -35,12 +34,6 @@ class ClaimReleasePolicy:
             )
         if isolation.is_contaminated != "CLEAN":
             return ClaimReleaseDecision(False, "Blind Lab run is contaminated")
-        try:
-            locked = has_valid_gate(db, run_id, INTERNAL_LOCK)
-        except (LookupError, ValueError):
-            locked = False
-        if not locked:
-            return ClaimReleaseDecision(False, "Current Internal Lock is not valid")
         return ClaimReleaseDecision(True)
 
     @classmethod

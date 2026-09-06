@@ -64,15 +64,8 @@ export default function BlindLabPage() {
     try {
       await apiFetch<IsolationState>(`/api/runs/${runId}/blind/preflight`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          target_contract: run.target_contract,
-          corpus_snapshot: run.corpus_snapshot,
-          methodology_reference: run.methodology_revision,
-          allowed_sources: ["QURAN_CORPUS"],
-        }),
       });
-      setNotice("اكتمل فحص العزل وسُجلت حالة CLEAN. محاولة القراءة المحظورة المرفوضة لا تعني تلوثاً فعلياً.");
+      setNotice("فعّل المضيف عزل المصدر تلقائياً وسجّل CLEAN. محاولة القراءة المحظورة المرفوضة لا تعني تلوثاً فعلياً.");
       setRevision((value) => value + 1);
     } catch (reason) {
       setError(reason instanceof Error ? reason.message : "تعذر بدء فحص العزل.");

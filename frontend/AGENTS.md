@@ -40,11 +40,14 @@ Do not implement RTL as a translated LTR afterthought.
 
 The UI must display but must not invent authoritative state.
 
-Preserve independent display of:
-- Epistemic
-- Review
-- Freshness
-- Publication
+Preserve independent display of the simplified decision-bearing states
+(see `SIMPLIFIED_AI_AUTHORITY_AND_GOVERNANCE_CONTRACT.md`):
+- Research state (`PREFERRED` / `UNRESOLVED` / `REJECTED`)
+- Canonical state (`NOT_CANONICAL` / `ACCEPTED` / `REOPEN_REQUIRED`)
+- Optional facts: result strength and verification state
+
+The retired review/freshness/publication axes must not be reintroduced as
+mandatory UI state.
 
 Do not infer semantic confidence from percentages, colors, progress bars,
 or visual maturity.

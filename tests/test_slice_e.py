@@ -78,8 +78,8 @@ def setup_governance(test_db):
         target_expression="test",
         methodology_revision="v1",
         corpus_snapshot=snapshot_id,
-        authority_context="test",
-        status="LOCK_INTERNAL_RESULT",
+        authority_context={"profile": "test"},
+        status="ACTIVE",
     )
     test_db.add(run)
 
@@ -88,10 +88,15 @@ def setup_governance(test_db):
         id=claim_id,
         research_run_id=run_id,
         contract_type="test",
-        epistemic_state="LOCK_INTERNAL_RESULT",
-        review_state="REVIEW_REQUIRED",
-        freshness_state="CURRENT",
-        publication_state="PRIVATE_WORKING",
+        research_state="PREFERRED",
+        canonical_state="ACCEPTED",
+        result_strength="STRONG",
+        verification_state="VERIFIED",
+        falsification_status="PASSED",
+        claim_scope="UNIVERSAL",
+        research_completeness={"sufficient_for_claim": True},
+        preferred_conclusion="Accepted test judgment",
+        supporting_evidence=["observation:test"],
     )
     test_db.add(claim)
 
@@ -132,20 +137,21 @@ def test_transitive_invalidation(test_db, setup_governance):
     assert res.status_code == 200
     proposal_id = res.json()["id"]
 
-    # Check claim is CURRENT before approval
+    # Check accepted knowledge before the governing rule changes.
     claim = (
         test_db.query(models.SemanticClaim)
         .filter(models.SemanticClaim.id == claim_id)
         .first()
     )
-    assert claim.freshness_state == "CURRENT"
+    assert claim.canonical_state == "ACCEPTED"
 
     res = client.post(f"/governance/proposals/{proposal_id}/approve")
     assert res.status_code == 200
 
-    # Check claim is REVALIDATION_REQUIRED after approval
+    # A governing revision reopens, rather than silently mutating, accepted knowledge.
     test_db.refresh(claim)
-    assert claim.freshness_state == "REVALIDATION_REQUIRED"
+    assert claim.canonical_state == "REOPEN_REQUIRED"
+    assert claim.verification_state == "NOT_VERIFIED"
 
 
 def test_rule_mutation_scope(test_db, setup_governance):
@@ -168,8 +174,8 @@ def test_rule_mutation_scope(test_db, setup_governance):
             target_expression="t",
             methodology_revision="1",
             corpus_snapshot="snap",
-            authority_context="t",
-            status="LOCK",
+            authority_context={"profile": "test"},
+            status="ACTIVE",
         )
     )
     claim_id_b = f"clm_{uuid.uuid4().hex[:8]}"
@@ -178,10 +184,15 @@ def test_rule_mutation_scope(test_db, setup_governance):
             id=claim_id_b,
             research_run_id=run_id,
             contract_type="t",
-            epistemic_state="LOCK_INTERNAL_RESULT",
-            review_state="REVIEW_REQUIRED",
-            freshness_state="CURRENT",
-            publication_state="PRIVATE_WORKING",
+            research_state="PREFERRED",
+            canonical_state="ACCEPTED",
+            result_strength="STRONG",
+            verification_state="VERIFIED",
+            falsification_status="PASSED",
+            claim_scope="UNIVERSAL",
+            research_completeness={"sufficient_for_claim": True},
+            preferred_conclusion="Unrelated accepted result",
+            supporting_evidence=["observation:other"],
         )
     )
     test_db.add(
@@ -213,10 +224,10 @@ def test_rule_mutation_scope(test_db, setup_governance):
     )
     assert rule_b.active_revision == 1
 
-    # Check that Claim B is still CURRENT
+    # Check that Claim B is still accepted.
     claim_b = (
         test_db.query(models.SemanticClaim)
         .filter(models.SemanticClaim.id == claim_id_b)
         .first()
     )
-    assert claim_b.freshness_state == "CURRENT"
+    assert claim_b.canonical_state == "ACCEPTED"

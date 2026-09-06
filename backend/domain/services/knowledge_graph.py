@@ -133,10 +133,6 @@ class KnowledgeGraphService:
         for claim in claims:
             if claim.research_run_id:
                 claims_by_run.setdefault(claim.research_run_id, []).append(claim)
-        gates_by_run: dict[str, list[models.GateReport]] = {}
-        for gate in db.query(models.GateReport).order_by(models.GateReport.id):
-            if gate.research_run_id:
-                gates_by_run.setdefault(gate.research_run_id, []).append(gate)
         dependencies_by_claim: dict[str, list[models.DependencyRecord]] = {}
         for dependency in db.query(models.DependencyRecord).order_by(models.DependencyRecord.id):
             dependencies_by_claim.setdefault(dependency.dependent_claim_id, []).append(
@@ -172,17 +168,6 @@ class KnowledgeGraphService:
                     snapshot_node,
                     f"research_run:{run.id}:corpus_snapshot",
                     run.updated_at,
-                )
-            for gate in gates_by_run.get(str(run.id), []):
-                gate_node = add_node(
-                    "GATE_REPORT", gate.id, gate.evaluated_revision, gate.created_at
-                )
-                add_edge(
-                    run_node,
-                    models.GraphEdgeType.EVALUATED_BY,
-                    gate_node,
-                    f"gate_report:{gate.id}",
-                    gate.evaluated_revision,
                 )
             for claim in claims_by_run.get(str(run.id), []):
                 claim_node = add_node(
@@ -271,12 +256,6 @@ class KnowledgeGraphService:
                     )
                     if rule is not None:
                         scoped.add(_node_id("GOVERNANCE_RULE", rule.id))
-        for gate in (
-            db.query(models.GateReport)
-            .filter(models.GateReport.research_run_id == run.id)
-            .all()
-        ):
-            scoped.add(_node_id("GATE_REPORT", gate.id))
         return scoped
 
     @staticmethod

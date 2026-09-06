@@ -22,16 +22,55 @@ class RunAdmissionDecision:
     reasons: tuple[str, ...]
 
 
+@dataclass(frozen=True)
+class ResolvedRunAuthority:
+    accepted: bool
+    status: str
+    corpus_snapshot_id: str | None
+    methodology_revision_id: str | None
+    authority_context: dict[str, str]
+    reasons: tuple[str, ...]
+
+
 class ResearchRunAdmissionPolicy:
     @staticmethod
     def eligible_corpus_snapshot_ids(db: Session) -> list[str]:
         return [
             str(snapshot.id)
             for snapshot in db.query(models.CorpusSnapshot)
-            .order_by(models.CorpusSnapshot.id)
+            .order_by(
+                models.CorpusSnapshot.created_at.desc(),
+                models.CorpusSnapshot.id.desc(),
+            )
             .all()
             if is_production_validated(snapshot)
         ]
+
+    @classmethod
+    def resolve(cls, db: Session) -> ResolvedRunAuthority:
+        corpus_ids = cls.eligible_corpus_snapshot_ids(db)
+        methodology_ids = eligible_methodology_revision_ids(db)
+        reasons: list[str] = []
+        if not corpus_ids:
+            reasons.append(
+                "No authority-verified, production-active CorpusSnapshot is available"
+            )
+        if not methodology_ids:
+            reasons.append("No eligible current Methodology revision is available")
+        corpus_id = corpus_ids[0] if corpus_ids else None
+        methodology_id = methodology_ids[-1] if methodology_ids else None
+        return ResolvedRunAuthority(
+            accepted=not reasons,
+            status="RESOLVED" if not reasons else "AUTHORITY_UNAVAILABLE",
+            corpus_snapshot_id=corpus_id,
+            methodology_revision_id=methodology_id,
+            authority_context={
+                "resolved_by": "ResearchRunAdmissionPolicy",
+                "actor": "TRUSTED_LOCAL_USER",
+                "source_policy": "QURAN_INTERNAL_INDUCTION",
+            },
+            reasons=tuple(reasons),
+        )
 
     @classmethod
     def current_state(cls, db: Session) -> dict[str, object]:

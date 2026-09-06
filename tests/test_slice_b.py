@@ -58,17 +58,6 @@ def create_fixture_run(run_id: str) -> str:
             authority_context={"profile": "test_fixture"},
         )
     )
-    db.commit()
-    db.close()
-    return run_id
-
-
-def test_slice_b_end_to_end():
-    # 1. Create an explicit test-only run for this downstream Blind Lab slice.
-    run_id = create_fixture_run("run_slice_b_end_to_end")
-
-    # 2. Setup mock corpus
-    db = TestingSessionLocal()
     db.add(
         models.CorpusOccurrence(
             id="c1",
@@ -80,17 +69,15 @@ def test_slice_b_end_to_end():
     )
     db.commit()
     db.close()
+    return run_id
 
-    # 3. Enter Blind Lab Preflight
-    iso_resp = client.post(
-        f"/runs/{run_id}/blind/preflight",
-        json={
-            "target_contract": "ROOT_CORE",
-            "corpus_snapshot": "snap1-test-fixture",
-            "methodology_reference": "ref_v1",
-            "allowed_sources": ["QURAN_CORPUS"],
-        },
-    )
+
+def test_slice_b_end_to_end():
+    # 1. Create an explicit test-only run for this downstream Blind Lab slice.
+    run_id = create_fixture_run("run_slice_b_end_to_end")
+
+    # 2. Enter host-derived Blind Lab Preflight.
+    iso_resp = client.post(f"/runs/{run_id}/blind/preflight")
     assert iso_resp.status_code == 200
     assert iso_resp.json()["is_contaminated"] == "CLEAN"
 
@@ -102,7 +89,7 @@ def test_slice_b_end_to_end():
     # 5. Prohibited Read (Fails Closed & Contaminates)
     prohibited_resp = client.get(f"/runs/{run_id}/read_semantic_dictionary")
     assert prohibited_resp.status_code == 403
-    assert "Prohibited read" in prohibited_resp.json()["detail"]
+    assert "Prohibited source read blocked" in prohibited_resp.json()["detail"]
 
     # 6. Verify contamination blocks further reading and observations
     # This assertion is removed because a blocked read no longer contaminates the state.
@@ -114,15 +101,7 @@ def test_observation_rejection():
     run_id = create_fixture_run("run_slice_b_observation")
 
     # 2. Preflight
-    client.post(
-        f"/runs/{run_id}/blind/preflight",
-        json={
-            "target_contract": "ROOT_CORE",
-            "corpus_snapshot": "snap1-test-fixture",
-            "methodology_reference": "ref_v1",
-            "allowed_sources": ["QURAN_CORPUS"],
-        },
-    )
+    client.post(f"/runs/{run_id}/blind/preflight")
 
     # 3. Valid Structural Observation
     valid_obs = client.post(
@@ -161,15 +140,7 @@ def test_observation_rejection():
 def test_contamination_audit():
     # Create an explicit test-only run and preflight.
     run_id = create_fixture_run("run_slice_b_contamination")
-    client.post(
-        f"/runs/{run_id}/blind/preflight",
-        json={
-            "target_contract": "ROOT_CORE",
-            "corpus_snapshot": "snap1-test-fixture",
-            "methodology_reference": "ref_v1",
-            "allowed_sources": ["QURAN_CORPUS"],
-        },
-    )
+    client.post(f"/runs/{run_id}/blind/preflight")
 
     # Prohibited read
     prohibited_resp = client.get(f"/runs/{run_id}/read_semantic_dictionary")

@@ -39,7 +39,9 @@ def test_db():
     app.dependency_overrides.pop(get_db, None)
 
 
-def seed_workspace(db):
+def seed_workspace(db, *, contaminated: bool = False):
+    """Seed a run whose Research Judgment is release-gated only by the source
+    boundary (Blind Lab isolation), not by any lifecycle lock or gate."""
     suffix = uuid.uuid4().hex[:6]
     snapshot = models.CorpusSnapshot(
         id=f"snap_ui_{suffix}",
@@ -62,7 +64,8 @@ def seed_workspace(db):
         corpus_snapshot=snapshot.id,
         methodology_reference=run.methodology_revision,
         allowed_sources=["QURAN_CORPUS"],
-        is_contaminated="CLEAN",
+        is_contaminated="PRIOR_CONTAMINATED" if contaminated else "CLEAN",
+        contamination_reason="actual prohibited-source read" if contaminated else None,
     )
     observation = models.ObservationArtifact(
         id=f"obs_ui_{suffix}",
@@ -94,11 +97,11 @@ def seed_workspace(db):
         id=f"claim_ui_{suffix}",
         research_run_id=run.id,
         contract_type="ROOT_CORE",
-        epistemic_state="LOCK_INTERNAL_RESULT",
-        review_state="NOT_REVIEWED",
-        freshness_state="REVALIDATION_REQUIRED",
-        publication_state="PRIVATE_WORKING",
-        abstract_root_core="قراءة اختبارية",
+        research_state="PREFERRED",
+        canonical_state="NOT_CANONICAL",
+        result_strength="STRONG",
+        verification_state="NOT_VERIFIED",
+        preferred_conclusion="قراءة اختبارية",
     )
     rule = models.GovernanceRule(
         id=f"rule_ui_{suffix}",
@@ -120,38 +123,31 @@ def seed_workspace(db):
         actor="TEST",
     )
     db.add_all(
-        [
-            snapshot,
-            run,
-            isolation,
-            observation,
-            hypothesis,
-            claim,
-            rule,
-            proposal,
-            audit,
-        ]
+        [snapshot, run, isolation, observation, hypothesis, claim, rule, proposal, audit]
     )
     db.commit()
     return run, claim, snapshot, proposal
 
 
 def test_attention_center_returns_only_persisted_records(test_db):
-    run, _, snapshot, proposal = seed_workspace(test_db)
+    run, claim, snapshot, proposal = seed_workspace(test_db)
 
     response = client.get("/attention")
 
     assert response.status_code == 200
     data = response.json()
     assert [item["id"] for item in data["recent_runs"]] == [run.id]
-    assert data["review_required_claims"] == []
-    assert data["freshness_attention_claims"] == []
+    # A STRONG preferred, not-yet-canonical judgment on a clean run is a real
+    # canonicalization candidate.
+    assert [item["id"] for item in data["canonicalization_candidates"]] == [claim.id]
+    assert data["reopen_required_claims"] == []
     assert [item["id"] for item in data["pending_proposals"]] == [proposal.id]
     assert [item["id"] for item in data["corpus_snapshots"]] == [snapshot.id]
+    assert "run_admission" in data
 
 
-def test_run_workspace_hides_claims_before_existing_lock_allows_release(test_db):
-    run, claim, *_ = seed_workspace(test_db)
+def test_run_workspace_hides_judgments_when_source_boundary_is_contaminated(test_db):
+    run, claim, *_ = seed_workspace(test_db, contaminated=True)
 
     response = client.get(f"/runs/{run.id}/workspace")
 
@@ -160,55 +156,44 @@ def test_run_workspace_hides_claims_before_existing_lock_allows_release(test_db)
     assert data["run"]["id"] == run.id
     assert len(data["observations"]) == 1
     assert len(data["hypotheses"]) == 1
-    assert data["claims_visible"] is False
-    assert data["claims"] == []
+    assert data["judgments_visible"] is False
+    assert data["research_judgments"] == []
     assert claim.id not in response.text
 
 
-def test_run_workspace_exposes_claims_only_after_existing_release_checks(
-    test_db, monkeypatch
-):
+def test_run_workspace_exposes_judgments_when_isolation_is_clean(test_db):
     run, claim, *_ = seed_workspace(test_db)
-    monkeypatch.setattr(
-        "backend.domain.services.claim_visibility.has_valid_gate", lambda *_args: True
-    )
 
     response = client.get(f"/runs/{run.id}/workspace")
 
     assert response.status_code == 200
     data = response.json()
-    assert data["claims_visible"] is True
-    assert [item["id"] for item in data["claims"]] == [claim.id]
+    assert data["judgments_visible"] is True
+    assert [item["id"] for item in data["research_judgments"]] == [claim.id]
 
 
-def test_direct_claim_and_governance_overview_fail_closed_before_release(test_db):
-    _, claim, snapshot, proposal = seed_workspace(test_db)
+def test_direct_judgment_and_overview_fail_closed_when_contaminated(test_db):
+    _, claim, snapshot, proposal = seed_workspace(test_db, contaminated=True)
 
-    claim_response = client.get(f"/claims/{claim.id}")
+    judgment_response = client.get(f"/judgments/{claim.id}")
     overview_response = client.get("/governance/overview")
 
-    assert claim_response.status_code == 403
+    assert judgment_response.status_code == 403
     assert overview_response.status_code == 200
     overview = overview_response.json()
-    assert overview["review_queue"] == []
-    assert overview["freshness_queue"] == []
+    assert overview["canonicalization_candidates"] == []
+    assert overview["reopen_required"] == []
     assert [item["id"] for item in overview["proposals"]] == [proposal.id]
     assert [item["id"] for item in overview["corpus_snapshots"]] == [snapshot.id]
 
 
-def test_direct_claim_and_governance_overview_release_after_existing_checks(
-    test_db, monkeypatch
-):
+def test_direct_judgment_and_overview_release_when_isolation_is_clean(test_db):
     _, claim, *_ = seed_workspace(test_db)
-    monkeypatch.setattr(
-        "backend.domain.services.claim_visibility.has_valid_gate", lambda *_args: True
-    )
 
-    claim_response = client.get(f"/claims/{claim.id}")
+    judgment_response = client.get(f"/judgments/{claim.id}")
     overview_response = client.get("/governance/overview")
 
-    assert claim_response.status_code == 200
-    assert claim_response.json()["freshness_state"] == "REVALIDATION_REQUIRED"
+    assert judgment_response.status_code == 200
+    assert judgment_response.json()["research_state"] == "PREFERRED"
     overview = overview_response.json()
-    assert [item["id"] for item in overview["review_queue"]] == [claim.id]
-    assert [item["id"] for item in overview["freshness_queue"]] == [claim.id]
+    assert [item["id"] for item in overview["canonicalization_candidates"]] == [claim.id]

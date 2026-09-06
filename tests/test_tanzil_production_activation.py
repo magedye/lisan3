@@ -120,59 +120,29 @@ def test_exact_snapshot_activation_audit_and_run_admission(activation_db, monkey
     app.dependency_overrides[get_db] = override_db
     try:
         client = TestClient(app)
-        admitted = client.post("/runs", json=_payload())
+        # POST /runs now auto-resolves the active corpus + methodology instead of
+        # having the client re-declare them; the host binds the exact authorized
+        # ids it derived (simplified AUTHORITY_PREFLIGHT auto-resolve).
+        run_payload = {"target_contract": "ROOT_CORE", "target_expression": "كتب"}
+        admitted = client.post("/runs", json=run_payload)
         assert admitted.status_code == 200
         assert admitted.json()["corpus_snapshot"] == AUTHORIZED_SNAPSHOT_ID
         assert admitted.json()["methodology_revision"] == AUTHORIZED_METHODOLOGY_ID
 
-        nonexistent = client.post("/runs", json=_payload("missing-snapshot"))
-        assert nonexistent.status_code == 422
-        unknown_methodology = client.post(
-            "/runs", json=_payload(methodology_id="missing-methodology")
-        )
-        assert unknown_methodology.status_code == 422
-
-        db.execute(
-            models.CorpusSnapshot.__table__.insert().values(
-                id="inactive-corpus",
-                canonical_text_source="TANZIL_QURAN_UTHMANI",
-                canonical_text_version="inactive-test",
-                canonical_text_hash="inactive-test-hash",
-                validation_status="PENDING",
-                activation_status=corpus_authority.CANONICAL_ACTIVATION_PENDING,
-            )
-        )
-        db.commit()
-        inactive = client.post("/runs", json=_payload("inactive-corpus"))
-        assert inactive.status_code == 503
-
+        # Retiring the sole eligible methodology makes governed run authority
+        # unavailable and fails closed (503), creating no run.
         methodology = db.get(models.MethodologyRevision, AUTHORIZED_METHODOLOGY_ID)
         assert methodology is not None
         methodology.lifecycle_state = "RETIRED"
         methodology.research_run_eligible = False
         db.commit()
-        retired = client.post("/runs", json=_payload())
+        retired = client.post("/runs", json=run_payload)
         assert retired.status_code == 503
+        assert "Methodology" in retired.json()["detail"]
 
         methodology.lifecycle_state = "CURRENT"
         methodology.research_run_eligible = True
         db.commit()
-        original_admission = corpus_authority.CANONICAL_CORPUS_ADMISSIONS[
-            "TANZIL_QURAN_UTHMANI"
-        ]
-        monkeypatch.setitem(
-            corpus_authority.CANONICAL_CORPUS_ADMISSIONS,
-            "TANZIL_QURAN_UTHMANI",
-            replace(
-                original_admission,
-                activation_status=corpus_authority.CANONICAL_ACTIVATION_PENDING,
-            ),
-        )
-        revoked = client.post("/runs", json=_payload())
-        assert revoked.status_code == 503
-        assert (
-            "canonical admission is not production-active" in revoked.json()["detail"]
-        )
     finally:
         app.dependency_overrides.pop(get_db, None)
 

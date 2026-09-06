@@ -1,114 +1,128 @@
 # Lisanapp Canonical Implementation Reference
 
-*See the [Tooling Adoption Reference](./LISAN_TOOLING_ADOPTION_REFERENCE.md) for canonical rules regarding allowed tools and frameworks.*
+Authority revision: `LISAN3_CANONICAL_IMPLEMENTATION_V3_2026_09_06`
 
-Hybrid Retrieval, Knowledge Graph, Vector Discovery, EvidenceResolver, and
-their AI Runtime integration are governed by
-[`LISAN_HYBRID_KNOWLEDGE_RETRIEVAL_ARCHITECTURE.md`](./LISAN_HYBRID_KNOWLEDGE_RETRIEVAL_ARCHITECTURE.md).
+The current AI authority and semantic-governance boundary is owned by
+[`SIMPLIFIED_AI_AUTHORITY_AND_GOVERNANCE_CONTRACT.md`](../../SIMPLIFIED_AI_AUTHORITY_AND_GOVERNANCE_CONTRACT.md).
+Tool adoption and hybrid retrieval remain governed by their existing canonical
+references and are not changed by this revision.
 
-## Product Mission
-Transform the current materials into a single governed, maintainable, testable Lisan application implementation that connects the already-designed Stitch Golden UX to a real governed backend and semantic runtime.
+## Product and architecture
 
-## Authority Hierarchy & Ownership
-- **Governance**: Owned by authoritative domain models and registries. Changes require explicit rule revisions via Change Proposals and Impact Analyses.
-- **UX**: Owned by the UX Constitution v4.0 and the Stitch Golden Prototype (visuals).
-- **Semantic Runtime**: Owned by the Canonical Runtime Skill (`skills/lisan-semantic-extraction/SKILL.md`).
-- **Application Backend**: Owned by the Python/FastAPI codebase.
-- **Application Frontend**: Owned by the Next.js/React codebase.
+Lisanapp is a modular-monolith Quranic semantic research application:
 
-## Application Architecture
-- **Type**: Modular Monolith.
-- **Backend**: Python, FastAPI, SQLite, SQLAlchemy, Pydantic v2.
-- **Frontend**: Next.js, TypeScript, Tailwind CSS, CSS Logical Properties (RTL), Radix UI.
-- **API Boundary**: RESTful JSON over OpenAPI with typed frontend clients.
-- **Identity & Authorization**: Trusted local single-user context. Domain invariants and state transitions enforce authority constraints (e.g. Steward role logic) without a JWT or User database.
+- backend: Python, FastAPI, SQLAlchemy, Pydantic v2, SQLite;
+- frontend: Next.js, TypeScript, Tailwind CSS, RTL logical properties;
+- boundary: REST/OpenAPI with generated TypeScript contracts;
+- identity: trusted local single-user runtime with server-owned domain actions.
 
-## Governance & Status Model
-The four status axes remain completely independent:
-1. **Epistemic Status** (e.g., `LOCK_BLOCKED`, `NOT_ESTABLISHED`)
-2. **Review Status** (e.g., `NOT_REVIEWED`, `INDEPENDENTLY_REVIEWED`)
-3. **Freshness Status** (e.g., `CURRENT`, `STALE`)
-4. **Publication Status** (e.g., `PRIVATE_WORKING`, `PUBLISHED`)
+The UI cannot write canonical knowledge directly. Canonical mutation passes
+through server-side validation, policy, persistence, and audit.
 
-## Provenance & Reproducibility Model
-All semantic changes must trace back through:
-- Claim → Evidence → Artifact → Research Run → Corpus Snapshot → Methodology Revision.
-- A deterministic Reproduction Manifest can be generated from the backend.
+## Authority
 
-## Change-Control Policy
-- **Workflow vs Epistemic States**: Workflow progression (e.g., analysis stage) never automatically grants epistemic lock or publication authority.
-- **Governance Rules**: Existing governing revisions cannot be mutated in place. New revisions must be created, triggering transitive invalidation assessments.
+The latest owner instruction and `AUTHORITY_MAP.md` govern precedence. The
+active semantic runtime is `skills/lisan-semantic-extraction/SKILL.md` as a
+derived instruction artifact; it cannot redefine source or project authority.
+Historical `main skills/` files are reference only.
 
-## Methodology Revision Authority
-- The active methodology source is `skills/lisan-semantic-extraction/SKILL.md`.
-- Every ResearchRun-eligible revision is an immutable registry record bound to
-  the source path and SHA-256, its authority reference, allowed use, and its
-  independent `CURRENT` or `RETIRED` lifecycle state.
-- Identity, provenance, source binding, and allowed use cannot be mutated after
-  insert; only lifecycle and eligibility may change to retire or revoke future use.
-- ResearchRun admission accepts only a present, `CURRENT`, explicitly eligible
-  registry revision whose source bytes still match the recorded SHA-256.
-- A source change requires a new registry revision. Retiring or revoking a
-  revision prevents future run admission without rewriting historical runs.
+## Minimal semantic status model
 
-## Canonical Corpus Pre-Activation Authority
+Workflow checkpoints do not grant authority. A persisted semantic result has:
 
-- `docs/canonical/ADMISSION_TANZIL.md` owns the LISAN3 Tanzil source identity,
-  exact version, immutable artifact/index references, expected hashes, format,
-  provenance, and pre-activation lifecycle boundary.
-- A caller-supplied matching hash is parsing evidence only. Import validation
-  requires the authority-bound expected hash to exist before bytes are read and
-  verified.
-- The canonical text layer preserves every admitted verse record byte-for-byte
-  after strict UTF-8 decoding. It performs no Unicode normalization.
-- The governed importer reconciles the artifact to the authority-bound 114-surah,
-  6,236-identity index, then persists one deterministic snapshot identity and
-  one deterministic occurrence identity per verse. An exact retry verifies and
-  reuses that state; it cannot create a competing snapshot.
-- `IMPORT_VALIDATED`, `VALIDATED`, and `PRODUCTION_ACTIVE` are distinct. Import
-  validation does not grant production activation, and ResearchRun admission
-  continues to require a separately production-active snapshot.
-- QAC remains `PENDING_ADMISSION` with machine-readable state
-  `SOURCE_ROLE_PENDING`. Its proposed auxiliary morphology/syntax role is not
-  approved: Stage-A evidence has identified exact candidate bytes, but no
-  authority-bound upstream artifact, completed provenance/license review,
-  real-format importer, or production activation exists. If separately
-  admitted, QAC must remain a source-provenanced annotation layer keyed to
-  Tanzil identity. Tanzil canonical-text import does not inherit QAC
-  semantic/gloss/ontology fields and does not depend on a real-format QAC
-  importer. The five-axis state and future
-  boundary are owned by `docs/canonical/ADMISSION_QAC.md`. QAC provenance and
-  artifact qualification is not admission. Structural domain/persistence and
-  real-importer validation evidence must precede a separate structural-source
-  admission decision, and production activation is a later independent
-  lifecycle transition.
+- `research_state`: `PREFERRED`, `UNRESOLVED`, or `REJECTED`;
+- `canonical_state`: `NOT_CANONICAL`, `ACCEPTED`, or `REOPEN_REQUIRED`;
+- `result_strength`: `WEAK`, `MODERATE`, `STRONG`, or `UNRESOLVED`;
+- `verification_state`: `NOT_REQUIRED`, `NOT_VERIFIED`, or `VERIFIED`;
+- `falsification_status`: `NOT_REQUIRED`, `NOT_RUN`, `PASSED`, or `FAILED`.
 
-## Purity and Structural Evidence Authority
+Only the first two are decision-bearing status axes. Strength, verification,
+falsification, and host-derived completeness are explicit qualification facts.
+There is no semantic-research lock, Purity gate, freshness axis, publication
+axis, or review axis.
 
-`docs/canonical/LISAN_PURITY_AND_STRUCTURAL_EVIDENCE_CONTRACT.md` owns the
-implementation contract for all eight mandatory Purity dimensions and the
-future provenance-bound structural annotation boundary. Every dimension remains
-fail-closed: `NOT_EVALUATED` is not clean and blocks `PURITY_CHECK`. This
-contract does not itself admit a structural source or establish a Purity result.
+## Research and canonical authority
 
-### Tooling and Verification
+AI is a primary research actor and may persist a `Research Judgment` after
+deterministic validation. It may not set `canonical_state=ACCEPTED`.
 
-Lisanapp uses strict evidence-based verification. Test coverage is divided into standard unit tests (`pytest`), randomized invariant checking (`hypothesis`), property-based contract checking (`schemathesis`), bounding mutation checking (`cosmic-ray`), and canonical journeys (`playwright`).
+Canonicalization is one explicit server-owned transition. It requires a strong
+preferred current-revision result, sufficient claim-sensitive coverage,
+resolvable evidence and counterevidence treatment, passed falsification,
+independent verification, current source/method bindings, clean source
+isolation, and explicit trusted-local authorization. Failure returns exact
+reasons and changes no canonical state.
 
-## 8. Migration Policy
+A material new evidence record or affected governing revision changes an
+accepted result to `REOPEN_REQUIRED`; it is then excluded from accepted-memory
+retrieval until verified and accepted again. No silent mutation is permitted.
 
-The current Alembic migration history (e.g., `80330541af56_initial_schema.py`) represents an intentional squash of the Lisanapp database schema at the V3 milestone.
-All subsequent schema changes MUST be generated as incremental, reversible Alembic migrations layered on top of this initial squash.
-Direct modification of the initial migration file is prohibited.
+## Provenance and evidence
 
-## AI Semantic Runtime
-Lisanapp is an AI-assisted governed Quranic semantic research application. AI serves as a primary exploratory and analytical runtime (proposing, exploring, comparing, challenging, synthesizing, explaining). AI is NOT an authority source, canonical corpus, validator, gate, review authority, or publication authority.
+Every important result traces through:
 
-- **AI Proposals vs. Evidence**: AI output is strictly a proposal until resolved against canonical contracts, evidence validators, and Gate logic. AI output must NEVER be converted directly into `authoritative semantic truth`, `LOCK_INTERNAL_RESULT`, or `PUBLISHED`.
-- **Relationship with Semantic Skill**: The active Canonical Runtime Skill (`skills/lisan-semantic-extraction/SKILL.md`) governs the AI agent's instructions.
-- **Relationship with Canonical Corpus**: AI must not use its private memory as canonical Quranic evidence. The canonical Corpus supplies all textual evidence.
-- **Structured-Output Requirements**: All AI proposals entering the governed application must be parsed and validated through Pydantic schemas. Malformed outputs must fail safely.
-- **Tool-Use Rules**: The model may only access truly available tools via a controlled Dispatcher. Simulated tools are never reported as executed.
-- **Blind Lab AI-Context Isolation**: Before valid Internal Lock, the `AIContextBuilder` strictly isolates the AI model's context. Forbidden semantic artifacts (Owner answers, previous Root Cores, non-admitted dictionaries, post-lock comparisons) are strictly excluded from the prompt payload.
-- **Provenance & Reproducibility**: AI usage must be traceable via an `AIExecutionRecord` that persists provider, model identity, tool actions, evidence refs, skill version, and structured outputs. Hidden chain-of-thought is explicitly NOT persisted as an artifact.
-- **Provider Independence & Degraded Mode**: The domain layer uses a generic provider abstraction (e.g., `ModelProvider`). When no live model is available, the application remains fully operational, preserving existing deterministic data without inventing semantics.
+`Research Judgment -> evidence/counterevidence -> run -> corpus snapshot -> methodology revision`
+
+AI executions additionally record provider/model, skill revision, real tool
+availability, input/output artifact references, status, and error. Hidden
+chain-of-thought is never stored. Simulated tools or model memory are not
+evidence.
+
+Metadata is retained only when used for lineage, reproduction, authorization,
+or a current decision.
+
+## Source and methodology authority
+
+- The canonical Quran snapshot controls text and verse identity. Research-run
+  admission accepts only authority-verified, production-active snapshots.
+- The active methodology source is immutable per registered revision and bound
+  to the exact `skills/lisan-semantic-extraction/SKILL.md` SHA-256.
+- The host selects the current eligible source and methodology. Optional caller
+  hints are validated but never grant authority.
+- Internal Quranic induction receives only admitted Quran data and same-run
+  artifacts. External semantic sources and prior answers are excluded by
+  context/tool permissions, not merely by prompt wording.
+- Accepted project knowledge may be retrieved for answering or later
+  comparison, but never counts as primary Quranic evidence.
+
+Tanzil and QAC admission/activation boundaries remain owned by
+`docs/canonical/ADMISSION_TANZIL.md` and `docs/canonical/ADMISSION_QAC.md`.
+This revision does not admit, activate, or redesign either corpus layer.
+
+## Coverage, falsification, and semantic layers
+
+The host derives coverage from persisted corpus/observation evidence. A claim
+over all occurrences requires complete indexed coverage. Deep analysis may be
+a justified representative sample when the declared claim scope permits it;
+local claims require the exact local occurrence. AI cannot self-certify counts.
+
+Preferred important conclusions require a structured rejection condition and
+a passed falsification attempt. Observations and exploratory hypotheses do not.
+
+Semantic analysis preserves this attribution order:
+
+`root -> derivation/inflection -> lexeme -> form -> construction -> local form/roles -> context/discourse -> local meaning -> final statement`
+
+The UI may abbreviate layers that do not affect the answer, but the persisted
+judgment records the material layer attribution.
+
+## Diagnostics
+
+The eight historical Purity dimensions remain diagnostics. Unsupported
+diagnostics are `NOT_EVALUATED`, not fake passes and not generic research
+blockers. A finding becomes hard only when it proves a current hard-boundary
+violation such as actual prohibited-source exposure, unresolved asserted
+evidence, circular primary support, or unsupported generalization. The detailed
+boundary is in `LISAN_PURITY_AND_STRUCTURAL_EVIDENCE_CONTRACT.md`.
+
+## Change control and migrations
+
+Governing revisions are append-oriented; affected accepted results are reopened
+with audit evidence. Schema changes use incremental reversible Alembic
+migrations. Existing migration files are not rewritten.
+
+## Claim and release discipline
+
+Keep implementation, tests, profile verification, technical release readiness,
+independent review, and release acceptance distinct. The implementing agent
+cannot self-grant independent review or release acceptance.

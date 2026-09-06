@@ -21,7 +21,9 @@ from backend.domain.services.methodology_authority import (
 )
 
 AUTHORIZED_SNAPSHOT_ID = "snap_tanzil_1_1_ac0724796cbb"
-AUTHORIZED_METHODOLOGY_ID = "LISAN_QURANIC_SEMANTIC_EXTRACTION@6bb1c10a0f9a"
+# Aligned with the simplified-governance methodology revision seeded by
+# alembic f1a6c3d9e204 (source-bound to the current SKILL.md sha256).
+AUTHORIZED_METHODOLOGY_ID = "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4"
 ACTIVATION_ACTOR = "OWNER_AUTHORITY"
 ACTIVATION_ACTION = "AUTHORIZE_TANZIL_PRODUCTION_ACTIVATION"
 ACTIVATION_REASON = (

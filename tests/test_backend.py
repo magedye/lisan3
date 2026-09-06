@@ -66,25 +66,24 @@ def test_research_run_persistence():
     saved_run = db.query(models.ResearchRun).filter_by(id="run_test_1").first()
     assert saved_run is not None
     assert saved_run.target_expression == "TEST"
-    assert saved_run.current_stage == models.ResearchStage.PREFLIGHT.value
+    assert saved_run.current_stage == models.ResearchStage.RESEARCH.value
 
     # Test mapping round-trip and validation failure
     # Pydantic schemas enforce type safety
     from backend.domain.schemas import ResearchRunCreate
 
-    try:
+    validated = ResearchRunCreate.model_validate(
+        {"target_contract": "ROOT_CONCEPT", "target_expression": "TEST"}
+    )
+    assert validated.target_expression == "TEST"
+    with pytest.raises(ValueError):
         ResearchRunCreate.model_validate(
             {
-                "target_contract": "ROOT_CORE",
+                "target_contract": "ROOT_CONCEPT",
                 "target_expression": "TEST",
-                "corpus_snapshot": "snapshot_test",
-                "authority_context": {},
-                # missing required methodology_revision
+                "corpus_snapshot": "caller-must-not-select-authority",
             }
         )
-        assert False, "Should fail validation"
-    except ValueError:
-        pass
 
     db.close()
 
@@ -119,13 +118,13 @@ def test_slice_a_end_to_end():
         },
     )
     assert response.status_code == 422
-    assert "CorpusSnapshot 'current' does not exist" in response.json()["detail"]
+    assert "extra_forbidden" in response.text
     assert db.query(models.ResearchRun).count() == 0
 
     db.close()
 
 
-def test_ask_found_claim_returns_all_four_status_axes(monkeypatch):
+def test_ask_found_claim_returns_simplified_research_and_canonical_state():
     db = TestingSessionLocal()
     db.query(models.SemanticClaim).delete()
     db.query(models.ResearchRun).delete()
@@ -133,7 +132,7 @@ def test_ask_found_claim_returns_all_four_status_axes(monkeypatch):
         [
             models.ResearchRun(
                 id="run_found_axes",
-                target_contract="ROOT_CORE",
+                target_contract="LEXEME",
                 target_expression="نور",
                 methodology_revision="v4.0",
                 corpus_snapshot="snap_found_axes",
@@ -142,11 +141,29 @@ def test_ask_found_claim_returns_all_four_status_axes(monkeypatch):
             models.SemanticClaim(
                 id="claim_found_axes",
                 research_run_id="run_found_axes",
-                contract_type="ROOT_CORE",
-                epistemic_state="LOCK_INTERNAL_RESULT",
-                review_state="NOT_REVIEWED",
-                freshness_state="REVALIDATION_REQUIRED",
-                publication_state="PRIVATE_WORKING",
+                contract_type="LEXEME",
+                research_state="PREFERRED",
+                canonical_state="NOT_CANONICAL",
+                result_strength="MODERATE",
+                verification_state="NOT_REQUIRED",
+                falsification_status="PASSED",
+                claim_scope="LOCAL",
+                research_completeness={"sufficient_for_claim": True},
+                preferred_conclusion="ترجيح بحثي",
+                plain_explanation="شرح موجز",
+                semantic_boundary="فصل الجذر عن السياق",
+                layer_attribution={"root": "نور", "lexeme": "نور"},
+                supporting_evidence=["observation:one"],
+                hard_cases=["موضع صعب"],
+                strongest_counterexample="مثال مضاد",
+                strongest_competitor="بديل منافس",
+                rejection_condition={
+                    "challenging_finding": "موضع لا يفسره الحكم",
+                    "search_location": "النطاق",
+                    "verification_method": "مقارنة",
+                    "confounder_control": "طرح السياق",
+                    "failure_consequence": "رفض الحكم",
+                },
             ),
             models.IsolationState(
                 id="isolation_found_axes",
@@ -161,20 +178,17 @@ def test_ask_found_claim_returns_all_four_status_axes(monkeypatch):
     )
     db.commit()
     db.close()
-    monkeypatch.setattr(
-        "backend.domain.services.claim_visibility.has_valid_gate", lambda *_args: True
-    )
-
     response = client.post(
-        "/ask", json={"expression": "نور", "contract_type": "ROOT_CORE"}
+        "/ask", json={"expression": "نور", "contract_type": "LEXEME"}
     )
 
     assert response.status_code == 200
+    assert response.json()["status"] == "PREFERRED_RESEARCH_RESULT"
     claim = response.json()["claim"]
-    assert claim["epistemic_state"] == "LOCK_INTERNAL_RESULT"
-    assert claim["review_state"] == "NOT_REVIEWED"
-    assert claim["freshness_state"] == "REVALIDATION_REQUIRED"
-    assert claim["publication_state"] == "PRIVATE_WORKING"
+    assert claim["research_state"] == "PREFERRED"
+    assert claim["canonical_state"] == "NOT_CANONICAL"
+    assert claim["result_strength"] == "MODERATE"
+    assert claim["verification_state"] == "NOT_REQUIRED"
 
 
 def test_alembic_models_parity(tmp_path):
