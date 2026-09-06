@@ -133,12 +133,16 @@ def evaluate_judgment(
         judgment.supporting_evidence_refs + judgment.counterevidence_refs
     ))
     evidence = resolve_evidence_refs(db, run, refs)
+    # Coverage is derived from SUPPORTING evidence only. A counterevidence
+    # occurrence is an occurrence the concept fails to explain; it must never
+    # count toward universal coverage (root semantic unity, NON_NEGOTIABLE).
+    supporting = resolve_evidence_refs(db, run, judgment.supporting_evidence_refs)
     completeness = derive_completeness(
         db,
         run,
         judgment.claim_scope.value,
         judgment.sampling_basis,
-        evidence.occurrence_ids,
+        supporting.occurrence_ids,
     )
     reasons = list(evidence.reasons)
     isolation = (

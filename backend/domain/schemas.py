@@ -246,6 +246,12 @@ class CorpusOccurrenceResponse(CorpusOccurrenceBase):
 # --- Slice C Schemas ---
 class HypothesisBase(BaseSchema):
     hypothesis_type: str  # H1, H2, C0
+    # Defaults to internal derivation; an external candidate (e.g. Jabal's central
+    # meaning) must declare itself so it cannot masquerade as blind internal
+    # discovery. External origin grants no confidence bonus and is never canonical.
+    origin: Literal[
+        "INDEPENDENT_INTERNAL_DERIVATION", "EXTERNAL_CANDIDATE"
+    ] = "INDEPENDENT_INTERNAL_DERIVATION"
     target_contract: str
     scope: str
     statement: str

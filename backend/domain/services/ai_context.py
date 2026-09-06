@@ -5,6 +5,7 @@ from sqlalchemy.orm import Session
 from ..models import (
     CorpusOccurrence,
     Hypothesis,
+    HypothesisOrigin,
     IsolationState,
     ObservationArtifact,
     ResearchRun,
@@ -80,12 +81,25 @@ class AIContextBuilder:
             for o in observations
         ]
 
-        # Load hypotheses generated in this run
+        # Load hypotheses generated in this run. Only INDEPENDENT internal
+        # derivations may enter the blind induction context; an external
+        # candidate (e.g. a scholar's meaning) belongs to a separate external
+        # challenge stage and must never masquerade as blind internal discovery.
         hypotheses = (
-            db.query(Hypothesis).filter(Hypothesis.research_run_id == run_id).all()
+            db.query(Hypothesis)
+            .filter(
+                Hypothesis.research_run_id == run_id,
+                Hypothesis.origin == HypothesisOrigin.INDEPENDENT_INTERNAL_DERIVATION.value,
+            )
+            .all()
         )
         context["active_hypotheses"] = [
-            {"id": h.id, "type": h.hypothesis_type, "statement": h.statement}
+            {
+                "id": h.id,
+                "type": h.hypothesis_type,
+                "origin": h.origin,
+                "statement": h.statement,
+            }
             for h in hypotheses
         ]
 

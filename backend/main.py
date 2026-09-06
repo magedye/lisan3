@@ -535,6 +535,7 @@ def create_hypothesis(
         id=f"hyp_{uuid.uuid4().hex[:8]}",
         research_run_id=run_id,
         hypothesis_type=hypothesis.hypothesis_type,
+        origin=hypothesis.origin,
         target_contract=hypothesis.target_contract,
         scope=hypothesis.scope,
         statement=hypothesis.statement,

@@ -66,6 +66,18 @@ class ClaimScope(str, enum.Enum):
     LOCAL = "LOCAL"
 
 
+class HypothesisOrigin(str, enum.Enum):
+    """Marks where a hypothesis entered, so an external candidate can never be
+    presented as blind internal discovery (INT-EXT-001..007; policy doc §9).
+
+    This is the lightest mechanism enforcing that separation; a full permanent
+    dual-lane lifecycle is an OPEN, non-owner proposal (SUP-008) and is not built.
+    """
+
+    INDEPENDENT_INTERNAL_DERIVATION = "INDEPENDENT_INTERNAL_DERIVATION"
+    EXTERNAL_CANDIDATE = "EXTERNAL_CANDIDATE"
+
+
 class MethodologyRevision(Base):
     __tablename__ = "methodology_revisions"
     __table_args__ = (
@@ -429,9 +441,24 @@ class IsolationEvent(Base):
 
 class Hypothesis(Base):
     __tablename__ = "hypotheses"
+    __table_args__ = (
+        CheckConstraint(
+            "origin IN ('INDEPENDENT_INTERNAL_DERIVATION', 'EXTERNAL_CANDIDATE')",
+            name="ck_hypothesis_origin",
+        ),
+    )
     id = Column(String, primary_key=True, index=True)
     research_run_id = Column(String, ForeignKey("research_runs.id"))
     hypothesis_type = Column(String)  # H1, H2, C0
+    # Blind internal derivation vs a known-source external candidate (e.g. a
+    # scholar's central meaning). Defaults to internal so nothing is silently
+    # relabelled; an external candidate must declare itself.
+    origin = Column(
+        String,
+        nullable=False,
+        default=HypothesisOrigin.INDEPENDENT_INTERNAL_DERIVATION.value,
+        server_default=HypothesisOrigin.INDEPENDENT_INTERNAL_DERIVATION.value,
+    )
     target_contract = Column(String)
     scope = Column(String)
     statement = Column(String)
@@ -441,6 +468,16 @@ class Hypothesis(Base):
     rejection_condition = Column(JSON)  # Structured object
     provenance = Column(String)
     created_at = Column(DateTime, default=datetime.datetime.utcnow)
+
+
+@event.listens_for(Hypothesis, "before_update")
+def enforce_hypothesis_origin_write_once(_mapper, _connection, hypothesis):
+    """Origin is write-once: a recorded external candidate can never be silently
+    relabelled as blind internal discovery, and vice-versa."""
+    if inspect(hypothesis).attrs.origin.history.has_changes():
+        raise ValueError(
+            "Hypothesis origin is write-once; it cannot be relabelled after creation"
+        )
 
 
 class EssentialNeighbor(Base):
@@ -763,3 +800,156 @@ class QualityProfile(Base):
     )  # e.g. ["tafsir_contamination", "dictionary_first"]
     evaluation_summary = Column(String)
     created_at = Column(DateTime, default=datetime.datetime.utcnow)
+
+
+# --- Descriptive Knowledge Base (INT-PRE-OWN-001) ---
+# Persisted, reusable, deterministic structural facts. Each row is one
+# structural-source attribution of a word occurrence to a root. Counts/profiles
+# are DERIVED read-models over these rows (never re-guessed by an LLM). Root/form
+# attribution is a reviewable structural annotation, tracked by attribution_status.
+class StructuralAttributionStatus(str, enum.Enum):
+    CONFIRMED = "CONFIRMED"
+    DISPUTED = "DISPUTED"
+    UNRESOLVED = "UNRESOLVED"
+
+
+class StructuralToken(Base):
+    __tablename__ = "structural_tokens"
+    __table_args__ = (
+        CheckConstraint(
+            "attribution_status IN ('CONFIRMED', 'DISPUTED', 'UNRESOLVED')",
+            name="ck_structural_token_attribution_status",
+        ),
+        UniqueConstraint(
+            "snapshot_id",
+            "word_ref",
+            "extraction_version",
+            name="uq_structural_token_identity",
+        ),
+        Index("ix_structural_tokens_root", "snapshot_id", "root"),
+    )
+
+    id = Column(String, primary_key=True)
+    snapshot_id = Column(
+        String, ForeignKey("corpus_snapshots.id"), nullable=False, index=True
+    )
+    word_ref = Column(String, nullable=False)  # e.g. "2:233:53"  (DIRECT location)
+    verse_ref = Column(String, nullable=False)  # e.g. "2:233"    (DIRECT location)
+    root = Column(String, nullable=False)  # structural annotation (reviewable)
+    form = Column(String)  # derived form / morphological group (reviewable)
+    pos_tag = Column(String)
+    source_id = Column(String, nullable=False)
+    source_version = Column(String)
+    extraction_version = Column(String, nullable=False)
+    attribution_status = Column(
+        String, nullable=False, default=StructuralAttributionStatus.CONFIRMED.value
+    )
+    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+
+
+# --- Unified External Hypothesis Register (INT-EXT-001..007) ---
+# One mechanism for every external claim. External sources generate hypotheses
+# and tests only; they never gain authority and carry NO confidence field.
+class ExternalClaimType(str, enum.Enum):
+    ROOT_MEANING_CANDIDATE = "ROOT_MEANING_CANDIDATE"
+    FORM_EFFECT_CANDIDATE = "FORM_EFFECT_CANDIDATE"
+    DERIVATIONAL_EFFECT_CANDIDATE = "DERIVATIONAL_EFFECT_CANDIDATE"
+    LETTER_EFFECT_CANDIDATE = "LETTER_EFFECT_CANDIDATE"
+    CONSTRUCTION_EFFECT_CANDIDATE = "CONSTRUCTION_EFFECT_CANDIDATE"
+    METHOD_RULE_CANDIDATE = "METHOD_RULE_CANDIDATE"
+
+
+class ExternalClaimRole(str, enum.Enum):
+    RULE_CLAIM = "RULE_CLAIM"
+    AUTHOR_APPLICATION = "AUTHOR_APPLICATION"
+
+
+class ExternalHypothesisStatus(str, enum.Enum):
+    EXTERNAL_CANDIDATE = "EXTERNAL_CANDIDATE"
+    TESTED = "TESTED"
+    SUPPORTED = "SUPPORTED"
+    PARTIALLY_SUPPORTED = "PARTIALLY_SUPPORTED"
+    NOT_SUPPORTED = "NOT_SUPPORTED"
+    FALSIFIED = "FALSIFIED"
+    UNRESOLVED = "UNRESOLVED"
+
+
+class ExternalHypothesisRecord(Base):
+    __tablename__ = "external_hypothesis_records"
+    __table_args__ = (
+        CheckConstraint(
+            "claim_type IN ('ROOT_MEANING_CANDIDATE', 'FORM_EFFECT_CANDIDATE', "
+            "'DERIVATIONAL_EFFECT_CANDIDATE', 'LETTER_EFFECT_CANDIDATE', "
+            "'CONSTRUCTION_EFFECT_CANDIDATE', 'METHOD_RULE_CANDIDATE')",
+            name="ck_external_hypothesis_claim_type",
+        ),
+        CheckConstraint(
+            "claim_role IN ('RULE_CLAIM', 'AUTHOR_APPLICATION')",
+            name="ck_external_hypothesis_claim_role",
+        ),
+        CheckConstraint(
+            "status IN ('EXTERNAL_CANDIDATE', 'TESTED', 'SUPPORTED', "
+            "'PARTIALLY_SUPPORTED', 'NOT_SUPPORTED', 'FALSIFIED', 'UNRESOLVED')",
+            name="ck_external_hypothesis_status",
+        ),
+        Index("ix_external_hypothesis_target", "claim_type", "target_scope"),
+    )
+
+    id = Column(String, primary_key=True, index=True)
+    claim_type = Column(String, nullable=False)
+    source = Column(String, nullable=False)  # e.g. "المعجم الاشتقاقي المؤصل"
+    author = Column(String, nullable=False)  # e.g. "محمد حسن حسن جبل"
+    source_locator = Column(String)  # URL / page / entry
+    claim = Column(String, nullable=False)
+    normalized_claim = Column(String)
+    target_scope = Column(String, nullable=False)  # root / form / letter / rule id
+    claim_role = Column(
+        String, nullable=False, default=ExternalClaimRole.RULE_CLAIM.value
+    )
+    status = Column(
+        String, nullable=False, default=ExternalHypothesisStatus.EXTERNAL_CANDIDATE.value
+    )
+    test_plan = Column(String)
+    test_evidence_refs = Column(JSON, nullable=False, default=list)
+    counterevidence_refs = Column(JSON, nullable=False, default=list)
+    result = Column(String)
+    provenance = Column(String, nullable=False)
+    research_run_id = Column(String, ForeignKey("research_runs.id"), nullable=True)
+    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    updated_at = Column(
+        DateTime, default=datetime.datetime.utcnow, onupdate=datetime.datetime.utcnow
+    )
+
+
+@event.listens_for(ExternalHypothesisRecord, "before_insert")
+@event.listens_for(ExternalHypothesisRecord, "before_update")
+def enforce_external_hypothesis_vocabulary(_mapper, _connection, record):
+    """External claims carry no confidence/authority; only governed vocabulary."""
+    if record.claim_type not in {item.value for item in ExternalClaimType}:
+        raise ValueError("Unsupported external hypothesis claim_type")
+    if record.claim_role not in {item.value for item in ExternalClaimRole}:
+        raise ValueError("Unsupported external hypothesis claim_role")
+    if record.status not in {item.value for item in ExternalHypothesisStatus}:
+        raise ValueError("Unsupported external hypothesis status")
+    if not record.provenance:
+        raise ValueError("External hypothesis requires provenance")
+
+
+# --- Campaign checkpoint / resume state ---
+# A durable, queryable campaign cursor so a session/runtime interruption cannot
+# lose progress. The campaign runner (Request 02) reads/writes this.
+class CampaignState(Base):
+    __tablename__ = "campaign_states"
+    id = Column(String, primary_key=True, index=True)
+    campaign_id = Column(String, nullable=False, unique=True)
+    methodology_revision = Column(String)
+    corpus_snapshot = Column(String)
+    queue = Column(JSON, nullable=False, default=list)  # roots pending
+    completed_roots = Column(JSON, nullable=False, default=list)
+    current_batch = Column(JSON, nullable=False, default=dict)
+    findings = Column(JSON, nullable=False, default=list)
+    status = Column(String, nullable=False, default="INITIALIZED")
+    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    updated_at = Column(
+        DateTime, default=datetime.datetime.utcnow, onupdate=datetime.datetime.utcnow
+    )

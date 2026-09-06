@@ -9,9 +9,17 @@
    `docs/canonical/LISAN_TOOLING_ADOPTION_REFERENCE.md`,
    `docs/canonical/LISAN_HYBRID_KNOWLEDGE_RETRIEVAL_ARCHITECTURE.md`,
    `docs/canonical/ADMISSION_TANZIL.md`,
-   `docs/canonical/ADMISSION_QAC.md`, and
+   `docs/canonical/ADMISSION_QAC.md`,
+   `docs/canonical/ADMISSION_MASTER_PACKAGE_V1_0_1.md`, and
    `docs/canonical/LISAN_PURITY_AND_STRUCTURAL_EVIDENCE_CONTRACT.md` within their
    stated scopes.
+   - The accepted post-V2.1 owner-directive delta of the Master Integrated
+     Package v1.0.1 (`02_CURRENT_OWNER_DIRECTIVES/` INT-* directives, bound by
+     `docs/canonical/ADMISSION_MASTER_PACKAGE_V1_0_1.md`) governs where it
+     resolves a conflict via `MASTER_SUPERSESSION_MAP.csv`. The package's
+     `03_PRE_ANALYSIS/` and proposal registries remain OPEN / non-governing.
+     `docs/FOUNDATIONAL_PROFILE_DRAFT.md` is a non-gating consolidation for
+     review, not an authority.
 4. **Canonical UX/Product Contract**: `ui/Lisanapp Governed UX Constitution & Implementation Reference — النسخة 4.0 (Final).md` for UX and product behavior.
 5. **Active Derived Semantic Runtime**: `skills/lisan-semantic-extraction/SKILL.md`, subordinate to higher authority.
 6. **Accepted Registries, Schemas, and Backend/API Contracts**: Only artifacts that exist and are accepted within their defined authority.

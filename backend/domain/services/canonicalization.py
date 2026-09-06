@@ -47,6 +47,22 @@ class CanonicalizationPolicy:
         if claim.contract_type == "ROOT_CONCEPT" and not claim.root_concept:
             reasons.append("Root concept is missing")
 
+        # Root semantic unity (INT-OWN-ROOT-002, NON_NEGOTIABLE): an accepted
+        # universal root concept must show the root's contribution in EVERY
+        # confirmed-attribution occurrence. Host-derived coverage proves the
+        # occurrences were observed/evidenced, but observation does not equal
+        # explanation: a still-unresolved (confirmed unexplained) occurrence must
+        # block acceptance. No majority substitute is permitted.
+        is_universal_root = (
+            claim.contract_type == "ROOT_CONCEPT"
+            and claim.claim_scope == models.ClaimScope.UNIVERSAL.value
+        )
+        if is_universal_root and (claim.unresolved_cases or []):
+            reasons.append(
+                "A universal root concept cannot be accepted while confirmed "
+                "occurrences remain unexplained (root semantic unity)"
+            )
+
         run = db.get(models.ResearchRun, claim.research_run_id)
         if run is None:
             reasons.append("ResearchRun is missing")
@@ -72,6 +88,24 @@ class CanonicalizationPolicy:
             list(claim.supporting_evidence or []) + list(claim.counterevidence or []),
         )
         reasons.extend(evidence.reasons)
+
+        # A confirmed occurrence recorded as counterevidence is an occurrence the
+        # concept fails to explain. For a universal root concept, one such
+        # occurrence in the eligible set blocks acceptance (root semantic unity).
+        if is_universal_root and claim.counterevidence:
+            counter = resolve_evidence_refs(db, run, list(claim.counterevidence))
+            eligible_ids = {
+                str(item.id)
+                for item in db.query(models.CorpusOccurrence).filter(
+                    models.CorpusOccurrence.snapshot_id == run.corpus_snapshot,
+                    models.CorpusOccurrence.expression == run.target_expression,
+                )
+            }
+            if counter.occurrence_ids & eligible_ids:
+                reasons.append(
+                    "A universal root concept cannot be accepted while a confirmed "
+                    "occurrence remains a counterexample (root semantic unity)"
+                )
 
         verification = (
             db.query(models.VerificationRecord)
