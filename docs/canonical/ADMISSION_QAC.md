@@ -1,111 +1,90 @@
-# Quranic Arabic Corpus Pending Admission Record
+# Quranic Arabic Corpus (QAC) Morphology — LISAN3 Admission Record
 
-Authority revision: `LISAN3_QAC_PENDING_ADMISSION_V4_2026_08_27`
+**authority revision**: `LISAN3_QAC_STRUCTURAL_ADMISSION_V1_2026_09_06`
+**decision**: `QUALIFIED_QURANIC_MORPHOLOGY_ADMITTED` — admitted as a **local,
+hash-bound, acquire-per-install immutable structural source** for root/morphology
+annotation only. Supersedes the prior `PENDING_ADMISSION` record for the
+structural role; the Stage-A evidence remains the byte/format/field basis.
 
-## Source identity
+## Source identity (§1, §2, §14)
 
-- Source ID: `QAC_MORPHOLOGY_SYNTAX`
-- Source name: Quranic Arabic Corpus
-- Candidate upstream location: <https://corpus.quran.com/download/>
-- Current admission decision: `PENDING_ADMISSION`
-- Machine-readable source-role state: `SOURCE_ROLE_PENDING`
+| Item | Value |
+|---|---|
+| Source ID | `QAC_MORPHOLOGY` |
+| Source name | Quranic Arabic Corpus — Morphology |
+| Version / release | `0.4` (release notes dated 2011-05-01) |
+| Copyright holder | Kais Dukes (project initiated at the University of Leeds) |
+| Filename | `quranic-corpus-morphology-0.4.txt` |
+| Byte size | `6,309,503` |
+| **SHA-256** | `a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46` |
+| Container / encoding | uncompressed plain text; strict US-ASCII; no BOM; CRLF |
+| Embedded text notice | Tanzil Quran Text, Uthmani 1.0.2 (CC BY-ND 3.0) |
+| Local path (gitignored) | `data/corpus/qac/quranic-corpus-morphology-0.4.txt` |
 
-This record supersedes the earlier unverified approval claim. It does not admit
-an artifact, authorize a source role, prove an importer, activate production
-use, or authorize semantic-pilot execution.
+## Acquisition provenance (§3)
 
-## Five-axis admission state
+- Official canonical location: <http://corpus.quran.com/download> — the official
+  download is an email-gated POST form with no direct artifact link or published
+  checksum, i.e. a step unavailable to the runtime.
+- Bytes acquired from an **immutable-commit-pinned public mirror** whose content is
+  **byte-identical** to the documented official artifact:
+  `https://raw.githubusercontent.com/bnjasim/quranic-corpus/74416e4881d79e09713c170c7234226cb1785555/quranic-corpus-morphology-0.4.txt`
+- Identity established by exact SHA-256 + byte-size match to the Stage-A official
+  candidate identity (`docs/evidence/qac-stage-a-2026-08-27/`). Per §3, matching
+  the documented artifact hash establishes file identity; the mirror is a
+  transport, not an authority.
+- Acquisition timestamp: 2026-09-06 (this session).
 
-| Axis | State | Current evidence |
-|---|---|---|
-| Artifact identity | `PENDING` | Stage-A evidence identifies a 6,309,503-byte morphology 0.4 candidate with SHA-256 `a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46`. A read-only GET of the official endpoint exposed only an email-gated POST form and no direct artifact link or checksum, so the result is `DIRECT_OFFICIAL_BYTE_BINDING_UNAVAILABLE`. The raw file is external and uncommitted; no runtime expected hash is authority-bound. |
-| Provenance and license | `PENDING` | Official project/version/release identity is established, but GPLv3, QAC no-change/attribution terms, FAQ non-commercial/research/citation language, the embedded historical Tanzil CC BY-ND 3.0 notice, and Tanzil's current CC BY 3.0/no-change page are not authoritatively reconciled. Local use is pending clarification; public/private repository redistribution is not qualified. |
-| Structural role authorization | `NOT_APPROVED` | QAC is only a proposed auxiliary structural source. No canonical admission decision has approved its role. |
-| Real importer | `NOT_IMPLEMENTED` | A synthetic pipe-delimited fixture parser exists. It is not evidence of a parser for an admitted QAC distribution, and current fixture import discards structural annotations. |
-| Production activation | `NOT_AUTHORIZED` | No admitted artifact or role exists. `CANONICAL_ACTIVATION_PENDING` is fail-closed runtime storage, not an activation decision. |
+## License / terms disposition (§2)
 
-## Stage-A qualification evidence
+Embedded copyright block (read verbatim from the artifact):
 
-The bounded `2026-08-27` Stage-A inspection is recorded at
-`docs/evidence/qac-stage-a-2026-08-27/QAC_STAGE_A_QUALIFICATION.md` with a
-machine-readable artifact manifest, field disposition, real-format importer
-requirements, Tanzil reconciliation diagnostic, persistence gap analysis, and
-Stage-D prerequisite checklist.
+- QAC morphology: **GNU General Public License**, © 2011 Kais Dukes. Verbatim
+  copies may be distributed; **changing the file is not allowed**; use requires
+  clearly indicating the source (Quranic Arabic Corpus) and a link to
+  <http://corpus.quran.com>; the copyright notice must be retained in verbatim
+  copies and reproduced in derived works containing a substantial portion.
+- Embedded Tanzil 1.0.2: CC BY-ND 3.0 (verbatim, no change, attribution/link).
 
-It establishes a concrete, byte-reproducible candidate and resolves the
-historical `a1d129...` value as an exact candidate/public-mirror byte match. A
-read-only official-endpoint attempt could not obtain bytes without submitting
-owner contact data, so it does not establish the direct official download byte
-chain. The remaining license questions and an exact factual request are
-recorded in the evidence package with status `PREPARED_NOT_SENT`. Therefore
-neither pending early axis transitions to `VERIFIED`, and the candidate hash is
-not copied into runtime authority.
+**Disposition:** to avoid an unresolved redistribution/copyleft question and honor
+"do not fabricate legal clearance", the raw GPL artifact is **NOT committed** to
+this repository. It is admitted for **local structural use, acquire-per-install**:
+each installation obtains its own byte-identical copy (mirror/official) and the
+importer fail-closes on any SHA drift. Derived structural annotations carry the
+required attribution and lineage to the source SHA. Required attribution string:
+`Quranic Arabic Corpus (Kais Dukes, 2011), http://corpus.quran.com`.
 
-## Required lifecycle and dependency sequence
+## Canonical Quran mapping (§5)
 
-The following stages are ordered prerequisites. Completion of one stage does
-not grant the state owned by a later stage.
+- Tanzil (`TANZIL_QURAN_UTHMANI` 1.1) remains the **sole** Quran-text and
+  verse-identity authority. QAC is structural annotation over the text; QAC `FORM`
+  never overwrites Tanzil text.
+- All 6,236 QAC verse references match the admitted Tanzil verse identities
+  exactly (0 unmatched). The importer fails closed if any QAC verse is absent.
+- Known word-index offsets are recorded, not silently resolved: 112 embedded
+  opening-basmala verses (QAC excludes those tokens), and 4 residual cases
+  (`2:181`, `8:6`, `13:37` ba'da-ma splits; `37:130` internal-space form). QAC
+  word indices are QAC-native; verse identity is Tanzil-authoritative.
 
-1. **QAC provenance and artifact qualification:** pin the exact acquisition
-   URL, upstream version/release, artifact filename, byte size, file format,
-   and SHA-256; verify license and provenance obligations; inventory proposed
-   fields, prohibited semantic fields, importer requirements, and structural
-   mappings. This qualification is not admission. Structural role
-   authorization remains `NOT_APPROVED`, the importer remains
-   `NOT_IMPLEMENTED`, and production activation remains `NOT_AUTHORIZED`.
-2. **Structural domain and persistence capability:** establish the separate
-   provenance-bound token/segment annotation model, identity, constraints, and
-   reconciliation boundary required for permitted structural fields. Tanzil
-   remains Quran-text and verse-identity authority.
-3. **Real QAC importer and validation:** implement and test deterministic
-   parsing of the qualified real artifact, complete format and segment
-   preservation, prohibited-field rejection, Tanzil reconciliation, immutable
-   provenance binding, fail-closed malformed/unsupported input behavior, and
-   relevant persistence validation.
-4. **QAC structural-source admission decision:** only after the preceding
-   evidence exists may governance explicitly decide `APPROVED` or
-   `NOT_APPROVED` for the proposed structural role. Qualification, domain, and
-   importer evidence never grant approval automatically.
-5. **Production activation:** only after an approved structural role, validated
-   importer, governed artifact, persistence/reconciliation evidence, and the
-   required verification may a separate production-activation transition be
-   considered.
+## Structural capabilities qualified (§4)
 
-## Maximum proposed future role
+TSV `LOCATION FORM TAG FEATURES`; 128,219 segments (PREFIX 28,670 / STEM 77,915 /
+SUFFIX 21,634); `ROOT` on 49,968 segments (Buckwalter, kept as the stable key);
+`LEM` on 74,608; `POS`, derived verb form `(I..XII)`, `TAG` (45 categories),
+mood/pronoun/affix/flags. **Zero** gloss / ontology / semantic-class / syntax
+fields (prohibited-marker hit count 0) — a pure morphological source.
 
-If separately admitted, QAC may contribute only an auxiliary annotation layer
-for fields that pass field-by-field review, such as:
+## Derived artifacts (lineage)
 
-- token and segment locators;
-- root and lemma annotations;
-- part of speech, morphological form, voice, and explicit morphological
-  features;
-- explicitly permitted syntactic relations.
+- `structural_tokens` rows (runtime, source_id=`QAC_MORPHOLOGY`,
+  source_version=`0.4`, extraction_version=`qac-0.4-import-v1`), one per
+  root-bearing segment (49,968).
+- **Root Universe**: 1,642 roots, deterministically derived and reproducible.
 
-Tanzil remains the sole canonical authority for Quranic text and verse identity.
-QAC annotations must never mutate or silently replace Tanzil content.
+## Reproduction
 
-The following are prohibited from admission through this structural role:
-
-- glosses and translations;
-- ontologies or semantic labels;
-- dictionary, tafsir, or derived Root Core content;
-- confidence claims or research conclusions;
-- any field whose meaning, provenance, or authority remains unresolved.
-
-## Future reconciliation identity
-
-Any future imported annotation must bind to:
-
-`Tanzil snapshot + verse_ref + word index + segment index + QAC source identity`
-
-Multi-segment words must remain multi-segment. Missing, duplicate, or ambiguous
-alignment must fail closed and remain outside canonical knowledge.
-
-## Current consequence
-
-No QAC artifact may enter canonical knowledge or be activated for production,
-and no semantic-pilot run may claim QAC-derived morphology, syntax, root, or
-lemma evidence while any of the five axes above remains open. A future,
-separately authorized non-production importer-validation exercise against a
-qualified artifact is prerequisite evidence, not admission or activation.
+Acquire the artifact to `data/corpus/qac/quranic-corpus-morphology-0.4.txt`
+(SHA-256 above), then the importer `QacMorphologyImporter.import_tokens` verifies
+bytes, parses, reconciles with Tanzil, and persists tokens. Qualification tests:
+`tests/test_qac_morphology.py` (parse logic always; full-corpus test runs when the
+local artifact is present).

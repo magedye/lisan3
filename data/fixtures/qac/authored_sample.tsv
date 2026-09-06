@@ -1,0 +1,9 @@
+# Authored QAC-format test fixture -- NOT Quranic Arabic Corpus bytes.
+# Format-faithful sample (own content) used to test parse logic only.
+#====================================================================
+LOCATION	FORM	TAG	FEATURES
+(1:1:1:1)	bi	P	PREFIX|bi+
+(1:1:1:2)	somi	N	STEM|POS:N|LEM:{som|ROOT:smw|M|GEN
+(2:2:1:1)	kitaAb	N	STEM|POS:N|LEM:kitaAb|ROOT:ktb|M|NOM
+(2:2:2:1)	katab	V	STEM|POS:V|(I)|ROOT:ktb|PERF|3MS
+(2:2:3:1)	wa	CONJ	PREFIX|w:CONJ+

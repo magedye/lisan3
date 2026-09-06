@@ -41,3 +41,9 @@ Thumbs.db
 # archive (see docs/canonical/ADMISSION_MASTER_PACKAGE_V1_0_1.md), not source.
 /Quran_Lisan_Master_Integrated_Package_v1.0.1.zip
 /Quran_Lisan_Master_Integrated_Package_v1.0.1/
+
+# QAC morphology (GNU GPL, © 2011 Kais Dukes) — admitted as a LOCAL, hash-bound,
+# acquire-per-install immutable source (see docs/canonical/ADMISSION_QAC.md). The
+# raw GPL artifact is not redistributed via this repo; each install acquires its
+# own byte-identical copy (SHA-256 a1d12923...). Derived annotations are runtime.
+/data/corpus/qac/*.txt
