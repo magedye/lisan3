@@ -1,0 +1,770 @@
+{
+ "batch_id": "calibration-batch-01",
+ "produced_at": "2026-09-06",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "status": "CALIBRATION_COMPLETE",
+ "note": "AI Research Judgments only. NON-CANONICAL, REPRESENTATIVE scope. Canonicalization requires full-corpus universal-presence testing and independent human verification (not available in an autonomous run). These are durable calibration artifacts + findings, not accepted root meanings.",
+ "metrics": {
+  "roots_processed": 8,
+  "accepted_roots": 0,
+  "preferred_internal_but_not_accepted": 8,
+  "unresolved": 0,
+  "verify_supported": 0,
+  "verify_partially_supported": 8,
+  "verify_refuted": 0,
+  "distinctiveness_flagged": 1
+ },
+ "methodology_findings": [
+  "Every internal candidate (8/8) that looked PREFERRED was reduced to PARTIALLY_SUPPORTED by adversarial verification — the adversarial + universal-presence bars correctly prevented acceptance. 0 roots accepted; this is the methodology refusing to over-unify.",
+  "Representative sampling is insufficient for a UNIVERSAL root-concept claim: several roots that appeared consistent on the sample (ktb 30/30) failed on specific occurrences the verifier surfaced (e.g. 62:2 oral teaching, 35:29 recitation). Full-corpus coverage is required before any universal acceptance.",
+  "Form/derivation layer separation is the dominant difficulty (Amn 26 fails, SbH consistent only 12/30): the root residue must be separated from Form II/IV and construction effects before a stable contribution emerges.",
+  "kfr distinctiveness was flagged (not sufficiently distinct): a candidate root sense must be tested against the nearest competing roots, not just internal consistency."
+ ],
+ "resume": {
+  "campaign_id": "calibration-batch-01",
+  "status": "COMPLETE",
+  "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+  "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+  "completed_count": 8,
+  "remaining_count": 0,
+  "next_root": null
+ },
+ "roots": [
+  {
+   "root_buckwalter": "ktb",
+   "root_arabic": "ك ت ب",
+   "descriptive": {
+    "total_confirmed_occurrences": 319,
+    "distinct_forms": 5,
+    "form_inventory": [
+     {
+      "form": "ADJ",
+      "count": 1
+     },
+     {
+      "form": "N",
+      "count": 267
+     },
+     {
+      "form": "V",
+      "count": 49
+     },
+     {
+      "form": "V(III)",
+      "count": 1
+     },
+     {
+      "form": "V(VIII)",
+      "count": 1
+     }
+    ],
+    "source": "QAC_MORPHOLOGY",
+    "extraction_version": "qac-0.4-import-v1"
+   },
+   "internal_discovery": {
+    "candidate_root_contribution": "Setting content down as an inscribed, fixed written mark — producing a durable written record. Whether the surface form is the ACT (write), the PRODUCT (a written document), the AGENT (one who writes), or the PATIENT (that which is written), every sampled occurrence turns on content being committed to written/inscribed form. Concrete anchors: 2:282 (fa-uktubūhu / wa-l-yaktub / an yaktuba) = the physical act of writing down a debt-contract; 6:7 (kitāban fī qirṭās) = a writing on parchment, the most literal material sense; 25:5 (iktatabahā fa-hiya tumlā ʿalayhi) = had them written/copied by dictation; 7:157 (maktūban ʿindahum fī l-tawrāh) = inscribed/found-written; 82:11 (kirāman kātibīn) and 21:94 (lahu kātibūn) = recorders, agents who inscribe deeds; 45:29 (kitābunā yanṭiqu ... nastansikh) = a record produced by recording. The noun kitāb throughout the sample is the resulting written object.",
+    "plain_explanation": "The root ك ت ب means to put something down in writing — to inscribe it so it is fixed and can be kept. The plain physical meaning is visible where a debt is \"written down\" (2:282), where a \"writing on parchment\" is mentioned (6:7), or where someone \"copied out\" old stories by dictation (25:5). From that same act come all the other uses: a kitāb (\"Book\"/scripture) is the thing-that-was-written; the \"recorders\" (kātibīn, 82:11) are those who write down deeds; a person's deeds sit \"in a record\" (57:22, 18:49, 45:29). So the one stable idea the root supplies everywhere is: content committed to a fixed written form. The specific flavors — holy scripture, a divine decree, angels' ledgers — do not come from the root itself; they come from who is writing, what is being written, and the surrounding sentence.",
+    "layer_separation_note": "ROOT supplies only \"inscribe / fixed written record.\" The richer meanings are layered on top: (1) FORM I active verb (2:282 uktubūhu, yaktub) = an agent performing the inscribing — the pragmatic \"write it down so the debt is documented\" comes from the imperative + commercial context, not the root. (2) FORM I passive kutiba (9:121 kutiba lahum) = \"is entered into the record\" → the \"credited/decreed\" nuance is contributed by the passive voice + divine subject, not by the root, which only gives \"is recorded.\" (3) FORM VIII iktataba (25:5) = have-written-for-oneself / copy out — the reflexive/causative benefit is the Form VIII contribution. (4) PRODUCT noun kitāb (faʿāl pattern) = the written object; whether it denotes scripture (2:2, 6:154, 42:17), a deed-ledger (18:49, 45:29), or a register of decree (57:22) is fixed by context words like anzala / ātaynā Mūsā / naskh, not by the root. (5) IDĀFA construction ahl al-kitāb (3:75, 3:113, 4:159) = \"People of the Book\" — the group identity is construction + context. (6) Participles kātib/kātibūn (2:282, 21:94, 82:11) = agent \"writer/recorder\"; maktūb (7:157) = patient \"the written.\" All reduce to the same root residue once form, construction, and context are subtracted: inscription into a fixed record.",
+    "result": "PREFERRED",
+    "result_strength": "STRONG",
+    "presence": {
+     "occurrences_checked": 30,
+     "occurrences_consistent": 30,
+     "inconsistent_refs": []
+    },
+    "strongest_counterexample": "9:121 (illā kutiba lahum) and 57:22 (illā fī kitābin min qabli an nabraʾahā): here the \"writing\" is not a physical human inscription but a pre-existing divine registration/decree, so \"inscribe with pen on a surface\" is metaphorical rather than literal. This is the weakest point for a strictly material reading. However, both still satisfy the smallest sense \"entered/fixed in a record\": 9:121 says the deed \"is recorded for them\" (to be recompensed), and 57:22 places every calamity \"in a record before We bring it about.\" Neither breaks the unity; they show the root abstracting from physical medium to \"fixed recorded content,\" while the decree/foreknowledge overtone is supplied by the divine agent and eschatological context, not by the root.",
+    "competing_hypothesis": "The strongest rival is that the root means \"to decree / prescribe / ordain\" (the obligation sense familiar from kutiba ʿalaykum constructions). This is rejected because it is derivative and under-covers the sample: it cannot account for 6:7 (writing on parchment), 2:282 (documenting a private debt), 25:5 (copying stories), 7:157 (found written in the Torah), or the participles 82:11 / 21:94 (recorders), where no notion of obligation is present. \"Inscribe/record\" generates the \"decree\" reading (passive voice + divine subject = \"it is written/fixed → it is ordained\") but not vice versa, so inscription is the more basic, wider-covering root sense. A second rival, root = \"book/scripture,\" is even narrower and fails on all verbal and participial occurrences and on the concrete-medium noun (6:7); \"scripture\" is a context specialization of \"written document,\" not the root itself.",
+    "distinctiveness_note": "The candidate is non-generic and falsifiable: it is narrower than \"communicate,\" \"know,\" or \"reveal,\" and it is medium-specific (written/inscribed) rather than oral. It separates cleanly from neighboring notions in the same verses: qraʾa/tlw \"recite\" (35:29 yatlūna, 62:2 yatlū — reciting is oral, distinct from the written kitāb recited), ʿlm \"know/teach\" (62:2 yuʿallimuhum, 4:113 ʿallamaka — teaching layered onto, not identical with, the written kitāb), and anzala \"send down\" (2:213, 42:17 — the sending is context, the kitāb is the written thing sent). It also contrasts with ktm \"conceal\" (surfacing as yaktumūn in 2:159's text but a different root). One test falsifies it: find a ك ت ب occurrence whose sense requires NO notion of written/inscribed/recorded content — none appears in this sample.",
+    "unresolved_cases": []
+   },
+   "adversarial_verification": {
+    "root_buckwalter": "ktb",
+    "verdict": "PARTIALLY_SUPPORTED",
+    "failing_occurrences": [
+     "62:2",
+     "3:113",
+     "35:29",
+     "57:22"
+    ],
+    "distinctiveness_ok": true,
+    "falsifiable": true,
+    "notes": "The proposed residue \"content committed to a fixed inscribed/written mark\" is distinctive (writtenness is a specific, non-generic feature) and falsifiable. It is demonstrably present in the concrete occurrences: 2:282 (writing a debt-contract), 6:7 (kitab fi qirtas/parchment), 25:5 (iktatabaha... tumla, copied by dictation), 7:157 (maktuban fi l-tawrah), 82:11/21:94 (katibin/katibun recorders), 45:29 (nastansikh), 18:49 (ledger of deeds). But the STRONG unity claim (\"every sampled occurrence turns on content committed to written/inscribed form; 30/30\") is refuted. In four occurrences writtenness is NOT demonstrable in-occurrence and only a weaker sense holds: 62:2 (kitab is orally TAUGHT to the ummiyyin/UNLETTERED — the occurrence actively countervails inscription); 3:113 and 35:29 (yatluna — the operative act is RECITATION, oral, not inscription); 57:22 (kitab of calamities before creation = PREORDAINMENT/decree, a settled determination, with writtenness only metaphorically importable). After subtracting form/construction/context, the smallest sense actually shared across ALL sampled occurrences is broader than \"written/inscribed\" — something like \"a fixed/settled determination or record of content\" — with \"written/inscribed\" over-specified for the recited-scripture and decree uses. 9:121 (kutiba lahum = credited/recorded) is borderline and left standing for the proposer. Hence the inscription residue is well-supported and distinctive for the act/product/agent occurrences but does not hold as a demonstrable universal; PREFERRED-at-STRONG is not warranted on this sample."
+   },
+   "claim_scope": "REPRESENTATIVE",
+   "research_state": "PREFERRED",
+   "canonical_state": "NOT_CANONICAL",
+   "acceptance": "BLOCKED",
+   "acceptance_blockers": [
+    "Representative sample, not full-corpus universal coverage (root semantic unity requires ALL occurrences).",
+    "Adversarial verification: PARTIALLY_SUPPORTED with 4 failing occurrence(s).",
+    "No independent human verification available (canonicalization requires it)."
+   ]
+  },
+  {
+   "root_buckwalter": "slm",
+   "root_arabic": "س ل م",
+   "descriptive": {
+    "total_confirmed_occurrences": 140,
+    "distinct_forms": 11,
+    "form_inventory": [
+     {
+      "form": "ADJ",
+      "count": 1
+     },
+     {
+      "form": "ADJ(II)",
+      "count": 3
+     },
+     {
+      "form": "ADJ(IV)",
+      "count": 3
+     },
+     {
+      "form": "N",
+      "count": 53
+     },
+     {
+      "form": "N(II)",
+      "count": 3
+     },
+     {
+      "form": "N(IV)",
+      "count": 27
+     },
+     {
+      "form": "N(X)",
+      "count": 1
+     },
+     {
+      "form": "PN",
+      "count": 1
+     },
+     {
+      "form": "PN(IV)",
+      "count": 20
+     },
+     {
+      "form": "V(II)",
+      "count": 6
+     },
+     {
+      "form": "V(IV)",
+      "count": 22
+     }
+    ],
+    "source": "QAC_MORPHOLOGY",
+    "extraction_version": "qac-0.4-import-v1"
+   },
+   "internal_discovery": {
+    "candidate_root_contribution": "The smallest shared sense is INTACTNESS / SOUNDNESS — the state of being whole and free from defect, harm, breach, or deficiency, and (transitively) the transfer of something in that whole/intact condition. This is the layer that remains after subtracting form and context: safety/peace is intactness predicated of a person or relation; \"delivery in full\" is transfer while intact; \"submission\" is giving oneself over whole. Concretely: 2:71 a cow \"musallamah lā shiyata fīhā\" = sound, without blemish (intactness of a body); 15:46 \"udkhulūhā bi-salāmin āminīn\" pairs salām with security (intactness = unharmed state); 6:54/7:46/19:47/37:79/37:130 \"salāmun ʿalā X\" = wholeness/safety wished upon someone; 5:16 \"subul al-salām\" = paths of safety/soundness; 2:208 \"al-silm kāffah\" = enter into the intact/peaceable state wholly. The distinctive core is \"unbrokenness/freedom-from-defect,\" not the generic \"good\" or \"peace.\"",
+    "plain_explanation": "Across the sample the constant is the idea of something being whole and unmarred. When the root describes a being or relation it reads as safety/peace/well-being (the greetings salāmun ʿalaykum in 6:54, 7:46, 19:47, 37:79, 37:130, 51:25, 56:26, 25:63; the safe entry in 15:46; the paths of safety in 5:16). When Form II makes it transitive it reads as rendering-sound or handing-over-intact (2:71 the flawless cow; 4:92 blood-money \"musallamah ilā ahlihi\" paid over in full; 4:65 yielding fully; 33:56 saluting = conferring safety). When Form IV makes it a self-directed act it reads as giving oneself over whole to God = submitting (2:131 \"aslamtu li-rabb\", 3:20/31:22 \"aslama wajhahu lillāh\", 39:54 \"aslimū lahu\", 49:14 \"aslamnā\"), from which the participle muslim / noun islām follow (3:80, 9:74, 12:101, 21:108, 27:42, 43:69, 10:90, 27:91, 68:35). All of these are recoverable from one nucleus: whole / intact / free of breach.",
+    "layer_separation_note": "ROOT contributes: intactness/soundness/freedom-from-defect. FORM contributes the rest. Form II (sallama, musallamah — 2:71, 4:92, 4:65, 33:56) adds factitive/transitive causation plus, with ilā, a recipient: \"render sound\" or \"hand over intact/in full.\" Form IV (aslama — 2:131, 3:20, 31:22, 39:54, 49:14) adds the reflexive directional act of putting oneself/one's face into a state or under an authority: giving-oneself-over-whole = submitting; its participle PN(IV)/N(IV) muslim lexicalizes the agent of that act. Bare N salām/silm/salam (the peace/safety/greeting cluster) is the plain state-noun. CONSTRUCTION carries much apparent meaning: \"salāmun ʿalā X\" is a benediction frame (wishing wholeness upon), \"aslama wajhahu lillāh\" supplies the God-directed target, \"kāffah\"/\"taslīmā\" supply the totality intensifier. CONTEXT (Firʿawn drowning 10:90, the Queen of Sheba 27:42, the Bedouin 49:14) supplies the religious-conversion reading; the root itself only supplies \"whole/intact.\"",
+    "result": "PREFERRED",
+    "result_strength": "MODERATE",
+    "presence": {
+     "occurrences_checked": 30,
+     "occurrences_consistent": 30,
+     "inconsistent_refs": []
+    },
+    "strongest_counterexample": "4:92 \"fa-diyatun musallamatun ilā ahlihi\" (blood-money handed over to the family). Here the salient contextual meaning is DELIVERY/HANDING-OVER, which does not obviously entail intactness — one could argue the root here contributes bare \"conveyance,\" making Form II + ilā the whole story and leaving \"soundness\" absent. The bridge is that diya is an obligation discharged IN FULL/COMPLETE, so \"transfer while whole/entire\" is recoverable, but the context does not force the intactness component; it is inferred. A secondary strain is 33:56 \"sallimū taslīmā\" (salute the Prophet), where the act is a greeting/salutation and the intactness reading survives only via the salām-benediction sense (conferring safety) rather than being independently visible.",
+    "competing_hypothesis": "Two rival roots were tested. (A) Root = \"peace/safety.\" Fails 2:71 (a cow free of blemish is soundness, not peace) and 4:92 (delivery of blood-money is not peace); peace is therefore intactness applied to persons/relations, i.e. a narrower contextual specialization, not the root floor. (B) Root = \"submission/surrender.\" Fails the entire salām greeting cluster (37:79 \"peace upon Noah,\" 6:54, 19:47 — no surrender present) and 2:71 (no submission); surrender is demonstrably the contribution of Form IV's self-directed giving-over, not the root, since it appears only in aslama/muslim occurrences and never in bare-N or Form-II-passive ones. \"Intactness/wholeness\" is smaller than both and subsumes both, so it is preferred.",
+    "distinctiveness_note": "\"Intactness/freedom-from-defect-or-breach\" is falsifiable and non-generic: it predicts (correctly) that no sampled occurrence carries a sense of partiality, damage, or brokenness, and that totality intensifiers cluster with it (kāffah 2:208, taslīmā 4:65 & 33:56, aslama wajhahu wholly). It is distinct from generic positives like \"good/blessed\": salām is specifically unharmed-wholeness, which is why it collocates with āminīn (secure, 15:46) rather than with, e.g., abundance or reward. It would be refuted by an occurrence where slm denotes a defective, partial, or breached state — none appears in the sample.",
+    "unresolved_cases": [
+     "4:92 — 'diyatun musallamatun ilā ahlihi': the intactness component is inferential (payment-in-full) rather than contextually forced; the surface sense is plain delivery/handing-over.",
+     "16:87 — 'alqaw ilā llāhi... al-salam': reads as offering surrender/capitulation; unifiable as 'giving over whole,' but the specific value is close to Form-IV submission carried by a bare noun, blurring the root/form boundary."
+    ]
+   },
+   "adversarial_verification": {
+    "root_buckwalter": "slm",
+    "verdict": "PARTIALLY_SUPPORTED",
+    "failing_occurrences": [
+     "4:92",
+     "16:87",
+     "49:14",
+     "4:65",
+     "39:54",
+     "31:22",
+     "33:56"
+    ],
+    "distinctiveness_ok": true,
+    "falsifiable": true,
+    "notes": "Candidate \"intactness/soundness/wholeness\" is distinctive and falsifiable, and holds cleanly for one cluster: 2:71 (sound cow, no blemish) and the salam benediction/greeting/safety cluster (5:16, 6:54, 7:46, 15:46, 19:47, 25:63, 37:79, 37:130, 51:25, 56:26). But its claim of presence in EVERY occurrence fails. Strongest refutation: 4:92 diyah musallamah = blood-money DELIVERED/PAID to family — the demonstrable sense is conveyance to a recipient, not unbrokenness/freedom-from-defect; and the SAME Form-II adjective musallamah means \"sound/unblemished\" in 2:71 vs \"handed-over\" in 4:92, so the form does not stably yield intactness (active within-form contradiction). 16:87 alqaw al-salam = capitulation/surrender; intactness only via the researcher's own admitted inferential bridge. 49:14 aslamna is explicitly contrasted with belief and marked as outward compliance, with inner completeness denied by context. 4:65 taslim = wholehearted acceptance/yielding to the verdict. 39:54/3:20/31:22 aslama wajhahu = handing oneself/one's face over = surrender/devotion; after subtracting Form-IV reflexive, residue is \"over to God,\" not \"whole.\" 33:56 sallimu taslima = benedictory salutation on the Prophet. Diagnosis: the dominant sense-category in this sample is the aslama/muslim submission cluster plus the transfer cases, whose demonstrable residue after subtracting form is surrender/handing-over/compliance, with no distinctive intactness component shown. Presence is therefore not 30/30; a lower-commitment gloss such as \"give/hand over into a settled state\" fits the whole sample better than the stronger \"unbrokenness/freedom-from-defect,\" which is contradicted at 4:92. Verdict PARTIALLY_SUPPORTED rather than REFUTED because the nucleus is genuinely present (not merely compatible) across the salam/soundness subset."
+   },
+   "claim_scope": "REPRESENTATIVE",
+   "research_state": "PREFERRED",
+   "canonical_state": "NOT_CANONICAL",
+   "acceptance": "BLOCKED",
+   "acceptance_blockers": [
+    "Representative sample, not full-corpus universal coverage (root semantic unity requires ALL occurrences).",
+    "Adversarial verification: PARTIALLY_SUPPORTED with 7 failing occurrence(s).",
+    "No independent human verification available (canonicalization requires it)."
+   ]
+  },
+  {
+   "root_buckwalter": "Hkm",
+   "root_arabic": "ح ك م",
+   "descriptive": {
+    "total_confirmed_occurrences": 210,
+    "distinct_forms": 8,
+    "form_inventory": [
+     {
+      "form": "ADJ",
+      "count": 84
+     },
+     {
+      "form": "ADJ(IV)",
+      "count": 1
+     },
+     {
+      "form": "N",
+      "count": 74
+     },
+     {
+      "form": "N(IV)",
+      "count": 1
+     },
+     {
+      "form": "V",
+      "count": 45
+     },
+     {
+      "form": "V(II)",
+      "count": 2
+     },
+     {
+      "form": "V(IV)",
+      "count": 2
+     },
+     {
+      "form": "V(VI)",
+      "count": 1
+     }
+    ],
+    "source": "QAC_MORPHOLOGY",
+    "extraction_version": "qac-0.4-import-v1"
+   },
+   "internal_discovery": {
+    "candidate_root_contribution": "The root contributes the notion of issuing a firm, decisive determination that settles a matter and holds fast (is not to be overturned). The smallest shared kernel, after subtracting form/construction, is \"decisive, binding settling / firm determination\" — not merely knowing something, and not the power to enforce, but the rendering of a determination that is sound and fixed.",
+    "plain_explanation": "Every occurrence in the sample turns on producing or possessing a settled, unassailable determination. In the verbal cluster the act is deciding authoritatively between disputants (2:213, 3:55, 4:105, 5:49, 24:48, 38:22, 40:48; and without \"between\" in 6:136 \"سَآءَ مَا يَحْكُمُونَ\", 68:36 \"كَيْفَ تَحْكُمُونَ\"). The Hukm noun names that determination itself as a fixed prerogative or decree: \"إِنِ ٱلْحُكْمُ إِلَّا لِلَّهِ\" (6:57, 12:67), \"حُكْمُ ٱللَّهِ\" in the Torah (5:43), and decisively \"لَا مُعَقِّبَ لِحُكْمِهِۦ\" — none can reverse His determination (13:41). The Form IV / muHkam cluster foregrounds the \"holds fast\" aspect on the object: verses \"أُحْكِمَتْ\" made firm/precise (11:1), a \"سُورَةٌ مُّحْكَمَةٌ\" decisive surah (47:20). The Hikmah noun is the internalized faculty of such sound, conclusive determination — given as a great good (2:269), revealed (17:39), recited (33:34), and \"بَٰلِغَةٌ\" far-reaching/conclusive (54:5). The adjective Hakim (\"the Wise\") predicates that decisive soundness of the agent (2:32, 4:56, 27:9, 29:42, etc.).",
+    "layer_separation_note": "ROOT = firm/decisive determination that holds. FORM/CONSTRUCTION add the rest: Form I verb + \"بَيْنَ\" + disputing parties yields \"adjudicate between\" — the disputants and \"between\" are construction, not root (2:213, 24:48, 38:22). The restriction \"إِلَّا لِلَّهِ\" limiting the Hukm to God (6:57, 12:67) and the adjunct \"بِٱلْحَقِّ\" (21:112, 38:22) are CONTEXT, not root. The fi'lah pattern (Hikmah) nominalizes the kernel into a possessed faculty/quality → \"wisdom\" (2:269, 54:5). The fa'il pattern (Hakim) casts it as an agent-attribute → \"the Wise\" (27:9, 29:42). Form IV factitive (aHkama/muHkam) applies it causatively to a text made firm/unassailable (11:1, 47:20). Thus \"judge,\" \"decree,\" \"wisdom,\" and \"made firm\" are one kernel refracted through different morphology, not four unrelated senses.",
+    "result": "PREFERRED",
+    "result_strength": "MODERATE",
+    "presence": {
+     "occurrences_checked": 30,
+     "occurrences_consistent": 30,
+     "inconsistent_refs": []
+    },
+    "strongest_counterexample": "The Hikmah (\"wisdom\") occurrences (2:269 \"يُؤْتِى ٱلْحِكْمَةَ مَن يَشَآءُ\", 17:39, 33:34) are the weakest attachment: in-context they present wisdom as a bestowed/revealed good, and the \"binding decisive determination\" reading is reached by inference (wisdom = the faculty producing sound, conclusive determinations) rather than shown directly as an act of settling. 54:5 \"حِكْمَةٌ بَٰلِغَةٌ\" partly rescues this by marking the wisdom as conclusive/far-reaching, but 2:269 alone would license a plainer \"sound discernment\" gloss without the \"firmness/unassailability\" component. This is where the kernel is carried more by inference than by explicit contextual demonstration.",
+    "competing_hypothesis": "The leading competitor is that the root means simply \"to judge / adjudicate,\" with Hikmah (\"wisdom\") and muHkam (\"firm\") treated as separate or homonymous developments. This is weaker because it fails to unify the sample: it leaves 8+ nominal Hikmah/muHkam occurrences unexplained and misses the explicit \"unreversible\" framing (13:41 \"لَا مُعَقِّبَ\") and \"made firm\" morphology (11:1, 47:20) that show the shared kernel is decisiveness-that-holds, of which adjudication is one construction-bound application. A second competitor — root = \"knowledge/soundness\" — is directly falsified below.",
+    "distinctiveness_note": "The candidate kernel is distinctive, not generic, and the sample itself discriminates it. Hakim is repeatedly co-listed with and thus contrasted against 'Alim \"Knowing\" (2:32 \"ٱلْعَلِيمُ ٱلْحَكِيمُ\", 4:11, 4:170, 9:97, 43:84, 60:10), 'Aziz \"Mighty\" (4:56, 8:67, 27:9, 29:42), and Khabir \"Aware\" (11:1). These pairings show the audience treats Hkm as a SEPARATE dimension from knowing and from power — so the root's contribution is neither \"knowledge\" nor \"might\" but the decisive-soundness / firm-determination axis. That falsifiable contrast is the strongest internal evidence for distinctiveness.",
+    "unresolved_cases": [
+     "2:269 — Hikmah as a bestowed good; 'firmness/unassailability' component of the kernel is inferential here, not contextually explicit",
+     "33:34 — Hikmah recited alongside God's signs; contextually reads as 'wisdom/sound teaching' with the decisive-settling nuance carried by the pattern rather than the verse",
+     "17:39 — revealed Hikmah; same attenuation of the 'binding determination' element"
+    ]
+   },
+   "adversarial_verification": {
+    "root_buckwalter": "Hkm",
+    "verdict": "PARTIALLY_SUPPORTED",
+    "failing_occurrences": [
+     "2:269",
+     "17:39",
+     "33:34",
+     "54:5"
+    ],
+    "distinctiveness_ok": true,
+    "falsifiable": true,
+    "notes": "The core adjudicative residue — \"render a determination that settles a matter between parties / an authoritative decision\" — IS demonstrably shared across the verbal and Hukm-nominal occurrences (2:213, 3:55, 4:105, 5:49, 24:48, 38:22, 40:48, 6:57, 12:67, 13:41, 60:10) and is distinctive (separated from 'ilm via 'Alim/Hakim pairings, from 'izz via 'Aziz/Hakim) and falsifiable. But the proposed kernel over-reaches on two counts.\n\n(1) LAYER MIS-ATTRIBUTION of \"holds fast / cannot be overturned.\" The proposal makes this a ROOT element, but it is demonstrable in only three occurrences and each supplies it from a NON-root layer: 11:1 (اُحكِمَت) and 47:20 (محكمة) get \"made firm\" from the Form IV factitive / passive participle; 13:41 (لا معقّب لحكمه) gets \"unoverturnable\" from the divine-agent context + the explicit negation, not from Hkm. In the plain human-judging occurrences (4:105 لتحكم بين الناس, 24:48 ليحكم بينهم, 38:22 David: فاحكم بيننا بالحق) a determination is rendered but the \"holds fast / not to be overturned\" component is absent. So the leaner \"adjudicate/settle\" gloss the researcher concedes \"cannot be fully excluded\" is in fact the correct root-level kernel; the firmness belongs to form/context.\n\n(2) HIKMAH CLUSTER RESISTS, not merely attenuates. In 2:269 Hikmah is a valued endowment given (خيرا كثيرا); 17:39 is revealed wise moral instruction; 33:34 is paired with recited ayat; 54:5 (حكمة بالغة) is consummate wisdom. In each the natural in-verse sense (discernment / valued wise instruction) is more available than \"decisive binding settling,\" which is not demonstrated in-verse. These should be logged as inconsistent/unresolved in-verse, not as attenuated PREFERRED cases.\n\nNet: the smallest demonstrable root contribution is \"authoritative adjudication / settling a matter by decision\" — NOT the fuller \"firm determination that holds fast.\" Verdict downgraded from the researcher's PREFERRED/MODERATE to PARTIALLY_SUPPORTED."
+   },
+   "claim_scope": "REPRESENTATIVE",
+   "research_state": "PREFERRED",
+   "canonical_state": "NOT_CANONICAL",
+   "acceptance": "BLOCKED",
+   "acceptance_blockers": [
+    "Representative sample, not full-corpus universal coverage (root semantic unity requires ALL occurrences).",
+    "Adversarial verification: PARTIALLY_SUPPORTED with 4 failing occurrence(s).",
+    "No independent human verification available (canonicalization requires it)."
+   ]
+  },
+  {
+   "root_buckwalter": "Elm",
+   "root_arabic": "ع ل م",
+   "descriptive": {
+    "total_confirmed_occurrences": 854,
+    "distinct_forms": 6,
+    "form_inventory": [
+     {
+      "form": "ADJ",
+      "count": 123
+     },
+     {
+      "form": "N",
+      "count": 305
+     },
+     {
+      "form": "N(II)",
+      "count": 1
+     },
+     {
+      "form": "V",
+      "count": 382
+     },
+     {
+      "form": "V(II)",
+      "count": 41
+     },
+     {
+      "form": "V(V)",
+      "count": 2
+     }
+    ],
+    "source": "QAC_MORPHOLOGY",
+    "extraction_version": "qac-0.4-import-v1"
+   },
+   "internal_discovery": {
+    "candidate_root_contribution": "Cognitive apprehension: grasping/holding a thing as it actually is — \"to know / knowledge.\" This is the smallest sense left after subtracting form, construction, and context, and it is positively demonstrated across the verbal, adjectival, and abstract-noun occurrences.",
+    "plain_explanation": "In the overwhelming majority of the sampled occurrences the root carries one stable contribution: the state or act of KNOWING — cognitively grasping something as it truly is. The plain G-stem verb means simply \"to know\": God \"knows your secret and your open speech\" (6:3), \"know that God is with the God-fearing\" (2:194), \"We indeed knew the foremost of you\" (15:24), \"He knew what was in their hearts\" (48:18), \"tomorrow they will know who is the insolent liar\" (54:26). The abstract noun عِلْم names the content/state of that knowing: reviling \"without knowledge\" (6:108), \"our Lord encompasses everything in knowledge\" (7:89), \"you did not encompass them in knowledge\" (27:84). The adjective عَلِيم / أَعْلَم names the knower or a superior degree of knowing: \"God is All-Knowing of the wrongdoers\" (62:7), \"above every possessor of knowledge is one more knowing\" (12:76), \"God knows better what is in their souls\" (11:31), \"we know better who is in it\" (29:32). Across all these, the constant is cognitive apprehension of a thing's reality.\n\nThe FORMS layer, not the root, supplies the transformations: Form II (عَلَّمَ) is causative — \"cause-to-know\" = TEACH: \"you teach them (the hunting animals) from what God taught you\" (5:4), \"that you teach me of what you were taught\" (18:66), \"they teach people sorcery\" (2:102). Form V (تَعَلَّمَ) is the reflexive of the causative — \"get-oneself-to-know\" = LEARN: \"they learn from the two what causes division\" (2:102). The elative pattern (أَعْلَم) adds comparative degree, and the fa'īl pattern (عَلِيم) adds intensity/permanence. The CONSTRUCTION layer supplies the object known (الغيب \"the unseen\" 11:31; سرّكم \"your secret\" 6:3; ما في قلوبهم \"what is in the hearts\" 48:18) and the taught party. None of these — teaching, learning, intensity, the specific object — is the root; the root is only the bare cognitive \"know.\"\n\nOne coherent sub-group resists this core: the derivative عَالَمِين (\"worlds / all creatures\"), seven times in the sample — رَبِّ ٱلْعَٰلَمِينَ \"Lord of all worlds\" (1:2, 26:109, 32:2, 39:75, 43:46), نِسَآءِ ٱلْعَٰلَمِينَ \"the women of all peoples\" (3:42), ءَايَةً لِّلْعَٰلَمِينَ \"a sign for all beings\" (21:91). In these, the demonstrable sense is the totality of created/existing beings, and no cognitive \"knowing\" content is internally present. I record these as a separate lexicalized derivation rather than forcing them into the knowing core.",
+    "layer_separation_note": "ROOT ع-ل-م = cognitive knowing/knowledge (bare apprehension of a thing as it is). FORM I (عَلِمَ/يَعْلَمُ, G-stem): plain \"to know\" — 6:3, 2:194, 15:24, 48:18, 16:95, 24:25, 36:26, 54:26, 71:4, 8:60, 9:101. FORM II (عَلَّمَ, causative/factitive): adds \"cause X to know\" = teach — 5:4, 18:66, 2:102 (يُعَلِّمُونَ). FORM V (تَعَلَّمَ, reflexive-causative): adds \"get oneself to know\" = learn — 2:102 (يَتَعَلَّمُونَ). Elative أَعْلَم adds degree (\"more/most knowing\") — 11:31, 29:32, 3:167. Intensive adjective عَلِيم adds permanence/intensity (\"All-Knowing\") — 2:247, 12:76, 62:7. Abstract noun عِلْم names the state/content (\"knowledge\") — 6:108, 7:89, 27:84, 2:247. CONSTRUCTION supplies the object of knowledge and the taught participant. The عَالَمِين derivative (\"worlds/creatures\") diverges from the knowing core and is treated as a separate lexicalized layer, not attributable to the demonstrable root sense here.",
+    "result": "PREFERRED",
+    "result_strength": "MODERATE",
+    "presence": {
+     "occurrences_checked": 30,
+     "occurrences_consistent": 23,
+     "inconsistent_refs": [
+      "1:2",
+      "3:42",
+      "21:91",
+      "26:109",
+      "32:2",
+      "39:75",
+      "43:46"
+     ]
+    },
+    "strongest_counterexample": "1:2 (رَبِّ ٱلْعَٰلَمِينَ) — \"Lord of all worlds/beings.\" The demonstrable sense of عَالَمِين here is the totality of created beings; no cognitive \"knowing\" content is internally present in the occurrence, so it cannot be reduced to the knowing core without importing external etymology. The same holds for 3:42, 21:91, 26:109, 32:2, 39:75, 43:46.",
+    "competing_hypothesis": "That the root's stable contribution is not \"knowing\" but \"a mark/distinguishing sign\" (علامة), from which (a) knowing = discerning-a-thing-by-its-marks and (b) عالَم = the marked-out / sign-bearing realm both derive — a single core unifying all 30 occurrences including عالمين. This is rejected on the evidence rule: nothing WITHIN the sampled occurrences demonstrates \"mark/sign.\" The 23 knowledge occurrences are about cognition (secrets, hearts, the unseen, teaching), not marking; the 7 عالمين occurrences denote \"all beings,\" not \"marks.\" The mark/sign unification is available only from etymology/memory, which is barred as evidence.",
+    "distinctiveness_note": "\"Cognitive apprehension of a thing as it is\" is distinctive, not generic: it is narrower than perceive/sense (the objects are non-sensory — hearts 48:18, the unseen 11:31, hidden hypocrites 9:101), and narrower than think/opine/believe (the occurrences assert grasping reality: \"God knows better,\" \"we indeed knew,\" certain future knowing 54:26). It is falsifiable: it would fail if occurrences showed mere sensory perception, conjecture, or belief without claim of apprehending the actual state — the sample instead consistently upholds it. Form II/V confirm it derivationally (teach = cause-to-know; learn = come-to-know both presuppose the same core).",
+    "unresolved_cases": [
+     "1:2 (رَبِّ ٱلْعَٰلَمِينَ) — 'worlds/all beings'; knowing sense not internally demonstrable",
+     "3:42 (نِسَآءِ ٱلْعَٰلَمِينَ) — 'the women of all peoples'",
+     "21:91 (لِّلْعَٰلَمِينَ) — 'a sign for all beings'",
+     "26:109 (رَبِّ ٱلْعَٰلَمِينَ)",
+     "32:2 (رَبِّ ٱلْعَٰلَمِينَ)",
+     "39:75 (رَبِّ ٱلْعَٰلَمِينَ)",
+     "43:46 (رَبِّ ٱلْعَٰلَمِينَ) — all عَالَمِين forms denote the totality of created beings, a lexicalized derivation that resists the cognitive-knowing core within the occurrence itself"
+    ]
+   },
+   "adversarial_verification": {
+    "root_buckwalter": "Elm",
+    "verdict": "PARTIALLY_SUPPORTED",
+    "failing_occurrences": [
+     "1:2",
+     "3:42",
+     "21:91",
+     "26:109",
+     "32:2",
+     "39:75",
+     "43:46"
+    ],
+    "distinctiveness_ok": true,
+    "falsifiable": true,
+    "notes": "Proposed root contribution = \"cognitive apprehension / to know / knowledge.\" Adversarial check of all 30 sampled occurrences.\n\nDEMONSTRATED in 23/30: verbal know (6:3 yaʿlamu, 2:194 waʿlamū, 3:167, 6:108 ʿilm, 7:89 ʿilman, 8:60, 9:101, 11:31, 15:24, 16:95, 24:25, 27:84, 29:32, 36:26, 48:18, 54:26, 71:4), Form II teach = cause-to-know (2:102, 5:4, 18:66), Form V learn = reflexive-know (2:102), adjectival ʿalīm (2:247, 12:76, 62:7), abstract ʿilm (2:247, 6:108, 7:89, 12:76, 27:84). Form variation cleanly decomposes as layered additions atop the know core.\n\nFAILS in 7/30 — the ʿālamīn (\"worlds / all created beings\") noun cluster: 1:2, 3:42, 21:91, 26:109, 32:2, 39:75, 43:46. In every one it denotes worlds/creatures; the surrounding verse text supplies no knowing sense, and neither form (plain N) nor construction (genitive rabb/nisāʾ/āyah) yields \"know.\" Subtracting form/construction/context leaves worlds, not knowing. Linking it to the know core requires external etymology, which the evidence rule bars.\n\nDISTINCTIVENESS: PASS — \"to know / grasp a thing as it is\" is a specific cognitive sense, not a generic filler; it discriminates (the ʿālamīn cases visibly lack it).\nFALSIFIABILITY: PASS — the claim is testable per occurrence, and the ʿālamīn cluster is exactly what falsifies universal presence.\n\nVERDICT rationale: The know core is real, distinctive, and dominant, but a coherent ~23% sub-group demonstrably resists it, so root semantic unity across the sample is not achieved. Not full SUPPORTED (not present in every occurrence) and not REFUTED (genuinely present and distinctive in the large majority). The adversarial probe corroborates the researcher's own concession; ʿālamīn should be recorded as an inconsistent/lexicalized cluster, not forced into the root contribution. This matches the researcher's MODERATE strength but argues against asserting the sense as the UNIFIED root contribution for the whole sample."
+   },
+   "claim_scope": "REPRESENTATIVE",
+   "research_state": "PREFERRED",
+   "canonical_state": "NOT_CANONICAL",
+   "acceptance": "BLOCKED",
+   "acceptance_blockers": [
+    "Representative sample, not full-corpus universal coverage (root semantic unity requires ALL occurrences).",
+    "Adversarial verification: PARTIALLY_SUPPORTED with 7 failing occurrence(s).",
+    "No independent human verification available (canonicalization requires it)."
+   ]
+  },
+  {
+   "root_buckwalter": "Amn",
+   "root_arabic": "ا م ن",
+   "descriptive": {
+    "total_confirmed_occurrences": 879,
+    "distinct_forms": 7,
+    "form_inventory": [
+     {
+      "form": "ADJ",
+      "count": 16
+     },
+     {
+      "form": "ADJ(IV)",
+      "count": 15
+     },
+     {
+      "form": "N",
+      "count": 30
+     },
+     {
+      "form": "N(IV)",
+      "count": 260
+     },
+     {
+      "form": "V",
+      "count": 20
+     },
+     {
+      "form": "V(IV)",
+      "count": 537
+     },
+     {
+      "form": "V(VIII)",
+      "count": 1
+     }
+    ],
+    "source": "QAC_MORPHOLOGY",
+    "extraction_version": "qac-0.4-import-v1"
+   },
+   "internal_discovery": {
+    "candidate_root_contribution": "Security / freedom from fear grounded in reliable trust — a state or relation in which someone or something is safe, and correlatively the trust that secures it.",
+    "plain_explanation": "Across the sample the root's smallest shared contribution is \"security/safety through trust.\" The clearest, non-religious occurrences isolate it: at 8:11 amanah is drowsiness given \"as security (أَمَنَةً) from Him\" on the battlefield — pure state of being safe from fear; at 6:82 those whose faith is unmixed with wrong have \"the security\" (ٱلْأَمْنُ); at 12:64 Jacob says \"amintukum ʿalā akhīhi\" — \"I TRUSTED you regarding his brother\" — the relational side, entrusting someone in safety. None of these three carry any religious-assent content, so the root minimum cannot be \"faith\"; it is security/trust.\n\nThe heavy mass of the sample (2:3, 5:69, 7:87, 9:23, 16:102, 27:86, 36:25, 46:31, 69:33, etc.) is Form IV (āmana). Form IV directs/gives that trust toward an object, typically with the bi- construction (yu'minu bi-llāh / bi-l-ghayb / bi-l-ākhira) = \"place one's secure trust in, entrust oneself to\" → what we gloss as \"believe in.\" So \"belief/faith\" is not the root; it is the root's security-trust plus Form IV's directive/factitive sense plus the bi-object construction. The N(IV) īmān (6:82 word 5, \"īmānahum\") is the nominalized act of that entrusting = faith; the ADJ/N(IV) mu'min/mu'mināt (4:25, 4:92, 2:97, 3:28) = \"the trusting/faithful (secured) one.\" Even 29:67 reinforces the root in the same verse as a Form IV verb: \"ḥaraman āminan\" = a SECURE sanctuary.",
+    "layer_separation_note": "ROOT (Amn) = security/safety-through-trust, freedom from fear. FORM I: intransitive amina = to be safe / to trust (12:64 amintukum; noun amn 6:82; amanah 8:11). FORM IV (āmana) adds a directive/factitive orientation of that trust toward an object → \"give one's trust to.\" CONSTRUCTION bi- (2:3, 23:74, 27:86, 69:33) targets the object of trust (God, the unseen, the Hereafter), producing the \"believe in\" reading. N(IV) īmān = the reified act/state of entrusting (faith); ADJ/N(IV) mu'min = attributive \"trusting/faithful/secured.\" The CONTEXT (revelation, God, Hereafter) supplies the specifically religious color; subtract it and the mundane security/trust residue remains (12:64, 8:11).",
+    "result": "PREFERRED",
+    "result_strength": "STRONG",
+    "presence": {
+     "occurrences_checked": 30,
+     "occurrences_consistent": 30,
+     "inconsistent_refs": []
+    },
+    "strongest_counterexample": "23:74 \"wa inna alladhīna lā yu'minūna bi-l-ākhirati\" (\"those who do not BELIEVE in the Hereafter\") — here the security/safety nuance is faintest and the word reads as bare cognitive assent. It resists a naive \"safety\" gloss, but is recovered once Form IV + bi- is credited: \"do not give their secure trust / entrust their credence to the Hereafter.\" The residue after subtracting the construction is still trust-directed-at-an-object, not a new root sense.",
+    "competing_hypothesis": "The dominant competitor is that the root itself means \"belief/faith/religious assent,\" since ~24 of 30 sampled tokens are Form IV faith usages. This is rejected because three sampled occurrences carry the root with zero belief content: 12:64 (amintukum ʿalā akhīhi = entrust a child's safekeeping), 8:11 (amanah = battlefield security/calm), 6:82 (al-amn = security). \"Faith\" over-reads the form/construction into the root. A second competitor — root = \"trust\" alone — is narrower than \"security\": 8:11's amanah is a state of safety/calm rather than trusting an agent; \"security (of which trust is the relational face)\" subsumes both.",
+    "distinctiveness_note": "The candidate is distinctive and falsifiable: it is not generic \"good,\" \"religion,\" or \"assent.\" It predicts that non-religious tokens will still show safety/entrustment (confirmed 12:64, 8:11, 6:82) and that co-occurring derivatives will encode safety even beside faith verbs (confirmed 29:67 \"ḥaraman āminan\" = secure sanctuary). It would be falsified by an occurrence of the root meaning fear/danger or by a bare Form-I token meaning \"believe\" with no safety/trust residue; none appears in the sample.",
+    "unresolved_cases": []
+   },
+   "adversarial_verification": {
+    "root_buckwalter": "Amn",
+    "verdict": "PARTIALLY_SUPPORTED",
+    "failing_occurrences": [
+     "2:3",
+     "2:97",
+     "2:221",
+     "3:28",
+     "3:122",
+     "4:25",
+     "4:92",
+     "4:171",
+     "5:69",
+     "7:87",
+     "9:23",
+     "9:113",
+     "10:98",
+     "16:102",
+     "19:96",
+     "23:74",
+     "26:51",
+     "27:86",
+     "33:47",
+     "36:25",
+     "41:8",
+     "46:31",
+     "49:6",
+     "57:27",
+     "61:10",
+     "69:33"
+    ],
+    "distinctiveness_ok": true,
+    "falsifiable": true,
+    "notes": "The proposal's distinctive anchor (\"security / freedom from fear\") is demonstrable in-occurrence in only ~4 of 30 tokens: 8:11 (amanatan = slumber as security), 6:82 (al-amn = security), 29:67 (aminan = secure sanctuary), and 12:64 (aminukum/amintukum = entrust/safekeeping). In the belief/believer majority (the ~26 listed), the only demonstrable content from the verse co-text is propositional assent (\"believe\") or a community label (\"believers\"); no safe-state or distinct trust-relation can be shown from the occurrence itself (e.g. 23:74 \"do not believe in the Hereafter\"; 41:8 \"believe + good deeds, reward\"; 69:33 \"did not believe in God\"; the vocatives 9:23/49:6/61:10). To keep these inside the sense the proposal relies on \"correlatively the trust,\" which turns the claimed SINGLE stable contribution into a DISJUNCTION (safe-state OR trust), not one shared sense — directly contradicting the rationale's assertion that \"all 30 are accounted for by a single stable root contribution.\" What actually threads across the belief tokens is at most bare \"trust/credence,\" which on aamana bi- is not demonstrably distinguishable from restating \"believe.\" Conclusion: \"security/freedom from fear\" is a contextual/formal outcome in a few tokens, not a root-level constant; the proposal over-specifies. The root DOMAIN (trust/safety) is genuine (anchored by 6:82, 8:11, 29:67, 12:64), so the claim is partially supported, but the stated compound is refuted as a per-occurrence constant. Note 5:69 has \"fa la khawfun alayhim\" (no fear) in co-text but as the reward-consequence of belief+righteousness, not carried by the aamana token, so it does not rescue the security pole. Distinctiveness: the safety/trust field is distinctive (not generic), though the residue on belief tokens collapses toward generic assent. Falsifiable: yes, and falsified for the security pole by the belief-dominated majority."
+   },
+   "claim_scope": "REPRESENTATIVE",
+   "research_state": "PREFERRED",
+   "canonical_state": "NOT_CANONICAL",
+   "acceptance": "BLOCKED",
+   "acceptance_blockers": [
+    "Representative sample, not full-corpus universal coverage (root semantic unity requires ALL occurrences).",
+    "Adversarial verification: PARTIALLY_SUPPORTED with 26 failing occurrence(s).",
+    "No independent human verification available (canonicalization requires it)."
+   ]
+  },
+  {
+   "root_buckwalter": "kfr",
+   "root_arabic": "ك ف ر",
+   "descriptive": {
+    "total_confirmed_occurrences": 525,
+    "distinct_forms": 5,
+    "form_inventory": [
+     {
+      "form": "ADJ",
+      "count": 21
+     },
+     {
+      "form": "N",
+      "count": 200
+     },
+     {
+      "form": "V",
+      "count": 289
+     },
+     {
+      "form": "V(II)",
+      "count": 14
+     },
+     {
+      "form": "V(IV)",
+      "count": 1
+     }
+    ],
+    "source": "QAC_MORPHOLOGY",
+    "extraction_version": "qac-0.4-import-v1"
+   },
+   "internal_discovery": {
+    "candidate_root_contribution": "An agent's actively covering-over / occluding some X so as to nullify or withhold acknowledgment of its standing — whether X is a truth/sign (yielding denial), a received benefit (yielding ingratitude), or a record of wrongs (yielding effacement).",
+    "plain_explanation": "Across the sample the covering-over structure unifies otherwise opposite-looking uses. In Form I + bi- occurrences (3:21 yakfuruuna bi-aayaati llaah; 4:155 kufrihim bi-aayaati llaah; 2:217 kufrun bihi; 34:53 kafaruu bihi; 60:1 kafaruu bimaa jaa'akum) the agent covers over / refuses to acknowledge signs or God — i.e. denies them. In 16:55 (li-yakfuruu bimaa aataynaahum) and 31:32 (khattaar kafuur) the same covering is aimed at a benefit received, giving ingratitude. Decisively, the two Form II tokens (3:193 wa-kaffir 'annaa sayyi'aatinaa; 47:2 kaffara 'anhum sayyi'aatihim) apply the covering to sins and mean 'efface / blot out' — the same act pointed in a benevolent direction. The nominal/participial tokens (2:6, 5:61, 7:101, 42:26, 74:31, etc.) name the settled state or the party who so cover over the truth. Thus the root supplies cover-over-to-nullify; the specific religious color 'disbelief' is contributed by the object (God, His signs) plus context, not by the root itself.",
+    "layer_separation_note": "ROOT contributes only 'cover-over / occlude X to nullify its standing.' FORM I (kafara) = the agent takes that covering stance. CONSTRUCTION kafara bi-X aims the covering AT X (signs/God in 3:21, 4:155, 2:217, 34:53, 60:1) -> reject/deny X; when X is a gift (16:55) -> be ungrateful for. FORM II (kaffara 'an; 3:193, 47:2) is the transitive/causative covering that removes X off the person -> efface/expiate sins; this is where the root sense is cleanest and stripped of 'disbelief.' N (kufr: 2:93, 5:61, 49:7) names the state/act; ADJ and intensive (kafuur 31:32; kaafir/kaafiriin 2:217, 7:101, 42:26, 74:31) name the habitual coverer. The theological content 'disbelief in God' is carried by the object and surrounding contrast with iimaan (e.g. 40:12, 42:26, 74:31), not by the three radicals.",
+    "result": "PREFERRED",
+    "result_strength": "MODERATE",
+    "presence": {
+     "occurrences_checked": 30,
+     "occurrences_consistent": 30,
+     "inconsistent_refs": []
+    },
+    "strongest_counterexample": "The Form II expiation tokens (3:193 wa-kaffir 'annaa sayyi'aatinaa; 47:2 kaffara 'anhum sayyi'aatihim) look semantically opposite to the dominant 'disbelief' tokens: here the subject is God graciously removing sins, not an unbeliever rejecting God. This would refute a root gloss of 'disbelieve/reject,' but it is exactly what confirms the deeper 'cover-over' sense — sins are covered/blotted out. It is the sharpest test the sample offers, and 'cover-over' survives it while 'reject' does not.",
+    "competing_hypothesis": "That the root itself means 'reject / deny (the truth or God)' — i.e. disbelief is lexical, not contextual. This fits the ~24 Form I/N/ADJ disbelief tokens directly (2:6, 3:21, 3:101, 8:73, 25:32, 38:27, 60:1, 66:7, etc.). It fails, however, on the Form II 'an-sayyi'aat tokens (3:193, 47:2), where 'reject sins' is incoherent but 'cover/efface sins' is exact, and it strains on the ingratitude tokens (16:55, 31:32) where 'cover over a benefit received' is more precise than 'reject.' 'Cover-over-to-nullify' subsumes both the denial and the effacement data; 'reject' does not.",
+    "distinctiveness_note": "The contribution is non-generic and falsifiable: it is not merely 'oppose' or 'be bad,' but a specific mechanism — occluding X so its standing is annulled. It predicts the divergent outputs from a single sense (deny signs vs. blot out sins vs. spurn a gift) via the object and form, and it is falsifiable: a token where kfr means active production/assertion rather than covering-over, or a Form II 'an-X where X must be exposed rather than removed, would break it. No sampled token does so.",
+    "unresolved_cases": []
+   },
+   "adversarial_verification": {
+    "root_buckwalter": "kfr",
+    "verdict": "PARTIALLY_SUPPORTED",
+    "failing_occurrences": [
+     "3:193",
+     "47:2",
+     "29:47",
+     "31:32",
+     "49:7"
+    ],
+    "distinctiveness_ok": false,
+    "falsifiable": true,
+    "notes": "The loose gloss is consistent with all 30 tokens and is nowhere flatly contradicted, so it is not REFUTED. But adversarially it does not hold up as a distinctive ROOT contribution. (1) The distinctive 'cover-over/efface' element that separates it from a competing 'reject/refuse-to-acknowledge' hypothesis is demonstrable ONLY in 3:193 and 47:2 (كفّر عن سيئات) — both Form II + عن. Under the required layer-subtraction, that effacement sense is plausibly a Form II causative + عن construction effect, not root-level; removing the confound leaves the root claim indistinguishable from generic 'reject.' Hence distinctiveness_ok=false: the cover-vs-reject discrimination rests entirely on two form-confounded tokens. (2) In ~24 Form I disbelief tokens (e.g. 2:6, 8:73, 13:32, 21:97, 25:32, 38:27, 60:1, 66:7) the 'covering/occluding' mechanism is not observable — often the object X is absent (absolute كفروا) — so 'cover-over to nullify standing' is imported, not demonstrated; it is observationally equal to plain 'reject.' (3) 29:47 and 31:32 gloss kfr with جحد (open, knowing repudiation), which is in tension with 'occlude/cover so as to withhold from view' — open denial is not concealment, favoring 'repudiate/reject' over 'cover.' (4) Abstract nominal tokens 49:7 (كرّه إليكم الكفر), 2:217, 5:61 lack the 'agent actively covering-over some X' structure the gloss asserts. Falsifiable=true in principle, but the three-branch disjunction (denial/ingratitude/effacement) is highly absorptive and weakens practical falsifiability. Net: the smallest robust shared sense the sample actually supports is closer to 'reject / withhold acknowledgment,' with the specific 'covering-over' upgrade unproven at the root layer. Non-canonical, directional."
+   },
+   "claim_scope": "REPRESENTATIVE",
+   "research_state": "PREFERRED",
+   "canonical_state": "NOT_CANONICAL",
+   "acceptance": "BLOCKED",
+   "acceptance_blockers": [
+    "Representative sample, not full-corpus universal coverage (root semantic unity requires ALL occurrences).",
+    "Adversarial verification: PARTIALLY_SUPPORTED with 5 failing occurrence(s).",
+    "No independent human verification available (canonicalization requires it).",
+    "Distinctiveness not established (verifier flagged generic sense)."
+   ]
+  },
+  {
+   "root_buckwalter": "SbH",
+   "root_arabic": "ص ب ح",
+   "descriptive": {
+    "total_confirmed_occurrences": 45,
+    "distinct_forms": 5,
+    "form_inventory": [
+     {
+      "form": "N",
+      "count": 9
+     },
+     {
+      "form": "N(IV)",
+      "count": 6
+     },
+     {
+      "form": "T",
+      "count": 1
+     },
+     {
+      "form": "V(II)",
+      "count": 1
+     },
+     {
+      "form": "V(IV)",
+      "count": 28
+     }
+    ],
+    "source": "QAC_MORPHOLOGY",
+    "extraction_version": "qac-0.4-import-v1"
+   },
+   "internal_discovery": {
+    "candidate_root_contribution": "The onset of daytime brightness — daybreak/morning as the emergence of light after darkness; by instrument-noun extension, a source of such bright light (a lamp). The smallest distinctive sense is \"the bright light of the day's beginning.\"",
+    "plain_explanation": "Strip away form and construction and what SbH keeps contributing is the arrival of morning light. It is clearest in the plain nouns: 6:96 \"فالق الإصباح\" (Cleaver of the daybreak), 11:81 \"إن موعدهم الصبح أليس الصبح بقريب\" (the morning ... is the morning not near), 37:177 \"فساء صباح المنذرين\" (evil is the morning of the warned), 74:34 \"والصبح إذا أسفر\" (the morning when it brightens), 81:18 \"والصبح إذا تنفس\" (the morning when it breathes). The N(IV) participle مُصْبِحِين is temporal \"at daybreak / in the morning\": 15:66 \"مصبحين\", 68:17 \"ليصرمنها مصبحين\" (they would pluck it in the morning). The verb pair in 30:17 \"حين تمسون وحين تصبحون\" (evening / morning) confirms the temporal core. The lamp nouns (24:35 \"مصباح المصباح\", 41:12 and 67:5 \"بمصابيح\") extend the same idea — an instrument that gives bright light as the morning does. So the root's own load is \"day-brightening / daybreak light,\" concrete and falsifiable.",
+    "layer_separation_note": "Form IV (أَصْبَحَ, the dominant 28-count form) grammaticalizes the root's \"enter upon the morning\" into an inchoative copula \"to come to be (in a state).\" In most V(IV) tokens the morning content is BLEACHED and only the state-change survives: 3:103 \"فأصبحتم ... إخوانا\" (you became brothers), 5:30 \"فأصبح من الخاسرين\" (he became a loser), 22:63 \"فتصبح الأرض مخضرة\" (the earth becomes green), 28:10 \"وأصبح فؤاد أم موسى فارغا\" (the heart became empty), 61:14 \"فأصبحوا ظاهرين\" (they became dominant). The \"become\" meaning therefore belongs to the FORM + copular construction, not to the root. The N and N(IV) layers preserve the literal morning sense; مِصْبَاح/مَصَابِيح is an instrument-noun (maf'āl pattern) lexicalizing the \"light-giver\" facet. This is a clean grammaticalization cline: root \"daybreak light\" → Form IV \"reach morning\" → bleached copula \"come to be.\"",
+    "result": "PREFERRED",
+    "result_strength": "MODERATE",
+    "presence": {
+     "occurrences_checked": 30,
+     "occurrences_consistent": 12,
+     "inconsistent_refs": [
+      "3:103",
+      "5:30",
+      "5:52",
+      "5:53",
+      "7:78",
+      "11:67",
+      "11:94",
+      "18:40",
+      "18:41",
+      "18:45",
+      "22:63",
+      "28:10",
+      "28:18",
+      "29:37",
+      "46:25",
+      "49:6",
+      "61:14",
+      "68:20"
+     ]
+    },
+    "strongest_counterexample": "5:30 \"فَأَصْبَحَ مِنَ ٱلْخَٰسِرِينَ\" and 3:103 \"فَأَصْبَحْتُم بِنِعْمَتِهِۦٓ إِخْوَٰنًا\" — pure copular \"became,\" with no morning/daybreak content recoverable from the verse text. Under a strict \"morning must be present in every occurrence\" test these (and 16 other V(IV) copular tokens) resist the candidate. They are explained not by a rival root sense but by Form IV grammaticalizing the root's morning-transition into a generic inchoative.",
+    "competing_hypothesis": "Root = an abstract \"threshold/onset of a new state,\" unifying \"morning = onset of day\" with أصبح = \"come to be.\" Rejected: it is too generic (violates distinctiveness), it is indistinguishable from any inchoative verb, and it fails to explain the concrete مِصْبَاح \"lamp\" and the temporal مُصْبِحِين \"at daybreak.\" The concrete \"daybreak light\" hypothesis both explains the nominal evidence and derives the abstract \"become\" as a form-level bleaching, so it is preferred over the abstract reading.",
+    "distinctiveness_note": "\"Daybreak / day-onset brightness\" is concrete and falsifiable and is distinct from the generic notion of \"light\" (contrast نُور in the same verse 24:35, which names light itself while مِصْبَاح names the morning-like light-giver) and from mere \"time/becoming.\" It specifically denotes the darkness→daylight transition and the day's bright beginning, verifiable against the evening/morning contrast in 30:17 and the \"brightening/breathing\" of dawn in 74:34 and 81:18.",
+    "unresolved_cases": [
+     "3:103 — 'became brothers', morning bleached",
+     "5:30 — 'became a loser', copular only",
+     "5:52 / 5:53 / 49:6 — 'become/became regretful/losers', state-change only",
+     "7:78 / 11:67 / 11:94 / 29:37 — 'أصبحوا جاثمين' (lay prostrate); dawn timing is narrative/tafsir, NOT textually marked in the packet, so morning is not demonstrable from evidence",
+     "18:40 / 18:41 / 18:45 / 22:63 — inanimate 'becomes barren/sunken/chaff/green', morning bleached",
+     "28:10 / 28:18 — 'heart became empty' / 'became fearful in the city'",
+     "46:25 / 61:14 — 'became such that only dwellings seen' / 'became dominant'",
+     "68:20 — 'فأصبحت كالصريم' borderline: temporal morning plausible but not textually explicit"
+    ]
+   },
+   "adversarial_verification": {
+    "root_buckwalter": "SbH",
+    "verdict": "PARTIALLY_SUPPORTED",
+    "failing_occurrences": [
+     "24:35",
+     "41:12",
+     "67:5",
+     "3:103",
+     "5:30",
+     "5:52",
+     "5:53",
+     "7:78",
+     "11:67",
+     "11:94",
+     "18:40",
+     "18:41",
+     "18:45",
+     "22:63",
+     "28:10",
+     "28:18",
+     "29:37",
+     "46:25",
+     "49:6",
+     "61:14",
+     "68:20"
+    ],
+    "distinctiveness_ok": true,
+    "falsifiable": true,
+    "notes": "A daybreak/morning contribution IS demonstrably and distinctively present in a coherent subset — 6:96 al-iSbAH, 11:81/37:177/74:34/81:18 (plain morning nouns), 15:66 & 68:17 muSbiHIn, and 30:17 tuSbiHUn (paired with tumsUn). So the proposal has a real grounded core. But two independent lines refute it as the stated ROOT-UNIVERSAL sense 'the bright light of the day's beginning':\n\n(1) LAMP/STAR NOUNS contradict the committed formulation. The proposer counts 24:35 (miSbAH x2), 41:12 and 67:5 (maSAbIH) as SUPPORTING occurrences, yet 41:12 and 67:5 explicitly place these lights in al-samA' al-dunyA — the NIGHT sky — and 24:35 is a lamp in a dark niche. The distinctive 'day's-beginning / morning' component is absent; these are night/against-darkness illumination. To absorb them the proposer must silently retreat to the generic 'emergence of light after darkness', dropping the distinctive restriction. These are non-Form-IV nouns where the root should surface directly and no form-layer can be blamed, so they falsify the specific sense as claimed.\n\n(2) The 18 Form IV copular tokens (3:103 'became brothers', 5:30, 5:52, 5:53, 7:78, 11:67, 11:94, 18:40, 18:41, 18:45, 22:63 'earth becomes green', 28:10, 28:18, 29:37, 46:25, 49:6, 61:14, 68:20) assert neither morning nor light at surface. The proposer rescues universality via aSbaHa's etymological 'enter morning' origin, but the packet rules bar lexicon/etymology/memory as evidence — presence must be demonstrated IN the occurrences. An etymological bridge is inadmissible, so root-universality is not established; these are correctly counted as failing/bleached (form+construction supply 'become').\n\nDistinctiveness: the narrow sense IS distinctive and falsifiable, but the broadening required to cover the lamps collapses it toward generic 'bright light', so distinctiveness holds only for the narrow (non-universal) reading. Verdict PARTIALLY_SUPPORTED: valid daybreak/morning core for a minority subset (~9/30), refuted as a root-universal contribution and mis-specified for the lamp/star occurrences."
+   },
+   "claim_scope": "REPRESENTATIVE",
+   "research_state": "PREFERRED",
+   "canonical_state": "NOT_CANONICAL",
+   "acceptance": "BLOCKED",
+   "acceptance_blockers": [
+    "Representative sample, not full-corpus universal coverage (root semantic unity requires ALL occurrences).",
+    "Adversarial verification: PARTIALLY_SUPPORTED with 21 failing occurrence(s).",
+    "No independent human verification available (canonicalization requires it)."
+   ]
+  },
+  {
+   "root_buckwalter": "byn",
+   "root_arabic": "ب ي ن",
+   "descriptive": {
+    "total_confirmed_occurrences": 523,
+    "distinct_forms": 12,
+    "form_inventory": [
+     {
+      "form": "ADJ",
+      "count": 19
+     },
+     {
+      "form": "ADJ(II)",
+      "count": 2
+     },
+     {
+      "form": "ADJ(IV)",
+      "count": 47
+     },
+     {
+      "form": "ADJ(X)",
+      "count": 1
+     },
+     {
+      "form": "LOC",
+      "count": 243
+     },
+     {
+      "form": "N",
+      "count": 83
+     },
+     {
+      "form": "N(II)",
+      "count": 1
+     },
+     {
+      "form": "N(IV)",
+      "count": 72
+     },
+     {
+      "form": "V(II)",
+      "count": 35
+     },
+     {
+      "form": "V(IV)",
+      "count": 1
+     },
+     {
+      "form": "V(V)",
+      "count": 18
+     },
+     {
+      "form": "V(X)",
+      "count": 1
+     }
+    ],
+    "source": "QAC_MORPHOLOGY",
+    "extraction_version": "qac-0.4-import-v1"
+   },
+   "internal_discovery": {
+    "candidate_root_contribution": "The root ب ي ن contributes SEPARATION-AS-DISTINCTION: a demarcation that sets two (or more) things apart from each other, i.e. the space/boundary \"between.\" From this single primitive, one branch stays concrete (the interval that lies between parties/things) and the other becomes qualitative (a thing separated out from its background, hence standing distinct). The root does NOT itself mean \"clear/explain\"; it means \"set-apart / demarcated,\" and clarity is what results when that separation is applied to a thing so it is distinguished from confusion.",
+    "plain_explanation": "Every sampled occurrence turns on one idea: things being set apart by a boundary or gap. In the \"between\" uses (2:164 بَيْنَ ٱلسَّمَآءِ وَٱلْأَرْضِ; 19:65, 32:4, 46:3 وَمَا بَيْنَهُمَا; 28:28 بَيْنِى وَبَيْنَكَ) the root names the separating interval between two poles. In the judging/reconciling uses (3:55 فَأَحْكُمُ بَيْنَكُمْ; 24:51, 39:69 يَحْكُمَ/قُضِىَ بَيْنَهُم; 49:9 فَأَصْلِحُوا۟ بَيْنَهُمَا) it is the demarcation between disputing parties that is being resolved. The verbal and adjectival uses take that same \"set-apart / distinct\" core and, via form, apply it to knowledge or perception: bayyana (4:176, 5:75, 16:64) = cause a matter to stand distinct → make plain; tabayyana (9:114, 41:53) = become distinct of itself → become evident; yubīn (43:52, of Moses' speech) = render distinct/articulate; mubīn/bayyin/bayyināt (6:74, 4:101, 11:6, 37:106, 22:16, 7:101) = so set-apart as to be unmistakable/decisive. The common thread is distinctness-by-separation, not \"clarity\" as such.",
+    "layer_separation_note": "ROOT (byn): separation/distinctness — a demarcation setting things apart. LOC construction (bayn + genitive/pronoun): grammaticalizes the root into the preposition \"between/among,\" supplying the concrete two-party interval; the \"between two poles\" concreteness is the construction's contribution, not the root's (see counterexample). Form II bayyana (causative/factitive): CAUSE-to-be-distinct → clarify/explain (4:176, 5:75, 16:64). Form V tabayyana (reflexive of II): become-distinct-of-itself → become evident (9:114, 41:53). Form IV yubīn: render-distinct/articulate (43:52). Adjective mubīn/bayyin (ADJ/ADJ-IV/N-IV): the resultant state, distinct→manifest (6:74, 4:101, 11:6, 37:106, 22:16). N bayyina/bayyināt: a distinguishing, decisive proof (7:101). CONTEXT adds the domains — judgment (3:55, 24:51, 39:69), reconciliation (49:9), scripture/signs (16:64, 22:16), speech (43:52) — none of which the root itself carries.",
+    "result": "PREFERRED",
+    "result_strength": "STRONG",
+    "presence": {
+     "occurrences_checked": 30,
+     "occurrences_consistent": 30,
+     "inconsistent_refs": []
+    },
+    "strongest_counterexample": "37:106 (ٱلْبَلَٰٓؤُا۟ ٱلْمُبِينُ) and 6:74 (ضَلَٰلٍ مُّبِينٍ): here mubīn functions as a near-intensifier \"manifest/utter,\" with no literal second pole and no spatial interval, so it resists any reading of the root as \"interval between two parties.\" It does NOT refute the candidate — it disciplines it: these cases show the root's true core is the more abstract \"distinctness / set-apart-ness\" (the trial/error stands out unmistakably), and that the concrete \"between two poles\" meaning belongs to the LOC construction, not the root. Symmetrically, the purely spatial 19:65/2:164 (وَمَا بَيْنَهُمَا, بَيْنَ ٱلسَّمَآءِ وَٱلْأَرْضِ) are the counterexamples that kill any rival \"clarity/manifestation\" root, since they carry zero clarity. Each cluster is the other's disqualifier, and only \"separation-distinction\" survives both.",
+    "competing_hypothesis": "Rival root sense = \"clarity / manifestation / making evident.\" It is attractive because ~half the sampled forms (II, IV, V, mubīn, bayyina) mean exactly that. It is rejected: it cannot cover the LOC/N \"between\" occurrences, which are the numerical majority of the root (LOC 243 + N 83) and appear as pure spatial/relational interval with no notion of clarity — 2:164 (between sky and earth), 19:65/32:4/46:3 (what is between them), 28:28 (between me and you), 57:20 (mutual boasting among you). A second rival, \"two-ness/duality,\" partly fits \"between\" but misfits the mubīn cases (37:106, 6:74) where no pair is present. Only \"separation/distinctness\" (of which betweenness is the concrete interval and manifestness the qualitative set-apartness) covers the whole sample.",
+    "distinctiveness_note": "The candidate is non-generic and falsifiable. It is not \"clarity\" (too narrow — fails the dominant LOC cluster) and not merely \"relation/connection\" (the root marks separation/demarcation, not joining). It would be falsified by any occurrence where byn means union/merging with no notion of a dividing boundary, or clarity with no notion of a thing being distinguished/set apart from something else — none appears in the sample. The prediction \"wherever byn occurs, two-or-more things are held apart by a demarcation, whether spatial (bayn), forensic (judge between), or epistemic (made distinct → clear)\" holds across all 12 forms sampled.",
+    "unresolved_cases": []
+   },
+   "adversarial_verification": {
+    "root_buckwalter": "byn",
+    "verdict": "PARTIALLY_SUPPORTED",
+    "failing_occurrences": [
+     "43:52",
+     "37:106",
+     "4:101",
+     "7:101"
+    ],
+    "distinctiveness_ok": true,
+    "falsifiable": true,
+    "notes": "The minimal primitive the proposal really rests on — DISTINCTNESS / being-set-apart — is distinctive (not generic filler) and falsifiable, and no sampled occurrence cleanly refutes it. The spatial LOC \"between\" occurrences (2:164, 19:65, 32:4, 46:3, 28:28, 49:9, etc.) do demonstrably instantiate an interval between distinct relata and genuinely disqualify a pure-clarity root, so the core two-branch unity survives.\n\nHowever, the proposal's STRONG sub-claim is not demonstrable from the sample: it insists the root does NOT contribute \"clear,\" that clarity is only a downstream RESULT of separation. In the qualitative branch what is actually demonstrable in the occurrence is manifestness/clarity itself; the \"demarcation setting two things apart\" is inferred, not shown. Clean resisters after subtracting form/construction: 43:52 (intransitive Form IV \"لا يكاد يبين\" = can hardly articulate/make clear — no interval, only clarity-of-speech is observable; it directly instantiates the pole the proposal tries to externalize); 37:106 (\"البلاء المبين\" = the manifest trial — pure evidentness, no demarcation-between demonstrable); 4:101 (\"عدو مبين\" = open/manifest enemy — \"evident\" is direct, separation imposed); 7:101 (\"البينات\" = clear proofs — manifestness shown, not an interval). The same pattern extends softly to 4:20, 6:74, 11:6, 26:97, 62:2, 22:16, and the V(II)/V(V) cases (4:176, 5:75, 16:64, 9:114, 41:53), which are equally well read as \"make/become clear.\"\n\nEpistemic crux: the sample cannot discriminate between \"separation-primary, clarity-derived\" and \"distinctness/clarity as the shared primitive\" — these are near-synonyms in the qualitative branch. So the proposal is consistent with (but does not DEMONSTRATE) its causal story. Per the HARD RULE requiring the smallest sense DEMONSTRABLY present, the defensible root contribution is \"distinctness/set-apartness,\" not the fuller \"separation-as-interval-between\" with clarity relegated to a derived effect. Not REFUTED (core primitive stands, zero occurrences overturn it); not fully SUPPORTED (the exclusion-of-clarity claim is underdetermined and the four listed occurrences resist the separation attribution). Hence PARTIALLY_SUPPORTED."
+   },
+   "claim_scope": "REPRESENTATIVE",
+   "research_state": "PREFERRED",
+   "canonical_state": "NOT_CANONICAL",
+   "acceptance": "BLOCKED",
+   "acceptance_blockers": [
+    "Representative sample, not full-corpus universal coverage (root semantic unity requires ALL occurrences).",
+    "Adversarial verification: PARTIALLY_SUPPORTED with 4 failing occurrence(s).",
+    "No independent human verification available (canonicalization requires it)."
+   ]
+  }
+ ]
+}
