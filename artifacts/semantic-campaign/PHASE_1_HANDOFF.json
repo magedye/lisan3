@@ -1,0 +1,148 @@
+{
+  "handoff_version": "1.0.0",
+  "verdict": "PRE_ANALYSIS_FOUNDATION_AUTONOMOUSLY_QUALIFIED",
+  "produced_by": "Owner Request 01 (autonomous pre-analysis qualification)",
+  "produced_at": "2026-09-06",
+  "base_sha": "34d4b01cd3ddbfe6424823aa6ef46c696ecfd3d3",
+  "candidate_sha": "7594fb455839ca8d88c9437149fdd5d5c8d8142f",
+  "branch": "pre-analysis-foundation",
+  "schema": {
+    "required_alembic_head": "b3d6e2f8c150",
+    "migrations_added": ["a2f5c1d7b940", "b3d6e2f8c150"],
+    "note": "Additive, reversible. Apply `alembic upgrade head` to a real DB; the test suite provisions schema via Base.metadata.create_all."
+  },
+  "methodology_revision": {
+    "id": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+    "methodology_id": "LISAN_QURANIC_SEMANTIC_EXTRACTION",
+    "source_reference": "skills/lisan-semantic-extraction/SKILL.md",
+    "allowed_use": "QURAN_INTERNAL_CUMULATIVE_RUN",
+    "authority_reference": "SIMPLIFIED_AI_AUTHORITY_AND_GOVERNANCE_CONTRACT.md"
+  },
+  "corpus_snapshot": {
+    "id": "snap_tanzil_1_1_ac0724796cbb",
+    "source_id": "TANZIL_QURAN_UTHMANI",
+    "version": "1.1",
+    "verse_count": 6236,
+    "canonical_text_hash_prefix": "ac0724796cbb",
+    "status": "PRODUCTION_ACTIVE",
+    "admission_record": "docs/canonical/ADMISSION_TANZIL.md"
+  },
+  "root_universe_ref": {
+    "service": "backend.domain.services.corpus.root_universe.RootUniverseService.derive(db, snapshot_id)",
+    "source_table": "structural_tokens",
+    "deterministic": true,
+    "prioritization_dimensions": ["occurrence_count", "form_diversity", "surah_spread", "structural_uncertainty"],
+    "current_population": "Qualified against the bundled slm (س ل م) structural fixture only; the full Quran root universe requires the QAC morphology corpus (see blockers).",
+    "coverage": "RootUniverseService.occurrence_coverage(db, snapshot_id, root, evidenced_refs) — exact-set, no threshold.",
+    "holdout": "RootUniverseService.holdout_split / holdout_available — deterministic, guarantees a held-out occurrence when >=2 exist."
+  },
+  "descriptive_knowledge_ref": {
+    "service": "backend.domain.services.corpus.descriptive_profile.RootDescriptiveProfileService.build_from_snapshot(db, snapshot_id, root)",
+    "store_table": "structural_tokens",
+    "loader": "backend.domain.services.corpus.structural_import.StructuralFixtureLoader.load_slm_fixture(db, snapshot_id)",
+    "fixture": "data/fixtures/structural/slm_full_fixture.csv",
+    "knowledge_levels": ["DIRECT_TEXTUAL_FACT", "QUALIFIED_STRUCTURAL_ANNOTATION", "DISPUTED_STRUCTURAL_ANNOTATION", "UNRESOLVED_STRUCTURAL_ANNOTATION"],
+    "deterministic_reproducible": true,
+    "no_llm_in_fact_path": true,
+    "meaning_free": true
+  },
+  "root_semantic_unity": {
+    "invariant": "NON_NEGOTIABLE",
+    "coverage_rule": "UNIVERSAL scope requires supported==eligible (exact set); no majority/percentage path exists.",
+    "coverage_basis": "supporting evidence only; counterevidence occurrences never satisfy coverage.",
+    "acceptance_guards": [
+      "UNIVERSAL ROOT_CONCEPT with any unresolved_cases cannot be ACCEPTED",
+      "UNIVERSAL ROOT_CONCEPT with any eligible counterevidence occurrence cannot be ACCEPTED"
+    ],
+    "enforced_in": "backend.domain.services.canonicalization.CanonicalizationPolicy.evaluate + research_judgment.derive_completeness",
+    "deferred_to_request_02": "Reconcile author-declared unresolved_cases against the confirmed StructuralToken occurrence set at the gate (deterministic cross-check). Percentage bypass is already impossible; this only removes residual reliance on honest omission."
+  },
+  "external_hypothesis_capabilities": {
+    "register_table": "external_hypothesis_records",
+    "service": "backend.domain.services.external_hypothesis.ExternalHypothesisService",
+    "claim_types": ["ROOT_MEANING_CANDIDATE", "FORM_EFFECT_CANDIDATE", "DERIVATIONAL_EFFECT_CANDIDATE", "LETTER_EFFECT_CANDIDATE", "CONSTRUCTION_EFFECT_CANDIDATE", "METHOD_RULE_CANDIDATE"],
+    "claim_roles": ["RULE_CLAIM", "AUTHOR_APPLICATION"],
+    "status_lifecycle": ["EXTERNAL_CANDIDATE", "TESTED", "SUPPORTED", "PARTIALLY_SUPPORTED", "NOT_SUPPORTED", "FALSIFIED", "UNRESOLVED"],
+    "no_confidence_or_authority_field": true,
+    "no_canonical_transition": true,
+    "jabal_helper": "ExternalHypothesisService.register_jabal_root_meaning (high priority = tested early, no bonus)",
+    "isolation": "Hypothesis.origin (write-once) marks INDEPENDENT_INTERNAL_DERIVATION vs EXTERNAL_CANDIDATE; external-origin hypotheses are excluded from the blind AI internal context."
+  },
+  "accepted_memory_ref": {
+    "table": "semantic_claims",
+    "retrieval": "backend.domain.services.canonicalization.accepted_root_result(db, expression)",
+    "reopen": "reopen_accepted_results_for_new_evidence — ACCEPTED -> REOPEN_REQUIRED with revision bump + audit lineage",
+    "no_numeric_confidence_before_calibration": true
+  },
+  "campaign_state_ref": {
+    "table": "campaign_states",
+    "service": "backend.domain.services.campaign_state.CampaignStateService",
+    "resume": "CampaignStateService.resume(db, campaign_id) — reads only the durable row; no conversation context",
+    "checkpoint": "CampaignStateService.checkpoint_root — idempotent; persist after every root"
+  },
+  "calibration_capabilities": {
+    "root_universe_inventory": "QUALIFIED",
+    "root_prioritization_dimensions": "QUALIFIED",
+    "deterministic_occurrence_coverage": "QUALIFIED",
+    "holdout_support": "QUALIFIED",
+    "structural_uncertainty_preservation": "QUALIFIED",
+    "falsification_records": "QUALIFIED (semantic_claims.falsification_status; external FALSIFIED status)",
+    "semantic_neighbor_challenge": "QUALIFIED (EssentialNeighbor)",
+    "independent_verification": "QUALIFIED (VerificationRecord; INDEPENDENT required for canonicalization)",
+    "external_hypothesis_challenge": "QUALIFIED (external_hypothesis_records)",
+    "accepted_root_memory_contract": "QUALIFIED",
+    "batch_checkpoint_resume": "QUALIFIED",
+    "methodology_findings_capture": "QUALIFIED (CampaignState.findings; ChangeProposal/RuleRevision)"
+  },
+  "readiness_gate": {
+    "conditions_total": 14,
+    "conditions_qualified": 14,
+    "reviewed_by": "Phase 0B adversarial self-review (5 independent lenses) + Phase 0C remediation"
+  },
+  "tests": {
+    "command": ".venv/Scripts/pytest tests -q --ignore=tests/e2e",
+    "result": "179 passed",
+    "new_files": [
+      "tests/test_phase0a_pre_analysis_foundation.py",
+      "tests/test_r01_pre_analysis_capabilities.py",
+      "tests/test_r01_migration.py"
+    ],
+    "e2e_note": "tests/e2e/* require Node/Next.js build + Playwright; environment-heavy, not part of this backend gate."
+  },
+  "known_nonblocking_limitations": [
+    {
+      "id": "QAC_MORPHOLOGY_DATA_ABSENT",
+      "severity": "BLOCKER_FOR_FULL_SCALE",
+      "class": "IRREDUCIBLE_EXTERNAL_DATA",
+      "detail": "The QAC morphology corpus is SOURCE_ROLE_PENDING with an unreconciled license (GPLv3 / CC terms); the artifact bytes are external and uncommitted. Without it, a full-Quran Root Universe and real per-root structural profiles cannot be populated. Capabilities are qualified against the bundled slm fixture. Resolving requires an external license/permission not available to the runtime.",
+      "evidence": "docs/canonical/ADMISSION_QAC.md",
+      "unblock_condition": "Owner reconciles QAC license and admits the morphology artifact (hash-bound), then a real QAC importer persists structural_tokens for the full corpus."
+    },
+    {
+      "id": "UNITY_GATE_DETERMINISTIC_CROSSCHECK",
+      "severity": "LOW",
+      "class": "DEFERRED_TO_REQUEST_02",
+      "detail": "The unity gate blocks on declared unresolved_cases and on eligible counterevidence occurrences; it does not yet auto-reconcile declared unresolved_cases against the confirmed StructuralToken set. No percentage bypass exists; this only removes residual reliance on honest omission and needs real structural data to be meaningful."
+    },
+    {
+      "id": "QAC_FEATURE_PARSING_ROBUSTNESS",
+      "severity": "LOW",
+      "class": "DEFERRED_UNTIL_QAC_ADMITTED",
+      "detail": "RootDescriptiveProfileService.tokens_from_qac parses QAC features simply; harden (split on '|' then ':', validate root alphabet) when a real QAC distribution is admitted."
+    }
+  ],
+  "irreducible_blockers": [
+    "QAC_MORPHOLOGY_DATA_ABSENT (see known_nonblocking_limitations; blocks full-scale campaign, not the foundation)"
+  ],
+  "owner_decisions_open_not_required_now": [
+    "P1..P8 formalization (SUP-007)",
+    "Permanent full dual-lane lifecycle scope (SUP-008)",
+    "Calibration batch size and mandatory-per-root robustness tests",
+    "Full V2.1 terminology review"
+  ],
+  "request_02_start": {
+    "read_this_file": true,
+    "then": "Seed runtime from CANONICAL_CORPUS_ADMISSIONS; derive Root Universe; per root build RootDescriptiveProfile; run internal discovery under isolation; enforce root semantic unity; test external hypotheses via the register; persist via CampaignState after every root.",
+    "hard_stop_if": "QAC_MORPHOLOGY_DATA_ABSENT prevents deriving a real eligible Root Universe — qualify what the slm fixture allows, record the blocker, do not fabricate morphology."
+  }
+}
