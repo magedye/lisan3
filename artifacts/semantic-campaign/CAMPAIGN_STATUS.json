@@ -1,0 +1,58 @@
+{
+  "campaign_id": "lisan-root-calibration",
+  "status": "BLOCKED_PENDING_QAC_MORPHOLOGY_ADMISSION",
+  "verdict": "SEMANTIC_CAMPAIGN_AT_CURRENT_QUALIFIED_LIMIT",
+  "produced_by": "Owner Request 02 (autonomous semantic campaign)",
+  "produced_at": "2026-09-06",
+  "reads_handoff": "artifacts/semantic-campaign/PHASE_1_HANDOFF.json",
+  "handoff_candidate_sha": "7594fb455839ca8d88c9437149fdd5d5c8d8142f",
+  "preconditions": {
+    "handoff_read": true,
+    "runtime_verified": true,
+    "foundation_qualified": true,
+    "schema_head": "b3d6e2f8c150"
+  },
+  "runtime_evidence": {
+    "production_corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+    "corpus_verse_count": 6236,
+    "structural_tokens_for_production_corpus": 0,
+    "eligible_roots_derivable_real": 0,
+    "reason": "No morphological root->word attribution exists for the admitted Tanzil corpus; the QAC morphology corpus that would provide it is SOURCE_ROLE_PENDING (license unreconciled, artifact uncommitted)."
+  },
+  "counts": {
+    "eligible_roots": 0,
+    "processed_roots": 0,
+    "accepted_roots": 0,
+    "unresolved_roots": 0,
+    "blocked_or_ineligible_roots": "ALL (entire root universe is underivable without QAC morphology)",
+    "methodology_revisions_created": 0,
+    "evaluation_cases_added": 0,
+    "external_hypotheses_tested": 0,
+    "cross_root_hypotheses_generated": 0
+  },
+  "why_not_processed": [
+    "No real eligible Root Universe: 0 structural tokens for the production corpus (QAC morphology absent).",
+    "The only structural data available is the bundled slm (س ل م) prototype fixture, explicitly semantic_evidence_allowed=false and not proven-complete, so it cannot support accepted semantic root results.",
+    "Request 01 FP-3 requires proven descriptive completeness BEFORE universal-presence testing; that cannot be met without the full morphology corpus.",
+    "Fabricating morphology or root meanings would violate the non-negotiable evidence-integrity invariant (Request 01 §3.4)."
+  ],
+  "stop_condition": "Request 02 §20.3 — an essential source/runtime dependency (QAC morphology corpus) is unavailable.",
+  "machinery_qualified_and_ready": {
+    "root_universe_derivation": true,
+    "root_descriptive_profile": true,
+    "deterministic_coverage": true,
+    "holdout": true,
+    "root_semantic_unity_enforcement": true,
+    "external_hypothesis_register": true,
+    "internal_external_isolation": true,
+    "accepted_root_memory_with_reopen": true,
+    "campaign_checkpoint_resume": true,
+    "note": "All qualified by Request 01 tests (179 passed). The campaign runner has everything it needs EXCEPT the source data."
+  },
+  "unblock_condition": {
+    "action": "Owner reconciles the QAC (Quranic Arabic Corpus) morphology license and admits the artifact (hash-bound), OR provides an equivalent qualified morphology source.",
+    "then": "A real QAC importer persists structural_tokens for the full corpus; RootUniverseService.derive yields the real eligible roots; this campaign resumes automatically and processes roots to the qualified limit.",
+    "evidence": "docs/canonical/ADMISSION_QAC.md"
+  },
+  "resume_instruction": "Re-run Request 02 after QAC morphology is admitted and structural_tokens are populated for snap_tanzil_1_1_ac0724796cbb; no conversational context is required — this file plus PHASE_1_HANDOFF.json fully describe state."
+}
