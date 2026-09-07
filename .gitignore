@@ -47,3 +47,7 @@ Thumbs.db
 # raw GPL artifact is not redistributed via this repo; each install acquires its
 # own byte-identical copy (SHA-256 a1d12923...). Derived annotations are runtime.
 /data/corpus/qac/*.txt
+
+# Campaign runtime: local DB + per-root occurrence packets (QAC-derived + Tanzil
+# text). Durable campaign records are committed under artifacts/semantic-campaign/.
+/data/campaign/
