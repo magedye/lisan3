@@ -6,14 +6,22 @@ Separation preserved (research MAY proceed without human canonicalization):
 The first two stages run autonomously here; canonical_authorization stays PENDING.
 
 Subcommands:
-  bootstrap  - (re)load Tanzil + QAC into the runtime DB if empty (idempotent)
-  status     - show research vs canonicalization progress
-  select     - print the next N unprocessed roots (diverse across occurrence tiers)
-  prep       - write FULL-coverage occurrence packets for given roots
-  persist    - fold discover+verify workflow results into the ledger + CampaignState
+  bootstrap       - (re)load Tanzil + QAC into the runtime DB if empty (idempotent)
+  status          - show research vs canonicalization progress
+  select          - print the next N unprocessed roots (diverse across occurrence tiers)
+  prep            - write FULL-coverage occurrence packets for given roots
+  persist         - fold discover+verify workflow results into the ledger + CampaignState
+  prep-coverage   - shard confirmed occurrences per root (frozen candidate embedded)
+                    for word_ref-level coverage mapping
+  persist-coverage- fold shard dispositions + reconciliation into per-root durable
+                    artifacts, run exact-set validation, update ledger + CampaignState
 
-State is durable: the committed ledger + the CampaignState row make the campaign
-resumable in a fresh session without any conversation history.
+Exact-set coverage rule (owner correction): research_completeness=COMPLETE only
+when the researched word_ref set EXACTLY equals the confirmed StructuralToken
+word_refs (no missing, no duplicate substitution, word_ref granularity).
+
+State is durable: the committed ledger + per-root artifacts + the CampaignState
+row make the campaign resumable in a fresh session without conversation history.
 """
 
 from __future__ import annotations
@@ -35,13 +43,21 @@ from backend.domain.services.corpus.descriptive_profile import (
 )
 from backend.domain.services.corpus.qac_morphology import buckwalter_to_arabic
 from backend.domain.services.corpus.root_universe import RootUniverseService
-from backend.infrastructure.database import SQLALCHEMY_DATABASE_URL
+from backend.domain.services.research_coverage import (
+    confirmed_word_refs,
+    finalize_root_disposition,
+    fold_root_into_ledger,
+    validate_root_research_coverage,
+)
+from backend.infrastructure.database import SQLALCHEMY_DATABASE_URL, Base
 
 SNAP = "snap_tanzil_1_1_ac0724796cbb"
 CAMPAIGN_ID = "root-research-campaign"
 METHODOLOGY = "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4"
 LEDGER = Path("artifacts/semantic-campaign/CAMPAIGN_RESEARCH_LEDGER.json")
+ROOT_ARTIFACTS = Path("artifacts/semantic-campaign/roots")
 PACKET_DIR = Path("data/campaign/packets")
+SHARD_SIZE = 50
 
 _engine = create_engine(SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False})
 _Session = sessionmaker(bind=_engine)
@@ -145,7 +161,8 @@ def cmd_prep(args):
         prof = RootDescriptiveProfileService.build_from_snapshot(db, SNAP, root)
         if prof is None:
             continue
-        toks = _tokens_for_root(db, root)
+        confirmed = set(confirmed_word_refs(db, SNAP, root))
+        toks = [t for t in _tokens_for_root(db, root) if t.word_ref in confirmed]
         occ = [{
             "word_ref": t.word_ref, "verse_ref": t.verse_ref, "form": t.form,
             "verse_text": verse_text.get(t.verse_ref, ""),
@@ -266,13 +283,191 @@ def cmd_persist(args):
     db.close()
 
 
+def cmd_bootstrap(_args):
+    """Idempotent runtime bootstrap: Tanzil + QAC into the local DB if empty."""
+    Base.metadata.create_all(_engine)
+    db = _db()
+    tokens = db.query(models.StructuralToken).filter_by(snapshot_id=SNAP).count()
+    if tokens:
+        print(json.dumps({"bootstrapped": False, "existing_tokens": tokens}))
+        db.close()
+        return
+    from backend.domain.services.corpus.importer import TanzilPreActivationImporter
+    from backend.domain.services.corpus.qac_morphology import QacMorphologyImporter
+
+    res = TanzilPreActivationImporter.import_candidate(db, repository_root=Path("."))
+    qac = QacMorphologyImporter.import_tokens(db, res.snapshot.id)
+    print(json.dumps({
+        "bootstrapped": True, "snapshot": res.snapshot.id,
+        "verses": res.occurrence_count, "tokens": qac.tokens_persisted,
+        "distinct_roots": qac.distinct_roots,
+    }))
+    db.close()
+
+
+def cmd_prep_coverage(args):
+    """Shard confirmed occurrences per root for word_ref-level coverage mapping.
+
+    The frozen candidate contribution is read from research results (judgment
+    stays frozen; coverage mapping never re-opens discovery)."""
+    db = _db()
+    results = json.loads(Path(args.results).read_text(encoding="utf-8"))
+    outdir = Path(args.out)
+    outdir.mkdir(parents=True, exist_ok=True)
+    verse_text = {
+        v: t for (v, t) in db.query(
+            models.CorpusOccurrence.verse_ref, models.CorpusOccurrence.text
+        ).filter(models.CorpusOccurrence.snapshot_id == SNAP).all()
+    }
+    manifest = []
+    for item in results:
+        root = item.get("root")
+        j = item.get("judgment") or {}
+        candidate = j.get("candidate_root_contribution")
+        if not root or not candidate:
+            continue
+        refs = confirmed_word_refs(db, SNAP, root)
+        tok_by_ref = {t.word_ref: t for t in _tokens_for_root(db, root)}
+        shards = [refs[i:i + SHARD_SIZE] for i in range(0, len(refs), SHARD_SIZE)]
+        for k, shard_refs in enumerate(shards):
+            shard = {
+                "root_buckwalter": root,
+                "root_arabic": buckwalter_to_arabic(root),
+                "frozen_candidate_root_contribution": candidate,
+                "plain_explanation": j.get("plain_explanation"),
+                "shard_index": k,
+                "shard_count": len(shards),
+                "occurrences": [{
+                    "word_ref": r,
+                    "verse_ref": tok_by_ref[r].verse_ref,
+                    "form": tok_by_ref[r].form,
+                    "verse_text": verse_text.get(tok_by_ref[r].verse_ref, ""),
+                } for r in shard_refs],
+            }
+            (outdir / f"{root}.s{k}.json").write_text(
+                json.dumps(shard, ensure_ascii=False, indent=1), encoding="utf-8")
+        manifest.append({"root": root, "shards": len(shards), "expected_refs": len(refs)})
+    (outdir / "_coverage_manifest.json").write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(json.dumps(manifest))
+    db.close()
+
+
+def cmd_persist_coverage(args):
+    """Fold coverage-mapping results into per-root durable artifacts + ledger.
+
+    coverage results format: [{root, dispositions:[{word_ref, disposition, note}],
+    reconciliation:[{word_ref, final, rationale}]}]."""
+    db = _db()
+    research = {i["root"]: i for i in json.loads(Path(args.research).read_text(encoding="utf-8"))}
+    coverage_items = json.loads(Path(args.coverage).read_text(encoding="utf-8"))
+    ledger = load_ledger()
+    uni = {e.root: e for e in _universe(db)}
+    ROOT_ARTIFACTS.mkdir(parents=True, exist_ok=True)
+    CampaignStateService.initialize(
+        db, campaign_id=CAMPAIGN_ID, methodology_revision=METHODOLOGY,
+        corpus_snapshot=SNAP, queue=list(uni))
+    summary = []
+    for item in coverage_items:
+        root = item.get("root")
+        if root not in uni or root not in research:
+            continue
+        occ = uni[root].confirmed_occurrences
+        judgment = research[root].get("judgment") or {}
+        verdict = research[root].get("verdict") or {}
+        dispositions = {d["word_ref"]: d for d in (item.get("dispositions") or [])}
+        # Apply resistant-case deep-analysis finals over the base mapping.
+        reconciliation = item.get("reconciliation") or []
+        for r in reconciliation:
+            ref = r.get("word_ref")
+            if ref in dispositions and r.get("final"):
+                dispositions[ref] = {
+                    "word_ref": ref,
+                    "disposition": r["final"],
+                    "note": r.get("rationale") or dispositions[ref].get("note"),
+                    "deep_analysis": True,
+                }
+        researched_refs = [d["word_ref"] for d in (item.get("dispositions") or [])]
+        validation = validate_root_research_coverage(db, SNAP, root, researched_refs)
+        final_resistant = sorted(r for r, d in dispositions.items()
+                                 if d.get("disposition") == "RESISTANT")
+        final_uncertain = sorted(r for r, d in dispositions.items()
+                                 if d.get("disposition") == "STRUCTURAL_UNCERTAINTY")
+        disp = finalize_root_disposition(
+            judgment, verdict, validation, final_resistant, final_uncertain, occ)
+        artifact = {
+            "root_buckwalter": root,
+            "root_arabic": buckwalter_to_arabic(root),
+            "corpus_snapshot": SNAP,
+            "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+            "methodology_revision": METHODOLOGY,
+            "batch_id": args.batch,
+            "occurrences": occ,
+            "frozen_candidate_root_contribution": judgment.get("candidate_root_contribution"),
+            "internal_discovery": judgment,
+            "adversarial_verification": verdict,
+            "coverage_validation": validation.as_dict(),
+            "occurrence_dispositions": sorted(dispositions.values(), key=lambda d: d["word_ref"]),
+            "resistant_deep_analysis": reconciliation,
+            **disp,
+        }
+        (ROOT_ARTIFACTS / f"{root.replace('$', '_S_')}.json").write_text(
+            json.dumps(artifact, ensure_ascii=False, indent=1), encoding="utf-8")
+        ledger_entry = {
+            "root_arabic": buckwalter_to_arabic(root),
+            "occurrences": occ,
+            "batch_id": args.batch,
+            "methodology_revision": METHODOLOGY,
+            "corpus_snapshot": SNAP,
+            "source": "QAC_MORPHOLOGY v0.4",
+            "artifact": f"artifacts/semantic-campaign/roots/{root.replace('$', '_S_')}.json",
+            "candidate_root_contribution": judgment.get("candidate_root_contribution"),
+            "plain_explanation": judgment.get("plain_explanation"),
+            "strongest_counterexample": judgment.get("strongest_counterexample"),
+            "adversarial_verdict": verdict.get("verdict"),
+            "distinctiveness_ok": verdict.get("distinctiveness_ok"),
+            "falsifiable": verdict.get("falsifiable"),
+            "coverage_exact_set_match": validation.exact_set_match,
+            **disp,
+        }
+        fold_root_into_ledger(ledger, root, ledger_entry)
+        CampaignStateService.checkpoint_root(db, CAMPAIGN_ID, root)
+        summary.append({"root": root, "exact_set": validation.exact_set_match,
+                        "strength": disp["result_strength"],
+                        "completeness": disp["research_completeness"],
+                        "universal": disp["universal_presence_holds"],
+                        "resistant": len(final_resistant)})
+    ledger.setdefault("coverage_batches", []).append(
+        {"batch_id": args.batch, "roots": [s["root"] for s in summary]})
+    save_ledger(ledger)
+    print(json.dumps(summary, indent=1))
+    db.close()
+
+
+def cmd_mark_pending(args):
+    """Classify roots whose coverage evidence is not yet exact-set validated."""
+    ledger = load_ledger()
+    changed = []
+    for root in args.roots.split():
+        entry = ledger["roots"].get(root)
+        if entry and not entry.get("coverage_exact_set_match"):
+            entry["research_completeness"] = "PENDING_COVERAGE_EVIDENCE"
+            changed.append(root)
+    save_ledger(ledger)
+    print(json.dumps({"marked_pending_coverage_evidence": changed}))
+
+
 def main():
     p = argparse.ArgumentParser()
     sub = p.add_subparsers(dest="cmd", required=True)
+    sub.add_parser("bootstrap").set_defaults(func=cmd_bootstrap)
     sub.add_parser("status").set_defaults(func=cmd_status)
     sp = sub.add_parser("select"); sp.add_argument("--n", type=int, default=40); sp.set_defaults(func=cmd_select)
     pp = sub.add_parser("prep"); pp.add_argument("--roots", required=True); pp.add_argument("--out", required=True); pp.set_defaults(func=cmd_prep)
     ps = sub.add_parser("persist"); ps.add_argument("--results", required=True); ps.add_argument("--batch", required=True); ps.set_defaults(func=cmd_persist)
+    pc = sub.add_parser("prep-coverage"); pc.add_argument("--results", required=True); pc.add_argument("--out", required=True); pc.set_defaults(func=cmd_prep_coverage)
+    pv = sub.add_parser("persist-coverage"); pv.add_argument("--research", required=True); pv.add_argument("--coverage", required=True); pv.add_argument("--batch", required=True); pv.set_defaults(func=cmd_persist_coverage)
+    mp = sub.add_parser("mark-pending"); mp.add_argument("--roots", required=True); mp.set_defaults(func=cmd_mark_pending)
     args = p.parse_args()
     args.func(args)
 
