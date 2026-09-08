@@ -59,6 +59,18 @@ ROOT_ARTIFACTS = Path("artifacts/semantic-campaign/roots")
 PACKET_DIR = Path("data/campaign/packets")
 SHARD_SIZE = 50
 
+# Buckwalter root symbols that are illegal in Windows filenames.
+_FS_ILLEGAL = '*<>|":?\\/'
+
+
+def safe_name(root: str) -> str:
+    """Deterministic filename-safe encoding of a Buckwalter root.
+
+    Only encodes filesystem-illegal characters (e.g. '*' dhal -> _2A_); legal
+    symbols like '$' stay as-is so existing packet/shard files remain valid.
+    """
+    return "".join(f"_{ord(c):02X}_" if c in _FS_ILLEGAL else c for c in root)
+
 _engine = create_engine(SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False})
 _Session = sessionmaker(bind=_engine)
 
@@ -177,9 +189,10 @@ def cmd_prep(args):
             "form_inventory": [{"form": f.form, "count": f.count} for f in prof.forms],
             "occurrences": occ,
         }
-        (outdir / f"{root}.json").write_text(
+        (outdir / f"{safe_name(root)}.json").write_text(
             json.dumps(packet, ensure_ascii=False, indent=1), encoding="utf-8")
-        manifest.append({"root": root, "arabic": buckwalter_to_arabic(root),
+        manifest.append({"root": root, "file": safe_name(root),
+                         "arabic": buckwalter_to_arabic(root),
                          "occ": prof.total_confirmed_occurrences})
     (outdir / "_manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -344,9 +357,10 @@ def cmd_prep_coverage(args):
                     "verse_text": verse_text.get(tok_by_ref[r].verse_ref, ""),
                 } for r in shard_refs],
             }
-            (outdir / f"{root}.s{k}.json").write_text(
+            (outdir / f"{safe_name(root)}.s{k}.json").write_text(
                 json.dumps(shard, ensure_ascii=False, indent=1), encoding="utf-8")
-        manifest.append({"root": root, "shards": len(shards), "expected_refs": len(refs)})
+        manifest.append({"root": root, "file": safe_name(root),
+                         "shards": len(shards), "expected_refs": len(refs)})
     (outdir / "_coverage_manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
     print(json.dumps(manifest))
@@ -411,7 +425,7 @@ def cmd_persist_coverage(args):
             "resistant_deep_analysis": reconciliation,
             **disp,
         }
-        (ROOT_ARTIFACTS / f"{root.replace('$', '_S_')}.json").write_text(
+        (ROOT_ARTIFACTS / f"{safe_name(root)}.json").write_text(
             json.dumps(artifact, ensure_ascii=False, indent=1), encoding="utf-8")
         ledger_entry = {
             "root_arabic": buckwalter_to_arabic(root),
@@ -420,7 +434,7 @@ def cmd_persist_coverage(args):
             "methodology_revision": METHODOLOGY,
             "corpus_snapshot": SNAP,
             "source": "QAC_MORPHOLOGY v0.4",
-            "artifact": f"artifacts/semantic-campaign/roots/{root.replace('$', '_S_')}.json",
+            "artifact": f"artifacts/semantic-campaign/roots/{safe_name(root)}.json",
             "candidate_root_contribution": judgment.get("candidate_root_contribution"),
             "plain_explanation": judgment.get("plain_explanation"),
             "strongest_counterexample": judgment.get("strongest_counterexample"),
