@@ -1,0 +1,75 @@
+{
+ "root_buckwalter": "$Am",
+ "root_arabic": "ش ا م",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch03-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "The root marks the LEFT side construed as the inauspicious / ill-omened / ill-fated direction — \"left-handedness\" carrying the coloring of doom and misfortune (as opposed to the blessed right). In all occurrences it names the damned cohort via the noun al-mash'amah, literally \"the left(-hand side).\"",
+ "internal_discovery": {
+  "root_buckwalter": "$Am",
+  "root_arabic": "ش أ م",
+  "candidate_root_contribution": "The root marks the LEFT side construed as the inauspicious / ill-omened / ill-fated direction — \"left-handedness\" carrying the coloring of doom and misfortune (as opposed to the blessed right). In all occurrences it names the damned cohort via the noun al-mash'amah, literally \"the left(-hand side).\"",
+  "plain_explanation": "Every one of the 3 confirmed occurrences is the exact same word — الْمَشْـَٔمَة (al-mash'amah, maf'alah pattern) — in the exact same genitive phrase أَصْحَٰبُ الْمَشْـَٔمَةِ \"the companions of the left/ill-omen.\" In 56:9 it appears twice (the emphatic doubling أصحاب المشأمة ما أصحاب المشأمة), and in 90:19 it labels those who disbelieved in God's signs. Across all three the word designates the doomed group placed on the ill-fated left side at the reckoning, in explicit or implicit contrast with أصحاب الميمنة (\"the companions of the right\", from the antonym root ي م ن). The root's contribution — the left as the ominous, damnation-marked direction — is present in every occurrence. However, because the evidence is a single word-type in a single construction repeated three times, the contribution cannot be tested across formal or contextual variation.",
+  "layer_separation_note": "FORM: all 3 are pattern N, the maf'alah noun al-mash'amah (an abstractive/locative noun of the left side). CONSTRUCTION: all 3 are the second term of an iḍāfah headed by أصحاب (\"companions/people of ___\"). PARTICIPANTS: the referent group is the disbelievers/damned (explicit in 90:19: الَّذِينَ كَفَرُوا بِآيَاتِنَا). CONTEXT: eschatological sorting of humanity into cohorts (Sūrat al-Wāqiʿah's tripartite split; Sūrat al-Balad's two-way split). After subtracting form (maf'alah noun), the fixed collocation (أصحاب + genitive), and the Judgment-Day context, the ROOT residue is: \"the LEFT side as the inauspicious/ill-fated direction.\"",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "There is no dissenting occurrence — but the strongest challenge is structural rather than a counterexample: all 3 tokens are one and the same lexeme (المشأمة) in one and the same construction (أصحاب المشأمة). Universal presence is therefore satisfied trivially, because there is only one word-type to satisfy it. No occurrence exercises a different form, a different collocation, or a non-eschatological sense, so the residue is never stress-tested. The nearest thing to a tension is 90:19, where the ill-omen coloring is discharged entirely by the surrounding كَفَرُوا clause, leaving open whether المشأمة itself contributes \"ill-omen\" or merely \"left/the-left-group\" with omen supplied contextually.",
+  "competing_hypothesis": "The observed meaning may reside in a LEXICALIZED technical term المشأمة (\"the [people of the] left = the damned\") rather than in a live, decomposable root residue. On this reading the eschatological/ill-omen sense is a frozen property of the fixed noun-collocation أصحاب المشأمة, not a productive contribution of ش-أ-م recoverable across contexts. With N=1 word-type, the packet cannot discriminate \"root contributes 'ominous-left'\" from \"the word المشأمة lexically means 'the damned cohort'.\" A secondary competing hypothesis: the core root sense is bare directional \"left\" (as in some usages of the root), with \"ill-omen\" being a contextual entailment of the left = losing/doomed side at Judgment, not part of the root residue itself.",
+  "distinctiveness_note": "The residue is distinctive against its nearest neighbor ي م ن (yamana → الميمنة, \"the right/blessed side\"), which is its direct antonym and co-occurs in the same passage (56:8 أصحاب الميمنة vs 56:9 أصحاب المشأمة). It is also distinguishable from the plain directional-left roots ي س ر / ش م ل (yasār / shimāl), which denote \"left\" without the fatalistic/ominous coloring that ش-أ-م adds. So the residue is non-empty and directionally contrastive. Its falsifiability, however, is weak here: with no varied occurrences in the packet, the claim \"left-as-ill-omen (not mere left)\" cannot be independently confirmed or refuted from the evidence alone.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "WEAK",
+  "rationale": "Universal presence formally HOLDS: the candidate contribution — the left side as the inauspicious/ill-fated direction — is demonstrably present in all 3/3 confirmed occurrences, with zero resistant tokens, so the result is PREFERRED rather than UNRESOLVED. Strength is WEAK because the evidentiary base is minimal and non-diverse: a single word-type (المشأمة) in a single construction (أصحاب المشأمة) repeated three times, two of which are the same verse (56:9). Such data satisfies universal presence trivially and cannot separate a live ROOT residue from a lexicalized noun meaning (see competing hypothesis), nor stress-test the \"ill-omen vs. bare-left\" distinction. The residue is non-empty and distinctive against ي م ن / ي س ر, but its falsifiability is not exercised by the packet. Honest verdict: a consistent, plausible contribution that holds across full coverage, held at low confidence due to thin, homogeneous evidence."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "$Am",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "All 3 confirmed occurrences (56:9 twice, 90:19) are the identical lexeme al-mash'amah in the identical construction ashab al-mash'amah, naming the damned cohort by the LEFT side. In both surahs it stands in explicit antithesis to ashab al-maymanah (56:8; 90:18, the blessed right), so the directional 'left(-hand side)' + inauspicious/ill-omened coloring co-occur in every case; the root sh-'-m lexically fuses left-side and ill-omen (vs y-m-n = right/blessing), giving a non-empty, distinctive residue. Falsifiable in principle (a neutral/other sense would refute) but none appears. Caveat: the packet is minimal — a single lexeme in a single construction across all three slots — so universal presence holds trivially with no morphological/constructional diversity to stress-test; not refuted, but the evidence base is narrow."
+ },
+ "coverage_validation": {
+  "root": "$Am",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "56:9:2:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "56:9:5:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "90:19:6:2",
+   "disposition": "CONSISTENT"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "WEAK",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

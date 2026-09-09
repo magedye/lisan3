@@ -1,0 +1,134 @@
+{
+ "root_buckwalter": "Smm",
+ "root_arabic": "ص م م",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch03-coverage",
+ "occurrences": 15,
+ "frozen_candidate_root_contribution": "Closure/imperviousness of the aural channel — the ear sealed shut so that sound, and specifically the call (al-du'a'), does not penetrate or register. The residue is not \"not-hearing\" as a bare negation but a stopped-up, blocked receptive channel: the sealed state that makes aural reception impossible.",
+ "internal_discovery": {
+  "root_buckwalter": "Smm",
+  "candidate_root_contribution": "Closure/imperviousness of the aural channel — the ear sealed shut so that sound, and specifically the call (al-du'a'), does not penetrate or register. The residue is not \"not-hearing\" as a bare negation but a stopped-up, blocked receptive channel: the sealed state that makes aural reception impossible.",
+  "plain_explanation": "Every one of the 15 occurrences means \"deaf / made deaf / became deaf.\" The shared root contribution across all of them is a BLOCKED HEARING CHANNEL — an ear stopped up so sound cannot get in. In 12 places it is the attribute/noun \"the deaf\" (as-summ, al-asamm, summan). Twice (5:71) it is the verb \"they became deaf\" (they closed their own ears). Once (47:23) it is causative \"He made them deaf.\" The residue is stable and literal at the sensory level even when the reference is spiritual: disbelievers are likened to people whose ears are sealed to the call. Three times the object is explicitly al-du'a' (the call) — \"the deaf do not hear the call\" (21:45, 27:80, 30:52), which pins the residue to aural non-reception, not a general dullness.",
+  "layer_separation_note": "FORM: Form V sammu = fientive/reflexive entering the state (\"became deaf / stopped their own ears,\" 5:71) — the voluntary self-closure is contributed by the pattern + agentive subject, not the root; Form IV asammahum = causative (\"God made them deaf,\" 47:23) — the external causation is the pattern's; Form N (asamm/summ) = the resultant attribute/substantive. CONSTRUCTION: as-summ + al-du'a' (21:45, 27:80, 30:52) supplies \"deaf TO the call\"; the triad summ bukm 'umy (2:18, 2:171) and pairings with bukm (6:39, 8:22) / 'umy (17:97, 25:73, 43:40) supply the sensory-catalogue framing. CONTEXT: the near-universal reference to disbelievers/rejecters supplies the spiritual target. Subtracting all of these, the invariant root residue = sealed/blocked auditory receptivity.",
+  "presence": {
+   "occurrences_total": 15,
+   "occurrences_checked": 15,
+   "occurrences_consistent": 15,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "25:73 — \"lam yakhirru 'alayha summan wa 'umyanan\" (\"they do not fall upon them [the ayat] deaf and blind\") — here summ describes the manner in which believers do NOT receive revelation. The reference is inverted (a negated/desired non-state) and abstract, so one might argue the sensory core is bleached. But even here the residue holds: the contrast is precisely between an ear sealed to the ayat versus one open to them; \"deaf\" still contributes blocked aural reception. Likewise 5:71 sammu is fully metaphorical, yet the pattern still denotes entering the sealed-hearing state. Neither dissolves the residue.",
+  "competing_hypothesis": "Etymologically the broader Arabic core of s-m-m is \"solid/sealed/stopped-up\" (sakhra samma' = solid rock; a stoppered vessel), of which deafness is the ear-specific specialization. A competing framing would set the root residue at this more general \"sealed/impervious/solid-shut\" level rather than the narrower \"aural closure.\" Within THIS corpus, however, that broader sense is never independently attested: all 15 occurrences are auditory. So the generic \"sealed-solid\" hypothesis is not falsifiable from the packet, and the narrowest contribution demonstrably present in every occurrence is the aural one. I adopt aural closure as the induced residue while noting the broader sense is compatible but not observable here.",
+  "distinctiveness_note": "Distinctive against its two nearest co-occurring roots: bukm (b-k-m, speech/tongue blocked — output) and 'umy ('-m-y, sight blocked — visual input). Smm is uniquely the AURAL input channel. It is also distinct from waqr (heaviness/dullness in the ear, partial) and from a generic \"not understanding\" (la ya'qilun, which appears alongside it in 8:22, 10:42, 2:171 as a separate consequence): summ is the channel being sealed, not the cognition failing. Residue is non-empty, distinctive, and falsifiable — a single occurrence using Smm for a non-auditory sealing/solidity, or for speech/sight blockage, would break it; none does.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "STRONG",
+  "rationale": "Universal presence holds across all 15 confirmed occurrences after subtracting form, construction, and context. The residue \"sealed/blocked auditory receptivity\" is present in every case: the 12 nominal forms name the bearer of that sealed state; the 2 Form V verbs denote entering it; the 1 Form IV verb denotes causing it. Three occurrences explicitly govern al-du'a' (the call), pinning the residue to aural non-reception; the recurrent triad/pairings with bukm and 'umy contrastively isolate Smm as the hearing-specific member. No occurrence resists — the only abstract/inverted cases (25:73, 5:71) still carry the sealed-ear contribution. Strength STRONG because coverage is complete, the contribution is invariant and construction-independent, and it is sharply distinctive against nearest roots. Not maximal only because the corpus never exhibits the broader etymological \"sealed/solid\" sense, so the induced residue is the narrow auditory specialization rather than a demonstrated general core — an honest boundary, not an inconsistency."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "Smm",
+  "verdict": "PARTIALLY_SUPPORTED",
+  "failing_occurrences": [
+   "10:42",
+   "11:24",
+   "17:97",
+   "25:73",
+   "2:18",
+   "43:40",
+   "47:23",
+   "5:71 (word 5:71:6:2)",
+   "5:71 (word 5:71:13:2)",
+   "6:39",
+   "8:22"
+  ],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Packet: 15/15 confirmed occurrences read (full coverage): 12 N, 2 V(I), 1 V(IV). CORE residue holds universally. Every occurrence denotes a sealed/impervious aural channel (deafness), not merely an event of not-hearing: the definite plural noun الصمّ names a fixed attributed class (10:42, 11:24, 43:40, 8:22, etc.); the Form IV causative فَأَصَمَّهُمْ (47:23) is an act of sealing the ears; Form I صَمُّوا (5:71x2) is entering the sealed state; and 21:45/27:80/30:52 show even a call failing to penetrate — direct support for imperviousness. So part (a) of the proposal (closure of hearing-reception) is demonstrably present in all 15 after subtracting form/construction/context; it is NOT refuted. DISTINCTIVENESS: strong — Smm is cleanly separable from its constant collocates سمع (the reception it negates, contrasted at 11:24 الاصم vs السميع), بكم (expressive/vocal channel), and عمي (visual channel); Smm is specifically the receptive aural channel sealed shut. FALSIFIABLE: yes; would fail on any non-aural sense (solid/hard) or a positive hearing sense — none occur in the packet. WHY NOT SUPPORTED: the contribution AS WORDED over-specifies by binding the residue to al-du'a' ('and specifically the call (al-du'a') does not penetrate or register'). The explicit call/du'a' element appears in only 4 occurrences (21:45, 27:80, 30:52, and 2:171 via دعاءً ونداءً). In the 11 listed failing occurrences there is no call/du'a' context at all (e.g., 2:18 'so they do not return'; 6:39 'in darkness'; 8:22 'who do not reason'; 17:97 physical resurrection state; 25:73 negated 'do not fall deaf/blind'; 5:71 spiritual/moral deafness coupled with blindness; 47:23 causative sealing). Under the packet's own rule to subtract context, al-du'a' is a context feature of the تُسْمِع-cluster, not root residue; its inclusion in the stated contribution is not demonstrable in those 11. Recommended tightening: residue = 'closure/imperviousness of the aural receptive channel — ear sealed shut so aural reception is impossible,' with al-du'a' demoted from residue to a cluster-specific context feature. With that correction the claim would be SUPPORTED; as literally worded it is PARTIALLY_SUPPORTED."
+ },
+ "coverage_validation": {
+  "root": "Smm",
+  "expected_count": 15,
+  "researched_count": 15,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "10:42:7:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "11:24:4:3",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:97:21:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:45:7:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:73:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:80:7:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:171:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:18:1:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:52:7:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "43:40:3:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "47:23:5:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:71:13:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:71:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:39:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "8:22:6:2",
+   "disposition": "CONSISTENT"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "WEAK",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PARTIAL",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

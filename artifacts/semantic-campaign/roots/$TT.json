@@ -1,0 +1,78 @@
+{
+ "root_buckwalter": "$TT",
+ "root_arabic": "ش ط ط",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch03-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "A departure that overshoots remotely far beyond the correct/proper limit — the spatial \"far edge\" sense (cf. shaṭṭ, the far riverbank) generalized to a bound of truth, justice, or measure. The residue is: going too far past the right mark.",
+ "internal_discovery": {
+  "root_buckwalter": "$TT",
+  "root_arabic": "ش ط ط",
+  "candidate_root_contribution": "A departure that overshoots remotely far beyond the correct/proper limit — the spatial \"far edge\" sense (cf. shaṭṭ, the far riverbank) generalized to a bound of truth, justice, or measure. The residue is: going too far past the right mark.",
+  "plain_explanation": "Across all 3 occurrences the root marks something that has gone far beyond the proper bound. In 18:14 and 72:4 it is a statement (object of a speech verb) that overshoots the truth about God — an extreme, far-fetched falsehood. In 38:22 it is a verb (Form IV) asking a judge not to overshoot the standard of just judgment (\"judge with truth and do not shaṭaṭ\"). Speech-excess vs. judicial-excess are different domains, but the same core \"far past the correct limit\" is present in each.",
+  "layer_separation_note": "FORM: N (شَطَطًا, the excess-thing itself, 18:14 & 72:4) vs. V(IV) (تُشْطِط, the act of pushing oneself beyond the bound, 38:22) — the IV form supplies the causative/agentive \"act to excess,\" which is subtracted. CONSTRUCTION: in both N cases شَطَطًا is the accusative object of a verb of saying (قُلْنَا / يَقُولُ), i.e. a statement characterized as overshooting; in 38:22 it is a prohibitive imperative on the judge. CONTEXT: theological speech (18:14, 72:4) vs. judicial conduct (38:22). After subtracting form (thing vs. act), construction (spoken object vs. prohibition), and context (theology vs. court), the residue \"remote overshoot of the correct limit\" remains in all three.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "38:22 (تُشْطِط) is the hardest: read loosely it could mean simply \"be unjust,\" collapsing the root into ظلم/جور and losing distinctiveness. But its pairing with \"احكم بالحق\" (judge with the truth) frames it as overshooting/deviating far from the truth-standard, preserving the \"far beyond the mark\" residue rather than a generic \"do wrong.\" It reconciles.",
+  "competing_hypothesis": "That the contribution is generic \"injustice/wrongdoing/falsehood\" (≈ ظلم / جور / بغى). This is weaker: it fails to explain the distinctive distance/farness component, and it would make شطط redundant with بغى, which occurs in the very same verse (38:22) yet is contrasted with it. The \"remote overshoot\" reading uniquely unifies both an extreme false statement (far from truth) and excessive judgment (far from fair) under one spatial-excess metaphor.",
+  "distinctiveness_note": "Distinct from بغى (aggression/transgression against a party — co-occurs in 38:22 and is contrasted), from ظلم (wrongdoing in general), from جور (deviation from straightness), and from إسراف (wasteful excess). شطط specifically encodes the remoteness/farness of the overshoot from the correct bound. The in-verse contrast with بغى at 38:22 is direct falsifiable evidence for the distinction.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "STRONG",
+  "rationale": "All 3 confirmed occurrences (full coverage) reconcile cleanly with a single residue — \"overshoot remotely far beyond the correct limit\" — after subtracting form (N thing vs. V(IV) act), construction (object-of-speech vs. prohibitive), and context (theological speech vs. judicial conduct). Universal presence holds: no occurrence resists. Distinctiveness is not merely asserted but demonstrated by the in-verse contrast with بغى in 38:22, and the residue is non-empty and falsifiable (any occurrence meaning transgression-against-a-victim without the excess/farness component would break it; none do). The sample is small (n=3), which caps certainty, but the internal consistency is total and mutually reinforcing, so the finding is rated STRONG rather than MODERATE. Packet: D:\\APP\\tafseer\\lisanapp3\\data\\campaign\\packets\\batch03\\$TT.json"
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "$TT",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "All 3 confirmed occurrences of ش ط ط demonstrably carry the residue \"overshooting far past the right mark/proper limit.\" 18:14 (noun شططا): calling on a false god would be an extreme statement overshooting the bound of truth. 38:22 (Form IV تُشطِط): plea to David not to exceed the bound of justice in judgment — Form IV causative separable; notably the same verse uses بغى (baghy) for the actual wrongdoing, letting the text itself distinguish transgression from overshooting-the-just-mark. 72:4 (noun شططا): the foolish one's outrageous falsehood against God, far beyond the bound of truth. Residue is non-empty and consistent across all three (bound of truth in 18:14 & 72:4; bound of justice in 38:22), matching \"far edge\" spatial origin generalized to truth/justice/measure. Distinctiveness vs baghy/ẓulm holds — shaṭaṭ = distance past a correct measure, not mere wronging; the 38:22 pairing with baghy is evidence, not a counterexample. Falsifiable and unrefuted. No anomalous or resistant occurrence found; root unity preserved."
+ },
+ "coverage_validation": {
+  "root": "$TT",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "18:14:19:1",
+   "disposition": "CONSISTENT",
+   "note": "shaTaTan as object of qulnA: a statement that overshoots the truth about God (calling on another deity would be an extreme far-fetched claim). Core 'going too far past the right mark' present in the speech domain."
+  },
+  {
+   "word_ref": "38:22:19:1",
+   "disposition": "CONSISTENT",
+   "note": "Form IV tushTiT contrasted with faHkum bil-Haqq: prohibition against overshooting the standard of just judgment. Core 'far past the correct limit' present in the judicial domain."
+  },
+  {
+   "word_ref": "72:4:7:1",
+   "disposition": "CONSISTENT",
+   "note": "shaTaTan as what the foolish say 'alA llah: an extreme falsehood overshooting the truth. Core residue present in speech-about-God domain."
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "STRONG",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

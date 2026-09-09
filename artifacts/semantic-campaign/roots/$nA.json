@@ -1,0 +1,74 @@
+{
+ "root_buckwalter": "$nA",
+ "root_arabic": "ش ن ا",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch03-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "Active detestation/aversion directed at a human target — an affectively charged hatred that spurns and rejects its object (person or group), tilting toward hostile impulse rather than neutral dislike.",
+ "internal_discovery": {
+  "root_buckwalter": "$nA",
+  "candidate_root_contribution": "Active detestation/aversion directed at a human target — an affectively charged hatred that spurns and rejects its object (person or group), tilting toward hostile impulse rather than neutral dislike.",
+  "plain_explanation": "All three occurrences of ش ن ا name hatred/detestation aimed at people. In 108:3 the active participle شانئك is \"the one who detests you\" — a personal enemy defined by his hatred. In 5:2 and 5:8 the verbal noun شنآن قوم is \"detestation of a people,\" a feeling the believers are warned not to let drive them into transgression or injustice. Whether realized as the agent (the hater) or the abstract affect (the hating), the constant contribution is directed, active hatred toward a human target.",
+  "layer_separation_note": "FORM: 108:3 is a Form-I active participle (شانئ, the agent/hater); 5:2 and 5:8 are the verbal noun (شنآن, the affect/act) — these supply \"the one who does it\" vs. \"the doing of it,\" not the semantic core. CONSTRUCTION: participle + object suffix -ka (hatred aimed at the addressee) vs. verbal noun + genitive قوم (hatred aimed at a people) — construction supplies the target relation. CONTEXT: 108 is personal-enemy polemic; 5:2/5:8 are legal-ethical warnings that group-hatred must not corrupt justice. After subtracting agent-vs-affect (form), the target relation (construction), and the polemic-vs-legal setting (context), the non-empty residue is: active, directed detestation of a human object.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "5:2 شنآن قوم أن صدوكم — here the hatred has a stated cause (their having barred you from the Sacred Mosque), so one might read the word as \"grievance/resentment over a wrong\" rather than pure hatred. But the syntax makes شنآن the emotion that could \"drive you to transgress,\" i.e., a detestation of the people that must be restrained; the cause-clause modifies why the hatred exists, not what the word means. Residue holds.",
+  "competing_hypothesis": "That the root means \"enmity/hostility\" as a relational stance (like عدو) rather than the inner affect of hatred. This is rejected because in 5:2/5:8 the word is precisely the internal feeling that is warned against as a driver of unjust action — it is the affect, not the adversarial relationship itself. Distinct from عدو (adversary/enmity as relation/action), بغض (hatred as mere opposite of love), and كره (dislike/aversion); ش ن ا is intense detestation that spurns and rejects its object. Falsifiable: a neutral or non-affective use (e.g., mere disagreement) would break presence — none of the three do.",
+  "distinctiveness_note": "Residue is non-empty and distinctive against nearest roots: كره = aversion/finding-distasteful (can be involuntary, non-hostile); بغض = hatred as the polar opposite of love (state); عدو = adversarial relation/hostile action. ش ن ا isolates the active, spurning detestation aimed at a human target — the affect that, uncurbed, produces rejection and injustice. Falsifiable and grounded in all three cited refs.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "STRONG",
+  "rationale": "Full coverage: all 3 confirmed occurrences assessed, all consistent. The contribution \"active directed detestation of a human target\" is present in every occurrence after subtracting form (agent participle vs. verbal noun), construction (object suffix vs. genitive قوم), and context (personal polemic vs. legal warning). Residue is non-empty, distinctive vs. كره/بغض/عدو, and falsifiable. Small but fully coherent set with no resistant occurrence, hence STRONG rather than a hedged verdict."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "$nA",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Full coverage: 3/3 occurrences, all Form N (nominal — participle شانئ at 108:3; verbal noun شنآن at 5:2 and 5:8). Root ش ن ء (shana'a), detestation. Every occurrence exhibits the proposed residue after subtracting form/construction: (1) 108:3 شَانِئَكَ — agent-participle \"the one who detests you (the Prophet)\"; active hostile detestation, human target (-ka). (2) 5:2 شَنَـَٔانُ قَوْمٍ — detestation of/toward a people (قوم) who barred you from the Mosque; verse warns it not drive transgression = explicit hostile-impulse tilt. (3) 5:8 شَنَـَٔانُ قَوْمٍ — same construction, human target قوم, warned it not drive injustice. All three: active, affectively charged detestation directed at a human target (person/group), tilting toward hostile impulse. Distinctiveness OK: gloss rightly excludes neutral dislike (كره) and separates from بغض/مقت by tying residue to active spurning detestation with a human object. Falsifiable: predicts human target + hostile affect in every instance; would be refuted by a neutral-dislike or non-human-target case — none present. No resistant/anomalous occurrence; universal presence holds under non-negotiable root unity."
+ },
+ "coverage_validation": {
+  "root": "$nA",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "108:3:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:2:29:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:8:11:1",
+   "disposition": "CONSISTENT"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "STRONG",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

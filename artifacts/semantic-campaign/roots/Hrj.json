@@ -1,0 +1,122 @@
+{
+ "root_buckwalter": "Hrj",
+ "root_arabic": "ح ر ج",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch03-coverage",
+ "occurrences": 15,
+ "frozen_candidate_root_contribution": "An impassable tightness / constriction — a straitening that closes off room to move, breathe, or act. In its most literal packet witness (6:125, صدره ضيقا حرجا) it names an extreme narrowing of the chest; generalized, it is the binding, hemming-in that leaves no give.",
+ "internal_discovery": {
+  "root_buckwalter": "Hrj",
+  "candidate_root_contribution": "An impassable tightness / constriction — a straitening that closes off room to move, breathe, or act. In its most literal packet witness (6:125, صدره ضيقا حرجا) it names an extreme narrowing of the chest; generalized, it is the binding, hemming-in that leaves no give.",
+  "plain_explanation": "The root ح ر ج carries the sense of being hemmed in with no room — a constricting tightness. You see it plainly where the Quran describes a chest made \"narrow and حرجا\" (6:125) or a constriction \"in your chest\" (7:2), and an inner tightness/resistance one might \"find in oneself\" about a judgment (4:65). The large family of legal verses all use the fixed formula \"there is no حرج upon so-and-so\" — over the blind, lame, sick, the weak, the Prophet, the believers (24:61, 48:17, 9:91, 33:37-50, 22:78, 5:6). There the same core sense operates: no constricting restriction/burden is laid upon them. The formula's \"no ... upon\" contributes the removal/exemption; the domain (religion, ablution, adoption law) is context; what is left in every case is the notion of a straitening tightness. Even the abstract legal uses read cleanly as \"no binding constraint is placed on you,\" not as a separate meaning.",
+  "layer_separation_note": "FORM: 14× the noun/masdar حَرَج, 1× the adjective حَرِج (6:125). CONSTRUCTION: 13 of 15 sit in the negated-exemption frame \"لا/ليس/ما ... [مِنْ] حَرَجٍ ... عَلَى X\" — the frame supplies \"there is no X upon/for someone\" (removal), and مِنْ adds partitive \"any.\" CONTEXT supplies the domain: cultic law (5:6 ablution/tayammum), war exemption (9:91, 48:17), commensality (24:61), marriage/adoption law (33:37,38,50), religion broadly (22:78), acceptance of judgment (4:65), reception of revelation (7:2), divine sealing of a heart (6:125). Subtract all three layers and the invariant residue is a constricting tightness/straitening. The residue is non-empty and does the real work in the two non-formulaic chest verses (6:125, 7:2) and the inner-resistance verse (4:65), where no legal-exemption frame is present.",
+  "presence": {
+   "occurrences_total": 15,
+   "occurrences_checked": 15,
+   "occurrences_consistent": 15,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "The purely legal-permission verses 33:37, 33:38, 33:50 are the hardest: there \"no حرج upon the Prophet/the believers\" concerning marrying adopted sons' ex-wives reads most naturally in English as \"no blame/sin,\" which could suggest the root means culpability rather than constriction. However, the constriction reading still fits — the removal of a binding legal restriction that would otherwise hem the person in — and, decisively, 24:61 places حرج and جناح side by side in one verse, showing the Quran does not treat حرج as the blame-word (that is جناح); حرج is the straitening these persons are freed from.",
+  "competing_hypothesis": "The strongest rival is root = \"blame / sin / culpability,\" fitting the many \"there is no حرج upon\" exemption verses. It is rejected because (a) it cannot cover 6:125 (a chest made \"narrow, حرجا\") or 7:2 (constriction \"in your chest\") or 4:65 (a tightness \"found within themselves\"), which have no legal-blame content; (b) 24:61 contrasts حرج with جناح in a single verse, assigning the blame role to جناح, not حرج. The constriction hypothesis subsumes all 15 occurrences; the blame hypothesis is itself a context-derived gloss of the exemption frame.",
+  "distinctiveness_note": "Against ض ي ق (narrowness): 6:125 pairs ضيقا with حرجا, treating حرج as an intensification — an impassable, extreme constriction beyond ordinary narrowness — so the two are related but not identical, حرج being the tighter, more closed-off pole. Against ج ن ح (جناح, culpable tilt/blame): 24:61 uses both in one verse, isolating حرج as the constriction/hardship term and جناح as the blame term. Against ع ن ت (hardship/distress): حرج is specifically spatial-constrictive (no room), not generic hardship. The residue is thus distinctive and falsifiable: it would fail if some occurrence required \"openness/ease\" or pure \"sin\" with no straitening sense — none does.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "STRONG",
+  "rationale": "All 15 confirmed occurrences reduce to one invariant residue — impassable constricting tightness/straitening — after subtracting the negated-exemption construction, the masdar/adjective form, and domain context. The reading is anchored, not inferred, by the two non-formulaic chest verses (6:125 adjective beside ضيق; 7:2) and the inner-resistance verse (4:65), which exhibit the literal constriction with no legal frame. The 13 exemption verses then follow as the same residue applied to obligation (\"no straitening restriction upon X\"). Two independent intra-packet contrasts secure distinctiveness: حرج intensifies ضيق (6:125) and is differentiated from جناح/blame (24:61). No occurrence resists; universal presence holds. Strength is STRONG rather than absolute only because the majority legal uses are frame-driven and, taken alone, could be misread as \"blame\" — but the packet's own juxtapositions settle this against the rival."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "Hrj",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Adversarial refutation failed to find any unreconciled occurrence across all 15 (full coverage accounted for). Two clusters. Cluster A (affirmed, inner): 6:125 (ADJ, صدره ضيقا حرجا — literal impassable chest-narrowing), 7:2 (حرج في صدرك), 4:65 (حرجا في أنفسهم — inner constriction/resistance) demonstrate the contribution directly from the packet text. Cluster B (legal, mostly negated لا/ليس...حرج): 22:78, 5:6, 33:37, 33:38, 33:50, 24:61x3, 48:17x3, 9:91 — here حرج is standardly glossed 'blame/sin,' the adversarial pressure point. But each is coherent as the lifted binding constraint (no hemming into an impossible/tight obligation → room to act: eat, marry, be excused from war). 5:6 confirms this internally by contrasting حرج with God not wanting to burden (يريد ليطهركم), framing حرج as imposed constriction/hardship, not mere juridical guilt. No occurrence affirms حرج in a sense incompatible with constriction (none = reward/permission/expansion), so the negated legal uses instantiate the residue as the thing negated. Distinctiveness vs nearest root Dyq (ضيق) is strong: co-occurrence in 6:125 (ضيقا حرجا) shows حرج is not redundant with ضيق but its intensive, impassable degree ('no give / cannot pass') — exactly the proposed residue. Falsifiable and not falsified: claim predicts closing-off/no-room in every occurrence; a positive/expansive حرج would refute it and none exists. Caveat: Cluster B's residue is carried metaphorically (constraint/being hemmed-in) rather than physical narrowing, but it is coherent everywhere and text-internally anchored by Cluster A and by 5:6, so universal presence holds under non-negotiable root unity."
+ },
+ "coverage_validation": {
+  "root": "Hrj",
+  "expected_count": 15,
+  "researched_count": 15,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "22:78:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "24:61:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "24:61:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "24:61:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:37:37:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:38:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:50:57:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "48:17:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "48:17:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "48:17:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:65:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:6:53:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:125:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:2:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "9:91:14:1",
+   "disposition": "CONSISTENT"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "STRONG",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

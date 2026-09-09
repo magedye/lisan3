@@ -1,0 +1,122 @@
+{
+ "root_buckwalter": "$kk",
+ "root_arabic": "ش ك ك",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch03-coverage",
+ "occurrences": 15,
+ "frozen_candidate_root_contribution": "The root contributes a state of unsettled uncertainty: the mind held in suspension between alternatives, not firmly decided/convinced about the truth of some object-claim. In every occurrence it names a subject's non-settledness regarding a specific matter (a revelation, a religion, the Hereafter, a messenger's call, or God). After subtracting the noun form and its construction, the residue is \"wavering / lack of firm conviction about X\" — neither knowledge (علم/يقين) nor mere leaning (ظنّ), but an interior non-resolution.",
+ "internal_discovery": {
+  "root_buckwalter": "$kk",
+  "candidate_root_contribution": "The root contributes a state of unsettled uncertainty: the mind held in suspension between alternatives, not firmly decided/convinced about the truth of some object-claim. In every occurrence it names a subject's non-settledness regarding a specific matter (a revelation, a religion, the Hereafter, a messenger's call, or God). After subtracting the noun form and its construction, the residue is \"wavering / lack of firm conviction about X\" — neither knowledge (علم/يقين) nor mere leaning (ظنّ), but an interior non-resolution.",
+  "plain_explanation": "Every one of the 15 confirmed occurrences is the noun شَكّ (\"doubt\"). Fourteen appear in the locative construction (لـ)فِى شَكٍّ — \"(they/you are) IN doubt\" — treating doubt as a state one is inside of. The remaining one (14:10) is the nominative in a rhetorical question, أَفِى ٱللَّهِ شَكٌّ (\"Is there any doubt about God?\"), which presupposes there should be none — still the same noun with the same meaning. In each case the object of doubt is introduced by مِن / مِمَّا / مِنْه / مِنْها (about my religion 10:104, about what We sent down 10:94, about it 11:110, about what you call us to 11:62/14:9, about the Hereafter 27:66/34:21, about My reminder 38:8, about what came to you 40:34, about it 41:45/42:14/4:157). Two (34:54, 44:9) leave the object implicit but the context (revelation/the reckoning) is identical. The contribution — being unsettled/uncertain about a truth-claim — is demonstrably present in all 15.",
+  "layer_separation_note": "FORM: a single lexeme, the noun/verbal-noun شَكّ (form N, 15/15) — no morphological variation to subtract. CONSTRUCTION: locative فِى شَكّ (\"in a state of doubt\") in 14/15, often with emphatic لـ (لَفِى شَكٍّ) — this contributes the \"being-inside-a-state\" framing, not the doubt itself; 14:10 uses شَكّ as subject of an existential rhetorical question. OBJECT/PARTICIPANTS: the doubted matter is a separate slot filled by مِن/مِمَّا phrases (religion, revelation, Hereafter, reminder, messenger's call, God); the doubters are consistently disbelievers/addressees resisting a messenger. QUALIFIER: مُرِيب (\"disquieting/suspicion-inducing,\" from ريب) modifies شَكّ in 6 places (11:110, 11:62, 14:9, 34:54, 41:45, 42:14) — this is an added adjective, not part of the root residue. RESIDUE after stripping all of the above: the bare interior state of uncertainty / non-firmness of conviction.",
+  "presence": {
+   "occurrences_total": 15,
+   "occurrences_checked": 15,
+   "occurrences_consistent": 15,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "14:10 — أَفِى ٱللَّهِ شَكٌّ (\"Is there any doubt concerning God?\"). This is the only non-فِى-شَكّ-state token: شَكّ is nominative subject of a rhetorical existential question, and its object is God's very reality rather than a revelation/message. It is also the only case where the verse's rhetorical thrust asserts doubt should NOT exist. Yet the lexical contribution is unchanged — the word still denotes uncertainty about a truth, and the rhetorical question only works because شَكّ means exactly \"unsettled uncertainty.\" It does not resist the proposed residue; it confirms it by negation.",
+  "competing_hypothesis": "That the residue is not neutral \"uncertainty\" but \"disquieting suspicion / troubled misgiving\" — i.e. that شَكّ collapses into the sense of ريب (rayb). This is tempting because مُرِيب co-occurs with شَكّ six times.",
+  "distinctiveness_note": "The competing hypothesis fails precisely on the co-occurrence data: because شَكٍّ مُّرِيب (\"doubt that disquiets\") uses مُرِيب as an adjective qualifying شَكّ, the two cannot be synonyms — a word does not take its own meaning as a modifier. This shows شَكّ is the neutral base state (uncertainty) onto which ريب adds \"disquiet/suspicion.\" شَكّ is likewise distinct from (a) ظنّ \"conjecture/leaning\" — contrasted in 4:157 where the doubters, lacking knowledge, \"follow only ظنّ\" while being فِى شَكّ; (b) علم / يقين \"knowledge/certainty\" — the polar opposite the doubters lack; and (c) امتراء (mry) — 10:94 moves from \"if you are in شَكّ\" to \"be not of the مُمْتَرِين.\" The residue \"unsettled non-conviction about a truth-claim\" is non-empty, distinctive, and falsifiable (it would fail if any occurrence used شَكّ for settled certainty, physical piercing/interlacing, or mere emotional distress without an epistemic object — none do).",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "STRONG",
+  "rationale": "Full coverage: all 15 confirmed occurrences assessed, all 15 consistent. The root is mono-form (noun شَكّ, 15/15), giving unusually clean separation: there is no verbal morphology to disentangle, only the recurrent locative construction فِى شَكّ (14/15) and an object slot, both of which are cleanly subtractable. After removing form, the \"in-a-state\" construction, the object phrases, and the adjectival qualifier مُرِيب, a single stable residue remains in every occurrence — the interior state of unsettled uncertainty / non-firm conviction about a truth-claim. It is present even in the one structurally deviant token (14:10, rhetorical nominative), which relies on that exact meaning. The residue is non-empty, falsifiable, and distinctive against the nearest roots ريب (disquiet — shown by adjectival co-occurrence to be additive, not identical), ظنّ (conjecture, explicitly contrasted in 4:157), and علم/يقين (its opposite). No occurrence resists; universal presence holds."
+ },
+ "adversarial_verification": {
+  "distinctiveness_ok": true,
+  "failing_occurrences": [],
+  "falsifiable": true,
+  "root_buckwalter": "$kk",
+  "verdict": "SUPPORTED",
+  "notes": "All 15 confirmed occurrences are the single noun form شَكّ in a prepositional construction — 13 explicitly as فِى شَكٍّ مِّن X (\"in doubt about X\") and the collocation شَكٍّ مُّرِيبٍ. After subtracting the noun form and its construction, the residue \"wavering / lack of firm conviction about a specific matter X\" is demonstrably present in every one: religion (10:104), the revelation (10:94, 40:34), the scripture/Reminder (11:110, 38:8, 41:45, 42:14, 4:157), the messengers' call (11:62, 14:9), God (14:10), and the Hereafter (27:66, 34:21).\n\nAdversarial resistance was concentrated on the two occurrences where the object-claim X is syntactically elided: 34:54 (شكّ مريب) and 44:9 (فى شكّ يلعبون). In both, X is not carried by the construction but supplied by immediate context (resurrection/the message; the promised Day/smoke), and the minimal residue — non-settledness / lack of firm conviction — survives even 44:9's dismissive-mocking register. Neither defeats universal presence; they are elided-object constructions, not counterexamples. No occurrence carries a sense of certainty, of a definite leaning, or of the classical physical \"splitting\" sense.\n\nDistinctiveness is corroborated internally: 27:66 and 4:157 oppose شكّ to علم (knowledge); 4:157 keeps شكّ separable from ظنّ (they doubt AND merely conjecture); and the recurring qualifier مريب treats شكّ (the doubt-state) as distinct from ريب's disquiet. The claim is falsifiable (a certainty/leaning/physical-splitting sense would refute it) and is not falsified by any occurrence. Under non-negotiable root unity, universal presence holds across all 15."
+ },
+ "coverage_validation": {
+  "root": "$kk",
+  "expected_count": 15,
+  "researched_count": 15,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "10:104:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:94:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "11:110:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "11:62:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "14:10:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "14:9:33:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:66:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "34:21:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "34:54:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "38:8:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:34:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "41:45:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "42:14:28:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "44:9:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:157:22:1",
+   "disposition": "CONSISTENT"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "STRONG",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

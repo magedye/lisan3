@@ -1,0 +1,74 @@
+{
+ "root_buckwalter": "$Hn",
+ "root_arabic": "ش ح ن",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch03-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "Loading up / freighting to capacity — the act or resultant state of a vessel being packed with its cargo and passengers. The root residue is \"being laden/freighted\": filled by having a load put into it, not merely spatially full.",
+ "internal_discovery": {
+  "root_buckwalter": "$Hn",
+  "candidate_root_contribution": "Loading up / freighting to capacity — the act or resultant state of a vessel being packed with its cargo and passengers. The root residue is \"being laden/freighted\": filled by having a load put into it, not merely spatially full.",
+  "plain_explanation": "The root ش ح ن occurs in the Quran only three times, and in every case it is the same word: مَشْحُون, the passive participle describing الفلك (the ship) — \"the laden ship.\" In 26:119 it is Noah's ark that saves him and those with him; in 36:41 it is the loaded ship carrying people's offspring as a sign; in 37:140 it is the ship Jonah flees to. Across all three the ship is characterized as loaded/freighted — packed with its load of people (and by narrative implication provisions/animals). The root's contribution across the full set is the notion of being loaded up to full capacity.",
+  "layer_separation_note": "FORM (مَفْعُول passive participle): contributes \"having had X done to it\" — the ship is the patient of the loading action, a resultant state, not an agent. CONSTRUCTION: definite attributive adjective modifying الفلك, i.e. an epithet of the ship. CONTEXT: all three sit in sea/ark deliverance narratives (Noah; a generic sign of divine carrying; Jonah), supplying the voyage/salvation framing which is NOT part of the root. Subtracting these layers, the ROOT residue is the bare idea of loading/freighting to capacity — a vessel packed with its load. Caveat: the root surfaces in only one form and one collocation, so this subtraction cannot be independently cross-checked against other forms of the same root.",
+  "strongest_counterexample": "There is no resistant occurrence — all three tokens are the literally identical word مَشْحُون. The real weakness is not a counterexample but the total absence of variation: the root never appears outside الفلك المشحون, so nothing tests whether the residue is \"loading with freight\" specifically versus a more generic \"filled/full.\" A hostile reading could claim the three tokens are one frozen lexical fossil, not evidence of a productive root contribution.",
+  "competing_hypothesis": "Nearest competitor is the generic \"fill\" sense (cf. مَلَأ, to fill). One could argue the residue is merely \"full/filled,\" with \"cargo/loading\" supplied entirely by the ship context. Against this: the passive participle here consistently frames the ship as the recipient of a deliberate loading act (people carried aboard — reinforced by حَمَلْنَا ذُرِّيَّتَهُمْ in 36:41), which favors \"laden/freighted\" (a load put in) over neutral spatial \"fullness.\" But with only one collocation, this distinction cannot be decisively proven from the packet alone.",
+  "distinctiveness_note": "Distinctive residue vs مَلَأ (fill a space with any substance/quality) and حَمَل (carry a burden): ش ح ن profiles the vessel as loaded up with a freight to capacity — the patient-state of having cargo/passengers put into it. It is not \"carrying\" (agentive transport, حمل) nor abstract \"filling\" (ملأ); it is the resultant laden condition of a container that has been freighted. Falsifiable: if a future confirmed occurrence used مشحون / any ش ح ن form for something filled with a non-load quality (e.g. filled with light, anger) without a loading/freighting event, the residue would fail.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "Universal presence holds trivially and completely: all 3/3 confirmed occurrences are the identical passive participle مَشْحُون, and the candidate contribution (being loaded/freighted to capacity) is demonstrably present in every one after subtracting the مَفْعُول form, the attributive construction, and the ark-narrative context. There is no resistant or anomalous occurrence, so the result is PREFERRED rather than UNRESOLVED. Strength is MODERATE, not STRONG, because the entire evidence base is a single frozen collocation (الفلك المشحون) in one morphological form with zero internal variation — the root's contribution cannot be triangulated across differing forms, participants, or constructions, so the separation of root residue from construction/context is asserted but not independently corroborated within the packet.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "$Hn",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "All 3 confirmed occurrences (26:119, 36:41, 37:140) are the identical construction: Form I passive participle al-mashHun ('the laden') modifying al-fulk ('the ship'). The proposed residue 'being laden/freighted — filled by having a load put into it, not merely spatially full' is demonstrably present in each: a vessel loaded with people/animals (26:119), offspring/cargo (36:41), and cargo (37:140). No failing occurrence found. Distinctiveness is internally corroborated at 36:41, where HamalnA ('We carried') co-occurs with al-mashHun, separating shHn (laden state of the vessel) from Hml (act of carrying) and from mal>a (merely spatially full). Falsifiable: predicts a loaded vessel at every occurrence; no counter-instance in packet. Caveat: the set is homogeneous (one form, one construction, one collocate), so universal presence holds but is only stress-tested within the ship-lading context; there is no independent variation to further probe the residue. The 'to capacity' phrasing in the proposal is not lexicalized by mashHun ('laden/loaded'), but the stated core residue holds in all three."
+ },
+ "coverage_validation": {
+  "root": "$Hn",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "26:119:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "36:41:8:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "37:140:5:2",
+   "disposition": "CONSISTENT"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

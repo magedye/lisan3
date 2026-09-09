@@ -1,0 +1,259 @@
+{
+ "root_buckwalter": "Eql",
+ "root_arabic": "ع ق ل",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch03-coverage",
+ "occurrences": 49,
+ "frozen_candidate_root_contribution": "The active mental operation of grasping and connecting input — signs, speech, or consequences — into an intelligible conclusion that ought to govern belief and conduct. Across all 49 occurrences the verb never denotes stored knowledge or a possessed fact; it denotes a *process* that is demanded of, exercised by, or absent in the subject: turning heard/seen/read evidence into a binding comprehension. This is why it recurs in the imperative-rebuke (\"do you not then reason?\"), the qualifier (\"signs for a people who reason\"), the purpose clause (\"that you may reason\"), and the accusation (\"they do not reason\"). Distinctively, when transitive its object is precisely something to be construed — the word of God (2:75 \"after they had comprehended it\"), the parables (29:43 \"none comprehends them but the learned\") — and its located organ is the heart (22:46 \"hearts by which they reason\"), while it is repeatedly set beside/above mere hearing (10:42, 25:44, 67:10, 2:75). The residue is therefore the connective-comprehending act, not the perception that feeds it nor the knowledge that might result.",
+ "internal_discovery": {
+  "root_buckwalter": "Eql",
+  "root_arabic": "ع ق ل",
+  "candidate_root_contribution": "The active mental operation of grasping and connecting input — signs, speech, or consequences — into an intelligible conclusion that ought to govern belief and conduct. Across all 49 occurrences the verb never denotes stored knowledge or a possessed fact; it denotes a *process* that is demanded of, exercised by, or absent in the subject: turning heard/seen/read evidence into a binding comprehension. This is why it recurs in the imperative-rebuke (\"do you not then reason?\"), the qualifier (\"signs for a people who reason\"), the purpose clause (\"that you may reason\"), and the accusation (\"they do not reason\"). Distinctively, when transitive its object is precisely something to be construed — the word of God (2:75 \"after they had comprehended it\"), the parables (29:43 \"none comprehends them but the learned\") — and its located organ is the heart (22:46 \"hearts by which they reason\"), while it is repeatedly set beside/above mere hearing (10:42, 25:44, 67:10, 2:75). The residue is therefore the connective-comprehending act, not the perception that feeds it nor the knowledge that might result.",
+  "plain_explanation": "This root is one word used one way in all 49 places: a verb meaning \"to use one's reason / to comprehend.\" God repeatedly points to natural signs (day and night, rain reviving the earth, sun and moon), to scripture, and to moral facts (the hereafter is better than this life), and then asks whether people \"reason\" — i.e. whether they actually connect the evidence in front of them to the obvious conclusion. People who fail to do this are compared to cattle (25:44), to the deaf-dumb-blind (2:171, 8:22), and to the worst of beasts (8:22). The word is never about having information; it is about the live act of grasping and joining the dots. That single sense fits every occurrence with no exceptions.",
+  "layer_separation_note": "FORM: The packet tags all 49 as \"Form V,\" but morphologically these are the base verb (Form I) عَقَلَ / يَعْقِلُ; the tag is a corpus artifact and, being uniform, adds no differentiating semantic layer — it actually makes root isolation cleaner. The only inflectional split is perfect (عَقَلُوهُ 2:75) vs imperfect (all others), which contributes tense, not root meaning. CONSTRUCTION: the recurring wrappers — أفلا…؟ (rhetorical rebuke, ~14x), لِقَوْمٍ …ون (relative qualifier, 8x), لعلّكم … (purpose, 8x), لا … (negation, ~12x), إن كنتم … (condition, 2x) — supply modality/polarity/pragmatics, not the verbal core. PARTICIPANTS: subjects are humans (addressees, \"most of them,\" qawm); transitive objects are speech/parables; instrument is the heart — all context. CONTEXT: what is to be reasoned about (cosmic signs / scripture / eschatology) varies, but the reasoning act is constant. After subtracting all four layers the residue — the connective act of comprehension — is non-empty and stable.",
+  "presence": {
+   "occurrences_total": 49,
+   "occurrences_checked": 49,
+   "occurrences_consistent": 49,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "29:43 \"وَمَا يَعْقِلُهَآ إِلَّا ٱلْعَٰلِمُونَ\" — \"none reason/comprehend them [the parables] except those who know.\" This is the strongest tension because it pairs the verb with ٱلْعَٰلِمُونَ (the knowers), risking collapse into \"knowledge\" (علم). But it in fact confirms the residue: the parables (هَا) are the object to be *construed*, and the verse distinguishes the act of construing them from the class of people (the learned) capable of it — reasoning is the operation, knowledge is the precondition, not the same thing. The other candidate, 22:46 \"قُلُوبٌ يَعْقِلُونَ بِهَا\" (hearts by which they reason), also holds: it names the organ/instrument of the act without altering the act itself.",
+  "competing_hypothesis": "That the root simply means \"to know / understand,\" overlapping علم (ʿilm). This is rejected on packet-internal grounds: (1) the verb is never a state of possessing facts but always an act demanded, hoped-for, conditional, or lacking; (2) it is repeatedly contrasted with or ranked alongside sensory intake — \"hear or reason\" (25:44, 67:10), \"heard the word of God then… after they had reasoned it\" (2:75), \"hearts to reason with / ears to hear with\" (22:46); (3) 29:43 explicitly separates the reasoners' act from the knowers' status. A secondary competing hypothesis — the etymological \"binding/restraining\" sense (عقال, the camel-hobble) as the true unifier — is plausible and would elegantly explain \"reason = that which binds scattered impressions/conduct,\" but it is NOT derivable from the occurrences (no nominal or restraint-sense token appears in this set), so I decline to make it load-bearing.",
+  "distinctiveness_note": "Against nearest cognition roots, the packet-internal residue holds: vs علم (ʿilm, possessed knowledge) — ʿaql is act, not state (see competing_hypothesis, 29:43); vs سمع (samʿ, hearing) — explicitly ranked beyond it (25:44, 67:10, 10:42); vs فقه/فكر/دبر — those are not in this set, but ʿaql here is specifically the *response* the addressee must perform on presented signs/speech, always second-person-rebuke or third-person-deficit framed, tightly bound to ayat/kalam. Falsifiable claim: if any occurrence used the verb for static possessed knowledge with no construal object or evidential trigger, the residue would fail. None does. Caveat: the fine \"binding/connective\" nuance vs a bare \"comprehend\" gloss is only weakly separable from the packet alone; the core \"active comprehension, not knowledge\" distinction is strongly separable.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "STRONG",
+  "rationale": "All 49 confirmed occurrences are a single lexeme (the base verb of ع ق ل) with one stable contribution — the active operation of comprehending/reasoning, i.e. binding presented evidence (signs, speech, consequences) into a governing conclusion. Every occurrence, including the transitive (2:75, 29:43) and instrumental (22:46) and first-person (67:10) cases, is accounted for with zero resistant or forced fits; no majority reasoning was needed because the set is uniform. Layer separation is clean: the uniform (if mislabeled) form tag, the syntactic wrappers (أفلا / لعلّ / لا / لقوم / إن كنتم), the participants, and the varying subject-matter all subtract cleanly, leaving a non-empty, distinctive, falsifiable residue. Strength is STRONG because of full coverage, single-form uniformity, and no counterexamples; the one honest reservation is that the deepest \"binding\" unity (the etymological عقال sense) cannot be evidenced from the packet and is deliberately kept out of the load-bearing claim, and the finest nuance vs a bare \"comprehend\" gloss is only weakly separable internally — but the operative distinction (active comprehension, not possessed knowledge) is well grounded in the occurrences themselves."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "Eql",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Full coverage verified: all 49 occurrences are the single mental-comprehension verb 3aqala/ya3qilu (packet labels form \"V\"; morphologically Form I, but uniform, so semantically irrelevant). No nominal or alternate-sense members (no 3iqal \"tether\", no ma3qil, no blood-money 3aql) — the packet is semantically homogeneous, which makes universal presence easy to sustain. The proposed residue (active connective-comprehending act; a process demanded/exercised/absent in the subject; never stored knowledge or bare perception) is demonstrable in every cluster: imperative-rebuke afala ta3qilun (incl. objectless 37:138, where the object is the surrounding evidence), qualifier li-qawmin ya3qilun over signs, purpose la3allakum ta3qilun (incl. Arabic-Quran 12:2/43:3), accusation la ya3qilun, transitive 2:75 (3aqaluhu = God's word) and 29:43 (ya3qiluha = the parables), organ 22:46 (heart), and contrast-with-hearing 67:10/25:44/10:42/2:75. Adversarial candidates tested and reconciled: dispositional \"they do not reason\" (8:22, 2:171, 5:58, 59:14, 39:43 idols) denote process-absence, explicitly covered by the proposal's \"absent in the subject\", and none shifts to stored-knowledge/perception; 29:43 lightly tensions the \"not the resulting knowledge\" rider by linking comprehension to al-3alimun, but the verb still denotes the construing act with \"the learned\" as agent-qualifier. Distinctiveness holds (paired against sam3, seated in qalb, object = God's word/parables; distinct from possessed 3ilm and from mere sam3/nazar). Falsifiable: proposal names explicit defeaters (would fail on stored knowledge or mere perception). No unreconciled occurrence; under non-negotiable root unity, verdict = SUPPORTED."
+ },
+ "coverage_validation": {
+  "root": "Eql",
+  "expected_count": 49,
+  "researched_count": 49,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "10:100:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:16:18:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:42:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "11:51:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:109:29:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:2:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "13:4:27:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:12:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:67:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:10:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:67:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "22:46:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "23:80:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "24:61:76:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:44:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:28:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:60:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:35:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:43:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:63:22:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:164:43:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:170:19:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:171:18:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:242:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:44:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:73:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:75:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:76:23:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:24:21:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:28:27:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "36:62:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "36:68:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "37:138:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "39:43:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "3:118:30:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "3:65:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:67:30:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "43:3:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "45:5:20:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "49:4:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "57:17:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "59:14:23:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:103:21:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:58:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "67:10:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:151:42:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:32:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:169:40:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "8:22:10:1",
+   "disposition": "CONSISTENT"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "STRONG",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

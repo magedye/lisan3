@@ -1,0 +1,95 @@
+{
+ "root_buckwalter": "$kw",
+ "root_arabic": "ش ك و",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch03-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "The act of laying open / pouring out an inner distress or grievance and directing it outward toward a recipient for relief. Derived from the two verbal occurrences: 12:86 أَشْكُوا۟ (Form I) explicitly pairs the act with its inner object بَثِّى وَحُزْنِى (\"my anguish and grief\") and the recipient إِلَى ٱللَّهِ; 58:1 تَشْتَكِى (Form VIII) shows the same directional structure إِلَى ٱللَّهِ over a marital grievance. The residue after subtracting form and the إلى-recipient construction is: exposing-what-is-held-within-as-a-grievance to another.",
+ "internal_discovery": {
+  "root_buckwalter": "$kw",
+  "root_arabic": "ش ك و",
+  "candidate_root_contribution": "The act of laying open / pouring out an inner distress or grievance and directing it outward toward a recipient for relief. Derived from the two verbal occurrences: 12:86 أَشْكُوا۟ (Form I) explicitly pairs the act with its inner object بَثِّى وَحُزْنِى (\"my anguish and grief\") and the recipient إِلَى ٱللَّهِ; 58:1 تَشْتَكِى (Form VIII) shows the same directional structure إِلَى ٱللَّهِ over a marital grievance. The residue after subtracting form and the إلى-recipient construction is: exposing-what-is-held-within-as-a-grievance to another.",
+  "plain_explanation": "This root's clear meaning is \"to complain / voice a grievance\" — to take an inner pain or wrong and lay it open before someone who can address it. Both verb occurrences do exactly this, and both direct the complaint \"to Allah\" (إلى الله): Jacob pouring out his grief (12:86), and the woman appealing over her husband (58:1). The problem is the third occurrence, 24:35, which is not a verb of complaining at all but the noun مِشكاة — a \"niche\" or recess in a wall that holds a lamp. A niche has no grievance, no one complaining, and no recipient. To make the niche \"fit\" the complaint sense you have to reach outside the packet (to classical lexica about شكوة as a receptacle/waterskin, or to the loanword hypothesis for mishkāt), which the rules forbid as evidence. So the crisp contribution proven in two of three occurrences is genuinely absent from the third, and I cannot honestly claim universal presence.",
+  "layer_separation_note": "FORM: 12:86 is Form I (أَشْكُو, simple imperfective); 58:1 is Form VIII (تَشْتَكِى, reflexive/self-involving \"take up one's grievance\"); 24:35 is a مِفعَلة/instrument-place noun (مِشكاة) denoting a vessel/recess, not a verbal event. CONSTRUCTION: both verbs govern إِلَى + recipient (ٱللَّه in both), and 12:86 additionally names the inner object (بَثّ وحُزن); the noun has no argument structure of complaint at all — its complement فِيهَا مِصْبَاحٌ describes physical containment. PARTICIPANTS: complainant (Jacob / the disputing woman) + addressee-relief-giver (Allah) in the two verbs; the niche has a contained object (lamp/light), not a grievance. CONTEXT: bereavement (Yusuf) and marital wrong (Mujadila) vs. a light-parable of divine guidance. After stripping these layers, the verbal residue \"expose-inner-grievance-outward\" is non-empty and distinctive; the nominal residue reduces only to \"bounded hollow that holds/presents an object,\" which is a different notion.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 2,
+   "inconsistent_refs": [
+    "24:35"
+   ]
+  },
+  "strongest_counterexample": "24:35 كَمِشْكَوٰةٍ فِيهَا مِصْبَاحٌ — the noun مِشكاة is a lamp-niche/recess. Under the candidate contribution (\"lay open an inner grievance to a recipient\") there is nothing to reconcile: no complainant, no grievance, no directed appeal, and no addressee who grants relief. The only way to bridge it to the complaint sense is to substitute a far more abstract notion (\"a hollow/receptacle that holds and presents its content outward\") and then re-read the verbs through that abstraction — but that shift is post-hoc, leans on external lexicography (شكوة = waterskin) and on the contested loanword status of mishkāt, both of which are inadmissible as packet-internal evidence. The grievance residue is therefore falsifiably absent here.",
+  "competing_hypothesis": "A maximally abstract unifier: \"a bounded aperture/receptacle through which inner content is held and presented outward.\" This would nominally cover all three — the verb = presenting inner distress outward to Allah; the niche = holding a lamp and presenting its light outward. It is rejected on two grounds: (1) it is non-distinctive — it would equally describe roots like ف-ت-ح (opening), ك-و-ة (aperture), or any container root, so it fails the \"distinctive vs nearest roots\" and \"falsifiable\" tests; (2) it can only be reached by draining the verbal occurrences of their defining grievance/complaint content, which is precisely the stable, distinctive residue the two verbs actually carry. Choosing it would force unity at the cost of the real signal.",
+  "distinctiveness_note": "The verbal residue is distinctive against near neighbors: vs د-ع-و (to call/petition) — shakw specifically exposes a pain/wrong rather than merely summoning; vs ب-ث-ث (to spread out) — bathth is the object of the complaint (12:86), not the act itself; vs ن-د-ب/ص-ر-خ (lament/cry out) — shakw is targeted \"to\" a relief-giver (إلى الله) rather than undirected outcry. This distinctiveness is exactly what the niche occurrence lacks, since مِشكاة shares nothing with the grievance field.",
+  "unresolved_cases": [
+   "24:35 (مِشكاة, Form N): niche/lamp-recess cannot be reconciled with the grievance-exposure contribution proven in the two verbal occurrences using packet-internal evidence alone; QAC assigns the lemma to root $kw, but the semantic bridge requires inadmissible external lexicon or the contested loanword hypothesis."
+  ],
+  "result": "UNRESOLVED",
+  "result_strength": "UNRESOLVED",
+  "rationale": "Two of the three confirmed occurrences (12:86, 58:1) yield a crisp, distinctive, falsifiable root contribution — \"lay open an inner grievance/distress and direct it outward to a recipient for relief\" — reinforced by identical إِلَى ٱللَّه construction across differing verbal forms (I vs VIII). However, the third occurrence, the noun مِشكاة (24:35), carries none of this: no complainant, no grievance, no directed appeal. Reconciling it demands either an over-abstract, non-distinctive unifier (\"receptacle presenting content outward\") that dissolves the very signal the verbs establish, or appeal to external lexica — both disallowed. Per the non-negotiable unity rule (no majority; a single irreconcilable occurrence defeats universal presence), I record 24:35 as resistant and do not force it. Universal presence does not hold; result is UNRESOLVED."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "$kw",
+  "verdict": "REFUTED",
+  "failing_occurrences": [
+   "24:35"
+  ],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Packet has 3 confirmed occurrences (full_coverage=true), but the proposed contribution was explicitly derived from only the 2 verbal occurrences, silently omitting the third. 12:86 (أَشْكُوا۟, Form I) and 58:1 (تَشْتَكِى, Form VIII) both instantiate the residue: exposing an inner grievance/distress directed إِلَى ٱللَّهِ for relief — present in both. FAILING: 24:35 كَمِشْكَوٰةٍ (Form N, mishkāt = a lamp-niche/recess in a wall that holds a lamp). It is a concrete architectural noun with no grievance, no inner distress, no act of exposing/pouring-out, and no directional إلى-recipient. Semantically it runs opposite (the niche encloses/contains the lamp within, rather than laying anything open outward). After subtracting form N and context, the residue \"exposing-what-is-held-within-as-a-grievance to another\" is not demonstrably present. Under non-negotiable root unity, one unreconciled confirmed occurrence means verdict != SUPPORTED. The verbal residue is distinctive vs nearest roots (بثّ, جأر, دعو) and falsifiable — and is in fact falsified by 24:35. Note: مشكاة is sometimes analyzed as a non-native loanword, but QAC tags it root $kw here, so it must be accounted for and it is not."
+ },
+ "coverage_validation": {
+  "root": "$kw",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "12:86:3:1",
+   "disposition": "CONSISTENT",
+   "note": "Jacob's أَشْكُوا۟ names the inner object بَثِّى وَحُزْنِى ('my anguish and grief') and directs it إِلَى ٱللَّهِ — exposing-what-is-held-within-as-a-grievance to a recipient is fully present in the verse text."
+  },
+  {
+   "word_ref": "24:35:7:2",
+   "disposition": "RESISTANT",
+   "note": "The flagged token is كَمِشْكَوٰةٍ (mishkāt), the noun for a lamp-niche in Ayat an-Nur (24:35). The frozen contribution — pouring out an inner grievance/distress and directing it outward to a recipient for relief, residue 'exposing-what-is-held-within-as-a-grievance to another' — is drawn wholly from two verbal occurrences (12:86 أَشْكُو Form I, 58:1 تَشْتَكِي Form VIII), both built on the directional إِلَى ٱللَّهِ construction. Separating the layers: (1) derivation differs — this is a static noun of place/instrument, not an act; (2) construction differs — there is no إلى-recipient, only a bare simile object of كَـ, so the outward-to-recipient-for-relief skeleton is absent; (3) the grievance affect in the verb occurrences is supplied by their participants/context (بَثِّى وَحُزْنِى in 12:86; the marital dispute تُجَادِلُكَ فِى زَوْجِهَا in 58:1), not by the root itself; here the participants are light/lamp/glass with no complainant, addressee, or distress. The niche at most 'holds something within,' but does so as illumination, not as a grievance, and to no relief-giver. Bridging it to the complaint sense requires out-of-packet evidence (classical lexica treating شكوة as a receptacle/waterskin, or the mishkāt loanword hypothesis), which the method forbids. It is not a Basmala artifact, so STRUCTURAL_UNCERTAINTY does not apply. The frozen contribution's semantic core is genuinely absent and I do not force it: RESISTANT.",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "58:1:9:2",
+   "disposition": "CONSISTENT",
+   "note": "وَتَشْتَكِىٓ إِلَى ٱللَّهِ — the disputing woman lays open her marital grievance to Allah, the same directional exposing-of-an-inner-grievance-to-a-recipient structure. Word 9 resolves cleanly to تشتكي under standard QAC tokenization (the basmala carries no word positions outside al-Fatiha), so no token-position artifact affects the judgment."
+  }
+ ],
+ "resistant_deep_analysis": [
+  {
+   "word_ref": "24:35:7:2",
+   "final": "RESISTANT",
+   "rationale": "The flagged token is كَمِشْكَوٰةٍ (mishkāt), the noun for a lamp-niche in Ayat an-Nur (24:35). The frozen contribution — pouring out an inner grievance/distress and directing it outward to a recipient for relief, residue 'exposing-what-is-held-within-as-a-grievance to another' — is drawn wholly from two verbal occurrences (12:86 أَشْكُو Form I, 58:1 تَشْتَكِي Form VIII), both built on the directional إِلَى ٱللَّهِ construction. Separating the layers: (1) derivation differs — this is a static noun of place/instrument, not an act; (2) construction differs — there is no إلى-recipient, only a bare simile object of كَـ, so the outward-to-recipient-for-relief skeleton is absent; (3) the grievance affect in the verb occurrences is supplied by their participants/context (بَثِّى وَحُزْنِى in 12:86; the marital dispute تُجَادِلُكَ فِى زَوْجِهَا in 58:1), not by the root itself; here the participants are light/lamp/glass with no complainant, addressee, or distress. The niche at most 'holds something within,' but does so as illumination, not as a grievance, and to no relief-giver. Bridging it to the complaint sense requires out-of-packet evidence (classical lexica treating شكوة as a receptacle/waterskin, or the mishkāt loanword hypothesis), which the method forbids. It is not a Basmala artifact, so STRUCTURAL_UNCERTAINTY does not apply. The frozen contribution's semantic core is genuinely absent and I do not force it: RESISTANT."
+  }
+ ],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "UNRESOLVED",
+ "result_strength": "UNRESOLVED",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "FAILED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "24:35:7:2"
+ ],
+ "unreconciled_count": 1,
+ "resistant_occurrences": [
+  "24:35:7:2"
+ ],
+ "structural_uncertainty_occurrences": []
+}
