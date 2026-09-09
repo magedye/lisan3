@@ -1,0 +1,80 @@
+{
+ "root_buckwalter": "$yb",
+ "root_arabic": "ش ي ب",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch04-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "Whitening/greying of the head's hair as the visible bodily marker of depleted vitality — the chromatic sign of the late, post-strength stage of life (not old age itself, but its appearance on the head).",
+ "internal_discovery": {
+  "root_buckwalter": "$yb",
+  "root_arabic": "ش ي ب",
+  "candidate_root_contribution": "Whitening/greying of the head's hair as the visible bodily marker of depleted vitality — the chromatic sign of the late, post-strength stage of life (not old age itself, but its appearance on the head).",
+  "plain_explanation": "Across all three occurrences the root supplies one thing: white/grey head-hair as the outward sign that vital strength has passed. In 19:4 Zakariyya's head has \"ignited\" with it alongside weakened bones; in 30:54 it names the stage after strength, conjoined with weakness; in 73:17 the terror of the Day imposes this very sign on children — they are made white-haired, not made old, which proves the root contributes the visible marker rather than chronological age.",
+  "layer_separation_note": "All 3 tokens are nominal (form inventory: N x3) but morphologically distinct: shayb (verbal-noun/mass noun as tamyīz of ishtaʿala, 19:4), shaybah (unit/state noun, object of jaʿala conjoined with ḍaʿfan, 30:54), shīb (broken plural of the adjective ashyab, second object of yajʿalu, 73:17). Construction differences (tamyīz vs conjoined object vs resultative predicate) and context differences (personal supplication of an aged prophet; theological life-cycle doctrine; eschatological terror) were subtracted; the constant residue is white head-hair as marker of spent vigor. The fire metaphor in 19:4 belongs to sh-ʕ-l, not to this root; the causative \"making\" in 30:54/73:17 belongs to jaʿala, not to this root.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "73:17 is the only candidate stressor: one could claim shīb there means merely \"aged ones,\" making the root \"old age\" rather than \"white hair.\" But the verse's force is precisely the visual inversion — children bearing the white-hair sign without lived age — so the occurrence resists the \"old age\" reading and instead confirms the chromatic-marker residue. No occurrence is inconsistent with the proposed contribution.",
+  "competing_hypothesis": "That the root means \"old age / senescence\" as such. Rejected on internal evidence: 73:17 applies it to wildān (children) who are not aged, and 30:54 conjoins it with ḍaʿf rather than equating it — shaybah is listed as an additional, visible accompaniment of the second weakness, not the weakness itself. The root tracks the sign of age, not age.",
+  "distinctiveness_note": "Distinct from k-b-r (kibar: chronological old age, cf. 19:8 same sura), ʕ-t-w (ʕitiyy: extreme decrepitude), ḍ-ʕ-f (weakness of capacity, explicitly a separate conjunct in 30:54), and ʕ-j-z (aged woman). None of those can substitute in 73:17 without destroying the image: only sh-y-b yields \"children turned white-haired.\" The residue is falsifiable — an occurrence where the root applied to something with no whitening-of-hair/appearance dimension would break it; none exists in the confirmed set.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "STRONG",
+  "rationale": "Full coverage: 3 of 3 confirmed occurrences assessed, all consistent with the proposed residue after subtracting form (mass noun / unit noun / adjectival plural), construction (tamyīz / conjoined object / resultative predicate), and context (supplication / life-cycle doctrine / eschatology). Universal presence holds with no forced reconciliation; the hardest case (73:17) is also the most diagnostic, ruling out the nearest competing hypothesis (\"old age\" simpliciter). Strength graded STRONG because presence is transparent in every token and the set internally disambiguates the residue, though the corpus is small (3 tokens, single part-of-speech), which is noted as a limit on further triangulation."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "$yb",
+  "verdict": "PARTIALLY_SUPPORTED",
+  "failing_occurrences": [
+   "73:17"
+  ],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Full coverage: 3/3 occurrences (all Form N: 19:4, 30:54, 73:17) accounted for. The proposal is a conjunction: (a) chromatic core = whitening/greying of the (head's) hair; (b) semantic loading = marker of depleted vitality / the late, post-strength stage of life. Core (a) is universally present: 19:4 «وَٱشْتَعَلَ ٱلرَّأْسُ شَيْبًا» (head explicit + greying), 30:54 «ضَعْفًا وَشَيْبَةً» (شيبة = hair-greyness), 73:17 «يَجْعَلُ ٱلْوِلْدَٰنَ شِيبًا» (grey-haired). Loading (b) holds at 19:4 (paired with وَهَنَ ٱلْعَظْمُ) and 30:54 (explicitly مِنۢ بَعْدِ قُوَّةٍ — post-strength) but FAILS at 73:17: greying strikes ٱلْوِلْدَٰنَ (the young/children) through terror of the Day, deliberately DECOUPLED from aging/depleted vitality — the subjects retain full vitality, and the rhetorical point is that greying occurs WITHOUT the late-life stage. So the distinctive part of the proposal is not demonstrably present in every occurrence. Head-specificity is a minor over-reach at 30:54/73:17 (head not named) but defensible since شيب lexically denotes hair-greying; the load-bearing refutation is the vitality/late-life-stage component at 73:17. The narrower residue that IS universal — 'whitening/greying of the hair,' with the cause (aging vs terror) supplied by context, not the root — would be SUPPORTED. Distinctiveness of that stripped core is fine vs بيض/byD (general whiteness), شيخ/$yx (elderhood as social/age status), كهل/khl (middle age); but the proposal's added vitality-loading overlaps generic aging roots and is exactly what fails. Falsifiable and here falsified. Under non-negotiable root unity, one unreconciled occurrence (73:17) → verdict != SUPPORTED; recommend recasting the contribution as bare 'greying/whitening of hair' and moving the depleted-vitality/late-stage element to context."
+ },
+ "coverage_validation": {
+  "root": "$yb",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "19:4:9:1",
+   "disposition": "CONSISTENT",
+   "note": "شَيْبًا is tamyiz after وَٱشْتَعَلَ ٱلرَّأْسُ ('the head has ignited'): the whitening is located on the head and paired with weakened bones — the visible marker of depleted vitality, exactly the frozen contribution."
+  },
+  {
+   "word_ref": "30:54:18:2",
+   "disposition": "CONSISTENT",
+   "note": "وَشَيْبَةً is conjoined with ضَعْفًا as the stage after قُوَّة (strength): greying named as the post-strength chromatic sign, matching the frozen contribution."
+  },
+  {
+   "word_ref": "73:17:8:1",
+   "disposition": "CONSISTENT",
+   "note": "شِيبًا (grey-haired ones) is imposed on the children by the Day's terror — they are made white-haired, not chronologically aged, which affirms the contribution as the visible marker rather than old age itself."
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "WEAK",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PARTIAL",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

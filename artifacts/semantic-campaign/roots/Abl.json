@@ -1,0 +1,85 @@
+{
+ "root_buckwalter": "Abl",
+ "root_arabic": "ا ب ل",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch04-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "Massed aggregation: a plurality of living units apprehended and handled as one collective body (herd/swarm/wave-mass), such that the many are construed grammatically and referentially as a single unit.",
+ "internal_discovery": {
+  "root_buckwalter": "Abl",
+  "root_arabic": "ا ب ل",
+  "candidate_root_contribution": "Massed aggregation: a plurality of living units apprehended and handled as one collective body (herd/swarm/wave-mass), such that the many are construed grammatically and referentially as a single unit.",
+  "plain_explanation": "The root surfaces in two lexemes: al-'ibil \"the camel-kind\" (6:144, 88:17) and abaabiil \"in massed groups\" (105:3). What survives subtraction of form and context in all three is not \"camel\" (birds in 105:3 refute that) but aggregation-as-unity. In 105:3 birds are sent as massed groups acting en bloc; in 88:17 the plural referent takes a feminine SINGULAR verb (khuliqat — \"how IT was created\"), showing the multitude construed as one body; in 6:144 the collective class is treated as a single countable kind (\"of the 'ibil, two\") in parallel with other livestock classes. Every occurrence presents many members packaged as one collective.",
+  "layer_separation_note": "FORM: ADJ abaabiil (an intensive broken-plural pattern) contributes iteration/distribution (\"group after group\"), which must not be credited to the root; N 'ibil contributes bare collective reference. CONSTRUCTION: the singular-feminine agreement in 88:17 (khuliqat) and the class-counting construction in 6:144 (ithnayn) are the internal evidence that collectivity is active, but collective construal is also a property of the noun class itself — so part of the \"unity of the many\" signal may be lexeme-level rather than root residue. CONTEXT: divine punishment (105), dietary-law polemic (6:144), and creation-sign exhortation (88:17) are all context and were subtracted. The claimed residue is only the aggregate-mass notion, not camels, birds, law, or signs.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "6:144 is the weakest link for the aggregation hypothesis: the verse itself foregrounds the camel-kind only as a legal category alongside al-baqar, and the aggregation feature is present only via the collective-noun grammar, with no contextual foregrounding of herd-ness. Against the rival \"camel-kind\" hypothesis, 105:3 (tayran abaabiil — birds, not camels) is a decisive counterexample.",
+  "competing_hypothesis": "(a) Root contribution = \"camel-kind\" as a species reference — fails universally because 105:3 applies the root to birds. (b) abaabiil is an independent quadriliteral or loan item not genuinely sharing the triliteral 'bl — if true, the packet's occurrence set conflates two roots and the induction reduces to the trivially stable 2-occurrence camel cluster; this cannot be ruled out from internal evidence alone.",
+  "distinctiveness_note": "Distinct from generic plural/collective morphology (which any noun class can carry) in that both lexemes lexicalize the mass itself: 'ibil has no attested singular in the corpus and abaabiil denotes groups-as-groups. Distinct from nearest semantic neighbors visible in the packet's own verses: baqar (6:144) is also a collective livestock term, so mere livestock-collectivity is NOT distinctive; the proposed residue is narrower — the many-as-one-body construal that 88:17's singular agreement and 105:3's en-masse action both instantiate. Falsifiable: a confirmed occurrence of this root denoting a lone individual or a non-aggregated referent would break it.",
+  "unresolved_cases": [
+   "6:144 — aggregation presence rests solely on collective-noun grammar (class counted as a unit), not on any contextual evidence; cannot be strengthened from inside this 3-occurrence corpus",
+   "105:3 — the lexical bridge between abaabiil and 'ibil is assumed by the root assignment itself; internal evidence is consistent with, but cannot independently confirm, shared triliteral membership"
+  ],
+  "result": "PREFERRED",
+  "result_strength": "WEAK",
+  "rationale": "All 3 confirmed occurrences were individually assessed and none contradicts the candidate residue \"massed aggregation construed as one body\": overt in 105:3 (birds in massed waves), internally evidenced in 88:17 (feminine singular khuliqat agreeing with a plural referent), and compatible in 6:144 (collective class counted as a unit). Universal presence therefore holds on the full set, so PREFERRED rather than UNRESOLVED. Strength is WEAK, not higher, because the corpus is tiny (3 occurrences, 2 lexemes), the N-side evidence is purely morphosyntactic and could be lexeme-level rather than root residue, and the 'ibil/abaabiil root-unity is presupposed by the packet rather than demonstrated by the internal data. No occurrence was forced; the two genuine soft spots are recorded in unresolved_cases."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "Abl",
+  "verdict": "REFUTED",
+  "failing_occurrences": [
+   "105:3",
+   "6:144",
+   "88:17"
+  ],
+  "distinctiveness_ok": false,
+  "falsifiable": true,
+  "notes": "The proposed contribution is a CONJUNCTION of (a) massed aggregation (herd/swarm handled as one body) and (b) the many construed grammatically/referentially as a SINGLE UNIT. No single confirmed occurrence carries both conjuncts; the two halves are borne by different, non-overlapping occurrences — a decomposition failure. FAILING OCCURRENCES: (1) 105:3 أَبَابِيلَ — a broken PLURAL denoting successive/separate flocks modifying plural طيرًا; the aggregation notion is present but component (b) 'single unit / one collective body' is contradicted (many separate companies, plural morphology). (2) 6:144 وَمِنَ ٱلْإِبِلِ ٱثْنَيْنِ — partitive مِنْ + dual ٱثْنَيْنِ + ٱلذَّكَرَيْنِ/ٱلْأُنثَيَيْنِ individuates male/female pairs drawn OUT of the collective; the construction works against 'handled as one body / single unit', so (b) fails. (3) 88:17 ٱلْإِبِلِ كَيْفَ خُلِقَتْ — component (b) holds (collective + singular verb خُلِقَت) but the semantic content is contemplation of the camel-as-created-creature/kind, not a herd/swarm marshaled as a mass; the 'massed aggregation of a plurality' conjunct (a) is not demonstrably operative. DISTINCTIVENESS fails: 'collective animal noun grammatically construed as a unit' is a generic اسم جنس جمعي / اسم جمع property shared by بقر، غنم، طير occurring in the very same verses, not a residue distinctive to root Abl; the truly distinctive residue would be camel-specificity plus the drove sense, not abstract 'aggregation'. FALSIFIABLE: yes, and it is falsified. Under non-negotiable root unity, with the single-unit conjunct contradicted at 105:3 and 6:144 and the aggregation conjunct absent at 88:17, universal presence does NOT hold. A weaker common thread ('large drove/collective of animals') may exist but is neither what was proposed nor distinctive. Verdict cannot be SUPPORTED."
+ },
+ "coverage_validation": {
+  "root": "Abl",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "105:3:4:1",
+   "disposition": "CONSISTENT",
+   "note": "abaabiil describes tayr (birds) sent in massed groups acting en bloc; the lexeme itself denotes the swarm-mass, plurality apprehended as one collective body. Frozen contribution directly present."
+  },
+  {
+   "word_ref": "6:144:2:2",
+   "disposition": "CONSISTENT",
+   "note": "al-'ibil is a collective noun (camel-kind) treated as a single countable class ('of the 'ibil, two') in parallel with al-baqar; the many packaged as one collective kind survives subtraction of the counting construction."
+  },
+  {
+   "word_ref": "88:17:4:2",
+   "disposition": "CONSISTENT",
+   "note": "al-'ibil takes the feminine singular verb khuliqat ('how IT was created'), the plural referent grammatically construed as a single body — sharpest in-text instance of many-as-one."
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "UNRESOLVED",
+ "result_strength": "UNRESOLVED",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "FAILED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

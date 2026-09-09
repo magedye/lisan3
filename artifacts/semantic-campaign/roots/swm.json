@@ -1,0 +1,143 @@
+{
+ "root_buckwalter": "swm",
+ "root_arabic": "س و م",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch04-coverage",
+ "occurrences": 15,
+ "frozen_candidate_root_contribution": "Setting forth into the open so as to be visibly borne: an entity is turned out into an exposed domain, or made to carry an openly displayed condition/sign that stays attached to it. The nominal siymaA is the openly borne identifying display; Form II participles denote being endowed with such a display; the Form I verb (double accusative) denotes keeping someone turned out under an imposed condition as their standing lot; Form IV denotes turning animals out into open range.",
+ "internal_discovery": {
+  "root_buckwalter": "swm",
+  "root_arabic": "س و م",
+  "candidate_root_contribution": "Setting forth into the open so as to be visibly borne: an entity is turned out into an exposed domain, or made to carry an openly displayed condition/sign that stays attached to it. The nominal siymaA is the openly borne identifying display; Form II participles denote being endowed with such a display; the Form I verb (double accusative) denotes keeping someone turned out under an imposed condition as their standing lot; Form IV denotes turning animals out into open range.",
+  "plain_explanation": "Across all 15 occurrences, s-w-m contributes the idea of something being put out in the open and borne there. (a) In all six siymaA tokens (2:273, 7:46, 7:48, 47:30, 48:29, 55:41) it is a visible display carried on a person by which they are recognized — five of the six collocate with the verb '-r-f \"recognize\" (2:273 taErifuhum bisiymaAhum; 7:46 yaErifuwna kullaan bisiymaAhum; 7:48 yaErifuwnahum bisiymaAhum; 47:30 falaEaraftahum bisiymaAhum; 55:41 yuErafu Almujrimuwna bisiymaAhum), and 48:29 locates it explicitly on the exposed surface, \"siymaAhum fiy wujuwhihim min 'avari Alssujuwdi\", after taraAhum \"you see them\". (b) The four Form II derivatives (11:83, 51:34 stones musaw~amap Einda rab~ika; 3:125 angels musaw~imiyna; 3:14 horses Almusaw~amap) denote entities made to bear such a display — the stones' marking designates them for their targets (lilmusrifiyna, 51:34). (c) The four Form I verbs (2:49, 7:141, 14:6, 7:167) all use the identical double-accusative frame yasuwmuwna-hum/yasuwmu-hum suw'a AlEa*aAbi: the victims are held turned-out under evil punishment as their imposed, continuing condition (imperfect aspect throughout; 7:167 extends it 'ilaY yawmi AlqiyaAmap). (d) The single Form IV (16:10 fiyhi tusiymuwna) is the causative of the same setting-forth: you turn livestock out into the open growth. The root residue is thus not \"punish\", \"graze\", or \"sign\" as such, but the open setting-forth/borne-exposure that each of those readings instantiates.",
+  "layer_separation_note": "FORM: Form II adds causative-resultative \"made to bear (a display)\" — the display idea itself is the root's, the endowment is the form's. Form IV adds causation \"make [animals] range forth\"; the ranging-in-the-open is the root's. The fi'laa nominal siymaA concretizes the residue as a borne instance (\"that which is set forth on one\"). CONSTRUCTION: the Form I double accusative (sāma X Y) supplies the imposition frame — agent, victim, and the condition-domain (suw' AlEa*aAb) are all construction/participant material, not root material. CONTEXT: recognition (E-r-f), punishment content, prostration traces (48:29), and destruction targets (11:83, 51:34) are contextual; subtracting them leaves the same residue of open, attached exposure in every token.",
+  "presence": {
+   "occurrences_total": 15,
+   "occurrences_checked": 15,
+   "occurrences_consistent": 15,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "16:10 (tusiymuwna): the pastoral token has no in-text marking or recognition dimension at all; it only fits if the residue is pitched at \"turning out into the open\" rather than \"identifying mark\". It is the occurrence that forces the abstraction level up and is therefore the best lever for falsifying the unified residue.",
+  "competing_hypothesis": "Two homophonous roots in complementary morphological distribution: swm-A \"drive forth / hold subjected\" carrying all five verbal tokens (Form I imposition cluster + Form IV pasturing), and swm-B \"visible mark\" carrying all ten nominal/participial tokens (siymaA + Form II derivatives). The packet's own distribution supports this cleanly — no verbal token shows recognition semantics and no nominal token shows driving semantics — so the unity claim rests on the abstract bridge (exposure), never on a single occurrence exhibiting both facets simultaneously.",
+  "distinctiveness_note": "Versus E-l-m ('alaamah/ aayah-type signs): siymaA is not an arbitrary token of information but a display borne on the entity's own exposed surface (48:29 \"in their faces\"), inseparable from its bearer. Versus r-'-y/r-E-y-type tending: 16:10 is not shepherd-tending but turning-out into open range. Versus direct affliction roots (E-*-b): in the Form I cluster the punishment content is always supplied by the separate object suw' AlEa*aAb — the root itself contributes only the sustained holding-exposed-under, which is why it needs that second accusative. The residue is non-empty and falsifiable: it predicts siymaA always sits in a visible-recognition frame (holds 6/6) and Form I always takes an explicit imposed-condition object (holds 4/4).",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All 15 confirmed occurrences were individually assessed and every one is reconcilable with the candidate residue \"set forth into the open / bear an openly attached display\", with strong internal regularities backing it: an exceptionless E-r-f/visibility frame around all six siymaA tokens, an exceptionless double-accusative frame around all four Form I tokens, and Form II consistently meaning \"endowed with the display\". No occurrence contradicts the candidate, so universal presence is not refuted. Strength is capped at MODERATE rather than STRONG because the two facets of the residue (driving-forth vs borne-display) are distributed in perfect complementarity across verbal vs nominal morphology — no single occurrence exhibits the bridge itself, leaving a homonymy analysis internally viable, and the bridge requires an abstraction level (open exposure) that a skeptic could call thin. It is not WEAK because the residue still does falsifiable work in every cluster and its predictions hold without exception across the full coverage set."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "swm",
+  "verdict": "PARTIALLY_SUPPORTED",
+  "failing_occurrences": [
+   "2:49",
+   "7:141",
+   "7:167",
+   "14:6"
+  ],
+  "distinctiveness_ok": false,
+  "falsifiable": true,
+  "notes": "All 15 occurrences accounted for in 4 clusters. ROBUST fits (11/15): (a) siymaA N x6 (2:273, 47:30, 48:29, 55:41, 7:46, 7:48) = openly borne identifying mark; (b) musawwam-/musawwim- N(II)/ADJ(II) x4 (11:83, 51:34 marked stones; 3:14 marked horses; 3:125 marking angels) = endowed-with-mark; (c) tusimun V(IV) x1 (16:10) = turning cattle out to open pasture. RESISTANT cluster (4/15): the Form I double-accusative verb yasumu…suu'a al-'adhab (2:49, 7:141, 7:167, 14:6) = 'impose/subject to evil torment'. Here the DISTINCTIVE component of the proposed residue — 'visibly borne / openly displayed' — is not demonstrably present: the torment is endured/imposed, not a display read off the bearers. The proposal papers over this by carving a verb sub-sense ('keeping someone turned out under an imposed condition'), but to admit the verb one must drop 'openly displayed', collapsing the residue to generic 'made to carry a condition' (non-distinctive). DISTINCTIVENESS: fails. Where the display residue IS present (siymaA, musawwam), it is indistinguishable from the nearest root wsm (و س م brand/mark; siymaA is commonly derived from wsm). Where the residue would be distinctive to swm (the release/impose family: yasumu, tusimun), the display element is absent. The gloss fuses two families (visible-display vs. set-forth/impose) that no single occurrence carries jointly. FALSIFIABLE: yes — each occurrence testably checked for presence of the display/exposure element; the verb cluster falsifies universal presence of the distinctive residue. Under non-negotiable root unity, the 4 verb occurrences are unreconciled, so verdict != SUPPORTED."
+ },
+ "coverage_validation": {
+  "root": "swm",
+  "expected_count": 15,
+  "researched_count": 15,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "11:83:1:1",
+   "disposition": "CONSISTENT",
+   "note": "musaw~amap (Form II pass. part.): stones made to bear a designating mark/display for their targets — the 'made to carry an openly displayed sign' sense."
+  },
+  {
+   "word_ref": "14:6:14:1",
+   "disposition": "CONSISTENT",
+   "note": "yasuwmuwnakum suw'a al-'adhab double-accusative: the people held turned-out under evil punishment as an imposed continuing condition (imperfect aspect) — the Form I sense."
+  },
+  {
+   "word_ref": "16:10:13:1",
+   "disposition": "CONSISTENT",
+   "note": "tusiymuwna (Form IV): turning livestock out into the open growth/range — the setting-forth-into-the-open sense directly."
+  },
+  {
+   "word_ref": "2:273:18:2",
+   "disposition": "CONSISTENT",
+   "note": "bisiymaAhum with ta'rifuhum: openly borne display by which the poor are recognized."
+  },
+  {
+   "word_ref": "2:49:6:1",
+   "disposition": "CONSISTENT",
+   "note": "yasuwmuwnakum suw'a al-'adhab: same double-accusative imposed-condition frame; contribution present."
+  },
+  {
+   "word_ref": "3:125:15:1",
+   "disposition": "CONSISTENT",
+   "note": "musaw~imiyna is the lone active participle; after subtracting voice (a construction feature), the marking/openly-displayed-sign core of the root remains demonstrably present."
+  },
+  {
+   "word_ref": "3:14:14:2",
+   "disposition": "CONSISTENT",
+   "note": "al-khayl al-musaw~amap: horses made to bear a mark/distinction (or set out) — the borne-display sense."
+  },
+  {
+   "word_ref": "47:30:5:2",
+   "disposition": "CONSISTENT",
+   "note": "bisiymaAhum with la'araftahum: openly borne display by which they would be recognized."
+  },
+  {
+   "word_ref": "48:29:19:1",
+   "disposition": "CONSISTENT",
+   "note": "siymaAhum fiy wujuwhihim min 'athar al-sujud: display explicitly located on the exposed surface (faces) after tarAhum 'you see them' — the borne-exposure sense at its clearest."
+  },
+  {
+   "word_ref": "51:34:1:1",
+   "disposition": "CONSISTENT",
+   "note": "musaw~amap 'inda rabbik lil-musrifin: marked stones designated for their targets — made to carry a displayed sign."
+  },
+  {
+   "word_ref": "55:41:3:2",
+   "disposition": "CONSISTENT",
+   "note": "yu'raf al-mujrimun bisiymaAhum: criminals recognized by their openly borne display."
+  },
+  {
+   "word_ref": "7:141:6:1",
+   "disposition": "CONSISTENT",
+   "note": "yasuwmuwnakum suw'a al-'adhab: identical imposed-continuing-condition frame; contribution present."
+  },
+  {
+   "word_ref": "7:167:10:1",
+   "disposition": "CONSISTENT",
+   "note": "yasuwmuhum suw'a al-'adhab, extended 'ilaY yawm al-qiyamah: turned-out under imposed punishment as a standing lot — Form I sense."
+  },
+  {
+   "word_ref": "7:46:8:2",
+   "disposition": "CONSISTENT",
+   "note": "ya'rifuna kullan bisiymaAhum: each recognized by his openly borne display."
+  },
+  {
+   "word_ref": "7:48:6:2",
+   "disposition": "CONSISTENT",
+   "note": "ya'rifunahum bisiymaAhum: recognized by their openly borne display."
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "WEAK",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PARTIAL",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

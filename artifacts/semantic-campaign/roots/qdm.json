@@ -1,0 +1,316 @@
+{
+ "root_buckwalter": "qdm",
+ "root_arabic": "ق د م",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch04-coverage",
+ "occurrences": 48,
+ "frozen_candidate_root_contribution": "Fore-position on an ordered axis: being, coming, or placing at the front/ahead, prior to what follows — covering spatial leading-position and temporal anteriority as one axis, systematically opposed to '-x-r (behind/later).",
+ "internal_discovery": {
+  "root_buckwalter": "qdm",
+  "candidate_root_contribution": "Fore-position on an ordered axis: being, coming, or placing at the front/ahead, prior to what follows — covering spatial leading-position and temporal anteriority as one axis, systematically opposed to '-x-r (behind/later).",
+  "plain_explanation": "Across all 48 occurrences the root marks \"the ahead-slot.\" Form II qaddama (27x) = cause something to occupy the slot ahead of you: deeds sent forward to meet you at reckoning (bimA qad~amat >aydiyhim, mA qad~amat li-gad 59:18), a charity presented in advance (58:12-13), nothing put forward ahead of God and His Messenger (49:1), a warning sent ahead (50:28). Form V (48:2, 74:37) = move oneself into the ahead-slot vs. lag. Form X (10:49, 16:61, 34:30, 7:34, participle 15:24) = seek to be ahead of an appointed point vs. seek delay. Form I: Pharaoh at the front leading his people (11:98); God advancing upon their deeds (25:23). The noun qadam/aqdAm names the fore-stepping limb — one's advanced stance — hence \"make firm our feet\" in confrontation (2:250, 3:147, 47:7, 8:11), a foot slipping after firmness (16:94), and qadam Sidq, a footing of truth deposited ahead with their Lord (10:2). aqdamUn (26:76) = the more-prior forefathers; qadIm (12:95, 36:39, 46:11) = long-prior, standing since before.",
+  "layer_separation_note": "ROOT residue = fore-position/anteriority. FORM II adds causative transfer (make X be ahead of oneself), and in 21 of 27 cases the eschatological \"deeds meeting you later\" sense comes from CONTEXT (reckoning scenes, li-gad, ind Allah) plus the reflexive li-anfusikum construction, not from the root. Form V adds self-positioning; Form X adds conative \"seek/attempt the ahead-slot\"; the paired antonym constructions with '-x-r (9 occurrences) belong to construction, not root. Noun qadam is a LEXICALIZATION: the limb of forward stepping/standing; firmness-of-feet and slipping-of-foot readings are context (battle steadfastness, oath-breaking). qadIm/aqdam add only adjectival quality and elative morphology over temporal priority.",
+  "presence": {
+   "occurrences_total": 48,
+   "occurrences_checked": 48,
+   "occurrences_consistent": 48,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "41:29 (\"najAalhumA taHta aqdAminA\" — beneath our feet) and 55:41 (seized by forelocks and feet): here feet are mere body parts, even the lowest point, so the fore-position residue is carried only by the lexicalized noun (the forward-stepping limb) rather than demonstrated by context. Secondary strain: 25:23 \"qadimnA ilA mA amilU,\" where Form I reads as arrival/advancing-upon; presence requires reading it as coming into the position before/at their deeds.",
+  "competing_hypothesis": "A narrower hypothesis — \"sending deeds ahead for future reckoning\" — fits the dominant Form II cluster but fails 11:98 (spatial leading), the foot nouns, and qadIm/aqdamUn; it is a Form II + context effect, not the root. A purely temporal hypothesis (\"oldness/priority in time\") fails 11:98 and the battle-feet cluster. Both collapse into the broader fore-position axis, which survives all 48.",
+  "distinctiveness_note": "Distinct from s-b-q, which internally denotes competitive outstripping — getting ahead OF someone/something in relative motion (46:11 even contains both: \"mA sabaqUnA ilayhi ... ifk qadIm\") — whereas q-d-m denotes occupying the fore-slot on an axis without implying a race. Distinct from the bayna yaday construction (mere spatial frontness as location), with which qaddama combines rather than overlaps (49:1, 58:12). Its unique signature is the systematic antonym pairing with '-x-r across Forms II, V, and X (9 occurrences), showing a stable fore/aft axis no neighboring root shares. Falsifiable: an occurrence where qdm marked posteriority, lagging, or position behind would break it; none exists in the set.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All 48 confirmed occurrences reconcile with a single residue — fore-position/anteriority on an ordered axis — after subtracting form (II causative, V reflexive, X conative), construction (antonym pairing with '-x-r, li-anfusikum reflexives), lexicalization (qadam = forward-stepping limb), and context (eschatological reckoning, battle steadfastness). The internal antonym system with '-x-r across three verb forms gives unusually strong axis evidence, and the qadam Sidq occurrence (10:2) bridges the foot cluster and the sending-ahead cluster. Strength is MODERATE rather than STRONG because two occurrences (41:29, 55:41) exhibit the residue only through the noun's naming layer, not through context-independent demonstration, and 25:23 requires the arrival-as-advancing-upon reading; none of these contradicts the residue, but they rest on the lexicalization step rather than direct contextual confirmation."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "qdm",
+  "verdict": "PARTIALLY_SUPPORTED",
+  "failing_occurrences": [
+   "16:94",
+   "2:250",
+   "3:147",
+   "41:29",
+   "47:7",
+   "55:41",
+   "8:11"
+  ],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Full coverage checked: all 48 occurrences accounted for. The proposed 'fore-position on an ordered axis, opposed to -x-r' contribution is demonstrably present across the precedence/anteriority core: V(II) qaddama (27x, 'send/put ahead'), V(V) taqaddama (48:2, 74:37 — explicitly paired with ta'akhkhara), V(X) yastaqdimun (7:34/10:49/16:61/34:30, all paired with yasta'khirun), N(X) al-mustaqdimin (15:24 vs al-musta'khirin), ADJ qadim 'old/prior' (12:95, 36:39, 46:11), N al-aqdamun 'forefathers' (26:76), V yaqdumu 'leads/goes before' (11:98). Weak-but-admissible: qadimna 'come/advance toward' (25:23, definition includes 'coming'); qadama sidq 'foremost standing/precedence' (10:2).\\n\\nDECISIVE FAILURE CLUSTER: the 7 concrete qadam/aqdam ('foot/feet') occurrences — 16:94 (a foot slips), 2:250 & 3:147 & 47:7 & 8:11 (make/steady feet firm), 55:41 (forelocks and feet), 41:29 ('under our feet'). In these, the in-context meaning is the physical body part; the 'being/coming/placing at the front/ahead, prior to what follows' contribution is NOT recoverable from the verse — assigning it requires the etymological bridge (foot = advancing member), which is lexicon/memory reasoning barred as evidence. 41:29 actively inverts the axis (feet = lowest/under). Under non-negotiable root unity, one unreconciled occurrence already blocks SUPPORTED; here a coherent 7-occurrence nominal cluster resists. Hence PARTIALLY_SUPPORTED, not SUPPORTED and not REFUTED (the precedence axis genuinely holds for ~40 occurrences).\\n\\nDistinctiveness OK: residue (static fore-position/anteriority) is distinguishable from sbq (dynamic overtaking/racing — cf. 46:11 sabaquna alongside qadim) and '-w-l (first/origin), and is anchored by the recurring explicit -x-r opposition. Falsifiable: yes — the foot occurrences are the concrete falsifiers."
+ },
+ "coverage_validation": {
+  "root": "qdm",
+  "expected_count": 48,
+  "researched_count": 48,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "10:2:17:1",
+   "disposition": "CONSISTENT",
+   "note": "qadam Sidq read as a prior/precedent standing 'deposited ahead' with their Lord; precedence = anteriority, so the fore-position axis is present via the priority reading."
+  },
+  {
+   "word_ref": "10:49:22:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "11:98:1:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:48:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:95:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "15:24:3:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:61:23:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:94:7:1",
+   "disposition": "CONSISTENT",
+   "note": "Singular qadam here is the established forward FOOTING. The verse's own antithesis carries the axis: thubut (firm establishment ahead, in the path of God) vs zilla/zalal (the foot slipping back). This mirrors qadam Sidq at 10:2 (a footing deposited ahead with the Lord). Root contributes the advanced-footing limb; the 'slip after firmness' is construction. Frozen fore-position axis holds cleanly.",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "18:57:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "22:10:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:23:1:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:76:3:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:47:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:110:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:223:8:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:250:11:1",
+   "disposition": "CONSISTENT",
+   "note": "thabbit aqdAmanA before Goliath's host = fix our feet in their forward stance, i.e. hold the advanced line and not retreat (the '-x-r / rear pole). Root supplies the fore-stepping limb / advanced stance; imperative thabbit + battle context fix it forward. Explicitly anticipated by the frozen plain-explanation. Holds.",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "2:95:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:36:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "34:30:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "36:12:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "36:39:7:2",
+   "disposition": "CONSISTENT",
+   "note": "Referenced token is al-qadim (old/long-standing date-stalk); the qaddarnahu earlier in the verse is q-d-r, not this token. Temporal anteriority present."
+  },
+  {
+   "word_ref": "38:60:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "38:61:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "3:147:15:1",
+   "disposition": "CONSISTENT",
+   "note": "Identical idiom to 2:250 in the Uhud confrontation: thabbit aqdAmanA = keep our feet in the forward/holding stance against the enemy rather than being driven back. Same fore-position axis, root-level contribution intact. Holds.",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "3:182:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "41:29:13:1",
+   "disposition": "CONSISTENT",
+   "note": "Hardest case: taHta aqdAminA ... al-asfalIn foregrounds a VERTICAL/rank figure (beneath / lowest), not the fore/aft axis, and the frozen plain-explanation did not list it. But separating construction from root contribution: the vertical sense is carried by taHta and asfalIn, while the root's sole contribution to aqdAm is the noun 'feet' = the forward/advancing member of the body (qadam, opposed to the heel). That lexical fore-position motivation is intact; the trampling deployment is contextual, not a rival root sense. It genuinely holds at the level of the root's contribution, so CONSISTENT rather than forced — the axis-shift is constructional, not lexical.",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "42:48:23:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "46:11:19:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "47:7:9:1",
+   "disposition": "CONSISTENT",
+   "note": "yuthabbit aqdAmakum, conditioned on aiding God = divine firming of the fighters' forward footing in engagement. The feet = advanced stance held in confrontation; firmness vs being pushed to the rear is the qdm/'-x-r axis. Root contribution holds; only the participant (God as agent of thabbit) differs. Consistent.",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "48:2:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "49:1:5:1",
+   "disposition": "CONSISTENT",
+   "note": "verse_text prepends the basmala, but the token index (word 5) counts from the ayah proper and lands unambiguously on tuqaddimu ('do not put yourselves forward before God and His Messenger') = clear fore-position. Basmala is display-only and does not obstruct judgment."
+  },
+  {
+   "word_ref": "4:62:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "50:28:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "55:41:6:3",
+   "disposition": "CONSISTENT",
+   "note": "al-nawASI wa-l-aqdAm: the mujrimUn seized by forelocks and feet — purely anatomical, with no fore/aft rhetorical play, which is why coverage flagged it. Yet the root's contribution to aqdAm is precisely 'feet = the forward member of the body' (qadam vs the rear heel/'aqib), the same qdm/'-x-r opposition instantiated anatomically. No homonymy, no competing sense; the fore-position motivation of the noun holds. CONSISTENT, not forced.",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "58:12:7:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "58:13:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "59:18:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:80:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "62:7:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "73:20:62:1",
+   "disposition": "CONSISTENT",
+   "note": "Token at word 62 is tuqaddimu (Form II, 'what you send ahead of good for yourselves'), parallel to 2:110; the earlier yuqaddiru in the verse is q-d-r, not this token."
+  },
+  {
+   "word_ref": "74:37:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "75:13:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "78:40:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:34:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "82:5:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "89:24:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "8:11:22:2",
+   "disposition": "CONSISTENT",
+   "note": "Badr: rain sent down li-yuthabbita bihi al-aqdAm = to firm the feet (footing/ground) for the stand and advance. Same 'firm forward footing in confrontation' figure as 2:250/3:147/47:7, explicitly cited by the frozen gloss. Root supplies the fore-stance limb; context adds the firming means. Holds.",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "8:51:3:1",
+   "disposition": "CONSISTENT"
+  }
+ ],
+ "resistant_deep_analysis": [
+  {
+   "word_ref": "16:94:7:1",
+   "final": "CONSISTENT",
+   "rationale": "Singular qadam here is the established forward FOOTING. The verse's own antithesis carries the axis: thubut (firm establishment ahead, in the path of God) vs zilla/zalal (the foot slipping back). This mirrors qadam Sidq at 10:2 (a footing deposited ahead with the Lord). Root contributes the advanced-footing limb; the 'slip after firmness' is construction. Frozen fore-position axis holds cleanly."
+  },
+  {
+   "word_ref": "2:250:11:1",
+   "final": "CONSISTENT",
+   "rationale": "thabbit aqdAmanA before Goliath's host = fix our feet in their forward stance, i.e. hold the advanced line and not retreat (the '-x-r / rear pole). Root supplies the fore-stepping limb / advanced stance; imperative thabbit + battle context fix it forward. Explicitly anticipated by the frozen plain-explanation. Holds."
+  },
+  {
+   "word_ref": "3:147:15:1",
+   "final": "CONSISTENT",
+   "rationale": "Identical idiom to 2:250 in the Uhud confrontation: thabbit aqdAmanA = keep our feet in the forward/holding stance against the enemy rather than being driven back. Same fore-position axis, root-level contribution intact. Holds."
+  },
+  {
+   "word_ref": "47:7:9:1",
+   "final": "CONSISTENT",
+   "rationale": "yuthabbit aqdAmakum, conditioned on aiding God = divine firming of the fighters' forward footing in engagement. The feet = advanced stance held in confrontation; firmness vs being pushed to the rear is the qdm/'-x-r axis. Root contribution holds; only the participant (God as agent of thabbit) differs. Consistent."
+  },
+  {
+   "word_ref": "8:11:22:2",
+   "final": "CONSISTENT",
+   "rationale": "Badr: rain sent down li-yuthabbita bihi al-aqdAm = to firm the feet (footing/ground) for the stand and advance. Same 'firm forward footing in confrontation' figure as 2:250/3:147/47:7, explicitly cited by the frozen gloss. Root supplies the fore-stance limb; context adds the firming means. Holds."
+  },
+  {
+   "word_ref": "41:29:13:1",
+   "final": "CONSISTENT",
+   "rationale": "Hardest case: taHta aqdAminA ... al-asfalIn foregrounds a VERTICAL/rank figure (beneath / lowest), not the fore/aft axis, and the frozen plain-explanation did not list it. But separating construction from root contribution: the vertical sense is carried by taHta and asfalIn, while the root's sole contribution to aqdAm is the noun 'feet' = the forward/advancing member of the body (qadam, opposed to the heel). That lexical fore-position motivation is intact; the trampling deployment is contextual, not a rival root sense. It genuinely holds at the level of the root's contribution, so CONSISTENT rather than forced — the axis-shift is constructional, not lexical."
+  },
+  {
+   "word_ref": "55:41:6:3",
+   "final": "CONSISTENT",
+   "rationale": "al-nawASI wa-l-aqdAm: the mujrimUn seized by forelocks and feet — purely anatomical, with no fore/aft rhetorical play, which is why coverage flagged it. Yet the root's contribution to aqdAm is precisely 'feet = the forward member of the body' (qadam vs the rear heel/'aqib), the same qdm/'-x-r opposition instantiated anatomically. No homonymy, no competing sense; the fore-position motivation of the noun holds. CONSISTENT, not forced."
+  }
+ ],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "WEAK",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PARTIAL",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

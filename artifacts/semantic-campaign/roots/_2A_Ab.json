@@ -1,0 +1,77 @@
+{
+ "root_buckwalter": "*Ab",
+ "root_arabic": "ذ ا ب",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch04-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "The wild predatory canid — the wolf as a concrete entity; in its Quranic deployment, the solitary predator whose threat attaches specifically to a human charge left without guard.",
+ "internal_discovery": {
+  "root_buckwalter": "*Ab",
+  "root_arabic": "ذ ا ب",
+  "candidate_root_contribution": "The wild predatory canid — the wolf as a concrete entity; in its Quranic deployment, the solitary predator whose threat attaches specifically to a human charge left without guard.",
+  "plain_explanation": "All three occurrences are the single definite noun al-dhi'b (\"the wolf\") inside the Yusuf narrative (12:13, 12:14, 12:17). In every occurrence the wolf is the subject of \"devour\" (akala) with Yusuf as object, and in every occurrence the devouring is non-actual: feared by Yaqub (12:13), hypothesized by the brothers (12:14), and falsely alleged by them (12:17). The wolf never appears on-scene; it exists only within speech about an unwitnessed event. The stable root contribution across all three is the concrete wolf-entity as the paradigmatic danger to the unguarded.",
+  "layer_separation_note": "Root residue = the wolf-entity itself (wild predatory canid). Subtracted as non-root layers: (a) FORM — all three are the same bare noun, so form contributes nothing differential; (b) CONSTRUCTION — the \"devourer\" role comes from the frame [dhi'b as subject of akala + Yusuf as object], not the root; (c) CONTEXT — the feared/hypothetical/alleged (non-actual) status of the devouring comes from reported speech in the Yusuf narrative (qala/qalu in all three verses), and the \"unguarded victim\" motif comes from 12:13's ghafilun and 12:17's \"we left Yusuf with our belongings\". After subtraction the residue is non-empty: a specific predator species-entity.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "None exists in the confirmed set. The nearest candidate for tension is 12:17, where the wolf's act is a fabrication — but the fabricated status belongs to the speech-act context, not the root: the lie only works because the wolf-entity is a plausible devourer, which presupposes rather than contradicts the proposed contribution.",
+  "competing_hypothesis": "A richer hypothesis: the root contributes not just \"wolf\" but \"the invoked-yet-absent predator / the scapegoat threat that never materializes,\" since in all 3 occurrences the wolf is talked about but never acts in reality. Rejected as root residue because the non-actuality is fully explained by the reported-speech construction and single-narrative context; attributing it to the root would violate layer separation. It remains a true generalization about Quranic usage, but at the context layer.",
+  "distinctiveness_note": "Distinct Quran-internally from sab' (al-sabu', 5:3 — generic predator that actually kills livestock) and qaswarah (74:51 — lion, agent of flight/terror): the wolf-root alone is deployed as a named, specific, human-directed threat conditioned on lapsed guardianship, and alone appears only in non-actual (feared/alleged) predation. However, with one lexeme, one syntactic frame, and one narrative cluster, this distinctiveness cannot be triangulated across independent contexts, which caps result strength.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "WEAK",
+  "rationale": "Universal presence holds cleanly: 3/3 occurrences carry the identical concrete contribution (the wolf-entity), with zero resistant cases, so PREFERRED is warranted. Strength is WEAK not because of any inconsistency but because the evidence base is minimal for induction: a single nominal lexeme, a single construction (subject of akala), and a single narrative episode provide no cross-context variation against which the proposed contribution could be stress-tested or falsified. The finding is certain as far as it goes, but shallow: the corpus permits identifying the referent and its single deployed role, nothing deeper."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "*Ab",
+  "verdict": "PARTIALLY_SUPPORTED",
+  "failing_occurrences": [
+   "12:14"
+  ],
+  "distinctiveness_ok": true,
+  "falsifiable": false,
+  "notes": "Root *Ab = ٱلذِّئْب \"the wolf\"; 3/3 occurrences are Form-N nouns, ALL inside one Surah Yusuf pericope (12:13, 12:14, 12:17) within a single narrative motif (brothers' wolf-pretext). CORE of the proposed contribution (\"wild predatory canid, wolf as concrete entity\") is universally present — it is literally the same noun in all three, hence not REFUTED. But the ELABORATION (\"solitary predator whose threat attaches specifically to a human charge left without guard\") is CONTEXT bleed: the \"unguarded charge\" idea is supplied by narrative tokens (غافلون in 12:13; تركنا يوسف عند متاعنا in 12:17), not by the root, so it violates the required subtraction of construction/context from root residue. FAILING OCCURRENCE = 12:14: the wolf is invoked precisely inside an assertion of GUARDEDNESS (وَنَحْنُ عُصْبَةٌ, \"while we are a strong band\"), which inverts/contradicts the \"left without guard\" specification rather than instantiating it — the whole rhetorical point is that Yusuf would NOT be unguarded. Thus the contribution as worded is not demonstrably present at 12:14. DISTINCTIVENESS: the bare \"wolf\" lexeme is distinct vs nearest roots (كلب etc.), so core distinctiveness holds, but that distinctiveness is just the dictionary lexeme, not an induced residue. FALSIFIABILITY: effectively nil — all occurrences are one noun in one story with no contrasting deployment, so root residue cannot be separated from narrative context and the claim cannot be tested; hence falsifiable=false. Under non-negotiable root unity, the over-specified contribution cannot be SUPPORTED (fails at 12:14); the reducible core \"wolf as concrete entity\" would hold universally but is not what was proposed."
+ },
+ "coverage_validation": {
+  "root": "*Ab",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "12:13:10:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:14:4:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:17:11:2",
+   "disposition": "CONSISTENT"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "WEAK",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PARTIAL",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

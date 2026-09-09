@@ -1,0 +1,78 @@
+{
+ "root_buckwalter": "ASr",
+ "root_arabic": "ا ص ر",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch04-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "A binding constraint imposed on a bearer from outside: an obligation experienced as a tying load that rests upon the one bound, laid on, contracted, or lifted off by another party.",
+ "internal_discovery": {
+  "root_buckwalter": "ASr",
+  "root_arabic": "ا ص ر",
+  "candidate_root_contribution": "A binding constraint imposed on a bearer from outside: an obligation experienced as a tying load that rests upon the one bound, laid on, contracted, or lifted off by another party.",
+  "plain_explanation": "In all three Quranic occurrences, iṣr names something that sits *upon* a party and both weighs on them and binds them. In 2:286 it is a load a Lord may lay upon a community (ḥamala ʿalā), as on earlier communities; in 3:81 it is the binding grip of God's covenant that the prophets take upon themselves by affirming; in 7:157 it is what the Messenger lifts off his followers, paired with shackles (aghlāl). The root's contribution is the fusion of burden and bond: an imposed obligation felt as a constraining weight — never a self-acquired load (that is wizr) and never the pact-event itself (that is mīthāq).",
+  "layer_separation_note": "FORM: all 3 tokens are the bare noun iṣr (form N) — no verbal-form semantics to subtract. CONSTRUCTION: in every occurrence iṣr is the object of a placement/transfer verb with the bearer marked prepositionally — taḥmil ʿalaynā (2:286), akhadhtum ʿalā dhālikum (3:81), yaḍaʿu ʿanhum (7:157); the 'located upon a bearer' framing is partly construction-contributed. CONTEXT supplies the imposer (God/covenant/prior law) and the relief framing (7:157). After subtracting these, the residue carried by the root itself is the 'binding-load' quality of the thing placed: an obligation that ties as it weighs. The residue is non-empty and does not reduce to the construction, since the same constructions occur with other nouns (wizr, mīthāq, aghlāl) yielding different meanings.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "3:81 (word_ref 3:81:25:1) is the most resistant: a plain 'heavy burden' reading is strained there, since iṣrī denotes the covenant commitment the prophets affirm. It is reconciled without forcing because the covenant is explicitly taken ʿalā ('upon') them — the residue 'imposed binding constraint resting on a bearer' is demonstrably present; only the pure-weight competitor fails, not the proposed residue.",
+  "competing_hypothesis": "Two single-component competitors: (a) iṣr = 'heavy burden' (pure weight) — fails at 3:81, where the referent is a contracted covenant obligation, not a weight; (b) iṣr = 'covenant' — fails at 7:157, where iṣr is coordinated with physical shackles and removed as relief, and is weak at 2:286 where it parallels a load carried. The two-component residue (imposed obligation-as-binding-load) is the only candidate surviving all three occurrences.",
+  "distinctiveness_note": "Versus nearest roots attested in the same verses: ḥ-m-l (2:286) supplies only the generic act of carrying — iṣr is the specific thing carried; w-th-q/mīthāq (3:81) names the pact-event, while iṣr names its binding weight on the bound party; gh-l-l/aghlāl (7:157) is the concrete fetter, while iṣr is the obligational counterpart it is paired with; w-z-r (wizr, elsewhere) is a load earned by one's own deeds, whereas iṣr is always imposed or contracted relationally. Falsifiable prediction: iṣr should never appear as something a soul earns for itself or carries of its own deeds — holds in all 3 occurrences.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "Full coverage achieved: all 3 confirmed occurrences (2:286, 3:81, 7:157) assessed and consistent with a single residue — an imposed binding constraint (obligation-as-tying-load) resting upon a bearer. The residue survives subtraction of the shared construction (transfer verb + ʿalā/ʿan bearer marking), defeats both single-component competitors, and the hardest case (3:81) reconciles without forcing. Strength is graded MODERATE rather than STRONG because the evidence base is small (3 tokens, one nominal form, one construction type), limiting the falsification surface, though internal consistency is complete (3/3)."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "ASr",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Full coverage: 3/3 occurrences, all noun form (N) إِصْر. Universal presence HOLDS. 2:286 (تَحْمِلْ عَلَيْنَآ إِصْرًا): a load LAID ON a bearer by another party (God) — \"laid on, rests upon the one bound\" directly present; iSr distinguished from the verb حمل (carrying). 3:81 (أَخَذْتُمْ عَلَىٰ ذَٰلِكُمْ إِصْرِى): God's binding compact CONTRACTED and taken upon (على) the prophets — \"contracted, obligation experienced as a tying load\" present; distinct from ميثاق used earlier in same verse, so iSr = the specific binding tie. 7:157 (يَضَعُ عَنْهُمْ إِصْرَهُمْ): a binding load LIFTED OFF (وضع عن) a bearer by another party (the messenger) — \"lifted off by another party\" directly present; explicitly distinguished from ٱلْأَغْلَٰل (physical shackles), so iSr is the abstract binding constraint, not the fetter. The three verbs (lay-on / contract / lift-off) are construction and are subtracted; the invariant residue — \"binding constraint imposed from outside, resting upon a bearer, manipulated by another party\" — is demonstrably present in every occurrence. Adversarial probe on 3:81 (covenant vs load reading) does not refute: the على construction and the definition's explicit \"contracted\" clause absorb it, and the binding/tying quality is present. Distinctiveness OK vs حمل (carrying/verb), غل/أغلال (physical shackle), ميثاق (generic covenant). Falsifiable: predicts iSr always binding, external, resting-upon; none of the 3 violate. No unreconciled occurrence."
+ },
+ "coverage_validation": {
+  "root": "ASr",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "2:286:24:1",
+   "disposition": "CONSISTENT",
+   "note": "iṣr governed by ḥamala ʿalā ('lay upon us') with parallel 'as You laid it on those before us' — the externally imposed load resting on the bearer, the 'laid on' facet."
+  },
+  {
+   "word_ref": "3:81:25:1",
+   "disposition": "CONSISTENT",
+   "note": "iṣrī taken upon the prophets via akhadhtum ʿalā dhālikum — the binding covenant assumed as constraint, the 'contracted' facet of the tying obligation."
+  },
+  {
+   "word_ref": "7:157:26:1",
+   "disposition": "CONSISTENT",
+   "note": "iṣrahum lifted off followers (yaḍaʿu ʿanhum), paired with aghlāl that 'were upon them' — the 'rests upon the bound / lifted off by another party' facet."
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

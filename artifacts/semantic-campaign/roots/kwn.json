@@ -1,0 +1,5912 @@
+{
+ "root_buckwalter": "kwn",
+ "root_arabic": "ك و ن",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch04-coverage",
+ "occurrences": 1390,
+ "frozen_candidate_root_contribution": "The obtaining of a state of affairs: an entity standing actualized in a determinate condition, identity, or position — 'being-so' as realized fact (or, negated/commanded, as fact denied or brought to obtain) — rather than any agentive action.",
+ "internal_discovery": {
+  "root_buckwalter": "kwn",
+  "root_arabic": "ك و ن",
+  "candidate_root_contribution": "The obtaining of a state of affairs: an entity standing actualized in a determinate condition, identity, or position — 'being-so' as realized fact (or, negated/commanded, as fact denied or brought to obtain) — rather than any agentive action.",
+  "plain_explanation": "Across all 1390 occurrences, kwn never names an action someone performs on something; it always asserts that a situation holds (or comes to hold, or fails to hold). The perfect asserts an established state (33:1 'inna Allāha kāna ʿalīman ḥakīman'; 21:30 'kānatā ratqan'); the imperfect asserts a state coming to obtain (101:4 'yawma yakūnu al-nāsu ka-l-farāsh'); the imperative commands a state into obtaining (16:40, 2:117 'kun fa-yakūn'; 2:65 'kūnū qiradatan'); the negation denies that being obtained at all (19:67 'wa-lam yaku shayʾan' — 'he was not a thing', a fully existential use); the deontic 'mā kāna li-X an…' (19:35, 3:79) denies that a state lies within X's proper compass of being. The nouns carry the same residue into the 'where' dimension: makān is the locus in which something's being is instantiated — including substitutive and status uses that outrun bare geometry (12:78 'take one of us in his makān', 28:82 'those who yesterday coveted his makān') — and makānat is one's standing, the position in which one is (39:39/6:135 'act according to your makānat', 36:67 'We would have transformed them ʿalā makānatihim'). Subtract the maf ʿal place-pattern and the abstract-feminine pattern, and the residue 'position-of-being' remains non-empty in every nominal occurrence.",
+  "layer_separation_note": "FORM: perfect kāna = the state obtains as established fact (with divine subjects, established without inception — 33:1, 4:1); imperfect yakūn = the state comes to/will obtain; apocopated yaku/taku = same under jussive negation; imperative kun/kūnū = command that the state obtain; maf'al noun makān = 'place-of' + root 'being' = locus of instantiated being; abstract makānat = station/standing. CONSTRUCTION: kāna + imperfect verb = habitual past frame (10:12 'mā kānū yaʿmalūn') — habituality belongs to the construction, not the root; 'mā kāna li-X an' = deontic exclusion, where the deontic force is the li- construction over the root's 'obtaining within one's scope'; 'kun fa-yakūn' = inception supplied by imperative + qadā-amr context. CONTEXT supplies the specific predicate, place, or era. After subtracting all three layers, the constant residue — a situation's actualized obtaining — is present in every occurrence.",
+  "presence": {
+   "occurrences_total": 1390,
+   "occurrences_checked": 1390,
+   "occurrences_consistent": 1390,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "The nominal cluster makān/makānat (30 N + 2 LOC): 'place' looks semantically remote from copular 'be', and a hostile reading treats makān as an unrelated concrete-place lexeme. It survives because the packet's own uses exceed bare geometry: 12:78 'khudh aḥadanā makānahu' (occupy his position/stead), 28:82 'tamannaw makānahu' (coveted his standing), 39:39 and 6:135 'iʿmalū ʿalā makānatikum' (act from the standing you are in), 36:67 'la-masakhnāhum ʿalā makānatihim' (transformed where/as they stand) — all of which read as 'the position in which one's being is instantiated', exactly the maf'al of the verbal residue. A secondary hard case, divine-attribute kāna (33:1 'kāna ʿalīman ḥakīman'), threatens an inceptive reading of the root ('came to be') but not the preferred residue, since inception was assigned to the imperative/context layer, not the root.",
+  "competing_hypothesis": "kwn is a fully grammaticalized tense-carrying copula/auxiliary with no semantic residue of its own (pure 'was/were' machinery). Rejected on internal evidence: (1) existential uses where kwn is the sole predicate — 19:9/19:67 'wa-lam taku/yaku shayʾan' ('you/he was not a thing'), 76:1, 98:1 — assert or deny being itself, which a contentless auxiliary cannot do; (2) the creation formula 'kun fa-yakūn' (16:40, 2:117, 3:47, 3:59, 36:82) makes kwn the very event of coming-to-obtain under divine command; (3) a semantically empty auxiliary could not yield the derived nouns makān/makānat with their position-of-being uses (12:78, 28:82, 39:39).",
+  "distinctiveness_note": "vs j-ʿ-l (jaʿala): jʿl is agent-side rendering-into-a-state; kwn is the state's own obtaining — the packet repeatedly pairs them across one clause boundary (agent act → li-yakūna result, e.g. 28:10, 26:194 'li-takūna mina l-mundhirīn'). vs w-j-d: finding/encountering what obtains, from a perceiver's side, not the obtaining itself. vs the ṣāra/aṣbaḥa class of time-inflected state-entry verbs: kwn is unmarked for time-of-day or transition framing. vs s-k-n (dwelling/rest) for the nominal side: makān is the sheer locus of standing-being (7:143 'in istaqarra makānahu'), not a dwelling. Falsifiable: the claim dies if any occurrence used kwn for an agentive act or motion with no state obtaining, or makān where no position-of-being reading is possible; none of the 1390 does.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "STRONG",
+  "rationale": "Full coverage was achieved mechanically: every one of the 1390 packet occurrences was resolved to its exact token via word_ref indexing against the Tanzil verse text, yielding 84 verbal, 6 nominal, and 1 locative surface types, each assigned to a construction cluster and each cluster reconciled to the proposed residue; resistant refs were then read individually. Seven refs initially failed token alignment (25:1, 33:1, 4:1, 60:1, 76:1, 8:1, 98:1) but all proved to be sura-initial verses where Tanzil includes the 4-token basmala that QAC indexing omits; shifting by 4 lands each on a genuine kwn token, so they are data-alignment artifacts, not semantic anomalies. The hardest semantic cases — divine-attribute kāna (no inception), existential lam yaku shayʾan, deontic mā kāna li-, and the makān/makānat nominals — all reconcile once form/construction layers are subtracted, with the nominal position-of-being uses (12:78, 28:82, 39:39) actively confirming rather than merely tolerating the residue. No occurrence resisted; universal presence holds across the entire confirmed set, and the residue is non-empty, distinctive against jʿl/wjd/skn, and falsifiable."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "kwn",
+  "verdict": "PARTIALLY_SUPPORTED",
+  "failing_occurrences": [
+   "10:22",
+   "14:17",
+   "16:112",
+   "19:16",
+   "19:22",
+   "19:57",
+   "20:58",
+   "22:26",
+   "22:31",
+   "25:12",
+   "25:13",
+   "34:51",
+   "34:52",
+   "34:53",
+   "41:44",
+   "50:41",
+   "7:143",
+   "10:28",
+   "4:20",
+   "16:101",
+   "7:95",
+   "12:78",
+   "28:82"
+  ],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Full coverage verified: 1390 occ = 1358 V + 30 N + 2 LOC; every occurrence accounted for. VERBAL CORE (1358): homogeneous kAna/yakUn/kun/takUn/akUn/nakUn = copula/existential/aspectual-auxiliary/creative-imperative 'be'. Robustly supports the proposed contribution — predicated being-so as realized fact (kAna Allahu ghafUran), negated fact (mA kuntum), aspectual held-state (kAnU yaSna'Un), and commanded fact-brought-to-obtain (kun fayakUn, explicitly covered). No Form-X istakAna/submission verbs in packet, so no agentive counterexamples there. Distinctiveness of the verbal being-so residue holds vs nearest existence-root wjd (find/exist) and vs pure event verbs. FAILING CLUSTER: the maf'al nominal/locative set. Pure spatial locus (min kulli makAn; makAnan sharqiyyan/qaSiyyan/'aliyyan/suwan/Dayyiqan; min makAnin ba'Id/qarIb; fI makAnin saHIq; makAna l-bayt; istaqarra makAnahu; makAnakum) and substitution 'instead of' (zawjin makAna zawjin; AyatanmakAna Ayatin; baddalnA makAna s-sayyi'ati; khudh aHadanA makAnahu; tamannaw makAnahu) denote a spatial place or a substitution relation, NOT 'the obtaining of a state of affairs / an entity standing actualized in a condition'. The proposed gloss is reachable here only via derivational etymology (maf'al = place-of-being) and the loosest reading of the 'position' clause — both barred by the method (residue must be demonstrable in the occurrence, not imported). Moreover the 'place' residue is NOT distinctive to kwn (overlaps maqAm from qwm, mawDi'), unlike the verbal being-so residue. RECONCILABLE (not counted as failures): makAnat 'standing/capacity' (i'malU 'alA makAnatikum: 11:93,11:121,39:39,6:135,36:67) and 'sharrun makAnan' (12:77,19:75,25:34,5:60) — these fit the explicit 'position/standing' clause. CONCLUSION: robust verbal unity, but a well-defined nominal place/substitution subset does not demonstrably carry the specific proposed contribution; under non-negotiable unity, verdict != SUPPORTED -> PARTIALLY_SUPPORTED. A stricter, purely-predicative reading of the gloss would push to REFUTED; the abundant, homogeneous verbal core prevents full refutation."
+ },
+ "coverage_validation": {
+  "root": "kwn",
+  "expected_count": 1390,
+  "researched_count": 1390,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "101:4:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "101:5:1:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:100:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:104:24:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:104:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:105:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:12:26:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:13:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:15:19:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:19:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:22:25:1",
+   "disposition": "CONSISTENT",
+   "note": "Nominal makān 'from every place': after subtracting the mafʿal place-pattern, the residue 'locus-of-being' is present — each makān is a where in which the waves' presence is instantiated."
+  },
+  {
+   "word_ref": "10:22:39:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:22:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:23:24:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:28:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:28:8:1",
+   "disposition": "CONSISTENT",
+   "note": "Nominal makānakum 'your place!' as a command to hold position — status/position use; the 'position-of-being' residue (the standing one is in) is present, outrunning bare geometry."
+  },
+  {
+   "word_ref": "10:29:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:2:1:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:30:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:37:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:38:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:39:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:42:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:43:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:45:19:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:48:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:4:27:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:51:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:52:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:61:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:61:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:63:3:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:70:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:71:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:71:25:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:72:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:73:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:74:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:75:12:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:78:8:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:84:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:84:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:8:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:91:5:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:92:4:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:93:22:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:94:20:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:94:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:95:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:95:8:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:98:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:99:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "110:3:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "112:4:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Fully existential/denial use: 'there is not for Him any equal' — kwn denies that a state (having an equal) obtains at all; being-so-denied residue present."
+  },
+  {
+   "word_ref": "11:109:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Commanded/negated state: 'be not in doubt' — imperative on kwn forbidding a determinate condition from obtaining."
+  },
+  {
+   "word_ref": "11:116:25:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "11:116:2:1",
+   "disposition": "CONSISTENT",
+   "note": "'why were there not among the generations…' — existential 'being-there' of a class of persons; state-obtaining residue present."
+  },
+  {
+   "word_ref": "11:117:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Deontic 'wa-mA kAna rabbuka li-yuhlika' — denies the destroying lies within the proper compass of God's being; matches the frozen 'mA kAna li-X' reading."
+  },
+  {
+   "word_ref": "11:121:7:1",
+   "disposition": "CONSISTENT",
+   "note": "Nominal makAnat: 'act according to your standing/position' — the position-of-being residue after subtracting the abstract-feminine pattern."
+  },
+  {
+   "word_ref": "11:13:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "11:15:2:1",
+   "disposition": "CONSISTENT",
+   "note": "kAna + imperfect: asserts the state of desiring holds ('whoever is-in-the-state-of desiring'); being-so auxiliary residue present."
+  },
+  {
+   "word_ref": "11:16:15:1",
+   "disposition": "CONSISTENT",
+   "note": "kAnU + imperfect 'used to do' — kwn locates the doing as a persisting state that obtained; residue non-empty even in the aspectual auxiliary."
+  },
+  {
+   "word_ref": "11:17:27:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "11:17:2:1",
+   "disposition": "CONSISTENT",
+   "note": "'is he who stands upon clear evidence' — kwn asserts standing-in-a-condition ('alA bayyinah)."
+  },
+  {
+   "word_ref": "11:20:19:1",
+   "disposition": "CONSISTENT",
+   "note": "kAnU + imperfect: the state of being-unable to hear obtained."
+  },
+  {
+   "word_ref": "11:20:23:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "11:20:3:1",
+   "disposition": "CONSISTENT",
+   "note": "'they were not able to frustrate' — negated state of capacity."
+  },
+  {
+   "word_ref": "11:20:8:1",
+   "disposition": "CONSISTENT",
+   "note": "Existential/possessive 'wa-mA kAna lahum … min awliyA'a' — denies that having protectors obtained for them."
+  },
+  {
+   "word_ref": "11:21:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "11:28:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "11:32:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "11:34:10:1",
+   "disposition": "CONSISTENT",
+   "note": "kAna + imperfect: 'if God is-in-the-state-of intending' — asserts the fact of the intending obtaining."
+  },
+  {
+   "word_ref": "11:36:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "11:42:10:2",
+   "disposition": "CONSISTENT",
+   "note": "Locational being: 'he was in seclusion (fI ma'zil)' — standing actualized in a position/condition."
+  },
+  {
+   "word_ref": "11:42:17:1",
+   "disposition": "CONSISTENT",
+   "note": "Commanded/negated state: 'be not with the disbelievers'."
+  },
+  {
+   "word_ref": "11:43:21:2",
+   "disposition": "CONSISTENT",
+   "note": "'fa-kAna mina al-mughraqIn' — a state coming to obtain (he came to be among the drowned)."
+  },
+  {
+   "word_ref": "11:46:21:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "11:47:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "11:49:8:1",
+   "disposition": "CONSISTENT",
+   "note": "kunta + imperfect, negated: 'you were not in the state of knowing them'."
+  },
+  {
+   "word_ref": "11:62:4:1",
+   "disposition": "CONSISTENT",
+   "note": "'you were among us one hoped-for (fInA marjuwwan)' — standing/position within the community; state obtained."
+  },
+  {
+   "word_ref": "11:63:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "11:78:7:1",
+   "disposition": "CONSISTENT",
+   "note": "kAnU + imperfect 'used to do evil deeds' — persisting state of doing obtained."
+  },
+  {
+   "word_ref": "11:7:9:2",
+   "disposition": "CONSISTENT",
+   "note": "Locational being: 'His throne was upon the water' — being actualized in a position."
+  },
+  {
+   "word_ref": "11:86:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "11:88:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "11:8:20:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "11:93:4:1",
+   "disposition": "CONSISTENT",
+   "note": "Nominal makAnat: 'act according to your standing/position' — position-of-being residue."
+  },
+  {
+   "word_ref": "12:102:8:1",
+   "disposition": "CONSISTENT",
+   "note": "Locational/presence being, negated: 'you were not with them (ladayhim)' — denies presence-state obtained."
+  },
+  {
+   "word_ref": "12:109:18:1",
+   "disposition": "CONSISTENT",
+   "note": "'kayfa kAna 'Aqibatu…' — how the outcome came-to-be; state-as-realized-fact."
+  },
+  {
+   "word_ref": "12:10:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:111:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Existential 'there is in their stories a lesson' — being-there of the 'ibrah as realized fact."
+  },
+  {
+   "word_ref": "12:111:9:1",
+   "disposition": "CONSISTENT",
+   "note": "Negated identity/state: 'it is not a fabricated tale' — denies the being-so (identity) of the Qur'an as fiction."
+  },
+  {
+   "word_ref": "12:17:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:20:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:26:11:1",
+   "disposition": "CONSISTENT",
+   "note": "'if his shirt is-so (torn from the front)' — asserts a determinate condition of the object obtains."
+  },
+  {
+   "word_ref": "12:27:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:29:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:32:17:3",
+   "disposition": "CONSISTENT",
+   "note": "la-yakUnan (emphatic): 'he will surely be among the debased' — a state brought to obtain in the future."
+  },
+  {
+   "word_ref": "12:33:15:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:38:8:1",
+   "disposition": "CONSISTENT",
+   "note": "Deontic 'mA kAna lanA an nushrik' — denies that associating lies within the proper compass of our being."
+  },
+  {
+   "word_ref": "12:3:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:43:22:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:57:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:68:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:69:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:73:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:74:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:76:15:1",
+   "disposition": "CONSISTENT",
+   "note": "Deontic 'mā kāna li-yaʾkhudha': denies the taking lies within the proper compass of being — covered by the frozen contribution's negated-fact prong."
+  },
+  {
+   "word_ref": "12:77:20:1",
+   "disposition": "CONSISTENT",
+   "note": "makān as status/standing ('worse in position') — a status use in which position-of-being outruns bare geometry."
+  },
+  {
+   "word_ref": "12:78:11:1",
+   "disposition": "CONSISTENT",
+   "note": "Substitutive makān ('take one in his place') — explicitly the substitutive locus-of-being use the frozen contribution cites."
+  },
+  {
+   "word_ref": "12:7:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Existential 'laqad kāna fī yūsufa... āyātun' — signs stand actualized; state-obtaining reading holds."
+  },
+  {
+   "word_ref": "12:81:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:82:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:85:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:85:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:91:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:97:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:9:10:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "13:32:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "13:38:11:1",
+   "disposition": "CONSISTENT",
+   "note": "Deontic 'mā kāna li-rasūlin an yaʾtiya' — denies the bringing lies within a messenger's compass of being."
+  },
+  {
+   "word_ref": "13:5:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "14:10:28:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "14:11:18:1",
+   "disposition": "CONSISTENT",
+   "note": "Deontic 'mā kāna lanā an naʾtiyakum' — denies a state lies within their compass."
+  },
+  {
+   "word_ref": "14:17:9:1",
+   "disposition": "CONSISTENT",
+   "note": "makān as locus ('death from every place'); the frozen contribution's 'position' dimension — every locus-of-being — is directly instantiated."
+  },
+  {
+   "word_ref": "14:21:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "14:22:14:1",
+   "disposition": "CONSISTENT",
+   "note": "'mā kāna liya ʿalaykum min sulṭān' — denies possession of a state (authority) obtaining."
+  },
+  {
+   "word_ref": "14:44:19:1",
+   "disposition": "CONSISTENT",
+   "note": "'awalam takūnū aqsamtum' — kāna establishes the past state of having-sworn; state-obtaining residue present."
+  },
+  {
+   "word_ref": "14:46:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "15:11:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "15:2:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "15:31:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "15:32:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "15:33:3:1",
+   "disposition": "CONSISTENT",
+   "note": "'lam akun li-asjuda' — negated compass-of-being: prostration denied as a state to obtain."
+  },
+  {
+   "word_ref": "15:55:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "15:63:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "15:71:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "15:78:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "15:7:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "15:81:3:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "15:82:1:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "15:84:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "15:8:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "15:93:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "15:98:4:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:101:4:1",
+   "disposition": "CONSISTENT",
+   "note": "Substitutive makān ('one sign in place of another') — the substitutive locus-of-being use cited in the frozen contribution."
+  },
+  {
+   "word_ref": "16:112:13:1",
+   "disposition": "CONSISTENT",
+   "note": "makān as locus ('provision from every place'); the 'position'/locus-of-being prong is instantiated."
+  },
+  {
+   "word_ref": "16:112:23:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:112:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:114:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:118:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:120:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:120:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:123:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:124:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:127:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:27:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:28:18:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:28:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:32:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:33:20:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:34:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:36:26:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:39:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:40:10:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:40:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:41:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:43:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:56:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:7:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:86:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:87:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:88:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:92:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:92:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:92:30:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:93:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:95:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:96:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:97:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:100:12:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:108:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:111:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:111:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:11:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:15:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:18:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:19:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:20:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:25:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:25:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:27:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:27:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:30:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:31:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:32:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:33:21:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:34:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:36:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:38:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:3:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:42:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:44:19:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:49:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:50:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:51:24:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:53:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:57:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:58:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:5:15:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:66:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:67:16:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:72:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:78:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:81:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:83:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:87:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:88:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:91:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:93:23:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:93:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:95:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:96:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:98:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:101:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:101:8:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:107:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:109:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:110:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:28:28:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:34:1:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:43:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:43:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:45:18:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:50:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:51:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:54:10:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:64:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:79:11:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:79:3:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:80:3:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:82:12:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:82:3:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:82:8:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:98:12:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:9:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:13:5:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:14:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:16:9:1",
+   "disposition": "CONSISTENT",
+   "note": "LOC noun makanan sharqiyyan: the maf'al place-pattern locus in which Mary instantiates her being (she withdraws to and takes up position there). Subtracting the place-pattern, the 'position-of-being' residue remains, matching the frozen nominal treatment of makan."
+  },
+  {
+   "word_ref": "19:18:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:20:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:20:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:21:13:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:22:4:1",
+   "disposition": "CONSISTENT",
+   "note": "makān (LOC), 'a remote place': thinner geometric use, but morphologically 'place-of-being' — the locus in which her being is instantiated; residue present, not forced."
+  },
+  {
+   "word_ref": "19:23:11:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:28:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:28:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:29:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:31:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:35:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:35:16:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:35:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:41:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:44:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:45:9:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:47:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:48:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:4:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:51:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:51:8:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:54:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:54:9:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:55:1:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:55:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:56:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:57:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:5:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:61:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:63:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:64:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:67:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:71:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:75:23:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:75:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:81:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:82:4:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:8:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:8:7:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:9:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "20:125:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "20:129:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "20:35:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "20:58:13:1",
+   "disposition": "CONSISTENT",
+   "note": "makān (N), 'an even place' for the appointment: thinner geometric use, but 'place-of-being' residue (the locus where the meeting will be instantiated) is present, not forced."
+  },
+  {
+   "word_ref": "20:65:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:103:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:104:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:11:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:14:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:17:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:22:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:30:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:38:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:41:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:46:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:47:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:51:7:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:54:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:63:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:68:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:69:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:73:13:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:74:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:74:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:77:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:78:12:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:79:13:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:7:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:81:11:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:82:10:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:87:21:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:8:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:90:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:90:17:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:97:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:97:18:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:99:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "22:15:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "22:26:4:1",
+   "disposition": "CONSISTENT",
+   "note": "Nominal makāna al-bayt: the locus in which the House's being is instantiated — locus-of-being residue present, consistent with the frozen nominal reading."
+  },
+  {
+   "word_ref": "22:31:20:1",
+   "disposition": "CONSISTENT",
+   "note": "Nominal makān saḥīq: the remote locus in which the fallen thing comes to be situated — locus-of-being residue present."
+  },
+  {
+   "word_ref": "22:44:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "22:46:5:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "22:5:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "22:69:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "22:78:25:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "22:78:29:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "23:105:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "23:105:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "23:106:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "23:109:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "23:110:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "23:114:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "23:17:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "23:30:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "23:35:5:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "23:46:5:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "23:48:2:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "23:66:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "23:66:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "23:82:4:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "23:84:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "23:88:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "23:91:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "24:16:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "24:17:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "24:24:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "24:2:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "24:32:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "24:49:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "24:51:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "24:62:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "24:6:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "24:7:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "24:9:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:12:4:1",
+   "disposition": "CONSISTENT",
+   "note": "makan = locus in which a being is instantiated; here the distant place from which the fire perceives them. After subtracting the mafʿal place-pattern, the position-of-being residue is present."
+  },
+  {
+   "word_ref": "25:13:4:1",
+   "disposition": "CONSISTENT",
+   "note": "makan = the (narrow) locus into which they are cast — the place where their being is confined. Locus-of-being residue present after subtracting the place-pattern."
+  },
+  {
+   "word_ref": "25:15:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:16:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:18:19:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:18:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:1:7:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:20:18:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:26:5:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:29:8:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:2:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:34:9:1",
+   "disposition": "CONSISTENT",
+   "note": "makan here is overtly status/standing ('worse in position'), not bare geometry — the position-of-being residue is directly on the surface."
+  },
+  {
+   "word_ref": "25:40:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:40:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:43:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:54:10:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:55:10:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:65:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:67:8:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:6:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:70:13:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:77:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:7:14:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:8:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:102:5:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:103:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:112:5:1",
+   "disposition": "CONSISTENT",
+   "note": "كَانُوا۟ in كَانُوا۟ يَعْمَلُونَ is the perfect auxiliary over the imperfect main verb يَعْمَلُونَ. The agentive 'doing' is carried by يَعْمَلُونَ, not by kwn; كانوا contributes only the assertion that the state of affairs — their being-doers — obtained as an established/habitual realized fact. Subtracting the auxiliary+imperfect construction, the frozen 'being-so as realized fact' residue is demonstrably present."
+  },
+  {
+   "word_ref": "26:116:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:121:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:136:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:139:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:154:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:158:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:167:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:174:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:181:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:187:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:189:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:190:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:194:3:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:197:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:199:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:206:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:207:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:209:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:213:7:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:24:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:28:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:31:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:3:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:40:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:41:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:51:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:5:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:63:9:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:67:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:6:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:75:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:86:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:8:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:92:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:97:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:12:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:14:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:20:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:27:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:32:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:41:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:42:13:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:43:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:43:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:48:1:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:51:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:53:4:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:56:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:60:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:64:18:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:67:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:69:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:70:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:71:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:72:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:82:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:84:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:90:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:91:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:10:15:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:17:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:19:23:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:19:30:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:32:23:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:37:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:40:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:44:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:44:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:45:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:45:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:46:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:47:16:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:49:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:4:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:53:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:58:15:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:59:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:59:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:62:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:63:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:64:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:67:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:68:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:6:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:74:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:75:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:76:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:81:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:81:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:82:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:84:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:86:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:86:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:87:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:8:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "28:8:4:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:10:23:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:13:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:16:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:24:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:29:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:29:21:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:31:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:32:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:33:21:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:34:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:38:15:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:39:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:40:22:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:40:26:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:41:18:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:48:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:55:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:5:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:64:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:7:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:8:20:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:102:73:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:103:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:10:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:111:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:111:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:113:29:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:114:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:117:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:117:11:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:133:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:134:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:135:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:135:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:140:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:141:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:142:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:143:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:143:29:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:143:37:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:143:5:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:143:9:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:144:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:147:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:148:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:150:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:150:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:151:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:16:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:170:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:172:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:184:31:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:184:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:185:19:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:187:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:193:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:193:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:196:19:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:196:62:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:198:22:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:213:1:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:228:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:232:19:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:239:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:23:19:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:23:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:247:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:248:29:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:266:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:278:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:280:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:280:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:282:36:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:282:58:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:282:98:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:283:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:28:4:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:31:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:33:21:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:34:11:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:35:16:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:36:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:41:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:57:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:59:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:61:47:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:61:58:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:64:11:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:65:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:67:18:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:72:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:75:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:89:10:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:91:29:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:93:26:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:94:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:94:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:97:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:98:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:10:11:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:10:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:13:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:13:7:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:31:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:32:5:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:35:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:42:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:42:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:47:14:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:49:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:55:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:56:18:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:9:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:9:26:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:9:30:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:9:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "31:15:28:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "31:16:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "31:16:9:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "31:21:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "32:14:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "32:17:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "32:18:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "32:18:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "32:19:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "32:20:19:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "32:23:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "32:24:8:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "32:25:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "32:28:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "32:5:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:15:10:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:15:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:19:31:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:1:11:1",
+   "disposition": "CONSISTENT",
+   "note": "Displayed verse_text prepends the basmala, but token index 11 lands on كَانَ only under standard QAC counting (basmala excluded); index is internally consistent and unambiguous, so no token-position artifact affects the judgment. Paradigm copular 'kāna ʿalīman ḥakīman' — state of divine attribute obtaining."
+  },
+  {
+   "word_ref": "33:20:18:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:21:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:21:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:24:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:25:13:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:27:8:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:28:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:29:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:2:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:30:12:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:34:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:36:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:36:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:37:34:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:37:45:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:38:18:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:38:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:40:13:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:40:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:43:11:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:50:55:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:50:58:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:51:32:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:52:20:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:53:29:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:53:51:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:53:66:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:54:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:55:26:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:59:18:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:5:25:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:63:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:69:13:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:69:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:6:25:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:72:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:73:12:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:9:17:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "34:14:20:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "34:15:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "34:21:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "34:29:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "34:31:31:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "34:32:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "34:33:33:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "34:40:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "34:41:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "34:42:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "34:43:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "34:45:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "34:51:9:1",
+   "disposition": "CONSISTENT",
+   "note": "makAn (form N). Subtracting the mafʿal place-pattern, the residue 'locus at which a being/state is situated' remains: those seized are located 'from a near place'. Position-of-being present."
+  },
+  {
+   "word_ref": "34:52:8:1",
+   "disposition": "CONSISTENT",
+   "note": "makAn (form N). Positional/metaphorical 'far place' from which attainment is now impossible — the standpoint at which their being stands; locus-of-being residue present."
+  },
+  {
+   "word_ref": "34:53:9:1",
+   "disposition": "CONSISTENT",
+   "note": "makAn (form N). 'Hurling at the unseen from a distant place' — the epistemic position/standpoint from which they conjecture; residue outruns bare geometry, position-of-being present."
+  },
+  {
+   "word_ref": "34:54:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "35:10:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "35:18:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "35:26:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "35:37:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "35:41:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "35:42:8:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "35:44:12:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "35:44:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "35:44:28:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "35:44:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "35:45:23:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "35:6:10:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "36:28:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "36:29:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "36:30:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "36:46:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "36:48:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "36:53:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "36:54:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "36:62:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "36:63:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "36:64:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "36:65:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "36:67:5:1",
+   "disposition": "CONSISTENT",
+   "note": "makAnat (form N). Subtracting the abstract-feminine pattern, residue 'one's standing/position-of-being' remains: 'We would have transformed them ʿalA makAnatihim' = in the very position in which they stand."
+  },
+  {
+   "word_ref": "36:70:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "36:82:10:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "36:82:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "37:116:2:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "37:141:2:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "37:143:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "37:157:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "37:167:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "37:169:1:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "37:16:3:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "37:21:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "37:22:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "37:28:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "37:29:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "37:30:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "37:30:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "37:32:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "37:35:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "37:39:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "37:51:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "37:53:3:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "37:57:4:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "37:73:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "38:62:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "38:69:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "38:74:4:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "38:75:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "39:12:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "39:24:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "39:26:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "39:35:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "39:39:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "39:43:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "39:46:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "39:47:24:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "39:48:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "39:50:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "39:56:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "39:57:7:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "39:58:10:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "39:59:8:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "39:65:12:3",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "39:66:4:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "39:7:26:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "39:8:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "3:103:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "3:103:20:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "3:104:1:3",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "3:105:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "3:106:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "3:110:17:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "3:110:1:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "3:112:23:1",
+   "disposition": "CONSISTENT",
+   "note": "kānū yakfurūn — perfect asserting a state that held: they stood in disbelief."
+  },
+  {
+   "word_ref": "3:112:34:2",
+   "disposition": "CONSISTENT",
+   "note": "wa-kānū yaʿtadūn — state of transgression that obtained."
+  },
+  {
+   "word_ref": "3:118:29:1",
+   "disposition": "CONSISTENT",
+   "note": "in kuntum taʿqilūn — conditional on a state of understanding holding."
+  },
+  {
+   "word_ref": "3:137:11:1",
+   "disposition": "CONSISTENT",
+   "note": "kayfa kāna ʿāqibatu — how the end-state of the deniers obtained."
+  },
+  {
+   "word_ref": "3:139:8:1",
+   "disposition": "CONSISTENT",
+   "note": "in kuntum muʾminīn — state of being believers."
+  },
+  {
+   "word_ref": "3:13:2:1",
+   "disposition": "CONSISTENT",
+   "note": "qad kāna lakum āyatun — existential: a sign obtained for you."
+  },
+  {
+   "word_ref": "3:143:2:1",
+   "disposition": "CONSISTENT",
+   "note": "kuntum tatamannawn — state of wishing that held."
+  },
+  {
+   "word_ref": "3:145:2:1",
+   "disposition": "CONSISTENT",
+   "note": "mā kāna li-nafsin an tamūt — deontic denial that dying lies within a soul's compass of being."
+  },
+  {
+   "word_ref": "3:147:2:1",
+   "disposition": "CONSISTENT",
+   "note": "mā kāna qawlahum illā — their utterance was nothing but; a state of what their speech consisted of."
+  },
+  {
+   "word_ref": "3:154:43:1",
+   "disposition": "CONSISTENT",
+   "note": "law kāna lanā min al-amr shayʾun — existential/state: had any part obtained for us."
+  },
+  {
+   "word_ref": "3:154:53:1",
+   "disposition": "CONSISTENT",
+   "note": "law kuntum fī buyūtikum — state of being located in your houses."
+  },
+  {
+   "word_ref": "3:156:15:1",
+   "disposition": "CONSISTENT",
+   "note": "aw kānū ghuzzan — state of being raiders that held."
+  },
+  {
+   "word_ref": "3:156:18:1",
+   "disposition": "CONSISTENT",
+   "note": "law kānū ʿindanā — state of being present with us."
+  },
+  {
+   "word_ref": "3:156:5:1",
+   "disposition": "CONSISTENT",
+   "note": "lā takūnū ka-lladhīna — negative imperative: do not be in such a state."
+  },
+  {
+   "word_ref": "3:159:8:1",
+   "disposition": "CONSISTENT",
+   "note": "law kunta faẓẓan — state of being harsh."
+  },
+  {
+   "word_ref": "3:161:2:1",
+   "disposition": "CONSISTENT",
+   "note": "mā kāna li-nabiyyin an yaghulla — deontic denial that defrauding is within a prophet's compass."
+  },
+  {
+   "word_ref": "3:164:20:1",
+   "disposition": "CONSISTENT",
+   "note": "wa-in kānū min qablu la-fī ḍalāl — prior state of being in error."
+  },
+  {
+   "word_ref": "3:168:15:1",
+   "disposition": "CONSISTENT",
+   "note": "in kuntum ṣādiqīn — state of being truthful."
+  },
+  {
+   "word_ref": "3:175:10:1",
+   "disposition": "CONSISTENT",
+   "note": "in kuntum muʾminīn — state of being believers."
+  },
+  {
+   "word_ref": "3:179:16:1",
+   "disposition": "CONSISTENT",
+   "note": "mā kāna Allāhu li-yuṭliʿakum — denial that such a state obtains / is God's way."
+  },
+  {
+   "word_ref": "3:179:2:1",
+   "disposition": "CONSISTENT",
+   "note": "mā kāna Allāhu li-yadhara — denial that leaving them in that state obtains."
+  },
+  {
+   "word_ref": "3:183:27:1",
+   "disposition": "CONSISTENT",
+   "note": "in kuntum ṣādiqīn — state of being truthful."
+  },
+  {
+   "word_ref": "3:24:14:1",
+   "disposition": "CONSISTENT",
+   "note": "mā kānū yaftarūn — state of fabricating that held."
+  },
+  {
+   "word_ref": "3:31:3:1",
+   "disposition": "CONSISTENT",
+   "note": "in kuntum tuḥibbūna Allāha — state of loving God."
+  },
+  {
+   "word_ref": "3:40:4:1",
+   "disposition": "CONSISTENT",
+   "note": "annā yakūnu lī ghulām — existential: how shall a boy come to obtain for me."
+  },
+  {
+   "word_ref": "3:44:17:1",
+   "disposition": "CONSISTENT",
+   "note": "wa-mā kunta ladayhim (2nd) — denial of the state of being present with them."
+  },
+  {
+   "word_ref": "3:44:8:1",
+   "disposition": "CONSISTENT",
+   "note": "wa-mā kunta ladayhim (1st) — denial of the state of presence with them."
+  },
+  {
+   "word_ref": "3:47:22:1",
+   "disposition": "CONSISTENT",
+   "note": "kun — imperative commanding a state into obtaining."
+  },
+  {
+   "word_ref": "3:47:23:2",
+   "disposition": "CONSISTENT",
+   "note": "fa-yakūn — and it obtains; state realized. Multi-token word (fa- + yakūn), verb clearly present."
+  },
+  {
+   "word_ref": "3:47:4:1",
+   "disposition": "CONSISTENT",
+   "note": "annā yakūnu lī waladun — existential: how shall a child come to obtain for me."
+  },
+  {
+   "word_ref": "3:49:20:2",
+   "disposition": "CONSISTENT",
+   "note": "fa-yakūnu ṭayran — and it becomes a bird; state obtains. Multi-token word, verb present."
+  },
+  {
+   "word_ref": "3:49:44:1",
+   "disposition": "CONSISTENT",
+   "note": "in kuntum muʾminīn — state of being believers."
+  },
+  {
+   "word_ref": "3:55:28:1",
+   "disposition": "CONSISTENT",
+   "note": "fīmā kuntum fīhi takhtalifūn — state of disagreement that held."
+  },
+  {
+   "word_ref": "3:59:14:1",
+   "disposition": "CONSISTENT",
+   "note": "kun — imperative commanding a state into being."
+  },
+  {
+   "word_ref": "3:59:15:2",
+   "disposition": "CONSISTENT",
+   "note": "fa-yakūn — and he obtains/comes to be; state realized. Multi-token word, verb present."
+  },
+  {
+   "word_ref": "3:60:5:1",
+   "disposition": "CONSISTENT",
+   "note": "fa-lā takun min al-mumtarīn — negative imperative against being in the state of doubters."
+  },
+  {
+   "word_ref": "3:67:12:1",
+   "disposition": "CONSISTENT",
+   "note": "wa-mā kāna min al-mushrikīn — denial of the state of being among the polytheists."
+  },
+  {
+   "word_ref": "3:67:2:1",
+   "disposition": "CONSISTENT",
+   "note": "mā kāna Ibrāhīmu yahūdiyyan — denial of the state 'a Jew'."
+  },
+  {
+   "word_ref": "3:67:8:1",
+   "disposition": "CONSISTENT",
+   "note": "wa-lākin kāna ḥanīfan — affirmation of the state 'a ḥanīf'."
+  },
+  {
+   "word_ref": "3:79:13:1",
+   "disposition": "CONSISTENT",
+   "note": "kūnū ʿibādan lī — imperative commanding a state of servitude."
+  },
+  {
+   "word_ref": "3:79:20:1",
+   "disposition": "CONSISTENT",
+   "note": "kūnū rabbāniyyīn — imperative commanding a state of being godly."
+  },
+  {
+   "word_ref": "3:79:23:1",
+   "disposition": "CONSISTENT",
+   "note": "bimā kuntum tuʿallimūn — state of teaching that held."
+  },
+  {
+   "word_ref": "3:79:27:1",
+   "disposition": "CONSISTENT",
+   "note": "wa-bimā kuntum tadrusūn — state of studying that held."
+  },
+  {
+   "word_ref": "3:79:2:1",
+   "disposition": "CONSISTENT",
+   "note": "mā kāna li-basharin an — deontic denial that this lies within a human's compass of being."
+  },
+  {
+   "word_ref": "3:93:23:1",
+   "disposition": "CONSISTENT",
+   "note": "in kuntum ṣādiqīn — state of being truthful."
+  },
+  {
+   "word_ref": "3:93:3:1",
+   "disposition": "CONSISTENT",
+   "note": "kāna ḥillan li-banī Isrāʾīl — state of being lawful that obtained."
+  },
+  {
+   "word_ref": "3:95:9:1",
+   "disposition": "CONSISTENT",
+   "note": "wa-mā kāna min al-mushrikīn — denial of the state of being among polytheists."
+  },
+  {
+   "word_ref": "3:97:8:1",
+   "disposition": "CONSISTENT",
+   "note": "man dakhalahu kāna āminan — whoever enters it comes to be in the state of safety."
+  },
+  {
+   "word_ref": "40:21:10:1",
+   "disposition": "CONSISTENT",
+   "note": "alladhīna kānū min qablihim — state of having been before them."
+  },
+  {
+   "word_ref": "40:21:13:1",
+   "disposition": "CONSISTENT",
+   "note": "kānū hum ashadda — state of being stronger that held."
+  },
+  {
+   "word_ref": "40:21:25:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:21:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:22:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:28:21:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:28:26:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:47:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:50:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:5:20:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:63:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:67:19:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:68:11:1",
+   "disposition": "CONSISTENT",
+   "note": "Imperative 'kun' commands a state into obtaining — explicitly covered by the frozen contribution's imperative sub-type; not an agentive action."
+  },
+  {
+   "word_ref": "40:68:12:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:73:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:74:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:75:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:75:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:78:16:1",
+   "disposition": "CONSISTENT",
+   "note": "Deontic 'wa-mā kāna li-rasūlin an…' denies that a state lies within the messenger's proper compass of being — the frozen 'mā kāna li-X an…' use."
+  },
+  {
+   "word_ref": "40:82:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:82:24:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:82:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:83:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:84:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:85:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "41:15:23:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "41:17:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "41:18:4:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "41:20:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "41:22:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "41:25:24:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "41:27:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "41:28:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "41:29:14:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "41:30:18:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "41:37:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "41:44:29:1",
+   "disposition": "CONSISTENT",
+   "note": "Only nominal in shard: 'min makānin baʿīdin'. makān is the mafʿal locus term; subtracting the place-pattern leaves the 'position-in-which-something-is/being' residue — the far position from which the address issues. Locative-of-being present."
+  },
+  {
+   "word_ref": "41:48:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "41:52:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "42:20:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "42:20:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "42:46:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "42:51:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Deontic 'wa-mā kāna li-basharin an…' denies that speaking-with-God-unmediated lies within a human's compass of being — frozen deontic use."
+  },
+  {
+   "word_ref": "42:52:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "43:13:18:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "43:25:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "43:33:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "43:40:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "43:54:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "43:5:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "43:69:4:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "43:72:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "43:76:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "43:7:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "43:81:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "44:27:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "44:29:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "44:31:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "44:36:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "44:37:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "44:3:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "44:50:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "44:5:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "44:7:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "45:14:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "45:17:22:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "45:25:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "45:25:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "45:28:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "45:29:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "45:29:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "45:31:10:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "45:31:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "45:33:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "46:10:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "46:11:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "46:14:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "46:16:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "46:18:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "46:20:19:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "46:20:26:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "46:22:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "46:26:23:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "46:26:30:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "46:28:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "46:34:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "46:4:28:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "46:6:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "46:6:7:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "46:9:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "47:10:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "47:14:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "47:21:10:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "47:38:28:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "48:11:33:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "48:12:18:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "48:14:11:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "48:15:27:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "48:19:4:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "48:20:13:3",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "48:21:9:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "48:24:15:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "48:26:20:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "48:26:24:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "48:4:16:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "48:5:14:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "48:7:5:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "49:11:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "49:11:20:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "49:17:18:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "49:5:7:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:100:28:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:101:20:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:102:15:3",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:102:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:102:44:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:102:50:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:103:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:104:19:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:104:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:105:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:106:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:107:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:108:17:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:109:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:111:8:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:113:27:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:113:29:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:11:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:11:19:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:11:31:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:11:36:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:11:44:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:11:69:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:126:8:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:127:38:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:128:26:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:129:20:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:12:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:12:32:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:12:36:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:12:51:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:12:66:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:12:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:130:8:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:131:29:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:133:8:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:134:11:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:134:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:135:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:135:34:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:135:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:137:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:141:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:141:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:141:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:147:8:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:148:11:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:149:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:152:14:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:158:5:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:159:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:165:12:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:165:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:168:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:169:7:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:16:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:170:20:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:171:41:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:172:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:176:23:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:176:27:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:176:34:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:17:17:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:1:26:1",
+   "disposition": "CONSISTENT",
+   "note": "verse_text carries the basmala prefix, but the target token is unambiguously the clause-final kāna in 'inna Allāha kāna ʿalaykum raqīban' — being-so as realized fact; the token-position oddity does not block a clean judgment."
+  },
+  {
+   "word_ref": "4:20:5:1",
+   "disposition": "CONSISTENT",
+   "note": "Sole nominal (makāna zawjin): substitutive locus/status use ('a wife in the position of another'), the position-of-being residue the frozen contribution explicitly licenses for makān."
+  },
+  {
+   "word_ref": "4:22:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:23:31:1",
+   "disposition": "CONSISTENT",
+   "note": "Auxiliary 'lam takūnū dakhaltum': kāna still asserts the non-obtaining of the state of having-entered; being-so residue present."
+  },
+  {
+   "word_ref": "4:23:52:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:24:40:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:29:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:29:21:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:2:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:30:9:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:32:24:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:33:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:34:38:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:35:20:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:36:30:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:38:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:39:12:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:40:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:43:21:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:43:46:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:46:27:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:47:25:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:56:18:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:58:23:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:59:20:1",
+   "disposition": "CONSISTENT",
+   "note": "Auxiliary 'kuntum tuʾminūn': kāna asserts the obtaining of the state of believing; being-so residue present."
+  },
+  {
+   "word_ref": "4:66:23:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:6:21:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:6:25:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:72:15:1",
+   "disposition": "CONSISTENT",
+   "note": "lam akun maʿahum shahīdan — negated state of being present as witness; being-so denied. Contribution present."
+  },
+  {
+   "word_ref": "4:73:14:1",
+   "disposition": "CONSISTENT",
+   "note": "kuntu maʿahum — counterfactual state of being-with; contribution present."
+  },
+  {
+   "word_ref": "4:73:9:1",
+   "disposition": "CONSISTENT",
+   "note": "lam takun ... mawaddatun — denial that a state (affection) obtained; contribution present."
+  },
+  {
+   "word_ref": "4:76:19:1",
+   "disposition": "CONSISTENT",
+   "note": "kāna ḍaʿīfan — asserts established state (plot is weak)."
+  },
+  {
+   "word_ref": "4:78:2:1",
+   "disposition": "CONSISTENT",
+   "note": "aynamā takūnū — state of being-in-place (wherever you are)."
+  },
+  {
+   "word_ref": "4:78:6:1",
+   "disposition": "CONSISTENT",
+   "note": "law kuntum fī burūj — counterfactual state of being in fortified towers."
+  },
+  {
+   "word_ref": "4:82:5:1",
+   "disposition": "CONSISTENT",
+   "note": "law kāna min ʿindi ghayr Allāh — counterfactual state of provenance."
+  },
+  {
+   "word_ref": "4:85:13:1",
+   "disposition": "CONSISTENT",
+   "note": "yakun lahu kifl — state coming to obtain (a portion accrues)."
+  },
+  {
+   "word_ref": "4:85:17:2",
+   "disposition": "CONSISTENT",
+   "note": "wa-kāna Allāhu ... muqītan — established divine state."
+  },
+  {
+   "word_ref": "4:85:5:1",
+   "disposition": "CONSISTENT",
+   "note": "yakun lahu naṣīb — state coming to obtain (a share accrues)."
+  },
+  {
+   "word_ref": "4:86:11:1",
+   "disposition": "CONSISTENT",
+   "note": "kāna ... ḥasīban — established divine state."
+  },
+  {
+   "word_ref": "4:89:6:2",
+   "disposition": "CONSISTENT",
+   "note": "fa-takūnūna sawāʾ — state (being alike) coming to obtain."
+  },
+  {
+   "word_ref": "4:92:24:1",
+   "disposition": "CONSISTENT",
+   "note": "in kāna min qawmin ʿaduww — state of belonging obtains."
+  },
+  {
+   "word_ref": "4:92:2:1",
+   "disposition": "CONSISTENT",
+   "note": "mā kāna li-muʾminin an yaqtula — deontic denial that the act lies within a believer's proper compass of being."
+  },
+  {
+   "word_ref": "4:92:35:1",
+   "disposition": "CONSISTENT",
+   "note": "in kāna min qawmin baynakum mīthāq — state of belonging obtains."
+  },
+  {
+   "word_ref": "4:92:57:2",
+   "disposition": "CONSISTENT",
+   "note": "wa-kāna Allāhu ʿalīman ḥakīman — established divine state."
+  },
+  {
+   "word_ref": "4:94:27:1",
+   "disposition": "CONSISTENT",
+   "note": "kadhālika kuntum min qablu — asserts a prior state (such you were)."
+  },
+  {
+   "word_ref": "4:94:36:1",
+   "disposition": "CONSISTENT",
+   "note": "kāna ... khabīran — established divine state."
+  },
+  {
+   "word_ref": "4:96:5:2",
+   "disposition": "CONSISTENT",
+   "note": "wa-kāna Allāhu ghafūran raḥīman — established divine state."
+  },
+  {
+   "word_ref": "4:97:11:1",
+   "disposition": "CONSISTENT",
+   "note": "kunnā mustaḍʿafīn — asserts a state (we were oppressed)."
+  },
+  {
+   "word_ref": "4:97:17:1",
+   "disposition": "CONSISTENT",
+   "note": "a-lam takun arḍ Allāh wāsiʿatan — questions whether a state (spaciousness) obtained."
+  },
+  {
+   "word_ref": "4:97:9:1",
+   "disposition": "CONSISTENT",
+   "note": "fīma kuntum — asks in what condition of being you were."
+  },
+  {
+   "word_ref": "4:99:7:2",
+   "disposition": "CONSISTENT",
+   "note": "wa-kāna Allāhu ʿafuwwan ghafūran — established divine state."
+  },
+  {
+   "word_ref": "50:19:7:1",
+   "disposition": "CONSISTENT",
+   "note": "mā kunta minhu taḥīdu — habitual state (that from which you were shrinking)."
+  },
+  {
+   "word_ref": "50:22:2:1",
+   "disposition": "CONSISTENT",
+   "note": "kunta fī ghaflatin — state of being in heedlessness."
+  },
+  {
+   "word_ref": "50:27:7:1",
+   "disposition": "CONSISTENT",
+   "note": "kāna fī ḍalālin baʿīd — state of being in far error."
+  },
+  {
+   "word_ref": "50:37:6:1",
+   "disposition": "CONSISTENT",
+   "note": "man kāna lahu qalb — existential/possessive state (one who has a heart)."
+  },
+  {
+   "word_ref": "50:3:3:2",
+   "disposition": "CONSISTENT",
+   "note": "wa-kunnā turāban — state/identity (we became dust)."
+  },
+  {
+   "word_ref": "50:41:6:1",
+   "disposition": "CONSISTENT",
+   "note": "makān qarīb — sole nominal; locus in which the caller's being is instantiated (place from which he calls). Position-of-being residue present."
+  },
+  {
+   "word_ref": "51:14:5:1",
+   "disposition": "CONSISTENT",
+   "note": "kuntum bihi tastaʿjilūn — habitual state (that which you kept hastening)."
+  },
+  {
+   "word_ref": "51:16:6:1",
+   "disposition": "CONSISTENT",
+   "note": "kānū ... muḥsinīn — asserts prior established state (they were doers of good)."
+  },
+  {
+   "word_ref": "51:17:1:1",
+   "disposition": "CONSISTENT",
+   "note": "kānū qalīlan ... yahjaʿūn — habitual state (they used to sleep little)."
+  },
+  {
+   "word_ref": "51:35:3:1",
+   "disposition": "CONSISTENT",
+   "note": "man kāna fīhā min al-muʾminīn — state of being-in-place among believers."
+  },
+  {
+   "word_ref": "51:45:6:1",
+   "disposition": "CONSISTENT",
+   "note": "wa-mā kānū muntaṣirīn — denial that a state (being defended) obtained."
+  },
+  {
+   "word_ref": "51:46:6:1",
+   "disposition": "CONSISTENT",
+   "note": "kānū qawman fāsiqīn — state/identity asserted."
+  },
+  {
+   "word_ref": "52:14:4:1",
+   "disposition": "CONSISTENT",
+   "note": "kuntum bihā tukadhdhibūn — habitual state (which you used to deny)."
+  },
+  {
+   "word_ref": "52:16:11:1",
+   "disposition": "CONSISTENT",
+   "note": "mā kuntum taʿmalūn — habitual state (what you used to do)."
+  },
+  {
+   "word_ref": "52:19:5:1",
+   "disposition": "CONSISTENT",
+   "note": "bimā kuntum taʿmalūn — habitual state (what you used to do)."
+  },
+  {
+   "word_ref": "52:26:3:1",
+   "disposition": "CONSISTENT",
+   "note": "kunnā ... mushfiqīn — asserts prior state (we were apprehensive)."
+  },
+  {
+   "word_ref": "52:28:2:1",
+   "disposition": "CONSISTENT",
+   "note": "kunnā min qablu nadʿūhu — habitual state (we used to call upon Him)."
+  },
+  {
+   "word_ref": "52:34:5:1",
+   "disposition": "CONSISTENT",
+   "note": "in kānū ṣādiqīn — conditional state (if they be truthful)."
+  },
+  {
+   "word_ref": "53:52:6:1",
+   "disposition": "CONSISTENT",
+   "note": "kānū hum aẓlama — asserts established state (they were more unjust)."
+  },
+  {
+   "word_ref": "53:9:1:2",
+   "disposition": "CONSISTENT",
+   "note": "fa-kāna qāba qawsayn — state of position/distance obtains."
+  },
+  {
+   "word_ref": "54:14:5:1",
+   "disposition": "CONSISTENT",
+   "note": "liman kāna kufira — periphrastic kāna asserting the pluperfect state of having-been-rejected obtained."
+  },
+  {
+   "word_ref": "54:16:2:1",
+   "disposition": "CONSISTENT",
+   "note": "kayfa kāna ʿadhābī — asks how the state (of My punishment) was."
+  },
+  {
+   "word_ref": "54:18:4:1",
+   "disposition": "CONSISTENT",
+   "note": "kayfa kāna ʿadhābī — asks how the state was."
+  },
+  {
+   "word_ref": "54:21:2:1",
+   "disposition": "CONSISTENT",
+   "note": "kayfa kāna ʿadhābī — asks how the state was."
+  },
+  {
+   "word_ref": "54:30:2:1",
+   "disposition": "CONSISTENT",
+   "note": "kayfa kāna ʿadhābī — asks how the state was."
+  },
+  {
+   "word_ref": "54:31:6:2",
+   "disposition": "CONSISTENT",
+   "note": "fa-kānū ka-hashīm — state coming to obtain (they became like dry stubble)."
+  },
+  {
+   "word_ref": "55:37:4:2",
+   "disposition": "CONSISTENT",
+   "note": "fa-kānat wardatan — state coming to obtain (the sky becomes rose-red)."
+  },
+  {
+   "word_ref": "56:24:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "56:45:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "56:46:1:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "56:47:1:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "56:47:5:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "56:6:1:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "56:7:1:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "56:86:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "56:87:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "56:88:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "56:90:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "56:92:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "57:14:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "57:16:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "57:20:24:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "57:4:32:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "57:8:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "58:15:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "58:22:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "58:7:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "58:7:36:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "59:17:1:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "59:19:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "59:7:19:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "59:9:22:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:104:18:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:105:18:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:106:41:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:110:36:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:112:20:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:113:12:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:114:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:116:19:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:116:28:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:117:13:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:117:21:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:14:24:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:15:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:23:20:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:29:7:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:31:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:44:21:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:48:49:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:57:22:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:60:23:1",
+   "disposition": "CONSISTENT",
+   "note": "Form N (makān): 'sharrun makānan' — worse in station/standing. Subtracting the mafʿal place-pattern leaves the position-of-being residue (a status use, not bare geometry), so the contribution is present."
+  },
+  {
+   "word_ref": "5:61:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:62:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:63:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:6:19:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:6:23:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:71:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:75:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:78:16:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:79:1:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:79:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:81:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:8:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "60:1:26:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "60:2:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "60:4:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "60:6:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "60:6:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "61:11:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "61:14:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "62:2:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "62:6:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "62:8:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "62:9:20:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "63:10:19:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "63:2:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "64:6:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "65:2:20:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "65:6:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "65:9:4:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "66:10:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "66:12:15:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "66:7:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "67:10:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "67:10:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "67:18:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "67:25:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "67:27:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "68:14:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "68:22:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "68:29:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "68:31:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "68:33:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "68:41:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "68:43:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "68:48:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "69:27:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "69:33:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:101:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:101:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:108:24:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:10:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:111:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:114:21:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:118:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:11:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:120:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:122:23:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:122:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:124:28:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:127:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:129:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:130:26:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:131:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:135:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:135:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:136:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:136:23:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:138:25:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:139:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:140:19:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:143:22:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:144:18:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:145:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:14:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:14:22:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:152:25:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:156:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:157:34:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:157:8:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:158:25:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:159:18:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:159:5:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:161:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:164:27:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:22:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:23:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:23:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:24:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:27:14:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:28:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:30:18:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:35:26:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:35:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:40:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:43:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:49:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:4:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:52:23:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:5:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:60:21:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:63:15:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:70:44:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:73:10:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:73:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:75:7:3",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:77:15:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:81:21:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:88:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:93:40:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:93:46:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:94:28:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "70:44:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "70:4:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "70:8:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "70:9:1:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "71:10:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "71:4:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "72:11:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "72:15:3:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "72:19:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "72:4:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "72:6:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "72:9:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "73:14:5:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "73:18:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "73:20:33:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "74:16:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "74:43:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "74:44:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "74:45:1:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "74:46:1:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "75:37:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "75:38:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "76:15:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "76:17:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "76:1:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "76:22:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "76:22:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "76:30:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "76:5:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "76:7:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "77:29:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "77:39:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "77:43:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "78:17:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "78:19:3:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "78:20:3:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "78:21:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "78:27:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "78:40:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "79:11:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:101:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:103:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:106:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:106:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:113:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:115:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:118:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:11:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:133:11:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:136:9:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:137:23:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:137:28:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:137:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:139:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:13:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:143:21:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:144:12:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:146:34:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:147:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:148:21:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:149:16:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:157:29:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:160:41:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:162:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:163:26:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:163:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:165:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:166:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:172:23:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:173:8:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:175:11:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:177:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:180:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:185:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:188:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:189:27:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:194:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:19:14:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:205:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:20:20:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:20:23:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:23:10:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:2:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:37:24:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:37:36:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:39:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:39:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:43:18:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:43:35:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:48:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:51:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:53:29:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:53:37:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:5:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:5:2:1",
+   "disposition": "CONSISTENT",
+   "note": "fa-mā kāna daʿwāhum illā... — copula asserting the state-of-affairs: what their plea was; being-so, not action."
+  },
+  {
+   "word_ref": "7:64:12:1",
+   "disposition": "CONSISTENT",
+   "note": "innahum kānū qawman ʿamīn — established state (they were a blind people)."
+  },
+  {
+   "word_ref": "7:70:15:1",
+   "disposition": "CONSISTENT",
+   "note": "in kunta mina al-ṣādiqīn — asserts a state (if you are among the truthful)."
+  },
+  {
+   "word_ref": "7:70:8:1",
+   "disposition": "CONSISTENT",
+   "note": "mā kāna yaʿbudu ābāʾunā — kāna + imperfect asserting a habitual/established state of worship."
+  },
+  {
+   "word_ref": "7:72:12:1",
+   "disposition": "CONSISTENT",
+   "note": "wa-mā kānū muʾminīn — negated state (they were not believers)."
+  },
+  {
+   "word_ref": "7:77:13:1",
+   "disposition": "CONSISTENT",
+   "note": "in kunta mina al-mursalīn — state (if you are of the messengers)."
+  },
+  {
+   "word_ref": "7:7:5:1",
+   "disposition": "CONSISTENT",
+   "note": "wa-mā kunnā ghāʾibīn — negated state (We were not absent)."
+  },
+  {
+   "word_ref": "7:82:2:1",
+   "disposition": "CONSISTENT",
+   "note": "wa-mā kāna jawāba qawmihi illā... — copula for state-of-affairs (their answer was nothing but)."
+  },
+  {
+   "word_ref": "7:83:5:1",
+   "disposition": "CONSISTENT",
+   "note": "kānat mina al-ghābirīn — established state (she was of those who lagged behind)."
+  },
+  {
+   "word_ref": "7:84:6:1",
+   "disposition": "CONSISTENT",
+   "note": "kayfa kāna ʿāqibatu al-mujrimīn — asserts what the outcome was; being-so as realized fact."
+  },
+  {
+   "word_ref": "7:85:36:1",
+   "disposition": "CONSISTENT",
+   "note": "in kuntum muʾminīn — state (if you are believers)."
+  },
+  {
+   "word_ref": "7:86:17:1",
+   "disposition": "CONSISTENT",
+   "note": "idh kuntum qalīlan — past state (when you were few)."
+  },
+  {
+   "word_ref": "7:86:22:1",
+   "disposition": "CONSISTENT",
+   "note": "kayfa kāna ʿāqibatu al-mufsidīn — state-of-affairs (what the end was)."
+  },
+  {
+   "word_ref": "7:87:2:1",
+   "disposition": "CONSISTENT",
+   "note": "wa-in kāna ṭāʾifatun minkum āmanū — state obtains (if a group has come to believe)."
+  },
+  {
+   "word_ref": "7:88:20:1",
+   "disposition": "CONSISTENT",
+   "note": "a-wa-law kunnā kārihīn — state (even though we are unwilling)."
+  },
+  {
+   "word_ref": "7:89:16:1",
+   "disposition": "CONSISTENT",
+   "note": "wa-mā yakūnu lanā an naʿūda — deontic mā kāna li-X: denies the state lies within our proper compass of being; covered by frozen contribution."
+  },
+  {
+   "word_ref": "7:92:11:1",
+   "disposition": "CONSISTENT",
+   "note": "kānū humu al-khāsirīn — established state (they were the losers)."
+  },
+  {
+   "word_ref": "7:95:3:1",
+   "disposition": "CONSISTENT",
+   "note": "baddalnā makāna al-sayyiʾati al-ḥasanata — nominal makān as substitutive locus-of-being (the good takes the position the bad state held); the substitutive use the frozen contribution explicitly defends."
+  },
+  {
+   "word_ref": "7:96:17:1",
+   "disposition": "CONSISTENT",
+   "note": "bimā kānū yaksibūn — habitual state (for what they were earning)."
+  },
+  {
+   "word_ref": "7:9:9:1",
+   "disposition": "CONSISTENT",
+   "note": "bimā kānū bi-āyātinā yaẓlimūn — habitual state."
+  },
+  {
+   "word_ref": "83:14:7:1",
+   "disposition": "CONSISTENT",
+   "note": "mā kānū yaksibūn — habitual state (what they were earning)."
+  },
+  {
+   "word_ref": "83:17:5:1",
+   "disposition": "CONSISTENT",
+   "note": "kuntum bihi tukadhdhibūn — habitual state (which you used to deny)."
+  },
+  {
+   "word_ref": "83:29:4:1",
+   "disposition": "CONSISTENT",
+   "note": "kānū... yaḍḥakūn — habitual state (they used to laugh)."
+  },
+  {
+   "word_ref": "83:36:5:1",
+   "disposition": "CONSISTENT",
+   "note": "mā kānū yafʿalūn — habitual state (what they used to do)."
+  },
+  {
+   "word_ref": "84:13:2:1",
+   "disposition": "CONSISTENT",
+   "note": "innahu kāna fī ahlihi masrūran — established state (he was joyful among his people)."
+  },
+  {
+   "word_ref": "84:15:4:1",
+   "disposition": "CONSISTENT",
+   "note": "inna rabbahu kāna bihi baṣīran — established state (his Lord was ever Seeing of him)."
+  },
+  {
+   "word_ref": "8:1:17:1",
+   "disposition": "CONSISTENT",
+   "note": "in kuntum muʾminīn — state (if you are believers). Note: verse_text prepends the basmala, but index 17 maps cleanly to كُنتُم under QAC numbering that excludes the basmala for surah 8; the artifact resolves cleanly, so not structural-uncertainty."
+  },
+  {
+   "word_ref": "8:21:2:1",
+   "disposition": "CONSISTENT",
+   "note": "wa-lā takūnū ka-lladhīna qālū — commanded (negative) state (do not be like...)."
+  },
+  {
+   "word_ref": "8:32:5:1",
+   "disposition": "CONSISTENT",
+   "note": "in kāna hādhā huwa al-ḥaqqa — state obtains conditionally (if this is the truth)."
+  },
+  {
+   "word_ref": "8:33:2:1",
+   "disposition": "CONSISTENT",
+   "note": "wa-mā kāna Allāhu li-yuʿadhdhibahum — deontic mā kāna li-X: denies the state obtains; covered by frozen contribution."
+  },
+  {
+   "word_ref": "8:33:8:1",
+   "disposition": "CONSISTENT",
+   "note": "wa-mā kāna Allāhu muʿadhdhibahum — negated state (God is not going to punish them)."
+  },
+  {
+   "word_ref": "8:34:12:1",
+   "disposition": "CONSISTENT",
+   "note": "wa-mā kānū awliyāʾahu — negated state (they were not its guardians)."
+  },
+  {
+   "word_ref": "8:35:12:1",
+   "disposition": "CONSISTENT",
+   "note": "bimā kuntum takfurūn — habitual state (for what you used to disbelieve)."
+  },
+  {
+   "word_ref": "8:35:2:1",
+   "disposition": "CONSISTENT",
+   "note": "wa-mā kāna ṣalātuhum... illā mukāʾan — copula for state-of-affairs (their prayer was nothing but...)."
+  },
+  {
+   "word_ref": "8:36:12:1",
+   "disposition": "CONSISTENT",
+   "note": "thumma takūnu ʿalayhim ḥasratan — state coming to obtain (it will become a source of regret)."
+  },
+  {
+   "word_ref": "8:39:4:1",
+   "disposition": "CONSISTENT",
+   "note": "lā takūna fitnatun — existential state denied to obtain (until there is no fitna)."
+  },
+  {
+   "word_ref": "8:39:6:2",
+   "disposition": "CONSISTENT",
+   "note": "wa-yakūna al-dīnu kulluhu lillāh — state comes to obtain (religion, all of it, is for God)."
+  },
+  {
+   "word_ref": "8:41:17:1",
+   "disposition": "CONSISTENT",
+   "note": "in kuntum āmantum billāh — state (if you have believed in God)."
+  },
+  {
+   "word_ref": "8:42:20:1",
+   "disposition": "CONSISTENT",
+   "note": "amran kāna mafʿūlan — copula asserting the matter's being-so as realized/destined fact."
+  },
+  {
+   "word_ref": "8:44:14:1",
+   "disposition": "CONSISTENT",
+   "note": "amran kāna mafʿūlan — copula, matter that was [destined] to be accomplished; being-so as fact."
+  },
+  {
+   "word_ref": "8:47:2:1",
+   "disposition": "CONSISTENT",
+   "note": "wa-lā takūnū ka-lladhīna kharajū — commanded (negative) state (do not be like...)."
+  },
+  {
+   "word_ref": "8:53:5:1",
+   "disposition": "CONSISTENT",
+   "note": "lam yaku mughayyiran — negated state with apocopated yaku form; the negation use the frozen contribution names."
+  },
+  {
+   "word_ref": "8:54:16:1",
+   "disposition": "CONSISTENT",
+   "note": "wa-kullun kānū ẓālimīn — established state (all were wrongdoers)."
+  },
+  {
+   "word_ref": "8:65:15:1",
+   "disposition": "CONSISTENT",
+   "note": "wa-in yakun minkum miʾatun — state obtains conditionally (if there are among you a hundred)."
+  },
+  {
+   "word_ref": "8:65:8:1",
+   "disposition": "CONSISTENT",
+   "note": "in yakun minkum ʿishrūna ṣābirūn — state obtains conditionally (if there are among you twenty steadfast)."
+  },
+  {
+   "word_ref": "8:66:10:1",
+   "disposition": "CONSISTENT",
+   "note": "fa-in yakun minkum miʾatun ṣābiratun — state obtains conditionally."
+  },
+  {
+   "word_ref": "8:66:17:1",
+   "disposition": "CONSISTENT",
+   "note": "wa-in yakun minkum alfun — state obtains conditionally (if there are a thousand)."
+  },
+  {
+   "word_ref": "8:67:2:1",
+   "disposition": "CONSISTENT",
+   "note": "mā kāna li-nabiyyin an yakūna — deontic mā kāna li-X: denies the state lies within a prophet's proper compass; covered by frozen contribution."
+  },
+  {
+   "word_ref": "8:67:5:1",
+   "disposition": "CONSISTENT",
+   "note": "an yakūna lahu asrā — state obtains (that he should have captives)."
+  },
+  {
+   "word_ref": "8:73:8:1",
+   "disposition": "CONSISTENT",
+   "note": "takun fitnatun fī al-arḍ — existential state brought to obtain (there will be fitna on earth)."
+  },
+  {
+   "word_ref": "8:7:13:1",
+   "disposition": "CONSISTENT",
+   "note": "تَكُونُ لَكُمْ — a state (the caravan being yours) coming to obtain."
+  },
+  {
+   "word_ref": "90:17:2:1",
+   "disposition": "CONSISTENT",
+   "note": "ثُمَّ كَانَ مِنَ ٱلَّذِينَ ءَامَنُوا — established state of belonging."
+  },
+  {
+   "word_ref": "96:11:3:1",
+   "disposition": "CONSISTENT",
+   "note": "إِن كَانَ عَلَى ٱلْهُدَىٰ — being-so (upon guidance) as posited fact."
+  },
+  {
+   "word_ref": "98:1:2:1",
+   "disposition": "STRUCTURAL_UNCERTAINTY",
+   "note": "The kwn token at 98:1:2:1 is يَكُن in لَمْ يَكُنِ ٱلَّذِينَ كَفَرُوا۟ ... مُنفَكِّينَ — a negated state-of-being (kāna/yakūn + khabar munfakkīn: 'they were not to be desisting until the clear proof came'), which semantically confirms the frozen contribution's negated-fact clause ('the negation denies that being obtained'; no agentive action). The occurrence was flagged not for semantic resistance but because 98:1 is a surah-initial verse whose stored verse_text prepends the Basmala (بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ); counting tokens off the displayed string shifts word-2 onto ٱللَّهِ instead of the canonical QAC يَكُن, so the flag is a Basmala token-position artifact. Per the task rule, Basmala token-position artifacts resolve to STRUCTURAL_UNCERTAINTY even though the underlying frozen reading holds.",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "9:105:15:1",
+   "disposition": "CONSISTENT",
+   "note": "كُنتُمْ تَعْمَلُونَ — ongoing state (what you were doing)."
+  },
+  {
+   "word_ref": "9:113:10:1",
+   "disposition": "CONSISTENT",
+   "note": "وَلَوْ كَانُوٓا۟ أُو۟لِى قُرْبَىٰ — hypothetical state (even if they be near kin)."
+  },
+  {
+   "word_ref": "9:113:2:1",
+   "disposition": "CONSISTENT",
+   "note": "مَا كَانَ لِلنَّبِىِّ... أَن — deontic mā kāna li-X: denies the state lies within the Prophet's proper compass of being; frozen explicitly covers this."
+  },
+  {
+   "word_ref": "9:114:2:1",
+   "disposition": "CONSISTENT",
+   "note": "وَمَا كَانَ ٱسْتِغْفَارُ إِبْرَٰهِيمَ... إِلَّا — being-so of Abraham's asking restricted (was nothing but from a promise)."
+  },
+  {
+   "word_ref": "9:115:2:1",
+   "disposition": "CONSISTENT",
+   "note": "وَمَا كَانَ ٱللَّهُ لِيُضِلَّ — mā kāna li-: state denied as outside God's compass."
+  },
+  {
+   "word_ref": "9:119:6:2",
+   "disposition": "CONSISTENT",
+   "note": "وَكُونُوا۟ مَعَ ٱلصَّٰدِقِينَ — imperative commanding a state (being-with) into obtaining."
+  },
+  {
+   "word_ref": "9:120:2:1",
+   "disposition": "CONSISTENT",
+   "note": "مَا كَانَ لِأَهْلِ ٱلْمَدِينَةِ... أَن — deontic mā kāna li-X, state denial."
+  },
+  {
+   "word_ref": "9:121:17:1",
+   "disposition": "CONSISTENT",
+   "note": "مَا كَانُوا۟ يَعْمَلُونَ — ongoing state (what they were doing)."
+  },
+  {
+   "word_ref": "9:122:2:1",
+   "disposition": "CONSISTENT",
+   "note": "وَمَا كَانَ ٱلْمُؤْمِنُونَ لِيَنفِرُوا — mā kāna li-: state denied as improper."
+  },
+  {
+   "word_ref": "9:13:19:1",
+   "disposition": "CONSISTENT",
+   "note": "إِن كُنتُم مُّؤْمِنِينَ — posited state (if you are believers)."
+  },
+  {
+   "word_ref": "9:17:2:1",
+   "disposition": "CONSISTENT",
+   "note": "مَا كَانَ لِلْمُشْرِكِينَ أَن يَعْمُرُوا — deontic mā kāna li-X, state denial."
+  },
+  {
+   "word_ref": "9:18:21:1",
+   "disposition": "CONSISTENT",
+   "note": "أَن يَكُونُوا۟ مِنَ ٱلْمُهْتَدِينَ — a state (being of the guided) coming to obtain."
+  },
+  {
+   "word_ref": "9:24:3:1",
+   "disposition": "CONSISTENT",
+   "note": "إِن كَانَ ءَابَآؤُكُمْ... أَحَبَّ — posited state (if they are dearer)."
+  },
+  {
+   "word_ref": "9:35:18:1",
+   "disposition": "CONSISTENT",
+   "note": "مَا كُنتُمْ تَكْنِزُونَ — كُنتُمْ (word 18) is the kwn token; ongoing state of hoarding."
+  },
+  {
+   "word_ref": "9:41:14:1",
+   "disposition": "CONSISTENT",
+   "note": "إِن كُنتُمْ تَعْلَمُونَ — posited state of knowing."
+  },
+  {
+   "word_ref": "9:42:2:1",
+   "disposition": "CONSISTENT",
+   "note": "لَوْ كَانَ عَرَضًا قَرِيبًا — counterfactual state (had it been a near gain)."
+  },
+  {
+   "word_ref": "9:53:10:1",
+   "disposition": "CONSISTENT",
+   "note": "إِنَّكُمْ كُنتُمْ قَوْمًا فَٰسِقِينَ — established state (you are a rebellious people)."
+  },
+  {
+   "word_ref": "9:62:11:1",
+   "disposition": "CONSISTENT",
+   "note": "إِن كَانُوا۟ مُؤْمِنِينَ — posited state (if they are believers)."
+  },
+  {
+   "word_ref": "9:65:12:1",
+   "disposition": "CONSISTENT",
+   "note": "كُنتُمْ تَسْتَهْزِءُونَ — ongoing state (you were mocking)."
+  },
+  {
+   "word_ref": "9:65:5:1",
+   "disposition": "CONSISTENT",
+   "note": "إِنَّمَا كُنَّا نَخُوضُ — ongoing state (we were only chatting)."
+  },
+  {
+   "word_ref": "9:66:15:1",
+   "disposition": "CONSISTENT",
+   "note": "كَانُوا۟ مُجْرِمِينَ — established state (they were criminals)."
+  },
+  {
+   "word_ref": "9:69:4:1",
+   "disposition": "CONSISTENT",
+   "note": "كَانُوٓا۟ أَشَدَّ مِنكُمْ قُوَّةً — established state (they were stronger)."
+  },
+  {
+   "word_ref": "9:70:20:1",
+   "disposition": "CONSISTENT",
+   "note": "فَمَا كَانَ ٱللَّهُ لِيَظْلِمَهُمْ — mā kāna li-: state denied as outside God's compass."
+  },
+  {
+   "word_ref": "9:70:24:1",
+   "disposition": "CONSISTENT",
+   "note": "كَانُوٓا۟ أَنفُسَهُمْ يَظْلِمُونَ — ongoing state (they were wronging themselves)."
+  },
+  {
+   "word_ref": "9:74:27:1",
+   "disposition": "CONSISTENT",
+   "note": "يَكُ خَيْرًا لَّهُمْ — apocopated yakun; a state (being better) coming to obtain."
+  },
+  {
+   "word_ref": "9:75:10:3",
+   "disposition": "CONSISTENT",
+   "note": "وَلَنَكُونَنَّ مِنَ ٱلصَّٰلِحِينَ — emphatic future state (we will surely be of the righteous)."
+  },
+  {
+   "word_ref": "9:77:14:1",
+   "disposition": "CONSISTENT",
+   "note": "بِمَا كَانُوا۟ يَكْذِبُونَ — ongoing state (they used to lie)."
+  },
+  {
+   "word_ref": "9:7:2:1",
+   "disposition": "CONSISTENT",
+   "note": "كَيْفَ يَكُونُ لِلْمُشْرِكِينَ عَهْدٌ — existential/state (how can a covenant obtain for them)."
+  },
+  {
+   "word_ref": "9:81:26:1",
+   "disposition": "CONSISTENT",
+   "note": "لَّوْ كَانُوا۟ يَفْقَهُونَ — counterfactual state (if they were to understand)."
+  },
+  {
+   "word_ref": "9:82:7:1",
+   "disposition": "CONSISTENT",
+   "note": "بِمَا كَانُوا۟ يَكْسِبُونَ — ongoing state (what they were earning)."
+  },
+  {
+   "word_ref": "9:86:16:1",
+   "disposition": "CONSISTENT",
+   "note": "نَكُن مَّعَ ٱلْقَٰعِدِينَ — optative jussive; a state (being-with) willed to obtain."
+  },
+  {
+   "word_ref": "9:87:3:1",
+   "disposition": "CONSISTENT",
+   "note": "بِأَن يَكُونُوا۟ مَعَ ٱلْخَوَالِفِ — a state (being-with) coming to obtain."
+  },
+  {
+   "word_ref": "9:93:10:1",
+   "disposition": "CONSISTENT",
+   "note": "بِأَن يَكُونُوا۟ مَعَ ٱلْخَوَالِفِ — a state (being-with) coming to obtain."
+  },
+  {
+   "word_ref": "9:94:29:1",
+   "disposition": "CONSISTENT",
+   "note": "بِمَا كُنتُمْ تَعْمَلُونَ — ongoing state (what you were doing)."
+  },
+  {
+   "word_ref": "9:95:17:1",
+   "disposition": "CONSISTENT",
+   "note": "بِمَا كَانُوا۟ يَكْسِبُونَ — ongoing state (what they were earning)."
+  },
+  {
+   "word_ref": "9:9:12:1",
+   "disposition": "CONSISTENT",
+   "note": "سَآءَ مَا كَانُوا۟ يَعْمَلُونَ — ongoing state (evil is what they were doing)."
+  }
+ ],
+ "resistant_deep_analysis": [
+  {
+   "word_ref": "98:1:2:1",
+   "final": "STRUCTURAL_UNCERTAINTY",
+   "rationale": "The kwn token at 98:1:2:1 is يَكُن in لَمْ يَكُنِ ٱلَّذِينَ كَفَرُوا۟ ... مُنفَكِّينَ — a negated state-of-being (kāna/yakūn + khabar munfakkīn: 'they were not to be desisting until the clear proof came'), which semantically confirms the frozen contribution's negated-fact clause ('the negation denies that being obtained'; no agentive action). The occurrence was flagged not for semantic resistance but because 98:1 is a surah-initial verse whose stored verse_text prepends the Basmala (بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ); counting tokens off the displayed string shifts word-2 onto ٱللَّهِ instead of the canonical QAC يَكُن, so the flag is a Basmala token-position artifact. Per the task rule, Basmala token-position artifacts resolve to STRUCTURAL_UNCERTAINTY even though the underlying frozen reading holds."
+  }
+ ],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "WEAK",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PARTIAL",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "98:1:2:1"
+ ],
+ "unreconciled_count": 1,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": [
+  "98:1:2:1"
+ ]
+}

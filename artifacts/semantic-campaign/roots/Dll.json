@@ -1,0 +1,879 @@
+{
+ "root_buckwalter": "Dll",
+ "root_arabic": "ض ل ل",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch04-coverage",
+ "occurrences": 191,
+ "frozen_candidate_root_contribution": "Loss of the connecting way/track between an entity and its intended target, such that arrival or retrieval fails. Two symmetrical faces of one relation: subject-side, a mover (person, deed, effort, memory-item, body) no longer holds the line to its goal and so does not arrive (astray, wasted, forgotten); observer-side, the entity drops off the seeker's track and becomes unfindable/unavailable (vanished, of no avail). Form IV adds causation of this track-loss; the nouns name the resulting off-track state.",
+ "internal_discovery": {
+  "root_buckwalter": "Dll",
+  "candidate_root_contribution": "Loss of the connecting way/track between an entity and its intended target, such that arrival or retrieval fails. Two symmetrical faces of one relation: subject-side, a mover (person, deed, effort, memory-item, body) no longer holds the line to its goal and so does not arrive (astray, wasted, forgotten); observer-side, the entity drops off the seeker's track and becomes unfindable/unavailable (vanished, of no avail). Form IV adds causation of this track-loss; the nouns name the resulting off-track state.",
+  "plain_explanation": "Across all 191 occurrences the root marks one situation: something that should be connected to a destination by a way loses that way. A person strays from God's path (dalla 'an sabilihi, 16:125, 68:7); a fabricated deity 'strays away from' its worshippers, i.e. cannot be found or reached when needed (dalla 'anhum ma kanu yaftarun, 10:30 and nine parallels; 7:37 dallu 'anna); deeds and effort 'stray', i.e. never arrive at their reward (18:104; 47:1 adalla a'malahum, negated in 47:4); a witness 'strays' from a memory item until the other reminds her (2:282); God never 'strays' from what is recorded nor forgets (20:52); dead bodies 'stray in the earth', becoming untraceable (32:10); a plot is put into tadlil, made to travel without arriving (105:2). The constant antonym pairing with h-d-y (guidance along a way) in dozens of verses confirms the residue: not moral evil as such, but way-loss relative to a target — with religion, morality, memory, or physical location supplied by context.",
+  "layer_separation_note": "FORM: Form I = be/become off-track (intransitive, or with bare object al-sabil = lose the way, 25:17, 33:67); Form IV = cause track-loss in another (God, Satan, Pharaoh, al-Samiri, elites, idols) or in things (deeds, 47:1); Form II verbal noun tadlil (105:2) = putting into a state of path-failure; participles mudill (causer) and dall(un) (one in the state). CONSTRUCTION: 'an + [path/person] marks what the track connected to — dalla 'an sabilihi (off the way) vs dalla 'anhum (lost to them); the seeker/goal is a construction slot, not root content. CONTEXT: religious misguidance, memory failure (2:282, paired with tudhakkir), physical untraceability (32:10), futility of deeds/petitions (13:14, 40:50), and speaker-relative accusations (12:8, 12:30, 12:95) are all contextual colorings of the same residue. The moral-condemnation reading is context, not root: 20:52, 2:282, 32:10 carry the root with zero moral content.",
+  "presence": {
+   "occurrences_total": 191,
+   "occurrences_checked": 191,
+   "occurrences_consistent": 191,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "20:52 'la yadillu rabbi wa-la yansa' (My Lord does not dall nor forget) — no path, no morality, no misguidance is available here, so any 'religious error' hypothesis fails outright. It survives only under the track-loss residue: knowledge is in a record, and God never loses the track to any item in it; the pairing with nasiya (forget) confirms dall as retrieval-failure. Same pressure from 2:282 ('an tadilla ihdahuma fa-tudhakkir...' — a witness losing the memory-track, cured by reminding) and 32:10 (bodies dall in the earth = untraceable).",
+  "competing_hypothesis": "'Religious misguidance / moral error' as the root meaning. Rejected as root residue: it cannot cover 20:52 (God as subject of la yadillu), 2:282 (witness memory), 32:10 (corpses lost in the earth), 18:104/47:1-47:8 (deeds and effort lost), or the ten-verse formula dalla 'anhum ma kanu yaftarun where fabricated deities vanish from their worshippers. A second competitor, 'perishing/annihilation', fails at 93:7 (wajadaka dallan fa-hada — the lost one is guided, not destroyed) and 2:282 (the witness is reminded, not perished). The moral reading is the dominant contextual application, not the invariant contribution.",
+  "distinctiveness_note": "vs h-d-y: exact structural antonym — paired explicitly in ~40 of the 191 occurrences (yudillu man yasha'u wa-yahdi man yasha'u, etc.); hda = being set/kept on the connecting way, dll = losing it. vs g-w-y: 53:2 conjoins 'ma dalla sahibukum wa-ma ghawa', so they are non-synonymous; ghawa targets errant desire/aim, dll targets way-loss. vs t-y-h (wandering): tyh is aimless motion within a space; dll is specifically severance from the track to a definite target (hence 'an + goal constructions, impossible with tyh). vs kh-s-r: 7:178 makes khusran the consequence of idlal, not its content. vs d-y-'a (waste): dll retains the findability/arrival dimension (a dall thing can be found again, 93:7), while dy' is pure forfeiture. The residue is non-empty, distinctive, and falsifiable: an occurrence of Dll denoting destruction, moral evil, or loss with no way/target/retrieval dimension would break it; none exists in the packet.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "STRONG",
+  "rationale": "Full coverage: all 191 confirmed occurrences read and individually assessed. The occurrences cluster cleanly by form and construction: (A) Form I + 'an sabil (way-loss by a person: 16:125, 53:30, 68:7, 6:117, 38:26, 2:108, 5:12, 60:1); (B) Form I with the invoked/fabricated thing as subject + 'an + person (object lost to its seeker: 10:30, 11:21, 16:87, 28:75, 41:48, 46:28, 6:24, 6:94, 7:53, 7:37, 40:74, 17:67); (C) non-moral track-loss (20:52, 2:282, 32:10, 18:104); (D) Form IV causatives, 64x, with persons or deeds (47:1, 47:8, negated 47:4) as object, in constant antonymy with yahdi; (E) nouns dalal/dalala for the state, including futile petition (13:14, 40:50) and purchase metaphors (2:16, 2:175, 4:44); (F) tadlil 105:2; (G) participles (1:7, 15:56, 56:51, 68:26, 83:32, 93:7). Every resistant case was deep-analyzed and reconciles under 'loss of the connecting track to a target' once form (causation), construction ('an-phrase slot), and context (religion, memory, location, deeds) are subtracted. No occurrence requires a second core. Strength STRONG because the residue survives its hardest tests (20:52, 2:282, 32:10, 105:2) rather than merely fitting the easy majority, and because the h-d-y antonym pairing provides internal structural confirmation across dozens of verses. Nothing here is canonical; this is an internal-evidence research judgment only.",
+  "root_arabic": "ض ل ل"
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "Dll",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Full coverage: all 191 occurrences examined and accounted for. Under an adversarial pass I could not produce a single confirmed occurrence where the proposed contribution ('loss of the connecting way/track between an entity and its intended target, arrival/retrieval fails', with symmetrical subject-side off-track and observer-side vanished/unavailable faces, Form IV = causation) is demonstrably ABSENT. Clusters: (1) path/guidance off-track majority (e.g. 1:7, 6:117, 14:3, 22:9, 38:26; comparatives 7:179, 25:44) — subject face; (2) observer-side vanish/of-no-avail: 'ضل عنهم ما كانوا يفترون' (10:30,11:21,16:87,28:75,41:48,6:24,6:94,7:53), 'ضل من تدعون' (17:67), 'ضلوا عنا' (7:37,40:74,46:28); (3) wasted deed / failed scheme / unanswered prayer: 18:104 (سعيهم), 105:2 (تضليل II), 40:25/40:50/13:14 (دعاء/كيد في ضلال), 47:1/47:4/47:8 (أعمالهم); (4) memory/retrieval: 20:52 (لا يضل...ولا ينسى) and 2:282 (أن تضل...فتذكر) — both paired with forget/remind, matching the enumerated memory face; (5) body dissolved/unfindable: 32:10 (ضللنا في الأرض); (6) error of belief/judgment: 12:8,12:30,12:95,7:61,93:7, reconciled via target=sound judgment/guidance (loose but present). The negated uses (53:2,20:52,20:123,9:115,93:7) affirm on-track and are consistent, not counterexamples. Distinctiveness holds: separated from غوي (independently negated in 53:2), from نسي (paired-but-distinct in 20:52), and contrasted with هدى/اهتدى throughout. Falsifiable: a target-reaching use or a wholly target-less/positive use would break it; none occurs. RESIDUAL RISK (not a refutation): the definition attains universality partly by being a disjunction of five outcome-glosses; it is broad and some belief/judgment cases (12:8,12:30,12:95) reconcile only loosely. Verdict SUPPORTED because every occurrence is reconcilable to the single track-to-target-loss relation and no occurrence is unreconciled; nothing here is canonical."
+ },
+ "coverage_validation": {
+  "root": "Dll",
+  "expected_count": 191,
+  "researched_count": 191,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "105:2:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:108:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:108:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:30:12:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:32:9:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:88:14:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "11:21:5:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:30:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:8:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:95:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "13:14:27:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "13:27:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "13:33:34:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "14:18:21:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "14:27:12:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "14:30:4:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "14:36:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "14:3:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "14:4:10:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "15:56:8:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:125:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:25:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:36:20:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:37:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:87:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:93:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:15:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:15:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:48:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:67:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:72:10:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "17:97:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:104:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:17:29:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:51:12:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:38:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:75:5:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "1:7:9:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "20:123:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "20:52:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "20:79:1:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "20:85:8:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "20:92:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:54:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "22:12:13:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "22:4:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "22:9:3:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "23:106:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:17:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:17:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:29:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Form IV: Satan caused loss of the mover's line to the dhikr (reminder) after it arrived — causation of track-loss."
+  },
+  {
+   "word_ref": "25:34:10:2",
+   "disposition": "CONSISTENT",
+   "note": "Elative 'more astray in way' (aDall sabIlan) — direct way-loss relative to target."
+  },
+  {
+   "word_ref": "25:42:16:1",
+   "disposition": "CONSISTENT",
+   "note": "Elative aDall sabIlan — 'who is more off the way'."
+  },
+  {
+   "word_ref": "25:42:3:2",
+   "disposition": "CONSISTENT",
+   "note": "Form IV: 'almost led us astray from our gods' — caused loss of their line to the intended object of worship."
+  },
+  {
+   "word_ref": "25:44:14:1",
+   "disposition": "CONSISTENT",
+   "note": "aDall sabIlan (more astray than cattle) — way-loss elative."
+  },
+  {
+   "word_ref": "25:9:6:2",
+   "disposition": "CONSISTENT",
+   "note": "faDallU ... lA yastaTI'Una sabIlan: strayed and cannot find a way — explicit failure to hold the line to the goal."
+  },
+  {
+   "word_ref": "26:20:6:2",
+   "disposition": "CONSISTENT",
+   "note": "N: 'of the DAllIn' — resulting off-track state."
+  },
+  {
+   "word_ref": "26:86:6:2",
+   "disposition": "CONSISTENT",
+   "note": "N: father 'of the DAllIn' — off-track state."
+  },
+  {
+   "word_ref": "26:97:5:1",
+   "disposition": "CONSISTENT",
+   "note": "DalAl mubIn — the noun naming the manifest off-track state."
+  },
+  {
+   "word_ref": "26:99:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Form IV: 'none led us astray but the criminals' — causation of track-loss."
+  },
+  {
+   "word_ref": "27:81:6:1",
+   "disposition": "CONSISTENT",
+   "note": "DalAlatihim, paired against guidance (hAdI) — off-track state as antonym of the way."
+  },
+  {
+   "word_ref": "27:92:10:1",
+   "disposition": "CONSISTENT",
+   "note": "man Dalla, contrasted with ihtadA — subject loses the way."
+  },
+  {
+   "word_ref": "28:15:37:1",
+   "disposition": "CONSISTENT",
+   "note": "N(IV) muDill: Satan as a manifest track-loss-causer (active participle of causation face)."
+  },
+  {
+   "word_ref": "28:50:10:1",
+   "disposition": "CONSISTENT",
+   "note": "aDall than one following desire 'without guidance' — elative way-loss vs. hudan."
+  },
+  {
+   "word_ref": "28:75:13:2",
+   "disposition": "CONSISTENT",
+   "note": "Dalla 'anhum mA yaftarUn: observer-side face — fabricated deities drop off the track and become unavailable."
+  },
+  {
+   "word_ref": "28:85:18:1",
+   "disposition": "CONSISTENT",
+   "note": "fI DalAl mubIn, contrasted with 'came with guidance' — off-track state."
+  },
+  {
+   "word_ref": "2:108:16:1",
+   "disposition": "CONSISTENT",
+   "note": "Dalla sawA'a l-sabIl — lost the evenness of the way; direct way-loss."
+  },
+  {
+   "word_ref": "2:16:4:2",
+   "disposition": "CONSISTENT",
+   "note": "ishtaraw al-DalAlata bil-hudA — off-track state traded against guidance."
+  },
+  {
+   "word_ref": "2:175:4:2",
+   "disposition": "CONSISTENT",
+   "note": "ishtaraw al-DalAlata bil-hudA — off-track state vs guidance."
+  },
+  {
+   "word_ref": "2:198:26:2",
+   "disposition": "CONSISTENT",
+   "note": "min al-DAllIn before being guided — off-track state resolved by hadA."
+  },
+  {
+   "word_ref": "2:26:29:1",
+   "disposition": "CONSISTENT",
+   "note": "Form IV yuDillu bihi kathIran — causation of track-loss via the parable."
+  },
+  {
+   "word_ref": "2:26:36:1",
+   "disposition": "CONSISTENT",
+   "note": "Form IV yuDillu ... illA l-fAsiqIn — causation of track-loss."
+  },
+  {
+   "word_ref": "2:282:67:1",
+   "disposition": "CONSISTENT",
+   "note": "taDilla iHdAhumA fa-tudhakkira: memory-item face — the witness loses her line to the recorded fact until reminded; explicitly the retrieval-failure sense."
+  },
+  {
+   "word_ref": "30:29:11:1",
+   "disposition": "CONSISTENT",
+   "note": "Form IV: man aDalla llAhu — whom God set off-track (causation)."
+  },
+  {
+   "word_ref": "30:53:6:1",
+   "disposition": "CONSISTENT",
+   "note": "DalAlatihim vs guidance (parallel to 27:81) — off-track state."
+  },
+  {
+   "word_ref": "31:11:13:1",
+   "disposition": "CONSISTENT",
+   "note": "fI DalAl mubIn — off-track state."
+  },
+  {
+   "word_ref": "31:6:7:2",
+   "disposition": "CONSISTENT",
+   "note": "Form IV li-yuDilla 'an sabIli llAh — causation of loss of the way of God (explicit sabIl)."
+  },
+  {
+   "word_ref": "32:10:3:1",
+   "disposition": "CONSISTENT",
+   "note": "Dalalnа fI l-arD: bodies become untraceable in the earth — physical-location retrieval-failure face named in the contribution."
+  },
+  {
+   "word_ref": "33:36:22:1",
+   "disposition": "CONSISTENT",
+   "note": "V Dalla (with cognate acc.) — subject off the way after disobeying command."
+  },
+  {
+   "word_ref": "33:36:23:1",
+   "disposition": "CONSISTENT",
+   "note": "N DalAlan mubInan (cognate accusative) — off-track state."
+  },
+  {
+   "word_ref": "33:67:7:2",
+   "disposition": "CONSISTENT",
+   "note": "Form IV faaDallUnA l-sabIla — leaders caused loss of the way (explicit sabIl object)."
+  },
+  {
+   "word_ref": "34:24:16:1",
+   "disposition": "CONSISTENT",
+   "note": "'upon guidance OR in DalAl mubIn' — off-track state as antonym of hudan."
+  },
+  {
+   "word_ref": "34:50:3:1",
+   "disposition": "CONSISTENT",
+   "note": "in Dalaltu — conditional subject way-loss, paired with ihtadaytu."
+  },
+  {
+   "word_ref": "34:50:5:1",
+   "disposition": "CONSISTENT",
+   "note": "aDillu 'alA nafsI — the straying rebounds only on the self; subject way-loss."
+  },
+  {
+   "word_ref": "34:8:15:3",
+   "disposition": "CONSISTENT",
+   "note": "al-DalAl al-ba'Id — far-reaching off-track state (noun)."
+  },
+  {
+   "word_ref": "35:8:10:1",
+   "disposition": "CONSISTENT",
+   "note": "Form IV: yuDillu man yashA' vs yahdI — causation of track-loss, antonym of guidance."
+  },
+  {
+   "word_ref": "36:24:4:1",
+   "disposition": "CONSISTENT",
+   "note": "la-fI DalAl mubIn — off-track state (conditional self-indictment)."
+  },
+  {
+   "word_ref": "36:47:23:1",
+   "disposition": "CONSISTENT",
+   "note": "illA fI DalAl mubIn — off-track state."
+  },
+  {
+   "word_ref": "36:62:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Form IV aDalla minkum jibillan kathIran — Satan caused track-loss of many."
+  },
+  {
+   "word_ref": "37:69:4:1",
+   "disposition": "CONSISTENT",
+   "note": "N DAllIn — found their fathers in the off-track state."
+  },
+  {
+   "word_ref": "37:71:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Dalla ... aktharu l-awwalIn — earlier peoples went off the way."
+  },
+  {
+   "word_ref": "38:26:14:2",
+   "disposition": "CONSISTENT",
+   "note": "Form IV fa-yuDillaka 'an sabIli llAh — desire causes loss of the way of God."
+  },
+  {
+   "word_ref": "38:26:20:1",
+   "disposition": "CONSISTENT",
+   "note": "V yaDillUna 'an sabIli llAh — those who stray off the way of God."
+  },
+  {
+   "word_ref": "39:22:19:1",
+   "disposition": "CONSISTENT",
+   "note": "fI DalAl mubIn — off-track state."
+  },
+  {
+   "word_ref": "39:23:29:1",
+   "disposition": "CONSISTENT",
+   "note": "Form IV: man yuDlili llAhu fa-mA lahu min hAd — set off-track, no guide (antonym pairing)."
+  },
+  {
+   "word_ref": "39:36:10:1",
+   "disposition": "CONSISTENT",
+   "note": "Form IV: man yuDlili llAhu fa-mA lahu min hAd — causation of track-loss."
+  },
+  {
+   "word_ref": "39:37:7:1",
+   "disposition": "CONSISTENT",
+   "note": "N(IV) muDill: whom God guides has no track-loss-causer — active participle, antonym of guidance."
+  },
+  {
+   "word_ref": "39:41:11:1",
+   "disposition": "CONSISTENT",
+   "note": "man Dalla, contrasted with ihtadA — subject way-loss."
+  },
+  {
+   "word_ref": "39:41:13:1",
+   "disposition": "CONSISTENT",
+   "note": "yaDillu 'alayhA — straying rebounds only on the self; subject way-loss."
+  },
+  {
+   "word_ref": "39:8:24:2",
+   "disposition": "CONSISTENT",
+   "note": "Form IV li-yuDilla 'an sabIlihi — set up rivals to cause loss of His way."
+  },
+  {
+   "word_ref": "3:164:24:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "3:69:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "3:69:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "3:90:14:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:25:19:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:33:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:34:25:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:50:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:74:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:74:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "41:29:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "41:48:1:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "41:52:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "42:18:21:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "42:44:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "42:46:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "43:40:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "45:23:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "46:28:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "46:32:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "46:5:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "47:1:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "47:4:37:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "47:8:5:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:113:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:113:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:116:18:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:116:19:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:119:1:3",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:136:26:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:136:27:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:143:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:167:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:167:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:176:46:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:44:10:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:44:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:60:28:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:60:29:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:88:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:88:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "50:27:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "53:2:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "53:30:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "54:24:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "54:47:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "56:51:4:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "56:92:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:105:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:12:43:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:60:24:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:77:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:77:18:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:77:20:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "60:1:46:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "62:2:20:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "67:29:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "67:9:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "68:26:5:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "68:7:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:116:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:117:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:119:22:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:125:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:140:17:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:144:31:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:24:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:39:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:56:16:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:74:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:77:18:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:94:25:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "71:24:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "71:24:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "71:27:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "74:31:40:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:149:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:155:27:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:178:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:179:27:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:186:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:30:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:37:30:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:38:29:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:53:34:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:60:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:61:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "83:32:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "93:7:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "9:115:4:2",
+   "disposition": "CONSISTENT",
+   "note": "Form IV causative liyuDilla: God causing track-loss after guiding; explicit hdy antonym pairing (hadahum). Frozen contribution present."
+  },
+  {
+   "word_ref": "9:37:6:1",
+   "disposition": "CONSISTENT",
+   "note": "Passive causative yuDallu: disbelievers made to lose the way by the nasi'; closed by antonym la yahdi. Frozen contribution present."
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "STRONG",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

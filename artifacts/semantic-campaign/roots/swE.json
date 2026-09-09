@@ -1,0 +1,278 @@
+{
+ "root_buckwalter": "swE",
+ "root_arabic": "س و ع",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch04-coverage",
+ "occurrences": 49,
+ "frozen_candidate_root_contribution": "A delimited unit-slice of time: a bounded portion of time grasped as a single indivisible occasion that arrives and passes as a whole — a discrete temporal \"now\" whose onset can be scheduled, awaited, missed, or come suddenly, and whose extent is fixed by context rather than by the root.",
+ "internal_discovery": {
+  "root_buckwalter": "swE",
+  "root_arabic": "س و ع",
+  "candidate_root_contribution": "A delimited unit-slice of time: a bounded portion of time grasped as a single indivisible occasion that arrives and passes as a whole — a discrete temporal \"now\" whose onset can be scheduled, awaited, missed, or come suddenly, and whose extent is fixed by context rather than by the root.",
+  "plain_explanation": "Everywhere this root appears as a common noun it names a chunk of time treated as one sealed unit. Indefinite, it is the minimal such chunk: sinners feel they stayed only \"a sāʿah of a day\" (10:45, 46:35, 30:55), and no nation can slip \"a sāʿah\" behind or ahead of its fixed term (7:34, 10:49, 16:61, 34:30). In construct, it can be a specific historical episode, \"the sāʿah of hardship\" (9:117). With the definite article in eschatological discourse it becomes THE unit of time par excellence — the appointed Hour that draws near (54:1), stands up (30:12, 30:14, 30:55, 40:46, 45:27), and arrives suddenly (6:31, 12:107, 22:55, 43:66, 47:18, 7:187), with knowledge of its timing reserved to God (7:187, 31:34, 33:63, 41:47, 43:85, 79:42). In all these the discourse is about the time-point's arrival and scheduling — exactly what a bounded-time-unit root predicts. The one occurrence where this cannot be internally demonstrated is the idol name Suwāʿ (71:23), a proper noun.",
+  "layer_separation_note": "FORM: all common-noun occurrences are the same nominal sāʿah (feminine unit-noun shape), so form variation is minimal; the packet's N/T split (7:34 tagged T vs identical sāʿatan tagged N in 10:49, 16:61) is a tagging-layer artifact, not semantic. CONSTRUCTION carries most of the observed range: definite article + eschatological context yields \"the Hour\" (40 occurrences); indefinite accusative in negation/exception yields \"a mere moment\" (minimal-unit reading); iḍāfah in 9:117 yields a named episode. CONTEXT supplies suddenness (baghtatan), dread (mushfiqūn 21:49, 42:18), and denial (kadhdhabū 25:11). After subtracting all of these, the residue left in every common-noun occurrence is the bounded, unitary time-slice itself. PN layer: root-to-name assignment for Suwāʿ (71:23) is morphological, and no compositional residue is extractable there.",
+  "presence": {
+   "occurrences_total": 49,
+   "occurrences_checked": 49,
+   "occurrences_consistent": 48,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "71:23 (Suwāʿ, idol proper name): no internal evidence connects an idol's name to the temporal residue; it is unassessable, not merely difficult. Among common nouns, the strongest stress is 9:117 \"sāʿat al-ʿusrah,\" where the referent is an extended campaign episode, not a short moment — this falsifies any \"instant/60-minutes\" reading and forces the residue to be \"bounded slice treated as one occasion\" (duration contextual); under that phrasing 9:117 is fully consistent.",
+  "competing_hypothesis": "That sāʿah's contribution is \"appointed term/deadline,\" merging it with ajal (or waqt/mīqāt). Rejected internally: in 7:34, 10:49, and 16:61 sāʿah co-occurs with ajal in the same clause — \"when their ajal comes they cannot fall behind a sāʿah nor advance\" — so sāʿah there is the unit of displacement measured against the appointed term, not the term itself. A second competitor, \"sāʿah = the eschaton itself,\" fails at 9:117 (historical hour of hardship) and at all seven indefinite brief-span uses.",
+  "distinctiveness_note": "Distinct from ajal (endpoint of an allotted span — co-occurs contrastively in 7:34, 10:49, 16:61), from ḥīn (an elastic, open-ended while), from waqt (the fixed clock-position of an event; 7:187 says the Hour is disclosed \"li-waqtihā,\" so waqt is predicated OF the sāʿah), and from yawm (the day-frame within which the sāʿah stands, e.g. \"yawma taqūmu al-sāʿah\" 30:12, 40:46, 45:27). Falsifiable: a Quranic occurrence of sāʿah denoting unbounded or continuous time, or one interchangeable with ajal in the displacement verses, would break the claim; none exists in the packet.",
+  "unresolved_cases": [
+   "71:23:9:1 — Suwāʿ (PN, idol of Noah's people): proper-name semantics is referential, not compositional; the proposed residue can be neither demonstrated nor refuted from internal evidence, so it is recorded as unresolved rather than forced."
+  ],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All 49 occurrences were individually assessed. The 48 common-noun occurrences (47 N + 1 T) show the proposed residue — a bounded unit-slice of time grasped as one arriving occasion — with no counterexample: the three surface senses (eschatological Hour, brief moment, historical episode) are fully derivable from definiteness, negation/exception constructions, and iḍāfah plus context, leaving a single stable root contribution. Universal presence over the semantically assessable set therefore holds. Strength is capped at MODERATE, not STRONG, solely because one confirmed occurrence (71:23, PN Suwāʿ) is a proper name whose root linkage is morphological and semantically opaque; per the honesty rule it is recorded as unresolved rather than reconciled by force. No occurrence contradicts the proposal."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "swE",
+  "verdict": "REFUTED",
+  "failing_occurrences": [
+   "71:23"
+  ],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Packet has 49 confirmed occurrences (full coverage). 47 are the temporal noun sAEp: (a) indefinite sAEp \"an hour/short while\" (10:45, 10:49, 16:61, 30:55:9, 34:30, 46:35, 7:34) — a bounded short portion of time; (b) definite AlsAEp \"the Hour\" (the eschatological occasion, the large majority) — a discrete temporal occasion that comes suddenly (bagtatan: 12:107, 22:55, 6:31, 43:66, 47:18, 7:187), is awaited/whose timing is God's knowledge (Elm AlsAEp), and draws near (AqtrbtA 54:1); (c) sAEp AlEsrp \"the hour of hardship\" (9:117) — a bounded occasion. All 48 of these are reconcilable with the proposed contribution after subtracting definiteness/construction/context.\n\nDECISIVE FAILURE: 71:23 swAEA (form PN) is the PROPER NAME OF A PAGAN IDOL (\"do not forsake ... nor Suwaa ...\"), a homonym QAC files under root swE. It carries no temporal sense at all — the residue \"a delimited unit-slice of time\" is entirely and irreconcilably absent; it is not a time-word. No form/construction/context allowance recovers a temporal occasion. Under non-negotiable root unity, this single unreconciled occurrence means universal presence does NOT hold.\n\nDistinctiveness: for the temporal senses the residue is distinctive vs nearest roots (Ajl = fixed term/endpoint; wqt = appointed time; Hyn = indefinite while) by adding brevity + sudden whole-arrival. Falsifiable: yes — and falsified by 71:23."
+ },
+ "coverage_validation": {
+  "root": "swE",
+  "expected_count": 49,
+  "researched_count": 49,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "10:45:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:49:20:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:107:10:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "15:85:10:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:61:21:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:77:7:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:21:10:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:36:3:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "19:75:18:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "20:15:2:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:49:7:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "22:1:7:2",
+   "disposition": "CONSISTENT",
+   "note": "verse_text prepends the basmala, but the word+segment index (7:2) resolves unambiguously to ٱلسَّاعَة in زَلْزَلَةَ ٱلسَّاعَةِ (the sole swE-root token; numbering excludes basmala). The quake of the appointed Hour = bounded time-point; contribution present."
+  },
+  {
+   "word_ref": "22:55:10:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "22:7:2:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:11:3:3",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:11:7:3",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:12:3:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:14:3:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:55:3:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:55:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "31:34:5:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:63:13:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:63:4:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "34:30:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "34:3:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:46:8:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:59:2:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "41:47:4:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "41:50:14:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "42:17:10:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "42:18:19:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "43:61:3:3",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "43:66:4:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "43:85:11:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "45:27:7:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "45:32:15:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "45:32:7:3",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "46:35:19:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "47:18:4:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "54:1:2:2",
+   "disposition": "CONSISTENT",
+   "note": "verse_text prepends the basmala, but word+segment index (2:2) resolves unambiguously to ٱلسَّاعَة in ٱقْتَرَبَتِ ٱلسَّاعَةُ (numbering excludes basmala). The Hour drawing near = bounded time-point; contribution present."
+  },
+  {
+   "word_ref": "54:46:2:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "54:46:4:3",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:31:10:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:40:9:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "71:23:9:1",
+   "disposition": "RESISTANT",
+   "note": "سُوَاعًا (Suwāʿan) is the sole PN (proper noun) occurrence of root س-و-ع: the onomastic name of one of the five idols of Noah's people (Wadd, Suwāʿ, Yaghūth, Yaʿūq, Nasr) in 71:23. Separating the layers — form (PN, not the common noun sāʿah seen in every other occurrence), derivation (a fully lexicalized proper name, not an active nominal derivation from the root), construction (no construct, no definite-article eschatological framing, no arrival/onset syntax), participants/context (a worshipped deity, not a scheduled/awaited/sudden portion of time) — the frozen contribution 'a delimited unit-slice of time' contributes nothing here. The shared triconsonantal skeleton is homographic residue, not a live semantic realization of the bounded-time-unit sense. This is not a Basmala token-position artifact, so STRUCTURAL_UNCERTAINTY does not apply. The contribution genuinely cannot be internally demonstrated for an opaque idol name, so it is recorded as RESISTANT rather than forced to CONSISTENT; the frozen contribution itself already flags this occurrence as the one that cannot be internally demonstrated.",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "79:42:3:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:187:3:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:34:9:1",
+   "disposition": "CONSISTENT",
+   "note": "Form T (time-adverbial): سَاعَةً in accusative as span of delay (لَا يَسْتَأْخِرُونَ سَاعَةً) — reinforces the bounded-time-unit reading; contribution present."
+  },
+  {
+   "word_ref": "9:117:11:1",
+   "disposition": "CONSISTENT"
+  }
+ ],
+ "resistant_deep_analysis": [
+  {
+   "word_ref": "71:23:9:1",
+   "final": "RESISTANT",
+   "rationale": "سُوَاعًا (Suwāʿan) is the sole PN (proper noun) occurrence of root س-و-ع: the onomastic name of one of the five idols of Noah's people (Wadd, Suwāʿ, Yaghūth, Yaʿūq, Nasr) in 71:23. Separating the layers — form (PN, not the common noun sāʿah seen in every other occurrence), derivation (a fully lexicalized proper name, not an active nominal derivation from the root), construction (no construct, no definite-article eschatological framing, no arrival/onset syntax), participants/context (a worshipped deity, not a scheduled/awaited/sudden portion of time) — the frozen contribution 'a delimited unit-slice of time' contributes nothing here. The shared triconsonantal skeleton is homographic residue, not a live semantic realization of the bounded-time-unit sense. This is not a Basmala token-position artifact, so STRUCTURAL_UNCERTAINTY does not apply. The contribution genuinely cannot be internally demonstrated for an opaque idol name, so it is recorded as RESISTANT rather than forced to CONSISTENT; the frozen contribution itself already flags this occurrence as the one that cannot be internally demonstrated."
+  }
+ ],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "UNRESOLVED",
+ "result_strength": "UNRESOLVED",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "FAILED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "71:23:9:1"
+ ],
+ "unreconciled_count": 1,
+ "resistant_occurrences": [
+  "71:23:9:1"
+ ],
+ "structural_uncertainty_occurrences": []
+}

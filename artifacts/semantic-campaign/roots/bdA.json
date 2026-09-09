@@ -1,0 +1,123 @@
+{
+ "root_buckwalter": "bdA",
+ "root_arabic": "ب د ا",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch04-coverage",
+ "occurrences": 15,
+ "frozen_candidate_root_contribution": "First-onset: performing the initial instance of an act or process, occupying the first position in an ordered (and typically iterable) sequence — an onset defined relative to what follows it (a next stage, a repetition, or a return).",
+ "internal_discovery": {
+  "root_buckwalter": "bdA",
+  "root_arabic": "ب د ا",
+  "candidate_root_contribution": "First-onset: performing the initial instance of an act or process, occupying the first position in an ordered (and typically iterable) sequence — an onset defined relative to what follows it (a next stage, a repetition, or a return).",
+  "plain_explanation": "Across all 15 occurrences, b-d-ʾ marks \"doing X for the first time / as the first step.\" Ten tokens sit in the creation formula \"He begins the creation, then repeats it\" (10:4, 10:34 twice, 21:104, 27:64, 29:19, 29:20, 30:11, 30:27, 32:7), where the root supplies the first pass of a process whose second pass is named by ʿ-w-d or by \"the latter production\" (29:20). The two human-agent uses make the ordinal sense explicit: Joseph \"began with their bags BEFORE his brother's bag\" (12:76) — first item in a series — and the enemies \"initiated against you THE FIRST TIME\" (9:13). The absolute uses (85:13 \"He originates and repeats\", 7:29 \"as He first made you, you will return\") and the negation (34:49 \"falsehood neither originates nor repeats\") trade on the same first-versus-again polarity. The root never describes the manner of making — only that this is the first performance.",
+  "layer_separation_note": "FORM: packet-label \"V\" (surface Form I: badaʾa/yabdaʾu) = the subject directly performs the first act, usually with a direct object (al-khalq, -kum) or bi- phrase (12:76); packet-label \"V(IV)\" (yubdiʾu, 29:19/34:49/85:13) = causative-stem framing of the same onset, twice used absolutely without object — the objectlessness and causative nuance belong to the form, not the root. CONSTRUCTION: negation in 34:49 and the kamā-comparison in 7:29/21:104 are syntactic wrappers around the same act-type. CONTEXT: the recurrence pole itself (yuʿīdu, taʿūdūna, al-nashʾa al-ākhira) is contributed by collocated roots (ʿ-w-d, n-sh-ʾ) or ordinal adverbs (qabla, awwala marratin) — subtracting it leaves the stable residue \"first performance/onset in a sequence.\" Notably, all 15 contexts independently supply such a following phase, which corroborates that the residue is ordinal firstness rather than bare making.",
+  "presence": {
+   "occurrences_total": 15,
+   "occurrences_checked": 15,
+   "occurrences_consistent": 15,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "12:76 (فَبَدَأَ بِأَوْعِيَتِهِمْ قَبْلَ وِعَاءِ أَخِيهِ): the only occurrence with no repetition or return anywhere in view — the search is a one-time event. It falsifies any residue phrased as \"onset destined for repetition.\" It is reconciled only under the weaker, ordinal formulation (\"first position in an ordered sequence,\" here marked by qabla), which is why the residue was framed that way.",
+  "competing_hypothesis": "That b-d-ʾ means bare origination/bringing-into-being (synonym of faṭara/anshaʾa), with the \"first-then-again\" structure being purely contextual. Against this: in every one of the 15 occurrences the verse itself positions the act relative to a following phase (thumma yuʿīduhu ×9, qabla in 12:76, awwala marratin in 9:13, taʿūdūna in 7:29, wa-yuʿīd in 85:13/34:49, al-nashʾa al-ākhira in 29:20) — a 15/15 collocational regularity that bare-origination roots do not show; and in 12:76 and 9:13 nothing is brought into being at all, which bare origination cannot explain but ordinal firstness explains directly.",
+  "distinctiveness_note": "vs kh-l-q: khalaqa names the productive act itself; b-d-ʾ takes khalq as its object and adds only \"first pass of it.\" vs f-ṭ-r / n-sh-ʾ: those denote bringing/raising into existence with no ordinal relation to a recurrence; b-d-ʾ applies equally to non-creative acts (searching bags, initiating hostilities). vs b-d-ʿ (badīʿ): b-d-ʿ is novelty without prior model (qualitative unprecedentedness); b-d-ʾ is temporal/serial firstness and is fully compatible with later repetition — indeed it systematically invites it. vs ʿ-w-d: its exact complement (first pass vs subsequent pass), paired in 12 of 15 verses. The residue is non-empty, distinctive, and falsifiable: a confirmed occurrence where the act is neither first in a series nor set against a following phase would break it; none exists in the packet.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "STRONG",
+  "rationale": "Full coverage achieved: all 15 confirmed occurrences (including both tokens in 10:34) were individually assessed and every one is reconciled with the residue \"first onset of an act/process in an ordered sequence\" after subtracting form (I vs IV/absolute), construction (negation, kamā-comparison), and context (the ʿ-w-d recurrence pole, ordinal adverbs). The hardest cases — 12:76 (no repetition), 34:49 (negated, objectless), 9:13 (non-cosmological human agency) — were deep-checked and forced a sharpening of the residue from \"onset-for-repetition\" to ordinal firstness, under which universal presence holds with no exceptions. The 15/15 co-occurrence with an explicitly named following phase gives unusually strong internal corroboration; nothing here is canonical."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "bdA",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Adversarial full-coverage check of all 15 confirmed occurrences at data/campaign/packets/batch04/bdA.json. Proposed contribution (first-onset / first position in an ordered, typically iterable sequence, defined relative to what follows) is demonstrably present in EVERY occurrence after subtracting form and context: (a) creation begins-then-returns frame — 10:34(x2), 10:4, 27:64, 29:19, 30:11, 30:27 (يبدؤا الخلق ثم يعيده); (b) begin + explicit next/later stage — 21:104 (بدأنا أول خلق نعيده), 29:20 (بدأ الخلق ثم ينشئ النشأة الآخرة), 7:29 (بدأكم تعودون), 32:7 (بدأ خلق الإنسان من طين; next stages in 32:8-9 ثم جعل...ثم سوّى); (c) abstract origination-vs-repetition — 34:49, 85:13 (يبدئ ويعيد). The two hardest/non-cosmological cases confirm rather than refute: 12:76 (بدأ بأوعيتهم قبل وعاء أخيه = first position in an ordered search) and 9:13 (بدءوكم أول مرة = first, iterable onset of hostility). No occurrence marks a middle/final stage, a return, or an onset-less standalone act, so no failing occurrences. Distinctiveness OK vs bdʕ (unprecedented novelty), n$A (production/bringing-into-being — notably used for the LATER stage in 29:20, contrasting with bdA), and 'wd (return/repetition = the complement). Claim is falsifiable (would fall to any non-initial or onset-less use) and survives. Root unity intact; universal presence holds."
+ },
+ "coverage_validation": {
+  "root": "bdA",
+  "expected_count": 15,
+  "researched_count": 15,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "10:34:12:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:34:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "10:4:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:76:1:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:104:8:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:64:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:19:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:20:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:11:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "30:27:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "32:7:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "34:49:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:29:15:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "85:13:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "9:13:10:1",
+   "disposition": "CONSISTENT"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "STRONG",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

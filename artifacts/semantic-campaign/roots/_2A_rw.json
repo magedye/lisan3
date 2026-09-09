@@ -1,0 +1,80 @@
+{
+ "root_buckwalter": "*rw",
+ "root_arabic": "ذ ر و",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch04-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "A sweeping, wind-like agency that lifts light or loose matter and carries it away into scattered, irrecoverable dispersion (winnowing-away): the event necessarily involves (a) a moving carrier-agent, (b) a light/particulate patient, and (c) an endpoint of dissipation rather than placement.",
+ "internal_discovery": {
+  "root_buckwalter": "*rw",
+  "root_arabic": "ذ ر و",
+  "candidate_root_contribution": "A sweeping, wind-like agency that lifts light or loose matter and carries it away into scattered, irrecoverable dispersion (winnowing-away): the event necessarily involves (a) a moving carrier-agent, (b) a light/particulate patient, and (c) an endpoint of dissipation rather than placement.",
+  "plain_explanation": "All three occurrences describe the same event seen through different grammatical lenses. In 18:45 the winds (explicit agent الرياح) sweep away dried plant debris (هشيم) — the verb تذروه with its object suffix shows a transitive act of carrying-off-into-dispersion, sealing the parable of worldly life ending in dissipation. In 51:1 the same event is packaged twice: الذاريات is the agent-participle ('the ones who scatter-carry', internally identifiable as winds via the 18:45 parallel, the only other root occurrence), and ذروا is the cognate masdar intensifying that very event. Subtract the oath construction and the parable context and the identical residue remains in every token.",
+  "layer_separation_note": "FORM: 18:45 imperfect Form I verb = ongoing transitive event; 51:1 active participle (fem. pl.) = agentivization of the event; 51:1 masdar = pure event-nominal used as cognate accusative for intensification. CONSTRUCTION: 51:1 is an oath formula (wa- + participle + cognate accusative); 18:45 is a narrative clause inside a مثل (parable). CONTEXT: worldly-life simile (18:45) vs. eschatological oath opening (51:1). PARTICIPANTS: agent = winds (explicit in 18:45, inferable in 51:1); patient = هشيم (explicit in 18:45, unexpressed in the participle/masdar, as expected for those forms). After subtracting all layers, the root residue (carrier-agent dispersing light matter to dissipation) is non-empty and constant.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "None found in the full set. The nearest candidate for resistance is 51:1 الذاريات, whose referent is not named in the verse; but the root contribution itself is secured internally by the exact agent-verb parallel in 18:45 (الرياح ... تذروه), and the cognate accusative ذروا confirms the event-type independent of referent identification. It does not break universal presence.",
+  "competing_hypothesis": "Competing hypothesis 1: the root merely means 'wind blowing / violent air movement'. Falsified internally by 18:45, where تذروه takes an object suffix — the root event is transitive dispersal of a patient, not intransitive wind motion. Competing hypothesis 2: generic 'scattering' with no carrier or endpoint specification (like strewing). Weakened by the fact that both contexts bind the event to a sweeping carrier (winds) and to a dissipative endpoint (هشيم carried off to nothing), suggesting the carrier+dissipation components are part of the root, not the context — though with only two independent contexts this component-attribution is the least secure part of the claim.",
+  "distinctiveness_note": "Distinct from neighboring semantic territory: (a) mere wind roots (ريح، عصف) name the mover, not a transitive dispersal of a patient; (b) نثر-type strewing lacks the carrier medium and the dissipative endpoint; (c) بذر/زرع-type sowing disperses toward placement and growth, whereas ذرو in 18:45 disperses toward annihilative loss (the parable's whole point); (d) ذرأ (create/multiply) and ذرر are separate roots not conflated here. Falsifiable: the claim would break if any occurrence showed ذرو with a heavy/fixed patient, with no carrying medium, or with a constructive placement endpoint — none does.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "Universal presence holds: 3/3 tokens checked, all reconcile to a single non-empty residue after layer subtraction, with zero resistant occurrences, and the two nominal tokens in 51:1 are mutually reinforcing (participle + cognate masdar of the same event). The verb token supplies explicit agent and patient, letting the residue be stated with unusual internal precision for so small a set. Strength is graded MODERATE rather than STRONG solely because the corpus offers only two independent verse contexts (51:1 contributes two tokens of one construction), which limits stress-testing of the finer components (carrier-medium, dissipative endpoint) against varied contexts. No occurrence is unresolved."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "*rw",
+  "verdict": "PARTIALLY_SUPPORTED",
+  "failing_occurrences": [
+   "51:1"
+  ],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Full coverage = 3 occurrences (18:45 Form V; 51:1:1:3 and 51:1:2:1 Form N in the same oath verse). The CORE root residue 'sweeping scattering/dispersal by an agentive (wind-like) force' is demonstrably present in ALL three, so the contribution is not refuted at its core. However, the PROPOSED wording is over-specified: it asserts the event NECESSARILY involves (b) a light/particulate patient and (c) an endpoint of dissipation-not-placement. Both sub-claims are demonstrable only in 18:45 (هَشِيمًا تَذْرُوهُ ٱلرِّيَٰحُ: winds=agent, hashim/dry chaff=light patient, dispersal=endpoint). In 51:1 the packet verse text is only وَٱلذَّٰرِيَٰتِ ذَرْوًا = 'by the scatterers, scattering' — the active participle (ٱلذَّٰرِيَٰت) supplies the scattering AGENT and the cognate accusative (ذَرْوًا) reinforces the scattering ACTION, but NO patient and NO dissipation endpoint appear in the verse. Supplying 'winds scattering dust/chaff' there would require lexicon/tafsir, which the hard rules forbid as evidence. Therefore components (b) and (c) of the proposed bundle are NOT universally present; 51:1 (both words 51:1:1:3, 51:1:2:1) is the failing occurrence for the full wording. A leaner residue — 'scatter/disperse by a sweeping agency' — WOULD hold universally and is distinctive vs بذر (deliberate sowing/placement), نثر/نشر (strew/spread, placement-compatible). Distinctiveness and falsifiability of that leaner residue are sound. Under non-negotiable root unity the specific 3-part bundle cannot be affirmed as universally present, so verdict != SUPPORTED; core is intact so not REFUTED."
+ },
+ "coverage_validation": {
+  "root": "*rw",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "18:45:16:1",
+   "disposition": "CONSISTENT",
+   "note": "تذروه الرياح: explicit wind-agent, light debris patient (هشيما), transitive carrying-off into dispersion — all three structural components present verbatim."
+  },
+  {
+   "word_ref": "51:1:1:3",
+   "disposition": "CONSISTENT",
+   "note": "الذاريات agent-participle (word 1, segment 3 after wa-oath + al-); subtracting the oath construction leaves the root's moving carrier-agent residue. Basmala prepended in verse_text is display-only; word_ref indexing counts والذاريات as word 1, so the token is unambiguous."
+  },
+  {
+   "word_ref": "51:1:2:1",
+   "disposition": "CONSISTENT",
+   "note": "ذروا cognate masdar intensifying the same scattering-into-dispersion event; the dispersion residue is present as the verbal noun."
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "WEAK",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PARTIAL",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

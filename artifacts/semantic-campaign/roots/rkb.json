@@ -1,0 +1,129 @@
+{
+ "root_buckwalter": "rkb",
+ "root_arabic": "ر ك ب",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch04-coverage",
+ "occurrences": 15,
+ "frozen_candidate_root_contribution": "Superposition onto a bearer: one entity comes to be positioned on top of (or fitted onto) a distinct supporting entity that then bears/carries it. Riding is the prototypical case (rider upon animal/ship), but the residue is the mounted-upon-a-support relation itself, not motion or travel.",
+ "internal_discovery": {
+  "root_buckwalter": "rkb",
+  "root_arabic": "ر ك ب",
+  "candidate_root_contribution": "Superposition onto a bearer: one entity comes to be positioned on top of (or fitted onto) a distinct supporting entity that then bears/carries it. Riding is the prototypical case (rider upon animal/ship), but the residue is the mounted-upon-a-support relation itself, not motion or travel.",
+  "plain_explanation": "Everywhere rkb appears, something is set upon something else that holds it up: people upon ships (11:41, 11:42, 18:71, 29:65), people upon animals (16:8, 40:79, 36:42, 43:12 — which pairs ships and cattle under one verb, showing the Quran itself treats them as one act), the nominals for mounted people and mounts (2:239 rukbaan vs. rijaal on foot, 36:72 rakuub, 59:6 rikaab, 8:42 al-rakb). The three non-riding cases carry the same relation without travel: grain mutarakib (6:99) is grains stacked one upon another; rakkabaka (82:8) is God fitting/mounting your parts together into a form; 84:19 la-tarkabunna tabaqan 'an tabaq is mounting stage upon stage, where the object tabaq (layer) itself encodes superposition. Subtract the vehicle, the journey, and the grammatical form, and the same residue remains in all fifteen.",
+  "layer_separation_note": "FORM: Form II (82:8) adds causation — causing parts to be mounted together (assembly); Form VI participle (6:99) adds reciprocity — mutually mounted on one another; bare V and the four nominals express the act/agent/object directly. CONSTRUCTION: rakiba fii + vessel (18:71, 29:65) frames the bearer as an enclosing vehicle; direct-object construction with animals (16:8) frames it as a mount; none of this belongs to the root. CONTEXT: flood narrative, battle logistics (8:42, 59:6), prayer under fear (2:239), providence lists (16:8, 36:72, 40:79, 43:12), botany (6:99), anthropogeny (82:8), eschatology (84:19) — the residue is stable across all of them.",
+  "presence": {
+   "occurrences_total": 15,
+   "occurrences_checked": 15,
+   "occurrences_consistent": 15,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "84:19 (la-tarkabunna tabaqan 'an tabaq): no physical bearer is named and the sense is transitional/eschatological, so a purely physical 'riding' reading cannot be verified from the verse alone. It is reconciled because the object tabaq (layer/stage) itself supplies the stacked-support structure the root requires — mounting onto stage after stage — but it remains the occurrence most dependent on construal.",
+  "competing_hypothesis": "\"Riding/travel by conveyance\" (motion-centered): covers the 12 vehicle/animal occurrences but demonstrably fails at 6:99 (stacked grain — no motion, no conveyance) and 82:8 (assembling a human form — no travel), and strains at 84:19. The broader superposition-on-a-bearer residue covers all 15 without forcing, so it is preferred over the motion-centered hypothesis.",
+  "distinctiveness_note": "Distinct from Hml (ح م ل, carrying): Hml profiles the bearer's act of bearing a load; rkb profiles the mounted entity's coming-to-be-on-top of the bearer (2:239 opposes rukbaan to rijaal by position, not by load). Distinct from 'lw (elevation): mere height without a supporting-bearer relation. Distinct from xlq/Swr in 82:8: khalq originates and taswir shapes, while rakkaba specifically composes by fitting parts onto a supporting structure. Falsifiable: the claim fails if any rkb occurrence lacks an entity positioned upon a distinct supporting entity — none in this full set does.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "STRONG",
+  "rationale": "Full coverage: all 15 confirmed occurrences assessed, none sampled. Four clusters (ship-mounting, animal-mounting, mounted-participant nominals, non-locomotive superposition) all reduce to one non-empty residue — being set upon a supporting bearer — after subtracting form (II causative, VI reciprocal), construction (fii + vessel vs. direct object), and context. The three resistant occurrences (6:99, 82:8, 84:19) not only reconcile but decide between hypotheses: they eliminate the narrower motion/riding hypothesis while instantiating the superposition residue literally (stacked grain, assembled parts, layer upon layer). 43:12 unifying ships and cattle under one verb independently corroborates that the root encodes the mounted relation rather than a vehicle type. No occurrence required forcing; inconsistent set is empty; hence universal presence holds and the result is PREFERRED at STRONG."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "rkb",
+  "verdict": "PARTIALLY_SUPPORTED",
+  "failing_occurrences": [
+   "82:8",
+   "84:19"
+  ],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Full coverage checked: 15/15 occurrences accounted for. The proposed residue (\"superposition onto a bearer / mounted-upon-a-support relation, not motion\") is demonstrably present in 13 occurrences: literal boarding/riding of ship or ark (11:41, 11:42, 18:71, 29:65, 36:42, 43:12), riding of animals/cattle (16:8, 40:79), and derived mount/rider nouns (2:239 rukbān, 36:72 rakūb, 59:6 rikāb, 8:42 al-rakb). 6:99 (mutarākib, Form VI) is the most literal stacked-on-support case (grain layered one bearing the other) and supports the residue.\n\nFAILING (universal presence does NOT hold):\n- 82:8 (rakkaba-ka, Form II): the verse-internal evidence is God's COMPOSITION/proportioning of the human form from constituent parts — a symmetric assembly of parts into a structure. There is no distinct load-bearing entity that carries a rider positioned on top; the specific claim \"a distinct supporting entity that then bears/carries it\" is not demonstrable. Subtracting Form-II factitivity leaves \"assembled/joined together,\" not \"mounted-upon-a-carrier.\" This is the clear falsifier.\n- 84:19 (latarkabunna ṭabaqan ʿan ṭabaq): about progression/transition through successive states — the very \"motion/travel/succession\" the proposal explicitly excludes. A static borne-upon-carrying-support reading requires interpretation and is not demonstrable; competing readings involve no bearer at all. Secondary strain.\n\nUnder non-negotiable root unity, the presence of even one unreconciled confirmed occurrence (82:8) means verdict != SUPPORTED. The proposal reads best as capturing the riding/mount/layering cluster but overreaches by claiming an asymmetric bearer-carries relation where 82:8 shows symmetric composition. Distinctiveness vs nearest roots (e.g. ḥ-m-l \"carry/bear a load,\" which lacks the on-top mounting) holds for the core clusters. The contribution is falsifiable and is in fact falsified by 82:8. Nothing here is canonical; evidence limited to packet occurrences and Tanzil verse text."
+ },
+ "coverage_validation": {
+  "root": "rkb",
+  "expected_count": 15,
+  "researched_count": 15,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "11:41:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "11:42:14:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "16:8:4:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:71:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "29:65:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:239:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "36:42:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "36:72:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "40:79:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "43:12:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "59:6:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:99:18:1",
+   "disposition": "CONSISTENT",
+   "note": "mutaraakib: grain piled grain-upon-grain; superposition residue present without any riding/travel."
+  },
+  {
+   "word_ref": "82:8:6:1",
+   "disposition": "CONSISTENT",
+   "note": "rakkabaka (form II): fitting/mounting the body's parts together into a form; matches the frozen '(or fitted onto) a support' residue rather than riding."
+  },
+  {
+   "word_ref": "84:19:1:2",
+   "disposition": "CONSISTENT",
+   "note": "tarkabunna tabaqan 'an tabaq: mounting layer/stage upon layer; object tabaq itself encodes superposition, so residue present sans travel."
+  },
+  {
+   "word_ref": "8:42:8:3",
+   "disposition": "CONSISTENT"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "WEAK",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PARTIAL",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

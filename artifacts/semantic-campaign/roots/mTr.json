@@ -1,0 +1,123 @@
+{
+ "root_buckwalter": "mTr",
+ "root_arabic": "م ط ر",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch04-coverage",
+ "occurrences": 15,
+ "frozen_candidate_root_contribution": "A shower-descent from the sky onto a target below: a quantity of discrete matter (prototypically water, but substance-unspecified) falling from above in pelting, distributed fashion upon a location or people. The root encodes the manner and directionality of arrival (sky-to-ground, onto), not the substance and not any good/bad valence.",
+ "internal_discovery": {
+  "root_buckwalter": "mTr",
+  "root_arabic": "م ط ر",
+  "candidate_root_contribution": "A shower-descent from the sky onto a target below: a quantity of discrete matter (prototypically water, but substance-unspecified) falling from above in pelting, distributed fashion upon a location or people. The root encodes the manner and directionality of arrival (sky-to-ground, onto), not the substance and not any good/bad valence.",
+  "plain_explanation": "In every Quranic occurrence, m-T-r is about something coming down out of the sky onto someone or something beneath it. As a plain noun it names the shower itself — ordinary rain that soldiers may shelter from (4:102), the rain a cloud is hoped to bring (46:24), or the terrible 'rain' that fell on Lot's people (25:40, 26:173, 27:58, 7:84). As a Form IV verb it means causing that shower to fall on a target, always with 'upon' (ʿalā): God rains stones on the condemned towns (11:82, 15:74), or mockers dare God to rain stones on them (8:32). That stones — not water — can be what is 'rained' proves the root is about the mode of falling from the sky onto a target, not about water itself; and the hopeful use in 46:24 and the neutral use in 4:102 prove the root is not inherently about punishment.",
+  "layer_separation_note": "ROOT residue: shower-descent from sky onto a target. FORM: Form IV (amṭara/umṭirat/mumṭir) adds causation — an agent making the shower fall on a goal; the bare noun maṭar names the event/substance-in-descent. CONSTRUCTION: the target is uniformly introduced by ʿalā in verbal uses (11:82, 15:74, 26:173, 27:58, 7:84, 8:32) or by passive subjecthood (25:40); the substance occupies the object slot (ḥijāratan) or a cognate accusative (maṭaran); qualifiers in construct (maṭara l-sawʾ, maṭaru l-mundharīn) carry evaluation. CONTEXT: the punishment valence of 12/15 tokens comes entirely from the surrounding narratives of Lot's people and the Quraysh challenge, plus explicit evaluators (al-sawʾ, sāʾa, al-mujrimīn); it is absent in 4:102 (neutral weather) and inverted in 46:24 (hoped-for rain), so it cannot be root residue.",
+  "presence": {
+   "occurrences_total": 15,
+   "occurrences_checked": 15,
+   "occurrences_consistent": 15,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "The stone-object uses (11:82:7:2, 15:74:4:2, 8:32:11:2 — amṭarnā/fa-amṭir ʿalayhā/ʿalaynā ḥijāratan) are the hardest for any 'rain = water from the sky' reading, since what falls is stones. They are resolved, not forced: the substance is expressed in a separate object slot, so the root's own contribution must be the shower-manner of sky-to-target descent, which is demonstrably present (stones arrive exactly as a rain does — from above, in quantity, onto a target). No occurrence resists the substance-neutral shower-descent residue.",
+  "competing_hypothesis": "That m-T-r inherently denotes harmful/punitive downpour (a common claim, since 12/15 tokens sit in punishment contexts). Rejected on internal evidence: (1) 46:24 — ʿĀd joyfully say 'hādhā ʿāriḍun mumṭirunā,' expecting beneficial rain; the utterance is only coherent if the root is valence-neutral, and the verse itself corrects the referent ('bal huwa... rīḥun fīhā ʿadhābun alīm') without correcting the word; (2) 4:102 — harm is supplied by the annexed 'adhan min maṭarin,' which would be redundant if harm were in the root; (3) 25:40 — 'maṭara l-sawʾ' needs the qualifier al-sawʾ to mark badness, again redundant under the punitive hypothesis. The punishment association is a distributional fact of context, and (for the verb) a Form IV usage pattern, not root residue.",
+  "distinctiveness_note": "Distinct from nearby descent/water roots: n-z-l is generic 'coming/sending down' with no shower-manner or pelting distribution and no obligatory target-under; gh-y-th (ghayth) is rain as relief/succor, carrying positive valence that m-T-r lacks (m-T-r can take stones and 'al-sawʾ'); w-d-q names the raindrop content within clouds rather than an event upon a target; s-q-y is provision-of-drink, oriented to the beneficiary's intake, not sky-to-ground descent. m-T-r uniquely combines: sky origin + distributed shower manner + a target 'upon' which it falls + substance-neutrality + valence-neutrality. Falsifiable: an occurrence where the root denoted lateral or upward motion, a static substance, or descent with no target-under would break the claim; none exists in the 15.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "STRONG",
+  "rationale": "Full coverage: all 15 confirmed occurrences read and individually assessed; all 15 reconcile with the substance-neutral, valence-neutral residue 'shower-descent from sky onto a target' once Form IV causation, the ʿalā-target construction, object/cognate-accusative substance slots, and punishment-narrative context are subtracted. The residue is non-empty, does real work (explains why stones can be 'rained' and why evaluators like al-sawʾ and adhan min are needed), is distinctive against n-z-l/gh-y-th/w-d-q/s-q-y, and survives its strongest internal counterexamples (stone objects; the hopeful 46:24). No occurrence had to be forced and none is unresolved, so universal presence holds at STRONG."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "mTr",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "All 15 confirmed occurrences (9 verses; N=7, N(IV)=1, V(IV)=7) accounted for and reconciled with the proposed residue: a sky-to-ground distributed shower-descent of discrete matter onto a target, substance-unspecified and valence-neutral. Adversarial checks: (1) Substance-unspecified is corroborated by substitution — stones/حجارة (11:82, 15:74, 8:32), water (4:102, 46:24), unspecified مطر (7:84, 26:173, 27:58, 25:40); root survives all. (2) Valence-neutrality holds — negative charge always lives in adjuncts/context (السوء 25:40; ساء…المنذرين 26:173/27:58; المجرمين 7:84; عذاب 46:24) and flips to mundane/expected-good in 4:102 (nuisance rain) and 46:24 (people expect beneficial rain-cloud). (3) Downward-onto directionality is grammatically encoded in every occurrence via على+target (عليها/عليهم/علينا), passive patient (أُمطرت 25:40), or pronominal object of participle (مُمطرنا 46:24); 8:32 adds explicit من السماء. Two candidate refutations were tested and failed: 4:102 ordinary rain (the descriptor \"pelting\" is mildly over-specified for light rain, but the core distributed-descent residue is still present, and this case reinforces rather than breaks valence-neutrality); 46:24 participle (still 'raining upon us', descent onto target present). No occurrence lacks the residue, so under non-negotiable root unity universal presence holds. Distinctiveness vs nearest roots is adequate: separable from nzl (general 'sending down' of revelation/iron/angels, no distributed-shower requirement), gyv (positively-valenced relief rain), and Sbb/wdq (pouring). Falsifiable: an upward, non-descending, or non-shower sense would refute it; none occurs. Minor caveat: 'pelting' is a slight over-reach for the light-rain sense at 4:102 — recommend softening to 'distributed' — but this does not defeat universal presence."
+ },
+ "coverage_validation": {
+  "root": "mTr",
+  "expected_count": 15,
+  "researched_count": 15,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "11:82:7:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "15:74:4:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:40:6:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:40:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:173:1:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:173:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:173:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:58:1:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:58:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "27:58:5:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "46:24:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "4:102:48:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:84:1:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "7:84:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "8:32:11:2",
+   "disposition": "CONSISTENT"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "STRONG",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

@@ -1,0 +1,261 @@
+{
+ "root_buckwalter": "TEm",
+ "root_arabic": "ط ع م",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch04-coverage",
+ "occurrences": 48,
+ "frozen_candidate_root_contribution": "Oral intake of sustenance into the body: the taking-in of nourishment (solid or liquid), the substance so taken in, or the quality sensed upon taking it in.",
+ "internal_discovery": {
+  "root_arabic": "ط ع م",
+  "root_buckwalter": "TEm",
+  "candidate_root_contribution": "Oral intake of sustenance into the body: the taking-in of nourishment (solid or liquid), the substance so taken in, or the quality sensed upon taking it in.",
+  "plain_explanation": "Across all 48 occurrences the root marks the intake side of nourishment. As the noun ṭaʿām it names whatever is taken in as sustenance — ordinary provisions (12:37, 18:19, 2:61), lawful/unlawful classes of it (3:93, 5:5, 5:96, 6:145), what messengers eat proving embodiment (21:8, 25:7, 25:20, 5:75), expiation portions (2:184, 5:95), and even hell's anti-foods, which are still ingested (44:44, 69:36, 73:13, 88:6). As the Form I verb it is direct intake — crucially including water at 2:249 ('man lam yaṭʿamhu' of the river), so the invariant is intake, not solid food. Form IV adds only causation (feed = cause another's intake: 106:4, 76:8-9, 74:44, 6:14), Form X adds only request (18:77 'they asked its people for food'), and ṭaʿm at 47:15 is the quality perceived on intake (the milk's taste). Subtracting those form-layers, every occurrence keeps the same residue: nourishment entering the body by mouth.",
+  "layer_separation_note": "FORM: Form I = direct intake (2:249, 33:53:22, 5:93, 6:138, 6:145); Form IV = causative, cause someone's intake, i.e. feed (13 verb tokens + 3 iṭʿām maṣdars at 58:4, 5:89, 90:14; passive 'lā yuṭʿam' 6:14 = intake denied of God); Form X = requestive, seek intake (18:77). NOUN PATTERNS: ṭaʿām = substance-taken-in; ṭaʿm (47:15) = intake-quality (taste); ṭāʿim (6:145) = agent of intake. CONSTRUCTION: 'ṭaʿām al-miskīn' (107:3, 69:34, 89:18) is a feeding-of construct — the beneficiary comes from construction, not root. CONTEXT supplies legal (expiation), eschatological (hell-food), polemical (embodied messengers; idols that cannot feed) coloring. The remaining root residue — oral intake of sustenance — is non-empty and constant.",
+  "presence": {
+   "occurrences_total": 48,
+   "occurrences_checked": 48,
+   "occurrences_consistent": 48,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "2:249 ('wa-man lam yaṭʿamhu fa-innahu minnī'), where the object is river water — a genuine counterexample to any 'solid food' hypothesis, and the strongest pressure on this one. It is reconciled because the verse itself opposes shariba (drink freely) to lam yaṭʿamhu (take none of it in at all, even a taste): the root's intake sense, not a food-substance sense, is exactly what the contrast requires. 47:15 (ṭaʿm of milk, a liquid) independently confirms the liquid-inclusive intake/taste reading.",
+  "competing_hypothesis": "'Food as a substance (solid nourishment)' — the traditional gloss. It covers the 26 noun occurrences but fails at 2:249 (water as object of the Form I verb), strains at 47:15 (taste of milk), and at 5:93 (fīmā ṭaʿimū covering prior consumption generally). A second competitor, 'tasting' (assimilating TEm to *wq/dhawq), fails in the other direction: TEm here never takes metaphorical objects like punishment, and iṭʿām of sixty needy persons (58:4) is provision of real intake, not tasting. The intake-of-sustenance hypothesis subsumes both competitors' successes without their failures.",
+  "distinctiveness_note": "vs ʾ-k-l (eat): akl is the agent-side act of consuming and extends metaphorically (devouring wealth); TEm is the nourishment-intake relation and its object, and the two co-occur non-redundantly in 'yaʾkulu al-ṭaʿām' (25:7, 21:8, 5:75). vs sh-r-b (drink): TEm includes liquids (2:249) but is not drink-specific; 2:259 and 44:44ff pair ṭaʿām against sharāb as the general intake-substance vs the drink. vs dh-w-q (taste): dhawq freely takes metaphorical objects (punishment); TEm in all 48 occurrences stays with literal bodily intake. Falsifiable: one metaphorical non-ingestive TEm occurrence would break the claim; none exists in the full set.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "STRONG",
+  "rationale": "Full coverage: all 48 confirmed occurrences were individually assessed and all 48 are consistent with the residue 'oral intake of sustenance (substance / act / tasted quality)' after subtracting form (I direct, IV causative, X requestive, maṣdar/participle), construction, and context. The one genuinely resistant case (2:249, water) and the one pattern outlier (47:15, ṭaʿm = taste) are not merely tolerated but positively select this hypothesis over the naive 'food' gloss, since they are exactly where 'solid food' fails and 'intake' succeeds. No occurrence required forcing, no metaphorical drift exists in the set, and the residue is distinctive against ʾ-k-l, sh-r-b, and dh-w-q. Universal presence holds on the full occurrence set, hence PREFERRED with STRONG strength."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "TEm",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "All 48 confirmed occurrences reconcile with the three-facet contribution after subtracting form/construction/context. Substance sense (طعام, 26 N incl. 6:145 طاعم) = the substance taken in orally, holding even for vile ingesta (69:36 غسلين, 88:6 ضريع, 73:13 غصّة, 44:44 أثيم). Act sense (V طَعِمَ; V(IV) أطعم = causative 'cause to take in'; N(IV) إطعام; V(X) استطعم = seek food) = the taking-in of nourishment; Form IV/X residue subtracts cleanly to the base intake notion (e.g. 6:14 يطعم ولا يطعم, 51:57, 76:9). Quality sense: 47:15 طعمه = flavor of milk, matching 'quality sensed upon taking it in.' Two mild-tension points survive reconciliation: (a) 2:249 من لم يطعمه is intake of river WATER — 'nourishment' is a generous label for plain water, but the contribution explicitly admits 'liquid' and drink is sustenance, so the residue 'oral intake of liquid' is present; (b) 47:15 describes intrinsic flavor rather than an active drinking event, but flavor is definitionally the intake-quality, covered by design. Distinctiveness is strong and empirically confirmed within the packet: 5:95 uses ذوق (لِيَذوقَ) for metaphorical 'tasting of consequence' while TEm never extends metaphorically, keeping TEm distinct from ذوق (incl. figurative taste), from أكل (mechanical eating — طعام recurs as the OBJECT of يأكل in 21:8/25:7/25:20/5:75, TEm supplying the substance, AkL the act), and from رزق (provision). Residue is non-empty, distinctive, and falsifiable. Under non-negotiable root unity, no occurrence remains unreconciled; universal presence holds."
+ },
+ "coverage_validation": {
+  "root": "TEm",
+  "expected_count": 48,
+  "researched_count": 48,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "106:4:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "107:3:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "12:37:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:19:30:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "18:77:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "21:8:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "22:28:18:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "22:36:20:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:20:9:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "25:7:6:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "26:79:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:184:18:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:249:17:1",
+   "disposition": "CONSISTENT",
+   "note": "yaṭʿamhu is of the river water; intake here is of liquid, which the frozen contribution explicitly covers (solid or liquid). Residue of taking-in-nourishment is present."
+  },
+  {
+   "word_ref": "2:259:39:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "2:61:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:53:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "33:53:22:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "36:47:13:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "36:47:18:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "3:93:2:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "44:44:1:1",
+   "disposition": "CONSISTENT",
+   "note": "Hell's food (of the sinful) is an anti-food but is still a substance ingested; the intake residue is present."
+  },
+  {
+   "word_ref": "47:15:17:1",
+   "disposition": "CONSISTENT",
+   "note": "ṭaʿm = the milk's taste; this is the 'quality sensed upon taking it in' branch of the frozen contribution, so the intake residue is present."
+  },
+  {
+   "word_ref": "51:57:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "58:4:14:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:5:11:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:5:5:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:75:16:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:89:13:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:89:19:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:93:9:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:95:29:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "5:96:5:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "69:34:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "69:36:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Hell's ghislīn is an anti-food but is still ingested matter; intake residue present."
+  },
+  {
+   "word_ref": "6:138:7:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:145:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:145:11:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:14:10:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "6:14:12:1",
+   "disposition": "CONSISTENT",
+   "note": "yuṭʿamu (passive: God 'is not fed') negates being caused to take in nourishment; the intake residue is present precisely as the concept being denied."
+  },
+  {
+   "word_ref": "73:13:1:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "74:44:3:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "76:8:1:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "76:8:2:2",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "76:9:2:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "80:24:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "88:6:3:1",
+   "disposition": "CONSISTENT",
+   "note": "Hell's ḍarīʿ is an anti-food but is still ingested matter; intake residue present."
+  },
+  {
+   "word_ref": "89:18:4:1",
+   "disposition": "CONSISTENT"
+  },
+  {
+   "word_ref": "90:14:2:1",
+   "disposition": "CONSISTENT"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "STRONG",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

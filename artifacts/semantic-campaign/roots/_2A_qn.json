@@ -1,0 +1,78 @@
+{
+ "root_buckwalter": "*qn",
+ "root_arabic": "ذ ق ن",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch04-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "The chin: the frontal underside terminus of the face at its junction with the neck — the body's pivot-point that marks the extreme limit of head inclination, downward (face driven fully to the ground) or upward (head forced back so it cannot bow).",
+ "internal_discovery": {
+  "root_buckwalter": "*qn",
+  "root_arabic": "ذ ق ن",
+  "candidate_root_contribution": "The chin: the frontal underside terminus of the face at its junction with the neck — the body's pivot-point that marks the extreme limit of head inclination, downward (face driven fully to the ground) or upward (head forced back so it cannot bow).",
+  "plain_explanation": "All three occurrences are the same plural noun al-adhqan in a prepositional frame, and in each the chins function as a limit-line of head posture. In 17:107 and 17:109 those given knowledge \"fall to the chins\" (yakhirruna li-l-adhqan) — prostration pressed past the forehead to the lowest frontal point of the face, intensified by sujjadan/yabkuna/khushu'an. In 36:8 iron collars on the necks reach \"up to the chins\" (ila l-adhqan), so the wearers are muqmahun — heads forced up, unable to lower the face. The same referent thus anchors both extremes: chins to the ground in voluntary humility, chins propped up in enforced inability to humble. The root's contribution (the chin as the terminal frontal point of the face/head) is present and doing work in every occurrence; the polarity (down vs. up) comes from construction (li- of falling vs. ila of upper bound) and context, not from the root.",
+  "layer_separation_note": "ROOT residue: the chin as frontal face-neck terminus / limit-point of head inclination. FORM: single nominal form (broken plural adhqan), no verbal forms, so no Form II/IV overlay to subtract. CONSTRUCTION: kharra li- + plural (17:107, 17:109) supplies the downward-collapse reading; ila + plural (36:8) supplies the upper-boundary reading — directionality belongs to the prepositions and governing verbs, not the root. CONTEXT: prostration/weeping/khushu' (Sura 17) vs. shackling/iqmah (36:8) supplies the humility-vs-obstinacy polarity. After subtracting these layers, the identical residue (chin as posture limit-point) remains in all three.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "36:8 is the only candidate for resistance: chins there are pushed UP, the apparent opposite of the falling-down usage in 17:107/109. But the root supplies the same referent in both; the opposed directions come from ila (collar's upper limit) vs. kharra li- (collapse onto), so 36:8 confirms rather than breaks the residue — the chin is precisely the line the collar must reach to prevent the bowing that 17:107/109 describe. No occurrence resists the proposed contribution.",
+  "competing_hypothesis": "That the root denotes the lower-face/jaw-beard region generally rather than the chin-point specifically. Internal evidence leans against it: 36:8 needs a precise boundary line (\"collars up to the adhqan\" as the exact height at which the head is locked), and the co-occurrence with a'naq in the same verse shows adhqan is the demarcated endpoint above the neck, not a diffuse facial region. With only three occurrences, though, the narrow-point vs. broader-region distinction cannot be fully adjudicated internally.",
+  "distinctiveness_note": "Distinct from the nearest body-part roots by internal contrast: 36:8 uses both أعناق (necks — where the collars sit) and أذقان (chins — the limit they reach), proving non-interchangeability with ع ن ق; and 17:107/109 say \"fall to the chins\" rather than the more generic prostration idioms with الوجه/سجّد alone, marking the specific lowest frontal point of the face rather than وجه (face as a whole) or جبهة-type forehead reference. The residue is non-empty, falsifiable (an occurrence requiring a diffuse jaw/beard or whole-face reading would break it), and not reducible to neck or face.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "Universal presence holds: 3/3 occurrences checked, all one nominal form, and the proposed residue (chin as frontal face-neck terminus and limit-point of head inclination) is demonstrably present in each after subtracting preposition, governing verb, and context; the sole apparent anomaly (36:8, upward instead of downward) resolves as construction-level directionality over the same root referent, and the verse's internal neck/chin contrast independently secures distinctiveness. Strength is MODERATE rather than STRONG only because the evidence base is minimal — three occurrences, one form, one construction type per cluster — so the finer claim (precise chin-point vs. broader lower-face region) rests on a single boundary usage (36:8) and would benefit from external comparanda the method forbids as evidence."
+ },
+ "adversarial_verification": {
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "root_buckwalter": "*qn",
+  "verdict": "PARTIALLY_SUPPORTED",
+  "failing_occurrences": [],
+  "notes": "All 3 confirmed occurrences use the noun الأذقان (\"the chins\"), form N. The ROOT residue \"the chin — frontal underside terminus of the face at the face/neck junction\" is demonstrably present in EVERY occurrence (17:107, 17:109, 36:8), so there is no refuting occurrence and the body-part sense is universal. Distinctiveness is strong: 36:8 explicitly contrasts أذقان (chins) with أعناق (necks, عنق), separating the root from its nearest body-part neighbor عنق/وجه. FALSIFIABLE via the core claim (any non-chin sense of أذقان would refute it). WHY PARTIAL, NOT SUPPORTED: the proposed contribution over-specifies by importing directional/pivot semantics — \"the body's pivot-point that marks the extreme limit of head inclination, downward (face to ground) or upward (head forced back)\" — that are NOT root-borne. In 17:107/109 the downward motion is contributed by CONSTRUCTION يَخِرُّونَ + سُجَّدًا (falling/prostration), and in 36:8 the upward restraint by الأغلال ... مُقْمَحُونَ (yoke/heads-forced-up). After subtracting construction/context as the layered method requires, the root residue reduces to bare \"chin\"; the directional framing is context, reverse-engineered from the only two attested scene-types across just 3 verses, which is why its distinctness-from-context and falsifiability are weak. Verdict: the underlying root contribution \"chin\" would be SUPPORTED (universal + distinctive), but the contribution AS STATED conflates residue with construction/context and is therefore only PARTIALLY_SUPPORTED. No occurrence fails the chin sense, hence failing_occurrences is empty."
+ },
+ "coverage_validation": {
+  "root": "*qn",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "17:107:17:3",
+   "disposition": "CONSISTENT",
+   "note": "yakhirruna li-l-adhqan sujjadan: they fall to the chins in prostration; the chin as the lowest frontal terminus of the face is exactly the limit-line the falling reaches."
+  },
+  {
+   "word_ref": "17:109:2:3",
+   "disposition": "CONSISTENT",
+   "note": "wa-yakhirruna li-l-adhqan yabkuna: same falling-to-the-chins referent, the chin marking the extreme downward inclination of the head."
+  },
+  {
+   "word_ref": "36:8:8:2",
+   "disposition": "CONSISTENT",
+   "note": "ila l-adhqan: collars reach up to the chins, the chin functioning as the upper bound that props the head back — the same terminal frontal point of the face."
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "WEAK",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PARTIAL",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}
