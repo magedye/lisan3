@@ -138,10 +138,74 @@ def validate_root_research_coverage(
         missing_word_refs=missing,
         unexpected_word_refs=unexpected,
         duplicate_word_refs=tuple(sorted(set(duplicates))),
-        exact_set_match=bool(expected) and not missing and not unexpected,
+        # COMPLETE requires BOTH exact confirmed-set equality AND zero duplicate
+        # researched refs: a duplicate must fail coverage even when set equality
+        # would otherwise hold (a repeated ref never counts as full "exactly once"
+        # coverage). verse_ref substitution stays impossible via word_ref
+        # granularity (a verse-level ref lands in ``unexpected``).
+        exact_set_match=bool(expected) and not missing and not unexpected and not duplicates,
         disputed_visible=tuple(visible["DISPUTED"]),
         unresolved_visible=tuple(visible["UNRESOLVED"]),
     )
+
+
+def merge_reconciliation(
+    dispositions: list[dict], reconciliation: list[dict]
+) -> tuple[list[dict], list[dict]]:
+    """Fold reconciliation finals over preliminary mapper dispositions WITHOUT
+    discarding the preliminary evidence (owner provenance-hardening).
+
+    Returns ``(final_dispositions, reconciliation_lineage)``:
+
+    - ``final_dispositions``: one entry per word_ref, sorted by word_ref. A
+      reconciled occurrence keeps its final disposition/note AND carries the
+      preserved ``preliminary_disposition`` / ``preliminary_note`` so its
+      original flagged state is never lost — even when reconciled to CONSISTENT.
+    - ``reconciliation_lineage``: durable per-reconciled-occurrence provenance
+      record (never a count): ``word_ref``, ``preliminary_disposition``,
+      ``preliminary_note``, ``final_disposition``, ``reconciliation_rationale``,
+      ``deep_analysis=True``.
+
+    A reconciliation entry is applied only when its word_ref is already a mapped
+    disposition and it carries a ``final`` (never invents an occurrence).
+    """
+    preliminary = {d["word_ref"]: dict(d) for d in dispositions}
+    final = {d["word_ref"]: dict(d) for d in dispositions}
+    lineage: list[dict] = []
+    for r in reconciliation:
+        ref = r.get("word_ref")
+        if ref not in final or not r.get("final"):
+            continue
+        prev = preliminary[ref]
+        final[ref] = {
+            "word_ref": ref,
+            "disposition": r["final"],
+            "note": r.get("rationale") or prev.get("note"),
+            "deep_analysis": True,
+            "preliminary_disposition": prev.get("disposition"),
+            "preliminary_note": prev.get("note"),
+            "reconciliation_rationale": r.get("rationale"),
+        }
+        lineage.append({
+            "word_ref": ref,
+            "preliminary_disposition": prev.get("disposition"),
+            "preliminary_note": prev.get("note"),
+            "final_disposition": r["final"],
+            "reconciliation_rationale": r.get("rationale"),
+            "deep_analysis": True,
+        })
+    final_list = sorted(final.values(), key=lambda d: d["word_ref"])
+    return final_list, lineage
+
+
+def upsert_coverage_batch(ledger: dict, batch_id: str, roots: list[str]) -> dict:
+    """Idempotent coverage-batch log: replaying the same ``batch_id`` replaces the
+    existing entry instead of appending a duplicate (also self-heals any prior
+    duplicate entries for that id). Root-level idempotency is unaffected."""
+    batches = ledger.setdefault("coverage_batches", [])
+    batches[:] = [b for b in batches if b.get("batch_id") != batch_id]
+    batches.append({"batch_id": batch_id, "roots": list(roots)})
+    return ledger
 
 
 def finalize_root_disposition(
@@ -162,11 +226,22 @@ def finalize_root_disposition(
     discover_result = j.get("result")
 
     completeness = COMPLETENESS_COMPLETE if coverage.exact_set_match else COMPLETENESS_PENDING
-    unreconciled = sorted(set(final_resistant) | set(final_uncertain))
+    # Root semantic unity is NON-NEGOTIABLE and cross-lens: an occurrence held
+    # unreconciled by ANY lens blocks universal presence. Besides coverage-mapping
+    # RESISTANT/STRUCTURAL_UNCERTAINTY, this includes the discovery pass's own
+    # inconsistent_refs — occurrences the internal discoverer could not reconcile
+    # to the candidate. An UNRESOLVED discovery result likewise cannot yield
+    # universal presence: a root whose single unifying contribution was never
+    # established is not "present, reconciled, in every occurrence". (Without this
+    # a root could be simultaneously research_state=UNRESOLVED and
+    # universal_presence_holds=True — a contradiction that violated root unity.)
+    discover_inconsistent = list((j.get("presence") or {}).get("inconsistent_refs") or [])
+    unreconciled = sorted(set(final_resistant) | set(final_uncertain) | set(discover_inconsistent))
     universal = (
         coverage.exact_set_match
         and not unreconciled
         and verdict_val == "SUPPORTED"
+        and discover_result != "UNRESOLVED"
     )
     independent_verification = "PASSED" if universal else (
         "FAILED" if verdict_val == "REFUTED" else "PARTIAL"

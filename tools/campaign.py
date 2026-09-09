@@ -47,6 +47,8 @@ from backend.domain.services.research_coverage import (
     confirmed_word_refs,
     finalize_root_disposition,
     fold_root_into_ledger,
+    merge_reconciliation,
+    upsert_coverage_batch,
     validate_root_research_coverage,
 )
 from backend.infrastructure.database import SQLALCHEMY_DATABASE_URL, Base
@@ -389,19 +391,15 @@ def cmd_persist_coverage(args):
         occ = uni[root].confirmed_occurrences
         judgment = research[root].get("judgment") or {}
         verdict = research[root].get("verdict") or {}
-        dispositions = {d["word_ref"]: d for d in (item.get("dispositions") or [])}
-        # Apply resistant-case deep-analysis finals over the base mapping.
-        reconciliation = item.get("reconciliation") or []
-        for r in reconciliation:
-            ref = r.get("word_ref")
-            if ref in dispositions and r.get("final"):
-                dispositions[ref] = {
-                    "word_ref": ref,
-                    "disposition": r["final"],
-                    "note": r.get("rationale") or dispositions[ref].get("note"),
-                    "deep_analysis": True,
-                }
-        researched_refs = [d["word_ref"] for d in (item.get("dispositions") or [])]
+        # Apply resistant-case deep-analysis finals over the base mapping while
+        # PRESERVING the preliminary mapper disposition + note (provenance).
+        base_dispositions = item.get("dispositions") or []
+        final_dispositions, reconciliation_lineage = merge_reconciliation(
+            base_dispositions, item.get("reconciliation") or [])
+        dispositions = {d["word_ref"]: d for d in final_dispositions}
+        # Exact-set validation runs on the mapped word_refs (pre-merge list so a
+        # duplicated researched ref is still caught by the validator).
+        researched_refs = [d["word_ref"] for d in base_dispositions]
         validation = validate_root_research_coverage(db, SNAP, root, researched_refs)
         final_resistant = sorted(r for r, d in dispositions.items()
                                  if d.get("disposition") == "RESISTANT")
@@ -421,8 +419,8 @@ def cmd_persist_coverage(args):
             "internal_discovery": judgment,
             "adversarial_verification": verdict,
             "coverage_validation": validation.as_dict(),
-            "occurrence_dispositions": sorted(dispositions.values(), key=lambda d: d["word_ref"]),
-            "resistant_deep_analysis": reconciliation,
+            "occurrence_dispositions": final_dispositions,
+            "resistant_deep_analysis": reconciliation_lineage,
             **disp,
         }
         (ROOT_ARTIFACTS / f"{safe_name(root)}.json").write_text(
@@ -451,8 +449,7 @@ def cmd_persist_coverage(args):
                         "completeness": disp["research_completeness"],
                         "universal": disp["universal_presence_holds"],
                         "resistant": len(final_resistant)})
-    ledger.setdefault("coverage_batches", []).append(
-        {"batch_id": args.batch, "roots": [s["root"] for s in summary]})
+    upsert_coverage_batch(ledger, args.batch, [s["root"] for s in summary])
     save_ledger(ledger)
     print(json.dumps(summary, indent=1))
     db.close()
