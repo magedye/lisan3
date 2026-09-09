@@ -1,0 +1,78 @@
+{
+ "root_buckwalter": "Aff",
+ "root_arabic": "ا ف ف",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch05-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "A vocalized burst of aversion/displeasure — the minimal audible ejaculation by which a speaker vents exasperation, irritation, or repugnance toward the person or thing it is aimed at.",
+ "internal_discovery": {
+  "root_buckwalter": "Aff",
+  "root_arabic": "ا ف ف",
+  "candidate_root_contribution": "A vocalized burst of aversion/displeasure — the minimal audible ejaculation by which a speaker vents exasperation, irritation, or repugnance toward the person or thing it is aimed at.",
+  "plain_explanation": "The root surfaces in all three occurrences as one and the same lexical interjection, أُفٍّ (\"uff\"), an exclamatory noise of displeasure. In 17:23 the son is forbidden to so much as say أُفٍّ to aged parents (\"فَلَا تَقُل لَّهُمَآ أُفٍّ\") — here the utterance is the smallest conceivable audible sign of impatience/annoyance, set in a chain with تَنْهَرْهُمَا (rebuking) as an escalation of the same aversion. In 21:67 Abraham hurls \"أُفٍّ لَّكُمْ وَلِمَا تَعْبُدُونَ مِن دُونِ ٱللَّهِ\" at his people and their idols — the same interjection venting disgust/repudiation. In 46:17 the impious son answers his parents \"أُفٍّ لَّكُمَآ أَتَعِدَانِنِىٓ...\" — venting exasperated rejection at their warning of resurrection. Across mild filial impatience (17:23), prophetic contempt (21:67), and rebellious exasperation (46:17), the invariant the root itself supplies is the spontaneous expulsion of displeasure as a cry — not a proposition, not a verb of action, but an affect-laden exclamation of aversion.",
+  "layer_separation_note": "FORM: uniform — all 3 are tag \"N\", the frozen interjection/ism أُفٍّ (with tanwīn); no verb, participle, or productive verbal-noun derivation to subtract. CONSTRUCTION: near-uniform — the interjection optionally governs a dative لـ naming the target of displeasure (لَّهُمَآ 17:23, لَّكُمْ 21:67, لَّكُمَآ 46:17); the لـ supplies the 'directed-at' vector, not the aversion itself. PARTICIPANTS: vary — target is parents (17:23, 46:17) or a people together with their false gods (21:67); speaker is a hypothetical child, a rebellious son, or the prophet Abraham. CONTEXT: varies — filial-piety ethics (17:23), anti-idolatry rebuke (21:67), denial-of-resurrection narrative (46:17). Subtracting the (invariant) interjectional form, the (near-invariant) dative frame, the varying participants, and the varying context leaves exactly one residue: the vocalized venting of aversion/displeasure.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "17:23 is the hardest case because the displeasure there is minimal and directed at beloved, honored parents — closer to weary impatience than to the contempt seen in 21:67/46:17. It reconciles cleanly: the verse works precisely by treating أُفٍّ as the smallest possible audible expression of displeasure (its prohibition is a fortiori — if even that tiny vent is barred, harsher speech certainly is). Far from breaking the core, it fixes the lower bound of the same aversion-venting residue.",
+  "competing_hypothesis": "The strongest alternative core is \"contempt / repudiation of the addressee,\" which fits 21:67 (idolaters) and 46:17 (rejecting resurrection) well. Internal evidence arbitrates against it: 17:23 forbids أُفٍّ toward parents in a context of mandated iḥsān (kindness), where the speaker is not expressing contempt but momentary impatience. Only the broader reading — \"vented displeasure/aversion of variable intensity, from mild irritation to disgust\" — covers all three; contempt is one high-intensity instance, not the invariant.",
+  "distinctiveness_note": "Nearest neighbors: (1) نهر n-h-r \"rebuke/repel,\" which appears in the very same verse (17:23 وَلَا تَنْهَرْهُمَا) — نهر is a transitive verbal act of driving-back/scolding, whereas أُفٍّ is a non-propositional interjection venting inner displeasure, showing the two are lexically distinct even in one breath; (2) غضب gh-ḍ-b \"wrath,\" a sustained affective state, versus أُفٍّ as a momentary spontaneous ejaculation; (3) كره k-r-h \"to find hateful/aversion,\" an evaluative attitude rather than an audible cry. Falsifiability: if any occurrence used أُفٍّ in a neutral, approving, or purely descriptive frame (e.g., as a name, or expressing satisfaction), the aversion-venting core would be falsified. No such case exists in the data.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "STRONG",
+  "rationale": "A single non-empty contribution — the vocalized venting of aversion/displeasure — is surface-recoverable in every one of the 3 occurrences. The root manifests as exactly one lexeme (the interjection أُفٍّ) in one form family, with a near-uniform dative construction, so there is minimal derivational or constructional noise to strip away. The direction is determinate (aversion expelled outward toward a named target) and sharply distinct from neighboring roots for rebuking (نهر), wrath (غضب), and disliking (كره), one of which sits adjacently in 17:23 without merging. The only internal variation is intensity — mild impatience (17:23) to contempt (21:67, 46:17) — which is a scalar range within the same affect, not a break in the core, and is resolved by the broader \"displeasure\" reading over the narrower \"contempt\" competitor. No occurrence resists the residue; hence clean universal presence and STRONG strength."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "Aff",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Refutation attempt failed to break the unity. All 3 occurrences are literally the identical lexical interjection أُفٍّ (packet form_inventory: single form N, count 3), each an affect-laden non-propositional cry venting displeasure at a target. 17:23 (filial impatience toward aged parents, escalated by تَنْهَرْهُمَا), 21:67 (Abraham's disgust/repudiation of people+idols), 46:17 (son's exasperated rejection of parents' resurrection warning) differ only in intensity and target, not in the root-supplied invariant. Hardest angle tried was over-breadth: rejected because the candidate is tethered specifically to aversion/displeasure, not any emotion, and excludes verbs of action and approval/summons particles. Neighbor-root contrast: discriminates cleanly from other interjection roots (approval, pain/lament, summons) and from any action-verb reading. Falsifiable via clear conditions (approval use, neutral address, verbal action) none of which occur. No semantic split or homonymy exists to exploit."
+ },
+ "coverage_validation": {
+  "root": "Aff",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "17:23:19:1",
+   "disposition": "CONSISTENT",
+   "note": "أُفٍّ in فَلَا تَقُل لَّهُمَآ أُفٍّ — the forbidden minimal audible cry of impatience/annoyance toward aged parents, chained with تَنْهَرْهُمَا as escalation; the affect-laden ejaculation of aversion is directly present."
+  },
+  {
+   "word_ref": "21:67:1:1",
+   "disposition": "CONSISTENT",
+   "note": "أُفٍّ لَّكُمْ hurled by Abraham at his people and their idols — the same exclamatory burst venting disgust/repudiation; candidate residue of vocalized aversion recovered."
+  },
+  {
+   "word_ref": "46:17:4:1",
+   "disposition": "CONSISTENT",
+   "note": "أُفٍّ لَّكُمَآ spoken by the impious son to his parents, venting exasperated rejection of their warning; the spontaneous cry of displeasure is exactly the invariant supplied by the root."
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "STRONG",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

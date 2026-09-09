@@ -1,0 +1,78 @@
+{
+ "root_buckwalter": "DjE",
+ "root_arabic": "ض ج ع",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch05-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "The settling of a body — specifically its side/trunk — down into a recumbent, lying-flat position against a supporting surface. The root supplies \"lying-down / reclining-of-the-body,\" and every attested form is the noun of place (maḍjaʿ), i.e. the locus at/on which that recumbency occurs.",
+ "internal_discovery": {
+  "root_buckwalter": "DjE",
+  "root_arabic": "ض ج ع",
+  "candidate_root_contribution": "The settling of a body — specifically its side/trunk — down into a recumbent, lying-flat position against a supporting surface. The root supplies \"lying-down / reclining-of-the-body,\" and every attested form is the noun of place (maḍjaʿ), i.e. the locus at/on which that recumbency occurs.",
+  "plain_explanation": "All 3 occurrences are morphologically identical: the maf'al noun-of-place from ض ج ع (singular maḍjaʿ, plural maḍājiʿ), tagged N. Once the noun-of-place morphology and the surrounding construction are subtracted, the constant left is the notion of the body being laid down / stretched out on its side upon a surface. (1) 32:16 \"tatajāfā junūbuhum ʿani l-maḍājiʿ\" — \"their SIDES (junūb) shrink away from the lying-places\": the pairing of junūb (sides) with maḍājiʿ makes the bodily posture explicit — these are the surfaces on which one lays one's side down (beds), and the worshippers pull their sides up off them for night prayer. (2) 4:34 \"wa-hjurūhunna fī l-maḍājiʿ\" — \"forsake them in the lying-places\": the marital beds/sleeping-surfaces where the body is laid down. (3) 3:154 \"la-baraza lladhīna kutiba ʿalayhimu l-qatlu ilā maḍājiʿihim\" — \"those for whom killing was decreed would have gone forth to their lying-places\": the spots on the ground where their bodies would come to lie (fall slain and stretched out). Across a devotional context (rising off the bed), a marital-legal context (the shared bed), and a battle/decree context (the place of falling dead), the invariant is one and the same: the surface/locus onto which the body is laid recumbent.",
+  "layer_separation_note": "FORM: all three are the maf'al noun-of-place (verbal notion \"lie down / recline\" → \"place where lying-down happens\"); the locative sense belongs to the pattern, not the root — the root only supplies the act of laying the body down. CONSTRUCTION varies and colors direction but is subtracted: ʿani l-maḍājiʿ (32:16) = separation/away-from; ilā maḍājiʿihim (3:154) = goal/toward; fī l-maḍājiʿ (4:34) = static locus/in. PARTICIPANTS subtracted: night-worshippers, slain warriors, wives. CONTEXT subtracted: piety/vigil, eschatological decree of death, marital discipline. What survives all three subtractions is the bare notion: a body laid down flat (on its side) against a surface, and by the pattern, the surface itself.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "3:154 (maḍājiʿihim, word_ref 3:154:62:1) is the hardest: here the \"lying-places\" are not beds of rest but the spots where the slain would fall dead. If the root meant \"rest\" or \"sleep,\" this would break. It reconciles cleanly under the recumbency reading: the maḍjaʿ is simply where the body comes to lie stretched out — whether in sleep or in death is supplied by context, not by the root. The bodily-lying-down invariant holds without forcing.",
+  "competing_hypothesis": "The strongest alternative core is \"rest / sleep\" (the maḍjaʿ as bed-of-repose). It fits 32:16 and 4:34 well, since both involve sleeping-surfaces. But internal evidence arbitrates against it: 3:154's maḍājiʿ are places of being slain, where no rest or sleep is intended — the men are laid down in death. Only the more abstract \"recumbency / body laid down on a surface\" covers all three, so the internal data selects the posture reading over the sleep reading. 32:16's explicit junūb (sides) further favors bodily-posture over mental-repose.",
+  "distinctiveness_note": "Nearest neighbors: نوم (n-w-m) = the sleep-state/loss of waking consciousness; رقد (r-q-d) = lying asleep/dormancy; هجع (h-j-ʿ) = resting/sleeping (esp. at night); فرش (f-r-sh) = the spread bedding-object itself. ض ج ع is distinct in denoting the physical act/state of laying the side and trunk down flat on a surface (posture/recumbency), independent of whether sleep or even life is present — hence it applies equally to a night-bed, a marital bed, and a death-spot, and it collocates with junūb (sides). It is not the mental sleep-state (نوم) nor the fabric bed-object (فرش). Falsifiability: if an occurrence used a ض ج ع form purely for the sleep/rest experience with no bodily-reclining-on-a-surface component (e.g. as a synonym for the mental state of sleep), or for a bed-object qua furniture with no laying-of-the-body sense, the recumbency-posture distinctiveness would be falsified.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "STRONG",
+  "rationale": "A single non-empty contribution — \"body laid down recumbent on a surface,\" realized as the noun-of-place maḍjaʿ — is surface-recoverable in every one of the 3 occurrences, all of which share one form-family (the maf'al locative). The direction is determinate (body onto surface, side laid flat), and it is sharply distinct from the sleep-state and bed-object neighbor roots. The hardest case (3:154, the slain going to their lying-places) does not require the sleep sense and in fact rules out the competing \"rest/sleep\" hypothesis, strengthening rather than weakening the recumbency core. No occurrence remains unreconciled; unity is clean and does not rest on strained metaphorical extension — 32:16's junūb collocation directly attests the bodily-posture anchor. Hence PREFERRED / STRONG."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "DjE",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Refutation sweep of all 3 occurrences — all are the identical maf'al noun-of-place maḍājiʿ (plural of maḍjaʿ), form N, from ض ج ع 'to lay one's side down / recline.' I hunted for a reading where the recumbency-locus notion is absent or forced.\\n\\n(1) 32:16 tatajāfā junūbuhum ʿani l-maḍājiʿ: strongest positive case — maḍājiʿ is explicitly co-selected with junūb (sides/flanks), which nails the root's side/trunk specificity. No failure.\\n\\n(2) 4:34 wa-hjurūhunna fī l-maḍājiʿ: the marital sleeping-surfaces where the body is laid; the whole force of the injunction (forsaking in bed) presupposes the lying-locus. No failure.\\n\\n(3) 3:154 ilā maḍājiʿihim — the HARDEST case. Here the maḍājiʿ are the fated spots where the slain would fall, so an adversary could argue the sense is 'appointed place of death/destiny' rather than physical recumbency, making the candidate saveable only by imagery. But this is not ad-hoc: the lexeme chosen is maḍjaʿ (place of lying), not maṣraʿ (place of falling) or manāyā (deaths); the recumbency image — the corpse laid out stretched on the ground — is precisely what does the semantic work, and classical exegesis reads it exactly so. The recumbency-locus is present, not contradicted. Resolves in the candidate's favor.\\n\\nNeighbor-root contrast: the contribution discriminates cleanly. rqd (raqada, lying asleep/dormant), nwm (nawm, sleep-state), frš (farsh, spreading/bedding as covering), and mhd (mahd, cradle/prepared bed) all differ — ض ج ع specifies the bodily act of laying the side/trunk down into recumbency, and every attestation is the LOCUS of that act (noun of place), not the state of sleep, the act of spreading, or the furniture qua covering. The 32:16 junūb pairing anchors this distinctiveness empirically.\\n\\nFalsifiability: clear failure condition = a maḍjaʿ used for a non-lying locus, or a form whose meaning is sleep-state/bedding-as-object rather than recumbency-place. No occurrence meets it. Caveat noted but not disqualifying: n=3 and a single lexeme/form, so the 'root supplies lying-down' inference rests entirely on the noun-of-place and is mildly underdetermined (no verbal attestation to cross-check); the unity is genuine but not hard-won since it is one word thrice. This does not rise to over-breadth — the contribution is narrow and each token confirms it. Verdict SUPPORTED."
+ },
+ "coverage_validation": {
+  "root": "DjE",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "32:16:4:2",
+   "disposition": "CONSISTENT",
+   "note": "al-maDAji' paired with junUbuhum (their SIDES shrink away from the lying-places) — the noun-of-place is explicitly the surface on which the body lays its side; recumbency residue fully present."
+  },
+  {
+   "word_ref": "3:154:62:1",
+   "disposition": "CONSISTENT",
+   "note": "'ilA maDAji'ihim' — the ground-spots where the slain would come to lie stretched out (la-baraza ... 'alayhimu l-qatlu). Locus of the body being laid recumbent; residue recoverable via the candidate's own place-of-falling logic."
+  },
+  {
+   "word_ref": "4:34:28:2",
+   "disposition": "CONSISTENT",
+   "note": "'wa-hjurUhunna fI l-maDAji'' — the marital beds/sleeping-surfaces where the body is laid down; noun-of-place with recumbency residue intact."
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "STRONG",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

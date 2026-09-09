@@ -1,0 +1,78 @@
+{
+ "root_buckwalter": "Ajj",
+ "root_arabic": "ا ج ج",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch05-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "The root marks water (a potable-substance) as carrying an intense, biting bitter-salt harshness — the quality of being so pungently briny that it repels consumption. It is the negative sensory pole of drinkable water: the property of being harsh/undrinkable rather than merely \"salt as a substance.\"",
+ "internal_discovery": {
+  "root_buckwalter": "Ajj",
+  "root_arabic": "ا ج ج",
+  "candidate_root_contribution": "The root marks water (a potable-substance) as carrying an intense, biting bitter-salt harshness — the quality of being so pungently briny that it repels consumption. It is the negative sensory pole of drinkable water: the property of being harsh/undrinkable rather than merely \"salt as a substance.\"",
+  "plain_explanation": "Every one of the three occurrences is the same lexeme أُجَاج (ujāj), all tagged form N, and all predicated of water. In 25:53:10:1 and 35:12:11:1 the word stands in an explicit antithetical pair: one sea is عَذْبٌ فُرَاتٌ (sweet, fresh) — in 35:12 further glossed سَآئِغٌ شَرَابُهُ (its drink slips down pleasantly) — and the other is مِلْحٌ أُجَاجٌ. Crucially أُجَاج is appended AFTER مِلْح (salt): the substance-word \"salt\" is already present, so أُجَاج is not supplying the bare fact of salt but intensifying/qualifying it as bitingly briny and undrinkable. In 56:70:4:1 the word appears alone, without مِلْح: \"if We willed We could have made it (the water they drink, from the preceding verse) أُجَاجًا, so why are you not grateful?\" Here أُجَاج by itself carries the whole load — spoiled, undrinkable brine set against the freshwater they actually receive. Across all three, subtracting the drinkable/fresh counterpart leaves one invariant: the root contributes the harsh bitter-salt quality that makes water unfit to drink.",
+  "layer_separation_note": "FORM: all three are the same nominal/adjectival form (QAC N), the pattern فُعَال describing an inherent quality; no verbs, participles, or contrasting derivatives exist to cross-check, so morphology adds only \"quality/property nominal\" — subtracting it leaves the quality itself. CONSTRUCTION: two tokens are attributive (مِلْحٌ أُجَاجٌ, adjective on the head noun \"salt\"); one is a predicative object of جَعَلَ (جَعَلْنَٰهُ أُجَاجًا, \"made it ujāj\") — subtracting the attribution-vs-predication frame leaves the same quality. PARTICIPANTS: the described entity is always water/sea (البحرين / البحران / the implied drinking-water of 56:68) — subtract to leave a substance-independent (within data, water-bound) sensory property. CONTEXT: all sit in sign-of-creation / gratitude discourse (تَأْكُلُونَ… تَشْكُرُونَ; فَلَوْلَا تَشْكُرُونَ) — this rhetorical framing is subtracted as context, not root meaning. Residue after all subtractions: biting bitter-salt undrinkable harshness of water.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "56:70:4:1 (جَعَلْنَٰهُ أُجَاجًا) is the hardest because it lacks the مِلْح (\"salt\") that anchors the sense in the other two, and because it is a predicate of جَعَلَ rather than an attribute — one could worry the meaning is being imported from the sister verses. It reconciles cleanly: the immediately preceding verses (56:68-69) speak of the fresh water they drink and its heaven-sent source, so أُجَاج stands as the antithetical spoiled/undrinkable outcome. That the word alone, without مِلْح, still denotes undrinkable brine actually strengthens the residue — it shows the harsh-briny-unfitness is carried by the root itself and not borrowed from the noun \"salt.\"",
+  "competing_hypothesis": "The strongest alternative is that the root simply means \"salty\" (the substance/quality of salt), with the fresh/salt contrast doing all the work. Internal evidence arbitrates against pure equivalence: in 25:53 and 35:12 the substance-word مِلْح (\"salt\") is already stated, and أُجَاج is added on top of it. If the root meant only \"salt,\" the pairing مِلْح أُجَاج would be redundant; its presence signals an intensifying/qualifying layer — bitter, burning, undrinkable brininess beyond plain salinity. 56:70's solitary أُجَاج confirms the root can carry \"undrinkable brine\" without leaning on مِلْح. So the data favor \"harsh bitter-salt unfitness\" over bare \"salty,\" though with only three tokens the exact conceptual weighting (saltiness-intensity vs. bitterness/burning) remains somewhat underdetermined.",
+  "distinctiveness_note": "Nearest semantic neighbors: مِلْح (m-l-H, the substance salt/salinity as such), عَذْب (E-*-b, sweet/palatable), فُرَات (f-r-t, sweet fresh drinkable water), and a general \"bitter\" root like مرّ (m-r-r). Ajj is distinct from مِلْح: مِلْح names the salt substance, whereas أُجَاج names the sensory harshness/undrinkable intensity layered onto it (hence مِلْح أُجَاج is non-redundant). It is the polar opposite of عَذْب/فُرَات/سَآئِغ (the drinkable-sweet cluster). Falsifiability: if a confirmed occurrence applied a derivative of Ajj to something sweet, pleasant, or freely drinkable — or used it purely to denote the salt substance with no harsh/repellent/undrinkable force — the proposed residue would be falsified.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "A single non-empty contribution — the biting bitter-salt undrinkable harshness of water — is surface-recoverable in all three occurrences without forcing, and it stands in a determinate, consistent direction (the negative pole against عَذْب/فُرَات/سَآئِغ). It is sharply distinguishable from the neighbor root مِلْح, since أُجَاج is stacked onto مِلْح in two of three cases and carries undrinkable-brine sense alone in the third, showing the residue belongs to the root rather than to \"salt.\" These features argue toward STRONG. I hold the rating at MODERATE rather than STRONG for two honest reasons: (1) the entire evidence base is one lexeme (أُجَاج) in one morphological form with no derivational variation, so the root's contribution cannot be triangulated across form-families — root and lexeme cannot be fully separated; and (2) the precise conceptual center is mildly underdetermined between \"intense saltiness\" and \"bitter/burning harshness,\" a distinction three water-bound tokens cannot settle. No occurrence is contradicted or absent, so none appears in inconsistent_refs, and the disposition is PREFERRED."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "Ajj",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Refutation attempt failed to break the unity. All 3 confirmed occurrences are the identical lexeme أُجَاج (form N), all predicated of water, all denoting the harsh, biting, bitter-salt quality that makes water undrinkable. 25:53:10:1 and 35:12:11:1 place it in explicit antithesis to عَذْبٌ فُرَاتٌ (fresh/sweet), and 35:12 glosses the fresh counterpart as سَآئِغٌ شَرَابُهُ (drink slips down pleasantly) — the drinkability axis is textually explicit. 56:70:4:1 has أُجَاجًا standing alone (no مِلْح) yet carries the same \"spoiled/undrinkable brine\" load against the freshwater actually given. Hardest case = 56:70, where absence of مِلْح raises the worry that أُجَاج might mean only generic \"undrinkable/bitter\" rather than \"salt-harsh\"; resolved by (a) classical lexical value of أُجَاج as intensely salty-bitter undrinkable water and (b) the two paired verses independently licensing the salt-harshness reading. DISTINCTIVENESS: cleanly discriminates against the nearest neighbor مِلْح (salt-as-substance) — decisively because in 25:53 and 35:12 مِلْح already supplies \"salt\" and أُجَاج is appended AFTER it, so it cannot be redundant substance-marking; it must be the intensifying harsh/undrinkable-quality pole. FALSIFIABILITY: clear failure condition (any occurrence of fresh/drinkable water, non-water, or bare salt-substance under this root); none met. CAVEAT (not disqualifying, not a failing occurrence): data is only 3 tokens of one lexeme in one form, so cross-form robustness is untestable and unity is partly a data artifact — but nothing within scope contradicts the candidate. No genuine failing occurrences found; verdict SUPPORTED."
+ },
+ "coverage_validation": {
+  "root": "Ajj",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "25:53:10:1",
+   "disposition": "CONSISTENT",
+   "note": "أُجَاجٌ appended after مِلْحٌ and set antithetically against عَذْبٌ فُرَاتٌ (sweet/fresh); it qualifies the salt-water as bitingly briny/undrinkable — candidate residue (harsh undrinkable bitter-salt quality) present."
+  },
+  {
+   "word_ref": "35:12:11:1",
+   "disposition": "CONSISTENT",
+   "note": "Same pairing: مِلْحٌ أُجَاجٌ opposed to عَذْبٌ فُرَاتٌ سَآئِغٌ شَرَابُهُ (drink slips down pleasantly); أُجَاج marks the harsh undrinkable pole — residue recoverable."
+  },
+  {
+   "word_ref": "56:70:4:1",
+   "disposition": "CONSISTENT",
+   "note": "جَعَلْنَٰهُ أُجَاجًا — the drinking water made spoiled/briny/undrinkable, standing alone yet carrying the full harsh bitter-salt quality against the fresh water actually received; residue present."
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

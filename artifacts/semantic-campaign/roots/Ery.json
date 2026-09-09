@@ -1,0 +1,78 @@
+{
+ "root_buckwalter": "Ery",
+ "root_arabic": "ع ر ي",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch05-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "The state of being denuded / without a covering — bareness: the absence of a concealing or sheltering layer that would normally overlie a surface (a body, a stretch of ground).",
+ "internal_discovery": {
+  "root_buckwalter": "Ery",
+  "root_arabic": "ع ر ي",
+  "candidate_root_contribution": "The state of being denuded / without a covering — bareness: the absence of a concealing or sheltering layer that would normally overlie a surface (a body, a stretch of ground).",
+  "plain_explanation": "Three occurrences, two lexemes. (1) 20:118 تَعْرَىٰ (form I verb, of Adam in the garden): \"you will neither go hungry therein nor be uncovered\" — the residue is bodily bareness, lacking clothing that covers. (2) 37:145 and (3) 68:49 بِٱلْعَرَآءِ (verbal noun, of Jonah cast ashore): \"We cast him onto al-'arā'\" — the open, bare tract of ground, land denuded of vegetation and shelter. Across both lexemes the invariant left after subtracting form and context is one thing: a surface stripped of / lacking the covering that would normally overlie it. For the body that covering is clothing (nakedness); for the land it is vegetation/shelter (barren openness). The concept is identical, only the substrate differs.",
+  "layer_separation_note": "Subtracted layers: (a) FORM — تَعْرَىٰ is form-I imperfect encoding the STATE/becoming of the subject (\"to be/come to be bare\"); العَرَآء is a verbal noun naming the bare THING/place. Neither the eventive-state nor the nominalized-locus is root content; both host the same \"bareness\" residue. (b) CONSTRUCTION — بِٱلْعَرَآءِ: the preposition bi- supplies a locative \"at/on the bare place\"; the negation لَا in 20:118 supplies \"not-bare.\" These framing vectors are not root content. (c) PARTICIPANTS — Adam's body vs. Jonah's landing-ground; the differing substrate (body vs. terrain) is participant/collocation, not root. (d) CONTEXT — Edenic promise vs. eschatological/narrative deliverance-and-rebuke; irrelevant to the residue. Residue after subtraction = \"denuded of covering / bare.\"",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "The two العَرَآء occurrences (37:145, 68:49) apply the root to LAND, not a body, which could look like a different sense (\"open shore/plain\") than nakedness. It reconciles cleanly: al-'arā' is precisely the ground \"naked\" of vegetation and shelter — bareness of terrain — the same denuded-of-covering residue applied to a different surface. No form- or context-forcing is needed; both readings are surface-recoverable as bareness.",
+  "competing_hypothesis": "Strongest alternative: the core is \"exposure to view / openness\" (being laid open to sight) rather than \"lack of covering.\" It covers all three (a naked person is exposed; al-'arā' is open ground). Internal arbitration favors bareness: al-'arā' foregrounds absence of shelter/vegetation (Jonah is sick/blameworthy on barren ground), not being-seen; and 20:118 pairs تَعْرَى with تَجُوع (hunger) — both are privations of a basic bodily provision (food, covering), pointing to \"lack of covering\" over \"visibility.\" Exposure-to-view is a downstream consequence of bareness, not the invariant itself.",
+  "distinctiveness_note": "Distinct from ك ش ف (k-sh-f, to uncover/remove a cover) and ب د و / ظ ه ر (b-d-w, Z-h-r, to appear/become manifest): those name the ACT of removing a covering or the RESULT of becoming visible, whereas ع ر ي names the resulting STATE of being bare/without covering, agnostic to whether anyone removed it or sees it. It is also distinct from ف ض ح (f-D-H, disgraceful exposure), which adds shame; ع ر ي is neutral physical/spatial bareness. Falsifiability: if a confirmed ع ر ي occurrence denoted the act of stripping a cover off something (leaving the agent/action foregrounded) or denoted becoming-visible without any implication of a surface left bare, the \"state-of-bareness\" invariant would fail.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "STRONG",
+  "rationale": "A single non-empty residue — \"denuded of / lacking a covering; bareness\" — is surface-recoverable in every one of the 3 occurrences without forcing. The verb تَعْرَى is bodily bareness (nakedness); al-'arā' (twice) is terrain bareness (open, shelterless ground). The extension from body to land is not a stretched metaphor but the identical concept over different substrates, internally bridged by the shared privation notion (in 20:118 bareness is paired with hunger as basic privations). Direction is determinate (absence of covering, not its addition), and the root is sharply distinct from its uncover-act (k-sh-f) and become-visible (b-d-w/Z-h-r) neighbors. No occurrence resists reconciliation; presence is clean and universal across all 3, warranting STRONG."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "Ery",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Refutation attempt failed to break the candidate; all 3 occurrences fit tightly. (1) 20:118 تَعْرَىٰ, paired with تَجُوعَ, is bodily bareness = absence of covering clothing — direct fit. (2) 37:145 and (3) 68:49 بِٱلْعَرَآءِ (identical lexeme/context, Jonah cast ashore) denote the open bare tract, ground stripped of vegetation/shelter — the concealing/sheltering layer that would normally overlie it is absent. Hardest case: the verb(body)/noun(land) two-lexeme split, which could look like homonymy. But al-'arā' lexically means the tract LACKING trees/buildings/screening, so the invariant 'surface without its normal overlying cover' is identical across both lexemes — only the substrate (clothing vs. vegetation/shelter) differs. No ad-hoc/circular rescue required. Distinctiveness holds: the contribution discriminates against neighbor senses that DO NOT appear here — عور (visual defect/exposed flaw), عرو/عارية (to befall / a borrowed loan-item). Falsifiable: any occurrence meaning 'loan,' 'befall,' or 'defect' would break it; none present. Two lexemes, one concept, no genuine semantic split."
+ },
+ "coverage_validation": {
+  "root": "Ery",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "20:118:7:1",
+   "disposition": "CONSISTENT",
+   "note": "تَعْرَىٰ paired with تَجُوعَ ('go hungry'): 'you will not be uncovered' = bodily bareness, lacking the clothing that would normally cover the body. Candidate residue (surface stripped of its covering) directly present."
+  },
+  {
+   "word_ref": "37:145:2:3",
+   "disposition": "CONSISTENT",
+   "note": "بِٱلْعَرَآءِ in فَنَبَذْنَٰهُ بِٱلْعَرَآءِ — Jonah cast onto the open bare tract, land denuded of vegetation/shelter. Same denuded-surface residue, substrate = ground rather than body."
+  },
+  {
+   "word_ref": "68:49:8:3",
+   "disposition": "CONSISTENT",
+   "note": "بِٱلْعَرَآءِ in لَنُبِذَ بِٱلْعَرَآءِ — parallel to 37:145; the bare, sheltering-less open ground. Candidate residue recoverable."
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "STRONG",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

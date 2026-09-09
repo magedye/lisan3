@@ -408,3 +408,19 @@ def test_18_discovery_inconsistent_ref_blocks_universal_and_is_reported(db):
     assert disp["universal_presence_holds"] is False
     assert "3:5:2:1" in disp["unreconciled_occurrences"]
     assert disp["unreconciled_count"] == 1
+
+
+def test_19_safe_name_is_case_insensitive_collision_safe():
+    # Buckwalter uses letter case to distinguish letters (S=ص vs s=س, D=ض vs d=د,
+    # T=ط vs t=ت, Z=ظ vs z=ز, H=ح vs h=ه). On a case-insensitive filesystem two
+    # such roots must NOT share an artifact filename (the swm/Swm data-loss bug).
+    from tools.campaign import safe_name
+    for upper, lower in [("Swm", "swm"), ("Dll", "dll"), ("SbH", "sbH"),
+                         ("HSn", "Hsn"), ("Trq", "trq"), ("Zll", "zll")]:
+        assert safe_name(upper).lower() != safe_name(lower).lower(), (upper, lower)
+    # Deterministic + stable for the safe (non-colliding) letters A/E and symbols.
+    assert safe_name("Aty") == "Aty"
+    assert safe_name("qwm") == "qwm"
+    assert safe_name("w*r") == "w_2A_r"     # FS-illegal '*' still escaped
+    assert safe_name("Swm") == "_53_wm"      # homograph 'S' escaped, distinct from swm
+    assert safe_name("swm") == "swm"

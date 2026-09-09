@@ -1,0 +1,78 @@
+{
+ "root_buckwalter": "Ass",
+ "root_arabic": "ا س س",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch05-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "The load-bearing GROUNDING BASE — the invariant is the notion of a supporting foundation/bottom-set upon which a raised structure is grounded and from which it takes its stability. The root supplies specifically the base-that-underlies-and-supports, not the edifice itself and not the mere act of building.",
+ "internal_discovery": {
+  "root_buckwalter": "Ass",
+  "root_arabic": "ا س س",
+  "candidate_root_contribution": "The load-bearing GROUNDING BASE — the invariant is the notion of a supporting foundation/bottom-set upon which a raised structure is grounded and from which it takes its stability. The root supplies specifically the base-that-underlies-and-supports, not the edifice itself and not the mere act of building.",
+  "plain_explanation": "The root occurs only in one form-family here: the Form II verb أسّس (\"to found / lay the base of\"), 3 times, all in Surah 9:108–109. In 9:109 the same verb is repeated in explicit antithesis: أفمن أسّس بُنيانه على تقوى ... أم من أسّس بُنيانه على شفا جُرُف هار — \"is he who FOUNDED his building upon God-consciousness ... or he who FOUNDED his building upon the brink of a crumbling cliff?\" Here the root's contribution is isolated with unusual clarity because the OBJECT of the verb is بُنيان (the built structure, root b-n-y) and the verb أسّس names the distinct act of setting that structure's supporting BASE. The عَلَى-phrase names WHAT the base rests on (firm taqwā vs. an undercut cliff-edge that then collapses, فانهار به), and the whole point of the contrast is the quality of the grounding-base: a sound base holds, an unsound base gives way. The passive at 9:108, لمسجدٌ أُسِّسَ على التقوى من أول يوم (\"a mosque whose base was laid upon God-consciousness from the very first day\"), shows the same residue under voice-change: a structure is grounded upon a supporting base from its origin. Across all three, subtract morphology and only the grounding-base concept remains constant.",
+  "layer_separation_note": "(a) FORM: Form II (D-stem) is factitive/causative — it turns the base-notion into the transitive act \"to provide/set a base for, to found.\" Passive أُسِّسَ (9:108) is the same act with the founder demoted; active أسّس (9:109 ×2) foregrounds the founder. Subtracting the D-stem leaves the bare base-concept, not the causation. (b) CONSTRUCTION: every occurrence takes عَلَى + X, contributing a 'resting-upon' vector that specifies the substrate of the base (taqwā / cliff-edge). This 'upon' relation is supplied by the preposition, NOT by the root; the root supplies the base that is placed upon it. (c) PARTICIPANTS: subjects are a human builder (9:109) or unnamed/divine agency (passive, 9:108); objects are مسجد / بُنيان. These vary and are subtracted. (d) CONTEXT: polemical-parenesis about the mosque of Ḍirār vs. a mosque founded on taqwā — an evaluative frame that supplies the good/bad valuation of the base, not the base-concept itself. Residue after all subtraction: the supporting foundation-base.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "The passive 9:108:6:1 (أُسِّسَ على التقوى من أول يوم) is the hardest, because the added phrase مِن أول يوم (\"from the first day\") could tempt a reading of the root as \"to begin/originate.\" But it reconciles cleanly: the root still denotes the base-laying event; \"from the first day\" is a temporal adjunct locating WHEN the base was laid, and the structure named (مسجد) still stands ON that base (على التقوى). The originative flavor is contributed by the temporal phrase plus the intrinsic once-for-all nature of foundation-laying, not by the root, which retains its grounding-base sense identically to the active pair in 9:109.",
+  "competing_hypothesis": "The strongest alternative core is \"to originate / begin / establish-at-the-start\" (an inchoative-origin reading, drawing on من أول يوم). Internal evidence arbitrates against it: in 9:109 the verb's object is explicitly بُنيان and the entire rhetorical contrast turns on the soundness of the SUBSTRATE the thing rests upon (على تقوى vs. على شفا جُرُف هار → فانهار), which is a stability/support notion, not a temporal-origin notion. A pure \"begin\" sense cannot explain why the collapse (انهار) is the decisive outcome; only a base/support sense predicts that the quality of what-lies-beneath determines whether the structure stands or falls. Thus the base-grounding hypothesis covers the data and the origin hypothesis does not.",
+  "distinctiveness_note": "Nearest semantic neighbors: (1) ب ن ي (bny, \"to build the raised edifice\") — co-occurs as the very object بُنيان in 9:109, proving the roots are complementary not identical: Ass sets the underlying base, bny raises the structure upon it. (2) ق و م (qwm, \"to stand/erect, make stand upright\") — appears in 9:108 (تَقُوم فيه) for standing/erectness, whereas Ass is the horizontal bottom-set, not the vertical standing. (3) the collapse فانهار / هار — names the FAILURE of grounding, the antonymic outcome, not the grounding act. Falsifiability condition: if a confirmed occurrence used ا س س to denote the raised superstructure itself, or a purely temporal beginning with no supporting-base relation, or the act of building-up (rather than base-laying), the grounding-base residue would be falsified. No such occurrence exists in the data.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "STRONG",
+  "rationale": "A single non-empty contribution — the load-bearing grounding base upon which a structure rests — is surface-recoverable in all 3 occurrences without forcing. The corpus is uniform in form (Form II أسّس) and construction (عَلَى + substrate), and 9:109 provides an internally-attested minimal pair that isolates the residue from its neighbors: the same verb, the same object بُنيان, differing only in the quality of the base, with collapse (انهار) as the diagnostic outcome — this directly evidences a support/foundation semantics rather than a temporal-origin or edifice semantics. The passive/active voice alternation (9:108 vs 9:109) is fully explained by layer-subtraction and leaves the residue intact. Direction is determinate (base underlies and supports the built thing) and the root is sharply distinct from its co-occurring neighbor bny (edifice) and qwm (standing). No occurrence is unreconciled; inconsistent_refs is empty. Hence PREFERRED / STRONG."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "Ass",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Adversarial sweep of all 3 occurrences (all Form II أسّس, clustered in 9:108-109) found no genuine failing occurrence. 9:108:6:1 (passive أُسِّس: mosque's base laid upon taqwā), 9:109:2:1 (أسّس بنيانه على تقوى), and 9:109:12:1 (أسّس بنيانه على شفا جرف هار → فانهار به) all express the identical residue: the act of setting the supporting base of a raised structure, with the على-phrase naming what that base rests on and the base's quality determining whether the structure holds or collapses. The verb is monosemous across all three — no homonymy, no semantic split, no metaphorical drift into a foreign sense; the candidate is not saved by circular reasoning. Hardest test was breadth/over-elasticity: is 'grounding base' so vague it fits anything? Resolved decisively by the in-text antithesis and, above all, by the fact that the nearest-neighbor root b-n-y (بنى/بنيان 'build/edifice') appears as the grammatical OBJECT (بنيانه) in the same clauses — the text itself partitions the labor (أسّس = lay the base; بنيان = the built edifice; على = what it rests on), so the 'base-not-edifice, not-the-act-of-building' claim is demonstrated rather than merely asserted. Distinctiveness thus holds against b-n-y and against q-w-m/رفع (erect/raise). Only real limitation: corpus is minimal (3 tokens, single form, single passage), which caps how hard breadth can be stress-tested — but the contribution is constrained rather than elastic and the antithesis actively confirms it, so this is a sample-size caveat, not a failing occurrence. Unity is distinct and falsifiable with no occurrence meeting the failure condition."
+ },
+ "coverage_validation": {
+  "root": "Ass",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "9:108:6:1",
+   "disposition": "CONSISTENT",
+   "note": "Passive أُسِّسَ عَلَى ٱلتَّقْوَىٰ مِنْ أَوَّلِ يَوْمٍ — the mosque's supporting base was laid upon taqwā from the first day; grounding-base residue fully present under voice-change."
+  },
+  {
+   "word_ref": "9:109:12:1",
+   "disposition": "CONSISTENT",
+   "note": "Second antithesis limb: أَسَّسَ بُنْيَٰنَهُۥ عَلَىٰ شَفَا جُرُفٍ هَارٍ — founding the structure's base on an undercut crumbling cliff-edge; the grounding-base concept is explicit (فَٱنْهَارَ بِهِۦ shows the unsound base gives way)."
+  },
+  {
+   "word_ref": "9:109:2:1",
+   "disposition": "CONSISTENT",
+   "note": "First antithesis limb: أَسَّسَ بُنْيَٰنَهُۥ عَلَىٰ تَقْوَىٰ — laying the built structure's supporting base upon God-consciousness; object بُنيان (b-n-y) is the edifice, أسّس supplies the distinct base-that-underlies residue."
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "STRONG",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

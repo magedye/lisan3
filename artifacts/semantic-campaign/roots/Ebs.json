@@ -1,0 +1,78 @@
+{
+ "root_buckwalter": "Ebs",
+ "root_arabic": "ع ب س",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch05-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "The contraction/drawing-together of the face into a scowl — a hardening of the countenance into a grim, forbidding, displeased aspect (the \"frowning-grimness\" residue).",
+ "internal_discovery": {
+  "root_buckwalter": "Ebs",
+  "root_arabic": "ع ب س",
+  "candidate_root_contribution": "The contraction/drawing-together of the face into a scowl — a hardening of the countenance into a grim, forbidding, displeased aspect (the \"frowning-grimness\" residue).",
+  "plain_explanation": "Across all three occurrences the root supplies one invariant: the countenance drawn tight into a grim, forbidding scowl. (1) 74:22:2:1 ثُمَّ عَبَسَ وَبَسَرَ — a human agent \"scowled and glared\"; عَبَسَ is the facial contraction itself, reinforced by its pairing with بَسَرَ (glaring/grimacing look). (2) 80:1:1:1 عَبَسَ وَتَوَلَّىٰ — again a human \"scowled and turned away\"; here the root delivers the same facial scowl, while the distinct act of aversion is carried by the separate verb تَوَلَّى (not by ع ب س). (3) 76:10:6:1 يَوْمًا عَبُوسًا قَمْطَرِيرًا — the intensive adjective عَبُوس (\"scowling/grim\") is predicated of a Day; a Day has no literal face, so the facial-scowl residue is transferred metaphorically to characterize the Day as grim/forbidding in aspect, reinforced by قَمْطَرِير (distressful/harsh). The same grim-forbidding contraction underlies the verbal act (forms 1-2) and the attributive quality (form 3).",
+  "layer_separation_note": "Subtracting layers: (a) FORM — Form-I verb عَبَسَ names the act of scowling (74:22, 80:1); the ADJ/intensive عَبُوس names the enduring quality \"grim/scowling\" (76:10); the root residue (facial-grim contraction) is constant across verb vs. adjective. (b) CONSTRUCTION — 74:22 and 80:1 are bare intransitive verbs coordinated with a second verb (بَسَرَ / تَوَلَّى); 76:10 is an attributive adjective modifying يَوْمًا. These frames add coordination and attribution but not the core meaning. (c) PARTICIPANTS — subject is a human displeased agent in 74:22 (a rejecter) and 80:1 (the one who turned from the blind man); in 76:10 the bearer is a Day, forcing metaphorical transfer of the facial residue. (d) CONTEXT — polemical/narrative (74, 80) vs. eschatological (76); context supplies the target of grimness (rejection vs. a dreaded Day) but not the residue. What remains after subtraction in every case: the grim, forbidding contraction of aspect.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "76:10:6:1 (يَوْمًا عَبُوسًا) is hardest: a Day cannot literally contract its face. It reconciles by internally-attested metaphorical extension — عَبُوس is the intensive adjectival form of the very scowling act seen verbally in 74:22 and 80:1, and here transfers the \"grim/forbidding countenance\" to the Day, a transfer reinforced by the paired harshness word قَمْطَرِير. The bridge (facial grimness → grim aspect of an entity) is supported by the shared root-form and does not require external lexicon.",
+  "competing_hypothesis": "The strongest alternative core is \"displeasure/aversion\" (an emotional/behavioral residue rather than a physical-facial one). Internal evidence arbitrates against it: in 80:1 the aversive act (\"turned away\") is carried by a separate coordinated verb تَوَلَّى, showing ع ب س is NOT itself the turning-away/aversion but the facial contraction preceding it; likewise in 74:22 it pairs with بَسَرَ, another countenance/look verb, keeping the meaning on the face rather than on abstract emotion. The physical facial-grimness reading is thus more surface-anchored, with displeasure being a downstream implication rather than the residue.",
+  "distinctiveness_note": "Nearest neighbors: بَسَرَ (b-s-r, glaring/grimacing look — co-occurs in 74:22, denotes the hostile stare rather than the facial contraction); قَطَبَ (q-T-b, knitting the brows); كَلَحَ (k-l-H, grimacing with drawn-back lips); and the aversion roots تَوَلَّى / أَعْرَضَ (turning away — behavioral, co-occurs in 80:1). ع ب س is distinct as the contraction/gathering of the face into a grim scowl (the whole-countenance darkening), separable from the eyes'/gaze glare (بسر), from brow-knitting (قطب), and from bodily turning-away (تولى). Falsifiability: if a confirmed عبس occurrence required a meaning of pure emotional aversion or bodily turning-away with no possible facial-grimness/forbidding-aspect reading, the facial-contraction core would fail.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "A single non-empty residue — the grim, forbidding contraction of the countenance into a scowl — is recoverable in all three occurrences. It is surface-literal in the two verbal cases (74:22, 80:1), where careful layer-subtraction shows the root supplies the facial scowl while coordinated verbs supply the glare/turning-away. The third case (76:10) is the adjectival/intensive عَبُوس applied to a Day, where the residue is present only by a well-supported metaphorical extension (grim-faced → grim/forbidding aspect), bridged by the shared root-form and the reinforcing قَمْطَرِير. Because unity holds cleanly for two occurrences but the third requires reconciled metaphorical transfer rather than surface literality, the disposition is PREFERRED at MODERATE strength: the conceptual center is determinate and sharply distinct from neighbor roots, but not surface-recoverable in all three without inferential extension. No occurrence remains unreconciled; inconsistent_refs is empty."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "Ebs",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Adversarial sweep over all 3 occurrences found no genuine failing case. (1) 74:22 عَبَسَ وَبَسَرَ and (2) 80:1 عَبَسَ وَتَوَلَّىٰ are literal human facial contraction into a scowl; the discovery correctly assigns only the frown to ع ب س, letting the paired verbs (بسر glaring, تولّى turning away) carry their own distinct acts. Hardest case is (3) 76:10 يَوْمًا عَبُوسًا قَمْطَرِيرًا, where the intensive adjective is predicated of a faceless Day; this requires metaphorical transfer, but يوم عبوس (\"grim/frowning day\") is a standard lexicalized Arabic metonymy — a routine attributive extension of the countenance-contraction sense, reinforced by قمطرير, not an ad-hoc rescue or a separate homonym. Distinctiveness: ع ب س (contraction/darkening of the countenance into displeasure) discriminates cleanly against its co-occurring neighbor بسر (the glaring/hostile look) — the two pair in 74:22 precisely because complementary — and against قطب (drawing brows together). Falsifiability: failure condition = a Quranic use in an unrelated sense (e.g., the classical noun for dried dung on a camel's tail); no such use appears, and all 3 tokens are the frown sense, so nothing meets the failure condition. No semantic split or homonymy to bridge; unity is distinct and falsifiable."
+ },
+ "coverage_validation": {
+  "root": "Ebs",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "74:22:2:1",
+   "disposition": "CONSISTENT",
+   "note": "عَبَسَ = the human agent's face contracted into a scowl; reinforced by paired وَبَسَرَ (glaring/grimacing). Facial-scowl residue directly present."
+  },
+  {
+   "word_ref": "76:10:6:1",
+   "disposition": "CONSISTENT",
+   "note": "Intensive adjective عَبُوسًا predicated of يَوْمًا (a Day); the grim-forbidding-scowl residue is transferred metaphorically via the candidate's own aspect logic, reinforced by قَمْطَرِيرًا (harsh/distressful). Bridged extension counts as consistent."
+  },
+  {
+   "word_ref": "80:1:1:1",
+   "disposition": "CONSISTENT",
+   "note": "عَبَسَ = the agent scowled; facial contraction residue present, the separate aversion act being carried by وَتَوَلَّىٰ rather than by ع ب س."
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

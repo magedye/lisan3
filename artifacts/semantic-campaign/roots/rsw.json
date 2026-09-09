@@ -1,0 +1,133 @@
+{
+ "root_buckwalter": "rsw",
+ "root_arabic": "ر س و",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch05-coverage",
+ "occurrences": 14,
+ "frozen_candidate_root_contribution": "Firm, weighted anchoring — the condition or act of being made to settle immovably in place by being grounded/moored to a fixed point, so that the thing neither drifts, sways, nor moves off its position.",
+ "internal_discovery": {
+  "root_buckwalter": "rsw",
+  "root_arabic": "ر س و",
+  "candidate_root_contribution": "Firm, weighted anchoring — the condition or act of being made to settle immovably in place by being grounded/moored to a fixed point, so that the thing neither drifts, sways, nor moves off its position.",
+  "plain_explanation": "Across all 14 occurrences the root contributes one thing: fixedness-by-anchoring. (1) The dominant cluster is the plural participle رَوَاسِيَ / رَوَاسِيْ \"firmly-anchored ones\" = mountains, used 9 times (13:3, 15:19, 16:15, 21:31, 27:61, 31:10, 41:10, 50:7, 77:27). Their function is spelled out repeatedly: they are cast/placed \"into the earth\" أَنْ تَمِيدَ بِكُمْ — \"lest it sway with you\" (16:15, 21:31, 31:10). The residue here is not merely \"big rock\" but \"the anchoring element that holds the earth immovable.\" (2) 34:13 رَّاسِيَاتٍ describes cauldrons that are fixed/immovable in place (too heavy to be moved), the same fixedness applied to a different object. (3) 79:32 the causative verb أَرْسَاهَا \"He anchored them\" (the mountains) — the verbal expression of the same firm-fixing act. (4) The verbal-noun cluster مُرْسَىٰ (form IV, N(IV)): in 11:41 the ship's بِسْمِ ٱللَّهِ مَجْرَاهَا وَمُرْسَاهَا contrasts \"its running/coursing\" (مجرى) with \"its mooring/coming-to-rest\" (مرسى) — the point/act at which a moving vessel is brought to firm rest. In 79:42 and 7:187 مُرْسَاهَا asks of the Hour \"when is its mursā\" — its coming-to-its-fixed-appointed-settling, i.e. its being brought to its determinate, unmovable point of realization. In every case what rsw supplies is the same abstract core: coming/being brought to a firmly-fixed, non-drifting settledness anchored to a point.",
+  "layer_separation_note": "Subtracted layers: (a) FORM — N participle رواسٍ/راسيات = \"the firmly-anchored one(s)\" (agentive/stative reading of the residue); N(IV) verbal noun مُرْسَى = \"the point/act of anchoring\"; V form-IV أرسى = causative \"caused to be anchored.\" Removing these leaves the bare notion of firm fixedness, independent of whether it is agent, event, or causation. (b) CONSTRUCTION — locative فِي ٱلْأَرْضِ / أَلْقَى فِيهَا (spatial grounding \"into\"), purposive أَنْ تَمِيدَ (\"lest it sway\"), and temporal interrogative أَيَّانَ (\"when\") supply the spatial-vs-temporal and purpose framing; these are frame, not root. (c) PARTICIPANTS — mountains, cauldrons, ship, the Hour differ, but the anchoring residue is constant. (d) CONTEXT — cosmological creation (mountains), the Noah ark narrative (ship), and eschatology (the Hour) differ; stripping context leaves \"firmly-fixed settledness anchored to a point.\"",
+  "presence": {
+   "occurrences_total": 14,
+   "occurrences_checked": 14,
+   "occurrences_consistent": 14,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "79:42:5:1 (= 7:187:5:1) مُرْسَىٰهَا applied to the Hour. This is the only clearly non-spatial occurrence: the Hour cannot be physically \"moored.\" It reconciles through an internally-attested bridge: the very same form N(IV) مُرْسَى in 11:41 denotes a ship's coming-to-rest/mooring point, explicitly paired against its motion (مجرى \"running\"). Extending that, the Hour's مرسى is its being brought to its fixed, appointed point of settled realization — the moment at which the presently \"running/pending\" event is anchored to its determinate arrival. The fixedness-to-a-determinate-point residue is thus recoverable, though via metaphorical (spatial→temporal) extension.",
+  "competing_hypothesis": "Strongest alternative: the root means merely \"stability / rest / settledness\" (i.e. the same field as qrr قرر or skn سكن) rather than specifically anchoring. Internal evidence arbitrates against this: 27:61 uses both roots in one verse — جَعَلَ ٱلْأَرْضَ قَرَارًا (\"a resting-place,\" qrr) AND وَجَعَلَ لَهَا رَوَاسِيَ (rsw). The text treats قرار and رواسي as distinct contributions, so rsw is not generic \"rest\"; it is the specific grounding/anchoring agent that produces stability, distinguished by the downward-weighted mooring dimension (mountains \"cast into\" the earth, a ship's anchor, the settling to a fixed point). This favors \"firm weighted anchoring\" over bare \"rest/stability.\"",
+  "distinctiveness_note": "Nearest semantic neighbors: qrr (قرر, settledness / resting-place / permanence), skn (سكن, stillness / dwelling), θbt (ثبت, being firm / steadfast / established), and wtd (وتد, pegging — cf. mountains as أوتاد, 78:7). rsw is distinct in that its fixedness is achieved by weighted grounding/mooring to a point — an anchor sunk, a mountain rooted \"into\" the earth, a ship brought to its berth, an event fixed to its appointed moment. It foregrounds resistance to drift/sway (تميد) via downward attachment, whereas qrr foregrounds the resting-state itself, skn foregrounds cessation of motion/dwelling, and θbt foregrounds firmness/steadfastness without the mooring/grounding image. Falsifiability: if any rsw occurrence denoted stillness, quiet, or temporary stopping WITHOUT the grounded-anchoring/fixed-to-a-point component (e.g. mere rest or dwelling interchangeable with skn/qrr), the \"weighted anchoring\" residue would be falsified.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "A single non-empty contribution — \"firm weighted anchoring / being brought to immovable fixedness at a point\" — is recoverable across all 14 occurrences, and internal evidence (27:61 distinguishing قرار from رواسي) sharply separates it from the generic rest/stability field, giving the direction and distinctiveness needed for PREFERRED. Strength is MODERATE rather than STRONG because, while 12 occurrences (mountains رواسي/راسيات ×10 and the causative أرسى, plus the ship's مرسى) are surface-recoverable spatial anchoring, the 2 eschatological cases (7:187, 79:42) require a spatial→temporal metaphorical extension. That extension is not free-floating: it is anchored by an internally-attested bridge — the identical form مُرْسَى used of a physical ship's mooring in 11:41 — so the unity holds without forcing. No occurrence is contradicted; the residue is genuinely present in every one; hence PREFERRED with honest acknowledgment of the metaphorical inference for the Hour."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "rsw",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Adversarial sweep of all 14 found no occurrence where fixedness-by-anchoring is genuinely absent or contradicted. Cluster A (9x رَوَاسِيَ mountains) is the candidate's strongest ground: cast/thrown/placed فِى الأرض, with the function spelled out three times as أَن تَمِيدَ بِكُمْ (\"lest it sway with you\"). 27:61 even lexically separates قَرَارًا (resting-place) from رَوَاسِيَ (anchoring element), which sharpens the candidate rather than diluting it. 34:13 رَّاسِيَاتٍ (immovable cauldrons) and 79:32 أَرْسَاهَا (causative \"anchored the mountains\") are straightforward. HARDEST CASE: the N(IV) مُرْسَىٰ cluster. 11:41 (ship's mooring, contrasted with مجراها \"coursing\") is a clean spatial fit. The Hour's مُرْسَاهَا (79:42, 7:187) is the real pressure point, because the frozen candidate's wording is aggressively spatial-physical (\"immovably IN PLACE,\" \"neither drifts, sways, nor moves off its position,\" \"weighted\") and a temporal event does not literally sway/drift. I attempted to break this into a spatial-vs-temporal split (homonymy), but it fails as a refutation: (1) identical morphology carries both ship-mooring and Hour; (2) the bridge \"brought to a determinate fixed point\" is a standard non-ad-hoc lexical extension (classical: وقت ثبوتها/وقوعها); (3) 7:187 itself supplies the weight resonance the candidate relies on — ثَقُلَتْ فِى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ. The abstract residue (fixedness-by-anchoring-to-a-determinate-point) is present in all 14. Distinctiveness holds against nearest neighbors: ثبت (generic firmness), رسخ (deep-rootedness), قرّ (rest — appears as a distinct lexeme قرار in 27:61); rsw is specifically the anchoring element/act producing fixedness by grounding-into or mooring-to a point. Falsifiable via a clear failure condition (any sense of flow/growth/motion lacking fixedness); none met. Only genuine weakness is mild OVER-SPECIFICATION in the candidate's phrasing (\"weighted,\" \"in place\") relative to the temporal Hour cases, requiring a spatial→temporal reading of \"point\" — but this is imprecise wording, not a semantic failure of any occurrence, so the unity stands as SUPPORTED."
+ },
+ "coverage_validation": {
+  "root": "rsw",
+  "expected_count": 14,
+  "researched_count": 14,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "11:41:7:2",
+   "disposition": "CONSISTENT",
+   "note": "مُرْسَىٰهَا contrasted with مَجْرَىٰهَا ('its running/coursing' vs 'its mooring'): the point/act of bringing the moving ship to firm rest = anchoring residue directly present."
+  },
+  {
+   "word_ref": "13:3:7:1",
+   "disposition": "CONSISTENT",
+   "note": "رَوَٰسِىَ 'firmly-anchored ones' (mountains) جَعَلَ فِيهَا — cast into the earth as the anchoring element; core residue present."
+  },
+  {
+   "word_ref": "15:19:5:1",
+   "disposition": "CONSISTENT",
+   "note": "أَلْقَيْنَا فِيهَا رَوَٰسِىَ — mountains cast into the outspread earth as fixing anchors; residue present."
+  },
+  {
+   "word_ref": "16:15:4:1",
+   "disposition": "CONSISTENT",
+   "note": "أَلْقَىٰ فِى ٱلْأَرْضِ رَوَٰسِىَ أَن تَمِيدَ بِكُمْ 'lest it sway with you' — function explicitly = immovable anchoring; residue present."
+  },
+  {
+   "word_ref": "21:31:4:1",
+   "disposition": "CONSISTENT",
+   "note": "جَعَلْنَا فِى ٱلْأَرْضِ رَوَٰسِىَ أَن تَمِيدَ بِهِمْ — anti-sway anchoring spelled out; residue present."
+  },
+  {
+   "word_ref": "27:61:10:1",
+   "disposition": "CONSISTENT",
+   "note": "جَعَلَ لَهَا رَوَٰسِىَ paired with ٱلْأَرْضَ قَرَارًا (earth as a settled abode) — anchoring residue present."
+  },
+  {
+   "word_ref": "31:10:9:1",
+   "disposition": "CONSISTENT",
+   "note": "أَلْقَىٰ فِى ٱلْأَرْضِ رَوَٰسِىَ أَن تَمِيدَ بِكُمْ — same anti-sway anchoring formula; residue present."
+  },
+  {
+   "word_ref": "34:13:11:1",
+   "disposition": "CONSISTENT",
+   "note": "قُدُورٍ رَّاسِيَٰتٍ — cauldrons fixed/immovable in place (too heavy to move); same fixedness residue applied to a different object, bridged by candidate logic."
+  },
+  {
+   "word_ref": "41:10:3:1",
+   "disposition": "CONSISTENT",
+   "note": "جَعَلَ فِيهَا رَوَٰسِىَ مِن فَوْقِهَا — anchoring mountains set into the earth; residue present."
+  },
+  {
+   "word_ref": "50:7:5:1",
+   "disposition": "CONSISTENT",
+   "note": "أَلْقَيْنَا فِيهَا رَوَٰسِىَ over the outspread earth — anchoring residue present."
+  },
+  {
+   "word_ref": "77:27:3:1",
+   "disposition": "CONSISTENT",
+   "note": "رَوَٰسِىَ شَٰمِخَٰتٍ 'towering anchored ones' set in the earth; anchoring residue present, height is added modifier not a substitution."
+  },
+  {
+   "word_ref": "79:32:2:1",
+   "disposition": "CONSISTENT",
+   "note": "أَرْسَىٰهَا (V) 'He anchored them' (the mountains) — the causative verbal expression of the firm-fixing act; residue present."
+  },
+  {
+   "word_ref": "79:42:5:1",
+   "disposition": "CONSISTENT",
+   "note": "مُرْسَىٰهَا of the Hour 'when is its settling' — metaphorical extension to the Hour's coming-to-its-fixed-appointed-point, bridged by the candidate's own 'brought to a determinate settling' logic."
+  },
+  {
+   "word_ref": "7:187:5:1",
+   "disposition": "CONSISTENT",
+   "note": "مُرْسَىٰهَا of the Hour, same construction; ثَقُلَتْ فِى ٱلسَّمَٰوَٰتِ reinforces weighted-settling sense — metaphorical fixed-appointed-point bridged by candidate logic."
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

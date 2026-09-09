@@ -1,0 +1,80 @@
+{
+ "root_buckwalter": "Erw",
+ "root_arabic": "ع ر و",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch05-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "A fastening grip-contact: the point or event at which one entity takes firm hold of, or fastens onto, another — either the fixed thing-by-which-a-grip-is-taken (a handhold/loop) or the act of something taking hold of / coming fast upon a person.",
+ "internal_discovery": {
+  "root_buckwalter": "Erw",
+  "root_arabic": "ع ر و",
+  "candidate_root_contribution": "A fastening grip-contact: the point or event at which one entity takes firm hold of, or fastens onto, another — either the fixed thing-by-which-a-grip-is-taken (a handhold/loop) or the act of something taking hold of / coming fast upon a person.",
+  "plain_explanation": "Two form-families, one invariant. (1) Verb, Form VIII — 11:54:4:1 \"ٱعْتَرَىٰكَ بَعْضُ ءَالِهَتِنَا بِسُوٓءٍ\": Hud's people say nothing except that \"some of our gods have taken hold of / fastened upon you with evil\" — an external agent (a deity's harm) grips or comes fast upon the person. (2) Noun ʿurwah — the identical fixed phrase \"ٱسْتَمْسَكَ بِٱلْعُرْوَةِ ٱلْوُثْقَىٰ\" at 2:256:17:3 and 31:22:10:3: the believer \"has grasped the firmest ʿurwah\" — the ʿurwah is precisely the handhold/loop, the fixed thing by which a grip is taken and held. Subtract the layers and what both share is not \"holding\" as an act (that is carried by ٱسْتَمْسَكَ in the noun verses) but the grip-contact / fastening itself: in the verb it is misfortune fastening onto a person; in the noun it is the grip-point onto which one fastens. The root supplies the attachment-contact; morphology and construction supply its direction (something grips me / I grip something) and its polarity (harmful seizure vs. saving hold).",
+  "layer_separation_note": "Subtracted: (a) FORM — Form VIII reflexive/telic shaping of the verb (\"came-upon-and-took-hold\" as a completed befalling) and the noun pattern (فُعْلَة) yielding the concrete instrument/point \"the thing-by-which-grip-is-had\"; (b) CONSTRUCTION — بِسُوٓءٍ (\"with evil\") supplying harmful polarity to the verb, and ٱسْتَمْسَكَ بِ- (\"grasped onto\") supplying the agentive holding act and beneficial polarity to the noun; (c) PARTICIPANTS — false gods vs. the messenger (verb); believer vs. the handhold (nouns); (d) CONTEXT — Hud-narrative polemic (verb) vs. creedal formula of no-compulsion / submission-to-God (nouns). What remains in all three after subtraction is the bare grip/fastening-attachment contact between two entities.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "The verb 11:54:4:1 ٱعْتَرَىٰكَ is the hardest, because its surface sense (\"befall/afflict\") and its direction of grip are opposite to the nouns: here the person is the one gripped/seized by an external harm, whereas in 2:256 and 31:22 the person is the gripper of a handhold. It reconciles because the direction of the grip and its harmful polarity are supplied by construction (بِسُوٓءٍ) and participants, not by the root; strip those and ٱعْتَرَى still denotes a fastening-taking-hold of one thing upon another — the same grip-contact that ʿurwah names as a fixed point. The residue survives; only its vector is external.",
+  "competing_hypothesis": "Strongest alternative: the core is \"unbreakable firmness/binding\" — motivated by ٱلْوُثْقَىٰ (\"firmest\") and لَا ٱنفِصَامَ لَهَا (\"no breaking of it\"). Internal evidence arbitrates against it: those firmness features attach to ٱلْوُثْقَىٰ and the لا-انفصام clause, not to ʿurwah itself (a loop/handle can in principle break), and the verb 11:54 carries no firmness notion at all — it is a transient befalling. A second alternative, \"coming/approaching\" (the base ʿarā, \"to come to\"), covers the verb but fails the noun: a handhold is not a \"coming.\" Only \"grip/fastening-attachment contact\" covers all three without importing an adjacent lexeme's meaning.",
+  "distinctiveness_note": "Nearest neighbors: msk (م س ك), which literally co-occurs as ٱسْتَمْسَكَ — msk is the agentive act of holding-fast, whereas Erw supplies the grip-point/fastening-object being held, not the holding; ʿlq (ع ل ق), \"hanging/suspension-dependency,\" is attachment-by-suspension rather than grip-contact you take hold of; mss (م س س), \"touch/light-contact\" (as مسّه سوء), is mere surface touch without the fastening/taking-hold that Erw entails. Falsifiability: if a confirmed Erw occurrence appeared where no grip, handhold, or fastening-taking-hold relation exists — e.g. pure motion, pure utterance, or unattached touching — the residue would be falsified.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "A single non-empty contribution — grip/fastening-attachment contact — is recoverable in every occurrence once form, construction, participants, and context are subtracted. It is surface-transparent in the two ʿurwah nouns (a handhold IS the grip-point) and recoverable in the verb 11:54 via an internally supported bridge: ٱعْتَرَى as harm fastening/taking-hold upon a person, with بِسُوٓءٍ carrying the polarity and the participants carrying the direction. I rate MODERATE rather than STRONG because two of the three occurrences are the identical fixed phrase (ٱلْعُرْوَةِ ٱلْوُثْقَىٰ), so the sense-diversity actually tested is thin, and joining the \"handhold\" noun to the \"befall/seize\" verb requires a conceptual center (grip/fastening) plus a metaphorical-extension inference for the verb, with the grip's direction left underdetermined by the root itself. No occurrence stays unreconciled, so none is placed in inconsistent_refs, and I make no majority/percentage claim — the unity holds against the single hardest case (11:54) rather than by counting."
+ },
+ "adversarial_verification": {
+  "distinctiveness_ok": false,
+  "failing_occurrences": [
+   "11:54:4:1"
+  ],
+  "falsifiable": true,
+  "root_buckwalter": "Erw",
+  "verdict": "PARTIALLY_SUPPORTED",
+  "notes": "Refutation sweep of all 3 occurrences. The two noun verses (2:256:17:3, 31:22:10:3) are the identical fixed phrase ٱسْتَمْسَكَ بِٱلْعُرْوَةِ ٱلْوُثْقَىٰ and genuinely fit: ʿurwah = the loop/handhold, a fixed point-of-attachment. That branch is solid. The verb 11:54:4:1 (ٱعْتَرَىٰكَ بِسُوٓءٍ) is the weak seam and produces two real problems. (1) OVER-SPECIFICATION: ٱعْتَرَىٰ classically means 'to befall / come upon / visit' (misfortune or a guest coming upon a person); the candidate upgrades this to 'firm grip / fastening.' Firmness is not attested in the verb — evil can befall/touch without gripping — and the candidate rescues the occurrence only through its own disjunctive escape clause 'or coming fast upon a person,' so the advertised 'one invariant' is really a disjunction (a passive handle-thing OR an act of befalling), a looser unity than claimed. (2) DISTINCTIVENESS FAILURE against the nearest neighbors: for the verb, 'ٱعْتَرَىٰكَ بِسُوٓءٍ' is nearly inseparable from the Quranic idiom 'يَمَسَّكَ بِسُوٓءٍ' (م-س-س, evil touching a person); the only feature that would separate them (firm grip) is the imported layer, so it blurs into mass. For the noun, the actual act of gripping is carried entirely by ٱسْتَمْسَكَ (root م-س-ك, literally present in the verse); strip that and ʿurwah contributes only 'loop/attachment-point,' not 'grip.' Thus the candidate's headline term 'grip/fastening' is on loan from مسك and from an over-read of the verb, blurring against exactly the neighbors it must discriminate from. The honest data-supported core is narrower — 'attachment / point-of-attachment / cleaving-onto' — under which all three hold; but the frozen candidate over-specifies with 'firm grip' and appropriates مسك's semantics. This is not a homonymy split the candidate cannot bridge (so not REFUTED — a real thread of attachment/coming-upon runs through all three), but the over-breadth, disjunctive core, and weak neighbor-discrimination make it PARTIALLY_SUPPORTED. Failing/problem occurrence: 11:54:4:1 (covered only via stretch/disjunction, not flatly contradicted). Falsifiable in principle (a root token meaning something unrelated to attachment/befalling would break it; none of the 3 does), but distinctiveness is not clean."
+ },
+ "coverage_validation": {
+  "root": "Erw",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "11:54:4:1",
+   "disposition": "CONSISTENT",
+   "note": "Form VIII verb ٱعْتَرَىٰكَ 'has taken hold of/fastened upon you' with بِسُوٓءٍ ('with evil') and agent بَعْضُ ءَالِهَتِنَا: an external harm grips/comes fast upon the person — the candidate attachment-contact directed as 'something grips me,' polarity harmful. Residue present."
+  },
+  {
+   "word_ref": "2:256:17:3",
+   "disposition": "CONSISTENT",
+   "note": "Noun ٱلْعُرْوَةِ ٱلْوُثْقَىٰ ('the firmest handhold/loop') as object of ٱسْتَمْسَكَ بِ ('grasped'); the ʿurwah is precisely the fixed grip-point onto which one fastens. Act-of-holding is carried by ٱسْتَمْسَكَ; the grip-contact/handhold residue is exactly the root's contribution. لَا ٱنفِصَامَ لَهَا ('no breaking') reinforces the firm-fastening sense."
+  },
+  {
+   "word_ref": "31:22:10:3",
+   "disposition": "CONSISTENT",
+   "note": "Identical fixed phrase ٱسْتَمْسَكَ بِٱلْعُرْوَةِ ٱلْوُثْقَىٰ; ʿurwah = the handhold/loop grip-point by which a saving hold is taken. Same recoverable residue as 2:256, polarity saving."
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "WEAK",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PARTIAL",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

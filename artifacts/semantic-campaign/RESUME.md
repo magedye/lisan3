@@ -34,12 +34,19 @@ python tools/campaign.py status         # processed vs remaining; research vs ca
    -> per-root artifact in `artifacts/semantic-campaign/roots/`, exact-set validated,
    ledger + CampaignState updated (idempotent; lineage preserved on reprocess).
 
-## Interrupted work to finish first (as of candidate 42c2e2a)
-- **Batch 03 coverage** (`data/campaign/coverage/batch03`): 15 of 16 roots' maps
-  failed on the session limit; re-run coverage-mapping + `persist-coverage`.
-- **Batch 04** (`data/campaign/packets/batch04`): discovery done (24 candidates in
-  the ledger, `PENDING_COVERAGE_EVIDENCE`); verification failed on the limit — re-run
-  the discovery/verify workflow (cached discovers replay) then the coverage pipeline.
+## Current state (as of Window 03 / Batch 05 closure)
+- Processed **88 / 1,642** roots; remaining **1,554**; `PENDING_COVERAGE_EVIDENCE = 0`;
+  all processed roots exact-set COMPLETE; canonicalization PENDING for all.
+- No interrupted work. Next action: run the per-batch pipeline for Batch 06.
+- Report: `docs/LISAN3_WINDOW_03_BATCH_05.md`.
+
+## Filename safety (IMPORTANT — do not regress)
+`tools/campaign.py safe_name` escapes the uppercase Buckwalter homograph letters
+`H S D T Z` (e.g. `S`→`_53_`) as well as FS-illegal chars, because the QAC universe
+has 137 case-fold pairs (e.g. `Swm` ص و م vs `swm` س و م) that otherwise share one
+artifact file on a case-insensitive filesystem and silently overwrite each other.
+Per-root artifact files are named `safe_name(root).json`; never assume the raw root
+is the filename.
 
 ## Invariants (never weaken)
 - `ROOT_SEMANTIC_UNITY = NON_NEGOTIABLE`: one unreconciled confirmed occurrence

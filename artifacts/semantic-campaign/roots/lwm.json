@@ -1,0 +1,133 @@
+{
+ "root_buckwalter": "lwm",
+ "root_arabic": "ل و م",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch05-coverage",
+ "occurrences": 14,
+ "frozen_candidate_root_contribution": "The imputation of fault/censure onto an agent for a deed — i.e., holding someone answerable-at-fault and expressing that as reproach/blame. The root supplies a directed evaluative act of fault-attribution (blame), independent of who directs it (another, a reciprocal group, or the self) and of whether the residue surfaces as the act, the agent doing it, or the state of being its target.",
+ "internal_discovery": {
+  "root_buckwalter": "lwm",
+  "root_arabic": "ل و م",
+  "candidate_root_contribution": "The imputation of fault/censure onto an agent for a deed — i.e., holding someone answerable-at-fault and expressing that as reproach/blame. The root supplies a directed evaluative act of fault-attribution (blame), independent of who directs it (another, a reciprocal group, or the self) and of whether the residue surfaces as the act, the agent doing it, or the state of being its target.",
+  "plain_explanation": "Every occurrence resolves to the single notion \"blame / reproach = imputing fault to an agent for something done.\"\n\nFORM I active verb (blaming as an act): 12:32:4:1 لُمْتُنَّنِى \"you (women) blamed me concerning him\" (Potiphar's wife); 14:22:25:1 تَلُومُونِى \"do not blame me\" and 14:22:26:2 لُومُوا أَنفُسَكُم \"blame your own selves\" (Satan redirecting culpability). Here the root is transparently the verbal act of fault-attribution, and the same act is even turned reflexive (\"blame yourselves\").\n\nFORM VI reciprocal verb (mutual blaming): 68:30:5:1 يَتَلَاوَمُونَ — the ruined garden-owners \"blaming one another.\" Pure directed fault-attribution, now bidirectional; the VI morphology supplies the reciprocity, the root supplies the blame.\n\nPASSIVE PARTICIPLE مَلُوم (state of being the target of blame): 17:29:12:1 and 17:39:17:1 مَلُومًا (sitting/cast down \"blamed\"); 23:6:10:1 & 70:30:10:1 غَيْرُ مَلُومِينَ (\"not blamed\" re lawful spouses); 51:54:5:2 فَمَا أَنتَ بِمَلُومٍ (\"you are not to be blamed\"). The residue is the imputable-fault-censure whose target is either affirmed or negated.\n\nFORM IV participle مُلِيم (agent who has brought blame upon himself / is culpable): 37:142:4:1 (Jonah, swallowed \"while mulīm\") and 51:40:7:1 (Pharaoh cast in the sea \"while mulīm\"). The IV morphology adds \"having done that which incurs X\"; the X is still blame — one in a state of deserved fault-censure.\n\nACTIVE PARTICIPLE + INSTANCE NOUN (the blamer and an act of blame): 5:54:27–28 لَوْمَةَ لَآئِمٍ \"the blame of any blamer\" — لَوْمَة is a single act of censure, لَآئِم the one who censures.\n\nINTENSIVE ADJECTIVE (habitual self-reproach): 75:2:4:2 النَّفْس اللَّوَّامَة \"the ever-reproaching soul\" — intensive form of the same fault-imputing act, turned on the self.\n\nAcross active/reciprocal verbs, passive/active participles, instance and intensive nominals, the constant left after subtracting morphology is: directed attribution of fault = blame.",
+  "layer_separation_note": "Subtractions performed to isolate the residue: (a) FORM/derivation — Form I (لام) gives the plain act of blaming; Form VI (تلاوم) adds reciprocity (\"blame one another\"); Form IV (ألام → مُلِيم) adds the \"do/enter-into that which incurs X\" causative-inchoative sense, yielding \"culpable, deserving blame\"; passive participle مَلُوم gives \"one blamed\"; active participle لَائِم gives \"blamer\"; instance noun لَوْمَة gives \"one act of blame\"; intensive adjective لَوَّامَة gives \"much-/habitually-blaming.\" All these are morphological overlays on a constant \"blame.\" (b) CONSTRUCTION — object-of-blame marked by فِي (لمتنني فيه \"blamed me concerning him\"); negation غَيْر / بِ + مَلُوم supplies \"not\"; genitive لَوْمَة لَائِم supplies \"blame OF a blamer.\" These frames set the vector/polarity, not the meaning. (c) PARTICIPANTS — blamer/blamed vary (women, Satan, self, believers, Jonah, Pharaoh) with no effect on the residue. (d) CONTEXT — legal (spouses غير ملومين), eschatological (hell ملوما مدحورا; mulīm at punishment), narrative (Joseph, Jonah, Pharaoh, the garden owners), spiritual (self-reproaching soul) — all contribute setting only. Residue after all subtractions: attribution of fault/censure to an agent for a deed.",
+  "presence": {
+   "occurrences_total": 14,
+   "occurrences_checked": 14,
+   "occurrences_consistent": 14,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "The Form IV participle مُلِيم (37:142:4:1 Jonah; 51:40:7:1 Pharaoh) is the hardest, because unlike مَلُوم (\"one blamed by someone\") it is not obviously a passive target of blame — no blamer is named, and Jonah/Pharaoh are described as mulīm at the very moment of divine seizure, not while being verbally reproached. It reconciles cleanly through layer-subtraction: Form IV of this root is the standard \"do/become such as to incur X\" pattern (cf. أذنب \"commit a sin\"), so مُلِيم = \"one who has brought blame upon himself / stands culpable.\" The root residue \"fault-imputable censure\" is still present — it is the very thing incurred. The morphology (IV) supplies \"having earned,\" the root supplies \"blame.\" So it strengthens rather than breaks the unity: the residue survives even where no external blamer is present, showing the core is fault-attribution itself, not merely the social speech-act.",
+  "competing_hypothesis": "Strongest alternative: the core is \"fault/culpability\" (a state) rather than \"the act of blaming.\" This also covers مَلُوم/مُلِيم (states of being at fault) and غَيْر مَلُومِين (not culpable). Internal arbitration favors the blame-attribution reading: the data foregrounds the ACT and its AGENT, not bare culpability — لَائِم (a blamer), لَوْمَة (a discrete act of blame), يَتَلَاوَمُون (reciprocal blaming), لُومُوا أَنفُسَكُم (imperative to perform blaming), لَوَّامَة (habitual blamer). A pure \"culpability/fault\" core cannot generate an agent-noun \"blamer\" or a reciprocal \"blame each other,\" whereas an \"act-of-fault-attribution\" core generates both the act (verbs, لومة, لائم, لوامة) and the derived state (passive ملوم, IV مليم = target/incurrer of that attribution). Hence the attributive-censure reading subsumes the culpability reading, not vice versa; internal evidence arbitrates for it.",
+  "distinctiveness_note": "Nearest Quranic/Arabic semantic neighbors: ذمّ (*mm, dispraise — the antonym of حمد/praise, an evaluation of intrinsic worth/quality), عذل ('*l, reproof, near-synonym, sparse), and عيّر/وبّخ (taunt/rebuke). lwm is distinct in that it imputes fault to an AGENT for a specific answerable DEED — it presupposes responsibility for an act and censures that (لمتنني فيه = blamed me concerning [a deed]; لوموا أنفسكم = hold yourselves at fault). It is agent-directed, deed-anchored, and freely reflexive/reciprocal (لوامة, تلاوم), unlike ذمّ which grades a thing's worth (praise-vs-dispraise axis) without necessarily targeting an agent's deed. Falsifiability: if any occurrence used lwm for evaluation of intrinsic worth/quality of a thing with no imputable deed and no answerable agent (i.e., as a mere antonym of \"praiseworthy\"), the deed-anchored fault-attribution core would be falsified and the reading would collapse toward the generic ذمّ sense.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "STRONG",
+  "rationale": "A single non-empty contribution — attribution of fault/censure to an agent for a deed (blame/reproach) — is surface-recoverable in all 14 occurrences with a determinate direction (censure aimed at a culpable agent). Every form-family transparently instantiates it: Form I active verbs (لمتنني، تلوموني، لوموا), Form VI reciprocal (يتلاومون), passive participle (ملوم/ملومين, affirmed or negated), Form IV culpability participle (مليم), active participle (لائم), instance noun (لومة), and intensive adjective (لوّامة). No occurrence requires forcing: the two genuinely different-looking cases — IV مُلِيم (state of incurred blame) and the reflexive/intensive لوّامة / لوموا أنفسكم (self-directed blame) — reconcile by ordinary morphological subtraction (IV = \"having incurred X\"; reflexive object = self as target) while leaving the blame-residue intact, which actually confirms that the core is fault-attribution rather than either the social speech-act alone or bare culpability alone. Direction is determinate and the root is sharply distinct from its nearest neighbor ذمّ (worth-dispraise). The unity is achieved without metaphorical stretching and without any unreconciled occurrence, warranting STRONG."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "lwm",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Adversarial sweep of all 14 occurrences found no genuine failing occurrence. The root is semantically compact and every residue reduces to directed fault-attribution (blame/reproach). Verb (I): 12:32 لُمْتُنَّنِى, 14:22 تَلُومُونِى + reflexive لُومُوا أَنفُسَكُم = act of blaming, even redirected onto self. VI 68:30 يَتَلَاوَمُونَ = mutual blame (reciprocity is morphological). Passive participle مَلُوم 17:29/17:39 (blamed) and negated 23:6/70:30/51:54 (غير ملومين / بملوم) = target-of-blame, affirmed or negated; negation is not absence of the concept. Active participle + instance noun 5:54 لَوْمَةَ لَآئِمٍ = blamer + single act of censure. Intensive ADJ 75:2 اللَّوَّامَة = habitual self-reproach. HARDEST CASES: the two Form IV مُلِيم (37:142 Jonah, 51:40 Pharaoh), morphologically most distant — probed for a circular save. Standard lexical value of أَلاَمَ/مُليم is \"having done what incurs blame → culpable\"; subtracting the IV 'do-what-incurs-X' morphology leaves X = blame, so it is root-anchored, not ad hoc. DISTINCTIVENESS holds: the contribution discriminates against ذمّ (dispraise of worth/character), لعن (curse/expulsion), عذل (dissuasive reproach), and عذاب (punishment) — لوم uniquely centers the imputation of fault to an agent for a specific deed. FALSIFIABILITY holds: a clear failure condition exists (any occurrence bearing an unrelated/homonymous sense), and no occurrence meets it. Verdict SUPPORTED."
+ },
+ "coverage_validation": {
+  "root": "lwm",
+  "expected_count": 14,
+  "researched_count": 14,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "12:32:4:1",
+   "disposition": "CONSISTENT",
+   "note": "لُمْتُنَّنِى فِيهِ 'you (women) blamed me concerning him' — Form V active verb, transparent act of fault-attribution directed at the speaker by others; candidate residue (blame) fully present."
+  },
+  {
+   "word_ref": "14:22:25:1",
+   "disposition": "CONSISTENT",
+   "note": "فَلَا تَلُومُونِى 'do not blame me' — Satan negating others' fault-imputation onto himself; directed evaluative blame is exactly the residue, only prohibited."
+  },
+  {
+   "word_ref": "14:22:26:2",
+   "disposition": "CONSISTENT",
+   "note": "وَلُومُوا أَنفُسَكُم 'blame your own selves' — same blame act turned reflexive (self as target); root supplies fault-attribution, participants shift, residue intact."
+  },
+  {
+   "word_ref": "17:29:12:1",
+   "disposition": "CONSISTENT",
+   "note": "فَتَقْعُدَ مَلُومًا 'so you sit blamed' — passive participle, the state of being target of censure for the fault (extravagance); residue present as affirmed target-state."
+  },
+  {
+   "word_ref": "17:39:17:1",
+   "disposition": "CONSISTENT",
+   "note": "فَتُلْقَىٰ فِى جَهَنَّمَ مَلُومًا 'cast into Hell, blamed' — passive participle; being-blamed state for the deed (shirk); candidate residue directly recoverable."
+  },
+  {
+   "word_ref": "23:6:10:1",
+   "disposition": "CONSISTENT",
+   "note": "فَإِنَّهُمْ غَيْرُ مَلُومِينَ 'they are not blamed' — passive participle with negation; blame residue is what is negated (no fault imputable re lawful spouses)."
+  },
+  {
+   "word_ref": "37:142:4:1",
+   "disposition": "CONSISTENT",
+   "note": "وَهُوَ مُلِيمٌ 'while culpable' (Jonah) — Form IV participle 'having done that which incurs blame'; IV adds the causative-incurrence, X = blame; residue recoverable via candidate's own logic."
+  },
+  {
+   "word_ref": "51:40:7:1",
+   "disposition": "CONSISTENT",
+   "note": "وَهُوَ مُلِيمٌ 'while culpable' (Pharaoh) — Form IV participle, one in a state of deserved fault-censure; blame residue present under IV morphology."
+  },
+  {
+   "word_ref": "51:54:5:2",
+   "disposition": "CONSISTENT",
+   "note": "فَمَا أَنتَ بِمَلُومٍ 'you are not to be blamed' — passive participle negated; the fault-imputation residue is exactly what is denied of the addressee."
+  },
+  {
+   "word_ref": "5:54:27:1",
+   "disposition": "CONSISTENT",
+   "note": "لَوْمَةَ لَآئِمٍ — لَوْمَة is the instance noun 'a single act of censure/blame'; directed fault-attribution as a discrete act, residue transparent."
+  },
+  {
+   "word_ref": "5:54:28:1",
+   "disposition": "CONSISTENT",
+   "note": "لَآئِمٍ 'a blamer' — active participle, the agent who performs the blame act; root supplies the fault-attributing act, morphology supplies the doer."
+  },
+  {
+   "word_ref": "68:30:5:1",
+   "disposition": "CONSISTENT",
+   "note": "يَتَلَاوَمُونَ 'blaming one another' — Form VI reciprocal; VI supplies bidirectionality, root supplies the blame; mutual fault-attribution among garden-owners."
+  },
+  {
+   "word_ref": "70:30:10:1",
+   "disposition": "CONSISTENT",
+   "note": "غَيْرُ مَلُومِينَ 'not blamed' — passive participle with negation (lawful spouses); blame residue is the negated target-state, fully recoverable."
+  },
+  {
+   "word_ref": "75:2:4:2",
+   "disposition": "CONSISTENT",
+   "note": "النَّفْس اللَّوَّامَة 'the ever-reproaching soul' — intensive adjective (faʿʿāla) of the same fault-imputing act, turned habitually on the self; residue = self-directed blame."
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "STRONG",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

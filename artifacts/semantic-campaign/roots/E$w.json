@@ -1,0 +1,132 @@
+{
+ "root_buckwalter": "E$w",
+ "root_arabic": "ع ش و",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch05-coverage",
+ "occurrences": 14,
+ "frozen_candidate_root_contribution": "The dimming/failing of light such that clear seeing lapses — the fading of illumination toward darkness. Concretely realized either in the sky (the darkening end of the daylight span, dusk/nightfall) or in the eye (dimmed, failing sight). The root marks the low-light pole where perceptual clarity is diminished, as opposed to the bright/rising pole.",
+ "internal_discovery": {
+  "root_buckwalter": "E$w",
+  "candidate_root_contribution": "The dimming/failing of light such that clear seeing lapses — the fading of illumination toward darkness. Concretely realized either in the sky (the darkening end of the daylight span, dusk/nightfall) or in the eye (dimmed, failing sight). The root marks the low-light pole where perceptual clarity is diminished, as opposed to the bright/rising pole.",
+  "plain_explanation": "Thirteen of the fourteen occurrences are the temporal nouns ʿishāʾ / ʿashiyy / ʿashiyya, all denoting the dimming, darkening portion of the day — dusk, evening, nightfall. 12:16:3:1 \"wa-jāʾū abāhum ʿishāʾan yabkūn\" = they came to their father AT NIGHTFALL; 24:58:27:2 \"min baʿdi ṣalāti l-ʿishāʾ\" = after the ʿishāʾ (night/dark) prayer; 79:46:7:1 \"lam yalbathū illā ʿashiyyatan aw ḍuḥāhā\" = they tarried only an EVENING or its forenoon. A large sense-family pairs al-ʿashiyy with an explicit morning/rising term, framing it as the DIMMING counterpart to brightening light: 18:28 & 6:52 \"bi-l-ghadāti wa-l-ʿashiyy\" (dawn/morning ↔ evening), 3:41 & 40:55 \"bi-l-ʿashiyyi wa-l-ibkār\" (evening ↔ early-morning), 38:18 \"bi-l-ʿashiyyi wa-l-ishrāq\" (evening ↔ sunrise-shining), 19:11 & 19:62 \"bukratan wa-ʿashiyyan\" (early-day ↔ evening), 40:46 \"ghuduwwan wa-ʿashiyyan\" (morning ↔ evening), 30:18 \"wa-ʿashiyyan wa-ḥīna tuẓhirūn\" (evening, and noon). 38:31:4:3 \"ʿuriḍa ʿalayhi bi-l-ʿashiyyi l-ṣāfināt\" = the horses were displayed to him in the (declining-light) late-day. Across all of these the root supplies the same thing: the low-light, dimming phase — never the bright/rising phase, which is always carried by a DIFFERENT root standing opposite it. The single verb, 43:36:2:1 \"wa-man yaʿshu ʿan dhikri l-raḥmān\" = whoever is DIM-SIGHTED toward / turns a blind eye from the remembrance of the Merciful, exposes the more abstract core: yaʿshu is dimmed/failing vision (night-blindness). Subtracting the ʿan-construction (which adds the \"away-from\" vector) leaves exactly \"dimness of sight\" — the eye-internal analogue of the sky-external dusk. The concrete image shared by all fourteen is thus failing light and the loss of clear seeing that accompanies it.",
+  "layer_separation_note": "FORM: Form N (11×) is a time-noun/verbal-noun realization — it specializes the root's \"dimming of light\" as a NAMED PART OF THE DAY (dusk/evening/nightfall). Form T (tag on 19:11, 19:62; the ʿashiyyan variant) is the same nominal sense, indefinite accusative adverbial (\"[at] evening\"). Form V (43:36 yaʿshu) realizes the root as a process/state verb = \"to be dim-sighted.\" Once form is subtracted, the noun's \"evening\" and the verb's \"dim sight\" reduce to one residue: diminished light → diminished seeing. CONSTRUCTION: the prepositional frames bi-/wa- + al-ʿashiyy supply \"at/in [the time]\"; the pairing prepositions with morning-terms (ghadāt, bukra, ibkār, ishrāq, ghuduww) supply the CONTRAST that pins the root to the dark pole. In 43:36 the \"ʿan\" supplies the \"turning-away-from\" vector; the root itself contributes only the dimness/blindness, not the avoidance. PARTICIPANTS/CONTEXT: worship-timing (3:41, 6:52, 18:28, 19:11, 38:18, 40:55), eschatological punishment-timing (40:46, 79:46), narrative arrival (12:16), Solomon's horses (38:31), legal privacy (24:58) — all context; strip them and the invariant \"the dim end of light / dimmed sight\" remains.",
+  "presence": {
+   "occurrences_total": 14,
+   "occurrences_checked": 14,
+   "occurrences_consistent": 14,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "43:36:2:1 \"wa-man yaʿshu ʿan dhikri l-raḥmān\" is the hardest, because it is the sole non-temporal, non-nominal occurrence and reads as \"turns away from remembrance,\" which superficially looks like avoidance/aversion rather than \"evening.\" It reconciles cleanly once form and construction are subtracted: yaʿshu is the verb \"to have dim/failing vision\" (night-blindness); the ʿan adds the directional \"away-from.\" The residue \"dimness of sight\" is the eye-internal mirror of the sky-external \"dimness of light (dusk)\" carried by the nouns. The internally-attested bridge is that both are the SAME concrete event — light failing so that clear perception lapses — which is exactly the invariant the nominal cluster already forces. Rather than breaking the unity, 43:36 is what proves the root's core is \"dimming of light-for-seeing\" and not merely the calendar-slot \"evening.\"",
+  "competing_hypothesis": "Strongest alternative: the root's core is simply the TEMPORAL slot \"evening / late-day / nightfall\" (a pure time-of-day meaning), with no perceptual component. This covers 13 of 14 occurrences effortlessly. Internal evidence arbitrates decisively against it: 43:36 (yaʿshu ʿan) is not temporal at all and cannot be derived from \"evening-time\" — it requires a perceptual sense (dim/failing sight). A single abstraction, \"dimming of light such that seeing fails,\" subsumes both the 13 temporal nouns and the 1 perceptual verb, whereas \"evening-time\" leaves 43:36 unaccounted. Therefore the temporal reading is a form-specific (time-noun) specialization of the deeper residue, not the residue itself. The consistent opposition of al-ʿashiyy to morning/rising terms further confirms the residue is specifically the DIMMING (falling-light) direction, not a neutral time-label.",
+  "distinctiveness_note": "Nearest semantic neighbors: (1) l-y-l (layl, \"night\") and gh-s-q (ghasaq, \"onset/thickening of darkness\") name established/full darkness — ع ش و names the TRANSITION/dimming phase (dusk, the light failing) rather than achieved night. (2) The paired morning-roots gh-d-w / b-k-r / sh-r-q (\"dawn, early-morning, shining\") are its systematic OPPOSITES throughout the data (six explicit pairings), marking the rising/brightening pole; ع ش و is exclusively the falling/dimming pole. (3) ʿ-m-y (ʿamā, \"total blindness\") denotes complete loss of sight — ع ش و's yaʿshu is PARTIAL, light-dependent dimness of vision (night-blindness), not total blindness. Falsifiability condition: the hypothesis fails if any occurrence used the root for (a) a bright/rising/high-noon time, (b) full/settled darkness with no sense of transition, or (c) total, light-independent blindness. No such occurrence appears; every one of the 14 sits on the failing-light / dimmed-seeing pole.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "STRONG",
+  "rationale": "A single non-empty residue — \"the dimming/failing of light such that clear seeing lapses\" — is recoverable in every one of the 14 occurrences after subtracting form, construction, participants, and context. The 13 nominal occurrences are surface-transparent as the dimming end of the daylight span (dusk/evening/nightfall), and their repeated explicit pairing with morning/rising roots (ghadāt, bukra, ibkār, ishrāq, ghuduww) fixes the direction determinately at the falling-light pole. The lone verb (43:36, yaʿshu ʿan) is not forced into the \"evening\" mold; instead it independently exposes the abstraction (dim/failing sight) that the nouns already imply, via the internally-motivated bridge that dusk and night-blindness are one event — light failing so perception dims. This makes the unity robust rather than stipulated: the hardest case strengthens rather than threatens it. The direction is determinate and the contribution is sharply distinct from neighbor roots for full night (layl/ghasaq), morning (ghadw/bukr/shurūq), and total blindness (ʿamā). The only inferential step is generalizing the perceptual sense from a single verb token, but that step is well-anchored by the shared concrete image, so I judge STRONG rather than MODERATE. No occurrence remains unreconciled; inconsistent_refs is empty."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "E$w",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Refutation sweep of all 14 accounted for. 13 temporal nouns (ʿishāʾ/ʿashiyy/ʿashiyya) all denote the dimming, darkening end of the daylight span (dusk/evening/nightfall): 12:16 arrival at nightfall, 24:58 the dark ʿishāʾ prayer, 79:46 evening vs forenoon, 38:31 late-day horse display, plus eight merism pairings (18:28/6:52 ghadāt↔ʿashiyy; 19:11/19:62 bukra↔ʿashiyy; 40:46 ghuduww↔ʿashiyy; 3:41/40:55 ʿashiyy↔ibkār; 38:18 ʿashiyy↔ishrāq; 30:18 ʿashiyy+noon). The single verb 43:36 yaʿshu ʿan dhikr = dim/failing sight is the eye-internal analogue.\n\nHardest case = 43:36 (the verb): I pressed the homonymy objection (evening-time vs dim-sight as two roots) and the alternate \"turns a blind eye / averse\" reading. It resolves non-circularly: classical lexicon roots both al-aʿshā/ʿashā (weak, night-blind sight) and al-ʿashiyy (evening) in a shared 'dimness' notion, and even the 'averse' gloss derives from the dim-sighted-toward-firelight image, so the dimming metaphor survives. Second pressure point = over-breadth via 'perceptual clarity': the time-nouns foreground time, but the candidate's primary axis (fading illumination toward darkness) genuinely holds for evening as the darkening end of day, so it is not smuggled in.\n\nDistinctiveness holds strongly: the corpus systematically assigns the bright/rising pole to a DIFFERENT root (ghadāt/bukra/ghuduww/ibkār/ishrāq) and never to E$w; E$w is the transitional dimming pole, discriminable from full night (layl), absolute darkness (ẓalām), and onset-of-dark (ghasaq). Falsifiable: failure condition = any occurrence carrying the bright/rising sense, black-of-night, or an unrelated sense (e.g. ʿashāʾ=meal); none occur (12:16 is time, not meal). No genuine failing occurrence found; unity is distinct and falsifiable — SUPPORTED."
+ },
+ "coverage_validation": {
+  "root": "E$w",
+  "expected_count": 14,
+  "researched_count": 14,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "12:16:3:1",
+   "disposition": "CONSISTENT",
+   "note": "'jaa'u abahum 'ishaa'an' = came at NIGHTFALL/dusk; the low-light darkening phase of day — direct realization of the dimming-of-light residue."
+  },
+  {
+   "word_ref": "18:28:8:3",
+   "disposition": "CONSISTENT",
+   "note": "'bi-l-ghadati wa-l-'ashiyy' pairs morning against al-'ashiyy (evening); 'ashiyy is the dimming counterpart to the brightening dawn — residue present."
+  },
+  {
+   "word_ref": "19:11:11:2",
+   "disposition": "CONSISTENT",
+   "note": "'bukratan wa-'ashiyyan' = early-day and EVENING; 'ashiyyan is the darkening end of the daylight span opposite bukra — recoverable."
+  },
+  {
+   "word_ref": "19:62:11:2",
+   "disposition": "CONSISTENT",
+   "note": "'bukratan wa-'ashiyyan' = morning and EVENING; same dawn/dusk polarity, 'ashiyy carries the low-light pole."
+  },
+  {
+   "word_ref": "24:58:27:2",
+   "disposition": "CONSISTENT",
+   "note": "'salati l-'ishaa'' = the 'ishaa (night/dark) prayer; named for the dark portion of the day contrasted with al-fajr (dawn) in the same verse — dimming residue present."
+  },
+  {
+   "word_ref": "30:18:6:2",
+   "disposition": "CONSISTENT",
+   "note": "'wa-'ashiyyan wa-hina tuzhirun' = evening and noon; 'ashiyyan denotes the dimming late-day phase — residue recoverable."
+  },
+  {
+   "word_ref": "38:18:6:3",
+   "disposition": "CONSISTENT",
+   "note": "'bi-l-'ashiyyi wa-l-ishraq' explicitly opposes evening ('ashiyy) to sunrise-shining (ishraq); 'ashiyy = the low-light dimming pole."
+  },
+  {
+   "word_ref": "38:31:4:3",
+   "disposition": "CONSISTENT",
+   "note": "'ʿurida ʿalayhi bi-l-'ashiyy' = displayed in the declining-light late-day; the darkening end of the daylight span — residue present."
+  },
+  {
+   "word_ref": "3:41:19:3",
+   "disposition": "CONSISTENT",
+   "note": "'bi-l-'ashiyyi wa-l-ibkar' = evening and early-morning; 'ashiyy is the dimming counterpart set against ibkar (rising light)."
+  },
+  {
+   "word_ref": "40:46:5:2",
+   "disposition": "CONSISTENT",
+   "note": "'ghuduwwan wa-'ashiyyan' = morning and EVENING; 'ashiyyan carries the darkening dusk pole opposite morning."
+  },
+  {
+   "word_ref": "40:55:11:3",
+   "disposition": "CONSISTENT",
+   "note": "'bi-l-'ashiyyi wa-l-ibkar' = evening and early-morning; 'ashiyy = the dimming/low-light phase opposite the brightening ibkar."
+  },
+  {
+   "word_ref": "43:36:2:1",
+   "disposition": "CONSISTENT",
+   "note": "verb 'yaʿshu ʿan dhikri l-rahman' = is DIM-SIGHTED/turns blind toward; subtracting the 'an away-from vector leaves 'dimness of sight' — the eye-internal analogue of dusk, the abstract core of the root."
+  },
+  {
+   "word_ref": "6:52:7:3",
+   "disposition": "CONSISTENT",
+   "note": "'bi-l-ghadati wa-l-'ashiyy' = morning and evening; al-'ashiyy is the dimming counterpart to the morning-rising light — residue present."
+  },
+  {
+   "word_ref": "79:46:7:1",
+   "disposition": "CONSISTENT",
+   "note": "'illa 'ashiyyatan aw duhaha' = only an EVENING or its forenoon; 'ashiyya is the darkening late-day phase opposed to duha (forenoon light) — recoverable."
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "STRONG",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

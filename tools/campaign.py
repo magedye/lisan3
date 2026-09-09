@@ -63,15 +63,27 @@ SHARD_SIZE = 50
 
 # Buckwalter root symbols that are illegal in Windows filenames.
 _FS_ILLEGAL = '*<>|":?\\/'
+# Uppercase Buckwalter letters whose lowercase form is ALSO a Buckwalter letter:
+# H/h (ح/ه), S/s (ص/س), D/d (ض/د), T/t (ط/ت), Z/z (ظ/ز). On a case-insensitive
+# filesystem (Windows/macOS) these collide with their lowercase twin — e.g.
+# Swm (ص و م) and swm (س و م) both map to "swm.json", so one silently overwrites
+# the other's durable artifact. The QAC root universe has 137 such case-fold
+# pairs, so this WILL corrupt data at scale. Escape them with the same reversible
+# hex scheme. (A/E never collide — 'a'/'e' are not Buckwalter letters — so they
+# stay legible.)
+_CASE_COLLIDING = "HSDTZ"
+_ESCAPE = set(_FS_ILLEGAL) | set(_CASE_COLLIDING)
 
 
 def safe_name(root: str) -> str:
-    """Deterministic filename-safe encoding of a Buckwalter root.
+    """Deterministic, case-insensitive-collision-safe encoding of a Buckwalter root.
 
-    Only encodes filesystem-illegal characters (e.g. '*' dhal -> _2A_); legal
-    symbols like '$' stay as-is so existing packet/shard files remain valid.
+    Encodes filesystem-illegal characters (e.g. '*' dhal -> _2A_) AND the
+    uppercase homograph letters H/S/D/T/Z (e.g. 'S' -> _53_) so a root never
+    shares an artifact filename with its case-twin. Legal, non-colliding symbols
+    like '$' and letters like 'A'/'E' stay as-is.
     """
-    return "".join(f"_{ord(c):02X}_" if c in _FS_ILLEGAL else c for c in root)
+    return "".join(f"_{ord(c):02X}_" if c in _ESCAPE else c for c in root)
 
 _engine = create_engine(SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False})
 _Session = sessionmaker(bind=_engine)

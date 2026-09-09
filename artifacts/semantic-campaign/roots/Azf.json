@@ -1,0 +1,78 @@
+{
+ "root_buckwalter": "Azf",
+ "root_arabic": "ا ز ف",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch05-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "The root contributes the notion of IMMINENT TEMPORAL DRAWING-NEAR: an appointed event pressing close / becoming at-hand in time. The invariant is not mere spatial or generic nearness but the impending, urgent approach of a fixed moment that is on the verge of arriving.",
+ "internal_discovery": {
+  "root_buckwalter": "Azf",
+  "root_arabic": "أزف",
+  "candidate_root_contribution": "The root contributes the notion of IMMINENT TEMPORAL DRAWING-NEAR: an appointed event pressing close / becoming at-hand in time. The invariant is not mere spatial or generic nearness but the impending, urgent approach of a fixed moment that is on the verge of arriving.",
+  "plain_explanation": "Only two verses carry the root, and one of them holds two of the three occurrences, which lets internal evidence arbitrate cleanly. In 53:57 the finite verb and the participle stand side by side: أَزِفَتِ ٱلْـَٔازِفَةُ — \"the Āzifah has drawn near.\" The verb أَزِفَتْ (form I perfect) supplies the surface-explicit predicate \"has drawn near / become imminent,\" and its subject ٱلْآزِفَةُ is the active participle from the same root used substantively as an epithet (\"the Approaching / Impending one\"). The fact that the root is predicated of its own participle — \"the Approaching has approached\" — shows the live charge is the ACT of temporal approach, not an emptied label. In 40:18, يَوْمَ ٱلْآزِفَةِ (\"the Day of the Āzifah\") uses the same participle as a name for the Day of Judgment; the continuation إِذِ ٱلْقُلُوبُ لَدَى ٱلْحَنَاجِرِ (hearts reaching the throats) frames it as an impending, pressing crisis. Across all three, subtracting the eschatological referent (the Hour/Day) leaves the same residue: something is on the point of arriving, temporally at hand.",
+  "layer_separation_note": "(a) FORM: form I perfect verb أَزِفَتْ = \"drew near / became imminent\" (53:57:1:1); active participle آزِفَة = \"the one drawing near\" used substantively (53:57:2:2 and 40:18:3:2). The participle nominalizes the verbal event into an agent-epithet. (b) CONSTRUCTION: intransitive throughout; no preposition supplies a directional or binding vector — the approach is inherent to the verb, subject-internal. In 40:18 the genitive iḍāfa يَوْمَ ٱلْآزِفَةِ (\"Day of the Approaching\") adds a temporal-container frame but does not alter the root sense. (c) PARTICIPANTS: subject is always the eschatological event (the Hour / the Day). (d) CONTEXT: uniformly eschatological/warning. After subtracting (a)-(d), the residue left in every case is pure temporal imminence: \"on the verge of arrival.\"",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "The hardest case is 40:18:3:2, يَوْمَ ٱلْآزِفَةِ, where ٱلْآزِفَة functions as a fixed proper-name epithet for the Day of Judgment. One could argue the root here has bleached into a mere label (\"the Hour\"), losing the \"approaching\" content. It reconciles decisively via internal evidence: 53:57 predicates the verb أَزِفَتْ (\"has drawn near\") OF this very same participle ٱلْآزِفَةُ. That predication would be tautological/vacuous if the participle meant only \"the Hour\"; it is coherent only if the participle still carries \"the Approaching one.\" So the naming use in 40:18 is a transparent derivation from the live sense of temporal approach, not a break from it.",
+  "competing_hypothesis": "The strongest alternative is that the root simply denotes \"the Hour / the eschatological event\" as a bare designator, with no active \"approach\" content. Internal evidence arbitrates against it: in 53:57 the root's own verb أَزِفَتْ is predicated of the root's own participle ٱلْآزِفَةُ. If the root meant merely \"the Hour,\" the sentence would say \"the Hour hour-ed,\" which is empty; the sentence is informative only if the verb contributes \"drew near / became imminent.\" Therefore the imminence-of-approach reading is required and the bare-designator reading fails. A second alternative — generic \"nearness\" (proximity in general) — is ruled out because every occurrence is temporal (an event about to arrive), never spatial or relational.",
+  "distinctiveness_note": "Nearest semantic neighbors: q-r-b (qaruba, \"to be near\" — broad, covers spatial, relational, and temporal nearness, and is stative), and d-n-w (danā, \"to draw near / come close\" — general approach, including spatial, e.g. 53:8). Azf is narrower than both: it denotes specifically the IMMINENT approach of an appointed moment in TIME, with a connotation of pressing urgency (the moment is virtually upon one). Where qaruba/danā can describe any degree or kind of nearness, Azf in this data is exclusively the impending arrival of a fixed temporal event. Falsifiability condition: if a confirmed occurrence used the root for spatial approach, for stable/static nearness, or for anything other than an impending temporal arrival, the \"imminent temporal drawing-near\" residue would be falsified.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "STRONG",
+  "rationale": "A single non-empty contribution — imminent temporal drawing-near — is recoverable in all three occurrences without forcing. The direction is determinate (approach toward arrival, not stative nearness) and surface-explicit: the form I verb أَزِفَتْ overtly means \"has drawn near,\" and the participle آزِفَة is transparently \"the approaching one.\" The two form-families (verb, participle) sit together in 53:57, where the verb is predicated of the participle, giving an internal near-proof that the participle-name preserves the verbal \"approach\" sense; this same participle is the label in 40:18, so unity holds across every occurrence. Distinctness from q-r-b and d-n-w is clear because the data confines Azf to impending temporal arrival. The only caution is the small, tightly clustered corpus (two of three in one verse), but the verb+participle co-predication makes the sense sharply determinate rather than inferential, so STRONG is warranted. No occurrence is left unreconciled; inconsistent_refs is empty."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "Azf",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Tried hard to refute across all 3 occurrences (2 verses); found no genuine failing occurrence. ANCHOR (53:57): the verb أَزِفَتْ ('has drawn near', form I perfect) is a surface-explicit predicate of imminent temporal approach and is predicated of its own cognate participle ٱلْآزِفَةُ — 'the Approaching has approached'. This decisively proves the root is a LIVE act of temporal drawing-near, not an emptied label, and cannot be reduced to the eschatological referent. HARDEST CASE (40:18): يَوْمَ ٱلْآزِفَةِ uses the participle as a bare name for the Day, which a skeptic could argue empties the root into a label with imminence supplied by the referent. Rejected because (a) 53:57 already proves the root live, and (b) the context إِذِ ٱلْقُلُوبُ لَدَى ٱلْحَنَاجِرِ frames a pressing, impending crisis that confirms rather than empties the imminence charge. HOMONYMY PROBE: classical أزف also carries senses of haste (عجل) and straitness/distress (ضاق); I checked whether 40:18's distress context forces a 'distressing one' reading (potential split), but these senses are facets of urgent/pressing approach and reinforce the invariant — no Quranic occurrence forces a non-temporal reading. NEIGHBOR CONTRAST: distinct from قرب (generic spatial-or-temporal nearness); أزف is the marked term for URGENT, on-the-verge imminence of a fixed appointed moment — real discrimination, not a vague blob. Falsifiable via a clear failure condition (pure spatial nearness / emptied name / distress-without-imminence) that no occurrence meets. Caveat noted for transparency: dataset is small (only 2 verses, both eschatological, one word a proper-name epithet), but the verb+participle pairing in 53:57 gives internal arbitration strong enough to license SUPPORTED rather than PARTIALLY_SUPPORTED."
+ },
+ "coverage_validation": {
+  "root": "Azf",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "40:18:3:2",
+   "disposition": "CONSISTENT",
+   "note": "يَوْمَ ٱلْآزِفَةِ names the Day of Judgment via the participle 'the Impending One'; continuation إِذِ ٱلْقُلُوبُ لَدَى ٱلْحَنَاجِرِ frames it as a pressing, at-hand crisis. Subtracting the eschatological referent leaves the residue of an appointed moment on the verge of arriving."
+  },
+  {
+   "word_ref": "53:57:1:1",
+   "disposition": "CONSISTENT",
+   "note": "Form I perfect أَزِفَتْ is the surface-explicit predicate 'has drawn near / become imminent' — the live temporal-approach charge is overtly verbalized."
+  },
+  {
+   "word_ref": "53:57:2:2",
+   "disposition": "CONSISTENT",
+   "note": "Active participle ٱلْآزِفَةُ used substantively as epithet 'the Approaching One'; being predicated by its own root verb (أَزِفَتِ ٱلْآزِفَةُ, 'the Approaching has approached') confirms the residue is the act of imminent temporal drawing-near, not an emptied label."
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "STRONG",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

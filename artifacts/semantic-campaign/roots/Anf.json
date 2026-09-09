@@ -1,0 +1,84 @@
+{
+ "root_buckwalter": "Anf",
+ "root_arabic": "ا ن ف",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch05-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "The foremost / leading front-extremity of an entity — its protruding front-point taken as the salient forward edge (spatially: the projecting front of the face = the nose; extended temporally: the leading, immediately-adjacent edge of just-elapsed time = \"just now\").",
+ "internal_discovery": {
+  "root_buckwalter": "Anf",
+  "root_arabic": "أ ن ف",
+  "candidate_root_contribution": "The foremost / leading front-extremity of an entity — its protruding front-point taken as the salient forward edge (spatially: the projecting front of the face = the nose; extended temporally: the leading, immediately-adjacent edge of just-elapsed time = \"just now\").",
+  "plain_explanation": "Only two surface senses appear across the three occurrences. (A) In 5:45 (words 9:3 وَٱلْأَنفَ and 10:3 بِٱلْأَنفِ) the form is the concrete noun ٱلْأَنف \"the nose,\" embedded in the lex-talionis catalogue النفس بالنفس ... والأنف بالأنف \"the nose for the nose.\" The referent is the anatomical organ that is, physically, the frontmost projecting feature of the face. (B) In 47:16 (word 16:1) the form is the active-participle-adverbial ءَانِفًا in مَاذَا قَالَ ءَانِفًا \"what did he say just now / a moment ago\" — a temporal adverb pointing to the immediately preceding instant. The only abstraction that could unify both is a domain-neutral notion of \"foremost/leading front-point\": the nose as the forward projection of the face, and \"just now\" as the leading/nearest front-edge of elapsed time. But note that in NEITHER occurrence is this abstract \"front-point\" residue surface-present: in (A) the surface value is simply \"nose,\" and in (B) it is simply \"recently.\" The connecting schema must be supplied by inference, not read off the text.",
+  "layer_separation_note": "Subtractions: (a) FORM — 5:45 is a bare masculine noun (definite, once accusative object of the qiṣāṣ frame, once genitive under bi-); 47:16 is an active participle used adverbially in the accusative (ءَانِفًا). Stripping these leaves \"nose\" and \"recent/foremost-in-time\" respectively. (b) CONSTRUCTION — bi- in بِٱلْأَنفِ supplies the \"in exchange/retaliation-for\" vector (X for X); the accusative on ءَانِفًا supplies the adverbial \"at the time of\" framing. Neither preposition/case contributes the core. (c) PARTICIPANTS — victims/perpetrators in the retaliation law vs. the hypocrite-listeners and the Prophet's speech in 47:16; irrelevant to the residue. (d) CONTEXT — legal-retributive (5:45) vs. narrative-polemical (47:16); irrelevant. After all four subtractions the two residues that remain, \"protruding front-organ (nose)\" and \"leading front-edge of elapsed time (just now),\" do not collapse to one surface-recoverable value; only an inferred spatial→temporal \"foremost-point\" metaphor joins them, and that bridge is nowhere attested internally.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 2,
+   "inconsistent_refs": [
+    "47:16:16:1"
+   ]
+  },
+  "strongest_counterexample": "47:16:16:1 (ءَانِفًا). The two 5:45 tokens are mutually consistent (both = \"nose,\" the front-projecting facial organ) and can each carry a \"foremost front-point\" reading with only mild inference. ءَانِفًا cannot: its determinate surface value is purely temporal (\"just now / a moment ago\"), and recovering the \"foremost/front\" residue from it requires a spatial→temporal metaphor (front-in-space → nearest-in-past-time). No occurrence in the packet displays that spatial-to-temporal bridge, so the metaphor is externally/etymologically motivated, not internally attested. It therefore stays unreconciled by pure layer-subtraction.",
+  "competing_hypothesis": "Two rival centers each cover only part of the data. (1) \"Nose / protruding facial organ\" fits both 5:45 tokens perfectly but leaves ءَانِفًا wholly unexplained. (2) \"Initial/leading point in time — recent, beginning-most\" fits ءَانِفًا well (and matches the well-known استئناف \"to begin anew\" family) but does not naturally yield \"nose.\" A third, more abstract center — \"foremost/front-extremity\" — subsumes both only by asserting the very spatial→temporal extension at issue. With just 3 tokens and zero bridging occurrence, internal evidence cannot arbitrate between \"the root means the front-organ and 47:16 is a separate homonym\" versus \"one abstract front-point schema underlies both.\" The data underdetermines the choice.",
+  "distinctiveness_note": "Nearest neighbors: (i) roots for other retaliation-list organs — ςyn عين (eye), A*n أذن (ear), snn سنّ (tooth) — which are pure concrete body-part designators with no temporal extension; Anf would be distinguished by its (claimed) additional temporal \"foremost/recent\" sense, but that very sense is what is unsupported here. (ii) qbl قبل and Amm أمّ / Awl (front/before/first) which carry \"front/prior\" without any anatomical anchor. (iii) bd> بدأ \"to begin,\" semantic neighbor of the \"just now/initial\" sense. Falsifiability: the unified \"foremost front-point\" reading would be confirmed if a Qur'anic (or same-corpus) occurrence displayed the root simultaneously in a front-spatial AND front-temporal sense, or a derivation (e.g., استأنف \"resume from the front/beginning\") bridging the two; it is disconfirmed — as here — when the anatomical and temporal senses occur only in disjoint contexts with no attested connective, forcing the link to be imported from outside the corpus.",
+  "unresolved_cases": [
+   "47:16:16:1 — ءَانِفًا 'just now/a moment ago': temporal-adverbial sense that cannot be reduced to the concrete 'nose/front-organ' residue of the 5:45 tokens without an internally-unattested spatial→temporal metaphor; whether it shares one root residue with 'nose' or is an effective homonym cannot be settled from these 3 occurrences alone."
+  ],
+  "result": "UNRESOLVED",
+  "result_strength": "UNRESOLVED",
+  "rationale": "The 3 occurrences split into two disjoint surface senses — the concrete organ ٱلْأَنف \"nose\" (5:45, two tokens, mutually consistent) and the temporal adverb ءَانِفًا \"just now\" (47:16). A single non-empty residue can be stated only at a high abstraction (\"foremost/leading front-extremity\"), and even there it is NOT surface-recoverable in either family: the nose tokens read simply \"nose,\" and ءَانِفًا reads simply \"recently.\" Joining them demands a spatial→temporal (\"front\" → \"most-recent\") metaphorical extension for which there is NO internally-attested bridging occurrence in the packet. Per the standard that metaphorical extension is licensed only by an internal bridge, that bridge is absent, so I do not force PREFERRED. Internal evidence cannot arbitrate between a genuine unified front-point schema and effective homonymy; with n=3 and no connective token the anomaly (47:16:16:1) stays unreconciled, so I honestly record it in inconsistent_refs and decline to claim clean universal presence. Hence UNRESOLVED rather than a manufactured unity."
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "Anf",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Adversarial sweep over all 3 occurrences (single form N). Two surface senses: concrete nose in 5:45:9:3 (وَٱلْأَنفَ) and 5:45:10:3 (بِٱلْأَنفِ), and temporal adverb آنِفًا 'just now' in 47:16:16:1. Attempted refutation via the nose vs. 'just now' split and the discovery note's own admission that the abstract 'front-point' residue is surface-absent in both. Resolution: the split is bridged by a robust, externally-motivated classical unity, NOT circular reasoning — the root ء/ا ن ف genuinely centers on أول/مقدَّم 'front/foremost/projecting tip' (أنف الجبل = projecting front of a mountain; استأنف/ائتنف = take up from the front/beginning; أُنُف = fresh/at-its-start; آنفًا = the leading edge of just-elapsed time). In all three occurrences the 'protruding/leading front-point' component is present and none contradicts it, so there is no genuine failing occurrence. Homonymy objection (nose vs. recently as accidental homophones) is weak because the derivational family attests a single coherent root. Surface-non-presence of an abstracted residue is a general property of root contributions and does not constitute an occurrence-level failure. Distinctiveness holds: the salient projecting front-tip discriminates against neighbors qdm (sequential precedence), wjh (face/direction), and أمام (positional front) — Anf is specifically the protruding point, not ordinal priority or facing-direction. Falsifiable: failure condition = any occurrence lacking a front/foremost/projecting component; none of the 3 meets it. Verdict SUPPORTED."
+ },
+ "coverage_validation": {
+  "root": "Anf",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "47:16:16:1",
+   "disposition": "CONSISTENT",
+   "note": "ءَانِفًا in مَاذَا قَالَ ءَانِفًا = 'what did he say just now'. Temporal adverb for the immediately-preceding instant. This is a metaphorical extension explicitly authorized by the candidate's own stated logic ('extended temporally: the leading, immediately-adjacent edge of just-elapsed time = just now'), so the front-point residue is recoverable via the candidate's own bridge."
+  },
+  {
+   "word_ref": "5:45:10:3",
+   "disposition": "CONSISTENT",
+   "note": "بِٱلْأَنفِ 'for the nose' in the lex-talionis catalogue وَٱلْأَنفَ بِٱلْأَنفِ. Concrete anatomical nose = the frontmost projecting feature of the face; matches the candidate's spatial core ('the projecting front of the face = the nose') directly."
+  },
+  {
+   "word_ref": "5:45:9:3",
+   "disposition": "CONSISTENT",
+   "note": "وَٱلْأَنفَ 'the nose' in وَٱلْأَنفَ بِٱلْأَنفِ. Same anatomical organ, the salient forward projection of the face; candidate spatial residue present on the surface."
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "UNRESOLVED",
+ "result_strength": "UNRESOLVED",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PARTIAL",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "47:16:16:1"
+ ],
+ "unreconciled_count": 1,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}
