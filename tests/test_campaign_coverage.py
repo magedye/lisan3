@@ -12,6 +12,9 @@ word_ref-level exact-set rules:
  8 reprocessing preserves lineage rather than overwriting prior evidence
 """
 
+import json
+from pathlib import Path
+
 import pytest
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -424,3 +427,71 @@ def test_19_safe_name_is_case_insensitive_collision_safe():
     assert safe_name("w*r") == "w_2A_r"     # FS-illegal '*' still escaped
     assert safe_name("Swm") == "_53_wm"      # homograph 'S' escaped, distinct from swm
     assert safe_name("swm") == "swm"
+    assert safe_name("w*r") == safe_name("w*r")  # deterministic replay
+
+
+def test_20_committed_root_artifact_identities_are_unique_and_resolvable():
+    from tools.campaign import safe_name
+
+    repository_root = Path(__file__).resolve().parents[1]
+    ledger = json.loads((repository_root / "artifacts/semantic-campaign/"
+                         "CAMPAIGN_RESEARCH_LEDGER.json").read_text(encoding="utf-8"))
+    physical_names = [f"{safe_name(root)}.json" for root in ledger["roots"]]
+    assert len(physical_names) == len({name.casefold() for name in physical_names})
+
+    for root, entry in ledger["roots"].items():
+        relative_path = Path("artifacts/semantic-campaign/roots") / f"{safe_name(root)}.json"
+        assert entry["artifact"] == relative_path.as_posix()
+        artifact = json.loads((repository_root / relative_path).read_text(encoding="utf-8"))
+        assert artifact["root_buckwalter"] == root
+
+
+def test_21_prep_refuses_foreign_root_artifact_collision(tmp_path, monkeypatch, db):
+    import tools.campaign as camp
+
+    class Profile:
+        total_confirmed_occurrences = 0
+        forms = []
+
+    monkeypatch.setattr(camp, "_Session", lambda: db)
+    monkeypatch.setattr(
+        camp.RootDescriptiveProfileService,
+        "build_from_snapshot",
+        lambda *_args: Profile(),
+    )
+    monkeypatch.setattr(camp, "confirmed_word_refs", lambda *_args: [])
+    monkeypatch.setattr(camp, "_tokens_for_root", lambda *_args: [])
+    outdir = tmp_path / "packets"
+    outdir.mkdir()
+    artifact_path = outdir / "ktb.json"
+    original = json.dumps({"root_buckwalter": "foreign", "sentinel": "preserve"})
+    artifact_path.write_text(original, encoding="utf-8")
+    args = type("Args", (), {"roots": ROOT, "out": str(outdir)})()
+
+    with pytest.raises(
+        camp.ArtifactIdentityCollisionError,
+        match="existing canonical root 'foreign' != requested canonical root 'ktb'",
+    ):
+        camp.cmd_prep(args)
+
+    assert artifact_path.read_text(encoding="utf-8") == original
+
+
+def test_22_persist_coverage_refuses_foreign_root_artifact_collision(
+        tmp_path, monkeypatch, db):
+    coverage = [{"root": ROOT, "dispositions": [
+        _mapper(ref, "CONSISTENT", "mapped") for ref in REFS
+    ], "reconciliation": []}]
+    camp, ns, _art, _ledger = _run_persist_coverage(
+        tmp_path, monkeypatch, coverage)
+    artifact_path = tmp_path / "roots" / "ktb.json"
+    original = json.dumps({"root_buckwalter": "foreign", "sentinel": "preserve"})
+    artifact_path.write_text(original, encoding="utf-8")
+
+    with pytest.raises(
+        camp.ArtifactIdentityCollisionError,
+        match="existing canonical root 'foreign' != requested canonical root 'ktb'",
+    ):
+        camp.cmd_persist_coverage(ns)
+
+    assert artifact_path.read_text(encoding="utf-8") == original

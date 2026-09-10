@@ -85,6 +85,46 @@ def safe_name(root: str) -> str:
     """
     return "".join(f"_{ord(c):02X}_" if c in _ESCAPE else c for c in root)
 
+
+class ArtifactIdentityCollisionError(RuntimeError):
+    """Raised before a root artifact could overwrite another root's bytes."""
+
+
+def _write_root_json(path: Path, root: str, artifact: dict) -> None:
+    """Write one root-owned JSON artifact, failing closed on identity mismatch."""
+    payload_root = artifact.get("root_buckwalter")
+    if payload_root != root:
+        raise ArtifactIdentityCollisionError(
+            f"artifact payload canonical root {payload_root!r} != requested "
+            f"canonical root {root!r}"
+        )
+
+    serialized = json.dumps(artifact, ensure_ascii=False, indent=1)
+    try:
+        # Exclusive creation closes the first-writer race when a path is absent.
+        with path.open("x", encoding="utf-8") as stream:
+            stream.write(serialized)
+        return
+    except FileExistsError:
+        pass
+
+    try:
+        existing = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+        raise ArtifactIdentityCollisionError(
+            f"cannot verify existing artifact identity at {path} before "
+            f"writing canonical root {root!r}"
+        ) from exc
+    existing_root = existing.get("root_buckwalter") if isinstance(existing, dict) else None
+    if existing_root != root:
+        raise ArtifactIdentityCollisionError(
+            f"artifact identity collision at {path}: existing canonical root "
+            f"{existing_root!r} != requested canonical root {root!r}"
+        )
+
+    path.write_text(serialized, encoding="utf-8")
+
+
 _engine = create_engine(SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False})
 _Session = sessionmaker(bind=_engine)
 
@@ -203,8 +243,7 @@ def cmd_prep(args):
             "form_inventory": [{"form": f.form, "count": f.count} for f in prof.forms],
             "occurrences": occ,
         }
-        (outdir / f"{safe_name(root)}.json").write_text(
-            json.dumps(packet, ensure_ascii=False, indent=1), encoding="utf-8")
+        _write_root_json(outdir / f"{safe_name(root)}.json", root, packet)
         manifest.append({"root": root, "file": safe_name(root),
                          "arabic": buckwalter_to_arabic(root),
                          "occ": prof.total_confirmed_occurrences})
@@ -371,8 +410,7 @@ def cmd_prep_coverage(args):
                     "verse_text": verse_text.get(tok_by_ref[r].verse_ref, ""),
                 } for r in shard_refs],
             }
-            (outdir / f"{safe_name(root)}.s{k}.json").write_text(
-                json.dumps(shard, ensure_ascii=False, indent=1), encoding="utf-8")
+            _write_root_json(outdir / f"{safe_name(root)}.s{k}.json", root, shard)
         manifest.append({"root": root, "file": safe_name(root),
                          "shards": len(shards), "expected_refs": len(refs)})
     (outdir / "_coverage_manifest.json").write_text(
@@ -435,8 +473,7 @@ def cmd_persist_coverage(args):
             "resistant_deep_analysis": reconciliation_lineage,
             **disp,
         }
-        (ROOT_ARTIFACTS / f"{safe_name(root)}.json").write_text(
-            json.dumps(artifact, ensure_ascii=False, indent=1), encoding="utf-8")
+        _write_root_json(ROOT_ARTIFACTS / f"{safe_name(root)}.json", root, artifact)
         ledger_entry = {
             "root_arabic": buckwalter_to_arabic(root),
             "occurrences": occ,

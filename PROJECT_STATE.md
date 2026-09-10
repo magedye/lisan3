@@ -713,3 +713,54 @@ compare the official byte size/SHA-256 with the Stage-A candidate and record the
 authoritative response without broadening Stage A. Do not commit or redistribute
 the raw artifact unless the response clearly qualifies that action. Do not
 authorize or start Stage B, C, D, or E under that blocker-resolution action.
+
+## Artifact-Identity Remediation Checkpoint (2026-09-10)
+
+- Task starting branch/HEAD: `pre-analysis-foundation` /
+  `201058c8d680afa317ba046cb49bfd7b1bdcd366`; coverage-provenance baseline
+  `45590ee4bfd617e47060330917fd17cce608b42c` is an ancestor.
+- Scope: Windows case-insensitive semantic-campaign root-artifact identity,
+  defensive write guards, Batch 04 `swm` recovery proof, and the minimum
+  controlled Batch 05 `Swm` replay. No semantic root was started.
+- The starting HEAD already encoded case-colliding uppercase Buckwalter symbols
+  `H/S/D/T/Z` with the explicit reversible hex form used for filesystem-illegal
+  characters. The final 1,642-root runtime-universe scan produced 1,642 distinct
+  case-folded filenames and zero collisions: `swm.json` versus `_53_wm.json`.
+- A shared `_write_root_json` boundary now verifies both the outgoing
+  `root_buckwalter` identity and any existing artifact identity before writing.
+  It is used by `prep`, `prep-coverage`, and `persist-coverage`; unreadable,
+  identity-less, or foreign-root existing artifacts fail closed.
+- Compatibility audit: all 48 pre-Batch-05 artifacts remain present; 14 paths
+  required deterministic filename migration, and all 48 contents remain
+  byte-identical to `c2b8434`. The sole stale ledger reference, Batch 05 `Swm`,
+  was corrected from `roots/Swm.json` to `roots/_53_wm.json`.
+- Batch 04 `swm.json` is byte-identical to `c2b8434` (Git blob
+  `1139cb0ff340021b907c4dd860a775a87b5218d0`; SHA-256
+  `5a2fa4064b7c9c1ef8d58a7e057dea4da2086097d2eb4ba304d24804023b92a9`)
+  and carries `root_buckwalter = swm`.
+- V1: five focused naming, reference-resolution, write-guard, and same-root
+  replay checks passed. V2: `tests/test_campaign_coverage.py` plus
+  `tests/test_qac_morphology.py` passed 27 tests; focused Ruff passed.
+- Controlled V3 used a copied campaign database and temporary output tree.
+  Batch 05 `Swm` prep produced `_53_wm.json`, coverage prep produced
+  `_53_wm.s0.json`, `persist-coverage` retained exact-set `COMPLETE`, both
+  ledger references resolved, and the copied Batch 04 `swm.json` hash remained
+  unchanged. Repository campaign outputs were not rewritten by this replay.
+- No concurrent semantic-campaign writer was present at either process check.
+  Eighty-eight pre-existing ignored Batch 06 coverage scratch files dated
+  2026-09-10 02:54:08-02:54:10 were preserved, not regenerated, staged, or
+  treated as evidence by this remediation.
+- Changed tracked files: `tools/campaign.py`,
+  `tests/test_campaign_coverage.py`,
+  `artifacts/semantic-campaign/CAMPAIGN_RESEARCH_LEDGER.json`, and this state
+  checkpoint. Owner-untracked files remain preserved and excluded.
+- Remediation state: `IMPLEMENTED`, `TESTED`, and `VERIFIED_FOR_PROFILE` for
+  the bounded artifact-identity profile. Independent review and release
+  acceptance are not established.
+
+## Current Exact Next Action
+
+Run a fresh read-only independent review against the exact remediation commit,
+checking the candidate diff, 1,642-root collision scan, migrated-reference
+resolution, Batch 04 byte identity, and controlled Batch 05 replay evidence.
+Do not resume or accept Batch 06 under that review authorization.
