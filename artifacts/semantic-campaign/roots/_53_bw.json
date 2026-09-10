@@ -1,0 +1,234 @@
+{
+ "root_arabic": "ص ب و",
+ "root_buckwalter": "Sbw",
+ "root_id": "Sbw",
+ "artifact_name": "_53_bw.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch06-wave2-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "UNRESOLVED: the two boy/youth nouns and the one inclination verb are clear families, but the Quran supplies no distinctive bridge between youth and inclination",
+ "internal_discovery": {
+  "candidate_root_contribution": "UNRESOLVED: the two boy/youth nouns and the one inclination verb are clear families, but the Quran supplies no distinctive bridge between youth and inclination",
+  "plain_explanation": "Two occurrences call John and Jesus a boy; one has Joseph say he may incline toward the women. A proposal based on youthful inclination imports a participant stereotype rather than extracting a shared root contribution.",
+  "layer_separation_note": "Part of speech and surface form separate the child noun from the inclination verb. Context supplies age in one family and directed attraction in the other.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 0,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "The two sabiyyan tokens state age/status without desire, while 12:33 states inclination without youth.",
+  "competing_hypothesis": "Youth is defined by inclination; the Quranic occurrences do not assert that generalization.",
+  "distinctiveness_note": "Any bridge broad enough to cover age and attraction becomes non-distinctive against desire, leaning, and childhood terms.",
+  "unresolved_cases": [
+   "boy/youth nouns (2)",
+   "inclination verb (1)"
+  ],
+  "result": "UNRESOLVED",
+  "result_strength": "UNRESOLVED",
+  "rationale": "Sparse evidence yields two disconnected families; semantic unity is not forced.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "boy_nouns",
+     "where": {
+      "qac_pos": [
+       "N"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "a boy or male child",
+     "classification_rationale": "Both contexts directly encode young age but no inclination residue.",
+     "supporting_evidence_note": "19:12 and 19:29 were reviewed directly.",
+     "counterevidence": [
+      "Neither verse expresses desire or leaning."
+     ]
+    },
+    {
+     "cluster_id": "inclination_verb",
+     "where": {
+      "qac_pos": [
+       "V"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "incline toward an attractive solicitation",
+     "classification_rationale": "12:33 encodes inclination but no childhood/youth feature.",
+     "supporting_evidence_note": "12:33 was reviewed directly.",
+     "counterevidence": [
+      "The subject is not characterized as a boy in the occurrence."
+     ]
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "Sbw",
+  "verdict": "PARTIALLY_SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": false,
+  "falsifiable": true,
+  "notes": "Both families are preserved; no unified root contribution is claimed."
+ },
+ "coverage_validation": {
+  "root": "Sbw",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "12:33:13:1",
+   "disposition": "RESISTANT",
+   "note": "12:33 encodes inclination but no childhood/youth feature.",
+   "coverage_cluster_id": "inclination_verb",
+   "candidate_semantic_interpretation": "incline toward an attractive solicitation",
+   "cluster_supporting_evidence": "12:33 was reviewed directly.",
+   "counterevidence": [
+    "The subject is not characterized as a boy in the occurrence."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "12:33",
+     "verse_text": "قَالَ رَبِّ ٱلسِّجْنُ أَحَبُّ إِلَىَّ مِمَّا يَدْعُونَنِىٓ إِلَيْهِ وَإِلَّا تَصْرِفْ عَنِّى كَيْدَهُنَّ أَصْبُ إِلَيْهِنَّ وَأَكُن مِّنَ ٱلْجَٰهِلِينَ"
+    }
+   ],
+   "root_arabic": "ص ب و",
+   "root_buckwalter": "Sbw",
+   "root_id": "Sbw",
+   "artifact_name": "_53_bw.json",
+   "verse_ref": "12:33",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">aSobu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالَ رَبِّ ٱلسِّجْنُ أَحَبُّ إِلَىَّ مِمَّا يَدْعُونَنِىٓ إِلَيْهِ وَإِلَّا تَصْرِفْ عَنِّى كَيْدَهُنَّ أَصْبُ إِلَيْهِنَّ وَأَكُن مِّنَ ٱلْجَٰهِلِينَ"
+  },
+  {
+   "word_ref": "19:12:7:1",
+   "disposition": "RESISTANT",
+   "note": "Both contexts directly encode young age but no inclination residue.",
+   "coverage_cluster_id": "boy_nouns",
+   "candidate_semantic_interpretation": "a boy or male child",
+   "cluster_supporting_evidence": "19:12 and 19:29 were reviewed directly.",
+   "counterevidence": [
+    "Neither verse expresses desire or leaning."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "19:12",
+     "verse_text": "يَٰيَحْيَىٰ خُذِ ٱلْكِتَٰبَ بِقُوَّةٍ وَءَاتَيْنَٰهُ ٱلْحُكْمَ صَبِيًّا"
+    }
+   ],
+   "root_arabic": "ص ب و",
+   "root_buckwalter": "Sbw",
+   "root_id": "Sbw",
+   "artifact_name": "_53_bw.json",
+   "verse_ref": "19:12",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Sabiy~FA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰيَحْيَىٰ خُذِ ٱلْكِتَٰبَ بِقُوَّةٍ وَءَاتَيْنَٰهُ ٱلْحُكْمَ صَبِيًّا"
+  },
+  {
+   "word_ref": "19:29:10:1",
+   "disposition": "RESISTANT",
+   "note": "Both contexts directly encode young age but no inclination residue.",
+   "coverage_cluster_id": "boy_nouns",
+   "candidate_semantic_interpretation": "a boy or male child",
+   "cluster_supporting_evidence": "19:12 and 19:29 were reviewed directly.",
+   "counterevidence": [
+    "Neither verse expresses desire or leaning."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "19:29",
+     "verse_text": "فَأَشَارَتْ إِلَيْهِ قَالُوا۟ كَيْفَ نُكَلِّمُ مَن كَانَ فِى ٱلْمَهْدِ صَبِيًّا"
+    }
+   ],
+   "root_arabic": "ص ب و",
+   "root_buckwalter": "Sbw",
+   "root_id": "Sbw",
+   "artifact_name": "_53_bw.json",
+   "verse_ref": "19:29",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Sabiy~FA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَأَشَارَتْ إِلَيْهِ قَالُوا۟ كَيْفَ نُكَلِّمُ مَن كَانَ فِى ٱلْمَهْدِ صَبِيًّا"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "UNRESOLVED",
+ "result_strength": "UNRESOLVED",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PARTIAL",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "12:33:13:1",
+  "19:12:7:1",
+  "19:29:10:1"
+ ],
+ "unreconciled_count": 3,
+ "resistant_occurrences": [
+  "12:33:13:1",
+  "19:12:7:1",
+  "19:29:10:1"
+ ],
+ "structural_uncertainty_occurrences": []
+}

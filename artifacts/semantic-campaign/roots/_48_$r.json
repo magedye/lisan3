@@ -1,0 +1,1773 @@
+{
+ "root_arabic": "ح ش ر",
+ "root_buckwalter": "H$r",
+ "root_id": "H$r",
+ "artifact_name": "_48_$r.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch06-wave2-coverage",
+ "occurrences": 43,
+ "frozen_candidate_root_contribution": "collecting dispersed participants into one assembled place or event",
+ "internal_discovery": {
+  "candidate_root_contribution": "collecting dispersed participants into one assembled place or event",
+  "plain_explanation": "All 43 occurrences concern gathering persons, creatures, forces, or a multitude, frequently toward judgment or confrontation. Agent and assembly nouns preserve the same collection relation.",
+  "layer_separation_note": "Voice identifies gatherer versus gathered; eschatological and military contexts supply destination and purpose. The root supplies convergence into assembly.",
+  "presence": {
+   "occurrences_total": 43,
+   "occurrences_checked": 43,
+   "occurrences_consistent": 43,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "A noun can name the Day or site of gathering rather than the act, but remains defined by the convergence event.",
+  "competing_hypothesis": "The root means resurrection; military and worldly assemblies refute that contextual restriction.",
+  "distinctiveness_note": "Distinct from summoning, which initiates a call, and from crowding, which describes density; H$r profiles completed or directed assembly.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "STRONG",
+  "rationale": "Convergence into an assembly is explicit and universal across verbs and nouns.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "gathering_verbs",
+     "where": {
+      "qac_pos": [
+       "V"
+      ]
+     },
+     "occurrence_count_expected": 37,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "collect participants into an assembly",
+     "classification_rationale": "Every verb moves or presents dispersed participants toward one gathering.",
+     "supporting_evidence_note": "All 37 verbal contexts were reviewed.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "assembly_nouns",
+     "where": {
+      "qac_pos": [
+       "N"
+      ]
+     },
+     "occurrence_count_expected": 6,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "gatherer, gathering, or assembled multitude",
+     "classification_rationale": "Each noun is relationally defined by the gathering event.",
+     "supporting_evidence_note": "All six noun contexts were reviewed.",
+     "counterevidence": []
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "H$r",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Assembly, not resurrection specifically, is universal."
+ },
+ "coverage_validation": {
+  "root": "H$r",
+  "expected_count": 43,
+  "researched_count": 43,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "10:28:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "10:28",
+     "verse_text": "وَيَوْمَ نَحْشُرُهُمْ جَمِيعًا ثُمَّ نَقُولُ لِلَّذِينَ أَشْرَكُوا۟ مَكَانَكُمْ أَنتُمْ وَشُرَكَآؤُكُمْ فَزَيَّلْنَا بَيْنَهُمْ وَقَالَ شُرَكَآؤُهُم مَّا كُنتُمْ إِيَّانَا تَعْبُدُونَ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "10:28",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "naHo$uru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَيَوْمَ نَحْشُرُهُمْ جَمِيعًا ثُمَّ نَقُولُ لِلَّذِينَ أَشْرَكُوا۟ مَكَانَكُمْ أَنتُمْ وَشُرَكَآؤُكُمْ فَزَيَّلْنَا بَيْنَهُمْ وَقَالَ شُرَكَآؤُهُم مَّا كُنتُمْ إِيَّانَا تَعْبُدُونَ"
+  },
+  {
+   "word_ref": "10:45:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "10:45",
+     "verse_text": "وَيَوْمَ يَحْشُرُهُمْ كَأَن لَّمْ يَلْبَثُوٓا۟ إِلَّا سَاعَةً مِّنَ ٱلنَّهَارِ يَتَعَارَفُونَ بَيْنَهُمْ قَدْ خَسِرَ ٱلَّذِينَ كَذَّبُوا۟ بِلِقَآءِ ٱللَّهِ وَمَا كَانُوا۟ مُهْتَدِينَ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "10:45",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaHo$uru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَيَوْمَ يَحْشُرُهُمْ كَأَن لَّمْ يَلْبَثُوٓا۟ إِلَّا سَاعَةً مِّنَ ٱلنَّهَارِ يَتَعَارَفُونَ بَيْنَهُمْ قَدْ خَسِرَ ٱلَّذِينَ كَذَّبُوا۟ بِلِقَآءِ ٱللَّهِ وَمَا كَانُوا۟ مُهْتَدِينَ"
+  },
+  {
+   "word_ref": "15:25:4:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "15:25",
+     "verse_text": "وَإِنَّ رَبَّكَ هُوَ يَحْشُرُهُمْ إِنَّهُۥ حَكِيمٌ عَلِيمٌ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "15:25",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaHo$uru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِنَّ رَبَّكَ هُوَ يَحْشُرُهُمْ إِنَّهُۥ حَكِيمٌ عَلِيمٌ"
+  },
+  {
+   "word_ref": "17:97:14:2",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "17:97",
+     "verse_text": "وَمَن يَهْدِ ٱللَّهُ فَهُوَ ٱلْمُهْتَدِ وَمَن يُضْلِلْ فَلَن تَجِدَ لَهُمْ أَوْلِيَآءَ مِن دُونِهِۦ وَنَحْشُرُهُمْ يَوْمَ ٱلْقِيَٰمَةِ عَلَىٰ وُجُوهِهِمْ عُمْيًا وَبُكْمًا وَصُمًّا مَّأْوَىٰهُمْ جَهَنَّمُ كُلَّمَا خَبَتْ زِدْنَٰهُمْ سَعِيرًا"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "17:97",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "naHo$uru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَمَن يَهْدِ ٱللَّهُ فَهُوَ ٱلْمُهْتَدِ وَمَن يُضْلِلْ فَلَن تَجِدَ لَهُمْ أَوْلِيَآءَ مِن دُونِهِۦ وَنَحْشُرُهُمْ يَوْمَ ٱلْقِيَٰمَةِ عَلَىٰ وُجُوهِهِمْ عُمْيًا وَبُكْمًا وَصُمًّا مَّأْوَىٰهُمْ جَهَنَّمُ كُلَّمَا خَبَتْ زِدْنَٰهُمْ سَعِيرًا"
+  },
+  {
+   "word_ref": "18:47:7:2",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "18:47",
+     "verse_text": "وَيَوْمَ نُسَيِّرُ ٱلْجِبَالَ وَتَرَى ٱلْأَرْضَ بَارِزَةً وَحَشَرْنَٰهُمْ فَلَمْ نُغَادِرْ مِنْهُمْ أَحَدًا"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "18:47",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Ha$aro",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَيَوْمَ نُسَيِّرُ ٱلْجِبَالَ وَتَرَى ٱلْأَرْضَ بَارِزَةً وَحَشَرْنَٰهُمْ فَلَمْ نُغَادِرْ مِنْهُمْ أَحَدًا"
+  },
+  {
+   "word_ref": "19:68:2:2",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "19:68",
+     "verse_text": "فَوَرَبِّكَ لَنَحْشُرَنَّهُمْ وَٱلشَّيَٰطِينَ ثُمَّ لَنُحْضِرَنَّهُمْ حَوْلَ جَهَنَّمَ جِثِيًّا"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "19:68",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "naHo$ura",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَوَرَبِّكَ لَنَحْشُرَنَّهُمْ وَٱلشَّيَٰطِينَ ثُمَّ لَنُحْضِرَنَّهُمْ حَوْلَ جَهَنَّمَ جِثِيًّا"
+  },
+  {
+   "word_ref": "19:85:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "19:85",
+     "verse_text": "يَوْمَ نَحْشُرُ ٱلْمُتَّقِينَ إِلَى ٱلرَّحْمَٰنِ وَفْدًا"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "19:85",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "naHo$uru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَوْمَ نَحْشُرُ ٱلْمُتَّقِينَ إِلَى ٱلرَّحْمَٰنِ وَفْدًا"
+  },
+  {
+   "word_ref": "20:102:5:2",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "20:102",
+     "verse_text": "يَوْمَ يُنفَخُ فِى ٱلصُّورِ وَنَحْشُرُ ٱلْمُجْرِمِينَ يَوْمَئِذٍ زُرْقًا"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "20:102",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "naHo$uru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَوْمَ يُنفَخُ فِى ٱلصُّورِ وَنَحْشُرُ ٱلْمُجْرِمِينَ يَوْمَئِذٍ زُرْقًا"
+  },
+  {
+   "word_ref": "20:124:9:2",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "20:124",
+     "verse_text": "وَمَنْ أَعْرَضَ عَن ذِكْرِى فَإِنَّ لَهُۥ مَعِيشَةً ضَنكًا وَنَحْشُرُهُۥ يَوْمَ ٱلْقِيَٰمَةِ أَعْمَىٰ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "20:124",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "naHo$uru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَمَنْ أَعْرَضَ عَن ذِكْرِى فَإِنَّ لَهُۥ مَعِيشَةً ضَنكًا وَنَحْشُرُهُۥ يَوْمَ ٱلْقِيَٰمَةِ أَعْمَىٰ"
+  },
+  {
+   "word_ref": "20:125:4:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "20:125",
+     "verse_text": "قَالَ رَبِّ لِمَ حَشَرْتَنِىٓ أَعْمَىٰ وَقَدْ كُنتُ بَصِيرًا"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "20:125",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Ha$aro",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالَ رَبِّ لِمَ حَشَرْتَنِىٓ أَعْمَىٰ وَقَدْ كُنتُ بَصِيرًا"
+  },
+  {
+   "word_ref": "20:59:6:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "20:59",
+     "verse_text": "قَالَ مَوْعِدُكُمْ يَوْمُ ٱلزِّينَةِ وَأَن يُحْشَرَ ٱلنَّاسُ ضُحًى"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "20:59",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yuHo$ara",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالَ مَوْعِدُكُمْ يَوْمُ ٱلزِّينَةِ وَأَن يُحْشَرَ ٱلنَّاسُ ضُحًى"
+  },
+  {
+   "word_ref": "23:79:7:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "23:79",
+     "verse_text": "وَهُوَ ٱلَّذِى ذَرَأَكُمْ فِى ٱلْأَرْضِ وَإِلَيْهِ تُحْشَرُونَ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "23:79",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tuHo$aru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَهُوَ ٱلَّذِى ذَرَأَكُمْ فِى ٱلْأَرْضِ وَإِلَيْهِ تُحْشَرُونَ"
+  },
+  {
+   "word_ref": "25:17:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "25:17",
+     "verse_text": "وَيَوْمَ يَحْشُرُهُمْ وَمَا يَعْبُدُونَ مِن دُونِ ٱللَّهِ فَيَقُولُ ءَأَنتُمْ أَضْلَلْتُمْ عِبَادِى هَٰٓؤُلَآءِ أَمْ هُمْ ضَلُّوا۟ ٱلسَّبِيلَ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "25:17",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaHo$uru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَيَوْمَ يَحْشُرُهُمْ وَمَا يَعْبُدُونَ مِن دُونِ ٱللَّهِ فَيَقُولُ ءَأَنتُمْ أَضْلَلْتُمْ عِبَادِى هَٰٓؤُلَآءِ أَمْ هُمْ ضَلُّوا۟ ٱلسَّبِيلَ"
+  },
+  {
+   "word_ref": "25:34:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "25:34",
+     "verse_text": "ٱلَّذِينَ يُحْشَرُونَ عَلَىٰ وُجُوهِهِمْ إِلَىٰ جَهَنَّمَ أُو۟لَٰٓئِكَ شَرٌّ مَّكَانًا وَأَضَلُّ سَبِيلًا"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "25:34",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yuHo$aru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱلَّذِينَ يُحْشَرُونَ عَلَىٰ وُجُوهِهِمْ إِلَىٰ جَهَنَّمَ أُو۟لَٰٓئِكَ شَرٌّ مَّكَانًا وَأَضَلُّ سَبِيلًا"
+  },
+  {
+   "word_ref": "26:36:7:1",
+   "disposition": "CONSISTENT",
+   "note": "Each noun is relationally defined by the gathering event.",
+   "coverage_cluster_id": "assembly_nouns",
+   "candidate_semantic_interpretation": "gatherer, gathering, or assembled multitude",
+   "cluster_supporting_evidence": "All six noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "26:36",
+     "verse_text": "قَالُوٓا۟ أَرْجِهْ وَأَخَاهُ وَٱبْعَثْ فِى ٱلْمَدَآئِنِ حَٰشِرِينَ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "26:36",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Ha`$iriyna",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالُوٓا۟ أَرْجِهْ وَأَخَاهُ وَٱبْعَثْ فِى ٱلْمَدَآئِنِ حَٰشِرِينَ"
+  },
+  {
+   "word_ref": "26:53:5:1",
+   "disposition": "CONSISTENT",
+   "note": "Each noun is relationally defined by the gathering event.",
+   "coverage_cluster_id": "assembly_nouns",
+   "candidate_semantic_interpretation": "gatherer, gathering, or assembled multitude",
+   "cluster_supporting_evidence": "All six noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "26:53",
+     "verse_text": "فَأَرْسَلَ فِرْعَوْنُ فِى ٱلْمَدَآئِنِ حَٰشِرِينَ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "26:53",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Ha`$iriyna",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَأَرْسَلَ فِرْعَوْنُ فِى ٱلْمَدَآئِنِ حَٰشِرِينَ"
+  },
+  {
+   "word_ref": "27:17:1:2",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "27:17",
+     "verse_text": "وَحُشِرَ لِسُلَيْمَٰنَ جُنُودُهُۥ مِنَ ٱلْجِنِّ وَٱلْإِنسِ وَٱلطَّيْرِ فَهُمْ يُوزَعُونَ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "27:17",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Hu$ira",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَحُشِرَ لِسُلَيْمَٰنَ جُنُودُهُۥ مِنَ ٱلْجِنِّ وَٱلْإِنسِ وَٱلطَّيْرِ فَهُمْ يُوزَعُونَ"
+  },
+  {
+   "word_ref": "27:83:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "27:83",
+     "verse_text": "وَيَوْمَ نَحْشُرُ مِن كُلِّ أُمَّةٍ فَوْجًا مِّمَّن يُكَذِّبُ بِـَٔايَٰتِنَا فَهُمْ يُوزَعُونَ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "27:83",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "naHo$uru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَيَوْمَ نَحْشُرُ مِن كُلِّ أُمَّةٍ فَوْجًا مِّمَّن يُكَذِّبُ بِـَٔايَٰتِنَا فَهُمْ يُوزَعُونَ"
+  },
+  {
+   "word_ref": "2:203:25:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:203",
+     "verse_text": "وَٱذْكُرُوا۟ ٱللَّهَ فِىٓ أَيَّامٍ مَّعْدُودَٰتٍ فَمَن تَعَجَّلَ فِى يَوْمَيْنِ فَلَآ إِثْمَ عَلَيْهِ وَمَن تَأَخَّرَ فَلَآ إِثْمَ عَلَيْهِ لِمَنِ ٱتَّقَىٰ وَٱتَّقُوا۟ ٱللَّهَ وَٱعْلَمُوٓا۟ أَنَّكُمْ إِلَيْهِ تُحْشَرُونَ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "2:203",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tuHo$aru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱذْكُرُوا۟ ٱللَّهَ فِىٓ أَيَّامٍ مَّعْدُودَٰتٍ فَمَن تَعَجَّلَ فِى يَوْمَيْنِ فَلَآ إِثْمَ عَلَيْهِ وَمَن تَأَخَّرَ فَلَآ إِثْمَ عَلَيْهِ لِمَنِ ٱتَّقَىٰ وَٱتَّقُوا۟ ٱللَّهَ وَٱعْلَمُوٓا۟ أَنَّكُمْ إِلَيْهِ تُحْشَرُونَ"
+  },
+  {
+   "word_ref": "34:40:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "34:40",
+     "verse_text": "وَيَوْمَ يَحْشُرُهُمْ جَمِيعًا ثُمَّ يَقُولُ لِلْمَلَٰٓئِكَةِ أَهَٰٓؤُلَآءِ إِيَّاكُمْ كَانُوا۟ يَعْبُدُونَ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "34:40",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaHo$uru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَيَوْمَ يَحْشُرُهُمْ جَمِيعًا ثُمَّ يَقُولُ لِلْمَلَٰٓئِكَةِ أَهَٰٓؤُلَآءِ إِيَّاكُمْ كَانُوا۟ يَعْبُدُونَ"
+  },
+  {
+   "word_ref": "37:22:1:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "37:22",
+     "verse_text": "ٱحْشُرُوا۟ ٱلَّذِينَ ظَلَمُوا۟ وَأَزْوَٰجَهُمْ وَمَا كَانُوا۟ يَعْبُدُونَ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "37:22",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{Ho$uru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱحْشُرُوا۟ ٱلَّذِينَ ظَلَمُوا۟ وَأَزْوَٰجَهُمْ وَمَا كَانُوا۟ يَعْبُدُونَ"
+  },
+  {
+   "word_ref": "38:19:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Each noun is relationally defined by the gathering event.",
+   "coverage_cluster_id": "assembly_nouns",
+   "candidate_semantic_interpretation": "gatherer, gathering, or assembled multitude",
+   "cluster_supporting_evidence": "All six noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "38:19",
+     "verse_text": "وَٱلطَّيْرَ مَحْشُورَةً كُلٌّ لَّهُۥٓ أَوَّابٌ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "38:19",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "maHo$uwrapF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱلطَّيْرَ مَحْشُورَةً كُلٌّ لَّهُۥٓ أَوَّابٌ"
+  },
+  {
+   "word_ref": "3:12:5:2",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:12",
+     "verse_text": "قُل لِّلَّذِينَ كَفَرُوا۟ سَتُغْلَبُونَ وَتُحْشَرُونَ إِلَىٰ جَهَنَّمَ وَبِئْسَ ٱلْمِهَادُ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "3:12",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tuHo$aru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قُل لِّلَّذِينَ كَفَرُوا۟ سَتُغْلَبُونَ وَتُحْشَرُونَ إِلَىٰ جَهَنَّمَ وَبِئْسَ ٱلْمِهَادُ"
+  },
+  {
+   "word_ref": "3:158:7:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:158",
+     "verse_text": "وَلَئِن مُّتُّمْ أَوْ قُتِلْتُمْ لَإِلَى ٱللَّهِ تُحْشَرُونَ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "3:158",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tuHo$aru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَئِن مُّتُّمْ أَوْ قُتِلْتُمْ لَإِلَى ٱللَّهِ تُحْشَرُونَ"
+  },
+  {
+   "word_ref": "41:19:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "41:19",
+     "verse_text": "وَيَوْمَ يُحْشَرُ أَعْدَآءُ ٱللَّهِ إِلَى ٱلنَّارِ فَهُمْ يُوزَعُونَ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "41:19",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yuHo$aru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَيَوْمَ يُحْشَرُ أَعْدَآءُ ٱللَّهِ إِلَى ٱلنَّارِ فَهُمْ يُوزَعُونَ"
+  },
+  {
+   "word_ref": "46:6:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "46:6",
+     "verse_text": "وَإِذَا حُشِرَ ٱلنَّاسُ كَانُوا۟ لَهُمْ أَعْدَآءً وَكَانُوا۟ بِعِبَادَتِهِمْ كَٰفِرِينَ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "46:6",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Hu$ira",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِذَا حُشِرَ ٱلنَّاسُ كَانُوا۟ لَهُمْ أَعْدَآءً وَكَانُوا۟ بِعِبَادَتِهِمْ كَٰفِرِينَ"
+  },
+  {
+   "word_ref": "4:172:16:3",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "4:172",
+     "verse_text": "لَّن يَسْتَنكِفَ ٱلْمَسِيحُ أَن يَكُونَ عَبْدًا لِّلَّهِ وَلَا ٱلْمَلَٰٓئِكَةُ ٱلْمُقَرَّبُونَ وَمَن يَسْتَنكِفْ عَنْ عِبَادَتِهِۦ وَيَسْتَكْبِرْ فَسَيَحْشُرُهُمْ إِلَيْهِ جَمِيعًا"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "4:172",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaHo$uru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لَّن يَسْتَنكِفَ ٱلْمَسِيحُ أَن يَكُونَ عَبْدًا لِّلَّهِ وَلَا ٱلْمَلَٰٓئِكَةُ ٱلْمُقَرَّبُونَ وَمَن يَسْتَنكِفْ عَنْ عِبَادَتِهِۦ وَيَسْتَكْبِرْ فَسَيَحْشُرُهُمْ إِلَيْهِ جَمِيعًا"
+  },
+  {
+   "word_ref": "50:44:7:1",
+   "disposition": "CONSISTENT",
+   "note": "Each noun is relationally defined by the gathering event.",
+   "coverage_cluster_id": "assembly_nouns",
+   "candidate_semantic_interpretation": "gatherer, gathering, or assembled multitude",
+   "cluster_supporting_evidence": "All six noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "50:44",
+     "verse_text": "يَوْمَ تَشَقَّقُ ٱلْأَرْضُ عَنْهُمْ سِرَاعًا ذَٰلِكَ حَشْرٌ عَلَيْنَا يَسِيرٌ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "50:44",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Ha$orN",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَوْمَ تَشَقَّقُ ٱلْأَرْضُ عَنْهُمْ سِرَاعًا ذَٰلِكَ حَشْرٌ عَلَيْنَا يَسِيرٌ"
+  },
+  {
+   "word_ref": "58:9:19:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "58:9",
+     "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا تَنَٰجَيْتُمْ فَلَا تَتَنَٰجَوْا۟ بِٱلْإِثْمِ وَٱلْعُدْوَٰنِ وَمَعْصِيَتِ ٱلرَّسُولِ وَتَنَٰجَوْا۟ بِٱلْبِرِّ وَٱلتَّقْوَىٰ وَٱتَّقُوا۟ ٱللَّهَ ٱلَّذِىٓ إِلَيْهِ تُحْشَرُونَ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "58:9",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tuHo$aru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا تَنَٰجَيْتُمْ فَلَا تَتَنَٰجَوْا۟ بِٱلْإِثْمِ وَٱلْعُدْوَٰنِ وَمَعْصِيَتِ ٱلرَّسُولِ وَتَنَٰجَوْا۟ بِٱلْبِرِّ وَٱلتَّقْوَىٰ وَٱتَّقُوا۟ ٱللَّهَ ٱلَّذِىٓ إِلَيْهِ تُحْشَرُونَ"
+  },
+  {
+   "word_ref": "59:2:12:2",
+   "disposition": "CONSISTENT",
+   "note": "Each noun is relationally defined by the gathering event.",
+   "coverage_cluster_id": "assembly_nouns",
+   "candidate_semantic_interpretation": "gatherer, gathering, or assembled multitude",
+   "cluster_supporting_evidence": "All six noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "59:2",
+     "verse_text": "هُوَ ٱلَّذِىٓ أَخْرَجَ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَٰبِ مِن دِيَٰرِهِمْ لِأَوَّلِ ٱلْحَشْرِ مَا ظَنَنتُمْ أَن يَخْرُجُوا۟ وَظَنُّوٓا۟ أَنَّهُم مَّانِعَتُهُمْ حُصُونُهُم مِّنَ ٱللَّهِ فَأَتَىٰهُمُ ٱللَّهُ مِنْ حَيْثُ لَمْ يَحْتَسِبُوا۟ وَقَذَفَ فِى قُلُوبِهِمُ ٱلرُّعْبَ يُخْرِبُونَ بُيُوتَهُم بِأَيْدِيهِمْ وَأَيْدِى ٱلْمُؤْمِنِينَ فَٱعْتَبِرُوا۟ يَٰٓأُو۟لِى ٱلْأَبْصَٰرِ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "59:2",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Ha$ori",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "هُوَ ٱلَّذِىٓ أَخْرَجَ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَٰبِ مِن دِيَٰرِهِمْ لِأَوَّلِ ٱلْحَشْرِ مَا ظَنَنتُمْ أَن يَخْرُجُوا۟ وَظَنُّوٓا۟ أَنَّهُم مَّانِعَتُهُمْ حُصُونُهُم مِّنَ ٱللَّهِ فَأَتَىٰهُمُ ٱللَّهُ مِنْ حَيْثُ لَمْ يَحْتَسِبُوا۟ وَقَذَفَ فِى قُلُوبِهِمُ ٱلرُّعْبَ يُخْرِبُونَ بُيُوتَهُم بِأَيْدِيهِمْ وَأَيْدِى ٱلْمُؤْمِنِينَ فَٱعْتَبِرُوا۟ يَٰٓأُو۟لِى ٱلْأَبْصَٰرِ"
+  },
+  {
+   "word_ref": "5:96:20:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "5:96",
+     "verse_text": "أُحِلَّ لَكُمْ صَيْدُ ٱلْبَحْرِ وَطَعَامُهُۥ مَتَٰعًا لَّكُمْ وَلِلسَّيَّارَةِ وَحُرِّمَ عَلَيْكُمْ صَيْدُ ٱلْبَرِّ مَا دُمْتُمْ حُرُمًا وَٱتَّقُوا۟ ٱللَّهَ ٱلَّذِىٓ إِلَيْهِ تُحْشَرُونَ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "5:96",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tuHo$aru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أُحِلَّ لَكُمْ صَيْدُ ٱلْبَحْرِ وَطَعَامُهُۥ مَتَٰعًا لَّكُمْ وَلِلسَّيَّارَةِ وَحُرِّمَ عَلَيْكُمْ صَيْدُ ٱلْبَرِّ مَا دُمْتُمْ حُرُمًا وَٱتَّقُوا۟ ٱللَّهَ ٱلَّذِىٓ إِلَيْهِ تُحْشَرُونَ"
+  },
+  {
+   "word_ref": "67:24:8:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "67:24",
+     "verse_text": "قُلْ هُوَ ٱلَّذِى ذَرَأَكُمْ فِى ٱلْأَرْضِ وَإِلَيْهِ تُحْشَرُونَ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "67:24",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tuHo$aru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قُلْ هُوَ ٱلَّذِى ذَرَأَكُمْ فِى ٱلْأَرْضِ وَإِلَيْهِ تُحْشَرُونَ"
+  },
+  {
+   "word_ref": "6:111:8:2",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:111",
+     "verse_text": "وَلَوْ أَنَّنَا نَزَّلْنَآ إِلَيْهِمُ ٱلْمَلَٰٓئِكَةَ وَكَلَّمَهُمُ ٱلْمَوْتَىٰ وَحَشَرْنَا عَلَيْهِمْ كُلَّ شَىْءٍ قُبُلًا مَّا كَانُوا۟ لِيُؤْمِنُوٓا۟ إِلَّآ أَن يَشَآءَ ٱللَّهُ وَلَٰكِنَّ أَكْثَرَهُمْ يَجْهَلُونَ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "6:111",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Ha$aro",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَوْ أَنَّنَا نَزَّلْنَآ إِلَيْهِمُ ٱلْمَلَٰٓئِكَةَ وَكَلَّمَهُمُ ٱلْمَوْتَىٰ وَحَشَرْنَا عَلَيْهِمْ كُلَّ شَىْءٍ قُبُلًا مَّا كَانُوا۟ لِيُؤْمِنُوٓا۟ إِلَّآ أَن يَشَآءَ ٱللَّهُ وَلَٰكِنَّ أَكْثَرَهُمْ يَجْهَلُونَ"
+  },
+  {
+   "word_ref": "6:128:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:128",
+     "verse_text": "وَيَوْمَ يَحْشُرُهُمْ جَمِيعًا يَٰمَعْشَرَ ٱلْجِنِّ قَدِ ٱسْتَكْثَرْتُم مِّنَ ٱلْإِنسِ وَقَالَ أَوْلِيَآؤُهُم مِّنَ ٱلْإِنسِ رَبَّنَا ٱسْتَمْتَعَ بَعْضُنَا بِبَعْضٍ وَبَلَغْنَآ أَجَلَنَا ٱلَّذِىٓ أَجَّلْتَ لَنَا قَالَ ٱلنَّارُ مَثْوَىٰكُمْ خَٰلِدِينَ فِيهَآ إِلَّا مَا شَآءَ ٱللَّهُ إِنَّ رَبَّكَ حَكِيمٌ عَلِيمٌ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "6:128",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaHo$uru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَيَوْمَ يَحْشُرُهُمْ جَمِيعًا يَٰمَعْشَرَ ٱلْجِنِّ قَدِ ٱسْتَكْثَرْتُم مِّنَ ٱلْإِنسِ وَقَالَ أَوْلِيَآؤُهُم مِّنَ ٱلْإِنسِ رَبَّنَا ٱسْتَمْتَعَ بَعْضُنَا بِبَعْضٍ وَبَلَغْنَآ أَجَلَنَا ٱلَّذِىٓ أَجَّلْتَ لَنَا قَالَ ٱلنَّارُ مَثْوَىٰكُمْ خَٰلِدِينَ فِيهَآ إِلَّا مَا شَآءَ ٱللَّهُ إِنَّ رَبَّكَ حَكِيمٌ عَلِيمٌ"
+  },
+  {
+   "word_ref": "6:22:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:22",
+     "verse_text": "وَيَوْمَ نَحْشُرُهُمْ جَمِيعًا ثُمَّ نَقُولُ لِلَّذِينَ أَشْرَكُوٓا۟ أَيْنَ شُرَكَآؤُكُمُ ٱلَّذِينَ كُنتُمْ تَزْعُمُونَ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "6:22",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "naHo$uru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَيَوْمَ نَحْشُرُهُمْ جَمِيعًا ثُمَّ نَقُولُ لِلَّذِينَ أَشْرَكُوٓا۟ أَيْنَ شُرَكَآؤُكُمُ ٱلَّذِينَ كُنتُمْ تَزْعُمُونَ"
+  },
+  {
+   "word_ref": "6:38:22:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:38",
+     "verse_text": "وَمَا مِن دَآبَّةٍ فِى ٱلْأَرْضِ وَلَا طَٰٓئِرٍ يَطِيرُ بِجَنَاحَيْهِ إِلَّآ أُمَمٌ أَمْثَالُكُم مَّا فَرَّطْنَا فِى ٱلْكِتَٰبِ مِن شَىْءٍ ثُمَّ إِلَىٰ رَبِّهِمْ يُحْشَرُونَ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "6:38",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yuHo$aru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَمَا مِن دَآبَّةٍ فِى ٱلْأَرْضِ وَلَا طَٰٓئِرٍ يَطِيرُ بِجَنَاحَيْهِ إِلَّآ أُمَمٌ أَمْثَالُكُم مَّا فَرَّطْنَا فِى ٱلْكِتَٰبِ مِن شَىْءٍ ثُمَّ إِلَىٰ رَبِّهِمْ يُحْشَرُونَ"
+  },
+  {
+   "word_ref": "6:51:6:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:51",
+     "verse_text": "وَأَنذِرْ بِهِ ٱلَّذِينَ يَخَافُونَ أَن يُحْشَرُوٓا۟ إِلَىٰ رَبِّهِمْ لَيْسَ لَهُم مِّن دُونِهِۦ وَلِىٌّ وَلَا شَفِيعٌ لَّعَلَّهُمْ يَتَّقُونَ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "6:51",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yuHo$aru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَأَنذِرْ بِهِ ٱلَّذِينَ يَخَافُونَ أَن يُحْشَرُوٓا۟ إِلَىٰ رَبِّهِمْ لَيْسَ لَهُم مِّن دُونِهِۦ وَلِىٌّ وَلَا شَفِيعٌ لَّعَلَّهُمْ يَتَّقُونَ"
+  },
+  {
+   "word_ref": "6:72:8:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:72",
+     "verse_text": "وَأَنْ أَقِيمُوا۟ ٱلصَّلَوٰةَ وَٱتَّقُوهُ وَهُوَ ٱلَّذِىٓ إِلَيْهِ تُحْشَرُونَ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "6:72",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tuHo$aru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَأَنْ أَقِيمُوا۟ ٱلصَّلَوٰةَ وَٱتَّقُوهُ وَهُوَ ٱلَّذِىٓ إِلَيْهِ تُحْشَرُونَ"
+  },
+  {
+   "word_ref": "79:23:1:2",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "79:23",
+     "verse_text": "فَحَشَرَ فَنَادَىٰ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "79:23",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Ha$ara",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَحَشَرَ فَنَادَىٰ"
+  },
+  {
+   "word_ref": "7:111:7:1",
+   "disposition": "CONSISTENT",
+   "note": "Each noun is relationally defined by the gathering event.",
+   "coverage_cluster_id": "assembly_nouns",
+   "candidate_semantic_interpretation": "gatherer, gathering, or assembled multitude",
+   "cluster_supporting_evidence": "All six noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:111",
+     "verse_text": "قَالُوٓا۟ أَرْجِهْ وَأَخَاهُ وَأَرْسِلْ فِى ٱلْمَدَآئِنِ حَٰشِرِينَ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "7:111",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Ha`$iriyna",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالُوٓا۟ أَرْجِهْ وَأَخَاهُ وَأَرْسِلْ فِى ٱلْمَدَآئِنِ حَٰشِرِينَ"
+  },
+  {
+   "word_ref": "81:5:3:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "81:5",
+     "verse_text": "وَإِذَا ٱلْوُحُوشُ حُشِرَتْ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "81:5",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Hu$irato",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِذَا ٱلْوُحُوشُ حُشِرَتْ"
+  },
+  {
+   "word_ref": "8:24:20:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "8:24",
+     "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱسْتَجِيبُوا۟ لِلَّهِ وَلِلرَّسُولِ إِذَا دَعَاكُمْ لِمَا يُحْيِيكُمْ وَٱعْلَمُوٓا۟ أَنَّ ٱللَّهَ يَحُولُ بَيْنَ ٱلْمَرْءِ وَقَلْبِهِۦ وَأَنَّهُۥٓ إِلَيْهِ تُحْشَرُونَ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "8:24",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tuHo$aru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱسْتَجِيبُوا۟ لِلَّهِ وَلِلرَّسُولِ إِذَا دَعَاكُمْ لِمَا يُحْيِيكُمْ وَٱعْلَمُوٓا۟ أَنَّ ٱللَّهَ يَحُولُ بَيْنَ ٱلْمَرْءِ وَقَلْبِهِۦ وَأَنَّهُۥٓ إِلَيْهِ تُحْشَرُونَ"
+  },
+  {
+   "word_ref": "8:36:21:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb moves or presents dispersed participants toward one gathering.",
+   "coverage_cluster_id": "gathering_verbs",
+   "candidate_semantic_interpretation": "collect participants into an assembly",
+   "cluster_supporting_evidence": "All 37 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "8:36",
+     "verse_text": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ يُنفِقُونَ أَمْوَٰلَهُمْ لِيَصُدُّوا۟ عَن سَبِيلِ ٱللَّهِ فَسَيُنفِقُونَهَا ثُمَّ تَكُونُ عَلَيْهِمْ حَسْرَةً ثُمَّ يُغْلَبُونَ وَٱلَّذِينَ كَفَرُوٓا۟ إِلَىٰ جَهَنَّمَ يُحْشَرُونَ"
+    }
+   ],
+   "root_arabic": "ح ش ر",
+   "root_buckwalter": "H$r",
+   "root_id": "H$r",
+   "artifact_name": "_48_$r.json",
+   "verse_ref": "8:36",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yuHo$aru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ يُنفِقُونَ أَمْوَٰلَهُمْ لِيَصُدُّوا۟ عَن سَبِيلِ ٱللَّهِ فَسَيُنفِقُونَهَا ثُمَّ تَكُونُ عَلَيْهِمْ حَسْرَةً ثُمَّ يُغْلَبُونَ وَٱلَّذِينَ كَفَرُوٓا۟ إِلَىٰ جَهَنَّمَ يُحْشَرُونَ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "STRONG",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

@@ -1,7 +1,7 @@
 {
   "campaign_id": "lisan-root-calibration",
   "status": "BATCH_06_IN_PROGRESS",
-  "verdict": "BATCH_06_WAVE_1_CHECKPOINT_COMPLETE",
+  "verdict": "BATCH_06_WAVE_2_CHECKPOINT_COMPLETE_FINAL_GATE_PENDING",
   "produced_at": "2026-09-11",
   "reads_handoff": "artifacts/semantic-campaign/PHASE_1_HANDOFF.json",
   "supersedes_prior_status": "BLOCKED_PENDING_QAC_MORPHOLOGY_ADMISSION",
@@ -57,14 +57,30 @@
       "resistant_occurrences": 528,
       "reconciliation_lineage_records": 2
     },
-    "wave_2": {"status": "NOT_STARTED", "roots": 20, "occurrences": 1318}
+    "wave_2": {
+      "status": "COMPLETE",
+      "roots": 20,
+      "occurrences": 1318,
+      "coverage_exact_set": true,
+      "outcomes": {"STRONG": 9, "MODERATE": 5, "WEAK": 3, "UNRESOLVED": 3},
+      "resistant_occurrences": 34,
+      "reconciliation_lineage_records": 0
+    },
+    "combined": {
+      "status": "WAVES_COMPLETE_FINAL_GATE_PENDING",
+      "roots": 40,
+      "occurrences": 3098,
+      "outcomes": {"STRONG": 13, "MODERATE": 15, "WEAK": 7, "UNRESOLVED": 5},
+      "resistant_occurrences": 562,
+      "reconciliation_lineage_records": 2
+    }
   },
   "current_campaign_counts": {
     "eligible_roots": 1642,
-    "processed_roots": 108,
-    "remaining_roots": 1534,
-    "research_complete": 108,
-    "canonicalization_pending": 108
+    "processed_roots": 128,
+    "remaining_roots": 1514,
+    "research_complete": 128,
+    "canonicalization_pending": 128
   },
   "boundaries": {
     "canonical_publication": "NOT_AUTHORIZED",
@@ -72,5 +88,5 @@
     "hybrid_retrieval": "NOT_STARTED",
     "push_merge_release": "NOT_AUTHORIZED"
   },
-  "resume_instruction": "Use python -m tools.campaign. Resume Batch 06 Wave 2 from the frozen 20-root population in BATCH_06_MANIFEST.json; do not reselect roots or reopen Wave 1. No conversational context required."
+  "resume_instruction": "Both Batch 06 waves are persisted. Run the whole-batch V3 evidence gate, produce the final Batch 06 report, and stop for fresh independent semantic-results review; do not select another batch."
 }

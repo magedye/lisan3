@@ -1,0 +1,1877 @@
+{
+ "root_arabic": "س ر ر",
+ "root_buckwalter": "srr",
+ "root_id": "srr",
+ "artifact_name": "srr.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch06-wave2-coverage",
+ "occurrences": 44,
+ "frozen_candidate_root_contribution": "concealed or privately held content, opposed internally to disclosure or publicity",
+ "internal_discovery": {
+  "candidate_root_contribution": "concealed or privately held content, opposed internally to disclosure or publicity",
+  "plain_explanation": "Thirty-two occurrences directly concern secrets, concealing, private speech, or inner content. Six denote joy/prosperity and six denote couches. The Quranic contexts do not demonstrate that pleasure or couches preserve concealed holding as a distinctive residue.",
+  "layer_separation_note": "Form IV and secrecy nouns are internally contrastive with announcing/revealing. Joy and couch lexemes are separated by surface family; no external derivation is imported.",
+  "presence": {
+   "occurrences_total": 44,
+   "occurrences_checked": 44,
+   "occurrences_consistent": 32,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "Paradisal surur are couches, not secret content; masrur and surur denote joy, not concealment.",
+  "competing_hypothesis": "An inward/private comfort core links secret, joy, and couch; it is too broad and lacks an internal contrast demonstrating all three directions.",
+  "distinctiveness_note": "The preferred secrecy nucleus is distinct from hiding physically and from silence because it concerns withheld content; it does not absorb furniture or delight.",
+  "unresolved_cases": [
+   "joy/prosperity family (6)",
+   "couch family (6)"
+  ],
+  "result": "PREFERRED",
+  "result_strength": "WEAK",
+  "rationale": "A stable 32-token secrecy nucleus is preferred, but 12 unreconciled homographic-looking tokens block universal presence.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "secrecy",
+     "where": {
+      "qac_surface_regex": "^(?!(?:surur(?:K|FA|N)|tasur~u|s~ar~aA|suruwr|masoruwr))"
+     },
+     "occurrence_count_expected": 32,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "conceal or privately hold content",
+     "classification_rationale": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+     "supporting_evidence_note": "All 32 secrecy contexts were reviewed by contrast and construction.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "joy_and_prosperity",
+     "where": {
+      "qac_surface_regex": "^(tasur~u|s~ar~aA|suruwr|masoruwr)"
+     },
+     "occurrence_count_expected": 6,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "joy, gladness, or prosperity, with no proven secrecy residue",
+     "classification_rationale": "These contexts directly profile delight or ease and do not express concealed content.",
+     "supporting_evidence_note": "All six joy/prosperity contexts were reviewed.",
+     "counterevidence": [
+      "No opposition to disclosure or private holding appears."
+     ]
+    },
+    {
+     "cluster_id": "couches",
+     "where": {
+      "qac_surface_regex": "^surur(?:K|FA|N)$"
+     },
+     "occurrence_count_expected": 6,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "raised or arranged couches, with no proven secrecy residue",
+     "classification_rationale": "All six tokens are furniture in garden or household settings.",
+     "supporting_evidence_note": "All six couch contexts were reviewed.",
+     "counterevidence": [
+      "The verses provide no concealed-content relation."
+     ]
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "srr",
+  "verdict": "PARTIALLY_SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Secrecy is preferred for 32 occurrences; joy and couch families remain resistant as classes."
+ },
+ "coverage_validation": {
+  "root": "srr",
+  "expected_count": 44,
+  "researched_count": 44,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "10:54:11:2",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "10:54",
+     "verse_text": "وَلَوْ أَنَّ لِكُلِّ نَفْسٍ ظَلَمَتْ مَا فِى ٱلْأَرْضِ لَٱفْتَدَتْ بِهِۦ وَأَسَرُّوا۟ ٱلنَّدَامَةَ لَمَّا رَأَوُا۟ ٱلْعَذَابَ وَقُضِىَ بَيْنَهُم بِٱلْقِسْطِ وَهُمْ لَا يُظْلَمُونَ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "10:54",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">asar~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَوْ أَنَّ لِكُلِّ نَفْسٍ ظَلَمَتْ مَا فِى ٱلْأَرْضِ لَٱفْتَدَتْ بِهِۦ وَأَسَرُّوا۟ ٱلنَّدَامَةَ لَمَّا رَأَوُا۟ ٱلْعَذَابَ وَقُضِىَ بَيْنَهُم بِٱلْقِسْطِ وَهُمْ لَا يُظْلَمُونَ"
+  },
+  {
+   "word_ref": "11:5:13:1",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "11:5",
+     "verse_text": "أَلَآ إِنَّهُمْ يَثْنُونَ صُدُورَهُمْ لِيَسْتَخْفُوا۟ مِنْهُ أَلَا حِينَ يَسْتَغْشُونَ ثِيَابَهُمْ يَعْلَمُ مَا يُسِرُّونَ وَمَا يُعْلِنُونَ إِنَّهُۥ عَلِيمٌۢ بِذَاتِ ٱلصُّدُورِ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "11:5",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yusir~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَلَآ إِنَّهُمْ يَثْنُونَ صُدُورَهُمْ لِيَسْتَخْفُوا۟ مِنْهُ أَلَا حِينَ يَسْتَغْشُونَ ثِيَابَهُمْ يَعْلَمُ مَا يُسِرُّونَ وَمَا يُعْلِنُونَ إِنَّهُۥ عَلِيمٌۢ بِذَاتِ ٱلصُّدُورِ"
+  },
+  {
+   "word_ref": "12:19:11:2",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "12:19",
+     "verse_text": "وَجَآءَتْ سَيَّارَةٌ فَأَرْسَلُوا۟ وَارِدَهُمْ فَأَدْلَىٰ دَلْوَهُۥ قَالَ يَٰبُشْرَىٰ هَٰذَا غُلَٰمٌ وَأَسَرُّوهُ بِضَٰعَةً وَٱللَّهُ عَلِيمٌۢ بِمَا يَعْمَلُونَ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "12:19",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">asar~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَجَآءَتْ سَيَّارَةٌ فَأَرْسَلُوا۟ وَارِدَهُمْ فَأَدْلَىٰ دَلْوَهُۥ قَالَ يَٰبُشْرَىٰ هَٰذَا غُلَٰمٌ وَأَسَرُّوهُ بِضَٰعَةً وَٱللَّهُ عَلِيمٌۢ بِمَا يَعْمَلُونَ"
+  },
+  {
+   "word_ref": "12:77:10:2",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "12:77",
+     "verse_text": "قَالُوٓا۟ إِن يَسْرِقْ فَقَدْ سَرَقَ أَخٌ لَّهُۥ مِن قَبْلُ فَأَسَرَّهَا يُوسُفُ فِى نَفْسِهِۦ وَلَمْ يُبْدِهَا لَهُمْ قَالَ أَنتُمْ شَرٌّ مَّكَانًا وَٱللَّهُ أَعْلَمُ بِمَا تَصِفُونَ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "12:77",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">asar~a",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالُوٓا۟ إِن يَسْرِقْ فَقَدْ سَرَقَ أَخٌ لَّهُۥ مِن قَبْلُ فَأَسَرَّهَا يُوسُفُ فِى نَفْسِهِۦ وَلَمْ يُبْدِهَا لَهُمْ قَالَ أَنتُمْ شَرٌّ مَّكَانًا وَٱللَّهُ أَعْلَمُ بِمَا تَصِفُونَ"
+  },
+  {
+   "word_ref": "13:10:4:1",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "13:10",
+     "verse_text": "سَوَآءٌ مِّنكُم مَّنْ أَسَرَّ ٱلْقَوْلَ وَمَن جَهَرَ بِهِۦ وَمَنْ هُوَ مُسْتَخْفٍۭ بِٱلَّيْلِ وَسَارِبٌۢ بِٱلنَّهَارِ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "13:10",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">asar~a",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "سَوَآءٌ مِّنكُم مَّنْ أَسَرَّ ٱلْقَوْلَ وَمَن جَهَرَ بِهِۦ وَمَنْ هُوَ مُسْتَخْفٍۭ بِٱلَّيْلِ وَسَارِبٌۢ بِٱلنَّهَارِ"
+  },
+  {
+   "word_ref": "13:22:11:1",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "13:22",
+     "verse_text": "وَٱلَّذِينَ صَبَرُوا۟ ٱبْتِغَآءَ وَجْهِ رَبِّهِمْ وَأَقَامُوا۟ ٱلصَّلَوٰةَ وَأَنفَقُوا۟ مِمَّا رَزَقْنَٰهُمْ سِرًّا وَعَلَانِيَةً وَيَدْرَءُونَ بِٱلْحَسَنَةِ ٱلسَّيِّئَةَ أُو۟لَٰٓئِكَ لَهُمْ عُقْبَى ٱلدَّارِ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "13:22",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sir~FA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱلَّذِينَ صَبَرُوا۟ ٱبْتِغَآءَ وَجْهِ رَبِّهِمْ وَأَقَامُوا۟ ٱلصَّلَوٰةَ وَأَنفَقُوا۟ مِمَّا رَزَقْنَٰهُمْ سِرًّا وَعَلَانِيَةً وَيَدْرَءُونَ بِٱلْحَسَنَةِ ٱلسَّيِّئَةَ أُو۟لَٰٓئِكَ لَهُمْ عُقْبَى ٱلدَّارِ"
+  },
+  {
+   "word_ref": "14:31:10:1",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "14:31",
+     "verse_text": "قُل لِّعِبَادِىَ ٱلَّذِينَ ءَامَنُوا۟ يُقِيمُوا۟ ٱلصَّلَوٰةَ وَيُنفِقُوا۟ مِمَّا رَزَقْنَٰهُمْ سِرًّا وَعَلَانِيَةً مِّن قَبْلِ أَن يَأْتِىَ يَوْمٌ لَّا بَيْعٌ فِيهِ وَلَا خِلَٰلٌ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "14:31",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sir~FA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قُل لِّعِبَادِىَ ٱلَّذِينَ ءَامَنُوا۟ يُقِيمُوا۟ ٱلصَّلَوٰةَ وَيُنفِقُوا۟ مِمَّا رَزَقْنَٰهُمْ سِرًّا وَعَلَانِيَةً مِّن قَبْلِ أَن يَأْتِىَ يَوْمٌ لَّا بَيْعٌ فِيهِ وَلَا خِلَٰلٌ"
+  },
+  {
+   "word_ref": "15:47:9:1",
+   "disposition": "RESISTANT",
+   "note": "All six tokens are furniture in garden or household settings.",
+   "coverage_cluster_id": "couches",
+   "candidate_semantic_interpretation": "raised or arranged couches, with no proven secrecy residue",
+   "cluster_supporting_evidence": "All six couch contexts were reviewed.",
+   "counterevidence": [
+    "The verses provide no concealed-content relation."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "15:47",
+     "verse_text": "وَنَزَعْنَا مَا فِى صُدُورِهِم مِّنْ غِلٍّ إِخْوَٰنًا عَلَىٰ سُرُرٍ مُّتَقَٰبِلِينَ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "15:47",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sururK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَنَزَعْنَا مَا فِى صُدُورِهِم مِّنْ غِلٍّ إِخْوَٰنًا عَلَىٰ سُرُرٍ مُّتَقَٰبِلِينَ"
+  },
+  {
+   "word_ref": "16:19:4:1",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "16:19",
+     "verse_text": "وَٱللَّهُ يَعْلَمُ مَا تُسِرُّونَ وَمَا تُعْلِنُونَ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "16:19",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tusir~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱللَّهُ يَعْلَمُ مَا تُسِرُّونَ وَمَا تُعْلِنُونَ"
+  },
+  {
+   "word_ref": "16:23:7:1",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "16:23",
+     "verse_text": "لَا جَرَمَ أَنَّ ٱللَّهَ يَعْلَمُ مَا يُسِرُّونَ وَمَا يُعْلِنُونَ إِنَّهُۥ لَا يُحِبُّ ٱلْمُسْتَكْبِرِينَ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "16:23",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yusir~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لَا جَرَمَ أَنَّ ٱللَّهَ يَعْلَمُ مَا يُسِرُّونَ وَمَا يُعْلِنُونَ إِنَّهُۥ لَا يُحِبُّ ٱلْمُسْتَكْبِرِينَ"
+  },
+  {
+   "word_ref": "16:75:18:1",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "16:75",
+     "verse_text": "ضَرَبَ ٱللَّهُ مَثَلًا عَبْدًا مَّمْلُوكًا لَّا يَقْدِرُ عَلَىٰ شَىْءٍ وَمَن رَّزَقْنَٰهُ مِنَّا رِزْقًا حَسَنًا فَهُوَ يُنفِقُ مِنْهُ سِرًّا وَجَهْرًا هَلْ يَسْتَوُۥنَ ٱلْحَمْدُ لِلَّهِ بَلْ أَكْثَرُهُمْ لَا يَعْلَمُونَ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "16:75",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sir~FA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ضَرَبَ ٱللَّهُ مَثَلًا عَبْدًا مَّمْلُوكًا لَّا يَقْدِرُ عَلَىٰ شَىْءٍ وَمَن رَّزَقْنَٰهُ مِنَّا رِزْقًا حَسَنًا فَهُوَ يُنفِقُ مِنْهُ سِرًّا وَجَهْرًا هَلْ يَسْتَوُۥنَ ٱلْحَمْدُ لِلَّهِ بَلْ أَكْثَرُهُمْ لَا يَعْلَمُونَ"
+  },
+  {
+   "word_ref": "20:62:4:2",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "20:62",
+     "verse_text": "فَتَنَٰزَعُوٓا۟ أَمْرَهُم بَيْنَهُمْ وَأَسَرُّوا۟ ٱلنَّجْوَىٰ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "20:62",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">asar~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَتَنَٰزَعُوٓا۟ أَمْرَهُم بَيْنَهُمْ وَأَسَرُّوا۟ ٱلنَّجْوَىٰ"
+  },
+  {
+   "word_ref": "20:7:6:2",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "20:7",
+     "verse_text": "وَإِن تَجْهَرْ بِٱلْقَوْلِ فَإِنَّهُۥ يَعْلَمُ ٱلسِّرَّ وَأَخْفَى"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "20:7",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "s~ir~a",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِن تَجْهَرْ بِٱلْقَوْلِ فَإِنَّهُۥ يَعْلَمُ ٱلسِّرَّ وَأَخْفَى"
+  },
+  {
+   "word_ref": "21:3:3:2",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "21:3",
+     "verse_text": "لَاهِيَةً قُلُوبُهُمْ وَأَسَرُّوا۟ ٱلنَّجْوَى ٱلَّذِينَ ظَلَمُوا۟ هَلْ هَٰذَآ إِلَّا بَشَرٌ مِّثْلُكُمْ أَفَتَأْتُونَ ٱلسِّحْرَ وَأَنتُمْ تُبْصِرُونَ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "21:3",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">asar~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لَاهِيَةً قُلُوبُهُمْ وَأَسَرُّوا۟ ٱلنَّجْوَى ٱلَّذِينَ ظَلَمُوا۟ هَلْ هَٰذَآ إِلَّا بَشَرٌ مِّثْلُكُمْ أَفَتَأْتُونَ ٱلسِّحْرَ وَأَنتُمْ تُبْصِرُونَ"
+  },
+  {
+   "word_ref": "25:6:5:2",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "25:6",
+     "verse_text": "قُلْ أَنزَلَهُ ٱلَّذِى يَعْلَمُ ٱلسِّرَّ فِى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ إِنَّهُۥ كَانَ غَفُورًا رَّحِيمًا"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "25:6",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "s~ir~a",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قُلْ أَنزَلَهُ ٱلَّذِى يَعْلَمُ ٱلسِّرَّ فِى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ إِنَّهُۥ كَانَ غَفُورًا رَّحِيمًا"
+  },
+  {
+   "word_ref": "2:235:21:1",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:235",
+     "verse_text": "وَلَا جُنَاحَ عَلَيْكُمْ فِيمَا عَرَّضْتُم بِهِۦ مِنْ خِطْبَةِ ٱلنِّسَآءِ أَوْ أَكْنَنتُمْ فِىٓ أَنفُسِكُمْ عَلِمَ ٱللَّهُ أَنَّكُمْ سَتَذْكُرُونَهُنَّ وَلَٰكِن لَّا تُوَاعِدُوهُنَّ سِرًّا إِلَّآ أَن تَقُولُوا۟ قَوْلًا مَّعْرُوفًا وَلَا تَعْزِمُوا۟ عُقْدَةَ ٱلنِّكَاحِ حَتَّىٰ يَبْلُغَ ٱلْكِتَٰبُ أَجَلَهُۥ وَٱعْلَمُوٓا۟ أَنَّ ٱللَّهَ يَعْلَمُ مَا فِىٓ أَنفُسِكُمْ فَٱحْذَرُوهُ وَٱعْلَمُوٓا۟ أَنَّ ٱللَّهَ غَفُورٌ حَلِيمٌ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "2:235",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sir~FA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَا جُنَاحَ عَلَيْكُمْ فِيمَا عَرَّضْتُم بِهِۦ مِنْ خِطْبَةِ ٱلنِّسَآءِ أَوْ أَكْنَنتُمْ فِىٓ أَنفُسِكُمْ عَلِمَ ٱللَّهُ أَنَّكُمْ سَتَذْكُرُونَهُنَّ وَلَٰكِن لَّا تُوَاعِدُوهُنَّ سِرًّا إِلَّآ أَن تَقُولُوا۟ قَوْلًا مَّعْرُوفًا وَلَا تَعْزِمُوا۟ عُقْدَةَ ٱلنِّكَاحِ حَتَّىٰ يَبْلُغَ ٱلْكِتَٰبُ أَجَلَهُۥ وَٱعْلَمُوٓا۟ أَنَّ ٱللَّهَ يَعْلَمُ مَا فِىٓ أَنفُسِكُمْ فَٱحْذَرُوهُ وَٱعْلَمُوٓا۟ أَنَّ ٱللَّهَ غَفُورٌ حَلِيمٌ"
+  },
+  {
+   "word_ref": "2:274:6:1",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:274",
+     "verse_text": "ٱلَّذِينَ يُنفِقُونَ أَمْوَٰلَهُم بِٱلَّيْلِ وَٱلنَّهَارِ سِرًّا وَعَلَانِيَةً فَلَهُمْ أَجْرُهُمْ عِندَ رَبِّهِمْ وَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "2:274",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sir~FA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱلَّذِينَ يُنفِقُونَ أَمْوَٰلَهُم بِٱلَّيْلِ وَٱلنَّهَارِ سِرًّا وَعَلَانِيَةً فَلَهُمْ أَجْرُهُمْ عِندَ رَبِّهِمْ وَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ"
+  },
+  {
+   "word_ref": "2:69:17:1",
+   "disposition": "RESISTANT",
+   "note": "These contexts directly profile delight or ease and do not express concealed content.",
+   "coverage_cluster_id": "joy_and_prosperity",
+   "candidate_semantic_interpretation": "joy, gladness, or prosperity, with no proven secrecy residue",
+   "cluster_supporting_evidence": "All six joy/prosperity contexts were reviewed.",
+   "counterevidence": [
+    "No opposition to disclosure or private holding appears."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:69",
+     "verse_text": "قَالُوا۟ ٱدْعُ لَنَا رَبَّكَ يُبَيِّن لَّنَا مَا لَوْنُهَا قَالَ إِنَّهُۥ يَقُولُ إِنَّهَا بَقَرَةٌ صَفْرَآءُ فَاقِعٌ لَّوْنُهَا تَسُرُّ ٱلنَّٰظِرِينَ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "2:69",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tasur~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالُوا۟ ٱدْعُ لَنَا رَبَّكَ يُبَيِّن لَّنَا مَا لَوْنُهَا قَالَ إِنَّهُۥ يَقُولُ إِنَّهَا بَقَرَةٌ صَفْرَآءُ فَاقِعٌ لَّوْنُهَا تَسُرُّ ٱلنَّٰظِرِينَ"
+  },
+  {
+   "word_ref": "2:77:7:1",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:77",
+     "verse_text": "أَوَلَا يَعْلَمُونَ أَنَّ ٱللَّهَ يَعْلَمُ مَا يُسِرُّونَ وَمَا يُعْلِنُونَ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "2:77",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yusir~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَوَلَا يَعْلَمُونَ أَنَّ ٱللَّهَ يَعْلَمُ مَا يُسِرُّونَ وَمَا يُعْلِنُونَ"
+  },
+  {
+   "word_ref": "34:33:18:2",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "34:33",
+     "verse_text": "وَقَالَ ٱلَّذِينَ ٱسْتُضْعِفُوا۟ لِلَّذِينَ ٱسْتَكْبَرُوا۟ بَلْ مَكْرُ ٱلَّيْلِ وَٱلنَّهَارِ إِذْ تَأْمُرُونَنَآ أَن نَّكْفُرَ بِٱللَّهِ وَنَجْعَلَ لَهُۥٓ أَندَادًا وَأَسَرُّوا۟ ٱلنَّدَامَةَ لَمَّا رَأَوُا۟ ٱلْعَذَابَ وَجَعَلْنَا ٱلْأَغْلَٰلَ فِىٓ أَعْنَاقِ ٱلَّذِينَ كَفَرُوا۟ هَلْ يُجْزَوْنَ إِلَّا مَا كَانُوا۟ يَعْمَلُونَ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "34:33",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">asar~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَقَالَ ٱلَّذِينَ ٱسْتُضْعِفُوا۟ لِلَّذِينَ ٱسْتَكْبَرُوا۟ بَلْ مَكْرُ ٱلَّيْلِ وَٱلنَّهَارِ إِذْ تَأْمُرُونَنَآ أَن نَّكْفُرَ بِٱللَّهِ وَنَجْعَلَ لَهُۥٓ أَندَادًا وَأَسَرُّوا۟ ٱلنَّدَامَةَ لَمَّا رَأَوُا۟ ٱلْعَذَابَ وَجَعَلْنَا ٱلْأَغْلَٰلَ فِىٓ أَعْنَاقِ ٱلَّذِينَ كَفَرُوا۟ هَلْ يُجْزَوْنَ إِلَّا مَا كَانُوا۟ يَعْمَلُونَ"
+  },
+  {
+   "word_ref": "35:29:11:1",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "35:29",
+     "verse_text": "إِنَّ ٱلَّذِينَ يَتْلُونَ كِتَٰبَ ٱللَّهِ وَأَقَامُوا۟ ٱلصَّلَوٰةَ وَأَنفَقُوا۟ مِمَّا رَزَقْنَٰهُمْ سِرًّا وَعَلَانِيَةً يَرْجُونَ تِجَٰرَةً لَّن تَبُورَ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "35:29",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sir~FA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱلَّذِينَ يَتْلُونَ كِتَٰبَ ٱللَّهِ وَأَقَامُوا۟ ٱلصَّلَوٰةَ وَأَنفَقُوا۟ مِمَّا رَزَقْنَٰهُمْ سِرًّا وَعَلَانِيَةً يَرْجُونَ تِجَٰرَةً لَّن تَبُورَ"
+  },
+  {
+   "word_ref": "36:76:7:1",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "36:76",
+     "verse_text": "فَلَا يَحْزُنكَ قَوْلُهُمْ إِنَّا نَعْلَمُ مَا يُسِرُّونَ وَمَا يُعْلِنُونَ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "36:76",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yusir~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَلَا يَحْزُنكَ قَوْلُهُمْ إِنَّا نَعْلَمُ مَا يُسِرُّونَ وَمَا يُعْلِنُونَ"
+  },
+  {
+   "word_ref": "37:44:2:1",
+   "disposition": "RESISTANT",
+   "note": "All six tokens are furniture in garden or household settings.",
+   "coverage_cluster_id": "couches",
+   "candidate_semantic_interpretation": "raised or arranged couches, with no proven secrecy residue",
+   "cluster_supporting_evidence": "All six couch contexts were reviewed.",
+   "counterevidence": [
+    "The verses provide no concealed-content relation."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "37:44",
+     "verse_text": "عَلَىٰ سُرُرٍ مُّتَقَٰبِلِينَ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "37:44",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sururK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "عَلَىٰ سُرُرٍ مُّتَقَٰبِلِينَ"
+  },
+  {
+   "word_ref": "3:134:4:2",
+   "disposition": "RESISTANT",
+   "note": "These contexts directly profile delight or ease and do not express concealed content.",
+   "coverage_cluster_id": "joy_and_prosperity",
+   "candidate_semantic_interpretation": "joy, gladness, or prosperity, with no proven secrecy residue",
+   "cluster_supporting_evidence": "All six joy/prosperity contexts were reviewed.",
+   "counterevidence": [
+    "No opposition to disclosure or private holding appears."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:134",
+     "verse_text": "ٱلَّذِينَ يُنفِقُونَ فِى ٱلسَّرَّآءِ وَٱلضَّرَّآءِ وَٱلْكَٰظِمِينَ ٱلْغَيْظَ وَٱلْعَافِينَ عَنِ ٱلنَّاسِ وَٱللَّهُ يُحِبُّ ٱلْمُحْسِنِينَ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "3:134",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "s~ar~aA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱلَّذِينَ يُنفِقُونَ فِى ٱلسَّرَّآءِ وَٱلضَّرَّآءِ وَٱلْكَٰظِمِينَ ٱلْغَيْظَ وَٱلْعَافِينَ عَنِ ٱلنَّاسِ وَٱللَّهُ يُحِبُّ ٱلْمُحْسِنِينَ"
+  },
+  {
+   "word_ref": "43:34:3:2",
+   "disposition": "RESISTANT",
+   "note": "All six tokens are furniture in garden or household settings.",
+   "coverage_cluster_id": "couches",
+   "candidate_semantic_interpretation": "raised or arranged couches, with no proven secrecy residue",
+   "cluster_supporting_evidence": "All six couch contexts were reviewed.",
+   "counterevidence": [
+    "The verses provide no concealed-content relation."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "43:34",
+     "verse_text": "وَلِبُيُوتِهِمْ أَبْوَٰبًا وَسُرُرًا عَلَيْهَا يَتَّكِـُٔونَ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "43:34",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sururFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلِبُيُوتِهِمْ أَبْوَٰبًا وَسُرُرًا عَلَيْهَا يَتَّكِـُٔونَ"
+  },
+  {
+   "word_ref": "43:80:6:1",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "43:80",
+     "verse_text": "أَمْ يَحْسَبُونَ أَنَّا لَا نَسْمَعُ سِرَّهُمْ وَنَجْوَىٰهُم بَلَىٰ وَرُسُلُنَا لَدَيْهِمْ يَكْتُبُونَ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "43:80",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sir~a",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَمْ يَحْسَبُونَ أَنَّا لَا نَسْمَعُ سِرَّهُمْ وَنَجْوَىٰهُم بَلَىٰ وَرُسُلُنَا لَدَيْهِمْ يَكْتُبُونَ"
+  },
+  {
+   "word_ref": "47:26:15:1",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "47:26",
+     "verse_text": "ذَٰلِكَ بِأَنَّهُمْ قَالُوا۟ لِلَّذِينَ كَرِهُوا۟ مَا نَزَّلَ ٱللَّهُ سَنُطِيعُكُمْ فِى بَعْضِ ٱلْأَمْرِ وَٱللَّهُ يَعْلَمُ إِسْرَارَهُمْ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "47:26",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "<isoraAra",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": "IV",
+   "morphology": "N(IV)",
+   "form": "N(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ذَٰلِكَ بِأَنَّهُمْ قَالُوا۟ لِلَّذِينَ كَرِهُوا۟ مَا نَزَّلَ ٱللَّهُ سَنُطِيعُكُمْ فِى بَعْضِ ٱلْأَمْرِ وَٱللَّهُ يَعْلَمُ إِسْرَارَهُمْ"
+  },
+  {
+   "word_ref": "52:20:3:1",
+   "disposition": "RESISTANT",
+   "note": "All six tokens are furniture in garden or household settings.",
+   "coverage_cluster_id": "couches",
+   "candidate_semantic_interpretation": "raised or arranged couches, with no proven secrecy residue",
+   "cluster_supporting_evidence": "All six couch contexts were reviewed.",
+   "counterevidence": [
+    "The verses provide no concealed-content relation."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "52:20",
+     "verse_text": "مُتَّكِـِٔينَ عَلَىٰ سُرُرٍ مَّصْفُوفَةٍ وَزَوَّجْنَٰهُم بِحُورٍ عِينٍ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "52:20",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sururK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "مُتَّكِـِٔينَ عَلَىٰ سُرُرٍ مَّصْفُوفَةٍ وَزَوَّجْنَٰهُم بِحُورٍ عِينٍ"
+  },
+  {
+   "word_ref": "56:15:2:1",
+   "disposition": "RESISTANT",
+   "note": "All six tokens are furniture in garden or household settings.",
+   "coverage_cluster_id": "couches",
+   "candidate_semantic_interpretation": "raised or arranged couches, with no proven secrecy residue",
+   "cluster_supporting_evidence": "All six couch contexts were reviewed.",
+   "counterevidence": [
+    "The verses provide no concealed-content relation."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "56:15",
+     "verse_text": "عَلَىٰ سُرُرٍ مَّوْضُونَةٍ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "56:15",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sururK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "عَلَىٰ سُرُرٍ مَّوْضُونَةٍ"
+  },
+  {
+   "word_ref": "5:52:25:1",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "5:52",
+     "verse_text": "فَتَرَى ٱلَّذِينَ فِى قُلُوبِهِم مَّرَضٌ يُسَٰرِعُونَ فِيهِمْ يَقُولُونَ نَخْشَىٰٓ أَن تُصِيبَنَا دَآئِرَةٌ فَعَسَى ٱللَّهُ أَن يَأْتِىَ بِٱلْفَتْحِ أَوْ أَمْرٍ مِّنْ عِندِهِۦ فَيُصْبِحُوا۟ عَلَىٰ مَآ أَسَرُّوا۟ فِىٓ أَنفُسِهِمْ نَٰدِمِينَ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "5:52",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">asar~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَتَرَى ٱلَّذِينَ فِى قُلُوبِهِم مَّرَضٌ يُسَٰرِعُونَ فِيهِمْ يَقُولُونَ نَخْشَىٰٓ أَن تُصِيبَنَا دَآئِرَةٌ فَعَسَى ٱللَّهُ أَن يَأْتِىَ بِٱلْفَتْحِ أَوْ أَمْرٍ مِّنْ عِندِهِۦ فَيُصْبِحُوا۟ عَلَىٰ مَآ أَسَرُّوا۟ فِىٓ أَنفُسِهِمْ نَٰدِمِينَ"
+  },
+  {
+   "word_ref": "60:1:33:1",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "60:1",
+     "verse_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَتَّخِذُوا۟ عَدُوِّى وَعَدُوَّكُمْ أَوْلِيَآءَ تُلْقُونَ إِلَيْهِم بِٱلْمَوَدَّةِ وَقَدْ كَفَرُوا۟ بِمَا جَآءَكُم مِّنَ ٱلْحَقِّ يُخْرِجُونَ ٱلرَّسُولَ وَإِيَّاكُمْ أَن تُؤْمِنُوا۟ بِٱللَّهِ رَبِّكُمْ إِن كُنتُمْ خَرَجْتُمْ جِهَٰدًا فِى سَبِيلِى وَٱبْتِغَآءَ مَرْضَاتِى تُسِرُّونَ إِلَيْهِم بِٱلْمَوَدَّةِ وَأَنَا۠ أَعْلَمُ بِمَآ أَخْفَيْتُمْ وَمَآ أَعْلَنتُمْ وَمَن يَفْعَلْهُ مِنكُمْ فَقَدْ ضَلَّ سَوَآءَ ٱلسَّبِيلِ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "60:1",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tusir~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَتَّخِذُوا۟ عَدُوِّى وَعَدُوَّكُمْ أَوْلِيَآءَ تُلْقُونَ إِلَيْهِم بِٱلْمَوَدَّةِ وَقَدْ كَفَرُوا۟ بِمَا جَآءَكُم مِّنَ ٱلْحَقِّ يُخْرِجُونَ ٱلرَّسُولَ وَإِيَّاكُمْ أَن تُؤْمِنُوا۟ بِٱللَّهِ رَبِّكُمْ إِن كُنتُمْ خَرَجْتُمْ جِهَٰدًا فِى سَبِيلِى وَٱبْتِغَآءَ مَرْضَاتِى تُسِرُّونَ إِلَيْهِم بِٱلْمَوَدَّةِ وَأَنَا۠ أَعْلَمُ بِمَآ أَخْفَيْتُمْ وَمَآ أَعْلَنتُمْ وَمَن يَفْعَلْهُ مِنكُمْ فَقَدْ ضَلَّ سَوَآءَ ٱلسَّبِيلِ"
+  },
+  {
+   "word_ref": "64:4:8:1",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "64:4",
+     "verse_text": "يَعْلَمُ مَا فِى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ وَيَعْلَمُ مَا تُسِرُّونَ وَمَا تُعْلِنُونَ وَٱللَّهُ عَلِيمٌۢ بِذَاتِ ٱلصُّدُورِ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "64:4",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tusir~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَعْلَمُ مَا فِى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ وَيَعْلَمُ مَا تُسِرُّونَ وَمَا تُعْلِنُونَ وَٱللَّهُ عَلِيمٌۢ بِذَاتِ ٱلصُّدُورِ"
+  },
+  {
+   "word_ref": "66:3:2:1",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "66:3",
+     "verse_text": "وَإِذْ أَسَرَّ ٱلنَّبِىُّ إِلَىٰ بَعْضِ أَزْوَٰجِهِۦ حَدِيثًا فَلَمَّا نَبَّأَتْ بِهِۦ وَأَظْهَرَهُ ٱللَّهُ عَلَيْهِ عَرَّفَ بَعْضَهُۥ وَأَعْرَضَ عَنۢ بَعْضٍ فَلَمَّا نَبَّأَهَا بِهِۦ قَالَتْ مَنْ أَنۢبَأَكَ هَٰذَا قَالَ نَبَّأَنِىَ ٱلْعَلِيمُ ٱلْخَبِيرُ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "66:3",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">asar~a",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِذْ أَسَرَّ ٱلنَّبِىُّ إِلَىٰ بَعْضِ أَزْوَٰجِهِۦ حَدِيثًا فَلَمَّا نَبَّأَتْ بِهِۦ وَأَظْهَرَهُ ٱللَّهُ عَلَيْهِ عَرَّفَ بَعْضَهُۥ وَأَعْرَضَ عَنۢ بَعْضٍ فَلَمَّا نَبَّأَهَا بِهِۦ قَالَتْ مَنْ أَنۢبَأَكَ هَٰذَا قَالَ نَبَّأَنِىَ ٱلْعَلِيمُ ٱلْخَبِيرُ"
+  },
+  {
+   "word_ref": "67:13:1:2",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "67:13",
+     "verse_text": "وَأَسِرُّوا۟ قَوْلَكُمْ أَوِ ٱجْهَرُوا۟ بِهِۦٓ إِنَّهُۥ عَلِيمٌۢ بِذَاتِ ٱلصُّدُورِ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "67:13",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">asir~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَأَسِرُّوا۟ قَوْلَكُمْ أَوِ ٱجْهَرُوا۟ بِهِۦٓ إِنَّهُۥ عَلِيمٌۢ بِذَاتِ ٱلصُّدُورِ"
+  },
+  {
+   "word_ref": "6:3:8:1",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:3",
+     "verse_text": "وَهُوَ ٱللَّهُ فِى ٱلسَّمَٰوَٰتِ وَفِى ٱلْأَرْضِ يَعْلَمُ سِرَّكُمْ وَجَهْرَكُمْ وَيَعْلَمُ مَا تَكْسِبُونَ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "6:3",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sir~a",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَهُوَ ٱللَّهُ فِى ٱلسَّمَٰوَٰتِ وَفِى ٱلْأَرْضِ يَعْلَمُ سِرَّكُمْ وَجَهْرَكُمْ وَيَعْلَمُ مَا تَكْسِبُونَ"
+  },
+  {
+   "word_ref": "71:9:5:2",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "71:9",
+     "verse_text": "ثُمَّ إِنِّىٓ أَعْلَنتُ لَهُمْ وَأَسْرَرْتُ لَهُمْ إِسْرَارًا"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "71:9",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">asoraro",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ثُمَّ إِنِّىٓ أَعْلَنتُ لَهُمْ وَأَسْرَرْتُ لَهُمْ إِسْرَارًا"
+  },
+  {
+   "word_ref": "71:9:7:1",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "71:9",
+     "verse_text": "ثُمَّ إِنِّىٓ أَعْلَنتُ لَهُمْ وَأَسْرَرْتُ لَهُمْ إِسْرَارًا"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "71:9",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "<isoraArFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": "IV",
+   "morphology": "N(IV)",
+   "form": "N(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ثُمَّ إِنِّىٓ أَعْلَنتُ لَهُمْ وَأَسْرَرْتُ لَهُمْ إِسْرَارًا"
+  },
+  {
+   "word_ref": "76:11:8:2",
+   "disposition": "RESISTANT",
+   "note": "These contexts directly profile delight or ease and do not express concealed content.",
+   "coverage_cluster_id": "joy_and_prosperity",
+   "candidate_semantic_interpretation": "joy, gladness, or prosperity, with no proven secrecy residue",
+   "cluster_supporting_evidence": "All six joy/prosperity contexts were reviewed.",
+   "counterevidence": [
+    "No opposition to disclosure or private holding appears."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "76:11",
+     "verse_text": "فَوَقَىٰهُمُ ٱللَّهُ شَرَّ ذَٰلِكَ ٱلْيَوْمِ وَلَقَّىٰهُمْ نَضْرَةً وَسُرُورًا"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "76:11",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "suruwrFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَوَقَىٰهُمُ ٱللَّهُ شَرَّ ذَٰلِكَ ٱلْيَوْمِ وَلَقَّىٰهُمْ نَضْرَةً وَسُرُورًا"
+  },
+  {
+   "word_ref": "7:95:13:3",
+   "disposition": "RESISTANT",
+   "note": "These contexts directly profile delight or ease and do not express concealed content.",
+   "coverage_cluster_id": "joy_and_prosperity",
+   "candidate_semantic_interpretation": "joy, gladness, or prosperity, with no proven secrecy residue",
+   "cluster_supporting_evidence": "All six joy/prosperity contexts were reviewed.",
+   "counterevidence": [
+    "No opposition to disclosure or private holding appears."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:95",
+     "verse_text": "ثُمَّ بَدَّلْنَا مَكَانَ ٱلسَّيِّئَةِ ٱلْحَسَنَةَ حَتَّىٰ عَفَوا۟ وَّقَالُوا۟ قَدْ مَسَّ ءَابَآءَنَا ٱلضَّرَّآءُ وَٱلسَّرَّآءُ فَأَخَذْنَٰهُم بَغْتَةً وَهُمْ لَا يَشْعُرُونَ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "7:95",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "s~ar~aA^'u",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ثُمَّ بَدَّلْنَا مَكَانَ ٱلسَّيِّئَةِ ٱلْحَسَنَةَ حَتَّىٰ عَفَوا۟ وَّقَالُوا۟ قَدْ مَسَّ ءَابَآءَنَا ٱلضَّرَّآءُ وَٱلسَّرَّآءُ فَأَخَذْنَٰهُم بَغْتَةً وَهُمْ لَا يَشْعُرُونَ"
+  },
+  {
+   "word_ref": "84:13:5:1",
+   "disposition": "RESISTANT",
+   "note": "These contexts directly profile delight or ease and do not express concealed content.",
+   "coverage_cluster_id": "joy_and_prosperity",
+   "candidate_semantic_interpretation": "joy, gladness, or prosperity, with no proven secrecy residue",
+   "cluster_supporting_evidence": "All six joy/prosperity contexts were reviewed.",
+   "counterevidence": [
+    "No opposition to disclosure or private holding appears."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "84:13",
+     "verse_text": "إِنَّهُۥ كَانَ فِىٓ أَهْلِهِۦ مَسْرُورًا"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "84:13",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "masoruwrFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّهُۥ كَانَ فِىٓ أَهْلِهِۦ مَسْرُورًا"
+  },
+  {
+   "word_ref": "84:9:4:1",
+   "disposition": "RESISTANT",
+   "note": "These contexts directly profile delight or ease and do not express concealed content.",
+   "coverage_cluster_id": "joy_and_prosperity",
+   "candidate_semantic_interpretation": "joy, gladness, or prosperity, with no proven secrecy residue",
+   "cluster_supporting_evidence": "All six joy/prosperity contexts were reviewed.",
+   "counterevidence": [
+    "No opposition to disclosure or private holding appears."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "84:9",
+     "verse_text": "وَيَنقَلِبُ إِلَىٰٓ أَهْلِهِۦ مَسْرُورًا"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "84:9",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "masoruwrFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَيَنقَلِبُ إِلَىٰٓ أَهْلِهِۦ مَسْرُورًا"
+  },
+  {
+   "word_ref": "86:9:3:2",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "86:9",
+     "verse_text": "يَوْمَ تُبْلَى ٱلسَّرَآئِرُ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "86:9",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "s~araA^}iru",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَوْمَ تُبْلَى ٱلسَّرَآئِرُ"
+  },
+  {
+   "word_ref": "88:13:2:1",
+   "disposition": "RESISTANT",
+   "note": "All six tokens are furniture in garden or household settings.",
+   "coverage_cluster_id": "couches",
+   "candidate_semantic_interpretation": "raised or arranged couches, with no proven secrecy residue",
+   "cluster_supporting_evidence": "All six couch contexts were reviewed.",
+   "counterevidence": [
+    "The verses provide no concealed-content relation."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "88:13",
+     "verse_text": "فِيهَا سُرُرٌ مَّرْفُوعَةٌ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "88:13",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sururN",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فِيهَا سُرُرٌ مَّرْفُوعَةٌ"
+  },
+  {
+   "word_ref": "9:78:6:1",
+   "disposition": "CONSISTENT",
+   "note": "These verb and noun contexts explicitly oppose secrecy to declaring, publicizing, or disclosure.",
+   "coverage_cluster_id": "secrecy",
+   "candidate_semantic_interpretation": "conceal or privately hold content",
+   "cluster_supporting_evidence": "All 32 secrecy contexts were reviewed by contrast and construction.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "9:78",
+     "verse_text": "أَلَمْ يَعْلَمُوٓا۟ أَنَّ ٱللَّهَ يَعْلَمُ سِرَّهُمْ وَنَجْوَىٰهُمْ وَأَنَّ ٱللَّهَ عَلَّٰمُ ٱلْغُيُوبِ"
+    }
+   ],
+   "root_arabic": "س ر ر",
+   "root_buckwalter": "srr",
+   "root_id": "srr",
+   "artifact_name": "srr.json",
+   "verse_ref": "9:78",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sir~a",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَلَمْ يَعْلَمُوٓا۟ أَنَّ ٱللَّهَ يَعْلَمُ سِرَّهُمْ وَنَجْوَىٰهُمْ وَأَنَّ ٱللَّهَ عَلَّٰمُ ٱلْغُيُوبِ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "WEAK",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PARTIAL",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "15:47:9:1",
+  "2:69:17:1",
+  "37:44:2:1",
+  "3:134:4:2",
+  "43:34:3:2",
+  "52:20:3:1",
+  "56:15:2:1",
+  "76:11:8:2",
+  "7:95:13:3",
+  "84:13:5:1",
+  "84:9:4:1",
+  "88:13:2:1"
+ ],
+ "unreconciled_count": 12,
+ "resistant_occurrences": [
+  "15:47:9:1",
+  "2:69:17:1",
+  "37:44:2:1",
+  "3:134:4:2",
+  "43:34:3:2",
+  "52:20:3:1",
+  "56:15:2:1",
+  "76:11:8:2",
+  "7:95:13:3",
+  "84:13:5:1",
+  "84:9:4:1",
+  "88:13:2:1"
+ ],
+ "structural_uncertainty_occurrences": []
+}

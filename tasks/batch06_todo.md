@@ -10,7 +10,7 @@
 - [x] Harden root identity and contested-reconciliation provenance.
 - [x] Verify and commit the Phase 0 population/contract checkpoint.
 - [x] Execute, verify, and commit Wave 1.
-- [ ] Execute, verify, and commit Wave 2.
+- [x] Execute, verify, and commit Wave 2.
 - [ ] Produce and verify the final Batch 06 campaign report.
 - [ ] Reconcile campaign resume/status and `PROJECT_STATE.md`.
 - [ ] Run the whole-campaign V3 evidence gate.

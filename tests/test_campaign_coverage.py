@@ -475,6 +475,20 @@ def test_materialize_coverage_is_explicit_count_pinned_and_fail_closed():
         materialize_occurrence_dispositions("ktb", occurrences, ambiguous)
 
 
+def test_root_json_first_write_and_replay_use_stable_lf(tmp_path):
+    from tools.campaign import _write_root_json
+
+    path = tmp_path / "ktb.json"
+    payload = {"root_buckwalter": "ktb", "value": "line\nbreak"}
+    _write_root_json(path, "ktb", payload)
+    first = path.read_bytes()
+    assert b"\r\n" not in first
+    assert b"\n" in first
+
+    _write_root_json(path, "ktb", payload)
+    assert path.read_bytes() == first
+
+
 # --- Owner remediation: cross-lens root unity (Window 03 integrity fix) -------
 
 

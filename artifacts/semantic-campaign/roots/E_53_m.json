@@ -1,0 +1,637 @@
+{
+ "root_arabic": "ع ص م",
+ "root_buckwalter": "ESm",
+ "root_id": "ESm",
+ "artifact_name": "E_53_m.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch06-wave2-coverage",
+ "occurrences": 13,
+ "frozen_candidate_root_contribution": "a restraining hold that prevents separation, exposure, or harm; derivations distribute protecting, holding fast, and seeking protection",
+ "internal_discovery": {
+  "candidate_root_contribution": "a restraining hold that prevents separation, exposure, or harm; derivations distribute protecting, holding fast, and seeking protection",
+  "plain_explanation": "The 13 occurrences span protection, protector, bond, holding fast together, and seeking refuge. In every class a hold prevents a threatened separation or harmful reach.",
+  "layer_separation_note": "Form VIII supplies taking/maintaining hold, Form X seeking that hold, base form protecting, and nouns protector or binding bond. Threat and protected participant are contextual.",
+  "presence": {
+   "occurrences_total": 13,
+   "occurrences_checked": 13,
+   "occurrences_consistent": 13,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "Holding fast to God/rope is not protection by a separate agent, but still maintains a bond that prevents separation.",
+  "competing_hypothesis": "The core is protection only; collective i'tisam foregrounds active adherence, requiring the more relational restraining-hold nucleus.",
+  "distinctiveness_note": "Distinct from saving as achieved outcome and from grasping generally; ESm is hold as prevention against separation or harm.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "The hold/prevention relation is universal, but its protection-to-adherence bridge remains moderately abstract.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "hold_fast",
+     "where": {
+      "qac_verb_form": [
+       "VIII"
+      ]
+     },
+     "occurrence_count_expected": 5,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "take or maintain a bond that prevents separation",
+     "classification_rationale": "Each Form VIII context explicitly commands or describes holding fast.",
+     "supporting_evidence_note": "All five Form VIII contexts were reviewed.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "protecting_hold",
+     "where": {
+      "qac_pos": [
+       "N"
+      ],
+      "qac_verb_form": [
+       null
+      ]
+     },
+     "occurrence_count_expected": 4,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "protector or bond that restrains harmful reach/separation",
+     "classification_rationale": "The nouns name a protector or protective bond.",
+     "supporting_evidence_note": "All four noun contexts were reviewed.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "protect_verbs",
+     "where": {
+      "qac_pos": [
+       "V"
+      ],
+      "qac_verb_form": [
+       null
+      ]
+     },
+     "occurrence_count_expected": 3,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "prevent harm from reaching a participant",
+     "classification_rationale": "Each base verb asks who can protect or prevent divine decree.",
+     "supporting_evidence_note": "All three base verbal contexts were reviewed.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "seek_protection",
+     "where": {
+      "qac_verb_form": [
+       "X"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "seek a restraining protective hold",
+     "classification_rationale": "12:32 explicitly has Joseph seek protection against the solicited act.",
+     "supporting_evidence_note": "The sole Form X context was reviewed directly.",
+     "counterevidence": []
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "ESm",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Protection and adherence reconcile under a qualified restraining-hold relation."
+ },
+ "coverage_validation": {
+  "root": "ESm",
+  "expected_count": 13,
+  "researched_count": 13,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "10:27:14:1",
+   "disposition": "CONSISTENT",
+   "note": "The nouns name a protector or protective bond.",
+   "coverage_cluster_id": "protecting_hold",
+   "candidate_semantic_interpretation": "protector or bond that restrains harmful reach/separation",
+   "cluster_supporting_evidence": "All four noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "10:27",
+     "verse_text": "وَٱلَّذِينَ كَسَبُوا۟ ٱلسَّيِّـَٔاتِ جَزَآءُ سَيِّئَةٍۭ بِمِثْلِهَا وَتَرْهَقُهُمْ ذِلَّةٌ مَّا لَهُم مِّنَ ٱللَّهِ مِنْ عَاصِمٍ كَأَنَّمَآ أُغْشِيَتْ وُجُوهُهُمْ قِطَعًا مِّنَ ٱلَّيْلِ مُظْلِمًا أُو۟لَٰٓئِكَ أَصْحَٰبُ ٱلنَّارِ هُمْ فِيهَا خَٰلِدُونَ"
+    }
+   ],
+   "root_arabic": "ع ص م",
+   "root_buckwalter": "ESm",
+   "root_id": "ESm",
+   "artifact_name": "E_53_m.json",
+   "verse_ref": "10:27",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "EaASimK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱلَّذِينَ كَسَبُوا۟ ٱلسَّيِّـَٔاتِ جَزَآءُ سَيِّئَةٍۭ بِمِثْلِهَا وَتَرْهَقُهُمْ ذِلَّةٌ مَّا لَهُم مِّنَ ٱللَّهِ مِنْ عَاصِمٍ كَأَنَّمَآ أُغْشِيَتْ وُجُوهُهُمْ قِطَعًا مِّنَ ٱلَّيْلِ مُظْلِمًا أُو۟لَٰٓئِكَ أَصْحَٰبُ ٱلنَّارِ هُمْ فِيهَا خَٰلِدُونَ"
+  },
+  {
+   "word_ref": "11:43:10:1",
+   "disposition": "CONSISTENT",
+   "note": "The nouns name a protector or protective bond.",
+   "coverage_cluster_id": "protecting_hold",
+   "candidate_semantic_interpretation": "protector or bond that restrains harmful reach/separation",
+   "cluster_supporting_evidence": "All four noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "11:43",
+     "verse_text": "قَالَ سَـَٔاوِىٓ إِلَىٰ جَبَلٍ يَعْصِمُنِى مِنَ ٱلْمَآءِ قَالَ لَا عَاصِمَ ٱلْيَوْمَ مِنْ أَمْرِ ٱللَّهِ إِلَّا مَن رَّحِمَ وَحَالَ بَيْنَهُمَا ٱلْمَوْجُ فَكَانَ مِنَ ٱلْمُغْرَقِينَ"
+    }
+   ],
+   "root_arabic": "ع ص م",
+   "root_buckwalter": "ESm",
+   "root_id": "ESm",
+   "artifact_name": "E_53_m.json",
+   "verse_ref": "11:43",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "EaASima",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالَ سَـَٔاوِىٓ إِلَىٰ جَبَلٍ يَعْصِمُنِى مِنَ ٱلْمَآءِ قَالَ لَا عَاصِمَ ٱلْيَوْمَ مِنْ أَمْرِ ٱللَّهِ إِلَّا مَن رَّحِمَ وَحَالَ بَيْنَهُمَا ٱلْمَوْجُ فَكَانَ مِنَ ٱلْمُغْرَقِينَ"
+  },
+  {
+   "word_ref": "11:43:5:1",
+   "disposition": "CONSISTENT",
+   "note": "Each base verb asks who can protect or prevent divine decree.",
+   "coverage_cluster_id": "protect_verbs",
+   "candidate_semantic_interpretation": "prevent harm from reaching a participant",
+   "cluster_supporting_evidence": "All three base verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "11:43",
+     "verse_text": "قَالَ سَـَٔاوِىٓ إِلَىٰ جَبَلٍ يَعْصِمُنِى مِنَ ٱلْمَآءِ قَالَ لَا عَاصِمَ ٱلْيَوْمَ مِنْ أَمْرِ ٱللَّهِ إِلَّا مَن رَّحِمَ وَحَالَ بَيْنَهُمَا ٱلْمَوْجُ فَكَانَ مِنَ ٱلْمُغْرَقِينَ"
+    }
+   ],
+   "root_arabic": "ع ص م",
+   "root_buckwalter": "ESm",
+   "root_id": "ESm",
+   "artifact_name": "E_53_m.json",
+   "verse_ref": "11:43",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaEoSimu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالَ سَـَٔاوِىٓ إِلَىٰ جَبَلٍ يَعْصِمُنِى مِنَ ٱلْمَآءِ قَالَ لَا عَاصِمَ ٱلْيَوْمَ مِنْ أَمْرِ ٱللَّهِ إِلَّا مَن رَّحِمَ وَحَالَ بَيْنَهُمَا ٱلْمَوْجُ فَكَانَ مِنَ ٱلْمُغْرَقِينَ"
+  },
+  {
+   "word_ref": "12:32:10:2",
+   "disposition": "CONSISTENT",
+   "note": "12:32 explicitly has Joseph seek protection against the solicited act.",
+   "coverage_cluster_id": "seek_protection",
+   "candidate_semantic_interpretation": "seek a restraining protective hold",
+   "cluster_supporting_evidence": "The sole Form X context was reviewed directly.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "12:32",
+     "verse_text": "قَالَتْ فَذَٰلِكُنَّ ٱلَّذِى لُمْتُنَّنِى فِيهِ وَلَقَدْ رَٰوَدتُّهُۥ عَن نَّفْسِهِۦ فَٱسْتَعْصَمَ وَلَئِن لَّمْ يَفْعَلْ مَآ ءَامُرُهُۥ لَيُسْجَنَنَّ وَلَيَكُونًا مِّنَ ٱلصَّٰغِرِينَ"
+    }
+   ],
+   "root_arabic": "ع ص م",
+   "root_buckwalter": "ESm",
+   "root_id": "ESm",
+   "artifact_name": "E_53_m.json",
+   "verse_ref": "12:32",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{sotaEoSama",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالَتْ فَذَٰلِكُنَّ ٱلَّذِى لُمْتُنَّنِى فِيهِ وَلَقَدْ رَٰوَدتُّهُۥ عَن نَّفْسِهِۦ فَٱسْتَعْصَمَ وَلَئِن لَّمْ يَفْعَلْ مَآ ءَامُرُهُۥ لَيُسْجَنَنَّ وَلَيَكُونًا مِّنَ ٱلصَّٰغِرِينَ"
+  },
+  {
+   "word_ref": "22:78:37:2",
+   "disposition": "CONSISTENT",
+   "note": "Each Form VIII context explicitly commands or describes holding fast.",
+   "coverage_cluster_id": "hold_fast",
+   "candidate_semantic_interpretation": "take or maintain a bond that prevents separation",
+   "cluster_supporting_evidence": "All five Form VIII contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "22:78",
+     "verse_text": "وَجَٰهِدُوا۟ فِى ٱللَّهِ حَقَّ جِهَادِهِۦ هُوَ ٱجْتَبَىٰكُمْ وَمَا جَعَلَ عَلَيْكُمْ فِى ٱلدِّينِ مِنْ حَرَجٍ مِّلَّةَ أَبِيكُمْ إِبْرَٰهِيمَ هُوَ سَمَّىٰكُمُ ٱلْمُسْلِمِينَ مِن قَبْلُ وَفِى هَٰذَا لِيَكُونَ ٱلرَّسُولُ شَهِيدًا عَلَيْكُمْ وَتَكُونُوا۟ شُهَدَآءَ عَلَى ٱلنَّاسِ فَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَٱعْتَصِمُوا۟ بِٱللَّهِ هُوَ مَوْلَىٰكُمْ فَنِعْمَ ٱلْمَوْلَىٰ وَنِعْمَ ٱلنَّصِيرُ"
+    }
+   ],
+   "root_arabic": "ع ص م",
+   "root_buckwalter": "ESm",
+   "root_id": "ESm",
+   "artifact_name": "E_53_m.json",
+   "verse_ref": "22:78",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{EotaSimu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَجَٰهِدُوا۟ فِى ٱللَّهِ حَقَّ جِهَادِهِۦ هُوَ ٱجْتَبَىٰكُمْ وَمَا جَعَلَ عَلَيْكُمْ فِى ٱلدِّينِ مِنْ حَرَجٍ مِّلَّةَ أَبِيكُمْ إِبْرَٰهِيمَ هُوَ سَمَّىٰكُمُ ٱلْمُسْلِمِينَ مِن قَبْلُ وَفِى هَٰذَا لِيَكُونَ ٱلرَّسُولُ شَهِيدًا عَلَيْكُمْ وَتَكُونُوا۟ شُهَدَآءَ عَلَى ٱلنَّاسِ فَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَٱعْتَصِمُوا۟ بِٱللَّهِ هُوَ مَوْلَىٰكُمْ فَنِعْمَ ٱلْمَوْلَىٰ وَنِعْمَ ٱلنَّصِيرُ"
+  },
+  {
+   "word_ref": "33:17:5:1",
+   "disposition": "CONSISTENT",
+   "note": "Each base verb asks who can protect or prevent divine decree.",
+   "coverage_cluster_id": "protect_verbs",
+   "candidate_semantic_interpretation": "prevent harm from reaching a participant",
+   "cluster_supporting_evidence": "All three base verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "33:17",
+     "verse_text": "قُلْ مَن ذَا ٱلَّذِى يَعْصِمُكُم مِّنَ ٱللَّهِ إِنْ أَرَادَ بِكُمْ سُوٓءًا أَوْ أَرَادَ بِكُمْ رَحْمَةً وَلَا يَجِدُونَ لَهُم مِّن دُونِ ٱللَّهِ وَلِيًّا وَلَا نَصِيرًا"
+    }
+   ],
+   "root_arabic": "ع ص م",
+   "root_buckwalter": "ESm",
+   "root_id": "ESm",
+   "artifact_name": "E_53_m.json",
+   "verse_ref": "33:17",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaEoSimu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قُلْ مَن ذَا ٱلَّذِى يَعْصِمُكُم مِّنَ ٱللَّهِ إِنْ أَرَادَ بِكُمْ سُوٓءًا أَوْ أَرَادَ بِكُمْ رَحْمَةً وَلَا يَجِدُونَ لَهُم مِّن دُونِ ٱللَّهِ وَلِيًّا وَلَا نَصِيرًا"
+  },
+  {
+   "word_ref": "3:101:11:1",
+   "disposition": "CONSISTENT",
+   "note": "Each Form VIII context explicitly commands or describes holding fast.",
+   "coverage_cluster_id": "hold_fast",
+   "candidate_semantic_interpretation": "take or maintain a bond that prevents separation",
+   "cluster_supporting_evidence": "All five Form VIII contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:101",
+     "verse_text": "وَكَيْفَ تَكْفُرُونَ وَأَنتُمْ تُتْلَىٰ عَلَيْكُمْ ءَايَٰتُ ٱللَّهِ وَفِيكُمْ رَسُولُهُۥ وَمَن يَعْتَصِم بِٱللَّهِ فَقَدْ هُدِىَ إِلَىٰ صِرَٰطٍ مُّسْتَقِيمٍ"
+    }
+   ],
+   "root_arabic": "ع ص م",
+   "root_buckwalter": "ESm",
+   "root_id": "ESm",
+   "artifact_name": "E_53_m.json",
+   "verse_ref": "3:101",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaEotaSim",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَكَيْفَ تَكْفُرُونَ وَأَنتُمْ تُتْلَىٰ عَلَيْكُمْ ءَايَٰتُ ٱللَّهِ وَفِيكُمْ رَسُولُهُۥ وَمَن يَعْتَصِم بِٱللَّهِ فَقَدْ هُدِىَ إِلَىٰ صِرَٰطٍ مُّسْتَقِيمٍ"
+  },
+  {
+   "word_ref": "3:103:1:2",
+   "disposition": "CONSISTENT",
+   "note": "Each Form VIII context explicitly commands or describes holding fast.",
+   "coverage_cluster_id": "hold_fast",
+   "candidate_semantic_interpretation": "take or maintain a bond that prevents separation",
+   "cluster_supporting_evidence": "All five Form VIII contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:103",
+     "verse_text": "وَٱعْتَصِمُوا۟ بِحَبْلِ ٱللَّهِ جَمِيعًا وَلَا تَفَرَّقُوا۟ وَٱذْكُرُوا۟ نِعْمَتَ ٱللَّهِ عَلَيْكُمْ إِذْ كُنتُمْ أَعْدَآءً فَأَلَّفَ بَيْنَ قُلُوبِكُمْ فَأَصْبَحْتُم بِنِعْمَتِهِۦٓ إِخْوَٰنًا وَكُنتُمْ عَلَىٰ شَفَا حُفْرَةٍ مِّنَ ٱلنَّارِ فَأَنقَذَكُم مِّنْهَا كَذَٰلِكَ يُبَيِّنُ ٱللَّهُ لَكُمْ ءَايَٰتِهِۦ لَعَلَّكُمْ تَهْتَدُونَ"
+    }
+   ],
+   "root_arabic": "ع ص م",
+   "root_buckwalter": "ESm",
+   "root_id": "ESm",
+   "artifact_name": "E_53_m.json",
+   "verse_ref": "3:103",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{EotaSimu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱعْتَصِمُوا۟ بِحَبْلِ ٱللَّهِ جَمِيعًا وَلَا تَفَرَّقُوا۟ وَٱذْكُرُوا۟ نِعْمَتَ ٱللَّهِ عَلَيْكُمْ إِذْ كُنتُمْ أَعْدَآءً فَأَلَّفَ بَيْنَ قُلُوبِكُمْ فَأَصْبَحْتُم بِنِعْمَتِهِۦٓ إِخْوَٰنًا وَكُنتُمْ عَلَىٰ شَفَا حُفْرَةٍ مِّنَ ٱلنَّارِ فَأَنقَذَكُم مِّنْهَا كَذَٰلِكَ يُبَيِّنُ ٱللَّهُ لَكُمْ ءَايَٰتِهِۦ لَعَلَّكُمْ تَهْتَدُونَ"
+  },
+  {
+   "word_ref": "40:33:9:1",
+   "disposition": "CONSISTENT",
+   "note": "The nouns name a protector or protective bond.",
+   "coverage_cluster_id": "protecting_hold",
+   "candidate_semantic_interpretation": "protector or bond that restrains harmful reach/separation",
+   "cluster_supporting_evidence": "All four noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "40:33",
+     "verse_text": "يَوْمَ تُوَلُّونَ مُدْبِرِينَ مَا لَكُم مِّنَ ٱللَّهِ مِنْ عَاصِمٍ وَمَن يُضْلِلِ ٱللَّهُ فَمَا لَهُۥ مِنْ هَادٍ"
+    }
+   ],
+   "root_arabic": "ع ص م",
+   "root_buckwalter": "ESm",
+   "root_id": "ESm",
+   "artifact_name": "E_53_m.json",
+   "verse_ref": "40:33",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "EaASimK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَوْمَ تُوَلُّونَ مُدْبِرِينَ مَا لَكُم مِّنَ ٱللَّهِ مِنْ عَاصِمٍ وَمَن يُضْلِلِ ٱللَّهُ فَمَا لَهُۥ مِنْ هَادٍ"
+  },
+  {
+   "word_ref": "4:146:5:2",
+   "disposition": "CONSISTENT",
+   "note": "Each Form VIII context explicitly commands or describes holding fast.",
+   "coverage_cluster_id": "hold_fast",
+   "candidate_semantic_interpretation": "take or maintain a bond that prevents separation",
+   "cluster_supporting_evidence": "All five Form VIII contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "4:146",
+     "verse_text": "إِلَّا ٱلَّذِينَ تَابُوا۟ وَأَصْلَحُوا۟ وَٱعْتَصَمُوا۟ بِٱللَّهِ وَأَخْلَصُوا۟ دِينَهُمْ لِلَّهِ فَأُو۟لَٰٓئِكَ مَعَ ٱلْمُؤْمِنِينَ وَسَوْفَ يُؤْتِ ٱللَّهُ ٱلْمُؤْمِنِينَ أَجْرًا عَظِيمًا"
+    }
+   ],
+   "root_arabic": "ع ص م",
+   "root_buckwalter": "ESm",
+   "root_id": "ESm",
+   "artifact_name": "E_53_m.json",
+   "verse_ref": "4:146",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{EotaSamu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِلَّا ٱلَّذِينَ تَابُوا۟ وَأَصْلَحُوا۟ وَٱعْتَصَمُوا۟ بِٱللَّهِ وَأَخْلَصُوا۟ دِينَهُمْ لِلَّهِ فَأُو۟لَٰٓئِكَ مَعَ ٱلْمُؤْمِنِينَ وَسَوْفَ يُؤْتِ ٱللَّهُ ٱلْمُؤْمِنِينَ أَجْرًا عَظِيمًا"
+  },
+  {
+   "word_ref": "4:175:5:2",
+   "disposition": "CONSISTENT",
+   "note": "Each Form VIII context explicitly commands or describes holding fast.",
+   "coverage_cluster_id": "hold_fast",
+   "candidate_semantic_interpretation": "take or maintain a bond that prevents separation",
+   "cluster_supporting_evidence": "All five Form VIII contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "4:175",
+     "verse_text": "فَأَمَّا ٱلَّذِينَ ءَامَنُوا۟ بِٱللَّهِ وَٱعْتَصَمُوا۟ بِهِۦ فَسَيُدْخِلُهُمْ فِى رَحْمَةٍ مِّنْهُ وَفَضْلٍ وَيَهْدِيهِمْ إِلَيْهِ صِرَٰطًا مُّسْتَقِيمًا"
+    }
+   ],
+   "root_arabic": "ع ص م",
+   "root_buckwalter": "ESm",
+   "root_id": "ESm",
+   "artifact_name": "E_53_m.json",
+   "verse_ref": "4:175",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{EotaSamu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَأَمَّا ٱلَّذِينَ ءَامَنُوا۟ بِٱللَّهِ وَٱعْتَصَمُوا۟ بِهِۦ فَسَيُدْخِلُهُمْ فِى رَحْمَةٍ مِّنْهُ وَفَضْلٍ وَيَهْدِيهِمْ إِلَيْهِ صِرَٰطًا مُّسْتَقِيمًا"
+  },
+  {
+   "word_ref": "5:67:16:1",
+   "disposition": "CONSISTENT",
+   "note": "Each base verb asks who can protect or prevent divine decree.",
+   "coverage_cluster_id": "protect_verbs",
+   "candidate_semantic_interpretation": "prevent harm from reaching a participant",
+   "cluster_supporting_evidence": "All three base verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "5:67",
+     "verse_text": "يَٰٓأَيُّهَا ٱلرَّسُولُ بَلِّغْ مَآ أُنزِلَ إِلَيْكَ مِن رَّبِّكَ وَإِن لَّمْ تَفْعَلْ فَمَا بَلَّغْتَ رِسَالَتَهُۥ وَٱللَّهُ يَعْصِمُكَ مِنَ ٱلنَّاسِ إِنَّ ٱللَّهَ لَا يَهْدِى ٱلْقَوْمَ ٱلْكَٰفِرِينَ"
+    }
+   ],
+   "root_arabic": "ع ص م",
+   "root_buckwalter": "ESm",
+   "root_id": "ESm",
+   "artifact_name": "E_53_m.json",
+   "verse_ref": "5:67",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaEoSimu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰٓأَيُّهَا ٱلرَّسُولُ بَلِّغْ مَآ أُنزِلَ إِلَيْكَ مِن رَّبِّكَ وَإِن لَّمْ تَفْعَلْ فَمَا بَلَّغْتَ رِسَالَتَهُۥ وَٱللَّهُ يَعْصِمُكَ مِنَ ٱلنَّاسِ إِنَّ ٱللَّهَ لَا يَهْدِى ٱلْقَوْمَ ٱلْكَٰفِرِينَ"
+  },
+  {
+   "word_ref": "60:10:40:2",
+   "disposition": "CONSISTENT",
+   "note": "The nouns name a protector or protective bond.",
+   "coverage_cluster_id": "protecting_hold",
+   "candidate_semantic_interpretation": "protector or bond that restrains harmful reach/separation",
+   "cluster_supporting_evidence": "All four noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "60:10",
+     "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا جَآءَكُمُ ٱلْمُؤْمِنَٰتُ مُهَٰجِرَٰتٍ فَٱمْتَحِنُوهُنَّ ٱللَّهُ أَعْلَمُ بِإِيمَٰنِهِنَّ فَإِنْ عَلِمْتُمُوهُنَّ مُؤْمِنَٰتٍ فَلَا تَرْجِعُوهُنَّ إِلَى ٱلْكُفَّارِ لَا هُنَّ حِلٌّ لَّهُمْ وَلَا هُمْ يَحِلُّونَ لَهُنَّ وَءَاتُوهُم مَّآ أَنفَقُوا۟ وَلَا جُنَاحَ عَلَيْكُمْ أَن تَنكِحُوهُنَّ إِذَآ ءَاتَيْتُمُوهُنَّ أُجُورَهُنَّ وَلَا تُمْسِكُوا۟ بِعِصَمِ ٱلْكَوَافِرِ وَسْـَٔلُوا۟ مَآ أَنفَقْتُمْ وَلْيَسْـَٔلُوا۟ مَآ أَنفَقُوا۟ ذَٰلِكُمْ حُكْمُ ٱللَّهِ يَحْكُمُ بَيْنَكُمْ وَٱللَّهُ عَلِيمٌ حَكِيمٌ"
+    }
+   ],
+   "root_arabic": "ع ص م",
+   "root_buckwalter": "ESm",
+   "root_id": "ESm",
+   "artifact_name": "E_53_m.json",
+   "verse_ref": "60:10",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "EiSami",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا جَآءَكُمُ ٱلْمُؤْمِنَٰتُ مُهَٰجِرَٰتٍ فَٱمْتَحِنُوهُنَّ ٱللَّهُ أَعْلَمُ بِإِيمَٰنِهِنَّ فَإِنْ عَلِمْتُمُوهُنَّ مُؤْمِنَٰتٍ فَلَا تَرْجِعُوهُنَّ إِلَى ٱلْكُفَّارِ لَا هُنَّ حِلٌّ لَّهُمْ وَلَا هُمْ يَحِلُّونَ لَهُنَّ وَءَاتُوهُم مَّآ أَنفَقُوا۟ وَلَا جُنَاحَ عَلَيْكُمْ أَن تَنكِحُوهُنَّ إِذَآ ءَاتَيْتُمُوهُنَّ أُجُورَهُنَّ وَلَا تُمْسِكُوا۟ بِعِصَمِ ٱلْكَوَافِرِ وَسْـَٔلُوا۟ مَآ أَنفَقْتُمْ وَلْيَسْـَٔلُوا۟ مَآ أَنفَقُوا۟ ذَٰلِكُمْ حُكْمُ ٱللَّهِ يَحْكُمُ بَيْنَكُمْ وَٱللَّهُ عَلِيمٌ حَكِيمٌ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

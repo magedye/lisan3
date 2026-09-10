@@ -119,7 +119,7 @@ def _write_root_json(path: Path, root: str, artifact: dict) -> None:
     serialized = json.dumps(artifact, ensure_ascii=False, indent=1)
     try:
         # Exclusive creation closes the first-writer race when a path is absent.
-        with path.open("x", encoding="utf-8") as stream:
+        with path.open("x", encoding="utf-8", newline="\n") as stream:
             stream.write(serialized)
         return
     except FileExistsError:

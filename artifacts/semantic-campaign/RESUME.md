@@ -34,8 +34,8 @@ python -m tools.campaign status         # processed vs remaining; research vs ca
    -> per-root artifact in `artifacts/semantic-campaign/roots/`, exact-set validated,
    ledger + CampaignState updated (idempotent; lineage preserved on reprocess).
 
-## Current state (as of Batch 06 Wave 1 checkpoint)
-- Processed **108 / 1,642** roots; remaining **1,534**; `PENDING_COVERAGE_EVIDENCE = 0`;
+## Current state (as of Batch 06 Wave 2 checkpoint)
+- Processed **128 / 1,642** roots; remaining **1,514**; `PENDING_COVERAGE_EVIDENCE = 0`;
   all processed roots exact-set COMPLETE; canonicalization PENDING for all.
 - Batch 06 is owner-authorized on branch `semantic-campaign-batch06`. Its fresh
   deterministic population is frozen in `BATCH_06_MANIFEST.json`: 40 roots and
@@ -43,12 +43,14 @@ python -m tools.campaign status         # processed vs remaining; research vs ca
 - The separate Batch 05 corrective roots `Anf`, `Erw`, `rbb`, `ETw`, and `fqr`
   are excluded. A pre-existing ignored Batch 06 scratch population was not used
   as authority.
-- Wave 1 is persisted and exact-set complete for 20 roots / 1,780 occurrences.
-  Its outcome distribution is 4 STRONG, 10 MODERATE, 4 WEAK, and 2 UNRESOLVED;
-  528 resistant occurrences and two reconciliation lineage records remain
-  explicit. Report: `docs/LISAN3_BATCH_06_WAVE_01.md`.
-- Next action: execute Wave 2 from its frozen 20-root / 1,318-occurrence manifest
-  population without reopening Wave 1 or the separate Batch 05 corrective roots.
+- Both Batch 06 waves are persisted and exact-set complete: 40 roots / 3,098
+  occurrences. Combined outcomes are 13 STRONG, 15 MODERATE, 7 WEAK, and
+  5 UNRESOLVED; 562 resistant occurrences and two reconciliation lineage
+  records remain explicit.
+- Wave reports: `docs/LISAN3_BATCH_06_WAVE_01.md` and
+  `docs/LISAN3_BATCH_06_WAVE_02.md`.
+- Next action: run the whole-Batch-06 V3 evidence gate, write the final campaign
+  report, and reconcile final state without starting another batch.
 
 ## Filename safety (IMPORTANT — do not regress)
 `tools/campaign.py safe_name` escapes the uppercase Buckwalter homograph letters

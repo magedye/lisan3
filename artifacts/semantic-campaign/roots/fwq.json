@@ -1,0 +1,1806 @@
+{
+ "root_arabic": "ف و ق",
+ "root_buckwalter": "fwq",
+ "root_id": "fwq",
+ "artifact_name": "fwq.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch06-wave2-coverage",
+ "occurrences": 43,
+ "frozen_candidate_root_contribution": "position or rank on the upper side of a reference point",
+ "internal_discovery": {
+  "candidate_root_contribution": "position or rank on the upper side of a reference point",
+  "plain_explanation": "Forty-one of 43 occurrences mark physical, scalar, or authority-based above-ness. The fawaq interval at 38:15 and the Form IV recovery from unconsciousness at 7:143 do not internally expose upper position as their residue.",
+  "layer_separation_note": "Noun/location tagging and complements establish reference points for above-ness. The two lexical seams are not converted into vertical metaphors without internal evidence.",
+  "presence": {
+   "occurrences_total": 43,
+   "occurrences_checked": 43,
+   "occurrences_consistent": 41,
+   "inconsistent_refs": [
+    "38:15:10:1",
+    "7:143:34:1"
+   ]
+  },
+  "strongest_counterexample": "7:143 afaqqa means Moses recovered; 38:15 fawaq names an interval/respite. Neither verse states upward position.",
+  "competing_hypothesis": "Recovery is rising back and fawaq is a return interval; this conceptual bridge is not demonstrated by the Quranic contexts.",
+  "distinctiveness_note": "Above-ness is distinct from height as inherent dimension: fwq is relational to a reference point. The two seams remain outside it.",
+  "unresolved_cases": [
+   "38:15:10:1",
+   "7:143:34:1"
+  ],
+  "result": "PREFERRED",
+  "result_strength": "WEAK",
+  "rationale": "The dominant relational nucleus is clear, but two unreconciled lexical families block universal presence.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "above_relation",
+     "where": {
+      "qac_surface_regex": "^fawoq"
+     },
+     "occurrence_count_expected": 41,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+     "classification_rationale": "These contexts explicitly position or rank one referent above another.",
+     "supporting_evidence_note": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "fawaq_interval",
+     "where": {
+      "qac_surface_regex": "^fawaAq"
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "an interval or respite with no proven upper-position residue",
+     "classification_rationale": "38:15 denies an interval in the cry and supplies no vertical relation.",
+     "supporting_evidence_note": "38:15 was reviewed directly.",
+     "counterevidence": [
+      "No upper/lower reference point occurs."
+     ]
+    },
+    {
+     "cluster_id": "recovery",
+     "where": {
+      "qac_verb_form": [
+       "IV"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "recover consciousness, with no proven above-ness residue",
+     "classification_rationale": "7:143 describes recovery after collapse without an explicit upward motion.",
+     "supporting_evidence_note": "7:143 was reviewed directly.",
+     "counterevidence": [
+      "The verse does not encode elevation as the recovery mechanism."
+     ]
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "fwq",
+  "verdict": "PARTIALLY_SUPPORTED",
+  "failing_occurrences": [
+   "38:15:10:1",
+   "7:143:34:1"
+  ],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Relational above-ness is preferred for 41; two seams remain resistant."
+ },
+ "coverage_validation": {
+  "root": "fwq",
+  "expected_count": 43,
+  "researched_count": 43,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "12:36:16:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "12:36",
+     "verse_text": "وَدَخَلَ مَعَهُ ٱلسِّجْنَ فَتَيَانِ قَالَ أَحَدُهُمَآ إِنِّىٓ أَرَىٰنِىٓ أَعْصِرُ خَمْرًا وَقَالَ ٱلْـَٔاخَرُ إِنِّىٓ أَرَىٰنِىٓ أَحْمِلُ فَوْقَ رَأْسِى خُبْزًا تَأْكُلُ ٱلطَّيْرُ مِنْهُ نَبِّئْنَا بِتَأْوِيلِهِۦٓ إِنَّا نَرَىٰكَ مِنَ ٱلْمُحْسِنِينَ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "12:36",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqa",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَدَخَلَ مَعَهُ ٱلسِّجْنَ فَتَيَانِ قَالَ أَحَدُهُمَآ إِنِّىٓ أَرَىٰنِىٓ أَعْصِرُ خَمْرًا وَقَالَ ٱلْـَٔاخَرُ إِنِّىٓ أَرَىٰنِىٓ أَحْمِلُ فَوْقَ رَأْسِى خُبْزًا تَأْكُلُ ٱلطَّيْرُ مِنْهُ نَبِّئْنَا بِتَأْوِيلِهِۦٓ إِنَّا نَرَىٰكَ مِنَ ٱلْمُحْسِنِينَ"
+  },
+  {
+   "word_ref": "12:76:29:2",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "12:76",
+     "verse_text": "فَبَدَأَ بِأَوْعِيَتِهِمْ قَبْلَ وِعَآءِ أَخِيهِ ثُمَّ ٱسْتَخْرَجَهَا مِن وِعَآءِ أَخِيهِ كَذَٰلِكَ كِدْنَا لِيُوسُفَ مَا كَانَ لِيَأْخُذَ أَخَاهُ فِى دِينِ ٱلْمَلِكِ إِلَّآ أَن يَشَآءَ ٱللَّهُ نَرْفَعُ دَرَجَٰتٍ مَّن نَّشَآءُ وَفَوْقَ كُلِّ ذِى عِلْمٍ عَلِيمٌ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "12:76",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqa",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبَدَأَ بِأَوْعِيَتِهِمْ قَبْلَ وِعَآءِ أَخِيهِ ثُمَّ ٱسْتَخْرَجَهَا مِن وِعَآءِ أَخِيهِ كَذَٰلِكَ كِدْنَا لِيُوسُفَ مَا كَانَ لِيَأْخُذَ أَخَاهُ فِى دِينِ ٱلْمَلِكِ إِلَّآ أَن يَشَآءَ ٱللَّهُ نَرْفَعُ دَرَجَٰتٍ مَّن نَّشَآءُ وَفَوْقَ كُلِّ ذِى عِلْمٍ عَلِيمٌ"
+  },
+  {
+   "word_ref": "14:26:8:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "14:26",
+     "verse_text": "وَمَثَلُ كَلِمَةٍ خَبِيثَةٍ كَشَجَرَةٍ خَبِيثَةٍ ٱجْتُثَّتْ مِن فَوْقِ ٱلْأَرْضِ مَا لَهَا مِن قَرَارٍ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "14:26",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَمَثَلُ كَلِمَةٍ خَبِيثَةٍ كَشَجَرَةٍ خَبِيثَةٍ ٱجْتُثَّتْ مِن فَوْقِ ٱلْأَرْضِ مَا لَهَا مِن قَرَارٍ"
+  },
+  {
+   "word_ref": "16:26:15:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "16:26",
+     "verse_text": "قَدْ مَكَرَ ٱلَّذِينَ مِن قَبْلِهِمْ فَأَتَى ٱللَّهُ بُنْيَٰنَهُم مِّنَ ٱلْقَوَاعِدِ فَخَرَّ عَلَيْهِمُ ٱلسَّقْفُ مِن فَوْقِهِمْ وَأَتَىٰهُمُ ٱلْعَذَابُ مِنْ حَيْثُ لَا يَشْعُرُونَ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "16:26",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَدْ مَكَرَ ٱلَّذِينَ مِن قَبْلِهِمْ فَأَتَى ٱللَّهُ بُنْيَٰنَهُم مِّنَ ٱلْقَوَاعِدِ فَخَرَّ عَلَيْهِمُ ٱلسَّقْفُ مِن فَوْقِهِمْ وَأَتَىٰهُمُ ٱلْعَذَابُ مِنْ حَيْثُ لَا يَشْعُرُونَ"
+  },
+  {
+   "word_ref": "16:50:4:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "16:50",
+     "verse_text": "يَخَافُونَ رَبَّهُم مِّن فَوْقِهِمْ وَيَفْعَلُونَ مَا يُؤْمَرُونَ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "16:50",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَخَافُونَ رَبَّهُم مِّن فَوْقِهِمْ وَيَفْعَلُونَ مَا يُؤْمَرُونَ"
+  },
+  {
+   "word_ref": "16:88:9:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "16:88",
+     "verse_text": "ٱلَّذِينَ كَفَرُوا۟ وَصَدُّوا۟ عَن سَبِيلِ ٱللَّهِ زِدْنَٰهُمْ عَذَابًا فَوْقَ ٱلْعَذَابِ بِمَا كَانُوا۟ يُفْسِدُونَ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "16:88",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqa",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱلَّذِينَ كَفَرُوا۟ وَصَدُّوا۟ عَن سَبِيلِ ٱللَّهِ زِدْنَٰهُمْ عَذَابًا فَوْقَ ٱلْعَذَابِ بِمَا كَانُوا۟ يُفْسِدُونَ"
+  },
+  {
+   "word_ref": "22:19:15:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "22:19",
+     "verse_text": "هَٰذَانِ خَصْمَانِ ٱخْتَصَمُوا۟ فِى رَبِّهِمْ فَٱلَّذِينَ كَفَرُوا۟ قُطِّعَتْ لَهُمْ ثِيَابٌ مِّن نَّارٍ يُصَبُّ مِن فَوْقِ رُءُوسِهِمُ ٱلْحَمِيمُ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "22:19",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "هَٰذَانِ خَصْمَانِ ٱخْتَصَمُوا۟ فِى رَبِّهِمْ فَٱلَّذِينَ كَفَرُوا۟ قُطِّعَتْ لَهُمْ ثِيَابٌ مِّن نَّارٍ يُصَبُّ مِن فَوْقِ رُءُوسِهِمُ ٱلْحَمِيمُ"
+  },
+  {
+   "word_ref": "23:17:3:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "23:17",
+     "verse_text": "وَلَقَدْ خَلَقْنَا فَوْقَكُمْ سَبْعَ طَرَآئِقَ وَمَا كُنَّا عَنِ ٱلْخَلْقِ غَٰفِلِينَ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "23:17",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqa",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَقَدْ خَلَقْنَا فَوْقَكُمْ سَبْعَ طَرَآئِقَ وَمَا كُنَّا عَنِ ٱلْخَلْقِ غَٰفِلِينَ"
+  },
+  {
+   "word_ref": "24:40:12:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "24:40",
+     "verse_text": "أَوْ كَظُلُمَٰتٍ فِى بَحْرٍ لُّجِّىٍّ يَغْشَىٰهُ مَوْجٌ مِّن فَوْقِهِۦ مَوْجٌ مِّن فَوْقِهِۦ سَحَابٌ ظُلُمَٰتٌۢ بَعْضُهَا فَوْقَ بَعْضٍ إِذَآ أَخْرَجَ يَدَهُۥ لَمْ يَكَدْ يَرَىٰهَا وَمَن لَّمْ يَجْعَلِ ٱللَّهُ لَهُۥ نُورًا فَمَا لَهُۥ مِن نُّورٍ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "24:40",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَوْ كَظُلُمَٰتٍ فِى بَحْرٍ لُّجِّىٍّ يَغْشَىٰهُ مَوْجٌ مِّن فَوْقِهِۦ مَوْجٌ مِّن فَوْقِهِۦ سَحَابٌ ظُلُمَٰتٌۢ بَعْضُهَا فَوْقَ بَعْضٍ إِذَآ أَخْرَجَ يَدَهُۥ لَمْ يَكَدْ يَرَىٰهَا وَمَن لَّمْ يَجْعَلِ ٱللَّهُ لَهُۥ نُورًا فَمَا لَهُۥ مِن نُّورٍ"
+  },
+  {
+   "word_ref": "24:40:16:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "24:40",
+     "verse_text": "أَوْ كَظُلُمَٰتٍ فِى بَحْرٍ لُّجِّىٍّ يَغْشَىٰهُ مَوْجٌ مِّن فَوْقِهِۦ مَوْجٌ مِّن فَوْقِهِۦ سَحَابٌ ظُلُمَٰتٌۢ بَعْضُهَا فَوْقَ بَعْضٍ إِذَآ أَخْرَجَ يَدَهُۥ لَمْ يَكَدْ يَرَىٰهَا وَمَن لَّمْ يَجْعَلِ ٱللَّهُ لَهُۥ نُورًا فَمَا لَهُۥ مِن نُّورٍ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "24:40",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqa",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَوْ كَظُلُمَٰتٍ فِى بَحْرٍ لُّجِّىٍّ يَغْشَىٰهُ مَوْجٌ مِّن فَوْقِهِۦ مَوْجٌ مِّن فَوْقِهِۦ سَحَابٌ ظُلُمَٰتٌۢ بَعْضُهَا فَوْقَ بَعْضٍ إِذَآ أَخْرَجَ يَدَهُۥ لَمْ يَكَدْ يَرَىٰهَا وَمَن لَّمْ يَجْعَلِ ٱللَّهُ لَهُۥ نُورًا فَمَا لَهُۥ مِن نُّورٍ"
+  },
+  {
+   "word_ref": "24:40:9:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "24:40",
+     "verse_text": "أَوْ كَظُلُمَٰتٍ فِى بَحْرٍ لُّجِّىٍّ يَغْشَىٰهُ مَوْجٌ مِّن فَوْقِهِۦ مَوْجٌ مِّن فَوْقِهِۦ سَحَابٌ ظُلُمَٰتٌۢ بَعْضُهَا فَوْقَ بَعْضٍ إِذَآ أَخْرَجَ يَدَهُۥ لَمْ يَكَدْ يَرَىٰهَا وَمَن لَّمْ يَجْعَلِ ٱللَّهُ لَهُۥ نُورًا فَمَا لَهُۥ مِن نُّورٍ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "24:40",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَوْ كَظُلُمَٰتٍ فِى بَحْرٍ لُّجِّىٍّ يَغْشَىٰهُ مَوْجٌ مِّن فَوْقِهِۦ مَوْجٌ مِّن فَوْقِهِۦ سَحَابٌ ظُلُمَٰتٌۢ بَعْضُهَا فَوْقَ بَعْضٍ إِذَآ أَخْرَجَ يَدَهُۥ لَمْ يَكَدْ يَرَىٰهَا وَمَن لَّمْ يَجْعَلِ ٱللَّهُ لَهُۥ نُورًا فَمَا لَهُۥ مِن نُّورٍ"
+  },
+  {
+   "word_ref": "29:55:5:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "29:55",
+     "verse_text": "يَوْمَ يَغْشَىٰهُمُ ٱلْعَذَابُ مِن فَوْقِهِمْ وَمِن تَحْتِ أَرْجُلِهِمْ وَيَقُولُ ذُوقُوا۟ مَا كُنتُمْ تَعْمَلُونَ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "29:55",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَوْمَ يَغْشَىٰهُمُ ٱلْعَذَابُ مِن فَوْقِهِمْ وَمِن تَحْتِ أَرْجُلِهِمْ وَيَقُولُ ذُوقُوا۟ مَا كُنتُمْ تَعْمَلُونَ"
+  },
+  {
+   "word_ref": "2:212:12:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:212",
+     "verse_text": "زُيِّنَ لِلَّذِينَ كَفَرُوا۟ ٱلْحَيَوٰةُ ٱلدُّنْيَا وَيَسْخَرُونَ مِنَ ٱلَّذِينَ ءَامَنُوا۟ وَٱلَّذِينَ ٱتَّقَوْا۟ فَوْقَهُمْ يَوْمَ ٱلْقِيَٰمَةِ وَٱللَّهُ يَرْزُقُ مَن يَشَآءُ بِغَيْرِ حِسَابٍ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "2:212",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqa",
+   "qac_tag": "LOC",
+   "qac_pos": "LOC",
+   "qac_verb_form": null,
+   "morphology": "LOC",
+   "form": "LOC",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "زُيِّنَ لِلَّذِينَ كَفَرُوا۟ ٱلْحَيَوٰةُ ٱلدُّنْيَا وَيَسْخَرُونَ مِنَ ٱلَّذِينَ ءَامَنُوا۟ وَٱلَّذِينَ ٱتَّقَوْا۟ فَوْقَهُمْ يَوْمَ ٱلْقِيَٰمَةِ وَٱللَّهُ يَرْزُقُ مَن يَشَآءُ بِغَيْرِ حِسَابٍ"
+  },
+  {
+   "word_ref": "2:26:11:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:26",
+     "verse_text": "إِنَّ ٱللَّهَ لَا يَسْتَحْىِۦٓ أَن يَضْرِبَ مَثَلًا مَّا بَعُوضَةً فَمَا فَوْقَهَا فَأَمَّا ٱلَّذِينَ ءَامَنُوا۟ فَيَعْلَمُونَ أَنَّهُ ٱلْحَقُّ مِن رَّبِّهِمْ وَأَمَّا ٱلَّذِينَ كَفَرُوا۟ فَيَقُولُونَ مَاذَآ أَرَادَ ٱللَّهُ بِهَٰذَا مَثَلًا يُضِلُّ بِهِۦ كَثِيرًا وَيَهْدِى بِهِۦ كَثِيرًا وَمَا يُضِلُّ بِهِۦٓ إِلَّا ٱلْفَٰسِقِينَ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "2:26",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqa",
+   "qac_tag": "LOC",
+   "qac_pos": "LOC",
+   "qac_verb_form": null,
+   "morphology": "LOC",
+   "form": "LOC",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱللَّهَ لَا يَسْتَحْىِۦٓ أَن يَضْرِبَ مَثَلًا مَّا بَعُوضَةً فَمَا فَوْقَهَا فَأَمَّا ٱلَّذِينَ ءَامَنُوا۟ فَيَعْلَمُونَ أَنَّهُ ٱلْحَقُّ مِن رَّبِّهِمْ وَأَمَّا ٱلَّذِينَ كَفَرُوا۟ فَيَقُولُونَ مَاذَآ أَرَادَ ٱللَّهُ بِهَٰذَا مَثَلًا يُضِلُّ بِهِۦ كَثِيرًا وَيَهْدِى بِهِۦ كَثِيرًا وَمَا يُضِلُّ بِهِۦٓ إِلَّا ٱلْفَٰسِقِينَ"
+  },
+  {
+   "word_ref": "2:63:5:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:63",
+     "verse_text": "وَإِذْ أَخَذْنَا مِيثَٰقَكُمْ وَرَفَعْنَا فَوْقَكُمُ ٱلطُّورَ خُذُوا۟ مَآ ءَاتَيْنَٰكُم بِقُوَّةٍ وَٱذْكُرُوا۟ مَا فِيهِ لَعَلَّكُمْ تَتَّقُونَ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "2:63",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqa",
+   "qac_tag": "LOC",
+   "qac_pos": "LOC",
+   "qac_verb_form": null,
+   "morphology": "LOC",
+   "form": "LOC",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِذْ أَخَذْنَا مِيثَٰقَكُمْ وَرَفَعْنَا فَوْقَكُمُ ٱلطُّورَ خُذُوا۟ مَآ ءَاتَيْنَٰكُم بِقُوَّةٍ وَٱذْكُرُوا۟ مَا فِيهِ لَعَلَّكُمْ تَتَّقُونَ"
+  },
+  {
+   "word_ref": "2:93:5:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:93",
+     "verse_text": "وَإِذْ أَخَذْنَا مِيثَٰقَكُمْ وَرَفَعْنَا فَوْقَكُمُ ٱلطُّورَ خُذُوا۟ مَآ ءَاتَيْنَٰكُم بِقُوَّةٍ وَٱسْمَعُوا۟ قَالُوا۟ سَمِعْنَا وَعَصَيْنَا وَأُشْرِبُوا۟ فِى قُلُوبِهِمُ ٱلْعِجْلَ بِكُفْرِهِمْ قُلْ بِئْسَمَا يَأْمُرُكُم بِهِۦٓ إِيمَٰنُكُمْ إِن كُنتُم مُّؤْمِنِينَ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "2:93",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqa",
+   "qac_tag": "LOC",
+   "qac_pos": "LOC",
+   "qac_verb_form": null,
+   "morphology": "LOC",
+   "form": "LOC",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِذْ أَخَذْنَا مِيثَٰقَكُمْ وَرَفَعْنَا فَوْقَكُمُ ٱلطُّورَ خُذُوا۟ مَآ ءَاتَيْنَٰكُم بِقُوَّةٍ وَٱسْمَعُوا۟ قَالُوا۟ سَمِعْنَا وَعَصَيْنَا وَأُشْرِبُوا۟ فِى قُلُوبِهِمُ ٱلْعِجْلَ بِكُفْرِهِمْ قُلْ بِئْسَمَا يَأْمُرُكُم بِهِۦٓ إِيمَٰنُكُمْ إِن كُنتُم مُّؤْمِنِينَ"
+  },
+  {
+   "word_ref": "33:10:4:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "33:10",
+     "verse_text": "إِذْ جَآءُوكُم مِّن فَوْقِكُمْ وَمِنْ أَسْفَلَ مِنكُمْ وَإِذْ زَاغَتِ ٱلْأَبْصَٰرُ وَبَلَغَتِ ٱلْقُلُوبُ ٱلْحَنَاجِرَ وَتَظُنُّونَ بِٱللَّهِ ٱلظُّنُونَا۠"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "33:10",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِذْ جَآءُوكُم مِّن فَوْقِكُمْ وَمِنْ أَسْفَلَ مِنكُمْ وَإِذْ زَاغَتِ ٱلْأَبْصَٰرُ وَبَلَغَتِ ٱلْقُلُوبُ ٱلْحَنَاجِرَ وَتَظُنُّونَ بِٱللَّهِ ٱلظُّنُونَا۠"
+  },
+  {
+   "word_ref": "38:15:10:1",
+   "disposition": "RESISTANT",
+   "note": "38:15 denies an interval in the cry and supplies no vertical relation.",
+   "coverage_cluster_id": "fawaq_interval",
+   "candidate_semantic_interpretation": "an interval or respite with no proven upper-position residue",
+   "cluster_supporting_evidence": "38:15 was reviewed directly.",
+   "counterevidence": [
+    "No upper/lower reference point occurs."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "38:15",
+     "verse_text": "وَمَا يَنظُرُ هَٰٓؤُلَآءِ إِلَّا صَيْحَةً وَٰحِدَةً مَّا لَهَا مِن فَوَاقٍ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "38:15",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawaAqK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَمَا يَنظُرُ هَٰٓؤُلَآءِ إِلَّا صَيْحَةً وَٰحِدَةً مَّا لَهَا مِن فَوَاقٍ"
+  },
+  {
+   "word_ref": "39:16:3:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "39:16",
+     "verse_text": "لَهُم مِّن فَوْقِهِمْ ظُلَلٌ مِّنَ ٱلنَّارِ وَمِن تَحْتِهِمْ ظُلَلٌ ذَٰلِكَ يُخَوِّفُ ٱللَّهُ بِهِۦ عِبَادَهُۥ يَٰعِبَادِ فَٱتَّقُونِ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "39:16",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لَهُم مِّن فَوْقِهِمْ ظُلَلٌ مِّنَ ٱلنَّارِ وَمِن تَحْتِهِمْ ظُلَلٌ ذَٰلِكَ يُخَوِّفُ ٱللَّهُ بِهِۦ عِبَادَهُۥ يَٰعِبَادِ فَٱتَّقُونِ"
+  },
+  {
+   "word_ref": "39:20:8:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "39:20",
+     "verse_text": "لَٰكِنِ ٱلَّذِينَ ٱتَّقَوْا۟ رَبَّهُمْ لَهُمْ غُرَفٌ مِّن فَوْقِهَا غُرَفٌ مَّبْنِيَّةٌ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ وَعْدَ ٱللَّهِ لَا يُخْلِفُ ٱللَّهُ ٱلْمِيعَادَ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "39:20",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لَٰكِنِ ٱلَّذِينَ ٱتَّقَوْا۟ رَبَّهُمْ لَهُمْ غُرَفٌ مِّن فَوْقِهَا غُرَفٌ مَّبْنِيَّةٌ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ وَعْدَ ٱللَّهِ لَا يُخْلِفُ ٱللَّهُ ٱلْمِيعَادَ"
+  },
+  {
+   "word_ref": "3:55:16:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:55",
+     "verse_text": "إِذْ قَالَ ٱللَّهُ يَٰعِيسَىٰٓ إِنِّى مُتَوَفِّيكَ وَرَافِعُكَ إِلَىَّ وَمُطَهِّرُكَ مِنَ ٱلَّذِينَ كَفَرُوا۟ وَجَاعِلُ ٱلَّذِينَ ٱتَّبَعُوكَ فَوْقَ ٱلَّذِينَ كَفَرُوٓا۟ إِلَىٰ يَوْمِ ٱلْقِيَٰمَةِ ثُمَّ إِلَىَّ مَرْجِعُكُمْ فَأَحْكُمُ بَيْنَكُمْ فِيمَا كُنتُمْ فِيهِ تَخْتَلِفُونَ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "3:55",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqa",
+   "qac_tag": "LOC",
+   "qac_pos": "LOC",
+   "qac_verb_form": null,
+   "morphology": "LOC",
+   "form": "LOC",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِذْ قَالَ ٱللَّهُ يَٰعِيسَىٰٓ إِنِّى مُتَوَفِّيكَ وَرَافِعُكَ إِلَىَّ وَمُطَهِّرُكَ مِنَ ٱلَّذِينَ كَفَرُوا۟ وَجَاعِلُ ٱلَّذِينَ ٱتَّبَعُوكَ فَوْقَ ٱلَّذِينَ كَفَرُوٓا۟ إِلَىٰ يَوْمِ ٱلْقِيَٰمَةِ ثُمَّ إِلَىَّ مَرْجِعُكُمْ فَأَحْكُمُ بَيْنَكُمْ فِيمَا كُنتُمْ فِيهِ تَخْتَلِفُونَ"
+  },
+  {
+   "word_ref": "41:10:5:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "41:10",
+     "verse_text": "وَجَعَلَ فِيهَا رَوَٰسِىَ مِن فَوْقِهَا وَبَٰرَكَ فِيهَا وَقَدَّرَ فِيهَآ أَقْوَٰتَهَا فِىٓ أَرْبَعَةِ أَيَّامٍ سَوَآءً لِّلسَّآئِلِينَ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "41:10",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَجَعَلَ فِيهَا رَوَٰسِىَ مِن فَوْقِهَا وَبَٰرَكَ فِيهَا وَقَدَّرَ فِيهَآ أَقْوَٰتَهَا فِىٓ أَرْبَعَةِ أَيَّامٍ سَوَآءً لِّلسَّآئِلِينَ"
+  },
+  {
+   "word_ref": "42:5:5:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "42:5",
+     "verse_text": "تَكَادُ ٱلسَّمَٰوَٰتُ يَتَفَطَّرْنَ مِن فَوْقِهِنَّ وَٱلْمَلَٰٓئِكَةُ يُسَبِّحُونَ بِحَمْدِ رَبِّهِمْ وَيَسْتَغْفِرُونَ لِمَن فِى ٱلْأَرْضِ أَلَآ إِنَّ ٱللَّهَ هُوَ ٱلْغَفُورُ ٱلرَّحِيمُ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "42:5",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "تَكَادُ ٱلسَّمَٰوَٰتُ يَتَفَطَّرْنَ مِن فَوْقِهِنَّ وَٱلْمَلَٰٓئِكَةُ يُسَبِّحُونَ بِحَمْدِ رَبِّهِمْ وَيَسْتَغْفِرُونَ لِمَن فِى ٱلْأَرْضِ أَلَآ إِنَّ ٱللَّهَ هُوَ ٱلْغَفُورُ ٱلرَّحِيمُ"
+  },
+  {
+   "word_ref": "43:32:14:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "43:32",
+     "verse_text": "أَهُمْ يَقْسِمُونَ رَحْمَتَ رَبِّكَ نَحْنُ قَسَمْنَا بَيْنَهُم مَّعِيشَتَهُمْ فِى ٱلْحَيَوٰةِ ٱلدُّنْيَا وَرَفَعْنَا بَعْضَهُمْ فَوْقَ بَعْضٍ دَرَجَٰتٍ لِّيَتَّخِذَ بَعْضُهُم بَعْضًا سُخْرِيًّا وَرَحْمَتُ رَبِّكَ خَيْرٌ مِّمَّا يَجْمَعُونَ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "43:32",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqa",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَهُمْ يَقْسِمُونَ رَحْمَتَ رَبِّكَ نَحْنُ قَسَمْنَا بَيْنَهُم مَّعِيشَتَهُمْ فِى ٱلْحَيَوٰةِ ٱلدُّنْيَا وَرَفَعْنَا بَعْضَهُمْ فَوْقَ بَعْضٍ دَرَجَٰتٍ لِّيَتَّخِذَ بَعْضُهُم بَعْضًا سُخْرِيًّا وَرَحْمَتُ رَبِّكَ خَيْرٌ مِّمَّا يَجْمَعُونَ"
+  },
+  {
+   "word_ref": "44:48:3:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "44:48",
+     "verse_text": "ثُمَّ صُبُّوا۟ فَوْقَ رَأْسِهِۦ مِنْ عَذَابِ ٱلْحَمِيمِ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "44:48",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqa",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ثُمَّ صُبُّوا۟ فَوْقَ رَأْسِهِۦ مِنْ عَذَابِ ٱلْحَمِيمِ"
+  },
+  {
+   "word_ref": "48:10:9:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "48:10",
+     "verse_text": "إِنَّ ٱلَّذِينَ يُبَايِعُونَكَ إِنَّمَا يُبَايِعُونَ ٱللَّهَ يَدُ ٱللَّهِ فَوْقَ أَيْدِيهِمْ فَمَن نَّكَثَ فَإِنَّمَا يَنكُثُ عَلَىٰ نَفْسِهِۦ وَمَنْ أَوْفَىٰ بِمَا عَٰهَدَ عَلَيْهُ ٱللَّهَ فَسَيُؤْتِيهِ أَجْرًا عَظِيمًا"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "48:10",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqa",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱلَّذِينَ يُبَايِعُونَكَ إِنَّمَا يُبَايِعُونَ ٱللَّهَ يَدُ ٱللَّهِ فَوْقَ أَيْدِيهِمْ فَمَن نَّكَثَ فَإِنَّمَا يَنكُثُ عَلَىٰ نَفْسِهِۦ وَمَنْ أَوْفَىٰ بِمَا عَٰهَدَ عَلَيْهُ ٱللَّهَ فَسَيُؤْتِيهِ أَجْرًا عَظِيمًا"
+  },
+  {
+   "word_ref": "49:2:7:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "49:2",
+     "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَرْفَعُوٓا۟ أَصْوَٰتَكُمْ فَوْقَ صَوْتِ ٱلنَّبِىِّ وَلَا تَجْهَرُوا۟ لَهُۥ بِٱلْقَوْلِ كَجَهْرِ بَعْضِكُمْ لِبَعْضٍ أَن تَحْبَطَ أَعْمَٰلُكُمْ وَأَنتُمْ لَا تَشْعُرُونَ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "49:2",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqa",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَرْفَعُوٓا۟ أَصْوَٰتَكُمْ فَوْقَ صَوْتِ ٱلنَّبِىِّ وَلَا تَجْهَرُوا۟ لَهُۥ بِٱلْقَوْلِ كَجَهْرِ بَعْضِكُمْ لِبَعْضٍ أَن تَحْبَطَ أَعْمَٰلُكُمْ وَأَنتُمْ لَا تَشْعُرُونَ"
+  },
+  {
+   "word_ref": "4:11:12:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "4:11",
+     "verse_text": "يُوصِيكُمُ ٱللَّهُ فِىٓ أَوْلَٰدِكُمْ لِلذَّكَرِ مِثْلُ حَظِّ ٱلْأُنثَيَيْنِ فَإِن كُنَّ نِسَآءً فَوْقَ ٱثْنَتَيْنِ فَلَهُنَّ ثُلُثَا مَا تَرَكَ وَإِن كَانَتْ وَٰحِدَةً فَلَهَا ٱلنِّصْفُ وَلِأَبَوَيْهِ لِكُلِّ وَٰحِدٍ مِّنْهُمَا ٱلسُّدُسُ مِمَّا تَرَكَ إِن كَانَ لَهُۥ وَلَدٌ فَإِن لَّمْ يَكُن لَّهُۥ وَلَدٌ وَوَرِثَهُۥٓ أَبَوَاهُ فَلِأُمِّهِ ٱلثُّلُثُ فَإِن كَانَ لَهُۥٓ إِخْوَةٌ فَلِأُمِّهِ ٱلسُّدُسُ مِنۢ بَعْدِ وَصِيَّةٍ يُوصِى بِهَآ أَوْ دَيْنٍ ءَابَآؤُكُمْ وَأَبْنَآؤُكُمْ لَا تَدْرُونَ أَيُّهُمْ أَقْرَبُ لَكُمْ نَفْعًا فَرِيضَةً مِّنَ ٱللَّهِ إِنَّ ٱللَّهَ كَانَ عَلِيمًا حَكِيمًا"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "4:11",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqa",
+   "qac_tag": "LOC",
+   "qac_pos": "LOC",
+   "qac_verb_form": null,
+   "morphology": "LOC",
+   "form": "LOC",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يُوصِيكُمُ ٱللَّهُ فِىٓ أَوْلَٰدِكُمْ لِلذَّكَرِ مِثْلُ حَظِّ ٱلْأُنثَيَيْنِ فَإِن كُنَّ نِسَآءً فَوْقَ ٱثْنَتَيْنِ فَلَهُنَّ ثُلُثَا مَا تَرَكَ وَإِن كَانَتْ وَٰحِدَةً فَلَهَا ٱلنِّصْفُ وَلِأَبَوَيْهِ لِكُلِّ وَٰحِدٍ مِّنْهُمَا ٱلسُّدُسُ مِمَّا تَرَكَ إِن كَانَ لَهُۥ وَلَدٌ فَإِن لَّمْ يَكُن لَّهُۥ وَلَدٌ وَوَرِثَهُۥٓ أَبَوَاهُ فَلِأُمِّهِ ٱلثُّلُثُ فَإِن كَانَ لَهُۥٓ إِخْوَةٌ فَلِأُمِّهِ ٱلسُّدُسُ مِنۢ بَعْدِ وَصِيَّةٍ يُوصِى بِهَآ أَوْ دَيْنٍ ءَابَآؤُكُمْ وَأَبْنَآؤُكُمْ لَا تَدْرُونَ أَيُّهُمْ أَقْرَبُ لَكُمْ نَفْعًا فَرِيضَةً مِّنَ ٱللَّهِ إِنَّ ٱللَّهَ كَانَ عَلِيمًا حَكِيمًا"
+  },
+  {
+   "word_ref": "4:154:2:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "4:154",
+     "verse_text": "وَرَفَعْنَا فَوْقَهُمُ ٱلطُّورَ بِمِيثَٰقِهِمْ وَقُلْنَا لَهُمُ ٱدْخُلُوا۟ ٱلْبَابَ سُجَّدًا وَقُلْنَا لَهُمْ لَا تَعْدُوا۟ فِى ٱلسَّبْتِ وَأَخَذْنَا مِنْهُم مِّيثَٰقًا غَلِيظًا"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "4:154",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqa",
+   "qac_tag": "LOC",
+   "qac_pos": "LOC",
+   "qac_verb_form": null,
+   "morphology": "LOC",
+   "form": "LOC",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَرَفَعْنَا فَوْقَهُمُ ٱلطُّورَ بِمِيثَٰقِهِمْ وَقُلْنَا لَهُمُ ٱدْخُلُوا۟ ٱلْبَابَ سُجَّدًا وَقُلْنَا لَهُمْ لَا تَعْدُوا۟ فِى ٱلسَّبْتِ وَأَخَذْنَا مِنْهُم مِّيثَٰقًا غَلِيظًا"
+  },
+  {
+   "word_ref": "50:6:5:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "50:6",
+     "verse_text": "أَفَلَمْ يَنظُرُوٓا۟ إِلَى ٱلسَّمَآءِ فَوْقَهُمْ كَيْفَ بَنَيْنَٰهَا وَزَيَّنَّٰهَا وَمَا لَهَا مِن فُرُوجٍ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "50:6",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqa",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَفَلَمْ يَنظُرُوٓا۟ إِلَى ٱلسَّمَآءِ فَوْقَهُمْ كَيْفَ بَنَيْنَٰهَا وَزَيَّنَّٰهَا وَمَا لَهَا مِن فُرُوجٍ"
+  },
+  {
+   "word_ref": "5:66:13:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "5:66",
+     "verse_text": "وَلَوْ أَنَّهُمْ أَقَامُوا۟ ٱلتَّوْرَىٰةَ وَٱلْإِنجِيلَ وَمَآ أُنزِلَ إِلَيْهِم مِّن رَّبِّهِمْ لَأَكَلُوا۟ مِن فَوْقِهِمْ وَمِن تَحْتِ أَرْجُلِهِم مِّنْهُمْ أُمَّةٌ مُّقْتَصِدَةٌ وَكَثِيرٌ مِّنْهُمْ سَآءَ مَا يَعْمَلُونَ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "5:66",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَوْ أَنَّهُمْ أَقَامُوا۟ ٱلتَّوْرَىٰةَ وَٱلْإِنجِيلَ وَمَآ أُنزِلَ إِلَيْهِم مِّن رَّبِّهِمْ لَأَكَلُوا۟ مِن فَوْقِهِمْ وَمِن تَحْتِ أَرْجُلِهِم مِّنْهُمْ أُمَّةٌ مُّقْتَصِدَةٌ وَكَثِيرٌ مِّنْهُمْ سَآءَ مَا يَعْمَلُونَ"
+  },
+  {
+   "word_ref": "67:19:5:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "67:19",
+     "verse_text": "أَوَلَمْ يَرَوْا۟ إِلَى ٱلطَّيْرِ فَوْقَهُمْ صَٰٓفَّٰتٍ وَيَقْبِضْنَ مَا يُمْسِكُهُنَّ إِلَّا ٱلرَّحْمَٰنُ إِنَّهُۥ بِكُلِّ شَىْءٍۭ بَصِيرٌ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "67:19",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqa",
+   "qac_tag": "LOC",
+   "qac_pos": "LOC",
+   "qac_verb_form": null,
+   "morphology": "LOC",
+   "form": "LOC",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَوَلَمْ يَرَوْا۟ إِلَى ٱلطَّيْرِ فَوْقَهُمْ صَٰٓفَّٰتٍ وَيَقْبِضْنَ مَا يُمْسِكُهُنَّ إِلَّا ٱلرَّحْمَٰنُ إِنَّهُۥ بِكُلِّ شَىْءٍۭ بَصِيرٌ"
+  },
+  {
+   "word_ref": "69:17:7:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "69:17",
+     "verse_text": "وَٱلْمَلَكُ عَلَىٰٓ أَرْجَآئِهَا وَيَحْمِلُ عَرْشَ رَبِّكَ فَوْقَهُمْ يَوْمَئِذٍ ثَمَٰنِيَةٌ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "69:17",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqa",
+   "qac_tag": "LOC",
+   "qac_pos": "LOC",
+   "qac_verb_form": null,
+   "morphology": "LOC",
+   "form": "LOC",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱلْمَلَكُ عَلَىٰٓ أَرْجَآئِهَا وَيَحْمِلُ عَرْشَ رَبِّكَ فَوْقَهُمْ يَوْمَئِذٍ ثَمَٰنِيَةٌ"
+  },
+  {
+   "word_ref": "6:165:8:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:165",
+     "verse_text": "وَهُوَ ٱلَّذِى جَعَلَكُمْ خَلَٰٓئِفَ ٱلْأَرْضِ وَرَفَعَ بَعْضَكُمْ فَوْقَ بَعْضٍ دَرَجَٰتٍ لِّيَبْلُوَكُمْ فِى مَآ ءَاتَىٰكُمْ إِنَّ رَبَّكَ سَرِيعُ ٱلْعِقَابِ وَإِنَّهُۥ لَغَفُورٌ رَّحِيمٌۢ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "6:165",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqa",
+   "qac_tag": "LOC",
+   "qac_pos": "LOC",
+   "qac_verb_form": null,
+   "morphology": "LOC",
+   "form": "LOC",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَهُوَ ٱلَّذِى جَعَلَكُمْ خَلَٰٓئِفَ ٱلْأَرْضِ وَرَفَعَ بَعْضَكُمْ فَوْقَ بَعْضٍ دَرَجَٰتٍ لِّيَبْلُوَكُمْ فِى مَآ ءَاتَىٰكُمْ إِنَّ رَبَّكَ سَرِيعُ ٱلْعِقَابِ وَإِنَّهُۥ لَغَفُورٌ رَّحِيمٌۢ"
+  },
+  {
+   "word_ref": "6:18:3:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:18",
+     "verse_text": "وَهُوَ ٱلْقَاهِرُ فَوْقَ عِبَادِهِۦ وَهُوَ ٱلْحَكِيمُ ٱلْخَبِيرُ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "6:18",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqa",
+   "qac_tag": "LOC",
+   "qac_pos": "LOC",
+   "qac_verb_form": null,
+   "morphology": "LOC",
+   "form": "LOC",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَهُوَ ٱلْقَاهِرُ فَوْقَ عِبَادِهِۦ وَهُوَ ٱلْحَكِيمُ ٱلْخَبِيرُ"
+  },
+  {
+   "word_ref": "6:61:3:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:61",
+     "verse_text": "وَهُوَ ٱلْقَاهِرُ فَوْقَ عِبَادِهِۦ وَيُرْسِلُ عَلَيْكُمْ حَفَظَةً حَتَّىٰٓ إِذَا جَآءَ أَحَدَكُمُ ٱلْمَوْتُ تَوَفَّتْهُ رُسُلُنَا وَهُمْ لَا يُفَرِّطُونَ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "6:61",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqa",
+   "qac_tag": "LOC",
+   "qac_pos": "LOC",
+   "qac_verb_form": null,
+   "morphology": "LOC",
+   "form": "LOC",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَهُوَ ٱلْقَاهِرُ فَوْقَ عِبَادِهِۦ وَيُرْسِلُ عَلَيْكُمْ حَفَظَةً حَتَّىٰٓ إِذَا جَآءَ أَحَدَكُمُ ٱلْمَوْتُ تَوَفَّتْهُ رُسُلُنَا وَهُمْ لَا يُفَرِّطُونَ"
+  },
+  {
+   "word_ref": "6:65:10:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:65",
+     "verse_text": "قُلْ هُوَ ٱلْقَادِرُ عَلَىٰٓ أَن يَبْعَثَ عَلَيْكُمْ عَذَابًا مِّن فَوْقِكُمْ أَوْ مِن تَحْتِ أَرْجُلِكُمْ أَوْ يَلْبِسَكُمْ شِيَعًا وَيُذِيقَ بَعْضَكُم بَأْسَ بَعْضٍ ٱنظُرْ كَيْفَ نُصَرِّفُ ٱلْـَٔايَٰتِ لَعَلَّهُمْ يَفْقَهُونَ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "6:65",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قُلْ هُوَ ٱلْقَادِرُ عَلَىٰٓ أَن يَبْعَثَ عَلَيْكُمْ عَذَابًا مِّن فَوْقِكُمْ أَوْ مِن تَحْتِ أَرْجُلِكُمْ أَوْ يَلْبِسَكُمْ شِيَعًا وَيُذِيقَ بَعْضَكُم بَأْسَ بَعْضٍ ٱنظُرْ كَيْفَ نُصَرِّفُ ٱلْـَٔايَٰتِ لَعَلَّهُمْ يَفْقَهُونَ"
+  },
+  {
+   "word_ref": "78:12:2:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "78:12",
+     "verse_text": "وَبَنَيْنَا فَوْقَكُمْ سَبْعًا شِدَادًا"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "78:12",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqa",
+   "qac_tag": "LOC",
+   "qac_pos": "LOC",
+   "qac_verb_form": null,
+   "morphology": "LOC",
+   "form": "LOC",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَبَنَيْنَا فَوْقَكُمْ سَبْعًا شِدَادًا"
+  },
+  {
+   "word_ref": "7:127:20:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:127",
+     "verse_text": "وَقَالَ ٱلْمَلَأُ مِن قَوْمِ فِرْعَوْنَ أَتَذَرُ مُوسَىٰ وَقَوْمَهُۥ لِيُفْسِدُوا۟ فِى ٱلْأَرْضِ وَيَذَرَكَ وَءَالِهَتَكَ قَالَ سَنُقَتِّلُ أَبْنَآءَهُمْ وَنَسْتَحْىِۦ نِسَآءَهُمْ وَإِنَّا فَوْقَهُمْ قَٰهِرُونَ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "7:127",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqa",
+   "qac_tag": "LOC",
+   "qac_pos": "LOC",
+   "qac_verb_form": null,
+   "morphology": "LOC",
+   "form": "LOC",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَقَالَ ٱلْمَلَأُ مِن قَوْمِ فِرْعَوْنَ أَتَذَرُ مُوسَىٰ وَقَوْمَهُۥ لِيُفْسِدُوا۟ فِى ٱلْأَرْضِ وَيَذَرَكَ وَءَالِهَتَكَ قَالَ سَنُقَتِّلُ أَبْنَآءَهُمْ وَنَسْتَحْىِۦ نِسَآءَهُمْ وَإِنَّا فَوْقَهُمْ قَٰهِرُونَ"
+  },
+  {
+   "word_ref": "7:143:34:1",
+   "disposition": "RESISTANT",
+   "note": "7:143 describes recovery after collapse without an explicit upward motion.",
+   "coverage_cluster_id": "recovery",
+   "candidate_semantic_interpretation": "recover consciousness, with no proven above-ness residue",
+   "cluster_supporting_evidence": "7:143 was reviewed directly.",
+   "counterevidence": [
+    "The verse does not encode elevation as the recovery mechanism."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:143",
+     "verse_text": "وَلَمَّا جَآءَ مُوسَىٰ لِمِيقَٰتِنَا وَكَلَّمَهُۥ رَبُّهُۥ قَالَ رَبِّ أَرِنِىٓ أَنظُرْ إِلَيْكَ قَالَ لَن تَرَىٰنِى وَلَٰكِنِ ٱنظُرْ إِلَى ٱلْجَبَلِ فَإِنِ ٱسْتَقَرَّ مَكَانَهُۥ فَسَوْفَ تَرَىٰنِى فَلَمَّا تَجَلَّىٰ رَبُّهُۥ لِلْجَبَلِ جَعَلَهُۥ دَكًّا وَخَرَّ مُوسَىٰ صَعِقًا فَلَمَّآ أَفَاقَ قَالَ سُبْحَٰنَكَ تُبْتُ إِلَيْكَ وَأَنَا۠ أَوَّلُ ٱلْمُؤْمِنِينَ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "7:143",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">afaAqa",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَمَّا جَآءَ مُوسَىٰ لِمِيقَٰتِنَا وَكَلَّمَهُۥ رَبُّهُۥ قَالَ رَبِّ أَرِنِىٓ أَنظُرْ إِلَيْكَ قَالَ لَن تَرَىٰنِى وَلَٰكِنِ ٱنظُرْ إِلَى ٱلْجَبَلِ فَإِنِ ٱسْتَقَرَّ مَكَانَهُۥ فَسَوْفَ تَرَىٰنِى فَلَمَّا تَجَلَّىٰ رَبُّهُۥ لِلْجَبَلِ جَعَلَهُۥ دَكًّا وَخَرَّ مُوسَىٰ صَعِقًا فَلَمَّآ أَفَاقَ قَالَ سُبْحَٰنَكَ تُبْتُ إِلَيْكَ وَأَنَا۠ أَوَّلُ ٱلْمُؤْمِنِينَ"
+  },
+  {
+   "word_ref": "7:171:4:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:171",
+     "verse_text": "وَإِذْ نَتَقْنَا ٱلْجَبَلَ فَوْقَهُمْ كَأَنَّهُۥ ظُلَّةٌ وَظَنُّوٓا۟ أَنَّهُۥ وَاقِعٌۢ بِهِمْ خُذُوا۟ مَآ ءَاتَيْنَٰكُم بِقُوَّةٍ وَٱذْكُرُوا۟ مَا فِيهِ لَعَلَّكُمْ تَتَّقُونَ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "7:171",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqa",
+   "qac_tag": "LOC",
+   "qac_pos": "LOC",
+   "qac_verb_form": null,
+   "morphology": "LOC",
+   "form": "LOC",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِذْ نَتَقْنَا ٱلْجَبَلَ فَوْقَهُمْ كَأَنَّهُۥ ظُلَّةٌ وَظَنُّوٓا۟ أَنَّهُۥ وَاقِعٌۢ بِهِمْ خُذُوا۟ مَآ ءَاتَيْنَٰكُم بِقُوَّةٍ وَٱذْكُرُوا۟ مَا فِيهِ لَعَلَّكُمْ تَتَّقُونَ"
+  },
+  {
+   "word_ref": "7:41:6:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:41",
+     "verse_text": "لَهُم مِّن جَهَنَّمَ مِهَادٌ وَمِن فَوْقِهِمْ غَوَاشٍ وَكَذَٰلِكَ نَجْزِى ٱلظَّٰلِمِينَ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "7:41",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لَهُم مِّن جَهَنَّمَ مِهَادٌ وَمِن فَوْقِهِمْ غَوَاشٍ وَكَذَٰلِكَ نَجْزِى ٱلظَّٰلِمِينَ"
+  },
+  {
+   "word_ref": "8:12:18:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts explicitly position or rank one referent above another.",
+   "coverage_cluster_id": "above_relation",
+   "candidate_semantic_interpretation": "upper-side position or rank relative to a reference",
+   "cluster_supporting_evidence": "All 41 fawq contexts were reviewed across spatial, scalar, and authority relations.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "8:12",
+     "verse_text": "إِذْ يُوحِى رَبُّكَ إِلَى ٱلْمَلَٰٓئِكَةِ أَنِّى مَعَكُمْ فَثَبِّتُوا۟ ٱلَّذِينَ ءَامَنُوا۟ سَأُلْقِى فِى قُلُوبِ ٱلَّذِينَ كَفَرُوا۟ ٱلرُّعْبَ فَٱضْرِبُوا۟ فَوْقَ ٱلْأَعْنَاقِ وَٱضْرِبُوا۟ مِنْهُمْ كُلَّ بَنَانٍ"
+    }
+   ],
+   "root_arabic": "ف و ق",
+   "root_buckwalter": "fwq",
+   "root_id": "fwq",
+   "artifact_name": "fwq.json",
+   "verse_ref": "8:12",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fawoqa",
+   "qac_tag": "LOC",
+   "qac_pos": "LOC",
+   "qac_verb_form": null,
+   "morphology": "LOC",
+   "form": "LOC",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِذْ يُوحِى رَبُّكَ إِلَى ٱلْمَلَٰٓئِكَةِ أَنِّى مَعَكُمْ فَثَبِّتُوا۟ ٱلَّذِينَ ءَامَنُوا۟ سَأُلْقِى فِى قُلُوبِ ٱلَّذِينَ كَفَرُوا۟ ٱلرُّعْبَ فَٱضْرِبُوا۟ فَوْقَ ٱلْأَعْنَاقِ وَٱضْرِبُوا۟ مِنْهُمْ كُلَّ بَنَانٍ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "WEAK",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PARTIAL",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "38:15:10:1",
+  "7:143:34:1"
+ ],
+ "unreconciled_count": 2,
+ "resistant_occurrences": [
+  "38:15:10:1",
+  "7:143:34:1"
+ ],
+ "structural_uncertainty_occurrences": []
+}

@@ -1,0 +1,642 @@
+{
+ "root_arabic": "و ص ف",
+ "root_buckwalter": "wSf",
+ "root_id": "wSf",
+ "artifact_name": "w_53_f.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch06-wave2-coverage",
+ "occurrences": 14,
+ "frozen_candidate_root_contribution": "articulating or assigning a characterization to a referent",
+ "internal_discovery": {
+  "candidate_root_contribution": "articulating or assigning a characterization to a referent",
+  "plain_explanation": "Thirteen verbs and one noun concern describing, ascribing, or a characterization. False descriptions remain descriptions; truth value belongs to evidence and speaker, not the root.",
+  "layer_separation_note": "Subjects supply describer, objects supply referent, and clauses supply attributed content. Context supplies truth or fabrication.",
+  "presence": {
+   "occurrences_total": 14,
+   "occurrences_checked": 14,
+   "occurrences_consistent": 14,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "Tongues 'describe the lie' in 16:116, but fabrication is the content's status, not part of wSf.",
+  "competing_hypothesis": "The root means false attribution; divine or neutrally reported descriptions refute that moral restriction.",
+  "distinctiveness_note": "Distinct from naming and saying because wSf assigns qualities or a representational account to its referent.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "STRONG",
+  "rationale": "Characterization is explicit in all occurrences and remains stable across truthful/false contexts.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "describing_verbs",
+     "where": {
+      "qac_pos": [
+       "V"
+      ]
+     },
+     "occurrence_count_expected": 13,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "assign an articulated characterization",
+     "classification_rationale": "Every verb attributes a quality or account to a referent.",
+     "supporting_evidence_note": "All 13 verbal contexts were reviewed.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "description_noun",
+     "where": {
+      "qac_pos": [
+       "N"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "the characterization assigned",
+     "classification_rationale": "The sole noun explicitly names their description.",
+     "supporting_evidence_note": "The noun occurrence was reviewed directly.",
+     "counterevidence": []
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "wSf",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Truth value remains external to the characterization act."
+ },
+ "coverage_validation": {
+  "root": "wSf",
+  "expected_count": 14,
+  "researched_count": 14,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "12:18:18:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb attributes a quality or account to a referent.",
+   "coverage_cluster_id": "describing_verbs",
+   "candidate_semantic_interpretation": "assign an articulated characterization",
+   "cluster_supporting_evidence": "All 13 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "12:18",
+     "verse_text": "وَجَآءُو عَلَىٰ قَمِيصِهِۦ بِدَمٍ كَذِبٍ قَالَ بَلْ سَوَّلَتْ لَكُمْ أَنفُسُكُمْ أَمْرًا فَصَبْرٌ جَمِيلٌ وَٱللَّهُ ٱلْمُسْتَعَانُ عَلَىٰ مَا تَصِفُونَ"
+    }
+   ],
+   "root_arabic": "و ص ف",
+   "root_buckwalter": "wSf",
+   "root_id": "wSf",
+   "artifact_name": "w_53_f.json",
+   "verse_ref": "12:18",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "taSifu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَجَآءُو عَلَىٰ قَمِيصِهِۦ بِدَمٍ كَذِبٍ قَالَ بَلْ سَوَّلَتْ لَكُمْ أَنفُسُكُمْ أَمْرًا فَصَبْرٌ جَمِيلٌ وَٱللَّهُ ٱلْمُسْتَعَانُ عَلَىٰ مَا تَصِفُونَ"
+  },
+  {
+   "word_ref": "12:77:24:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb attributes a quality or account to a referent.",
+   "coverage_cluster_id": "describing_verbs",
+   "candidate_semantic_interpretation": "assign an articulated characterization",
+   "cluster_supporting_evidence": "All 13 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "12:77",
+     "verse_text": "قَالُوٓا۟ إِن يَسْرِقْ فَقَدْ سَرَقَ أَخٌ لَّهُۥ مِن قَبْلُ فَأَسَرَّهَا يُوسُفُ فِى نَفْسِهِۦ وَلَمْ يُبْدِهَا لَهُمْ قَالَ أَنتُمْ شَرٌّ مَّكَانًا وَٱللَّهُ أَعْلَمُ بِمَا تَصِفُونَ"
+    }
+   ],
+   "root_arabic": "و ص ف",
+   "root_buckwalter": "wSf",
+   "root_id": "wSf",
+   "artifact_name": "w_53_f.json",
+   "verse_ref": "12:77",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "taSifu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالُوٓا۟ إِن يَسْرِقْ فَقَدْ سَرَقَ أَخٌ لَّهُۥ مِن قَبْلُ فَأَسَرَّهَا يُوسُفُ فِى نَفْسِهِۦ وَلَمْ يُبْدِهَا لَهُمْ قَالَ أَنتُمْ شَرٌّ مَّكَانًا وَٱللَّهُ أَعْلَمُ بِمَا تَصِفُونَ"
+  },
+  {
+   "word_ref": "16:116:4:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb attributes a quality or account to a referent.",
+   "coverage_cluster_id": "describing_verbs",
+   "candidate_semantic_interpretation": "assign an articulated characterization",
+   "cluster_supporting_evidence": "All 13 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "16:116",
+     "verse_text": "وَلَا تَقُولُوا۟ لِمَا تَصِفُ أَلْسِنَتُكُمُ ٱلْكَذِبَ هَٰذَا حَلَٰلٌ وَهَٰذَا حَرَامٌ لِّتَفْتَرُوا۟ عَلَى ٱللَّهِ ٱلْكَذِبَ إِنَّ ٱلَّذِينَ يَفْتَرُونَ عَلَى ٱللَّهِ ٱلْكَذِبَ لَا يُفْلِحُونَ"
+    }
+   ],
+   "root_arabic": "و ص ف",
+   "root_buckwalter": "wSf",
+   "root_id": "wSf",
+   "artifact_name": "w_53_f.json",
+   "verse_ref": "16:116",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "taSifu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَا تَقُولُوا۟ لِمَا تَصِفُ أَلْسِنَتُكُمُ ٱلْكَذِبَ هَٰذَا حَلَٰلٌ وَهَٰذَا حَرَامٌ لِّتَفْتَرُوا۟ عَلَى ٱللَّهِ ٱلْكَذِبَ إِنَّ ٱلَّذِينَ يَفْتَرُونَ عَلَى ٱللَّهِ ٱلْكَذِبَ لَا يُفْلِحُونَ"
+  },
+  {
+   "word_ref": "16:62:5:2",
+   "disposition": "CONSISTENT",
+   "note": "Every verb attributes a quality or account to a referent.",
+   "coverage_cluster_id": "describing_verbs",
+   "candidate_semantic_interpretation": "assign an articulated characterization",
+   "cluster_supporting_evidence": "All 13 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "16:62",
+     "verse_text": "وَيَجْعَلُونَ لِلَّهِ مَا يَكْرَهُونَ وَتَصِفُ أَلْسِنَتُهُمُ ٱلْكَذِبَ أَنَّ لَهُمُ ٱلْحُسْنَىٰ لَا جَرَمَ أَنَّ لَهُمُ ٱلنَّارَ وَأَنَّهُم مُّفْرَطُونَ"
+    }
+   ],
+   "root_arabic": "و ص ف",
+   "root_buckwalter": "wSf",
+   "root_id": "wSf",
+   "artifact_name": "w_53_f.json",
+   "verse_ref": "16:62",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "taSifu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَيَجْعَلُونَ لِلَّهِ مَا يَكْرَهُونَ وَتَصِفُ أَلْسِنَتُهُمُ ٱلْكَذِبَ أَنَّ لَهُمُ ٱلْحُسْنَىٰ لَا جَرَمَ أَنَّ لَهُمُ ٱلنَّارَ وَأَنَّهُم مُّفْرَطُونَ"
+  },
+  {
+   "word_ref": "21:112:10:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb attributes a quality or account to a referent.",
+   "coverage_cluster_id": "describing_verbs",
+   "candidate_semantic_interpretation": "assign an articulated characterization",
+   "cluster_supporting_evidence": "All 13 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "21:112",
+     "verse_text": "قَٰلَ رَبِّ ٱحْكُم بِٱلْحَقِّ وَرَبُّنَا ٱلرَّحْمَٰنُ ٱلْمُسْتَعَانُ عَلَىٰ مَا تَصِفُونَ"
+    }
+   ],
+   "root_arabic": "و ص ف",
+   "root_buckwalter": "wSf",
+   "root_id": "wSf",
+   "artifact_name": "w_53_f.json",
+   "verse_ref": "21:112",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "taSifu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَٰلَ رَبِّ ٱحْكُم بِٱلْحَقِّ وَرَبُّنَا ٱلرَّحْمَٰنُ ٱلْمُسْتَعَانُ عَلَىٰ مَا تَصِفُونَ"
+  },
+  {
+   "word_ref": "21:18:13:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb attributes a quality or account to a referent.",
+   "coverage_cluster_id": "describing_verbs",
+   "candidate_semantic_interpretation": "assign an articulated characterization",
+   "cluster_supporting_evidence": "All 13 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "21:18",
+     "verse_text": "بَلْ نَقْذِفُ بِٱلْحَقِّ عَلَى ٱلْبَٰطِلِ فَيَدْمَغُهُۥ فَإِذَا هُوَ زَاهِقٌ وَلَكُمُ ٱلْوَيْلُ مِمَّا تَصِفُونَ"
+    }
+   ],
+   "root_arabic": "و ص ف",
+   "root_buckwalter": "wSf",
+   "root_id": "wSf",
+   "artifact_name": "w_53_f.json",
+   "verse_ref": "21:18",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "taSifu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "بَلْ نَقْذِفُ بِٱلْحَقِّ عَلَى ٱلْبَٰطِلِ فَيَدْمَغُهُۥ فَإِذَا هُوَ زَاهِقٌ وَلَكُمُ ٱلْوَيْلُ مِمَّا تَصِفُونَ"
+  },
+  {
+   "word_ref": "21:22:13:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb attributes a quality or account to a referent.",
+   "coverage_cluster_id": "describing_verbs",
+   "candidate_semantic_interpretation": "assign an articulated characterization",
+   "cluster_supporting_evidence": "All 13 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "21:22",
+     "verse_text": "لَوْ كَانَ فِيهِمَآ ءَالِهَةٌ إِلَّا ٱللَّهُ لَفَسَدَتَا فَسُبْحَٰنَ ٱللَّهِ رَبِّ ٱلْعَرْشِ عَمَّا يَصِفُونَ"
+    }
+   ],
+   "root_arabic": "و ص ف",
+   "root_buckwalter": "wSf",
+   "root_id": "wSf",
+   "artifact_name": "w_53_f.json",
+   "verse_ref": "21:22",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaSifu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لَوْ كَانَ فِيهِمَآ ءَالِهَةٌ إِلَّا ٱللَّهُ لَفَسَدَتَا فَسُبْحَٰنَ ٱللَّهِ رَبِّ ٱلْعَرْشِ عَمَّا يَصِفُونَ"
+  },
+  {
+   "word_ref": "23:91:24:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb attributes a quality or account to a referent.",
+   "coverage_cluster_id": "describing_verbs",
+   "candidate_semantic_interpretation": "assign an articulated characterization",
+   "cluster_supporting_evidence": "All 13 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "23:91",
+     "verse_text": "مَا ٱتَّخَذَ ٱللَّهُ مِن وَلَدٍ وَمَا كَانَ مَعَهُۥ مِنْ إِلَٰهٍ إِذًا لَّذَهَبَ كُلُّ إِلَٰهٍۭ بِمَا خَلَقَ وَلَعَلَا بَعْضُهُمْ عَلَىٰ بَعْضٍ سُبْحَٰنَ ٱللَّهِ عَمَّا يَصِفُونَ"
+    }
+   ],
+   "root_arabic": "و ص ف",
+   "root_buckwalter": "wSf",
+   "root_id": "wSf",
+   "artifact_name": "w_53_f.json",
+   "verse_ref": "23:91",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaSifu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "مَا ٱتَّخَذَ ٱللَّهُ مِن وَلَدٍ وَمَا كَانَ مَعَهُۥ مِنْ إِلَٰهٍ إِذًا لَّذَهَبَ كُلُّ إِلَٰهٍۭ بِمَا خَلَقَ وَلَعَلَا بَعْضُهُمْ عَلَىٰ بَعْضٍ سُبْحَٰنَ ٱللَّهِ عَمَّا يَصِفُونَ"
+  },
+  {
+   "word_ref": "23:96:9:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb attributes a quality or account to a referent.",
+   "coverage_cluster_id": "describing_verbs",
+   "candidate_semantic_interpretation": "assign an articulated characterization",
+   "cluster_supporting_evidence": "All 13 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "23:96",
+     "verse_text": "ٱدْفَعْ بِٱلَّتِى هِىَ أَحْسَنُ ٱلسَّيِّئَةَ نَحْنُ أَعْلَمُ بِمَا يَصِفُونَ"
+    }
+   ],
+   "root_arabic": "و ص ف",
+   "root_buckwalter": "wSf",
+   "root_id": "wSf",
+   "artifact_name": "w_53_f.json",
+   "verse_ref": "23:96",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaSifu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱدْفَعْ بِٱلَّتِى هِىَ أَحْسَنُ ٱلسَّيِّئَةَ نَحْنُ أَعْلَمُ بِمَا يَصِفُونَ"
+  },
+  {
+   "word_ref": "37:159:4:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb attributes a quality or account to a referent.",
+   "coverage_cluster_id": "describing_verbs",
+   "candidate_semantic_interpretation": "assign an articulated characterization",
+   "cluster_supporting_evidence": "All 13 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "37:159",
+     "verse_text": "سُبْحَٰنَ ٱللَّهِ عَمَّا يَصِفُونَ"
+    }
+   ],
+   "root_arabic": "و ص ف",
+   "root_buckwalter": "wSf",
+   "root_id": "wSf",
+   "artifact_name": "w_53_f.json",
+   "verse_ref": "37:159",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaSifu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "سُبْحَٰنَ ٱللَّهِ عَمَّا يَصِفُونَ"
+  },
+  {
+   "word_ref": "37:180:6:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb attributes a quality or account to a referent.",
+   "coverage_cluster_id": "describing_verbs",
+   "candidate_semantic_interpretation": "assign an articulated characterization",
+   "cluster_supporting_evidence": "All 13 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "37:180",
+     "verse_text": "سُبْحَٰنَ رَبِّكَ رَبِّ ٱلْعِزَّةِ عَمَّا يَصِفُونَ"
+    }
+   ],
+   "root_arabic": "و ص ف",
+   "root_buckwalter": "wSf",
+   "root_id": "wSf",
+   "artifact_name": "w_53_f.json",
+   "verse_ref": "37:180",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaSifu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "سُبْحَٰنَ رَبِّكَ رَبِّ ٱلْعِزَّةِ عَمَّا يَصِفُونَ"
+  },
+  {
+   "word_ref": "43:82:8:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb attributes a quality or account to a referent.",
+   "coverage_cluster_id": "describing_verbs",
+   "candidate_semantic_interpretation": "assign an articulated characterization",
+   "cluster_supporting_evidence": "All 13 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "43:82",
+     "verse_text": "سُبْحَٰنَ رَبِّ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ رَبِّ ٱلْعَرْشِ عَمَّا يَصِفُونَ"
+    }
+   ],
+   "root_arabic": "و ص ف",
+   "root_buckwalter": "wSf",
+   "root_id": "wSf",
+   "artifact_name": "w_53_f.json",
+   "verse_ref": "43:82",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaSifu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "سُبْحَٰنَ رَبِّ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ رَبِّ ٱلْعَرْشِ عَمَّا يَصِفُونَ"
+  },
+  {
+   "word_ref": "6:100:15:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verb attributes a quality or account to a referent.",
+   "coverage_cluster_id": "describing_verbs",
+   "candidate_semantic_interpretation": "assign an articulated characterization",
+   "cluster_supporting_evidence": "All 13 verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:100",
+     "verse_text": "وَجَعَلُوا۟ لِلَّهِ شُرَكَآءَ ٱلْجِنَّ وَخَلَقَهُمْ وَخَرَقُوا۟ لَهُۥ بَنِينَ وَبَنَٰتٍۭ بِغَيْرِ عِلْمٍ سُبْحَٰنَهُۥ وَتَعَٰلَىٰ عَمَّا يَصِفُونَ"
+    }
+   ],
+   "root_arabic": "و ص ف",
+   "root_buckwalter": "wSf",
+   "root_id": "wSf",
+   "artifact_name": "w_53_f.json",
+   "verse_ref": "6:100",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaSifu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَجَعَلُوا۟ لِلَّهِ شُرَكَآءَ ٱلْجِنَّ وَخَلَقَهُمْ وَخَرَقُوا۟ لَهُۥ بَنِينَ وَبَنَٰتٍۭ بِغَيْرِ عِلْمٍ سُبْحَٰنَهُۥ وَتَعَٰلَىٰ عَمَّا يَصِفُونَ"
+  },
+  {
+   "word_ref": "6:139:19:1",
+   "disposition": "CONSISTENT",
+   "note": "The sole noun explicitly names their description.",
+   "coverage_cluster_id": "description_noun",
+   "candidate_semantic_interpretation": "the characterization assigned",
+   "cluster_supporting_evidence": "The noun occurrence was reviewed directly.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:139",
+     "verse_text": "وَقَالُوا۟ مَا فِى بُطُونِ هَٰذِهِ ٱلْأَنْعَٰمِ خَالِصَةٌ لِّذُكُورِنَا وَمُحَرَّمٌ عَلَىٰٓ أَزْوَٰجِنَا وَإِن يَكُن مَّيْتَةً فَهُمْ فِيهِ شُرَكَآءُ سَيَجْزِيهِمْ وَصْفَهُمْ إِنَّهُۥ حَكِيمٌ عَلِيمٌ"
+    }
+   ],
+   "root_arabic": "و ص ف",
+   "root_buckwalter": "wSf",
+   "root_id": "wSf",
+   "artifact_name": "w_53_f.json",
+   "verse_ref": "6:139",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "waSofa",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَقَالُوا۟ مَا فِى بُطُونِ هَٰذِهِ ٱلْأَنْعَٰمِ خَالِصَةٌ لِّذُكُورِنَا وَمُحَرَّمٌ عَلَىٰٓ أَزْوَٰجِنَا وَإِن يَكُن مَّيْتَةً فَهُمْ فِيهِ شُرَكَآءُ سَيَجْزِيهِمْ وَصْفَهُمْ إِنَّهُۥ حَكِيمٌ عَلِيمٌ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "STRONG",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

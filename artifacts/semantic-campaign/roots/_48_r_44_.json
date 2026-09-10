@@ -1,0 +1,227 @@
+{
+ "root_arabic": "ح ر ض",
+ "root_buckwalter": "HrD",
+ "root_id": "HrD",
+ "artifact_name": "_48_r_44_.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch06-wave2-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "intensively stirring or pressing a participant toward committed action",
+ "internal_discovery": {
+  "candidate_root_contribution": "intensively stirring or pressing a participant toward committed action",
+  "plain_explanation": "The two Form II occurrences command inciting believers toward fighting. The noun haradan in 12:85 describes Jacob as wasted/near ruin through grief; the Quran does not internally show how that state preserves action-directed incitement.",
+  "layer_separation_note": "Form II and its complement supply caused motivation toward combat. The underived noun is kept as a separate resistant class.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 2,
+   "inconsistent_refs": [
+    "12:85:8:1"
+   ]
+  },
+  "strongest_counterexample": "12:85:8:1 is a deteriorated state caused by grief, with no incited actor or target action.",
+  "competing_hypothesis": "A shared 'driving to an extreme edge' connects incitement and wasting away, but this abstraction is not demonstrated internally.",
+  "distinctiveness_note": "The preferred Form II nucleus is distinct from commanding by supplying motivational pressing; it does not claim the noun seam.",
+  "unresolved_cases": [
+   "12:85:8:1"
+  ],
+  "result": "PREFERRED",
+  "result_strength": "WEAK",
+  "rationale": "Two coherent incitement occurrences support a candidate; one of three remains unreconciled.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "incite_to_action",
+     "where": {
+      "qac_verb_form": [
+       "II"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "press believers toward committed combat action",
+     "classification_rationale": "Both Form II commands explicitly motivate the believers toward fighting.",
+     "supporting_evidence_note": "4:84 and 8:65 were reviewed directly.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "wasted_state",
+     "where": {
+      "qac_pos": [
+       "N"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "wasted or near-ruined state, with no proven incitement residue",
+     "classification_rationale": "12:85 describes deterioration under grief rather than motivational pressing.",
+     "supporting_evidence_note": "12:85 was reviewed directly.",
+     "counterevidence": [
+      "No target action, inciter, or motivational relation occurs."
+     ]
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "HrD",
+  "verdict": "PARTIALLY_SUPPORTED",
+  "failing_occurrences": [
+   "12:85:8:1"
+  ],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "The noun seam remains resistant; universal presence is not claimed."
+ },
+ "coverage_validation": {
+  "root": "HrD",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "12:85:8:1",
+   "disposition": "RESISTANT",
+   "note": "12:85 describes deterioration under grief rather than motivational pressing.",
+   "coverage_cluster_id": "wasted_state",
+   "candidate_semantic_interpretation": "wasted or near-ruined state, with no proven incitement residue",
+   "cluster_supporting_evidence": "12:85 was reviewed directly.",
+   "counterevidence": [
+    "No target action, inciter, or motivational relation occurs."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "12:85",
+     "verse_text": "قَالُوا۟ تَٱللَّهِ تَفْتَؤُا۟ تَذْكُرُ يُوسُفَ حَتَّىٰ تَكُونَ حَرَضًا أَوْ تَكُونَ مِنَ ٱلْهَٰلِكِينَ"
+    }
+   ],
+   "root_arabic": "ح ر ض",
+   "root_buckwalter": "HrD",
+   "root_id": "HrD",
+   "artifact_name": "_48_r_44_.json",
+   "verse_ref": "12:85",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "HaraDFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالُوا۟ تَٱللَّهِ تَفْتَؤُا۟ تَذْكُرُ يُوسُفَ حَتَّىٰ تَكُونَ حَرَضًا أَوْ تَكُونَ مِنَ ٱلْهَٰلِكِينَ"
+  },
+  {
+   "word_ref": "4:84:9:2",
+   "disposition": "CONSISTENT",
+   "note": "Both Form II commands explicitly motivate the believers toward fighting.",
+   "coverage_cluster_id": "incite_to_action",
+   "candidate_semantic_interpretation": "press believers toward committed combat action",
+   "cluster_supporting_evidence": "4:84 and 8:65 were reviewed directly.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "4:84",
+     "verse_text": "فَقَٰتِلْ فِى سَبِيلِ ٱللَّهِ لَا تُكَلَّفُ إِلَّا نَفْسَكَ وَحَرِّضِ ٱلْمُؤْمِنِينَ عَسَى ٱللَّهُ أَن يَكُفَّ بَأْسَ ٱلَّذِينَ كَفَرُوا۟ وَٱللَّهُ أَشَدُّ بَأْسًا وَأَشَدُّ تَنكِيلًا"
+    }
+   ],
+   "root_arabic": "ح ر ض",
+   "root_buckwalter": "HrD",
+   "root_id": "HrD",
+   "artifact_name": "_48_r_44_.json",
+   "verse_ref": "4:84",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Har~iDi",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَقَٰتِلْ فِى سَبِيلِ ٱللَّهِ لَا تُكَلَّفُ إِلَّا نَفْسَكَ وَحَرِّضِ ٱلْمُؤْمِنِينَ عَسَى ٱللَّهُ أَن يَكُفَّ بَأْسَ ٱلَّذِينَ كَفَرُوا۟ وَٱللَّهُ أَشَدُّ بَأْسًا وَأَشَدُّ تَنكِيلًا"
+  },
+  {
+   "word_ref": "8:65:3:1",
+   "disposition": "CONSISTENT",
+   "note": "Both Form II commands explicitly motivate the believers toward fighting.",
+   "coverage_cluster_id": "incite_to_action",
+   "candidate_semantic_interpretation": "press believers toward committed combat action",
+   "cluster_supporting_evidence": "4:84 and 8:65 were reviewed directly.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "8:65",
+     "verse_text": "يَٰٓأَيُّهَا ٱلنَّبِىُّ حَرِّضِ ٱلْمُؤْمِنِينَ عَلَى ٱلْقِتَالِ إِن يَكُن مِّنكُمْ عِشْرُونَ صَٰبِرُونَ يَغْلِبُوا۟ مِا۟ئَتَيْنِ وَإِن يَكُن مِّنكُم مِّا۟ئَةٌ يَغْلِبُوٓا۟ أَلْفًا مِّنَ ٱلَّذِينَ كَفَرُوا۟ بِأَنَّهُمْ قَوْمٌ لَّا يَفْقَهُونَ"
+    }
+   ],
+   "root_arabic": "ح ر ض",
+   "root_buckwalter": "HrD",
+   "root_id": "HrD",
+   "artifact_name": "_48_r_44_.json",
+   "verse_ref": "8:65",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Har~iDi",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰٓأَيُّهَا ٱلنَّبِىُّ حَرِّضِ ٱلْمُؤْمِنِينَ عَلَى ٱلْقِتَالِ إِن يَكُن مِّنكُمْ عِشْرُونَ صَٰبِرُونَ يَغْلِبُوا۟ مِا۟ئَتَيْنِ وَإِن يَكُن مِّنكُم مِّا۟ئَةٌ يَغْلِبُوٓا۟ أَلْفًا مِّنَ ٱلَّذِينَ كَفَرُوا۟ بِأَنَّهُمْ قَوْمٌ لَّا يَفْقَهُونَ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "WEAK",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PARTIAL",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "12:85:8:1"
+ ],
+ "unreconciled_count": 1,
+ "resistant_occurrences": [
+  "12:85:8:1"
+ ],
+ "structural_uncertainty_occurrences": []
+}

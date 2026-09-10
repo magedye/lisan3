@@ -905,3 +905,37 @@ resistance or unresolved evidence and must not stop unrelated roots.
 Execute and independently checkpoint Batch 06 Wave 2 against the frozen
 20-root / 1,318-occurrence population. Do not reselect roots, reopen Wave 1, or
 start the Batch 05 five-root corrective track.
+
+## Batch 06 Wave 2 Semantic Checkpoint (2026-09-11)
+
+- Wave 2 persisted exactly the remaining 20 roots and 1,318 confirmed
+  occurrence identities frozen in `BATCH_06_MANIFEST.json`. Every root has
+  exact-set COMPLETE coverage, four-part root identity, canonical Tanzil verse
+  evidence, QAC structural provenance, and final occurrence dispositions.
+- Outcome distribution: 9 STRONG (`rsl`, `$rk`, `kvr`, `H$r`, `mkr`, `Hzn`,
+  `wSf`, `zrE`, `Aby`), 5 MODERATE (`qtl`, `ESm`, `Eyr`, `HDD`, `Hfw`),
+  3 WEAK (`srr`, `fwq`, `HrD`), and 3 UNRESOLVED (`Hwr`, `SbA`, `Sbw`).
+- Wave 2 retains 34 resistant occurrences: 12 `srr` joy/couch-class tokens;
+  the `fwq` fawaq interval and recovery tokens; all 13 `Hwr` occurrences across
+  return/dialogue/hawariyyun/hur families; the `HrD` wasted-state noun; all
+  three proper-name-only `SbA` tokens; and all three `Sbw` youth/inclination
+  tokens. No contested item was forced to achieve unity.
+- The ledger now contains 128 / 1,642 researched roots, `updated_roots_total =
+  128`, with all 128 coverage-complete and canonicalization pending; 1,514
+  roots remain outside this authorized batch.
+- Combined Batch 06 state is 40 roots / 3,098 occurrences: 13 STRONG,
+  15 MODERATE, 7 WEAK, and 5 UNRESOLVED, with 562 resistant occurrences and
+  two preserved reconciliation-lineage records.
+- Wave 2 V2 evidence passed: 32 focused campaign/QAC tests and focused Ruff;
+  JSON parsing for manifest, status, and ledger; 20/20 artifact identity and
+  exact-set contract checks; 1,318/1,318 evidence records; and zero changes to
+  any Wave 1 or earlier tracked root artifact.
+- Report: `docs/LISAN3_BATCH_06_WAVE_02.md`. All Wave 1 and pre-Batch-06 root
+  artifacts remain unchanged. The five separate Batch 05 corrective roots
+  remain excluded and untouched.
+
+## Current Exact Next Action
+
+Run the whole-Batch-06 V3 evidence gate, produce the final semantic campaign
+report, reconcile final state, and stop for a fresh independent semantic-results
+review. Do not select or start another root batch.

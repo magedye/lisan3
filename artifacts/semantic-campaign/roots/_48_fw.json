@@ -1,0 +1,223 @@
+{
+ "root_arabic": "ح ف و",
+ "root_buckwalter": "Hfw",
+ "root_id": "Hfw",
+ "artifact_name": "_48_fw.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch06-wave2-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "sustained, close attention directed toward a person or matter, expressed as solicitude, informed concern, or pressing inquiry",
+ "internal_discovery": {
+  "candidate_root_contribution": "sustained, close attention directed toward a person or matter, expressed as solicitude, informed concern, or pressing inquiry",
+  "plain_explanation": "The three occurrences show God's solicitous favor toward Abraham, a claim of being closely informed about the Hour, and pressing people by demanding their wealth. Close, sustained attention is shared; moral effect depends on participant and object.",
+  "layer_separation_note": "The adjective profiles an attentive relation; Form IV intensifies or exhausts the target through pressing demand. Prepositions identify person or matter attended to.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "47:37 is burdensome pressing for wealth, unlike benevolent solicitude in 19:47; attention is neutral while effect is contextual.",
+  "competing_hypothesis": "The root means kindness; the Hour inquiry and exhausting demand refute built-in benevolence.",
+  "distinctiveness_note": "Distinct from knowing alone and asking once: Hfw profiles close or persistent attentiveness to its target.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "A close-attention relation covers all three, but the polarity and derivational bridge remain evidence-sparse.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "attentive_adjectives",
+     "where": {
+      "qac_pos": [
+       "N"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "closely attentive, solicitous, or informed toward a target",
+     "classification_rationale": "Both adjectives encode an unusually close attentional relation, with context setting benevolence or claimed knowledge.",
+     "supporting_evidence_note": "19:47 and 7:187 were reviewed directly.",
+     "counterevidence": [
+      "The two contexts differ in polarity and epistemic emphasis."
+     ]
+    },
+    {
+     "cluster_id": "pressing_demand",
+     "where": {
+      "qac_verb_form": [
+       "IV"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "press persistently upon a target in asking",
+     "classification_rationale": "47:37 intensifies sustained attention into an exhausting demand.",
+     "supporting_evidence_note": "47:37 was reviewed directly.",
+     "counterevidence": [
+      "The extension from attention to exhaustive asking is form-dependent."
+     ]
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "Hfw",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Close persistent attention is universal but qualified by sparse polarity-diverse evidence."
+ },
+ "coverage_validation": {
+  "root": "Hfw",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "19:47:10:1",
+   "disposition": "CONSISTENT",
+   "note": "Both adjectives encode an unusually close attentional relation, with context setting benevolence or claimed knowledge.",
+   "coverage_cluster_id": "attentive_adjectives",
+   "candidate_semantic_interpretation": "closely attentive, solicitous, or informed toward a target",
+   "cluster_supporting_evidence": "19:47 and 7:187 were reviewed directly.",
+   "counterevidence": [
+    "The two contexts differ in polarity and epistemic emphasis."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "19:47",
+     "verse_text": "قَالَ سَلَٰمٌ عَلَيْكَ سَأَسْتَغْفِرُ لَكَ رَبِّىٓ إِنَّهُۥ كَانَ بِى حَفِيًّا"
+    }
+   ],
+   "root_arabic": "ح ف و",
+   "root_buckwalter": "Hfw",
+   "root_id": "Hfw",
+   "artifact_name": "_48_fw.json",
+   "verse_ref": "19:47",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Hafiy~FA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالَ سَلَٰمٌ عَلَيْكَ سَأَسْتَغْفِرُ لَكَ رَبِّىٓ إِنَّهُۥ كَانَ بِى حَفِيًّا"
+  },
+  {
+   "word_ref": "47:37:3:2",
+   "disposition": "CONSISTENT",
+   "note": "47:37 intensifies sustained attention into an exhausting demand.",
+   "coverage_cluster_id": "pressing_demand",
+   "candidate_semantic_interpretation": "press persistently upon a target in asking",
+   "cluster_supporting_evidence": "47:37 was reviewed directly.",
+   "counterevidence": [
+    "The extension from attention to exhaustive asking is form-dependent."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "47:37",
+     "verse_text": "إِن يَسْـَٔلْكُمُوهَا فَيُحْفِكُمْ تَبْخَلُوا۟ وَيُخْرِجْ أَضْغَٰنَكُمْ"
+    }
+   ],
+   "root_arabic": "ح ف و",
+   "root_buckwalter": "Hfw",
+   "root_id": "Hfw",
+   "artifact_name": "_48_fw.json",
+   "verse_ref": "47:37",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yuHofi",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِن يَسْـَٔلْكُمُوهَا فَيُحْفِكُمْ تَبْخَلُوا۟ وَيُخْرِجْ أَضْغَٰنَكُمْ"
+  },
+  {
+   "word_ref": "7:187:26:1",
+   "disposition": "CONSISTENT",
+   "note": "Both adjectives encode an unusually close attentional relation, with context setting benevolence or claimed knowledge.",
+   "coverage_cluster_id": "attentive_adjectives",
+   "candidate_semantic_interpretation": "closely attentive, solicitous, or informed toward a target",
+   "cluster_supporting_evidence": "19:47 and 7:187 were reviewed directly.",
+   "counterevidence": [
+    "The two contexts differ in polarity and epistemic emphasis."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:187",
+     "verse_text": "يَسْـَٔلُونَكَ عَنِ ٱلسَّاعَةِ أَيَّانَ مُرْسَىٰهَا قُلْ إِنَّمَا عِلْمُهَا عِندَ رَبِّى لَا يُجَلِّيهَا لِوَقْتِهَآ إِلَّا هُوَ ثَقُلَتْ فِى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ لَا تَأْتِيكُمْ إِلَّا بَغْتَةً يَسْـَٔلُونَكَ كَأَنَّكَ حَفِىٌّ عَنْهَا قُلْ إِنَّمَا عِلْمُهَا عِندَ ٱللَّهِ وَلَٰكِنَّ أَكْثَرَ ٱلنَّاسِ لَا يَعْلَمُونَ"
+    }
+   ],
+   "root_arabic": "ح ف و",
+   "root_buckwalter": "Hfw",
+   "root_id": "Hfw",
+   "artifact_name": "_48_fw.json",
+   "verse_ref": "7:187",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "HafiY~N",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَسْـَٔلُونَكَ عَنِ ٱلسَّاعَةِ أَيَّانَ مُرْسَىٰهَا قُلْ إِنَّمَا عِلْمُهَا عِندَ رَبِّى لَا يُجَلِّيهَا لِوَقْتِهَآ إِلَّا هُوَ ثَقُلَتْ فِى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ لَا تَأْتِيكُمْ إِلَّا بَغْتَةً يَسْـَٔلُونَكَ كَأَنَّكَ حَفِىٌّ عَنْهَا قُلْ إِنَّمَا عِلْمُهَا عِندَ ٱللَّهِ وَلَٰكِنَّ أَكْثَرَ ٱلنَّاسِ لَا يَعْلَمُونَ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

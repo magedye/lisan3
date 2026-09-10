@@ -1,0 +1,217 @@
+{
+ "root_arabic": "ص ب ا",
+ "root_buckwalter": "SbA",
+ "root_id": "SbA",
+ "artifact_name": "_53_bA.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch06-wave2-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "UNRESOLVED: the packet contains only the proper/group name of the Sabians and provides no internal derivational evidence for a root contribution",
+ "internal_discovery": {
+  "candidate_root_contribution": "UNRESOLVED: the packet contains only the proper/group name of the Sabians and provides no internal derivational evidence for a root contribution",
+  "plain_explanation": "All three occurrences list the Sabians among religious communities. The contexts establish group reference and accountability before God, but they do not semantically decompose the proper name.",
+  "layer_separation_note": "QAC marks all tokens as proper names. Coordination with other groups supplies classification, not an abstract root core.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 0,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "A proper name can identify reliably while providing no compositional evidence for the root letters.",
+  "competing_hypothesis": "The name derives from leaving or turning from a prior religion; that external lexical account is not Quran-internal evidence and is not adopted.",
+  "distinctiveness_note": "No root-level semantic proposal can be distinguished using three repetitions of one group name.",
+  "unresolved_cases": [
+   "Sabian proper-name family (3)"
+  ],
+  "result": "UNRESOLVED",
+  "result_strength": "UNRESOLVED",
+  "rationale": "Referential identity is clear; abstract root semantics are not recoverable from this packet.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "sabian_group_name",
+     "where": {
+      "qac_pos": [
+       "PN"
+      ]
+     },
+     "occurrence_count_expected": 3,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "the Sabians as an internally named religious community",
+     "classification_rationale": "Each token identifies the group but supplies no compositional root meaning.",
+     "supporting_evidence_note": "2:62, 5:69, and 22:17 were reviewed directly.",
+     "counterevidence": [
+      "All evidence is proper-name repetition without derivational contrast."
+     ]
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "SbA",
+  "verdict": "PARTIALLY_SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": false,
+  "falsifiable": true,
+  "notes": "Group reference is supported; root semantics remain UNRESOLVED."
+ },
+ "coverage_validation": {
+  "root": "SbA",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "22:17:6:3",
+   "disposition": "RESISTANT",
+   "note": "Each token identifies the group but supplies no compositional root meaning.",
+   "coverage_cluster_id": "sabian_group_name",
+   "candidate_semantic_interpretation": "the Sabians as an internally named religious community",
+   "cluster_supporting_evidence": "2:62, 5:69, and 22:17 were reviewed directly.",
+   "counterevidence": [
+    "All evidence is proper-name repetition without derivational contrast."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "22:17",
+     "verse_text": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَٱلَّذِينَ هَادُوا۟ وَٱلصَّٰبِـِٔينَ وَٱلنَّصَٰرَىٰ وَٱلْمَجُوسَ وَٱلَّذِينَ أَشْرَكُوٓا۟ إِنَّ ٱللَّهَ يَفْصِلُ بَيْنَهُمْ يَوْمَ ٱلْقِيَٰمَةِ إِنَّ ٱللَّهَ عَلَىٰ كُلِّ شَىْءٍ شَهِيدٌ"
+    }
+   ],
+   "root_arabic": "ص ب ا",
+   "root_buckwalter": "SbA",
+   "root_id": "SbA",
+   "artifact_name": "_53_bA.json",
+   "verse_ref": "22:17",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "S~a`bi_#iyna",
+   "qac_tag": "PN",
+   "qac_pos": "PN",
+   "qac_verb_form": null,
+   "morphology": "PN",
+   "form": "PN",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَٱلَّذِينَ هَادُوا۟ وَٱلصَّٰبِـِٔينَ وَٱلنَّصَٰرَىٰ وَٱلْمَجُوسَ وَٱلَّذِينَ أَشْرَكُوٓا۟ إِنَّ ٱللَّهَ يَفْصِلُ بَيْنَهُمْ يَوْمَ ٱلْقِيَٰمَةِ إِنَّ ٱللَّهَ عَلَىٰ كُلِّ شَىْءٍ شَهِيدٌ"
+  },
+  {
+   "word_ref": "2:62:7:3",
+   "disposition": "RESISTANT",
+   "note": "Each token identifies the group but supplies no compositional root meaning.",
+   "coverage_cluster_id": "sabian_group_name",
+   "candidate_semantic_interpretation": "the Sabians as an internally named religious community",
+   "cluster_supporting_evidence": "2:62, 5:69, and 22:17 were reviewed directly.",
+   "counterevidence": [
+    "All evidence is proper-name repetition without derivational contrast."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:62",
+     "verse_text": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَٱلَّذِينَ هَادُوا۟ وَٱلنَّصَٰرَىٰ وَٱلصَّٰبِـِٔينَ مَنْ ءَامَنَ بِٱللَّهِ وَٱلْيَوْمِ ٱلْـَٔاخِرِ وَعَمِلَ صَٰلِحًا فَلَهُمْ أَجْرُهُمْ عِندَ رَبِّهِمْ وَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ"
+    }
+   ],
+   "root_arabic": "ص ب ا",
+   "root_buckwalter": "SbA",
+   "root_id": "SbA",
+   "artifact_name": "_53_bA.json",
+   "verse_ref": "2:62",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "S~a`bi_#iyna",
+   "qac_tag": "PN",
+   "qac_pos": "PN",
+   "qac_verb_form": null,
+   "morphology": "PN",
+   "form": "PN",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَٱلَّذِينَ هَادُوا۟ وَٱلنَّصَٰرَىٰ وَٱلصَّٰبِـِٔينَ مَنْ ءَامَنَ بِٱللَّهِ وَٱلْيَوْمِ ٱلْـَٔاخِرِ وَعَمِلَ صَٰلِحًا فَلَهُمْ أَجْرُهُمْ عِندَ رَبِّهِمْ وَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ"
+  },
+  {
+   "word_ref": "5:69:6:3",
+   "disposition": "RESISTANT",
+   "note": "Each token identifies the group but supplies no compositional root meaning.",
+   "coverage_cluster_id": "sabian_group_name",
+   "candidate_semantic_interpretation": "the Sabians as an internally named religious community",
+   "cluster_supporting_evidence": "2:62, 5:69, and 22:17 were reviewed directly.",
+   "counterevidence": [
+    "All evidence is proper-name repetition without derivational contrast."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "5:69",
+     "verse_text": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَٱلَّذِينَ هَادُوا۟ وَٱلصَّٰبِـُٔونَ وَٱلنَّصَٰرَىٰ مَنْ ءَامَنَ بِٱللَّهِ وَٱلْيَوْمِ ٱلْـَٔاخِرِ وَعَمِلَ صَٰلِحًا فَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ"
+    }
+   ],
+   "root_arabic": "ص ب ا",
+   "root_buckwalter": "SbA",
+   "root_id": "SbA",
+   "artifact_name": "_53_bA.json",
+   "verse_ref": "5:69",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "S~a`bi_#uwna",
+   "qac_tag": "PN",
+   "qac_pos": "PN",
+   "qac_verb_form": null,
+   "morphology": "PN",
+   "form": "PN",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَٱلَّذِينَ هَادُوا۟ وَٱلصَّٰبِـُٔونَ وَٱلنَّصَٰرَىٰ مَنْ ءَامَنَ بِٱللَّهِ وَٱلْيَوْمِ ٱلْـَٔاخِرِ وَعَمِلَ صَٰلِحًا فَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "UNRESOLVED",
+ "result_strength": "UNRESOLVED",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PARTIAL",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "22:17:6:3",
+  "2:62:7:3",
+  "5:69:6:3"
+ ],
+ "unreconciled_count": 3,
+ "resistant_occurrences": [
+  "22:17:6:3",
+  "2:62:7:3",
+  "5:69:6:3"
+ ],
+ "structural_uncertainty_occurrences": []
+}

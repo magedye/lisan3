@@ -1,0 +1,207 @@
+{
+ "root_arabic": "ع ي ر",
+ "root_buckwalter": "Eyr",
+ "root_id": "Eyr",
+ "artifact_name": "Eyr.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch06-wave2-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "a traveling caravan or convoy treated as one moving group",
+ "internal_discovery": {
+  "candidate_root_contribution": "a traveling caravan or convoy treated as one moving group",
+  "plain_explanation": "All three occurrences in Surah Yusuf refer to the same caravan/convoy type: addressed as a group, asked about as a witness, and departing as a moving unit.",
+  "layer_separation_note": "Definiteness and clauses supply the particular convoy and its actions; the root evidence is limited to one underived noun form.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "All evidence comes from one narrative and one noun, so a deeper root mechanism cannot be independently tested.",
+  "competing_hypothesis": "The term foregrounds loaded animals rather than people or convoy; the verses address and question the collective, leaving internal composition underdetermined.",
+  "distinctiveness_note": "The observed moving-group referent is distinct from a stationary people, but neighbor-level lexical distinctiveness remains sparse.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "Referential unity is complete; abstraction is capped by three same-narrative noun occurrences.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "caravan",
+     "where": {
+      "qac_pos": [
+       "N"
+      ]
+     },
+     "occurrence_count_expected": 3,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "traveling caravan/convoy as a collective",
+     "classification_rationale": "Each occurrence identifies the same moving convoy type in Yusuf's narrative.",
+     "supporting_evidence_note": "12:70, 12:82, and 12:94 were reviewed directly.",
+     "counterevidence": [
+      "One narrative and one form limit broader abstraction."
+     ]
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "Eyr",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": false,
+  "falsifiable": true,
+  "notes": "The lexical referent is supported; deeper root distinctiveness is evidence-limited."
+ },
+ "coverage_validation": {
+  "root": "Eyr",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "12:70:13:2",
+   "disposition": "CONSISTENT",
+   "note": "Each occurrence identifies the same moving convoy type in Yusuf's narrative.",
+   "coverage_cluster_id": "caravan",
+   "candidate_semantic_interpretation": "traveling caravan/convoy as a collective",
+   "cluster_supporting_evidence": "12:70, 12:82, and 12:94 were reviewed directly.",
+   "counterevidence": [
+    "One narrative and one form limit broader abstraction."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "12:70",
+     "verse_text": "فَلَمَّا جَهَّزَهُم بِجَهَازِهِمْ جَعَلَ ٱلسِّقَايَةَ فِى رَحْلِ أَخِيهِ ثُمَّ أَذَّنَ مُؤَذِّنٌ أَيَّتُهَا ٱلْعِيرُ إِنَّكُمْ لَسَٰرِقُونَ"
+    }
+   ],
+   "root_arabic": "ع ي ر",
+   "root_buckwalter": "Eyr",
+   "root_id": "Eyr",
+   "artifact_name": "Eyr.json",
+   "verse_ref": "12:70",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Eiyru",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَلَمَّا جَهَّزَهُم بِجَهَازِهِمْ جَعَلَ ٱلسِّقَايَةَ فِى رَحْلِ أَخِيهِ ثُمَّ أَذَّنَ مُؤَذِّنٌ أَيَّتُهَا ٱلْعِيرُ إِنَّكُمْ لَسَٰرِقُونَ"
+  },
+  {
+   "word_ref": "12:82:6:3",
+   "disposition": "CONSISTENT",
+   "note": "Each occurrence identifies the same moving convoy type in Yusuf's narrative.",
+   "coverage_cluster_id": "caravan",
+   "candidate_semantic_interpretation": "traveling caravan/convoy as a collective",
+   "cluster_supporting_evidence": "12:70, 12:82, and 12:94 were reviewed directly.",
+   "counterevidence": [
+    "One narrative and one form limit broader abstraction."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "12:82",
+     "verse_text": "وَسْـَٔلِ ٱلْقَرْيَةَ ٱلَّتِى كُنَّا فِيهَا وَٱلْعِيرَ ٱلَّتِىٓ أَقْبَلْنَا فِيهَا وَإِنَّا لَصَٰدِقُونَ"
+    }
+   ],
+   "root_arabic": "ع ي ر",
+   "root_buckwalter": "Eyr",
+   "root_id": "Eyr",
+   "artifact_name": "Eyr.json",
+   "verse_ref": "12:82",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Eiyra",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَسْـَٔلِ ٱلْقَرْيَةَ ٱلَّتِى كُنَّا فِيهَا وَٱلْعِيرَ ٱلَّتِىٓ أَقْبَلْنَا فِيهَا وَإِنَّا لَصَٰدِقُونَ"
+  },
+  {
+   "word_ref": "12:94:3:2",
+   "disposition": "CONSISTENT",
+   "note": "Each occurrence identifies the same moving convoy type in Yusuf's narrative.",
+   "coverage_cluster_id": "caravan",
+   "candidate_semantic_interpretation": "traveling caravan/convoy as a collective",
+   "cluster_supporting_evidence": "12:70, 12:82, and 12:94 were reviewed directly.",
+   "counterevidence": [
+    "One narrative and one form limit broader abstraction."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "12:94",
+     "verse_text": "وَلَمَّا فَصَلَتِ ٱلْعِيرُ قَالَ أَبُوهُمْ إِنِّى لَأَجِدُ رِيحَ يُوسُفَ لَوْلَآ أَن تُفَنِّدُونِ"
+    }
+   ],
+   "root_arabic": "ع ي ر",
+   "root_buckwalter": "Eyr",
+   "root_id": "Eyr",
+   "artifact_name": "Eyr.json",
+   "verse_ref": "12:94",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Eiyru",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَمَّا فَصَلَتِ ٱلْعِيرُ قَالَ أَبُوهُمْ إِنِّى لَأَجِدُ رِيحَ يُوسُفَ لَوْلَآ أَن تُفَنِّدُونِ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}
