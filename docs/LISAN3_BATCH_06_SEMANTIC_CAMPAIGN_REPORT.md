@@ -37,13 +37,26 @@ were excluded explicitly. No malformed or policy-prohibited roots were found.
 The frozen selection order was assigned round-robin to retain frequency-tier
 diversity while balancing occurrence load:
 
-| Wave | Roots | Occurrences | Outcome distribution | Resistant | Commit |
+| Wave | Roots | Occurrences | Outcome distribution | Contested / resistant | Commit |
 |---|---:|---:|---|---:|---|
-| Wave 1 | 20 | 1,780 | 4 STRONG / 10 MODERATE / 4 WEAK / 2 UNRESOLVED | 528 | `4d3e4d7` |
-| Wave 2 | 20 | 1,318 | 9 STRONG / 5 MODERATE / 3 WEAK / 3 UNRESOLVED | 34 | `918fa11` |
-| **Total** | **40** | **3,098** | **13 / 15 / 7 / 5** | **562** | final commit in handoff |
+| Wave 1 | 20 | 1,780 | 4 STRONG / 10 MODERATE / 4 WEAK / 2 UNRESOLVED | 530 / 528 | `4d3e4d7` |
+| Wave 2 | 20 | 1,318 | 9 STRONG / 5 MODERATE / 3 WEAK / 3 UNRESOLVED | 34 / 34 | `918fa11` |
+| **Total** | **40** | **3,098** | **13 / 15 / 7 / 5** | **564 / 562** | final commit in handoff |
 
 Phase 0 population/evidence-contract commit: `df382f3`.
+
+Campaign statistics: 40 selected / 40 completed; 3,098 occurrences researched;
+40/40 exact sets; 564 contested occurrences, of which 2 reconciled and 562
+remain resistant; 5 unresolved roots.
+
+`STRONG`, `MODERATE`, `WEAK`, and `UNRESOLVED` are the persisted result-strength
+outcomes. “Multi-class” is a non-exclusive analytical overlay, not a new enum.
+Eighteen roots require material class partition beyond routine inflection:
+
+- qualified/reconciled classes: `mvl`, `qlb`, `fSl`, `wlj`, `Sgr`, `qtl`,
+  `ESm`;
+- resistant/unresolved classes: `$yA`, `ysr`, `jwb`, `Sdd`, `Sbg`, `srr`,
+  `fwq`, `Hwr`, `HrD`, `Hlq`, `Sbw`.
 
 ## Full root list and candidate results
 

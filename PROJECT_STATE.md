@@ -947,8 +947,9 @@ review. Do not select or start another root batch.
   20-root waves (1,780 / 1,318).
 - Final Batch 06 outcomes are 13 STRONG, 15 MODERATE, 7 WEAK, and 5 UNRESOLVED.
   Twenty-eight roots have universal presence at their qualified research
-  strength; 12 do not. Exactly 562 occurrence records remain RESISTANT, and two
-  reconciled occurrences retain preliminary and final provenance.
+  strength; 12 do not. Exactly 564 occurrences were contested: 562 remain
+  RESISTANT, while two reconciled occurrences retain preliminary and final
+  provenance.
 - The V3 gate recomputed all 40 artifact occurrence sets against the live
   confirmed StructuralToken store: 3,098 / 3,098 exact identities, zero
   missing, unexpected, or duplicate refs, and zero required evidence-contract
