@@ -764,3 +764,66 @@ Run a fresh read-only independent review against the exact remediation commit,
 checking the candidate diff, 1,642-root collision scan, migrated-reference
 resolution, Batch 04 byte identity, and controlled Batch 05 replay evidence.
 Do not resume or accept Batch 06 under that review authorization.
+
+## Batch 05 Semantic Research Closure Checkpoint (2026-09-10)
+
+- Task starting branch/HEAD: `pre-analysis-foundation` /
+  `6ae309c8252eefbf6adc67be726ad4c1a74aea73`; refreshed local and remote-tracking
+  `main`:
+  `34d4b01cd3ddbfe6424823aa6ef46c696ecfd3d3`. The starting branch was 14 ahead
+  and 0 behind `main`, with `main` as its merge base.
+- The branch history is the coherent pre-analysis and semantic-campaign line:
+  master/QAC admission, pre-analysis persistence and services, campaign
+  coverage tooling, Batches 01-05 research evidence, and artifact-identity
+  hardening. The closure does not add a new runtime or semantic-research run.
+- Batch 05 remains coverage-complete for 40 roots and 3,878 / 3,878 confirmed
+  occurrences. Its initial review verdict is
+  `SEMANTIC_SYNTHESIS_READY_WITH_QUALIFICATIONS`, preserved in
+  `docs/LISAN3_BATCH_05_SEMANTIC_RESULTS_REVIEW.md`.
+- The bounded corrective review covers exactly 14 roots and 2,405 / 2,405
+  occurrences. Its verdict is
+  `BOUNDED_CORRECTIVE_REVIEW_COMPLETE_WITH_PRESERVED_RESISTANCE`, preserved in
+  `docs/LISAN3_BATCH_05_CORRECTIVE_SEMANTIC_REVIEW.md`.
+- The corrective report contains the authoritative 72-record objection
+  preservation registry for this checkpoint: 70 formal adversarial failing
+  references, the discoverer-unreconciled `Anf` reference, and the exposed
+  `ETw` Form-VI seam. The unavailable historical preliminary disposition and
+  note are retained as
+  `HISTORICAL_PRELIMINARY_PROVENANCE_UNRECOVERABLE`; later `CONSISTENT` labels
+  do not replace that missing history.
+- Corrective synthesis-ready results are qualified `SlH` and `rjm`, plus the
+  explicitly class-partitioned `qwm`, `Awl`, `Sdr`, `Ehd`, `bny`, `dbr`, and
+  `krm`. Together with the 26 untouched initially strong/qualified roots, this
+  makes 35 / 40 Batch 05 roots usable for synthesis only at their documented
+  scopes.
+- `Anf` and `Erw` remain `UNRESOLVED`; `rbb`, `ETw`, and `fqr` retain resistant
+  occurrences. These states are valid evidence-bearing outcomes and are not
+  merge blockers. No root result was rewritten to obtain merge readiness.
+- Canonical authorization and publication remain pending/not granted. The
+  reports are research-level evidence and do not self-grant owner acceptance,
+  independent review, registry adoption, release acceptance, or publication.
+- The recommended five-root corrective research run for `Anf`, `Erw`, `rbb`,
+  `ETw`, and `fqr` is `NOT_STARTED` and `NOT_AUTHORIZED`. Batch 06 is also
+  `NOT_AUTHORIZED` and was not started by this closure.
+- Generated Batch 05 packets and coverage shards remain ignored scratch; the
+  tracked ledger and 88 root artifacts are the durable campaign evidence.
+  Forty-one ignored Batch 06 packets and 88 ignored Batch 06 coverage files
+  were preserved and excluded. Owner-untracked files and model/session memory
+  were not staged or changed.
+- Focused verification passed: 27 tests in
+  `tests/test_campaign_coverage.py` and `tests/test_qac_morphology.py`; focused
+  Ruff; 88 ledger roots exactly matching 88 collision-safe artifacts; 40 Batch
+  05 roots totaling 3,878 occurrences; 1,642 / 1,642 unique case-folded runtime
+  filenames; all review links resolving; exact 72-record objection coverage;
+  and preserved Batch 04 `swm.json` SHA-256
+  `5a2fa4064b7c9c1ef8d58a7e057dea4da2086097d2eb4ba304d24804023b92a9`.
+- Closure commit scope is exactly the two semantic review reports and this
+  state reconciliation. The final checkpoint SHA is returned in the execution
+  handoff because a commit cannot embed its own identity.
+
+## Current Exact Next Action
+
+After reviewing the exact closure commit returned in the execution handoff,
+fast-forward `main` to that commit. Merge authority does not authorize the
+five-root corrective research run, Batch 06, canonicalization, publication,
+push, tag, or release.
