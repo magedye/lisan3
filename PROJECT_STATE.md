@@ -953,9 +953,15 @@ review. Do not select or start another root batch.
 - The V3 gate recomputed all 40 artifact occurrence sets against the live
   confirmed StructuralToken store: 3,098 / 3,098 exact identities, zero
   missing, unexpected, or duplicate refs, and zero required evidence-contract
-  errors. All four root identities, canonical Tanzil verse support, QAC
-  structural fields, candidate interpretations, counterevidence properties,
-  final dispositions, and reconciliation properties are present.
+  errors. All 3,098 occurrence records explicitly preserve preliminary
+  disposition/note, verifier objection, final disposition, reconciliation
+  rationale/lineage, all four root identities, canonical Tanzil verse support,
+  QAC structural fields, candidate interpretations, and counterevidence.
+- A final provenance audit found that unreconciled records had previously left
+  preliminary and verifier fields implicit. The materializer was corrected and
+  both frozen waves were replayed idempotently. The semantic judgments, exact
+  occurrence sets, 564/562/2 contested/resistant/reconciled counts, ledger
+  totals, and Batch 06 population did not change.
 - Ledger/artifact state is coherent: 128 ledger roots, `updated_roots_total =
   128`, exactly two Batch 06 coverage-log entries, and all 128 researched roots
   COMPLETE with canonical authorization PENDING. CampaignState independently

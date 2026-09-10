@@ -193,8 +193,8 @@ Every one of the 3,098 persisted occurrence records contains:
   source/version/extraction/attribution fields;
 - class-specific candidate interpretation, classification rationale,
   supporting-evidence note, counterevidence list, and direct verse support;
-- preliminary/final reconciliation lineage properties and explicit final
-  disposition.
+- explicit preliminary disposition/note, verifier objection, final disposition,
+  reconciliation rationale, and reconciliation lineage on every occurrence.
 
 The repository has no adopted segment-level orthographic alignment profile.
 Therefore `surface_form_arabic` is null with status
@@ -206,11 +206,13 @@ canonical Buckwalter root, while Buckwalter remains the stable technical ID.
 
 - Live-store recomputation: 40/40 roots and 3,098/3,098 confirmed occurrence
   identities; zero missing, unexpected, or duplicate refs.
-- Artifact contract: zero missing identity, semantic, structural, supporting,
-  counterevidence, final-disposition, or reconciliation properties.
+- Artifact contract: all 3,098 records expose preliminary disposition/note,
+  verifier objection, final disposition, reconciliation rationale/lineage, and
+  required identity, semantic, structural, supporting, and counterevidence
+  properties; zero contract errors.
 - Outcome recomputation: 13 STRONG / 15 MODERATE / 7 WEAK / 5 UNRESOLVED.
-- Resistance/lineage recomputation: 562 final resistant; 2 reconciliation
-  records.
+- Resistance/lineage recomputation: 564 preliminary contested, 562 final
+  resistant, and 2 reconciled records with preserved preliminary state.
 - Ledger: 128 roots and `updated_roots_total = 128`; both Batch 06 coverage
   entries occur exactly once; CampaignState reports 128 processed / 1,514
   remaining.

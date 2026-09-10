@@ -385,6 +385,13 @@ def test_15_persist_coverage_persists_preliminary_and_lifts_block(tmp_path, monk
     assert recon["morphology"] == "N"
     assert recon["verse_ref"] == "2:1"
     assert recon["supporting_evidence"][0]["source"] == "CANONICAL_TANZIL_VERSE"
+    plain = {d["word_ref"]: d for d in art["occurrence_dispositions"]}["2:1:1:1"]
+    assert plain["preliminary_disposition"] == "CONSISTENT"
+    assert plain["preliminary_note"] == "a"
+    assert plain["final_disposition"] == "CONSISTENT"
+    assert plain["reconciliation_rationale"] is None
+    assert plain["reconciliation_lineage"] == []
+    assert plain["verifier_objection"] == []
     # replay is idempotent at the batch-log level (no duplicate coverage_batches)
     camp.cmd_persist_coverage(ns)
     import json as _json
@@ -462,6 +469,9 @@ def test_materialize_coverage_is_explicit_count_pinned_and_fail_closed():
     )
     assert [d["word_ref"] for d in dispositions] == ["1:1:1:1", "1:1:2:1"]
     assert dispositions[1]["disposition"] == "RESISTANT"
+    assert dispositions[1]["verifier_objection"] == [
+        "candidate residue is not explicit"
+    ]
     assert reconciliation == []
 
     drifted = json.loads(json.dumps(base))

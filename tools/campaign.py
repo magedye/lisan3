@@ -343,6 +343,7 @@ def materialize_occurrence_dispositions(
             ),
             "cluster_supporting_evidence": cluster["supporting_evidence_note"],
             "counterevidence": counterevidence,
+            "verifier_objection": counterevidence,
         })
     defined_ids = [c.get("cluster_id") for c in clusters]
     if len(defined_ids) != len(set(defined_ids)):
@@ -723,13 +724,17 @@ def cmd_persist_coverage(args):
                     f"coverage result {root!r} references missing structural token {ref!r}"
                 )
             enriched = dict(disposition)
+            enriched.setdefault("preliminary_disposition", enriched.get("disposition"))
+            enriched.setdefault("preliminary_note", enriched.get("note"))
             enriched.setdefault("final_disposition", enriched.get("disposition"))
+            enriched.setdefault("reconciliation_rationale", None)
             enriched.setdefault("reconciliation_lineage", [])
             enriched.setdefault(
                 "candidate_semantic_interpretation",
                 judgment.get("candidate_root_contribution"),
             )
             enriched.setdefault("counterevidence", [])
+            enriched.setdefault("verifier_objection", enriched.get("counterevidence", []))
             enriched.setdefault(
                 "supporting_evidence",
                 [{
