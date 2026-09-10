@@ -34,7 +34,7 @@ python -m tools.campaign status         # processed vs remaining; research vs ca
    -> per-root artifact in `artifacts/semantic-campaign/roots/`, exact-set validated,
    ledger + CampaignState updated (idempotent; lineage preserved on reprocess).
 
-## Current state (as of Batch 06 Wave 2 checkpoint)
+## Current state (as of Batch 06 final checkpoint)
 - Processed **128 / 1,642** roots; remaining **1,514**; `PENDING_COVERAGE_EVIDENCE = 0`;
   all processed roots exact-set COMPLETE; canonicalization PENDING for all.
 - Batch 06 is owner-authorized on branch `semantic-campaign-batch06`. Its fresh
@@ -49,8 +49,14 @@ python -m tools.campaign status         # processed vs remaining; research vs ca
   records remain explicit.
 - Wave reports: `docs/LISAN3_BATCH_06_WAVE_01.md` and
   `docs/LISAN3_BATCH_06_WAVE_02.md`.
-- Next action: run the whole-Batch-06 V3 evidence gate, write the final campaign
-  report, and reconcile final state without starting another batch.
+- Whole-Batch-06 V3 evidence passed and the final report is
+  `docs/LISAN3_BATCH_06_SEMANTIC_CAMPAIGN_REPORT.md`.
+- Final state:
+  `COMPLETE_READY_FOR_FRESH_INDEPENDENT_SEMANTIC_RESULTS_REVIEW`.
+- Stop here. The next optional task is a fresh read-only independent semantic
+  review against the exact final checkpoint returned in the handoff. Do not
+  select another batch or canonicalize these research results under resume
+  authority.
 
 ## Filename safety (IMPORTANT — do not regress)
 `tools/campaign.py safe_name` escapes the uppercase Buckwalter homograph letters

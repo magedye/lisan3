@@ -1,7 +1,7 @@
 {
   "campaign_id": "lisan-root-calibration",
-  "status": "BATCH_06_IN_PROGRESS",
-  "verdict": "BATCH_06_WAVE_2_CHECKPOINT_COMPLETE_FINAL_GATE_PENDING",
+  "status": "BATCH_06_COMPLETE",
+  "verdict": "READY_FOR_FRESH_INDEPENDENT_SEMANTIC_RESULTS_REVIEW",
   "produced_at": "2026-09-11",
   "reads_handoff": "artifacts/semantic-campaign/PHASE_1_HANDOFF.json",
   "supersedes_prior_status": "BLOCKED_PENDING_QAC_MORPHOLOGY_ADMISSION",
@@ -67,7 +67,7 @@
       "reconciliation_lineage_records": 0
     },
     "combined": {
-      "status": "WAVES_COMPLETE_FINAL_GATE_PENDING",
+      "status": "COMPLETE_AND_STRUCTURALLY_VERIFIED",
       "roots": 40,
       "occurrences": 3098,
       "outcomes": {"STRONG": 13, "MODERATE": 15, "WEAK": 7, "UNRESOLVED": 5},
@@ -88,5 +88,14 @@
     "hybrid_retrieval": "NOT_STARTED",
     "push_merge_release": "NOT_AUTHORIZED"
   },
-  "resume_instruction": "Both Batch 06 waves are persisted. Run the whole-batch V3 evidence gate, produce the final Batch 06 report, and stop for fresh independent semantic-results review; do not select another batch."
+  "final_verification": {
+    "live_store_exact_set": "40/40 roots; 3098/3098 occurrences",
+    "evidence_contract_errors": 0,
+    "prior_root_artifacts_modified": 0,
+    "five_batch05_corrective_artifacts_modified": 0,
+    "root_universe_casefold_paths": "1642/1642 unique",
+    "independently_reviewed": false,
+    "canonicalized": false
+  },
+  "resume_instruction": "Stop. Batch 06 is ready for a fresh read-only independent semantic-results review against the exact final commit. Do not select another batch or canonicalize under resume authority."
 }

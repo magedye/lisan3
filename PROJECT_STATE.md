@@ -939,3 +939,51 @@ start the Batch 05 five-root corrective track.
 Run the whole-Batch-06 V3 evidence gate, produce the final semantic campaign
 report, reconcile final state, and stop for a fresh independent semantic-results
 review. Do not select or start another root batch.
+
+## Batch 06 Final Semantic Campaign Checkpoint (2026-09-11)
+
+- Batch 06 is complete on branch `semantic-campaign-batch06`: exactly 40 new
+  roots and 3,098 confirmed occurrences across two independently committed
+  20-root waves (1,780 / 1,318).
+- Final Batch 06 outcomes are 13 STRONG, 15 MODERATE, 7 WEAK, and 5 UNRESOLVED.
+  Twenty-eight roots have universal presence at their qualified research
+  strength; 12 do not. Exactly 562 occurrence records remain RESISTANT, and two
+  reconciled occurrences retain preliminary and final provenance.
+- The V3 gate recomputed all 40 artifact occurrence sets against the live
+  confirmed StructuralToken store: 3,098 / 3,098 exact identities, zero
+  missing, unexpected, or duplicate refs, and zero required evidence-contract
+  errors. All four root identities, canonical Tanzil verse support, QAC
+  structural fields, candidate interpretations, counterevidence properties,
+  final dispositions, and reconciliation properties are present.
+- Ledger/artifact state is coherent: 128 ledger roots, `updated_roots_total =
+  128`, exactly two Batch 06 coverage-log entries, and all 128 researched roots
+  COMPLETE with canonical authorization PENDING. CampaignState independently
+  reports 128 processed / 1,514 remaining.
+- Filesystem integrity passed: all 40 Batch 06 artifact names are unique under
+  case-folding; the complete live 1,642-root universe remains 1,642 / 1,642
+  case-insensitively unique. Git shows exactly 40 added Batch 06 root artifacts
+  and zero modified prior root artifacts.
+- The five separate Batch 05 corrective artifacts (`Anf`, `Erw`, `rbb`, `ETw`,
+  `fqr`) are byte-unchanged relative to starting main. No Batch 05 conclusion
+  was reopened.
+- The pre-existing ignored `data/campaign/packets/batch06` (41 files, last
+  written 2026-09-10 02:25) and `data/campaign/coverage/batch06` (88 files, last
+  written 2026-09-10 02:54) remain untouched and non-authoritative. Fresh
+  ignored Wave 1/Wave 2 packets and four research/coverage working files are
+  operational scratch only and are not committed.
+- Focused final regression evidence: 32 campaign/QAC tests passed and focused
+  Ruff passed. Manifest, status, ledger, and all root JSON parsed successfully.
+- Final report:
+  `docs/LISAN3_BATCH_06_SEMANTIC_CAMPAIGN_REPORT.md`.
+- Final state:
+  `COMPLETE_READY_FOR_FRESH_INDEPENDENT_SEMANTIC_RESULTS_REVIEW`. This does not
+  establish `INDEPENDENTLY_REVIEWED`, canonicalization, publication, product
+  acceptance, merge, push, tag, release, or Batch 07 authority.
+
+## Current Exact Next Action
+
+Stop. The recommended next optional task is a fresh read-only independent
+semantic-results review against the exact final Batch 06 commit returned in the
+handoff, prioritizing all 5 UNRESOLVED roots, 7 WEAK roots, 2 reconciliation
+lineages, and the high-frequency STRONG/MODERATE class boundaries. That review
+is not automatically authorized by this checkpoint.
