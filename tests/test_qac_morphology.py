@@ -18,6 +18,7 @@ from backend.domain.services.corpus.qac_morphology import (
     QAC_EXPECTED_SHA256,
     QacMorphologyImporter,
     buckwalter_to_arabic,
+    load_verified_segments,
     parse_segments,
 )
 from backend.infrastructure.database import Base
@@ -55,6 +56,11 @@ def test_import_fails_closed_on_unqualified_bytes():
     with pytest.raises(ValueError, match="do not match the qualified immutable source"):
         QacMorphologyImporter.import_tokens(db, "snap_x", artifact_path=AUTHORED)
     db.close()
+
+
+def test_verified_segment_reader_fails_closed_on_unqualified_bytes():
+    with pytest.raises(ValueError, match="do not match the qualified immutable source"):
+        load_verified_segments(AUTHORED)
 
 
 def test_parse_rejects_malformed_location():

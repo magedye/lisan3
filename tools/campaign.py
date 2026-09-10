@@ -29,6 +29,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+from functools import lru_cache
 from pathlib import Path
 
 os.environ.setdefault("LISAN_DATABASE_URL", "sqlite:///data/campaign/runtime.db")
@@ -41,7 +42,11 @@ from backend.domain.services.campaign_state import CampaignStateService
 from backend.domain.services.corpus.descriptive_profile import (
     RootDescriptiveProfileService,
 )
-from backend.domain.services.corpus.qac_morphology import buckwalter_to_arabic
+from backend.domain.services.corpus.qac_morphology import (
+    DEFAULT_QAC_ARTIFACT,
+    buckwalter_to_arabic,
+    load_verified_segments,
+)
 from backend.domain.services.corpus.root_universe import RootUniverseService
 from backend.domain.services.research_coverage import (
     confirmed_word_refs,
@@ -84,6 +89,16 @@ def safe_name(root: str) -> str:
     like '$' and letters like 'A'/'E' stay as-is.
     """
     return "".join(f"_{ord(c):02X}_" if c in _ESCAPE else c for c in root)
+
+
+def root_identity(root: str) -> dict[str, str]:
+    """Canonical linguistic/technical/file identities for a campaign root."""
+    return {
+        "root_arabic": buckwalter_to_arabic(root),
+        "root_buckwalter": root,
+        "root_id": root,
+        "artifact_name": f"{safe_name(root)}.json",
+    }
 
 
 class ArtifactIdentityCollisionError(RuntimeError):
@@ -183,6 +198,61 @@ def _tokens_for_root(db, root):
     )
 
 
+@lru_cache(maxsize=1)
+def _verified_qac_segments_by_ref():
+    """Qualified structural segment surfaces, keyed by exact word_ref.
+
+    The QAC FORM field is retained as Buckwalter-style source data.  It is not
+    converted into claimed canonical Arabic surface text: the admitted Tanzil
+    verse remains the Quran-text authority and the repository has not adopted a
+    versioned segment-level orthographic alignment profile.
+    """
+    if not DEFAULT_QAC_ARTIFACT.exists():
+        return {}
+    return {segment.word_ref: segment for segment in load_verified_segments()}
+
+
+def _occurrence_metadata(token, root: str, verse_text: str) -> dict:
+    segment = _verified_qac_segments_by_ref().get(token.word_ref)
+    segment_matches = segment is not None and segment.root == root
+    identity = root_identity(root)
+    return {
+        **identity,
+        "word_ref": token.word_ref,
+        "verse_ref": token.verse_ref,
+        "surface_form_arabic": None,
+        "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+        "surface_form_arabic_reason": (
+            "Canonical Tanzil authority is verse-level; no reviewed segment-level "
+            "Buckwalter-to-Arabic alignment profile is adopted."
+        ),
+        "qac_surface_form_buckwalter": segment.form if segment_matches else None,
+        "morphology": token.form,
+        "form": token.form,
+        "structural_evidence": {
+            "source_id": token.source_id,
+            "source_version": token.source_version,
+            "extraction_version": token.extraction_version,
+            "attribution_status": token.attribution_status,
+        },
+        "verse_text": verse_text,
+    }
+
+
+def _index_items_by_root(items, label: str) -> dict[str, dict]:
+    if not isinstance(items, list):
+        raise TypeError(f"{label} must be a JSON list")
+    indexed: dict[str, dict] = {}
+    for item in items:
+        if not isinstance(item, dict) or not item.get("root"):
+            raise ValueError(f"{label} contains an item without a root identity")
+        root = item["root"]
+        if root in indexed:
+            raise ValueError(f"{label} contains duplicate root {root!r}")
+        indexed[root] = item
+    return indexed
+
+
 def cmd_select(args):
     db = _db()
     uni = _universe(db)
@@ -229,13 +299,12 @@ def cmd_prep(args):
             continue
         confirmed = set(confirmed_word_refs(db, SNAP, root))
         toks = [t for t in _tokens_for_root(db, root) if t.word_ref in confirmed]
-        occ = [{
-            "word_ref": t.word_ref, "verse_ref": t.verse_ref, "form": t.form,
-            "verse_text": verse_text.get(t.verse_ref, ""),
-        } for t in toks]
+        occ = [
+            _occurrence_metadata(t, root, verse_text.get(t.verse_ref, ""))
+            for t in toks
+        ]
         packet = {
-            "root_buckwalter": root,
-            "root_arabic": buckwalter_to_arabic(root),
+            **root_identity(root),
             "total_confirmed_occurrences": prof.total_confirmed_occurrences,
             "full_coverage": True,
             "coverage_note": "ALL confirmed occurrences included" if len(occ) <= 250
@@ -244,9 +313,13 @@ def cmd_prep(args):
             "occurrences": occ,
         }
         _write_root_json(outdir / f"{safe_name(root)}.json", root, packet)
-        manifest.append({"root": root, "file": safe_name(root),
-                         "arabic": buckwalter_to_arabic(root),
-                         "occ": prof.total_confirmed_occurrences})
+        manifest.append({
+            **root_identity(root),
+            "root": root,
+            "file": safe_name(root),
+            "arabic": buckwalter_to_arabic(root),
+            "occ": prof.total_confirmed_occurrences,
+        })
     (outdir / "_manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"prepped {len(manifest)} packets -> {outdir}")
@@ -397,22 +470,26 @@ def cmd_prep_coverage(args):
         shards = [refs[i:i + SHARD_SIZE] for i in range(0, len(refs), SHARD_SIZE)]
         for k, shard_refs in enumerate(shards):
             shard = {
-                "root_buckwalter": root,
-                "root_arabic": buckwalter_to_arabic(root),
+                **root_identity(root),
                 "frozen_candidate_root_contribution": candidate,
                 "plain_explanation": j.get("plain_explanation"),
                 "shard_index": k,
                 "shard_count": len(shards),
-                "occurrences": [{
-                    "word_ref": r,
-                    "verse_ref": tok_by_ref[r].verse_ref,
-                    "form": tok_by_ref[r].form,
-                    "verse_text": verse_text.get(tok_by_ref[r].verse_ref, ""),
-                } for r in shard_refs],
+                "occurrences": [
+                    _occurrence_metadata(
+                        tok_by_ref[r], root, verse_text.get(tok_by_ref[r].verse_ref, "")
+                    )
+                    for r in shard_refs
+                ],
             }
             _write_root_json(outdir / f"{safe_name(root)}.s{k}.json", root, shard)
-        manifest.append({"root": root, "file": safe_name(root),
-                         "shards": len(shards), "expected_refs": len(refs)})
+        manifest.append({
+            **root_identity(root),
+            "root": root,
+            "file": safe_name(root),
+            "shards": len(shards),
+            "expected_refs": len(refs),
+        })
     (outdir / "_coverage_manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
     print(json.dumps(manifest))
@@ -425,19 +502,33 @@ def cmd_persist_coverage(args):
     coverage results format: [{root, dispositions:[{word_ref, disposition, note}],
     reconciliation:[{word_ref, final, rationale}]}]."""
     db = _db()
-    research = {i["root"]: i for i in json.loads(Path(args.research).read_text(encoding="utf-8"))}
+    research_items = json.loads(Path(args.research).read_text(encoding="utf-8"))
     coverage_items = json.loads(Path(args.coverage).read_text(encoding="utf-8"))
+    research = _index_items_by_root(research_items, "research results")
+    coverage = _index_items_by_root(coverage_items, "coverage results")
+    if set(research) != set(coverage):
+        raise ValueError(
+            "research and coverage root populations differ: "
+            f"research_only={sorted(set(research) - set(coverage))}, "
+            f"coverage_only={sorted(set(coverage) - set(research))}"
+        )
     ledger = load_ledger()
     uni = {e.root: e for e in _universe(db)}
+    unknown = sorted(set(research) - set(uni))
+    if unknown:
+        raise ValueError(f"research contains roots outside the canonical universe: {unknown}")
     ROOT_ARTIFACTS.mkdir(parents=True, exist_ok=True)
     CampaignStateService.initialize(
         db, campaign_id=CAMPAIGN_ID, methodology_revision=METHODOLOGY,
         corpus_snapshot=SNAP, queue=list(uni))
     summary = []
-    for item in coverage_items:
+    verse_text = {
+        v: t for (v, t) in db.query(
+            models.CorpusOccurrence.verse_ref, models.CorpusOccurrence.text
+        ).filter(models.CorpusOccurrence.snapshot_id == SNAP).all()
+    }
+    for item in coverage.values():
         root = item.get("root")
-        if root not in uni or root not in research:
-            continue
         occ = uni[root].confirmed_occurrences
         judgment = research[root].get("judgment") or {}
         verdict = research[root].get("verdict") or {}
@@ -446,6 +537,38 @@ def cmd_persist_coverage(args):
         base_dispositions = item.get("dispositions") or []
         final_dispositions, reconciliation_lineage = merge_reconciliation(
             base_dispositions, item.get("reconciliation") or [])
+        tok_by_ref = {t.word_ref: t for t in _tokens_for_root(db, root)}
+        enriched_dispositions = []
+        for disposition in final_dispositions:
+            ref = disposition["word_ref"]
+            token = tok_by_ref.get(ref)
+            if token is None:
+                raise ValueError(
+                    f"coverage result {root!r} references missing structural token {ref!r}"
+                )
+            enriched = dict(disposition)
+            enriched.setdefault("final_disposition", enriched.get("disposition"))
+            enriched.setdefault("reconciliation_lineage", [])
+            enriched.setdefault(
+                "candidate_semantic_interpretation",
+                judgment.get("candidate_root_contribution"),
+            )
+            enriched.setdefault("counterevidence", [])
+            enriched.setdefault(
+                "supporting_evidence",
+                [{
+                    "source": "CANONICAL_TANZIL_VERSE",
+                    "verse_ref": token.verse_ref,
+                    "verse_text": verse_text.get(token.verse_ref, ""),
+                }],
+            )
+            enriched.update(
+                _occurrence_metadata(
+                    token, root, verse_text.get(token.verse_ref, "")
+                )
+            )
+            enriched_dispositions.append(enriched)
+        final_dispositions = enriched_dispositions
         dispositions = {d["word_ref"]: d for d in final_dispositions}
         # Exact-set validation runs on the mapped word_refs (pre-merge list so a
         # duplicated researched ref is still caught by the validator).
@@ -458,8 +581,7 @@ def cmd_persist_coverage(args):
         disp = finalize_root_disposition(
             judgment, verdict, validation, final_resistant, final_uncertain, occ)
         artifact = {
-            "root_buckwalter": root,
-            "root_arabic": buckwalter_to_arabic(root),
+            **root_identity(root),
             "corpus_snapshot": SNAP,
             "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
             "methodology_revision": METHODOLOGY,
@@ -475,7 +597,7 @@ def cmd_persist_coverage(args):
         }
         _write_root_json(ROOT_ARTIFACTS / f"{safe_name(root)}.json", root, artifact)
         ledger_entry = {
-            "root_arabic": buckwalter_to_arabic(root),
+            **root_identity(root),
             "occurrences": occ,
             "batch_id": args.batch,
             "methodology_revision": METHODOLOGY,
@@ -499,6 +621,7 @@ def cmd_persist_coverage(args):
                         "universal": disp["universal_presence_holds"],
                         "resistant": len(final_resistant)})
     upsert_coverage_batch(ledger, args.batch, [s["root"] for s in summary])
+    ledger["updated_roots_total"] = len(ledger["roots"])
     save_ledger(ledger)
     print(json.dumps(summary, indent=1))
     db.close()

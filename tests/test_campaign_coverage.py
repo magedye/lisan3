@@ -202,8 +202,10 @@ def test_9_reconciliation_preserves_preliminary_disposition_and_note():
     assert reconciled["preliminary_disposition"] == "RESISTANT"
     # mapper note preserved verbatim
     assert reconciled["preliminary_note"] == "mapper flagged: residue absent here"
+    assert reconciled["final_disposition"] == "CONSISTENT"
     # reconciliation rationale intact
     assert reconciled["reconciliation_rationale"] == "bridged via form IV causation"
+    assert reconciled["reconciliation_lineage"] == lineage
     # untouched occurrence carries no invented lineage fields
     assert "preliminary_disposition" not in fin["2:1:1:1"]
     # durable lineage record retains all five provenance fields, not a count
@@ -230,6 +232,20 @@ def test_10_reconciled_to_consistent_retains_flagged_state_in_lineage():
     assert only["deep_analysis"] is True
     assert lineage[0]["preliminary_disposition"] == "STRUCTURAL_UNCERTAINTY"
     assert lineage[0]["final_disposition"] == "CONSISTENT"
+
+
+def test_reconciliation_requires_valid_final_and_rationale():
+    dispositions = [_mapper("7:1:1:1", "RESISTANT", "flagged")]
+    with pytest.raises(ValueError, match="requires a non-empty rationale"):
+        merge_reconciliation(
+            dispositions,
+            [{"word_ref": "7:1:1:1", "final": "CONSISTENT"}],
+        )
+    with pytest.raises(ValueError, match="Invalid final reconciliation disposition"):
+        merge_reconciliation(
+            dispositions,
+            [{"word_ref": "7:1:1:1", "final": "MADE_UP", "rationale": "x"}],
+        )
 
 
 def test_11_duplicate_word_ref_fails_exact_set_even_when_set_equality_holds(db):
@@ -354,6 +370,18 @@ def test_15_persist_coverage_persists_preliminary_and_lifts_block(tmp_path, monk
     assert art["universal_presence_holds"] is True
     assert art["research_completeness"] == COMPLETENESS_COMPLETE
     assert art["canonical_authorization"] == "PENDING"
+    assert art["root_id"] == ROOT
+    assert art["artifact_name"] == "ktb.json"
+    assert recon["root_arabic"] == "ك ت ب"
+    assert recon["root_buckwalter"] == ROOT
+    assert recon["root_id"] == ROOT
+    assert recon["artifact_name"] == "ktb.json"
+    assert recon["final_disposition"] == "CONSISTENT"
+    assert recon["surface_form_arabic"] is None
+    assert recon["surface_form_arabic_status"] == "NOT_AVAILABLE_CANONICALLY"
+    assert recon["morphology"] == "N"
+    assert recon["verse_ref"] == "2:1"
+    assert recon["supporting_evidence"][0]["source"] == "CANONICAL_TANZIL_VERSE"
     # replay is idempotent at the batch-log level (no duplicate coverage_batches)
     camp.cmd_persist_coverage(ns)
     import json as _json
@@ -377,6 +405,27 @@ def test_16_persist_coverage_duplicate_researched_ref_blocks_complete(tmp_path, 
     assert art["coverage_validation"]["exact_set_match"] is False
     assert art["research_completeness"] == COMPLETENESS_PENDING
     assert art["universal_presence_holds"] is False
+
+
+def test_persist_coverage_rejects_root_population_mismatch(tmp_path, monkeypatch, db):
+    import json as _json
+
+    import tools.campaign as camp
+
+    monkeypatch.setattr(camp, "_Session", SessionLocal)
+    monkeypatch.setattr(camp, "SNAP", SNAP)
+    monkeypatch.setattr(camp, "LEDGER", tmp_path / "ledger.json")
+    monkeypatch.setattr(camp, "ROOT_ARTIFACTS", tmp_path / "roots")
+    research = [{"root": ROOT, "judgment": _judgment(), "verdict": {"verdict": "SUPPORTED"}}]
+    coverage = [{"root": "other", "dispositions": [], "reconciliation": []}]
+    rf = tmp_path / "research.json"
+    cf = tmp_path / "coverage.json"
+    rf.write_text(_json.dumps(research), encoding="utf-8")
+    cf.write_text(_json.dumps(coverage), encoding="utf-8")
+    args = type("Args", (), {"research": str(rf), "coverage": str(cf), "batch": "x"})()
+
+    with pytest.raises(ValueError, match="root populations differ"):
+        camp.cmd_persist_coverage(args)
 
 
 # --- Owner remediation: cross-lens root unity (Window 03 integrity fix) -------

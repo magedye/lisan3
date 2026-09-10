@@ -145,6 +145,27 @@ def parse_segments(raw_bytes: bytes) -> list[QacSegment]:
     return segments
 
 
+def load_verified_segments(
+    artifact_path: Path | None = None,
+) -> list[QacSegment]:
+    """Read the qualified QAC bytes and return their parsed segment records.
+
+    Campaign evidence may expose the source's Buckwalter-style segment surface,
+    but only after the same immutable-byte check used by the importer.  The
+    segment surface is structural source data, not canonical Quran text and not
+    an Arabic orthographic reconstruction.
+    """
+    path = artifact_path or DEFAULT_QAC_ARTIFACT
+    raw = path.read_bytes()
+    actual_sha = hashlib.sha256(raw).hexdigest()
+    if actual_sha != QAC_EXPECTED_SHA256 or len(raw) != QAC_EXPECTED_BYTES:
+        raise ValueError(
+            "QAC artifact bytes do not match the qualified immutable source "
+            f"(sha256={actual_sha}, bytes={len(raw)}); refusing to read."
+        )
+    return parse_segments(raw)
+
+
 class QacMorphologyImporter:
     @staticmethod
     def _form_label(seg: QacSegment) -> str:
@@ -160,15 +181,7 @@ class QacMorphologyImporter:
         artifact_path: Path | None = None,
     ) -> QacImportResult:
         path = artifact_path or DEFAULT_QAC_ARTIFACT
-        raw = path.read_bytes()
-        actual_sha = hashlib.sha256(raw).hexdigest()
-        if actual_sha != QAC_EXPECTED_SHA256 or len(raw) != QAC_EXPECTED_BYTES:
-            raise ValueError(
-                "QAC artifact bytes do not match the qualified immutable source "
-                f"(sha256={actual_sha}, bytes={len(raw)}); refusing to import."
-            )
-
-        segments = parse_segments(raw)
+        segments = load_verified_segments(path)
         root_segments = [s for s in segments if s.root]
 
         # Reconcile against the Tanzil verse identity held in this snapshot.
@@ -227,7 +240,7 @@ class QacMorphologyImporter:
 
         return QacImportResult(
             snapshot_id=snapshot_id,
-            source_sha256=actual_sha,
+            source_sha256=QAC_EXPECTED_SHA256,
             segments_total=len(segments),
             root_bearing_segments=len(root_segments),
             distinct_roots=len({s.root for s in root_segments}),

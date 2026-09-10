@@ -13,32 +13,39 @@ ledger + `CampaignState` + this file.
 
 ## 0. Bootstrap runtime (idempotent)
 ```
-python tools/campaign.py bootstrap      # loads Tanzil + QAC if the DB is empty
-python tools/campaign.py status         # processed vs remaining; research vs canon
+python -m tools.campaign bootstrap      # loads Tanzil + QAC if the DB is empty
+python -m tools.campaign status         # processed vs remaining; research vs canon
 ```
 
 ## Pipeline per batch (each stage persists after every root)
 1. **Select** a diverse batch:
-   `python tools/campaign.py select --n 40`  -> space-separated Buckwalter roots
+   `python -m tools.campaign select --n 40`  -> space-separated Buckwalter roots
 2. **Prep** full-coverage packets:
-   `python tools/campaign.py prep --roots "<roots>" --out data/campaign/packets/<batch>`
+   `python -m tools.campaign prep --roots "<roots>" --out data/campaign/packets/<batch>`
 3. **Discovery + adversarial verify** (workflow `root-research-full-coverage`):
    args `{dir: data/campaign/packets/<batch>, roots: [{root, file}, ...]}`
    -> reconstruct combined `[{root, judgment, verdict}]`.
 4. **Exact-set coverage** — shard, map every word_ref, deep-analyze resistant cases:
-   `python tools/campaign.py prep-coverage --results <combined.json> --out data/campaign/coverage/<batch>`
+   `python -m tools.campaign prep-coverage --results <combined.json> --out data/campaign/coverage/<batch>`
    then workflow `coverage-mapping` with args `{dir, roots:[{root, shards, file}]}`;
    reconstruct via a journal parser into coverage results.
 5. **Persist** with validation:
-   `python tools/campaign.py persist-coverage --research <combined.json> --coverage <coverage.json> --batch <batch>-coverage`
+   `python -m tools.campaign persist-coverage --research <combined.json> --coverage <coverage.json> --batch <batch>-coverage`
    -> per-root artifact in `artifacts/semantic-campaign/roots/`, exact-set validated,
    ledger + CampaignState updated (idempotent; lineage preserved on reprocess).
 
-## Current state (as of Window 03 / Batch 05 closure)
+## Current state (as of Batch 06 Phase 0)
 - Processed **88 / 1,642** roots; remaining **1,554**; `PENDING_COVERAGE_EVIDENCE = 0`;
   all processed roots exact-set COMPLETE; canonicalization PENDING for all.
-- No interrupted work. Next action: run the per-batch pipeline for Batch 06.
-- Report: `docs/LISAN3_WINDOW_03_BATCH_05.md`.
+- Batch 06 is owner-authorized on branch `semantic-campaign-batch06`. Its fresh
+  deterministic population is frozen in `BATCH_06_MANIFEST.json`: 40 roots and
+  3,098 confirmed occurrences, split into two 20-root waves (1,780 / 1,318).
+- The separate Batch 05 corrective roots `Anf`, `Erw`, `rbb`, `ETw`, and `fqr`
+  are excluded. A pre-existing ignored Batch 06 scratch population was not used
+  as authority.
+- No Batch 06 semantic result is persisted yet. Next action: execute Wave 1 from
+  the frozen manifest, preserving complete occurrence-level evidence and all
+  contested preliminary/final lineage.
 
 ## Filename safety (IMPORTANT — do not regress)
 `tools/campaign.py safe_name` escapes the uppercase Buckwalter homograph letters

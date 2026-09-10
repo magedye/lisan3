@@ -827,3 +827,42 @@ After reviewing the exact closure commit returned in the execution handoff,
 fast-forward `main` to that commit. Merge authority does not authorize the
 five-root corrective research run, Batch 06, canonicalization, publication,
 push, tag, or release.
+
+## Batch 06 Authorized Campaign Start (2026-09-10)
+
+- The owner subsequently authorized the bounded Batch 06 Quran-internal
+  semantic campaign. Local `main` was verified at the merged Batch 05
+  checkpoint `6f895bf0754190a423512b7478ced5bf7bd4a266`, and the working branch
+  `semantic-campaign-batch06` was created from that exact revision.
+- Phase 0 searched campaign configuration, the tracked research ledger, task
+  and specification records, campaign manifests, and this state record. No
+  authoritative tracked Batch 06 root population existed.
+- A fresh deterministic Root Universe selection froze 40 new roots and 3,098
+  confirmed occurrences in
+  `artifacts/semantic-campaign/BATCH_06_MANIFEST.json`. The manifest exactly
+  matches a repeated live selector run and is divided round-robin into two
+  20-root waves containing 1,780 and 1,318 occurrences.
+- All 88 previously researched roots are excluded. The separate Batch 05
+  corrective roots `Anf`, `Erw`, `rbb`, `ETw`, and `fqr` are also absent and
+  remain untouched.
+- Root identity is explicit as `root_arabic`, `root_buckwalter`, `root_id`, and
+  `artifact_name`. Occurrence evidence now preserves the exact `word_ref`,
+  verse reference and canonical Tanzil verse, QAC structural surface and
+  morphology, candidate interpretation, supporting/counterevidence, final
+  disposition, and per-occurrence reconciliation lineage. Because the
+  repository has no adopted segment-level orthographic alignment profile,
+  `surface_form_arabic` is honestly recorded as unavailable rather than
+  guessed from Buckwalter source bytes.
+- Phase 0 focused verification: 30 campaign/QAC tests passed; focused Ruff
+  passed; the 40-root manifest reconciled to 3,098 occurrences; all five
+  excluded roots were absent; and 1,642 / 1,642 runtime-root artifact names
+  remained case-insensitively unique.
+- No Batch 06 semantic conclusion has yet been persisted at this checkpoint.
+  Canonicalization, publication, owner acceptance, independent review, Hybrid
+  Retrieval, push, merge, release, and branch deletion remain outside scope.
+
+## Current Exact Next Action
+
+Execute and independently checkpoint Batch 06 Wave 1 against the frozen
+20-root / 1,780-occurrence population. Semantic ambiguity must be preserved as
+resistance or unresolved evidence and must not stop unrelated roots.

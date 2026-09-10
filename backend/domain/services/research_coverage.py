@@ -176,24 +176,35 @@ def merge_reconciliation(
         ref = r.get("word_ref")
         if ref not in final or not r.get("final"):
             continue
+        if r["final"] not in VALID_DISPOSITIONS:
+            raise ValueError(
+                f"Invalid final reconciliation disposition for {ref}: {r['final']!r}"
+            )
+        if not r.get("rationale"):
+            raise ValueError(
+                f"Reconciliation for {ref} requires a non-empty rationale"
+            )
         prev = preliminary[ref]
-        final[ref] = {
-            "word_ref": ref,
-            "disposition": r["final"],
-            "note": r.get("rationale") or prev.get("note"),
-            "deep_analysis": True,
-            "preliminary_disposition": prev.get("disposition"),
-            "preliminary_note": prev.get("note"),
-            "reconciliation_rationale": r.get("rationale"),
-        }
-        lineage.append({
+        lineage_entry = {
             "word_ref": ref,
             "preliminary_disposition": prev.get("disposition"),
             "preliminary_note": prev.get("note"),
             "final_disposition": r["final"],
             "reconciliation_rationale": r.get("rationale"),
             "deep_analysis": True,
-        })
+        }
+        final[ref] = {
+            **prev,
+            "disposition": r["final"],
+            "final_disposition": r["final"],
+            "note": r["rationale"],
+            "deep_analysis": True,
+            "preliminary_disposition": prev.get("disposition"),
+            "preliminary_note": prev.get("note"),
+            "reconciliation_rationale": r.get("rationale"),
+            "reconciliation_lineage": [lineage_entry],
+        }
+        lineage.append(lineage_entry)
     final_list = sorted(final.values(), key=lambda d: d["word_ref"])
     return final_list, lineage
 
