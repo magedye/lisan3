@@ -1,0 +1,1808 @@
+{
+ "root_arabic": "ج و ب",
+ "root_buckwalter": "jwb",
+ "root_id": "jwb",
+ "artifact_name": "jwb.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch06-wave1-coverage",
+ "occurrences": 43,
+ "frozen_candidate_root_contribution": "meeting an address, call, or demand with a directed answering response",
+ "internal_discovery": {
+  "candidate_root_contribution": "meeting an address, call, or demand with a directed answering response",
+  "plain_explanation": "Forty-two occurrences form a coherent answer/respond family across jawāb and Forms IV/X. The remaining base verb at 89:9 means hewing rock in the valley; the Quran supplies no internal bridge from answering to cutting through stone.",
+  "layer_separation_note": "Forms IV and X distribute answering and responding; participants identify caller and respondent. The isolated base verb is held apart rather than explained through an external lexicon.",
+  "presence": {
+   "occurrences_total": 43,
+   "occurrences_checked": 43,
+   "occurrences_consistent": 42,
+   "inconsistent_refs": [
+    "89:9:3:1"
+   ]
+  },
+  "strongest_counterexample": "89:9:3:1 describes Thamud hewing rock, with no speech act or call-response relation.",
+  "competing_hypothesis": "A very broad 'opening into what confronts one' could join cutting and answering, but it loses distinctiveness and is not demonstrated internally.",
+  "distinctiveness_note": "The preferred nucleus is distinct from saying and calling because it requires a prior address or demand; it deliberately does not absorb rock-hewing.",
+  "unresolved_cases": [
+   "89:9:3:1"
+  ],
+  "result": "PREFERRED",
+  "result_strength": "WEAK",
+  "rationale": "The dominant answering family is well supported, but the single rock-hewing occurrence blocks universal unity.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "derived_response",
+     "where": {
+      "qac_verb_form": [
+       "IV",
+       "X"
+      ]
+     },
+     "occurrence_count_expected": 38,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+     "classification_rationale": "All derived-form contexts contain an address/demand and its response or non-response.",
+     "supporting_evidence_note": "All 38 Form IV/X contexts were reviewed.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "answer_nouns",
+     "where": {
+      "qac_pos": [
+       "N"
+      ],
+      "qac_verb_form": [
+       null
+      ]
+     },
+     "occurrence_count_expected": 4,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "an answer supplied to a prior address",
+     "classification_rationale": "Each jawab noun names the response given by a people.",
+     "supporting_evidence_note": "All four jawab contexts were reviewed.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "rock_hewing",
+     "where": {
+      "qac_pos": [
+       "V"
+      ],
+      "qac_verb_form": [
+       null
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "to hew or cut through rock",
+     "classification_rationale": "The sole base verb at 89:9 lacks an internally evidenced answering residue.",
+     "supporting_evidence_note": "89:9 was reviewed directly in its Thamud/rock context.",
+     "counterevidence": [
+      "No call, demand, reply, or answer appears in the occurrence."
+     ]
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "jwb",
+  "verdict": "PARTIALLY_SUPPORTED",
+  "failing_occurrences": [
+   "89:9:3:1"
+  ],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "The responding nucleus is preferred for 42 occurrences; the rock-hewing seam remains resistant."
+ },
+ "coverage_validation": {
+  "root": "jwb",
+  "expected_count": 43,
+  "researched_count": 43,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "10:89:3:1",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "10:89",
+     "verse_text": "قَالَ قَدْ أُجِيبَت دَّعْوَتُكُمَا فَٱسْتَقِيمَا وَلَا تَتَّبِعَآنِّ سَبِيلَ ٱلَّذِينَ لَا يَعْلَمُونَ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "10:89",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">ujiybat",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالَ قَدْ أُجِيبَت دَّعْوَتُكُمَا فَٱسْتَقِيمَا وَلَا تَتَّبِعَآنِّ سَبِيلَ ٱلَّذِينَ لَا يَعْلَمُونَ"
+  },
+  {
+   "word_ref": "11:14:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "11:14",
+     "verse_text": "فَإِلَّمْ يَسْتَجِيبُوا۟ لَكُمْ فَٱعْلَمُوٓا۟ أَنَّمَآ أُنزِلَ بِعِلْمِ ٱللَّهِ وَأَن لَّآ إِلَٰهَ إِلَّا هُوَ فَهَلْ أَنتُم مُّسْلِمُونَ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "11:14",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasotajiybu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَإِلَّمْ يَسْتَجِيبُوا۟ لَكُمْ فَٱعْلَمُوٓا۟ أَنَّمَآ أُنزِلَ بِعِلْمِ ٱللَّهِ وَأَن لَّآ إِلَٰهَ إِلَّا هُوَ فَهَلْ أَنتُم مُّسْلِمُونَ"
+  },
+  {
+   "word_ref": "11:61:27:1",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "11:61",
+     "verse_text": "وَإِلَىٰ ثَمُودَ أَخَاهُمْ صَٰلِحًا قَالَ يَٰقَوْمِ ٱعْبُدُوا۟ ٱللَّهَ مَا لَكُم مِّنْ إِلَٰهٍ غَيْرُهُۥ هُوَ أَنشَأَكُم مِّنَ ٱلْأَرْضِ وَٱسْتَعْمَرَكُمْ فِيهَا فَٱسْتَغْفِرُوهُ ثُمَّ تُوبُوٓا۟ إِلَيْهِ إِنَّ رَبِّى قَرِيبٌ مُّجِيبٌ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "11:61",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "m~ujiybN",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": "IV",
+   "morphology": "N(IV)",
+   "form": "N(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِلَىٰ ثَمُودَ أَخَاهُمْ صَٰلِحًا قَالَ يَٰقَوْمِ ٱعْبُدُوا۟ ٱللَّهَ مَا لَكُم مِّنْ إِلَٰهٍ غَيْرُهُۥ هُوَ أَنشَأَكُم مِّنَ ٱلْأَرْضِ وَٱسْتَعْمَرَكُمْ فِيهَا فَٱسْتَغْفِرُوهُ ثُمَّ تُوبُوٓا۟ إِلَيْهِ إِنَّ رَبِّى قَرِيبٌ مُّجِيبٌ"
+  },
+  {
+   "word_ref": "12:34:1:2",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "12:34",
+     "verse_text": "فَٱسْتَجَابَ لَهُۥ رَبُّهُۥ فَصَرَفَ عَنْهُ كَيْدَهُنَّ إِنَّهُۥ هُوَ ٱلسَّمِيعُ ٱلْعَلِيمُ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "12:34",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{sotajaAba",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَٱسْتَجَابَ لَهُۥ رَبُّهُۥ فَصَرَفَ عَنْهُ كَيْدَهُنَّ إِنَّهُۥ هُوَ ٱلسَّمِيعُ ٱلْعَلِيمُ"
+  },
+  {
+   "word_ref": "13:14:9:1",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "13:14",
+     "verse_text": "لَهُۥ دَعْوَةُ ٱلْحَقِّ وَٱلَّذِينَ يَدْعُونَ مِن دُونِهِۦ لَا يَسْتَجِيبُونَ لَهُم بِشَىْءٍ إِلَّا كَبَٰسِطِ كَفَّيْهِ إِلَى ٱلْمَآءِ لِيَبْلُغَ فَاهُ وَمَا هُوَ بِبَٰلِغِهِۦ وَمَا دُعَآءُ ٱلْكَٰفِرِينَ إِلَّا فِى ضَلَٰلٍ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "13:14",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasotajiybu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لَهُۥ دَعْوَةُ ٱلْحَقِّ وَٱلَّذِينَ يَدْعُونَ مِن دُونِهِۦ لَا يَسْتَجِيبُونَ لَهُم بِشَىْءٍ إِلَّا كَبَٰسِطِ كَفَّيْهِ إِلَى ٱلْمَآءِ لِيَبْلُغَ فَاهُ وَمَا هُوَ بِبَٰلِغِهِۦ وَمَا دُعَآءُ ٱلْكَٰفِرِينَ إِلَّا فِى ضَلَٰلٍ"
+  },
+  {
+   "word_ref": "13:18:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "13:18",
+     "verse_text": "لِلَّذِينَ ٱسْتَجَابُوا۟ لِرَبِّهِمُ ٱلْحُسْنَىٰ وَٱلَّذِينَ لَمْ يَسْتَجِيبُوا۟ لَهُۥ لَوْ أَنَّ لَهُم مَّا فِى ٱلْأَرْضِ جَمِيعًا وَمِثْلَهُۥ مَعَهُۥ لَٱفْتَدَوْا۟ بِهِۦٓ أُو۟لَٰٓئِكَ لَهُمْ سُوٓءُ ٱلْحِسَابِ وَمَأْوَىٰهُمْ جَهَنَّمُ وَبِئْسَ ٱلْمِهَادُ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "13:18",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{sotajaAbu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لِلَّذِينَ ٱسْتَجَابُوا۟ لِرَبِّهِمُ ٱلْحُسْنَىٰ وَٱلَّذِينَ لَمْ يَسْتَجِيبُوا۟ لَهُۥ لَوْ أَنَّ لَهُم مَّا فِى ٱلْأَرْضِ جَمِيعًا وَمِثْلَهُۥ مَعَهُۥ لَٱفْتَدَوْا۟ بِهِۦٓ أُو۟لَٰٓئِكَ لَهُمْ سُوٓءُ ٱلْحِسَابِ وَمَأْوَىٰهُمْ جَهَنَّمُ وَبِئْسَ ٱلْمِهَادُ"
+  },
+  {
+   "word_ref": "13:18:7:1",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "13:18",
+     "verse_text": "لِلَّذِينَ ٱسْتَجَابُوا۟ لِرَبِّهِمُ ٱلْحُسْنَىٰ وَٱلَّذِينَ لَمْ يَسْتَجِيبُوا۟ لَهُۥ لَوْ أَنَّ لَهُم مَّا فِى ٱلْأَرْضِ جَمِيعًا وَمِثْلَهُۥ مَعَهُۥ لَٱفْتَدَوْا۟ بِهِۦٓ أُو۟لَٰٓئِكَ لَهُمْ سُوٓءُ ٱلْحِسَابِ وَمَأْوَىٰهُمْ جَهَنَّمُ وَبِئْسَ ٱلْمِهَادُ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "13:18",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasotajiybu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لِلَّذِينَ ٱسْتَجَابُوا۟ لِرَبِّهِمُ ٱلْحُسْنَىٰ وَٱلَّذِينَ لَمْ يَسْتَجِيبُوا۟ لَهُۥ لَوْ أَنَّ لَهُم مَّا فِى ٱلْأَرْضِ جَمِيعًا وَمِثْلَهُۥ مَعَهُۥ لَٱفْتَدَوْا۟ بِهِۦٓ أُو۟لَٰٓئِكَ لَهُمْ سُوٓءُ ٱلْحِسَابِ وَمَأْوَىٰهُمْ جَهَنَّمُ وَبِئْسَ ٱلْمِهَادُ"
+  },
+  {
+   "word_ref": "14:22:22:2",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "14:22",
+     "verse_text": "وَقَالَ ٱلشَّيْطَٰنُ لَمَّا قُضِىَ ٱلْأَمْرُ إِنَّ ٱللَّهَ وَعَدَكُمْ وَعْدَ ٱلْحَقِّ وَوَعَدتُّكُمْ فَأَخْلَفْتُكُمْ وَمَا كَانَ لِىَ عَلَيْكُم مِّن سُلْطَٰنٍ إِلَّآ أَن دَعَوْتُكُمْ فَٱسْتَجَبْتُمْ لِى فَلَا تَلُومُونِى وَلُومُوٓا۟ أَنفُسَكُم مَّآ أَنَا۠ بِمُصْرِخِكُمْ وَمَآ أَنتُم بِمُصْرِخِىَّ إِنِّى كَفَرْتُ بِمَآ أَشْرَكْتُمُونِ مِن قَبْلُ إِنَّ ٱلظَّٰلِمِينَ لَهُمْ عَذَابٌ أَلِيمٌ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "14:22",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{sotajabo",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَقَالَ ٱلشَّيْطَٰنُ لَمَّا قُضِىَ ٱلْأَمْرُ إِنَّ ٱللَّهَ وَعَدَكُمْ وَعْدَ ٱلْحَقِّ وَوَعَدتُّكُمْ فَأَخْلَفْتُكُمْ وَمَا كَانَ لِىَ عَلَيْكُم مِّن سُلْطَٰنٍ إِلَّآ أَن دَعَوْتُكُمْ فَٱسْتَجَبْتُمْ لِى فَلَا تَلُومُونِى وَلُومُوٓا۟ أَنفُسَكُم مَّآ أَنَا۠ بِمُصْرِخِكُمْ وَمَآ أَنتُم بِمُصْرِخِىَّ إِنِّى كَفَرْتُ بِمَآ أَشْرَكْتُمُونِ مِن قَبْلُ إِنَّ ٱلظَّٰلِمِينَ لَهُمْ عَذَابٌ أَلِيمٌ"
+  },
+  {
+   "word_ref": "14:44:14:1",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "14:44",
+     "verse_text": "وَأَنذِرِ ٱلنَّاسَ يَوْمَ يَأْتِيهِمُ ٱلْعَذَابُ فَيَقُولُ ٱلَّذِينَ ظَلَمُوا۟ رَبَّنَآ أَخِّرْنَآ إِلَىٰٓ أَجَلٍ قَرِيبٍ نُّجِبْ دَعْوَتَكَ وَنَتَّبِعِ ٱلرُّسُلَ أَوَلَمْ تَكُونُوٓا۟ أَقْسَمْتُم مِّن قَبْلُ مَا لَكُم مِّن زَوَالٍ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "14:44",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "n~ujibo",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَأَنذِرِ ٱلنَّاسَ يَوْمَ يَأْتِيهِمُ ٱلْعَذَابُ فَيَقُولُ ٱلَّذِينَ ظَلَمُوا۟ رَبَّنَآ أَخِّرْنَآ إِلَىٰٓ أَجَلٍ قَرِيبٍ نُّجِبْ دَعْوَتَكَ وَنَتَّبِعِ ٱلرُّسُلَ أَوَلَمْ تَكُونُوٓا۟ أَقْسَمْتُم مِّن قَبْلُ مَا لَكُم مِّن زَوَالٍ"
+  },
+  {
+   "word_ref": "17:52:3:2",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "17:52",
+     "verse_text": "يَوْمَ يَدْعُوكُمْ فَتَسْتَجِيبُونَ بِحَمْدِهِۦ وَتَظُنُّونَ إِن لَّبِثْتُمْ إِلَّا قَلِيلًا"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "17:52",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tasotajiybu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَوْمَ يَدْعُوكُمْ فَتَسْتَجِيبُونَ بِحَمْدِهِۦ وَتَظُنُّونَ إِن لَّبِثْتُمْ إِلَّا قَلِيلًا"
+  },
+  {
+   "word_ref": "18:52:9:1",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "18:52",
+     "verse_text": "وَيَوْمَ يَقُولُ نَادُوا۟ شُرَكَآءِىَ ٱلَّذِينَ زَعَمْتُمْ فَدَعَوْهُمْ فَلَمْ يَسْتَجِيبُوا۟ لَهُمْ وَجَعَلْنَا بَيْنَهُم مَّوْبِقًا"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "18:52",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasotajiybu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَيَوْمَ يَقُولُ نَادُوا۟ شُرَكَآءِىَ ٱلَّذِينَ زَعَمْتُمْ فَدَعَوْهُمْ فَلَمْ يَسْتَجِيبُوا۟ لَهُمْ وَجَعَلْنَا بَيْنَهُم مَّوْبِقًا"
+  },
+  {
+   "word_ref": "21:76:6:2",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "21:76",
+     "verse_text": "وَنُوحًا إِذْ نَادَىٰ مِن قَبْلُ فَٱسْتَجَبْنَا لَهُۥ فَنَجَّيْنَٰهُ وَأَهْلَهُۥ مِنَ ٱلْكَرْبِ ٱلْعَظِيمِ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "21:76",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{sotajabo",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَنُوحًا إِذْ نَادَىٰ مِن قَبْلُ فَٱسْتَجَبْنَا لَهُۥ فَنَجَّيْنَٰهُ وَأَهْلَهُۥ مِنَ ٱلْكَرْبِ ٱلْعَظِيمِ"
+  },
+  {
+   "word_ref": "21:84:1:2",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "21:84",
+     "verse_text": "فَٱسْتَجَبْنَا لَهُۥ فَكَشَفْنَا مَا بِهِۦ مِن ضُرٍّ وَءَاتَيْنَٰهُ أَهْلَهُۥ وَمِثْلَهُم مَّعَهُمْ رَحْمَةً مِّنْ عِندِنَا وَذِكْرَىٰ لِلْعَٰبِدِينَ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "21:84",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{sotajabo",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَٱسْتَجَبْنَا لَهُۥ فَكَشَفْنَا مَا بِهِۦ مِن ضُرٍّ وَءَاتَيْنَٰهُ أَهْلَهُۥ وَمِثْلَهُم مَّعَهُمْ رَحْمَةً مِّنْ عِندِنَا وَذِكْرَىٰ لِلْعَٰبِدِينَ"
+  },
+  {
+   "word_ref": "21:88:1:2",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "21:88",
+     "verse_text": "فَٱسْتَجَبْنَا لَهُۥ وَنَجَّيْنَٰهُ مِنَ ٱلْغَمِّ وَكَذَٰلِكَ نُـۨجِى ٱلْمُؤْمِنِينَ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "21:88",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{sotajabo",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَٱسْتَجَبْنَا لَهُۥ وَنَجَّيْنَٰهُ مِنَ ٱلْغَمِّ وَكَذَٰلِكَ نُـۨجِى ٱلْمُؤْمِنِينَ"
+  },
+  {
+   "word_ref": "21:90:1:2",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "21:90",
+     "verse_text": "فَٱسْتَجَبْنَا لَهُۥ وَوَهَبْنَا لَهُۥ يَحْيَىٰ وَأَصْلَحْنَا لَهُۥ زَوْجَهُۥٓ إِنَّهُمْ كَانُوا۟ يُسَٰرِعُونَ فِى ٱلْخَيْرَٰتِ وَيَدْعُونَنَا رَغَبًا وَرَهَبًا وَكَانُوا۟ لَنَا خَٰشِعِينَ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "21:90",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{sotajabo",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَٱسْتَجَبْنَا لَهُۥ وَوَهَبْنَا لَهُۥ يَحْيَىٰ وَأَصْلَحْنَا لَهُۥ زَوْجَهُۥٓ إِنَّهُمْ كَانُوا۟ يُسَٰرِعُونَ فِى ٱلْخَيْرَٰتِ وَيَدْعُونَنَا رَغَبًا وَرَهَبًا وَكَانُوا۟ لَنَا خَٰشِعِينَ"
+  },
+  {
+   "word_ref": "27:56:3:1",
+   "disposition": "CONSISTENT",
+   "note": "Each jawab noun names the response given by a people.",
+   "coverage_cluster_id": "answer_nouns",
+   "candidate_semantic_interpretation": "an answer supplied to a prior address",
+   "cluster_supporting_evidence": "All four jawab contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "27:56",
+     "verse_text": "فَمَا كَانَ جَوَابَ قَوْمِهِۦٓ إِلَّآ أَن قَالُوٓا۟ أَخْرِجُوٓا۟ ءَالَ لُوطٍ مِّن قَرْيَتِكُمْ إِنَّهُمْ أُنَاسٌ يَتَطَهَّرُونَ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "27:56",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "jawaAba",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَمَا كَانَ جَوَابَ قَوْمِهِۦٓ إِلَّآ أَن قَالُوٓا۟ أَخْرِجُوٓا۟ ءَالَ لُوطٍ مِّن قَرْيَتِكُمْ إِنَّهُمْ أُنَاسٌ يَتَطَهَّرُونَ"
+  },
+  {
+   "word_ref": "27:62:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "27:62",
+     "verse_text": "أَمَّن يُجِيبُ ٱلْمُضْطَرَّ إِذَا دَعَاهُ وَيَكْشِفُ ٱلسُّوٓءَ وَيَجْعَلُكُمْ خُلَفَآءَ ٱلْأَرْضِ أَءِلَٰهٌ مَّعَ ٱللَّهِ قَلِيلًا مَّا تَذَكَّرُونَ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "27:62",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yujiybu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَمَّن يُجِيبُ ٱلْمُضْطَرَّ إِذَا دَعَاهُ وَيَكْشِفُ ٱلسُّوٓءَ وَيَجْعَلُكُمْ خُلَفَآءَ ٱلْأَرْضِ أَءِلَٰهٌ مَّعَ ٱللَّهِ قَلِيلًا مَّا تَذَكَّرُونَ"
+  },
+  {
+   "word_ref": "28:50:3:1",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "28:50",
+     "verse_text": "فَإِن لَّمْ يَسْتَجِيبُوا۟ لَكَ فَٱعْلَمْ أَنَّمَا يَتَّبِعُونَ أَهْوَآءَهُمْ وَمَنْ أَضَلُّ مِمَّنِ ٱتَّبَعَ هَوَىٰهُ بِغَيْرِ هُدًى مِّنَ ٱللَّهِ إِنَّ ٱللَّهَ لَا يَهْدِى ٱلْقَوْمَ ٱلظَّٰلِمِينَ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "28:50",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasotajiybu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَإِن لَّمْ يَسْتَجِيبُوا۟ لَكَ فَٱعْلَمْ أَنَّمَا يَتَّبِعُونَ أَهْوَآءَهُمْ وَمَنْ أَضَلُّ مِمَّنِ ٱتَّبَعَ هَوَىٰهُ بِغَيْرِ هُدًى مِّنَ ٱللَّهِ إِنَّ ٱللَّهَ لَا يَهْدِى ٱلْقَوْمَ ٱلظَّٰلِمِينَ"
+  },
+  {
+   "word_ref": "28:64:6:1",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "28:64",
+     "verse_text": "وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ فَدَعَوْهُمْ فَلَمْ يَسْتَجِيبُوا۟ لَهُمْ وَرَأَوُا۟ ٱلْعَذَابَ لَوْ أَنَّهُمْ كَانُوا۟ يَهْتَدُونَ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "28:64",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasotajiybu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَقِيلَ ٱدْعُوا۟ شُرَكَآءَكُمْ فَدَعَوْهُمْ فَلَمْ يَسْتَجِيبُوا۟ لَهُمْ وَرَأَوُا۟ ٱلْعَذَابَ لَوْ أَنَّهُمْ كَانُوا۟ يَهْتَدُونَ"
+  },
+  {
+   "word_ref": "28:65:5:1",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "28:65",
+     "verse_text": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ مَاذَآ أَجَبْتُمُ ٱلْمُرْسَلِينَ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "28:65",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">ajabo",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَيَوْمَ يُنَادِيهِمْ فَيَقُولُ مَاذَآ أَجَبْتُمُ ٱلْمُرْسَلِينَ"
+  },
+  {
+   "word_ref": "29:24:3:1",
+   "disposition": "CONSISTENT",
+   "note": "Each jawab noun names the response given by a people.",
+   "coverage_cluster_id": "answer_nouns",
+   "candidate_semantic_interpretation": "an answer supplied to a prior address",
+   "cluster_supporting_evidence": "All four jawab contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "29:24",
+     "verse_text": "فَمَا كَانَ جَوَابَ قَوْمِهِۦٓ إِلَّآ أَن قَالُوا۟ ٱقْتُلُوهُ أَوْ حَرِّقُوهُ فَأَنجَىٰهُ ٱللَّهُ مِنَ ٱلنَّارِ إِنَّ فِى ذَٰلِكَ لَـَٔايَٰتٍ لِّقَوْمٍ يُؤْمِنُونَ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "29:24",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "jawaAba",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَمَا كَانَ جَوَابَ قَوْمِهِۦٓ إِلَّآ أَن قَالُوا۟ ٱقْتُلُوهُ أَوْ حَرِّقُوهُ فَأَنجَىٰهُ ٱللَّهُ مِنَ ٱلنَّارِ إِنَّ فِى ذَٰلِكَ لَـَٔايَٰتٍ لِّقَوْمٍ يُؤْمِنُونَ"
+  },
+  {
+   "word_ref": "29:29:12:1",
+   "disposition": "CONSISTENT",
+   "note": "Each jawab noun names the response given by a people.",
+   "coverage_cluster_id": "answer_nouns",
+   "candidate_semantic_interpretation": "an answer supplied to a prior address",
+   "cluster_supporting_evidence": "All four jawab contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "29:29",
+     "verse_text": "أَئِنَّكُمْ لَتَأْتُونَ ٱلرِّجَالَ وَتَقْطَعُونَ ٱلسَّبِيلَ وَتَأْتُونَ فِى نَادِيكُمُ ٱلْمُنكَرَ فَمَا كَانَ جَوَابَ قَوْمِهِۦٓ إِلَّآ أَن قَالُوا۟ ٱئْتِنَا بِعَذَابِ ٱللَّهِ إِن كُنتَ مِنَ ٱلصَّٰدِقِينَ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "29:29",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "jawaAba",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَئِنَّكُمْ لَتَأْتُونَ ٱلرِّجَالَ وَتَقْطَعُونَ ٱلسَّبِيلَ وَتَأْتُونَ فِى نَادِيكُمُ ٱلْمُنكَرَ فَمَا كَانَ جَوَابَ قَوْمِهِۦٓ إِلَّآ أَن قَالُوا۟ ٱئْتِنَا بِعَذَابِ ٱللَّهِ إِن كُنتَ مِنَ ٱلصَّٰدِقِينَ"
+  },
+  {
+   "word_ref": "2:186:12:3",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:186",
+     "verse_text": "وَإِذَا سَأَلَكَ عِبَادِى عَنِّى فَإِنِّى قَرِيبٌ أُجِيبُ دَعْوَةَ ٱلدَّاعِ إِذَا دَعَانِ فَلْيَسْتَجِيبُوا۟ لِى وَلْيُؤْمِنُوا۟ بِى لَعَلَّهُمْ يَرْشُدُونَ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "2:186",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasotajiybu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِذَا سَأَلَكَ عِبَادِى عَنِّى فَإِنِّى قَرِيبٌ أُجِيبُ دَعْوَةَ ٱلدَّاعِ إِذَا دَعَانِ فَلْيَسْتَجِيبُوا۟ لِى وَلْيُؤْمِنُوا۟ بِى لَعَلَّهُمْ يَرْشُدُونَ"
+  },
+  {
+   "word_ref": "2:186:7:1",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:186",
+     "verse_text": "وَإِذَا سَأَلَكَ عِبَادِى عَنِّى فَإِنِّى قَرِيبٌ أُجِيبُ دَعْوَةَ ٱلدَّاعِ إِذَا دَعَانِ فَلْيَسْتَجِيبُوا۟ لِى وَلْيُؤْمِنُوا۟ بِى لَعَلَّهُمْ يَرْشُدُونَ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "2:186",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">ujiybu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِذَا سَأَلَكَ عِبَادِى عَنِّى فَإِنِّى قَرِيبٌ أُجِيبُ دَعْوَةَ ٱلدَّاعِ إِذَا دَعَانِ فَلْيَسْتَجِيبُوا۟ لِى وَلْيُؤْمِنُوا۟ بِى لَعَلَّهُمْ يَرْشُدُونَ"
+  },
+  {
+   "word_ref": "35:14:9:1",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "35:14",
+     "verse_text": "إِن تَدْعُوهُمْ لَا يَسْمَعُوا۟ دُعَآءَكُمْ وَلَوْ سَمِعُوا۟ مَا ٱسْتَجَابُوا۟ لَكُمْ وَيَوْمَ ٱلْقِيَٰمَةِ يَكْفُرُونَ بِشِرْكِكُمْ وَلَا يُنَبِّئُكَ مِثْلُ خَبِيرٍ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "35:14",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{sotajaAbu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِن تَدْعُوهُمْ لَا يَسْمَعُوا۟ دُعَآءَكُمْ وَلَوْ سَمِعُوا۟ مَا ٱسْتَجَابُوا۟ لَكُمْ وَيَوْمَ ٱلْقِيَٰمَةِ يَكْفُرُونَ بِشِرْكِكُمْ وَلَا يُنَبِّئُكَ مِثْلُ خَبِيرٍ"
+  },
+  {
+   "word_ref": "37:75:5:2",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "37:75",
+     "verse_text": "وَلَقَدْ نَادَىٰنَا نُوحٌ فَلَنِعْمَ ٱلْمُجِيبُونَ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "37:75",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "mujiybuwna",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": "IV",
+   "morphology": "N(IV)",
+   "form": "N(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَقَدْ نَادَىٰنَا نُوحٌ فَلَنِعْمَ ٱلْمُجِيبُونَ"
+  },
+  {
+   "word_ref": "3:172:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:172",
+     "verse_text": "ٱلَّذِينَ ٱسْتَجَابُوا۟ لِلَّهِ وَٱلرَّسُولِ مِنۢ بَعْدِ مَآ أَصَابَهُمُ ٱلْقَرْحُ لِلَّذِينَ أَحْسَنُوا۟ مِنْهُمْ وَٱتَّقَوْا۟ أَجْرٌ عَظِيمٌ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "3:172",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{sotajaAbu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱلَّذِينَ ٱسْتَجَابُوا۟ لِلَّهِ وَٱلرَّسُولِ مِنۢ بَعْدِ مَآ أَصَابَهُمُ ٱلْقَرْحُ لِلَّذِينَ أَحْسَنُوا۟ مِنْهُمْ وَٱتَّقَوْا۟ أَجْرٌ عَظِيمٌ"
+  },
+  {
+   "word_ref": "3:195:1:2",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:195",
+     "verse_text": "فَٱسْتَجَابَ لَهُمْ رَبُّهُمْ أَنِّى لَآ أُضِيعُ عَمَلَ عَٰمِلٍ مِّنكُم مِّن ذَكَرٍ أَوْ أُنثَىٰ بَعْضُكُم مِّنۢ بَعْضٍ فَٱلَّذِينَ هَاجَرُوا۟ وَأُخْرِجُوا۟ مِن دِيَٰرِهِمْ وَأُوذُوا۟ فِى سَبِيلِى وَقَٰتَلُوا۟ وَقُتِلُوا۟ لَأُكَفِّرَنَّ عَنْهُمْ سَيِّـَٔاتِهِمْ وَلَأُدْخِلَنَّهُمْ جَنَّٰتٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ ثَوَابًا مِّنْ عِندِ ٱللَّهِ وَٱللَّهُ عِندَهُۥ حُسْنُ ٱلثَّوَابِ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "3:195",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{sotajaAba",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَٱسْتَجَابَ لَهُمْ رَبُّهُمْ أَنِّى لَآ أُضِيعُ عَمَلَ عَٰمِلٍ مِّنكُم مِّن ذَكَرٍ أَوْ أُنثَىٰ بَعْضُكُم مِّنۢ بَعْضٍ فَٱلَّذِينَ هَاجَرُوا۟ وَأُخْرِجُوا۟ مِن دِيَٰرِهِمْ وَأُوذُوا۟ فِى سَبِيلِى وَقَٰتَلُوا۟ وَقُتِلُوا۟ لَأُكَفِّرَنَّ عَنْهُمْ سَيِّـَٔاتِهِمْ وَلَأُدْخِلَنَّهُمْ جَنَّٰتٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ ثَوَابًا مِّنْ عِندِ ٱللَّهِ وَٱللَّهُ عِندَهُۥ حُسْنُ ٱلثَّوَابِ"
+  },
+  {
+   "word_ref": "40:60:4:1",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "40:60",
+     "verse_text": "وَقَالَ رَبُّكُمُ ٱدْعُونِىٓ أَسْتَجِبْ لَكُمْ إِنَّ ٱلَّذِينَ يَسْتَكْبِرُونَ عَنْ عِبَادَتِى سَيَدْخُلُونَ جَهَنَّمَ دَاخِرِينَ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "40:60",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">asotajibo",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَقَالَ رَبُّكُمُ ٱدْعُونِىٓ أَسْتَجِبْ لَكُمْ إِنَّ ٱلَّذِينَ يَسْتَكْبِرُونَ عَنْ عِبَادَتِى سَيَدْخُلُونَ جَهَنَّمَ دَاخِرِينَ"
+  },
+  {
+   "word_ref": "42:16:8:1",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "42:16",
+     "verse_text": "وَٱلَّذِينَ يُحَآجُّونَ فِى ٱللَّهِ مِنۢ بَعْدِ مَا ٱسْتُجِيبَ لَهُۥ حُجَّتُهُمْ دَاحِضَةٌ عِندَ رَبِّهِمْ وَعَلَيْهِمْ غَضَبٌ وَلَهُمْ عَذَابٌ شَدِيدٌ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "42:16",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{sotujiyba",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱلَّذِينَ يُحَآجُّونَ فِى ٱللَّهِ مِنۢ بَعْدِ مَا ٱسْتُجِيبَ لَهُۥ حُجَّتُهُمْ دَاحِضَةٌ عِندَ رَبِّهِمْ وَعَلَيْهِمْ غَضَبٌ وَلَهُمْ عَذَابٌ شَدِيدٌ"
+  },
+  {
+   "word_ref": "42:26:1:2",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "42:26",
+     "verse_text": "وَيَسْتَجِيبُ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ وَيَزِيدُهُم مِّن فَضْلِهِۦ وَٱلْكَٰفِرُونَ لَهُمْ عَذَابٌ شَدِيدٌ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "42:26",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasotajiybu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَيَسْتَجِيبُ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ وَيَزِيدُهُم مِّن فَضْلِهِۦ وَٱلْكَٰفِرُونَ لَهُمْ عَذَابٌ شَدِيدٌ"
+  },
+  {
+   "word_ref": "42:38:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "42:38",
+     "verse_text": "وَٱلَّذِينَ ٱسْتَجَابُوا۟ لِرَبِّهِمْ وَأَقَامُوا۟ ٱلصَّلَوٰةَ وَأَمْرُهُمْ شُورَىٰ بَيْنَهُمْ وَمِمَّا رَزَقْنَٰهُمْ يُنفِقُونَ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "42:38",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{sotajaAbu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱلَّذِينَ ٱسْتَجَابُوا۟ لِرَبِّهِمْ وَأَقَامُوا۟ ٱلصَّلَوٰةَ وَأَمْرُهُمْ شُورَىٰ بَيْنَهُمْ وَمِمَّا رَزَقْنَٰهُمْ يُنفِقُونَ"
+  },
+  {
+   "word_ref": "42:47:1:1",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "42:47",
+     "verse_text": "ٱسْتَجِيبُوا۟ لِرَبِّكُم مِّن قَبْلِ أَن يَأْتِىَ يَوْمٌ لَّا مَرَدَّ لَهُۥ مِنَ ٱللَّهِ مَا لَكُم مِّن مَّلْجَإٍ يَوْمَئِذٍ وَمَا لَكُم مِّن نَّكِيرٍ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "42:47",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{sotajiybu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱسْتَجِيبُوا۟ لِرَبِّكُم مِّن قَبْلِ أَن يَأْتِىَ يَوْمٌ لَّا مَرَدَّ لَهُۥ مِنَ ٱللَّهِ مَا لَكُم مِّن مَّلْجَإٍ يَوْمَئِذٍ وَمَا لَكُم مِّن نَّكِيرٍ"
+  },
+  {
+   "word_ref": "46:31:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "46:31",
+     "verse_text": "يَٰقَوْمَنَآ أَجِيبُوا۟ دَاعِىَ ٱللَّهِ وَءَامِنُوا۟ بِهِۦ يَغْفِرْ لَكُم مِّن ذُنُوبِكُمْ وَيُجِرْكُم مِّنْ عَذَابٍ أَلِيمٍ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "46:31",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">ajiybu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰقَوْمَنَآ أَجِيبُوا۟ دَاعِىَ ٱللَّهِ وَءَامِنُوا۟ بِهِۦ يَغْفِرْ لَكُم مِّن ذُنُوبِكُمْ وَيُجِرْكُم مِّنْ عَذَابٍ أَلِيمٍ"
+  },
+  {
+   "word_ref": "46:32:3:1",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "46:32",
+     "verse_text": "وَمَن لَّا يُجِبْ دَاعِىَ ٱللَّهِ فَلَيْسَ بِمُعْجِزٍ فِى ٱلْأَرْضِ وَلَيْسَ لَهُۥ مِن دُونِهِۦٓ أَوْلِيَآءُ أُو۟لَٰٓئِكَ فِى ضَلَٰلٍ مُّبِينٍ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "46:32",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yujibo",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَمَن لَّا يُجِبْ دَاعِىَ ٱللَّهِ فَلَيْسَ بِمُعْجِزٍ فِى ٱلْأَرْضِ وَلَيْسَ لَهُۥ مِن دُونِهِۦٓ أَوْلِيَآءُ أُو۟لَٰٓئِكَ فِى ضَلَٰلٍ مُّبِينٍ"
+  },
+  {
+   "word_ref": "46:5:10:1",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "46:5",
+     "verse_text": "وَمَنْ أَضَلُّ مِمَّن يَدْعُوا۟ مِن دُونِ ٱللَّهِ مَن لَّا يَسْتَجِيبُ لَهُۥٓ إِلَىٰ يَوْمِ ٱلْقِيَٰمَةِ وَهُمْ عَن دُعَآئِهِمْ غَٰفِلُونَ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "46:5",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasotajiybu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَمَنْ أَضَلُّ مِمَّن يَدْعُوا۟ مِن دُونِ ٱللَّهِ مَن لَّا يَسْتَجِيبُ لَهُۥٓ إِلَىٰ يَوْمِ ٱلْقِيَٰمَةِ وَهُمْ عَن دُعَآئِهِمْ غَٰفِلُونَ"
+  },
+  {
+   "word_ref": "5:109:7:1",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "5:109",
+     "verse_text": "يَوْمَ يَجْمَعُ ٱللَّهُ ٱلرُّسُلَ فَيَقُولُ مَاذَآ أُجِبْتُمْ قَالُوا۟ لَا عِلْمَ لَنَآ إِنَّكَ أَنتَ عَلَّٰمُ ٱلْغُيُوبِ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "5:109",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">ujibo",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَوْمَ يَجْمَعُ ٱللَّهُ ٱلرُّسُلَ فَيَقُولُ مَاذَآ أُجِبْتُمْ قَالُوا۟ لَا عِلْمَ لَنَآ إِنَّكَ أَنتَ عَلَّٰمُ ٱلْغُيُوبِ"
+  },
+  {
+   "word_ref": "6:36:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:36",
+     "verse_text": "إِنَّمَا يَسْتَجِيبُ ٱلَّذِينَ يَسْمَعُونَ وَٱلْمَوْتَىٰ يَبْعَثُهُمُ ٱللَّهُ ثُمَّ إِلَيْهِ يُرْجَعُونَ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "6:36",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasotajiybu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّمَا يَسْتَجِيبُ ٱلَّذِينَ يَسْمَعُونَ وَٱلْمَوْتَىٰ يَبْعَثُهُمُ ٱللَّهُ ثُمَّ إِلَيْهِ يُرْجَعُونَ"
+  },
+  {
+   "word_ref": "7:194:10:3",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:194",
+     "verse_text": "إِنَّ ٱلَّذِينَ تَدْعُونَ مِن دُونِ ٱللَّهِ عِبَادٌ أَمْثَالُكُمْ فَٱدْعُوهُمْ فَلْيَسْتَجِيبُوا۟ لَكُمْ إِن كُنتُمْ صَٰدِقِينَ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "7:194",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasotajiybu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱلَّذِينَ تَدْعُونَ مِن دُونِ ٱللَّهِ عِبَادٌ أَمْثَالُكُمْ فَٱدْعُوهُمْ فَلْيَسْتَجِيبُوا۟ لَكُمْ إِن كُنتُمْ صَٰدِقِينَ"
+  },
+  {
+   "word_ref": "7:82:3:1",
+   "disposition": "CONSISTENT",
+   "note": "Each jawab noun names the response given by a people.",
+   "coverage_cluster_id": "answer_nouns",
+   "candidate_semantic_interpretation": "an answer supplied to a prior address",
+   "cluster_supporting_evidence": "All four jawab contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:82",
+     "verse_text": "وَمَا كَانَ جَوَابَ قَوْمِهِۦٓ إِلَّآ أَن قَالُوٓا۟ أَخْرِجُوهُم مِّن قَرْيَتِكُمْ إِنَّهُمْ أُنَاسٌ يَتَطَهَّرُونَ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "7:82",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "jawaAba",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَمَا كَانَ جَوَابَ قَوْمِهِۦٓ إِلَّآ أَن قَالُوٓا۟ أَخْرِجُوهُم مِّن قَرْيَتِكُمْ إِنَّهُمْ أُنَاسٌ يَتَطَهَّرُونَ"
+  },
+  {
+   "word_ref": "89:9:3:1",
+   "disposition": "RESISTANT",
+   "note": "The sole base verb at 89:9 lacks an internally evidenced answering residue.",
+   "coverage_cluster_id": "rock_hewing",
+   "candidate_semantic_interpretation": "to hew or cut through rock",
+   "cluster_supporting_evidence": "89:9 was reviewed directly in its Thamud/rock context.",
+   "counterevidence": [
+    "No call, demand, reply, or answer appears in the occurrence."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "89:9",
+     "verse_text": "وَثَمُودَ ٱلَّذِينَ جَابُوا۟ ٱلصَّخْرَ بِٱلْوَادِ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "89:9",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "jaAbu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَثَمُودَ ٱلَّذِينَ جَابُوا۟ ٱلصَّخْرَ بِٱلْوَادِ"
+  },
+  {
+   "word_ref": "8:24:4:1",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "8:24",
+     "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱسْتَجِيبُوا۟ لِلَّهِ وَلِلرَّسُولِ إِذَا دَعَاكُمْ لِمَا يُحْيِيكُمْ وَٱعْلَمُوٓا۟ أَنَّ ٱللَّهَ يَحُولُ بَيْنَ ٱلْمَرْءِ وَقَلْبِهِۦ وَأَنَّهُۥٓ إِلَيْهِ تُحْشَرُونَ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "8:24",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{sotajiybu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱسْتَجِيبُوا۟ لِلَّهِ وَلِلرَّسُولِ إِذَا دَعَاكُمْ لِمَا يُحْيِيكُمْ وَٱعْلَمُوٓا۟ أَنَّ ٱللَّهَ يَحُولُ بَيْنَ ٱلْمَرْءِ وَقَلْبِهِۦ وَأَنَّهُۥٓ إِلَيْهِ تُحْشَرُونَ"
+  },
+  {
+   "word_ref": "8:9:4:2",
+   "disposition": "CONSISTENT",
+   "note": "All derived-form contexts contain an address/demand and its response or non-response.",
+   "coverage_cluster_id": "derived_response",
+   "candidate_semantic_interpretation": "responding to a call, demand, or prayer",
+   "cluster_supporting_evidence": "All 38 Form IV/X contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "8:9",
+     "verse_text": "إِذْ تَسْتَغِيثُونَ رَبَّكُمْ فَٱسْتَجَابَ لَكُمْ أَنِّى مُمِدُّكُم بِأَلْفٍ مِّنَ ٱلْمَلَٰٓئِكَةِ مُرْدِفِينَ"
+    }
+   ],
+   "root_arabic": "ج و ب",
+   "root_buckwalter": "jwb",
+   "root_id": "jwb",
+   "artifact_name": "jwb.json",
+   "verse_ref": "8:9",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{sotajaAba",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِذْ تَسْتَغِيثُونَ رَبَّكُمْ فَٱسْتَجَابَ لَكُمْ أَنِّى مُمِدُّكُم بِأَلْفٍ مِّنَ ٱلْمَلَٰٓئِكَةِ مُرْدِفِينَ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "WEAK",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PARTIAL",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "89:9:3:1"
+ ],
+ "unreconciled_count": 1,
+ "resistant_occurrences": [
+  "89:9:3:1"
+ ],
+ "structural_uncertainty_occurrences": []
+}

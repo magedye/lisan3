@@ -1,0 +1,1898 @@
+{
+ "root_arabic": "ي س ر",
+ "root_buckwalter": "ysr",
+ "root_id": "ysr",
+ "artifact_name": "ysr.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch06-wave1-coverage",
+ "occurrences": 44,
+ "frozen_candidate_root_contribution": "low obstruction or ready attainability, yielding ease, facilitation, or what is readily available",
+ "internal_discovery": {
+  "candidate_root_contribution": "low obstruction or ready attainability, yielding ease, facilitation, or what is readily available",
+  "plain_explanation": "Forty-one of 44 occurrences directly instantiate ease, small burden, facilitation, or ready availability across nouns, adjectives, and Forms II/V/X. The three maysir gambling occurrences form a stable lexical family, but the Quran does not internally establish their link to low obstruction.",
+  "layer_separation_note": "Form II causes ease, Form V presents becoming available, and Form X what can be readily obtained. The gambling noun is not assigned an external derivation.",
+  "presence": {
+   "occurrences_total": 44,
+   "occurrences_checked": 44,
+   "occurrences_consistent": 41,
+   "inconsistent_refs": [
+    "2:219:4:3",
+    "5:90:6:3",
+    "5:91:11:3"
+   ]
+  },
+  "strongest_counterexample": "The maysir tokens in 2:219, 5:90, and 5:91 denote gambling and do not state that ease or ready acquisition is their root contribution.",
+  "competing_hypothesis": "Maysir encodes easy gain; this may bridge the family but depends on lexical knowledge not demonstrated by the Quranic contexts themselves.",
+  "distinctiveness_note": "Distinct from lightness of weight and from mere possibility; ysr profiles reduced difficulty or ready attainability. This distinction is not proven for maysir.",
+  "unresolved_cases": [
+   "2:219:4:3",
+   "5:90:6:3",
+   "5:91:11:3"
+  ],
+  "result": "PREFERRED",
+  "result_strength": "WEAK",
+  "rationale": "Exact coverage is complete, but three unreconciled gambling occurrences block universal presence.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "ease_nominals",
+     "where": {
+      "qac_pos": [
+       "N"
+      ],
+      "qac_surface_regex": "^(?!mayosir[ui]$)"
+     },
+     "occurrence_count_expected": 16,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "ease or readily available provision",
+     "classification_rationale": "These nominal contexts directly profile ease, accessible speech, or ready provision.",
+     "supporting_evidence_note": "All 16 non-gambling noun contexts were reviewed.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "maysir_gambling",
+     "where": {
+      "qac_pos": [
+       "N"
+      ],
+      "qac_surface_regex": "^mayosir[ui]$"
+     },
+     "occurrence_count_expected": 3,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "gambling, with an unproven proposed bridge to easy acquisition",
+     "classification_rationale": "The three verses identify and evaluate gambling but do not expose ease as its internal semantic residue.",
+     "supporting_evidence_note": "2:219, 5:90, and 5:91 were reviewed directly.",
+     "counterevidence": [
+      "The proposed easy-gain bridge is not stated within these contexts."
+     ]
+    },
+    {
+     "cluster_id": "easy_adjectives",
+     "where": {
+      "qac_pos": [
+       "ADJ"
+      ]
+     },
+     "occurrence_count_expected": 10,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "easy or low-burden",
+     "classification_rationale": "All adjective contexts directly contrast or assert ease.",
+     "supporting_evidence_note": "All ten adjective contexts were reviewed.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "form_ii_facilitation",
+     "where": {
+      "qac_verb_form": [
+       "II"
+      ]
+     },
+     "occurrence_count_expected": 11,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "to facilitate or render accessible",
+     "classification_rationale": "Form II contexts explicitly make a matter or recitation easy.",
+     "supporting_evidence_note": "All 11 Form II contexts were reviewed.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "form_v_availability",
+     "where": {
+      "qac_verb_form": [
+       "V"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "what becomes readily available",
+     "classification_rationale": "Both 73:20 occurrences describe whatever recitation is readily manageable.",
+     "supporting_evidence_note": "Both Form V tokens in 73:20 were reviewed.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "form_x_obtainability",
+     "where": {
+      "qac_verb_form": [
+       "X"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "what can be readily obtained",
+     "classification_rationale": "Both 2:196 occurrences concern what sacrificial offering is readily obtainable.",
+     "supporting_evidence_note": "Both Form X tokens in 2:196 were reviewed.",
+     "counterevidence": []
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "ysr",
+  "verdict": "PARTIALLY_SUPPORTED",
+  "failing_occurrences": [
+   "2:219:4:3",
+   "5:90:6:3",
+   "5:91:11:3"
+  ],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "The ease nucleus covers 41/44; maysir remains visible and unreconciled."
+ },
+ "coverage_validation": {
+  "root": "ysr",
+  "expected_count": 44,
+  "researched_count": 44,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "12:65:25:1",
+   "disposition": "CONSISTENT",
+   "note": "All adjective contexts directly contrast or assert ease.",
+   "coverage_cluster_id": "easy_adjectives",
+   "candidate_semantic_interpretation": "easy or low-burden",
+   "cluster_supporting_evidence": "All ten adjective contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "12:65",
+     "verse_text": "وَلَمَّا فَتَحُوا۟ مَتَٰعَهُمْ وَجَدُوا۟ بِضَٰعَتَهُمْ رُدَّتْ إِلَيْهِمْ قَالُوا۟ يَٰٓأَبَانَا مَا نَبْغِى هَٰذِهِۦ بِضَٰعَتُنَا رُدَّتْ إِلَيْنَا وَنَمِيرُ أَهْلَنَا وَنَحْفَظُ أَخَانَا وَنَزْدَادُ كَيْلَ بَعِيرٍ ذَٰلِكَ كَيْلٌ يَسِيرٌ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "12:65",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasiyrN",
+   "qac_tag": "ADJ",
+   "qac_pos": "ADJ",
+   "qac_verb_form": null,
+   "morphology": "ADJ",
+   "form": "ADJ",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَمَّا فَتَحُوا۟ مَتَٰعَهُمْ وَجَدُوا۟ بِضَٰعَتَهُمْ رُدَّتْ إِلَيْهِمْ قَالُوا۟ يَٰٓأَبَانَا مَا نَبْغِى هَٰذِهِۦ بِضَٰعَتُنَا رُدَّتْ إِلَيْنَا وَنَمِيرُ أَهْلَنَا وَنَحْفَظُ أَخَانَا وَنَزْدَادُ كَيْلَ بَعِيرٍ ذَٰلِكَ كَيْلٌ يَسِيرٌ"
+  },
+  {
+   "word_ref": "17:28:12:1",
+   "disposition": "CONSISTENT",
+   "note": "These nominal contexts directly profile ease, accessible speech, or ready provision.",
+   "coverage_cluster_id": "ease_nominals",
+   "candidate_semantic_interpretation": "ease or readily available provision",
+   "cluster_supporting_evidence": "All 16 non-gambling noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "17:28",
+     "verse_text": "وَإِمَّا تُعْرِضَنَّ عَنْهُمُ ٱبْتِغَآءَ رَحْمَةٍ مِّن رَّبِّكَ تَرْجُوهَا فَقُل لَّهُمْ قَوْلًا مَّيْسُورًا"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "17:28",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "m~ayosuwrFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِمَّا تُعْرِضَنَّ عَنْهُمُ ٱبْتِغَآءَ رَحْمَةٍ مِّن رَّبِّكَ تَرْجُوهَا فَقُل لَّهُمْ قَوْلًا مَّيْسُورًا"
+  },
+  {
+   "word_ref": "18:88:13:1",
+   "disposition": "CONSISTENT",
+   "note": "These nominal contexts directly profile ease, accessible speech, or ready provision.",
+   "coverage_cluster_id": "ease_nominals",
+   "candidate_semantic_interpretation": "ease or readily available provision",
+   "cluster_supporting_evidence": "All 16 non-gambling noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "18:88",
+     "verse_text": "وَأَمَّا مَنْ ءَامَنَ وَعَمِلَ صَٰلِحًا فَلَهُۥ جَزَآءً ٱلْحُسْنَىٰ وَسَنَقُولُ لَهُۥ مِنْ أَمْرِنَا يُسْرًا"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "18:88",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yusorFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَأَمَّا مَنْ ءَامَنَ وَعَمِلَ صَٰلِحًا فَلَهُۥ جَزَآءً ٱلْحُسْنَىٰ وَسَنَقُولُ لَهُۥ مِنْ أَمْرِنَا يُسْرًا"
+  },
+  {
+   "word_ref": "19:97:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Form II contexts explicitly make a matter or recitation easy.",
+   "coverage_cluster_id": "form_ii_facilitation",
+   "candidate_semantic_interpretation": "to facilitate or render accessible",
+   "cluster_supporting_evidence": "All 11 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "19:97",
+     "verse_text": "فَإِنَّمَا يَسَّرْنَٰهُ بِلِسَانِكَ لِتُبَشِّرَ بِهِ ٱلْمُتَّقِينَ وَتُنذِرَ بِهِۦ قَوْمًا لُّدًّا"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "19:97",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yas~aro",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَإِنَّمَا يَسَّرْنَٰهُ بِلِسَانِكَ لِتُبَشِّرَ بِهِ ٱلْمُتَّقِينَ وَتُنذِرَ بِهِۦ قَوْمًا لُّدًّا"
+  },
+  {
+   "word_ref": "20:26:1:2",
+   "disposition": "CONSISTENT",
+   "note": "Form II contexts explicitly make a matter or recitation easy.",
+   "coverage_cluster_id": "form_ii_facilitation",
+   "candidate_semantic_interpretation": "to facilitate or render accessible",
+   "cluster_supporting_evidence": "All 11 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "20:26",
+     "verse_text": "وَيَسِّرْ لِىٓ أَمْرِى"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "20:26",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yas~iro",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَيَسِّرْ لِىٓ أَمْرِى"
+  },
+  {
+   "word_ref": "22:70:18:1",
+   "disposition": "CONSISTENT",
+   "note": "All adjective contexts directly contrast or assert ease.",
+   "coverage_cluster_id": "easy_adjectives",
+   "candidate_semantic_interpretation": "easy or low-burden",
+   "cluster_supporting_evidence": "All ten adjective contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "22:70",
+     "verse_text": "أَلَمْ تَعْلَمْ أَنَّ ٱللَّهَ يَعْلَمُ مَا فِى ٱلسَّمَآءِ وَٱلْأَرْضِ إِنَّ ذَٰلِكَ فِى كِتَٰبٍ إِنَّ ذَٰلِكَ عَلَى ٱللَّهِ يَسِيرٌ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "22:70",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasiyrN",
+   "qac_tag": "ADJ",
+   "qac_pos": "ADJ",
+   "qac_verb_form": null,
+   "morphology": "ADJ",
+   "form": "ADJ",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَلَمْ تَعْلَمْ أَنَّ ٱللَّهَ يَعْلَمُ مَا فِى ٱلسَّمَآءِ وَٱلْأَرْضِ إِنَّ ذَٰلِكَ فِى كِتَٰبٍ إِنَّ ذَٰلِكَ عَلَى ٱللَّهِ يَسِيرٌ"
+  },
+  {
+   "word_ref": "25:46:5:1",
+   "disposition": "CONSISTENT",
+   "note": "All adjective contexts directly contrast or assert ease.",
+   "coverage_cluster_id": "easy_adjectives",
+   "candidate_semantic_interpretation": "easy or low-burden",
+   "cluster_supporting_evidence": "All ten adjective contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "25:46",
+     "verse_text": "ثُمَّ قَبَضْنَٰهُ إِلَيْنَا قَبْضًا يَسِيرًا"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "25:46",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasiyrFA",
+   "qac_tag": "ADJ",
+   "qac_pos": "ADJ",
+   "qac_verb_form": null,
+   "morphology": "ADJ",
+   "form": "ADJ",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ثُمَّ قَبَضْنَٰهُ إِلَيْنَا قَبْضًا يَسِيرًا"
+  },
+  {
+   "word_ref": "29:19:13:1",
+   "disposition": "CONSISTENT",
+   "note": "All adjective contexts directly contrast or assert ease.",
+   "coverage_cluster_id": "easy_adjectives",
+   "candidate_semantic_interpretation": "easy or low-burden",
+   "cluster_supporting_evidence": "All ten adjective contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "29:19",
+     "verse_text": "أَوَلَمْ يَرَوْا۟ كَيْفَ يُبْدِئُ ٱللَّهُ ٱلْخَلْقَ ثُمَّ يُعِيدُهُۥٓ إِنَّ ذَٰلِكَ عَلَى ٱللَّهِ يَسِيرٌ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "29:19",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasiyrN",
+   "qac_tag": "ADJ",
+   "qac_pos": "ADJ",
+   "qac_verb_form": null,
+   "morphology": "ADJ",
+   "form": "ADJ",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَوَلَمْ يَرَوْا۟ كَيْفَ يُبْدِئُ ٱللَّهُ ٱلْخَلْقَ ثُمَّ يُعِيدُهُۥٓ إِنَّ ذَٰلِكَ عَلَى ٱللَّهِ يَسِيرٌ"
+  },
+  {
+   "word_ref": "2:185:31:2",
+   "disposition": "CONSISTENT",
+   "note": "These nominal contexts directly profile ease, accessible speech, or ready provision.",
+   "coverage_cluster_id": "ease_nominals",
+   "candidate_semantic_interpretation": "ease or readily available provision",
+   "cluster_supporting_evidence": "All 16 non-gambling noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:185",
+     "verse_text": "شَهْرُ رَمَضَانَ ٱلَّذِىٓ أُنزِلَ فِيهِ ٱلْقُرْءَانُ هُدًى لِّلنَّاسِ وَبَيِّنَٰتٍ مِّنَ ٱلْهُدَىٰ وَٱلْفُرْقَانِ فَمَن شَهِدَ مِنكُمُ ٱلشَّهْرَ فَلْيَصُمْهُ وَمَن كَانَ مَرِيضًا أَوْ عَلَىٰ سَفَرٍ فَعِدَّةٌ مِّنْ أَيَّامٍ أُخَرَ يُرِيدُ ٱللَّهُ بِكُمُ ٱلْيُسْرَ وَلَا يُرِيدُ بِكُمُ ٱلْعُسْرَ وَلِتُكْمِلُوا۟ ٱلْعِدَّةَ وَلِتُكَبِّرُوا۟ ٱللَّهَ عَلَىٰ مَا هَدَىٰكُمْ وَلَعَلَّكُمْ تَشْكُرُونَ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "2:185",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yusora",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "شَهْرُ رَمَضَانَ ٱلَّذِىٓ أُنزِلَ فِيهِ ٱلْقُرْءَانُ هُدًى لِّلنَّاسِ وَبَيِّنَٰتٍ مِّنَ ٱلْهُدَىٰ وَٱلْفُرْقَانِ فَمَن شَهِدَ مِنكُمُ ٱلشَّهْرَ فَلْيَصُمْهُ وَمَن كَانَ مَرِيضًا أَوْ عَلَىٰ سَفَرٍ فَعِدَّةٌ مِّنْ أَيَّامٍ أُخَرَ يُرِيدُ ٱللَّهُ بِكُمُ ٱلْيُسْرَ وَلَا يُرِيدُ بِكُمُ ٱلْعُسْرَ وَلِتُكْمِلُوا۟ ٱلْعِدَّةَ وَلِتُكَبِّرُوا۟ ٱللَّهَ عَلَىٰ مَا هَدَىٰكُمْ وَلَعَلَّكُمْ تَشْكُرُونَ"
+  },
+  {
+   "word_ref": "2:196:42:1",
+   "disposition": "CONSISTENT",
+   "note": "Both 2:196 occurrences concern what sacrificial offering is readily obtainable.",
+   "coverage_cluster_id": "form_x_obtainability",
+   "candidate_semantic_interpretation": "what can be readily obtained",
+   "cluster_supporting_evidence": "Both Form X tokens in 2:196 were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:196",
+     "verse_text": "وَأَتِمُّوا۟ ٱلْحَجَّ وَٱلْعُمْرَةَ لِلَّهِ فَإِنْ أُحْصِرْتُمْ فَمَا ٱسْتَيْسَرَ مِنَ ٱلْهَدْىِ وَلَا تَحْلِقُوا۟ رُءُوسَكُمْ حَتَّىٰ يَبْلُغَ ٱلْهَدْىُ مَحِلَّهُۥ فَمَن كَانَ مِنكُم مَّرِيضًا أَوْ بِهِۦٓ أَذًى مِّن رَّأْسِهِۦ فَفِدْيَةٌ مِّن صِيَامٍ أَوْ صَدَقَةٍ أَوْ نُسُكٍ فَإِذَآ أَمِنتُمْ فَمَن تَمَتَّعَ بِٱلْعُمْرَةِ إِلَى ٱلْحَجِّ فَمَا ٱسْتَيْسَرَ مِنَ ٱلْهَدْىِ فَمَن لَّمْ يَجِدْ فَصِيَامُ ثَلَٰثَةِ أَيَّامٍ فِى ٱلْحَجِّ وَسَبْعَةٍ إِذَا رَجَعْتُمْ تِلْكَ عَشَرَةٌ كَامِلَةٌ ذَٰلِكَ لِمَن لَّمْ يَكُنْ أَهْلُهُۥ حَاضِرِى ٱلْمَسْجِدِ ٱلْحَرَامِ وَٱتَّقُوا۟ ٱللَّهَ وَٱعْلَمُوٓا۟ أَنَّ ٱللَّهَ شَدِيدُ ٱلْعِقَابِ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "2:196",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{sotayosara",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَأَتِمُّوا۟ ٱلْحَجَّ وَٱلْعُمْرَةَ لِلَّهِ فَإِنْ أُحْصِرْتُمْ فَمَا ٱسْتَيْسَرَ مِنَ ٱلْهَدْىِ وَلَا تَحْلِقُوا۟ رُءُوسَكُمْ حَتَّىٰ يَبْلُغَ ٱلْهَدْىُ مَحِلَّهُۥ فَمَن كَانَ مِنكُم مَّرِيضًا أَوْ بِهِۦٓ أَذًى مِّن رَّأْسِهِۦ فَفِدْيَةٌ مِّن صِيَامٍ أَوْ صَدَقَةٍ أَوْ نُسُكٍ فَإِذَآ أَمِنتُمْ فَمَن تَمَتَّعَ بِٱلْعُمْرَةِ إِلَى ٱلْحَجِّ فَمَا ٱسْتَيْسَرَ مِنَ ٱلْهَدْىِ فَمَن لَّمْ يَجِدْ فَصِيَامُ ثَلَٰثَةِ أَيَّامٍ فِى ٱلْحَجِّ وَسَبْعَةٍ إِذَا رَجَعْتُمْ تِلْكَ عَشَرَةٌ كَامِلَةٌ ذَٰلِكَ لِمَن لَّمْ يَكُنْ أَهْلُهُۥ حَاضِرِى ٱلْمَسْجِدِ ٱلْحَرَامِ وَٱتَّقُوا۟ ٱللَّهَ وَٱعْلَمُوٓا۟ أَنَّ ٱللَّهَ شَدِيدُ ٱلْعِقَابِ"
+  },
+  {
+   "word_ref": "2:196:8:1",
+   "disposition": "CONSISTENT",
+   "note": "Both 2:196 occurrences concern what sacrificial offering is readily obtainable.",
+   "coverage_cluster_id": "form_x_obtainability",
+   "candidate_semantic_interpretation": "what can be readily obtained",
+   "cluster_supporting_evidence": "Both Form X tokens in 2:196 were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:196",
+     "verse_text": "وَأَتِمُّوا۟ ٱلْحَجَّ وَٱلْعُمْرَةَ لِلَّهِ فَإِنْ أُحْصِرْتُمْ فَمَا ٱسْتَيْسَرَ مِنَ ٱلْهَدْىِ وَلَا تَحْلِقُوا۟ رُءُوسَكُمْ حَتَّىٰ يَبْلُغَ ٱلْهَدْىُ مَحِلَّهُۥ فَمَن كَانَ مِنكُم مَّرِيضًا أَوْ بِهِۦٓ أَذًى مِّن رَّأْسِهِۦ فَفِدْيَةٌ مِّن صِيَامٍ أَوْ صَدَقَةٍ أَوْ نُسُكٍ فَإِذَآ أَمِنتُمْ فَمَن تَمَتَّعَ بِٱلْعُمْرَةِ إِلَى ٱلْحَجِّ فَمَا ٱسْتَيْسَرَ مِنَ ٱلْهَدْىِ فَمَن لَّمْ يَجِدْ فَصِيَامُ ثَلَٰثَةِ أَيَّامٍ فِى ٱلْحَجِّ وَسَبْعَةٍ إِذَا رَجَعْتُمْ تِلْكَ عَشَرَةٌ كَامِلَةٌ ذَٰلِكَ لِمَن لَّمْ يَكُنْ أَهْلُهُۥ حَاضِرِى ٱلْمَسْجِدِ ٱلْحَرَامِ وَٱتَّقُوا۟ ٱللَّهَ وَٱعْلَمُوٓا۟ أَنَّ ٱللَّهَ شَدِيدُ ٱلْعِقَابِ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "2:196",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{sotayosara",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَأَتِمُّوا۟ ٱلْحَجَّ وَٱلْعُمْرَةَ لِلَّهِ فَإِنْ أُحْصِرْتُمْ فَمَا ٱسْتَيْسَرَ مِنَ ٱلْهَدْىِ وَلَا تَحْلِقُوا۟ رُءُوسَكُمْ حَتَّىٰ يَبْلُغَ ٱلْهَدْىُ مَحِلَّهُۥ فَمَن كَانَ مِنكُم مَّرِيضًا أَوْ بِهِۦٓ أَذًى مِّن رَّأْسِهِۦ فَفِدْيَةٌ مِّن صِيَامٍ أَوْ صَدَقَةٍ أَوْ نُسُكٍ فَإِذَآ أَمِنتُمْ فَمَن تَمَتَّعَ بِٱلْعُمْرَةِ إِلَى ٱلْحَجِّ فَمَا ٱسْتَيْسَرَ مِنَ ٱلْهَدْىِ فَمَن لَّمْ يَجِدْ فَصِيَامُ ثَلَٰثَةِ أَيَّامٍ فِى ٱلْحَجِّ وَسَبْعَةٍ إِذَا رَجَعْتُمْ تِلْكَ عَشَرَةٌ كَامِلَةٌ ذَٰلِكَ لِمَن لَّمْ يَكُنْ أَهْلُهُۥ حَاضِرِى ٱلْمَسْجِدِ ٱلْحَرَامِ وَٱتَّقُوا۟ ٱللَّهَ وَٱعْلَمُوٓا۟ أَنَّ ٱللَّهَ شَدِيدُ ٱلْعِقَابِ"
+  },
+  {
+   "word_ref": "2:219:4:3",
+   "disposition": "RESISTANT",
+   "note": "The three verses identify and evaluate gambling but do not expose ease as its internal semantic residue.",
+   "coverage_cluster_id": "maysir_gambling",
+   "candidate_semantic_interpretation": "gambling, with an unproven proposed bridge to easy acquisition",
+   "cluster_supporting_evidence": "2:219, 5:90, and 5:91 were reviewed directly.",
+   "counterevidence": [
+    "The proposed easy-gain bridge is not stated within these contexts."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:219",
+     "verse_text": "يَسْـَٔلُونَكَ عَنِ ٱلْخَمْرِ وَٱلْمَيْسِرِ قُلْ فِيهِمَآ إِثْمٌ كَبِيرٌ وَمَنَٰفِعُ لِلنَّاسِ وَإِثْمُهُمَآ أَكْبَرُ مِن نَّفْعِهِمَا وَيَسْـَٔلُونَكَ مَاذَا يُنفِقُونَ قُلِ ٱلْعَفْوَ كَذَٰلِكَ يُبَيِّنُ ٱللَّهُ لَكُمُ ٱلْـَٔايَٰتِ لَعَلَّكُمْ تَتَفَكَّرُونَ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "2:219",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "mayosiri",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَسْـَٔلُونَكَ عَنِ ٱلْخَمْرِ وَٱلْمَيْسِرِ قُلْ فِيهِمَآ إِثْمٌ كَبِيرٌ وَمَنَٰفِعُ لِلنَّاسِ وَإِثْمُهُمَآ أَكْبَرُ مِن نَّفْعِهِمَا وَيَسْـَٔلُونَكَ مَاذَا يُنفِقُونَ قُلِ ٱلْعَفْوَ كَذَٰلِكَ يُبَيِّنُ ٱللَّهُ لَكُمُ ٱلْـَٔايَٰتِ لَعَلَّكُمْ تَتَفَكَّرُونَ"
+  },
+  {
+   "word_ref": "2:280:7:1",
+   "disposition": "CONSISTENT",
+   "note": "These nominal contexts directly profile ease, accessible speech, or ready provision.",
+   "coverage_cluster_id": "ease_nominals",
+   "candidate_semantic_interpretation": "ease or readily available provision",
+   "cluster_supporting_evidence": "All 16 non-gambling noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:280",
+     "verse_text": "وَإِن كَانَ ذُو عُسْرَةٍ فَنَظِرَةٌ إِلَىٰ مَيْسَرَةٍ وَأَن تَصَدَّقُوا۟ خَيْرٌ لَّكُمْ إِن كُنتُمْ تَعْلَمُونَ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "2:280",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "mayosarapK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِن كَانَ ذُو عُسْرَةٍ فَنَظِرَةٌ إِلَىٰ مَيْسَرَةٍ وَأَن تَصَدَّقُوا۟ خَيْرٌ لَّكُمْ إِن كُنتُمْ تَعْلَمُونَ"
+  },
+  {
+   "word_ref": "33:14:14:1",
+   "disposition": "CONSISTENT",
+   "note": "These nominal contexts directly profile ease, accessible speech, or ready provision.",
+   "coverage_cluster_id": "ease_nominals",
+   "candidate_semantic_interpretation": "ease or readily available provision",
+   "cluster_supporting_evidence": "All 16 non-gambling noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "33:14",
+     "verse_text": "وَلَوْ دُخِلَتْ عَلَيْهِم مِّنْ أَقْطَارِهَا ثُمَّ سُئِلُوا۟ ٱلْفِتْنَةَ لَـَٔاتَوْهَا وَمَا تَلَبَّثُوا۟ بِهَآ إِلَّا يَسِيرًا"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "33:14",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasiyrFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَوْ دُخِلَتْ عَلَيْهِم مِّنْ أَقْطَارِهَا ثُمَّ سُئِلُوا۟ ٱلْفِتْنَةَ لَـَٔاتَوْهَا وَمَا تَلَبَّثُوا۟ بِهَآ إِلَّا يَسِيرًا"
+  },
+  {
+   "word_ref": "33:19:35:1",
+   "disposition": "CONSISTENT",
+   "note": "All adjective contexts directly contrast or assert ease.",
+   "coverage_cluster_id": "easy_adjectives",
+   "candidate_semantic_interpretation": "easy or low-burden",
+   "cluster_supporting_evidence": "All ten adjective contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "33:19",
+     "verse_text": "أَشِحَّةً عَلَيْكُمْ فَإِذَا جَآءَ ٱلْخَوْفُ رَأَيْتَهُمْ يَنظُرُونَ إِلَيْكَ تَدُورُ أَعْيُنُهُمْ كَٱلَّذِى يُغْشَىٰ عَلَيْهِ مِنَ ٱلْمَوْتِ فَإِذَا ذَهَبَ ٱلْخَوْفُ سَلَقُوكُم بِأَلْسِنَةٍ حِدَادٍ أَشِحَّةً عَلَى ٱلْخَيْرِ أُو۟لَٰٓئِكَ لَمْ يُؤْمِنُوا۟ فَأَحْبَطَ ٱللَّهُ أَعْمَٰلَهُمْ وَكَانَ ذَٰلِكَ عَلَى ٱللَّهِ يَسِيرًا"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "33:19",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasiyrFA",
+   "qac_tag": "ADJ",
+   "qac_pos": "ADJ",
+   "qac_verb_form": null,
+   "morphology": "ADJ",
+   "form": "ADJ",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَشِحَّةً عَلَيْكُمْ فَإِذَا جَآءَ ٱلْخَوْفُ رَأَيْتَهُمْ يَنظُرُونَ إِلَيْكَ تَدُورُ أَعْيُنُهُمْ كَٱلَّذِى يُغْشَىٰ عَلَيْهِ مِنَ ٱلْمَوْتِ فَإِذَا ذَهَبَ ٱلْخَوْفُ سَلَقُوكُم بِأَلْسِنَةٍ حِدَادٍ أَشِحَّةً عَلَى ٱلْخَيْرِ أُو۟لَٰٓئِكَ لَمْ يُؤْمِنُوا۟ فَأَحْبَطَ ٱللَّهُ أَعْمَٰلَهُمْ وَكَانَ ذَٰلِكَ عَلَى ٱللَّهِ يَسِيرًا"
+  },
+  {
+   "word_ref": "33:30:16:1",
+   "disposition": "CONSISTENT",
+   "note": "All adjective contexts directly contrast or assert ease.",
+   "coverage_cluster_id": "easy_adjectives",
+   "candidate_semantic_interpretation": "easy or low-burden",
+   "cluster_supporting_evidence": "All ten adjective contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "33:30",
+     "verse_text": "يَٰنِسَآءَ ٱلنَّبِىِّ مَن يَأْتِ مِنكُنَّ بِفَٰحِشَةٍ مُّبَيِّنَةٍ يُضَٰعَفْ لَهَا ٱلْعَذَابُ ضِعْفَيْنِ وَكَانَ ذَٰلِكَ عَلَى ٱللَّهِ يَسِيرًا"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "33:30",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasiyrFA",
+   "qac_tag": "ADJ",
+   "qac_pos": "ADJ",
+   "qac_verb_form": null,
+   "morphology": "ADJ",
+   "form": "ADJ",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰنِسَآءَ ٱلنَّبِىِّ مَن يَأْتِ مِنكُنَّ بِفَٰحِشَةٍ مُّبَيِّنَةٍ يُضَٰعَفْ لَهَا ٱلْعَذَابُ ضِعْفَيْنِ وَكَانَ ذَٰلِكَ عَلَى ٱللَّهِ يَسِيرًا"
+  },
+  {
+   "word_ref": "35:11:34:1",
+   "disposition": "CONSISTENT",
+   "note": "All adjective contexts directly contrast or assert ease.",
+   "coverage_cluster_id": "easy_adjectives",
+   "candidate_semantic_interpretation": "easy or low-burden",
+   "cluster_supporting_evidence": "All ten adjective contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "35:11",
+     "verse_text": "وَٱللَّهُ خَلَقَكُم مِّن تُرَابٍ ثُمَّ مِن نُّطْفَةٍ ثُمَّ جَعَلَكُمْ أَزْوَٰجًا وَمَا تَحْمِلُ مِنْ أُنثَىٰ وَلَا تَضَعُ إِلَّا بِعِلْمِهِۦ وَمَا يُعَمَّرُ مِن مُّعَمَّرٍ وَلَا يُنقَصُ مِنْ عُمُرِهِۦٓ إِلَّا فِى كِتَٰبٍ إِنَّ ذَٰلِكَ عَلَى ٱللَّهِ يَسِيرٌ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "35:11",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasiyrN",
+   "qac_tag": "ADJ",
+   "qac_pos": "ADJ",
+   "qac_verb_form": null,
+   "morphology": "ADJ",
+   "form": "ADJ",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱللَّهُ خَلَقَكُم مِّن تُرَابٍ ثُمَّ مِن نُّطْفَةٍ ثُمَّ جَعَلَكُمْ أَزْوَٰجًا وَمَا تَحْمِلُ مِنْ أُنثَىٰ وَلَا تَضَعُ إِلَّا بِعِلْمِهِۦ وَمَا يُعَمَّرُ مِن مُّعَمَّرٍ وَلَا يُنقَصُ مِنْ عُمُرِهِۦٓ إِلَّا فِى كِتَٰبٍ إِنَّ ذَٰلِكَ عَلَى ٱللَّهِ يَسِيرٌ"
+  },
+  {
+   "word_ref": "44:58:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Form II contexts explicitly make a matter or recitation easy.",
+   "coverage_cluster_id": "form_ii_facilitation",
+   "candidate_semantic_interpretation": "to facilitate or render accessible",
+   "cluster_supporting_evidence": "All 11 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "44:58",
+     "verse_text": "فَإِنَّمَا يَسَّرْنَٰهُ بِلِسَانِكَ لَعَلَّهُمْ يَتَذَكَّرُونَ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "44:58",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yas~aro",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَإِنَّمَا يَسَّرْنَٰهُ بِلِسَانِكَ لَعَلَّهُمْ يَتَذَكَّرُونَ"
+  },
+  {
+   "word_ref": "4:169:11:1",
+   "disposition": "CONSISTENT",
+   "note": "These nominal contexts directly profile ease, accessible speech, or ready provision.",
+   "coverage_cluster_id": "ease_nominals",
+   "candidate_semantic_interpretation": "ease or readily available provision",
+   "cluster_supporting_evidence": "All 16 non-gambling noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "4:169",
+     "verse_text": "إِلَّا طَرِيقَ جَهَنَّمَ خَٰلِدِينَ فِيهَآ أَبَدًا وَكَانَ ذَٰلِكَ عَلَى ٱللَّهِ يَسِيرًا"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "4:169",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasiyrFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِلَّا طَرِيقَ جَهَنَّمَ خَٰلِدِينَ فِيهَآ أَبَدًا وَكَانَ ذَٰلِكَ عَلَى ٱللَّهِ يَسِيرًا"
+  },
+  {
+   "word_ref": "4:30:13:1",
+   "disposition": "CONSISTENT",
+   "note": "These nominal contexts directly profile ease, accessible speech, or ready provision.",
+   "coverage_cluster_id": "ease_nominals",
+   "candidate_semantic_interpretation": "ease or readily available provision",
+   "cluster_supporting_evidence": "All 16 non-gambling noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "4:30",
+     "verse_text": "وَمَن يَفْعَلْ ذَٰلِكَ عُدْوَٰنًا وَظُلْمًا فَسَوْفَ نُصْلِيهِ نَارًا وَكَانَ ذَٰلِكَ عَلَى ٱللَّهِ يَسِيرًا"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "4:30",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasiyrFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَمَن يَفْعَلْ ذَٰلِكَ عُدْوَٰنًا وَظُلْمًا فَسَوْفَ نُصْلِيهِ نَارًا وَكَانَ ذَٰلِكَ عَلَى ٱللَّهِ يَسِيرًا"
+  },
+  {
+   "word_ref": "50:44:9:1",
+   "disposition": "CONSISTENT",
+   "note": "All adjective contexts directly contrast or assert ease.",
+   "coverage_cluster_id": "easy_adjectives",
+   "candidate_semantic_interpretation": "easy or low-burden",
+   "cluster_supporting_evidence": "All ten adjective contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "50:44",
+     "verse_text": "يَوْمَ تَشَقَّقُ ٱلْأَرْضُ عَنْهُمْ سِرَاعًا ذَٰلِكَ حَشْرٌ عَلَيْنَا يَسِيرٌ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "50:44",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasiyrN",
+   "qac_tag": "ADJ",
+   "qac_pos": "ADJ",
+   "qac_verb_form": null,
+   "morphology": "ADJ",
+   "form": "ADJ",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَوْمَ تَشَقَّقُ ٱلْأَرْضُ عَنْهُمْ سِرَاعًا ذَٰلِكَ حَشْرٌ عَلَيْنَا يَسِيرٌ"
+  },
+  {
+   "word_ref": "51:3:2:1",
+   "disposition": "CONSISTENT",
+   "note": "These nominal contexts directly profile ease, accessible speech, or ready provision.",
+   "coverage_cluster_id": "ease_nominals",
+   "candidate_semantic_interpretation": "ease or readily available provision",
+   "cluster_supporting_evidence": "All 16 non-gambling noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "51:3",
+     "verse_text": "فَٱلْجَٰرِيَٰتِ يُسْرًا"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "51:3",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yusorFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَٱلْجَٰرِيَٰتِ يُسْرًا"
+  },
+  {
+   "word_ref": "54:17:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Form II contexts explicitly make a matter or recitation easy.",
+   "coverage_cluster_id": "form_ii_facilitation",
+   "candidate_semantic_interpretation": "to facilitate or render accessible",
+   "cluster_supporting_evidence": "All 11 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "54:17",
+     "verse_text": "وَلَقَدْ يَسَّرْنَا ٱلْقُرْءَانَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "54:17",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yas~aro",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَقَدْ يَسَّرْنَا ٱلْقُرْءَانَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ"
+  },
+  {
+   "word_ref": "54:22:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Form II contexts explicitly make a matter or recitation easy.",
+   "coverage_cluster_id": "form_ii_facilitation",
+   "candidate_semantic_interpretation": "to facilitate or render accessible",
+   "cluster_supporting_evidence": "All 11 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "54:22",
+     "verse_text": "وَلَقَدْ يَسَّرْنَا ٱلْقُرْءَانَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "54:22",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yas~aro",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَقَدْ يَسَّرْنَا ٱلْقُرْءَانَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ"
+  },
+  {
+   "word_ref": "54:32:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Form II contexts explicitly make a matter or recitation easy.",
+   "coverage_cluster_id": "form_ii_facilitation",
+   "candidate_semantic_interpretation": "to facilitate or render accessible",
+   "cluster_supporting_evidence": "All 11 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "54:32",
+     "verse_text": "وَلَقَدْ يَسَّرْنَا ٱلْقُرْءَانَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "54:32",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yas~aro",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَقَدْ يَسَّرْنَا ٱلْقُرْءَانَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ"
+  },
+  {
+   "word_ref": "54:40:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Form II contexts explicitly make a matter or recitation easy.",
+   "coverage_cluster_id": "form_ii_facilitation",
+   "candidate_semantic_interpretation": "to facilitate or render accessible",
+   "cluster_supporting_evidence": "All 11 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "54:40",
+     "verse_text": "وَلَقَدْ يَسَّرْنَا ٱلْقُرْءَانَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "54:40",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yas~aro",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَقَدْ يَسَّرْنَا ٱلْقُرْءَانَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ"
+  },
+  {
+   "word_ref": "57:22:21:1",
+   "disposition": "CONSISTENT",
+   "note": "All adjective contexts directly contrast or assert ease.",
+   "coverage_cluster_id": "easy_adjectives",
+   "candidate_semantic_interpretation": "easy or low-burden",
+   "cluster_supporting_evidence": "All ten adjective contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "57:22",
+     "verse_text": "مَآ أَصَابَ مِن مُّصِيبَةٍ فِى ٱلْأَرْضِ وَلَا فِىٓ أَنفُسِكُمْ إِلَّا فِى كِتَٰبٍ مِّن قَبْلِ أَن نَّبْرَأَهَآ إِنَّ ذَٰلِكَ عَلَى ٱللَّهِ يَسِيرٌ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "57:22",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasiyrN",
+   "qac_tag": "ADJ",
+   "qac_pos": "ADJ",
+   "qac_verb_form": null,
+   "morphology": "ADJ",
+   "form": "ADJ",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "مَآ أَصَابَ مِن مُّصِيبَةٍ فِى ٱلْأَرْضِ وَلَا فِىٓ أَنفُسِكُمْ إِلَّا فِى كِتَٰبٍ مِّن قَبْلِ أَن نَّبْرَأَهَآ إِنَّ ذَٰلِكَ عَلَى ٱللَّهِ يَسِيرٌ"
+  },
+  {
+   "word_ref": "5:90:6:3",
+   "disposition": "RESISTANT",
+   "note": "The three verses identify and evaluate gambling but do not expose ease as its internal semantic residue.",
+   "coverage_cluster_id": "maysir_gambling",
+   "candidate_semantic_interpretation": "gambling, with an unproven proposed bridge to easy acquisition",
+   "cluster_supporting_evidence": "2:219, 5:90, and 5:91 were reviewed directly.",
+   "counterevidence": [
+    "The proposed easy-gain bridge is not stated within these contexts."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "5:90",
+     "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِنَّمَا ٱلْخَمْرُ وَٱلْمَيْسِرُ وَٱلْأَنصَابُ وَٱلْأَزْلَٰمُ رِجْسٌ مِّنْ عَمَلِ ٱلشَّيْطَٰنِ فَٱجْتَنِبُوهُ لَعَلَّكُمْ تُفْلِحُونَ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "5:90",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "mayosiru",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِنَّمَا ٱلْخَمْرُ وَٱلْمَيْسِرُ وَٱلْأَنصَابُ وَٱلْأَزْلَٰمُ رِجْسٌ مِّنْ عَمَلِ ٱلشَّيْطَٰنِ فَٱجْتَنِبُوهُ لَعَلَّكُمْ تُفْلِحُونَ"
+  },
+  {
+   "word_ref": "5:91:11:3",
+   "disposition": "RESISTANT",
+   "note": "The three verses identify and evaluate gambling but do not expose ease as its internal semantic residue.",
+   "coverage_cluster_id": "maysir_gambling",
+   "candidate_semantic_interpretation": "gambling, with an unproven proposed bridge to easy acquisition",
+   "cluster_supporting_evidence": "2:219, 5:90, and 5:91 were reviewed directly.",
+   "counterevidence": [
+    "The proposed easy-gain bridge is not stated within these contexts."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "5:91",
+     "verse_text": "إِنَّمَا يُرِيدُ ٱلشَّيْطَٰنُ أَن يُوقِعَ بَيْنَكُمُ ٱلْعَدَٰوَةَ وَٱلْبَغْضَآءَ فِى ٱلْخَمْرِ وَٱلْمَيْسِرِ وَيَصُدَّكُمْ عَن ذِكْرِ ٱللَّهِ وَعَنِ ٱلصَّلَوٰةِ فَهَلْ أَنتُم مُّنتَهُونَ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "5:91",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "mayosiri",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّمَا يُرِيدُ ٱلشَّيْطَٰنُ أَن يُوقِعَ بَيْنَكُمُ ٱلْعَدَٰوَةَ وَٱلْبَغْضَآءَ فِى ٱلْخَمْرِ وَٱلْمَيْسِرِ وَيَصُدَّكُمْ عَن ذِكْرِ ٱللَّهِ وَعَنِ ٱلصَّلَوٰةِ فَهَلْ أَنتُم مُّنتَهُونَ"
+  },
+  {
+   "word_ref": "64:7:18:1",
+   "disposition": "CONSISTENT",
+   "note": "These nominal contexts directly profile ease, accessible speech, or ready provision.",
+   "coverage_cluster_id": "ease_nominals",
+   "candidate_semantic_interpretation": "ease or readily available provision",
+   "cluster_supporting_evidence": "All 16 non-gambling noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "64:7",
+     "verse_text": "زَعَمَ ٱلَّذِينَ كَفَرُوٓا۟ أَن لَّن يُبْعَثُوا۟ قُلْ بَلَىٰ وَرَبِّى لَتُبْعَثُنَّ ثُمَّ لَتُنَبَّؤُنَّ بِمَا عَمِلْتُمْ وَذَٰلِكَ عَلَى ٱللَّهِ يَسِيرٌ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "64:7",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasiyrN",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "زَعَمَ ٱلَّذِينَ كَفَرُوٓا۟ أَن لَّن يُبْعَثُوا۟ قُلْ بَلَىٰ وَرَبِّى لَتُبْعَثُنَّ ثُمَّ لَتُنَبَّؤُنَّ بِمَا عَمِلْتُمْ وَذَٰلِكَ عَلَى ٱللَّهِ يَسِيرٌ"
+  },
+  {
+   "word_ref": "65:4:28:1",
+   "disposition": "CONSISTENT",
+   "note": "These nominal contexts directly profile ease, accessible speech, or ready provision.",
+   "coverage_cluster_id": "ease_nominals",
+   "candidate_semantic_interpretation": "ease or readily available provision",
+   "cluster_supporting_evidence": "All 16 non-gambling noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "65:4",
+     "verse_text": "وَٱلَّٰٓـِٔى يَئِسْنَ مِنَ ٱلْمَحِيضِ مِن نِّسَآئِكُمْ إِنِ ٱرْتَبْتُمْ فَعِدَّتُهُنَّ ثَلَٰثَةُ أَشْهُرٍ وَٱلَّٰٓـِٔى لَمْ يَحِضْنَ وَأُو۟لَٰتُ ٱلْأَحْمَالِ أَجَلُهُنَّ أَن يَضَعْنَ حَمْلَهُنَّ وَمَن يَتَّقِ ٱللَّهَ يَجْعَل لَّهُۥ مِنْ أَمْرِهِۦ يُسْرًا"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "65:4",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yusorFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱلَّٰٓـِٔى يَئِسْنَ مِنَ ٱلْمَحِيضِ مِن نِّسَآئِكُمْ إِنِ ٱرْتَبْتُمْ فَعِدَّتُهُنَّ ثَلَٰثَةُ أَشْهُرٍ وَٱلَّٰٓـِٔى لَمْ يَحِضْنَ وَأُو۟لَٰتُ ٱلْأَحْمَالِ أَجَلُهُنَّ أَن يَضَعْنَ حَمْلَهُنَّ وَمَن يَتَّقِ ٱللَّهَ يَجْعَل لَّهُۥ مِنْ أَمْرِهِۦ يُسْرًا"
+  },
+  {
+   "word_ref": "65:7:25:1",
+   "disposition": "CONSISTENT",
+   "note": "These nominal contexts directly profile ease, accessible speech, or ready provision.",
+   "coverage_cluster_id": "ease_nominals",
+   "candidate_semantic_interpretation": "ease or readily available provision",
+   "cluster_supporting_evidence": "All 16 non-gambling noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "65:7",
+     "verse_text": "لِيُنفِقْ ذُو سَعَةٍ مِّن سَعَتِهِۦ وَمَن قُدِرَ عَلَيْهِ رِزْقُهُۥ فَلْيُنفِقْ مِمَّآ ءَاتَىٰهُ ٱللَّهُ لَا يُكَلِّفُ ٱللَّهُ نَفْسًا إِلَّا مَآ ءَاتَىٰهَا سَيَجْعَلُ ٱللَّهُ بَعْدَ عُسْرٍ يُسْرًا"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "65:7",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yusorFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لِيُنفِقْ ذُو سَعَةٍ مِّن سَعَتِهِۦ وَمَن قُدِرَ عَلَيْهِ رِزْقُهُۥ فَلْيُنفِقْ مِمَّآ ءَاتَىٰهُ ٱللَّهُ لَا يُكَلِّفُ ٱللَّهُ نَفْسًا إِلَّا مَآ ءَاتَىٰهَا سَيَجْعَلُ ٱللَّهُ بَعْدَ عُسْرٍ يُسْرًا"
+  },
+  {
+   "word_ref": "73:20:28:1",
+   "disposition": "CONSISTENT",
+   "note": "Both 73:20 occurrences describe whatever recitation is readily manageable.",
+   "coverage_cluster_id": "form_v_availability",
+   "candidate_semantic_interpretation": "what becomes readily available",
+   "cluster_supporting_evidence": "Both Form V tokens in 73:20 were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "73:20",
+     "verse_text": "إِنَّ رَبَّكَ يَعْلَمُ أَنَّكَ تَقُومُ أَدْنَىٰ مِن ثُلُثَىِ ٱلَّيْلِ وَنِصْفَهُۥ وَثُلُثَهُۥ وَطَآئِفَةٌ مِّنَ ٱلَّذِينَ مَعَكَ وَٱللَّهُ يُقَدِّرُ ٱلَّيْلَ وَٱلنَّهَارَ عَلِمَ أَن لَّن تُحْصُوهُ فَتَابَ عَلَيْكُمْ فَٱقْرَءُوا۟ مَا تَيَسَّرَ مِنَ ٱلْقُرْءَانِ عَلِمَ أَن سَيَكُونُ مِنكُم مَّرْضَىٰ وَءَاخَرُونَ يَضْرِبُونَ فِى ٱلْأَرْضِ يَبْتَغُونَ مِن فَضْلِ ٱللَّهِ وَءَاخَرُونَ يُقَٰتِلُونَ فِى سَبِيلِ ٱللَّهِ فَٱقْرَءُوا۟ مَا تَيَسَّرَ مِنْهُ وَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَأَقْرِضُوا۟ ٱللَّهَ قَرْضًا حَسَنًا وَمَا تُقَدِّمُوا۟ لِأَنفُسِكُم مِّنْ خَيْرٍ تَجِدُوهُ عِندَ ٱللَّهِ هُوَ خَيْرًا وَأَعْظَمَ أَجْرًا وَٱسْتَغْفِرُوا۟ ٱللَّهَ إِنَّ ٱللَّهَ غَفُورٌ رَّحِيمٌۢ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "73:20",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tayas~ara",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "V",
+   "morphology": "V(V)",
+   "form": "V(V)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ رَبَّكَ يَعْلَمُ أَنَّكَ تَقُومُ أَدْنَىٰ مِن ثُلُثَىِ ٱلَّيْلِ وَنِصْفَهُۥ وَثُلُثَهُۥ وَطَآئِفَةٌ مِّنَ ٱلَّذِينَ مَعَكَ وَٱللَّهُ يُقَدِّرُ ٱلَّيْلَ وَٱلنَّهَارَ عَلِمَ أَن لَّن تُحْصُوهُ فَتَابَ عَلَيْكُمْ فَٱقْرَءُوا۟ مَا تَيَسَّرَ مِنَ ٱلْقُرْءَانِ عَلِمَ أَن سَيَكُونُ مِنكُم مَّرْضَىٰ وَءَاخَرُونَ يَضْرِبُونَ فِى ٱلْأَرْضِ يَبْتَغُونَ مِن فَضْلِ ٱللَّهِ وَءَاخَرُونَ يُقَٰتِلُونَ فِى سَبِيلِ ٱللَّهِ فَٱقْرَءُوا۟ مَا تَيَسَّرَ مِنْهُ وَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَأَقْرِضُوا۟ ٱللَّهَ قَرْضًا حَسَنًا وَمَا تُقَدِّمُوا۟ لِأَنفُسِكُم مِّنْ خَيْرٍ تَجِدُوهُ عِندَ ٱللَّهِ هُوَ خَيْرًا وَأَعْظَمَ أَجْرًا وَٱسْتَغْفِرُوا۟ ٱللَّهَ إِنَّ ٱللَّهَ غَفُورٌ رَّحِيمٌۢ"
+  },
+  {
+   "word_ref": "73:20:51:1",
+   "disposition": "CONSISTENT",
+   "note": "Both 73:20 occurrences describe whatever recitation is readily manageable.",
+   "coverage_cluster_id": "form_v_availability",
+   "candidate_semantic_interpretation": "what becomes readily available",
+   "cluster_supporting_evidence": "Both Form V tokens in 73:20 were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "73:20",
+     "verse_text": "إِنَّ رَبَّكَ يَعْلَمُ أَنَّكَ تَقُومُ أَدْنَىٰ مِن ثُلُثَىِ ٱلَّيْلِ وَنِصْفَهُۥ وَثُلُثَهُۥ وَطَآئِفَةٌ مِّنَ ٱلَّذِينَ مَعَكَ وَٱللَّهُ يُقَدِّرُ ٱلَّيْلَ وَٱلنَّهَارَ عَلِمَ أَن لَّن تُحْصُوهُ فَتَابَ عَلَيْكُمْ فَٱقْرَءُوا۟ مَا تَيَسَّرَ مِنَ ٱلْقُرْءَانِ عَلِمَ أَن سَيَكُونُ مِنكُم مَّرْضَىٰ وَءَاخَرُونَ يَضْرِبُونَ فِى ٱلْأَرْضِ يَبْتَغُونَ مِن فَضْلِ ٱللَّهِ وَءَاخَرُونَ يُقَٰتِلُونَ فِى سَبِيلِ ٱللَّهِ فَٱقْرَءُوا۟ مَا تَيَسَّرَ مِنْهُ وَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَأَقْرِضُوا۟ ٱللَّهَ قَرْضًا حَسَنًا وَمَا تُقَدِّمُوا۟ لِأَنفُسِكُم مِّنْ خَيْرٍ تَجِدُوهُ عِندَ ٱللَّهِ هُوَ خَيْرًا وَأَعْظَمَ أَجْرًا وَٱسْتَغْفِرُوا۟ ٱللَّهَ إِنَّ ٱللَّهَ غَفُورٌ رَّحِيمٌۢ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "73:20",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tayas~ara",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "V",
+   "morphology": "V(V)",
+   "form": "V(V)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ رَبَّكَ يَعْلَمُ أَنَّكَ تَقُومُ أَدْنَىٰ مِن ثُلُثَىِ ٱلَّيْلِ وَنِصْفَهُۥ وَثُلُثَهُۥ وَطَآئِفَةٌ مِّنَ ٱلَّذِينَ مَعَكَ وَٱللَّهُ يُقَدِّرُ ٱلَّيْلَ وَٱلنَّهَارَ عَلِمَ أَن لَّن تُحْصُوهُ فَتَابَ عَلَيْكُمْ فَٱقْرَءُوا۟ مَا تَيَسَّرَ مِنَ ٱلْقُرْءَانِ عَلِمَ أَن سَيَكُونُ مِنكُم مَّرْضَىٰ وَءَاخَرُونَ يَضْرِبُونَ فِى ٱلْأَرْضِ يَبْتَغُونَ مِن فَضْلِ ٱللَّهِ وَءَاخَرُونَ يُقَٰتِلُونَ فِى سَبِيلِ ٱللَّهِ فَٱقْرَءُوا۟ مَا تَيَسَّرَ مِنْهُ وَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَأَقْرِضُوا۟ ٱللَّهَ قَرْضًا حَسَنًا وَمَا تُقَدِّمُوا۟ لِأَنفُسِكُم مِّنْ خَيْرٍ تَجِدُوهُ عِندَ ٱللَّهِ هُوَ خَيْرًا وَأَعْظَمَ أَجْرًا وَٱسْتَغْفِرُوا۟ ٱللَّهَ إِنَّ ٱللَّهَ غَفُورٌ رَّحِيمٌۢ"
+  },
+  {
+   "word_ref": "74:10:4:1",
+   "disposition": "CONSISTENT",
+   "note": "These nominal contexts directly profile ease, accessible speech, or ready provision.",
+   "coverage_cluster_id": "ease_nominals",
+   "candidate_semantic_interpretation": "ease or readily available provision",
+   "cluster_supporting_evidence": "All 16 non-gambling noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "74:10",
+     "verse_text": "عَلَى ٱلْكَٰفِرِينَ غَيْرُ يَسِيرٍ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "74:10",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasiyrK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "عَلَى ٱلْكَٰفِرِينَ غَيْرُ يَسِيرٍ"
+  },
+  {
+   "word_ref": "80:20:3:1",
+   "disposition": "CONSISTENT",
+   "note": "Form II contexts explicitly make a matter or recitation easy.",
+   "coverage_cluster_id": "form_ii_facilitation",
+   "candidate_semantic_interpretation": "to facilitate or render accessible",
+   "cluster_supporting_evidence": "All 11 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "80:20",
+     "verse_text": "ثُمَّ ٱلسَّبِيلَ يَسَّرَهُۥ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "80:20",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yas~ara",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ثُمَّ ٱلسَّبِيلَ يَسَّرَهُۥ"
+  },
+  {
+   "word_ref": "84:8:4:1",
+   "disposition": "CONSISTENT",
+   "note": "All adjective contexts directly contrast or assert ease.",
+   "coverage_cluster_id": "easy_adjectives",
+   "candidate_semantic_interpretation": "easy or low-burden",
+   "cluster_supporting_evidence": "All ten adjective contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "84:8",
+     "verse_text": "فَسَوْفَ يُحَاسَبُ حِسَابًا يَسِيرًا"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "84:8",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasiyrFA",
+   "qac_tag": "ADJ",
+   "qac_pos": "ADJ",
+   "qac_verb_form": null,
+   "morphology": "ADJ",
+   "form": "ADJ",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَسَوْفَ يُحَاسَبُ حِسَابًا يَسِيرًا"
+  },
+  {
+   "word_ref": "87:8:1:2",
+   "disposition": "CONSISTENT",
+   "note": "Form II contexts explicitly make a matter or recitation easy.",
+   "coverage_cluster_id": "form_ii_facilitation",
+   "candidate_semantic_interpretation": "to facilitate or render accessible",
+   "cluster_supporting_evidence": "All 11 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "87:8",
+     "verse_text": "وَنُيَسِّرُكَ لِلْيُسْرَىٰ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "87:8",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "nuyas~iru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَنُيَسِّرُكَ لِلْيُسْرَىٰ"
+  },
+  {
+   "word_ref": "87:8:2:3",
+   "disposition": "CONSISTENT",
+   "note": "These nominal contexts directly profile ease, accessible speech, or ready provision.",
+   "coverage_cluster_id": "ease_nominals",
+   "candidate_semantic_interpretation": "ease or readily available provision",
+   "cluster_supporting_evidence": "All 16 non-gambling noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "87:8",
+     "verse_text": "وَنُيَسِّرُكَ لِلْيُسْرَىٰ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "87:8",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yusoraY`",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَنُيَسِّرُكَ لِلْيُسْرَىٰ"
+  },
+  {
+   "word_ref": "92:10:1:3",
+   "disposition": "CONSISTENT",
+   "note": "Form II contexts explicitly make a matter or recitation easy.",
+   "coverage_cluster_id": "form_ii_facilitation",
+   "candidate_semantic_interpretation": "to facilitate or render accessible",
+   "cluster_supporting_evidence": "All 11 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "92:10",
+     "verse_text": "فَسَنُيَسِّرُهُۥ لِلْعُسْرَىٰ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "92:10",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "nuyas~iru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَسَنُيَسِّرُهُۥ لِلْعُسْرَىٰ"
+  },
+  {
+   "word_ref": "92:7:1:3",
+   "disposition": "CONSISTENT",
+   "note": "Form II contexts explicitly make a matter or recitation easy.",
+   "coverage_cluster_id": "form_ii_facilitation",
+   "candidate_semantic_interpretation": "to facilitate or render accessible",
+   "cluster_supporting_evidence": "All 11 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "92:7",
+     "verse_text": "فَسَنُيَسِّرُهُۥ لِلْيُسْرَىٰ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "92:7",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "nuyas~iru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَسَنُيَسِّرُهُۥ لِلْيُسْرَىٰ"
+  },
+  {
+   "word_ref": "92:7:2:3",
+   "disposition": "CONSISTENT",
+   "note": "These nominal contexts directly profile ease, accessible speech, or ready provision.",
+   "coverage_cluster_id": "ease_nominals",
+   "candidate_semantic_interpretation": "ease or readily available provision",
+   "cluster_supporting_evidence": "All 16 non-gambling noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "92:7",
+     "verse_text": "فَسَنُيَسِّرُهُۥ لِلْيُسْرَىٰ"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "92:7",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yusoraY`",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَسَنُيَسِّرُهُۥ لِلْيُسْرَىٰ"
+  },
+  {
+   "word_ref": "94:5:4:1",
+   "disposition": "CONSISTENT",
+   "note": "These nominal contexts directly profile ease, accessible speech, or ready provision.",
+   "coverage_cluster_id": "ease_nominals",
+   "candidate_semantic_interpretation": "ease or readily available provision",
+   "cluster_supporting_evidence": "All 16 non-gambling noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "94:5",
+     "verse_text": "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "94:5",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yusorFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا"
+  },
+  {
+   "word_ref": "94:6:4:1",
+   "disposition": "CONSISTENT",
+   "note": "These nominal contexts directly profile ease, accessible speech, or ready provision.",
+   "coverage_cluster_id": "ease_nominals",
+   "candidate_semantic_interpretation": "ease or readily available provision",
+   "cluster_supporting_evidence": "All 16 non-gambling noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "94:6",
+     "verse_text": "إِنَّ مَعَ ٱلْعُسْرِ يُسْرًا"
+    }
+   ],
+   "root_arabic": "ي س ر",
+   "root_buckwalter": "ysr",
+   "root_id": "ysr",
+   "artifact_name": "ysr.json",
+   "verse_ref": "94:6",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yusorFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ مَعَ ٱلْعُسْرِ يُسْرًا"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "WEAK",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PARTIAL",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "2:219:4:3",
+  "5:90:6:3",
+  "5:91:11:3"
+ ],
+ "unreconciled_count": 3,
+ "resistant_occurrences": [
+  "2:219:4:3",
+  "5:90:6:3",
+  "5:91:11:3"
+ ],
+ "structural_uncertainty_occurrences": []
+}

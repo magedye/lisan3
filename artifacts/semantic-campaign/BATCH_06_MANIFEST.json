@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "batch_id": "batch06",
-  "status": "POPULATION_FROZEN_BEFORE_SEMANTIC_ANALYSIS",
+  "status": "WAVE_1_CHECKPOINT_COMPLETE",
   "authorized_by": "Owner Batch 06 execution instruction dated 2026-09-10",
   "starting_main_sha": "6f895bf0754190a423512b7478ced5bf7bd4a266",
   "branch": "semantic-campaign-batch06",
@@ -44,6 +44,19 @@
     "assignment": "round-robin by frozen selection_index to preserve tier diversity and balance occurrence load",
     "wave_1_occurrences": 1780,
     "wave_2_occurrences": 1318
+  },
+  "wave_checkpoints": {
+    "wave_1": {
+      "status": "COMPLETE",
+      "roots": 20,
+      "occurrences": 1780,
+      "coverage_exact_set": true,
+      "outcomes": {"STRONG": 4, "MODERATE": 10, "WEAK": 4, "UNRESOLVED": 2},
+      "resistant_occurrences": 528,
+      "reconciliation_lineage_records": 2,
+      "report": "docs/LISAN3_BATCH_06_WAVE_01.md"
+    },
+    "wave_2": {"status": "NOT_STARTED"}
   },
   "roots": [
     {"selection_index": 1, "wave": 1, "root_arabic": "ش ي ا", "root_buckwalter": "$yA", "root_id": "$yA", "artifact_name": "$yA.json", "confirmed_occurrences": 519, "tier": "xl"},

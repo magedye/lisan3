@@ -29,6 +29,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 from functools import lru_cache
 from pathlib import Path
 
@@ -49,6 +50,7 @@ from backend.domain.services.corpus.qac_morphology import (
 )
 from backend.domain.services.corpus.root_universe import RootUniverseService
 from backend.domain.services.research_coverage import (
+    VALID_DISPOSITIONS,
     confirmed_word_refs,
     finalize_root_disposition,
     fold_root_into_ledger,
@@ -137,7 +139,7 @@ def _write_root_json(path: Path, root: str, artifact: dict) -> None:
             f"{existing_root!r} != requested canonical root {root!r}"
         )
 
-    path.write_text(serialized, encoding="utf-8")
+    path.write_text(serialized, encoding="utf-8", newline="\n")
 
 
 _engine = create_engine(SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False})
@@ -157,6 +159,8 @@ def load_ledger() -> dict:
 
 def save_ledger(ledger: dict) -> None:
     LEDGER.parent.mkdir(parents=True, exist_ok=True)
+    # Preserve the ledger's established CRLF bytes on Windows so an append does
+    # not normalize and obscure its historical content in a campaign diff.
     LEDGER.write_text(json.dumps(ledger, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
@@ -227,6 +231,9 @@ def _occurrence_metadata(token, root: str, verse_text: str) -> dict:
             "Buckwalter-to-Arabic alignment profile is adopted."
         ),
         "qac_surface_form_buckwalter": segment.form if segment_matches else None,
+        "qac_tag": segment.tag if segment_matches else None,
+        "qac_pos": segment.pos if segment_matches else None,
+        "qac_verb_form": segment.verb_form if segment_matches else None,
         "morphology": token.form,
         "form": token.form,
         "structural_evidence": {
@@ -251,6 +258,169 @@ def _index_items_by_root(items, label: str) -> dict[str, dict]:
             raise ValueError(f"{label} contains duplicate root {root!r}")
         indexed[root] = item
     return indexed
+
+
+def _cluster_matches(occurrence: dict, where: dict) -> bool:
+    """Return whether one explicit semantic usage-class selector matches."""
+    if not where:
+        raise ValueError("coverage cluster requires a non-empty where selector")
+    if "word_refs" in where and occurrence.get("word_ref") not in where["word_refs"]:
+        return False
+    if "qac_pos" in where and occurrence.get("qac_pos") not in where["qac_pos"]:
+        return False
+    if (
+        "qac_verb_form" in where
+        and occurrence.get("qac_verb_form") not in where["qac_verb_form"]
+    ):
+        return False
+    if "qac_surface_regex" in where and not re.search(
+        where["qac_surface_regex"], occurrence.get("qac_surface_form_buckwalter") or ""
+    ):
+        return False
+    known = {"word_refs", "qac_pos", "qac_verb_form", "qac_surface_regex"}
+    unknown = sorted(set(where) - known)
+    if unknown:
+        raise ValueError(f"unknown coverage-cluster selectors: {unknown}")
+    return True
+
+
+def materialize_occurrence_dispositions(
+    root: str, occurrences: list[dict], classification: dict
+) -> tuple[list[dict], list[dict]]:
+    """Expand reviewed usage classes into one explicit record per occurrence.
+
+    This is intentionally fail-closed: there is no default disposition; every
+    class is count-pinned and every occurrence must match exactly one class.
+    Semantic judgments stay authored in the research result, while this helper
+    performs only deterministic evidence-preserving expansion.
+    """
+    clusters = classification.get("clusters") or []
+    if not clusters:
+        raise ValueError(f"root {root!r} has no reviewed occurrence classes")
+    seen_ids: set[str] = set()
+    cluster_counts: dict[str, int] = {}
+    dispositions: list[dict] = []
+    for occurrence in occurrences:
+        matches = [c for c in clusters if _cluster_matches(occurrence, c.get("where") or {})]
+        if len(matches) != 1:
+            raise ValueError(
+                f"root {root!r} occurrence {occurrence.get('word_ref')!r} matched "
+                f"{len(matches)} reviewed classes; expected exactly one"
+            )
+        cluster = matches[0]
+        cluster_id = cluster.get("cluster_id")
+        if not cluster_id:
+            raise ValueError(f"root {root!r} coverage class lacks cluster_id")
+        seen_ids.add(cluster_id)
+        cluster_counts[cluster_id] = cluster_counts.get(cluster_id, 0) + 1
+        disposition = cluster.get("disposition")
+        if disposition not in VALID_DISPOSITIONS:
+            raise ValueError(
+                f"root {root!r} class {cluster_id!r} has invalid disposition {disposition!r}"
+            )
+        required = (
+            "candidate_semantic_interpretation",
+            "classification_rationale",
+            "supporting_evidence_note",
+        )
+        missing = [field for field in required if not cluster.get(field)]
+        if missing:
+            raise ValueError(
+                f"root {root!r} class {cluster_id!r} lacks evidence fields {missing}"
+            )
+        counterevidence = cluster.get("counterevidence")
+        if not isinstance(counterevidence, list):
+            raise TypeError(
+                f"root {root!r} class {cluster_id!r} requires counterevidence list"
+            )
+        dispositions.append({
+            "word_ref": occurrence["word_ref"],
+            "disposition": disposition,
+            "note": cluster["classification_rationale"],
+            "coverage_cluster_id": cluster_id,
+            "candidate_semantic_interpretation": (
+                cluster["candidate_semantic_interpretation"]
+            ),
+            "cluster_supporting_evidence": cluster["supporting_evidence_note"],
+            "counterevidence": counterevidence,
+        })
+    defined_ids = [c.get("cluster_id") for c in clusters]
+    if len(defined_ids) != len(set(defined_ids)):
+        raise ValueError(f"root {root!r} has duplicate coverage cluster ids")
+    unused = sorted(set(defined_ids) - seen_ids)
+    if unused:
+        raise ValueError(f"root {root!r} has unused coverage classes: {unused}")
+    for cluster in clusters:
+        cluster_id = cluster["cluster_id"]
+        expected = cluster.get("occurrence_count_expected")
+        actual = cluster_counts.get(cluster_id, 0)
+        if expected != actual:
+            raise ValueError(
+                f"root {root!r} class {cluster_id!r} count drift: "
+                f"expected {expected}, got {actual}"
+            )
+    reconciliation = classification.get("reconciliation") or []
+    occurrence_refs = {o["word_ref"] for o in occurrences}
+    unknown_reconciliation = sorted(
+        r.get("word_ref") for r in reconciliation if r.get("word_ref") not in occurrence_refs
+    )
+    if unknown_reconciliation:
+        raise ValueError(
+            f"root {root!r} reconciliation references unknown occurrences: "
+            f"{unknown_reconciliation}"
+        )
+    return dispositions, reconciliation
+
+
+def cmd_materialize_coverage(args):
+    """Expand explicit, reviewed semantic usage classes into exact-set coverage."""
+    research_items = json.loads(Path(args.research).read_text(encoding="utf-8"))
+    research = _index_items_by_root(research_items, "research results")
+    packet_dir = Path(args.packets)
+    manifest_items = json.loads(
+        (packet_dir / "_manifest.json").read_text(encoding="utf-8")
+    )
+    manifest = _index_items_by_root(manifest_items, "packet manifest")
+    if set(research) != set(manifest):
+        raise ValueError(
+            "research and packet root populations differ: "
+            f"research_only={sorted(set(research) - set(manifest))}, "
+            f"packet_only={sorted(set(manifest) - set(research))}"
+        )
+    coverage_items = []
+    for root in research:
+        packet = json.loads(
+            (packet_dir / f"{safe_name(root)}.json").read_text(encoding="utf-8")
+        )
+        if packet.get("root_buckwalter") != root:
+            raise ValueError(f"packet identity mismatch for root {root!r}")
+        classification = (research[root].get("judgment") or {}).get(
+            "occurrence_classification"
+        ) or {}
+        dispositions, reconciliation = materialize_occurrence_dispositions(
+            root, packet.get("occurrences") or [], classification
+        )
+        coverage_items.append({
+            "root": root,
+            "dispositions": dispositions,
+            "reconciliation": reconciliation,
+            "class_counts": {
+                cluster["cluster_id"]: cluster["occurrence_count_expected"]
+                for cluster in classification["clusters"]
+            },
+        })
+    Path(args.out).write_text(
+        json.dumps(coverage_items, ensure_ascii=False, indent=1),
+        encoding="utf-8",
+        newline="\n",
+    )
+    print(
+        json.dumps({
+            "roots": len(coverage_items),
+            "occurrences": sum(len(i["dispositions"]) for i in coverage_items),
+            "out": args.out,
+        })
+    )
 
 
 def cmd_select(args):
@@ -321,7 +491,10 @@ def cmd_prep(args):
             "occ": prof.total_confirmed_occurrences,
         })
     (outdir / "_manifest.json").write_text(
-        json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
+        json.dumps(manifest, ensure_ascii=False, indent=1),
+        encoding="utf-8",
+        newline="\n",
+    )
     print(f"prepped {len(manifest)} packets -> {outdir}")
     db.close()
 
@@ -491,7 +664,10 @@ def cmd_prep_coverage(args):
             "expected_refs": len(refs),
         })
     (outdir / "_coverage_manifest.json").write_text(
-        json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
+        json.dumps(manifest, ensure_ascii=False, indent=1),
+        encoding="utf-8",
+        newline="\n",
+    )
     print(json.dumps(manifest))
     db.close()
 
@@ -649,6 +825,7 @@ def main():
     pp = sub.add_parser("prep"); pp.add_argument("--roots", required=True); pp.add_argument("--out", required=True); pp.set_defaults(func=cmd_prep)
     ps = sub.add_parser("persist"); ps.add_argument("--results", required=True); ps.add_argument("--batch", required=True); ps.set_defaults(func=cmd_persist)
     pc = sub.add_parser("prep-coverage"); pc.add_argument("--results", required=True); pc.add_argument("--out", required=True); pc.set_defaults(func=cmd_prep_coverage)
+    mc = sub.add_parser("materialize-coverage"); mc.add_argument("--research", required=True); mc.add_argument("--packets", required=True); mc.add_argument("--out", required=True); mc.set_defaults(func=cmd_materialize_coverage)
     pv = sub.add_parser("persist-coverage"); pv.add_argument("--research", required=True); pv.add_argument("--coverage", required=True); pv.add_argument("--batch", required=True); pv.set_defaults(func=cmd_persist_coverage)
     mp = sub.add_parser("mark-pending"); mp.add_argument("--roots", required=True); mp.set_defaults(func=cmd_mark_pending)
     args = p.parse_args()

@@ -1,0 +1,244 @@
+{
+ "root_arabic": "ح ل ق",
+ "root_buckwalter": "Hlq",
+ "root_id": "Hlq",
+ "artifact_name": "_48_lq.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch06-wave1-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "UNRESOLVED: shaving/removing hair and the throat are both clear, but their proposed circular-boundary bridge is not demonstrated by Quran-internal evidence",
+ "internal_discovery": {
+  "candidate_root_contribution": "UNRESOLVED: shaving/removing hair and the throat are both clear, but their proposed circular-boundary bridge is not demonstrated by Quran-internal evidence",
+  "plain_explanation": "Two occurrences concern shaving heads; one names the throat at the moment life reaches it. A geometric or encircling core could connect them, but neither Quranic context expresses that shared feature.",
+  "layer_separation_note": "Form II nominalization marks the shaving agent, while the underived noun is a body part. Morphology separates families but does not authorize a semantic bridge.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 0,
+   "inconsistent_refs": [
+    "2:196:12:1",
+    "48:27:14:1",
+    "56:83:4:2"
+   ]
+  },
+  "strongest_counterexample": "56:83 names the throat with no cutting or hair-removal context.",
+  "competing_hypothesis": "Both families involve a circular perimeter; this relies on external conceptual geometry and is not internally tested.",
+  "distinctiveness_note": "The proposed bridge cannot yet be distinguished from generic surrounding, cutting, or body-part language.",
+  "unresolved_cases": [
+   "2:196:12:1",
+   "48:27:14:1",
+   "56:83:4:2"
+  ],
+  "result": "UNRESOLVED",
+  "result_strength": "UNRESOLVED",
+  "rationale": "Sparse evidence and two disconnected lexical families require an unresolved outcome.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "head_shaving",
+     "where": {
+      "word_refs": [
+       "2:196:12:1",
+       "48:27:14:1"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "shaving or removing head hair",
+     "classification_rationale": "Both contexts clearly denote shaving, but do not reveal a bridge to throat.",
+     "supporting_evidence_note": "2:196 and 48:27 were reviewed directly.",
+     "counterevidence": [
+      "Neither occurrence presents a throat or shared root mechanism."
+     ]
+    },
+    {
+     "cluster_id": "throat_noun",
+     "where": {
+      "word_refs": [
+       "56:83:4:2"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "the throat",
+     "classification_rationale": "The body-part occurrence lacks shaving or cutting residue.",
+     "supporting_evidence_note": "56:83 was reviewed directly.",
+     "counterevidence": [
+      "No removal, cutting, or circular action appears in the verse."
+     ]
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "Hlq",
+  "verdict": "PARTIALLY_SUPPORTED",
+  "failing_occurrences": [
+   "2:196:12:1",
+   "48:27:14:1",
+   "56:83:4:2"
+  ],
+  "distinctiveness_ok": false,
+  "falsifiable": true,
+  "notes": "Both surface families are clear; their unity is not. UNRESOLVED is preserved."
+ },
+ "coverage_validation": {
+  "root": "Hlq",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "2:196:12:1",
+   "disposition": "RESISTANT",
+   "note": "Both contexts clearly denote shaving, but do not reveal a bridge to throat.",
+   "coverage_cluster_id": "head_shaving",
+   "candidate_semantic_interpretation": "shaving or removing head hair",
+   "cluster_supporting_evidence": "2:196 and 48:27 were reviewed directly.",
+   "counterevidence": [
+    "Neither occurrence presents a throat or shared root mechanism."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:196",
+     "verse_text": "وَأَتِمُّوا۟ ٱلْحَجَّ وَٱلْعُمْرَةَ لِلَّهِ فَإِنْ أُحْصِرْتُمْ فَمَا ٱسْتَيْسَرَ مِنَ ٱلْهَدْىِ وَلَا تَحْلِقُوا۟ رُءُوسَكُمْ حَتَّىٰ يَبْلُغَ ٱلْهَدْىُ مَحِلَّهُۥ فَمَن كَانَ مِنكُم مَّرِيضًا أَوْ بِهِۦٓ أَذًى مِّن رَّأْسِهِۦ فَفِدْيَةٌ مِّن صِيَامٍ أَوْ صَدَقَةٍ أَوْ نُسُكٍ فَإِذَآ أَمِنتُمْ فَمَن تَمَتَّعَ بِٱلْعُمْرَةِ إِلَى ٱلْحَجِّ فَمَا ٱسْتَيْسَرَ مِنَ ٱلْهَدْىِ فَمَن لَّمْ يَجِدْ فَصِيَامُ ثَلَٰثَةِ أَيَّامٍ فِى ٱلْحَجِّ وَسَبْعَةٍ إِذَا رَجَعْتُمْ تِلْكَ عَشَرَةٌ كَامِلَةٌ ذَٰلِكَ لِمَن لَّمْ يَكُنْ أَهْلُهُۥ حَاضِرِى ٱلْمَسْجِدِ ٱلْحَرَامِ وَٱتَّقُوا۟ ٱللَّهَ وَٱعْلَمُوٓا۟ أَنَّ ٱللَّهَ شَدِيدُ ٱلْعِقَابِ"
+    }
+   ],
+   "root_arabic": "ح ل ق",
+   "root_buckwalter": "Hlq",
+   "root_id": "Hlq",
+   "artifact_name": "_48_lq.json",
+   "verse_ref": "2:196",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "taHoliqu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَأَتِمُّوا۟ ٱلْحَجَّ وَٱلْعُمْرَةَ لِلَّهِ فَإِنْ أُحْصِرْتُمْ فَمَا ٱسْتَيْسَرَ مِنَ ٱلْهَدْىِ وَلَا تَحْلِقُوا۟ رُءُوسَكُمْ حَتَّىٰ يَبْلُغَ ٱلْهَدْىُ مَحِلَّهُۥ فَمَن كَانَ مِنكُم مَّرِيضًا أَوْ بِهِۦٓ أَذًى مِّن رَّأْسِهِۦ فَفِدْيَةٌ مِّن صِيَامٍ أَوْ صَدَقَةٍ أَوْ نُسُكٍ فَإِذَآ أَمِنتُمْ فَمَن تَمَتَّعَ بِٱلْعُمْرَةِ إِلَى ٱلْحَجِّ فَمَا ٱسْتَيْسَرَ مِنَ ٱلْهَدْىِ فَمَن لَّمْ يَجِدْ فَصِيَامُ ثَلَٰثَةِ أَيَّامٍ فِى ٱلْحَجِّ وَسَبْعَةٍ إِذَا رَجَعْتُمْ تِلْكَ عَشَرَةٌ كَامِلَةٌ ذَٰلِكَ لِمَن لَّمْ يَكُنْ أَهْلُهُۥ حَاضِرِى ٱلْمَسْجِدِ ٱلْحَرَامِ وَٱتَّقُوا۟ ٱللَّهَ وَٱعْلَمُوٓا۟ أَنَّ ٱللَّهَ شَدِيدُ ٱلْعِقَابِ"
+  },
+  {
+   "word_ref": "48:27:14:1",
+   "disposition": "RESISTANT",
+   "note": "Both contexts clearly denote shaving, but do not reveal a bridge to throat.",
+   "coverage_cluster_id": "head_shaving",
+   "candidate_semantic_interpretation": "shaving or removing head hair",
+   "cluster_supporting_evidence": "2:196 and 48:27 were reviewed directly.",
+   "counterevidence": [
+    "Neither occurrence presents a throat or shared root mechanism."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "48:27",
+     "verse_text": "لَّقَدْ صَدَقَ ٱللَّهُ رَسُولَهُ ٱلرُّءْيَا بِٱلْحَقِّ لَتَدْخُلُنَّ ٱلْمَسْجِدَ ٱلْحَرَامَ إِن شَآءَ ٱللَّهُ ءَامِنِينَ مُحَلِّقِينَ رُءُوسَكُمْ وَمُقَصِّرِينَ لَا تَخَافُونَ فَعَلِمَ مَا لَمْ تَعْلَمُوا۟ فَجَعَلَ مِن دُونِ ذَٰلِكَ فَتْحًا قَرِيبًا"
+    }
+   ],
+   "root_arabic": "ح ل ق",
+   "root_buckwalter": "Hlq",
+   "root_id": "Hlq",
+   "artifact_name": "_48_lq.json",
+   "verse_ref": "48:27",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "muHal~iqiyna",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": "II",
+   "morphology": "N(II)",
+   "form": "N(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لَّقَدْ صَدَقَ ٱللَّهُ رَسُولَهُ ٱلرُّءْيَا بِٱلْحَقِّ لَتَدْخُلُنَّ ٱلْمَسْجِدَ ٱلْحَرَامَ إِن شَآءَ ٱللَّهُ ءَامِنِينَ مُحَلِّقِينَ رُءُوسَكُمْ وَمُقَصِّرِينَ لَا تَخَافُونَ فَعَلِمَ مَا لَمْ تَعْلَمُوا۟ فَجَعَلَ مِن دُونِ ذَٰلِكَ فَتْحًا قَرِيبًا"
+  },
+  {
+   "word_ref": "56:83:4:2",
+   "disposition": "RESISTANT",
+   "note": "The body-part occurrence lacks shaving or cutting residue.",
+   "coverage_cluster_id": "throat_noun",
+   "candidate_semantic_interpretation": "the throat",
+   "cluster_supporting_evidence": "56:83 was reviewed directly.",
+   "counterevidence": [
+    "No removal, cutting, or circular action appears in the verse."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "56:83",
+     "verse_text": "فَلَوْلَآ إِذَا بَلَغَتِ ٱلْحُلْقُومَ"
+    }
+   ],
+   "root_arabic": "ح ل ق",
+   "root_buckwalter": "Hlq",
+   "root_id": "Hlq",
+   "artifact_name": "_48_lq.json",
+   "verse_ref": "56:83",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Huloquwma",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَلَوْلَآ إِذَا بَلَغَتِ ٱلْحُلْقُومَ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "UNRESOLVED",
+ "result_strength": "UNRESOLVED",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PARTIAL",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "2:196:12:1",
+  "48:27:14:1",
+  "56:83:4:2"
+ ],
+ "unreconciled_count": 3,
+ "resistant_occurrences": [
+  "2:196:12:1",
+  "48:27:14:1",
+  "56:83:4:2"
+ ],
+ "structural_uncertainty_occurrences": []
+}

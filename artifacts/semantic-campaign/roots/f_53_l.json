@@ -1,0 +1,1815 @@
+{
+ "root_arabic": "ف ص ل",
+ "root_buckwalter": "fSl",
+ "root_id": "fSl",
+ "artifact_name": "f_53_l.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch06-wave1-coverage",
+ "occurrences": 43,
+ "frozen_candidate_root_contribution": "drawing or making a decisive boundary that separates components and thereby renders a matter distinct, detailed, or settled",
+ "internal_discovery": {
+  "candidate_root_contribution": "drawing or making a decisive boundary that separates components and thereby renders a matter distinct, detailed, or settled",
+  "plain_explanation": "The 43 occurrences move from separating and judgment to detailed exposition and decisive speech. Separation supplies the boundary; Form II repeatedly makes internal distinctions explicit; judgment and 'word of decision' settle between alternatives.",
+  "layer_separation_note": "Form II adds caused/repeated articulation of distinctions; constructions supply objects such as signs or matters; judicial contexts supply authoritative settlement.",
+  "presence": {
+   "occurrences_total": 43,
+   "occurrences_checked": 43,
+   "occurrences_consistent": 43,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "Tafsil in exposition is not physical separation, yet it visibly partitions content into distinct intelligible elements.",
+  "competing_hypothesis": "The core is explanation/detailing; this fails base separation and judicial decision uses.",
+  "distinctiveness_note": "Distinct from merely clarifying and from judging generally: fSl foregrounds the boundary that makes alternatives or parts discrete.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "The boundary/distinction nucleus is universal, with controlled abstract extension from separation to exposition and settlement.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "form_ii_detailing",
+     "where": {
+      "qac_verb_form": [
+       "II"
+      ]
+     },
+     "occurrence_count_expected": 23,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "making distinctions explicit through detailing",
+     "classification_rationale": "Form II verbs and nominals consistently articulate a matter into distinguished parts.",
+     "supporting_evidence_note": "All 23 Form II contexts were reviewed.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "separation_and_decision",
+     "where": {
+      "qac_verb_form": [
+       null
+      ]
+     },
+     "occurrence_count_expected": 20,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "separation, boundary, or decisive settlement",
+     "classification_rationale": "Base and adjectival/noun contexts retain a boundary that separates or settles.",
+     "supporting_evidence_note": "All 20 underived contexts were reviewed across separation and judgment settings.",
+     "counterevidence": [
+      "Some judicial contexts lexicalize the result more than the separating process."
+     ]
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "fSl",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "All classes retain distinction through a boundary; no forced occurrence found."
+ },
+ "coverage_validation": {
+  "root": "fSl",
+  "expected_count": 43,
+  "researched_count": 43,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "10:24:40:1",
+   "disposition": "CONSISTENT",
+   "note": "Form II verbs and nominals consistently articulate a matter into distinguished parts.",
+   "coverage_cluster_id": "form_ii_detailing",
+   "candidate_semantic_interpretation": "making distinctions explicit through detailing",
+   "cluster_supporting_evidence": "All 23 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "10:24",
+     "verse_text": "إِنَّمَا مَثَلُ ٱلْحَيَوٰةِ ٱلدُّنْيَا كَمَآءٍ أَنزَلْنَٰهُ مِنَ ٱلسَّمَآءِ فَٱخْتَلَطَ بِهِۦ نَبَاتُ ٱلْأَرْضِ مِمَّا يَأْكُلُ ٱلنَّاسُ وَٱلْأَنْعَٰمُ حَتَّىٰٓ إِذَآ أَخَذَتِ ٱلْأَرْضُ زُخْرُفَهَا وَٱزَّيَّنَتْ وَظَنَّ أَهْلُهَآ أَنَّهُمْ قَٰدِرُونَ عَلَيْهَآ أَتَىٰهَآ أَمْرُنَا لَيْلًا أَوْ نَهَارًا فَجَعَلْنَٰهَا حَصِيدًا كَأَن لَّمْ تَغْنَ بِٱلْأَمْسِ كَذَٰلِكَ نُفَصِّلُ ٱلْـَٔايَٰتِ لِقَوْمٍ يَتَفَكَّرُونَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "10:24",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "nufaS~ilu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّمَا مَثَلُ ٱلْحَيَوٰةِ ٱلدُّنْيَا كَمَآءٍ أَنزَلْنَٰهُ مِنَ ٱلسَّمَآءِ فَٱخْتَلَطَ بِهِۦ نَبَاتُ ٱلْأَرْضِ مِمَّا يَأْكُلُ ٱلنَّاسُ وَٱلْأَنْعَٰمُ حَتَّىٰٓ إِذَآ أَخَذَتِ ٱلْأَرْضُ زُخْرُفَهَا وَٱزَّيَّنَتْ وَظَنَّ أَهْلُهَآ أَنَّهُمْ قَٰدِرُونَ عَلَيْهَآ أَتَىٰهَآ أَمْرُنَا لَيْلًا أَوْ نَهَارًا فَجَعَلْنَٰهَا حَصِيدًا كَأَن لَّمْ تَغْنَ بِٱلْأَمْسِ كَذَٰلِكَ نُفَصِّلُ ٱلْـَٔايَٰتِ لِقَوْمٍ يَتَفَكَّرُونَ"
+  },
+  {
+   "word_ref": "10:37:15:2",
+   "disposition": "CONSISTENT",
+   "note": "Form II verbs and nominals consistently articulate a matter into distinguished parts.",
+   "coverage_cluster_id": "form_ii_detailing",
+   "candidate_semantic_interpretation": "making distinctions explicit through detailing",
+   "cluster_supporting_evidence": "All 23 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "10:37",
+     "verse_text": "وَمَا كَانَ هَٰذَا ٱلْقُرْءَانُ أَن يُفْتَرَىٰ مِن دُونِ ٱللَّهِ وَلَٰكِن تَصْدِيقَ ٱلَّذِى بَيْنَ يَدَيْهِ وَتَفْصِيلَ ٱلْكِتَٰبِ لَا رَيْبَ فِيهِ مِن رَّبِّ ٱلْعَٰلَمِينَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "10:37",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tafoSiyla",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": "II",
+   "morphology": "N(II)",
+   "form": "N(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَمَا كَانَ هَٰذَا ٱلْقُرْءَانُ أَن يُفْتَرَىٰ مِن دُونِ ٱللَّهِ وَلَٰكِن تَصْدِيقَ ٱلَّذِى بَيْنَ يَدَيْهِ وَتَفْصِيلَ ٱلْكِتَٰبِ لَا رَيْبَ فِيهِ مِن رَّبِّ ٱلْعَٰلَمِينَ"
+  },
+  {
+   "word_ref": "10:5:20:1",
+   "disposition": "CONSISTENT",
+   "note": "Form II verbs and nominals consistently articulate a matter into distinguished parts.",
+   "coverage_cluster_id": "form_ii_detailing",
+   "candidate_semantic_interpretation": "making distinctions explicit through detailing",
+   "cluster_supporting_evidence": "All 23 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "10:5",
+     "verse_text": "هُوَ ٱلَّذِى جَعَلَ ٱلشَّمْسَ ضِيَآءً وَٱلْقَمَرَ نُورًا وَقَدَّرَهُۥ مَنَازِلَ لِتَعْلَمُوا۟ عَدَدَ ٱلسِّنِينَ وَٱلْحِسَابَ مَا خَلَقَ ٱللَّهُ ذَٰلِكَ إِلَّا بِٱلْحَقِّ يُفَصِّلُ ٱلْـَٔايَٰتِ لِقَوْمٍ يَعْلَمُونَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "10:5",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yufaS~ilu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "هُوَ ٱلَّذِى جَعَلَ ٱلشَّمْسَ ضِيَآءً وَٱلْقَمَرَ نُورًا وَقَدَّرَهُۥ مَنَازِلَ لِتَعْلَمُوا۟ عَدَدَ ٱلسِّنِينَ وَٱلْحِسَابَ مَا خَلَقَ ٱللَّهُ ذَٰلِكَ إِلَّا بِٱلْحَقِّ يُفَصِّلُ ٱلْـَٔايَٰتِ لِقَوْمٍ يَعْلَمُونَ"
+  },
+  {
+   "word_ref": "11:1:6:1",
+   "disposition": "CONSISTENT",
+   "note": "Form II verbs and nominals consistently articulate a matter into distinguished parts.",
+   "coverage_cluster_id": "form_ii_detailing",
+   "candidate_semantic_interpretation": "making distinctions explicit through detailing",
+   "cluster_supporting_evidence": "All 23 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "11:1",
+     "verse_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ الٓر كِتَٰبٌ أُحْكِمَتْ ءَايَٰتُهُۥ ثُمَّ فُصِّلَتْ مِن لَّدُنْ حَكِيمٍ خَبِيرٍ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "11:1",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fuS~ilato",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ الٓر كِتَٰبٌ أُحْكِمَتْ ءَايَٰتُهُۥ ثُمَّ فُصِّلَتْ مِن لَّدُنْ حَكِيمٍ خَبِيرٍ"
+  },
+  {
+   "word_ref": "12:111:17:2",
+   "disposition": "CONSISTENT",
+   "note": "Form II verbs and nominals consistently articulate a matter into distinguished parts.",
+   "coverage_cluster_id": "form_ii_detailing",
+   "candidate_semantic_interpretation": "making distinctions explicit through detailing",
+   "cluster_supporting_evidence": "All 23 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "12:111",
+     "verse_text": "لَقَدْ كَانَ فِى قَصَصِهِمْ عِبْرَةٌ لِّأُو۟لِى ٱلْأَلْبَٰبِ مَا كَانَ حَدِيثًا يُفْتَرَىٰ وَلَٰكِن تَصْدِيقَ ٱلَّذِى بَيْنَ يَدَيْهِ وَتَفْصِيلَ كُلِّ شَىْءٍ وَهُدًى وَرَحْمَةً لِّقَوْمٍ يُؤْمِنُونَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "12:111",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tafoSiyla",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": "II",
+   "morphology": "N(II)",
+   "form": "N(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لَقَدْ كَانَ فِى قَصَصِهِمْ عِبْرَةٌ لِّأُو۟لِى ٱلْأَلْبَٰبِ مَا كَانَ حَدِيثًا يُفْتَرَىٰ وَلَٰكِن تَصْدِيقَ ٱلَّذِى بَيْنَ يَدَيْهِ وَتَفْصِيلَ كُلِّ شَىْءٍ وَهُدًى وَرَحْمَةً لِّقَوْمٍ يُؤْمِنُونَ"
+  },
+  {
+   "word_ref": "12:94:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Base and adjectival/noun contexts retain a boundary that separates or settles.",
+   "coverage_cluster_id": "separation_and_decision",
+   "candidate_semantic_interpretation": "separation, boundary, or decisive settlement",
+   "cluster_supporting_evidence": "All 20 underived contexts were reviewed across separation and judgment settings.",
+   "counterevidence": [
+    "Some judicial contexts lexicalize the result more than the separating process."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "12:94",
+     "verse_text": "وَلَمَّا فَصَلَتِ ٱلْعِيرُ قَالَ أَبُوهُمْ إِنِّى لَأَجِدُ رِيحَ يُوسُفَ لَوْلَآ أَن تُفَنِّدُونِ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "12:94",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "faSalati",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَمَّا فَصَلَتِ ٱلْعِيرُ قَالَ أَبُوهُمْ إِنِّى لَأَجِدُ رِيحَ يُوسُفَ لَوْلَآ أَن تُفَنِّدُونِ"
+  },
+  {
+   "word_ref": "13:2:21:1",
+   "disposition": "CONSISTENT",
+   "note": "Form II verbs and nominals consistently articulate a matter into distinguished parts.",
+   "coverage_cluster_id": "form_ii_detailing",
+   "candidate_semantic_interpretation": "making distinctions explicit through detailing",
+   "cluster_supporting_evidence": "All 23 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "13:2",
+     "verse_text": "ٱللَّهُ ٱلَّذِى رَفَعَ ٱلسَّمَٰوَٰتِ بِغَيْرِ عَمَدٍ تَرَوْنَهَا ثُمَّ ٱسْتَوَىٰ عَلَى ٱلْعَرْشِ وَسَخَّرَ ٱلشَّمْسَ وَٱلْقَمَرَ كُلٌّ يَجْرِى لِأَجَلٍ مُّسَمًّى يُدَبِّرُ ٱلْأَمْرَ يُفَصِّلُ ٱلْـَٔايَٰتِ لَعَلَّكُم بِلِقَآءِ رَبِّكُمْ تُوقِنُونَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "13:2",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yufaS~ilu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱللَّهُ ٱلَّذِى رَفَعَ ٱلسَّمَٰوَٰتِ بِغَيْرِ عَمَدٍ تَرَوْنَهَا ثُمَّ ٱسْتَوَىٰ عَلَى ٱلْعَرْشِ وَسَخَّرَ ٱلشَّمْسَ وَٱلْقَمَرَ كُلٌّ يَجْرِى لِأَجَلٍ مُّسَمًّى يُدَبِّرُ ٱلْأَمْرَ يُفَصِّلُ ٱلْـَٔايَٰتِ لَعَلَّكُم بِلِقَآءِ رَبِّكُمْ تُوقِنُونَ"
+  },
+  {
+   "word_ref": "17:12:22:1",
+   "disposition": "CONSISTENT",
+   "note": "Form II verbs and nominals consistently articulate a matter into distinguished parts.",
+   "coverage_cluster_id": "form_ii_detailing",
+   "candidate_semantic_interpretation": "making distinctions explicit through detailing",
+   "cluster_supporting_evidence": "All 23 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "17:12",
+     "verse_text": "وَجَعَلْنَا ٱلَّيْلَ وَٱلنَّهَارَ ءَايَتَيْنِ فَمَحَوْنَآ ءَايَةَ ٱلَّيْلِ وَجَعَلْنَآ ءَايَةَ ٱلنَّهَارِ مُبْصِرَةً لِّتَبْتَغُوا۟ فَضْلًا مِّن رَّبِّكُمْ وَلِتَعْلَمُوا۟ عَدَدَ ٱلسِّنِينَ وَٱلْحِسَابَ وَكُلَّ شَىْءٍ فَصَّلْنَٰهُ تَفْصِيلًا"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "17:12",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "faS~alo",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَجَعَلْنَا ٱلَّيْلَ وَٱلنَّهَارَ ءَايَتَيْنِ فَمَحَوْنَآ ءَايَةَ ٱلَّيْلِ وَجَعَلْنَآ ءَايَةَ ٱلنَّهَارِ مُبْصِرَةً لِّتَبْتَغُوا۟ فَضْلًا مِّن رَّبِّكُمْ وَلِتَعْلَمُوا۟ عَدَدَ ٱلسِّنِينَ وَٱلْحِسَابَ وَكُلَّ شَىْءٍ فَصَّلْنَٰهُ تَفْصِيلًا"
+  },
+  {
+   "word_ref": "17:12:23:1",
+   "disposition": "CONSISTENT",
+   "note": "Form II verbs and nominals consistently articulate a matter into distinguished parts.",
+   "coverage_cluster_id": "form_ii_detailing",
+   "candidate_semantic_interpretation": "making distinctions explicit through detailing",
+   "cluster_supporting_evidence": "All 23 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "17:12",
+     "verse_text": "وَجَعَلْنَا ٱلَّيْلَ وَٱلنَّهَارَ ءَايَتَيْنِ فَمَحَوْنَآ ءَايَةَ ٱلَّيْلِ وَجَعَلْنَآ ءَايَةَ ٱلنَّهَارِ مُبْصِرَةً لِّتَبْتَغُوا۟ فَضْلًا مِّن رَّبِّكُمْ وَلِتَعْلَمُوا۟ عَدَدَ ٱلسِّنِينَ وَٱلْحِسَابَ وَكُلَّ شَىْءٍ فَصَّلْنَٰهُ تَفْصِيلًا"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "17:12",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tafoSiylFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": "II",
+   "morphology": "N(II)",
+   "form": "N(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَجَعَلْنَا ٱلَّيْلَ وَٱلنَّهَارَ ءَايَتَيْنِ فَمَحَوْنَآ ءَايَةَ ٱلَّيْلِ وَجَعَلْنَآ ءَايَةَ ٱلنَّهَارِ مُبْصِرَةً لِّتَبْتَغُوا۟ فَضْلًا مِّن رَّبِّكُمْ وَلِتَعْلَمُوا۟ عَدَدَ ٱلسِّنِينَ وَٱلْحِسَابَ وَكُلَّ شَىْءٍ فَصَّلْنَٰهُ تَفْصِيلًا"
+  },
+  {
+   "word_ref": "22:17:13:1",
+   "disposition": "CONSISTENT",
+   "note": "Base and adjectival/noun contexts retain a boundary that separates or settles.",
+   "coverage_cluster_id": "separation_and_decision",
+   "candidate_semantic_interpretation": "separation, boundary, or decisive settlement",
+   "cluster_supporting_evidence": "All 20 underived contexts were reviewed across separation and judgment settings.",
+   "counterevidence": [
+    "Some judicial contexts lexicalize the result more than the separating process."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "22:17",
+     "verse_text": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَٱلَّذِينَ هَادُوا۟ وَٱلصَّٰبِـِٔينَ وَٱلنَّصَٰرَىٰ وَٱلْمَجُوسَ وَٱلَّذِينَ أَشْرَكُوٓا۟ إِنَّ ٱللَّهَ يَفْصِلُ بَيْنَهُمْ يَوْمَ ٱلْقِيَٰمَةِ إِنَّ ٱللَّهَ عَلَىٰ كُلِّ شَىْءٍ شَهِيدٌ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "22:17",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yafoSilu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَٱلَّذِينَ هَادُوا۟ وَٱلصَّٰبِـِٔينَ وَٱلنَّصَٰرَىٰ وَٱلْمَجُوسَ وَٱلَّذِينَ أَشْرَكُوٓا۟ إِنَّ ٱللَّهَ يَفْصِلُ بَيْنَهُمْ يَوْمَ ٱلْقِيَٰمَةِ إِنَّ ٱللَّهَ عَلَىٰ كُلِّ شَىْءٍ شَهِيدٌ"
+  },
+  {
+   "word_ref": "2:233:36:1",
+   "disposition": "CONSISTENT",
+   "note": "Base and adjectival/noun contexts retain a boundary that separates or settles.",
+   "coverage_cluster_id": "separation_and_decision",
+   "candidate_semantic_interpretation": "separation, boundary, or decisive settlement",
+   "cluster_supporting_evidence": "All 20 underived contexts were reviewed across separation and judgment settings.",
+   "counterevidence": [
+    "Some judicial contexts lexicalize the result more than the separating process."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:233",
+     "verse_text": "وَٱلْوَٰلِدَٰتُ يُرْضِعْنَ أَوْلَٰدَهُنَّ حَوْلَيْنِ كَامِلَيْنِ لِمَنْ أَرَادَ أَن يُتِمَّ ٱلرَّضَاعَةَ وَعَلَى ٱلْمَوْلُودِ لَهُۥ رِزْقُهُنَّ وَكِسْوَتُهُنَّ بِٱلْمَعْرُوفِ لَا تُكَلَّفُ نَفْسٌ إِلَّا وُسْعَهَا لَا تُضَآرَّ وَٰلِدَةٌۢ بِوَلَدِهَا وَلَا مَوْلُودٌ لَّهُۥ بِوَلَدِهِۦ وَعَلَى ٱلْوَارِثِ مِثْلُ ذَٰلِكَ فَإِنْ أَرَادَا فِصَالًا عَن تَرَاضٍ مِّنْهُمَا وَتَشَاوُرٍ فَلَا جُنَاحَ عَلَيْهِمَا وَإِنْ أَرَدتُّمْ أَن تَسْتَرْضِعُوٓا۟ أَوْلَٰدَكُمْ فَلَا جُنَاحَ عَلَيْكُمْ إِذَا سَلَّمْتُم مَّآ ءَاتَيْتُم بِٱلْمَعْرُوفِ وَٱتَّقُوا۟ ٱللَّهَ وَٱعْلَمُوٓا۟ أَنَّ ٱللَّهَ بِمَا تَعْمَلُونَ بَصِيرٌ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "2:233",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fiSaAlFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱلْوَٰلِدَٰتُ يُرْضِعْنَ أَوْلَٰدَهُنَّ حَوْلَيْنِ كَامِلَيْنِ لِمَنْ أَرَادَ أَن يُتِمَّ ٱلرَّضَاعَةَ وَعَلَى ٱلْمَوْلُودِ لَهُۥ رِزْقُهُنَّ وَكِسْوَتُهُنَّ بِٱلْمَعْرُوفِ لَا تُكَلَّفُ نَفْسٌ إِلَّا وُسْعَهَا لَا تُضَآرَّ وَٰلِدَةٌۢ بِوَلَدِهَا وَلَا مَوْلُودٌ لَّهُۥ بِوَلَدِهِۦ وَعَلَى ٱلْوَارِثِ مِثْلُ ذَٰلِكَ فَإِنْ أَرَادَا فِصَالًا عَن تَرَاضٍ مِّنْهُمَا وَتَشَاوُرٍ فَلَا جُنَاحَ عَلَيْهِمَا وَإِنْ أَرَدتُّمْ أَن تَسْتَرْضِعُوٓا۟ أَوْلَٰدَكُمْ فَلَا جُنَاحَ عَلَيْكُمْ إِذَا سَلَّمْتُم مَّآ ءَاتَيْتُم بِٱلْمَعْرُوفِ وَٱتَّقُوا۟ ٱللَّهَ وَٱعْلَمُوٓا۟ أَنَّ ٱللَّهَ بِمَا تَعْمَلُونَ بَصِيرٌ"
+  },
+  {
+   "word_ref": "2:249:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Base and adjectival/noun contexts retain a boundary that separates or settles.",
+   "coverage_cluster_id": "separation_and_decision",
+   "candidate_semantic_interpretation": "separation, boundary, or decisive settlement",
+   "cluster_supporting_evidence": "All 20 underived contexts were reviewed across separation and judgment settings.",
+   "counterevidence": [
+    "Some judicial contexts lexicalize the result more than the separating process."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:249",
+     "verse_text": "فَلَمَّا فَصَلَ طَالُوتُ بِٱلْجُنُودِ قَالَ إِنَّ ٱللَّهَ مُبْتَلِيكُم بِنَهَرٍ فَمَن شَرِبَ مِنْهُ فَلَيْسَ مِنِّى وَمَن لَّمْ يَطْعَمْهُ فَإِنَّهُۥ مِنِّىٓ إِلَّا مَنِ ٱغْتَرَفَ غُرْفَةًۢ بِيَدِهِۦ فَشَرِبُوا۟ مِنْهُ إِلَّا قَلِيلًا مِّنْهُمْ فَلَمَّا جَاوَزَهُۥ هُوَ وَٱلَّذِينَ ءَامَنُوا۟ مَعَهُۥ قَالُوا۟ لَا طَاقَةَ لَنَا ٱلْيَوْمَ بِجَالُوتَ وَجُنُودِهِۦ قَالَ ٱلَّذِينَ يَظُنُّونَ أَنَّهُم مُّلَٰقُوا۟ ٱللَّهِ كَم مِّن فِئَةٍ قَلِيلَةٍ غَلَبَتْ فِئَةً كَثِيرَةًۢ بِإِذْنِ ٱللَّهِ وَٱللَّهُ مَعَ ٱلصَّٰبِرِينَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "2:249",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "faSala",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَلَمَّا فَصَلَ طَالُوتُ بِٱلْجُنُودِ قَالَ إِنَّ ٱللَّهَ مُبْتَلِيكُم بِنَهَرٍ فَمَن شَرِبَ مِنْهُ فَلَيْسَ مِنِّى وَمَن لَّمْ يَطْعَمْهُ فَإِنَّهُۥ مِنِّىٓ إِلَّا مَنِ ٱغْتَرَفَ غُرْفَةًۢ بِيَدِهِۦ فَشَرِبُوا۟ مِنْهُ إِلَّا قَلِيلًا مِّنْهُمْ فَلَمَّا جَاوَزَهُۥ هُوَ وَٱلَّذِينَ ءَامَنُوا۟ مَعَهُۥ قَالُوا۟ لَا طَاقَةَ لَنَا ٱلْيَوْمَ بِجَالُوتَ وَجُنُودِهِۦ قَالَ ٱلَّذِينَ يَظُنُّونَ أَنَّهُم مُّلَٰقُوا۟ ٱللَّهِ كَم مِّن فِئَةٍ قَلِيلَةٍ غَلَبَتْ فِئَةً كَثِيرَةًۢ بِإِذْنِ ٱللَّهِ وَٱللَّهُ مَعَ ٱلصَّٰبِرِينَ"
+  },
+  {
+   "word_ref": "30:28:24:1",
+   "disposition": "CONSISTENT",
+   "note": "Form II verbs and nominals consistently articulate a matter into distinguished parts.",
+   "coverage_cluster_id": "form_ii_detailing",
+   "candidate_semantic_interpretation": "making distinctions explicit through detailing",
+   "cluster_supporting_evidence": "All 23 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "30:28",
+     "verse_text": "ضَرَبَ لَكُم مَّثَلًا مِّنْ أَنفُسِكُمْ هَل لَّكُم مِّن مَّا مَلَكَتْ أَيْمَٰنُكُم مِّن شُرَكَآءَ فِى مَا رَزَقْنَٰكُمْ فَأَنتُمْ فِيهِ سَوَآءٌ تَخَافُونَهُمْ كَخِيفَتِكُمْ أَنفُسَكُمْ كَذَٰلِكَ نُفَصِّلُ ٱلْـَٔايَٰتِ لِقَوْمٍ يَعْقِلُونَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "30:28",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "nufaS~ilu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ضَرَبَ لَكُم مَّثَلًا مِّنْ أَنفُسِكُمْ هَل لَّكُم مِّن مَّا مَلَكَتْ أَيْمَٰنُكُم مِّن شُرَكَآءَ فِى مَا رَزَقْنَٰكُمْ فَأَنتُمْ فِيهِ سَوَآءٌ تَخَافُونَهُمْ كَخِيفَتِكُمْ أَنفُسَكُمْ كَذَٰلِكَ نُفَصِّلُ ٱلْـَٔايَٰتِ لِقَوْمٍ يَعْقِلُونَ"
+  },
+  {
+   "word_ref": "31:14:9:2",
+   "disposition": "CONSISTENT",
+   "note": "Base and adjectival/noun contexts retain a boundary that separates or settles.",
+   "coverage_cluster_id": "separation_and_decision",
+   "candidate_semantic_interpretation": "separation, boundary, or decisive settlement",
+   "cluster_supporting_evidence": "All 20 underived contexts were reviewed across separation and judgment settings.",
+   "counterevidence": [
+    "Some judicial contexts lexicalize the result more than the separating process."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "31:14",
+     "verse_text": "وَوَصَّيْنَا ٱلْإِنسَٰنَ بِوَٰلِدَيْهِ حَمَلَتْهُ أُمُّهُۥ وَهْنًا عَلَىٰ وَهْنٍ وَفِصَٰلُهُۥ فِى عَامَيْنِ أَنِ ٱشْكُرْ لِى وَلِوَٰلِدَيْكَ إِلَىَّ ٱلْمَصِيرُ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "31:14",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fiSa`lu",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَوَصَّيْنَا ٱلْإِنسَٰنَ بِوَٰلِدَيْهِ حَمَلَتْهُ أُمُّهُۥ وَهْنًا عَلَىٰ وَهْنٍ وَفِصَٰلُهُۥ فِى عَامَيْنِ أَنِ ٱشْكُرْ لِى وَلِوَٰلِدَيْكَ إِلَىَّ ٱلْمَصِيرُ"
+  },
+  {
+   "word_ref": "32:25:4:1",
+   "disposition": "CONSISTENT",
+   "note": "Base and adjectival/noun contexts retain a boundary that separates or settles.",
+   "coverage_cluster_id": "separation_and_decision",
+   "candidate_semantic_interpretation": "separation, boundary, or decisive settlement",
+   "cluster_supporting_evidence": "All 20 underived contexts were reviewed across separation and judgment settings.",
+   "counterevidence": [
+    "Some judicial contexts lexicalize the result more than the separating process."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "32:25",
+     "verse_text": "إِنَّ رَبَّكَ هُوَ يَفْصِلُ بَيْنَهُمْ يَوْمَ ٱلْقِيَٰمَةِ فِيمَا كَانُوا۟ فِيهِ يَخْتَلِفُونَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "32:25",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yafoSilu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ رَبَّكَ هُوَ يَفْصِلُ بَيْنَهُمْ يَوْمَ ٱلْقِيَٰمَةِ فِيمَا كَانُوا۟ فِيهِ يَخْتَلِفُونَ"
+  },
+  {
+   "word_ref": "37:21:3:2",
+   "disposition": "CONSISTENT",
+   "note": "Base and adjectival/noun contexts retain a boundary that separates or settles.",
+   "coverage_cluster_id": "separation_and_decision",
+   "candidate_semantic_interpretation": "separation, boundary, or decisive settlement",
+   "cluster_supporting_evidence": "All 20 underived contexts were reviewed across separation and judgment settings.",
+   "counterevidence": [
+    "Some judicial contexts lexicalize the result more than the separating process."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "37:21",
+     "verse_text": "هَٰذَا يَوْمُ ٱلْفَصْلِ ٱلَّذِى كُنتُم بِهِۦ تُكَذِّبُونَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "37:21",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "faSoli",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "هَٰذَا يَوْمُ ٱلْفَصْلِ ٱلَّذِى كُنتُم بِهِۦ تُكَذِّبُونَ"
+  },
+  {
+   "word_ref": "38:20:5:2",
+   "disposition": "CONSISTENT",
+   "note": "Base and adjectival/noun contexts retain a boundary that separates or settles.",
+   "coverage_cluster_id": "separation_and_decision",
+   "candidate_semantic_interpretation": "separation, boundary, or decisive settlement",
+   "cluster_supporting_evidence": "All 20 underived contexts were reviewed across separation and judgment settings.",
+   "counterevidence": [
+    "Some judicial contexts lexicalize the result more than the separating process."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "38:20",
+     "verse_text": "وَشَدَدْنَا مُلْكَهُۥ وَءَاتَيْنَٰهُ ٱلْحِكْمَةَ وَفَصْلَ ٱلْخِطَابِ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "38:20",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "faSola",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَشَدَدْنَا مُلْكَهُۥ وَءَاتَيْنَٰهُ ٱلْحِكْمَةَ وَفَصْلَ ٱلْخِطَابِ"
+  },
+  {
+   "word_ref": "41:3:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Form II verbs and nominals consistently articulate a matter into distinguished parts.",
+   "coverage_cluster_id": "form_ii_detailing",
+   "candidate_semantic_interpretation": "making distinctions explicit through detailing",
+   "cluster_supporting_evidence": "All 23 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "41:3",
+     "verse_text": "كِتَٰبٌ فُصِّلَتْ ءَايَٰتُهُۥ قُرْءَانًا عَرَبِيًّا لِّقَوْمٍ يَعْلَمُونَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "41:3",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fuS~ilato",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "كِتَٰبٌ فُصِّلَتْ ءَايَٰتُهُۥ قُرْءَانًا عَرَبِيًّا لِّقَوْمٍ يَعْلَمُونَ"
+  },
+  {
+   "word_ref": "41:44:7:1",
+   "disposition": "CONSISTENT",
+   "note": "Form II verbs and nominals consistently articulate a matter into distinguished parts.",
+   "coverage_cluster_id": "form_ii_detailing",
+   "candidate_semantic_interpretation": "making distinctions explicit through detailing",
+   "cluster_supporting_evidence": "All 23 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "41:44",
+     "verse_text": "وَلَوْ جَعَلْنَٰهُ قُرْءَانًا أَعْجَمِيًّا لَّقَالُوا۟ لَوْلَا فُصِّلَتْ ءَايَٰتُهُۥٓ ءَا۬عْجَمِىٌّ وَعَرَبِىٌّ قُلْ هُوَ لِلَّذِينَ ءَامَنُوا۟ هُدًى وَشِفَآءٌ وَٱلَّذِينَ لَا يُؤْمِنُونَ فِىٓ ءَاذَانِهِمْ وَقْرٌ وَهُوَ عَلَيْهِمْ عَمًى أُو۟لَٰٓئِكَ يُنَادَوْنَ مِن مَّكَانٍۭ بَعِيدٍ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "41:44",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fuS~ilato",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَوْ جَعَلْنَٰهُ قُرْءَانًا أَعْجَمِيًّا لَّقَالُوا۟ لَوْلَا فُصِّلَتْ ءَايَٰتُهُۥٓ ءَا۬عْجَمِىٌّ وَعَرَبِىٌّ قُلْ هُوَ لِلَّذِينَ ءَامَنُوا۟ هُدًى وَشِفَآءٌ وَٱلَّذِينَ لَا يُؤْمِنُونَ فِىٓ ءَاذَانِهِمْ وَقْرٌ وَهُوَ عَلَيْهِمْ عَمًى أُو۟لَٰٓئِكَ يُنَادَوْنَ مِن مَّكَانٍۭ بَعِيدٍ"
+  },
+  {
+   "word_ref": "42:21:15:2",
+   "disposition": "CONSISTENT",
+   "note": "Base and adjectival/noun contexts retain a boundary that separates or settles.",
+   "coverage_cluster_id": "separation_and_decision",
+   "candidate_semantic_interpretation": "separation, boundary, or decisive settlement",
+   "cluster_supporting_evidence": "All 20 underived contexts were reviewed across separation and judgment settings.",
+   "counterevidence": [
+    "Some judicial contexts lexicalize the result more than the separating process."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "42:21",
+     "verse_text": "أَمْ لَهُمْ شُرَكَٰٓؤُا۟ شَرَعُوا۟ لَهُم مِّنَ ٱلدِّينِ مَا لَمْ يَأْذَنۢ بِهِ ٱللَّهُ وَلَوْلَا كَلِمَةُ ٱلْفَصْلِ لَقُضِىَ بَيْنَهُمْ وَإِنَّ ٱلظَّٰلِمِينَ لَهُمْ عَذَابٌ أَلِيمٌ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "42:21",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "faSoli",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَمْ لَهُمْ شُرَكَٰٓؤُا۟ شَرَعُوا۟ لَهُم مِّنَ ٱلدِّينِ مَا لَمْ يَأْذَنۢ بِهِ ٱللَّهُ وَلَوْلَا كَلِمَةُ ٱلْفَصْلِ لَقُضِىَ بَيْنَهُمْ وَإِنَّ ٱلظَّٰلِمِينَ لَهُمْ عَذَابٌ أَلِيمٌ"
+  },
+  {
+   "word_ref": "44:40:3:2",
+   "disposition": "CONSISTENT",
+   "note": "Base and adjectival/noun contexts retain a boundary that separates or settles.",
+   "coverage_cluster_id": "separation_and_decision",
+   "candidate_semantic_interpretation": "separation, boundary, or decisive settlement",
+   "cluster_supporting_evidence": "All 20 underived contexts were reviewed across separation and judgment settings.",
+   "counterevidence": [
+    "Some judicial contexts lexicalize the result more than the separating process."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "44:40",
+     "verse_text": "إِنَّ يَوْمَ ٱلْفَصْلِ مِيقَٰتُهُمْ أَجْمَعِينَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "44:40",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "faSoli",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ يَوْمَ ٱلْفَصْلِ مِيقَٰتُهُمْ أَجْمَعِينَ"
+  },
+  {
+   "word_ref": "46:15:11:2",
+   "disposition": "CONSISTENT",
+   "note": "Base and adjectival/noun contexts retain a boundary that separates or settles.",
+   "coverage_cluster_id": "separation_and_decision",
+   "candidate_semantic_interpretation": "separation, boundary, or decisive settlement",
+   "cluster_supporting_evidence": "All 20 underived contexts were reviewed across separation and judgment settings.",
+   "counterevidence": [
+    "Some judicial contexts lexicalize the result more than the separating process."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "46:15",
+     "verse_text": "وَوَصَّيْنَا ٱلْإِنسَٰنَ بِوَٰلِدَيْهِ إِحْسَٰنًا حَمَلَتْهُ أُمُّهُۥ كُرْهًا وَوَضَعَتْهُ كُرْهًا وَحَمْلُهُۥ وَفِصَٰلُهُۥ ثَلَٰثُونَ شَهْرًا حَتَّىٰٓ إِذَا بَلَغَ أَشُدَّهُۥ وَبَلَغَ أَرْبَعِينَ سَنَةً قَالَ رَبِّ أَوْزِعْنِىٓ أَنْ أَشْكُرَ نِعْمَتَكَ ٱلَّتِىٓ أَنْعَمْتَ عَلَىَّ وَعَلَىٰ وَٰلِدَىَّ وَأَنْ أَعْمَلَ صَٰلِحًا تَرْضَىٰهُ وَأَصْلِحْ لِى فِى ذُرِّيَّتِىٓ إِنِّى تُبْتُ إِلَيْكَ وَإِنِّى مِنَ ٱلْمُسْلِمِينَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "46:15",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fiSa`lu",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَوَصَّيْنَا ٱلْإِنسَٰنَ بِوَٰلِدَيْهِ إِحْسَٰنًا حَمَلَتْهُ أُمُّهُۥ كُرْهًا وَوَضَعَتْهُ كُرْهًا وَحَمْلُهُۥ وَفِصَٰلُهُۥ ثَلَٰثُونَ شَهْرًا حَتَّىٰٓ إِذَا بَلَغَ أَشُدَّهُۥ وَبَلَغَ أَرْبَعِينَ سَنَةً قَالَ رَبِّ أَوْزِعْنِىٓ أَنْ أَشْكُرَ نِعْمَتَكَ ٱلَّتِىٓ أَنْعَمْتَ عَلَىَّ وَعَلَىٰ وَٰلِدَىَّ وَأَنْ أَعْمَلَ صَٰلِحًا تَرْضَىٰهُ وَأَصْلِحْ لِى فِى ذُرِّيَّتِىٓ إِنِّى تُبْتُ إِلَيْكَ وَإِنِّى مِنَ ٱلْمُسْلِمِينَ"
+  },
+  {
+   "word_ref": "60:3:8:1",
+   "disposition": "CONSISTENT",
+   "note": "Base and adjectival/noun contexts retain a boundary that separates or settles.",
+   "coverage_cluster_id": "separation_and_decision",
+   "candidate_semantic_interpretation": "separation, boundary, or decisive settlement",
+   "cluster_supporting_evidence": "All 20 underived contexts were reviewed across separation and judgment settings.",
+   "counterevidence": [
+    "Some judicial contexts lexicalize the result more than the separating process."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "60:3",
+     "verse_text": "لَن تَنفَعَكُمْ أَرْحَامُكُمْ وَلَآ أَوْلَٰدُكُمْ يَوْمَ ٱلْقِيَٰمَةِ يَفْصِلُ بَيْنَكُمْ وَٱللَّهُ بِمَا تَعْمَلُونَ بَصِيرٌ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "60:3",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yafoSilu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لَن تَنفَعَكُمْ أَرْحَامُكُمْ وَلَآ أَوْلَٰدُكُمْ يَوْمَ ٱلْقِيَٰمَةِ يَفْصِلُ بَيْنَكُمْ وَٱللَّهُ بِمَا تَعْمَلُونَ بَصِيرٌ"
+  },
+  {
+   "word_ref": "6:114:10:1",
+   "disposition": "CONSISTENT",
+   "note": "Form II verbs and nominals consistently articulate a matter into distinguished parts.",
+   "coverage_cluster_id": "form_ii_detailing",
+   "candidate_semantic_interpretation": "making distinctions explicit through detailing",
+   "cluster_supporting_evidence": "All 23 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:114",
+     "verse_text": "أَفَغَيْرَ ٱللَّهِ أَبْتَغِى حَكَمًا وَهُوَ ٱلَّذِىٓ أَنزَلَ إِلَيْكُمُ ٱلْكِتَٰبَ مُفَصَّلًا وَٱلَّذِينَ ءَاتَيْنَٰهُمُ ٱلْكِتَٰبَ يَعْلَمُونَ أَنَّهُۥ مُنَزَّلٌ مِّن رَّبِّكَ بِٱلْحَقِّ فَلَا تَكُونَنَّ مِنَ ٱلْمُمْتَرِينَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "6:114",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "mufaS~alFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": "II",
+   "morphology": "N(II)",
+   "form": "N(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَفَغَيْرَ ٱللَّهِ أَبْتَغِى حَكَمًا وَهُوَ ٱلَّذِىٓ أَنزَلَ إِلَيْكُمُ ٱلْكِتَٰبَ مُفَصَّلًا وَٱلَّذِينَ ءَاتَيْنَٰهُمُ ٱلْكِتَٰبَ يَعْلَمُونَ أَنَّهُۥ مُنَزَّلٌ مِّن رَّبِّكَ بِٱلْحَقِّ فَلَا تَكُونَنَّ مِنَ ٱلْمُمْتَرِينَ"
+  },
+  {
+   "word_ref": "6:119:11:1",
+   "disposition": "CONSISTENT",
+   "note": "Form II verbs and nominals consistently articulate a matter into distinguished parts.",
+   "coverage_cluster_id": "form_ii_detailing",
+   "candidate_semantic_interpretation": "making distinctions explicit through detailing",
+   "cluster_supporting_evidence": "All 23 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:119",
+     "verse_text": "وَمَا لَكُمْ أَلَّا تَأْكُلُوا۟ مِمَّا ذُكِرَ ٱسْمُ ٱللَّهِ عَلَيْهِ وَقَدْ فَصَّلَ لَكُم مَّا حَرَّمَ عَلَيْكُمْ إِلَّا مَا ٱضْطُرِرْتُمْ إِلَيْهِ وَإِنَّ كَثِيرًا لَّيُضِلُّونَ بِأَهْوَآئِهِم بِغَيْرِ عِلْمٍ إِنَّ رَبَّكَ هُوَ أَعْلَمُ بِٱلْمُعْتَدِينَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "6:119",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "faS~ala",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَمَا لَكُمْ أَلَّا تَأْكُلُوا۟ مِمَّا ذُكِرَ ٱسْمُ ٱللَّهِ عَلَيْهِ وَقَدْ فَصَّلَ لَكُم مَّا حَرَّمَ عَلَيْكُمْ إِلَّا مَا ٱضْطُرِرْتُمْ إِلَيْهِ وَإِنَّ كَثِيرًا لَّيُضِلُّونَ بِأَهْوَآئِهِم بِغَيْرِ عِلْمٍ إِنَّ رَبَّكَ هُوَ أَعْلَمُ بِٱلْمُعْتَدِينَ"
+  },
+  {
+   "word_ref": "6:126:6:1",
+   "disposition": "CONSISTENT",
+   "note": "Form II verbs and nominals consistently articulate a matter into distinguished parts.",
+   "coverage_cluster_id": "form_ii_detailing",
+   "candidate_semantic_interpretation": "making distinctions explicit through detailing",
+   "cluster_supporting_evidence": "All 23 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:126",
+     "verse_text": "وَهَٰذَا صِرَٰطُ رَبِّكَ مُسْتَقِيمًا قَدْ فَصَّلْنَا ٱلْـَٔايَٰتِ لِقَوْمٍ يَذَّكَّرُونَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "6:126",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "faS~alo",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَهَٰذَا صِرَٰطُ رَبِّكَ مُسْتَقِيمًا قَدْ فَصَّلْنَا ٱلْـَٔايَٰتِ لِقَوْمٍ يَذَّكَّرُونَ"
+  },
+  {
+   "word_ref": "6:154:9:2",
+   "disposition": "CONSISTENT",
+   "note": "Form II verbs and nominals consistently articulate a matter into distinguished parts.",
+   "coverage_cluster_id": "form_ii_detailing",
+   "candidate_semantic_interpretation": "making distinctions explicit through detailing",
+   "cluster_supporting_evidence": "All 23 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:154",
+     "verse_text": "ثُمَّ ءَاتَيْنَا مُوسَى ٱلْكِتَٰبَ تَمَامًا عَلَى ٱلَّذِىٓ أَحْسَنَ وَتَفْصِيلًا لِّكُلِّ شَىْءٍ وَهُدًى وَرَحْمَةً لَّعَلَّهُم بِلِقَآءِ رَبِّهِمْ يُؤْمِنُونَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "6:154",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tafoSiylFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": "II",
+   "morphology": "N(II)",
+   "form": "N(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ثُمَّ ءَاتَيْنَا مُوسَى ٱلْكِتَٰبَ تَمَامًا عَلَى ٱلَّذِىٓ أَحْسَنَ وَتَفْصِيلًا لِّكُلِّ شَىْءٍ وَهُدًى وَرَحْمَةً لَّعَلَّهُم بِلِقَآءِ رَبِّهِمْ يُؤْمِنُونَ"
+  },
+  {
+   "word_ref": "6:55:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Form II verbs and nominals consistently articulate a matter into distinguished parts.",
+   "coverage_cluster_id": "form_ii_detailing",
+   "candidate_semantic_interpretation": "making distinctions explicit through detailing",
+   "cluster_supporting_evidence": "All 23 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:55",
+     "verse_text": "وَكَذَٰلِكَ نُفَصِّلُ ٱلْـَٔايَٰتِ وَلِتَسْتَبِينَ سَبِيلُ ٱلْمُجْرِمِينَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "6:55",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "nufaS~ilu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَكَذَٰلِكَ نُفَصِّلُ ٱلْـَٔايَٰتِ وَلِتَسْتَبِينَ سَبِيلُ ٱلْمُجْرِمِينَ"
+  },
+  {
+   "word_ref": "6:57:22:2",
+   "disposition": "CONSISTENT",
+   "note": "Base and adjectival/noun contexts retain a boundary that separates or settles.",
+   "coverage_cluster_id": "separation_and_decision",
+   "candidate_semantic_interpretation": "separation, boundary, or decisive settlement",
+   "cluster_supporting_evidence": "All 20 underived contexts were reviewed across separation and judgment settings.",
+   "counterevidence": [
+    "Some judicial contexts lexicalize the result more than the separating process."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:57",
+     "verse_text": "قُلْ إِنِّى عَلَىٰ بَيِّنَةٍ مِّن رَّبِّى وَكَذَّبْتُم بِهِۦ مَا عِندِى مَا تَسْتَعْجِلُونَ بِهِۦٓ إِنِ ٱلْحُكْمُ إِلَّا لِلَّهِ يَقُصُّ ٱلْحَقَّ وَهُوَ خَيْرُ ٱلْفَٰصِلِينَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "6:57",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fa`Siliyna",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قُلْ إِنِّى عَلَىٰ بَيِّنَةٍ مِّن رَّبِّى وَكَذَّبْتُم بِهِۦ مَا عِندِى مَا تَسْتَعْجِلُونَ بِهِۦٓ إِنِ ٱلْحُكْمُ إِلَّا لِلَّهِ يَقُصُّ ٱلْحَقَّ وَهُوَ خَيْرُ ٱلْفَٰصِلِينَ"
+  },
+  {
+   "word_ref": "6:97:13:1",
+   "disposition": "CONSISTENT",
+   "note": "Form II verbs and nominals consistently articulate a matter into distinguished parts.",
+   "coverage_cluster_id": "form_ii_detailing",
+   "candidate_semantic_interpretation": "making distinctions explicit through detailing",
+   "cluster_supporting_evidence": "All 23 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:97",
+     "verse_text": "وَهُوَ ٱلَّذِى جَعَلَ لَكُمُ ٱلنُّجُومَ لِتَهْتَدُوا۟ بِهَا فِى ظُلُمَٰتِ ٱلْبَرِّ وَٱلْبَحْرِ قَدْ فَصَّلْنَا ٱلْـَٔايَٰتِ لِقَوْمٍ يَعْلَمُونَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "6:97",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "faS~alo",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَهُوَ ٱلَّذِى جَعَلَ لَكُمُ ٱلنُّجُومَ لِتَهْتَدُوا۟ بِهَا فِى ظُلُمَٰتِ ٱلْبَرِّ وَٱلْبَحْرِ قَدْ فَصَّلْنَا ٱلْـَٔايَٰتِ لِقَوْمٍ يَعْلَمُونَ"
+  },
+  {
+   "word_ref": "6:98:10:1",
+   "disposition": "CONSISTENT",
+   "note": "Form II verbs and nominals consistently articulate a matter into distinguished parts.",
+   "coverage_cluster_id": "form_ii_detailing",
+   "candidate_semantic_interpretation": "making distinctions explicit through detailing",
+   "cluster_supporting_evidence": "All 23 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:98",
+     "verse_text": "وَهُوَ ٱلَّذِىٓ أَنشَأَكُم مِّن نَّفْسٍ وَٰحِدَةٍ فَمُسْتَقَرٌّ وَمُسْتَوْدَعٌ قَدْ فَصَّلْنَا ٱلْـَٔايَٰتِ لِقَوْمٍ يَفْقَهُونَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "6:98",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "faS~alo",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَهُوَ ٱلَّذِىٓ أَنشَأَكُم مِّن نَّفْسٍ وَٰحِدَةٍ فَمُسْتَقَرٌّ وَمُسْتَوْدَعٌ قَدْ فَصَّلْنَا ٱلْـَٔايَٰتِ لِقَوْمٍ يَفْقَهُونَ"
+  },
+  {
+   "word_ref": "70:13:1:2",
+   "disposition": "CONSISTENT",
+   "note": "Base and adjectival/noun contexts retain a boundary that separates or settles.",
+   "coverage_cluster_id": "separation_and_decision",
+   "candidate_semantic_interpretation": "separation, boundary, or decisive settlement",
+   "cluster_supporting_evidence": "All 20 underived contexts were reviewed across separation and judgment settings.",
+   "counterevidence": [
+    "Some judicial contexts lexicalize the result more than the separating process."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "70:13",
+     "verse_text": "وَفَصِيلَتِهِ ٱلَّتِى تُـْٔوِيهِ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "70:13",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "faSiylati",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَفَصِيلَتِهِ ٱلَّتِى تُـْٔوِيهِ"
+  },
+  {
+   "word_ref": "77:13:2:2",
+   "disposition": "CONSISTENT",
+   "note": "Base and adjectival/noun contexts retain a boundary that separates or settles.",
+   "coverage_cluster_id": "separation_and_decision",
+   "candidate_semantic_interpretation": "separation, boundary, or decisive settlement",
+   "cluster_supporting_evidence": "All 20 underived contexts were reviewed across separation and judgment settings.",
+   "counterevidence": [
+    "Some judicial contexts lexicalize the result more than the separating process."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "77:13",
+     "verse_text": "لِيَوْمِ ٱلْفَصْلِ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "77:13",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "faSoli",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لِيَوْمِ ٱلْفَصْلِ"
+  },
+  {
+   "word_ref": "77:14:5:2",
+   "disposition": "CONSISTENT",
+   "note": "Base and adjectival/noun contexts retain a boundary that separates or settles.",
+   "coverage_cluster_id": "separation_and_decision",
+   "candidate_semantic_interpretation": "separation, boundary, or decisive settlement",
+   "cluster_supporting_evidence": "All 20 underived contexts were reviewed across separation and judgment settings.",
+   "counterevidence": [
+    "Some judicial contexts lexicalize the result more than the separating process."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "77:14",
+     "verse_text": "وَمَآ أَدْرَىٰكَ مَا يَوْمُ ٱلْفَصْلِ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "77:14",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "faSoli",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَمَآ أَدْرَىٰكَ مَا يَوْمُ ٱلْفَصْلِ"
+  },
+  {
+   "word_ref": "77:38:3:2",
+   "disposition": "CONSISTENT",
+   "note": "Base and adjectival/noun contexts retain a boundary that separates or settles.",
+   "coverage_cluster_id": "separation_and_decision",
+   "candidate_semantic_interpretation": "separation, boundary, or decisive settlement",
+   "cluster_supporting_evidence": "All 20 underived contexts were reviewed across separation and judgment settings.",
+   "counterevidence": [
+    "Some judicial contexts lexicalize the result more than the separating process."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "77:38",
+     "verse_text": "هَٰذَا يَوْمُ ٱلْفَصْلِ جَمَعْنَٰكُمْ وَٱلْأَوَّلِينَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "77:38",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "faSoli",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "هَٰذَا يَوْمُ ٱلْفَصْلِ جَمَعْنَٰكُمْ وَٱلْأَوَّلِينَ"
+  },
+  {
+   "word_ref": "78:17:3:2",
+   "disposition": "CONSISTENT",
+   "note": "Base and adjectival/noun contexts retain a boundary that separates or settles.",
+   "coverage_cluster_id": "separation_and_decision",
+   "candidate_semantic_interpretation": "separation, boundary, or decisive settlement",
+   "cluster_supporting_evidence": "All 20 underived contexts were reviewed across separation and judgment settings.",
+   "counterevidence": [
+    "Some judicial contexts lexicalize the result more than the separating process."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "78:17",
+     "verse_text": "إِنَّ يَوْمَ ٱلْفَصْلِ كَانَ مِيقَٰتًا"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "78:17",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "faSoli",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ يَوْمَ ٱلْفَصْلِ كَانَ مِيقَٰتًا"
+  },
+  {
+   "word_ref": "7:133:9:1",
+   "disposition": "CONSISTENT",
+   "note": "Base and adjectival/noun contexts retain a boundary that separates or settles.",
+   "coverage_cluster_id": "separation_and_decision",
+   "candidate_semantic_interpretation": "separation, boundary, or decisive settlement",
+   "cluster_supporting_evidence": "All 20 underived contexts were reviewed across separation and judgment settings.",
+   "counterevidence": [
+    "Some judicial contexts lexicalize the result more than the separating process."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:133",
+     "verse_text": "فَأَرْسَلْنَا عَلَيْهِمُ ٱلطُّوفَانَ وَٱلْجَرَادَ وَٱلْقُمَّلَ وَٱلضَّفَادِعَ وَٱلدَّمَ ءَايَٰتٍ مُّفَصَّلَٰتٍ فَٱسْتَكْبَرُوا۟ وَكَانُوا۟ قَوْمًا مُّجْرِمِينَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "7:133",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "m~ufaS~ala`tK",
+   "qac_tag": "ADJ",
+   "qac_pos": "ADJ",
+   "qac_verb_form": null,
+   "morphology": "ADJ",
+   "form": "ADJ",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَأَرْسَلْنَا عَلَيْهِمُ ٱلطُّوفَانَ وَٱلْجَرَادَ وَٱلْقُمَّلَ وَٱلضَّفَادِعَ وَٱلدَّمَ ءَايَٰتٍ مُّفَصَّلَٰتٍ فَٱسْتَكْبَرُوا۟ وَكَانُوا۟ قَوْمًا مُّجْرِمِينَ"
+  },
+  {
+   "word_ref": "7:145:9:2",
+   "disposition": "CONSISTENT",
+   "note": "Form II verbs and nominals consistently articulate a matter into distinguished parts.",
+   "coverage_cluster_id": "form_ii_detailing",
+   "candidate_semantic_interpretation": "making distinctions explicit through detailing",
+   "cluster_supporting_evidence": "All 23 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:145",
+     "verse_text": "وَكَتَبْنَا لَهُۥ فِى ٱلْأَلْوَاحِ مِن كُلِّ شَىْءٍ مَّوْعِظَةً وَتَفْصِيلًا لِّكُلِّ شَىْءٍ فَخُذْهَا بِقُوَّةٍ وَأْمُرْ قَوْمَكَ يَأْخُذُوا۟ بِأَحْسَنِهَا سَأُو۟رِيكُمْ دَارَ ٱلْفَٰسِقِينَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "7:145",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tafoSiylFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": "II",
+   "morphology": "N(II)",
+   "form": "N(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَكَتَبْنَا لَهُۥ فِى ٱلْأَلْوَاحِ مِن كُلِّ شَىْءٍ مَّوْعِظَةً وَتَفْصِيلًا لِّكُلِّ شَىْءٍ فَخُذْهَا بِقُوَّةٍ وَأْمُرْ قَوْمَكَ يَأْخُذُوا۟ بِأَحْسَنِهَا سَأُو۟رِيكُمْ دَارَ ٱلْفَٰسِقِينَ"
+  },
+  {
+   "word_ref": "7:174:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Form II verbs and nominals consistently articulate a matter into distinguished parts.",
+   "coverage_cluster_id": "form_ii_detailing",
+   "candidate_semantic_interpretation": "making distinctions explicit through detailing",
+   "cluster_supporting_evidence": "All 23 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:174",
+     "verse_text": "وَكَذَٰلِكَ نُفَصِّلُ ٱلْـَٔايَٰتِ وَلَعَلَّهُمْ يَرْجِعُونَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "7:174",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "nufaS~ilu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَكَذَٰلِكَ نُفَصِّلُ ٱلْـَٔايَٰتِ وَلَعَلَّهُمْ يَرْجِعُونَ"
+  },
+  {
+   "word_ref": "7:32:23:1",
+   "disposition": "CONSISTENT",
+   "note": "Form II verbs and nominals consistently articulate a matter into distinguished parts.",
+   "coverage_cluster_id": "form_ii_detailing",
+   "candidate_semantic_interpretation": "making distinctions explicit through detailing",
+   "cluster_supporting_evidence": "All 23 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:32",
+     "verse_text": "قُلْ مَنْ حَرَّمَ زِينَةَ ٱللَّهِ ٱلَّتِىٓ أَخْرَجَ لِعِبَادِهِۦ وَٱلطَّيِّبَٰتِ مِنَ ٱلرِّزْقِ قُلْ هِىَ لِلَّذِينَ ءَامَنُوا۟ فِى ٱلْحَيَوٰةِ ٱلدُّنْيَا خَالِصَةً يَوْمَ ٱلْقِيَٰمَةِ كَذَٰلِكَ نُفَصِّلُ ٱلْـَٔايَٰتِ لِقَوْمٍ يَعْلَمُونَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "7:32",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "nufaS~ilu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قُلْ مَنْ حَرَّمَ زِينَةَ ٱللَّهِ ٱلَّتِىٓ أَخْرَجَ لِعِبَادِهِۦ وَٱلطَّيِّبَٰتِ مِنَ ٱلرِّزْقِ قُلْ هِىَ لِلَّذِينَ ءَامَنُوا۟ فِى ٱلْحَيَوٰةِ ٱلدُّنْيَا خَالِصَةً يَوْمَ ٱلْقِيَٰمَةِ كَذَٰلِكَ نُفَصِّلُ ٱلْـَٔايَٰتِ لِقَوْمٍ يَعْلَمُونَ"
+  },
+  {
+   "word_ref": "7:52:4:1",
+   "disposition": "CONSISTENT",
+   "note": "Form II verbs and nominals consistently articulate a matter into distinguished parts.",
+   "coverage_cluster_id": "form_ii_detailing",
+   "candidate_semantic_interpretation": "making distinctions explicit through detailing",
+   "cluster_supporting_evidence": "All 23 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:52",
+     "verse_text": "وَلَقَدْ جِئْنَٰهُم بِكِتَٰبٍ فَصَّلْنَٰهُ عَلَىٰ عِلْمٍ هُدًى وَرَحْمَةً لِّقَوْمٍ يُؤْمِنُونَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "7:52",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "faS~alo",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَقَدْ جِئْنَٰهُم بِكِتَٰبٍ فَصَّلْنَٰهُ عَلَىٰ عِلْمٍ هُدًى وَرَحْمَةً لِّقَوْمٍ يُؤْمِنُونَ"
+  },
+  {
+   "word_ref": "86:13:3:1",
+   "disposition": "CONSISTENT",
+   "note": "Base and adjectival/noun contexts retain a boundary that separates or settles.",
+   "coverage_cluster_id": "separation_and_decision",
+   "candidate_semantic_interpretation": "separation, boundary, or decisive settlement",
+   "cluster_supporting_evidence": "All 20 underived contexts were reviewed across separation and judgment settings.",
+   "counterevidence": [
+    "Some judicial contexts lexicalize the result more than the separating process."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "86:13",
+     "verse_text": "إِنَّهُۥ لَقَوْلٌ فَصْلٌ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "86:13",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "faSolN",
+   "qac_tag": "ADJ",
+   "qac_pos": "ADJ",
+   "qac_verb_form": null,
+   "morphology": "ADJ",
+   "form": "ADJ",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّهُۥ لَقَوْلٌ فَصْلٌ"
+  },
+  {
+   "word_ref": "9:11:10:2",
+   "disposition": "CONSISTENT",
+   "note": "Form II verbs and nominals consistently articulate a matter into distinguished parts.",
+   "coverage_cluster_id": "form_ii_detailing",
+   "candidate_semantic_interpretation": "making distinctions explicit through detailing",
+   "cluster_supporting_evidence": "All 23 Form II contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "9:11",
+     "verse_text": "فَإِن تَابُوا۟ وَأَقَامُوا۟ ٱلصَّلَوٰةَ وَءَاتَوُا۟ ٱلزَّكَوٰةَ فَإِخْوَٰنُكُمْ فِى ٱلدِّينِ وَنُفَصِّلُ ٱلْـَٔايَٰتِ لِقَوْمٍ يَعْلَمُونَ"
+    }
+   ],
+   "root_arabic": "ف ص ل",
+   "root_buckwalter": "fSl",
+   "root_id": "fSl",
+   "artifact_name": "f_53_l.json",
+   "verse_ref": "9:11",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "nufaS~ilu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَإِن تَابُوا۟ وَأَقَامُوا۟ ٱلصَّلَوٰةَ وَءَاتَوُا۟ ٱلزَّكَوٰةَ فَإِخْوَٰنُكُمْ فِى ٱلدِّينِ وَنُفَصِّلُ ٱلْـَٔايَٰتِ لِقَوْمٍ يَعْلَمُونَ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

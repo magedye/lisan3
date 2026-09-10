@@ -1,0 +1,694 @@
+{
+ "root_arabic": "و ل ج",
+ "root_buckwalter": "wlj",
+ "root_id": "wlj",
+ "artifact_name": "wlj.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch06-wave1-coverage",
+ "occurrences": 14,
+ "frozen_candidate_root_contribution": "passing or causing passage across an outside/inside boundary into an interior domain",
+ "internal_discovery": {
+  "candidate_root_contribution": "passing or causing passage across an outside/inside boundary into an interior domain",
+  "plain_explanation": "Thirteen verbs describe entering the earth or interpenetration of night and day; the one walija noun denotes a privileged intimate taken into one's inner circle. The latter is a social extension of interior access.",
+  "layer_separation_note": "Base form profiles entry, Form IV insertion/interpenetration, and the participant structure identifies container and entrant. The walija noun lexicalizes admitted inner access.",
+  "presence": {
+   "occurrences_total": 14,
+   "occurrences_checked": 14,
+   "occurrences_consistent": 14,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "9:16 uses walija for an intimate rather than physical entry, so the inside-access bridge is metaphorical.",
+  "competing_hypothesis": "Walija is an unrelated word for confidant; the verse's exclusion of taking an outsider as privileged intimate supports, but does not prove, the entry-to-inner-circle relation.",
+  "distinctiveness_note": "Distinct from simple entering by foregrounding crossing into an interior and from mixing, which need not cross a boundary.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "The concrete entry/insertion classes are clear; the sole social noun reconciles with preserved contest lineage.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "base_entry",
+     "where": {
+      "qac_pos": [
+       "V"
+      ],
+      "qac_verb_form": [
+       null
+      ]
+     },
+     "occurrence_count_expected": 3,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "pass into an interior",
+     "classification_rationale": "Each base verb describes something entering the earth.",
+     "supporting_evidence_note": "All three base-verb contexts were reviewed.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "form_iv_insertion",
+     "where": {
+      "qac_pos": [
+       "V"
+      ],
+      "qac_verb_form": [
+       "IV"
+      ]
+     },
+     "occurrence_count_expected": 10,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "cause one domain to enter or interpenetrate another",
+     "classification_rationale": "All Form IV contexts describe night/day insertion across their boundary.",
+     "supporting_evidence_note": "All ten Form IV contexts were reviewed.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "inner_circle_intimate",
+     "where": {
+      "qac_pos": [
+       "N"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "a person admitted to privileged inner access",
+     "classification_rationale": "9:16 is social rather than spatial, so its inside-access residue was initially contested.",
+     "supporting_evidence_note": "The sole walija occurrence at 9:16 was reviewed directly.",
+     "counterevidence": [
+      "No physical boundary crossing occurs in the verse."
+     ]
+    }
+   ],
+   "reconciliation": [
+    {
+     "word_ref": "9:16:20:1",
+     "final": "CONSISTENT",
+     "rationale": "The participant construction 'take ... as walija' identifies an admitted insider; this is a bounded inner-access extension, while the original spatial objection remains in lineage."
+    }
+   ]
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "wlj",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "The walija seam is reconciled with explicit preliminary/final provenance."
+ },
+ "coverage_validation": {
+  "root": "wlj",
+  "expected_count": 14,
+  "researched_count": 14,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "22:61:4:1",
+   "disposition": "CONSISTENT",
+   "note": "All Form IV contexts describe night/day insertion across their boundary.",
+   "coverage_cluster_id": "form_iv_insertion",
+   "candidate_semantic_interpretation": "cause one domain to enter or interpenetrate another",
+   "cluster_supporting_evidence": "All ten Form IV contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "22:61",
+     "verse_text": "ذَٰلِكَ بِأَنَّ ٱللَّهَ يُولِجُ ٱلَّيْلَ فِى ٱلنَّهَارِ وَيُولِجُ ٱلنَّهَارَ فِى ٱلَّيْلِ وَأَنَّ ٱللَّهَ سَمِيعٌۢ بَصِيرٌ"
+    }
+   ],
+   "root_arabic": "و ل ج",
+   "root_buckwalter": "wlj",
+   "root_id": "wlj",
+   "artifact_name": "wlj.json",
+   "verse_ref": "22:61",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yuwliju",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ذَٰلِكَ بِأَنَّ ٱللَّهَ يُولِجُ ٱلَّيْلَ فِى ٱلنَّهَارِ وَيُولِجُ ٱلنَّهَارَ فِى ٱلَّيْلِ وَأَنَّ ٱللَّهَ سَمِيعٌۢ بَصِيرٌ"
+  },
+  {
+   "word_ref": "22:61:8:2",
+   "disposition": "CONSISTENT",
+   "note": "All Form IV contexts describe night/day insertion across their boundary.",
+   "coverage_cluster_id": "form_iv_insertion",
+   "candidate_semantic_interpretation": "cause one domain to enter or interpenetrate another",
+   "cluster_supporting_evidence": "All ten Form IV contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "22:61",
+     "verse_text": "ذَٰلِكَ بِأَنَّ ٱللَّهَ يُولِجُ ٱلَّيْلَ فِى ٱلنَّهَارِ وَيُولِجُ ٱلنَّهَارَ فِى ٱلَّيْلِ وَأَنَّ ٱللَّهَ سَمِيعٌۢ بَصِيرٌ"
+    }
+   ],
+   "root_arabic": "و ل ج",
+   "root_buckwalter": "wlj",
+   "root_id": "wlj",
+   "artifact_name": "wlj.json",
+   "verse_ref": "22:61",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yuwliju",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ذَٰلِكَ بِأَنَّ ٱللَّهَ يُولِجُ ٱلَّيْلَ فِى ٱلنَّهَارِ وَيُولِجُ ٱلنَّهَارَ فِى ٱلَّيْلِ وَأَنَّ ٱللَّهَ سَمِيعٌۢ بَصِيرٌ"
+  },
+  {
+   "word_ref": "31:29:5:1",
+   "disposition": "CONSISTENT",
+   "note": "All Form IV contexts describe night/day insertion across their boundary.",
+   "coverage_cluster_id": "form_iv_insertion",
+   "candidate_semantic_interpretation": "cause one domain to enter or interpenetrate another",
+   "cluster_supporting_evidence": "All ten Form IV contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "31:29",
+     "verse_text": "أَلَمْ تَرَ أَنَّ ٱللَّهَ يُولِجُ ٱلَّيْلَ فِى ٱلنَّهَارِ وَيُولِجُ ٱلنَّهَارَ فِى ٱلَّيْلِ وَسَخَّرَ ٱلشَّمْسَ وَٱلْقَمَرَ كُلٌّ يَجْرِىٓ إِلَىٰٓ أَجَلٍ مُّسَمًّى وَأَنَّ ٱللَّهَ بِمَا تَعْمَلُونَ خَبِيرٌ"
+    }
+   ],
+   "root_arabic": "و ل ج",
+   "root_buckwalter": "wlj",
+   "root_id": "wlj",
+   "artifact_name": "wlj.json",
+   "verse_ref": "31:29",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yuwliju",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَلَمْ تَرَ أَنَّ ٱللَّهَ يُولِجُ ٱلَّيْلَ فِى ٱلنَّهَارِ وَيُولِجُ ٱلنَّهَارَ فِى ٱلَّيْلِ وَسَخَّرَ ٱلشَّمْسَ وَٱلْقَمَرَ كُلٌّ يَجْرِىٓ إِلَىٰٓ أَجَلٍ مُّسَمًّى وَأَنَّ ٱللَّهَ بِمَا تَعْمَلُونَ خَبِيرٌ"
+  },
+  {
+   "word_ref": "31:29:9:2",
+   "disposition": "CONSISTENT",
+   "note": "All Form IV contexts describe night/day insertion across their boundary.",
+   "coverage_cluster_id": "form_iv_insertion",
+   "candidate_semantic_interpretation": "cause one domain to enter or interpenetrate another",
+   "cluster_supporting_evidence": "All ten Form IV contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "31:29",
+     "verse_text": "أَلَمْ تَرَ أَنَّ ٱللَّهَ يُولِجُ ٱلَّيْلَ فِى ٱلنَّهَارِ وَيُولِجُ ٱلنَّهَارَ فِى ٱلَّيْلِ وَسَخَّرَ ٱلشَّمْسَ وَٱلْقَمَرَ كُلٌّ يَجْرِىٓ إِلَىٰٓ أَجَلٍ مُّسَمًّى وَأَنَّ ٱللَّهَ بِمَا تَعْمَلُونَ خَبِيرٌ"
+    }
+   ],
+   "root_arabic": "و ل ج",
+   "root_buckwalter": "wlj",
+   "root_id": "wlj",
+   "artifact_name": "wlj.json",
+   "verse_ref": "31:29",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yuwliju",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَلَمْ تَرَ أَنَّ ٱللَّهَ يُولِجُ ٱلَّيْلَ فِى ٱلنَّهَارِ وَيُولِجُ ٱلنَّهَارَ فِى ٱلَّيْلِ وَسَخَّرَ ٱلشَّمْسَ وَٱلْقَمَرَ كُلٌّ يَجْرِىٓ إِلَىٰٓ أَجَلٍ مُّسَمًّى وَأَنَّ ٱللَّهَ بِمَا تَعْمَلُونَ خَبِيرٌ"
+  },
+  {
+   "word_ref": "34:2:3:1",
+   "disposition": "CONSISTENT",
+   "note": "Each base verb describes something entering the earth.",
+   "coverage_cluster_id": "base_entry",
+   "candidate_semantic_interpretation": "pass into an interior",
+   "cluster_supporting_evidence": "All three base-verb contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "34:2",
+     "verse_text": "يَعْلَمُ مَا يَلِجُ فِى ٱلْأَرْضِ وَمَا يَخْرُجُ مِنْهَا وَمَا يَنزِلُ مِنَ ٱلسَّمَآءِ وَمَا يَعْرُجُ فِيهَا وَهُوَ ٱلرَّحِيمُ ٱلْغَفُورُ"
+    }
+   ],
+   "root_arabic": "و ل ج",
+   "root_buckwalter": "wlj",
+   "root_id": "wlj",
+   "artifact_name": "wlj.json",
+   "verse_ref": "34:2",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaliju",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَعْلَمُ مَا يَلِجُ فِى ٱلْأَرْضِ وَمَا يَخْرُجُ مِنْهَا وَمَا يَنزِلُ مِنَ ٱلسَّمَآءِ وَمَا يَعْرُجُ فِيهَا وَهُوَ ٱلرَّحِيمُ ٱلْغَفُورُ"
+  },
+  {
+   "word_ref": "35:13:1:1",
+   "disposition": "CONSISTENT",
+   "note": "All Form IV contexts describe night/day insertion across their boundary.",
+   "coverage_cluster_id": "form_iv_insertion",
+   "candidate_semantic_interpretation": "cause one domain to enter or interpenetrate another",
+   "cluster_supporting_evidence": "All ten Form IV contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "35:13",
+     "verse_text": "يُولِجُ ٱلَّيْلَ فِى ٱلنَّهَارِ وَيُولِجُ ٱلنَّهَارَ فِى ٱلَّيْلِ وَسَخَّرَ ٱلشَّمْسَ وَٱلْقَمَرَ كُلٌّ يَجْرِى لِأَجَلٍ مُّسَمًّى ذَٰلِكُمُ ٱللَّهُ رَبُّكُمْ لَهُ ٱلْمُلْكُ وَٱلَّذِينَ تَدْعُونَ مِن دُونِهِۦ مَا يَمْلِكُونَ مِن قِطْمِيرٍ"
+    }
+   ],
+   "root_arabic": "و ل ج",
+   "root_buckwalter": "wlj",
+   "root_id": "wlj",
+   "artifact_name": "wlj.json",
+   "verse_ref": "35:13",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yuwliju",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يُولِجُ ٱلَّيْلَ فِى ٱلنَّهَارِ وَيُولِجُ ٱلنَّهَارَ فِى ٱلَّيْلِ وَسَخَّرَ ٱلشَّمْسَ وَٱلْقَمَرَ كُلٌّ يَجْرِى لِأَجَلٍ مُّسَمًّى ذَٰلِكُمُ ٱللَّهُ رَبُّكُمْ لَهُ ٱلْمُلْكُ وَٱلَّذِينَ تَدْعُونَ مِن دُونِهِۦ مَا يَمْلِكُونَ مِن قِطْمِيرٍ"
+  },
+  {
+   "word_ref": "35:13:5:2",
+   "disposition": "CONSISTENT",
+   "note": "All Form IV contexts describe night/day insertion across their boundary.",
+   "coverage_cluster_id": "form_iv_insertion",
+   "candidate_semantic_interpretation": "cause one domain to enter or interpenetrate another",
+   "cluster_supporting_evidence": "All ten Form IV contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "35:13",
+     "verse_text": "يُولِجُ ٱلَّيْلَ فِى ٱلنَّهَارِ وَيُولِجُ ٱلنَّهَارَ فِى ٱلَّيْلِ وَسَخَّرَ ٱلشَّمْسَ وَٱلْقَمَرَ كُلٌّ يَجْرِى لِأَجَلٍ مُّسَمًّى ذَٰلِكُمُ ٱللَّهُ رَبُّكُمْ لَهُ ٱلْمُلْكُ وَٱلَّذِينَ تَدْعُونَ مِن دُونِهِۦ مَا يَمْلِكُونَ مِن قِطْمِيرٍ"
+    }
+   ],
+   "root_arabic": "و ل ج",
+   "root_buckwalter": "wlj",
+   "root_id": "wlj",
+   "artifact_name": "wlj.json",
+   "verse_ref": "35:13",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yuwliju",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يُولِجُ ٱلَّيْلَ فِى ٱلنَّهَارِ وَيُولِجُ ٱلنَّهَارَ فِى ٱلَّيْلِ وَسَخَّرَ ٱلشَّمْسَ وَٱلْقَمَرَ كُلٌّ يَجْرِى لِأَجَلٍ مُّسَمًّى ذَٰلِكُمُ ٱللَّهُ رَبُّكُمْ لَهُ ٱلْمُلْكُ وَٱلَّذِينَ تَدْعُونَ مِن دُونِهِۦ مَا يَمْلِكُونَ مِن قِطْمِيرٍ"
+  },
+  {
+   "word_ref": "3:27:1:1",
+   "disposition": "CONSISTENT",
+   "note": "All Form IV contexts describe night/day insertion across their boundary.",
+   "coverage_cluster_id": "form_iv_insertion",
+   "candidate_semantic_interpretation": "cause one domain to enter or interpenetrate another",
+   "cluster_supporting_evidence": "All ten Form IV contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:27",
+     "verse_text": "تُولِجُ ٱلَّيْلَ فِى ٱلنَّهَارِ وَتُولِجُ ٱلنَّهَارَ فِى ٱلَّيْلِ وَتُخْرِجُ ٱلْحَىَّ مِنَ ٱلْمَيِّتِ وَتُخْرِجُ ٱلْمَيِّتَ مِنَ ٱلْحَىِّ وَتَرْزُقُ مَن تَشَآءُ بِغَيْرِ حِسَابٍ"
+    }
+   ],
+   "root_arabic": "و ل ج",
+   "root_buckwalter": "wlj",
+   "root_id": "wlj",
+   "artifact_name": "wlj.json",
+   "verse_ref": "3:27",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tuwliju",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "تُولِجُ ٱلَّيْلَ فِى ٱلنَّهَارِ وَتُولِجُ ٱلنَّهَارَ فِى ٱلَّيْلِ وَتُخْرِجُ ٱلْحَىَّ مِنَ ٱلْمَيِّتِ وَتُخْرِجُ ٱلْمَيِّتَ مِنَ ٱلْحَىِّ وَتَرْزُقُ مَن تَشَآءُ بِغَيْرِ حِسَابٍ"
+  },
+  {
+   "word_ref": "3:27:5:2",
+   "disposition": "CONSISTENT",
+   "note": "All Form IV contexts describe night/day insertion across their boundary.",
+   "coverage_cluster_id": "form_iv_insertion",
+   "candidate_semantic_interpretation": "cause one domain to enter or interpenetrate another",
+   "cluster_supporting_evidence": "All ten Form IV contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:27",
+     "verse_text": "تُولِجُ ٱلَّيْلَ فِى ٱلنَّهَارِ وَتُولِجُ ٱلنَّهَارَ فِى ٱلَّيْلِ وَتُخْرِجُ ٱلْحَىَّ مِنَ ٱلْمَيِّتِ وَتُخْرِجُ ٱلْمَيِّتَ مِنَ ٱلْحَىِّ وَتَرْزُقُ مَن تَشَآءُ بِغَيْرِ حِسَابٍ"
+    }
+   ],
+   "root_arabic": "و ل ج",
+   "root_buckwalter": "wlj",
+   "root_id": "wlj",
+   "artifact_name": "wlj.json",
+   "verse_ref": "3:27",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tuwliju",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "تُولِجُ ٱلَّيْلَ فِى ٱلنَّهَارِ وَتُولِجُ ٱلنَّهَارَ فِى ٱلَّيْلِ وَتُخْرِجُ ٱلْحَىَّ مِنَ ٱلْمَيِّتِ وَتُخْرِجُ ٱلْمَيِّتَ مِنَ ٱلْحَىِّ وَتَرْزُقُ مَن تَشَآءُ بِغَيْرِ حِسَابٍ"
+  },
+  {
+   "word_ref": "57:4:15:1",
+   "disposition": "CONSISTENT",
+   "note": "Each base verb describes something entering the earth.",
+   "coverage_cluster_id": "base_entry",
+   "candidate_semantic_interpretation": "pass into an interior",
+   "cluster_supporting_evidence": "All three base-verb contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "57:4",
+     "verse_text": "هُوَ ٱلَّذِى خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ فِى سِتَّةِ أَيَّامٍ ثُمَّ ٱسْتَوَىٰ عَلَى ٱلْعَرْشِ يَعْلَمُ مَا يَلِجُ فِى ٱلْأَرْضِ وَمَا يَخْرُجُ مِنْهَا وَمَا يَنزِلُ مِنَ ٱلسَّمَآءِ وَمَا يَعْرُجُ فِيهَا وَهُوَ مَعَكُمْ أَيْنَ مَا كُنتُمْ وَٱللَّهُ بِمَا تَعْمَلُونَ بَصِيرٌ"
+    }
+   ],
+   "root_arabic": "و ل ج",
+   "root_buckwalter": "wlj",
+   "root_id": "wlj",
+   "artifact_name": "wlj.json",
+   "verse_ref": "57:4",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaliju",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "هُوَ ٱلَّذِى خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ فِى سِتَّةِ أَيَّامٍ ثُمَّ ٱسْتَوَىٰ عَلَى ٱلْعَرْشِ يَعْلَمُ مَا يَلِجُ فِى ٱلْأَرْضِ وَمَا يَخْرُجُ مِنْهَا وَمَا يَنزِلُ مِنَ ٱلسَّمَآءِ وَمَا يَعْرُجُ فِيهَا وَهُوَ مَعَكُمْ أَيْنَ مَا كُنتُمْ وَٱللَّهُ بِمَا تَعْمَلُونَ بَصِيرٌ"
+  },
+  {
+   "word_ref": "57:6:1:1",
+   "disposition": "CONSISTENT",
+   "note": "All Form IV contexts describe night/day insertion across their boundary.",
+   "coverage_cluster_id": "form_iv_insertion",
+   "candidate_semantic_interpretation": "cause one domain to enter or interpenetrate another",
+   "cluster_supporting_evidence": "All ten Form IV contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "57:6",
+     "verse_text": "يُولِجُ ٱلَّيْلَ فِى ٱلنَّهَارِ وَيُولِجُ ٱلنَّهَارَ فِى ٱلَّيْلِ وَهُوَ عَلِيمٌۢ بِذَاتِ ٱلصُّدُورِ"
+    }
+   ],
+   "root_arabic": "و ل ج",
+   "root_buckwalter": "wlj",
+   "root_id": "wlj",
+   "artifact_name": "wlj.json",
+   "verse_ref": "57:6",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yuwliju",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يُولِجُ ٱلَّيْلَ فِى ٱلنَّهَارِ وَيُولِجُ ٱلنَّهَارَ فِى ٱلَّيْلِ وَهُوَ عَلِيمٌۢ بِذَاتِ ٱلصُّدُورِ"
+  },
+  {
+   "word_ref": "57:6:5:2",
+   "disposition": "CONSISTENT",
+   "note": "All Form IV contexts describe night/day insertion across their boundary.",
+   "coverage_cluster_id": "form_iv_insertion",
+   "candidate_semantic_interpretation": "cause one domain to enter or interpenetrate another",
+   "cluster_supporting_evidence": "All ten Form IV contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "57:6",
+     "verse_text": "يُولِجُ ٱلَّيْلَ فِى ٱلنَّهَارِ وَيُولِجُ ٱلنَّهَارَ فِى ٱلَّيْلِ وَهُوَ عَلِيمٌۢ بِذَاتِ ٱلصُّدُورِ"
+    }
+   ],
+   "root_arabic": "و ل ج",
+   "root_buckwalter": "wlj",
+   "root_id": "wlj",
+   "artifact_name": "wlj.json",
+   "verse_ref": "57:6",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yuwliju",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يُولِجُ ٱلَّيْلَ فِى ٱلنَّهَارِ وَيُولِجُ ٱلنَّهَارَ فِى ٱلَّيْلِ وَهُوَ عَلِيمٌۢ بِذَاتِ ٱلصُّدُورِ"
+  },
+  {
+   "word_ref": "7:40:16:1",
+   "disposition": "CONSISTENT",
+   "note": "Each base verb describes something entering the earth.",
+   "coverage_cluster_id": "base_entry",
+   "candidate_semantic_interpretation": "pass into an interior",
+   "cluster_supporting_evidence": "All three base-verb contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:40",
+     "verse_text": "إِنَّ ٱلَّذِينَ كَذَّبُوا۟ بِـَٔايَٰتِنَا وَٱسْتَكْبَرُوا۟ عَنْهَا لَا تُفَتَّحُ لَهُمْ أَبْوَٰبُ ٱلسَّمَآءِ وَلَا يَدْخُلُونَ ٱلْجَنَّةَ حَتَّىٰ يَلِجَ ٱلْجَمَلُ فِى سَمِّ ٱلْخِيَاطِ وَكَذَٰلِكَ نَجْزِى ٱلْمُجْرِمِينَ"
+    }
+   ],
+   "root_arabic": "و ل ج",
+   "root_buckwalter": "wlj",
+   "root_id": "wlj",
+   "artifact_name": "wlj.json",
+   "verse_ref": "7:40",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yalija",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱلَّذِينَ كَذَّبُوا۟ بِـَٔايَٰتِنَا وَٱسْتَكْبَرُوا۟ عَنْهَا لَا تُفَتَّحُ لَهُمْ أَبْوَٰبُ ٱلسَّمَآءِ وَلَا يَدْخُلُونَ ٱلْجَنَّةَ حَتَّىٰ يَلِجَ ٱلْجَمَلُ فِى سَمِّ ٱلْخِيَاطِ وَكَذَٰلِكَ نَجْزِى ٱلْمُجْرِمِينَ"
+  },
+  {
+   "word_ref": "9:16:20:1",
+   "disposition": "CONSISTENT",
+   "note": "The participant construction 'take ... as walija' identifies an admitted insider; this is a bounded inner-access extension, while the original spatial objection remains in lineage.",
+   "coverage_cluster_id": "inner_circle_intimate",
+   "candidate_semantic_interpretation": "a person admitted to privileged inner access",
+   "cluster_supporting_evidence": "The sole walija occurrence at 9:16 was reviewed directly.",
+   "counterevidence": [
+    "No physical boundary crossing occurs in the verse."
+   ],
+   "final_disposition": "CONSISTENT",
+   "deep_analysis": true,
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "9:16 is social rather than spatial, so its inside-access residue was initially contested.",
+   "reconciliation_rationale": "The participant construction 'take ... as walija' identifies an admitted insider; this is a bounded inner-access extension, while the original spatial objection remains in lineage.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "9:16:20:1",
+     "preliminary_disposition": "RESISTANT",
+     "preliminary_note": "9:16 is social rather than spatial, so its inside-access residue was initially contested.",
+     "final_disposition": "CONSISTENT",
+     "reconciliation_rationale": "The participant construction 'take ... as walija' identifies an admitted insider; this is a bounded inner-access extension, while the original spatial objection remains in lineage.",
+     "deep_analysis": true
+    }
+   ],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "9:16",
+     "verse_text": "أَمْ حَسِبْتُمْ أَن تُتْرَكُوا۟ وَلَمَّا يَعْلَمِ ٱللَّهُ ٱلَّذِينَ جَٰهَدُوا۟ مِنكُمْ وَلَمْ يَتَّخِذُوا۟ مِن دُونِ ٱللَّهِ وَلَا رَسُولِهِۦ وَلَا ٱلْمُؤْمِنِينَ وَلِيجَةً وَٱللَّهُ خَبِيرٌۢ بِمَا تَعْمَلُونَ"
+    }
+   ],
+   "root_arabic": "و ل ج",
+   "root_buckwalter": "wlj",
+   "root_id": "wlj",
+   "artifact_name": "wlj.json",
+   "verse_ref": "9:16",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "waliyjapF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَمْ حَسِبْتُمْ أَن تُتْرَكُوا۟ وَلَمَّا يَعْلَمِ ٱللَّهُ ٱلَّذِينَ جَٰهَدُوا۟ مِنكُمْ وَلَمْ يَتَّخِذُوا۟ مِن دُونِ ٱللَّهِ وَلَا رَسُولِهِۦ وَلَا ٱلْمُؤْمِنِينَ وَلِيجَةً وَٱللَّهُ خَبِيرٌۢ بِمَا تَعْمَلُونَ"
+  }
+ ],
+ "resistant_deep_analysis": [
+  {
+   "word_ref": "9:16:20:1",
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "9:16 is social rather than spatial, so its inside-access residue was initially contested.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": "The participant construction 'take ... as walija' identifies an admitted insider; this is a bounded inner-access extension, while the original spatial objection remains in lineage.",
+   "deep_analysis": true
+  }
+ ],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

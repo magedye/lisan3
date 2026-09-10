@@ -1,0 +1,603 @@
+{
+ "root_arabic": "ش ه و",
+ "root_buckwalter": "$hw",
+ "root_id": "$hw",
+ "artifact_name": "$hw.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch06-wave1-coverage",
+ "occurrences": 13,
+ "frozen_candidate_root_contribution": "an appetite that draws the self toward a desired object or experience",
+ "internal_discovery": {
+  "candidate_root_contribution": "an appetite that draws the self toward a desired object or experience",
+  "plain_explanation": "All 13 occurrences concern what persons or souls crave, whether the object is lawful, unlawful, worldly, or eschatological. Verbs profile directed desiring; nouns profile the appetite or its pursued objects.",
+  "layer_separation_note": "Form VIII profiles the subject's active desire; noun plurality and objects distribute particular appetites. Moral value comes from object and context, not the root.",
+  "presence": {
+   "occurrences_total": 13,
+   "occurrences_checked": 13,
+   "occurrences_consistent": 13,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "Paradisal uses are positive while following appetites can be condemned; the polarity shift confirms that the root supplies appetite, not moral judgment.",
+  "competing_hypothesis": "The core is illicit lust; positive desired objects in Paradise refute that restriction.",
+  "distinctiveness_note": "Distinct from intending or choosing because $hw foregrounds appetitive pull, often assigned to the self.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "STRONG",
+  "rationale": "A narrow appetitive-direction nucleus is explicit across every verbal and nominal occurrence.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "desiring_verbs",
+     "where": {
+      "qac_pos": [
+       "V"
+      ]
+     },
+     "occurrence_count_expected": 8,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "be appetitively drawn toward an object",
+     "classification_rationale": "Each verb has a desired object or state and profiles appetitive pull.",
+     "supporting_evidence_note": "All eight verbal contexts were reviewed.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "appetite_nouns",
+     "where": {
+      "qac_pos": [
+       "N"
+      ]
+     },
+     "occurrence_count_expected": 5,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "appetite or appetitively desired object",
+     "classification_rationale": "Each noun names desire as appetite or the pursued object of appetite.",
+     "supporting_evidence_note": "All five noun contexts were reviewed.",
+     "counterevidence": []
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "$hw",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Moral polarity is contextual; appetitive attraction remains universal."
+ },
+ "coverage_validation": {
+  "root": "$hw",
+  "expected_count": 13,
+  "researched_count": 13,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "16:57:7:1",
+   "disposition": "CONSISTENT",
+   "note": "Each verb has a desired object or state and profiles appetitive pull.",
+   "coverage_cluster_id": "desiring_verbs",
+   "candidate_semantic_interpretation": "be appetitively drawn toward an object",
+   "cluster_supporting_evidence": "All eight verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "16:57",
+     "verse_text": "وَيَجْعَلُونَ لِلَّهِ ٱلْبَنَٰتِ سُبْحَٰنَهُۥ وَلَهُم مَّا يَشْتَهُونَ"
+    }
+   ],
+   "root_arabic": "ش ه و",
+   "root_buckwalter": "$hw",
+   "root_id": "$hw",
+   "artifact_name": "$hw.json",
+   "verse_ref": "16:57",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "ya$otahu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَيَجْعَلُونَ لِلَّهِ ٱلْبَنَٰتِ سُبْحَٰنَهُۥ وَلَهُم مَّا يَشْتَهُونَ"
+  },
+  {
+   "word_ref": "19:59:8:2",
+   "disposition": "CONSISTENT",
+   "note": "Each noun names desire as appetite or the pursued object of appetite.",
+   "coverage_cluster_id": "appetite_nouns",
+   "candidate_semantic_interpretation": "appetite or appetitively desired object",
+   "cluster_supporting_evidence": "All five noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "19:59",
+     "verse_text": "فَخَلَفَ مِنۢ بَعْدِهِمْ خَلْفٌ أَضَاعُوا۟ ٱلصَّلَوٰةَ وَٱتَّبَعُوا۟ ٱلشَّهَوَٰتِ فَسَوْفَ يَلْقَوْنَ غَيًّا"
+    }
+   ],
+   "root_arabic": "ش ه و",
+   "root_buckwalter": "$hw",
+   "root_id": "$hw",
+   "artifact_name": "$hw.json",
+   "verse_ref": "19:59",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "$~ahawa`ti",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَخَلَفَ مِنۢ بَعْدِهِمْ خَلْفٌ أَضَاعُوا۟ ٱلصَّلَوٰةَ وَٱتَّبَعُوا۟ ٱلشَّهَوَٰتِ فَسَوْفَ يَلْقَوْنَ غَيًّا"
+  },
+  {
+   "word_ref": "21:102:7:1",
+   "disposition": "CONSISTENT",
+   "note": "Each verb has a desired object or state and profiles appetitive pull.",
+   "coverage_cluster_id": "desiring_verbs",
+   "candidate_semantic_interpretation": "be appetitively drawn toward an object",
+   "cluster_supporting_evidence": "All eight verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "21:102",
+     "verse_text": "لَا يَسْمَعُونَ حَسِيسَهَا وَهُمْ فِى مَا ٱشْتَهَتْ أَنفُسُهُمْ خَٰلِدُونَ"
+    }
+   ],
+   "root_arabic": "ش ه و",
+   "root_buckwalter": "$hw",
+   "root_id": "$hw",
+   "artifact_name": "$hw.json",
+   "verse_ref": "21:102",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{$otahato",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لَا يَسْمَعُونَ حَسِيسَهَا وَهُمْ فِى مَا ٱشْتَهَتْ أَنفُسُهُمْ خَٰلِدُونَ"
+  },
+  {
+   "word_ref": "27:55:4:1",
+   "disposition": "CONSISTENT",
+   "note": "Each noun names desire as appetite or the pursued object of appetite.",
+   "coverage_cluster_id": "appetite_nouns",
+   "candidate_semantic_interpretation": "appetite or appetitively desired object",
+   "cluster_supporting_evidence": "All five noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "27:55",
+     "verse_text": "أَئِنَّكُمْ لَتَأْتُونَ ٱلرِّجَالَ شَهْوَةً مِّن دُونِ ٱلنِّسَآءِ بَلْ أَنتُمْ قَوْمٌ تَجْهَلُونَ"
+    }
+   ],
+   "root_arabic": "ش ه و",
+   "root_buckwalter": "$hw",
+   "root_id": "$hw",
+   "artifact_name": "$hw.json",
+   "verse_ref": "27:55",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "$ahowapF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَئِنَّكُمْ لَتَأْتُونَ ٱلرِّجَالَ شَهْوَةً مِّن دُونِ ٱلنِّسَآءِ بَلْ أَنتُمْ قَوْمٌ تَجْهَلُونَ"
+  },
+  {
+   "word_ref": "34:54:5:1",
+   "disposition": "CONSISTENT",
+   "note": "Each verb has a desired object or state and profiles appetitive pull.",
+   "coverage_cluster_id": "desiring_verbs",
+   "candidate_semantic_interpretation": "be appetitively drawn toward an object",
+   "cluster_supporting_evidence": "All eight verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "34:54",
+     "verse_text": "وَحِيلَ بَيْنَهُمْ وَبَيْنَ مَا يَشْتَهُونَ كَمَا فُعِلَ بِأَشْيَاعِهِم مِّن قَبْلُ إِنَّهُمْ كَانُوا۟ فِى شَكٍّ مُّرِيبٍۭ"
+    }
+   ],
+   "root_arabic": "ش ه و",
+   "root_buckwalter": "$hw",
+   "root_id": "$hw",
+   "artifact_name": "$hw.json",
+   "verse_ref": "34:54",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "ya$otahu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَحِيلَ بَيْنَهُمْ وَبَيْنَ مَا يَشْتَهُونَ كَمَا فُعِلَ بِأَشْيَاعِهِم مِّن قَبْلُ إِنَّهُمْ كَانُوا۟ فِى شَكٍّ مُّرِيبٍۭ"
+  },
+  {
+   "word_ref": "3:14:4:2",
+   "disposition": "CONSISTENT",
+   "note": "Each noun names desire as appetite or the pursued object of appetite.",
+   "coverage_cluster_id": "appetite_nouns",
+   "candidate_semantic_interpretation": "appetite or appetitively desired object",
+   "cluster_supporting_evidence": "All five noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:14",
+     "verse_text": "زُيِّنَ لِلنَّاسِ حُبُّ ٱلشَّهَوَٰتِ مِنَ ٱلنِّسَآءِ وَٱلْبَنِينَ وَٱلْقَنَٰطِيرِ ٱلْمُقَنطَرَةِ مِنَ ٱلذَّهَبِ وَٱلْفِضَّةِ وَٱلْخَيْلِ ٱلْمُسَوَّمَةِ وَٱلْأَنْعَٰمِ وَٱلْحَرْثِ ذَٰلِكَ مَتَٰعُ ٱلْحَيَوٰةِ ٱلدُّنْيَا وَٱللَّهُ عِندَهُۥ حُسْنُ ٱلْمَـَٔابِ"
+    }
+   ],
+   "root_arabic": "ش ه و",
+   "root_buckwalter": "$hw",
+   "root_id": "$hw",
+   "artifact_name": "$hw.json",
+   "verse_ref": "3:14",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "$~ahawa`ti",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "زُيِّنَ لِلنَّاسِ حُبُّ ٱلشَّهَوَٰتِ مِنَ ٱلنِّسَآءِ وَٱلْبَنِينَ وَٱلْقَنَٰطِيرِ ٱلْمُقَنطَرَةِ مِنَ ٱلذَّهَبِ وَٱلْفِضَّةِ وَٱلْخَيْلِ ٱلْمُسَوَّمَةِ وَٱلْأَنْعَٰمِ وَٱلْحَرْثِ ذَٰلِكَ مَتَٰعُ ٱلْحَيَوٰةِ ٱلدُّنْيَا وَٱللَّهُ عِندَهُۥ حُسْنُ ٱلْمَـَٔابِ"
+  },
+  {
+   "word_ref": "41:31:11:1",
+   "disposition": "CONSISTENT",
+   "note": "Each verb has a desired object or state and profiles appetitive pull.",
+   "coverage_cluster_id": "desiring_verbs",
+   "candidate_semantic_interpretation": "be appetitively drawn toward an object",
+   "cluster_supporting_evidence": "All eight verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "41:31",
+     "verse_text": "نَحْنُ أَوْلِيَآؤُكُمْ فِى ٱلْحَيَوٰةِ ٱلدُّنْيَا وَفِى ٱلْـَٔاخِرَةِ وَلَكُمْ فِيهَا مَا تَشْتَهِىٓ أَنفُسُكُمْ وَلَكُمْ فِيهَا مَا تَدَّعُونَ"
+    }
+   ],
+   "root_arabic": "ش ه و",
+   "root_buckwalter": "$hw",
+   "root_id": "$hw",
+   "artifact_name": "$hw.json",
+   "verse_ref": "41:31",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "ta$otahiY^",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "نَحْنُ أَوْلِيَآؤُكُمْ فِى ٱلْحَيَوٰةِ ٱلدُّنْيَا وَفِى ٱلْـَٔاخِرَةِ وَلَكُمْ فِيهَا مَا تَشْتَهِىٓ أَنفُسُكُمْ وَلَكُمْ فِيهَا مَا تَدَّعُونَ"
+  },
+  {
+   "word_ref": "43:71:9:1",
+   "disposition": "CONSISTENT",
+   "note": "Each verb has a desired object or state and profiles appetitive pull.",
+   "coverage_cluster_id": "desiring_verbs",
+   "candidate_semantic_interpretation": "be appetitively drawn toward an object",
+   "cluster_supporting_evidence": "All eight verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "43:71",
+     "verse_text": "يُطَافُ عَلَيْهِم بِصِحَافٍ مِّن ذَهَبٍ وَأَكْوَابٍ وَفِيهَا مَا تَشْتَهِيهِ ٱلْأَنفُسُ وَتَلَذُّ ٱلْأَعْيُنُ وَأَنتُمْ فِيهَا خَٰلِدُونَ"
+    }
+   ],
+   "root_arabic": "ش ه و",
+   "root_buckwalter": "$hw",
+   "root_id": "$hw",
+   "artifact_name": "$hw.json",
+   "verse_ref": "43:71",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "ta$otahiy",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يُطَافُ عَلَيْهِم بِصِحَافٍ مِّن ذَهَبٍ وَأَكْوَابٍ وَفِيهَا مَا تَشْتَهِيهِ ٱلْأَنفُسُ وَتَلَذُّ ٱلْأَعْيُنُ وَأَنتُمْ فِيهَا خَٰلِدُونَ"
+  },
+  {
+   "word_ref": "4:27:9:2",
+   "disposition": "CONSISTENT",
+   "note": "Each noun names desire as appetite or the pursued object of appetite.",
+   "coverage_cluster_id": "appetite_nouns",
+   "candidate_semantic_interpretation": "appetite or appetitively desired object",
+   "cluster_supporting_evidence": "All five noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "4:27",
+     "verse_text": "وَٱللَّهُ يُرِيدُ أَن يَتُوبَ عَلَيْكُمْ وَيُرِيدُ ٱلَّذِينَ يَتَّبِعُونَ ٱلشَّهَوَٰتِ أَن تَمِيلُوا۟ مَيْلًا عَظِيمًا"
+    }
+   ],
+   "root_arabic": "ش ه و",
+   "root_buckwalter": "$hw",
+   "root_id": "$hw",
+   "artifact_name": "$hw.json",
+   "verse_ref": "4:27",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "$~ahawa`ti",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱللَّهُ يُرِيدُ أَن يَتُوبَ عَلَيْكُمْ وَيُرِيدُ ٱلَّذِينَ يَتَّبِعُونَ ٱلشَّهَوَٰتِ أَن تَمِيلُوا۟ مَيْلًا عَظِيمًا"
+  },
+  {
+   "word_ref": "52:22:5:1",
+   "disposition": "CONSISTENT",
+   "note": "Each verb has a desired object or state and profiles appetitive pull.",
+   "coverage_cluster_id": "desiring_verbs",
+   "candidate_semantic_interpretation": "be appetitively drawn toward an object",
+   "cluster_supporting_evidence": "All eight verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "52:22",
+     "verse_text": "وَأَمْدَدْنَٰهُم بِفَٰكِهَةٍ وَلَحْمٍ مِّمَّا يَشْتَهُونَ"
+    }
+   ],
+   "root_arabic": "ش ه و",
+   "root_buckwalter": "$hw",
+   "root_id": "$hw",
+   "artifact_name": "$hw.json",
+   "verse_ref": "52:22",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "ya$otahu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَأَمْدَدْنَٰهُم بِفَٰكِهَةٍ وَلَحْمٍ مِّمَّا يَشْتَهُونَ"
+  },
+  {
+   "word_ref": "56:21:4:1",
+   "disposition": "CONSISTENT",
+   "note": "Each verb has a desired object or state and profiles appetitive pull.",
+   "coverage_cluster_id": "desiring_verbs",
+   "candidate_semantic_interpretation": "be appetitively drawn toward an object",
+   "cluster_supporting_evidence": "All eight verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "56:21",
+     "verse_text": "وَلَحْمِ طَيْرٍ مِّمَّا يَشْتَهُونَ"
+    }
+   ],
+   "root_arabic": "ش ه و",
+   "root_buckwalter": "$hw",
+   "root_id": "$hw",
+   "artifact_name": "$hw.json",
+   "verse_ref": "56:21",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "ya$otahu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَحْمِ طَيْرٍ مِّمَّا يَشْتَهُونَ"
+  },
+  {
+   "word_ref": "77:42:3:1",
+   "disposition": "CONSISTENT",
+   "note": "Each verb has a desired object or state and profiles appetitive pull.",
+   "coverage_cluster_id": "desiring_verbs",
+   "candidate_semantic_interpretation": "be appetitively drawn toward an object",
+   "cluster_supporting_evidence": "All eight verbal contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "77:42",
+     "verse_text": "وَفَوَٰكِهَ مِمَّا يَشْتَهُونَ"
+    }
+   ],
+   "root_arabic": "ش ه و",
+   "root_buckwalter": "$hw",
+   "root_id": "$hw",
+   "artifact_name": "$hw.json",
+   "verse_ref": "77:42",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "ya$otahu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَفَوَٰكِهَ مِمَّا يَشْتَهُونَ"
+  },
+  {
+   "word_ref": "7:81:4:1",
+   "disposition": "CONSISTENT",
+   "note": "Each noun names desire as appetite or the pursued object of appetite.",
+   "coverage_cluster_id": "appetite_nouns",
+   "candidate_semantic_interpretation": "appetite or appetitively desired object",
+   "cluster_supporting_evidence": "All five noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:81",
+     "verse_text": "إِنَّكُمْ لَتَأْتُونَ ٱلرِّجَالَ شَهْوَةً مِّن دُونِ ٱلنِّسَآءِ بَلْ أَنتُمْ قَوْمٌ مُّسْرِفُونَ"
+    }
+   ],
+   "root_arabic": "ش ه و",
+   "root_buckwalter": "$hw",
+   "root_id": "$hw",
+   "artifact_name": "$hw.json",
+   "verse_ref": "7:81",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "$ahowapF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّكُمْ لَتَأْتُونَ ٱلرِّجَالَ شَهْوَةً مِّن دُونِ ٱلنِّسَآءِ بَلْ أَنتُمْ قَوْمٌ مُّسْرِفُونَ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "STRONG",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

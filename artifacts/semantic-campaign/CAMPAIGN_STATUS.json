@@ -1,8 +1,8 @@
 {
   "campaign_id": "lisan-root-calibration",
-  "status": "MORPHOLOGY_ADMITTED_CALIBRATION_EXECUTED",
-  "verdict": "LARGE_SCALE_SEMANTIC_CAMPAIGN_EXECUTED_TO_CURRENT_QUALIFIED_LIMIT",
-  "produced_at": "2026-09-06",
+  "status": "BATCH_06_IN_PROGRESS",
+  "verdict": "BATCH_06_WAVE_1_CHECKPOINT_COMPLETE",
+  "produced_at": "2026-09-11",
   "reads_handoff": "artifacts/semantic-campaign/PHASE_1_HANDOFF.json",
   "supersedes_prior_status": "BLOCKED_PENDING_QAC_MORPHOLOGY_ADMISSION",
   "morphology_source": {
@@ -27,7 +27,7 @@
     "adversarial_verify": {"SUPPORTED": 0, "PARTIALLY_SUPPORTED": 8, "REFUTED": 0},
     "interpretation": "Every internal candidate was reduced to PARTIALLY_SUPPORTED by adversarial verification; universal-presence + verification bars correctly blocked acceptance. 0 accepted is the honest result, not a failure."
   },
-  "counts": {
+  "historical_calibration_counts": {
     "eligible_roots": 1642,
     "processed_roots": 8,
     "accepted_roots": 0,
@@ -39,9 +39,38 @@
     "external_hypotheses_tested": 0,
     "cross_root_hypotheses_generated": 0
   },
-  "current_qualified_limit": {
+  "historical_calibration_limit": {
     "reason": "The data blocker is resolved. The remaining limit is NOT data: (1) canonicalization requires independent HUMAN verification (unavailable in an autonomous run); (2) a UNIVERSAL root-concept requires full-corpus coverage of ALL occurrences per root, which for 1,642 roots is a large ongoing scholarly effort, not a single-session task. Calibration proved the pipeline and produced honest non-canonical research + findings.",
     "what_would_extend": "Human-in-the-loop verification for acceptance; full-occurrence (not representative-sample) research per root; iterative batches per Request 02 §12-§13."
   },
-  "resume_instruction": "Rebuild runtime (import Tanzil + QAC via QacMorphologyImporter), then run further batches from the Root Universe. CampaignState 'calibration-batch-01' is COMPLETE; the next batch selects unprocessed roots. No conversational context required."
+  "batch06_current_checkpoint": {
+    "manifest": "artifacts/semantic-campaign/BATCH_06_MANIFEST.json",
+    "report": "docs/LISAN3_BATCH_06_WAVE_01.md",
+    "branch": "semantic-campaign-batch06",
+    "starting_main_sha": "6f895bf0754190a423512b7478ced5bf7bd4a266",
+    "wave_1": {
+      "status": "COMPLETE",
+      "roots": 20,
+      "occurrences": 1780,
+      "coverage_exact_set": true,
+      "outcomes": {"STRONG": 4, "MODERATE": 10, "WEAK": 4, "UNRESOLVED": 2},
+      "resistant_occurrences": 528,
+      "reconciliation_lineage_records": 2
+    },
+    "wave_2": {"status": "NOT_STARTED", "roots": 20, "occurrences": 1318}
+  },
+  "current_campaign_counts": {
+    "eligible_roots": 1642,
+    "processed_roots": 108,
+    "remaining_roots": 1534,
+    "research_complete": 108,
+    "canonicalization_pending": 108
+  },
+  "boundaries": {
+    "canonical_publication": "NOT_AUTHORIZED",
+    "batch05_corrective_roots": "EXCLUDED_AND_UNCHANGED",
+    "hybrid_retrieval": "NOT_STARTED",
+    "push_merge_release": "NOT_AUTHORIZED"
+  },
+  "resume_instruction": "Use python -m tools.campaign. Resume Batch 06 Wave 2 from the frozen 20-root population in BATCH_06_MANIFEST.json; do not reselect roots or reopen Wave 1. No conversational context required."
 }

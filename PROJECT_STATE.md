@@ -866,3 +866,42 @@ push, tag, or release.
 Execute and independently checkpoint Batch 06 Wave 1 against the frozen
 20-root / 1,780-occurrence population. Semantic ambiguity must be preserved as
 resistance or unresolved evidence and must not stop unrelated roots.
+
+## Batch 06 Wave 1 Semantic Checkpoint (2026-09-11)
+
+- Wave 1 persisted exactly the 20 roots and 1,780 confirmed occurrence
+  identities frozen in `BATCH_06_MANIFEST.json`. Every root has exact-set
+  coverage, `research_completeness = COMPLETE`, explicit four-part identity,
+  canonical Tanzil verse evidence, QAC structural provenance, a final
+  occurrence disposition, and no missing or duplicate `word_ref`.
+- Outcome distribution: 4 STRONG (`trk`, `$hw`, `Dyq`, `Hlf`), 10 MODERATE
+  (`ArD`, `mvl`, `qlb`, `swA`, `fSl`, `wlj`, `Sgr`, `Ezr`, `Hdq`, `Hwj`),
+  4 WEAK (`ysr`, `jwb`, `Sdd`, `Sbg`), and 2 UNRESOLVED (`$yA`, `Hlq`).
+- The exact resistant total is 528: all 519 `$yA` occurrences because the
+  thing/willing bridge is not internally demonstrated; three `ysr` maysir
+  occurrences; the `jwb` rock-hewing token at 89:9; the `Sdd` sadid token at
+  14:16; all three `Hlq` throat/shaving tokens; and the `Sbg` culinary token at
+  23:20. These are evidence-bearing outcomes, not campaign blockers.
+- Two preliminary objections were reconciled to final CONSISTENT while
+  preserving per-occurrence lineage: `mvl` at `19:17:8:2` (Form V embodied
+  correspondence) and `wlj` at `9:16:20:1` (admitted inner-circle access).
+- Wave 1 introduced a fail-closed semantic-class materializer. It has no
+  default disposition: every reviewed class has explicit structural selectors,
+  an expected count, interpretation, rationale, supporting-evidence note, and
+  counterevidence list. Unmatched, multiply matched, drifted-count, duplicate,
+  or root-population-mismatched evidence is rejected.
+- The campaign ledger now contains 108 / 1,642 researched roots; 1,534 remain.
+  All 108 are coverage-complete and retain canonical authorization PENDING.
+- Wave 1 V2 evidence passed: 31 focused campaign/QAC tests and focused Ruff;
+  JSON parsing for the manifest, status, and ledger; 20/20 artifact identity and
+  exact-set contract checks; 1,780/1,780 evidence records; and zero changes to
+  any previously tracked root artifact.
+- Report: `docs/LISAN3_BATCH_06_WAVE_01.md`. Prior root artifacts and the five
+  separate Batch 05 corrective roots remain unchanged. Ignored packet/coverage
+  working files are operational scratch only and are not staged.
+
+## Current Exact Next Action
+
+Execute and independently checkpoint Batch 06 Wave 2 against the frozen
+20-root / 1,318-occurrence population. Do not reselect roots, reopen Wave 1, or
+start the Batch 05 five-root corrective track.

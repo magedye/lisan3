@@ -1,0 +1,229 @@
+{
+ "root_arabic": "ص ب غ",
+ "root_buckwalter": "Sbg",
+ "root_id": "Sbg",
+ "artifact_name": "_53_bg.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch06-wave1-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "an imbuing treatment or quality that suffuses and characterizes what receives it",
+ "internal_discovery": {
+  "candidate_root_contribution": "an imbuing treatment or quality that suffuses and characterizes what receives it",
+  "plain_explanation": "The two tokens in 2:138 present God's sibgha as a defining imbuement or characterization. The food-context sibgh in 23:20 may denote a condiment; the verse does not itself establish that suffusion/characterization is the root residue there.",
+  "layer_separation_note": "The construct with God supplies the defining religious source in 2:138; the eater construction supplies culinary function in 23:20. These contextual roles must not be folded into the root.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 2,
+   "inconsistent_refs": [
+    "23:20:8:2"
+   ]
+  },
+  "strongest_counterexample": "23:20:8:2 names sibgh for eaters and can be satisfied by condiment/relish without an explicit coloring or imbuing process.",
+  "competing_hypothesis": "Both are forms of permeating coloration or treatment; this is plausible but not demonstrated within the culinary verse.",
+  "distinctiveness_note": "Tentatively distinct from simple color by profiling an applied, characterizing treatment; the food occurrence leaves that boundary uncertain.",
+  "unresolved_cases": [
+   "23:20:8:2"
+  ],
+  "result": "PREFERRED",
+  "result_strength": "WEAK",
+  "rationale": "The divine-sibgha class supports the candidate, but one of three occurrences remains resistant.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "divine_sibgha",
+     "where": {
+      "qac_surface_regex": "^Sibogap"
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "a defining imbuement or characterization from God",
+     "classification_rationale": "Both tokens in 2:138 explicitly contrast and attribute the sibgha to God as a defining quality.",
+     "supporting_evidence_note": "Both word occurrences in 2:138 were preserved and reviewed separately.",
+     "counterevidence": [
+      "The metaphorical mechanism is not explicitly explained in the verse."
+     ]
+    },
+    {
+     "cluster_id": "culinary_sibgh",
+     "where": {
+      "qac_surface_regex": "^SibogK$"
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "a food accompaniment or treatment, with an unproven imbuing bridge",
+     "classification_rationale": "23:20 gives culinary function but no explicit evidence of characterizing suffusion.",
+     "supporting_evidence_note": "23:20 was reviewed directly.",
+     "counterevidence": [
+      "The occurrence can denote edible relish without the proposed abstract residue."
+     ]
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "Sbg",
+  "verdict": "PARTIALLY_SUPPORTED",
+  "failing_occurrences": [
+   "23:20:8:2"
+  ],
+  "distinctiveness_ok": false,
+  "falsifiable": true,
+  "notes": "The culinary occurrence remains resistant; universal presence is not claimed."
+ },
+ "coverage_validation": {
+  "root": "Sbg",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "23:20:8:2",
+   "disposition": "RESISTANT",
+   "note": "23:20 gives culinary function but no explicit evidence of characterizing suffusion.",
+   "coverage_cluster_id": "culinary_sibgh",
+   "candidate_semantic_interpretation": "a food accompaniment or treatment, with an unproven imbuing bridge",
+   "cluster_supporting_evidence": "23:20 was reviewed directly.",
+   "counterevidence": [
+    "The occurrence can denote edible relish without the proposed abstract residue."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "23:20",
+     "verse_text": "وَشَجَرَةً تَخْرُجُ مِن طُورِ سَيْنَآءَ تَنۢبُتُ بِٱلدُّهْنِ وَصِبْغٍ لِّلْـَٔاكِلِينَ"
+    }
+   ],
+   "root_arabic": "ص ب غ",
+   "root_buckwalter": "Sbg",
+   "root_id": "Sbg",
+   "artifact_name": "_53_bg.json",
+   "verse_ref": "23:20",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "SibogK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَشَجَرَةً تَخْرُجُ مِن طُورِ سَيْنَآءَ تَنۢبُتُ بِٱلدُّهْنِ وَصِبْغٍ لِّلْـَٔاكِلِينَ"
+  },
+  {
+   "word_ref": "2:138:1:1",
+   "disposition": "CONSISTENT",
+   "note": "Both tokens in 2:138 explicitly contrast and attribute the sibgha to God as a defining quality.",
+   "coverage_cluster_id": "divine_sibgha",
+   "candidate_semantic_interpretation": "a defining imbuement or characterization from God",
+   "cluster_supporting_evidence": "Both word occurrences in 2:138 were preserved and reviewed separately.",
+   "counterevidence": [
+    "The metaphorical mechanism is not explicitly explained in the verse."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:138",
+     "verse_text": "صِبْغَةَ ٱللَّهِ وَمَنْ أَحْسَنُ مِنَ ٱللَّهِ صِبْغَةً وَنَحْنُ لَهُۥ عَٰبِدُونَ"
+    }
+   ],
+   "root_arabic": "ص ب غ",
+   "root_buckwalter": "Sbg",
+   "root_id": "Sbg",
+   "artifact_name": "_53_bg.json",
+   "verse_ref": "2:138",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Sibogapa",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "صِبْغَةَ ٱللَّهِ وَمَنْ أَحْسَنُ مِنَ ٱللَّهِ صِبْغَةً وَنَحْنُ لَهُۥ عَٰبِدُونَ"
+  },
+  {
+   "word_ref": "2:138:7:1",
+   "disposition": "CONSISTENT",
+   "note": "Both tokens in 2:138 explicitly contrast and attribute the sibgha to God as a defining quality.",
+   "coverage_cluster_id": "divine_sibgha",
+   "candidate_semantic_interpretation": "a defining imbuement or characterization from God",
+   "cluster_supporting_evidence": "Both word occurrences in 2:138 were preserved and reviewed separately.",
+   "counterevidence": [
+    "The metaphorical mechanism is not explicitly explained in the verse."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:138",
+     "verse_text": "صِبْغَةَ ٱللَّهِ وَمَنْ أَحْسَنُ مِنَ ٱللَّهِ صِبْغَةً وَنَحْنُ لَهُۥ عَٰبِدُونَ"
+    }
+   ],
+   "root_arabic": "ص ب غ",
+   "root_buckwalter": "Sbg",
+   "root_id": "Sbg",
+   "artifact_name": "_53_bg.json",
+   "verse_ref": "2:138",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "SibogapF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "صِبْغَةَ ٱللَّهِ وَمَنْ أَحْسَنُ مِنَ ٱللَّهِ صِبْغَةً وَنَحْنُ لَهُۥ عَٰبِدُونَ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "WEAK",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PARTIAL",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "23:20:8:2"
+ ],
+ "unreconciled_count": 1,
+ "resistant_occurrences": [
+  "23:20:8:2"
+ ],
+ "structural_uncertainty_occurrences": []
+}

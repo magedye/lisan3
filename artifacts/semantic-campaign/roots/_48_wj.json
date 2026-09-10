@@ -1,0 +1,207 @@
+{
+ "root_arabic": "ح و ج",
+ "root_buckwalter": "Hwj",
+ "root_id": "Hwj",
+ "artifact_name": "_48_wj.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch06-wave1-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "a felt requirement or sought purpose whose fulfillment addresses an inward or practical lack",
+ "internal_discovery": {
+  "candidate_root_contribution": "a felt requirement or sought purpose whose fulfillment addresses an inward or practical lack",
+  "plain_explanation": "All three haja occurrences name a purpose or need: Jacob's inward concern, practical aims carried by livestock, and needs held in breasts. The referent varies while requirement-directedness remains.",
+  "layer_separation_note": "Possessors and prepositional phrases locate the need in a self, breast, or practical activity; the root supplies the required/sought purpose.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "12:68 can be read as a private wish rather than objective necessity, so the core must include sought purpose, not strict necessity.",
+  "competing_hypothesis": "The root means desire only; practical needs in 40:80 and 59:9 require a lack/requirement dimension.",
+  "distinctiveness_note": "Distinct from appetite, which pulls toward an object, and from intention, which plans action; Hwj profiles a lack-linked requirement or purpose.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All uses cohere, but three noun-only occurrences constrain abstraction and strength.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "need_or_purpose",
+     "where": {
+      "qac_pos": [
+       "N"
+      ]
+     },
+     "occurrence_count_expected": 3,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "felt requirement or sought purpose",
+     "classification_rationale": "Each occurrence identifies something needed or inwardly sought to address a lack or purpose.",
+     "supporting_evidence_note": "12:68, 40:80, and 59:9 were reviewed directly.",
+     "counterevidence": [
+      "12:68 broadens necessity to an inwardly sought purpose."
+     ]
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "Hwj",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "The need/purpose nucleus is universal but evidence-sparse."
+ },
+ "coverage_validation": {
+  "root": "Hwj",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "12:68:16:1",
+   "disposition": "CONSISTENT",
+   "note": "Each occurrence identifies something needed or inwardly sought to address a lack or purpose.",
+   "coverage_cluster_id": "need_or_purpose",
+   "candidate_semantic_interpretation": "felt requirement or sought purpose",
+   "cluster_supporting_evidence": "12:68, 40:80, and 59:9 were reviewed directly.",
+   "counterevidence": [
+    "12:68 broadens necessity to an inwardly sought purpose."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "12:68",
+     "verse_text": "وَلَمَّا دَخَلُوا۟ مِنْ حَيْثُ أَمَرَهُمْ أَبُوهُم مَّا كَانَ يُغْنِى عَنْهُم مِّنَ ٱللَّهِ مِن شَىْءٍ إِلَّا حَاجَةً فِى نَفْسِ يَعْقُوبَ قَضَىٰهَا وَإِنَّهُۥ لَذُو عِلْمٍ لِّمَا عَلَّمْنَٰهُ وَلَٰكِنَّ أَكْثَرَ ٱلنَّاسِ لَا يَعْلَمُونَ"
+    }
+   ],
+   "root_arabic": "ح و ج",
+   "root_buckwalter": "Hwj",
+   "root_id": "Hwj",
+   "artifact_name": "_48_wj.json",
+   "verse_ref": "12:68",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "HaAjapF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَمَّا دَخَلُوا۟ مِنْ حَيْثُ أَمَرَهُمْ أَبُوهُم مَّا كَانَ يُغْنِى عَنْهُم مِّنَ ٱللَّهِ مِن شَىْءٍ إِلَّا حَاجَةً فِى نَفْسِ يَعْقُوبَ قَضَىٰهَا وَإِنَّهُۥ لَذُو عِلْمٍ لِّمَا عَلَّمْنَٰهُ وَلَٰكِنَّ أَكْثَرَ ٱلنَّاسِ لَا يَعْلَمُونَ"
+  },
+  {
+   "word_ref": "40:80:6:1",
+   "disposition": "CONSISTENT",
+   "note": "Each occurrence identifies something needed or inwardly sought to address a lack or purpose.",
+   "coverage_cluster_id": "need_or_purpose",
+   "candidate_semantic_interpretation": "felt requirement or sought purpose",
+   "cluster_supporting_evidence": "12:68, 40:80, and 59:9 were reviewed directly.",
+   "counterevidence": [
+    "12:68 broadens necessity to an inwardly sought purpose."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "40:80",
+     "verse_text": "وَلَكُمْ فِيهَا مَنَٰفِعُ وَلِتَبْلُغُوا۟ عَلَيْهَا حَاجَةً فِى صُدُورِكُمْ وَعَلَيْهَا وَعَلَى ٱلْفُلْكِ تُحْمَلُونَ"
+    }
+   ],
+   "root_arabic": "ح و ج",
+   "root_buckwalter": "Hwj",
+   "root_id": "Hwj",
+   "artifact_name": "_48_wj.json",
+   "verse_ref": "40:80",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "HaAjapF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَكُمْ فِيهَا مَنَٰفِعُ وَلِتَبْلُغُوا۟ عَلَيْهَا حَاجَةً فِى صُدُورِكُمْ وَعَلَيْهَا وَعَلَى ٱلْفُلْكِ تُحْمَلُونَ"
+  },
+  {
+   "word_ref": "59:9:15:1",
+   "disposition": "CONSISTENT",
+   "note": "Each occurrence identifies something needed or inwardly sought to address a lack or purpose.",
+   "coverage_cluster_id": "need_or_purpose",
+   "candidate_semantic_interpretation": "felt requirement or sought purpose",
+   "cluster_supporting_evidence": "12:68, 40:80, and 59:9 were reviewed directly.",
+   "counterevidence": [
+    "12:68 broadens necessity to an inwardly sought purpose."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "59:9",
+     "verse_text": "وَٱلَّذِينَ تَبَوَّءُو ٱلدَّارَ وَٱلْإِيمَٰنَ مِن قَبْلِهِمْ يُحِبُّونَ مَنْ هَاجَرَ إِلَيْهِمْ وَلَا يَجِدُونَ فِى صُدُورِهِمْ حَاجَةً مِّمَّآ أُوتُوا۟ وَيُؤْثِرُونَ عَلَىٰٓ أَنفُسِهِمْ وَلَوْ كَانَ بِهِمْ خَصَاصَةٌ وَمَن يُوقَ شُحَّ نَفْسِهِۦ فَأُو۟لَٰٓئِكَ هُمُ ٱلْمُفْلِحُونَ"
+    }
+   ],
+   "root_arabic": "ح و ج",
+   "root_buckwalter": "Hwj",
+   "root_id": "Hwj",
+   "artifact_name": "_48_wj.json",
+   "verse_ref": "59:9",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "HaAjapF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱلَّذِينَ تَبَوَّءُو ٱلدَّارَ وَٱلْإِيمَٰنَ مِن قَبْلِهِمْ يُحِبُّونَ مَنْ هَاجَرَ إِلَيْهِمْ وَلَا يَجِدُونَ فِى صُدُورِهِمْ حَاجَةً مِّمَّآ أُوتُوا۟ وَيُؤْثِرُونَ عَلَىٰٓ أَنفُسِهِمْ وَلَوْ كَانَ بِهِمْ خَصَاصَةٌ وَمَن يُوقَ شُحَّ نَفْسِهِۦ فَأُو۟لَٰٓئِكَ هُمُ ٱلْمُفْلِحُونَ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}

@@ -379,6 +379,9 @@ def test_15_persist_coverage_persists_preliminary_and_lifts_block(tmp_path, monk
     assert recon["final_disposition"] == "CONSISTENT"
     assert recon["surface_form_arabic"] is None
     assert recon["surface_form_arabic_status"] == "NOT_AVAILABLE_CANONICALLY"
+    assert "qac_tag" in recon
+    assert "qac_pos" in recon
+    assert "qac_verb_form" in recon
     assert recon["morphology"] == "N"
     assert recon["verse_ref"] == "2:1"
     assert recon["supporting_evidence"][0]["source"] == "CANONICAL_TANZIL_VERSE"
@@ -426,6 +429,50 @@ def test_persist_coverage_rejects_root_population_mismatch(tmp_path, monkeypatch
 
     with pytest.raises(ValueError, match="root populations differ"):
         camp.cmd_persist_coverage(args)
+
+
+def test_materialize_coverage_is_explicit_count_pinned_and_fail_closed():
+    from tools.campaign import materialize_occurrence_dispositions
+
+    occurrences = [
+        {"word_ref": "1:1:1:1", "qac_pos": "N", "qac_verb_form": None,
+         "qac_surface_form_buckwalter": "kitaAb"},
+        {"word_ref": "1:1:2:1", "qac_pos": "V", "qac_verb_form": "II",
+         "qac_surface_form_buckwalter": "kat~aba"},
+    ]
+    base = {
+        "clusters": [
+            {"cluster_id": "noun", "where": {"qac_pos": ["N"]},
+             "occurrence_count_expected": 1, "disposition": "CONSISTENT",
+             "candidate_semantic_interpretation": "fixed record",
+             "classification_rationale": "noun instantiates the reviewed record class",
+             "supporting_evidence_note": "the supplied canonical verse was reviewed",
+             "counterevidence": []},
+            {"cluster_id": "verb", "where": {"qac_pos": ["V"]},
+             "occurrence_count_expected": 1, "disposition": "RESISTANT",
+             "candidate_semantic_interpretation": "fixing action",
+             "classification_rationale": "verb is retained as a contested class",
+             "supporting_evidence_note": "the supplied canonical verse was reviewed",
+             "counterevidence": ["candidate residue is not explicit"]},
+        ],
+        "reconciliation": [],
+    }
+    dispositions, reconciliation = materialize_occurrence_dispositions(
+        "ktb", occurrences, base
+    )
+    assert [d["word_ref"] for d in dispositions] == ["1:1:1:1", "1:1:2:1"]
+    assert dispositions[1]["disposition"] == "RESISTANT"
+    assert reconciliation == []
+
+    drifted = json.loads(json.dumps(base))
+    drifted["clusters"][0]["occurrence_count_expected"] = 2
+    with pytest.raises(ValueError, match="count drift"):
+        materialize_occurrence_dispositions("ktb", occurrences, drifted)
+
+    ambiguous = json.loads(json.dumps(base))
+    ambiguous["clusters"][1]["where"] = {"qac_pos": ["N", "V"]}
+    with pytest.raises(ValueError, match="matched 2 reviewed classes"):
+        materialize_occurrence_dispositions("ktb", occurrences, ambiguous)
 
 
 # --- Owner remediation: cross-lens root unity (Window 03 integrity fix) -------

@@ -1,0 +1,1749 @@
+{
+ "root_arabic": "ص د د",
+ "root_buckwalter": "Sdd",
+ "root_id": "Sdd",
+ "artifact_name": "_53_dd.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch06-wave1-coverage",
+ "occurrences": 42,
+ "frozen_candidate_root_contribution": "placing or undergoing an obstruction that turns movement, access, or response away from its course",
+ "internal_discovery": {
+  "candidate_root_contribution": "placing or undergoing an obstruction that turns movement, access, or response away from its course",
+  "plain_explanation": "Forty-one of 42 occurrences are verbs or action nouns of hindering, turning away, being barred, or a blocking structure. The adjective/noun sadid at 14:16 denotes a hellish fluid and does not expose obstruction or turning-away in its verse.",
+  "layer_separation_note": "Voice separates actively barring from being turned away; prepositions specify the blocked path. The 14:16 lexical item is not forced through an external derivation.",
+  "presence": {
+   "occurrences_total": 42,
+   "occurrences_checked": 42,
+   "occurrences_consistent": 41,
+   "inconsistent_refs": [
+    "14:16:7:1"
+   ]
+  },
+  "strongest_counterexample": "14:16:7:1 describes water called sadid; the occurrence has no path, barrier, or redirection relation.",
+  "competing_hypothesis": "Sadid is blocked or accumulated discharge, but that material explanation is not recoverable from the Quranic context alone.",
+  "distinctiveness_note": "Distinct from simple refusal and from turning oneself: Sdd supplies obstruction that prevents or redirects access.",
+  "unresolved_cases": [
+   "14:16:7:1"
+  ],
+  "result": "PREFERRED",
+  "result_strength": "WEAK",
+  "rationale": "The obstruction nucleus is stable in 41 occurrences, but one concrete fluid term remains unreconciled.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "obstruction_and_turning",
+     "where": {
+      "qac_pos": [
+       "V",
+       "N"
+      ]
+     },
+     "occurrence_count_expected": 41,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+     "classification_rationale": "These contexts all block or redirect a person, path, or response.",
+     "supporting_evidence_note": "All 41 verbal/action-noun contexts were reviewed.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "sadid_fluid",
+     "where": {
+      "qac_pos": [
+       "ADJ"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "a hellish fluid, with no internally visible obstruction residue",
+     "classification_rationale": "14:16 names the fluid without an internal semantic bridge to barring or redirection.",
+     "supporting_evidence_note": "14:16 was reviewed directly.",
+     "counterevidence": [
+      "The verse supplies neither blocked motion nor a barrier."
+     ]
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "Sdd",
+  "verdict": "PARTIALLY_SUPPORTED",
+  "failing_occurrences": [
+   "14:16:7:1"
+  ],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Sadid remains an explicit resistant occurrence; universal presence is not claimed."
+ },
+ "coverage_validation": {
+  "root": "Sdd",
+  "expected_count": 42,
+  "researched_count": 42,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "11:19:2:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "11:19",
+     "verse_text": "ٱلَّذِينَ يَصُدُّونَ عَن سَبِيلِ ٱللَّهِ وَيَبْغُونَهَا عِوَجًا وَهُم بِٱلْـَٔاخِرَةِ هُمْ كَٰفِرُونَ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "11:19",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaSud~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱلَّذِينَ يَصُدُّونَ عَن سَبِيلِ ٱللَّهِ وَيَبْغُونَهَا عِوَجًا وَهُم بِٱلْـَٔاخِرَةِ هُمْ كَٰفِرُونَ"
+  },
+  {
+   "word_ref": "13:33:30:2",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "13:33",
+     "verse_text": "أَفَمَنْ هُوَ قَآئِمٌ عَلَىٰ كُلِّ نَفْسٍۭ بِمَا كَسَبَتْ وَجَعَلُوا۟ لِلَّهِ شُرَكَآءَ قُلْ سَمُّوهُمْ أَمْ تُنَبِّـُٔونَهُۥ بِمَا لَا يَعْلَمُ فِى ٱلْأَرْضِ أَم بِظَٰهِرٍ مِّنَ ٱلْقَوْلِ بَلْ زُيِّنَ لِلَّذِينَ كَفَرُوا۟ مَكْرُهُمْ وَصُدُّوا۟ عَنِ ٱلسَّبِيلِ وَمَن يُضْلِلِ ٱللَّهُ فَمَا لَهُۥ مِنْ هَادٍ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "13:33",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Sud~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَفَمَنْ هُوَ قَآئِمٌ عَلَىٰ كُلِّ نَفْسٍۭ بِمَا كَسَبَتْ وَجَعَلُوا۟ لِلَّهِ شُرَكَآءَ قُلْ سَمُّوهُمْ أَمْ تُنَبِّـُٔونَهُۥ بِمَا لَا يَعْلَمُ فِى ٱلْأَرْضِ أَم بِظَٰهِرٍ مِّنَ ٱلْقَوْلِ بَلْ زُيِّنَ لِلَّذِينَ كَفَرُوا۟ مَكْرُهُمْ وَصُدُّوا۟ عَنِ ٱلسَّبِيلِ وَمَن يُضْلِلِ ٱللَّهُ فَمَا لَهُۥ مِنْ هَادٍ"
+  },
+  {
+   "word_ref": "14:10:26:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "14:10",
+     "verse_text": "قَالَتْ رُسُلُهُمْ أَفِى ٱللَّهِ شَكٌّ فَاطِرِ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ يَدْعُوكُمْ لِيَغْفِرَ لَكُم مِّن ذُنُوبِكُمْ وَيُؤَخِّرَكُمْ إِلَىٰٓ أَجَلٍ مُّسَمًّى قَالُوٓا۟ إِنْ أَنتُمْ إِلَّا بَشَرٌ مِّثْلُنَا تُرِيدُونَ أَن تَصُدُّونَا عَمَّا كَانَ يَعْبُدُ ءَابَآؤُنَا فَأْتُونَا بِسُلْطَٰنٍ مُّبِينٍ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "14:10",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "taSud~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالَتْ رُسُلُهُمْ أَفِى ٱللَّهِ شَكٌّ فَاطِرِ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ يَدْعُوكُمْ لِيَغْفِرَ لَكُم مِّن ذُنُوبِكُمْ وَيُؤَخِّرَكُمْ إِلَىٰٓ أَجَلٍ مُّسَمًّى قَالُوٓا۟ إِنْ أَنتُمْ إِلَّا بَشَرٌ مِّثْلُنَا تُرِيدُونَ أَن تَصُدُّونَا عَمَّا كَانَ يَعْبُدُ ءَابَآؤُنَا فَأْتُونَا بِسُلْطَٰنٍ مُّبِينٍ"
+  },
+  {
+   "word_ref": "14:16:7:1",
+   "disposition": "RESISTANT",
+   "note": "14:16 names the fluid without an internal semantic bridge to barring or redirection.",
+   "coverage_cluster_id": "sadid_fluid",
+   "candidate_semantic_interpretation": "a hellish fluid, with no internally visible obstruction residue",
+   "cluster_supporting_evidence": "14:16 was reviewed directly.",
+   "counterevidence": [
+    "The verse supplies neither blocked motion nor a barrier."
+   ],
+   "final_disposition": "RESISTANT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "14:16",
+     "verse_text": "مِّن وَرَآئِهِۦ جَهَنَّمُ وَيُسْقَىٰ مِن مَّآءٍ صَدِيدٍ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "14:16",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "SadiydK",
+   "qac_tag": "ADJ",
+   "qac_pos": "ADJ",
+   "qac_verb_form": null,
+   "morphology": "ADJ",
+   "form": "ADJ",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "مِّن وَرَآئِهِۦ جَهَنَّمُ وَيُسْقَىٰ مِن مَّآءٍ صَدِيدٍ"
+  },
+  {
+   "word_ref": "14:3:7:2",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "14:3",
+     "verse_text": "ٱلَّذِينَ يَسْتَحِبُّونَ ٱلْحَيَوٰةَ ٱلدُّنْيَا عَلَى ٱلْـَٔاخِرَةِ وَيَصُدُّونَ عَن سَبِيلِ ٱللَّهِ وَيَبْغُونَهَا عِوَجًا أُو۟لَٰٓئِكَ فِى ضَلَٰلٍۭ بَعِيدٍ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "14:3",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaSud~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱلَّذِينَ يَسْتَحِبُّونَ ٱلْحَيَوٰةَ ٱلدُّنْيَا عَلَى ٱلْـَٔاخِرَةِ وَيَصُدُّونَ عَن سَبِيلِ ٱللَّهِ وَيَبْغُونَهَا عِوَجًا أُو۟لَٰٓئِكَ فِى ضَلَٰلٍۭ بَعِيدٍ"
+  },
+  {
+   "word_ref": "16:88:3:2",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "16:88",
+     "verse_text": "ٱلَّذِينَ كَفَرُوا۟ وَصَدُّوا۟ عَن سَبِيلِ ٱللَّهِ زِدْنَٰهُمْ عَذَابًا فَوْقَ ٱلْعَذَابِ بِمَا كَانُوا۟ يُفْسِدُونَ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "16:88",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Sad~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱلَّذِينَ كَفَرُوا۟ وَصَدُّوا۟ عَن سَبِيلِ ٱللَّهِ زِدْنَٰهُمْ عَذَابًا فَوْقَ ٱلْعَذَابِ بِمَا كَانُوا۟ يُفْسِدُونَ"
+  },
+  {
+   "word_ref": "16:94:13:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "16:94",
+     "verse_text": "وَلَا تَتَّخِذُوٓا۟ أَيْمَٰنَكُمْ دَخَلًۢا بَيْنَكُمْ فَتَزِلَّ قَدَمٌۢ بَعْدَ ثُبُوتِهَا وَتَذُوقُوا۟ ٱلسُّوٓءَ بِمَا صَدَدتُّمْ عَن سَبِيلِ ٱللَّهِ وَلَكُمْ عَذَابٌ عَظِيمٌ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "16:94",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Sadad",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَا تَتَّخِذُوٓا۟ أَيْمَٰنَكُمْ دَخَلًۢا بَيْنَكُمْ فَتَزِلَّ قَدَمٌۢ بَعْدَ ثُبُوتِهَا وَتَذُوقُوا۟ ٱلسُّوٓءَ بِمَا صَدَدتُّمْ عَن سَبِيلِ ٱللَّهِ وَلَكُمْ عَذَابٌ عَظِيمٌ"
+  },
+  {
+   "word_ref": "20:16:2:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "20:16",
+     "verse_text": "فَلَا يَصُدَّنَّكَ عَنْهَا مَن لَّا يُؤْمِنُ بِهَا وَٱتَّبَعَ هَوَىٰهُ فَتَرْدَىٰ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "20:16",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaSud~a",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَلَا يَصُدَّنَّكَ عَنْهَا مَن لَّا يُؤْمِنُ بِهَا وَٱتَّبَعَ هَوَىٰهُ فَتَرْدَىٰ"
+  },
+  {
+   "word_ref": "22:25:4:2",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "22:25",
+     "verse_text": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ وَيَصُدُّونَ عَن سَبِيلِ ٱللَّهِ وَٱلْمَسْجِدِ ٱلْحَرَامِ ٱلَّذِى جَعَلْنَٰهُ لِلنَّاسِ سَوَآءً ٱلْعَٰكِفُ فِيهِ وَٱلْبَادِ وَمَن يُرِدْ فِيهِ بِإِلْحَادٍۭ بِظُلْمٍ نُّذِقْهُ مِنْ عَذَابٍ أَلِيمٍ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "22:25",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaSud~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ وَيَصُدُّونَ عَن سَبِيلِ ٱللَّهِ وَٱلْمَسْجِدِ ٱلْحَرَامِ ٱلَّذِى جَعَلْنَٰهُ لِلنَّاسِ سَوَآءً ٱلْعَٰكِفُ فِيهِ وَٱلْبَادِ وَمَن يُرِدْ فِيهِ بِإِلْحَادٍۭ بِظُلْمٍ نُّذِقْهُ مِنْ عَذَابٍ أَلِيمٍ"
+  },
+  {
+   "word_ref": "27:24:12:2",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "27:24",
+     "verse_text": "وَجَدتُّهَا وَقَوْمَهَا يَسْجُدُونَ لِلشَّمْسِ مِن دُونِ ٱللَّهِ وَزَيَّنَ لَهُمُ ٱلشَّيْطَٰنُ أَعْمَٰلَهُمْ فَصَدَّهُمْ عَنِ ٱلسَّبِيلِ فَهُمْ لَا يَهْتَدُونَ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "27:24",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Sad~a",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَجَدتُّهَا وَقَوْمَهَا يَسْجُدُونَ لِلشَّمْسِ مِن دُونِ ٱللَّهِ وَزَيَّنَ لَهُمُ ٱلشَّيْطَٰنُ أَعْمَٰلَهُمْ فَصَدَّهُمْ عَنِ ٱلسَّبِيلِ فَهُمْ لَا يَهْتَدُونَ"
+  },
+  {
+   "word_ref": "27:43:1:2",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "27:43",
+     "verse_text": "وَصَدَّهَا مَا كَانَت تَّعْبُدُ مِن دُونِ ٱللَّهِ إِنَّهَا كَانَتْ مِن قَوْمٍ كَٰفِرِينَ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "27:43",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Sad~a",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَصَدَّهَا مَا كَانَت تَّعْبُدُ مِن دُونِ ٱللَّهِ إِنَّهَا كَانَتْ مِن قَوْمٍ كَٰفِرِينَ"
+  },
+  {
+   "word_ref": "28:87:2:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "28:87",
+     "verse_text": "وَلَا يَصُدُّنَّكَ عَنْ ءَايَٰتِ ٱللَّهِ بَعْدَ إِذْ أُنزِلَتْ إِلَيْكَ وَٱدْعُ إِلَىٰ رَبِّكَ وَلَا تَكُونَنَّ مِنَ ٱلْمُشْرِكِينَ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "28:87",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaSud~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَا يَصُدُّنَّكَ عَنْ ءَايَٰتِ ٱللَّهِ بَعْدَ إِذْ أُنزِلَتْ إِلَيْكَ وَٱدْعُ إِلَىٰ رَبِّكَ وَلَا تَكُونَنَّ مِنَ ٱلْمُشْرِكِينَ"
+  },
+  {
+   "word_ref": "29:38:12:2",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "29:38",
+     "verse_text": "وَعَادًا وَثَمُودَا۟ وَقَد تَّبَيَّنَ لَكُم مِّن مَّسَٰكِنِهِمْ وَزَيَّنَ لَهُمُ ٱلشَّيْطَٰنُ أَعْمَٰلَهُمْ فَصَدَّهُمْ عَنِ ٱلسَّبِيلِ وَكَانُوا۟ مُسْتَبْصِرِينَ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "29:38",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Sad~a",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَعَادًا وَثَمُودَا۟ وَقَد تَّبَيَّنَ لَكُم مِّن مَّسَٰكِنِهِمْ وَزَيَّنَ لَهُمُ ٱلشَّيْطَٰنُ أَعْمَٰلَهُمْ فَصَدَّهُمْ عَنِ ٱلسَّبِيلِ وَكَانُوا۟ مُسْتَبْصِرِينَ"
+  },
+  {
+   "word_ref": "2:217:11:2",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:217",
+     "verse_text": "يَسْـَٔلُونَكَ عَنِ ٱلشَّهْرِ ٱلْحَرَامِ قِتَالٍ فِيهِ قُلْ قِتَالٌ فِيهِ كَبِيرٌ وَصَدٌّ عَن سَبِيلِ ٱللَّهِ وَكُفْرٌۢ بِهِۦ وَٱلْمَسْجِدِ ٱلْحَرَامِ وَإِخْرَاجُ أَهْلِهِۦ مِنْهُ أَكْبَرُ عِندَ ٱللَّهِ وَٱلْفِتْنَةُ أَكْبَرُ مِنَ ٱلْقَتْلِ وَلَا يَزَالُونَ يُقَٰتِلُونَكُمْ حَتَّىٰ يَرُدُّوكُمْ عَن دِينِكُمْ إِنِ ٱسْتَطَٰعُوا۟ وَمَن يَرْتَدِدْ مِنكُمْ عَن دِينِهِۦ فَيَمُتْ وَهُوَ كَافِرٌ فَأُو۟لَٰٓئِكَ حَبِطَتْ أَعْمَٰلُهُمْ فِى ٱلدُّنْيَا وَٱلْـَٔاخِرَةِ وَأُو۟لَٰٓئِكَ أَصْحَٰبُ ٱلنَّارِ هُمْ فِيهَا خَٰلِدُونَ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "2:217",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Sad~N",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَسْـَٔلُونَكَ عَنِ ٱلشَّهْرِ ٱلْحَرَامِ قِتَالٍ فِيهِ قُلْ قِتَالٌ فِيهِ كَبِيرٌ وَصَدٌّ عَن سَبِيلِ ٱللَّهِ وَكُفْرٌۢ بِهِۦ وَٱلْمَسْجِدِ ٱلْحَرَامِ وَإِخْرَاجُ أَهْلِهِۦ مِنْهُ أَكْبَرُ عِندَ ٱللَّهِ وَٱلْفِتْنَةُ أَكْبَرُ مِنَ ٱلْقَتْلِ وَلَا يَزَالُونَ يُقَٰتِلُونَكُمْ حَتَّىٰ يَرُدُّوكُمْ عَن دِينِكُمْ إِنِ ٱسْتَطَٰعُوا۟ وَمَن يَرْتَدِدْ مِنكُمْ عَن دِينِهِۦ فَيَمُتْ وَهُوَ كَافِرٌ فَأُو۟لَٰٓئِكَ حَبِطَتْ أَعْمَٰلُهُمْ فِى ٱلدُّنْيَا وَٱلْـَٔاخِرَةِ وَأُو۟لَٰٓئِكَ أَصْحَٰبُ ٱلنَّارِ هُمْ فِيهَا خَٰلِدُونَ"
+  },
+  {
+   "word_ref": "34:32:7:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "34:32",
+     "verse_text": "قَالَ ٱلَّذِينَ ٱسْتَكْبَرُوا۟ لِلَّذِينَ ٱسْتُضْعِفُوٓا۟ أَنَحْنُ صَدَدْنَٰكُمْ عَنِ ٱلْهُدَىٰ بَعْدَ إِذْ جَآءَكُم بَلْ كُنتُم مُّجْرِمِينَ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "34:32",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Sadado",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالَ ٱلَّذِينَ ٱسْتَكْبَرُوا۟ لِلَّذِينَ ٱسْتُضْعِفُوٓا۟ أَنَحْنُ صَدَدْنَٰكُمْ عَنِ ٱلْهُدَىٰ بَعْدَ إِذْ جَآءَكُم بَلْ كُنتُم مُّجْرِمِينَ"
+  },
+  {
+   "word_ref": "34:43:13:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "34:43",
+     "verse_text": "وَإِذَا تُتْلَىٰ عَلَيْهِمْ ءَايَٰتُنَا بَيِّنَٰتٍ قَالُوا۟ مَا هَٰذَآ إِلَّا رَجُلٌ يُرِيدُ أَن يَصُدَّكُمْ عَمَّا كَانَ يَعْبُدُ ءَابَآؤُكُمْ وَقَالُوا۟ مَا هَٰذَآ إِلَّآ إِفْكٌ مُّفْتَرًى وَقَالَ ٱلَّذِينَ كَفَرُوا۟ لِلْحَقِّ لَمَّا جَآءَهُمْ إِنْ هَٰذَآ إِلَّا سِحْرٌ مُّبِينٌ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "34:43",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaSud~a",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِذَا تُتْلَىٰ عَلَيْهِمْ ءَايَٰتُنَا بَيِّنَٰتٍ قَالُوا۟ مَا هَٰذَآ إِلَّا رَجُلٌ يُرِيدُ أَن يَصُدَّكُمْ عَمَّا كَانَ يَعْبُدُ ءَابَآؤُكُمْ وَقَالُوا۟ مَا هَٰذَآ إِلَّآ إِفْكٌ مُّفْتَرًى وَقَالَ ٱلَّذِينَ كَفَرُوا۟ لِلْحَقِّ لَمَّا جَآءَهُمْ إِنْ هَٰذَآ إِلَّا سِحْرٌ مُّبِينٌ"
+  },
+  {
+   "word_ref": "3:99:5:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:99",
+     "verse_text": "قُلْ يَٰٓأَهْلَ ٱلْكِتَٰبِ لِمَ تَصُدُّونَ عَن سَبِيلِ ٱللَّهِ مَنْ ءَامَنَ تَبْغُونَهَا عِوَجًا وَأَنتُمْ شُهَدَآءُ وَمَا ٱللَّهُ بِغَٰفِلٍ عَمَّا تَعْمَلُونَ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "3:99",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "taSud~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قُلْ يَٰٓأَهْلَ ٱلْكِتَٰبِ لِمَ تَصُدُّونَ عَن سَبِيلِ ٱللَّهِ مَنْ ءَامَنَ تَبْغُونَهَا عِوَجًا وَأَنتُمْ شُهَدَآءُ وَمَا ٱللَّهُ بِغَٰفِلٍ عَمَّا تَعْمَلُونَ"
+  },
+  {
+   "word_ref": "40:37:15:2",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "40:37",
+     "verse_text": "أَسْبَٰبَ ٱلسَّمَٰوَٰتِ فَأَطَّلِعَ إِلَىٰٓ إِلَٰهِ مُوسَىٰ وَإِنِّى لَأَظُنُّهُۥ كَٰذِبًا وَكَذَٰلِكَ زُيِّنَ لِفِرْعَوْنَ سُوٓءُ عَمَلِهِۦ وَصُدَّ عَنِ ٱلسَّبِيلِ وَمَا كَيْدُ فِرْعَوْنَ إِلَّا فِى تَبَابٍ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "40:37",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Sud~a",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَسْبَٰبَ ٱلسَّمَٰوَٰتِ فَأَطَّلِعَ إِلَىٰٓ إِلَٰهِ مُوسَىٰ وَإِنِّى لَأَظُنُّهُۥ كَٰذِبًا وَكَذَٰلِكَ زُيِّنَ لِفِرْعَوْنَ سُوٓءُ عَمَلِهِۦ وَصُدَّ عَنِ ٱلسَّبِيلِ وَمَا كَيْدُ فِرْعَوْنَ إِلَّا فِى تَبَابٍ"
+  },
+  {
+   "word_ref": "43:37:2:2",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "43:37",
+     "verse_text": "وَإِنَّهُمْ لَيَصُدُّونَهُمْ عَنِ ٱلسَّبِيلِ وَيَحْسَبُونَ أَنَّهُم مُّهْتَدُونَ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "43:37",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaSud~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِنَّهُمْ لَيَصُدُّونَهُمْ عَنِ ٱلسَّبِيلِ وَيَحْسَبُونَ أَنَّهُم مُّهْتَدُونَ"
+  },
+  {
+   "word_ref": "43:57:9:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "43:57",
+     "verse_text": "وَلَمَّا ضُرِبَ ٱبْنُ مَرْيَمَ مَثَلًا إِذَا قَوْمُكَ مِنْهُ يَصِدُّونَ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "43:57",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaSid~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَمَّا ضُرِبَ ٱبْنُ مَرْيَمَ مَثَلًا إِذَا قَوْمُكَ مِنْهُ يَصِدُّونَ"
+  },
+  {
+   "word_ref": "43:62:2:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "43:62",
+     "verse_text": "وَلَا يَصُدَّنَّكُمُ ٱلشَّيْطَٰنُ إِنَّهُۥ لَكُمْ عَدُوٌّ مُّبِينٌ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "43:62",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaSud~a",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَا يَصُدَّنَّكُمُ ٱلشَّيْطَٰنُ إِنَّهُۥ لَكُمْ عَدُوٌّ مُّبِينٌ"
+  },
+  {
+   "word_ref": "47:1:3:2",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "47:1",
+     "verse_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱلَّذِينَ كَفَرُوا۟ وَصَدُّوا۟ عَن سَبِيلِ ٱللَّهِ أَضَلَّ أَعْمَٰلَهُمْ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "47:1",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Sad~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱلَّذِينَ كَفَرُوا۟ وَصَدُّوا۟ عَن سَبِيلِ ٱللَّهِ أَضَلَّ أَعْمَٰلَهُمْ"
+  },
+  {
+   "word_ref": "47:32:4:2",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "47:32",
+     "verse_text": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ وَصَدُّوا۟ عَن سَبِيلِ ٱللَّهِ وَشَآقُّوا۟ ٱلرَّسُولَ مِنۢ بَعْدِ مَا تَبَيَّنَ لَهُمُ ٱلْهُدَىٰ لَن يَضُرُّوا۟ ٱللَّهَ شَيْـًٔا وَسَيُحْبِطُ أَعْمَٰلَهُمْ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "47:32",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Sad~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ وَصَدُّوا۟ عَن سَبِيلِ ٱللَّهِ وَشَآقُّوا۟ ٱلرَّسُولَ مِنۢ بَعْدِ مَا تَبَيَّنَ لَهُمُ ٱلْهُدَىٰ لَن يَضُرُّوا۟ ٱللَّهَ شَيْـًٔا وَسَيُحْبِطُ أَعْمَٰلَهُمْ"
+  },
+  {
+   "word_ref": "47:34:4:2",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "47:34",
+     "verse_text": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ وَصَدُّوا۟ عَن سَبِيلِ ٱللَّهِ ثُمَّ مَاتُوا۟ وَهُمْ كُفَّارٌ فَلَن يَغْفِرَ ٱللَّهُ لَهُمْ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "47:34",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Sad~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ وَصَدُّوا۟ عَن سَبِيلِ ٱللَّهِ ثُمَّ مَاتُوا۟ وَهُمْ كُفَّارٌ فَلَن يَغْفِرَ ٱللَّهُ لَهُمْ"
+  },
+  {
+   "word_ref": "48:25:4:2",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "48:25",
+     "verse_text": "هُمُ ٱلَّذِينَ كَفَرُوا۟ وَصَدُّوكُمْ عَنِ ٱلْمَسْجِدِ ٱلْحَرَامِ وَٱلْهَدْىَ مَعْكُوفًا أَن يَبْلُغَ مَحِلَّهُۥ وَلَوْلَا رِجَالٌ مُّؤْمِنُونَ وَنِسَآءٌ مُّؤْمِنَٰتٌ لَّمْ تَعْلَمُوهُمْ أَن تَطَـُٔوهُمْ فَتُصِيبَكُم مِّنْهُم مَّعَرَّةٌۢ بِغَيْرِ عِلْمٍ لِّيُدْخِلَ ٱللَّهُ فِى رَحْمَتِهِۦ مَن يَشَآءُ لَوْ تَزَيَّلُوا۟ لَعَذَّبْنَا ٱلَّذِينَ كَفَرُوا۟ مِنْهُمْ عَذَابًا أَلِيمًا"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "48:25",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Sad~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "هُمُ ٱلَّذِينَ كَفَرُوا۟ وَصَدُّوكُمْ عَنِ ٱلْمَسْجِدِ ٱلْحَرَامِ وَٱلْهَدْىَ مَعْكُوفًا أَن يَبْلُغَ مَحِلَّهُۥ وَلَوْلَا رِجَالٌ مُّؤْمِنُونَ وَنِسَآءٌ مُّؤْمِنَٰتٌ لَّمْ تَعْلَمُوهُمْ أَن تَطَـُٔوهُمْ فَتُصِيبَكُم مِّنْهُم مَّعَرَّةٌۢ بِغَيْرِ عِلْمٍ لِّيُدْخِلَ ٱللَّهُ فِى رَحْمَتِهِۦ مَن يَشَآءُ لَوْ تَزَيَّلُوا۟ لَعَذَّبْنَا ٱلَّذِينَ كَفَرُوا۟ مِنْهُمْ عَذَابًا أَلِيمًا"
+  },
+  {
+   "word_ref": "4:160:10:3",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "4:160",
+     "verse_text": "فَبِظُلْمٍ مِّنَ ٱلَّذِينَ هَادُوا۟ حَرَّمْنَا عَلَيْهِمْ طَيِّبَٰتٍ أُحِلَّتْ لَهُمْ وَبِصَدِّهِمْ عَن سَبِيلِ ٱللَّهِ كَثِيرًا"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "4:160",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Sad~i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِظُلْمٍ مِّنَ ٱلَّذِينَ هَادُوا۟ حَرَّمْنَا عَلَيْهِمْ طَيِّبَٰتٍ أُحِلَّتْ لَهُمْ وَبِصَدِّهِمْ عَن سَبِيلِ ٱللَّهِ كَثِيرًا"
+  },
+  {
+   "word_ref": "4:167:4:2",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "4:167",
+     "verse_text": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ وَصَدُّوا۟ عَن سَبِيلِ ٱللَّهِ قَدْ ضَلُّوا۟ ضَلَٰلًۢا بَعِيدًا"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "4:167",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Sad~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ وَصَدُّوا۟ عَن سَبِيلِ ٱللَّهِ قَدْ ضَلُّوا۟ ضَلَٰلًۢا بَعِيدًا"
+  },
+  {
+   "word_ref": "4:55:7:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "4:55",
+     "verse_text": "فَمِنْهُم مَّنْ ءَامَنَ بِهِۦ وَمِنْهُم مَّن صَدَّ عَنْهُ وَكَفَىٰ بِجَهَنَّمَ سَعِيرًا"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "4:55",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Sad~a",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَمِنْهُم مَّنْ ءَامَنَ بِهِۦ وَمِنْهُم مَّن صَدَّ عَنْهُ وَكَفَىٰ بِجَهَنَّمَ سَعِيرًا"
+  },
+  {
+   "word_ref": "4:61:13:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "4:61",
+     "verse_text": "وَإِذَا قِيلَ لَهُمْ تَعَالَوْا۟ إِلَىٰ مَآ أَنزَلَ ٱللَّهُ وَإِلَى ٱلرَّسُولِ رَأَيْتَ ٱلْمُنَٰفِقِينَ يَصُدُّونَ عَنكَ صُدُودًا"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "4:61",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaSud~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِذَا قِيلَ لَهُمْ تَعَالَوْا۟ إِلَىٰ مَآ أَنزَلَ ٱللَّهُ وَإِلَى ٱلرَّسُولِ رَأَيْتَ ٱلْمُنَٰفِقِينَ يَصُدُّونَ عَنكَ صُدُودًا"
+  },
+  {
+   "word_ref": "4:61:15:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "4:61",
+     "verse_text": "وَإِذَا قِيلَ لَهُمْ تَعَالَوْا۟ إِلَىٰ مَآ أَنزَلَ ٱللَّهُ وَإِلَى ٱلرَّسُولِ رَأَيْتَ ٱلْمُنَٰفِقِينَ يَصُدُّونَ عَنكَ صُدُودًا"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "4:61",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "SuduwdFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِذَا قِيلَ لَهُمْ تَعَالَوْا۟ إِلَىٰ مَآ أَنزَلَ ٱللَّهُ وَإِلَى ٱلرَّسُولِ رَأَيْتَ ٱلْمُنَٰفِقِينَ يَصُدُّونَ عَنكَ صُدُودًا"
+  },
+  {
+   "word_ref": "58:16:4:2",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "58:16",
+     "verse_text": "ٱتَّخَذُوٓا۟ أَيْمَٰنَهُمْ جُنَّةً فَصَدُّوا۟ عَن سَبِيلِ ٱللَّهِ فَلَهُمْ عَذَابٌ مُّهِينٌ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "58:16",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Sad~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱتَّخَذُوٓا۟ أَيْمَٰنَهُمْ جُنَّةً فَصَدُّوا۟ عَن سَبِيلِ ٱللَّهِ فَلَهُمْ عَذَابٌ مُّهِينٌ"
+  },
+  {
+   "word_ref": "5:2:32:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "5:2",
+     "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تُحِلُّوا۟ شَعَٰٓئِرَ ٱللَّهِ وَلَا ٱلشَّهْرَ ٱلْحَرَامَ وَلَا ٱلْهَدْىَ وَلَا ٱلْقَلَٰٓئِدَ وَلَآ ءَآمِّينَ ٱلْبَيْتَ ٱلْحَرَامَ يَبْتَغُونَ فَضْلًا مِّن رَّبِّهِمْ وَرِضْوَٰنًا وَإِذَا حَلَلْتُمْ فَٱصْطَادُوا۟ وَلَا يَجْرِمَنَّكُمْ شَنَـَٔانُ قَوْمٍ أَن صَدُّوكُمْ عَنِ ٱلْمَسْجِدِ ٱلْحَرَامِ أَن تَعْتَدُوا۟ وَتَعَاوَنُوا۟ عَلَى ٱلْبِرِّ وَٱلتَّقْوَىٰ وَلَا تَعَاوَنُوا۟ عَلَى ٱلْإِثْمِ وَٱلْعُدْوَٰنِ وَٱتَّقُوا۟ ٱللَّهَ إِنَّ ٱللَّهَ شَدِيدُ ٱلْعِقَابِ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "5:2",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Sad~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تُحِلُّوا۟ شَعَٰٓئِرَ ٱللَّهِ وَلَا ٱلشَّهْرَ ٱلْحَرَامَ وَلَا ٱلْهَدْىَ وَلَا ٱلْقَلَٰٓئِدَ وَلَآ ءَآمِّينَ ٱلْبَيْتَ ٱلْحَرَامَ يَبْتَغُونَ فَضْلًا مِّن رَّبِّهِمْ وَرِضْوَٰنًا وَإِذَا حَلَلْتُمْ فَٱصْطَادُوا۟ وَلَا يَجْرِمَنَّكُمْ شَنَـَٔانُ قَوْمٍ أَن صَدُّوكُمْ عَنِ ٱلْمَسْجِدِ ٱلْحَرَامِ أَن تَعْتَدُوا۟ وَتَعَاوَنُوا۟ عَلَى ٱلْبِرِّ وَٱلتَّقْوَىٰ وَلَا تَعَاوَنُوا۟ عَلَى ٱلْإِثْمِ وَٱلْعُدْوَٰنِ وَٱتَّقُوا۟ ٱللَّهَ إِنَّ ٱللَّهَ شَدِيدُ ٱلْعِقَابِ"
+  },
+  {
+   "word_ref": "5:91:12:2",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "5:91",
+     "verse_text": "إِنَّمَا يُرِيدُ ٱلشَّيْطَٰنُ أَن يُوقِعَ بَيْنَكُمُ ٱلْعَدَٰوَةَ وَٱلْبَغْضَآءَ فِى ٱلْخَمْرِ وَٱلْمَيْسِرِ وَيَصُدَّكُمْ عَن ذِكْرِ ٱللَّهِ وَعَنِ ٱلصَّلَوٰةِ فَهَلْ أَنتُم مُّنتَهُونَ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "5:91",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaSud~a",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّمَا يُرِيدُ ٱلشَّيْطَٰنُ أَن يُوقِعَ بَيْنَكُمُ ٱلْعَدَٰوَةَ وَٱلْبَغْضَآءَ فِى ٱلْخَمْرِ وَٱلْمَيْسِرِ وَيَصُدَّكُمْ عَن ذِكْرِ ٱللَّهِ وَعَنِ ٱلصَّلَوٰةِ فَهَلْ أَنتُم مُّنتَهُونَ"
+  },
+  {
+   "word_ref": "63:2:4:2",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "63:2",
+     "verse_text": "ٱتَّخَذُوٓا۟ أَيْمَٰنَهُمْ جُنَّةً فَصَدُّوا۟ عَن سَبِيلِ ٱللَّهِ إِنَّهُمْ سَآءَ مَا كَانُوا۟ يَعْمَلُونَ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "63:2",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Sad~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱتَّخَذُوٓا۟ أَيْمَٰنَهُمْ جُنَّةً فَصَدُّوا۟ عَن سَبِيلِ ٱللَّهِ إِنَّهُمْ سَآءَ مَا كَانُوا۟ يَعْمَلُونَ"
+  },
+  {
+   "word_ref": "63:5:12:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "63:5",
+     "verse_text": "وَإِذَا قِيلَ لَهُمْ تَعَالَوْا۟ يَسْتَغْفِرْ لَكُمْ رَسُولُ ٱللَّهِ لَوَّوْا۟ رُءُوسَهُمْ وَرَأَيْتَهُمْ يَصُدُّونَ وَهُم مُّسْتَكْبِرُونَ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "63:5",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaSud~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِذَا قِيلَ لَهُمْ تَعَالَوْا۟ يَسْتَغْفِرْ لَكُمْ رَسُولُ ٱللَّهِ لَوَّوْا۟ رُءُوسَهُمْ وَرَأَيْتَهُمْ يَصُدُّونَ وَهُم مُّسْتَكْبِرُونَ"
+  },
+  {
+   "word_ref": "7:45:2:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:45",
+     "verse_text": "ٱلَّذِينَ يَصُدُّونَ عَن سَبِيلِ ٱللَّهِ وَيَبْغُونَهَا عِوَجًا وَهُم بِٱلْـَٔاخِرَةِ كَٰفِرُونَ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "7:45",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaSud~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱلَّذِينَ يَصُدُّونَ عَن سَبِيلِ ٱللَّهِ وَيَبْغُونَهَا عِوَجًا وَهُم بِٱلْـَٔاخِرَةِ كَٰفِرُونَ"
+  },
+  {
+   "word_ref": "7:86:6:2",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:86",
+     "verse_text": "وَلَا تَقْعُدُوا۟ بِكُلِّ صِرَٰطٍ تُوعِدُونَ وَتَصُدُّونَ عَن سَبِيلِ ٱللَّهِ مَنْ ءَامَنَ بِهِۦ وَتَبْغُونَهَا عِوَجًا وَٱذْكُرُوٓا۟ إِذْ كُنتُمْ قَلِيلًا فَكَثَّرَكُمْ وَٱنظُرُوا۟ كَيْفَ كَانَ عَٰقِبَةُ ٱلْمُفْسِدِينَ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "7:86",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "taSud~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَا تَقْعُدُوا۟ بِكُلِّ صِرَٰطٍ تُوعِدُونَ وَتَصُدُّونَ عَن سَبِيلِ ٱللَّهِ مَنْ ءَامَنَ بِهِۦ وَتَبْغُونَهَا عِوَجًا وَٱذْكُرُوٓا۟ إِذْ كُنتُمْ قَلِيلًا فَكَثَّرَكُمْ وَٱنظُرُوا۟ كَيْفَ كَانَ عَٰقِبَةُ ٱلْمُفْسِدِينَ"
+  },
+  {
+   "word_ref": "8:34:7:1",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "8:34",
+     "verse_text": "وَمَا لَهُمْ أَلَّا يُعَذِّبَهُمُ ٱللَّهُ وَهُمْ يَصُدُّونَ عَنِ ٱلْمَسْجِدِ ٱلْحَرَامِ وَمَا كَانُوٓا۟ أَوْلِيَآءَهُۥٓ إِنْ أَوْلِيَآؤُهُۥٓ إِلَّا ٱلْمُتَّقُونَ وَلَٰكِنَّ أَكْثَرَهُمْ لَا يَعْلَمُونَ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "8:34",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaSud~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَمَا لَهُمْ أَلَّا يُعَذِّبَهُمُ ٱللَّهُ وَهُمْ يَصُدُّونَ عَنِ ٱلْمَسْجِدِ ٱلْحَرَامِ وَمَا كَانُوٓا۟ أَوْلِيَآءَهُۥٓ إِنْ أَوْلِيَآؤُهُۥٓ إِلَّا ٱلْمُتَّقُونَ وَلَٰكِنَّ أَكْثَرَهُمْ لَا يَعْلَمُونَ"
+  },
+  {
+   "word_ref": "8:36:6:2",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "8:36",
+     "verse_text": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ يُنفِقُونَ أَمْوَٰلَهُمْ لِيَصُدُّوا۟ عَن سَبِيلِ ٱللَّهِ فَسَيُنفِقُونَهَا ثُمَّ تَكُونُ عَلَيْهِمْ حَسْرَةً ثُمَّ يُغْلَبُونَ وَٱلَّذِينَ كَفَرُوٓا۟ إِلَىٰ جَهَنَّمَ يُحْشَرُونَ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "8:36",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaSud~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ يُنفِقُونَ أَمْوَٰلَهُمْ لِيَصُدُّوا۟ عَن سَبِيلِ ٱللَّهِ فَسَيُنفِقُونَهَا ثُمَّ تَكُونُ عَلَيْهِمْ حَسْرَةً ثُمَّ يُغْلَبُونَ وَٱلَّذِينَ كَفَرُوٓا۟ إِلَىٰ جَهَنَّمَ يُحْشَرُونَ"
+  },
+  {
+   "word_ref": "8:47:10:2",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "8:47",
+     "verse_text": "وَلَا تَكُونُوا۟ كَٱلَّذِينَ خَرَجُوا۟ مِن دِيَٰرِهِم بَطَرًا وَرِئَآءَ ٱلنَّاسِ وَيَصُدُّونَ عَن سَبِيلِ ٱللَّهِ وَٱللَّهُ بِمَا يَعْمَلُونَ مُحِيطٌ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "8:47",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaSud~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَا تَكُونُوا۟ كَٱلَّذِينَ خَرَجُوا۟ مِن دِيَٰرِهِم بَطَرًا وَرِئَآءَ ٱلنَّاسِ وَيَصُدُّونَ عَن سَبِيلِ ٱللَّهِ وَٱللَّهُ بِمَا يَعْمَلُونَ مُحِيطٌ"
+  },
+  {
+   "word_ref": "9:34:13:2",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "9:34",
+     "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِنَّ كَثِيرًا مِّنَ ٱلْأَحْبَارِ وَٱلرُّهْبَانِ لَيَأْكُلُونَ أَمْوَٰلَ ٱلنَّاسِ بِٱلْبَٰطِلِ وَيَصُدُّونَ عَن سَبِيلِ ٱللَّهِ وَٱلَّذِينَ يَكْنِزُونَ ٱلذَّهَبَ وَٱلْفِضَّةَ وَلَا يُنفِقُونَهَا فِى سَبِيلِ ٱللَّهِ فَبَشِّرْهُم بِعَذَابٍ أَلِيمٍ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "9:34",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaSud~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِنَّ كَثِيرًا مِّنَ ٱلْأَحْبَارِ وَٱلرُّهْبَانِ لَيَأْكُلُونَ أَمْوَٰلَ ٱلنَّاسِ بِٱلْبَٰطِلِ وَيَصُدُّونَ عَن سَبِيلِ ٱللَّهِ وَٱلَّذِينَ يَكْنِزُونَ ٱلذَّهَبَ وَٱلْفِضَّةَ وَلَا يُنفِقُونَهَا فِى سَبِيلِ ٱللَّهِ فَبَشِّرْهُم بِعَذَابٍ أَلِيمٍ"
+  },
+  {
+   "word_ref": "9:9:6:2",
+   "disposition": "CONSISTENT",
+   "note": "These contexts all block or redirect a person, path, or response.",
+   "coverage_cluster_id": "obstruction_and_turning",
+   "candidate_semantic_interpretation": "to bar, turn away, be barred, or form an obstruction",
+   "cluster_supporting_evidence": "All 41 verbal/action-noun contexts were reviewed.",
+   "counterevidence": [],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "9:9",
+     "verse_text": "ٱشْتَرَوْا۟ بِـَٔايَٰتِ ٱللَّهِ ثَمَنًا قَلِيلًا فَصَدُّوا۟ عَن سَبِيلِهِۦٓ إِنَّهُمْ سَآءَ مَا كَانُوا۟ يَعْمَلُونَ"
+    }
+   ],
+   "root_arabic": "ص د د",
+   "root_buckwalter": "Sdd",
+   "root_id": "Sdd",
+   "artifact_name": "_53_dd.json",
+   "verse_ref": "9:9",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Sad~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱشْتَرَوْا۟ بِـَٔايَٰتِ ٱللَّهِ ثَمَنًا قَلِيلًا فَصَدُّوا۟ عَن سَبِيلِهِۦٓ إِنَّهُمْ سَآءَ مَا كَانُوا۟ يَعْمَلُونَ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "WEAK",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PARTIAL",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "14:16:7:1"
+ ],
+ "unreconciled_count": 1,
+ "resistant_occurrences": [
+  "14:16:7:1"
+ ],
+ "structural_uncertainty_occurrences": []
+}

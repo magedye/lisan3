@@ -1,0 +1,207 @@
+{
+ "root_arabic": "ح د ق",
+ "root_buckwalter": "Hdq",
+ "root_id": "Hdq",
+ "artifact_name": "_48_dq.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch06-wave1-coverage",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "a cultivated garden-space characterized in the Quran by planted growth and abundance",
+ "internal_discovery": {
+  "candidate_root_contribution": "a cultivated garden-space characterized in the Quran by planted growth and abundance",
+  "plain_explanation": "All three occurrences are the plural hada'iq: delightful gardens, gardens and grapes, and dense gardens. The corpus establishes the referential garden class but offers no verbs or contrasts from which to extract a deeper abstract mechanism.",
+  "layer_separation_note": "Modifiers supply delight, density, or produce; the root contributes the garden-space referent. No unobserved enclosure feature is imported.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "Because every token is the same plural noun, universal presence may reflect lexical repetition rather than a tested derivational core.",
+  "competing_hypothesis": "The root specifically means enclosed garden; enclosure is not expressed in the three Quranic contexts and is therefore not adopted.",
+  "distinctiveness_note": "Distinctiveness is limited to the observed cultivated-garden referent; separation from other garden terms is not securely established by this packet alone.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "Coverage is universal, but semantic abstraction and neighbor contrast are evidence-limited.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "garden_plural",
+     "where": {
+      "qac_pos": [
+       "N"
+      ]
+     },
+     "occurrence_count_expected": 3,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "cultivated garden-space with planted growth",
+     "classification_rationale": "Each hada'iq token denotes gardens, with verse-level modifiers specifying growth or delight.",
+     "supporting_evidence_note": "27:60, 78:32, and 80:30 were reviewed directly.",
+     "counterevidence": [
+      "Only one plural lexical form is attested."
+     ]
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "Hdq",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": false,
+  "falsifiable": true,
+  "notes": "The observed referent is supported; deeper distinctiveness remains limited, hence MODERATE."
+ },
+ "coverage_validation": {
+  "root": "Hdq",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "27:60:12:1",
+   "disposition": "CONSISTENT",
+   "note": "Each hada'iq token denotes gardens, with verse-level modifiers specifying growth or delight.",
+   "coverage_cluster_id": "garden_plural",
+   "candidate_semantic_interpretation": "cultivated garden-space with planted growth",
+   "cluster_supporting_evidence": "27:60, 78:32, and 80:30 were reviewed directly.",
+   "counterevidence": [
+    "Only one plural lexical form is attested."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "27:60",
+     "verse_text": "أَمَّنْ خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ وَأَنزَلَ لَكُم مِّنَ ٱلسَّمَآءِ مَآءً فَأَنۢبَتْنَا بِهِۦ حَدَآئِقَ ذَاتَ بَهْجَةٍ مَّا كَانَ لَكُمْ أَن تُنۢبِتُوا۟ شَجَرَهَآ أَءِلَٰهٌ مَّعَ ٱللَّهِ بَلْ هُمْ قَوْمٌ يَعْدِلُونَ"
+    }
+   ],
+   "root_arabic": "ح د ق",
+   "root_buckwalter": "Hdq",
+   "root_id": "Hdq",
+   "artifact_name": "_48_dq.json",
+   "verse_ref": "27:60",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "HadaA^}iqa",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَمَّنْ خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ وَأَنزَلَ لَكُم مِّنَ ٱلسَّمَآءِ مَآءً فَأَنۢبَتْنَا بِهِۦ حَدَآئِقَ ذَاتَ بَهْجَةٍ مَّا كَانَ لَكُمْ أَن تُنۢبِتُوا۟ شَجَرَهَآ أَءِلَٰهٌ مَّعَ ٱللَّهِ بَلْ هُمْ قَوْمٌ يَعْدِلُونَ"
+  },
+  {
+   "word_ref": "78:32:1:1",
+   "disposition": "CONSISTENT",
+   "note": "Each hada'iq token denotes gardens, with verse-level modifiers specifying growth or delight.",
+   "coverage_cluster_id": "garden_plural",
+   "candidate_semantic_interpretation": "cultivated garden-space with planted growth",
+   "cluster_supporting_evidence": "27:60, 78:32, and 80:30 were reviewed directly.",
+   "counterevidence": [
+    "Only one plural lexical form is attested."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "78:32",
+     "verse_text": "حَدَآئِقَ وَأَعْنَٰبًا"
+    }
+   ],
+   "root_arabic": "ح د ق",
+   "root_buckwalter": "Hdq",
+   "root_id": "Hdq",
+   "artifact_name": "_48_dq.json",
+   "verse_ref": "78:32",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "HadaA^}iqa",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "حَدَآئِقَ وَأَعْنَٰبًا"
+  },
+  {
+   "word_ref": "80:30:1:2",
+   "disposition": "CONSISTENT",
+   "note": "Each hada'iq token denotes gardens, with verse-level modifiers specifying growth or delight.",
+   "coverage_cluster_id": "garden_plural",
+   "candidate_semantic_interpretation": "cultivated garden-space with planted growth",
+   "cluster_supporting_evidence": "27:60, 78:32, and 80:30 were reviewed directly.",
+   "counterevidence": [
+    "Only one plural lexical form is attested."
+   ],
+   "final_disposition": "CONSISTENT",
+   "reconciliation_lineage": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "80:30",
+     "verse_text": "وَحَدَآئِقَ غُلْبًا"
+    }
+   ],
+   "root_arabic": "ح د ق",
+   "root_buckwalter": "Hdq",
+   "root_id": "Hdq",
+   "artifact_name": "_48_dq.json",
+   "verse_ref": "80:30",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "HadaA^}iqa",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَحَدَآئِقَ غُلْبًا"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": []
+}
