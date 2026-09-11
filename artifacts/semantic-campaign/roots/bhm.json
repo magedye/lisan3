@@ -1,0 +1,346 @@
+{
+ "root_arabic": "ب ه م",
+ "root_buckwalter": "bhm",
+ "root_id": "bhm",
+ "artifact_name": "bhm.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave3",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "In the Quran the root bhm surfaces ONLY as the singular feminine noun bahiymah (qac_pos=N, no verb, no other derivation) and ONLY inside the frozen construct bahiymat al-anaam (bhm bound to the distinct root n-3-m). As a lexicalized-class term it denotes a category of grazing/pastoral livestock realized as lawful edible provision: provided as rizq (razaqahum, 22:28/22:34), eaten and given to the poor (fakuluu minhaa, 22:28), declared lawful (uhillat, 5:1), and offered with invocation of God's name (yadhkuruu isma llaah, 22:28/22:34). The ONLY internal contrast that fixes its field is bahiymat al-anaam (lawful) vs al-Sayd/game (restricted in ihram) in 5:1. Crucially, this is a lexicalized-class value, NOT a recovered productive root nucleus: because bahiymah never occurs free of al-anaam, never governs any other noun, and never predicates, the independent semantic contribution of bhm itself is underdetermined and not isolable Quran-internally.",
+ "internal_discovery": {
+  "candidate_root_contribution": "In the Quran the root bhm surfaces ONLY as the singular feminine noun bahiymah (qac_pos=N, no verb, no other derivation) and ONLY inside the frozen construct bahiymat al-anaam (bhm bound to the distinct root n-3-m). As a lexicalized-class term it denotes a category of grazing/pastoral livestock realized as lawful edible provision: provided as rizq (razaqahum, 22:28/22:34), eaten and given to the poor (fakuluu minhaa, 22:28), declared lawful (uhillat, 5:1), and offered with invocation of God's name (yadhkuruu isma llaah, 22:28/22:34). The ONLY internal contrast that fixes its field is bahiymat al-anaam (lawful) vs al-Sayd/game (restricted in ihram) in 5:1. Crucially, this is a lexicalized-class value, NOT a recovered productive root nucleus: because bahiymah never occurs free of al-anaam, never governs any other noun, and never predicates, the independent semantic contribution of bhm itself is underdetermined and not isolable Quran-internally.",
+  "plain_explanation": "The root b-h-m appears only three times, always as the noun 'bahiymah' locked in one phrase 'bahiymat al-anaam' (the beast-stock of the grazing livestock). All three verses treat it as lawful, edible livestock given by God as provision and offered ritually; 5:1 adds the one contrast, distinguishing this permitted livestock from hunted game forbidden while in the sacred state. Because the word never stands alone, never varies in form (only its case ending changes for grammar), and is never a verb, we can describe the lexical item and its context confidently but cannot recover any independent meaning of the root itself. We deliberately reject the classical 'mute/inarticulate beast' sense: nothing in these verses touches speech, sound, or obscurity, and importing it would violate the Quran-internal source policy.",
+  "layer_separation_note": "bhm does NOT entail: (1) any action, event, or predication - no verbal or participial use exists anywhere in the corpus; (2) muteness, silence, inarticulateness, vagueness, or obscurity - no occurrence references voice, speech, or sound, so the classical 'mute beast' etymon is Quran-internally unsupported, not merely unproven; (3) humans, wild animals, or hunted game - the referent is domesticated pastoral stock, explicitly opposed to al-Sayd in 5:1; (4) impurity or prohibition - the default valence is lawful provision, with prohibition entering only via external exception clauses (illaa maa yutlaa, ghayra muhillii l-Sayd) attached to the frame, not to bahiymah; (5) any standalone denotation or distributional range - it is never free of al-anaam and never governs another noun.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "There is no internal counterexample to a single-meaning reading: all three tokens are the same noun in the same construct, so consistency is trivial and evidentially cheap. The strongest adversarial fact is STRUCTURAL, targeting any isolable-nucleus or STRONG grade: 5:1:8:1 embeds bahiymat al-anaam in a bare legal-permission frame (uhillat lakum bahiymatu l-anaam) that strips away the razaqahum/ritual-slaughter scaffolding of 22:28 and 22:34, yet bahiymah contributes no new increment - the surrounding frame supplies all the force. This demonstrates that bahiymah behaves as a stable referential label fixed by collocation, and that the root's own contribution cannot be separated from al-anaam or falsified Quran-internally.",
+  "strongest_competitor": "The strongest competing account is the classical 'bahiymah = the mute/inarticulate beast' nucleus (bhm ~ ibham, obscurity/dumbness). It is rejected as the graded result because (a) it is sourced entirely from lexica/tafsir barred by source policy, and (b) it is Quran-internally invisible - no verse cues muteness or obscurity, every cue concerns edibility, provision, and lawfulness. A second competitor is a partitive/descriptive reading giving bahiymah a live general 'beast/quadruped' head that al-anaam narrows; this is admissible as a possibility but not evidenced, since it presupposes a free lexical value the corpus never exhibits and is indistinguishable, on three identical-collocation tokens, from the thinner lexicalized-class account adopted here.",
+  "competing_hypothesis": "The strongest competing account is the classical 'bahiymah = the mute/inarticulate beast' nucleus (bhm ~ ibham, obscurity/dumbness). It is rejected as the graded result because (a) it is sourced entirely from lexica/tafsir barred by source policy, and (b) it is Quran-internally invisible - no verse cues muteness or obscurity, every cue concerns edibility, provision, and lawfulness. A second competitor is a partitive/descriptive reading giving bahiymah a live general 'beast/quadruped' head that al-anaam narrows; this is admissible as a possibility but not evidenced, since it presupposes a free lexical value the corpus never exhibits and is indistinguishable, on three identical-collocation tokens, from the thinner lexicalized-class account adopted here.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All three lenses converge: one form (N), one lexeme (bahiymah), one frozen construct (bahiymat al-anaam), one semantic field (lawful edible/ritual livestock-provision), zero verbal or derivational spread, and only case-driven surface variation carrying no semantic load. This is a single lexicalized nominal, not a productive root nucleus and not multiple unbridged classes. A positive claim is warranted at the LEXICALIZED_CLASS level (the class meaning and its one internal contrast with al-Sayd are well attested across 3/3), justifying research_state=PREFERRED. But strength is capped at MODERATE and scope at REPRESENTATIVE per contract: the entire attestation is a single non-isolable collocation, evidence is narrow (3 near-duplicate tokens, one collocation), there is no minimal pair to isolate bhm's differential value, and the root's distinctive contribution is unfalsifiable Quran-internally. STRONG/UNIVERSAL are excluded; CONSISTENT here reflects one frozen lexeme, not adversarially-clean breadth. The root-nucleus question itself is honestly UNRESOLVED and is recorded in layer_attribution.unresolved_resistance rather than inflating the graded class-level result.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "C1_bahiymat_alanaam_lexicalized_nominal",
+     "where": {
+      "qac_pos": [
+       "N"
+      ],
+      "qac_verb_form": [
+       null
+      ],
+      "forms": [
+       "N"
+      ],
+      "word_refs": [
+       "22:28:14:1",
+       "22:34:12:1",
+       "5:1:8:1"
+      ]
+     },
+     "occurrence_count_expected": 3,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "bahiymat al-anaam = a category of grazing/pastoral livestock realized as lawful edible provision (rizq, uhillat, fakuluu minhaa) and ritual offering (dhikr of God's name), internally opposed only to al-Sayd/game (5:1). A lexicalized-class value, not an isolable root nucleus.",
+     "classification_rationale": "All 3 occurrences are the same singular feminine noun bahiymah, tagged N with qac_verb_form=null, differing only in the syntactic case vowel (bahiymapi genitive after min in 22:28/22:34; bahiymapu nominative as subject of uhillat in 5:1). All three sit in the identical construct bahiymah + al-anaam within the field of lawful food / ritual provision-and-slaughter. No lexical, morphological, or collocational variation exists, so they form one cluster that partitions the full 3/3 corpus.",
+     "supporting_evidence_note": "22:28: razaqahum min bahiymati l-anaam fakuluu minhaa (provision, eaten, poor fed); 22:34: verbatim razaqahum min bahiymati l-anaam in a mansak/ritual frame; 5:1: uhillat lakum bahiymatu l-anaam ... ghayra muhillii l-Sayd wa-antum hurum (lawfulness, sole internal contrast with game). Back-reference minhaa (fem.sg.) in 22:28 confirms bahiymah as a collective/generic head.",
+     "counterevidence": []
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "bhm",
+  "verdict": "NOT_RUN",
+  "failing_occurrences": [],
+  "distinctiveness_ok": false,
+  "falsifiable": false,
+  "notes": "The lexicalized-class description holds across 3/3 occurrences with no resisting token, but a genuine falsification test cannot be run at the root-nucleus level: bahiymah is unfalsifiably yoked to al-anaam, providing no minimal pair, no verbal use, and no contrastive frame to isolate bhm's distinctive contribution. Distinctiveness of the root itself is therefore not established (distinctiveness_ok=false) and the nucleus claim is not falsifiable Quran-internally. Per contract this is NOT_RUN with the structural resistance recorded, not PASSED and not FAILED (the core class-level account is not refuted)."
+ },
+ "coverage_validation": {
+  "root": "bhm",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "22:28:14:1",
+   "disposition": "CONSISTENT",
+   "note": "All 3 occurrences are the same singular feminine noun bahiymah, tagged N with qac_verb_form=null, differing only in the syntactic case vowel (bahiymapi genitive after min in 22:28/22:34; bahiymapu nominative as subject of uhillat in 5:1). All three sit in the identical construct bahiymah + al-anaam within the field of lawful food / ritual provision-and-slaughter. No lexical, morphological, or collocational variation exists, so they form one cluster that partitions the full 3/3 corpus.",
+   "coverage_cluster_id": "C1_bahiymat_alanaam_lexicalized_nominal",
+   "candidate_semantic_interpretation": "bahiymat al-anaam = a category of grazing/pastoral livestock realized as lawful edible provision (rizq, uhillat, fakuluu minhaa) and ritual offering (dhikr of God's name), internally opposed only to al-Sayd/game (5:1). A lexicalized-class value, not an isolable root nucleus.",
+   "cluster_supporting_evidence": "22:28: razaqahum min bahiymati l-anaam fakuluu minhaa (provision, eaten, poor fed); 22:34: verbatim razaqahum min bahiymati l-anaam in a mansak/ritual frame; 5:1: uhillat lakum bahiymatu l-anaam ... ghayra muhillii l-Sayd wa-antum hurum (lawfulness, sole internal contrast with game). Back-reference minhaa (fem.sg.) in 22:28 confirms bahiymah as a collective/generic head.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 3 occurrences are the same singular feminine noun bahiymah, tagged N with qac_verb_form=null, differing only in the syntactic case vowel (bahiymapi genitive after min in 22:28/22:34; bahiymapu nominative as subject of uhillat in 5:1). All three sit in the identical construct bahiymah + al-anaam within the field of lawful food / ritual provision-and-slaughter. No lexical, morphological, or collocational variation exists, so they form one cluster that partitions the full 3/3 corpus.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "22:28",
+     "verse_text": "لِّيَشْهَدُوا۟ مَنَٰفِعَ لَهُمْ وَيَذْكُرُوا۟ ٱسْمَ ٱللَّهِ فِىٓ أَيَّامٍ مَّعْلُومَٰتٍ عَلَىٰ مَا رَزَقَهُم مِّنۢ بَهِيمَةِ ٱلْأَنْعَٰمِ فَكُلُوا۟ مِنْهَا وَأَطْعِمُوا۟ ٱلْبَآئِسَ ٱلْفَقِيرَ"
+    }
+   ],
+   "root_arabic": "ب ه م",
+   "root_buckwalter": "bhm",
+   "root_id": "bhm",
+   "artifact_name": "bhm.json",
+   "verse_ref": "22:28",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "bahiymapi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لِّيَشْهَدُوا۟ مَنَٰفِعَ لَهُمْ وَيَذْكُرُوا۟ ٱسْمَ ٱللَّهِ فِىٓ أَيَّامٍ مَّعْلُومَٰتٍ عَلَىٰ مَا رَزَقَهُم مِّنۢ بَهِيمَةِ ٱلْأَنْعَٰمِ فَكُلُوا۟ مِنْهَا وَأَطْعِمُوا۟ ٱلْبَآئِسَ ٱلْفَقِيرَ"
+  },
+  {
+   "word_ref": "22:34:12:1",
+   "disposition": "CONSISTENT",
+   "note": "All 3 occurrences are the same singular feminine noun bahiymah, tagged N with qac_verb_form=null, differing only in the syntactic case vowel (bahiymapi genitive after min in 22:28/22:34; bahiymapu nominative as subject of uhillat in 5:1). All three sit in the identical construct bahiymah + al-anaam within the field of lawful food / ritual provision-and-slaughter. No lexical, morphological, or collocational variation exists, so they form one cluster that partitions the full 3/3 corpus.",
+   "coverage_cluster_id": "C1_bahiymat_alanaam_lexicalized_nominal",
+   "candidate_semantic_interpretation": "bahiymat al-anaam = a category of grazing/pastoral livestock realized as lawful edible provision (rizq, uhillat, fakuluu minhaa) and ritual offering (dhikr of God's name), internally opposed only to al-Sayd/game (5:1). A lexicalized-class value, not an isolable root nucleus.",
+   "cluster_supporting_evidence": "22:28: razaqahum min bahiymati l-anaam fakuluu minhaa (provision, eaten, poor fed); 22:34: verbatim razaqahum min bahiymati l-anaam in a mansak/ritual frame; 5:1: uhillat lakum bahiymatu l-anaam ... ghayra muhillii l-Sayd wa-antum hurum (lawfulness, sole internal contrast with game). Back-reference minhaa (fem.sg.) in 22:28 confirms bahiymah as a collective/generic head.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 3 occurrences are the same singular feminine noun bahiymah, tagged N with qac_verb_form=null, differing only in the syntactic case vowel (bahiymapi genitive after min in 22:28/22:34; bahiymapu nominative as subject of uhillat in 5:1). All three sit in the identical construct bahiymah + al-anaam within the field of lawful food / ritual provision-and-slaughter. No lexical, morphological, or collocational variation exists, so they form one cluster that partitions the full 3/3 corpus.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "22:34",
+     "verse_text": "وَلِكُلِّ أُمَّةٍ جَعَلْنَا مَنسَكًا لِّيَذْكُرُوا۟ ٱسْمَ ٱللَّهِ عَلَىٰ مَا رَزَقَهُم مِّنۢ بَهِيمَةِ ٱلْأَنْعَٰمِ فَإِلَٰهُكُمْ إِلَٰهٌ وَٰحِدٌ فَلَهُۥٓ أَسْلِمُوا۟ وَبَشِّرِ ٱلْمُخْبِتِينَ"
+    }
+   ],
+   "root_arabic": "ب ه م",
+   "root_buckwalter": "bhm",
+   "root_id": "bhm",
+   "artifact_name": "bhm.json",
+   "verse_ref": "22:34",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "bahiymapi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلِكُلِّ أُمَّةٍ جَعَلْنَا مَنسَكًا لِّيَذْكُرُوا۟ ٱسْمَ ٱللَّهِ عَلَىٰ مَا رَزَقَهُم مِّنۢ بَهِيمَةِ ٱلْأَنْعَٰمِ فَإِلَٰهُكُمْ إِلَٰهٌ وَٰحِدٌ فَلَهُۥٓ أَسْلِمُوا۟ وَبَشِّرِ ٱلْمُخْبِتِينَ"
+  },
+  {
+   "word_ref": "5:1:8:1",
+   "disposition": "CONSISTENT",
+   "note": "Marked as STRUCTURAL_ATYPICALITY hard case (not RESISTANT to the class reading): its bare legal-permission frame (uhillat lakum bahiymatu l-anaam) strips the razaqahum/ritual scaffolding of the Sura 22 pair, yet bahiymah adds no new increment, demonstrating the root nucleus is not isolable. It remains fully CONSISTENT with the lexicalized-class account and also supplies the one internal contrast (vs al-Sayd). | 5:1:8:1 embeds bahiymat al-anaam in a bare legal-permission frame (uhillat lakum bahiymatu l-anaam) that strips away the razaqahum/ritual-slaughter scaffolding of 22:28 and 22:34, yet bahiymah contributes no new increment - the surrounding frame supplies all the force.",
+   "coverage_cluster_id": "C1_bahiymat_alanaam_lexicalized_nominal",
+   "candidate_semantic_interpretation": "bahiymat al-anaam = a category of grazing/pastoral livestock realized as lawful edible provision (rizq, uhillat, fakuluu minhaa) and ritual offering (dhikr of God's name), internally opposed only to al-Sayd/game (5:1). A lexicalized-class value, not an isolable root nucleus.",
+   "cluster_supporting_evidence": "22:28: razaqahum min bahiymati l-anaam fakuluu minhaa (provision, eaten, poor fed); 22:34: verbatim razaqahum min bahiymati l-anaam in a mansak/ritual frame; 5:1: uhillat lakum bahiymatu l-anaam ... ghayra muhillii l-Sayd wa-antum hurum (lawfulness, sole internal contrast with game). Back-reference minhaa (fem.sg.) in 22:28 confirms bahiymah as a collective/generic head.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 3 occurrences are the same singular feminine noun bahiymah, tagged N with qac_verb_form=null, differing only in the syntactic case vowel (bahiymapi genitive after min in 22:28/22:34; bahiymapu nominative as subject of uhillat in 5:1). All three sit in the identical construct bahiymah + al-anaam within the field of lawful food / ritual provision-and-slaughter. No lexical, morphological, or collocational variation exists, so they form one cluster that partitions the full 3/3 corpus.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "5:1",
+     "verse_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ أَوْفُوا۟ بِٱلْعُقُودِ أُحِلَّتْ لَكُم بَهِيمَةُ ٱلْأَنْعَٰمِ إِلَّا مَا يُتْلَىٰ عَلَيْكُمْ غَيْرَ مُحِلِّى ٱلصَّيْدِ وَأَنتُمْ حُرُمٌ إِنَّ ٱللَّهَ يَحْكُمُ مَا يُرِيدُ"
+    }
+   ],
+   "root_arabic": "ب ه م",
+   "root_buckwalter": "bhm",
+   "root_id": "bhm",
+   "artifact_name": "bhm.json",
+   "verse_ref": "5:1",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "bahiymapu",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ أَوْفُوا۟ بِٱلْعُقُودِ أُحِلَّتْ لَكُم بَهِيمَةُ ٱلْأَنْعَٰمِ إِلَّا مَا يُتْلَىٰ عَلَيْكُمْ غَيْرَ مُحِلِّى ٱلصَّيْدِ وَأَنتُمْ حُرُمٌ إِنَّ ٱللَّهَ يَحْكُمُ مَا يُرِيدُ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Three independent lenses (A, B, C) converged: all report one lexicalized nominal, one construct, one field, no isolable nucleus, and independently grade the positive claim at MODERATE/REPRESENTATIVE with the root nucleus UNRESOLVED.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "In the Quran the root bhm surfaces ONLY as the singular feminine noun bahiymah (qac_pos=N, no verb, no other derivation) and ONLY inside the frozen construct bahiymat al-anaam (bhm bound to the distinct root n-3-m). As a lexicalized-class term it denotes a category of grazing/pastoral livestock realized as lawful edible provision: provided as rizq (razaqahum, 22:28/22:34), eaten and given to the poor (fakuluu minhaa, 22:28), declared lawful (uhillat, 5:1), and offered with invocation of God's name (yadhkuruu isma llaah, 22:28/22:34). The ONLY internal contrast that fixes its field is bahiymat al-anaam (lawful) vs al-Sayd/game (restricted in ihram) in 5:1. Crucially, this is a lexicalized-class value, NOT a recovered productive root nucleus: because bahiymah never occurs free of al-anaam, never governs any other noun, and never predicates, the independent semantic contribution of bhm itself is underdetermined and not isolable Quran-internally.",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "LEXICALIZED_CLASS",
+ "layer_attribution": {
+  "occurrence_evidence": "3/3 confirmed occurrences read in full: 22:28:14:1 (bahiymapi, genitive), 22:34:12:1 (bahiymapi, genitive), 5:1:8:1 (bahiymapu, nominative). All qac_pos=N, qac_verb_form=null; only variation is the syntactic case vowel, carrying no semantic load.",
+  "derivation": "No derivation exists: the root produces no verb, participle, or adjective anywhere in the corpus - a single nominal form (N) with zero morphological spread. Morphological identity across tokens is therefore trivial and cannot support a semantic-identity inference.",
+  "lexical_class": "A single lexicalized nominal, bahiymah, attested only in the bound construct bahiymat al-anaam, denoting the class of lawful edible pastoral livestock offered as provision/sacrifice. This class-level value is the graded claim (MODERATE, REPRESENTATIVE).",
+  "contextual_relation": "Contextual force comes from the frames, not from bhm: rizq/provision + eat + feed-poor (22:28), mansak/ritual invocation (22:34), legal permission with exceptions and the al-Sayd contrast (5:1). These framings (lawfulness, edibility, sacrifice) must NOT be promoted into the root claim - they attach to al-anaam and the surrounding clauses, not demonstrably to bhm.",
+  "reconciliation": "No cross-cluster reconciliation was needed: a single cluster partitions all 3 occurrences, and no preliminary disposition was overturned. The lenses agreed without conflict.",
+  "unresolved_resistance": "The isolable semantic contribution of the root bhm itself is UNRESOLVED / not recoverable Quran-internally: one frozen collocation, no minimal pair, no verbal use, no contrast that separates bhm from al-anaam. The classical muteness/obscurity nucleus is barred (external prior) and internally invisible. This nucleus-level resistance is structural, not an occurrence that fails the class reading, and it is the reason strength is capped at MODERATE and scope at REPRESENTATIVE."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "5:1:8:1",
+   "role": "STRUCTURAL_ATYPICALITY",
+   "reason": "The only token outside the razaqahum/ritual-slaughter frame: bahiymat al-anaam appears as the nominative subject of a pure legal-permission clause (uhillat lakum). This bare frame removes the provision/ritual scaffolding of 22:28 and 22:34, yet bahiymah contributes nothing new, exposing that the root's own semantic increment is not recoverable Quran-internally and that the meaning is fixed by collocation, not by a productive nucleus.",
+   "evidence_basis": {
+    "kind": "FRAME_INVARIANCE_UNDER_CONTEXT_SHIFT",
+    "statement": "5:1:8:1 embeds bahiymat al-anaam in a bare legal-permission frame (uhillat lakum bahiymatu l-anaam) that strips away the razaqahum/ritual-slaughter scaffolding of 22:28 and 22:34, yet bahiymah contributes no new increment - the surrounding frame supplies all the force."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "No occurrence resists the lexicalized-class reading (all 3 cohere perfectly), so there is no RESISTANT_SEAM and no final-RESISTANT occurrence to list as counterevidence. The genuine hard case is STRUCTURAL: the entire root is a single frozen, non-isolable collocation, most sharply demonstrated at 5:1:8:1, where a context shift to a bare legal frame leaves bahiymah's contribution unchanged and unrecoverable. This is recorded as a STRUCTURAL_ATYPICALITY hard case, and the underlying unresolved root-nucleus question is carried in layer_attribution.unresolved_resistance."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A Quran-internal attestation of the root bhm outside the frozen construct bahiymat al-anaam - e.g. a verbal form, a participle/adjective, a standalone bahiymah, or bahiymah governing a noun other than al-anaam - that assigns bhm a distinctive, isolable meaning (whether livestock-nucleus, muteness/obscurity, or other) separable from al-anaam and the food/ritual frame.",
+  "search_location": "The full QAC-confirmed occurrence set for root bhm (currently exactly 22:28:14:1, 22:34:12:1, 5:1:8:1); any newly confirmed bhm occurrence in a non-al-anaam environment; and contrastive frames pairing bahiymah with other animal terms.",
+  "verification_method": "Check qac_pos/qac_verb_form and the governed noun of every bhm token; require a minimal pair in which bahiymah's contribution can be isolated from al-anaam, then test whether the proposed distinctive meaning holds across that pair without importing lexical priors.",
+  "confounder_control": "Attribute to bhm only what cannot be explained by the co-occurring root al-anaam, by the surrounding rizq/uhillat/ritual frame, or by purely case-driven grammar (bahiymapi vs bahiymapu); reject any reading requiring external lexica, tafsir, or the classical muteness etymon.",
+  "failure_consequence": "If no such isolating attestation exists, the isolable-root-nucleus claim stays UNRESOLVED and the graded result remains a MODERATE/REPRESENTATIVE lexicalized-class description; if an isolating attestation is found, this class-only judgment is rejected and reopened as a root-generalization or derivational-family analysis."
+ },
+ "falsification_status": "NOT_RUN",
+ "reopen_conditions": [
+  "A newly confirmed bhm occurrence appears outside bahiymat al-anaam (a verb, participle, standalone bahiymah, or bahiymah governing a noun other than al-anaam), providing the minimal pair currently absent and allowing bhm's contribution to be isolated from al-anaam.",
+  "A Quran-internal contrast pairs bahiymah with a different animal term (beyond the 5:1 bahiymat al-anaam vs al-Sayd opposition) in a way that fixes a distinctive feature attributable to bhm rather than to al-anaam or the food/ritual frame.",
+  "An internal cue to sound, speech, voice, or obscurity is found co-occurring with a bhm token, which would test (and could revive) the currently-rejected muteness/obscurity reading against actual Quranic evidence."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "22:28:14:1",
+  "22:34:12:1",
+  "5:1:8:1"
+ ],
+ "counterevidence_refs": [],
+ "falsification_evidence": {
+  "attempt_id": "bhm-falsify-2026-09-12",
+  "verdict": "NOT_RUN",
+  "falsifiable": false,
+  "distinctiveness_ok": false,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "C1_bahiymat_alanaam_lexicalized_nominal"
+  ],
+  "status_rationale": "The lexicalized-class description holds across 3/3 occurrences with no resisting token, but a genuine falsification test cannot be run at the root-nucleus level: bahiymah is unfalsifiably yoked to al-anaam, providing no minimal pair, no verbal use, and no contrastive frame to isolate bhm's distinctive contribution. Distinctiveness of the root itself is therefore not established (distinctiveness_ok=false) and the nucleus claim is not falsifiable Quran-internally. Per contract this is NOT_RUN with the structural resistance recorded, not PASSED and not FAILED (the core class-level account is not refuted)."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "bhm: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "bhm: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "bhm: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "bhm: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "bhm: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "bhm: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "bhm: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "bhm: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

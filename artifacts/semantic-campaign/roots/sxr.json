@@ -1,0 +1,2207 @@
+{
+ "root_arabic": "س خ ر",
+ "root_buckwalter": "sxr",
+ "root_id": "sxr",
+ "artifact_name": "sxr.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave3",
+ "occurrences": 42,
+ "frozen_candidate_root_contribution": null,
+ "internal_discovery": {
+  "candidate_root_contribution": null,
+  "plain_explanation": "The 42 occurrences of س خ ر do not resolve to a single Quran-internal nucleus. They fall into two large, internally coherent classes in strict complementary distribution, with no verse that bridges them. Class A (derision): Form I verbs, the one Form X verb, and the derision nouns سِخْرِيّ/ٱلسَّٰخِرِين — an attitudinal/speech act aimed at a PERSON, governing its target with مِن ('mock AT'), e.g. سَخِرُوا۟ مِنْهُ (11:38), يَسْخَرُونَ مِنَ ٱلَّذِينَ ءَامَنُوا۟ (2:212), لَا يَسْخَرْ قَوْمٌ مِّن قَوْمٍ (49:11); it never takes a لـ-beneficiary or a cosmic patient and effects no change in the target. Class B (subjection): all Form II (verb, both passive participles مُسَخَّرَٰت/ٱلْمُسَخَّر) plus the noun سُخْرِيّ (43:32) — a causative deployment act that places a (usually inanimate, cosmic) thing under command to run to a purpose, governing with لـ (لَكُمُ ٱلْفُلْكَ), a direct accusative (ٱلشَّمْسَ وَٱلْقَمَرَ), or once عَلَى (69:7 against ʿĀd), collocated with بِأَمْرِهِ and يَجْرِى لِأَجَلٍ مُّسَمًّى. No Form I ever means 'subject' and no Form II ever means 'mock'; the two syntactic frames (مِن vs لـ/عَلَى/acc) never overlap. Because the two senses are not Quran-internally bridged, the honest result is a partition into classes, not one nucleus.",
+  "layer_separation_note": "Class A does NOT entail physical harm, control, compelled service, ownership, or the truth/merit of the contempt (the mockers, not the mocked, are condemned — 6:10, 21:41, 9:79; 49:11 'perhaps they are better than you'); it is inherently person/animate-directed and applies to no inanimate object. Class B does NOT entail derision or debasement (the subjected sun/sea/ships/cattle are honored signs and blessings met with سُبْحَٰن, 43:13, and آيَٰت/نِعَم), does NOT mean creation (contrasted with خَلَقَ which precedes it: 7:54, 29:61, 39:5, 14:32), does NOT entail the patient's consent, capacity to possess (43:13 وَمَا كُنَّا لَهُۥ مُقْرِنِينَ), or universal benefit to humans (69:7 سَخَّرَهَا عَلَيْهِمْ, punitive, is an internal for/against boundary within B, not a resistance to it). Neither class denotes laughter itself (23:110 تَضْحَكُونَ is a separate co-predicate). The only proposition true of all 42 — 'an agent places X beneath its will/estimation' — is non-distinctive (shared with ذلّ/قهر/خضع) and is the fit-everything abstraction the methodology forbids as a root claim.",
+  "presence": {
+   "occurrences_total": 42,
+   "occurrences_checked": 42,
+   "occurrences_consistent": 41,
+   "inconsistent_refs": [
+    "43:32:20:1"
+   ]
+  },
+  "strongest_counterexample": "The near-minimal vowel pair on one consonantal skeleton س-خ-ر-ي: سِخْرِيّ (kasra: sixoriy~FA) at 23:110 and 38:63 = object of DERISION (Class A), versus سُخْرِيّ (damma: suxoriy~FA) at 43:32 = object of SERVICE/subordination (Class B). Identical bare-noun morphology (qac_pos=N, qac_verb_form=null in all three), distinguished only by the first vowel and used in the two opposite senses with no bridging context. That the language must change the vowel to keep the two nouns apart is Quran-internal evidence of two lexemes on one skeleton, not one meaning with contextual shading — a single nucleus would not need a vocalic minimal pair to disambiguate itself.",
+  "strongest_competitor": "A single abstract nucleus: 'to reduce another to a subordinate status under the agent's will' — mockery as social/estimative subordination, subjection as functional subordination, unifying the سِخْرِيّ/سُخْرِيّ homographs and reading 43:32 (humans ranked in degrees so some take others سُخْرِيّ) as the hinge. Rejected as the primary result because: (1) it is exhibited by NO single occurrence — no verse uses one class's morphology in the other's sense or plays on both; (2) the Form II sense is not the morphological causative of the attested Form I sense (Form II never means 'make someone mock,' Form I never means 'be low/subservient'), so the causative bridge rests on an unattested intermediate sense; (3) 9:79 سَخِرَ ٱللَّهُ مِنْهُمْ shows God as agent yet the sense is still min-governed derision-in-retribution, proving the semantic load sits on form+syntax, not on root or agent; (4) the surviving abstraction is non-distinctive and fits any dominance relation. It remains a legitimate etymological hypothesis, not a Quran-established nucleus.",
+  "competing_hypothesis": "A single abstract nucleus: 'to reduce another to a subordinate status under the agent's will' — mockery as social/estimative subordination, subjection as functional subordination, unifying the سِخْرِيّ/سُخْرِيّ homographs and reading 43:32 (humans ranked in degrees so some take others سُخْرِيّ) as the hinge. Rejected as the primary result because: (1) it is exhibited by NO single occurrence — no verse uses one class's morphology in the other's sense or plays on both; (2) the Form II sense is not the morphological causative of the attested Form I sense (Form II never means 'make someone mock,' Form I never means 'be low/subservient'), so the causative bridge rests on an unattested intermediate sense; (3) 9:79 سَخِرَ ٱللَّهُ مِنْهُمْ shows God as agent yet the sense is still min-governed derision-in-retribution, proving the semantic load sits on form+syntax, not on root or agent; (4) the surviving abstraction is non-distinctive and fits any dominance relation. It remains a legitimate etymological hypothesis, not a Quran-established nucleus.",
+  "unresolved_cases": [],
+  "result": "UNRESOLVED",
+  "result_strength": "UNRESOLVED",
+  "rationale": "Three independent lenses converge: the data partitions into two coherent classes (A derision, ~15 tokens; B subjection, ~26 tokens) that are each internally strong but mutually unbridged by any occurrence. Per contract, when two or more senses have NO Quran-internal bridge (here reinforced by a vocalic minimal pair that the language uses to keep the homographic nouns apart), the disciplined verdict is UNRESOLVED for the single-nucleus question — do not force one nucleus. The pivot سُخْرِيّ (43:32) simultaneously blocks a clean two-root split (it shows A and B are one derivational family) and blocks a confident unity claim (its su- vowel and hierarchy-of-livelihood context align it with B while it wears Class-A nominal morphology), so it is the resistant seam. This resistant lexicalized nominal at the seam, plus the total complementary distribution, precludes any STRONG unified root grade; the honest deliverable is a multi-class result, not a root generalization.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "A_derision_verbal",
+     "where": {
+      "qac_pos": [
+       "V"
+      ],
+      "qac_verb_form": [
+       null,
+       "X"
+      ]
+     },
+     "occurrence_count_expected": 12,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "To hold a PERSON in contemptuous ridicule/scorn — an attitudinal/speech act, target governed by مِن ('mock AT'), agent a blameworthy human (or God in just retribution), effecting no change in the target.",
+     "classification_rationale": "All 11 Form I verbs (qac_verb_form=null) plus the single Form X verb (37:14, intensive of the same scorn field, in the 37:12-14 pericope alongside يَسْخَرُونَ). Every complemented case governs مِن (سَخِرُوا۟ مِنْهُ 11:38; مِنَ ٱلَّذِينَ ءَامَنُوا۟ 2:212; مِّن قَوْمٍ 49:11; فَيَسْخَرُونَ مِنْهُمْ / سَخِرَ ٱللَّهُ مِنْهُمْ 9:79); none takes a لـ-beneficiary or cosmic patient.",
+     "supporting_evidence_note": "Lexically co-located with derision neighbours it stays distinct from: ٱستهزأ (6:10, 21:41), لمز (9:79), ضحك (23:110 in the paired nominal). 37:12/14 pair يَسْخَرُونَ with يَسْتَسْخِرُونَ, showing Form X intensifies, introduces no new sense.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "B_subjection_formII",
+     "where": {
+      "qac_verb_form": [
+       "II"
+      ]
+     },
+     "occurrence_count_expected": 26,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+     "classification_rationale": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+     "supporting_evidence_note": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+     "counterevidence": [
+      "69:7:1:1"
+     ]
+    },
+    {
+     "cluster_id": "A_derision_nominal",
+     "where": {
+      "word_refs": [
+       "23:110:2:1",
+       "38:63:2:1",
+       "39:56:14:2"
+      ]
+     },
+     "occurrence_count_expected": 3,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Nominal of Class A: object of derision (سِخْرِيّ, kasra) / the mockers (ٱلسَّٰخِرِين) — the person-directed contempt sense in nominal form.",
+     "classification_rationale": "Bare nouns (qac_pos=N, qac_verb_form=null) whose contexts fix the derision sense: 23:110 ٱتَّخَذْتُمُوهُمْ سِخْرِيًّا … تَضْحَكُونَ; 38:63 أَتَّخَذْنَٰهُمْ سِخْرِيًّا; 39:56 لَمِنَ ٱلسَّٰخِرِينَ (self-indictment at Judgment). Separated by explicit word_refs from the homographic Class-B noun 43:32 (suxriyy) which shares the same qac_pos/qac_verb_form profile.",
+     "supporting_evidence_note": "سِخْرِيّ carries the kasra vowel (sixoriy~FA) matching the derision field; the 23:110 pairing with تَضْحَكُونَ situates it in the person-directed contempt frame.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "B_subjection_nominal_pivot",
+     "where": {
+      "word_refs": [
+       "43:32:20:1"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "Nominal of Class B with a HUMAN patient: socioeconomic subordination/service (سُخْرِيّ, damma) — 'that some may take others into service' within a divinely apportioned hierarchy of livelihood.",
+     "classification_rationale": "Bare noun (qac_pos=N, qac_verb_form=null) homographic with the Class-A derision nouns but resolving to the subjection field on two Quran-internal grounds: the su- vowel (suxoriy~FA, distinct from the derision si-) and the context (رَفَعْنَا بَعْضَهُمْ فَوْقَ بَعْضٍ دَرَجَٰتٍ لِّيَتَّخِذَ بَعْضُهُم بَعْضًا سُخْرِيًّا — a divine purpose 'so that they employ one another,' not 'so that they mock one another'). It is the resistant seam: outside Form II morphology, with a human patient, homographic with the derision noun — it both refutes a strict two-root split and blocks a confident single-nucleus claim.",
+     "supporting_evidence_note": "The suxriyy/sixriyy vowel minimal pair (43:32 vs 23:110/38:63) is the strongest counterexample to unity and the pivot on which the multi-class verdict rests.",
+     "counterevidence": [
+      "43:32:20:1"
+     ]
+    }
+   ],
+   "reconciliation": [
+    {
+     "word_ref": "43:32:20:1",
+     "final": "RESISTANT",
+     "rationale": "The canonical vocalization partitions it from the derision nouns (suxoriy~FA damma vs sixoriy~FA kasra) and its context (apportioned livelihood, ranks, 'take others into service') aligns it with Class B; but because it is the sole subjection-sense token outside Form II, carries a human patient, and is homographic with Class A, it is preserved as the resistant seam that sustains the UNRESOLVED unity verdict rather than being silently absorbed into either class."
+    }
+   ]
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "sxr",
+  "verdict": "NOT_REQUIRED",
+  "failing_occurrences": [
+   "43:32:20:1",
+   "9:79:15:1",
+   "69:7:1:1"
+  ],
+  "distinctiveness_ok": false,
+  "falsifiable": true,
+  "notes": "No unified root nucleus was advanced as a positive claim, so there is nothing to adversarially refute at root level; falsification is not required for an unresolved-class-only result. The only candidate unity account is non-distinctive (distinctiveness_ok=false — it also fits ذلّ/قهر/خضع) and unattested by any bridging occurrence, and it is contradicted by the seam token 43:32 and the boundary tokens 9:79 (agent bridge) and 69:7 (benefaction bridge)."
+ },
+ "coverage_validation": {
+  "root": "sxr",
+  "expected_count": 42,
+  "researched_count": 42,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [
+   "43:32:20:1"
+  ],
+  "unresolved_visible": [
+   "43:32:20:1"
+  ]
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "11:38:13:1",
+   "disposition": "CONSISTENT",
+   "note": "All 11 Form I verbs (qac_verb_form=null) plus the single Form X verb (37:14, intensive of the same scorn field, in the 37:12-14 pericope alongside يَسْخَرُونَ). Every complemented case governs مِن (سَخِرُوا۟ مِنْهُ 11:38; مِنَ ٱلَّذِينَ ءَامَنُوا۟ 2:212; مِّن قَوْمٍ 49:11; فَيَسْخَرُونَ مِنْهُمْ / سَخِرَ ٱللَّهُ مِنْهُمْ 9:79); none takes a لـ-beneficiary or cosmic patient.",
+   "coverage_cluster_id": "A_derision_verbal",
+   "candidate_semantic_interpretation": "To hold a PERSON in contemptuous ridicule/scorn — an attitudinal/speech act, target governed by مِن ('mock AT'), agent a blameworthy human (or God in just retribution), effecting no change in the target.",
+   "cluster_supporting_evidence": "Lexically co-located with derision neighbours it stays distinct from: ٱستهزأ (6:10, 21:41), لمز (9:79), ضحك (23:110 in the paired nominal). 37:12/14 pair يَسْخَرُونَ with يَسْتَسْخِرُونَ, showing Form X intensifies, introduces no new sense.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 11 Form I verbs (qac_verb_form=null) plus the single Form X verb (37:14, intensive of the same scorn field, in the 37:12-14 pericope alongside يَسْخَرُونَ). Every complemented case governs مِن (سَخِرُوا۟ مِنْهُ 11:38; مِنَ ٱلَّذِينَ ءَامَنُوا۟ 2:212; مِّن قَوْمٍ 49:11; فَيَسْخَرُونَ مِنْهُمْ / سَخِرَ ٱللَّهُ مِنْهُمْ 9:79); none takes a لـ-beneficiary or cosmic patient.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "11:38",
+     "verse_text": "وَيَصْنَعُ ٱلْفُلْكَ وَكُلَّمَا مَرَّ عَلَيْهِ مَلَأٌ مِّن قَوْمِهِۦ سَخِرُوا۟ مِنْهُ قَالَ إِن تَسْخَرُوا۟ مِنَّا فَإِنَّا نَسْخَرُ مِنكُمْ كَمَا تَسْخَرُونَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "11:38",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tasoxaru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَيَصْنَعُ ٱلْفُلْكَ وَكُلَّمَا مَرَّ عَلَيْهِ مَلَأٌ مِّن قَوْمِهِۦ سَخِرُوا۟ مِنْهُ قَالَ إِن تَسْخَرُوا۟ مِنَّا فَإِنَّا نَسْخَرُ مِنكُمْ كَمَا تَسْخَرُونَ"
+  },
+  {
+   "word_ref": "11:38:16:1",
+   "disposition": "CONSISTENT",
+   "note": "All 11 Form I verbs (qac_verb_form=null) plus the single Form X verb (37:14, intensive of the same scorn field, in the 37:12-14 pericope alongside يَسْخَرُونَ). Every complemented case governs مِن (سَخِرُوا۟ مِنْهُ 11:38; مِنَ ٱلَّذِينَ ءَامَنُوا۟ 2:212; مِّن قَوْمٍ 49:11; فَيَسْخَرُونَ مِنْهُمْ / سَخِرَ ٱللَّهُ مِنْهُمْ 9:79); none takes a لـ-beneficiary or cosmic patient.",
+   "coverage_cluster_id": "A_derision_verbal",
+   "candidate_semantic_interpretation": "To hold a PERSON in contemptuous ridicule/scorn — an attitudinal/speech act, target governed by مِن ('mock AT'), agent a blameworthy human (or God in just retribution), effecting no change in the target.",
+   "cluster_supporting_evidence": "Lexically co-located with derision neighbours it stays distinct from: ٱستهزأ (6:10, 21:41), لمز (9:79), ضحك (23:110 in the paired nominal). 37:12/14 pair يَسْخَرُونَ with يَسْتَسْخِرُونَ, showing Form X intensifies, introduces no new sense.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 11 Form I verbs (qac_verb_form=null) plus the single Form X verb (37:14, intensive of the same scorn field, in the 37:12-14 pericope alongside يَسْخَرُونَ). Every complemented case governs مِن (سَخِرُوا۟ مِنْهُ 11:38; مِنَ ٱلَّذِينَ ءَامَنُوا۟ 2:212; مِّن قَوْمٍ 49:11; فَيَسْخَرُونَ مِنْهُمْ / سَخِرَ ٱللَّهُ مِنْهُمْ 9:79); none takes a لـ-beneficiary or cosmic patient.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "11:38",
+     "verse_text": "وَيَصْنَعُ ٱلْفُلْكَ وَكُلَّمَا مَرَّ عَلَيْهِ مَلَأٌ مِّن قَوْمِهِۦ سَخِرُوا۟ مِنْهُ قَالَ إِن تَسْخَرُوا۟ مِنَّا فَإِنَّا نَسْخَرُ مِنكُمْ كَمَا تَسْخَرُونَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "11:38",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "nasoxaru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَيَصْنَعُ ٱلْفُلْكَ وَكُلَّمَا مَرَّ عَلَيْهِ مَلَأٌ مِّن قَوْمِهِۦ سَخِرُوا۟ مِنْهُ قَالَ إِن تَسْخَرُوا۟ مِنَّا فَإِنَّا نَسْخَرُ مِنكُمْ كَمَا تَسْخَرُونَ"
+  },
+  {
+   "word_ref": "11:38:19:1",
+   "disposition": "CONSISTENT",
+   "note": "All 11 Form I verbs (qac_verb_form=null) plus the single Form X verb (37:14, intensive of the same scorn field, in the 37:12-14 pericope alongside يَسْخَرُونَ). Every complemented case governs مِن (سَخِرُوا۟ مِنْهُ 11:38; مِنَ ٱلَّذِينَ ءَامَنُوا۟ 2:212; مِّن قَوْمٍ 49:11; فَيَسْخَرُونَ مِنْهُمْ / سَخِرَ ٱللَّهُ مِنْهُمْ 9:79); none takes a لـ-beneficiary or cosmic patient.",
+   "coverage_cluster_id": "A_derision_verbal",
+   "candidate_semantic_interpretation": "To hold a PERSON in contemptuous ridicule/scorn — an attitudinal/speech act, target governed by مِن ('mock AT'), agent a blameworthy human (or God in just retribution), effecting no change in the target.",
+   "cluster_supporting_evidence": "Lexically co-located with derision neighbours it stays distinct from: ٱستهزأ (6:10, 21:41), لمز (9:79), ضحك (23:110 in the paired nominal). 37:12/14 pair يَسْخَرُونَ with يَسْتَسْخِرُونَ, showing Form X intensifies, introduces no new sense.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 11 Form I verbs (qac_verb_form=null) plus the single Form X verb (37:14, intensive of the same scorn field, in the 37:12-14 pericope alongside يَسْخَرُونَ). Every complemented case governs مِن (سَخِرُوا۟ مِنْهُ 11:38; مِنَ ٱلَّذِينَ ءَامَنُوا۟ 2:212; مِّن قَوْمٍ 49:11; فَيَسْخَرُونَ مِنْهُمْ / سَخِرَ ٱللَّهُ مِنْهُمْ 9:79); none takes a لـ-beneficiary or cosmic patient.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "11:38",
+     "verse_text": "وَيَصْنَعُ ٱلْفُلْكَ وَكُلَّمَا مَرَّ عَلَيْهِ مَلَأٌ مِّن قَوْمِهِۦ سَخِرُوا۟ مِنْهُ قَالَ إِن تَسْخَرُوا۟ مِنَّا فَإِنَّا نَسْخَرُ مِنكُمْ كَمَا تَسْخَرُونَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "11:38",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tasoxaru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَيَصْنَعُ ٱلْفُلْكَ وَكُلَّمَا مَرَّ عَلَيْهِ مَلَأٌ مِّن قَوْمِهِۦ سَخِرُوا۟ مِنْهُ قَالَ إِن تَسْخَرُوا۟ مِنَّا فَإِنَّا نَسْخَرُ مِنكُمْ كَمَا تَسْخَرُونَ"
+  },
+  {
+   "word_ref": "11:38:9:1",
+   "disposition": "CONSISTENT",
+   "note": "All 11 Form I verbs (qac_verb_form=null) plus the single Form X verb (37:14, intensive of the same scorn field, in the 37:12-14 pericope alongside يَسْخَرُونَ). Every complemented case governs مِن (سَخِرُوا۟ مِنْهُ 11:38; مِنَ ٱلَّذِينَ ءَامَنُوا۟ 2:212; مِّن قَوْمٍ 49:11; فَيَسْخَرُونَ مِنْهُمْ / سَخِرَ ٱللَّهُ مِنْهُمْ 9:79); none takes a لـ-beneficiary or cosmic patient.",
+   "coverage_cluster_id": "A_derision_verbal",
+   "candidate_semantic_interpretation": "To hold a PERSON in contemptuous ridicule/scorn — an attitudinal/speech act, target governed by مِن ('mock AT'), agent a blameworthy human (or God in just retribution), effecting no change in the target.",
+   "cluster_supporting_evidence": "Lexically co-located with derision neighbours it stays distinct from: ٱستهزأ (6:10, 21:41), لمز (9:79), ضحك (23:110 in the paired nominal). 37:12/14 pair يَسْخَرُونَ with يَسْتَسْخِرُونَ, showing Form X intensifies, introduces no new sense.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 11 Form I verbs (qac_verb_form=null) plus the single Form X verb (37:14, intensive of the same scorn field, in the 37:12-14 pericope alongside يَسْخَرُونَ). Every complemented case governs مِن (سَخِرُوا۟ مِنْهُ 11:38; مِنَ ٱلَّذِينَ ءَامَنُوا۟ 2:212; مِّن قَوْمٍ 49:11; فَيَسْخَرُونَ مِنْهُمْ / سَخِرَ ٱللَّهُ مِنْهُمْ 9:79); none takes a لـ-beneficiary or cosmic patient.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "11:38",
+     "verse_text": "وَيَصْنَعُ ٱلْفُلْكَ وَكُلَّمَا مَرَّ عَلَيْهِ مَلَأٌ مِّن قَوْمِهِۦ سَخِرُوا۟ مِنْهُ قَالَ إِن تَسْخَرُوا۟ مِنَّا فَإِنَّا نَسْخَرُ مِنكُمْ كَمَا تَسْخَرُونَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "11:38",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "saxiru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَيَصْنَعُ ٱلْفُلْكَ وَكُلَّمَا مَرَّ عَلَيْهِ مَلَأٌ مِّن قَوْمِهِۦ سَخِرُوا۟ مِنْهُ قَالَ إِن تَسْخَرُوا۟ مِنَّا فَإِنَّا نَسْخَرُ مِنكُمْ كَمَا تَسْخَرُونَ"
+  },
+  {
+   "word_ref": "13:2:12:2",
+   "disposition": "CONSISTENT",
+   "note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "coverage_cluster_id": "B_subjection_formII",
+   "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+   "cluster_supporting_evidence": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+   "counterevidence": [
+    "69:7:1:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "13:2",
+     "verse_text": "ٱللَّهُ ٱلَّذِى رَفَعَ ٱلسَّمَٰوَٰتِ بِغَيْرِ عَمَدٍ تَرَوْنَهَا ثُمَّ ٱسْتَوَىٰ عَلَى ٱلْعَرْشِ وَسَخَّرَ ٱلشَّمْسَ وَٱلْقَمَرَ كُلٌّ يَجْرِى لِأَجَلٍ مُّسَمًّى يُدَبِّرُ ٱلْأَمْرَ يُفَصِّلُ ٱلْـَٔايَٰتِ لَعَلَّكُم بِلِقَآءِ رَبِّكُمْ تُوقِنُونَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "13:2",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sax~ara",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱللَّهُ ٱلَّذِى رَفَعَ ٱلسَّمَٰوَٰتِ بِغَيْرِ عَمَدٍ تَرَوْنَهَا ثُمَّ ٱسْتَوَىٰ عَلَى ٱلْعَرْشِ وَسَخَّرَ ٱلشَّمْسَ وَٱلْقَمَرَ كُلٌّ يَجْرِى لِأَجَلٍ مُّسَمًّى يُدَبِّرُ ٱلْأَمْرَ يُفَصِّلُ ٱلْـَٔايَٰتِ لَعَلَّكُم بِلِقَآءِ رَبِّكُمْ تُوقِنُونَ"
+  },
+  {
+   "word_ref": "14:32:16:2",
+   "disposition": "CONSISTENT",
+   "note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "coverage_cluster_id": "B_subjection_formII",
+   "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+   "cluster_supporting_evidence": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+   "counterevidence": [
+    "69:7:1:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "14:32",
+     "verse_text": "ٱللَّهُ ٱلَّذِى خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ وَأَنزَلَ مِنَ ٱلسَّمَآءِ مَآءً فَأَخْرَجَ بِهِۦ مِنَ ٱلثَّمَرَٰتِ رِزْقًا لَّكُمْ وَسَخَّرَ لَكُمُ ٱلْفُلْكَ لِتَجْرِىَ فِى ٱلْبَحْرِ بِأَمْرِهِۦ وَسَخَّرَ لَكُمُ ٱلْأَنْهَٰرَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "14:32",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sax~ara",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱللَّهُ ٱلَّذِى خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ وَأَنزَلَ مِنَ ٱلسَّمَآءِ مَآءً فَأَخْرَجَ بِهِۦ مِنَ ٱلثَّمَرَٰتِ رِزْقًا لَّكُمْ وَسَخَّرَ لَكُمُ ٱلْفُلْكَ لِتَجْرِىَ فِى ٱلْبَحْرِ بِأَمْرِهِۦ وَسَخَّرَ لَكُمُ ٱلْأَنْهَٰرَ"
+  },
+  {
+   "word_ref": "14:32:23:2",
+   "disposition": "CONSISTENT",
+   "note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "coverage_cluster_id": "B_subjection_formII",
+   "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+   "cluster_supporting_evidence": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+   "counterevidence": [
+    "69:7:1:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "14:32",
+     "verse_text": "ٱللَّهُ ٱلَّذِى خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ وَأَنزَلَ مِنَ ٱلسَّمَآءِ مَآءً فَأَخْرَجَ بِهِۦ مِنَ ٱلثَّمَرَٰتِ رِزْقًا لَّكُمْ وَسَخَّرَ لَكُمُ ٱلْفُلْكَ لِتَجْرِىَ فِى ٱلْبَحْرِ بِأَمْرِهِۦ وَسَخَّرَ لَكُمُ ٱلْأَنْهَٰرَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "14:32",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sax~ara",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱللَّهُ ٱلَّذِى خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ وَأَنزَلَ مِنَ ٱلسَّمَآءِ مَآءً فَأَخْرَجَ بِهِۦ مِنَ ٱلثَّمَرَٰتِ رِزْقًا لَّكُمْ وَسَخَّرَ لَكُمُ ٱلْفُلْكَ لِتَجْرِىَ فِى ٱلْبَحْرِ بِأَمْرِهِۦ وَسَخَّرَ لَكُمُ ٱلْأَنْهَٰرَ"
+  },
+  {
+   "word_ref": "14:33:1:2",
+   "disposition": "CONSISTENT",
+   "note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "coverage_cluster_id": "B_subjection_formII",
+   "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+   "cluster_supporting_evidence": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+   "counterevidence": [
+    "69:7:1:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "14:33",
+     "verse_text": "وَسَخَّرَ لَكُمُ ٱلشَّمْسَ وَٱلْقَمَرَ دَآئِبَيْنِ وَسَخَّرَ لَكُمُ ٱلَّيْلَ وَٱلنَّهَارَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "14:33",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sax~ara",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَسَخَّرَ لَكُمُ ٱلشَّمْسَ وَٱلْقَمَرَ دَآئِبَيْنِ وَسَخَّرَ لَكُمُ ٱلَّيْلَ وَٱلنَّهَارَ"
+  },
+  {
+   "word_ref": "14:33:6:2",
+   "disposition": "CONSISTENT",
+   "note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "coverage_cluster_id": "B_subjection_formII",
+   "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+   "cluster_supporting_evidence": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+   "counterevidence": [
+    "69:7:1:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "14:33",
+     "verse_text": "وَسَخَّرَ لَكُمُ ٱلشَّمْسَ وَٱلْقَمَرَ دَآئِبَيْنِ وَسَخَّرَ لَكُمُ ٱلَّيْلَ وَٱلنَّهَارَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "14:33",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sax~ara",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَسَخَّرَ لَكُمُ ٱلشَّمْسَ وَٱلْقَمَرَ دَآئِبَيْنِ وَسَخَّرَ لَكُمُ ٱلَّيْلَ وَٱلنَّهَارَ"
+  },
+  {
+   "word_ref": "16:12:1:2",
+   "disposition": "CONSISTENT",
+   "note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "coverage_cluster_id": "B_subjection_formII",
+   "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+   "cluster_supporting_evidence": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+   "counterevidence": [
+    "69:7:1:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "16:12",
+     "verse_text": "وَسَخَّرَ لَكُمُ ٱلَّيْلَ وَٱلنَّهَارَ وَٱلشَّمْسَ وَٱلْقَمَرَ وَٱلنُّجُومُ مُسَخَّرَٰتٌۢ بِأَمْرِهِۦٓ إِنَّ فِى ذَٰلِكَ لَـَٔايَٰتٍ لِّقَوْمٍ يَعْقِلُونَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "16:12",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sax~ara",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَسَخَّرَ لَكُمُ ٱلَّيْلَ وَٱلنَّهَارَ وَٱلشَّمْسَ وَٱلْقَمَرَ وَٱلنُّجُومُ مُسَخَّرَٰتٌۢ بِأَمْرِهِۦٓ إِنَّ فِى ذَٰلِكَ لَـَٔايَٰتٍ لِّقَوْمٍ يَعْقِلُونَ"
+  },
+  {
+   "word_ref": "16:12:8:1",
+   "disposition": "CONSISTENT",
+   "note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "coverage_cluster_id": "B_subjection_formII",
+   "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+   "cluster_supporting_evidence": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+   "counterevidence": [
+    "69:7:1:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "16:12",
+     "verse_text": "وَسَخَّرَ لَكُمُ ٱلَّيْلَ وَٱلنَّهَارَ وَٱلشَّمْسَ وَٱلْقَمَرَ وَٱلنُّجُومُ مُسَخَّرَٰتٌۢ بِأَمْرِهِۦٓ إِنَّ فِى ذَٰلِكَ لَـَٔايَٰتٍ لِّقَوْمٍ يَعْقِلُونَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "16:12",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "musax~ara`tN[",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": "II",
+   "morphology": "N(II)",
+   "form": "N(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَسَخَّرَ لَكُمُ ٱلَّيْلَ وَٱلنَّهَارَ وَٱلشَّمْسَ وَٱلْقَمَرَ وَٱلنُّجُومُ مُسَخَّرَٰتٌۢ بِأَمْرِهِۦٓ إِنَّ فِى ذَٰلِكَ لَـَٔايَٰتٍ لِّقَوْمٍ يَعْقِلُونَ"
+  },
+  {
+   "word_ref": "16:14:3:1",
+   "disposition": "CONSISTENT",
+   "note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "coverage_cluster_id": "B_subjection_formII",
+   "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+   "cluster_supporting_evidence": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+   "counterevidence": [
+    "69:7:1:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "16:14",
+     "verse_text": "وَهُوَ ٱلَّذِى سَخَّرَ ٱلْبَحْرَ لِتَأْكُلُوا۟ مِنْهُ لَحْمًا طَرِيًّا وَتَسْتَخْرِجُوا۟ مِنْهُ حِلْيَةً تَلْبَسُونَهَا وَتَرَى ٱلْفُلْكَ مَوَاخِرَ فِيهِ وَلِتَبْتَغُوا۟ مِن فَضْلِهِۦ وَلَعَلَّكُمْ تَشْكُرُونَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "16:14",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sax~ara",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَهُوَ ٱلَّذِى سَخَّرَ ٱلْبَحْرَ لِتَأْكُلُوا۟ مِنْهُ لَحْمًا طَرِيًّا وَتَسْتَخْرِجُوا۟ مِنْهُ حِلْيَةً تَلْبَسُونَهَا وَتَرَى ٱلْفُلْكَ مَوَاخِرَ فِيهِ وَلِتَبْتَغُوا۟ مِن فَضْلِهِۦ وَلَعَلَّكُمْ تَشْكُرُونَ"
+  },
+  {
+   "word_ref": "16:79:5:1",
+   "disposition": "CONSISTENT",
+   "note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "coverage_cluster_id": "B_subjection_formII",
+   "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+   "cluster_supporting_evidence": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+   "counterevidence": [
+    "69:7:1:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "16:79",
+     "verse_text": "أَلَمْ يَرَوْا۟ إِلَى ٱلطَّيْرِ مُسَخَّرَٰتٍ فِى جَوِّ ٱلسَّمَآءِ مَا يُمْسِكُهُنَّ إِلَّا ٱللَّهُ إِنَّ فِى ذَٰلِكَ لَـَٔايَٰتٍ لِّقَوْمٍ يُؤْمِنُونَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "16:79",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "musax~ara`tK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": "II",
+   "morphology": "N(II)",
+   "form": "N(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَلَمْ يَرَوْا۟ إِلَى ٱلطَّيْرِ مُسَخَّرَٰتٍ فِى جَوِّ ٱلسَّمَآءِ مَا يُمْسِكُهُنَّ إِلَّا ٱللَّهُ إِنَّ فِى ذَٰلِكَ لَـَٔايَٰتٍ لِّقَوْمٍ يُؤْمِنُونَ"
+  },
+  {
+   "word_ref": "21:41:8:1",
+   "disposition": "CONSISTENT",
+   "note": "All 11 Form I verbs (qac_verb_form=null) plus the single Form X verb (37:14, intensive of the same scorn field, in the 37:12-14 pericope alongside يَسْخَرُونَ). Every complemented case governs مِن (سَخِرُوا۟ مِنْهُ 11:38; مِنَ ٱلَّذِينَ ءَامَنُوا۟ 2:212; مِّن قَوْمٍ 49:11; فَيَسْخَرُونَ مِنْهُمْ / سَخِرَ ٱللَّهُ مِنْهُمْ 9:79); none takes a لـ-beneficiary or cosmic patient.",
+   "coverage_cluster_id": "A_derision_verbal",
+   "candidate_semantic_interpretation": "To hold a PERSON in contemptuous ridicule/scorn — an attitudinal/speech act, target governed by مِن ('mock AT'), agent a blameworthy human (or God in just retribution), effecting no change in the target.",
+   "cluster_supporting_evidence": "Lexically co-located with derision neighbours it stays distinct from: ٱستهزأ (6:10, 21:41), لمز (9:79), ضحك (23:110 in the paired nominal). 37:12/14 pair يَسْخَرُونَ with يَسْتَسْخِرُونَ, showing Form X intensifies, introduces no new sense.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 11 Form I verbs (qac_verb_form=null) plus the single Form X verb (37:14, intensive of the same scorn field, in the 37:12-14 pericope alongside يَسْخَرُونَ). Every complemented case governs مِن (سَخِرُوا۟ مِنْهُ 11:38; مِنَ ٱلَّذِينَ ءَامَنُوا۟ 2:212; مِّن قَوْمٍ 49:11; فَيَسْخَرُونَ مِنْهُمْ / سَخِرَ ٱللَّهُ مِنْهُمْ 9:79); none takes a لـ-beneficiary or cosmic patient.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "21:41",
+     "verse_text": "وَلَقَدِ ٱسْتُهْزِئَ بِرُسُلٍ مِّن قَبْلِكَ فَحَاقَ بِٱلَّذِينَ سَخِرُوا۟ مِنْهُم مَّا كَانُوا۟ بِهِۦ يَسْتَهْزِءُونَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "21:41",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "saxiru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَقَدِ ٱسْتُهْزِئَ بِرُسُلٍ مِّن قَبْلِكَ فَحَاقَ بِٱلَّذِينَ سَخِرُوا۟ مِنْهُم مَّا كَانُوا۟ بِهِۦ يَسْتَهْزِءُونَ"
+  },
+  {
+   "word_ref": "21:79:7:2",
+   "disposition": "CONSISTENT",
+   "note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "coverage_cluster_id": "B_subjection_formII",
+   "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+   "cluster_supporting_evidence": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+   "counterevidence": [
+    "69:7:1:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "21:79",
+     "verse_text": "فَفَهَّمْنَٰهَا سُلَيْمَٰنَ وَكُلًّا ءَاتَيْنَا حُكْمًا وَعِلْمًا وَسَخَّرْنَا مَعَ دَاوُۥدَ ٱلْجِبَالَ يُسَبِّحْنَ وَٱلطَّيْرَ وَكُنَّا فَٰعِلِينَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "21:79",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sax~aro",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَفَهَّمْنَٰهَا سُلَيْمَٰنَ وَكُلًّا ءَاتَيْنَا حُكْمًا وَعِلْمًا وَسَخَّرْنَا مَعَ دَاوُۥدَ ٱلْجِبَالَ يُسَبِّحْنَ وَٱلطَّيْرَ وَكُنَّا فَٰعِلِينَ"
+  },
+  {
+   "word_ref": "22:36:24:1",
+   "disposition": "CONSISTENT",
+   "note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "coverage_cluster_id": "B_subjection_formII",
+   "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+   "cluster_supporting_evidence": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+   "counterevidence": [
+    "69:7:1:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "22:36",
+     "verse_text": "وَٱلْبُدْنَ جَعَلْنَٰهَا لَكُم مِّن شَعَٰٓئِرِ ٱللَّهِ لَكُمْ فِيهَا خَيْرٌ فَٱذْكُرُوا۟ ٱسْمَ ٱللَّهِ عَلَيْهَا صَوَآفَّ فَإِذَا وَجَبَتْ جُنُوبُهَا فَكُلُوا۟ مِنْهَا وَأَطْعِمُوا۟ ٱلْقَانِعَ وَٱلْمُعْتَرَّ كَذَٰلِكَ سَخَّرْنَٰهَا لَكُمْ لَعَلَّكُمْ تَشْكُرُونَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "22:36",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sax~aro",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱلْبُدْنَ جَعَلْنَٰهَا لَكُم مِّن شَعَٰٓئِرِ ٱللَّهِ لَكُمْ فِيهَا خَيْرٌ فَٱذْكُرُوا۟ ٱسْمَ ٱللَّهِ عَلَيْهَا صَوَآفَّ فَإِذَا وَجَبَتْ جُنُوبُهَا فَكُلُوا۟ مِنْهَا وَأَطْعِمُوا۟ ٱلْقَانِعَ وَٱلْمُعْتَرَّ كَذَٰلِكَ سَخَّرْنَٰهَا لَكُمْ لَعَلَّكُمْ تَشْكُرُونَ"
+  },
+  {
+   "word_ref": "22:37:12:1",
+   "disposition": "CONSISTENT",
+   "note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "coverage_cluster_id": "B_subjection_formII",
+   "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+   "cluster_supporting_evidence": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+   "counterevidence": [
+    "69:7:1:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "22:37",
+     "verse_text": "لَن يَنَالَ ٱللَّهَ لُحُومُهَا وَلَا دِمَآؤُهَا وَلَٰكِن يَنَالُهُ ٱلتَّقْوَىٰ مِنكُمْ كَذَٰلِكَ سَخَّرَهَا لَكُمْ لِتُكَبِّرُوا۟ ٱللَّهَ عَلَىٰ مَا هَدَىٰكُمْ وَبَشِّرِ ٱلْمُحْسِنِينَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "22:37",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sax~ara",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لَن يَنَالَ ٱللَّهَ لُحُومُهَا وَلَا دِمَآؤُهَا وَلَٰكِن يَنَالُهُ ٱلتَّقْوَىٰ مِنكُمْ كَذَٰلِكَ سَخَّرَهَا لَكُمْ لِتُكَبِّرُوا۟ ٱللَّهَ عَلَىٰ مَا هَدَىٰكُمْ وَبَشِّرِ ٱلْمُحْسِنِينَ"
+  },
+  {
+   "word_ref": "22:65:5:1",
+   "disposition": "CONSISTENT",
+   "note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "coverage_cluster_id": "B_subjection_formII",
+   "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+   "cluster_supporting_evidence": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+   "counterevidence": [
+    "69:7:1:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "22:65",
+     "verse_text": "أَلَمْ تَرَ أَنَّ ٱللَّهَ سَخَّرَ لَكُم مَّا فِى ٱلْأَرْضِ وَٱلْفُلْكَ تَجْرِى فِى ٱلْبَحْرِ بِأَمْرِهِۦ وَيُمْسِكُ ٱلسَّمَآءَ أَن تَقَعَ عَلَى ٱلْأَرْضِ إِلَّا بِإِذْنِهِۦٓ إِنَّ ٱللَّهَ بِٱلنَّاسِ لَرَءُوفٌ رَّحِيمٌ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "22:65",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sax~ara",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَلَمْ تَرَ أَنَّ ٱللَّهَ سَخَّرَ لَكُم مَّا فِى ٱلْأَرْضِ وَٱلْفُلْكَ تَجْرِى فِى ٱلْبَحْرِ بِأَمْرِهِۦ وَيُمْسِكُ ٱلسَّمَآءَ أَن تَقَعَ عَلَى ٱلْأَرْضِ إِلَّا بِإِذْنِهِۦٓ إِنَّ ٱللَّهَ بِٱلنَّاسِ لَرَءُوفٌ رَّحِيمٌ"
+  },
+  {
+   "word_ref": "23:110:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Bare nouns (qac_pos=N, qac_verb_form=null) whose contexts fix the derision sense: 23:110 ٱتَّخَذْتُمُوهُمْ سِخْرِيًّا … تَضْحَكُونَ; 38:63 أَتَّخَذْنَٰهُمْ سِخْرِيًّا; 39:56 لَمِنَ ٱلسَّٰخِرِينَ (self-indictment at Judgment). Separated by explicit word_refs from the homographic Class-B noun 43:32 (suxriyy) which shares the same qac_pos/qac_verb_form profile.",
+   "coverage_cluster_id": "A_derision_nominal",
+   "candidate_semantic_interpretation": "Nominal of Class A: object of derision (سِخْرِيّ, kasra) / the mockers (ٱلسَّٰخِرِين) — the person-directed contempt sense in nominal form.",
+   "cluster_supporting_evidence": "سِخْرِيّ carries the kasra vowel (sixoriy~FA) matching the derision field; the 23:110 pairing with تَضْحَكُونَ situates it in the person-directed contempt frame.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Bare nouns (qac_pos=N, qac_verb_form=null) whose contexts fix the derision sense: 23:110 ٱتَّخَذْتُمُوهُمْ سِخْرِيًّا … تَضْحَكُونَ; 38:63 أَتَّخَذْنَٰهُمْ سِخْرِيًّا; 39:56 لَمِنَ ٱلسَّٰخِرِينَ (self-indictment at Judgment). Separated by explicit word_refs from the homographic Class-B noun 43:32 (suxriyy) which shares the same qac_pos/qac_verb_form profile.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "23:110",
+     "verse_text": "فَٱتَّخَذْتُمُوهُمْ سِخْرِيًّا حَتَّىٰٓ أَنسَوْكُمْ ذِكْرِى وَكُنتُم مِّنْهُمْ تَضْحَكُونَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "23:110",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sixoriy~FA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَٱتَّخَذْتُمُوهُمْ سِخْرِيًّا حَتَّىٰٓ أَنسَوْكُمْ ذِكْرِى وَكُنتُم مِّنْهُمْ تَضْحَكُونَ"
+  },
+  {
+   "word_ref": "29:61:7:2",
+   "disposition": "CONSISTENT",
+   "note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "coverage_cluster_id": "B_subjection_formII",
+   "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+   "cluster_supporting_evidence": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+   "counterevidence": [
+    "69:7:1:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "29:61",
+     "verse_text": "وَلَئِن سَأَلْتَهُم مَّنْ خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ وَسَخَّرَ ٱلشَّمْسَ وَٱلْقَمَرَ لَيَقُولُنَّ ٱللَّهُ فَأَنَّىٰ يُؤْفَكُونَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "29:61",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sax~ara",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَئِن سَأَلْتَهُم مَّنْ خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ وَسَخَّرَ ٱلشَّمْسَ وَٱلْقَمَرَ لَيَقُولُنَّ ٱللَّهُ فَأَنَّىٰ يُؤْفَكُونَ"
+  },
+  {
+   "word_ref": "2:164:37:2",
+   "disposition": "CONSISTENT",
+   "note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "coverage_cluster_id": "B_subjection_formII",
+   "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+   "cluster_supporting_evidence": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+   "counterevidence": [
+    "69:7:1:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:164",
+     "verse_text": "إِنَّ فِى خَلْقِ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ وَٱخْتِلَٰفِ ٱلَّيْلِ وَٱلنَّهَارِ وَٱلْفُلْكِ ٱلَّتِى تَجْرِى فِى ٱلْبَحْرِ بِمَا يَنفَعُ ٱلنَّاسَ وَمَآ أَنزَلَ ٱللَّهُ مِنَ ٱلسَّمَآءِ مِن مَّآءٍ فَأَحْيَا بِهِ ٱلْأَرْضَ بَعْدَ مَوْتِهَا وَبَثَّ فِيهَا مِن كُلِّ دَآبَّةٍ وَتَصْرِيفِ ٱلرِّيَٰحِ وَٱلسَّحَابِ ٱلْمُسَخَّرِ بَيْنَ ٱلسَّمَآءِ وَٱلْأَرْضِ لَـَٔايَٰتٍ لِّقَوْمٍ يَعْقِلُونَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "2:164",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "musax~ari",
+   "qac_tag": "ADJ",
+   "qac_pos": "ADJ",
+   "qac_verb_form": "II",
+   "morphology": "ADJ(II)",
+   "form": "ADJ(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ فِى خَلْقِ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ وَٱخْتِلَٰفِ ٱلَّيْلِ وَٱلنَّهَارِ وَٱلْفُلْكِ ٱلَّتِى تَجْرِى فِى ٱلْبَحْرِ بِمَا يَنفَعُ ٱلنَّاسَ وَمَآ أَنزَلَ ٱللَّهُ مِنَ ٱلسَّمَآءِ مِن مَّآءٍ فَأَحْيَا بِهِ ٱلْأَرْضَ بَعْدَ مَوْتِهَا وَبَثَّ فِيهَا مِن كُلِّ دَآبَّةٍ وَتَصْرِيفِ ٱلرِّيَٰحِ وَٱلسَّحَابِ ٱلْمُسَخَّرِ بَيْنَ ٱلسَّمَآءِ وَٱلْأَرْضِ لَـَٔايَٰتٍ لِّقَوْمٍ يَعْقِلُونَ"
+  },
+  {
+   "word_ref": "2:212:6:2",
+   "disposition": "CONSISTENT",
+   "note": "All 11 Form I verbs (qac_verb_form=null) plus the single Form X verb (37:14, intensive of the same scorn field, in the 37:12-14 pericope alongside يَسْخَرُونَ). Every complemented case governs مِن (سَخِرُوا۟ مِنْهُ 11:38; مِنَ ٱلَّذِينَ ءَامَنُوا۟ 2:212; مِّن قَوْمٍ 49:11; فَيَسْخَرُونَ مِنْهُمْ / سَخِرَ ٱللَّهُ مِنْهُمْ 9:79); none takes a لـ-beneficiary or cosmic patient.",
+   "coverage_cluster_id": "A_derision_verbal",
+   "candidate_semantic_interpretation": "To hold a PERSON in contemptuous ridicule/scorn — an attitudinal/speech act, target governed by مِن ('mock AT'), agent a blameworthy human (or God in just retribution), effecting no change in the target.",
+   "cluster_supporting_evidence": "Lexically co-located with derision neighbours it stays distinct from: ٱستهزأ (6:10, 21:41), لمز (9:79), ضحك (23:110 in the paired nominal). 37:12/14 pair يَسْخَرُونَ with يَسْتَسْخِرُونَ, showing Form X intensifies, introduces no new sense.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 11 Form I verbs (qac_verb_form=null) plus the single Form X verb (37:14, intensive of the same scorn field, in the 37:12-14 pericope alongside يَسْخَرُونَ). Every complemented case governs مِن (سَخِرُوا۟ مِنْهُ 11:38; مِنَ ٱلَّذِينَ ءَامَنُوا۟ 2:212; مِّن قَوْمٍ 49:11; فَيَسْخَرُونَ مِنْهُمْ / سَخِرَ ٱللَّهُ مِنْهُمْ 9:79); none takes a لـ-beneficiary or cosmic patient.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:212",
+     "verse_text": "زُيِّنَ لِلَّذِينَ كَفَرُوا۟ ٱلْحَيَوٰةُ ٱلدُّنْيَا وَيَسْخَرُونَ مِنَ ٱلَّذِينَ ءَامَنُوا۟ وَٱلَّذِينَ ٱتَّقَوْا۟ فَوْقَهُمْ يَوْمَ ٱلْقِيَٰمَةِ وَٱللَّهُ يَرْزُقُ مَن يَشَآءُ بِغَيْرِ حِسَابٍ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "2:212",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasoxaru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "زُيِّنَ لِلَّذِينَ كَفَرُوا۟ ٱلْحَيَوٰةُ ٱلدُّنْيَا وَيَسْخَرُونَ مِنَ ٱلَّذِينَ ءَامَنُوا۟ وَٱلَّذِينَ ٱتَّقَوْا۟ فَوْقَهُمْ يَوْمَ ٱلْقِيَٰمَةِ وَٱللَّهُ يَرْزُقُ مَن يَشَآءُ بِغَيْرِ حِسَابٍ"
+  },
+  {
+   "word_ref": "31:20:5:1",
+   "disposition": "CONSISTENT",
+   "note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "coverage_cluster_id": "B_subjection_formII",
+   "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+   "cluster_supporting_evidence": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+   "counterevidence": [
+    "69:7:1:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "31:20",
+     "verse_text": "أَلَمْ تَرَوْا۟ أَنَّ ٱللَّهَ سَخَّرَ لَكُم مَّا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ وَأَسْبَغَ عَلَيْكُمْ نِعَمَهُۥ ظَٰهِرَةً وَبَاطِنَةً وَمِنَ ٱلنَّاسِ مَن يُجَٰدِلُ فِى ٱللَّهِ بِغَيْرِ عِلْمٍ وَلَا هُدًى وَلَا كِتَٰبٍ مُّنِيرٍ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "31:20",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sax~ara",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَلَمْ تَرَوْا۟ أَنَّ ٱللَّهَ سَخَّرَ لَكُم مَّا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ وَأَسْبَغَ عَلَيْكُمْ نِعَمَهُۥ ظَٰهِرَةً وَبَاطِنَةً وَمِنَ ٱلنَّاسِ مَن يُجَٰدِلُ فِى ٱللَّهِ بِغَيْرِ عِلْمٍ وَلَا هُدًى وَلَا كِتَٰبٍ مُّنِيرٍ"
+  },
+  {
+   "word_ref": "31:29:13:2",
+   "disposition": "CONSISTENT",
+   "note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "coverage_cluster_id": "B_subjection_formII",
+   "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+   "cluster_supporting_evidence": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+   "counterevidence": [
+    "69:7:1:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "31:29",
+     "verse_text": "أَلَمْ تَرَ أَنَّ ٱللَّهَ يُولِجُ ٱلَّيْلَ فِى ٱلنَّهَارِ وَيُولِجُ ٱلنَّهَارَ فِى ٱلَّيْلِ وَسَخَّرَ ٱلشَّمْسَ وَٱلْقَمَرَ كُلٌّ يَجْرِىٓ إِلَىٰٓ أَجَلٍ مُّسَمًّى وَأَنَّ ٱللَّهَ بِمَا تَعْمَلُونَ خَبِيرٌ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "31:29",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sax~ara",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَلَمْ تَرَ أَنَّ ٱللَّهَ يُولِجُ ٱلَّيْلَ فِى ٱلنَّهَارِ وَيُولِجُ ٱلنَّهَارَ فِى ٱلَّيْلِ وَسَخَّرَ ٱلشَّمْسَ وَٱلْقَمَرَ كُلٌّ يَجْرِىٓ إِلَىٰٓ أَجَلٍ مُّسَمًّى وَأَنَّ ٱللَّهَ بِمَا تَعْمَلُونَ خَبِيرٌ"
+  },
+  {
+   "word_ref": "35:13:9:2",
+   "disposition": "CONSISTENT",
+   "note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "coverage_cluster_id": "B_subjection_formII",
+   "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+   "cluster_supporting_evidence": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+   "counterevidence": [
+    "69:7:1:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "35:13",
+     "verse_text": "يُولِجُ ٱلَّيْلَ فِى ٱلنَّهَارِ وَيُولِجُ ٱلنَّهَارَ فِى ٱلَّيْلِ وَسَخَّرَ ٱلشَّمْسَ وَٱلْقَمَرَ كُلٌّ يَجْرِى لِأَجَلٍ مُّسَمًّى ذَٰلِكُمُ ٱللَّهُ رَبُّكُمْ لَهُ ٱلْمُلْكُ وَٱلَّذِينَ تَدْعُونَ مِن دُونِهِۦ مَا يَمْلِكُونَ مِن قِطْمِيرٍ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "35:13",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sax~ara",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يُولِجُ ٱلَّيْلَ فِى ٱلنَّهَارِ وَيُولِجُ ٱلنَّهَارَ فِى ٱلَّيْلِ وَسَخَّرَ ٱلشَّمْسَ وَٱلْقَمَرَ كُلٌّ يَجْرِى لِأَجَلٍ مُّسَمًّى ذَٰلِكُمُ ٱللَّهُ رَبُّكُمْ لَهُ ٱلْمُلْكُ وَٱلَّذِينَ تَدْعُونَ مِن دُونِهِۦ مَا يَمْلِكُونَ مِن قِطْمِيرٍ"
+  },
+  {
+   "word_ref": "37:12:3:2",
+   "disposition": "CONSISTENT",
+   "note": "All 11 Form I verbs (qac_verb_form=null) plus the single Form X verb (37:14, intensive of the same scorn field, in the 37:12-14 pericope alongside يَسْخَرُونَ). Every complemented case governs مِن (سَخِرُوا۟ مِنْهُ 11:38; مِنَ ٱلَّذِينَ ءَامَنُوا۟ 2:212; مِّن قَوْمٍ 49:11; فَيَسْخَرُونَ مِنْهُمْ / سَخِرَ ٱللَّهُ مِنْهُمْ 9:79); none takes a لـ-beneficiary or cosmic patient.",
+   "coverage_cluster_id": "A_derision_verbal",
+   "candidate_semantic_interpretation": "To hold a PERSON in contemptuous ridicule/scorn — an attitudinal/speech act, target governed by مِن ('mock AT'), agent a blameworthy human (or God in just retribution), effecting no change in the target.",
+   "cluster_supporting_evidence": "Lexically co-located with derision neighbours it stays distinct from: ٱستهزأ (6:10, 21:41), لمز (9:79), ضحك (23:110 in the paired nominal). 37:12/14 pair يَسْخَرُونَ with يَسْتَسْخِرُونَ, showing Form X intensifies, introduces no new sense.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 11 Form I verbs (qac_verb_form=null) plus the single Form X verb (37:14, intensive of the same scorn field, in the 37:12-14 pericope alongside يَسْخَرُونَ). Every complemented case governs مِن (سَخِرُوا۟ مِنْهُ 11:38; مِنَ ٱلَّذِينَ ءَامَنُوا۟ 2:212; مِّن قَوْمٍ 49:11; فَيَسْخَرُونَ مِنْهُمْ / سَخِرَ ٱللَّهُ مِنْهُمْ 9:79); none takes a لـ-beneficiary or cosmic patient.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "37:12",
+     "verse_text": "بَلْ عَجِبْتَ وَيَسْخَرُونَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "37:12",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasoxaru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "بَلْ عَجِبْتَ وَيَسْخَرُونَ"
+  },
+  {
+   "word_ref": "37:14:4:1",
+   "disposition": "CONSISTENT",
+   "note": "All 11 Form I verbs (qac_verb_form=null) plus the single Form X verb (37:14, intensive of the same scorn field, in the 37:12-14 pericope alongside يَسْخَرُونَ). Every complemented case governs مِن (سَخِرُوا۟ مِنْهُ 11:38; مِنَ ٱلَّذِينَ ءَامَنُوا۟ 2:212; مِّن قَوْمٍ 49:11; فَيَسْخَرُونَ مِنْهُمْ / سَخِرَ ٱللَّهُ مِنْهُمْ 9:79); none takes a لـ-beneficiary or cosmic patient.",
+   "coverage_cluster_id": "A_derision_verbal",
+   "candidate_semantic_interpretation": "To hold a PERSON in contemptuous ridicule/scorn — an attitudinal/speech act, target governed by مِن ('mock AT'), agent a blameworthy human (or God in just retribution), effecting no change in the target.",
+   "cluster_supporting_evidence": "Lexically co-located with derision neighbours it stays distinct from: ٱستهزأ (6:10, 21:41), لمز (9:79), ضحك (23:110 in the paired nominal). 37:12/14 pair يَسْخَرُونَ with يَسْتَسْخِرُونَ, showing Form X intensifies, introduces no new sense.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 11 Form I verbs (qac_verb_form=null) plus the single Form X verb (37:14, intensive of the same scorn field, in the 37:12-14 pericope alongside يَسْخَرُونَ). Every complemented case governs مِن (سَخِرُوا۟ مِنْهُ 11:38; مِنَ ٱلَّذِينَ ءَامَنُوا۟ 2:212; مِّن قَوْمٍ 49:11; فَيَسْخَرُونَ مِنْهُمْ / سَخِرَ ٱللَّهُ مِنْهُمْ 9:79); none takes a لـ-beneficiary or cosmic patient.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "37:14",
+     "verse_text": "وَإِذَا رَأَوْا۟ ءَايَةً يَسْتَسْخِرُونَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "37:14",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasotasoxiru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِذَا رَأَوْا۟ ءَايَةً يَسْتَسْخِرُونَ"
+  },
+  {
+   "word_ref": "38:18:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "coverage_cluster_id": "B_subjection_formII",
+   "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+   "cluster_supporting_evidence": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+   "counterevidence": [
+    "69:7:1:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "38:18",
+     "verse_text": "إِنَّا سَخَّرْنَا ٱلْجِبَالَ مَعَهُۥ يُسَبِّحْنَ بِٱلْعَشِىِّ وَٱلْإِشْرَاقِ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "38:18",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sax~aro",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّا سَخَّرْنَا ٱلْجِبَالَ مَعَهُۥ يُسَبِّحْنَ بِٱلْعَشِىِّ وَٱلْإِشْرَاقِ"
+  },
+  {
+   "word_ref": "38:36:1:2",
+   "disposition": "CONSISTENT",
+   "note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "coverage_cluster_id": "B_subjection_formII",
+   "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+   "cluster_supporting_evidence": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+   "counterevidence": [
+    "69:7:1:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "38:36",
+     "verse_text": "فَسَخَّرْنَا لَهُ ٱلرِّيحَ تَجْرِى بِأَمْرِهِۦ رُخَآءً حَيْثُ أَصَابَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "38:36",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sax~aro",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَسَخَّرْنَا لَهُ ٱلرِّيحَ تَجْرِى بِأَمْرِهِۦ رُخَآءً حَيْثُ أَصَابَ"
+  },
+  {
+   "word_ref": "38:63:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Bare nouns (qac_pos=N, qac_verb_form=null) whose contexts fix the derision sense: 23:110 ٱتَّخَذْتُمُوهُمْ سِخْرِيًّا … تَضْحَكُونَ; 38:63 أَتَّخَذْنَٰهُمْ سِخْرِيًّا; 39:56 لَمِنَ ٱلسَّٰخِرِينَ (self-indictment at Judgment). Separated by explicit word_refs from the homographic Class-B noun 43:32 (suxriyy) which shares the same qac_pos/qac_verb_form profile.",
+   "coverage_cluster_id": "A_derision_nominal",
+   "candidate_semantic_interpretation": "Nominal of Class A: object of derision (سِخْرِيّ, kasra) / the mockers (ٱلسَّٰخِرِين) — the person-directed contempt sense in nominal form.",
+   "cluster_supporting_evidence": "سِخْرِيّ carries the kasra vowel (sixoriy~FA) matching the derision field; the 23:110 pairing with تَضْحَكُونَ situates it in the person-directed contempt frame.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Bare nouns (qac_pos=N, qac_verb_form=null) whose contexts fix the derision sense: 23:110 ٱتَّخَذْتُمُوهُمْ سِخْرِيًّا … تَضْحَكُونَ; 38:63 أَتَّخَذْنَٰهُمْ سِخْرِيًّا; 39:56 لَمِنَ ٱلسَّٰخِرِينَ (self-indictment at Judgment). Separated by explicit word_refs from the homographic Class-B noun 43:32 (suxriyy) which shares the same qac_pos/qac_verb_form profile.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "38:63",
+     "verse_text": "أَتَّخَذْنَٰهُمْ سِخْرِيًّا أَمْ زَاغَتْ عَنْهُمُ ٱلْأَبْصَٰرُ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "38:63",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sixoriy~FA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَتَّخَذْنَٰهُمْ سِخْرِيًّا أَمْ زَاغَتْ عَنْهُمُ ٱلْأَبْصَٰرُ"
+  },
+  {
+   "word_ref": "39:56:14:2",
+   "disposition": "CONSISTENT",
+   "note": "Bare nouns (qac_pos=N, qac_verb_form=null) whose contexts fix the derision sense: 23:110 ٱتَّخَذْتُمُوهُمْ سِخْرِيًّا … تَضْحَكُونَ; 38:63 أَتَّخَذْنَٰهُمْ سِخْرِيًّا; 39:56 لَمِنَ ٱلسَّٰخِرِينَ (self-indictment at Judgment). Separated by explicit word_refs from the homographic Class-B noun 43:32 (suxriyy) which shares the same qac_pos/qac_verb_form profile.",
+   "coverage_cluster_id": "A_derision_nominal",
+   "candidate_semantic_interpretation": "Nominal of Class A: object of derision (سِخْرِيّ, kasra) / the mockers (ٱلسَّٰخِرِين) — the person-directed contempt sense in nominal form.",
+   "cluster_supporting_evidence": "سِخْرِيّ carries the kasra vowel (sixoriy~FA) matching the derision field; the 23:110 pairing with تَضْحَكُونَ situates it in the person-directed contempt frame.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Bare nouns (qac_pos=N, qac_verb_form=null) whose contexts fix the derision sense: 23:110 ٱتَّخَذْتُمُوهُمْ سِخْرِيًّا … تَضْحَكُونَ; 38:63 أَتَّخَذْنَٰهُمْ سِخْرِيًّا; 39:56 لَمِنَ ٱلسَّٰخِرِينَ (self-indictment at Judgment). Separated by explicit word_refs from the homographic Class-B noun 43:32 (suxriyy) which shares the same qac_pos/qac_verb_form profile.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "39:56",
+     "verse_text": "أَن تَقُولَ نَفْسٌ يَٰحَسْرَتَىٰ عَلَىٰ مَا فَرَّطتُ فِى جَنۢبِ ٱللَّهِ وَإِن كُنتُ لَمِنَ ٱلسَّٰخِرِينَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "39:56",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "s~a`xiriyna",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَن تَقُولَ نَفْسٌ يَٰحَسْرَتَىٰ عَلَىٰ مَا فَرَّطتُ فِى جَنۢبِ ٱللَّهِ وَإِن كُنتُ لَمِنَ ٱلسَّٰخِرِينَ"
+  },
+  {
+   "word_ref": "39:5:13:2",
+   "disposition": "CONSISTENT",
+   "note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "coverage_cluster_id": "B_subjection_formII",
+   "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+   "cluster_supporting_evidence": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+   "counterevidence": [
+    "69:7:1:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "39:5",
+     "verse_text": "خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ بِٱلْحَقِّ يُكَوِّرُ ٱلَّيْلَ عَلَى ٱلنَّهَارِ وَيُكَوِّرُ ٱلنَّهَارَ عَلَى ٱلَّيْلِ وَسَخَّرَ ٱلشَّمْسَ وَٱلْقَمَرَ كُلٌّ يَجْرِى لِأَجَلٍ مُّسَمًّى أَلَا هُوَ ٱلْعَزِيزُ ٱلْغَفَّٰرُ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "39:5",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sax~ara",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ بِٱلْحَقِّ يُكَوِّرُ ٱلَّيْلَ عَلَى ٱلنَّهَارِ وَيُكَوِّرُ ٱلنَّهَارَ عَلَى ٱلَّيْلِ وَسَخَّرَ ٱلشَّمْسَ وَٱلْقَمَرَ كُلٌّ يَجْرِى لِأَجَلٍ مُّسَمًّى أَلَا هُوَ ٱلْعَزِيزُ ٱلْغَفَّٰرُ"
+  },
+  {
+   "word_ref": "43:13:14:1",
+   "disposition": "CONSISTENT",
+   "note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "coverage_cluster_id": "B_subjection_formII",
+   "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+   "cluster_supporting_evidence": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+   "counterevidence": [
+    "69:7:1:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "43:13",
+     "verse_text": "لِتَسْتَوُۥا۟ عَلَىٰ ظُهُورِهِۦ ثُمَّ تَذْكُرُوا۟ نِعْمَةَ رَبِّكُمْ إِذَا ٱسْتَوَيْتُمْ عَلَيْهِ وَتَقُولُوا۟ سُبْحَٰنَ ٱلَّذِى سَخَّرَ لَنَا هَٰذَا وَمَا كُنَّا لَهُۥ مُقْرِنِينَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "43:13",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sax~ara",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لِتَسْتَوُۥا۟ عَلَىٰ ظُهُورِهِۦ ثُمَّ تَذْكُرُوا۟ نِعْمَةَ رَبِّكُمْ إِذَا ٱسْتَوَيْتُمْ عَلَيْهِ وَتَقُولُوا۟ سُبْحَٰنَ ٱلَّذِى سَخَّرَ لَنَا هَٰذَا وَمَا كُنَّا لَهُۥ مُقْرِنِينَ"
+  },
+  {
+   "word_ref": "43:32:20:1",
+   "disposition": "RESISTANT",
+   "note": "Resolved semantically to Class B (subjection/service) by the su- vowel (suxoriy~FA) and the دَرَجَٰت hierarchy context, but retained as RESISTANT_SEAM: it is the one occurrence that both blocks a strict two-root split and prevents a confident unified-nucleus claim.",
+   "coverage_cluster_id": "B_subjection_nominal_pivot",
+   "candidate_semantic_interpretation": "Nominal of Class B with a HUMAN patient: socioeconomic subordination/service (سُخْرِيّ, damma) — 'that some may take others into service' within a divinely apportioned hierarchy of livelihood.",
+   "cluster_supporting_evidence": "The suxriyy/sixriyy vowel minimal pair (43:32 vs 23:110/38:63) is the strongest counterexample to unity and the pivot on which the multi-class verdict rests.",
+   "counterevidence": [
+    "43:32:20:1"
+   ],
+   "preliminary_disposition": "STRUCTURAL_UNCERTAINTY",
+   "preliminary_note": "Bare noun homographic with the Class-A derision nouns سِخْرِيّ (23:110, 38:63) — same qac_pos=N and qac_verb_form=null — raising whether it is derision or subjection.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "The canonical vocalization partitions it from the derision nouns (suxoriy~FA damma vs sixoriy~FA kasra) and its context (apportioned livelihood, ranks, 'take others into service') aligns it with Class B; but because it is the sole subjection-sense token outside Form II, carries a human patient, and is homographic with Class A, it is preserved as the resistant seam that sustains the UNRESOLVED unity verdict rather than being silently absorbed into either class.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "43:32:20:1",
+     "preliminary_disposition": "STRUCTURAL_UNCERTAINTY",
+     "preliminary_note": "Homographic bare noun (N, verb_form=null) shared morphologically with the derision nouns; class membership initially ambiguous.",
+     "final_disposition": "RESISTANT",
+     "reconciliation_rationale": "The canonical vocalization partitions it from the derision nouns (suxoriy~FA damma vs sixoriy~FA kasra) and its context (apportioned livelihood, ranks, 'take others into service') aligns it with Class B; but because it is the sole subjection-sense token outside Form II, carries a human patient, and is homographic with Class A, it is preserved as the resistant seam that sustains the UNRESOLVED unity verdict rather than being silently absorbed into either class.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [
+    "A single-nucleus reading would take this human-patient token as the hinge unifying derision and subjection.",
+    "Reading it as derision is incoherent: a divine purpose 'so that they mock one another' contradicts the surrounding apportionment-of-livelihood/hierarchy theme."
+   ],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "43:32",
+     "verse_text": "أَهُمْ يَقْسِمُونَ رَحْمَتَ رَبِّكَ نَحْنُ قَسَمْنَا بَيْنَهُم مَّعِيشَتَهُمْ فِى ٱلْحَيَوٰةِ ٱلدُّنْيَا وَرَفَعْنَا بَعْضَهُمْ فَوْقَ بَعْضٍ دَرَجَٰتٍ لِّيَتَّخِذَ بَعْضُهُم بَعْضًا سُخْرِيًّا وَرَحْمَتُ رَبِّكَ خَيْرٌ مِّمَّا يَجْمَعُونَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "43:32",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "suxoriy~FA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَهُمْ يَقْسِمُونَ رَحْمَتَ رَبِّكَ نَحْنُ قَسَمْنَا بَيْنَهُم مَّعِيشَتَهُمْ فِى ٱلْحَيَوٰةِ ٱلدُّنْيَا وَرَفَعْنَا بَعْضَهُمْ فَوْقَ بَعْضٍ دَرَجَٰتٍ لِّيَتَّخِذَ بَعْضُهُم بَعْضًا سُخْرِيًّا وَرَحْمَتُ رَبِّكَ خَيْرٌ مِّمَّا يَجْمَعُونَ",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "45:12:3:1",
+   "disposition": "CONSISTENT",
+   "note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "coverage_cluster_id": "B_subjection_formII",
+   "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+   "cluster_supporting_evidence": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+   "counterevidence": [
+    "69:7:1:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "45:12",
+     "verse_text": "ٱللَّهُ ٱلَّذِى سَخَّرَ لَكُمُ ٱلْبَحْرَ لِتَجْرِىَ ٱلْفُلْكُ فِيهِ بِأَمْرِهِۦ وَلِتَبْتَغُوا۟ مِن فَضْلِهِۦ وَلَعَلَّكُمْ تَشْكُرُونَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "45:12",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sax~ara",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱللَّهُ ٱلَّذِى سَخَّرَ لَكُمُ ٱلْبَحْرَ لِتَجْرِىَ ٱلْفُلْكُ فِيهِ بِأَمْرِهِۦ وَلِتَبْتَغُوا۟ مِن فَضْلِهِۦ وَلَعَلَّكُمْ تَشْكُرُونَ"
+  },
+  {
+   "word_ref": "45:13:1:2",
+   "disposition": "CONSISTENT",
+   "note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "coverage_cluster_id": "B_subjection_formII",
+   "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+   "cluster_supporting_evidence": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+   "counterevidence": [
+    "69:7:1:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "45:13",
+     "verse_text": "وَسَخَّرَ لَكُم مَّا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ جَمِيعًا مِّنْهُ إِنَّ فِى ذَٰلِكَ لَـَٔايَٰتٍ لِّقَوْمٍ يَتَفَكَّرُونَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "45:13",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sax~ara",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَسَخَّرَ لَكُم مَّا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ جَمِيعًا مِّنْهُ إِنَّ فِى ذَٰلِكَ لَـَٔايَٰتٍ لِّقَوْمٍ يَتَفَكَّرُونَ"
+  },
+  {
+   "word_ref": "49:11:5:1",
+   "disposition": "CONSISTENT",
+   "note": "All 11 Form I verbs (qac_verb_form=null) plus the single Form X verb (37:14, intensive of the same scorn field, in the 37:12-14 pericope alongside يَسْخَرُونَ). Every complemented case governs مِن (سَخِرُوا۟ مِنْهُ 11:38; مِنَ ٱلَّذِينَ ءَامَنُوا۟ 2:212; مِّن قَوْمٍ 49:11; فَيَسْخَرُونَ مِنْهُمْ / سَخِرَ ٱللَّهُ مِنْهُمْ 9:79); none takes a لـ-beneficiary or cosmic patient.",
+   "coverage_cluster_id": "A_derision_verbal",
+   "candidate_semantic_interpretation": "To hold a PERSON in contemptuous ridicule/scorn — an attitudinal/speech act, target governed by مِن ('mock AT'), agent a blameworthy human (or God in just retribution), effecting no change in the target.",
+   "cluster_supporting_evidence": "Lexically co-located with derision neighbours it stays distinct from: ٱستهزأ (6:10, 21:41), لمز (9:79), ضحك (23:110 in the paired nominal). 37:12/14 pair يَسْخَرُونَ with يَسْتَسْخِرُونَ, showing Form X intensifies, introduces no new sense.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 11 Form I verbs (qac_verb_form=null) plus the single Form X verb (37:14, intensive of the same scorn field, in the 37:12-14 pericope alongside يَسْخَرُونَ). Every complemented case governs مِن (سَخِرُوا۟ مِنْهُ 11:38; مِنَ ٱلَّذِينَ ءَامَنُوا۟ 2:212; مِّن قَوْمٍ 49:11; فَيَسْخَرُونَ مِنْهُمْ / سَخِرَ ٱللَّهُ مِنْهُمْ 9:79); none takes a لـ-beneficiary or cosmic patient.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "49:11",
+     "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا يَسْخَرْ قَوْمٌ مِّن قَوْمٍ عَسَىٰٓ أَن يَكُونُوا۟ خَيْرًا مِّنْهُمْ وَلَا نِسَآءٌ مِّن نِّسَآءٍ عَسَىٰٓ أَن يَكُنَّ خَيْرًا مِّنْهُنَّ وَلَا تَلْمِزُوٓا۟ أَنفُسَكُمْ وَلَا تَنَابَزُوا۟ بِٱلْأَلْقَٰبِ بِئْسَ ٱلِٱسْمُ ٱلْفُسُوقُ بَعْدَ ٱلْإِيمَٰنِ وَمَن لَّمْ يَتُبْ فَأُو۟لَٰٓئِكَ هُمُ ٱلظَّٰلِمُونَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "49:11",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasoxaro",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا يَسْخَرْ قَوْمٌ مِّن قَوْمٍ عَسَىٰٓ أَن يَكُونُوا۟ خَيْرًا مِّنْهُمْ وَلَا نِسَآءٌ مِّن نِّسَآءٍ عَسَىٰٓ أَن يَكُنَّ خَيْرًا مِّنْهُنَّ وَلَا تَلْمِزُوٓا۟ أَنفُسَكُمْ وَلَا تَنَابَزُوا۟ بِٱلْأَلْقَٰبِ بِئْسَ ٱلِٱسْمُ ٱلْفُسُوقُ بَعْدَ ٱلْإِيمَٰنِ وَمَن لَّمْ يَتُبْ فَأُو۟لَٰٓئِكَ هُمُ ٱلظَّٰلِمُونَ"
+  },
+  {
+   "word_ref": "69:7:1:1",
+   "disposition": "CONSISTENT",
+   "note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "coverage_cluster_id": "B_subjection_formII",
+   "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+   "cluster_supporting_evidence": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+   "counterevidence": [
+    "69:7:1:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "69:7",
+     "verse_text": "سَخَّرَهَا عَلَيْهِمْ سَبْعَ لَيَالٍ وَثَمَٰنِيَةَ أَيَّامٍ حُسُومًا فَتَرَى ٱلْقَوْمَ فِيهَا صَرْعَىٰ كَأَنَّهُمْ أَعْجَازُ نَخْلٍ خَاوِيَةٍ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "69:7",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "sax~ara",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "سَخَّرَهَا عَلَيْهِمْ سَبْعَ لَيَالٍ وَثَمَٰنِيَةَ أَيَّامٍ حُسُومًا فَتَرَى ٱلْقَوْمَ فِيهَا صَرْعَىٰ كَأَنَّهُمْ أَعْجَازُ نَخْلٍ خَاوِيَةٍ"
+  },
+  {
+   "word_ref": "6:10:8:1",
+   "disposition": "CONSISTENT",
+   "note": "All 11 Form I verbs (qac_verb_form=null) plus the single Form X verb (37:14, intensive of the same scorn field, in the 37:12-14 pericope alongside يَسْخَرُونَ). Every complemented case governs مِن (سَخِرُوا۟ مِنْهُ 11:38; مِنَ ٱلَّذِينَ ءَامَنُوا۟ 2:212; مِّن قَوْمٍ 49:11; فَيَسْخَرُونَ مِنْهُمْ / سَخِرَ ٱللَّهُ مِنْهُمْ 9:79); none takes a لـ-beneficiary or cosmic patient.",
+   "coverage_cluster_id": "A_derision_verbal",
+   "candidate_semantic_interpretation": "To hold a PERSON in contemptuous ridicule/scorn — an attitudinal/speech act, target governed by مِن ('mock AT'), agent a blameworthy human (or God in just retribution), effecting no change in the target.",
+   "cluster_supporting_evidence": "Lexically co-located with derision neighbours it stays distinct from: ٱستهزأ (6:10, 21:41), لمز (9:79), ضحك (23:110 in the paired nominal). 37:12/14 pair يَسْخَرُونَ with يَسْتَسْخِرُونَ, showing Form X intensifies, introduces no new sense.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 11 Form I verbs (qac_verb_form=null) plus the single Form X verb (37:14, intensive of the same scorn field, in the 37:12-14 pericope alongside يَسْخَرُونَ). Every complemented case governs مِن (سَخِرُوا۟ مِنْهُ 11:38; مِنَ ٱلَّذِينَ ءَامَنُوا۟ 2:212; مِّن قَوْمٍ 49:11; فَيَسْخَرُونَ مِنْهُمْ / سَخِرَ ٱللَّهُ مِنْهُمْ 9:79); none takes a لـ-beneficiary or cosmic patient.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:10",
+     "verse_text": "وَلَقَدِ ٱسْتُهْزِئَ بِرُسُلٍ مِّن قَبْلِكَ فَحَاقَ بِٱلَّذِينَ سَخِرُوا۟ مِنْهُم مَّا كَانُوا۟ بِهِۦ يَسْتَهْزِءُونَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "6:10",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "saxiru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَقَدِ ٱسْتُهْزِئَ بِرُسُلٍ مِّن قَبْلِكَ فَحَاقَ بِٱلَّذِينَ سَخِرُوا۟ مِنْهُم مَّا كَانُوا۟ بِهِۦ يَسْتَهْزِءُونَ"
+  },
+  {
+   "word_ref": "7:54:23:1",
+   "disposition": "CONSISTENT",
+   "note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "coverage_cluster_id": "B_subjection_formII",
+   "candidate_semantic_interpretation": "To place a thing under command so that it is compelled to run to an appointed function/purpose — command-directed deployment/disposal (بِأَمْرِهِ, يَجْرِى لِأَجَلٍ مُّسَمًّى), governed by لـ (beneficiary), direct accusative, or عَلَى (adversative); not creation, not humiliation, not benefaction-as-core.",
+   "cluster_supporting_evidence": "Contrastively separated from خَلَقَ (7:54, 14:32, 29:61, 39:5 خَلَقَ … وَسَخَّرَ = make-serve, not make-exist) and from mere management (13:2 وَسَخَّرَ … يُدَبِّرُ ٱلْأَمْرَ). Tied to purpose clauses (لِتَجْرِىَ, لِتَأْكُلُوا۟, لِتَبْتَغُوا۟) and grace-markers (لَعَلَّكُمْ تَشْكُرُونَ, لَـَٔايَٰتٍ).",
+   "counterevidence": [
+    "69:7:1:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 26 Form II forms (qac_verb_form=II): 22 V(II), 3 N(II) مُسَخَّرَٰت (16:12:8, 16:79, 7:54), 1 ADJ(II) ٱلْمُسَخَّر (2:164). Patients are characteristically cosmic/natural forces (sun/moon, night/day, sea, rivers, ships, mountains, wind, stars, birds, clouds, cattle). Never governs the مِن-of-derision; never means 'mock'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:54",
+     "verse_text": "إِنَّ رَبَّكُمُ ٱللَّهُ ٱلَّذِى خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ فِى سِتَّةِ أَيَّامٍ ثُمَّ ٱسْتَوَىٰ عَلَى ٱلْعَرْشِ يُغْشِى ٱلَّيْلَ ٱلنَّهَارَ يَطْلُبُهُۥ حَثِيثًا وَٱلشَّمْسَ وَٱلْقَمَرَ وَٱلنُّجُومَ مُسَخَّرَٰتٍۭ بِأَمْرِهِۦٓ أَلَا لَهُ ٱلْخَلْقُ وَٱلْأَمْرُ تَبَارَكَ ٱللَّهُ رَبُّ ٱلْعَٰلَمِينَ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "7:54",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "musax~ara`tK]",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": "II",
+   "morphology": "N(II)",
+   "form": "N(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ رَبَّكُمُ ٱللَّهُ ٱلَّذِى خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ فِى سِتَّةِ أَيَّامٍ ثُمَّ ٱسْتَوَىٰ عَلَى ٱلْعَرْشِ يُغْشِى ٱلَّيْلَ ٱلنَّهَارَ يَطْلُبُهُۥ حَثِيثًا وَٱلشَّمْسَ وَٱلْقَمَرَ وَٱلنُّجُومَ مُسَخَّرَٰتٍۭ بِأَمْرِهِۦٓ أَلَا لَهُ ٱلْخَلْقُ وَٱلْأَمْرُ تَبَارَكَ ٱللَّهُ رَبُّ ٱلْعَٰلَمِينَ"
+  },
+  {
+   "word_ref": "9:79:13:2",
+   "disposition": "CONSISTENT",
+   "note": "All 11 Form I verbs (qac_verb_form=null) plus the single Form X verb (37:14, intensive of the same scorn field, in the 37:12-14 pericope alongside يَسْخَرُونَ). Every complemented case governs مِن (سَخِرُوا۟ مِنْهُ 11:38; مِنَ ٱلَّذِينَ ءَامَنُوا۟ 2:212; مِّن قَوْمٍ 49:11; فَيَسْخَرُونَ مِنْهُمْ / سَخِرَ ٱللَّهُ مِنْهُمْ 9:79); none takes a لـ-beneficiary or cosmic patient.",
+   "coverage_cluster_id": "A_derision_verbal",
+   "candidate_semantic_interpretation": "To hold a PERSON in contemptuous ridicule/scorn — an attitudinal/speech act, target governed by مِن ('mock AT'), agent a blameworthy human (or God in just retribution), effecting no change in the target.",
+   "cluster_supporting_evidence": "Lexically co-located with derision neighbours it stays distinct from: ٱستهزأ (6:10, 21:41), لمز (9:79), ضحك (23:110 in the paired nominal). 37:12/14 pair يَسْخَرُونَ with يَسْتَسْخِرُونَ, showing Form X intensifies, introduces no new sense.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 11 Form I verbs (qac_verb_form=null) plus the single Form X verb (37:14, intensive of the same scorn field, in the 37:12-14 pericope alongside يَسْخَرُونَ). Every complemented case governs مِن (سَخِرُوا۟ مِنْهُ 11:38; مِنَ ٱلَّذِينَ ءَامَنُوا۟ 2:212; مِّن قَوْمٍ 49:11; فَيَسْخَرُونَ مِنْهُمْ / سَخِرَ ٱللَّهُ مِنْهُمْ 9:79); none takes a لـ-beneficiary or cosmic patient.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "9:79",
+     "verse_text": "ٱلَّذِينَ يَلْمِزُونَ ٱلْمُطَّوِّعِينَ مِنَ ٱلْمُؤْمِنِينَ فِى ٱلصَّدَقَٰتِ وَٱلَّذِينَ لَا يَجِدُونَ إِلَّا جُهْدَهُمْ فَيَسْخَرُونَ مِنْهُمْ سَخِرَ ٱللَّهُ مِنْهُمْ وَلَهُمْ عَذَابٌ أَلِيمٌ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "9:79",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasoxaru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱلَّذِينَ يَلْمِزُونَ ٱلْمُطَّوِّعِينَ مِنَ ٱلْمُؤْمِنِينَ فِى ٱلصَّدَقَٰتِ وَٱلَّذِينَ لَا يَجِدُونَ إِلَّا جُهْدَهُمْ فَيَسْخَرُونَ مِنْهُمْ سَخِرَ ٱللَّهُ مِنْهُمْ وَلَهُمْ عَذَابٌ أَلِيمٌ"
+  },
+  {
+   "word_ref": "9:79:15:1",
+   "disposition": "CONSISTENT",
+   "note": "All 11 Form I verbs (qac_verb_form=null) plus the single Form X verb (37:14, intensive of the same scorn field, in the 37:12-14 pericope alongside يَسْخَرُونَ). Every complemented case governs مِن (سَخِرُوا۟ مِنْهُ 11:38; مِنَ ٱلَّذِينَ ءَامَنُوا۟ 2:212; مِّن قَوْمٍ 49:11; فَيَسْخَرُونَ مِنْهُمْ / سَخِرَ ٱللَّهُ مِنْهُمْ 9:79); none takes a لـ-beneficiary or cosmic patient.",
+   "coverage_cluster_id": "A_derision_verbal",
+   "candidate_semantic_interpretation": "To hold a PERSON in contemptuous ridicule/scorn — an attitudinal/speech act, target governed by مِن ('mock AT'), agent a blameworthy human (or God in just retribution), effecting no change in the target.",
+   "cluster_supporting_evidence": "Lexically co-located with derision neighbours it stays distinct from: ٱستهزأ (6:10, 21:41), لمز (9:79), ضحك (23:110 in the paired nominal). 37:12/14 pair يَسْخَرُونَ with يَسْتَسْخِرُونَ, showing Form X intensifies, introduces no new sense.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 11 Form I verbs (qac_verb_form=null) plus the single Form X verb (37:14, intensive of the same scorn field, in the 37:12-14 pericope alongside يَسْخَرُونَ). Every complemented case governs مِن (سَخِرُوا۟ مِنْهُ 11:38; مِنَ ٱلَّذِينَ ءَامَنُوا۟ 2:212; مِّن قَوْمٍ 49:11; فَيَسْخَرُونَ مِنْهُمْ / سَخِرَ ٱللَّهُ مِنْهُمْ 9:79); none takes a لـ-beneficiary or cosmic patient.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "9:79",
+     "verse_text": "ٱلَّذِينَ يَلْمِزُونَ ٱلْمُطَّوِّعِينَ مِنَ ٱلْمُؤْمِنِينَ فِى ٱلصَّدَقَٰتِ وَٱلَّذِينَ لَا يَجِدُونَ إِلَّا جُهْدَهُمْ فَيَسْخَرُونَ مِنْهُمْ سَخِرَ ٱللَّهُ مِنْهُمْ وَلَهُمْ عَذَابٌ أَلِيمٌ"
+    }
+   ],
+   "root_arabic": "س خ ر",
+   "root_buckwalter": "sxr",
+   "root_id": "sxr",
+   "artifact_name": "sxr.json",
+   "verse_ref": "9:79",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "saxira",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱلَّذِينَ يَلْمِزُونَ ٱلْمُطَّوِّعِينَ مِنَ ٱلْمُؤْمِنِينَ فِى ٱلصَّدَقَٰتِ وَٱلَّذِينَ لَا يَجِدُونَ إِلَّا جُهْدَهُمْ فَيَسْخَرُونَ مِنْهُمْ سَخِرَ ٱللَّهُ مِنْهُمْ وَلَهُمْ عَذَابٌ أَلِيمٌ"
+  }
+ ],
+ "resistant_deep_analysis": [
+  {
+   "word_ref": "43:32:20:1",
+   "preliminary_disposition": "STRUCTURAL_UNCERTAINTY",
+   "preliminary_note": "Bare noun homographic with the Class-A derision nouns سِخْرِيّ (23:110, 38:63) — same qac_pos=N and qac_verb_form=null — raising whether it is derision or subjection.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "The canonical vocalization partitions it from the derision nouns (suxoriy~FA damma vs sixoriy~FA kasra) and its context (apportioned livelihood, ranks, 'take others into service') aligns it with Class B; but because it is the sole subjection-sense token outside Form II, carries a human patient, and is homographic with Class A, it is preserved as the resistant seam that sustains the UNRESOLVED unity verdict rather than being silently absorbed into either class.",
+   "deep_analysis": true
+  }
+ ],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "UNRESOLVED",
+ "result_strength": "UNRESOLVED",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "All three independent lenses (A, B, adversary C) converged on the same two-class partition with no Quran-internal bridge and identified 43:32 as the pivot, corroborating the UNRESOLVED unity verdict.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "43:32:20:1"
+ ],
+ "unreconciled_count": 1,
+ "resistant_occurrences": [
+  "43:32:20:1"
+ ],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": null,
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "LOCAL",
+ "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
+ "layer_attribution": {
+  "occurrence_evidence": "42/42 occurrences read with verse_text and QAC morphology; two syntactic-government patterns observed directly — مِن-target for Form I/X/derision-nouns (11:38, 2:212, 49:11, 9:79) and لـ/accusative/عَلَى for Form II (14:32, 43:13, 69:7).",
+  "derivation": "Morphology partitions the tokens: Form I (null) + Form X = derision; Form II (V/N/ADJ) = subjection. The Form II sense is not the morphological causative of the attested Form I sense (no 'make someone mock', no 'be low'), so derivation does not supply a bridge.",
+  "lexical_class": "Two lexicalized classes on one root: person-directed contempt (Class A) and command-directed disposal (Class B), with a vocalic minimal pair سِخْرِيّ/سُخْرِيّ showing the language keeping the nominal senses apart.",
+  "contextual_relation": "Class A co-occurs with ٱستهزأ/لمز/ضحك and reversal/retribution motifs; Class B co-occurs with خلق, بِأَمْرِهِ, يَجْرِى, آيَٰت/نِعَم and tasbīḥ. These contextual/narrative colourings are recorded but are NOT elevated to the root claim.",
+  "reconciliation": "The homographic pivot 43:32 was reconciled from STRUCTURAL_UNCERTAINTY to RESISTANT: assigned to Class B by vowel and context yet retained as the seam that sustains the unresolved unity verdict rather than being absorbed.",
+  "unresolved_resistance": "The single-nucleus (root-generalization) question is UNRESOLVED: two coherent classes stand unbridged by any occurrence, the seam token 43:32 resists both a hard split and a forced unity, and 9:79 (agent) and 69:7 (benefaction) close the two bridges a unity account would require."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "43:32:20:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "The pivot سُخْرِيّ: subjection sense in a bare noun with a human patient, homographic with the derision nouns and separated from them only by the su-/si- vowel. It refutes a strict two-root split (proving A and B are one derivational family) yet blocks a unified nucleus (the vowel change is required to keep the senses apart).",
+   "evidence_basis": {
+    "kind": "VOCALIC_MINIMAL_PAIR",
+    "statement": "The near-minimal vowel pair سِخْرِيّ (kasra: sixoriy~FA, 23:110/38:63, derision) vs سُخْرِيّ (damma: suxoriy~FA, 43:32, service) on one consonantal skeleton, identical bare-noun morphology, carries opposite senses with no bridging context — Quran-internal evidence of two lexemes on one skeleton."
+   }
+  },
+  {
+   "word_ref": "69:7:1:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "سَخَّرَهَا عَلَيْهِمْ — Form II subjection governing عَلَى (against ʿĀd, punitive), the strongest counter to reading Class B as inherently beneficial. Refines rather than breaks B: the core is command-directed deployment, which may be turned for or against people.",
+   "evidence_basis": {
+    "kind": "SYNTACTIC_FRAME_VARIATION",
+    "statement": "سَخَّرَ takes عَلَى (adversative, 69:7) as well as the default لـ (benefactive), showing benefaction is a strong tendency of Class B, not part of its sense — an internal for/against boundary within B."
+   }
+  },
+  {
+   "word_ref": "9:79:15:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "سَخِرَ ٱللَّهُ مِنْهُمْ — God as agent (as in Class B) yet the sense is unmistakably min-governed derision-in-retribution, mirroring the preceding فَيَسْخَرُونَ مِنْهُمْ. Removes the tempting agent-based bridge to unity.",
+   "evidence_basis": {
+    "kind": "AGENT_INVARIANCE",
+    "statement": "With God as agent the sense still tracks form+syntax (Form I + مِن = derision), not the root or the agent, so a shared-agent bridge between Class A and Class B is not Quran-internally supported."
+   }
+  },
+  {
+   "word_ref": "23:110:2:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "سِخْرِيّ (kasra) — the Class-A member of the vocalic minimal pair; paired with تَضْحَكُونَ it fixes the derision sense that the su-vowel of 43:32 departs from.",
+   "evidence_basis": {
+    "kind": "VOCALIC_MINIMAL_PAIR",
+    "statement": "سِخْرِيّ (kasra: sixoriy~FA, 23:110/38:63, derision) vs سُخْرِيّ (damma: suxoriy~FA, 43:32, service) on one consonantal skeleton carries opposite senses with no bridging context."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL",
+  "rationale": "The root is delivered as an unresolved multi-class result. The persisted resistance is the seam token 43:32 (سُخْرِيّ), which blocks both a strict two-root split and a unified nucleus, supported by the sixriyy/suxriyy vocalic minimal pair; the adversarial boundaries 69:7 (عَلَى-frame) and 9:79 (God as agent) close off the benefaction and agent bridges that a unity account would need."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A single Quran-internal occurrence that actually bridges the two classes — either a Form I/X/derision-noun token that demonstrably means command-directed subjection, or a Form II token that demonstrably means person-directed mockery, or a verse that plays on both senses at once — would collapse the partition and re-open a unified-nucleus (ROOT_GENERALIZATION) claim in place of the current class-only partition.",
+  "search_location": "The seam noun 43:32:20:1 (سُخْرِيّ) and its homograph partners 23:110:2:1 / 38:63:2:1; the God-as-agent derision token 9:79:15:1; and any Form II token read against its لـ/عَلَى/accusative frame.",
+  "verification_method": "Test each candidate against its qac_verb_form (Form I/X vs II), its syntactic government (مِن vs لـ/عَلَى/acc), and its canonical vocalization (sixoriy~FA vs suxoriy~FA), confirming whether sense actually crosses the frame rather than being fitted to it.",
+  "confounder_control": "Do not treat the shared bare-noun morphology of سِخْرِيّ and سُخْرِيّ as semantic identity (morphology != meaning); do not let a non-distinctive abstraction ('subordinate to the agent's will') that also fits ذلّ/قهر/خضع count as a bridge; exclude external lexica/tafsir/classical derivation as authority.",
+  "failure_consequence": "If no bridging occurrence is found, the unified-nucleus claim stays UNRESOLVED and the deliverable remains a two-class partition (derision vs subjection) with 43:32 as the resistant seam."
+ },
+ "falsification_status": "NOT_REQUIRED",
+ "reopen_conditions": [
+  "A Form II token (qac_verb_form=II) is shown to carry person-directed derision, or a Form I/X token (qac_verb_form=null/X) is shown to carry command-directed subjection, breaking the complementary distribution of the مِن vs لـ/عَلَى frames.",
+  "New evidence reinterprets the seam noun سُخْرِيّ (43:32:20:1) or its homographs سِخْرِيّ (23:110:2:1, 38:63:2:1) such that the su-/si- vocalic distinction no longer separates service from derision, forcing reconsideration of a single nucleus.",
+  "A verse is identified in which سخر simultaneously activates both the derision and the subjection senses (a genuine dual-sense token), supplying the internal bridge currently absent."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "11:38:9:1",
+  "2:212:6:2",
+  "49:11:5:1",
+  "6:10:8:1",
+  "13:2:12:2",
+  "14:32:16:2",
+  "16:14:3:1",
+  "45:12:3:1",
+  "7:54:23:1",
+  "2:164:37:2"
+ ],
+ "counterevidence_refs": [
+  "43:32:20:1",
+  "23:110:2:1",
+  "38:63:2:1",
+  "69:7:1:1",
+  "9:79:15:1"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "sxr-unity-nucleus-2026-09",
+  "verdict": "NOT_REQUIRED",
+  "falsifiable": true,
+  "distinctiveness_ok": false,
+  "failing_occurrences": [
+   "43:32:20:1",
+   "9:79:15:1",
+   "69:7:1:1"
+  ],
+  "tested_material_clusters": [
+   "A_derision_verbal",
+   "B_subjection_formII",
+   "A_derision_nominal",
+   "B_subjection_nominal_pivot"
+  ],
+  "status_rationale": "No unified root nucleus was advanced as a positive claim, so there is nothing to adversarially refute at root level; falsification is not required for an unresolved-class-only result. The only candidate unity account is non-distinctive (distinctiveness_ok=false — it also fits ذلّ/قهر/خضع) and unattested by any bridging occurrence, and it is contradicted by the seam token 43:32 and the boundary tokens 9:79 (agent bridge) and 69:7 (benefaction bridge)."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "sxr: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "sxr: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "sxr: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "sxr: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "sxr: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "sxr: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "sxr: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "sxr: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

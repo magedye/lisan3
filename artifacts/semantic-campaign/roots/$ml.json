@@ -1,0 +1,943 @@
+{
+ "root_arabic": "ش م ل",
+ "root_buckwalter": "$ml",
+ "root_id": "$ml",
+ "artifact_name": "$ml.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave3",
+ "occurrences": 12,
+ "frozen_candidate_root_contribution": null,
+ "internal_discovery": {
+  "candidate_root_contribution": null,
+  "plain_explanation": "Within the Quran the root ش م ل appears as two morphologically and semantically distinct, internally coherent classes that share no Quran-internal bridge. (1) The nominal شِمَال/شَمَائِل (10/12) means 'the left' — a lateral side/hand/direction/group defined relationally as the counterpart of يَمِين (the right); in 7 of 10 tokens يمين/أيمان stands in the same verse (34:15, 18:17, 18:18, 50:17, 70:37, 16:48, 7:17), and the other 3 (56:41 ×2, 69:25) sit in a discourse built on the same right/left pair. (2) The Form VIII verb ٱشْتَمَلَتْ عَلَىٰ (2/12; 6:143, 6:144, one repeated formula) means 'to enclose/contain/comprise' — comprehensive interior containment (what the wombs enclose), with no directional or lateral content. The two classes not only fail to bridge but pull in opposite directions: the noun is partitive/contrastive (this side, not the other) while the verb is comprehensive/totalizing (all the contents within). No occurrence activates a shared 'covering/wrapping-to-a-side' nucleus; any nucleus broad enough to span both is a vague abstraction unsupported Quran-internally and reliant on barred external etymology. The honest result is UNRESOLVED at root level: two unbridged lexicalized classes, not one meaning.",
+  "layer_separation_note": "شِمَال does NOT carry inherent moral valence — it is morally neutral in 16:48 (shadows), 18:17/18:18 (cave orientation), 34:15 (a site of divine blessing, gardens), 50:17/70:37 (positions), 7:17 (one of four directions); the doom-association appears only where eschatological context assigns fate by side (56:41 أصحاب الشمال; 69:25 record in the left hand). شِمَال does NOT entail 'north', 'wind', or 'garment/wrapping' anywhere in the packet. The plural شَمَائِل adds only number (physical 'left sides'), not a separate sense or 'character/traits'. ٱشْتَمَلَ does NOT entail direction, laterality, or a right/left axis; and the partitive one-of-two-sides sense of شِمَال does NOT entail comprehensive enclosure. The root is not productive as a live meaning-generator here: 10/12 are one frozen directional noun and the verb is confined to a single repeated formula (6:143≈6:144).",
+  "presence": {
+   "occurrences_total": 12,
+   "occurrences_checked": 12,
+   "occurrences_consistent": 8,
+   "inconsistent_refs": [
+    "34:15:10:2",
+    "50:17:7:2",
+    "6:143:15:1",
+    "6:144:13:1"
+   ]
+  },
+  "strongest_counterexample": "6:143:15:1 / 6:144:13:1 «أَمَّا ٱشْتَمَلَتْ عَلَيْهِ أَرْحَامُ ٱلْأُنثَيَيْنِ» is pure comprehensive containment with no lateral 'left' axis, while 34:15:10:2 «جَنَّتَانِ عَن يَمِينٍ وَشِمَالٍ» and 50:17:7:2 «عَنِ ٱلْيَمِينِ وَعَنِ ٱلشِّمَالِ» are 'one of two opposed sides' with no containment — the two classes pull in opposite directions (partitive vs comprehensive) and neither reading transfers across the boundary, disproving any single unified nucleus.",
+  "strongest_competitor": "A single-nucleus reading 'comprehensive covering/enveloping-to-a-side', from which both 'the left (the wrapped/other side)' and 'the womb encloses' would flow (the classical شملة-garment / شمال etymological bridge). Rejected on two Quran-internal grounds: (a) it depends on external lexical priors barred by the source policy — the Quran never uses شمال for wrapping/garment and never uses ٱشتمل for 'left'; (b) the covering/enveloping sense is nowhere activated in the 10 nominal tokens, which behave purely as the يمين-opposed directional term, and 7:17's four-direction enumeration reinforces 'one discrete side', not encompassment. No bridging occurrence licenses the unity.",
+  "competing_hypothesis": "A single-nucleus reading 'comprehensive covering/enveloping-to-a-side', from which both 'the left (the wrapped/other side)' and 'the womb encloses' would flow (the classical شملة-garment / شمال etymological bridge). Rejected on two Quran-internal grounds: (a) it depends on external lexical priors barred by the source policy — the Quran never uses شمال for wrapping/garment and never uses ٱشتمل for 'left'; (b) the covering/enveloping sense is nowhere activated in the 10 nominal tokens, which behave purely as the يمين-opposed directional term, and 7:17's four-direction enumeration reinforces 'one discrete side', not encompassment. No bridging occurrence licenses the unity.",
+  "unresolved_cases": [],
+  "result": "UNRESOLVED",
+  "result_strength": "UNRESOLVED",
+  "rationale": "All three independent analyses (Lens A bottom-up, Lens B, adversary Lens C) converge: two morphologically distinct classes (N=10 with qac_verb_form null; V(VIII)=2) with zero collocational, contextual, or morphological overlap and no Quran-internal bridge. Each class is internally clean (10/10 directional 'left'; 2/2 'enclose/contain'), but the root-level nucleus is the point of failure. Per contract, when two+ senses have no Quran-internal bridge, choose UNRESOLVED rather than forcing one nucleus; a vague unifying abstraction that fits everything is disallowed. The adversary additionally shows the classes are not merely non-bridging but semantically opposed (partitive vs comprehensive), which is fatal to unification. Because the honest root result is 'no unified nucleus / two unbridged lexicalized classes', result_strength=UNRESOLVED with LOCAL scope and UNRESOLVED_CLASS_ONLY kind.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "N_left_directional",
+     "where": {
+      "qac_pos": [
+       "N"
+      ],
+      "qac_verb_form": [
+       null
+      ]
+     },
+     "occurrence_count_expected": 10,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Nominal شِمَال/شَمَائِل = 'the left' — a lateral side/hand/direction/group, semantically exhausted by its role as the left pole of the يَمِين/شِمَال binary; morally neutral in itself, with any ominous valence supplied by eschatological context.",
+     "classification_rationale": "All 10 tokens are the fixed antonym of يمين; 7 carry يمين/أيمان in the same verse (34:15, 18:17, 18:18, 50:17, 70:37, 16:48, 7:17) and the remaining 3 (56:41×2, 69:25) sit in a right/left discourse. The plural شَمَائِل adds only number, not a new sense.",
+     "supporting_evidence_note": "Internally 10/10 consistent as 'left, one of two opposed lateral sides'; neutral in 16:48/18:17/18:18/34:15/50:17/70:37/7:17, contextually negative only at 56:41 and 69:25.",
+     "counterevidence": [
+      "6:143:15:1",
+      "6:144:13:1"
+     ]
+    },
+    {
+     "cluster_id": "V8_enclose_contain",
+     "where": {
+      "qac_pos": [
+       "V"
+      ],
+      "qac_verb_form": [
+       "VIII"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Form VIII ٱشْتَمَلَ عَلَىٰ = 'to enclose/contain/comprise' — comprehensive interior containment governed by عَلَى, with no directional or lateral content.",
+     "classification_rationale": "Both tokens are the identical repeated formula «أَمَّا ٱشْتَمَلَتْ عَلَيْهِ أَرْحَامُ ٱلْأُنثَيَيْنِ» in the same Sūrat al-Anʿām livestock polemic; the verb takes عَلَى + a contained object (what the womb closes over). No right/left axis.",
+     "supporting_evidence_note": "Internally 2/2 consistent as 'enclose/contain'; attested only in this single formulaic construction across one pericope (6:143–144), which independently would cap it at REPRESENTATIVE even in isolation.",
+     "counterevidence": [
+      "34:15:10:2",
+      "50:17:7:2"
+     ]
+    }
+   ],
+   "reconciliation": [
+    {
+     "word_ref": "6:143:15:1",
+     "final": "RESISTANT",
+     "rationale": "Class-internally consistent, but at root level it is the seam that resists the dominant directional nucleus; recorded RESISTANT to represent the unbridged split."
+    },
+    {
+     "word_ref": "6:144:13:1",
+     "final": "RESISTANT",
+     "rationale": "Same enclosure formula; recorded RESISTANT as the persisting adversarial seam against unification."
+    },
+    {
+     "word_ref": "34:15:10:2",
+     "final": "RESISTANT",
+     "rationale": "Its partitive one-of-two-sides sense resists the containment class; recorded RESISTANT to represent the reciprocal non-bridge."
+    },
+    {
+     "word_ref": "50:17:7:2",
+     "final": "RESISTANT",
+     "rationale": "Discrete lateral side opposed to the right; resists any enclosure reading and marks the seam from the directional side."
+    }
+   ]
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "$ml",
+  "verdict": "NOT_APPLICABLE_UNRESOLVED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": false,
+  "falsifiable": true,
+  "notes": "No unified root-level claim is asserted (candidate_root_contribution=null), so root-level falsification is NOT_REQUIRED. The adversarial pass instead confirmed the absence of a bridge: attempts to derive one class from the other fail bidirectionally (6:143/6:144 vs 34:15/50:17), and the only unifying account relies on barred external etymology."
+ },
+ "coverage_validation": {
+  "root": "$ml",
+  "expected_count": 12,
+  "researched_count": 12,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [
+   "34:15:10:2",
+   "50:17:7:2",
+   "6:143:15:1",
+   "6:144:13:1"
+  ],
+  "unresolved_visible": [
+   "34:15:10:2",
+   "50:17:7:2",
+   "6:143:15:1",
+   "6:144:13:1"
+  ]
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "16:48:13:3",
+   "disposition": "CONSISTENT",
+   "note": "All 10 tokens are the fixed antonym of يمين; 7 carry يمين/أيمان in the same verse (34:15, 18:17, 18:18, 50:17, 70:37, 16:48, 7:17) and the remaining 3 (56:41×2, 69:25) sit in a right/left discourse. The plural شَمَائِل adds only number, not a new sense.",
+   "coverage_cluster_id": "N_left_directional",
+   "candidate_semantic_interpretation": "Nominal شِمَال/شَمَائِل = 'the left' — a lateral side/hand/direction/group, semantically exhausted by its role as the left pole of the يَمِين/شِمَال binary; morally neutral in itself, with any ominous valence supplied by eschatological context.",
+   "cluster_supporting_evidence": "Internally 10/10 consistent as 'left, one of two opposed lateral sides'; neutral in 16:48/18:17/18:18/34:15/50:17/70:37/7:17, contextually negative only at 56:41 and 69:25.",
+   "counterevidence": [
+    "6:143:15:1",
+    "6:144:13:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 10 tokens are the fixed antonym of يمين; 7 carry يمين/أيمان in the same verse (34:15, 18:17, 18:18, 50:17, 70:37, 16:48, 7:17) and the remaining 3 (56:41×2, 69:25) sit in a right/left discourse. The plural شَمَائِل adds only number, not a new sense.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "16:48",
+     "verse_text": "أَوَلَمْ يَرَوْا۟ إِلَىٰ مَا خَلَقَ ٱللَّهُ مِن شَىْءٍ يَتَفَيَّؤُا۟ ظِلَٰلُهُۥ عَنِ ٱلْيَمِينِ وَٱلشَّمَآئِلِ سُجَّدًا لِّلَّهِ وَهُمْ دَٰخِرُونَ"
+    }
+   ],
+   "root_arabic": "ش م ل",
+   "root_buckwalter": "$ml",
+   "root_id": "$ml",
+   "artifact_name": "$ml.json",
+   "verse_ref": "16:48",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "$~amaA^}ili",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَوَلَمْ يَرَوْا۟ إِلَىٰ مَا خَلَقَ ٱللَّهُ مِن شَىْءٍ يَتَفَيَّؤُا۟ ظِلَٰلُهُۥ عَنِ ٱلْيَمِينِ وَٱلشَّمَآئِلِ سُجَّدًا لِّلَّهِ وَهُمْ دَٰخِرُونَ"
+  },
+  {
+   "word_ref": "18:17:14:2",
+   "disposition": "CONSISTENT",
+   "note": "All 10 tokens are the fixed antonym of يمين; 7 carry يمين/أيمان in the same verse (34:15, 18:17, 18:18, 50:17, 70:37, 16:48, 7:17) and the remaining 3 (56:41×2, 69:25) sit in a right/left discourse. The plural شَمَائِل adds only number, not a new sense.",
+   "coverage_cluster_id": "N_left_directional",
+   "candidate_semantic_interpretation": "Nominal شِمَال/شَمَائِل = 'the left' — a lateral side/hand/direction/group, semantically exhausted by its role as the left pole of the يَمِين/شِمَال binary; morally neutral in itself, with any ominous valence supplied by eschatological context.",
+   "cluster_supporting_evidence": "Internally 10/10 consistent as 'left, one of two opposed lateral sides'; neutral in 16:48/18:17/18:18/34:15/50:17/70:37/7:17, contextually negative only at 56:41 and 69:25.",
+   "counterevidence": [
+    "6:143:15:1",
+    "6:144:13:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 10 tokens are the fixed antonym of يمين; 7 carry يمين/أيمان in the same verse (34:15, 18:17, 18:18, 50:17, 70:37, 16:48, 7:17) and the remaining 3 (56:41×2, 69:25) sit in a right/left discourse. The plural شَمَائِل adds only number, not a new sense.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "18:17",
+     "verse_text": "وَتَرَى ٱلشَّمْسَ إِذَا طَلَعَت تَّزَٰوَرُ عَن كَهْفِهِمْ ذَاتَ ٱلْيَمِينِ وَإِذَا غَرَبَت تَّقْرِضُهُمْ ذَاتَ ٱلشِّمَالِ وَهُمْ فِى فَجْوَةٍ مِّنْهُ ذَٰلِكَ مِنْ ءَايَٰتِ ٱللَّهِ مَن يَهْدِ ٱللَّهُ فَهُوَ ٱلْمُهْتَدِ وَمَن يُضْلِلْ فَلَن تَجِدَ لَهُۥ وَلِيًّا مُّرْشِدًا"
+    }
+   ],
+   "root_arabic": "ش م ل",
+   "root_buckwalter": "$ml",
+   "root_id": "$ml",
+   "artifact_name": "$ml.json",
+   "verse_ref": "18:17",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "$~imaAli",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَتَرَى ٱلشَّمْسَ إِذَا طَلَعَت تَّزَٰوَرُ عَن كَهْفِهِمْ ذَاتَ ٱلْيَمِينِ وَإِذَا غَرَبَت تَّقْرِضُهُمْ ذَاتَ ٱلشِّمَالِ وَهُمْ فِى فَجْوَةٍ مِّنْهُ ذَٰلِكَ مِنْ ءَايَٰتِ ٱللَّهِ مَن يَهْدِ ٱللَّهُ فَهُوَ ٱلْمُهْتَدِ وَمَن يُضْلِلْ فَلَن تَجِدَ لَهُۥ وَلِيًّا مُّرْشِدًا"
+  },
+  {
+   "word_ref": "18:18:9:2",
+   "disposition": "CONSISTENT",
+   "note": "All 10 tokens are the fixed antonym of يمين; 7 carry يمين/أيمان in the same verse (34:15, 18:17, 18:18, 50:17, 70:37, 16:48, 7:17) and the remaining 3 (56:41×2, 69:25) sit in a right/left discourse. The plural شَمَائِل adds only number, not a new sense.",
+   "coverage_cluster_id": "N_left_directional",
+   "candidate_semantic_interpretation": "Nominal شِمَال/شَمَائِل = 'the left' — a lateral side/hand/direction/group, semantically exhausted by its role as the left pole of the يَمِين/شِمَال binary; morally neutral in itself, with any ominous valence supplied by eschatological context.",
+   "cluster_supporting_evidence": "Internally 10/10 consistent as 'left, one of two opposed lateral sides'; neutral in 16:48/18:17/18:18/34:15/50:17/70:37/7:17, contextually negative only at 56:41 and 69:25.",
+   "counterevidence": [
+    "6:143:15:1",
+    "6:144:13:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 10 tokens are the fixed antonym of يمين; 7 carry يمين/أيمان in the same verse (34:15, 18:17, 18:18, 50:17, 70:37, 16:48, 7:17) and the remaining 3 (56:41×2, 69:25) sit in a right/left discourse. The plural شَمَائِل adds only number, not a new sense.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "18:18",
+     "verse_text": "وَتَحْسَبُهُمْ أَيْقَاظًا وَهُمْ رُقُودٌ وَنُقَلِّبُهُمْ ذَاتَ ٱلْيَمِينِ وَذَاتَ ٱلشِّمَالِ وَكَلْبُهُم بَٰسِطٌ ذِرَاعَيْهِ بِٱلْوَصِيدِ لَوِ ٱطَّلَعْتَ عَلَيْهِمْ لَوَلَّيْتَ مِنْهُمْ فِرَارًا وَلَمُلِئْتَ مِنْهُمْ رُعْبًا"
+    }
+   ],
+   "root_arabic": "ش م ل",
+   "root_buckwalter": "$ml",
+   "root_id": "$ml",
+   "artifact_name": "$ml.json",
+   "verse_ref": "18:18",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "$~imaAli",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَتَحْسَبُهُمْ أَيْقَاظًا وَهُمْ رُقُودٌ وَنُقَلِّبُهُمْ ذَاتَ ٱلْيَمِينِ وَذَاتَ ٱلشِّمَالِ وَكَلْبُهُم بَٰسِطٌ ذِرَاعَيْهِ بِٱلْوَصِيدِ لَوِ ٱطَّلَعْتَ عَلَيْهِمْ لَوَلَّيْتَ مِنْهُمْ فِرَارًا وَلَمُلِئْتَ مِنْهُمْ رُعْبًا"
+  },
+  {
+   "word_ref": "34:15:10:2",
+   "disposition": "RESISTANT",
+   "note": "RESISTANT_SEAM: «جَنَّتَانِ عَن يَمِينٍ وَشِمَالٍ» names one of two opposed sides (partitive), which resists any 'enclose/comprise' account and cannot be folded into the containment class.",
+   "coverage_cluster_id": "N_left_directional",
+   "candidate_semantic_interpretation": "Nominal شِمَال/شَمَائِل = 'the left' — a lateral side/hand/direction/group, semantically exhausted by its role as the left pole of the يَمِين/شِمَال binary; morally neutral in itself, with any ominous valence supplied by eschatological context.",
+   "cluster_supporting_evidence": "Internally 10/10 consistent as 'left, one of two opposed lateral sides'; neutral in 16:48/18:17/18:18/34:15/50:17/70:37/7:17, contextually negative only at 56:41 and 69:25.",
+   "counterevidence": [
+    "6:143:15:1",
+    "6:144:13:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 10 tokens are the fixed antonym of يمين; 7 carry يمين/أيمان in the same verse (34:15, 18:17, 18:18, 50:17, 70:37, 16:48, 7:17) and the remaining 3 (56:41×2, 69:25) sit in a right/left discourse. The plural شَمَائِل adds only number, not a new sense.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "Its partitive one-of-two-sides sense resists the containment class; recorded RESISTANT to represent the reciprocal non-bridge.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "34:15:10:2",
+     "preliminary_disposition": "CONSISTENT",
+     "preliminary_note": "Clean within the directional 'left' class.",
+     "final_disposition": "RESISTANT",
+     "reconciliation_rationale": "Its partitive one-of-two-sides sense resists the containment class; recorded RESISTANT to represent the reciprocal non-bridge.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "34:15",
+     "verse_text": "لَقَدْ كَانَ لِسَبَإٍ فِى مَسْكَنِهِمْ ءَايَةٌ جَنَّتَانِ عَن يَمِينٍ وَشِمَالٍ كُلُوا۟ مِن رِّزْقِ رَبِّكُمْ وَٱشْكُرُوا۟ لَهُۥ بَلْدَةٌ طَيِّبَةٌ وَرَبٌّ غَفُورٌ"
+    }
+   ],
+   "root_arabic": "ش م ل",
+   "root_buckwalter": "$ml",
+   "root_id": "$ml",
+   "artifact_name": "$ml.json",
+   "verse_ref": "34:15",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "$imaAlK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لَقَدْ كَانَ لِسَبَإٍ فِى مَسْكَنِهِمْ ءَايَةٌ جَنَّتَانِ عَن يَمِينٍ وَشِمَالٍ كُلُوا۟ مِن رِّزْقِ رَبِّكُمْ وَٱشْكُرُوا۟ لَهُۥ بَلْدَةٌ طَيِّبَةٌ وَرَبٌّ غَفُورٌ",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "50:17:7:2",
+   "disposition": "RESISTANT",
+   "note": "RESISTANT_SEAM: «عَنِ ٱلْيَمِينِ وَعَنِ ٱلشِّمَالِ» is a discrete lateral side opposed to the right, semantically opposite to comprehensive containment; resists unification with ٱشتمل.",
+   "coverage_cluster_id": "N_left_directional",
+   "candidate_semantic_interpretation": "Nominal شِمَال/شَمَائِل = 'the left' — a lateral side/hand/direction/group, semantically exhausted by its role as the left pole of the يَمِين/شِمَال binary; morally neutral in itself, with any ominous valence supplied by eschatological context.",
+   "cluster_supporting_evidence": "Internally 10/10 consistent as 'left, one of two opposed lateral sides'; neutral in 16:48/18:17/18:18/34:15/50:17/70:37/7:17, contextually negative only at 56:41 and 69:25.",
+   "counterevidence": [
+    "6:143:15:1",
+    "6:144:13:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 10 tokens are the fixed antonym of يمين; 7 carry يمين/أيمان in the same verse (34:15, 18:17, 18:18, 50:17, 70:37, 16:48, 7:17) and the remaining 3 (56:41×2, 69:25) sit in a right/left discourse. The plural شَمَائِل adds only number, not a new sense.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "Discrete lateral side opposed to the right; resists any enclosure reading and marks the seam from the directional side.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "50:17:7:2",
+     "preliminary_disposition": "CONSISTENT",
+     "preliminary_note": "Clean within the directional 'left' class.",
+     "final_disposition": "RESISTANT",
+     "reconciliation_rationale": "Discrete lateral side opposed to the right; resists any enclosure reading and marks the seam from the directional side.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "50:17",
+     "verse_text": "إِذْ يَتَلَقَّى ٱلْمُتَلَقِّيَانِ عَنِ ٱلْيَمِينِ وَعَنِ ٱلشِّمَالِ قَعِيدٌ"
+    }
+   ],
+   "root_arabic": "ش م ل",
+   "root_buckwalter": "$ml",
+   "root_id": "$ml",
+   "artifact_name": "$ml.json",
+   "verse_ref": "50:17",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "$~imaAli",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِذْ يَتَلَقَّى ٱلْمُتَلَقِّيَانِ عَنِ ٱلْيَمِينِ وَعَنِ ٱلشِّمَالِ قَعِيدٌ",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "56:41:2:2",
+   "disposition": "CONSISTENT",
+   "note": "All 10 tokens are the fixed antonym of يمين; 7 carry يمين/أيمان in the same verse (34:15, 18:17, 18:18, 50:17, 70:37, 16:48, 7:17) and the remaining 3 (56:41×2, 69:25) sit in a right/left discourse. The plural شَمَائِل adds only number, not a new sense.",
+   "coverage_cluster_id": "N_left_directional",
+   "candidate_semantic_interpretation": "Nominal شِمَال/شَمَائِل = 'the left' — a lateral side/hand/direction/group, semantically exhausted by its role as the left pole of the يَمِين/شِمَال binary; morally neutral in itself, with any ominous valence supplied by eschatological context.",
+   "cluster_supporting_evidence": "Internally 10/10 consistent as 'left, one of two opposed lateral sides'; neutral in 16:48/18:17/18:18/34:15/50:17/70:37/7:17, contextually negative only at 56:41 and 69:25.",
+   "counterevidence": [
+    "6:143:15:1",
+    "6:144:13:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 10 tokens are the fixed antonym of يمين; 7 carry يمين/أيمان in the same verse (34:15, 18:17, 18:18, 50:17, 70:37, 16:48, 7:17) and the remaining 3 (56:41×2, 69:25) sit in a right/left discourse. The plural شَمَائِل adds only number, not a new sense.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "56:41",
+     "verse_text": "وَأَصْحَٰبُ ٱلشِّمَالِ مَآ أَصْحَٰبُ ٱلشِّمَالِ"
+    }
+   ],
+   "root_arabic": "ش م ل",
+   "root_buckwalter": "$ml",
+   "root_id": "$ml",
+   "artifact_name": "$ml.json",
+   "verse_ref": "56:41",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "$~imaAli",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَأَصْحَٰبُ ٱلشِّمَالِ مَآ أَصْحَٰبُ ٱلشِّمَالِ"
+  },
+  {
+   "word_ref": "56:41:5:2",
+   "disposition": "CONSISTENT",
+   "note": "All 10 tokens are the fixed antonym of يمين; 7 carry يمين/أيمان in the same verse (34:15, 18:17, 18:18, 50:17, 70:37, 16:48, 7:17) and the remaining 3 (56:41×2, 69:25) sit in a right/left discourse. The plural شَمَائِل adds only number, not a new sense.",
+   "coverage_cluster_id": "N_left_directional",
+   "candidate_semantic_interpretation": "Nominal شِمَال/شَمَائِل = 'the left' — a lateral side/hand/direction/group, semantically exhausted by its role as the left pole of the يَمِين/شِمَال binary; morally neutral in itself, with any ominous valence supplied by eschatological context.",
+   "cluster_supporting_evidence": "Internally 10/10 consistent as 'left, one of two opposed lateral sides'; neutral in 16:48/18:17/18:18/34:15/50:17/70:37/7:17, contextually negative only at 56:41 and 69:25.",
+   "counterevidence": [
+    "6:143:15:1",
+    "6:144:13:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 10 tokens are the fixed antonym of يمين; 7 carry يمين/أيمان in the same verse (34:15, 18:17, 18:18, 50:17, 70:37, 16:48, 7:17) and the remaining 3 (56:41×2, 69:25) sit in a right/left discourse. The plural شَمَائِل adds only number, not a new sense.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "56:41",
+     "verse_text": "وَأَصْحَٰبُ ٱلشِّمَالِ مَآ أَصْحَٰبُ ٱلشِّمَالِ"
+    }
+   ],
+   "root_arabic": "ش م ل",
+   "root_buckwalter": "$ml",
+   "root_id": "$ml",
+   "artifact_name": "$ml.json",
+   "verse_ref": "56:41",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "$~imaAli",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَأَصْحَٰبُ ٱلشِّمَالِ مَآ أَصْحَٰبُ ٱلشِّمَالِ"
+  },
+  {
+   "word_ref": "69:25:5:2",
+   "disposition": "CONSISTENT",
+   "note": "All 10 tokens are the fixed antonym of يمين; 7 carry يمين/أيمان in the same verse (34:15, 18:17, 18:18, 50:17, 70:37, 16:48, 7:17) and the remaining 3 (56:41×2, 69:25) sit in a right/left discourse. The plural شَمَائِل adds only number, not a new sense.",
+   "coverage_cluster_id": "N_left_directional",
+   "candidate_semantic_interpretation": "Nominal شِمَال/شَمَائِل = 'the left' — a lateral side/hand/direction/group, semantically exhausted by its role as the left pole of the يَمِين/شِمَال binary; morally neutral in itself, with any ominous valence supplied by eschatological context.",
+   "cluster_supporting_evidence": "Internally 10/10 consistent as 'left, one of two opposed lateral sides'; neutral in 16:48/18:17/18:18/34:15/50:17/70:37/7:17, contextually negative only at 56:41 and 69:25.",
+   "counterevidence": [
+    "6:143:15:1",
+    "6:144:13:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 10 tokens are the fixed antonym of يمين; 7 carry يمين/أيمان in the same verse (34:15, 18:17, 18:18, 50:17, 70:37, 16:48, 7:17) and the remaining 3 (56:41×2, 69:25) sit in a right/left discourse. The plural شَمَائِل adds only number, not a new sense.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "69:25",
+     "verse_text": "وَأَمَّا مَنْ أُوتِىَ كِتَٰبَهُۥ بِشِمَالِهِۦ فَيَقُولُ يَٰلَيْتَنِى لَمْ أُوتَ كِتَٰبِيَهْ"
+    }
+   ],
+   "root_arabic": "ش م ل",
+   "root_buckwalter": "$ml",
+   "root_id": "$ml",
+   "artifact_name": "$ml.json",
+   "verse_ref": "69:25",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "$imaAli",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَأَمَّا مَنْ أُوتِىَ كِتَٰبَهُۥ بِشِمَالِهِۦ فَيَقُولُ يَٰلَيْتَنِى لَمْ أُوتَ كِتَٰبِيَهْ"
+  },
+  {
+   "word_ref": "6:143:15:1",
+   "disposition": "RESISTANT",
+   "note": "RESISTANT_SEAM: «أَمَّا ٱشْتَمَلَتْ عَلَيْهِ أَرْحَامُ ٱلْأُنثَيَيْنِ» is comprehensive containment and irreducible to the dominant directional 'left' class; no Quran-internal bridge links it to شِمَال.",
+   "coverage_cluster_id": "V8_enclose_contain",
+   "candidate_semantic_interpretation": "Form VIII ٱشْتَمَلَ عَلَىٰ = 'to enclose/contain/comprise' — comprehensive interior containment governed by عَلَى, with no directional or lateral content.",
+   "cluster_supporting_evidence": "Internally 2/2 consistent as 'enclose/contain'; attested only in this single formulaic construction across one pericope (6:143–144), which independently would cap it at REPRESENTATIVE even in isolation.",
+   "counterevidence": [
+    "34:15:10:2",
+    "50:17:7:2"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Both tokens are the identical repeated formula «أَمَّا ٱشْتَمَلَتْ عَلَيْهِ أَرْحَامُ ٱلْأُنثَيَيْنِ» in the same Sūrat al-Anʿām livestock polemic; the verb takes عَلَى + a contained object (what the womb closes over). No right/left axis.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "Class-internally consistent, but at root level it is the seam that resists the dominant directional nucleus; recorded RESISTANT to represent the unbridged split.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "6:143:15:1",
+     "preliminary_disposition": "CONSISTENT",
+     "preliminary_note": "Clean within the V(VIII) enclose/contain class.",
+     "final_disposition": "RESISTANT",
+     "reconciliation_rationale": "Class-internally consistent, but at root level it is the seam that resists the dominant directional nucleus; recorded RESISTANT to represent the unbridged split.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:143",
+     "verse_text": "ثَمَٰنِيَةَ أَزْوَٰجٍ مِّنَ ٱلضَّأْنِ ٱثْنَيْنِ وَمِنَ ٱلْمَعْزِ ٱثْنَيْنِ قُلْ ءَآلذَّكَرَيْنِ حَرَّمَ أَمِ ٱلْأُنثَيَيْنِ أَمَّا ٱشْتَمَلَتْ عَلَيْهِ أَرْحَامُ ٱلْأُنثَيَيْنِ نَبِّـُٔونِى بِعِلْمٍ إِن كُنتُمْ صَٰدِقِينَ"
+    }
+   ],
+   "root_arabic": "ش م ل",
+   "root_buckwalter": "$ml",
+   "root_id": "$ml",
+   "artifact_name": "$ml.json",
+   "verse_ref": "6:143",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{$otamalato",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ثَمَٰنِيَةَ أَزْوَٰجٍ مِّنَ ٱلضَّأْنِ ٱثْنَيْنِ وَمِنَ ٱلْمَعْزِ ٱثْنَيْنِ قُلْ ءَآلذَّكَرَيْنِ حَرَّمَ أَمِ ٱلْأُنثَيَيْنِ أَمَّا ٱشْتَمَلَتْ عَلَيْهِ أَرْحَامُ ٱلْأُنثَيَيْنِ نَبِّـُٔونِى بِعِلْمٍ إِن كُنتُمْ صَٰدِقِينَ",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "6:144:13:1",
+   "disposition": "RESISTANT",
+   "note": "RESISTANT_SEAM: identical enclosure formula; resists assimilation to the 'left' class and marks the second, unbridged lexical class.",
+   "coverage_cluster_id": "V8_enclose_contain",
+   "candidate_semantic_interpretation": "Form VIII ٱشْتَمَلَ عَلَىٰ = 'to enclose/contain/comprise' — comprehensive interior containment governed by عَلَى, with no directional or lateral content.",
+   "cluster_supporting_evidence": "Internally 2/2 consistent as 'enclose/contain'; attested only in this single formulaic construction across one pericope (6:143–144), which independently would cap it at REPRESENTATIVE even in isolation.",
+   "counterevidence": [
+    "34:15:10:2",
+    "50:17:7:2"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Both tokens are the identical repeated formula «أَمَّا ٱشْتَمَلَتْ عَلَيْهِ أَرْحَامُ ٱلْأُنثَيَيْنِ» in the same Sūrat al-Anʿām livestock polemic; the verb takes عَلَى + a contained object (what the womb closes over). No right/left axis.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "Same enclosure formula; recorded RESISTANT as the persisting adversarial seam against unification.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "6:144:13:1",
+     "preliminary_disposition": "CONSISTENT",
+     "preliminary_note": "Clean within the V(VIII) enclose/contain class.",
+     "final_disposition": "RESISTANT",
+     "reconciliation_rationale": "Same enclosure formula; recorded RESISTANT as the persisting adversarial seam against unification.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:144",
+     "verse_text": "وَمِنَ ٱلْإِبِلِ ٱثْنَيْنِ وَمِنَ ٱلْبَقَرِ ٱثْنَيْنِ قُلْ ءَآلذَّكَرَيْنِ حَرَّمَ أَمِ ٱلْأُنثَيَيْنِ أَمَّا ٱشْتَمَلَتْ عَلَيْهِ أَرْحَامُ ٱلْأُنثَيَيْنِ أَمْ كُنتُمْ شُهَدَآءَ إِذْ وَصَّىٰكُمُ ٱللَّهُ بِهَٰذَا فَمَنْ أَظْلَمُ مِمَّنِ ٱفْتَرَىٰ عَلَى ٱللَّهِ كَذِبًا لِّيُضِلَّ ٱلنَّاسَ بِغَيْرِ عِلْمٍ إِنَّ ٱللَّهَ لَا يَهْدِى ٱلْقَوْمَ ٱلظَّٰلِمِينَ"
+    }
+   ],
+   "root_arabic": "ش م ل",
+   "root_buckwalter": "$ml",
+   "root_id": "$ml",
+   "artifact_name": "$ml.json",
+   "verse_ref": "6:144",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{$otamalato",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَمِنَ ٱلْإِبِلِ ٱثْنَيْنِ وَمِنَ ٱلْبَقَرِ ٱثْنَيْنِ قُلْ ءَآلذَّكَرَيْنِ حَرَّمَ أَمِ ٱلْأُنثَيَيْنِ أَمَّا ٱشْتَمَلَتْ عَلَيْهِ أَرْحَامُ ٱلْأُنثَيَيْنِ أَمْ كُنتُمْ شُهَدَآءَ إِذْ وَصَّىٰكُمُ ٱللَّهُ بِهَٰذَا فَمَنْ أَظْلَمُ مِمَّنِ ٱفْتَرَىٰ عَلَى ٱللَّهِ كَذِبًا لِّيُضِلَّ ٱلنَّاسَ بِغَيْرِ عِلْمٍ إِنَّ ٱللَّهَ لَا يَهْدِى ٱلْقَوْمَ ٱلظَّٰلِمِينَ",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "70:37:4:2",
+   "disposition": "CONSISTENT",
+   "note": "All 10 tokens are the fixed antonym of يمين; 7 carry يمين/أيمان in the same verse (34:15, 18:17, 18:18, 50:17, 70:37, 16:48, 7:17) and the remaining 3 (56:41×2, 69:25) sit in a right/left discourse. The plural شَمَائِل adds only number, not a new sense.",
+   "coverage_cluster_id": "N_left_directional",
+   "candidate_semantic_interpretation": "Nominal شِمَال/شَمَائِل = 'the left' — a lateral side/hand/direction/group, semantically exhausted by its role as the left pole of the يَمِين/شِمَال binary; morally neutral in itself, with any ominous valence supplied by eschatological context.",
+   "cluster_supporting_evidence": "Internally 10/10 consistent as 'left, one of two opposed lateral sides'; neutral in 16:48/18:17/18:18/34:15/50:17/70:37/7:17, contextually negative only at 56:41 and 69:25.",
+   "counterevidence": [
+    "6:143:15:1",
+    "6:144:13:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 10 tokens are the fixed antonym of يمين; 7 carry يمين/أيمان in the same verse (34:15, 18:17, 18:18, 50:17, 70:37, 16:48, 7:17) and the remaining 3 (56:41×2, 69:25) sit in a right/left discourse. The plural شَمَائِل adds only number, not a new sense.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "70:37",
+     "verse_text": "عَنِ ٱلْيَمِينِ وَعَنِ ٱلشِّمَالِ عِزِينَ"
+    }
+   ],
+   "root_arabic": "ش م ل",
+   "root_buckwalter": "$ml",
+   "root_id": "$ml",
+   "artifact_name": "$ml.json",
+   "verse_ref": "70:37",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "$~imaAli",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "عَنِ ٱلْيَمِينِ وَعَنِ ٱلشِّمَالِ عِزِينَ"
+  },
+  {
+   "word_ref": "7:17:11:1",
+   "disposition": "CONSISTENT",
+   "note": "All 10 tokens are the fixed antonym of يمين; 7 carry يمين/أيمان in the same verse (34:15, 18:17, 18:18, 50:17, 70:37, 16:48, 7:17) and the remaining 3 (56:41×2, 69:25) sit in a right/left discourse. The plural شَمَائِل adds only number, not a new sense.",
+   "coverage_cluster_id": "N_left_directional",
+   "candidate_semantic_interpretation": "Nominal شِمَال/شَمَائِل = 'the left' — a lateral side/hand/direction/group, semantically exhausted by its role as the left pole of the يَمِين/شِمَال binary; morally neutral in itself, with any ominous valence supplied by eschatological context.",
+   "cluster_supporting_evidence": "Internally 10/10 consistent as 'left, one of two opposed lateral sides'; neutral in 16:48/18:17/18:18/34:15/50:17/70:37/7:17, contextually negative only at 56:41 and 69:25.",
+   "counterevidence": [
+    "6:143:15:1",
+    "6:144:13:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 10 tokens are the fixed antonym of يمين; 7 carry يمين/أيمان in the same verse (34:15, 18:17, 18:18, 50:17, 70:37, 16:48, 7:17) and the remaining 3 (56:41×2, 69:25) sit in a right/left discourse. The plural شَمَائِل adds only number, not a new sense.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:17",
+     "verse_text": "ثُمَّ لَـَٔاتِيَنَّهُم مِّنۢ بَيْنِ أَيْدِيهِمْ وَمِنْ خَلْفِهِمْ وَعَنْ أَيْمَٰنِهِمْ وَعَن شَمَآئِلِهِمْ وَلَا تَجِدُ أَكْثَرَهُمْ شَٰكِرِينَ"
+    }
+   ],
+   "root_arabic": "ش م ل",
+   "root_buckwalter": "$ml",
+   "root_id": "$ml",
+   "artifact_name": "$ml.json",
+   "verse_ref": "7:17",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "$amaA^}ili",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ثُمَّ لَـَٔاتِيَنَّهُم مِّنۢ بَيْنِ أَيْدِيهِمْ وَمِنْ خَلْفِهِمْ وَعَنْ أَيْمَٰنِهِمْ وَعَن شَمَآئِلِهِمْ وَلَا تَجِدُ أَكْثَرَهُمْ شَٰكِرِينَ"
+  }
+ ],
+ "resistant_deep_analysis": [
+  {
+   "word_ref": "34:15:10:2",
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 10 tokens are the fixed antonym of يمين; 7 carry يمين/أيمان in the same verse (34:15, 18:17, 18:18, 50:17, 70:37, 16:48, 7:17) and the remaining 3 (56:41×2, 69:25) sit in a right/left discourse. The plural شَمَائِل adds only number, not a new sense.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "Its partitive one-of-two-sides sense resists the containment class; recorded RESISTANT to represent the reciprocal non-bridge.",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "50:17:7:2",
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 10 tokens are the fixed antonym of يمين; 7 carry يمين/أيمان in the same verse (34:15, 18:17, 18:18, 50:17, 70:37, 16:48, 7:17) and the remaining 3 (56:41×2, 69:25) sit in a right/left discourse. The plural شَمَائِل adds only number, not a new sense.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "Discrete lateral side opposed to the right; resists any enclosure reading and marks the seam from the directional side.",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "6:143:15:1",
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Both tokens are the identical repeated formula «أَمَّا ٱشْتَمَلَتْ عَلَيْهِ أَرْحَامُ ٱلْأُنثَيَيْنِ» in the same Sūrat al-Anʿām livestock polemic; the verb takes عَلَى + a contained object (what the womb closes over). No right/left axis.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "Class-internally consistent, but at root level it is the seam that resists the dominant directional nucleus; recorded RESISTANT to represent the unbridged split.",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "6:144:13:1",
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Both tokens are the identical repeated formula «أَمَّا ٱشْتَمَلَتْ عَلَيْهِ أَرْحَامُ ٱلْأُنثَيَيْنِ» in the same Sūrat al-Anʿām livestock polemic; the verb takes عَلَى + a contained object (what the womb closes over). No right/left axis.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "Same enclosure formula; recorded RESISTANT as the persisting adversarial seam against unification.",
+   "deep_analysis": true
+  }
+ ],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "UNRESOLVED",
+ "result_strength": "UNRESOLVED",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Adversary Lens C independently attempted and failed to construct a Quran-internal unifying nucleus, corroborating Lenses A and B; all three agree on the unbridged two-class split.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "34:15:10:2",
+  "50:17:7:2",
+  "6:143:15:1",
+  "6:144:13:1"
+ ],
+ "unreconciled_count": 4,
+ "resistant_occurrences": [
+  "34:15:10:2",
+  "50:17:7:2",
+  "6:143:15:1",
+  "6:144:13:1"
+ ],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": null,
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "LOCAL",
+ "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
+ "layer_attribution": {
+  "occurrence_evidence": "12/12 occurrences read from Tanzil verse_text with QAC morphology: 10 nominal (شِمَال singular ×8: 18:17, 18:18, 34:15, 50:17, 56:41×2, 69:25, 70:37; شَمَائِل plural ×2: 16:48, 7:17) and 2 Form VIII verbs (6:143, 6:144).",
+  "derivation": "Two derivational shapes with no shared productive nucleus: a frozen فِعَال/فَعَائِل nominal (شِمَال/شَمَائِل) and a Form VIII verb (ٱشْتَمَلَ) confined to one repeated formula; morphology does not establish semantic identity across them.",
+  "lexical_class": "Class N = lexicalized directional noun 'left', the counterpart pole of يَمِين; Class V(VIII) = lexicalized verb 'enclose/contain/comprise'. Each is internally coherent; neither is Quran-internally reducible to the other.",
+  "contextual_relation": "The negative/eschatological valence at 56:41 (أصحاب الشمال) and 69:25 (record in the left hand) is supplied by contextual right/left sorting, NOT by the lexeme (neutral or blessed elsewhere, e.g. 34:15 gardens); this contextual valence must not be read into the root claim.",
+  "reconciliation": "Preliminary within-class CONSISTENT dispositions are retained for classification, while the four seam occurrences (6:143, 6:144, 34:15, 50:17) are finalized RESISTANT to represent the root-level non-bridge; the classes are not forced into one nucleus.",
+  "unresolved_resistance": "The root-level nucleus is UNRESOLVED: two unbridged, partly opposed (partitive vs comprehensive) lexicalized classes with no Quran-internal bridge; the only unification available depends on barred external etymology and is therefore rejected."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "6:143:15:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "Comprehensive interior containment (what the wombs enclose), with no lateral/left axis; irreducible to the directional class and unbridged to it.",
+   "evidence_basis": {
+    "kind": "CONSTRUCTION_CONTRAST",
+    "statement": "«أَمَّا ٱشْتَمَلَتْ عَلَيْهِ أَرْحَامُ ٱلْأُنثَيَيْنِ» is pure comprehensive containment with no lateral 'left' axis, and does not transfer to the directional class."
+   }
+  },
+  {
+   "word_ref": "6:144:13:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "Identical enclosure formula; second token of the containment class with no Quran-internal link to شِمَال.",
+   "evidence_basis": {
+    "kind": "CONSTRUCTION_CONTRAST",
+    "statement": "«أَمَّا ٱشْتَمَلَتْ عَلَيْهِ أَرْحَامُ ٱلْأُنثَيَيْنِ» is pure comprehensive containment with no lateral 'left' axis, and does not transfer to the directional class."
+   }
+  },
+  {
+   "word_ref": "34:15:10:2",
+   "role": "RESISTANT_SEAM",
+   "reason": "Partitive 'one of two opposed sides' that resists any enclose/comprise reading, blocking unification from the directional side.",
+   "evidence_basis": {
+    "kind": "CONSTRUCTION_CONTRAST",
+    "statement": "«جَنَّتَانِ عَن يَمِينٍ وَشِمَالٍ» is one of two opposed sides with no containment, and does not transfer to the enclosure class."
+   }
+  },
+  {
+   "word_ref": "50:17:7:2",
+   "role": "RESISTANT_SEAM",
+   "reason": "Discrete lateral side opposed to the right; semantically opposite to comprehensive containment.",
+   "evidence_basis": {
+    "kind": "CONSTRUCTION_CONTRAST",
+    "statement": "«عَنِ ٱلْيَمِينِ وَعَنِ ٱلشِّمَالِ» is one of two opposed sides with no containment, and does not transfer to the enclosure class."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL",
+  "rationale": "The root is genuinely unresolved: two internally coherent but unbridged (and in one respect semantically opposed) lexicalized classes. The seam occurrences — the two Form VIII containment tokens (6:143, 6:144) and the sharpest directional-partitive tokens (34:15, 50:17) — are recorded as persisting resistant material representing the mutual non-bridge that blocks any unified nucleus."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A Quran-internal occurrence that bridges the two classes — e.g. a nominal شِمَال/شَمَائِل token carrying an 'enclose/cover/comprise' nuance, or an ٱشتمل token carrying a left/right lateral sense — would demonstrate the missing bridge and overturn the UNRESOLVED multi-class partition in favor of a single nucleus.",
+  "search_location": "The 10 nominal tokens (esp. 7:17 four-direction enumeration and 16:48 shadows) for any 'enveloping/comprehending' reading, and the 2 Form VIII tokens (6:143, 6:144) for any lateral/directional reading.",
+  "verification_method": "Re-read each candidate's verse_text and QAC morphology (qac_pos, qac_verb_form, form) to check whether the alleged shared sense is actually activated by the syntax and collocation, not merely importable from external etymology.",
+  "confounder_control": "Exclude external lexicons, tafsir, translations, and the شملة-garment/north-wind etymology (barred by source policy); require the bridging sense to be forced by in-verse Quranic context, not assumed from shared root letters.",
+  "failure_consequence": "If no such bridging occurrence exists, the two-class partition stands and the root remains UNRESOLVED with no unified root contribution; if one is found, reopen and re-grade toward a single nucleus."
+ },
+ "falsification_status": "NOT_REQUIRED",
+ "reopen_conditions": [
+  "A nominal شِمَال or شَمَائِل occurrence (e.g. a re-reading of 7:17 شَمَآئِلِهِمْ or 16:48 ٱلشَّمَآئِل) is shown by in-verse context to carry an 'enclose/cover/comprehend' nuance rather than the يمين-opposed directional sense, supplying the missing bridge to the ٱشتمل class.",
+  "An ٱشْتَمَلَ عَلَىٰ occurrence (6:143 or 6:144) is shown to carry a left/right lateral axis, or a new Quran-internal occurrence of the root activates both directional and containment senses simultaneously, licensing a single nucleus.",
+  "New corpus evidence establishes a productive, decomposable root sense generating both the frozen directional noun and the Form VIII enclosure verb without recourse to external lexical priors."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "16:48:13:3",
+  "18:17:14:2",
+  "18:18:9:2",
+  "70:37:4:2",
+  "7:17:11:1",
+  "56:41:2:2",
+  "56:41:5:2",
+  "69:25:5:2",
+  "6:143:15:1",
+  "6:144:13:1"
+ ],
+ "counterevidence_refs": [
+  "6:143:15:1",
+  "6:144:13:1",
+  "34:15:10:2",
+  "50:17:7:2"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "$ml-unresolved-no-nucleus",
+  "verdict": "NOT_APPLICABLE_UNRESOLVED",
+  "falsifiable": true,
+  "distinctiveness_ok": false,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "N_left_directional",
+   "V8_enclose_contain"
+  ],
+  "status_rationale": "No unified root-level claim is asserted (candidate_root_contribution=null), so root-level falsification is NOT_REQUIRED. The adversarial pass instead confirmed the absence of a bridge: attempts to derive one class from the other fail bidirectionally (6:143/6:144 vs 34:15/50:17), and the only unifying account relies on barred external etymology."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "$ml: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "$ml: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "$ml: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "$ml: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "$ml: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "$ml: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "$ml: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "$ml: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

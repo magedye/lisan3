@@ -1,0 +1,347 @@
+{
+ "root_arabic": "ه ز م",
+ "root_buckwalter": "hzm",
+ "root_id": "hzm",
+ "artifact_name": "hzm.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave3",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "hzm (Form I) = the routing / breaking of a massed fighting body's cohesion so that it collapses and is put to flight. Active (hazamu, 2:251) = to rout / put a host to flight; passive and the maf`ul participle (yuhzamu 54:45, mahzum 38:11) = to be routed / put to flight. The patient is always a collective fighting force, and the manifest result is flight, not the host's destruction.",
+ "internal_discovery": {
+  "candidate_root_contribution": "hzm (Form I) = the routing / breaking of a massed fighting body's cohesion so that it collapses and is put to flight. Active (hazamu, 2:251) = to rout / put a host to flight; passive and the maf`ul participle (yuhzamu 54:45, mahzum 38:11) = to be routed / put to flight. The patient is always a collective fighting force, and the manifest result is flight, not the host's destruction.",
+  "plain_explanation": "Across all three occurrences hzm denotes one event: a massed military body is broken and routed. In 2:251 Talut's band 'routs them' (the enemy host) by God's leave; in 38:11 a 'host (jund) of the confederates' is described as 'routed (mahzum)'; in 54:45 'the assembly (al-jam`) will be routed and they will turn their backs.' The Quran supplies its own gloss of the event in 54:45 (turning the backs = flight) and, in 2:251, keeps hzm distinct from qatala (David's killing of Goliath), so hzm is the breaking-and-flight of the force, separable both from slaying and from the ensuing retreat. The only honest limitation is breadth: 3 tokens, all in a single battlefield domain.",
+  "layer_separation_note": "hzm does NOT entail killing or annihilation: 2:251 lexically separates hazamu (routing the host) from qatala (slaying the individual champion Goliath), and 54:45 construes the routed as alive and fleeing. It is NOT the fleeing itself: 54:45 uses a separate verb (wallu al-dubur) for the flight, making hzm the antecedent break, not the retreat. In the corpus it is never predicated of an individual, an object, a structure, or an abstraction — every bearer is a collective fighting body (-hum, jund, al-jam`); this is a distributional boundary at N=3, not a proven semantic exclusion. It is not tied to a single voice or tense (active past, stative participle, passive future) nor to human agency alone (2:251 credits it bi-idhni-llah).",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "The strongest adversarial reading is hzm = 'destroy/annihilate' (folding in the killing of 2:251). It is refuted Quran-internally: 2:251 deploys qatala separately for David's slaying of Goliath (redundant if hzm already meant 'kill them'), and 54:45 immediately unpacks the routed host as fleeing survivors (wa-yuwalluna al-dubur), not the dead. A second candidate, that mahzum (38:11) is a frozen lexicalized epithet split from the verbal event, also fails: it is predicated directly of jund 'there' (hunalika, battlefield deixis) 'of the confederates', i.e. it is transparently the resultative of the same routing verb applied to the same participant type. No occurrence supports 'destroy', and no occurrence resists the single-nucleus reading.",
+  "strongest_competitor": "A generic military 'defeat / overcome' (with flight incidental), or a fully abstract 'break/shatter' with the military reading donated by context. Over these 3 same-domain tokens 'rout/put-to-flight' and 'defeat' are extensionally identical, so the boundary cannot be decisively drawn; the narrower 'rout/flight' account is preferred on two internal cues — the 54:45 self-gloss (yuwalluna al-dubur) and the 2:251 hzm/qatala split showing hzm targets force-cohesion, not casualties. The fully abstract 'break/shatter' is rejected as an over-abstraction that fits everything and adds no testable content (contract: prefer the narrowest account). This residual rout-vs-defeat under-determination is the genuine uncertainty capping the grade.",
+  "competing_hypothesis": "A generic military 'defeat / overcome' (with flight incidental), or a fully abstract 'break/shatter' with the military reading donated by context. Over these 3 same-domain tokens 'rout/put-to-flight' and 'defeat' are extensionally identical, so the boundary cannot be decisively drawn; the narrower 'rout/flight' account is preferred on two internal cues — the 54:45 self-gloss (yuwalluna al-dubur) and the 2:251 hzm/qatala split showing hzm targets force-cohesion, not casualties. The fully abstract 'break/shatter' is rejected as an over-abstraction that fits everything and adds no testable content (contract: prefer the narrowest account). This residual rout-vs-defeat under-determination is the genuine uncertainty capping the grade.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All three independent lenses converge on one root nucleus with no resistant or lexicalized sub-class: the collective routing / putting-to-flight of a massed fighting body, distributed across active verb, passive verb, and maf`ul participle as ordinary Form I diathesis (not a semantic split). The evidence is adversarially clean and distinctiveness is shown Quran-internally (the qatala contrast in 2:251, the wallu al-dubur definition in 54:45). Strength is nonetheless capped at MODERATE and scope at REPRESENTATIVE because the base is only 3 tokens confined to a single semantic domain (battlefield rout): consistency on a narrow monothematic sample is not the broad distinctive breadth STRONG requires, and it cannot establish whether the military/collective element is root-intrinsic or contextually donated, nor decisively separate 'rout' from generic 'defeat'.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "hzm-verbal-rout",
+     "where": {
+      "forms": [
+       "V"
+      ],
+      "word_refs": [
+       "2:251:1:2",
+       "54:45:1:2"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Form I verb: to rout / put a massed fighting force to flight (active hazamu 2:251) and to be routed / put to flight (passive yuhzamu 54:45). The patient is a collective host; the manifest result is flight.",
+     "classification_rationale": "Both are Form I verbs (qac_verb_form null) denoting the same event under different voice/tense: 2:251 active perfect + object -hum (enemy host), 54:45 passive imperfect with subject al-jam`. Voice alternation is diathesis, not a semantic split; both target the breaking of a collective force.",
+     "supporting_evidence_note": "2:251 'fahazamuhum bi-idhni-llah wa-qatala Dawudu Jaluta' distinguishes routing the host from slaying the champion; 54:45 'sa-yuhzamu al-jam`u wa-yuwalluna al-dubur' glosses the rout as backs-turned flight.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "hzm-participle-routed",
+     "where": {
+      "forms": [
+       "N"
+      ],
+      "word_refs": [
+       "38:11:4:1"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Form I maf`ul passive participle 'routed (mahzum)': the resultative/stative of the same routing verb, predicated of a collective fighting body (jund) in the state of having been put to flight.",
+     "classification_rationale": "qac_pos N, but it is the Form I passive participle, not an independent nominal pattern. Predicated of jund 'of the confederates', it is fully bridged to the verbal nucleus — same participant type (collective host) and same event (rout).",
+     "supporting_evidence_note": "38:11 'jundun ma hunalika mahzumun mina al-ahzab' — 'a host there, routed, of the confederates' — a military collective in the routed state; battlefield deixis (hunalika) ties it to the verbal rout.",
+     "counterevidence": []
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "hzm",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "The 'destroy/annihilate' rival was refuted internally (2:251 separates qatala; 54:45 shows fleeing survivors), and the lexicalized-participle and human-vs-divine-agent split hypotheses both failed. Distinctiveness is demonstrated Quran-internally via the qatala contrast (2:251) and the wallu al-dubur self-gloss (54:45); no occurrence resists the nucleus. Grade is capped at MODERATE by narrow monothematic breadth (N=3), not by any refutation."
+ },
+ "coverage_validation": {
+  "root": "hzm",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "2:251:1:2",
+   "disposition": "CONSISTENT",
+   "note": "Both are Form I verbs (qac_verb_form null) denoting the same event under different voice/tense: 2:251 active perfect + object -hum (enemy host), 54:45 passive imperfect with subject al-jam`. Voice alternation is diathesis, not a semantic split; both target the breaking of a collective force.",
+   "coverage_cluster_id": "hzm-verbal-rout",
+   "candidate_semantic_interpretation": "Form I verb: to rout / put a massed fighting force to flight (active hazamu 2:251) and to be routed / put to flight (passive yuhzamu 54:45). The patient is a collective host; the manifest result is flight.",
+   "cluster_supporting_evidence": "2:251 'fahazamuhum bi-idhni-llah wa-qatala Dawudu Jaluta' distinguishes routing the host from slaying the champion; 54:45 'sa-yuhzamu al-jam`u wa-yuwalluna al-dubur' glosses the rout as backs-turned flight.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Both are Form I verbs (qac_verb_form null) denoting the same event under different voice/tense: 2:251 active perfect + object -hum (enemy host), 54:45 passive imperfect with subject al-jam`. Voice alternation is diathesis, not a semantic split; both target the breaking of a collective force.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:251",
+     "verse_text": "فَهَزَمُوهُم بِإِذْنِ ٱللَّهِ وَقَتَلَ دَاوُۥدُ جَالُوتَ وَءَاتَىٰهُ ٱللَّهُ ٱلْمُلْكَ وَٱلْحِكْمَةَ وَعَلَّمَهُۥ مِمَّا يَشَآءُ وَلَوْلَا دَفْعُ ٱللَّهِ ٱلنَّاسَ بَعْضَهُم بِبَعْضٍ لَّفَسَدَتِ ٱلْأَرْضُ وَلَٰكِنَّ ٱللَّهَ ذُو فَضْلٍ عَلَى ٱلْعَٰلَمِينَ"
+    }
+   ],
+   "root_arabic": "ه ز م",
+   "root_buckwalter": "hzm",
+   "root_id": "hzm",
+   "artifact_name": "hzm.json",
+   "verse_ref": "2:251",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "hazamu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَهَزَمُوهُم بِإِذْنِ ٱللَّهِ وَقَتَلَ دَاوُۥدُ جَالُوتَ وَءَاتَىٰهُ ٱللَّهُ ٱلْمُلْكَ وَٱلْحِكْمَةَ وَعَلَّمَهُۥ مِمَّا يَشَآءُ وَلَوْلَا دَفْعُ ٱللَّهِ ٱلنَّاسَ بَعْضَهُم بِبَعْضٍ لَّفَسَدَتِ ٱلْأَرْضُ وَلَٰكِنَّ ٱللَّهَ ذُو فَضْلٍ عَلَى ٱلْعَٰلَمِينَ"
+  },
+  {
+   "word_ref": "38:11:4:1",
+   "disposition": "CONSISTENT",
+   "note": "qac_pos N, but it is the Form I passive participle, not an independent nominal pattern. Predicated of jund 'of the confederates', it is fully bridged to the verbal nucleus — same participant type (collective host) and same event (rout).",
+   "coverage_cluster_id": "hzm-participle-routed",
+   "candidate_semantic_interpretation": "Form I maf`ul passive participle 'routed (mahzum)': the resultative/stative of the same routing verb, predicated of a collective fighting body (jund) in the state of having been put to flight.",
+   "cluster_supporting_evidence": "38:11 'jundun ma hunalika mahzumun mina al-ahzab' — 'a host there, routed, of the confederates' — a military collective in the routed state; battlefield deixis (hunalika) ties it to the verbal rout.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "qac_pos N, but it is the Form I passive participle, not an independent nominal pattern. Predicated of jund 'of the confederates', it is fully bridged to the verbal nucleus — same participant type (collective host) and same event (rout).",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "38:11",
+     "verse_text": "جُندٌ مَّا هُنَالِكَ مَهْزُومٌ مِّنَ ٱلْأَحْزَابِ"
+    }
+   ],
+   "root_arabic": "ه ز م",
+   "root_buckwalter": "hzm",
+   "root_id": "hzm",
+   "artifact_name": "hzm.json",
+   "verse_ref": "38:11",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "mahozuwmN",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "جُندٌ مَّا هُنَالِكَ مَهْزُومٌ مِّنَ ٱلْأَحْزَابِ"
+  },
+  {
+   "word_ref": "54:45:1:2",
+   "disposition": "CONSISTENT",
+   "note": "Both are Form I verbs (qac_verb_form null) denoting the same event under different voice/tense: 2:251 active perfect + object -hum (enemy host), 54:45 passive imperfect with subject al-jam`. Voice alternation is diathesis, not a semantic split; both target the breaking of a collective force.",
+   "coverage_cluster_id": "hzm-verbal-rout",
+   "candidate_semantic_interpretation": "Form I verb: to rout / put a massed fighting force to flight (active hazamu 2:251) and to be routed / put to flight (passive yuhzamu 54:45). The patient is a collective host; the manifest result is flight.",
+   "cluster_supporting_evidence": "2:251 'fahazamuhum bi-idhni-llah wa-qatala Dawudu Jaluta' distinguishes routing the host from slaying the champion; 54:45 'sa-yuhzamu al-jam`u wa-yuwalluna al-dubur' glosses the rout as backs-turned flight.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Both are Form I verbs (qac_verb_form null) denoting the same event under different voice/tense: 2:251 active perfect + object -hum (enemy host), 54:45 passive imperfect with subject al-jam`. Voice alternation is diathesis, not a semantic split; both target the breaking of a collective force.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "54:45",
+     "verse_text": "سَيُهْزَمُ ٱلْجَمْعُ وَيُوَلُّونَ ٱلدُّبُرَ"
+    }
+   ],
+   "root_arabic": "ه ز م",
+   "root_buckwalter": "hzm",
+   "root_id": "hzm",
+   "artifact_name": "hzm.json",
+   "verse_ref": "54:45",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yuhozamu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "سَيُهْزَمُ ٱلْجَمْعُ وَيُوَلُّونَ ٱلدُّبُرَ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Three independent lenses (bottom-up A, independent B, adversarial C) converged on the same unified nucleus and the same MODERATE/REPRESENTATIVE grade with no resistant occurrence; aggregator confirmed word_refs, forms, and verse_text against the packet.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "hzm (Form I) = the routing / breaking of a massed fighting body's cohesion so that it collapses and is put to flight. Active (hazamu, 2:251) = to rout / put a host to flight; passive and the maf`ul participle (yuhzamu 54:45, mahzum 38:11) = to be routed / put to flight. The patient is always a collective fighting force, and the manifest result is flight, not the host's destruction.",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "DERIVATIONAL_FAMILY",
+ "layer_attribution": {
+  "occurrence_evidence": "Three Form I tokens, all with a collective fighting-body patient: 2:251:1:2 hazamu + -hum (active perfect), 38:11:4:1 mahzum predicated of jund (maf`ul participle), 54:45:1:2 yuhzamu with subject al-jam` (passive imperfect).",
+  "derivation": "One Form I nucleus across active verb, passive verb, and maf`ul passive participle; voice/tense alternation is ordinary Form I diathesis, not a semantic split. qac_verb_form is null for all three but surface strings are unambiguously Form I.",
+  "lexical_class": "No lexicalized/frozen sub-class: mahzum (38:11) is the resultative participle of the routing verb, transparently bridged to the verbal tokens by identical participant type and battlefield deixis (hunalika), not a detached epithet.",
+  "contextual_relation": "Narrative specifics — that the router is Talut's band, the routed are Goliath's/the confederates' host, the divine sanction bi-idhni-llah, and David's separate slaying of Goliath — are contextual and must NOT be read into the root; hzm's own contribution is the breaking-and-flight of the force, with agent identity and divine permission supplied by context.",
+  "reconciliation": "No reconciliation between competing dispositions was needed: all three lenses agreed on a single CONSISTENT nucleus with no override or resistant occurrence to reconcile.",
+  "unresolved_resistance": "No internal resistance. The sole unresolved matter is evidential, not resistant: at N=3 in one domain, 'rout/put-to-flight' cannot be decisively separated from generic 'defeat', and it is untestable whether the military/collective element is root-intrinsic or contextually donated — this caps strength at MODERATE and scope at REPRESENTATIVE."
+ },
+ "hard_cases": [],
+ "hard_case_representation": {
+  "status": "NO_GENUINE_HARD_CASE",
+  "rationale": "No occurrence resists the single nucleus. The adversarially pressed candidates — reading mahzum (38:11) as a lexicalized epithet, and splitting human-agent rout (2:251) from divinely-caused passive rout (38:11, 54:45) — both fail Quran-internally: the participle is the resultative of the same verb on the same participant type, and the passive merely suppresses the agent while denoting the identical event. The only limitation is evidential breadth (N=3, one domain), not internal resistance."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A Quranic occurrence of hzm predicated of a non-collective or non-military bearer (an individual, an inanimate object, a structure, a debate, or an inner state), or one where hzm demonstrably entails killing/annihilation rather than a survivable rout, would break the 'rout of a massed fighting force' nucleus.",
+  "search_location": "The three attested tokens 2:251:1:2, 38:11:4:1, 54:45:1:2 and any newly confirmed hzm occurrence; specifically the patient/subject of each (is it a collective jund/jam`/host or not) and the surrounding verbs (is killing bundled into hzm or held distinct as in 2:251's qatala).",
+  "verification_method": "Read verse_text and morphology for each hzm token; identify the entity acted upon and whether the stated consequence is flight (survivable rout, as 54:45 wa-yuwalluna al-dubur) or destruction; check whether any co-verb (qatala, wallu) is bundled into or separated from hzm.",
+  "confounder_control": "Distinguish root-intrinsic meaning from contextual donation: at N=3 all bearers happen to be forces, so do not treat the military/collective element as proven root-intrinsic. Separate hzm proper from the flight verb (wallu al-dubur) and the slaying verb (qatala) that occur alongside it rather than folding them into hzm.",
+  "failure_consequence": "If a non-military/individual bearer or a kill-entailing use is found, downgrade the collective-military-rout nucleus to a contextual reading and re-open toward a broader 'defeat/break' nucleus or a multi-class result; if killing proves bundled, retract the 'not annihilation' boundary."
+ },
+ "falsification_status": "PASSED",
+ "reopen_conditions": [
+  "A newly confirmed hzm occurrence whose patient/subject is an individual, an inanimate object, or a non-military abstraction (breaking the collective-fighting-force distributional boundary held across 2:251 -hum, 38:11 jund, 54:45 al-jam`).",
+  "An occurrence where hzm bundles killing/annihilation into itself rather than holding it distinct as 2:251 does with qatala, or where the routed are shown destroyed rather than fleeing as in 54:45 (wa-yuwalluna al-dubur) — either would collapse the 'rout not slaughter' boundary.",
+  "Any Quran-internal evidence that decisively separates 'rout/put-to-flight' from generic 'defeat', resolving the residual under-determination between them and warranting a narrowing or a scope change."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "2:251:1:2",
+  "38:11:4:1",
+  "54:45:1:2"
+ ],
+ "counterevidence_refs": [],
+ "falsification_evidence": {
+  "attempt_id": "hzm-adv-2026-09-12",
+  "verdict": "SUPPORTED",
+  "falsifiable": true,
+  "distinctiveness_ok": true,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "hzm-verbal-rout",
+   "hzm-participle-routed"
+  ],
+  "status_rationale": "The 'destroy/annihilate' rival was refuted internally (2:251 separates qatala; 54:45 shows fleeing survivors), and the lexicalized-participle and human-vs-divine-agent split hypotheses both failed. Distinctiveness is demonstrated Quran-internally via the qatala contrast (2:251) and the wallu al-dubur self-gloss (54:45); no occurrence resists the nucleus. Grade is capped at MODERATE by narrow monothematic breadth (N=3), not by any refutation."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "hzm: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "hzm: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "hzm: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "hzm: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "hzm: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "hzm: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "hzm: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "hzm: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

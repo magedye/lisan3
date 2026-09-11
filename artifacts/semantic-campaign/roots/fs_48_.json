@@ -1,0 +1,388 @@
+{
+ "root_arabic": "ف س ح",
+ "root_buckwalter": "fsH",
+ "root_id": "fsH",
+ "artifact_name": "fs_48_.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave3",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "fsH = to make/open accommodating space — create room in a shared locus by yielding/repositioning within it (not by leaving or rising from it). Domain-general as to WHAT is made roomy: realized as reflexive-distributive mutual room-making (Form V tafaʿʿul), plain transitive human act (Form I), and a divine reciprocal act of the same root with an unspecified space-domain.",
+ "internal_discovery": {
+  "candidate_root_contribution": "fsH = to make/open accommodating space — create room in a shared locus by yielding/repositioning within it (not by leaving or rising from it). Domain-general as to WHAT is made roomy: realized as reflexive-distributive mutual room-making (Form V tafaʿʿul), plain transitive human act (Form I), and a divine reciprocal act of the same root with an unspecified space-domain.",
+  "plain_explanation": "Every attested token of this root lives in one verse, 58:11 (al-Mujādila), in one scene: believers are told to make room in the sitting-assemblies (majālis), and God promises to make room for them in return. The narrowest reading that carries all three tokens is 'make/create accommodating space, open up room.' The Form V verb (تَفَسَّحُوا۟) and the Form I verb (فَٱفْسَحُوا۟) name and then execute the SAME act inside one sentence, which shows the form difference is valency/aspect (mutual-distributive vs plain), not two meanings. The divine token (يَفْسَحِ ٱللَّهُ لَكُمْ) mirrors the human act, so the root's reciprocal figure only works if it is one nucleus deployed across domains. The account is clean and morphologically triangulated within the scene, and it is sharply distinguished inside the verse from n-sh-z (rise/move up) and r-f-ʿ (raise in rank). It is capped at MODERATE/REPRESENTATIVE purely by breadth: the entire evidence base is a single verse and a single event, so no cross-context adversarial test is possible, and the divine token leaves a concrete-vs-abstract residue.",
+  "layer_separation_note": "Quran-internally (all from 58:11's contrast set): fsH does NOT entail rising/moving up (contrasted directly with ٱنشُزُوا۟, n-sh-z); does NOT entail elevation or promotion in rank (the verse assigns raising-in-degrees to a different root, يَرْفَعِ … دَرَجَٰتٍ, r-f-ʿ, for a different trigger); does NOT entail vacating or departing (it is accommodation while remaining in place); carries no temporal sense. CAVEAT: with only one context these boundaries are secure only for the local majlis contrast; no attested fsH occurrence tests exclusion from provision, breadth-of-land, or chest-expansion, so wider negative boundaries cannot be asserted Quran-internally.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "At 58:11:11:1 (يَفْسَحِ ٱللَّهُ لَكُمْ) the agent is divine and the object is deleted, so the concrete seating-room reading of the human imperatives cannot be transferred literally; the token fits the nucleus only when it is pitched domain-general (make/create accommodating space), leaving concrete-vs-abstract expansiveness Quran-internally underdetermined.",
+  "strongest_competitor": "That the nucleus is a STATE, 'ampleness/spaciousness,' rather than the ACT 'make room' — with the human Form V/I imperatives applying it to seating and the divine يَفْسَحِ granting abstract ampleness (reward/mercy/relief). A stronger sub-variant is a two-class concrete/abstract split on the human/divine axis. Both are rejected as the PREFERRED account because the verse's reciprocity-by-identity-of-root (you make room → He makes room for you) requires ONE nucleus deployed across domains, and a single verse cannot adjudicate act-vs-state; but the single-context evidence genuinely cannot disprove them, which is exactly what caps strength below STRONG.",
+  "competing_hypothesis": "That the nucleus is a STATE, 'ampleness/spaciousness,' rather than the ACT 'make room' — with the human Form V/I imperatives applying it to seating and the divine يَفْسَحِ granting abstract ampleness (reward/mercy/relief). A stronger sub-variant is a two-class concrete/abstract split on the human/divine axis. Both are rejected as the PREFERRED account because the verse's reciprocity-by-identity-of-root (you make room → He makes room for you) requires ONE nucleus deployed across domains, and a single verse cannot adjudicate act-vs-state; but the single-context evidence genuinely cannot disprove them, which is exactly what caps strength below STRONG.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All three independent lenses converge: 3/3 occurrences, full coverage, all in 58:11, one scene. The nucleus 'make/open accommodating space' carries every token with zero contradiction; the intra-sentential Form V→Form I restatement is decisive Quran-internal evidence that morphology≠distinct meaning here. STRONG is excluded because it requires broad distinctive adversarially-clean evidence, and breadth is structurally unavailable — a single verse / single usage-event provides no distributional variation and no cross-context stress test (per contract: high agreement / absence of resistance ≠ proof). No coherent resistant sub-class exists, so the result is not lower than MODERATE. The only genuine tension is the divine token's concrete-vs-abstract residue, recorded as an adversarial boundary rather than a counter-class. Scope is REPRESENTATIVE (the single context the Quran provides for this derivational family), not UNIVERSAL.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "fsH-tafaSSaHu-reflexive-distributive",
+     "where": {
+      "word_refs": [
+       "58:11:7:1"
+      ],
+      "qac_verb_form": [
+       "V"
+      ],
+      "forms": [
+       "V(V)"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Form V (tafaʿʿul) reflexive/mutual-distributive: 'make room among yourselves / spread apart to open space,' each party repositioning to create space, distributed across the group in the majālis.",
+     "classification_rationale": "Imperative masc. pl. content of the reported command إِذَا قِيلَ لَكُمْ تَفَسَّحُوا۟ فِى ٱلْمَجَٰلِسِ; the locative فِى ٱلْمَجَٰلِسِ anchors the act to a shared sitting-space. The tafaʿʿul stem supplies mutual/self-applied valency, which sits below the nucleus rather than beside it.",
+     "supporting_evidence_note": "Named act of the command; immediately restated in Form I as compliance (58:11:10:2), demonstrating same-referent equivalence of the two stems.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "fsH-base-plain-and-divine",
+     "where": {
+      "word_refs": [
+       "58:11:10:2",
+       "58:11:11:1"
+      ],
+      "qac_verb_form": [
+       null
+      ],
+      "forms": [
+       "V"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Plain Form I 'make/open room': the human compliance act فَٱفْسَحُوا۟ (58:11:10:2) and the divine reciprocal يَفْسَحِ ٱللَّهُ لَكُمْ (58:11:11:1), the latter with agent=Allah and an unspecified space-domain (لَكُمْ).",
+     "classification_rationale": "Both share the base stem (qac_verb_form=null, form 'V' in packet). The compliance token executes the very act named by the Form V verb; the divine jussive is the apodosis/reward reusing the identical verb in a reciprocal frame. Grouped together as the plain-stem realization of the one nucleus, agent being the only differentiator.",
+     "supporting_evidence_note": "فَٱفْسَحُوا۟ restates تَفَسَّحُوا۟ within one sentence (stem V→I), and يَفْسَحِ mirrors it back from the divine agent — the reciprocal figure that requires a single nucleus.",
+     "counterevidence": [
+      "At 58:11:11:1 (يَفْسَحِ ٱللَّهُ لَكُمْ) the agent is divine and the object is deleted, so the concrete seating-room reading of the human imperatives cannot be transferred literally; the token fits the nucleus only when it is pitched domain-general (make/create accommodating space), leaving concrete-vs-abstract expansiveness Quran-internally underdetermined."
+     ]
+    }
+   ],
+   "reconciliation": [
+    {
+     "word_ref": "58:11:11:1",
+     "final": "CONSISTENT",
+     "rationale": "Pitching the nucleus at the domain-general level ('make/create accommodating space') absorbs the token via the verse's explicit reciprocal figure (human room-making → divine room-making for you). The tension relocates the nucleus rather than breaking it, so it is recorded as an adversarial boundary while the occurrence itself remains consistent with the preferred account."
+    }
+   ]
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "fsH",
+  "verdict": "NOT_ADJUDICABLE",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": false,
+  "notes": "A genuine adversarial refutation of a cross-Quranic nucleus cannot be run: there is exactly one context (58:11) and one usage-event, so unity is trivially unfalsifiable (absence of resistance ≠ proof, per contract). The core nucleus holds and is distinctive within the verse (vs n-sh-z, r-f-ʿ), but the divine token 58:11:11:1 leaves a concrete-vs-abstract residue that is recorded rather than resolved. Hence NOT_RUN, not PASSED."
+ },
+ "coverage_validation": {
+  "root": "fsH",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "58:11:10:2",
+   "disposition": "CONSISTENT",
+   "note": "Both share the base stem (qac_verb_form=null, form 'V' in packet). The compliance token executes the very act named by the Form V verb; the divine jussive is the apodosis/reward reusing the identical verb in a reciprocal frame. Grouped together as the plain-stem realization of the one nucleus, agent being the only differentiator.",
+   "coverage_cluster_id": "fsH-base-plain-and-divine",
+   "candidate_semantic_interpretation": "Plain Form I 'make/open room': the human compliance act فَٱفْسَحُوا۟ (58:11:10:2) and the divine reciprocal يَفْسَحِ ٱللَّهُ لَكُمْ (58:11:11:1), the latter with agent=Allah and an unspecified space-domain (لَكُمْ).",
+   "cluster_supporting_evidence": "فَٱفْسَحُوا۟ restates تَفَسَّحُوا۟ within one sentence (stem V→I), and يَفْسَحِ mirrors it back from the divine agent — the reciprocal figure that requires a single nucleus.",
+   "counterevidence": [
+    "At 58:11:11:1 (يَفْسَحِ ٱللَّهُ لَكُمْ) the agent is divine and the object is deleted, so the concrete seating-room reading of the human imperatives cannot be transferred literally; the token fits the nucleus only when it is pitched domain-general (make/create accommodating space), leaving concrete-vs-abstract expansiveness Quran-internally underdetermined."
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Both share the base stem (qac_verb_form=null, form 'V' in packet). The compliance token executes the very act named by the Form V verb; the divine jussive is the apodosis/reward reusing the identical verb in a reciprocal frame. Grouped together as the plain-stem realization of the one nucleus, agent being the only differentiator.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "58:11",
+     "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا قِيلَ لَكُمْ تَفَسَّحُوا۟ فِى ٱلْمَجَٰلِسِ فَٱفْسَحُوا۟ يَفْسَحِ ٱللَّهُ لَكُمْ وَإِذَا قِيلَ ٱنشُزُوا۟ فَٱنشُزُوا۟ يَرْفَعِ ٱللَّهُ ٱلَّذِينَ ءَامَنُوا۟ مِنكُمْ وَٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ دَرَجَٰتٍ وَٱللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ"
+    }
+   ],
+   "root_arabic": "ف س ح",
+   "root_buckwalter": "fsH",
+   "root_id": "fsH",
+   "artifact_name": "fs_48_.json",
+   "verse_ref": "58:11",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{fosaHu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا قِيلَ لَكُمْ تَفَسَّحُوا۟ فِى ٱلْمَجَٰلِسِ فَٱفْسَحُوا۟ يَفْسَحِ ٱللَّهُ لَكُمْ وَإِذَا قِيلَ ٱنشُزُوا۟ فَٱنشُزُوا۟ يَرْفَعِ ٱللَّهُ ٱلَّذِينَ ءَامَنُوا۟ مِنكُمْ وَٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ دَرَجَٰتٍ وَٱللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ"
+  },
+  {
+   "word_ref": "58:11:11:1",
+   "disposition": "CONSISTENT",
+   "note": "Coheres under the domain-general nucleus but carries a residual concrete-vs-abstract underdetermination (divine agent, deleted object); flagged as an adversarial boundary, not a counter-class.",
+   "coverage_cluster_id": "fsH-base-plain-and-divine",
+   "candidate_semantic_interpretation": "Plain Form I 'make/open room': the human compliance act فَٱفْسَحُوا۟ (58:11:10:2) and the divine reciprocal يَفْسَحِ ٱللَّهُ لَكُمْ (58:11:11:1), the latter with agent=Allah and an unspecified space-domain (لَكُمْ).",
+   "cluster_supporting_evidence": "فَٱفْسَحُوا۟ restates تَفَسَّحُوا۟ within one sentence (stem V→I), and يَفْسَحِ mirrors it back from the divine agent — the reciprocal figure that requires a single nucleus.",
+   "counterevidence": [
+    "At 58:11:11:1 (يَفْسَحِ ٱللَّهُ لَكُمْ) the agent is divine and the object is deleted, so the concrete seating-room reading of the human imperatives cannot be transferred literally; the token fits the nucleus only when it is pitched domain-general (make/create accommodating space), leaving concrete-vs-abstract expansiveness Quran-internally underdetermined."
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Both share the base stem (qac_verb_form=null, form 'V' in packet). The compliance token executes the very act named by the Form V verb; the divine jussive is the apodosis/reward reusing the identical verb in a reciprocal frame. Grouped together as the plain-stem realization of the one nucleus, agent being the only differentiator.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": "Pitching the nucleus at the domain-general level ('make/create accommodating space') absorbs the token via the verse's explicit reciprocal figure (human room-making → divine room-making for you). The tension relocates the nucleus rather than breaking it, so it is recorded as an adversarial boundary while the occurrence itself remains consistent with the preferred account.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "58:11:11:1",
+     "preliminary_disposition": "STRUCTURAL_UNCERTAINTY",
+     "preliminary_note": "Adversary lens read the divine token as leaving concrete-vs-abstract expansiveness unresolved, since no other fsH occurrence exists to triangulate the object-domain.",
+     "final_disposition": "CONSISTENT",
+     "reconciliation_rationale": "Pitching the nucleus at the domain-general level ('make/create accommodating space') absorbs the token via the verse's explicit reciprocal figure (human room-making → divine room-making for you). The tension relocates the nucleus rather than breaking it, so it is recorded as an adversarial boundary while the occurrence itself remains consistent with the preferred account.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [
+    "At 58:11:11:1 (يَفْسَحِ ٱللَّهُ لَكُمْ) the agent is divine and the object is deleted, so the concrete seating-room reading of the human imperatives cannot be transferred literally; the token fits the nucleus only when it is pitched domain-general (make/create accommodating space), leaving concrete-vs-abstract expansiveness Quran-internally underdetermined."
+   ],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "58:11",
+     "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا قِيلَ لَكُمْ تَفَسَّحُوا۟ فِى ٱلْمَجَٰلِسِ فَٱفْسَحُوا۟ يَفْسَحِ ٱللَّهُ لَكُمْ وَإِذَا قِيلَ ٱنشُزُوا۟ فَٱنشُزُوا۟ يَرْفَعِ ٱللَّهُ ٱلَّذِينَ ءَامَنُوا۟ مِنكُمْ وَٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ دَرَجَٰتٍ وَٱللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ"
+    }
+   ],
+   "root_arabic": "ف س ح",
+   "root_buckwalter": "fsH",
+   "root_id": "fsH",
+   "artifact_name": "fs_48_.json",
+   "verse_ref": "58:11",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yafosaHi",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا قِيلَ لَكُمْ تَفَسَّحُوا۟ فِى ٱلْمَجَٰلِسِ فَٱفْسَحُوا۟ يَفْسَحِ ٱللَّهُ لَكُمْ وَإِذَا قِيلَ ٱنشُزُوا۟ فَٱنشُزُوا۟ يَرْفَعِ ٱللَّهُ ٱلَّذِينَ ءَامَنُوا۟ مِنكُمْ وَٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ دَرَجَٰتٍ وَٱللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ"
+  },
+  {
+   "word_ref": "58:11:7:1",
+   "disposition": "CONSISTENT",
+   "note": "Imperative masc. pl. content of the reported command إِذَا قِيلَ لَكُمْ تَفَسَّحُوا۟ فِى ٱلْمَجَٰلِسِ; the locative فِى ٱلْمَجَٰلِسِ anchors the act to a shared sitting-space. The tafaʿʿul stem supplies mutual/self-applied valency, which sits below the nucleus rather than beside it.",
+   "coverage_cluster_id": "fsH-tafaSSaHu-reflexive-distributive",
+   "candidate_semantic_interpretation": "Form V (tafaʿʿul) reflexive/mutual-distributive: 'make room among yourselves / spread apart to open space,' each party repositioning to create space, distributed across the group in the majālis.",
+   "cluster_supporting_evidence": "Named act of the command; immediately restated in Form I as compliance (58:11:10:2), demonstrating same-referent equivalence of the two stems.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Imperative masc. pl. content of the reported command إِذَا قِيلَ لَكُمْ تَفَسَّحُوا۟ فِى ٱلْمَجَٰلِسِ; the locative فِى ٱلْمَجَٰلِسِ anchors the act to a shared sitting-space. The tafaʿʿul stem supplies mutual/self-applied valency, which sits below the nucleus rather than beside it.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "58:11",
+     "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا قِيلَ لَكُمْ تَفَسَّحُوا۟ فِى ٱلْمَجَٰلِسِ فَٱفْسَحُوا۟ يَفْسَحِ ٱللَّهُ لَكُمْ وَإِذَا قِيلَ ٱنشُزُوا۟ فَٱنشُزُوا۟ يَرْفَعِ ٱللَّهُ ٱلَّذِينَ ءَامَنُوا۟ مِنكُمْ وَٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ دَرَجَٰتٍ وَٱللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ"
+    }
+   ],
+   "root_arabic": "ف س ح",
+   "root_buckwalter": "fsH",
+   "root_id": "fsH",
+   "artifact_name": "fs_48_.json",
+   "verse_ref": "58:11",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tafas~aHu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "V",
+   "morphology": "V(V)",
+   "form": "V(V)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا قِيلَ لَكُمْ تَفَسَّحُوا۟ فِى ٱلْمَجَٰلِسِ فَٱفْسَحُوا۟ يَفْسَحِ ٱللَّهُ لَكُمْ وَإِذَا قِيلَ ٱنشُزُوا۟ فَٱنشُزُوا۟ يَرْفَعِ ٱللَّهُ ٱلَّذِينَ ءَامَنُوا۟ مِنكُمْ وَٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ دَرَجَٰتٍ وَٱللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "All three independent lenses (A bottom-up, B nucleus, C adversarial) reached MODERATE / REPRESENTATIVE, agreed the single verse forbids STRONG/UNIVERSAL, and agreed the divine token is the sole point of strain.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "fsH = to make/open accommodating space — create room in a shared locus by yielding/repositioning within it (not by leaving or rising from it). Domain-general as to WHAT is made roomy: realized as reflexive-distributive mutual room-making (Form V tafaʿʿul), plain transitive human act (Form I), and a divine reciprocal act of the same root with an unspecified space-domain.",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "DERIVATIONAL_FAMILY",
+ "layer_attribution": {
+  "occurrence_evidence": "3/3 confirmed tokens, all in 58:11: تَفَسَّحُوا۟ (58:11:7:1, Form V(V)), فَٱفْسَحُوا۟ (58:11:10:2, Form I base), يَفْسَحِ (58:11:11:1, Form I base, divine agent). Full coverage; single verse, single scene.",
+  "derivation": "Two stems of one verb: Form V (tafaʿʿul) supplies reflexive/mutual-distributive valency; Form I supplies the plain transitive act. The intra-sentential V→I restatement shows the stem difference is valency/aspect, not a meaning split — sub-nuclear.",
+  "lexical_class": "A single derivational family around 'make/open accommodating space'; no evidence of a lexicalized nominal or homonymic split. Not projected to a universal root generalization due to single-context attestation.",
+  "contextual_relation": "The majlis (sitting-assembly) setting, the imperative→compliance→divine-reward chain, and the reward semantics (room granted by God) are 58:11 narrative context; they anchor the reading but must NOT be promoted into the root claim. The root contributes 'make/open room,' not 'seating etiquette' or 'divine reward.'",
+  "reconciliation": "The divine token's concrete-vs-abstract tension is reconciled by pitching the nucleus domain-general and reading the verse's reciprocity-by-identity figure; the token is retained as CONSISTENT with the residue logged as an adversarial boundary, not forced into a second class.",
+  "unresolved_resistance": "No finally-resistant occurrence. Residual, non-class-breaking underdetermination at 58:11:11:1 (whether God's room-making is concrete or abstract expansiveness) that single-context evidence cannot adjudicate; this residue, plus the total absence of distributional breadth, is what caps the result at MODERATE / REPRESENTATIVE."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "58:11:11:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "Divine agent with deleted object; the concrete seating-room reading of the human imperatives cannot be transferred literally, so it tests whether the nucleus must be domain-general and marks the concrete/abstract limit the single-verse evidence cannot resolve.",
+   "evidence_basis": {
+    "kind": "OCCURRENCE_CONTRAST",
+    "statement": "At 58:11:11:1 (يَفْسَحِ ٱللَّهُ لَكُمْ) the agent is divine and the object is deleted, so the concrete seating-room reading of the human imperatives cannot be transferred literally; the token fits the nucleus only when it is pitched domain-general (make/create accommodating space), leaving concrete-vs-abstract expansiveness Quran-internally underdetermined."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "No occurrence is finally RESISTANT under the preferred domain-general nucleus, so there is no RESISTANT_SEAM; but there is a genuine ADVERSARIAL_BOUNDARY at the divine token whose concrete-vs-abstract underdetermination is a real, evidence-derived limit, so NO_GENUINE_HARD_CASE would understate the honest result."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A fsH occurrence (necessarily one newly admitted beyond 58:11) whose sense is carried NOT by 'make/open accommodating space' but by a distinct field — e.g. temporal duration, provision/abundance without any room-making, breadth-of-land, or chest-expansion — OR one in which Form V and Form I diverge in meaning rather than restating one act.",
+  "search_location": "Any attested fsH token outside 58:11; and re-inspection of the three 58:11 tokens for a forced-unity artifact, especially the divine token 58:11:11:1.",
+  "verification_method": "Read the new occurrence's verse_text and morphology (qac_pos, qac_verb_form, form); test whether 'make/create accommodating space' carries it without importing the majlis framing; check whether the reflexive-distributive (Form V) vs plain (Form I) valency stays sub-nuclear or becomes a meaning split.",
+  "confounder_control": "Distinguish root fsH from semantic near-neighbours w-s-ʿ (breadth/capacity), sh-r-ḥ (chest-expansion), and from the in-verse contrast roots n-sh-z (rise) and r-f-ʿ (raise-in-rank); ensure any apparent 'spaciousness' reading is a property of the root and not of the surrounding majlis/reward narrative.",
+  "failure_consequence": "If a divergent occurrence is confirmed, downgrade research_state to UNRESOLVED and split into lexicalized/derivational classes (claim_scope_kind UNRESOLVED_CLASS_ONLY) rather than asserting one nucleus."
+ },
+ "falsification_status": "NOT_RUN",
+ "reopen_conditions": [
+  "A fsH occurrence is admitted outside 58:11 that disambiguates the divine token 58:11:11:1 as concrete vs abstract, or that carries a non-spatial sense (temporal/provisional/breadth-of-land/chest-expansion).",
+  "New evidence in which Form V (تَفَسَّحُوا۟ type, 58:11:7:1) and Form I (فَٱفْسَحُوا۟ / يَفْسَحِ, 58:11:10:2, 58:11:11:1) diverge semantically rather than restating one room-making act, which would break the single-nucleus reconciliation.",
+  "Any attested fsH token that stands in a contrast set OTHER than the 58:11 n-sh-z / r-f-ʿ pairing, allowing the negative boundaries (not-rising, not-elevation, not-vacating) to be tested beyond one scene."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "58:11:7:1",
+  "58:11:10:2",
+  "58:11:11:1"
+ ],
+ "counterevidence_refs": [
+  "58:11:11:1"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "fsH-58_11-single-context",
+  "verdict": "NOT_ADJUDICABLE",
+  "falsifiable": false,
+  "distinctiveness_ok": true,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "fsH-tafaSSaHu-reflexive-distributive",
+   "fsH-base-plain-and-divine"
+  ],
+  "status_rationale": "A genuine adversarial refutation of a cross-Quranic nucleus cannot be run: there is exactly one context (58:11) and one usage-event, so unity is trivially unfalsifiable (absence of resistance ≠ proof, per contract). The core nucleus holds and is distinctive within the verse (vs n-sh-z, r-f-ʿ), but the divine token 58:11:11:1 leaves a concrete-vs-abstract residue that is recorded rather than resolved. Hence NOT_RUN, not PASSED."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fsH: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fsH: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fsH: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fsH: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fsH: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fsH: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fsH: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fsH: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

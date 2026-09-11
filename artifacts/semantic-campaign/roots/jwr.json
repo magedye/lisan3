@@ -1,0 +1,923 @@
+{
+ "root_arabic": "ج و ر",
+ "root_buckwalter": "jwr",
+ "root_id": "jwr",
+ "artifact_name": "jwr.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave3",
+ "occurrences": 13,
+ "frozen_candidate_root_contribution": null,
+ "internal_discovery": {
+  "candidate_root_contribution": null,
+  "plain_explanation": "Across all 13 occurrences the root ج و ر does not present one Quran-internal meaning. The data partitions cleanly by derivational form into three lexicalized senses: (1) spatial adjacency / dwelling-alongside — form III yujaAwiru (33:60), the form-VI participle mutajaAwiraAt (13:4, inanimate tracts of land), and the noun jaAr as 'neighbor' (4:36 twice); (2) granting/seeking refuge FROM a named threat — every form IV and the single form X (9:6 istajaAra + >ajir; 23:88 yujiyr / yujaAr; 46:31, 67:28, 72:22, all with min [threat]), plus the noun jaAr as 'protector/guarantor' (8:48, Satan); (3) deviation from the straight way — the form-I participle jaA}ir (16:9), set against qaSd al-sabiyl. The only thing linking senses (1) and (2) is the single noun jaAr reading two ways, and the only account that would also absorb (3) is a vague 'to one's side' abstraction that predicts nothing distinctive. Neither is a demonstrated Quran-internal bridge, so the honest result is unresolved at the root level with the substantive content stated per-class.",
+  "layer_separation_note": "jwr does NOT entail: (a) social 'injustice/tyranny' — the classical jawr sense is Quran-unattested; the one candidate jaA}ir (16:9) qualifies a PATH and contrasts with directness (qaSd), i.e. deviation not oppression; (b) generic 'help/aid' — the refuge sense is always shielding min a specified harm (min 'adhaAb 46:31, 67:28; min Allah 72:22) or a battle safety-guarantee (8:48), never undifferentiated assistance; (c) kinship — 4:36 splits jaAr dhiy al-qurbaa (kin) from jaAr al-junub (stranger), so jaAr itself is neutral to kinship; (d) protection as a universal core — 13:4 mutajaAwiraAt (inanimate plots) is bare contiguity with zero protective content; (e) moral valence — jaA}ir (negative), ajaAra (positive rescue), jaAr and mutajaAwiraAt (neutral); (f) durable/effective adjacency or refuge — 33:60 neighboring is brief (illaA qaliylaa) and 23:88/67:28/72:22 assert no refuge holds against God.",
+  "presence": {
+   "occurrences_total": 13,
+   "occurrences_checked": 13,
+   "occurrences_consistent": 12,
+   "inconsistent_refs": [
+    "16:9:6:1"
+   ]
+  },
+  "strongest_counterexample": "16:9:6:1 jaA}ir — «وَعَلَى ٱللَّهِ قَصْدُ ٱلسَّبِيلِ وَمِنْهَا جَآئِرٌ»: a way that swerves off-course, anchored to qaSd al-sabiyl (the straight/direct). It is semantically orthogonal to both populated senses (deviation is neither adjacency nor refuge) and is a single unreinforced occurrence, so it defeats any unified root nucleus. Secondary counterexample to a protection-centric unity: 13:4:4:1 mutajaAwiraAt — inanimate tracts of land merely adjoining, with no protective, social, or moral content, showing adjacency and refuge share no distributed entailment and the sole cross-class link is the one ambiguous nominal jaAr (protector 8:48 vs neighbor 4:36).",
+  "strongest_competitor": "A single geometric nucleus 'to be/place at the side (flank)': side-by-side tracts (13:4) and jaAr al-junub (4:36) = beside; take-to-one's-flank = shelter (IV/X, 8:48); go-off-to-the-side = deviate (16:9). It is the only account that would lift scope by absorbing all three classes and has a genuine foothold in junub (4:36) and mutajaAwiraAt (13:4). Rejected because (a) it is precisely the vague abstraction that fits everything and makes no narrow, distinctive prediction, violating the narrowness principle; (b) the seam between adjacency and refuge is undemonstrated — no verse states that a jaAr protects or that yujiyr min 'adhaAb is 'putting at one's side'; reducing rescue-from-harm to 'flank' is lexical inference, not Quranic demonstration; (c) it cannot explain the polarity split (neutral 'side' vs pejorative jaA}ir vs positive ajaAra), and the Quran keeps the binyanim rigidly lane-separated (III/VI adjacency; IV/X refuge) with only one blended lexeme, which is better explained as per-form lexicalization than as one live nucleus.",
+  "competing_hypothesis": "A single geometric nucleus 'to be/place at the side (flank)': side-by-side tracts (13:4) and jaAr al-junub (4:36) = beside; take-to-one's-flank = shelter (IV/X, 8:48); go-off-to-the-side = deviate (16:9). It is the only account that would lift scope by absorbing all three classes and has a genuine foothold in junub (4:36) and mutajaAwiraAt (13:4). Rejected because (a) it is precisely the vague abstraction that fits everything and makes no narrow, distinctive prediction, violating the narrowness principle; (b) the seam between adjacency and refuge is undemonstrated — no verse states that a jaAr protects or that yujiyr min 'adhaAb is 'putting at one's side'; reducing rescue-from-harm to 'flank' is lexical inference, not Quranic demonstration; (c) it cannot explain the polarity split (neutral 'side' vs pejorative jaA}ir vs positive ajaAra), and the Quran keeps the binyanim rigidly lane-separated (III/VI adjacency; IV/X refuge) with only one blended lexeme, which is better explained as per-form lexicalization than as one live nucleus.",
+  "unresolved_cases": [],
+  "result": "UNRESOLVED",
+  "result_strength": "UNRESOLVED",
+  "rationale": "All three lenses agree there is no single unified nucleus and that 16:9 jaA}ir is a resistant isolate; two lenses proposed a MODERATE/REPRESENTATIVE derivational-family claim for adjacency+refuge, while the adversary showed the adjacency↔refuge bridge rests on a single ambiguous nominal (jaAr 8:48 vs 4:36) and is UNDEMONSTRATED. Adopting the family claim would require either the disfavored 'to one's side' catch-all as the nucleus (rejected by all three) or elevating one clean class over an equally clean co-class. Because (i) the deviation sense (16:9) has no Quran-internal bridge to anything, and (ii) the adjacency↔refuge link is not Quran-internally demonstrated, the contract mandates an unresolved/multi-class result rather than forced unity. The substantive, resolvable content lives at the class level: refuge (IV/X + jaAr 8:48) is internally clean with a distinctive ajaAra+min+harm frame and IV↔X reciprocity (9:6); adjacency (III/VI + jaAr 4:36) is internally clean; deviation (16:9) is a lexicalized singleton. Hence UNRESOLVED_CLASS_ONLY, candidate_root_contribution=null.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "C_REFUGE_IV_X",
+     "where": {
+      "word_refs": [
+       "9:6:5:1",
+       "9:6:6:2",
+       "23:88:8:1",
+       "23:88:10:1",
+       "46:31:11:2",
+       "67:28:11:1",
+       "72:22:4:1",
+       "8:48:14:1"
+      ]
+     },
+     "occurrence_count_expected": 8,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Grant or seek refuge/sanctuary FROM a named incoming harm — extend/receive protection against a specified threat; internally clean but form-restricted to IV/X plus the lexicalized noun jaAr='protector/guarantor'.",
+     "classification_rationale": "Every form IV and the single form X occur here; the class is bound by the distinctive collocation ajaAra + min + [harm] (min 'adhaAb 46:31, 67:28; min Allah 72:22) or a battle safety-guarantee (8:48), and by the X↔IV reciprocity in one verse (9:6 istajaAra 'seeks refuge' / >ajir 'grant refuge'), and active/passive pairing (23:88 yujiyr / yujaAr). jaAr (8:48) is included by sense: Satan as protector/backer who then defects.",
+     "supporting_evidence_note": "9:6 pairs seeking (X) and granting (IV) as two sides of one institution; 23:88 pairs active yujiyr and passive yujaAru 'alayhi; 46:31/67:28/72:22 all construe with min [threat]. Distinctive and adversarially clean WITHIN the class, but it does not, by itself, generalize to the whole root.",
+     "counterevidence": [
+      "8:48:14:1"
+     ]
+    },
+    {
+     "cluster_id": "C_ADJACENCY_III_VI",
+     "where": {
+      "word_refs": [
+       "13:4:4:1",
+       "33:60:16:1",
+       "4:36:13:3",
+       "4:36:16:3"
+      ]
+     },
+     "occurrence_count_expected": 4,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Spatial adjacency / dwelling-alongside — being or placed next to; neutral to kinship, permanence, and protection.",
+     "classification_rationale": "Form III yujaAwiru (33:60, dwelling as neighbors, and revocable: illaA qaliylaa), form-VI participle mutajaAwiraAt (13:4, inanimate adjoining tracts), and the noun jaAr='neighbor' twice (4:36), the latter explicitly split into kin (dhiy al-qurbaa) and stranger (al-junub). Purely locational; 13:4 is inanimate so protection is impossible.",
+     "supporting_evidence_note": "4:36 anchors jaAr to nearness (qurbaa) and side (junub); 13:4 mutajaAwiraAt is bare contiguity; 33:60 shows adjacency can be brief and revocable. Internally coherent but shares no observable entailment with the refuge class.",
+     "counterevidence": [
+      "13:4:4:1"
+     ]
+    },
+    {
+     "cluster_id": "C_DEVIATION_ptcp",
+     "where": {
+      "word_refs": [
+       "16:9:6:1"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "Deviation / swerving off the straight, direct course — pejorative, opposed to qaSd al-sabiyl.",
+     "classification_rationale": "Form-I active participle jaA}ir, a single occurrence set explicitly against qaSd al-sabiyl (the direct aim of the path). Neither adjacency nor refuge is derivable from it except via an imposed 'lateral displacement' abstraction that no other occurrence independently attests; its unique pejorative polarity also breaks the neutral/positive senses.",
+     "supporting_evidence_note": "The only internal contrast given is qaSd (directness) ↔ jaA}ir (deviant); no proximity or sanctuary content is present. It is an unbridged lexicalized isolate.",
+     "counterevidence": [
+      "16:9:6:1"
+     ]
+    }
+   ],
+   "reconciliation": [
+    {
+     "word_ref": "8:48:14:1",
+     "final": "CONSISTENT",
+     "rationale": "The bridge rests on this one ambiguous nominal reading two ways; no verse states that a neighbor protects or that yujiyr min 'adhaAb is 'being alongside'. Per morphology != semantic identity, the seam is UNDEMONSTRATED, so 8:48 stays in the refuge class without licensing a root-level unification."
+    },
+    {
+     "word_ref": "16:9:6:1",
+     "final": "RESISTANT",
+     "rationale": "The text supplies only qaSd (direct) ↔ jaA}ir (deviant); 'sideways' is not Quran-internally derivable. The occurrence is a lexicalized deviation isolate and remains resistant, blocking any single nucleus."
+    }
+   ]
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "jwr",
+  "verdict": "NOT_APPLICABLE_UNRESOLVED_CLASS_ONLY",
+  "failing_occurrences": [
+   "16:9:6:1"
+  ],
+  "distinctiveness_ok": false,
+  "falsifiable": true,
+  "notes": "No single root-level candidate is asserted (candidate_root_contribution=null), so root-level adversarial falsification is not required. Any attempt to falsify a unified nucleus already fails: 16:9 jaA}ir is orthogonal and unreinforced, and the sole adjacency↔refuge link is a single ambiguous nominal (8:48). Distinctiveness fails for a unified claim because the only unifier is the everything-fitting 'to one's side' abstraction."
+ },
+ "coverage_validation": {
+  "root": "jwr",
+  "expected_count": 13,
+  "researched_count": 13,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [
+   "16:9:6:1"
+  ],
+  "unresolved_visible": [
+   "16:9:6:1"
+  ]
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "13:4:4:1",
+   "disposition": "CONSISTENT",
+   "note": "mutajaAwiraAt = inanimate adjoining plots; bare contiguity with zero protective content, defeating any protection-as-core reading.",
+   "coverage_cluster_id": "C_ADJACENCY_III_VI",
+   "candidate_semantic_interpretation": "Spatial adjacency / dwelling-alongside — being or placed next to; neutral to kinship, permanence, and protection.",
+   "cluster_supporting_evidence": "4:36 anchors jaAr to nearness (qurbaa) and side (junub); 13:4 mutajaAwiraAt is bare contiguity; 33:60 shows adjacency can be brief and revocable. Internally coherent but shares no observable entailment with the refuge class.",
+   "counterevidence": [
+    "13:4:4:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Form III yujaAwiru (33:60, dwelling as neighbors, and revocable: illaA qaliylaa), form-VI participle mutajaAwiraAt (13:4, inanimate adjoining tracts), and the noun jaAr='neighbor' twice (4:36), the latter explicitly split into kin (dhiy al-qurbaa) and stranger (al-junub). Purely locational; 13:4 is inanimate so protection is impossible.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "13:4",
+     "verse_text": "وَفِى ٱلْأَرْضِ قِطَعٌ مُّتَجَٰوِرَٰتٌ وَجَنَّٰتٌ مِّنْ أَعْنَٰبٍ وَزَرْعٌ وَنَخِيلٌ صِنْوَانٌ وَغَيْرُ صِنْوَانٍ يُسْقَىٰ بِمَآءٍ وَٰحِدٍ وَنُفَضِّلُ بَعْضَهَا عَلَىٰ بَعْضٍ فِى ٱلْأُكُلِ إِنَّ فِى ذَٰلِكَ لَـَٔايَٰتٍ لِّقَوْمٍ يَعْقِلُونَ"
+    }
+   ],
+   "root_arabic": "ج و ر",
+   "root_buckwalter": "jwr",
+   "root_id": "jwr",
+   "artifact_name": "jwr.json",
+   "verse_ref": "13:4",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "m~utaja`wira`tN",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَفِى ٱلْأَرْضِ قِطَعٌ مُّتَجَٰوِرَٰتٌ وَجَنَّٰتٌ مِّنْ أَعْنَٰبٍ وَزَرْعٌ وَنَخِيلٌ صِنْوَانٌ وَغَيْرُ صِنْوَانٍ يُسْقَىٰ بِمَآءٍ وَٰحِدٍ وَنُفَضِّلُ بَعْضَهَا عَلَىٰ بَعْضٍ فِى ٱلْأُكُلِ إِنَّ فِى ذَٰلِكَ لَـَٔايَٰتٍ لِّقَوْمٍ يَعْقِلُونَ"
+  },
+  {
+   "word_ref": "16:9:6:1",
+   "disposition": "RESISTANT",
+   "note": "jaA}ir 'deviating', opposed to qaSd; orthogonal to adjacency and refuge and unreinforced — defeats any unified root nucleus.",
+   "coverage_cluster_id": "C_DEVIATION_ptcp",
+   "candidate_semantic_interpretation": "Deviation / swerving off the straight, direct course — pejorative, opposed to qaSd al-sabiyl.",
+   "cluster_supporting_evidence": "The only internal contrast given is qaSd (directness) ↔ jaA}ir (deviant); no proximity or sanctuary content is present. It is an unbridged lexicalized isolate.",
+   "counterevidence": [
+    "16:9:6:1"
+   ],
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "Form-I active participle jaA}ir, a single occurrence set explicitly against qaSd al-sabiyl (the direct aim of the path). Neither adjacency nor refuge is derivable from it except via an imposed 'lateral displacement' abstraction that no other occurrence independently attests; its unique pejorative polarity also breaks the neutral/positive senses.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "The text supplies only qaSd (direct) ↔ jaA}ir (deviant); 'sideways' is not Quran-internally derivable. The occurrence is a lexicalized deviation isolate and remains resistant, blocking any single nucleus.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "16:9:6:1",
+     "preliminary_disposition": "RESISTANT",
+     "preliminary_note": "Could be folded into a 'to one's side' schema as 'turning aside'.",
+     "final_disposition": "RESISTANT",
+     "reconciliation_rationale": "The text supplies only qaSd (direct) ↔ jaA}ir (deviant); 'sideways' is not Quran-internally derivable. The occurrence is a lexicalized deviation isolate and remains resistant, blocking any single nucleus.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [
+    "16:9:6:1"
+   ],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "16:9",
+     "verse_text": "وَعَلَى ٱللَّهِ قَصْدُ ٱلسَّبِيلِ وَمِنْهَا جَآئِرٌ وَلَوْ شَآءَ لَهَدَىٰكُمْ أَجْمَعِينَ"
+    }
+   ],
+   "root_arabic": "ج و ر",
+   "root_buckwalter": "jwr",
+   "root_id": "jwr",
+   "artifact_name": "jwr.json",
+   "verse_ref": "16:9",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "jaA^}irN",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَعَلَى ٱللَّهِ قَصْدُ ٱلسَّبِيلِ وَمِنْهَا جَآئِرٌ وَلَوْ شَآءَ لَهَدَىٰكُمْ أَجْمَعِينَ",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "23:88:10:1",
+   "disposition": "CONSISTENT",
+   "note": "Every form IV and the single form X occur here; the class is bound by the distinctive collocation ajaAra + min + [harm] (min 'adhaAb 46:31, 67:28; min Allah 72:22) or a battle safety-guarantee (8:48), and by the X↔IV reciprocity in one verse (9:6 istajaAra 'seeks refuge' / >ajir 'grant refuge'), and active/passive pairing (23:88 yujiyr / yujaAr). jaAr (8:48) is included by sense: Satan as protector/backer who then defects.",
+   "coverage_cluster_id": "C_REFUGE_IV_X",
+   "candidate_semantic_interpretation": "Grant or seek refuge/sanctuary FROM a named incoming harm — extend/receive protection against a specified threat; internally clean but form-restricted to IV/X plus the lexicalized noun jaAr='protector/guarantor'.",
+   "cluster_supporting_evidence": "9:6 pairs seeking (X) and granting (IV) as two sides of one institution; 23:88 pairs active yujiyr and passive yujaAru 'alayhi; 46:31/67:28/72:22 all construe with min [threat]. Distinctive and adversarially clean WITHIN the class, but it does not, by itself, generalize to the whole root.",
+   "counterevidence": [
+    "8:48:14:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Every form IV and the single form X occur here; the class is bound by the distinctive collocation ajaAra + min + [harm] (min 'adhaAb 46:31, 67:28; min Allah 72:22) or a battle safety-guarantee (8:48), and by the X↔IV reciprocity in one verse (9:6 istajaAra 'seeks refuge' / >ajir 'grant refuge'), and active/passive pairing (23:88 yujiyr / yujaAr). jaAr (8:48) is included by sense: Satan as protector/backer who then defects.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "23:88",
+     "verse_text": "قُلْ مَنۢ بِيَدِهِۦ مَلَكُوتُ كُلِّ شَىْءٍ وَهُوَ يُجِيرُ وَلَا يُجَارُ عَلَيْهِ إِن كُنتُمْ تَعْلَمُونَ"
+    }
+   ],
+   "root_arabic": "ج و ر",
+   "root_buckwalter": "jwr",
+   "root_id": "jwr",
+   "artifact_name": "jwr.json",
+   "verse_ref": "23:88",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yujaAru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قُلْ مَنۢ بِيَدِهِۦ مَلَكُوتُ كُلِّ شَىْءٍ وَهُوَ يُجِيرُ وَلَا يُجَارُ عَلَيْهِ إِن كُنتُمْ تَعْلَمُونَ"
+  },
+  {
+   "word_ref": "23:88:8:1",
+   "disposition": "CONSISTENT",
+   "note": "Every form IV and the single form X occur here; the class is bound by the distinctive collocation ajaAra + min + [harm] (min 'adhaAb 46:31, 67:28; min Allah 72:22) or a battle safety-guarantee (8:48), and by the X↔IV reciprocity in one verse (9:6 istajaAra 'seeks refuge' / >ajir 'grant refuge'), and active/passive pairing (23:88 yujiyr / yujaAr). jaAr (8:48) is included by sense: Satan as protector/backer who then defects.",
+   "coverage_cluster_id": "C_REFUGE_IV_X",
+   "candidate_semantic_interpretation": "Grant or seek refuge/sanctuary FROM a named incoming harm — extend/receive protection against a specified threat; internally clean but form-restricted to IV/X plus the lexicalized noun jaAr='protector/guarantor'.",
+   "cluster_supporting_evidence": "9:6 pairs seeking (X) and granting (IV) as two sides of one institution; 23:88 pairs active yujiyr and passive yujaAru 'alayhi; 46:31/67:28/72:22 all construe with min [threat]. Distinctive and adversarially clean WITHIN the class, but it does not, by itself, generalize to the whole root.",
+   "counterevidence": [
+    "8:48:14:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Every form IV and the single form X occur here; the class is bound by the distinctive collocation ajaAra + min + [harm] (min 'adhaAb 46:31, 67:28; min Allah 72:22) or a battle safety-guarantee (8:48), and by the X↔IV reciprocity in one verse (9:6 istajaAra 'seeks refuge' / >ajir 'grant refuge'), and active/passive pairing (23:88 yujiyr / yujaAr). jaAr (8:48) is included by sense: Satan as protector/backer who then defects.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "23:88",
+     "verse_text": "قُلْ مَنۢ بِيَدِهِۦ مَلَكُوتُ كُلِّ شَىْءٍ وَهُوَ يُجِيرُ وَلَا يُجَارُ عَلَيْهِ إِن كُنتُمْ تَعْلَمُونَ"
+    }
+   ],
+   "root_arabic": "ج و ر",
+   "root_buckwalter": "jwr",
+   "root_id": "jwr",
+   "artifact_name": "jwr.json",
+   "verse_ref": "23:88",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yujiyru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قُلْ مَنۢ بِيَدِهِۦ مَلَكُوتُ كُلِّ شَىْءٍ وَهُوَ يُجِيرُ وَلَا يُجَارُ عَلَيْهِ إِن كُنتُمْ تَعْلَمُونَ"
+  },
+  {
+   "word_ref": "33:60:16:1",
+   "disposition": "CONSISTENT",
+   "note": "Form III yujaAwiru (33:60, dwelling as neighbors, and revocable: illaA qaliylaa), form-VI participle mutajaAwiraAt (13:4, inanimate adjoining tracts), and the noun jaAr='neighbor' twice (4:36), the latter explicitly split into kin (dhiy al-qurbaa) and stranger (al-junub). Purely locational; 13:4 is inanimate so protection is impossible.",
+   "coverage_cluster_id": "C_ADJACENCY_III_VI",
+   "candidate_semantic_interpretation": "Spatial adjacency / dwelling-alongside — being or placed next to; neutral to kinship, permanence, and protection.",
+   "cluster_supporting_evidence": "4:36 anchors jaAr to nearness (qurbaa) and side (junub); 13:4 mutajaAwiraAt is bare contiguity; 33:60 shows adjacency can be brief and revocable. Internally coherent but shares no observable entailment with the refuge class.",
+   "counterevidence": [
+    "13:4:4:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Form III yujaAwiru (33:60, dwelling as neighbors, and revocable: illaA qaliylaa), form-VI participle mutajaAwiraAt (13:4, inanimate adjoining tracts), and the noun jaAr='neighbor' twice (4:36), the latter explicitly split into kin (dhiy al-qurbaa) and stranger (al-junub). Purely locational; 13:4 is inanimate so protection is impossible.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "33:60",
+     "verse_text": "لَّئِن لَّمْ يَنتَهِ ٱلْمُنَٰفِقُونَ وَٱلَّذِينَ فِى قُلُوبِهِم مَّرَضٌ وَٱلْمُرْجِفُونَ فِى ٱلْمَدِينَةِ لَنُغْرِيَنَّكَ بِهِمْ ثُمَّ لَا يُجَاوِرُونَكَ فِيهَآ إِلَّا قَلِيلًا"
+    }
+   ],
+   "root_arabic": "ج و ر",
+   "root_buckwalter": "jwr",
+   "root_id": "jwr",
+   "artifact_name": "jwr.json",
+   "verse_ref": "33:60",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yujaAwiru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "III",
+   "morphology": "V(III)",
+   "form": "V(III)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لَّئِن لَّمْ يَنتَهِ ٱلْمُنَٰفِقُونَ وَٱلَّذِينَ فِى قُلُوبِهِم مَّرَضٌ وَٱلْمُرْجِفُونَ فِى ٱلْمَدِينَةِ لَنُغْرِيَنَّكَ بِهِمْ ثُمَّ لَا يُجَاوِرُونَكَ فِيهَآ إِلَّا قَلِيلًا"
+  },
+  {
+   "word_ref": "46:31:11:2",
+   "disposition": "CONSISTENT",
+   "note": "Every form IV and the single form X occur here; the class is bound by the distinctive collocation ajaAra + min + [harm] (min 'adhaAb 46:31, 67:28; min Allah 72:22) or a battle safety-guarantee (8:48), and by the X↔IV reciprocity in one verse (9:6 istajaAra 'seeks refuge' / >ajir 'grant refuge'), and active/passive pairing (23:88 yujiyr / yujaAr). jaAr (8:48) is included by sense: Satan as protector/backer who then defects.",
+   "coverage_cluster_id": "C_REFUGE_IV_X",
+   "candidate_semantic_interpretation": "Grant or seek refuge/sanctuary FROM a named incoming harm — extend/receive protection against a specified threat; internally clean but form-restricted to IV/X plus the lexicalized noun jaAr='protector/guarantor'.",
+   "cluster_supporting_evidence": "9:6 pairs seeking (X) and granting (IV) as two sides of one institution; 23:88 pairs active yujiyr and passive yujaAru 'alayhi; 46:31/67:28/72:22 all construe with min [threat]. Distinctive and adversarially clean WITHIN the class, but it does not, by itself, generalize to the whole root.",
+   "counterevidence": [
+    "8:48:14:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Every form IV and the single form X occur here; the class is bound by the distinctive collocation ajaAra + min + [harm] (min 'adhaAb 46:31, 67:28; min Allah 72:22) or a battle safety-guarantee (8:48), and by the X↔IV reciprocity in one verse (9:6 istajaAra 'seeks refuge' / >ajir 'grant refuge'), and active/passive pairing (23:88 yujiyr / yujaAr). jaAr (8:48) is included by sense: Satan as protector/backer who then defects.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "46:31",
+     "verse_text": "يَٰقَوْمَنَآ أَجِيبُوا۟ دَاعِىَ ٱللَّهِ وَءَامِنُوا۟ بِهِۦ يَغْفِرْ لَكُم مِّن ذُنُوبِكُمْ وَيُجِرْكُم مِّنْ عَذَابٍ أَلِيمٍ"
+    }
+   ],
+   "root_arabic": "ج و ر",
+   "root_buckwalter": "jwr",
+   "root_id": "jwr",
+   "artifact_name": "jwr.json",
+   "verse_ref": "46:31",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yujiro",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰقَوْمَنَآ أَجِيبُوا۟ دَاعِىَ ٱللَّهِ وَءَامِنُوا۟ بِهِۦ يَغْفِرْ لَكُم مِّن ذُنُوبِكُمْ وَيُجِرْكُم مِّنْ عَذَابٍ أَلِيمٍ"
+  },
+  {
+   "word_ref": "4:36:13:3",
+   "disposition": "CONSISTENT",
+   "note": "Form III yujaAwiru (33:60, dwelling as neighbors, and revocable: illaA qaliylaa), form-VI participle mutajaAwiraAt (13:4, inanimate adjoining tracts), and the noun jaAr='neighbor' twice (4:36), the latter explicitly split into kin (dhiy al-qurbaa) and stranger (al-junub). Purely locational; 13:4 is inanimate so protection is impossible.",
+   "coverage_cluster_id": "C_ADJACENCY_III_VI",
+   "candidate_semantic_interpretation": "Spatial adjacency / dwelling-alongside — being or placed next to; neutral to kinship, permanence, and protection.",
+   "cluster_supporting_evidence": "4:36 anchors jaAr to nearness (qurbaa) and side (junub); 13:4 mutajaAwiraAt is bare contiguity; 33:60 shows adjacency can be brief and revocable. Internally coherent but shares no observable entailment with the refuge class.",
+   "counterevidence": [
+    "13:4:4:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Form III yujaAwiru (33:60, dwelling as neighbors, and revocable: illaA qaliylaa), form-VI participle mutajaAwiraAt (13:4, inanimate adjoining tracts), and the noun jaAr='neighbor' twice (4:36), the latter explicitly split into kin (dhiy al-qurbaa) and stranger (al-junub). Purely locational; 13:4 is inanimate so protection is impossible.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "4:36",
+     "verse_text": "وَٱعْبُدُوا۟ ٱللَّهَ وَلَا تُشْرِكُوا۟ بِهِۦ شَيْـًٔا وَبِٱلْوَٰلِدَيْنِ إِحْسَٰنًا وَبِذِى ٱلْقُرْبَىٰ وَٱلْيَتَٰمَىٰ وَٱلْمَسَٰكِينِ وَٱلْجَارِ ذِى ٱلْقُرْبَىٰ وَٱلْجَارِ ٱلْجُنُبِ وَٱلصَّاحِبِ بِٱلْجَنۢبِ وَٱبْنِ ٱلسَّبِيلِ وَمَا مَلَكَتْ أَيْمَٰنُكُمْ إِنَّ ٱللَّهَ لَا يُحِبُّ مَن كَانَ مُخْتَالًا فَخُورًا"
+    }
+   ],
+   "root_arabic": "ج و ر",
+   "root_buckwalter": "jwr",
+   "root_id": "jwr",
+   "artifact_name": "jwr.json",
+   "verse_ref": "4:36",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "jaAri",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱعْبُدُوا۟ ٱللَّهَ وَلَا تُشْرِكُوا۟ بِهِۦ شَيْـًٔا وَبِٱلْوَٰلِدَيْنِ إِحْسَٰنًا وَبِذِى ٱلْقُرْبَىٰ وَٱلْيَتَٰمَىٰ وَٱلْمَسَٰكِينِ وَٱلْجَارِ ذِى ٱلْقُرْبَىٰ وَٱلْجَارِ ٱلْجُنُبِ وَٱلصَّاحِبِ بِٱلْجَنۢبِ وَٱبْنِ ٱلسَّبِيلِ وَمَا مَلَكَتْ أَيْمَٰنُكُمْ إِنَّ ٱللَّهَ لَا يُحِبُّ مَن كَانَ مُخْتَالًا فَخُورًا"
+  },
+  {
+   "word_ref": "4:36:16:3",
+   "disposition": "CONSISTENT",
+   "note": "Form III yujaAwiru (33:60, dwelling as neighbors, and revocable: illaA qaliylaa), form-VI participle mutajaAwiraAt (13:4, inanimate adjoining tracts), and the noun jaAr='neighbor' twice (4:36), the latter explicitly split into kin (dhiy al-qurbaa) and stranger (al-junub). Purely locational; 13:4 is inanimate so protection is impossible.",
+   "coverage_cluster_id": "C_ADJACENCY_III_VI",
+   "candidate_semantic_interpretation": "Spatial adjacency / dwelling-alongside — being or placed next to; neutral to kinship, permanence, and protection.",
+   "cluster_supporting_evidence": "4:36 anchors jaAr to nearness (qurbaa) and side (junub); 13:4 mutajaAwiraAt is bare contiguity; 33:60 shows adjacency can be brief and revocable. Internally coherent but shares no observable entailment with the refuge class.",
+   "counterevidence": [
+    "13:4:4:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Form III yujaAwiru (33:60, dwelling as neighbors, and revocable: illaA qaliylaa), form-VI participle mutajaAwiraAt (13:4, inanimate adjoining tracts), and the noun jaAr='neighbor' twice (4:36), the latter explicitly split into kin (dhiy al-qurbaa) and stranger (al-junub). Purely locational; 13:4 is inanimate so protection is impossible.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "4:36",
+     "verse_text": "وَٱعْبُدُوا۟ ٱللَّهَ وَلَا تُشْرِكُوا۟ بِهِۦ شَيْـًٔا وَبِٱلْوَٰلِدَيْنِ إِحْسَٰنًا وَبِذِى ٱلْقُرْبَىٰ وَٱلْيَتَٰمَىٰ وَٱلْمَسَٰكِينِ وَٱلْجَارِ ذِى ٱلْقُرْبَىٰ وَٱلْجَارِ ٱلْجُنُبِ وَٱلصَّاحِبِ بِٱلْجَنۢبِ وَٱبْنِ ٱلسَّبِيلِ وَمَا مَلَكَتْ أَيْمَٰنُكُمْ إِنَّ ٱللَّهَ لَا يُحِبُّ مَن كَانَ مُخْتَالًا فَخُورًا"
+    }
+   ],
+   "root_arabic": "ج و ر",
+   "root_buckwalter": "jwr",
+   "root_id": "jwr",
+   "artifact_name": "jwr.json",
+   "verse_ref": "4:36",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "jaAri",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱعْبُدُوا۟ ٱللَّهَ وَلَا تُشْرِكُوا۟ بِهِۦ شَيْـًٔا وَبِٱلْوَٰلِدَيْنِ إِحْسَٰنًا وَبِذِى ٱلْقُرْبَىٰ وَٱلْيَتَٰمَىٰ وَٱلْمَسَٰكِينِ وَٱلْجَارِ ذِى ٱلْقُرْبَىٰ وَٱلْجَارِ ٱلْجُنُبِ وَٱلصَّاحِبِ بِٱلْجَنۢبِ وَٱبْنِ ٱلسَّبِيلِ وَمَا مَلَكَتْ أَيْمَٰنُكُمْ إِنَّ ٱللَّهَ لَا يُحِبُّ مَن كَانَ مُخْتَالًا فَخُورًا"
+  },
+  {
+   "word_ref": "67:28:11:1",
+   "disposition": "CONSISTENT",
+   "note": "Every form IV and the single form X occur here; the class is bound by the distinctive collocation ajaAra + min + [harm] (min 'adhaAb 46:31, 67:28; min Allah 72:22) or a battle safety-guarantee (8:48), and by the X↔IV reciprocity in one verse (9:6 istajaAra 'seeks refuge' / >ajir 'grant refuge'), and active/passive pairing (23:88 yujiyr / yujaAr). jaAr (8:48) is included by sense: Satan as protector/backer who then defects.",
+   "coverage_cluster_id": "C_REFUGE_IV_X",
+   "candidate_semantic_interpretation": "Grant or seek refuge/sanctuary FROM a named incoming harm — extend/receive protection against a specified threat; internally clean but form-restricted to IV/X plus the lexicalized noun jaAr='protector/guarantor'.",
+   "cluster_supporting_evidence": "9:6 pairs seeking (X) and granting (IV) as two sides of one institution; 23:88 pairs active yujiyr and passive yujaAru 'alayhi; 46:31/67:28/72:22 all construe with min [threat]. Distinctive and adversarially clean WITHIN the class, but it does not, by itself, generalize to the whole root.",
+   "counterevidence": [
+    "8:48:14:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Every form IV and the single form X occur here; the class is bound by the distinctive collocation ajaAra + min + [harm] (min 'adhaAb 46:31, 67:28; min Allah 72:22) or a battle safety-guarantee (8:48), and by the X↔IV reciprocity in one verse (9:6 istajaAra 'seeks refuge' / >ajir 'grant refuge'), and active/passive pairing (23:88 yujiyr / yujaAr). jaAr (8:48) is included by sense: Satan as protector/backer who then defects.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "67:28",
+     "verse_text": "قُلْ أَرَءَيْتُمْ إِنْ أَهْلَكَنِىَ ٱللَّهُ وَمَن مَّعِىَ أَوْ رَحِمَنَا فَمَن يُجِيرُ ٱلْكَٰفِرِينَ مِنْ عَذَابٍ أَلِيمٍ"
+    }
+   ],
+   "root_arabic": "ج و ر",
+   "root_buckwalter": "jwr",
+   "root_id": "jwr",
+   "artifact_name": "jwr.json",
+   "verse_ref": "67:28",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yujiyru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قُلْ أَرَءَيْتُمْ إِنْ أَهْلَكَنِىَ ٱللَّهُ وَمَن مَّعِىَ أَوْ رَحِمَنَا فَمَن يُجِيرُ ٱلْكَٰفِرِينَ مِنْ عَذَابٍ أَلِيمٍ"
+  },
+  {
+   "word_ref": "72:22:4:1",
+   "disposition": "CONSISTENT",
+   "note": "Every form IV and the single form X occur here; the class is bound by the distinctive collocation ajaAra + min + [harm] (min 'adhaAb 46:31, 67:28; min Allah 72:22) or a battle safety-guarantee (8:48), and by the X↔IV reciprocity in one verse (9:6 istajaAra 'seeks refuge' / >ajir 'grant refuge'), and active/passive pairing (23:88 yujiyr / yujaAr). jaAr (8:48) is included by sense: Satan as protector/backer who then defects.",
+   "coverage_cluster_id": "C_REFUGE_IV_X",
+   "candidate_semantic_interpretation": "Grant or seek refuge/sanctuary FROM a named incoming harm — extend/receive protection against a specified threat; internally clean but form-restricted to IV/X plus the lexicalized noun jaAr='protector/guarantor'.",
+   "cluster_supporting_evidence": "9:6 pairs seeking (X) and granting (IV) as two sides of one institution; 23:88 pairs active yujiyr and passive yujaAru 'alayhi; 46:31/67:28/72:22 all construe with min [threat]. Distinctive and adversarially clean WITHIN the class, but it does not, by itself, generalize to the whole root.",
+   "counterevidence": [
+    "8:48:14:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Every form IV and the single form X occur here; the class is bound by the distinctive collocation ajaAra + min + [harm] (min 'adhaAb 46:31, 67:28; min Allah 72:22) or a battle safety-guarantee (8:48), and by the X↔IV reciprocity in one verse (9:6 istajaAra 'seeks refuge' / >ajir 'grant refuge'), and active/passive pairing (23:88 yujiyr / yujaAr). jaAr (8:48) is included by sense: Satan as protector/backer who then defects.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "72:22",
+     "verse_text": "قُلْ إِنِّى لَن يُجِيرَنِى مِنَ ٱللَّهِ أَحَدٌ وَلَنْ أَجِدَ مِن دُونِهِۦ مُلْتَحَدًا"
+    }
+   ],
+   "root_arabic": "ج و ر",
+   "root_buckwalter": "jwr",
+   "root_id": "jwr",
+   "artifact_name": "jwr.json",
+   "verse_ref": "72:22",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yujiyra",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قُلْ إِنِّى لَن يُجِيرَنِى مِنَ ٱللَّهِ أَحَدٌ وَلَنْ أَجِدَ مِن دُونِهِۦ مُلْتَحَدًا"
+  },
+  {
+   "word_ref": "8:48:14:1",
+   "disposition": "CONSISTENT",
+   "note": "jaAr = protector/guarantor (Satan), the SAME nominal form as neighbor in 4:36; this is the sole cross-class hinge and it is a single ambiguous nominal, not a demonstrated bridge.",
+   "coverage_cluster_id": "C_REFUGE_IV_X",
+   "candidate_semantic_interpretation": "Grant or seek refuge/sanctuary FROM a named incoming harm — extend/receive protection against a specified threat; internally clean but form-restricted to IV/X plus the lexicalized noun jaAr='protector/guarantor'.",
+   "cluster_supporting_evidence": "9:6 pairs seeking (X) and granting (IV) as two sides of one institution; 23:88 pairs active yujiyr and passive yujaAru 'alayhi; 46:31/67:28/72:22 all construe with min [threat]. Distinctive and adversarially clean WITHIN the class, but it does not, by itself, generalize to the whole root.",
+   "counterevidence": [
+    "8:48:14:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Every form IV and the single form X occur here; the class is bound by the distinctive collocation ajaAra + min + [harm] (min 'adhaAb 46:31, 67:28; min Allah 72:22) or a battle safety-guarantee (8:48), and by the X↔IV reciprocity in one verse (9:6 istajaAra 'seeks refuge' / >ajir 'grant refuge'), and active/passive pairing (23:88 yujiyr / yujaAr). jaAr (8:48) is included by sense: Satan as protector/backer who then defects.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": "The bridge rests on this one ambiguous nominal reading two ways; no verse states that a neighbor protects or that yujiyr min 'adhaAb is 'being alongside'. Per morphology != semantic identity, the seam is UNDEMONSTRATED, so 8:48 stays in the refuge class without licensing a root-level unification.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "8:48:14:1",
+     "preliminary_disposition": "CONSISTENT",
+     "preliminary_note": "jaAr='protector' could bridge the neighbor-noun (4:36) to the refuge sense, unifying adjacency and protection into one jiwaAr field.",
+     "final_disposition": "CONSISTENT",
+     "reconciliation_rationale": "The bridge rests on this one ambiguous nominal reading two ways; no verse states that a neighbor protects or that yujiyr min 'adhaAb is 'being alongside'. Per morphology != semantic identity, the seam is UNDEMONSTRATED, so 8:48 stays in the refuge class without licensing a root-level unification.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [
+    "8:48:14:1"
+   ],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "8:48",
+     "verse_text": "وَإِذْ زَيَّنَ لَهُمُ ٱلشَّيْطَٰنُ أَعْمَٰلَهُمْ وَقَالَ لَا غَالِبَ لَكُمُ ٱلْيَوْمَ مِنَ ٱلنَّاسِ وَإِنِّى جَارٌ لَّكُمْ فَلَمَّا تَرَآءَتِ ٱلْفِئَتَانِ نَكَصَ عَلَىٰ عَقِبَيْهِ وَقَالَ إِنِّى بَرِىٓءٌ مِّنكُمْ إِنِّىٓ أَرَىٰ مَا لَا تَرَوْنَ إِنِّىٓ أَخَافُ ٱللَّهَ وَٱللَّهُ شَدِيدُ ٱلْعِقَابِ"
+    }
+   ],
+   "root_arabic": "ج و ر",
+   "root_buckwalter": "jwr",
+   "root_id": "jwr",
+   "artifact_name": "jwr.json",
+   "verse_ref": "8:48",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "jaArN",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِذْ زَيَّنَ لَهُمُ ٱلشَّيْطَٰنُ أَعْمَٰلَهُمْ وَقَالَ لَا غَالِبَ لَكُمُ ٱلْيَوْمَ مِنَ ٱلنَّاسِ وَإِنِّى جَارٌ لَّكُمْ فَلَمَّا تَرَآءَتِ ٱلْفِئَتَانِ نَكَصَ عَلَىٰ عَقِبَيْهِ وَقَالَ إِنِّى بَرِىٓءٌ مِّنكُمْ إِنِّىٓ أَرَىٰ مَا لَا تَرَوْنَ إِنِّىٓ أَخَافُ ٱللَّهَ وَٱللَّهُ شَدِيدُ ٱلْعِقَابِ"
+  },
+  {
+   "word_ref": "9:6:5:1",
+   "disposition": "CONSISTENT",
+   "note": "Every form IV and the single form X occur here; the class is bound by the distinctive collocation ajaAra + min + [harm] (min 'adhaAb 46:31, 67:28; min Allah 72:22) or a battle safety-guarantee (8:48), and by the X↔IV reciprocity in one verse (9:6 istajaAra 'seeks refuge' / >ajir 'grant refuge'), and active/passive pairing (23:88 yujiyr / yujaAr). jaAr (8:48) is included by sense: Satan as protector/backer who then defects.",
+   "coverage_cluster_id": "C_REFUGE_IV_X",
+   "candidate_semantic_interpretation": "Grant or seek refuge/sanctuary FROM a named incoming harm — extend/receive protection against a specified threat; internally clean but form-restricted to IV/X plus the lexicalized noun jaAr='protector/guarantor'.",
+   "cluster_supporting_evidence": "9:6 pairs seeking (X) and granting (IV) as two sides of one institution; 23:88 pairs active yujiyr and passive yujaAru 'alayhi; 46:31/67:28/72:22 all construe with min [threat]. Distinctive and adversarially clean WITHIN the class, but it does not, by itself, generalize to the whole root.",
+   "counterevidence": [
+    "8:48:14:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Every form IV and the single form X occur here; the class is bound by the distinctive collocation ajaAra + min + [harm] (min 'adhaAb 46:31, 67:28; min Allah 72:22) or a battle safety-guarantee (8:48), and by the X↔IV reciprocity in one verse (9:6 istajaAra 'seeks refuge' / >ajir 'grant refuge'), and active/passive pairing (23:88 yujiyr / yujaAr). jaAr (8:48) is included by sense: Satan as protector/backer who then defects.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "9:6",
+     "verse_text": "وَإِنْ أَحَدٌ مِّنَ ٱلْمُشْرِكِينَ ٱسْتَجَارَكَ فَأَجِرْهُ حَتَّىٰ يَسْمَعَ كَلَٰمَ ٱللَّهِ ثُمَّ أَبْلِغْهُ مَأْمَنَهُۥ ذَٰلِكَ بِأَنَّهُمْ قَوْمٌ لَّا يَعْلَمُونَ"
+    }
+   ],
+   "root_arabic": "ج و ر",
+   "root_buckwalter": "jwr",
+   "root_id": "jwr",
+   "artifact_name": "jwr.json",
+   "verse_ref": "9:6",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{sotajaAra",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِنْ أَحَدٌ مِّنَ ٱلْمُشْرِكِينَ ٱسْتَجَارَكَ فَأَجِرْهُ حَتَّىٰ يَسْمَعَ كَلَٰمَ ٱللَّهِ ثُمَّ أَبْلِغْهُ مَأْمَنَهُۥ ذَٰلِكَ بِأَنَّهُمْ قَوْمٌ لَّا يَعْلَمُونَ"
+  },
+  {
+   "word_ref": "9:6:6:2",
+   "disposition": "CONSISTENT",
+   "note": "Every form IV and the single form X occur here; the class is bound by the distinctive collocation ajaAra + min + [harm] (min 'adhaAb 46:31, 67:28; min Allah 72:22) or a battle safety-guarantee (8:48), and by the X↔IV reciprocity in one verse (9:6 istajaAra 'seeks refuge' / >ajir 'grant refuge'), and active/passive pairing (23:88 yujiyr / yujaAr). jaAr (8:48) is included by sense: Satan as protector/backer who then defects.",
+   "coverage_cluster_id": "C_REFUGE_IV_X",
+   "candidate_semantic_interpretation": "Grant or seek refuge/sanctuary FROM a named incoming harm — extend/receive protection against a specified threat; internally clean but form-restricted to IV/X plus the lexicalized noun jaAr='protector/guarantor'.",
+   "cluster_supporting_evidence": "9:6 pairs seeking (X) and granting (IV) as two sides of one institution; 23:88 pairs active yujiyr and passive yujaAru 'alayhi; 46:31/67:28/72:22 all construe with min [threat]. Distinctive and adversarially clean WITHIN the class, but it does not, by itself, generalize to the whole root.",
+   "counterevidence": [
+    "8:48:14:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Every form IV and the single form X occur here; the class is bound by the distinctive collocation ajaAra + min + [harm] (min 'adhaAb 46:31, 67:28; min Allah 72:22) or a battle safety-guarantee (8:48), and by the X↔IV reciprocity in one verse (9:6 istajaAra 'seeks refuge' / >ajir 'grant refuge'), and active/passive pairing (23:88 yujiyr / yujaAr). jaAr (8:48) is included by sense: Satan as protector/backer who then defects.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "9:6",
+     "verse_text": "وَإِنْ أَحَدٌ مِّنَ ٱلْمُشْرِكِينَ ٱسْتَجَارَكَ فَأَجِرْهُ حَتَّىٰ يَسْمَعَ كَلَٰمَ ٱللَّهِ ثُمَّ أَبْلِغْهُ مَأْمَنَهُۥ ذَٰلِكَ بِأَنَّهُمْ قَوْمٌ لَّا يَعْلَمُونَ"
+    }
+   ],
+   "root_arabic": "ج و ر",
+   "root_buckwalter": "jwr",
+   "root_id": "jwr",
+   "artifact_name": "jwr.json",
+   "verse_ref": "9:6",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">ajiro",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِنْ أَحَدٌ مِّنَ ٱلْمُشْرِكِينَ ٱسْتَجَارَكَ فَأَجِرْهُ حَتَّىٰ يَسْمَعَ كَلَٰمَ ٱللَّهِ ثُمَّ أَبْلِغْهُ مَأْمَنَهُۥ ذَٰلِكَ بِأَنَّهُمْ قَوْمٌ لَّا يَعْلَمُونَ"
+  }
+ ],
+ "resistant_deep_analysis": [
+  {
+   "word_ref": "16:9:6:1",
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "Form-I active participle jaA}ir, a single occurrence set explicitly against qaSd al-sabiyl (the direct aim of the path). Neither adjacency nor refuge is derivable from it except via an imposed 'lateral displacement' abstraction that no other occurrence independently attests; its unique pejorative polarity also breaks the neutral/positive senses.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "The text supplies only qaSd (direct) ↔ jaA}ir (deviant); 'sideways' is not Quran-internally derivable. The occurrence is a lexicalized deviation isolate and remains resistant, blocking any single nucleus.",
+   "deep_analysis": true
+  }
+ ],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "UNRESOLVED",
+ "result_strength": "UNRESOLVED",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "All 13 word_refs, forms (N=5, V(III)=1, V(IV)=6, V(X)=1), and verse_texts confirmed against the packet; the three lenses independently converged on no-single-nucleus and on 16:9 as the resistant isolate.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "16:9:6:1"
+ ],
+ "unreconciled_count": 1,
+ "resistant_occurrences": [
+  "16:9:6:1"
+ ],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": null,
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "LOCAL",
+ "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
+ "layer_attribution": {
+  "occurrence_evidence": "13/13 occurrences read with confirmed QAC morphology: N=5 (13:4 mutajaAwiraAt, 16:9 jaA}ir, 4:36 jaAr x2, 8:48 jaAr), V(III)=1 (33:60 yujaAwiru), V(IV)=6 (23:88 yujiyr+yujaAr, 46:31 yujir, 67:28 yujiyr, 72:22 yujiyra, 9:6 >ajir), V(X)=1 (9:6 istajaAra).",
+  "derivation": "Meaning tracks derivational form: III/VI -> adjacency; IV/X -> refuge-from-threat; I active participle -> deviation. This clean form-to-sense partition is itself evidence of per-form lexicalization rather than one productive live nucleus.",
+  "lexical_class": "Three lexicalized senses: refuge/sanctuary (IV/X + jaAr 'protector' 8:48), spatial adjacency (III/VI + jaAr 'neighbor' 4:36), deviation (jaA}ir 16:9). jaAr is homonymous across the first two.",
+  "contextual_relation": "Contextual/narrative colorings (Satan's false guarantee 8:48; threat of expulsion 33:60; rescue from God denied 72:22) are NOT elevated to root meaning; they instantiate, but do not define, the class-level senses.",
+  "reconciliation": "Preliminary attempts to unify adjacency+refuge via jaAr (8:48) and to fold 16:9 into a 'to one's side' schema were both withdrawn: the seam is one ambiguous nominal and 'sideways' is not Quran-internally derivable, so the classes remain distinct and the root stays unresolved.",
+  "unresolved_resistance": "16:9 jaA}ir persists as an unbridged deviation isolate (RESISTANT_SEAM), and the adjacency<->refuge bridge remains UNDEMONSTRATED (single-nominal hinge 8:48); per contract this yields an honest multi-class UNRESOLVED result rather than a forced nucleus."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "16:9:6:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "Form-I participle jaA}ir 'deviating', opposed to qaSd al-sabiyl; semantically orthogonal to both adjacency and refuge and unreinforced by any other occurrence, so it defeats any unified root nucleus.",
+   "evidence_basis": {
+    "kind": "CONTRASTIVE_INTERNAL",
+    "statement": "16:9 jaA}ir is anchored to qaSd al-sabiyl (the straight) and yields deviation, neither adjacency nor refuge, and stands as a single unreinforced occurrence."
+   }
+  },
+  {
+   "word_ref": "8:48:14:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "jaAr='protector' is the SAME nominal as neighbor (4:36); it is the sole candidate bridge between the adjacency and refuge classes, and its being a single ambiguous nominal is exactly why the bridge is undemonstrated.",
+   "evidence_basis": {
+    "kind": "SINGLE_NOMINAL_HINGE",
+    "statement": "The only link between adjacency and refuge is the one noun jaAr reading as protector (8:48) vs neighbor (4:36), an ambiguous nominal, not a demonstrated Quran-internal bridge."
+   }
+  },
+  {
+   "word_ref": "13:4:4:1",
+   "role": "STRUCTURAL_ATYPICALITY",
+   "reason": "mutajaAwiraAt applies to inanimate adjoining tracts of land with zero protective content, showing adjacency and refuge share no distributed entailment and refuting protection-as-core.",
+   "evidence_basis": {
+    "kind": "CONTRASTIVE_INTERNAL",
+    "statement": "13:4 mutajaAwiraAt is inanimate bare contiguity with no protective content, so protection cannot be the universal core of the root."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL",
+  "rationale": "The root persists as multiple form-partitioned classes whose cross-class bridges are not Quran-internally demonstrated: 16:9 deviation is an unbridged isolate (RESISTANT_SEAM), and the adjacency↔refuge link is carried by a single ambiguous nominal (8:48 jaAr) that cannot demonstrate unity. This resistance is genuine and adversarially surfaced, not an artifact of insufficient reading (13/13 covered)."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A Quran-internal bridge that demonstrably unifies the adjacency and refuge classes across the form partition (e.g., a verse where a jaAr/neighbor relation itself enacts refuge, or where yujiyr min [harm] is stated as being-alongside), which would convert the unresolved multi-class partition into a genuine derivational-family nucleus.",
+  "search_location": "The jaAr hinge occurrences (4:36:13:3, 4:36:16:3, 8:48:14:1) and the IV/X refuge frame (9:6:5:1, 9:6:6:2, 46:31:11:2), tested against the adjacency forms (33:60:16:1, 13:4:4:1).",
+  "verification_method": "Check whether any occurrence co-predicates adjacency and protection of the same referent, or whether the min-[harm] refuge frame is ever glossed by a spatial 'alongside' relation, rather than inferring it from the shared nominal jaAr.",
+  "confounder_control": "Reject shared-nominal identity (jaAr) and the 'to one's side' abstraction as evidence per morphology != semantic identity and the narrowness principle; require a distinctive, predictive contrast, not a catch-all that fits everything.",
+  "failure_consequence": "If no such bridge is found, the multi-class UNRESOLVED verdict stands and no single root contribution may be asserted; if found, reopen toward a DERIVATIONAL_FAMILY / REPRESENTATIVE claim for adjacency+refuge with 16:9 retained as a resistant isolate."
+ },
+ "falsification_status": "NOT_REQUIRED",
+ "reopen_conditions": [
+  "If a verse is shown to co-predicate the neighbor/adjacency relation and the refuge/protection relation of the same referent (beyond the shared nominal jaAr at 4:36 vs 8:48), demonstrating a genuine adjacency->protection bridge, reopen toward a derivational-family claim.",
+  "If a second, independent occurrence of the deviation sense (jaA}ir / qaSd-contrast) appears, re-examine whether 16:9 is a lexicalized isolate or a third productive class warranting its own graded account.",
+  "If evidence shows the IV/X refuge frame (ajaAra + min + harm) is spatially grounded as 'placing at one's side' rather than 'shielding from a threat', re-test the 'to one's side' nucleus as a distinctive (not catch-all) account."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "9:6:5:1",
+  "9:6:6:2",
+  "23:88:8:1",
+  "23:88:10:1",
+  "46:31:11:2",
+  "67:28:11:1",
+  "72:22:4:1",
+  "4:36:13:3",
+  "4:36:16:3",
+  "33:60:16:1"
+ ],
+ "counterevidence_refs": [
+  "16:9:6:1",
+  "13:4:4:1",
+  "8:48:14:1"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "jwr_unresolved_multiclass_v1",
+  "verdict": "NOT_APPLICABLE_UNRESOLVED_CLASS_ONLY",
+  "falsifiable": true,
+  "distinctiveness_ok": false,
+  "failing_occurrences": [
+   "16:9:6:1"
+  ],
+  "tested_material_clusters": [
+   "C_REFUGE_IV_X",
+   "C_ADJACENCY_III_VI",
+   "C_DEVIATION_ptcp"
+  ],
+  "status_rationale": "No single root-level candidate is asserted (candidate_root_contribution=null), so root-level adversarial falsification is not required. Any attempt to falsify a unified nucleus already fails: 16:9 jaA}ir is orthogonal and unreinforced, and the sole adjacency↔refuge link is a single ambiguous nominal (8:48). Distinctiveness fails for a unified claim because the only unifier is the everything-fitting 'to one's side' abstraction."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jwr: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jwr: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jwr: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jwr: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jwr: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jwr: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jwr: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jwr: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

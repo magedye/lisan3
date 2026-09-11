@@ -1,0 +1,904 @@
+{
+ "root_arabic": "ب غ ت",
+ "root_buckwalter": "bgt",
+ "root_id": "bgt",
+ "artifact_name": "bgt.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave3",
+ "occurrences": 13,
+ "frozen_candidate_root_contribution": "بَغْتَةً marks the onset/arrival of a decreed, dreaded event (the Hour ٱلسَّاعَة, the punishment ٱلْعَذَاب, or God's seizing أخذ) in a manner experienced by its recipients as unperceived and unprepared-for — arriving unheralded *to them*, Quran-internally opposed to جَهْرَةً (open/manifest arrival, 6:47). The distinctive axis is perceptibility-of-onset to the victim (hidden vs. open), not lexicalized velocity; the destructive/eschatological content is carried by the subject-nouns, not by بغت. The entire root footprint is this one frozen accusative adverb.",
+ "internal_discovery": {
+  "candidate_root_contribution": "بَغْتَةً marks the onset/arrival of a decreed, dreaded event (the Hour ٱلسَّاعَة, the punishment ٱلْعَذَاب, or God's seizing أخذ) in a manner experienced by its recipients as unperceived and unprepared-for — arriving unheralded *to them*, Quran-internally opposed to جَهْرَةً (open/manifest arrival, 6:47). The distinctive axis is perceptibility-of-onset to the victim (hidden vs. open), not lexicalized velocity; the destructive/eschatological content is carried by the subject-nouns, not by بغت. The entire root footprint is this one frozen accusative adverb.",
+  "plain_explanation": "Every one of the 13 occurrences is the identical word بَغْتَةً — an accusative adverb ('baghtatan') attached to a verb of coming (تأتي/يأتي/جاء/أتى) or of God's seizing (أخذنٰهم). There is no verb, participle, or other noun form of this root anywhere in the corpus, so we can only certify the behavior of one lexicalized adverb, not a root paradigm. The word says the Hour or the punishment reaches people while they do not perceive it and cannot prepare or repel it: six verses gloss it directly with وَهُمْ لَا يَشْعُرُونَ / وَأَنتُمْ لَا تَشْعُرُونَ, 21:40 says it dumbfounds them (فَتَبْهَتُهُمْ) so they cannot repel it, and 6:47 sets it explicitly against جَهْرَةً ('openly'), showing the contrast is about being unperceived, not about being fast. It never modifies a neutral or welcome arrival.",
+  "layer_separation_note": "بغت does NOT lexicalize: (1) the harm/seizure itself — that is carried by أخذ/عذاب/الساعة (6:44, 6:47); (2) mere speed/velocity — the attested antonym is جَهْرَةً 'openly' (6:47), not 'slowly'; (3) 'absence of all prior signs' — 47:18 has أشراطها (portents) already present yet the arrival is still بَغْتَةً, so it means unapprehended-at-onset, not objectively unforeseeable; (4) unpremeditation by the doer — 6:44 shows a deliberate divine set-up (فَتَحْنَا... حَتَّىٰ إِذَا فَرِحُوا... أَخَذْنَٰهُم بَغْتَةً), so بغتة is unexpected-to-the-victim, never rash-by-the-agent; (5) demonstrably 'ominous' as an intrinsic feature — 0/13 attach to a neutral or positive event, so the corpus cannot isolate whether dread is part of the word or only its fixed company (honest UNRESOLVED valence boundary).",
+  "presence": {
+   "occurrences_total": 13,
+   "occurrences_checked": 13,
+   "occurrences_consistent": 13,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "47:18:7:1 «أَن تَأْتِيَهُم بَغْتَةً فَقَدْ جَآءَ أَشْرَاطُهَا» — its portents have already come, yet the arrival is still بَغْتَةً. This defeats any maximal 'no warning / utterly unforeseeable' reading and disciplines the claim down to the narrow recipient-non-perception sense: signs may be present ambiently, but the actual onset still catches them unapprehended and unprepared. It refines the nucleus rather than breaking it.",
+  "strongest_competitor": "A pure temporal/manner reading: بَغْتَةً = 'all-at-once / abruptly (fast),' treating لَا يَشْعُرُونَ as an independent ḥāl that adds non-perception rather than constituting the meaning. It rides on the same 6:47 datum (reading جَهْرَةً as 'gradually/progressively visible') and gains support from 21:40's فَتَبْهَتُهُمْ (overwhelming shock). It is weaker because the antonym of a speed term would be 'slow,' whereas جَهْرَة sits on the manifestness axis, and 47:18 ties the sense to apprehension not objective rate — but it cannot be eliminated Quran-internally, which is one reason the grade is capped below STRONG.",
+  "competing_hypothesis": "A pure temporal/manner reading: بَغْتَةً = 'all-at-once / abruptly (fast),' treating لَا يَشْعُرُونَ as an independent ḥāl that adds non-perception rather than constituting the meaning. It rides on the same 6:47 datum (reading جَهْرَةً as 'gradually/progressively visible') and gains support from 21:40's فَتَبْهَتُهُمْ (overwhelming shock). It is weaker because the antonym of a speed term would be 'slow,' whereas جَهْرَة sits on the manifestness axis, and 47:18 ties the sense to apprehension not objective rate — but it cannot be eliminated Quran-internally, which is one reason the grade is capped below STRONG.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All three analysts converge that the meaning of the lexeme بَغْتَةً is exceptionally well established internally (explicit antonym جهرة at 6:47; restrictive gloss لا تأتيكم إلا بغتة tied to hidden timing at 7:187; six co-textual paraphrases لا يشعرون) and that no occurrence resists the narrow account. On word-level criteria this approaches STRONG (Analyst B holds STRONG). However the contract's over-grading guard is decisive: 100% of the evidence is a single frozen, lexicalized accusative adverb with zero morphological/derivational spread against which to triangulate a *root-level* nucleus. 'Broad distinctive' evidence for STRONG means breadth across a paradigm; 13 tokens of one indeclinable adverb are depth on a single point. Per the rule that a lexicalized/nominal class caps strength at MODERATE and scope at REPRESENTATIVE — applied a fortiori when the lexicalized nominal is the *entire* footprint — plus an un-eliminated manner-vs-epistemic competitor and the 47:18 boundary, the honest grade is MODERATE / REPRESENTATIVE / LEXICALIZED_CLASS. RESISTANT/UNRESOLVED would be dishonest: there is no genuine internal resistance to the narrow account, only a ceiling on generalization.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "C1_hour_arrival",
+     "where": {
+      "word_refs": [
+       "12:107:11:1",
+       "22:55:11:1",
+       "43:66:7:1",
+       "47:18:7:1",
+       "6:31:11:1",
+       "7:187:23:1"
+      ]
+     },
+     "occurrence_count_expected": 6,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "بَغْتَةً as the manner of the Hour's (ٱلسَّاعَة) coming via verbs of arrival (تأتي/جاءت): the Hour reaches its recipients unperceived and unprepared. Reinforced by لا يشعرون (12:107, 43:66) and by the restrictive لا تأتيكم إلا بغتة tied to hidden timing (7:187), and aftermath of regret يٰحسرتنا (6:31).",
+     "classification_rationale": "Uniform surface form بَغْتَةً (N/form N/qac_verb_form null) adverbial on intransitive arrival of ٱلسَّاعَة; all fit the unperceived-onset core.",
+     "supporting_evidence_note": "7:187 glosses suddenness by unknowability (عِلْمُهَا عِندَ رَبِّى... لَا يُجَلِّيهَا لِوَقْتِهَا إِلَّا هُوَ); 6:31 shows the aftermath is stunned regret, consistent with being caught unprepared.",
+     "counterevidence": [
+      "47:18:7:1"
+     ]
+    },
+    {
+     "cluster_id": "C2_punishment_arrival",
+     "where": {
+      "word_refs": [
+       "26:202:2:1",
+       "29:53:9:1",
+       "39:55:13:1",
+       "6:47:7:1"
+      ]
+     },
+     "occurrence_count_expected": 4,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "بَغْتَةً as the manner of the punishment's (ٱلْعَذَاب) coming: it arrives while they do not perceive it (26:202, 29:53, 39:55). 6:47 is the decisive distinctiveness anchor, coordinating بَغْتَةً أَوْ جَهْرَةً on one and the same عذاب.",
+     "classification_rationale": "Same frozen adverb on intransitive arrival of ٱلْعَذَاب; the antonym جهرة (6:47) fixes the perceptibility axis, and لا يشعرون recurs.",
+     "supporting_evidence_note": "29:53 shows the timing is fixed (أَجَلٌ مُّسَمًّى) and they even demand its hastening, yet its onset is still بَغْتَةً — refuting 'indeterminate timing' and 'never conceived of it.'",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "C3_dumbfounding_onset",
+     "where": {
+      "word_refs": [
+       "21:40:3:1"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "بَغْتَةً as arrival that dumbfounds (فَتَبْهَتُهُمْ) and leaves no capacity to repel (فَلَا يَسْتَطِيعُونَ رَدَّهَا) and no respite (وَلَا هُمْ يُنظَرُونَ). Consistent with unperceived onset that defeats both watching-for and reprieve.",
+     "classification_rationale": "Same adverb; singled out because its foregrounded effect (cognitive shock + inability to repel) is the strongest co-present overwhelm connotation and the live pivot for the manner competitor.",
+     "supporting_evidence_note": "فَتَبْهَتُهُمْ describes a cognitive stunning (being caught unaware), not a physical instant, so it is read as the consequence of unperceived onset while remaining the best internal support for a speed/overwhelm co-connotation.",
+     "counterevidence": [
+      "21:40:3:1"
+     ]
+    },
+    {
+     "cluster_id": "C4_divine_seizure",
+     "where": {
+      "word_refs": [
+       "6:44:17:1",
+       "7:95:15:1"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "بَغْتَةً as the manner of God's transitive seizing (أَخَذْنَٰهُم): the complacent (فَرِحُوا 6:44; عَفَوا 7:95) are seized while unaware (7:95: وهم لا يشعرون). The recipient-unawareness core holds even though the syntax shifts from intransitive arrival to transitive strike.",
+     "classification_rationale": "Structurally atypical sub-pattern (agent = Allah, verb أخذ) but semantically continuous; shows the 'arrival' framing of C1–C3 is contextual, not part of the root.",
+     "supporting_evidence_note": "6:44 shows the seizure is premeditated (فَتَحْنَا عَلَيْهِمْ أَبْوَٰبَ كُلِّ شَىْءٍ حَتَّىٰ إِذَا فَرِحُوا... أَخَذْنَٰهُم بَغْتَةً), fixing بغتة as unexpected-to-the-victim, not unpremeditated-by-the-doer.",
+     "counterevidence": []
+    }
+   ],
+   "reconciliation": [
+    {
+     "word_ref": "47:18:7:1",
+     "final": "CONSISTENT",
+     "rationale": "General signs are not perception of the actual onset; the moment still catches them unprepared. The verse refines the nucleus to narrow recipient-non-perception rather than breaking it — an adversarial boundary, not a resistant seam."
+    },
+    {
+     "word_ref": "6:44:17:1",
+     "final": "CONSISTENT",
+     "rationale": "The recipient-oriented core (they are unprepared; God plans) holds identically; the arrival framing is shown to be contextual. Structural atypicality, not semantic fracture."
+    }
+   ]
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "bgt",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "The adversarial lens (C) sought perceived-in-advance onsets and a velocity-axis antonym and found neither: the sole internal antonym is جَهْرَةً (perceptibility axis, 6:47), the restrictive 7:187 glosses suddenness by hidden timing, and 47:18's portents do not equal perception of onset. No occurrence fails the narrow recipient-non-perception account, so failing_occurrences=[]. Distinctiveness is anchored by an actual Quranic antonym plus repeated لا يشعرون self-gloss. The un-eliminated manner/speed competitor and the single-frozen-lexeme footprint cap the *strength* at MODERATE but do not constitute a falsifying occurrence."
+ },
+ "coverage_validation": {
+  "root": "bgt",
+  "expected_count": 13,
+  "researched_count": 13,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "12:107:11:1",
+   "disposition": "CONSISTENT",
+   "note": "Uniform surface form بَغْتَةً (N/form N/qac_verb_form null) adverbial on intransitive arrival of ٱلسَّاعَة; all fit the unperceived-onset core.",
+   "coverage_cluster_id": "C1_hour_arrival",
+   "candidate_semantic_interpretation": "بَغْتَةً as the manner of the Hour's (ٱلسَّاعَة) coming via verbs of arrival (تأتي/جاءت): the Hour reaches its recipients unperceived and unprepared. Reinforced by لا يشعرون (12:107, 43:66) and by the restrictive لا تأتيكم إلا بغتة tied to hidden timing (7:187), and aftermath of regret يٰحسرتنا (6:31).",
+   "cluster_supporting_evidence": "7:187 glosses suddenness by unknowability (عِلْمُهَا عِندَ رَبِّى... لَا يُجَلِّيهَا لِوَقْتِهَا إِلَّا هُوَ); 6:31 shows the aftermath is stunned regret, consistent with being caught unprepared.",
+   "counterevidence": [
+    "47:18:7:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Uniform surface form بَغْتَةً (N/form N/qac_verb_form null) adverbial on intransitive arrival of ٱلسَّاعَة; all fit the unperceived-onset core.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "12:107",
+     "verse_text": "أَفَأَمِنُوٓا۟ أَن تَأْتِيَهُمْ غَٰشِيَةٌ مِّنْ عَذَابِ ٱللَّهِ أَوْ تَأْتِيَهُمُ ٱلسَّاعَةُ بَغْتَةً وَهُمْ لَا يَشْعُرُونَ"
+    }
+   ],
+   "root_arabic": "ب غ ت",
+   "root_buckwalter": "bgt",
+   "root_id": "bgt",
+   "artifact_name": "bgt.json",
+   "verse_ref": "12:107",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "bagotapF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَفَأَمِنُوٓا۟ أَن تَأْتِيَهُمْ غَٰشِيَةٌ مِّنْ عَذَابِ ٱللَّهِ أَوْ تَأْتِيَهُمُ ٱلسَّاعَةُ بَغْتَةً وَهُمْ لَا يَشْعُرُونَ"
+  },
+  {
+   "word_ref": "21:40:3:1",
+   "disposition": "CONSISTENT",
+   "note": "21:40:3:1 «فَتَبْهَتُهُمْ فَلَا يَسْتَطِيعُونَ رَدَّهَا» foregrounds being dumbfounded and unable to repel — the best internal evidence for a co-present overwhelm/speed connotation and the live counter to an awareness-only refinement; the narrow account survives (unperceived onset that then overwhelms) but is not STRONG-clean.",
+   "coverage_cluster_id": "C3_dumbfounding_onset",
+   "candidate_semantic_interpretation": "بَغْتَةً as arrival that dumbfounds (فَتَبْهَتُهُمْ) and leaves no capacity to repel (فَلَا يَسْتَطِيعُونَ رَدَّهَا) and no respite (وَلَا هُمْ يُنظَرُونَ). Consistent with unperceived onset that defeats both watching-for and reprieve.",
+   "cluster_supporting_evidence": "فَتَبْهَتُهُمْ describes a cognitive stunning (being caught unaware), not a physical instant, so it is read as the consequence of unperceived onset while remaining the best internal support for a speed/overwhelm co-connotation.",
+   "counterevidence": [
+    "21:40:3:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Same adverb; singled out because its foregrounded effect (cognitive shock + inability to repel) is the strongest co-present overwhelm connotation and the live pivot for the manner competitor.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "21:40",
+     "verse_text": "بَلْ تَأْتِيهِم بَغْتَةً فَتَبْهَتُهُمْ فَلَا يَسْتَطِيعُونَ رَدَّهَا وَلَا هُمْ يُنظَرُونَ"
+    }
+   ],
+   "root_arabic": "ب غ ت",
+   "root_buckwalter": "bgt",
+   "root_id": "bgt",
+   "artifact_name": "bgt.json",
+   "verse_ref": "21:40",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "bagotapF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "بَلْ تَأْتِيهِم بَغْتَةً فَتَبْهَتُهُمْ فَلَا يَسْتَطِيعُونَ رَدَّهَا وَلَا هُمْ يُنظَرُونَ"
+  },
+  {
+   "word_ref": "22:55:11:1",
+   "disposition": "CONSISTENT",
+   "note": "Uniform surface form بَغْتَةً (N/form N/qac_verb_form null) adverbial on intransitive arrival of ٱلسَّاعَة; all fit the unperceived-onset core.",
+   "coverage_cluster_id": "C1_hour_arrival",
+   "candidate_semantic_interpretation": "بَغْتَةً as the manner of the Hour's (ٱلسَّاعَة) coming via verbs of arrival (تأتي/جاءت): the Hour reaches its recipients unperceived and unprepared. Reinforced by لا يشعرون (12:107, 43:66) and by the restrictive لا تأتيكم إلا بغتة tied to hidden timing (7:187), and aftermath of regret يٰحسرتنا (6:31).",
+   "cluster_supporting_evidence": "7:187 glosses suddenness by unknowability (عِلْمُهَا عِندَ رَبِّى... لَا يُجَلِّيهَا لِوَقْتِهَا إِلَّا هُوَ); 6:31 shows the aftermath is stunned regret, consistent with being caught unprepared.",
+   "counterevidence": [
+    "47:18:7:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Uniform surface form بَغْتَةً (N/form N/qac_verb_form null) adverbial on intransitive arrival of ٱلسَّاعَة; all fit the unperceived-onset core.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "22:55",
+     "verse_text": "وَلَا يَزَالُ ٱلَّذِينَ كَفَرُوا۟ فِى مِرْيَةٍ مِّنْهُ حَتَّىٰ تَأْتِيَهُمُ ٱلسَّاعَةُ بَغْتَةً أَوْ يَأْتِيَهُمْ عَذَابُ يَوْمٍ عَقِيمٍ"
+    }
+   ],
+   "root_arabic": "ب غ ت",
+   "root_buckwalter": "bgt",
+   "root_id": "bgt",
+   "artifact_name": "bgt.json",
+   "verse_ref": "22:55",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "bagotapF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَا يَزَالُ ٱلَّذِينَ كَفَرُوا۟ فِى مِرْيَةٍ مِّنْهُ حَتَّىٰ تَأْتِيَهُمُ ٱلسَّاعَةُ بَغْتَةً أَوْ يَأْتِيَهُمْ عَذَابُ يَوْمٍ عَقِيمٍ"
+  },
+  {
+   "word_ref": "26:202:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Same frozen adverb on intransitive arrival of ٱلْعَذَاب; the antonym جهرة (6:47) fixes the perceptibility axis, and لا يشعرون recurs.",
+   "coverage_cluster_id": "C2_punishment_arrival",
+   "candidate_semantic_interpretation": "بَغْتَةً as the manner of the punishment's (ٱلْعَذَاب) coming: it arrives while they do not perceive it (26:202, 29:53, 39:55). 6:47 is the decisive distinctiveness anchor, coordinating بَغْتَةً أَوْ جَهْرَةً on one and the same عذاب.",
+   "cluster_supporting_evidence": "29:53 shows the timing is fixed (أَجَلٌ مُّسَمًّى) and they even demand its hastening, yet its onset is still بَغْتَةً — refuting 'indeterminate timing' and 'never conceived of it.'",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Same frozen adverb on intransitive arrival of ٱلْعَذَاب; the antonym جهرة (6:47) fixes the perceptibility axis, and لا يشعرون recurs.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "26:202",
+     "verse_text": "فَيَأْتِيَهُم بَغْتَةً وَهُمْ لَا يَشْعُرُونَ"
+    }
+   ],
+   "root_arabic": "ب غ ت",
+   "root_buckwalter": "bgt",
+   "root_id": "bgt",
+   "artifact_name": "bgt.json",
+   "verse_ref": "26:202",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "bagotapF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَيَأْتِيَهُم بَغْتَةً وَهُمْ لَا يَشْعُرُونَ"
+  },
+  {
+   "word_ref": "29:53:9:1",
+   "disposition": "CONSISTENT",
+   "note": "Same frozen adverb on intransitive arrival of ٱلْعَذَاب; the antonym جهرة (6:47) fixes the perceptibility axis, and لا يشعرون recurs.",
+   "coverage_cluster_id": "C2_punishment_arrival",
+   "candidate_semantic_interpretation": "بَغْتَةً as the manner of the punishment's (ٱلْعَذَاب) coming: it arrives while they do not perceive it (26:202, 29:53, 39:55). 6:47 is the decisive distinctiveness anchor, coordinating بَغْتَةً أَوْ جَهْرَةً on one and the same عذاب.",
+   "cluster_supporting_evidence": "29:53 shows the timing is fixed (أَجَلٌ مُّسَمًّى) and they even demand its hastening, yet its onset is still بَغْتَةً — refuting 'indeterminate timing' and 'never conceived of it.'",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Same frozen adverb on intransitive arrival of ٱلْعَذَاب; the antonym جهرة (6:47) fixes the perceptibility axis, and لا يشعرون recurs.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "29:53",
+     "verse_text": "وَيَسْتَعْجِلُونَكَ بِٱلْعَذَابِ وَلَوْلَآ أَجَلٌ مُّسَمًّى لَّجَآءَهُمُ ٱلْعَذَابُ وَلَيَأْتِيَنَّهُم بَغْتَةً وَهُمْ لَا يَشْعُرُونَ"
+    }
+   ],
+   "root_arabic": "ب غ ت",
+   "root_buckwalter": "bgt",
+   "root_id": "bgt",
+   "artifact_name": "bgt.json",
+   "verse_ref": "29:53",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "bagotapF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَيَسْتَعْجِلُونَكَ بِٱلْعَذَابِ وَلَوْلَآ أَجَلٌ مُّسَمًّى لَّجَآءَهُمُ ٱلْعَذَابُ وَلَيَأْتِيَنَّهُم بَغْتَةً وَهُمْ لَا يَشْعُرُونَ"
+  },
+  {
+   "word_ref": "39:55:13:1",
+   "disposition": "CONSISTENT",
+   "note": "Same frozen adverb on intransitive arrival of ٱلْعَذَاب; the antonym جهرة (6:47) fixes the perceptibility axis, and لا يشعرون recurs.",
+   "coverage_cluster_id": "C2_punishment_arrival",
+   "candidate_semantic_interpretation": "بَغْتَةً as the manner of the punishment's (ٱلْعَذَاب) coming: it arrives while they do not perceive it (26:202, 29:53, 39:55). 6:47 is the decisive distinctiveness anchor, coordinating بَغْتَةً أَوْ جَهْرَةً on one and the same عذاب.",
+   "cluster_supporting_evidence": "29:53 shows the timing is fixed (أَجَلٌ مُّسَمًّى) and they even demand its hastening, yet its onset is still بَغْتَةً — refuting 'indeterminate timing' and 'never conceived of it.'",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Same frozen adverb on intransitive arrival of ٱلْعَذَاب; the antonym جهرة (6:47) fixes the perceptibility axis, and لا يشعرون recurs.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "39:55",
+     "verse_text": "وَٱتَّبِعُوٓا۟ أَحْسَنَ مَآ أُنزِلَ إِلَيْكُم مِّن رَّبِّكُم مِّن قَبْلِ أَن يَأْتِيَكُمُ ٱلْعَذَابُ بَغْتَةً وَأَنتُمْ لَا تَشْعُرُونَ"
+    }
+   ],
+   "root_arabic": "ب غ ت",
+   "root_buckwalter": "bgt",
+   "root_id": "bgt",
+   "artifact_name": "bgt.json",
+   "verse_ref": "39:55",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "bagotapF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱتَّبِعُوٓا۟ أَحْسَنَ مَآ أُنزِلَ إِلَيْكُم مِّن رَّبِّكُم مِّن قَبْلِ أَن يَأْتِيَكُمُ ٱلْعَذَابُ بَغْتَةً وَأَنتُمْ لَا تَشْعُرُونَ"
+  },
+  {
+   "word_ref": "43:66:7:1",
+   "disposition": "CONSISTENT",
+   "note": "Uniform surface form بَغْتَةً (N/form N/qac_verb_form null) adverbial on intransitive arrival of ٱلسَّاعَة; all fit the unperceived-onset core.",
+   "coverage_cluster_id": "C1_hour_arrival",
+   "candidate_semantic_interpretation": "بَغْتَةً as the manner of the Hour's (ٱلسَّاعَة) coming via verbs of arrival (تأتي/جاءت): the Hour reaches its recipients unperceived and unprepared. Reinforced by لا يشعرون (12:107, 43:66) and by the restrictive لا تأتيكم إلا بغتة tied to hidden timing (7:187), and aftermath of regret يٰحسرتنا (6:31).",
+   "cluster_supporting_evidence": "7:187 glosses suddenness by unknowability (عِلْمُهَا عِندَ رَبِّى... لَا يُجَلِّيهَا لِوَقْتِهَا إِلَّا هُوَ); 6:31 shows the aftermath is stunned regret, consistent with being caught unprepared.",
+   "counterevidence": [
+    "47:18:7:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Uniform surface form بَغْتَةً (N/form N/qac_verb_form null) adverbial on intransitive arrival of ٱلسَّاعَة; all fit the unperceived-onset core.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "43:66",
+     "verse_text": "هَلْ يَنظُرُونَ إِلَّا ٱلسَّاعَةَ أَن تَأْتِيَهُم بَغْتَةً وَهُمْ لَا يَشْعُرُونَ"
+    }
+   ],
+   "root_arabic": "ب غ ت",
+   "root_buckwalter": "bgt",
+   "root_id": "bgt",
+   "artifact_name": "bgt.json",
+   "verse_ref": "43:66",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "bagotapF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "هَلْ يَنظُرُونَ إِلَّا ٱلسَّاعَةَ أَن تَأْتِيَهُم بَغْتَةً وَهُمْ لَا يَشْعُرُونَ"
+  },
+  {
+   "word_ref": "47:18:7:1",
+   "disposition": "CONSISTENT",
+   "note": "47:18:7:1 «فَقَدْ جَآءَ أَشْرَاطُهَا» — portents have already come, yet the arrival is still بَغْتَةً; this refutes the maximal 'no prior signs / utterly unforeseeable' reading and confines the sense to unperceived-at-onset.",
+   "coverage_cluster_id": "C1_hour_arrival",
+   "candidate_semantic_interpretation": "بَغْتَةً as the manner of the Hour's (ٱلسَّاعَة) coming via verbs of arrival (تأتي/جاءت): the Hour reaches its recipients unperceived and unprepared. Reinforced by لا يشعرون (12:107, 43:66) and by the restrictive لا تأتيكم إلا بغتة tied to hidden timing (7:187), and aftermath of regret يٰحسرتنا (6:31).",
+   "cluster_supporting_evidence": "7:187 glosses suddenness by unknowability (عِلْمُهَا عِندَ رَبِّى... لَا يُجَلِّيهَا لِوَقْتِهَا إِلَّا هُوَ); 6:31 shows the aftermath is stunned regret, consistent with being caught unprepared.",
+   "counterevidence": [
+    "47:18:7:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Uniform surface form بَغْتَةً (N/form N/qac_verb_form null) adverbial on intransitive arrival of ٱلسَّاعَة; all fit the unperceived-onset core.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": "General signs are not perception of the actual onset; the moment still catches them unprepared. The verse refines the nucleus to narrow recipient-non-perception rather than breaking it — an adversarial boundary, not a resistant seam.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "47:18:7:1",
+     "preliminary_disposition": "RESISTANT",
+     "preliminary_note": "Ambient portents (أشراطها) already present appear to contradict a 'sudden/unexpected' arrival.",
+     "final_disposition": "CONSISTENT",
+     "reconciliation_rationale": "General signs are not perception of the actual onset; the moment still catches them unprepared. The verse refines the nucleus to narrow recipient-non-perception rather than breaking it — an adversarial boundary, not a resistant seam.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [
+    "47:18:7:1"
+   ],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "47:18",
+     "verse_text": "فَهَلْ يَنظُرُونَ إِلَّا ٱلسَّاعَةَ أَن تَأْتِيَهُم بَغْتَةً فَقَدْ جَآءَ أَشْرَاطُهَا فَأَنَّىٰ لَهُمْ إِذَا جَآءَتْهُمْ ذِكْرَىٰهُمْ"
+    }
+   ],
+   "root_arabic": "ب غ ت",
+   "root_buckwalter": "bgt",
+   "root_id": "bgt",
+   "artifact_name": "bgt.json",
+   "verse_ref": "47:18",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "bagotapF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَهَلْ يَنظُرُونَ إِلَّا ٱلسَّاعَةَ أَن تَأْتِيَهُم بَغْتَةً فَقَدْ جَآءَ أَشْرَاطُهَا فَأَنَّىٰ لَهُمْ إِذَا جَآءَتْهُمْ ذِكْرَىٰهُمْ"
+  },
+  {
+   "word_ref": "6:31:11:1",
+   "disposition": "CONSISTENT",
+   "note": "Uniform surface form بَغْتَةً (N/form N/qac_verb_form null) adverbial on intransitive arrival of ٱلسَّاعَة; all fit the unperceived-onset core.",
+   "coverage_cluster_id": "C1_hour_arrival",
+   "candidate_semantic_interpretation": "بَغْتَةً as the manner of the Hour's (ٱلسَّاعَة) coming via verbs of arrival (تأتي/جاءت): the Hour reaches its recipients unperceived and unprepared. Reinforced by لا يشعرون (12:107, 43:66) and by the restrictive لا تأتيكم إلا بغتة tied to hidden timing (7:187), and aftermath of regret يٰحسرتنا (6:31).",
+   "cluster_supporting_evidence": "7:187 glosses suddenness by unknowability (عِلْمُهَا عِندَ رَبِّى... لَا يُجَلِّيهَا لِوَقْتِهَا إِلَّا هُوَ); 6:31 shows the aftermath is stunned regret, consistent with being caught unprepared.",
+   "counterevidence": [
+    "47:18:7:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Uniform surface form بَغْتَةً (N/form N/qac_verb_form null) adverbial on intransitive arrival of ٱلسَّاعَة; all fit the unperceived-onset core.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:31",
+     "verse_text": "قَدْ خَسِرَ ٱلَّذِينَ كَذَّبُوا۟ بِلِقَآءِ ٱللَّهِ حَتَّىٰٓ إِذَا جَآءَتْهُمُ ٱلسَّاعَةُ بَغْتَةً قَالُوا۟ يَٰحَسْرَتَنَا عَلَىٰ مَا فَرَّطْنَا فِيهَا وَهُمْ يَحْمِلُونَ أَوْزَارَهُمْ عَلَىٰ ظُهُورِهِمْ أَلَا سَآءَ مَا يَزِرُونَ"
+    }
+   ],
+   "root_arabic": "ب غ ت",
+   "root_buckwalter": "bgt",
+   "root_id": "bgt",
+   "artifact_name": "bgt.json",
+   "verse_ref": "6:31",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "bagotapF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَدْ خَسِرَ ٱلَّذِينَ كَذَّبُوا۟ بِلِقَآءِ ٱللَّهِ حَتَّىٰٓ إِذَا جَآءَتْهُمُ ٱلسَّاعَةُ بَغْتَةً قَالُوا۟ يَٰحَسْرَتَنَا عَلَىٰ مَا فَرَّطْنَا فِيهَا وَهُمْ يَحْمِلُونَ أَوْزَارَهُمْ عَلَىٰ ظُهُورِهِمْ أَلَا سَآءَ مَا يَزِرُونَ"
+  },
+  {
+   "word_ref": "6:44:17:1",
+   "disposition": "CONSISTENT",
+   "note": "6:44:17:1 «فَتَحْنَا عَلَيْهِمْ أَبْوَٰبَ كُلِّ شَىْءٍ حَتَّىٰ إِذَا فَرِحُوا... أَخَذْنَٰهُم بَغْتَةً» shows a premeditated divine set-up: بغتة modifies transitive seizure and means unexpected-to-the-victim, not unpremeditated-by-the-doer, and not intrinsic 'arrival.'",
+   "coverage_cluster_id": "C4_divine_seizure",
+   "candidate_semantic_interpretation": "بَغْتَةً as the manner of God's transitive seizing (أَخَذْنَٰهُم): the complacent (فَرِحُوا 6:44; عَفَوا 7:95) are seized while unaware (7:95: وهم لا يشعرون). The recipient-unawareness core holds even though the syntax shifts from intransitive arrival to transitive strike.",
+   "cluster_supporting_evidence": "6:44 shows the seizure is premeditated (فَتَحْنَا عَلَيْهِمْ أَبْوَٰبَ كُلِّ شَىْءٍ حَتَّىٰ إِذَا فَرِحُوا... أَخَذْنَٰهُم بَغْتَةً), fixing بغتة as unexpected-to-the-victim, not unpremeditated-by-the-doer.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Structurally atypical sub-pattern (agent = Allah, verb أخذ) but semantically continuous; shows the 'arrival' framing of C1–C3 is contextual, not part of the root.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": "The recipient-oriented core (they are unprepared; God plans) holds identically; the arrival framing is shown to be contextual. Structural atypicality, not semantic fracture.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "6:44:17:1",
+     "preliminary_disposition": "STRUCTURAL_UNCERTAINTY",
+     "preliminary_note": "Transitive divine seizure (أخذ) rather than intransitive arrival seemed to break the 'manner of coming' account.",
+     "final_disposition": "CONSISTENT",
+     "reconciliation_rationale": "The recipient-oriented core (they are unprepared; God plans) holds identically; the arrival framing is shown to be contextual. Structural atypicality, not semantic fracture.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:44",
+     "verse_text": "فَلَمَّا نَسُوا۟ مَا ذُكِّرُوا۟ بِهِۦ فَتَحْنَا عَلَيْهِمْ أَبْوَٰبَ كُلِّ شَىْءٍ حَتَّىٰٓ إِذَا فَرِحُوا۟ بِمَآ أُوتُوٓا۟ أَخَذْنَٰهُم بَغْتَةً فَإِذَا هُم مُّبْلِسُونَ"
+    }
+   ],
+   "root_arabic": "ب غ ت",
+   "root_buckwalter": "bgt",
+   "root_id": "bgt",
+   "artifact_name": "bgt.json",
+   "verse_ref": "6:44",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "bagotapF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَلَمَّا نَسُوا۟ مَا ذُكِّرُوا۟ بِهِۦ فَتَحْنَا عَلَيْهِمْ أَبْوَٰبَ كُلِّ شَىْءٍ حَتَّىٰٓ إِذَا فَرِحُوا۟ بِمَآ أُوتُوٓا۟ أَخَذْنَٰهُم بَغْتَةً فَإِذَا هُم مُّبْلِسُونَ"
+  },
+  {
+   "word_ref": "6:47:7:1",
+   "disposition": "CONSISTENT",
+   "note": "Same frozen adverb on intransitive arrival of ٱلْعَذَاب; the antonym جهرة (6:47) fixes the perceptibility axis, and لا يشعرون recurs.",
+   "coverage_cluster_id": "C2_punishment_arrival",
+   "candidate_semantic_interpretation": "بَغْتَةً as the manner of the punishment's (ٱلْعَذَاب) coming: it arrives while they do not perceive it (26:202, 29:53, 39:55). 6:47 is the decisive distinctiveness anchor, coordinating بَغْتَةً أَوْ جَهْرَةً on one and the same عذاب.",
+   "cluster_supporting_evidence": "29:53 shows the timing is fixed (أَجَلٌ مُّسَمًّى) and they even demand its hastening, yet its onset is still بَغْتَةً — refuting 'indeterminate timing' and 'never conceived of it.'",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Same frozen adverb on intransitive arrival of ٱلْعَذَاب; the antonym جهرة (6:47) fixes the perceptibility axis, and لا يشعرون recurs.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:47",
+     "verse_text": "قُلْ أَرَءَيْتَكُمْ إِنْ أَتَىٰكُمْ عَذَابُ ٱللَّهِ بَغْتَةً أَوْ جَهْرَةً هَلْ يُهْلَكُ إِلَّا ٱلْقَوْمُ ٱلظَّٰلِمُونَ"
+    }
+   ],
+   "root_arabic": "ب غ ت",
+   "root_buckwalter": "bgt",
+   "root_id": "bgt",
+   "artifact_name": "bgt.json",
+   "verse_ref": "6:47",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "bagotapF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قُلْ أَرَءَيْتَكُمْ إِنْ أَتَىٰكُمْ عَذَابُ ٱللَّهِ بَغْتَةً أَوْ جَهْرَةً هَلْ يُهْلَكُ إِلَّا ٱلْقَوْمُ ٱلظَّٰلِمُونَ"
+  },
+  {
+   "word_ref": "7:187:23:1",
+   "disposition": "CONSISTENT",
+   "note": "Uniform surface form بَغْتَةً (N/form N/qac_verb_form null) adverbial on intransitive arrival of ٱلسَّاعَة; all fit the unperceived-onset core.",
+   "coverage_cluster_id": "C1_hour_arrival",
+   "candidate_semantic_interpretation": "بَغْتَةً as the manner of the Hour's (ٱلسَّاعَة) coming via verbs of arrival (تأتي/جاءت): the Hour reaches its recipients unperceived and unprepared. Reinforced by لا يشعرون (12:107, 43:66) and by the restrictive لا تأتيكم إلا بغتة tied to hidden timing (7:187), and aftermath of regret يٰحسرتنا (6:31).",
+   "cluster_supporting_evidence": "7:187 glosses suddenness by unknowability (عِلْمُهَا عِندَ رَبِّى... لَا يُجَلِّيهَا لِوَقْتِهَا إِلَّا هُوَ); 6:31 shows the aftermath is stunned regret, consistent with being caught unprepared.",
+   "counterevidence": [
+    "47:18:7:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Uniform surface form بَغْتَةً (N/form N/qac_verb_form null) adverbial on intransitive arrival of ٱلسَّاعَة; all fit the unperceived-onset core.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:187",
+     "verse_text": "يَسْـَٔلُونَكَ عَنِ ٱلسَّاعَةِ أَيَّانَ مُرْسَىٰهَا قُلْ إِنَّمَا عِلْمُهَا عِندَ رَبِّى لَا يُجَلِّيهَا لِوَقْتِهَآ إِلَّا هُوَ ثَقُلَتْ فِى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ لَا تَأْتِيكُمْ إِلَّا بَغْتَةً يَسْـَٔلُونَكَ كَأَنَّكَ حَفِىٌّ عَنْهَا قُلْ إِنَّمَا عِلْمُهَا عِندَ ٱللَّهِ وَلَٰكِنَّ أَكْثَرَ ٱلنَّاسِ لَا يَعْلَمُونَ"
+    }
+   ],
+   "root_arabic": "ب غ ت",
+   "root_buckwalter": "bgt",
+   "root_id": "bgt",
+   "artifact_name": "bgt.json",
+   "verse_ref": "7:187",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "bagotapF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَسْـَٔلُونَكَ عَنِ ٱلسَّاعَةِ أَيَّانَ مُرْسَىٰهَا قُلْ إِنَّمَا عِلْمُهَا عِندَ رَبِّى لَا يُجَلِّيهَا لِوَقْتِهَآ إِلَّا هُوَ ثَقُلَتْ فِى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ لَا تَأْتِيكُمْ إِلَّا بَغْتَةً يَسْـَٔلُونَكَ كَأَنَّكَ حَفِىٌّ عَنْهَا قُلْ إِنَّمَا عِلْمُهَا عِندَ ٱللَّهِ وَلَٰكِنَّ أَكْثَرَ ٱلنَّاسِ لَا يَعْلَمُونَ"
+  },
+  {
+   "word_ref": "7:95:15:1",
+   "disposition": "CONSISTENT",
+   "note": "7:95:15:1 «فَأَخَذْنَٰهُم بَغْتَةً وَهُمْ لَا يَشْعُرُونَ» — same transitive-seizure sub-pattern with explicit non-perception, confirming the recipient-unawareness core while showing 'arrival' is contextual, not part of the root.",
+   "coverage_cluster_id": "C4_divine_seizure",
+   "candidate_semantic_interpretation": "بَغْتَةً as the manner of God's transitive seizing (أَخَذْنَٰهُم): the complacent (فَرِحُوا 6:44; عَفَوا 7:95) are seized while unaware (7:95: وهم لا يشعرون). The recipient-unawareness core holds even though the syntax shifts from intransitive arrival to transitive strike.",
+   "cluster_supporting_evidence": "6:44 shows the seizure is premeditated (فَتَحْنَا عَلَيْهِمْ أَبْوَٰبَ كُلِّ شَىْءٍ حَتَّىٰ إِذَا فَرِحُوا... أَخَذْنَٰهُم بَغْتَةً), fixing بغتة as unexpected-to-the-victim, not unpremeditated-by-the-doer.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Structurally atypical sub-pattern (agent = Allah, verb أخذ) but semantically continuous; shows the 'arrival' framing of C1–C3 is contextual, not part of the root.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:95",
+     "verse_text": "ثُمَّ بَدَّلْنَا مَكَانَ ٱلسَّيِّئَةِ ٱلْحَسَنَةَ حَتَّىٰ عَفَوا۟ وَّقَالُوا۟ قَدْ مَسَّ ءَابَآءَنَا ٱلضَّرَّآءُ وَٱلسَّرَّآءُ فَأَخَذْنَٰهُم بَغْتَةً وَهُمْ لَا يَشْعُرُونَ"
+    }
+   ],
+   "root_arabic": "ب غ ت",
+   "root_buckwalter": "bgt",
+   "root_id": "bgt",
+   "artifact_name": "bgt.json",
+   "verse_ref": "7:95",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "bagotapF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ثُمَّ بَدَّلْنَا مَكَانَ ٱلسَّيِّئَةِ ٱلْحَسَنَةَ حَتَّىٰ عَفَوا۟ وَّقَالُوا۟ قَدْ مَسَّ ءَابَآءَنَا ٱلضَّرَّآءُ وَٱلسَّرَّآءُ فَأَخَذْنَٰهُم بَغْتَةً وَهُمْ لَا يَشْعُرُونَ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Three independent analysts (A, B, C) each read all 13 tokens; all affirm the narrow account fits every occurrence with no resistant sub-class, converging on the perceptibility-of-onset distinctive (B at STRONG, A and C at MODERATE).",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "بَغْتَةً marks the onset/arrival of a decreed, dreaded event (the Hour ٱلسَّاعَة, the punishment ٱلْعَذَاب, or God's seizing أخذ) in a manner experienced by its recipients as unperceived and unprepared-for — arriving unheralded *to them*, Quran-internally opposed to جَهْرَةً (open/manifest arrival, 6:47). The distinctive axis is perceptibility-of-onset to the victim (hidden vs. open), not lexicalized velocity; the destructive/eschatological content is carried by the subject-nouns, not by بغت. The entire root footprint is this one frozen accusative adverb.",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "LEXICALIZED_CLASS",
+ "layer_attribution": {
+  "occurrence_evidence": "13/13 tokens are the identical accusative adverb بَغْتَةً (bagotapF; qac_pos=N, form=N, qac_verb_form=null) on verbs of arrival (تأتي/يأتي/جاء/أتى, 11×) or divine seizure (أخذنٰهم, 2×); six carry لا يشعرون/لا تشعرون.",
+  "derivation": "No derivational spread whatsoever — no verb, participle, or alternate nominal pattern; the root surfaces only as one frozen maṣdar-adverb, so no productive paradigm exists to triangulate.",
+  "lexical_class": "A single lexicalized accusative adverbial (ḥāl / maf'ūl muṭlaq); the claim is about this lexeme/nucleus (LEXICALIZED_CLASS) and does not extend to any non-existent derivational family, hence REPRESENTATIVE scope and the MODERATE cap.",
+  "contextual_relation": "The eschatological/punitive dread and the destruction are supplied contextually by the subject-nouns (ٱلسَّاعَة, ٱلْعَذَاب) and the seizing verb أخذ, plus consequence clauses (فتبهتهم, مبلسون, يٰحسرتنا); these are narrative/contextual and must NOT be read into بغت itself, which contributes only manner-of-onset.",
+  "reconciliation": "Preliminary resistance at 47:18 (ambient portents) and structural doubt at 6:44/7:95 (transitive seizure) both reconcile to CONSISTENT: signs ≠ perception of onset, and recipient-unawareness holds across the syntactic shift; tensions are adversarial boundaries / structural atypicalities, not resistant seams.",
+  "unresolved_resistance": "No occurrence resists the narrow account; residual unresolved items are (a) the manner/speed competitor un-eliminable Quran-internally at 21:40/6:47, and (b) valence-neutrality (0/13 neutral referents), both flagged as honest limits rather than refutations."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "47:18:7:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "Portents already present yet arrival still بَغْتَةً; disproves any 'no warning / objectively unforeseeable' phrasing and forces the narrow recipient-non-perception reading.",
+   "evidence_basis": {
+    "kind": "CO_TEXTUAL_GLOSS",
+    "statement": "47:18:7:1 «فَقَدْ جَآءَ أَشْرَاطُهَا» — portents have already come, yet the arrival is still بَغْتَةً; this refutes the maximal 'no prior signs / utterly unforeseeable' reading and confines the sense to unperceived-at-onset."
+   }
+  },
+  {
+   "word_ref": "21:40:3:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "فَتَبْهَتُهُمْ foregrounds overwhelming shock and inability to repel, sustaining an un-eliminated manner/speed competitor to the awareness-only account.",
+   "evidence_basis": {
+    "kind": "CONSEQUENCE_GLOSS",
+    "statement": "21:40:3:1 «فَتَبْهَتُهُمْ فَلَا يَسْتَطِيعُونَ رَدَّهَا» foregrounds being dumbfounded and unable to repel — the best internal evidence for a co-present overwhelm/speed connotation and the live counter to an awareness-only refinement; the narrow account survives (unperceived onset that then overwhelms) but is not STRONG-clean."
+   }
+  },
+  {
+   "word_ref": "6:44:17:1",
+   "role": "STRUCTURAL_ATYPICALITY",
+   "reason": "Transitive divine seizure with an explicitly premeditated set-up; shows بغتة is not intrinsic 'arrival' and is unexpected-to-victim, not unpremeditated-by-doer.",
+   "evidence_basis": {
+    "kind": "STRUCTURAL_CONTRAST",
+    "statement": "6:44:17:1 «فَتَحْنَا عَلَيْهِمْ أَبْوَٰبَ كُلِّ شَىْءٍ حَتَّىٰ إِذَا فَرِحُوا... أَخَذْنَٰهُم بَغْتَةً» shows a premeditated divine set-up: بغتة modifies transitive seizure and means unexpected-to-the-victim, not unpremeditated-by-the-doer, and not intrinsic 'arrival.'"
+   }
+  },
+  {
+   "word_ref": "7:95:15:1",
+   "role": "STRUCTURAL_ATYPICALITY",
+   "reason": "Second transitive-seizure token; confirms the arrival framing is contextual while the non-perception core (لا يشعرون) holds.",
+   "evidence_basis": {
+    "kind": "STRUCTURAL_CONTRAST",
+    "statement": "7:95:15:1 «فَأَخَذْنَٰهُم بَغْتَةً وَهُمْ لَا يَشْعُرُونَ» — same transitive-seizure sub-pattern with explicit non-perception, confirming the recipient-unawareness core while showing 'arrival' is contextual, not part of the root."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "There is no genuine resistant sub-class — the narrow account fits all 13. But four occurrences carry real adversarial/structural weight worth recording: 47:18 (ambient portents), 21:40 (overwhelm/speed competitor), and 6:44/7:95 (transitive-seizure atypicality). Each is documented with an evidence_basis whose statement also appears as the strongest_counterexample or in the corresponding cluster/override note."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A Quran-internal occurrence of بَغْتَةً (or any newly attested ب-غ-ت derivation) in which the recipients demonstrably perceive/apprehend the actual onset in advance, or in which the antonym pairing places بغتة on a velocity axis (بغتة vs. a 'slow/gradual' term) rather than the manifestness axis of جَهْرَةً.",
+  "search_location": "The 13 attested tokens, especially 6:47 (بغتة/جهرة disjunction), 7:187 (restrictive), 47:18 (portents), 21:40 (فتبهتهم); plus any future non-eschatological or non-punitive referent.",
+  "verification_method": "Re-read each verse's subject, verb, and adjacent ḥāl clauses (لا يشعرون / لا تشعرون); test whether an occurrence requires perceived-in-advance onset or a speed antonym incompatible with perceptibility-of-onset.",
+  "confounder_control": "Do not import dictionary/tafsir 'suddenly=fast' priors; hold the destructive valence to the subject-nouns (الساعة/العذاب/أخذ), not to بغت; distinguish ambient signs (أشراطها) from perception of the actual onset.",
+  "failure_consequence": "If perceived-in-advance onset or a velocity-axis antonym is confirmed, the perceptibility-of-onset distinctive is falsified and the claim collapses to bare 'suddenly,' downgrading result_strength and possibly moving to UNRESOLVED on the distinctive."
+ },
+ "falsification_status": "PASSED",
+ "reopen_conditions": [
+  "If any verbal, participial, or alternate nominal derivation of ب-غ-ت surfaces beyond the frozen accusative بَغْتَةً, re-triangulate a genuine root-level nucleus and lift the LEXICALIZED_CLASS / REPRESENTATIVE cap.",
+  "If بَغْتَةً is ever attested with a neutral or welcome referent (currently 13/13 attach to ٱلسَّاعَة / ٱلْعَذَاب / أخذ), revisit the UNRESOLVED valence boundary and test whether 'ominous' is intrinsic or merely fixed company.",
+  "If a Quran-internal contrast is found that anchors a velocity/all-at-once reading (بغتة vs. a 'gradual' term) independent of the جَهْرَةً manifestness axis at 6:47, re-adjudicate the manner-vs-epistemic competitor exposed at 21:40."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "6:47:7:1",
+  "7:187:23:1",
+  "12:107:11:1",
+  "26:202:2:1",
+  "29:53:9:1",
+  "39:55:13:1",
+  "43:66:7:1",
+  "7:95:15:1",
+  "6:31:11:1"
+ ],
+ "counterevidence_refs": [
+  "47:18:7:1",
+  "21:40:3:1"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "bgt-adv-C-v1",
+  "verdict": "SUPPORTED",
+  "falsifiable": true,
+  "distinctiveness_ok": true,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "C1_hour_arrival",
+   "C2_punishment_arrival",
+   "C3_dumbfounding_onset",
+   "C4_divine_seizure"
+  ],
+  "status_rationale": "The adversarial lens (C) sought perceived-in-advance onsets and a velocity-axis antonym and found neither: the sole internal antonym is جَهْرَةً (perceptibility axis, 6:47), the restrictive 7:187 glosses suddenness by hidden timing, and 47:18's portents do not equal perception of onset. No occurrence fails the narrow recipient-non-perception account, so failing_occurrences=[]. Distinctiveness is anchored by an actual Quranic antonym plus repeated لا يشعرون self-gloss. The un-eliminated manner/speed competitor and the single-frozen-lexeme footprint cap the *strength* at MODERATE but do not constitute a falsifying occurrence."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "bgt: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "bgt: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "bgt: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "bgt: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "bgt: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "bgt: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "bgt: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "bgt: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

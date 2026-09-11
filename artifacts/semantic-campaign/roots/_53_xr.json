@@ -1,0 +1,353 @@
+{
+ "root_arabic": "ص خ ر",
+ "root_buckwalter": "Sxr",
+ "root_id": "Sxr",
+ "artifact_name": "_53_xr.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave3",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "A concrete, hard, solid, dense mass of stone — 'rock'. The root denotes a self-contained, immovable, impenetrable body/substance of stone, individuated by morphology as either the unit noun ṣakhrah (a single discrete rock-body/boulder: 18:63, 31:16) or the collective ṣakhr (rock as workable bedrock material: 89:9). All attested contexts (landmark, sealed interior, carved bedrock) reduce to this one substance without abstraction.",
+ "internal_discovery": {
+  "candidate_root_contribution": "A concrete, hard, solid, dense mass of stone — 'rock'. The root denotes a self-contained, immovable, impenetrable body/substance of stone, individuated by morphology as either the unit noun ṣakhrah (a single discrete rock-body/boulder: 18:63, 31:16) or the collective ṣakhr (rock as workable bedrock material: 89:9). All attested contexts (landmark, sealed interior, carved bedrock) reduce to this one substance without abstraction.",
+  "plain_explanation": "Every one of the three Quranic occurrences of ص خ ر is a noun meaning literally 'rock' — a hard, solid stone mass. It appears as a specific rock beside which travellers shelter (18:63), as the archetype of a sealed, impenetrable place where even a mustard-seed's weight could be hidden (31:16), and as the bedrock hewn by Thamud in the valley (89:9). The only variation is grammatical number/individuation: ṣakhrah names one rock-body, ṣakhr names rock as material. The core meaning 'hard solid rock' is stable across all three; nothing more abstract (e.g. 'hardness of heart') or any verbal/action sense is attested.",
+  "layer_separation_note": "Sxr does NOT entail: (1) any verbal, eventive, process, motion, or sound sense — it is purely substantival (the carving in 89:9 is carried by جَابُوا, not by the root); (2) small, loose, scattered, or throwable stones/pebbles/gravel — every token is a unitary bounded mass or bulk material, and 31:16's imagery specifically requires an impenetrable solid; (3) any abstract or moral valence (impenetrability in 31:16 is a connotation inferred from the object's known hardness, never the denotation; blame in 89:9 attaches to Thamud's act, not the neutral material); (4) 'mountain/elevation' — the rock is sited within terrain (بِٱلْوَادِ in 89:9; contrasted with earth-at-large in 31:16), it is the stone-mass, not the massif. Softness/dust/sand are excluded. No claim of distinctness from جبل or حجر is made — no cross-root evidence is present in this single-root packet.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "89:9 (ٱلصَّخْرَ carved/hewn through by humans — rock as workable material) versus 31:16 (صَخْرَةٍ as the humanly-inaccessible ultimate hiding place — impenetrable sealed interior). Surface tension: workable vs. impenetrable. It fails to break the account because both frames presuppose the identical nucleus of hardness: in 31:16 the point is that only Allah retrieves what is sealed within hard rock, and in 89:9 the marvel/hubris is that Thamud managed to cut hard rock. The contrast reinforces rather than fractures the concrete 'hard rock' nucleus; no occurrence materially resists it.",
+  "strongest_competitor": "That the nucleus is an abstract property ('hard/immovable solidity, impenetrability') rather than the concrete object, generalizing from 31:16. Rejected: 89:9 (rock hewn to build) and 18:63 (a specific rock used as a shelter-landmark) foreground the object qua material and qua place — carving presupposes a workable substance, not 'impenetrability.' The concrete-object account is both narrower and covers all three tokens; the abstract account over-generalizes from a single case. A secondary competitor — 'two distinct lexemes' (countable ṣakhrah vs. mass ṣakhr) — collapses into standard singulative/collective number alternation over one substance, not two unbridged senses.",
+  "competing_hypothesis": "That the nucleus is an abstract property ('hard/immovable solidity, impenetrability') rather than the concrete object, generalizing from 31:16. Rejected: 89:9 (rock hewn to build) and 18:63 (a specific rock used as a shelter-landmark) foreground the object qua material and qua place — carving presupposes a workable substance, not 'impenetrability.' The concrete-object account is both narrower and covers all three tokens; the abstract account over-generalizes from a single case. A secondary competitor — 'two distinct lexemes' (countable ṣakhrah vs. mass ṣakhr) — collapses into standard singulative/collective number alternation over one substance, not two unbridged senses.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All three independent lenses converge on a single concrete nucleus, 'hard solid rock,' with the singulative ṣakhrah / collective ṣakhr alternation being a regular grammatical-number relation over one substance, Quran-internally bridged (same denotatum, differing only in individuation). There is no resistant sub-class and no material resistance, so within its attested domain the reading is adversarially clean and CONSISTENT — supporting research_state=PREFERRED, not UNRESOLVED. However the evidence base is wholly lexicalized/nominal: n=3, single POS (N), zero verbal or productive derivational spread to probe a wider root force. Per the contract's explicit rule, wholly lexicalized/nominal evidence caps strength at MODERATE and scope at REPRESENTATIVE; Analyst B's STRONG/GENERAL over-reaches on breadth despite the clean denotation. The honest call is MODERATE + REPRESENTATIVE (DERIVATIONAL_FAMILY: the bridged collective/unit-noun pair), claiming only the concrete-rock nucleus of the attested nominal family and explicitly leaving any verbal/participial/abstract root semantics UNRESOLVED because unattested.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "unit_noun_sakhrah",
+     "where": {
+      "qac_pos": [
+       "N"
+      ],
+      "qac_verb_form": [
+       null
+      ],
+      "word_refs": [
+       "18:63:6:2",
+       "31:16:11:1"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Singulative unit noun ṣakhrah = a single discrete, bounded rock-body (boulder). At 18:63 a specific definite rock functioning as a locatable landmark/shelter (أَوَيْنَآ إِلَى ٱلصَّخْرَةِ); at 31:16 an indefinite rock as the epitome of a sealed, dense, impenetrable interior, set in a merism with the heavens and the earth as the exhaustive set of concealment loci.",
+     "classification_rationale": "Both bear the -ap (ة) singulative morpheme (S~axorapi, SaxorapK) marking one individuated rock-body, and both denote a concrete solid rock; the impenetrability at 31:16 is inferred from the object's hardness, not a distinct sense. No resistance.",
+     "supporting_evidence_note": "18:63 إِذْ أَوَيْنَآ إِلَى ٱلصَّخْرَةِ (definite landmark rock); 31:16 فَتَكُن فِى صَخْرَةٍ contrasted with ٱلسَّمَٰوَٰت and ٱلْأَرْض (sealed solid mass).",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "collective_noun_sakhr",
+     "where": {
+      "qac_pos": [
+       "N"
+      ],
+      "qac_verb_form": [
+       null
+      ],
+      "word_refs": [
+       "89:9:4:2"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Collective/mass noun ṣakhr = rock as workable bedrock material/substance. At 89:9 the direct object of جَابُوا (hewing/carving), the hard stone-mass Thamud cut in the valley to make dwellings.",
+     "classification_rationale": "Bare masculine collective form (S~axora, no -ap, accusative) denoting rock-stuff rather than one body; same substance nucleus as the unit noun, differing only in individuation — a bridged grammatical-number alternation, not a semantic rupture. Occurs only once, so a subtly distinct collective profile cannot be positively excluded, but there is no positive evidence for one.",
+     "supporting_evidence_note": "89:9 وَثَمُودَ ٱلَّذِينَ جَابُوا۟ ٱلصَّخْرَ بِٱلْوَادِ — rock as carvable material, sited within the valley (distinct from the elevation itself).",
+     "counterevidence": []
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "Sxr",
+  "verdict": "NOT_RUN",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "No occurrence materially resists the concrete 'hard solid rock' nucleus, so no genuine adversarial refutation returning SUPPORTED is available to license PASSED; the MODERATE cap is driven by the wholly lexicalized/nominal evidence base (n=3, single POS N, no derivational spread), not by resistance. The core holds across all three tokens, so NOT_RUN is recorded rather than PASSED or FAILED."
+ },
+ "coverage_validation": {
+  "root": "Sxr",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "18:63:6:2",
+   "disposition": "CONSISTENT",
+   "note": "Both bear the -ap (ة) singulative morpheme (S~axorapi, SaxorapK) marking one individuated rock-body, and both denote a concrete solid rock; the impenetrability at 31:16 is inferred from the object's hardness, not a distinct sense. No resistance.",
+   "coverage_cluster_id": "unit_noun_sakhrah",
+   "candidate_semantic_interpretation": "Singulative unit noun ṣakhrah = a single discrete, bounded rock-body (boulder). At 18:63 a specific definite rock functioning as a locatable landmark/shelter (أَوَيْنَآ إِلَى ٱلصَّخْرَةِ); at 31:16 an indefinite rock as the epitome of a sealed, dense, impenetrable interior, set in a merism with the heavens and the earth as the exhaustive set of concealment loci.",
+   "cluster_supporting_evidence": "18:63 إِذْ أَوَيْنَآ إِلَى ٱلصَّخْرَةِ (definite landmark rock); 31:16 فَتَكُن فِى صَخْرَةٍ contrasted with ٱلسَّمَٰوَٰت and ٱلْأَرْض (sealed solid mass).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Both bear the -ap (ة) singulative morpheme (S~axorapi, SaxorapK) marking one individuated rock-body, and both denote a concrete solid rock; the impenetrability at 31:16 is inferred from the object's hardness, not a distinct sense. No resistance.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "18:63",
+     "verse_text": "قَالَ أَرَءَيْتَ إِذْ أَوَيْنَآ إِلَى ٱلصَّخْرَةِ فَإِنِّى نَسِيتُ ٱلْحُوتَ وَمَآ أَنسَىٰنِيهُ إِلَّا ٱلشَّيْطَٰنُ أَنْ أَذْكُرَهُۥ وَٱتَّخَذَ سَبِيلَهُۥ فِى ٱلْبَحْرِ عَجَبًا"
+    }
+   ],
+   "root_arabic": "ص خ ر",
+   "root_buckwalter": "Sxr",
+   "root_id": "Sxr",
+   "artifact_name": "_53_xr.json",
+   "verse_ref": "18:63",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "S~axorapi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالَ أَرَءَيْتَ إِذْ أَوَيْنَآ إِلَى ٱلصَّخْرَةِ فَإِنِّى نَسِيتُ ٱلْحُوتَ وَمَآ أَنسَىٰنِيهُ إِلَّا ٱلشَّيْطَٰنُ أَنْ أَذْكُرَهُۥ وَٱتَّخَذَ سَبِيلَهُۥ فِى ٱلْبَحْرِ عَجَبًا"
+  },
+  {
+   "word_ref": "31:16:11:1",
+   "disposition": "CONSISTENT",
+   "note": "Both bear the -ap (ة) singulative morpheme (S~axorapi, SaxorapK) marking one individuated rock-body, and both denote a concrete solid rock; the impenetrability at 31:16 is inferred from the object's hardness, not a distinct sense. No resistance.",
+   "coverage_cluster_id": "unit_noun_sakhrah",
+   "candidate_semantic_interpretation": "Singulative unit noun ṣakhrah = a single discrete, bounded rock-body (boulder). At 18:63 a specific definite rock functioning as a locatable landmark/shelter (أَوَيْنَآ إِلَى ٱلصَّخْرَةِ); at 31:16 an indefinite rock as the epitome of a sealed, dense, impenetrable interior, set in a merism with the heavens and the earth as the exhaustive set of concealment loci.",
+   "cluster_supporting_evidence": "18:63 إِذْ أَوَيْنَآ إِلَى ٱلصَّخْرَةِ (definite landmark rock); 31:16 فَتَكُن فِى صَخْرَةٍ contrasted with ٱلسَّمَٰوَٰت and ٱلْأَرْض (sealed solid mass).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Both bear the -ap (ة) singulative morpheme (S~axorapi, SaxorapK) marking one individuated rock-body, and both denote a concrete solid rock; the impenetrability at 31:16 is inferred from the object's hardness, not a distinct sense. No resistance.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "31:16",
+     "verse_text": "يَٰبُنَىَّ إِنَّهَآ إِن تَكُ مِثْقَالَ حَبَّةٍ مِّنْ خَرْدَلٍ فَتَكُن فِى صَخْرَةٍ أَوْ فِى ٱلسَّمَٰوَٰتِ أَوْ فِى ٱلْأَرْضِ يَأْتِ بِهَا ٱللَّهُ إِنَّ ٱللَّهَ لَطِيفٌ خَبِيرٌ"
+    }
+   ],
+   "root_arabic": "ص خ ر",
+   "root_buckwalter": "Sxr",
+   "root_id": "Sxr",
+   "artifact_name": "_53_xr.json",
+   "verse_ref": "31:16",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "SaxorapK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰبُنَىَّ إِنَّهَآ إِن تَكُ مِثْقَالَ حَبَّةٍ مِّنْ خَرْدَلٍ فَتَكُن فِى صَخْرَةٍ أَوْ فِى ٱلسَّمَٰوَٰتِ أَوْ فِى ٱلْأَرْضِ يَأْتِ بِهَا ٱللَّهُ إِنَّ ٱللَّهَ لَطِيفٌ خَبِيرٌ"
+  },
+  {
+   "word_ref": "89:9:4:2",
+   "disposition": "CONSISTENT",
+   "note": "Bare masculine collective form (S~axora, no -ap, accusative) denoting rock-stuff rather than one body; same substance nucleus as the unit noun, differing only in individuation — a bridged grammatical-number alternation, not a semantic rupture. Occurs only once, so a subtly distinct collective profile cannot be positively excluded, but there is no positive evidence for one.",
+   "coverage_cluster_id": "collective_noun_sakhr",
+   "candidate_semantic_interpretation": "Collective/mass noun ṣakhr = rock as workable bedrock material/substance. At 89:9 the direct object of جَابُوا (hewing/carving), the hard stone-mass Thamud cut in the valley to make dwellings.",
+   "cluster_supporting_evidence": "89:9 وَثَمُودَ ٱلَّذِينَ جَابُوا۟ ٱلصَّخْرَ بِٱلْوَادِ — rock as carvable material, sited within the valley (distinct from the elevation itself).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Bare masculine collective form (S~axora, no -ap, accusative) denoting rock-stuff rather than one body; same substance nucleus as the unit noun, differing only in individuation — a bridged grammatical-number alternation, not a semantic rupture. Occurs only once, so a subtly distinct collective profile cannot be positively excluded, but there is no positive evidence for one.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "89:9",
+     "verse_text": "وَثَمُودَ ٱلَّذِينَ جَابُوا۟ ٱلصَّخْرَ بِٱلْوَادِ"
+    }
+   ],
+   "root_arabic": "ص خ ر",
+   "root_buckwalter": "Sxr",
+   "root_id": "Sxr",
+   "artifact_name": "_53_xr.json",
+   "verse_ref": "89:9",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "S~axora",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَثَمُودَ ٱلَّذِينَ جَابُوا۟ ٱلصَّخْرَ بِٱلْوَادِ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Three independent lenses (A, B, C) converged on the same concrete nucleus; A and C independently reached MODERATE/REPRESENTATIVE on the lexicalized-nominal cap, corroborating the grade.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "A concrete, hard, solid, dense mass of stone — 'rock'. The root denotes a self-contained, immovable, impenetrable body/substance of stone, individuated by morphology as either the unit noun ṣakhrah (a single discrete rock-body/boulder: 18:63, 31:16) or the collective ṣakhr (rock as workable bedrock material: 89:9). All attested contexts (landmark, sealed interior, carved bedrock) reduce to this one substance without abstraction.",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "DERIVATIONAL_FAMILY",
+ "layer_attribution": {
+  "occurrence_evidence": "Three confirmed nominal tokens: 18:63:6:2 (S~axorapi, def. gen. unit noun), 31:16:11:1 (SaxorapK, indef. gen. unit noun), 89:9:4:2 (S~axora, def. acc. collective). All qac_pos=N, qac_verb_form=null, form=N; full_coverage=true.",
+  "derivation": "A single tightly-knit nominal derivational family: the classic Arabic collective/nomen-unitatis pair — collective ṣakhr (89:9) alongside unit noun ṣakhrah (18:63, 31:16), differing by the singulative -ap (ة) morpheme. This is grammatical individuation over one substance, not multiple lexemes.",
+  "lexical_class": "Wholly lexicalized/nominal: a concrete substantive 'rock'. No verbal, participial, or adjectival form is attested; no productive root-force beyond the concrete object can be demonstrated Quran-internally.",
+  "contextual_relation": "Contextual roles — landmark/shelter (18:63), sealed impenetrable concealment-locus in a heavens/earth merism (31:16), carvable bedrock worked by Thamud in the valley (89:9) — are narrative/argumentative functions of the surrounding verses and verbs; they are NOT elevated into the root claim, which remains only 'hard solid rock'.",
+  "reconciliation": "The apparent workable-vs-impenetrable tension (89:9 vs 31:16) and the collective-vs-singulative morphological split are both reconciled to one concrete nucleus: differing contexts and grammatical number over the identical substance (hard rock), with impenetrability an inference from the object's hardness. No override or preliminary/final disposition change was needed; all clusters CONSISTENT.",
+  "unresolved_resistance": "None. No occurrence materially resists the nucleus and there is no coherent resistant sub-class. What remains genuinely UNRESOLVED (because unattested, not because resistant) is any verbal/participial/productive-abstract semantics of Sxr; the grade is capped at MODERATE/REPRESENTATIVE on breadth (n=3, single POS), and any wider root generalization is deliberately excluded."
+ },
+ "hard_cases": [],
+ "hard_case_representation": {
+  "status": "NO_GENUINE_HARD_CASE",
+  "rationale": "No occurrence materially resists the concrete 'hard solid rock' nucleus. The apparent tension (89:9 workable/carved rock vs. 31:16 impenetrable sealed rock) both presuppose the same hardness and are absorbed by the nucleus, so it is a challenge that confirms rather than a resistant seam. The singulative/collective split is a bridged grammatical alternation, not an unbridged class. Hence no hard case and no final-RESISTANT occurrence; counterevidence_refs is empty."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A Quranic occurrence of Sxr in which the root itself carries a non-rock sense — e.g. a verbal/eventive use, or an abstract/moral 'hardness' denotation not reducible to the physical stone object — thereby showing the concrete-rock nucleus is not the root contribution.",
+  "search_location": "The three attested nominal occurrences (18:63:6:2, 31:16:11:1, 89:9:4:2) and specifically the impenetrability framing at 31:16 and the carving framing at 89:9, re-examined to test whether the abstract 'impenetrability' or an eventive sense is denotational rather than an inference from the concrete object.",
+  "verification_method": "Confirm qac_pos/qac_verb_form on each token and test whether the sense survives when the physical rock referent is removed; check whether any purported abstract/verbal meaning is supplied by the surrounding verb (e.g. جَابُوا, أَوَيْنَآ) rather than by the root morpheme.",
+  "confounder_control": "Attribute carving/refuge/hiding actions to their governing verbs and prepositions, not to Sxr; separate the singulative/collective morphological alternation (individuation) from any claimed semantic shift; do not import lexicon/tafsir 'hardness of heart' senses as they are not Quran-internally attested for this root.",
+  "failure_consequence": "If such a finding is verified, the concrete-object nucleus would be downgraded from PREFERRED to UNRESOLVED (multi-class or abstract-vs-concrete split), and the DERIVATIONAL_FAMILY claim retracted in favor of UNRESOLVED_CLASS_ONLY."
+ },
+ "falsification_status": "NOT_RUN",
+ "reopen_conditions": [
+  "If a previously unconfirmed occurrence of Sxr with a verbal form (qac_verb_form non-null) or a participial/adjectival form is added to the packet, reopen to test whether the root carries a productive non-nominal sense beyond the concrete 'rock' object.",
+  "If a further collective ṣakhr occurrence beyond 89:9 appears, reopen to test whether the collective carries a semantic profile distinct from the unit noun ṣakhrah (18:63, 31:16), since the collective is currently attested only once.",
+  "If any occurrence is found where ṣakhr/ṣakhrah denotes an abstract 'hardness/impenetrability' independent of a physical rock referent, reopen the concrete-object nucleus as a possible abstract-vs-concrete split (currently only inferred at 31:16)."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "18:63:6:2",
+  "31:16:11:1",
+  "89:9:4:2"
+ ],
+ "counterevidence_refs": [],
+ "falsification_evidence": {
+  "attempt_id": "Sxr-falsify-concrete-rock-nucleus",
+  "verdict": "NOT_RUN",
+  "falsifiable": true,
+  "distinctiveness_ok": true,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "unit_noun_sakhrah",
+   "collective_noun_sakhr"
+  ],
+  "status_rationale": "No occurrence materially resists the concrete 'hard solid rock' nucleus, so no genuine adversarial refutation returning SUPPORTED is available to license PASSED; the MODERATE cap is driven by the wholly lexicalized/nominal evidence base (n=3, single POS N, no derivational spread), not by resistance. The core holds across all three tokens, so NOT_RUN is recorded rather than PASSED or FAILED."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Sxr: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Sxr: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Sxr: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Sxr: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Sxr: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Sxr: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Sxr: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Sxr: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}
