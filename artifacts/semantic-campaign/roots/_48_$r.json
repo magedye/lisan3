@@ -1955,27 +1955,26 @@
  },
  "hard_cases": [
   {
-   "word_ref": "10:28:2:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "H$r: 10:28:2:1 represents material class gathering_verbs (37 persisted occurrences) that must independently sustain the current universal claim: collecting dispersed participants into one assembled place or event"
-  },
-  {
    "word_ref": "26:36:7:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "H$r: 26:36:7:1 represents material class assembly_nouns (6 persisted occurrences) that must independently sustain the current universal claim: collecting dispersed participants into one assembled place or event"
+   "role": "STRUCTURAL_ATYPICALITY",
+   "reason": "H$r: 26:36:7:1 is the persisted gatherer agent noun, testing convergence through the participant who assembles rather than through a named assembly event.",
+   "evidence_basis": {
+    "kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE",
+    "statement": "A noun can name the Day or site of gathering rather than the act, but remains defined by the convergence event."
+   }
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "H$r: reject the current universal claim if a verified Quran-internal occurrence in assembly_nouns, gathering_verbs cannot sustain it without an added semantic component. Current hardest boundary: A noun can name the Day or site of gathering rather than the act, but remains defined by the convergence event.",
+  "challenging_finding": "H$r: reject the current universal assembly relation if a gathering verb, gatherer noun, or assembly noun lacks the collection of dispersed participants toward one place or event.",
   "search_location": "Batch 06 H$r: all 43 occurrence_dispositions across material clusters assembly_nouns, gathering_verbs.",
   "verification_method": "Test 'collecting dispersed participants into one assembled place or event' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Voice identifies gatherer versus gathered; eschatological and military contexts supply destination and purpose. The root supplies convergence into assembly.",
-  "failure_consequence": "H$r: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "H$r: isolate the failing nominal or verbal family and remove any unsupported resurrection-specific reading from the root claim."
  },
  "falsification_status": "PASSED",
  "reopen_conditions": [
-  "H$r: reopen if a verified Quran-internal bridge changes the boundary between assembly_nouns, gathering_verbs for the current claim: collecting dispersed participants into one assembled place or event",
-  "H$r: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "H$r: reopen when an assembly noun is shown to name a day or site without a convergence relation.",
+  "H$r: reopen when source morphology reclassifies a decisive gatherer or gathering form across the verb/noun boundary."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [
@@ -2101,5 +2100,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "The agent noun in 26:36 tests whether the claim survives a participant-form rather than an event form."
  }
 }

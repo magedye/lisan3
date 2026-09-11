@@ -852,16 +852,16 @@
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "Hwr: reject the current local claim if a verified Quran-internal occurrence in dialogue, hawariyyun, hur, return cannot sustain it without an added semantic component. Current hardest boundary: The hur nouns in garden contexts have no return/dialogue role, and the hawariyyun group name is not semantically decomposed by its verses.",
+  "challenging_finding": "Hwr: reject the current unresolved four-class partition if Quran-internal evidence makes dialogue, return, disciples, and hur require one distinguishable contribution rather than a two-core patch or named lexical families.",
   "search_location": "Batch 06 Hwr: all 13 occurrence_dispositions across material clusters dialogue, hawariyyun, hur, return.",
   "verification_method": "Test 'UNRESOLVED: return, reciprocal dialogue, the disciples, and hur are individually clear but lack a Quran-internal unifying contribution' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Forms III/VI identify reciprocal dialogue, while surface families separate hawariyyun and hur. Morphology exposes the split but does not license an external derivation for the names.",
-  "failure_consequence": "Hwr: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "Hwr: replace the partition only through a new root-level analysis that records the bridge and the remaining counterexamples."
  },
  "falsification_status": "NOT_REQUIRED",
  "reopen_conditions": [
-  "Hwr: reopen if a verified Quran-internal bridge changes the boundary between dialogue, hawariyyun, hur, return for the current claim: UNRESOLVED: return, reciprocal dialogue, the disciples, and hur are individually clear but lack a Quran-internal unifying contribution",
-  "Hwr: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "Hwr: reopen when a resistant hur or hawariyyun occurrence acquires an internal relation to the dialogue/return family.",
+  "Hwr: reopen when proper-name or noun-family morphology is canonically reassigned and removes the present split."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [],
@@ -959,5 +959,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL",
+  "rationale": "The resistant dialogue, disciples, hur, and return families preserve the missing unifier."
  }
 }

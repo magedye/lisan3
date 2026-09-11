@@ -1955,27 +1955,26 @@
  },
  "hard_cases": [
   {
-   "word_ref": "11:12:2:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "trk: 11:12:2:1 represents material class leaver_participles (3 persisted occurrences) that must independently sustain the current universal claim: ceasing to retain or accompany something, so that it is left, abandoned, spared, or left behind"
-  },
-  {
-   "word_ref": "11:87:6:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "trk: 11:87:6:1 represents material class leaving_verbs (40 persisted occurrences) that must independently sustain the current universal claim: ceasing to retain or accompany something, so that it is left, abandoned, spared, or left behind"
+   "word_ref": "4:7:4:1",
+   "role": "STRUCTURAL_ATYPICALITY",
+   "reason": "trk: 4:7:4:1 frames inherited shares through what prior holders left, testing cessation of retention against a positive inheritance result.",
+   "evidence_basis": {
+    "kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE",
+    "statement": "Leaving descendants or an inheritance can look like positive bequeathal, but it still profiles what remains when the prior holder departs."
+   }
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "trk: reject the current universal claim if a verified Quran-internal occurrence in leaver_participles, leaving_verbs cannot sustain it without an added semantic component. Current hardest boundary: Leaving descendants or an inheritance can look like positive bequeathal, but it still profiles what remains when the prior holder departs.",
+  "challenging_finding": "trk: reject the current universal cessation-of-retention relation if a leaving, leaver, inheritance, abandonment, or sparing occurrence does not involve a prior holder ceasing to retain or accompany what remains.",
   "search_location": "Batch 06 trk: all 43 occurrence_dispositions across material clusters leaver_participles, leaving_verbs.",
   "verification_method": "Test 'ceasing to retain or accompany something, so that it is left, abandoned, spared, or left behind' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Objects and negation specify what is left; passive voice specifies being left; participles specify a leaver. These do not replace the cessation-of-retention core.",
-  "failure_consequence": "trk: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "trk: restrict the claim to the surviving relation and do not recast inheritance as a separate positive root contribution without evidence."
  },
  "falsification_status": "PASSED",
  "reopen_conditions": [
-  "trk: reopen if a verified Quran-internal bridge changes the boundary between leaver_participles, leaving_verbs for the current claim: ceasing to retain or accompany something, so that it is left, abandoned, spared, or left behind",
-  "trk: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "trk: reopen when an inheritance or descendant occurrence such as 4:7 is shown to lack prior departure or cessation of retention.",
+  "trk: reopen when morphology alters the division between leaving verbs and leaver participles at a boundary record."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [
@@ -2101,5 +2100,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "The inheritance formulation at 4:7 tests departure/cessation against an apparently positive conveyance."
  }
 }

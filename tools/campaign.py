@@ -830,6 +830,7 @@ BATCH06_ROOT_JUDGMENT_FIELDS = (
     "supporting_evidence_refs",
     "counterevidence_refs",
     "hard_cases",
+    "hard_case_representation",
     "rejection_condition",
     "falsification_status",
     "falsification_evidence",
@@ -847,6 +848,16 @@ BATCH06_CLAIM_SCOPE_KINDS = {
     "LEXICALIZED_CLASS",
     "OCCURRENCE_LEVEL",
     "UNRESOLVED_CLASS_ONLY",
+}
+BATCH06_HARD_CASE_ROLES = {
+    "RESISTANT_SEAM",
+    "ADVERSARIAL_BOUNDARY",
+    "STRUCTURAL_ATYPICALITY",
+}
+BATCH06_HARD_CASE_REPRESENTATION_STATUSES = {
+    "EVIDENCE_DERIVED",
+    "PERSISTED_RESISTANCE_OR_ADVERSARIAL",
+    "NO_GENUINE_HARD_CASE",
 }
 BATCH06_CLAIM_SCOPES = {"UNIVERSAL", "REPRESENTATIVE", "LOCAL"}
 BATCH06_PURITY_DIAGNOSTICS = (
@@ -883,19 +894,6 @@ def _root_occurrence_refs(artifact: dict) -> set[str]:
         for item in artifact.get("occurrence_dispositions") or []
         if isinstance(item, dict) and isinstance(item.get("word_ref"), str)
     }
-
-
-def _root_cluster_evidence_refs(artifact: dict) -> list[str]:
-    """Return one persisted word_ref from every existing materialized class."""
-    refs: list[str] = []
-    seen_clusters: set[str] = set()
-    for item in artifact.get("occurrence_dispositions") or []:
-        cluster = item.get("coverage_cluster_id")
-        ref = item.get("word_ref")
-        if isinstance(cluster, str) and isinstance(ref, str) and cluster not in seen_clusters:
-            refs.append(ref)
-            seen_clusters.add(cluster)
-    return refs
 
 
 def _root_supporting_evidence_refs(artifact: dict) -> list[str]:
@@ -982,166 +980,11 @@ def _default_claim_scope(artifact: dict) -> tuple[str, str]:
 
 
 def _default_batch06_root_contract(artifact: dict) -> dict:
-    """Complete the root-artifact contract from persisted, resolvable evidence.
-
-    ``claim_scope`` keeps the canonical UNIVERSAL/REPRESENTATIVE/LOCAL meaning.
-    ``claim_scope_kind`` records the distinct semantic extent requested for the
-    campaign artifacts; it is not an alias for evidentiary coverage scope.
-    """
-    evidence_refs = _root_supporting_evidence_refs(artifact)
-    occurrence_refs = _root_occurrence_refs(artifact)
-    counter_refs = _root_counterevidence_refs(artifact)
-    default_scope, default_scope_kind = _default_claim_scope(artifact)
-    scope = artifact.get("claim_scope")
-    if scope not in BATCH06_CLAIM_SCOPES:
-        scope = default_scope
-    scope_kind = artifact.get("claim_scope_kind")
-    if scope_kind not in BATCH06_CLAIM_SCOPE_KINDS:
-        scope_kind = default_scope_kind
-    root = artifact.get("root_buckwalter", "<unknown>")
-    discovery = artifact.get("internal_discovery") or {}
-    claim = _claim_text(artifact)
-    strongest_counterexample = (
-        discovery.get("strongest_counterexample")
-        or "No additional root-level counterexample was persisted before this structural completion."
+    """Reject obsolete generic judgment-control generation fail-closed."""
+    raise ValueError(
+        "Batch 06 generic judgment-control generation was removed. "
+        "Use the explicit representation-remediation control plan."
     )
-    clusters = _cluster_details(artifact)
-    cluster_names = sorted(clusters)
-    occurrence_by_ref = {
-        item.get("word_ref"): item
-        for item in artifact.get("occurrence_dispositions") or []
-        if isinstance(item, dict)
-    }
-    hard_cases: list[dict] = []
-    for ref in counter_refs:
-        occurrence = occurrence_by_ref[ref]
-        cluster = occurrence.get("coverage_cluster_id", "unclassified")
-        disposition = occurrence.get("final_disposition", "recorded")
-        role = "RESISTANT_SEAM" if disposition == "RESISTANT" else "ADVERSARIAL_BOUNDARY"
-        hard_cases.append({
-            "word_ref": ref,
-            "role": role,
-            "reason": (
-                f"{root}: {ref} remains {disposition} in material class {cluster}; "
-                f"it pressure-tests the bounded claim: {strongest_counterexample}"
-            ),
-        })
-    if not hard_cases:
-        cluster_refs = _root_cluster_evidence_refs(artifact)
-        for ref in cluster_refs:
-            occurrence = occurrence_by_ref[ref]
-            cluster = occurrence.get("coverage_cluster_id", "unclassified")
-            metadata = clusters.get(cluster, {})
-            hard_cases.append({
-                "word_ref": ref,
-                "role": "MATERIAL_CLASS_BOUNDARY",
-                "reason": (
-                    f"{root}: {ref} represents material class {cluster} "
-                    f"({metadata.get('occurrence_count_expected', 'unknown')} persisted occurrences) "
-                    f"that must independently sustain the current {scope.lower()} claim: {claim}"
-                ),
-            })
-    resistant_refs = sorted(
-        ref for ref in counter_refs
-        if occurrence_by_ref[ref].get("final_disposition") == "RESISTANT"
-    )
-    historical_refs = sorted({
-        item["word_ref"]
-        for item in artifact.get("resistant_deep_analysis") or []
-        if isinstance(item, dict) and item.get("word_ref") in occurrence_refs
-    })
-    reconciliation = "No historical reconciliation record is present."
-    if historical_refs:
-        reconciliation = "Historical reconciliation lineage remains persisted for: " + ", ".join(historical_refs)
-    resistance = "No final resistant occurrence is currently persisted."
-    if resistant_refs:
-        resistance = "Final resistance remains persisted for: " + ", ".join(resistant_refs)
-    adversarial = artifact.get("adversarial_verification") or {}
-    passed_falsification = (
-        artifact.get("research_state") == "PREFERRED"
-        and adversarial.get("verdict") == "SUPPORTED"
-        and adversarial.get("distinctiveness_ok") is True
-        and adversarial.get("falsifiable") is True
-    )
-    falsification_status = (
-        "NOT_REQUIRED" if artifact.get("research_state") == "UNRESOLVED"
-        else "PASSED" if passed_falsification else "NOT_RUN"
-    )
-    status_reason = (
-        "The persisted adversarial record is SUPPORTed, falsifiable, and distinctive."
-        if passed_falsification else
-        "The persisted adversarial record does not establish a fully passed, distinctive canonical falsification cycle for this current claim."
-    )
-    return {
-        "contract_type": "ROOT_CONCEPT",
-        "claim_scope": scope,
-        "claim_scope_kind": scope_kind,
-        "layer_attribution": {
-            "occurrence_evidence": (
-                f"{root}: {len(evidence_refs)} positive and {len(counter_refs)} counterevidence "
-                "word_refs resolve in occurrence_dispositions."
-            ),
-            "derivation": f"{root}: QAC materialized clusters: " + ", ".join(cluster_names),
-            "lexical_class": f"{root}: current claim scope kind is {scope_kind}; claim: {claim}",
-            "contextual_relation": discovery.get("layer_separation_note") or (
-                f"{root}: canonical Tanzil verse_text remains attached to every occurrence record."
-            ),
-            "reconciliation": reconciliation,
-            "unresolved_resistance": f"{root}: {resistance}",
-        },
-        "supporting_evidence_refs": evidence_refs,
-        "counterevidence_refs": counter_refs,
-        "hard_cases": hard_cases,
-        "rejection_condition": {
-            "challenging_finding": (
-                f"{root}: reject the current {scope.lower()} claim if a verified Quran-internal "
-                f"occurrence in {', '.join(cluster_names)} cannot sustain it without an added "
-                f"semantic component. Current hardest boundary: {strongest_counterexample}"
-            ),
-            "search_location": (
-                f"Batch 06 {root}: all {len(occurrence_refs)} occurrence_dispositions across "
-                f"material clusters {', '.join(cluster_names)}."
-            ),
-            "verification_method": (
-                f"Test '{claim}' against every listed supporting_evidence_refs and "
-                "counterevidence_refs entry, retaining any failed class boundary."
-            ),
-            "confounder_control": discovery.get("layer_separation_note") or (
-                "Keep root, derivation, lexical class, construction, and local context distinct."
-            ),
-            "failure_consequence": (
-                f"{root}: retain only the surviving material class or record the judgment as "
-                "UNRESOLVED; do not restore a broader root generalization."
-            ),
-        },
-        "falsification_status": falsification_status,
-        "falsification_evidence": {
-            "attempt_id": f"BATCH06_ADVERSARIAL_VERIFICATION:{root}",
-            "verdict": adversarial.get("verdict"),
-            "falsifiable": adversarial.get("falsifiable"),
-            "distinctiveness_ok": adversarial.get("distinctiveness_ok"),
-            "failing_occurrences": sorted(
-                ref for ref in adversarial.get("failing_occurrences") or []
-                if isinstance(ref, str) and ref in occurrence_refs
-            ),
-            "tested_material_clusters": cluster_names,
-            "status_rationale": status_reason,
-        },
-        "reopen_conditions": [
-            (
-                f"{root}: reopen if a verified Quran-internal bridge changes the boundary between "
-                f"{', '.join(cluster_names)} for the current claim: {claim}"
-            ),
-            (
-                f"{root}: reopen if source, morphology, or classification correction changes any "
-                "listed supporting_evidence_refs or counterevidence_refs identity."
-            ),
-        ],
-        "purity_status": "NOT_EVALUATED",
-        "purity_diagnostics": _purity_diagnostics(root),
-    }
-
-
 def validate_batch06_root_judgment_contract(artifact: dict) -> list[str]:
     """Validate the exact persisted Batch 06 root contract and reference links."""
     root = artifact.get("root_buckwalter", "<unknown>")
@@ -1186,17 +1029,59 @@ def validate_batch06_root_judgment_contract(artifact: dict) -> list[str]:
             errors.append(f"{root}: {field} must be a word_ref list")
         elif not set(value) <= refs:
             errors.append(f"{root}: {field} contains an unresolved word_ref")
+    hard_case_representation = artifact.get("hard_case_representation")
+    if not isinstance(hard_case_representation, dict):
+        errors.append(f"{root}: hard_case_representation is incomplete")
+    elif hard_case_representation.get("status") not in BATCH06_HARD_CASE_REPRESENTATION_STATUSES:
+        errors.append(f"{root}: invalid hard_case_representation status")
+    elif not isinstance(hard_case_representation.get("rationale"), str) or not hard_case_representation["rationale"].strip():
+        errors.append(f"{root}: hard_case_representation requires a rationale")
     hard_cases = artifact.get("hard_cases")
-    if not isinstance(hard_cases, list) or not hard_cases:
-        errors.append(f"{root}: hard_cases must be non-empty")
+    if not isinstance(hard_cases, list):
+        errors.append(f"{root}: hard_cases must be a list")
+    elif not hard_cases:
+        if not isinstance(hard_case_representation, dict) or hard_case_representation.get("status") != "NO_GENUINE_HARD_CASE":
+            errors.append(f"{root}: empty hard_cases requires NO_GENUINE_HARD_CASE")
+        elif _root_counterevidence_refs(artifact):
+            errors.append(f"{root}: no-hard-case representation cannot hide persisted counterevidence")
     else:
+        if isinstance(hard_case_representation, dict) and hard_case_representation.get("status") == "NO_GENUINE_HARD_CASE":
+            errors.append(f"{root}: NO_GENUINE_HARD_CASE cannot contain hard_cases")
+        hard_case_refs: set[str] = set()
         for case in hard_cases:
             if not isinstance(case, dict) or case.get("word_ref") not in refs:
                 errors.append(f"{root}: hard_cases contains an unresolved word_ref")
                 break
-            if not isinstance(case.get("role"), str) or not isinstance(case.get("reason"), str):
-                errors.append(f"{root}: hard_cases entry lacks material role or reason")
+            hard_case_refs.add(case["word_ref"])
+            if case.get("role") not in BATCH06_HARD_CASE_ROLES:
+                errors.append(f"{root}: hard_cases entry has an invalid or positional role")
                 break
+            if not isinstance(case.get("reason"), str) or not case["reason"].strip():
+                errors.append(f"{root}: hard_cases entry lacks a material reason")
+                break
+            if isinstance(hard_case_representation, dict) and hard_case_representation.get("status") == "EVIDENCE_DERIVED":
+                basis = case.get("evidence_basis")
+                if not isinstance(basis, dict) or not isinstance(basis.get("kind"), str) or not isinstance(basis.get("statement"), str):
+                    errors.append(f"{root}: evidence-derived hard case lacks an evidence basis")
+                    break
+                persisted_text = json.dumps({
+                    "internal_discovery": artifact.get("internal_discovery"),
+                    "adversarial_verification": artifact.get("adversarial_verification"),
+                    "occurrence_dispositions": [
+                        item for item in artifact.get("occurrence_dispositions") or []
+                        if item.get("word_ref") == case.get("word_ref")
+                    ],
+                }, ensure_ascii=False)
+                if basis["statement"] not in persisted_text:
+                    errors.append(f"{root}: evidence-derived hard-case basis is not persisted")
+                    break
+        resistant_refs = {
+            item["word_ref"]
+            for item in artifact.get("occurrence_dispositions") or []
+            if item.get("final_disposition") == "RESISTANT"
+        }
+        if resistant_refs and not resistant_refs <= hard_case_refs:
+            errors.append(f"{root}: hard_cases must retain every persisted resistant occurrence")
     condition = artifact.get("rejection_condition")
     required_condition = {
         "challenging_finding", "search_location", "verification_method",
@@ -1206,6 +1091,12 @@ def validate_batch06_root_judgment_contract(artifact: dict) -> list[str]:
         errors.append(f"{root}: rejection_condition is incomplete")
     elif any(not isinstance(condition[key], str) or not condition[key].strip() for key in required_condition):
         errors.append(f"{root}: rejection_condition contains an empty control")
+    else:
+        challenging = condition["challenging_finding"].casefold()
+        if artifact.get("claim_scope") == "UNIVERSAL" and "universal" not in challenging:
+            errors.append(f"{root}: universal claim lacks universal rejection logic")
+        if artifact.get("claim_scope_kind") == "UNRESOLVED_CLASS_ONLY" and not ({"partition", "bridge"} & set(challenging.replace("-", " ").split())):
+            errors.append(f"{root}: unresolved claim lacks partition-or-bridge rejection logic")
     if artifact.get("falsification_status") not in {"NOT_REQUIRED", "NOT_RUN", "PASSED", "FAILED"}:
         errors.append(f"{root}: invalid falsification_status")
     falsification_evidence = artifact.get("falsification_evidence")
@@ -1223,8 +1114,10 @@ def validate_batch06_root_judgment_contract(artifact: dict) -> list[str]:
             and falsification_evidence.get("distinctiveness_ok") is True
     ):
         errors.append(f"{root}: PASSED falsification lacks a recorded distinctive support verdict")
-    if not isinstance(artifact.get("reopen_conditions"), list) or not artifact["reopen_conditions"]:
+    if not isinstance(artifact.get("reopen_conditions"), list) or len(artifact["reopen_conditions"]) < 2:
         errors.append(f"{root}: reopen_conditions must be non-empty")
+    elif any(not isinstance(value, str) or not value.strip() for value in artifact["reopen_conditions"]):
+        errors.append(f"{root}: reopen_conditions contains an empty control")
     diagnostics = artifact.get("purity_diagnostics")
     if not isinstance(diagnostics, dict) or set(diagnostics) != set(BATCH06_PURITY_DIAGNOSTICS):
         errors.append(f"{root}: purity_diagnostics must contain the eight canonical diagnostics")
@@ -1407,30 +1300,11 @@ def _refresh_root_disposition_from_occurrences(artifact: dict) -> None:
 
 
 def _apply_root_contract(artifact: dict, target: dict | None) -> None:
-    contract = _default_batch06_root_contract(artifact)
-    if target is not None:
-        for field in (
-            "claim_scope", "claim_scope_kind",
-        ):
-            if field in target:
-                contract[field] = target[field]
-        contract["layer_attribution"] = {
-            **contract["layer_attribution"],
-            "occurrence_evidence": (
-                "Direct Batch 06 occurrence refs are listed in supporting_evidence_refs "
-                "and resolve in occurrence_dispositions."
-            ),
-            "derivation": "Material derivational/form separation is preserved in the root's persisted coverage clusters and corrective partition where present.",
-            "lexical_class": "Corrective claim kind: " + target["claim_scope_kind"],
-            "contextual_relation": target["semantic_boundary"],
-            "reconciliation": "Historical reconciliation lineage is retained; any current corrective outcome is recorded without deleting the earlier attempt.",
-            "unresolved_resistance": target["rationale"],
-        }
-    for alias in BATCH06_LEGACY_EVIDENCE_ALIAS_FIELDS:
-        artifact.pop(alias, None)
-    artifact.update(contract)
-
-
+    """Reject obsolete generic judgment-control application fail-closed."""
+    raise ValueError(
+        "Batch 06 generic judgment-control generation was removed. "
+        "Use the explicit representation-remediation control plan."
+    )
 def _refresh_batch06_manifest(manifest: dict, artifacts: dict[str, dict], revision_id: str) -> None:
     outcomes: dict[str, int] = {"STRONG": 0, "MODERATE": 0, "WEAK": 0, "UNRESOLVED": 0}
     for artifact in artifacts.values():
@@ -1643,6 +1517,296 @@ def _render_batch06_final_contract_status_from_baseline(base: str, status: dict)
     return body[:-1].rstrip() + insertion
 
 
+def _batch06_representation_snapshot(artifact: dict) -> dict:
+    """Capture every Batch 06 payload field that representation work cannot alter."""
+    snapshot = {
+        field: artifact.get(field)
+        for field in BATCH06_REPRESENTATION_FROZEN_FIELDS
+    }
+    snapshot["internal_discovery"] = artifact.get("internal_discovery") or {}
+    return json.loads(json.dumps(snapshot, ensure_ascii=False, sort_keys=True))
+
+
+def _validate_batch06_representation_plan(plan: dict, artifacts: dict[str, dict]) -> None:
+    """Require authored root controls; never synthesize them from iteration order."""
+    if plan.get("semantic_fields_frozen") != list(BATCH06_REPRESENTATION_FROZEN_FIELDS):
+        raise ValueError("Batch 06 representation semantic-freeze declaration is not exact")
+    positional_roots = plan.get("positional_hard_case_roots")
+    if not isinstance(positional_roots, list) or set(positional_roots) != BATCH06_POSITIONAL_HARD_CASE_ROOTS:
+        raise ValueError("Batch 06 representation positional hard-case root set is not exact")
+    if len(positional_roots) != len(set(positional_roots)):
+        raise ValueError("Batch 06 representation positional hard-case roots are duplicated")
+    controls = plan.get("judgment_controls")
+    if not isinstance(controls, dict) or set(controls) != set(artifacts):
+        raise ValueError("Batch 06 representation controls must cover exactly the frozen root set")
+    rejection_logic: set[str] = set()
+    reopen_logic: set[tuple[str, ...]] = set()
+    for root, artifact in artifacts.items():
+        control = controls[root]
+        if not isinstance(control, dict):
+            raise TypeError(f"{root}: representation control must be an object")
+        if control.get("claim_scope") != artifact.get("claim_scope") or control.get("claim_scope_kind") != artifact.get("claim_scope_kind"):
+            raise ValueError(f"{root}: representation control does not bind the persisted claim scope")
+        representation = control.get("hard_case_representation")
+        if not isinstance(representation, dict) or representation.get("status") not in BATCH06_HARD_CASE_REPRESENTATION_STATUSES:
+            raise ValueError(f"{root}: invalid hard-case representation control")
+        if not isinstance(representation.get("rationale"), str) or not representation["rationale"].strip():
+            raise ValueError(f"{root}: hard-case representation lacks a rationale")
+        override_present = "hard_case_override" in control
+        if root in BATCH06_POSITIONAL_HARD_CASE_ROOTS and not override_present:
+            raise ValueError(f"{root}: positional hard-case remediation lacks an explicit override")
+        if root not in BATCH06_POSITIONAL_HARD_CASE_ROOTS and override_present:
+            raise ValueError(f"{root}: non-positional hard-case representation must remain frozen")
+        if override_present:
+            override = control["hard_case_override"]
+            if not isinstance(override, list):
+                raise TypeError(f"{root}: hard-case override must be a list")
+            if representation["status"] == "NO_GENUINE_HARD_CASE":
+                if override:
+                    raise ValueError(f"{root}: no-hard-case representation cannot contain a case")
+                if _root_counterevidence_refs(artifact):
+                    raise ValueError(f"{root}: no-hard-case representation would hide counterevidence")
+            elif not override:
+                raise ValueError(f"{root}: evidence-derived hard-case override is empty")
+            for case in override:
+                if not isinstance(case, dict) or case.get("word_ref") not in _root_occurrence_refs(artifact):
+                    raise ValueError(f"{root}: hard-case override has an unresolved word_ref")
+                if case.get("role") not in BATCH06_HARD_CASE_ROLES:
+                    raise ValueError(f"{root}: hard-case override has an invalid role")
+        rejection = control.get("rejection_condition")
+        if not isinstance(rejection, dict) or set(rejection) != {"challenging_finding", "failure_consequence"}:
+            raise ValueError(f"{root}: rejection control must contain only the authored invalidation and consequence")
+        if any(not isinstance(value, str) or not value.strip() for value in rejection.values()):
+            raise ValueError(f"{root}: rejection control contains empty prose")
+        rejection_logic.add(rejection["challenging_finding"])
+        reopen = control.get("reopen_conditions")
+        if not isinstance(reopen, list) or len(reopen) != 2 or any(not isinstance(value, str) or not value.strip() for value in reopen):
+            raise ValueError(f"{root}: reopen control must contain two authored conditions")
+        reopen_logic.add(tuple(reopen))
+    if len(rejection_logic) != len(artifacts):
+        raise ValueError("Batch 06 representation rejection controls are not independently authored")
+    if len(reopen_logic) != len(artifacts):
+        raise ValueError("Batch 06 representation reopen controls are not independently authored")
+
+
+def _apply_batch06_representation_controls(artifact: dict, control: dict) -> None:
+    """Apply only the three owner-authorized representation controls."""
+    if "hard_case_override" in control:
+        artifact["hard_cases"] = json.loads(json.dumps(
+            control["hard_case_override"], ensure_ascii=False,
+        ))
+    artifact["hard_case_representation"] = json.loads(json.dumps(
+        control["hard_case_representation"], ensure_ascii=False,
+    ))
+    rejection = dict(artifact["rejection_condition"])
+    rejection.update(control["rejection_condition"])
+    artifact["rejection_condition"] = rejection
+    artifact["reopen_conditions"] = list(control["reopen_conditions"])
+
+
+def _refresh_batch06_representation_manifest(manifest: dict, plan: dict) -> None:
+    final = manifest.setdefault("final_checkpoint", {})
+    final.update({
+        "status": "REPRESENTATION_REMEDIATION_APPLIED",
+        "report": "docs/LISAN3_BATCH_06_REPRESENTATION_REMEDIATION.md",
+        "review_state": "BATCH_06_REPRESENTATION_REMEDIATION_READY_FOR_FRESH_REVIEW_NOT_YET_INDEPENDENTLY_REVIEWED",
+    })
+    manifest["status"] = "BATCH_06_REPRESENTATION_REMEDIATION_READY_FOR_FRESH_REVIEW"
+    manifest["representation_remediation"] = {
+        "revision_id": plan["revision_id"],
+        "baseline_sha": plan["baseline_sha"],
+        "source_policy": plan["source_policy"],
+        "canonical_runtime_contract": plan["canonical_runtime_contract"],
+        "positional_hard_case_roots": sorted(plan["positional_hard_case_roots"]),
+        "no_genuine_hard_case_roots": sorted(
+            root for root, control in plan["judgment_controls"].items()
+            if control["hard_case_representation"]["status"] == "NO_GENUINE_HARD_CASE"
+        ),
+        "semantic_payload_frozen": True,
+        "fresh_review_required": True,
+    }
+
+
+def _refresh_batch06_representation_status(status: dict, plan: dict) -> None:
+    status["status"] = "BATCH_06_REPRESENTATION_REMEDIATION_COMPLETE"
+    status["verdict"] = "BATCH_06_REPRESENTATION_REMEDIATION_READY_FOR_FRESH_REVIEW"
+    checkpoint = status.setdefault("batch06_current_checkpoint", {})
+    checkpoint["report"] = "docs/LISAN3_BATCH_06_REPRESENTATION_REMEDIATION.md"
+    checkpoint.setdefault("combined", {})["status"] = "REPRESENTATION_REMEDIATION_APPLIED"
+    status["resume_instruction"] = (
+        "Stop. Batch 06 representation remediation requires a fresh read-only independent "
+        "review against the exact corrective commit. Do not select Batch 07, canonicalize, "
+        "merge, push, or release under this authority."
+    )
+    status["batch06_representation_remediation"] = {
+        "revision_id": plan["revision_id"],
+        "baseline_sha": plan["baseline_sha"],
+        "canonical_runtime_contract": plan["canonical_runtime_contract"],
+        "semantic_payload_frozen": True,
+        "fresh_review_required": True,
+    }
+
+
+def _render_batch06_representation_manifest_from_baseline(base: str, manifest: dict) -> str:
+    final = manifest["final_checkpoint"]
+    text = _replace_once(
+        base,
+        '  "status": "BATCH_06_FINAL_CONTRACT_REMEDIATION_READY_FOR_FRESH_REVIEW",',
+        f'  "status": "{manifest["status"]}",',
+        "representation manifest status",
+    )
+    text = _replace_once(
+        text,
+        '    "status": "FINAL_CONTRACT_REMEDIATION_APPLIED",',
+        f'    "status": "{final["status"]}",',
+        "representation checkpoint status",
+    )
+    text = _replace_once(
+        text,
+        '    "report": "docs/LISAN3_BATCH_06_FINAL_CONTRACT_REMEDIATION.md",',
+        f'    "report": "{final["report"]}",',
+        "representation report",
+    )
+    text = _replace_once(
+        text,
+        '    "review_state": "BATCH_06_FINAL_CONTRACT_REMEDIATION_READY_FOR_FRESH_REVIEW_NOT_YET_INDEPENDENTLY_REVIEWED"',
+        f'    "review_state": "{final["review_state"]}"',
+        "representation review state",
+    )
+    insertion = (
+        '\n  "representation_remediation": '
+        + _indented_json(manifest["representation_remediation"], 2).lstrip()
+        + ',\n'
+    )
+    return _replace_once(text, '\n  "roots": [', insertion + '  "roots": [', "representation insertion")
+
+
+def _render_batch06_representation_status_from_baseline(base: str, status: dict) -> str:
+    checkpoint = status["batch06_current_checkpoint"]
+    combined = checkpoint["combined"]
+    text = _replace_once(
+        base,
+        '  "status": "BATCH_06_FINAL_CONTRACT_REMEDIATION_COMPLETE",',
+        f'  "status": "{status["status"]}",',
+        "representation campaign status",
+    )
+    text = _replace_once(
+        text,
+        '  "verdict": "BATCH_06_FINAL_CONTRACT_REMEDIATION_READY_FOR_FRESH_REVIEW",',
+        f'  "verdict": "{status["verdict"]}",',
+        "representation campaign verdict",
+    )
+    text = _replace_once(
+        text,
+        '      "status": "FINAL_CONTRACT_REMEDIATION_APPLIED",',
+        f'      "status": "{combined["status"]}",',
+        "representation combined status",
+    )
+    text = _replace_once(
+        text,
+        '    "report": "docs/LISAN3_BATCH_06_FINAL_CONTRACT_REMEDIATION.md",',
+        f'    "report": "{checkpoint["report"]}",',
+        "representation checkpoint report",
+    )
+    text = _replace_once(
+        text,
+        '  "resume_instruction": "Stop. Batch 06 final contract remediation requires a fresh read-only independent review against the exact corrective commit. Do not select Batch 07, canonicalize, merge, push, or release under this authority."',
+        f'  "resume_instruction": {json.dumps(status["resume_instruction"], ensure_ascii=False)}',
+        "representation resume instruction",
+    )
+    trailing_newline = '\n' if text.endswith('\n') else ''
+    body = text.rstrip('\n')
+    if not body.endswith('}'):
+        raise ValueError("cannot preserve representation status formatting")
+    insertion = (
+        ',\n  "batch06_representation_remediation": '
+        + _indented_json(status["batch06_representation_remediation"], 2).lstrip()
+        + '\n}'
+        + trailing_newline
+    )
+    return body[:-1].rstrip() + insertion
+
+
+def cmd_apply_batch06_representation_remediation(args):
+    """Apply only explicit Batch 06 judgment-control representations."""
+    repository_root = Path(args.repo_root).resolve()
+    plan_path = Path(args.plan)
+    if not plan_path.is_absolute():
+        plan_path = repository_root / plan_path
+    plan = json.loads(plan_path.read_text(encoding="utf-8"))
+    head = subprocess.run(
+        ["git", "rev-parse", "HEAD"], cwd=repository_root, check=True,
+        capture_output=True, text=True, encoding="utf-8",
+    ).stdout.strip()
+    if head != plan.get("baseline_sha"):
+        raise ValueError(
+            "Batch 06 representation remediation baseline does not match HEAD: "
+            f"expected {plan.get('baseline_sha')}, got {head}"
+        )
+    manifest_path = repository_root / "artifacts/semantic-campaign/BATCH_06_MANIFEST.json"
+    status_path = repository_root / "artifacts/semantic-campaign/CAMPAIGN_STATUS.json"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    paths = _batch06_artifact_paths(repository_root, manifest)
+    artifacts: dict[str, dict] = {}
+    frozen: dict[str, dict] = {}
+    for root, path in paths.items():
+        artifact = json.loads(path.read_text(encoding="utf-8"))
+        if artifact.get("root_buckwalter") != root:
+            raise ValueError(f"Batch 06 artifact identity mismatch at {path}")
+        artifacts[root] = artifact
+        frozen[root] = _batch06_representation_snapshot(artifact)
+    _validate_batch06_representation_plan(plan, artifacts)
+    for root, artifact in artifacts.items():
+        _apply_batch06_representation_controls(
+            artifact, plan["judgment_controls"][root],
+        )
+    errors = [
+        error
+        for artifact in artifacts.values()
+        for error in validate_batch06_root_judgment_contract(artifact)
+    ]
+    if errors:
+        raise ValueError("Batch 06 representation contract errors: " + "; ".join(errors))
+    drift = [
+        root for root, artifact in artifacts.items()
+        if _batch06_representation_snapshot(artifact) != frozen[root]
+    ]
+    if drift:
+        raise ValueError(
+            "Batch 06 representation remediation attempted frozen payload drift: "
+            + ", ".join(sorted(drift))
+        )
+    _refresh_batch06_representation_manifest(manifest, plan)
+    status = json.loads(status_path.read_text(encoding="utf-8"))
+    _refresh_batch06_representation_status(status, plan)
+    for root, path in paths.items():
+        _write_root_json(path, root, artifacts[root])
+    manifest_path.write_text(
+        _render_batch06_representation_manifest_from_baseline(
+            _baseline_text(repository_root, plan["baseline_sha"],
+                           "artifacts/semantic-campaign/BATCH_06_MANIFEST.json"),
+            manifest,
+        ),
+        encoding="utf-8", newline="\n",
+    )
+    status_path.write_text(
+        _render_batch06_representation_status_from_baseline(
+            _baseline_text(repository_root, plan["baseline_sha"],
+                           "artifacts/semantic-campaign/CAMPAIGN_STATUS.json"),
+            status,
+        ),
+        encoding="utf-8", newline="\n",
+    )
+    print(json.dumps({
+        "revision_id": plan["revision_id"],
+        "baseline_sha": head,
+        "roots": len(artifacts),
+        "canonical_contract_errors": 0,
+        "frozen_payload_drift": [],
+        "status": manifest["status"],
+    }, indent=1))
+
+
 def cmd_apply_batch06_corrective(args):
     """Apply the owner-authorized Batch 06 corrective judgment plan safely.
 
@@ -1752,6 +1916,10 @@ def cmd_apply_batch06_corrective(args):
 BATCH06_FINAL_CONTRACT_TARGETS = {
     "kvr", "mvl", "qlb", "swA", "fSl", "wlj", "Sgr", "Ezr", "Hfw", "Sbg",
 }
+BATCH06_POSITIONAL_HARD_CASE_ROOTS = {
+    "rsl", "ArD", "qtl", "$rk", "H$r", "mkr", "trk", "Hzn", "wSf", "zrE",
+    "$hw", "Aby", "Dyq", "ESm", "Hlf", "Eyr", "HDD", "Hdq", "Hwj",
+}
 BATCH06_FROZEN_SEMANTIC_FIELDS = (
     "research_state",
     "result_strength",
@@ -1760,6 +1928,26 @@ BATCH06_FROZEN_SEMANTIC_FIELDS = (
     "occurrence_dispositions",
     "resistant_occurrences",
     "resistant_deep_analysis",
+)
+BATCH06_REPRESENTATION_FROZEN_FIELDS = (
+    "contract_type",
+    "research_state",
+    "result_strength",
+    "universal_presence_holds",
+    "candidate_root_contribution",
+    "claim_scope",
+    "claim_scope_kind",
+    "layer_attribution",
+    "supporting_evidence_refs",
+    "counterevidence_refs",
+    "falsification_status",
+    "falsification_evidence",
+    "adversarial_verification",
+    "occurrence_dispositions",
+    "resistant_occurrences",
+    "resistant_deep_analysis",
+    "purity_status",
+    "purity_diagnostics",
 )
 
 
@@ -1948,6 +2136,7 @@ def main():
     mp = sub.add_parser("mark-pending"); mp.add_argument("--roots", required=True); mp.set_defaults(func=cmd_mark_pending)
     bc = sub.add_parser("apply-batch06-corrective"); bc.add_argument("--repo-root", default="."); bc.add_argument("--plan", default="artifacts/semantic-campaign/BATCH_06_CORRECTIVE_JUDGMENTS.json"); bc.set_defaults(func=cmd_apply_batch06_corrective)
     fc = sub.add_parser("apply-batch06-final-contract"); fc.add_argument("--repo-root", default="."); fc.add_argument("--plan", default="artifacts/semantic-campaign/BATCH_06_FINAL_CONTRACT_REMEDIATION.json"); fc.set_defaults(func=cmd_apply_batch06_final_contract)
+    rr = sub.add_parser("apply-batch06-representation-remediation"); rr.add_argument("--repo-root", default="."); rr.add_argument("--plan", default="artifacts/semantic-campaign/BATCH_06_REPRESENTATION_REMEDIATION.json"); rr.set_defaults(func=cmd_apply_batch06_representation_remediation)
     args = p.parse_args()
     args.func(args)
 

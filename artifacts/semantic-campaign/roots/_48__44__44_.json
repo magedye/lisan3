@@ -235,27 +235,26 @@
  },
  "hard_cases": [
   {
-   "word_ref": "107:3:2:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "HDD: 107:3:2:1 represents material class urge_another (2 persisted occurrences) that must independently sustain the current universal claim: pressing another toward an action by active urging or incitement"
-  },
-  {
    "word_ref": "89:18:2:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "HDD: 89:18:2:1 represents material class mutual_urging (1 persisted occurrences) that must independently sustain the current universal claim: pressing another toward an action by active urging or incitement"
+   "role": "STRUCTURAL_ATYPICALITY",
+   "reason": "HDD: 89:18:2:1 is the persisted reciprocal urging form, testing whether mutual participation preserves active pressure toward an action.",
+   "evidence_basis": {
+    "kind": "PERSISTED_ADVERSARIAL_VERIFICATION",
+    "statement": "Sparse but coherent incitement evidence; MODERATE."
+   }
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "HDD: reject the current universal claim if a verified Quran-internal occurrence in mutual_urging, urge_another cannot sustain it without an added semantic component. Current hardest boundary: All occurrences are negative and concern one charitable action, limiting polarity and domain diversity.",
+  "challenging_finding": "HDD: reject the current universal incitement account if a base or reciprocal occurrence lacks active pressure toward the stated action, rather than merely naming the action or its absence.",
   "search_location": "Batch 06 HDD: all 3 occurrence_dispositions across material clusters mutual_urging, urge_another.",
   "verification_method": "Test 'pressing another toward an action by active urging or incitement' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Form VI adds reciprocity, and complements supply the urged action. Negation evaluates absence of urging, not a different root meaning.",
-  "failure_consequence": "HDD: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "HDD: confine the claim to the verified form and retain the sparse negative charitable-action limitation."
  },
  "falsification_status": "PASSED",
  "reopen_conditions": [
-  "HDD: reopen if a verified Quran-internal bridge changes the boundary between mutual_urging, urge_another for the current claim: pressing another toward an action by active urging or incitement",
-  "HDD: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "HDD: reopen when the reciprocal urging at 89:18 is shown to lack motivational pressure shared with the base forms.",
+  "HDD: reopen when source morphology changes the Form-VI versus base-form allocation in the three-record packet."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [
@@ -341,5 +340,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "The reciprocal form at 89:18 tests mutual urging against the two base negated urging forms."
  }
 }

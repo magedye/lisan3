@@ -665,27 +665,26 @@
  },
  "hard_cases": [
   {
-   "word_ref": "4:62:10:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "Hlf: 4:62:10:1 represents material class swearing_verbs (12 persisted occurrences) that must independently sustain the current universal claim: binding one's assertion by an invoked oath"
-  },
-  {
-   "word_ref": "68:10:4:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "Hlf: 68:10:4:1 represents material class habitual_swearer (1 persisted occurrences) that must independently sustain the current universal claim: binding one's assertion by an invoked oath"
+   "word_ref": "58:18:5:2",
+   "role": "STRUCTURAL_ATYPICALITY",
+   "reason": "Hlf: 58:18:5:2 is a knowingly false oath, testing that the root binds an assertion even when the asserted content is false.",
+   "evidence_basis": {
+    "kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE",
+    "statement": "Many oaths are knowingly false, but falsity affects content rather than whether the speaker binds the assertion with an oath."
+   }
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "Hlf: reject the current universal claim if a verified Quran-internal occurrence in habitual_swearer, swearing_verbs cannot sustain it without an added semantic component. Current hardest boundary: Many oaths are knowingly false, but falsity affects content rather than whether the speaker binds the assertion with an oath.",
+  "challenging_finding": "Hlf: reject the current universal oath-binding account if a swearing verb or habitual swearer occurrence does not bind an assertion by invocation, or if truth, falsehood, or covenant content is required by the root act.",
   "search_location": "Batch 06 Hlf: all 13 occurrence_dispositions across material clusters habitual_swearer, swearing_verbs.",
   "verification_method": "Test 'binding one's assertion by an invoked oath' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Prepositions identify what is sworn by and clauses supply oath content; the intensive noun marks habitual frequency. None changes the oath act.",
-  "failure_consequence": "Hlf: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "Hlf: restrict the result to the compatible oath act and keep assertion truth and moral assessment in the content/context layer."
  },
  "falsification_status": "PASSED",
  "reopen_conditions": [
-  "Hlf: reopen if a verified Quran-internal bridge changes the boundary between habitual_swearer, swearing_verbs for the current claim: binding one's assertion by an invoked oath",
-  "Hlf: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "Hlf: reopen when a false-oath occurrence such as 58:18 is shown to lack an invoked assertion-binding act.",
+  "Hlf: reopen when a canonical syntactic correction alters what is sworn or the agent of a decisive oath occurrence."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [
@@ -781,5 +780,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "Knowingly false oaths test the act of binding an assertion independently of truth value."
  }
 }

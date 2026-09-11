@@ -28142,16 +28142,16 @@
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "$yA: reject the current local claim if a verified Quran-internal occurrence in thing_nouns, willing_verbs cannot sustain it without an added semantic component. Current hardest boundary: The noun in 10:36 denotes an indefinite thing, while the verb in 10:107 denotes divine willing; neither verse entails the other semantic family.",
+  "challenging_finding": "$yA: reject the current unresolved class partition if a Quran-internal occurrence or stable structural relation makes the thing_nouns and willing_verbs require one shared contribution rather than two unbridged families.",
   "search_location": "Batch 06 $yA: all 519 occurrence_dispositions across material clusters thing_nouns, willing_verbs.",
   "verification_method": "Test 'UNRESOLVED: the Quran-internal evidence has a thing/entity family and a willing/choosing family, but does not itself demonstrate a non-circular bridge between them.' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Part of speech separates the two dominant families, but form, construction, participants, and context do not supply an internal verse-level bridge from thinghood to willing. No external etymology is admitted to close that gap.",
-  "failure_consequence": "$yA: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "$yA: replace the no-bridge partition only after recording the new bridge and retesting both families; do not infer a universal nucleus from either family alone."
  },
  "falsification_status": "NOT_REQUIRED",
  "reopen_conditions": [
-  "$yA: reopen if a verified Quran-internal bridge changes the boundary between thing_nouns, willing_verbs for the current claim: UNRESOLVED: the Quran-internal evidence has a thing/entity family and a willing/choosing family, but does not itself demonstrate a non-circular bridge between them.",
-  "$yA: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "$yA: reopen when a traceable Quran-internal relation links the 10:36 thing use and the 10:107 willing use without importing an external etymology.",
+  "$yA: reopen when canonical morphology changes the root assignment of a resistant thing or willing occurrence."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [],
@@ -28753,5 +28753,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL",
+  "rationale": "The resistant thing and willing families already carry the unresolved bridge objection."
  }
 }

@@ -7361,37 +7361,26 @@
  },
  "hard_cases": [
   {
-   "word_ref": "10:105:9:2",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "$rk: 10:105:9:2 represents material class assigned_association (120 persisted occurrences) that must independently sustain the current universal claim: joining or assigning a participant into a shared claim, domain, possession, or act"
-  },
-  {
-   "word_ref": "10:28:10:2",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "$rk: 10:28:10:2 represents material class partners_and_shares (45 persisted occurrences) that must independently sustain the current universal claim: joining or assigning a participant into a shared claim, domain, possession, or act"
-  },
-  {
    "word_ref": "17:64:10:2",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "$rk: 17:64:10:2 represents material class cause_to_share (1 persisted occurrences) that must independently sustain the current universal claim: joining or assigning a participant into a shared claim, domain, possession, or act"
-  },
-  {
-   "word_ref": "37:33:5:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "$rk: 37:33:5:1 represents material class co_participants (2 persisted occurrences) that must independently sustain the current universal claim: joining or assigning a participant into a shared claim, domain, possession, or act"
+   "role": "STRUCTURAL_ATYPICALITY",
+   "reason": "$rk: 17:64:10:2 assigns sharing in property and offspring, testing shared participation without making polytheism a root component.",
+   "evidence_basis": {
+    "kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE",
+    "statement": "A legal or ordinary share lacks polytheistic force, confirming that theology is supplied by the object 'with God,' not by the root."
+   }
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "$rk: reject the current universal claim if a verified Quran-internal occurrence in assigned_association, cause_to_share, co_participants, partners_and_shares cannot sustain it without an added semantic component. Current hardest boundary: A legal or ordinary share lacks polytheistic force, confirming that theology is supplied by the object 'with God,' not by the root.",
+  "challenging_finding": "$rk: reject the current universal shared-participation nucleus if a partner, share, association, or co-participation occurrence has no joining of a participant into a shared claim, domain, possession, act, or outcome.",
   "search_location": "Batch 06 $rk: all 168 occurrence_dispositions across material clusters assigned_association, cause_to_share, co_participants, partners_and_shares.",
   "verification_method": "Test 'joining or assigning a participant into a shared claim, domain, possession, or act' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Form IV assigns a partner, Form III makes another share, Form VIII marks co-participation, and nouns profile partner or share. Objects identify the domain shared.",
-  "failure_consequence": "$rk: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "$rk: retain only the compatible derivational class and keep theological evaluation assigned to its object and context."
  },
  "falsification_status": "PASSED",
  "reopen_conditions": [
-  "$rk: reopen if a verified Quran-internal bridge changes the boundary between assigned_association, cause_to_share, co_participants, partners_and_shares for the current claim: joining or assigning a participant into a shared claim, domain, possession, or act",
-  "$rk: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "$rk: reopen when a non-theological share or the 17:64 property-and-offspring realization is shown to lack a shared-participation relation.",
+  "$rk: reopen when source or morphology changes the distinction between partner/share nouns and association verbs at a boundary occurrence."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [
@@ -7644,5 +7633,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "Shared property and offspring at 17:64 tests the root independently of a divine association reading."
  }
 }

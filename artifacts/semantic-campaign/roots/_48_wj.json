@@ -236,21 +236,25 @@
  "hard_cases": [
   {
    "word_ref": "12:68:16:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "Hwj: 12:68:16:1 represents material class need_or_purpose (3 persisted occurrences) that must independently sustain the current universal claim: a felt requirement or sought purpose whose fulfillment addresses an inward or practical lack"
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "Hwj: 12:68:16:1 records an inward purpose that broadens objective necessity while preserving a sought fulfillment relation.",
+   "evidence_basis": {
+    "kind": "PERSISTED_VERIFIER_OBJECTION",
+    "statement": "12:68 broadens necessity to an inwardly sought purpose."
+   }
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "Hwj: reject the current universal claim if a verified Quran-internal occurrence in need_or_purpose cannot sustain it without an added semantic component. Current hardest boundary: 12:68 can be read as a private wish rather than objective necessity, so the core must include sought purpose, not strict necessity.",
+  "challenging_finding": "Hwj: reject the current universal requirement/sought-purpose account if a need occurrence lacks either an inward or practical lack or a purpose whose fulfillment addresses it, including the private-purpose boundary at 12:68.",
   "search_location": "Batch 06 Hwj: all 3 occurrence_dispositions across material clusters need_or_purpose.",
   "verification_method": "Test 'a felt requirement or sought purpose whose fulfillment addresses an inward or practical lack' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Possessors and prepositional phrases locate the need in a self, breast, or practical activity; the root supplies the required/sought purpose.",
-  "failure_consequence": "Hwj: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "Hwj: narrow the claim to the surviving need type and do not restore strict objective necessity as a universal requirement."
  },
  "falsification_status": "PASSED",
  "reopen_conditions": [
-  "Hwj: reopen if a verified Quran-internal bridge changes the boundary between need_or_purpose for the current claim: a felt requirement or sought purpose whose fulfillment addresses an inward or practical lack",
-  "Hwj: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "Hwj: reopen when 12:68 is shown to be neither a sought purpose nor a relation to fulfillment of an inward lack.",
+  "Hwj: reopen when canonical syntax changes the possessor or fulfillment relation in the 12:68, 40:80, or 59:9 evidence set."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [
@@ -335,5 +339,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "The private wish/purpose reading at 12:68 is the explicit boundary against strict objective necessity."
  }
 }

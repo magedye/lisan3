@@ -278,16 +278,16 @@
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "Sbw: reject the current local claim if a verified Quran-internal occurrence in boy_nouns, inclination_verb cannot sustain it without an added semantic component. Current hardest boundary: The two sabiyyan tokens state age/status without desire, while 12:33 states inclination without youth.",
+  "challenging_finding": "Sbw: reject the current unresolved youth-versus-inclination partition if a Quran-internal occurrence shows that age/status and directed attraction require one distinctive contribution rather than separate noun and verb families.",
   "search_location": "Batch 06 Sbw: all 3 occurrence_dispositions across material clusters boy_nouns, inclination_verb.",
   "verification_method": "Test 'UNRESOLVED: the two boy/youth nouns and the one inclination verb are clear families, but the Quran supplies no distinctive bridge between youth and inclination' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Part of speech and surface form separate the child noun from the inclination verb. Context supplies age in one family and directed attraction in the other.",
-  "failure_consequence": "Sbw: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "Sbw: open a replacement bridge analysis and preserve any counterexample that still separates youth from inclination."
  },
  "falsification_status": "NOT_REQUIRED",
  "reopen_conditions": [
-  "Sbw: reopen if a verified Quran-internal bridge changes the boundary between boy_nouns, inclination_verb for the current claim: UNRESOLVED: the two boy/youth nouns and the one inclination verb are clear families, but the Quran supplies no distinctive bridge between youth and inclination",
-  "Sbw: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "Sbw: reopen when the inclination at 12:33 or either sabiyyan noun receives Quran-internal evidence linking youth and desire.",
+  "Sbw: reopen when canonical morphology changes the part-of-speech or root assignment that currently separates the child nouns from the inclination verb."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [],
@@ -373,5 +373,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL",
+  "rationale": "The youth nouns and inclination verb remain resistant to a shared contribution."
  }
 }

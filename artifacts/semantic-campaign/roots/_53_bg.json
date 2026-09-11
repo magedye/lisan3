@@ -283,16 +283,16 @@
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "Sbg: reject the current local claim if a verified Quran-internal occurrence in culinary_sibgh, divine_sibgha cannot sustain it without an added semantic component. Current hardest boundary: 23:20:8:2 supplies culinary function but no Quran-internal bridge to the divine sibgha class.",
+  "challenging_finding": "Sbg: reject the current unresolved divine-sibgha versus culinary-sibgh partition if Quran-internal evidence makes the culinary occurrence require the same defining imbuement/characterization contribution as the divine class.",
   "search_location": "Batch 06 Sbg: all 3 occurrence_dispositions across material clusters culinary_sibgh, divine_sibgha.",
   "verification_method": "Test 'the persisted root judgment' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Do not import a dye, coloring, or abstract imbuing bridge between divine sibgha and culinary sibgh.",
-  "failure_consequence": "Sbg: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "Sbg: reopen from that bridge and do not adopt coloration, treatment, or imbuement as a root-wide result without it."
  },
  "falsification_status": "NOT_REQUIRED",
  "reopen_conditions": [
-  "Sbg: reopen if a verified Quran-internal bridge changes the boundary between culinary_sibgh, divine_sibgha for the current claim: the persisted root judgment",
-  "Sbg: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "Sbg: reopen when 23:20:8:2 gains a Quran-internal bridge to the 2:138 divine sibgha class.",
+  "Sbg: reopen when canonical lexical or grammatical analysis changes the culinary function assigned to 23:20:8:2."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [
@@ -381,5 +381,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL",
+  "rationale": "The culinary sibgh occurrence remains the stored boundary to divine sibgha."
  }
 }

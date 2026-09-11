@@ -7749,47 +7749,26 @@
  },
  "hard_cases": [
   {
-   "word_ref": "12:10:5:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "qtl: 12:10:5:1 represents material class base_killing_verbs (83 persisted occurrences) that must independently sustain the current universal claim: lethal overcoming: acting against an animate opponent toward termination of life, or entering reciprocal combat organized around that aim"
-  },
-  {
-   "word_ref": "17:31:10:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "qtl: 17:31:10:1 represents material class qatl_nouns (11 persisted occurrences) that must independently sustain the current universal claim: lethal overcoming: acting against an animate opponent toward termination of life, or entering reciprocal combat organized around that aim"
-  },
-  {
-   "word_ref": "22:39:3:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "qtl: 22:39:3:1 represents material class form_iii_combat (54 persisted occurrences) that must independently sustain the current universal claim: lethal overcoming: acting against an animate opponent toward termination of life, or entering reciprocal combat organized around that aim"
-  },
-  {
-   "word_ref": "28:15:11:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "qtl: 28:15:11:1 represents material class form_viii_mutual_killing (4 persisted occurrences) that must independently sustain the current universal claim: lethal overcoming: acting against an animate opponent toward termination of life, or entering reciprocal combat organized around that aim"
-  },
-  {
    "word_ref": "2:216:3:2",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "qtl: 2:216:3:2 represents material class qital_nouns (13 persisted occurrences) that must independently sustain the current universal claim: lethal overcoming: acting against an animate opponent toward termination of life, or entering reciprocal combat organized around that aim"
-  },
-  {
-   "word_ref": "33:61:5:2",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "qtl: 33:61:5:2 represents material class intensive_killing (5 persisted occurrences) that must independently sustain the current universal claim: lethal overcoming: acting against an animate opponent toward termination of life, or entering reciprocal combat organized around that aim"
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "qtl: 2:216:3:2 names reciprocal combat without a stated death, preserving lethal orientation while rejecting completed killing as the core.",
+   "evidence_basis": {
+    "kind": "PERSISTED_VERIFIER_OBJECTION",
+    "statement": "Combat can end without killing; reciprocity, not completion, is the form residue."
+   }
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "qtl: reject the current universal claim if a verified Quran-internal occurrence in base_killing_verbs, form_iii_combat, form_viii_mutual_killing, intensive_killing, qatl_nouns, qital_nouns cannot sustain it without an added semantic component. Current hardest boundary: Qital can name fighting with no stated death, so the core cannot be completed killing; it is reciprocal action oriented toward lethal overcoming.",
+  "challenging_finding": "qtl: reject the current universal lethal-overcoming account if a base killing occurrence lacks life-termination orientation, or a Form-III/VIII combat occurrence lacks both reciprocal opposition and orientation toward lethal overcoming.",
   "search_location": "Batch 06 qtl: all 170 occurrence_dispositions across material clusters base_killing_verbs, form_iii_combat, form_viii_mutual_killing, intensive_killing, qatl_nouns, qital_nouns.",
   "verification_method": "Test 'lethal overcoming: acting against an animate opponent toward termination of life, or entering reciprocal combat organized around that aim' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Form III and VIII supply reciprocity; passive voice supplies undergoing killing; action nouns distinguish qatl from qital. Legal, battle, and narrative contexts specify authorization and outcome, not the root core.",
-  "failure_consequence": "qtl: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "qtl: split the failing derivational family from the surviving account instead of treating combat or killing as interchangeable by default."
  },
  "falsification_status": "PASSED",
  "reopen_conditions": [
-  "qtl: reopen if a verified Quran-internal bridge changes the boundary between base_killing_verbs, form_iii_combat, form_viii_mutual_killing, intensive_killing, qatl_nouns, qital_nouns for the current claim: lethal overcoming: acting against an animate opponent toward termination of life, or entering reciprocal combat organized around that aim",
-  "qtl: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "qtl: reopen when a verified combat occurrence shows that the Form-III or VIII boundary cannot retain lethal orientation without completed death.",
+  "qtl: reopen when QAC form or voice data changes the allocation of a decisive killing-versus-combat occurrence."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [
@@ -8046,5 +8025,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "The qital noun has the persisted objection that combat need not state a completed death."
  }
 }

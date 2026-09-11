@@ -288,16 +288,16 @@
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "Hlq: reject the current local claim if a verified Quran-internal occurrence in head_shaving, throat_noun cannot sustain it without an added semantic component. Current hardest boundary: 56:83 names the throat with no cutting or hair-removal context.",
+  "challenging_finding": "Hlq: reject the current unresolved shaving/throat partition if Quran-internal evidence demonstrates a single contribution that both hair removal and the throat require without importing external geometry.",
   "search_location": "Batch 06 Hlq: all 3 occurrence_dispositions across material clusters head_shaving, throat_noun.",
   "verification_method": "Test 'UNRESOLVED: shaving/removing hair and the throat are both clear, but their proposed circular-boundary bridge is not demonstrated by Quran-internal evidence' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Form II nominalization marks the shaving agent, while the underived noun is a body part. Morphology separates families but does not authorize a semantic bridge.",
-  "failure_consequence": "Hlq: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "Hlq: replace the partition only after that bridge is recorded and tested against all three resistant occurrences."
  },
  "falsification_status": "NOT_REQUIRED",
  "reopen_conditions": [
-  "Hlq: reopen if a verified Quran-internal bridge changes the boundary between head_shaving, throat_noun for the current claim: UNRESOLVED: shaving/removing hair and the throat are both clear, but their proposed circular-boundary bridge is not demonstrated by Quran-internal evidence",
-  "Hlq: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "Hlq: reopen when the throat at 56:83:4:2 gains a Quran-internal cutting or hair-removal relation.",
+  "Hlq: reopen when morphology changes the separation between the Form-II shaving family and the underived throat noun."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [],
@@ -387,5 +387,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL",
+  "rationale": "All shaving and throat records are retained as resistant to the unproven circular-boundary bridge."
  }
 }

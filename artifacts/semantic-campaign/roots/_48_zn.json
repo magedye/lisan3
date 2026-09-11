@@ -1913,26 +1913,25 @@
  "hard_cases": [
   {
    "word_ref": "10:62:10:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "Hzn: 10:62:10:1 represents material class grieving_verbs (37 persisted occurrences) that must independently sustain the current universal claim: an inward burden of grief or sorrow in response to loss, threat, or another's rejection"
-  },
-  {
-   "word_ref": "12:84:10:2",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "Hzn: 12:84:10:2 represents material class sorrow_nouns (5 persisted occurrences) that must independently sustain the current universal claim: an inward burden of grief or sorrow in response to loss, threat, or another's rejection"
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "Hzn: 10:62:10:1 contrasts absence of fear with absence of grief, testing the root against a neighboring emotional state rather than a bereavement scene.",
+   "evidence_basis": {
+    "kind": "PERSISTED_ADVERSARIAL_VERIFICATION",
+    "statement": "Fear/grief contrasts provide strong internal distinctiveness evidence."
+   }
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "Hzn: reject the current universal claim if a verified Quran-internal occurrence in grieving_verbs, sorrow_nouns cannot sustain it without an added semantic component. Current hardest boundary: Prophetic grief over rejection is relational rather than personal loss, so the core is sorrow under a burdensome outcome, not bereavement alone.",
+  "challenging_finding": "Hzn: reject the current universal sorrow-burden account if a grieving verb or noun lacks an inward burden in response to loss, threat, or rejection, or if the fear contrast collapses into the same contribution.",
   "search_location": "Batch 06 Hzn: all 42 occurrence_dispositions across material clusters grieving_verbs, sorrow_nouns.",
   "verification_method": "Test 'an inward burden of grief or sorrow in response to loss, threat, or another's rejection' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Negation and causative participant frames govern who causes or forbids grief; noun forms name the state. Context supplies its cause.",
-  "failure_consequence": "Hzn: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "Hzn: narrow the conclusion to the supported emotional class and preserve any unresolved distinction from fear."
  },
  "falsification_status": "PASSED",
  "reopen_conditions": [
-  "Hzn: reopen if a verified Quran-internal bridge changes the boundary between grieving_verbs, sorrow_nouns for the current claim: an inward burden of grief or sorrow in response to loss, threat, or another's rejection",
-  "Hzn: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "Hzn: reopen when the 10:62 fear/grief contrast no longer distinguishes the two emotional relations under a verified Quran-internal analysis.",
+  "Hzn: reopen when a source correction changes a decisive grief noun or verb’s participant and burden relation."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [
@@ -2057,5 +2056,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "The fear/grief contrast at 10:62 tests sorrow as a distinct inward burden rather than bereavement only."
  }
 }

@@ -22190,31 +22190,25 @@
  "hard_cases": [
   {
    "word_ref": "105:3:1:2",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "rsl: 105:3:1:2 represents material class dispatch_verbs (130 persisted occurrences) that must independently sustain the current universal claim: directed dispatch from a sender toward a recipient, normally carrying an entrusted message, task, sign, or effect"
-  },
-  {
-   "word_ref": "10:103:3:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "rsl: 10:103:3:1 represents material class messenger_or_message (342 persisted occurrences) that must independently sustain the current universal claim: directed dispatch from a sender toward a recipient, normally carrying an entrusted message, task, sign, or effect"
-  },
-  {
-   "word_ref": "13:43:5:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "rsl: 13:43:5:1 represents material class dispatched_agents (41 persisted occurrences) that must independently sustain the current universal claim: directed dispatch from a sender toward a recipient, normally carrying an entrusted message, task, sign, or effect"
+   "role": "STRUCTURAL_ATYPICALITY",
+   "reason": "rsl: 105:3:1:2 dispatches birds, a persisted non-human effect that tests whether directed dispatch survives without a speaking messenger.",
+   "evidence_basis": {
+    "kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE",
+    "statement": "Natural effects such as winds or punishment can be sent without a speaking messenger, so the core must be dispatch rather than human message-bearing."
+   }
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "rsl: reject the current universal claim if a verified Quran-internal occurrence in dispatch_verbs, dispatched_agents, messenger_or_message cannot sustain it without an added semantic component. Current hardest boundary: Natural effects such as winds or punishment can be sent without a speaking messenger, so the core must be dispatch rather than human message-bearing.",
+  "challenging_finding": "rsl: reject the current universal dispatch nucleus if a verified occurrence in the messenger, agent, or Form-IV families has neither a sender-originated dispatch relation nor an explainable lexicalized realization of one.",
   "search_location": "Batch 06 rsl: all 513 occurrence_dispositions across material clusters dispatch_verbs, dispatched_agents, messenger_or_message.",
   "verification_method": "Test 'directed dispatch from a sender toward a recipient, normally carrying an entrusted message, task, sign, or effect' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Form IV supplies caused dispatch; agent nouns profile the one dispatched; underived nouns lexicalize messenger or message. Participants and complements supply source, destination, and payload.",
-  "failure_consequence": "rsl: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "rsl: narrow the claim to the surviving family or record the root result as unresolved; do not retain messenger-bearing as an unstated universal component."
  },
  "falsification_status": "PASSED",
  "reopen_conditions": [
-  "rsl: reopen if a verified Quran-internal bridge changes the boundary between dispatch_verbs, dispatched_agents, messenger_or_message for the current claim: directed dispatch from a sender toward a recipient, normally carrying an entrusted message, task, sign, or effect",
-  "rsl: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "rsl: reopen when a Quran-internal non-human dispatch case like 105:3 is structurally shown to lack a directed sender-to-recipient relation.",
+  "rsl: reopen when the morphology or root assignment of the messenger, dispatched-agent, or Form-IV family changes at a claim-boundary occurrence."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [
@@ -22811,5 +22805,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "The natural-effect dispatch at 105:3 tests the claimed relation without a human messenger."
  }
 }

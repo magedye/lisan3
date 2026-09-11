@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "batch_id": "batch06",
-  "status": "BATCH_06_FINAL_CONTRACT_REMEDIATION_READY_FOR_FRESH_REVIEW",
+  "status": "BATCH_06_REPRESENTATION_REMEDIATION_READY_FOR_FRESH_REVIEW",
   "authorized_by": "Owner Batch 06 execution instruction dated 2026-09-10",
   "starting_main_sha": "6f895bf0754190a423512b7478ced5bf7bd4a266",
   "branch": "semantic-campaign-batch06",
@@ -70,7 +70,7 @@
     }
   },
   "final_checkpoint": {
-    "status": "FINAL_CONTRACT_REMEDIATION_APPLIED",
+    "status": "REPRESENTATION_REMEDIATION_APPLIED",
     "roots": 40,
     "occurrences": 3098,
     "coverage_exact_set_recomputed_against_live_store": true,
@@ -88,8 +88,8 @@
     "prior_root_artifacts_modified": 0,
     "casefold_unique_artifact_names": 40,
     "root_universe_casefold_unique": "1642/1642",
-    "report": "docs/LISAN3_BATCH_06_FINAL_CONTRACT_REMEDIATION.md",
-    "review_state": "BATCH_06_FINAL_CONTRACT_REMEDIATION_READY_FOR_FRESH_REVIEW_NOT_YET_INDEPENDENTLY_REVIEWED"
+    "report": "docs/LISAN3_BATCH_06_REPRESENTATION_REMEDIATION.md",
+    "review_state": "BATCH_06_REPRESENTATION_REMEDIATION_READY_FOR_FRESH_REVIEW_NOT_YET_INDEPENDENTLY_REVIEWED"
   },
   "corrective_revision": {
     "revision_id": "BATCH_06_CORRECTIVE_REVISION_2026_09_11",
@@ -135,6 +135,39 @@
       "qlb",
       "swA",
       "wlj"
+    ],
+    "semantic_payload_frozen": true,
+    "fresh_review_required": true
+  },
+  "representation_remediation": {
+    "revision_id": "BATCH_06_REPRESENTATION_REMEDIATION_2026_09_11",
+    "baseline_sha": "5b131676837c674e92723ccc6df02e1fb2fdc676",
+    "source_policy": "QURAN_INTERNAL_ONLY",
+    "canonical_runtime_contract": "LISAN3_SEMANTIC_RUNTIME_V3_2026_09_06",
+    "positional_hard_case_roots": [
+      "$hw",
+      "$rk",
+      "Aby",
+      "ArD",
+      "Dyq",
+      "ESm",
+      "Eyr",
+      "H$r",
+      "HDD",
+      "Hdq",
+      "Hlf",
+      "Hwj",
+      "Hzn",
+      "mkr",
+      "qtl",
+      "rsl",
+      "trk",
+      "wSf",
+      "zrE"
+    ],
+    "no_genuine_hard_case_roots": [
+      "Eyr",
+      "Hdq"
     ],
     "semantic_payload_frozen": true,
     "fresh_review_required": true

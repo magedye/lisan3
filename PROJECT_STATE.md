@@ -1052,3 +1052,43 @@ canonicalize.
 
 Stop. Run a fresh, independent, read-only review of the exact final contract
 remediation commit. Do not merge, push, start Batch 07, or canonicalize.
+
+## Batch 06 Representation Remediation Checkpoint (2026-09-11)
+
+- Starting candidate: `5b131676837c674e92723ccc6df02e1fb2fdc676` on
+  `semantic-campaign-batch06`. Scope is limited to the remaining
+  representation defects in `hard_cases`, `rejection_condition`, and
+  `reopen_conditions` for the frozen 40-root / 3,098-occurrence Batch 06 set.
+- Durable controls:
+  `artifacts/semantic-campaign/BATCH_06_REPRESENTATION_REMEDIATION.json`.
+  The replay command is
+  `python -m tools.campaign apply-batch06-representation-remediation --repo-root .`.
+  It requires the exact starting SHA, an exact 40-root control set, and a full
+  frozen-payload comparison before writing.
+- The 19 former positional hard-case artifacts now have 17 evidence-derived
+  cases and two honest `NO_GENUINE_HARD_CASE` records: `Eyr` and `Hdq`.
+  All 40 rejection and reopen controls are individually authored against their
+  existing claim scope and recorded evidence boundary; no external semantic
+  source or new research run was used.
+- Canonical contract errors and evidence-reference errors are zero. The active
+  evidence fields and alias rejection remain intact. Falsification status is
+  unchanged at 17 `PASSED`, 11 `NOT_REQUIRED`, and 12 `NOT_RUN`.
+- Frozen proof is unchanged: 12 / 8 / 9 / 11 strength distribution, 565 final
+  resistant occurrences, 3,098 exact occurrence identities, all occurrence
+  dispositions, and reconciliation lineage. Batch 05 artifacts remain outside
+  scope and unchanged; no Batch 07 work is present.
+- Implementation-side evidence: `pytest tests/test_campaign_coverage.py -q`
+  passed 42 tests; focused campaign/QAC checks passed 48 tests; and focused
+  Ruff passed. A final consistency sweep found zero canonical errors, zero
+  frozen payload drift, zero legacy template matches, 40 distinct normalized
+  rejection controls, 40 distinct normalized reopen sets, and unchanged Batch
+  05 corrective artifacts. The report is
+  `docs/LISAN3_BATCH_06_REPRESENTATION_REMEDIATION.md`. This checkpoint does
+  not establish independent review, canonicalization, merge, push, release,
+  acceptance, or Batch 07 authority.
+
+## Current Exact Next Action
+
+Stop. Run a fresh, independent, read-only review against the exact committed
+representation-remediation candidate. Do not merge, push, start Batch 07, or
+canonicalize.

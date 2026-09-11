@@ -1956,26 +1956,25 @@
  "hard_cases": [
   {
    "word_ref": "10:21:11:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "mkr: 10:21:11:1 represents material class plots_and_plotters (21 persisted occurrences) that must independently sustain the current universal claim: covertly arranging steps so an intended outcome reaches a target who does not control or foresee the arrangement"
-  },
-  {
-   "word_ref": "10:21:22:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "mkr: 10:21:22:1 represents material class plotting_verbs (22 persisted occurrences) that must independently sustain the current universal claim: covertly arranging steps so an intended outcome reaches a target who does not control or foresee the arrangement"
+   "role": "STRUCTURAL_ATYPICALITY",
+   "reason": "mkr: 10:21:11:1 names covert arrangement where divine counter-action and human plotting share structure while moral evaluation stays participant-bound.",
+   "evidence_basis": {
+    "kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE",
+    "statement": "Divine makr must not inherit human moral blame; participant authority changes justice, not the structural covert counter-arrangement."
+   }
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "mkr: reject the current universal claim if a verified Quran-internal occurrence in plots_and_plotters, plotting_verbs cannot sustain it without an added semantic component. Current hardest boundary: Divine makr must not inherit human moral blame; participant authority changes justice, not the structural covert counter-arrangement.",
+  "challenging_finding": "mkr: reject the current universal covert-arrangement account if a human or divine makr occurrence lacks hidden strategic ordering toward an outcome, or if moral blame is required by the root rather than participant authority and context.",
   "search_location": "Batch 06 mkr: all 43 occurrence_dispositions across material clusters plots_and_plotters, plotting_verbs.",
   "verification_method": "Test 'covertly arranging steps so an intended outcome reaches a target who does not control or foresee the arrangement' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Subjects supply authority and moral evaluation; objects supply target; context supplies deception or countermeasure. The root contributes hidden strategic arrangement.",
-  "failure_consequence": "mkr: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "mkr: separate the incompatible participant class and do not transfer human moral evaluation to divine counter-action."
  },
  "falsification_status": "PASSED",
  "reopen_conditions": [
-  "mkr: reopen if a verified Quran-internal bridge changes the boundary between plots_and_plotters, plotting_verbs for the current claim: covertly arranging steps so an intended outcome reaches a target who does not control or foresee the arrangement",
-  "mkr: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "mkr: reopen when a paired human/divine occurrence like 10:21 is shown to lack the same covert outcome-arranging relation.",
+  "mkr: reopen when a canonical participant or voice correction changes the boundary between strategy, plotter, and counter-arrangement."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [
@@ -2101,5 +2100,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "The paired human and divine counter-arrangement at 10:21 tests moral evaluation against the shared structural relation."
  }
 }

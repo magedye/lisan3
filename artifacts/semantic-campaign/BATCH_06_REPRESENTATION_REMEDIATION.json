@@ -1,0 +1,332 @@
+{
+  "schema_version": "1.0.0",
+  "revision_id": "BATCH_06_REPRESENTATION_REMEDIATION_2026_09_11",
+  "baseline_sha": "5b131676837c674e92723ccc6df02e1fb2fdc676",
+  "source_policy": "QURAN_INTERNAL_ONLY",
+  "canonical_runtime_contract": "LISAN3_SEMANTIC_RUNTIME_V3_2026_09_06",
+  "semantic_fields_frozen": [
+    "contract_type",
+    "research_state",
+    "result_strength",
+    "universal_presence_holds",
+    "candidate_root_contribution",
+    "claim_scope",
+    "claim_scope_kind",
+    "layer_attribution",
+    "supporting_evidence_refs",
+    "counterevidence_refs",
+    "falsification_status",
+    "falsification_evidence",
+    "adversarial_verification",
+    "occurrence_dispositions",
+    "resistant_occurrences",
+    "resistant_deep_analysis",
+    "purity_status",
+    "purity_diagnostics"
+  ],
+  "positional_hard_case_roots": [
+    "rsl", "ArD", "qtl", "$rk", "H$r", "mkr", "trk", "Hzn", "wSf", "zrE",
+    "$hw", "Aby", "Dyq", "ESm", "Hlf", "Eyr", "HDD", "Hdq", "Hwj"
+  ],
+  "judgment_controls": {
+    "$yA": {
+      "claim_scope": "LOCAL",
+      "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
+      "hard_case_representation": {"status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL", "rationale": "The resistant thing and willing families already carry the unresolved bridge objection."},
+      "rejection_condition": {"challenging_finding": "$yA: reject the current unresolved class partition if a Quran-internal occurrence or stable structural relation makes the thing_nouns and willing_verbs require one shared contribution rather than two unbridged families.", "failure_consequence": "$yA: replace the no-bridge partition only after recording the new bridge and retesting both families; do not infer a universal nucleus from either family alone."},
+      "reopen_conditions": ["$yA: reopen when a traceable Quran-internal relation links the 10:36 thing use and the 10:107 willing use without importing an external etymology.", "$yA: reopen when canonical morphology changes the root assignment of a resistant thing or willing occurrence."]
+    },
+    "rsl": {
+      "claim_scope": "UNIVERSAL",
+      "claim_scope_kind": "ROOT_GENERALIZATION",
+      "hard_case_representation": {"status": "EVIDENCE_DERIVED", "rationale": "The natural-effect dispatch at 105:3 tests the claimed relation without a human messenger."},
+      "hard_case_override": [{"word_ref": "105:3:1:2", "role": "STRUCTURAL_ATYPICALITY", "reason": "rsl: 105:3:1:2 dispatches birds, a persisted non-human effect that tests whether directed dispatch survives without a speaking messenger.", "evidence_basis": {"kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE", "statement": "Natural effects such as winds or punishment can be sent without a speaking messenger, so the core must be dispatch rather than human message-bearing."}}],
+      "rejection_condition": {"challenging_finding": "rsl: reject the current universal dispatch nucleus if a verified occurrence in the messenger, agent, or Form-IV families has neither a sender-originated dispatch relation nor an explainable lexicalized realization of one.", "failure_consequence": "rsl: narrow the claim to the surviving family or record the root result as unresolved; do not retain messenger-bearing as an unstated universal component."},
+      "reopen_conditions": ["rsl: reopen when a Quran-internal non-human dispatch case like 105:3 is structurally shown to lack a directed sender-to-recipient relation.", "rsl: reopen when the morphology or root assignment of the messenger, dispatched-agent, or Form-IV family changes at a claim-boundary occurrence."]
+    },
+    "ArD": {
+      "claim_scope": "UNIVERSAL",
+      "claim_scope_kind": "ROOT_GENERALIZATION",
+      "hard_case_representation": {"status": "EVIDENCE_DERIVED", "rationale": "The inherited territorial earth at 7:137 is the recorded scale-narrowing boundary."},
+      "hard_case_override": [{"word_ref": "7:137:7:2", "role": "STRUCTURAL_ATYPICALITY", "reason": "ArD: 7:137:7:2 is the persisted territorial/inheritance realization that pressure-tests the ground-domain claim beyond a whole-earth referent.", "evidence_basis": {"kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE", "statement": "Territorial uses such as inheritance of a specific land narrow the referent, but retain the same ground-domain contribution."}}],
+      "rejection_condition": {"challenging_finding": "ArD: reject the current universal ground-domain claim if a verified earth occurrence cannot denote terrestrial ground, land, or the created lower spatial field even after its contextual scale is separated from the root contribution.", "failure_consequence": "ArD: restrict the claim to the compatible referential range and retain the lexical-narrowness ceiling rather than posit an untested abstraction."},
+      "reopen_conditions": ["ArD: reopen when a Quran-internal territorial occurrence such as 7:137 is shown to require a contribution other than terrestrial ground-domain.", "ArD: reopen when a canonical source correction changes the noun-only family or supplies a different root assignment for a scale-defining occurrence."]
+    },
+    "qtl": {
+      "claim_scope": "UNIVERSAL",
+      "claim_scope_kind": "ROOT_GENERALIZATION",
+      "hard_case_representation": {"status": "EVIDENCE_DERIVED", "rationale": "The qital noun has the persisted objection that combat need not state a completed death."},
+      "hard_case_override": [{"word_ref": "2:216:3:2", "role": "ADVERSARIAL_BOUNDARY", "reason": "qtl: 2:216:3:2 names reciprocal combat without a stated death, preserving lethal orientation while rejecting completed killing as the core.", "evidence_basis": {"kind": "PERSISTED_VERIFIER_OBJECTION", "statement": "Combat can end without killing; reciprocity, not completion, is the form residue."}}],
+      "rejection_condition": {"challenging_finding": "qtl: reject the current universal lethal-overcoming account if a base killing occurrence lacks life-termination orientation, or a Form-III/VIII combat occurrence lacks both reciprocal opposition and orientation toward lethal overcoming.", "failure_consequence": "qtl: split the failing derivational family from the surviving account instead of treating combat or killing as interchangeable by default."},
+      "reopen_conditions": ["qtl: reopen when a verified combat occurrence shows that the Form-III or VIII boundary cannot retain lethal orientation without completed death.", "qtl: reopen when QAC form or voice data changes the allocation of a decisive killing-versus-combat occurrence."]
+    },
+    "mvl": {
+      "claim_scope": "REPRESENTATIVE",
+      "claim_scope_kind": "DERIVATIONAL_FAMILY",
+      "hard_case_representation": {"status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL", "rationale": "The locally qualified 19:17 Form-V record is the persisted adversarial boundary."},
+      "rejection_condition": {"challenging_finding": "mvl: reject the current qualified derivational partition if the Form-V embodiment at 19:17 can only be sustained by a root-wide comparison claim, or if a productive comparison/parable class fails its own configured-correspondence account.", "failure_consequence": "mvl: withdraw the local Form-V qualification or repartition the affected family; do not convert 19:17 into universal bridge evidence."},
+      "reopen_conditions": ["mvl: reopen when Quran-internal evidence makes the 19:17 embodiment explicitly comparable to a persisted comparison or parable class.", "mvl: reopen when morphology changes the Form-V classification or the stored reconciliation lineage for 19:17:8:2."]
+    },
+    "$rk": {
+      "claim_scope": "UNIVERSAL",
+      "claim_scope_kind": "ROOT_GENERALIZATION",
+      "hard_case_representation": {"status": "EVIDENCE_DERIVED", "rationale": "Shared property and offspring at 17:64 tests the root independently of a divine association reading."},
+      "hard_case_override": [{"word_ref": "17:64:10:2", "role": "STRUCTURAL_ATYPICALITY", "reason": "$rk: 17:64:10:2 assigns sharing in property and offspring, testing shared participation without making polytheism a root component.", "evidence_basis": {"kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE", "statement": "A legal or ordinary share lacks polytheistic force, confirming that theology is supplied by the object 'with God,' not by the root."}}],
+      "rejection_condition": {"challenging_finding": "$rk: reject the current universal shared-participation nucleus if a partner, share, association, or co-participation occurrence has no joining of a participant into a shared claim, domain, possession, act, or outcome.", "failure_consequence": "$rk: retain only the compatible derivational class and keep theological evaluation assigned to its object and context."},
+      "reopen_conditions": ["$rk: reopen when a non-theological share or the 17:64 property-and-offspring realization is shown to lack a shared-participation relation.", "$rk: reopen when source or morphology changes the distinction between partner/share nouns and association verbs at a boundary occurrence."]
+    },
+    "qlb": {
+      "claim_scope": "LOCAL",
+      "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
+      "hard_case_representation": {"status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL", "rationale": "The stored heart and derived-turning adversarial failures preserve the missing bridge."},
+      "rejection_condition": {"challenging_finding": "qlb: reject the current unresolved heart/turning partition if a Quran-internal occurrence makes inner orientation and derived turning one traceable contribution rather than two separately observed classes.", "failure_consequence": "qlb: open a new bridge analysis from the decisive occurrence; do not adopt heart-orientation as a universal nucleus merely by economy."},
+      "reopen_conditions": ["qlb: reopen when 10:74:21:1 or 12:62:10:1 gains a Quran-internal relation that joins a heart noun to a turning contribution.", "qlb: reopen when canonical morphology reassociates a heart noun or derived-turning form with a different root family."]
+    },
+    "kvr": {
+      "claim_scope": "REPRESENTATIVE",
+      "claim_scope_kind": "LEXICALIZED_CLASS",
+      "hard_case_representation": {"status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL", "rationale": "The opaque al-Kawthar record is retained as the lexicalized resistant seam."},
+      "rejection_condition": {"challenging_finding": "kvr: reject the current qualified productive-class account if abundance, increase, multiplication, or accumulation fails to retain a scale/growth relation, or if al-Kawthar gains an internal bridge that invalidates its opaque-seam treatment.", "failure_consequence": "kvr: rescope the productive classes or reopen the opaque occurrence; do not extend a root-wide conclusion across the seam without a demonstrated bridge."},
+      "reopen_conditions": ["kvr: reopen when 108:1:3:2 receives Quran-internal evidence linking it to the productive abundance classes.", "kvr: reopen when a new structural distinction separates scale, multiplication, and mutual accumulation inside the current qualified classes."]
+    },
+    "swA": {
+      "claim_scope": "LOCAL",
+      "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
+      "hard_case_representation": {"status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL", "rationale": "The exposed-private-parts resistant set remains separate from adverse/badness classes."},
+      "rejection_condition": {"challenging_finding": "swA: reject the current unresolved adverse-versus-exposed-private-parts partition if a Quran-internal occurrence demonstrates one contribution that both classes require rather than context-specific evaluative and concrete readings.", "failure_consequence": "swA: replace the class partition only after the shared contribution is evidenced; do not use contextual shame alone as a universal bridge."},
+      "reopen_conditions": ["swA: reopen when a resistant exposed-private-parts occurrence supplies an internal bridge to the adverse or worsening family.", "swA: reopen when canonical morphology changes the root or form assignment of a decisive private-parts occurrence."]
+    },
+    "srr": {
+      "claim_scope": "REPRESENTATIVE",
+      "claim_scope_kind": "LEXICALIZED_CLASS",
+      "hard_case_representation": {"status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL", "rationale": "Joy and couch records remain counterevidence to a root-wide concealment claim."},
+      "rejection_condition": {"challenging_finding": "srr: reject the qualified secrecy account if a secrecy occurrence lacks concealment or opposition to disclosure, or if the couch and joy uses receive an internal bridge that makes them part of the same productive contribution.", "failure_consequence": "srr: narrow the secrecy class or revise the lexicalized seam boundary; do not silently absorb paradise couches or joy."},
+      "reopen_conditions": ["srr: reopen when a persisted couch or joy occurrence is structurally linked to concealment by Quran-internal evidence.", "srr: reopen when a source correction changes the lexical classification of the resistant surur records."]
+    },
+    "ysr": {
+      "claim_scope": "REPRESENTATIVE",
+      "claim_scope_kind": "LEXICALIZED_CLASS",
+      "hard_case_representation": {"status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL", "rationale": "The three maysir records are retained as unresolved lexicalized resistance."},
+      "rejection_condition": {"challenging_finding": "ysr: reject the qualified ease/readiness account if an ease or facilitation form lacks low obstruction or ready attainability, or if the maysir occurrences show that same contribution internally.", "failure_consequence": "ysr: preserve maysir as a resistant seam or rescope the productive families; do not treat gambling as evidence for the ease nucleus without a bridge."},
+      "reopen_conditions": ["ysr: reopen when 2:219, 5:90, or 5:91 gains Quran-internal evidence connecting maysir to the productive ease classes.", "ysr: reopen when form classification changes the boundary between facilitation, availability, and the maysir noun."]
+    },
+    "H$r": {
+      "claim_scope": "UNIVERSAL",
+      "claim_scope_kind": "ROOT_GENERALIZATION",
+      "hard_case_representation": {"status": "EVIDENCE_DERIVED", "rationale": "The agent noun in 26:36 tests whether the claim survives a participant-form rather than an event form."},
+      "hard_case_override": [{"word_ref": "26:36:7:1", "role": "STRUCTURAL_ATYPICALITY", "reason": "H$r: 26:36:7:1 is the persisted gatherer agent noun, testing convergence through the participant who assembles rather than through a named assembly event.", "evidence_basis": {"kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE", "statement": "A noun can name the Day or site of gathering rather than the act, but remains defined by the convergence event."}}],
+      "rejection_condition": {"challenging_finding": "H$r: reject the current universal assembly relation if a gathering verb, gatherer noun, or assembly noun lacks the collection of dispersed participants toward one place or event.", "failure_consequence": "H$r: isolate the failing nominal or verbal family and remove any unsupported resurrection-specific reading from the root claim."},
+      "reopen_conditions": ["H$r: reopen when an assembly noun is shown to name a day or site without a convergence relation.", "H$r: reopen when source morphology reclassifies a decisive gatherer or gathering form across the verb/noun boundary."]
+    },
+    "fSl": {
+      "claim_scope": "REPRESENTATIVE",
+      "claim_scope_kind": "DERIVATIONAL_FAMILY",
+      "hard_case_representation": {"status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL", "rationale": "The family/clan occurrence remains a recorded resistant boundary outside the productive families."},
+      "rejection_condition": {"challenging_finding": "fSl: reject the qualified detailing/separation account if either productive family lacks its stated operation, or if the family/clan occurrence is internally shown to carry that operation rather than remain a lexicalized seam.", "failure_consequence": "fSl: split the failing productive class or revise the family-seam boundary without asserting a root-wide contribution."},
+      "reopen_conditions": ["fSl: reopen when 70:13:1:2 gains a Quran-internal bridge to detailing, separation, or decision.", "fSl: reopen when QAC classification changes the form allocation that currently distinguishes productive and family/clan uses."]
+    },
+    "fwq": {
+      "claim_scope": "REPRESENTATIVE",
+      "claim_scope_kind": "LEXICALIZED_CLASS",
+      "hard_case_representation": {"status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL", "rationale": "Recovery and interval records remain explicit resistance to the upper-side relation."},
+      "rejection_condition": {"challenging_finding": "fwq: reject the qualified upper-side relation if a positional/rank occurrence lacks an upper reference point, or if the recovery and interval seams demonstrate that same relation internally.", "failure_consequence": "fwq: retain only the supported positional class or reopen the resistant seams rather than deriving a universal spatial nucleus."},
+      "reopen_conditions": ["fwq: reopen when the recovery at 7:143 or interval at 38:15 is linked by Quran-internal evidence to an upper-side relation.", "fwq: reopen when a canonical reading of the fawaq or recovery forms changes their lexical-class assignment."]
+    },
+    "jwb": {
+      "claim_scope": "REPRESENTATIVE",
+      "claim_scope_kind": "LEXICALIZED_CLASS",
+      "hard_case_representation": {"status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL", "rationale": "The rock-hewing occurrence remains the explicit non-response seam."},
+      "rejection_condition": {"challenging_finding": "jwb: reject the qualified answering-response account if a response form lacks an address, call, or demand relation, or if the rock-hewing occurrence proves to carry one.", "failure_consequence": "jwb: preserve the rock-hewing seam or separate a failing response class; do not write a root-wide response claim."},
+      "reopen_conditions": ["jwb: reopen when 89:9:3:1 receives Quran-internal evidence for a call-and-response relation.", "jwb: reopen when root or morphology correction changes the contrast between answer forms and the rock-hewing record."]
+    },
+    "mkr": {
+      "claim_scope": "UNIVERSAL",
+      "claim_scope_kind": "ROOT_GENERALIZATION",
+      "hard_case_representation": {"status": "EVIDENCE_DERIVED", "rationale": "The paired human and divine counter-arrangement at 10:21 tests moral evaluation against the shared structural relation."},
+      "hard_case_override": [{"word_ref": "10:21:11:1", "role": "STRUCTURAL_ATYPICALITY", "reason": "mkr: 10:21:11:1 names covert arrangement where divine counter-action and human plotting share structure while moral evaluation stays participant-bound.", "evidence_basis": {"kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE", "statement": "Divine makr must not inherit human moral blame; participant authority changes justice, not the structural covert counter-arrangement."}}],
+      "rejection_condition": {"challenging_finding": "mkr: reject the current universal covert-arrangement account if a human or divine makr occurrence lacks hidden strategic ordering toward an outcome, or if moral blame is required by the root rather than participant authority and context.", "failure_consequence": "mkr: separate the incompatible participant class and do not transfer human moral evaluation to divine counter-action."},
+      "reopen_conditions": ["mkr: reopen when a paired human/divine occurrence like 10:21 is shown to lack the same covert outcome-arranging relation.", "mkr: reopen when a canonical participant or voice correction changes the boundary between strategy, plotter, and counter-arrangement."]
+    },
+    "trk": {
+      "claim_scope": "UNIVERSAL",
+      "claim_scope_kind": "ROOT_GENERALIZATION",
+      "hard_case_representation": {"status": "EVIDENCE_DERIVED", "rationale": "The inheritance formulation at 4:7 tests departure/cessation against an apparently positive conveyance."},
+      "hard_case_override": [{"word_ref": "4:7:4:1", "role": "STRUCTURAL_ATYPICALITY", "reason": "trk: 4:7:4:1 frames inherited shares through what prior holders left, testing cessation of retention against a positive inheritance result.", "evidence_basis": {"kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE", "statement": "Leaving descendants or an inheritance can look like positive bequeathal, but it still profiles what remains when the prior holder departs."}}],
+      "rejection_condition": {"challenging_finding": "trk: reject the current universal cessation-of-retention relation if a leaving, leaver, inheritance, abandonment, or sparing occurrence does not involve a prior holder ceasing to retain or accompany what remains.", "failure_consequence": "trk: restrict the claim to the surviving relation and do not recast inheritance as a separate positive root contribution without evidence."},
+      "reopen_conditions": ["trk: reopen when an inheritance or descendant occurrence such as 4:7 is shown to lack prior departure or cessation of retention.", "trk: reopen when morphology alters the division between leaving verbs and leaver participles at a boundary record."]
+    },
+    "Hzn": {
+      "claim_scope": "UNIVERSAL",
+      "claim_scope_kind": "ROOT_GENERALIZATION",
+      "hard_case_representation": {"status": "EVIDENCE_DERIVED", "rationale": "The fear/grief contrast at 10:62 tests sorrow as a distinct inward burden rather than bereavement only."},
+      "hard_case_override": [{"word_ref": "10:62:10:1", "role": "ADVERSARIAL_BOUNDARY", "reason": "Hzn: 10:62:10:1 contrasts absence of fear with absence of grief, testing the root against a neighboring emotional state rather than a bereavement scene.", "evidence_basis": {"kind": "PERSISTED_ADVERSARIAL_VERIFICATION", "statement": "Fear/grief contrasts provide strong internal distinctiveness evidence."}}],
+      "rejection_condition": {"challenging_finding": "Hzn: reject the current universal sorrow-burden account if a grieving verb or noun lacks an inward burden in response to loss, threat, or rejection, or if the fear contrast collapses into the same contribution.", "failure_consequence": "Hzn: narrow the conclusion to the supported emotional class and preserve any unresolved distinction from fear."},
+      "reopen_conditions": ["Hzn: reopen when the 10:62 fear/grief contrast no longer distinguishes the two emotional relations under a verified Quran-internal analysis.", "Hzn: reopen when a source correction changes a decisive grief noun or verb’s participant and burden relation."]
+    },
+    "Sdd": {
+      "claim_scope": "REPRESENTATIVE",
+      "claim_scope_kind": "LEXICALIZED_CLASS",
+      "hard_case_representation": {"status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL", "rationale": "The sadid-fluid occurrence remains a resistant lexicalized seam."},
+      "rejection_condition": {"challenging_finding": "Sdd: reject the qualified obstruction/redirection account if an obstruction occurrence lacks blocked or turned movement/access, or if the sadid-fluid use is internally shown to retain that same relation.", "failure_consequence": "Sdd: leave the fluid use outside the productive class or rescope the obstruction account; do not infer a root-wide barrier relation."},
+      "reopen_conditions": ["Sdd: reopen when 14:16:7:1 gains Quran-internal evidence of obstruction or redirected movement.", "Sdd: reopen when the lexical or morphological classification of the sadid fluid changes in canonical source data."]
+    },
+    "wSf": {
+      "claim_scope": "UNIVERSAL",
+      "claim_scope_kind": "ROOT_GENERALIZATION",
+      "hard_case_representation": {"status": "EVIDENCE_DERIVED", "rationale": "Tongues describing false content at 16:116 tests truth value as contextual rather than root-internal."},
+      "hard_case_override": [{"word_ref": "16:116:4:1", "role": "STRUCTURAL_ATYPICALITY", "reason": "wSf: 16:116:4:1 attributes false content through description, testing whether characterization remains distinct from the truth status of its content.", "evidence_basis": {"kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE", "statement": "Tongues 'describe the lie' in 16:116, but fabrication is the content's status, not part of wSf."}}],
+      "rejection_condition": {"challenging_finding": "wSf: reject the current universal characterization act if a describing verb or noun does not assign an articulated account or quality to a referent, or if truth/falsity is required as a root component rather than supplied by content and context.", "failure_consequence": "wSf: separate the incompatible report type and keep fabrication or truth value outside the root contribution unless directly evidenced."},
+      "reopen_conditions": ["wSf: reopen when 16:116 is structurally shown to encode falsity as the root contribution rather than as the described content.", "wSf: reopen when a canonical grammatical correction changes the attribution relation in a decisive describing occurrence."]
+    },
+    "wlj": {
+      "claim_scope": "REPRESENTATIVE",
+      "claim_scope_kind": "DERIVATIONAL_FAMILY",
+      "hard_case_representation": {"status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL", "rationale": "The social-insider occurrence and invalidated historical reconciliation remain the active boundary."},
+      "rejection_condition": {"challenging_finding": "wlj: reject the qualified entry/insertion account if an entry or insertion occurrence lacks boundary crossing, or if the social-insider occurrence at 9:16 is internally proven to be that same physical relation.", "failure_consequence": "wlj: retain the social occurrence as resistant or revise the productive-family scope; do not restore the invalidated reconciliation as a root-wide bridge."},
+      "reopen_conditions": ["wlj: reopen when 9:16:20:1 gains Quran-internal evidence of an entry/insertion boundary rather than social affiliation only.", "wlj: reopen when the persisted reconciliation lineage or QAC form assignment for 9:16:20:1 changes through canonical correction."]
+    },
+    "zrE": {
+      "claim_scope": "UNIVERSAL",
+      "claim_scope_kind": "ROOT_GENERALIZATION",
+      "hard_case_representation": {"status": "EVIDENCE_DERIVED", "rationale": "The explicit crop likeness at 48:29 tests figurative context without lexicalizing away agriculture."},
+      "hard_case_override": [{"word_ref": "48:29:32:2", "role": "STRUCTURAL_ATYPICALITY", "reason": "zrE: 48:29:32:2 occurs in an explicit likeness while retaining the persisted crop-emergence image, testing the nucleus under figurative discourse.", "evidence_basis": {"kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE", "statement": "48:29 applies crop emergence as a likeness for believers, but the agricultural image remains explicit rather than lexicalized away."}}],
+      "rejection_condition": {"challenging_finding": "zrE: reject the current universal planting/cultivation account if a crop, cultivator, or sowing occurrence lacks placement or cultivation ordered toward emerging growth, including an explicit likeness that loses the agricultural image.", "failure_consequence": "zrE: narrow the result to the compatible agricultural family and do not treat figurative discourse as an unexamined lexical exception."},
+      "reopen_conditions": ["zrE: reopen when the 48:29 crop likeness is shown by Quran-internal structure to discard planting and emergence rather than use them explicitly.", "zrE: reopen when source or morphology changes the seed/crop/cultivator allocation at an adversarial boundary occurrence."]
+    },
+    "$hw": {
+      "claim_scope": "UNIVERSAL",
+      "claim_scope_kind": "ROOT_GENERALIZATION",
+      "hard_case_representation": {"status": "EVIDENCE_DERIVED", "rationale": "The condemned following of appetites at 19:59 tests moral polarity against the appetite relation."},
+      "hard_case_override": [{"word_ref": "19:59:8:2", "role": "STRUCTURAL_ATYPICALITY", "reason": "$hw: 19:59:8:2 places appetites in a condemned sequence, testing that moral polarity belongs to context rather than to appetite itself.", "evidence_basis": {"kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE", "statement": "Paradisal uses are positive while following appetites can be condemned; the polarity shift confirms that the root supplies appetite, not moral judgment."}}],
+      "rejection_condition": {"challenging_finding": "$hw: reject the current universal appetite account if a desire verb or appetite noun lacks attraction toward an object or experience, or if moral praise/blame must be encoded by the root rather than by its context.", "failure_consequence": "$hw: separate the failing class and retain moral evaluation at the contextual layer rather than adding it to the root nucleus."},
+      "reopen_conditions": ["$hw: reopen when the adverse appetite at 19:59 or a paradisal appetite use shows a root-level moral value independent of context.", "$hw: reopen when a form or object-assignment correction changes the distinction between desiring verbs and appetite nouns."]
+    },
+    "Aby": {
+      "claim_scope": "UNIVERSAL",
+      "claim_scope_kind": "ROOT_GENERALIZATION",
+      "hard_case_representation": {"status": "EVIDENCE_DERIVED", "rationale": "The cosmic participants in 33:72 are the strongest atypical refusal realization."},
+      "hard_case_override": [{"word_ref": "33:72:8:2", "role": "STRUCTURAL_ATYPICALITY", "reason": "Aby: 33:72:8:2 applies refusal to heavens, earth, and mountains in contrast to taking up the trust, testing the refusal relation beyond ordinary human actors.", "evidence_basis": {"kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE", "statement": "Heaven and earth 'refuse' the trust in 33:72, extending volitional language to cosmic participants; the verse still contrasts acceptance with withholding."}}],
+      "rejection_condition": {"challenging_finding": "Aby: reject the current universal refusal account if a refusal occurrence neither withholds acceptance/performance nor contrasts with what was presented or required, including the cosmic trust setting.", "failure_consequence": "Aby: restrict the claim to the demonstrated participant class and preserve the cosmic occurrence as an unresolved boundary if its relation fails."},
+      "reopen_conditions": ["Aby: reopen when 33:72 is shown to lack a presentation-versus-withholding relation despite its cosmic participants.", "Aby: reopen when canonical syntax changes the subject or object structure of a decisive refusal occurrence."]
+    },
+    "Dyq": {
+      "claim_scope": "UNIVERSAL",
+      "claim_scope_kind": "ROOT_GENERALIZATION",
+      "hard_case_representation": {"status": "EVIDENCE_DERIVED", "rationale": "The constricted breast at 11:12 tests inward capacity rather than physical room."},
+      "hard_case_override": [{"word_ref": "11:12:7:2", "role": "STRUCTURAL_ATYPICALITY", "reason": "Dyq: 11:12:7:2 predicates constriction of the breast, testing reduced inner capacity without reducing the root to spatial narrowness.", "evidence_basis": {"kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE", "statement": "Emotional constriction of the breast is non-spatial, but the corpus repeatedly frames distress through the explicit container term sadr, preserving reduced inner room."}}],
+      "rejection_condition": {"challenging_finding": "Dyq: reject the current universal reduced-room/capacity account if a physical, circumstantial, or inward occurrence lacks a constrained container, capacity, or available room after participant roles are separated.", "failure_consequence": "Dyq: rescope the account to the surviving environments and do not replace constriction with sadness or distress alone."},
+      "reopen_conditions": ["Dyq: reopen when the breast construction at 11:12 is shown to express distress without any constrained inner capacity.", "Dyq: reopen when source morphology changes the causative versus state distinction in a decisive constriction occurrence."]
+    },
+    "ESm": {
+      "claim_scope": "UNIVERSAL",
+      "claim_scope_kind": "ROOT_GENERALIZATION",
+      "hard_case_representation": {"status": "EVIDENCE_DERIVED", "rationale": "Holding fast to the divine rope tests bond-maintenance against protection by a separate agent."},
+      "hard_case_override": [{"word_ref": "3:103:1:2", "role": "ADVERSARIAL_BOUNDARY", "reason": "ESm: 3:103:1:2 commands holding fast to a bond, testing whether active adherence shares the restraining relation of protection.", "evidence_basis": {"kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE", "statement": "Holding fast to God/rope is not protection by a separate agent, but still maintains a bond that prevents separation."}}],
+      "rejection_condition": {"challenging_finding": "ESm: reject the current universal restraining-hold account if a protection, holding-fast, or seeking-protection form prevents neither separation, exposure, nor harm and cannot be connected by a maintained bond.", "failure_consequence": "ESm: split the incompatible derivation rather than reducing holding fast to a passive protector or overextending protection."},
+      "reopen_conditions": ["ESm: reopen when the 3:103 holding-fast relation is shown to lack any bond that prevents separation.", "ESm: reopen when canonical form analysis changes the allocation among protection, active adherence, and seeking protection."]
+    },
+    "Hlf": {
+      "claim_scope": "UNIVERSAL",
+      "claim_scope_kind": "ROOT_GENERALIZATION",
+      "hard_case_representation": {"status": "EVIDENCE_DERIVED", "rationale": "Knowingly false oaths test the act of binding an assertion independently of truth value."},
+      "hard_case_override": [{"word_ref": "58:18:5:2", "role": "STRUCTURAL_ATYPICALITY", "reason": "Hlf: 58:18:5:2 is a knowingly false oath, testing that the root binds an assertion even when the asserted content is false.", "evidence_basis": {"kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE", "statement": "Many oaths are knowingly false, but falsity affects content rather than whether the speaker binds the assertion with an oath."}}],
+      "rejection_condition": {"challenging_finding": "Hlf: reject the current universal oath-binding account if a swearing verb or habitual swearer occurrence does not bind an assertion by invocation, or if truth, falsehood, or covenant content is required by the root act.", "failure_consequence": "Hlf: restrict the result to the compatible oath act and keep assertion truth and moral assessment in the content/context layer."},
+      "reopen_conditions": ["Hlf: reopen when a false-oath occurrence such as 58:18 is shown to lack an invoked assertion-binding act.", "Hlf: reopen when a canonical syntactic correction alters what is sworn or the agent of a decisive oath occurrence."]
+    },
+    "Hwr": {
+      "claim_scope": "LOCAL",
+      "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
+      "hard_case_representation": {"status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL", "rationale": "The resistant dialogue, disciples, hur, and return families preserve the missing unifier."},
+      "rejection_condition": {"challenging_finding": "Hwr: reject the current unresolved four-class partition if Quran-internal evidence makes dialogue, return, disciples, and hur require one distinguishable contribution rather than a two-core patch or named lexical families.", "failure_consequence": "Hwr: replace the partition only through a new root-level analysis that records the bridge and the remaining counterexamples."},
+      "reopen_conditions": ["Hwr: reopen when a resistant hur or hawariyyun occurrence acquires an internal relation to the dialogue/return family.", "Hwr: reopen when proper-name or noun-family morphology is canonically reassigned and removes the present split."]
+    },
+    "Sgr": {
+      "claim_scope": "LOCAL",
+      "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
+      "hard_case_representation": {"status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL", "rationale": "The stored magnitude/age and abasement failures prevent a generic scalar nucleus."},
+      "rejection_condition": {"challenging_finding": "Sgr: reject the current unresolved magnitude-versus-abasement partition if a Quran-internal occurrence establishes a shared scale contribution that both classes require rather than a merely economical abstraction.", "failure_consequence": "Sgr: reopen the root from the decisive bridge and do not promote generic lowness while its distinctiveness remains untested."},
+      "reopen_conditions": ["Sgr: reopen when 10:61:34:1 or 12:32:19:2 provides a structural bridge between smallness and lowered standing.", "Sgr: reopen when a canonical classification correction changes the semantic family of either adversarial occurrence."]
+    },
+    "Eyr": {
+      "claim_scope": "UNIVERSAL",
+      "claim_scope_kind": "ROOT_GENERALIZATION",
+      "hard_case_representation": {"status": "NO_GENUINE_HARD_CASE", "rationale": "All three records are the same underived caravan family in one Yusuf narrative; no individual occurrence has a distinct persisted adversarial or boundary role."},
+      "hard_case_override": [],
+      "rejection_condition": {"challenging_finding": "Eyr: reject the current universal-but-lexically-limited caravan/convoy referent if a verified occurrence in the three-record packet is neither a traveling collective nor compatible with the moving-group account.", "failure_consequence": "Eyr: reduce the referential claim to the compatible record and retain the one-narrative, one-form ceiling on deeper root abstraction."},
+      "reopen_conditions": ["Eyr: reopen when canonical corpus evidence adds or recovers a distinct Quran-internal Eyr form outside the three Yusuf caravan records.", "Eyr: reopen when the collective reference in 12:70, 12:82, or 12:94 is structurally corrected so it no longer supports a moving convoy."]
+    },
+    "Ezr": {
+      "claim_scope": "LOCAL",
+      "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
+      "hard_case_representation": {"status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL", "rationale": "The 48:9 coordination remains the stored reinforcement/honor discriminator failure."},
+      "rejection_condition": {"challenging_finding": "Ezr: reject the current unresolved reinforcement/honor/help partition if a Quran-internal discriminator makes one contribution required by all three records or proves the 48:9 coordination is not a live boundary.", "failure_consequence": "Ezr: begin a bounded replacement analysis from that discriminator; do not choose honor, reinforcement, or help from coordination alone."},
+      "reopen_conditions": ["Ezr: reopen when 48:9:4:2 receives a Quran-internal distinction between ta'zir and its coordinated honor relation.", "Ezr: reopen when canonical morphology or object assignment changes one of the three messenger-support records."]
+    },
+    "HDD": {
+      "claim_scope": "UNIVERSAL",
+      "claim_scope_kind": "ROOT_GENERALIZATION",
+      "hard_case_representation": {"status": "EVIDENCE_DERIVED", "rationale": "The reciprocal form at 89:18 tests mutual urging against the two base negated urging forms."},
+      "hard_case_override": [{"word_ref": "89:18:2:1", "role": "STRUCTURAL_ATYPICALITY", "reason": "HDD: 89:18:2:1 is the persisted reciprocal urging form, testing whether mutual participation preserves active pressure toward an action.", "evidence_basis": {"kind": "PERSISTED_ADVERSARIAL_VERIFICATION", "statement": "Sparse but coherent incitement evidence; MODERATE."}}],
+      "rejection_condition": {"challenging_finding": "HDD: reject the current universal incitement account if a base or reciprocal occurrence lacks active pressure toward the stated action, rather than merely naming the action or its absence.", "failure_consequence": "HDD: confine the claim to the verified form and retain the sparse negative charitable-action limitation."},
+      "reopen_conditions": ["HDD: reopen when the reciprocal urging at 89:18 is shown to lack motivational pressure shared with the base forms.", "HDD: reopen when source morphology changes the Form-VI versus base-form allocation in the three-record packet."]
+    },
+    "Hdq": {
+      "claim_scope": "UNIVERSAL",
+      "claim_scope_kind": "ROOT_GENERALIZATION",
+      "hard_case_representation": {"status": "NO_GENUINE_HARD_CASE", "rationale": "Every record is the same plural garden noun; the stored limitation is a corpus-wide derivational ceiling, not an individual adversarial case."},
+      "hard_case_override": [],
+      "rejection_condition": {"challenging_finding": "Hdq: reject the current universal-but-lexically-limited garden-space referent if one of the three plural occurrences is not a cultivated garden with the stated growth/abundance relation, or if enclosure becomes an internally required root feature.", "failure_consequence": "Hdq: retain only the compatible referential record and keep enclosure and deeper distinctiveness unasserted."},
+      "reopen_conditions": ["Hdq: reopen when canonical Quran evidence adds a non-plural or non-garden Hdq form that tests the present lexical repetition ceiling.", "Hdq: reopen when 27:60, 78:32, or 80:30 is structurally corrected so its garden referent or modifier relation changes."]
+    },
+    "Hfw": {
+      "claim_scope": "LOCAL",
+      "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
+      "hard_case_representation": {"status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL", "rationale": "Solicitude, claimed knowledge, and exhaustive demand remain distinct adversarial classes."},
+      "rejection_condition": {"challenging_finding": "Hfw: reject the current unresolved attentive-versus-pressing-demand partition if Quran-internal evidence gives solicitous attention, claimed knowledge, and the 47:37 exhaustive demand one discriminating common contribution.", "failure_consequence": "Hfw: reopen from the demonstrated bridge; do not use generic attention or kindness to flatten the three observed roles."},
+      "reopen_conditions": ["Hfw: reopen when 47:37:3:2 gains an internal bridge to the attentive adjective uses.", "Hfw: reopen when the target/participant structure of 19:47, 7:187, or 47:37 is canonically corrected."]
+    },
+    "Hlq": {
+      "claim_scope": "LOCAL",
+      "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
+      "hard_case_representation": {"status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL", "rationale": "All shaving and throat records are retained as resistant to the unproven circular-boundary bridge."},
+      "rejection_condition": {"challenging_finding": "Hlq: reject the current unresolved shaving/throat partition if Quran-internal evidence demonstrates a single contribution that both hair removal and the throat require without importing external geometry.", "failure_consequence": "Hlq: replace the partition only after that bridge is recorded and tested against all three resistant occurrences."},
+      "reopen_conditions": ["Hlq: reopen when the throat at 56:83:4:2 gains a Quran-internal cutting or hair-removal relation.", "Hlq: reopen when morphology changes the separation between the Form-II shaving family and the underived throat noun."]
+    },
+    "HrD": {
+      "claim_scope": "REPRESENTATIVE",
+      "claim_scope_kind": "LEXICALIZED_CLASS",
+      "hard_case_representation": {"status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL", "rationale": "The grief-caused wasted-state noun remains the explicit seam outside incitement."},
+      "rejection_condition": {"challenging_finding": "HrD: reject the qualified incitement account if a Form-II command lacks pressure toward committed action, or if the wasted-state noun at 12:85 proves to carry the same actor-and-target relation.", "failure_consequence": "HrD: preserve the wasted-state seam or rescope the productive incitement class; do not infer a root-wide extreme-driving abstraction."},
+      "reopen_conditions": ["HrD: reopen when 12:85:8:1 receives Quran-internal evidence of an incited actor and target action.", "HrD: reopen when form classification changes the contrast between the Form-II commands and the underived wasted-state noun."]
+    },
+    "Hwj": {
+      "claim_scope": "UNIVERSAL",
+      "claim_scope_kind": "ROOT_GENERALIZATION",
+      "hard_case_representation": {"status": "EVIDENCE_DERIVED", "rationale": "The private wish/purpose reading at 12:68 is the explicit boundary against strict objective necessity."},
+      "hard_case_override": [{"word_ref": "12:68:16:1", "role": "ADVERSARIAL_BOUNDARY", "reason": "Hwj: 12:68:16:1 records an inward purpose that broadens objective necessity while preserving a sought fulfillment relation.", "evidence_basis": {"kind": "PERSISTED_VERIFIER_OBJECTION", "statement": "12:68 broadens necessity to an inwardly sought purpose."}}],
+      "rejection_condition": {"challenging_finding": "Hwj: reject the current universal requirement/sought-purpose account if a need occurrence lacks either an inward or practical lack or a purpose whose fulfillment addresses it, including the private-purpose boundary at 12:68.", "failure_consequence": "Hwj: narrow the claim to the surviving need type and do not restore strict objective necessity as a universal requirement."},
+      "reopen_conditions": ["Hwj: reopen when 12:68 is shown to be neither a sought purpose nor a relation to fulfillment of an inward lack.", "Hwj: reopen when canonical syntax changes the possessor or fulfillment relation in the 12:68, 40:80, or 59:9 evidence set."]
+    },
+    "SbA": {
+      "claim_scope": "LOCAL",
+      "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
+      "hard_case_representation": {"status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL", "rationale": "All three records are resistant proper-name-only occurrences with no compositional evidence."},
+      "rejection_condition": {"challenging_finding": "SbA: reject the current proper-name-only unresolved partition if Quran-internal evidence decomposes the Sabian group name into a traceable root contribution or proves the tokens are not the same named class.", "failure_consequence": "SbA: start a new root analysis from the compositional evidence; do not import an external lexical derivation."},
+      "reopen_conditions": ["SbA: reopen when a canonical Quran record beyond 2:62, 5:69, and 22:17 supplies a non-proper-name SbA form.", "SbA: reopen when QAC proper-name classification is corrected for a resistant group-name occurrence."]
+    },
+    "Sbg": {
+      "claim_scope": "LOCAL",
+      "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
+      "hard_case_representation": {"status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL", "rationale": "The culinary sibgh occurrence remains the stored boundary to divine sibgha."},
+      "rejection_condition": {"challenging_finding": "Sbg: reject the current unresolved divine-sibgha versus culinary-sibgh partition if Quran-internal evidence makes the culinary occurrence require the same defining imbuement/characterization contribution as the divine class.", "failure_consequence": "Sbg: reopen from that bridge and do not adopt coloration, treatment, or imbuement as a root-wide result without it."},
+      "reopen_conditions": ["Sbg: reopen when 23:20:8:2 gains a Quran-internal bridge to the 2:138 divine sibgha class.", "Sbg: reopen when canonical lexical or grammatical analysis changes the culinary function assigned to 23:20:8:2."]
+    },
+    "Sbw": {
+      "claim_scope": "LOCAL",
+      "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
+      "hard_case_representation": {"status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL", "rationale": "The youth nouns and inclination verb remain resistant to a shared contribution."},
+      "rejection_condition": {"challenging_finding": "Sbw: reject the current unresolved youth-versus-inclination partition if a Quran-internal occurrence shows that age/status and directed attraction require one distinctive contribution rather than separate noun and verb families.", "failure_consequence": "Sbw: open a replacement bridge analysis and preserve any counterexample that still separates youth from inclination."},
+      "reopen_conditions": ["Sbw: reopen when the inclination at 12:33 or either sabiyyan noun receives Quran-internal evidence linking youth and desire.", "Sbw: reopen when canonical morphology changes the part-of-speech or root assignment that currently separates the child nouns from the inclination verb."]
+    }
+  }
+}

@@ -7930,16 +7930,16 @@
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "swA: reject the current local claim if a verified Quran-internal occurrence in adverse_nominals, exposed_private_parts, form_iv_badness, worsening_base_verbs cannot sustain it without an added semantic component. Current hardest boundary: The seven exposed-private-parts occurrences retain concrete referents while the adverse/badness classes retain evaluative or outcome readings.",
+  "challenging_finding": "swA: reject the current unresolved adverse-versus-exposed-private-parts partition if a Quran-internal occurrence demonstrates one contribution that both classes require rather than context-specific evaluative and concrete readings.",
   "search_location": "Batch 06 swA: all 167 occurrence_dispositions across material clusters adverse_nominals, exposed_private_parts, form_iv_badness, worsening_base_verbs.",
   "verification_method": "Test 'the persisted root judgment' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Do not derive private-part vocabulary from adverse moral or evaluative context.",
-  "failure_consequence": "swA: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "swA: replace the class partition only after the shared contribution is evidenced; do not use contextual shame alone as a universal bridge."
  },
  "falsification_status": "NOT_REQUIRED",
  "reopen_conditions": [
-  "swA: reopen if a verified Quran-internal bridge changes the boundary between adverse_nominals, exposed_private_parts, form_iv_badness, worsening_base_verbs for the current claim: the persisted root judgment",
-  "swA: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "swA: reopen when a resistant exposed-private-parts occurrence supplies an internal bridge to the adverse or worsening family.",
+  "swA: reopen when canonical morphology changes the root or form assignment of a decisive private-parts occurrence."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [
@@ -8207,5 +8207,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL",
+  "rationale": "The exposed-private-parts resistant set remains separate from adverse/badness classes."
  }
 }

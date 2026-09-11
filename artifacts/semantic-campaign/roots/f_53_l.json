@@ -2069,16 +2069,16 @@
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "fSl: reject the current representative claim if a verified Quran-internal occurrence in form_ii_detailing, separation_and_decision cannot sustain it without an added semantic component. Current hardest boundary: 70:13:1:2 is a family/clan occurrence rather than an overt detailing, separation, or decision use.",
+  "challenging_finding": "fSl: reject the qualified detailing/separation account if either productive family lacks its stated operation, or if the family/clan occurrence is internally shown to carry that operation rather than remain a lexicalized seam.",
   "search_location": "Batch 06 fSl: all 43 occurrence_dispositions across material clusters form_ii_detailing, separation_and_decision.",
   "verification_method": "Test 'Detailing and separation/decision remain productive classes, but the family/clan occurrence is not silently treated as proof of a universal root contribution.' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Do not absorb family/clan vocabulary into boundary-making without an internal bridge.",
-  "failure_consequence": "fSl: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "fSl: split the failing productive class or revise the family-seam boundary without asserting a root-wide contribution."
  },
  "falsification_status": "NOT_RUN",
  "reopen_conditions": [
-  "fSl: reopen if a verified Quran-internal bridge changes the boundary between form_ii_detailing, separation_and_decision for the current claim: Detailing and separation/decision remain productive classes, but the family/clan occurrence is not silently treated as proof of a universal root contribution.",
-  "fSl: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "fSl: reopen when 70:13:1:2 gains a Quran-internal bridge to detailing, separation, or decision.",
+  "fSl: reopen when QAC classification changes the form allocation that currently distinguishes productive and family/clan uses."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [
@@ -2207,5 +2207,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL",
+  "rationale": "The family/clan occurrence remains a recorded resistant boundary outside the productive families."
  }
 }

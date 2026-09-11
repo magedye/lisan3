@@ -1998,16 +1998,16 @@
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "jwb: reject the current representative claim if a verified Quran-internal occurrence in answer_nouns, derived_response, rock_hewing cannot sustain it without an added semantic component. Current hardest boundary: 89:9:3:1 describes Thamud hewing rock, with no speech act or call-response relation.",
+  "challenging_finding": "jwb: reject the qualified answering-response account if a response form lacks an address, call, or demand relation, or if the rock-hewing occurrence proves to carry one.",
   "search_location": "Batch 06 jwb: all 43 occurrence_dispositions across material clusters answer_nouns, derived_response, rock_hewing.",
   "verification_method": "Test 'meeting an address, call, or demand with a directed answering response' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Forms IV and X distribute answering and responding; participants identify caller and respondent. The isolated base verb is held apart rather than explained through an external lexicon.",
-  "failure_consequence": "jwb: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "jwb: preserve the rock-hewing seam or separate a failing response class; do not write a root-wide response claim."
  },
  "falsification_status": "NOT_RUN",
  "reopen_conditions": [
-  "jwb: reopen if a verified Quran-internal bridge changes the boundary between answer_nouns, derived_response, rock_hewing for the current claim: meeting an address, call, or demand with a directed answering response",
-  "jwb: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "jwb: reopen when 89:9:3:1 receives Quran-internal evidence for a call-and-response relation.",
+  "jwb: reopen when root or morphology correction changes the contrast between answer forms and the rock-hewing record."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [
@@ -2137,5 +2137,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL",
+  "rationale": "The rock-hewing occurrence remains the explicit non-response seam."
  }
 }

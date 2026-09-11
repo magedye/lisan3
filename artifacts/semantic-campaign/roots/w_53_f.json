@@ -708,27 +708,26 @@
  },
  "hard_cases": [
   {
-   "word_ref": "12:18:18:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "wSf: 12:18:18:1 represents material class describing_verbs (13 persisted occurrences) that must independently sustain the current universal claim: articulating or assigning a characterization to a referent"
-  },
-  {
-   "word_ref": "6:139:19:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "wSf: 6:139:19:1 represents material class description_noun (1 persisted occurrences) that must independently sustain the current universal claim: articulating or assigning a characterization to a referent"
+   "word_ref": "16:116:4:1",
+   "role": "STRUCTURAL_ATYPICALITY",
+   "reason": "wSf: 16:116:4:1 attributes false content through description, testing whether characterization remains distinct from the truth status of its content.",
+   "evidence_basis": {
+    "kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE",
+    "statement": "Tongues 'describe the lie' in 16:116, but fabrication is the content's status, not part of wSf."
+   }
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "wSf: reject the current universal claim if a verified Quran-internal occurrence in describing_verbs, description_noun cannot sustain it without an added semantic component. Current hardest boundary: Tongues 'describe the lie' in 16:116, but fabrication is the content's status, not part of wSf.",
+  "challenging_finding": "wSf: reject the current universal characterization act if a describing verb or noun does not assign an articulated account or quality to a referent, or if truth/falsity is required as a root component rather than supplied by content and context.",
   "search_location": "Batch 06 wSf: all 14 occurrence_dispositions across material clusters describing_verbs, description_noun.",
   "verification_method": "Test 'articulating or assigning a characterization to a referent' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Subjects supply describer, objects supply referent, and clauses supply attributed content. Context supplies truth or fabrication.",
-  "failure_consequence": "wSf: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "wSf: separate the incompatible report type and keep fabrication or truth value outside the root contribution unless directly evidenced."
  },
  "falsification_status": "PASSED",
  "reopen_conditions": [
-  "wSf: reopen if a verified Quran-internal bridge changes the boundary between describing_verbs, description_noun for the current claim: articulating or assigning a characterization to a referent",
-  "wSf: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "wSf: reopen when 16:116 is structurally shown to encode falsity as the root contribution rather than as the described content.",
+  "wSf: reopen when a canonical grammatical correction changes the attribution relation in a decisive describing occurrence."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [
@@ -825,5 +824,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "Tongues describing false content at 16:116 tests truth value as contextual rather than root-internal."
  }
 }

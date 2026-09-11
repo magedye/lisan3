@@ -651,22 +651,26 @@
  },
  "hard_cases": [
   {
-   "word_ref": "15:31:3:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "Aby: 15:31:3:1 represents material class refusal_verbs (13 persisted occurrences) that must independently sustain the current universal claim: volitional refusal: holding oneself back from accepting or performing what is presented or required"
+   "word_ref": "33:72:8:2",
+   "role": "STRUCTURAL_ATYPICALITY",
+   "reason": "Aby: 33:72:8:2 applies refusal to heavens, earth, and mountains in contrast to taking up the trust, testing the refusal relation beyond ordinary human actors.",
+   "evidence_basis": {
+    "kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE",
+    "statement": "Heaven and earth 'refuse' the trust in 33:72, extending volitional language to cosmic participants; the verse still contrasts acceptance with withholding."
+   }
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "Aby: reject the current universal claim if a verified Quran-internal occurrence in refusal_verbs cannot sustain it without an added semantic component. Current hardest boundary: Heaven and earth 'refuse' the trust in 33:72, extending volitional language to cosmic participants; the verse still contrasts acceptance with withholding.",
+  "challenging_finding": "Aby: reject the current universal refusal account if a refusal occurrence neither withholds acceptance/performance nor contrasts with what was presented or required, including the cosmic trust setting.",
   "search_location": "Batch 06 Aby: all 13 occurrence_dispositions across material clusters refusal_verbs.",
   "verification_method": "Test 'volitional refusal: holding oneself back from accepting or performing what is presented or required' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Complements identify refused action, and conjunctions may add arrogance or insistence. These attitudes intensify but do not constitute the root.",
-  "failure_consequence": "Aby: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "Aby: restrict the claim to the demonstrated participant class and preserve the cosmic occurrence as an unresolved boundary if its relation fails."
  },
  "falsification_status": "PASSED",
  "reopen_conditions": [
-  "Aby: reopen if a verified Quran-internal bridge changes the boundary between refusal_verbs for the current claim: volitional refusal: holding oneself back from accepting or performing what is presented or required",
-  "Aby: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "Aby: reopen when 33:72 is shown to lack a presentation-versus-withholding relation despite its cosmic participants.",
+  "Aby: reopen when canonical syntax changes the subject or object structure of a decisive refusal occurrence."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [
@@ -761,5 +765,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "The cosmic participants in 33:72 are the strongest atypical refusal realization."
  }
 }

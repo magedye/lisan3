@@ -820,12 +820,110 @@ def test_33_final_contract_replay_preserves_the_frozen_semantic_payload():
             _batch06_semantic_snapshot(baseline_artifact)
 
 
-def test_34_final_contract_preserves_frozen_campaign_counts_and_handoff_state():
+def test_34_representation_remediation_preserves_frozen_campaign_counts_and_handoff_state():
     _repository_root, manifest, artifacts = _batch06_repository_artifacts()
-    assert manifest["status"] == "BATCH_06_FINAL_CONTRACT_REMEDIATION_READY_FOR_FRESH_REVIEW"
+    assert manifest["status"] == "BATCH_06_REPRESENTATION_REMEDIATION_READY_FOR_FRESH_REVIEW"
     assert manifest["final_checkpoint"]["outcomes"] == {
         "STRONG": 12, "MODERATE": 8, "WEAK": 9, "UNRESOLVED": 11,
     }
     assert manifest["final_checkpoint"]["resistant_occurrences"] == 565
     assert sum(artifact["occurrences"] for artifact in artifacts.values()) == 3098
     assert manifest["final_contract_remediation"]["semantic_payload_frozen"] is True
+    assert manifest["representation_remediation"]["semantic_payload_frozen"] is True
+    assert manifest["representation_remediation"]["no_genuine_hard_case_roots"] == ["Eyr", "Hdq"]
+
+
+def test_35_representation_hard_cases_are_explicitly_evidence_derived_or_honestly_absent():
+    from tools.campaign import BATCH06_POSITIONAL_HARD_CASE_ROOTS
+
+    repository_root, _manifest, artifacts = _batch06_repository_artifacts()
+    plan = json.loads((repository_root / "artifacts/semantic-campaign/"
+                       "BATCH_06_REPRESENTATION_REMEDIATION.json").read_text(encoding="utf-8"))
+    assert set(plan["positional_hard_case_roots"]) == BATCH06_POSITIONAL_HARD_CASE_ROOTS
+    for root in BATCH06_POSITIONAL_HARD_CASE_ROOTS:
+        artifact = artifacts[root]
+        control = plan["judgment_controls"][root]
+        representation = artifact["hard_case_representation"]
+        assert representation == control["hard_case_representation"]
+        if representation["status"] == "NO_GENUINE_HARD_CASE":
+            assert root in {"Eyr", "Hdq"}
+            assert artifact["hard_cases"] == []
+            assert control["hard_case_override"] == []
+            continue
+        assert artifact["hard_cases"] == control["hard_case_override"]
+        for case in artifact["hard_cases"]:
+            assert case["role"] in {"ADVERSARIAL_BOUNDARY", "STRUCTURAL_ATYPICALITY"}
+            assert case["role"] != "MATERIAL_CLASS_BOUNDARY"
+            assert case["evidence_basis"]["statement"] in json.dumps(
+                {
+                    "discovery": artifact["internal_discovery"],
+                    "adversarial": artifact["adversarial_verification"],
+                    "occurrences": artifact["occurrence_dispositions"],
+                }, ensure_ascii=False,
+            )
+
+
+def test_36_representation_controls_are_scope_bound_and_not_identifier_templates():
+    repository_root, _manifest, artifacts = _batch06_repository_artifacts()
+    plan = json.loads((repository_root / "artifacts/semantic-campaign/"
+                       "BATCH_06_REPRESENTATION_REMEDIATION.json").read_text(encoding="utf-8"))
+    normalized_rejections = set()
+    normalized_reopens = set()
+    for root, artifact in artifacts.items():
+        control = plan["judgment_controls"][root]
+        assert control["claim_scope"] == artifact["claim_scope"]
+        assert control["claim_scope_kind"] == artifact["claim_scope_kind"]
+        rejection = artifact["rejection_condition"]["challenging_finding"]
+        assert "cannot sustain it without an added semantic component" not in rejection
+        if artifact["claim_scope"] == "UNIVERSAL":
+            assert "universal" in rejection.casefold()
+        if artifact["claim_scope_kind"] == "UNRESOLVED_CLASS_ONLY":
+            assert any(word in rejection.casefold() for word in ("partition", "bridge"))
+            assert "universal nucleus" not in rejection.casefold()
+        normalized_rejections.add(rejection.replace(root, "{ROOT}"))
+        reopen = tuple(artifact["reopen_conditions"])
+        assert all("for the current claim:" not in condition for condition in reopen)
+        assert all("changes any listed supporting_evidence_refs" not in condition for condition in reopen)
+        normalized_reopens.add(tuple(condition.replace(root, "{ROOT}") for condition in reopen))
+    assert len(normalized_rejections) == 40
+    assert len(normalized_reopens) == 40
+
+
+def test_37_representation_replay_preserves_every_frozen_payload_field():
+    from tools.campaign import _batch06_representation_snapshot
+
+    repository_root, manifest, artifacts = _batch06_repository_artifacts()
+    plan = json.loads((repository_root / "artifacts/semantic-campaign/"
+                       "BATCH_06_REPRESENTATION_REMEDIATION.json").read_text(encoding="utf-8"))
+    for entry in manifest["roots"]:
+        relative_path = "artifacts/semantic-campaign/roots/" + entry["artifact_name"]
+        baseline = subprocess.run(
+            ["git", "show", f"{plan['baseline_sha']}:{relative_path}"],
+            cwd=repository_root,
+            check=True,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+        )
+        baseline_artifact = json.loads(baseline.stdout)
+        assert _batch06_representation_snapshot(artifacts[entry["root_buckwalter"]]) == \
+            _batch06_representation_snapshot(baseline_artifact)
+
+
+def test_38_representation_validator_rejects_positional_and_unsupported_hard_case_forms():
+    from tools.campaign import validate_batch06_root_judgment_contract
+
+    _repository_root, _manifest, artifacts = _batch06_repository_artifacts()
+    positional = json.loads(json.dumps(artifacts["rsl"]))
+    positional["hard_cases"][0].pop("evidence_basis")
+    errors = validate_batch06_root_judgment_contract(positional)
+    assert any("evidence-derived hard case lacks an evidence basis" in error for error in errors)
+
+    hidden_resistance = json.loads(json.dumps(artifacts["kvr"]))
+    hidden_resistance["hard_cases"] = []
+    hidden_resistance["hard_case_representation"] = {
+        "status": "NO_GENUINE_HARD_CASE",
+        "rationale": "invalid test fixture",
+    }
+    errors = validate_batch06_root_judgment_contract(hidden_resistance)
+    assert any("cannot hide persisted counterevidence" in error for error in errors)

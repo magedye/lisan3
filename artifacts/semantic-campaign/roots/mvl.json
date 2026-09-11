@@ -7548,16 +7548,16 @@
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "mvl: reject the current representative claim if a verified Quran-internal occurrence in comparison_and_parable_nouns, exemplary_adjectives, form_v_embodiment cannot sustain it without an added semantic component. Current hardest boundary: 19:17:8:2 lacks an overt comparison marker and therefore cannot by itself establish a universal root contribution.",
+  "challenging_finding": "mvl: reject the current qualified derivational partition if the Form-V embodiment at 19:17 can only be sustained by a root-wide comparison claim, or if a productive comparison/parable class fails its own configured-correspondence account.",
   "search_location": "Batch 06 mvl: all 169 occurrence_dispositions across material clusters comparison_and_parable_nouns, exemplary_adjectives, form_v_embodiment.",
   "verification_method": "Test 'Comparison/equivalence, parable, representation, exemplary, al-muthla, al-mathulat, and Form V embodiment remain partitioned; the 19:17 reconciliation is valid only with its local qualification.' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Do not turn a locally qualified Form V embodiment reading into a universal root bridge.",
-  "failure_consequence": "mvl: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "mvl: withdraw the local Form-V qualification or repartition the affected family; do not convert 19:17 into universal bridge evidence."
  },
  "falsification_status": "NOT_RUN",
  "reopen_conditions": [
-  "mvl: reopen if a verified Quran-internal bridge changes the boundary between comparison_and_parable_nouns, exemplary_adjectives, form_v_embodiment for the current claim: Comparison/equivalence, parable, representation, exemplary, al-muthla, al-mathulat, and Form V embodiment remain partitioned; the 19:17 reconciliation is valid only with its local qualification.",
-  "mvl: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "mvl: reopen when Quran-internal evidence makes the 19:17 embodiment explicitly comparable to a persisted comparison or parable class.",
+  "mvl: reopen when morphology changes the Form-V classification or the stored reconciliation lineage for 19:17:8:2."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [
@@ -7814,5 +7814,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL",
+  "rationale": "The locally qualified 19:17 Form-V record is the persisted adversarial boundary."
  }
 }

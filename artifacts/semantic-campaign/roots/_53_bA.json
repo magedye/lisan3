@@ -261,16 +261,16 @@
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "SbA: reject the current local claim if a verified Quran-internal occurrence in sabian_group_name cannot sustain it without an added semantic component. Current hardest boundary: A proper name can identify reliably while providing no compositional evidence for the root letters.",
+  "challenging_finding": "SbA: reject the current proper-name-only unresolved partition if Quran-internal evidence decomposes the Sabian group name into a traceable root contribution or proves the tokens are not the same named class.",
   "search_location": "Batch 06 SbA: all 3 occurrence_dispositions across material clusters sabian_group_name.",
   "verification_method": "Test 'UNRESOLVED: the packet contains only the proper/group name of the Sabians and provides no internal derivational evidence for a root contribution' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "QAC marks all tokens as proper names. Coordination with other groups supplies classification, not an abstract root core.",
-  "failure_consequence": "SbA: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "SbA: start a new root analysis from the compositional evidence; do not import an external lexical derivation."
  },
  "falsification_status": "NOT_REQUIRED",
  "reopen_conditions": [
-  "SbA: reopen if a verified Quran-internal bridge changes the boundary between sabian_group_name for the current claim: UNRESOLVED: the packet contains only the proper/group name of the Sabians and provides no internal derivational evidence for a root contribution",
-  "SbA: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "SbA: reopen when a canonical Quran record beyond 2:62, 5:69, and 22:17 supplies a non-proper-name SbA form.",
+  "SbA: reopen when QAC proper-name classification is corrected for a resistant group-name occurrence."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [],
@@ -355,5 +355,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL",
+  "rationale": "All three records are resistant proper-name-only occurrences with no compositional evidence."
  }
 }

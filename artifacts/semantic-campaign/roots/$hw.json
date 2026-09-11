@@ -665,27 +665,26 @@
  },
  "hard_cases": [
   {
-   "word_ref": "16:57:7:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "$hw: 16:57:7:1 represents material class desiring_verbs (8 persisted occurrences) that must independently sustain the current universal claim: an appetite that draws the self toward a desired object or experience"
-  },
-  {
    "word_ref": "19:59:8:2",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "$hw: 19:59:8:2 represents material class appetite_nouns (5 persisted occurrences) that must independently sustain the current universal claim: an appetite that draws the self toward a desired object or experience"
+   "role": "STRUCTURAL_ATYPICALITY",
+   "reason": "$hw: 19:59:8:2 places appetites in a condemned sequence, testing that moral polarity belongs to context rather than to appetite itself.",
+   "evidence_basis": {
+    "kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE",
+    "statement": "Paradisal uses are positive while following appetites can be condemned; the polarity shift confirms that the root supplies appetite, not moral judgment."
+   }
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "$hw: reject the current universal claim if a verified Quran-internal occurrence in appetite_nouns, desiring_verbs cannot sustain it without an added semantic component. Current hardest boundary: Paradisal uses are positive while following appetites can be condemned; the polarity shift confirms that the root supplies appetite, not moral judgment.",
+  "challenging_finding": "$hw: reject the current universal appetite account if a desire verb or appetite noun lacks attraction toward an object or experience, or if moral praise/blame must be encoded by the root rather than by its context.",
   "search_location": "Batch 06 $hw: all 13 occurrence_dispositions across material clusters appetite_nouns, desiring_verbs.",
   "verification_method": "Test 'an appetite that draws the self toward a desired object or experience' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Form VIII profiles the subject's active desire; noun plurality and objects distribute particular appetites. Moral value comes from object and context, not the root.",
-  "failure_consequence": "$hw: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "$hw: separate the failing class and retain moral evaluation at the contextual layer rather than adding it to the root nucleus."
  },
  "falsification_status": "PASSED",
  "reopen_conditions": [
-  "$hw: reopen if a verified Quran-internal bridge changes the boundary between appetite_nouns, desiring_verbs for the current claim: an appetite that draws the self toward a desired object or experience",
-  "$hw: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "$hw: reopen when the adverse appetite at 19:59 or a paradisal appetite use shows a root-level moral value independent of context.",
+  "$hw: reopen when a form or object-assignment correction changes the distinction between desiring verbs and appetite nouns."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [
@@ -781,5 +780,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "The condemned following of appetites at 19:59 tests moral polarity against the appetite relation."
  }
 }

@@ -699,37 +699,26 @@
  },
  "hard_cases": [
   {
-   "word_ref": "10:27:14:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "ESm: 10:27:14:1 represents material class protecting_hold (4 persisted occurrences) that must independently sustain the current universal claim: a restraining hold that prevents separation, exposure, or harm; derivations distribute protecting, holding fast, and seeking protection"
-  },
-  {
-   "word_ref": "11:43:5:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "ESm: 11:43:5:1 represents material class protect_verbs (3 persisted occurrences) that must independently sustain the current universal claim: a restraining hold that prevents separation, exposure, or harm; derivations distribute protecting, holding fast, and seeking protection"
-  },
-  {
-   "word_ref": "12:32:10:2",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "ESm: 12:32:10:2 represents material class seek_protection (1 persisted occurrences) that must independently sustain the current universal claim: a restraining hold that prevents separation, exposure, or harm; derivations distribute protecting, holding fast, and seeking protection"
-  },
-  {
-   "word_ref": "22:78:37:2",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "ESm: 22:78:37:2 represents material class hold_fast (5 persisted occurrences) that must independently sustain the current universal claim: a restraining hold that prevents separation, exposure, or harm; derivations distribute protecting, holding fast, and seeking protection"
+   "word_ref": "3:103:1:2",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "ESm: 3:103:1:2 commands holding fast to a bond, testing whether active adherence shares the restraining relation of protection.",
+   "evidence_basis": {
+    "kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE",
+    "statement": "Holding fast to God/rope is not protection by a separate agent, but still maintains a bond that prevents separation."
+   }
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "ESm: reject the current universal claim if a verified Quran-internal occurrence in hold_fast, protect_verbs, protecting_hold, seek_protection cannot sustain it without an added semantic component. Current hardest boundary: Holding fast to God/rope is not protection by a separate agent, but still maintains a bond that prevents separation.",
+  "challenging_finding": "ESm: reject the current universal restraining-hold account if a protection, holding-fast, or seeking-protection form prevents neither separation, exposure, nor harm and cannot be connected by a maintained bond.",
   "search_location": "Batch 06 ESm: all 13 occurrence_dispositions across material clusters hold_fast, protect_verbs, protecting_hold, seek_protection.",
   "verification_method": "Test 'a restraining hold that prevents separation, exposure, or harm; derivations distribute protecting, holding fast, and seeking protection' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Form VIII supplies taking/maintaining hold, Form X seeking that hold, base form protecting, and nouns protector or binding bond. Threat and protected participant are contextual.",
-  "failure_consequence": "ESm: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "ESm: split the incompatible derivation rather than reducing holding fast to a passive protector or overextending protection."
  },
  "falsification_status": "PASSED",
  "reopen_conditions": [
-  "ESm: reopen if a verified Quran-internal bridge changes the boundary between hold_fast, protect_verbs, protecting_hold, seek_protection for the current claim: a restraining hold that prevents separation, exposure, or harm; derivations distribute protecting, holding fast, and seeking protection",
-  "ESm: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "ESm: reopen when the 3:103 holding-fast relation is shown to lack any bond that prevents separation.",
+  "ESm: reopen when canonical form analysis changes the allocation among protection, active adherence, and seeking protection."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [
@@ -827,5 +816,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "Holding fast to the divine rope tests bond-maintenance against protection by a separate agent."
  }
 }

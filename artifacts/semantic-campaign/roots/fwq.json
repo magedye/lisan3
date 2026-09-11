@@ -2003,16 +2003,16 @@
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "fwq: reject the current representative claim if a verified Quran-internal occurrence in above_relation, fawaq_interval, recovery cannot sustain it without an added semantic component. Current hardest boundary: 7:143 afaqqa means Moses recovered; 38:15 fawaq names an interval/respite. Neither verse states upward position.",
+  "challenging_finding": "fwq: reject the qualified upper-side relation if a positional/rank occurrence lacks an upper reference point, or if the recovery and interval seams demonstrate that same relation internally.",
   "search_location": "Batch 06 fwq: all 43 occurrence_dispositions across material clusters above_relation, fawaq_interval, recovery.",
   "verification_method": "Test 'position or rank on the upper side of a reference point' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Noun/location tagging and complements establish reference points for above-ness. The two lexical seams are not converted into vertical metaphors without internal evidence.",
-  "failure_consequence": "fwq: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "fwq: retain only the supported positional class or reopen the resistant seams rather than deriving a universal spatial nucleus."
  },
  "falsification_status": "NOT_RUN",
  "reopen_conditions": [
-  "fwq: reopen if a verified Quran-internal bridge changes the boundary between above_relation, fawaq_interval, recovery for the current claim: position or rank on the upper side of a reference point",
-  "fwq: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "fwq: reopen when the recovery at 7:143 or interval at 38:15 is linked by Quran-internal evidence to an upper-side relation.",
+  "fwq: reopen when a canonical reading of the fawaq or recovery forms changes their lexical-class assignment."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [
@@ -2143,5 +2143,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL",
+  "rationale": "Recovery and interval records remain explicit resistance to the upper-side relation."
  }
 }

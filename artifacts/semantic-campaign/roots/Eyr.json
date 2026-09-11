@@ -233,24 +233,18 @@
   "reconciliation": "No historical reconciliation record is present.",
   "unresolved_resistance": "Eyr: No final resistant occurrence is currently persisted."
  },
- "hard_cases": [
-  {
-   "word_ref": "12:70:13:2",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "Eyr: 12:70:13:2 represents material class caravan (3 persisted occurrences) that must independently sustain the current universal claim: a traveling caravan or convoy treated as one moving group"
-  }
- ],
+ "hard_cases": [],
  "rejection_condition": {
-  "challenging_finding": "Eyr: reject the current universal claim if a verified Quran-internal occurrence in caravan cannot sustain it without an added semantic component. Current hardest boundary: All evidence comes from one narrative and one noun, so a deeper root mechanism cannot be independently tested.",
+  "challenging_finding": "Eyr: reject the current universal-but-lexically-limited caravan/convoy referent if a verified occurrence in the three-record packet is neither a traveling collective nor compatible with the moving-group account.",
   "search_location": "Batch 06 Eyr: all 3 occurrence_dispositions across material clusters caravan.",
   "verification_method": "Test 'a traveling caravan or convoy treated as one moving group' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Definiteness and clauses supply the particular convoy and its actions; the root evidence is limited to one underived noun form.",
-  "failure_consequence": "Eyr: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "Eyr: reduce the referential claim to the compatible record and retain the one-narrative, one-form ceiling on deeper root abstraction."
  },
  "falsification_status": "NOT_RUN",
  "reopen_conditions": [
-  "Eyr: reopen if a verified Quran-internal bridge changes the boundary between caravan for the current claim: a traveling caravan or convoy treated as one moving group",
-  "Eyr: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "Eyr: reopen when canonical corpus evidence adds or recovers a distinct Quran-internal Eyr form outside the three Yusuf caravan records.",
+  "Eyr: reopen when the collective reference in 12:70, 12:82, or 12:94 is structurally corrected so it no longer supports a moving convoy."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [
@@ -335,5 +329,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "NO_GENUINE_HARD_CASE",
+  "rationale": "All three records are the same underived caravan family in one Yusuf narrative; no individual occurrence has a distinct persisted adversarial or boundary role."
  }
 }

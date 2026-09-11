@@ -1,7 +1,7 @@
 {
   "campaign_id": "lisan-root-calibration",
-  "status": "BATCH_06_FINAL_CONTRACT_REMEDIATION_COMPLETE",
-  "verdict": "BATCH_06_FINAL_CONTRACT_REMEDIATION_READY_FOR_FRESH_REVIEW",
+  "status": "BATCH_06_REPRESENTATION_REMEDIATION_COMPLETE",
+  "verdict": "BATCH_06_REPRESENTATION_REMEDIATION_READY_FOR_FRESH_REVIEW",
   "produced_at": "2026-09-11",
   "reads_handoff": "artifacts/semantic-campaign/PHASE_1_HANDOFF.json",
   "supersedes_prior_status": "BLOCKED_PENDING_QAC_MORPHOLOGY_ADMISSION",
@@ -45,7 +45,7 @@
   },
   "batch06_current_checkpoint": {
     "manifest": "artifacts/semantic-campaign/BATCH_06_MANIFEST.json",
-    "report": "docs/LISAN3_BATCH_06_FINAL_CONTRACT_REMEDIATION.md",
+    "report": "docs/LISAN3_BATCH_06_REPRESENTATION_REMEDIATION.md",
     "branch": "semantic-campaign-batch06",
     "starting_main_sha": "6f895bf0754190a423512b7478ced5bf7bd4a266",
     "wave_1": {
@@ -69,7 +69,7 @@
       "reconciliation_lineage_records": 0
     },
     "combined": {
-      "status": "FINAL_CONTRACT_REMEDIATION_APPLIED",
+      "status": "REPRESENTATION_REMEDIATION_APPLIED",
       "roots": 40,
       "occurrences": 3098,
       "outcomes": {"STRONG": 12, "MODERATE": 8, "WEAK": 9, "UNRESOLVED": 11},
@@ -100,7 +100,7 @@
     "independently_reviewed": false,
     "canonicalized": false
   },
-  "resume_instruction": "Stop. Batch 06 final contract remediation requires a fresh read-only independent review against the exact corrective commit. Do not select Batch 07, canonicalize, merge, push, or release under this authority.",
+  "resume_instruction": "Stop. Batch 06 representation remediation requires a fresh read-only independent review against the exact corrective commit. Do not select Batch 07, canonicalize, merge, push, or release under this authority.",
   "batch06_corrective_revision": {
     "revision_id": "BATCH_06_CORRECTIVE_REVISION_2026_09_11",
     "targets": [
@@ -122,6 +122,13 @@
   "batch06_final_contract_remediation": {
     "revision_id": "BATCH_06_FINAL_CONTRACT_REMEDIATION_2026_09_11",
     "baseline_sha": "8ef76292978c61c9283648d5f578d928e39e7320",
+    "canonical_runtime_contract": "LISAN3_SEMANTIC_RUNTIME_V3_2026_09_06",
+    "semantic_payload_frozen": true,
+    "fresh_review_required": true
+  },
+  "batch06_representation_remediation": {
+    "revision_id": "BATCH_06_REPRESENTATION_REMEDIATION_2026_09_11",
+    "baseline_sha": "5b131676837c674e92723ccc6df02e1fb2fdc676",
     "canonical_runtime_contract": "LISAN3_SEMANTIC_RUNTIME_V3_2026_09_06",
     "semantic_payload_frozen": true,
     "fresh_review_required": true

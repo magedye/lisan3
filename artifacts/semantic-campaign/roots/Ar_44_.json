@@ -21761,22 +21761,26 @@
  },
  "hard_cases": [
   {
-   "word_ref": "10:101:6:3",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "ArD: 10:101:6:3 represents material class earth_ground_domain (461 persisted occurrences) that must independently sustain the current universal claim: the terrestrial ground or earth-domain, the created lower spatial field on which creatures dwell and events occur"
+   "word_ref": "7:137:7:2",
+   "role": "STRUCTURAL_ATYPICALITY",
+   "reason": "ArD: 7:137:7:2 is the persisted territorial/inheritance realization that pressure-tests the ground-domain claim beyond a whole-earth referent.",
+   "evidence_basis": {
+    "kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE",
+    "statement": "Territorial uses such as inheritance of a specific land narrow the referent, but retain the same ground-domain contribution."
+   }
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "ArD: reject the current universal claim if a verified Quran-internal occurrence in earth_ground_domain cannot sustain it without an added semantic component. Current hardest boundary: Territorial uses such as inheritance of a specific land narrow the referent, but retain the same ground-domain contribution.",
+  "challenging_finding": "ArD: reject the current universal ground-domain claim if a verified earth occurrence cannot denote terrestrial ground, land, or the created lower spatial field even after its contextual scale is separated from the root contribution.",
   "search_location": "Batch 06 ArD: all 461 occurrence_dispositions across material clusters earth_ground_domain.",
   "verification_method": "Test 'the terrestrial ground or earth-domain, the created lower spatial field on which creatures dwell and events occur' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Prepositions and participants locate events in or upon the earth; they do not create the terrestrial-ground residue. Singular reference and context account for land, territory, and the whole earth without multiplying roots.",
-  "failure_consequence": "ArD: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "ArD: restrict the claim to the compatible referential range and retain the lexical-narrowness ceiling rather than posit an untested abstraction."
  },
  "falsification_status": "PASSED",
  "reopen_conditions": [
-  "ArD: reopen if a verified Quran-internal bridge changes the boundary between earth_ground_domain for the current claim: the terrestrial ground or earth-domain, the created lower spatial field on which creatures dwell and events occur",
-  "ArD: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "ArD: reopen when a Quran-internal territorial occurrence such as 7:137 is shown to require a contribution other than terrestrial ground-domain.",
+  "ArD: reopen when a canonical source correction changes the noun-only family or supplies a different root assignment for a scale-defining occurrence."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [
@@ -22319,5 +22323,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "The inherited territorial earth at 7:137 is the recorded scale-narrowing boundary."
  }
 }

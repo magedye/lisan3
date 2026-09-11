@@ -233,24 +233,18 @@
   "reconciliation": "No historical reconciliation record is present.",
   "unresolved_resistance": "Hdq: No final resistant occurrence is currently persisted."
  },
- "hard_cases": [
-  {
-   "word_ref": "27:60:12:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "Hdq: 27:60:12:1 represents material class garden_plural (3 persisted occurrences) that must independently sustain the current universal claim: a cultivated garden-space characterized in the Quran by planted growth and abundance"
-  }
- ],
+ "hard_cases": [],
  "rejection_condition": {
-  "challenging_finding": "Hdq: reject the current universal claim if a verified Quran-internal occurrence in garden_plural cannot sustain it without an added semantic component. Current hardest boundary: Because every token is the same plural noun, universal presence may reflect lexical repetition rather than a tested derivational core.",
+  "challenging_finding": "Hdq: reject the current universal-but-lexically-limited garden-space referent if one of the three plural occurrences is not a cultivated garden with the stated growth/abundance relation, or if enclosure becomes an internally required root feature.",
   "search_location": "Batch 06 Hdq: all 3 occurrence_dispositions across material clusters garden_plural.",
   "verification_method": "Test 'a cultivated garden-space characterized in the Quran by planted growth and abundance' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Modifiers supply delight, density, or produce; the root contributes the garden-space referent. No unobserved enclosure feature is imported.",
-  "failure_consequence": "Hdq: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "Hdq: retain only the compatible referential record and keep enclosure and deeper distinctiveness unasserted."
  },
  "falsification_status": "NOT_RUN",
  "reopen_conditions": [
-  "Hdq: reopen if a verified Quran-internal bridge changes the boundary between garden_plural for the current claim: a cultivated garden-space characterized in the Quran by planted growth and abundance",
-  "Hdq: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "Hdq: reopen when canonical Quran evidence adds a non-plural or non-garden Hdq form that tests the present lexical repetition ceiling.",
+  "Hdq: reopen when 27:60, 78:32, or 80:30 is structurally corrected so its garden referent or modifier relation changes."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [
@@ -335,5 +329,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "NO_GENUINE_HARD_CASE",
+  "rationale": "Every record is the same plural garden noun; the stored limitation is a corpus-wide derivational ceiling, not an individual adversarial case."
  }
 }

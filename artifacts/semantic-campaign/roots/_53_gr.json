@@ -724,16 +724,16 @@
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "Sgr: reject the current local claim if a verified Quran-internal occurrence in lowered_standing, small_magnitude cannot sustain it without an added semantic component. Current hardest boundary: Abasement contexts do not themselves expose a magnitude or age relation.",
+  "challenging_finding": "Sgr: reject the current unresolved magnitude-versus-abasement partition if a Quran-internal occurrence establishes a shared scale contribution that both classes require rather than a merely economical abstraction.",
   "search_location": "Batch 06 Sgr: all 13 occurrence_dispositions across material clusters lowered_standing, small_magnitude.",
   "verification_method": "Test 'the persisted root judgment' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Do not treat physical magnitude and abasement as instances of a generic scale without an internal bridge.",
-  "failure_consequence": "Sgr: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "Sgr: reopen the root from the decisive bridge and do not promote generic lowness while its distinctiveness remains untested."
  },
  "falsification_status": "NOT_REQUIRED",
  "reopen_conditions": [
-  "Sgr: reopen if a verified Quran-internal bridge changes the boundary between lowered_standing, small_magnitude for the current claim: the persisted root judgment",
-  "Sgr: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "Sgr: reopen when 10:61:34:1 or 12:32:19:2 provides a structural bridge between smallness and lowered standing.",
+  "Sgr: reopen when a canonical classification correction changes the semantic family of either adversarial occurrence."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [
@@ -835,5 +835,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL",
+  "rationale": "The stored magnitude/age and abasement failures prevent a generic scalar nucleus."
  }
 }

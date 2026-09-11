@@ -684,31 +684,25 @@
  "hard_cases": [
   {
    "word_ref": "11:12:7:2",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "Dyq: 11:12:7:2 represents material class narrow_state_or_place (5 persisted occurrences) that must independently sustain the current universal claim: constriction: reduced room or capacity, physically, circumstantially, or inwardly"
-  },
-  {
-   "word_ref": "11:77:7:2",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "Dyq: 11:77:7:2 represents material class constriction_states (7 persisted occurrences) that must independently sustain the current universal claim: constriction: reduced room or capacity, physically, circumstantially, or inwardly"
-  },
-  {
-   "word_ref": "65:6:9:2",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "Dyq: 65:6:9:2 represents material class caused_constriction (1 persisted occurrences) that must independently sustain the current universal claim: constriction: reduced room or capacity, physically, circumstantially, or inwardly"
+   "role": "STRUCTURAL_ATYPICALITY",
+   "reason": "Dyq: 11:12:7:2 predicates constriction of the breast, testing reduced inner capacity without reducing the root to spatial narrowness.",
+   "evidence_basis": {
+    "kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE",
+    "statement": "Emotional constriction of the breast is non-spatial, but the corpus repeatedly frames distress through the explicit container term sadr, preserving reduced inner room."
+   }
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "Dyq: reject the current universal claim if a verified Quran-internal occurrence in caused_constriction, constriction_states, narrow_state_or_place cannot sustain it without an added semantic component. Current hardest boundary: Emotional constriction of the breast is non-spatial, but the corpus repeatedly frames distress through the explicit container term sadr, preserving reduced inner room.",
+  "challenging_finding": "Dyq: reject the current universal reduced-room/capacity account if a physical, circumstantial, or inward occurrence lacks a constrained container, capacity, or available room after participant roles are separated.",
   "search_location": "Batch 06 Dyq: all 13 occurrence_dispositions across material clusters caused_constriction, constriction_states, narrow_state_or_place.",
   "verification_method": "Test 'constriction: reduced room or capacity, physically, circumstantially, or inwardly' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Participants determine whether the constrained container is place, provision, or breast; Form II adds causation. The root supplies reduced available room/capacity.",
-  "failure_consequence": "Dyq: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "Dyq: rescope the account to the surviving environments and do not replace constriction with sadness or distress alone."
  },
  "falsification_status": "PASSED",
  "reopen_conditions": [
-  "Dyq: reopen if a verified Quran-internal bridge changes the boundary between caused_constriction, constriction_states, narrow_state_or_place for the current claim: constriction: reduced room or capacity, physically, circumstantially, or inwardly",
-  "Dyq: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "Dyq: reopen when the breast construction at 11:12 is shown to express distress without any constrained inner capacity.",
+  "Dyq: reopen when source morphology changes the causative versus state distinction in a decisive constriction occurrence."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [
@@ -805,5 +799,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "The constricted breast at 11:12 tests inward capacity rather than physical room."
  }
 }

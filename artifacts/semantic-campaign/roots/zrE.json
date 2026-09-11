@@ -708,27 +708,26 @@
  },
  "hard_cases": [
   {
-   "word_ref": "12:47:2:1",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "zrE: 12:47:2:1 represents material class sowing_verbs (2 persisted occurrences) that must independently sustain the current universal claim: placing and cultivating seed or growth so that planted produce emerges"
-  },
-  {
-   "word_ref": "13:4:8:2",
-   "role": "MATERIAL_CLASS_BOUNDARY",
-   "reason": "zrE: 13:4:8:2 represents material class crops_and_cultivators (12 persisted occurrences) that must independently sustain the current universal claim: placing and cultivating seed or growth so that planted produce emerges"
+   "word_ref": "48:29:32:2",
+   "role": "STRUCTURAL_ATYPICALITY",
+   "reason": "zrE: 48:29:32:2 occurs in an explicit likeness while retaining the persisted crop-emergence image, testing the nucleus under figurative discourse.",
+   "evidence_basis": {
+    "kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE",
+    "statement": "48:29 applies crop emergence as a likeness for believers, but the agricultural image remains explicit rather than lexicalized away."
+   }
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "zrE: reject the current universal claim if a verified Quran-internal occurrence in crops_and_cultivators, sowing_verbs cannot sustain it without an added semantic component. Current hardest boundary: 48:29 applies crop emergence as a likeness for believers, but the agricultural image remains explicit rather than lexicalized away.",
+  "challenging_finding": "zrE: reject the current universal planting/cultivation account if a crop, cultivator, or sowing occurrence lacks placement or cultivation ordered toward emerging growth, including an explicit likeness that loses the agricultural image.",
   "search_location": "Batch 06 zrE: all 14 occurrence_dispositions across material clusters crops_and_cultivators, sowing_verbs.",
   "verification_method": "Test 'placing and cultivating seed or growth so that planted produce emerges' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Agents and possessors identify cultivator; noun patterns identify crop or sowing; comparison contexts supply the analogized community.",
-  "failure_consequence": "zrE: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
+  "failure_consequence": "zrE: narrow the result to the compatible agricultural family and do not treat figurative discourse as an unexamined lexical exception."
  },
  "falsification_status": "PASSED",
  "reopen_conditions": [
-  "zrE: reopen if a verified Quran-internal bridge changes the boundary between crops_and_cultivators, sowing_verbs for the current claim: placing and cultivating seed or growth so that planted produce emerges",
-  "zrE: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
+  "zrE: reopen when the 48:29 crop likeness is shown by Quran-internal structure to discard planting and emergence rather than use them explicitly.",
+  "zrE: reopen when source or morphology changes the seed/crop/cultivator allocation at an adversarial boundary occurrence."
  ],
  "purity_status": "NOT_EVALUATED",
  "supporting_evidence_refs": [
@@ -825,5 +824,9 @@
    "evidence_refs": [],
    "hard_blocker": false
   }
+ },
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "The explicit crop likeness at 48:29 tests figurative context without lexicalizing away agriculture."
  }
 }
