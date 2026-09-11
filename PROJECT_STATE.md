@@ -1092,3 +1092,52 @@ remediation commit. Do not merge, push, start Batch 07, or canonicalize.
 Stop. Run a fresh, independent, read-only review against the exact committed
 representation-remediation candidate. Do not merge, push, start Batch 07, or
 canonicalize.
+
+## Batch 06 Merged To Local Main (2026-09-11)
+
+- The independently confirmed Batch 06 checkpoint
+  `fff83c57fa301febded7eb19c9b784719eb78c0a` was fast-forwarded into local
+  `main` under explicit owner authorization (verdicts:
+  `BATCH_06_REPRESENTATION_REMEDIATION_INDEPENDENTLY_CONFIRMED`,
+  `BATCH_06_SEMANTIC_CHECKPOINT_CONFIRMED`,
+  `BATCH_06_SEMANTIC_CHECKPOINT_MERGE_READY`, zero material blockers).
+- Merge shape: pure `--ff-only` (no squash, rebase, or merge commit). Post-merge
+  `main` HEAD = `fff83c5`, tracked tree clean, all five Batch 05 corrective
+  artifacts byte-identical, Batch 06 artifacts/reports present. Not pushed.
+- Deferred non-blocking Batch 06 representation debt (do NOT fix inside Batch 07):
+  stale top-level ledger `adversarial_verdict` on nine corrective roots;
+  missing superseded banner on `docs/LISAN3_BATCH_06_SEMANTIC_CAMPAIGN_REPORT.md`;
+  minor scope-label taxonomy observations; latent validator-hardening gaps.
+
+## Batch 07 Campaign Initialization / Frozen Population (2026-09-11)
+
+- Owner authorized the full Batch 07 Quran-internal semantic campaign: 120
+  previously unresearched roots in 6 waves x 20. Branch
+  `semantic-campaign-batch07` created from verified `main`
+  `fff83c57fa301febded7eb19c9b784719eb78c0a`.
+- Deterministic selection `tools.campaign select --n 120` over the live root
+  universe (1642 roots; 128 already researched -> 1514 remaining) produced
+  exactly 120 unique roots, reproducible across runs, with zero overlap against
+  the researched ledger and zero overlap with the five Batch 05 corrective roots.
+- Frozen population manifest: `artifacts/semantic-campaign/BATCH_07_MANIFEST.json`
+  (status `BATCH_07_POPULATION_FROZEN`). 8,168 total confirmed occurrences.
+  Tier mix xl 10 / l 20 / m 30 / s 30 / xs 30. Round-robin wave assignment by
+  frozen selection_index: 20 roots/wave; occurrence load 1470 / 1435 / 1418 /
+  1396 / 1236 / 1213.
+- Artifact-identity scan over the full universe: 1642/1642 case-insensitively
+  unique, 0 collisions; the 120 Batch 07 artifact names have 0 casefold
+  duplicates and 0 clash with existing root files. The `swm/Swm` fail-closed
+  remediation is preserved.
+- Active semantic contract: `LISAN3_SEMANTIC_RUNTIME_V3_2026_09_06`
+  (`skills/lisan-semantic-extraction/SKILL.md`, sha256
+  `01784170cac4e715c1477cb6a04a2c34b21c4bdb91705aa1eb6b2a896efcedbd`).
+- Batch 07 research is NON-canonical. No merge, push, Batch 08, canonicalization,
+  or publication is authorized. Maximum end state is
+  `BATCH_07_READY_FOR_FRESH_INDEPENDENT_SEMANTIC_REVIEW`.
+
+## Current Exact Next Action
+
+Execute Batch 07 Wave 01 (frozen 20-root / 1,470-occurrence set) with genuine
+Quran-internal occurrence-level research, canonical-contract serialization, and a
+20-root V2 checkpoint. Continue automatically through Waves 02-06. Do not merge,
+push, canonicalize, or start Batch 08.
