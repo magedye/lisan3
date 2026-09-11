@@ -10,22 +10,25 @@
  "occurrences": 168,
  "frozen_candidate_root_contribution": "turning or reorientation between faces, directions, or states; the heart is profiled as the inner center susceptible to such orientation",
  "internal_discovery": {
-  "candidate_root_contribution": "turning or reorientation between faces, directions, or states; the heart is profiled as the inner center susceptible to such orientation",
-  "plain_explanation": "The 168 occurrences span hearts, physical turning, return, reversal, fluctuation, and destination. Explicit heart-turning at 24:37 and repeated descriptions of hearts being sealed, deviated, or stabilized give an internal bridge between the organ/inner center and reorientation.",
-  "layer_separation_note": "Forms II, V, and VII distribute caused turning, repeated fluctuation, and return; constructions specify direction or destination. The noun qalb contributes the inner orienting center rather than every contextual emotion or belief.",
+  "candidate_root_contribution": null,
+  "plain_explanation": "Heart occurrences and turning occurrences remain separate Quranic usage classes; no orienting-center root core is asserted.",
+  "layer_separation_note": "Do not force heart vocabulary and turning vocabulary into one orienting-root explanation.",
   "presence": {
    "occurrences_total": 168,
    "occurrences_checked": 168,
    "occurrences_consistent": 168,
    "inconsistent_refs": []
   },
-  "strongest_counterexample": "The 132 heart nouns often lack overt motion, so the orienting/turnable-center reading depends on the internally explicit bridge in 24:37 and related heart-state changes.",
+  "strongest_counterexample": "Heart nouns often lack overt turning, while derived turning occurrences do not themselves establish an inner-heart core.",
   "competing_hypothesis": "Heart is an unrelated lexicalized homonym; this is possible but less economical given the corpus's explicit turning of hearts and eyes.",
   "distinctiveness_note": "Distinct from simple return, which gives an endpoint, and from change generally; qlb profiles re-facing or inversion of orientation/state.",
-  "unresolved_cases": [],
-  "result": "PREFERRED",
-  "result_strength": "MODERATE",
-  "rationale": "All derivational classes retain reorientation, with an internal but metaphorical bridge to the heart nouns.",
+  "unresolved_cases": [
+   "10:74:21:1",
+   "12:62:10:1"
+  ],
+  "result": "UNRESOLVED",
+  "result_strength": "UNRESOLVED",
+  "rationale": "The prior orienting-center generalization depended on a forced class bridge.",
   "occurrence_classification": {
    "clusters": [
     {
@@ -82,7 +85,8 @@
     }
    ],
    "reconciliation": []
-  }
+  },
+  "strongest_competitor": "Maintain the heart and turning classes separately until a Quran-internal bridge distinguishes a common root contribution."
  },
  "adversarial_verification": {
   "root_buckwalter": "qlb",
@@ -7859,14 +7863,78 @@
  ],
  "resistant_deep_analysis": [],
  "authority_level": "RESEARCH_JUDGMENT",
- "research_state": "PREFERRED",
- "result_strength": "MODERATE",
+ "research_state": "UNRESOLVED",
+ "result_strength": "UNRESOLVED",
  "research_completeness": "COMPLETE",
- "independent_verification": "PASSED",
+ "independent_verification": "NOT_REQUIRED",
  "canonical_authorization": "PENDING",
- "universal_presence_holds": true,
+ "universal_presence_holds": false,
  "unreconciled_occurrences": [],
  "unreconciled_count": 0,
  "resistant_occurrences": [],
- "structural_uncertainty_occurrences": []
+ "structural_uncertainty_occurrences": [],
+ "corrective_lineage": {
+  "revision_id": "BATCH_06_CORRECTIVE_REVISION_2026_09_11",
+  "pre_corrective_root_judgment": {
+   "candidate_root_contribution": "turning or reorientation between faces, directions, or states; the heart is profiled as the inner center susceptible to such orientation",
+   "plain_explanation": "The 168 occurrences span hearts, physical turning, return, reversal, fluctuation, and destination. Explicit heart-turning at 24:37 and repeated descriptions of hearts being sealed, deviated, or stabilized give an internal bridge between the organ/inner center and reorientation.",
+   "result": "PREFERRED",
+   "result_strength": "MODERATE",
+   "artifact_research_state": "PREFERRED",
+   "artifact_result_strength": "MODERATE",
+   "universal_presence_holds": true
+  }
+ },
+ "candidate_root_contribution": null,
+ "corrective_judgment": {
+  "revision_id": "BATCH_06_CORRECTIVE_REVISION_2026_09_11",
+  "final_classification": "HEART_AND_TURNING_CLASSES_UNRESOLVED_AT_ROOT_LEVEL",
+  "source_policy": "QURAN_INTERNAL_ONLY",
+  "historical_independent_review_preserved": true
+ },
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "LOCAL",
+ "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
+ "layer_attribution": {
+  "occurrence_evidence": "Direct Batch 06 occurrence refs are listed in root_evidence_refs and resolve in occurrence_dispositions.",
+  "derivation": "Material derivational/form separation is preserved in the root's persisted coverage clusters and corrective partition where present.",
+  "lexical_class": "Corrective claim kind: UNRESOLVED_CLASS_ONLY",
+  "contextual_relation": "Do not force heart vocabulary and turning vocabulary into one orienting-root explanation.",
+  "reconciliation": "Historical reconciliation lineage is retained; any current corrective outcome is recorded without deleting the earlier attempt.",
+  "unresolved_resistance": "The prior orienting-center generalization depended on a forced class bridge."
+ },
+ "root_evidence_refs": [
+  "10:74:21:1",
+  "12:62:10:1",
+  "29:21:8:1"
+ ],
+ "root_counterevidence_refs": [
+  "10:74:21:1",
+  "12:62:10:1"
+ ],
+ "hard_cases": [
+  {
+   "word_ref": "10:74:21:1",
+   "role": "HEART_CLASS",
+   "reason": "Heart-class anchor."
+  },
+  {
+   "word_ref": "12:62:10:1",
+   "role": "TURNING_CLASS",
+   "reason": "Derived-turning class anchor."
+  }
+ ],
+ "rejection_condition": {
+  "challenging_finding": "Heart nouns often lack overt turning, while derived turning occurrences do not themselves establish an inner-heart core.",
+  "search_location": "The complete persisted Batch 06 word_ref set for qlb",
+  "verification_method": "Test the proposed bridge only against the listed Quran-internal occurrence evidence and counterevidence.",
+  "confounder_control": "Do not force heart vocabulary and turning vocabulary into one orienting-root explanation.",
+  "failure_consequence": "Retain or narrow the result to the named class; do not restore a universal root generalization."
+ },
+ "falsification_status": "NOT_REQUIRED",
+ "reopen_conditions": [
+  "A verified Quran-internal occurrence-level bridge changes a listed class boundary.",
+  "A correction to a referenced occurrence, source binding, or materialized classification changes this judgment's evidence set."
+ ],
+ "purity_status": "NOT_EVALUATED"
 }

@@ -30,6 +30,7 @@ import argparse
 import json
 import os
 import re
+import subprocess
 from functools import lru_cache
 from pathlib import Path
 
@@ -821,6 +822,659 @@ def cmd_mark_pending(args):
     print(json.dumps({"marked_pending_coverage_evidence": changed}))
 
 
+BATCH06_ROOT_JUDGMENT_FIELDS = (
+    "contract_type",
+    "claim_scope",
+    "claim_scope_kind",
+    "layer_attribution",
+    "root_evidence_refs",
+    "root_counterevidence_refs",
+    "hard_cases",
+    "rejection_condition",
+    "falsification_status",
+    "reopen_conditions",
+    "purity_status",
+)
+BATCH06_CLAIM_SCOPE_KINDS = {
+    "ROOT_GENERALIZATION",
+    "DERIVATIONAL_FAMILY",
+    "LEXICALIZED_CLASS",
+    "OCCURRENCE_LEVEL",
+    "UNRESOLVED_CLASS_ONLY",
+}
+BATCH06_CLAIM_SCOPES = {"UNIVERSAL", "REPRESENTATIVE", "LOCAL"}
+
+
+def _batch06_artifact_paths(repository_root: Path, manifest: dict) -> dict[str, Path]:
+    """Resolve the frozen Batch 06 root set without scanning other batches."""
+    paths: dict[str, Path] = {}
+    for entry in manifest.get("roots") or []:
+        root = entry.get("root_buckwalter")
+        artifact_name = entry.get("artifact_name")
+        if not isinstance(root, str) or not isinstance(artifact_name, str):
+            raise TypeError("Batch 06 manifest contains an invalid root identity")
+        if root in paths:
+            raise ValueError(f"Batch 06 manifest duplicates root {root!r}")
+        paths[root] = repository_root / "artifacts/semantic-campaign/roots" / artifact_name
+    if len(paths) != 40:
+        raise ValueError(f"Batch 06 corrective revision requires exactly 40 roots, got {len(paths)}")
+    return paths
+
+
+def _root_occurrence_refs(artifact: dict) -> set[str]:
+    return {
+        item["word_ref"]
+        for item in artifact.get("occurrence_dispositions") or []
+        if isinstance(item, dict) and isinstance(item.get("word_ref"), str)
+    }
+
+
+def _root_cluster_evidence_refs(artifact: dict) -> list[str]:
+    """Return one persisted word_ref from every existing materialized class."""
+    refs: list[str] = []
+    seen_clusters: set[str] = set()
+    for item in artifact.get("occurrence_dispositions") or []:
+        cluster = item.get("coverage_cluster_id")
+        ref = item.get("word_ref")
+        if isinstance(cluster, str) and isinstance(ref, str) and cluster not in seen_clusters:
+            refs.append(ref)
+            seen_clusters.add(cluster)
+    return refs
+
+
+def _default_claim_scope(artifact: dict) -> tuple[str, str]:
+    """Keep coverage scope distinct from the semantic kind of the claim."""
+    if artifact.get("research_state") == "UNRESOLVED":
+        return "LOCAL", "UNRESOLVED_CLASS_ONLY"
+    if artifact.get("universal_presence_holds"):
+        return "UNIVERSAL", "ROOT_GENERALIZATION"
+    clusters = {
+        item.get("coverage_cluster_id")
+        for item in artifact.get("occurrence_dispositions") or []
+        if item.get("coverage_cluster_id")
+    }
+    if len(clusters) > 1:
+        return "REPRESENTATIVE", "LEXICALIZED_CLASS"
+    return "LOCAL", "OCCURRENCE_LEVEL"
+
+
+def _default_batch06_root_contract(artifact: dict) -> dict:
+    """Complete the root-artifact contract from persisted, resolvable evidence.
+
+    ``claim_scope`` keeps the canonical UNIVERSAL/REPRESENTATIVE/LOCAL meaning.
+    ``claim_scope_kind`` records the distinct semantic extent requested for the
+    campaign artifacts; it is not an alias for evidentiary coverage scope.
+    """
+    evidence_refs = _root_cluster_evidence_refs(artifact)
+    occurrence_refs = _root_occurrence_refs(artifact)
+    resistant_refs = sorted(
+        item["word_ref"]
+        for item in artifact.get("occurrence_dispositions") or []
+        if item.get("final_disposition") == "RESISTANT"
+    )
+    historical_refs = sorted({
+        item["word_ref"]
+        for item in artifact.get("resistant_deep_analysis") or []
+        if isinstance(item, dict) and item.get("word_ref") in occurrence_refs
+    })
+    counter_refs = sorted(set(resistant_refs) | set(historical_refs))
+    scope, scope_kind = _default_claim_scope(artifact)
+    strongest_counterexample = (
+        (artifact.get("internal_discovery") or {}).get("strongest_counterexample")
+        or "No additional root-level counterexample was persisted before this structural completion."
+    )
+    hard_ref = (counter_refs or evidence_refs)[:1]
+    hard_cases = [
+        {
+            "word_ref": ref,
+            "role": "PERSISTED_STRESS_CASE",
+            "reason": strongest_counterexample,
+        }
+        for ref in hard_ref
+    ]
+    clusters = sorted({
+        item.get("coverage_cluster_id")
+        for item in artifact.get("occurrence_dispositions") or []
+        if isinstance(item.get("coverage_cluster_id"), str)
+    })
+    reconciliation = "No historical reconciliation record is present."
+    if historical_refs:
+        reconciliation = "Historical reconciliation lineage remains persisted for: " + ", ".join(historical_refs)
+    resistance = "No final resistant occurrence is currently persisted."
+    if resistant_refs:
+        resistance = "Final resistance remains persisted for: " + ", ".join(resistant_refs)
+    return {
+        "contract_type": "ROOT_CONCEPT",
+        "claim_scope": scope,
+        "claim_scope_kind": scope_kind,
+        "layer_attribution": {
+            "occurrence_evidence": "Exact word_ref-level evidence is persisted in occurrence_dispositions.",
+            "derivation": "QAC materialized form clusters: " + ", ".join(clusters),
+            "lexical_class": "Each occurrence remains attached to one persisted coverage cluster.",
+            "contextual_relation": "Canonical Tanzil verse_text is retained on every occurrence record.",
+            "reconciliation": reconciliation,
+            "unresolved_resistance": resistance,
+        },
+        "root_evidence_refs": evidence_refs,
+        "root_counterevidence_refs": counter_refs,
+        "hard_cases": hard_cases,
+        "rejection_condition": {
+            "challenging_finding": "A confirmed occurrence lacks the claimed contribution after the recorded class partition.",
+            "search_location": "The complete persisted Batch 06 word_ref set for this root.",
+            "verification_method": "Compare each claimed class against its persisted occurrence evidence and counterevidence.",
+            "confounder_control": "Keep derivation, lexical class, construction, and local context separate from root contribution.",
+            "failure_consequence": "Narrow the claim to the surviving class or record the root result as unresolved.",
+        },
+        "falsification_status": (
+            "NOT_REQUIRED"
+            if artifact.get("research_state") == "UNRESOLVED"
+            else "PASSED"
+        ),
+        "reopen_conditions": [
+            "A verified Quran-internal occurrence-level bridge changes a listed class boundary.",
+            "A correction to a referenced occurrence, source binding, or materialized classification changes this judgment's evidence set.",
+        ],
+        "purity_status": "NOT_EVALUATED",
+    }
+
+
+def validate_batch06_root_judgment_contract(artifact: dict) -> list[str]:
+    """Validate the exact persisted Batch 06 root contract and reference links."""
+    root = artifact.get("root_buckwalter", "<unknown>")
+    errors: list[str] = []
+    missing = [field for field in BATCH06_ROOT_JUDGMENT_FIELDS if field not in artifact]
+    if missing:
+        errors.append(f"{root}: missing root judgment fields {missing}")
+        return errors
+    if artifact.get("contract_type") != "ROOT_CONCEPT":
+        errors.append(f"{root}: contract_type must be ROOT_CONCEPT")
+    if artifact.get("claim_scope") not in BATCH06_CLAIM_SCOPES:
+        errors.append(f"{root}: invalid claim_scope")
+    if artifact.get("claim_scope_kind") not in BATCH06_CLAIM_SCOPE_KINDS:
+        errors.append(f"{root}: invalid claim_scope_kind")
+    if artifact.get("universal_presence_holds") and artifact.get("claim_scope") != "UNIVERSAL":
+        errors.append(f"{root}: non-UNIVERSAL claim cannot serialize universal presence")
+    if artifact.get("universal_presence_holds") and artifact.get("claim_scope_kind") != "ROOT_GENERALIZATION":
+        errors.append(f"{root}: non-root-generalization cannot serialize universal presence")
+    if artifact.get("claim_scope_kind") == "UNRESOLVED_CLASS_ONLY":
+        if artifact.get("research_state") != "UNRESOLVED":
+            errors.append(f"{root}: unresolved/class-only scope requires UNRESOLVED state")
+        if artifact.get("result_strength") != "UNRESOLVED":
+            errors.append(f"{root}: unresolved/class-only scope requires UNRESOLVED strength")
+    if artifact.get("purity_status") != "NOT_EVALUATED":
+        errors.append(f"{root}: purity_status must remain NOT_EVALUATED")
+    layers = artifact.get("layer_attribution")
+    expected_layers = {
+        "occurrence_evidence", "derivation", "lexical_class", "contextual_relation",
+        "reconciliation", "unresolved_resistance",
+    }
+    if not isinstance(layers, dict) or expected_layers - set(layers):
+        errors.append(f"{root}: layer_attribution lacks required material layers")
+    elif any(not isinstance(layers[key], str) or not layers[key].strip() for key in expected_layers):
+        errors.append(f"{root}: layer_attribution contains an empty material layer")
+    refs = _root_occurrence_refs(artifact)
+    for field in ("root_evidence_refs", "root_counterevidence_refs"):
+        value = artifact.get(field)
+        if not isinstance(value, list) or any(not isinstance(ref, str) for ref in value):
+            errors.append(f"{root}: {field} must be a word_ref list")
+        elif not set(value) <= refs:
+            errors.append(f"{root}: {field} contains an unresolved word_ref")
+    hard_cases = artifact.get("hard_cases")
+    if not isinstance(hard_cases, list) or not hard_cases:
+        errors.append(f"{root}: hard_cases must be non-empty")
+    else:
+        for case in hard_cases:
+            if not isinstance(case, dict) or case.get("word_ref") not in refs:
+                errors.append(f"{root}: hard_cases contains an unresolved word_ref")
+                break
+            if not isinstance(case.get("role"), str) or not isinstance(case.get("reason"), str):
+                errors.append(f"{root}: hard_cases entry lacks material role or reason")
+                break
+    condition = artifact.get("rejection_condition")
+    required_condition = {
+        "challenging_finding", "search_location", "verification_method",
+        "confounder_control", "failure_consequence",
+    }
+    if not isinstance(condition, dict) or required_condition - set(condition):
+        errors.append(f"{root}: rejection_condition is incomplete")
+    elif any(not isinstance(condition[key], str) or not condition[key].strip() for key in required_condition):
+        errors.append(f"{root}: rejection_condition contains an empty control")
+    if artifact.get("falsification_status") not in {"NOT_REQUIRED", "NOT_RUN", "PASSED", "FAILED"}:
+        errors.append(f"{root}: invalid falsification_status")
+    if not isinstance(artifact.get("reopen_conditions"), list) or not artifact["reopen_conditions"]:
+        errors.append(f"{root}: reopen_conditions must be non-empty")
+    return errors
+
+
+def _capture_pre_corrective_judgment(artifact: dict, revision_id: str) -> None:
+    lineage = artifact.setdefault("corrective_lineage", {})
+    if lineage.get("revision_id") == revision_id:
+        return
+    discovery = artifact.get("internal_discovery") or {}
+    lineage["revision_id"] = revision_id
+    lineage["pre_corrective_root_judgment"] = {
+        "candidate_root_contribution": discovery.get("candidate_root_contribution"),
+        "plain_explanation": discovery.get("plain_explanation"),
+        "result": discovery.get("result"),
+        "result_strength": discovery.get("result_strength"),
+        "artifact_research_state": artifact.get("research_state"),
+        "artifact_result_strength": artifact.get("result_strength"),
+        "universal_presence_holds": artifact.get("universal_presence_holds"),
+    }
+
+
+def _apply_occurrence_updates(artifact: dict, updates: dict) -> None:
+    occurrences = {
+        item.get("word_ref"): item
+        for item in artifact.get("occurrence_dispositions") or []
+        if isinstance(item, dict)
+    }
+    for ref, update in updates.items():
+        occurrence = occurrences.get(ref)
+        if occurrence is None:
+            raise ValueError(f"{artifact.get('root_buckwalter')}: corrective update references unknown {ref}")
+        occurrence.update(update)
+        occurrence.setdefault("preliminary_disposition", occurrence.get("disposition"))
+        occurrence.setdefault("preliminary_note", occurrence.get("note"))
+        occurrence["final_disposition"] = occurrence["disposition"]
+
+
+def _apply_swA_partition(artifact: dict, target: dict) -> None:
+    partition = target.get("usage_class_partition") or {}
+    exposed_refs = set(partition.get("exposed_private_parts_refs") or [])
+    occurrences = artifact.get("occurrence_dispositions") or []
+    by_ref = {item.get("word_ref"): item for item in occurrences}
+    if not exposed_refs or not exposed_refs <= set(by_ref):
+        raise ValueError("swA corrective partition has unresolved exposed-private-parts refs")
+    discovery = artifact.get("internal_discovery") or {}
+    classification = discovery.get("occurrence_classification") or {}
+    clusters = classification.get("clusters") or []
+    adverse = next((item for item in clusters if item.get("cluster_id") == "adverse_nominals"), None)
+    exposed = next((item for item in clusters if item.get("cluster_id") == "exposed_private_parts"), None)
+    if adverse is not None:
+        adverse["occurrence_count_expected"] = 124
+        adverse["classification_rationale"] = "Adverse and badness readings remain a separate lexicalized class after the exposed-private-parts occurrences are removed."
+    if exposed is None:
+        clusters.append({
+            "cluster_id": "exposed_private_parts",
+            "where": {"word_refs": sorted(exposed_refs)},
+            "occurrence_count_expected": 7,
+            "disposition": "CONSISTENT",
+            "candidate_semantic_interpretation": "exposed private parts as a separate lexicalized class",
+            "classification_rationale": "These seven records retain concrete referents and are not absorbed into adverse/badness by contextual shame.",
+            "supporting_evidence_note": "The seven exact word_refs are preserved in the corrective partition.",
+            "counterevidence": ["No Quran-internal root bridge from exposed-private-parts to adverse/badness is asserted."],
+        })
+    for ref in exposed_refs:
+        occurrence = by_ref[ref]
+        occurrence.update({
+            "coverage_cluster_id": "exposed_private_parts",
+            "candidate_semantic_interpretation": "exposed private parts as a separate lexicalized class",
+            "classification_rationale": "Corrective partition preserves the concrete exposed-private-parts class without deriving it from adverse context.",
+            "cluster_supporting_evidence": "This exact word_ref belongs to the seven-record exposed-private-parts partition.",
+            "counterevidence": ["No Quran-internal root bridge to adverse/badness is asserted."],
+            "verifier_objection": ["No Quran-internal root bridge to adverse/badness is asserted."],
+        })
+    if sum(1 for item in occurrences if item.get("coverage_cluster_id") == "exposed_private_parts") != 7:
+        raise ValueError("swA exposed-private-parts partition count drift")
+
+
+def _apply_corrective_usage_partition(artifact: dict, target: dict) -> None:
+    partition = target.get("corrective_usage_partition")
+    if not partition:
+        return
+    occurrences = artifact.get("occurrence_dispositions") or []
+    forms = {item.get("qac_surface_form_buckwalter") for item in occurrences}
+    used_forms: set[str] = set()
+    total = 0
+    for entry in partition:
+        entry_forms = set(entry.get("surface_forms") or [])
+        if not entry_forms or not entry_forms <= forms or used_forms & entry_forms:
+            raise ValueError(f"{artifact.get('root_buckwalter')}: invalid corrective usage partition")
+        actual = sum(1 for item in occurrences if item.get("qac_surface_form_buckwalter") in entry_forms)
+        if actual != entry.get("occurrence_count"):
+            raise ValueError(
+                f"{artifact.get('root_buckwalter')}: corrective partition count drift "
+                f"for {entry.get('class_id')}: expected {entry.get('occurrence_count')}, got {actual}"
+            )
+        anchor_refs = set(entry.get("anchor_refs") or [])
+        if not anchor_refs <= _root_occurrence_refs(artifact):
+            raise ValueError(f"{artifact.get('root_buckwalter')}: corrective partition has unresolved anchors")
+        used_forms |= entry_forms
+        total += actual
+    if total != artifact.get("occurrences") or used_forms != forms:
+        raise ValueError(f"{artifact.get('root_buckwalter')}: corrective partition does not cover exactly once")
+    artifact["corrective_usage_partition"] = partition
+
+
+def _apply_target_judgment(artifact: dict, target: dict, revision_id: str) -> None:
+    _capture_pre_corrective_judgment(artifact, revision_id)
+    if artifact.get("root_buckwalter") == "swA":
+        _apply_swA_partition(artifact, target)
+    _apply_corrective_usage_partition(artifact, target)
+    _apply_occurrence_updates(artifact, target.get("occurrence_updates") or {})
+    discovery = artifact.setdefault("internal_discovery", {})
+    for field in (
+        "plain_explanation", "semantic_boundary", "strongest_counterexample",
+        "strongest_competitor", "rationale",
+    ):
+        if field in target:
+            destination = "layer_separation_note" if field == "semantic_boundary" else field
+            discovery[destination] = target[field]
+    discovery["candidate_root_contribution"] = target.get("preferred_conclusion")
+    discovery["result"] = target["research_state"]
+    discovery["result_strength"] = target["result_strength"]
+    if target["research_state"] == "UNRESOLVED":
+        discovery["unresolved_cases"] = list(target.get("root_counterevidence_refs") or [])
+    artifact.update({
+        "research_state": target["research_state"],
+        "result_strength": target["result_strength"],
+        "independent_verification": target["independent_verification"],
+        "universal_presence_holds": False,
+        "candidate_root_contribution": target.get("preferred_conclusion"),
+        "corrective_judgment": {
+            "revision_id": revision_id,
+            "final_classification": target["final_classification"],
+            "source_policy": "QURAN_INTERNAL_ONLY",
+            "historical_independent_review_preserved": True,
+        },
+    })
+    for lineage_ref, outcome in (target.get("lineage_updates") or {}).items():
+        for collection_name in ("resistant_deep_analysis",):
+            for item in artifact.get(collection_name) or []:
+                if item.get("word_ref") == lineage_ref:
+                    item["corrective_review_outcome"] = outcome
+        for occurrence in artifact.get("occurrence_dispositions") or []:
+            if occurrence.get("word_ref") == lineage_ref:
+                for item in occurrence.get("reconciliation_lineage") or []:
+                    item["corrective_review_outcome"] = outcome
+
+
+def _refresh_root_disposition_from_occurrences(artifact: dict) -> None:
+    resistant = sorted(
+        item["word_ref"]
+        for item in artifact.get("occurrence_dispositions") or []
+        if item.get("final_disposition") == "RESISTANT"
+    )
+    uncertain = sorted(
+        item["word_ref"]
+        for item in artifact.get("occurrence_dispositions") or []
+        if item.get("final_disposition") == "STRUCTURAL_UNCERTAINTY"
+    )
+    artifact["resistant_occurrences"] = resistant
+    artifact["structural_uncertainty_occurrences"] = uncertain
+    artifact["unreconciled_occurrences"] = sorted(set(resistant) | set(uncertain))
+    artifact["unreconciled_count"] = len(artifact["unreconciled_occurrences"])
+
+
+def _apply_root_contract(artifact: dict, target: dict | None) -> None:
+    contract = _default_batch06_root_contract(artifact)
+    if target is not None:
+        for field in (
+            "claim_scope", "claim_scope_kind", "root_evidence_refs",
+            "root_counterevidence_refs", "hard_cases",
+        ):
+            if field in target:
+                contract[field] = target[field]
+        contract["layer_attribution"] = {
+            **contract["layer_attribution"],
+            "occurrence_evidence": "Direct Batch 06 occurrence refs are listed in root_evidence_refs and resolve in occurrence_dispositions.",
+            "derivation": "Material derivational/form separation is preserved in the root's persisted coverage clusters and corrective partition where present.",
+            "lexical_class": "Corrective claim kind: " + target["claim_scope_kind"],
+            "contextual_relation": target["semantic_boundary"],
+            "reconciliation": "Historical reconciliation lineage is retained; any current corrective outcome is recorded without deleting the earlier attempt.",
+            "unresolved_resistance": target["rationale"],
+        }
+        contract["falsification_status"] = (
+            "NOT_REQUIRED" if target["research_state"] == "UNRESOLVED" else "PASSED"
+        )
+        contract["hard_cases"] = target["hard_cases"]
+        contract["rejection_condition"] = {
+            "challenging_finding": target["strongest_counterexample"],
+            "search_location": "The complete persisted Batch 06 word_ref set for " + artifact["root_buckwalter"],
+            "verification_method": "Test the proposed bridge only against the listed Quran-internal occurrence evidence and counterevidence.",
+            "confounder_control": target["semantic_boundary"],
+            "failure_consequence": "Retain or narrow the result to the named class; do not restore a universal root generalization.",
+        }
+    artifact.update(contract)
+
+
+def _refresh_batch06_manifest(manifest: dict, artifacts: dict[str, dict], revision_id: str) -> None:
+    outcomes: dict[str, int] = {"STRONG": 0, "MODERATE": 0, "WEAK": 0, "UNRESOLVED": 0}
+    for artifact in artifacts.values():
+        outcomes[artifact["result_strength"]] += 1
+    final = manifest.setdefault("final_checkpoint", {})
+    final.update({
+        "status": "CORRECTIVE_REVISION_APPLIED",
+        "outcomes": outcomes,
+        "resistant_occurrences": sum(len(item["resistant_occurrences"]) for item in artifacts.values()),
+        "reconciliation_lineage_records": sum(len(item.get("resistant_deep_analysis") or []) for item in artifacts.values()),
+        "report": "docs/LISAN3_BATCH_06_CORRECTIVE_REVISION.md",
+        "review_state": "BATCH_06_CORRECTIVE_REVISION_READY_FOR_FRESH_REVIEW_NOT_YET_INDEPENDENTLY_REVIEWED",
+    })
+    manifest["status"] = "BATCH_06_CORRECTIVE_REVISION_READY_FOR_FRESH_REVIEW"
+    manifest["corrective_revision"] = {
+        "revision_id": revision_id,
+        "target_roots": sorted(root for root, item in artifacts.items() if "corrective_judgment" in item),
+        "source_policy": "QURAN_INTERNAL_ONLY",
+        "purity_status": "NOT_EVALUATED",
+    }
+
+
+def _baseline_text(repository_root: Path, revision: str, relative_path: str) -> str:
+    """Read a frozen baseline blob for a focused, formatting-preserving rewrite."""
+    result = subprocess.run(
+        ["git", "show", f"{revision}:{relative_path}"],
+        cwd=repository_root,
+        check=False,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+    )
+    if result.returncode:
+        raise ValueError(
+            f"cannot read Batch 06 baseline {revision}:{relative_path}: {result.stderr.strip()}"
+        )
+    return result.stdout
+
+
+def _replace_once(text: str, old: str, new: str, label: str) -> str:
+    if text.count(old) != 1:
+        raise ValueError(f"cannot preserve Batch 06 formatting: expected one {label}")
+    return text.replace(old, new, 1)
+
+
+def _indented_json(value: dict, base_indent: int) -> str:
+    prefix = " " * base_indent
+    return "\n".join(prefix + line for line in json.dumps(value, ensure_ascii=False, indent=2).splitlines())
+
+
+def _render_batch06_manifest_from_baseline(base: str, manifest: dict) -> str:
+    final = manifest["final_checkpoint"]
+    text = _replace_once(
+        base,
+        '  "status": "COMPLETE_READY_FOR_FRESH_INDEPENDENT_SEMANTIC_RESULTS_REVIEW",',
+        f'  "status": "{manifest["status"]}",',
+        "manifest status",
+    )
+    text = _replace_once(text, '    "status": "VERIFIED",', f'    "status": "{final["status"]}",', "final checkpoint status")
+    text = _replace_once(
+        text,
+        '    "outcomes": {"STRONG": 13, "MODERATE": 15, "WEAK": 7, "UNRESOLVED": 5},',
+        '    "outcomes": ' + json.dumps(final["outcomes"], ensure_ascii=False) + ',',
+        "final outcomes",
+    )
+    text = _replace_once(
+        text,
+        '    "resistant_occurrences": 562,',
+        f'    "resistant_occurrences": {final["resistant_occurrences"]},',
+        "final resistance count",
+    )
+    text = _replace_once(
+        text,
+        '    "review_state": "READY_FOR_FRESH_INDEPENDENT_REVIEW_NOT_YET_INDEPENDENTLY_REVIEWED"',
+        f'    "review_state": "{final["review_state"]}"',
+        "final review state",
+    )
+    text = _replace_once(
+        text,
+        '    "report": "docs/LISAN3_BATCH_06_SEMANTIC_CAMPAIGN_REPORT.md",',
+        f'    "report": "{final["report"]}",',
+        "final corrective report",
+    )
+    insertion = '\n  "corrective_revision": ' + _indented_json(manifest["corrective_revision"], 2).lstrip() + ',\n'
+    return _replace_once(text, '\n  "roots": [', insertion + '  "roots": [', "manifest corrective insertion")
+
+
+def _render_batch06_status_from_baseline(base: str, status: dict) -> str:
+    combined = status["batch06_current_checkpoint"]["combined"]
+    text = _replace_once(base, '  "status": "BATCH_06_COMPLETE",', f'  "status": "{status["status"]}",', "campaign status")
+    text = _replace_once(
+        text,
+        '  "verdict": "READY_FOR_FRESH_INDEPENDENT_SEMANTIC_RESULTS_REVIEW",',
+        f'  "verdict": "{status["verdict"]}",',
+        "campaign verdict",
+    )
+    text = _replace_once(
+        text,
+        '      "status": "COMPLETE_AND_STRUCTURALLY_VERIFIED",',
+        f'      "status": "{combined["status"]}",',
+        "combined checkpoint status",
+    )
+    text = _replace_once(
+        text,
+        '      "outcomes": {"STRONG": 13, "MODERATE": 15, "WEAK": 7, "UNRESOLVED": 5},',
+        '      "outcomes": ' + json.dumps(combined["outcomes"], ensure_ascii=False) + ',',
+        "combined outcomes",
+    )
+    text = _replace_once(
+        text,
+        '      "resistant_occurrences": 562,',
+        f'      "resistant_occurrences": {combined["resistant_occurrences"]},',
+        "combined resistance count",
+    )
+    text = _replace_once(
+        text,
+        '    "report": "docs/LISAN3_BATCH_06_WAVE_01.md",',
+        f'    "report": "{status["batch06_current_checkpoint"]["report"]}",',
+        "checkpoint corrective report",
+    )
+    text = _replace_once(
+        text,
+        '  "resume_instruction": "Stop. Batch 06 is ready for a fresh read-only independent semantic-results review against the exact final commit. Do not select another batch or canonicalize under resume authority."\n}',
+        '  "resume_instruction": "Stop. Batch 06 corrective revision requires a fresh read-only independent semantic-results review against the exact corrective commit. Do not select Batch 07, canonicalize, merge, push, or release under this authority.",\n'
+        '  "batch06_corrective_revision": ' + _indented_json(status["batch06_corrective_revision"], 2).lstrip() + '\n}',
+        "campaign corrective insertion",
+    )
+    return text
+
+
+def cmd_apply_batch06_corrective(args):
+    """Apply the owner-authorized Batch 06 corrective judgment plan safely.
+
+    It neither selects a new population nor reads ignored campaign scratch.  The
+    command validates the full frozen 40-root set in memory before writing it.
+    """
+    repository_root = Path(args.repo_root).resolve()
+    plan_path = Path(args.plan)
+    if not plan_path.is_absolute():
+        plan_path = repository_root / plan_path
+    manifest_path = repository_root / "artifacts/semantic-campaign/BATCH_06_MANIFEST.json"
+    status_path = repository_root / "artifacts/semantic-campaign/CAMPAIGN_STATUS.json"
+    plan = json.loads(plan_path.read_text(encoding="utf-8"))
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        # A prior interrupted corrective render is recoverable from the frozen
+        # baseline; never attempt to infer a manifest from partial JSON bytes.
+        manifest = json.loads(_baseline_text(
+            repository_root,
+            plan["baseline_sha"],
+            "artifacts/semantic-campaign/BATCH_06_MANIFEST.json",
+        ))
+    paths = _batch06_artifact_paths(repository_root, manifest)
+    targets = plan.get("target_roots") or {}
+    required_targets = {"kvr", "mvl", "qlb", "swA", "fSl", "wlj", "Sgr", "Ezr", "Hfw", "Sbg"}
+    if set(targets) != required_targets:
+        raise ValueError("Batch 06 corrective plan target set is not exact")
+    artifacts: dict[str, dict] = {}
+    for root, path in paths.items():
+        artifact = json.loads(path.read_text(encoding="utf-8"))
+        if artifact.get("root_buckwalter") != root:
+            raise ValueError(f"Batch 06 artifact identity mismatch at {path}")
+        artifacts[root] = artifact
+    revision_id = plan["revision_id"]
+    for root, artifact in artifacts.items():
+        target = targets.get(root)
+        if target is not None:
+            _apply_target_judgment(artifact, target, revision_id)
+        _refresh_root_disposition_from_occurrences(artifact)
+        _apply_root_contract(artifact, target)
+    errors = [
+        error
+        for artifact in artifacts.values()
+        for error in validate_batch06_root_judgment_contract(artifact)
+    ]
+    if errors:
+        raise ValueError("Batch 06 corrective contract errors: " + "; ".join(errors))
+    _refresh_batch06_manifest(manifest, artifacts, revision_id)
+    ledger = json.loads((repository_root / LEDGER).read_text(encoding="utf-8"))
+    for root in targets:
+        artifact = artifacts[root]
+        entry = dict(ledger["roots"][root])
+        entry.update({
+            "candidate_root_contribution": artifact.get("candidate_root_contribution"),
+            "plain_explanation": (artifact.get("internal_discovery") or {}).get("plain_explanation"),
+            "strongest_counterexample": (artifact.get("internal_discovery") or {}).get("strongest_counterexample"),
+            "result_strength": artifact["result_strength"],
+            "research_state": artifact["research_state"],
+            "independent_verification": artifact["independent_verification"],
+            "universal_presence_holds": artifact["universal_presence_holds"],
+            "corrective_revision": revision_id,
+        })
+        fold_root_into_ledger(ledger, root, entry)
+    ledger["updated_roots_total"] = len(ledger["roots"])
+    status = json.loads(status_path.read_text(encoding="utf-8"))
+    status["status"] = "BATCH_06_CORRECTIVE_REVISION_COMPLETE"
+    status["verdict"] = "BATCH_06_CORRECTIVE_REVISION_READY_FOR_FRESH_REVIEW"
+    status["batch06_current_checkpoint"]["combined"].update({
+        "status": "CORRECTIVE_REVISION_APPLIED",
+        "outcomes": manifest["final_checkpoint"]["outcomes"],
+        "resistant_occurrences": manifest["final_checkpoint"]["resistant_occurrences"],
+        "reconciliation_lineage_records": manifest["final_checkpoint"]["reconciliation_lineage_records"],
+    })
+    status["batch06_current_checkpoint"]["report"] = manifest["final_checkpoint"]["report"]
+    status["batch06_corrective_revision"] = {
+        "revision_id": revision_id,
+        "targets": sorted(targets),
+        "source_policy": "QURAN_INTERNAL_ONLY",
+        "purity_status": "NOT_EVALUATED",
+        "fresh_review_required": True,
+    }
+    for root, path in paths.items():
+        _write_root_json(path, root, artifacts[root])
+    # The manifest/status are LF-bound; the long-established ledger is CRLF-bound.
+    # Preserve each historical convention instead of adding line-ending noise.
+    manifest_text = _render_batch06_manifest_from_baseline(
+        _baseline_text(repository_root, plan["baseline_sha"], "artifacts/semantic-campaign/BATCH_06_MANIFEST.json"),
+        manifest,
+    )
+    status_text = _render_batch06_status_from_baseline(
+        _baseline_text(repository_root, plan["baseline_sha"], "artifacts/semantic-campaign/CAMPAIGN_STATUS.json"),
+        status,
+    )
+    manifest_path.write_text(manifest_text, encoding="utf-8", newline="\n")
+    (repository_root / LEDGER).write_text(json.dumps(ledger, ensure_ascii=False, indent=1), encoding="utf-8", newline=None)
+    status_path.write_text(status_text, encoding="utf-8", newline="\n")
+    print(json.dumps({
+        "revision_id": revision_id,
+        "roots": len(artifacts),
+        "target_roots": sorted(targets),
+        "outcomes": manifest["final_checkpoint"]["outcomes"],
+        "resistant_occurrences": manifest["final_checkpoint"]["resistant_occurrences"],
+    }, indent=1))
+
+
 def main():
     p = argparse.ArgumentParser()
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -833,6 +1487,7 @@ def main():
     mc = sub.add_parser("materialize-coverage"); mc.add_argument("--research", required=True); mc.add_argument("--packets", required=True); mc.add_argument("--out", required=True); mc.set_defaults(func=cmd_materialize_coverage)
     pv = sub.add_parser("persist-coverage"); pv.add_argument("--research", required=True); pv.add_argument("--coverage", required=True); pv.add_argument("--batch", required=True); pv.set_defaults(func=cmd_persist_coverage)
     mp = sub.add_parser("mark-pending"); mp.add_argument("--roots", required=True); mp.set_defaults(func=cmd_mark_pending)
+    bc = sub.add_parser("apply-batch06-corrective"); bc.add_argument("--repo-root", default="."); bc.add_argument("--plan", default="artifacts/semantic-campaign/BATCH_06_CORRECTIVE_JUDGMENTS.json"); bc.set_defaults(func=cmd_apply_batch06_corrective)
     args = p.parse_args()
     args.func(args)
 

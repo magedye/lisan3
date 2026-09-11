@@ -10,22 +10,24 @@
  "occurrences": 3,
  "frozen_candidate_root_contribution": "sustained, close attention directed toward a person or matter, expressed as solicitude, informed concern, or pressing inquiry",
  "internal_discovery": {
-  "candidate_root_contribution": "sustained, close attention directed toward a person or matter, expressed as solicitude, informed concern, or pressing inquiry",
-  "plain_explanation": "The three occurrences show God's solicitous favor toward Abraham, a claim of being closely informed about the Hour, and pressing people by demanding their wealth. Close, sustained attention is shared; moral effect depends on participant and object.",
-  "layer_separation_note": "The adjective profiles an attentive relation; Form IV intensifies or exhausts the target through pressing demand. Prepositions identify person or matter attended to.",
+  "candidate_root_contribution": null,
+  "plain_explanation": "Solicitude, claimed knowledge, and exhaustive demand remain separately represented; generic close attention is not asserted as their root contribution.",
+  "layer_separation_note": "Do not bridge the three classes with generic attention unless a unique Quran-internal residue survives falsification.",
   "presence": {
    "occurrences_total": 3,
    "occurrences_checked": 3,
    "occurrences_consistent": 3,
    "inconsistent_refs": []
   },
-  "strongest_counterexample": "47:37 is burdensome pressing for wealth, unlike benevolent solicitude in 19:47; attention is neutral while effect is contextual.",
+  "strongest_counterexample": "47:37 is an exhaustive wealth demand, unlike the solicitous and claimed-knowledge contexts.",
   "competing_hypothesis": "The root means kindness; the Hour inquiry and exhausting demand refute built-in benevolence.",
   "distinctiveness_note": "Distinct from knowing alone and asking once: Hfw profiles close or persistent attentiveness to its target.",
-  "unresolved_cases": [],
-  "result": "PREFERRED",
-  "result_strength": "MODERATE",
-  "rationale": "A close-attention relation covers all three, but the polarity and derivational bridge remain evidence-sparse.",
+  "unresolved_cases": [
+   "47:37:3:2"
+  ],
+  "result": "UNRESOLVED",
+  "result_strength": "UNRESOLVED",
+  "rationale": "The prior close-attention proposal was too generic to distinguish the classes.",
   "occurrence_classification": {
    "clusters": [
     {
@@ -62,7 +64,8 @@
     }
    ],
    "reconciliation": []
-  }
+  },
+  "strongest_competitor": "Maintain the three usage classes separately pending a discriminating bridge."
  },
  "adversarial_verification": {
   "root_buckwalter": "Hfw",
@@ -228,14 +231,82 @@
  ],
  "resistant_deep_analysis": [],
  "authority_level": "RESEARCH_JUDGMENT",
- "research_state": "PREFERRED",
- "result_strength": "MODERATE",
+ "research_state": "UNRESOLVED",
+ "result_strength": "UNRESOLVED",
  "research_completeness": "COMPLETE",
- "independent_verification": "PASSED",
+ "independent_verification": "NOT_REQUIRED",
  "canonical_authorization": "PENDING",
- "universal_presence_holds": true,
+ "universal_presence_holds": false,
  "unreconciled_occurrences": [],
  "unreconciled_count": 0,
  "resistant_occurrences": [],
- "structural_uncertainty_occurrences": []
+ "structural_uncertainty_occurrences": [],
+ "corrective_lineage": {
+  "revision_id": "BATCH_06_CORRECTIVE_REVISION_2026_09_11",
+  "pre_corrective_root_judgment": {
+   "candidate_root_contribution": "sustained, close attention directed toward a person or matter, expressed as solicitude, informed concern, or pressing inquiry",
+   "plain_explanation": "The three occurrences show God's solicitous favor toward Abraham, a claim of being closely informed about the Hour, and pressing people by demanding their wealth. Close, sustained attention is shared; moral effect depends on participant and object.",
+   "result": "PREFERRED",
+   "result_strength": "MODERATE",
+   "artifact_research_state": "PREFERRED",
+   "artifact_result_strength": "MODERATE",
+   "universal_presence_holds": true
+  }
+ },
+ "candidate_root_contribution": null,
+ "corrective_judgment": {
+  "revision_id": "BATCH_06_CORRECTIVE_REVISION_2026_09_11",
+  "final_classification": "SOLICITUDE_CLAIMED_KNOWLEDGE_AND_EXHAUSTIVE_DEMAND_UNRESOLVED",
+  "source_policy": "QURAN_INTERNAL_ONLY",
+  "historical_independent_review_preserved": true
+ },
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "LOCAL",
+ "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
+ "layer_attribution": {
+  "occurrence_evidence": "Direct Batch 06 occurrence refs are listed in root_evidence_refs and resolve in occurrence_dispositions.",
+  "derivation": "Material derivational/form separation is preserved in the root's persisted coverage clusters and corrective partition where present.",
+  "lexical_class": "Corrective claim kind: UNRESOLVED_CLASS_ONLY",
+  "contextual_relation": "Do not bridge the three classes with generic attention unless a unique Quran-internal residue survives falsification.",
+  "reconciliation": "Historical reconciliation lineage is retained; any current corrective outcome is recorded without deleting the earlier attempt.",
+  "unresolved_resistance": "The prior close-attention proposal was too generic to distinguish the classes."
+ },
+ "root_evidence_refs": [
+  "19:47:10:1",
+  "7:187:26:1",
+  "47:37:3:2"
+ ],
+ "root_counterevidence_refs": [
+  "47:37:3:2"
+ ],
+ "hard_cases": [
+  {
+   "word_ref": "19:47:10:1",
+   "role": "SOLICITUDE_CLASS",
+   "reason": "Solicitude class anchor."
+  },
+  {
+   "word_ref": "7:187:26:1",
+   "role": "CLAIMED_KNOWLEDGE_CLASS",
+   "reason": "Claimed-knowledge class anchor."
+  },
+  {
+   "word_ref": "47:37:3:2",
+   "role": "EXHAUSTIVE_DEMAND_CLASS",
+   "reason": "Exhaustive-demand class anchor."
+  }
+ ],
+ "rejection_condition": {
+  "challenging_finding": "47:37 is an exhaustive wealth demand, unlike the solicitous and claimed-knowledge contexts.",
+  "search_location": "The complete persisted Batch 06 word_ref set for Hfw",
+  "verification_method": "Test the proposed bridge only against the listed Quran-internal occurrence evidence and counterevidence.",
+  "confounder_control": "Do not bridge the three classes with generic attention unless a unique Quran-internal residue survives falsification.",
+  "failure_consequence": "Retain or narrow the result to the named class; do not restore a universal root generalization."
+ },
+ "falsification_status": "NOT_REQUIRED",
+ "reopen_conditions": [
+  "A verified Quran-internal occurrence-level bridge changes a listed class boundary.",
+  "A correction to a referenced occurrence, source binding, or materialized classification changes this judgment's evidence set."
+ ],
+ "purity_status": "NOT_EVALUATED"
 }

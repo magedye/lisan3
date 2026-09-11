@@ -10,22 +10,22 @@
  "occurrences": 14,
  "frozen_candidate_root_contribution": "passing or causing passage across an outside/inside boundary into an interior domain",
  "internal_discovery": {
-  "candidate_root_contribution": "passing or causing passage across an outside/inside boundary into an interior domain",
-  "plain_explanation": "Thirteen verbs describe entering the earth or interpenetration of night and day; the one walija noun denotes a privileged intimate taken into one's inner circle. The latter is a social extension of interior access.",
-  "layer_separation_note": "Base form profiles entry, Form IV insertion/interpenetration, and the participant structure identifies container and entrant. The walija noun lexicalizes admitted inner access.",
+  "candidate_root_contribution": "The thirteen entry/insertion occurrences remain a productive class; the social-insider occurrence is resistant and does not establish a root-wide extension.",
+  "plain_explanation": "9:16:20:1 is restored to RESISTANT. The historical reconciliation is preserved as an attempt, but its present outcome is INVALID_INSUFFICIENT_QURAN_INTERNAL_BRIDGE.",
+  "layer_separation_note": "Do not equate social insider status with spatial entry or insertion without a Quran-internal bridge.",
   "presence": {
    "occurrences_total": 14,
    "occurrences_checked": 14,
    "occurrences_consistent": 14,
    "inconsistent_refs": []
   },
-  "strongest_counterexample": "9:16 uses walija for an intimate rather than physical entry, so the inside-access bridge is metaphorical.",
+  "strongest_counterexample": "9:16:20:1 is social rather than spatial and does not expose a physical boundary crossing.",
   "competing_hypothesis": "Walija is an unrelated word for confidant; the verse's exclusion of taking an outsider as privileged intimate supports, but does not prove, the entry-to-inner-circle relation.",
   "distinctiveness_note": "Distinct from simple entering by foregrounding crossing into an interior and from mixing, which need not cross a boundary.",
   "unresolved_cases": [],
   "result": "PREFERRED",
-  "result_strength": "MODERATE",
-  "rationale": "The concrete entry/insertion classes are clear; the sole social noun reconciles with preserved contest lineage.",
+  "result_strength": "WEAK",
+  "rationale": "The prior reconciliation used a generic inside-access abstraction instead of a demonstrated Quran-internal bridge.",
   "occurrence_classification": {
    "clusters": [
     {
@@ -86,7 +86,8 @@
      "rationale": "The participant construction 'take ... as walija' identifies an admitted insider; this is a bounded inner-access extension, while the original spatial objection remains in lineage."
     }
    ]
-  }
+  },
+  "strongest_competitor": "Keep the social-insider occurrence separate from the entry/insertion family."
  },
  "adversarial_verification": {
   "root_buckwalter": "wlj",
@@ -669,15 +670,16 @@
   },
   {
    "word_ref": "9:16:20:1",
-   "disposition": "CONSISTENT",
-   "note": "The participant construction 'take ... as walija' identifies an admitted insider; this is a bounded inner-access extension, while the original spatial objection remains in lineage.",
+   "disposition": "RESISTANT",
+   "note": "Corrective review: social insider status remains resistant; no Quran-internal bridge establishes it as spatial entry or insertion.",
    "coverage_cluster_id": "inner_circle_intimate",
    "candidate_semantic_interpretation": "a person admitted to privileged inner access",
    "cluster_supporting_evidence": "The sole walija occurrence at 9:16 was reviewed directly.",
    "counterevidence": [
-    "No physical boundary crossing occurs in the verse."
+    "No physical boundary crossing occurs in the verse.",
+    "No Quran-internal bridge establishes a social-insider extension."
    ],
-   "final_disposition": "CONSISTENT",
+   "final_disposition": "RESISTANT",
    "deep_analysis": true,
    "preliminary_disposition": "RESISTANT",
    "preliminary_note": "9:16 is social rather than spatial, so its inside-access residue was initially contested.",
@@ -689,11 +691,13 @@
      "preliminary_note": "9:16 is social rather than spatial, so its inside-access residue was initially contested.",
      "final_disposition": "CONSISTENT",
      "reconciliation_rationale": "The participant construction 'take ... as walija' identifies an admitted insider; this is a bounded inner-access extension, while the original spatial objection remains in lineage.",
-     "deep_analysis": true
+     "deep_analysis": true,
+     "corrective_review_outcome": "INVALID_INSUFFICIENT_QURAN_INTERNAL_BRIDGE"
     }
    ],
    "verifier_objection": [
-    "No physical boundary crossing occurs in the verse."
+    "No physical boundary crossing occurs in the verse.",
+    "No Quran-internal bridge establishes a social-insider extension."
    ],
    "supporting_evidence": [
     {
@@ -722,7 +726,8 @@
     "extraction_version": "qac-0.4-import-v1",
     "attribution_status": "CONFIRMED"
    },
-   "verse_text": "أَمْ حَسِبْتُمْ أَن تُتْرَكُوا۟ وَلَمَّا يَعْلَمِ ٱللَّهُ ٱلَّذِينَ جَٰهَدُوا۟ مِنكُمْ وَلَمْ يَتَّخِذُوا۟ مِن دُونِ ٱللَّهِ وَلَا رَسُولِهِۦ وَلَا ٱلْمُؤْمِنِينَ وَلِيجَةً وَٱللَّهُ خَبِيرٌۢ بِمَا تَعْمَلُونَ"
+   "verse_text": "أَمْ حَسِبْتُمْ أَن تُتْرَكُوا۟ وَلَمَّا يَعْلَمِ ٱللَّهُ ٱلَّذِينَ جَٰهَدُوا۟ مِنكُمْ وَلَمْ يَتَّخِذُوا۟ مِن دُونِ ٱللَّهِ وَلَا رَسُولِهِۦ وَلَا ٱلْمُؤْمِنِينَ وَلِيجَةً وَٱللَّهُ خَبِيرٌۢ بِمَا تَعْمَلُونَ",
+   "corrective_review_outcome": "INVALID_INSUFFICIENT_QURAN_INTERNAL_BRIDGE"
   }
  ],
  "resistant_deep_analysis": [
@@ -732,18 +737,80 @@
    "preliminary_note": "9:16 is social rather than spatial, so its inside-access residue was initially contested.",
    "final_disposition": "CONSISTENT",
    "reconciliation_rationale": "The participant construction 'take ... as walija' identifies an admitted insider; this is a bounded inner-access extension, while the original spatial objection remains in lineage.",
-   "deep_analysis": true
+   "deep_analysis": true,
+   "corrective_review_outcome": "INVALID_INSUFFICIENT_QURAN_INTERNAL_BRIDGE"
   }
  ],
  "authority_level": "RESEARCH_JUDGMENT",
  "research_state": "PREFERRED",
- "result_strength": "MODERATE",
+ "result_strength": "WEAK",
  "research_completeness": "COMPLETE",
- "independent_verification": "PASSED",
+ "independent_verification": "PARTIAL",
  "canonical_authorization": "PENDING",
- "universal_presence_holds": true,
- "unreconciled_occurrences": [],
- "unreconciled_count": 0,
- "resistant_occurrences": [],
- "structural_uncertainty_occurrences": []
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "9:16:20:1"
+ ],
+ "unreconciled_count": 1,
+ "resistant_occurrences": [
+  "9:16:20:1"
+ ],
+ "structural_uncertainty_occurrences": [],
+ "corrective_lineage": {
+  "revision_id": "BATCH_06_CORRECTIVE_REVISION_2026_09_11",
+  "pre_corrective_root_judgment": {
+   "candidate_root_contribution": "passing or causing passage across an outside/inside boundary into an interior domain",
+   "plain_explanation": "Thirteen verbs describe entering the earth or interpenetration of night and day; the one walija noun denotes a privileged intimate taken into one's inner circle. The latter is a social extension of interior access.",
+   "result": "PREFERRED",
+   "result_strength": "MODERATE",
+   "artifact_research_state": "PREFERRED",
+   "artifact_result_strength": "MODERATE",
+   "universal_presence_holds": true
+  }
+ },
+ "candidate_root_contribution": "The thirteen entry/insertion occurrences remain a productive class; the social-insider occurrence is resistant and does not establish a root-wide extension.",
+ "corrective_judgment": {
+  "revision_id": "BATCH_06_CORRECTIVE_REVISION_2026_09_11",
+  "final_classification": "ENTRY_CLASSES_WITH_INVALID_SOCIAL_INSIDER_RECONCILIATION",
+  "source_policy": "QURAN_INTERNAL_ONLY",
+  "historical_independent_review_preserved": true
+ },
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "DERIVATIONAL_FAMILY",
+ "layer_attribution": {
+  "occurrence_evidence": "Direct Batch 06 occurrence refs are listed in root_evidence_refs and resolve in occurrence_dispositions.",
+  "derivation": "Material derivational/form separation is preserved in the root's persisted coverage clusters and corrective partition where present.",
+  "lexical_class": "Corrective claim kind: DERIVATIONAL_FAMILY",
+  "contextual_relation": "Do not equate social insider status with spatial entry or insertion without a Quran-internal bridge.",
+  "reconciliation": "Historical reconciliation lineage is retained; any current corrective outcome is recorded without deleting the earlier attempt.",
+  "unresolved_resistance": "The prior reconciliation used a generic inside-access abstraction instead of a demonstrated Quran-internal bridge."
+ },
+ "root_evidence_refs": [
+  "34:2:3:1",
+  "22:61:4:1"
+ ],
+ "root_counterevidence_refs": [
+  "9:16:20:1"
+ ],
+ "hard_cases": [
+  {
+   "word_ref": "9:16:20:1",
+   "role": "INVALID_RECONCILIATION",
+   "reason": "The social-insider occurrence remains resistant after review."
+  }
+ ],
+ "rejection_condition": {
+  "challenging_finding": "9:16:20:1 is social rather than spatial and does not expose a physical boundary crossing.",
+  "search_location": "The complete persisted Batch 06 word_ref set for wlj",
+  "verification_method": "Test the proposed bridge only against the listed Quran-internal occurrence evidence and counterevidence.",
+  "confounder_control": "Do not equate social insider status with spatial entry or insertion without a Quran-internal bridge.",
+  "failure_consequence": "Retain or narrow the result to the named class; do not restore a universal root generalization."
+ },
+ "falsification_status": "PASSED",
+ "reopen_conditions": [
+  "A verified Quran-internal occurrence-level bridge changes a listed class boundary.",
+  "A correction to a referenced occurrence, source binding, or materialized classification changes this judgment's evidence set."
+ ],
+ "purity_status": "NOT_EVALUATED"
 }

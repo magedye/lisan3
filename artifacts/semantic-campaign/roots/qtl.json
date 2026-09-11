@@ -7735,5 +7735,45 @@
  "unreconciled_occurrences": [],
  "unreconciled_count": 0,
  "resistant_occurrences": [],
- "structural_uncertainty_occurrences": []
+ "structural_uncertainty_occurrences": [],
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "UNIVERSAL",
+ "claim_scope_kind": "ROOT_GENERALIZATION",
+ "layer_attribution": {
+  "occurrence_evidence": "Exact word_ref-level evidence is persisted in occurrence_dispositions.",
+  "derivation": "QAC materialized form clusters: base_killing_verbs, form_iii_combat, form_viii_mutual_killing, intensive_killing, qatl_nouns, qital_nouns",
+  "lexical_class": "Each occurrence remains attached to one persisted coverage cluster.",
+  "contextual_relation": "Canonical Tanzil verse_text is retained on every occurrence record.",
+  "reconciliation": "No historical reconciliation record is present.",
+  "unresolved_resistance": "No final resistant occurrence is currently persisted."
+ },
+ "root_evidence_refs": [
+  "12:10:5:1",
+  "17:31:10:1",
+  "22:39:3:1",
+  "28:15:11:1",
+  "2:216:3:2",
+  "33:61:5:2"
+ ],
+ "root_counterevidence_refs": [],
+ "hard_cases": [
+  {
+   "word_ref": "12:10:5:1",
+   "role": "PERSISTED_STRESS_CASE",
+   "reason": "Qital can name fighting with no stated death, so the core cannot be completed killing; it is reciprocal action oriented toward lethal overcoming."
+  }
+ ],
+ "rejection_condition": {
+  "challenging_finding": "A confirmed occurrence lacks the claimed contribution after the recorded class partition.",
+  "search_location": "The complete persisted Batch 06 word_ref set for this root.",
+  "verification_method": "Compare each claimed class against its persisted occurrence evidence and counterevidence.",
+  "confounder_control": "Keep derivation, lexical class, construction, and local context separate from root contribution.",
+  "failure_consequence": "Narrow the claim to the surviving class or record the root result as unresolved."
+ },
+ "falsification_status": "PASSED",
+ "reopen_conditions": [
+  "A verified Quran-internal occurrence-level bridge changes a listed class boundary.",
+  "A correction to a referenced occurrence, source binding, or materialized classification changes this judgment's evidence set."
+ ],
+ "purity_status": "NOT_EVALUATED"
 }

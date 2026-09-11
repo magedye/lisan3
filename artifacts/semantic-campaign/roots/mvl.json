@@ -10,22 +10,22 @@
  "occurrences": 169,
  "frozen_candidate_root_contribution": "correspondence through a comparable configuration, by which one case, form, or pattern can stand alongside another",
  "internal_discovery": {
-  "candidate_root_contribution": "correspondence through a comparable configuration, by which one case, form, or pattern can stand alongside another",
-  "plain_explanation": "The 169 occurrences cover likeness, comparable kind, parable/example, exemplary pattern, and one taking of a human form. Across them the stable residue is not identity but structured correspondence that makes comparison or representation possible.",
-  "layer_separation_note": "Noun constructions provide the compared cases; adjectival forms grade or exemplify a pattern; Form V in 19:17 supplies taking on a corresponding form. These layers specify how correspondence is realized.",
+  "candidate_root_contribution": "Comparison/equivalence, parable, representation, exemplary, al-muthla, al-mathulat, and Form V embodiment remain partitioned; the 19:17 reconciliation is valid only with its local qualification.",
+  "plain_explanation": "No universal root conclusion is asserted from the partitions. The Form V occurrence is locally retained because its historical reconciliation remains visible and its current outcome is explicitly qualified.",
+  "layer_separation_note": "Do not turn a locally qualified Form V embodiment reading into a universal root bridge.",
   "presence": {
    "occurrences_total": 169,
    "occurrences_checked": 169,
    "occurrences_consistent": 169,
    "inconsistent_refs": []
   },
-  "strongest_counterexample": "19:17 uses Form V for the spirit appearing as a well-proportioned human, not for an explicit verbal comparison.",
+  "strongest_counterexample": "19:17:8:2 lacks an overt comparison marker and therefore cannot by itself establish a universal root contribution.",
   "competing_hypothesis": "The core is merely similarity; this under-explains parables that configure an instructive case and Form V embodiment.",
   "distinctiveness_note": "Distinct from equality, which can erase difference, and from image/form language, which need not establish correspondence between cases.",
   "unresolved_cases": [],
   "result": "PREFERRED",
   "result_strength": "MODERATE",
-  "rationale": "The correspondence nucleus survives all classes; the lone Form V seam required explicit reconciliation and keeps strength below STRONG.",
+  "rationale": "The original 19:17 reconciliation survives only as VALID_WITH_QUALIFICATION; its preliminary resistance and historical rationale remain intact.",
   "occurrence_classification": {
    "clusters": [
     {
@@ -83,7 +83,8 @@
      "rationale": "Form V and the complement 'as a well-proportioned human' jointly encode taking a corresponding form; the preliminary objection remains preserved in lineage."
     }
    ]
-  }
+  },
+  "strongest_competitor": "Treat Form V embodiment as a locally qualified derivational result rather than evidence that every mvl class shares one root-wide residue."
  },
  "adversarial_verification": {
   "root_buckwalter": "mvl",
@@ -1761,7 +1762,8 @@
      "preliminary_note": "19:17 does not state a comparison overtly, so the embodiment bridge was initially contested.",
      "final_disposition": "CONSISTENT",
      "reconciliation_rationale": "Form V and the complement 'as a well-proportioned human' jointly encode taking a corresponding form; the preliminary objection remains preserved in lineage.",
-     "deep_analysis": true
+     "deep_analysis": true,
+     "corrective_review_outcome": "VALID_WITH_QUALIFICATION"
     }
    ],
    "verifier_objection": [
@@ -7394,18 +7396,183 @@
    "preliminary_note": "19:17 does not state a comparison overtly, so the embodiment bridge was initially contested.",
    "final_disposition": "CONSISTENT",
    "reconciliation_rationale": "Form V and the complement 'as a well-proportioned human' jointly encode taking a corresponding form; the preliminary objection remains preserved in lineage.",
-   "deep_analysis": true
+   "deep_analysis": true,
+   "corrective_review_outcome": "VALID_WITH_QUALIFICATION"
   }
  ],
  "authority_level": "RESEARCH_JUDGMENT",
  "research_state": "PREFERRED",
  "result_strength": "MODERATE",
  "research_completeness": "COMPLETE",
- "independent_verification": "PASSED",
+ "independent_verification": "PARTIAL",
  "canonical_authorization": "PENDING",
- "universal_presence_holds": true,
+ "universal_presence_holds": false,
  "unreconciled_occurrences": [],
  "unreconciled_count": 0,
  "resistant_occurrences": [],
- "structural_uncertainty_occurrences": []
+ "structural_uncertainty_occurrences": [],
+ "corrective_lineage": {
+  "revision_id": "BATCH_06_CORRECTIVE_REVISION_2026_09_11",
+  "pre_corrective_root_judgment": {
+   "candidate_root_contribution": "correspondence through a comparable configuration, by which one case, form, or pattern can stand alongside another",
+   "plain_explanation": "The 169 occurrences cover likeness, comparable kind, parable/example, exemplary pattern, and one taking of a human form. Across them the stable residue is not identity but structured correspondence that makes comparison or representation possible.",
+   "result": "PREFERRED",
+   "result_strength": "MODERATE",
+   "artifact_research_state": "PREFERRED",
+   "artifact_result_strength": "MODERATE",
+   "universal_presence_holds": true
+  }
+ },
+ "corrective_usage_partition": [
+  {
+   "class_id": "comparison_equivalence",
+   "occurrence_count": 75,
+   "surface_forms": [
+    "mivola",
+    "mivoli",
+    "mivolu",
+    "m~ivola",
+    "m~ivolayo",
+    "m~ivoli",
+    "m~ivolu"
+   ],
+   "anchor_refs": [
+    "10:27:6:2",
+    "10:102:4:1"
+   ]
+  },
+  {
+   "class_id": "parable",
+   "occurrence_count": 69,
+   "surface_forms": [
+    "mavalFA",
+    "mavalK",
+    "mavalN",
+    "mavala",
+    "mavali",
+    "mavalu",
+    "m~avalFA",
+    "m~avala",
+    "m~avalu"
+   ],
+   "anchor_refs": [
+    "10:24:2:1",
+    "2:26:7:1"
+   ]
+  },
+  {
+   "class_id": "exemplary_or_comparable",
+   "occurrence_count": 20,
+   "surface_forms": [
+    ">amovaAla",
+    ">amovaAli",
+    ">amovaAlu",
+    ">amova`la",
+    ">amova`li",
+    ">amova`lu",
+    ">amovalu"
+   ],
+   "anchor_refs": [
+    "6:38:12:1",
+    "20:104:7:1"
+   ]
+  },
+  {
+   "class_id": "al_muthla",
+   "occurrence_count": 1,
+   "surface_forms": [
+    "muvolaY`"
+   ],
+   "anchor_refs": [
+    "20:63:13:2"
+   ]
+  },
+  {
+   "class_id": "al_mathulat",
+   "occurrence_count": 1,
+   "surface_forms": [
+    "mavula`tu"
+   ],
+   "anchor_refs": [
+    "13:6:9:2"
+   ]
+  },
+  {
+   "class_id": "representation",
+   "occurrence_count": 2,
+   "surface_forms": [
+    "tama`viyla",
+    "t~amaAviylu"
+   ],
+   "anchor_refs": [
+    "34:13:7:2",
+    "21:52:7:2"
+   ]
+  },
+  {
+   "class_id": "form_v_embodiment",
+   "occurrence_count": 1,
+   "surface_forms": [
+    "tamav~ala"
+   ],
+   "anchor_refs": [
+    "19:17:8:2"
+   ]
+  }
+ ],
+ "candidate_root_contribution": "Comparison/equivalence, parable, representation, exemplary, al-muthla, al-mathulat, and Form V embodiment remain partitioned; the 19:17 reconciliation is valid only with its local qualification.",
+ "corrective_judgment": {
+  "revision_id": "BATCH_06_CORRECTIVE_REVISION_2026_09_11",
+  "final_classification": "QUALIFIED_DERIVATIONAL_FAMILY_PARTITION",
+  "source_policy": "QURAN_INTERNAL_ONLY",
+  "historical_independent_review_preserved": true
+ },
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "DERIVATIONAL_FAMILY",
+ "layer_attribution": {
+  "occurrence_evidence": "Direct Batch 06 occurrence refs are listed in root_evidence_refs and resolve in occurrence_dispositions.",
+  "derivation": "Material derivational/form separation is preserved in the root's persisted coverage clusters and corrective partition where present.",
+  "lexical_class": "Corrective claim kind: DERIVATIONAL_FAMILY",
+  "contextual_relation": "Do not turn a locally qualified Form V embodiment reading into a universal root bridge.",
+  "reconciliation": "Historical reconciliation lineage is retained; any current corrective outcome is recorded without deleting the earlier attempt.",
+  "unresolved_resistance": "The original 19:17 reconciliation survives only as VALID_WITH_QUALIFICATION; its preliminary resistance and historical rationale remain intact."
+ },
+ "root_evidence_refs": [
+  "10:27:6:2",
+  "10:24:2:1",
+  "6:38:12:1",
+  "20:63:13:2",
+  "13:6:9:2",
+  "34:13:7:2",
+  "19:17:8:2"
+ ],
+ "root_counterevidence_refs": [
+  "19:17:8:2"
+ ],
+ "hard_cases": [
+  {
+   "word_ref": "19:17:8:2",
+   "role": "QUALIFIED_RECONCILIATION",
+   "reason": "The Form V embodiment occurrence is locally retained without licensing a root-wide bridge."
+  },
+  {
+   "word_ref": "13:6:9:2",
+   "role": "LEXICAL_CLASS_BOUNDARY",
+   "reason": "al-mathulat remains a separately named usage class."
+  }
+ ],
+ "rejection_condition": {
+  "challenging_finding": "19:17:8:2 lacks an overt comparison marker and therefore cannot by itself establish a universal root contribution.",
+  "search_location": "The complete persisted Batch 06 word_ref set for mvl",
+  "verification_method": "Test the proposed bridge only against the listed Quran-internal occurrence evidence and counterevidence.",
+  "confounder_control": "Do not turn a locally qualified Form V embodiment reading into a universal root bridge.",
+  "failure_consequence": "Retain or narrow the result to the named class; do not restore a universal root generalization."
+ },
+ "falsification_status": "PASSED",
+ "reopen_conditions": [
+  "A verified Quran-internal occurrence-level bridge changes a listed class boundary.",
+  "A correction to a referenced occurrence, source binding, or materialized classification changes this judgment's evidence set."
+ ],
+ "purity_status": "NOT_EVALUATED"
 }

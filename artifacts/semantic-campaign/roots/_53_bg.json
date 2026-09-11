@@ -10,9 +10,9 @@
  "occurrences": 3,
  "frozen_candidate_root_contribution": "an imbuing treatment or quality that suffuses and characterizes what receives it",
  "internal_discovery": {
-  "candidate_root_contribution": "an imbuing treatment or quality that suffuses and characterizes what receives it",
-  "plain_explanation": "The two tokens in 2:138 present God's sibgha as a defining imbuement or characterization. The food-context sibgh in 23:20 may denote a condiment; the verse does not itself establish that suffusion/characterization is the root residue there.",
-  "layer_separation_note": "The construct with God supplies the defining religious source in 2:138; the eater construction supplies culinary function in 23:20. These contextual roles must not be folded into the root.",
+  "candidate_root_contribution": null,
+  "plain_explanation": "The two divine sibgha occurrences and the culinary sibgh occurrence remain separate classes; no dye, coloring, or imbuing bridge is presupposed.",
+  "layer_separation_note": "Do not import a dye, coloring, or abstract imbuing bridge between divine sibgha and culinary sibgh.",
   "presence": {
    "occurrences_total": 3,
    "occurrences_checked": 3,
@@ -21,15 +21,15 @@
     "23:20:8:2"
    ]
   },
-  "strongest_counterexample": "23:20:8:2 names sibgh for eaters and can be satisfied by condiment/relish without an explicit coloring or imbuing process.",
+  "strongest_counterexample": "23:20:8:2 supplies culinary function but no Quran-internal bridge to the divine sibgha class.",
   "competing_hypothesis": "Both are forms of permeating coloration or treatment; this is plausible but not demonstrated within the culinary verse.",
   "distinctiveness_note": "Tentatively distinct from simple color by profiling an applied, characterizing treatment; the food occurrence leaves that boundary uncertain.",
   "unresolved_cases": [
    "23:20:8:2"
   ],
-  "result": "PREFERRED",
-  "result_strength": "WEAK",
-  "rationale": "The divine-sibgha class supports the candidate, but one of three occurrences remains resistant.",
+  "result": "UNRESOLVED",
+  "result_strength": "UNRESOLVED",
+  "rationale": "The proposed imbuing bridge depended on an unproved lexical presupposition.",
   "occurrence_classification": {
    "clusters": [
     {
@@ -62,7 +62,8 @@
     }
    ],
    "reconciliation": []
-  }
+  },
+  "strongest_competitor": "Maintain divine sibgha and culinary sibgh as unresolved separate classes."
  },
  "adversarial_verification": {
   "root_buckwalter": "Sbg",
@@ -230,10 +231,10 @@
  ],
  "resistant_deep_analysis": [],
  "authority_level": "RESEARCH_JUDGMENT",
- "research_state": "PREFERRED",
- "result_strength": "WEAK",
+ "research_state": "UNRESOLVED",
+ "result_strength": "UNRESOLVED",
  "research_completeness": "COMPLETE",
- "independent_verification": "PARTIAL",
+ "independent_verification": "NOT_REQUIRED",
  "canonical_authorization": "PENDING",
  "universal_presence_holds": false,
  "unreconciled_occurrences": [
@@ -243,5 +244,68 @@
  "resistant_occurrences": [
   "23:20:8:2"
  ],
- "structural_uncertainty_occurrences": []
+ "structural_uncertainty_occurrences": [],
+ "corrective_lineage": {
+  "revision_id": "BATCH_06_CORRECTIVE_REVISION_2026_09_11",
+  "pre_corrective_root_judgment": {
+   "candidate_root_contribution": "an imbuing treatment or quality that suffuses and characterizes what receives it",
+   "plain_explanation": "The two tokens in 2:138 present God's sibgha as a defining imbuement or characterization. The food-context sibgh in 23:20 may denote a condiment; the verse does not itself establish that suffusion/characterization is the root residue there.",
+   "result": "PREFERRED",
+   "result_strength": "WEAK",
+   "artifact_research_state": "PREFERRED",
+   "artifact_result_strength": "WEAK",
+   "universal_presence_holds": false
+  }
+ },
+ "candidate_root_contribution": null,
+ "corrective_judgment": {
+  "revision_id": "BATCH_06_CORRECTIVE_REVISION_2026_09_11",
+  "final_classification": "DIVINE_SIBGHA_AND_CULINARY_SIBGH_UNRESOLVED_AT_ROOT_LEVEL",
+  "source_policy": "QURAN_INTERNAL_ONLY",
+  "historical_independent_review_preserved": true
+ },
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "LOCAL",
+ "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
+ "layer_attribution": {
+  "occurrence_evidence": "Direct Batch 06 occurrence refs are listed in root_evidence_refs and resolve in occurrence_dispositions.",
+  "derivation": "Material derivational/form separation is preserved in the root's persisted coverage clusters and corrective partition where present.",
+  "lexical_class": "Corrective claim kind: UNRESOLVED_CLASS_ONLY",
+  "contextual_relation": "Do not import a dye, coloring, or abstract imbuing bridge between divine sibgha and culinary sibgh.",
+  "reconciliation": "Historical reconciliation lineage is retained; any current corrective outcome is recorded without deleting the earlier attempt.",
+  "unresolved_resistance": "The proposed imbuing bridge depended on an unproved lexical presupposition."
+ },
+ "root_evidence_refs": [
+  "2:138:1:1",
+  "2:138:7:1",
+  "23:20:8:2"
+ ],
+ "root_counterevidence_refs": [
+  "23:20:8:2"
+ ],
+ "hard_cases": [
+  {
+   "word_ref": "2:138:1:1",
+   "role": "DIVINE_SIBGHA_CLASS",
+   "reason": "Divine sibgha class anchor."
+  },
+  {
+   "word_ref": "23:20:8:2",
+   "role": "CULINARY_SIBGH_CLASS",
+   "reason": "Culinary class anchor and unresolved bridge."
+  }
+ ],
+ "rejection_condition": {
+  "challenging_finding": "23:20:8:2 supplies culinary function but no Quran-internal bridge to the divine sibgha class.",
+  "search_location": "The complete persisted Batch 06 word_ref set for Sbg",
+  "verification_method": "Test the proposed bridge only against the listed Quran-internal occurrence evidence and counterevidence.",
+  "confounder_control": "Do not import a dye, coloring, or abstract imbuing bridge between divine sibgha and culinary sibgh.",
+  "failure_consequence": "Retain or narrow the result to the named class; do not restore a universal root generalization."
+ },
+ "falsification_status": "NOT_REQUIRED",
+ "reopen_conditions": [
+  "A verified Quran-internal occurrence-level bridge changes a listed class boundary.",
+  "A correction to a referenced occurrence, source binding, or materialized classification changes this judgment's evidence set."
+ ],
+ "purity_status": "NOT_EVALUATED"
 }

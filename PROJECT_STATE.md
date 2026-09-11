@@ -994,3 +994,33 @@ semantic-results review against the exact final Batch 06 commit returned in the
 handoff, prioritizing all 5 UNRESOLVED roots, 7 WEAK roots, 2 reconciliation
 lineages, and the high-frequency STRONG/MODERATE class boundaries. That review
 is not automatically authorized by this checkpoint.
+
+## Batch 06 Corrective Revision Checkpoint (2026-09-11)
+
+- Corrective baseline: `5c95def0012d4cb938973e37aecfce83b5aeb3d5` on
+  `semantic-campaign-batch06`; the owner-authorized scope is exactly ten
+  blocking semantic targets and persisted contract completion for the frozen
+  40-root / 3,098-occurrence Batch 06 set.
+- The durable corrective plan is
+  `artifacts/semantic-campaign/BATCH_06_CORRECTIVE_JUDGMENTS.json`; the replay
+  command is `python -m tools.campaign apply-batch06-corrective --repo-root .`.
+  It neither selects a population nor reads ignored scratch.
+- All 40 artifacts now have the validated root-judgment contract with resolved
+  evidence/counterevidence/hard-case references and `purity_status =
+  NOT_EVALUATED`. The semantic runtime SHA remains
+  `01784170cac4e715c1477cb6a04a2c34b21c4bdb91705aa1eb6b2a896efcedbd`.
+- Corrected outcomes: 12 STRONG / 8 MODERATE / 9 WEAK / 11 UNRESOLVED, with
+  565 final RESISTANT occurrences. `kvr` 108:1:3:2, `fSl` 70:13:1:2, and
+  `wlj` 9:16:20:1 are RESISTANT. The historical `mvl` reconciliation is
+  `VALID_WITH_QUALIFICATION`; the historical `wlj` attempt is retained but its
+  current result is `INVALID_INSUFFICIENT_QURAN_INTERNAL_BRIDGE`.
+- The original independent semantic-results review is preserved as historical
+  evidence. The new report is `docs/LISAN3_BATCH_06_CORRECTIVE_REVISION.md`.
+  No canonicalization, merge, push, release, purity campaign, or Batch 07 work
+  is authorized.
+
+## Current Exact Next Action
+
+Stop. After this checkpoint is committed, run a fresh independent read-only
+review of that exact commit. Do not merge, push, start Batch 07, or
+canonicalize.

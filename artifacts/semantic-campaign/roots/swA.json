@@ -10,22 +10,25 @@
  "occurrences": 167,
  "frozen_candidate_root_contribution": "an adverse or worsening quality by which a condition, act, outcome, or exposed thing is experienced or judged as bad",
  "internal_discovery": {
-  "candidate_root_contribution": "an adverse or worsening quality by which a condition, act, outcome, or exposed thing is experienced or judged as bad",
-  "plain_explanation": "Across 167 occurrences, noun and adjective families denote evil, bad acts, harms, shameful exposure, or an adverse outcome; base verbs say a state is bad or someone is distressed, and Form IV produces or embodies badness.",
-  "layer_separation_note": "Nominal patterns distribute bad act, harm, and shameful thing; verb voice and Form IV distribute undergoing or causing badness. Context supplies moral, physical, or reputational domain rather than separate root meanings.",
+  "candidate_root_contribution": null,
+  "plain_explanation": "The seven exposed-private-parts occurrences are partitioned from adverse/badness classes. Contextual shame does not establish a root-wide adverse-quality core.",
+  "layer_separation_note": "Do not derive private-part vocabulary from adverse moral or evaluative context.",
   "presence": {
    "occurrences_total": 167,
    "occurrences_checked": 167,
    "occurrences_consistent": 167,
    "inconsistent_refs": []
   },
-  "strongest_counterexample": "The exposed-private-parts family is concrete and referential, but the verses frame exposure as shameful/adverse, preserving the negative-quality residue.",
+  "strongest_counterexample": "The seven exposed-private-parts occurrences retain concrete referents while the adverse/badness classes retain evaluative or outcome readings.",
   "competing_hypothesis": "The core is moral evil only; physical distress, harmful outcome, and exposed-body contexts refute that restriction.",
   "distinctiveness_note": "Distinct from sin as liability and harm as damage; swA marks adverse badness or worsening evaluation across those domains.",
-  "unresolved_cases": [],
-  "result": "PREFERRED",
-  "result_strength": "MODERATE",
-  "rationale": "A negative/adverse nucleus survives every class, though it is evaluative and therefore less sharply bounded than a concrete core.",
+  "unresolved_cases": [
+   "5:31:10:1",
+   "20:121:5:1"
+  ],
+  "result": "UNRESOLVED",
+  "result_strength": "UNRESOLVED",
+  "rationale": "The prior root core used contextual negativity to absorb a distinct lexicalized class.",
   "occurrence_classification": {
    "clusters": [
     {
@@ -39,10 +42,10 @@
        null
       ]
      },
-     "occurrence_count_expected": 131,
+     "occurrence_count_expected": 124,
      "disposition": "CONSISTENT",
      "candidate_semantic_interpretation": "bad act, adverse quality/outcome, harm, or shameful exposed thing",
-     "classification_rationale": "The nominal and adjectival contexts share explicit negative evaluation or adverse exposure.",
+     "classification_rationale": "Adverse and badness readings remain a separate lexicalized class after the exposed-private-parts occurrences are removed.",
      "supporting_evidence_note": "All 131 underived nominal/adjectival contexts were reviewed by recurrent surface family and verse setting.",
      "counterevidence": [
       "The family ranges across moral, physical, and reputational domains."
@@ -78,10 +81,33 @@
      "classification_rationale": "Form IV and its agent noun retain production or embodiment of adverse badness.",
      "supporting_evidence_note": "All six Form IV verbal/nominal contexts were reviewed.",
      "counterevidence": []
+    },
+    {
+     "cluster_id": "exposed_private_parts",
+     "where": {
+      "word_refs": [
+       "20:121:5:1",
+       "5:31:10:1",
+       "5:31:21:1",
+       "7:20:10:1",
+       "7:22:8:1",
+       "7:26:8:1",
+       "7:27:15:1"
+      ]
+     },
+     "occurrence_count_expected": 7,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "exposed private parts as a separate lexicalized class",
+     "classification_rationale": "These seven records retain concrete referents and are not absorbed into adverse/badness by contextual shame.",
+     "supporting_evidence_note": "The seven exact word_refs are preserved in the corrective partition.",
+     "counterevidence": [
+      "No Quran-internal root bridge from exposed-private-parts to adverse/badness is asserted."
+     ]
     }
    ],
    "reconciliation": []
-  }
+  },
+  "strongest_competitor": "Maintain the exposed-private-parts class and adverse/badness classes separately pending a Quran-internal bridge."
  },
  "adversarial_verification": {
   "root_buckwalter": "swA",
@@ -1767,11 +1793,11 @@
    "word_ref": "20:121:5:1",
    "disposition": "CONSISTENT",
    "note": "The nominal and adjectival contexts share explicit negative evaluation or adverse exposure.",
-   "coverage_cluster_id": "adverse_nominals",
-   "candidate_semantic_interpretation": "bad act, adverse quality/outcome, harm, or shameful exposed thing",
-   "cluster_supporting_evidence": "All 131 underived nominal/adjectival contexts were reviewed by recurrent surface family and verse setting.",
+   "coverage_cluster_id": "exposed_private_parts",
+   "candidate_semantic_interpretation": "exposed private parts as a separate lexicalized class",
+   "cluster_supporting_evidence": "This exact word_ref belongs to the seven-record exposed-private-parts partition.",
    "counterevidence": [
-    "The family ranges across moral, physical, and reputational domains."
+    "No Quran-internal root bridge to adverse/badness is asserted."
    ],
    "preliminary_disposition": "CONSISTENT",
    "preliminary_note": "The nominal and adjectival contexts share explicit negative evaluation or adverse exposure.",
@@ -1779,7 +1805,7 @@
    "reconciliation_rationale": null,
    "reconciliation_lineage": [],
    "verifier_objection": [
-    "The family ranges across moral, physical, and reputational domains."
+    "No Quran-internal root bridge to adverse/badness is asserted."
    ],
    "supporting_evidence": [
     {
@@ -1808,7 +1834,8 @@
     "extraction_version": "qac-0.4-import-v1",
     "attribution_status": "CONFIRMED"
    },
-   "verse_text": "فَأَكَلَا مِنْهَا فَبَدَتْ لَهُمَا سَوْءَٰتُهُمَا وَطَفِقَا يَخْصِفَانِ عَلَيْهِمَا مِن وَرَقِ ٱلْجَنَّةِ وَعَصَىٰٓ ءَادَمُ رَبَّهُۥ فَغَوَىٰ"
+   "verse_text": "فَأَكَلَا مِنْهَا فَبَدَتْ لَهُمَا سَوْءَٰتُهُمَا وَطَفِقَا يَخْصِفَانِ عَلَيْهِمَا مِن وَرَقِ ٱلْجَنَّةِ وَعَصَىٰٓ ءَادَمُ رَبَّهُۥ فَغَوَىٰ",
+   "classification_rationale": "Corrective partition preserves the concrete exposed-private-parts class without deriving it from adverse context."
   },
   {
    "word_ref": "20:22:9:1",
@@ -6199,11 +6226,11 @@
    "word_ref": "5:31:10:1",
    "disposition": "CONSISTENT",
    "note": "The nominal and adjectival contexts share explicit negative evaluation or adverse exposure.",
-   "coverage_cluster_id": "adverse_nominals",
-   "candidate_semantic_interpretation": "bad act, adverse quality/outcome, harm, or shameful exposed thing",
-   "cluster_supporting_evidence": "All 131 underived nominal/adjectival contexts were reviewed by recurrent surface family and verse setting.",
+   "coverage_cluster_id": "exposed_private_parts",
+   "candidate_semantic_interpretation": "exposed private parts as a separate lexicalized class",
+   "cluster_supporting_evidence": "This exact word_ref belongs to the seven-record exposed-private-parts partition.",
    "counterevidence": [
-    "The family ranges across moral, physical, and reputational domains."
+    "No Quran-internal root bridge to adverse/badness is asserted."
    ],
    "preliminary_disposition": "CONSISTENT",
    "preliminary_note": "The nominal and adjectival contexts share explicit negative evaluation or adverse exposure.",
@@ -6211,7 +6238,7 @@
    "reconciliation_rationale": null,
    "reconciliation_lineage": [],
    "verifier_objection": [
-    "The family ranges across moral, physical, and reputational domains."
+    "No Quran-internal root bridge to adverse/badness is asserted."
    ],
    "supporting_evidence": [
     {
@@ -6240,17 +6267,18 @@
     "extraction_version": "qac-0.4-import-v1",
     "attribution_status": "CONFIRMED"
    },
-   "verse_text": "فَبَعَثَ ٱللَّهُ غُرَابًا يَبْحَثُ فِى ٱلْأَرْضِ لِيُرِيَهُۥ كَيْفَ يُوَٰرِى سَوْءَةَ أَخِيهِ قَالَ يَٰوَيْلَتَىٰٓ أَعَجَزْتُ أَنْ أَكُونَ مِثْلَ هَٰذَا ٱلْغُرَابِ فَأُوَٰرِىَ سَوْءَةَ أَخِى فَأَصْبَحَ مِنَ ٱلنَّٰدِمِينَ"
+   "verse_text": "فَبَعَثَ ٱللَّهُ غُرَابًا يَبْحَثُ فِى ٱلْأَرْضِ لِيُرِيَهُۥ كَيْفَ يُوَٰرِى سَوْءَةَ أَخِيهِ قَالَ يَٰوَيْلَتَىٰٓ أَعَجَزْتُ أَنْ أَكُونَ مِثْلَ هَٰذَا ٱلْغُرَابِ فَأُوَٰرِىَ سَوْءَةَ أَخِى فَأَصْبَحَ مِنَ ٱلنَّٰدِمِينَ",
+   "classification_rationale": "Corrective partition preserves the concrete exposed-private-parts class without deriving it from adverse context."
   },
   {
    "word_ref": "5:31:21:1",
    "disposition": "CONSISTENT",
    "note": "The nominal and adjectival contexts share explicit negative evaluation or adverse exposure.",
-   "coverage_cluster_id": "adverse_nominals",
-   "candidate_semantic_interpretation": "bad act, adverse quality/outcome, harm, or shameful exposed thing",
-   "cluster_supporting_evidence": "All 131 underived nominal/adjectival contexts were reviewed by recurrent surface family and verse setting.",
+   "coverage_cluster_id": "exposed_private_parts",
+   "candidate_semantic_interpretation": "exposed private parts as a separate lexicalized class",
+   "cluster_supporting_evidence": "This exact word_ref belongs to the seven-record exposed-private-parts partition.",
    "counterevidence": [
-    "The family ranges across moral, physical, and reputational domains."
+    "No Quran-internal root bridge to adverse/badness is asserted."
    ],
    "preliminary_disposition": "CONSISTENT",
    "preliminary_note": "The nominal and adjectival contexts share explicit negative evaluation or adverse exposure.",
@@ -6258,7 +6286,7 @@
    "reconciliation_rationale": null,
    "reconciliation_lineage": [],
    "verifier_objection": [
-    "The family ranges across moral, physical, and reputational domains."
+    "No Quran-internal root bridge to adverse/badness is asserted."
    ],
    "supporting_evidence": [
     {
@@ -6287,7 +6315,8 @@
     "extraction_version": "qac-0.4-import-v1",
     "attribution_status": "CONFIRMED"
    },
-   "verse_text": "فَبَعَثَ ٱللَّهُ غُرَابًا يَبْحَثُ فِى ٱلْأَرْضِ لِيُرِيَهُۥ كَيْفَ يُوَٰرِى سَوْءَةَ أَخِيهِ قَالَ يَٰوَيْلَتَىٰٓ أَعَجَزْتُ أَنْ أَكُونَ مِثْلَ هَٰذَا ٱلْغُرَابِ فَأُوَٰرِىَ سَوْءَةَ أَخِى فَأَصْبَحَ مِنَ ٱلنَّٰدِمِينَ"
+   "verse_text": "فَبَعَثَ ٱللَّهُ غُرَابًا يَبْحَثُ فِى ٱلْأَرْضِ لِيُرِيَهُۥ كَيْفَ يُوَٰرِى سَوْءَةَ أَخِيهِ قَالَ يَٰوَيْلَتَىٰٓ أَعَجَزْتُ أَنْ أَكُونَ مِثْلَ هَٰذَا ٱلْغُرَابِ فَأُوَٰرِىَ سَوْءَةَ أَخِى فَأَصْبَحَ مِنَ ٱلنَّٰدِمِينَ",
+   "classification_rationale": "Corrective partition preserves the concrete exposed-private-parts class without deriving it from adverse context."
   },
   {
    "word_ref": "5:65:9:1",
@@ -7256,11 +7285,11 @@
    "word_ref": "7:20:10:1",
    "disposition": "CONSISTENT",
    "note": "The nominal and adjectival contexts share explicit negative evaluation or adverse exposure.",
-   "coverage_cluster_id": "adverse_nominals",
-   "candidate_semantic_interpretation": "bad act, adverse quality/outcome, harm, or shameful exposed thing",
-   "cluster_supporting_evidence": "All 131 underived nominal/adjectival contexts were reviewed by recurrent surface family and verse setting.",
+   "coverage_cluster_id": "exposed_private_parts",
+   "candidate_semantic_interpretation": "exposed private parts as a separate lexicalized class",
+   "cluster_supporting_evidence": "This exact word_ref belongs to the seven-record exposed-private-parts partition.",
    "counterevidence": [
-    "The family ranges across moral, physical, and reputational domains."
+    "No Quran-internal root bridge to adverse/badness is asserted."
    ],
    "preliminary_disposition": "CONSISTENT",
    "preliminary_note": "The nominal and adjectival contexts share explicit negative evaluation or adverse exposure.",
@@ -7268,7 +7297,7 @@
    "reconciliation_rationale": null,
    "reconciliation_lineage": [],
    "verifier_objection": [
-    "The family ranges across moral, physical, and reputational domains."
+    "No Quran-internal root bridge to adverse/badness is asserted."
    ],
    "supporting_evidence": [
     {
@@ -7297,17 +7326,18 @@
     "extraction_version": "qac-0.4-import-v1",
     "attribution_status": "CONFIRMED"
    },
-   "verse_text": "فَوَسْوَسَ لَهُمَا ٱلشَّيْطَٰنُ لِيُبْدِىَ لَهُمَا مَا وُۥرِىَ عَنْهُمَا مِن سَوْءَٰتِهِمَا وَقَالَ مَا نَهَىٰكُمَا رَبُّكُمَا عَنْ هَٰذِهِ ٱلشَّجَرَةِ إِلَّآ أَن تَكُونَا مَلَكَيْنِ أَوْ تَكُونَا مِنَ ٱلْخَٰلِدِينَ"
+   "verse_text": "فَوَسْوَسَ لَهُمَا ٱلشَّيْطَٰنُ لِيُبْدِىَ لَهُمَا مَا وُۥرِىَ عَنْهُمَا مِن سَوْءَٰتِهِمَا وَقَالَ مَا نَهَىٰكُمَا رَبُّكُمَا عَنْ هَٰذِهِ ٱلشَّجَرَةِ إِلَّآ أَن تَكُونَا مَلَكَيْنِ أَوْ تَكُونَا مِنَ ٱلْخَٰلِدِينَ",
+   "classification_rationale": "Corrective partition preserves the concrete exposed-private-parts class without deriving it from adverse context."
   },
   {
    "word_ref": "7:22:8:1",
    "disposition": "CONSISTENT",
    "note": "The nominal and adjectival contexts share explicit negative evaluation or adverse exposure.",
-   "coverage_cluster_id": "adverse_nominals",
-   "candidate_semantic_interpretation": "bad act, adverse quality/outcome, harm, or shameful exposed thing",
-   "cluster_supporting_evidence": "All 131 underived nominal/adjectival contexts were reviewed by recurrent surface family and verse setting.",
+   "coverage_cluster_id": "exposed_private_parts",
+   "candidate_semantic_interpretation": "exposed private parts as a separate lexicalized class",
+   "cluster_supporting_evidence": "This exact word_ref belongs to the seven-record exposed-private-parts partition.",
    "counterevidence": [
-    "The family ranges across moral, physical, and reputational domains."
+    "No Quran-internal root bridge to adverse/badness is asserted."
    ],
    "preliminary_disposition": "CONSISTENT",
    "preliminary_note": "The nominal and adjectival contexts share explicit negative evaluation or adverse exposure.",
@@ -7315,7 +7345,7 @@
    "reconciliation_rationale": null,
    "reconciliation_lineage": [],
    "verifier_objection": [
-    "The family ranges across moral, physical, and reputational domains."
+    "No Quran-internal root bridge to adverse/badness is asserted."
    ],
    "supporting_evidence": [
     {
@@ -7344,17 +7374,18 @@
     "extraction_version": "qac-0.4-import-v1",
     "attribution_status": "CONFIRMED"
    },
-   "verse_text": "فَدَلَّىٰهُمَا بِغُرُورٍ فَلَمَّا ذَاقَا ٱلشَّجَرَةَ بَدَتْ لَهُمَا سَوْءَٰتُهُمَا وَطَفِقَا يَخْصِفَانِ عَلَيْهِمَا مِن وَرَقِ ٱلْجَنَّةِ وَنَادَىٰهُمَا رَبُّهُمَآ أَلَمْ أَنْهَكُمَا عَن تِلْكُمَا ٱلشَّجَرَةِ وَأَقُل لَّكُمَآ إِنَّ ٱلشَّيْطَٰنَ لَكُمَا عَدُوٌّ مُّبِينٌ"
+   "verse_text": "فَدَلَّىٰهُمَا بِغُرُورٍ فَلَمَّا ذَاقَا ٱلشَّجَرَةَ بَدَتْ لَهُمَا سَوْءَٰتُهُمَا وَطَفِقَا يَخْصِفَانِ عَلَيْهِمَا مِن وَرَقِ ٱلْجَنَّةِ وَنَادَىٰهُمَا رَبُّهُمَآ أَلَمْ أَنْهَكُمَا عَن تِلْكُمَا ٱلشَّجَرَةِ وَأَقُل لَّكُمَآ إِنَّ ٱلشَّيْطَٰنَ لَكُمَا عَدُوٌّ مُّبِينٌ",
+   "classification_rationale": "Corrective partition preserves the concrete exposed-private-parts class without deriving it from adverse context."
   },
   {
    "word_ref": "7:26:8:1",
    "disposition": "CONSISTENT",
    "note": "The nominal and adjectival contexts share explicit negative evaluation or adverse exposure.",
-   "coverage_cluster_id": "adverse_nominals",
-   "candidate_semantic_interpretation": "bad act, adverse quality/outcome, harm, or shameful exposed thing",
-   "cluster_supporting_evidence": "All 131 underived nominal/adjectival contexts were reviewed by recurrent surface family and verse setting.",
+   "coverage_cluster_id": "exposed_private_parts",
+   "candidate_semantic_interpretation": "exposed private parts as a separate lexicalized class",
+   "cluster_supporting_evidence": "This exact word_ref belongs to the seven-record exposed-private-parts partition.",
    "counterevidence": [
-    "The family ranges across moral, physical, and reputational domains."
+    "No Quran-internal root bridge to adverse/badness is asserted."
    ],
    "preliminary_disposition": "CONSISTENT",
    "preliminary_note": "The nominal and adjectival contexts share explicit negative evaluation or adverse exposure.",
@@ -7362,7 +7393,7 @@
    "reconciliation_rationale": null,
    "reconciliation_lineage": [],
    "verifier_objection": [
-    "The family ranges across moral, physical, and reputational domains."
+    "No Quran-internal root bridge to adverse/badness is asserted."
    ],
    "supporting_evidence": [
     {
@@ -7391,17 +7422,18 @@
     "extraction_version": "qac-0.4-import-v1",
     "attribution_status": "CONFIRMED"
    },
-   "verse_text": "يَٰبَنِىٓ ءَادَمَ قَدْ أَنزَلْنَا عَلَيْكُمْ لِبَاسًا يُوَٰرِى سَوْءَٰتِكُمْ وَرِيشًا وَلِبَاسُ ٱلتَّقْوَىٰ ذَٰلِكَ خَيْرٌ ذَٰلِكَ مِنْ ءَايَٰتِ ٱللَّهِ لَعَلَّهُمْ يَذَّكَّرُونَ"
+   "verse_text": "يَٰبَنِىٓ ءَادَمَ قَدْ أَنزَلْنَا عَلَيْكُمْ لِبَاسًا يُوَٰرِى سَوْءَٰتِكُمْ وَرِيشًا وَلِبَاسُ ٱلتَّقْوَىٰ ذَٰلِكَ خَيْرٌ ذَٰلِكَ مِنْ ءَايَٰتِ ٱللَّهِ لَعَلَّهُمْ يَذَّكَّرُونَ",
+   "classification_rationale": "Corrective partition preserves the concrete exposed-private-parts class without deriving it from adverse context."
   },
   {
    "word_ref": "7:27:15:1",
    "disposition": "CONSISTENT",
    "note": "The nominal and adjectival contexts share explicit negative evaluation or adverse exposure.",
-   "coverage_cluster_id": "adverse_nominals",
-   "candidate_semantic_interpretation": "bad act, adverse quality/outcome, harm, or shameful exposed thing",
-   "cluster_supporting_evidence": "All 131 underived nominal/adjectival contexts were reviewed by recurrent surface family and verse setting.",
+   "coverage_cluster_id": "exposed_private_parts",
+   "candidate_semantic_interpretation": "exposed private parts as a separate lexicalized class",
+   "cluster_supporting_evidence": "This exact word_ref belongs to the seven-record exposed-private-parts partition.",
    "counterevidence": [
-    "The family ranges across moral, physical, and reputational domains."
+    "No Quran-internal root bridge to adverse/badness is asserted."
    ],
    "preliminary_disposition": "CONSISTENT",
    "preliminary_note": "The nominal and adjectival contexts share explicit negative evaluation or adverse exposure.",
@@ -7409,7 +7441,7 @@
    "reconciliation_rationale": null,
    "reconciliation_lineage": [],
    "verifier_objection": [
-    "The family ranges across moral, physical, and reputational domains."
+    "No Quran-internal root bridge to adverse/badness is asserted."
    ],
    "supporting_evidence": [
     {
@@ -7438,7 +7470,8 @@
     "extraction_version": "qac-0.4-import-v1",
     "attribution_status": "CONFIRMED"
    },
-   "verse_text": "يَٰبَنِىٓ ءَادَمَ لَا يَفْتِنَنَّكُمُ ٱلشَّيْطَٰنُ كَمَآ أَخْرَجَ أَبَوَيْكُم مِّنَ ٱلْجَنَّةِ يَنزِعُ عَنْهُمَا لِبَاسَهُمَا لِيُرِيَهُمَا سَوْءَٰتِهِمَآ إِنَّهُۥ يَرَىٰكُمْ هُوَ وَقَبِيلُهُۥ مِنْ حَيْثُ لَا تَرَوْنَهُمْ إِنَّا جَعَلْنَا ٱلشَّيَٰطِينَ أَوْلِيَآءَ لِلَّذِينَ لَا يُؤْمِنُونَ"
+   "verse_text": "يَٰبَنِىٓ ءَادَمَ لَا يَفْتِنَنَّكُمُ ٱلشَّيْطَٰنُ كَمَآ أَخْرَجَ أَبَوَيْكُم مِّنَ ٱلْجَنَّةِ يَنزِعُ عَنْهُمَا لِبَاسَهُمَا لِيُرِيَهُمَا سَوْءَٰتِهِمَآ إِنَّهُۥ يَرَىٰكُمْ هُوَ وَقَبِيلُهُۥ مِنْ حَيْثُ لَا تَرَوْنَهُمْ إِنَّا جَعَلْنَا ٱلشَّيَٰطِينَ أَوْلِيَآءَ لِلَّذِينَ لَا يُؤْمِنُونَ",
+   "classification_rationale": "Corrective partition preserves the concrete exposed-private-parts class without deriving it from adverse context."
   },
   {
    "word_ref": "7:73:31:2",
@@ -7811,14 +7844,80 @@
  ],
  "resistant_deep_analysis": [],
  "authority_level": "RESEARCH_JUDGMENT",
- "research_state": "PREFERRED",
- "result_strength": "MODERATE",
+ "research_state": "UNRESOLVED",
+ "result_strength": "UNRESOLVED",
  "research_completeness": "COMPLETE",
- "independent_verification": "PASSED",
+ "independent_verification": "NOT_REQUIRED",
  "canonical_authorization": "PENDING",
- "universal_presence_holds": true,
+ "universal_presence_holds": false,
  "unreconciled_occurrences": [],
  "unreconciled_count": 0,
  "resistant_occurrences": [],
- "structural_uncertainty_occurrences": []
+ "structural_uncertainty_occurrences": [],
+ "corrective_lineage": {
+  "revision_id": "BATCH_06_CORRECTIVE_REVISION_2026_09_11",
+  "pre_corrective_root_judgment": {
+   "candidate_root_contribution": "an adverse or worsening quality by which a condition, act, outcome, or exposed thing is experienced or judged as bad",
+   "plain_explanation": "Across 167 occurrences, noun and adjective families denote evil, bad acts, harms, shameful exposure, or an adverse outcome; base verbs say a state is bad or someone is distressed, and Form IV produces or embodies badness.",
+   "result": "PREFERRED",
+   "result_strength": "MODERATE",
+   "artifact_research_state": "PREFERRED",
+   "artifact_result_strength": "MODERATE",
+   "universal_presence_holds": true
+  }
+ },
+ "candidate_root_contribution": null,
+ "corrective_judgment": {
+  "revision_id": "BATCH_06_CORRECTIVE_REVISION_2026_09_11",
+  "final_classification": "EXPOSED_PRIVATE_PARTS_AND_ADVERSE_CLASSES_UNRESOLVED_AT_ROOT_LEVEL",
+  "source_policy": "QURAN_INTERNAL_ONLY",
+  "historical_independent_review_preserved": true
+ },
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "LOCAL",
+ "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
+ "layer_attribution": {
+  "occurrence_evidence": "Direct Batch 06 occurrence refs are listed in root_evidence_refs and resolve in occurrence_dispositions.",
+  "derivation": "Material derivational/form separation is preserved in the root's persisted coverage clusters and corrective partition where present.",
+  "lexical_class": "Corrective claim kind: UNRESOLVED_CLASS_ONLY",
+  "contextual_relation": "Do not derive private-part vocabulary from adverse moral or evaluative context.",
+  "reconciliation": "Historical reconciliation lineage is retained; any current corrective outcome is recorded without deleting the earlier attempt.",
+  "unresolved_resistance": "The prior root core used contextual negativity to absorb a distinct lexicalized class."
+ },
+ "root_evidence_refs": [
+  "5:31:10:1",
+  "20:121:5:1",
+  "10:27:3:2",
+  "11:77:5:1",
+  "17:7:6:1"
+ ],
+ "root_counterevidence_refs": [
+  "5:31:10:1",
+  "20:121:5:1"
+ ],
+ "hard_cases": [
+  {
+   "word_ref": "5:31:10:1",
+   "role": "EXPOSED_PRIVATE_PARTS",
+   "reason": "Concrete exposed-private-parts class anchor."
+  },
+  {
+   "word_ref": "10:27:3:2",
+   "role": "ADVERSE_CLASS",
+   "reason": "Adverse/badness class anchor."
+  }
+ ],
+ "rejection_condition": {
+  "challenging_finding": "The seven exposed-private-parts occurrences retain concrete referents while the adverse/badness classes retain evaluative or outcome readings.",
+  "search_location": "The complete persisted Batch 06 word_ref set for swA",
+  "verification_method": "Test the proposed bridge only against the listed Quran-internal occurrence evidence and counterevidence.",
+  "confounder_control": "Do not derive private-part vocabulary from adverse moral or evaluative context.",
+  "failure_consequence": "Retain or narrow the result to the named class; do not restore a universal root generalization."
+ },
+ "falsification_status": "NOT_REQUIRED",
+ "reopen_conditions": [
+  "A verified Quran-internal occurrence-level bridge changes a listed class boundary.",
+  "A correction to a referenced occurrence, source binding, or materialized classification changes this judgment's evidence set."
+ ],
+ "purity_status": "NOT_EVALUATED"
 }

@@ -772,5 +772,57 @@
   "61:14:18:2",
   "84:14:5:1"
  ],
- "structural_uncertainty_occurrences": []
+ "structural_uncertainty_occurrences": [],
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "LOCAL",
+ "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
+ "layer_attribution": {
+  "occurrence_evidence": "Exact word_ref-level evidence is persisted in occurrence_dispositions.",
+  "derivation": "QAC materialized form clusters: dialogue, hawariyyun, hur, return",
+  "lexical_class": "Each occurrence remains attached to one persisted coverage cluster.",
+  "contextual_relation": "Canonical Tanzil verse_text is retained on every occurrence record.",
+  "reconciliation": "No historical reconciliation record is present.",
+  "unresolved_resistance": "Final resistance remains persisted for: 18:34:7:1, 18:37:5:1, 3:52:12:2, 44:54:3:2, 52:20:6:2, 55:72:1:1, 56:22:1:2, 58:1:14:1, 5:111:4:2, 5:112:3:2, 61:14:12:3, 61:14:18:2, 84:14:5:1"
+ },
+ "root_evidence_refs": [
+  "18:34:7:1",
+  "3:52:12:2",
+  "44:54:3:2",
+  "84:14:5:1"
+ ],
+ "root_counterevidence_refs": [
+  "18:34:7:1",
+  "18:37:5:1",
+  "3:52:12:2",
+  "44:54:3:2",
+  "52:20:6:2",
+  "55:72:1:1",
+  "56:22:1:2",
+  "58:1:14:1",
+  "5:111:4:2",
+  "5:112:3:2",
+  "61:14:12:3",
+  "61:14:18:2",
+  "84:14:5:1"
+ ],
+ "hard_cases": [
+  {
+   "word_ref": "18:34:7:1",
+   "role": "PERSISTED_STRESS_CASE",
+   "reason": "The hur nouns in garden contexts have no return/dialogue role, and the hawariyyun group name is not semantically decomposed by its verses."
+  }
+ ],
+ "rejection_condition": {
+  "challenging_finding": "A confirmed occurrence lacks the claimed contribution after the recorded class partition.",
+  "search_location": "The complete persisted Batch 06 word_ref set for this root.",
+  "verification_method": "Compare each claimed class against its persisted occurrence evidence and counterevidence.",
+  "confounder_control": "Keep derivation, lexical class, construction, and local context separate from root contribution.",
+  "failure_consequence": "Narrow the claim to the surviving class or record the root result as unresolved."
+ },
+ "falsification_status": "NOT_REQUIRED",
+ "reopen_conditions": [
+  "A verified Quran-internal occurrence-level bridge changes a listed class boundary.",
+  "A correction to a referenced occurrence, source binding, or materialized classification changes this judgment's evidence set."
+ ],
+ "purity_status": "NOT_EVALUATED"
 }

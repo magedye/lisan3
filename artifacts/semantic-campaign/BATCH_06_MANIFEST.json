@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "batch_id": "batch06",
-  "status": "COMPLETE_READY_FOR_FRESH_INDEPENDENT_SEMANTIC_RESULTS_REVIEW",
+  "status": "BATCH_06_CORRECTIVE_REVISION_READY_FOR_FRESH_REVIEW",
   "authorized_by": "Owner Batch 06 execution instruction dated 2026-09-10",
   "starting_main_sha": "6f895bf0754190a423512b7478ced5bf7bd4a266",
   "branch": "semantic-campaign-batch06",
@@ -70,13 +70,13 @@
     }
   },
   "final_checkpoint": {
-    "status": "VERIFIED",
+    "status": "CORRECTIVE_REVISION_APPLIED",
     "roots": 40,
     "occurrences": 3098,
     "coverage_exact_set_recomputed_against_live_store": true,
-    "outcomes": {"STRONG": 13, "MODERATE": 15, "WEAK": 7, "UNRESOLVED": 5},
+    "outcomes": {"STRONG": 12, "MODERATE": 8, "WEAK": 9, "UNRESOLVED": 11},
     "contested_occurrences": 564,
-    "resistant_occurrences": 562,
+    "resistant_occurrences": 565,
     "reconciliation_lineage_records": 2,
     "occurrence_provenance_contract": {
       "records_checked": 3098,
@@ -88,8 +88,25 @@
     "prior_root_artifacts_modified": 0,
     "casefold_unique_artifact_names": 40,
     "root_universe_casefold_unique": "1642/1642",
-    "report": "docs/LISAN3_BATCH_06_SEMANTIC_CAMPAIGN_REPORT.md",
-    "review_state": "READY_FOR_FRESH_INDEPENDENT_REVIEW_NOT_YET_INDEPENDENTLY_REVIEWED"
+    "report": "docs/LISAN3_BATCH_06_CORRECTIVE_REVISION.md",
+    "review_state": "BATCH_06_CORRECTIVE_REVISION_READY_FOR_FRESH_REVIEW_NOT_YET_INDEPENDENTLY_REVIEWED"
+  },
+  "corrective_revision": {
+    "revision_id": "BATCH_06_CORRECTIVE_REVISION_2026_09_11",
+    "target_roots": [
+      "Ezr",
+      "Hfw",
+      "Sbg",
+      "Sgr",
+      "fSl",
+      "kvr",
+      "mvl",
+      "qlb",
+      "swA",
+      "wlj"
+    ],
+    "source_policy": "QURAN_INTERNAL_ONLY",
+    "purity_status": "NOT_EVALUATED"
   },
   "roots": [
     {"selection_index": 1, "wave": 1, "root_arabic": "ش ي ا", "root_buckwalter": "$yA", "root_id": "$yA", "artifact_name": "$yA.json", "confirmed_occurrences": 519, "tier": "xl"},

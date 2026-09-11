@@ -685,5 +685,43 @@
  "unreconciled_occurrences": [],
  "unreconciled_count": 0,
  "resistant_occurrences": [],
- "structural_uncertainty_occurrences": []
+ "structural_uncertainty_occurrences": [],
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "UNIVERSAL",
+ "claim_scope_kind": "ROOT_GENERALIZATION",
+ "layer_attribution": {
+  "occurrence_evidence": "Exact word_ref-level evidence is persisted in occurrence_dispositions.",
+  "derivation": "QAC materialized form clusters: hold_fast, protect_verbs, protecting_hold, seek_protection",
+  "lexical_class": "Each occurrence remains attached to one persisted coverage cluster.",
+  "contextual_relation": "Canonical Tanzil verse_text is retained on every occurrence record.",
+  "reconciliation": "No historical reconciliation record is present.",
+  "unresolved_resistance": "No final resistant occurrence is currently persisted."
+ },
+ "root_evidence_refs": [
+  "10:27:14:1",
+  "11:43:5:1",
+  "12:32:10:2",
+  "22:78:37:2"
+ ],
+ "root_counterevidence_refs": [],
+ "hard_cases": [
+  {
+   "word_ref": "10:27:14:1",
+   "role": "PERSISTED_STRESS_CASE",
+   "reason": "Holding fast to God/rope is not protection by a separate agent, but still maintains a bond that prevents separation."
+  }
+ ],
+ "rejection_condition": {
+  "challenging_finding": "A confirmed occurrence lacks the claimed contribution after the recorded class partition.",
+  "search_location": "The complete persisted Batch 06 word_ref set for this root.",
+  "verification_method": "Compare each claimed class against its persisted occurrence evidence and counterevidence.",
+  "confounder_control": "Keep derivation, lexical class, construction, and local context separate from root contribution.",
+  "failure_consequence": "Narrow the claim to the surviving class or record the root result as unresolved."
+ },
+ "falsification_status": "PASSED",
+ "reopen_conditions": [
+  "A verified Quran-internal occurrence-level bridge changes a listed class boundary.",
+  "A correction to a referenced occurrence, source binding, or materialized classification changes this judgment's evidence set."
+ ],
+ "purity_status": "NOT_EVALUATED"
 }

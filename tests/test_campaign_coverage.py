@@ -615,3 +615,118 @@ def test_22_persist_coverage_refuses_foreign_root_artifact_collision(
         camp.cmd_persist_coverage(ns)
 
     assert artifact_path.read_text(encoding="utf-8") == original
+
+
+# --- Batch 06 corrective revision: persisted root-judgment contract ---------
+
+
+def _batch06_repository_artifacts():
+    repository_root = Path(__file__).resolve().parents[1]
+    manifest = json.loads((repository_root / "artifacts/semantic-campaign/"
+                           "BATCH_06_MANIFEST.json").read_text(encoding="utf-8"))
+    artifacts = {}
+    for entry in manifest["roots"]:
+        artifact = json.loads((repository_root / "artifacts/semantic-campaign/roots"
+                               / entry["artifact_name"]).read_text(encoding="utf-8"))
+        artifacts[entry["root_buckwalter"]] = artifact
+    return repository_root, manifest, artifacts
+
+
+def test_23_batch06_all_40_artifacts_have_resolvable_root_judgment_contract():
+    from tools.campaign import validate_batch06_root_judgment_contract
+
+    repository_root, manifest, artifacts = _batch06_repository_artifacts()
+    assert len(artifacts) == 40
+    assert sum(artifact["occurrences"] for artifact in artifacts.values()) == 3098
+    assert all(artifact["coverage_validation"]["exact_set_match"] for artifact in artifacts.values())
+    assert all(not validate_batch06_root_judgment_contract(artifact)
+               for artifact in artifacts.values())
+    names = [entry["artifact_name"] for entry in manifest["roots"]]
+    assert len(names) == len({name.casefold() for name in names})
+    ledger = json.loads((repository_root / "artifacts/semantic-campaign/"
+                         "CAMPAIGN_RESEARCH_LEDGER.json").read_text(encoding="utf-8"))
+    for root, artifact in artifacts.items():
+        assert ledger["roots"][root]["artifact"].endswith(artifact["artifact_name"])
+
+
+def test_24_class_only_cannot_serialize_universal_presence():
+    from tools.campaign import validate_batch06_root_judgment_contract
+
+    _root, _manifest, artifacts = _batch06_repository_artifacts()
+    invalid = json.loads(json.dumps(artifacts["qlb"]))
+    invalid["universal_presence_holds"] = True
+    errors = validate_batch06_root_judgment_contract(invalid)
+    assert any("non-UNIVERSAL claim cannot serialize universal presence" in error
+               for error in errors)
+
+
+def test_25_contract_requires_hard_cases_rejection_falsification_and_reopen():
+    from tools.campaign import validate_batch06_root_judgment_contract
+
+    _root, _manifest, artifacts = _batch06_repository_artifacts()
+    invalid = json.loads(json.dumps(artifacts["mvl"]))
+    invalid["hard_cases"] = []
+    invalid["rejection_condition"] = None
+    invalid["falsification_status"] = "UNKNOWN"
+    invalid["reopen_conditions"] = []
+    errors = validate_batch06_root_judgment_contract(invalid)
+    assert any("hard_cases" in error for error in errors)
+    assert any("rejection_condition" in error for error in errors)
+    assert any("falsification_status" in error for error in errors)
+    assert any("reopen_conditions" in error for error in errors)
+
+
+def test_26_wlj_restores_resistance_and_preserves_invalidated_reconciliation_lineage():
+    _root, _manifest, artifacts = _batch06_repository_artifacts()
+    wlj = artifacts["wlj"]
+    occurrence = next(item for item in wlj["occurrence_dispositions"]
+                      if item["word_ref"] == "9:16:20:1")
+    assert occurrence["preliminary_disposition"] == "RESISTANT"
+    assert occurrence["disposition"] == "RESISTANT"
+    assert occurrence["final_disposition"] == "RESISTANT"
+    assert occurrence["corrective_review_outcome"] == "INVALID_INSUFFICIENT_QURAN_INTERNAL_BRIDGE"
+    historical = occurrence["reconciliation_lineage"]
+    assert historical[0]["final_disposition"] == "CONSISTENT"
+    assert historical[0]["corrective_review_outcome"] == "INVALID_INSUFFICIENT_QURAN_INTERNAL_BRIDGE"
+    assert wlj["resistant_deep_analysis"][0]["preliminary_note"] == occurrence["preliminary_note"]
+
+
+def test_27_opaque_seam_and_qualified_productive_family_remain_distinct():
+    _root, _manifest, artifacts = _batch06_repository_artifacts()
+    kvr = artifacts["kvr"]
+    opaque = next(item for item in kvr["occurrence_dispositions"]
+                  if item["word_ref"] == "108:1:3:2")
+    assert opaque["final_disposition"] == "RESISTANT"
+    assert kvr["claim_scope_kind"] == "LEXICALIZED_CLASS"
+    assert kvr["universal_presence_holds"] is False
+    mvl = artifacts["mvl"]
+    assert mvl["claim_scope_kind"] == "DERIVATIONAL_FAMILY"
+    assert mvl["universal_presence_holds"] is False
+    assert sum(item["occurrence_count"] for item in mvl["corrective_usage_partition"]) == 169
+    lineage = mvl["resistant_deep_analysis"][0]
+    assert lineage["word_ref"] == "19:17:8:2"
+    assert lineage["corrective_review_outcome"] == "VALID_WITH_QUALIFICATION"
+
+
+def test_28_corrective_replay_preserves_preliminary_and_reconciliation_lineage():
+    from tools.campaign import _apply_target_judgment
+
+    repository_root, _manifest, artifacts = _batch06_repository_artifacts()
+    plan = json.loads((repository_root / "artifacts/semantic-campaign/"
+                       "BATCH_06_CORRECTIVE_JUDGMENTS.json").read_text(encoding="utf-8"))
+    wlj = json.loads(json.dumps(artifacts["wlj"]))
+    before = json.loads(json.dumps(wlj["resistant_deep_analysis"]))
+    pre_corrective = json.loads(json.dumps(wlj["corrective_lineage"]))
+    _apply_target_judgment(wlj, plan["target_roots"]["wlj"], plan["revision_id"])
+    assert wlj["resistant_deep_analysis"] == before
+    assert wlj["corrective_lineage"] == pre_corrective
+
+
+def test_29_batch06_manifest_rejects_invalid_root_identity():
+    from tools.campaign import _batch06_artifact_paths
+
+    invalid_manifest = {
+        "roots": [{"root_buckwalter": None, "artifact_name": "invalid.json"}]
+    }
+    with pytest.raises(TypeError, match="invalid root identity"):
+        _batch06_artifact_paths(Path("."), invalid_manifest)
