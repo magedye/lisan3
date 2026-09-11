@@ -13,6 +13,7 @@ word_ref-level exact-set rules:
 """
 
 import json
+import subprocess
 from pathlib import Path
 
 import pytest
@@ -730,3 +731,101 @@ def test_29_batch06_manifest_rejects_invalid_root_identity():
     }
     with pytest.raises(TypeError, match="invalid root identity"):
         _batch06_artifact_paths(Path("."), invalid_manifest)
+
+
+def test_30_final_contract_uses_canonical_evidence_fields_and_no_aliases():
+    from tools.campaign import (
+        _root_counterevidence_refs,
+        _root_supporting_evidence_refs,
+    )
+
+    _root, _manifest, artifacts = _batch06_repository_artifacts()
+    for artifact in artifacts.values():
+        refs = {item["word_ref"] for item in artifact["occurrence_dispositions"]}
+        assert "root_evidence_refs" not in artifact
+        assert "root_counterevidence_refs" not in artifact
+        assert artifact["supporting_evidence_refs"] == _root_supporting_evidence_refs(artifact)
+        assert artifact["counterevidence_refs"] == _root_counterevidence_refs(artifact)
+        assert set(artifact["supporting_evidence_refs"]) <= refs
+        assert set(artifact["counterevidence_refs"]) <= refs
+
+
+def test_31_final_contract_controls_are_claim_specific_not_generic_templates():
+    _root, _manifest, artifacts = _batch06_repository_artifacts()
+    rejection_conditions = {
+        json.dumps(artifact["rejection_condition"], ensure_ascii=False, sort_keys=True)
+        for artifact in artifacts.values()
+    }
+    reopen_conditions = {
+        tuple(artifact["reopen_conditions"])
+        for artifact in artifacts.values()
+    }
+    assert len(rejection_conditions) == 40
+    assert len(reopen_conditions) == 40
+    for root, artifact in artifacts.items():
+        assert all(case["role"] != "PERSISTED_STRESS_CASE" for case in artifact["hard_cases"])
+        assert all(case["reason"].startswith(f"{root}:") for case in artifact["hard_cases"])
+        assert all(condition.startswith(f"{root}:") for condition in artifact["reopen_conditions"])
+
+
+def test_32_final_contract_falsification_and_diagnostics_are_evidence_bound():
+    repository_root, _manifest, artifacts = _batch06_repository_artifacts()
+    plan = json.loads((repository_root / "artifacts/semantic-campaign/"
+                       "BATCH_06_FINAL_CONTRACT_REMEDIATION.json").read_text(encoding="utf-8"))
+    for root, artifact in artifacts.items():
+        adversarial = artifact["adversarial_verification"]
+        evidence = artifact["falsification_evidence"]
+        assert evidence["verdict"] == adversarial["verdict"]
+        assert evidence["falsifiable"] is adversarial["falsifiable"]
+        assert evidence["distinctiveness_ok"] is adversarial["distinctiveness_ok"]
+        assert evidence["failing_occurrences"] == adversarial["failing_occurrences"]
+        if artifact["falsification_status"] == "PASSED":
+            assert artifact["research_state"] == "PREFERRED"
+            assert adversarial["verdict"] == "SUPPORTED"
+            assert adversarial["falsifiable"] is True
+            assert adversarial["distinctiveness_ok"] is True
+        if artifact["research_state"] == "UNRESOLVED":
+            assert artifact["falsification_status"] == "NOT_REQUIRED"
+        assert all(record["status"] == "NOT_EVALUATED"
+                   and record["hard_blocker"] is False
+                   and record["evidence_refs"] == []
+                   for record in artifact["purity_diagnostics"].values())
+    for root, target in plan["target_adversarial_representation"].items():
+        artifact = artifacts[root]
+        adversarial = artifact["adversarial_verification"]
+        assert adversarial["verdict"] == target["verdict"]
+        assert adversarial["failing_occurrences"] == sorted(target["failing_occurrences"])
+        expected_status = "NOT_REQUIRED" if artifact["research_state"] == "UNRESOLVED" else "NOT_RUN"
+        assert artifact["falsification_status"] == expected_status
+
+
+def test_33_final_contract_replay_preserves_the_frozen_semantic_payload():
+    from tools.campaign import _batch06_semantic_snapshot
+
+    repository_root, manifest, artifacts = _batch06_repository_artifacts()
+    plan = json.loads((repository_root / "artifacts/semantic-campaign/"
+                       "BATCH_06_FINAL_CONTRACT_REMEDIATION.json").read_text(encoding="utf-8"))
+    for entry in manifest["roots"]:
+        relative_path = "artifacts/semantic-campaign/roots/" + entry["artifact_name"]
+        baseline = subprocess.run(
+            ["git", "show", f"{plan['baseline_sha']}:{relative_path}"],
+            cwd=repository_root,
+            check=True,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+        )
+        baseline_artifact = json.loads(baseline.stdout)
+        assert _batch06_semantic_snapshot(artifacts[entry["root_buckwalter"]]) == \
+            _batch06_semantic_snapshot(baseline_artifact)
+
+
+def test_34_final_contract_preserves_frozen_campaign_counts_and_handoff_state():
+    _repository_root, manifest, artifacts = _batch06_repository_artifacts()
+    assert manifest["status"] == "BATCH_06_FINAL_CONTRACT_REMEDIATION_READY_FOR_FRESH_REVIEW"
+    assert manifest["final_checkpoint"]["outcomes"] == {
+        "STRONG": 12, "MODERATE": 8, "WEAK": 9, "UNRESOLVED": 11,
+    }
+    assert manifest["final_checkpoint"]["resistant_occurrences"] == 565
+    assert sum(artifact["occurrences"] for artifact in artifacts.values()) == 3098
+    assert manifest["final_contract_remediation"]["semantic_payload_frozen"] is True

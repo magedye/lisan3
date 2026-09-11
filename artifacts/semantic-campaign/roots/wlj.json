@@ -91,11 +91,13 @@
  },
  "adversarial_verification": {
   "root_buckwalter": "wlj",
-  "verdict": "SUPPORTED",
-  "failing_occurrences": [],
+  "verdict": "PARTIALLY_SUPPORTED",
+  "failing_occurrences": [
+   "9:16:20:1"
+  ],
   "distinctiveness_ok": true,
   "falsifiable": true,
-  "notes": "The walija seam is reconciled with explicit preliminary/final provenance."
+  "notes": "Entry and insertion classes remain supported, while the social-insider occurrence remains resistant and its historical reconciliation is invalidated for the active judgment."
  },
  "coverage_validation": {
   "root": "wlj",
@@ -779,38 +781,130 @@
  "claim_scope": "REPRESENTATIVE",
  "claim_scope_kind": "DERIVATIONAL_FAMILY",
  "layer_attribution": {
-  "occurrence_evidence": "Direct Batch 06 occurrence refs are listed in root_evidence_refs and resolve in occurrence_dispositions.",
-  "derivation": "Material derivational/form separation is preserved in the root's persisted coverage clusters and corrective partition where present.",
-  "lexical_class": "Corrective claim kind: DERIVATIONAL_FAMILY",
+  "occurrence_evidence": "wlj: 13 positive and 1 counterevidence word_refs resolve in occurrence_dispositions.",
+  "derivation": "wlj: QAC materialized clusters: base_entry, form_iv_insertion, inner_circle_intimate",
+  "lexical_class": "wlj: current claim scope kind is DERIVATIONAL_FAMILY; claim: The thirteen entry/insertion occurrences remain a productive class; the social-insider occurrence is resistant and does not establish a root-wide extension.",
   "contextual_relation": "Do not equate social insider status with spatial entry or insertion without a Quran-internal bridge.",
-  "reconciliation": "Historical reconciliation lineage is retained; any current corrective outcome is recorded without deleting the earlier attempt.",
-  "unresolved_resistance": "The prior reconciliation used a generic inside-access abstraction instead of a demonstrated Quran-internal bridge."
+  "reconciliation": "Historical reconciliation lineage remains persisted for: 9:16:20:1",
+  "unresolved_resistance": "wlj: Final resistance remains persisted for: 9:16:20:1"
  },
- "root_evidence_refs": [
-  "34:2:3:1",
-  "22:61:4:1"
- ],
- "root_counterevidence_refs": [
-  "9:16:20:1"
- ],
  "hard_cases": [
   {
    "word_ref": "9:16:20:1",
-   "role": "INVALID_RECONCILIATION",
-   "reason": "The social-insider occurrence remains resistant after review."
+   "role": "RESISTANT_SEAM",
+   "reason": "wlj: 9:16:20:1 remains RESISTANT in material class inner_circle_intimate; it pressure-tests the bounded claim: 9:16:20:1 is social rather than spatial and does not expose a physical boundary crossing."
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "9:16:20:1 is social rather than spatial and does not expose a physical boundary crossing.",
-  "search_location": "The complete persisted Batch 06 word_ref set for wlj",
-  "verification_method": "Test the proposed bridge only against the listed Quran-internal occurrence evidence and counterevidence.",
+  "challenging_finding": "wlj: reject the current representative claim if a verified Quran-internal occurrence in base_entry, form_iv_insertion, inner_circle_intimate cannot sustain it without an added semantic component. Current hardest boundary: 9:16:20:1 is social rather than spatial and does not expose a physical boundary crossing.",
+  "search_location": "Batch 06 wlj: all 14 occurrence_dispositions across material clusters base_entry, form_iv_insertion, inner_circle_intimate.",
+  "verification_method": "Test 'The thirteen entry/insertion occurrences remain a productive class; the social-insider occurrence is resistant and does not establish a root-wide extension.' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Do not equate social insider status with spatial entry or insertion without a Quran-internal bridge.",
-  "failure_consequence": "Retain or narrow the result to the named class; do not restore a universal root generalization."
+  "failure_consequence": "wlj: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
  },
- "falsification_status": "PASSED",
+ "falsification_status": "NOT_RUN",
  "reopen_conditions": [
-  "A verified Quran-internal occurrence-level bridge changes a listed class boundary.",
-  "A correction to a referenced occurrence, source binding, or materialized classification changes this judgment's evidence set."
+  "wlj: reopen if a verified Quran-internal bridge changes the boundary between base_entry, form_iv_insertion, inner_circle_intimate for the current claim: The thirteen entry/insertion occurrences remain a productive class; the social-insider occurrence is resistant and does not establish a root-wide extension.",
+  "wlj: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
  ],
- "purity_status": "NOT_EVALUATED"
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "22:61:4:1",
+  "22:61:8:2",
+  "31:29:5:1",
+  "31:29:9:2",
+  "34:2:3:1",
+  "35:13:1:1",
+  "35:13:5:2",
+  "3:27:1:1",
+  "3:27:5:2",
+  "57:4:15:1",
+  "57:6:1:1",
+  "57:6:5:2",
+  "7:40:16:1"
+ ],
+ "counterevidence_refs": [
+  "9:16:20:1"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "BATCH06_ADVERSARIAL_VERIFICATION:wlj",
+  "verdict": "PARTIALLY_SUPPORTED",
+  "falsifiable": true,
+  "distinctiveness_ok": true,
+  "failing_occurrences": [
+   "9:16:20:1"
+  ],
+  "tested_material_clusters": [
+   "base_entry",
+   "form_iv_insertion",
+   "inner_circle_intimate"
+  ],
+  "status_rationale": "The persisted adversarial record does not establish a fully passed, distinctive canonical falsification cycle for this current claim."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "wlj: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "wlj: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "wlj: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "wlj: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "wlj: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "wlj: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "wlj: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "wlj: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
 }

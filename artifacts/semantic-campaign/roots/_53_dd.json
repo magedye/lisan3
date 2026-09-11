@@ -1920,38 +1920,157 @@
  "claim_scope": "REPRESENTATIVE",
  "claim_scope_kind": "LEXICALIZED_CLASS",
  "layer_attribution": {
-  "occurrence_evidence": "Exact word_ref-level evidence is persisted in occurrence_dispositions.",
-  "derivation": "QAC materialized form clusters: obstruction_and_turning, sadid_fluid",
-  "lexical_class": "Each occurrence remains attached to one persisted coverage cluster.",
-  "contextual_relation": "Canonical Tanzil verse_text is retained on every occurrence record.",
+  "occurrence_evidence": "Sdd: 41 positive and 1 counterevidence word_refs resolve in occurrence_dispositions.",
+  "derivation": "Sdd: QAC materialized clusters: obstruction_and_turning, sadid_fluid",
+  "lexical_class": "Sdd: current claim scope kind is LEXICALIZED_CLASS; claim: placing or undergoing an obstruction that turns movement, access, or response away from its course",
+  "contextual_relation": "Voice separates actively barring from being turned away; prepositions specify the blocked path. The 14:16 lexical item is not forced through an external derivation.",
   "reconciliation": "No historical reconciliation record is present.",
-  "unresolved_resistance": "Final resistance remains persisted for: 14:16:7:1"
+  "unresolved_resistance": "Sdd: Final resistance remains persisted for: 14:16:7:1"
  },
- "root_evidence_refs": [
-  "11:19:2:1",
-  "14:16:7:1"
- ],
- "root_counterevidence_refs": [
-  "14:16:7:1"
- ],
  "hard_cases": [
   {
    "word_ref": "14:16:7:1",
-   "role": "PERSISTED_STRESS_CASE",
-   "reason": "14:16:7:1 describes water called sadid; the occurrence has no path, barrier, or redirection relation."
+   "role": "RESISTANT_SEAM",
+   "reason": "Sdd: 14:16:7:1 remains RESISTANT in material class sadid_fluid; it pressure-tests the bounded claim: 14:16:7:1 describes water called sadid; the occurrence has no path, barrier, or redirection relation."
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "A confirmed occurrence lacks the claimed contribution after the recorded class partition.",
-  "search_location": "The complete persisted Batch 06 word_ref set for this root.",
-  "verification_method": "Compare each claimed class against its persisted occurrence evidence and counterevidence.",
-  "confounder_control": "Keep derivation, lexical class, construction, and local context separate from root contribution.",
-  "failure_consequence": "Narrow the claim to the surviving class or record the root result as unresolved."
+  "challenging_finding": "Sdd: reject the current representative claim if a verified Quran-internal occurrence in obstruction_and_turning, sadid_fluid cannot sustain it without an added semantic component. Current hardest boundary: 14:16:7:1 describes water called sadid; the occurrence has no path, barrier, or redirection relation.",
+  "search_location": "Batch 06 Sdd: all 42 occurrence_dispositions across material clusters obstruction_and_turning, sadid_fluid.",
+  "verification_method": "Test 'placing or undergoing an obstruction that turns movement, access, or response away from its course' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
+  "confounder_control": "Voice separates actively barring from being turned away; prepositions specify the blocked path. The 14:16 lexical item is not forced through an external derivation.",
+  "failure_consequence": "Sdd: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
  },
- "falsification_status": "PASSED",
+ "falsification_status": "NOT_RUN",
  "reopen_conditions": [
-  "A verified Quran-internal occurrence-level bridge changes a listed class boundary.",
-  "A correction to a referenced occurrence, source binding, or materialized classification changes this judgment's evidence set."
+  "Sdd: reopen if a verified Quran-internal bridge changes the boundary between obstruction_and_turning, sadid_fluid for the current claim: placing or undergoing an obstruction that turns movement, access, or response away from its course",
+  "Sdd: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
  ],
- "purity_status": "NOT_EVALUATED"
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "11:19:2:1",
+  "13:33:30:2",
+  "14:10:26:1",
+  "14:3:7:2",
+  "16:88:3:2",
+  "16:94:13:1",
+  "20:16:2:1",
+  "22:25:4:2",
+  "27:24:12:2",
+  "27:43:1:2",
+  "28:87:2:1",
+  "29:38:12:2",
+  "2:217:11:2",
+  "34:32:7:1",
+  "34:43:13:1",
+  "3:99:5:1",
+  "40:37:15:2",
+  "43:37:2:2",
+  "43:57:9:1",
+  "43:62:2:1",
+  "47:1:3:2",
+  "47:32:4:2",
+  "47:34:4:2",
+  "48:25:4:2",
+  "4:160:10:3",
+  "4:167:4:2",
+  "4:55:7:1",
+  "4:61:13:1",
+  "4:61:15:1",
+  "58:16:4:2",
+  "5:2:32:1",
+  "5:91:12:2",
+  "63:2:4:2",
+  "63:5:12:1",
+  "7:45:2:1",
+  "7:86:6:2",
+  "8:34:7:1",
+  "8:36:6:2",
+  "8:47:10:2",
+  "9:34:13:2",
+  "9:9:6:2"
+ ],
+ "counterevidence_refs": [
+  "14:16:7:1"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "BATCH06_ADVERSARIAL_VERIFICATION:Sdd",
+  "verdict": "PARTIALLY_SUPPORTED",
+  "falsifiable": true,
+  "distinctiveness_ok": true,
+  "failing_occurrences": [
+   "14:16:7:1"
+  ],
+  "tested_material_clusters": [
+   "obstruction_and_turning",
+   "sadid_fluid"
+  ],
+  "status_rationale": "The persisted adversarial record does not establish a fully passed, distinctive canonical falsification cycle for this current claim."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Sdd: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Sdd: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Sdd: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Sdd: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Sdd: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Sdd: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Sdd: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Sdd: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
 }

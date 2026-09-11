@@ -1024,3 +1024,31 @@ is not automatically authorized by this checkpoint.
 Stop. After this checkpoint is committed, run a fresh independent read-only
 review of that exact commit. Do not merge, push, start Batch 07, or
 canonicalize.
+
+## Batch 06 Final Contract Remediation Checkpoint (2026-09-11)
+
+- Starting candidate: `8ef76292978c61c9283648d5f578d928e39e7320` on
+  `semantic-campaign-batch06`. The scope is representation-only remediation of
+  the 40 frozen root artifacts / 3,098 frozen occurrence identities.
+- `artifacts/semantic-campaign/BATCH_06_FINAL_CONTRACT_REMEDIATION.json` binds
+  the active runtime field names and the only ten authorized adversarial-record
+  corrections. The replay command is
+  `python -m tools.campaign apply-batch06-final-contract --repo-root .`; it
+  refuses a nonmatching baseline or any frozen semantic payload drift.
+- The canonical active-field deficit is corrected from 80 missing fields to
+  zero. Legacy `root_evidence_refs` and `root_counterevidence_refs` are not
+  active aliases and are rejected by the validator. Claim-specific hard cases,
+  rejection conditions, reopen conditions, falsification evidence, and the
+  eight `NOT_EVALUATED` purity diagnostics are persisted for every root.
+- The 12 / 8 / 9 / 11 strength distribution, 565 final resistant occurrences,
+  Batch 05 artifacts, and all occurrence/lineage/classification data remain
+  frozen. Implementation-side checks are 38 focused tests and Ruff clean.
+- Durable report:
+  `docs/LISAN3_BATCH_06_FINAL_CONTRACT_REMEDIATION.md`. This is not an
+  independent review, canonicalization, merge, push, release, acceptance, or
+  Batch 07 authorization.
+
+## Current Exact Next Action
+
+Stop. Run a fresh, independent, read-only review of the exact final contract
+remediation commit. Do not merge, push, start Batch 07, or canonicalize.

@@ -699,36 +699,131 @@
  "claim_scope": "UNIVERSAL",
  "claim_scope_kind": "ROOT_GENERALIZATION",
  "layer_attribution": {
-  "occurrence_evidence": "Exact word_ref-level evidence is persisted in occurrence_dispositions.",
-  "derivation": "QAC materialized form clusters: describing_verbs, description_noun",
-  "lexical_class": "Each occurrence remains attached to one persisted coverage cluster.",
-  "contextual_relation": "Canonical Tanzil verse_text is retained on every occurrence record.",
+  "occurrence_evidence": "wSf: 14 positive and 0 counterevidence word_refs resolve in occurrence_dispositions.",
+  "derivation": "wSf: QAC materialized clusters: describing_verbs, description_noun",
+  "lexical_class": "wSf: current claim scope kind is ROOT_GENERALIZATION; claim: articulating or assigning a characterization to a referent",
+  "contextual_relation": "Subjects supply describer, objects supply referent, and clauses supply attributed content. Context supplies truth or fabrication.",
   "reconciliation": "No historical reconciliation record is present.",
-  "unresolved_resistance": "No final resistant occurrence is currently persisted."
+  "unresolved_resistance": "wSf: No final resistant occurrence is currently persisted."
  },
- "root_evidence_refs": [
-  "12:18:18:1",
-  "6:139:19:1"
- ],
- "root_counterevidence_refs": [],
  "hard_cases": [
   {
    "word_ref": "12:18:18:1",
-   "role": "PERSISTED_STRESS_CASE",
-   "reason": "Tongues 'describe the lie' in 16:116, but fabrication is the content's status, not part of wSf."
+   "role": "MATERIAL_CLASS_BOUNDARY",
+   "reason": "wSf: 12:18:18:1 represents material class describing_verbs (13 persisted occurrences) that must independently sustain the current universal claim: articulating or assigning a characterization to a referent"
+  },
+  {
+   "word_ref": "6:139:19:1",
+   "role": "MATERIAL_CLASS_BOUNDARY",
+   "reason": "wSf: 6:139:19:1 represents material class description_noun (1 persisted occurrences) that must independently sustain the current universal claim: articulating or assigning a characterization to a referent"
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "A confirmed occurrence lacks the claimed contribution after the recorded class partition.",
-  "search_location": "The complete persisted Batch 06 word_ref set for this root.",
-  "verification_method": "Compare each claimed class against its persisted occurrence evidence and counterevidence.",
-  "confounder_control": "Keep derivation, lexical class, construction, and local context separate from root contribution.",
-  "failure_consequence": "Narrow the claim to the surviving class or record the root result as unresolved."
+  "challenging_finding": "wSf: reject the current universal claim if a verified Quran-internal occurrence in describing_verbs, description_noun cannot sustain it without an added semantic component. Current hardest boundary: Tongues 'describe the lie' in 16:116, but fabrication is the content's status, not part of wSf.",
+  "search_location": "Batch 06 wSf: all 14 occurrence_dispositions across material clusters describing_verbs, description_noun.",
+  "verification_method": "Test 'articulating or assigning a characterization to a referent' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
+  "confounder_control": "Subjects supply describer, objects supply referent, and clauses supply attributed content. Context supplies truth or fabrication.",
+  "failure_consequence": "wSf: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
  },
  "falsification_status": "PASSED",
  "reopen_conditions": [
-  "A verified Quran-internal occurrence-level bridge changes a listed class boundary.",
-  "A correction to a referenced occurrence, source binding, or materialized classification changes this judgment's evidence set."
+  "wSf: reopen if a verified Quran-internal bridge changes the boundary between describing_verbs, description_noun for the current claim: articulating or assigning a characterization to a referent",
+  "wSf: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
  ],
- "purity_status": "NOT_EVALUATED"
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "12:18:18:1",
+  "12:77:24:1",
+  "16:116:4:1",
+  "16:62:5:2",
+  "21:112:10:1",
+  "21:18:13:1",
+  "21:22:13:1",
+  "23:91:24:1",
+  "23:96:9:1",
+  "37:159:4:1",
+  "37:180:6:1",
+  "43:82:8:1",
+  "6:100:15:1",
+  "6:139:19:1"
+ ],
+ "counterevidence_refs": [],
+ "falsification_evidence": {
+  "attempt_id": "BATCH06_ADVERSARIAL_VERIFICATION:wSf",
+  "verdict": "SUPPORTED",
+  "falsifiable": true,
+  "distinctiveness_ok": true,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "describing_verbs",
+   "description_noun"
+  ],
+  "status_rationale": "The persisted adversarial record is SUPPORTed, falsifiable, and distinctive."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "wSf: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "wSf: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "wSf: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "wSf: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "wSf: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "wSf: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "wSf: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "wSf: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
 }

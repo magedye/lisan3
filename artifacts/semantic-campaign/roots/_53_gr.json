@@ -64,11 +64,14 @@
  },
  "adversarial_verification": {
   "root_buckwalter": "Sgr",
-  "verdict": "SUPPORTED",
-  "failing_occurrences": [],
-  "distinctiveness_ok": true,
+  "verdict": "PARTIALLY_SUPPORTED",
+  "failing_occurrences": [
+   "10:61:34:1",
+   "12:32:19:2"
+  ],
+  "distinctiveness_ok": false,
   "falsifiable": true,
-  "notes": "Scalar lowness is universal; metaphorical rank extension limits strength to MODERATE."
+  "notes": "Magnitude/age and abasement classes remain observed, but generic scalar lowness does not establish a discriminating root-wide contribution."
  },
  "coverage_validation": {
   "root": "Sgr",
@@ -701,44 +704,136 @@
  "claim_scope": "LOCAL",
  "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
  "layer_attribution": {
-  "occurrence_evidence": "Direct Batch 06 occurrence refs are listed in root_evidence_refs and resolve in occurrence_dispositions.",
-  "derivation": "Material derivational/form separation is preserved in the root's persisted coverage clusters and corrective partition where present.",
-  "lexical_class": "Corrective claim kind: UNRESOLVED_CLASS_ONLY",
+  "occurrence_evidence": "Sgr: 13 positive and 2 counterevidence word_refs resolve in occurrence_dispositions.",
+  "derivation": "Sgr: QAC materialized clusters: lowered_standing, small_magnitude",
+  "lexical_class": "Sgr: current claim scope kind is UNRESOLVED_CLASS_ONLY; claim: the persisted root judgment",
   "contextual_relation": "Do not treat physical magnitude and abasement as instances of a generic scale without an internal bridge.",
-  "reconciliation": "Historical reconciliation lineage is retained; any current corrective outcome is recorded without deleting the earlier attempt.",
-  "unresolved_resistance": "The prior scalar bridge was generic rather than Quran-internally demonstrated."
+  "reconciliation": "No historical reconciliation record is present.",
+  "unresolved_resistance": "Sgr: No final resistant occurrence is currently persisted."
  },
- "root_evidence_refs": [
-  "10:61:34:1",
-  "12:32:19:2"
- ],
- "root_counterevidence_refs": [
-  "10:61:34:1",
-  "12:32:19:2"
- ],
  "hard_cases": [
   {
    "word_ref": "10:61:34:1",
-   "role": "MAGNITUDE_AGE_CLASS",
-   "reason": "Magnitude/age class anchor."
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "Sgr: 10:61:34:1 remains CONSISTENT in material class small_magnitude; it pressure-tests the bounded claim: Abasement contexts do not themselves expose a magnitude or age relation."
   },
   {
    "word_ref": "12:32:19:2",
-   "role": "ABASEMENT_CLASS",
-   "reason": "Abasement class anchor."
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "Sgr: 12:32:19:2 remains CONSISTENT in material class lowered_standing; it pressure-tests the bounded claim: Abasement contexts do not themselves expose a magnitude or age relation."
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "Abasement contexts do not themselves expose a magnitude or age relation.",
-  "search_location": "The complete persisted Batch 06 word_ref set for Sgr",
-  "verification_method": "Test the proposed bridge only against the listed Quran-internal occurrence evidence and counterevidence.",
+  "challenging_finding": "Sgr: reject the current local claim if a verified Quran-internal occurrence in lowered_standing, small_magnitude cannot sustain it without an added semantic component. Current hardest boundary: Abasement contexts do not themselves expose a magnitude or age relation.",
+  "search_location": "Batch 06 Sgr: all 13 occurrence_dispositions across material clusters lowered_standing, small_magnitude.",
+  "verification_method": "Test 'the persisted root judgment' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Do not treat physical magnitude and abasement as instances of a generic scale without an internal bridge.",
-  "failure_consequence": "Retain or narrow the result to the named class; do not restore a universal root generalization."
+  "failure_consequence": "Sgr: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
  },
  "falsification_status": "NOT_REQUIRED",
  "reopen_conditions": [
-  "A verified Quran-internal occurrence-level bridge changes a listed class boundary.",
-  "A correction to a referenced occurrence, source binding, or materialized classification changes this judgment's evidence set."
+  "Sgr: reopen if a verified Quran-internal bridge changes the boundary between lowered_standing, small_magnitude for the current claim: the persisted root judgment",
+  "Sgr: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
  ],
- "purity_status": "NOT_EVALUATED"
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "10:61:34:1",
+  "12:32:19:2",
+  "17:24:12:1",
+  "18:49:15:1",
+  "27:37:13:1",
+  "2:282:82:1",
+  "34:3:24:1",
+  "54:53:2:1",
+  "6:124:22:1",
+  "7:119:4:1",
+  "7:13:13:2",
+  "9:121:4:1",
+  "9:29:29:1"
+ ],
+ "counterevidence_refs": [
+  "10:61:34:1",
+  "12:32:19:2"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "BATCH06_ADVERSARIAL_VERIFICATION:Sgr",
+  "verdict": "PARTIALLY_SUPPORTED",
+  "falsifiable": true,
+  "distinctiveness_ok": false,
+  "failing_occurrences": [
+   "10:61:34:1",
+   "12:32:19:2"
+  ],
+  "tested_material_clusters": [
+   "lowered_standing",
+   "small_magnitude"
+  ],
+  "status_rationale": "The persisted adversarial record does not establish a fully passed, distinctive canonical falsification cycle for this current claim."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Sgr: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Sgr: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Sgr: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Sgr: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Sgr: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Sgr: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Sgr: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Sgr: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
 }

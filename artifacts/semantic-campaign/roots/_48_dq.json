@@ -226,35 +226,114 @@
  "claim_scope": "UNIVERSAL",
  "claim_scope_kind": "ROOT_GENERALIZATION",
  "layer_attribution": {
-  "occurrence_evidence": "Exact word_ref-level evidence is persisted in occurrence_dispositions.",
-  "derivation": "QAC materialized form clusters: garden_plural",
-  "lexical_class": "Each occurrence remains attached to one persisted coverage cluster.",
-  "contextual_relation": "Canonical Tanzil verse_text is retained on every occurrence record.",
+  "occurrence_evidence": "Hdq: 3 positive and 0 counterevidence word_refs resolve in occurrence_dispositions.",
+  "derivation": "Hdq: QAC materialized clusters: garden_plural",
+  "lexical_class": "Hdq: current claim scope kind is ROOT_GENERALIZATION; claim: a cultivated garden-space characterized in the Quran by planted growth and abundance",
+  "contextual_relation": "Modifiers supply delight, density, or produce; the root contributes the garden-space referent. No unobserved enclosure feature is imported.",
   "reconciliation": "No historical reconciliation record is present.",
-  "unresolved_resistance": "No final resistant occurrence is currently persisted."
+  "unresolved_resistance": "Hdq: No final resistant occurrence is currently persisted."
  },
- "root_evidence_refs": [
-  "27:60:12:1"
- ],
- "root_counterevidence_refs": [],
  "hard_cases": [
   {
    "word_ref": "27:60:12:1",
-   "role": "PERSISTED_STRESS_CASE",
-   "reason": "Because every token is the same plural noun, universal presence may reflect lexical repetition rather than a tested derivational core."
+   "role": "MATERIAL_CLASS_BOUNDARY",
+   "reason": "Hdq: 27:60:12:1 represents material class garden_plural (3 persisted occurrences) that must independently sustain the current universal claim: a cultivated garden-space characterized in the Quran by planted growth and abundance"
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "A confirmed occurrence lacks the claimed contribution after the recorded class partition.",
-  "search_location": "The complete persisted Batch 06 word_ref set for this root.",
-  "verification_method": "Compare each claimed class against its persisted occurrence evidence and counterevidence.",
-  "confounder_control": "Keep derivation, lexical class, construction, and local context separate from root contribution.",
-  "failure_consequence": "Narrow the claim to the surviving class or record the root result as unresolved."
+  "challenging_finding": "Hdq: reject the current universal claim if a verified Quran-internal occurrence in garden_plural cannot sustain it without an added semantic component. Current hardest boundary: Because every token is the same plural noun, universal presence may reflect lexical repetition rather than a tested derivational core.",
+  "search_location": "Batch 06 Hdq: all 3 occurrence_dispositions across material clusters garden_plural.",
+  "verification_method": "Test 'a cultivated garden-space characterized in the Quran by planted growth and abundance' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
+  "confounder_control": "Modifiers supply delight, density, or produce; the root contributes the garden-space referent. No unobserved enclosure feature is imported.",
+  "failure_consequence": "Hdq: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
  },
- "falsification_status": "PASSED",
+ "falsification_status": "NOT_RUN",
  "reopen_conditions": [
-  "A verified Quran-internal occurrence-level bridge changes a listed class boundary.",
-  "A correction to a referenced occurrence, source binding, or materialized classification changes this judgment's evidence set."
+  "Hdq: reopen if a verified Quran-internal bridge changes the boundary between garden_plural for the current claim: a cultivated garden-space characterized in the Quran by planted growth and abundance",
+  "Hdq: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
  ],
- "purity_status": "NOT_EVALUATED"
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "27:60:12:1",
+  "78:32:1:1",
+  "80:30:1:2"
+ ],
+ "counterevidence_refs": [],
+ "falsification_evidence": {
+  "attempt_id": "BATCH06_ADVERSARIAL_VERIFICATION:Hdq",
+  "verdict": "SUPPORTED",
+  "falsifiable": true,
+  "distinctiveness_ok": false,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "garden_plural"
+  ],
+  "status_rationale": "The persisted adversarial record does not establish a fully passed, distinctive canonical falsification cycle for this current claim."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Hdq: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Hdq: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Hdq: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Hdq: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Hdq: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Hdq: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Hdq: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Hdq: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
 }

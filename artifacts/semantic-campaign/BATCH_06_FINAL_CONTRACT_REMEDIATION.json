@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0.0",
+  "revision_id": "BATCH_06_FINAL_CONTRACT_REMEDIATION_2026_09_11",
+  "baseline_sha": "8ef76292978c61c9283648d5f578d928e39e7320",
+  "source_policy": "QURAN_INTERNAL_ONLY",
+  "canonical_runtime_contract": "LISAN3_SEMANTIC_RUNTIME_V3_2026_09_06",
+  "required_fields": [
+    "contract_type",
+    "claim_scope",
+    "layer_attribution",
+    "supporting_evidence_refs",
+    "counterevidence_refs",
+    "hard_cases",
+    "rejection_condition",
+    "falsification_status",
+    "reopen_conditions"
+  ],
+  "semantic_fields_frozen": [
+    "research_state",
+    "result_strength",
+    "universal_presence_holds",
+    "candidate_root_contribution",
+    "occurrence_dispositions",
+    "resistant_occurrences",
+    "resistant_deep_analysis"
+  ],
+  "target_adversarial_representation": {
+    "kvr": {
+      "verdict": "PARTIALLY_SUPPORTED",
+      "distinctiveness_ok": true,
+      "failing_occurrences": ["108:1:3:2"],
+      "notes": "The productive abundance classes remain supported, while al-Kawthar remains an opaque resistant seam outside the qualified lexicalized-class claim."
+    },
+    "mvl": {
+      "verdict": "PARTIALLY_SUPPORTED",
+      "distinctiveness_ok": true,
+      "failing_occurrences": ["19:17:8:2"],
+      "notes": "The persisted derivational partitions remain supported; the Form V occurrence is retained only with its local qualification and does not establish a root-wide bridge."
+    },
+    "qlb": {
+      "verdict": "PARTIALLY_SUPPORTED",
+      "distinctiveness_ok": false,
+      "failing_occurrences": ["10:74:21:1", "12:62:10:1"],
+      "notes": "Heart and turning classes are individually persisted, but no Quran-internal bridge establishes a preferred root-wide contribution."
+    },
+    "swA": {
+      "verdict": "PARTIALLY_SUPPORTED",
+      "distinctiveness_ok": false,
+      "failing_occurrences": ["5:31:10:1", "5:31:21:1", "7:20:10:1", "7:22:8:1", "7:26:8:1", "7:27:15:1", "20:121:5:1"],
+      "notes": "Adverse/badness and exposed-private-parts classes remain separately persisted; contextual shame does not supply a root-wide bridge."
+    },
+    "fSl": {
+      "verdict": "PARTIALLY_SUPPORTED",
+      "distinctiveness_ok": true,
+      "failing_occurrences": ["70:13:1:2"],
+      "notes": "The productive detailing and separation classes remain supported, while the family/clan occurrence remains a resistant lexicalized seam."
+    },
+    "wlj": {
+      "verdict": "PARTIALLY_SUPPORTED",
+      "distinctiveness_ok": true,
+      "failing_occurrences": ["9:16:20:1"],
+      "notes": "Entry and insertion classes remain supported, while the social-insider occurrence remains resistant and its historical reconciliation is invalidated for the active judgment."
+    },
+    "Sgr": {
+      "verdict": "PARTIALLY_SUPPORTED",
+      "distinctiveness_ok": false,
+      "failing_occurrences": ["10:61:34:1", "12:32:19:2"],
+      "notes": "Magnitude/age and abasement classes remain observed, but generic scalar lowness does not establish a discriminating root-wide contribution."
+    },
+    "Ezr": {
+      "verdict": "PARTIALLY_SUPPORTED",
+      "distinctiveness_ok": false,
+      "failing_occurrences": ["48:9:4:2"],
+      "notes": "The three records preserve reinforcement, honor, and help alternatives without a Quran-internal discriminator for a preferred root contribution."
+    },
+    "Hfw": {
+      "verdict": "PARTIALLY_SUPPORTED",
+      "distinctiveness_ok": false,
+      "failing_occurrences": ["19:47:10:1", "7:187:26:1", "47:37:3:2"],
+      "notes": "Solicitude, claimed knowledge, and exhaustive demand remain distinct observed classes without a discriminating root-wide bridge."
+    },
+    "Sbg": {
+      "verdict": "PARTIALLY_SUPPORTED",
+      "distinctiveness_ok": false,
+      "failing_occurrences": ["23:20:8:2"],
+      "notes": "Divine sibgha and culinary sibgh remain separately observed; no Quran-internal bridge licenses coloration, imbuement, or treatment as a root-wide conclusion."
+    }
+  }
+}

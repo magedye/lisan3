@@ -226,36 +226,120 @@
  "claim_scope": "UNIVERSAL",
  "claim_scope_kind": "ROOT_GENERALIZATION",
  "layer_attribution": {
-  "occurrence_evidence": "Exact word_ref-level evidence is persisted in occurrence_dispositions.",
-  "derivation": "QAC materialized form clusters: mutual_urging, urge_another",
-  "lexical_class": "Each occurrence remains attached to one persisted coverage cluster.",
-  "contextual_relation": "Canonical Tanzil verse_text is retained on every occurrence record.",
+  "occurrence_evidence": "HDD: 3 positive and 0 counterevidence word_refs resolve in occurrence_dispositions.",
+  "derivation": "HDD: QAC materialized clusters: mutual_urging, urge_another",
+  "lexical_class": "HDD: current claim scope kind is ROOT_GENERALIZATION; claim: pressing another toward an action by active urging or incitement",
+  "contextual_relation": "Form VI adds reciprocity, and complements supply the urged action. Negation evaluates absence of urging, not a different root meaning.",
   "reconciliation": "No historical reconciliation record is present.",
-  "unresolved_resistance": "No final resistant occurrence is currently persisted."
+  "unresolved_resistance": "HDD: No final resistant occurrence is currently persisted."
  },
- "root_evidence_refs": [
-  "107:3:2:1",
-  "89:18:2:1"
- ],
- "root_counterevidence_refs": [],
  "hard_cases": [
   {
    "word_ref": "107:3:2:1",
-   "role": "PERSISTED_STRESS_CASE",
-   "reason": "All occurrences are negative and concern one charitable action, limiting polarity and domain diversity."
+   "role": "MATERIAL_CLASS_BOUNDARY",
+   "reason": "HDD: 107:3:2:1 represents material class urge_another (2 persisted occurrences) that must independently sustain the current universal claim: pressing another toward an action by active urging or incitement"
+  },
+  {
+   "word_ref": "89:18:2:1",
+   "role": "MATERIAL_CLASS_BOUNDARY",
+   "reason": "HDD: 89:18:2:1 represents material class mutual_urging (1 persisted occurrences) that must independently sustain the current universal claim: pressing another toward an action by active urging or incitement"
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "A confirmed occurrence lacks the claimed contribution after the recorded class partition.",
-  "search_location": "The complete persisted Batch 06 word_ref set for this root.",
-  "verification_method": "Compare each claimed class against its persisted occurrence evidence and counterevidence.",
-  "confounder_control": "Keep derivation, lexical class, construction, and local context separate from root contribution.",
-  "failure_consequence": "Narrow the claim to the surviving class or record the root result as unresolved."
+  "challenging_finding": "HDD: reject the current universal claim if a verified Quran-internal occurrence in mutual_urging, urge_another cannot sustain it without an added semantic component. Current hardest boundary: All occurrences are negative and concern one charitable action, limiting polarity and domain diversity.",
+  "search_location": "Batch 06 HDD: all 3 occurrence_dispositions across material clusters mutual_urging, urge_another.",
+  "verification_method": "Test 'pressing another toward an action by active urging or incitement' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
+  "confounder_control": "Form VI adds reciprocity, and complements supply the urged action. Negation evaluates absence of urging, not a different root meaning.",
+  "failure_consequence": "HDD: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
  },
  "falsification_status": "PASSED",
  "reopen_conditions": [
-  "A verified Quran-internal occurrence-level bridge changes a listed class boundary.",
-  "A correction to a referenced occurrence, source binding, or materialized classification changes this judgment's evidence set."
+  "HDD: reopen if a verified Quran-internal bridge changes the boundary between mutual_urging, urge_another for the current claim: pressing another toward an action by active urging or incitement",
+  "HDD: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
  ],
- "purity_status": "NOT_EVALUATED"
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "107:3:2:1",
+  "69:34:2:1",
+  "89:18:2:1"
+ ],
+ "counterevidence_refs": [],
+ "falsification_evidence": {
+  "attempt_id": "BATCH06_ADVERSARIAL_VERIFICATION:HDD",
+  "verdict": "SUPPORTED",
+  "falsifiable": true,
+  "distinctiveness_ok": true,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "mutual_urging",
+   "urge_another"
+  ],
+  "status_rationale": "The persisted adversarial record is SUPPORTed, falsifiable, and distinctive."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "HDD: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "HDD: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "HDD: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "HDD: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "HDD: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "HDD: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "HDD: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "HDD: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
 }

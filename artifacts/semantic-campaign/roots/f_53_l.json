@@ -65,11 +65,13 @@
  },
  "adversarial_verification": {
   "root_buckwalter": "fSl",
-  "verdict": "SUPPORTED",
-  "failing_occurrences": [],
+  "verdict": "PARTIALLY_SUPPORTED",
+  "failing_occurrences": [
+   "70:13:1:2"
+  ],
   "distinctiveness_ok": true,
   "falsifiable": true,
-  "notes": "All classes retain distinction through a boundary; no forced occurrence found."
+  "notes": "The productive detailing and separation classes remain supported, while the family/clan occurrence remains a resistant lexicalized seam."
  },
  "coverage_validation": {
   "root": "fSl",
@@ -2052,39 +2054,158 @@
  "claim_scope": "REPRESENTATIVE",
  "claim_scope_kind": "DERIVATIONAL_FAMILY",
  "layer_attribution": {
-  "occurrence_evidence": "Direct Batch 06 occurrence refs are listed in root_evidence_refs and resolve in occurrence_dispositions.",
-  "derivation": "Material derivational/form separation is preserved in the root's persisted coverage clusters and corrective partition where present.",
-  "lexical_class": "Corrective claim kind: DERIVATIONAL_FAMILY",
+  "occurrence_evidence": "fSl: 42 positive and 1 counterevidence word_refs resolve in occurrence_dispositions.",
+  "derivation": "fSl: QAC materialized clusters: form_ii_detailing, separation_and_decision",
+  "lexical_class": "fSl: current claim scope kind is DERIVATIONAL_FAMILY; claim: Detailing and separation/decision remain productive classes, but the family/clan occurrence is not silently treated as proof of a universal root contribution.",
   "contextual_relation": "Do not absorb family/clan vocabulary into boundary-making without an internal bridge.",
-  "reconciliation": "Historical reconciliation lineage is retained; any current corrective outcome is recorded without deleting the earlier attempt.",
-  "unresolved_resistance": "The prior root-wide generalization did not preserve the family/clan seam as resistant."
+  "reconciliation": "No historical reconciliation record is present.",
+  "unresolved_resistance": "fSl: Final resistance remains persisted for: 70:13:1:2"
  },
- "root_evidence_refs": [
-  "10:24:40:1",
-  "12:94:2:1",
-  "22:17:13:1"
- ],
- "root_counterevidence_refs": [
-  "70:13:1:2"
- ],
  "hard_cases": [
   {
    "word_ref": "70:13:1:2",
-   "role": "FAMILY_CLAN_SEAM",
-   "reason": "The family/clan use has no demonstrated root-wide bridge."
+   "role": "RESISTANT_SEAM",
+   "reason": "fSl: 70:13:1:2 remains RESISTANT in material class separation_and_decision; it pressure-tests the bounded claim: 70:13:1:2 is a family/clan occurrence rather than an overt detailing, separation, or decision use."
   }
  ],
  "rejection_condition": {
-  "challenging_finding": "70:13:1:2 is a family/clan occurrence rather than an overt detailing, separation, or decision use.",
-  "search_location": "The complete persisted Batch 06 word_ref set for fSl",
-  "verification_method": "Test the proposed bridge only against the listed Quran-internal occurrence evidence and counterevidence.",
+  "challenging_finding": "fSl: reject the current representative claim if a verified Quran-internal occurrence in form_ii_detailing, separation_and_decision cannot sustain it without an added semantic component. Current hardest boundary: 70:13:1:2 is a family/clan occurrence rather than an overt detailing, separation, or decision use.",
+  "search_location": "Batch 06 fSl: all 43 occurrence_dispositions across material clusters form_ii_detailing, separation_and_decision.",
+  "verification_method": "Test 'Detailing and separation/decision remain productive classes, but the family/clan occurrence is not silently treated as proof of a universal root contribution.' against every listed supporting_evidence_refs and counterevidence_refs entry, retaining any failed class boundary.",
   "confounder_control": "Do not absorb family/clan vocabulary into boundary-making without an internal bridge.",
-  "failure_consequence": "Retain or narrow the result to the named class; do not restore a universal root generalization."
+  "failure_consequence": "fSl: retain only the surviving material class or record the judgment as UNRESOLVED; do not restore a broader root generalization."
  },
- "falsification_status": "PASSED",
+ "falsification_status": "NOT_RUN",
  "reopen_conditions": [
-  "A verified Quran-internal occurrence-level bridge changes a listed class boundary.",
-  "A correction to a referenced occurrence, source binding, or materialized classification changes this judgment's evidence set."
+  "fSl: reopen if a verified Quran-internal bridge changes the boundary between form_ii_detailing, separation_and_decision for the current claim: Detailing and separation/decision remain productive classes, but the family/clan occurrence is not silently treated as proof of a universal root contribution.",
+  "fSl: reopen if source, morphology, or classification correction changes any listed supporting_evidence_refs or counterevidence_refs identity."
  ],
- "purity_status": "NOT_EVALUATED"
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "10:24:40:1",
+  "10:37:15:2",
+  "10:5:20:1",
+  "11:1:6:1",
+  "12:111:17:2",
+  "12:94:2:1",
+  "13:2:21:1",
+  "17:12:22:1",
+  "17:12:23:1",
+  "22:17:13:1",
+  "2:233:36:1",
+  "2:249:2:1",
+  "30:28:24:1",
+  "31:14:9:2",
+  "32:25:4:1",
+  "37:21:3:2",
+  "38:20:5:2",
+  "41:3:2:1",
+  "41:44:7:1",
+  "42:21:15:2",
+  "44:40:3:2",
+  "46:15:11:2",
+  "60:3:8:1",
+  "6:114:10:1",
+  "6:119:11:1",
+  "6:126:6:1",
+  "6:154:9:2",
+  "6:55:2:1",
+  "6:57:22:2",
+  "6:97:13:1",
+  "6:98:10:1",
+  "77:13:2:2",
+  "77:14:5:2",
+  "77:38:3:2",
+  "78:17:3:2",
+  "7:133:9:1",
+  "7:145:9:2",
+  "7:174:2:1",
+  "7:32:23:1",
+  "7:52:4:1",
+  "86:13:3:1",
+  "9:11:10:2"
+ ],
+ "counterevidence_refs": [
+  "70:13:1:2"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "BATCH06_ADVERSARIAL_VERIFICATION:fSl",
+  "verdict": "PARTIALLY_SUPPORTED",
+  "falsifiable": true,
+  "distinctiveness_ok": true,
+  "failing_occurrences": [
+   "70:13:1:2"
+  ],
+  "tested_material_clusters": [
+   "form_ii_detailing",
+   "separation_and_decision"
+  ],
+  "status_rationale": "The persisted adversarial record does not establish a fully passed, distinctive canonical falsification cycle for this current claim."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fSl: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fSl: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fSl: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fSl: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fSl: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fSl: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fSl: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fSl: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this representation-only remediation.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
 }

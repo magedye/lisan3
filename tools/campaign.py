@@ -827,13 +827,19 @@ BATCH06_ROOT_JUDGMENT_FIELDS = (
     "claim_scope",
     "claim_scope_kind",
     "layer_attribution",
-    "root_evidence_refs",
-    "root_counterevidence_refs",
+    "supporting_evidence_refs",
+    "counterevidence_refs",
     "hard_cases",
     "rejection_condition",
     "falsification_status",
+    "falsification_evidence",
     "reopen_conditions",
     "purity_status",
+    "purity_diagnostics",
+)
+BATCH06_LEGACY_EVIDENCE_ALIAS_FIELDS = (
+    "root_evidence_refs",
+    "root_counterevidence_refs",
 )
 BATCH06_CLAIM_SCOPE_KINDS = {
     "ROOT_GENERALIZATION",
@@ -843,6 +849,16 @@ BATCH06_CLAIM_SCOPE_KINDS = {
     "UNRESOLVED_CLASS_ONLY",
 }
 BATCH06_CLAIM_SCOPES = {"UNIVERSAL", "REPRESENTATIVE", "LOCAL"}
+BATCH06_PURITY_DIAGNOSTICS = (
+    "DICTIONARY_FIRST",
+    "CONTEXTUAL_LEAKAGE",
+    "HERITAGE_BIAS",
+    "TAFSIR_CONTAMINATION",
+    "FORCED_UNIFICATION",
+    "GENERIC_OVEREXTRACTION",
+    "LETTER_SEMANTICS_OVERRELIANCE",
+    "CIRCULAR_CONFIRMATION",
+)
 
 
 def _batch06_artifact_paths(repository_root: Path, manifest: dict) -> dict[str, Path]:
@@ -882,6 +898,73 @@ def _root_cluster_evidence_refs(artifact: dict) -> list[str]:
     return refs
 
 
+def _root_supporting_evidence_refs(artifact: dict) -> list[str]:
+    """Bind every persisted positive occurrence rather than a convenient sample."""
+    return sorted(
+        item["word_ref"]
+        for item in artifact.get("occurrence_dispositions") or []
+        if item.get("final_disposition") == "CONSISTENT"
+        and isinstance(item.get("word_ref"), str)
+    )
+
+
+def _root_counterevidence_refs(artifact: dict) -> list[str]:
+    """Bind persisted resistance and adversarial failures to the active field."""
+    occurrence_refs = _root_occurrence_refs(artifact)
+    resistant_refs = {
+        item["word_ref"]
+        for item in artifact.get("occurrence_dispositions") or []
+        if item.get("final_disposition") == "RESISTANT"
+        and isinstance(item.get("word_ref"), str)
+    }
+    adversarial = artifact.get("adversarial_verification") or {}
+    adversarial_refs = {
+        ref for ref in adversarial.get("failing_occurrences") or []
+        if isinstance(ref, str) and ref in occurrence_refs
+    }
+    historical_refs = {
+        item["word_ref"]
+        for item in artifact.get("resistant_deep_analysis") or []
+        if isinstance(item, dict) and item.get("word_ref") in occurrence_refs
+    }
+    return sorted(resistant_refs | adversarial_refs | historical_refs)
+
+
+def _cluster_details(artifact: dict) -> dict[str, dict]:
+    return {
+        item["cluster_id"]: item
+        for item in ((artifact.get("internal_discovery") or {})
+                     .get("occurrence_classification", {}).get("clusters") or [])
+        if isinstance(item, dict) and isinstance(item.get("cluster_id"), str)
+    }
+
+
+def _claim_text(artifact: dict) -> str:
+    return (
+        artifact.get("candidate_root_contribution")
+        or (artifact.get("internal_discovery") or {}).get("candidate_root_contribution")
+        or "the persisted root judgment"
+    )
+
+
+def _purity_diagnostics(root: str) -> dict[str, dict]:
+    """Keep unavailable diagnostic capability visible without fabricating passes."""
+    return {
+        diagnostic: {
+            "diagnostic": diagnostic,
+            "status": "NOT_EVALUATED",
+            "severity": "NOT_APPLICABLE",
+            "details": (
+                f"{root}: no separate {diagnostic} extractor or diagnostic evidence "
+                "was executed in this representation-only remediation."
+            ),
+            "evidence_refs": [],
+            "hard_blocker": False,
+        }
+        for diagnostic in BATCH06_PURITY_DIAGNOSTICS
+    }
+
+
 def _default_claim_scope(artifact: dict) -> tuple[str, str]:
     """Keep coverage scope distinct from the semantic kind of the claim."""
     if artifact.get("research_state") == "UNRESOLVED":
@@ -905,37 +988,67 @@ def _default_batch06_root_contract(artifact: dict) -> dict:
     ``claim_scope_kind`` records the distinct semantic extent requested for the
     campaign artifacts; it is not an alias for evidentiary coverage scope.
     """
-    evidence_refs = _root_cluster_evidence_refs(artifact)
+    evidence_refs = _root_supporting_evidence_refs(artifact)
     occurrence_refs = _root_occurrence_refs(artifact)
-    resistant_refs = sorted(
-        item["word_ref"]
+    counter_refs = _root_counterevidence_refs(artifact)
+    default_scope, default_scope_kind = _default_claim_scope(artifact)
+    scope = artifact.get("claim_scope")
+    if scope not in BATCH06_CLAIM_SCOPES:
+        scope = default_scope
+    scope_kind = artifact.get("claim_scope_kind")
+    if scope_kind not in BATCH06_CLAIM_SCOPE_KINDS:
+        scope_kind = default_scope_kind
+    root = artifact.get("root_buckwalter", "<unknown>")
+    discovery = artifact.get("internal_discovery") or {}
+    claim = _claim_text(artifact)
+    strongest_counterexample = (
+        discovery.get("strongest_counterexample")
+        or "No additional root-level counterexample was persisted before this structural completion."
+    )
+    clusters = _cluster_details(artifact)
+    cluster_names = sorted(clusters)
+    occurrence_by_ref = {
+        item.get("word_ref"): item
         for item in artifact.get("occurrence_dispositions") or []
-        if item.get("final_disposition") == "RESISTANT"
+        if isinstance(item, dict)
+    }
+    hard_cases: list[dict] = []
+    for ref in counter_refs:
+        occurrence = occurrence_by_ref[ref]
+        cluster = occurrence.get("coverage_cluster_id", "unclassified")
+        disposition = occurrence.get("final_disposition", "recorded")
+        role = "RESISTANT_SEAM" if disposition == "RESISTANT" else "ADVERSARIAL_BOUNDARY"
+        hard_cases.append({
+            "word_ref": ref,
+            "role": role,
+            "reason": (
+                f"{root}: {ref} remains {disposition} in material class {cluster}; "
+                f"it pressure-tests the bounded claim: {strongest_counterexample}"
+            ),
+        })
+    if not hard_cases:
+        cluster_refs = _root_cluster_evidence_refs(artifact)
+        for ref in cluster_refs:
+            occurrence = occurrence_by_ref[ref]
+            cluster = occurrence.get("coverage_cluster_id", "unclassified")
+            metadata = clusters.get(cluster, {})
+            hard_cases.append({
+                "word_ref": ref,
+                "role": "MATERIAL_CLASS_BOUNDARY",
+                "reason": (
+                    f"{root}: {ref} represents material class {cluster} "
+                    f"({metadata.get('occurrence_count_expected', 'unknown')} persisted occurrences) "
+                    f"that must independently sustain the current {scope.lower()} claim: {claim}"
+                ),
+            })
+    resistant_refs = sorted(
+        ref for ref in counter_refs
+        if occurrence_by_ref[ref].get("final_disposition") == "RESISTANT"
     )
     historical_refs = sorted({
         item["word_ref"]
         for item in artifact.get("resistant_deep_analysis") or []
         if isinstance(item, dict) and item.get("word_ref") in occurrence_refs
-    })
-    counter_refs = sorted(set(resistant_refs) | set(historical_refs))
-    scope, scope_kind = _default_claim_scope(artifact)
-    strongest_counterexample = (
-        (artifact.get("internal_discovery") or {}).get("strongest_counterexample")
-        or "No additional root-level counterexample was persisted before this structural completion."
-    )
-    hard_ref = (counter_refs or evidence_refs)[:1]
-    hard_cases = [
-        {
-            "word_ref": ref,
-            "role": "PERSISTED_STRESS_CASE",
-            "reason": strongest_counterexample,
-        }
-        for ref in hard_ref
-    ]
-    clusters = sorted({
-        item.get("coverage_cluster_id")
-        for item in artifact.get("occurrence_dispositions") or []
-        if isinstance(item.get("coverage_cluster_id"), str)
     })
     reconciliation = "No historical reconciliation record is present."
     if historical_refs:
@@ -943,38 +1056,89 @@ def _default_batch06_root_contract(artifact: dict) -> dict:
     resistance = "No final resistant occurrence is currently persisted."
     if resistant_refs:
         resistance = "Final resistance remains persisted for: " + ", ".join(resistant_refs)
+    adversarial = artifact.get("adversarial_verification") or {}
+    passed_falsification = (
+        artifact.get("research_state") == "PREFERRED"
+        and adversarial.get("verdict") == "SUPPORTED"
+        and adversarial.get("distinctiveness_ok") is True
+        and adversarial.get("falsifiable") is True
+    )
+    falsification_status = (
+        "NOT_REQUIRED" if artifact.get("research_state") == "UNRESOLVED"
+        else "PASSED" if passed_falsification else "NOT_RUN"
+    )
+    status_reason = (
+        "The persisted adversarial record is SUPPORTed, falsifiable, and distinctive."
+        if passed_falsification else
+        "The persisted adversarial record does not establish a fully passed, distinctive canonical falsification cycle for this current claim."
+    )
     return {
         "contract_type": "ROOT_CONCEPT",
         "claim_scope": scope,
         "claim_scope_kind": scope_kind,
         "layer_attribution": {
-            "occurrence_evidence": "Exact word_ref-level evidence is persisted in occurrence_dispositions.",
-            "derivation": "QAC materialized form clusters: " + ", ".join(clusters),
-            "lexical_class": "Each occurrence remains attached to one persisted coverage cluster.",
-            "contextual_relation": "Canonical Tanzil verse_text is retained on every occurrence record.",
+            "occurrence_evidence": (
+                f"{root}: {len(evidence_refs)} positive and {len(counter_refs)} counterevidence "
+                "word_refs resolve in occurrence_dispositions."
+            ),
+            "derivation": f"{root}: QAC materialized clusters: " + ", ".join(cluster_names),
+            "lexical_class": f"{root}: current claim scope kind is {scope_kind}; claim: {claim}",
+            "contextual_relation": discovery.get("layer_separation_note") or (
+                f"{root}: canonical Tanzil verse_text remains attached to every occurrence record."
+            ),
             "reconciliation": reconciliation,
-            "unresolved_resistance": resistance,
+            "unresolved_resistance": f"{root}: {resistance}",
         },
-        "root_evidence_refs": evidence_refs,
-        "root_counterevidence_refs": counter_refs,
+        "supporting_evidence_refs": evidence_refs,
+        "counterevidence_refs": counter_refs,
         "hard_cases": hard_cases,
         "rejection_condition": {
-            "challenging_finding": "A confirmed occurrence lacks the claimed contribution after the recorded class partition.",
-            "search_location": "The complete persisted Batch 06 word_ref set for this root.",
-            "verification_method": "Compare each claimed class against its persisted occurrence evidence and counterevidence.",
-            "confounder_control": "Keep derivation, lexical class, construction, and local context separate from root contribution.",
-            "failure_consequence": "Narrow the claim to the surviving class or record the root result as unresolved.",
+            "challenging_finding": (
+                f"{root}: reject the current {scope.lower()} claim if a verified Quran-internal "
+                f"occurrence in {', '.join(cluster_names)} cannot sustain it without an added "
+                f"semantic component. Current hardest boundary: {strongest_counterexample}"
+            ),
+            "search_location": (
+                f"Batch 06 {root}: all {len(occurrence_refs)} occurrence_dispositions across "
+                f"material clusters {', '.join(cluster_names)}."
+            ),
+            "verification_method": (
+                f"Test '{claim}' against every listed supporting_evidence_refs and "
+                "counterevidence_refs entry, retaining any failed class boundary."
+            ),
+            "confounder_control": discovery.get("layer_separation_note") or (
+                "Keep root, derivation, lexical class, construction, and local context distinct."
+            ),
+            "failure_consequence": (
+                f"{root}: retain only the surviving material class or record the judgment as "
+                "UNRESOLVED; do not restore a broader root generalization."
+            ),
         },
-        "falsification_status": (
-            "NOT_REQUIRED"
-            if artifact.get("research_state") == "UNRESOLVED"
-            else "PASSED"
-        ),
+        "falsification_status": falsification_status,
+        "falsification_evidence": {
+            "attempt_id": f"BATCH06_ADVERSARIAL_VERIFICATION:{root}",
+            "verdict": adversarial.get("verdict"),
+            "falsifiable": adversarial.get("falsifiable"),
+            "distinctiveness_ok": adversarial.get("distinctiveness_ok"),
+            "failing_occurrences": sorted(
+                ref for ref in adversarial.get("failing_occurrences") or []
+                if isinstance(ref, str) and ref in occurrence_refs
+            ),
+            "tested_material_clusters": cluster_names,
+            "status_rationale": status_reason,
+        },
         "reopen_conditions": [
-            "A verified Quran-internal occurrence-level bridge changes a listed class boundary.",
-            "A correction to a referenced occurrence, source binding, or materialized classification changes this judgment's evidence set.",
+            (
+                f"{root}: reopen if a verified Quran-internal bridge changes the boundary between "
+                f"{', '.join(cluster_names)} for the current claim: {claim}"
+            ),
+            (
+                f"{root}: reopen if source, morphology, or classification correction changes any "
+                "listed supporting_evidence_refs or counterevidence_refs identity."
+            ),
         ],
         "purity_status": "NOT_EVALUATED",
+        "purity_diagnostics": _purity_diagnostics(root),
     }
 
 
@@ -986,6 +1150,9 @@ def validate_batch06_root_judgment_contract(artifact: dict) -> list[str]:
     if missing:
         errors.append(f"{root}: missing root judgment fields {missing}")
         return errors
+    aliases = [field for field in BATCH06_LEGACY_EVIDENCE_ALIAS_FIELDS if field in artifact]
+    if aliases:
+        errors.append(f"{root}: legacy evidence aliases are not active runtime fields {aliases}")
     if artifact.get("contract_type") != "ROOT_CONCEPT":
         errors.append(f"{root}: contract_type must be ROOT_CONCEPT")
     if artifact.get("claim_scope") not in BATCH06_CLAIM_SCOPES:
@@ -1013,7 +1180,7 @@ def validate_batch06_root_judgment_contract(artifact: dict) -> list[str]:
     elif any(not isinstance(layers[key], str) or not layers[key].strip() for key in expected_layers):
         errors.append(f"{root}: layer_attribution contains an empty material layer")
     refs = _root_occurrence_refs(artifact)
-    for field in ("root_evidence_refs", "root_counterevidence_refs"):
+    for field in ("supporting_evidence_refs", "counterevidence_refs"):
         value = artifact.get(field)
         if not isinstance(value, list) or any(not isinstance(ref, str) for ref in value):
             errors.append(f"{root}: {field} must be a word_ref list")
@@ -1041,8 +1208,40 @@ def validate_batch06_root_judgment_contract(artifact: dict) -> list[str]:
         errors.append(f"{root}: rejection_condition contains an empty control")
     if artifact.get("falsification_status") not in {"NOT_REQUIRED", "NOT_RUN", "PASSED", "FAILED"}:
         errors.append(f"{root}: invalid falsification_status")
+    falsification_evidence = artifact.get("falsification_evidence")
+    required_falsification_evidence = {
+        "attempt_id", "verdict", "falsifiable", "distinctiveness_ok",
+        "failing_occurrences", "tested_material_clusters", "status_rationale",
+    }
+    if not isinstance(falsification_evidence, dict) or required_falsification_evidence - set(falsification_evidence):
+        errors.append(f"{root}: falsification_evidence is incomplete")
+    elif not set(falsification_evidence["failing_occurrences"]) <= refs:
+        errors.append(f"{root}: falsification_evidence contains an unresolved word_ref")
+    if artifact.get("falsification_status") == "PASSED" and not (
+            falsification_evidence.get("verdict") == "SUPPORTED"
+            and falsification_evidence.get("falsifiable") is True
+            and falsification_evidence.get("distinctiveness_ok") is True
+    ):
+        errors.append(f"{root}: PASSED falsification lacks a recorded distinctive support verdict")
     if not isinstance(artifact.get("reopen_conditions"), list) or not artifact["reopen_conditions"]:
         errors.append(f"{root}: reopen_conditions must be non-empty")
+    diagnostics = artifact.get("purity_diagnostics")
+    if not isinstance(diagnostics, dict) or set(diagnostics) != set(BATCH06_PURITY_DIAGNOSTICS):
+        errors.append(f"{root}: purity_diagnostics must contain the eight canonical diagnostics")
+    else:
+        for diagnostic, record in diagnostics.items():
+            required_diagnostic_fields = {
+                "diagnostic", "status", "severity", "details", "evidence_refs", "hard_blocker",
+            }
+            if not isinstance(record, dict) or required_diagnostic_fields - set(record):
+                errors.append(f"{root}: {diagnostic} diagnostic is incomplete")
+                break
+            if record["diagnostic"] != diagnostic or record["status"] != "NOT_EVALUATED":
+                errors.append(f"{root}: {diagnostic} diagnostic is not an honest unavailable diagnostic")
+                break
+            if record["hard_blocker"] is not False or record["evidence_refs"] != []:
+                errors.append(f"{root}: {diagnostic} diagnostic fabricates evidence or a blocker")
+                break
     return errors
 
 
@@ -1211,31 +1410,24 @@ def _apply_root_contract(artifact: dict, target: dict | None) -> None:
     contract = _default_batch06_root_contract(artifact)
     if target is not None:
         for field in (
-            "claim_scope", "claim_scope_kind", "root_evidence_refs",
-            "root_counterevidence_refs", "hard_cases",
+            "claim_scope", "claim_scope_kind",
         ):
             if field in target:
                 contract[field] = target[field]
         contract["layer_attribution"] = {
             **contract["layer_attribution"],
-            "occurrence_evidence": "Direct Batch 06 occurrence refs are listed in root_evidence_refs and resolve in occurrence_dispositions.",
+            "occurrence_evidence": (
+                "Direct Batch 06 occurrence refs are listed in supporting_evidence_refs "
+                "and resolve in occurrence_dispositions."
+            ),
             "derivation": "Material derivational/form separation is preserved in the root's persisted coverage clusters and corrective partition where present.",
             "lexical_class": "Corrective claim kind: " + target["claim_scope_kind"],
             "contextual_relation": target["semantic_boundary"],
             "reconciliation": "Historical reconciliation lineage is retained; any current corrective outcome is recorded without deleting the earlier attempt.",
             "unresolved_resistance": target["rationale"],
         }
-        contract["falsification_status"] = (
-            "NOT_REQUIRED" if target["research_state"] == "UNRESOLVED" else "PASSED"
-        )
-        contract["hard_cases"] = target["hard_cases"]
-        contract["rejection_condition"] = {
-            "challenging_finding": target["strongest_counterexample"],
-            "search_location": "The complete persisted Batch 06 word_ref set for " + artifact["root_buckwalter"],
-            "verification_method": "Test the proposed bridge only against the listed Quran-internal occurrence evidence and counterevidence.",
-            "confounder_control": target["semantic_boundary"],
-            "failure_consequence": "Retain or narrow the result to the named class; do not restore a universal root generalization.",
-        }
+    for alias in BATCH06_LEGACY_EVIDENCE_ALIAS_FIELDS:
+        artifact.pop(alias, None)
     artifact.update(contract)
 
 
@@ -1369,6 +1561,88 @@ def _render_batch06_status_from_baseline(base: str, status: dict) -> str:
     return text
 
 
+def _render_batch06_final_contract_manifest_from_baseline(base: str, manifest: dict) -> str:
+    """Make the final contract state visible without reformatting the root roster."""
+    final = manifest["final_checkpoint"]
+    text = _replace_once(
+        base,
+        '  "status": "BATCH_06_CORRECTIVE_REVISION_READY_FOR_FRESH_REVIEW",',
+        f'  "status": "{manifest["status"]}",',
+        "final-contract manifest status",
+    )
+    text = _replace_once(
+        text,
+        '    "status": "CORRECTIVE_REVISION_APPLIED",',
+        f'    "status": "{final["status"]}",',
+        "final-contract checkpoint status",
+    )
+    text = _replace_once(
+        text,
+        '    "report": "docs/LISAN3_BATCH_06_CORRECTIVE_REVISION.md",',
+        f'    "report": "{final["report"]}",',
+        "final-contract report",
+    )
+    text = _replace_once(
+        text,
+        '    "review_state": "BATCH_06_CORRECTIVE_REVISION_READY_FOR_FRESH_REVIEW_NOT_YET_INDEPENDENTLY_REVIEWED"',
+        f'    "review_state": "{final["review_state"]}"',
+        "final-contract review state",
+    )
+    insertion = (
+        '\n  "final_contract_remediation": '
+        + _indented_json(manifest["final_contract_remediation"], 2).lstrip()
+        + ',\n'
+    )
+    return _replace_once(text, '\n  "roots": [', insertion + '  "roots": [', "final-contract insertion")
+
+
+def _render_batch06_final_contract_status_from_baseline(base: str, status: dict) -> str:
+    """Make the final handoff state visible without unrelated JSON reformatting."""
+    checkpoint = status["batch06_current_checkpoint"]
+    combined = checkpoint["combined"]
+    text = _replace_once(
+        base,
+        '  "status": "BATCH_06_CORRECTIVE_REVISION_COMPLETE",',
+        f'  "status": "{status["status"]}",',
+        "final-contract campaign status",
+    )
+    text = _replace_once(
+        text,
+        '  "verdict": "BATCH_06_CORRECTIVE_REVISION_READY_FOR_FRESH_REVIEW",',
+        f'  "verdict": "{status["verdict"]}",',
+        "final-contract campaign verdict",
+    )
+    text = _replace_once(
+        text,
+        '      "status": "CORRECTIVE_REVISION_APPLIED",',
+        f'      "status": "{combined["status"]}",',
+        "final-contract combined status",
+    )
+    text = _replace_once(
+        text,
+        '    "report": "docs/LISAN3_BATCH_06_CORRECTIVE_REVISION.md",',
+        f'    "report": "{checkpoint["report"]}",',
+        "final-contract checkpoint report",
+    )
+    text = _replace_once(
+        text,
+        '  "resume_instruction": "Stop. Batch 06 corrective revision requires a fresh read-only independent semantic-results review against the exact corrective commit. Do not select Batch 07, canonicalize, merge, push, or release under this authority."',
+        f'  "resume_instruction": {json.dumps(status["resume_instruction"], ensure_ascii=False)}',
+        "final-contract resume instruction",
+    )
+    trailing_newline = '\n' if text.endswith('\n') else ''
+    body = text.rstrip('\n')
+    if not body.endswith('}'):
+        raise ValueError("cannot preserve final-contract status formatting")
+    insertion = (
+        ',\n  "batch06_final_contract_remediation": '
+        + _indented_json(status["batch06_final_contract_remediation"], 2).lstrip()
+        + '\n}'
+        + trailing_newline
+    )
+    return body[:-1].rstrip() + insertion
+
+
 def cmd_apply_batch06_corrective(args):
     """Apply the owner-authorized Batch 06 corrective judgment plan safely.
 
@@ -1475,6 +1749,191 @@ def cmd_apply_batch06_corrective(args):
     }, indent=1))
 
 
+BATCH06_FINAL_CONTRACT_TARGETS = {
+    "kvr", "mvl", "qlb", "swA", "fSl", "wlj", "Sgr", "Ezr", "Hfw", "Sbg",
+}
+BATCH06_FROZEN_SEMANTIC_FIELDS = (
+    "research_state",
+    "result_strength",
+    "universal_presence_holds",
+    "candidate_root_contribution",
+    "occurrence_dispositions",
+    "resistant_occurrences",
+    "resistant_deep_analysis",
+)
+
+
+def _batch06_semantic_snapshot(artifact: dict) -> dict:
+    """Capture the explicitly frozen semantic payload before a contract rewrite."""
+    discovery = artifact.get("internal_discovery") or {}
+    snapshot = {field: artifact.get(field) for field in BATCH06_FROZEN_SEMANTIC_FIELDS}
+    # The discovery object contains the root meaning, class partitions, and
+    # explanatory boundaries. Preserve it as a whole, not merely its headline.
+    snapshot["internal_discovery"] = discovery
+    return json.loads(json.dumps(snapshot, ensure_ascii=False, sort_keys=True))
+
+
+def _apply_target_adversarial_representation(artifact: dict, target: dict) -> None:
+    """Correct only the stale serialization of an already-persisted target judgment."""
+    refs = _root_occurrence_refs(artifact)
+    failing_occurrences = target.get("failing_occurrences") or []
+    if not set(failing_occurrences) <= refs:
+        raise ValueError(
+            f"{artifact.get('root_buckwalter')}: final contract target has unresolved "
+            "adversarial failing occurrence"
+        )
+    adversarial = artifact.get("adversarial_verification")
+    if not isinstance(adversarial, dict):
+        raise TypeError(
+            f"{artifact.get('root_buckwalter')}: lacks persisted adversarial verification record"
+        )
+    adversarial.update({
+        "verdict": target["verdict"],
+        "distinctiveness_ok": target["distinctiveness_ok"],
+        "failing_occurrences": sorted(failing_occurrences),
+        "notes": target["notes"],
+    })
+
+
+def _refresh_batch06_final_contract_manifest(manifest: dict, plan: dict) -> None:
+    final = manifest.setdefault("final_checkpoint", {})
+    final.update({
+        "status": "FINAL_CONTRACT_REMEDIATION_APPLIED",
+        "report": "docs/LISAN3_BATCH_06_FINAL_CONTRACT_REMEDIATION.md",
+        "review_state": "BATCH_06_FINAL_CONTRACT_REMEDIATION_READY_FOR_FRESH_REVIEW_NOT_YET_INDEPENDENTLY_REVIEWED",
+    })
+    manifest["status"] = "BATCH_06_FINAL_CONTRACT_REMEDIATION_READY_FOR_FRESH_REVIEW"
+    manifest["final_contract_remediation"] = {
+        "revision_id": plan["revision_id"],
+        "baseline_sha": plan["baseline_sha"],
+        "source_policy": plan["source_policy"],
+        "canonical_runtime_contract": plan["canonical_runtime_contract"],
+        "required_fields": plan["required_fields"],
+        "target_adversarial_representation": sorted(
+            plan["target_adversarial_representation"]
+        ),
+        "semantic_payload_frozen": True,
+        "fresh_review_required": True,
+    }
+
+
+def _refresh_batch06_final_contract_status(status: dict, plan: dict) -> None:
+    status["status"] = "BATCH_06_FINAL_CONTRACT_REMEDIATION_COMPLETE"
+    status["verdict"] = "BATCH_06_FINAL_CONTRACT_REMEDIATION_READY_FOR_FRESH_REVIEW"
+    checkpoint = status.setdefault("batch06_current_checkpoint", {})
+    checkpoint["report"] = "docs/LISAN3_BATCH_06_FINAL_CONTRACT_REMEDIATION.md"
+    checkpoint.setdefault("combined", {})["status"] = "FINAL_CONTRACT_REMEDIATION_APPLIED"
+    status["resume_instruction"] = (
+        "Stop. Batch 06 final contract remediation requires a fresh read-only independent "
+        "review against the exact corrective commit. Do not select Batch 07, canonicalize, "
+        "merge, push, or release under this authority."
+    )
+    status["batch06_final_contract_remediation"] = {
+        "revision_id": plan["revision_id"],
+        "baseline_sha": plan["baseline_sha"],
+        "canonical_runtime_contract": plan["canonical_runtime_contract"],
+        "semantic_payload_frozen": True,
+        "fresh_review_required": True,
+    }
+
+
+def cmd_apply_batch06_final_contract(args):
+    """Apply the read-only-semantic Batch 06 canonical contract remediation.
+
+    This command has a deliberately narrow custody boundary: it replaces the
+    two legacy evidence aliases, records claim-specific review controls, and
+    corrects only the ten authorized stale adversarial representations.  It
+    rejects a stale baseline and any semantic payload drift before writing.
+    """
+    repository_root = Path(args.repo_root).resolve()
+    plan_path = Path(args.plan)
+    if not plan_path.is_absolute():
+        plan_path = repository_root / plan_path
+    plan = json.loads(plan_path.read_text(encoding="utf-8"))
+    head = subprocess.run(
+        ["git", "rev-parse", "HEAD"], cwd=repository_root, check=True,
+        capture_output=True, text=True, encoding="utf-8",
+    ).stdout.strip()
+    if head != plan.get("baseline_sha"):
+        raise ValueError(
+            "Batch 06 final contract remediation baseline does not match HEAD: "
+            f"expected {plan.get('baseline_sha')}, got {head}"
+        )
+    if set(plan.get("target_adversarial_representation") or {}) != BATCH06_FINAL_CONTRACT_TARGETS:
+        raise ValueError("Batch 06 final contract target set is not exact")
+    if plan.get("semantic_fields_frozen") != list(BATCH06_FROZEN_SEMANTIC_FIELDS):
+        raise ValueError("Batch 06 final contract semantic-freeze declaration is not exact")
+    manifest_path = repository_root / "artifacts/semantic-campaign/BATCH_06_MANIFEST.json"
+    status_path = repository_root / "artifacts/semantic-campaign/CAMPAIGN_STATUS.json"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    paths = _batch06_artifact_paths(repository_root, manifest)
+    artifacts: dict[str, dict] = {}
+    frozen: dict[str, dict] = {}
+    for root, path in paths.items():
+        artifact = json.loads(path.read_text(encoding="utf-8"))
+        if artifact.get("root_buckwalter") != root:
+            raise ValueError(f"Batch 06 artifact identity mismatch at {path}")
+        artifacts[root] = artifact
+        frozen[root] = _batch06_semantic_snapshot(artifact)
+        baseline_artifact = json.loads(_baseline_text(
+            repository_root,
+            plan["baseline_sha"],
+            str(path.relative_to(repository_root)).replace("\\", "/"),
+        ))
+        if baseline_artifact.get("root_buckwalter") != root:
+            raise ValueError(f"Batch 06 baseline artifact identity mismatch at {path}")
+        for field in ("claim_scope", "claim_scope_kind"):
+            value = baseline_artifact.get(field)
+            if value is None:
+                continue
+            artifact[field] = value
+    for root, target in plan["target_adversarial_representation"].items():
+        _apply_target_adversarial_representation(artifacts[root], target)
+    for artifact in artifacts.values():
+        _apply_root_contract(artifact, target=None)
+    errors = [
+        error
+        for artifact in artifacts.values()
+        for error in validate_batch06_root_judgment_contract(artifact)
+    ]
+    if errors:
+        raise ValueError("Batch 06 final contract errors: " + "; ".join(errors))
+    drift = [
+        root for root, artifact in artifacts.items()
+        if _batch06_semantic_snapshot(artifact) != frozen[root]
+    ]
+    if drift:
+        raise ValueError(
+            "Batch 06 final contract remediation attempted semantic payload drift: "
+            + ", ".join(sorted(drift))
+        )
+    _refresh_batch06_final_contract_manifest(manifest, plan)
+    status = json.loads(status_path.read_text(encoding="utf-8"))
+    _refresh_batch06_final_contract_status(status, plan)
+    for root, path in paths.items():
+        _write_root_json(path, root, artifacts[root])
+    manifest_text = _render_batch06_final_contract_manifest_from_baseline(
+        _baseline_text(repository_root, plan["baseline_sha"],
+                       "artifacts/semantic-campaign/BATCH_06_MANIFEST.json"),
+        manifest,
+    )
+    status_text = _render_batch06_final_contract_status_from_baseline(
+        _baseline_text(repository_root, plan["baseline_sha"],
+                       "artifacts/semantic-campaign/CAMPAIGN_STATUS.json"),
+        status,
+    )
+    manifest_path.write_text(manifest_text, encoding="utf-8", newline="\n")
+    status_path.write_text(status_text, encoding="utf-8", newline="\n")
+    print(json.dumps({
+        "revision_id": plan["revision_id"],
+        "baseline_sha": head,
+        "roots": len(artifacts),
+        "canonical_contract_errors": 0,
+        "semantic_payload_drift": [],
+        "status": manifest["status"],
+    }, indent=1))
+
+
 def main():
     p = argparse.ArgumentParser()
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -1488,6 +1947,7 @@ def main():
     pv = sub.add_parser("persist-coverage"); pv.add_argument("--research", required=True); pv.add_argument("--coverage", required=True); pv.add_argument("--batch", required=True); pv.set_defaults(func=cmd_persist_coverage)
     mp = sub.add_parser("mark-pending"); mp.add_argument("--roots", required=True); mp.set_defaults(func=cmd_mark_pending)
     bc = sub.add_parser("apply-batch06-corrective"); bc.add_argument("--repo-root", default="."); bc.add_argument("--plan", default="artifacts/semantic-campaign/BATCH_06_CORRECTIVE_JUDGMENTS.json"); bc.set_defaults(func=cmd_apply_batch06_corrective)
+    fc = sub.add_parser("apply-batch06-final-contract"); fc.add_argument("--repo-root", default="."); fc.add_argument("--plan", default="artifacts/semantic-campaign/BATCH_06_FINAL_CONTRACT_REMEDIATION.json"); fc.set_defaults(func=cmd_apply_batch06_final_contract)
     args = p.parse_args()
     args.func(args)
 
