@@ -1,0 +1,392 @@
+{
+ "root_arabic": "ج ي ب",
+ "root_buckwalter": "jyb",
+ "root_id": "jyb",
+ "artifact_name": "jyb.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave2",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "jayb denotes a concrete garment feature: the opening/slit of clothing at the neck and breast (the bosom-aperture) — that into which a hand is inserted (فِى) and over which a covering is drawn (عَلَىٰ). Attested only as a noun, in singular (جَيْب) and plural (جُيُوب); no verbal, abstract, or metaphorical extension.",
+ "internal_discovery": {
+  "candidate_root_contribution": "jayb denotes a concrete garment feature: the opening/slit of clothing at the neck and breast (the bosom-aperture) — that into which a hand is inserted (فِى) and over which a covering is drawn (عَلَىٰ). Attested only as a noun, in singular (جَيْب) and plural (جُيُوب); no verbal, abstract, or metaphorical extension.",
+  "plain_explanation": "Across all three occurrences جيب names the chest-level opening of a worn garment — the front slit through which the head/neck passes, into which Moses inserts his hand (27:12, 28:32) and over which women draw their head-coverings (24:31). It is the garment's aperture, not the body it exposes and not the cloth that covers it. The singular/plural difference is purely referential (one man's garment vs many women's garments), not a shift in meaning.",
+  "layer_separation_note": "NOT the body part (chest/breast/bosom-flesh): a hand is put فِى it and cloth is drawn عَلَىٰ it, both presupposing a clothing feature distinct from the flesh — the body's private parts are separately named فُرُوج/عَوْرَات in the same verse 24:31. NOT the covering garment (خُمُر is the cloth drawn over the jayb, not the jayb). NOT an inherent 'concealment/hiddenness' component (in 24:31 the jayb is a site of potential exposure that must be covered; concealment comes from خُمُر/ضرب, not from jyb). NOT a verbal/eventive or abstract/moral sense (root surfaces only as a concrete noun). NOT a generic opening/pocket at large — always the neck/breast opening of a worn garment.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "24:31:18:1 (جُيُوبِهِنَّ) is the sole token outside the near-verbatim Moses doublet: it is plural, in a legal (not miracle) register, and it carries the entire cross-class bridge from 'aperture a hand is inserted into' (فِى, 27:12/28:32) to 'opening a covering is drawn over' (عَلَىٰ). It also admits a rival referent — nothing Quran-internal forces juyūb to mean the cloth-aperture rather than the bodily bosom it exposes — so the whole unity claim rests on this one under-attested, mildly ambiguous verse. It does not contradict the nucleus (same physical locus, both frames satisfied by one garment opening), so it is an adversarial boundary and breadth limit, not a resistant sub-class.",
+  "strongest_competitor": "'jayb = the bosom/chest region of the body' (body-locus rather than garment-aperture): it fits all three (hand to bosom; cover bosoms). Rejected as primary because it is vaguer than the evidence licenses — فِى + a verb of insertion (أَدْخِلْ/ٱسْلُكْ) with a hand as object demonstrates an aperture one reaches into, not a solid body-region, and in 24:31 a covering (خُمُر) is drawn عَلَىٰ an opening precisely because the jayb is a gap. Per the narrowness principle the garment-aperture reading dominates; but with only 3 tokens the body-locus reading cannot be fully excluded, which is the main reason the grade is capped below STRONG.",
+  "competing_hypothesis": "'jayb = the bosom/chest region of the body' (body-locus rather than garment-aperture): it fits all three (hand to bosom; cover bosoms). Rejected as primary because it is vaguer than the evidence licenses — فِى + a verb of insertion (أَدْخِلْ/ٱسْلُكْ) with a hand as object demonstrates an aperture one reaches into, not a solid body-region, and in 24:31 a covering (خُمُر) is drawn عَلَىٰ an opening precisely because the jayb is a gap. Per the narrowness principle the garment-aperture reading dominates; but with only 3 tokens the body-locus reading cannot be fully excluded, which is the main reason the grade is capped below STRONG.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All three tokens are nominal (form N), single root, splitting only by grammatical number into singular جَيْب (27:12, 28:32) and plural جُيُوب (24:31). The two singular tokens are a near-verbatim narrative doublet (only أَدْخِلْ↔ٱسْلُكْ differs), so the corpus supplies effectively two independent contexts, not three. Both prepositional frames (فِى insertion, عَلَىٰ covering) reduce to one physical object — a chest-level garment opening — viewed from two functional angles; the differing prepositions track differing actions, not differing referents, so the classes are bridged and there is no unbridged split. The account is adversarially clean (no resistant sub-class; sharp in-verse contrast against فُرُوج/عَوْرَات/خُمُر in 24:31) which lifts it above WEAK, but it is not broad (single form-class, n=3, ~2 contexts, one carrying the bridge alone) and one body-locus competitor survives on the thin data — per contract STRONG requires broad distinctive adversarially-clean evidence, so MODERATE/REPRESENTATIVE is the honest ceiling. No occurrence is universally established, so scope is REPRESENTATIVE over a single concrete nominal lexeme (LEXICALIZED_CLASS), not a ROOT_GENERALIZATION.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "jyb-sg-garment-aperture",
+     "where": {
+      "word_refs": [
+       "27:12:4:1",
+       "28:32:4:1"
+      ],
+      "forms": [
+       "N"
+      ],
+      "qac_pos": [
+       "N"
+      ],
+      "qac_verb_form": [
+       null
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Singular جَيْب = the chest opening of a garment as the goal of insertion — that into which Moses puts his hand (فِى جَيْبِكَ) so it emerges white; an aperture/receptacle, not the body.",
+     "classification_rationale": "Both tokens govern فِى + a verb of insertion (أَدْخِلْ 27:12, ٱسْلُكْ 28:32) with a hand as inserted object; this فِى-frame pins the sense to an aperture at the chest and excludes the body-region reading. The two verses are a near-verbatim doublet of one event (Moses' sign), so they corroborate one reading rather than adding an independent context.",
+     "supporting_evidence_note": "27:12: وَأَدْخِلْ يَدَكَ فِى جَيْبِكَ تَخْرُجْ بَيْضَآءَ. 28:32: ٱسْلُكْ يَدَكَ فِى جَيْبِكَ تَخْرُجْ بَيْضَآءَ. Identical white-hand outcome, only the governing verb differs.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "jyb-pl-garment-aperture",
+     "where": {
+      "word_refs": [
+       "24:31:18:1"
+      ],
+      "forms": [
+       "N"
+      ],
+      "qac_pos": [
+       "N"
+      ],
+      "qac_verb_form": [
+       null
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Plural جُيُوب = the chest openings of garments as the target of covering — the openings over which women draw their خُمُر (عَلَىٰ جُيُوبِهِنَّ) to conceal what the opening would expose; plural = one aperture per woman across many, not a distinct sense.",
+     "classification_rationale": "Governs عَلَىٰ + drawing of the خُمُر (covering cloth); the covering is meaningful precisely because the jayb is a gap. Distinct in-verse from فُرُوج/عَوْرَات (the body's private parts guarded) and from خُمُر (the covering cloth), fixing jayb as the garment feature. عَلَىٰ is neutral between garment-aperture and body-bosom, so this token carries the cross-class bridge alone and admits a residual body-locus ambiguity.",
+     "supporting_evidence_note": "24:31: وَلْيَضْرِبْنَ بِخُمُرِهِنَّ عَلَىٰ جُيُوبِهِنَّ, contrasted within the same verse against وَيَحْفَظْنَ فُرُوجَهُنَّ and عَوْرَٰتِ ٱلنِّسَآءِ.",
+     "counterevidence": [
+      "24:31:18:1"
+     ]
+    }
+   ],
+   "reconciliation": [
+    {
+     "word_ref": "24:31:18:1",
+     "final": "CONSISTENT",
+     "rationale": "A single garment neck/breast opening satisfies both frames: a hand passes into it (فِى) and a covering is drawn over it (عَلَىٰ); the differing prepositions track differing actions, not referents, and both sit at the same chest locus. The فِى-frame of the singular tokens fixes 'aperture', and 24:31 is coherent under that same reading, so the ambiguity is within-nucleus fuzz, not a second unbridged class. It caps strength/breadth (hence MODERATE/REPRESENTATIVE) rather than forcing an UNRESOLVED partition."
+    }
+   ]
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "jyb",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "The garment-aperture nucleus was tested against (a) the preposition asymmetry فِى vs عَلَىٰ, (b) the body-locus competitor, and (c) the sg/pl split. All three tokens are positively accounted for with no failing occurrence: فِى + verb of insertion forces an aperture over a body-region, عَلَىٰ is consistent with drawing a covering over that same opening, and the sg/pl difference is purely referential. Distinctiveness holds via the in-verse contrast against فُرُوج/عَوْرَات (body parts) and خُمُر (covering). The surviving body-locus reading is a breadth/narrowness residual on n=3, not a refuting occurrence, so the account returns SUPPORTED."
+ },
+ "coverage_validation": {
+  "root": "jyb",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "24:31:18:1",
+   "disposition": "CONSISTENT",
+   "note": "Sole non-doublet token and sole carrier of the cross-class bridge; عَلَىٰ + خُمُر supports the garment-aperture nucleus but is neutral between aperture and bodily bosom, leaving a residual body-locus ambiguity that caps confidence. Not contradicted — same chest locus, no second unbridged class. | 24:31:18:1 (جُيُوبِهِنَّ) is the sole token outside the near-verbatim Moses doublet and carries the entire cross-class bridge from 'aperture a hand is inserted into' to 'opening a covering is drawn over'; its عَلَىٰ + خُمُر frame is neutral between the garment cloth-aperture and the bodily bosom it exposes, so the unity claim rests on one under-attested, mildly ambiguous verse without being contradicted by it.",
+   "coverage_cluster_id": "jyb-pl-garment-aperture",
+   "candidate_semantic_interpretation": "Plural جُيُوب = the chest openings of garments as the target of covering — the openings over which women draw their خُمُر (عَلَىٰ جُيُوبِهِنَّ) to conceal what the opening would expose; plural = one aperture per woman across many, not a distinct sense.",
+   "cluster_supporting_evidence": "24:31: وَلْيَضْرِبْنَ بِخُمُرِهِنَّ عَلَىٰ جُيُوبِهِنَّ, contrasted within the same verse against وَيَحْفَظْنَ فُرُوجَهُنَّ and عَوْرَٰتِ ٱلنِّسَآءِ.",
+   "counterevidence": [
+    "24:31:18:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Governs عَلَىٰ + drawing of the خُمُر (covering cloth); the covering is meaningful precisely because the jayb is a gap. Distinct in-verse from فُرُوج/عَوْرَات (the body's private parts guarded) and from خُمُر (the covering cloth), fixing jayb as the garment feature. عَلَىٰ is neutral between garment-aperture and body-bosom, so this token carries the cross-class bridge alone and admits a residual body-locus ambiguity.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": "A single garment neck/breast opening satisfies both frames: a hand passes into it (فِى) and a covering is drawn over it (عَلَىٰ); the differing prepositions track differing actions, not referents, and both sit at the same chest locus. The فِى-frame of the singular tokens fixes 'aperture', and 24:31 is coherent under that same reading, so the ambiguity is within-nucleus fuzz, not a second unbridged class. It caps strength/breadth (hence MODERATE/REPRESENTATIVE) rather than forcing an UNRESOLVED partition.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "24:31:18:1",
+     "preliminary_disposition": "STRUCTURAL_UNCERTAINTY",
+     "preliminary_note": "Adversary flags aperture-vs-bosom ambiguity and that the entire sg→pl bridge rests on this single verse in a different register, raising a possible container-vs-content split (Moses' aperture vs women's bodily bosom).",
+     "final_disposition": "CONSISTENT",
+     "reconciliation_rationale": "A single garment neck/breast opening satisfies both frames: a hand passes into it (فِى) and a covering is drawn over it (عَلَىٰ); the differing prepositions track differing actions, not referents, and both sit at the same chest locus. The فِى-frame of the singular tokens fixes 'aperture', and 24:31 is coherent under that same reading, so the ambiguity is within-nucleus fuzz, not a second unbridged class. It caps strength/breadth (hence MODERATE/REPRESENTATIVE) rather than forcing an UNRESOLVED partition.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [
+    "24:31:18:1"
+   ],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "24:31",
+     "verse_text": "وَقُل لِّلْمُؤْمِنَٰتِ يَغْضُضْنَ مِنْ أَبْصَٰرِهِنَّ وَيَحْفَظْنَ فُرُوجَهُنَّ وَلَا يُبْدِينَ زِينَتَهُنَّ إِلَّا مَا ظَهَرَ مِنْهَا وَلْيَضْرِبْنَ بِخُمُرِهِنَّ عَلَىٰ جُيُوبِهِنَّ وَلَا يُبْدِينَ زِينَتَهُنَّ إِلَّا لِبُعُولَتِهِنَّ أَوْ ءَابَآئِهِنَّ أَوْ ءَابَآءِ بُعُولَتِهِنَّ أَوْ أَبْنَآئِهِنَّ أَوْ أَبْنَآءِ بُعُولَتِهِنَّ أَوْ إِخْوَٰنِهِنَّ أَوْ بَنِىٓ إِخْوَٰنِهِنَّ أَوْ بَنِىٓ أَخَوَٰتِهِنَّ أَوْ نِسَآئِهِنَّ أَوْ مَا مَلَكَتْ أَيْمَٰنُهُنَّ أَوِ ٱلتَّٰبِعِينَ غَيْرِ أُو۟لِى ٱلْإِرْبَةِ مِنَ ٱلرِّجَالِ أَوِ ٱلطِّفْلِ ٱلَّذِينَ لَمْ يَظْهَرُوا۟ عَلَىٰ عَوْرَٰتِ ٱلنِّسَآءِ وَلَا يَضْرِبْنَ بِأَرْجُلِهِنَّ لِيُعْلَمَ مَا يُخْفِينَ مِن زِينَتِهِنَّ وَتُوبُوٓا۟ إِلَى ٱللَّهِ جَمِيعًا أَيُّهَ ٱلْمُؤْمِنُونَ لَعَلَّكُمْ تُفْلِحُونَ"
+    }
+   ],
+   "root_arabic": "ج ي ب",
+   "root_buckwalter": "jyb",
+   "root_id": "jyb",
+   "artifact_name": "jyb.json",
+   "verse_ref": "24:31",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "juyuwbi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَقُل لِّلْمُؤْمِنَٰتِ يَغْضُضْنَ مِنْ أَبْصَٰرِهِنَّ وَيَحْفَظْنَ فُرُوجَهُنَّ وَلَا يُبْدِينَ زِينَتَهُنَّ إِلَّا مَا ظَهَرَ مِنْهَا وَلْيَضْرِبْنَ بِخُمُرِهِنَّ عَلَىٰ جُيُوبِهِنَّ وَلَا يُبْدِينَ زِينَتَهُنَّ إِلَّا لِبُعُولَتِهِنَّ أَوْ ءَابَآئِهِنَّ أَوْ ءَابَآءِ بُعُولَتِهِنَّ أَوْ أَبْنَآئِهِنَّ أَوْ أَبْنَآءِ بُعُولَتِهِنَّ أَوْ إِخْوَٰنِهِنَّ أَوْ بَنِىٓ إِخْوَٰنِهِنَّ أَوْ بَنِىٓ أَخَوَٰتِهِنَّ أَوْ نِسَآئِهِنَّ أَوْ مَا مَلَكَتْ أَيْمَٰنُهُنَّ أَوِ ٱلتَّٰبِعِينَ غَيْرِ أُو۟لِى ٱلْإِرْبَةِ مِنَ ٱلرِّجَالِ أَوِ ٱلطِّفْلِ ٱلَّذِينَ لَمْ يَظْهَرُوا۟ عَلَىٰ عَوْرَٰتِ ٱلنِّسَآءِ وَلَا يَضْرِبْنَ بِأَرْجُلِهِنَّ لِيُعْلَمَ مَا يُخْفِينَ مِن زِينَتِهِنَّ وَتُوبُوٓا۟ إِلَى ٱللَّهِ جَمِيعًا أَيُّهَ ٱلْمُؤْمِنُونَ لَعَلَّكُمْ تُفْلِحُونَ"
+  },
+  {
+   "word_ref": "27:12:4:1",
+   "disposition": "CONSISTENT",
+   "note": "Both tokens govern فِى + a verb of insertion (أَدْخِلْ 27:12, ٱسْلُكْ 28:32) with a hand as inserted object; this فِى-frame pins the sense to an aperture at the chest and excludes the body-region reading. The two verses are a near-verbatim doublet of one event (Moses' sign), so they corroborate one reading rather than adding an independent context.",
+   "coverage_cluster_id": "jyb-sg-garment-aperture",
+   "candidate_semantic_interpretation": "Singular جَيْب = the chest opening of a garment as the goal of insertion — that into which Moses puts his hand (فِى جَيْبِكَ) so it emerges white; an aperture/receptacle, not the body.",
+   "cluster_supporting_evidence": "27:12: وَأَدْخِلْ يَدَكَ فِى جَيْبِكَ تَخْرُجْ بَيْضَآءَ. 28:32: ٱسْلُكْ يَدَكَ فِى جَيْبِكَ تَخْرُجْ بَيْضَآءَ. Identical white-hand outcome, only the governing verb differs.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Both tokens govern فِى + a verb of insertion (أَدْخِلْ 27:12, ٱسْلُكْ 28:32) with a hand as inserted object; this فِى-frame pins the sense to an aperture at the chest and excludes the body-region reading. The two verses are a near-verbatim doublet of one event (Moses' sign), so they corroborate one reading rather than adding an independent context.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "27:12",
+     "verse_text": "وَأَدْخِلْ يَدَكَ فِى جَيْبِكَ تَخْرُجْ بَيْضَآءَ مِنْ غَيْرِ سُوٓءٍ فِى تِسْعِ ءَايَٰتٍ إِلَىٰ فِرْعَوْنَ وَقَوْمِهِۦٓ إِنَّهُمْ كَانُوا۟ قَوْمًا فَٰسِقِينَ"
+    }
+   ],
+   "root_arabic": "ج ي ب",
+   "root_buckwalter": "jyb",
+   "root_id": "jyb",
+   "artifact_name": "jyb.json",
+   "verse_ref": "27:12",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "jayobi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَأَدْخِلْ يَدَكَ فِى جَيْبِكَ تَخْرُجْ بَيْضَآءَ مِنْ غَيْرِ سُوٓءٍ فِى تِسْعِ ءَايَٰتٍ إِلَىٰ فِرْعَوْنَ وَقَوْمِهِۦٓ إِنَّهُمْ كَانُوا۟ قَوْمًا فَٰسِقِينَ"
+  },
+  {
+   "word_ref": "28:32:4:1",
+   "disposition": "CONSISTENT",
+   "note": "Both tokens govern فِى + a verb of insertion (أَدْخِلْ 27:12, ٱسْلُكْ 28:32) with a hand as inserted object; this فِى-frame pins the sense to an aperture at the chest and excludes the body-region reading. The two verses are a near-verbatim doublet of one event (Moses' sign), so they corroborate one reading rather than adding an independent context.",
+   "coverage_cluster_id": "jyb-sg-garment-aperture",
+   "candidate_semantic_interpretation": "Singular جَيْب = the chest opening of a garment as the goal of insertion — that into which Moses puts his hand (فِى جَيْبِكَ) so it emerges white; an aperture/receptacle, not the body.",
+   "cluster_supporting_evidence": "27:12: وَأَدْخِلْ يَدَكَ فِى جَيْبِكَ تَخْرُجْ بَيْضَآءَ. 28:32: ٱسْلُكْ يَدَكَ فِى جَيْبِكَ تَخْرُجْ بَيْضَآءَ. Identical white-hand outcome, only the governing verb differs.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Both tokens govern فِى + a verb of insertion (أَدْخِلْ 27:12, ٱسْلُكْ 28:32) with a hand as inserted object; this فِى-frame pins the sense to an aperture at the chest and excludes the body-region reading. The two verses are a near-verbatim doublet of one event (Moses' sign), so they corroborate one reading rather than adding an independent context.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "28:32",
+     "verse_text": "ٱسْلُكْ يَدَكَ فِى جَيْبِكَ تَخْرُجْ بَيْضَآءَ مِنْ غَيْرِ سُوٓءٍ وَٱضْمُمْ إِلَيْكَ جَنَاحَكَ مِنَ ٱلرَّهْبِ فَذَٰنِكَ بُرْهَٰنَانِ مِن رَّبِّكَ إِلَىٰ فِرْعَوْنَ وَمَلَإِي۟هِۦٓ إِنَّهُمْ كَانُوا۟ قَوْمًا فَٰسِقِينَ"
+    }
+   ],
+   "root_arabic": "ج ي ب",
+   "root_buckwalter": "jyb",
+   "root_id": "jyb",
+   "artifact_name": "jyb.json",
+   "verse_ref": "28:32",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "jayobi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱسْلُكْ يَدَكَ فِى جَيْبِكَ تَخْرُجْ بَيْضَآءَ مِنْ غَيْرِ سُوٓءٍ وَٱضْمُمْ إِلَيْكَ جَنَاحَكَ مِنَ ٱلرَّهْبِ فَذَٰنِكَ بُرْهَٰنَانِ مِن رَّبِّكَ إِلَىٰ فِرْعَوْنَ وَمَلَإِي۟هِۦٓ إِنَّهُمْ كَانُوا۟ قَوْمًا فَٰسِقِينَ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Three independent analyses (Lens A bottom-up, Lens B contrastive, Lens C adversarial) converged on the same garment-aperture nucleus, agreed there is no resistant sub-class, and independently identified 24:31 as the sole breadth wedge — none produced a failing occurrence.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "jayb denotes a concrete garment feature: the opening/slit of clothing at the neck and breast (the bosom-aperture) — that into which a hand is inserted (فِى) and over which a covering is drawn (عَلَىٰ). Attested only as a noun, in singular (جَيْب) and plural (جُيُوب); no verbal, abstract, or metaphorical extension.",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "LEXICALIZED_CLASS",
+ "layer_attribution": {
+  "occurrence_evidence": "27:12/28:32: فِى جَيْبِكَ with أَدْخِلْ/ٱسْلُكْ + hand, hand emerges white; 24:31: عَلَىٰ جُيُوبِهِنَّ with يَضْرِبْنَ بِخُمُرِهِنَّ. Prepositions and governing verbs are the load-bearing surface data.",
+  "derivation": "No derivational spread: root surfaces only as the noun, in singular جَيْب and plural جُيُوب; no verb form, participle, or abstract derivative attested (all qac_verb_form=null, qac_pos=N).",
+  "lexical_class": "A single concrete nominal lexeme naming a garment feature (the neck/breast opening); purely physical-material, no eventive or moral extension.",
+  "contextual_relation": "Occurs in two narrative/legal contexts — Moses' white-hand sign (27:12, 28:32) and the modesty legislation (24:31). These contexts (miracle sign; commanded covering) are contextual meaning and must NOT be absorbed into the root claim; jyb contributes only the concrete garment-opening object, not 'sign', 'concealment', or 'modesty'.",
+  "reconciliation": "Singular and plural are reconciled as one referent (a chest garment opening) differing only in number; the فِى (insertion) and عَلَىٰ (covering) frames are reconciled as two actions on one physical aperture, bridging the two clusters without forcing distinct senses.",
+  "unresolved_resistance": "No resistant occurrence and no unbridged class. The only residual is breadth/under-attestation: the cross-class bridge and a surviving body-locus competitor both hinge on the single ambiguous token 24:31:18:1, which caps the result at MODERATE/REPRESENTATIVE rather than leaving anything genuinely unresolved."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "24:31:18:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "Only token outside the Moses doublet, only plural token, and sole carrier of the cross-class bridge; its عَلَىٰ frame is neutral between garment-aperture and bodily bosom, so it is the single wedge against a unified nucleus — a breadth/under-attestation limit, not a contradiction.",
+   "evidence_basis": {
+    "kind": "SINGLE_VERSE_BRIDGE_WITH_REFERENT_AMBIGUITY",
+    "statement": "24:31:18:1 (جُيُوبِهِنَّ) is the sole token outside the near-verbatim Moses doublet and carries the entire cross-class bridge from 'aperture a hand is inserted into' to 'opening a covering is drawn over'; its عَلَىٰ + خُمُر frame is neutral between the garment cloth-aperture and the bodily bosom it exposes, so the unity claim rests on one under-attested, mildly ambiguous verse without being contradicted by it."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "There is no resistant sub-class and no occurrence contradicts the nucleus, but 24:31:18:1 is a genuine adversarial boundary: it alone bears the sg→pl bridge and admits a body-locus rival referent. This is recorded as an EVIDENCE_DERIVED hard case (ADVERSARIAL_BOUNDARY) whose statement also appears as the strongest_counterexample and in the 24:31 cluster/override notes; it justifies the breadth cap to MODERATE/REPRESENTATIVE rather than an UNRESOLVED result."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A Quran-internal occurrence of ج ي ب in which the referent cannot be the neck/breast opening of a worn garment — e.g. a token requiring the bodily chest/bosom itself, a generic non-chest opening or pocket, a covering-cloth sense, or a verbal/abstract sense — thereby breaking the single garment-aperture nucleus or splitting the singular and plural into unbridged classes.",
+  "search_location": "All three attested tokens (27:12:4:1, 28:32:4:1, 24:31:18:1) and any newly confirmed jyb occurrence; specifically the governing preposition and verb (فِى + insertion vs عَلَىٰ + covering) and the in-verse contrast set فُرُوج/عَوْرَات/خُمُر in 24:31.",
+  "verification_method": "Re-read the governing syntax of each token: confirm whether the object is entered into (aperture), draped over (opening at a surface), or predicated as body/flesh; test whether the body-locus competitor is forced rather than merely admissible, and whether the sg/pl referents remain the same physical garment feature.",
+  "confounder_control": "Discount the 27:12/28:32 near-verbatim doublet as one context, not two; separate the garment feature (jayb) from the body it exposes (فُرُوج/عَوْرَات) and from the covering cloth (خُمُر); do not import classical-lexicon 'pocket' or body-part 'bosom' glosses as authority; treat عَلَىٰ as neutral evidence that cannot by itself decide aperture-vs-bosom.",
+  "failure_consequence": "If such a token is found, downgrade from a single bridged nucleus: either narrow to an OCCURRENCE_LEVEL claim per surviving class or, if two senses have no Quran-internal bridge, move research_state to UNRESOLVED with claim_scope_kind UNRESOLVED_CLASS_ONLY; if the body-locus reading is forced anywhere, replace the garment-aperture nucleus with the broader body-region account."
+ },
+ "falsification_status": "PASSED",
+ "reopen_conditions": [
+  "If any future-confirmed jyb token governs a verb of insertion (أدخل/سلك-type) with a non-garment or non-chest target, or predicates jayb as the body/flesh itself, re-test whether the aperture nucleus still holds or must yield to the body-locus competitor.",
+  "If a jyb token appears with عَلَىٰ + a covering in a context where the covered thing is unambiguously the bodily bosom (not a garment opening), re-examine whether 24:31's juyūb should be re-read as body-region, collapsing the garment-aperture reading.",
+  "If a jyb token appears outside the clothing domain (a generic opening, receptacle, or verbal/abstract use), reconsider whether the singular جَيْب and plural جُيُوب remain one bridged lexeme or must split into unbridged classes."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "27:12:4:1",
+  "28:32:4:1",
+  "24:31:18:1"
+ ],
+ "counterevidence_refs": [
+  "24:31:18:1"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "jyb-falsify-01",
+  "verdict": "SUPPORTED",
+  "falsifiable": true,
+  "distinctiveness_ok": true,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "jyb-sg-garment-aperture",
+   "jyb-pl-garment-aperture"
+  ],
+  "status_rationale": "The garment-aperture nucleus was tested against (a) the preposition asymmetry فِى vs عَلَىٰ, (b) the body-locus competitor, and (c) the sg/pl split. All three tokens are positively accounted for with no failing occurrence: فِى + verb of insertion forces an aperture over a body-region, عَلَىٰ is consistent with drawing a covering over that same opening, and the sg/pl difference is purely referential. Distinctiveness holds via the in-verse contrast against فُرُوج/عَوْرَات (body parts) and خُمُر (covering). The surviving body-locus reading is a breadth/narrowness residual on n=3, not a refuting occurrence, so the account returns SUPPORTED."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jyb: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jyb: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jyb: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jyb: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jyb: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jyb: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jyb: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jyb: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

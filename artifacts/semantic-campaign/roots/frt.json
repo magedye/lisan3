@@ -1,0 +1,333 @@
+{
+ "root_arabic": "ف ر ت",
+ "root_buckwalter": "frt",
+ "root_id": "frt",
+ "artifact_name": "frt.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave2",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "An attribute of water meaning fresh/sweet and fit-to-drink — the positive potable pole of water, standing in explicit binary opposition to briny-bitter water (milḥ ujāj). Attested only as the adjective furāt; the root has no verbal or distinct nominal footprint.",
+ "internal_discovery": {
+  "candidate_root_contribution": "An attribute of water meaning fresh/sweet and fit-to-drink — the positive potable pole of water, standing in explicit binary opposition to briny-bitter water (milḥ ujāj). Attested only as the adjective furāt; the root has no verbal or distinct nominal footprint.",
+  "plain_explanation": "Every one of the 3 occurrences of frt is the same adjective furāt qualifying water. Twice (25:53, 35:12) it appears as the second predicate of the 'sweet' sea (ʿadhbun furātun) set against the salt-bitter sea (milḥun ujājun); once (77:27) it stands alone as the sole quality of the water God gives people to drink (māʾan furātan). Across all three, furāt marks water as fresh and drinkable — the opposite of undrinkable briny water. Whether furāt adds a specific nuance beyond ʿadhb (sweet) cannot be settled from the Quran alone, since the two are only ever co-predicated (25:53, 35:12) and the one solo use (77:27) shows furāt can carry the 'good drinking water' sense by itself but does not isolate its differential content.",
+  "layer_separation_note": "frt does NOT entail saltiness/bitterness (it is the explicit antonym of milḥ/ujāj in 25:53, 35:12); is NOT the noun for water/sea/river (māʾ and baḥr carry that — frt is only the predicated quality); does NOT by itself mean 'goes down smoothly/palatable' (that nuance is a separate predicate sāʾigh sharābuh in 35:12); carries NO motion/flow/'river' sense (25:53 and 35:12 describe standing sea-bodies, 77:27 water given to drink); is NOT applied to any referent beyond water/drink (0/3 non-water); and carries no negative, punitive, or neutral valence (every occurrence is in a sign/favour frame). No morphological or derivational spread beyond the single adjective (pure case variation only).",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "None survives against the core sense: there is no occurrence where furāt attaches to non-potable, salty, or non-water referents, nor any with negative valence — the corpus is adversarially clean on 'fresh/drinkable water'. The residual weakness is precision, not consistency: in 25:53 and 35:12 furāt is co-predicated with ʿadhb, so it cannot be decisively separated from a mere near-synonym/emphatic doublet of ʿadhb; only the solo use in 77:27 pushes back by showing furāt can carry the sense alone, but 3 tokens in essentially one collocational frame cannot fix furāt's distinct differential content.",
+  "strongest_competitor": "furāt = simply 'sweet/fresh (of water)', a lexicalized near-synonym or intensifier of ʿadhb, the pairing ʿadhbun furātun being rhetorical emphasis rather than semantic addition. This account fits all 3 occurrences and cannot be eliminated Quran-internally; the 'distinct drinkability pole opposite ujāj' refinement rests on parallelism inference plus the single solo occurrence 77:27, which is suggestive but not decisive on 3 tokens.",
+  "competing_hypothesis": "furāt = simply 'sweet/fresh (of water)', a lexicalized near-synonym or intensifier of ʿadhb, the pairing ʿadhbun furātun being rhetorical emphasis rather than semantic addition. This account fits all 3 occurrences and cannot be eliminated Quran-internally; the 'distinct drinkability pole opposite ujāj' refinement rests on parallelism inference plus the single solo occurrence 77:27, which is suggestive but not decisive on 3 tokens.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All three lenses (A, B, C) fully converge: a single ADJ lexeme furāt, one referent domain (water), one core value (fresh/drinkable, opposed to briny-bitter), zero resistant sub-class, zero counterexample. The evidence is internally consistent and adversarially clean, which supports a PREFERRED narrowest account. But STRONG requires broad, distinctive, adversarially-clean evidence: here the evidence is narrow and homogeneous (3 tokens, one form, effectively two environments — a doublet appearing twice plus one standalone), the item behaves as a lexicalized fixed epithet rather than a productive root, and the differential content of furāt vs ʿadhb is underdetermined internally. Per contract (CONSISTENT ≠ universally established; high frequency/consistency ≠ truth; narrow homogeneous evidence must not be over-graded; lexicalized class caps scope at REPRESENTATIVE), the honest ceiling is MODERATE + REPRESENTATIVE + LEXICALIZED_CLASS.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "furat_water_adjective",
+     "where": {
+      "qac_pos": [
+       "ADJ"
+      ],
+      "forms": [
+       "ADJ"
+      ],
+      "word_refs": [
+       "25:53:7:1",
+       "35:12:6:1",
+       "77:27:7:1"
+      ]
+     },
+     "occurrence_count_expected": 3,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "furāt as attributive/predicate adjective of water: fresh, sweet, fit-to-drink — the positive potable pole opposed to briny-bitter water (milḥ ujāj).",
+     "classification_rationale": "All 3 occurrences are the same adjective furāt (differing only by case inflection: nom. furaAtN in 25:53 and 35:12, acc. furaAtFA in 77:27), all predicate water, and all carry the same value. No sub-class divergence: 2/3 co-predicate with ʿadhb against milḥ ujāj; 1/3 (77:27) stands alone qualifying māʾ given to drink. One unified lexicalized class.",
+     "supporting_evidence_note": "25:53 «هَٰذَا عَذْبٌ فُرَاتٌ وَهَٰذَا مِلْحٌ أُجَاجٌ» and 35:12 «هَٰذَا عَذْبٌ فُرَاتٌ سَآئِغٌ شَرَابُهُۥ وَهَٰذَا مِلْحٌ أُجَاجٌ» set furāt in explicit polar contrast to milḥ ujāj; 77:27 «وَأَسْقَيْنَٰكُم مَّآءً فُرَاتًا» shows furāt sufficing alone to mark potable water in a drinking (asqaynākum) frame.",
+     "counterevidence": []
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "frt",
+  "verdict": "CORE_SUPPORTED_DISTINCTIVENESS_UNDETERMINED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": false,
+  "falsifiable": true,
+  "notes": "The core sense 'furāt = fresh/drinkable water, opposed to briny-bitter' is adversarially clean across 3/3 with no failing occurrence, so it is not FAILED. But full falsification returning distinctiveness_ok=true is not achievable: furāt's differential content relative to the co-predicated ʿadhb cannot be isolated on 3 tokens in effectively one collocational frame (only 77:27 uses it solo). Because distinctiveness is underdetermined rather than refuted, and no occurrence resists the core, the honest status is NOT_RUN, with the underdetermination recorded in strongest_counterexample and strongest_competitor."
+ },
+ "coverage_validation": {
+  "root": "frt",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "25:53:7:1",
+   "disposition": "CONSISTENT",
+   "note": "All 3 occurrences are the same adjective furāt (differing only by case inflection: nom. furaAtN in 25:53 and 35:12, acc. furaAtFA in 77:27), all predicate water, and all carry the same value. No sub-class divergence: 2/3 co-predicate with ʿadhb against milḥ ujāj; 1/3 (77:27) stands alone qualifying māʾ given to drink. One unified lexicalized class.",
+   "coverage_cluster_id": "furat_water_adjective",
+   "candidate_semantic_interpretation": "furāt as attributive/predicate adjective of water: fresh, sweet, fit-to-drink — the positive potable pole opposed to briny-bitter water (milḥ ujāj).",
+   "cluster_supporting_evidence": "25:53 «هَٰذَا عَذْبٌ فُرَاتٌ وَهَٰذَا مِلْحٌ أُجَاجٌ» and 35:12 «هَٰذَا عَذْبٌ فُرَاتٌ سَآئِغٌ شَرَابُهُۥ وَهَٰذَا مِلْحٌ أُجَاجٌ» set furāt in explicit polar contrast to milḥ ujāj; 77:27 «وَأَسْقَيْنَٰكُم مَّآءً فُرَاتًا» shows furāt sufficing alone to mark potable water in a drinking (asqaynākum) frame.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 3 occurrences are the same adjective furāt (differing only by case inflection: nom. furaAtN in 25:53 and 35:12, acc. furaAtFA in 77:27), all predicate water, and all carry the same value. No sub-class divergence: 2/3 co-predicate with ʿadhb against milḥ ujāj; 1/3 (77:27) stands alone qualifying māʾ given to drink. One unified lexicalized class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "25:53",
+     "verse_text": "وَهُوَ ٱلَّذِى مَرَجَ ٱلْبَحْرَيْنِ هَٰذَا عَذْبٌ فُرَاتٌ وَهَٰذَا مِلْحٌ أُجَاجٌ وَجَعَلَ بَيْنَهُمَا بَرْزَخًا وَحِجْرًا مَّحْجُورًا"
+    }
+   ],
+   "root_arabic": "ف ر ت",
+   "root_buckwalter": "frt",
+   "root_id": "frt",
+   "artifact_name": "frt.json",
+   "verse_ref": "25:53",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "furaAtN",
+   "qac_tag": "ADJ",
+   "qac_pos": "ADJ",
+   "qac_verb_form": null,
+   "morphology": "ADJ",
+   "form": "ADJ",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَهُوَ ٱلَّذِى مَرَجَ ٱلْبَحْرَيْنِ هَٰذَا عَذْبٌ فُرَاتٌ وَهَٰذَا مِلْحٌ أُجَاجٌ وَجَعَلَ بَيْنَهُمَا بَرْزَخًا وَحِجْرًا مَّحْجُورًا"
+  },
+  {
+   "word_ref": "35:12:6:1",
+   "disposition": "CONSISTENT",
+   "note": "All 3 occurrences are the same adjective furāt (differing only by case inflection: nom. furaAtN in 25:53 and 35:12, acc. furaAtFA in 77:27), all predicate water, and all carry the same value. No sub-class divergence: 2/3 co-predicate with ʿadhb against milḥ ujāj; 1/3 (77:27) stands alone qualifying māʾ given to drink. One unified lexicalized class.",
+   "coverage_cluster_id": "furat_water_adjective",
+   "candidate_semantic_interpretation": "furāt as attributive/predicate adjective of water: fresh, sweet, fit-to-drink — the positive potable pole opposed to briny-bitter water (milḥ ujāj).",
+   "cluster_supporting_evidence": "25:53 «هَٰذَا عَذْبٌ فُرَاتٌ وَهَٰذَا مِلْحٌ أُجَاجٌ» and 35:12 «هَٰذَا عَذْبٌ فُرَاتٌ سَآئِغٌ شَرَابُهُۥ وَهَٰذَا مِلْحٌ أُجَاجٌ» set furāt in explicit polar contrast to milḥ ujāj; 77:27 «وَأَسْقَيْنَٰكُم مَّآءً فُرَاتًا» shows furāt sufficing alone to mark potable water in a drinking (asqaynākum) frame.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 3 occurrences are the same adjective furāt (differing only by case inflection: nom. furaAtN in 25:53 and 35:12, acc. furaAtFA in 77:27), all predicate water, and all carry the same value. No sub-class divergence: 2/3 co-predicate with ʿadhb against milḥ ujāj; 1/3 (77:27) stands alone qualifying māʾ given to drink. One unified lexicalized class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "35:12",
+     "verse_text": "وَمَا يَسْتَوِى ٱلْبَحْرَانِ هَٰذَا عَذْبٌ فُرَاتٌ سَآئِغٌ شَرَابُهُۥ وَهَٰذَا مِلْحٌ أُجَاجٌ وَمِن كُلٍّ تَأْكُلُونَ لَحْمًا طَرِيًّا وَتَسْتَخْرِجُونَ حِلْيَةً تَلْبَسُونَهَا وَتَرَى ٱلْفُلْكَ فِيهِ مَوَاخِرَ لِتَبْتَغُوا۟ مِن فَضْلِهِۦ وَلَعَلَّكُمْ تَشْكُرُونَ"
+    }
+   ],
+   "root_arabic": "ف ر ت",
+   "root_buckwalter": "frt",
+   "root_id": "frt",
+   "artifact_name": "frt.json",
+   "verse_ref": "35:12",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "furaAtN",
+   "qac_tag": "ADJ",
+   "qac_pos": "ADJ",
+   "qac_verb_form": null,
+   "morphology": "ADJ",
+   "form": "ADJ",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَمَا يَسْتَوِى ٱلْبَحْرَانِ هَٰذَا عَذْبٌ فُرَاتٌ سَآئِغٌ شَرَابُهُۥ وَهَٰذَا مِلْحٌ أُجَاجٌ وَمِن كُلٍّ تَأْكُلُونَ لَحْمًا طَرِيًّا وَتَسْتَخْرِجُونَ حِلْيَةً تَلْبَسُونَهَا وَتَرَى ٱلْفُلْكَ فِيهِ مَوَاخِرَ لِتَبْتَغُوا۟ مِن فَضْلِهِۦ وَلَعَلَّكُمْ تَشْكُرُونَ"
+  },
+  {
+   "word_ref": "77:27:7:1",
+   "disposition": "CONSISTENT",
+   "note": "All 3 occurrences are the same adjective furāt (differing only by case inflection: nom. furaAtN in 25:53 and 35:12, acc. furaAtFA in 77:27), all predicate water, and all carry the same value. No sub-class divergence: 2/3 co-predicate with ʿadhb against milḥ ujāj; 1/3 (77:27) stands alone qualifying māʾ given to drink. One unified lexicalized class.",
+   "coverage_cluster_id": "furat_water_adjective",
+   "candidate_semantic_interpretation": "furāt as attributive/predicate adjective of water: fresh, sweet, fit-to-drink — the positive potable pole opposed to briny-bitter water (milḥ ujāj).",
+   "cluster_supporting_evidence": "25:53 «هَٰذَا عَذْبٌ فُرَاتٌ وَهَٰذَا مِلْحٌ أُجَاجٌ» and 35:12 «هَٰذَا عَذْبٌ فُرَاتٌ سَآئِغٌ شَرَابُهُۥ وَهَٰذَا مِلْحٌ أُجَاجٌ» set furāt in explicit polar contrast to milḥ ujāj; 77:27 «وَأَسْقَيْنَٰكُم مَّآءً فُرَاتًا» shows furāt sufficing alone to mark potable water in a drinking (asqaynākum) frame.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 3 occurrences are the same adjective furāt (differing only by case inflection: nom. furaAtN in 25:53 and 35:12, acc. furaAtFA in 77:27), all predicate water, and all carry the same value. No sub-class divergence: 2/3 co-predicate with ʿadhb against milḥ ujāj; 1/3 (77:27) stands alone qualifying māʾ given to drink. One unified lexicalized class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "77:27",
+     "verse_text": "وَجَعَلْنَا فِيهَا رَوَٰسِىَ شَٰمِخَٰتٍ وَأَسْقَيْنَٰكُم مَّآءً فُرَاتًا"
+    }
+   ],
+   "root_arabic": "ف ر ت",
+   "root_buckwalter": "frt",
+   "root_id": "frt",
+   "artifact_name": "frt.json",
+   "verse_ref": "77:27",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "furaAtFA",
+   "qac_tag": "ADJ",
+   "qac_pos": "ADJ",
+   "qac_verb_form": null,
+   "morphology": "ADJ",
+   "form": "ADJ",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَجَعَلْنَا فِيهَا رَوَٰسِىَ شَٰمِخَٰتٍ وَأَسْقَيْنَٰكُم مَّآءً فُرَاتًا"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Cross-checked against Lens A, Lens B, and Adversary C — all three independently reached the same single-class, MODERATE/REPRESENTATIVE verdict and all three flagged the ʿadhb-vs-furāt distinctiveness as the sole unresolved point; packet word_refs, forms (ADJ), and verse_text confirmed directly against frt.json.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "An attribute of water meaning fresh/sweet and fit-to-drink — the positive potable pole of water, standing in explicit binary opposition to briny-bitter water (milḥ ujāj). Attested only as the adjective furāt; the root has no verbal or distinct nominal footprint.",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "LEXICALIZED_CLASS",
+ "layer_attribution": {
+  "occurrence_evidence": "3/3 confirmed ADJ tokens of furāt: furaAtN at 25:53:7:1 and 35:12:6:1 (nom. indef.), furaAtFA at 77:27:7:1 (acc. indef.); each predicates water in the verse_text.",
+  "derivation": "No derivational spread: the root frt surfaces only as the adjective furāt, with pure case inflection and no verb or maṣdar; root-level generalization is not testable, so the claim is scoped to the lexicalized adjective.",
+  "lexical_class": "Single lexicalized class — furāt as a fixed water-epithet meaning fresh/sweet and drinkable, the positive potable pole opposed to milḥ ujāj (briny-bitter).",
+  "contextual_relation": "In 25:53 and 35:12 furāt is contextually paired with ʿadhb and set against milḥ ujāj within a two-seas sign; in 35:12 the drinkability nuance is separately carried by sāʾigh sharābuh; in 77:27 furāt qualifies māʾ in a divine-provision drinking frame (asqaynākum). These narrative/contextual framings (sign, favour, two seas) inform but do NOT become the root claim, which is confined to the water-quality of furāt itself.",
+  "reconciliation": "No inter-lens conflict required reconciliation: Lenses A, B, and C converged on one consistent class and the same grade; no preliminary disposition was overturned.",
+  "unresolved_resistance": "No distributional resistance and no resistant sub-class. The sole unresolved point is epistemic: whether furāt adds distinct content beyond ʿadhb (a distinct drinkability pole opposite ujāj) or is a near-synonym/emphatic doublet — undetermined internally on 3 tokens; this caps strength at MODERATE without producing any RESISTANT occurrence."
+ },
+ "hard_cases": [],
+ "hard_case_representation": {
+  "status": "NO_GENUINE_HARD_CASE",
+  "rationale": "There is no resistant, adversarial, or structurally atypical occurrence: all 3 tokens are one adjective, one referent (water), one consistent value, with zero counterexample. The only internal limitation is epistemic underdetermination of furāt's differential content vs ʿadhb, which is a precision gap (already recorded in strongest_counterexample/strongest_competitor and reflected in the MODERATE grade), not a distributional resistance. No occurrence is finally RESISTANT."
+ },
+ "rejection_condition": {
+  "challenging_finding": "An occurrence of frt (or the adjective furāt) predicated of a non-potable, salty/briny, or entirely non-water referent, or carrying a negative/punitive valence, or a Quran-internal environment that co-varies furāt against ʿadhb so as to fix a distinct differential content (or, conversely, collapse them) — any of which would break the 'fresh/drinkable water, opposed to briny-bitter' nucleus or its underdetermination claim.",
+  "search_location": "The 3 confirmed occurrences 25:53:7:1, 35:12:6:1, 77:27:7:1 and their full verse contexts; and any newly surfaced frt token beyond these three.",
+  "verification_method": "Re-read each verse_text for the referent frt modifies and its valence; check whether furāt ever attaches to non-water or salty referents, and whether furāt and ʿadhb are ever contrasted rather than merely co-predicated.",
+  "confounder_control": "Distinguish furāt's own contribution from adjacent predicates ʿadhb (25:53, 35:12) and sāʾigh sharābuh (35:12); do not attribute the palatability/swallowability sense (sāʾigh) or the bare 'sweet' sense (ʿadhb) to furāt itself; exclude external lexica, tafsir, and any imported 'Euphrates/river/flow' reading not demonstrable in the packet.",
+  "failure_consequence": "If furāt is found on a non-potable/salty/non-water referent or with negative valence, the 'fresh drinkable water' nucleus is rejected; if an environment fixes furāt vs ʿadhb, the underdetermination note is resolved and the grade could move (up if a clean distinctive pole is shown, or toward synonymy if collapse is shown)."
+ },
+ "falsification_status": "NOT_RUN",
+ "reopen_conditions": [
+  "If any frt token is found predicating a salty/briny or non-water referent (breaking the milḥ/ujāj antonymy established at 25:53 and 35:12), reopen the 'fresh drinkable water' nucleus.",
+  "If a Quran-internal environment contrasts furāt against ʿadhb (rather than co-predicating them as in 25:53 and 35:12), or provides a second solo use beyond 77:27, reopen the underdetermined furāt-vs-ʿadhb distinctiveness and re-evaluate the MODERATE grade.",
+  "If furāt is found in a motion/flow/'river' or proper-noun frame, reopen the negative boundary excluding any flow/Euphrates sense."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "25:53:7:1",
+  "35:12:6:1",
+  "77:27:7:1"
+ ],
+ "counterevidence_refs": [],
+ "falsification_evidence": {
+  "attempt_id": "frt-falsify-01",
+  "verdict": "CORE_SUPPORTED_DISTINCTIVENESS_UNDETERMINED",
+  "falsifiable": true,
+  "distinctiveness_ok": false,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "furat_water_adjective"
+  ],
+  "status_rationale": "The core sense 'furāt = fresh/drinkable water, opposed to briny-bitter' is adversarially clean across 3/3 with no failing occurrence, so it is not FAILED. But full falsification returning distinctiveness_ok=true is not achievable: furāt's differential content relative to the co-predicated ʿadhb cannot be isolated on 3 tokens in effectively one collocational frame (only 77:27 uses it solo). Because distinctiveness is underdetermined rather than refuted, and no occurrence resists the core, the honest status is NOT_RUN, with the underdetermination recorded in strongest_counterexample and strongest_competitor."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "frt: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "frt: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "frt: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "frt: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "frt: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "frt: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "frt: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "frt: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

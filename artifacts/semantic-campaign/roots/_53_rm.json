@@ -1,0 +1,401 @@
+{
+ "root_arabic": "ص ر م",
+ "root_buckwalter": "Srm",
+ "root_id": "Srm",
+ "artifact_name": "_53_rm.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave2",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "Agentive forcible severing / cutting-off of a plant's produce or growth — i.e. reaping or plucking a garden's yield off the plant. Attested only as a derivational family (imperfect verb + active participle for the agentive act) within the single al-Qalam garden-owners episode; the sole nominal token (faʿīl ṣarīm) coheres as the resultative 'cut-off/stripped' face but is not Quran-internally demonstrated as such.",
+ "internal_discovery": {
+  "candidate_root_contribution": "Agentive forcible severing / cutting-off of a plant's produce or growth — i.e. reaping or plucking a garden's yield off the plant. Attested only as a derivational family (imperfect verb + active participle for the agentive act) within the single al-Qalam garden-owners episode; the sole nominal token (faʿīl ṣarīm) coheres as the resultative 'cut-off/stripped' face but is not Quran-internally demonstrated as such.",
+  "plain_explanation": "In all three occurrences ص ر م sits inside one story (Sūrat al-Qalam 68:17-22, the garden owners). Two tokens are productive and agentive: the verb la-yaṣrimunna-hā (68:17, 'they swore they would surely ṣrm the garden at daybreak') and the active participle ṣārimīn (68:22, 'go early to your crop if you are ṣārimīn / reapers'), both bound to agricultural objects (the garden, the ḥarth). These fix the sense as 'cut the produce off the plant' = reap/strip. The third token is the noun ṣarīm (68:20, 'so by morning it became ka-l-ṣarīm'), where the garden is the patient after being struck by a ṭāʾif. Read as the resultative/patient face of the same nucleus ('a thing cut off / stripped bare') it completes an elegant agent-action-result irony, but it is a non-recurring nominal whose sense rests on narrative inference rather than internal triangulation, so the account is held at MODERATE and to this derivational family only.",
+  "layer_separation_note": "Does NOT mean 'destroy/ruin' — the destroying agent is a different lexical item (ṭāʾif, 68:19) and the human ṣrm they swore to was a benign self-interested harvest that never occurred. Does NOT mean generic 'gather/collect' without physical severance. Does NOT (on this evidence) extend to severing kinship, covenants, bonds, or any non-agricultural object — every datum is horticultural (jannah, ḥarth, fruit). Gives NO Quran-internal support for a temporal 'night/darkness' reading of ṣarīm (that gloss would be an imported lexical prior, excluded by source policy). The active participle ṣārimīn does NOT entail success — it is conditional (in kuntum) and the harvest never happens.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 2,
+   "inconsistent_refs": [
+    "68:20:2:3"
+   ]
+  },
+  "strongest_counterexample": "68:20 ka-l-ṣarīm resists the agentive 'reap/cut produce' account: the garden was not reaped but devastated by a ṭāʾif, yet it is called ṣarīm. faʿīl is voice-ambiguous (active 'that which cuts' vs. resultative 'that which is cut off'), the noun is non-recurring so its sense cannot be triangulated internally, and the destruction is carried by a separate root — so assigning it the 'stripped/cut-off' resultative sense is narrative inference, not lexical demonstration. It shows 'harvest' alone is too narrow and prevents a fully demonstrated single nucleus, capping strength at MODERATE.",
+  "strongest_competitor": "That the root's core is a general 'decisive severance / cutting-off' with harvest merely one instantiation. It unifies all three tokens cleanly (severers / sever-it / the severed-one) and is arguably more economical. It is not adopted only because 100% of occurrences sit in one agricultural scene, licensing no generalization beyond vegetation; it would win the moment any non-horticultural ص ر م occurrence appeared. A second competitor (Adversary C) holds that the productive verbal branch and the nominal ṣarīm are two unbridged branches sharing only consonants — irrefutable internally because ṣarīm never recurs.",
+  "competing_hypothesis": "That the root's core is a general 'decisive severance / cutting-off' with harvest merely one instantiation. It unifies all three tokens cleanly (severers / sever-it / the severed-one) and is arguably more economical. It is not adopted only because 100% of occurrences sit in one agricultural scene, licensing no generalization beyond vegetation; it would win the moment any non-horticultural ص ر م occurrence appeared. A second competitor (Adversary C) holds that the productive verbal branch and the nominal ṣarīm are two unbridged branches sharing only consonants — irrefutable internally because ṣarīm never recurs.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All three lenses independently converge on REPRESENTATIVE / MODERATE. The agentive core (cut off / reap produce) is clean and mutually reinforcing across the verb (68:17) and participle (68:22), both bound to agricultural objects, so the productive account is PREFERRED, not UNRESOLVED. Two independent contract caps forbid STRONG/UNIVERSAL: (1) no distributional breadth — all n=3 are one pericope in one sūrah, one semantic domain; and (2) a resistant, voice-ambiguous, non-recurring nominal (ṣarīm, 68:20) whose bridge to the agentive sense is narrative-inferential and not internally demonstrable. Either alone caps at MODERATE/REPRESENTATIVE; both present. The core holds while one token resists, so falsification is recorded as NOT_RUN with the resistant token logged rather than claimed as confirming evidence. Scope is a DERIVATIONAL_FAMILY (verb + participle + resultative nominal of one triliteral cluster), not a root generalization.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "srm-agentive-reap-produce",
+     "where": {
+      "word_refs": [
+       "68:17:9:2",
+       "68:22:7:1"
+      ],
+      "qac_pos": [
+       "V",
+       "N"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Agentive severing / cutting the produce off a plant — reaping or plucking a garden's yield.",
+     "classification_rationale": "The Form I imperfect la-yaṣrimunna-hā (68:17), with the oath-lām, energetic nūn, and object suffix -hā = the garden, is a deliberate planned act done to the garden's yield at daybreak (morning carried by the separate word muṣbiḥīn, not by the root). The active participle ṣārimīn (68:22) is the agent noun of that same act, explicitly conditioned on the agricultural object ḥarth ('go early to your crop if you are reapers'). The two forms mutually reinforce a single agentive nucleus across verb and participle.",
+     "supporting_evidence_note": "68:17:9:2 yaSorimu (V) object -hā = al-jannah; 68:22:7:1 Sa`rimiyna (N, active participle pl.) bound to ḥarth. Both agentive, both horticultural, no internal resistance.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "srm-resultative-nominal-sarim",
+     "where": {
+      "word_refs": [
+       "68:20:2:3"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "Resultative/patient nominal (faʿīl): 'a thing cut off / stripped bare' — the state the garden was reduced to overnight (plausible resultative face of the agentive nucleus, but not internally demonstrated).",
+     "classification_rationale": "faʿīl ṣarīm in fa-aṣbaḥat ka-l-ṣarīm (68:20) has the garden as patient, not agent, after a ṭāʾif struck it. It coheres with the agentive nucleus as its resultative face and completes a deliberate irony (they swore to ṣrm the garden; by morning it became like the ṣrm-ed). But it is a non-recurring nominal, morphologically voice-ambiguous, and its sense rests on narrative inference rather than internal triangulation; the destruction itself is carried by a different root (ṭāʾif). It is therefore held as a resistant seam, not as confirming evidence.",
+     "supporting_evidence_note": "Sole nominal token; anchored only by the bare simile ka- and the co-textual destroyed garden. No second nominal occurrence to fix the exact shade (stripped-barren vs. other 'cut' quality).",
+     "counterevidence": [
+      "68:20:2:3"
+     ]
+    }
+   ],
+   "reconciliation": [
+    {
+     "word_ref": "68:20:2:3",
+     "final": "RESISTANT",
+     "rationale": "The bridge is narrative-inferential: faʿīl is voice-ambiguous, the noun never recurs so cannot be triangulated internally, and the destruction is borne by a different root (ṭāʾif). Per contract ('morphology != semantic identity'; seek what would DISPROVE), the token cannot be counted as confirming evidence. It is retained as a resistant seam consistent with — but not demonstrating — the core, which itself caps strength at MODERATE."
+    }
+   ]
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "Srm",
+  "verdict": "NOT_RUN",
+  "failing_occurrences": [
+   "68:20:2:3"
+  ],
+  "distinctiveness_ok": false,
+  "falsifiable": true,
+  "notes": "The agentive core holds cleanly across the two productive tokens (68:17, 68:22), but one nominal token (ṣarīm, 68:20) resists internal demonstration and distinctiveness from neighbouring cutting/reaping roots (ḥaṣada, janā, qaṭafa, qaṭaʿa) cannot be tested because no contrast roots are present in the packet. A genuine adversarial refutation returning SUPPORTED with distinctiveness_ok=true and no failing occurrences is therefore not achievable on this packet; the core is retained as PREFERRED with the resistant token recorded rather than a PASSED/FAILED verdict claimed."
+ },
+ "coverage_validation": {
+  "root": "Srm",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [
+   "68:20:2:3"
+  ],
+  "unresolved_visible": [
+   "68:20:2:3"
+  ]
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "68:17:9:2",
+   "disposition": "CONSISTENT",
+   "note": "The Form I imperfect la-yaṣrimunna-hā (68:17), with the oath-lām, energetic nūn, and object suffix -hā = the garden, is a deliberate planned act done to the garden's yield at daybreak (morning carried by the separate word muṣbiḥīn, not by the root). The active participle ṣārimīn (68:22) is the agent noun of that same act, explicitly conditioned on the agricultural object ḥarth ('go early to your crop if you are reapers'). The two forms mutually reinforce a single agentive nucleus across verb and participle.",
+   "coverage_cluster_id": "srm-agentive-reap-produce",
+   "candidate_semantic_interpretation": "Agentive severing / cutting the produce off a plant — reaping or plucking a garden's yield.",
+   "cluster_supporting_evidence": "68:17:9:2 yaSorimu (V) object -hā = al-jannah; 68:22:7:1 Sa`rimiyna (N, active participle pl.) bound to ḥarth. Both agentive, both horticultural, no internal resistance.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The Form I imperfect la-yaṣrimunna-hā (68:17), with the oath-lām, energetic nūn, and object suffix -hā = the garden, is a deliberate planned act done to the garden's yield at daybreak (morning carried by the separate word muṣbiḥīn, not by the root). The active participle ṣārimīn (68:22) is the agent noun of that same act, explicitly conditioned on the agricultural object ḥarth ('go early to your crop if you are reapers'). The two forms mutually reinforce a single agentive nucleus across verb and participle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "68:17",
+     "verse_text": "إِنَّا بَلَوْنَٰهُمْ كَمَا بَلَوْنَآ أَصْحَٰبَ ٱلْجَنَّةِ إِذْ أَقْسَمُوا۟ لَيَصْرِمُنَّهَا مُصْبِحِينَ"
+    }
+   ],
+   "root_arabic": "ص ر م",
+   "root_buckwalter": "Srm",
+   "root_id": "Srm",
+   "artifact_name": "_53_rm.json",
+   "verse_ref": "68:17",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaSorimu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّا بَلَوْنَٰهُمْ كَمَا بَلَوْنَآ أَصْحَٰبَ ٱلْجَنَّةِ إِذْ أَقْسَمُوا۟ لَيَصْرِمُنَّهَا مُصْبِحِينَ"
+  },
+  {
+   "word_ref": "68:20:2:3",
+   "disposition": "RESISTANT",
+   "note": "faʿīl ṣarīm is voice-ambiguous and non-recurring; the 'cut-off/stripped' resultative reading is narrative inference, not Quran-internal demonstration. The garden was devastated (by ṭāʾif, a separate root), not reaped, so the agentive 'reap' sense does not directly apply. Exact nuance UNRESOLVED on internal evidence; logged as counterevidence, not as support. | 68:20 ka-l-ṣarīm resists the agentive 'reap/cut produce' account: the garden was not reaped but devastated by a ṭāʾif, yet it is called ṣarīm. faʿīl is voice-ambiguous (active 'that which cuts' vs. resultative 'that which is cut off'), the noun is non-recurring so its sense cannot be triangulated internally, and the destruction is carried by a separate root — so assigning it the 'stripped/cut-off' resultative sense is narrative inference, not lexical demonstration. It shows 'harvest' alone is too narrow and prevents a fully demonstrated single nucleus, capping strength at MODERATE.",
+   "coverage_cluster_id": "srm-resultative-nominal-sarim",
+   "candidate_semantic_interpretation": "Resultative/patient nominal (faʿīl): 'a thing cut off / stripped bare' — the state the garden was reduced to overnight (plausible resultative face of the agentive nucleus, but not internally demonstrated).",
+   "cluster_supporting_evidence": "Sole nominal token; anchored only by the bare simile ka- and the co-textual destroyed garden. No second nominal occurrence to fix the exact shade (stripped-barren vs. other 'cut' quality).",
+   "counterevidence": [
+    "68:20:2:3"
+   ],
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "faʿīl ṣarīm in fa-aṣbaḥat ka-l-ṣarīm (68:20) has the garden as patient, not agent, after a ṭāʾif struck it. It coheres with the agentive nucleus as its resultative face and completes a deliberate irony (they swore to ṣrm the garden; by morning it became like the ṣrm-ed). But it is a non-recurring nominal, morphologically voice-ambiguous, and its sense rests on narrative inference rather than internal triangulation; the destruction itself is carried by a different root (ṭāʾif). It is therefore held as a resistant seam, not as confirming evidence.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "The bridge is narrative-inferential: faʿīl is voice-ambiguous, the noun never recurs so cannot be triangulated internally, and the destruction is borne by a different root (ṭāʾif). Per contract ('morphology != semantic identity'; seek what would DISPROVE), the token cannot be counted as confirming evidence. It is retained as a resistant seam consistent with — but not demonstrating — the core, which itself caps strength at MODERATE.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "68:20:2:3",
+     "preliminary_disposition": "CONSISTENT",
+     "preliminary_note": "Tempting to read ṣarīm as the resultative 'cut-off/stripped' face of the agentive nucleus, unifying all three tokens under one severance core via the al-Qalam irony.",
+     "final_disposition": "RESISTANT",
+     "reconciliation_rationale": "The bridge is narrative-inferential: faʿīl is voice-ambiguous, the noun never recurs so cannot be triangulated internally, and the destruction is borne by a different root (ṭāʾif). Per contract ('morphology != semantic identity'; seek what would DISPROVE), the token cannot be counted as confirming evidence. It is retained as a resistant seam consistent with — but not demonstrating — the core, which itself caps strength at MODERATE.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [
+    "68:20:2:3"
+   ],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "68:20",
+     "verse_text": "فَأَصْبَحَتْ كَٱلصَّرِيمِ"
+    }
+   ],
+   "root_arabic": "ص ر م",
+   "root_buckwalter": "Srm",
+   "root_id": "Srm",
+   "artifact_name": "_53_rm.json",
+   "verse_ref": "68:20",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "S~ariymi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَأَصْبَحَتْ كَٱلصَّرِيمِ",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "68:22:7:1",
+   "disposition": "CONSISTENT",
+   "note": "The Form I imperfect la-yaṣrimunna-hā (68:17), with the oath-lām, energetic nūn, and object suffix -hā = the garden, is a deliberate planned act done to the garden's yield at daybreak (morning carried by the separate word muṣbiḥīn, not by the root). The active participle ṣārimīn (68:22) is the agent noun of that same act, explicitly conditioned on the agricultural object ḥarth ('go early to your crop if you are reapers'). The two forms mutually reinforce a single agentive nucleus across verb and participle.",
+   "coverage_cluster_id": "srm-agentive-reap-produce",
+   "candidate_semantic_interpretation": "Agentive severing / cutting the produce off a plant — reaping or plucking a garden's yield.",
+   "cluster_supporting_evidence": "68:17:9:2 yaSorimu (V) object -hā = al-jannah; 68:22:7:1 Sa`rimiyna (N, active participle pl.) bound to ḥarth. Both agentive, both horticultural, no internal resistance.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The Form I imperfect la-yaṣrimunna-hā (68:17), with the oath-lām, energetic nūn, and object suffix -hā = the garden, is a deliberate planned act done to the garden's yield at daybreak (morning carried by the separate word muṣbiḥīn, not by the root). The active participle ṣārimīn (68:22) is the agent noun of that same act, explicitly conditioned on the agricultural object ḥarth ('go early to your crop if you are reapers'). The two forms mutually reinforce a single agentive nucleus across verb and participle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "68:22",
+     "verse_text": "أَنِ ٱغْدُوا۟ عَلَىٰ حَرْثِكُمْ إِن كُنتُمْ صَٰرِمِينَ"
+    }
+   ],
+   "root_arabic": "ص ر م",
+   "root_buckwalter": "Srm",
+   "root_id": "Srm",
+   "artifact_name": "_53_rm.json",
+   "verse_ref": "68:22",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Sa`rimiyna",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَنِ ٱغْدُوا۟ عَلَىٰ حَرْثِكُمْ إِن كُنتُمْ صَٰرِمِينَ"
+  }
+ ],
+ "resistant_deep_analysis": [
+  {
+   "word_ref": "68:20:2:3",
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "faʿīl ṣarīm in fa-aṣbaḥat ka-l-ṣarīm (68:20) has the garden as patient, not agent, after a ṭāʾif struck it. It coheres with the agentive nucleus as its resultative face and completes a deliberate irony (they swore to ṣrm the garden; by morning it became like the ṣrm-ed). But it is a non-recurring nominal, morphologically voice-ambiguous, and its sense rests on narrative inference rather than internal triangulation; the destruction itself is carried by a different root (ṭāʾif). It is therefore held as a resistant seam, not as confirming evidence.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "The bridge is narrative-inferential: faʿīl is voice-ambiguous, the noun never recurs so cannot be triangulated internally, and the destruction is borne by a different root (ṭāʾif). Per contract ('morphology != semantic identity'; seek what would DISPROVE), the token cannot be counted as confirming evidence. It is retained as a resistant seam consistent with — but not demonstrating — the core, which itself caps strength at MODERATE.",
+   "deep_analysis": true
+  }
+ ],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Three independent lenses (A, B, adversary C) each read all 3/3 occurrences and independently converged on REPRESENTATIVE/MODERATE with ṣarīm (68:20) flagged as the resistant token; adversary C additionally logged that a unified-nucleus claim over all three is internally irrefutable.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "68:20:2:3"
+ ],
+ "unreconciled_count": 1,
+ "resistant_occurrences": [
+  "68:20:2:3"
+ ],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "Agentive forcible severing / cutting-off of a plant's produce or growth — i.e. reaping or plucking a garden's yield off the plant. Attested only as a derivational family (imperfect verb + active participle for the agentive act) within the single al-Qalam garden-owners episode; the sole nominal token (faʿīl ṣarīm) coheres as the resultative 'cut-off/stripped' face but is not Quran-internally demonstrated as such.",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "DERIVATIONAL_FAMILY",
+ "layer_attribution": {
+  "occurrence_evidence": "Three confirmed tokens, all in Sūrat al-Qalam 68:17-22: yaSorimu (V, 68:17:9:2, object -hā = the garden), S~ariymi (N faʿīl, 68:20:2:3, in ka-l-ṣarīm), Sa`rimiyna (N active participle pl., 68:22:7:1, bound to ḥarth). full_coverage=true, n=3.",
+  "derivation": "One tight triliteral cluster distributed across agent-action-result poles: Form I imperfect verb (agentive act) -> active participle fāʿil (agent) -> faʿīl nominal (resultative/patient). Not disparate stems; a single derivational family.",
+  "lexical_class": "faʿīl ṣarīm (68:20) is a candidate lexicalized/resultative nominal, voice-ambiguous and non-recurring; its status as a compositional resultative vs. a frozen lexical item cannot be resolved internally.",
+  "contextual_relation": "The al-Qalam narrative supplies the harvest scene, the daybreak timing (via muṣbiḥīn), the destroying ṭāʾif (a separate root), and the agent-action-result irony; these are contextual/narrative and are NOT elevated to the root claim, which is confined to 'severing/reaping a plant's produce' plus the flagged resultative nominal.",
+  "reconciliation": "The preliminary unifying reading of ṣarīm as the resultative face was downgraded from CONSISTENT to RESISTANT because its bridge is narrative inference, not internal demonstration; it is retained as a resistant seam consistent with but not confirming the core.",
+  "unresolved_resistance": "68:20 ṣarīm: exact nuance and its bridge to the agentive nucleus are UNRESOLVED on Quran-internal evidence; neither confirmable nor refutable given the non-recurring, voice-ambiguous hapax. This caps strength at MODERATE and scope at REPRESENTATIVE."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "68:20:2:3",
+   "role": "RESISTANT_SEAM",
+   "reason": "Non-recurring, voice-ambiguous faʿīl nominal (ṣarīm) whose 'cut-off/stripped' resultative sense is fixed only by narrative inference, while the garden was destroyed (by a separate root, ṭāʾif) rather than reaped; the bridge to the agentive nucleus is neither internally confirmable nor refutable.",
+   "evidence_basis": {
+    "kind": "INTERNAL_UNDERDETERMINATION",
+    "statement": "68:20 ka-l-ṣarīm resists the agentive 'reap/cut produce' account: the garden was not reaped but devastated by a ṭāʾif, yet it is called ṣarīm. faʿīl is voice-ambiguous (active 'that which cuts' vs. resultative 'that which is cut off'), the noun is non-recurring so its sense cannot be triangulated internally, and the destruction is carried by a separate root — so assigning it the 'stripped/cut-off' resultative sense is narrative inference, not lexical demonstration. It shows 'harvest' alone is too narrow and prevents a fully demonstrated single nucleus, capping strength at MODERATE."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "The single hard case (ṣarīm, 68:20) is derived directly from packet evidence: its faʿīl morphology, its patient role in fa-aṣbaḥat ka-l-ṣarīm, its non-recurrence in the corpus, and the fact that the destruction is carried by a distinct root (ṭāʾif, 68:19). This is genuine internal underdetermination, not a template."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A ص ر م occurrence outside the al-Qalam garden episode, or one whose object is non-agricultural (a bond, covenant, kinship tie, cloth, or body), showing the root's agentive sense is generic 'sever/cut-off' rather than specifically 'cut a plant's produce', OR a second nominal ṣarīm occurrence fixing a sense (e.g. a temporal 'night/darkness' term) incompatible with the resultative 'stripped/cut-off' reading.",
+  "search_location": "Any Quranic verse containing a ص ر م token beyond 68:17, 68:20, 68:22; especially non-narrative or non-agricultural contexts, and any recurrence of the faʿīl nominal ṣarīm.",
+  "verification_method": "Read the full verse and immediate co-text; identify the grammatical object/patient and semantic domain; test whether the agentive 'reap produce' gloss and the resultative 'stripped/cut-off' gloss both survive, or whether a non-produce object forces a broader or split account.",
+  "confounder_control": "Do not let the al-Qalam narrative back-project its plot onto the consonants; separate root contribution (ص ر م) from co-occurring lexemes that carry morning (muṣbiḥīn), destruction (ṭāʾif), or crop (ḥarth). Exclude external lexicon glosses (e.g. 'black night' for ṣarīm) per source policy.",
+  "failure_consequence": "If a non-agricultural agentive token appears, widen the core to generic 'decisive severance/cutting-off' and the competitor account wins; if a divergent ṣarīm sense appears, split the nominal into an unbridged lexicalized class and move research_state toward UNRESOLVED for the nominal branch."
+ },
+ "falsification_status": "NOT_RUN",
+ "reopen_conditions": [
+  "A ص ر م token appears outside 68:17-22 or with a non-agricultural object (bond, covenant, kinship, cloth, body), testing whether the agentive sense is 'cut produce' or generic 'sever/cut-off' — this would decide between the narrow account and the general-severance competitor.",
+  "The faʿīl nominal ṣarīm recurs anywhere in the corpus, allowing internal triangulation of whether 68:20 denotes 'stripped/cut-off' (bridged to the agentive nucleus) or a distinct lexicalized sense (an unbridged homonymic class).",
+  "A cutting/reaping contrast root (e.g. ḥaṣada, janā, qaṭafa, qaṭaʿa) co-occurs with ص ر م in a shared context, permitting a distinctiveness test the current single-domain packet cannot support."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "68:17:9:2",
+  "68:22:7:1"
+ ],
+ "counterevidence_refs": [
+  "68:20:2:3"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "srm-falsify-2026-09-12",
+  "verdict": "NOT_RUN",
+  "falsifiable": true,
+  "distinctiveness_ok": false,
+  "failing_occurrences": [
+   "68:20:2:3"
+  ],
+  "tested_material_clusters": [
+   "srm-agentive-reap-produce",
+   "srm-resultative-nominal-sarim"
+  ],
+  "status_rationale": "The agentive core holds cleanly across the two productive tokens (68:17, 68:22), but one nominal token (ṣarīm, 68:20) resists internal demonstration and distinctiveness from neighbouring cutting/reaping roots (ḥaṣada, janā, qaṭafa, qaṭaʿa) cannot be tested because no contrast roots are present in the packet. A genuine adversarial refutation returning SUPPORTED with distinctiveness_ok=true and no failing occurrences is therefore not achievable on this packet; the core is retained as PREFERRED with the resistant token recorded rather than a PASSED/FAILED verdict claimed."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Srm: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Srm: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Srm: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Srm: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Srm: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Srm: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Srm: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Srm: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

@@ -1,0 +1,397 @@
+{
+ "root_arabic": "ه م ز",
+ "root_buckwalter": "hmz",
+ "root_id": "hmz",
+ "artifact_name": "hmz.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave2",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "A hostile, pejorative jab/prod directed at a target so as to wound or unsettle it. In the dominant and best-anchored realization (the intensive human-agent forms humazah/hammaz) this is habitual verbal disparagement/defamation of other persons; the one act-noun realization (hamazat) is the devils' goadings/promptings directed at the seeker's own soul. The narrow human sub-sense is well-supported; the cross-class 'directed hostile prod' nucleus that also covers 23:97 is defensible but thin (rests on abstraction, n=1 on the satanic side).",
+ "internal_discovery": {
+  "candidate_root_contribution": "A hostile, pejorative jab/prod directed at a target so as to wound or unsettle it. In the dominant and best-anchored realization (the intensive human-agent forms humazah/hammaz) this is habitual verbal disparagement/defamation of other persons; the one act-noun realization (hamazat) is the devils' goadings/promptings directed at the seeker's own soul. The narrow human sub-sense is well-supported; the cross-class 'directed hostile prod' nucleus that also covers 23:97 is defensible but thin (rests on abstraction, n=1 on the satanic side).",
+  "plain_explanation": "hmz never appears as a finite verb; all three tokens are nominal/adjectival. Two of them are intensive agent forms describing a kind of person: humazah (104:1, paired with lumazah under 'woe') and hammaz (68:11, in a vice-list next to namim/talebearing). Both name one who habitually jabs at and disparages other people. The third, hamazat al-shayatin (23:97), is a plural act-noun for the devils' promptings that a person seeks refuge from. Across all three the sense is uniformly hostile and blameworthy; the divergence is that the devils' hamazat target the seeker himself rather than a third party's reputation, which the narrow human sense does not cover.",
+  "layer_separation_note": "hmz is uniformly pejorative/hostile in all 3 tokens (never neutral or approved). It is NOT physical striking/combat (no physical-injury frame attested). It is NOT tale-bearing/namim (in 68:11 hammaz and mashsha' bi-namim are listed as two separate traits, so the jab is distinct from carrying reports). It is held distinct from lamz (104:1 pairs humazah with lumazah as two words, not merged). It does not by itself specify truth/falsity of the speech. It is not restricted to human agency (23:97 attaches it to devils) and not restricted to third-party targets (23:97 targets the self). No finite verb attested, so argument structure is inferred, not directly observed.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 2,
+   "inconsistent_refs": [
+    "23:97:6:1"
+   ]
+  },
+  "strongest_counterexample": "23:97 (hamazat al-shayatin) resists the dominant, best-attested sense 'habitual disparagement/defamation of other people' carried by the two morphologically parallel human-agent forms: the agent is devils not humans, the medium is not demonstrably verbal, and the target is the seeker's own soul rather than a third party's reputation. It fits only the thinner abstract nucleus 'hostile directed prod at a target,' which is reached by abstraction rather than by any Quran-internal bridge (no verse shows a devil defaming, nor a human hamz in a non-defamation sense).",
+  "strongest_competitor": "That hmz is fundamentally a lexicalized human-vice cluster ('habitual disparager,' the humazah/hammaz forms being its core), with hamazat (23:97) a separate, only loosely related application rather than a manifestation of one clean nucleus. This is credible because the human-agent sub-family is morphologically and semantically self-contained and dominates 2 of 3 tokens, and the 'prod' bridge to 23:97 is a post-hoc abstraction not internally demonstrated. It is rejected as the headline result only because the uniform hostile-directed valence is genuinely shared across all three, making a single thin nucleus (graded down) more honest than declaring two fully unbridged senses; but it is retained as a live minority reading and drives the MODERATE cap.",
+  "competing_hypothesis": "That hmz is fundamentally a lexicalized human-vice cluster ('habitual disparager,' the humazah/hammaz forms being its core), with hamazat (23:97) a separate, only loosely related application rather than a manifestation of one clean nucleus. This is credible because the human-agent sub-family is morphologically and semantically self-contained and dominates 2 of 3 tokens, and the 'prod' bridge to 23:97 is a post-hoc abstraction not internally demonstrated. It is rejected as the headline result only because the uniform hostile-directed valence is genuinely shared across all three, making a single thin nucleus (graded down) more honest than declaring two fully unbridged senses; but it is retained as a live minority reading and drives the MODERATE cap.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All three independent analyses converge: 2 of 3 tokens (104:1 humazah, 68:11 hammaz) are intensive human-agent forms in explicitly condemned honor-attack co-text (lumazah; namim), licensing a narrow, adversarially-clean sub-sense of habitual verbal disparagement of persons. The third (23:97 hamazat) is a materially different application: nominal act-plural, non-human (satanic) agent, self-directed target. Per contract, a coherent resistant nominal sub-class and material resistance cap strength at MODERATE and scope at REPRESENTATIVE; STRONG/UNIVERSAL is unsupportable at n=3 with a clean 2-vs-1 split on both agent-type and target. The core human sense holds and the uniform hostile valence is a STRONG-grade negative boundary, so research_state is PREFERRED (not UNRESOLVED); the divergent token is preserved as a resistant seam rather than forced into unity or split into declared homonyms.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "A_human_agent_disparager",
+     "where": {
+      "word_refs": [
+       "104:1:3:1",
+       "68:11:1:1"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Intensive human-agent forms (fuʿalah humazah, faʿʿal hammaz) denoting one who habitually jabs at / disparages / defames other people; both sit in explicitly condemnatory co-text (woe + lumazah; vice-list + namim).",
+     "classification_rationale": "Two distinct intensive morphologies but a single semantic output, both human-agent and characterological, both chained to explicit defamation/honor-attack terms (lumazah in 104:1, namim in 68:11). Adversarially clean intra-class.",
+     "supporting_evidence_note": "104:1 'wayl li-kulli humazatin lumazatin' (condemnatory, paired with lmz honor-attack); 68:11 'hammazin mashsha'in bi-namim' (vice-catalogue, distinct from namim itself).",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "B_satanic_act_noun",
+     "where": {
+      "word_refs": [
+       "23:97:6:1"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "Plural act/instance noun (hamazat) for the devils' goadings/promptings that one seeks refuge from; agent is satanic, target is the seeker's own soul, medium not demonstrably verbal.",
+     "classification_rationale": "Materially resistant to the dominant human-disparagement sense: differs in morphology (eventive act-plural, not agent noun), agent (devils, not human), and target (self, not a third party's reputation). Fits only the thin abstract nucleus reached without an internal bridge.",
+     "supporting_evidence_note": "23:97 'aʿudhu bika min hamazati l-shayatin' — apotropaic frame; the hamazat are a thing fled to God from, not defamation of a third party.",
+     "counterevidence": [
+      "23:97:6:1"
+     ]
+    }
+   ],
+   "reconciliation": [
+    {
+     "word_ref": "23:97:6:1",
+     "final": "RESISTANT",
+     "rationale": "The unifying nucleus is defensible but thin and abstraction-driven (n=1 on the satanic side, no internal verse bridging devil-hamz to human-hamz). Agent, medium, and target all differ from the two anchored human tokens, so it is preserved as a resistant seam rather than absorbed, honoring the narrowest-account and no-forced-unity rules."
+    }
+   ]
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "hmz",
+  "verdict": "NOT_RUN",
+  "failing_occurrences": [
+   "23:97:6:1"
+  ],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "The core human-agent disparagement sense holds cleanly across 2 tokens, but one occurrence (23:97) materially resists and is recorded rather than refuting the core. Per contract, when some occurrences resist but the core holds, falsification is NOT_RUN with the resisting token recorded; a formal SUPPORTED refutation with failing_occurrences=[] is not achievable given the unbridged satanic act-noun."
+ },
+ "coverage_validation": {
+  "root": "hmz",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [
+   "23:97:6:1"
+  ],
+  "unresolved_visible": [
+   "23:97:6:1"
+  ]
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "104:1:3:1",
+   "disposition": "CONSISTENT",
+   "note": "Two distinct intensive morphologies but a single semantic output, both human-agent and characterological, both chained to explicit defamation/honor-attack terms (lumazah in 104:1, namim in 68:11). Adversarially clean intra-class.",
+   "coverage_cluster_id": "A_human_agent_disparager",
+   "candidate_semantic_interpretation": "Intensive human-agent forms (fuʿalah humazah, faʿʿal hammaz) denoting one who habitually jabs at / disparages / defames other people; both sit in explicitly condemnatory co-text (woe + lumazah; vice-list + namim).",
+   "cluster_supporting_evidence": "104:1 'wayl li-kulli humazatin lumazatin' (condemnatory, paired with lmz honor-attack); 68:11 'hammazin mashsha'in bi-namim' (vice-catalogue, distinct from namim itself).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Two distinct intensive morphologies but a single semantic output, both human-agent and characterological, both chained to explicit defamation/honor-attack terms (lumazah in 104:1, namim in 68:11). Adversarially clean intra-class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "104:1",
+     "verse_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَيْلٌ لِّكُلِّ هُمَزَةٍ لُّمَزَةٍ"
+    }
+   ],
+   "root_arabic": "ه م ز",
+   "root_buckwalter": "hmz",
+   "root_id": "hmz",
+   "artifact_name": "hmz.json",
+   "verse_ref": "104:1",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "humazapK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَيْلٌ لِّكُلِّ هُمَزَةٍ لُّمَزَةٍ"
+  },
+  {
+   "word_ref": "23:97:6:1",
+   "disposition": "RESISTANT",
+   "note": "Non-human (satanic) agent, eventive act-plural, self-directed target; resists the human-disparagement account and fits only the thin abstract 'hostile directed prod' nucleus reached by abstraction, not by any Quran-internal bridge. | 23:97 (hamazat al-shayatin) resists the dominant, best-attested sense 'habitual disparagement/defamation of other people' carried by the two morphologically parallel human-agent forms: the agent is devils not humans, the medium is not demonstrably verbal, and the target is the seeker's own soul rather than a third party's reputation. It fits only the thinner abstract nucleus 'hostile directed prod at a target,' which is reached by abstraction rather than by any Quran-internal bridge (no verse shows a devil defaming, nor a human hamz in a non-defamation sense).",
+   "coverage_cluster_id": "B_satanic_act_noun",
+   "candidate_semantic_interpretation": "Plural act/instance noun (hamazat) for the devils' goadings/promptings that one seeks refuge from; agent is satanic, target is the seeker's own soul, medium not demonstrably verbal.",
+   "cluster_supporting_evidence": "23:97 'aʿudhu bika min hamazati l-shayatin' — apotropaic frame; the hamazat are a thing fled to God from, not defamation of a third party.",
+   "counterevidence": [
+    "23:97:6:1"
+   ],
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "Materially resistant to the dominant human-disparagement sense: differs in morphology (eventive act-plural, not agent noun), agent (devils, not human), and target (self, not a third party's reputation). Fits only the thin abstract nucleus reached without an internal bridge.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "The unifying nucleus is defensible but thin and abstraction-driven (n=1 on the satanic side, no internal verse bridging devil-hamz to human-hamz). Agent, medium, and target all differ from the two anchored human tokens, so it is preserved as a resistant seam rather than absorbed, honoring the narrowest-account and no-forced-unity rules.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "23:97:6:1",
+     "preliminary_disposition": "CONSISTENT",
+     "preliminary_note": "Could be read as one manifestation of a unified 'hostile directed prod at a target' nucleus, subsuming the human forms and the devils' hamazat alike.",
+     "final_disposition": "RESISTANT",
+     "reconciliation_rationale": "The unifying nucleus is defensible but thin and abstraction-driven (n=1 on the satanic side, no internal verse bridging devil-hamz to human-hamz). Agent, medium, and target all differ from the two anchored human tokens, so it is preserved as a resistant seam rather than absorbed, honoring the narrowest-account and no-forced-unity rules.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [
+    "23:97:6:1"
+   ],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "23:97",
+     "verse_text": "وَقُل رَّبِّ أَعُوذُ بِكَ مِنْ هَمَزَٰتِ ٱلشَّيَٰطِينِ"
+    }
+   ],
+   "root_arabic": "ه م ز",
+   "root_buckwalter": "hmz",
+   "root_id": "hmz",
+   "artifact_name": "hmz.json",
+   "verse_ref": "23:97",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "hamaza`ti",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَقُل رَّبِّ أَعُوذُ بِكَ مِنْ هَمَزَٰتِ ٱلشَّيَٰطِينِ",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "68:11:1:1",
+   "disposition": "CONSISTENT",
+   "note": "Two distinct intensive morphologies but a single semantic output, both human-agent and characterological, both chained to explicit defamation/honor-attack terms (lumazah in 104:1, namim in 68:11). Adversarially clean intra-class.",
+   "coverage_cluster_id": "A_human_agent_disparager",
+   "candidate_semantic_interpretation": "Intensive human-agent forms (fuʿalah humazah, faʿʿal hammaz) denoting one who habitually jabs at / disparages / defames other people; both sit in explicitly condemnatory co-text (woe + lumazah; vice-list + namim).",
+   "cluster_supporting_evidence": "104:1 'wayl li-kulli humazatin lumazatin' (condemnatory, paired with lmz honor-attack); 68:11 'hammazin mashsha'in bi-namim' (vice-catalogue, distinct from namim itself).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Two distinct intensive morphologies but a single semantic output, both human-agent and characterological, both chained to explicit defamation/honor-attack terms (lumazah in 104:1, namim in 68:11). Adversarially clean intra-class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "68:11",
+     "verse_text": "هَمَّازٍ مَّشَّآءٍۭ بِنَمِيمٍ"
+    }
+   ],
+   "root_arabic": "ه م ز",
+   "root_buckwalter": "hmz",
+   "root_id": "hmz",
+   "artifact_name": "hmz.json",
+   "verse_ref": "68:11",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "ham~aAzK",
+   "qac_tag": "ADJ",
+   "qac_pos": "ADJ",
+   "qac_verb_form": null,
+   "morphology": "ADJ",
+   "form": "ADJ",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "هَمَّازٍ مَّشَّآءٍۭ بِنَمِيمٍ"
+  }
+ ],
+ "resistant_deep_analysis": [
+  {
+   "word_ref": "23:97:6:1",
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "Materially resistant to the dominant human-disparagement sense: differs in morphology (eventive act-plural, not agent noun), agent (devils, not human), and target (self, not a third party's reputation). Fits only the thin abstract nucleus reached without an internal bridge.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "The unifying nucleus is defensible but thin and abstraction-driven (n=1 on the satanic side, no internal verse bridging devil-hamz to human-hamz). Agent, medium, and target all differ from the two anchored human tokens, so it is preserved as a resistant seam rather than absorbed, honoring the narrowest-account and no-forced-unity rules.",
+   "deep_analysis": true
+  }
+ ],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Three independent analyses (A bottom-up, B lens, C adversarial) each converged on MODERATE/REPRESENTATIVE with 23:97 as the resistant seam.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "23:97:6:1"
+ ],
+ "unreconciled_count": 1,
+ "resistant_occurrences": [
+  "23:97:6:1"
+ ],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "A hostile, pejorative jab/prod directed at a target so as to wound or unsettle it. In the dominant and best-anchored realization (the intensive human-agent forms humazah/hammaz) this is habitual verbal disparagement/defamation of other persons; the one act-noun realization (hamazat) is the devils' goadings/promptings directed at the seeker's own soul. The narrow human sub-sense is well-supported; the cross-class 'directed hostile prod' nucleus that also covers 23:97 is defensible but thin (rests on abstraction, n=1 on the satanic side).",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "LEXICALIZED_CLASS",
+ "layer_attribution": {
+  "occurrence_evidence": "3 tokens, all nominal/adjectival, no finite verb: 104:1:3:1 (N, humazah, fuʿalah), 68:11:1:1 (ADJ, hammaz, faʿʿal), 23:97:6:1 (N, hamazat, act-plural).",
+  "derivation": "Two intensive human-agent patterns (fuʿalah, faʿʿal) yield one semantic output (habitual disparager); one act/instance-noun plural (hamazat) yields discrete goadings — morphology splits with semantics but does not by itself fix meaning.",
+  "lexical_class": "Dominant lexicalized human-vice class (humazah/hammaz = habitual disparager of persons), anchored by co-text lumazah (104:1) and namim (68:11); a separate act-noun application for satanic promptings (23:97).",
+  "contextual_relation": "104:1 condemnatory 'woe' + lmz pairing; 68:11 vice-catalogue with namim; 23:97 apotropaic refuge frame with satanic agent — these narrative frames inform but must NOT be elevated into the root claim.",
+  "reconciliation": "The narrow human-disparagement sense is preserved for cluster A; 23:97 is preserved as a resistant seam rather than absorbed by abstraction or split into a declared homonym, yielding a thin unifying 'hostile directed prod' nucleus graded down to MODERATE.",
+  "unresolved_resistance": "23:97 (hamazat al-shayatin) remains materially resistant: non-human agent, eventive morphology, self-directed target, and no Quran-internal bridge to the human forms; this caps strength at MODERATE and scope at REPRESENTATIVE."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "23:97:6:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "Satanic act-noun (hamazat al-shayatin) diverges from the dominant human intensive-agent disparagement sense on agent (devils), medium (not demonstrably verbal), and target (the seeker's own soul, not a third party's reputation); the cross-class bridge is inferential and not Quran-internally demonstrated.",
+   "evidence_basis": {
+    "kind": "DIVERGENT_AGENT_TARGET_AND_MORPHOLOGY",
+    "statement": "23:97 (hamazat al-shayatin) resists the dominant, best-attested sense 'habitual disparagement/defamation of other people' carried by the two morphologically parallel human-agent forms: the agent is devils not humans, the medium is not demonstrably verbal, and the target is the seeker's own soul rather than a third party's reputation. It fits only the thinner abstract nucleus 'hostile directed prod at a target,' which is reached by abstraction rather than by any Quran-internal bridge (no verse shows a devil defaming, nor a human hamz in a non-defamation sense)."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "A single, coherent resistant occurrence (23:97) is preserved as a documented seam with an evidence_basis anchored in its divergent agent, medium, target, and morphology; the core human-agent sense holds for the other two tokens, so this is genuine bounded resistance, not full-root unresolution."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A Quran-internal occurrence showing hmz applied to a human agent in a clearly non-disparaging, non-honor-attack sense, OR a satanic/hamazat token that is itself directed as defamation at a third party's reputation — either of which would collapse the human-disparagement anchor or the seam between the two classes.",
+  "search_location": "The three attested tokens (104:1:3:1, 68:11:1:1, 23:97:6:1) and any newly confirmed hmz occurrence; specifically the collocational frames (lumazah, namim) and the agent/target genitive constructions.",
+  "verification_method": "Re-examine co-text and morphology of each token: confirm agent type (human vs satanic), target (third-party reputation vs self), and whether the intensive-agent honor-attack reading survives adversarial substitution against the act-noun reading.",
+  "confounder_control": "Do not import classical lexical glosses; hold hmz distinct from neighbors lmz (104:1) and namim (68:11) which are separately named; do not let the apotropaic narrative frame of 23:97 be read back as the root's core meaning.",
+  "failure_consequence": "If the human-disparagement anchor is falsified, drop to UNRESOLVED (two unbridged classes); if the seam is falsified toward unity, the thin 'directed hostile prod' nucleus could be re-graded, but strength stays capped at MODERATE at n=3."
+ },
+ "falsification_status": "NOT_RUN",
+ "reopen_conditions": [
+  "If a newly confirmed hmz token attaches a human agent to a non-defamation, non-honor-attack act (or a neutral/approved valence), reopen the humazah/hammaz disparagement anchor.",
+  "If any occurrence internally bridges the satanic hamazat (23:97) to the human intensive-agent forms — e.g., a devil shown defaming a third party, or a human hamz shown as inner goading — reopen the two-class seam and re-test the unified nucleus.",
+  "If a finite verb form of hmz is ever confirmed, reopen argument-structure inference (currently absent for all three nominal/adjectival tokens)."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "104:1:3:1",
+  "68:11:1:1"
+ ],
+ "counterevidence_refs": [
+  "23:97:6:1"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "hmz-falsify-v1",
+  "verdict": "NOT_RUN",
+  "falsifiable": true,
+  "distinctiveness_ok": true,
+  "failing_occurrences": [
+   "23:97:6:1"
+  ],
+  "tested_material_clusters": [
+   "A_human_agent_disparager",
+   "B_satanic_act_noun"
+  ],
+  "status_rationale": "The core human-agent disparagement sense holds cleanly across 2 tokens, but one occurrence (23:97) materially resists and is recorded rather than refuting the core. Per contract, when some occurrences resist but the core holds, falsification is NOT_RUN with the resisting token recorded; a formal SUPPORTED refutation with failing_occurrences=[] is not achievable given the unbridged satanic act-noun."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "hmz: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "hmz: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "hmz: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "hmz: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "hmz: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "hmz: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "hmz: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "hmz: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

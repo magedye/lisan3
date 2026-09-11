@@ -1,0 +1,911 @@
+{
+ "root_arabic": "ج ل د",
+ "root_buckwalter": "jld",
+ "root_id": "jld",
+ "artifact_name": "jld.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave2",
+ "occurrences": 13,
+ "frozen_candidate_root_contribution": null,
+ "internal_discovery": {
+  "candidate_root_contribution": null,
+  "plain_explanation": "The consonantal skeleton ج-ل-د carries two entirely separate meanings in the Quran that never meet. In nine places (all the plural noun juluwd) it means the outer skin/hide of a body: cattle-hide worked into tents (16:80), skins melted (22:20) or roasted and replaced (4:56), skins that shiver then soften beside the heart (39:23), and skins that testify against their owners alongside hearing and sight (41:20-22). In four places, all in Surah 24, it is a penal act: the imperative verb 'flog' (fa-jliduu, 24:2/24:4) together with its counted instance-noun jaldah 'one stroke' (a hundred / eighty). No flogging verse mentions skin, no skin verse mentions striking, and the two share no partner word anywhere. The only thing joining 'skin' and 'flog' is external etymology, which the source policy forbids as authority. So the honest result is not one nucleus but two unbridged classes, and the root-level claim is left unresolved.",
+  "layer_separation_note": "SKIN class (juluwd): the OUTER integument/covering of a body, explicitly set against interior contents (butuun, 22:20) and against the inner heart (quluub, 39:23), and distinguished from channelled senses hearing/sight while listed among witnesses (41:20-22); it is separable/replaceable while personal identity persists (4:56 baddalnaahum juluwdan ghayrahaa), so it is a covering, not the self. It does NOT denote the whole body, an inner faculty, flesh, or 'toughness' (unattested), and it entails no striking. FLOG class (jald/jaldah): an act of counted punitive striking and one such stroke, quantified (mi'ah/thamaaniin) and register-bound to the hadd; it does NOT denote a covering, surface, organ, or 'skin' — its grammatical object is the whole person, never a jild. Neither class is Quran-internally derivable from the other.",
+  "presence": {
+   "occurrences_total": 13,
+   "occurrences_checked": 13,
+   "occurrences_consistent": 9,
+   "inconsistent_refs": [
+    "24:2:3:2",
+    "24:2:8:1",
+    "24:4:11:1",
+    "24:4:9:2"
+   ]
+  },
+  "strongest_counterexample": "24:2 fa-jliduu ... mi'ata jaldatin ('flog each of them a hundred strokes') is a countable judicial act of striking with no covering in view, and it cannot be hosted by any 'skin' nucleus; conversely 16:80 juluudi al-an'aam (hide made into tents) and 39:23's juluud/quluub contrast (skin as bodily membrane) cannot be hosted by any 'striking' nucleus. The two mutually falsify any single Quran-internal nucleus: skins that melt, are replaced, and testify (22:20; 4:56:12:1; 41:20-22) share nothing textually with a counted lash. This unbridgeability is the decisive evidence for a partition rather than a unified root claim.",
+  "strongest_competitor": "The classical unifier: jld = a body's tough outer layer, whence 'skin' (the layer) and 'to flog' (to strike that layer), with jaldah 'a blow to the skin'. It is coherent and mainstream. It is rejected on Quran-internal grounds: (1) the extension 'flog = strike the skin' is nowhere stated — the flogging object is the whole person (kulla waahidin minhumaa 24:2; the -hum of fa-jliduuhum 24:4), never a jild; (2) the seme that would license unification — 'toughness/firmness' (classical jalad/jaliid) — does not occur anywhere in the packet, so there is no third attestation to anchor a super-nucleus; (3) the one context where the two families could have met, punitive action on skins (4:56 nadijat, 22:20 yushar), uses NON-jld verbs, actively cutting the bridge. Without an imported prior the unifier survives only by post-hoc fitting.",
+  "competing_hypothesis": "The classical unifier: jld = a body's tough outer layer, whence 'skin' (the layer) and 'to flog' (to strike that layer), with jaldah 'a blow to the skin'. It is coherent and mainstream. It is rejected on Quran-internal grounds: (1) the extension 'flog = strike the skin' is nowhere stated — the flogging object is the whole person (kulla waahidin minhumaa 24:2; the -hum of fa-jliduuhum 24:4), never a jild; (2) the seme that would license unification — 'toughness/firmness' (classical jalad/jaliid) — does not occur anywhere in the packet, so there is no third attestation to anchor a super-nucleus; (3) the one context where the two families could have met, punitive action on skins (4:56 nadijat, 22:20 yushar), uses NON-jld verbs, actively cutting the bridge. Without an imported prior the unifier survives only by post-hoc fitting.",
+  "unresolved_cases": [],
+  "result": "UNRESOLVED",
+  "result_strength": "UNRESOLVED",
+  "rationale": "All three independent analyses partition the 13 tokens identically into a 9-token nominal SKIN class and a 4-token penal FLOG class, and all three find no Quran-internal bridge between them: the classes never co-occur, share no contrastive partner, and the flogging frame foregrounds count/offense/denial-of-pity with zero surface semantics. Within each class the account is coherent (SKIN is broad, distinctive via butuun/quluub/sam'-absaar contrasts, and adversarially clean across 6 surahs; FLOG is internally self-verified by verb + cognate count-noun co-occurring in 24:2 and 24:4). But per contract (same root != one meaning; morphology != semantic identity; two+ senses with no Quran-internal bridge => choose UNRESOLVED, do not force one nucleus), the ROOT-level judgment cannot be a single contribution. The existence of a coherent resistant lexicalized class (FLOG) alongside the robust SKIN class, with no demonstrable seam, yields an unresolved multi-class result at root level. This is an honest structural outcome, not an analytic failure.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "SKIN_juluwd",
+     "where": {
+      "word_refs": [
+       "16:80:10:1",
+       "22:20:6:3",
+       "39:23:10:1",
+       "39:23:16:1",
+       "41:20:9:2",
+       "41:21:2:2",
+       "41:22:11:1",
+       "4:56:10:1",
+       "4:56:12:1"
+      ]
+     },
+     "occurrence_count_expected": 9,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "juluud (plural of jild) = the outer bodily integument / exterior covering of a body (animal or human); a physical, transformable, sensate surface-boundary set against interior contents and the inner heart.",
+     "classification_rationale": "9/9 nominal tokens across 6 surahs and four independent frames (material culture 16:80; hellfire punishment 22:20, 4:56; revelation-response 39:23; eschatological witness 41:20-22) read consistently as the outer covering. Distinctiveness is fixed by in-text pairings: juluud vs butuun (22:20, outer vs contents), juluud vs quluub (39:23, outer vs inner), juluud among sam'/absaar (41:20-22, tactile surface vs channelled senses). 16:80 (detached animal hide as tent material) confirms referent-neutral 'outer covering' and blocks any over-spiritualized reading; sentience/testimony in 39:23 and 41:20-22 is supplied by context and by divine enablement (41:21 antaqanaa Allah), not by the noun. Internally near-STRONG, but cannot ground a ROOT claim because the root is unresolved across the FLOG seam.",
+     "supporting_evidence_note": "16:80:10:1 hide as inert tent material; 22:20:6:3 skins vs belly-contents; 4:56:10:1/4:56:12:1 skins roasted then replaced (identity persists); 39:23:10:1/39:23:16:1 skins shiver then soften beside hearts; 41:20:9:2/41:21:2:2/41:22:11:1 skins witness alongside hearing and sight.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "FLOG_jald_jaldah",
+     "where": {
+      "word_refs": [
+       "24:2:3:2",
+       "24:2:8:1",
+       "24:4:9:2",
+       "24:4:11:1"
+      ]
+     },
+     "occurrence_count_expected": 4,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "jald (Form-I imperative fa-jliduu) = administer discrete counted strokes as a prescribed penalty; jaldah (nomen vicis) = one such stroke, governed by numerals (mi'ah 24:2, thamaaniin 24:4).",
+     "classification_rationale": "Internally self-bridged and coherent: the verb governs its own cognate count-noun inside the same two verses (fa-jliduu ... mi'ata jaldatin; fa-jliduuhum thamaaniin jaldatan), and jaldah being counted forces 'one stroke', impossible for 'skin'. Confined to a single surah and one hadd register (zinaa 24:2; qadhf 24:4), foregrounding count, offense, and denial of pity — never a covering/surface. This class RESISTS assimilation to the SKIN nucleus and, being a coherent lexicalized sub-class with no Quran-internal bridge to it, structurally caps and defeats any unified root claim. Its members are the resistant seam of the root.",
+     "supporting_evidence_note": "24:2:3:2 fa-jliduu with 24:2:8:1 jaldah counted at 100; 24:4:9:2 fa-jliduuhum with 24:4:11:1 jaldah counted at 80; grammatical object is the whole person, no jild/juluud named.",
+     "counterevidence": [
+      "16:80:10:1",
+      "39:23:10:1",
+      "4:56:12:1"
+     ]
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "jld",
+  "verdict": "NO_UNIFIED_CLAIM_TO_FALSIFY",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "There is no single root contribution to adversarially falsify because the root is judged UNRESOLVED (two unbridged classes). Falsification is NOT_REQUIRED for an unresolved-class-only root. The per-class accounts are individually falsifiable and distinctive (SKIN via butuun/quluub/sam'-absaar contrasts; FLOG via counted jaldah), and none of the 13 occurrences fails its own class; the unresolved status rests on the absence of an inter-class bridge, not on intra-class failure."
+ },
+ "coverage_validation": {
+  "root": "jld",
+  "expected_count": 13,
+  "researched_count": 13,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [
+   "24:2:3:2",
+   "24:2:8:1",
+   "24:4:11:1",
+   "24:4:9:2"
+  ],
+  "unresolved_visible": [
+   "24:2:3:2",
+   "24:2:8:1",
+   "24:4:11:1",
+   "24:4:9:2"
+  ]
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "16:80:10:1",
+   "disposition": "CONSISTENT",
+   "note": "9/9 nominal tokens across 6 surahs and four independent frames (material culture 16:80; hellfire punishment 22:20, 4:56; revelation-response 39:23; eschatological witness 41:20-22) read consistently as the outer covering. Distinctiveness is fixed by in-text pairings: juluud vs butuun (22:20, outer vs contents), juluud vs quluub (39:23, outer vs inner), juluud among sam'/absaar (41:20-22, tactile surface vs channelled senses). 16:80 (detached animal hide as tent material) confirms referent-neutral 'outer covering' and blocks any over-spiritualized reading; sentience/testimony in 39:23 and 41:20-22 is supplied by context and by divine enablement (41:21 antaqanaa Allah), not by the noun. Internally near-STRONG, but cannot ground a ROOT claim because the root is unresolved across the FLOG seam.",
+   "coverage_cluster_id": "SKIN_juluwd",
+   "candidate_semantic_interpretation": "juluud (plural of jild) = the outer bodily integument / exterior covering of a body (animal or human); a physical, transformable, sensate surface-boundary set against interior contents and the inner heart.",
+   "cluster_supporting_evidence": "16:80:10:1 hide as inert tent material; 22:20:6:3 skins vs belly-contents; 4:56:10:1/4:56:12:1 skins roasted then replaced (identity persists); 39:23:10:1/39:23:16:1 skins shiver then soften beside hearts; 41:20:9:2/41:21:2:2/41:22:11:1 skins witness alongside hearing and sight.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "9/9 nominal tokens across 6 surahs and four independent frames (material culture 16:80; hellfire punishment 22:20, 4:56; revelation-response 39:23; eschatological witness 41:20-22) read consistently as the outer covering. Distinctiveness is fixed by in-text pairings: juluud vs butuun (22:20, outer vs contents), juluud vs quluub (39:23, outer vs inner), juluud among sam'/absaar (41:20-22, tactile surface vs channelled senses). 16:80 (detached animal hide as tent material) confirms referent-neutral 'outer covering' and blocks any over-spiritualized reading; sentience/testimony in 39:23 and 41:20-22 is supplied by context and by divine enablement (41:21 antaqanaa Allah), not by the noun. Internally near-STRONG, but cannot ground a ROOT claim because the root is unresolved across the FLOG seam.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "16:80",
+     "verse_text": "وَٱللَّهُ جَعَلَ لَكُم مِّنۢ بُيُوتِكُمْ سَكَنًا وَجَعَلَ لَكُم مِّن جُلُودِ ٱلْأَنْعَٰمِ بُيُوتًا تَسْتَخِفُّونَهَا يَوْمَ ظَعْنِكُمْ وَيَوْمَ إِقَامَتِكُمْ وَمِنْ أَصْوَافِهَا وَأَوْبَارِهَا وَأَشْعَارِهَآ أَثَٰثًا وَمَتَٰعًا إِلَىٰ حِينٍ"
+    }
+   ],
+   "root_arabic": "ج ل د",
+   "root_buckwalter": "jld",
+   "root_id": "jld",
+   "artifact_name": "jld.json",
+   "verse_ref": "16:80",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "juluwdi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱللَّهُ جَعَلَ لَكُم مِّنۢ بُيُوتِكُمْ سَكَنًا وَجَعَلَ لَكُم مِّن جُلُودِ ٱلْأَنْعَٰمِ بُيُوتًا تَسْتَخِفُّونَهَا يَوْمَ ظَعْنِكُمْ وَيَوْمَ إِقَامَتِكُمْ وَمِنْ أَصْوَافِهَا وَأَوْبَارِهَا وَأَشْعَارِهَآ أَثَٰثًا وَمَتَٰعًا إِلَىٰ حِينٍ"
+  },
+  {
+   "word_ref": "22:20:6:3",
+   "disposition": "CONSISTENT",
+   "note": "9/9 nominal tokens across 6 surahs and four independent frames (material culture 16:80; hellfire punishment 22:20, 4:56; revelation-response 39:23; eschatological witness 41:20-22) read consistently as the outer covering. Distinctiveness is fixed by in-text pairings: juluud vs butuun (22:20, outer vs contents), juluud vs quluub (39:23, outer vs inner), juluud among sam'/absaar (41:20-22, tactile surface vs channelled senses). 16:80 (detached animal hide as tent material) confirms referent-neutral 'outer covering' and blocks any over-spiritualized reading; sentience/testimony in 39:23 and 41:20-22 is supplied by context and by divine enablement (41:21 antaqanaa Allah), not by the noun. Internally near-STRONG, but cannot ground a ROOT claim because the root is unresolved across the FLOG seam.",
+   "coverage_cluster_id": "SKIN_juluwd",
+   "candidate_semantic_interpretation": "juluud (plural of jild) = the outer bodily integument / exterior covering of a body (animal or human); a physical, transformable, sensate surface-boundary set against interior contents and the inner heart.",
+   "cluster_supporting_evidence": "16:80:10:1 hide as inert tent material; 22:20:6:3 skins vs belly-contents; 4:56:10:1/4:56:12:1 skins roasted then replaced (identity persists); 39:23:10:1/39:23:16:1 skins shiver then soften beside hearts; 41:20:9:2/41:21:2:2/41:22:11:1 skins witness alongside hearing and sight.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "9/9 nominal tokens across 6 surahs and four independent frames (material culture 16:80; hellfire punishment 22:20, 4:56; revelation-response 39:23; eschatological witness 41:20-22) read consistently as the outer covering. Distinctiveness is fixed by in-text pairings: juluud vs butuun (22:20, outer vs contents), juluud vs quluub (39:23, outer vs inner), juluud among sam'/absaar (41:20-22, tactile surface vs channelled senses). 16:80 (detached animal hide as tent material) confirms referent-neutral 'outer covering' and blocks any over-spiritualized reading; sentience/testimony in 39:23 and 41:20-22 is supplied by context and by divine enablement (41:21 antaqanaa Allah), not by the noun. Internally near-STRONG, but cannot ground a ROOT claim because the root is unresolved across the FLOG seam.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "22:20",
+     "verse_text": "يُصْهَرُ بِهِۦ مَا فِى بُطُونِهِمْ وَٱلْجُلُودُ"
+    }
+   ],
+   "root_arabic": "ج ل د",
+   "root_buckwalter": "jld",
+   "root_id": "jld",
+   "artifact_name": "jld.json",
+   "verse_ref": "22:20",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "juluwdu",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يُصْهَرُ بِهِۦ مَا فِى بُطُونِهِمْ وَٱلْجُلُودُ"
+  },
+  {
+   "word_ref": "24:2:3:2",
+   "disposition": "RESISTANT",
+   "note": "Internally self-bridged and coherent: the verb governs its own cognate count-noun inside the same two verses (fa-jliduu ... mi'ata jaldatin; fa-jliduuhum thamaaniin jaldatan), and jaldah being counted forces 'one stroke', impossible for 'skin'. Confined to a single surah and one hadd register (zinaa 24:2; qadhf 24:4), foregrounding count, offense, and denial of pity — never a covering/surface. This class RESISTS assimilation to the SKIN nucleus and, being a coherent lexicalized sub-class with no Quran-internal bridge to it, structurally caps and defeats any unified root claim. Its members are the resistant seam of the root.",
+   "coverage_cluster_id": "FLOG_jald_jaldah",
+   "candidate_semantic_interpretation": "jald (Form-I imperative fa-jliduu) = administer discrete counted strokes as a prescribed penalty; jaldah (nomen vicis) = one such stroke, governed by numerals (mi'ah 24:2, thamaaniin 24:4).",
+   "cluster_supporting_evidence": "24:2:3:2 fa-jliduu with 24:2:8:1 jaldah counted at 100; 24:4:9:2 fa-jliduuhum with 24:4:11:1 jaldah counted at 80; grammatical object is the whole person, no jild/juluud named.",
+   "counterevidence": [
+    "16:80:10:1",
+    "39:23:10:1",
+    "4:56:12:1"
+   ],
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "Internally self-bridged and coherent: the verb governs its own cognate count-noun inside the same two verses (fa-jliduu ... mi'ata jaldatin; fa-jliduuhum thamaaniin jaldatan), and jaldah being counted forces 'one stroke', impossible for 'skin'. Confined to a single surah and one hadd register (zinaa 24:2; qadhf 24:4), foregrounding count, offense, and denial of pity — never a covering/surface. This class RESISTS assimilation to the SKIN nucleus and, being a coherent lexicalized sub-class with no Quran-internal bridge to it, structurally caps and defeats any unified root claim. Its members are the resistant seam of the root.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "24:2",
+     "verse_text": "ٱلزَّانِيَةُ وَٱلزَّانِى فَٱجْلِدُوا۟ كُلَّ وَٰحِدٍ مِّنْهُمَا مِا۟ئَةَ جَلْدَةٍ وَلَا تَأْخُذْكُم بِهِمَا رَأْفَةٌ فِى دِينِ ٱللَّهِ إِن كُنتُمْ تُؤْمِنُونَ بِٱللَّهِ وَٱلْيَوْمِ ٱلْـَٔاخِرِ وَلْيَشْهَدْ عَذَابَهُمَا طَآئِفَةٌ مِّنَ ٱلْمُؤْمِنِينَ"
+    }
+   ],
+   "root_arabic": "ج ل د",
+   "root_buckwalter": "jld",
+   "root_id": "jld",
+   "artifact_name": "jld.json",
+   "verse_ref": "24:2",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{jolidu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱلزَّانِيَةُ وَٱلزَّانِى فَٱجْلِدُوا۟ كُلَّ وَٰحِدٍ مِّنْهُمَا مِا۟ئَةَ جَلْدَةٍ وَلَا تَأْخُذْكُم بِهِمَا رَأْفَةٌ فِى دِينِ ٱللَّهِ إِن كُنتُمْ تُؤْمِنُونَ بِٱللَّهِ وَٱلْيَوْمِ ٱلْـَٔاخِرِ وَلْيَشْهَدْ عَذَابَهُمَا طَآئِفَةٌ مِّنَ ٱلْمُؤْمِنِينَ",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "24:2:8:1",
+   "disposition": "RESISTANT",
+   "note": "Internally self-bridged and coherent: the verb governs its own cognate count-noun inside the same two verses (fa-jliduu ... mi'ata jaldatin; fa-jliduuhum thamaaniin jaldatan), and jaldah being counted forces 'one stroke', impossible for 'skin'. Confined to a single surah and one hadd register (zinaa 24:2; qadhf 24:4), foregrounding count, offense, and denial of pity — never a covering/surface. This class RESISTS assimilation to the SKIN nucleus and, being a coherent lexicalized sub-class with no Quran-internal bridge to it, structurally caps and defeats any unified root claim. Its members are the resistant seam of the root.",
+   "coverage_cluster_id": "FLOG_jald_jaldah",
+   "candidate_semantic_interpretation": "jald (Form-I imperative fa-jliduu) = administer discrete counted strokes as a prescribed penalty; jaldah (nomen vicis) = one such stroke, governed by numerals (mi'ah 24:2, thamaaniin 24:4).",
+   "cluster_supporting_evidence": "24:2:3:2 fa-jliduu with 24:2:8:1 jaldah counted at 100; 24:4:9:2 fa-jliduuhum with 24:4:11:1 jaldah counted at 80; grammatical object is the whole person, no jild/juluud named.",
+   "counterevidence": [
+    "16:80:10:1",
+    "39:23:10:1",
+    "4:56:12:1"
+   ],
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "Internally self-bridged and coherent: the verb governs its own cognate count-noun inside the same two verses (fa-jliduu ... mi'ata jaldatin; fa-jliduuhum thamaaniin jaldatan), and jaldah being counted forces 'one stroke', impossible for 'skin'. Confined to a single surah and one hadd register (zinaa 24:2; qadhf 24:4), foregrounding count, offense, and denial of pity — never a covering/surface. This class RESISTS assimilation to the SKIN nucleus and, being a coherent lexicalized sub-class with no Quran-internal bridge to it, structurally caps and defeats any unified root claim. Its members are the resistant seam of the root.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "24:2",
+     "verse_text": "ٱلزَّانِيَةُ وَٱلزَّانِى فَٱجْلِدُوا۟ كُلَّ وَٰحِدٍ مِّنْهُمَا مِا۟ئَةَ جَلْدَةٍ وَلَا تَأْخُذْكُم بِهِمَا رَأْفَةٌ فِى دِينِ ٱللَّهِ إِن كُنتُمْ تُؤْمِنُونَ بِٱللَّهِ وَٱلْيَوْمِ ٱلْـَٔاخِرِ وَلْيَشْهَدْ عَذَابَهُمَا طَآئِفَةٌ مِّنَ ٱلْمُؤْمِنِينَ"
+    }
+   ],
+   "root_arabic": "ج ل د",
+   "root_buckwalter": "jld",
+   "root_id": "jld",
+   "artifact_name": "jld.json",
+   "verse_ref": "24:2",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "jalodapK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱلزَّانِيَةُ وَٱلزَّانِى فَٱجْلِدُوا۟ كُلَّ وَٰحِدٍ مِّنْهُمَا مِا۟ئَةَ جَلْدَةٍ وَلَا تَأْخُذْكُم بِهِمَا رَأْفَةٌ فِى دِينِ ٱللَّهِ إِن كُنتُمْ تُؤْمِنُونَ بِٱللَّهِ وَٱلْيَوْمِ ٱلْـَٔاخِرِ وَلْيَشْهَدْ عَذَابَهُمَا طَآئِفَةٌ مِّنَ ٱلْمُؤْمِنِينَ",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "24:4:11:1",
+   "disposition": "RESISTANT",
+   "note": "Internally self-bridged and coherent: the verb governs its own cognate count-noun inside the same two verses (fa-jliduu ... mi'ata jaldatin; fa-jliduuhum thamaaniin jaldatan), and jaldah being counted forces 'one stroke', impossible for 'skin'. Confined to a single surah and one hadd register (zinaa 24:2; qadhf 24:4), foregrounding count, offense, and denial of pity — never a covering/surface. This class RESISTS assimilation to the SKIN nucleus and, being a coherent lexicalized sub-class with no Quran-internal bridge to it, structurally caps and defeats any unified root claim. Its members are the resistant seam of the root.",
+   "coverage_cluster_id": "FLOG_jald_jaldah",
+   "candidate_semantic_interpretation": "jald (Form-I imperative fa-jliduu) = administer discrete counted strokes as a prescribed penalty; jaldah (nomen vicis) = one such stroke, governed by numerals (mi'ah 24:2, thamaaniin 24:4).",
+   "cluster_supporting_evidence": "24:2:3:2 fa-jliduu with 24:2:8:1 jaldah counted at 100; 24:4:9:2 fa-jliduuhum with 24:4:11:1 jaldah counted at 80; grammatical object is the whole person, no jild/juluud named.",
+   "counterevidence": [
+    "16:80:10:1",
+    "39:23:10:1",
+    "4:56:12:1"
+   ],
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "Internally self-bridged and coherent: the verb governs its own cognate count-noun inside the same two verses (fa-jliduu ... mi'ata jaldatin; fa-jliduuhum thamaaniin jaldatan), and jaldah being counted forces 'one stroke', impossible for 'skin'. Confined to a single surah and one hadd register (zinaa 24:2; qadhf 24:4), foregrounding count, offense, and denial of pity — never a covering/surface. This class RESISTS assimilation to the SKIN nucleus and, being a coherent lexicalized sub-class with no Quran-internal bridge to it, structurally caps and defeats any unified root claim. Its members are the resistant seam of the root.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "24:4",
+     "verse_text": "وَٱلَّذِينَ يَرْمُونَ ٱلْمُحْصَنَٰتِ ثُمَّ لَمْ يَأْتُوا۟ بِأَرْبَعَةِ شُهَدَآءَ فَٱجْلِدُوهُمْ ثَمَٰنِينَ جَلْدَةً وَلَا تَقْبَلُوا۟ لَهُمْ شَهَٰدَةً أَبَدًا وَأُو۟لَٰٓئِكَ هُمُ ٱلْفَٰسِقُونَ"
+    }
+   ],
+   "root_arabic": "ج ل د",
+   "root_buckwalter": "jld",
+   "root_id": "jld",
+   "artifact_name": "jld.json",
+   "verse_ref": "24:4",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "jalodapF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱلَّذِينَ يَرْمُونَ ٱلْمُحْصَنَٰتِ ثُمَّ لَمْ يَأْتُوا۟ بِأَرْبَعَةِ شُهَدَآءَ فَٱجْلِدُوهُمْ ثَمَٰنِينَ جَلْدَةً وَلَا تَقْبَلُوا۟ لَهُمْ شَهَٰدَةً أَبَدًا وَأُو۟لَٰٓئِكَ هُمُ ٱلْفَٰسِقُونَ",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "24:4:9:2",
+   "disposition": "RESISTANT",
+   "note": "Internally self-bridged and coherent: the verb governs its own cognate count-noun inside the same two verses (fa-jliduu ... mi'ata jaldatin; fa-jliduuhum thamaaniin jaldatan), and jaldah being counted forces 'one stroke', impossible for 'skin'. Confined to a single surah and one hadd register (zinaa 24:2; qadhf 24:4), foregrounding count, offense, and denial of pity — never a covering/surface. This class RESISTS assimilation to the SKIN nucleus and, being a coherent lexicalized sub-class with no Quran-internal bridge to it, structurally caps and defeats any unified root claim. Its members are the resistant seam of the root.",
+   "coverage_cluster_id": "FLOG_jald_jaldah",
+   "candidate_semantic_interpretation": "jald (Form-I imperative fa-jliduu) = administer discrete counted strokes as a prescribed penalty; jaldah (nomen vicis) = one such stroke, governed by numerals (mi'ah 24:2, thamaaniin 24:4).",
+   "cluster_supporting_evidence": "24:2:3:2 fa-jliduu with 24:2:8:1 jaldah counted at 100; 24:4:9:2 fa-jliduuhum with 24:4:11:1 jaldah counted at 80; grammatical object is the whole person, no jild/juluud named.",
+   "counterevidence": [
+    "16:80:10:1",
+    "39:23:10:1",
+    "4:56:12:1"
+   ],
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "Internally self-bridged and coherent: the verb governs its own cognate count-noun inside the same two verses (fa-jliduu ... mi'ata jaldatin; fa-jliduuhum thamaaniin jaldatan), and jaldah being counted forces 'one stroke', impossible for 'skin'. Confined to a single surah and one hadd register (zinaa 24:2; qadhf 24:4), foregrounding count, offense, and denial of pity — never a covering/surface. This class RESISTS assimilation to the SKIN nucleus and, being a coherent lexicalized sub-class with no Quran-internal bridge to it, structurally caps and defeats any unified root claim. Its members are the resistant seam of the root.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "24:4",
+     "verse_text": "وَٱلَّذِينَ يَرْمُونَ ٱلْمُحْصَنَٰتِ ثُمَّ لَمْ يَأْتُوا۟ بِأَرْبَعَةِ شُهَدَآءَ فَٱجْلِدُوهُمْ ثَمَٰنِينَ جَلْدَةً وَلَا تَقْبَلُوا۟ لَهُمْ شَهَٰدَةً أَبَدًا وَأُو۟لَٰٓئِكَ هُمُ ٱلْفَٰسِقُونَ"
+    }
+   ],
+   "root_arabic": "ج ل د",
+   "root_buckwalter": "jld",
+   "root_id": "jld",
+   "artifact_name": "jld.json",
+   "verse_ref": "24:4",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{jolidu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱلَّذِينَ يَرْمُونَ ٱلْمُحْصَنَٰتِ ثُمَّ لَمْ يَأْتُوا۟ بِأَرْبَعَةِ شُهَدَآءَ فَٱجْلِدُوهُمْ ثَمَٰنِينَ جَلْدَةً وَلَا تَقْبَلُوا۟ لَهُمْ شَهَٰدَةً أَبَدًا وَأُو۟لَٰٓئِكَ هُمُ ٱلْفَٰسِقُونَ",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "39:23:10:1",
+   "disposition": "CONSISTENT",
+   "note": "9/9 nominal tokens across 6 surahs and four independent frames (material culture 16:80; hellfire punishment 22:20, 4:56; revelation-response 39:23; eschatological witness 41:20-22) read consistently as the outer covering. Distinctiveness is fixed by in-text pairings: juluud vs butuun (22:20, outer vs contents), juluud vs quluub (39:23, outer vs inner), juluud among sam'/absaar (41:20-22, tactile surface vs channelled senses). 16:80 (detached animal hide as tent material) confirms referent-neutral 'outer covering' and blocks any over-spiritualized reading; sentience/testimony in 39:23 and 41:20-22 is supplied by context and by divine enablement (41:21 antaqanaa Allah), not by the noun. Internally near-STRONG, but cannot ground a ROOT claim because the root is unresolved across the FLOG seam.",
+   "coverage_cluster_id": "SKIN_juluwd",
+   "candidate_semantic_interpretation": "juluud (plural of jild) = the outer bodily integument / exterior covering of a body (animal or human); a physical, transformable, sensate surface-boundary set against interior contents and the inner heart.",
+   "cluster_supporting_evidence": "16:80:10:1 hide as inert tent material; 22:20:6:3 skins vs belly-contents; 4:56:10:1/4:56:12:1 skins roasted then replaced (identity persists); 39:23:10:1/39:23:16:1 skins shiver then soften beside hearts; 41:20:9:2/41:21:2:2/41:22:11:1 skins witness alongside hearing and sight.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "9/9 nominal tokens across 6 surahs and four independent frames (material culture 16:80; hellfire punishment 22:20, 4:56; revelation-response 39:23; eschatological witness 41:20-22) read consistently as the outer covering. Distinctiveness is fixed by in-text pairings: juluud vs butuun (22:20, outer vs contents), juluud vs quluub (39:23, outer vs inner), juluud among sam'/absaar (41:20-22, tactile surface vs channelled senses). 16:80 (detached animal hide as tent material) confirms referent-neutral 'outer covering' and blocks any over-spiritualized reading; sentience/testimony in 39:23 and 41:20-22 is supplied by context and by divine enablement (41:21 antaqanaa Allah), not by the noun. Internally near-STRONG, but cannot ground a ROOT claim because the root is unresolved across the FLOG seam.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "39:23",
+     "verse_text": "ٱللَّهُ نَزَّلَ أَحْسَنَ ٱلْحَدِيثِ كِتَٰبًا مُّتَشَٰبِهًا مَّثَانِىَ تَقْشَعِرُّ مِنْهُ جُلُودُ ٱلَّذِينَ يَخْشَوْنَ رَبَّهُمْ ثُمَّ تَلِينُ جُلُودُهُمْ وَقُلُوبُهُمْ إِلَىٰ ذِكْرِ ٱللَّهِ ذَٰلِكَ هُدَى ٱللَّهِ يَهْدِى بِهِۦ مَن يَشَآءُ وَمَن يُضْلِلِ ٱللَّهُ فَمَا لَهُۥ مِنْ هَادٍ"
+    }
+   ],
+   "root_arabic": "ج ل د",
+   "root_buckwalter": "jld",
+   "root_id": "jld",
+   "artifact_name": "jld.json",
+   "verse_ref": "39:23",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "juluwdu",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱللَّهُ نَزَّلَ أَحْسَنَ ٱلْحَدِيثِ كِتَٰبًا مُّتَشَٰبِهًا مَّثَانِىَ تَقْشَعِرُّ مِنْهُ جُلُودُ ٱلَّذِينَ يَخْشَوْنَ رَبَّهُمْ ثُمَّ تَلِينُ جُلُودُهُمْ وَقُلُوبُهُمْ إِلَىٰ ذِكْرِ ٱللَّهِ ذَٰلِكَ هُدَى ٱللَّهِ يَهْدِى بِهِۦ مَن يَشَآءُ وَمَن يُضْلِلِ ٱللَّهُ فَمَا لَهُۥ مِنْ هَادٍ"
+  },
+  {
+   "word_ref": "39:23:16:1",
+   "disposition": "CONSISTENT",
+   "note": "9/9 nominal tokens across 6 surahs and four independent frames (material culture 16:80; hellfire punishment 22:20, 4:56; revelation-response 39:23; eschatological witness 41:20-22) read consistently as the outer covering. Distinctiveness is fixed by in-text pairings: juluud vs butuun (22:20, outer vs contents), juluud vs quluub (39:23, outer vs inner), juluud among sam'/absaar (41:20-22, tactile surface vs channelled senses). 16:80 (detached animal hide as tent material) confirms referent-neutral 'outer covering' and blocks any over-spiritualized reading; sentience/testimony in 39:23 and 41:20-22 is supplied by context and by divine enablement (41:21 antaqanaa Allah), not by the noun. Internally near-STRONG, but cannot ground a ROOT claim because the root is unresolved across the FLOG seam.",
+   "coverage_cluster_id": "SKIN_juluwd",
+   "candidate_semantic_interpretation": "juluud (plural of jild) = the outer bodily integument / exterior covering of a body (animal or human); a physical, transformable, sensate surface-boundary set against interior contents and the inner heart.",
+   "cluster_supporting_evidence": "16:80:10:1 hide as inert tent material; 22:20:6:3 skins vs belly-contents; 4:56:10:1/4:56:12:1 skins roasted then replaced (identity persists); 39:23:10:1/39:23:16:1 skins shiver then soften beside hearts; 41:20:9:2/41:21:2:2/41:22:11:1 skins witness alongside hearing and sight.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "9/9 nominal tokens across 6 surahs and four independent frames (material culture 16:80; hellfire punishment 22:20, 4:56; revelation-response 39:23; eschatological witness 41:20-22) read consistently as the outer covering. Distinctiveness is fixed by in-text pairings: juluud vs butuun (22:20, outer vs contents), juluud vs quluub (39:23, outer vs inner), juluud among sam'/absaar (41:20-22, tactile surface vs channelled senses). 16:80 (detached animal hide as tent material) confirms referent-neutral 'outer covering' and blocks any over-spiritualized reading; sentience/testimony in 39:23 and 41:20-22 is supplied by context and by divine enablement (41:21 antaqanaa Allah), not by the noun. Internally near-STRONG, but cannot ground a ROOT claim because the root is unresolved across the FLOG seam.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "39:23",
+     "verse_text": "ٱللَّهُ نَزَّلَ أَحْسَنَ ٱلْحَدِيثِ كِتَٰبًا مُّتَشَٰبِهًا مَّثَانِىَ تَقْشَعِرُّ مِنْهُ جُلُودُ ٱلَّذِينَ يَخْشَوْنَ رَبَّهُمْ ثُمَّ تَلِينُ جُلُودُهُمْ وَقُلُوبُهُمْ إِلَىٰ ذِكْرِ ٱللَّهِ ذَٰلِكَ هُدَى ٱللَّهِ يَهْدِى بِهِۦ مَن يَشَآءُ وَمَن يُضْلِلِ ٱللَّهُ فَمَا لَهُۥ مِنْ هَادٍ"
+    }
+   ],
+   "root_arabic": "ج ل د",
+   "root_buckwalter": "jld",
+   "root_id": "jld",
+   "artifact_name": "jld.json",
+   "verse_ref": "39:23",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "juluwdu",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱللَّهُ نَزَّلَ أَحْسَنَ ٱلْحَدِيثِ كِتَٰبًا مُّتَشَٰبِهًا مَّثَانِىَ تَقْشَعِرُّ مِنْهُ جُلُودُ ٱلَّذِينَ يَخْشَوْنَ رَبَّهُمْ ثُمَّ تَلِينُ جُلُودُهُمْ وَقُلُوبُهُمْ إِلَىٰ ذِكْرِ ٱللَّهِ ذَٰلِكَ هُدَى ٱللَّهِ يَهْدِى بِهِۦ مَن يَشَآءُ وَمَن يُضْلِلِ ٱللَّهُ فَمَا لَهُۥ مِنْ هَادٍ"
+  },
+  {
+   "word_ref": "41:20:9:2",
+   "disposition": "CONSISTENT",
+   "note": "9/9 nominal tokens across 6 surahs and four independent frames (material culture 16:80; hellfire punishment 22:20, 4:56; revelation-response 39:23; eschatological witness 41:20-22) read consistently as the outer covering. Distinctiveness is fixed by in-text pairings: juluud vs butuun (22:20, outer vs contents), juluud vs quluub (39:23, outer vs inner), juluud among sam'/absaar (41:20-22, tactile surface vs channelled senses). 16:80 (detached animal hide as tent material) confirms referent-neutral 'outer covering' and blocks any over-spiritualized reading; sentience/testimony in 39:23 and 41:20-22 is supplied by context and by divine enablement (41:21 antaqanaa Allah), not by the noun. Internally near-STRONG, but cannot ground a ROOT claim because the root is unresolved across the FLOG seam.",
+   "coverage_cluster_id": "SKIN_juluwd",
+   "candidate_semantic_interpretation": "juluud (plural of jild) = the outer bodily integument / exterior covering of a body (animal or human); a physical, transformable, sensate surface-boundary set against interior contents and the inner heart.",
+   "cluster_supporting_evidence": "16:80:10:1 hide as inert tent material; 22:20:6:3 skins vs belly-contents; 4:56:10:1/4:56:12:1 skins roasted then replaced (identity persists); 39:23:10:1/39:23:16:1 skins shiver then soften beside hearts; 41:20:9:2/41:21:2:2/41:22:11:1 skins witness alongside hearing and sight.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "9/9 nominal tokens across 6 surahs and four independent frames (material culture 16:80; hellfire punishment 22:20, 4:56; revelation-response 39:23; eschatological witness 41:20-22) read consistently as the outer covering. Distinctiveness is fixed by in-text pairings: juluud vs butuun (22:20, outer vs contents), juluud vs quluub (39:23, outer vs inner), juluud among sam'/absaar (41:20-22, tactile surface vs channelled senses). 16:80 (detached animal hide as tent material) confirms referent-neutral 'outer covering' and blocks any over-spiritualized reading; sentience/testimony in 39:23 and 41:20-22 is supplied by context and by divine enablement (41:21 antaqanaa Allah), not by the noun. Internally near-STRONG, but cannot ground a ROOT claim because the root is unresolved across the FLOG seam.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "41:20",
+     "verse_text": "حَتَّىٰٓ إِذَا مَا جَآءُوهَا شَهِدَ عَلَيْهِمْ سَمْعُهُمْ وَأَبْصَٰرُهُمْ وَجُلُودُهُم بِمَا كَانُوا۟ يَعْمَلُونَ"
+    }
+   ],
+   "root_arabic": "ج ل د",
+   "root_buckwalter": "jld",
+   "root_id": "jld",
+   "artifact_name": "jld.json",
+   "verse_ref": "41:20",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "juluwdu",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "حَتَّىٰٓ إِذَا مَا جَآءُوهَا شَهِدَ عَلَيْهِمْ سَمْعُهُمْ وَأَبْصَٰرُهُمْ وَجُلُودُهُم بِمَا كَانُوا۟ يَعْمَلُونَ"
+  },
+  {
+   "word_ref": "41:21:2:2",
+   "disposition": "CONSISTENT",
+   "note": "9/9 nominal tokens across 6 surahs and four independent frames (material culture 16:80; hellfire punishment 22:20, 4:56; revelation-response 39:23; eschatological witness 41:20-22) read consistently as the outer covering. Distinctiveness is fixed by in-text pairings: juluud vs butuun (22:20, outer vs contents), juluud vs quluub (39:23, outer vs inner), juluud among sam'/absaar (41:20-22, tactile surface vs channelled senses). 16:80 (detached animal hide as tent material) confirms referent-neutral 'outer covering' and blocks any over-spiritualized reading; sentience/testimony in 39:23 and 41:20-22 is supplied by context and by divine enablement (41:21 antaqanaa Allah), not by the noun. Internally near-STRONG, but cannot ground a ROOT claim because the root is unresolved across the FLOG seam.",
+   "coverage_cluster_id": "SKIN_juluwd",
+   "candidate_semantic_interpretation": "juluud (plural of jild) = the outer bodily integument / exterior covering of a body (animal or human); a physical, transformable, sensate surface-boundary set against interior contents and the inner heart.",
+   "cluster_supporting_evidence": "16:80:10:1 hide as inert tent material; 22:20:6:3 skins vs belly-contents; 4:56:10:1/4:56:12:1 skins roasted then replaced (identity persists); 39:23:10:1/39:23:16:1 skins shiver then soften beside hearts; 41:20:9:2/41:21:2:2/41:22:11:1 skins witness alongside hearing and sight.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "9/9 nominal tokens across 6 surahs and four independent frames (material culture 16:80; hellfire punishment 22:20, 4:56; revelation-response 39:23; eschatological witness 41:20-22) read consistently as the outer covering. Distinctiveness is fixed by in-text pairings: juluud vs butuun (22:20, outer vs contents), juluud vs quluub (39:23, outer vs inner), juluud among sam'/absaar (41:20-22, tactile surface vs channelled senses). 16:80 (detached animal hide as tent material) confirms referent-neutral 'outer covering' and blocks any over-spiritualized reading; sentience/testimony in 39:23 and 41:20-22 is supplied by context and by divine enablement (41:21 antaqanaa Allah), not by the noun. Internally near-STRONG, but cannot ground a ROOT claim because the root is unresolved across the FLOG seam.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "41:21",
+     "verse_text": "وَقَالُوا۟ لِجُلُودِهِمْ لِمَ شَهِدتُّمْ عَلَيْنَا قَالُوٓا۟ أَنطَقَنَا ٱللَّهُ ٱلَّذِىٓ أَنطَقَ كُلَّ شَىْءٍ وَهُوَ خَلَقَكُمْ أَوَّلَ مَرَّةٍ وَإِلَيْهِ تُرْجَعُونَ"
+    }
+   ],
+   "root_arabic": "ج ل د",
+   "root_buckwalter": "jld",
+   "root_id": "jld",
+   "artifact_name": "jld.json",
+   "verse_ref": "41:21",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "juluwdi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَقَالُوا۟ لِجُلُودِهِمْ لِمَ شَهِدتُّمْ عَلَيْنَا قَالُوٓا۟ أَنطَقَنَا ٱللَّهُ ٱلَّذِىٓ أَنطَقَ كُلَّ شَىْءٍ وَهُوَ خَلَقَكُمْ أَوَّلَ مَرَّةٍ وَإِلَيْهِ تُرْجَعُونَ"
+  },
+  {
+   "word_ref": "41:22:11:1",
+   "disposition": "CONSISTENT",
+   "note": "9/9 nominal tokens across 6 surahs and four independent frames (material culture 16:80; hellfire punishment 22:20, 4:56; revelation-response 39:23; eschatological witness 41:20-22) read consistently as the outer covering. Distinctiveness is fixed by in-text pairings: juluud vs butuun (22:20, outer vs contents), juluud vs quluub (39:23, outer vs inner), juluud among sam'/absaar (41:20-22, tactile surface vs channelled senses). 16:80 (detached animal hide as tent material) confirms referent-neutral 'outer covering' and blocks any over-spiritualized reading; sentience/testimony in 39:23 and 41:20-22 is supplied by context and by divine enablement (41:21 antaqanaa Allah), not by the noun. Internally near-STRONG, but cannot ground a ROOT claim because the root is unresolved across the FLOG seam.",
+   "coverage_cluster_id": "SKIN_juluwd",
+   "candidate_semantic_interpretation": "juluud (plural of jild) = the outer bodily integument / exterior covering of a body (animal or human); a physical, transformable, sensate surface-boundary set against interior contents and the inner heart.",
+   "cluster_supporting_evidence": "16:80:10:1 hide as inert tent material; 22:20:6:3 skins vs belly-contents; 4:56:10:1/4:56:12:1 skins roasted then replaced (identity persists); 39:23:10:1/39:23:16:1 skins shiver then soften beside hearts; 41:20:9:2/41:21:2:2/41:22:11:1 skins witness alongside hearing and sight.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "9/9 nominal tokens across 6 surahs and four independent frames (material culture 16:80; hellfire punishment 22:20, 4:56; revelation-response 39:23; eschatological witness 41:20-22) read consistently as the outer covering. Distinctiveness is fixed by in-text pairings: juluud vs butuun (22:20, outer vs contents), juluud vs quluub (39:23, outer vs inner), juluud among sam'/absaar (41:20-22, tactile surface vs channelled senses). 16:80 (detached animal hide as tent material) confirms referent-neutral 'outer covering' and blocks any over-spiritualized reading; sentience/testimony in 39:23 and 41:20-22 is supplied by context and by divine enablement (41:21 antaqanaa Allah), not by the noun. Internally near-STRONG, but cannot ground a ROOT claim because the root is unresolved across the FLOG seam.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "41:22",
+     "verse_text": "وَمَا كُنتُمْ تَسْتَتِرُونَ أَن يَشْهَدَ عَلَيْكُمْ سَمْعُكُمْ وَلَآ أَبْصَٰرُكُمْ وَلَا جُلُودُكُمْ وَلَٰكِن ظَنَنتُمْ أَنَّ ٱللَّهَ لَا يَعْلَمُ كَثِيرًا مِّمَّا تَعْمَلُونَ"
+    }
+   ],
+   "root_arabic": "ج ل د",
+   "root_buckwalter": "jld",
+   "root_id": "jld",
+   "artifact_name": "jld.json",
+   "verse_ref": "41:22",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "juluwdu",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَمَا كُنتُمْ تَسْتَتِرُونَ أَن يَشْهَدَ عَلَيْكُمْ سَمْعُكُمْ وَلَآ أَبْصَٰرُكُمْ وَلَا جُلُودُكُمْ وَلَٰكِن ظَنَنتُمْ أَنَّ ٱللَّهَ لَا يَعْلَمُ كَثِيرًا مِّمَّا تَعْمَلُونَ"
+  },
+  {
+   "word_ref": "4:56:10:1",
+   "disposition": "CONSISTENT",
+   "note": "9/9 nominal tokens across 6 surahs and four independent frames (material culture 16:80; hellfire punishment 22:20, 4:56; revelation-response 39:23; eschatological witness 41:20-22) read consistently as the outer covering. Distinctiveness is fixed by in-text pairings: juluud vs butuun (22:20, outer vs contents), juluud vs quluub (39:23, outer vs inner), juluud among sam'/absaar (41:20-22, tactile surface vs channelled senses). 16:80 (detached animal hide as tent material) confirms referent-neutral 'outer covering' and blocks any over-spiritualized reading; sentience/testimony in 39:23 and 41:20-22 is supplied by context and by divine enablement (41:21 antaqanaa Allah), not by the noun. Internally near-STRONG, but cannot ground a ROOT claim because the root is unresolved across the FLOG seam.",
+   "coverage_cluster_id": "SKIN_juluwd",
+   "candidate_semantic_interpretation": "juluud (plural of jild) = the outer bodily integument / exterior covering of a body (animal or human); a physical, transformable, sensate surface-boundary set against interior contents and the inner heart.",
+   "cluster_supporting_evidence": "16:80:10:1 hide as inert tent material; 22:20:6:3 skins vs belly-contents; 4:56:10:1/4:56:12:1 skins roasted then replaced (identity persists); 39:23:10:1/39:23:16:1 skins shiver then soften beside hearts; 41:20:9:2/41:21:2:2/41:22:11:1 skins witness alongside hearing and sight.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "9/9 nominal tokens across 6 surahs and four independent frames (material culture 16:80; hellfire punishment 22:20, 4:56; revelation-response 39:23; eschatological witness 41:20-22) read consistently as the outer covering. Distinctiveness is fixed by in-text pairings: juluud vs butuun (22:20, outer vs contents), juluud vs quluub (39:23, outer vs inner), juluud among sam'/absaar (41:20-22, tactile surface vs channelled senses). 16:80 (detached animal hide as tent material) confirms referent-neutral 'outer covering' and blocks any over-spiritualized reading; sentience/testimony in 39:23 and 41:20-22 is supplied by context and by divine enablement (41:21 antaqanaa Allah), not by the noun. Internally near-STRONG, but cannot ground a ROOT claim because the root is unresolved across the FLOG seam.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "4:56",
+     "verse_text": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ بِـَٔايَٰتِنَا سَوْفَ نُصْلِيهِمْ نَارًا كُلَّمَا نَضِجَتْ جُلُودُهُم بَدَّلْنَٰهُمْ جُلُودًا غَيْرَهَا لِيَذُوقُوا۟ ٱلْعَذَابَ إِنَّ ٱللَّهَ كَانَ عَزِيزًا حَكِيمًا"
+    }
+   ],
+   "root_arabic": "ج ل د",
+   "root_buckwalter": "jld",
+   "root_id": "jld",
+   "artifact_name": "jld.json",
+   "verse_ref": "4:56",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "juluwdu",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ بِـَٔايَٰتِنَا سَوْفَ نُصْلِيهِمْ نَارًا كُلَّمَا نَضِجَتْ جُلُودُهُم بَدَّلْنَٰهُمْ جُلُودًا غَيْرَهَا لِيَذُوقُوا۟ ٱلْعَذَابَ إِنَّ ٱللَّهَ كَانَ عَزِيزًا حَكِيمًا"
+  },
+  {
+   "word_ref": "4:56:12:1",
+   "disposition": "CONSISTENT",
+   "note": "9/9 nominal tokens across 6 surahs and four independent frames (material culture 16:80; hellfire punishment 22:20, 4:56; revelation-response 39:23; eschatological witness 41:20-22) read consistently as the outer covering. Distinctiveness is fixed by in-text pairings: juluud vs butuun (22:20, outer vs contents), juluud vs quluub (39:23, outer vs inner), juluud among sam'/absaar (41:20-22, tactile surface vs channelled senses). 16:80 (detached animal hide as tent material) confirms referent-neutral 'outer covering' and blocks any over-spiritualized reading; sentience/testimony in 39:23 and 41:20-22 is supplied by context and by divine enablement (41:21 antaqanaa Allah), not by the noun. Internally near-STRONG, but cannot ground a ROOT claim because the root is unresolved across the FLOG seam.",
+   "coverage_cluster_id": "SKIN_juluwd",
+   "candidate_semantic_interpretation": "juluud (plural of jild) = the outer bodily integument / exterior covering of a body (animal or human); a physical, transformable, sensate surface-boundary set against interior contents and the inner heart.",
+   "cluster_supporting_evidence": "16:80:10:1 hide as inert tent material; 22:20:6:3 skins vs belly-contents; 4:56:10:1/4:56:12:1 skins roasted then replaced (identity persists); 39:23:10:1/39:23:16:1 skins shiver then soften beside hearts; 41:20:9:2/41:21:2:2/41:22:11:1 skins witness alongside hearing and sight.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "9/9 nominal tokens across 6 surahs and four independent frames (material culture 16:80; hellfire punishment 22:20, 4:56; revelation-response 39:23; eschatological witness 41:20-22) read consistently as the outer covering. Distinctiveness is fixed by in-text pairings: juluud vs butuun (22:20, outer vs contents), juluud vs quluub (39:23, outer vs inner), juluud among sam'/absaar (41:20-22, tactile surface vs channelled senses). 16:80 (detached animal hide as tent material) confirms referent-neutral 'outer covering' and blocks any over-spiritualized reading; sentience/testimony in 39:23 and 41:20-22 is supplied by context and by divine enablement (41:21 antaqanaa Allah), not by the noun. Internally near-STRONG, but cannot ground a ROOT claim because the root is unresolved across the FLOG seam.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "4:56",
+     "verse_text": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ بِـَٔايَٰتِنَا سَوْفَ نُصْلِيهِمْ نَارًا كُلَّمَا نَضِجَتْ جُلُودُهُم بَدَّلْنَٰهُمْ جُلُودًا غَيْرَهَا لِيَذُوقُوا۟ ٱلْعَذَابَ إِنَّ ٱللَّهَ كَانَ عَزِيزًا حَكِيمًا"
+    }
+   ],
+   "root_arabic": "ج ل د",
+   "root_buckwalter": "jld",
+   "root_id": "jld",
+   "artifact_name": "jld.json",
+   "verse_ref": "4:56",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "juluwdFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ بِـَٔايَٰتِنَا سَوْفَ نُصْلِيهِمْ نَارًا كُلَّمَا نَضِجَتْ جُلُودُهُم بَدَّلْنَٰهُمْ جُلُودًا غَيْرَهَا لِيَذُوقُوا۟ ٱلْعَذَابَ إِنَّ ٱللَّهَ كَانَ عَزِيزًا حَكِيمًا"
+  }
+ ],
+ "resistant_deep_analysis": [
+  {
+   "word_ref": "24:2:3:2",
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "Internally self-bridged and coherent: the verb governs its own cognate count-noun inside the same two verses (fa-jliduu ... mi'ata jaldatin; fa-jliduuhum thamaaniin jaldatan), and jaldah being counted forces 'one stroke', impossible for 'skin'. Confined to a single surah and one hadd register (zinaa 24:2; qadhf 24:4), foregrounding count, offense, and denial of pity — never a covering/surface. This class RESISTS assimilation to the SKIN nucleus and, being a coherent lexicalized sub-class with no Quran-internal bridge to it, structurally caps and defeats any unified root claim. Its members are the resistant seam of the root.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "24:2:8:1",
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "Internally self-bridged and coherent: the verb governs its own cognate count-noun inside the same two verses (fa-jliduu ... mi'ata jaldatin; fa-jliduuhum thamaaniin jaldatan), and jaldah being counted forces 'one stroke', impossible for 'skin'. Confined to a single surah and one hadd register (zinaa 24:2; qadhf 24:4), foregrounding count, offense, and denial of pity — never a covering/surface. This class RESISTS assimilation to the SKIN nucleus and, being a coherent lexicalized sub-class with no Quran-internal bridge to it, structurally caps and defeats any unified root claim. Its members are the resistant seam of the root.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "24:4:11:1",
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "Internally self-bridged and coherent: the verb governs its own cognate count-noun inside the same two verses (fa-jliduu ... mi'ata jaldatin; fa-jliduuhum thamaaniin jaldatan), and jaldah being counted forces 'one stroke', impossible for 'skin'. Confined to a single surah and one hadd register (zinaa 24:2; qadhf 24:4), foregrounding count, offense, and denial of pity — never a covering/surface. This class RESISTS assimilation to the SKIN nucleus and, being a coherent lexicalized sub-class with no Quran-internal bridge to it, structurally caps and defeats any unified root claim. Its members are the resistant seam of the root.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "24:4:9:2",
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "Internally self-bridged and coherent: the verb governs its own cognate count-noun inside the same two verses (fa-jliduu ... mi'ata jaldatin; fa-jliduuhum thamaaniin jaldatan), and jaldah being counted forces 'one stroke', impossible for 'skin'. Confined to a single surah and one hadd register (zinaa 24:2; qadhf 24:4), foregrounding count, offense, and denial of pity — never a covering/surface. This class RESISTS assimilation to the SKIN nucleus and, being a coherent lexicalized sub-class with no Quran-internal bridge to it, structurally caps and defeats any unified root claim. Its members are the resistant seam of the root.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "deep_analysis": true
+  }
+ ],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "UNRESOLVED",
+ "result_strength": "UNRESOLVED",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Three independent lenses (bottom-up A, distinctiveness B, adversarial C) each partitioned the 13 tokens identically and each independently found no Quran-internal bridge, converging on the multi-class unresolved verdict.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "24:2:3:2",
+  "24:2:8:1",
+  "24:4:11:1",
+  "24:4:9:2"
+ ],
+ "unreconciled_count": 4,
+ "resistant_occurrences": [
+  "24:2:3:2",
+  "24:2:8:1",
+  "24:4:11:1",
+  "24:4:9:2"
+ ],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": null,
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "LOCAL",
+ "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
+ "layer_attribution": {
+  "occurrence_evidence": "13/13 occurrences examined from the packet: 9 nominal juluud tokens (16:80, 22:20, 39:23 x2, 41:20, 41:21, 41:22, 4:56 x2) and 4 penal tokens in Surah 24 (verb fa-jliduu 24:2:3:2/24:4:9:2; count-noun jaldah 24:2:8:1/24:4:11:1), verified via qac_pos, qac_verb_form, form, and verse_text.",
+  "derivation": "Two derivational families under one skeleton: fu'uul plural juluud (of concrete count-noun jild) vs Form-I imperative jld + nomen vicis fa'lah jaldah. Vocalization itself separates them (juluud- vs jald-); there is no shared vocalized stem, and the FLOG verb+count-noun are internally self-bridged within 24:2 and 24:4.",
+  "lexical_class": "SKIN class: outer bodily integument/covering (representative, internally near-strong, register-broad). FLOG class: counted punitive striking / one stroke (coherent, lexicalized, register-bound to the hadd). The two are treated as distinct lexicalized classes, not one root generalization.",
+  "contextual_relation": "Contextual/narrative meanings — skins shivering/softening (39:23), testifying (41:20-22), being roasted/melted/replaced (4:56, 22:20), and the hadd penalties (24:2, 24:4) — are supplied by their clauses and by divine enablement (41:21 antaqanaa Allah), and are NOT elevated into the root claim; the root contributes only class-level 'outer covering' or 'counted striking', not the surrounding narrative.",
+  "reconciliation": "No intra-class occurrence required reconciliation; every token sits cleanly in exactly one class. The only unresolved matter is the inter-class seam, which is left open rather than forced into unity.",
+  "unresolved_resistance": "The FLOG class (24:2:3:2, 24:2:8:1, 24:4:9:2, 24:4:11:1) persists as a resistant seam with no Quran-internal bridge to the juluud 'skin' class; because same root != one meaning and no textual predication joins striking to skin, the root-level contribution is left UNRESOLVED rather than unified."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "24:2:3:2",
+   "role": "RESISTANT_SEAM",
+   "reason": "Imperative 'flog' in a purely penal count-based frame; no covering/surface referent, object is the whole person. Cannot be hosted by the dominant SKIN nucleus and has no Quran-internal bridge to it.",
+   "evidence_basis": {
+    "kind": "CONTRASTIVE_DISTRIBUTION",
+    "statement": "24:2 fa-jliduu ... mi'ata jaldatin ('flog each of them a hundred strokes') is a countable judicial act of striking with no covering in view, and it cannot be hosted by any 'skin' nucleus."
+   }
+  },
+  {
+   "word_ref": "24:2:8:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "jaldah as counted instance-noun (100) denotes one stroke, impossible for 'skin'; the verb+count-noun pair is internally self-bridged but shares nothing with the juluud class.",
+   "evidence_basis": {
+    "kind": "MORPHOSYNTACTIC_COUNT",
+    "statement": "jaldah is governed by the numeral mi'ah (a hundred), a tally of discrete blows that 'skin/covering' cannot bear, fixing the FLOG family as an act, not an integument."
+   }
+  },
+  {
+   "word_ref": "24:4:9:2",
+   "role": "RESISTANT_SEAM",
+   "reason": "Imperative 'flog' in the qadhf hadd; object is the slanderers (-hum), no skin named; resists the SKIN nucleus with no internal bridge.",
+   "evidence_basis": {
+    "kind": "CONTRASTIVE_DISTRIBUTION",
+    "statement": "No flogging verse mentions skin and no skin verse mentions striking; the FLOG family and the SKIN family never co-occur and share no contrastive partner in the packet."
+   }
+  },
+  {
+   "word_ref": "24:4:11:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "jaldah counted at 80 = one stroke; lexicalized penal count-noun with no covering semantics, unbridged to juluud.",
+   "evidence_basis": {
+    "kind": "MORPHOSYNTACTIC_COUNT",
+    "statement": "jaldah is governed by the numeral thamaaniin (eighty), confirming a countable stroke of flogging rather than any outer bodily covering."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL",
+  "rationale": "The resistance is structural, lying between two internally coherent classes rather than inside either. The four Surah-24 FLOG tokens persist as a coherent lexicalized class that cannot be bridged to the nine-token SKIN class by any Quran-internal evidence; a unified nucleus would require a forbidden etymological prior. They are recorded as RESISTANT_SEAM hard cases and as counterevidence to any single root contribution, yielding an unresolved multi-class judgment."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A Quran-internal bridge that dissolves the partition between the juluud 'skin' class and the jald/jaldah 'flog' class — e.g. a verse where the flogging verb takes jild/juluud as its stated object, or where a jld-lexeme predicates striking of a skin — would refute the unresolved verdict and license a single unified nucleus.",
+  "search_location": "The four Surah-24 penal tokens (24:2:3:2, 24:2:8:1, 24:4:9:2, 24:4:11:1) read against the nine juluud tokens, and specifically the skin-punishment verses 22:20 (yushar) and 4:56 (nadijat) to check whether any jld verb, rather than a non-jld verb, ever acts on a skin.",
+  "verification_method": "Confirm via qac_pos/qac_verb_form and verse_text whether any occurrence co-locates a striking predicate with a jld covering-referent, or whether the flogging object is ever a jild rather than the whole person; require an explicit textual predication, not an inferred one.",
+  "confounder_control": "Reject shared consonantal root, morphological resemblance, and classical etymology (jalad 'toughness', absent from the packet) as evidence of unity; a bridge must be an actual in-text predication, since same root != one meaning and morphology != semantic identity.",
+  "failure_consequence": "If no such in-text bridge is found, the two-class partition stands and the root-level claim remains UNRESOLVED; if found, reclassify toward a single ROOT_GENERALIZATION nucleus."
+ },
+ "falsification_status": "NOT_REQUIRED",
+ "reopen_conditions": [
+  "If a Quran-internal occurrence is identified in which a jld verb or lexeme takes jild/juluud (skin) as its explicit object — i.e. flogging is textually predicated of the skin rather than of the whole person (contrast 24:2 kulla waahidin minhumaa, 24:4 -hum) — reopen toward a unified nucleus.",
+  "If the skin-punishment verses 22:20 (yushar) or 4:56 (nadijat baddalnaahum juluudan ghayrahaa) are re-read as using a jld striking-verb rather than the attested non-jld verbs, reopen the bridge between the SKIN and FLOG classes.",
+  "If a further jld attestation carrying a 'toughness/firmness' sense (jalad/jaliid) is admitted to the packet, re-test whether it anchors a super-nucleus connecting covering and striking."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "16:80:10:1",
+  "22:20:6:3",
+  "39:23:10:1",
+  "39:23:16:1",
+  "41:20:9:2",
+  "41:21:2:2",
+  "41:22:11:1",
+  "4:56:10:1",
+  "4:56:12:1"
+ ],
+ "counterevidence_refs": [
+  "24:2:3:2",
+  "24:2:8:1",
+  "24:4:9:2",
+  "24:4:11:1"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "jld-unresolved-noclaim-2026-09-12",
+  "verdict": "NO_UNIFIED_CLAIM_TO_FALSIFY",
+  "falsifiable": true,
+  "distinctiveness_ok": true,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "SKIN_juluwd",
+   "FLOG_jald_jaldah"
+  ],
+  "status_rationale": "There is no single root contribution to adversarially falsify because the root is judged UNRESOLVED (two unbridged classes). Falsification is NOT_REQUIRED for an unresolved-class-only root. The per-class accounts are individually falsifiable and distinctive (SKIN via butuun/quluub/sam'-absaar contrasts; FLOG via counted jaldah), and none of the 13 occurrences fails its own class; the unresolved status rests on the absence of an inter-class bridge, not on intra-class failure."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jld: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jld: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jld: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jld: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jld: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jld: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jld: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jld: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}
