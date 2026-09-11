@@ -1,0 +1,2019 @@
+{
+ "root_arabic": "ذ ن ب",
+ "root_buckwalter": "*nb",
+ "root_id": "*nb",
+ "artifact_name": "_2A_nb.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave1",
+ "occurrences": 39,
+ "frozen_candidate_root_contribution": null,
+ "internal_discovery": {
+  "candidate_root_contribution": null,
+  "plain_explanation": "The consonantal skeleton ذ ن ب hosts two Quran-internally unbridged noun lexemes, not one nucleus. Class 1 (ذَنْب faʿl singular + ذُنُوب fuʿūl plural, 37 occ) is uniformly an imputable culpable act that grounds liability: it is what is forgiven (ghafara/istaghfara), invoked as the causal ground of seizure/destruction/punishment (bi-ḏanbihim), confessed (iʿtarafa bi-), and interrogated/known-about (yusʾalu ʿan, khabīr bi-). Class 2 (ذَنُوب faʿūl singular, only 51:59, twice) is directionally opposite: an allotted portion/measure received BY the wrongdoers (li-lladhīna ẓalamū ḏanūban), matched (miṯl) to their predecessors' and something they might wish hastened (yastaʿjilūn) — an effect handed to them, not a cause they commit. Because the only conceivable bridge (a concrete 'tail/that-which-trails' substrate) is nowhere attested in the packet and would require an external lexical prior, and because forcing 'sin' onto 51:59 breaks the āya, the honest root-level verdict is a two-class partition with no demonstrated bridge. Class 1 is internally CONSISTENT as a lexeme; the root as a whole is UNRESOLVED.",
+  "layer_separation_note": "Within Class 1, dhanb does NOT denote the punishment itself: it is the bi- causal ground, coordinated against ʿiqāb (3:11:11:2 bi-ḏunūbihim … shadīd al-ʿiqāb) and against ʿadhāb (3:16:8:1 ḏunūbanā … ʿadhāb al-nār). dhanb is NOT co-extensive with generic wrongdoing: it is coordinated alongside sayyiʾāt (3:193:14:1, distinct verb kaffara) and isrāf (3:147:10:1), so non-synonymous with either. dhanb is NOT the agent-label (khāṭiʾ 12:29, mujrim 28:78 sit in separate slots). dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame. Number (singular vs plural) is NOT a semantic split: parallel frames occur in both. Class 2 dhanūb does NOT belong to this accountability frame at all and must not be glossed as 'sin' or assimilated to Class 1.",
+  "presence": {
+   "occurrences_total": 39,
+   "occurrences_checked": 39,
+   "occurrences_consistent": 37,
+   "inconsistent_refs": [
+    "51:59:4:1",
+    "51:59:6:1"
+   ]
+  },
+  "strongest_counterexample": "51:59 (ذَنُوبًا / ذَنُوبِ): 'fa-inna lilladhīna ẓalamū ḏanūban miṯla ḏanūbi aṣḥābihim fa-lā yastaʿjilūn' — a faʿūl lexeme distinct from the faʿl/fuʿūl of Class 1, functioning as an allotted portion RECEIVED by the wrongdoers (dative lām of what is due, comparison miṯl to predecessors, and yastaʿjilūn marking a coming measured lot), i.e. the effect/consequence, the polar inverse of Class 1's dhanb which is the committed cause invoked against a bearer (bi-ḏanbihim). Substituting 'sin' collapses the āya (the wrongdoers already sinned, and one does not hasten a sin). No packet occurrence uses ḏanūb and ḏanb in a shared or punning frame, so the two classes cannot be bridged from packet-internal evidence.",
+  "strongest_competitor": "A unifying 'that-which-trails / consequence' account: the offense as the deed that trails behind and returns (Class 1) and the trailing portion of doom (Class 2), reduced to one abstract nucleus. Rejected on two Quran-internal grounds: (1) it requires the external etymon dhanab='tail', which is forbidden and is nowhere attested in the 39 occurrences in any bare follow/trail sense; (2) it fails on its own terms because to cover both classes the single gloss must invert cause↔effect (Class 1 dhanb is the ground OF the consequence via bi-; Class 2 dhanūb IS the consequence via lām), which is exactly the vague abstraction-that-fits-everything the methodology rejects as non-useful.",
+  "competing_hypothesis": "A unifying 'that-which-trails / consequence' account: the offense as the deed that trails behind and returns (Class 1) and the trailing portion of doom (Class 2), reduced to one abstract nucleus. Rejected on two Quran-internal grounds: (1) it requires the external etymon dhanab='tail', which is forbidden and is nowhere attested in the 39 occurrences in any bare follow/trail sense; (2) it fails on its own terms because to cover both classes the single gloss must invert cause↔effect (Class 1 dhanb is the ground OF the consequence via bi-; Class 2 dhanūb IS the consequence via lām), which is exactly the vague abstraction-that-fits-everything the methodology rejects as non-useful.",
+  "unresolved_cases": [],
+  "result": "UNRESOLVED",
+  "result_strength": "UNRESOLVED",
+  "rationale": "Morphology (packet vocalization: *an[b- / *unuwb- faʿl+fuʿūl vs *anuwb- faʿūl), syntax (causal/instrumental bi- and object-of-ghafara/iʿtarafa/yusʾalu for Class 1 vs possessive-of-what-is-due lām + miṯl + yastaʿjilūn for Class 2), and semantic role (committed cause vs received effect) diverge together at 51:59, and only at 51:59. All three lenses (A build, B build, C adversary) independently reach the same two-class partition and agree no internal bridge exists. Per the contract's homonym rule ('if two or more senses have NO Quran-internal bridge you MUST choose UNRESOLVED'), the root-level judgment is UNRESOLVED even though Class 1 is a robust, narrow, internally consistent lexeme across 37 tokens. Forcing a single 'sin' nucleus over all 39 would be the exact failure caught at 51:59.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "class1_dhanb_dhunub",
+     "where": {
+      "word_refs": [
+       "12:29:6:2",
+       "12:97:5:1",
+       "14:10:13:1",
+       "17:17:10:2",
+       "25:58:11:2",
+       "26:14:3:1",
+       "28:78:27:1",
+       "29:40:3:2",
+       "33:71:6:1",
+       "39:53:15:2",
+       "3:11:11:2",
+       "3:135:11:2",
+       "3:135:14:2",
+       "3:147:10:1",
+       "3:16:8:1",
+       "3:193:14:1",
+       "3:31:11:1",
+       "40:11:8:2",
+       "40:21:23:2",
+       "40:3:2:2",
+       "40:55:7:2",
+       "46:31:10:1",
+       "47:19:8:2",
+       "48:2:7:1",
+       "55:39:5:1",
+       "5:18:11:2",
+       "5:49:28:1",
+       "61:12:3:1",
+       "67:11:2:2",
+       "6:6:26:2",
+       "71:4:4:1",
+       "7:100:13:2",
+       "81:9:2:1",
+       "8:52:12:2",
+       "8:54:11:2",
+       "91:14:6:2",
+       "9:102:3:2"
+      ]
+     },
+     "occurrence_count_expected": 37,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+     "classification_rationale": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+     "supporting_evidence_note": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "class2_dhanub",
+     "where": {
+      "word_refs": [
+       "51:59:4:1",
+       "51:59:6:1"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "ذَنُوب (faʿūl singular): an allotted portion/measure (of impending doom) that is received, matched to that of one's predecessors; the effect handed to the recipient, not a committed act. Fine sense under-determined beyond 'a received measured portion' (single verse).",
+     "classification_rationale": "Distinct faʿūl vocalization (*anuwbFA, *anuwbi), distinct syntax (possessive lām of what is due + miṯl comparison + yastaʿjilūn), and recipient/effect role opposite to Class 1's committed-cause role. No packet occurrence bridges the two; assimilation to Class 1 would invert the cause↔effect arrow the Qur'an itself draws.",
+     "supporting_evidence_note": "Both tokens sit inside the single verse 51:59: 'lilladhīna ẓalamū ḏanūban miṯla ḏanūbi aṣḥābihim fa-lā yastaʿjilūn'. The wrongdoers already wronged (ẓalamū, past); a portion they might wish hastened is a coming lot of doom, not a sin.",
+     "counterevidence": [
+      "51:59:4:1",
+      "51:59:6:1"
+     ]
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "*nb",
+  "verdict": "NOT_APPLICABLE",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "No universal root nucleus is claimed (claim_scope_kind=UNRESOLVED_CLASS_ONLY), so an adversarial refutation of a root-wide nucleus is not required. The two classes are distinct on morphology, syntax, and semantic role (distinctiveness_ok), and each cluster's account is individually falsifiable, but the root-level judgment is a partition, not a nucleus."
+ },
+ "coverage_validation": {
+  "root": "*nb",
+  "expected_count": 39,
+  "researched_count": 39,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [
+   "51:59:4:1",
+   "51:59:6:1"
+  ],
+  "unresolved_visible": [
+   "51:59:4:1",
+   "51:59:6:1"
+  ]
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "12:29:6:2",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "12:29",
+     "verse_text": "يُوسُفُ أَعْرِضْ عَنْ هَٰذَا وَٱسْتَغْفِرِى لِذَنۢبِكِ إِنَّكِ كُنتِ مِنَ ٱلْخَاطِـِٔينَ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "12:29",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*an[bi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يُوسُفُ أَعْرِضْ عَنْ هَٰذَا وَٱسْتَغْفِرِى لِذَنۢبِكِ إِنَّكِ كُنتِ مِنَ ٱلْخَاطِـِٔينَ"
+  },
+  {
+   "word_ref": "12:97:5:1",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "12:97",
+     "verse_text": "قَالُوا۟ يَٰٓأَبَانَا ٱسْتَغْفِرْ لَنَا ذُنُوبَنَآ إِنَّا كُنَّا خَٰطِـِٔينَ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "12:97",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*unuwba",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالُوا۟ يَٰٓأَبَانَا ٱسْتَغْفِرْ لَنَا ذُنُوبَنَآ إِنَّا كُنَّا خَٰطِـِٔينَ"
+  },
+  {
+   "word_ref": "14:10:13:1",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "14:10",
+     "verse_text": "قَالَتْ رُسُلُهُمْ أَفِى ٱللَّهِ شَكٌّ فَاطِرِ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ يَدْعُوكُمْ لِيَغْفِرَ لَكُم مِّن ذُنُوبِكُمْ وَيُؤَخِّرَكُمْ إِلَىٰٓ أَجَلٍ مُّسَمًّى قَالُوٓا۟ إِنْ أَنتُمْ إِلَّا بَشَرٌ مِّثْلُنَا تُرِيدُونَ أَن تَصُدُّونَا عَمَّا كَانَ يَعْبُدُ ءَابَآؤُنَا فَأْتُونَا بِسُلْطَٰنٍ مُّبِينٍ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "14:10",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*unuwbi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالَتْ رُسُلُهُمْ أَفِى ٱللَّهِ شَكٌّ فَاطِرِ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ يَدْعُوكُمْ لِيَغْفِرَ لَكُم مِّن ذُنُوبِكُمْ وَيُؤَخِّرَكُمْ إِلَىٰٓ أَجَلٍ مُّسَمًّى قَالُوٓا۟ إِنْ أَنتُمْ إِلَّا بَشَرٌ مِّثْلُنَا تُرِيدُونَ أَن تَصُدُّونَا عَمَّا كَانَ يَعْبُدُ ءَابَآؤُنَا فَأْتُونَا بِسُلْطَٰنٍ مُّبِينٍ"
+  },
+  {
+   "word_ref": "17:17:10:2",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "17:17",
+     "verse_text": "وَكَمْ أَهْلَكْنَا مِنَ ٱلْقُرُونِ مِنۢ بَعْدِ نُوحٍ وَكَفَىٰ بِرَبِّكَ بِذُنُوبِ عِبَادِهِۦ خَبِيرًۢا بَصِيرًا"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "17:17",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*unuwbi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَكَمْ أَهْلَكْنَا مِنَ ٱلْقُرُونِ مِنۢ بَعْدِ نُوحٍ وَكَفَىٰ بِرَبِّكَ بِذُنُوبِ عِبَادِهِۦ خَبِيرًۢا بَصِيرًا"
+  },
+  {
+   "word_ref": "25:58:11:2",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "25:58",
+     "verse_text": "وَتَوَكَّلْ عَلَى ٱلْحَىِّ ٱلَّذِى لَا يَمُوتُ وَسَبِّحْ بِحَمْدِهِۦ وَكَفَىٰ بِهِۦ بِذُنُوبِ عِبَادِهِۦ خَبِيرًا"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "25:58",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*unuwbi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَتَوَكَّلْ عَلَى ٱلْحَىِّ ٱلَّذِى لَا يَمُوتُ وَسَبِّحْ بِحَمْدِهِۦ وَكَفَىٰ بِهِۦ بِذُنُوبِ عِبَادِهِۦ خَبِيرًا"
+  },
+  {
+   "word_ref": "26:14:3:1",
+   "disposition": "CONSISTENT",
+   "note": "Adversarial boundary within Class 1: 26:14:3:1 is a charge held against Moses in an accuser's (human) frame, showing dhanb as an imputed offense grounding a punitive claim with punisher unspecified.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "26:14",
+     "verse_text": "وَلَهُمْ عَلَىَّ ذَنۢبٌ فَأَخَافُ أَن يَقْتُلُونِ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "26:14",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*an[bN",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَهُمْ عَلَىَّ ذَنۢبٌ فَأَخَافُ أَن يَقْتُلُونِ"
+  },
+  {
+   "word_ref": "28:78:27:1",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "28:78",
+     "verse_text": "قَالَ إِنَّمَآ أُوتِيتُهُۥ عَلَىٰ عِلْمٍ عِندِىٓ أَوَلَمْ يَعْلَمْ أَنَّ ٱللَّهَ قَدْ أَهْلَكَ مِن قَبْلِهِۦ مِنَ ٱلْقُرُونِ مَنْ هُوَ أَشَدُّ مِنْهُ قُوَّةً وَأَكْثَرُ جَمْعًا وَلَا يُسْـَٔلُ عَن ذُنُوبِهِمُ ٱلْمُجْرِمُونَ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "28:78",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*unuwbi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالَ إِنَّمَآ أُوتِيتُهُۥ عَلَىٰ عِلْمٍ عِندِىٓ أَوَلَمْ يَعْلَمْ أَنَّ ٱللَّهَ قَدْ أَهْلَكَ مِن قَبْلِهِۦ مِنَ ٱلْقُرُونِ مَنْ هُوَ أَشَدُّ مِنْهُ قُوَّةً وَأَكْثَرُ جَمْعًا وَلَا يُسْـَٔلُ عَن ذُنُوبِهِمُ ٱلْمُجْرِمُونَ"
+  },
+  {
+   "word_ref": "29:40:3:2",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "29:40",
+     "verse_text": "فَكُلًّا أَخَذْنَا بِذَنۢبِهِۦ فَمِنْهُم مَّنْ أَرْسَلْنَا عَلَيْهِ حَاصِبًا وَمِنْهُم مَّنْ أَخَذَتْهُ ٱلصَّيْحَةُ وَمِنْهُم مَّنْ خَسَفْنَا بِهِ ٱلْأَرْضَ وَمِنْهُم مَّنْ أَغْرَقْنَا وَمَا كَانَ ٱللَّهُ لِيَظْلِمَهُمْ وَلَٰكِن كَانُوٓا۟ أَنفُسَهُمْ يَظْلِمُونَ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "29:40",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*an[bi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَكُلًّا أَخَذْنَا بِذَنۢبِهِۦ فَمِنْهُم مَّنْ أَرْسَلْنَا عَلَيْهِ حَاصِبًا وَمِنْهُم مَّنْ أَخَذَتْهُ ٱلصَّيْحَةُ وَمِنْهُم مَّنْ خَسَفْنَا بِهِ ٱلْأَرْضَ وَمِنْهُم مَّنْ أَغْرَقْنَا وَمَا كَانَ ٱللَّهُ لِيَظْلِمَهُمْ وَلَٰكِن كَانُوٓا۟ أَنفُسَهُمْ يَظْلِمُونَ"
+  },
+  {
+   "word_ref": "33:71:6:1",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "33:71",
+     "verse_text": "يُصْلِحْ لَكُمْ أَعْمَٰلَكُمْ وَيَغْفِرْ لَكُمْ ذُنُوبَكُمْ وَمَن يُطِعِ ٱللَّهَ وَرَسُولَهُۥ فَقَدْ فَازَ فَوْزًا عَظِيمًا"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "33:71",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*unuwba",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يُصْلِحْ لَكُمْ أَعْمَٰلَكُمْ وَيَغْفِرْ لَكُمْ ذُنُوبَكُمْ وَمَن يُطِعِ ٱللَّهَ وَرَسُولَهُۥ فَقَدْ فَازَ فَوْزًا عَظِيمًا"
+  },
+  {
+   "word_ref": "39:53:15:2",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "39:53",
+     "verse_text": "قُلْ يَٰعِبَادِىَ ٱلَّذِينَ أَسْرَفُوا۟ عَلَىٰٓ أَنفُسِهِمْ لَا تَقْنَطُوا۟ مِن رَّحْمَةِ ٱللَّهِ إِنَّ ٱللَّهَ يَغْفِرُ ٱلذُّنُوبَ جَمِيعًا إِنَّهُۥ هُوَ ٱلْغَفُورُ ٱلرَّحِيمُ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "39:53",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*~unuwba",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قُلْ يَٰعِبَادِىَ ٱلَّذِينَ أَسْرَفُوا۟ عَلَىٰٓ أَنفُسِهِمْ لَا تَقْنَطُوا۟ مِن رَّحْمَةِ ٱللَّهِ إِنَّ ٱللَّهَ يَغْفِرُ ٱلذُّنُوبَ جَمِيعًا إِنَّهُۥ هُوَ ٱلْغَفُورُ ٱلرَّحِيمُ"
+  },
+  {
+   "word_ref": "3:11:11:2",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:11",
+     "verse_text": "كَدَأْبِ ءَالِ فِرْعَوْنَ وَٱلَّذِينَ مِن قَبْلِهِمْ كَذَّبُوا۟ بِـَٔايَٰتِنَا فَأَخَذَهُمُ ٱللَّهُ بِذُنُوبِهِمْ وَٱللَّهُ شَدِيدُ ٱلْعِقَابِ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "3:11",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*unuwbi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "كَدَأْبِ ءَالِ فِرْعَوْنَ وَٱلَّذِينَ مِن قَبْلِهِمْ كَذَّبُوا۟ بِـَٔايَٰتِنَا فَأَخَذَهُمُ ٱللَّهُ بِذُنُوبِهِمْ وَٱللَّهُ شَدِيدُ ٱلْعِقَابِ"
+  },
+  {
+   "word_ref": "3:135:11:2",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:135",
+     "verse_text": "وَٱلَّذِينَ إِذَا فَعَلُوا۟ فَٰحِشَةً أَوْ ظَلَمُوٓا۟ أَنفُسَهُمْ ذَكَرُوا۟ ٱللَّهَ فَٱسْتَغْفَرُوا۟ لِذُنُوبِهِمْ وَمَن يَغْفِرُ ٱلذُّنُوبَ إِلَّا ٱللَّهُ وَلَمْ يُصِرُّوا۟ عَلَىٰ مَا فَعَلُوا۟ وَهُمْ يَعْلَمُونَ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "3:135",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*unuwbi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱلَّذِينَ إِذَا فَعَلُوا۟ فَٰحِشَةً أَوْ ظَلَمُوٓا۟ أَنفُسَهُمْ ذَكَرُوا۟ ٱللَّهَ فَٱسْتَغْفَرُوا۟ لِذُنُوبِهِمْ وَمَن يَغْفِرُ ٱلذُّنُوبَ إِلَّا ٱللَّهُ وَلَمْ يُصِرُّوا۟ عَلَىٰ مَا فَعَلُوا۟ وَهُمْ يَعْلَمُونَ"
+  },
+  {
+   "word_ref": "3:135:14:2",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:135",
+     "verse_text": "وَٱلَّذِينَ إِذَا فَعَلُوا۟ فَٰحِشَةً أَوْ ظَلَمُوٓا۟ أَنفُسَهُمْ ذَكَرُوا۟ ٱللَّهَ فَٱسْتَغْفَرُوا۟ لِذُنُوبِهِمْ وَمَن يَغْفِرُ ٱلذُّنُوبَ إِلَّا ٱللَّهُ وَلَمْ يُصِرُّوا۟ عَلَىٰ مَا فَعَلُوا۟ وَهُمْ يَعْلَمُونَ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "3:135",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*~unuwba",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱلَّذِينَ إِذَا فَعَلُوا۟ فَٰحِشَةً أَوْ ظَلَمُوٓا۟ أَنفُسَهُمْ ذَكَرُوا۟ ٱللَّهَ فَٱسْتَغْفَرُوا۟ لِذُنُوبِهِمْ وَمَن يَغْفِرُ ٱلذُّنُوبَ إِلَّا ٱللَّهُ وَلَمْ يُصِرُّوا۟ عَلَىٰ مَا فَعَلُوا۟ وَهُمْ يَعْلَمُونَ"
+  },
+  {
+   "word_ref": "3:147:10:1",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:147",
+     "verse_text": "وَمَا كَانَ قَوْلَهُمْ إِلَّآ أَن قَالُوا۟ رَبَّنَا ٱغْفِرْ لَنَا ذُنُوبَنَا وَإِسْرَافَنَا فِىٓ أَمْرِنَا وَثَبِّتْ أَقْدَامَنَا وَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَٰفِرِينَ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "3:147",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*unuwba",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَمَا كَانَ قَوْلَهُمْ إِلَّآ أَن قَالُوا۟ رَبَّنَا ٱغْفِرْ لَنَا ذُنُوبَنَا وَإِسْرَافَنَا فِىٓ أَمْرِنَا وَثَبِّتْ أَقْدَامَنَا وَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَٰفِرِينَ"
+  },
+  {
+   "word_ref": "3:16:8:1",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:16",
+     "verse_text": "ٱلَّذِينَ يَقُولُونَ رَبَّنَآ إِنَّنَآ ءَامَنَّا فَٱغْفِرْ لَنَا ذُنُوبَنَا وَقِنَا عَذَابَ ٱلنَّارِ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "3:16",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*unuwba",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱلَّذِينَ يَقُولُونَ رَبَّنَآ إِنَّنَآ ءَامَنَّا فَٱغْفِرْ لَنَا ذُنُوبَنَا وَقِنَا عَذَابَ ٱلنَّارِ"
+  },
+  {
+   "word_ref": "3:193:14:1",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:193",
+     "verse_text": "رَّبَّنَآ إِنَّنَا سَمِعْنَا مُنَادِيًا يُنَادِى لِلْإِيمَٰنِ أَنْ ءَامِنُوا۟ بِرَبِّكُمْ فَـَٔامَنَّا رَبَّنَا فَٱغْفِرْ لَنَا ذُنُوبَنَا وَكَفِّرْ عَنَّا سَيِّـَٔاتِنَا وَتَوَفَّنَا مَعَ ٱلْأَبْرَارِ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "3:193",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*unuwba",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "رَّبَّنَآ إِنَّنَا سَمِعْنَا مُنَادِيًا يُنَادِى لِلْإِيمَٰنِ أَنْ ءَامِنُوا۟ بِرَبِّكُمْ فَـَٔامَنَّا رَبَّنَا فَٱغْفِرْ لَنَا ذُنُوبَنَا وَكَفِّرْ عَنَّا سَيِّـَٔاتِنَا وَتَوَفَّنَا مَعَ ٱلْأَبْرَارِ"
+  },
+  {
+   "word_ref": "3:31:11:1",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:31",
+     "verse_text": "قُلْ إِن كُنتُمْ تُحِبُّونَ ٱللَّهَ فَٱتَّبِعُونِى يُحْبِبْكُمُ ٱللَّهُ وَيَغْفِرْ لَكُمْ ذُنُوبَكُمْ وَٱللَّهُ غَفُورٌ رَّحِيمٌ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "3:31",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*unuwba",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قُلْ إِن كُنتُمْ تُحِبُّونَ ٱللَّهَ فَٱتَّبِعُونِى يُحْبِبْكُمُ ٱللَّهُ وَيَغْفِرْ لَكُمْ ذُنُوبَكُمْ وَٱللَّهُ غَفُورٌ رَّحِيمٌ"
+  },
+  {
+   "word_ref": "40:11:8:2",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "40:11",
+     "verse_text": "قَالُوا۟ رَبَّنَآ أَمَتَّنَا ٱثْنَتَيْنِ وَأَحْيَيْتَنَا ٱثْنَتَيْنِ فَٱعْتَرَفْنَا بِذُنُوبِنَا فَهَلْ إِلَىٰ خُرُوجٍ مِّن سَبِيلٍ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "40:11",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*unuwbi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالُوا۟ رَبَّنَآ أَمَتَّنَا ٱثْنَتَيْنِ وَأَحْيَيْتَنَا ٱثْنَتَيْنِ فَٱعْتَرَفْنَا بِذُنُوبِنَا فَهَلْ إِلَىٰ خُرُوجٍ مِّن سَبِيلٍ"
+  },
+  {
+   "word_ref": "40:21:23:2",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "40:21",
+     "verse_text": "أَوَلَمْ يَسِيرُوا۟ فِى ٱلْأَرْضِ فَيَنظُرُوا۟ كَيْفَ كَانَ عَٰقِبَةُ ٱلَّذِينَ كَانُوا۟ مِن قَبْلِهِمْ كَانُوا۟ هُمْ أَشَدَّ مِنْهُمْ قُوَّةً وَءَاثَارًا فِى ٱلْأَرْضِ فَأَخَذَهُمُ ٱللَّهُ بِذُنُوبِهِمْ وَمَا كَانَ لَهُم مِّنَ ٱللَّهِ مِن وَاقٍ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "40:21",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*unuwbi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَوَلَمْ يَسِيرُوا۟ فِى ٱلْأَرْضِ فَيَنظُرُوا۟ كَيْفَ كَانَ عَٰقِبَةُ ٱلَّذِينَ كَانُوا۟ مِن قَبْلِهِمْ كَانُوا۟ هُمْ أَشَدَّ مِنْهُمْ قُوَّةً وَءَاثَارًا فِى ٱلْأَرْضِ فَأَخَذَهُمُ ٱللَّهُ بِذُنُوبِهِمْ وَمَا كَانَ لَهُم مِّنَ ٱللَّهِ مِن وَاقٍ"
+  },
+  {
+   "word_ref": "40:3:2:2",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "40:3",
+     "verse_text": "غَافِرِ ٱلذَّنۢبِ وَقَابِلِ ٱلتَّوْبِ شَدِيدِ ٱلْعِقَابِ ذِى ٱلطَّوْلِ لَآ إِلَٰهَ إِلَّا هُوَ إِلَيْهِ ٱلْمَصِيرُ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "40:3",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*~an[bi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "غَافِرِ ٱلذَّنۢبِ وَقَابِلِ ٱلتَّوْبِ شَدِيدِ ٱلْعِقَابِ ذِى ٱلطَّوْلِ لَآ إِلَٰهَ إِلَّا هُوَ إِلَيْهِ ٱلْمَصِيرُ"
+  },
+  {
+   "word_ref": "40:55:7:2",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "40:55",
+     "verse_text": "فَٱصْبِرْ إِنَّ وَعْدَ ٱللَّهِ حَقٌّ وَٱسْتَغْفِرْ لِذَنۢبِكَ وَسَبِّحْ بِحَمْدِ رَبِّكَ بِٱلْعَشِىِّ وَٱلْإِبْكَٰرِ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "40:55",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*an[bi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَٱصْبِرْ إِنَّ وَعْدَ ٱللَّهِ حَقٌّ وَٱسْتَغْفِرْ لِذَنۢبِكَ وَسَبِّحْ بِحَمْدِ رَبِّكَ بِٱلْعَشِىِّ وَٱلْإِبْكَٰرِ"
+  },
+  {
+   "word_ref": "46:31:10:1",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "46:31",
+     "verse_text": "يَٰقَوْمَنَآ أَجِيبُوا۟ دَاعِىَ ٱللَّهِ وَءَامِنُوا۟ بِهِۦ يَغْفِرْ لَكُم مِّن ذُنُوبِكُمْ وَيُجِرْكُم مِّنْ عَذَابٍ أَلِيمٍ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "46:31",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*unuwbi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰقَوْمَنَآ أَجِيبُوا۟ دَاعِىَ ٱللَّهِ وَءَامِنُوا۟ بِهِۦ يَغْفِرْ لَكُم مِّن ذُنُوبِكُمْ وَيُجِرْكُم مِّنْ عَذَابٍ أَلِيمٍ"
+  },
+  {
+   "word_ref": "47:19:8:2",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "47:19",
+     "verse_text": "فَٱعْلَمْ أَنَّهُۥ لَآ إِلَٰهَ إِلَّا ٱللَّهُ وَٱسْتَغْفِرْ لِذَنۢبِكَ وَلِلْمُؤْمِنِينَ وَٱلْمُؤْمِنَٰتِ وَٱللَّهُ يَعْلَمُ مُتَقَلَّبَكُمْ وَمَثْوَىٰكُمْ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "47:19",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*an[bi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَٱعْلَمْ أَنَّهُۥ لَآ إِلَٰهَ إِلَّا ٱللَّهُ وَٱسْتَغْفِرْ لِذَنۢبِكَ وَلِلْمُؤْمِنِينَ وَٱلْمُؤْمِنَٰتِ وَٱللَّهُ يَعْلَمُ مُتَقَلَّبَكُمْ وَمَثْوَىٰكُمْ"
+  },
+  {
+   "word_ref": "48:2:7:1",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "48:2",
+     "verse_text": "لِّيَغْفِرَ لَكَ ٱللَّهُ مَا تَقَدَّمَ مِن ذَنۢبِكَ وَمَا تَأَخَّرَ وَيُتِمَّ نِعْمَتَهُۥ عَلَيْكَ وَيَهْدِيَكَ صِرَٰطًا مُّسْتَقِيمًا"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "48:2",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*an[bi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لِّيَغْفِرَ لَكَ ٱللَّهُ مَا تَقَدَّمَ مِن ذَنۢبِكَ وَمَا تَأَخَّرَ وَيُتِمَّ نِعْمَتَهُۥ عَلَيْكَ وَيَهْدِيَكَ صِرَٰطًا مُّسْتَقِيمًا"
+  },
+  {
+   "word_ref": "51:59:4:1",
+   "disposition": "RESISTANT",
+   "note": "Class 2 faʿūl lexeme (ḏanūban): allotted portion received by the wrongdoers; resists assimilation to the Class 1 offense-nucleus.",
+   "coverage_cluster_id": "class2_dhanub",
+   "candidate_semantic_interpretation": "ذَنُوب (faʿūl singular): an allotted portion/measure (of impending doom) that is received, matched to that of one's predecessors; the effect handed to the recipient, not a committed act. Fine sense under-determined beyond 'a received measured portion' (single verse).",
+   "cluster_supporting_evidence": "Both tokens sit inside the single verse 51:59: 'lilladhīna ẓalamū ḏanūban miṯla ḏanūbi aṣḥābihim fa-lā yastaʿjilūn'. The wrongdoers already wronged (ẓalamū, past); a portion they might wish hastened is a coming lot of doom, not a sin.",
+   "counterevidence": [
+    "51:59:4:1"
+   ],
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "Distinct faʿūl vocalization (*anuwbFA, *anuwbi), distinct syntax (possessive lām of what is due + miṯl comparison + yastaʿjilūn), and recipient/effect role opposite to Class 1's committed-cause role. No packet occurrence bridges the two; assimilation to Class 1 would invert the cause↔effect arrow the Qur'an itself draws.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [
+    "51:59:4:1"
+   ],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "51:59",
+     "verse_text": "فَإِنَّ لِلَّذِينَ ظَلَمُوا۟ ذَنُوبًا مِّثْلَ ذَنُوبِ أَصْحَٰبِهِمْ فَلَا يَسْتَعْجِلُونِ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "51:59",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*anuwbFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَإِنَّ لِلَّذِينَ ظَلَمُوا۟ ذَنُوبًا مِّثْلَ ذَنُوبِ أَصْحَٰبِهِمْ فَلَا يَسْتَعْجِلُونِ",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "51:59:6:1",
+   "disposition": "RESISTANT",
+   "note": "Class 2 faʿūl lexeme (ḏanūbi aṣḥābihim): the predecessors' matched portion; effect/consequence, not committed offense.",
+   "coverage_cluster_id": "class2_dhanub",
+   "candidate_semantic_interpretation": "ذَنُوب (faʿūl singular): an allotted portion/measure (of impending doom) that is received, matched to that of one's predecessors; the effect handed to the recipient, not a committed act. Fine sense under-determined beyond 'a received measured portion' (single verse).",
+   "cluster_supporting_evidence": "Both tokens sit inside the single verse 51:59: 'lilladhīna ẓalamū ḏanūban miṯla ḏanūbi aṣḥābihim fa-lā yastaʿjilūn'. The wrongdoers already wronged (ẓalamū, past); a portion they might wish hastened is a coming lot of doom, not a sin.",
+   "counterevidence": [
+    "51:59:6:1"
+   ],
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "Distinct faʿūl vocalization (*anuwbFA, *anuwbi), distinct syntax (possessive lām of what is due + miṯl comparison + yastaʿjilūn), and recipient/effect role opposite to Class 1's committed-cause role. No packet occurrence bridges the two; assimilation to Class 1 would invert the cause↔effect arrow the Qur'an itself draws.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [
+    "51:59:6:1"
+   ],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "51:59",
+     "verse_text": "فَإِنَّ لِلَّذِينَ ظَلَمُوا۟ ذَنُوبًا مِّثْلَ ذَنُوبِ أَصْحَٰبِهِمْ فَلَا يَسْتَعْجِلُونِ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "51:59",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*anuwbi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَإِنَّ لِلَّذِينَ ظَلَمُوا۟ ذَنُوبًا مِّثْلَ ذَنُوبِ أَصْحَٰبِهِمْ فَلَا يَسْتَعْجِلُونِ",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "55:39:5:1",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:39",
+     "verse_text": "فَيَوْمَئِذٍ لَّا يُسْـَٔلُ عَن ذَنۢبِهِۦٓ إِنسٌ وَلَا جَآنٌّ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "55:39",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*an[bi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَيَوْمَئِذٍ لَّا يُسْـَٔلُ عَن ذَنۢبِهِۦٓ إِنسٌ وَلَا جَآنٌّ"
+  },
+  {
+   "word_ref": "5:18:11:2",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "5:18",
+     "verse_text": "وَقَالَتِ ٱلْيَهُودُ وَٱلنَّصَٰرَىٰ نَحْنُ أَبْنَٰٓؤُا۟ ٱللَّهِ وَأَحِبَّٰٓؤُهُۥ قُلْ فَلِمَ يُعَذِّبُكُم بِذُنُوبِكُم بَلْ أَنتُم بَشَرٌ مِّمَّنْ خَلَقَ يَغْفِرُ لِمَن يَشَآءُ وَيُعَذِّبُ مَن يَشَآءُ وَلِلَّهِ مُلْكُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ وَمَا بَيْنَهُمَا وَإِلَيْهِ ٱلْمَصِيرُ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "5:18",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*unuwbi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَقَالَتِ ٱلْيَهُودُ وَٱلنَّصَٰرَىٰ نَحْنُ أَبْنَٰٓؤُا۟ ٱللَّهِ وَأَحِبَّٰٓؤُهُۥ قُلْ فَلِمَ يُعَذِّبُكُم بِذُنُوبِكُم بَلْ أَنتُم بَشَرٌ مِّمَّنْ خَلَقَ يَغْفِرُ لِمَن يَشَآءُ وَيُعَذِّبُ مَن يَشَآءُ وَلِلَّهِ مُلْكُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ وَمَا بَيْنَهُمَا وَإِلَيْهِ ٱلْمَصِيرُ"
+  },
+  {
+   "word_ref": "5:49:28:1",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "5:49",
+     "verse_text": "وَأَنِ ٱحْكُم بَيْنَهُم بِمَآ أَنزَلَ ٱللَّهُ وَلَا تَتَّبِعْ أَهْوَآءَهُمْ وَٱحْذَرْهُمْ أَن يَفْتِنُوكَ عَنۢ بَعْضِ مَآ أَنزَلَ ٱللَّهُ إِلَيْكَ فَإِن تَوَلَّوْا۟ فَٱعْلَمْ أَنَّمَا يُرِيدُ ٱللَّهُ أَن يُصِيبَهُم بِبَعْضِ ذُنُوبِهِمْ وَإِنَّ كَثِيرًا مِّنَ ٱلنَّاسِ لَفَٰسِقُونَ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "5:49",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*unuwbi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَأَنِ ٱحْكُم بَيْنَهُم بِمَآ أَنزَلَ ٱللَّهُ وَلَا تَتَّبِعْ أَهْوَآءَهُمْ وَٱحْذَرْهُمْ أَن يَفْتِنُوكَ عَنۢ بَعْضِ مَآ أَنزَلَ ٱللَّهُ إِلَيْكَ فَإِن تَوَلَّوْا۟ فَٱعْلَمْ أَنَّمَا يُرِيدُ ٱللَّهُ أَن يُصِيبَهُم بِبَعْضِ ذُنُوبِهِمْ وَإِنَّ كَثِيرًا مِّنَ ٱلنَّاسِ لَفَٰسِقُونَ"
+  },
+  {
+   "word_ref": "61:12:3:1",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "61:12",
+     "verse_text": "يَغْفِرْ لَكُمْ ذُنُوبَكُمْ وَيُدْخِلْكُمْ جَنَّٰتٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ وَمَسَٰكِنَ طَيِّبَةً فِى جَنَّٰتِ عَدْنٍ ذَٰلِكَ ٱلْفَوْزُ ٱلْعَظِيمُ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "61:12",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*unuwba",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَغْفِرْ لَكُمْ ذُنُوبَكُمْ وَيُدْخِلْكُمْ جَنَّٰتٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ وَمَسَٰكِنَ طَيِّبَةً فِى جَنَّٰتِ عَدْنٍ ذَٰلِكَ ٱلْفَوْزُ ٱلْعَظِيمُ"
+  },
+  {
+   "word_ref": "67:11:2:2",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "67:11",
+     "verse_text": "فَٱعْتَرَفُوا۟ بِذَنۢبِهِمْ فَسُحْقًا لِّأَصْحَٰبِ ٱلسَّعِيرِ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "67:11",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*an[bi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَٱعْتَرَفُوا۟ بِذَنۢبِهِمْ فَسُحْقًا لِّأَصْحَٰبِ ٱلسَّعِيرِ"
+  },
+  {
+   "word_ref": "6:6:26:2",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:6",
+     "verse_text": "أَلَمْ يَرَوْا۟ كَمْ أَهْلَكْنَا مِن قَبْلِهِم مِّن قَرْنٍ مَّكَّنَّٰهُمْ فِى ٱلْأَرْضِ مَا لَمْ نُمَكِّن لَّكُمْ وَأَرْسَلْنَا ٱلسَّمَآءَ عَلَيْهِم مِّدْرَارًا وَجَعَلْنَا ٱلْأَنْهَٰرَ تَجْرِى مِن تَحْتِهِمْ فَأَهْلَكْنَٰهُم بِذُنُوبِهِمْ وَأَنشَأْنَا مِنۢ بَعْدِهِمْ قَرْنًا ءَاخَرِينَ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "6:6",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*unuwbi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَلَمْ يَرَوْا۟ كَمْ أَهْلَكْنَا مِن قَبْلِهِم مِّن قَرْنٍ مَّكَّنَّٰهُمْ فِى ٱلْأَرْضِ مَا لَمْ نُمَكِّن لَّكُمْ وَأَرْسَلْنَا ٱلسَّمَآءَ عَلَيْهِم مِّدْرَارًا وَجَعَلْنَا ٱلْأَنْهَٰرَ تَجْرِى مِن تَحْتِهِمْ فَأَهْلَكْنَٰهُم بِذُنُوبِهِمْ وَأَنشَأْنَا مِنۢ بَعْدِهِمْ قَرْنًا ءَاخَرِينَ"
+  },
+  {
+   "word_ref": "71:4:4:1",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "71:4",
+     "verse_text": "يَغْفِرْ لَكُم مِّن ذُنُوبِكُمْ وَيُؤَخِّرْكُمْ إِلَىٰٓ أَجَلٍ مُّسَمًّى إِنَّ أَجَلَ ٱللَّهِ إِذَا جَآءَ لَا يُؤَخَّرُ لَوْ كُنتُمْ تَعْلَمُونَ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "71:4",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*unuwbi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَغْفِرْ لَكُم مِّن ذُنُوبِكُمْ وَيُؤَخِّرْكُمْ إِلَىٰٓ أَجَلٍ مُّسَمًّى إِنَّ أَجَلَ ٱللَّهِ إِذَا جَآءَ لَا يُؤَخَّرُ لَوْ كُنتُمْ تَعْلَمُونَ"
+  },
+  {
+   "word_ref": "7:100:13:2",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:100",
+     "verse_text": "أَوَلَمْ يَهْدِ لِلَّذِينَ يَرِثُونَ ٱلْأَرْضَ مِنۢ بَعْدِ أَهْلِهَآ أَن لَّوْ نَشَآءُ أَصَبْنَٰهُم بِذُنُوبِهِمْ وَنَطْبَعُ عَلَىٰ قُلُوبِهِمْ فَهُمْ لَا يَسْمَعُونَ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "7:100",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*unuwbi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَوَلَمْ يَهْدِ لِلَّذِينَ يَرِثُونَ ٱلْأَرْضَ مِنۢ بَعْدِ أَهْلِهَآ أَن لَّوْ نَشَآءُ أَصَبْنَٰهُم بِذُنُوبِهِمْ وَنَطْبَعُ عَلَىٰ قُلُوبِهِمْ فَهُمْ لَا يَسْمَعُونَ"
+  },
+  {
+   "word_ref": "81:9:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Adversarial boundary within Class 1: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant. Fits the imputable-ground-for-punitive-claim nucleus, refutes the narrower 'committed sin' gloss.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "81:9",
+     "verse_text": "بِأَىِّ ذَنۢبٍ قُتِلَتْ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "81:9",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*an[bK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "بِأَىِّ ذَنۢبٍ قُتِلَتْ"
+  },
+  {
+   "word_ref": "8:52:12:2",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "8:52",
+     "verse_text": "كَدَأْبِ ءَالِ فِرْعَوْنَ وَٱلَّذِينَ مِن قَبْلِهِمْ كَفَرُوا۟ بِـَٔايَٰتِ ٱللَّهِ فَأَخَذَهُمُ ٱللَّهُ بِذُنُوبِهِمْ إِنَّ ٱللَّهَ قَوِىٌّ شَدِيدُ ٱلْعِقَابِ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "8:52",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*unuwbi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "كَدَأْبِ ءَالِ فِرْعَوْنَ وَٱلَّذِينَ مِن قَبْلِهِمْ كَفَرُوا۟ بِـَٔايَٰتِ ٱللَّهِ فَأَخَذَهُمُ ٱللَّهُ بِذُنُوبِهِمْ إِنَّ ٱللَّهَ قَوِىٌّ شَدِيدُ ٱلْعِقَابِ"
+  },
+  {
+   "word_ref": "8:54:11:2",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "8:54",
+     "verse_text": "كَدَأْبِ ءَالِ فِرْعَوْنَ وَٱلَّذِينَ مِن قَبْلِهِمْ كَذَّبُوا۟ بِـَٔايَٰتِ رَبِّهِمْ فَأَهْلَكْنَٰهُم بِذُنُوبِهِمْ وَأَغْرَقْنَآ ءَالَ فِرْعَوْنَ وَكُلٌّ كَانُوا۟ ظَٰلِمِينَ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "8:54",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*unuwbi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "كَدَأْبِ ءَالِ فِرْعَوْنَ وَٱلَّذِينَ مِن قَبْلِهِمْ كَذَّبُوا۟ بِـَٔايَٰتِ رَبِّهِمْ فَأَهْلَكْنَٰهُم بِذُنُوبِهِمْ وَأَغْرَقْنَآ ءَالَ فِرْعَوْنَ وَكُلٌّ كَانُوا۟ ظَٰلِمِينَ"
+  },
+  {
+   "word_ref": "91:14:6:2",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "91:14",
+     "verse_text": "فَكَذَّبُوهُ فَعَقَرُوهَا فَدَمْدَمَ عَلَيْهِمْ رَبُّهُم بِذَنۢبِهِمْ فَسَوَّىٰهَا"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "91:14",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*an[bi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَكَذَّبُوهُ فَعَقَرُوهَا فَدَمْدَمَ عَلَيْهِمْ رَبُّهُم بِذَنۢبِهِمْ فَسَوَّىٰهَا"
+  },
+  {
+   "word_ref": "9:102:3:2",
+   "disposition": "CONSISTENT",
+   "note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "coverage_cluster_id": "class1_dhanb_dhunub",
+   "candidate_semantic_interpretation": "ذَنْب / ذُنُوب (faʿl singular + fuʿūl plural): an imputable culpable act attributed to an agent that functions as the ground of liability — the bi- causal ground of divine seizure/destruction/punishment, the object of pardon and pardon-seeking, the content of confession, and the object of interrogation/divine cognizance. Not the punishment; not generic wrongdoing; not the agent-label; not entailing actual guilt (accuser-relative). Singular vs plural is number, not sense.",
+   "cluster_supporting_evidence": "Causal ground: 3:11:11:2, 6:6:26:2, 7:100:13:2, 8:52:12:2, 8:54:11:2, 29:40:3:2, 40:21:23:2, 5:18:11:2, 5:49:28:1, 91:14:6:2. Pardon: 39:53:15:2, 40:3:2:2, 3:16:8:1, 3:31:11:1, 12:29:6:2, 48:2:7:1. Confession: 40:11:8:2, 67:11:2:2, 9:102:3:2. Interrogation/cognizance: 28:78:27:1, 55:39:5:1, 17:17:10:2, 25:58:11:2. Non-synonymy coordinations: 3:193:14:1 (vs sayyiʾāt), 3:147:10:1 (vs isrāf).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 37 share one relational role across five reinforcing frames (causal bi-, ghufrān/istighfār object, iʿtirāf, suʾāl, khibra) with the faʿl/fuʿūl vocalization (*an[b-, *~an[bi, *unuwb-, *~unuwb-). 81:9:2:1 and 26:14:3:1 sharpen rather than break the nucleus: dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "9:102",
+     "verse_text": "وَءَاخَرُونَ ٱعْتَرَفُوا۟ بِذُنُوبِهِمْ خَلَطُوا۟ عَمَلًا صَٰلِحًا وَءَاخَرَ سَيِّئًا عَسَى ٱللَّهُ أَن يَتُوبَ عَلَيْهِمْ إِنَّ ٱللَّهَ غَفُورٌ رَّحِيمٌ"
+    }
+   ],
+   "root_arabic": "ذ ن ب",
+   "root_buckwalter": "*nb",
+   "root_id": "*nb",
+   "artifact_name": "_2A_nb.json",
+   "verse_ref": "9:102",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*unuwbi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَءَاخَرُونَ ٱعْتَرَفُوا۟ بِذُنُوبِهِمْ خَلَطُوا۟ عَمَلًا صَٰلِحًا وَءَاخَرَ سَيِّئًا عَسَى ٱللَّهُ أَن يَتُوبَ عَلَيْهِمْ إِنَّ ٱللَّهَ غَفُورٌ رَّحِيمٌ"
+  }
+ ],
+ "resistant_deep_analysis": [
+  {
+   "word_ref": "51:59:4:1",
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "Distinct faʿūl vocalization (*anuwbFA, *anuwbi), distinct syntax (possessive lām of what is due + miṯl comparison + yastaʿjilūn), and recipient/effect role opposite to Class 1's committed-cause role. No packet occurrence bridges the two; assimilation to Class 1 would invert the cause↔effect arrow the Qur'an itself draws.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "51:59:6:1",
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "Distinct faʿūl vocalization (*anuwbFA, *anuwbi), distinct syntax (possessive lām of what is due + miṯl comparison + yastaʿjilūn), and recipient/effect role opposite to Class 1's committed-cause role. No packet occurrence bridges the two; assimilation to Class 1 would invert the cause↔effect arrow the Qur'an itself draws.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "deep_analysis": true
+  }
+ ],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "UNRESOLVED",
+ "result_strength": "UNRESOLVED",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "All three lenses (A, B, C) independently reached the same two-class partition and agreed no Quran-internal bridge exists; packet vocalization (*anuwb- vs *an[b-/*unuwb-) confirmed against the source file.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "51:59:4:1",
+  "51:59:6:1"
+ ],
+ "unreconciled_count": 2,
+ "resistant_occurrences": [
+  "51:59:4:1",
+  "51:59:6:1"
+ ],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": null,
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "LOCAL",
+ "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
+ "layer_attribution": {
+  "occurrence_evidence": "39 occurrences, all QAC-tagged N; verse_text and qac_surface_form_buckwalter read directly from the packet. Vocalization splits into *an[b-/*~an[bi (faʿl sg, 11), *unuwb-/*~unuwb- (fuʿūl pl, 26), and *anuwb- (faʿūl sg, 2 at 51:59).",
+  "derivation": "Two distinct nominal derivational bases share the triliteral skeleton: faʿl (ذَنْب) with its fuʿūl plural (ذُنُوب) is one lexeme; faʿūl (ذَنُوب) is a separate derivational base, NOT the plural of ذَنْب.",
+  "lexical_class": "Class 1 (ذَنْب/ذُنُوب) is a lexicalized accountability noun = imputable culpable act grounding liability; Class 2 (ذَنُوب) is a separate noun = received allotted portion. The two are treated as homonymous classes on the same root.",
+  "contextual_relation": "Class 1 lives in causal-instrumental bi-, ghufrān/istighfār, iʿtirāf, suʾāl, and khibra frames; Class 2 lives in a possessive lām-of-what-is-due + miṯl comparison + yastaʿjilūn frame. These narrative/syntactic frames are contextual scaffolding and are NOT elevated into the root claim.",
+  "reconciliation": "Preliminary readings of 81:9:2:1 and 26:14:3:1 as potential resisters within Class 1 were reconciled as adversarial boundaries that sharpen (not break) the Class 1 nucleus; the singular/plural difference was reconciled as inflection, not sense. 51:59 was NOT reconciled into Class 1 and remains a resistant seam.",
+  "unresolved_resistance": "51:59:4:1 and 51:59:6:1 persist as a genuine unbridged resistant seam; no Quran-internal evidence bridges ذَنُوب (received portion) to ذَنْب/ذُنُوب (committed offense), so the root-level judgment stays UNRESOLVED rather than forcing a single nucleus."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "51:59:4:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "faʿūl lexeme ḏanūban functioning as a received allotted portion of doom (dative lām + miṯl + yastaʿjilūn), the opposite role to Class 1's committed causal offense; no Quran-internal bridge to Class 1.",
+   "evidence_basis": {
+    "kind": "MORPHOSYNTACTIC_DIVERGENCE",
+    "statement": "51:59 (ذَنُوبًا / ذَنُوبِ): a faʿūl lexeme distinct from the faʿl/fuʿūl of Class 1, functioning as an allotted portion RECEIVED by the wrongdoers (dative lām of what is due, comparison miṯl to predecessors, and yastaʿjilūn marking a coming measured lot), i.e. the effect/consequence, the polar inverse of Class 1's dhanb which is the committed cause invoked against a bearer (bi-ḏanbihim)."
+   }
+  },
+  {
+   "word_ref": "51:59:6:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "Second faʿūl token (ḏanūbi aṣḥābihim), the predecessors' matched portion; same resistant seam, no bridge to the Class 1 offense-nucleus.",
+   "evidence_basis": {
+    "kind": "MORPHOSYNTACTIC_DIVERGENCE",
+    "statement": "No packet occurrence uses ḏanūb and ḏanb in a shared or punning frame, so the two classes cannot be bridged from packet-internal evidence."
+   }
+  },
+  {
+   "word_ref": "81:9:2:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "Refutes the narrower 'actual committed sin' gloss: the buried infant has no dhanb, so the word denotes the offense that WOULD warrant a consequence, agnostic to real guilt.",
+   "evidence_basis": {
+    "kind": "NEGATIVE_BOUNDARY",
+    "statement": "dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame."
+   }
+  },
+  {
+   "word_ref": "26:14:3:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "Shows dhanb as an accuser-relative charge (a liability in a human forum grounding a lethal claim), not necessarily a sin before God; fixes the punisher-unspecified formulation of the Class 1 nucleus.",
+   "evidence_basis": {
+    "kind": "NEGATIVE_BOUNDARY",
+    "statement": "dhanb does NOT entail actual moral guilt — 81:9:2:1 presupposes its absence for the buried infant, and 26:14:3:1 is a charge held against Moses in an accuser's frame."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL",
+  "rationale": "The root is a two-class result with a genuine unbridged resistant seam at 51:59 (both tokens, RESISTANT_SEAM) plus two adversarial-boundary occurrences (81:9:2:1, 26:14:3:1) that constrain the Class 1 nucleus. All final-RESISTANT occurrences are listed and also carried in counterevidence_refs."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A Quran-internal construction is found in which ذَنُوب (faʿūl, 51:59) and ذَنْب/ذُنُوب (faʿl/fuʿūl) share a single frame that bridges the received-portion sense and the imputable-offense sense, dissolving the two-class partition and licensing a root-wide nucleus.",
+  "search_location": "The 51:59 tokens (51:59:4:1, 51:59:6:1) compared against the Class 1 causal-instrumental frame (3:11:11:2, 6:6:26:2, 91:14:6:2) and the pardon/confession frames (39:53:15:2, 40:11:8:2), plus any future packet attesting faʿūl ذَنُوب outside 51:59.",
+  "verification_method": "Check whether a ذَنُوب token ever takes ghafara/istaghfara/iʿtarafa-bi/yusʾalu-ʿan as its governing verb, or whether a ذَنْب/ذُنُوب token ever appears as a received lot via dative lām + miṯl + yastaʿjilūn; require the same syntactic role, not mere co-occurrence of the skeleton.",
+  "confounder_control": "Exclude external etymology (dhanab='tail') and inherited synonym lists; control for number inflection (singular vs plural is not a class split) and for the discourse fact that offenses are usually discussed in liability contexts; verify vocalization from qac_surface_form_buckwalter, not from the uniform N tag.",
+  "failure_consequence": "If no such bridging frame exists, the single-nucleus claim is withdrawn and the two-class UNRESOLVED partition stands; if a bridging frame is found, the root is reclassified toward a root-wide account and Class 2's RESISTANT status is lifted."
+ },
+ "falsification_status": "NOT_REQUIRED",
+ "reopen_conditions": [
+  "If a future packet attests a ذَنُوب (faʿūl) token outside 51:59 that governs or is governed by the Class 1 accountability verbs (ghafara/istaghfara at e.g. the 39:53/3:16 frame, or iʿtarafa-bi at the 40:11/67:11 frame, or yusʾalu-ʿan at the 28:78/55:39 frame), reopen the class partition between class1_dhanb_dhunub and class2_dhanub.",
+  "If any occurrence attests the root in a bare concrete 'tail/that-which-trails' sense that could mediate between the committed-offense frame (bi-ḏanbihim: 3:11:11:2, 6:6:26:2, 91:14:6:2) and the received-portion frame (ḏanūban: 51:59:4:1, 51:59:6:1), reopen the bridge question.",
+  "If a ذَنْب/ذُنُوب (faʿl/fuʿūl) token is found in a received-lot construction (dative lām of what is due + miṯl + yastaʿjilūn) like 51:59, reopen whether the cause↔effect divergence that currently separates the classes is real."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "3:11:11:2",
+  "6:6:26:2",
+  "91:14:6:2",
+  "39:53:15:2",
+  "3:16:8:1",
+  "40:3:2:2",
+  "40:11:8:2",
+  "28:78:27:1",
+  "3:193:14:1",
+  "3:147:10:1",
+  "51:59:4:1",
+  "51:59:6:1"
+ ],
+ "counterevidence_refs": [
+  "51:59:4:1",
+  "51:59:6:1"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "nb-unresolved-classonly-2026",
+  "verdict": "NOT_APPLICABLE",
+  "falsifiable": true,
+  "distinctiveness_ok": true,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "class1_dhanb_dhunub",
+   "class2_dhanub"
+  ],
+  "status_rationale": "No universal root nucleus is claimed (claim_scope_kind=UNRESOLVED_CLASS_ONLY), so an adversarial refutation of a root-wide nucleus is not required. The two classes are distinct on morphology, syntax, and semantic role (distinctiveness_ok), and each cluster's account is individually falsifiable, but the root-level judgment is a partition, not a nucleus."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "*nb: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "*nb: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "*nb: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "*nb: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "*nb: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "*nb: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "*nb: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "*nb: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

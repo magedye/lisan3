@@ -1,0 +1,349 @@
+{
+ "root_arabic": "ف ق د",
+ "root_buckwalter": "fqd",
+ "root_id": "fqd",
+ "artifact_name": "fqd.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave1",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "registering the absence of something expected to be present; in Form V, actively reviewing a set to detect what is absent from it",
+ "internal_discovery": {
+  "candidate_root_contribution": "registering the absence of something expected to be present; in Form V, actively reviewing a set to detect what is absent from it",
+  "plain_explanation": "All three occurrences turn on noticing that an expected item or member is missing. The two base verbs ask/state what is missing (Pharaoh's men's lost measure at 12:71-72), and the single Form V tafaqqada at 27:20 is Solomon reviewing the birds precisely so as to detect the absent one (he then says 'why do I not see the hoopoe'). The root supplies the registration of a felt absence, not the act of losing, hiding, or searching in general.",
+  "layer_separation_note": "Does not entail the cause of the loss, moral fault, concealment (contrast the 'unseen' register), or a generic act of searching; the missing item is presupposed to have been present and expected.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "27:20 tafaqqada al-tayr ('he reviewed the birds') could be read as neutral inspection, but the following clause 'why do I not see the hoopoe; was it among the absent' shows the review is oriented to detecting an absent member, preserving the absence nucleus.",
+  "strongest_competitor": "A generic 'inspect/muster' reading for Form V that drops the absence component; rejected because the 27:20 context foregrounds the detected absentee.",
+  "competing_hypothesis": "A generic 'inspect/muster' reading for Form V that drops the absence component; rejected because the 27:20 context foregrounds the detected absentee.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "Three occurrences across two forms cohere on absence-registration with no resistant case; coverage is complete but the evidence base is small (MODERATE).",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "base_absence_perception",
+     "where": {
+      "qac_verb_form": [
+       null
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "notice/state that an expected item is missing",
+     "classification_rationale": "The base verbs at 12:71-72 concern the missing measuring-cup: the men are asked what they miss and answer that they miss the king's cup.",
+     "supporting_evidence_note": "Both base-verb contexts in the Yusuf narrative were reviewed against the verse text.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "form_v_review_for_absence",
+     "where": {
+      "qac_verb_form": [
+       "V"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "review a set to detect what is absent from it",
+     "classification_rationale": "The Form V tafaqqada at 27:20 is Solomon reviewing the birds and thereby detecting the hoopoe's absence.",
+     "supporting_evidence_note": "27:20 reviewed together with its continuation naming the absent hoopoe.",
+     "counterevidence": []
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "fqd",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "The absence-registration nucleus is distinct from neighbouring notions (concealment/unseen, going astray, generic searching) and survives its strongest counterexample at 27:20; all three occurrences support it with none failing."
+ },
+ "coverage_validation": {
+  "root": "fqd",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "12:71:5:1",
+   "disposition": "CONSISTENT",
+   "note": "The base verbs at 12:71-72 concern the missing measuring-cup: the men are asked what they miss and answer that they miss the king's cup.",
+   "coverage_cluster_id": "base_absence_perception",
+   "candidate_semantic_interpretation": "notice/state that an expected item is missing",
+   "cluster_supporting_evidence": "Both base-verb contexts in the Yusuf narrative were reviewed against the verse text.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The base verbs at 12:71-72 concern the missing measuring-cup: the men are asked what they miss and answer that they miss the king's cup.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "12:71",
+     "verse_text": "قَالُوا۟ وَأَقْبَلُوا۟ عَلَيْهِم مَّاذَا تَفْقِدُونَ"
+    }
+   ],
+   "root_arabic": "ف ق د",
+   "root_buckwalter": "fqd",
+   "root_id": "fqd",
+   "artifact_name": "fqd.json",
+   "verse_ref": "12:71",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tafoqidu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالُوا۟ وَأَقْبَلُوا۟ عَلَيْهِم مَّاذَا تَفْقِدُونَ"
+  },
+  {
+   "word_ref": "12:72:2:1",
+   "disposition": "CONSISTENT",
+   "note": "The base verbs at 12:71-72 concern the missing measuring-cup: the men are asked what they miss and answer that they miss the king's cup.",
+   "coverage_cluster_id": "base_absence_perception",
+   "candidate_semantic_interpretation": "notice/state that an expected item is missing",
+   "cluster_supporting_evidence": "Both base-verb contexts in the Yusuf narrative were reviewed against the verse text.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The base verbs at 12:71-72 concern the missing measuring-cup: the men are asked what they miss and answer that they miss the king's cup.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "12:72",
+     "verse_text": "قَالُوا۟ نَفْقِدُ صُوَاعَ ٱلْمَلِكِ وَلِمَن جَآءَ بِهِۦ حِمْلُ بَعِيرٍ وَأَنَا۠ بِهِۦ زَعِيمٌ"
+    }
+   ],
+   "root_arabic": "ف ق د",
+   "root_buckwalter": "fqd",
+   "root_id": "fqd",
+   "artifact_name": "fqd.json",
+   "verse_ref": "12:72",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "nafoqidu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالُوا۟ نَفْقِدُ صُوَاعَ ٱلْمَلِكِ وَلِمَن جَآءَ بِهِۦ حِمْلُ بَعِيرٍ وَأَنَا۠ بِهِۦ زَعِيمٌ"
+  },
+  {
+   "word_ref": "27:20:1:2",
+   "disposition": "CONSISTENT",
+   "note": "The Form V tafaqqada at 27:20 is Solomon reviewing the birds and thereby detecting the hoopoe's absence. | 27:20 tafaqqada al-tayr ('he reviewed the birds') could be read as neutral inspection, but the following clause 'why do I not see the hoopoe; was it among the absent' shows the review is oriented to detecting an absent member, preserving the absence nucleus.",
+   "coverage_cluster_id": "form_v_review_for_absence",
+   "candidate_semantic_interpretation": "review a set to detect what is absent from it",
+   "cluster_supporting_evidence": "27:20 reviewed together with its continuation naming the absent hoopoe.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The Form V tafaqqada at 27:20 is Solomon reviewing the birds and thereby detecting the hoopoe's absence.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "27:20",
+     "verse_text": "وَتَفَقَّدَ ٱلطَّيْرَ فَقَالَ مَا لِىَ لَآ أَرَى ٱلْهُدْهُدَ أَمْ كَانَ مِنَ ٱلْغَآئِبِينَ"
+    }
+   ],
+   "root_arabic": "ف ق د",
+   "root_buckwalter": "fqd",
+   "root_id": "fqd",
+   "artifact_name": "fqd.json",
+   "verse_ref": "27:20",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tafaq~ada",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "V",
+   "morphology": "V(V)",
+   "form": "V(V)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَتَفَقَّدَ ٱلطَّيْرَ فَقَالَ مَا لِىَ لَآ أَرَى ٱلْهُدْهُدَ أَمْ كَانَ مِنَ ٱلْغَآئِبِينَ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "PASSED",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": true,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "registering the absence of something expected to be present; in Form V, actively reviewing a set to detect what is absent from it",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "UNIVERSAL",
+ "claim_scope_kind": "ROOT_GENERALIZATION",
+ "layer_attribution": {
+  "occurrence_evidence": "fqd: 3 positive word_refs resolve in occurrence_dispositions; no counterevidence refs.",
+  "derivation": "fqd: QAC clusters base_absence_perception (base V) and form_v_review_for_absence (Form V tafaqqada).",
+  "lexical_class": "fqd: current claim scope kind is ROOT_GENERALIZATION over base and Form V verbal forms; no lexicalized noun class exists in the corpus.",
+  "contextual_relation": "The Yusuf missing-cup scene and the Solomon bird-review scene supply the referents; the absence itself, not the narrative, is the root contribution.",
+  "reconciliation": "fqd: no reconciliation was required; no occurrence was contested.",
+  "unresolved_resistance": "fqd: no final resistant occurrence; all three cohere under absence-registration."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "27:20:1:2",
+   "role": "STRUCTURAL_ATYPICALITY",
+   "reason": "fqd: 27:20:1:2 is the sole Form V (tafaqqada) and tests whether the added 'review/inspection' morphology still carries the absence nucleus rather than lexicalizing into neutral inspection.",
+   "evidence_basis": {
+    "kind": "PERSISTED_STRONGEST_COUNTEREXAMPLE",
+    "statement": "27:20 tafaqqada al-tayr ('he reviewed the birds') could be read as neutral inspection, but the following clause 'why do I not see the hoopoe; was it among the absent' shows the review is oriented to detecting an absent member, preserving the absence nucleus."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "The Form V review at 27:20 is the evidence-derived derivational boundary that pressure-tests the absence nucleus."
+ },
+ "rejection_condition": {
+  "challenging_finding": "fqd: reject the current universal absence-registration nucleus if a base or Form V occurrence denotes losing, hiding, seeking, or inspecting without any registration that an expected, previously-present item or member is now missing.",
+  "search_location": "Batch 07 fqd: all 3 occurrence_dispositions across clusters base_absence_perception and form_v_review_for_absence.",
+  "verification_method": "Test the absence-registration reading against every supporting_evidence_refs entry and re-examine the 27:20 Form V continuation for an absent referent.",
+  "confounder_control": "Do not import a generic 'search' or 'inspect' sense from morphology; the Form V review must be shown to detect an absentee, not merely to examine.",
+  "failure_consequence": "fqd: narrow the claim to the base-verb absence class and record the Form V as a lexicalized inspection seam rather than asserting a root-wide absence nucleus."
+ },
+ "falsification_status": "PASSED",
+ "reopen_conditions": [
+  "fqd: reopen when 27:20:1:2 is shown by Quran-internal structure to be neutral inspection with no detected absentee, breaking the base/Form V unity.",
+  "fqd: reopen when canonical morphology reassigns the base-versus-Form-V split among the three fqd occurrences."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "12:71:5:1",
+  "12:72:2:1",
+  "27:20:1:2"
+ ],
+ "counterevidence_refs": [],
+ "falsification_evidence": {
+  "attempt_id": "BATCH07_ADVERSARIAL_VERIFICATION:fqd",
+  "verdict": "SUPPORTED",
+  "falsifiable": true,
+  "distinctiveness_ok": true,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "base_absence_perception",
+   "form_v_review_for_absence"
+  ],
+  "status_rationale": "The absence-registration nucleus is distinct from neighbouring notions (concealment/unseen, going astray, generic searching) and survives its strongest counterexample at 27:20; all three occurrences support it with none failing."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fqd: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fqd: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fqd: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fqd: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fqd: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fqd: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fqd: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fqd: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

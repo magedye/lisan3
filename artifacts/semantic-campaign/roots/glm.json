@@ -1,0 +1,856 @@
+{
+ "root_arabic": "غ ل م",
+ "root_buckwalter": "glm",
+ "root_id": "glm",
+ "artifact_name": "glm.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave1",
+ "occurrences": 13,
+ "frozen_candidate_root_contribution": "glm surfaces in the Quran exclusively as one nominal lexeme (sg غُلَام, dual غُلَٰمَيْن, broken pl غِلْمَان) denoting a HUMAN MALE in the young / pre-full-maturity life-stage (a 'boy / youth'). Two features are lexically entailed across all 13 tokens: (1) male sex, and (2) youth bounded above by أَشُدّ (maturity). All richer readings — son/offspring, servant, ward/orphan, merchandise, eschatological servitor, and every moral quality — are supplied by the syntactic frame or context, NOT by the root itself.",
+ "internal_discovery": {
+  "candidate_root_contribution": "glm surfaces in the Quran exclusively as one nominal lexeme (sg غُلَام, dual غُلَٰمَيْن, broken pl غِلْمَان) denoting a HUMAN MALE in the young / pre-full-maturity life-stage (a 'boy / youth'). Two features are lexically entailed across all 13 tokens: (1) male sex, and (2) youth bounded above by أَشُدّ (maturity). All richer readings — son/offspring, servant, ward/orphan, merchandise, eschatological servitor, and every moral quality — are supplied by the syntactic frame or context, NOT by the root itself.",
+  "plain_explanation": "Every one of the 13 occurrences names a young male person. When the word means 'son' (the 8 annunciation tokens to Abraham, Zechariah, Mary), the sonship is carried entirely by the surrounding frame — نُبَشِّرُكَ بِ (announce to you), أَهَبَ لَكِ (grant to you), يَكُونُ لِى (be mine) — and the reproductive objections (barren wife 19:8, virgin 19:20, old age 3:40) presuppose a male child produced by generation. Strip the frame and only 'young male' remains: unrelated finders simply say هَٰذَا غُلَٰمٌ of Joseph (12:19); Khidr kills an unrelated boy (18:74); the two غلامان are orphans not yet reached أَشُدّ (18:82); the غِلْمَان serve Paradise's dwellers 'belonging to them' (52:24). The single positive age-anchor is 18:82 (يَبْلُغَآ أَشُدَّهُمَا = they had not yet reached maturity), which fixes غلام as the stage BEFORE maturity. That the same noun takes different external adjectives — عَلِيم, حَلِيم, زَكِيّ, plus the name يَحْيَى — proves those qualities are predicated onto a neutral base noun, not part of it.",
+  "layer_separation_note": "NOT kinship/sonship (52:24 servitors belong to the dwellers, not their sons; 12:19 Joseph is not the finders' son; 18:74 an unrelated roadside boy). NOT servant/slave/merchandise (that loading comes from يَطُوف عَلَيْهِم and بِضَاعَة; against it stand the property-owning orphans of 18:82 and the prophet-sons of the annunciation cluster). NOT female (13/13 male). NOT an adult man — bounded above by أَشُدّ (18:82) and contrasted with بَشَر, the mature generative male, in 19:20. NOT morally valenced (ranges over زَكِيّ/عَلِيم/حَلِيم children and the boy killed to forestall طُغْيَان/كُفْر in 18:74/18:80). NO verbal/eventive sense is recoverable: the root is purely nominal, so no 'core action' claim is licensed. Number (sg/dual/pl) is grammatical, not sense-forming.",
+  "presence": {
+   "occurrences_total": 13,
+   "occurrences_checked": 13,
+   "occurrences_consistent": 13,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "At 15:53:6:2 and 51:28:8:2 the ghulam is unborn and carries a mature epithet (aliim 'knowing', reinforced by haliim 'forbearing' at 37:101:2:2), so the youth/age-stage feature is bleached and proleptic here rather than directly demonstrated. It does not overturn the nucleus: the epithet is a separate adjective added precisely because ghulam alone does not supply it, the construction is a bishaarah naming the future boy, and the age feature is hard-anchored below maturity by 18:82 (lam yablughaa ashuddahumaa) with no contradicting token; the word still denotes the category 'boy/youth' even when its referent is future.",
+  "strongest_competitor": "'glm = male child / son (a descent-noun)', driven by the numerically dominant annunciation cluster (8 of 13 in the بشّر/وهب/يكون-لي frame), where the son reading is unmistakable. Rejected as primary because it violates the narrowest-account principle and fails at least three tokens: 52:24:3:1 (non-filial servitors), 18:74:5:1 (unrelated boy), 12:19:10:1 (a found commodity, no kin). The 'son' sense is a frame effect of the annunciation/granting verbs acting on the base sense 'young male'; it vanishes the moment the frame is removed (12:19 هَٰذَا غُلَٰمٌ). A single nucleus plus compositional frames covers all 13 with no residue.",
+  "competing_hypothesis": "'glm = male child / son (a descent-noun)', driven by the numerically dominant annunciation cluster (8 of 13 in the بشّر/وهب/يكون-لي frame), where the son reading is unmistakable. Rejected as primary because it violates the narrowest-account principle and fails at least three tokens: 52:24:3:1 (non-filial servitors), 18:74:5:1 (unrelated boy), 12:19:10:1 (a found commodity, no kin). The 'son' sense is a frame effect of the annunciation/granting verbs acting on the base sense 'young male'; it vanishes the moment the frame is removed (12:19 هَٰذَا غُلَٰمٌ). A single nucleus plus compositional frames covers all 13 with no residue.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "STRONG",
+  "rationale": "All three independent lenses (A, B, and adversarial C) converge on the same thin nucleus 'young human male, pre-maturity', and C — running a genuine refutation — could produce no strictly resistant occurrence, only underdetermination of the age feature in the annunciation cluster. Maleness is exceptionless (13/13) and the youth ceiling is explicitly stated (18:82 أَشُدّ), while the two rival enrichments cancel each other: 52:24 defeats any lexicalized 'son', and the unborn-plus-mature-epithet annunciation tokens resist any lexicalized age-criteriality — leaving exactly the thin, edge-bearing nucleus standing. Because the root is exclusively nominal, no verbal core is claimed. The one honestly under-determined variable is the precise UPPER age boundary (18:80 grants moral agency; 52:24 shows able serving), recorded as a bounded rider, not a defeater.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "annunciation_male_offspring",
+     "where": {
+      "word_refs": [
+       "15:53:6:2",
+       "51:28:8:2",
+       "37:101:2:2",
+       "19:7:4:2",
+       "19:19:8:1",
+       "3:40:6:1",
+       "19:8:6:1",
+       "19:20:5:1"
+      ]
+     },
+     "occurrence_count_expected": 8,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "A male child (to be) whose sonship is frame-supplied by بشّر/وهب/يكون-لي; the noun contributes 'young male', the frame contributes 'offspring of the addressee'.",
+     "classification_rationale": "In all 8 the kinship reading is carried by نُبَشِّرُكَ بِ / أَهَبَ لَكِ / يَكُونُ لِى, and the reproductive obstacles (barrenness عاقر 3:40,19:8; old age الكِبَر 3:40,19:8; virginity لم يمسسني بشر 19:20) presuppose a son produced by generation. The distinguishing adjectives (عليم, حليم, زكيّ) and the name يحيى are external predications, proving غلام is a neutral base noun.",
+     "supporting_evidence_note": "19:20:5:1 contrasts غلام (male child to be produced) with بَشَر (the mature generative male), fixing غلام as pre-adult and male within the very same clause.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "narrative_present_young_male",
+     "where": {
+      "word_refs": [
+       "12:19:10:1",
+       "18:74:5:1",
+       "18:80:2:2",
+       "18:82:4:2"
+      ]
+     },
+     "occurrence_count_expected": 4,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "An existing young male encountered in narrative, in dependent/vulnerable status, with no kinship to the interacting party.",
+     "classification_rationale": "None is the son of the relevant party: Joseph found and commodified by strangers (12:19 بِضَاعَة), an unrelated boy killed by Khidr (18:74, glossed نَفْس), the same boy with living believing parents feared for طُغْيَان/كُفْر (18:80), and two orphans not yet reached maturity (18:82). This cluster strips the annunciation frame and exposes the bare nucleus 'young male', while 18:82 supplies the decisive age ceiling أَشُدّ.",
+     "supporting_evidence_note": "18:82:4:2 (أَن يَبْلُغَآ أَشُدَّهُمَا) is the single positive Quran-internal anchor fixing غلام as the life-stage BEFORE maturity. At 18:80:2:2 the ghulam is credited with capacity for tughyan (rebellion) and kufr (disbelief), placing him at the agency-bearing adolescent edge of youth; bounded by 18:82's pre-ashudd anchor this calibrates rather than breaks the youth feature.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "eschatological_servitors",
+     "where": {
+      "word_refs": [
+       "52:24:3:1"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Young male attendants who circulate serving the dwellers of Paradise; the serving role and belonging are frame-supplied, the noun contributes 'young male'.",
+     "classification_rationale": "Sole broken plural (غِلْمَان), the vowel shift غُلَام→غِلْمَان being morphological number only. The service is predicated by يَطُوف عَلَيْهِم and belonging by لَهُم; imaged as hidden pearls (youthful freshness), confirming the youth+male nucleus with no kinship or inherent servitude in the word itself.",
+     "supporting_evidence_note": "At 52:24:3:1 the ghilman are servitors 'belonging to' (lahum) the dwellers of Paradise, not their offspring, defeating any lexicalized son/kinship reading of the root.",
+     "counterevidence": []
+    }
+   ],
+   "reconciliation": [
+    {
+     "word_ref": "15:53:6:2",
+     "final": "CONSISTENT",
+     "rationale": "The mature quality is adjective-borne, added because غلام does not supply it; the annunciation frame names the future boy (prolepsis), and 18:82's أَشُدّ ceiling keeps the lexical category 'pre-maturity male'. Underdetermination of the age feature here is not refutation."
+    },
+    {
+     "word_ref": "18:80:2:2",
+     "final": "CONSISTENT",
+     "rationale": "The adjacent 18:82 غلامان explicitly have not reached أَشُدّ; read together they calibrate the upper edge of youth (childhood through agency-bearing adolescence) rather than breaking the feature."
+    }
+   ]
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "glm",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "An adversarial pass attacked the nucleus 'young human male, pre-maturity' across all three clusters. Maleness held 13/13 (masculine agreement, son-presupposing objections, no female token). The youth feature is directly anchored by 18:82 (أَشُدّ) and contradicted by no occurrence; the two rival enrichments cancel (52:24 defeats 'son', the unborn-plus-mature-epithet tokens defeat age-criteriality), leaving the thin nucleus with zero failing occurrences. The claim is falsifiable (a female or mature-adult غلام would break it) and distinct from neighbours (kinship terms and بَشَر). The only reservation is bounded underdetermination of the precise upper age limit, which is a strength rider, not a refutation."
+ },
+ "coverage_validation": {
+  "root": "glm",
+  "expected_count": 13,
+  "researched_count": 13,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "12:19:10:1",
+   "disposition": "CONSISTENT",
+   "note": "None is the son of the relevant party: Joseph found and commodified by strangers (12:19 بِضَاعَة), an unrelated boy killed by Khidr (18:74, glossed نَفْس), the same boy with living believing parents feared for طُغْيَان/كُفْر (18:80), and two orphans not yet reached maturity (18:82). This cluster strips the annunciation frame and exposes the bare nucleus 'young male', while 18:82 supplies the decisive age ceiling أَشُدّ.",
+   "coverage_cluster_id": "narrative_present_young_male",
+   "candidate_semantic_interpretation": "An existing young male encountered in narrative, in dependent/vulnerable status, with no kinship to the interacting party.",
+   "cluster_supporting_evidence": "18:82:4:2 (أَن يَبْلُغَآ أَشُدَّهُمَا) is the single positive Quran-internal anchor fixing غلام as the life-stage BEFORE maturity. At 18:80:2:2 the ghulam is credited with capacity for tughyan (rebellion) and kufr (disbelief), placing him at the agency-bearing adolescent edge of youth; bounded by 18:82's pre-ashudd anchor this calibrates rather than breaks the youth feature.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "None is the son of the relevant party: Joseph found and commodified by strangers (12:19 بِضَاعَة), an unrelated boy killed by Khidr (18:74, glossed نَفْس), the same boy with living believing parents feared for طُغْيَان/كُفْر (18:80), and two orphans not yet reached maturity (18:82). This cluster strips the annunciation frame and exposes the bare nucleus 'young male', while 18:82 supplies the decisive age ceiling أَشُدّ.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "12:19",
+     "verse_text": "وَجَآءَتْ سَيَّارَةٌ فَأَرْسَلُوا۟ وَارِدَهُمْ فَأَدْلَىٰ دَلْوَهُۥ قَالَ يَٰبُشْرَىٰ هَٰذَا غُلَٰمٌ وَأَسَرُّوهُ بِضَٰعَةً وَٱللَّهُ عَلِيمٌۢ بِمَا يَعْمَلُونَ"
+    }
+   ],
+   "root_arabic": "غ ل م",
+   "root_buckwalter": "glm",
+   "root_id": "glm",
+   "artifact_name": "glm.json",
+   "verse_ref": "12:19",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "gula`mN",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَجَآءَتْ سَيَّارَةٌ فَأَرْسَلُوا۟ وَارِدَهُمْ فَأَدْلَىٰ دَلْوَهُۥ قَالَ يَٰبُشْرَىٰ هَٰذَا غُلَٰمٌ وَأَسَرُّوهُ بِضَٰعَةً وَٱللَّهُ عَلِيمٌۢ بِمَا يَعْمَلُونَ"
+  },
+  {
+   "word_ref": "15:53:6:2",
+   "disposition": "CONSISTENT",
+   "note": "At 15:53:6:2 and 51:28:8:2 the ghulam is unborn and carries a mature epithet (aliim 'knowing', reinforced by haliim 'forbearing' at 37:101:2:2), so the youth/age-stage feature is bleached and proleptic here rather than directly demonstrated.",
+   "coverage_cluster_id": "annunciation_male_offspring",
+   "candidate_semantic_interpretation": "A male child (to be) whose sonship is frame-supplied by بشّر/وهب/يكون-لي; the noun contributes 'young male', the frame contributes 'offspring of the addressee'.",
+   "cluster_supporting_evidence": "19:20:5:1 contrasts غلام (male child to be produced) with بَشَر (the mature generative male), fixing غلام as pre-adult and male within the very same clause.",
+   "counterevidence": [],
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "Unborn referent bearing a mature epithet عَلِيم seemed to bleach the age feature and reduce the word to 'son'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": "The mature quality is adjective-borne, added because غلام does not supply it; the annunciation frame names the future boy (prolepsis), and 18:82's أَشُدّ ceiling keeps the lexical category 'pre-maturity male'. Underdetermination of the age feature here is not refutation.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "15:53:6:2",
+     "preliminary_disposition": "RESISTANT",
+     "preliminary_note": "Unborn referent plus a mature epithet (عَلِيم) appeared to remove the youth feature, collapsing غلام to a bare 'son'.",
+     "final_disposition": "CONSISTENT",
+     "reconciliation_rationale": "The mature quality is adjective-borne, added because غلام does not supply it; the annunciation frame names the future boy (prolepsis), and 18:82's أَشُدّ ceiling keeps the lexical category 'pre-maturity male'. Underdetermination of the age feature here is not refutation.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [
+    "The epithet is a separate adjective; the frame is a bishaarah naming a future boy; the age feature is anchored below أَشُدّ by 18:82 with no contradicting token."
+   ],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "15:53",
+     "verse_text": "قَالُوا۟ لَا تَوْجَلْ إِنَّا نُبَشِّرُكَ بِغُلَٰمٍ عَلِيمٍ"
+    }
+   ],
+   "root_arabic": "غ ل م",
+   "root_buckwalter": "glm",
+   "root_id": "glm",
+   "artifact_name": "glm.json",
+   "verse_ref": "15:53",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "gula`mK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالُوا۟ لَا تَوْجَلْ إِنَّا نُبَشِّرُكَ بِغُلَٰمٍ عَلِيمٍ"
+  },
+  {
+   "word_ref": "18:74:5:1",
+   "disposition": "CONSISTENT",
+   "note": "None is the son of the relevant party: Joseph found and commodified by strangers (12:19 بِضَاعَة), an unrelated boy killed by Khidr (18:74, glossed نَفْس), the same boy with living believing parents feared for طُغْيَان/كُفْر (18:80), and two orphans not yet reached maturity (18:82). This cluster strips the annunciation frame and exposes the bare nucleus 'young male', while 18:82 supplies the decisive age ceiling أَشُدّ.",
+   "coverage_cluster_id": "narrative_present_young_male",
+   "candidate_semantic_interpretation": "An existing young male encountered in narrative, in dependent/vulnerable status, with no kinship to the interacting party.",
+   "cluster_supporting_evidence": "18:82:4:2 (أَن يَبْلُغَآ أَشُدَّهُمَا) is the single positive Quran-internal anchor fixing غلام as the life-stage BEFORE maturity. At 18:80:2:2 the ghulam is credited with capacity for tughyan (rebellion) and kufr (disbelief), placing him at the agency-bearing adolescent edge of youth; bounded by 18:82's pre-ashudd anchor this calibrates rather than breaks the youth feature.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "None is the son of the relevant party: Joseph found and commodified by strangers (12:19 بِضَاعَة), an unrelated boy killed by Khidr (18:74, glossed نَفْس), the same boy with living believing parents feared for طُغْيَان/كُفْر (18:80), and two orphans not yet reached maturity (18:82). This cluster strips the annunciation frame and exposes the bare nucleus 'young male', while 18:82 supplies the decisive age ceiling أَشُدّ.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "18:74",
+     "verse_text": "فَٱنطَلَقَا حَتَّىٰٓ إِذَا لَقِيَا غُلَٰمًا فَقَتَلَهُۥ قَالَ أَقَتَلْتَ نَفْسًا زَكِيَّةًۢ بِغَيْرِ نَفْسٍ لَّقَدْ جِئْتَ شَيْـًٔا نُّكْرًا"
+    }
+   ],
+   "root_arabic": "غ ل م",
+   "root_buckwalter": "glm",
+   "root_id": "glm",
+   "artifact_name": "glm.json",
+   "verse_ref": "18:74",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "gula`mFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَٱنطَلَقَا حَتَّىٰٓ إِذَا لَقِيَا غُلَٰمًا فَقَتَلَهُۥ قَالَ أَقَتَلْتَ نَفْسًا زَكِيَّةًۢ بِغَيْرِ نَفْسٍ لَّقَدْ جِئْتَ شَيْـًٔا نُّكْرًا"
+  },
+  {
+   "word_ref": "18:80:2:2",
+   "disposition": "CONSISTENT",
+   "note": "At 18:80:2:2 the ghulam is credited with capacity for tughyan (rebellion) and kufr (disbelief), placing him at the agency-bearing adolescent edge of youth; bounded by 18:82's pre-ashudd anchor this calibrates rather than breaks the youth feature.",
+   "coverage_cluster_id": "narrative_present_young_male",
+   "candidate_semantic_interpretation": "An existing young male encountered in narrative, in dependent/vulnerable status, with no kinship to the interacting party.",
+   "cluster_supporting_evidence": "18:82:4:2 (أَن يَبْلُغَآ أَشُدَّهُمَا) is the single positive Quran-internal anchor fixing غلام as the life-stage BEFORE maturity. At 18:80:2:2 the ghulam is credited with capacity for tughyan (rebellion) and kufr (disbelief), placing him at the agency-bearing adolescent edge of youth; bounded by 18:82's pre-ashudd anchor this calibrates rather than breaks the youth feature.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "None is the son of the relevant party: Joseph found and commodified by strangers (12:19 بِضَاعَة), an unrelated boy killed by Khidr (18:74, glossed نَفْس), the same boy with living believing parents feared for طُغْيَان/كُفْر (18:80), and two orphans not yet reached maturity (18:82). This cluster strips the annunciation frame and exposes the bare nucleus 'young male', while 18:82 supplies the decisive age ceiling أَشُدّ.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": "The adjacent 18:82 غلامان explicitly have not reached أَشُدّ; read together they calibrate the upper edge of youth (childhood through agency-bearing adolescence) rather than breaking the feature.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "18:80:2:2",
+     "preliminary_disposition": "RESISTANT",
+     "preliminary_note": "Attributing طُغْيَان and كُفْر to a 'youth' strained the immaturity component toward near-adulthood.",
+     "final_disposition": "CONSISTENT",
+     "reconciliation_rationale": "The adjacent 18:82 غلامان explicitly have not reached أَشُدّ; read together they calibrate the upper edge of youth (childhood through agency-bearing adolescence) rather than breaking the feature.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "18:80",
+     "verse_text": "وَأَمَّا ٱلْغُلَٰمُ فَكَانَ أَبَوَاهُ مُؤْمِنَيْنِ فَخَشِينَآ أَن يُرْهِقَهُمَا طُغْيَٰنًا وَكُفْرًا"
+    }
+   ],
+   "root_arabic": "غ ل م",
+   "root_buckwalter": "glm",
+   "root_id": "glm",
+   "artifact_name": "glm.json",
+   "verse_ref": "18:80",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "gula`mu",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَأَمَّا ٱلْغُلَٰمُ فَكَانَ أَبَوَاهُ مُؤْمِنَيْنِ فَخَشِينَآ أَن يُرْهِقَهُمَا طُغْيَٰنًا وَكُفْرًا"
+  },
+  {
+   "word_ref": "18:82:4:2",
+   "disposition": "CONSISTENT",
+   "note": "None is the son of the relevant party: Joseph found and commodified by strangers (12:19 بِضَاعَة), an unrelated boy killed by Khidr (18:74, glossed نَفْس), the same boy with living believing parents feared for طُغْيَان/كُفْر (18:80), and two orphans not yet reached maturity (18:82). This cluster strips the annunciation frame and exposes the bare nucleus 'young male', while 18:82 supplies the decisive age ceiling أَشُدّ.",
+   "coverage_cluster_id": "narrative_present_young_male",
+   "candidate_semantic_interpretation": "An existing young male encountered in narrative, in dependent/vulnerable status, with no kinship to the interacting party.",
+   "cluster_supporting_evidence": "18:82:4:2 (أَن يَبْلُغَآ أَشُدَّهُمَا) is the single positive Quran-internal anchor fixing غلام as the life-stage BEFORE maturity. At 18:80:2:2 the ghulam is credited with capacity for tughyan (rebellion) and kufr (disbelief), placing him at the agency-bearing adolescent edge of youth; bounded by 18:82's pre-ashudd anchor this calibrates rather than breaks the youth feature.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "None is the son of the relevant party: Joseph found and commodified by strangers (12:19 بِضَاعَة), an unrelated boy killed by Khidr (18:74, glossed نَفْس), the same boy with living believing parents feared for طُغْيَان/كُفْر (18:80), and two orphans not yet reached maturity (18:82). This cluster strips the annunciation frame and exposes the bare nucleus 'young male', while 18:82 supplies the decisive age ceiling أَشُدّ.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "18:82",
+     "verse_text": "وَأَمَّا ٱلْجِدَارُ فَكَانَ لِغُلَٰمَيْنِ يَتِيمَيْنِ فِى ٱلْمَدِينَةِ وَكَانَ تَحْتَهُۥ كَنزٌ لَّهُمَا وَكَانَ أَبُوهُمَا صَٰلِحًا فَأَرَادَ رَبُّكَ أَن يَبْلُغَآ أَشُدَّهُمَا وَيَسْتَخْرِجَا كَنزَهُمَا رَحْمَةً مِّن رَّبِّكَ وَمَا فَعَلْتُهُۥ عَنْ أَمْرِى ذَٰلِكَ تَأْوِيلُ مَا لَمْ تَسْطِع عَّلَيْهِ صَبْرًا"
+    }
+   ],
+   "root_arabic": "غ ل م",
+   "root_buckwalter": "glm",
+   "root_id": "glm",
+   "artifact_name": "glm.json",
+   "verse_ref": "18:82",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "gula`mayoni",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَأَمَّا ٱلْجِدَارُ فَكَانَ لِغُلَٰمَيْنِ يَتِيمَيْنِ فِى ٱلْمَدِينَةِ وَكَانَ تَحْتَهُۥ كَنزٌ لَّهُمَا وَكَانَ أَبُوهُمَا صَٰلِحًا فَأَرَادَ رَبُّكَ أَن يَبْلُغَآ أَشُدَّهُمَا وَيَسْتَخْرِجَا كَنزَهُمَا رَحْمَةً مِّن رَّبِّكَ وَمَا فَعَلْتُهُۥ عَنْ أَمْرِى ذَٰلِكَ تَأْوِيلُ مَا لَمْ تَسْطِع عَّلَيْهِ صَبْرًا"
+  },
+  {
+   "word_ref": "19:19:8:1",
+   "disposition": "CONSISTENT",
+   "note": "In all 8 the kinship reading is carried by نُبَشِّرُكَ بِ / أَهَبَ لَكِ / يَكُونُ لِى, and the reproductive obstacles (barrenness عاقر 3:40,19:8; old age الكِبَر 3:40,19:8; virginity لم يمسسني بشر 19:20) presuppose a son produced by generation. The distinguishing adjectives (عليم, حليم, زكيّ) and the name يحيى are external predications, proving غلام is a neutral base noun.",
+   "coverage_cluster_id": "annunciation_male_offspring",
+   "candidate_semantic_interpretation": "A male child (to be) whose sonship is frame-supplied by بشّر/وهب/يكون-لي; the noun contributes 'young male', the frame contributes 'offspring of the addressee'.",
+   "cluster_supporting_evidence": "19:20:5:1 contrasts غلام (male child to be produced) with بَشَر (the mature generative male), fixing غلام as pre-adult and male within the very same clause.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "In all 8 the kinship reading is carried by نُبَشِّرُكَ بِ / أَهَبَ لَكِ / يَكُونُ لِى, and the reproductive obstacles (barrenness عاقر 3:40,19:8; old age الكِبَر 3:40,19:8; virginity لم يمسسني بشر 19:20) presuppose a son produced by generation. The distinguishing adjectives (عليم, حليم, زكيّ) and the name يحيى are external predications, proving غلام is a neutral base noun.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "19:19",
+     "verse_text": "قَالَ إِنَّمَآ أَنَا۠ رَسُولُ رَبِّكِ لِأَهَبَ لَكِ غُلَٰمًا زَكِيًّا"
+    }
+   ],
+   "root_arabic": "غ ل م",
+   "root_buckwalter": "glm",
+   "root_id": "glm",
+   "artifact_name": "glm.json",
+   "verse_ref": "19:19",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "gula`mFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالَ إِنَّمَآ أَنَا۠ رَسُولُ رَبِّكِ لِأَهَبَ لَكِ غُلَٰمًا زَكِيًّا"
+  },
+  {
+   "word_ref": "19:20:5:1",
+   "disposition": "CONSISTENT",
+   "note": "In all 8 the kinship reading is carried by نُبَشِّرُكَ بِ / أَهَبَ لَكِ / يَكُونُ لِى, and the reproductive obstacles (barrenness عاقر 3:40,19:8; old age الكِبَر 3:40,19:8; virginity لم يمسسني بشر 19:20) presuppose a son produced by generation. The distinguishing adjectives (عليم, حليم, زكيّ) and the name يحيى are external predications, proving غلام is a neutral base noun.",
+   "coverage_cluster_id": "annunciation_male_offspring",
+   "candidate_semantic_interpretation": "A male child (to be) whose sonship is frame-supplied by بشّر/وهب/يكون-لي; the noun contributes 'young male', the frame contributes 'offspring of the addressee'.",
+   "cluster_supporting_evidence": "19:20:5:1 contrasts غلام (male child to be produced) with بَشَر (the mature generative male), fixing غلام as pre-adult and male within the very same clause.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "In all 8 the kinship reading is carried by نُبَشِّرُكَ بِ / أَهَبَ لَكِ / يَكُونُ لِى, and the reproductive obstacles (barrenness عاقر 3:40,19:8; old age الكِبَر 3:40,19:8; virginity لم يمسسني بشر 19:20) presuppose a son produced by generation. The distinguishing adjectives (عليم, حليم, زكيّ) and the name يحيى are external predications, proving غلام is a neutral base noun.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "19:20",
+     "verse_text": "قَالَتْ أَنَّىٰ يَكُونُ لِى غُلَٰمٌ وَلَمْ يَمْسَسْنِى بَشَرٌ وَلَمْ أَكُ بَغِيًّا"
+    }
+   ],
+   "root_arabic": "غ ل م",
+   "root_buckwalter": "glm",
+   "root_id": "glm",
+   "artifact_name": "glm.json",
+   "verse_ref": "19:20",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "gula`mN",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالَتْ أَنَّىٰ يَكُونُ لِى غُلَٰمٌ وَلَمْ يَمْسَسْنِى بَشَرٌ وَلَمْ أَكُ بَغِيًّا"
+  },
+  {
+   "word_ref": "19:7:4:2",
+   "disposition": "CONSISTENT",
+   "note": "In all 8 the kinship reading is carried by نُبَشِّرُكَ بِ / أَهَبَ لَكِ / يَكُونُ لِى, and the reproductive obstacles (barrenness عاقر 3:40,19:8; old age الكِبَر 3:40,19:8; virginity لم يمسسني بشر 19:20) presuppose a son produced by generation. The distinguishing adjectives (عليم, حليم, زكيّ) and the name يحيى are external predications, proving غلام is a neutral base noun.",
+   "coverage_cluster_id": "annunciation_male_offspring",
+   "candidate_semantic_interpretation": "A male child (to be) whose sonship is frame-supplied by بشّر/وهب/يكون-لي; the noun contributes 'young male', the frame contributes 'offspring of the addressee'.",
+   "cluster_supporting_evidence": "19:20:5:1 contrasts غلام (male child to be produced) with بَشَر (the mature generative male), fixing غلام as pre-adult and male within the very same clause.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "In all 8 the kinship reading is carried by نُبَشِّرُكَ بِ / أَهَبَ لَكِ / يَكُونُ لِى, and the reproductive obstacles (barrenness عاقر 3:40,19:8; old age الكِبَر 3:40,19:8; virginity لم يمسسني بشر 19:20) presuppose a son produced by generation. The distinguishing adjectives (عليم, حليم, زكيّ) and the name يحيى are external predications, proving غلام is a neutral base noun.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "19:7",
+     "verse_text": "يَٰزَكَرِيَّآ إِنَّا نُبَشِّرُكَ بِغُلَٰمٍ ٱسْمُهُۥ يَحْيَىٰ لَمْ نَجْعَل لَّهُۥ مِن قَبْلُ سَمِيًّا"
+    }
+   ],
+   "root_arabic": "غ ل م",
+   "root_buckwalter": "glm",
+   "root_id": "glm",
+   "artifact_name": "glm.json",
+   "verse_ref": "19:7",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "gula`mK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰزَكَرِيَّآ إِنَّا نُبَشِّرُكَ بِغُلَٰمٍ ٱسْمُهُۥ يَحْيَىٰ لَمْ نَجْعَل لَّهُۥ مِن قَبْلُ سَمِيًّا"
+  },
+  {
+   "word_ref": "19:8:6:1",
+   "disposition": "CONSISTENT",
+   "note": "In all 8 the kinship reading is carried by نُبَشِّرُكَ بِ / أَهَبَ لَكِ / يَكُونُ لِى, and the reproductive obstacles (barrenness عاقر 3:40,19:8; old age الكِبَر 3:40,19:8; virginity لم يمسسني بشر 19:20) presuppose a son produced by generation. The distinguishing adjectives (عليم, حليم, زكيّ) and the name يحيى are external predications, proving غلام is a neutral base noun.",
+   "coverage_cluster_id": "annunciation_male_offspring",
+   "candidate_semantic_interpretation": "A male child (to be) whose sonship is frame-supplied by بشّر/وهب/يكون-لي; the noun contributes 'young male', the frame contributes 'offspring of the addressee'.",
+   "cluster_supporting_evidence": "19:20:5:1 contrasts غلام (male child to be produced) with بَشَر (the mature generative male), fixing غلام as pre-adult and male within the very same clause.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "In all 8 the kinship reading is carried by نُبَشِّرُكَ بِ / أَهَبَ لَكِ / يَكُونُ لِى, and the reproductive obstacles (barrenness عاقر 3:40,19:8; old age الكِبَر 3:40,19:8; virginity لم يمسسني بشر 19:20) presuppose a son produced by generation. The distinguishing adjectives (عليم, حليم, زكيّ) and the name يحيى are external predications, proving غلام is a neutral base noun.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "19:8",
+     "verse_text": "قَالَ رَبِّ أَنَّىٰ يَكُونُ لِى غُلَٰمٌ وَكَانَتِ ٱمْرَأَتِى عَاقِرًا وَقَدْ بَلَغْتُ مِنَ ٱلْكِبَرِ عِتِيًّا"
+    }
+   ],
+   "root_arabic": "غ ل م",
+   "root_buckwalter": "glm",
+   "root_id": "glm",
+   "artifact_name": "glm.json",
+   "verse_ref": "19:8",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "gula`mN",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالَ رَبِّ أَنَّىٰ يَكُونُ لِى غُلَٰمٌ وَكَانَتِ ٱمْرَأَتِى عَاقِرًا وَقَدْ بَلَغْتُ مِنَ ٱلْكِبَرِ عِتِيًّا"
+  },
+  {
+   "word_ref": "37:101:2:2",
+   "disposition": "CONSISTENT",
+   "note": "In all 8 the kinship reading is carried by نُبَشِّرُكَ بِ / أَهَبَ لَكِ / يَكُونُ لِى, and the reproductive obstacles (barrenness عاقر 3:40,19:8; old age الكِبَر 3:40,19:8; virginity لم يمسسني بشر 19:20) presuppose a son produced by generation. The distinguishing adjectives (عليم, حليم, زكيّ) and the name يحيى are external predications, proving غلام is a neutral base noun.",
+   "coverage_cluster_id": "annunciation_male_offspring",
+   "candidate_semantic_interpretation": "A male child (to be) whose sonship is frame-supplied by بشّر/وهب/يكون-لي; the noun contributes 'young male', the frame contributes 'offspring of the addressee'.",
+   "cluster_supporting_evidence": "19:20:5:1 contrasts غلام (male child to be produced) with بَشَر (the mature generative male), fixing غلام as pre-adult and male within the very same clause.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "In all 8 the kinship reading is carried by نُبَشِّرُكَ بِ / أَهَبَ لَكِ / يَكُونُ لِى, and the reproductive obstacles (barrenness عاقر 3:40,19:8; old age الكِبَر 3:40,19:8; virginity لم يمسسني بشر 19:20) presuppose a son produced by generation. The distinguishing adjectives (عليم, حليم, زكيّ) and the name يحيى are external predications, proving غلام is a neutral base noun.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "37:101",
+     "verse_text": "فَبَشَّرْنَٰهُ بِغُلَٰمٍ حَلِيمٍ"
+    }
+   ],
+   "root_arabic": "غ ل م",
+   "root_buckwalter": "glm",
+   "root_id": "glm",
+   "artifact_name": "glm.json",
+   "verse_ref": "37:101",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "gula`mK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبَشَّرْنَٰهُ بِغُلَٰمٍ حَلِيمٍ"
+  },
+  {
+   "word_ref": "3:40:6:1",
+   "disposition": "CONSISTENT",
+   "note": "In all 8 the kinship reading is carried by نُبَشِّرُكَ بِ / أَهَبَ لَكِ / يَكُونُ لِى, and the reproductive obstacles (barrenness عاقر 3:40,19:8; old age الكِبَر 3:40,19:8; virginity لم يمسسني بشر 19:20) presuppose a son produced by generation. The distinguishing adjectives (عليم, حليم, زكيّ) and the name يحيى are external predications, proving غلام is a neutral base noun.",
+   "coverage_cluster_id": "annunciation_male_offspring",
+   "candidate_semantic_interpretation": "A male child (to be) whose sonship is frame-supplied by بشّر/وهب/يكون-لي; the noun contributes 'young male', the frame contributes 'offspring of the addressee'.",
+   "cluster_supporting_evidence": "19:20:5:1 contrasts غلام (male child to be produced) with بَشَر (the mature generative male), fixing غلام as pre-adult and male within the very same clause.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "In all 8 the kinship reading is carried by نُبَشِّرُكَ بِ / أَهَبَ لَكِ / يَكُونُ لِى, and the reproductive obstacles (barrenness عاقر 3:40,19:8; old age الكِبَر 3:40,19:8; virginity لم يمسسني بشر 19:20) presuppose a son produced by generation. The distinguishing adjectives (عليم, حليم, زكيّ) and the name يحيى are external predications, proving غلام is a neutral base noun.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:40",
+     "verse_text": "قَالَ رَبِّ أَنَّىٰ يَكُونُ لِى غُلَٰمٌ وَقَدْ بَلَغَنِىَ ٱلْكِبَرُ وَٱمْرَأَتِى عَاقِرٌ قَالَ كَذَٰلِكَ ٱللَّهُ يَفْعَلُ مَا يَشَآءُ"
+    }
+   ],
+   "root_arabic": "غ ل م",
+   "root_buckwalter": "glm",
+   "root_id": "glm",
+   "artifact_name": "glm.json",
+   "verse_ref": "3:40",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "gula`mN",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالَ رَبِّ أَنَّىٰ يَكُونُ لِى غُلَٰمٌ وَقَدْ بَلَغَنِىَ ٱلْكِبَرُ وَٱمْرَأَتِى عَاقِرٌ قَالَ كَذَٰلِكَ ٱللَّهُ يَفْعَلُ مَا يَشَآءُ"
+  },
+  {
+   "word_ref": "51:28:8:2",
+   "disposition": "CONSISTENT",
+   "note": "In all 8 the kinship reading is carried by نُبَشِّرُكَ بِ / أَهَبَ لَكِ / يَكُونُ لِى, and the reproductive obstacles (barrenness عاقر 3:40,19:8; old age الكِبَر 3:40,19:8; virginity لم يمسسني بشر 19:20) presuppose a son produced by generation. The distinguishing adjectives (عليم, حليم, زكيّ) and the name يحيى are external predications, proving غلام is a neutral base noun.",
+   "coverage_cluster_id": "annunciation_male_offspring",
+   "candidate_semantic_interpretation": "A male child (to be) whose sonship is frame-supplied by بشّر/وهب/يكون-لي; the noun contributes 'young male', the frame contributes 'offspring of the addressee'.",
+   "cluster_supporting_evidence": "19:20:5:1 contrasts غلام (male child to be produced) with بَشَر (the mature generative male), fixing غلام as pre-adult and male within the very same clause.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "In all 8 the kinship reading is carried by نُبَشِّرُكَ بِ / أَهَبَ لَكِ / يَكُونُ لِى, and the reproductive obstacles (barrenness عاقر 3:40,19:8; old age الكِبَر 3:40,19:8; virginity لم يمسسني بشر 19:20) presuppose a son produced by generation. The distinguishing adjectives (عليم, حليم, زكيّ) and the name يحيى are external predications, proving غلام is a neutral base noun.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "51:28",
+     "verse_text": "فَأَوْجَسَ مِنْهُمْ خِيفَةً قَالُوا۟ لَا تَخَفْ وَبَشَّرُوهُ بِغُلَٰمٍ عَلِيمٍ"
+    }
+   ],
+   "root_arabic": "غ ل م",
+   "root_buckwalter": "glm",
+   "root_id": "glm",
+   "artifact_name": "glm.json",
+   "verse_ref": "51:28",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "gula`mK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَأَوْجَسَ مِنْهُمْ خِيفَةً قَالُوا۟ لَا تَخَفْ وَبَشَّرُوهُ بِغُلَٰمٍ عَلِيمٍ"
+  },
+  {
+   "word_ref": "52:24:3:1",
+   "disposition": "CONSISTENT",
+   "note": "At 52:24:3:1 the ghilman are servitors 'belonging to' (lahum) the dwellers of Paradise, not their offspring, defeating any lexicalized son/kinship reading of the root.",
+   "coverage_cluster_id": "eschatological_servitors",
+   "candidate_semantic_interpretation": "Young male attendants who circulate serving the dwellers of Paradise; the serving role and belonging are frame-supplied, the noun contributes 'young male'.",
+   "cluster_supporting_evidence": "At 52:24:3:1 the ghilman are servitors 'belonging to' (lahum) the dwellers of Paradise, not their offspring, defeating any lexicalized son/kinship reading of the root.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Sole broken plural (غِلْمَان), the vowel shift غُلَام→غِلْمَان being morphological number only. The service is predicated by يَطُوف عَلَيْهِم and belonging by لَهُم; imaged as hidden pearls (youthful freshness), confirming the youth+male nucleus with no kinship or inherent servitude in the word itself.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "52:24",
+     "verse_text": "وَيَطُوفُ عَلَيْهِمْ غِلْمَانٌ لَّهُمْ كَأَنَّهُمْ لُؤْلُؤٌ مَّكْنُونٌ"
+    }
+   ],
+   "root_arabic": "غ ل م",
+   "root_buckwalter": "glm",
+   "root_id": "glm",
+   "artifact_name": "glm.json",
+   "verse_ref": "52:24",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "gilomaAnN",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَيَطُوفُ عَلَيْهِمْ غِلْمَانٌ لَّهُمْ كَأَنَّهُمْ لُؤْلُؤٌ مَّكْنُونٌ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "STRONG",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Three independent lenses (A build, B build, C adversarial) each arrived at the identical thin nucleus; the adversarial lens explicitly reported that despite deliberate effort it could produce no strictly resistant occurrence.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "glm surfaces in the Quran exclusively as one nominal lexeme (sg غُلَام, dual غُلَٰمَيْن, broken pl غِلْمَان) denoting a HUMAN MALE in the young / pre-full-maturity life-stage (a 'boy / youth'). Two features are lexically entailed across all 13 tokens: (1) male sex, and (2) youth bounded above by أَشُدّ (maturity). All richer readings — son/offspring, servant, ward/orphan, merchandise, eschatological servitor, and every moral quality — are supplied by the syntactic frame or context, NOT by the root itself.",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "LEXICALIZED_CLASS",
+ "layer_attribution": {
+  "occurrence_evidence": "13/13 tokens read; all qac_pos=N, qac_verb_form=null; referents male throughout; age ceiling stated at 18:82 (أَشُدّ); non-kin young males at 12:19, 18:74, 52:24; بَشَر contrast at 19:20.",
+  "derivation": "One lexeme in one nominal family: sg غُلَام (nom gula`mN, gen gula`mK, acc gula`mFA, def gula`mu), dual غُلَٰمَيْن (gula`mayoni), broken pl غِلْمَان (gilomaAnN); the u→i shift is broken-plural morphology, not a semantic split; no verb/participle/masdar exists.",
+  "lexical_class": "A single lexicalized common noun denoting a young human male (pre-maturity); grammatical number is not sense-forming, so the root cannot exhibit multiple unbridged derivational classes.",
+  "contextual_relation": "'Son/offspring' (يكون لي/أهب لك/بشّر بـ), 'servant/merchandise' (يطوف عليهم/بضاعة), 'ward/orphan' (يتيمين), and character (عليم/حليم/زكيّ) are all frame- or context-supplied predications layered onto the base noun, and are held OUT of the root claim as negative boundaries.",
+  "reconciliation": "Preliminary resistances at 15:53/51:28 (bleached age) and 18:80 (moral agency) reconcile to CONSISTENT: the mature epithets are external adjectives on a proleptically-named future boy, and 18:80's agency is calibrated by the adjacent pre-أَشُدّ anchor in 18:82; the 'son' competitor is reconciled as a frame effect defeated by 52:24/12:19/18:74.",
+  "unresolved_resistance": "No occurrence finally resists the nucleus. The sole open residue is bounded: the precise UPPER age boundary of غلام (mere child vs. agency-bearing adolescent vs. able young servant) is under-determined by 18:80 vs. 52:24 vs. 18:82, and is recorded as a rider rather than a resistant seam."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "52:24:3:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "Sole plural and sole eschatological-servitor use; it kills the strongest rival account ('glm = son/offspring') because these young males belong to and serve the dwellers without being their sons.",
+   "evidence_basis": {
+    "kind": "DISTRIBUTIONAL_CONTRAST",
+    "statement": "At 52:24:3:1 the ghilman are servitors 'belonging to' (lahum) the dwellers of Paradise, not their offspring, defeating any lexicalized son/kinship reading of the root."
+   }
+  },
+  {
+   "word_ref": "15:53:6:2",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "Unborn referent with a mature epithet is the point of maximum pressure on the age-stage feature, showing the youth component is proleptic in the annunciation cluster.",
+   "evidence_basis": {
+    "kind": "BLEACHED_FEATURE",
+    "statement": "At 15:53:6:2 and 51:28:8:2 the ghulam is unborn and carries a mature epithet (aliim 'knowing', reinforced by haliim 'forbearing' at 37:101:2:2), so the youth/age-stage feature is bleached and proleptic here rather than directly demonstrated."
+   }
+  },
+  {
+   "word_ref": "18:80:2:2",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "Moral-religious agency (طُغْيَان, كُفْر) ascribed to a غلام tests the upper boundary of 'youth'; the one genuinely under-determined variable is the precise ceiling.",
+   "evidence_basis": {
+    "kind": "UPPER_BOUND_TENSION",
+    "statement": "At 18:80:2:2 the ghulam is credited with capacity for tughyan (rebellion) and kufr (disbelief), placing him at the agency-bearing adolescent edge of youth; bounded by 18:82's pre-ashudd anchor this calibrates rather than breaks the youth feature."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "No occurrence is finally RESISTANT to the thin nucleus (adversarial lens C produced only underdetermination, not contradiction), so there is no RESISTANT_SEAM. The three ADVERSARIAL_BOUNDARY cases record the strongest disconfirming pressure — 52:24 against the 'son' rival, 15:53/51:28 against age-criteriality, 18:80 against the upper age bound — each with an evidence_basis statement persisted verbatim in a cluster/override note and (for 15:53) in strongest_counterexample."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A Quranic occurrence of غ ل م that is unambiguously female, or unambiguously a mature adult male past أَشُدّ, would break the claimed universal nucleus 'young human male, pre-maturity' and force it down to a representative or unresolved scope.",
+  "search_location": "All 13 nominal tokens, re-examined for the gender of the referent (pronoun agreement, e.g. فَقَتَلَهُ 18:74, وَأَسَرُّوهُ 12:19) and for any age marker placing a غلام at or beyond أَشُدّ, contrasted against the ceiling in 18:82:4:2 and the بَشَر contrast in 19:20:5:1.",
+  "verification_method": "Confirm each referent's sex via morphological agreement and the reproductive-objection frames (عاقر, virginity, old age presuppose a son), and confirm the age ceiling by checking that no token co-occurs with أَشُدّ/completed maturity predicated of the غلام himself.",
+  "confounder_control": "Separate frame-supplied meaning (son via يكون لي/أهب لك/بشّر بـ; servitude via يطوف/بضاعة; character via عليم/حليم/زكيّ) from the noun's own content, so that a contextual 'son' or 'servant' is not mistaken for a lexicalized sense and an adjective's adult grade is not read into غلام.",
+  "failure_consequence": "If a female or mature-adult غلام is found, downgrade from UNIVERSAL/ROOT_GENERALIZATION to REPRESENTATIVE/LEXICALIZED_CLASS (or UNRESOLVED if the classes cannot be bridged), and retract the maleness or youth entailment accordingly."
+ },
+ "falsification_status": "PASSED",
+ "reopen_conditions": [
+  "If a segment-level Arabic alignment or revised morphology reclassifies any غلام token (e.g. 52:24:3:1 غِلْمَان or 18:82:4:2 غُلَٰمَيْن) as something other than the single نoun lexeme, or introduces a verbal/participial form of غ ل م, reopen to test whether a second derivational class exists.",
+  "If new analysis fixes the precise upper age boundary now left open by the tension between 18:80:2:2 (agency-bearing: طُغْيَان/كُفْر), 52:24:3:1 (able serving), and 18:82:4:2 (pre-أَشُدّ), reopen to sharpen the youth entailment from 'pre-maturity' to a determinate age band.",
+  "If a re-reading of the annunciation cluster (15:53:6:2, 51:28:8:2, 37:101:2:2, 19:19:8:1) is argued to lexicalize غلام as 'son' independent of the يكون-لي/أهب-لك/بشّر-بـ frame, reopen to re-test the single-nucleus verdict against the two-sense competitor."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "18:82:4:2",
+  "19:20:5:1",
+  "12:19:10:1",
+  "18:74:5:1",
+  "52:24:3:1"
+ ],
+ "counterevidence_refs": [],
+ "falsification_evidence": {
+  "attempt_id": "glm-adversarial-refutation-v1",
+  "verdict": "SUPPORTED",
+  "falsifiable": true,
+  "distinctiveness_ok": true,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "annunciation_male_offspring",
+   "narrative_present_young_male",
+   "eschatological_servitors"
+  ],
+  "status_rationale": "An adversarial pass attacked the nucleus 'young human male, pre-maturity' across all three clusters. Maleness held 13/13 (masculine agreement, son-presupposing objections, no female token). The youth feature is directly anchored by 18:82 (أَشُدّ) and contradicted by no occurrence; the two rival enrichments cancel (52:24 defeats 'son', the unborn-plus-mature-epithet tokens defeat age-criteriality), leaving the thin nucleus with zero failing occurrences. The claim is falsifiable (a female or mature-adult غلام would break it) and distinct from neighbours (kinship terms and بَشَر). The only reservation is bounded underdetermination of the precise upper age limit, which is a strength rider, not a refutation."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "glm: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "glm: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "glm: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "glm: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "glm: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "glm: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "glm: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "glm: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

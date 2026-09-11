@@ -1,0 +1,768 @@
+{
+ "root_arabic": "ع ص و",
+ "root_buckwalter": "ESw",
+ "root_id": "ESw",
+ "artifact_name": "E_53_w.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave1",
+ "occurrences": 12,
+ "frozen_candidate_root_contribution": "A single lexicalized concrete count-noun: a rigid, elongated, hand-held rod/staff. The root ESw surfaces in the Quran only as this object-denoting noun (singular عَصَا / broken plural عِصِيّ), inflected for number, case, and possessor. It is function-neutral (support, herding, striking, casting are contributed by the surrounding verbs, not by the noun), carries no verbal, abstract, figurative, sacral, or authority content, and is distinct from the disobedience root ع ص ي.",
+ "internal_discovery": {
+  "candidate_root_contribution": "A single lexicalized concrete count-noun: a rigid, elongated, hand-held rod/staff. The root ESw surfaces in the Quran only as this object-denoting noun (singular عَصَا / broken plural عِصِيّ), inflected for number, case, and possessor. It is function-neutral (support, herding, striking, casting are contributed by the surrounding verbs, not by the noun), carries no verbal, abstract, figurative, sacral, or authority content, and is distinct from the disobedience root ع ص ي.",
+  "plain_explanation": "Every one of the 12 tokens denotes the same physical object — a wooden staff held by a person. 20:18:3:1 supplies the Quran's own ostensive definition (Moses leans on it, beats foliage for his sheep with it, and has 'other uses'), fixing the referent as an ordinary multi-purpose stick before any miracle. The remaining 11 tokens are the identical object under three action-frames — cast down (becomes a serpent / swallows the illusions), struck against rock or sea (springs / parting), and the magicians' plural staffs cast in sorcery. The variety lives entirely in the verbs (ألقى، اضرب، أتوكّأ، أهشّ), never in the noun. Because the root is realized solely as this one lexicalized concrete noun within a single narrative domain (the Moses cycle), the claim is a lexicalized-class account, not a generalizable root-wide abstract nucleus.",
+  "layer_separation_note": "Does NOT entail: (a) disobedience/rebellion — that is the orthographically adjacent but distinct root ع ص ي (lām=ي); this root is ع ص و (lām=ي vs و confirmed by the broken plural عِصِيّ). (b) intrinsic miracle/sign content — 20:18 lists mundane uses and 20:66/26:44 are the non-prophetic magicians' staffs. (c) authority/scepter/regal or martial/weapon sense. (d) flexible cordage — explicitly contrasted with حِبَال (ropes) at 20:66:6:2 and 26:44:3:2. (e) the serpent it may become — عَصَا is the pre-transformation referent, never the ثُعْبَان/جَانّ itself. (f) any verbal/eventive sense — form_inventory is N ×12 only.",
+  "presence": {
+   "occurrences_total": 12,
+   "occurrences_checked": 12,
+   "occurrences_consistent": 12,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "The magicians' plural عِصِيّ at 20:66:6:2 and 26:44:3:2 bear the identical lexeme in sorcery, coordinated with حِبَال (ropes) and owned by non-prophets, which disproves any sacral/authority/sign-instrument nucleus and fixes the meaning on the ordinary rigid rod itself.",
+  "strongest_competitor": "That the nucleus is a 'prophet's sign-instrument / tool-of-miracle' (10/12 tokens sit in miracle frames). Rejected Quran-internally: 20:18:3:1 describes the same object in purely mundane, function-neutral terms ('other uses') before any miracle, and 20:66:6:2 / 26:44:3:2 place the identical noun in the hands of the magicians as sorcery-props. The miraculous outcome is predicated by the verbs and divine act, never by the word. A secondary competitor — that عصا is a bare lexicalized primitive noun with no recoverable abstract root feature — is partly granted, but yields the same operative outcome: one unified concrete class.",
+  "competing_hypothesis": "That the nucleus is a 'prophet's sign-instrument / tool-of-miracle' (10/12 tokens sit in miracle frames). Rejected Quran-internally: 20:18:3:1 describes the same object in purely mundane, function-neutral terms ('other uses') before any miracle, and 20:66:6:2 / 26:44:3:2 place the identical noun in the hands of the magicians as sorcery-props. The miraculous outcome is predicated by the verbs and divine act, never by the word. A secondary competitor — that عصا is a bare lexicalized primitive noun with no recoverable abstract root feature — is partly granted, but yields the same operative outcome: one unified concrete class.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "STRONG",
+  "rationale": "12/12 occurrences share one POS (N) and one referent-type. The singular↔plural relation (عَصَا / عِصِيّ) is pure number inflection, a grammatical not semantic bridge, so no cross-class bridge problem arises — there is genuinely one class in two number variants. The account is chosen at the narrowest defensible altitude: the concrete object itself, with abstraction actively declined. Distinctiveness from the semantic neighbour ع ص ي (disobedience) is real and Quran-internal. Adversarial refutation (miracle-instrument, plural-broadening, transformation, function-fragmentation wedges) failed on every wedge. Strength is STRONG rather than absolute because attestation is narratively concentrated in the Moses cycle (contextual breadth, not semantic ambiguity, is the ceiling); scope is REPRESENTATIVE/LEXICALIZED_CLASS rather than UNIVERSAL because the root contributes a lexicalized name-of-thing, not a generalizable abstract nucleus.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "ESw-c1-singular-staff",
+     "where": {
+      "word_refs": [
+       "20:18:3:1",
+       "26:32:2:1",
+       "26:45:3:1",
+       "26:63:6:2",
+       "27:10:2:1",
+       "28:31:3:1",
+       "2:60:7:2",
+       "7:107:2:1",
+       "7:117:6:1",
+       "7:160:14:2"
+      ]
+     },
+     "occurrence_count_expected": 10,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Singular عَصَا — a single rigid hand-held rod/staff, always possessed (my/his/your), realized across the lean-on/herd/utility frame (20:18), the cast-down frame (26:32, 26:45, 27:10, 28:31, 7:107, 7:117), and the strike frame (2:60, 7:160, 26:63).",
+     "classification_rationale": "All ten are qac_pos=N, qac_verb_form=null, surface EaSaA; identical object-referent with the sense-neutral verb supplying the action. No internal variation of the noun's meaning.",
+     "supporting_evidence_note": "20:18:3:1 supplies an internal ostensive definition — leaned on (أَتَوَكَّؤُا۟ عَلَيْهَا), used to beat foliage for sheep (وَأَهُشُّ بِهَا عَلَىٰ غَنَمِى), with مَـَٔارِبُ أُخْرَىٰ (other uses) — establishing a mundane, function-neutral object before any miracle.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "ESw-c2-plural-staffs",
+     "where": {
+      "word_refs": [
+       "20:66:6:2",
+       "26:44:3:2"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Plural عِصِيّ — several rods/staffs, the magicians', cast in sorcery and coordinated with حِبَال (ropes). Same object-class as the singular, differing only in number.",
+     "classification_rationale": "Both qac_pos=N, qac_verb_form=null, surface EiSiy~ (nom. EiSiy~u / acc. EiSiy~a); the nom/acc contrast is pure syntactic case carrying zero semantic load. The broken plural is the ordinary III-و reflex of the singular lexeme.",
+     "supporting_evidence_note": "The magicians' plural عِصِيّ at 20:66:6:2 and 26:44:3:2 bear the identical lexeme in sorcery, coordinated with حِبَال (ropes) and owned by non-prophets, which disproves any sacral/authority/sign-instrument nucleus and fixes the meaning on the ordinary rigid rod itself.",
+     "counterevidence": []
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "ESw",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Four independent refutation wedges were run: (1) miracle/sign-instrument nucleus — refuted by mundane 20:18:3:1 and non-prophetic 20:66:6:2/26:44:3:2; (2) plural-broadening to 'sorcery-props generally' — refuted by the حِبَال contrast that isolates عِصِيّ as the rigid-rod member; (3) transformation wedge ('word means serpent') — refuted because عَصَا is the pre-transformation subject (فَأَلْقَىٰ عَصَاهُ فَإِذَا هِىَ ثُعْبَانٌ); (4) function-fragmentation — self-defeated by 20:18 packing multiple functions plus 'other uses' into one referent. All wedges failed; the unified concrete-noun claim survives with no failing occurrences and clear distinctiveness from ع ص ي and from حِبَال."
+ },
+ "coverage_validation": {
+  "root": "ESw",
+  "expected_count": 12,
+  "researched_count": 12,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "20:18:3:1",
+   "disposition": "CONSISTENT",
+   "note": "All ten are qac_pos=N, qac_verb_form=null, surface EaSaA; identical object-referent with the sense-neutral verb supplying the action. No internal variation of the noun's meaning.",
+   "coverage_cluster_id": "ESw-c1-singular-staff",
+   "candidate_semantic_interpretation": "Singular عَصَا — a single rigid hand-held rod/staff, always possessed (my/his/your), realized across the lean-on/herd/utility frame (20:18), the cast-down frame (26:32, 26:45, 27:10, 28:31, 7:107, 7:117), and the strike frame (2:60, 7:160, 26:63).",
+   "cluster_supporting_evidence": "20:18:3:1 supplies an internal ostensive definition — leaned on (أَتَوَكَّؤُا۟ عَلَيْهَا), used to beat foliage for sheep (وَأَهُشُّ بِهَا عَلَىٰ غَنَمِى), with مَـَٔارِبُ أُخْرَىٰ (other uses) — establishing a mundane, function-neutral object before any miracle.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All ten are qac_pos=N, qac_verb_form=null, surface EaSaA; identical object-referent with the sense-neutral verb supplying the action. No internal variation of the noun's meaning.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "20:18",
+     "verse_text": "قَالَ هِىَ عَصَاىَ أَتَوَكَّؤُا۟ عَلَيْهَا وَأَهُشُّ بِهَا عَلَىٰ غَنَمِى وَلِىَ فِيهَا مَـَٔارِبُ أُخْرَىٰ"
+    }
+   ],
+   "root_arabic": "ع ص و",
+   "root_buckwalter": "ESw",
+   "root_id": "ESw",
+   "artifact_name": "E_53_w.json",
+   "verse_ref": "20:18",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "EaSaA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالَ هِىَ عَصَاىَ أَتَوَكَّؤُا۟ عَلَيْهَا وَأَهُشُّ بِهَا عَلَىٰ غَنَمِى وَلِىَ فِيهَا مَـَٔارِبُ أُخْرَىٰ"
+  },
+  {
+   "word_ref": "20:66:6:2",
+   "disposition": "CONSISTENT",
+   "note": "Both qac_pos=N, qac_verb_form=null, surface EiSiy~ (nom. EiSiy~u / acc. EiSiy~a); the nom/acc contrast is pure syntactic case carrying zero semantic load. The broken plural is the ordinary III-و reflex of the singular lexeme.",
+   "coverage_cluster_id": "ESw-c2-plural-staffs",
+   "candidate_semantic_interpretation": "Plural عِصِيّ — several rods/staffs, the magicians', cast in sorcery and coordinated with حِبَال (ropes). Same object-class as the singular, differing only in number.",
+   "cluster_supporting_evidence": "The magicians' plural عِصِيّ at 20:66:6:2 and 26:44:3:2 bear the identical lexeme in sorcery, coordinated with حِبَال (ropes) and owned by non-prophets, which disproves any sacral/authority/sign-instrument nucleus and fixes the meaning on the ordinary rigid rod itself.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Both qac_pos=N, qac_verb_form=null, surface EiSiy~ (nom. EiSiy~u / acc. EiSiy~a); the nom/acc contrast is pure syntactic case carrying zero semantic load. The broken plural is the ordinary III-و reflex of the singular lexeme.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "20:66",
+     "verse_text": "قَالَ بَلْ أَلْقُوا۟ فَإِذَا حِبَالُهُمْ وَعِصِيُّهُمْ يُخَيَّلُ إِلَيْهِ مِن سِحْرِهِمْ أَنَّهَا تَسْعَىٰ"
+    }
+   ],
+   "root_arabic": "ع ص و",
+   "root_buckwalter": "ESw",
+   "root_id": "ESw",
+   "artifact_name": "E_53_w.json",
+   "verse_ref": "20:66",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "EiSiy~u",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالَ بَلْ أَلْقُوا۟ فَإِذَا حِبَالُهُمْ وَعِصِيُّهُمْ يُخَيَّلُ إِلَيْهِ مِن سِحْرِهِمْ أَنَّهَا تَسْعَىٰ"
+  },
+  {
+   "word_ref": "26:32:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All ten are qac_pos=N, qac_verb_form=null, surface EaSaA; identical object-referent with the sense-neutral verb supplying the action. No internal variation of the noun's meaning.",
+   "coverage_cluster_id": "ESw-c1-singular-staff",
+   "candidate_semantic_interpretation": "Singular عَصَا — a single rigid hand-held rod/staff, always possessed (my/his/your), realized across the lean-on/herd/utility frame (20:18), the cast-down frame (26:32, 26:45, 27:10, 28:31, 7:107, 7:117), and the strike frame (2:60, 7:160, 26:63).",
+   "cluster_supporting_evidence": "20:18:3:1 supplies an internal ostensive definition — leaned on (أَتَوَكَّؤُا۟ عَلَيْهَا), used to beat foliage for sheep (وَأَهُشُّ بِهَا عَلَىٰ غَنَمِى), with مَـَٔارِبُ أُخْرَىٰ (other uses) — establishing a mundane, function-neutral object before any miracle.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All ten are qac_pos=N, qac_verb_form=null, surface EaSaA; identical object-referent with the sense-neutral verb supplying the action. No internal variation of the noun's meaning.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "26:32",
+     "verse_text": "فَأَلْقَىٰ عَصَاهُ فَإِذَا هِىَ ثُعْبَانٌ مُّبِينٌ"
+    }
+   ],
+   "root_arabic": "ع ص و",
+   "root_buckwalter": "ESw",
+   "root_id": "ESw",
+   "artifact_name": "E_53_w.json",
+   "verse_ref": "26:32",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "EaSaA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَأَلْقَىٰ عَصَاهُ فَإِذَا هِىَ ثُعْبَانٌ مُّبِينٌ"
+  },
+  {
+   "word_ref": "26:44:3:2",
+   "disposition": "CONSISTENT",
+   "note": "Both qac_pos=N, qac_verb_form=null, surface EiSiy~ (nom. EiSiy~u / acc. EiSiy~a); the nom/acc contrast is pure syntactic case carrying zero semantic load. The broken plural is the ordinary III-و reflex of the singular lexeme.",
+   "coverage_cluster_id": "ESw-c2-plural-staffs",
+   "candidate_semantic_interpretation": "Plural عِصِيّ — several rods/staffs, the magicians', cast in sorcery and coordinated with حِبَال (ropes). Same object-class as the singular, differing only in number.",
+   "cluster_supporting_evidence": "The magicians' plural عِصِيّ at 20:66:6:2 and 26:44:3:2 bear the identical lexeme in sorcery, coordinated with حِبَال (ropes) and owned by non-prophets, which disproves any sacral/authority/sign-instrument nucleus and fixes the meaning on the ordinary rigid rod itself.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Both qac_pos=N, qac_verb_form=null, surface EiSiy~ (nom. EiSiy~u / acc. EiSiy~a); the nom/acc contrast is pure syntactic case carrying zero semantic load. The broken plural is the ordinary III-و reflex of the singular lexeme.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "26:44",
+     "verse_text": "فَأَلْقَوْا۟ حِبَالَهُمْ وَعِصِيَّهُمْ وَقَالُوا۟ بِعِزَّةِ فِرْعَوْنَ إِنَّا لَنَحْنُ ٱلْغَٰلِبُونَ"
+    }
+   ],
+   "root_arabic": "ع ص و",
+   "root_buckwalter": "ESw",
+   "root_id": "ESw",
+   "artifact_name": "E_53_w.json",
+   "verse_ref": "26:44",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "EiSiy~a",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَأَلْقَوْا۟ حِبَالَهُمْ وَعِصِيَّهُمْ وَقَالُوا۟ بِعِزَّةِ فِرْعَوْنَ إِنَّا لَنَحْنُ ٱلْغَٰلِبُونَ"
+  },
+  {
+   "word_ref": "26:45:3:1",
+   "disposition": "CONSISTENT",
+   "note": "All ten are qac_pos=N, qac_verb_form=null, surface EaSaA; identical object-referent with the sense-neutral verb supplying the action. No internal variation of the noun's meaning.",
+   "coverage_cluster_id": "ESw-c1-singular-staff",
+   "candidate_semantic_interpretation": "Singular عَصَا — a single rigid hand-held rod/staff, always possessed (my/his/your), realized across the lean-on/herd/utility frame (20:18), the cast-down frame (26:32, 26:45, 27:10, 28:31, 7:107, 7:117), and the strike frame (2:60, 7:160, 26:63).",
+   "cluster_supporting_evidence": "20:18:3:1 supplies an internal ostensive definition — leaned on (أَتَوَكَّؤُا۟ عَلَيْهَا), used to beat foliage for sheep (وَأَهُشُّ بِهَا عَلَىٰ غَنَمِى), with مَـَٔارِبُ أُخْرَىٰ (other uses) — establishing a mundane, function-neutral object before any miracle.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All ten are qac_pos=N, qac_verb_form=null, surface EaSaA; identical object-referent with the sense-neutral verb supplying the action. No internal variation of the noun's meaning.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "26:45",
+     "verse_text": "فَأَلْقَىٰ مُوسَىٰ عَصَاهُ فَإِذَا هِىَ تَلْقَفُ مَا يَأْفِكُونَ"
+    }
+   ],
+   "root_arabic": "ع ص و",
+   "root_buckwalter": "ESw",
+   "root_id": "ESw",
+   "artifact_name": "E_53_w.json",
+   "verse_ref": "26:45",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "EaSaA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَأَلْقَىٰ مُوسَىٰ عَصَاهُ فَإِذَا هِىَ تَلْقَفُ مَا يَأْفِكُونَ"
+  },
+  {
+   "word_ref": "26:63:6:2",
+   "disposition": "CONSISTENT",
+   "note": "All ten are qac_pos=N, qac_verb_form=null, surface EaSaA; identical object-referent with the sense-neutral verb supplying the action. No internal variation of the noun's meaning.",
+   "coverage_cluster_id": "ESw-c1-singular-staff",
+   "candidate_semantic_interpretation": "Singular عَصَا — a single rigid hand-held rod/staff, always possessed (my/his/your), realized across the lean-on/herd/utility frame (20:18), the cast-down frame (26:32, 26:45, 27:10, 28:31, 7:107, 7:117), and the strike frame (2:60, 7:160, 26:63).",
+   "cluster_supporting_evidence": "20:18:3:1 supplies an internal ostensive definition — leaned on (أَتَوَكَّؤُا۟ عَلَيْهَا), used to beat foliage for sheep (وَأَهُشُّ بِهَا عَلَىٰ غَنَمِى), with مَـَٔارِبُ أُخْرَىٰ (other uses) — establishing a mundane, function-neutral object before any miracle.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All ten are qac_pos=N, qac_verb_form=null, surface EaSaA; identical object-referent with the sense-neutral verb supplying the action. No internal variation of the noun's meaning.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "26:63",
+     "verse_text": "فَأَوْحَيْنَآ إِلَىٰ مُوسَىٰٓ أَنِ ٱضْرِب بِّعَصَاكَ ٱلْبَحْرَ فَٱنفَلَقَ فَكَانَ كُلُّ فِرْقٍ كَٱلطَّوْدِ ٱلْعَظِيمِ"
+    }
+   ],
+   "root_arabic": "ع ص و",
+   "root_buckwalter": "ESw",
+   "root_id": "ESw",
+   "artifact_name": "E_53_w.json",
+   "verse_ref": "26:63",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "EaSaA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَأَوْحَيْنَآ إِلَىٰ مُوسَىٰٓ أَنِ ٱضْرِب بِّعَصَاكَ ٱلْبَحْرَ فَٱنفَلَقَ فَكَانَ كُلُّ فِرْقٍ كَٱلطَّوْدِ ٱلْعَظِيمِ"
+  },
+  {
+   "word_ref": "27:10:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All ten are qac_pos=N, qac_verb_form=null, surface EaSaA; identical object-referent with the sense-neutral verb supplying the action. No internal variation of the noun's meaning.",
+   "coverage_cluster_id": "ESw-c1-singular-staff",
+   "candidate_semantic_interpretation": "Singular عَصَا — a single rigid hand-held rod/staff, always possessed (my/his/your), realized across the lean-on/herd/utility frame (20:18), the cast-down frame (26:32, 26:45, 27:10, 28:31, 7:107, 7:117), and the strike frame (2:60, 7:160, 26:63).",
+   "cluster_supporting_evidence": "20:18:3:1 supplies an internal ostensive definition — leaned on (أَتَوَكَّؤُا۟ عَلَيْهَا), used to beat foliage for sheep (وَأَهُشُّ بِهَا عَلَىٰ غَنَمِى), with مَـَٔارِبُ أُخْرَىٰ (other uses) — establishing a mundane, function-neutral object before any miracle.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All ten are qac_pos=N, qac_verb_form=null, surface EaSaA; identical object-referent with the sense-neutral verb supplying the action. No internal variation of the noun's meaning.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "27:10",
+     "verse_text": "وَأَلْقِ عَصَاكَ فَلَمَّا رَءَاهَا تَهْتَزُّ كَأَنَّهَا جَآنٌّ وَلَّىٰ مُدْبِرًا وَلَمْ يُعَقِّبْ يَٰمُوسَىٰ لَا تَخَفْ إِنِّى لَا يَخَافُ لَدَىَّ ٱلْمُرْسَلُونَ"
+    }
+   ],
+   "root_arabic": "ع ص و",
+   "root_buckwalter": "ESw",
+   "root_id": "ESw",
+   "artifact_name": "E_53_w.json",
+   "verse_ref": "27:10",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "EaSaA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَأَلْقِ عَصَاكَ فَلَمَّا رَءَاهَا تَهْتَزُّ كَأَنَّهَا جَآنٌّ وَلَّىٰ مُدْبِرًا وَلَمْ يُعَقِّبْ يَٰمُوسَىٰ لَا تَخَفْ إِنِّى لَا يَخَافُ لَدَىَّ ٱلْمُرْسَلُونَ"
+  },
+  {
+   "word_ref": "28:31:3:1",
+   "disposition": "CONSISTENT",
+   "note": "All ten are qac_pos=N, qac_verb_form=null, surface EaSaA; identical object-referent with the sense-neutral verb supplying the action. No internal variation of the noun's meaning.",
+   "coverage_cluster_id": "ESw-c1-singular-staff",
+   "candidate_semantic_interpretation": "Singular عَصَا — a single rigid hand-held rod/staff, always possessed (my/his/your), realized across the lean-on/herd/utility frame (20:18), the cast-down frame (26:32, 26:45, 27:10, 28:31, 7:107, 7:117), and the strike frame (2:60, 7:160, 26:63).",
+   "cluster_supporting_evidence": "20:18:3:1 supplies an internal ostensive definition — leaned on (أَتَوَكَّؤُا۟ عَلَيْهَا), used to beat foliage for sheep (وَأَهُشُّ بِهَا عَلَىٰ غَنَمِى), with مَـَٔارِبُ أُخْرَىٰ (other uses) — establishing a mundane, function-neutral object before any miracle.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All ten are qac_pos=N, qac_verb_form=null, surface EaSaA; identical object-referent with the sense-neutral verb supplying the action. No internal variation of the noun's meaning.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "28:31",
+     "verse_text": "وَأَنْ أَلْقِ عَصَاكَ فَلَمَّا رَءَاهَا تَهْتَزُّ كَأَنَّهَا جَآنٌّ وَلَّىٰ مُدْبِرًا وَلَمْ يُعَقِّبْ يَٰمُوسَىٰٓ أَقْبِلْ وَلَا تَخَفْ إِنَّكَ مِنَ ٱلْـَٔامِنِينَ"
+    }
+   ],
+   "root_arabic": "ع ص و",
+   "root_buckwalter": "ESw",
+   "root_id": "ESw",
+   "artifact_name": "E_53_w.json",
+   "verse_ref": "28:31",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "EaSaA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَأَنْ أَلْقِ عَصَاكَ فَلَمَّا رَءَاهَا تَهْتَزُّ كَأَنَّهَا جَآنٌّ وَلَّىٰ مُدْبِرًا وَلَمْ يُعَقِّبْ يَٰمُوسَىٰٓ أَقْبِلْ وَلَا تَخَفْ إِنَّكَ مِنَ ٱلْـَٔامِنِينَ"
+  },
+  {
+   "word_ref": "2:60:7:2",
+   "disposition": "CONSISTENT",
+   "note": "All ten are qac_pos=N, qac_verb_form=null, surface EaSaA; identical object-referent with the sense-neutral verb supplying the action. No internal variation of the noun's meaning.",
+   "coverage_cluster_id": "ESw-c1-singular-staff",
+   "candidate_semantic_interpretation": "Singular عَصَا — a single rigid hand-held rod/staff, always possessed (my/his/your), realized across the lean-on/herd/utility frame (20:18), the cast-down frame (26:32, 26:45, 27:10, 28:31, 7:107, 7:117), and the strike frame (2:60, 7:160, 26:63).",
+   "cluster_supporting_evidence": "20:18:3:1 supplies an internal ostensive definition — leaned on (أَتَوَكَّؤُا۟ عَلَيْهَا), used to beat foliage for sheep (وَأَهُشُّ بِهَا عَلَىٰ غَنَمِى), with مَـَٔارِبُ أُخْرَىٰ (other uses) — establishing a mundane, function-neutral object before any miracle.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All ten are qac_pos=N, qac_verb_form=null, surface EaSaA; identical object-referent with the sense-neutral verb supplying the action. No internal variation of the noun's meaning.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:60",
+     "verse_text": "وَإِذِ ٱسْتَسْقَىٰ مُوسَىٰ لِقَوْمِهِۦ فَقُلْنَا ٱضْرِب بِّعَصَاكَ ٱلْحَجَرَ فَٱنفَجَرَتْ مِنْهُ ٱثْنَتَا عَشْرَةَ عَيْنًا قَدْ عَلِمَ كُلُّ أُنَاسٍ مَّشْرَبَهُمْ كُلُوا۟ وَٱشْرَبُوا۟ مِن رِّزْقِ ٱللَّهِ وَلَا تَعْثَوْا۟ فِى ٱلْأَرْضِ مُفْسِدِينَ"
+    }
+   ],
+   "root_arabic": "ع ص و",
+   "root_buckwalter": "ESw",
+   "root_id": "ESw",
+   "artifact_name": "E_53_w.json",
+   "verse_ref": "2:60",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "EaSaA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِذِ ٱسْتَسْقَىٰ مُوسَىٰ لِقَوْمِهِۦ فَقُلْنَا ٱضْرِب بِّعَصَاكَ ٱلْحَجَرَ فَٱنفَجَرَتْ مِنْهُ ٱثْنَتَا عَشْرَةَ عَيْنًا قَدْ عَلِمَ كُلُّ أُنَاسٍ مَّشْرَبَهُمْ كُلُوا۟ وَٱشْرَبُوا۟ مِن رِّزْقِ ٱللَّهِ وَلَا تَعْثَوْا۟ فِى ٱلْأَرْضِ مُفْسِدِينَ"
+  },
+  {
+   "word_ref": "7:107:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All ten are qac_pos=N, qac_verb_form=null, surface EaSaA; identical object-referent with the sense-neutral verb supplying the action. No internal variation of the noun's meaning.",
+   "coverage_cluster_id": "ESw-c1-singular-staff",
+   "candidate_semantic_interpretation": "Singular عَصَا — a single rigid hand-held rod/staff, always possessed (my/his/your), realized across the lean-on/herd/utility frame (20:18), the cast-down frame (26:32, 26:45, 27:10, 28:31, 7:107, 7:117), and the strike frame (2:60, 7:160, 26:63).",
+   "cluster_supporting_evidence": "20:18:3:1 supplies an internal ostensive definition — leaned on (أَتَوَكَّؤُا۟ عَلَيْهَا), used to beat foliage for sheep (وَأَهُشُّ بِهَا عَلَىٰ غَنَمِى), with مَـَٔارِبُ أُخْرَىٰ (other uses) — establishing a mundane, function-neutral object before any miracle.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All ten are qac_pos=N, qac_verb_form=null, surface EaSaA; identical object-referent with the sense-neutral verb supplying the action. No internal variation of the noun's meaning.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:107",
+     "verse_text": "فَأَلْقَىٰ عَصَاهُ فَإِذَا هِىَ ثُعْبَانٌ مُّبِينٌ"
+    }
+   ],
+   "root_arabic": "ع ص و",
+   "root_buckwalter": "ESw",
+   "root_id": "ESw",
+   "artifact_name": "E_53_w.json",
+   "verse_ref": "7:107",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "EaSaA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَأَلْقَىٰ عَصَاهُ فَإِذَا هِىَ ثُعْبَانٌ مُّبِينٌ"
+  },
+  {
+   "word_ref": "7:117:6:1",
+   "disposition": "CONSISTENT",
+   "note": "All ten are qac_pos=N, qac_verb_form=null, surface EaSaA; identical object-referent with the sense-neutral verb supplying the action. No internal variation of the noun's meaning.",
+   "coverage_cluster_id": "ESw-c1-singular-staff",
+   "candidate_semantic_interpretation": "Singular عَصَا — a single rigid hand-held rod/staff, always possessed (my/his/your), realized across the lean-on/herd/utility frame (20:18), the cast-down frame (26:32, 26:45, 27:10, 28:31, 7:107, 7:117), and the strike frame (2:60, 7:160, 26:63).",
+   "cluster_supporting_evidence": "20:18:3:1 supplies an internal ostensive definition — leaned on (أَتَوَكَّؤُا۟ عَلَيْهَا), used to beat foliage for sheep (وَأَهُشُّ بِهَا عَلَىٰ غَنَمِى), with مَـَٔارِبُ أُخْرَىٰ (other uses) — establishing a mundane, function-neutral object before any miracle.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All ten are qac_pos=N, qac_verb_form=null, surface EaSaA; identical object-referent with the sense-neutral verb supplying the action. No internal variation of the noun's meaning.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:117",
+     "verse_text": "وَأَوْحَيْنَآ إِلَىٰ مُوسَىٰٓ أَنْ أَلْقِ عَصَاكَ فَإِذَا هِىَ تَلْقَفُ مَا يَأْفِكُونَ"
+    }
+   ],
+   "root_arabic": "ع ص و",
+   "root_buckwalter": "ESw",
+   "root_id": "ESw",
+   "artifact_name": "E_53_w.json",
+   "verse_ref": "7:117",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "EaSaA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَأَوْحَيْنَآ إِلَىٰ مُوسَىٰٓ أَنْ أَلْقِ عَصَاكَ فَإِذَا هِىَ تَلْقَفُ مَا يَأْفِكُونَ"
+  },
+  {
+   "word_ref": "7:160:14:2",
+   "disposition": "CONSISTENT",
+   "note": "All ten are qac_pos=N, qac_verb_form=null, surface EaSaA; identical object-referent with the sense-neutral verb supplying the action. No internal variation of the noun's meaning.",
+   "coverage_cluster_id": "ESw-c1-singular-staff",
+   "candidate_semantic_interpretation": "Singular عَصَا — a single rigid hand-held rod/staff, always possessed (my/his/your), realized across the lean-on/herd/utility frame (20:18), the cast-down frame (26:32, 26:45, 27:10, 28:31, 7:107, 7:117), and the strike frame (2:60, 7:160, 26:63).",
+   "cluster_supporting_evidence": "20:18:3:1 supplies an internal ostensive definition — leaned on (أَتَوَكَّؤُا۟ عَلَيْهَا), used to beat foliage for sheep (وَأَهُشُّ بِهَا عَلَىٰ غَنَمِى), with مَـَٔارِبُ أُخْرَىٰ (other uses) — establishing a mundane, function-neutral object before any miracle.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All ten are qac_pos=N, qac_verb_form=null, surface EaSaA; identical object-referent with the sense-neutral verb supplying the action. No internal variation of the noun's meaning.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:160",
+     "verse_text": "وَقَطَّعْنَٰهُمُ ٱثْنَتَىْ عَشْرَةَ أَسْبَاطًا أُمَمًا وَأَوْحَيْنَآ إِلَىٰ مُوسَىٰٓ إِذِ ٱسْتَسْقَىٰهُ قَوْمُهُۥٓ أَنِ ٱضْرِب بِّعَصَاكَ ٱلْحَجَرَ فَٱنۢبَجَسَتْ مِنْهُ ٱثْنَتَا عَشْرَةَ عَيْنًا قَدْ عَلِمَ كُلُّ أُنَاسٍ مَّشْرَبَهُمْ وَظَلَّلْنَا عَلَيْهِمُ ٱلْغَمَٰمَ وَأَنزَلْنَا عَلَيْهِمُ ٱلْمَنَّ وَٱلسَّلْوَىٰ كُلُوا۟ مِن طَيِّبَٰتِ مَا رَزَقْنَٰكُمْ وَمَا ظَلَمُونَا وَلَٰكِن كَانُوٓا۟ أَنفُسَهُمْ يَظْلِمُونَ"
+    }
+   ],
+   "root_arabic": "ع ص و",
+   "root_buckwalter": "ESw",
+   "root_id": "ESw",
+   "artifact_name": "E_53_w.json",
+   "verse_ref": "7:160",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "EaSaA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَقَطَّعْنَٰهُمُ ٱثْنَتَىْ عَشْرَةَ أَسْبَاطًا أُمَمًا وَأَوْحَيْنَآ إِلَىٰ مُوسَىٰٓ إِذِ ٱسْتَسْقَىٰهُ قَوْمُهُۥٓ أَنِ ٱضْرِب بِّعَصَاكَ ٱلْحَجَرَ فَٱنۢبَجَسَتْ مِنْهُ ٱثْنَتَا عَشْرَةَ عَيْنًا قَدْ عَلِمَ كُلُّ أُنَاسٍ مَّشْرَبَهُمْ وَظَلَّلْنَا عَلَيْهِمُ ٱلْغَمَٰمَ وَأَنزَلْنَا عَلَيْهِمُ ٱلْمَنَّ وَٱلسَّلْوَىٰ كُلُوا۟ مِن طَيِّبَٰتِ مَا رَزَقْنَٰكُمْ وَمَا ظَلَمُونَا وَلَٰكِن كَانُوٓا۟ أَنفُسَهُمْ يَظْلِمُونَ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "STRONG",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Adversarial lens (C) independently reached the same STABLE verdict as the two build lenses (A, B); all three agree on 12/12 CONSISTENT with no resistant token, and the packet's own morphology (N ×12, verb_form null) corroborates the nominal-only footprint.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "A single lexicalized concrete count-noun: a rigid, elongated, hand-held rod/staff. The root ESw surfaces in the Quran only as this object-denoting noun (singular عَصَا / broken plural عِصِيّ), inflected for number, case, and possessor. It is function-neutral (support, herding, striking, casting are contributed by the surrounding verbs, not by the noun), carries no verbal, abstract, figurative, sacral, or authority content, and is distinct from the disobedience root ع ص ي.",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "LEXICALIZED_CLASS",
+ "layer_attribution": {
+  "occurrence_evidence": "12/12 confirmed tokens, all qac_pos=N with qac_verb_form=null; surface forms EaSaA (10) and EiSiy~ (2), each possessed/number-inflected; verse_text read directly from the packet.",
+  "derivation": "No verbal or participial derivation attested; the broken plural عِصِيّ (fiʿiyy, III-و reflex) is the sole morphological derivation and relates to the singular by pure number inflection, exposing the weak third radical و that fixes the root as ع ص و.",
+  "lexical_class": "A single lexicalized concrete count-noun 'staff/rod' — object-denoting, function-neutral, possessable, countable; the entire Quranic footprint of the root is this one lexeme.",
+  "contextual_relation": "Three action-frames (lean/herd/utility; cast-down; strike) supply all apparent variety via the governing verbs (أتوكّأ/أهشّ, ألقى, اضرب) and outcomes (ثعبان, جانّ, تلقف, springs, parting); this is contextual/narrative meaning and is deliberately NOT folded into the root claim.",
+  "reconciliation": "No preliminary/final disposition conflicts arose; all lenses and the packet morphology agree, so no occurrence required reconciliation (reconciliations empty).",
+  "unresolved_resistance": "None. No occurrence resists the staff/rod account; counterevidence_refs is empty. The only honest limitation is contextual breadth — attestation is concentrated in the Moses cycle — which caps scope at REPRESENTATIVE/LEXICALIZED_CLASS but leaves the object-meaning unambiguous."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "20:66:6:2",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "Magicians' (non-prophetic) plural staffs in sorcery, coordinated with حِبَال (ropes); tests and defeats both the sacral/sign-instrument reading and the 'sorcery-props generally' broadening, since the noun is precisely the rigid-rod member contrasted with flexible cordage.",
+   "evidence_basis": {
+    "kind": "CONTRASTIVE_COORDINATION",
+    "statement": "The magicians' plural عِصِيّ at 20:66:6:2 and 26:44:3:2 bear the identical lexeme in sorcery, coordinated with حِبَال (ropes) and owned by non-prophets, which disproves any sacral/authority/sign-instrument nucleus and fixes the meaning on the ordinary rigid rod itself."
+   }
+  },
+  {
+   "word_ref": "26:44:3:2",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "Second attestation of the magicians' plural staffs cast (أَلْقَوْا) alongside حِبَالَهُمْ; confirms the same concrete rod-class in a non-prophetic, non-miraculous-per-word setting.",
+   "evidence_basis": {
+    "kind": "CONTRASTIVE_COORDINATION",
+    "statement": "The magicians' plural عِصِيّ at 20:66:6:2 and 26:44:3:2 bear the identical lexeme in sorcery, coordinated with حِبَال (ropes) and owned by non-prophets, which disproves any sacral/authority/sign-instrument nucleus and fixes the meaning on the ordinary rigid rod itself."
+   }
+  },
+  {
+   "word_ref": "20:18:3:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "The only token outside a miracle frame and the only one enumerating multiple heterogeneous uses — the natural place to fracture a single account; instead it anchors a mundane, function-neutral object and defeats the miracle-instrument reading.",
+   "evidence_basis": {
+    "kind": "INTERNAL_OSTENSIVE_DEFINITION",
+    "statement": "20:18:3:1 supplies an internal ostensive definition — leaned on (أَتَوَكَّؤُا۟ عَلَيْهَا), used to beat foliage for sheep (وَأَهُشُّ بِهَا عَلَىٰ غَنَمِى), with مَـَٔارِبُ أُخْرَىٰ (other uses) — establishing a mundane, function-neutral object before any miracle."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "No occurrence resists the staff/rod account (counterevidence_refs is empty). The hard cases are adversarial boundaries, not resistant seams: the magicians' plurals (20:66, 26:44) and the mundane self-definition (20:18) are the points where inflated readings (sacral/authority/miracle-instrument, cordage-broadening) would be introduced, and each is persisted here because the adversarial refutation turned on them."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A Quranic occurrence of root ع ص و (lām=و) in which عَصَا/عِصِيّ must be read as something other than a concrete rigid hand-held rod — e.g. an abstract 'authority/rule', an inherently sacred/sign object independent of the verb, a flexible cord, or a verbal/eventive sense — or an occurrence where the noun itself (not the surrounding verb) carries the miraculous predication.",
+  "search_location": "All packet tokens, especially the magicians' plurals 20:66:6:2 and 26:44:3:2 and the self-defining 20:18:3:1; and any future ع ص و attestation outside the Moses cycle.",
+  "verification_method": "Check qac_pos/qac_verb_form (must remain N, null), test whether the miracle/authority meaning survives when the governing verb (ألقى/اضرب/أتوكّأ/أهشّ) is abstracted away, and confirm the coordination contrast with حِبَال still forces a rigid-rod reading.",
+  "confounder_control": "Exclude the orthographically adjacent root ع ص ي (disobedience, lām=ي) — its final radical differs, confirmed here by the broken plural عِصِيّ; do not import its sense. Do not attribute the narrative/contextual miracle to the lexeme.",
+  "failure_consequence": "If such an occurrence is found, the single lexicalized concrete-noun class is broken and the root must be re-analysed as multi-class (or, if the new sense has no Quran-internal bridge to 'staff', as UNRESOLVED with an added class)."
+ },
+ "falsification_status": "PASSED",
+ "reopen_conditions": [
+  "A new or re-examined ع ص و occurrence appears outside the Moses cycle, testing whether the 'staff/rod' reading generalizes beyond the single attested narrative domain (current ceiling on breadth).",
+  "Any token where عِصِيّ/عَصَا coordinates with or is opposed to حِبَال in a way that no longer isolates a rigid rod, or where the noun (not its verb) carries authority/sacral/miraculous predication (revisit 20:66:6:2, 26:44:3:2, 20:18:3:1).",
+  "A morphological re-attribution reassigns any of these 12 tokens to root ع ص ي (disobedience) or introduces a verbal form of ع ص و, which would break the nominal-only, single-lexeme partition."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "20:18:3:1",
+  "26:32:2:1",
+  "2:60:7:2",
+  "26:63:6:2",
+  "20:66:6:2",
+  "26:44:3:2"
+ ],
+ "counterevidence_refs": [],
+ "falsification_evidence": {
+  "attempt_id": "ESw-falsify-v1",
+  "verdict": "SUPPORTED",
+  "falsifiable": true,
+  "distinctiveness_ok": true,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "ESw-c1-singular-staff",
+   "ESw-c2-plural-staffs"
+  ],
+  "status_rationale": "Four independent refutation wedges were run: (1) miracle/sign-instrument nucleus — refuted by mundane 20:18:3:1 and non-prophetic 20:66:6:2/26:44:3:2; (2) plural-broadening to 'sorcery-props generally' — refuted by the حِبَال contrast that isolates عِصِيّ as the rigid-rod member; (3) transformation wedge ('word means serpent') — refuted because عَصَا is the pre-transformation subject (فَأَلْقَىٰ عَصَاهُ فَإِذَا هِىَ ثُعْبَانٌ); (4) function-fragmentation — self-defeated by 20:18 packing multiple functions plus 'other uses' into one referent. All wedges failed; the unified concrete-noun claim survives with no failing occurrences and clear distinctiveness from ع ص ي and from حِبَال."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "ESw: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "ESw: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "ESw: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "ESw: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "ESw: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "ESw: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "ESw: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "ESw: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

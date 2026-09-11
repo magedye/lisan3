@@ -1,6 +1,6 @@
 {
   "campaign_id": "lisan-root-calibration",
-  "status": "BATCH_06_REPRESENTATION_REMEDIATION_COMPLETE",
+  "status": "BATCH_07_WAVE_01_COMPLETE",
   "verdict": "BATCH_06_REPRESENTATION_REMEDIATION_READY_FOR_FRESH_REVIEW",
   "produced_at": "2026-09-11",
   "reads_handoff": "artifacts/semantic-campaign/PHASE_1_HANDOFF.json",
@@ -21,10 +21,23 @@
   "calibration_batch_01": {
     "artifact": "artifacts/semantic-campaign/CALIBRATION_BATCH_01.json",
     "roots_processed": 8,
-    "roots": ["ktb", "slm", "Hkm", "Elm", "Amn", "kfr", "SbH", "byn"],
+    "roots": [
+      "ktb",
+      "slm",
+      "Hkm",
+      "Elm",
+      "Amn",
+      "kfr",
+      "SbH",
+      "byn"
+    ],
     "accepted_roots": 0,
     "preferred_internal_not_accepted": 8,
-    "adversarial_verify": {"SUPPORTED": 0, "PARTIALLY_SUPPORTED": 8, "REFUTED": 0},
+    "adversarial_verify": {
+      "SUPPORTED": 0,
+      "PARTIALLY_SUPPORTED": 8,
+      "REFUTED": 0
+    },
     "interpretation": "Every internal candidate was reduced to PARTIALLY_SUPPORTED by adversarial verification; universal-presence + verification bars correctly blocked acceptance. 0 accepted is the honest result, not a failure."
   },
   "historical_calibration_counts": {
@@ -53,7 +66,12 @@
       "roots": 20,
       "occurrences": 1780,
       "coverage_exact_set": true,
-      "outcomes": {"STRONG": 4, "MODERATE": 10, "WEAK": 4, "UNRESOLVED": 2},
+      "outcomes": {
+        "STRONG": 4,
+        "MODERATE": 10,
+        "WEAK": 4,
+        "UNRESOLVED": 2
+      },
       "contested_occurrences": 530,
       "resistant_occurrences": 528,
       "reconciliation_lineage_records": 2
@@ -63,7 +81,12 @@
       "roots": 20,
       "occurrences": 1318,
       "coverage_exact_set": true,
-      "outcomes": {"STRONG": 9, "MODERATE": 5, "WEAK": 3, "UNRESOLVED": 3},
+      "outcomes": {
+        "STRONG": 9,
+        "MODERATE": 5,
+        "WEAK": 3,
+        "UNRESOLVED": 3
+      },
       "contested_occurrences": 34,
       "resistant_occurrences": 34,
       "reconciliation_lineage_records": 0
@@ -72,7 +95,12 @@
       "status": "REPRESENTATION_REMEDIATION_APPLIED",
       "roots": 40,
       "occurrences": 3098,
-      "outcomes": {"STRONG": 12, "MODERATE": 8, "WEAK": 9, "UNRESOLVED": 11},
+      "outcomes": {
+        "STRONG": 12,
+        "MODERATE": 8,
+        "WEAK": 9,
+        "UNRESOLVED": 11
+      },
       "contested_occurrences": 564,
       "resistant_occurrences": 565,
       "reconciliation_lineage_records": 2
@@ -80,10 +108,10 @@
   },
   "current_campaign_counts": {
     "eligible_roots": 1642,
-    "processed_roots": 128,
-    "remaining_roots": 1514,
-    "research_complete": 128,
-    "canonicalization_pending": 128
+    "processed_roots": 148,
+    "remaining_roots": 1494,
+    "research_complete": 148,
+    "canonicalization_pending": 148
   },
   "boundaries": {
     "canonical_publication": "NOT_AUTHORIZED",
@@ -132,5 +160,22 @@
     "canonical_runtime_contract": "LISAN3_SEMANTIC_RUNTIME_V3_2026_09_06",
     "semantic_payload_frozen": true,
     "fresh_review_required": true
+  },
+  "batch07_current_checkpoint": {
+    "wave_01": {
+      "status": "COMPLETE",
+      "batch_id": "batch07-wave1",
+      "roots": 20,
+      "occurrences": 1470,
+      "coverage_exact_set": true,
+      "outcomes": {
+        "MODERATE": 11,
+        "STRONG": 4,
+        "UNRESOLVED": 5
+      },
+      "final_resistant_occurrences": 27,
+      "reconciliation_lineage_records": 27,
+      "report": "docs/LISAN3_BATCH_07_WAVE_01.md"
+    }
   }
 }

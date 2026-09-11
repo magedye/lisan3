@@ -1269,5 +1269,22 @@
       "confirmed_occurrences": 3,
       "tier": "xs"
     }
-  ]
+  ],
+  "wave_checkpoints": {
+    "wave_01": {
+      "status": "COMPLETE",
+      "batch_id": "batch07-wave1",
+      "roots": 20,
+      "occurrences": 1470,
+      "coverage_exact_set": true,
+      "outcomes": {
+        "MODERATE": 11,
+        "STRONG": 4,
+        "UNRESOLVED": 5
+      },
+      "final_resistant_occurrences": 27,
+      "reconciliation_lineage_records": 27,
+      "report": "docs/LISAN3_BATCH_07_WAVE_01.md"
+    }
+  }
 }

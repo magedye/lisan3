@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "batch07-wave1",
+  "revision_id": "BATCH_07_WAVE_01_OVERCLAIM_SWEEP_2026_09_11",
+  "method": "independent adversarial semantic-overclaim + contract-quality sweep (1 reviewer per assembled root, read-only)",
+  "contract": "LISAN3_SEMANTIC_RUNTIME_V3_2026_09_06",
+  "flagged_and_corrected": [
+    {
+      "root": "ywm",
+      "recommended_result_strength": "MODERATE",
+      "recommended_claim_scope": "REPRESENTATIVE",
+      "recommended_claim_scope_kind": "LEXICALIZED_CLASS",
+      "reason": "The persisted result asserts result_strength=STRONG and claim_scope=UNIVERSAL/ROOT_GENERALIZATION, but the artifact's own persisted evidence contradicts both. universal_presence_holds=False, unreconciled_count=5, and falsification_status=NOT_RUN. Five occurrences (10:102:5:1, 14:5:13:2, 3:140:10:2, 45:14:8:1, 69:24:7:2) carry final_disposition=RESISTANT and form ONE coherent lexicalized metonymic sub-class — the \"ayyam\" cluster where the word shifts from a counted period to the events/fates filling it: ayyam Allah = God's decisive interventions (14:5, 45:14), tilka al-ayyam nudawiluha = alternated fortunes (3:140), ayyam alladhina khalaw = the fates of former peoples (10:102), al-ayyam al-khaliya = bygone days (69:24). The persisted falsification_evidence itself sets verdict=SUPPORTED_WITH_RESISTANCE and status_rationale states the status is \"NOT_RUN (not PASSED) because genuine resistant seams persist,\" and the rejection_condition.failure_consequence explicitly prescribes demotion \"from UNIVERSAL/ROOT_GENERALIZATION to REPRESENTATIVE (LEXICALIZED_CLASS).\" Per the calibration rules, a coherent resistant lexicalized sub-class (several occurrences) AND falsification NOT_RUN with material resistance each independently bar STRONG, and a distinct class resisting the Quran-internal bridge bars UNIVERSAL. Honest values are MODERATE / REPRESENTATIVE / LEXICALIZED_CLASS."
+    },
+    {
+      "root": "jEl",
+      "recommended_result_strength": "MODERATE",
+      "recommended_claim_scope": "REPRESENTATIVE",
+      "recommended_claim_scope_kind": "DERIVATIONAL_FAMILY",
+      "reason": "Persisted STRONG/UNIVERSAL/ROOT_GENERALIZATION is contradicted by the artifact's own evidence. universal_presence_holds=False and unreconciled_count=2 (21:30:11:2 'wa-jaEalna mina l-ma'i kulla shay'in hayy'; 39:6:6:1 'thumma jaEala minha zawjaha'), both persisted as RESISTANT_SEAM hard cases that strain the nucleus's sole crisp, load-bearing negative boundary (jEl != origination, which is khalq's work). The packet verse_text confirms these are genuine origination-leaning uses, only mitigated (not neutralized) by a 'constitute-from-available-source' reading. falsification_status=NOT_RUN while material resistance persists; moreover falsification_evidence jEl-falsif-01 returned verdict NOT_CERTIFIED with failing_occurrences [21:30, 39:6] and states a clean SUPPORTED verdict is 'not warranted'. Per calibration, NOT_RUN/uncertified falsification + material resistance = not STRONG (MODERATE); a distinct sub-behavior resisting the Quran-internal boundary with universal_presence_holds=False = not UNIVERSAL/ROOT_GENERALIZATION (REPRESENTATIVE), and the nucleus is explicitly scoped 'Form I only' (DERIVATIONAL_FAMILY)."
+    },
+    {
+      "root": "$hd",
+      "recommended_result_strength": "MODERATE",
+      "recommended_claim_scope": "REPRESENTATIVE",
+      "recommended_claim_scope_kind": "DERIVATIONAL_FAMILY",
+      "reason": "The artifact publishes result_strength=STRONG and claim_scope=UNIVERSAL/ROOT_GENERALIZATION, but its own persisted evidence records a coherent RESISTANT lexicalized/nominal sub-class that defeats both. The cluster shahaadah_manifest_realm (disposition RESISTANT) contains 10 stable occurrences of al-shahaadah as the reified 'manifest realm' domain-noun in the fixed pair aalimu l-ghaybi wa-l-shahaadah (13:9:3:3, 23:92:3:3, 32:6:4:3, 39:46:8:3, 59:22:10:3, 62:8:14:3, 64:18:3:3, 6:73:21:3, 9:105:12:3, 9:94:26:3 — verse_text confirmed, e.g. 59:22 'عالم الغيب والشهادة', agent-less/act-less), plus 25:72 as an unresolved intra-field pole-ambiguity — 11 resistant_occurrences total. The artifact concedes these are bridged to the nucleus 'ONLY via cross-occurrence ghayb/shahaadah antonymy, which is an inference; no verse internally equates this domain-noun to any shahida act,' and 'the adversary is entitled to withhold assent on the internal bridge.' Per calibration, a coherent RESISTANT lexicalized nominal sub-class of several occurrences plus falsification_status=NOT_RUN with material resistance is NOT STRONG (-> MODERATE), and a distinct class that resists a Quran-internal bridge means the nucleus does not hold root-wide, so the scope is REPRESENTATIVE over the witnessing derivational family (verb I/IV/X, shaahid, shahiid, shuhadaa', shahaadah=testimony, mashhuud) — not UNIVERSAL/ROOT_GENERALIZATION.</recommended_claim_scope_kind>"
+    },
+    {
+      "root": "krh",
+      "recommended_result_strength": "MODERATE",
+      "recommended_claim_scope": null,
+      "recommended_claim_scope_kind": null,
+      "reason": "result_strength STRONG is not honestly supported. adversarial_verification.verdict is NOT_RUN (line 218) while material resistance persists: cluster A6 (kurh=hardship, 46:15:7:1 and 46:15:9:1) is a coherent RESISTANT nominal sub-class, listed in counterevidence and in coverage_validation.disputed_visible/unresolved_visible. Per calibration, falsification NOT_RUN combined with material resistance is NOT STRONG -> MODERATE. Additionally, the claimed DERIVATIONAL_FAMILY bundles the coercion branch (B2 akraha x5 at 10:99/16:106/20:73/24:33, B3 ikrah at 2:256/24:33) to the aversion core via a bridge the artifact itself concedes is inferential and textually unenacted ('no single verse pairs stative kariha with Form IV akraha; Form IV is not the causative of Form I; the aversion vs coercion corpora are near-disjoint'), so the family is not distinctively unified enough to carry STRONG. The aversion core is genuinely distinctive (in-verse antonyms 2:216 tuhibbu, 49:7 habbaba, 47:28 ridwan, tawʿ/karh frames), which supports MODERATE, not WEAK."
+    },
+    {
+      "root": "glm",
+      "recommended_result_strength": null,
+      "recommended_claim_scope": "REPRESENTATIVE",
+      "recommended_claim_scope_kind": "LEXICALIZED_CLASS",
+      "reason": "The root غ ل م surfaces in the Quran EXCLUSIVELY as one frozen common noun غلام (13/13 tokens all qac_pos=N, qac_verb_form=null), with only inflectional number variation (sg/dual/broken-pl). The artifact itself concedes this: \"A single lexicalized common noun... the root cannot exhibit multiple unbridged derivational classes\" and \"Because the root is exclusively nominal, no verbal core is claimed\" (layer_attribution.lexical_class; rationale). There is NO derivational family (no verb, participle, or masdar) over which to abstract a root-level law. Labeling a mono-lexemic frozen noun as claim_scope UNIVERSAL / claim_scope_kind ROOT_GENERALIZATION overstates lexeme-only evidence as a productive root generalization — the honest characterization is a LEXICALIZED_CLASS (REPRESENTATIVE). The core semantic content (\"young human male\") is genuine and well-attested, so result_strength STRONG is defensible WITHIN that honest lexicalized scope (13/13 male is exceptionless, the بشر contrast at 19:20 and the أَشُدّ ceiling at 18:82 are real, the 'son' competitor is correctly defeated by 52:24/12:19/18:74, resistant_occurrences=[] is honest, and falsification genuinely RAN and PASSED with a real rejection condition). Hence I leave strength unchanged and flag only the scope inflation."
+    },
+    {
+      "root": "yAs",
+      "recommended_result_strength": "MODERATE",
+      "recommended_claim_scope": null,
+      "recommended_claim_scope_kind": null,
+      "reason": "result_strength=STRONG is a material overclaim. The calibration rule bars STRONG when falsification_status=NOT_RUN combined with material resistance, and both hold: falsification_evidence.verdict=NOT_RUN (failing_occurrences=[13:31:20:1]) and adversarial_verification.verdict=NOT_RUN — no adversarial refutation certified PASSED. 13:31:20:1 is a genuine unresolved resistant seam (unique propositional ʾan-clause abandoning the `min` frame, inverted evaluative polarity vs 12:87), and the artifact itself concedes the competing polysemy/homonym ('come to know') hypothesis is 'honest and locally undefeated at the 13:31 node on Quran-internal grounds.' The artifact is internally inconsistent with STRONG: universal_presence_holds=false, unreconciled_count=1, resistant_occurrences=[13:31:20:1], counterevidence_refs=[13:31:20:1]. STRONG also requires adversarial support and no substantial unresolved resistant sub-class, neither met. The honest strength is MODERATE. claim_scope=REPRESENTATIVE / claim_scope_kind=DERIVATIONAL_FAMILY are correct and unchanged — the 12/13 nucleus is genuinely distinctive and well-attested (65:4 refutes affect-core, 5:3 refutes desired-object, 12:110 refutes factivity; contrasted Quran-internally with q-n-ṭ/k-f-r/s-ʾ-m), and the scope rightly stops short of UNIVERSAL because 13:31 resists."
+    },
+    {
+      "root": "jvw",
+      "recommended_result_strength": "MODERATE",
+      "recommended_claim_scope": "REPRESENTATIVE",
+      "recommended_claim_scope_kind": "LEXICALIZED_CLASS",
+      "reason": "Scope is overclaimed. claim_scope=UNIVERSAL / claim_scope_kind=ROOT_GENERALIZATION are not supported: all 3/3 occurrences are one participial lexeme (جِثِيًّا at 19:68:8:1 and 19:72:8:1, جَاثِيَةً at 45:28:4:1) differing only by agreement, all in the accusative حال slot, all in a single eschatological register, with qac_verb_form=null and no second derivation attested. The artifact's own layer_attribution concedes 'Single active-participle derivation', 'One nominal/participial lexical class', and a 'single low-variance حال/eschatological frame', yet promotes this into 'a genuine root-wide generalization' and 'the root's universal contribution'. That is sparse lexeme-only evidence presented as a productive root law: nothing licenses a claim about the abstract root ج-ث-و beyond the attested lexeme جاثٍ. Honest scope is REPRESENTATIVE / LEXICALIZED_CLASS. result_strength=MODERATE is left unchanged because it is correctly capped (n=3 stated, STRONG explicitly declined) and falsification was genuinely run (PASSED via two real refutation routes: 45:28 كُلَّ أُمَّةٍ defeats punitive-narrowing; حَوْلَ/فِيهَا minimal pair defeats the location hypothesis), with resistant_occurrences=[] honestly earned by a sequence-based 19:72 reconciliation."
+    }
+  ],
+  "cleared": [
+    "wEd",
+    "dnw",
+    "bHr",
+    "ذ",
+    "hwy",
+    "Any",
+    "ص",
+    "qrD",
+    "ع",
+    "SrSr",
+    "ب",
+    "hTE",
+    "fqd"
+  ],
+  "disposition": "All flagged overclaims were corrected (strength/scope downgraded) before the wave checkpoint; corrections re-validated at 0 canonical contract errors."
+}

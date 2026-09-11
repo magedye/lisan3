@@ -1,0 +1,822 @@
+{
+ "root_arabic": "ق ر ض",
+ "root_buckwalter": "qrD",
+ "root_id": "qrD",
+ "artifact_name": "qr_44_.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave1",
+ "occurrences": 13,
+ "frozen_candidate_root_contribution": null,
+ "internal_discovery": {
+  "candidate_root_contribution": null,
+  "plain_explanation": "The 13 occurrences of ق ر ض split cleanly along morphology into two populations that the Quran never internally bridges. Twelve occurrences (six verses) are a single frozen collocation: a Form IV verb (aqraDa/yuqriDu/tuqriDu) directed at ٱللَّهَ, welded to its cognate accusative قَرْضًا حَسَنًا, and in every case followed by a guaranteed amplified return — يُضَٰعِف (2:245, 57:11, 57:18, 64:17), أَجْر (57:11, 57:18, 73:20), تُرْجَعُون (2:245), تُكَفِّر/تُدْخِل (5:12), and the self-gloss تُقَدِّمُوا۟...تَجِدُوهُ عِندَ ٱللَّهِ (73:20). The single remaining occurrence (18:17:12:1) is the only Form I verb: the setting sun تَّقْرِضُهُمْ ذَاتَ ٱلشِّمَالِ — it passes/veers past the sleepers to the left, with no giver, no recipient, no thing transferred, and no return. A concrete single gloss fails both ways: 'lend/advance' is nonsensical for the sun, and 'veer past' is nonsensical toward Allah. The only available unifier ('set apart / cut off a portion to a side') is either too vague to be useful or rests on an undemonstrated 'cutting' feature that no verse states, and is witnessed on the spatial side by exactly one token whose in-verse parallel (tazāwaru, z-w-r) points to lateral avoidance rather than severance. The honest result is two unbridged classes, not one nucleus.",
+  "layer_separation_note": "qrD does NOT reduce to almsgiving/plain giving: 73:20 and 5:12 place ءَاتُوا۟/ءَاتَيْتُمُ ٱلزَّكَوٰةَ in the SAME verse as وَأَقْرِضُوا۟/وَأَقْرَضْتُمُ ٱللَّهَ قَرْضًا, keeping them distinct — the differentia of the Form-IV class is the return/restoration framing absent from a one-way gift. qrD does NOT entail an irrecoverable outlay (every Form-IV verse foregrounds it coming back multiplied/rewarded/remitted). qrD does NOT name the commodity (the object is only qualified حَسَنًا, never specified as wealth/money). The moral 'goodly' valence is carried by the adjective حَسَنًا and context, not by the root. In 18:17 the ‑هُم object is the party AVOIDED/passed-by, not a beneficiary — so 'recipient' is not a root-level entailment; and the spatial sense entails non-contact/passing-aside, never destructive cutting-into.",
+  "presence": {
+   "occurrences_total": 13,
+   "occurrences_checked": 13,
+   "occurrences_consistent": 12,
+   "inconsistent_refs": [
+    "18:17:12:1"
+   ]
+  },
+  "strongest_counterexample": "18:17:12:1 (تَّقْرِضُهُمْ): at sunset the sun taqriDu-hum ذَاتَ ٱلشِّمَالِ (toward the left side), set in strict parallel with تَّزَٰوَرُ (z-w-r) at sunrise; there is no giver, no recipient, no thing transferred, and no return/amplification, and it is the sole Form I token — it breaks any single 'lend/advance' gloss and cannot be bridged to the Form-IV covenantal-loan class without importing an undemonstrated 'cutting/parting-off' nucleus that no verse states.",
+  "strongest_competitor": "A single abstract nucleus 'to set/part off (a bounded portion) to one side / cut across' — Class A = a portion of wealth parted off and advanced to Allah; Class B = the sun's course parted off laterally past the sleepers. Rejected Quran-internally because: (1) it is too vague — 'directed setting-apart/transfer' fits ءَاتَى/أَعْطَى/أَرْسَلَ equally, and the methodology forbids an abstraction that fits everything; (2) no shared feature is demonstrated — Class A's criterial marker (return/amplification) is absent in 18:17, and 18:17's criterial marker (physical directionality toward ذَاتَ ٱلشِّمَالِ) is absent in Class A; (3) the 'cutting/parting' component is nowhere shown in the 12 loan occurrences (they show only advance→return) and would be imported etymology, which the source policy bars; (4) there is no bridging occurrence where the senses co-occur or gloss each other, and the only cross-root gloss (z-w-r) touches 18:17's scene, pointing to lateral avoidance rather than severing a portion; (5) the binyan and argument structure diverge (Form I with passed-by object vs Form IV with divine recipient + cognate object).",
+  "competing_hypothesis": "A single abstract nucleus 'to set/part off (a bounded portion) to one side / cut across' — Class A = a portion of wealth parted off and advanced to Allah; Class B = the sun's course parted off laterally past the sleepers. Rejected Quran-internally because: (1) it is too vague — 'directed setting-apart/transfer' fits ءَاتَى/أَعْطَى/أَرْسَلَ equally, and the methodology forbids an abstraction that fits everything; (2) no shared feature is demonstrated — Class A's criterial marker (return/amplification) is absent in 18:17, and 18:17's criterial marker (physical directionality toward ذَاتَ ٱلشِّمَالِ) is absent in Class A; (3) the 'cutting/parting' component is nowhere shown in the 12 loan occurrences (they show only advance→return) and would be imported etymology, which the source policy bars; (4) there is no bridging occurrence where the senses co-occur or gloss each other, and the only cross-root gloss (z-w-r) touches 18:17's scene, pointing to lateral avoidance rather than severing a portion; (5) the binyan and argument structure diverge (Form I with passed-by object vs Form IV with divine recipient + cognate object).",
+  "unresolved_cases": [],
+  "result": "UNRESOLVED",
+  "result_strength": "UNRESOLVED",
+  "rationale": "All three lenses (two constructive, one adversarial) independently converge on the same partition and the same verdict: a within-class-strong but formula-bound Form-IV loan idiom (one collocational template sampled six times, so its consistency is inflated by repetition, not broad lexical range) plus one structurally isolated Form-I spatial token, with NO Quran-internal occurrence mediating between them. Per the principles (prefer the narrowest supported account; a vague abstraction is not useful; one witness cannot establish a nucleus; same root ≠ one meaning), forcing a single root nucleus would exceed what the packet licenses. The contract mandate — when two senses have no Quran-internal bridge, choose UNRESOLVED rather than force unity — governs here, so the whole-root judgment is UNRESOLVED with the two classes reported as scoped observations inside the clusters.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "A_form_IV_plus_cognate_qarD",
+     "where": {
+      "word_refs": [
+       "2:245:4:1",
+       "2:245:6:1",
+       "57:11:4:1",
+       "57:11:6:1",
+       "57:18:4:2",
+       "57:18:6:1",
+       "5:12:24:2",
+       "5:12:26:1",
+       "64:17:2:1",
+       "64:17:4:1",
+       "73:20:57:2",
+       "73:20:59:1"
+      ]
+     },
+     "occurrence_count_expected": 12,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Fixed Form-IV collocation «aqraDa/yuqriDu/tuqriDu ٱللَّهَ قَرْضًا حَسَنًا»: to make over to Allah a set-apart good portion, constituted as a return-bearing transfer that is restored amplified (multiplication/reward/forgiveness/expiation). The object is always ٱللَّهَ, never a human; the noun is in every case the cognate accusative of its own verb in the same clause; the qualifier is invariably حَسَنًا; and the return is present in all six verses. Return/reciprocity is criterial, not incidental — this is what separates qarD from plain zakāt/gift, which stand distinct in the same verses (5:12, 73:20).",
+     "classification_rationale": "Semantically uniform across all six verses and internally near-perfect, BUT the twelve tokens are not twelve independent witnesses: the six nouns are cognate accusatives welded to their six Form-IV verbs, so the class rests on ONE collocational template instantiated six times. CONSISTENT within the class; consistency ≠ universal establishment, and it does not license a root-wide nucleus because it cannot be bridged to 18:17.",
+     "supporting_evidence_note": "Return-markers per verse: فَيُضَٰعِفَهُۥ...أَضْعَافًا كَثِيرَةً + وَإِلَيْهِ تُرْجَعُونَ (2:245); يُضَٰعِفَهُۥ + أَجْرٌ كَرِيمٌ (57:11); يُضَٰعَفُ لَهُمْ + أَجْرٌ كَرِيمٌ (57:18); لَّأُكَفِّرَنَّ...سَيِّـَٔاتِكُمْ + جَنَّٰتٍ (5:12); يُضَٰعِفْهُ لَكُمْ + يَغْفِرْ لَكُمْ (64:17); وَمَا تُقَدِّمُوا۟...تَجِدُوهُ عِندَ ٱللَّهِ...أَعْظَمَ أَجْرًا (73:20). Same-verse contrast with ٱلزَّكَوٰةَ (5:12, 73:20) confirms non-synonymy with plain giving.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "B_form_I_spatial_singleton",
+     "where": {
+      "word_refs": [
+       "18:17:12:1"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "Sole Form-I use: of the setting sun, to pass/veer to one side of (an object), carrying its course away laterally so its light does not fall on them (non-contact). Object ‑هُم = the party passed-by/avoided; adverbial ذَاتَ ٱلشِّمَالِ = the left side.",
+     "classification_rationale": "Isolated on every discriminating axis: only Form I, only physical subject, only non-loan sense, only occurrence with no recipient/transfer/return, and the only one whose object is the passed-by entity rather than a beneficiary. A single, structurally isolated datum cannot establish a root nucleus, and it resists the dominant transactional account entirely; its own force ('veer/pass aside', read via the in-verse tazāwaru parallel) is not clearly 'severing a portion', so it also resists the thin unifier.",
+     "supporting_evidence_note": "وَإِذَا غَرَبَت تَّقْرِضُهُمْ ذَاتَ ٱلشِّمَالِ paralleled with the sunrise verb تَّزَٰوَرُ عَن كَهْفِهِمْ ذَاتَ ٱلْيَمِينِ (root z-w-r), which glosses the scene, not the root; both verbs describe the sun's course avoiding the sleepers.",
+     "counterevidence": [
+      "18:17:12:1"
+     ]
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "qrD",
+  "verdict": "NOT_REQUIRED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": false,
+  "falsifiable": false,
+  "notes": "No universal root nucleus is claimed (claim_scope_kind=UNRESOLVED_CLASS_ONLY), so adversarial refutation of a root-wide meaning is not required. The adversarial lens (C) was applied and confirmed the two-class partition and the absence of any Quran-internal bridge; the strongest unifier was tested and rejected as vague/undemonstrated rather than refuted-then-held."
+ },
+ "coverage_validation": {
+  "root": "qrD",
+  "expected_count": 13,
+  "researched_count": 13,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [
+   "18:17:12:1"
+  ],
+  "unresolved_visible": [
+   "18:17:12:1"
+  ]
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "18:17:12:1",
+   "disposition": "RESISTANT",
+   "note": "Isolated on every discriminating axis: only Form I, only physical subject, only non-loan sense, only occurrence with no recipient/transfer/return, and the only one whose object is the passed-by entity rather than a beneficiary. A single, structurally isolated datum cannot establish a root nucleus, and it resists the dominant transactional account entirely; its own force ('veer/pass aside', read via the in-verse tazāwaru parallel) is not clearly 'severing a portion', so it also resists the thin unifier.",
+   "coverage_cluster_id": "B_form_I_spatial_singleton",
+   "candidate_semantic_interpretation": "Sole Form-I use: of the setting sun, to pass/veer to one side of (an object), carrying its course away laterally so its light does not fall on them (non-contact). Object ‑هُم = the party passed-by/avoided; adverbial ذَاتَ ٱلشِّمَالِ = the left side.",
+   "cluster_supporting_evidence": "وَإِذَا غَرَبَت تَّقْرِضُهُمْ ذَاتَ ٱلشِّمَالِ paralleled with the sunrise verb تَّزَٰوَرُ عَن كَهْفِهِمْ ذَاتَ ٱلْيَمِينِ (root z-w-r), which glosses the scene, not the root; both verbs describe the sun's course avoiding the sleepers.",
+   "counterevidence": [
+    "18:17:12:1"
+   ],
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "Isolated on every discriminating axis: only Form I, only physical subject, only non-loan sense, only occurrence with no recipient/transfer/return, and the only one whose object is the passed-by entity rather than a beneficiary. A single, structurally isolated datum cannot establish a root nucleus, and it resists the dominant transactional account entirely; its own force ('veer/pass aside', read via the in-verse tazāwaru parallel) is not clearly 'severing a portion', so it also resists the thin unifier.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "18:17",
+     "verse_text": "وَتَرَى ٱلشَّمْسَ إِذَا طَلَعَت تَّزَٰوَرُ عَن كَهْفِهِمْ ذَاتَ ٱلْيَمِينِ وَإِذَا غَرَبَت تَّقْرِضُهُمْ ذَاتَ ٱلشِّمَالِ وَهُمْ فِى فَجْوَةٍ مِّنْهُ ذَٰلِكَ مِنْ ءَايَٰتِ ٱللَّهِ مَن يَهْدِ ٱللَّهُ فَهُوَ ٱلْمُهْتَدِ وَمَن يُضْلِلْ فَلَن تَجِدَ لَهُۥ وَلِيًّا مُّرْشِدًا"
+    }
+   ],
+   "root_arabic": "ق ر ض",
+   "root_buckwalter": "qrD",
+   "root_id": "qrD",
+   "artifact_name": "qr_44_.json",
+   "verse_ref": "18:17",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "t~aqoriDu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَتَرَى ٱلشَّمْسَ إِذَا طَلَعَت تَّزَٰوَرُ عَن كَهْفِهِمْ ذَاتَ ٱلْيَمِينِ وَإِذَا غَرَبَت تَّقْرِضُهُمْ ذَاتَ ٱلشِّمَالِ وَهُمْ فِى فَجْوَةٍ مِّنْهُ ذَٰلِكَ مِنْ ءَايَٰتِ ٱللَّهِ مَن يَهْدِ ٱللَّهُ فَهُوَ ٱلْمُهْتَدِ وَمَن يُضْلِلْ فَلَن تَجِدَ لَهُۥ وَلِيًّا مُّرْشِدًا",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "2:245:4:1",
+   "disposition": "CONSISTENT",
+   "note": "Semantically uniform across all six verses and internally near-perfect, BUT the twelve tokens are not twelve independent witnesses: the six nouns are cognate accusatives welded to their six Form-IV verbs, so the class rests on ONE collocational template instantiated six times. CONSISTENT within the class; consistency ≠ universal establishment, and it does not license a root-wide nucleus because it cannot be bridged to 18:17.",
+   "coverage_cluster_id": "A_form_IV_plus_cognate_qarD",
+   "candidate_semantic_interpretation": "Fixed Form-IV collocation «aqraDa/yuqriDu/tuqriDu ٱللَّهَ قَرْضًا حَسَنًا»: to make over to Allah a set-apart good portion, constituted as a return-bearing transfer that is restored amplified (multiplication/reward/forgiveness/expiation). The object is always ٱللَّهَ, never a human; the noun is in every case the cognate accusative of its own verb in the same clause; the qualifier is invariably حَسَنًا; and the return is present in all six verses. Return/reciprocity is criterial, not incidental — this is what separates qarD from plain zakāt/gift, which stand distinct in the same verses (5:12, 73:20).",
+   "cluster_supporting_evidence": "Return-markers per verse: فَيُضَٰعِفَهُۥ...أَضْعَافًا كَثِيرَةً + وَإِلَيْهِ تُرْجَعُونَ (2:245); يُضَٰعِفَهُۥ + أَجْرٌ كَرِيمٌ (57:11); يُضَٰعَفُ لَهُمْ + أَجْرٌ كَرِيمٌ (57:18); لَّأُكَفِّرَنَّ...سَيِّـَٔاتِكُمْ + جَنَّٰتٍ (5:12); يُضَٰعِفْهُ لَكُمْ + يَغْفِرْ لَكُمْ (64:17); وَمَا تُقَدِّمُوا۟...تَجِدُوهُ عِندَ ٱللَّهِ...أَعْظَمَ أَجْرًا (73:20). Same-verse contrast with ٱلزَّكَوٰةَ (5:12, 73:20) confirms non-synonymy with plain giving.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Semantically uniform across all six verses and internally near-perfect, BUT the twelve tokens are not twelve independent witnesses: the six nouns are cognate accusatives welded to their six Form-IV verbs, so the class rests on ONE collocational template instantiated six times. CONSISTENT within the class; consistency ≠ universal establishment, and it does not license a root-wide nucleus because it cannot be bridged to 18:17.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:245",
+     "verse_text": "مَّن ذَا ٱلَّذِى يُقْرِضُ ٱللَّهَ قَرْضًا حَسَنًا فَيُضَٰعِفَهُۥ لَهُۥٓ أَضْعَافًا كَثِيرَةً وَٱللَّهُ يَقْبِضُ وَيَبْصُۜطُ وَإِلَيْهِ تُرْجَعُونَ"
+    }
+   ],
+   "root_arabic": "ق ر ض",
+   "root_buckwalter": "qrD",
+   "root_id": "qrD",
+   "artifact_name": "qr_44_.json",
+   "verse_ref": "2:245",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yuqoriDu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "مَّن ذَا ٱلَّذِى يُقْرِضُ ٱللَّهَ قَرْضًا حَسَنًا فَيُضَٰعِفَهُۥ لَهُۥٓ أَضْعَافًا كَثِيرَةً وَٱللَّهُ يَقْبِضُ وَيَبْصُۜطُ وَإِلَيْهِ تُرْجَعُونَ"
+  },
+  {
+   "word_ref": "2:245:6:1",
+   "disposition": "CONSISTENT",
+   "note": "Semantically uniform across all six verses and internally near-perfect, BUT the twelve tokens are not twelve independent witnesses: the six nouns are cognate accusatives welded to their six Form-IV verbs, so the class rests on ONE collocational template instantiated six times. CONSISTENT within the class; consistency ≠ universal establishment, and it does not license a root-wide nucleus because it cannot be bridged to 18:17.",
+   "coverage_cluster_id": "A_form_IV_plus_cognate_qarD",
+   "candidate_semantic_interpretation": "Fixed Form-IV collocation «aqraDa/yuqriDu/tuqriDu ٱللَّهَ قَرْضًا حَسَنًا»: to make over to Allah a set-apart good portion, constituted as a return-bearing transfer that is restored amplified (multiplication/reward/forgiveness/expiation). The object is always ٱللَّهَ, never a human; the noun is in every case the cognate accusative of its own verb in the same clause; the qualifier is invariably حَسَنًا; and the return is present in all six verses. Return/reciprocity is criterial, not incidental — this is what separates qarD from plain zakāt/gift, which stand distinct in the same verses (5:12, 73:20).",
+   "cluster_supporting_evidence": "Return-markers per verse: فَيُضَٰعِفَهُۥ...أَضْعَافًا كَثِيرَةً + وَإِلَيْهِ تُرْجَعُونَ (2:245); يُضَٰعِفَهُۥ + أَجْرٌ كَرِيمٌ (57:11); يُضَٰعَفُ لَهُمْ + أَجْرٌ كَرِيمٌ (57:18); لَّأُكَفِّرَنَّ...سَيِّـَٔاتِكُمْ + جَنَّٰتٍ (5:12); يُضَٰعِفْهُ لَكُمْ + يَغْفِرْ لَكُمْ (64:17); وَمَا تُقَدِّمُوا۟...تَجِدُوهُ عِندَ ٱللَّهِ...أَعْظَمَ أَجْرًا (73:20). Same-verse contrast with ٱلزَّكَوٰةَ (5:12, 73:20) confirms non-synonymy with plain giving.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Semantically uniform across all six verses and internally near-perfect, BUT the twelve tokens are not twelve independent witnesses: the six nouns are cognate accusatives welded to their six Form-IV verbs, so the class rests on ONE collocational template instantiated six times. CONSISTENT within the class; consistency ≠ universal establishment, and it does not license a root-wide nucleus because it cannot be bridged to 18:17.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:245",
+     "verse_text": "مَّن ذَا ٱلَّذِى يُقْرِضُ ٱللَّهَ قَرْضًا حَسَنًا فَيُضَٰعِفَهُۥ لَهُۥٓ أَضْعَافًا كَثِيرَةً وَٱللَّهُ يَقْبِضُ وَيَبْصُۜطُ وَإِلَيْهِ تُرْجَعُونَ"
+    }
+   ],
+   "root_arabic": "ق ر ض",
+   "root_buckwalter": "qrD",
+   "root_id": "qrD",
+   "artifact_name": "qr_44_.json",
+   "verse_ref": "2:245",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "qaroDFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "مَّن ذَا ٱلَّذِى يُقْرِضُ ٱللَّهَ قَرْضًا حَسَنًا فَيُضَٰعِفَهُۥ لَهُۥٓ أَضْعَافًا كَثِيرَةً وَٱللَّهُ يَقْبِضُ وَيَبْصُۜطُ وَإِلَيْهِ تُرْجَعُونَ"
+  },
+  {
+   "word_ref": "57:11:4:1",
+   "disposition": "CONSISTENT",
+   "note": "Semantically uniform across all six verses and internally near-perfect, BUT the twelve tokens are not twelve independent witnesses: the six nouns are cognate accusatives welded to their six Form-IV verbs, so the class rests on ONE collocational template instantiated six times. CONSISTENT within the class; consistency ≠ universal establishment, and it does not license a root-wide nucleus because it cannot be bridged to 18:17.",
+   "coverage_cluster_id": "A_form_IV_plus_cognate_qarD",
+   "candidate_semantic_interpretation": "Fixed Form-IV collocation «aqraDa/yuqriDu/tuqriDu ٱللَّهَ قَرْضًا حَسَنًا»: to make over to Allah a set-apart good portion, constituted as a return-bearing transfer that is restored amplified (multiplication/reward/forgiveness/expiation). The object is always ٱللَّهَ, never a human; the noun is in every case the cognate accusative of its own verb in the same clause; the qualifier is invariably حَسَنًا; and the return is present in all six verses. Return/reciprocity is criterial, not incidental — this is what separates qarD from plain zakāt/gift, which stand distinct in the same verses (5:12, 73:20).",
+   "cluster_supporting_evidence": "Return-markers per verse: فَيُضَٰعِفَهُۥ...أَضْعَافًا كَثِيرَةً + وَإِلَيْهِ تُرْجَعُونَ (2:245); يُضَٰعِفَهُۥ + أَجْرٌ كَرِيمٌ (57:11); يُضَٰعَفُ لَهُمْ + أَجْرٌ كَرِيمٌ (57:18); لَّأُكَفِّرَنَّ...سَيِّـَٔاتِكُمْ + جَنَّٰتٍ (5:12); يُضَٰعِفْهُ لَكُمْ + يَغْفِرْ لَكُمْ (64:17); وَمَا تُقَدِّمُوا۟...تَجِدُوهُ عِندَ ٱللَّهِ...أَعْظَمَ أَجْرًا (73:20). Same-verse contrast with ٱلزَّكَوٰةَ (5:12, 73:20) confirms non-synonymy with plain giving.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Semantically uniform across all six verses and internally near-perfect, BUT the twelve tokens are not twelve independent witnesses: the six nouns are cognate accusatives welded to their six Form-IV verbs, so the class rests on ONE collocational template instantiated six times. CONSISTENT within the class; consistency ≠ universal establishment, and it does not license a root-wide nucleus because it cannot be bridged to 18:17.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "57:11",
+     "verse_text": "مَّن ذَا ٱلَّذِى يُقْرِضُ ٱللَّهَ قَرْضًا حَسَنًا فَيُضَٰعِفَهُۥ لَهُۥ وَلَهُۥٓ أَجْرٌ كَرِيمٌ"
+    }
+   ],
+   "root_arabic": "ق ر ض",
+   "root_buckwalter": "qrD",
+   "root_id": "qrD",
+   "artifact_name": "qr_44_.json",
+   "verse_ref": "57:11",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yuqoriDu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "مَّن ذَا ٱلَّذِى يُقْرِضُ ٱللَّهَ قَرْضًا حَسَنًا فَيُضَٰعِفَهُۥ لَهُۥ وَلَهُۥٓ أَجْرٌ كَرِيمٌ"
+  },
+  {
+   "word_ref": "57:11:6:1",
+   "disposition": "CONSISTENT",
+   "note": "Semantically uniform across all six verses and internally near-perfect, BUT the twelve tokens are not twelve independent witnesses: the six nouns are cognate accusatives welded to their six Form-IV verbs, so the class rests on ONE collocational template instantiated six times. CONSISTENT within the class; consistency ≠ universal establishment, and it does not license a root-wide nucleus because it cannot be bridged to 18:17.",
+   "coverage_cluster_id": "A_form_IV_plus_cognate_qarD",
+   "candidate_semantic_interpretation": "Fixed Form-IV collocation «aqraDa/yuqriDu/tuqriDu ٱللَّهَ قَرْضًا حَسَنًا»: to make over to Allah a set-apart good portion, constituted as a return-bearing transfer that is restored amplified (multiplication/reward/forgiveness/expiation). The object is always ٱللَّهَ, never a human; the noun is in every case the cognate accusative of its own verb in the same clause; the qualifier is invariably حَسَنًا; and the return is present in all six verses. Return/reciprocity is criterial, not incidental — this is what separates qarD from plain zakāt/gift, which stand distinct in the same verses (5:12, 73:20).",
+   "cluster_supporting_evidence": "Return-markers per verse: فَيُضَٰعِفَهُۥ...أَضْعَافًا كَثِيرَةً + وَإِلَيْهِ تُرْجَعُونَ (2:245); يُضَٰعِفَهُۥ + أَجْرٌ كَرِيمٌ (57:11); يُضَٰعَفُ لَهُمْ + أَجْرٌ كَرِيمٌ (57:18); لَّأُكَفِّرَنَّ...سَيِّـَٔاتِكُمْ + جَنَّٰتٍ (5:12); يُضَٰعِفْهُ لَكُمْ + يَغْفِرْ لَكُمْ (64:17); وَمَا تُقَدِّمُوا۟...تَجِدُوهُ عِندَ ٱللَّهِ...أَعْظَمَ أَجْرًا (73:20). Same-verse contrast with ٱلزَّكَوٰةَ (5:12, 73:20) confirms non-synonymy with plain giving.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Semantically uniform across all six verses and internally near-perfect, BUT the twelve tokens are not twelve independent witnesses: the six nouns are cognate accusatives welded to their six Form-IV verbs, so the class rests on ONE collocational template instantiated six times. CONSISTENT within the class; consistency ≠ universal establishment, and it does not license a root-wide nucleus because it cannot be bridged to 18:17.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "57:11",
+     "verse_text": "مَّن ذَا ٱلَّذِى يُقْرِضُ ٱللَّهَ قَرْضًا حَسَنًا فَيُضَٰعِفَهُۥ لَهُۥ وَلَهُۥٓ أَجْرٌ كَرِيمٌ"
+    }
+   ],
+   "root_arabic": "ق ر ض",
+   "root_buckwalter": "qrD",
+   "root_id": "qrD",
+   "artifact_name": "qr_44_.json",
+   "verse_ref": "57:11",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "qaroDFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "مَّن ذَا ٱلَّذِى يُقْرِضُ ٱللَّهَ قَرْضًا حَسَنًا فَيُضَٰعِفَهُۥ لَهُۥ وَلَهُۥٓ أَجْرٌ كَرِيمٌ"
+  },
+  {
+   "word_ref": "57:18:4:2",
+   "disposition": "CONSISTENT",
+   "note": "Semantically uniform across all six verses and internally near-perfect, BUT the twelve tokens are not twelve independent witnesses: the six nouns are cognate accusatives welded to their six Form-IV verbs, so the class rests on ONE collocational template instantiated six times. CONSISTENT within the class; consistency ≠ universal establishment, and it does not license a root-wide nucleus because it cannot be bridged to 18:17.",
+   "coverage_cluster_id": "A_form_IV_plus_cognate_qarD",
+   "candidate_semantic_interpretation": "Fixed Form-IV collocation «aqraDa/yuqriDu/tuqriDu ٱللَّهَ قَرْضًا حَسَنًا»: to make over to Allah a set-apart good portion, constituted as a return-bearing transfer that is restored amplified (multiplication/reward/forgiveness/expiation). The object is always ٱللَّهَ, never a human; the noun is in every case the cognate accusative of its own verb in the same clause; the qualifier is invariably حَسَنًا; and the return is present in all six verses. Return/reciprocity is criterial, not incidental — this is what separates qarD from plain zakāt/gift, which stand distinct in the same verses (5:12, 73:20).",
+   "cluster_supporting_evidence": "Return-markers per verse: فَيُضَٰعِفَهُۥ...أَضْعَافًا كَثِيرَةً + وَإِلَيْهِ تُرْجَعُونَ (2:245); يُضَٰعِفَهُۥ + أَجْرٌ كَرِيمٌ (57:11); يُضَٰعَفُ لَهُمْ + أَجْرٌ كَرِيمٌ (57:18); لَّأُكَفِّرَنَّ...سَيِّـَٔاتِكُمْ + جَنَّٰتٍ (5:12); يُضَٰعِفْهُ لَكُمْ + يَغْفِرْ لَكُمْ (64:17); وَمَا تُقَدِّمُوا۟...تَجِدُوهُ عِندَ ٱللَّهِ...أَعْظَمَ أَجْرًا (73:20). Same-verse contrast with ٱلزَّكَوٰةَ (5:12, 73:20) confirms non-synonymy with plain giving.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Semantically uniform across all six verses and internally near-perfect, BUT the twelve tokens are not twelve independent witnesses: the six nouns are cognate accusatives welded to their six Form-IV verbs, so the class rests on ONE collocational template instantiated six times. CONSISTENT within the class; consistency ≠ universal establishment, and it does not license a root-wide nucleus because it cannot be bridged to 18:17.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "57:18",
+     "verse_text": "إِنَّ ٱلْمُصَّدِّقِينَ وَٱلْمُصَّدِّقَٰتِ وَأَقْرَضُوا۟ ٱللَّهَ قَرْضًا حَسَنًا يُضَٰعَفُ لَهُمْ وَلَهُمْ أَجْرٌ كَرِيمٌ"
+    }
+   ],
+   "root_arabic": "ق ر ض",
+   "root_buckwalter": "qrD",
+   "root_id": "qrD",
+   "artifact_name": "qr_44_.json",
+   "verse_ref": "57:18",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">aqoraDu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱلْمُصَّدِّقِينَ وَٱلْمُصَّدِّقَٰتِ وَأَقْرَضُوا۟ ٱللَّهَ قَرْضًا حَسَنًا يُضَٰعَفُ لَهُمْ وَلَهُمْ أَجْرٌ كَرِيمٌ"
+  },
+  {
+   "word_ref": "57:18:6:1",
+   "disposition": "CONSISTENT",
+   "note": "Semantically uniform across all six verses and internally near-perfect, BUT the twelve tokens are not twelve independent witnesses: the six nouns are cognate accusatives welded to their six Form-IV verbs, so the class rests on ONE collocational template instantiated six times. CONSISTENT within the class; consistency ≠ universal establishment, and it does not license a root-wide nucleus because it cannot be bridged to 18:17.",
+   "coverage_cluster_id": "A_form_IV_plus_cognate_qarD",
+   "candidate_semantic_interpretation": "Fixed Form-IV collocation «aqraDa/yuqriDu/tuqriDu ٱللَّهَ قَرْضًا حَسَنًا»: to make over to Allah a set-apart good portion, constituted as a return-bearing transfer that is restored amplified (multiplication/reward/forgiveness/expiation). The object is always ٱللَّهَ, never a human; the noun is in every case the cognate accusative of its own verb in the same clause; the qualifier is invariably حَسَنًا; and the return is present in all six verses. Return/reciprocity is criterial, not incidental — this is what separates qarD from plain zakāt/gift, which stand distinct in the same verses (5:12, 73:20).",
+   "cluster_supporting_evidence": "Return-markers per verse: فَيُضَٰعِفَهُۥ...أَضْعَافًا كَثِيرَةً + وَإِلَيْهِ تُرْجَعُونَ (2:245); يُضَٰعِفَهُۥ + أَجْرٌ كَرِيمٌ (57:11); يُضَٰعَفُ لَهُمْ + أَجْرٌ كَرِيمٌ (57:18); لَّأُكَفِّرَنَّ...سَيِّـَٔاتِكُمْ + جَنَّٰتٍ (5:12); يُضَٰعِفْهُ لَكُمْ + يَغْفِرْ لَكُمْ (64:17); وَمَا تُقَدِّمُوا۟...تَجِدُوهُ عِندَ ٱللَّهِ...أَعْظَمَ أَجْرًا (73:20). Same-verse contrast with ٱلزَّكَوٰةَ (5:12, 73:20) confirms non-synonymy with plain giving.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Semantically uniform across all six verses and internally near-perfect, BUT the twelve tokens are not twelve independent witnesses: the six nouns are cognate accusatives welded to their six Form-IV verbs, so the class rests on ONE collocational template instantiated six times. CONSISTENT within the class; consistency ≠ universal establishment, and it does not license a root-wide nucleus because it cannot be bridged to 18:17.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "57:18",
+     "verse_text": "إِنَّ ٱلْمُصَّدِّقِينَ وَٱلْمُصَّدِّقَٰتِ وَأَقْرَضُوا۟ ٱللَّهَ قَرْضًا حَسَنًا يُضَٰعَفُ لَهُمْ وَلَهُمْ أَجْرٌ كَرِيمٌ"
+    }
+   ],
+   "root_arabic": "ق ر ض",
+   "root_buckwalter": "qrD",
+   "root_id": "qrD",
+   "artifact_name": "qr_44_.json",
+   "verse_ref": "57:18",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "qaroDFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱلْمُصَّدِّقِينَ وَٱلْمُصَّدِّقَٰتِ وَأَقْرَضُوا۟ ٱللَّهَ قَرْضًا حَسَنًا يُضَٰعَفُ لَهُمْ وَلَهُمْ أَجْرٌ كَرِيمٌ"
+  },
+  {
+   "word_ref": "5:12:24:2",
+   "disposition": "CONSISTENT",
+   "note": "Semantically uniform across all six verses and internally near-perfect, BUT the twelve tokens are not twelve independent witnesses: the six nouns are cognate accusatives welded to their six Form-IV verbs, so the class rests on ONE collocational template instantiated six times. CONSISTENT within the class; consistency ≠ universal establishment, and it does not license a root-wide nucleus because it cannot be bridged to 18:17.",
+   "coverage_cluster_id": "A_form_IV_plus_cognate_qarD",
+   "candidate_semantic_interpretation": "Fixed Form-IV collocation «aqraDa/yuqriDu/tuqriDu ٱللَّهَ قَرْضًا حَسَنًا»: to make over to Allah a set-apart good portion, constituted as a return-bearing transfer that is restored amplified (multiplication/reward/forgiveness/expiation). The object is always ٱللَّهَ, never a human; the noun is in every case the cognate accusative of its own verb in the same clause; the qualifier is invariably حَسَنًا; and the return is present in all six verses. Return/reciprocity is criterial, not incidental — this is what separates qarD from plain zakāt/gift, which stand distinct in the same verses (5:12, 73:20).",
+   "cluster_supporting_evidence": "Return-markers per verse: فَيُضَٰعِفَهُۥ...أَضْعَافًا كَثِيرَةً + وَإِلَيْهِ تُرْجَعُونَ (2:245); يُضَٰعِفَهُۥ + أَجْرٌ كَرِيمٌ (57:11); يُضَٰعَفُ لَهُمْ + أَجْرٌ كَرِيمٌ (57:18); لَّأُكَفِّرَنَّ...سَيِّـَٔاتِكُمْ + جَنَّٰتٍ (5:12); يُضَٰعِفْهُ لَكُمْ + يَغْفِرْ لَكُمْ (64:17); وَمَا تُقَدِّمُوا۟...تَجِدُوهُ عِندَ ٱللَّهِ...أَعْظَمَ أَجْرًا (73:20). Same-verse contrast with ٱلزَّكَوٰةَ (5:12, 73:20) confirms non-synonymy with plain giving.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Semantically uniform across all six verses and internally near-perfect, BUT the twelve tokens are not twelve independent witnesses: the six nouns are cognate accusatives welded to their six Form-IV verbs, so the class rests on ONE collocational template instantiated six times. CONSISTENT within the class; consistency ≠ universal establishment, and it does not license a root-wide nucleus because it cannot be bridged to 18:17.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "5:12",
+     "verse_text": "وَلَقَدْ أَخَذَ ٱللَّهُ مِيثَٰقَ بَنِىٓ إِسْرَٰٓءِيلَ وَبَعَثْنَا مِنْهُمُ ٱثْنَىْ عَشَرَ نَقِيبًا وَقَالَ ٱللَّهُ إِنِّى مَعَكُمْ لَئِنْ أَقَمْتُمُ ٱلصَّلَوٰةَ وَءَاتَيْتُمُ ٱلزَّكَوٰةَ وَءَامَنتُم بِرُسُلِى وَعَزَّرْتُمُوهُمْ وَأَقْرَضْتُمُ ٱللَّهَ قَرْضًا حَسَنًا لَّأُكَفِّرَنَّ عَنكُمْ سَيِّـَٔاتِكُمْ وَلَأُدْخِلَنَّكُمْ جَنَّٰتٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ فَمَن كَفَرَ بَعْدَ ذَٰلِكَ مِنكُمْ فَقَدْ ضَلَّ سَوَآءَ ٱلسَّبِيلِ"
+    }
+   ],
+   "root_arabic": "ق ر ض",
+   "root_buckwalter": "qrD",
+   "root_id": "qrD",
+   "artifact_name": "qr_44_.json",
+   "verse_ref": "5:12",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">aqoraDo",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَقَدْ أَخَذَ ٱللَّهُ مِيثَٰقَ بَنِىٓ إِسْرَٰٓءِيلَ وَبَعَثْنَا مِنْهُمُ ٱثْنَىْ عَشَرَ نَقِيبًا وَقَالَ ٱللَّهُ إِنِّى مَعَكُمْ لَئِنْ أَقَمْتُمُ ٱلصَّلَوٰةَ وَءَاتَيْتُمُ ٱلزَّكَوٰةَ وَءَامَنتُم بِرُسُلِى وَعَزَّرْتُمُوهُمْ وَأَقْرَضْتُمُ ٱللَّهَ قَرْضًا حَسَنًا لَّأُكَفِّرَنَّ عَنكُمْ سَيِّـَٔاتِكُمْ وَلَأُدْخِلَنَّكُمْ جَنَّٰتٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ فَمَن كَفَرَ بَعْدَ ذَٰلِكَ مِنكُمْ فَقَدْ ضَلَّ سَوَآءَ ٱلسَّبِيلِ"
+  },
+  {
+   "word_ref": "5:12:26:1",
+   "disposition": "CONSISTENT",
+   "note": "Semantically uniform across all six verses and internally near-perfect, BUT the twelve tokens are not twelve independent witnesses: the six nouns are cognate accusatives welded to their six Form-IV verbs, so the class rests on ONE collocational template instantiated six times. CONSISTENT within the class; consistency ≠ universal establishment, and it does not license a root-wide nucleus because it cannot be bridged to 18:17.",
+   "coverage_cluster_id": "A_form_IV_plus_cognate_qarD",
+   "candidate_semantic_interpretation": "Fixed Form-IV collocation «aqraDa/yuqriDu/tuqriDu ٱللَّهَ قَرْضًا حَسَنًا»: to make over to Allah a set-apart good portion, constituted as a return-bearing transfer that is restored amplified (multiplication/reward/forgiveness/expiation). The object is always ٱللَّهَ, never a human; the noun is in every case the cognate accusative of its own verb in the same clause; the qualifier is invariably حَسَنًا; and the return is present in all six verses. Return/reciprocity is criterial, not incidental — this is what separates qarD from plain zakāt/gift, which stand distinct in the same verses (5:12, 73:20).",
+   "cluster_supporting_evidence": "Return-markers per verse: فَيُضَٰعِفَهُۥ...أَضْعَافًا كَثِيرَةً + وَإِلَيْهِ تُرْجَعُونَ (2:245); يُضَٰعِفَهُۥ + أَجْرٌ كَرِيمٌ (57:11); يُضَٰعَفُ لَهُمْ + أَجْرٌ كَرِيمٌ (57:18); لَّأُكَفِّرَنَّ...سَيِّـَٔاتِكُمْ + جَنَّٰتٍ (5:12); يُضَٰعِفْهُ لَكُمْ + يَغْفِرْ لَكُمْ (64:17); وَمَا تُقَدِّمُوا۟...تَجِدُوهُ عِندَ ٱللَّهِ...أَعْظَمَ أَجْرًا (73:20). Same-verse contrast with ٱلزَّكَوٰةَ (5:12, 73:20) confirms non-synonymy with plain giving.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Semantically uniform across all six verses and internally near-perfect, BUT the twelve tokens are not twelve independent witnesses: the six nouns are cognate accusatives welded to their six Form-IV verbs, so the class rests on ONE collocational template instantiated six times. CONSISTENT within the class; consistency ≠ universal establishment, and it does not license a root-wide nucleus because it cannot be bridged to 18:17.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "5:12",
+     "verse_text": "وَلَقَدْ أَخَذَ ٱللَّهُ مِيثَٰقَ بَنِىٓ إِسْرَٰٓءِيلَ وَبَعَثْنَا مِنْهُمُ ٱثْنَىْ عَشَرَ نَقِيبًا وَقَالَ ٱللَّهُ إِنِّى مَعَكُمْ لَئِنْ أَقَمْتُمُ ٱلصَّلَوٰةَ وَءَاتَيْتُمُ ٱلزَّكَوٰةَ وَءَامَنتُم بِرُسُلِى وَعَزَّرْتُمُوهُمْ وَأَقْرَضْتُمُ ٱللَّهَ قَرْضًا حَسَنًا لَّأُكَفِّرَنَّ عَنكُمْ سَيِّـَٔاتِكُمْ وَلَأُدْخِلَنَّكُمْ جَنَّٰتٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ فَمَن كَفَرَ بَعْدَ ذَٰلِكَ مِنكُمْ فَقَدْ ضَلَّ سَوَآءَ ٱلسَّبِيلِ"
+    }
+   ],
+   "root_arabic": "ق ر ض",
+   "root_buckwalter": "qrD",
+   "root_id": "qrD",
+   "artifact_name": "qr_44_.json",
+   "verse_ref": "5:12",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "qaroDFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَقَدْ أَخَذَ ٱللَّهُ مِيثَٰقَ بَنِىٓ إِسْرَٰٓءِيلَ وَبَعَثْنَا مِنْهُمُ ٱثْنَىْ عَشَرَ نَقِيبًا وَقَالَ ٱللَّهُ إِنِّى مَعَكُمْ لَئِنْ أَقَمْتُمُ ٱلصَّلَوٰةَ وَءَاتَيْتُمُ ٱلزَّكَوٰةَ وَءَامَنتُم بِرُسُلِى وَعَزَّرْتُمُوهُمْ وَأَقْرَضْتُمُ ٱللَّهَ قَرْضًا حَسَنًا لَّأُكَفِّرَنَّ عَنكُمْ سَيِّـَٔاتِكُمْ وَلَأُدْخِلَنَّكُمْ جَنَّٰتٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ فَمَن كَفَرَ بَعْدَ ذَٰلِكَ مِنكُمْ فَقَدْ ضَلَّ سَوَآءَ ٱلسَّبِيلِ"
+  },
+  {
+   "word_ref": "64:17:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Semantically uniform across all six verses and internally near-perfect, BUT the twelve tokens are not twelve independent witnesses: the six nouns are cognate accusatives welded to their six Form-IV verbs, so the class rests on ONE collocational template instantiated six times. CONSISTENT within the class; consistency ≠ universal establishment, and it does not license a root-wide nucleus because it cannot be bridged to 18:17.",
+   "coverage_cluster_id": "A_form_IV_plus_cognate_qarD",
+   "candidate_semantic_interpretation": "Fixed Form-IV collocation «aqraDa/yuqriDu/tuqriDu ٱللَّهَ قَرْضًا حَسَنًا»: to make over to Allah a set-apart good portion, constituted as a return-bearing transfer that is restored amplified (multiplication/reward/forgiveness/expiation). The object is always ٱللَّهَ, never a human; the noun is in every case the cognate accusative of its own verb in the same clause; the qualifier is invariably حَسَنًا; and the return is present in all six verses. Return/reciprocity is criterial, not incidental — this is what separates qarD from plain zakāt/gift, which stand distinct in the same verses (5:12, 73:20).",
+   "cluster_supporting_evidence": "Return-markers per verse: فَيُضَٰعِفَهُۥ...أَضْعَافًا كَثِيرَةً + وَإِلَيْهِ تُرْجَعُونَ (2:245); يُضَٰعِفَهُۥ + أَجْرٌ كَرِيمٌ (57:11); يُضَٰعَفُ لَهُمْ + أَجْرٌ كَرِيمٌ (57:18); لَّأُكَفِّرَنَّ...سَيِّـَٔاتِكُمْ + جَنَّٰتٍ (5:12); يُضَٰعِفْهُ لَكُمْ + يَغْفِرْ لَكُمْ (64:17); وَمَا تُقَدِّمُوا۟...تَجِدُوهُ عِندَ ٱللَّهِ...أَعْظَمَ أَجْرًا (73:20). Same-verse contrast with ٱلزَّكَوٰةَ (5:12, 73:20) confirms non-synonymy with plain giving.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Semantically uniform across all six verses and internally near-perfect, BUT the twelve tokens are not twelve independent witnesses: the six nouns are cognate accusatives welded to their six Form-IV verbs, so the class rests on ONE collocational template instantiated six times. CONSISTENT within the class; consistency ≠ universal establishment, and it does not license a root-wide nucleus because it cannot be bridged to 18:17.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "64:17",
+     "verse_text": "إِن تُقْرِضُوا۟ ٱللَّهَ قَرْضًا حَسَنًا يُضَٰعِفْهُ لَكُمْ وَيَغْفِرْ لَكُمْ وَٱللَّهُ شَكُورٌ حَلِيمٌ"
+    }
+   ],
+   "root_arabic": "ق ر ض",
+   "root_buckwalter": "qrD",
+   "root_id": "qrD",
+   "artifact_name": "qr_44_.json",
+   "verse_ref": "64:17",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tuqoriDu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِن تُقْرِضُوا۟ ٱللَّهَ قَرْضًا حَسَنًا يُضَٰعِفْهُ لَكُمْ وَيَغْفِرْ لَكُمْ وَٱللَّهُ شَكُورٌ حَلِيمٌ"
+  },
+  {
+   "word_ref": "64:17:4:1",
+   "disposition": "CONSISTENT",
+   "note": "Semantically uniform across all six verses and internally near-perfect, BUT the twelve tokens are not twelve independent witnesses: the six nouns are cognate accusatives welded to their six Form-IV verbs, so the class rests on ONE collocational template instantiated six times. CONSISTENT within the class; consistency ≠ universal establishment, and it does not license a root-wide nucleus because it cannot be bridged to 18:17.",
+   "coverage_cluster_id": "A_form_IV_plus_cognate_qarD",
+   "candidate_semantic_interpretation": "Fixed Form-IV collocation «aqraDa/yuqriDu/tuqriDu ٱللَّهَ قَرْضًا حَسَنًا»: to make over to Allah a set-apart good portion, constituted as a return-bearing transfer that is restored amplified (multiplication/reward/forgiveness/expiation). The object is always ٱللَّهَ, never a human; the noun is in every case the cognate accusative of its own verb in the same clause; the qualifier is invariably حَسَنًا; and the return is present in all six verses. Return/reciprocity is criterial, not incidental — this is what separates qarD from plain zakāt/gift, which stand distinct in the same verses (5:12, 73:20).",
+   "cluster_supporting_evidence": "Return-markers per verse: فَيُضَٰعِفَهُۥ...أَضْعَافًا كَثِيرَةً + وَإِلَيْهِ تُرْجَعُونَ (2:245); يُضَٰعِفَهُۥ + أَجْرٌ كَرِيمٌ (57:11); يُضَٰعَفُ لَهُمْ + أَجْرٌ كَرِيمٌ (57:18); لَّأُكَفِّرَنَّ...سَيِّـَٔاتِكُمْ + جَنَّٰتٍ (5:12); يُضَٰعِفْهُ لَكُمْ + يَغْفِرْ لَكُمْ (64:17); وَمَا تُقَدِّمُوا۟...تَجِدُوهُ عِندَ ٱللَّهِ...أَعْظَمَ أَجْرًا (73:20). Same-verse contrast with ٱلزَّكَوٰةَ (5:12, 73:20) confirms non-synonymy with plain giving.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Semantically uniform across all six verses and internally near-perfect, BUT the twelve tokens are not twelve independent witnesses: the six nouns are cognate accusatives welded to their six Form-IV verbs, so the class rests on ONE collocational template instantiated six times. CONSISTENT within the class; consistency ≠ universal establishment, and it does not license a root-wide nucleus because it cannot be bridged to 18:17.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "64:17",
+     "verse_text": "إِن تُقْرِضُوا۟ ٱللَّهَ قَرْضًا حَسَنًا يُضَٰعِفْهُ لَكُمْ وَيَغْفِرْ لَكُمْ وَٱللَّهُ شَكُورٌ حَلِيمٌ"
+    }
+   ],
+   "root_arabic": "ق ر ض",
+   "root_buckwalter": "qrD",
+   "root_id": "qrD",
+   "artifact_name": "qr_44_.json",
+   "verse_ref": "64:17",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "qaroDFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِن تُقْرِضُوا۟ ٱللَّهَ قَرْضًا حَسَنًا يُضَٰعِفْهُ لَكُمْ وَيَغْفِرْ لَكُمْ وَٱللَّهُ شَكُورٌ حَلِيمٌ"
+  },
+  {
+   "word_ref": "73:20:57:2",
+   "disposition": "CONSISTENT",
+   "note": "Semantically uniform across all six verses and internally near-perfect, BUT the twelve tokens are not twelve independent witnesses: the six nouns are cognate accusatives welded to their six Form-IV verbs, so the class rests on ONE collocational template instantiated six times. CONSISTENT within the class; consistency ≠ universal establishment, and it does not license a root-wide nucleus because it cannot be bridged to 18:17.",
+   "coverage_cluster_id": "A_form_IV_plus_cognate_qarD",
+   "candidate_semantic_interpretation": "Fixed Form-IV collocation «aqraDa/yuqriDu/tuqriDu ٱللَّهَ قَرْضًا حَسَنًا»: to make over to Allah a set-apart good portion, constituted as a return-bearing transfer that is restored amplified (multiplication/reward/forgiveness/expiation). The object is always ٱللَّهَ, never a human; the noun is in every case the cognate accusative of its own verb in the same clause; the qualifier is invariably حَسَنًا; and the return is present in all six verses. Return/reciprocity is criterial, not incidental — this is what separates qarD from plain zakāt/gift, which stand distinct in the same verses (5:12, 73:20).",
+   "cluster_supporting_evidence": "Return-markers per verse: فَيُضَٰعِفَهُۥ...أَضْعَافًا كَثِيرَةً + وَإِلَيْهِ تُرْجَعُونَ (2:245); يُضَٰعِفَهُۥ + أَجْرٌ كَرِيمٌ (57:11); يُضَٰعَفُ لَهُمْ + أَجْرٌ كَرِيمٌ (57:18); لَّأُكَفِّرَنَّ...سَيِّـَٔاتِكُمْ + جَنَّٰتٍ (5:12); يُضَٰعِفْهُ لَكُمْ + يَغْفِرْ لَكُمْ (64:17); وَمَا تُقَدِّمُوا۟...تَجِدُوهُ عِندَ ٱللَّهِ...أَعْظَمَ أَجْرًا (73:20). Same-verse contrast with ٱلزَّكَوٰةَ (5:12, 73:20) confirms non-synonymy with plain giving.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Semantically uniform across all six verses and internally near-perfect, BUT the twelve tokens are not twelve independent witnesses: the six nouns are cognate accusatives welded to their six Form-IV verbs, so the class rests on ONE collocational template instantiated six times. CONSISTENT within the class; consistency ≠ universal establishment, and it does not license a root-wide nucleus because it cannot be bridged to 18:17.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "73:20",
+     "verse_text": "إِنَّ رَبَّكَ يَعْلَمُ أَنَّكَ تَقُومُ أَدْنَىٰ مِن ثُلُثَىِ ٱلَّيْلِ وَنِصْفَهُۥ وَثُلُثَهُۥ وَطَآئِفَةٌ مِّنَ ٱلَّذِينَ مَعَكَ وَٱللَّهُ يُقَدِّرُ ٱلَّيْلَ وَٱلنَّهَارَ عَلِمَ أَن لَّن تُحْصُوهُ فَتَابَ عَلَيْكُمْ فَٱقْرَءُوا۟ مَا تَيَسَّرَ مِنَ ٱلْقُرْءَانِ عَلِمَ أَن سَيَكُونُ مِنكُم مَّرْضَىٰ وَءَاخَرُونَ يَضْرِبُونَ فِى ٱلْأَرْضِ يَبْتَغُونَ مِن فَضْلِ ٱللَّهِ وَءَاخَرُونَ يُقَٰتِلُونَ فِى سَبِيلِ ٱللَّهِ فَٱقْرَءُوا۟ مَا تَيَسَّرَ مِنْهُ وَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَأَقْرِضُوا۟ ٱللَّهَ قَرْضًا حَسَنًا وَمَا تُقَدِّمُوا۟ لِأَنفُسِكُم مِّنْ خَيْرٍ تَجِدُوهُ عِندَ ٱللَّهِ هُوَ خَيْرًا وَأَعْظَمَ أَجْرًا وَٱسْتَغْفِرُوا۟ ٱللَّهَ إِنَّ ٱللَّهَ غَفُورٌ رَّحِيمٌۢ"
+    }
+   ],
+   "root_arabic": "ق ر ض",
+   "root_buckwalter": "qrD",
+   "root_id": "qrD",
+   "artifact_name": "qr_44_.json",
+   "verse_ref": "73:20",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">aqoriDu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ رَبَّكَ يَعْلَمُ أَنَّكَ تَقُومُ أَدْنَىٰ مِن ثُلُثَىِ ٱلَّيْلِ وَنِصْفَهُۥ وَثُلُثَهُۥ وَطَآئِفَةٌ مِّنَ ٱلَّذِينَ مَعَكَ وَٱللَّهُ يُقَدِّرُ ٱلَّيْلَ وَٱلنَّهَارَ عَلِمَ أَن لَّن تُحْصُوهُ فَتَابَ عَلَيْكُمْ فَٱقْرَءُوا۟ مَا تَيَسَّرَ مِنَ ٱلْقُرْءَانِ عَلِمَ أَن سَيَكُونُ مِنكُم مَّرْضَىٰ وَءَاخَرُونَ يَضْرِبُونَ فِى ٱلْأَرْضِ يَبْتَغُونَ مِن فَضْلِ ٱللَّهِ وَءَاخَرُونَ يُقَٰتِلُونَ فِى سَبِيلِ ٱللَّهِ فَٱقْرَءُوا۟ مَا تَيَسَّرَ مِنْهُ وَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَأَقْرِضُوا۟ ٱللَّهَ قَرْضًا حَسَنًا وَمَا تُقَدِّمُوا۟ لِأَنفُسِكُم مِّنْ خَيْرٍ تَجِدُوهُ عِندَ ٱللَّهِ هُوَ خَيْرًا وَأَعْظَمَ أَجْرًا وَٱسْتَغْفِرُوا۟ ٱللَّهَ إِنَّ ٱللَّهَ غَفُورٌ رَّحِيمٌۢ"
+  },
+  {
+   "word_ref": "73:20:59:1",
+   "disposition": "CONSISTENT",
+   "note": "Semantically uniform across all six verses and internally near-perfect, BUT the twelve tokens are not twelve independent witnesses: the six nouns are cognate accusatives welded to their six Form-IV verbs, so the class rests on ONE collocational template instantiated six times. CONSISTENT within the class; consistency ≠ universal establishment, and it does not license a root-wide nucleus because it cannot be bridged to 18:17.",
+   "coverage_cluster_id": "A_form_IV_plus_cognate_qarD",
+   "candidate_semantic_interpretation": "Fixed Form-IV collocation «aqraDa/yuqriDu/tuqriDu ٱللَّهَ قَرْضًا حَسَنًا»: to make over to Allah a set-apart good portion, constituted as a return-bearing transfer that is restored amplified (multiplication/reward/forgiveness/expiation). The object is always ٱللَّهَ, never a human; the noun is in every case the cognate accusative of its own verb in the same clause; the qualifier is invariably حَسَنًا; and the return is present in all six verses. Return/reciprocity is criterial, not incidental — this is what separates qarD from plain zakāt/gift, which stand distinct in the same verses (5:12, 73:20).",
+   "cluster_supporting_evidence": "Return-markers per verse: فَيُضَٰعِفَهُۥ...أَضْعَافًا كَثِيرَةً + وَإِلَيْهِ تُرْجَعُونَ (2:245); يُضَٰعِفَهُۥ + أَجْرٌ كَرِيمٌ (57:11); يُضَٰعَفُ لَهُمْ + أَجْرٌ كَرِيمٌ (57:18); لَّأُكَفِّرَنَّ...سَيِّـَٔاتِكُمْ + جَنَّٰتٍ (5:12); يُضَٰعِفْهُ لَكُمْ + يَغْفِرْ لَكُمْ (64:17); وَمَا تُقَدِّمُوا۟...تَجِدُوهُ عِندَ ٱللَّهِ...أَعْظَمَ أَجْرًا (73:20). Same-verse contrast with ٱلزَّكَوٰةَ (5:12, 73:20) confirms non-synonymy with plain giving.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Semantically uniform across all six verses and internally near-perfect, BUT the twelve tokens are not twelve independent witnesses: the six nouns are cognate accusatives welded to their six Form-IV verbs, so the class rests on ONE collocational template instantiated six times. CONSISTENT within the class; consistency ≠ universal establishment, and it does not license a root-wide nucleus because it cannot be bridged to 18:17.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "73:20",
+     "verse_text": "إِنَّ رَبَّكَ يَعْلَمُ أَنَّكَ تَقُومُ أَدْنَىٰ مِن ثُلُثَىِ ٱلَّيْلِ وَنِصْفَهُۥ وَثُلُثَهُۥ وَطَآئِفَةٌ مِّنَ ٱلَّذِينَ مَعَكَ وَٱللَّهُ يُقَدِّرُ ٱلَّيْلَ وَٱلنَّهَارَ عَلِمَ أَن لَّن تُحْصُوهُ فَتَابَ عَلَيْكُمْ فَٱقْرَءُوا۟ مَا تَيَسَّرَ مِنَ ٱلْقُرْءَانِ عَلِمَ أَن سَيَكُونُ مِنكُم مَّرْضَىٰ وَءَاخَرُونَ يَضْرِبُونَ فِى ٱلْأَرْضِ يَبْتَغُونَ مِن فَضْلِ ٱللَّهِ وَءَاخَرُونَ يُقَٰتِلُونَ فِى سَبِيلِ ٱللَّهِ فَٱقْرَءُوا۟ مَا تَيَسَّرَ مِنْهُ وَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَأَقْرِضُوا۟ ٱللَّهَ قَرْضًا حَسَنًا وَمَا تُقَدِّمُوا۟ لِأَنفُسِكُم مِّنْ خَيْرٍ تَجِدُوهُ عِندَ ٱللَّهِ هُوَ خَيْرًا وَأَعْظَمَ أَجْرًا وَٱسْتَغْفِرُوا۟ ٱللَّهَ إِنَّ ٱللَّهَ غَفُورٌ رَّحِيمٌۢ"
+    }
+   ],
+   "root_arabic": "ق ر ض",
+   "root_buckwalter": "qrD",
+   "root_id": "qrD",
+   "artifact_name": "qr_44_.json",
+   "verse_ref": "73:20",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "qaroDFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ رَبَّكَ يَعْلَمُ أَنَّكَ تَقُومُ أَدْنَىٰ مِن ثُلُثَىِ ٱلَّيْلِ وَنِصْفَهُۥ وَثُلُثَهُۥ وَطَآئِفَةٌ مِّنَ ٱلَّذِينَ مَعَكَ وَٱللَّهُ يُقَدِّرُ ٱلَّيْلَ وَٱلنَّهَارَ عَلِمَ أَن لَّن تُحْصُوهُ فَتَابَ عَلَيْكُمْ فَٱقْرَءُوا۟ مَا تَيَسَّرَ مِنَ ٱلْقُرْءَانِ عَلِمَ أَن سَيَكُونُ مِنكُم مَّرْضَىٰ وَءَاخَرُونَ يَضْرِبُونَ فِى ٱلْأَرْضِ يَبْتَغُونَ مِن فَضْلِ ٱللَّهِ وَءَاخَرُونَ يُقَٰتِلُونَ فِى سَبِيلِ ٱللَّهِ فَٱقْرَءُوا۟ مَا تَيَسَّرَ مِنْهُ وَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَأَقْرِضُوا۟ ٱللَّهَ قَرْضًا حَسَنًا وَمَا تُقَدِّمُوا۟ لِأَنفُسِكُم مِّنْ خَيْرٍ تَجِدُوهُ عِندَ ٱللَّهِ هُوَ خَيْرًا وَأَعْظَمَ أَجْرًا وَٱسْتَغْفِرُوا۟ ٱللَّهَ إِنَّ ٱللَّهَ غَفُورٌ رَّحِيمٌۢ"
+  }
+ ],
+ "resistant_deep_analysis": [
+  {
+   "word_ref": "18:17:12:1",
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "Isolated on every discriminating axis: only Form I, only physical subject, only non-loan sense, only occurrence with no recipient/transfer/return, and the only one whose object is the passed-by entity rather than a beneficiary. A single, structurally isolated datum cannot establish a root nucleus, and it resists the dominant transactional account entirely; its own force ('veer/pass aside', read via the in-verse tazāwaru parallel) is not clearly 'severing a portion', so it also resists the thin unifier.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "deep_analysis": true
+  }
+ ],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "UNRESOLVED",
+ "result_strength": "UNRESOLVED",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Analyst A, Analyst B, and Adversary C independently reached the same partition (12-token Form-IV loan idiom + isolated Form-I 18:17) and the same UNRESOLVED/RESISTANT whole-root verdict; packet morphology (qac_verb_form IV vs null; qac_pos N vs V) confirms the split.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "18:17:12:1"
+ ],
+ "unreconciled_count": 1,
+ "resistant_occurrences": [
+  "18:17:12:1"
+ ],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": null,
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "LOCAL",
+ "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
+ "layer_attribution": {
+  "occurrence_evidence": "13 confirmed occurrences: 12 in the fixed «Form-IV + cognate قَرْضًا حَسَنًا + divine object + amplified return» collocation across 2:245, 57:11, 57:18, 5:12, 64:17, 73:20; 1 (18:17:12:1) of the setting sun passing the sleepers ذَاتَ ٱلشِّمَالِ.",
+  "derivation": "Form IV (causative/factitive) governs all 12 loan tokens (verbs plus their cognate-accusative nouns); the single Form I verb (qac_verb_form=null) is 18:17. Morphology co-varies exactly with the semantic split; the Form I→IV derivation is morphologically clean but semantically opaque (the attested base sense does not transparently yield 'hand over a portion').",
+  "lexical_class": "Class A is best read as a lexicalized/formula-bound collocational sense, not a broadly productive family; Class B is an unassimilated Form-I singleton. Neither licenses a root-wide lexical class.",
+  "contextual_relation": "Return/amplification framing in Class A comes from result-clauses (يُضَٰعِف, أَجْر, تُكَفِّر, تَجِدُوهُ عِندَ ٱللَّهِ); the spatial reading of 18:17 comes from the in-verse tazāwaru (z-w-r) parallel and ذَاتَ ٱلشِّمَالِ. These contextual/narrative cues gloss the scene and must not be elevated into the root's own meaning.",
+  "reconciliation": "No reconciliation across classes was achievable: the strongest unifier ('set apart / cut off a portion to a side') was considered and rejected as either too vague or resting on an undemonstrated, source-policy-barred 'cutting' feature. The classes are held apart rather than forced.",
+  "unresolved_resistance": "18:17:12:1 persistently resists both the dominant transactional account and the abstract unifier, and Class A resists any physical passing/cutting account; with no bridging occurrence, the whole-root nucleus remains UNRESOLVED."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "18:17:12:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "The sole Form-I token and the sole non-transactional occurrence; it is the seam the root cannot cross — it resists the 12/13 covenantal-loan account and resists the abstract 'parting-off' unifier, leaving the whole-root judgment unresolved.",
+   "evidence_basis": {
+    "kind": "OCCURRENCE_STRUCTURE",
+    "statement": "18:17:12:1 (تَّقْرِضُهُمْ): at sunset the sun taqriDu-hum ذَاتَ ٱلشِّمَالِ (toward the left side), set in strict parallel with تَّزَٰوَرُ (z-w-r) at sunrise; there is no giver, no recipient, no thing transferred, and no return/amplification, and it is the sole Form I token — it breaks any single 'lend/advance' gloss and cannot be bridged to the Form-IV covenantal-loan class without importing an undemonstrated 'cutting/parting-off' nucleus that no verse states."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL",
+  "rationale": "The root is reported as two unbridged classes; the resistance at 18:17 persists after all three lenses, so it is recorded as a RESISTANT_SEAM rather than resolved. No universal nucleus is claimed, hence no evidence-derived unity to persist."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A Quran-internal occurrence is found that actually bridges the partition between the Form-IV «ٱللَّهَ قَرْضًا حَسَنًا» loan class and the Form-I spatial 18:17 use — e.g. a token where a single sense demonstrably yields both the advance-with-return and the passing-to-a-side reading, or where 'parting off a portion' is stated in a loan verse — such that the two classes could be merged under one demonstrated nucleus.",
+  "search_location": "The six loan verses (2:245, 57:11, 57:18, 5:12, 64:17, 73:20) re-read for any 'severance/parting-off a portion' language, and 18:17 re-read against its tazāwaru (z-w-r) parallel for any transfer/return semantics; plus any morphologically related qrD form outside the packet if the corpus is extended.",
+  "verification_method": "Check whether the candidate bridging sense is asserted by the verse's own wording and argument structure (subject, object, cognate accusative, result clause), not inferred from lexicon or etymology; require the shared feature to be present on BOTH sides.",
+  "confounder_control": "Exclude imported classical 'cut off' etymology (barred by source policy); do not count the z-w-r parallel as a gloss of qrD's root meaning; do not treat cognate-accusative repetition as independent witnesses; discount the 'goodly' adjective and neighbouring zakāt as sources of the root's own content.",
+  "failure_consequence": "If no such bridging occurrence exists, the single-nucleus claim stays refuted and the root remains UNRESOLVED as two classes; if one is found, reopen and re-run with a candidate root-wide nucleus tested for distinctiveness and falsifiability."
+ },
+ "falsification_status": "NOT_REQUIRED",
+ "reopen_conditions": [
+  "If a corpus extension surfaces any qrD occurrence where the object of the Form-IV loan verb is a human recipient (not ٱللَّهَ), or where قَرْض appears without the return/amplification frame, re-test whether the loan class is truly 'return-bearing' and whether it is a formula vs a productive sense.",
+  "If a second Form-I (or any non-Allah-directed) qrD occurrence is found that shares a demonstrable feature with 18:17's 'pass/veer to a side', re-test cluster B's isolated spatial sense and whether it can now anchor a root nucleus.",
+  "If any verse is found in which 'parting off / cutting a bounded portion' is stated in the loan context itself (bridging the wealth-transfer and the sun's lateral passing), reopen the single-nucleus 'set apart to one side' hypothesis and run falsification."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "2:245:4:1",
+  "2:245:6:1",
+  "57:11:4:1",
+  "57:18:4:2",
+  "5:12:24:2",
+  "64:17:2:1",
+  "73:20:57:2",
+  "73:20:59:1"
+ ],
+ "counterevidence_refs": [
+  "18:17:12:1"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "qrD-unresolved-no-nucleus",
+  "verdict": "NOT_REQUIRED",
+  "falsifiable": false,
+  "distinctiveness_ok": false,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "A_form_IV_plus_cognate_qarD",
+   "B_form_I_spatial_singleton"
+  ],
+  "status_rationale": "No universal root nucleus is claimed (claim_scope_kind=UNRESOLVED_CLASS_ONLY), so adversarial refutation of a root-wide meaning is not required. The adversarial lens (C) was applied and confirmed the two-class partition and the absence of any Quran-internal bridge; the strongest unifier was tested and rejected as vague/undemonstrated rather than refuted-then-held."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "qrD: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "qrD: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "qrD: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "qrD: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "qrD: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "qrD: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "qrD: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "qrD: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

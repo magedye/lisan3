@@ -1,0 +1,2022 @@
+{
+ "root_arabic": "ا ن ي",
+ "root_buckwalter": "Any",
+ "root_id": "Any",
+ "artifact_name": "Any.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave1",
+ "occurrences": 36,
+ "frozen_candidate_root_contribution": null,
+ "internal_discovery": {
+  "candidate_root_contribution": null,
+  "plain_explanation": "The root-id ا ن ي bundles at least four Quran-internally unbridged word-classes: (1) the grammaticalized interrogative/free-choice particle أَنَّىٰ 'how / by what means / whence' (28 of 36 tokens, a closed-class function word whose content is supplied by its complement, not by any recoverable root seme); (2) a small temporal/attainment field — ءَانَاء 'periods/watches of the night' (20:130, 39:9, 3:113), the noun إِنَىٰ 'its due readiness' (33:53), and the verb يَأْنِ 'the time has come due' (57:16); (3) ءَانٍ/ءَانِيَة 'boiling, at peak heat' (55:44, 88:5); and (4) ءَانِيَة 'silver vessels/containers' (76:15). The only proposed unifier ('a thing reaching its due point, in time or degree') collapses because it cannot absorb the concrete container (76:15) or the grammaticalized particle without importing an etymological abstraction the co-text never supplies — forbidden by the source policy. No single Quran-internal nucleus spans all 36 occurrences; the honest verdict is a multi-class partition with no safe bridge.",
+  "layer_separation_note": "The root-id does NOT denote one concept. أَنَّىٰ (Class A) does not entail time, vessel, or heat and is not 'who/what/when' — it interrogates manner/source and once (2:223) licenses free choice; its 'impossibility' force is contextual, not lexical. The night-watches sense (ءَانَاء) is only ever of ٱلَّيْل and does not extend to manner-interrogation, container, or heat. 'Boiling' (D) is about intensity/temperature, carried in co-text by حَمِيم/حَامِية, and does not entail any temporal sense. 'Vessel' (E) entails neither time, manner, nor heat. Identical vocalized surface آنية does NOT fix meaning (76:15 'vessel' vs 88:5 'boiling'), so morphology/orthography is not a semantic-class proxy here.",
+  "presence": {
+   "occurrences_total": 36,
+   "occurrences_checked": 36,
+   "occurrences_consistent": 35,
+   "inconsistent_refs": [
+    "76:15:3:2"
+   ]
+  },
+  "strongest_counterexample": "76:15:3:2 آنية 'silver vessels' and 88:5:4:1 آنية 'boiling (spring)' share the identical vocalized surface آنية yet denote a concrete container versus a state of extreme heat, with no Quran-internal context bridging them — falsifying any single nucleus for root ا ن ي.",
+  "strongest_competitor": "The etymological-unity account: one abstract nucleus 'to reach/attain a due point or limit' would generate the night-watches (ءَانَاء, portioned points in the night's course), readiness (إِنَىٰ), time-arrival (يَأْنِ), peak heat (ءَانٍ/ءَانِيَة), and even أَنَّىٰ read as 'from what point? / whence?'. It elegantly covers ~8 content tokens and hooks the particle rhetorically. It is rejected because (a) it must either exclude ءَانِيَة 'vessel' (76:15) or force an unsupported 'container = reached-shape' derivation with zero Quranic co-text; (b) it treats أَنَّىٰ's root-membership as semantic when the Quran supplies no inflectional bridge from the frozen particle to the nouns/verb; and (c) the B/C-to-D 'culmination' bridge rests on an abstraction no co-text supplies (D's heat is already carried by حَمِيم), which is a lexical-prior move the policy bars. It survives only if narrowed to the temporal cluster — i.e. it is not a genuine all-36 nucleus.",
+  "competing_hypothesis": "The etymological-unity account: one abstract nucleus 'to reach/attain a due point or limit' would generate the night-watches (ءَانَاء, portioned points in the night's course), readiness (إِنَىٰ), time-arrival (يَأْنِ), peak heat (ءَانٍ/ءَانِيَة), and even أَنَّىٰ read as 'from what point? / whence?'. It elegantly covers ~8 content tokens and hooks the particle rhetorically. It is rejected because (a) it must either exclude ءَانِيَة 'vessel' (76:15) or force an unsupported 'container = reached-shape' derivation with zero Quranic co-text; (b) it treats أَنَّىٰ's root-membership as semantic when the Quran supplies no inflectional bridge from the frozen particle to the nouns/verb; and (c) the B/C-to-D 'culmination' bridge rests on an abstraction no co-text supplies (D's heat is already carried by حَمِيم), which is a lexical-prior move the policy bars. It survives only if narrowed to the temporal cluster — i.e. it is not a genuine all-36 nucleus.",
+  "unresolved_cases": [],
+  "result": "UNRESOLVED",
+  "result_strength": "UNRESOLVED",
+  "rationale": "Three independent lenses (two constructive, one adversarial) converge: no Quran-internal seme is shared across the interrogative particle, the temporal/attainment field, the boiling pair, and the vessel isolate. The decisive evidence is the near-minimal pair 76:15 (vessel) vs 88:5 (boiling): identical surface آنية, mutually irreducible senses, no bridging context — this refutes 'same surface/same root => one meaning' within the very root. The dominant class (أَنَّىٰ, 78%) is a grammaticalized function word whose meaning is deictic and complement-fixed, contributing no lexical root semantics; folding it under a content nucleus would be an imposed etymology and a vague-abstraction-that-fits-everything, both forbidden. The most that is earned positively is class-internal coherence (the interrogative as a stable manner/source portmanteau; ءَانَاء as watches of the night; a plausible but under-welded temporal/attainment sub-family), never a root-wide nucleus. Per the coherence rule that two-or-more senses with no Quran-internal bridge force UNRESOLVED, the root is reported as multi-class / UNRESOLVED rather than forcing unity.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "A_interrogative_particle_annaa",
+     "where": {
+      "word_refs": [
+       "10:32:10:2",
+       "10:34:16:2",
+       "19:20:2:1",
+       "19:8:3:1",
+       "23:89:4:2",
+       "29:61:12:2",
+       "2:223:6:1",
+       "2:247:12:1",
+       "2:259:11:1",
+       "34:52:4:2",
+       "35:3:20:2",
+       "36:66:8:2",
+       "39:6:35:2",
+       "3:165:8:1",
+       "3:37:20:1",
+       "3:40:3:1",
+       "3:47:3:1",
+       "40:62:11:2",
+       "40:69:9:1",
+       "43:87:7:2",
+       "44:13:1:1",
+       "47:18:11:2",
+       "63:4:21:1",
+       "6:101:4:1",
+       "6:95:16:2",
+       "89:23:7:2",
+       "9:30:22:1",
+       "5:75:24:1"
+      ]
+     },
+     "occurrence_count_expected": 28,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+     "classification_rationale": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+     "supporting_evidence_note": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+     "counterevidence": [
+      "2:223:6:1"
+     ]
+    },
+    {
+     "cluster_id": "B_night_watches_aanaa",
+     "where": {
+      "word_refs": [
+       "20:130:14:1",
+       "39:9:4:1",
+       "3:113:11:1"
+      ]
+     },
+     "occurrence_count_expected": 3,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "ءَانَاء ٱللَّيْل 'the watches/portions (successive due periods) of the night' — a concrete plural noun of named time-segments, always bound to ٱلَّيْل and always in worship contexts.",
+     "classification_rationale": "Decisive co-text at 20:130 lists ءَانَآئِ ٱلَّيْلِ alongside قَبْلَ طُلُوعِ ٱلشَّمْسِ وَقَبْلَ غُرُوبِهَا — i.e. named time-segments. All three tokens share the surface 'aAnaA^' and the collocation ٱلَّيْل. QAC tags them inconsistently (N at 20:130/39:9, T at 3:113), confirming the tag is not a reliable semantic proxy; the class is fixed by co-text, not tag.",
+     "supporting_evidence_note": "20:130 وَمِنْ ءَانَآئِ ٱلَّيْلِ فَسَبِّحْ; 39:9 قَٰنِتٌ ءَانَآءَ ٱلَّيْلِ سَاجِدًا; 3:113 يَتْلُونَ ... ءَانَآءَ ٱلَّيْلِ وَهُمْ يَسْجُدُونَ.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "C_due_time_readiness",
+     "where": {
+      "word_refs": [
+       "57:16:2:1",
+       "33:53:16:1"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "The arriving/ripe due-time of a thing: verb يَأْنِ 'has the time (not) come due' (57:16) and noun إِنَىٰ 'its due readiness' of the meal (33:53). Agent-free — the 'time' is the subject; it is about something coming due, not an actor acting.",
+     "classification_rationale": "57:16 أَلَمْ يَأْنِ ('has the time not come') and 33:53 غَيْرَ نَٰظِرِينَ إِنَىٰهُ (not waiting for its readiness) share a due-time/readiness sense and are plausibly a small derivational family with cluster B ('due periods'). The cross-token unity to B, and any welding to the boiling pair (D), is inferred, not demonstrated by shared co-text — the seam is under-evidenced Quran-internally.",
+     "supporting_evidence_note": "57:16 أَلَمْ يَأْنِ لِلَّذِينَ ءَامَنُوٓا۟ أَن تَخْشَعَ قُلُوبُهُمْ; 33:53 غَيْرَ نَٰظِرِينَ إِنَىٰهُ (of a طَعَام).",
+     "counterevidence": [
+      "33:53:16:1"
+     ]
+    },
+    {
+     "cluster_id": "D_boiling_peak_heat",
+     "where": {
+      "word_refs": [
+       "55:44:5:1",
+       "88:5:4:1"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "ءَانٍ / ءَانِيَة '(water) that has reached its culminating heat; boiling, scalding' — a punishment-context descriptor of extreme temperature.",
+     "classification_rationale": "55:44 modifies حَمِيم ('boiling water'); 88:5 modifies عَيْنٍ ('spring') in a نَارًا حَامِيَةً context. Both are about heat/intensity, carried in co-text by حَمِيم/حَامِية. Their independent semantic weight beyond that heat co-text is not recoverable Quran-internally, so any 'reached-its-due-point' bridge to the temporal cluster is a rejected abstraction.",
+     "supporting_evidence_note": "55:44 يَطُوفُونَ بَيْنَهَا وَبَيْنَ حَمِيمٍ ءَانٍ; 88:5 تُسْقَىٰ مِنْ عَيْنٍ ءَانِيَةٍ.",
+     "counterevidence": [
+      "88:5:4:1"
+     ]
+    },
+    {
+     "cluster_id": "E_vessel_isolate",
+     "where": {
+      "word_refs": [
+       "76:15:3:2"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "ءَانِيَة 'vessels / drinking-containers (of silver)' — a concrete count-noun with zero temporal, interrogative, or intensity content.",
+     "classification_rationale": "76:15 بِـَٔانِيَةٍ مِّن فِضَّةٍ denotes silver containers. It shares its exact vocalized surface آنية with 88:5 'boiling' yet is semantically irreducible to it, and no Quran-internal thread links a container to time, readiness, heat, or interrogation. It is an orthographic homograph that resists every unification — the decisive proof that this root-id has no single nucleus.",
+     "supporting_evidence_note": "76:15 وَيُطَافُ عَلَيْهِم بِـَٔانِيَةٍ مِّن فِضَّةٍ وَأَكْوَابٍ كَانَتْ قَوَارِيرَا۠.",
+     "counterevidence": [
+      "88:5:4:1"
+     ]
+    }
+   ],
+   "reconciliation": [
+    {
+     "word_ref": "5:75:24:1",
+     "final": "CONSISTENT",
+     "rationale": "Surface >an~aY` and the exact phrase أَنَّىٰ يُؤْفَكُونَ match INTG-tagged 9:30 and 63:4; the N tag is an attribution artifact, so it belongs in the interrogative particle class."
+    },
+    {
+     "word_ref": "33:53:16:1",
+     "final": "CONSISTENT",
+     "rationale": "Assigned to the due-time cluster C on the strength of the readiness reading, while flagging the C/E ambiguity as an adversarial boundary; the ambiguity itself is evidence the classes share only a consonantal skeleton, not a meaning."
+    },
+    {
+     "word_ref": "76:15:3:2",
+     "final": "RESISTANT",
+     "rationale": "No Quran-internal context links a silver container to heat, time, or interrogation; the surface identity with 88:5 is orthographic only. Kept as a resistant isolate that defeats any single nucleus."
+    }
+   ]
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "Any",
+  "verdict": "NOT_APPLICABLE",
+  "failing_occurrences": [],
+  "distinctiveness_ok": false,
+  "falsifiable": false,
+  "notes": "No universal root nucleus is claimed (claim_scope_kind=UNRESOLVED_CLASS_ONLY), so adversarial refutation of a single nucleus is not required. The adversarial lens instead confirmed the absence of a bridge: the 76:15/88:5 minimal pair and the grammaticalized particle defeat unification, which is the basis for the UNRESOLVED verdict rather than a falsification of a positive claim."
+ },
+ "coverage_validation": {
+  "root": "Any",
+  "expected_count": 36,
+  "researched_count": 36,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [
+   "76:15:3:2"
+  ],
+  "unresolved_visible": [
+   "76:15:3:2"
+  ]
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "10:32:10:2",
+   "disposition": "CONSISTENT",
+   "note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "10:32",
+     "verse_text": "فَذَٰلِكُمُ ٱللَّهُ رَبُّكُمُ ٱلْحَقُّ فَمَاذَا بَعْدَ ٱلْحَقِّ إِلَّا ٱلضَّلَٰلُ فَأَنَّىٰ تُصْرَفُونَ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "10:32",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَذَٰلِكُمُ ٱللَّهُ رَبُّكُمُ ٱلْحَقُّ فَمَاذَا بَعْدَ ٱلْحَقِّ إِلَّا ٱلضَّلَٰلُ فَأَنَّىٰ تُصْرَفُونَ"
+  },
+  {
+   "word_ref": "10:34:16:2",
+   "disposition": "CONSISTENT",
+   "note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "10:34",
+     "verse_text": "قُلْ هَلْ مِن شُرَكَآئِكُم مَّن يَبْدَؤُا۟ ٱلْخَلْقَ ثُمَّ يُعِيدُهُۥ قُلِ ٱللَّهُ يَبْدَؤُا۟ ٱلْخَلْقَ ثُمَّ يُعِيدُهُۥ فَأَنَّىٰ تُؤْفَكُونَ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "10:34",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قُلْ هَلْ مِن شُرَكَآئِكُم مَّن يَبْدَؤُا۟ ٱلْخَلْقَ ثُمَّ يُعِيدُهُۥ قُلِ ٱللَّهُ يَبْدَؤُا۟ ٱلْخَلْقَ ثُمَّ يُعِيدُهُۥ فَأَنَّىٰ تُؤْفَكُونَ"
+  },
+  {
+   "word_ref": "19:20:2:1",
+   "disposition": "CONSISTENT",
+   "note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "19:20",
+     "verse_text": "قَالَتْ أَنَّىٰ يَكُونُ لِى غُلَٰمٌ وَلَمْ يَمْسَسْنِى بَشَرٌ وَلَمْ أَكُ بَغِيًّا"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "19:20",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالَتْ أَنَّىٰ يَكُونُ لِى غُلَٰمٌ وَلَمْ يَمْسَسْنِى بَشَرٌ وَلَمْ أَكُ بَغِيًّا"
+  },
+  {
+   "word_ref": "19:8:3:1",
+   "disposition": "CONSISTENT",
+   "note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "19:8",
+     "verse_text": "قَالَ رَبِّ أَنَّىٰ يَكُونُ لِى غُلَٰمٌ وَكَانَتِ ٱمْرَأَتِى عَاقِرًا وَقَدْ بَلَغْتُ مِنَ ٱلْكِبَرِ عِتِيًّا"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "19:8",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالَ رَبِّ أَنَّىٰ يَكُونُ لِى غُلَٰمٌ وَكَانَتِ ٱمْرَأَتِى عَاقِرًا وَقَدْ بَلَغْتُ مِنَ ٱلْكِبَرِ عِتِيًّا"
+  },
+  {
+   "word_ref": "20:130:14:1",
+   "disposition": "CONSISTENT",
+   "note": "Decisive co-text at 20:130 lists ءَانَآئِ ٱلَّيْلِ alongside قَبْلَ طُلُوعِ ٱلشَّمْسِ وَقَبْلَ غُرُوبِهَا — i.e. named time-segments. All three tokens share the surface 'aAnaA^' and the collocation ٱلَّيْل. QAC tags them inconsistently (N at 20:130/39:9, T at 3:113), confirming the tag is not a reliable semantic proxy; the class is fixed by co-text, not tag.",
+   "coverage_cluster_id": "B_night_watches_aanaa",
+   "candidate_semantic_interpretation": "ءَانَاء ٱللَّيْل 'the watches/portions (successive due periods) of the night' — a concrete plural noun of named time-segments, always bound to ٱلَّيْل and always in worship contexts.",
+   "cluster_supporting_evidence": "20:130 وَمِنْ ءَانَآئِ ٱلَّيْلِ فَسَبِّحْ; 39:9 قَٰنِتٌ ءَانَآءَ ٱلَّيْلِ سَاجِدًا; 3:113 يَتْلُونَ ... ءَانَآءَ ٱلَّيْلِ وَهُمْ يَسْجُدُونَ.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Decisive co-text at 20:130 lists ءَانَآئِ ٱلَّيْلِ alongside قَبْلَ طُلُوعِ ٱلشَّمْسِ وَقَبْلَ غُرُوبِهَا — i.e. named time-segments. All three tokens share the surface 'aAnaA^' and the collocation ٱلَّيْل. QAC tags them inconsistently (N at 20:130/39:9, T at 3:113), confirming the tag is not a reliable semantic proxy; the class is fixed by co-text, not tag.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "20:130",
+     "verse_text": "فَٱصْبِرْ عَلَىٰ مَا يَقُولُونَ وَسَبِّحْ بِحَمْدِ رَبِّكَ قَبْلَ طُلُوعِ ٱلشَّمْسِ وَقَبْلَ غُرُوبِهَا وَمِنْ ءَانَآئِ ٱلَّيْلِ فَسَبِّحْ وَأَطْرَافَ ٱلنَّهَارِ لَعَلَّكَ تَرْضَىٰ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "20:130",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAnaA^}i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَٱصْبِرْ عَلَىٰ مَا يَقُولُونَ وَسَبِّحْ بِحَمْدِ رَبِّكَ قَبْلَ طُلُوعِ ٱلشَّمْسِ وَقَبْلَ غُرُوبِهَا وَمِنْ ءَانَآئِ ٱلَّيْلِ فَسَبِّحْ وَأَطْرَافَ ٱلنَّهَارِ لَعَلَّكَ تَرْضَىٰ"
+  },
+  {
+   "word_ref": "23:89:4:2",
+   "disposition": "CONSISTENT",
+   "note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "23:89",
+     "verse_text": "سَيَقُولُونَ لِلَّهِ قُلْ فَأَنَّىٰ تُسْحَرُونَ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "23:89",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "سَيَقُولُونَ لِلَّهِ قُلْ فَأَنَّىٰ تُسْحَرُونَ"
+  },
+  {
+   "word_ref": "29:61:12:2",
+   "disposition": "CONSISTENT",
+   "note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "29:61",
+     "verse_text": "وَلَئِن سَأَلْتَهُم مَّنْ خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ وَسَخَّرَ ٱلشَّمْسَ وَٱلْقَمَرَ لَيَقُولُنَّ ٱللَّهُ فَأَنَّىٰ يُؤْفَكُونَ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "29:61",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَئِن سَأَلْتَهُم مَّنْ خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ وَسَخَّرَ ٱلشَّمْسَ وَٱلْقَمَرَ لَيَقُولُنَّ ٱللَّهُ فَأَنَّىٰ يُؤْفَكُونَ"
+  },
+  {
+   "word_ref": "2:223:6:1",
+   "disposition": "CONSISTENT",
+   "note": "Non-interrogative free-choice use أَنَّىٰ شِئْتُمْ ('in whatever manner you wish'); a distinct syntactic deployment of the same particle, and a negative boundary showing the 'impossibility' force elsewhere is contextual, not lexical.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:223",
+     "verse_text": "نِسَآؤُكُمْ حَرْثٌ لَّكُمْ فَأْتُوا۟ حَرْثَكُمْ أَنَّىٰ شِئْتُمْ وَقَدِّمُوا۟ لِأَنفُسِكُمْ وَٱتَّقُوا۟ ٱللَّهَ وَٱعْلَمُوٓا۟ أَنَّكُم مُّلَٰقُوهُ وَبَشِّرِ ٱلْمُؤْمِنِينَ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "2:223",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "نِسَآؤُكُمْ حَرْثٌ لَّكُمْ فَأْتُوا۟ حَرْثَكُمْ أَنَّىٰ شِئْتُمْ وَقَدِّمُوا۟ لِأَنفُسِكُمْ وَٱتَّقُوا۟ ٱللَّهَ وَٱعْلَمُوٓا۟ أَنَّكُم مُّلَٰقُوهُ وَبَشِّرِ ٱلْمُؤْمِنِينَ"
+  },
+  {
+   "word_ref": "2:247:12:1",
+   "disposition": "CONSISTENT",
+   "note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:247",
+     "verse_text": "وَقَالَ لَهُمْ نَبِيُّهُمْ إِنَّ ٱللَّهَ قَدْ بَعَثَ لَكُمْ طَالُوتَ مَلِكًا قَالُوٓا۟ أَنَّىٰ يَكُونُ لَهُ ٱلْمُلْكُ عَلَيْنَا وَنَحْنُ أَحَقُّ بِٱلْمُلْكِ مِنْهُ وَلَمْ يُؤْتَ سَعَةً مِّنَ ٱلْمَالِ قَالَ إِنَّ ٱللَّهَ ٱصْطَفَىٰهُ عَلَيْكُمْ وَزَادَهُۥ بَسْطَةً فِى ٱلْعِلْمِ وَٱلْجِسْمِ وَٱللَّهُ يُؤْتِى مُلْكَهُۥ مَن يَشَآءُ وَٱللَّهُ وَٰسِعٌ عَلِيمٌ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "2:247",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَقَالَ لَهُمْ نَبِيُّهُمْ إِنَّ ٱللَّهَ قَدْ بَعَثَ لَكُمْ طَالُوتَ مَلِكًا قَالُوٓا۟ أَنَّىٰ يَكُونُ لَهُ ٱلْمُلْكُ عَلَيْنَا وَنَحْنُ أَحَقُّ بِٱلْمُلْكِ مِنْهُ وَلَمْ يُؤْتَ سَعَةً مِّنَ ٱلْمَالِ قَالَ إِنَّ ٱللَّهَ ٱصْطَفَىٰهُ عَلَيْكُمْ وَزَادَهُۥ بَسْطَةً فِى ٱلْعِلْمِ وَٱلْجِسْمِ وَٱللَّهُ يُؤْتِى مُلْكَهُۥ مَن يَشَآءُ وَٱللَّهُ وَٰسِعٌ عَلِيمٌ"
+  },
+  {
+   "word_ref": "2:259:11:1",
+   "disposition": "CONSISTENT",
+   "note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:259",
+     "verse_text": "أَوْ كَٱلَّذِى مَرَّ عَلَىٰ قَرْيَةٍ وَهِىَ خَاوِيَةٌ عَلَىٰ عُرُوشِهَا قَالَ أَنَّىٰ يُحْىِۦ هَٰذِهِ ٱللَّهُ بَعْدَ مَوْتِهَا فَأَمَاتَهُ ٱللَّهُ مِا۟ئَةَ عَامٍ ثُمَّ بَعَثَهُۥ قَالَ كَمْ لَبِثْتَ قَالَ لَبِثْتُ يَوْمًا أَوْ بَعْضَ يَوْمٍ قَالَ بَل لَّبِثْتَ مِا۟ئَةَ عَامٍ فَٱنظُرْ إِلَىٰ طَعَامِكَ وَشَرَابِكَ لَمْ يَتَسَنَّهْ وَٱنظُرْ إِلَىٰ حِمَارِكَ وَلِنَجْعَلَكَ ءَايَةً لِّلنَّاسِ وَٱنظُرْ إِلَى ٱلْعِظَامِ كَيْفَ نُنشِزُهَا ثُمَّ نَكْسُوهَا لَحْمًا فَلَمَّا تَبَيَّنَ لَهُۥ قَالَ أَعْلَمُ أَنَّ ٱللَّهَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "2:259",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَوْ كَٱلَّذِى مَرَّ عَلَىٰ قَرْيَةٍ وَهِىَ خَاوِيَةٌ عَلَىٰ عُرُوشِهَا قَالَ أَنَّىٰ يُحْىِۦ هَٰذِهِ ٱللَّهُ بَعْدَ مَوْتِهَا فَأَمَاتَهُ ٱللَّهُ مِا۟ئَةَ عَامٍ ثُمَّ بَعَثَهُۥ قَالَ كَمْ لَبِثْتَ قَالَ لَبِثْتُ يَوْمًا أَوْ بَعْضَ يَوْمٍ قَالَ بَل لَّبِثْتَ مِا۟ئَةَ عَامٍ فَٱنظُرْ إِلَىٰ طَعَامِكَ وَشَرَابِكَ لَمْ يَتَسَنَّهْ وَٱنظُرْ إِلَىٰ حِمَارِكَ وَلِنَجْعَلَكَ ءَايَةً لِّلنَّاسِ وَٱنظُرْ إِلَى ٱلْعِظَامِ كَيْفَ نُنشِزُهَا ثُمَّ نَكْسُوهَا لَحْمًا فَلَمَّا تَبَيَّنَ لَهُۥ قَالَ أَعْلَمُ أَنَّ ٱللَّهَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ"
+  },
+  {
+   "word_ref": "33:53:16:1",
+   "disposition": "CONSISTENT",
+   "note": "إِنَىٰهُ read as 'its due readiness/time' places it in the due-time cluster C; with نَٰظِرِينَ + food context a 'vessel/pot' reading (Class E) cannot be ruled out Quran-internally, so it is a genuine seam between C and E.",
+   "coverage_cluster_id": "C_due_time_readiness",
+   "candidate_semantic_interpretation": "The arriving/ripe due-time of a thing: verb يَأْنِ 'has the time (not) come due' (57:16) and noun إِنَىٰ 'its due readiness' of the meal (33:53). Agent-free — the 'time' is the subject; it is about something coming due, not an actor acting.",
+   "cluster_supporting_evidence": "57:16 أَلَمْ يَأْنِ لِلَّذِينَ ءَامَنُوٓا۟ أَن تَخْشَعَ قُلُوبُهُمْ; 33:53 غَيْرَ نَٰظِرِينَ إِنَىٰهُ (of a طَعَام).",
+   "counterevidence": [
+    "33:53:16:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "57:16 أَلَمْ يَأْنِ ('has the time not come') and 33:53 غَيْرَ نَٰظِرِينَ إِنَىٰهُ (not waiting for its readiness) share a due-time/readiness sense and are plausibly a small derivational family with cluster B ('due periods'). The cross-token unity to B, and any welding to the boiling pair (D), is inferred, not demonstrated by shared co-text — the seam is under-evidenced Quran-internally.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": "Assigned to the due-time cluster C on the strength of the readiness reading, while flagging the C/E ambiguity as an adversarial boundary; the ambiguity itself is evidence the classes share only a consonantal skeleton, not a meaning.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "33:53:16:1",
+     "preliminary_disposition": "STRUCTURAL_UNCERTAINTY",
+     "preliminary_note": "إِنَىٰهُ is ambiguous between 'its due readiness/time' (Class C) and 'its vessel/pot' (Class E) in a food context.",
+     "final_disposition": "CONSISTENT",
+     "reconciliation_rationale": "Assigned to the due-time cluster C on the strength of the readiness reading, while flagging the C/E ambiguity as an adversarial boundary; the ambiguity itself is evidence the classes share only a consonantal skeleton, not a meaning.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "33:53",
+     "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَدْخُلُوا۟ بُيُوتَ ٱلنَّبِىِّ إِلَّآ أَن يُؤْذَنَ لَكُمْ إِلَىٰ طَعَامٍ غَيْرَ نَٰظِرِينَ إِنَىٰهُ وَلَٰكِنْ إِذَا دُعِيتُمْ فَٱدْخُلُوا۟ فَإِذَا طَعِمْتُمْ فَٱنتَشِرُوا۟ وَلَا مُسْتَـْٔنِسِينَ لِحَدِيثٍ إِنَّ ذَٰلِكُمْ كَانَ يُؤْذِى ٱلنَّبِىَّ فَيَسْتَحْىِۦ مِنكُمْ وَٱللَّهُ لَا يَسْتَحْىِۦ مِنَ ٱلْحَقِّ وَإِذَا سَأَلْتُمُوهُنَّ مَتَٰعًا فَسْـَٔلُوهُنَّ مِن وَرَآءِ حِجَابٍ ذَٰلِكُمْ أَطْهَرُ لِقُلُوبِكُمْ وَقُلُوبِهِنَّ وَمَا كَانَ لَكُمْ أَن تُؤْذُوا۟ رَسُولَ ٱللَّهِ وَلَآ أَن تَنكِحُوٓا۟ أَزْوَٰجَهُۥ مِنۢ بَعْدِهِۦٓ أَبَدًا إِنَّ ذَٰلِكُمْ كَانَ عِندَ ٱللَّهِ عَظِيمًا"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "33:53",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "<inaY`",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَدْخُلُوا۟ بُيُوتَ ٱلنَّبِىِّ إِلَّآ أَن يُؤْذَنَ لَكُمْ إِلَىٰ طَعَامٍ غَيْرَ نَٰظِرِينَ إِنَىٰهُ وَلَٰكِنْ إِذَا دُعِيتُمْ فَٱدْخُلُوا۟ فَإِذَا طَعِمْتُمْ فَٱنتَشِرُوا۟ وَلَا مُسْتَـْٔنِسِينَ لِحَدِيثٍ إِنَّ ذَٰلِكُمْ كَانَ يُؤْذِى ٱلنَّبِىَّ فَيَسْتَحْىِۦ مِنكُمْ وَٱللَّهُ لَا يَسْتَحْىِۦ مِنَ ٱلْحَقِّ وَإِذَا سَأَلْتُمُوهُنَّ مَتَٰعًا فَسْـَٔلُوهُنَّ مِن وَرَآءِ حِجَابٍ ذَٰلِكُمْ أَطْهَرُ لِقُلُوبِكُمْ وَقُلُوبِهِنَّ وَمَا كَانَ لَكُمْ أَن تُؤْذُوا۟ رَسُولَ ٱللَّهِ وَلَآ أَن تَنكِحُوٓا۟ أَزْوَٰجَهُۥ مِنۢ بَعْدِهِۦٓ أَبَدًا إِنَّ ذَٰلِكُمْ كَانَ عِندَ ٱللَّهِ عَظِيمًا"
+  },
+  {
+   "word_ref": "34:52:4:2",
+   "disposition": "CONSISTENT",
+   "note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "34:52",
+     "verse_text": "وَقَالُوٓا۟ ءَامَنَّا بِهِۦ وَأَنَّىٰ لَهُمُ ٱلتَّنَاوُشُ مِن مَّكَانٍۭ بَعِيدٍ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "34:52",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَقَالُوٓا۟ ءَامَنَّا بِهِۦ وَأَنَّىٰ لَهُمُ ٱلتَّنَاوُشُ مِن مَّكَانٍۭ بَعِيدٍ"
+  },
+  {
+   "word_ref": "35:3:20:2",
+   "disposition": "CONSISTENT",
+   "note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "35:3",
+     "verse_text": "يَٰٓأَيُّهَا ٱلنَّاسُ ٱذْكُرُوا۟ نِعْمَتَ ٱللَّهِ عَلَيْكُمْ هَلْ مِنْ خَٰلِقٍ غَيْرُ ٱللَّهِ يَرْزُقُكُم مِّنَ ٱلسَّمَآءِ وَٱلْأَرْضِ لَآ إِلَٰهَ إِلَّا هُوَ فَأَنَّىٰ تُؤْفَكُونَ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "35:3",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰٓأَيُّهَا ٱلنَّاسُ ٱذْكُرُوا۟ نِعْمَتَ ٱللَّهِ عَلَيْكُمْ هَلْ مِنْ خَٰلِقٍ غَيْرُ ٱللَّهِ يَرْزُقُكُم مِّنَ ٱلسَّمَآءِ وَٱلْأَرْضِ لَآ إِلَٰهَ إِلَّا هُوَ فَأَنَّىٰ تُؤْفَكُونَ"
+  },
+  {
+   "word_ref": "36:66:8:2",
+   "disposition": "CONSISTENT",
+   "note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "36:66",
+     "verse_text": "وَلَوْ نَشَآءُ لَطَمَسْنَا عَلَىٰٓ أَعْيُنِهِمْ فَٱسْتَبَقُوا۟ ٱلصِّرَٰطَ فَأَنَّىٰ يُبْصِرُونَ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "36:66",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَوْ نَشَآءُ لَطَمَسْنَا عَلَىٰٓ أَعْيُنِهِمْ فَٱسْتَبَقُوا۟ ٱلصِّرَٰطَ فَأَنَّىٰ يُبْصِرُونَ"
+  },
+  {
+   "word_ref": "39:6:35:2",
+   "disposition": "CONSISTENT",
+   "note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "39:6",
+     "verse_text": "خَلَقَكُم مِّن نَّفْسٍ وَٰحِدَةٍ ثُمَّ جَعَلَ مِنْهَا زَوْجَهَا وَأَنزَلَ لَكُم مِّنَ ٱلْأَنْعَٰمِ ثَمَٰنِيَةَ أَزْوَٰجٍ يَخْلُقُكُمْ فِى بُطُونِ أُمَّهَٰتِكُمْ خَلْقًا مِّنۢ بَعْدِ خَلْقٍ فِى ظُلُمَٰتٍ ثَلَٰثٍ ذَٰلِكُمُ ٱللَّهُ رَبُّكُمْ لَهُ ٱلْمُلْكُ لَآ إِلَٰهَ إِلَّا هُوَ فَأَنَّىٰ تُصْرَفُونَ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "39:6",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "خَلَقَكُم مِّن نَّفْسٍ وَٰحِدَةٍ ثُمَّ جَعَلَ مِنْهَا زَوْجَهَا وَأَنزَلَ لَكُم مِّنَ ٱلْأَنْعَٰمِ ثَمَٰنِيَةَ أَزْوَٰجٍ يَخْلُقُكُمْ فِى بُطُونِ أُمَّهَٰتِكُمْ خَلْقًا مِّنۢ بَعْدِ خَلْقٍ فِى ظُلُمَٰتٍ ثَلَٰثٍ ذَٰلِكُمُ ٱللَّهُ رَبُّكُمْ لَهُ ٱلْمُلْكُ لَآ إِلَٰهَ إِلَّا هُوَ فَأَنَّىٰ تُصْرَفُونَ"
+  },
+  {
+   "word_ref": "39:9:4:1",
+   "disposition": "CONSISTENT",
+   "note": "Decisive co-text at 20:130 lists ءَانَآئِ ٱلَّيْلِ alongside قَبْلَ طُلُوعِ ٱلشَّمْسِ وَقَبْلَ غُرُوبِهَا — i.e. named time-segments. All three tokens share the surface 'aAnaA^' and the collocation ٱلَّيْل. QAC tags them inconsistently (N at 20:130/39:9, T at 3:113), confirming the tag is not a reliable semantic proxy; the class is fixed by co-text, not tag.",
+   "coverage_cluster_id": "B_night_watches_aanaa",
+   "candidate_semantic_interpretation": "ءَانَاء ٱللَّيْل 'the watches/portions (successive due periods) of the night' — a concrete plural noun of named time-segments, always bound to ٱلَّيْل and always in worship contexts.",
+   "cluster_supporting_evidence": "20:130 وَمِنْ ءَانَآئِ ٱلَّيْلِ فَسَبِّحْ; 39:9 قَٰنِتٌ ءَانَآءَ ٱلَّيْلِ سَاجِدًا; 3:113 يَتْلُونَ ... ءَانَآءَ ٱلَّيْلِ وَهُمْ يَسْجُدُونَ.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Decisive co-text at 20:130 lists ءَانَآئِ ٱلَّيْلِ alongside قَبْلَ طُلُوعِ ٱلشَّمْسِ وَقَبْلَ غُرُوبِهَا — i.e. named time-segments. All three tokens share the surface 'aAnaA^' and the collocation ٱلَّيْل. QAC tags them inconsistently (N at 20:130/39:9, T at 3:113), confirming the tag is not a reliable semantic proxy; the class is fixed by co-text, not tag.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "39:9",
+     "verse_text": "أَمَّنْ هُوَ قَٰنِتٌ ءَانَآءَ ٱلَّيْلِ سَاجِدًا وَقَآئِمًا يَحْذَرُ ٱلْـَٔاخِرَةَ وَيَرْجُوا۟ رَحْمَةَ رَبِّهِۦ قُلْ هَلْ يَسْتَوِى ٱلَّذِينَ يَعْلَمُونَ وَٱلَّذِينَ لَا يَعْلَمُونَ إِنَّمَا يَتَذَكَّرُ أُو۟لُوا۟ ٱلْأَلْبَٰبِ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "39:9",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAnaA^'a",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَمَّنْ هُوَ قَٰنِتٌ ءَانَآءَ ٱلَّيْلِ سَاجِدًا وَقَآئِمًا يَحْذَرُ ٱلْـَٔاخِرَةَ وَيَرْجُوا۟ رَحْمَةَ رَبِّهِۦ قُلْ هَلْ يَسْتَوِى ٱلَّذِينَ يَعْلَمُونَ وَٱلَّذِينَ لَا يَعْلَمُونَ إِنَّمَا يَتَذَكَّرُ أُو۟لُوا۟ ٱلْأَلْبَٰبِ"
+  },
+  {
+   "word_ref": "3:113:11:1",
+   "disposition": "CONSISTENT",
+   "note": "T tag vs N at 20:130/39:9 for the same lexeme ءَانَآءَ ٱلَّيْلِ shows the QAC form partition does not track meaning; grouped in Class B by co-text.",
+   "coverage_cluster_id": "B_night_watches_aanaa",
+   "candidate_semantic_interpretation": "ءَانَاء ٱللَّيْل 'the watches/portions (successive due periods) of the night' — a concrete plural noun of named time-segments, always bound to ٱلَّيْل and always in worship contexts.",
+   "cluster_supporting_evidence": "20:130 وَمِنْ ءَانَآئِ ٱلَّيْلِ فَسَبِّحْ; 39:9 قَٰنِتٌ ءَانَآءَ ٱلَّيْلِ سَاجِدًا; 3:113 يَتْلُونَ ... ءَانَآءَ ٱلَّيْلِ وَهُمْ يَسْجُدُونَ.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Decisive co-text at 20:130 lists ءَانَآئِ ٱلَّيْلِ alongside قَبْلَ طُلُوعِ ٱلشَّمْسِ وَقَبْلَ غُرُوبِهَا — i.e. named time-segments. All three tokens share the surface 'aAnaA^' and the collocation ٱلَّيْل. QAC tags them inconsistently (N at 20:130/39:9, T at 3:113), confirming the tag is not a reliable semantic proxy; the class is fixed by co-text, not tag.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:113",
+     "verse_text": "لَيْسُوا۟ سَوَآءً مِّنْ أَهْلِ ٱلْكِتَٰبِ أُمَّةٌ قَآئِمَةٌ يَتْلُونَ ءَايَٰتِ ٱللَّهِ ءَانَآءَ ٱلَّيْلِ وَهُمْ يَسْجُدُونَ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "3:113",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAnaA^'a",
+   "qac_tag": "T",
+   "qac_pos": "T",
+   "qac_verb_form": null,
+   "morphology": "T",
+   "form": "T",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لَيْسُوا۟ سَوَآءً مِّنْ أَهْلِ ٱلْكِتَٰبِ أُمَّةٌ قَآئِمَةٌ يَتْلُونَ ءَايَٰتِ ٱللَّهِ ءَانَآءَ ٱلَّيْلِ وَهُمْ يَسْجُدُونَ"
+  },
+  {
+   "word_ref": "3:165:8:1",
+   "disposition": "CONSISTENT",
+   "note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:165",
+     "verse_text": "أَوَلَمَّآ أَصَٰبَتْكُم مُّصِيبَةٌ قَدْ أَصَبْتُم مِّثْلَيْهَا قُلْتُمْ أَنَّىٰ هَٰذَا قُلْ هُوَ مِنْ عِندِ أَنفُسِكُمْ إِنَّ ٱللَّهَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "3:165",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَوَلَمَّآ أَصَٰبَتْكُم مُّصِيبَةٌ قَدْ أَصَبْتُم مِّثْلَيْهَا قُلْتُمْ أَنَّىٰ هَٰذَا قُلْ هُوَ مِنْ عِندِ أَنفُسِكُمْ إِنَّ ٱللَّهَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ"
+  },
+  {
+   "word_ref": "3:37:20:1",
+   "disposition": "CONSISTENT",
+   "note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:37",
+     "verse_text": "فَتَقَبَّلَهَا رَبُّهَا بِقَبُولٍ حَسَنٍ وَأَنۢبَتَهَا نَبَاتًا حَسَنًا وَكَفَّلَهَا زَكَرِيَّا كُلَّمَا دَخَلَ عَلَيْهَا زَكَرِيَّا ٱلْمِحْرَابَ وَجَدَ عِندَهَا رِزْقًا قَالَ يَٰمَرْيَمُ أَنَّىٰ لَكِ هَٰذَا قَالَتْ هُوَ مِنْ عِندِ ٱللَّهِ إِنَّ ٱللَّهَ يَرْزُقُ مَن يَشَآءُ بِغَيْرِ حِسَابٍ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "3:37",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَتَقَبَّلَهَا رَبُّهَا بِقَبُولٍ حَسَنٍ وَأَنۢبَتَهَا نَبَاتًا حَسَنًا وَكَفَّلَهَا زَكَرِيَّا كُلَّمَا دَخَلَ عَلَيْهَا زَكَرِيَّا ٱلْمِحْرَابَ وَجَدَ عِندَهَا رِزْقًا قَالَ يَٰمَرْيَمُ أَنَّىٰ لَكِ هَٰذَا قَالَتْ هُوَ مِنْ عِندِ ٱللَّهِ إِنَّ ٱللَّهَ يَرْزُقُ مَن يَشَآءُ بِغَيْرِ حِسَابٍ"
+  },
+  {
+   "word_ref": "3:40:3:1",
+   "disposition": "CONSISTENT",
+   "note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:40",
+     "verse_text": "قَالَ رَبِّ أَنَّىٰ يَكُونُ لِى غُلَٰمٌ وَقَدْ بَلَغَنِىَ ٱلْكِبَرُ وَٱمْرَأَتِى عَاقِرٌ قَالَ كَذَٰلِكَ ٱللَّهُ يَفْعَلُ مَا يَشَآءُ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "3:40",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالَ رَبِّ أَنَّىٰ يَكُونُ لِى غُلَٰمٌ وَقَدْ بَلَغَنِىَ ٱلْكِبَرُ وَٱمْرَأَتِى عَاقِرٌ قَالَ كَذَٰلِكَ ٱللَّهُ يَفْعَلُ مَا يَشَآءُ"
+  },
+  {
+   "word_ref": "3:47:3:1",
+   "disposition": "CONSISTENT",
+   "note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:47",
+     "verse_text": "قَالَتْ رَبِّ أَنَّىٰ يَكُونُ لِى وَلَدٌ وَلَمْ يَمْسَسْنِى بَشَرٌ قَالَ كَذَٰلِكِ ٱللَّهُ يَخْلُقُ مَا يَشَآءُ إِذَا قَضَىٰٓ أَمْرًا فَإِنَّمَا يَقُولُ لَهُۥ كُن فَيَكُونُ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "3:47",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالَتْ رَبِّ أَنَّىٰ يَكُونُ لِى وَلَدٌ وَلَمْ يَمْسَسْنِى بَشَرٌ قَالَ كَذَٰلِكِ ٱللَّهُ يَخْلُقُ مَا يَشَآءُ إِذَا قَضَىٰٓ أَمْرًا فَإِنَّمَا يَقُولُ لَهُۥ كُن فَيَكُونُ"
+  },
+  {
+   "word_ref": "40:62:11:2",
+   "disposition": "CONSISTENT",
+   "note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "40:62",
+     "verse_text": "ذَٰلِكُمُ ٱللَّهُ رَبُّكُمْ خَٰلِقُ كُلِّ شَىْءٍ لَّآ إِلَٰهَ إِلَّا هُوَ فَأَنَّىٰ تُؤْفَكُونَ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "40:62",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ذَٰلِكُمُ ٱللَّهُ رَبُّكُمْ خَٰلِقُ كُلِّ شَىْءٍ لَّآ إِلَٰهَ إِلَّا هُوَ فَأَنَّىٰ تُؤْفَكُونَ"
+  },
+  {
+   "word_ref": "40:69:9:1",
+   "disposition": "CONSISTENT",
+   "note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "40:69",
+     "verse_text": "أَلَمْ تَرَ إِلَى ٱلَّذِينَ يُجَٰدِلُونَ فِىٓ ءَايَٰتِ ٱللَّهِ أَنَّىٰ يُصْرَفُونَ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "40:69",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَلَمْ تَرَ إِلَى ٱلَّذِينَ يُجَٰدِلُونَ فِىٓ ءَايَٰتِ ٱللَّهِ أَنَّىٰ يُصْرَفُونَ"
+  },
+  {
+   "word_ref": "43:87:7:2",
+   "disposition": "CONSISTENT",
+   "note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "43:87",
+     "verse_text": "وَلَئِن سَأَلْتَهُم مَّنْ خَلَقَهُمْ لَيَقُولُنَّ ٱللَّهُ فَأَنَّىٰ يُؤْفَكُونَ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "43:87",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَئِن سَأَلْتَهُم مَّنْ خَلَقَهُمْ لَيَقُولُنَّ ٱللَّهُ فَأَنَّىٰ يُؤْفَكُونَ"
+  },
+  {
+   "word_ref": "44:13:1:1",
+   "disposition": "CONSISTENT",
+   "note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "44:13",
+     "verse_text": "أَنَّىٰ لَهُمُ ٱلذِّكْرَىٰ وَقَدْ جَآءَهُمْ رَسُولٌ مُّبِينٌ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "44:13",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَنَّىٰ لَهُمُ ٱلذِّكْرَىٰ وَقَدْ جَآءَهُمْ رَسُولٌ مُّبِينٌ"
+  },
+  {
+   "word_ref": "47:18:11:2",
+   "disposition": "CONSISTENT",
+   "note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "47:18",
+     "verse_text": "فَهَلْ يَنظُرُونَ إِلَّا ٱلسَّاعَةَ أَن تَأْتِيَهُم بَغْتَةً فَقَدْ جَآءَ أَشْرَاطُهَا فَأَنَّىٰ لَهُمْ إِذَا جَآءَتْهُمْ ذِكْرَىٰهُمْ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "47:18",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَهَلْ يَنظُرُونَ إِلَّا ٱلسَّاعَةَ أَن تَأْتِيَهُم بَغْتَةً فَقَدْ جَآءَ أَشْرَاطُهَا فَأَنَّىٰ لَهُمْ إِذَا جَآءَتْهُمْ ذِكْرَىٰهُمْ"
+  },
+  {
+   "word_ref": "55:44:5:1",
+   "disposition": "CONSISTENT",
+   "note": "55:44 modifies حَمِيم ('boiling water'); 88:5 modifies عَيْنٍ ('spring') in a نَارًا حَامِيَةً context. Both are about heat/intensity, carried in co-text by حَمِيم/حَامِية. Their independent semantic weight beyond that heat co-text is not recoverable Quran-internally, so any 'reached-its-due-point' bridge to the temporal cluster is a rejected abstraction.",
+   "coverage_cluster_id": "D_boiling_peak_heat",
+   "candidate_semantic_interpretation": "ءَانٍ / ءَانِيَة '(water) that has reached its culminating heat; boiling, scalding' — a punishment-context descriptor of extreme temperature.",
+   "cluster_supporting_evidence": "55:44 يَطُوفُونَ بَيْنَهَا وَبَيْنَ حَمِيمٍ ءَانٍ; 88:5 تُسْقَىٰ مِنْ عَيْنٍ ءَانِيَةٍ.",
+   "counterevidence": [
+    "88:5:4:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "55:44 modifies حَمِيم ('boiling water'); 88:5 modifies عَيْنٍ ('spring') in a نَارًا حَامِيَةً context. Both are about heat/intensity, carried in co-text by حَمِيم/حَامِية. Their independent semantic weight beyond that heat co-text is not recoverable Quran-internally, so any 'reached-its-due-point' bridge to the temporal cluster is a rejected abstraction.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:44",
+     "verse_text": "يَطُوفُونَ بَيْنَهَا وَبَيْنَ حَمِيمٍ ءَانٍ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "55:44",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAnK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَطُوفُونَ بَيْنَهَا وَبَيْنَ حَمِيمٍ ءَانٍ"
+  },
+  {
+   "word_ref": "57:16:2:1",
+   "disposition": "CONSISTENT",
+   "note": "57:16 أَلَمْ يَأْنِ ('has the time not come') and 33:53 غَيْرَ نَٰظِرِينَ إِنَىٰهُ (not waiting for its readiness) share a due-time/readiness sense and are plausibly a small derivational family with cluster B ('due periods'). The cross-token unity to B, and any welding to the boiling pair (D), is inferred, not demonstrated by shared co-text — the seam is under-evidenced Quran-internally.",
+   "coverage_cluster_id": "C_due_time_readiness",
+   "candidate_semantic_interpretation": "The arriving/ripe due-time of a thing: verb يَأْنِ 'has the time (not) come due' (57:16) and noun إِنَىٰ 'its due readiness' of the meal (33:53). Agent-free — the 'time' is the subject; it is about something coming due, not an actor acting.",
+   "cluster_supporting_evidence": "57:16 أَلَمْ يَأْنِ لِلَّذِينَ ءَامَنُوٓا۟ أَن تَخْشَعَ قُلُوبُهُمْ; 33:53 غَيْرَ نَٰظِرِينَ إِنَىٰهُ (of a طَعَام).",
+   "counterevidence": [
+    "33:53:16:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "57:16 أَلَمْ يَأْنِ ('has the time not come') and 33:53 غَيْرَ نَٰظِرِينَ إِنَىٰهُ (not waiting for its readiness) share a due-time/readiness sense and are plausibly a small derivational family with cluster B ('due periods'). The cross-token unity to B, and any welding to the boiling pair (D), is inferred, not demonstrated by shared co-text — the seam is under-evidenced Quran-internally.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "57:16",
+     "verse_text": "أَلَمْ يَأْنِ لِلَّذِينَ ءَامَنُوٓا۟ أَن تَخْشَعَ قُلُوبُهُمْ لِذِكْرِ ٱللَّهِ وَمَا نَزَلَ مِنَ ٱلْحَقِّ وَلَا يَكُونُوا۟ كَٱلَّذِينَ أُوتُوا۟ ٱلْكِتَٰبَ مِن قَبْلُ فَطَالَ عَلَيْهِمُ ٱلْأَمَدُ فَقَسَتْ قُلُوبُهُمْ وَكَثِيرٌ مِّنْهُمْ فَٰسِقُونَ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "57:16",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "ya>oni",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَلَمْ يَأْنِ لِلَّذِينَ ءَامَنُوٓا۟ أَن تَخْشَعَ قُلُوبُهُمْ لِذِكْرِ ٱللَّهِ وَمَا نَزَلَ مِنَ ٱلْحَقِّ وَلَا يَكُونُوا۟ كَٱلَّذِينَ أُوتُوا۟ ٱلْكِتَٰبَ مِن قَبْلُ فَطَالَ عَلَيْهِمُ ٱلْأَمَدُ فَقَسَتْ قُلُوبُهُمْ وَكَثِيرٌ مِّنْهُمْ فَٰسِقُونَ"
+  },
+  {
+   "word_ref": "5:75:24:1",
+   "disposition": "CONSISTENT",
+   "note": "Reassigned to Class A (interrogative particle) on functional grounds despite the N tag; the tag is a QAC attribution artifact, not a semantic signal.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "STRUCTURAL_UNCERTAINTY",
+   "preliminary_note": "QAC tag is N, which would place it outside the interrogative class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": "Surface >an~aY` and the exact phrase أَنَّىٰ يُؤْفَكُونَ match INTG-tagged 9:30 and 63:4; the N tag is an attribution artifact, so it belongs in the interrogative particle class.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "5:75:24:1",
+     "preliminary_disposition": "STRUCTURAL_UNCERTAINTY",
+     "preliminary_note": "Carries N tag, which conflicts with the interrogative reading.",
+     "final_disposition": "CONSISTENT",
+     "reconciliation_rationale": "Surface >an~aY` and the exact phrase أَنَّىٰ يُؤْفَكُونَ match INTG-tagged 9:30 and 63:4; the N tag is an attribution artifact, so it belongs in the interrogative particle class.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [
+    "Surface is >an~aY` and the phrase أَنَّىٰ يُؤْفَكُونَ is identical to 9:30:22:1 and 63:4:21:1, both tagged INTG — the N tag is an attribution artifact."
+   ],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "5:75",
+     "verse_text": "مَّا ٱلْمَسِيحُ ٱبْنُ مَرْيَمَ إِلَّا رَسُولٌ قَدْ خَلَتْ مِن قَبْلِهِ ٱلرُّسُلُ وَأُمُّهُۥ صِدِّيقَةٌ كَانَا يَأْكُلَانِ ٱلطَّعَامَ ٱنظُرْ كَيْفَ نُبَيِّنُ لَهُمُ ٱلْـَٔايَٰتِ ثُمَّ ٱنظُرْ أَنَّىٰ يُؤْفَكُونَ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "5:75",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "مَّا ٱلْمَسِيحُ ٱبْنُ مَرْيَمَ إِلَّا رَسُولٌ قَدْ خَلَتْ مِن قَبْلِهِ ٱلرُّسُلُ وَأُمُّهُۥ صِدِّيقَةٌ كَانَا يَأْكُلَانِ ٱلطَّعَامَ ٱنظُرْ كَيْفَ نُبَيِّنُ لَهُمُ ٱلْـَٔايَٰتِ ثُمَّ ٱنظُرْ أَنَّىٰ يُؤْفَكُونَ"
+  },
+  {
+   "word_ref": "63:4:21:1",
+   "disposition": "CONSISTENT",
+   "note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "63:4",
+     "verse_text": "وَإِذَا رَأَيْتَهُمْ تُعْجِبُكَ أَجْسَامُهُمْ وَإِن يَقُولُوا۟ تَسْمَعْ لِقَوْلِهِمْ كَأَنَّهُمْ خُشُبٌ مُّسَنَّدَةٌ يَحْسَبُونَ كُلَّ صَيْحَةٍ عَلَيْهِمْ هُمُ ٱلْعَدُوُّ فَٱحْذَرْهُمْ قَٰتَلَهُمُ ٱللَّهُ أَنَّىٰ يُؤْفَكُونَ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "63:4",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِذَا رَأَيْتَهُمْ تُعْجِبُكَ أَجْسَامُهُمْ وَإِن يَقُولُوا۟ تَسْمَعْ لِقَوْلِهِمْ كَأَنَّهُمْ خُشُبٌ مُّسَنَّدَةٌ يَحْسَبُونَ كُلَّ صَيْحَةٍ عَلَيْهِمْ هُمُ ٱلْعَدُوُّ فَٱحْذَرْهُمْ قَٰتَلَهُمُ ٱللَّهُ أَنَّىٰ يُؤْفَكُونَ"
+  },
+  {
+   "word_ref": "6:101:4:1",
+   "disposition": "CONSISTENT",
+   "note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:101",
+     "verse_text": "بَدِيعُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ أَنَّىٰ يَكُونُ لَهُۥ وَلَدٌ وَلَمْ تَكُن لَّهُۥ صَٰحِبَةٌ وَخَلَقَ كُلَّ شَىْءٍ وَهُوَ بِكُلِّ شَىْءٍ عَلِيمٌ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "6:101",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "بَدِيعُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ أَنَّىٰ يَكُونُ لَهُۥ وَلَدٌ وَلَمْ تَكُن لَّهُۥ صَٰحِبَةٌ وَخَلَقَ كُلَّ شَىْءٍ وَهُوَ بِكُلِّ شَىْءٍ عَلِيمٌ"
+  },
+  {
+   "word_ref": "6:95:16:2",
+   "disposition": "CONSISTENT",
+   "note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:95",
+     "verse_text": "إِنَّ ٱللَّهَ فَالِقُ ٱلْحَبِّ وَٱلنَّوَىٰ يُخْرِجُ ٱلْحَىَّ مِنَ ٱلْمَيِّتِ وَمُخْرِجُ ٱلْمَيِّتِ مِنَ ٱلْحَىِّ ذَٰلِكُمُ ٱللَّهُ فَأَنَّىٰ تُؤْفَكُونَ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "6:95",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱللَّهَ فَالِقُ ٱلْحَبِّ وَٱلنَّوَىٰ يُخْرِجُ ٱلْحَىَّ مِنَ ٱلْمَيِّتِ وَمُخْرِجُ ٱلْمَيِّتِ مِنَ ٱلْحَىِّ ذَٰلِكُمُ ٱللَّهُ فَأَنَّىٰ تُؤْفَكُونَ"
+  },
+  {
+   "word_ref": "76:15:3:2",
+   "disposition": "RESISTANT",
+   "note": "Vessel isolate; shares surface آنية with 88:5 'boiling' but has no Quran-internal bridge to any other class.",
+   "coverage_cluster_id": "E_vessel_isolate",
+   "candidate_semantic_interpretation": "ءَانِيَة 'vessels / drinking-containers (of silver)' — a concrete count-noun with zero temporal, interrogative, or intensity content.",
+   "cluster_supporting_evidence": "76:15 وَيُطَافُ عَلَيْهِم بِـَٔانِيَةٍ مِّن فِضَّةٍ وَأَكْوَابٍ كَانَتْ قَوَارِيرَا۠.",
+   "counterevidence": [
+    "88:5:4:1"
+   ],
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "76:15 بِـَٔانِيَةٍ مِّن فِضَّةٍ denotes silver containers. It shares its exact vocalized surface آنية with 88:5 'boiling' yet is semantically irreducible to it, and no Quran-internal thread links a container to time, readiness, heat, or interrogation. It is an orthographic homograph that resists every unification — the decisive proof that this root-id has no single nucleus.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "No Quran-internal context links a silver container to heat, time, or interrogation; the surface identity with 88:5 is orthographic only. Kept as a resistant isolate that defeats any single nucleus.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "76:15:3:2",
+     "preliminary_disposition": "STRUCTURAL_UNCERTAINTY",
+     "preliminary_note": "Same surface آنية as the boiling token 88:5 might invite merging.",
+     "final_disposition": "RESISTANT",
+     "reconciliation_rationale": "No Quran-internal context links a silver container to heat, time, or interrogation; the surface identity with 88:5 is orthographic only. Kept as a resistant isolate that defeats any single nucleus.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [
+    "88:5:4:1"
+   ],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "76:15",
+     "verse_text": "وَيُطَافُ عَلَيْهِم بِـَٔانِيَةٍ مِّن فِضَّةٍ وَأَكْوَابٍ كَانَتْ قَوَارِيرَا۠"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "76:15",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "_#aAniyapK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَيُطَافُ عَلَيْهِم بِـَٔانِيَةٍ مِّن فِضَّةٍ وَأَكْوَابٍ كَانَتْ قَوَارِيرَا۠",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "88:5:4:1",
+   "disposition": "CONSISTENT",
+   "note": "55:44 modifies حَمِيم ('boiling water'); 88:5 modifies عَيْنٍ ('spring') in a نَارًا حَامِيَةً context. Both are about heat/intensity, carried in co-text by حَمِيم/حَامِية. Their independent semantic weight beyond that heat co-text is not recoverable Quran-internally, so any 'reached-its-due-point' bridge to the temporal cluster is a rejected abstraction.",
+   "coverage_cluster_id": "D_boiling_peak_heat",
+   "candidate_semantic_interpretation": "ءَانٍ / ءَانِيَة '(water) that has reached its culminating heat; boiling, scalding' — a punishment-context descriptor of extreme temperature.",
+   "cluster_supporting_evidence": "55:44 يَطُوفُونَ بَيْنَهَا وَبَيْنَ حَمِيمٍ ءَانٍ; 88:5 تُسْقَىٰ مِنْ عَيْنٍ ءَانِيَةٍ.",
+   "counterevidence": [
+    "88:5:4:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "55:44 modifies حَمِيم ('boiling water'); 88:5 modifies عَيْنٍ ('spring') in a نَارًا حَامِيَةً context. Both are about heat/intensity, carried in co-text by حَمِيم/حَامِية. Their independent semantic weight beyond that heat co-text is not recoverable Quran-internally, so any 'reached-its-due-point' bridge to the temporal cluster is a rejected abstraction.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "88:5",
+     "verse_text": "تُسْقَىٰ مِنْ عَيْنٍ ءَانِيَةٍ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "88:5",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAniyapK",
+   "qac_tag": "ADJ",
+   "qac_pos": "ADJ",
+   "qac_verb_form": null,
+   "morphology": "ADJ",
+   "form": "ADJ",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "تُسْقَىٰ مِنْ عَيْنٍ ءَانِيَةٍ"
+  },
+  {
+   "word_ref": "89:23:7:2",
+   "disposition": "CONSISTENT",
+   "note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "89:23",
+     "verse_text": "وَجِا۟ىٓءَ يَوْمَئِذٍۭ بِجَهَنَّمَ يَوْمَئِذٍ يَتَذَكَّرُ ٱلْإِنسَٰنُ وَأَنَّىٰ لَهُ ٱلذِّكْرَىٰ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "89:23",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَجِا۟ىٓءَ يَوْمَئِذٍۭ بِجَهَنَّمَ يَوْمَئِذٍ يَتَذَكَّرُ ٱلْإِنسَٰنُ وَأَنَّىٰ لَهُ ٱلذِّكْرَىٰ"
+  },
+  {
+   "word_ref": "9:30:22:1",
+   "disposition": "CONSISTENT",
+   "note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "coverage_cluster_id": "A_interrogative_particle_annaa",
+   "candidate_semantic_interpretation": "Grammaticalized indeclinable interrogative/generalizing particle أَنَّىٰ 'how / by what means / whence', deployed rhetorically to assert impossibility or rebuke a wrong turning, and once (2:223) as non-interrogative free-choice 'in whatever manner/place'. Its content is fixed by its complement (يَكُونُ, تُؤْفَكُونَ/يُصْرَفُونَ, لَهُمُ ٱلذِّكْرَىٰ, شِئْتُمْ); it carries NO recoverable lexical root seme.",
+   "cluster_supporting_evidence": "Manner/possibility: 19:8, 19:20, 3:40, 3:47, 6:101, 2:247, 2:259; rhetorical rebuke فَأَنَّىٰ تُؤْفَكُونَ/تُصْرَفُونَ/تُسْحَرُونَ/يُبْصِرُونَ: 6:95, 9:30, 63:4, 10:32, 10:34, 35:3, 40:62, 40:69, 39:6, 23:89, 36:66, 29:61, 43:87, 5:75; source 'whence?': 3:37, 3:165; impossibility-of-attaining لَهُمْ: 34:52, 44:13, 47:18, 89:23; free-choice: 2:223.",
+   "counterevidence": [
+    "2:223:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "27 tokens are QAC-tagged INTG with invariant surface >an~aY` (never inflects for tense/number/case); 5:75:24:1 carries the same surface أَنَّىٰ يُؤْفَكُونَ but is mistagged N — functionally identical to 9:30/63:4, so it is grouped here to keep the partition semantic rather than tag-driven. This is a closed-class function word, not a content lexeme; its root-membership is a morphological-attribution convention.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "9:30",
+     "verse_text": "وَقَالَتِ ٱلْيَهُودُ عُزَيْرٌ ٱبْنُ ٱللَّهِ وَقَالَتِ ٱلنَّصَٰرَى ٱلْمَسِيحُ ٱبْنُ ٱللَّهِ ذَٰلِكَ قَوْلُهُم بِأَفْوَٰهِهِمْ يُضَٰهِـُٔونَ قَوْلَ ٱلَّذِينَ كَفَرُوا۟ مِن قَبْلُ قَٰتَلَهُمُ ٱللَّهُ أَنَّىٰ يُؤْفَكُونَ"
+    }
+   ],
+   "root_arabic": "ا ن ي",
+   "root_buckwalter": "Any",
+   "root_id": "Any",
+   "artifact_name": "Any.json",
+   "verse_ref": "9:30",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">an~aY`",
+   "qac_tag": "INTG",
+   "qac_pos": "INTG",
+   "qac_verb_form": null,
+   "morphology": "INTG",
+   "form": "INTG",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَقَالَتِ ٱلْيَهُودُ عُزَيْرٌ ٱبْنُ ٱللَّهِ وَقَالَتِ ٱلنَّصَٰرَى ٱلْمَسِيحُ ٱبْنُ ٱللَّهِ ذَٰلِكَ قَوْلُهُم بِأَفْوَٰهِهِمْ يُضَٰهِـُٔونَ قَوْلَ ٱلَّذِينَ كَفَرُوا۟ مِن قَبْلُ قَٰتَلَهُمُ ٱللَّهُ أَنَّىٰ يُؤْفَكُونَ"
+  }
+ ],
+ "resistant_deep_analysis": [
+  {
+   "word_ref": "76:15:3:2",
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "76:15 بِـَٔانِيَةٍ مِّن فِضَّةٍ denotes silver containers. It shares its exact vocalized surface آنية with 88:5 'boiling' yet is semantically irreducible to it, and no Quran-internal thread links a container to time, readiness, heat, or interrogation. It is an orthographic homograph that resists every unification — the decisive proof that this root-id has no single nucleus.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "No Quran-internal context links a silver container to heat, time, or interrogation; the surface identity with 88:5 is orthographic only. Kept as a resistant isolate that defeats any single nucleus.",
+   "deep_analysis": true
+  }
+ ],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "UNRESOLVED",
+ "result_strength": "UNRESOLVED",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Lens C (adversarial) independently reached RESISTANT/MULTI-CLASS, converging with Lenses A and B on no single Quran-internal seme across the classes.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "76:15:3:2"
+ ],
+ "unreconciled_count": 1,
+ "resistant_occurrences": [
+  "76:15:3:2"
+ ],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": null,
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "LOCAL",
+ "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
+ "layer_attribution": {
+  "occurrence_evidence": "Direct verse readings: أَنَّىٰ + يَكُونُ/تُؤْفَكُونَ/لَهُمُ ٱلذِّكْرَىٰ/شِئْتُمْ (28 tokens); ءَانَآءَ ٱلَّيْلِ (20:130, 39:9, 3:113); أَلَمْ يَأْنِ (57:16) and إِنَىٰهُ (33:53); حَمِيمٍ ءَانٍ (55:44) and عَيْنٍ ءَانِيَةٍ (88:5); بِـَٔانِيَةٍ مِّن فِضَّةٍ (76:15).",
+  "derivation": "No shared productive derivation across classes is Quran-internally recoverable; the interrogative particle is indeclinable and shows no inflectional link to the nouns/verb, so root-membership is a morphological-attribution convention, not a demonstrated derivation.",
+  "lexical_class": "At least four distinct lexical/grammatical classes: closed-class interrogative particle (A); concrete time-segment noun ءَانَاء (B); due-time verb/noun family يَأْنِ/إِنَىٰ (C); heat descriptor ءَانٍ/ءَانِيَة (D); concrete container ءَانِيَة (E). Surface آنية is shared homographically between D and E.",
+  "contextual_relation": "Sense is fixed by co-text in every class: the particle by its verbal/nominal complement, ءَانَاء by ٱللَّيْل, the boiling tokens by حَمِيم/حَامِية, the vessel by فِضَّة/أَكْوَاب — never by a common root seme.",
+  "reconciliation": "5:75 reassigned to the interrogative class over its N tag; 33:53 assigned to due-time while flagging the C/E ambiguity; 76:15 held as a resistant isolate. QAC tag inconsistencies (N/T/INTG at 3:113, 39:9, 5:75) were treated as artifacts, not semantic signals.",
+  "unresolved_resistance": "The vessel isolate (76:15) and the grammaticalized particle (28 tokens) are the two independent proofs that no single nucleus survives; the boiling/due-time seam and the 33:53 C/E ambiguity remain unbridged. Root-level unity is UNRESOLVED / multi-class."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "76:15:3:2",
+   "role": "RESISTANT_SEAM",
+   "reason": "Concrete 'silver vessels' with no temporal/interrogative/heat content; an orthographic homograph of 88:5 'boiling' with no Quran-internal bridge to any other class — the isolate that refuses every unification.",
+   "evidence_basis": {
+    "kind": "SURFACE_COLLISION_MINIMAL_PAIR",
+    "statement": "76:15:3:2 آنية 'silver vessels' and 88:5:4:1 آنية 'boiling (spring)' share the identical vocalized surface آنية yet denote a concrete container versus a state of extreme heat, with no Quran-internal context bridging them — falsifying any single nucleus for root ا ن ي."
+   }
+  },
+  {
+   "word_ref": "88:5:4:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "The surface-collision partner of 76:15: identical آنية but 'boiling', proving that within this root the vocalized surface does not fix meaning.",
+   "evidence_basis": {
+    "kind": "SURFACE_COLLISION_MINIMAL_PAIR",
+    "statement": "76:15:3:2 آنية 'silver vessels' and 88:5:4:1 آنية 'boiling (spring)' share the identical vocalized surface آنية yet denote a concrete container versus a state of extreme heat, with no Quran-internal context bridging them — falsifying any single nucleus for root ا ن ي."
+   }
+  },
+  {
+   "word_ref": "2:223:6:1",
+   "role": "STRUCTURAL_ATYPICALITY",
+   "reason": "أَنَّىٰ شِئْتُمْ is non-interrogative free-choice ('in whatever manner'), not a question at all — an internal split within the particle class and a negative boundary showing the 'impossibility' nuance is contextual, not lexical.",
+   "evidence_basis": {
+    "kind": "SYNTACTIC_DEVIATION",
+    "statement": "2:223 أَنَّىٰ شِئْتُمْ licenses free choice affirmatively, whereas 6:101 أَنَّىٰ يَكُونُ لَهُۥ وَلَدٌ asserts impossibility — the same particle carrying opposite modal force, so the force is co-textual rather than a lexical seme of the root."
+   }
+  },
+  {
+   "word_ref": "33:53:16:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "إِنَىٰهُ sits on the C/E seam: 'its due readiness/time' pulls to the temporal cluster, but a 'vessel/pot' reading in the food context cannot be excluded Quran-internally.",
+   "evidence_basis": {
+    "kind": "UNDISAMBIGUATED_SEAM",
+    "statement": "33:53 غَيْرَ نَٰظِرِينَ إِنَىٰهُ is not Quran-internally disambiguated between 'waiting for its due readiness/time' and 'waiting for its vessel', so the due-time and vessel classes share only a consonantal skeleton, not a demonstrated meaning."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL",
+  "rationale": "The root is UNRESOLVED / multi-class: the vessel isolate (76:15) persists as a resistant seam with no bridge, its surface-collision partner (88:5), the syntactically deviant free-choice particle (2:223), and the undisambiguated C/E seam (33:53) are recorded as adversarial/atypical boundaries. These persist rather than being reconciled into a single nucleus."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A Quran-internal demonstration that a single seme bridges the partition across all classes — the interrogative particle أَنَّىٰ, the night-watches/due-time field, the boiling pair, and the vessel isolate 76:15 — such that the multi-class partition dissolves into one nucleus without an imported lexical prior.",
+  "search_location": "Co-text of the boundary tokens 76:15:3:2 (vessel), 88:5:4:1 and 55:44:5:1 (boiling), 33:53:16:1 and 57:16:2:1 (due-time), and the أَنَّىٰ mass (e.g. 9:30:22:1, 2:223:6:1), plus any inflectional morphology linking the particle to the nouns/verb.",
+  "verification_method": "Check whether any verse supplies a shared context that fixes a common seme across two or more classes (not mere surface identity), and whether the particle is ever inflected/derived from the content tokens; require the bridge to hold without appeal to dictionaries, etymology, or synonym priors.",
+  "confounder_control": "Exclude surface/orthographic coincidence (آنية 'vessel' vs 'boiling'), QAC tag artifacts (N/T/INTG inconsistencies at 5:75, 3:113, 39:9), and vague abstractions ('reaching a due point') broad enough to fit any token; the bridge must be narrow and co-text-anchored.",
+  "failure_consequence": "If no such Quran-internal bridge is found, the UNRESOLVED multi-class verdict stands and no root-wide nucleus may be asserted; if one is found, reclassify toward a derivational family for the bridged classes while keeping unbridged isolates separate."
+ },
+ "falsification_status": "NOT_REQUIRED",
+ "reopen_conditions": [
+  "If a Quran-internal context is found that links ءَانِيَة 'vessel' (76:15:3:2) to either the boiling sense (88:5:4:1, 55:44:5:1) or the due-time cluster (57:16:2:1, 33:53:16:1), re-evaluate whether the vessel isolate can be bridged rather than kept as a homograph.",
+  "If inflectional or derivational morphology is found linking the interrogative أَنَّىٰ (e.g. 9:30:22:1, 2:223:6:1) to the nominal/verbal tokens يَأْنِ (57:16:2:1) or إِنَىٰ (33:53:16:1), revisit whether the particle carries recoverable root semantics instead of being a grammaticalized artifact.",
+  "If co-text at 55:44:5:1 or 88:5:4:1 isolates a temporal 'reaching a due point' sense distinct from the حَمِيم/حَامِية-carried heat, reconsider merging the boiling pair with the due-time cluster (20:130:14:1, 39:9:4:1, 3:113:11:1, 57:16:2:1, 33:53:16:1)."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "9:30:22:1",
+  "6:95:16:2",
+  "2:223:6:1",
+  "20:130:14:1",
+  "39:9:4:1",
+  "3:113:11:1",
+  "57:16:2:1",
+  "33:53:16:1",
+  "55:44:5:1"
+ ],
+ "counterevidence_refs": [
+  "76:15:3:2",
+  "88:5:4:1"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "Any-falsify-unresolved-2026",
+  "verdict": "NOT_APPLICABLE",
+  "falsifiable": false,
+  "distinctiveness_ok": false,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "A_interrogative_particle_annaa",
+   "B_night_watches_aanaa",
+   "C_due_time_readiness",
+   "D_boiling_peak_heat",
+   "E_vessel_isolate"
+  ],
+  "status_rationale": "No universal root nucleus is claimed (claim_scope_kind=UNRESOLVED_CLASS_ONLY), so adversarial refutation of a single nucleus is not required. The adversarial lens instead confirmed the absence of a bridge: the 76:15/88:5 minimal pair and the grammaticalized particle defeat unification, which is the basis for the UNRESOLVED verdict rather than a falsification of a positive claim."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Any: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Any: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Any: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Any: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Any: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Any: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Any: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Any: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

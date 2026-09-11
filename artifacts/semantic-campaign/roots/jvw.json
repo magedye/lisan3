@@ -1,0 +1,359 @@
+{
+ "root_arabic": "ج ث و",
+ "root_buckwalter": "jvw",
+ "root_id": "jvw",
+ "artifact_name": "jvw.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave1",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "A static, self-assumed bodily posture-state (حال) predicated of persons/collectives in the eschatological assembly — the manner in which the gathered are, as distinct from where they are or the act of gathering them. Non-transitive, non-agentive-toward-a-patient, morally unrestricted. The specific physical geometry of the posture (e.g. 'kneeling' vs crouching/collapsed/lowered) is NOT fixed by Quran-internal evidence and is deliberately left open.",
+ "internal_discovery": {
+  "candidate_root_contribution": "A static, self-assumed bodily posture-state (حال) predicated of persons/collectives in the eschatological assembly — the manner in which the gathered are, as distinct from where they are or the act of gathering them. Non-transitive, non-agentive-toward-a-patient, morally unrestricted. The specific physical geometry of the posture (e.g. 'kneeling' vs crouching/collapsed/lowered) is NOT fixed by Quran-internal evidence and is deliberately left open.",
+  "plain_explanation": "The root ج ث و occurs 3 times, all nominal active participles in the accusative circumstantial (حال) slot: جِثِيًّا (19:68, 19:72) and جَاثِيَةً (45:28). The two surfaces are one participial lexeme differing only by number/gender agreement with their referents (plural humans vs the fem-sg collective كُلَّ أُمَّةٍ). In every case it names the bodily state in which sentient beings are found at the Judgment gathering — brought around Hell (19:68), left in it (19:72), or seen at the summons to the record (45:28). The internal evidence fixes the semantic class (a posture-state of the assembled) but underdetermines the exact posture; the traditional gloss 'kneeling' is compatible with but not derivable from the packet.",
+  "layer_separation_note": "Does NOT encode location: position is carried by separate prepositions حَوْلَ ('around', outside — 19:68) and فِيهَا ('in', inside — 19:72), and the same word جِثِيًّا attaches to both, so the root supplies posture not place. Does NOT encode the act of assembling: it is distinct from and consequent to لَنَحْشُرَنَّهُمْ / لَنُحْضِرَنَّهُمْ (19:68) and is not redundant with حشر. Does NOT entail guilt or punishment: 45:28 predicates جَاثِيَةً of كُلَّ أُمَّةٍ ('every nation'), morally unrestricted. Not transitive/agentive-on-a-patient, not a motion or event, and not an affective/moral state (piety is lexicalized separately as ٱتَّقَوا۟, 19:72). Does NOT internally fix a specific limb-geometry ('on the knees').",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "45:28 (جَاثِيَةً) predicates the posture of كُلَّ أُمَّةٍ ('every nation'), universally and before the record-based sorting, disproving the tempting narrowing 'jvw = posture of the damned/punished' that 19:68 (devils+deniers) and 19:72 (ٱلظَّالِمِين) alone would support; the punitive coloring belongs to those referents and to جهنم/فيها, not to the root, whose own contribution is a morally-neutral posture-state.",
+  "strongest_competitor": "That jvw denotes collective 'massing/heaping / being brought together in crowds' rather than an individual bodily posture — supported by حشر framing and حَوْلَ جَهَنَّمَ (19:68) and the group quantification كُلَّ أُمَّةٍ (45:28). It is rejected as the primary account because the active-participle morphology agrees in number/gender with the subjects (a per-subject state), 19:72 applies it to ٱلظَّالِمِين فِيهَا where 'assembling in crowds' is not salient, and 'assembling' is already lexicalized by حشر, making a 'massed' reading redundant with its own context. What survives either reading — 'a settled/lowered static condition of the assembled' — is retained as the narrowest common denominator.",
+  "competing_hypothesis": "That jvw denotes collective 'massing/heaping / being brought together in crowds' rather than an individual bodily posture — supported by حشر framing and حَوْلَ جَهَنَّمَ (19:68) and the group quantification كُلَّ أُمَّةٍ (45:28). It is rejected as the primary account because the active-participle morphology agrees in number/gender with the subjects (a per-subject state), 19:72 applies it to ٱلظَّالِمِين فِيهَا where 'assembling in crowds' is not salient, and 'assembling' is already lexicalized by حشر, making a 'massed' reading redundant with its own context. What survives either reading — 'a settled/lowered static condition of the assembled' — is retained as the narrowest common denominator.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All three analysts (A, B, and adversary C) converge with no dissent: one root nucleus, one participial class, no unbridged sense-split, no resistant occurrence. The functional nucleus (posture-state of the assembled at Judgment) is coherent across 3/3 occurrences and is distinguished from semantic neighbours by demonstrable surface evidence — posture ⟂ location (حَوْلَ vs فِيهَا) and posture ⟂ moral status (كُلَّ أُمَّةٍ). Strength is capped at MODERATE, not STRONG: n=3, all in a single low-variance حال/eschatological frame (Maryam ×2, al-Jāthiya ×1), the exact condition under which 'fits everything' is cheap ('CONSISTENT ≠ universally established'). The specific posture identity is held UNRESOLVED as an honest sub-terminus, but the class-level nucleus is a genuine root-wide generalization.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "jvw-posture-state-assembly",
+     "where": {
+      "qac_pos": [
+       "N"
+      ],
+      "qac_verb_form": [
+       null
+      ],
+      "word_refs": [
+       "19:68:8:1",
+       "19:72:8:1",
+       "45:28:4:1"
+      ]
+     },
+     "occurrence_count_expected": 3,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Static bodily posture-state (حال) of persons/collectives at the eschatological assembly — manner of the gathered, not their location or the act of gathering; non-transitive, morally unrestricted; specific posture-geometry left open.",
+     "classification_rationale": "All 3 occurrences are nominal active participles (جِثِيًّا pl. / جَاثِيَةً fem-sg) in the accusative حال slot, agreeing with their subjects, in the Judgment/Fire register. The two surfaces are one lexeme differing only by agreement, so no sub-class partition is warranted; a single cluster partitions the whole packet.",
+     "supporting_evidence_note": "19:68 حَوْلَ جَهَنَّمَ جِثِيًّا (state of them+devils brought around Hell); 19:72 ٱلظَّٰلِمِينَ فِيهَا جِثِيًّا (state of wrongdoers left in it); 45:28 كُلَّ أُمَّةٍ جَاثِيَةً (state of every nation at the summons). Posture is separable from location because حَوْلَ (outside) and فِيهَا (inside) both co-occur with the same word جِثِيًّا.",
+     "counterevidence": []
+    }
+   ],
+   "reconciliation": [
+    {
+     "word_ref": "19:72:8:1",
+     "final": "CONSISTENT",
+     "rationale": "No contradiction once sequence is respected: in 19:71–72 the God-fearing are first saved (نُنَجِّى), so those remaining in the jvw-state are necessarily the wrongdoers; 45:28's كُلَّ أُمَّةٍ is the controlling universal. The punitive coloring is carried by the referents and فِيهَا, not by the root, so 19:72 instantiates the same morally-neutral posture-state nucleus."
+    }
+   ]
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "jvw",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Two genuine refutation routes were run. (1) The punitive-narrowing hypothesis ('posture of the damned') was tested against 45:28 كُلَّ أُمَّةٍ and failed — the root's contribution is morally neutral. (2) The location hypothesis was tested against the حَوْلَ (19:68) vs فِيهَا (19:72) minimal pair on the identical word جِثِيًّا and failed — location is carried by prepositions, not the root. The posture-state nucleus survived both with no failing occurrences, and is distinct from its neighbours (location, حشر/assembling). The narrower 'specific posture (kneeling)' sub-claim remains UNRESOLVED, but the class-level nucleus that was falsification-tested held."
+ },
+ "coverage_validation": {
+  "root": "jvw",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "19:68:8:1",
+   "disposition": "CONSISTENT",
+   "note": "All 3 occurrences are nominal active participles (جِثِيًّا pl. / جَاثِيَةً fem-sg) in the accusative حال slot, agreeing with their subjects, in the Judgment/Fire register. The two surfaces are one lexeme differing only by agreement, so no sub-class partition is warranted; a single cluster partitions the whole packet.",
+   "coverage_cluster_id": "jvw-posture-state-assembly",
+   "candidate_semantic_interpretation": "Static bodily posture-state (حال) of persons/collectives at the eschatological assembly — manner of the gathered, not their location or the act of gathering; non-transitive, morally unrestricted; specific posture-geometry left open.",
+   "cluster_supporting_evidence": "19:68 حَوْلَ جَهَنَّمَ جِثِيًّا (state of them+devils brought around Hell); 19:72 ٱلظَّٰلِمِينَ فِيهَا جِثِيًّا (state of wrongdoers left in it); 45:28 كُلَّ أُمَّةٍ جَاثِيَةً (state of every nation at the summons). Posture is separable from location because حَوْلَ (outside) and فِيهَا (inside) both co-occur with the same word جِثِيًّا.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 3 occurrences are nominal active participles (جِثِيًّا pl. / جَاثِيَةً fem-sg) in the accusative حال slot, agreeing with their subjects, in the Judgment/Fire register. The two surfaces are one lexeme differing only by agreement, so no sub-class partition is warranted; a single cluster partitions the whole packet.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "19:68",
+     "verse_text": "فَوَرَبِّكَ لَنَحْشُرَنَّهُمْ وَٱلشَّيَٰطِينَ ثُمَّ لَنُحْضِرَنَّهُمْ حَوْلَ جَهَنَّمَ جِثِيًّا"
+    }
+   ],
+   "root_arabic": "ج ث و",
+   "root_buckwalter": "jvw",
+   "root_id": "jvw",
+   "artifact_name": "jvw.json",
+   "verse_ref": "19:68",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "jiviy~FA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَوَرَبِّكَ لَنَحْشُرَنَّهُمْ وَٱلشَّيَٰطِينَ ثُمَّ لَنُحْضِرَنَّهُمْ حَوْلَ جَهَنَّمَ جِثِيًّا"
+  },
+  {
+   "word_ref": "19:72:8:1",
+   "disposition": "CONSISTENT",
+   "note": "All 3 occurrences are nominal active participles (جِثِيًّا pl. / جَاثِيَةً fem-sg) in the accusative حال slot, agreeing with their subjects, in the Judgment/Fire register. The two surfaces are one lexeme differing only by agreement, so no sub-class partition is warranted; a single cluster partitions the whole packet.",
+   "coverage_cluster_id": "jvw-posture-state-assembly",
+   "candidate_semantic_interpretation": "Static bodily posture-state (حال) of persons/collectives at the eschatological assembly — manner of the gathered, not their location or the act of gathering; non-transitive, morally unrestricted; specific posture-geometry left open.",
+   "cluster_supporting_evidence": "19:68 حَوْلَ جَهَنَّمَ جِثِيًّا (state of them+devils brought around Hell); 19:72 ٱلظَّٰلِمِينَ فِيهَا جِثِيًّا (state of wrongdoers left in it); 45:28 كُلَّ أُمَّةٍ جَاثِيَةً (state of every nation at the summons). Posture is separable from location because حَوْلَ (outside) and فِيهَا (inside) both co-occur with the same word جِثِيًّا.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 3 occurrences are nominal active participles (جِثِيًّا pl. / جَاثِيَةً fem-sg) in the accusative حال slot, agreeing with their subjects, in the Judgment/Fire register. The two surfaces are one lexeme differing only by agreement, so no sub-class partition is warranted; a single cluster partitions the whole packet.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": "No contradiction once sequence is respected: in 19:71–72 the God-fearing are first saved (نُنَجِّى), so those remaining in the jvw-state are necessarily the wrongdoers; 45:28's كُلَّ أُمَّةٍ is the controlling universal. The punitive coloring is carried by the referents and فِيهَا, not by the root, so 19:72 instantiates the same morally-neutral posture-state nucleus.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "19:72:8:1",
+     "preliminary_disposition": "RESISTANT",
+     "preliminary_note": "19:72 attaches جِثِيًّا specifically to ٱلظَّٰلِمِينَ, suggesting a punishment-specific 'posture of the damned' sense that would conflict with the universal reading.",
+     "final_disposition": "CONSISTENT",
+     "reconciliation_rationale": "No contradiction once sequence is respected: in 19:71–72 the God-fearing are first saved (نُنَجِّى), so those remaining in the jvw-state are necessarily the wrongdoers; 45:28's كُلَّ أُمَّةٍ is the controlling universal. The punitive coloring is carried by the referents and فِيهَا, not by the root, so 19:72 instantiates the same morally-neutral posture-state nucleus.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "19:72",
+     "verse_text": "ثُمَّ نُنَجِّى ٱلَّذِينَ ٱتَّقَوا۟ وَّنَذَرُ ٱلظَّٰلِمِينَ فِيهَا جِثِيًّا"
+    }
+   ],
+   "root_arabic": "ج ث و",
+   "root_buckwalter": "jvw",
+   "root_id": "jvw",
+   "artifact_name": "jvw.json",
+   "verse_ref": "19:72",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "jiviy~FA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ثُمَّ نُنَجِّى ٱلَّذِينَ ٱتَّقَوا۟ وَّنَذَرُ ٱلظَّٰلِمِينَ فِيهَا جِثِيًّا"
+  },
+  {
+   "word_ref": "45:28:4:1",
+   "disposition": "CONSISTENT",
+   "note": "All 3 occurrences are nominal active participles (جِثِيًّا pl. / جَاثِيَةً fem-sg) in the accusative حال slot, agreeing with their subjects, in the Judgment/Fire register. The two surfaces are one lexeme differing only by agreement, so no sub-class partition is warranted; a single cluster partitions the whole packet. | 45:28 (جَاثِيَةً) predicates the posture of كُلَّ أُمَّةٍ ('every nation'), universally and before the record-based sorting, disproving the tempting narrowing 'jvw = posture of the damned/punished' that 19:68 (devils+deniers) and 19:72 (ٱلظَّالِمِين) alone would support; the punitive coloring belongs to those referents and to جهنم/فيها, not to the root, whose own contribution is a morally-neutral posture-state.",
+   "coverage_cluster_id": "jvw-posture-state-assembly",
+   "candidate_semantic_interpretation": "Static bodily posture-state (حال) of persons/collectives at the eschatological assembly — manner of the gathered, not their location or the act of gathering; non-transitive, morally unrestricted; specific posture-geometry left open.",
+   "cluster_supporting_evidence": "19:68 حَوْلَ جَهَنَّمَ جِثِيًّا (state of them+devils brought around Hell); 19:72 ٱلظَّٰلِمِينَ فِيهَا جِثِيًّا (state of wrongdoers left in it); 45:28 كُلَّ أُمَّةٍ جَاثِيَةً (state of every nation at the summons). Posture is separable from location because حَوْلَ (outside) and فِيهَا (inside) both co-occur with the same word جِثِيًّا.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 3 occurrences are nominal active participles (جِثِيًّا pl. / جَاثِيَةً fem-sg) in the accusative حال slot, agreeing with their subjects, in the Judgment/Fire register. The two surfaces are one lexeme differing only by agreement, so no sub-class partition is warranted; a single cluster partitions the whole packet.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "45:28",
+     "verse_text": "وَتَرَىٰ كُلَّ أُمَّةٍ جَاثِيَةً كُلُّ أُمَّةٍ تُدْعَىٰٓ إِلَىٰ كِتَٰبِهَا ٱلْيَوْمَ تُجْزَوْنَ مَا كُنتُمْ تَعْمَلُونَ"
+    }
+   ],
+   "root_arabic": "ج ث و",
+   "root_buckwalter": "jvw",
+   "root_id": "jvw",
+   "artifact_name": "jvw.json",
+   "verse_ref": "45:28",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "jaAviyapF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَتَرَىٰ كُلَّ أُمَّةٍ جَاثِيَةً كُلُّ أُمَّةٍ تُدْعَىٰٓ إِلَىٰ كِتَٰبِهَا ٱلْيَوْمَ تُجْزَوْنَ مَا كُنتُمْ تَعْمَلُونَ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Adversary C independently attempted the massing/assembly competitor and the 45:28 counterexample and reached the same SUPPORTED outcome as analysts A and B; convergence across the two constructive lenses and the adversarial lens with zero dissent.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "A static, self-assumed bodily posture-state (حال) predicated of persons/collectives in the eschatological assembly — the manner in which the gathered are, as distinct from where they are or the act of gathering them. Non-transitive, non-agentive-toward-a-patient, morally unrestricted. The specific physical geometry of the posture (e.g. 'kneeling' vs crouching/collapsed/lowered) is NOT fixed by Quran-internal evidence and is deliberately left open.",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "LEXICALIZED_CLASS",
+ "layer_attribution": {
+  "occurrence_evidence": "3/3 occurrences: 19:68:8:1 (جِثِيًّا, حَوْلَ جَهَنَّمَ), 19:72:8:1 (جِثِيًّا, ٱلظَّٰلِمِينَ فِيهَا), 45:28:4:1 (جَاثِيَةً, كُلَّ أُمَّةٍ) — all accusative حال of the gathered at Judgment.",
+  "derivation": "Single active-participle derivation: جاثٍ (fāʿil) → broken plural جِثِيّ (agreeing with plural human referents) and fem-sg جَاثِيَة (agreeing with the fem-sg collective أُمَّة); qac_pos N, qac_verb_form null throughout; no finite verb attested.",
+  "lexical_class": "One nominal/participial lexical class (posture-state حال descriptor); no lexicalized sub-split — the جِثِيّ/جَاثِيَة difference is agreement, not sense.",
+  "contextual_relation": "Eschatological assembly register (ḥashr, Fire-proximity, summons to the record). This narrative setting supplies the punitive/duress coloring in Sūra 19 but is NOT promoted into the root claim — the root contributes posture, the context contributes location and moral valence.",
+  "reconciliation": "19:72's restriction to ٱلظَّالِمِين is reconciled with 45:28's universal كُلَّ أُمَّةٍ by sequence (the God-fearing are saved first, نُنَجِّى, so only wrongdoers remain in the state near the Fire); this yields consistency, not partition.",
+  "unresolved_resistance": "No occurrence resists the class-level nucleus. The single honest residue is that the specific physical identity of the posture ('kneeling' vs crouching/collapsed/lowered/massed) is Quran-internally underdetermined by 3 non-contrastive tokens and is held UNRESOLVED; the inherited 'kneeling' gloss is a lexicon prior barred as authority by source policy."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "45:28:4:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "Universalizes the posture to كُلَّ أُمَّةٍ before record-based sorting, refuting a punitive/guilt-specific narrowing and sharpening the negative boundary posture ⟂ moral status.",
+   "evidence_basis": {
+    "kind": "DISTRIBUTIONAL_QURANIC",
+    "statement": "45:28 (جَاثِيَةً) predicates the posture of كُلَّ أُمَّةٍ ('every nation'), universally and before the record-based sorting, disproving the tempting narrowing 'jvw = posture of the damned/punished' that 19:68 (devils+deniers) and 19:72 (ٱلظَّالِمِين) alone would support; the punitive coloring belongs to those referents and to جهنم/فيها, not to the root, whose own contribution is a morally-neutral posture-state."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "No occurrence resists the class-level nucleus; the one genuine hard case is the adversarial boundary at 45:28, whose universal quantifier كُلَّ أُمَّةٍ is the load-bearing datum that fixes the negative boundary (posture ⟂ moral status) and defeats the punitive narrowing. Its statement is persisted verbatim as strongest_counterexample."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A Quran-internal occurrence of root jvw in which the participle denotes location or the act of assembling rather than a bodily posture-state, OR a finite verb / non-حال usage that fixes a specific limb-geometry — any of which would overturn the claim that the root's universal contribution is a location-independent, morally-neutral posture-state of the assembled.",
+  "search_location": "The three packet occurrences (19:68:8:1, 19:72:8:1, 45:28:4:1) and any future-attested jvw form; specifically test whether the posture reading survives independently of the co-occurring prepositions حَوْلَ / فِيهَا and of the referents الشياطين / الظالمين.",
+  "verification_method": "Re-read each verse_text and check (a) whether جِثِيًّا/جَاثِيَةً occupies the حال accusative slot, (b) whether spatial information is carried by a separate preposition rather than the root, and (c) whether the referent set includes morally-unrestricted subjects (كُلَّ أُمَّةٍ).",
+  "confounder_control": "Isolate the root's contribution from context by comparing 19:68 (حَوْلَ, outside) against 19:72 (فِيهَا, inside): identical word, opposite location, so location is a confounder to be stripped; and compare 45:28 (كُلَّ أُمَّةٍ) against 19:72 (ٱلظَّالِمِين) to strip the punitive-referent confounder.",
+  "failure_consequence": "If posture cannot be separated from location or moral status, the universal posture-state nucleus collapses and the account must be downgraded to LOCAL/UNRESOLVED or re-partitioned into location-bound vs posture-bound classes."
+ },
+ "falsification_status": "PASSED",
+ "reopen_conditions": [
+  "If a new jvw occurrence appears with a finite verb form (qac_verb_form non-null) or outside the حال accusative slot, re-test whether the posture-state class still partitions all occurrences or whether a verbal/eventive class must be split off.",
+  "If a jvw occurrence appears outside the eschatological/Judgment register (e.g. a worldly or non-gathering context), re-test the negative boundary posture ⟂ location and whether the nucleus generalizes beyond the current single frame.",
+  "If internal evidence emerges that contrastively fixes limb-geometry (naming knees, sitting, or falling) at any jvw occurrence, reopen the currently-UNRESOLVED specific-posture sub-claim and consider upgrading result_strength.",
+  "If the scope tension between 45:28 (كُلَّ أُمَّةٍ, universal) and 19:72 (ٱلظَّالِمِين, restricted) is challenged by a new occurrence, re-examine the sequence-based reconciliation (نُنَجِّى before نَذَرُ)."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "19:68:8:1",
+  "19:72:8:1",
+  "45:28:4:1"
+ ],
+ "counterevidence_refs": [],
+ "falsification_evidence": {
+  "attempt_id": "jvw-falsify-01",
+  "verdict": "SUPPORTED",
+  "falsifiable": true,
+  "distinctiveness_ok": true,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "jvw-posture-state-assembly"
+  ],
+  "status_rationale": "Two genuine refutation routes were run. (1) The punitive-narrowing hypothesis ('posture of the damned') was tested against 45:28 كُلَّ أُمَّةٍ and failed — the root's contribution is morally neutral. (2) The location hypothesis was tested against the حَوْلَ (19:68) vs فِيهَا (19:72) minimal pair on the identical word جِثِيًّا and failed — location is carried by prepositions, not the root. The posture-state nucleus survived both with no failing occurrences, and is distinct from its neighbours (location, حشر/assembling). The narrower 'specific posture (kneeling)' sub-claim remains UNRESOLVED, but the class-level nucleus that was falsification-tested held."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jvw: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jvw: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jvw: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jvw: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jvw: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jvw: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jvw: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jvw: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

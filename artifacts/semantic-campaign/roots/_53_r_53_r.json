@@ -1,0 +1,351 @@
+{
+ "root_arabic": "ص ر ص ر",
+ "root_buckwalter": "SrSr",
+ "root_id": "SrSr",
+ "artifact_name": "_53_r_53_r.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave1",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "SrSr is attested only as a single lexicalized adjective (صَرصَر) exclusively qualifying رِيح ('wind'), marking that wind as a God-sent instrument of punitive annihilation in the ʿĀd narrative. Its firm Quran-internal contribution is functional/distributional (an epithet reserved for the destroying wind) plus a negative boundary: it does NOT itself denote raw force/violence, which is carried by the separate co-adjective عَاتِيَة in 69:6. The specific sensory quality of the wind (cold vs. loud/roaring vs. sheer intensity) is Quran-internally UNDERDETERMINED and is deliberately NOT asserted.",
+ "internal_discovery": {
+  "candidate_root_contribution": "SrSr is attested only as a single lexicalized adjective (صَرصَر) exclusively qualifying رِيح ('wind'), marking that wind as a God-sent instrument of punitive annihilation in the ʿĀd narrative. Its firm Quran-internal contribution is functional/distributional (an epithet reserved for the destroying wind) plus a negative boundary: it does NOT itself denote raw force/violence, which is carried by the separate co-adjective عَاتِيَة in 69:6. The specific sensory quality of the wind (cold vs. loud/roaring vs. sheer intensity) is Quran-internally UNDERDETERMINED and is deliberately NOT asserted.",
+  "plain_explanation": "The root ص-ر-ص-ر occurs 3 times, always as the same adjective صَرصَر describing رِيح ('wind'), and always inside the story of the destruction of the people of ʿĀd (41:16, 54:19, 69:6). The only variation across the three is grammatical case (accusative صَرصَرًا as object of 'We sent' vs. genitive صَرصَرٍ after 'bi-'), which is syntax, not meaning. So the corpus fixes what this word DOES (it is a fixed epithet of the punishing wind) and one thing it is NOT (in 69:6 the wind is separately called عَاتِيَة 'overpowering', so صَرصَر is not itself the 'violence' word). But because all three uses share one collocate (wind), one referent (ʿĀd), and one register (punishment), the corpus cannot decide the word's precise sensory content, so that is left open as honestly unresolved.",
+  "layer_separation_note": "SrSr does NOT mean 'wind' (it modifies رِيح, the wind itself); does NOT mean 'violent/overpowering' (that is عَاتِيَة, stacked as a distinct adjective in 69:6); does NOT itself carry 'destruction' (lexicalized separately by أُهْلِكُوا, 69:6) or 'ill-omen' (lexicalized by نَحِسَات / نَحْس, 41:16, 54:19); is NOT attested for any non-wind entity (0 non-رِيح tokens) and never occurs as a verb or standalone noun. No Quran-internal evidence fixes any thermal or acoustic sense.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "In 69:6 (بِرِيحٍ صَرصَرٍ عَاتِيَةٍ) the wind is qualified by a SECOND, distinct adjective عَاتِيَة ('overpowering / exceeding bounds'); under a non-redundancy reading of coordinate adjectives, this proves صَرصَر does NOT itself denote force/violence and must contribute some other property, while it simultaneously refuses to supply any positive sensory content — the single most informative internal datum, exposing how little the corpus fixes the root's core sense.",
+  "strongest_competitor": "An 'intensive-doublet' account: صَرصَر is a reduplicative intensifier effectively synonymous with عَاتِيَة, paired in 69:6 for rhetorical force. This is rebutted by the 69:6 coordinate structure (distinct adjectives normally distribute distinct predications, making synonymy redundant), but the rebuttal is not decisive because coordinate adjectives CAN reinforce rather than differentiate; this is the genuine residual uncertainty, and it is one reason positive content is left UNRESOLVED rather than asserted.",
+  "competing_hypothesis": "An 'intensive-doublet' account: صَرصَر is a reduplicative intensifier effectively synonymous with عَاتِيَة, paired in 69:6 for rhetorical force. This is rebutted by the 69:6 coordinate structure (distinct adjectives normally distribute distinct predications, making synonymy redundant), but the rebuttal is not decisive because coordinate adjectives CAN reinforce rather than differentiate; this is the genuine residual uncertainty, and it is one reason positive content is left UNRESOLVED rather than asserted.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All 3 confirmed occurrences are one lexeme, one form-class (ADJ, qac_verb_form=null), one collocation (رِيح صَرصَر), one referent-class (ʿĀd), one register (divine punishment). There are no multiple unbridged classes to reconcile, so a single lexicalized cluster partitions the packet. The distributional/functional profile plus the عَاتِيَة negative boundary hold at 100% coverage with no resisting occurrence, licensing a PREFERRED LEXICALIZED_CLASS judgment. Strength is capped at MODERATE, not STRONG: effective independent-evidence is low (41:16 and 54:19 are near-verbatim formulaic templates, so n is closer to ~1.5 than 3), breadth is a single collocation, and distinctiveness rests on the lone 69:6 contrast. The positive sensory nucleus (cold/loud/intense) would require forbidden external lexical priors and is recorded as underdetermined — an honest partial result, per 'prefer the narrowest account the evidence supports' and 'absence of resistance ≠ proof'.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "c1_adj_epithet_of_riH",
+     "where": {
+      "qac_pos": [
+       "ADJ"
+      ],
+      "qac_verb_form": [
+       null
+      ],
+      "word_refs": [
+       "41:16:4:1",
+       "54:19:5:1",
+       "69:6:5:1"
+      ]
+     },
+     "occurrence_count_expected": 3,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "A single lexicalized adjective صَرصَر functioning as a fixed epithet of رِيح ('wind'), marking it as the God-sent instrument of punitive annihilation against ʿĀd; distinct from the force-adjective عَاتِيَة and from the destruction verb and ill-omen terms in its context. Its precise sensory quality is Quran-internally underdetermined.",
+     "classification_rationale": "QAC assigns ADJ and qac_verb_form=null to all 3; the only surface variance (SaroSarFA acc. in 41:16/54:19 vs. SaroSarK gen. in 69:6) is case agreement governed by the head noun's syntactic role (object of أَرْسَلْنَا vs. after بِ), which is syntax, not semantics. All three share collocate (رِيح), referent (ʿĀd), and register (punishment), so they form one class with no internal seam to bridge.",
+     "supporting_evidence_note": "41:16 فَأَرْسَلْنَا عَلَيْهِمْ رِيحًا صَرصَرًا فِى أَيَّامٍ نَّحِسَاتٍ; 54:19 إِنَّآ أَرْسَلْنَا عَلَيْهِمْ رِيحًا صَرصَرًا فِى يَوْمِ نَحْسٍ مُّسْتَمِرٍّ; 69:6 وَأَمَّا عَادٌ فَأُهْلِكُواے بِرِيحٍ صَرصَرٍ عَاتِيَةٍ. The wind is always agentively dispatched by God and always yoked to destruction/misfortune vocabulary.",
+     "counterevidence": [
+      "In 69:6 the distinct co-adjective عَاتِيَة shows صَرصَر does not itself carry force/violence, and no occurrence supplies any thermal or acoustic cue, so positive sensory content within this class is underdetermined."
+     ]
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "SrSr",
+  "verdict": "NOT_RUN",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "No universal root-wide nucleus is claimed (the positive sensory content is deliberately left UNDERDETERMINED), so a formal universal-refutation returning SUPPORTED was not the target and PASSED is not warranted. The adversarial lens instead tested the lexicalized-class account and endorsed its negative boundary (≠ عَاتِيَة) and scope-lock while flagging the intensive-doublet reading as residual uncertainty; no occurrence fails the class account, but the claim is intentionally sub-nucleus, hence NOT_RUN rather than PASSED."
+ },
+ "coverage_validation": {
+  "root": "SrSr",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "41:16:4:1",
+   "disposition": "CONSISTENT",
+   "note": "QAC assigns ADJ and qac_verb_form=null to all 3; the only surface variance (SaroSarFA acc. in 41:16/54:19 vs. SaroSarK gen. in 69:6) is case agreement governed by the head noun's syntactic role (object of أَرْسَلْنَا vs. after بِ), which is syntax, not semantics. All three share collocate (رِيح), referent (ʿĀd), and register (punishment), so they form one class with no internal seam to bridge.",
+   "coverage_cluster_id": "c1_adj_epithet_of_riH",
+   "candidate_semantic_interpretation": "A single lexicalized adjective صَرصَر functioning as a fixed epithet of رِيح ('wind'), marking it as the God-sent instrument of punitive annihilation against ʿĀd; distinct from the force-adjective عَاتِيَة and from the destruction verb and ill-omen terms in its context. Its precise sensory quality is Quran-internally underdetermined.",
+   "cluster_supporting_evidence": "41:16 فَأَرْسَلْنَا عَلَيْهِمْ رِيحًا صَرصَرًا فِى أَيَّامٍ نَّحِسَاتٍ; 54:19 إِنَّآ أَرْسَلْنَا عَلَيْهِمْ رِيحًا صَرصَرًا فِى يَوْمِ نَحْسٍ مُّسْتَمِرٍّ; 69:6 وَأَمَّا عَادٌ فَأُهْلِكُواے بِرِيحٍ صَرصَرٍ عَاتِيَةٍ. The wind is always agentively dispatched by God and always yoked to destruction/misfortune vocabulary.",
+   "counterevidence": [
+    "In 69:6 the distinct co-adjective عَاتِيَة shows صَرصَر does not itself carry force/violence, and no occurrence supplies any thermal or acoustic cue, so positive sensory content within this class is underdetermined."
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "QAC assigns ADJ and qac_verb_form=null to all 3; the only surface variance (SaroSarFA acc. in 41:16/54:19 vs. SaroSarK gen. in 69:6) is case agreement governed by the head noun's syntactic role (object of أَرْسَلْنَا vs. after بِ), which is syntax, not semantics. All three share collocate (رِيح), referent (ʿĀd), and register (punishment), so they form one class with no internal seam to bridge.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "41:16",
+     "verse_text": "فَأَرْسَلْنَا عَلَيْهِمْ رِيحًا صَرْصَرًا فِىٓ أَيَّامٍ نَّحِسَاتٍ لِّنُذِيقَهُمْ عَذَابَ ٱلْخِزْىِ فِى ٱلْحَيَوٰةِ ٱلدُّنْيَا وَلَعَذَابُ ٱلْـَٔاخِرَةِ أَخْزَىٰ وَهُمْ لَا يُنصَرُونَ"
+    }
+   ],
+   "root_arabic": "ص ر ص ر",
+   "root_buckwalter": "SrSr",
+   "root_id": "SrSr",
+   "artifact_name": "_53_r_53_r.json",
+   "verse_ref": "41:16",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "SaroSarFA",
+   "qac_tag": "ADJ",
+   "qac_pos": "ADJ",
+   "qac_verb_form": null,
+   "morphology": "ADJ",
+   "form": "ADJ",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَأَرْسَلْنَا عَلَيْهِمْ رِيحًا صَرْصَرًا فِىٓ أَيَّامٍ نَّحِسَاتٍ لِّنُذِيقَهُمْ عَذَابَ ٱلْخِزْىِ فِى ٱلْحَيَوٰةِ ٱلدُّنْيَا وَلَعَذَابُ ٱلْـَٔاخِرَةِ أَخْزَىٰ وَهُمْ لَا يُنصَرُونَ"
+  },
+  {
+   "word_ref": "54:19:5:1",
+   "disposition": "CONSISTENT",
+   "note": "QAC assigns ADJ and qac_verb_form=null to all 3; the only surface variance (SaroSarFA acc. in 41:16/54:19 vs. SaroSarK gen. in 69:6) is case agreement governed by the head noun's syntactic role (object of أَرْسَلْنَا vs. after بِ), which is syntax, not semantics. All three share collocate (رِيح), referent (ʿĀd), and register (punishment), so they form one class with no internal seam to bridge.",
+   "coverage_cluster_id": "c1_adj_epithet_of_riH",
+   "candidate_semantic_interpretation": "A single lexicalized adjective صَرصَر functioning as a fixed epithet of رِيح ('wind'), marking it as the God-sent instrument of punitive annihilation against ʿĀd; distinct from the force-adjective عَاتِيَة and from the destruction verb and ill-omen terms in its context. Its precise sensory quality is Quran-internally underdetermined.",
+   "cluster_supporting_evidence": "41:16 فَأَرْسَلْنَا عَلَيْهِمْ رِيحًا صَرصَرًا فِى أَيَّامٍ نَّحِسَاتٍ; 54:19 إِنَّآ أَرْسَلْنَا عَلَيْهِمْ رِيحًا صَرصَرًا فِى يَوْمِ نَحْسٍ مُّسْتَمِرٍّ; 69:6 وَأَمَّا عَادٌ فَأُهْلِكُواے بِرِيحٍ صَرصَرٍ عَاتِيَةٍ. The wind is always agentively dispatched by God and always yoked to destruction/misfortune vocabulary.",
+   "counterevidence": [
+    "In 69:6 the distinct co-adjective عَاتِيَة shows صَرصَر does not itself carry force/violence, and no occurrence supplies any thermal or acoustic cue, so positive sensory content within this class is underdetermined."
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "QAC assigns ADJ and qac_verb_form=null to all 3; the only surface variance (SaroSarFA acc. in 41:16/54:19 vs. SaroSarK gen. in 69:6) is case agreement governed by the head noun's syntactic role (object of أَرْسَلْنَا vs. after بِ), which is syntax, not semantics. All three share collocate (رِيح), referent (ʿĀd), and register (punishment), so they form one class with no internal seam to bridge.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "54:19",
+     "verse_text": "إِنَّآ أَرْسَلْنَا عَلَيْهِمْ رِيحًا صَرْصَرًا فِى يَوْمِ نَحْسٍ مُّسْتَمِرٍّ"
+    }
+   ],
+   "root_arabic": "ص ر ص ر",
+   "root_buckwalter": "SrSr",
+   "root_id": "SrSr",
+   "artifact_name": "_53_r_53_r.json",
+   "verse_ref": "54:19",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "SaroSarFA",
+   "qac_tag": "ADJ",
+   "qac_pos": "ADJ",
+   "qac_verb_form": null,
+   "morphology": "ADJ",
+   "form": "ADJ",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّآ أَرْسَلْنَا عَلَيْهِمْ رِيحًا صَرْصَرًا فِى يَوْمِ نَحْسٍ مُّسْتَمِرٍّ"
+  },
+  {
+   "word_ref": "69:6:5:1",
+   "disposition": "CONSISTENT",
+   "note": "QAC assigns ADJ and qac_verb_form=null to all 3; the only surface variance (SaroSarFA acc. in 41:16/54:19 vs. SaroSarK gen. in 69:6) is case agreement governed by the head noun's syntactic role (object of أَرْسَلْنَا vs. after بِ), which is syntax, not semantics. All three share collocate (رِيح), referent (ʿĀd), and register (punishment), so they form one class with no internal seam to bridge. | In 69:6 (بِرِيحٍ صَرصَرٍ عَاتِيَةٍ) the wind is qualified by a SECOND, distinct adjective عَاتِيَة ('overpowering / exceeding bounds'); under a non-redundancy reading of coordinate adjectives, this proves صَرصَر does NOT itself denote force/violence and must contribute some other property, while it simultaneously refuses to supply any positive sensory content — the single most informative internal datum, exposing how little the corpus fixes the root's core sense.",
+   "coverage_cluster_id": "c1_adj_epithet_of_riH",
+   "candidate_semantic_interpretation": "A single lexicalized adjective صَرصَر functioning as a fixed epithet of رِيح ('wind'), marking it as the God-sent instrument of punitive annihilation against ʿĀd; distinct from the force-adjective عَاتِيَة and from the destruction verb and ill-omen terms in its context. Its precise sensory quality is Quran-internally underdetermined.",
+   "cluster_supporting_evidence": "41:16 فَأَرْسَلْنَا عَلَيْهِمْ رِيحًا صَرصَرًا فِى أَيَّامٍ نَّحِسَاتٍ; 54:19 إِنَّآ أَرْسَلْنَا عَلَيْهِمْ رِيحًا صَرصَرًا فِى يَوْمِ نَحْسٍ مُّسْتَمِرٍّ; 69:6 وَأَمَّا عَادٌ فَأُهْلِكُواے بِرِيحٍ صَرصَرٍ عَاتِيَةٍ. The wind is always agentively dispatched by God and always yoked to destruction/misfortune vocabulary.",
+   "counterevidence": [
+    "In 69:6 the distinct co-adjective عَاتِيَة shows صَرصَر does not itself carry force/violence, and no occurrence supplies any thermal or acoustic cue, so positive sensory content within this class is underdetermined."
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "QAC assigns ADJ and qac_verb_form=null to all 3; the only surface variance (SaroSarFA acc. in 41:16/54:19 vs. SaroSarK gen. in 69:6) is case agreement governed by the head noun's syntactic role (object of أَرْسَلْنَا vs. after بِ), which is syntax, not semantics. All three share collocate (رِيح), referent (ʿĀd), and register (punishment), so they form one class with no internal seam to bridge.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "69:6",
+     "verse_text": "وَأَمَّا عَادٌ فَأُهْلِكُوا۟ بِرِيحٍ صَرْصَرٍ عَاتِيَةٍ"
+    }
+   ],
+   "root_arabic": "ص ر ص ر",
+   "root_buckwalter": "SrSr",
+   "root_id": "SrSr",
+   "artifact_name": "_53_r_53_r.json",
+   "verse_ref": "69:6",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "SaroSarK",
+   "qac_tag": "ADJ",
+   "qac_pos": "ADJ",
+   "qac_verb_form": null,
+   "morphology": "ADJ",
+   "form": "ADJ",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَأَمَّا عَادٌ فَأُهْلِكُوا۟ بِرِيحٍ صَرْصَرٍ عَاتِيَةٍ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Adversarial Lens C independently read all 3 occurrences and argued that consistency here is an artifact of corpus homogeneity (effective n≈1.5, formulaic 41:16/54:19), affirming the negative boundary from 69:6 and the UNRESOLVED positive content — convergent with Lenses A and B.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "SrSr is attested only as a single lexicalized adjective (صَرصَر) exclusively qualifying رِيح ('wind'), marking that wind as a God-sent instrument of punitive annihilation in the ʿĀd narrative. Its firm Quran-internal contribution is functional/distributional (an epithet reserved for the destroying wind) plus a negative boundary: it does NOT itself denote raw force/violence, which is carried by the separate co-adjective عَاتِيَة in 69:6. The specific sensory quality of the wind (cold vs. loud/roaring vs. sheer intensity) is Quran-internally UNDERDETERMINED and is deliberately NOT asserted.",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "LEXICALIZED_CLASS",
+ "layer_attribution": {
+  "occurrence_evidence": "3/3 confirmed tokens (41:16:4:1, 54:19:5:1, 69:6:5:1), all ADJ (qac_verb_form=null), surfaces SaroSarFA/SaroSarFA/SaroSarK; the FA/K alternation is case inflection only.",
+  "derivation": "No productive derivational family exists: the root is attested only as the quadriliteral reduplicative adjective صَرصَر (biliteral ص-ر geminated); reduplication shape is noted as a structural fact only and NOT imported as phonosemantic authority.",
+  "lexical_class": "A single lexicalized adjectival class: fixed epithet of رِيح marking a God-sent wind of punitive annihilation, distinct from عَاتِيَة; positive sensory nucleus underdetermined.",
+  "contextual_relation": "Destruction (أُهْلِكُوا), disgrace/punishment (عَذَاب الْخِزْى), and ill-omen (نَحِسَات / نَحْس مُسْتَمِرّ) are supplied by the surrounding ʿĀd narrative and separate lexemes — contextual, NOT part of the root claim.",
+  "reconciliation": "No inter-class reconciliation was required: a single cluster partitions all 3 occurrences with disposition CONSISTENT and no competing sense to bridge.",
+  "unresolved_resistance": "The root's positive sensory content (cold vs. loud/roaring vs. sheer intensity) is collectively underdetermined — all tokens share one collocate, one referent, one register, giving no minimal pair to isolate the feature; asserting any specific gloss would import forbidden external priors, so it is left honestly unresolved."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "69:6:5:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "The only occurrence carrying discriminating information: it stacks a second, distinct adjective عَاتِيَة on the same رِيح, which both constrains صَرصَر (≠ 'violence/overpowering') and destabilizes any positive-content claim by leaving open an intensive-doublet reading.",
+   "evidence_basis": {
+    "kind": "COORDINATE_ADJECTIVE_CONTRAST",
+    "statement": "In 69:6 (بِرِيحٍ صَرصَرٍ عَاتِيَةٍ) the wind is qualified by a SECOND, distinct adjective عَاتِيَة ('overpowering / exceeding bounds'); under a non-redundancy reading of coordinate adjectives, this proves صَرصَر does NOT itself denote force/violence and must contribute some other property, while it simultaneously refuses to supply any positive sensory content — the single most informative internal datum, exposing how little the corpus fixes the root's core sense."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "There is a genuine, evidence-derived hard case: the 69:6 coordinate-adjective contrast with عَاتِيَة, which supplies the only Quran-internal discriminating boundary. No occurrence is finally RESISTANT to the lexicalized-class account (all three are CONSISTENT), so no RESISTANT_SEAM is listed; the unresolved element is the collective, corpus-level underdetermination of positive sensory content, not per-occurrence resistance."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A Quran-internal token of صَرصَر qualifying any noun other than رِيح, or a رِيح صَرصَر occurring outside the ʿĀd divine-punishment frame, or a context that overtly supplies a thermal or acoustic gloss for the wind — any of which would break the scope-locked-epithet claim or would force positive sensory content the current judgment leaves open.",
+  "search_location": "The three attested verses 41:16, 54:19, 69:6, plus every other رِيح occurrence in the corpus and any additional ص-ر-ص-ر segment revealed by re-segmentation.",
+  "verification_method": "Re-read QAC morphology (qac_pos, qac_verb_form, qac_surface_form_buckwalter) and the full verse_text collocates for each candidate token to confirm the modified head noun and the narrative frame.",
+  "confounder_control": "Separate the root's own contribution from meaning supplied by its collocation and frame: destruction (أُهْلِكُوا), ill-omen (نَحِسَات / نَحْس), and force (عَاتِيَة) must be attributed to their own lexemes, not to صَرصَر.",
+  "failure_consequence": "If such a finding appears, downgrade or widen the LEXICALIZED_CLASS scope (or, if positive content becomes forced, revise the underdetermination verdict) and re-run the analysis."
+ },
+ "falsification_status": "NOT_RUN",
+ "reopen_conditions": [
+  "If any re-segmentation or corpus revision surfaces a ص-ر-ص-ر token outside the رِيح collocation (e.g., a verb, a standalone noun, or an adjective modifying a non-wind noun), reopen the LEXICALIZED_CLASS scope for SrSr.",
+  "If a Quran-internal رِيح صَرصَر appears in a non-punishment context or with an explicit thermal/acoustic qualifier, reopen the UNRESOLVED verdict on the root's positive sensory content.",
+  "If the 69:6 coordinate-adjective analysis is challenged — e.g., عَاتِيَة is shown to reinforce rather than differentiate صَرصَر — reopen the '≠ force/violence' negative boundary and the intensive-doublet competitor."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "41:16:4:1",
+  "54:19:5:1",
+  "69:6:5:1"
+ ],
+ "counterevidence_refs": [],
+ "falsification_evidence": {
+  "attempt_id": "srsr-adversarial-lensC-2026-09-11",
+  "verdict": "NOT_RUN",
+  "falsifiable": true,
+  "distinctiveness_ok": true,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "c1_adj_epithet_of_riH"
+  ],
+  "status_rationale": "No universal root-wide nucleus is claimed (the positive sensory content is deliberately left UNDERDETERMINED), so a formal universal-refutation returning SUPPORTED was not the target and PASSED is not warranted. The adversarial lens instead tested the lexicalized-class account and endorsed its negative boundary (≠ عَاتِيَة) and scope-lock while flagging the intensive-doublet reading as residual uncertainty; no occurrence fails the class account, but the claim is intentionally sub-nucleus, hence NOT_RUN rather than PASSED."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "SrSr: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "SrSr: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "SrSr: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "SrSr: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "SrSr: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "SrSr: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "SrSr: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "SrSr: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}
