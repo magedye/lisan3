@@ -1141,3 +1141,37 @@ Execute Batch 07 Wave 01 (frozen 20-root / 1,470-occurrence set) with genuine
 Quran-internal occurrence-level research, canonical-contract serialization, and a
 20-root V2 checkpoint. Continue automatically through Waves 02-06. Do not merge,
 push, canonicalize, or start Batch 08.
+
+## Batch 07 Campaign Complete — Ready For Fresh Independent Review (2026-09-12)
+
+- All six Batch 07 waves are researched, overclaim-swept, V2-checkpointed, and
+  committed on `semantic-campaign-batch07`:
+  - Init/frozen population `f92797a`; Wave 01 `e38e59b`; Wave 02 `9e1435a`;
+    Wave 03 `ada0488`; Wave 04 `b6c53e4`; Wave 05 `0fa5445`; Wave 06 `01204fc`.
+- **120 / 120 roots**, **8,168 occurrences**, exact-set complete (0 missing / 0
+  extra / 0 duplicate). Ledger 248 / 1,642 researched; canonicalization PENDING.
+- Whole-campaign V3 (recomputed from durable artifacts): 120/120 artifacts;
+  canonical contract errors 0; evidence-reference errors 0; **120/120 distinct
+  rejection conditions and 120/120 distinct reopen sets**; 0 positional hard
+  cases; 0 unsupported PASSED; 0 unresolved-with-universal; purity all
+  NOT_EVALUATED; collisions 0 (universe 1642/1642); ledger/manifest/status agree.
+- Distribution: **6 STRONG / 96 MODERATE / 0 WEAK / 18 UNRESOLVED**; 357 final
+  resistant across 72 roots; 167 reconciliations; 0 failed reconciliations; 0
+  incomplete lineages. Falsification 17 PASSED / 85 NOT_RUN / 18 NOT_REQUIRED.
+- Overclaim sweeps: Wave 01 flagged & corrected 7; Waves 02–06 flagged 0.
+- Prior batches preserved: 0 prior root files modified; Batch 05's five corrective
+  roots byte-identical; Batch 02–06 intact. Focused tests 48 pass; Ruff clean.
+- Deliverables: `docs/LISAN3_BATCH_07_SEMANTIC_CAMPAIGN_REPORT.md`,
+  `artifacts/semantic-campaign/BATCH_07_INDEPENDENT_REVIEW_INDEX.json`,
+  `artifacts/semantic-campaign/BATCH_07_V3_VERIFICATION.json`, six wave reports,
+  six overclaim-sweep records.
+- Implementation-thread max state: `BATCH_07_READY_FOR_FRESH_INDEPENDENT_SEMANTIC_REVIEW`.
+  No merge, push, adoption, canonicalization, or Batch 08 performed. The
+  `VERIFIED` component of the adoption threshold must come from a separate,
+  fresh, read-only independent review — not self-granted here.
+
+## Current Exact Next Action
+
+Stop. Run a fresh, independent, read-only semantic review of the Batch 07
+campaign-closure commit (separate context). Do not merge, push, adopt,
+canonicalize, or start Batch 08 before that review returns per-root verification.

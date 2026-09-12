@@ -1,7 +1,7 @@
 {
   "campaign_id": "lisan-root-calibration",
-  "status": "BATCH_07_WAVE_06_COMPLETE",
-  "verdict": "BATCH_06_REPRESENTATION_REMEDIATION_READY_FOR_FRESH_REVIEW",
+  "status": "BATCH_07_READY_FOR_FRESH_INDEPENDENT_SEMANTIC_REVIEW",
+  "verdict": "BATCH_07_READY_FOR_FRESH_INDEPENDENT_SEMANTIC_REVIEW",
   "produced_at": "2026-09-11",
   "reads_handoff": "artifacts/semantic-campaign/PHASE_1_HANDOFF.json",
   "supersedes_prior_status": "BLOCKED_PENDING_QAC_MORPHOLOGY_ADMISSION",
@@ -128,7 +128,7 @@
     "independently_reviewed": false,
     "canonicalized": false
   },
-  "resume_instruction": "Stop. Batch 06 representation remediation requires a fresh read-only independent review against the exact corrective commit. Do not select Batch 07, canonicalize, merge, push, or release under this authority.",
+  "resume_instruction": "Batch 07 research complete (120/120) and V3-verified. Run a FRESH independent read-only semantic review (separate context). Do NOT self-grant VERIFIED/ACCEPTED. No merge/push/adoption/Batch 08 before that review.",
   "batch06_corrective_revision": {
     "revision_id": "BATCH_06_CORRECTIVE_REVISION_2026_09_11",
     "targets": [
@@ -249,5 +249,31 @@
       "reconciliation_lineage_records": 77,
       "report": "docs/LISAN3_BATCH_07_WAVE_06.md"
     }
+  },
+  "batch07_campaign": {
+    "population": 120,
+    "occurrences": 8168,
+    "waves": 6,
+    "distribution": {
+      "STRONG": 6,
+      "MODERATE": 96,
+      "WEAK": 0,
+      "UNRESOLVED": 18
+    },
+    "final_resistant": 357,
+    "reconciliations": 167,
+    "failed_reconciliations": 0,
+    "contract_errors": 0,
+    "evidence_reference_errors": 0,
+    "collisions": 0,
+    "overclaim_flagged_corrected": 7,
+    "purity": "NOT_EVALUATED",
+    "report": "docs/LISAN3_BATCH_07_SEMANTIC_CAMPAIGN_REPORT.md",
+    "review_index": "artifacts/semantic-campaign/BATCH_07_INDEPENDENT_REVIEW_INDEX.json",
+    "v3_verification": "artifacts/semantic-campaign/BATCH_07_V3_VERIFICATION.json",
+    "independently_reviewed": false,
+    "canonicalized": false,
+    "merged": false,
+    "pushed": false
   }
 }

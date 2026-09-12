@@ -1,0 +1,238 @@
+{
+ "population": {
+  "manifest_roots": 120,
+  "artifacts_present": 120,
+  "missing_artifacts": [],
+  "in_ledger": 120
+ },
+ "exact_set": {
+  "total_occurrences": 8168,
+  "unique_refs": 8168,
+  "coverage_failures": 0,
+  "missing": 0,
+  "extra": 0,
+  "duplicate": 0
+ },
+ "contract": "LISAN3_SEMANTIC_RUNTIME_V3_2026_09_06",
+ "distribution": {
+  "MODERATE": [
+   "$Er",
+   "$bh",
+   "$hd",
+   "$qw",
+   "$rb",
+   "$yE",
+   "Awy",
+   "Ayy",
+   "E*r",
+   "Eml",
+   "Esr",
+   "Hdv",
+   "Hnf",
+   "Hsr",
+   "Sdq",
+   "SrSr",
+   "Srm",
+   "Sxr",
+   "TfA",
+   "Tfq",
+   "Tgy",
+   "TmE",
+   "Tmn",
+   "Twf",
+   "Tyn",
+   "ZmA",
+   "b*r",
+   "bED",
+   "bSr",
+   "bTl",
+   "bgt",
+   "bhj",
+   "bhm",
+   "blw",
+   "brH",
+   "dEE",
+   "dwn",
+   "fdy",
+   "fjj",
+   "fqd",
+   "frt",
+   "fsH",
+   "ftH",
+   "ftl",
+   "ftr",
+   "fzz",
+   "glZ",
+   "gyr",
+   "hTE",
+   "hdy",
+   "hmz",
+   "hzm",
+   "j*E",
+   "jAr",
+   "jEl",
+   "jdv",
+   "jhd",
+   "jmE",
+   "jvw",
+   "jyb",
+   "jzA",
+   "kbr",
+   "kbt",
+   "kll",
+   "krh",
+   "kwr",
+   "l**",
+   "lEn",
+   "lqy",
+   "mrA",
+   "mwt",
+   "n*r",
+   "nEm",
+   "nSH",
+   "nSr",
+   "nZr",
+   "nbA",
+   "njm",
+   "nkr",
+   "qTE",
+   "qdr",
+   "qnt",
+   "qrr",
+   "qwy",
+   "rAf",
+   "rAy",
+   "rHm",
+   "rkE",
+   "rwd",
+   "sbq",
+   "slT",
+   "wEd",
+   "wqt",
+   "xzn",
+   "yAs",
+   "ywm"
+  ],
+  "UNRESOLVED": [
+   "$ml",
+   "*nb",
+   "*rr",
+   "Alw",
+   "Any",
+   "E*b",
+   "TwE",
+   "bHr",
+   "hwy",
+   "jbl",
+   "jld",
+   "jwr",
+   "mlA",
+   "qrD",
+   "qrn",
+   "smw",
+   "sxr",
+   "xll"
+  ],
+  "STRONG": [
+   "ESw",
+   "SyH",
+   "dnw",
+   "flH",
+   "fwh",
+   "glm"
+  ]
+ },
+ "resistance": {
+  "final_resistant": 357,
+  "reconciliations": 167,
+  "roots_with_resistance": 72,
+  "failed_reconciliations": 0,
+  "lineage_incomplete": 0
+ },
+ "controls": {
+  "rejection_distinct": 120,
+  "reopen_distinct": 120,
+  "n": 120,
+  "positional_hard_cases": [],
+  "unsupported_passed": [],
+  "unresolved_with_universal": []
+ },
+ "purity": {
+  "non_not_evaluated_status": [],
+  "bad_diagnostics": []
+ },
+ "collisions": {
+  "roots_dir_files": 248,
+  "roots_dir_dups": [],
+  "universe_casefold_unique": "1642/1642"
+ },
+ "state": {
+  "ledger_total": 248,
+  "manifest_occurrence_total": 8168,
+  "recomputed_occurrence_total": 8168,
+  "occ_match": true
+ },
+ "overclaim": {
+  "wave01": {
+   "cleared": 13,
+   "flagged": 7
+  },
+  "wave02": {
+   "cleared": 20,
+   "flagged": 0
+  },
+  "wave03": {
+   "cleared": 20,
+   "flagged": 0
+  },
+  "wave04": {
+   "cleared": 20,
+   "flagged": 0
+  },
+  "wave05": {
+   "cleared": 20,
+   "flagged": 0
+  },
+  "wave06": {
+   "cleared": 20,
+   "flagged": 0
+  }
+ },
+ "distribution_counts": {
+  "MODERATE": 96,
+  "UNRESOLVED": 18,
+  "STRONG": 6
+ },
+ "scope": {
+  "REPRESENTATIVE": 97,
+  "LOCAL": 18,
+  "UNIVERSAL": 5
+ },
+ "kind": {
+  "LEXICALIZED_CLASS": 27,
+  "UNRESOLVED_CLASS_ONLY": 18,
+  "DERIVATIONAL_FAMILY": 70,
+  "ROOT_GENERALIZATION": 5
+ },
+ "falsification": {
+  "NOT_RUN": 85,
+  "NOT_REQUIRED": 18,
+  "PASSED": 17
+ },
+ "schema_version": "1.0.0",
+ "batch_id": "batch07",
+ "revision_id": "BATCH_07_V3_CAMPAIGN_VERIFICATION_2026_09_12",
+ "prior_batch_preservation": {
+  "batch07_root_files_added": 120,
+  "prior_root_files_modified": 0,
+  "batch05_corrective_roots_byte_identical": true,
+  "note": "Only Batch07 artifacts + ledger/status touched since fff83c5."
+ },
+ "tests": {
+  "test_campaign_coverage": 42,
+  "test_qac_morphology": 6,
+  "focused_total": 48,
+  "ruff": "clean",
+  "py_compile": "ok"
+ }
+}
