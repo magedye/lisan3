@@ -1,0 +1,337 @@
+{
+ "root_arabic": "ج د ث",
+ "root_buckwalter": "jdv",
+ "root_id": "jdv",
+ "artifact_name": "jdv.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave6",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "A purely nominal, definite-plural lexeme (al-ajdāth) naming the bounded plural resting-container of the dead, profiled exclusively as the source-locus (always مِن-governed) FROM WHICH humans emerge at the resurrection. The root carries no verbal/eventive content and no attested singular; it names a place, never an act, and appears only as the origin-pole of eschatological egress, opposed to the destination-pole (ilā rabbihim / ilā nuṣub).",
+ "internal_discovery": {
+  "candidate_root_contribution": "A purely nominal, definite-plural lexeme (al-ajdāth) naming the bounded plural resting-container of the dead, profiled exclusively as the source-locus (always مِن-governed) FROM WHICH humans emerge at the resurrection. The root carries no verbal/eventive content and no attested singular; it names a place, never an act, and appears only as the origin-pole of eschatological egress, opposed to the destination-pole (ilā rabbihim / ilā nuṣub).",
+  "plain_explanation": "In all three Quranic occurrences the root ج د ث shows up as exactly one word, ٱلْأَجْدَاثِ ('the ajdāth', plural), always after مِن ('from') and always with a verb of coming/hastening out (yansilūn, yakhrujūn) in a resurrection scene: people rush out of the ajdāth toward their Lord or toward a marker. So the root names the place the dead are held in and emerge from when raised. It is only ever a location one exits, never something one does, and never a place one goes to.",
+  "layer_separation_note": "Does NOT entail: (1) any verbal/eventive sense — no burying, digging, dying, or decaying; the actions are all carried by other roots (nafkh, khurūj, nasl). (2) A destination or goal — never governed by إلى; the goal-slot is filled by other nouns (رَبّ, نُصُب). (3) A specifically interment/'grave-pit' sense — nothing in the packet pairs it with أرض, تراب, or a digging verb, so the narrow gloss 'grave' is NOT Quran-internally demonstrated. (4) Any non-eschatological, mundane, agricultural, or geographic use — zero such occurrences. (5) A singular referent — only the collective plural is attested. (6) Any affect (dread, teeming, scattering): those attributes (khushshaʿan abṣāruhum, jarād muntashir, sirāʿan) predicate the emergent people, not the ajdāth.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "None internal to the packet. All three tokens uniformly satisfy the account (same lexeme, same مِن-egress frame, same emergence verbs, same eschatological register); no occurrence resists. The nearest stress point, 70:43, might be read as a mustering-ground rather than a resting-place, but the min/ilā polarity (from ajdāth → to nuṣub) and the verb خرج shared with 54:7 pin it to the egress-origin reading. The cleanliness reflects homogeneity/formularity (54:7 ≈ 70:43 is a reused slot), not survival of diverse adversarial stress-tests.",
+  "strongest_competitor": "That ج د ث is a stylistic/prosodic near-synonym of ق ب ر (qubūr) with no establishable distinctive nucleus, plus the residual underdetermination of the specific sense: 'grave/burial-pit' (A) vs. 'generic place-of-origin of the resurrected, possibly the earth at large' (B). The three tokens supply no contrastive environment (no jdv in a non-egress slot, no jdv/qbr minimal pair) that would isolate a differential meaning, so — reasoning Quran-internally only, without importing the qbr packet as authority — neither the distinctiveness from qbr nor the choice between (A) and (B) can be decided. This competitor is not defeated by the internal evidence and directly caps the positive claim.",
+  "competing_hypothesis": "That ج د ث is a stylistic/prosodic near-synonym of ق ب ر (qubūr) with no establishable distinctive nucleus, plus the residual underdetermination of the specific sense: 'grave/burial-pit' (A) vs. 'generic place-of-origin of the resurrected, possibly the earth at large' (B). The three tokens supply no contrastive environment (no jdv in a non-egress slot, no jdv/qbr minimal pair) that would isolate a differential meaning, so — reasoning Quran-internally only, without importing the qbr packet as authority — neither the distinctiveness from qbr nor the choice between (A) and (B) can be decided. This competitor is not defeated by the internal evidence and directly caps the positive claim.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All three lenses converge with no dissent: one and only one morphological realization (N, qac_verb_form=null, surface >ajodaAvi) across 3/3 tokens, one syntactic role (مِن-object, genitive plural), one discourse context (post-trumpet resurrection egress). There is exactly one class and no bridging problem, so a single-nucleus account is warranted (not UNRESOLVED). The functional/locational core — 'bounded plural source-locus the dead emerge from at resurrection' — is well-supported and adversarially clean with no resistant sub-class. However STRONG is barred: the evidence is neither broad nor distinctive — 3 identical tokens in one frozen lexicalized nominal with zero derivational spread, partly formulaic, in a single register, and the account cannot be adversarially distinguished from the near-synonym qbr nor can the (A)/(B) sense be resolved on internal grounds. Per contract (lexicalized/nominal class, un-demarcated distinctiveness, absence-of-resistance≠proof, high-consistency≠truth), the honest ceiling is MODERATE + REPRESENTATIVE, scoped as a LEXICALIZED_CLASS rather than a productive ROOT_GENERALIZATION.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "C1_ajdath_resurrection_egress_locus",
+     "where": {
+      "qac_pos": [
+       "N"
+      ],
+      "qac_verb_form": [
+       null
+      ],
+      "forms": [
+       "N"
+      ],
+      "word_refs": [
+       "36:51:7:2",
+       "54:7:5:2",
+       "70:43:4:2"
+      ]
+     },
+     "occurrence_count_expected": 3,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "The definite plural noun ٱلْأَجْدَاثِ = the bounded plural resting-container of the dead, profiled solely as the مِن-governed source-locus from which humans emerge at the resurrection; purely nominal, origin-pole opposed to the destination-pole.",
+     "classification_rationale": "All three tokens are the identical lexicalized nominal (>ajodaAvi, N, qac_verb_form=null), all genitive plural governed by مِن, all with a verb of human emergence/motion (yansilūn 36:51; yakhrujūn 54:7 and 70:43) in an eschatological resurrection frame. No morphological, syntactic, or contextual diversity; hence a single consistent class, not multiple unbridged senses.",
+     "supporting_evidence_note": "36:51: min al-ajdāth → ilā rabbihim yansilūn (explicit source→destination vector at the trumpet-blast). 54:7: yakhrujūna min al-ajdāth (verb خرج makes source-semantics explicit). 70:43: yakhrujūna min al-ajdāth sirāʿan, with min al-ajdāth (origin) ↔ ilā nuṣub (destination) polarity in one verse.",
+     "counterevidence": []
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "jdv",
+  "verdict": "NOT_DECISIVELY_TESTABLE",
+  "failing_occurrences": [],
+  "distinctiveness_ok": false,
+  "falsifiable": false,
+  "notes": "A genuine falsification test could not be decisively run: the evidence base is a single frozen lexicalized nominal used 3× in one identical مِن-egress frame and one register, so there is no contrastive environment internal to the packet that could distinguish the root's semantic content from contextual residue, nor distinguish it from the near-synonym ق ب ر, nor decide 'grave' (A) vs. 'generic origin' (B). The account is unresisted but also unfalsifiable on internal evidence (nothing here could disprove it), and distinctiveness is not establishable — so the status is NOT_RUN with no failing occurrences rather than PASSED."
+ },
+ "coverage_validation": {
+  "root": "jdv",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "36:51:7:2",
+   "disposition": "CONSISTENT",
+   "note": "All three tokens are the identical lexicalized nominal (>ajodaAvi, N, qac_verb_form=null), all genitive plural governed by مِن, all with a verb of human emergence/motion (yansilūn 36:51; yakhrujūn 54:7 and 70:43) in an eschatological resurrection frame. No morphological, syntactic, or contextual diversity; hence a single consistent class, not multiple unbridged senses.",
+   "coverage_cluster_id": "C1_ajdath_resurrection_egress_locus",
+   "candidate_semantic_interpretation": "The definite plural noun ٱلْأَجْدَاثِ = the bounded plural resting-container of the dead, profiled solely as the مِن-governed source-locus from which humans emerge at the resurrection; purely nominal, origin-pole opposed to the destination-pole.",
+   "cluster_supporting_evidence": "36:51: min al-ajdāth → ilā rabbihim yansilūn (explicit source→destination vector at the trumpet-blast). 54:7: yakhrujūna min al-ajdāth (verb خرج makes source-semantics explicit). 70:43: yakhrujūna min al-ajdāth sirāʿan, with min al-ajdāth (origin) ↔ ilā nuṣub (destination) polarity in one verse.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All three tokens are the identical lexicalized nominal (>ajodaAvi, N, qac_verb_form=null), all genitive plural governed by مِن, all with a verb of human emergence/motion (yansilūn 36:51; yakhrujūn 54:7 and 70:43) in an eschatological resurrection frame. No morphological, syntactic, or contextual diversity; hence a single consistent class, not multiple unbridged senses.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "36:51",
+     "verse_text": "وَنُفِخَ فِى ٱلصُّورِ فَإِذَا هُم مِّنَ ٱلْأَجْدَاثِ إِلَىٰ رَبِّهِمْ يَنسِلُونَ"
+    }
+   ],
+   "root_arabic": "ج د ث",
+   "root_buckwalter": "jdv",
+   "root_id": "jdv",
+   "artifact_name": "jdv.json",
+   "verse_ref": "36:51",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">ajodaAvi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَنُفِخَ فِى ٱلصُّورِ فَإِذَا هُم مِّنَ ٱلْأَجْدَاثِ إِلَىٰ رَبِّهِمْ يَنسِلُونَ"
+  },
+  {
+   "word_ref": "54:7:5:2",
+   "disposition": "CONSISTENT",
+   "note": "All three tokens are the identical lexicalized nominal (>ajodaAvi, N, qac_verb_form=null), all genitive plural governed by مِن, all with a verb of human emergence/motion (yansilūn 36:51; yakhrujūn 54:7 and 70:43) in an eschatological resurrection frame. No morphological, syntactic, or contextual diversity; hence a single consistent class, not multiple unbridged senses.",
+   "coverage_cluster_id": "C1_ajdath_resurrection_egress_locus",
+   "candidate_semantic_interpretation": "The definite plural noun ٱلْأَجْدَاثِ = the bounded plural resting-container of the dead, profiled solely as the مِن-governed source-locus from which humans emerge at the resurrection; purely nominal, origin-pole opposed to the destination-pole.",
+   "cluster_supporting_evidence": "36:51: min al-ajdāth → ilā rabbihim yansilūn (explicit source→destination vector at the trumpet-blast). 54:7: yakhrujūna min al-ajdāth (verb خرج makes source-semantics explicit). 70:43: yakhrujūna min al-ajdāth sirāʿan, with min al-ajdāth (origin) ↔ ilā nuṣub (destination) polarity in one verse.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All three tokens are the identical lexicalized nominal (>ajodaAvi, N, qac_verb_form=null), all genitive plural governed by مِن, all with a verb of human emergence/motion (yansilūn 36:51; yakhrujūn 54:7 and 70:43) in an eschatological resurrection frame. No morphological, syntactic, or contextual diversity; hence a single consistent class, not multiple unbridged senses.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "54:7",
+     "verse_text": "خُشَّعًا أَبْصَٰرُهُمْ يَخْرُجُونَ مِنَ ٱلْأَجْدَاثِ كَأَنَّهُمْ جَرَادٌ مُّنتَشِرٌ"
+    }
+   ],
+   "root_arabic": "ج د ث",
+   "root_buckwalter": "jdv",
+   "root_id": "jdv",
+   "artifact_name": "jdv.json",
+   "verse_ref": "54:7",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">ajodaAvi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "خُشَّعًا أَبْصَٰرُهُمْ يَخْرُجُونَ مِنَ ٱلْأَجْدَاثِ كَأَنَّهُمْ جَرَادٌ مُّنتَشِرٌ"
+  },
+  {
+   "word_ref": "70:43:4:2",
+   "disposition": "CONSISTENT",
+   "note": "All three tokens are the identical lexicalized nominal (>ajodaAvi, N, qac_verb_form=null), all genitive plural governed by مِن, all with a verb of human emergence/motion (yansilūn 36:51; yakhrujūn 54:7 and 70:43) in an eschatological resurrection frame. No morphological, syntactic, or contextual diversity; hence a single consistent class, not multiple unbridged senses.",
+   "coverage_cluster_id": "C1_ajdath_resurrection_egress_locus",
+   "candidate_semantic_interpretation": "The definite plural noun ٱلْأَجْدَاثِ = the bounded plural resting-container of the dead, profiled solely as the مِن-governed source-locus from which humans emerge at the resurrection; purely nominal, origin-pole opposed to the destination-pole.",
+   "cluster_supporting_evidence": "36:51: min al-ajdāth → ilā rabbihim yansilūn (explicit source→destination vector at the trumpet-blast). 54:7: yakhrujūna min al-ajdāth (verb خرج makes source-semantics explicit). 70:43: yakhrujūna min al-ajdāth sirāʿan, with min al-ajdāth (origin) ↔ ilā nuṣub (destination) polarity in one verse.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All three tokens are the identical lexicalized nominal (>ajodaAvi, N, qac_verb_form=null), all genitive plural governed by مِن, all with a verb of human emergence/motion (yansilūn 36:51; yakhrujūn 54:7 and 70:43) in an eschatological resurrection frame. No morphological, syntactic, or contextual diversity; hence a single consistent class, not multiple unbridged senses.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "70:43",
+     "verse_text": "يَوْمَ يَخْرُجُونَ مِنَ ٱلْأَجْدَاثِ سِرَاعًا كَأَنَّهُمْ إِلَىٰ نُصُبٍ يُوفِضُونَ"
+    }
+   ],
+   "root_arabic": "ج د ث",
+   "root_buckwalter": "jdv",
+   "root_id": "jdv",
+   "artifact_name": "jdv.json",
+   "verse_ref": "70:43",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">ajodaAvi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَوْمَ يَخْرُجُونَ مِنَ ٱلْأَجْدَاثِ سِرَاعًا كَأَنَّهُمْ إِلَىٰ نُصُبٍ يُوفِضُونَ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Three independent lenses (A bottom-up, B, C adversarial) each independently reached the same single-class account and the same MODERATE/REPRESENTATIVE ceiling, and each independently flagged the qbr non-distinctiveness and low-diversity limitation.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "A purely nominal, definite-plural lexeme (al-ajdāth) naming the bounded plural resting-container of the dead, profiled exclusively as the source-locus (always مِن-governed) FROM WHICH humans emerge at the resurrection. The root carries no verbal/eventive content and no attested singular; it names a place, never an act, and appears only as the origin-pole of eschatological egress, opposed to the destination-pole (ilā rabbihim / ilā nuṣub).",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "LEXICALIZED_CLASS",
+ "layer_attribution": {
+  "occurrence_evidence": "3/3 tokens (36:51:7:2, 54:7:5:2, 70:43:4:2), all surface >ajodaAvi = ٱلْأَجْدَاثِ, all qac_pos=N with qac_verb_form=null, all definite genitive plural governed by مِن, each with an emergence verb (yansilūn / yakhrujūn ×2) in a resurrection scene.",
+  "derivation": "No derivational spread whatsoever: the root never verbalizes, no participle, no singular, no alternative nominal pattern — a single frozen plural nominal (pattern أَفْعَال, sing. جَدَث inferable but unattested). This absence of morphological range is itself a first-class finding and the reason no productive root nucleus can be isolated.",
+  "lexical_class": "A lexicalized nominal class: one mono-form lexeme functioning as a fixed 'مِن + ٱلْأَجْدَاث + verb-of-emergence' slot (54:7 ≈ 70:43 is a reused formula). This lexicalized/nominal character caps result_strength at MODERATE and scope at REPRESENTATIVE per contract.",
+  "contextual_relation": "The eschatological trigger (نفخ في الصور / يوم), the rapidity (yansilūn, sirāʿan, yūfiḍūn), the destination (ilā rabbihim / ilā nuṣub), and the crowd simile (jarād muntashir) are narrative/contextual features borne by other roots and by the emergent people — NOT by jdv. These must not be promoted into the root claim; the root contributes only the source-locus function.",
+  "reconciliation": "No inter-lens conflict to reconcile: analysts A, B, and C independently converge on one class, one nominal source-locus meaning, no resistant occurrence, and a MODERATE/REPRESENTATIVE ceiling driven by low diversity and non-distinctiveness. No preliminary dispositions were overturned.",
+  "unresolved_resistance": "No occurrence-level resistance persists. What remains unresolved is not resistance but distinctiveness/underdetermination: (i) jdv cannot be shown Quran-internally to differ from the near-synonym ق ب ر, and (ii) the specific sense 'grave/burial-pit' (A) vs. 'generic place-of-origin' (B) is undecidable on internal evidence. These are recorded as competitor/reopen conditions, not as a resistant sub-class."
+ },
+ "hard_cases": [],
+ "hard_case_representation": {
+  "status": "NO_GENUINE_HARD_CASE",
+  "rationale": "No occurrence resists the account and there is no resistant sub-class: all 3/3 tokens are one lexicalized nominal in one مِن-egress frame in one eschatological register, and even the nearest stress point (70:43) is pinned to the egress-origin reading by the min/ilā polarity and the shared خرج. The genuine limitation is not resistance but non-distinctiveness/underdetermination (qbr near-synonymy; grave vs. generic origin), which caps the grade rather than fracturing the class. Per contract, with no resistant occurrence and no genuine hard case, hard_cases and counterevidence_refs are empty."
+ },
+ "rejection_condition": {
+  "challenging_finding": "An attested occurrence of the root ج د ث in which ٱلْأَجْدَاث (or any derivative/singular) is NOT the مِن-governed source of resurrection egress — e.g., governed by إلى or a locative-of-rest as a destination, used as subject/agent, verbalized into an action of burying/digging, or deployed in a mundane non-eschatological setting — which would break the 'purely nominal source-locus of resurrection egress' account.",
+  "search_location": "The three packet occurrences (36:51:7:2, 54:7:5:2, 70:43:4:2) and any future confirmed occurrences of root jdv; specifically inspect the governing preposition, the qac_pos/qac_verb_form, and the verse-level eschatological cueing.",
+  "verification_method": "Read verse_text and QAC morphology for each token: confirm (a) qac_pos=N and qac_verb_form=null, (b) immediate governor is مِن, (c) co-text contains an emergence verb (خرج/نسل) and resurrection trigger (نفخ في الصور / يوم). A token failing any of (a)-(c) challenges the account.",
+  "confounder_control": "Do not import qbr, classical lexicons, tafsir, or translations as authority; attribute the vivid affect (khushshaʿan, jarād muntashir, sirāʿan) to the emergent people, not to the ajdāth, so contextual/narrative colour is not misread as root content; distinguish lexicalized-nominal behaviour from a hypothetical productive-root reading.",
+  "failure_consequence": "If such an occurrence is found, the single-class 'nominal source-locus of resurrection egress' nucleus fails and the result must be re-opened toward multi-class or UNRESOLVED; if instead a contrastive jdv/qbr environment forces a distinctive feature, the distinctiveness ceiling (currently capping at MODERATE) is revised."
+ },
+ "falsification_status": "NOT_RUN",
+ "reopen_conditions": [
+  "If a confirmed jdv occurrence appears with a singular form, a verbal form (qac_verb_form non-null), or any derivative outside the frozen plural >ajodaAvi — breaking the mono-form lexicalized status and permitting a genuine root-level nucleus test.",
+  "If a confirmed jdv occurrence places ٱلْأَجْدَاث in a non-egress role (governed by إلى, used as a locative-of-rest/destination, as subject/agent, or in a non-eschatological setting), which would contradict the invariant مِن-source + emergence-verb frame of 36:51/54:7/70:43.",
+  "If a contrastive environment pairing jdv with ق ب ر (or another grave-lexeme) in adjacent/parallel slots becomes available, allowing the currently-undecidable distinctiveness of jdv vs. qbr to be tested Quran-internally.",
+  "If internal evidence emerges that decides between the 'grave/burial-pit' (A) and 'generic place-of-origin/earth' (B) readings — e.g., co-occurrence with تراب/أرض or a digging/interment verb — which would sharpen or overturn the deliberately register-bound narrow account."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "36:51:7:2",
+  "54:7:5:2",
+  "70:43:4:2"
+ ],
+ "counterevidence_refs": [],
+ "falsification_evidence": {
+  "attempt_id": "jdv-falsify-01",
+  "verdict": "NOT_DECISIVELY_TESTABLE",
+  "falsifiable": false,
+  "distinctiveness_ok": false,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "C1_ajdath_resurrection_egress_locus"
+  ],
+  "status_rationale": "A genuine falsification test could not be decisively run: the evidence base is a single frozen lexicalized nominal used 3× in one identical مِن-egress frame and one register, so there is no contrastive environment internal to the packet that could distinguish the root's semantic content from contextual residue, nor distinguish it from the near-synonym ق ب ر, nor decide 'grave' (A) vs. 'generic origin' (B). The account is unresisted but also unfalsifiable on internal evidence (nothing here could disprove it), and distinctiveness is not establishable — so the status is NOT_RUN with no failing occurrences rather than PASSED."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jdv: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jdv: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jdv: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jdv: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jdv: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jdv: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jdv: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jdv: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

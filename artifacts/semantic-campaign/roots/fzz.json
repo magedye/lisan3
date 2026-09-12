@@ -1,0 +1,372 @@
+{
+ "root_arabic": "ف ز ز",
+ "root_buckwalter": "fzz",
+ "root_id": "fzz",
+ "artifact_name": "fzz.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave6",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "fzz (attested only as Form X, istafʿala) = a hostile agent's conative act of jolting/unsettling a settled personal target out of a stable position and driving it toward forced motion. The nature of the position is specified by the complement, not by the verb: spatial/territorial when مِنَ ٱلْأَرْضِ is present (17:103, 17:76), dispositional/moral when the instrument is a voice and no locative appears (17:64). It names the destabilizing attempt or pressure, never the accomplished displacement.",
+ "internal_discovery": {
+  "candidate_root_contribution": "fzz (attested only as Form X, istafʿala) = a hostile agent's conative act of jolting/unsettling a settled personal target out of a stable position and driving it toward forced motion. The nature of the position is specified by the complement, not by the verb: spatial/territorial when مِنَ ٱلْأَرْضِ is present (17:103, 17:76), dispositional/moral when the instrument is a voice and no locative appears (17:64). It names the destabilizing attempt or pressure, never the accomplished displacement.",
+  "plain_explanation": "In all three occurrences (all in Sūrah 17, all Form X), a hostile party works to shake a person loose from where they are settled and push them into motion. Twice this is 'from the land' (Pharaoh against Moses' people 17:103; the deniers against the Prophet 17:76), and once it is Satan stirring people toward sin 'with your voice' (17:64). The verb consistently marks the attempt/pressure, not the finished result — 17:76 even keeps it separate from the actual expulsion (لِيُخْرِجُوكَ) it aims to cause.",
+  "layer_separation_note": "fzz does NOT mean 'expel/drive out' (17:76 assigns ikhrāj to a separate purpose clause, so if fzz meant expulsion the clause would be redundant); does NOT lexically require a spatial source ('from the land' is a separable complement, absent in 17:64); does NOT entail success or completion (attested only as intent أَرَادَ أَن 17:103, near-miss كَادُوا 17:76, and unfulfilled command 17:64); is NOT neutral or benign movement (agent is always adversarial: Pharaoh, the deniers, Iblīs); is NOT the destruction/killing itself (the drowning in 17:103 is a distinct subsequent divine act); has NO attestation with an inanimate object (target is always human).",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "17:64:1:2 وَٱسْتَفْزِزْ ... بِصَوْتِكَ — the only occurrence with no territorial complement, a voice as instrument, and a target moved morally (toward going astray) rather than physically. It defeats any tight 'drive out of a place/expel' reading: whatever fzz means, it cannot lexically be spatial removal, since here there is no land and no 'from'. It is accommodated only by the broader 'forcefully unsettle a settled target into motion' nucleus, of which the spatial cases are the complement-specified subtype.",
+  "strongest_competitor": "A territorial reading 'fzz = drive out / dislodge from a land (expel),' which fits 2 of 3 tokens that carry مِنَ ٱلْأَرْضِ. Rejected as the root's own content because (a) 17:76 internally separates yastafizzu from yukhrijuka, making the latter the goal and the former the means; and (b) 17:64 has neither land nor expulsion, using the identical Form-X verb with a voice-instrument in a seduction chain. The competitor must posit a homonym/metaphor split for 17:64, whereas the destabilization nucleus subsumes all three without a split.",
+  "competing_hypothesis": "A territorial reading 'fzz = drive out / dislodge from a land (expel),' which fits 2 of 3 tokens that carry مِنَ ٱلْأَرْضِ. Rejected as the root's own content because (a) 17:76 internally separates yastafizzu from yukhrijuka, making the latter the goal and the former the means; and (b) 17:64 has neither land nor expulsion, using the identical Form-X verb with a voice-instrument in a seduction chain. The competitor must posit a homonym/metaphor split for 17:64, whereas the destabilization nucleus subsumes all three without a split.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All three independent lenses converge: one coherent Form-X nucleus ('hostile agitation to dislodge a settled human target into forced motion') survives every occurrence and is internally corroborated by the fzz-vs-ikhrāj contrast in 17:76 plus solid negative boundaries (means-not-end, attempt-not-completion, complement-driven spatiality). This is not UNRESOLVED: the bridge across the two application domains (territorial vs. moral) is coherent and adversarially survivable. But STRONG is unsupported — the base is minimal and non-diverse (n=3, one form X, one sūra, one collocation split: 2 with مِنَ ٱلْأَرْضِ, 1 without), and the link between physical and moral displacement rests on an inference about what is being moved rather than an explicit internal gloss. The materially divergent, instrument-bearing 17:64 is a genuine adversarial boundary that caps strength at MODERATE and scope at REPRESENTATIVE.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "fzz-X-spatial",
+     "where": {
+      "word_refs": [
+       "17:103:3:1",
+       "17:76:3:2"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Form X + ablative مِنَ ٱلْأَرْضِ: hostile agent works to dislodge a settled human target from a territory, the destabilizing means aimed at (but distinct from) actual expulsion. Attempt/intent framed (أَرَادَ أَن 17:103; كَادُوا 17:76), never completed.",
+     "classification_rationale": "Both share the identical Form-X verb and the locative complement مِنَ ٱلْأَرْضِ, and both frame the act as unrealized (intent/near-miss). 17:76 supplies the decisive internal contrast: the purpose clause لِيُخْرِجُوكَ مِنْهَا shows expulsion is the goal, so fzz itself is the prior destabilizing pressure, not the removal.",
+     "supporting_evidence_note": "17:103 فَأَرَادَ أَن يَسْتَفِزَّهُم مِّنَ ٱلْأَرْضِ (Pharaoh, then drowned — outcome negated); 17:76 وَإِن كَادُوا۟ لَيَسْتَفِزُّونَكَ مِنَ ٱلْأَرْضِ لِيُخْرِجُوكَ مِنْهَا (deniers vs. Prophet, means separated from ikhrāj end).",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "fzz-X-instrumental",
+     "where": {
+      "word_refs": [
+       "17:64:1:2"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Form X + instrument بِصَوْتِكَ, no locative: same destabilizing jolt applied to a person's settled composure/allegiance, driving them toward corruption rather than out of a place. Heads a chain of incitement verbs (أَجْلِبْ، شَارِكْ، عِدْهُمْ).",
+     "classification_rationale": "Same Form-X lexeme with the spatial complement dropped, showing مِنَ ٱلْأَرْضِ is a separable adjunct and the verb's core (forceful unsettling of a settled target) is constant while only the domain (moral vs. territorial) varies. Bridged to the nucleus by an inference about the object of displacement, which is coherent but thinner than the internally-glossed spatial cases — hence flagged as the adversarial boundary.",
+     "supporting_evidence_note": "17:64 وَٱسْتَفْزِزْ مَنِ ٱسْتَطَعْتَ مِنْهُم بِصَوْتِكَ (command to Iblīs; instrument = voice; no 'from', target moved toward error).",
+     "counterevidence": [
+      "17:64:1:2"
+     ]
+    }
+   ],
+   "reconciliation": [
+    {
+     "word_ref": "17:64:1:2",
+     "final": "CONSISTENT",
+     "rationale": "The identical Form-X verb drops only the separable adjunct مِنَ ٱلْأَرْضِ while keeping the adversarial 'dislodge a settled target into forced motion' semantics; the split is one of application domain, not two unbridged nuclei. Retained as an adversarial boundary that caps strength at MODERATE rather than forcing UNRESOLVED."
+    }
+   ]
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "fzz",
+  "verdict": "NOT_RUN",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "A clean SUPPORTED falsification pass (failing_occurrences=[]) is not claimed because the nucleus, while surviving all three tokens, bridges the territorial and moral domains via an inference about the object of displacement rather than an explicit internal gloss, and the base is a single form in a single sūra. The core holds and 17:64 is recorded as the adversarial boundary; NOT_RUN is the honest status rather than PASSED."
+ },
+ "coverage_validation": {
+  "root": "fzz",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "17:103:3:1",
+   "disposition": "CONSISTENT",
+   "note": "Both share the identical Form-X verb and the locative complement مِنَ ٱلْأَرْضِ, and both frame the act as unrealized (intent/near-miss). 17:76 supplies the decisive internal contrast: the purpose clause لِيُخْرِجُوكَ مِنْهَا shows expulsion is the goal, so fzz itself is the prior destabilizing pressure, not the removal.",
+   "coverage_cluster_id": "fzz-X-spatial",
+   "candidate_semantic_interpretation": "Form X + ablative مِنَ ٱلْأَرْضِ: hostile agent works to dislodge a settled human target from a territory, the destabilizing means aimed at (but distinct from) actual expulsion. Attempt/intent framed (أَرَادَ أَن 17:103; كَادُوا 17:76), never completed.",
+   "cluster_supporting_evidence": "17:103 فَأَرَادَ أَن يَسْتَفِزَّهُم مِّنَ ٱلْأَرْضِ (Pharaoh, then drowned — outcome negated); 17:76 وَإِن كَادُوا۟ لَيَسْتَفِزُّونَكَ مِنَ ٱلْأَرْضِ لِيُخْرِجُوكَ مِنْهَا (deniers vs. Prophet, means separated from ikhrāj end).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Both share the identical Form-X verb and the locative complement مِنَ ٱلْأَرْضِ, and both frame the act as unrealized (intent/near-miss). 17:76 supplies the decisive internal contrast: the purpose clause لِيُخْرِجُوكَ مِنْهَا shows expulsion is the goal, so fzz itself is the prior destabilizing pressure, not the removal.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "17:103",
+     "verse_text": "فَأَرَادَ أَن يَسْتَفِزَّهُم مِّنَ ٱلْأَرْضِ فَأَغْرَقْنَٰهُ وَمَن مَّعَهُۥ جَمِيعًا"
+    }
+   ],
+   "root_arabic": "ف ز ز",
+   "root_buckwalter": "fzz",
+   "root_id": "fzz",
+   "artifact_name": "fzz.json",
+   "verse_ref": "17:103",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasotafiz~a",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَأَرَادَ أَن يَسْتَفِزَّهُم مِّنَ ٱلْأَرْضِ فَأَغْرَقْنَٰهُ وَمَن مَّعَهُۥ جَمِيعًا"
+  },
+  {
+   "word_ref": "17:64:1:2",
+   "disposition": "CONSISTENT",
+   "note": "Accommodated by the destabilization nucleus but resists any tight territorial 'expel' sense: no locative complement, voice-instrument, moral (not physical) displacement. Treated as ADVERSARIAL_BOUNDARY, not final-RESISTANT, because it does not contradict the nucleus — it only refutes the narrower spatial competitor and exposes the inference-dependence of the physical↔moral bridge. | 17:64:1:2 وَٱسْتَفْزِزْ ... بِصَوْتِكَ — the only occurrence with no territorial complement, a voice as instrument, and a target moved morally (toward going astray) rather than physically. It defeats any tight 'drive out of a place/expel' reading: whatever fzz means, it cannot lexically be spatial removal, since here there is no land and no 'from'. It is accommodated only by the broader 'forcefully unsettle a settled target into motion' nucleus, of which the spatial cases are the complement-specified subtype.",
+   "coverage_cluster_id": "fzz-X-instrumental",
+   "candidate_semantic_interpretation": "Form X + instrument بِصَوْتِكَ, no locative: same destabilizing jolt applied to a person's settled composure/allegiance, driving them toward corruption rather than out of a place. Heads a chain of incitement verbs (أَجْلِبْ، شَارِكْ، عِدْهُمْ).",
+   "cluster_supporting_evidence": "17:64 وَٱسْتَفْزِزْ مَنِ ٱسْتَطَعْتَ مِنْهُم بِصَوْتِكَ (command to Iblīs; instrument = voice; no 'from', target moved toward error).",
+   "counterevidence": [
+    "17:64:1:2"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Same Form-X lexeme with the spatial complement dropped, showing مِنَ ٱلْأَرْضِ is a separable adjunct and the verb's core (forceful unsettling of a settled target) is constant while only the domain (moral vs. territorial) varies. Bridged to the nucleus by an inference about the object of displacement, which is coherent but thinner than the internally-glossed spatial cases — hence flagged as the adversarial boundary.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": "The identical Form-X verb drops only the separable adjunct مِنَ ٱلْأَرْضِ while keeping the adversarial 'dislodge a settled target into forced motion' semantics; the split is one of application domain, not two unbridged nuclei. Retained as an adversarial boundary that caps strength at MODERATE rather than forcing UNRESOLVED.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "17:64:1:2",
+     "preliminary_disposition": "RESISTANT",
+     "preliminary_note": "Could be read as a distinct lexicalized 'incite/seduce' sense (voice-instrument, seduction chain, no spatial complement), potentially unbridged from the territorial cases.",
+     "final_disposition": "CONSISTENT",
+     "reconciliation_rationale": "The identical Form-X verb drops only the separable adjunct مِنَ ٱلْأَرْضِ while keeping the adversarial 'dislodge a settled target into forced motion' semantics; the split is one of application domain, not two unbridged nuclei. Retained as an adversarial boundary that caps strength at MODERATE rather than forcing UNRESOLVED.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "17:64",
+     "verse_text": "وَٱسْتَفْزِزْ مَنِ ٱسْتَطَعْتَ مِنْهُم بِصَوْتِكَ وَأَجْلِبْ عَلَيْهِم بِخَيْلِكَ وَرَجِلِكَ وَشَارِكْهُمْ فِى ٱلْأَمْوَٰلِ وَٱلْأَوْلَٰدِ وَعِدْهُمْ وَمَا يَعِدُهُمُ ٱلشَّيْطَٰنُ إِلَّا غُرُورًا"
+    }
+   ],
+   "root_arabic": "ف ز ز",
+   "root_buckwalter": "fzz",
+   "root_id": "fzz",
+   "artifact_name": "fzz.json",
+   "verse_ref": "17:64",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{sotafozizo",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱسْتَفْزِزْ مَنِ ٱسْتَطَعْتَ مِنْهُم بِصَوْتِكَ وَأَجْلِبْ عَلَيْهِم بِخَيْلِكَ وَرَجِلِكَ وَشَارِكْهُمْ فِى ٱلْأَمْوَٰلِ وَٱلْأَوْلَٰدِ وَعِدْهُمْ وَمَا يَعِدُهُمُ ٱلشَّيْطَٰنُ إِلَّا غُرُورًا"
+  },
+  {
+   "word_ref": "17:76:3:2",
+   "disposition": "CONSISTENT",
+   "note": "Both share the identical Form-X verb and the locative complement مِنَ ٱلْأَرْضِ, and both frame the act as unrealized (intent/near-miss). 17:76 supplies the decisive internal contrast: the purpose clause لِيُخْرِجُوكَ مِنْهَا shows expulsion is the goal, so fzz itself is the prior destabilizing pressure, not the removal.",
+   "coverage_cluster_id": "fzz-X-spatial",
+   "candidate_semantic_interpretation": "Form X + ablative مِنَ ٱلْأَرْضِ: hostile agent works to dislodge a settled human target from a territory, the destabilizing means aimed at (but distinct from) actual expulsion. Attempt/intent framed (أَرَادَ أَن 17:103; كَادُوا 17:76), never completed.",
+   "cluster_supporting_evidence": "17:103 فَأَرَادَ أَن يَسْتَفِزَّهُم مِّنَ ٱلْأَرْضِ (Pharaoh, then drowned — outcome negated); 17:76 وَإِن كَادُوا۟ لَيَسْتَفِزُّونَكَ مِنَ ٱلْأَرْضِ لِيُخْرِجُوكَ مِنْهَا (deniers vs. Prophet, means separated from ikhrāj end).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Both share the identical Form-X verb and the locative complement مِنَ ٱلْأَرْضِ, and both frame the act as unrealized (intent/near-miss). 17:76 supplies the decisive internal contrast: the purpose clause لِيُخْرِجُوكَ مِنْهَا shows expulsion is the goal, so fzz itself is the prior destabilizing pressure, not the removal.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "17:76",
+     "verse_text": "وَإِن كَادُوا۟ لَيَسْتَفِزُّونَكَ مِنَ ٱلْأَرْضِ لِيُخْرِجُوكَ مِنْهَا وَإِذًا لَّا يَلْبَثُونَ خِلَٰفَكَ إِلَّا قَلِيلًا"
+    }
+   ],
+   "root_arabic": "ف ز ز",
+   "root_buckwalter": "fzz",
+   "root_id": "fzz",
+   "artifact_name": "fzz.json",
+   "verse_ref": "17:76",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yasotafiz~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "X",
+   "morphology": "V(X)",
+   "form": "V(X)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِن كَادُوا۟ لَيَسْتَفِزُّونَكَ مِنَ ٱلْأَرْضِ لِيُخْرِجُوكَ مِنْهَا وَإِذًا لَّا يَلْبَثُونَ خِلَٰفَكَ إِلَّا قَلِيلًا"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Three independent lenses (A, B, adversary C) each independently reached the same single-nucleus account and the same MODERATE/REPRESENTATIVE grade, each flagging 17:64 as the divergent-but-bridged sub-class.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "fzz (attested only as Form X, istafʿala) = a hostile agent's conative act of jolting/unsettling a settled personal target out of a stable position and driving it toward forced motion. The nature of the position is specified by the complement, not by the verb: spatial/territorial when مِنَ ٱلْأَرْضِ is present (17:103, 17:76), dispositional/moral when the instrument is a voice and no locative appears (17:64). It names the destabilizing attempt or pressure, never the accomplished displacement.",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "DERIVATIONAL_FAMILY",
+ "layer_attribution": {
+  "occurrence_evidence": "3/3 confirmed occurrences (17:103:3:1, 17:64:1:2, 17:76:3:2), full coverage; all Form X (istafʿala), all transitive with human targets, all in Sūrah 17.",
+  "derivation": "Sole attested pattern is Form X (istafʿala), whose causative/seeking morphology supports 'seek to provoke/jolt into startled motion'; no base or other derived form is available to corroborate a root-level (vs. form-level) claim.",
+  "lexical_class": "A single derivational family (Form X verbs), not multiple lexicalized nominal classes; the account is scoped as REPRESENTATIVE of this family rather than a universal root generalization.",
+  "contextual_relation": "Narrative/contextual outcomes — Pharaoh's drowning (17:103), the intended expulsion لِيُخْرِجُوكَ (17:76), and Satan's seduction chain أَجْلِبْ/شَارِكْ/عِدْهُمْ (17:64) — are contextual companions, NOT the root's content; they are explicitly excluded from the semantic claim.",
+  "reconciliation": "17:64 was preliminarily flagged RESISTANT (possible distinct 'incite' sense) and reconciled to CONSISTENT under the nucleus because the differentiating element (مِنَ ٱلْأَرْضِ) is a separable adjunct; retained as an adversarial boundary rather than forced into false unity or split into unresolved.",
+  "unresolved_resistance": "The physical↔moral bridge for 17:64 is inference-dependent (no internal gloss equates voice-incitement with displacement), and the base is too thin/clustered (n=3, one form, one sūra) to establish the nucleus universally; these limits cap the grade at MODERATE/REPRESENTATIVE without rising to full UNRESOLVED."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "17:64:1:2",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "Only occurrence with no territorial complement, a voice-instrument (بِصَوْتِكَ), and a morally- rather than physically-moved target; it refutes a tight spatial 'expel' reading and marks the limit at which the physical↔moral bridge becomes inference-dependent.",
+   "evidence_basis": {
+    "kind": "SYNTACTIC_DISTRIBUTION",
+    "statement": "17:64:1:2 وَٱسْتَفْزِزْ ... بِصَوْتِكَ — the only occurrence with no territorial complement, a voice as instrument, and a target moved morally (toward going astray) rather than physically. It defeats any tight 'drive out of a place/expel' reading: whatever fzz means, it cannot lexically be spatial removal, since here there is no land and no 'from'. It is accommodated only by the broader 'forcefully unsettle a settled target into motion' nucleus, of which the spatial cases are the complement-specified subtype."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "One genuine hard case (17:64) exists and is derived from the packet's own syntactic distribution (loss of مِنَ ٱلْأَرْضِ, presence of بِصَوْتِكَ). The nucleus survives it, so it is represented as an adversarial boundary rather than persisted resistance; its statement is carried as strongest_counterexample and in the instrumental cluster's counterevidence."
+ },
+ "rejection_condition": {
+  "challenging_finding": "An occurrence in which fzz denotes an accomplished, completed displacement or expulsion (not an attempt/intent), OR one that co-occurs redundantly as a bare synonym of أخرج/khrj rather than being distinguished from it as the means to that end.",
+  "search_location": "The three Form-X tokens in Sūrah 17 (17:103, 17:76, 17:64), with 17:76's yastafizzu/yukhrijuka pairing as the decisive test site for the means-vs-end distinction.",
+  "verification_method": "Re-read each verse's framing verb and complements: check whether the act is completed vs. conative (أَرَادَ أَن / كَادُوا / imperative), and whether any purpose or result clause assigns the displacement to fzz itself rather than to a separate verb.",
+  "confounder_control": "Distinguish the root's own content from contextual/narrative outcomes (drowning in 17:103, expulsion in 17:76) and from the collocated adjunct مِنَ ٱلْأَرْضِ; do not let a majority collocation (2/3 spatial) be mistaken for verb-inherent spatiality.",
+  "failure_consequence": "If completed-displacement or bare-synonymy-with-ikhrāj were attested, the 'attempt/means to unsettle' nucleus and the means-not-end boundary would collapse, forcing a revision toward a spatial-removal sense or a two-sense split (downgrade to WEAK/UNRESOLVED)."
+ },
+ "falsification_status": "NOT_RUN",
+ "reopen_conditions": [
+  "A new attestation of fzz outside Sūrah 17 or outside Form X (any nominal, participial, or non-X verbal form) that would test whether the destabilization nucleus is form-bound or genuinely root-level.",
+  "An occurrence of fzz with مِنَ ٱلْأَرْضِ (or any locative) whose framing marks a completed expulsion, which would reopen the fzz-vs-ikhrāj (means-vs-end) boundary established in 17:76.",
+  "A second non-spatial, instrument-bearing occurrence like 17:64 that either confirms the moral-displacement application as a stable sub-sense or forces a two-sense (territorial vs. incite/seduce) partition."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "17:103:3:1",
+  "17:76:3:2",
+  "17:64:1:2"
+ ],
+ "counterevidence_refs": [
+  "17:64:1:2"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "fzz-falsify-v1",
+  "verdict": "NOT_RUN",
+  "falsifiable": true,
+  "distinctiveness_ok": true,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "fzz-X-spatial",
+   "fzz-X-instrumental"
+  ],
+  "status_rationale": "A clean SUPPORTED falsification pass (failing_occurrences=[]) is not claimed because the nucleus, while surviving all three tokens, bridges the territorial and moral domains via an inference about the object of displacement rather than an explicit internal gloss, and the base is a single form in a single sūra. The core holds and 17:64 is recorded as the adversarial boundary; NOT_RUN is the honest status rather than PASSED."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fzz: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fzz: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fzz: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fzz: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fzz: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fzz: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fzz: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fzz: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

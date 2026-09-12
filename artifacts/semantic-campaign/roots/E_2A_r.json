@@ -1,0 +1,885 @@
+{
+ "root_arabic": "ع ذ ر",
+ "root_buckwalter": "E*r",
+ "root_id": "E*r",
+ "artifact_name": "E_2A_r.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave6",
+ "occurrences": 12,
+ "frozen_candidate_root_contribution": "The presentation or existence of a GROUND that would clear or release a party from blame or obligation (forensic exculpation / warrant of exemption). The derivational family distributes predictably from one nucleus: Form VIII اعتذر = the reflexive act of putting a self-clearing plea before an evaluating authority; مَعْذِرَة/مَعَاذِير = the act/instance and plural pleas; N(II) مُعَذِّرون = agents presenting excuses to obtain exemption; عُذْر = the exempting ground/warrant itself. The root carries no entailment of the plea's truth, its acceptance, or of pardon, and is categorically distinct from the near-homograph عذاب (root ع ذ ب).",
+ "internal_discovery": {
+  "candidate_root_contribution": "The presentation or existence of a GROUND that would clear or release a party from blame or obligation (forensic exculpation / warrant of exemption). The derivational family distributes predictably from one nucleus: Form VIII اعتذر = the reflexive act of putting a self-clearing plea before an evaluating authority; مَعْذِرَة/مَعَاذِير = the act/instance and plural pleas; N(II) مُعَذِّرون = agents presenting excuses to obtain exemption; عُذْر = the exempting ground/warrant itself. The root carries no entailment of the plea's truth, its acceptance, or of pardon, and is categorically distinct from the near-homograph عذاب (root ع ذ ب).",
+  "plain_explanation": "Every occurrence of ع ذ ر turns on offering, or possessing, a reason that would release someone from blame or an obligation. In the Form VIII verb it is the act of making excuses for oneself (uniformly forbidden, denied, or futile in-frame); in مَعْذِرَة/مَعَاذِير it is the plea/ground itself; in مُعَذِّرون it is the people making excuses to be exempted; in عُذْر it is the exempting ground or warrant. The Quran does not build the word to mean the excuse is true, accepted, or forgiven — that is always supplied by context, and belated self-clearing before God is consistently shown as unavailing.",
+  "layer_separation_note": "Does NOT entail: (1) truth/validity of the ground — it may be genuine (18:76, 7:164) or false/rejected (9:66 «قد كفرتم», 9:94 «لن نؤمن لكم»); (2) acceptance/success — most pleas fail, are prohibited, or unheard (30:57, 40:52, 66:7, 77:36); (3) pardon/forgiveness — عذر is only the ground offered, distinct from عفو/غفر (the granting); (4) warning — عُذْرًا is explicitly contrasted with نُذْرًا (77:6); (5) reparative amends/appeasement — معذرة is coordinated against يُسْتَعْتَبُون (root عتب) at 30:57. Distractor control: ع ذ ر is NOT ع ذ ر... i.e. NOT the punishment root ع ذ ب — the homograph-adjacent forms مُعَذِّبُهُمْ عَذَابًا (7:164), نُعَذِّب (9:66), عَذَابٌ أَلِيمٌ (9:90) belong to ع ذ ب and must not be read as linking عذر to punishment.",
+  "presence": {
+   "occurrences_total": 12,
+   "occurrences_checked": 12,
+   "occurrences_consistent": 10,
+   "inconsistent_refs": [
+    "18:76:13:1",
+    "77:6:1:1"
+   ]
+  },
+  "strongest_counterexample": "18:76:13:1 «قَدْ بَلَغْتَ مِن لَّدُنِّى عُذْرًا»: عذر here is an objectively-attained ground/warrant conceded by the offending party that entitles the OTHER party (Khidr) to part, not a self-exculpatory plea offered by a blameworthy party to a judge — inverting both the polarity (valid/effective, not a rejected plea) and the agent-direction of the dominant self-exculpation frame. It cannot be reduced to the Form-VIII plea sense and forces the root-level unifier up to the broader 'ground for release/exemption.'",
+  "strongest_competitor": "A two-pole lexical split rather than one nucleus: Pole A (subjective, retrospective, usually unavailing self-exculpating plea = all VIII + معذرة + معاذير + معذّرون, ~10 occ.) versus Pole B (objective, valid, delivered/attained ground = عُذْر at 18:76 and 77:6). Rejected as a full split because the valid/invalid contrast crosses form boundaries and is therefore contextual, not morphological: the SAME nominal مَعْذِرَة is a valid pre-judgment discharge at 7:164 («مَعْذِرَةً إِلَىٰ رَبِّكُمْ») yet futile at 30:57/40:52 («لا ينفع… معذرتهم»). If validity were lexicalized onto عذر vs معذرة we would not see معذرة carrying the valid sense. The split the competitor detects is an outcome/evaluation difference laid over one shared semantic object — hence a single nucleus with a mild resistant عُذْر sub-class, not two lexicalized roots.",
+  "competing_hypothesis": "A two-pole lexical split rather than one nucleus: Pole A (subjective, retrospective, usually unavailing self-exculpating plea = all VIII + معذرة + معاذير + معذّرون, ~10 occ.) versus Pole B (objective, valid, delivered/attained ground = عُذْر at 18:76 and 77:6). Rejected as a full split because the valid/invalid contrast crosses form boundaries and is therefore contextual, not morphological: the SAME nominal مَعْذِرَة is a valid pre-judgment discharge at 7:164 («مَعْذِرَةً إِلَىٰ رَبِّكُمْ») yet futile at 30:57/40:52 («لا ينفع… معذرتهم»). If validity were lexicalized onto عذر vs معذرة we would not see معذرة carrying the valid sense. The split the competitor detects is an outcome/evaluation difference laid over one shared semantic object — hence a single nucleus with a mild resistant عُذْر sub-class, not two lexicalized roots.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All three lenses converge: a single bridged field ('a ground that clears/releases from blame or obligation') coheres across all 12 occurrences with clean morphological division of labor and distinctive Quran-internal negative boundaries (عذر≠نذر at 77:6; معذرة vs استعتاب/عتب at 30:57; efficacy-decoupling at 30:57/40:52; ʾidhn-coupling at 9:90/77:36). This argues against fragmentation and supports a PREFERRED single-nucleus derivational-family account. Three factors bar STRONG/GENERAL and cap at MODERATE/REPRESENTATIVE per contract: (a) a coherent resistant nominal sub-class — bare-noun عُذْر at 18:76 and 77:6 — whose polarity and agent-direction invert the plea sense and which the Quran nowhere internally bridges to the plea sense; (b) one genuinely underdetermined occurrence (77:6, elliptical/adverbial, semi-frozen in the عُذْرًا أَوْ نُذْرًا doublet); (c) the unifier that fits all 12 is broad enough that its discipline rests on the negative boundaries rather than a single positive gloss, and distinctiveness from neighbours rests on thin evidence (one minimal pair, one coordination). A resistant nominal sub-class plus material abstraction caps strength at MODERATE and scope at REPRESENTATIVE.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "C1_VIII_reflexive_plea",
+     "where": {
+      "qac_pos": [
+       "V"
+      ],
+      "qac_verb_form": [
+       "VIII"
+      ]
+     },
+     "occurrence_count_expected": 5,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Form VIII اعتذر = the reflexive act of putting forward a self-clearing plea directed at an evaluating authority (إليكم 9:94) or before God/Judgment. In every instance the plea is forbidden, denied, or futile; the root names the act, not its outcome.",
+     "classification_rationale": "Five morphologically uniform V(VIII) verbs, all iftaʿala self-directed pleading. Directionality toward a judge (إلى) and rejection supplied by context (لن نؤمن لكم, قد كفرتم, لا يؤذن لهم), never by the lexeme.",
+     "supporting_evidence_note": "66:7 «لَا تَعْتَذِرُوا۟ ٱلْيَوْمَ»; 77:36 «وَلَا يُؤْذَنُ لَهُمْ فَيَعْتَذِرُونَ»; 9:66 «لَا تَعْتَذِرُوا۟ قَدْ كَفَرْتُم»; 9:94 «يَعْتَذِرُونَ إِلَيْكُمْ» and «قُل لَّا تَعْتَذِرُوا۟ لَن نُّؤْمِنَ لَكُمْ».",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "C2_maEo*irap_masdar_pleas",
+     "where": {
+      "word_refs": [
+       "30:57:6:1",
+       "40:52:5:1",
+       "75:15:3:1",
+       "7:164:15:1"
+      ]
+     },
+     "occurrence_count_expected": 4,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "مَعْذِرَة (maṣdar-mīmī) / مَعَاذِير (plural) = the act/instance and content of exculpation — the plea or clearing-ground itself. Spans a valid pre-judgment discharge (7:164) and futile pleas (30:57, 40:52, 75:15), showing validity is NOT lexicalized onto the form.",
+     "classification_rationale": "Four N nominals of the معذرة/معاذير pattern (qac_pos N, qac_verb_form null), naming the object/content of exculpation; bridged to the VIII act by shared 'plea/ground' semantics. Partitioned by explicit word_refs from the bare-noun عُذْر cluster, which shares N morphology but behaves as a resistant sub-class.",
+     "supporting_evidence_note": "7:164 «قَالُوا۟ مَعْذِرَةً إِلَىٰ رَبِّكُمْ»: معذرة is a VALID prospective discharge of duty directed إلى ربكم, showing validity is not lexicalized and bridging the valid/invalid seam within one shared semantic object. Contrast 30:57 «لَّا يَنفَعُ ٱلَّذِينَ ظَلَمُوا۟ مَعْذِرَتُهُمْ» and 40:52 (same frame) and 75:15 «وَلَوْ أَلْقَىٰ مَعَاذِيرَهُۥ» where the plea is futile.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "C3_Eu*r_bare_noun_ground",
+     "where": {
+      "word_refs": [
+       "18:76:13:1",
+       "77:6:1:1"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "عُذْر (bare noun) = the exempting ground/warrant itself, tending toward an objective/attained or externally-delivered ground rather than a self-serving plea. This is a mild but coherent resistant nominal sub-class that inverts the polarity and agent-direction of the dominant self-exculpation sense.",
+     "classification_rationale": "Both bare-noun عُذْر tokens (qac_pos N, qac_verb_form null; surface Eu*orFA) resist the self-exculpation nucleus: 18:76 is an objectively-attained warrant conceded to the other party; 77:6 is elliptical/adverbial and underdetermined. The Quran nowhere internally fuses this delivered/attained-ground sense with the offered-plea sense, so they are bridgeable only by broadening to an abstraction the corpus never demonstrates across the seam.",
+     "supporting_evidence_note": "77:6 «عُذْرًا أَوْ نُذْرًا»: عذر is coordinated as a purpose/effect of the divinely cast reminder, contrasted with نذر (warning); it is elliptical/adverbial, semi-frozen in the rhyming doublet, and underdetermined between exoneration/vindication and removal-of-excuse — it cannot be pinned to the blameworthy-party-pleading-to-a-judge frame.",
+     "counterevidence": [
+      "18:76:13:1",
+      "77:6:1:1"
+     ]
+    },
+    {
+     "cluster_id": "C4_NII_muEa*~ir_agent",
+     "where": {
+      "qac_pos": [
+       "N"
+      ],
+      "qac_verb_form": [
+       "II"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "N(II) مُعَذِّرون = the agents who present excuses in order to obtain exemption (ليؤذن لهم). Bridged to the plea nucleus as the agent-noun of the excuse-making act.",
+     "classification_rationale": "Lone Form-II nominal (qac_verb_form II, qac_pos N). ʾidhn-coupling (لِيُؤْذَنَ لَهُمْ) situates it squarely in the excuse-to-be-exempted frame; single morphological data point but semantically bridged.",
+     "supporting_evidence_note": "9:90 «وَجَآءَ ٱلْمُعَذِّرُونَ مِنَ ٱلْأَعْرَابِ لِيُؤْذَنَ لَهُمْ» — agents presenting grounds to be granted leave/exemption.",
+     "counterevidence": []
+    }
+   ],
+   "reconciliation": [
+    {
+     "word_ref": "7:164:15:1",
+     "final": "CONSISTENT",
+     "rationale": "Reconciled as a bridge datum, not resistance: it is the SAME معذرة nominal carrying validity because context (إلى ربكم, pre-judgment, لعلهم يتقون) supplies it, confirming that validity is contextual not lexical. It strengthens the single-nucleus account rather than fragmenting it."
+    },
+    {
+     "word_ref": "77:6:1:1",
+     "final": "RESISTANT",
+     "rationale": "Retained as resistant: brevity and the frozen عُذْرًا أَوْ نُذْرًا doublet leave direction/beneficiary Quran-internally underdetermined, and its delivered/effected-ground polarity is not bridged to the plea sense; per anti-over-grading it must be flagged, not smoothed."
+    }
+   ]
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "E*r",
+  "verdict": "CORE_HOLDS_WITH_RESIDUE",
+  "failing_occurrences": [
+   "18:76:13:1",
+   "77:6:1:1"
+  ],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "A full adversarial refutation returning SUPPORTED with failing_occurrences=[] cannot be claimed because the bare-noun عُذْر sub-class (18:76, 77:6) resists the self-exculpation nucleus and is not Quran-internally bridged to it. The core plea/ground account is distinctive and adversarially clean across 10/12 (ʾidhn-coupling, efficacy-decoupling, عذر≠نذر, معذرة vs استعتاب), so the result is PREFERRED but capped at MODERATE; per contract this is NOT_RUN with the resistant occurrences recorded rather than PASSED."
+ },
+ "coverage_validation": {
+  "root": "E*r",
+  "expected_count": 12,
+  "researched_count": 12,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [
+   "18:76:13:1",
+   "77:6:1:1"
+  ],
+  "unresolved_visible": [
+   "18:76:13:1",
+   "77:6:1:1"
+  ]
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "18:76:13:1",
+   "disposition": "RESISTANT",
+   "note": "عذر as an objectively-attained ground/warrant conceded to the other party (Khidr), not a self-exculpatory plea; inverts polarity and agent-direction of the plea nucleus. | 18:76:13:1 «قَدْ بَلَغْتَ مِن لَّدُنِّى عُذْرًا»: عذر here is an objectively-attained ground/warrant conceded by the offending party that entitles the OTHER party (Khidr) to part, not a self-exculpatory plea offered by a blameworthy party to a judge.",
+   "coverage_cluster_id": "C3_Eu*r_bare_noun_ground",
+   "candidate_semantic_interpretation": "عُذْر (bare noun) = the exempting ground/warrant itself, tending toward an objective/attained or externally-delivered ground rather than a self-serving plea. This is a mild but coherent resistant nominal sub-class that inverts the polarity and agent-direction of the dominant self-exculpation sense.",
+   "cluster_supporting_evidence": "77:6 «عُذْرًا أَوْ نُذْرًا»: عذر is coordinated as a purpose/effect of the divinely cast reminder, contrasted with نذر (warning); it is elliptical/adverbial, semi-frozen in the rhyming doublet, and underdetermined between exoneration/vindication and removal-of-excuse — it cannot be pinned to the blameworthy-party-pleading-to-a-judge frame.",
+   "counterevidence": [
+    "18:76:13:1"
+   ],
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "Both bare-noun عُذْر tokens (qac_pos N, qac_verb_form null; surface Eu*orFA) resist the self-exculpation nucleus: 18:76 is an objectively-attained warrant conceded to the other party; 77:6 is elliptical/adverbial and underdetermined. The Quran nowhere internally fuses this delivered/attained-ground sense with the offered-plea sense, so they are bridgeable only by broadening to an abstraction the corpus never demonstrates across the seam.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [
+    "18:76:13:1"
+   ],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "18:76",
+     "verse_text": "قَالَ إِن سَأَلْتُكَ عَن شَىْءٍۭ بَعْدَهَا فَلَا تُصَٰحِبْنِى قَدْ بَلَغْتَ مِن لَّدُنِّى عُذْرًا"
+    }
+   ],
+   "root_arabic": "ع ذ ر",
+   "root_buckwalter": "E*r",
+   "root_id": "E*r",
+   "artifact_name": "E_2A_r.json",
+   "verse_ref": "18:76",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Eu*orFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالَ إِن سَأَلْتُكَ عَن شَىْءٍۭ بَعْدَهَا فَلَا تُصَٰحِبْنِى قَدْ بَلَغْتَ مِن لَّدُنِّى عُذْرًا",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "30:57:6:1",
+   "disposition": "CONSISTENT",
+   "note": "Four N nominals of the معذرة/معاذير pattern (qac_pos N, qac_verb_form null), naming the object/content of exculpation; bridged to the VIII act by shared 'plea/ground' semantics. Partitioned by explicit word_refs from the bare-noun عُذْر cluster, which shares N morphology but behaves as a resistant sub-class.",
+   "coverage_cluster_id": "C2_maEo*irap_masdar_pleas",
+   "candidate_semantic_interpretation": "مَعْذِرَة (maṣdar-mīmī) / مَعَاذِير (plural) = the act/instance and content of exculpation — the plea or clearing-ground itself. Spans a valid pre-judgment discharge (7:164) and futile pleas (30:57, 40:52, 75:15), showing validity is NOT lexicalized onto the form.",
+   "cluster_supporting_evidence": "7:164 «قَالُوا۟ مَعْذِرَةً إِلَىٰ رَبِّكُمْ»: معذرة is a VALID prospective discharge of duty directed إلى ربكم, showing validity is not lexicalized and bridging the valid/invalid seam within one shared semantic object. Contrast 30:57 «لَّا يَنفَعُ ٱلَّذِينَ ظَلَمُوا۟ مَعْذِرَتُهُمْ» and 40:52 (same frame) and 75:15 «وَلَوْ أَلْقَىٰ مَعَاذِيرَهُۥ» where the plea is futile.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Four N nominals of the معذرة/معاذير pattern (qac_pos N, qac_verb_form null), naming the object/content of exculpation; bridged to the VIII act by shared 'plea/ground' semantics. Partitioned by explicit word_refs from the bare-noun عُذْر cluster, which shares N morphology but behaves as a resistant sub-class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "30:57",
+     "verse_text": "فَيَوْمَئِذٍ لَّا يَنفَعُ ٱلَّذِينَ ظَلَمُوا۟ مَعْذِرَتُهُمْ وَلَا هُمْ يُسْتَعْتَبُونَ"
+    }
+   ],
+   "root_arabic": "ع ذ ر",
+   "root_buckwalter": "E*r",
+   "root_id": "E*r",
+   "artifact_name": "E_2A_r.json",
+   "verse_ref": "30:57",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "maEo*iratu",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَيَوْمَئِذٍ لَّا يَنفَعُ ٱلَّذِينَ ظَلَمُوا۟ مَعْذِرَتُهُمْ وَلَا هُمْ يُسْتَعْتَبُونَ"
+  },
+  {
+   "word_ref": "40:52:5:1",
+   "disposition": "CONSISTENT",
+   "note": "Four N nominals of the معذرة/معاذير pattern (qac_pos N, qac_verb_form null), naming the object/content of exculpation; bridged to the VIII act by shared 'plea/ground' semantics. Partitioned by explicit word_refs from the bare-noun عُذْر cluster, which shares N morphology but behaves as a resistant sub-class.",
+   "coverage_cluster_id": "C2_maEo*irap_masdar_pleas",
+   "candidate_semantic_interpretation": "مَعْذِرَة (maṣdar-mīmī) / مَعَاذِير (plural) = the act/instance and content of exculpation — the plea or clearing-ground itself. Spans a valid pre-judgment discharge (7:164) and futile pleas (30:57, 40:52, 75:15), showing validity is NOT lexicalized onto the form.",
+   "cluster_supporting_evidence": "7:164 «قَالُوا۟ مَعْذِرَةً إِلَىٰ رَبِّكُمْ»: معذرة is a VALID prospective discharge of duty directed إلى ربكم, showing validity is not lexicalized and bridging the valid/invalid seam within one shared semantic object. Contrast 30:57 «لَّا يَنفَعُ ٱلَّذِينَ ظَلَمُوا۟ مَعْذِرَتُهُمْ» and 40:52 (same frame) and 75:15 «وَلَوْ أَلْقَىٰ مَعَاذِيرَهُۥ» where the plea is futile.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Four N nominals of the معذرة/معاذير pattern (qac_pos N, qac_verb_form null), naming the object/content of exculpation; bridged to the VIII act by shared 'plea/ground' semantics. Partitioned by explicit word_refs from the bare-noun عُذْر cluster, which shares N morphology but behaves as a resistant sub-class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "40:52",
+     "verse_text": "يَوْمَ لَا يَنفَعُ ٱلظَّٰلِمِينَ مَعْذِرَتُهُمْ وَلَهُمُ ٱللَّعْنَةُ وَلَهُمْ سُوٓءُ ٱلدَّارِ"
+    }
+   ],
+   "root_arabic": "ع ذ ر",
+   "root_buckwalter": "E*r",
+   "root_id": "E*r",
+   "artifact_name": "E_2A_r.json",
+   "verse_ref": "40:52",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "maEo*iratu",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَوْمَ لَا يَنفَعُ ٱلظَّٰلِمِينَ مَعْذِرَتُهُمْ وَلَهُمُ ٱللَّعْنَةُ وَلَهُمْ سُوٓءُ ٱلدَّارِ"
+  },
+  {
+   "word_ref": "66:7:5:1",
+   "disposition": "CONSISTENT",
+   "note": "Five morphologically uniform V(VIII) verbs, all iftaʿala self-directed pleading. Directionality toward a judge (إلى) and rejection supplied by context (لن نؤمن لكم, قد كفرتم, لا يؤذن لهم), never by the lexeme.",
+   "coverage_cluster_id": "C1_VIII_reflexive_plea",
+   "candidate_semantic_interpretation": "Form VIII اعتذر = the reflexive act of putting forward a self-clearing plea directed at an evaluating authority (إليكم 9:94) or before God/Judgment. In every instance the plea is forbidden, denied, or futile; the root names the act, not its outcome.",
+   "cluster_supporting_evidence": "66:7 «لَا تَعْتَذِرُوا۟ ٱلْيَوْمَ»; 77:36 «وَلَا يُؤْذَنُ لَهُمْ فَيَعْتَذِرُونَ»; 9:66 «لَا تَعْتَذِرُوا۟ قَدْ كَفَرْتُم»; 9:94 «يَعْتَذِرُونَ إِلَيْكُمْ» and «قُل لَّا تَعْتَذِرُوا۟ لَن نُّؤْمِنَ لَكُمْ».",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Five morphologically uniform V(VIII) verbs, all iftaʿala self-directed pleading. Directionality toward a judge (إلى) and rejection supplied by context (لن نؤمن لكم, قد كفرتم, لا يؤذن لهم), never by the lexeme.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "66:7",
+     "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ كَفَرُوا۟ لَا تَعْتَذِرُوا۟ ٱلْيَوْمَ إِنَّمَا تُجْزَوْنَ مَا كُنتُمْ تَعْمَلُونَ"
+    }
+   ],
+   "root_arabic": "ع ذ ر",
+   "root_buckwalter": "E*r",
+   "root_id": "E*r",
+   "artifact_name": "E_2A_r.json",
+   "verse_ref": "66:7",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "taEota*iru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ كَفَرُوا۟ لَا تَعْتَذِرُوا۟ ٱلْيَوْمَ إِنَّمَا تُجْزَوْنَ مَا كُنتُمْ تَعْمَلُونَ"
+  },
+  {
+   "word_ref": "75:15:3:1",
+   "disposition": "CONSISTENT",
+   "note": "Four N nominals of the معذرة/معاذير pattern (qac_pos N, qac_verb_form null), naming the object/content of exculpation; bridged to the VIII act by shared 'plea/ground' semantics. Partitioned by explicit word_refs from the bare-noun عُذْر cluster, which shares N morphology but behaves as a resistant sub-class.",
+   "coverage_cluster_id": "C2_maEo*irap_masdar_pleas",
+   "candidate_semantic_interpretation": "مَعْذِرَة (maṣdar-mīmī) / مَعَاذِير (plural) = the act/instance and content of exculpation — the plea or clearing-ground itself. Spans a valid pre-judgment discharge (7:164) and futile pleas (30:57, 40:52, 75:15), showing validity is NOT lexicalized onto the form.",
+   "cluster_supporting_evidence": "7:164 «قَالُوا۟ مَعْذِرَةً إِلَىٰ رَبِّكُمْ»: معذرة is a VALID prospective discharge of duty directed إلى ربكم, showing validity is not lexicalized and bridging the valid/invalid seam within one shared semantic object. Contrast 30:57 «لَّا يَنفَعُ ٱلَّذِينَ ظَلَمُوا۟ مَعْذِرَتُهُمْ» and 40:52 (same frame) and 75:15 «وَلَوْ أَلْقَىٰ مَعَاذِيرَهُۥ» where the plea is futile.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Four N nominals of the معذرة/معاذير pattern (qac_pos N, qac_verb_form null), naming the object/content of exculpation; bridged to the VIII act by shared 'plea/ground' semantics. Partitioned by explicit word_refs from the bare-noun عُذْر cluster, which shares N morphology but behaves as a resistant sub-class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "75:15",
+     "verse_text": "وَلَوْ أَلْقَىٰ مَعَاذِيرَهُۥ"
+    }
+   ],
+   "root_arabic": "ع ذ ر",
+   "root_buckwalter": "E*r",
+   "root_id": "E*r",
+   "artifact_name": "E_2A_r.json",
+   "verse_ref": "75:15",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "maEaA*iyra",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَوْ أَلْقَىٰ مَعَاذِيرَهُۥ"
+  },
+  {
+   "word_ref": "77:36:4:2",
+   "disposition": "CONSISTENT",
+   "note": "Five morphologically uniform V(VIII) verbs, all iftaʿala self-directed pleading. Directionality toward a judge (إلى) and rejection supplied by context (لن نؤمن لكم, قد كفرتم, لا يؤذن لهم), never by the lexeme.",
+   "coverage_cluster_id": "C1_VIII_reflexive_plea",
+   "candidate_semantic_interpretation": "Form VIII اعتذر = the reflexive act of putting forward a self-clearing plea directed at an evaluating authority (إليكم 9:94) or before God/Judgment. In every instance the plea is forbidden, denied, or futile; the root names the act, not its outcome.",
+   "cluster_supporting_evidence": "66:7 «لَا تَعْتَذِرُوا۟ ٱلْيَوْمَ»; 77:36 «وَلَا يُؤْذَنُ لَهُمْ فَيَعْتَذِرُونَ»; 9:66 «لَا تَعْتَذِرُوا۟ قَدْ كَفَرْتُم»; 9:94 «يَعْتَذِرُونَ إِلَيْكُمْ» and «قُل لَّا تَعْتَذِرُوا۟ لَن نُّؤْمِنَ لَكُمْ».",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Five morphologically uniform V(VIII) verbs, all iftaʿala self-directed pleading. Directionality toward a judge (إلى) and rejection supplied by context (لن نؤمن لكم, قد كفرتم, لا يؤذن لهم), never by the lexeme.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "77:36",
+     "verse_text": "وَلَا يُؤْذَنُ لَهُمْ فَيَعْتَذِرُونَ"
+    }
+   ],
+   "root_arabic": "ع ذ ر",
+   "root_buckwalter": "E*r",
+   "root_id": "E*r",
+   "artifact_name": "E_2A_r.json",
+   "verse_ref": "77:36",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaEota*iru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَا يُؤْذَنُ لَهُمْ فَيَعْتَذِرُونَ"
+  },
+  {
+   "word_ref": "77:6:1:1",
+   "disposition": "RESISTANT",
+   "note": "Elliptical/adverbial عُذْرًا contrasted with نُذْرًا; underdetermined beneficiary/direction and semi-frozen in the doublet; delivered/effected ground rather than a rejected plea.",
+   "coverage_cluster_id": "C3_Eu*r_bare_noun_ground",
+   "candidate_semantic_interpretation": "عُذْر (bare noun) = the exempting ground/warrant itself, tending toward an objective/attained or externally-delivered ground rather than a self-serving plea. This is a mild but coherent resistant nominal sub-class that inverts the polarity and agent-direction of the dominant self-exculpation sense.",
+   "cluster_supporting_evidence": "77:6 «عُذْرًا أَوْ نُذْرًا»: عذر is coordinated as a purpose/effect of the divinely cast reminder, contrasted with نذر (warning); it is elliptical/adverbial, semi-frozen in the rhyming doublet, and underdetermined between exoneration/vindication and removal-of-excuse — it cannot be pinned to the blameworthy-party-pleading-to-a-judge frame.",
+   "counterevidence": [
+    "77:6:1:1"
+   ],
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "Both bare-noun عُذْر tokens (qac_pos N, qac_verb_form null; surface Eu*orFA) resist the self-exculpation nucleus: 18:76 is an objectively-attained warrant conceded to the other party; 77:6 is elliptical/adverbial and underdetermined. The Quran nowhere internally fuses this delivered/attained-ground sense with the offered-plea sense, so they are bridgeable only by broadening to an abstraction the corpus never demonstrates across the seam.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "Retained as resistant: brevity and the frozen عُذْرًا أَوْ نُذْرًا doublet leave direction/beneficiary Quran-internally underdetermined, and its delivered/effected-ground polarity is not bridged to the plea sense; per anti-over-grading it must be flagged, not smoothed.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "77:6:1:1",
+     "preliminary_disposition": "CONSISTENT",
+     "preliminary_note": "Initially foldable into the general 'exculpating ground' field via the عذر≠نذر contrast.",
+     "final_disposition": "RESISTANT",
+     "reconciliation_rationale": "Retained as resistant: brevity and the frozen عُذْرًا أَوْ نُذْرًا doublet leave direction/beneficiary Quran-internally underdetermined, and its delivered/effected-ground polarity is not bridged to the plea sense; per anti-over-grading it must be flagged, not smoothed.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [
+    "77:6:1:1"
+   ],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "77:6",
+     "verse_text": "عُذْرًا أَوْ نُذْرًا"
+    }
+   ],
+   "root_arabic": "ع ذ ر",
+   "root_buckwalter": "E*r",
+   "root_id": "E*r",
+   "artifact_name": "E_2A_r.json",
+   "verse_ref": "77:6",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Eu*orFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "عُذْرًا أَوْ نُذْرًا",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "7:164:15:1",
+   "disposition": "CONSISTENT",
+   "note": "Four N nominals of the معذرة/معاذير pattern (qac_pos N, qac_verb_form null), naming the object/content of exculpation; bridged to the VIII act by shared 'plea/ground' semantics. Partitioned by explicit word_refs from the bare-noun عُذْر cluster, which shares N morphology but behaves as a resistant sub-class.",
+   "coverage_cluster_id": "C2_maEo*irap_masdar_pleas",
+   "candidate_semantic_interpretation": "مَعْذِرَة (maṣdar-mīmī) / مَعَاذِير (plural) = the act/instance and content of exculpation — the plea or clearing-ground itself. Spans a valid pre-judgment discharge (7:164) and futile pleas (30:57, 40:52, 75:15), showing validity is NOT lexicalized onto the form.",
+   "cluster_supporting_evidence": "7:164 «قَالُوا۟ مَعْذِرَةً إِلَىٰ رَبِّكُمْ»: معذرة is a VALID prospective discharge of duty directed إلى ربكم, showing validity is not lexicalized and bridging the valid/invalid seam within one shared semantic object. Contrast 30:57 «لَّا يَنفَعُ ٱلَّذِينَ ظَلَمُوا۟ مَعْذِرَتُهُمْ» and 40:52 (same frame) and 75:15 «وَلَوْ أَلْقَىٰ مَعَاذِيرَهُۥ» where the plea is futile.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Four N nominals of the معذرة/معاذير pattern (qac_pos N, qac_verb_form null), naming the object/content of exculpation; bridged to the VIII act by shared 'plea/ground' semantics. Partitioned by explicit word_refs from the bare-noun عُذْر cluster, which shares N morphology but behaves as a resistant sub-class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": "Reconciled as a bridge datum, not resistance: it is the SAME معذرة nominal carrying validity because context (إلى ربكم, pre-judgment, لعلهم يتقون) supplies it, confirming that validity is contextual not lexical. It strengthens the single-nucleus account rather than fragmenting it.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "7:164:15:1",
+     "preliminary_disposition": "RESISTANT",
+     "preliminary_note": "Considered as a possible resistant/valid outlier since مَعْذِرَة here is a valid discharge, unlike the futile pleas of 30:57/40:52.",
+     "final_disposition": "CONSISTENT",
+     "reconciliation_rationale": "Reconciled as a bridge datum, not resistance: it is the SAME معذرة nominal carrying validity because context (إلى ربكم, pre-judgment, لعلهم يتقون) supplies it, confirming that validity is contextual not lexical. It strengthens the single-nucleus account rather than fragmenting it.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:164",
+     "verse_text": "وَإِذْ قَالَتْ أُمَّةٌ مِّنْهُمْ لِمَ تَعِظُونَ قَوْمًا ٱللَّهُ مُهْلِكُهُمْ أَوْ مُعَذِّبُهُمْ عَذَابًا شَدِيدًا قَالُوا۟ مَعْذِرَةً إِلَىٰ رَبِّكُمْ وَلَعَلَّهُمْ يَتَّقُونَ"
+    }
+   ],
+   "root_arabic": "ع ذ ر",
+   "root_buckwalter": "E*r",
+   "root_id": "E*r",
+   "artifact_name": "E_2A_r.json",
+   "verse_ref": "7:164",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "maEo*irapF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِذْ قَالَتْ أُمَّةٌ مِّنْهُمْ لِمَ تَعِظُونَ قَوْمًا ٱللَّهُ مُهْلِكُهُمْ أَوْ مُعَذِّبُهُمْ عَذَابًا شَدِيدًا قَالُوا۟ مَعْذِرَةً إِلَىٰ رَبِّكُمْ وَلَعَلَّهُمْ يَتَّقُونَ"
+  },
+  {
+   "word_ref": "9:66:2:1",
+   "disposition": "CONSISTENT",
+   "note": "Five morphologically uniform V(VIII) verbs, all iftaʿala self-directed pleading. Directionality toward a judge (إلى) and rejection supplied by context (لن نؤمن لكم, قد كفرتم, لا يؤذن لهم), never by the lexeme.",
+   "coverage_cluster_id": "C1_VIII_reflexive_plea",
+   "candidate_semantic_interpretation": "Form VIII اعتذر = the reflexive act of putting forward a self-clearing plea directed at an evaluating authority (إليكم 9:94) or before God/Judgment. In every instance the plea is forbidden, denied, or futile; the root names the act, not its outcome.",
+   "cluster_supporting_evidence": "66:7 «لَا تَعْتَذِرُوا۟ ٱلْيَوْمَ»; 77:36 «وَلَا يُؤْذَنُ لَهُمْ فَيَعْتَذِرُونَ»; 9:66 «لَا تَعْتَذِرُوا۟ قَدْ كَفَرْتُم»; 9:94 «يَعْتَذِرُونَ إِلَيْكُمْ» and «قُل لَّا تَعْتَذِرُوا۟ لَن نُّؤْمِنَ لَكُمْ».",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Five morphologically uniform V(VIII) verbs, all iftaʿala self-directed pleading. Directionality toward a judge (إلى) and rejection supplied by context (لن نؤمن لكم, قد كفرتم, لا يؤذن لهم), never by the lexeme.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "9:66",
+     "verse_text": "لَا تَعْتَذِرُوا۟ قَدْ كَفَرْتُم بَعْدَ إِيمَٰنِكُمْ إِن نَّعْفُ عَن طَآئِفَةٍ مِّنكُمْ نُعَذِّبْ طَآئِفَةًۢ بِأَنَّهُمْ كَانُوا۟ مُجْرِمِينَ"
+    }
+   ],
+   "root_arabic": "ع ذ ر",
+   "root_buckwalter": "E*r",
+   "root_id": "E*r",
+   "artifact_name": "E_2A_r.json",
+   "verse_ref": "9:66",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "taEota*iru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لَا تَعْتَذِرُوا۟ قَدْ كَفَرْتُم بَعْدَ إِيمَٰنِكُمْ إِن نَّعْفُ عَن طَآئِفَةٍ مِّنكُمْ نُعَذِّبْ طَآئِفَةًۢ بِأَنَّهُمْ كَانُوا۟ مُجْرِمِينَ"
+  },
+  {
+   "word_ref": "9:90:2:2",
+   "disposition": "CONSISTENT",
+   "note": "Lone Form-II nominal (qac_verb_form II, qac_pos N). ʾidhn-coupling (لِيُؤْذَنَ لَهُمْ) situates it squarely in the excuse-to-be-exempted frame; single morphological data point but semantically bridged.",
+   "coverage_cluster_id": "C4_NII_muEa*~ir_agent",
+   "candidate_semantic_interpretation": "N(II) مُعَذِّرون = the agents who present excuses in order to obtain exemption (ليؤذن لهم). Bridged to the plea nucleus as the agent-noun of the excuse-making act.",
+   "cluster_supporting_evidence": "9:90 «وَجَآءَ ٱلْمُعَذِّرُونَ مِنَ ٱلْأَعْرَابِ لِيُؤْذَنَ لَهُمْ» — agents presenting grounds to be granted leave/exemption.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Lone Form-II nominal (qac_verb_form II, qac_pos N). ʾidhn-coupling (لِيُؤْذَنَ لَهُمْ) situates it squarely in the excuse-to-be-exempted frame; single morphological data point but semantically bridged.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "9:90",
+     "verse_text": "وَجَآءَ ٱلْمُعَذِّرُونَ مِنَ ٱلْأَعْرَابِ لِيُؤْذَنَ لَهُمْ وَقَعَدَ ٱلَّذِينَ كَذَبُوا۟ ٱللَّهَ وَرَسُولَهُۥ سَيُصِيبُ ٱلَّذِينَ كَفَرُوا۟ مِنْهُمْ عَذَابٌ أَلِيمٌ"
+    }
+   ],
+   "root_arabic": "ع ذ ر",
+   "root_buckwalter": "E*r",
+   "root_id": "E*r",
+   "artifact_name": "E_2A_r.json",
+   "verse_ref": "9:90",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "muEa*~iruwna",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": "II",
+   "morphology": "N(II)",
+   "form": "N(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَجَآءَ ٱلْمُعَذِّرُونَ مِنَ ٱلْأَعْرَابِ لِيُؤْذَنَ لَهُمْ وَقَعَدَ ٱلَّذِينَ كَذَبُوا۟ ٱللَّهَ وَرَسُولَهُۥ سَيُصِيبُ ٱلَّذِينَ كَفَرُوا۟ مِنْهُمْ عَذَابٌ أَلِيمٌ"
+  },
+  {
+   "word_ref": "9:94:1:1",
+   "disposition": "CONSISTENT",
+   "note": "Five morphologically uniform V(VIII) verbs, all iftaʿala self-directed pleading. Directionality toward a judge (إلى) and rejection supplied by context (لن نؤمن لكم, قد كفرتم, لا يؤذن لهم), never by the lexeme.",
+   "coverage_cluster_id": "C1_VIII_reflexive_plea",
+   "candidate_semantic_interpretation": "Form VIII اعتذر = the reflexive act of putting forward a self-clearing plea directed at an evaluating authority (إليكم 9:94) or before God/Judgment. In every instance the plea is forbidden, denied, or futile; the root names the act, not its outcome.",
+   "cluster_supporting_evidence": "66:7 «لَا تَعْتَذِرُوا۟ ٱلْيَوْمَ»; 77:36 «وَلَا يُؤْذَنُ لَهُمْ فَيَعْتَذِرُونَ»; 9:66 «لَا تَعْتَذِرُوا۟ قَدْ كَفَرْتُم»; 9:94 «يَعْتَذِرُونَ إِلَيْكُمْ» and «قُل لَّا تَعْتَذِرُوا۟ لَن نُّؤْمِنَ لَكُمْ».",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Five morphologically uniform V(VIII) verbs, all iftaʿala self-directed pleading. Directionality toward a judge (إلى) and rejection supplied by context (لن نؤمن لكم, قد كفرتم, لا يؤذن لهم), never by the lexeme.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "9:94",
+     "verse_text": "يَعْتَذِرُونَ إِلَيْكُمْ إِذَا رَجَعْتُمْ إِلَيْهِمْ قُل لَّا تَعْتَذِرُوا۟ لَن نُّؤْمِنَ لَكُمْ قَدْ نَبَّأَنَا ٱللَّهُ مِنْ أَخْبَارِكُمْ وَسَيَرَى ٱللَّهُ عَمَلَكُمْ وَرَسُولُهُۥ ثُمَّ تُرَدُّونَ إِلَىٰ عَٰلِمِ ٱلْغَيْبِ وَٱلشَّهَٰدَةِ فَيُنَبِّئُكُم بِمَا كُنتُمْ تَعْمَلُونَ"
+    }
+   ],
+   "root_arabic": "ع ذ ر",
+   "root_buckwalter": "E*r",
+   "root_id": "E*r",
+   "artifact_name": "E_2A_r.json",
+   "verse_ref": "9:94",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaEota*iru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَعْتَذِرُونَ إِلَيْكُمْ إِذَا رَجَعْتُمْ إِلَيْهِمْ قُل لَّا تَعْتَذِرُوا۟ لَن نُّؤْمِنَ لَكُمْ قَدْ نَبَّأَنَا ٱللَّهُ مِنْ أَخْبَارِكُمْ وَسَيَرَى ٱللَّهُ عَمَلَكُمْ وَرَسُولُهُۥ ثُمَّ تُرَدُّونَ إِلَىٰ عَٰلِمِ ٱلْغَيْبِ وَٱلشَّهَٰدَةِ فَيُنَبِّئُكُم بِمَا كُنتُمْ تَعْمَلُونَ"
+  },
+  {
+   "word_ref": "9:94:8:1",
+   "disposition": "CONSISTENT",
+   "note": "Five morphologically uniform V(VIII) verbs, all iftaʿala self-directed pleading. Directionality toward a judge (إلى) and rejection supplied by context (لن نؤمن لكم, قد كفرتم, لا يؤذن لهم), never by the lexeme.",
+   "coverage_cluster_id": "C1_VIII_reflexive_plea",
+   "candidate_semantic_interpretation": "Form VIII اعتذر = the reflexive act of putting forward a self-clearing plea directed at an evaluating authority (إليكم 9:94) or before God/Judgment. In every instance the plea is forbidden, denied, or futile; the root names the act, not its outcome.",
+   "cluster_supporting_evidence": "66:7 «لَا تَعْتَذِرُوا۟ ٱلْيَوْمَ»; 77:36 «وَلَا يُؤْذَنُ لَهُمْ فَيَعْتَذِرُونَ»; 9:66 «لَا تَعْتَذِرُوا۟ قَدْ كَفَرْتُم»; 9:94 «يَعْتَذِرُونَ إِلَيْكُمْ» and «قُل لَّا تَعْتَذِرُوا۟ لَن نُّؤْمِنَ لَكُمْ».",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Five morphologically uniform V(VIII) verbs, all iftaʿala self-directed pleading. Directionality toward a judge (إلى) and rejection supplied by context (لن نؤمن لكم, قد كفرتم, لا يؤذن لهم), never by the lexeme.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "9:94",
+     "verse_text": "يَعْتَذِرُونَ إِلَيْكُمْ إِذَا رَجَعْتُمْ إِلَيْهِمْ قُل لَّا تَعْتَذِرُوا۟ لَن نُّؤْمِنَ لَكُمْ قَدْ نَبَّأَنَا ٱللَّهُ مِنْ أَخْبَارِكُمْ وَسَيَرَى ٱللَّهُ عَمَلَكُمْ وَرَسُولُهُۥ ثُمَّ تُرَدُّونَ إِلَىٰ عَٰلِمِ ٱلْغَيْبِ وَٱلشَّهَٰدَةِ فَيُنَبِّئُكُم بِمَا كُنتُمْ تَعْمَلُونَ"
+    }
+   ],
+   "root_arabic": "ع ذ ر",
+   "root_buckwalter": "E*r",
+   "root_id": "E*r",
+   "artifact_name": "E_2A_r.json",
+   "verse_ref": "9:94",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "taEota*iru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَعْتَذِرُونَ إِلَيْكُمْ إِذَا رَجَعْتُمْ إِلَيْهِمْ قُل لَّا تَعْتَذِرُوا۟ لَن نُّؤْمِنَ لَكُمْ قَدْ نَبَّأَنَا ٱللَّهُ مِنْ أَخْبَارِكُمْ وَسَيَرَى ٱللَّهُ عَمَلَكُمْ وَرَسُولُهُۥ ثُمَّ تُرَدُّونَ إِلَىٰ عَٰلِمِ ٱلْغَيْبِ وَٱلشَّهَٰدَةِ فَيُنَبِّئُكُم بِمَا كُنتُمْ تَعْمَلُونَ"
+  }
+ ],
+ "resistant_deep_analysis": [
+  {
+   "word_ref": "18:76:13:1",
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "Both bare-noun عُذْر tokens (qac_pos N, qac_verb_form null; surface Eu*orFA) resist the self-exculpation nucleus: 18:76 is an objectively-attained warrant conceded to the other party; 77:6 is elliptical/adverbial and underdetermined. The Quran nowhere internally fuses this delivered/attained-ground sense with the offered-plea sense, so they are bridgeable only by broadening to an abstraction the corpus never demonstrates across the seam.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "77:6:1:1",
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "Both bare-noun عُذْر tokens (qac_pos N, qac_verb_form null; surface Eu*orFA) resist the self-exculpation nucleus: 18:76 is an objectively-attained warrant conceded to the other party; 77:6 is elliptical/adverbial and underdetermined. The Quran nowhere internally fuses this delivered/attained-ground sense with the offered-plea sense, so they are bridgeable only by broadening to an abstraction the corpus never demonstrates across the seam.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "Retained as resistant: brevity and the frozen عُذْرًا أَوْ نُذْرًا doublet leave direction/beneficiary Quran-internally underdetermined, and its delivered/effected-ground polarity is not bridged to the plea sense; per anti-over-grading it must be flagged, not smoothed.",
+   "deep_analysis": true
+  }
+ ],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Three independent lenses (A, B, adversary C) converged on MODERATE/REPRESENTATIVE and independently identified 18:76 (and 77:6) as the resistant nominal seam and 7:164 as the valid-discharge bridge datum.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "18:76:13:1",
+  "77:6:1:1"
+ ],
+ "unreconciled_count": 2,
+ "resistant_occurrences": [
+  "18:76:13:1",
+  "77:6:1:1"
+ ],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "The presentation or existence of a GROUND that would clear or release a party from blame or obligation (forensic exculpation / warrant of exemption). The derivational family distributes predictably from one nucleus: Form VIII اعتذر = the reflexive act of putting a self-clearing plea before an evaluating authority; مَعْذِرَة/مَعَاذِير = the act/instance and plural pleas; N(II) مُعَذِّرون = agents presenting excuses to obtain exemption; عُذْر = the exempting ground/warrant itself. The root carries no entailment of the plea's truth, its acceptance, or of pardon, and is categorically distinct from the near-homograph عذاب (root ع ذ ب).",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "DERIVATIONAL_FAMILY",
+ "layer_attribution": {
+  "occurrence_evidence": "12/12 occurrences read from the packet: 5 V(VIII) verbs, 4 معذرة/معاذير nominals, 1 N(II) participle, 2 bare-noun عُذْر, with verse_text and word_refs confirmed against the packet.",
+  "derivation": "Forms distribute from one nucleus: VIII iftaʿala = reflexive self-clearing act; maṣdar-mīmī مَعْذِرَة/plural مَعَاذِير = act/instance and content; N(II) مُعَذِّرون = agent noun; عُذْر = the bare ground/warrant. Morphological division of labor is regular but does not by itself fix meaning.",
+  "lexical_class": "Root-level (derivational-family) claim: 'ground/plea for release from blame or obligation.' A mild lexicalized drift is noted in the bare-noun عُذْر toward objective/delivered warrant, treated as a resistant sub-class rather than a separate root.",
+  "contextual_relation": "Outcome and validity (لا ينفع, لن نؤمن, قد كفرتم, لعلهم يتقون), directionality (إلى ربكم, إليكم), and the exculpation-vs-warning contrast (عذر/نذر) are contextual/narrative — they frame the pleas as unavailing before God but are NOT promoted into the root claim.",
+  "reconciliation": "7:164 reconciled as a valid-discharge bridge (validity is contextual, keeping one nucleus); 77:6 retained as resistant despite surface bridgeability due to underdetermination; both prevent over-grading to STRONG.",
+  "unresolved_resistance": "The bare-noun عُذْر seam (18:76, 77:6) remains unbridged to the plea family within the corpus; its polarity/agent-direction inversion and 77:6's underdetermination are the standing residue capping the result at MODERATE/REPRESENTATIVE."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "18:76:13:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "Bare-noun عُذْر as an objectively-attained warrant conceded to the other party, inverting polarity and agent-direction of the self-exculpation nucleus; unbridged to the plea sense.",
+   "evidence_basis": {
+    "kind": "OCCURRENCE_CONTRAST",
+    "statement": "18:76:13:1 «قَدْ بَلَغْتَ مِن لَّدُنِّى عُذْرًا»: عذر here is an objectively-attained ground/warrant conceded by the offending party that entitles the OTHER party (Khidr) to part, not a self-exculpatory plea offered by a blameworthy party to a judge."
+   }
+  },
+  {
+   "word_ref": "77:6:1:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "Elliptical/adverbial عُذْرًا, underdetermined beneficiary/direction, semi-frozen in the عُذْرًا أَوْ نُذْرًا doublet; delivered/effected ground rather than a rejected plea.",
+   "evidence_basis": {
+    "kind": "UNDERDETERMINATION",
+    "statement": "77:6 «عُذْرًا أَوْ نُذْرًا»: عذر is coordinated as a purpose/effect of the divinely cast reminder, contrasted with نذر (warning); it is elliptical/adverbial, semi-frozen in the rhyming doublet, and underdetermined between exoneration/vindication and removal-of-excuse — it cannot be pinned to the blameworthy-party-pleading-to-a-judge frame."
+   }
+  },
+  {
+   "word_ref": "7:164:15:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "Valid pre-judgment discharge that crosses the valid/invalid seam within the same معذرة nominal, disproving any lexicalized-validity split.",
+   "evidence_basis": {
+    "kind": "BRIDGE_DATUM",
+    "statement": "7:164 «قَالُوا۟ مَعْذِرَةً إِلَىٰ رَبِّكُمْ»: معذرة is a VALID prospective discharge of duty directed إلى ربكم, showing validity is not lexicalized and bridging the valid/invalid seam within one shared semantic object."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "Hard cases are derived from actual packet occurrences and their Quran-internal contrasts: the two bare-noun عُذْر tokens (18:76, 77:6) form a coherent resistant nominal seam whose statements appear in strongest_counterexample and cluster C3's note, and 7:164 is an adversarial-boundary bridge datum whose statement appears in cluster C2's note. Both final-RESISTANT occurrences are listed as hard cases and in counterevidence_refs."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A Quran-internal occurrence in which عذر/معذرة/اعتذر denotes something OTHER than a ground/plea for release from blame or obligation — e.g. a token that genuinely means pardon-as-granted (عفو/غفر), or contrition/repentance (توبة), or is shown to require the excuse's truth or its acceptance as part of the lexeme rather than from context.",
+  "search_location": "The 5 V(VIII) tokens (66:7, 77:36, 9:66, 9:94×2), the معذرة/معاذير nominals (30:57, 40:52, 75:15, 7:164), the participle 9:90, and especially the bare-noun عُذْر tokens (18:76, 77:6).",
+  "verification_method": "Test each occurrence's context for whether the release/clearing outcome or the truth of the ground is encoded by the lexeme itself versus supplied by surrounding words (ينفع/لا ينفع, نعفو/نعذب, لن نؤمن, يؤذن); check whether عذر ever substitutes for or entails عفو/غفر/توبة.",
+  "confounder_control": "Exclude the near-homograph root ع ذ ب (مُعَذِّبُهُمْ/عَذَابًا 7:164, نُعَذِّب 9:66, عَذَابٌ أَلِيمٌ 9:90) which co-occurs but is a false friend; keep عتب/استعتاب (30:57) and نذر (77:6) as contrast controls, not as this root.",
+  "failure_consequence": "If such a finding holds, the single-nucleus 'ground for release from blame/obligation' account is falsified and the root must be re-analyzed as multi-class or lexicalized (e.g. splitting delivered-ground عُذْر from the plea family), moving research_state toward UNRESOLVED or a narrower LEXICALIZED_CLASS claim."
+ },
+ "falsification_status": "NOT_RUN",
+ "reopen_conditions": [
+  "If a Quran-internal reading bridges عُذْر at 18:76/77:6 (attained/delivered ground) to the self-exculpatory plea family without abstraction, re-evaluate for possible STRONG/GENERAL unity.",
+  "If 77:6 «عُذْرًا أَوْ نُذْرًا» is disambiguated by further internal evidence (beneficiary/direction fixed), reassess whether the عُذْر sub-class remains resistant or collapses into the nucleus.",
+  "If the lone N(II) participle مُعَذِّرون (9:90) or any معذرة token is shown to lexicalize an outcome (validity/acceptance) rather than take it from context, reopen the negative boundary that outcome is not encoded.",
+  "If additional analysis reclassifies any co-occurring ع ذ ب form (7:164, 9:66, 9:90) as genuinely belonging to ع ذ ر, reopen the punishment-boundary exclusion."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "66:7:5:1",
+  "77:36:4:2",
+  "9:66:2:1",
+  "9:94:1:1",
+  "9:94:8:1",
+  "30:57:6:1",
+  "40:52:5:1",
+  "75:15:3:1",
+  "7:164:15:1",
+  "9:90:2:2"
+ ],
+ "counterevidence_refs": [
+  "18:76:13:1",
+  "77:6:1:1"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "E*r-falsify-v1",
+  "verdict": "CORE_HOLDS_WITH_RESIDUE",
+  "falsifiable": true,
+  "distinctiveness_ok": true,
+  "failing_occurrences": [
+   "18:76:13:1",
+   "77:6:1:1"
+  ],
+  "tested_material_clusters": [
+   "C1_VIII_reflexive_plea",
+   "C2_maEo*irap_masdar_pleas",
+   "C4_NII_muEa*~ir_agent"
+  ],
+  "status_rationale": "A full adversarial refutation returning SUPPORTED with failing_occurrences=[] cannot be claimed because the bare-noun عُذْر sub-class (18:76, 77:6) resists the self-exculpation nucleus and is not Quran-internally bridged to it. The core plea/ground account is distinctive and adversarially clean across 10/12 (ʾidhn-coupling, efficacy-decoupling, عذر≠نذر, معذرة vs استعتاب), so the result is PREFERRED but capped at MODERATE; per contract this is NOT_RUN with the resistant occurrences recorded rather than PASSED."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "E*r: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "E*r: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "E*r: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "E*r: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "E*r: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "E*r: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "E*r: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "E*r: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

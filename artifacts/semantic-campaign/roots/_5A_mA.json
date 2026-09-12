@@ -1,0 +1,373 @@
+{
+ "root_arabic": "ظ م ا",
+ "root_buckwalter": "ZmA",
+ "root_id": "ZmA",
+ "artifact_name": "_5A_mA.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave6",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "ZmA denotes the bodily deprivation-state of lacking/needing water — thirst — oriented toward مَاء (water) as its object of relief. It is realized transparently across its derivational family: the imperfect verb (to be/become thirsty, 20:119), the فَعْلان state-adjective/participle (the thirsty one who bears the condition, 24:39), and the masdar (thirst as an endured affliction, 9:120). One physiological nucleus, no lexicalized second sense, no metaphorical migration of the lexeme itself.",
+ "internal_discovery": {
+  "candidate_root_contribution": "ZmA denotes the bodily deprivation-state of lacking/needing water — thirst — oriented toward مَاء (water) as its object of relief. It is realized transparently across its derivational family: the imperfect verb (to be/become thirsty, 20:119), the فَعْلان state-adjective/participle (the thirsty one who bears the condition, 24:39), and the masdar (thirst as an endured affliction, 9:120). One physiological nucleus, no lexicalized second sense, no metaphorical migration of the lexeme itself.",
+  "plain_explanation": "Across all three Quranic occurrences the root means literal, bodily thirst — the felt lack of water. In Paradise the promise is that 'you will not thirst' (20:119); on campaign 'no thirst afflicts them' as a rewarded hardship (9:120); and 'the thirsty one' mistakes a mirage for water in the desert (24:39). The Quran itself fixes the object as water (مَاء in 24:39) and repeatedly lists thirst as a member distinct from hunger, fatigue, heat, and nakedness. The account is graded MODERATE only because the corpus is thin (3 tokens, the verb attested only under negation), not because any occurrence resists.",
+  "layer_separation_note": "Thirst specifically = want of water; NOT hunger (contrasted with جوع 20:118 and مخمصة 9:120), NOT fatigue/toil (contrasted with نصب 9:120), NOT sun-heat/scorching (contrasted with تضحى 20:119), NOT nakedness (contrasted with تعرى 20:118). ZmA is therefore the species 'thirst', never the genus 'bodily privation'. It carries no intrinsic moral valence (removed blessing in 20:119, rewarded hardship in 9:120, exploited/deceived state in 24:39). It is NOT attested as metaphorical or spiritual craving/longing — even in the mirage simile the lexeme is a literally thirsty man craving literal water. The verbal sense is attested only under negation; no positive finite thirsting-event exists in the corpus.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "24:39 (ٱلظَّمْـَٔانُ embedded in the mirage simile كَسَرَابٍ). Candidate reading: the root is deployed figuratively for illusion / false hope / the disbelievers' craving for reward. It fails: the ظمآن is himself literally thirsty and literally seeks water (يَحْسَبُهُ … مَآءً), and the metaphor operates at the level of the whole simile (deeds ≈ mirage), external to the lexeme. The strongest available counterexample exemplifies rather than resists the literal-water-thirst nucleus.",
+  "strongest_competitor": "'Generic bodily privation / deprivation-discomfort' (genus), motivated by ZmA's consistent clustering with جوع/مخمصة, نصب, تضحى, تعرى. This is Quran-internally disproven by the enumeration itself: because ظمأ is named as a SEPARATE coordinated item alongside these deprivations (9:120; 20:118–119), a genus reading would make the lists redundant. The contrast forces the narrower species reading, and 24:39 fixes the object as مَاء. A secondary competitor, 'craving/longing', is a downstream facet, not the nucleus, and is unattested as a lexeme sense. The narrowest account wins.",
+  "competing_hypothesis": "'Generic bodily privation / deprivation-discomfort' (genus), motivated by ZmA's consistent clustering with جوع/مخمصة, نصب, تضحى, تعرى. This is Quran-internally disproven by the enumeration itself: because ظمأ is named as a SEPARATE coordinated item alongside these deprivations (9:120; 20:118–119), a genus reading would make the lists redundant. The contrast forces the narrower species reading, and 24:39 fixes the object as مَاء. A secondary competitor, 'craving/longing', is a downstream facet, not the nucleus, and is unattested as a lexeme sense. The narrowest account wins.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All three analysts (A, B, adversary C) independently converge on a single unbridged nucleus — physiological water-thirst — with zero resistant sub-class, decisive internal anchors (مَاء object in 24:39; contrastive enumeration in 9:120 and 20:118–119), and clear negative boundaries. Adversary C, tasked with breaking the unity, found no resistance and affirmed the nucleus. The distinctive and adversarially-clean profile would license high confidence, BUT n=3 across only two forms (the sole verb only negated) cannot honestly satisfy the 'broad' prong of STRONG; consistency at this sample size is partly attributable to limited sampling rather than demonstrated robustness. Two of three analysts recommend MODERATE; the disciplined grade is MODERATE with claim_scope REPRESENTATIVE (derivational family), the cap driven by corpus thinness, not by any counterexample or resistant class.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "ZmA-V-thirst-state",
+     "where": {
+      "qac_pos": [
+       "V"
+      ],
+      "forms": [
+       "V"
+      ],
+      "word_refs": [
+       "20:119:3:1"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Imperfect verb: to be/become thirsty — the bodily state of lacking water. Attested only under negation (لَا تَظْمَؤُا۟), as a removed deprivation in the Garden, listed distinct from hunger (20:118), nakedness (20:118), and sun-heat (تضحى, 20:119).",
+     "classification_rationale": "Sole verbal token; transparent reflex of the water-thirst nucleus. Enumerated as a distinct somatic want, refusing collapse into a generic-privation genus.",
+     "supporting_evidence_note": "20:119: وَأَنَّكَ لَا تَظْمَؤُا۟ فِيهَا وَلَا تَضْحَىٰ — thirst as a bodily want the Garden removes, held apart from تجوع/تعرى (20:118).",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "ZmA-N-participle-bearer",
+     "where": {
+      "qac_pos": [
+       "N"
+      ],
+      "forms": [
+       "N"
+      ],
+      "word_refs": [
+       "24:39:7:2"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "فَعْلان state-adjective/participle: 'the thirsty one' — the bearer of the water-lack condition. Its object of craving is textually named as مَاء (water), anchoring the nucleus to water specifically.",
+     "classification_rationale": "The lexeme denotes a literally parched man; the figuration is at the whole-simile level (كَسَرَابٍ / deeds), not on the root. Provides the decisive internal مَاء anchor for the water-specific reading.",
+     "supporting_evidence_note": "24:39: يَحْسَبُهُ ٱلظَّمْـَٔانُ مَآءً حَتَّىٰٓ إِذَا جَآءَهُۥ لَمْ يَجِدْهُ شَيْـًٔا — thirsty one seeks water and finds nothing.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "ZmA-N-masdar-affliction",
+     "where": {
+      "qac_pos": [
+       "N"
+      ],
+      "forms": [
+       "N"
+      ],
+      "word_refs": [
+       "9:120:23:1"
+      ]
+     },
+     "occurrence_count_expected": 0,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Masdar/abstract noun: 'thirst' as an endured affliction that befalls (يُصِيبُ) the strivers on campaign, credited as a righteous deed — held distinct from نصب (fatigue) and مخمصة (hunger).",
+     "classification_rationale": "Abstract realization of the same nucleus; the explicit coordination with نصب and مخمصة as separate items fixes ZmA as the species 'thirst', not the genus 'privation'.",
+     "supporting_evidence_note": "9:120: لَا يُصِيبُهُمْ ظَمَأٌ وَلَا نَصَبٌ وَلَا مَخْمَصَةٌ فِى سَبِيلِ ٱللَّهِ — thirst enumerated as a distinct rewarded hardship.",
+     "counterevidence": []
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "ZmA",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Adversarial search (Lens C) targeted the water-thirst nucleus and its strongest resistance candidate (24:39 figurative embedding); the candidate failed to resist and the nucleus held across all three clusters. Distinctiveness is Quran-internally demonstrated by contrastive enumeration against جوع/مخمصة, نصب, تضحى, تعرى, and the نucleus is falsifiable (a lexeme-level non-water or genus sense would break it). No occurrence failed."
+ },
+ "coverage_validation": {
+  "root": "ZmA",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "20:119:3:1",
+   "disposition": "CONSISTENT",
+   "note": "Sole verbal token; transparent reflex of the water-thirst nucleus. Enumerated as a distinct somatic want, refusing collapse into a generic-privation genus.",
+   "coverage_cluster_id": "ZmA-V-thirst-state",
+   "candidate_semantic_interpretation": "Imperfect verb: to be/become thirsty — the bodily state of lacking water. Attested only under negation (لَا تَظْمَؤُا۟), as a removed deprivation in the Garden, listed distinct from hunger (20:118), nakedness (20:118), and sun-heat (تضحى, 20:119).",
+   "cluster_supporting_evidence": "20:119: وَأَنَّكَ لَا تَظْمَؤُا۟ فِيهَا وَلَا تَضْحَىٰ — thirst as a bodily want the Garden removes, held apart from تجوع/تعرى (20:118).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Sole verbal token; transparent reflex of the water-thirst nucleus. Enumerated as a distinct somatic want, refusing collapse into a generic-privation genus.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "20:119",
+     "verse_text": "وَأَنَّكَ لَا تَظْمَؤُا۟ فِيهَا وَلَا تَضْحَىٰ"
+    }
+   ],
+   "root_arabic": "ظ م ا",
+   "root_buckwalter": "ZmA",
+   "root_id": "ZmA",
+   "artifact_name": "_5A_mA.json",
+   "verse_ref": "20:119",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "taZoma&uA@",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَأَنَّكَ لَا تَظْمَؤُا۟ فِيهَا وَلَا تَضْحَىٰ"
+  },
+  {
+   "word_ref": "24:39:7:2",
+   "disposition": "CONSISTENT",
+   "note": "The lexeme denotes a literally parched man; the figuration is at the whole-simile level (كَسَرَابٍ / deeds), not on the root. Provides the decisive internal مَاء anchor for the water-specific reading.",
+   "coverage_cluster_id": "ZmA-N-participle-bearer",
+   "candidate_semantic_interpretation": "فَعْلان state-adjective/participle: 'the thirsty one' — the bearer of the water-lack condition. Its object of craving is textually named as مَاء (water), anchoring the nucleus to water specifically.",
+   "cluster_supporting_evidence": "24:39: يَحْسَبُهُ ٱلظَّمْـَٔانُ مَآءً حَتَّىٰٓ إِذَا جَآءَهُۥ لَمْ يَجِدْهُ شَيْـًٔا — thirsty one seeks water and finds nothing.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The lexeme denotes a literally parched man; the figuration is at the whole-simile level (كَسَرَابٍ / deeds), not on the root. Provides the decisive internal مَاء anchor for the water-specific reading.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "24:39",
+     "verse_text": "وَٱلَّذِينَ كَفَرُوٓا۟ أَعْمَٰلُهُمْ كَسَرَابٍۭ بِقِيعَةٍ يَحْسَبُهُ ٱلظَّمْـَٔانُ مَآءً حَتَّىٰٓ إِذَا جَآءَهُۥ لَمْ يَجِدْهُ شَيْـًٔا وَوَجَدَ ٱللَّهَ عِندَهُۥ فَوَفَّىٰهُ حِسَابَهُۥ وَٱللَّهُ سَرِيعُ ٱلْحِسَابِ"
+    }
+   ],
+   "root_arabic": "ظ م ا",
+   "root_buckwalter": "ZmA",
+   "root_id": "ZmA",
+   "artifact_name": "_5A_mA.json",
+   "verse_ref": "24:39",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Z~amo_#aAnu",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱلَّذِينَ كَفَرُوٓا۟ أَعْمَٰلُهُمْ كَسَرَابٍۭ بِقِيعَةٍ يَحْسَبُهُ ٱلظَّمْـَٔانُ مَآءً حَتَّىٰٓ إِذَا جَآءَهُۥ لَمْ يَجِدْهُ شَيْـًٔا وَوَجَدَ ٱللَّهَ عِندَهُۥ فَوَفَّىٰهُ حِسَابَهُۥ وَٱللَّهُ سَرِيعُ ٱلْحِسَابِ"
+  },
+  {
+   "word_ref": "9:120:23:1",
+   "disposition": "CONSISTENT",
+   "note": "The lexeme denotes a literally parched man; the figuration is at the whole-simile level (كَسَرَابٍ / deeds), not on the root. Provides the decisive internal مَاء anchor for the water-specific reading.",
+   "coverage_cluster_id": "ZmA-N-participle-bearer",
+   "candidate_semantic_interpretation": "فَعْلان state-adjective/participle: 'the thirsty one' — the bearer of the water-lack condition. Its object of craving is textually named as مَاء (water), anchoring the nucleus to water specifically.",
+   "cluster_supporting_evidence": "24:39: يَحْسَبُهُ ٱلظَّمْـَٔانُ مَآءً حَتَّىٰٓ إِذَا جَآءَهُۥ لَمْ يَجِدْهُ شَيْـًٔا — thirsty one seeks water and finds nothing.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The lexeme denotes a literally parched man; the figuration is at the whole-simile level (كَسَرَابٍ / deeds), not on the root. Provides the decisive internal مَاء anchor for the water-specific reading.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "9:120",
+     "verse_text": "مَا كَانَ لِأَهْلِ ٱلْمَدِينَةِ وَمَنْ حَوْلَهُم مِّنَ ٱلْأَعْرَابِ أَن يَتَخَلَّفُوا۟ عَن رَّسُولِ ٱللَّهِ وَلَا يَرْغَبُوا۟ بِأَنفُسِهِمْ عَن نَّفْسِهِۦ ذَٰلِكَ بِأَنَّهُمْ لَا يُصِيبُهُمْ ظَمَأٌ وَلَا نَصَبٌ وَلَا مَخْمَصَةٌ فِى سَبِيلِ ٱللَّهِ وَلَا يَطَـُٔونَ مَوْطِئًا يَغِيظُ ٱلْكُفَّارَ وَلَا يَنَالُونَ مِنْ عَدُوٍّ نَّيْلًا إِلَّا كُتِبَ لَهُم بِهِۦ عَمَلٌ صَٰلِحٌ إِنَّ ٱللَّهَ لَا يُضِيعُ أَجْرَ ٱلْمُحْسِنِينَ"
+    }
+   ],
+   "root_arabic": "ظ م ا",
+   "root_buckwalter": "ZmA",
+   "root_id": "ZmA",
+   "artifact_name": "_5A_mA.json",
+   "verse_ref": "9:120",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Zama>N",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "مَا كَانَ لِأَهْلِ ٱلْمَدِينَةِ وَمَنْ حَوْلَهُم مِّنَ ٱلْأَعْرَابِ أَن يَتَخَلَّفُوا۟ عَن رَّسُولِ ٱللَّهِ وَلَا يَرْغَبُوا۟ بِأَنفُسِهِمْ عَن نَّفْسِهِۦ ذَٰلِكَ بِأَنَّهُمْ لَا يُصِيبُهُمْ ظَمَأٌ وَلَا نَصَبٌ وَلَا مَخْمَصَةٌ فِى سَبِيلِ ٱللَّهِ وَلَا يَطَـُٔونَ مَوْطِئًا يَغِيظُ ٱلْكُفَّارَ وَلَا يَنَالُونَ مِنْ عَدُوٍّ نَّيْلًا إِلَّا كُتِبَ لَهُم بِهِۦ عَمَلٌ صَٰلِحٌ إِنَّ ٱللَّهَ لَا يُضِيعُ أَجْرَ ٱلْمُحْسِنِينَ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Three independent analyses (A bottom-up, B top-down, C adversarial) converged on the same nucleus, boundaries, and the failure of the sole counterexample candidate.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "ZmA denotes the bodily deprivation-state of lacking/needing water — thirst — oriented toward مَاء (water) as its object of relief. It is realized transparently across its derivational family: the imperfect verb (to be/become thirsty, 20:119), the فَعْلان state-adjective/participle (the thirsty one who bears the condition, 24:39), and the masdar (thirst as an endured affliction, 9:120). One physiological nucleus, no lexicalized second sense, no metaphorical migration of the lexeme itself.",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "DERIVATIONAL_FAMILY",
+ "layer_attribution": {
+  "occurrence_evidence": "Three occurrences: 20:119:3:1 (V, negated تَظْمَؤُا۟), 24:39:7:2 (N فَعْلان ٱلظَّمْـَٔانُ), 9:120:23:1 (N masdar ظَمَأٌ). Full coverage 3/3.",
+  "derivation": "The verb (state of thirsting), the فَعْلان state-adjective (bearer of thirst), and the masdar (thirst as condition/affliction) are transparent morphological reflexes of one physiological nucleus; no derivational sense-split.",
+  "lexical_class": "No lexicalized or divergent nominal sub-class; both nominal tokens (participle, masdar) and the verb share the single water-thirst sense. DERIVATIONAL_FAMILY, not a fractured lexical class.",
+  "contextual_relation": "Contextual/narrative meanings (Paradise blessing removed, campaign hardship rewarded, desert mirage delusion) supply valence and framing but are NOT elevated into the root claim; the root remains valence-neutral literal water-thirst.",
+  "reconciliation": "No preliminary/final disposition conflicts arose; all three analysts and the adversary agreed on CONSISTENT dispositions, so no reconciliation entries were needed.",
+  "unresolved_resistance": "None. No occurrence finally resists; the only figurative-pressure case (24:39) resolves in favor of the nucleus. The MODERATE cap stems from corpus thinness (n=3, verb only negated), not from unresolved resistance."
+ },
+ "hard_cases": [],
+ "hard_case_representation": {
+  "status": "NO_GENUINE_HARD_CASE",
+  "rationale": "All three occurrences cohere under one physiological water-thirst nucleus. The only occurrence carrying figurative pressure (24:39, mirage simile) resolves in favor of the nucleus — the lexeme is a literal thirsty man craving literal water, the metaphor living at the whole-simile level. Adversary C, tasked to break the unity, found no resistant sub-class. No occurrence is finally RESISTANT; hence no hard case and no counterevidence."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A Quranic occurrence of ZmA where the lexeme itself (not a surrounding simile) denotes something other than bodily water-lack — e.g. hunger/food-lack, generic privation, or metaphorical/spiritual craving/longing — thereby breaking the water-specific thirst nucleus or forcing a genus reading.",
+  "search_location": "The three attested occurrences 20:119:3:1, 24:39:7:2, 9:120:23:1, focusing on the coordination items (جوع/مخمصة, نصب, تضحى, تعرى) and the مَاء object in 24:39; plus any newly confirmed ZmA occurrence added to the corpus.",
+  "verification_method": "Test whether the object of thirst is water (as fixed by مَآء in 24:39) and whether ZmA is enumerated as a distinct coordinate member versus a superordinate genus; check whether any figurative reading resides in the lexeme itself rather than the surrounding clause/simile.",
+  "confounder_control": "Distinguish clause-level figuration (the mirage simile) from lexeme-level sense; do not let the moral coloring of contexts (blessing removed / hardship rewarded / delusion driver) be read into the root, which is valence-neutral.",
+  "failure_consequence": "If such a finding held, the single-nucleus water-thirst account would be downgraded to WEAK or split into a multi-class/UNRESOLVED result, and the DERIVATIONAL_FAMILY generalization abandoned."
+ },
+ "falsification_status": "PASSED",
+ "reopen_conditions": [
+  "A newly confirmed ZmA occurrence attests a POSITIVE (non-negated) finite verbal thirsting-event, or a form other than the current V / فَعْلان participle / masdar set — testing whether the nucleus generalizes beyond the current thin derivational family.",
+  "Any occurrence pairs or substitutes ZmA with جوع/مخمصة, نصب, تضحى, or تعرى in a way that treats them as synonymous rather than distinct coordinated members — which would collapse the water-specific reading into a generic-privation genus.",
+  "A ZmA occurrence deploys the lexeme itself (not an enclosing simile) for metaphorical/spiritual craving or longing without a literal water referent, reopening the literal-vs-figurative boundary fixed by مَآء in 24:39."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "20:119:3:1",
+  "24:39:7:2",
+  "9:120:23:1"
+ ],
+ "counterevidence_refs": [],
+ "falsification_evidence": {
+  "attempt_id": "ZmA-falsify-01",
+  "verdict": "SUPPORTED",
+  "falsifiable": true,
+  "distinctiveness_ok": true,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "ZmA-V-thirst-state",
+   "ZmA-N-participle-bearer",
+   "ZmA-N-masdar-affliction"
+  ],
+  "status_rationale": "Adversarial search (Lens C) targeted the water-thirst nucleus and its strongest resistance candidate (24:39 figurative embedding); the candidate failed to resist and the nucleus held across all three clusters. Distinctiveness is Quran-internally demonstrated by contrastive enumeration against جوع/مخمصة, نصب, تضحى, تعرى, and the نucleus is falsifiable (a lexeme-level non-water or genus sense would break it). No occurrence failed."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "ZmA: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "ZmA: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "ZmA: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "ZmA: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "ZmA: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "ZmA: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "ZmA: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "ZmA: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}
