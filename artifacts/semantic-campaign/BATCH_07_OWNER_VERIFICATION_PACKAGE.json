@@ -1,0 +1,616 @@
+{
+ "schema_version": "1.0.0",
+ "artifact_role": "Five-root OWNER/HUMAN canonical-acceptance verification package for Batch 07. The AI implementation agent MUST NOT fill the human_decision fields or fabricate a VerificationRecord. Independent AI review is recorded as supporting evidence only.",
+ "status": "HUMAN_VERIFICATION_REQUIRED_FOR_CANONICAL_ACCEPTANCE",
+ "published_main_sha": "999da692ca9006a2f6a055a8eabb0175658ce8ea",
+ "reviewed_research_checkpoint_sha": "0c21d82f12439f7fd57bc4cdcae0eab31befeaaa",
+ "governance": {
+  "canonicalization_transition": "backend/domain/services/canonicalization.py :: CanonicalizationPolicy.canonicalize(actor=\"TRUSTED_LOCAL_OWNER\")",
+  "verification_endpoint": "POST /judgments/{claim_id}/verification (backend/main.py record_independent_verification); server stamps verifier_identity=TRUSTED_LOCAL_INDEPENDENT_VERIFIER; a VERIFIED decision requires verification_type=INDEPENDENT",
+  "canonicalize_endpoint": "POST /judgments/{claim_id}/canonicalize",
+  "blocking_structural_fact": "Zero SemanticClaim rows and zero VerificationRecords exist in either database (data/campaign/runtime.db, lisanapp.db). The Batch 07 campaign is file-based (JSON artifacts + ledger + CampaignState) and never materialized SemanticClaim rows, so there is no claim_id to verify or canonicalize, no integer revision_id, and no VerificationRecord.claim_id target.",
+  "verifier_identity_required": "TRUSTED_LOCAL_INDEPENDENT_VERIFIER (independent-human / trusted-local-owner authority), distinct from the AI research/producer endpoint which has no ACCEPTED transition and must not self-grant.",
+  "required_verification_record_fields": [
+   "id",
+   "claim_id (FK to an existing SemanticClaim)",
+   "verifier_identity (NOT NULL)",
+   "verification_type=INDEPENDENT",
+   "decision=VERIFIED",
+   "evaluated_claim_revision == claim.revision_id",
+   "rationale",
+   "evidence_refs",
+   "created_at"
+  ],
+  "one_record_per": "root/claim revision"
+ },
+ "roots": [
+  {
+   "identity": {
+    "root_arabic": "ع ص و",
+    "root_buckwalter": "ESw",
+    "root_artifact": "artifacts/semantic-campaign/roots/E_53_w.json",
+    "revision_binding": {
+     "note": "File-based campaign: no DB SemanticClaim / integer revision_id exists yet. A materialized SemanticClaim would start at revision_id=1. The human decision must bind to THIS persisted revision identity.",
+     "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+     "batch_id": "batch07-wave1",
+     "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+     "reviewed_research_checkpoint_sha": "0c21d82f12439f7fd57bc4cdcae0eab31befeaaa",
+     "published_main_sha": "999da692ca9006a2f6a055a8eabb0175658ce8ea"
+    },
+    "result_strength": "STRONG",
+    "claim_scope": "REPRESENTATIVE",
+    "claim_scope_kind": "LEXICALIZED_CLASS",
+    "contract_type": "ROOT_CONCEPT"
+   },
+   "proposed_canonical_semantic_claim_VERBATIM": {
+    "candidate_root_contribution": "A single lexicalized concrete count-noun: a rigid, elongated, hand-held rod/staff. The root ESw surfaces in the Quran only as this object-denoting noun (singular عَصَا / broken plural عِصِيّ), inflected for number, case, and possessor. It is function-neutral (support, herding, striking, casting are contributed by the surrounding verbs, not by the noun), carries no verbal, abstract, figurative, sacral, or authority content, and is distinct from the disobedience root ع ص ي.",
+    "plain_explanation": "Every one of the 12 tokens denotes the same physical object — a wooden staff held by a person. 20:18:3:1 supplies the Quran's own ostensive definition (Moses leans on it, beats foliage for his sheep with it, and has 'other uses'), fixing the referent as an ordinary multi-purpose stick before any miracle. The remaining 11 tokens are the identical object under three action-frames — cast down (becomes a serpent / swallows the illusions), struck against rock or sea (springs / parting), and the magicians' plural staffs cast in sorcery. The variety lives entirely in the verbs (ألقى، اضرب، أتوكّأ، أهشّ), never in the noun. Because the root is realized solely as this one lexicalized concrete noun within a single narrative domain (the Moses cycle), the claim is a lexicalized-class account, not a generalizable root-wide abstract nucleus.",
+    "layer_separation_note": "Does NOT entail: (a) disobedience/rebellion — that is the orthographically adjacent but distinct root ع ص ي (lām=ي); this root is ع ص و (lām=ي vs و confirmed by the broken plural عِصِيّ). (b) intrinsic miracle/sign content — 20:18 lists mundane uses and 20:66/26:44 are the non-prophetic magicians' staffs. (c) authority/scepter/regal or martial/weapon sense. (d) flexible cordage — explicitly contrasted with حِبَال (ropes) at 20:66:6:2 and 26:44:3:2. (e) the serpent it may become — عَصَا is the pre-transformation referent, never the ثُعْبَان/جَانّ itself. (f) any verbal/eventive sense — form_inventory is N ×12 only."
+   },
+   "coverage": {
+    "expected_occurrence_count": 12,
+    "researched_occurrence_count": 12,
+    "exact_set_match": true,
+    "missing_word_refs": [],
+    "unexpected_word_refs": [],
+    "duplicate_word_refs": []
+   },
+   "supporting_evidence_refs": [
+    "20:18:3:1",
+    "26:32:2:1",
+    "2:60:7:2",
+    "26:63:6:2",
+    "20:66:6:2",
+    "26:44:3:2"
+   ],
+   "counterevidence_refs": [],
+   "hard_cases": [
+    {
+     "word_ref": "20:66:6:2",
+     "role": "ADVERSARIAL_BOUNDARY",
+     "reason": "Magicians' (non-prophetic) plural staffs in sorcery, coordinated with حِبَال (ropes); tests and defeats both the sacral/sign-instrument reading and the 'sorcery-props generally' broadening, since the noun is precisely the rigid-rod member contrasted with flexible cordage.",
+     "evidence_basis": {
+      "kind": "CONTRASTIVE_COORDINATION",
+      "statement": "The magicians' plural عِصِيّ at 20:66:6:2 and 26:44:3:2 bear the identical lexeme in sorcery, coordinated with حِبَال (ropes) and owned by non-prophets, which disproves any sacral/authority/sign-instrument nucleus and fixes the meaning on the ordinary rigid rod itself."
+     }
+    },
+    {
+     "word_ref": "26:44:3:2",
+     "role": "ADVERSARIAL_BOUNDARY",
+     "reason": "Second attestation of the magicians' plural staffs cast (أَلْقَوْا) alongside حِبَالَهُمْ; confirms the same concrete rod-class in a non-prophetic, non-miraculous-per-word setting.",
+     "evidence_basis": {
+      "kind": "CONTRASTIVE_COORDINATION",
+      "statement": "The magicians' plural عِصِيّ at 20:66:6:2 and 26:44:3:2 bear the identical lexeme in sorcery, coordinated with حِبَال (ropes) and owned by non-prophets, which disproves any sacral/authority/sign-instrument nucleus and fixes the meaning on the ordinary rigid rod itself."
+     }
+    },
+    {
+     "word_ref": "20:18:3:1",
+     "role": "ADVERSARIAL_BOUNDARY",
+     "reason": "The only token outside a miracle frame and the only one enumerating multiple heterogeneous uses — the natural place to fracture a single account; instead it anchors a mundane, function-neutral object and defeats the miracle-instrument reading.",
+     "evidence_basis": {
+      "kind": "INTERNAL_OSTENSIVE_DEFINITION",
+      "statement": "20:18:3:1 supplies an internal ostensive definition — leaned on (أَتَوَكَّؤُا۟ عَلَيْهَا), used to beat foliage for sheep (وَأَهُشُّ بِهَا عَلَىٰ غَنَمِى), with مَـَٔارِبُ أُخْرَىٰ (other uses) — establishing a mundane, function-neutral object before any miracle."
+     }
+    }
+   ],
+   "falsification": {
+    "status": "PASSED",
+    "verdict": "SUPPORTED",
+    "falsifiable": true,
+    "distinctiveness_ok": true,
+    "failing_occurrences": [],
+    "tested_material_clusters": [
+     "ESw-c1-singular-staff",
+     "ESw-c2-plural-staffs"
+    ],
+    "status_rationale": "Four independent refutation wedges were run: (1) miracle/sign-instrument nucleus — refuted by mundane 20:18:3:1 and non-prophetic 20:66:6:2/26:44:3:2; (2) plural-broadening to 'sorcery-props generally' — refuted by the حِبَال contrast that isolates عِصِيّ as the rigid-rod member; (3) transformation wedge ('word means serpent') — refuted because عَصَا is the pre-transformation subject (فَأَلْقَىٰ عَصَاهُ فَإِذَا هِىَ ثُعْبَانٌ); (4) function-fragmentation — self-defeated by 20:18 packing multiple functions plus 'other uses' into one referent. All wedges failed; the unified concrete-noun claim survives with no failing occurrences and clear distinctiveness from ع ص ي and from حِبَال."
+   },
+   "independent_ai_semantic_review": {
+    "verdict": "VERIFIED_AT_SCOPE",
+    "authority": "SUPPORTING REVIEW EVIDENCE ONLY — NOT the required independent-human VerificationRecord. Does not satisfy CanonicalizationPolicy condition 6."
+   },
+   "human_decision": {
+    "choices": [
+     "VERIFY_AT_SCOPE",
+     "REJECT",
+     "RETURN_FOR_CORRECTION"
+    ],
+    "decision": null,
+    "reviewer_identity": null,
+    "timestamp": null,
+    "rationale": null,
+    "exact_claim_revision_affirmed": null
+   },
+   "human_must_confirm": [
+    "the persisted claim matches the evidence",
+    "scope is not broader than evidence",
+    "supporting refs genuinely support it",
+    "hard cases/counterevidence are honestly represented",
+    "falsification evidence is material",
+    "no known unresolved seam defeats the claim"
+   ]
+  },
+  {
+   "identity": {
+    "root_arabic": "د ن و",
+    "root_buckwalter": "dnw",
+    "root_artifact": "artifacts/semantic-campaign/roots/dnw.json",
+    "revision_binding": {
+     "note": "File-based campaign: no DB SemanticClaim / integer revision_id exists yet. A materialized SemanticClaim would start at revision_id=1. The human decision must bind to THIS persisted revision identity.",
+     "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+     "batch_id": "batch07-wave1",
+     "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+     "reviewed_research_checkpoint_sha": "0c21d82f12439f7fd57bc4cdcae0eab31befeaaa",
+     "published_main_sha": "999da692ca9006a2f6a055a8eabb0175658ce8ea"
+    },
+    "result_strength": "STRONG",
+    "claim_scope": "UNIVERSAL",
+    "claim_scope_kind": "ROOT_GENERALIZATION",
+    "contract_type": "ROOT_CONCEPT"
+   },
+   "proposed_canonical_semantic_claim_VERBATIM": {
+    "candidate_root_contribution": "د-ن-و marks occupying or moving toward the PROXIMAL/LOW pole of a salient scale relative to a reference point. The default axis is spatial (near, close, within reach, low / hanging-low), and the single relational primitive extends productively along whatever axis context supplies: temporal immediacy (al-dunyā = the near/present life vs the latter al-ākhira), lesser quantity (adnā vs akthar), lesser magnitude (al-ʿadhāb al-adnā vs al-akbar), inferior rank/value (adnā vs khayr), and proximity-to-an-outcome (adnā an … = 'more conducive'). The root supplies only the near/low RELATION; the 'world / life / fruit / sky' content and any moral negativity come from the modified head noun and the ākhira contrast, never from the root itself.",
+    "plain_explanation": "Every form of this root places something at the 'near' or 'low' end of some scale, measured from a reference point. Concretely it is physical nearness: a person who 'drew near' (danā, 53:8), garments 'drawn down/close' (yudnīna, 33:59), fruit and shade 'within reach / low-hanging' (dāniyah). The comparative adnā is 'nearer / lower / lesser' on whatever scale is in view — distance, amount, size, worth, or nearness-to-a-result. The dominant word al-dunyā is just the feminine of that comparative, 'the nearer/lower one', frozen for 'this present life' set against al-ākhira 'the latter life' — and the corpus keeps the literal sense visible by using al-dunyā for 'the nearest heaven' (67:5). So this is one relational idea ('near/low on a scale'), not several unrelated meanings.",
+    "layer_separation_note": "د-ن-و does NOT denote 'world / earth / cosmos / life' as substance (those come from the elided head ḥayāt/dār/samāʾ, and are falsified as root content by «ٱلسَّمَآءَ ٱلدُّنْيَا» = nearest sky and «أَدْنَى ٱلْأَرْضِ» = nearer land); NOT motion in itself (adnā and dānin are static; only danā/yudnī add movement); NOT contact / arrival / union ('or nearer' at 53:9 measures a residual gap; dāniyah fruit is within reach, not touching); NOT intrinsic moral vileness or blameworthiness (nearness is a REWARD for Paradise's fruit and shade at 55:54/69:23/76:14; the negativity clinging to al-dunyā is supplied by the ākhira contrast, not the root); NOT affective intimacy/kinship (the nearness is positional-scalar, never relational-affective); NOT a bare tense/'present-first' notion (the temporal reading of dunyā is parasitic on near/far plus the ākhira antonym)."
+   },
+   "coverage": {
+    "expected_occurrence_count": 133,
+    "researched_occurrence_count": 133,
+    "exact_set_match": true,
+    "missing_word_refs": [],
+    "unexpected_word_refs": [],
+    "duplicate_word_refs": []
+   },
+   "supporting_evidence_refs": [
+    "53:8:2:1",
+    "33:59:8:1",
+    "55:54:9:1",
+    "69:23:2:1",
+    "6:99:24:1",
+    "76:14:1:2",
+    "30:3:2:1",
+    "53:9:5:1",
+    "58:7:26:1",
+    "73:20:6:1",
+    "32:21:4:2",
+    "67:5:4:2",
+    "7:169:10:2",
+    "13:26:9:2",
+    "22:11:20:2"
+   ],
+   "counterevidence_refs": [
+    "2:61:27:1",
+    "2:282:93:2",
+    "4:3:26:1",
+    "5:108:2:1",
+    "33:51:17:1",
+    "33:59:13:1"
+   ],
+   "hard_cases": [
+    {
+     "word_ref": "2:61:27:1",
+     "role": "ADVERSARIAL_BOUNDARY",
+     "reason": "The only token where no physical/temporal/quantitative proximity is available; survives solely on the low->inferior extension.",
+     "evidence_basis": {
+      "kind": "SEMANTIC_EXTENSION_NOT_DERIVED",
+      "statement": "2:61:27:1 «أَتَسْتَبْدِلُونَ ٱلَّذِى هُوَ أَدْنَىٰ بِٱلَّذِى هُوَ خَيْرٌ»: the two exchanged items are foods, so nothing is spatially, temporally or numerically nearer; only the rank/value reading (adnā = baser/inferior, opposed to khayr) works. This is the point where the spatial-nearness nucleus is furthest from the surface, absorbed only by the low->inferior extension — which the Quran attests independently at 7:169 («عَرَضَ هَٰذَا ٱلْأَدْنَىٰ» opposed to «ٱلدَّارُ ٱلْـَٔاخِرَةُ خَيْرٌ») but never explicitly derives."
+     }
+    },
+    {
+     "word_ref": "2:282:93:2",
+     "role": "ADVERSARIAL_BOUNDARY",
+     "reason": "«أَدْنَىٰٓ أَلَّا تَرْتَابُوٓا۟» projects proximity onto an abstract epistemic outcome; extension is inferred, not surface-derived.",
+     "evidence_basis": {
+      "kind": "SEMANTIC_EXTENSION_NOT_DERIVED",
+      "statement": "The «أَدْنَىٰٓ أَن …» set (2:282, 4:3, 5:108, 33:51, 33:59:13:1) reads adnā as 'nearer to bringing about outcome X' = 'more conducive/apt', projecting proximity onto an abstract goal; this is consistent with the near/low-pole nucleus (proximity to a target is still proximity) but the Quran nowhere glosses the metaphor, so the proximity-to-outcome step is a reasoned extension, not a surface-demonstrated identity."
+     }
+    },
+    {
+     "word_ref": "4:3:26:1",
+     "role": "ADVERSARIAL_BOUNDARY",
+     "reason": "«أَدْنَىٰٓ أَلَّا تَعُولُوا۟»: proximity-to-outcome reading; metaphor not glossed by the corpus.",
+     "evidence_basis": {
+      "kind": "SEMANTIC_EXTENSION_NOT_DERIVED",
+      "statement": "The «أَدْنَىٰٓ أَن …» set (2:282, 4:3, 5:108, 33:51, 33:59:13:1) reads adnā as 'nearer to bringing about outcome X' = 'more conducive/apt', projecting proximity onto an abstract goal; this is consistent with the near/low-pole nucleus (proximity to a target is still proximity) but the Quran nowhere glosses the metaphor, so the proximity-to-outcome step is a reasoned extension, not a surface-demonstrated identity."
+     }
+    },
+    {
+     "word_ref": "5:108:2:1",
+     "role": "ADVERSARIAL_BOUNDARY",
+     "reason": "«أَدْنَىٰٓ أَن يَأْتُوا۟ بِٱلشَّهَٰدَةِ»: 'more conducive' reading; proximity onto abstract outcome, inferred.",
+     "evidence_basis": {
+      "kind": "SEMANTIC_EXTENSION_NOT_DERIVED",
+      "statement": "The «أَدْنَىٰٓ أَن …» set (2:282, 4:3, 5:108, 33:51, 33:59:13:1) reads adnā as 'nearer to bringing about outcome X' = 'more conducive/apt', projecting proximity onto an abstract goal; this is consistent with the near/low-pole nucleus (proximity to a target is still proximity) but the Quran nowhere glosses the metaphor, so the proximity-to-outcome step is a reasoned extension, not a surface-demonstrated identity."
+     }
+    },
+    {
+     "word_ref": "33:51:17:1",
+     "role": "ADVERSARIAL_BOUNDARY",
+     "reason": "«أَدْنَىٰٓ أَن تَقَرَّ أَعْيُنُهُنَّ»: purely modal 'more apt'; no overt scale on the surface.",
+     "evidence_basis": {
+      "kind": "SEMANTIC_EXTENSION_NOT_DERIVED",
+      "statement": "The «أَدْنَىٰٓ أَن …» set (2:282, 4:3, 5:108, 33:51, 33:59:13:1) reads adnā as 'nearer to bringing about outcome X' = 'more conducive/apt', projecting proximity onto an abstract goal; this is consistent with the near/low-pole nucleus (proximity to a target is still proximity) but the Quran nowhere glosses the metaphor, so the proximity-to-outcome step is a reasoned extension, not a surface-demonstrated identity."
+     }
+    },
+    {
+     "word_ref": "33:59:13:1",
+     "role": "ADVERSARIAL_BOUNDARY",
+     "reason": "«أَدْنَىٰٓ أَن يُعْرَفْنَ»: proximity-to-outcome; but shares its verse with the concrete yudnīna, evidence the tradition felt concrete and abstract as one root.",
+     "evidence_basis": {
+      "kind": "SEMANTIC_EXTENSION_NOT_DERIVED",
+      "statement": "The «أَدْنَىٰٓ أَن …» set (2:282, 4:3, 5:108, 33:51, 33:59:13:1) reads adnā as 'nearer to bringing about outcome X' = 'more conducive/apt', projecting proximity onto an abstract goal; this is consistent with the near/low-pole nucleus (proximity to a target is still proximity) but the Quran nowhere glosses the metaphor, so the proximity-to-outcome step is a reasoned extension, not a surface-demonstrated identity."
+     }
+    }
+   ],
+   "falsification": {
+    "status": "PASSED",
+    "verdict": "SUPPORTED",
+    "falsifiable": true,
+    "distinctiveness_ok": true,
+    "failing_occurrences": [],
+    "tested_material_clusters": [
+     "dnw_C1_finite_verbs",
+     "dnw_C2_active_participle",
+     "dnw_C3_elative_adna",
+     "dnw_C4_dunya_lexicalized"
+    ],
+    "status_rationale": "A genuine refutation was run: the strongest competitor — a two-nucleus split of neutral spatial PROXIMITY (verbs, participles, adnā-of-distance, al-samāʾ al-dunyā) versus evaluative LOWNESS / a frozen al-dunyā = 'world' — was tested against the corpus and returned SUPPORTED for unity, i.e. the split failed. It is dissolved by single-word/single-verse counter-evidence: 67:5 uses al-dunyā spatially ('nearest heaven') and 7:169 puts 'this-world', 'lower-in-value', and the elative into one word (hādhā al-adnā), so a split would have to cut through single words. The claim is falsifiable (a substance-'world' or affect token would break it) and distinctive from the nearness neighbour ق-ر-ب by specifically covering the LOW/LESSER pole (quantity, magnitude, rank) and the lexicalized dunyā. The two soft edges (2:61, adnā-an) are consistent extensions, not failing occurrences requiring a second nucleus."
+   },
+   "independent_ai_semantic_review": {
+    "verdict": "VERIFIED_AT_SCOPE",
+    "authority": "SUPPORTING REVIEW EVIDENCE ONLY — NOT the required independent-human VerificationRecord. Does not satisfy CanonicalizationPolicy condition 6."
+   },
+   "human_decision": {
+    "choices": [
+     "VERIFY_AT_SCOPE",
+     "REJECT",
+     "RETURN_FOR_CORRECTION"
+    ],
+    "decision": null,
+    "reviewer_identity": null,
+    "timestamp": null,
+    "rationale": null,
+    "exact_claim_revision_affirmed": null
+   },
+   "human_must_confirm": [
+    "the persisted claim matches the evidence",
+    "scope is not broader than evidence",
+    "supporting refs genuinely support it",
+    "hard cases/counterevidence are honestly represented",
+    "falsification evidence is material",
+    "no known unresolved seam defeats the claim"
+   ]
+  },
+  {
+   "identity": {
+    "root_arabic": "ف ل ح",
+    "root_buckwalter": "flH",
+    "root_artifact": "artifacts/semantic-campaign/roots/fl_48_.json",
+    "revision_binding": {
+     "note": "File-based campaign: no DB SemanticClaim / integer revision_id exists yet. A materialized SemanticClaim would start at revision_id=1. The human decision must bind to THIS persisted revision identity.",
+     "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+     "batch_id": "batch07-wave4",
+     "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+     "reviewed_research_checkpoint_sha": "0c21d82f12439f7fd57bc4cdcae0eab31befeaaa",
+     "published_main_sha": "999da692ca9006a2f6a055a8eabb0175658ce8ea"
+    },
+    "result_strength": "STRONG",
+    "claim_scope": "REPRESENTATIVE",
+    "claim_scope_kind": "DERIVATIONAL_FAMILY",
+    "contract_type": "ROOT_CONCEPT"
+   },
+   "proposed_canonical_semantic_claim_VERBATIM": {
+    "candidate_root_contribution": "flH is attested Quran-internally ONLY as the Form IV af'ala family (the finite verb aflaHa/yufliHu/tufliHu and its agent-noun al-mufliHun/al-mufliHin), and in this family it denotes, for a person(-class) subject and always intransitively, ATTAINING/COMING OUT WELL — settling into the aimed-at favorable end-state, coming out ahead. It names an outcome/achievement (the result the imperatives aim at), not an action, effort, or feeling; it is evaluative-total (the subject's whole standing) and binary/class-defining (one is of al-mufliHun or is denied it), never gradable, never transitive/causative, never concrete/agrarian. The moral, eschatological, or salvific value everywhere attached to it is supplied by the subject and context, NOT entailed by the lexeme.",
+    "plain_explanation": "Every one of the 40 occurrences is Form IV, in two shapes: 27 verbs and 13 active participles (al-mufliHun / al-mufliHin). Across all four grammatical deployments the meaning holds steady: perfect qad aflaHa = the good subject HAS come out well (believers 23:1, the self-purifier 87:14/91:9); negated lA yufliHu = the wrongdoer-class (mujrimun, Zalimun, kafirun, sAHir, liars-against-God) will NOT come out well; laAAallakum tufliHun = so that you MAY come out well (held out as the hoped-for result of taqwA, jihAd, dhikr, patience, shunning khamr/ribA); and al-mufliHun = the standing designation of those who have attained it. What varies is grammar and rhetorical polarity, not sense. The one sharp test, 20:64 (Pharaoh's sorcerers: 'and whoever gains the upper hand TODAY has aflaHa'), is worldly, time-bounded, and spoken by the condemned party, and the text rebuts it five verses later (20:69, 'the sorcerer does not yufliHu wherever he comes'). That token shows the bare word means only 'attain the aimed-at good outcome' — the salvation-coloring elsewhere is contextual, not lexical. Because the root never appears outside Form IV, this is honestly a claim about the Form-IV family, not about a deeper triangulated root sense.",
+    "layer_separation_note": "flH (Form IV) does NOT entail: (1) moral rectitude, righteousness, or eschatological salvation — proven morally neutral and worldly in 20:64 (condemned speaker, sheer domination, al-yawma); (2) causation/transitivity — no occurrence means 'make X prosper'; all 27 verbs are intransitive-stative, the subject attains it for itself; (3) any concrete/physical/agrarian 'split/cleave/till' sense — zero internal evidence, no Form I or maSdar in the corpus, so the etymological agrarian gloss is excluded; (4) the striving itself — flH is the hoped-for PRODUCT of taqwA/jihAd/dhikr (laAAallakum tufliHun), held apart from the commanded acts, i.e. succeeding, not doing; (5) a mere emotion ('be happy') — it is an objective attained standing (heavy scales, deliverance, prevailing); (6) automatic/guaranteed conferral — laAAalla (x11) and AAasA (28:67) mark it contingent even for believers/penitents; (7) gradation — it is whole-person class membership, no comparative falAH appears."
+   },
+   "coverage": {
+    "expected_occurrence_count": 40,
+    "researched_occurrence_count": 40,
+    "exact_set_match": true,
+    "missing_word_refs": [],
+    "unexpected_word_refs": [],
+    "duplicate_word_refs": []
+   },
+   "supporting_evidence_refs": [
+    "23:1:2:1",
+    "87:14:2:1",
+    "91:9:2:1",
+    "20:64:7:1",
+    "10:17:13:1",
+    "12:23:22:1",
+    "23:117:17:1",
+    "20:69:13:1",
+    "7:8:9:2",
+    "23:102:6:2",
+    "58:22:51:2",
+    "5:90:15:1",
+    "2:189:27:1",
+    "2:5:8:2",
+    "28:67:11:2"
+   ],
+   "counterevidence_refs": [
+    "20:64:7:1",
+    "20:69:13:1"
+   ],
+   "hard_cases": [
+    {
+     "word_ref": "20:64:7:1",
+     "role": "ADVERSARIAL_BOUNDARY",
+     "reason": "The single strongest counterexample: a worldly, time-bounded (al-yawma), opponent-voiced (Pharaoh's sorcerers) affirmative use of aflaHa about sheer domination (istaAAlA), rebutted in-narrative at 20:69. It bounds the gloss by refuting any salvific/eschatological lexicalization while confirming the thin outcome-nucleus.",
+     "evidence_basis": {
+      "kind": "WORLDLY_OPPONENT_VOICED_TIME_BOUNDED_TOKEN",
+      "statement": "20:64:7:1 wa-qad aflaHa l-yawma mani staAAlA is worldly, opponent-voiced, and al-yawma-time-bounded, with an in-narrative rebuttal at 20:69:13:1 (lA yufliHu l-sAHiru Haythu atA); it refutes building salvation into the lexeme and confirms the thin nucleus 'attain the aimed-at favorable outcome.'"
+     }
+    },
+    {
+     "word_ref": "28:67:11:2",
+     "role": "STRUCTURAL_ATYPICALITY",
+     "reason": "Atypical participle framing: AAasA an yakuna mina l-mufliHin makes membership among al-mufliHun merely POSSIBLE even for one who repented, believed, and did good, showing al-mufliHun is a contingent attainment rather than a fixed conferred title.",
+     "evidence_basis": {
+      "kind": "CONTINGENCY_MARKED_NOMINAL_MEMBERSHIP",
+      "statement": "28:67:11:2 frames membership among al-mufliHun with AAasA (only possibly), which — like the x11 laAAallakum tufliHun — marks flH as a contingent, non-guaranteed attainment even for believers/penitents."
+     }
+    }
+   ],
+   "falsification": {
+    "status": "PASSED",
+    "verdict": "SUPPORTED",
+    "falsifiable": true,
+    "distinctiveness_ok": true,
+    "failing_occurrences": [],
+    "tested_material_clusters": [
+     "flH-IV-perfect-affirmed",
+     "flH-IV-negated-wrongdoer",
+     "flH-IV-2ndperson-hoped-or-denied",
+     "flH-IV-participle-designation"
+    ],
+    "status_rationale": "The strongest available refutation — 20:64 (worldly, opponent-voiced, time-bounded) plus its in-narrative rebuttal 20:69 — was run against the thin nucleus and did not break it: the token is absorbed as a worldly instantiation and, decisively, refutes the competing thick salvific gloss instead. distinctiveness_ok is asserted on the strength of four Quran-internally demonstrable negative boundaries (not causative, not agrarian, outcome-not-action, person-subject-intransitive) that make the nucleus non-vacuous rather than a fits-everything abstraction; no occurrence fails the account."
+   },
+   "independent_ai_semantic_review": {
+    "verdict": "VERIFIED_AT_SCOPE",
+    "authority": "SUPPORTING REVIEW EVIDENCE ONLY — NOT the required independent-human VerificationRecord. Does not satisfy CanonicalizationPolicy condition 6."
+   },
+   "human_decision": {
+    "choices": [
+     "VERIFY_AT_SCOPE",
+     "REJECT",
+     "RETURN_FOR_CORRECTION"
+    ],
+    "decision": null,
+    "reviewer_identity": null,
+    "timestamp": null,
+    "rationale": null,
+    "exact_claim_revision_affirmed": null
+   },
+   "human_must_confirm": [
+    "the persisted claim matches the evidence",
+    "scope is not broader than evidence",
+    "supporting refs genuinely support it",
+    "hard cases/counterevidence are honestly represented",
+    "falsification evidence is material",
+    "no known unresolved seam defeats the claim"
+   ]
+  },
+  {
+   "identity": {
+    "root_arabic": "ف و ه",
+    "root_buckwalter": "fwh",
+    "root_artifact": "artifacts/semantic-campaign/roots/fwh.json",
+    "revision_binding": {
+     "note": "File-based campaign: no DB SemanticClaim / integer revision_id exists yet. A materialized SemanticClaim would start at revision_id=1. The human decision must bind to THIS persisted revision identity.",
+     "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+     "batch_id": "batch07-wave5",
+     "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+     "reviewed_research_checkpoint_sha": "0c21d82f12439f7fd57bc4cdcae0eab31befeaaa",
+     "published_main_sha": "999da692ca9006a2f6a055a8eabb0175658ce8ea"
+    },
+    "result_strength": "STRONG",
+    "claim_scope": "UNIVERSAL",
+    "claim_scope_kind": "ROOT_GENERALIZATION",
+    "contract_type": "ROOT_CONCEPT"
+   },
+   "proposed_canonical_semantic_claim_VERBATIM": {
+    "candidate_root_contribution": "The root ف و ه denotes the mouth — the concrete external oral aperture of the face, the boundary-organ between interior (heart/belly) and exterior through which intake passes in (water: 13:14), emission of speech/breath/manifested states passes out (18:5, 3:118, 61:8/9:32), and which can be physically sealed (36:65). It is a neutral, purely nominal body-part noun; it carries no lexical charge of speech-content, truth, falsity, insincerity, or externality-as-such.",
+    "plain_explanation": "Every occurrence of fwh means the physical mouth. Sometimes it is a plain body part (water reaching the mouth in 13:14; hands to mouths in 14:9; mouths sealed in 36:65), and very often it is the aperture from or with which speech issues (words come 'out of' mouths in 18:5; people say things 'with their mouths' in 3:167, 5:41, 9:8, 24:15, 33:4, 9:30; they try to blow out God's light 'with their mouths' in 61:8, 9:32). The frequent hypocrisy/insincerity flavor is not in the word fwh itself: it is built every time by an explicit contrast term — heart (qalb), breast (sadr), knowledge (ilm), or God's truth (haqq). Strip that contrast and the mouth reverts to a neutral organ, as the drinking and gesture verses prove.",
+    "layer_separation_note": "fwh is NOT speech/utterance (qawl and kalima co-occur as distinct items: 33:4 قَوْلُكُم بِأَفْوَٰهِكُمْ, 9:30 قَوْلُهُم بِأَفْوَٰهِهِمْ, 18:5 كَلِمَةً تَخْرُجُ مِنْ أَفْوَٰهِهِمْ). NOT the tongue/articulator lisān (distinguished in one verse, 24:15 بِأَلْسِنَتِكُمْ … بِأَفْوَاهِكُم). NOT the interior cavity jawf (distinguished in one verse, 33:4 جَوْفِهِۦ … بِأَفْوَٰهِكُمْ). NOT the heart/breast qalb/sadr — it is systematically their manifest/outer counterpart (3:118, 3:167, 5:41, 9:8). It does NOT inherently entail falsity, insincerity, or futility (neutral proof: 13:14 water, 14:9 gesture, 36:65 sealing). It does NOT extend to a verb — the root is purely nominal (N ×13)."
+   },
+   "coverage": {
+    "expected_occurrence_count": 13,
+    "researched_occurrence_count": 13,
+    "exact_set_match": true,
+    "missing_word_refs": [],
+    "unexpected_word_refs": [],
+    "duplicate_word_refs": []
+   },
+   "supporting_evidence_refs": [
+    "13:14:18:1",
+    "14:9:24:1",
+    "18:5:12:1",
+    "24:15:5:2",
+    "33:4:22:2",
+    "36:65:4:1",
+    "3:118:19:1",
+    "3:167:25:2",
+    "5:41:13:2",
+    "61:8:5:2",
+    "9:30:13:2",
+    "9:32:6:2",
+    "9:8:12:2"
+   ],
+   "counterevidence_refs": [],
+   "hard_cases": [
+    {
+     "word_ref": "61:8:5:2",
+     "role": "ADVERSARIAL_BOUNDARY",
+     "reason": "Metonymic use: 'mouths' stands for feeble breath/propaganda aimed at extinguishing divine light, bordering on 'by their speech.' Tests whether the root shades from organ to utterance.",
+     "evidence_basis": {
+      "kind": "CONTRASTIVE_METONYMY",
+      "statement": "61:8:5:2 and 9:32:6:2 «يُطْفِـُٔوا۟ نُورَ ٱللَّهِ بِأَفْوَٰهِهِمْ» is metonymic for breath, but the trope depends on the literal image of breath issuing from the mouth-aperture, so it exploits the organ rather than abandoning it and forces no second sense."
+     }
+    },
+    {
+     "word_ref": "9:32:6:2",
+     "role": "ADVERSARIAL_BOUNDARY",
+     "reason": "Parallel to 61:8: the same 'extinguish God's light with their mouths' metonymy, the strongest pull toward an 'utterance/breath' reading.",
+     "evidence_basis": {
+      "kind": "CONTRASTIVE_METONYMY",
+      "statement": "61:8:5:2 and 9:32:6:2 «يُطْفِـُٔوا۟ نُورَ ٱللَّهِ بِأَفْوَٰهِهِمْ» is metonymic for breath, but the trope depends on the literal image of breath issuing from the mouth-aperture, so it exploits the organ rather than abandoning it and forces no second sense."
+     }
+    },
+    {
+     "word_ref": "14:9:24:1",
+     "role": "STRUCTURAL_ATYPICALITY",
+     "reason": "The hand-to-mouth gesture is pragmatically underdetermined by the co-text, making this the least semantically informative token, though the referent 'mouths' is unambiguous.",
+     "evidence_basis": {
+      "kind": "PRAGMATIC_UNDERDETERMINATION",
+      "statement": "In 14:9:24:1 the referent 'mouths' is the physical organ and is lexically secure; only the gesture's meaning is underdetermined, which is pragmatic, not lexical, uncertainty."
+     }
+    }
+   ],
+   "falsification": {
+    "status": "PASSED",
+    "verdict": "SUPPORTED",
+    "falsifiable": true,
+    "distinctiveness_ok": true,
+    "failing_occurrences": [],
+    "tested_material_clusters": [
+     "fwh_physical_aperture",
+     "fwh_locus_of_emission_and_closure",
+     "fwh_instrument_of_speech_bi"
+    ],
+    "status_rationale": "The enriched 'insincere-speech nucleus' competitor was actively tested and refuted by 13:14, 14:9, and 36:65 (pure physical uses with no verbal/inner content), while the concrete 'mouth' claim survives every occurrence. Distinctiveness is affirmed by explicit same-verse contrasts against lisān (24:15), jawf (33:4), and qalb/sadr, ruling out nearest neighbours. No occurrence fails; the claim is genuinely falsifiable (a required-non-organ token would break it) and no such token exists."
+   },
+   "independent_ai_semantic_review": {
+    "verdict": "VERIFIED_AT_SCOPE",
+    "authority": "SUPPORTING REVIEW EVIDENCE ONLY — NOT the required independent-human VerificationRecord. Does not satisfy CanonicalizationPolicy condition 6."
+   },
+   "human_decision": {
+    "choices": [
+     "VERIFY_AT_SCOPE",
+     "REJECT",
+     "RETURN_FOR_CORRECTION"
+    ],
+    "decision": null,
+    "reviewer_identity": null,
+    "timestamp": null,
+    "rationale": null,
+    "exact_claim_revision_affirmed": null
+   },
+   "human_must_confirm": [
+    "the persisted claim matches the evidence",
+    "scope is not broader than evidence",
+    "supporting refs genuinely support it",
+    "hard cases/counterevidence are honestly represented",
+    "falsification evidence is material",
+    "no known unresolved seam defeats the claim"
+   ]
+  },
+  {
+   "identity": {
+    "root_arabic": "غ ل م",
+    "root_buckwalter": "glm",
+    "root_artifact": "artifacts/semantic-campaign/roots/glm.json",
+    "revision_binding": {
+     "note": "File-based campaign: no DB SemanticClaim / integer revision_id exists yet. A materialized SemanticClaim would start at revision_id=1. The human decision must bind to THIS persisted revision identity.",
+     "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+     "batch_id": "batch07-wave1",
+     "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+     "reviewed_research_checkpoint_sha": "0c21d82f12439f7fd57bc4cdcae0eab31befeaaa",
+     "published_main_sha": "999da692ca9006a2f6a055a8eabb0175658ce8ea"
+    },
+    "result_strength": "STRONG",
+    "claim_scope": "REPRESENTATIVE",
+    "claim_scope_kind": "LEXICALIZED_CLASS",
+    "contract_type": "ROOT_CONCEPT"
+   },
+   "proposed_canonical_semantic_claim_VERBATIM": {
+    "candidate_root_contribution": "glm surfaces in the Quran exclusively as one nominal lexeme (sg غُلَام, dual غُلَٰمَيْن, broken pl غِلْمَان) denoting a HUMAN MALE in the young / pre-full-maturity life-stage (a 'boy / youth'). Two features are lexically entailed across all 13 tokens: (1) male sex, and (2) youth bounded above by أَشُدّ (maturity). All richer readings — son/offspring, servant, ward/orphan, merchandise, eschatological servitor, and every moral quality — are supplied by the syntactic frame or context, NOT by the root itself.",
+    "plain_explanation": "Every one of the 13 occurrences names a young male person. When the word means 'son' (the 8 annunciation tokens to Abraham, Zechariah, Mary), the sonship is carried entirely by the surrounding frame — نُبَشِّرُكَ بِ (announce to you), أَهَبَ لَكِ (grant to you), يَكُونُ لِى (be mine) — and the reproductive objections (barren wife 19:8, virgin 19:20, old age 3:40) presuppose a male child produced by generation. Strip the frame and only 'young male' remains: unrelated finders simply say هَٰذَا غُلَٰمٌ of Joseph (12:19); Khidr kills an unrelated boy (18:74); the two غلامان are orphans not yet reached أَشُدّ (18:82); the غِلْمَان serve Paradise's dwellers 'belonging to them' (52:24). The single positive age-anchor is 18:82 (يَبْلُغَآ أَشُدَّهُمَا = they had not yet reached maturity), which fixes غلام as the stage BEFORE maturity. That the same noun takes different external adjectives — عَلِيم, حَلِيم, زَكِيّ, plus the name يَحْيَى — proves those qualities are predicated onto a neutral base noun, not part of it.",
+    "layer_separation_note": "NOT kinship/sonship (52:24 servitors belong to the dwellers, not their sons; 12:19 Joseph is not the finders' son; 18:74 an unrelated roadside boy). NOT servant/slave/merchandise (that loading comes from يَطُوف عَلَيْهِم and بِضَاعَة; against it stand the property-owning orphans of 18:82 and the prophet-sons of the annunciation cluster). NOT female (13/13 male). NOT an adult man — bounded above by أَشُدّ (18:82) and contrasted with بَشَر, the mature generative male, in 19:20. NOT morally valenced (ranges over زَكِيّ/عَلِيم/حَلِيم children and the boy killed to forestall طُغْيَان/كُفْر in 18:74/18:80). NO verbal/eventive sense is recoverable: the root is purely nominal, so no 'core action' claim is licensed. Number (sg/dual/pl) is grammatical, not sense-forming."
+   },
+   "coverage": {
+    "expected_occurrence_count": 13,
+    "researched_occurrence_count": 13,
+    "exact_set_match": true,
+    "missing_word_refs": [],
+    "unexpected_word_refs": [],
+    "duplicate_word_refs": []
+   },
+   "supporting_evidence_refs": [
+    "18:82:4:2",
+    "19:20:5:1",
+    "12:19:10:1",
+    "18:74:5:1",
+    "52:24:3:1"
+   ],
+   "counterevidence_refs": [],
+   "hard_cases": [
+    {
+     "word_ref": "52:24:3:1",
+     "role": "ADVERSARIAL_BOUNDARY",
+     "reason": "Sole plural and sole eschatological-servitor use; it kills the strongest rival account ('glm = son/offspring') because these young males belong to and serve the dwellers without being their sons.",
+     "evidence_basis": {
+      "kind": "DISTRIBUTIONAL_CONTRAST",
+      "statement": "At 52:24:3:1 the ghilman are servitors 'belonging to' (lahum) the dwellers of Paradise, not their offspring, defeating any lexicalized son/kinship reading of the root."
+     }
+    },
+    {
+     "word_ref": "15:53:6:2",
+     "role": "ADVERSARIAL_BOUNDARY",
+     "reason": "Unborn referent with a mature epithet is the point of maximum pressure on the age-stage feature, showing the youth component is proleptic in the annunciation cluster.",
+     "evidence_basis": {
+      "kind": "BLEACHED_FEATURE",
+      "statement": "At 15:53:6:2 and 51:28:8:2 the ghulam is unborn and carries a mature epithet (aliim 'knowing', reinforced by haliim 'forbearing' at 37:101:2:2), so the youth/age-stage feature is bleached and proleptic here rather than directly demonstrated."
+     }
+    },
+    {
+     "word_ref": "18:80:2:2",
+     "role": "ADVERSARIAL_BOUNDARY",
+     "reason": "Moral-religious agency (طُغْيَان, كُفْر) ascribed to a غلام tests the upper boundary of 'youth'; the one genuinely under-determined variable is the precise ceiling.",
+     "evidence_basis": {
+      "kind": "UPPER_BOUND_TENSION",
+      "statement": "At 18:80:2:2 the ghulam is credited with capacity for tughyan (rebellion) and kufr (disbelief), placing him at the agency-bearing adolescent edge of youth; bounded by 18:82's pre-ashudd anchor this calibrates rather than breaks the youth feature."
+     }
+    }
+   ],
+   "falsification": {
+    "status": "PASSED",
+    "verdict": "SUPPORTED",
+    "falsifiable": true,
+    "distinctiveness_ok": true,
+    "failing_occurrences": [],
+    "tested_material_clusters": [
+     "annunciation_male_offspring",
+     "narrative_present_young_male",
+     "eschatological_servitors"
+    ],
+    "status_rationale": "An adversarial pass attacked the nucleus 'young human male, pre-maturity' across all three clusters. Maleness held 13/13 (masculine agreement, son-presupposing objections, no female token). The youth feature is directly anchored by 18:82 (أَشُدّ) and contradicted by no occurrence; the two rival enrichments cancel (52:24 defeats 'son', the unborn-plus-mature-epithet tokens defeat age-criteriality), leaving the thin nucleus with zero failing occurrences. The claim is falsifiable (a female or mature-adult غلام would break it) and distinct from neighbours (kinship terms and بَشَر). The only reservation is bounded underdetermination of the precise upper age limit, which is a strength rider, not a refutation."
+   },
+   "independent_ai_semantic_review": {
+    "verdict": "VERIFIED_AT_SCOPE",
+    "authority": "SUPPORTING REVIEW EVIDENCE ONLY — NOT the required independent-human VerificationRecord. Does not satisfy CanonicalizationPolicy condition 6."
+   },
+   "human_decision": {
+    "choices": [
+     "VERIFY_AT_SCOPE",
+     "REJECT",
+     "RETURN_FOR_CORRECTION"
+    ],
+    "decision": null,
+    "reviewer_identity": null,
+    "timestamp": null,
+    "rationale": null,
+    "exact_claim_revision_affirmed": null
+   },
+   "human_must_confirm": [
+    "the persisted claim matches the evidence",
+    "scope is not broader than evidence",
+    "supporting refs genuinely support it",
+    "hard cases/counterevidence are honestly represented",
+    "falsification evidence is material",
+    "no known unresolved seam defeats the claim"
+   ]
+  }
+ ]
+}
