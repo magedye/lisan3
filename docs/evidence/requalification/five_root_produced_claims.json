@@ -1,0 +1,415 @@
+{
+  "artifact": "five_root_claim_content",
+  "note": "Full produced Research Judgment content per root.",
+  "roots": {
+    "ESw": {
+      "claim_id": "jud_9506cecf",
+      "revision_id": 1,
+      "claim_scope_kind": "LEXICALIZED_CLASS",
+      "research_state": "PREFERRED",
+      "result_strength": "STRONG",
+      "claim_scope": "REPRESENTATIVE",
+      "canonical_state": "NOT_CANONICAL",
+      "verification_state": "NOT_REQUIRED",
+      "falsification_status": "PASSED",
+      "sampling_basis": "All 12 occurrences are a single fully-lexicalized noun (عَصَا / عِصِيّ, pos_tag N throughout) and every attestation sits inside the Moses/magicians narrative cycle (Ṭā Hā 20, Shuʿarāʿ 26, Naml 27, Qaṣaṣ 28, Aʿrāf 7, Baqara 2). The packet contains no verbal, participial, or abstract derivation of the root. The invariant is therefore complete and STRONG for THIS lexeme, but the sample cannot license a UNIVERSAL claim about the whole root's semantics: it is one lexeme in one narrative genre, so scope is capped at REPRESENTATIVE.",
+      "preferred_conclusion": "Across all 12 occurrences the root ع ص و contributes exactly one concrete count noun: عَصَا (sg.) / عِصِيّ (pl.) = a rigid, elongated, hand-held rod/staff. The referent is internally fixed by 20:18:3:1, where Moses defines it by ordinary uses (leaning upon it أَتَوَكَّؤُا, beating down foliage for his flock أَهُشُّ, and other purposes). Every other occurrence is consistent with this same physical object: it is cast down (object of أَلْقِ/أَلْقَىٰ at 26:32, 26:45, 27:10, 28:31, 7:107, 7:117, and pl. 26:44), or used to strike a target (اضْرِب بِعَصَاكَ at 26:63, 2:60, 7:160), or held generically by the magicians (pl. عِصِيّ at 20:66, 26:44). The root supplies ONLY the physical-implement concept 'staff'; all miraculous transformations and effects are supplied by the governing verbs and narrative frame, not by the root.",
+      "root_concept": "A rigid, elongated, hand-held rod/staff — the concrete count noun عَصَا / عِصِيّ (grasped, leaned upon, cast, or struck-with).",
+      "plain_explanation": "In these 12 verses the root always means a physical walking-stick/rod that a person holds. Verse 20:18 spells out its plain uses (Moses leans on it and knocks down leaves for his sheep). Elsewhere it is thrown down or used to hit the sea or a rock. The dramatic results (it turns into a snake, swallows the magicians' tricks, splits the sea, brings out water) come from what the verse says happens to the staff, not from the word 'staff' itself. The magicians also have 'staffs' (plural), which shows the word is just an ordinary object, not something magical or unique to Moses.",
+      "semantic_boundary": "The sense is bounded as a RIGID rod, explicitly contrasted with flexible rope: عِصِيّ is coordinated with but distinct from حِبَال ('ropes') at 20:66:6:2 and 26:44:3:2. It is an ORDINARY physical tool (fixed by the mundane use-list at 20:18:3:1), not an inherently miraculous or Moses-specific item (the magicians own a plural set). It excludes any abstract, verbal, or figurative value — none is attested. It also excludes the near-homograph root ع ص ي (disobedience, final radical yāʿ), which is a different root and contributes nothing here.",
+      "layer_attribution": {
+        "root": "Contributes the concrete physical-object concept: a rigid hand-held rod/staff (عَصَا / عِصِيّ). This is the invariant surviving in all 12 occurrences.",
+        "derivation": "Only inflectional/number morphology: singular عَصَا with possessive suffixes (-ya 20:18, -hu 26:32/26:45/7:107, -ka 26:63/27:10/28:31/2:60/7:117/7:160) vs. broken plural عِصِيّ (20:66, 26:44). Number and person do not split the sense.",
+        "construction": "Governing verbs supply the action, not the noun: أَلْقِ/أَلْقَىٰ 'cast down' (26:32, 26:44, 26:45, 27:10, 28:31, 7:107, 7:117); اضْرِب بِ- 'strike with' (26:63, 2:60, 7:160); أَتَوَكَّؤُا / أَهُشُّ 'lean on / beat foliage' (20:18).",
+        "context": "Narrative frame supplies all extraordinary outcomes external to the root: transformation into serpent (26:32, 7:107) or quivering snake (27:10, 28:31), swallowing the illusions (26:45, 7:117), splitting the sea (26:63), gushing springs from rock (2:60, 7:160), and the magicians' illusion of motion (20:66)."
+      },
+      "rejection_condition": {
+        "challenging_finding": "An ESw (ع ص و) occurrence whose denotation is NOT a physical staff/rod — specifically a verbal form, verbal noun, or participle of this root, or an abstract/relational sense — that shares the root but cannot be reduced to 'rigid hand-held rod'.",
+        "search_location": "ESw occurrences and derivational forms outside this narrative-restricted packet; any non-nominal (pos_tag != N) surface form of ع ص و.",
+        "verification_method": "Check pos_tag and induce the referent strictly from the new occurrence's predicates and coordinates, as done here for the cast/strike/lean frames; confirm it is not reducible to the concrete rod.",
+        "confounder_control": "Do not admit forms of the distinct homograph root ع ص ي (disobedience, final radical yāʿ, buckwalter ESy); confirm the final radical is wāw (و) before counting a form as ESw.",
+        "failure_consequence": "A genuine non-staff ESw form would fracture the single-lexeme nucleus and either introduce a second lexical class or force an abstract root-level reading, invalidating the claim that the root's demonstrated contribution is simply the concrete staff."
+      },
+      "supporting_evidence": [
+        "token:20:18:3:1",
+        "token:20:66:6:2",
+        "token:26:44:3:2",
+        "token:26:32:2:1",
+        "token:26:45:3:1",
+        "token:26:63:6:2",
+        "token:2:60:7:2",
+        "token:7:160:14:2",
+        "token:27:10:2:1",
+        "token:28:31:3:1",
+        "token:7:107:2:1",
+        "token:7:117:6:1"
+      ],
+      "counterevidence": [],
+      "unresolved_cases": [],
+      "hard_cases": [
+        "20:66:6:2",
+        "26:44:3:2",
+        "26:63:6:2",
+        "20:18:3:1"
+      ],
+      "strongest_counterexample": "None. No occurrence resists the concrete-noun reading. The nearest stressors — the plural magicians' staffs (20:66:6:2, 26:44:3:2) and the strike-to-produce-effect cases (26:63:6:2, 2:60:7:2, 7:160:14:2) — still denote ordinary physical rods, with every extraordinary effect predicated separately (e.g., فَٱنفَلَقَ 'and it split' at 26:63; يُخَيَّلُ ... مِن سِحْرِهِمْ 'made to appear ... by their sorcery' at 20:66).",
+      "strongest_competitor": "An abstracted functional/root value beyond the concrete object — e.g., reading an 'implement one grasps/leans-on/strikes-with' abstraction (generalized from the 20:18 use-list) or loading the miracle/transformation into the root. Rejected: the use-list is the internal semantics of the SAME lexeme, not a separable class, and the plural mundane staffs at 20:66/26:44 plus the externally-predicated outcomes show the extraordinary meaning is constructional/contextual, never lexical.",
+      "reopen_conditions": [
+        "A derivationally distinct ESw form (verb, verbal noun, or participle) appears, permitting a test of whether an abstract root-level core underlies عَصَا.",
+        "An ESw occurrence surfaces outside the Moses/magicians narrative cycle, testing whether the concrete-staff sense holds beyond this genre.",
+        "Any ESw occurrence with pos_tag other than N or a non-staff denotation is identified."
+      ],
+      "research_completeness": {
+        "claim_scope": "REPRESENTATIVE",
+        "occurrence_unit": "word_ref",
+        "eligible_occurrence_count": 12,
+        "evidenced_occurrence_count": 12,
+        "index_complete": true,
+        "deep_analysis_complete": true,
+        "sampling_basis_recorded": true,
+        "sufficient_for_claim": true,
+        "derived_by": "ResearchJudgmentService"
+      }
+    },
+    "dnw": {
+      "claim_id": "jud_6733070a",
+      "revision_id": 1,
+      "claim_scope_kind": "ROOT_GENERALIZATION",
+      "research_state": "PREFERRED",
+      "result_strength": "MODERATE",
+      "claim_scope": "REPRESENTATIVE",
+      "canonical_state": "NOT_CANONICAL",
+      "verification_state": "NOT_REQUIRED",
+      "falsification_status": "PASSED",
+      "sampling_basis": "The nucleus is induced from the productive, confounder-free minority (~20 tokens) that spans four independent form-classes and both spatial and scalar frames, NOT from the bleached majority. Concrete verbs/participles (6): 53:8, 33:59:8, 55:54, 69:23, 76:14, 6:99. Spatial elatives fixed by overt in-verse contrast (6): 8:42 (dunyaa vs quSwaa), 37:6 / 41:12 / 67:5 (nearest heaven), 30:3, 53:9. Scalar elatives with numeric/degree antonyms (3): 32:21 (adnaa vs akbar), 58:7 (adnaa vs akthar), 73:20 (less than two-thirds). Elative↔dunyaa bridge (1): 7:169 (عرض هذا الأدنى parallel to متاع الدنيا). The remaining ~110 tokens are the lexicalized ٱلْحَيَوٰة ٱلدُّنْيَا / ٱلدُّنْيَا-as-substantive mass (e.g. 10:23, 47:36, 57:20, 2:114, 3:22), where the root is bleached; they are treated as confirmations of the etymon but NOT as the sampling base, to avoid circularity. Scope is REPRESENTATIVE rather than UNIVERSAL precisely because the generalization is soundly established on this cross-cutting sample and holds as the root's etymological contribution everywhere, but is NOT the live clause-level meaning of the dominant lexicalized mass.",
+      "preferred_conclusion": "The root د ن و contributes a single coherent nucleus: NEARNESS / PROXIMITY — \"near, close, low, within reach\" — whose elative (أدنى) projects onto non-spatial scales as \"lower / lesser / fewer.\" This invariant is directly demonstrated by four independent, internally-bridged form-classes in the packet: the finite verb of physical approach دَنَا (53:8:2:1 دَنَا فَتَدَلَّىٰ), the form-IV يُدْنِينَ \"draw/lower [garments]\" (33:59:8:1), the participle دَانٍ/دَانِيَة for fruit and shade that is close/low-hanging/reachable (55:54:9:1, 69:23:2:1, 76:14:1:2, 6:99:24:1), and the spatial elative fixed by overt in-packet contrast — ٱلْعُدْوَة ٱلدُّنْيَا \"the NEARER bank\" opposed to ٱلْقُصْوَىٰ \"the farther\" (8:42:4:2), ٱلسَّمَآء ٱلدُّنْيَا \"the nearest heaven\" (37:6, 41:12, 67:5), أَدْنَى ٱلْأَرْضِ (30:3), أَوْ أَدْنَىٰ (53:9). No occurrence contradicts \"near/low.\" However, the root's contribution is the ONLY thing it supplies; three other layers are demonstrably NOT the root: (a) the heavily lexicalized feminine elative ٱلدُّنْيَا / ٱلْحَيَوٰة ٱلدُّنْيَا = \"the present world/life\" (~110 of 133 tokens), where the \"world\" sense is minted by the fixed collocation plus the ٱلْـَٔاخِرَة antithesis, not freshly by the root — the root there is bleached to an inert \"nearer (life)\"; (b) the modal \"more apt/likely/conducive\" reading, supplied by the أَدْنَىٰ + أَن construction (4:3:26:1, 2:282:93:2, 5:108:2:1, 33:51:17:1, 33:59:13:1); (c) the \"worldly/transient/deceptive\" connotations, supplied by predicates (لَعِبٌ وَلَهْوٌ، مَتَٰعُ ٱلْغُرُورِ، زِينَة), not by د ن و. So the nucleus generalizes across the root as its etymological contribution, but is the LIVE clause-level meaning only in the productive minority.",
+      "root_concept": "NEARNESS / PROXIMITY (spatial: near, close, low, within reach), elative projecting to LOWER / LESSER / FEWER",
+      "plain_explanation": "The root د ن و means \"to be near / close / low / within reach.\" You can see it plainly where fruit hangs low and reachable (55:54, 69:23, 76:14, 6:99), where someone \"drew near\" (53:8), and where \"the nearer bank\" is set against \"the farther bank\" (8:42) and \"the nearest heaven\" is named (37:6, 41:12, 67:5). Its comparative form أدنى then stretches naturally to \"lower / lesser / fewer\" on any scale (fewer than that, 58:7; less than two-thirds of the night, 73:20; the lesser punishment vs the greater, 32:21). Two things that look like the root's meaning are actually added by grammar and habit, not by the root: the phrase \"أدنى + that...\" meaning \"more likely/fitting\" (the أن-clause does that work), and the fixed word الدنيا = \"this present world\" (its \"world\" meaning comes from always being paired with \"life\" and contrasted with \"the Hereafter\"). Because that fixed \"this world\" word is the overwhelming majority of uses and its \"nearness\" flavor is worn away, we affirm the nucleus strongly for the productive family but stop short of claiming it is the operative meaning everywhere.",
+      "semantic_boundary": "IN (the root's own contribution): spatial proximity/closeness, low position, reachability (دَنَا, يُدْنِينَ, دَانٍ/دَانِيَة); and the elative projection of \"near/low\" onto degree/quantity scales — \"nearer, lower, lesser, fewer\" (أدنى: 30:3, 8:42, 53:9, 32:21, 58:7, 73:20). OUT (supplied by other layers, must not be loaded onto the root): the substantive \"this present world/life\" (lexicalization of ٱلدُّنْيَا + collocation with ٱلْحَيَوٰة + antithesis to ٱلْـَٔاخِرَة); the modal \"more apt/likely/conducive\" (the أَدْنَىٰ + أَن construction); and evaluative \"worldly/vain/deceptive/transient\" (the predicates لعب/لهو/غرور/زينة/متاع). BORDERLINE: the value sense \"inferior/meaner\" in 2:61 (أدنى opposed to خير) — reachable from the root only via \"low end of a scale\" (parallel to 32:21 الأدنى↔الأكبر), but on packet evidence alone it cannot be excluded that this token belongs to a homophonous root of baseness folded under dnw; it is written identically (أدنى), so no in-packet morphology discriminates it.",
+      "layer_attribution": {
+        "root": "NEARNESS/PROXIMITY -> LOW/LESSER: the invariant etymon 'near, close, low, within reach', demonstrated by 53:8 (verb 'drew near'), 33:59:8 (form-IV 'draw/lower'), 55:54/69:23/76:14/6:99 (participle 'low-hanging/reachable'), and spatially-contrasted elatives 8:42 (dunyaa vs quSwaa), 37:6/41:12/67:5 (nearest heaven), 30:3, 53:9",
+        "form_derivation": "the elative pattern 'afʿal (أَدْنَىٰ / feminine ٱلدُّنْيَا) supplies the comparative/superlative grading 'nearer/lower/lesser/fewer' across scales: 32:21 (lesser punishment vs greater), 58:7 (fewer vs more), 73:20 (less than two-thirds)",
+        "construction": "أَدْنَىٰ + أَن-clause supplies the modal 'more apt/likely/conducive that...': 4:3:26:1, 2:282:93:2, 5:108:2:1, 33:51:17:1, 33:59:13:1 — the 'likelihood' is the frame's, not the root's",
+        "collocation_lexicalization": "ٱلْحَيَوٰة + ٱلدُّنْيَا as a frozen collocation, plus the ٱلدُّنْيَا/ٱلْـَٔاخِرَة antithesis, supplies the substantive gloss 'the present world/life' (~110 tokens, e.g. 47:36, 57:20, 2:114); the root's own share there is only the bleached 'nearer (life/abode)'",
+        "predicate_context": "adjacent predicates (لَعِبٌ وَلَهْوٌ 47:36/57:20/6:32; مَتَٰعُ ٱلْغُرُورِ 3:185/57:20; زِينَة; غَرَّتْهُمُ) supply 'vain/transient/deceptive/adorned' connotations — NOT contributed by د ن و"
+      },
+      "rejection_condition": {
+        "challenging_finding": "An occurrence inside the concrete/spatial cluster whose discriminating frame is INCOMPATIBLE with 'near/low' — e.g., if ٱلْعُدْوَة ٱلدُّنْيَا (8:42) were contrasted with something other than ٱلْقُصْوَىٰ 'the farther', if دَانِيَة fruit/shade (69:23, 76:14, 6:99) were shown as high/distant rather than low/reachable, if أَدْنَى ٱلْأَرْضِ (30:3) or ٱلسَّمَآء ٱلدُّنْيَا (37:6/41:12/67:5) required a non-spatial reading, OR if in-packet morphology showed the concrete verb دَنَا and the elative أَدْنَىٰ to derive from distinct roots.",
+        "search_location": "The productive, non-lexicalized anchors: 53:8:2:1, 33:59:8:1, 55:54:9:1, 69:23:2:1, 76:14:1:2, 6:99:24:1, 8:42:4:2, 30:3:2:1, 37:6:4:2, 41:12:13:2, 67:5:4:2, 53:9:5:1.",
+        "verification_method": "For each anchor, read the explicit antonym or spatial frame in the verse text and confirm it selects 'near/low/reachable' (e.g. dunyaa vs quSwaa in 8:42; danin vs the elevated couches in 55:54; qinwaan daaniyah as low-hanging clusters in 6:99).",
+        "confounder_control": "Strip the two non-root layers before judging: (1) the أَدْنَىٰ+أَن construction, which alone yields 'more likely/apt' (do not credit that to the root); (2) the ٱلْحَيَوٰة collocation + ٱلْـَٔاخِرَة antithesis, which alone yields 'this world' (do not credit that to the root). Judge the nucleus only on tokens where neither confounder is present.",
+        "failure_consequence": "If the concrete anchors did NOT converge on 'near/low', the root generalization would collapse to the competitor's outcome — a lexicalized ٱلدُّنْيَا class beside a separate nearness family, with no unified root claim (UNRESOLVED/WEAK)."
+      },
+      "supporting_evidence": [
+        "token:53:8:2:1",
+        "token:33:59:8:1",
+        "token:55:54:9:1",
+        "token:69:23:2:1",
+        "token:76:14:1:2",
+        "token:6:99:24:1",
+        "token:8:42:4:2",
+        "token:37:6:4:2",
+        "token:41:12:13:2",
+        "token:67:5:4:2",
+        "token:30:3:2:1",
+        "token:53:9:5:1",
+        "token:32:21:4:2",
+        "token:58:7:26:1",
+        "token:73:20:6:1",
+        "token:7:169:10:2"
+      ],
+      "counterevidence": [
+        "token:2:61:27:1",
+        "token:47:36:3:2",
+        "token:57:20:4:2",
+        "token:2:282:93:2",
+        "token:4:3:26:1",
+        "token:33:51:17:1",
+        "token:33:59:13:1",
+        "token:5:108:2:1"
+      ],
+      "unresolved_cases": [
+        "2:61:27:1",
+        "4:3:26:1",
+        "2:282:93:2",
+        "5:108:2:1",
+        "33:51:17:1",
+        "33:59:13:1"
+      ],
+      "hard_cases": [
+        "2:61:27:1",
+        "33:51:17:1",
+        "2:282:93:2",
+        "47:36:3:2",
+        "57:20:4:2",
+        "58:7:26:1"
+      ],
+      "strongest_counterexample": "2:61:27:1 — ٱلَّذِى هُوَ أَدْنَىٰ set directly against ٱلَّذِى هُوَ خَيْرٌ: the discriminating antonym is quality/value (\"inferior/meaner\"), not distance or height. A purely spatial-nearness nucleus reaches this only by the inferential leap near→low→base, and the token cannot be excluded (from packet evidence alone) from a homophonous baseness root d-n-' folded under dnw. It does not overturn the nucleus (the low-end-of-scale reading is continuous with 32:21 الأدنى↔الأكبر), but it is where the nucleus is least directly demonstrated. The complementary scope-limiting counterexample is the ~110-token lexicalized ٱلْحَيَوٰة ٱلدُّنْيَا mass (e.g. 47:36:3:2, 57:20:4:2) where nearness is synchronically inert and the operative meaning is supplied by the ٱلْـَٔاخِرَة antithesis.",
+      "strongest_competitor": "A two-unit account instead of one root generalization: (i) a live NEARNESS family (verb دنا, form-IV يدنين, participle دانٍ/دانية, spatial elatives) plus (ii) a frozen substantive ٱلدُّنْيَا = \"this present world\" whose tie to \"near\" is bleached and whose meaning is carried by the ٱلْـَٔاخِرَة antithesis — with the value-sense أدنى (2:61) possibly belonging to a homophonous root of baseness (d-n-'). On this rival, there is no single root-level meaning, only a lexicalized class beside a nearness family. It is the strongest competitor because it correctly captures that the dominant mass is bleached; it is rejected as the SOLE account because the packet supplies transparent bridges (7:169 عرض هذا الأدنى parallel to متاع الدنيا; 8:42 dunyaa used spatially vs quSwaa; السماء الدنيا = nearest heaven) that reduce even ٱلدُّنْيَا to the feminine elative \"the nearer (one),\" so the two units share one etymon rather than being unrelated roots.",
+      "reopen_conditions": [
+        "Packet-internal or corpus-level orthographic/morphological evidence showing 2:61 أدنى (and any value-sense token) derives from a distinct root of baseness (d-n-'), which would remove the value outlier and could re-tighten the spatial nucleus toward UNIVERSAL for the remainder.",
+        "A morphological tag distinguishing ٱلدُّنْيَا-the-lexicalized-substantive from the transparent elative, which would let the lexicalized class be split off cleanly and the productive family re-scoped.",
+        "Discovery of any occurrence whose frame actively contradicts 'near/low' (currently none in the packet), which would move the state toward UNRESOLVED.",
+        "A decision at governance level to report the honest gloss unit as a separate LEXICALIZED_CLASS for ٱلدُّنْيَا='this world' alongside this root generalization, which this judgment recommends and would formalize."
+      ],
+      "research_completeness": {
+        "claim_scope": "REPRESENTATIVE",
+        "occurrence_unit": "word_ref",
+        "eligible_occurrence_count": 133,
+        "evidenced_occurrence_count": 133,
+        "index_complete": true,
+        "deep_analysis_complete": true,
+        "sampling_basis_recorded": true,
+        "sufficient_for_claim": true,
+        "derived_by": "ResearchJudgmentService"
+      }
+    },
+    "flH": {
+      "claim_id": "jud_50b6a890",
+      "revision_id": 1,
+      "claim_scope_kind": "DERIVATIONAL_FAMILY",
+      "research_state": "PREFERRED",
+      "result_strength": "MODERATE",
+      "claim_scope": "REPRESENTATIVE",
+      "canonical_state": "NOT_CANONICAL",
+      "verification_state": "NOT_REQUIRED",
+      "falsification_status": "PASSED",
+      "sampling_basis": "The 40 packet occurrences are exclusively Form IV: ~27 finite verbs (أَفْلَحَ / يُفْلِحُ / يُفْلِحُونَ / تُفْلِحُونَ / تُفْلِحُوا) and 13 Form IV active participles (ٱلْمُفْلِحُونَ / ٱلْمُفْلِحِينَ). No Form I and no concrete/agrarian derivation is attested. The sample therefore represents only the Form IV (أَفْلَحَ / مُفْلِح) derivational family and cannot be projected onto the root's full derivational range — hence REPRESENTATIVE scope tied to this family rather than UNIVERSAL/ROOT_GENERALIZATION.",
+      "preferred_conclusion": "Within the Form IV family (أَفْلَحَ / يُفْلِحُ / تُفْلِحُونَ and the active participle ٱلْمُفْلِحُونَ), which is the ONLY form attested across all 40 occurrences, ف ل ح contributes a single valence-neutral nucleus: \"to attain the desired favorable terminal outcome — to succeed, prosper, thrive, come out ahead.\" The finite verb asserts, denies, or hopes for that outcome for a stated class of persons; the participle names the party that attains it. The predicate is polar and the same abstract notion is applied with opposite polarity to good and bad referents: affirmed of the righteous/prevailing (قَدْ أَفْلَحَ ٱلْمُؤْمِنُونَ 23:1; قَدْ أَفْلَحَ مَن تَزَكَّىٰ 87:14; قَدْ أَفْلَحَ ٱلْيَوْمَ مَنِ ٱسْتَعْلَىٰ 20:64) and denied of wrongdoer classes (لَا يُفْلِحُ ٱلْمُجْرِمُونَ 10:17; ٱلظَّٰلِمُونَ 12:23, 28:37, 6:21, 6:135; ٱلْكَٰفِرُونَ 23:117, 28:82; ٱلسَّاحِرُونَ/ٱلسَّاحِرُ 10:77, 20:69; fabricators 10:69, 16:116). Whether the success is worldly (20:64 competitive victory; 20:69 a craft succeeding; 18:20 escaping coercion) or eschatological (heavy scales 7:8, 23:102; gardens/ḥizb Allāh 58:22) is supplied by frame and referent, and the moral loading is delivered by complement clauses (تَزَكَّىٰ 87:14, زَكَّىٰهَا 91:9, ٱسْتَعْلَىٰ 20:64), NOT by the root. The eschatological/salvation coloring is therefore contextual, not root-borne. The claim is scoped to this Form IV derivational family and NOT projected to the root at large, because zero morphological contrast is available to isolate a root-level contribution distinct from the Form IV stem.",
+      "root_concept": "Attain the desired favorable outcome; succeed, prosper, thrive, come out ahead (Form IV attainment predicate).",
+      "plain_explanation": "Every one of the 40 places uses one Arabic verb-shape (Form IV): either the verb \"aflaḥa/yufliḥu\" (succeed/come out well) or its doer-noun \"al-mufliḥūn\" (the successful ones). The shared meaning is simply \"to attain the good outcome one is after.\" The Qurʾan uses it like a scoreboard: it is DENIED to wrongdoers, liars, sorcerers, disbelievers, and oppressors, and AFFIRMED (or hoped for) of believers, the God-fearing, and those who purify themselves. Crucially, the same word is used for a purely worldly win — Pharaoh's magicians say \"whoever prevails today has aflaḥa\" (20:64) — so the word itself does not mean \"salvation.\" When the meaning looks religious, that comes from the surrounding words (e.g., \"who purifies himself\" in 87:14), not from ف ل ح. Because the packet shows only this one verb-shape and never the concrete/agricultural sense a dictionary would list for these letters, we can confidently describe what THIS family means but cannot claim it for the root in general.",
+      "semantic_boundary": "INSIDE the nucleus: attaining/achieving a wanted favorable end-state — succeeding, prospering, thriving, prevailing, coming out well — asserted, denied, or hoped for of a class of persons (all 40 occurrences fit). OUTSIDE / not attributable to the root from this packet: (1) any specifically eschatological \"salvation/felicity in the Hereafter\" content — this is frame/referent/complement-driven (blocked by 20:64, 20:69, 18:20); (2) any moral valence (positive vs negative) — supplied by the subject-referent and purpose clause, since the same predicate takes opposite polarity; (3) the concrete/agrarian sense (till/cleave/split the soil) that the letters ف-ل-ح can bear — entirely absent here; (4) any Form I or non-Form-IV root-level generalization — no morphological contrast exists to license it.",
+      "layer_attribution": {
+        "root": "Contributes the bare, valence-neutral notion of attaining a desired favorable outcome / coming out well — the invariant shared by every occurrence (e.g., 23:1, 20:64, 10:17, 7:8).",
+        "form": "Form IV (أَفْلَحَ, causative/attainment stem) realizes this as 'attain/achieve that outcome'; it is the ONLY form attested, so root and Form IV cannot be separated on this evidence.",
+        "derivation": "The Form IV active participle ٱلْمُفْلِحُونَ/ٱلْمُفْلِحِينَ names the attaining party (2:5, 23:102, 7:8, 58:22, 59:9, 7:157); recurrent formulaic frame أُو۟لَٰٓئِكَ هُمُ ٱلْمُفْلِحُونَ.",
+        "construction_context": "Polarity (negation لَا يُفْلِحُ / لَن تُفْلِحُوا vs affirmation قَدْ أَفْلَحَ), purposive mood (لَعَلَّكُمْ تُفْلِحُونَ, ~11x), the worldly-vs-eschatological reference, and all moral content (e.g., تَزَكَّىٰ 87:14, ٱسْتَعْلَىٰ 20:64, heavy scales 7:8/23:102) come from frame, referent, and complement — NOT from the root."
+      },
+      "rejection_condition": {
+        "challenging_finding": "A ف ل ح occurrence (in this packet or the wider corpus) whose sense cannot be read as 'attain a favorable outcome / come out well' — concretely, a Form I or non-Form-IV derivative carrying the physical/agrarian sense (to till, cleave, or split the soil; a plowman/cultivator), OR a Form-IV token locked to Hereafter-only reference in a frame that excludes any worldly 'coming out well' reading.",
+        "search_location": "Corpus occurrences of ف ل ح outside the attested Form IV family (any Form I or other derivation), and the immediate syntactic frame/complement of each such token.",
+        "verification_method": "Check the qac_form tag and the governing clause: if the form is non-IV and the predicate denotes a concrete physical action rather than attaining an outcome, the unified nucleus is broken and scope must drop to LOCAL / UNRESOLVED at root level; if a Form-IV token resists the thin 'come out well' gloss, the family nucleus itself is falsified.",
+        "confounder_control": "Separate root contribution from frame: strip complement clauses (e.g., تَزَكَّىٰ, ٱسْتَعْلَىٰ) and polarity/mood before judging, so eschatological or moral coloring supplied by context is not mistaken for a root-level meaning.",
+        "failure_consequence": "If such a finding appears, the single-nucleus claim collapses: the root would span multiple unbridged lexical classes (physical vs. success), Form-IV 'success' would be a specialized derivation, and this judgment must be reissued as LOCAL scope or UNRESOLVED at the root level."
+      },
+      "supporting_evidence": [
+        "token:23:1:2:1",
+        "token:87:14:2:1",
+        "token:91:9:2:1",
+        "token:20:64:7:1",
+        "token:10:17:13:1",
+        "token:10:69:9:1",
+        "token:10:77:10:1",
+        "token:12:23:22:1",
+        "token:16:116:22:1",
+        "token:23:117:17:1",
+        "token:28:37:17:1",
+        "token:28:82:25:1",
+        "token:6:21:13:1",
+        "token:6:135:17:1",
+        "token:22:77:11:1",
+        "token:2:189:27:1",
+        "token:3:130:12:1",
+        "token:3:200:10:1",
+        "token:5:35:13:1",
+        "token:5:90:15:1",
+        "token:5:100:15:1",
+        "token:62:10:15:1",
+        "token:8:45:12:1",
+        "token:7:69:27:1",
+        "token:24:31:78:1",
+        "token:2:5:8:2",
+        "token:31:5:8:2",
+        "token:3:104:14:2",
+        "token:7:8:9:2",
+        "token:23:102:6:2",
+        "token:24:51:18:2",
+        "token:28:67:11:2",
+        "token:30:38:16:2",
+        "token:58:22:51:2",
+        "token:59:9:31:2",
+        "token:64:16:16:2",
+        "token:7:157:43:2",
+        "token:9:88:14:2"
+      ],
+      "counterevidence": [
+        "token:20:64:7:1",
+        "token:20:69:13:1",
+        "token:18:20:11:1"
+      ],
+      "unresolved_cases": [],
+      "hard_cases": [
+        "20:64:7:1",
+        "20:69:13:1",
+        "18:20:11:1",
+        "87:14:2:1",
+        "91:9:2:1",
+        "23:102:6:2",
+        "7:8:9:2"
+      ],
+      "strongest_counterexample": "20:64:7:1 — قَدْ أَفْلَحَ ٱلْيَوْمَ مَنِ ٱسْتَعْلَىٰ, spoken by Pharaoh's magicians for \"whoever prevails in today's contest.\" It is a decisive counterexample to any narrow eschatological/salvation reading of the root (the referent is mundane competitive victory, no piety), but it CONFIRMS rather than breaks the thin nucleus \"attain the desired favorable outcome.\" No occurrence counters the thin nucleus itself.",
+      "strongest_competitor": "A specifically eschatological nucleus: \"attain salvation / felicity / deliverance in the Hereafter.\" It is tempting because the recurrent co-text is believers, the God-fearing, heavy scales, guidance, and gardens. It is rejected as the ROOT/family contribution because the same verb denotes purely worldly prevailing (20:64 ٱسْتَعْلَىٰ \"today\"), an instrumental craft failing (20:69 ٱلسَّاحِرُ حَيْثُ أَتَىٰ), and situational survival (18:20), and because the religious content is carried by complement clauses (تَزَكَّىٰ 87:14) rather than by ف ل ح.",
+      "reopen_conditions": [
+        "A ف ل ح occurrence with a Form I or non-Form-IV derivation becomes available, permitting root-vs-stem separation.",
+        "Any occurrence surfaces carrying the concrete/agrarian sense (till/cleave/split soil, cultivator), which would prove the root spans multiple unbridged lexical classes.",
+        "A Form-IV token is found that resists the thin 'attain favorable outcome' gloss, falsifying the family nucleus.",
+        "Independent morphological contrast lets the analysis isolate a root-level contribution, potentially upgrading scope from REPRESENTATIVE/DERIVATIONAL_FAMILY toward ROOT_GENERALIZATION."
+      ],
+      "research_completeness": {
+        "claim_scope": "REPRESENTATIVE",
+        "occurrence_unit": "word_ref",
+        "eligible_occurrence_count": 40,
+        "evidenced_occurrence_count": 40,
+        "index_complete": true,
+        "deep_analysis_complete": true,
+        "sampling_basis_recorded": true,
+        "sufficient_for_claim": true,
+        "derived_by": "ResearchJudgmentService"
+      }
+    },
+    "fwh": {
+      "claim_id": "jud_303cd726",
+      "revision_id": 1,
+      "claim_scope_kind": "LEXICALIZED_CLASS",
+      "research_state": "PREFERRED",
+      "result_strength": "STRONG",
+      "claim_scope": "UNIVERSAL",
+      "canonical_state": "NOT_CANONICAL",
+      "verification_state": "NOT_REQUIRED",
+      "falsification_status": "PASSED",
+      "sampling_basis": null,
+      "preferred_conclusion": "The root ف و ه contributes a single concrete anatomical concept: the mouth, i.e. the body's oral aperture. It is attested exclusively as one lexicalized noun (فاه singular at 13:14:18:1; أفواه plural in the other 12), POS=N throughout. Three purely physical uses fix the sense as the concrete organ with no speech content: water reaching the mouth (13:14:18:1), hands thrust into mouths (14:9:24:1), and mouths sealed shut (36:65:4:1). In the remaining occurrences the organ serves as the source of egress in the min-ablative frame (word issuing from mouths 18:5:12:1; hatred appearing from mouths 3:118:19:1) or as the instrument of utterance in the bi-instrumental frame (24:15:5:2, 33:4:22:2, 3:167:25:2, 5:41:13:2, 9:30:13:2, 9:8:12:2, 61:8:5:2, 9:32:6:2). In every case the speech, insincerity, and futility content is supplied by the verb (قول/تخرج/بدت/يطفئوا/نختم) and the construction (bi-, min-, and the قلوب/صدور/نور contrast), while the root itself supplies only the physical organ. The bare-organ reading substitutes in all 13 occurrences without exception.",
+      "root_concept": "mouth (the bodily oral aperture)",
+      "plain_explanation": "Across all 13 Quranic occurrences this root just means \"mouth\" — the physical opening of the body. It never appears as a verb or any other derived form; it is always the same noun (singular فاه, plural أفواه). We know the meaning is the concrete organ, not \"speech,\" because three verses use it with no talking at all: water trying to reach a man's mouth, people putting their hands to their mouths, and God sealing mouths shut. In the verses about hypocrites \"saying with their mouths what is not in their hearts,\" the idea of insincere or empty talk comes from the words \"say,\" the little word \"with,\" and the contrast with \"hearts\" — not from the root itself, which still only names the mouth.",
+      "semantic_boundary": "The root's contribution stops at the physical oral aperture (mouth). It does NOT itself encode: (a) speech/utterance as an abstraction — that comes from verbs of saying and the min-/bi- frames; (b) insincerity or lip-service — that comes from the explicit mouth-vs-heart/breast contrast (قلوب/صدور); (c) futility of opposition — that comes from the \"extinguish the light\" metaphor (يطفئوا نور الله) in 61:8/9:32. The singular/plural alternation (فاه vs أفواه) is a number/inflection matter, not a semantic split. There is no attested verbal, participial, adjectival, or maṣdar derivation in this corpus, so no productive root-level abstraction is licensed.",
+      "layer_attribution": {
+        "root": "mouth = the physical oral aperture of the body (invariant across all 13 occurrences)",
+        "derivation_form": "Only number inflection is attested: singular فاه (13:14:18:1) vs plural أفواه (all others); no verb/participle/masdar/adjective exists to carry any abstraction.",
+        "construction": "bi-instrumental (بأفواه...) supplies 'utter/profess WITH the mouth' as instrument (24:15, 33:4, 3:167, 5:41, 9:30, 9:8, 61:8, 9:32); min-ablative (مِن أفواه...) supplies 'issue/emerge FROM the mouth' (18:5, 3:118); verbs قول/تخرج/بدت/يطفئوا/نختم supply the speech, emergence, sealing, and extinguishing actions.",
+        "context": "The recurrent contrast of أفواه with قلوب/صدور (3:167, 5:41, 9:8, 3:118) supplies the insincerity/lip-service reading; the نور الله object supplies the futility metaphor (61:8, 9:32). None of this attaches to the root."
+      },
+      "rejection_condition": {
+        "challenging_finding": "An occurrence (in this or an extended fwh corpus) where the physical 'mouth' cannot be substituted for the token, OR a derived form (verb/participle/maṣdar) of ف و ه contributing a sense such as 'to utter / to spread (news)' or an abstract 'expression/speech' that stands independent of the bodily organ.",
+        "search_location": "The bi-instrumental and min-ablative clusters where speech content is densest (24:15:5:2, 33:4:22:2, 3:167:25:2, 5:41:13:2, 9:30:13:2, 9:8:12:2, 18:5:12:1, 3:118:19:1); and any non-noun morphological form of the root.",
+        "verification_method": "Attempt to substitute the literal organ 'mouth' for each token; if the verse remains coherent with only the verb/preposition carrying the speech/insincerity, the enriched competitor is refuted. Check POS tags for any non-N derivation.",
+        "confounder_control": "Strip the verb (قول/تخرج/بدت/يطفئوا/نختم), the preposition (bi-/min-), and the قلوب/صدور/نور contrast before attributing residual meaning to the root, isolating the root's own contribution from construction and context.",
+        "failure_consequence": "If such a token or derivation is found, the single thin 'mouth' nucleus is broken: either a second unbridged lexical class exists or the root itself carries speech/abstraction, forcing a downgrade to UNRESOLVED or a split-class judgment."
+      },
+      "supporting_evidence": [
+        "token:13:14:18:1",
+        "token:14:9:24:1",
+        "token:36:65:4:1",
+        "token:18:5:12:1",
+        "token:3:118:19:1",
+        "token:24:15:5:2",
+        "token:33:4:22:2"
+      ],
+      "counterevidence": [
+        "token:9:8:12:2",
+        "token:5:41:13:2",
+        "token:3:167:25:2",
+        "token:61:8:5:2",
+        "token:9:32:6:2",
+        "token:9:30:13:2"
+      ],
+      "unresolved_cases": [],
+      "hard_cases": [
+        "13:14:18:1",
+        "36:65:4:1",
+        "61:8:5:2",
+        "9:8:12:2",
+        "5:41:13:2",
+        "3:118:19:1"
+      ],
+      "strongest_counterexample": "61:8:5:2 — \"they wish to extinguish the light of God WITH their mouths\" (يُطْفِـُٔوا نُورَ ٱللَّهِ بِأَفْوَٰهِهِمْ). This is the least literal frame: a mouth cannot physically extinguish light, so it tempts loading a metaphorical \"futile speech/propaganda\" sense onto the root. But even here \"mouth\" substitutes as the bare organ/instrument; the figurative force is entirely in the verb يطفئوا and the نور object. No occurrence resists the plain \"mouth\" reading, so this is a near-pressure, not a genuine counterexample.",
+      "strongest_competitor": "Root = \"mouth as the seat/act of insincere or futile speech\" (a metonymically enriched nucleus folding the lip-service/falsehood content into the root itself), motivated by the recurrent بأفواههم...قلوبهم cluster.",
+      "reopen_conditions": [
+        "Discovery of any ف و ه occurrence where the literal 'mouth' cannot be substituted for the token.",
+        "Attestation of a derived (non-noun) form of the root — verb, participle, or maṣdar — carrying an abstract 'utter/express/spread' sense independent of the physical organ.",
+        "Evidence that the singular/plural alternation (فاه/أفواه) tracks a genuine semantic (not merely numeric) distinction."
+      ],
+      "research_completeness": {
+        "claim_scope": "UNIVERSAL",
+        "occurrence_unit": "word_ref",
+        "eligible_occurrence_count": 13,
+        "evidenced_occurrence_count": 13,
+        "index_complete": true,
+        "deep_analysis_complete": true,
+        "sampling_basis_recorded": false,
+        "sufficient_for_claim": true,
+        "derived_by": "ResearchJudgmentService"
+      }
+    },
+    "glm": {
+      "claim_id": "jud_d51f1e74",
+      "revision_id": 1,
+      "claim_scope_kind": "LEXICALIZED_CLASS",
+      "research_state": "PREFERRED",
+      "result_strength": "MODERATE",
+      "claim_scope": "REPRESENTATIVE",
+      "canonical_state": "NOT_CANONICAL",
+      "verification_state": "NOT_REQUIRED",
+      "falsification_status": "PASSED",
+      "sampling_basis": "All 13 Quranic occurrences are the same single noun lexeme ghulām (singular, plus dual ghulāmayn at 18:82 and plural ghilmān at 52:24); every token has qac_form/pos_tag = N and no verbal or other derivation of the root غ ل م is attested in the packet. The claim is therefore representative of this one lexicalized noun, not of the productive root's derivational family (which is not sampled here). Within that lexeme the nucleus is a full census: it holds in 13/13 occurrences.",
+      "preferred_conclusion": "Across all 13 occurrences the root غ ل م is attested only as the concrete noun ghulām (sg. 12:19, 15:53, 18:74, 18:80, 19:7, 19:8, 19:19, 19:20, 3:40, 37:101, 51:28; dual ghulāmayn 18:82; pl. ghilmān 52:24), and its demonstrated contribution is a single thin nucleus: a young male human being — a boy/youth — carrying two invariant features, [+male] and [+young/pre-full-adult]. Everything richer than this is supplied by the frame, not the root: the son/offspring relation by the possessive and gift/glad-tidings construction (لِى 19:8, 19:20, 3:40; لَكِ 19:19; بِـ + نُبَشِّرُكَ/بَشَّرْنَاهُ/بَشَّرُوهُ 15:53, 19:7, 37:101, 51:28); the serving role by the predicate يَطُوفُ عَلَيْهِمْ (52:24); commodity status by وَأَسَرُّوهُ بِضَٰعَةً (12:19); and moral/age qualifiers by زَكِيَّة (18:74), عَلِيم/حَلِيم, and awaiting أَشُدّ (18:82). The minimal nucleus holds 13/13 with no counterexample and no unbridged second lexical class.",
+      "root_concept": "Young male human (boy/youth): [+male] + [+young / pre-full-adult], attested only as the noun ghulām",
+      "plain_explanation": "In every one of its 13 Quranic occurrences the word ghulām means a young male person — a boy or youth. That is all the word itself pins down: he is male, and he is not (yet) a grown adult. Everything else the stories add — that he is a promised son (Yahyā to Zakariyyā 19:7; the child announced to Mary 19:19; the son promised to Abraham 15:53, 37:101, 51:28), a foundling sold as merchandise (Joseph 12:19), an innocent who is slain (18:74), two inheriting orphans (18:82), or serving youths in Paradise (52:24) — comes from the surrounding words and grammar, not from ghulām. We can prove this: where the word carries no possessive or gift construction (52:24 servers who belong-to but are not born-to the blessed; 12:19 Joseph, unrelated to his finders) there is no 'son' meaning at all, so 'son' lives in the construction, not the root. The maleness is real and constant (a son, not a daughter, is the gift in 19:19; no female ghulām occurs anywhere), and youth is real and constant (orphans not yet mature 18:82; the pearl-like lads 52:24). But the exact age is loose — it stretches from a not-yet-conceived promised child (3:40, 19:8) to a boy old enough to be feared for future rebellion (18:80) — so the word fixes 'young male,' not any tight age.",
+      "semantic_boundary": "INSIDE the root/lexeme's contribution: [+male] (human) and [+young/pre-full-adult]. OUTSIDE (frame/construction/context, never loaded onto the root): (a) filiation/sonship — from possessive لِى/لَكِ and gift/glad-tidings verbs أَهَبَ/نُبَشِّرُ/بَشَّرَ; (b) service/attendance — from يَطُوفُ عَلَيْهِمْ (52:24); (c) commodity/slave status — from أَسَرُّوهُ بِضَٰعَةً (12:19); (d) moral character — from زَكِيَّة (18:74), عَلِيم, حَلِيم; (e) any determinate point in the age band — the referent ranges from unborn/promised (3:40, 19:8) to morally-agentive near-adult (18:80). The word also does not specify status (free/slave), lineage, or role; these are all frame-borne.",
+      "layer_attribution": {
+        "root": "Young male human (boy/youth): the invariant features [+male] and [+young/pre-full-adult], attested only in the noun ghulām; holds 13/13.",
+        "derivation_form": "No verbal or adjectival derivation of غ ل م is attested; only nominal number inflection — singular ghulām, dual ghulāmayn (18:82), plural ghilmān (52:24). This is why the finding is a lexicalized noun, not a productive root generalization.",
+        "construction": "Filial/possessive relation from لِى (19:8, 19:20, 3:40), لَكِ (19:19); annunciation preposition بِـ (15:53, 19:7, 37:101, 51:28).",
+        "context": "Glad-tidings speech-act نُبَشِّرُكَ/بَشَّرْنَاهُ/بَشَّرُوهُ; serving predicate يَطُوفُ عَلَيْهِمْ (52:24); commodity predicate أَسَرُّوهُ بِضَٰعَةً (12:19); moral/qualitative epithets زَكِيَّة (18:74, 19:19), عَلِيم (15:53, 51:28), حَلِيم (37:101); maturity marker يَبْلُغَآ أَشُدَّهُمَا (18:82); wide age band from unborn (3:40, 19:8) to agentive near-adult (18:80)."
+      },
+      "rejection_condition": {
+        "challenging_finding": "A packet occurrence in which ghulām denotes (a) a female, (b) a full-grown or old male, or (c) a non-human — OR a token where no possessive/gift/serving/commodity frame marker is present yet the bare noun still forces a 'son' or 'servant' reading (which would relocate that content into the root).",
+        "search_location": "All 13 occurrences, with special weight on the non-relational tokens 12:19:10:1, 18:74:5:1, 18:80:2:2, 52:24:3:1 (which lack filiation) and the annunciation cluster 15:53/19:7/19:8/19:19/19:20/37:101/51:28/3:40 (where a 'son' pressure is strongest).",
+        "verification_method": "For each token confirm qac_form=N (single noun lexeme), identify the referent's sex and life-stage from the verse, and check whether every richer role has an explicit frame marker (لِى/لَكِ/بِـ/نُبَشِّرُ/يَطُوفُ/بِضَٰعَة); the minimal nucleus survives only if [+male][+young] holds and all richer content is externally marked.",
+        "confounder_control": "Strip the frame markers (possessive لِى/لَكِ, annunciation بِـ + بَشَّرَ/نُبَشِّرُ, serving يَطُوفُ عَلَيْهِمْ, commodity أَسَرُّوهُ بِضَٰعَةً, epithets زَكِيَّة/عَلِيم/حَلِيم) before attributing any meaning to the noun, so that construction- and context-borne content is not misread as root content.",
+        "failure_consequence": "If such a token is found, the minimal 'young male human' nucleus is falsified, and the finding must move either to a narrower/richer sense or to UNRESOLVED (an unbridged lexical split)."
+      },
+      "supporting_evidence": [
+        "token:19:19:8:1",
+        "token:18:82:4:2",
+        "token:52:24:3:1",
+        "token:12:19:10:1",
+        "token:18:74:5:1"
+      ],
+      "counterevidence": [
+        "token:3:40:6:1",
+        "token:19:8:6:1",
+        "token:18:80:2:2",
+        "token:52:24:3:1",
+        "token:12:19:10:1"
+      ],
+      "unresolved_cases": [],
+      "hard_cases": [
+        "52:24:3:1",
+        "3:40:6:1",
+        "19:8:6:1",
+        "18:80:2:2",
+        "12:19:10:1",
+        "19:19:8:1"
+      ],
+      "strongest_counterexample": "52:24:3:1 — plural ghilmān circulating to serve the blessed (like guarded pearls) is the strongest apparent counterexample, since it could be lexicalized as 'servant-boys.' It does not break the nucleus: the serving is carried by the verb يَطُوفُ عَلَيْهِمْ, while ghilmān itself still denotes only 'young males'; and لَّهُمْ marks belonging-to, not born-to, which further shows the token carries neither service nor filiation in the noun. It also cleanly falsifies any 'son/offspring' nucleus.",
+      "strongest_competitor": "A richer 'son / male offspring' nucleus (that the root itself encodes filiation), motivated by the eight annunciation and 'how can I have a ghulām' tokens (15:53, 19:7, 19:8, 19:19, 19:20, 37:101, 51:28, 3:40). Rejected because 52:24 (ghilmān are attendants, لَّهُمْ = belonging-to, not offspring) and 12:19 (Joseph, no filial tie to his finders) and 18:74 (a slain youth, no tie to the two travelers) carry no filiation at all, while in the annunciation tokens the sonship is overtly frame-marked (لِى, أَهَبَ لَكِ, نُبَشِّرُكَ). Sonship is therefore constructional, not root-borne.",
+      "reopen_conditions": [
+        "Attestation elsewhere of a derived verb or a distinct lexeme from غ ل م whose meaning is unrelated to 'young male,' which would clarify whether the semantics are lexicalized in the noun or generalize to the root.",
+        "Any occurrence where ghulām denotes a female, a full-grown/old male, or a non-human.",
+        "Any occurrence where [+male] or [+young] is cancelled by context without contradiction, indicating the feature is context-supplied rather than lexeme-borne.",
+        "A non-relational token that nonetheless forces a 'son' or 'servant' reading, which would relocate that content into the root."
+      ],
+      "research_completeness": {
+        "claim_scope": "REPRESENTATIVE",
+        "occurrence_unit": "word_ref",
+        "eligible_occurrence_count": 13,
+        "evidenced_occurrence_count": 13,
+        "index_complete": true,
+        "deep_analysis_complete": true,
+        "sampling_basis_recorded": true,
+        "sufficient_for_claim": true,
+        "derived_by": "ResearchJudgmentService"
+      }
+    }
+  }
+}

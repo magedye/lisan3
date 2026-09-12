@@ -53,6 +53,33 @@ State context only. Canonical repository contracts and runtime evidence remain a
   requires CLEAN but not ESTABLISHED — confirm design intent; (4) minor evidence-resolver /
   convergence nits; (5) `ADMISSION_TANZIL.md` historical wording remains historical evidence.
 
+## Five-Root Governed Requalification — Producer (Stage A) (2026-09-13)
+
+- Branch `five-root-governed-requalification` from `main@d780476e4a3b119ae993588f20333f2ce5fe9246`.
+  Fresh, clean-room, Quran-internal producer stage for ESw/dnw/flH/fwh/glm. NOT Batch 08; Batch 07
+  semantic JSONs unread-before-freeze and byte-identical.
+- Five DB-native, **non-canonical** Research Judgments frozen in `lisanapp.db` via governed API
+  (`/runs` → `/runs/{id}/blind/preflight` → `/runs/{id}/observations` → `/runs/{id}/judgments`,
+  `ResearchJudgmentService.create`). No manual rows, no canonicalization.
+  - ESw `jud_9506cecf` PREFERRED/STRONG/REPRESENTATIVE(LEXICALIZED_CLASS); dnw `jud_6733070a`
+    PREFERRED/MODERATE/REPRESENTATIVE(ROOT_GENERALIZATION); flH `jud_50b6a890`
+    PREFERRED/MODERATE/REPRESENTATIVE(DERIVATIONAL_FAMILY); fwh `jud_303cd726`
+    PREFERRED/STRONG/UNIVERSAL(LEXICALIZED_CLASS); glm `jud_d51f1e74`
+    PREFERRED/MODERATE/REPRESENTATIVE(LEXICALIZED_CLASS). All revision 1, `NOT_CANONICAL`,
+    falsification PASSED, host-completeness sufficient.
+- Governed state: 5 runs, 5 isolation states ESTABLISHED+CLEAN (attested), 211 observations
+  (exact-set 12/133/40/13/13), 0 VerificationRecords, 0 ACCEPTED. Overclaim gate downgraded 4/5.
+- Producer disclosures: semantic induction by clean-room subagents (2 analysts + 1 adversary →
+  aggregator); LLM residual-knowledge bounded by downstream review; `glm` had incidental prior
+  orchestrator exposure to its historical conclusion — flagged for the fresh reviewer.
+- Tests: qualification 24, non-e2e 251, negative controls 32/32. `lisanapp.db` NOT committed.
+- Status: `FIVE_ROOT_GOVERNED_REQUALIFICATION_READY_FOR_FRESH_INDEPENDENT_REVIEW`. Reports:
+  `docs/LISAN3_FIVE_ROOT_GOVERNED_REQUALIFICATION_PRODUCER_REPORT.md`,
+  `docs/LISAN3_FIVE_ROOT_FRESH_REVIEW_INDEX.md`, `docs/LISAN3_FIVE_ROOT_FRESH_REVIEW_HANDOFF.md`,
+  `docs/evidence/requalification/*.json`. NEXT: Stage B fresh independent semantic review (blind to
+  Batch 07 initially), then owner decision bound to exact `claim_id`/`revision_id`.
+  `BATCH_08_NOT_AUTHORIZED`.
+
 ## Repository
 
 - Root: `D:\APP\tafseer\lisanapp3`
