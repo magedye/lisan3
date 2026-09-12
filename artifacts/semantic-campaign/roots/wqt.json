@@ -1,0 +1,894 @@
+{
+ "root_arabic": "و ق ت",
+ "root_buckwalter": "wqt",
+ "root_id": "wqt",
+ "artifact_name": "wqt.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave4",
+ "occurrences": 13,
+ "frozen_candidate_root_contribution": "wqt = the fixing/designation of a determinate, appointed temporal boundary — a set point OR a bounded term at/for which something occurs. It supplies the appointedness/fixedness of a time, not time-as-flow or duration-as-such, not the event/entity itself, and not place.",
+ "internal_discovery": {
+  "candidate_root_contribution": "wqt = the fixing/designation of a determinate, appointed temporal boundary — a set point OR a bounded term at/for which something occurs. It supplies the appointedness/fixedness of a time, not time-as-flow or duration-as-such, not the event/entity itself, and not place.",
+  "plain_explanation": "Across all 13 occurrences the root marks a time that has been fixed or appointed, never generic elapsing time. The base noun waqt is a determinate moment (the 'known time' of respite in 15:38=38:81; the hidden-but-fixed time of the Hour in 7:187). The mif'al noun miqat is an appointed time/term (the Day of Decision in 44:40/78:17; the gathering of a known day in 26:38/56:50; Moses's appointment in 7:143/7:155; a term 'completed at forty nights' in 7:142). The plural mawaqit are calendrical time-markers (2:189, the crescents). The participle mawqut is prayer 'made time-fixed' (4:103). The sole verb, Form II passive uqqitat (77:11), is 'the messengers are assigned their appointed time.' The common core is demarcation/appointment of a time; whether that time is a point or a span, a one-off decree or a recurring marker, is supplied by context, not by the root.",
+  "layer_separation_note": "wqt does NOT entail: (1) time as continuum/flow/duration or an age/epoch — every occurrence is delimited/appointed; (2) the event or content itself — it frames yawm, al-sa'ah (7:187 distinguishes the Hour from li-waqtiha), al-salah, and the Day of Decision, but does not name them; (3) knownness/disclosure — the 'known' comes from the added modifier al-ma'lum (15:38/38:81) or ma'lum (26:38/56:50), while 7:187 makes the waqt explicitly hidden to all but God; (4) punctuality only — 7:142 is a bounded span of forty nights that reaches completion; (5) place/spatial locus — the mif'al form miqat stays temporal throughout (2:189 = lunar phases; 7:142 = forty nights). The count/quantity of a span (forty nights, seventy men) is carried by other words, not by wqt.",
+  "presence": {
+   "occurrences_total": 13,
+   "occurrences_checked": 13,
+   "occurrences_consistent": 13,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "7:142:8:1 — «فَتَمَّ مِيقَٰتُ رَبِّهِۦٓ أَرْبَعِينَ لَيْلَةً». Because the miqat is 'completed' (tamma) and quantified as forty nights, it behaves as a bounded term/duration rather than a punctual instant. This blocks the narrower gloss 'fixed appointed moment/deadline' and forces the nucleus to be stated as 'fixed point OR bounded term,' reducing its discriminating sharpness. It refines the account rather than breaking it.",
+  "strongest_competitor": "'wqt = generic time (a bare temporal noun; fixedness supplied only by context).' Attractive because waqt is a plausible word for 'time.' Rejected on Quran-internal grounds: the corpus never once uses wqt for time-as-flow, and the fixing is carried internally by the derived morphology (mif'al instrument-noun miqat/mawaqit, passive participle mawqut, Form-II uqqitat) and by the recurrent pairing with al-ma'lum/ma'lum. A secondary competitor — 'miqat is a lexicalized nominal class distinct from base waqt, possibly with a spatial rendezvous sense' — is defeated by the shared «yawm…ma'lum» collocation across the base noun (15:38/38:81) and the mif'al noun (26:38/56:50), and by the fact that no spatial reading is ever attested (2:189 = crescents; 7:142 = forty nights).",
+  "competing_hypothesis": "'wqt = generic time (a bare temporal noun; fixedness supplied only by context).' Attractive because waqt is a plausible word for 'time.' Rejected on Quran-internal grounds: the corpus never once uses wqt for time-as-flow, and the fixing is carried internally by the derived morphology (mif'al instrument-noun miqat/mawaqit, passive participle mawqut, Form-II uqqitat) and by the recurrent pairing with al-ma'lum/ma'lum. A secondary competitor — 'miqat is a lexicalized nominal class distinct from base waqt, possibly with a spatial rendezvous sense' — is defeated by the shared «yawm…ma'lum» collocation across the base noun (15:38/38:81) and the mif'al noun (26:38/56:50), and by the fact that no spatial reading is ever attested (2:189 = crescents; 7:142 = forty nights).",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All three lenses agree the nucleus — fixing/designation of a determinate appointed time — governs every one of the 13 occurrences with no contradicting occurrence, so the result is PREFERRED and not UNRESOLVED: the derivational family is Quran-internally bridged (shared «yawm…ma'lum» frame across base and mif'al forms; the mif'al = instrument/appointed-time by which time is fixed; mawqut = 'made-time-fixed'; uqqitat = 'to have a time fixed'). This rules out forcing a multi-class or homonym split. The grade is capped at MODERATE / REPRESENTATIVE (DERIVATIONAL_FAMILY) rather than STRONG / UNIVERSAL because the adversarial lens exposes real limits on distinctive breadth: (a) 12/13 occurrences are nominal or adjectival, and the entire dynamic/verbal 'to appoint a time' sense rests on a single hapax verb (77:11 uqqitat), so the active semantics is not independently corroborated; (b) the apparent breadth is inflated by formulaic repetition — al-waqt al-ma'lum (x2 identical), li-miqatina (x2 identical), miqati yawmin ma'lumin (x2 near-identical), yawm al-fasl = miqat (x2) — leaving roughly 8 effectively independent contexts; (c) unifying all 13 requires stating the nucleus at an abstraction ('determinacy/fixedness of time') broad enough to absorb point/term and appointment/marker/recurrence flavors, so it is non-vacuous but not sharply discriminating in the way STRONG demands. There is nonetheless NO coherent resistant sub-class: the two boundary occurrences (7:142 bounded term; 2:189 recurring calendrical marker) and the hapax verb all bridge to the nucleus, which is why the honest verdict is MODERATE — neither inflated to STRONG nor deflated to RESISTANT/UNRESOLVED.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "C1_base_noun_waqt",
+     "where": {
+      "word_refs": [
+       "15:38:3:2",
+       "38:81:3:2",
+       "7:187:13:2"
+      ]
+     },
+     "occurrence_count_expected": 3,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Base noun waqt = a determinate temporal locus (the fixed moment/time set for an event).",
+     "classification_rationale": "15:38 and 38:81 are the identical phrase «يَوْمِ ٱلْوَقْتِ ٱلْمَعْلُومِ»: waqt is the fixed terminus, with al-ma'lum an added qualifier. 7:187 «لَا يُجَلِّيهَا لِوَقْتِهَآ إِلَّا هُوَ»: the Hour has its own waqt, decisively hidden — showing determinacy without disclosure and distinguishing the event (al-sa'ah) from its appointed time.",
+     "supporting_evidence_note": "Determinacy is carried by the base noun itself; knownness is external (al-ma'lum in 15:38/38:81) and can be absent (7:187 hidden).",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "C2_mifal_noun_miqat_singular",
+     "where": {
+      "word_refs": [
+       "26:38:3:2",
+       "44:40:4:1",
+       "56:50:3:1",
+       "78:17:5:1",
+       "7:142:8:1",
+       "7:143:4:2",
+       "7:155:6:2"
+      ]
+     },
+     "occurrence_count_expected": 7,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Singular mif'al noun miqat = an appointed time/term (occasion or bounded span) fixed for an event or meeting.",
+     "classification_rationale": "Eschatological appointment: 26:38/56:50 «مِيقَٰتِ يَوْمٍ مَّعْلُومٍ», 44:40 «يَوْمَ ٱلْفَصْلِ مِيقَٰتُهُمْ», 78:17 «كَانَ مِيقَٰتًا». Moses cluster: 7:143/7:155 «لِمِيقَٰتِنَا» (the appointed meeting). The shared «yawm…ma'lum» frame with C1 welds this mif'al class to the base-noun nucleus, defeating a separate-lexical-class reading. 7:142 «فَتَمَّ مِيقَٰتُ رَبِّهِۦٓ أَرْبَعِينَ لَيْلَةً» shows miqat as a bounded term reaching completion.",
+     "supporting_evidence_note": "8/13 tokens with the plural; the paradigmatic realization of the root's appointed-time contribution. Temporality is root-borne: even where a spatial reading could arise (li-miqatina) the parallel 7:142 = forty nights fixes it as temporal.",
+     "counterevidence": [
+      "7:142:8:1"
+     ]
+    },
+    {
+     "cluster_id": "C3_mifal_plural_mawaqit",
+     "where": {
+      "word_refs": [
+       "2:189:6:1"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Plural mawaqit = standing, recurring calendrical time-markers by which people fix their reckonings.",
+     "classification_rationale": "2:189 «قُلْ هِىَ مَوَٰقِيتُ لِلنَّاسِ وَٱلْحَجِّ»: the crescents are fixed reference-times for people and Hajj. The referent (lunar phases) keeps the sense temporal, not spatial.",
+     "supporting_evidence_note": "Outer scope-boundary of the nucleus: recurring markers for mundane human/Hajj reckoning rather than a single divine appointment; still fixed reference-times, so it bridges to the demarcation-of-a-set-time invariant.",
+     "counterevidence": [
+      "2:189:6:1"
+     ]
+    },
+    {
+     "cluster_id": "C4_passive_participle_mawqut",
+     "where": {
+      "qac_pos": [
+       "ADJ"
+      ],
+      "forms": [
+       "ADJ"
+      ],
+      "word_refs": [
+       "4:103:20:1"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "mawqut = 'made time-fixed' — the salah as a decree with appointed/recurring times.",
+     "classification_rationale": "4:103 «كِتَٰبًا مَّوْقُوتًا»: the passive participle (patient of Form-II waqqata) marks prayer as a prescription that has been fixed to appointed times.",
+     "supporting_evidence_note": "Morphology (patient participle of the factitive Form II) carries the 'fixing' internally, corroborating that fixedness is root-borne, not merely contextual.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "C5_form_II_verb_uqqitat",
+     "where": {
+      "qac_verb_form": [
+       "II"
+      ],
+      "qac_pos": [
+       "V"
+      ],
+      "word_refs": [
+       "77:11:3:1"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "uqqitat (Form II passive) = 'the messengers are assigned/given their appointed time.'",
+     "classification_rationale": "77:11 «وَإِذَا ٱلرُّسُلُ أُقِّتَتْ»: the sole finite verb, a hapax, read via Form-II factitive morphology plus the eschatological neighbourhood (sura 77 = Day of Decision). Coheres with miqat / yawm al-fasl in the same cluster.",
+     "supporting_evidence_note": "The only verbal/dynamic datum for the root; under-determined and carries the most interpretive weight per token, but does not contradict the nucleus.",
+     "counterevidence": []
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "wqt",
+  "verdict": "SUPPORTED_WITH_RESERVATIONS",
+  "failing_occurrences": [],
+  "distinctiveness_ok": false,
+  "falsifiable": true,
+  "notes": "No occurrence contradicts the appointed-time-boundary nucleus, so the adversarial attempt returns SUPPORTED and neither RESISTANT nor UNRESOLVED is warranted. A full PASS is NOT claimed (hence NOT_RUN): distinctiveness_ok is set false because the nucleus rests on an abstraction ('determinacy/fixedness of time') that is non-vacuous but not sharply discriminating, breadth is inflated by formulaic repetition (~8 independent contexts among 13), 12/13 tokens are nominal/adjectival, and the sole verbal anchor is a hapax (77:11). These reservations cap the grade at MODERATE rather than certifying a clean adversarial PASS."
+ },
+ "coverage_validation": {
+  "root": "wqt",
+  "expected_count": 13,
+  "researched_count": 13,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "15:38:3:2",
+   "disposition": "CONSISTENT",
+   "note": "15:38 and 38:81 are the identical phrase «يَوْمِ ٱلْوَقْتِ ٱلْمَعْلُومِ»: waqt is the fixed terminus, with al-ma'lum an added qualifier. 7:187 «لَا يُجَلِّيهَا لِوَقْتِهَآ إِلَّا هُوَ»: the Hour has its own waqt, decisively hidden — showing determinacy without disclosure and distinguishing the event (al-sa'ah) from its appointed time.",
+   "coverage_cluster_id": "C1_base_noun_waqt",
+   "candidate_semantic_interpretation": "Base noun waqt = a determinate temporal locus (the fixed moment/time set for an event).",
+   "cluster_supporting_evidence": "Determinacy is carried by the base noun itself; knownness is external (al-ma'lum in 15:38/38:81) and can be absent (7:187 hidden).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "15:38 and 38:81 are the identical phrase «يَوْمِ ٱلْوَقْتِ ٱلْمَعْلُومِ»: waqt is the fixed terminus, with al-ma'lum an added qualifier. 7:187 «لَا يُجَلِّيهَا لِوَقْتِهَآ إِلَّا هُوَ»: the Hour has its own waqt, decisively hidden — showing determinacy without disclosure and distinguishing the event (al-sa'ah) from its appointed time.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "15:38",
+     "verse_text": "إِلَىٰ يَوْمِ ٱلْوَقْتِ ٱلْمَعْلُومِ"
+    }
+   ],
+   "root_arabic": "و ق ت",
+   "root_buckwalter": "wqt",
+   "root_id": "wqt",
+   "artifact_name": "wqt.json",
+   "verse_ref": "15:38",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "waqoti",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِلَىٰ يَوْمِ ٱلْوَقْتِ ٱلْمَعْلُومِ"
+  },
+  {
+   "word_ref": "26:38:3:2",
+   "disposition": "CONSISTENT",
+   "note": "Eschatological appointment: 26:38/56:50 «مِيقَٰتِ يَوْمٍ مَّعْلُومٍ», 44:40 «يَوْمَ ٱلْفَصْلِ مِيقَٰتُهُمْ», 78:17 «كَانَ مِيقَٰتًا». Moses cluster: 7:143/7:155 «لِمِيقَٰتِنَا» (the appointed meeting). The shared «yawm…ma'lum» frame with C1 welds this mif'al class to the base-noun nucleus, defeating a separate-lexical-class reading. 7:142 «فَتَمَّ مِيقَٰتُ رَبِّهِۦٓ أَرْبَعِينَ لَيْلَةً» shows miqat as a bounded term reaching completion.",
+   "coverage_cluster_id": "C2_mifal_noun_miqat_singular",
+   "candidate_semantic_interpretation": "Singular mif'al noun miqat = an appointed time/term (occasion or bounded span) fixed for an event or meeting.",
+   "cluster_supporting_evidence": "8/13 tokens with the plural; the paradigmatic realization of the root's appointed-time contribution. Temporality is root-borne: even where a spatial reading could arise (li-miqatina) the parallel 7:142 = forty nights fixes it as temporal.",
+   "counterevidence": [
+    "7:142:8:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Eschatological appointment: 26:38/56:50 «مِيقَٰتِ يَوْمٍ مَّعْلُومٍ», 44:40 «يَوْمَ ٱلْفَصْلِ مِيقَٰتُهُمْ», 78:17 «كَانَ مِيقَٰتًا». Moses cluster: 7:143/7:155 «لِمِيقَٰتِنَا» (the appointed meeting). The shared «yawm…ma'lum» frame with C1 welds this mif'al class to the base-noun nucleus, defeating a separate-lexical-class reading. 7:142 «فَتَمَّ مِيقَٰتُ رَبِّهِۦٓ أَرْبَعِينَ لَيْلَةً» shows miqat as a bounded term reaching completion.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "26:38",
+     "verse_text": "فَجُمِعَ ٱلسَّحَرَةُ لِمِيقَٰتِ يَوْمٍ مَّعْلُومٍ"
+    }
+   ],
+   "root_arabic": "و ق ت",
+   "root_buckwalter": "wqt",
+   "root_id": "wqt",
+   "artifact_name": "wqt.json",
+   "verse_ref": "26:38",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "miyqa`ti",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَجُمِعَ ٱلسَّحَرَةُ لِمِيقَٰتِ يَوْمٍ مَّعْلُومٍ"
+  },
+  {
+   "word_ref": "2:189:6:1",
+   "disposition": "CONSISTENT",
+   "note": "2:189 «قُلْ هِىَ مَوَٰقِيتُ لِلنَّاسِ وَٱلْحَجِّ»: the crescents are fixed reference-times for people and Hajj. The referent (lunar phases) keeps the sense temporal, not spatial. | 2:189:6:1 «هِىَ مَوَٰقِيتُ لِلنَّاسِ وَٱلْحَجِّ» — recurring calendrical markers for people and Hajj, a recurring-marker flavor distinct from the one-off appointment, confirming the mif'al = instruments for fixing time rather than a single eschatological point.",
+   "coverage_cluster_id": "C3_mifal_plural_mawaqit",
+   "candidate_semantic_interpretation": "Plural mawaqit = standing, recurring calendrical time-markers by which people fix their reckonings.",
+   "cluster_supporting_evidence": "Outer scope-boundary of the nucleus: recurring markers for mundane human/Hajj reckoning rather than a single divine appointment; still fixed reference-times, so it bridges to the demarcation-of-a-set-time invariant.",
+   "counterevidence": [
+    "2:189:6:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "2:189 «قُلْ هِىَ مَوَٰقِيتُ لِلنَّاسِ وَٱلْحَجِّ»: the crescents are fixed reference-times for people and Hajj. The referent (lunar phases) keeps the sense temporal, not spatial.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:189",
+     "verse_text": "يَسْـَٔلُونَكَ عَنِ ٱلْأَهِلَّةِ قُلْ هِىَ مَوَٰقِيتُ لِلنَّاسِ وَٱلْحَجِّ وَلَيْسَ ٱلْبِرُّ بِأَن تَأْتُوا۟ ٱلْبُيُوتَ مِن ظُهُورِهَا وَلَٰكِنَّ ٱلْبِرَّ مَنِ ٱتَّقَىٰ وَأْتُوا۟ ٱلْبُيُوتَ مِنْ أَبْوَٰبِهَا وَٱتَّقُوا۟ ٱللَّهَ لَعَلَّكُمْ تُفْلِحُونَ"
+    }
+   ],
+   "root_arabic": "و ق ت",
+   "root_buckwalter": "wqt",
+   "root_id": "wqt",
+   "artifact_name": "wqt.json",
+   "verse_ref": "2:189",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "mawa`qiytu",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَسْـَٔلُونَكَ عَنِ ٱلْأَهِلَّةِ قُلْ هِىَ مَوَٰقِيتُ لِلنَّاسِ وَٱلْحَجِّ وَلَيْسَ ٱلْبِرُّ بِأَن تَأْتُوا۟ ٱلْبُيُوتَ مِن ظُهُورِهَا وَلَٰكِنَّ ٱلْبِرَّ مَنِ ٱتَّقَىٰ وَأْتُوا۟ ٱلْبُيُوتَ مِنْ أَبْوَٰبِهَا وَٱتَّقُوا۟ ٱللَّهَ لَعَلَّكُمْ تُفْلِحُونَ"
+  },
+  {
+   "word_ref": "38:81:3:2",
+   "disposition": "CONSISTENT",
+   "note": "15:38 and 38:81 are the identical phrase «يَوْمِ ٱلْوَقْتِ ٱلْمَعْلُومِ»: waqt is the fixed terminus, with al-ma'lum an added qualifier. 7:187 «لَا يُجَلِّيهَا لِوَقْتِهَآ إِلَّا هُوَ»: the Hour has its own waqt, decisively hidden — showing determinacy without disclosure and distinguishing the event (al-sa'ah) from its appointed time.",
+   "coverage_cluster_id": "C1_base_noun_waqt",
+   "candidate_semantic_interpretation": "Base noun waqt = a determinate temporal locus (the fixed moment/time set for an event).",
+   "cluster_supporting_evidence": "Determinacy is carried by the base noun itself; knownness is external (al-ma'lum in 15:38/38:81) and can be absent (7:187 hidden).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "15:38 and 38:81 are the identical phrase «يَوْمِ ٱلْوَقْتِ ٱلْمَعْلُومِ»: waqt is the fixed terminus, with al-ma'lum an added qualifier. 7:187 «لَا يُجَلِّيهَا لِوَقْتِهَآ إِلَّا هُوَ»: the Hour has its own waqt, decisively hidden — showing determinacy without disclosure and distinguishing the event (al-sa'ah) from its appointed time.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "38:81",
+     "verse_text": "إِلَىٰ يَوْمِ ٱلْوَقْتِ ٱلْمَعْلُومِ"
+    }
+   ],
+   "root_arabic": "و ق ت",
+   "root_buckwalter": "wqt",
+   "root_id": "wqt",
+   "artifact_name": "wqt.json",
+   "verse_ref": "38:81",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "waqoti",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِلَىٰ يَوْمِ ٱلْوَقْتِ ٱلْمَعْلُومِ"
+  },
+  {
+   "word_ref": "44:40:4:1",
+   "disposition": "CONSISTENT",
+   "note": "Eschatological appointment: 26:38/56:50 «مِيقَٰتِ يَوْمٍ مَّعْلُومٍ», 44:40 «يَوْمَ ٱلْفَصْلِ مِيقَٰتُهُمْ», 78:17 «كَانَ مِيقَٰتًا». Moses cluster: 7:143/7:155 «لِمِيقَٰتِنَا» (the appointed meeting). The shared «yawm…ma'lum» frame with C1 welds this mif'al class to the base-noun nucleus, defeating a separate-lexical-class reading. 7:142 «فَتَمَّ مِيقَٰتُ رَبِّهِۦٓ أَرْبَعِينَ لَيْلَةً» shows miqat as a bounded term reaching completion.",
+   "coverage_cluster_id": "C2_mifal_noun_miqat_singular",
+   "candidate_semantic_interpretation": "Singular mif'al noun miqat = an appointed time/term (occasion or bounded span) fixed for an event or meeting.",
+   "cluster_supporting_evidence": "8/13 tokens with the plural; the paradigmatic realization of the root's appointed-time contribution. Temporality is root-borne: even where a spatial reading could arise (li-miqatina) the parallel 7:142 = forty nights fixes it as temporal.",
+   "counterevidence": [
+    "7:142:8:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Eschatological appointment: 26:38/56:50 «مِيقَٰتِ يَوْمٍ مَّعْلُومٍ», 44:40 «يَوْمَ ٱلْفَصْلِ مِيقَٰتُهُمْ», 78:17 «كَانَ مِيقَٰتًا». Moses cluster: 7:143/7:155 «لِمِيقَٰتِنَا» (the appointed meeting). The shared «yawm…ma'lum» frame with C1 welds this mif'al class to the base-noun nucleus, defeating a separate-lexical-class reading. 7:142 «فَتَمَّ مِيقَٰتُ رَبِّهِۦٓ أَرْبَعِينَ لَيْلَةً» shows miqat as a bounded term reaching completion.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "44:40",
+     "verse_text": "إِنَّ يَوْمَ ٱلْفَصْلِ مِيقَٰتُهُمْ أَجْمَعِينَ"
+    }
+   ],
+   "root_arabic": "و ق ت",
+   "root_buckwalter": "wqt",
+   "root_id": "wqt",
+   "artifact_name": "wqt.json",
+   "verse_ref": "44:40",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "miyqa`tu",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ يَوْمَ ٱلْفَصْلِ مِيقَٰتُهُمْ أَجْمَعِينَ"
+  },
+  {
+   "word_ref": "4:103:20:1",
+   "disposition": "CONSISTENT",
+   "note": "4:103 «كِتَٰبًا مَّوْقُوتًا»: the passive participle (patient of Form-II waqqata) marks prayer as a prescription that has been fixed to appointed times.",
+   "coverage_cluster_id": "C4_passive_participle_mawqut",
+   "candidate_semantic_interpretation": "mawqut = 'made time-fixed' — the salah as a decree with appointed/recurring times.",
+   "cluster_supporting_evidence": "Morphology (patient participle of the factitive Form II) carries the 'fixing' internally, corroborating that fixedness is root-borne, not merely contextual.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "4:103 «كِتَٰبًا مَّوْقُوتًا»: the passive participle (patient of Form-II waqqata) marks prayer as a prescription that has been fixed to appointed times.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "4:103",
+     "verse_text": "فَإِذَا قَضَيْتُمُ ٱلصَّلَوٰةَ فَٱذْكُرُوا۟ ٱللَّهَ قِيَٰمًا وَقُعُودًا وَعَلَىٰ جُنُوبِكُمْ فَإِذَا ٱطْمَأْنَنتُمْ فَأَقِيمُوا۟ ٱلصَّلَوٰةَ إِنَّ ٱلصَّلَوٰةَ كَانَتْ عَلَى ٱلْمُؤْمِنِينَ كِتَٰبًا مَّوْقُوتًا"
+    }
+   ],
+   "root_arabic": "و ق ت",
+   "root_buckwalter": "wqt",
+   "root_id": "wqt",
+   "artifact_name": "wqt.json",
+   "verse_ref": "4:103",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "m~awoquwtFA",
+   "qac_tag": "ADJ",
+   "qac_pos": "ADJ",
+   "qac_verb_form": null,
+   "morphology": "ADJ",
+   "form": "ADJ",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَإِذَا قَضَيْتُمُ ٱلصَّلَوٰةَ فَٱذْكُرُوا۟ ٱللَّهَ قِيَٰمًا وَقُعُودًا وَعَلَىٰ جُنُوبِكُمْ فَإِذَا ٱطْمَأْنَنتُمْ فَأَقِيمُوا۟ ٱلصَّلَوٰةَ إِنَّ ٱلصَّلَوٰةَ كَانَتْ عَلَى ٱلْمُؤْمِنِينَ كِتَٰبًا مَّوْقُوتًا"
+  },
+  {
+   "word_ref": "56:50:3:1",
+   "disposition": "CONSISTENT",
+   "note": "Eschatological appointment: 26:38/56:50 «مِيقَٰتِ يَوْمٍ مَّعْلُومٍ», 44:40 «يَوْمَ ٱلْفَصْلِ مِيقَٰتُهُمْ», 78:17 «كَانَ مِيقَٰتًا». Moses cluster: 7:143/7:155 «لِمِيقَٰتِنَا» (the appointed meeting). The shared «yawm…ma'lum» frame with C1 welds this mif'al class to the base-noun nucleus, defeating a separate-lexical-class reading. 7:142 «فَتَمَّ مِيقَٰتُ رَبِّهِۦٓ أَرْبَعِينَ لَيْلَةً» shows miqat as a bounded term reaching completion.",
+   "coverage_cluster_id": "C2_mifal_noun_miqat_singular",
+   "candidate_semantic_interpretation": "Singular mif'al noun miqat = an appointed time/term (occasion or bounded span) fixed for an event or meeting.",
+   "cluster_supporting_evidence": "8/13 tokens with the plural; the paradigmatic realization of the root's appointed-time contribution. Temporality is root-borne: even where a spatial reading could arise (li-miqatina) the parallel 7:142 = forty nights fixes it as temporal.",
+   "counterevidence": [
+    "7:142:8:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Eschatological appointment: 26:38/56:50 «مِيقَٰتِ يَوْمٍ مَّعْلُومٍ», 44:40 «يَوْمَ ٱلْفَصْلِ مِيقَٰتُهُمْ», 78:17 «كَانَ مِيقَٰتًا». Moses cluster: 7:143/7:155 «لِمِيقَٰتِنَا» (the appointed meeting). The shared «yawm…ma'lum» frame with C1 welds this mif'al class to the base-noun nucleus, defeating a separate-lexical-class reading. 7:142 «فَتَمَّ مِيقَٰتُ رَبِّهِۦٓ أَرْبَعِينَ لَيْلَةً» shows miqat as a bounded term reaching completion.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "56:50",
+     "verse_text": "لَمَجْمُوعُونَ إِلَىٰ مِيقَٰتِ يَوْمٍ مَّعْلُومٍ"
+    }
+   ],
+   "root_arabic": "و ق ت",
+   "root_buckwalter": "wqt",
+   "root_id": "wqt",
+   "artifact_name": "wqt.json",
+   "verse_ref": "56:50",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "miyqa`ti",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لَمَجْمُوعُونَ إِلَىٰ مِيقَٰتِ يَوْمٍ مَّعْلُومٍ"
+  },
+  {
+   "word_ref": "77:11:3:1",
+   "disposition": "CONSISTENT",
+   "note": "77:11 «وَإِذَا ٱلرُّسُلُ أُقِّتَتْ»: the sole finite verb, a hapax, read via Form-II factitive morphology plus the eschatological neighbourhood (sura 77 = Day of Decision). Coheres with miqat / yawm al-fasl in the same cluster. | 77:11:3:1 «وَإِذَا ٱلرُّسُلُ أُقِّتَتْ» — a Form-II passive hapax verb; the active/dynamic semantics is not independently corroborated, so the verbal anchor is a singleton that caps distinctive breadth.",
+   "coverage_cluster_id": "C5_form_II_verb_uqqitat",
+   "candidate_semantic_interpretation": "uqqitat (Form II passive) = 'the messengers are assigned/given their appointed time.'",
+   "cluster_supporting_evidence": "The only verbal/dynamic datum for the root; under-determined and carries the most interpretive weight per token, but does not contradict the nucleus.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "77:11 «وَإِذَا ٱلرُّسُلُ أُقِّتَتْ»: the sole finite verb, a hapax, read via Form-II factitive morphology plus the eschatological neighbourhood (sura 77 = Day of Decision). Coheres with miqat / yawm al-fasl in the same cluster.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "77:11",
+     "verse_text": "وَإِذَا ٱلرُّسُلُ أُقِّتَتْ"
+    }
+   ],
+   "root_arabic": "و ق ت",
+   "root_buckwalter": "wqt",
+   "root_id": "wqt",
+   "artifact_name": "wqt.json",
+   "verse_ref": "77:11",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">uq~itato",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "II",
+   "morphology": "V(II)",
+   "form": "V(II)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِذَا ٱلرُّسُلُ أُقِّتَتْ"
+  },
+  {
+   "word_ref": "78:17:5:1",
+   "disposition": "CONSISTENT",
+   "note": "Eschatological appointment: 26:38/56:50 «مِيقَٰتِ يَوْمٍ مَّعْلُومٍ», 44:40 «يَوْمَ ٱلْفَصْلِ مِيقَٰتُهُمْ», 78:17 «كَانَ مِيقَٰتًا». Moses cluster: 7:143/7:155 «لِمِيقَٰتِنَا» (the appointed meeting). The shared «yawm…ma'lum» frame with C1 welds this mif'al class to the base-noun nucleus, defeating a separate-lexical-class reading. 7:142 «فَتَمَّ مِيقَٰتُ رَبِّهِۦٓ أَرْبَعِينَ لَيْلَةً» shows miqat as a bounded term reaching completion.",
+   "coverage_cluster_id": "C2_mifal_noun_miqat_singular",
+   "candidate_semantic_interpretation": "Singular mif'al noun miqat = an appointed time/term (occasion or bounded span) fixed for an event or meeting.",
+   "cluster_supporting_evidence": "8/13 tokens with the plural; the paradigmatic realization of the root's appointed-time contribution. Temporality is root-borne: even where a spatial reading could arise (li-miqatina) the parallel 7:142 = forty nights fixes it as temporal.",
+   "counterevidence": [
+    "7:142:8:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Eschatological appointment: 26:38/56:50 «مِيقَٰتِ يَوْمٍ مَّعْلُومٍ», 44:40 «يَوْمَ ٱلْفَصْلِ مِيقَٰتُهُمْ», 78:17 «كَانَ مِيقَٰتًا». Moses cluster: 7:143/7:155 «لِمِيقَٰتِنَا» (the appointed meeting). The shared «yawm…ma'lum» frame with C1 welds this mif'al class to the base-noun nucleus, defeating a separate-lexical-class reading. 7:142 «فَتَمَّ مِيقَٰتُ رَبِّهِۦٓ أَرْبَعِينَ لَيْلَةً» shows miqat as a bounded term reaching completion.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "78:17",
+     "verse_text": "إِنَّ يَوْمَ ٱلْفَصْلِ كَانَ مِيقَٰتًا"
+    }
+   ],
+   "root_arabic": "و ق ت",
+   "root_buckwalter": "wqt",
+   "root_id": "wqt",
+   "artifact_name": "wqt.json",
+   "verse_ref": "78:17",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "miyqa`tFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ يَوْمَ ٱلْفَصْلِ كَانَ مِيقَٰتًا"
+  },
+  {
+   "word_ref": "7:142:8:1",
+   "disposition": "CONSISTENT",
+   "note": "Eschatological appointment: 26:38/56:50 «مِيقَٰتِ يَوْمٍ مَّعْلُومٍ», 44:40 «يَوْمَ ٱلْفَصْلِ مِيقَٰتُهُمْ», 78:17 «كَانَ مِيقَٰتًا». Moses cluster: 7:143/7:155 «لِمِيقَٰتِنَا» (the appointed meeting). The shared «yawm…ma'lum» frame with C1 welds this mif'al class to the base-noun nucleus, defeating a separate-lexical-class reading. 7:142 «فَتَمَّ مِيقَٰتُ رَبِّهِۦٓ أَرْبَعِينَ لَيْلَةً» shows miqat as a bounded term reaching completion. | 7:142:8:1 «فَتَمَّ مِيقَٰتُ رَبِّهِۦٓ أَرْبَعِينَ لَيْلَةً» — the miqat is completed (tamma) and quantified as forty nights, forcing the nucleus to widen from 'fixed point' to 'fixed point or bounded term.'",
+   "coverage_cluster_id": "C2_mifal_noun_miqat_singular",
+   "candidate_semantic_interpretation": "Singular mif'al noun miqat = an appointed time/term (occasion or bounded span) fixed for an event or meeting.",
+   "cluster_supporting_evidence": "8/13 tokens with the plural; the paradigmatic realization of the root's appointed-time contribution. Temporality is root-borne: even where a spatial reading could arise (li-miqatina) the parallel 7:142 = forty nights fixes it as temporal.",
+   "counterevidence": [
+    "7:142:8:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Eschatological appointment: 26:38/56:50 «مِيقَٰتِ يَوْمٍ مَّعْلُومٍ», 44:40 «يَوْمَ ٱلْفَصْلِ مِيقَٰتُهُمْ», 78:17 «كَانَ مِيقَٰتًا». Moses cluster: 7:143/7:155 «لِمِيقَٰتِنَا» (the appointed meeting). The shared «yawm…ma'lum» frame with C1 welds this mif'al class to the base-noun nucleus, defeating a separate-lexical-class reading. 7:142 «فَتَمَّ مِيقَٰتُ رَبِّهِۦٓ أَرْبَعِينَ لَيْلَةً» shows miqat as a bounded term reaching completion.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:142",
+     "verse_text": "وَوَٰعَدْنَا مُوسَىٰ ثَلَٰثِينَ لَيْلَةً وَأَتْمَمْنَٰهَا بِعَشْرٍ فَتَمَّ مِيقَٰتُ رَبِّهِۦٓ أَرْبَعِينَ لَيْلَةً وَقَالَ مُوسَىٰ لِأَخِيهِ هَٰرُونَ ٱخْلُفْنِى فِى قَوْمِى وَأَصْلِحْ وَلَا تَتَّبِعْ سَبِيلَ ٱلْمُفْسِدِينَ"
+    }
+   ],
+   "root_arabic": "و ق ت",
+   "root_buckwalter": "wqt",
+   "root_id": "wqt",
+   "artifact_name": "wqt.json",
+   "verse_ref": "7:142",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "miyqa`tu",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَوَٰعَدْنَا مُوسَىٰ ثَلَٰثِينَ لَيْلَةً وَأَتْمَمْنَٰهَا بِعَشْرٍ فَتَمَّ مِيقَٰتُ رَبِّهِۦٓ أَرْبَعِينَ لَيْلَةً وَقَالَ مُوسَىٰ لِأَخِيهِ هَٰرُونَ ٱخْلُفْنِى فِى قَوْمِى وَأَصْلِحْ وَلَا تَتَّبِعْ سَبِيلَ ٱلْمُفْسِدِينَ"
+  },
+  {
+   "word_ref": "7:143:4:2",
+   "disposition": "CONSISTENT",
+   "note": "Eschatological appointment: 26:38/56:50 «مِيقَٰتِ يَوْمٍ مَّعْلُومٍ», 44:40 «يَوْمَ ٱلْفَصْلِ مِيقَٰتُهُمْ», 78:17 «كَانَ مِيقَٰتًا». Moses cluster: 7:143/7:155 «لِمِيقَٰتِنَا» (the appointed meeting). The shared «yawm…ma'lum» frame with C1 welds this mif'al class to the base-noun nucleus, defeating a separate-lexical-class reading. 7:142 «فَتَمَّ مِيقَٰتُ رَبِّهِۦٓ أَرْبَعِينَ لَيْلَةً» shows miqat as a bounded term reaching completion.",
+   "coverage_cluster_id": "C2_mifal_noun_miqat_singular",
+   "candidate_semantic_interpretation": "Singular mif'al noun miqat = an appointed time/term (occasion or bounded span) fixed for an event or meeting.",
+   "cluster_supporting_evidence": "8/13 tokens with the plural; the paradigmatic realization of the root's appointed-time contribution. Temporality is root-borne: even where a spatial reading could arise (li-miqatina) the parallel 7:142 = forty nights fixes it as temporal.",
+   "counterevidence": [
+    "7:142:8:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Eschatological appointment: 26:38/56:50 «مِيقَٰتِ يَوْمٍ مَّعْلُومٍ», 44:40 «يَوْمَ ٱلْفَصْلِ مِيقَٰتُهُمْ», 78:17 «كَانَ مِيقَٰتًا». Moses cluster: 7:143/7:155 «لِمِيقَٰتِنَا» (the appointed meeting). The shared «yawm…ma'lum» frame with C1 welds this mif'al class to the base-noun nucleus, defeating a separate-lexical-class reading. 7:142 «فَتَمَّ مِيقَٰتُ رَبِّهِۦٓ أَرْبَعِينَ لَيْلَةً» shows miqat as a bounded term reaching completion.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:143",
+     "verse_text": "وَلَمَّا جَآءَ مُوسَىٰ لِمِيقَٰتِنَا وَكَلَّمَهُۥ رَبُّهُۥ قَالَ رَبِّ أَرِنِىٓ أَنظُرْ إِلَيْكَ قَالَ لَن تَرَىٰنِى وَلَٰكِنِ ٱنظُرْ إِلَى ٱلْجَبَلِ فَإِنِ ٱسْتَقَرَّ مَكَانَهُۥ فَسَوْفَ تَرَىٰنِى فَلَمَّا تَجَلَّىٰ رَبُّهُۥ لِلْجَبَلِ جَعَلَهُۥ دَكًّا وَخَرَّ مُوسَىٰ صَعِقًا فَلَمَّآ أَفَاقَ قَالَ سُبْحَٰنَكَ تُبْتُ إِلَيْكَ وَأَنَا۠ أَوَّلُ ٱلْمُؤْمِنِينَ"
+    }
+   ],
+   "root_arabic": "و ق ت",
+   "root_buckwalter": "wqt",
+   "root_id": "wqt",
+   "artifact_name": "wqt.json",
+   "verse_ref": "7:143",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "miyqa`ti",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَمَّا جَآءَ مُوسَىٰ لِمِيقَٰتِنَا وَكَلَّمَهُۥ رَبُّهُۥ قَالَ رَبِّ أَرِنِىٓ أَنظُرْ إِلَيْكَ قَالَ لَن تَرَىٰنِى وَلَٰكِنِ ٱنظُرْ إِلَى ٱلْجَبَلِ فَإِنِ ٱسْتَقَرَّ مَكَانَهُۥ فَسَوْفَ تَرَىٰنِى فَلَمَّا تَجَلَّىٰ رَبُّهُۥ لِلْجَبَلِ جَعَلَهُۥ دَكًّا وَخَرَّ مُوسَىٰ صَعِقًا فَلَمَّآ أَفَاقَ قَالَ سُبْحَٰنَكَ تُبْتُ إِلَيْكَ وَأَنَا۠ أَوَّلُ ٱلْمُؤْمِنِينَ"
+  },
+  {
+   "word_ref": "7:155:6:2",
+   "disposition": "CONSISTENT",
+   "note": "Eschatological appointment: 26:38/56:50 «مِيقَٰتِ يَوْمٍ مَّعْلُومٍ», 44:40 «يَوْمَ ٱلْفَصْلِ مِيقَٰتُهُمْ», 78:17 «كَانَ مِيقَٰتًا». Moses cluster: 7:143/7:155 «لِمِيقَٰتِنَا» (the appointed meeting). The shared «yawm…ma'lum» frame with C1 welds this mif'al class to the base-noun nucleus, defeating a separate-lexical-class reading. 7:142 «فَتَمَّ مِيقَٰتُ رَبِّهِۦٓ أَرْبَعِينَ لَيْلَةً» shows miqat as a bounded term reaching completion.",
+   "coverage_cluster_id": "C2_mifal_noun_miqat_singular",
+   "candidate_semantic_interpretation": "Singular mif'al noun miqat = an appointed time/term (occasion or bounded span) fixed for an event or meeting.",
+   "cluster_supporting_evidence": "8/13 tokens with the plural; the paradigmatic realization of the root's appointed-time contribution. Temporality is root-borne: even where a spatial reading could arise (li-miqatina) the parallel 7:142 = forty nights fixes it as temporal.",
+   "counterevidence": [
+    "7:142:8:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Eschatological appointment: 26:38/56:50 «مِيقَٰتِ يَوْمٍ مَّعْلُومٍ», 44:40 «يَوْمَ ٱلْفَصْلِ مِيقَٰتُهُمْ», 78:17 «كَانَ مِيقَٰتًا». Moses cluster: 7:143/7:155 «لِمِيقَٰتِنَا» (the appointed meeting). The shared «yawm…ma'lum» frame with C1 welds this mif'al class to the base-noun nucleus, defeating a separate-lexical-class reading. 7:142 «فَتَمَّ مِيقَٰتُ رَبِّهِۦٓ أَرْبَعِينَ لَيْلَةً» shows miqat as a bounded term reaching completion.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:155",
+     "verse_text": "وَٱخْتَارَ مُوسَىٰ قَوْمَهُۥ سَبْعِينَ رَجُلًا لِّمِيقَٰتِنَا فَلَمَّآ أَخَذَتْهُمُ ٱلرَّجْفَةُ قَالَ رَبِّ لَوْ شِئْتَ أَهْلَكْتَهُم مِّن قَبْلُ وَإِيَّٰىَ أَتُهْلِكُنَا بِمَا فَعَلَ ٱلسُّفَهَآءُ مِنَّآ إِنْ هِىَ إِلَّا فِتْنَتُكَ تُضِلُّ بِهَا مَن تَشَآءُ وَتَهْدِى مَن تَشَآءُ أَنتَ وَلِيُّنَا فَٱغْفِرْ لَنَا وَٱرْحَمْنَا وَأَنتَ خَيْرُ ٱلْغَٰفِرِينَ"
+    }
+   ],
+   "root_arabic": "و ق ت",
+   "root_buckwalter": "wqt",
+   "root_id": "wqt",
+   "artifact_name": "wqt.json",
+   "verse_ref": "7:155",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "miyqa`ti",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱخْتَارَ مُوسَىٰ قَوْمَهُۥ سَبْعِينَ رَجُلًا لِّمِيقَٰتِنَا فَلَمَّآ أَخَذَتْهُمُ ٱلرَّجْفَةُ قَالَ رَبِّ لَوْ شِئْتَ أَهْلَكْتَهُم مِّن قَبْلُ وَإِيَّٰىَ أَتُهْلِكُنَا بِمَا فَعَلَ ٱلسُّفَهَآءُ مِنَّآ إِنْ هِىَ إِلَّا فِتْنَتُكَ تُضِلُّ بِهَا مَن تَشَآءُ وَتَهْدِى مَن تَشَآءُ أَنتَ وَلِيُّنَا فَٱغْفِرْ لَنَا وَٱرْحَمْنَا وَأَنتَ خَيْرُ ٱلْغَٰفِرِينَ"
+  },
+  {
+   "word_ref": "7:187:13:2",
+   "disposition": "CONSISTENT",
+   "note": "15:38 and 38:81 are the identical phrase «يَوْمِ ٱلْوَقْتِ ٱلْمَعْلُومِ»: waqt is the fixed terminus, with al-ma'lum an added qualifier. 7:187 «لَا يُجَلِّيهَا لِوَقْتِهَآ إِلَّا هُوَ»: the Hour has its own waqt, decisively hidden — showing determinacy without disclosure and distinguishing the event (al-sa'ah) from its appointed time.",
+   "coverage_cluster_id": "C1_base_noun_waqt",
+   "candidate_semantic_interpretation": "Base noun waqt = a determinate temporal locus (the fixed moment/time set for an event).",
+   "cluster_supporting_evidence": "Determinacy is carried by the base noun itself; knownness is external (al-ma'lum in 15:38/38:81) and can be absent (7:187 hidden).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "15:38 and 38:81 are the identical phrase «يَوْمِ ٱلْوَقْتِ ٱلْمَعْلُومِ»: waqt is the fixed terminus, with al-ma'lum an added qualifier. 7:187 «لَا يُجَلِّيهَا لِوَقْتِهَآ إِلَّا هُوَ»: the Hour has its own waqt, decisively hidden — showing determinacy without disclosure and distinguishing the event (al-sa'ah) from its appointed time.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:187",
+     "verse_text": "يَسْـَٔلُونَكَ عَنِ ٱلسَّاعَةِ أَيَّانَ مُرْسَىٰهَا قُلْ إِنَّمَا عِلْمُهَا عِندَ رَبِّى لَا يُجَلِّيهَا لِوَقْتِهَآ إِلَّا هُوَ ثَقُلَتْ فِى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ لَا تَأْتِيكُمْ إِلَّا بَغْتَةً يَسْـَٔلُونَكَ كَأَنَّكَ حَفِىٌّ عَنْهَا قُلْ إِنَّمَا عِلْمُهَا عِندَ ٱللَّهِ وَلَٰكِنَّ أَكْثَرَ ٱلنَّاسِ لَا يَعْلَمُونَ"
+    }
+   ],
+   "root_arabic": "و ق ت",
+   "root_buckwalter": "wqt",
+   "root_id": "wqt",
+   "artifact_name": "wqt.json",
+   "verse_ref": "7:187",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "waqoti",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَسْـَٔلُونَكَ عَنِ ٱلسَّاعَةِ أَيَّانَ مُرْسَىٰهَا قُلْ إِنَّمَا عِلْمُهَا عِندَ رَبِّى لَا يُجَلِّيهَا لِوَقْتِهَآ إِلَّا هُوَ ثَقُلَتْ فِى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ لَا تَأْتِيكُمْ إِلَّا بَغْتَةً يَسْـَٔلُونَكَ كَأَنَّكَ حَفِىٌّ عَنْهَا قُلْ إِنَّمَا عِلْمُهَا عِندَ ٱللَّهِ وَلَٰكِنَّ أَكْثَرَ ٱلنَّاسِ لَا يَعْلَمُونَ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Cross-lens: Analysts A and B independently derived the same nucleus and graded STRONG; adversary C independently confirmed no contradicting occurrence but argued the nominal-dominant, formulaic, hapax-anchored, abstraction-leaning evidence caps below STRONG. The aggregator adopts C's calibrated ceiling.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "wqt = the fixing/designation of a determinate, appointed temporal boundary — a set point OR a bounded term at/for which something occurs. It supplies the appointedness/fixedness of a time, not time-as-flow or duration-as-such, not the event/entity itself, and not place.",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "DERIVATIONAL_FAMILY",
+ "layer_attribution": {
+  "occurrence_evidence": "13/13 confirmed occurrences read with QAC morphology: base noun waqt x3 (15:38:3:2, 38:81:3:2, 7:187:13:2), mif'al singular miqat x7 (26:38, 44:40, 56:50, 78:17, 7:142, 7:143, 7:155), mif'al plural mawaqit x1 (2:189), passive participle mawqut x1 (4:103), Form-II passive verb uqqitat x1 (77:11).",
+  "derivation": "The root is realized across a derivational family unified by one nucleus: base noun = the fixed time; mif'al noun miqat/mawaqit = the appointed-time/instrument by which time is fixed; passive participle mawqut = 'made-time-fixed' (patient of the factitive Form II waqqata); Form-II passive uqqitat = 'to have a time fixed/assigned.' The factitive Form-II morphology encodes appointing/fixing, not merely 'time.'",
+  "lexical_class": "miqat (with its plural mawaqit) is a partly lexicalized mif'al nominal dominating 8/13 tokens; it is Quran-internally bridged to the base noun by the shared «yawm…ma'lum» frame, so it is a paradigmatic realization of the root contribution rather than a resistant separate class — but its lexicalized, formulaic dominance is a principal reason the grade is capped at MODERATE/REPRESENTATIVE.",
+  "contextual_relation": "Contextual notions — gathering/meeting (jumi'a, majmu'un, ja'a), decision (yawm al-fasl), respite (Iblis), Moses's tryst, Hajj scheduling, and the count of a span (forty nights, seventy men) — are supplied by neighbouring lexemes, NOT by wqt. The root contributes only the fixed-time framing; these narrative meanings must not be absorbed into the root claim.",
+  "reconciliation": "Lenses A and B (STRONG/UNIVERSAL) and adversary C (MODERATE/REPRESENTATIVE) converge on the same nucleus and on the absence of any contradicting occurrence; they diverge only on grade. Reconciled to MODERATE/REPRESENTATIVE (DERIVATIONAL_FAMILY): the unity is real and uncontradicted (so PREFERRED, not UNRESOLVED), but nominal-dominance, formulaic inflation, a single hapax verbal anchor, and an abstraction-leaning nucleus preclude STRONG.",
+  "unresolved_resistance": "No genuine resistant sub-class and no persisted resistance: the two boundary occurrences (7:142 bounded term; 2:189 recurring calendrical marker) and the hapax verb (77:11) all bridge to the nucleus. Residual, non-fatal limits are the thin verbal corroboration (one hapax) and the mild calendrical scope-stretch of 2:189, recorded as adversarial boundaries rather than resistance."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "7:142:8:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "miqat here is a bounded term/duration ('completed at forty nights'), not a punctual instant, blocking the narrower 'fixed moment/deadline' formulation and reducing the nucleus's discriminating sharpness.",
+   "evidence_basis": {
+    "kind": "SURFACE_COLLOCATION",
+    "statement": "7:142:8:1 «فَتَمَّ مِيقَٰتُ رَبِّهِۦٓ أَرْبَعِينَ لَيْلَةً» — the miqat is completed (tamma) and quantified as forty nights, forcing the nucleus to widen from 'fixed point' to 'fixed point or bounded term.'"
+   }
+  },
+  {
+   "word_ref": "2:189:6:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "mawaqit are periodic calendrical instruments for mundane human/Hajj reckoning, the widest scope-stretch away from the dominant single-divine-appointment sense; it marks the outer boundary of the nucleus.",
+   "evidence_basis": {
+    "kind": "SURFACE_COLLOCATION",
+    "statement": "2:189:6:1 «هِىَ مَوَٰقِيتُ لِلنَّاسِ وَٱلْحَجِّ» — recurring calendrical markers for people and Hajj, a recurring-marker flavor distinct from the one-off appointment, confirming the mif'al = instruments for fixing time rather than a single eschatological point."
+   }
+  },
+  {
+   "word_ref": "77:11:3:1",
+   "role": "STRUCTURAL_ATYPICALITY",
+   "reason": "The sole finite verb and a hapax; the entire dynamic/verbal 'to appoint a time' sense of the root rests on this single datum, read via morphology plus context rather than any internal verbal parallel.",
+   "evidence_basis": {
+    "kind": "MORPHOLOGY",
+    "statement": "77:11:3:1 «وَإِذَا ٱلرُّسُلُ أُقِّتَتْ» — a Form-II passive hapax verb; the active/dynamic semantics is not independently corroborated, so the verbal anchor is a singleton that caps distinctive breadth."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "No occurrence attains final-RESISTANT disposition — the nucleus is uncontradicted across all 13. The hard cases are evidence-derived adversarial boundaries (7:142 bounded term; 2:189 recurring calendrical marker) and a structural atypicality (77:11 hapax verb) that constrain the calibrated width and cap the grade at MODERATE, not resistant seams. Each hard case's statement also appears as strongest_counterexample (7:142) or in its cluster note (2:189 in C3; 77:11 in C5)."
+ },
+ "rejection_condition": {
+  "challenging_finding": "An occurrence of wqt used for undifferentiated flowing time, a lifespan/age/epoch, or a mere duration WITHOUT any appointed/fixed boundary — i.e., the root supplying 'time-as-such' rather than a set/appointed time.",
+  "search_location": "Re-examine every base-noun waqt (15:38:3:2, 38:81:3:2, 7:187:13:2) and any miqat that lacks an anchoring event/terminus, checking whether the fixedness is carried by wqt or only by surrounding words (yawm, ma'lum, tamma, ruslu).",
+  "verification_method": "Strip each occurrence of its external qualifiers (al-ma'lum, yawm, arba'in laylah, li-...) and test whether a determinate/appointed reading survives on wqt alone; compare against the contrastive frames al-sa'ah (7:187) and yawm (15:38, 26:38, 44:40, 78:17).",
+  "confounder_control": "Distinguish root-borne fixedness from modifier-borne knownness (al-ma'lum) and from context-borne event content (jumi'a/majmu'un, yawm al-fasl); do not credit the root with meanings supplied by adjacent lexemes or by the count words (forty nights, seventy men).",
+  "failure_consequence": "If a genuine flowing-time / duration-as-such use is found that resists the appointed-boundary nucleus, downgrade from MODERATE and either narrow to a LEXICALIZED_CLASS around miqat or move to UNRESOLVED_CLASS_ONLY if the base noun and mif'al noun no longer share one bridge."
+ },
+ "falsification_status": "NOT_RUN",
+ "reopen_conditions": [
+  "If a second independent Form-II or other finite verb of wqt is identified in the corpus, re-test whether the dynamic 'to appoint a time' sense (now resting solely on the hapax 77:11 uqqitat) is corroborated, which could lift the grade toward STRONG.",
+  "If a base-noun waqt or miqat is found functioning as a spatial locus/meeting-PLACE (rather than temporally, as in 2:189 crescents and 7:142 forty nights), reopen the negative boundary 'not place' and reconsider whether miqat is a partially lexicalized class distinct from base waqt.",
+  "If any wqt occurrence is read as generic flowing time or duration-as-such without an appointed boundary, reopen the core nucleus and the base-vs-mif'al bridge (currently welded by the «yawm…ma'lum» collocation shared across 15:38/38:81 and 26:38/56:50)."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "15:38:3:2",
+  "38:81:3:2",
+  "7:187:13:2",
+  "26:38:3:2",
+  "44:40:4:1",
+  "56:50:3:1",
+  "78:17:5:1",
+  "7:143:4:2",
+  "7:155:6:2",
+  "4:103:20:1",
+  "77:11:3:1"
+ ],
+ "counterevidence_refs": [
+  "7:142:8:1",
+  "2:189:6:1"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "wqt-falsify-appointed-time-boundary",
+  "verdict": "SUPPORTED_WITH_RESERVATIONS",
+  "falsifiable": true,
+  "distinctiveness_ok": false,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "C1_base_noun_waqt",
+   "C2_mifal_noun_miqat_singular",
+   "C3_mifal_plural_mawaqit",
+   "C4_passive_participle_mawqut",
+   "C5_form_II_verb_uqqitat"
+  ],
+  "status_rationale": "No occurrence contradicts the appointed-time-boundary nucleus, so the adversarial attempt returns SUPPORTED and neither RESISTANT nor UNRESOLVED is warranted. A full PASS is NOT claimed (hence NOT_RUN): distinctiveness_ok is set false because the nucleus rests on an abstraction ('determinacy/fixedness of time') that is non-vacuous but not sharply discriminating, breadth is inflated by formulaic repetition (~8 independent contexts among 13), 12/13 tokens are nominal/adjectival, and the sole verbal anchor is a hapax (77:11). These reservations cap the grade at MODERATE rather than certifying a clean adversarial PASS."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "wqt: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "wqt: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "wqt: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "wqt: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "wqt: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "wqt: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "wqt: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "wqt: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

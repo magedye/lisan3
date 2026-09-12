@@ -1,0 +1,2014 @@
+{
+ "root_arabic": "ا ل و",
+ "root_buckwalter": "Alw",
+ "root_id": "Alw",
+ "artifact_name": "Alw.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave4",
+ "occurrences": 37,
+ "frozen_candidate_root_contribution": null,
+ "internal_discovery": {
+  "candidate_root_contribution": null,
+  "plain_explanation": "The 37 tokens tagged to root ا-ل-و do not form one semantic field. 34 of 37 are the fixed broken plural ءَالَآء ('the Lord's bestowed favors/bounties'), a lexicalized noun always in construct with the divine (رَبّ / ٱللَّه) and always the object of an acknowledgment verb — to be remembered (7:69, 7:74), not doubted (53:55), or not denied (the 31x Surah-55 refrain plus its 53:55 twin). The remaining 3 are finite verbs in three different forms with three different argument frames, all in the privative/withholding zone: يَأْلُونَ (Form I, 3:118) 'fall short / stint / spare no effort'; يُؤْلُونَ (Form IV, 2:226) 'swear a binding oath of conjugal abstention'; and يَأْتَلِ (Form VIII, 24:22), irreducibly ambiguous between 'swear not to give' and 'fall short of giving.' The noun (bestowed favor) and the verbs (withholding/stinting) sit at opposite poles of a notional giving axis, but the Quran nowhere links them: no shared collocation, no derivational base token, no occurrence bridging favor to swearing/falling-short. Because the bridge across the two classes is not Quran-internally demonstrated, the honest result is an unresolved, multi-class partition rather than a forced single nucleus. Each class is separately coherent (the noun cleanly, the verb only loosely across its own three forms), but no root-wide meaning survives.",
+  "layer_separation_note": "The nominal ءَالَآء does NOT carry any verbal or withholding force: it is exclusively a received benefit, always plural, always in construct with the divine, always an object of acknowledgment (remember / do-not-deny / do-not-doubt), never an agent or an act, never human-to-human giving, never harm. The verbs do NOT mean 'bounty/favor' and never occur in construct with the divine; they are privative. The Form IV 'oath' sense (2:226) is specifically a self-binding oath of abstention (fixed by تَرَبُّص أَرْبَعَةِ أَشْهُر + resolution فَآءُو), NOT generic swearing and NOT reducible to Form I's plain 'fall short.' The verbal class is itself not a single lexeme: مِن-government (2:226), double accusative (3:118), and أَن-complement (24:22) are three distinct valencies. The root does NOT exhibit a single distinctive abstract meaning; any gloss wide enough to cover 'divine favors' + 'swear abstention' + 'stint effort' has no predictive content and is forbidden as a fit-everything abstraction.",
+  "presence": {
+   "occurrences_total": 37,
+   "occurrences_checked": 37,
+   "occurrences_consistent": 35,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "Juxtapose 2:226:2:1 يُؤْلُونَ مِن نِّسَآئِهِمْ ('those who swear to withhold from their wives') against 55:13:2:1 / 53:55:2:1 ءَالَآءِ رَبِّكُمَا/رَبِّكَ ('the bounties of your Lord'). A single nucleus must make 'swearing to withhold conjugal relations' and 'granted divine bounties' instances of one meaning — but they are opposite in direction of transfer (withholding vs. bestowing) and share zero Quran-internal collocational or morphological bridge. If the nucleus is 'favor/bounty' (the 92% reading), 2:226 disproves it; if the nucleus is 'binding withholding/restraint,' the ءَالَآء refrain disproves it. No single nucleus escapes both blocs; this pair is the decisive evidence that the QAC bucket is a homographic/derivational conflation, not a semantic unity.",
+  "strongest_competitor": "The best unifier is a 'giving-axis / withholding-vs-release polarity': read ءَالَآء as the positive pole ('what God releases/bestows') and the verbs as the negative pole ('to hold back'), with 24:22 cited as support because it pairs bounty-possessors (أُو۟لُوا۟ ٱلْفَضْلِ) + a giving act (أَن يُؤْتُوٓا۟) + the Alw-verb of withholding in one clause. It fails the narrowness test: (1) making the noun mean the opposite of the verb is a semantic reversal with zero Quran-internal warrant — the corpus never associates ءَالَآء with withholding or its negation; (2) the 24:22 bridge is thematic, not lexical — the 'bounty' word there is ٱلْفَضْل (root F-D-L), not ءَالَآء; (3) it is post-hoc and predicts nothing distinctive; (4) it under-describes 2:226 (drops the sworn/legal core) and mis-signs 3:118 (whose force is the negation, sparing no effort). The narrower two-class account is strictly better supported.",
+  "competing_hypothesis": "The best unifier is a 'giving-axis / withholding-vs-release polarity': read ءَالَآء as the positive pole ('what God releases/bestows') and the verbs as the negative pole ('to hold back'), with 24:22 cited as support because it pairs bounty-possessors (أُو۟لُوا۟ ٱلْفَضْلِ) + a giving act (أَن يُؤْتُوٓا۟) + the Alw-verb of withholding in one clause. It fails the narrowness test: (1) making the noun mean the opposite of the verb is a semantic reversal with zero Quran-internal warrant — the corpus never associates ءَالَآء with withholding or its negation; (2) the 24:22 bridge is thematic, not lexical — the 'bounty' word there is ٱلْفَضْل (root F-D-L), not ءَالَآء; (3) it is post-hoc and predicts nothing distinctive; (4) it under-describes 2:226 (drops the sworn/legal core) and mis-signs 3:118 (whose force is the negation, sparing no effort). The narrower two-class account is strictly better supported.",
+  "unresolved_cases": [],
+  "result": "UNRESOLVED",
+  "result_strength": "UNRESOLVED",
+  "rationale": "All three independent lenses (A, B, adversary C) converged on the same structure: a dominant lexicalized nominal class (ءَالَآء, 34/37, but only ~3 genuinely distinct syntactic environments because 31 tokens are one repeated Surah-55 refrain — high frequency is not independent evidential breadth) and a 3-token verbal class that is itself under-unified (3 forms, 3 valencies, one irreducibly ambiguous token). No Quran-internal operation converts the verb into the noun or vice versa, and no occurrence links the two senses. Per the contract, two+ senses with no demonstrated bridge require UNRESOLVED rather than a forced nucleus; a resistant lexicalized/nominal class caps any unification, and here that class is not a minority sub-class but the dominant mass. The per-class characterizations are recorded (noun coherent; verb structurally uncertain), but the root-unification claim is Quran-internally disproven, so research_state=UNRESOLVED and result_strength=UNRESOLVED.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "alaa_nominal_favor",
+     "where": {
+      "qac_pos": [
+       "N"
+      ],
+      "forms": [
+       "N"
+      ]
+     },
+     "occurrence_count_expected": 34,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+     "classification_rationale": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+     "supporting_evidence_note": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+     "counterevidence": [
+      "2:226:2:1",
+      "3:118:10:1"
+     ]
+    },
+    {
+     "cluster_id": "verb_withholding_stinting",
+     "where": {
+      "qac_pos": [
+       "V"
+      ],
+      "qac_verb_form": [
+       null,
+       "IV",
+       "VIII"
+      ],
+      "forms": [
+       "V",
+       "V(IV)",
+       "V(VIII)"
+      ]
+     },
+     "occurrence_count_expected": 3,
+     "disposition": "STRUCTURAL_UNCERTAINTY",
+     "candidate_semantic_interpretation": "A privative verbal zone — to hold back / fall short / stint, sometimes by self-binding oath — but not a single demonstrated lexeme: Form I (3:118) 'fall short / spare no effort' (double accusative, لَا يَأْلُونَكُمْ خَبَالًا); Form IV (2:226) 'swear a binding oath of conjugal abstention' (مِن-government + four-month term + فَآءُو); Form VIII (24:22) irreducibly ambiguous between 'swear not to give' and 'fall short of giving' (أَن-complement).",
+     "classification_rationale": "Only 3 tokens across 3 forms with 3 distinct valencies; the specialized 'binding oath of abstention' sense in Form IV is a derivational specialization not predictable from Form I's plain 'fall short,' and Form VIII does not resolve between the two. The verbal class shares only the consonantal skeleton with the noun and is near-antonymic to it (withholding vs. bestowing). Internal unity is under-determined by the evidence, hence STRUCTURAL_UNCERTAINTY.",
+     "supporting_evidence_note": "3:118 is the one unambiguous general sense ('fall short / stint effort'); 2:226 fixes the sworn-abstention sense contextually via تَرَبُّص + فَآءُو; 24:22's negated verb + أَن يُؤْتُوٓا۟ ('that they give') places the token on the giving/withholding boundary without deciding oath vs. shortfall.",
+     "counterevidence": [
+      "24:22:2:1",
+      "55:13:2:1"
+     ]
+    }
+   ],
+   "reconciliation": [
+    {
+     "word_ref": "24:22:2:1",
+     "final": "STRUCTURAL_UNCERTAINTY",
+     "rationale": "On review, the token does not resolve between the Form IV 'swear (an oath not to give)' sense and the Form I 'fall short of giving' sense — both cohere with the following وَلْيَعْفُوا۟ وَلْيَصْفَحُوٓا۟. Two distinct senses each independently satisfying the frame is evidence they are distinct, not one; the ambiguity persists and caps verbal-class unity."
+    }
+   ]
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "Alw",
+  "verdict": "NOT_REQUIRED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": false,
+  "falsifiable": true,
+  "notes": "There is no unified root claim to falsify: the result is an UNRESOLVED, unbridged two-class partition. Adversarial testing (Lens C and the aggregation) sought the strongest unifier ('giving-axis / withholding-vs-release polarity') and refuted it as a post-hoc reversal with no Quran-internal warrant. Because the honest verdict is unresolved-class-only, a unified-claim falsification run is NOT_REQUIRED; distinctiveness_ok is false precisely because no single distinctive nucleus survives."
+ },
+ "coverage_validation": {
+  "root": "Alw",
+  "expected_count": 37,
+  "researched_count": 37,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "24:22:2:1",
+   "disposition": "STRUCTURAL_UNCERTAINTY",
+   "note": "Irreducible intra-verbal ambiguity; caps any claim of internal verbal unity and marks the adversarial boundary of the verbal class.",
+   "coverage_cluster_id": "verb_withholding_stinting",
+   "candidate_semantic_interpretation": "A privative verbal zone — to hold back / fall short / stint, sometimes by self-binding oath — but not a single demonstrated lexeme: Form I (3:118) 'fall short / spare no effort' (double accusative, لَا يَأْلُونَكُمْ خَبَالًا); Form IV (2:226) 'swear a binding oath of conjugal abstention' (مِن-government + four-month term + فَآءُو); Form VIII (24:22) irreducibly ambiguous between 'swear not to give' and 'fall short of giving' (أَن-complement).",
+   "cluster_supporting_evidence": "3:118 is the one unambiguous general sense ('fall short / stint effort'); 2:226 fixes the sworn-abstention sense contextually via تَرَبُّص + فَآءُو; 24:22's negated verb + أَن يُؤْتُوٓا۟ ('that they give') places the token on the giving/withholding boundary without deciding oath vs. shortfall.",
+   "counterevidence": [
+    "24:22:2:1",
+    "55:13:2:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Initially readable within the verbal withholding class (withholding giving to kin).",
+   "final_disposition": "STRUCTURAL_UNCERTAINTY",
+   "reconciliation_rationale": "On review, the token does not resolve between the Form IV 'swear (an oath not to give)' sense and the Form I 'fall short of giving' sense — both cohere with the following وَلْيَعْفُوا۟ وَلْيَصْفَحُوٓا۟. Two distinct senses each independently satisfying the frame is evidence they are distinct, not one; the ambiguity persists and caps verbal-class unity.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "24:22:2:1",
+     "preliminary_disposition": "CONSISTENT",
+     "preliminary_note": "Tentatively assigned to the verbal withholding class as 'withhold giving to kin.'",
+     "final_disposition": "STRUCTURAL_UNCERTAINTY",
+     "reconciliation_rationale": "On review, the token does not resolve between the Form IV 'swear (an oath not to give)' sense and the Form I 'fall short of giving' sense — both cohere with the following وَلْيَعْفُوا۟ وَلْيَصْفَحُوٓا۟. Two distinct senses each independently satisfying the frame is evidence they are distinct, not one; the ambiguity persists and caps verbal-class unity.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [
+    "The token is Quran-internally readable BOTH as 'let them not SWEAR not to give' (→ Form IV oath sense) and 'let them not FALL SHORT of giving' (→ Form I shortfall sense); nothing internal decides, and co-fitting of two independent senses is underdetermination, not unification."
+   ],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "24:22",
+     "verse_text": "وَلَا يَأْتَلِ أُو۟لُوا۟ ٱلْفَضْلِ مِنكُمْ وَٱلسَّعَةِ أَن يُؤْتُوٓا۟ أُو۟لِى ٱلْقُرْبَىٰ وَٱلْمَسَٰكِينَ وَٱلْمُهَٰجِرِينَ فِى سَبِيلِ ٱللَّهِ وَلْيَعْفُوا۟ وَلْيَصْفَحُوٓا۟ أَلَا تُحِبُّونَ أَن يَغْفِرَ ٱللَّهُ لَكُمْ وَٱللَّهُ غَفُورٌ رَّحِيمٌ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "24:22",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "ya>otali",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَا يَأْتَلِ أُو۟لُوا۟ ٱلْفَضْلِ مِنكُمْ وَٱلسَّعَةِ أَن يُؤْتُوٓا۟ أُو۟لِى ٱلْقُرْبَىٰ وَٱلْمَسَٰكِينَ وَٱلْمُهَٰجِرِينَ فِى سَبِيلِ ٱللَّهِ وَلْيَعْفُوا۟ وَلْيَصْفَحُوٓا۟ أَلَا تُحِبُّونَ أَن يَغْفِرَ ٱللَّهُ لَكُمْ وَٱللَّهُ غَفُورٌ رَّحِيمٌ"
+  },
+  {
+   "word_ref": "2:226:2:1",
+   "disposition": "STRUCTURAL_UNCERTAINTY",
+   "note": "Form IV 'swear a binding oath of conjugal abstention' — a lexicalized derivational specialization (fixed 4-month term + expiable return فَآءُو) not predictable from Form I's plain 'fall short'; load-bearing on the sworn/legal dimension. Near-antonymic to the nominal favor class.",
+   "coverage_cluster_id": "verb_withholding_stinting",
+   "candidate_semantic_interpretation": "A privative verbal zone — to hold back / fall short / stint, sometimes by self-binding oath — but not a single demonstrated lexeme: Form I (3:118) 'fall short / spare no effort' (double accusative, لَا يَأْلُونَكُمْ خَبَالًا); Form IV (2:226) 'swear a binding oath of conjugal abstention' (مِن-government + four-month term + فَآءُو); Form VIII (24:22) irreducibly ambiguous between 'swear not to give' and 'fall short of giving' (أَن-complement).",
+   "cluster_supporting_evidence": "3:118 is the one unambiguous general sense ('fall short / stint effort'); 2:226 fixes the sworn-abstention sense contextually via تَرَبُّص + فَآءُو; 24:22's negated verb + أَن يُؤْتُوٓا۟ ('that they give') places the token on the giving/withholding boundary without deciding oath vs. shortfall.",
+   "counterevidence": [
+    "24:22:2:1",
+    "55:13:2:1"
+   ],
+   "preliminary_disposition": "STRUCTURAL_UNCERTAINTY",
+   "preliminary_note": "Only 3 tokens across 3 forms with 3 distinct valencies; the specialized 'binding oath of abstention' sense in Form IV is a derivational specialization not predictable from Form I's plain 'fall short,' and Form VIII does not resolve between the two. The verbal class shares only the consonantal skeleton with the noun and is near-antonymic to it (withholding vs. bestowing). Internal unity is under-determined by the evidence, hence STRUCTURAL_UNCERTAINTY.",
+   "final_disposition": "STRUCTURAL_UNCERTAINTY",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:226",
+     "verse_text": "لِّلَّذِينَ يُؤْلُونَ مِن نِّسَآئِهِمْ تَرَبُّصُ أَرْبَعَةِ أَشْهُرٍ فَإِن فَآءُو فَإِنَّ ٱللَّهَ غَفُورٌ رَّحِيمٌ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "2:226",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yu&olu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لِّلَّذِينَ يُؤْلُونَ مِن نِّسَآئِهِمْ تَرَبُّصُ أَرْبَعَةِ أَشْهُرٍ فَإِن فَآءُو فَإِنَّ ٱللَّهَ غَفُورٌ رَّحِيمٌ"
+  },
+  {
+   "word_ref": "3:118:10:1",
+   "disposition": "CONSISTENT",
+   "note": "Form I 'fall short / stint / spare no effort' (لَا يَأْلُونَكُمْ خَبَالًا) — the clearest, most general verbal sense; object is effort/ruin, not an oath. Clearly not 'favor.'",
+   "coverage_cluster_id": "verb_withholding_stinting",
+   "candidate_semantic_interpretation": "A privative verbal zone — to hold back / fall short / stint, sometimes by self-binding oath — but not a single demonstrated lexeme: Form I (3:118) 'fall short / spare no effort' (double accusative, لَا يَأْلُونَكُمْ خَبَالًا); Form IV (2:226) 'swear a binding oath of conjugal abstention' (مِن-government + four-month term + فَآءُو); Form VIII (24:22) irreducibly ambiguous between 'swear not to give' and 'fall short of giving' (أَن-complement).",
+   "cluster_supporting_evidence": "3:118 is the one unambiguous general sense ('fall short / stint effort'); 2:226 fixes the sworn-abstention sense contextually via تَرَبُّص + فَآءُو; 24:22's negated verb + أَن يُؤْتُوٓا۟ ('that they give') places the token on the giving/withholding boundary without deciding oath vs. shortfall.",
+   "counterevidence": [
+    "24:22:2:1",
+    "55:13:2:1"
+   ],
+   "preliminary_disposition": "STRUCTURAL_UNCERTAINTY",
+   "preliminary_note": "Only 3 tokens across 3 forms with 3 distinct valencies; the specialized 'binding oath of abstention' sense in Form IV is a derivational specialization not predictable from Form I's plain 'fall short,' and Form VIII does not resolve between the two. The verbal class shares only the consonantal skeleton with the noun and is near-antonymic to it (withholding vs. bestowing). Internal unity is under-determined by the evidence, hence STRUCTURAL_UNCERTAINTY.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:118",
+     "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَتَّخِذُوا۟ بِطَانَةً مِّن دُونِكُمْ لَا يَأْلُونَكُمْ خَبَالًا وَدُّوا۟ مَا عَنِتُّمْ قَدْ بَدَتِ ٱلْبَغْضَآءُ مِنْ أَفْوَٰهِهِمْ وَمَا تُخْفِى صُدُورُهُمْ أَكْبَرُ قَدْ بَيَّنَّا لَكُمُ ٱلْـَٔايَٰتِ إِن كُنتُمْ تَعْقِلُونَ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "3:118",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "ya>olu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَتَّخِذُوا۟ بِطَانَةً مِّن دُونِكُمْ لَا يَأْلُونَكُمْ خَبَالًا وَدُّوا۟ مَا عَنِتُّمْ قَدْ بَدَتِ ٱلْبَغْضَآءُ مِنْ أَفْوَٰهِهِمْ وَمَا تُخْفِى صُدُورُهُمْ أَكْبَرُ قَدْ بَيَّنَّا لَكُمُ ٱلْـَٔايَٰتِ إِن كُنتُمْ تَعْقِلُونَ"
+  },
+  {
+   "word_ref": "53:55:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "53:55",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكَ تَتَمَارَىٰ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "53:55",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكَ تَتَمَارَىٰ"
+  },
+  {
+   "word_ref": "55:13:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:13",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:13",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:16:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:16",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:16",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:18:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:18",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:18",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:21:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:21",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:21",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:23:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:23",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:23",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:25:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:25",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:25",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:28:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:28",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:28",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:30:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:30",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:30",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:32:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:32",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:32",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:34:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:34",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:34",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:36:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:36",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:36",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:38:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:38",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:38",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:40:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:40",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:40",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:42:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:42",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:42",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:45:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:45",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:45",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:47:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:47",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:47",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:49:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:49",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:49",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:51:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:51",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:51",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:53:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:53",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:53",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:55:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:55",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:55",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:57:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:57",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:57",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:59:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:59",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:59",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:61:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:61",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:61",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:63:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:63",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:63",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:65:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:65",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:65",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:67:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:67",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:67",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:69:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:69",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:69",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:71:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:71",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:71",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:73:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:73",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:73",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:75:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:75",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:75",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "55:77:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:77",
+     "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "55:77",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'i",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ"
+  },
+  {
+   "word_ref": "7:69:24:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:69",
+     "verse_text": "أَوَعَجِبْتُمْ أَن جَآءَكُمْ ذِكْرٌ مِّن رَّبِّكُمْ عَلَىٰ رَجُلٍ مِّنكُمْ لِيُنذِرَكُمْ وَٱذْكُرُوٓا۟ إِذْ جَعَلَكُمْ خُلَفَآءَ مِنۢ بَعْدِ قَوْمِ نُوحٍ وَزَادَكُمْ فِى ٱلْخَلْقِ بَصْۜطَةً فَٱذْكُرُوٓا۟ ءَالَآءَ ٱللَّهِ لَعَلَّكُمْ تُفْلِحُونَ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "7:69",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'a",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَوَعَجِبْتُمْ أَن جَآءَكُمْ ذِكْرٌ مِّن رَّبِّكُمْ عَلَىٰ رَجُلٍ مِّنكُمْ لِيُنذِرَكُمْ وَٱذْكُرُوٓا۟ إِذْ جَعَلَكُمْ خُلَفَآءَ مِنۢ بَعْدِ قَوْمِ نُوحٍ وَزَادَكُمْ فِى ٱلْخَلْقِ بَصْۜطَةً فَٱذْكُرُوٓا۟ ءَالَآءَ ٱللَّهِ لَعَلَّكُمْ تُفْلِحُونَ"
+  },
+  {
+   "word_ref": "7:74:19:1",
+   "disposition": "CONSISTENT",
+   "note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "coverage_cluster_id": "alaa_nominal_favor",
+   "candidate_semantic_interpretation": "The Lord's manifest bestowed favors/bounties (ءَالَآء), a fixed broken plural always in construct with the divine (رَبّ / ٱللَّه), presented as an object to be acknowledged — remembered (7:69, 7:74), not doubted (53:55), or not denied (Surah-55 refrain).",
+   "cluster_supporting_evidence": "7:69:24:1 and 7:74:19:1 make the referents explicit graces already listed in the same verse (made successors, expanded in creation, given dwellings) = the goods God has extended, to be gratefully remembered; 53:55 and the Surah-55 refrain frame the same بounties as objects wrongly doubted/denied.",
+   "counterevidence": [
+    "2:226:2:1",
+    "3:118:10:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 34 tokens fit the nominal 'divine bounty as object of acknowledgment' reading with zero internal resistance. Case tracks syntax cleanly (genitive after بِأَىِّ in the refrain and 53:55; accusative as object of ٱذْكُرُوا۟ in 7:69/7:74), confirming a stable lexicalized noun. Breadth is limited: 31 of 34 are the identical فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ refrain (one evidential environment), so real distinct frames number three (Surah-55 refrain / 53:55 doubt / Surah-7 remembrance). This is a lexicalized nominal class, not a productive derivation from the verbal uses; it is internally CONSISTENT within its own account but does NOT bridge to the verbal class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:74",
+     "verse_text": "وَٱذْكُرُوٓا۟ إِذْ جَعَلَكُمْ خُلَفَآءَ مِنۢ بَعْدِ عَادٍ وَبَوَّأَكُمْ فِى ٱلْأَرْضِ تَتَّخِذُونَ مِن سُهُولِهَا قُصُورًا وَتَنْحِتُونَ ٱلْجِبَالَ بُيُوتًا فَٱذْكُرُوٓا۟ ءَالَآءَ ٱللَّهِ وَلَا تَعْثَوْا۟ فِى ٱلْأَرْضِ مُفْسِدِينَ"
+    }
+   ],
+   "root_arabic": "ا ل و",
+   "root_buckwalter": "Alw",
+   "root_id": "Alw",
+   "artifact_name": "Alw.json",
+   "verse_ref": "7:74",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "'aAlaA^'a",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱذْكُرُوٓا۟ إِذْ جَعَلَكُمْ خُلَفَآءَ مِنۢ بَعْدِ عَادٍ وَبَوَّأَكُمْ فِى ٱلْأَرْضِ تَتَّخِذُونَ مِن سُهُولِهَا قُصُورًا وَتَنْحِتُونَ ٱلْجِبَالَ بُيُوتًا فَٱذْكُرُوٓا۟ ءَالَآءَ ٱللَّهِ وَلَا تَعْثَوْا۟ فِى ٱلْأَرْضِ مُفْسِدِينَ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "UNRESOLVED",
+ "result_strength": "UNRESOLVED",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Three independent lenses (A, B, adversary C) converged on the same two-class partition and the same defeat of the unifying 'polarity' account; the aggregator re-opened the packet and confirmed all 37 word_refs, qac_pos/qac_verb_form values, and verse_texts.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": null,
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "LOCAL",
+ "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
+ "layer_attribution": {
+  "occurrence_evidence": "34 nominal ءَالَآء tokens (all qac_pos N, form N, genitive after بِأَىِّ or accusative object of ٱذْكُرُوا۟, always construct with رَبّ/ٱللَّه) versus 3 verbal tokens with three distinct valencies: Form I double-accusative لَا يَأْلُونَكُمْ خَبَالًا (3:118), Form IV مِن-government يُؤْلُونَ مِن نِّسَآئِهِمْ + four-month term (2:226), Form VIII أَن-complement وَلَا يَأْتَلِ ... أَن يُؤْتُوٓا۟ (24:22).",
+  "derivation": "No Quran-internal derivational path connects the two classes: the noun is a frozen broken plural with no attested singular and no verb-to-noun productive operation in the packet; the three verb forms are separate derivations (I/IV/VIII) with the Form IV 'binding oath of abstention' being a specialization not predictable from Form I 'fall short.'",
+  "lexical_class": "Two lexicalized classes sharing only the consonantal skeleton ا-ل-و: (A) nominal ءَالَآء = divine bestowed favor (object of acknowledgment); (B) privative verb = withhold / fall short / swear-abstention. Class A is the dominant lexicalized nominal mass (92% of tokens, but ~3 distinct environments).",
+  "contextual_relation": "Contextually the noun sits in praise/dhikr/denial-rebuke frames (remember → succeed 7:69; do not corrupt 7:74; do not doubt 53:55; do not deny, Surah-55 refrain) and the verbs in legal/social withholding frames (conjugal īlā' 2:226; malicious stinting 3:118; withholding charity to kin 24:22); these contextual/narrative roles are recorded but are NOT elevated into a root claim.",
+  "reconciliation": "24:22 was reconciled from a tentative CONSISTENT verbal assignment to STRUCTURAL_UNCERTAINTY because its oath-vs-shortfall ambiguity is irreducible; the noun class remains internally CONSISTENT within its own account while still failing to bridge to the verbs, so no reconciliation forces a unified nucleus.",
+  "unresolved_resistance": "The root-level unification is unresolved: the noun (bestow) and verb (withhold) classes are near-antonymic and unbridged in the corpus, and the verbal class is itself under-unified (3 forms, 3 valencies, one irreducibly ambiguous token). This persisted resistance is the honest terminal result, not a failure of analysis."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "2:226:2:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "The Form IV sworn conjugal abstention (يُؤْلُونَ مِن نِّسَآئِهِمْ) is near-antonymic to the nominal 'bestowed favor' class and shares no Quran-internal bridge with it; it also resists reduction to Form I 'fall short,' being load-bearing on the sworn/legal 4-month dimension.",
+   "evidence_basis": {
+    "kind": "ANTONYMIC_DIRECTION",
+    "statement": "Swearing to withhold conjugal relations (2:226) and granted divine bounties (55:13 / 53:55) are opposite in direction of transfer and share zero Quran-internal collocational or morphological bridge."
+   }
+  },
+  {
+   "word_ref": "3:118:10:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "The Form I 'fall short / spare no effort' (لَا يَأْلُونَكُمْ خَبَالًا) is malicious stinting toward believers — the semantic opposite of the divine favor one is challenged not to deny; no single non-empty gloss covers both.",
+   "evidence_basis": {
+    "kind": "ANTONYMIC_DIRECTION",
+    "statement": "3:118 malicious all-out effort to ruin (withholding no effort) set against the Surah-55 ءَالَآءِ رَبِّكُمَا (favor to be acknowledged) admits no single unifying gloss."
+   }
+  },
+  {
+   "word_ref": "24:22:2:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "The Form VIII token is irreducibly ambiguous between 'swear not to give' and 'fall short of giving,' so it neither unifies the verbal class internally nor bridges to the noun; its 'bounty' anchor is ٱلْفَضْل (root F-D-L), not ءَالَآء, so any noun-verb bridge here is thematic, not lexical.",
+   "evidence_basis": {
+    "kind": "IRREDUCIBLE_AMBIGUITY",
+    "statement": "24:22 co-fits both the oath and the fall-short senses with nothing internal deciding; co-fitting of two independent senses is underdetermination, not unification, and its ٱلْفَضْل pairing is a thematic not lexical link."
+   }
+  },
+  {
+   "word_ref": "55:13:2:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "Representative of the 31x Surah-55 refrain (فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ): the dominant lexicalized nominal 'divine bounty' mass that resists any verbal nucleus, while its 31-fold repetition is one evidential environment, not independent corroboration.",
+   "evidence_basis": {
+    "kind": "CONSTRUCTIONAL_ISOLATION",
+    "statement": "The Surah-55 refrain ءَالَآء is a frozen divine-bounty plural in construct with the divine, patterning with acknowledgment/denial and never with any restraint notion; it cannot be routed through the verbal withholding sense."
+   }
+  },
+  {
+   "word_ref": "53:55:2:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "The doubt-frame twin (فَبِأَىِّ ءَالَآءِ رَبِّكَ تَتَمَارَىٰ) confirms the noun is exclusively an object of acknowledgment/doubt about received favor, with no verbal or withholding force, resisting unification with the verbs.",
+   "evidence_basis": {
+    "kind": "CONSTRUCTIONAL_ISOLATION",
+    "statement": "53:55 presents ءَالَآء as bounty wrongly doubted — a received benefit, never an act of swearing or stinting."
+   }
+  },
+  {
+   "word_ref": "7:69:24:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "The remembrance-frame (فَٱذْكُرُوٓا۟ ءَالَآءَ ٱللَّهِ) makes the referents explicit graces already listed in-verse (made successors, expanded in creation) to be gratefully remembered — positive bestowal, the opposite pole from the verbal withholding, with no bridge across.",
+   "evidence_basis": {
+    "kind": "MORPHOLOGICAL_DISJUNCTION",
+    "statement": "The noun ءَالَآء (7:69/7:74) is a substantive object of ٱذْكُرُوا۟ denoting bestowed goods; no Quranic occurrence derives it from or links it to any Alw verb."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL",
+  "rationale": "The resistance is not a minority sub-class but a genuine unbridged partition: a dominant lexicalized nominal class (ءَالَآء, favor) and a small privative verbal class (withhold/stint/swear-abstention) that is itself internally under-unified. No Quran-internal bridge (collocational, derivational, or contextual) links the two classes, and 24:22 does not resolve even the intra-verbal split. The listed occurrences are the seam/boundary tokens that jointly demonstrate why no single nucleus holds; the root result is UNRESOLVED multi-class rather than a forced unity."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A demonstrated Quran-internal bridge — collocational, derivational, or contextual — linking the nominal ءَالَآء class to the verbal withholding/stinting class, which would collapse the current two-class partition into a single defensible nucleus and overturn the UNRESOLVED verdict.",
+  "search_location": "All 37 Alw occurrences plus any verse where ءَالَآء co-occurs with an Alw verb, or where an Alw verb produces or governs a bounty/favor object; specifically re-examine 24:22 (يَأْتَلِ + أَن يُؤْتُوٓا۟) and the 7:69/7:74 remembrance frames for any morphological path from verb to the plural noun.",
+  "verification_method": "Test whether a single narrow gloss predicts each occurrence's argument frame and truth-conditions without post-hoc reversal; require the bridge to be lexical (shared root token or derivation) rather than thematic, and reproducible across at least two independent syntactic environments in each class.",
+  "confounder_control": "Exclude thematic/pragmatic pairings that use a different root for 'bounty' (e.g., ٱلْفَضْل, root F-D-L, in 24:22); discount the 31x Surah-55 refrain as one evidential environment, not 31; reject any gloss so abstract it also fits unrelated give/withhold contexts (fit-everything abstraction).",
+  "failure_consequence": "If no such bridge is found, the two-class partition stands and the root remains UNRESOLVED / multi-class; if a genuine lexical bridge is found, reopen to a DERIVATIONAL_FAMILY claim and re-grade the unified account."
+ },
+ "falsification_status": "NOT_REQUIRED",
+ "reopen_conditions": [
+  "If a Quran-internal derivational or collocational link is established between the nominal ءَالَآء (e.g., 7:69/7:74, 53:55, Surah-55 refrain) and any Alw verb (2:226 يُؤْلُونَ, 3:118 يَأْلُونَ, 24:22 يَأْتَلِ), such that the noun and verb are shown to inflect one nucleus rather than two homographic classes.",
+  "If 24:22:2:1 (يَأْتَلِ) is Quran-internally disambiguated between 'swear (an oath not to give)' and 'fall short of giving,' resolving the intra-verbal split and allowing the three verb forms (I/IV/VIII) to be graded as a single verbal lexeme.",
+  "If a singular of ءَالَآء or a productive verbal derivation yielding it is attested in-corpus, converting the frozen plural into a live member of the verbal family."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "7:69:24:1",
+  "7:74:19:1",
+  "53:55:2:1",
+  "55:13:2:1",
+  "3:118:10:1",
+  "2:226:2:1"
+ ],
+ "counterevidence_refs": [
+  "2:226:2:1",
+  "3:118:10:1",
+  "24:22:2:1",
+  "55:13:2:1",
+  "53:55:2:1",
+  "7:69:24:1"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "Alw-unresolved-multiclass-2026",
+  "verdict": "NOT_REQUIRED",
+  "falsifiable": true,
+  "distinctiveness_ok": false,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "alaa_nominal_favor",
+   "verb_withholding_stinting"
+  ],
+  "status_rationale": "There is no unified root claim to falsify: the result is an UNRESOLVED, unbridged two-class partition. Adversarial testing (Lens C and the aggregation) sought the strongest unifier ('giving-axis / withholding-vs-release polarity') and refuted it as a post-hoc reversal with no Quran-internal warrant. Because the honest verdict is unresolved-class-only, a unified-claim falsification run is NOT_REQUIRED; distinctiveness_ok is false precisely because no single distinctive nucleus survives."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Alw: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Alw: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Alw: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Alw: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Alw: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Alw: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Alw: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Alw: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

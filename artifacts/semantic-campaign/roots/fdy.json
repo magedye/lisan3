@@ -1,0 +1,949 @@
+{
+ "root_arabic": "ف د ي",
+ "root_buckwalter": "fdy",
+ "root_id": "fdy",
+ "artifact_name": "fdy.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave4",
+ "occurrences": 13,
+ "frozen_candidate_root_contribution": "fdy = the provision of a valued substitute (a stand-in / price, syntactically the bi-marked slot) IN PLACE OF a person or a person's incurred liability, in order to (seek to) release or exempt them from a binding claim — punishment, captivity, or a marital bond. The substitution-for-discharge core holds across all four forms (I redeems another 37:107; III mutual ransom of captives 2:85; VIII self-ransom, all 7; N the substitute-object/transaction), with morphology carrying only the direction/beneficiary, not the meaning. Two invariants are Quran-internal: (1) the substitute is near-obligatorily bi-marked (bihi, bi-dhibhin, bi-banihi), and (2) the claim/peril escaped is min-marked or contextual (min 'adhab, usara, the bond in 2:229). The account is efficacy-NEUTRAL: it names the offer of a substitute, decoupled from acceptance. This preferred nucleus covers 11/13; it does NOT cleanly extend to the lexicalized ritual nominal fidyah (2:184/2:196), where no person is imperiled or released and only a devotional/ritual obligation is discharged — a coherent resistant sub-class that caps the grade below STRONG.",
+ "internal_discovery": {
+  "candidate_root_contribution": "fdy = the provision of a valued substitute (a stand-in / price, syntactically the bi-marked slot) IN PLACE OF a person or a person's incurred liability, in order to (seek to) release or exempt them from a binding claim — punishment, captivity, or a marital bond. The substitution-for-discharge core holds across all four forms (I redeems another 37:107; III mutual ransom of captives 2:85; VIII self-ransom, all 7; N the substitute-object/transaction), with morphology carrying only the direction/beneficiary, not the meaning. Two invariants are Quran-internal: (1) the substitute is near-obligatorily bi-marked (bihi, bi-dhibhin, bi-banihi), and (2) the claim/peril escaped is min-marked or contextual (min 'adhab, usara, the bond in 2:229). The account is efficacy-NEUTRAL: it names the offer of a substitute, decoupled from acceptance. This preferred nucleus covers 11/13; it does NOT cleanly extend to the lexicalized ritual nominal fidyah (2:184/2:196), where no person is imperiled or released and only a devotional/ritual obligation is discharged — a coherent resistant sub-class that caps the grade below STRONG.",
+  "plain_explanation": "The root fdy is about giving something of value as a stand-in to buy someone's release from a hold on them — a punishment, being a captive, or a marriage bond. What is always foregrounded is the thing offered in exchange (marked by 'bi-'): earth-full of gold, one's own sons, a sacrificial animal, or the returned dowry. A striking Quran-internal fact is that the word does not imply the ransom works: six of seven self-ransom cases and 57:15 are refused or hypothetical, while 2:229 (a wife redeeming herself from marriage) and 2:85 (ransoming captives) and 37:107 (God redeeming the son) do take effect. Grammar sets the direction (redeem oneself vs. redeem another), not the meaning. The one place the picture stretches is the ritual 'fidyah' of 2:184/2:196 — feeding a poor person instead of fasting, or fasting/charity/sacrifice for shaving in ihram — where nobody is a captive and nobody is freed; there it means a prescribed substitute discharging a ritual duty. Because that nominal use is a coherent, lexicalized departure from the ransom-a-person center, the finding is honestly graded MODERATE / REPRESENTATIVE rather than a single root-wide claim.",
+  "layer_separation_note": "fdy does NOT entail: (1) success/acceptance — the substitute may be refused (10:54,13:18,39:47,3:91,5:36,70:11) or 'not taken' (57:15), accepted (2:229,2:85), or divinely granted (37:107); efficacy is contextual, not rooted. (2) money — substitutes are a sacrificial animal (37:107), one's sons (70:11), earth-full of gold (3:91), all earthly wealth and its like (10:54,13:18,39:47,5:36), or food/fasting/charity (2:184,2:196). (3) wrongdoing by the one redeemed — the son (37:107) and captives (2:85) are non-culpable; the eschatological cases culpable. (4) a specified beneficiary/direction — that is form-borne (I=another, III=mutual, VIII=self). (5) gratuitous release — 47:4 opposes fidaa' to mann (compensated vs. free release), so the substitute-price is essential. It is NOT generic giving/spending (nfq) and NOT acquisitive purchase; the aim is escape FROM a claim, not acquisition. NEGATIVE boundary distinctive to the nucleus: the ritual fidyah (2:184/2:196) shows fdy does not require an imperiled or released person at all in its lexicalized nominal use — the very point that resists a single narrow ransom account.",
+  "presence": {
+   "occurrences_total": 13,
+   "occurrences_checked": 13,
+   "occurrences_consistent": 11,
+   "inconsistent_refs": [
+    "2:184:17:1",
+    "2:196:27:2"
+   ]
+  },
+  "strongest_counterexample": "2:184:17:1 — 'fidyatun ta'amu miskin' (a fidyah: feeding a poor person). Here there is no captor, no penalty escaped, no bond, and no PERSON released — only an alternative act discharging a ritual/devotional obligation (feeding instead of fasting). It resists the distinctive 'ransom a person from penalty/captivity/bond' nucleus and can be absorbed only by retreating to the over-broad 'a substitute given in lieu of X to discharge a claim,' which the methodology disqualifies as fitting everything. 2:196 ('fa-fidyatun min siyamin aw sadaqatin aw nusuk', with sadaqah listed as a sub-option within fidyah, so fidyah != charity) reinforces this as a coherent lexicalized ritual sub-class rather than an isolated outlier.",
+  "strongest_competitor": "Two rival accounts. (A) STRONG root-wide unity (Analyst B): a single 'substitution-for-release' nucleus covering all 13, treating 2:184/2:196 as a transparent application. Rejected because it must state the nucleus at the 'substitute-in-lieu' abstraction to swallow the ritual cases, which drops the distinctive binding-claim + release-of-a-person teleology and, per contract, over-broadens; and because 'same root != one meaning' forbids treating the shared root/schema as itself the bridge to ritual compensation, which is not independently demonstrated Quran-internally. (B) Bare 'substitution/badal' (one thing in place of another): covers all 13 but is too broad, failing to explain the rigid bi-price/min-liability frame and the fidaa' != mann contrast (47:4). The preferred account = the narrower 'substitute against a binding claim to release a person' for 11/13, with the ritual nominal flagged as resistant residue rather than force-unified.",
+  "competing_hypothesis": "Two rival accounts. (A) STRONG root-wide unity (Analyst B): a single 'substitution-for-release' nucleus covering all 13, treating 2:184/2:196 as a transparent application. Rejected because it must state the nucleus at the 'substitute-in-lieu' abstraction to swallow the ritual cases, which drops the distinctive binding-claim + release-of-a-person teleology and, per contract, over-broadens; and because 'same root != one meaning' forbids treating the shared root/schema as itself the bridge to ritual compensation, which is not independently demonstrated Quran-internally. (B) Bare 'substitution/badal' (one thing in place of another): covers all 13 but is too broad, failing to explain the rigid bi-price/min-liability frame and the fidaa' != mann contrast (47:4). The preferred account = the narrower 'substitute against a binding claim to release a person' for 11/13, with the ritual nominal flagged as resistant residue rather than force-unified.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "Two of three lenses (A, C) independently converge on MODERATE / REPRESENTATIVE, and the contract is decisive: a coherent, lexicalized nominal sub-class (ritual fidyah, 2:184/2:196) that the distinctive account cannot absorb without diluting to an all-fitting abstraction caps strength at MODERATE and scope at REPRESENTATIVE. Analyst B's STRONG grade attaches only after dissolving that sub-class via a shared-root/shared-schema bridge, which 'same root != one meaning' and 'the bridge is not Quran-internally demonstrated' explicitly disallow. What IS robust and shared by all three lenses: (1) the substitution-for-discharge nucleus with the bi-substitute / min-liability signature across all four forms; (2) the strong, distinctive efficacy-neutral boundary (offer != acceptance), itself a first-class MODERATE finding; (3) the fidaa' != mann distinctiveness marker (47:4). The clean morpho-semantic pattern (VIII=self incl. the effective khul' in 2:229; I/III=another) binds classes A-C tightly, but the finer per-form role mapping rests on singletons (37:107, 2:85) and so is only suggestive, not part of the graded core. Bridge cases 2:229 (VIII morphology, effective/worldly) and 2:184/2:196 (nominal, effective/ritual) prove that effective-vs-futile is contextual, not lexical — so the resistance is NOT 'futile eschatology as a sense'; it is specifically the ritual-compensation lexicalization of the noun that resists the person-ransom center. Hence PREFERRED nucleus, MODERATE, REPRESENTATIVE, DERIVATIONAL_FAMILY.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "VIII_self_ransom_eschatological_futile",
+     "where": {
+      "word_refs": [
+       "10:54:9:2",
+       "13:18:18:2",
+       "39:47:11:2",
+       "3:91:15:1",
+       "5:36:13:2",
+       "70:11:5:1"
+      ]
+     },
+     "occurrence_count_expected": 6,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Form VIII self-ransom: a culpable soul offers a substitute (all earthly wealth and its like, gold, or its own sons) to free ITSELF from the punishment of the Day; the offer is hypothetical and/or explicitly refused.",
+     "classification_rationale": "All six share the rigid frame iftada bi-[substitute] (+ min [penalty] in 39:47/5:36/70:11), with the substitute bi-marked and the liability min-marked; futility is supplied by law-/law-anna contrafactuals and 'ma tuqubbila minhum' (5:36) / 'lahum 'adhabun alim' (3:91), i.e. it is contextual, not encoded in fdy.",
+     "supporting_evidence_note": "Distinctive substitution-for-release signature and the efficacy-neutral boundary at its clearest: the substitute is offered and not accepted, so fdy names the offer, not an achieved release. 70:11 (bi-banihi) and 3:91 (mil'u l-ardi dhahaban) show the substitute is not necessarily money.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "VIII_self_ransom_worldly_effective_khul",
+     "where": {
+      "word_refs": [
+       "2:229:33:1"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Form VIII self-ransom that is actual, bilateral, and legally effective: the wife gives back (dowry) to release HERSELF from the marriage bond (khul'), 'no blame on the two'.",
+     "classification_rationale": "Same morphology and iftadat bi-hi frame as the eschatological VIII cluster, but effective and worldly — a decisive bridge case showing effective-vs-futile is a contextual variable, not a lexical class line; the released-from claim here is a marital bond rather than a penalty.",
+     "supporting_evidence_note": "Bridge occurrence: 2:229 is morphologically self-ransom yet effective and bilateral, dissolving any 'futile eschatology' as a distinct sense and confirming the release-from-a-binding-claim teleology (here the marriage bond).",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "redeem_another_I_and_III",
+     "where": {
+      "word_refs": [
+       "37:107:1:2",
+       "2:85:18:1"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Redemption of a third party by substitution: Form I, God delivers the son by providing a substitute victim (37:107 fadaynahu bi-dhibhin 'azim); Form III, mutual/transactional ransom of captives (2:85 tufaduhum), object = the captives freed.",
+     "classification_rationale": "Both realize the substitution-for-release nucleus with the beneficiary being another party; morphology carries the direction (I/III = redeem another) while the core is constant. Per-form role differentiation here rests on singletons, so it is suggestive only.",
+     "supporting_evidence_note": "37:107 is the purest accepted life-for-life substitution and resists any commercial/creditor reading (God both imposes the trial and provides the substitute; the price is a slaughter-animal, not wealth) — it forces the nucleus to be stated as SUBSTITUTION, not commerce; 2:85 supplies the transactional third-party ransom.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "nominal_ransom_captive_and_eschatological",
+     "where": {
+      "word_refs": [
+       "47:4:16:1",
+       "57:15:5:1"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Nominal fdy naming the substitute/transaction of release of a person: fidaa' = release of captives against a price, explicitly opposed to mann (free release) in 47:4; fidyah = the (would-be) eschatological ransom that is 'not taken' in 57:15.",
+     "classification_rationale": "These nominal uses stay within the person-release nucleus (captive release; ransom from the Fire) and provide the sharpest distinctiveness marker (fidaa' != mann) plus the nominal counterpart of the futile VIII cluster (57:15).",
+     "supporting_evidence_note": "47:4 lexically contrasts compensated release (fidaa') with gratuitous release (mann), isolating the substitute-price as essential to fdy; 57:15 'la yu'khadhu minkum fidyatun' mirrors the refused self-ransom, reinforcing the efficacy-neutral boundary.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "nominal_ritual_compensatory_fidyah",
+     "where": {
+      "word_refs": [
+       "2:184:17:1",
+       "2:196:27:2"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "Lexicalized ritual/devotional fidyah: a prescribed substitute discharging an unmet ritual duty — feeding a poor person in lieu of the hard-borne fast (2:184), or fasting/charity/sacrifice for shaving in ihram (2:196). No imperiled party, no captor, no penalty escaped, no person released.",
+     "classification_rationale": "This nominal sub-class is coherent and lexicalized ('fidyah: feeding a poor person'; 'fa-fidyatun min siyamin aw sadaqatin aw nusuk', with sadaqah subordinated under fidyah, so fidyah != charity). It cannot be absorbed by the distinctive person-ransom nucleus without retreating to the over-broad 'substitute-in-lieu' abstraction the contract disqualifies; the same noun fidyah splits across the divide (57:15 ransom vs. 2:184/2:196 ritual compensation), so nominal unity is not semantic unity ('same root != one meaning', 'same gloss != synonymy').",
+     "supporting_evidence_note": "RESISTANT SEAM. 2:184:17:1 'fidyatun ta'amu miskin' has no captor, no penalty escaped, no bond, and no person released — only an alternative act discharging a ritual obligation; 2:196 reinforces this as a coherent lexicalized ritual sub-class rather than an isolated outlier. This resistance caps strength at MODERATE and scope at REPRESENTATIVE.",
+     "counterevidence": [
+      "2:184:17:1",
+      "2:196:27:2"
+     ]
+    }
+   ],
+   "reconciliation": [
+    {
+     "word_ref": "2:229:33:1",
+     "final": "CONSISTENT",
+     "rationale": "It is not a break in meaning but a bridge: same iftadat bi-hi self-ransom frame with a release-from-a-binding-claim teleology (the marriage bond); it dissolves 'futile-vs-effective' as a candidate sense boundary, strengthening rather than weakening the nucleus."
+    },
+    {
+     "word_ref": "37:107:1:2",
+     "final": "CONSISTENT",
+     "rationale": "Absorbed by the substitution-for-release nucleus (bi- still marks the stand-in victim; the son is freed from the impending slaughter); paralleled by third-party redemption in 2:85/47:4. The real fault line is the ritual nominal (2:184/2:196), not 37:107."
+    }
+   ]
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "fdy",
+  "verdict": "CORE_HOLDS_WITH_RESIDUAL_RESISTANCE",
+  "failing_occurrences": [
+   "2:184:17:1",
+   "2:196:27:2"
+  ],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "A full adversarial refutation returning SUPPORTED with failing_occurrences=[] cannot be claimed because the ritual fidyah sub-class (2:184/2:196) resists the distinctive person-ransom nucleus. The core nucleus holds for 11/13 with a distinctive bi-substitute/min-liability signature and the fidaa'!=mann contrast, so the status is NOT_RUN with the resistant occurrences recorded, per contract (some occurrences resist but the core holds)."
+ },
+ "coverage_validation": {
+  "root": "fdy",
+  "expected_count": 13,
+  "researched_count": 13,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [
+   "2:184:17:1",
+   "2:196:27:2"
+  ],
+  "unresolved_visible": [
+   "2:184:17:1",
+   "2:196:27:2"
+  ]
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "10:54:9:2",
+   "disposition": "CONSISTENT",
+   "note": "All six share the rigid frame iftada bi-[substitute] (+ min [penalty] in 39:47/5:36/70:11), with the substitute bi-marked and the liability min-marked; futility is supplied by law-/law-anna contrafactuals and 'ma tuqubbila minhum' (5:36) / 'lahum 'adhabun alim' (3:91), i.e. it is contextual, not encoded in fdy.",
+   "coverage_cluster_id": "VIII_self_ransom_eschatological_futile",
+   "candidate_semantic_interpretation": "Form VIII self-ransom: a culpable soul offers a substitute (all earthly wealth and its like, gold, or its own sons) to free ITSELF from the punishment of the Day; the offer is hypothetical and/or explicitly refused.",
+   "cluster_supporting_evidence": "Distinctive substitution-for-release signature and the efficacy-neutral boundary at its clearest: the substitute is offered and not accepted, so fdy names the offer, not an achieved release. 70:11 (bi-banihi) and 3:91 (mil'u l-ardi dhahaban) show the substitute is not necessarily money.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All six share the rigid frame iftada bi-[substitute] (+ min [penalty] in 39:47/5:36/70:11), with the substitute bi-marked and the liability min-marked; futility is supplied by law-/law-anna contrafactuals and 'ma tuqubbila minhum' (5:36) / 'lahum 'adhabun alim' (3:91), i.e. it is contextual, not encoded in fdy.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "10:54",
+     "verse_text": "وَلَوْ أَنَّ لِكُلِّ نَفْسٍ ظَلَمَتْ مَا فِى ٱلْأَرْضِ لَٱفْتَدَتْ بِهِۦ وَأَسَرُّوا۟ ٱلنَّدَامَةَ لَمَّا رَأَوُا۟ ٱلْعَذَابَ وَقُضِىَ بَيْنَهُم بِٱلْقِسْطِ وَهُمْ لَا يُظْلَمُونَ"
+    }
+   ],
+   "root_arabic": "ف د ي",
+   "root_buckwalter": "fdy",
+   "root_id": "fdy",
+   "artifact_name": "fdy.json",
+   "verse_ref": "10:54",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{fotadato",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَوْ أَنَّ لِكُلِّ نَفْسٍ ظَلَمَتْ مَا فِى ٱلْأَرْضِ لَٱفْتَدَتْ بِهِۦ وَأَسَرُّوا۟ ٱلنَّدَامَةَ لَمَّا رَأَوُا۟ ٱلْعَذَابَ وَقُضِىَ بَيْنَهُم بِٱلْقِسْطِ وَهُمْ لَا يُظْلَمُونَ"
+  },
+  {
+   "word_ref": "13:18:18:2",
+   "disposition": "CONSISTENT",
+   "note": "All six share the rigid frame iftada bi-[substitute] (+ min [penalty] in 39:47/5:36/70:11), with the substitute bi-marked and the liability min-marked; futility is supplied by law-/law-anna contrafactuals and 'ma tuqubbila minhum' (5:36) / 'lahum 'adhabun alim' (3:91), i.e. it is contextual, not encoded in fdy.",
+   "coverage_cluster_id": "VIII_self_ransom_eschatological_futile",
+   "candidate_semantic_interpretation": "Form VIII self-ransom: a culpable soul offers a substitute (all earthly wealth and its like, gold, or its own sons) to free ITSELF from the punishment of the Day; the offer is hypothetical and/or explicitly refused.",
+   "cluster_supporting_evidence": "Distinctive substitution-for-release signature and the efficacy-neutral boundary at its clearest: the substitute is offered and not accepted, so fdy names the offer, not an achieved release. 70:11 (bi-banihi) and 3:91 (mil'u l-ardi dhahaban) show the substitute is not necessarily money.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All six share the rigid frame iftada bi-[substitute] (+ min [penalty] in 39:47/5:36/70:11), with the substitute bi-marked and the liability min-marked; futility is supplied by law-/law-anna contrafactuals and 'ma tuqubbila minhum' (5:36) / 'lahum 'adhabun alim' (3:91), i.e. it is contextual, not encoded in fdy.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "13:18",
+     "verse_text": "لِلَّذِينَ ٱسْتَجَابُوا۟ لِرَبِّهِمُ ٱلْحُسْنَىٰ وَٱلَّذِينَ لَمْ يَسْتَجِيبُوا۟ لَهُۥ لَوْ أَنَّ لَهُم مَّا فِى ٱلْأَرْضِ جَمِيعًا وَمِثْلَهُۥ مَعَهُۥ لَٱفْتَدَوْا۟ بِهِۦٓ أُو۟لَٰٓئِكَ لَهُمْ سُوٓءُ ٱلْحِسَابِ وَمَأْوَىٰهُمْ جَهَنَّمُ وَبِئْسَ ٱلْمِهَادُ"
+    }
+   ],
+   "root_arabic": "ف د ي",
+   "root_buckwalter": "fdy",
+   "root_id": "fdy",
+   "artifact_name": "fdy.json",
+   "verse_ref": "13:18",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{fotada",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لِلَّذِينَ ٱسْتَجَابُوا۟ لِرَبِّهِمُ ٱلْحُسْنَىٰ وَٱلَّذِينَ لَمْ يَسْتَجِيبُوا۟ لَهُۥ لَوْ أَنَّ لَهُم مَّا فِى ٱلْأَرْضِ جَمِيعًا وَمِثْلَهُۥ مَعَهُۥ لَٱفْتَدَوْا۟ بِهِۦٓ أُو۟لَٰٓئِكَ لَهُمْ سُوٓءُ ٱلْحِسَابِ وَمَأْوَىٰهُمْ جَهَنَّمُ وَبِئْسَ ٱلْمِهَادُ"
+  },
+  {
+   "word_ref": "2:184:17:1",
+   "disposition": "RESISTANT",
+   "note": "This nominal sub-class is coherent and lexicalized ('fidyah: feeding a poor person'; 'fa-fidyatun min siyamin aw sadaqatin aw nusuk', with sadaqah subordinated under fidyah, so fidyah != charity). It cannot be absorbed by the distinctive person-ransom nucleus without retreating to the over-broad 'substitute-in-lieu' abstraction the contract disqualifies; the same noun fidyah splits across the divide (57:15 ransom vs. 2:184/2:196 ritual compensation), so nominal unity is not semantic unity ('same root != one meaning', 'same gloss != synonymy'). | 2:184:17:1 'fidyatun ta'amu miskin' has no captor, no penalty escaped, no bond, and no person released — only an alternative act discharging a ritual obligation.",
+   "coverage_cluster_id": "nominal_ritual_compensatory_fidyah",
+   "candidate_semantic_interpretation": "Lexicalized ritual/devotional fidyah: a prescribed substitute discharging an unmet ritual duty — feeding a poor person in lieu of the hard-borne fast (2:184), or fasting/charity/sacrifice for shaving in ihram (2:196). No imperiled party, no captor, no penalty escaped, no person released.",
+   "cluster_supporting_evidence": "RESISTANT SEAM. 2:184:17:1 'fidyatun ta'amu miskin' has no captor, no penalty escaped, no bond, and no person released — only an alternative act discharging a ritual obligation; 2:196 reinforces this as a coherent lexicalized ritual sub-class rather than an isolated outlier. This resistance caps strength at MODERATE and scope at REPRESENTATIVE.",
+   "counterevidence": [
+    "2:184:17:1",
+    "2:196:27:2"
+   ],
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "This nominal sub-class is coherent and lexicalized ('fidyah: feeding a poor person'; 'fa-fidyatun min siyamin aw sadaqatin aw nusuk', with sadaqah subordinated under fidyah, so fidyah != charity). It cannot be absorbed by the distinctive person-ransom nucleus without retreating to the over-broad 'substitute-in-lieu' abstraction the contract disqualifies; the same noun fidyah splits across the divide (57:15 ransom vs. 2:184/2:196 ritual compensation), so nominal unity is not semantic unity ('same root != one meaning', 'same gloss != synonymy').",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:184",
+     "verse_text": "أَيَّامًا مَّعْدُودَٰتٍ فَمَن كَانَ مِنكُم مَّرِيضًا أَوْ عَلَىٰ سَفَرٍ فَعِدَّةٌ مِّنْ أَيَّامٍ أُخَرَ وَعَلَى ٱلَّذِينَ يُطِيقُونَهُۥ فِدْيَةٌ طَعَامُ مِسْكِينٍ فَمَن تَطَوَّعَ خَيْرًا فَهُوَ خَيْرٌ لَّهُۥ وَأَن تَصُومُوا۟ خَيْرٌ لَّكُمْ إِن كُنتُمْ تَعْلَمُونَ"
+    }
+   ],
+   "root_arabic": "ف د ي",
+   "root_buckwalter": "fdy",
+   "root_id": "fdy",
+   "artifact_name": "fdy.json",
+   "verse_ref": "2:184",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fidoyapN",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَيَّامًا مَّعْدُودَٰتٍ فَمَن كَانَ مِنكُم مَّرِيضًا أَوْ عَلَىٰ سَفَرٍ فَعِدَّةٌ مِّنْ أَيَّامٍ أُخَرَ وَعَلَى ٱلَّذِينَ يُطِيقُونَهُۥ فِدْيَةٌ طَعَامُ مِسْكِينٍ فَمَن تَطَوَّعَ خَيْرًا فَهُوَ خَيْرٌ لَّهُۥ وَأَن تَصُومُوا۟ خَيْرٌ لَّكُمْ إِن كُنتُمْ تَعْلَمُونَ",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "2:196:27:2",
+   "disposition": "RESISTANT",
+   "note": "This nominal sub-class is coherent and lexicalized ('fidyah: feeding a poor person'; 'fa-fidyatun min siyamin aw sadaqatin aw nusuk', with sadaqah subordinated under fidyah, so fidyah != charity). It cannot be absorbed by the distinctive person-ransom nucleus without retreating to the over-broad 'substitute-in-lieu' abstraction the contract disqualifies; the same noun fidyah splits across the divide (57:15 ransom vs. 2:184/2:196 ritual compensation), so nominal unity is not semantic unity ('same root != one meaning', 'same gloss != synonymy').",
+   "coverage_cluster_id": "nominal_ritual_compensatory_fidyah",
+   "candidate_semantic_interpretation": "Lexicalized ritual/devotional fidyah: a prescribed substitute discharging an unmet ritual duty — feeding a poor person in lieu of the hard-borne fast (2:184), or fasting/charity/sacrifice for shaving in ihram (2:196). No imperiled party, no captor, no penalty escaped, no person released.",
+   "cluster_supporting_evidence": "RESISTANT SEAM. 2:184:17:1 'fidyatun ta'amu miskin' has no captor, no penalty escaped, no bond, and no person released — only an alternative act discharging a ritual obligation; 2:196 reinforces this as a coherent lexicalized ritual sub-class rather than an isolated outlier. This resistance caps strength at MODERATE and scope at REPRESENTATIVE.",
+   "counterevidence": [
+    "2:184:17:1",
+    "2:196:27:2"
+   ],
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "This nominal sub-class is coherent and lexicalized ('fidyah: feeding a poor person'; 'fa-fidyatun min siyamin aw sadaqatin aw nusuk', with sadaqah subordinated under fidyah, so fidyah != charity). It cannot be absorbed by the distinctive person-ransom nucleus without retreating to the over-broad 'substitute-in-lieu' abstraction the contract disqualifies; the same noun fidyah splits across the divide (57:15 ransom vs. 2:184/2:196 ritual compensation), so nominal unity is not semantic unity ('same root != one meaning', 'same gloss != synonymy').",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:196",
+     "verse_text": "وَأَتِمُّوا۟ ٱلْحَجَّ وَٱلْعُمْرَةَ لِلَّهِ فَإِنْ أُحْصِرْتُمْ فَمَا ٱسْتَيْسَرَ مِنَ ٱلْهَدْىِ وَلَا تَحْلِقُوا۟ رُءُوسَكُمْ حَتَّىٰ يَبْلُغَ ٱلْهَدْىُ مَحِلَّهُۥ فَمَن كَانَ مِنكُم مَّرِيضًا أَوْ بِهِۦٓ أَذًى مِّن رَّأْسِهِۦ فَفِدْيَةٌ مِّن صِيَامٍ أَوْ صَدَقَةٍ أَوْ نُسُكٍ فَإِذَآ أَمِنتُمْ فَمَن تَمَتَّعَ بِٱلْعُمْرَةِ إِلَى ٱلْحَجِّ فَمَا ٱسْتَيْسَرَ مِنَ ٱلْهَدْىِ فَمَن لَّمْ يَجِدْ فَصِيَامُ ثَلَٰثَةِ أَيَّامٍ فِى ٱلْحَجِّ وَسَبْعَةٍ إِذَا رَجَعْتُمْ تِلْكَ عَشَرَةٌ كَامِلَةٌ ذَٰلِكَ لِمَن لَّمْ يَكُنْ أَهْلُهُۥ حَاضِرِى ٱلْمَسْجِدِ ٱلْحَرَامِ وَٱتَّقُوا۟ ٱللَّهَ وَٱعْلَمُوٓا۟ أَنَّ ٱللَّهَ شَدِيدُ ٱلْعِقَابِ"
+    }
+   ],
+   "root_arabic": "ف د ي",
+   "root_buckwalter": "fdy",
+   "root_id": "fdy",
+   "artifact_name": "fdy.json",
+   "verse_ref": "2:196",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fidoyapN",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَأَتِمُّوا۟ ٱلْحَجَّ وَٱلْعُمْرَةَ لِلَّهِ فَإِنْ أُحْصِرْتُمْ فَمَا ٱسْتَيْسَرَ مِنَ ٱلْهَدْىِ وَلَا تَحْلِقُوا۟ رُءُوسَكُمْ حَتَّىٰ يَبْلُغَ ٱلْهَدْىُ مَحِلَّهُۥ فَمَن كَانَ مِنكُم مَّرِيضًا أَوْ بِهِۦٓ أَذًى مِّن رَّأْسِهِۦ فَفِدْيَةٌ مِّن صِيَامٍ أَوْ صَدَقَةٍ أَوْ نُسُكٍ فَإِذَآ أَمِنتُمْ فَمَن تَمَتَّعَ بِٱلْعُمْرَةِ إِلَى ٱلْحَجِّ فَمَا ٱسْتَيْسَرَ مِنَ ٱلْهَدْىِ فَمَن لَّمْ يَجِدْ فَصِيَامُ ثَلَٰثَةِ أَيَّامٍ فِى ٱلْحَجِّ وَسَبْعَةٍ إِذَا رَجَعْتُمْ تِلْكَ عَشَرَةٌ كَامِلَةٌ ذَٰلِكَ لِمَن لَّمْ يَكُنْ أَهْلُهُۥ حَاضِرِى ٱلْمَسْجِدِ ٱلْحَرَامِ وَٱتَّقُوا۟ ٱللَّهَ وَٱعْلَمُوٓا۟ أَنَّ ٱللَّهَ شَدِيدُ ٱلْعِقَابِ",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "2:229:33:1",
+   "disposition": "CONSISTENT",
+   "note": "Bridge case: VIII self-ransom that is effective and worldly (khul', release from the marriage bond), showing effective-vs-futile is contextual, not lexical.",
+   "coverage_cluster_id": "VIII_self_ransom_worldly_effective_khul",
+   "candidate_semantic_interpretation": "Form VIII self-ransom that is actual, bilateral, and legally effective: the wife gives back (dowry) to release HERSELF from the marriage bond (khul'), 'no blame on the two'.",
+   "cluster_supporting_evidence": "Bridge occurrence: 2:229 is morphologically self-ransom yet effective and bilateral, dissolving any 'futile eschatology' as a distinct sense and confirming the release-from-a-binding-claim teleology (here the marriage bond).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Same morphology and iftadat bi-hi frame as the eschatological VIII cluster, but effective and worldly — a decisive bridge case showing effective-vs-futile is a contextual variable, not a lexical class line; the released-from claim here is a marital bond rather than a penalty.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": "It is not a break in meaning but a bridge: same iftadat bi-hi self-ransom frame with a release-from-a-binding-claim teleology (the marriage bond); it dissolves 'futile-vs-effective' as a candidate sense boundary, strengthening rather than weakening the nucleus.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "2:229:33:1",
+     "preliminary_disposition": "RESISTANT",
+     "preliminary_note": "Considered as a possible break from the 'futile eschatological self-ransom' pattern since it is effective and worldly.",
+     "final_disposition": "CONSISTENT",
+     "reconciliation_rationale": "It is not a break in meaning but a bridge: same iftadat bi-hi self-ransom frame with a release-from-a-binding-claim teleology (the marriage bond); it dissolves 'futile-vs-effective' as a candidate sense boundary, strengthening rather than weakening the nucleus.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:229",
+     "verse_text": "ٱلطَّلَٰقُ مَرَّتَانِ فَإِمْسَاكٌۢ بِمَعْرُوفٍ أَوْ تَسْرِيحٌۢ بِإِحْسَٰنٍ وَلَا يَحِلُّ لَكُمْ أَن تَأْخُذُوا۟ مِمَّآ ءَاتَيْتُمُوهُنَّ شَيْـًٔا إِلَّآ أَن يَخَافَآ أَلَّا يُقِيمَا حُدُودَ ٱللَّهِ فَإِنْ خِفْتُمْ أَلَّا يُقِيمَا حُدُودَ ٱللَّهِ فَلَا جُنَاحَ عَلَيْهِمَا فِيمَا ٱفْتَدَتْ بِهِۦ تِلْكَ حُدُودُ ٱللَّهِ فَلَا تَعْتَدُوهَا وَمَن يَتَعَدَّ حُدُودَ ٱللَّهِ فَأُو۟لَٰٓئِكَ هُمُ ٱلظَّٰلِمُونَ"
+    }
+   ],
+   "root_arabic": "ف د ي",
+   "root_buckwalter": "fdy",
+   "root_id": "fdy",
+   "artifact_name": "fdy.json",
+   "verse_ref": "2:229",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{fotadato",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱلطَّلَٰقُ مَرَّتَانِ فَإِمْسَاكٌۢ بِمَعْرُوفٍ أَوْ تَسْرِيحٌۢ بِإِحْسَٰنٍ وَلَا يَحِلُّ لَكُمْ أَن تَأْخُذُوا۟ مِمَّآ ءَاتَيْتُمُوهُنَّ شَيْـًٔا إِلَّآ أَن يَخَافَآ أَلَّا يُقِيمَا حُدُودَ ٱللَّهِ فَإِنْ خِفْتُمْ أَلَّا يُقِيمَا حُدُودَ ٱللَّهِ فَلَا جُنَاحَ عَلَيْهِمَا فِيمَا ٱفْتَدَتْ بِهِۦ تِلْكَ حُدُودُ ٱللَّهِ فَلَا تَعْتَدُوهَا وَمَن يَتَعَدَّ حُدُودَ ٱللَّهِ فَأُو۟لَٰٓئِكَ هُمُ ٱلظَّٰلِمُونَ"
+  },
+  {
+   "word_ref": "2:85:18:1",
+   "disposition": "CONSISTENT",
+   "note": "Both realize the substitution-for-release nucleus with the beneficiary being another party; morphology carries the direction (I/III = redeem another) while the core is constant. Per-form role differentiation here rests on singletons, so it is suggestive only.",
+   "coverage_cluster_id": "redeem_another_I_and_III",
+   "candidate_semantic_interpretation": "Redemption of a third party by substitution: Form I, God delivers the son by providing a substitute victim (37:107 fadaynahu bi-dhibhin 'azim); Form III, mutual/transactional ransom of captives (2:85 tufaduhum), object = the captives freed.",
+   "cluster_supporting_evidence": "37:107 is the purest accepted life-for-life substitution and resists any commercial/creditor reading (God both imposes the trial and provides the substitute; the price is a slaughter-animal, not wealth) — it forces the nucleus to be stated as SUBSTITUTION, not commerce; 2:85 supplies the transactional third-party ransom.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Both realize the substitution-for-release nucleus with the beneficiary being another party; morphology carries the direction (I/III = redeem another) while the core is constant. Per-form role differentiation here rests on singletons, so it is suggestive only.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:85",
+     "verse_text": "ثُمَّ أَنتُمْ هَٰٓؤُلَآءِ تَقْتُلُونَ أَنفُسَكُمْ وَتُخْرِجُونَ فَرِيقًا مِّنكُم مِّن دِيَٰرِهِمْ تَظَٰهَرُونَ عَلَيْهِم بِٱلْإِثْمِ وَٱلْعُدْوَٰنِ وَإِن يَأْتُوكُمْ أُسَٰرَىٰ تُفَٰدُوهُمْ وَهُوَ مُحَرَّمٌ عَلَيْكُمْ إِخْرَاجُهُمْ أَفَتُؤْمِنُونَ بِبَعْضِ ٱلْكِتَٰبِ وَتَكْفُرُونَ بِبَعْضٍ فَمَا جَزَآءُ مَن يَفْعَلُ ذَٰلِكَ مِنكُمْ إِلَّا خِزْىٌ فِى ٱلْحَيَوٰةِ ٱلدُّنْيَا وَيَوْمَ ٱلْقِيَٰمَةِ يُرَدُّونَ إِلَىٰٓ أَشَدِّ ٱلْعَذَابِ وَمَا ٱللَّهُ بِغَٰفِلٍ عَمَّا تَعْمَلُونَ"
+    }
+   ],
+   "root_arabic": "ف د ي",
+   "root_buckwalter": "fdy",
+   "root_id": "fdy",
+   "artifact_name": "fdy.json",
+   "verse_ref": "2:85",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tufa`du",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "III",
+   "morphology": "V(III)",
+   "form": "V(III)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ثُمَّ أَنتُمْ هَٰٓؤُلَآءِ تَقْتُلُونَ أَنفُسَكُمْ وَتُخْرِجُونَ فَرِيقًا مِّنكُم مِّن دِيَٰرِهِمْ تَظَٰهَرُونَ عَلَيْهِم بِٱلْإِثْمِ وَٱلْعُدْوَٰنِ وَإِن يَأْتُوكُمْ أُسَٰرَىٰ تُفَٰدُوهُمْ وَهُوَ مُحَرَّمٌ عَلَيْكُمْ إِخْرَاجُهُمْ أَفَتُؤْمِنُونَ بِبَعْضِ ٱلْكِتَٰبِ وَتَكْفُرُونَ بِبَعْضٍ فَمَا جَزَآءُ مَن يَفْعَلُ ذَٰلِكَ مِنكُمْ إِلَّا خِزْىٌ فِى ٱلْحَيَوٰةِ ٱلدُّنْيَا وَيَوْمَ ٱلْقِيَٰمَةِ يُرَدُّونَ إِلَىٰٓ أَشَدِّ ٱلْعَذَابِ وَمَا ٱللَّهُ بِغَٰفِلٍ عَمَّا تَعْمَلُونَ"
+  },
+  {
+   "word_ref": "37:107:1:2",
+   "disposition": "CONSISTENT",
+   "note": "Adversarial boundary: pure accepted substitution (God provides bi-dhibhin 'azim to deliver the son); resists commercial/creditor readings and fixes the nucleus at substitution, not commerce. | 37:107 is the purest accepted life-for-life substitution and resists any commercial/creditor reading (God both imposes the trial and provides the substitute; the price is a slaughter-animal, not wealth) — it forces the nucleus to be stated as SUBSTITUTION, not commerce.",
+   "coverage_cluster_id": "redeem_another_I_and_III",
+   "candidate_semantic_interpretation": "Redemption of a third party by substitution: Form I, God delivers the son by providing a substitute victim (37:107 fadaynahu bi-dhibhin 'azim); Form III, mutual/transactional ransom of captives (2:85 tufaduhum), object = the captives freed.",
+   "cluster_supporting_evidence": "37:107 is the purest accepted life-for-life substitution and resists any commercial/creditor reading (God both imposes the trial and provides the substitute; the price is a slaughter-animal, not wealth) — it forces the nucleus to be stated as SUBSTITUTION, not commerce; 2:85 supplies the transactional third-party ransom.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Both realize the substitution-for-release nucleus with the beneficiary being another party; morphology carries the direction (I/III = redeem another) while the core is constant. Per-form role differentiation here rests on singletons, so it is suggestive only.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": "Absorbed by the substitution-for-release nucleus (bi- still marks the stand-in victim; the son is freed from the impending slaughter); paralleled by third-party redemption in 2:85/47:4. The real fault line is the ritual nominal (2:184/2:196), not 37:107.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "37:107:1:2",
+     "preliminary_disposition": "RESISTANT",
+     "preliminary_note": "Looks resistant because the agent is God/benefactor (not the imperiled party) and there is no creditor receiving payment.",
+     "final_disposition": "CONSISTENT",
+     "reconciliation_rationale": "Absorbed by the substitution-for-release nucleus (bi- still marks the stand-in victim; the son is freed from the impending slaughter); paralleled by third-party redemption in 2:85/47:4. The real fault line is the ritual nominal (2:184/2:196), not 37:107.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "37:107",
+     "verse_text": "وَفَدَيْنَٰهُ بِذِبْحٍ عَظِيمٍ"
+    }
+   ],
+   "root_arabic": "ف د ي",
+   "root_buckwalter": "fdy",
+   "root_id": "fdy",
+   "artifact_name": "fdy.json",
+   "verse_ref": "37:107",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fadayo",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَفَدَيْنَٰهُ بِذِبْحٍ عَظِيمٍ"
+  },
+  {
+   "word_ref": "39:47:11:2",
+   "disposition": "CONSISTENT",
+   "note": "All six share the rigid frame iftada bi-[substitute] (+ min [penalty] in 39:47/5:36/70:11), with the substitute bi-marked and the liability min-marked; futility is supplied by law-/law-anna contrafactuals and 'ma tuqubbila minhum' (5:36) / 'lahum 'adhabun alim' (3:91), i.e. it is contextual, not encoded in fdy.",
+   "coverage_cluster_id": "VIII_self_ransom_eschatological_futile",
+   "candidate_semantic_interpretation": "Form VIII self-ransom: a culpable soul offers a substitute (all earthly wealth and its like, gold, or its own sons) to free ITSELF from the punishment of the Day; the offer is hypothetical and/or explicitly refused.",
+   "cluster_supporting_evidence": "Distinctive substitution-for-release signature and the efficacy-neutral boundary at its clearest: the substitute is offered and not accepted, so fdy names the offer, not an achieved release. 70:11 (bi-banihi) and 3:91 (mil'u l-ardi dhahaban) show the substitute is not necessarily money.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All six share the rigid frame iftada bi-[substitute] (+ min [penalty] in 39:47/5:36/70:11), with the substitute bi-marked and the liability min-marked; futility is supplied by law-/law-anna contrafactuals and 'ma tuqubbila minhum' (5:36) / 'lahum 'adhabun alim' (3:91), i.e. it is contextual, not encoded in fdy.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "39:47",
+     "verse_text": "وَلَوْ أَنَّ لِلَّذِينَ ظَلَمُوا۟ مَا فِى ٱلْأَرْضِ جَمِيعًا وَمِثْلَهُۥ مَعَهُۥ لَٱفْتَدَوْا۟ بِهِۦ مِن سُوٓءِ ٱلْعَذَابِ يَوْمَ ٱلْقِيَٰمَةِ وَبَدَا لَهُم مِّنَ ٱللَّهِ مَا لَمْ يَكُونُوا۟ يَحْتَسِبُونَ"
+    }
+   ],
+   "root_arabic": "ف د ي",
+   "root_buckwalter": "fdy",
+   "root_id": "fdy",
+   "artifact_name": "fdy.json",
+   "verse_ref": "39:47",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{fotada",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَوْ أَنَّ لِلَّذِينَ ظَلَمُوا۟ مَا فِى ٱلْأَرْضِ جَمِيعًا وَمِثْلَهُۥ مَعَهُۥ لَٱفْتَدَوْا۟ بِهِۦ مِن سُوٓءِ ٱلْعَذَابِ يَوْمَ ٱلْقِيَٰمَةِ وَبَدَا لَهُم مِّنَ ٱللَّهِ مَا لَمْ يَكُونُوا۟ يَحْتَسِبُونَ"
+  },
+  {
+   "word_ref": "3:91:15:1",
+   "disposition": "CONSISTENT",
+   "note": "All six share the rigid frame iftada bi-[substitute] (+ min [penalty] in 39:47/5:36/70:11), with the substitute bi-marked and the liability min-marked; futility is supplied by law-/law-anna contrafactuals and 'ma tuqubbila minhum' (5:36) / 'lahum 'adhabun alim' (3:91), i.e. it is contextual, not encoded in fdy.",
+   "coverage_cluster_id": "VIII_self_ransom_eschatological_futile",
+   "candidate_semantic_interpretation": "Form VIII self-ransom: a culpable soul offers a substitute (all earthly wealth and its like, gold, or its own sons) to free ITSELF from the punishment of the Day; the offer is hypothetical and/or explicitly refused.",
+   "cluster_supporting_evidence": "Distinctive substitution-for-release signature and the efficacy-neutral boundary at its clearest: the substitute is offered and not accepted, so fdy names the offer, not an achieved release. 70:11 (bi-banihi) and 3:91 (mil'u l-ardi dhahaban) show the substitute is not necessarily money.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All six share the rigid frame iftada bi-[substitute] (+ min [penalty] in 39:47/5:36/70:11), with the substitute bi-marked and the liability min-marked; futility is supplied by law-/law-anna contrafactuals and 'ma tuqubbila minhum' (5:36) / 'lahum 'adhabun alim' (3:91), i.e. it is contextual, not encoded in fdy.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:91",
+     "verse_text": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ وَمَاتُوا۟ وَهُمْ كُفَّارٌ فَلَن يُقْبَلَ مِنْ أَحَدِهِم مِّلْءُ ٱلْأَرْضِ ذَهَبًا وَلَوِ ٱفْتَدَىٰ بِهِۦٓ أُو۟لَٰٓئِكَ لَهُمْ عَذَابٌ أَلِيمٌ وَمَا لَهُم مِّن نَّٰصِرِينَ"
+    }
+   ],
+   "root_arabic": "ف د ي",
+   "root_buckwalter": "fdy",
+   "root_id": "fdy",
+   "artifact_name": "fdy.json",
+   "verse_ref": "3:91",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "{fotadaY`",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ وَمَاتُوا۟ وَهُمْ كُفَّارٌ فَلَن يُقْبَلَ مِنْ أَحَدِهِم مِّلْءُ ٱلْأَرْضِ ذَهَبًا وَلَوِ ٱفْتَدَىٰ بِهِۦٓ أُو۟لَٰٓئِكَ لَهُمْ عَذَابٌ أَلِيمٌ وَمَا لَهُم مِّن نَّٰصِرِينَ"
+  },
+  {
+   "word_ref": "47:4:16:1",
+   "disposition": "CONSISTENT",
+   "note": "These nominal uses stay within the person-release nucleus (captive release; ransom from the Fire) and provide the sharpest distinctiveness marker (fidaa' != mann) plus the nominal counterpart of the futile VIII cluster (57:15).",
+   "coverage_cluster_id": "nominal_ransom_captive_and_eschatological",
+   "candidate_semantic_interpretation": "Nominal fdy naming the substitute/transaction of release of a person: fidaa' = release of captives against a price, explicitly opposed to mann (free release) in 47:4; fidyah = the (would-be) eschatological ransom that is 'not taken' in 57:15.",
+   "cluster_supporting_evidence": "47:4 lexically contrasts compensated release (fidaa') with gratuitous release (mann), isolating the substitute-price as essential to fdy; 57:15 'la yu'khadhu minkum fidyatun' mirrors the refused self-ransom, reinforcing the efficacy-neutral boundary.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "These nominal uses stay within the person-release nucleus (captive release; ransom from the Fire) and provide the sharpest distinctiveness marker (fidaa' != mann) plus the nominal counterpart of the futile VIII cluster (57:15).",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "47:4",
+     "verse_text": "فَإِذَا لَقِيتُمُ ٱلَّذِينَ كَفَرُوا۟ فَضَرْبَ ٱلرِّقَابِ حَتَّىٰٓ إِذَآ أَثْخَنتُمُوهُمْ فَشُدُّوا۟ ٱلْوَثَاقَ فَإِمَّا مَنًّۢا بَعْدُ وَإِمَّا فِدَآءً حَتَّىٰ تَضَعَ ٱلْحَرْبُ أَوْزَارَهَا ذَٰلِكَ وَلَوْ يَشَآءُ ٱللَّهُ لَٱنتَصَرَ مِنْهُمْ وَلَٰكِن لِّيَبْلُوَا۟ بَعْضَكُم بِبَعْضٍ وَٱلَّذِينَ قُتِلُوا۟ فِى سَبِيلِ ٱللَّهِ فَلَن يُضِلَّ أَعْمَٰلَهُمْ"
+    }
+   ],
+   "root_arabic": "ف د ي",
+   "root_buckwalter": "fdy",
+   "root_id": "fdy",
+   "artifact_name": "fdy.json",
+   "verse_ref": "47:4",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fidaA^'F",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَإِذَا لَقِيتُمُ ٱلَّذِينَ كَفَرُوا۟ فَضَرْبَ ٱلرِّقَابِ حَتَّىٰٓ إِذَآ أَثْخَنتُمُوهُمْ فَشُدُّوا۟ ٱلْوَثَاقَ فَإِمَّا مَنًّۢا بَعْدُ وَإِمَّا فِدَآءً حَتَّىٰ تَضَعَ ٱلْحَرْبُ أَوْزَارَهَا ذَٰلِكَ وَلَوْ يَشَآءُ ٱللَّهُ لَٱنتَصَرَ مِنْهُمْ وَلَٰكِن لِّيَبْلُوَا۟ بَعْضَكُم بِبَعْضٍ وَٱلَّذِينَ قُتِلُوا۟ فِى سَبِيلِ ٱللَّهِ فَلَن يُضِلَّ أَعْمَٰلَهُمْ"
+  },
+  {
+   "word_ref": "57:15:5:1",
+   "disposition": "CONSISTENT",
+   "note": "These nominal uses stay within the person-release nucleus (captive release; ransom from the Fire) and provide the sharpest distinctiveness marker (fidaa' != mann) plus the nominal counterpart of the futile VIII cluster (57:15).",
+   "coverage_cluster_id": "nominal_ransom_captive_and_eschatological",
+   "candidate_semantic_interpretation": "Nominal fdy naming the substitute/transaction of release of a person: fidaa' = release of captives against a price, explicitly opposed to mann (free release) in 47:4; fidyah = the (would-be) eschatological ransom that is 'not taken' in 57:15.",
+   "cluster_supporting_evidence": "47:4 lexically contrasts compensated release (fidaa') with gratuitous release (mann), isolating the substitute-price as essential to fdy; 57:15 'la yu'khadhu minkum fidyatun' mirrors the refused self-ransom, reinforcing the efficacy-neutral boundary.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "These nominal uses stay within the person-release nucleus (captive release; ransom from the Fire) and provide the sharpest distinctiveness marker (fidaa' != mann) plus the nominal counterpart of the futile VIII cluster (57:15).",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "57:15",
+     "verse_text": "فَٱلْيَوْمَ لَا يُؤْخَذُ مِنكُمْ فِدْيَةٌ وَلَا مِنَ ٱلَّذِينَ كَفَرُوا۟ مَأْوَىٰكُمُ ٱلنَّارُ هِىَ مَوْلَىٰكُمْ وَبِئْسَ ٱلْمَصِيرُ"
+    }
+   ],
+   "root_arabic": "ف د ي",
+   "root_buckwalter": "fdy",
+   "root_id": "fdy",
+   "artifact_name": "fdy.json",
+   "verse_ref": "57:15",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fidoyapN",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَٱلْيَوْمَ لَا يُؤْخَذُ مِنكُمْ فِدْيَةٌ وَلَا مِنَ ٱلَّذِينَ كَفَرُوا۟ مَأْوَىٰكُمُ ٱلنَّارُ هِىَ مَوْلَىٰكُمْ وَبِئْسَ ٱلْمَصِيرُ"
+  },
+  {
+   "word_ref": "5:36:13:2",
+   "disposition": "CONSISTENT",
+   "note": "All six share the rigid frame iftada bi-[substitute] (+ min [penalty] in 39:47/5:36/70:11), with the substitute bi-marked and the liability min-marked; futility is supplied by law-/law-anna contrafactuals and 'ma tuqubbila minhum' (5:36) / 'lahum 'adhabun alim' (3:91), i.e. it is contextual, not encoded in fdy.",
+   "coverage_cluster_id": "VIII_self_ransom_eschatological_futile",
+   "candidate_semantic_interpretation": "Form VIII self-ransom: a culpable soul offers a substitute (all earthly wealth and its like, gold, or its own sons) to free ITSELF from the punishment of the Day; the offer is hypothetical and/or explicitly refused.",
+   "cluster_supporting_evidence": "Distinctive substitution-for-release signature and the efficacy-neutral boundary at its clearest: the substitute is offered and not accepted, so fdy names the offer, not an achieved release. 70:11 (bi-banihi) and 3:91 (mil'u l-ardi dhahaban) show the substitute is not necessarily money.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All six share the rigid frame iftada bi-[substitute] (+ min [penalty] in 39:47/5:36/70:11), with the substitute bi-marked and the liability min-marked; futility is supplied by law-/law-anna contrafactuals and 'ma tuqubbila minhum' (5:36) / 'lahum 'adhabun alim' (3:91), i.e. it is contextual, not encoded in fdy.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "5:36",
+     "verse_text": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ لَوْ أَنَّ لَهُم مَّا فِى ٱلْأَرْضِ جَمِيعًا وَمِثْلَهُۥ مَعَهُۥ لِيَفْتَدُوا۟ بِهِۦ مِنْ عَذَابِ يَوْمِ ٱلْقِيَٰمَةِ مَا تُقُبِّلَ مِنْهُمْ وَلَهُمْ عَذَابٌ أَلِيمٌ"
+    }
+   ],
+   "root_arabic": "ف د ي",
+   "root_buckwalter": "fdy",
+   "root_id": "fdy",
+   "artifact_name": "fdy.json",
+   "verse_ref": "5:36",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yafotadu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ لَوْ أَنَّ لَهُم مَّا فِى ٱلْأَرْضِ جَمِيعًا وَمِثْلَهُۥ مَعَهُۥ لِيَفْتَدُوا۟ بِهِۦ مِنْ عَذَابِ يَوْمِ ٱلْقِيَٰمَةِ مَا تُقُبِّلَ مِنْهُمْ وَلَهُمْ عَذَابٌ أَلِيمٌ"
+  },
+  {
+   "word_ref": "70:11:5:1",
+   "disposition": "CONSISTENT",
+   "note": "All six share the rigid frame iftada bi-[substitute] (+ min [penalty] in 39:47/5:36/70:11), with the substitute bi-marked and the liability min-marked; futility is supplied by law-/law-anna contrafactuals and 'ma tuqubbila minhum' (5:36) / 'lahum 'adhabun alim' (3:91), i.e. it is contextual, not encoded in fdy.",
+   "coverage_cluster_id": "VIII_self_ransom_eschatological_futile",
+   "candidate_semantic_interpretation": "Form VIII self-ransom: a culpable soul offers a substitute (all earthly wealth and its like, gold, or its own sons) to free ITSELF from the punishment of the Day; the offer is hypothetical and/or explicitly refused.",
+   "cluster_supporting_evidence": "Distinctive substitution-for-release signature and the efficacy-neutral boundary at its clearest: the substitute is offered and not accepted, so fdy names the offer, not an achieved release. 70:11 (bi-banihi) and 3:91 (mil'u l-ardi dhahaban) show the substitute is not necessarily money.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All six share the rigid frame iftada bi-[substitute] (+ min [penalty] in 39:47/5:36/70:11), with the substitute bi-marked and the liability min-marked; futility is supplied by law-/law-anna contrafactuals and 'ma tuqubbila minhum' (5:36) / 'lahum 'adhabun alim' (3:91), i.e. it is contextual, not encoded in fdy.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "70:11",
+     "verse_text": "يُبَصَّرُونَهُمْ يَوَدُّ ٱلْمُجْرِمُ لَوْ يَفْتَدِى مِنْ عَذَابِ يَوْمِئِذٍۭ بِبَنِيهِ"
+    }
+   ],
+   "root_arabic": "ف د ي",
+   "root_buckwalter": "fdy",
+   "root_id": "fdy",
+   "artifact_name": "fdy.json",
+   "verse_ref": "70:11",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yafotadiY",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "VIII",
+   "morphology": "V(VIII)",
+   "form": "V(VIII)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يُبَصَّرُونَهُمْ يَوَدُّ ٱلْمُجْرِمُ لَوْ يَفْتَدِى مِنْ عَذَابِ يَوْمِئِذٍۭ بِبَنِيهِ"
+  }
+ ],
+ "resistant_deep_analysis": [
+  {
+   "word_ref": "2:184:17:1",
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "This nominal sub-class is coherent and lexicalized ('fidyah: feeding a poor person'; 'fa-fidyatun min siyamin aw sadaqatin aw nusuk', with sadaqah subordinated under fidyah, so fidyah != charity). It cannot be absorbed by the distinctive person-ransom nucleus without retreating to the over-broad 'substitute-in-lieu' abstraction the contract disqualifies; the same noun fidyah splits across the divide (57:15 ransom vs. 2:184/2:196 ritual compensation), so nominal unity is not semantic unity ('same root != one meaning', 'same gloss != synonymy').",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "2:196:27:2",
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "This nominal sub-class is coherent and lexicalized ('fidyah: feeding a poor person'; 'fa-fidyatun min siyamin aw sadaqatin aw nusuk', with sadaqah subordinated under fidyah, so fidyah != charity). It cannot be absorbed by the distinctive person-ransom nucleus without retreating to the over-broad 'substitute-in-lieu' abstraction the contract disqualifies; the same noun fidyah splits across the divide (57:15 ransom vs. 2:184/2:196 ritual compensation), so nominal unity is not semantic unity ('same root != one meaning', 'same gloss != synonymy').",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "deep_analysis": true
+  }
+ ],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Convergence of two independent lenses (A, C) on MODERATE/REPRESENTATIVE with the same resistant sub-class; the third lens (B) reached STRONG only via a shared-root/schema bridge that the methodology forbids, so it does not license PASSED.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "2:184:17:1",
+  "2:196:27:2"
+ ],
+ "unreconciled_count": 2,
+ "resistant_occurrences": [
+  "2:184:17:1",
+  "2:196:27:2"
+ ],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "fdy = the provision of a valued substitute (a stand-in / price, syntactically the bi-marked slot) IN PLACE OF a person or a person's incurred liability, in order to (seek to) release or exempt them from a binding claim — punishment, captivity, or a marital bond. The substitution-for-discharge core holds across all four forms (I redeems another 37:107; III mutual ransom of captives 2:85; VIII self-ransom, all 7; N the substitute-object/transaction), with morphology carrying only the direction/beneficiary, not the meaning. Two invariants are Quran-internal: (1) the substitute is near-obligatorily bi-marked (bihi, bi-dhibhin, bi-banihi), and (2) the claim/peril escaped is min-marked or contextual (min 'adhab, usara, the bond in 2:229). The account is efficacy-NEUTRAL: it names the offer of a substitute, decoupled from acceptance. This preferred nucleus covers 11/13; it does NOT cleanly extend to the lexicalized ritual nominal fidyah (2:184/2:196), where no person is imperiled or released and only a devotional/ritual obligation is discharged — a coherent resistant sub-class that caps the grade below STRONG.",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "DERIVATIONAL_FAMILY",
+ "layer_attribution": {
+  "occurrence_evidence": "13/13 occurrences read; the bi-marked substitute (bihi 10:54/13:18/39:47/3:91/5:36, bi-dhibhin 37:107, bi-banihi 70:11) and min-marked liability (min 'adhab 5:36/70:11, min su'i l-'adhab 39:47) are directly attested in verse_text, as is the fidaa'!=mann contrast (47:4) and the refusals (ma tuqubbila 5:36, la yu'khadhu 57:15).",
+  "derivation": "QAC morphology partitions the family: V(VIII) x7 (self-ransom), V(III) x1 (mutual, 2:85), base V x1 (37:107, redeem another), N x4 (fidyah/fidaa'). Morphology carries direction/beneficiary only; the substitution core is form-invariant, instantiating 'morphology != semantic identity'.",
+  "lexical_class": "The noun fidyah is lexicalized in two directions: person-ransom (57:15, and fidaa' 47:4) vs. ritual/devotional compensation (2:184/2:196). This split within one noun is the basis for treating 2:184/2:196 as a coherent resistant lexicalized sub-class rather than folding it into the verbal nucleus.",
+  "contextual_relation": "Eschatological futility (law/la-anna framing; Judgment setting) and worldly efficacy (khul' 2:229, captive ransom 2:85, divine deliverance 37:107) are narrative/contextual layers; they are NOT promoted into the root claim — efficacy is held as contextual, so fdy remains efficacy-neutral.",
+  "reconciliation": "Preliminary resistances at 2:229 (effective worldly VIII) and 37:107 (no creditor, divine agent) were reconciled to CONSISTENT as bridge/boundary cases; the persistent resistance is confined to the ritual nominal (2:184/2:196), which is retained as RESISTANT rather than force-unified.",
+  "unresolved_resistance": "The ritual compensatory fidyah (2:184:17:1, 2:196:27:2) remains unresolved against the narrow person-ransom nucleus: no Quran-internal bridge (beyond shared root and a generic substitution schema) demonstrates it is the same sense, so it caps the finding at MODERATE / REPRESENTATIVE and is recorded as counterevidence."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "2:184:17:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "Lexicalized ritual fidyah with no imperiled party, no captor, no penalty escaped, and no person released — the sharpest resistor to the person-ransom nucleus, absorbable only by an over-broad 'substitute-in-lieu' abstraction the contract disqualifies.",
+   "evidence_basis": {
+    "kind": "OCCURRENCE_SEMANTICS",
+    "statement": "2:184:17:1 'fidyatun ta'amu miskin' has no captor, no penalty escaped, no bond, and no person released — only an alternative act discharging a ritual obligation."
+   }
+  },
+  {
+   "word_ref": "2:196:27:2",
+   "role": "RESISTANT_SEAM",
+   "reason": "Second member of the coherent lexicalized ritual sub-class (fasting/charity/sacrifice discharging the ihram shaving penalty); with sadaqah subordinated under fidyah, it shows fidyah is the discharge-category, not a person-ransom.",
+   "evidence_basis": {
+    "kind": "OCCURRENCE_SEMANTICS",
+    "statement": "2:196 reinforces this as a coherent lexicalized ritual sub-class rather than an isolated outlier."
+   }
+  },
+  {
+   "word_ref": "37:107:1:2",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "Pure accepted substitution with no creditor and a non-monetary price; probes whether fdy encodes commerce, and answers no — the nucleus must be stated as substitution.",
+   "evidence_basis": {
+    "kind": "OCCURRENCE_SEMANTICS",
+    "statement": "37:107 is the purest accepted life-for-life substitution and resists any commercial/creditor reading (God both imposes the trial and provides the substitute; the price is a slaughter-animal, not wealth) — it forces the nucleus to be stated as SUBSTITUTION, not commerce."
+   }
+  },
+  {
+   "word_ref": "2:229:33:1",
+   "role": "STRUCTURAL_ATYPICALITY",
+   "reason": "Form VIII self-ransom that is effective and worldly rather than futile-eschatological; a structural bridge showing efficacy is contextual, not lexical.",
+   "evidence_basis": {
+    "kind": "MORPHO_SEMANTIC_BRIDGE",
+    "statement": "Bridge occurrence: 2:229 is morphologically self-ransom yet effective and bilateral, dissolving any 'futile eschatology' as a distinct sense and confirming the release-from-a-binding-claim teleology (here the marriage bond)."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "Each hard case is grounded in a specific occurrence's semantics; the two RESISTANT_SEAM cases (2:184/2:196) constitute a coherent lexicalized nominal sub-class that persists against the preferred nucleus and caps the grade, while the ADVERSARIAL_BOUNDARY (37:107) and STRUCTURAL_ATYPICALITY (2:229) are absorbed and reported as bridges. Their statements also appear in the corresponding cluster notes and strongest_counterexample."
+ },
+ "rejection_condition": {
+  "challenging_finding": "An occurrence in which fdy (verb or noun) denotes the substitute/act WITHOUT any binding claim being discharged and without any release/exemption teleology — e.g. fdy used for ordinary acquisitive purchase, gratuitous gift, or generic spending with no claim, bond, penalty, or ritual duty in view — would refute the substitution-for-discharge nucleus; alternatively, a demonstrated Quran-internal bridge collapsing the ritual fidyah (2:184/2:196) into the person-ransom sense would remove the resistant sub-class and force re-grading upward.",
+  "search_location": "All 13 occurrences, with adversarial focus on the two nominal poles that could break the account: the ritual fidyah (2:184:17:1, 2:196:27:2) and the mann-contrast (47:4:16:1); and on 37:107:1:2 / 2:85:18:1 to test whether direction/beneficiary is form-borne or root-borne.",
+  "verification_method": "Re-read each verse_text for (a) a bi-marked substitute slot, (b) a min-marked or contextual claim/liability escaped, and (c) a release/exemption target; check whether removing the claim/release still leaves fdy felicitous. For the upward-regrade test, require an independent Quran-internal demonstration (not shared root or a generic substitution schema) that ritual discharge and person-ransom are one sense.",
+  "confounder_control": "Do not let shared morphology (all VIII look alike) or the shared noun fidyah (57:15 vs. 2:184/2:196) stand in for semantic identity; do not import lexicon/tafsir bridges; hold efficacy (accepted vs. refused) as a contextual variable, not a sense; distinguish the content of a substitute (food, fasting, animal, gold) from the substitution relation itself.",
+  "failure_consequence": "If an acquisitive/gratuitous/claim-free fdy is found, the nucleus is falsified and the result moves to UNRESOLVED or a narrower LOCAL account; if instead a genuine internal bridge for the ritual nominal is demonstrated, the resistant sub-class dissolves and the grade is reconsidered toward STRONG / ROOT_GENERALIZATION."
+ },
+ "falsification_status": "NOT_RUN",
+ "reopen_conditions": [
+  "If a Quran-internal bridge is demonstrated that unifies the ritual fidyah (2:184:17:1, 2:196:27:2) with the person-ransom nucleus WITHOUT relying on shared root or a generic substitution schema, re-open to reconsider STRONG / ROOT_GENERALIZATION.",
+  "If additional occurrences of the base I-form (cf. singleton 37:107:1:2) or Form III (cf. singleton 2:85:18:1) are admitted, re-open the per-form role mapping (I/III = redeem another vs. VIII = redeem self), currently only suggestive because it rests on singletons.",
+  "If any occurrence shows fdy as acquisitive purchase or gratuitous gift (contra the fidaa'!=mann contrast at 47:4:16:1), re-open the efficacy-neutral, release-oriented boundary and the whole nucleus."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "10:54:9:2",
+  "13:18:18:2",
+  "39:47:11:2",
+  "3:91:15:1",
+  "5:36:13:2",
+  "70:11:5:1",
+  "2:229:33:1",
+  "37:107:1:2",
+  "2:85:18:1",
+  "47:4:16:1",
+  "57:15:5:1"
+ ],
+ "counterevidence_refs": [
+  "2:184:17:1",
+  "2:196:27:2"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "fdy-falsify-01",
+  "verdict": "CORE_HOLDS_WITH_RESIDUAL_RESISTANCE",
+  "falsifiable": true,
+  "distinctiveness_ok": true,
+  "failing_occurrences": [
+   "2:184:17:1",
+   "2:196:27:2"
+  ],
+  "tested_material_clusters": [
+   "VIII_self_ransom_eschatological_futile",
+   "VIII_self_ransom_worldly_effective_khul",
+   "redeem_another_I_and_III",
+   "nominal_ransom_captive_and_eschatological",
+   "nominal_ritual_compensatory_fidyah"
+  ],
+  "status_rationale": "A full adversarial refutation returning SUPPORTED with failing_occurrences=[] cannot be claimed because the ritual fidyah sub-class (2:184/2:196) resists the distinctive person-ransom nucleus. The core nucleus holds for 11/13 with a distinctive bi-substitute/min-liability signature and the fidaa'!=mann contrast, so the status is NOT_RUN with the resistant occurrences recorded, per contract (some occurrences resist but the core holds)."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fdy: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fdy: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fdy: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fdy: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fdy: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fdy: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fdy: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "fdy: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

@@ -1,0 +1,369 @@
+{
+ "root_arabic": "ج ذ ع",
+ "root_buckwalter": "j*E",
+ "root_id": "j*E",
+ "artifact_name": "j_2A_E.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave4",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "The concrete count-noun جِذْع / pl. جُذُوع denoting the rigid, upright, load-bearing woody trunk/bole of the palm — the standing structural body one is driven to and leans against (19:23), grips and shakes to transmit force so fruit drops (19:25), and fastens a body onto (20:71). It is a PART of the palm, distinct from the whole tree and from its fruit, and neutral to whether the palm is living or fruit-bearing. No abstract, verbal, or metaphorical root sense is Quran-attested.",
+ "internal_discovery": {
+  "candidate_root_contribution": "The concrete count-noun جِذْع / pl. جُذُوع denoting the rigid, upright, load-bearing woody trunk/bole of the palm — the standing structural body one is driven to and leans against (19:23), grips and shakes to transmit force so fruit drops (19:25), and fastens a body onto (20:71). It is a PART of the palm, distinct from the whole tree and from its fruit, and neutral to whether the palm is living or fruit-bearing. No abstract, verbal, or metaphorical root sense is Quran-attested.",
+  "plain_explanation": "All three occurrences are the same noun, differing only in number (singular جِذْع twice, broken plural جُذُوع once). In every token it is bound in construct to the palm (النخلة / النخل) and names the tree's rigid vertical woody trunk: the thing Maryam is driven toward and can lean on, the body she shakes so ripe dates fall, and the upright post Pharaoh threatens to crucify the magicians upon. Three different physical uses — lean-against, grasp-and-shake, affix-body-to — all presuppose one and the same property: a stiff, weight-bearing vertical column. The sense is scene-neutral, appearing identically in divine provision and in tyrannical cruelty.",
+  "layer_separation_note": "NOT the whole tree (always جِذْع OF the palm — a part, not the organism); NOT the fruit (19:25 names رُطَب جَنِيّ as a separate thing the trunk merely yields when shaken); NOT the crown, fronds, branches, or roots; NOT bound to any non-palm plant or object (100% palm collocation); does NOT entail life, vitality, or fruit-bearing (20:71 is a bare execution-post); carries NO moral, theological, abstract, or metaphorical valence; no animal/'young-in-prime' or any verbal sense is attested (zero tokens), so it is excluded Quran-internally.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "20:71 (فِى جُذُوعِ ٱلنَّخْلِ) uses جِذْع as a bare crucifixion-post in the Pharaoh/magicians scene — different narrative, plural morphology, and a functional shift from part-of-a-living-palm (19:23–25) to instrument of execution. It does not break unity: the referent is still the palm's woody upright column, and the difference is contextual use, not lexical meaning. Its real evidential value is as a negative boundary — it disproves any richer 'living/fruiting stem' account and confirms the bare 'upright woody bole' nucleus that is neutral to whether the palm is living or fruit-bearing.",
+  "strongest_competitor": "That the root denotes a generic 'trunk/stem of any tree' (or, more radically, that there is no analyzable root nucleus at all — جِذْع is simply a frozen concrete label for 'palm trunk'). This competitor cannot be defeated Quran-internally: 3/3 tokens collocate with النخلة/النخل, so the corpus cannot distinguish 'trunk-of-palm specifically' from 'trunk generically, here applied to a palm', and cannot separate a genuine root contribution from a lexicalized item. Per source policy no lexicon may be imported to close this gap; the underdetermination is real and is the principal reason the grade is capped below STRONG/UNIVERSAL. The functional nucleus is retained only because three independent uses (lean / grasp-shake / affix) converge on the same structural property, which is more than a bare label predicts.",
+  "competing_hypothesis": "That the root denotes a generic 'trunk/stem of any tree' (or, more radically, that there is no analyzable root nucleus at all — جِذْع is simply a frozen concrete label for 'palm trunk'). This competitor cannot be defeated Quran-internally: 3/3 tokens collocate with النخلة/النخل, so the corpus cannot distinguish 'trunk-of-palm specifically' from 'trunk generically, here applied to a palm', and cannot separate a genuine root contribution from a lexicalized item. Per source policy no lexicon may be imported to close this gap; the underdetermination is real and is the principal reason the grade is capped below STRONG/UNIVERSAL. The functional nucleus is retained only because three independent uses (lean / grasp-shake / affix) converge on the same structural property, which is more than a bare label predicts.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All three independent analyses converge unanimously: a single nominal lexeme, one coherent physical referent (the palm's rigid upright woody bole), no resistant sub-class, no moral/contextual drift, adversarially clean. That cleanliness excludes WEAK/UNRESOLVED. But STRONG requires broad, distinctive evidence, and this is the opposite of broad: n=3, form inventory 100% nominal (N only, no verbs/derivations/participles), all tokens in the identical construct with النخل across just two scenes, and the entire class — not merely a sub-class — is lexicalized-nominal. Per contract a lexicalized/nominal attestation caps strength at MODERATE and scope at REPRESENTATIVE, a fortiori when the whole class is lexicalized. Distinctiveness cannot be broadly tested (no competing 'trunk/wood' root in the packet) and generalization to non-palm trunks is unattested-not-disproven. Hence PREFERRED / MODERATE / REPRESENTATIVE / LEXICALIZED_CLASS.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "sg-maryam-palm-bole",
+     "where": {
+      "qac_pos": [
+       "N"
+      ],
+      "qac_verb_form": [
+       null
+      ],
+      "forms": [
+       "N"
+      ],
+      "word_refs": [
+       "19:23:4:1",
+       "19:25:3:2"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Singular جِذْع = the rigid, upright woody trunk/bole of the palm as an organic structural part of a living, fruit-bearing palm: the fixed vertical object Maryam is driven to and leans against in labor (19:23), and the graspable main body she shakes so ripe dates drop (19:25).",
+     "classification_rationale": "Both tokens are the same singular noun in construct with النخلة; 'driven to / lean against' and 'grasp and shake so fruit falls' independently presuppose a stiff, weight-bearing vertical column. The fruit (رُطَب جَنِيّ) is named separately in 19:25, fixing جِذْع as the structural body, not the produce.",
+     "supporting_evidence_note": "19:23 إِلَىٰ جِذْعِ ٱلنَّخْلَةِ (approach/lean); 19:25 وَهُزِّىٓ إِلَيْكِ بِجِذْعِ ٱلنَّخْلَةِ تُسَٰقِطْ عَلَيْكِ رُطَبًا جَنِيًّا (grasp/shake, fruit distinct from trunk).",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "pl-pharaoh-execution-post",
+     "where": {
+      "qac_pos": [
+       "N"
+      ],
+      "qac_verb_form": [
+       null
+      ],
+      "forms": [
+       "N"
+      ],
+      "word_refs": [
+       "20:71:20:1"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Broken plural جُذُوع = discrete palm trunks used as rigid upright structures to which bodies are affixed; Pharaoh threatens crucifixion فِى جُذُوعِ ٱلنَّخْلِ. Same referent (palm's woody upright column), pluralized as a count noun for multiple posts.",
+     "classification_rationale": "Number, not meaning, distinguishes this from the singular cluster: the plural shows جِذْع is a pluralizable count noun for discrete objects. The crucifixion frame presupposes the same rigidity/verticality/load-bearing property. This token also fixes the negative boundary that جِذْع does not entail a living or fruit-bearing palm.",
+     "supporting_evidence_note": "20:71 وَلَأُصَلِّبَنَّكُمْ فِى جُذُوعِ ٱلنَّخْلِ — trunks as upright mounting structures; palm collocation preserved (النخل).",
+     "counterevidence": []
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "j*E",
+  "verdict": "SUPPORTED_NARROW",
+  "failing_occurrences": [],
+  "distinctiveness_ok": false,
+  "falsifiable": true,
+  "notes": "The adversarial pass confirmed the narrow 'upright woody palm-bole' nucleus survives all three tokens with no failing occurrence, and 20:71 was probed as a candidate second sense but reduced to a negative boundary rather than a break. However, PASSED requires distinctiveness_ok=true, and distinctiveness cannot be established Quran-internally: there is no competing 'trunk/wood/stem' root in the packet to contrast against, and 100% palm collocation leaves 'palm-trunk specifically' vs 'generic trunk applied to a palm' undecidable. With the pass criterion for distinctiveness unmet despite zero resistance, the honest status is NOT_RUN (as a clean PASS), not PASSED."
+ },
+ "coverage_validation": {
+  "root": "j*E",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "19:23:4:1",
+   "disposition": "CONSISTENT",
+   "note": "Both tokens are the same singular noun in construct with النخلة; 'driven to / lean against' and 'grasp and shake so fruit falls' independently presuppose a stiff, weight-bearing vertical column. The fruit (رُطَب جَنِيّ) is named separately in 19:25, fixing جِذْع as the structural body, not the produce.",
+   "coverage_cluster_id": "sg-maryam-palm-bole",
+   "candidate_semantic_interpretation": "Singular جِذْع = the rigid, upright woody trunk/bole of the palm as an organic structural part of a living, fruit-bearing palm: the fixed vertical object Maryam is driven to and leans against in labor (19:23), and the graspable main body she shakes so ripe dates drop (19:25).",
+   "cluster_supporting_evidence": "19:23 إِلَىٰ جِذْعِ ٱلنَّخْلَةِ (approach/lean); 19:25 وَهُزِّىٓ إِلَيْكِ بِجِذْعِ ٱلنَّخْلَةِ تُسَٰقِطْ عَلَيْكِ رُطَبًا جَنِيًّا (grasp/shake, fruit distinct from trunk).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Both tokens are the same singular noun in construct with النخلة; 'driven to / lean against' and 'grasp and shake so fruit falls' independently presuppose a stiff, weight-bearing vertical column. The fruit (رُطَب جَنِيّ) is named separately in 19:25, fixing جِذْع as the structural body, not the produce.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "19:23",
+     "verse_text": "فَأَجَآءَهَا ٱلْمَخَاضُ إِلَىٰ جِذْعِ ٱلنَّخْلَةِ قَالَتْ يَٰلَيْتَنِى مِتُّ قَبْلَ هَٰذَا وَكُنتُ نَسْيًا مَّنسِيًّا"
+    }
+   ],
+   "root_arabic": "ج ذ ع",
+   "root_buckwalter": "j*E",
+   "root_id": "j*E",
+   "artifact_name": "j_2A_E.json",
+   "verse_ref": "19:23",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "ji*oEi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَأَجَآءَهَا ٱلْمَخَاضُ إِلَىٰ جِذْعِ ٱلنَّخْلَةِ قَالَتْ يَٰلَيْتَنِى مِتُّ قَبْلَ هَٰذَا وَكُنتُ نَسْيًا مَّنسِيًّا"
+  },
+  {
+   "word_ref": "19:25:3:2",
+   "disposition": "CONSISTENT",
+   "note": "Both tokens are the same singular noun in construct with النخلة; 'driven to / lean against' and 'grasp and shake so fruit falls' independently presuppose a stiff, weight-bearing vertical column. The fruit (رُطَب جَنِيّ) is named separately in 19:25, fixing جِذْع as the structural body, not the produce.",
+   "coverage_cluster_id": "sg-maryam-palm-bole",
+   "candidate_semantic_interpretation": "Singular جِذْع = the rigid, upright woody trunk/bole of the palm as an organic structural part of a living, fruit-bearing palm: the fixed vertical object Maryam is driven to and leans against in labor (19:23), and the graspable main body she shakes so ripe dates drop (19:25).",
+   "cluster_supporting_evidence": "19:23 إِلَىٰ جِذْعِ ٱلنَّخْلَةِ (approach/lean); 19:25 وَهُزِّىٓ إِلَيْكِ بِجِذْعِ ٱلنَّخْلَةِ تُسَٰقِطْ عَلَيْكِ رُطَبًا جَنِيًّا (grasp/shake, fruit distinct from trunk).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Both tokens are the same singular noun in construct with النخلة; 'driven to / lean against' and 'grasp and shake so fruit falls' independently presuppose a stiff, weight-bearing vertical column. The fruit (رُطَب جَنِيّ) is named separately in 19:25, fixing جِذْع as the structural body, not the produce.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "19:25",
+     "verse_text": "وَهُزِّىٓ إِلَيْكِ بِجِذْعِ ٱلنَّخْلَةِ تُسَٰقِطْ عَلَيْكِ رُطَبًا جَنِيًّا"
+    }
+   ],
+   "root_arabic": "ج ذ ع",
+   "root_buckwalter": "j*E",
+   "root_id": "j*E",
+   "artifact_name": "j_2A_E.json",
+   "verse_ref": "19:25",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "ji*oEi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَهُزِّىٓ إِلَيْكِ بِجِذْعِ ٱلنَّخْلَةِ تُسَٰقِطْ عَلَيْكِ رُطَبًا جَنِيًّا"
+  },
+  {
+   "word_ref": "20:71:20:1",
+   "disposition": "CONSISTENT",
+   "note": "Number, not meaning, distinguishes this from the singular cluster: the plural shows جِذْع is a pluralizable count noun for discrete objects. The crucifixion frame presupposes the same rigidity/verticality/load-bearing property. This token also fixes the negative boundary that جِذْع does not entail a living or fruit-bearing palm. | 20:71 (فِى جُذُوعِ ٱلنَّخْلِ) uses جِذْع as a bare crucifixion-post in the Pharaoh/magicians scene — different narrative, plural morphology, and a functional shift from part-of-a-living-palm (19:23–25) to instrument of execution. It does not break unity: the referent is still the palm's woody upright column, and the difference is contextual use, not lexical meaning. Its real evidential value is as a negative boundary — it disproves any richer 'living/fruiting stem' account and confirms the bare 'upright woody bole' nucleus that is neutral to whether the palm is living or fruit-bearing.",
+   "coverage_cluster_id": "pl-pharaoh-execution-post",
+   "candidate_semantic_interpretation": "Broken plural جُذُوع = discrete palm trunks used as rigid upright structures to which bodies are affixed; Pharaoh threatens crucifixion فِى جُذُوعِ ٱلنَّخْلِ. Same referent (palm's woody upright column), pluralized as a count noun for multiple posts.",
+   "cluster_supporting_evidence": "20:71 وَلَأُصَلِّبَنَّكُمْ فِى جُذُوعِ ٱلنَّخْلِ — trunks as upright mounting structures; palm collocation preserved (النخل).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Number, not meaning, distinguishes this from the singular cluster: the plural shows جِذْع is a pluralizable count noun for discrete objects. The crucifixion frame presupposes the same rigidity/verticality/load-bearing property. This token also fixes the negative boundary that جِذْع does not entail a living or fruit-bearing palm.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "20:71",
+     "verse_text": "قَالَ ءَامَنتُمْ لَهُۥ قَبْلَ أَنْ ءَاذَنَ لَكُمْ إِنَّهُۥ لَكَبِيرُكُمُ ٱلَّذِى عَلَّمَكُمُ ٱلسِّحْرَ فَلَأُقَطِّعَنَّ أَيْدِيَكُمْ وَأَرْجُلَكُم مِّنْ خِلَٰفٍ وَلَأُصَلِّبَنَّكُمْ فِى جُذُوعِ ٱلنَّخْلِ وَلَتَعْلَمُنَّ أَيُّنَآ أَشَدُّ عَذَابًا وَأَبْقَىٰ"
+    }
+   ],
+   "root_arabic": "ج ذ ع",
+   "root_buckwalter": "j*E",
+   "root_id": "j*E",
+   "artifact_name": "j_2A_E.json",
+   "verse_ref": "20:71",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "ju*uwEi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالَ ءَامَنتُمْ لَهُۥ قَبْلَ أَنْ ءَاذَنَ لَكُمْ إِنَّهُۥ لَكَبِيرُكُمُ ٱلَّذِى عَلَّمَكُمُ ٱلسِّحْرَ فَلَأُقَطِّعَنَّ أَيْدِيَكُمْ وَأَرْجُلَكُم مِّنْ خِلَٰفٍ وَلَأُصَلِّبَنَّكُمْ فِى جُذُوعِ ٱلنَّخْلِ وَلَتَعْلَمُنَّ أَيُّنَآ أَشَدُّ عَذَابًا وَأَبْقَىٰ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Three independent analyses (Lens A, Lens B, Adversary C) each ran the refutation and converged on the same narrow account and the same MODERATE/REPRESENTATIVE ceiling, each citing the same distinctiveness limitation.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "The concrete count-noun جِذْع / pl. جُذُوع denoting the rigid, upright, load-bearing woody trunk/bole of the palm — the standing structural body one is driven to and leans against (19:23), grips and shakes to transmit force so fruit drops (19:25), and fastens a body onto (20:71). It is a PART of the palm, distinct from the whole tree and from its fruit, and neutral to whether the palm is living or fruit-bearing. No abstract, verbal, or metaphorical root sense is Quran-attested.",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "LEXICALIZED_CLASS",
+ "layer_attribution": {
+  "occurrence_evidence": "Three confirmed nominal tokens: 19:23:4:1 (ji*oEi, sg. gen., إِلَىٰ جِذْعِ ٱلنَّخْلَةِ), 19:25:3:2 (ji*oEi, sg. after bi-, بِجِذْعِ ٱلنَّخْلَةِ … تُسَٰقِطْ رُطَبًا جَنِيًّا), 20:71:20:1 (ju*uwEi, broken pl., فِى جُذُوعِ ٱلنَّخْلِ). Form inventory 100% N; qac_verb_form null throughout.",
+  "derivation": "No derivational family exists to bridge: zero verbal, adjectival, or participial forms. The only morphological variation is ordinary count-noun number inflection (sg. جِذْع → pl. جُذُوع), which is not a semantic split.",
+  "lexical_class": "A single lexicalized concrete count-noun جِذْع/جُذُوع denoting the palm's rigid upright woody bole. The entire class is lexicalized-nominal, which per contract caps strength at MODERATE and scope at REPRESENTATIVE.",
+  "contextual_relation": "Narrative context supplies the scene-specific USE (destination/support in Maryam's labor; provision via shaking; execution-post under Pharaoh) but NOT the root meaning. These contextual roles are held apart from the root claim, which is the scene-neutral physical referent common to all three.",
+  "reconciliation": "No preliminary/final disposition conflicts arose; all three analyses independently reached the same single-nucleus reading and the same MODERATE/REPRESENTATIVE ceiling. 20:71 was reconciled from a candidate 'second sense' to an adversarial boundary that confirms the nucleus.",
+  "unresolved_resistance": "No occurrence resists the account. The residual open question is not resistance but underdetermination: the 100% palm collocation and absence of any neighbour root leave 'palm-trunk specifically' vs 'generic trunk' unadjudicable Quran-internally, and any non-palm generalization is unattested-not-disproven."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "20:71:20:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "This is the occurrence all three analyses single out as most testing unity — a different narrative (Pharaoh/magicians), plural morphology, and a shift from part-of-a-living-palm to instrument of execution. An adversary pushes it as a second sense ('timber post/gallows-upright' vs 'stem of a growing palm'). It does not break unity; it functions as a negative-boundary confirmer.",
+   "evidence_basis": {
+    "kind": "OCCURRENCE_CONTRAST",
+    "statement": "20:71 (فِى جُذُوعِ ٱلنَّخْلِ) uses جِذْع as a bare crucifixion-post in the Pharaoh/magicians scene — different narrative, plural morphology, and a functional shift from part-of-a-living-palm (19:23–25) to instrument of execution. It does not break unity: the referent is still the palm's woody upright column, and the difference is contextual use, not lexical meaning. Its real evidential value is as a negative boundary — it disproves any richer 'living/fruiting stem' account and confirms the bare 'upright woody bole' nucleus that is neutral to whether the palm is living or fruit-bearing."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "There is no RESISTANT occurrence: all three tokens are internally contradiction-free under one nucleus. But 20:71 is a genuine adversarial boundary that does analytical work — it refutes any account tying جِذْع to a living/fruiting palm and thereby fixes the bare 'upright woody bole' sense. It is represented as an ADVERSARIAL_BOUNDARY hard case (not counterevidence, since it supports the account), so counterevidence_refs remains empty."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A Quranic occurrence of the root ج ذ ع (in any form) that is NOT in construct with النخلة/النخل — e.g., جِذْع of a non-palm tree, or a verbal/adjectival/abstract use — which would either broaden the sense beyond 'palm bole' (defeating the palm-bound scope) or introduce a second, unbridged sense.",
+  "search_location": "The full Quranic corpus for the root j*E beyond the three packet tokens (19:23, 19:25, 20:71); specifically any token whose head-noun in the construct is not النخل/النخلة, or any non-nominal surface form.",
+  "verification_method": "Confirm the candidate token's root assignment via qac_pos/qac_verb_form/form and root_id=j*E, then read its verse_text to check the construct partner and syntactic frame against the palm-bound, purely nominal pattern of the three attested tokens.",
+  "confounder_control": "Exclude look-alike roots and mis-segmentations (verify root_id, not surface resemblance); do not import classical-lexicon 'trunk/young-animal' senses as evidence (source policy QURAN-INTERNAL ONLY); distinguish genuine new collocation from mere number inflection of the same lexeme.",
+  "failure_consequence": "If a non-palm or non-nominal token is found, the REPRESENTATIVE/LEXICALIZED_CLASS judgment must be reopened: either widened to a generic-trunk root sense (potentially ROOT_GENERALIZATION) or split into an UNRESOLVED multi-class result if the new sense is unbridged; the palm-bound account would no longer exhaust the attestation."
+ },
+ "falsification_status": "NOT_RUN",
+ "reopen_conditions": [
+  "If any Quranic token of root j*E is found with a construct partner other than النخل/النخلة (a non-palm trunk), reopen to test widening from 'palm bole' toward a generic-trunk root sense.",
+  "If any non-nominal form of j*E (a verb, participle, or adjective) is attested, reopen because the current LEXICALIZED_CLASS/nominal-only basis and the 'no abstract or verbal root sense' negative boundary would be falsified.",
+  "If a competing 'trunk/wood/stem' root (e.g. a token pairing جِذْع against ساق/خشب/أصل in-context) becomes available, reopen to test distinctiveness, which is currently untestable and is the reason the grade is capped at MODERATE."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "19:23:4:1",
+  "19:25:3:2",
+  "20:71:20:1"
+ ],
+ "counterevidence_refs": [],
+ "falsification_evidence": {
+  "attempt_id": "adv-jXE-palm-bole-2026",
+  "verdict": "SUPPORTED_NARROW",
+  "falsifiable": true,
+  "distinctiveness_ok": false,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "sg-maryam-palm-bole",
+   "pl-pharaoh-execution-post"
+  ],
+  "status_rationale": "The adversarial pass confirmed the narrow 'upright woody palm-bole' nucleus survives all three tokens with no failing occurrence, and 20:71 was probed as a candidate second sense but reduced to a negative boundary rather than a break. However, PASSED requires distinctiveness_ok=true, and distinctiveness cannot be established Quran-internally: there is no competing 'trunk/wood/stem' root in the packet to contrast against, and 100% palm collocation leaves 'palm-trunk specifically' vs 'generic trunk applied to a palm' undecidable. With the pass criterion for distinctiveness unmet despite zero resistance, the honest status is NOT_RUN (as a clean PASS), not PASSED."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "j*E: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "j*E: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "j*E: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "j*E: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "j*E: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "j*E: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "j*E: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "j*E: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

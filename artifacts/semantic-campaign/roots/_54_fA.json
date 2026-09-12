@@ -1,0 +1,341 @@
+{
+ "root_arabic": "ط ف ا",
+ "root_buckwalter": "TfA",
+ "root_id": "TfA",
+ "artifact_name": "_54_fA.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave4",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "TfA (attested only as Form IV causative أَفْعَلَ) = to cause a burning or shining source to cease being alight — to quench/extinguish a fire or a light. The object is invariably a luminous-or-combusting referent (نَار once, نُور twice) and the verb targets that active flaming/radiant state, not the substance, source, or agent behind it. The lexeme is outcome-neutral: whether the extinguishing succeeds is supplied by the surrounding frame, not by the root.",
+ "internal_discovery": {
+  "candidate_root_contribution": "TfA (attested only as Form IV causative أَفْعَلَ) = to cause a burning or shining source to cease being alight — to quench/extinguish a fire or a light. The object is invariably a luminous-or-combusting referent (نَار once, نُور twice) and the verb targets that active flaming/radiant state, not the substance, source, or agent behind it. The lexeme is outcome-neutral: whether the extinguishing succeeds is supplied by the surrounding frame, not by the root.",
+  "plain_explanation": "Across all three occurrences the root means 'put out' — to make a fire or a light stop burning/shining. In 5:64 God actually puts out a war-fire the enemies kindle (paired antonymically with أَوْقَدُوا 'kindle'). In 61:8 and 9:32 disbelievers merely wish to blow out God's light with their mouths, and are explicitly thwarted (مُتِمُّ نُورِهِ / يُتِمَّ نُورَهُ). The action of 'quenching' is identical in all three; only the object domain (physical fire vs. divine light) and the outcome (accomplished vs. frustrated) differ, and both of those differences are carried by context, not by the verb.",
+  "layer_separation_note": "Does NOT entail: (1) kindling/ignition — TfA is the terminative pole, directly opposed to أَوْقَدُوا (wqd) in 5:64; (2) guaranteed success — the act is desired yet defeated in 61:8/9:32; (3) general destruction/defeat/nullification of a plot, army, or effort — the object is never the effort or agent, always a fire or a light; (4) destruction of the substance or source — the نور verses assert the source persists (مُتِمُّ نُورِهِ); (5) concealment/darkening — it removes the burning/shining itself, not merely its visibility; (6) restriction to physical fire — نُورَ ٱللَّهِ extends it to metaphorical/divine radiance. Evidence boundary: the intransitive Form I 'to go out by itself' is entirely unattested; only agent-caused extinguishing (Form IV) is in-corpus.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "61:8 (≈ 9:32): the object نُورَ ٱللَّهِ is abstract divine light, not combustible matter, and it is the majority-by-count class, inviting a re-read as 'suppress/nullify divine truth' rather than 'extinguish a flame.' It does not resist the nucleus: the instrument بِأَفْوَٰهِهِمْ (mouths/breath) invokes the prototypical scene of blowing out a flame, and the act denotes cessation of an existing luminous manifestation — the same core as 5:64. It caps breadth and independence (figurative + formulaic + count-dominant), not coherence.",
+  "strongest_competitor": "'Nullify / defeat an opposing manifestation of power or truth' — abstract enough to cover war (nullify hostility, 5:64) and the message (suppress guidance, 61:8/9:32). Rejected under the narrowness principle: 5:64 is concretely نَارًا لِّلْحَرْبِ being put out and بِأَفْوَٰهِهِمْ evokes literal blowing; the concrete 'extinguish a fire/light' account fits all three while remaining narrower and does not import theology into the lexeme. The abstract gloss also erases the root's distinctive object-selection for radiant/combusting referents.",
+  "competing_hypothesis": "'Nullify / defeat an opposing manifestation of power or truth' — abstract enough to cover war (nullify hostility, 5:64) and the message (suppress guidance, 61:8/9:32). Rejected under the narrowness principle: 5:64 is concretely نَارًا لِّلْحَرْبِ being put out and بِأَفْوَٰهِهِمْ evokes literal blowing; the concrete 'extinguish a fire/light' account fits all three while remaining narrower and does not import theology into the lexeme. The abstract gloss also erases the root's distinctive object-selection for radiant/combusting referents.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All three lenses (A, B, adversary C) independently converge on a single unbridged-need nucleus: 'cause a fire/light to cease being alight.' Unity is positively corroborated Quran-internally by (i) the same-verse antonym أَوْقَدُوا 'kindle' locking the verb onto the ignite↔quench axis, (ii) the flame-blowing imagery بِأَفْوَٰهِهِمْ presupposing the physical scene, and (iii) a deliberate chiastic root-pairing (God extinguishes humans' war-fire and succeeds; humans try to extinguish God's light and fail). The نار/نور difference is object-domain, not a difference in the root's contribution, so no forced unity and no genuine class split. Strength is capped at MODERATE and scope at REPRESENTATIVE because the base is thin and morphologically monotone: 3 tokens, Form IV only, two of the three a near-verbatim formula (effectively ~2 distinct contexts), and the intransitive Form-I base sense is unattested and cannot be cross-checked. STRONG's breadth requirement is not met, though the account is adversarially clean with no resistant sub-class (so this is not UNRESOLVED/RESISTANT).",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "TfA_c1_war_fire_God_agent",
+     "where": {
+      "word_refs": [
+       "5:64:38:1"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Form IV causative with God as agent extinguishing a literal war-fire (نَارًا لِّلْحَرْبِ); act accomplished. The only literal-fire token and the only completed extinguishing.",
+     "classification_rationale": "أَطْفَأَهَا stands in explicit same-verse antonymic pair with أَوْقَدُوا (wqd, 'kindle'); the object clitic هَا resolves to نَارًا, a literal fire. This anchors the concrete 'quench a fire' core against any abstract 'nullify effort' reading. كُلَّمَآ marks the act as iterable, so extinguishing quells the flame without annihilating the fuel.",
+     "supporting_evidence_note": "5:64: «كُلَّمَآ أَوْقَدُوا۟ نَارًا لِّلْحَرْبِ أَطْفَأَهَا ٱللَّهُ» — agent ٱللَّهُ, object a literal fire, outcome accomplished, antonym أَوْقَدُوا within the same clause.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "TfA_c2_divine_light_human_agent",
+     "where": {
+      "word_refs": [
+       "61:8:2:2",
+       "9:32:3:1"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Form IV causative with human disbelievers as agent attempting to extinguish نُورَ ٱللَّهِ with their mouths; act desired-only and frustrated. A near-verbatim formula duplicated across the two tokens.",
+     "classification_rationale": "Same verb, same object (نُورَ ٱللَّهِ), same instrument (بِأَفْوَٰهِهِمْ), same futility frame (يُرِيدُونَ + لِ/أَن subjunctive; negated by مُتِمُّ نُورِهِ / يُتِمَّ نُورَهُ). The subjunctive purpose-clause syntax marks the act as merely intended; the verb's lexical content ('extinguish') is identical to 5:64. The mouths/breath image presupposes the blow-out-a-flame nucleus, so metaphorical light does not fracture the sense — it extends the object domain only.",
+     "supporting_evidence_note": "61:8: «يُرِيدُونَ لِيُطْفِـُٔوا۟ نُورَ ٱللَّهِ بِأَفْوَٰهِهِمْ وَٱللَّهُ مُتِمُّ نُورِهِۦ»; 9:32: «يُرِيدُونَ أَن يُطْفِـُٔوا۟ نُورَ ٱللَّهِ بِأَفْوَٰهِهِمْ وَيَأْبَى ٱللَّهُ إِلَّآ أَن يُتِمَّ نُورَهُۥ» — near-identical, differing only in لِ vs أَن and the negation phrasing.",
+     "counterevidence": []
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "TfA",
+  "verdict": "SUPPORTED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "Two disproof lines were run adversarially and both failed to refute the nucleus: (1) 'the نور uses are a non-compositional idiom, not literal extinguish' — rejected because the idiom is built on the physical sense and بِأَفْوَٰهِهِمْ supplies the flame-blowing instrument, so it presupposes rather than breaks the nucleus; (2) 'the core is abstract nullify/defeat an opposing effort' — rejected because 5:64 concretely puts out a literal نَار and the account over-abstracts, discarding the distinctive radiant-source object-selection. The account remains distinctive (object-selects a luminous/combusting referent, excludes kindling, concealment, and source-destruction) and falsifiable (an out-of-domain object would break it), with no failing occurrences. STRONG breadth is not claimed; distinctiveness and clean survival justify PASSED."
+ },
+ "coverage_validation": {
+  "root": "TfA",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "5:64:38:1",
+   "disposition": "CONSISTENT",
+   "note": "أَطْفَأَهَا stands in explicit same-verse antonymic pair with أَوْقَدُوا (wqd, 'kindle'); the object clitic هَا resolves to نَارًا, a literal fire. This anchors the concrete 'quench a fire' core against any abstract 'nullify effort' reading. كُلَّمَآ marks the act as iterable, so extinguishing quells the flame without annihilating the fuel.",
+   "coverage_cluster_id": "TfA_c1_war_fire_God_agent",
+   "candidate_semantic_interpretation": "Form IV causative with God as agent extinguishing a literal war-fire (نَارًا لِّلْحَرْبِ); act accomplished. The only literal-fire token and the only completed extinguishing.",
+   "cluster_supporting_evidence": "5:64: «كُلَّمَآ أَوْقَدُوا۟ نَارًا لِّلْحَرْبِ أَطْفَأَهَا ٱللَّهُ» — agent ٱللَّهُ, object a literal fire, outcome accomplished, antonym أَوْقَدُوا within the same clause.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "أَطْفَأَهَا stands in explicit same-verse antonymic pair with أَوْقَدُوا (wqd, 'kindle'); the object clitic هَا resolves to نَارًا, a literal fire. This anchors the concrete 'quench a fire' core against any abstract 'nullify effort' reading. كُلَّمَآ marks the act as iterable, so extinguishing quells the flame without annihilating the fuel.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "5:64",
+     "verse_text": "وَقَالَتِ ٱلْيَهُودُ يَدُ ٱللَّهِ مَغْلُولَةٌ غُلَّتْ أَيْدِيهِمْ وَلُعِنُوا۟ بِمَا قَالُوا۟ بَلْ يَدَاهُ مَبْسُوطَتَانِ يُنفِقُ كَيْفَ يَشَآءُ وَلَيَزِيدَنَّ كَثِيرًا مِّنْهُم مَّآ أُنزِلَ إِلَيْكَ مِن رَّبِّكَ طُغْيَٰنًا وَكُفْرًا وَأَلْقَيْنَا بَيْنَهُمُ ٱلْعَدَٰوَةَ وَٱلْبَغْضَآءَ إِلَىٰ يَوْمِ ٱلْقِيَٰمَةِ كُلَّمَآ أَوْقَدُوا۟ نَارًا لِّلْحَرْبِ أَطْفَأَهَا ٱللَّهُ وَيَسْعَوْنَ فِى ٱلْأَرْضِ فَسَادًا وَٱللَّهُ لَا يُحِبُّ ٱلْمُفْسِدِينَ"
+    }
+   ],
+   "root_arabic": "ط ف ا",
+   "root_buckwalter": "TfA",
+   "root_id": "TfA",
+   "artifact_name": "_54_fA.json",
+   "verse_ref": "5:64",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">aTofa>a",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَقَالَتِ ٱلْيَهُودُ يَدُ ٱللَّهِ مَغْلُولَةٌ غُلَّتْ أَيْدِيهِمْ وَلُعِنُوا۟ بِمَا قَالُوا۟ بَلْ يَدَاهُ مَبْسُوطَتَانِ يُنفِقُ كَيْفَ يَشَآءُ وَلَيَزِيدَنَّ كَثِيرًا مِّنْهُم مَّآ أُنزِلَ إِلَيْكَ مِن رَّبِّكَ طُغْيَٰنًا وَكُفْرًا وَأَلْقَيْنَا بَيْنَهُمُ ٱلْعَدَٰوَةَ وَٱلْبَغْضَآءَ إِلَىٰ يَوْمِ ٱلْقِيَٰمَةِ كُلَّمَآ أَوْقَدُوا۟ نَارًا لِّلْحَرْبِ أَطْفَأَهَا ٱللَّهُ وَيَسْعَوْنَ فِى ٱلْأَرْضِ فَسَادًا وَٱللَّهُ لَا يُحِبُّ ٱلْمُفْسِدِينَ"
+  },
+  {
+   "word_ref": "61:8:2:2",
+   "disposition": "CONSISTENT",
+   "note": "Same verb, same object (نُورَ ٱللَّهِ), same instrument (بِأَفْوَٰهِهِمْ), same futility frame (يُرِيدُونَ + لِ/أَن subjunctive; negated by مُتِمُّ نُورِهِ / يُتِمَّ نُورَهُ). The subjunctive purpose-clause syntax marks the act as merely intended; the verb's lexical content ('extinguish') is identical to 5:64. The mouths/breath image presupposes the blow-out-a-flame nucleus, so metaphorical light does not fracture the sense — it extends the object domain only.",
+   "coverage_cluster_id": "TfA_c2_divine_light_human_agent",
+   "candidate_semantic_interpretation": "Form IV causative with human disbelievers as agent attempting to extinguish نُورَ ٱللَّهِ with their mouths; act desired-only and frustrated. A near-verbatim formula duplicated across the two tokens.",
+   "cluster_supporting_evidence": "61:8: «يُرِيدُونَ لِيُطْفِـُٔوا۟ نُورَ ٱللَّهِ بِأَفْوَٰهِهِمْ وَٱللَّهُ مُتِمُّ نُورِهِۦ»; 9:32: «يُرِيدُونَ أَن يُطْفِـُٔوا۟ نُورَ ٱللَّهِ بِأَفْوَٰهِهِمْ وَيَأْبَى ٱللَّهُ إِلَّآ أَن يُتِمَّ نُورَهُۥ» — near-identical, differing only in لِ vs أَن and the negation phrasing.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Same verb, same object (نُورَ ٱللَّهِ), same instrument (بِأَفْوَٰهِهِمْ), same futility frame (يُرِيدُونَ + لِ/أَن subjunctive; negated by مُتِمُّ نُورِهِ / يُتِمَّ نُورَهُ). The subjunctive purpose-clause syntax marks the act as merely intended; the verb's lexical content ('extinguish') is identical to 5:64. The mouths/breath image presupposes the blow-out-a-flame nucleus, so metaphorical light does not fracture the sense — it extends the object domain only.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "61:8",
+     "verse_text": "يُرِيدُونَ لِيُطْفِـُٔوا۟ نُورَ ٱللَّهِ بِأَفْوَٰهِهِمْ وَٱللَّهُ مُتِمُّ نُورِهِۦ وَلَوْ كَرِهَ ٱلْكَٰفِرُونَ"
+    }
+   ],
+   "root_arabic": "ط ف ا",
+   "root_buckwalter": "TfA",
+   "root_id": "TfA",
+   "artifact_name": "_54_fA.json",
+   "verse_ref": "61:8",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yuTofi_#u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يُرِيدُونَ لِيُطْفِـُٔوا۟ نُورَ ٱللَّهِ بِأَفْوَٰهِهِمْ وَٱللَّهُ مُتِمُّ نُورِهِۦ وَلَوْ كَرِهَ ٱلْكَٰفِرُونَ"
+  },
+  {
+   "word_ref": "9:32:3:1",
+   "disposition": "CONSISTENT",
+   "note": "Same verb, same object (نُورَ ٱللَّهِ), same instrument (بِأَفْوَٰهِهِمْ), same futility frame (يُرِيدُونَ + لِ/أَن subjunctive; negated by مُتِمُّ نُورِهِ / يُتِمَّ نُورَهُ). The subjunctive purpose-clause syntax marks the act as merely intended; the verb's lexical content ('extinguish') is identical to 5:64. The mouths/breath image presupposes the blow-out-a-flame nucleus, so metaphorical light does not fracture the sense — it extends the object domain only.",
+   "coverage_cluster_id": "TfA_c2_divine_light_human_agent",
+   "candidate_semantic_interpretation": "Form IV causative with human disbelievers as agent attempting to extinguish نُورَ ٱللَّهِ with their mouths; act desired-only and frustrated. A near-verbatim formula duplicated across the two tokens.",
+   "cluster_supporting_evidence": "61:8: «يُرِيدُونَ لِيُطْفِـُٔوا۟ نُورَ ٱللَّهِ بِأَفْوَٰهِهِمْ وَٱللَّهُ مُتِمُّ نُورِهِۦ»; 9:32: «يُرِيدُونَ أَن يُطْفِـُٔوا۟ نُورَ ٱللَّهِ بِأَفْوَٰهِهِمْ وَيَأْبَى ٱللَّهُ إِلَّآ أَن يُتِمَّ نُورَهُۥ» — near-identical, differing only in لِ vs أَن and the negation phrasing.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Same verb, same object (نُورَ ٱللَّهِ), same instrument (بِأَفْوَٰهِهِمْ), same futility frame (يُرِيدُونَ + لِ/أَن subjunctive; negated by مُتِمُّ نُورِهِ / يُتِمَّ نُورَهُ). The subjunctive purpose-clause syntax marks the act as merely intended; the verb's lexical content ('extinguish') is identical to 5:64. The mouths/breath image presupposes the blow-out-a-flame nucleus, so metaphorical light does not fracture the sense — it extends the object domain only.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "9:32",
+     "verse_text": "يُرِيدُونَ أَن يُطْفِـُٔوا۟ نُورَ ٱللَّهِ بِأَفْوَٰهِهِمْ وَيَأْبَى ٱللَّهُ إِلَّآ أَن يُتِمَّ نُورَهُۥ وَلَوْ كَرِهَ ٱلْكَٰفِرُونَ"
+    }
+   ],
+   "root_arabic": "ط ف ا",
+   "root_buckwalter": "TfA",
+   "root_id": "TfA",
+   "artifact_name": "_54_fA.json",
+   "verse_ref": "9:32",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yuTofi_#u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": "IV",
+   "morphology": "V(IV)",
+   "form": "V(IV)",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يُرِيدُونَ أَن يُطْفِـُٔوا۟ نُورَ ٱللَّهِ بِأَفْوَٰهِهِمْ وَيَأْبَى ٱللَّهُ إِلَّآ أَن يُتِمَّ نُورَهُۥ وَلَوْ كَرِهَ ٱلْكَٰفِرُونَ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "All three lenses (A, B, C) independently reached the same nucleus, grading, and rejection of the abstract competitor; adversary C explicitly ran and reported the two failed disproof lines.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "TfA (attested only as Form IV causative أَفْعَلَ) = to cause a burning or shining source to cease being alight — to quench/extinguish a fire or a light. The object is invariably a luminous-or-combusting referent (نَار once, نُور twice) and the verb targets that active flaming/radiant state, not the substance, source, or agent behind it. The lexeme is outcome-neutral: whether the extinguishing succeeds is supplied by the surrounding frame, not by the root.",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "DERIVATIONAL_FAMILY",
+ "layer_attribution": {
+  "occurrence_evidence": "3/3 confirmed tokens read (full_coverage=true), all morphologically Form IV (V(IV)): 5:64:38:1 أَطْفَأَهَا (perfect + obj هَا), 61:8:2:2 لِيُطْفِـُٔوا (subjunctive under لِ), 9:32:3:1 أَن يُطْفِـُٔوا (subjunctive under أَن). Objects: نَارًا (5:64), نُورَ ٱللَّهِ (61:8, 9:32).",
+  "derivation": "Root surfaces ONLY in the causative Form IV (أَفْعَلَ) pattern; no Form I, no nominal, no participle attested. The nucleus is therefore reconstructed from causative usage alone and cannot be Quran-internally cross-checked against a base intransitive sense. Scope is limited to the attested derivational family.",
+  "lexical_class": "No lexicalized or nominal sub-class exists; a single verbal form carries every token. The نار/نور distinction is an object-domain variation within one verb, not a separate lexical class, so it does not license a class partition.",
+  "contextual_relation": "Contextual/theological patterning — extinguishing succeeds when God is agent (5:64) and fails when humans attempt it against God's light (61:8/9:32), with the contrast lexeme تمّ ('complete') — is deliberately kept OUT of the root's semantic core. This success-asymmetry is discourse framing (يُرِيدُونَ + subjunctive), not a lexical entailment of TfA.",
+  "reconciliation": "No preliminary/final disposition conflicts arose; all three lenses converged on one nucleus with no occurrence overrides needed. The apparent 'try-in-vain vs. achieve' wedge was reconciled as a syntactic/framing effect over an invariant lexical content, not competing senses.",
+  "unresolved_resistance": "None. No occurrence resists the nucleus and no resistant sub-class exists. The honest limitation is breadth, not resistance: thin, morphologically monotone base (3 tokens, Form IV only, ~2 distinct contexts with 61:8≈9:32), and an unattested intransitive pole — these cap strength at MODERATE and scope at REPRESENTATIVE, not UNRESOLVED."
+ },
+ "hard_cases": [],
+ "hard_case_representation": {
+  "status": "NO_GENUINE_HARD_CASE",
+  "rationale": "No occurrence resists the 'extinguish a fire/light' nucleus. The نار/نور split is object-domain, not a semantic fracture, and is bridged Quran-internally by the flame-blowing imagery (بِأَفْوَٰهِهِمْ) and the ignite↔quench antonym pairing. The success asymmetry (5:64 accomplished vs. 61:8/9:32 frustrated) is a framing effect carried by يُرِيدُونَ + subjunctive syntax, not a lexical bifurcation. No resistant, lexicalized, or nominal sub-class exists; therefore hard_cases and counterevidence_refs are empty."
+ },
+ "rejection_condition": {
+  "challenging_finding": "An occurrence of TfA (in any attested form) whose object is NOT a fire or a light — e.g. a plot, an army, wealth, guidance-as-abstraction, or a person — such that the verb must mean 'nullify/defeat/destroy an effort or agent' rather than 'quench a luminous/combusting source.' This would break the invariant object-selection that grounds the narrow nucleus.",
+  "search_location": "All three attested tokens (5:64:38:1; 61:8:2:2; 9:32:3:1) and any future-confirmed TfA occurrence; specifically re-examine the resolution of the object clitic هَا in 5:64 and the object نُورَ ٱللَّهِ in 61:8/9:32.",
+  "verification_method": "Resolve the grammatical object of each Form IV token from verse_text; confirm it is morphologically/semantically a نَار- or نُور-type radiant/combusting referent; test whether the antonym أَوْقَدُوا and the instrument بِأَفْوَٰهِهِمْ still cohere with a 'quench flame/light' reading versus an abstract 'nullify' reading.",
+  "confounder_control": "Distinguish the root's lexical content from the discourse-supplied outcome: subjunctive purpose framing (يُرِيدُونَ + لِ/أَن) marks intention/failure, not a different sense; do not let the theological success-asymmetry or the 2/3 formulaic duplication be mistaken for evidence of a distinct meaning.",
+  "failure_consequence": "If an object outside the fire/light domain is found and the abstract 'nullify effort' reading is forced, the narrow nucleus collapses; downgrade to a broader/abstract account or, if two senses have no Quran-internal bridge, move to UNRESOLVED with a class partition rather than one nucleus."
+ },
+ "falsification_status": "PASSED",
+ "reopen_conditions": [
+  "If a new confirmed TfA occurrence attests Form I (طفئ intransitive 'to go out/be extinguished'), re-check whether the reconstructed causative nucleus matches an independently attested base sense, since the current account rests on Form IV alone.",
+  "If any TfA token appears with an object outside the fire/light domain (a plot, army, wealth, person, or abstract 'religion/guidance' as the direct grammatical object), reopen the ن​ار/نور unity and test the abstract 'nullify/defeat' competitor.",
+  "If a TfA occurrence is found where extinguishing is neither accomplished-by-God nor a futile-human-intent (e.g. a human successfully extinguishing, or a self-extinguishing intransitive), re-examine whether outcome-neutrality and agent patterning are lexical or merely artifacts of the current 2-context base."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "5:64:38:1",
+  "61:8:2:2",
+  "9:32:3:1"
+ ],
+ "counterevidence_refs": [],
+ "falsification_evidence": {
+  "attempt_id": "TfA_falsify_v1",
+  "verdict": "SUPPORTED",
+  "falsifiable": true,
+  "distinctiveness_ok": true,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "TfA_c1_war_fire_God_agent",
+   "TfA_c2_divine_light_human_agent"
+  ],
+  "status_rationale": "Two disproof lines were run adversarially and both failed to refute the nucleus: (1) 'the نور uses are a non-compositional idiom, not literal extinguish' — rejected because the idiom is built on the physical sense and بِأَفْوَٰهِهِمْ supplies the flame-blowing instrument, so it presupposes rather than breaks the nucleus; (2) 'the core is abstract nullify/defeat an opposing effort' — rejected because 5:64 concretely puts out a literal نَار and the account over-abstracts, discarding the distinctive radiant-source object-selection. The account remains distinctive (object-selects a luminous/combusting referent, excludes kindling, concealment, and source-destruction) and falsifiable (an out-of-domain object would break it), with no failing occurrences. STRONG breadth is not claimed; distinctiveness and clean survival justify PASSED."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "TfA: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "TfA: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "TfA: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "TfA: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "TfA: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "TfA: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "TfA: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "TfA: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

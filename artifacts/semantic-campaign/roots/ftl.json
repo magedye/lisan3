@@ -1,0 +1,364 @@
+{
+ "root_arabic": "ف ت ل",
+ "root_buckwalter": "ftl",
+ "root_id": "ftl",
+ "artifact_name": "ftl.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave4",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "Quran-internally the root ف ت ل survives only as the single frozen accusative noun فَتِيلًا (fatiylFA), a lexicalized minimal-quantity token — the smallest conceivable measure — deployed exclusively as the accusative of measure/specification (tamyiz) under a negated passive of ظ ل م to assert that no wronging occurs 'in the slightest'. The word-function claim (frozen minimal-measure token under negated ظلم) is defensible across 3/3 occurrences; the concrete referent and any productive verbal root nucleus (e.g. 'twist/thread/fibre') are NOT recoverable from Quran-internal evidence.",
+ "internal_discovery": {
+  "candidate_root_contribution": "Quran-internally the root ف ت ل survives only as the single frozen accusative noun فَتِيلًا (fatiylFA), a lexicalized minimal-quantity token — the smallest conceivable measure — deployed exclusively as the accusative of measure/specification (tamyiz) under a negated passive of ظ ل م to assert that no wronging occurs 'in the slightest'. The word-function claim (frozen minimal-measure token under negated ظلم) is defensible across 3/3 occurrences; the concrete referent and any productive verbal root nucleus (e.g. 'twist/thread/fibre') are NOT recoverable from Quran-internal evidence.",
+  "plain_explanation": "This root appears in the Quran as exactly one word, فَتِيلًا, three times, and always in the same phrase: 'they/you are not wronged (by even) a fatil'. In every case it names the tiniest possible amount, used to stress that God's justice leaves out nothing at all. Because the word never appears as a verb, is never described, and is never used positively, the Quran itself never tells us what a fatil physically is or what action the root names — so the underlying root meaning cannot be recovered from the text; only the frozen word-function can.",
+  "layer_separation_note": "Quran-internally the root does NOT occur as a verb or in any form other than the noun فَتِيلًا; it carries NO internally attested concrete referent (no 'thread', 'fibre', 'twisting', or 'date-stone' sense — those are external lexical priors barred by source policy); it is NEVER used affirmatively or as a measure of reward/good, only as the negated floor of injustice; it never leaves the ظلم/recompense frame; it shows NO semantic variation across the three sites (the 3pl→2pl person shift is purely grammatical); and it is NOT derivationally productive — the whole family collapses to one frozen accusative token.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "There is NO internal occurrence that resists the word-function account — and that is itself the adversarial weakness, not a strength. All three tokens are the identical frozen accusative فَتِيلًا in the identical 'لا يُظْلَمُون فَتِيلًا' construction, so the evidence base is homogeneous with zero morphological or contextual diversity: no possible internal datum could disprove a proposed root sense. Per contract, this non-resistance is the absence of a test, not the passing of one (CONSISTENT != established; absence of resistance != proof). Consequently any promotion from the word/idiom claim to a distinctive root-nucleus claim is unsupported, and any 'twist/thread' content would require forbidden external sources.",
+  "strongest_competitor": "The 'concrete-referent / live-metaphor' reading: that فتيل names a specific tiny object (a fibre/thread) whose intrinsic smallness motivates the 'not in the slightest' idiom. Rejected as a Quran-internal claim because the concrete tier is entirely unattested internally — فتيل is never described, possessed, given, counted, or predicated of any action — so distributionally it behaves as a fully lexicalized minimal-measure token, not a concrete noun pressed into metaphor. The competitor may be historically right about origin but is inadmissible here under the source policy.",
+  "competing_hypothesis": "The 'concrete-referent / live-metaphor' reading: that فتيل names a specific tiny object (a fibre/thread) whose intrinsic smallness motivates the 'not in the slightest' idiom. Rejected as a Quran-internal claim because the concrete tier is entirely unattested internally — فتيل is never described, possessed, given, counted, or predicated of any action — so distributionally it behaves as a fully lexicalized minimal-measure token, not a concrete noun pressed into metaphor. The competitor may be historically right about origin but is inadmissible here under the source policy.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All three lenses (A, B, adversary C) converge exactly: the entire root inventory is one lemma / one form (N, fatiylFA) / one syntactic frame / three tokens (17:71:15:1, 4:49:14:1, 4:77:48:1), each the negated passive of ظلم + accusative فَتِيلًا. The functional/distributional account (frozen minimal-measure token under negated ظلم, in the divine-recompense domain) is adversarially clean and covers 3/3, but the evidence is narrow (one form, one collocation, no verbal attestation) and the whole footprint is a single lexicalized nominal — which under the contract caps strength at MODERATE and scope at REPRESENTATIVE. STRONG/UNIVERSAL is rejected because the clean consistency is an artifact of homogeneity, not broad distinctive testing. The concrete/verbal root nucleus is separately UNRESOLVED (unrecoverable Quran-internally); rather than force a root generalization, the honest claim is scoped to the lexicalized class, with the root nucleus recorded as unresolved in the layer attribution.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "ftl-fatil-negated-zulm-measure",
+     "where": {
+      "qac_pos": [
+       "N"
+      ],
+      "qac_verb_form": [
+       null
+      ],
+      "forms": [
+       "N"
+      ],
+      "word_refs": [
+       "17:71:15:1",
+       "4:49:14:1",
+       "4:77:48:1"
+      ]
+     },
+     "occurrence_count_expected": 3,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "فَتِيلًا as a lexicalized minimal-quantity token (the smallest conceivable measure), functioning as accusative of measure/specification (tamyiz) governed by a negated passive of ظ ل م: 'not wronged (by even) a fatil' = not wronged in the slightest.",
+     "classification_rationale": "All three occurrences are the identical accusative-indefinite noun fatiylFA (qac_pos N, qac_verb_form null) in the identical construction: negator + passive yuzlamuna/tuzlamuna + فَتِيلًا, all within divine recompense/justice discourse (eschatological book-reckoning 17:71; self-purifiers 4:49; hereafter reward for the muttaqi 4:77). The only variation is grammatical person (3pl vs 2pl at 4:77), which is deixis, not semantics.",
+     "supporting_evidence_note": "17:71 'وَلَا يُظْلَمُونَ فَتِيلًا'; 4:49 'وَلَا يُظْلَمُونَ فَتِيلًا'; 4:77 'وَلَا تُظْلَمُونَ فَتِيلًا' — one frozen idiom attested three times, verified against verse_text in the packet.",
+     "counterevidence": []
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "ftl",
+  "verdict": "NOT_RUN",
+  "failing_occurrences": [],
+  "distinctiveness_ok": false,
+  "falsifiable": false,
+  "notes": "A genuine adversarial falsification cannot return PASSED here: the entire inventory is one frozen accusative in one construction (n=3, zero morphological/contextual diversity), so falsifiable=false and distinctiveness cannot be established Quran-internally — fatil is functionally a slot-filler interchangeable with other minimal-measure tokens in the same justice frame. No occurrence fails the word-function account (failing_occurrences empty), but non-resistance here is the absence of a test, not a passed test, so the status is NOT_RUN rather than PASSED. The concrete/verbal root nucleus remains unresolved."
+ },
+ "coverage_validation": {
+  "root": "ftl",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "17:71:15:1",
+   "disposition": "CONSISTENT",
+   "note": "All three occurrences are the identical accusative-indefinite noun fatiylFA (qac_pos N, qac_verb_form null) in the identical construction: negator + passive yuzlamuna/tuzlamuna + فَتِيلًا, all within divine recompense/justice discourse (eschatological book-reckoning 17:71; self-purifiers 4:49; hereafter reward for the muttaqi 4:77). The only variation is grammatical person (3pl vs 2pl at 4:77), which is deixis, not semantics. | All three tokens are the identical frozen accusative فَتِيلًا in the identical 'لا يُظْلَمُون فَتِيلًا' construction, so the evidence base is homogeneous with zero morphological or contextual diversity: no possible internal datum could disprove a proposed root sense.",
+   "coverage_cluster_id": "ftl-fatil-negated-zulm-measure",
+   "candidate_semantic_interpretation": "فَتِيلًا as a lexicalized minimal-quantity token (the smallest conceivable measure), functioning as accusative of measure/specification (tamyiz) governed by a negated passive of ظ ل م: 'not wronged (by even) a fatil' = not wronged in the slightest.",
+   "cluster_supporting_evidence": "17:71 'وَلَا يُظْلَمُونَ فَتِيلًا'; 4:49 'وَلَا يُظْلَمُونَ فَتِيلًا'; 4:77 'وَلَا تُظْلَمُونَ فَتِيلًا' — one frozen idiom attested three times, verified against verse_text in the packet.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All three occurrences are the identical accusative-indefinite noun fatiylFA (qac_pos N, qac_verb_form null) in the identical construction: negator + passive yuzlamuna/tuzlamuna + فَتِيلًا, all within divine recompense/justice discourse (eschatological book-reckoning 17:71; self-purifiers 4:49; hereafter reward for the muttaqi 4:77). The only variation is grammatical person (3pl vs 2pl at 4:77), which is deixis, not semantics.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "17:71",
+     "verse_text": "يَوْمَ نَدْعُوا۟ كُلَّ أُنَاسٍۭ بِإِمَٰمِهِمْ فَمَنْ أُوتِىَ كِتَٰبَهُۥ بِيَمِينِهِۦ فَأُو۟لَٰٓئِكَ يَقْرَءُونَ كِتَٰبَهُمْ وَلَا يُظْلَمُونَ فَتِيلًا"
+    }
+   ],
+   "root_arabic": "ف ت ل",
+   "root_buckwalter": "ftl",
+   "root_id": "ftl",
+   "artifact_name": "ftl.json",
+   "verse_ref": "17:71",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fatiylFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَوْمَ نَدْعُوا۟ كُلَّ أُنَاسٍۭ بِإِمَٰمِهِمْ فَمَنْ أُوتِىَ كِتَٰبَهُۥ بِيَمِينِهِۦ فَأُو۟لَٰٓئِكَ يَقْرَءُونَ كِتَٰبَهُمْ وَلَا يُظْلَمُونَ فَتِيلًا"
+  },
+  {
+   "word_ref": "4:49:14:1",
+   "disposition": "CONSISTENT",
+   "note": "All three occurrences are the identical accusative-indefinite noun fatiylFA (qac_pos N, qac_verb_form null) in the identical construction: negator + passive yuzlamuna/tuzlamuna + فَتِيلًا, all within divine recompense/justice discourse (eschatological book-reckoning 17:71; self-purifiers 4:49; hereafter reward for the muttaqi 4:77). The only variation is grammatical person (3pl vs 2pl at 4:77), which is deixis, not semantics. | All three tokens are the identical frozen accusative فَتِيلًا in the identical 'لا يُظْلَمُون فَتِيلًا' construction, so the evidence base is homogeneous with zero morphological or contextual diversity: no possible internal datum could disprove a proposed root sense.",
+   "coverage_cluster_id": "ftl-fatil-negated-zulm-measure",
+   "candidate_semantic_interpretation": "فَتِيلًا as a lexicalized minimal-quantity token (the smallest conceivable measure), functioning as accusative of measure/specification (tamyiz) governed by a negated passive of ظ ل م: 'not wronged (by even) a fatil' = not wronged in the slightest.",
+   "cluster_supporting_evidence": "17:71 'وَلَا يُظْلَمُونَ فَتِيلًا'; 4:49 'وَلَا يُظْلَمُونَ فَتِيلًا'; 4:77 'وَلَا تُظْلَمُونَ فَتِيلًا' — one frozen idiom attested three times, verified against verse_text in the packet.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All three occurrences are the identical accusative-indefinite noun fatiylFA (qac_pos N, qac_verb_form null) in the identical construction: negator + passive yuzlamuna/tuzlamuna + فَتِيلًا, all within divine recompense/justice discourse (eschatological book-reckoning 17:71; self-purifiers 4:49; hereafter reward for the muttaqi 4:77). The only variation is grammatical person (3pl vs 2pl at 4:77), which is deixis, not semantics.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "4:49",
+     "verse_text": "أَلَمْ تَرَ إِلَى ٱلَّذِينَ يُزَكُّونَ أَنفُسَهُم بَلِ ٱللَّهُ يُزَكِّى مَن يَشَآءُ وَلَا يُظْلَمُونَ فَتِيلًا"
+    }
+   ],
+   "root_arabic": "ف ت ل",
+   "root_buckwalter": "ftl",
+   "root_id": "ftl",
+   "artifact_name": "ftl.json",
+   "verse_ref": "4:49",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fatiylFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَلَمْ تَرَ إِلَى ٱلَّذِينَ يُزَكُّونَ أَنفُسَهُم بَلِ ٱللَّهُ يُزَكِّى مَن يَشَآءُ وَلَا يُظْلَمُونَ فَتِيلًا"
+  },
+  {
+   "word_ref": "4:77:48:1",
+   "disposition": "CONSISTENT",
+   "note": "All three occurrences are the identical accusative-indefinite noun fatiylFA (qac_pos N, qac_verb_form null) in the identical construction: negator + passive yuzlamuna/tuzlamuna + فَتِيلًا, all within divine recompense/justice discourse (eschatological book-reckoning 17:71; self-purifiers 4:49; hereafter reward for the muttaqi 4:77). The only variation is grammatical person (3pl vs 2pl at 4:77), which is deixis, not semantics. | All three tokens are the identical frozen accusative فَتِيلًا in the identical 'لا يُظْلَمُون فَتِيلًا' construction, so the evidence base is homogeneous with zero morphological or contextual diversity: no possible internal datum could disprove a proposed root sense.",
+   "coverage_cluster_id": "ftl-fatil-negated-zulm-measure",
+   "candidate_semantic_interpretation": "فَتِيلًا as a lexicalized minimal-quantity token (the smallest conceivable measure), functioning as accusative of measure/specification (tamyiz) governed by a negated passive of ظ ل م: 'not wronged (by even) a fatil' = not wronged in the slightest.",
+   "cluster_supporting_evidence": "17:71 'وَلَا يُظْلَمُونَ فَتِيلًا'; 4:49 'وَلَا يُظْلَمُونَ فَتِيلًا'; 4:77 'وَلَا تُظْلَمُونَ فَتِيلًا' — one frozen idiom attested three times, verified against verse_text in the packet.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All three occurrences are the identical accusative-indefinite noun fatiylFA (qac_pos N, qac_verb_form null) in the identical construction: negator + passive yuzlamuna/tuzlamuna + فَتِيلًا, all within divine recompense/justice discourse (eschatological book-reckoning 17:71; self-purifiers 4:49; hereafter reward for the muttaqi 4:77). The only variation is grammatical person (3pl vs 2pl at 4:77), which is deixis, not semantics.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "4:77",
+     "verse_text": "أَلَمْ تَرَ إِلَى ٱلَّذِينَ قِيلَ لَهُمْ كُفُّوٓا۟ أَيْدِيَكُمْ وَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ فَلَمَّا كُتِبَ عَلَيْهِمُ ٱلْقِتَالُ إِذَا فَرِيقٌ مِّنْهُمْ يَخْشَوْنَ ٱلنَّاسَ كَخَشْيَةِ ٱللَّهِ أَوْ أَشَدَّ خَشْيَةً وَقَالُوا۟ رَبَّنَا لِمَ كَتَبْتَ عَلَيْنَا ٱلْقِتَالَ لَوْلَآ أَخَّرْتَنَآ إِلَىٰٓ أَجَلٍ قَرِيبٍ قُلْ مَتَٰعُ ٱلدُّنْيَا قَلِيلٌ وَٱلْـَٔاخِرَةُ خَيْرٌ لِّمَنِ ٱتَّقَىٰ وَلَا تُظْلَمُونَ فَتِيلًا"
+    }
+   ],
+   "root_arabic": "ف ت ل",
+   "root_buckwalter": "ftl",
+   "root_id": "ftl",
+   "artifact_name": "ftl.json",
+   "verse_ref": "4:77",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "fatiylFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَلَمْ تَرَ إِلَى ٱلَّذِينَ قِيلَ لَهُمْ كُفُّوٓا۟ أَيْدِيَكُمْ وَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ فَلَمَّا كُتِبَ عَلَيْهِمُ ٱلْقِتَالُ إِذَا فَرِيقٌ مِّنْهُمْ يَخْشَوْنَ ٱلنَّاسَ كَخَشْيَةِ ٱللَّهِ أَوْ أَشَدَّ خَشْيَةً وَقَالُوا۟ رَبَّنَا لِمَ كَتَبْتَ عَلَيْنَا ٱلْقِتَالَ لَوْلَآ أَخَّرْتَنَآ إِلَىٰٓ أَجَلٍ قَرِيبٍ قُلْ مَتَٰعُ ٱلدُّنْيَا قَلِيلٌ وَٱلْـَٔاخِرَةُ خَيْرٌ لِّمَنِ ٱتَّقَىٰ وَلَا تُظْلَمُونَ فَتِيلًا"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "All three lenses (A, B, C) independently reached the same inventory, the same single-class functional reading, and the same MODERATE/REPRESENTATIVE cap with root nucleus UNRESOLVED; adversary C explicitly identified the unfalsifiability-by-homogeneity that blocks a PASSED falsification.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "Quran-internally the root ف ت ل survives only as the single frozen accusative noun فَتِيلًا (fatiylFA), a lexicalized minimal-quantity token — the smallest conceivable measure — deployed exclusively as the accusative of measure/specification (tamyiz) under a negated passive of ظ ل م to assert that no wronging occurs 'in the slightest'. The word-function claim (frozen minimal-measure token under negated ظلم) is defensible across 3/3 occurrences; the concrete referent and any productive verbal root nucleus (e.g. 'twist/thread/fibre') are NOT recoverable from Quran-internal evidence.",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "LEXICALIZED_CLASS",
+ "layer_attribution": {
+  "occurrence_evidence": "Three tokens (17:71:15:1, 4:49:14:1, 4:77:48:1), all qac_pos N, qac_verb_form null, surface fatiylFA = فَتِيلًا (accusative indefinite), each governed by a negated passive of ظ ل م (yuzlamuna 3pl / tuzlamuna 2pl); verse_text confirmed in packet.",
+  "derivation": "No productive derivation: the root shows no verb (no qac_verb_form), no participle, no plural, no case variant — the derivational family collapses to a single frozen accusative noun. The faʿīl pattern implies a resultant object of some ftl-action, but the action itself is unattested Quran-internally.",
+  "lexical_class": "A single lexicalized (frozen) nominal class: فَتِيلًا as a minimal-quantity token, monosemous within the corpus, always the negated floor-measure of ẓulm. This is the level at which the PREFERRED claim is scoped (REPRESENTATIVE / LEXICALIZED_CLASS, MODERATE).",
+  "contextual_relation": "The narrative/contextual settings (eschatological book-reckoning 17:71; rebuke of self-purifiers 4:49; hereafter reward for the muttaqi 4:77) supply the recompense/justice discourse into which fatil drops, and a wider Quranic paradigm of interchangeable tiny-measure tokens (e.g. naqir in 'لا يُظْلَمُون نَقِيرًا', qitmir) frames the slot — but this contextual/paradigmatic meaning is NOT elevated into the root claim; it only locates the idiom.",
+  "reconciliation": "No reconciliation between dis/agreeing classes was needed: there is one class and no occurrence-level dispute; all three lenses converged on the same disposition, so no preliminary→final override occurred.",
+  "unresolved_resistance": "The concrete referent of fatil and any productive verbal root nucleus of ف ت ل are UNRESOLVED — unrecoverable from Quran-internal evidence and inadmissible via external lexicons. The homogeneity of the inventory (n=3 identical frozen tokens) leaves this root-level question structurally untestable within the corpus; it is recorded as an honest unresolved result, not a failure, and does not undermine the word-function claim it sits beneath."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "17:71:15:1",
+   "role": "STRUCTURAL_ATYPICALITY",
+   "reason": "Part of an inventory that is a single frozen accusative noun with no morphological or contextual diversity; the token supports the word-function account but supplies no verbal/derivational footing and no discriminating context, so it cannot license promotion to a distinctive root nucleus.",
+   "evidence_basis": {
+    "kind": "HOMOGENEITY_NON_TESTABILITY",
+    "statement": "All three tokens are the identical frozen accusative فَتِيلًا in the identical 'لا يُظْلَمُون فَتِيلًا' construction, so the evidence base is homogeneous with zero morphological or contextual diversity: no possible internal datum could disprove a proposed root sense."
+   }
+  },
+  {
+   "word_ref": "4:49:14:1",
+   "role": "STRUCTURAL_ATYPICALITY",
+   "reason": "Identical frozen-form token in the identical negated-ظلم frame; mutually confirming with the other two but contributing no adversarial testability and no concrete/verbal disclosure of the root.",
+   "evidence_basis": {
+    "kind": "HOMOGENEITY_NON_TESTABILITY",
+    "statement": "All three tokens are the identical frozen accusative فَتِيلًا in the identical 'لا يُظْلَمُون فَتِيلًا' construction, so the evidence base is homogeneous with zero morphological or contextual diversity: no possible internal datum could disprove a proposed root sense."
+   }
+  },
+  {
+   "word_ref": "4:77:48:1",
+   "role": "STRUCTURAL_ATYPICALITY",
+   "reason": "Identical frozen-form token differing only in grammatical person (2pl tuzlamuna); confirms homogeneity of the class and, like the others, exposes no concrete referent or verbal action for the root.",
+   "evidence_basis": {
+    "kind": "HOMOGENEITY_NON_TESTABILITY",
+    "statement": "All three tokens are the identical frozen accusative فَتِيلًا in the identical 'لا يُظْلَمُون فَتِيلًا' construction, so the evidence base is homogeneous with zero morphological or contextual diversity: no possible internal datum could disprove a proposed root sense."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "There is no occurrence-level resistance to the word-function claim (all three are mutually confirming), so there is no RESISTANT_SEAM. The genuine hard-case is structural: the entire root inventory is one frozen accusative nominal, and this homogeneity removes adversarial testability and caps the grade — captured as STRUCTURAL_ATYPICALITY on all three occurrences, with the enabling statement also recorded as the strongest_counterexample."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A Quran-internal occurrence of root ف ت ل outside the frozen فَتِيلًا/negated-ظلم idiom — for example a verbal form of ف ت ل, a participle or plural, an affirmative or non-ظلم use of fatil, or a context that concretely describes/identifies what a fatil is (as a twisted thread, fibre, or any physical object).",
+  "search_location": "The full QAC morphology inventory for root ف ت ل across the entire mushaf (not just this packet), scanning for any qac_verb_form (I-X) tagged to ftl, any non-N qac_pos, any surface form other than fatiylFA, and any verse where فتيل is not governed by a negated passive of ظلم.",
+  "verification_method": "Confirm the candidate occurrence's root assignment and morphology against QAC structural_evidence, read its verse_text for the governing predicate and any concrete predication of fatil, and test whether the minimal-measure reading still fits or whether a distinct sense/verbal nucleus emerges.",
+  "confounder_control": "Exclude external lexicon/tafsir 'twist/thread/date-stone' glosses as inadmissible; distinguish genuine ف ت ل tokens from look-alike roots; treat the 3pl/2pl person shift as grammatical deixis, not semantic variation; and do not count added tokens of the same frozen idiom as new discriminating evidence.",
+  "failure_consequence": "If a verbal, non-nominal, affirmative, or concretely-described occurrence is confirmed, the LEXICALIZED_CLASS scope is falsified and the analysis must be reopened either as a DERIVATIONAL_FAMILY/ROOT_GENERALIZATION (if a bridging nucleus is demonstrable) or as UNRESOLVED multi-class (if the new sense does not bridge to the minimal-measure token)."
+ },
+ "falsification_status": "NOT_RUN",
+ "reopen_conditions": [
+  "A verbal, participial, plural, or otherwise non-'fatiylFA' form of root ف ت ل is confirmed anywhere in the corpus, giving the root morphological/derivational footing beyond the frozen accusative فَتِيلًا (17:71:15:1, 4:49:14:1, 4:77:48:1).",
+  "An occurrence of fatil is found outside the negated-passive-of-ظلم frame, or in an affirmative/positive-quantity use, or in a verse that concretely predicates or describes what a fatil is — any of which would expose a sense the three homogeneous tokens cannot reveal.",
+  "Evidence emerges (Quran-internally) that distinguishes fatil in meaning from the parallel minimal-measure tokens occupying the same 'لا يُظْلَمُون X' justice frame (e.g. naqir in 'لا يُظْلَمُون نَقِيرًا'), which would upgrade the currently non-distinctive slot-filler status."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "17:71:15:1",
+  "4:49:14:1",
+  "4:77:48:1"
+ ],
+ "counterevidence_refs": [],
+ "falsification_evidence": {
+  "attempt_id": "ftl-falsify-2026-09-12",
+  "verdict": "NOT_RUN",
+  "falsifiable": false,
+  "distinctiveness_ok": false,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "ftl-fatil-negated-zulm-measure"
+  ],
+  "status_rationale": "A genuine adversarial falsification cannot return PASSED here: the entire inventory is one frozen accusative in one construction (n=3, zero morphological/contextual diversity), so falsifiable=false and distinctiveness cannot be established Quran-internally — fatil is functionally a slot-filler interchangeable with other minimal-measure tokens in the same justice frame. No occurrence fails the word-function account (failing_occurrences empty), but non-resistance here is the absence of a test, not a passed test, so the status is NOT_RUN rather than PASSED. The concrete/verbal root nucleus remains unresolved."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "ftl: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "ftl: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "ftl: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "ftl: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "ftl: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "ftl: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "ftl: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "ftl: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

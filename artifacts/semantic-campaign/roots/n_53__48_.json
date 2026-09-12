@@ -1,0 +1,928 @@
+{
+ "root_arabic": "ن ص ح",
+ "root_buckwalter": "nSH",
+ "root_id": "nSH",
+ "artifact_name": "n_53__48_.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave4",
+ "occurrences": 13,
+ "frozen_candidate_root_contribution": "nSH = genuine, unfeigned good-faith orientation directed toward the proper good of / what is due to a party — surfacing (for human recipients) as sincere counsel, beneficial warning, or devoted caretaking, and (toward God) as loyal sincere devotion; by intensive-adjectival extension, the wholehearted genuineness of a (Godward) directed act.",
+ "internal_discovery": {
+  "candidate_root_contribution": "nSH = genuine, unfeigned good-faith orientation directed toward the proper good of / what is due to a party — surfacing (for human recipients) as sincere counsel, beneficial warning, or devoted caretaking, and (toward God) as loyal sincere devotion; by intensive-adjectival extension, the wholehearted genuineness of a (Godward) directed act.",
+  "plain_explanation": "Across 12 of 13 occurrences the root construes its object through benefactive لِ (lakum, lahu, laka, lakumā, li-llāh), marking an act oriented FOR a party's good rather than performed ON a patient. It is not 'advice-content' (28:12 is devoted nursing of an infant; 9:91 is fidelity toward God, whom one cannot advise), and it is explicitly listed alongside — hence distinct from — message-conveyance (balāgh: 7:62, 7:79, 7:93) and from trustworthiness (amīn, listed separately at 7:68). It names the agent's good-faith stance, not the outcome: it can fail to benefit (11:34), be unloved (7:79), or be falsely sworn (7:21, 12:11). The lone intensive adjective naSūH (66:8), predicated of repentance with no beneficiary and no لِ, deploys only the genuineness component onto an act and forms a resistant lexicalized sub-class.",
+  "layer_separation_note": "nSH does NOT entail: (1) information/message transmission — coordinated with yet distinct from balāgh (7:62/79/93); (2) trustworthiness/amānah — listed as a separate co-attribute (7:68 nāSiḥ + amīn); (3) realized benefit or acceptance — offered yet unprofitable (11:34) and unloved (7:79); (4) truth of the claim — the participle is uttered by deceivers (7:21 Iblis, 12:11 brothers), so genuineness is predicated, not self-guaranteed; (5) verbal counsel specifically — applies to caretaking of an infant (28:12) and to loyalty toward God (9:91); (6) hierarchical direction — runs household→infant, commoner→Moses, believers→God.",
+  "presence": {
+   "occurrences_total": 13,
+   "occurrences_checked": 13,
+   "occurrences_consistent": 12,
+   "inconsistent_refs": [
+    "66:8:8:1"
+   ]
+  },
+  "strongest_counterexample": "66:8:8:1 «تَوْبَةً نَّصُوحًا» — the sole ADJ (faʿūl intensive), sole non-لِ, sole occurrence with no directed party: nSH qualifies an act (repentance), not a recipient-directed relation. It resists the benefactive-directedness core and is accommodated only by abstracting to the bare 'genuineness/wholeheartedness of a (Godward) act', a bridge no verse in the packet forces. This resistant lexicalized adjectival sub-class caps the root claim below STRONG.",
+  "strongest_competitor": "Two-pole polysemy: Pole A = benevolent good-faith/loyalty enacted toward a party (the 12 لِ-directed verbs/participles/masdar); Pole B = purity/genuineness as an attribute of an act (naSūḥ, 66:8), with 9:91 li-llāh leaning Bward. The competitor holds these are distinct senses sharing a root, and the unifying 'authentic directed good-faith' is a broad abstraction chosen to fit both rather than a nucleus either pole compels. It is not decisively defeated Quran-internally, but it under-reads the pervasive benefactive لِ signature that binds Pole B's genuineness back to a directed act; 9:91 (good faith directed toward God) is the internal hinge that bridges human-directed counsel/care and the Godward genuineness of naSūḥ repentance, so a single bridged derivational family is preferred over unbridged homonymy.",
+  "competing_hypothesis": "Two-pole polysemy: Pole A = benevolent good-faith/loyalty enacted toward a party (the 12 لِ-directed verbs/participles/masdar); Pole B = purity/genuineness as an attribute of an act (naSūḥ, 66:8), with 9:91 li-llāh leaning Bward. The competitor holds these are distinct senses sharing a root, and the unifying 'authentic directed good-faith' is a broad abstraction chosen to fit both rather than a nucleus either pole compels. It is not decisively defeated Quran-internally, but it under-reads the pervasive benefactive لِ signature that binds Pole B's genuineness back to a directed act; 9:91 (good faith directed toward God) is the internal hinge that bridges human-directed counsel/care and the Godward genuineness of naSūḥ repentance, so a single bridged derivational family is preferred over unbridged homonymy.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All three lenses independently converge: a broad (12/13), distinctive (benefactive لِ; explicit separation from balāgh and amīn; the trust-presumption deceivers must counterfeit), adversarially clean interpersonal core, plus one resistant lexicalized ADJ (66:8). The narrowest distinctive claim ('sincere counsel to a human recipient') is falsified by 28:12 (nursing), 9:91 (devotion to God), and 66:8 (quality of an act), forcing the nucleus one level up to 'genuine good-faith orientation toward what is due to X'. Per the anti-over-grading discipline, a coherent resistant lexicalized/nominal sub-class (66:8 naSūḥ) plus the need to abstract the unifying nucleus caps this at MODERATE + REPRESENTATIVE. The two false-claim cases (7:21, 12:11) confirm rather than break the core (the lie is about possessing the stance), and are recorded as adversarial boundaries. Result is bridged, not multi-class: a Quran-internal hinge (9:91) links the poles, so UNRESOLVED is not warranted.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "C1_benefactive_directed_goodfaith",
+     "where": {
+      "qac_pos": [
+       "V",
+       "N"
+      ]
+     },
+     "occurrence_count_expected": 12,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Genuine good-faith directed toward the good of / what is due to a party (marked by benefactive لِ) — realized as sincere counsel, beneficial warning, devoted caretaking, or loyal devotion; names the agent's stance, not the outcome or its acceptance.",
+     "classification_rationale": "Every verbal (7:79:9:2, 7:93:9:2, 9:91:16:1 Form I; 11:34:7:1, 7:62:4:2 Form IV) and every nominal participle/masdar (7:68:6:1, 12:11:11:2, 28:12:16:1, 28:20:18:2, 7:21:5:2, 7:79:14:2, 11:34:3:1) construes its target through directional لِ (lakum/lahu/laka/lakumā/li-llāh), never a direct accusative patient. Form I vs Form IV shows no semantic contrast (Nuh's anSaḥu lakum 7:62 = Salih's naSaḥtu lakum 7:79 in identical messenger frames), and masdar nuSḥ names the same act as Form IV in one breath (11:34), so morphology does not partition sense here.",
+     "supporting_evidence_note": "Distinctively separated from balāgh (7:62 «أُبَلِّغُكُمْ ... وَأَنصَحُ لَكُمْ»; 7:79, 7:93) and from amānah (7:68 «نَاصِحٌ أَمِينٌ», two listed attributes). Non-verbal caretaking (28:12 household nursing infant Musa) and Godward fidelity (9:91 «نَصَحُوا۟ لِلَّهِ») falsify the 'advice-content' gloss while remaining within directed good-faith.",
+     "counterevidence": [
+      "7:21:5:2",
+      "12:11:11:2",
+      "9:91:16:1"
+     ]
+    },
+    {
+     "cluster_id": "C2_intensive_adj_naSuuh",
+     "where": {
+      "qac_pos": [
+       "ADJ"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "Intensive faʿūl adjective naSūḥ: the wholehearted, unmixed genuineness of an act (repentance), abstracting the genuineness component of the root without a directed beneficiary.",
+     "classification_rationale": "66:8:8:1 «تَوْبَةً نَّصُوحًا» is the sole ADJ, predicated of an act with no لِ and no recipient. It cannot host the benefactive-directedness core and is bridged to C1 only inferentially via the shared genuineness component (and 9:91's Godward good-faith → repentance toward God). It is a lexicalized adjectival sub-class distinct from the verb/participle/masdar family.",
+     "supporting_evidence_note": "faʿūl intensive; the genuineness component that C1 carries alongside directedness surfaces here in isolation. The bridge is real but not text-forced, hence RESISTANT.",
+     "counterevidence": [
+      "66:8:8:1"
+     ]
+    }
+   ],
+   "reconciliation": [
+    {
+     "word_ref": "9:91:16:1",
+     "final": "CONSISTENT",
+     "rationale": "Resolved by pitching the nucleus at 'good-faith toward what is due to X'; welfare-seeking is the human-directed specialization, loyal devotion the Godward one. Retains the benefactive لِ signature, so it stays inside C1 and serves as the bridge to 66:8 rather than breaking the core."
+    },
+    {
+     "word_ref": "66:8:8:1",
+     "final": "RESISTANT",
+     "rationale": "No verse forces the bridge from directed good-faith to bare genuineness-of-an-act; as the sole ADJ with no beneficiary it is a lexicalized sub-class and is recorded as the resistant seam that caps grading at MODERATE."
+    }
+   ]
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "nSH",
+  "verdict": "CORE_HOLDS_WITH_RECORDED_RESISTANCE",
+  "failing_occurrences": [
+   "66:8:8:1"
+  ],
+  "distinctiveness_ok": false,
+  "falsifiable": true,
+  "notes": "The interpersonal core (C1, 12/13) survives adversarial pressure — the two false-claim cases confirm rather than break it, and the balāgh/amīn contrasts hold — but the intensive ADJ naSūḥ (66:8) resists the benefactive-directedness core and requires abstraction, so a full adversarial refutation returning SUPPORTED with distinctiveness_ok=true and no failing occurrences cannot be claimed. Per protocol, resistance-with-holding-core is recorded as NOT_RUN, not PASSED."
+ },
+ "coverage_validation": {
+  "root": "nSH",
+  "expected_count": 13,
+  "researched_count": 13,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [
+   "66:8:8:1"
+  ],
+  "unresolved_visible": [
+   "66:8:8:1"
+  ]
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "11:34:3:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verbal (7:79:9:2, 7:93:9:2, 9:91:16:1 Form I; 11:34:7:1, 7:62:4:2 Form IV) and every nominal participle/masdar (7:68:6:1, 12:11:11:2, 28:12:16:1, 28:20:18:2, 7:21:5:2, 7:79:14:2, 11:34:3:1) construes its target through directional لِ (lakum/lahu/laka/lakumā/li-llāh), never a direct accusative patient. Form I vs Form IV shows no semantic contrast (Nuh's anSaḥu lakum 7:62 = Salih's naSaḥtu lakum 7:79 in identical messenger frames), and masdar nuSḥ names the same act as Form IV in one breath (11:34), so morphology does not partition sense here.",
+   "coverage_cluster_id": "C1_benefactive_directed_goodfaith",
+   "candidate_semantic_interpretation": "Genuine good-faith directed toward the good of / what is due to a party (marked by benefactive لِ) — realized as sincere counsel, beneficial warning, devoted caretaking, or loyal devotion; names the agent's stance, not the outcome or its acceptance.",
+   "cluster_supporting_evidence": "Distinctively separated from balāgh (7:62 «أُبَلِّغُكُمْ ... وَأَنصَحُ لَكُمْ»; 7:79, 7:93) and from amānah (7:68 «نَاصِحٌ أَمِينٌ», two listed attributes). Non-verbal caretaking (28:12 household nursing infant Musa) and Godward fidelity (9:91 «نَصَحُوا۟ لِلَّهِ») falsify the 'advice-content' gloss while remaining within directed good-faith.",
+   "counterevidence": [
+    "7:21:5:2",
+    "12:11:11:2",
+    "9:91:16:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Every verbal (7:79:9:2, 7:93:9:2, 9:91:16:1 Form I; 11:34:7:1, 7:62:4:2 Form IV) and every nominal participle/masdar (7:68:6:1, 12:11:11:2, 28:12:16:1, 28:20:18:2, 7:21:5:2, 7:79:14:2, 11:34:3:1) construes its target through directional لِ (lakum/lahu/laka/lakumā/li-llāh), never a direct accusative patient. Form I vs Form IV shows no semantic contrast (Nuh's anSaḥu lakum 7:62 = Salih's naSaḥtu lakum 7:79 in identical messenger frames), and masdar nuSḥ names the same act as Form IV in one breath (11:34), so morphology does not partition sense here.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "11:34",
+     "verse_text": "وَلَا يَنفَعُكُمْ نُصْحِىٓ إِنْ أَرَدتُّ أَنْ أَنصَحَ لَكُمْ إِن كَانَ ٱللَّهُ يُرِيدُ أَن يُغْوِيَكُمْ هُوَ رَبُّكُمْ وَإِلَيْهِ تُرْجَعُونَ"
+    }
+   ],
+   "root_arabic": "ن ص ح",
+   "root_buckwalter": "nSH",
+   "root_id": "nSH",
+   "artifact_name": "n_53__48_.json",
+   "verse_ref": "11:34",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "nuSoHi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَا يَنفَعُكُمْ نُصْحِىٓ إِنْ أَرَدتُّ أَنْ أَنصَحَ لَكُمْ إِن كَانَ ٱللَّهُ يُرِيدُ أَن يُغْوِيَكُمْ هُوَ رَبُّكُمْ وَإِلَيْهِ تُرْجَعُونَ"
+  },
+  {
+   "word_ref": "11:34:7:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verbal (7:79:9:2, 7:93:9:2, 9:91:16:1 Form I; 11:34:7:1, 7:62:4:2 Form IV) and every nominal participle/masdar (7:68:6:1, 12:11:11:2, 28:12:16:1, 28:20:18:2, 7:21:5:2, 7:79:14:2, 11:34:3:1) construes its target through directional لِ (lakum/lahu/laka/lakumā/li-llāh), never a direct accusative patient. Form I vs Form IV shows no semantic contrast (Nuh's anSaḥu lakum 7:62 = Salih's naSaḥtu lakum 7:79 in identical messenger frames), and masdar nuSḥ names the same act as Form IV in one breath (11:34), so morphology does not partition sense here.",
+   "coverage_cluster_id": "C1_benefactive_directed_goodfaith",
+   "candidate_semantic_interpretation": "Genuine good-faith directed toward the good of / what is due to a party (marked by benefactive لِ) — realized as sincere counsel, beneficial warning, devoted caretaking, or loyal devotion; names the agent's stance, not the outcome or its acceptance.",
+   "cluster_supporting_evidence": "Distinctively separated from balāgh (7:62 «أُبَلِّغُكُمْ ... وَأَنصَحُ لَكُمْ»; 7:79, 7:93) and from amānah (7:68 «نَاصِحٌ أَمِينٌ», two listed attributes). Non-verbal caretaking (28:12 household nursing infant Musa) and Godward fidelity (9:91 «نَصَحُوا۟ لِلَّهِ») falsify the 'advice-content' gloss while remaining within directed good-faith.",
+   "counterevidence": [
+    "7:21:5:2",
+    "12:11:11:2",
+    "9:91:16:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Every verbal (7:79:9:2, 7:93:9:2, 9:91:16:1 Form I; 11:34:7:1, 7:62:4:2 Form IV) and every nominal participle/masdar (7:68:6:1, 12:11:11:2, 28:12:16:1, 28:20:18:2, 7:21:5:2, 7:79:14:2, 11:34:3:1) construes its target through directional لِ (lakum/lahu/laka/lakumā/li-llāh), never a direct accusative patient. Form I vs Form IV shows no semantic contrast (Nuh's anSaḥu lakum 7:62 = Salih's naSaḥtu lakum 7:79 in identical messenger frames), and masdar nuSḥ names the same act as Form IV in one breath (11:34), so morphology does not partition sense here.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "11:34",
+     "verse_text": "وَلَا يَنفَعُكُمْ نُصْحِىٓ إِنْ أَرَدتُّ أَنْ أَنصَحَ لَكُمْ إِن كَانَ ٱللَّهُ يُرِيدُ أَن يُغْوِيَكُمْ هُوَ رَبُّكُمْ وَإِلَيْهِ تُرْجَعُونَ"
+    }
+   ],
+   "root_arabic": "ن ص ح",
+   "root_buckwalter": "nSH",
+   "root_id": "nSH",
+   "artifact_name": "n_53__48_.json",
+   "verse_ref": "11:34",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">anSaHa",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَا يَنفَعُكُمْ نُصْحِىٓ إِنْ أَرَدتُّ أَنْ أَنصَحَ لَكُمْ إِن كَانَ ٱللَّهُ يُرِيدُ أَن يُغْوِيَكُمْ هُوَ رَبُّكُمْ وَإِلَيْهِ تُرْجَعُونَ"
+  },
+  {
+   "word_ref": "12:11:11:2",
+   "disposition": "CONSISTENT",
+   "note": "Adversarial boundary: Yusuf's brothers assert «وَإِنَّا لَهُۥ لَنَٰصِحُونَ» while plotting the well — identical morphology to the genuine nāSiḥūn of 28:12; the predicated good-faith stance is asserted, its truth context-determined, not encoded.",
+   "coverage_cluster_id": "C1_benefactive_directed_goodfaith",
+   "candidate_semantic_interpretation": "Genuine good-faith directed toward the good of / what is due to a party (marked by benefactive لِ) — realized as sincere counsel, beneficial warning, devoted caretaking, or loyal devotion; names the agent's stance, not the outcome or its acceptance.",
+   "cluster_supporting_evidence": "Distinctively separated from balāgh (7:62 «أُبَلِّغُكُمْ ... وَأَنصَحُ لَكُمْ»; 7:79, 7:93) and from amānah (7:68 «نَاصِحٌ أَمِينٌ», two listed attributes). Non-verbal caretaking (28:12 household nursing infant Musa) and Godward fidelity (9:91 «نَصَحُوا۟ لِلَّهِ») falsify the 'advice-content' gloss while remaining within directed good-faith.",
+   "counterevidence": [
+    "7:21:5:2",
+    "12:11:11:2",
+    "9:91:16:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Every verbal (7:79:9:2, 7:93:9:2, 9:91:16:1 Form I; 11:34:7:1, 7:62:4:2 Form IV) and every nominal participle/masdar (7:68:6:1, 12:11:11:2, 28:12:16:1, 28:20:18:2, 7:21:5:2, 7:79:14:2, 11:34:3:1) construes its target through directional لِ (lakum/lahu/laka/lakumā/li-llāh), never a direct accusative patient. Form I vs Form IV shows no semantic contrast (Nuh's anSaḥu lakum 7:62 = Salih's naSaḥtu lakum 7:79 in identical messenger frames), and masdar nuSḥ names the same act as Form IV in one breath (11:34), so morphology does not partition sense here.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "12:11",
+     "verse_text": "قَالُوا۟ يَٰٓأَبَانَا مَا لَكَ لَا تَأْمَ۫نَّا عَلَىٰ يُوسُفَ وَإِنَّا لَهُۥ لَنَٰصِحُونَ"
+    }
+   ],
+   "root_arabic": "ن ص ح",
+   "root_buckwalter": "nSH",
+   "root_id": "nSH",
+   "artifact_name": "n_53__48_.json",
+   "verse_ref": "12:11",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "na`SiHuwna",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالُوا۟ يَٰٓأَبَانَا مَا لَكَ لَا تَأْمَ۫نَّا عَلَىٰ يُوسُفَ وَإِنَّا لَهُۥ لَنَٰصِحُونَ"
+  },
+  {
+   "word_ref": "28:12:16:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verbal (7:79:9:2, 7:93:9:2, 9:91:16:1 Form I; 11:34:7:1, 7:62:4:2 Form IV) and every nominal participle/masdar (7:68:6:1, 12:11:11:2, 28:12:16:1, 28:20:18:2, 7:21:5:2, 7:79:14:2, 11:34:3:1) construes its target through directional لِ (lakum/lahu/laka/lakumā/li-llāh), never a direct accusative patient. Form I vs Form IV shows no semantic contrast (Nuh's anSaḥu lakum 7:62 = Salih's naSaḥtu lakum 7:79 in identical messenger frames), and masdar nuSḥ names the same act as Form IV in one breath (11:34), so morphology does not partition sense here.",
+   "coverage_cluster_id": "C1_benefactive_directed_goodfaith",
+   "candidate_semantic_interpretation": "Genuine good-faith directed toward the good of / what is due to a party (marked by benefactive لِ) — realized as sincere counsel, beneficial warning, devoted caretaking, or loyal devotion; names the agent's stance, not the outcome or its acceptance.",
+   "cluster_supporting_evidence": "Distinctively separated from balāgh (7:62 «أُبَلِّغُكُمْ ... وَأَنصَحُ لَكُمْ»; 7:79, 7:93) and from amānah (7:68 «نَاصِحٌ أَمِينٌ», two listed attributes). Non-verbal caretaking (28:12 household nursing infant Musa) and Godward fidelity (9:91 «نَصَحُوا۟ لِلَّهِ») falsify the 'advice-content' gloss while remaining within directed good-faith.",
+   "counterevidence": [
+    "7:21:5:2",
+    "12:11:11:2",
+    "9:91:16:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Every verbal (7:79:9:2, 7:93:9:2, 9:91:16:1 Form I; 11:34:7:1, 7:62:4:2 Form IV) and every nominal participle/masdar (7:68:6:1, 12:11:11:2, 28:12:16:1, 28:20:18:2, 7:21:5:2, 7:79:14:2, 11:34:3:1) construes its target through directional لِ (lakum/lahu/laka/lakumā/li-llāh), never a direct accusative patient. Form I vs Form IV shows no semantic contrast (Nuh's anSaḥu lakum 7:62 = Salih's naSaḥtu lakum 7:79 in identical messenger frames), and masdar nuSḥ names the same act as Form IV in one breath (11:34), so morphology does not partition sense here.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "28:12",
+     "verse_text": "وَحَرَّمْنَا عَلَيْهِ ٱلْمَرَاضِعَ مِن قَبْلُ فَقَالَتْ هَلْ أَدُلُّكُمْ عَلَىٰٓ أَهْلِ بَيْتٍ يَكْفُلُونَهُۥ لَكُمْ وَهُمْ لَهُۥ نَٰصِحُونَ"
+    }
+   ],
+   "root_arabic": "ن ص ح",
+   "root_buckwalter": "nSH",
+   "root_id": "nSH",
+   "artifact_name": "n_53__48_.json",
+   "verse_ref": "28:12",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "na`SiHuwna",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَحَرَّمْنَا عَلَيْهِ ٱلْمَرَاضِعَ مِن قَبْلُ فَقَالَتْ هَلْ أَدُلُّكُمْ عَلَىٰٓ أَهْلِ بَيْتٍ يَكْفُلُونَهُۥ لَكُمْ وَهُمْ لَهُۥ نَٰصِحُونَ"
+  },
+  {
+   "word_ref": "28:20:18:2",
+   "disposition": "CONSISTENT",
+   "note": "Every verbal (7:79:9:2, 7:93:9:2, 9:91:16:1 Form I; 11:34:7:1, 7:62:4:2 Form IV) and every nominal participle/masdar (7:68:6:1, 12:11:11:2, 28:12:16:1, 28:20:18:2, 7:21:5:2, 7:79:14:2, 11:34:3:1) construes its target through directional لِ (lakum/lahu/laka/lakumā/li-llāh), never a direct accusative patient. Form I vs Form IV shows no semantic contrast (Nuh's anSaḥu lakum 7:62 = Salih's naSaḥtu lakum 7:79 in identical messenger frames), and masdar nuSḥ names the same act as Form IV in one breath (11:34), so morphology does not partition sense here.",
+   "coverage_cluster_id": "C1_benefactive_directed_goodfaith",
+   "candidate_semantic_interpretation": "Genuine good-faith directed toward the good of / what is due to a party (marked by benefactive لِ) — realized as sincere counsel, beneficial warning, devoted caretaking, or loyal devotion; names the agent's stance, not the outcome or its acceptance.",
+   "cluster_supporting_evidence": "Distinctively separated from balāgh (7:62 «أُبَلِّغُكُمْ ... وَأَنصَحُ لَكُمْ»; 7:79, 7:93) and from amānah (7:68 «نَاصِحٌ أَمِينٌ», two listed attributes). Non-verbal caretaking (28:12 household nursing infant Musa) and Godward fidelity (9:91 «نَصَحُوا۟ لِلَّهِ») falsify the 'advice-content' gloss while remaining within directed good-faith.",
+   "counterevidence": [
+    "7:21:5:2",
+    "12:11:11:2",
+    "9:91:16:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Every verbal (7:79:9:2, 7:93:9:2, 9:91:16:1 Form I; 11:34:7:1, 7:62:4:2 Form IV) and every nominal participle/masdar (7:68:6:1, 12:11:11:2, 28:12:16:1, 28:20:18:2, 7:21:5:2, 7:79:14:2, 11:34:3:1) construes its target through directional لِ (lakum/lahu/laka/lakumā/li-llāh), never a direct accusative patient. Form I vs Form IV shows no semantic contrast (Nuh's anSaḥu lakum 7:62 = Salih's naSaḥtu lakum 7:79 in identical messenger frames), and masdar nuSḥ names the same act as Form IV in one breath (11:34), so morphology does not partition sense here.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "28:20",
+     "verse_text": "وَجَآءَ رَجُلٌ مِّنْ أَقْصَا ٱلْمَدِينَةِ يَسْعَىٰ قَالَ يَٰمُوسَىٰٓ إِنَّ ٱلْمَلَأَ يَأْتَمِرُونَ بِكَ لِيَقْتُلُوكَ فَٱخْرُجْ إِنِّى لَكَ مِنَ ٱلنَّٰصِحِينَ"
+    }
+   ],
+   "root_arabic": "ن ص ح",
+   "root_buckwalter": "nSH",
+   "root_id": "nSH",
+   "artifact_name": "n_53__48_.json",
+   "verse_ref": "28:20",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "n~a`SiHiyna",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَجَآءَ رَجُلٌ مِّنْ أَقْصَا ٱلْمَدِينَةِ يَسْعَىٰ قَالَ يَٰمُوسَىٰٓ إِنَّ ٱلْمَلَأَ يَأْتَمِرُونَ بِكَ لِيَقْتُلُوكَ فَٱخْرُجْ إِنِّى لَكَ مِنَ ٱلنَّٰصِحِينَ"
+  },
+  {
+   "word_ref": "66:8:8:1",
+   "disposition": "RESISTANT",
+   "note": "Sole non-directed, non-لِ, intensive-adjective occurrence; bridged to the core only by abstraction to 'genuineness of a Godward act'. | 66:8:8:1 «تَوْبَةً نَّصُوحًا» — the sole ADJ (faʿūl intensive), sole non-لِ, sole occurrence with no directed party: nSH qualifies an act (repentance), not a recipient-directed relation.",
+   "coverage_cluster_id": "C2_intensive_adj_naSuuh",
+   "candidate_semantic_interpretation": "Intensive faʿūl adjective naSūḥ: the wholehearted, unmixed genuineness of an act (repentance), abstracting the genuineness component of the root without a directed beneficiary.",
+   "cluster_supporting_evidence": "faʿūl intensive; the genuineness component that C1 carries alongside directedness surfaces here in isolation. The bridge is real but not text-forced, hence RESISTANT.",
+   "counterevidence": [
+    "66:8:8:1"
+   ],
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "66:8:8:1 «تَوْبَةً نَّصُوحًا» is the sole ADJ, predicated of an act with no لِ and no recipient. It cannot host the benefactive-directedness core and is bridged to C1 only inferentially via the shared genuineness component (and 9:91's Godward good-faith → repentance toward God). It is a lexicalized adjectival sub-class distinct from the verb/participle/masdar family.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "No verse forces the bridge from directed good-faith to bare genuineness-of-an-act; as the sole ADJ with no beneficiary it is a lexicalized sub-class and is recorded as the resistant seam that caps grading at MODERATE.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "66:8:8:1",
+     "preliminary_disposition": "CONSISTENT",
+     "preliminary_note": "Could be folded into the nucleus as 'genuine directed act toward God (إِلَى ٱللَّهِ)'.",
+     "final_disposition": "RESISTANT",
+     "reconciliation_rationale": "No verse forces the bridge from directed good-faith to bare genuineness-of-an-act; as the sole ADJ with no beneficiary it is a lexicalized sub-class and is recorded as the resistant seam that caps grading at MODERATE.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "66:8",
+     "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ تُوبُوٓا۟ إِلَى ٱللَّهِ تَوْبَةً نَّصُوحًا عَسَىٰ رَبُّكُمْ أَن يُكَفِّرَ عَنكُمْ سَيِّـَٔاتِكُمْ وَيُدْخِلَكُمْ جَنَّٰتٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ يَوْمَ لَا يُخْزِى ٱللَّهُ ٱلنَّبِىَّ وَٱلَّذِينَ ءَامَنُوا۟ مَعَهُۥ نُورُهُمْ يَسْعَىٰ بَيْنَ أَيْدِيهِمْ وَبِأَيْمَٰنِهِمْ يَقُولُونَ رَبَّنَآ أَتْمِمْ لَنَا نُورَنَا وَٱغْفِرْ لَنَآ إِنَّكَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ"
+    }
+   ],
+   "root_arabic": "ن ص ح",
+   "root_buckwalter": "nSH",
+   "root_id": "nSH",
+   "artifact_name": "n_53__48_.json",
+   "verse_ref": "66:8",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "n~aSuwHFA",
+   "qac_tag": "ADJ",
+   "qac_pos": "ADJ",
+   "qac_verb_form": null,
+   "morphology": "ADJ",
+   "form": "ADJ",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ تُوبُوٓا۟ إِلَى ٱللَّهِ تَوْبَةً نَّصُوحًا عَسَىٰ رَبُّكُمْ أَن يُكَفِّرَ عَنكُمْ سَيِّـَٔاتِكُمْ وَيُدْخِلَكُمْ جَنَّٰتٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ يَوْمَ لَا يُخْزِى ٱللَّهُ ٱلنَّبِىَّ وَٱلَّذِينَ ءَامَنُوا۟ مَعَهُۥ نُورُهُمْ يَسْعَىٰ بَيْنَ أَيْدِيهِمْ وَبِأَيْمَٰنِهِمْ يَقُولُونَ رَبَّنَآ أَتْمِمْ لَنَا نُورَنَا وَٱغْفِرْ لَنَآ إِنَّكَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "7:21:5:2",
+   "disposition": "CONSISTENT",
+   "note": "Adversarial boundary: Iblis swears «إِنِّى لَكُمَا لَمِنَ ٱلنَّٰصِحِينَ» (reinforced by qāsama, an oath) while steering to the tree — the term denotes genuine directed good-faith, which is exactly why it is worth counterfeiting; the falsehood attaches to the speaker's claim, not to the lexeme.",
+   "coverage_cluster_id": "C1_benefactive_directed_goodfaith",
+   "candidate_semantic_interpretation": "Genuine good-faith directed toward the good of / what is due to a party (marked by benefactive لِ) — realized as sincere counsel, beneficial warning, devoted caretaking, or loyal devotion; names the agent's stance, not the outcome or its acceptance.",
+   "cluster_supporting_evidence": "Distinctively separated from balāgh (7:62 «أُبَلِّغُكُمْ ... وَأَنصَحُ لَكُمْ»; 7:79, 7:93) and from amānah (7:68 «نَاصِحٌ أَمِينٌ», two listed attributes). Non-verbal caretaking (28:12 household nursing infant Musa) and Godward fidelity (9:91 «نَصَحُوا۟ لِلَّهِ») falsify the 'advice-content' gloss while remaining within directed good-faith.",
+   "counterevidence": [
+    "7:21:5:2",
+    "12:11:11:2",
+    "9:91:16:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Every verbal (7:79:9:2, 7:93:9:2, 9:91:16:1 Form I; 11:34:7:1, 7:62:4:2 Form IV) and every nominal participle/masdar (7:68:6:1, 12:11:11:2, 28:12:16:1, 28:20:18:2, 7:21:5:2, 7:79:14:2, 11:34:3:1) construes its target through directional لِ (lakum/lahu/laka/lakumā/li-llāh), never a direct accusative patient. Form I vs Form IV shows no semantic contrast (Nuh's anSaḥu lakum 7:62 = Salih's naSaḥtu lakum 7:79 in identical messenger frames), and masdar nuSḥ names the same act as Form IV in one breath (11:34), so morphology does not partition sense here.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:21",
+     "verse_text": "وَقَاسَمَهُمَآ إِنِّى لَكُمَا لَمِنَ ٱلنَّٰصِحِينَ"
+    }
+   ],
+   "root_arabic": "ن ص ح",
+   "root_buckwalter": "nSH",
+   "root_id": "nSH",
+   "artifact_name": "n_53__48_.json",
+   "verse_ref": "7:21",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "n~a`SiHiyna",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَقَاسَمَهُمَآ إِنِّى لَكُمَا لَمِنَ ٱلنَّٰصِحِينَ"
+  },
+  {
+   "word_ref": "7:62:4:2",
+   "disposition": "CONSISTENT",
+   "note": "Every verbal (7:79:9:2, 7:93:9:2, 9:91:16:1 Form I; 11:34:7:1, 7:62:4:2 Form IV) and every nominal participle/masdar (7:68:6:1, 12:11:11:2, 28:12:16:1, 28:20:18:2, 7:21:5:2, 7:79:14:2, 11:34:3:1) construes its target through directional لِ (lakum/lahu/laka/lakumā/li-llāh), never a direct accusative patient. Form I vs Form IV shows no semantic contrast (Nuh's anSaḥu lakum 7:62 = Salih's naSaḥtu lakum 7:79 in identical messenger frames), and masdar nuSḥ names the same act as Form IV in one breath (11:34), so morphology does not partition sense here.",
+   "coverage_cluster_id": "C1_benefactive_directed_goodfaith",
+   "candidate_semantic_interpretation": "Genuine good-faith directed toward the good of / what is due to a party (marked by benefactive لِ) — realized as sincere counsel, beneficial warning, devoted caretaking, or loyal devotion; names the agent's stance, not the outcome or its acceptance.",
+   "cluster_supporting_evidence": "Distinctively separated from balāgh (7:62 «أُبَلِّغُكُمْ ... وَأَنصَحُ لَكُمْ»; 7:79, 7:93) and from amānah (7:68 «نَاصِحٌ أَمِينٌ», two listed attributes). Non-verbal caretaking (28:12 household nursing infant Musa) and Godward fidelity (9:91 «نَصَحُوا۟ لِلَّهِ») falsify the 'advice-content' gloss while remaining within directed good-faith.",
+   "counterevidence": [
+    "7:21:5:2",
+    "12:11:11:2",
+    "9:91:16:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Every verbal (7:79:9:2, 7:93:9:2, 9:91:16:1 Form I; 11:34:7:1, 7:62:4:2 Form IV) and every nominal participle/masdar (7:68:6:1, 12:11:11:2, 28:12:16:1, 28:20:18:2, 7:21:5:2, 7:79:14:2, 11:34:3:1) construes its target through directional لِ (lakum/lahu/laka/lakumā/li-llāh), never a direct accusative patient. Form I vs Form IV shows no semantic contrast (Nuh's anSaḥu lakum 7:62 = Salih's naSaḥtu lakum 7:79 in identical messenger frames), and masdar nuSḥ names the same act as Form IV in one breath (11:34), so morphology does not partition sense here.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:62",
+     "verse_text": "أُبَلِّغُكُمْ رِسَٰلَٰتِ رَبِّى وَأَنصَحُ لَكُمْ وَأَعْلَمُ مِنَ ٱللَّهِ مَا لَا تَعْلَمُونَ"
+    }
+   ],
+   "root_arabic": "ن ص ح",
+   "root_buckwalter": "nSH",
+   "root_id": "nSH",
+   "artifact_name": "n_53__48_.json",
+   "verse_ref": "7:62",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">anSaHu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أُبَلِّغُكُمْ رِسَٰلَٰتِ رَبِّى وَأَنصَحُ لَكُمْ وَأَعْلَمُ مِنَ ٱللَّهِ مَا لَا تَعْلَمُونَ"
+  },
+  {
+   "word_ref": "7:68:6:1",
+   "disposition": "CONSISTENT",
+   "note": "Every verbal (7:79:9:2, 7:93:9:2, 9:91:16:1 Form I; 11:34:7:1, 7:62:4:2 Form IV) and every nominal participle/masdar (7:68:6:1, 12:11:11:2, 28:12:16:1, 28:20:18:2, 7:21:5:2, 7:79:14:2, 11:34:3:1) construes its target through directional لِ (lakum/lahu/laka/lakumā/li-llāh), never a direct accusative patient. Form I vs Form IV shows no semantic contrast (Nuh's anSaḥu lakum 7:62 = Salih's naSaḥtu lakum 7:79 in identical messenger frames), and masdar nuSḥ names the same act as Form IV in one breath (11:34), so morphology does not partition sense here.",
+   "coverage_cluster_id": "C1_benefactive_directed_goodfaith",
+   "candidate_semantic_interpretation": "Genuine good-faith directed toward the good of / what is due to a party (marked by benefactive لِ) — realized as sincere counsel, beneficial warning, devoted caretaking, or loyal devotion; names the agent's stance, not the outcome or its acceptance.",
+   "cluster_supporting_evidence": "Distinctively separated from balāgh (7:62 «أُبَلِّغُكُمْ ... وَأَنصَحُ لَكُمْ»; 7:79, 7:93) and from amānah (7:68 «نَاصِحٌ أَمِينٌ», two listed attributes). Non-verbal caretaking (28:12 household nursing infant Musa) and Godward fidelity (9:91 «نَصَحُوا۟ لِلَّهِ») falsify the 'advice-content' gloss while remaining within directed good-faith.",
+   "counterevidence": [
+    "7:21:5:2",
+    "12:11:11:2",
+    "9:91:16:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Every verbal (7:79:9:2, 7:93:9:2, 9:91:16:1 Form I; 11:34:7:1, 7:62:4:2 Form IV) and every nominal participle/masdar (7:68:6:1, 12:11:11:2, 28:12:16:1, 28:20:18:2, 7:21:5:2, 7:79:14:2, 11:34:3:1) construes its target through directional لِ (lakum/lahu/laka/lakumā/li-llāh), never a direct accusative patient. Form I vs Form IV shows no semantic contrast (Nuh's anSaḥu lakum 7:62 = Salih's naSaḥtu lakum 7:79 in identical messenger frames), and masdar nuSḥ names the same act as Form IV in one breath (11:34), so morphology does not partition sense here.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:68",
+     "verse_text": "أُبَلِّغُكُمْ رِسَٰلَٰتِ رَبِّى وَأَنَا۠ لَكُمْ نَاصِحٌ أَمِينٌ"
+    }
+   ],
+   "root_arabic": "ن ص ح",
+   "root_buckwalter": "nSH",
+   "root_id": "nSH",
+   "artifact_name": "n_53__48_.json",
+   "verse_ref": "7:68",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "naASiHN",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أُبَلِّغُكُمْ رِسَٰلَٰتِ رَبِّى وَأَنَا۠ لَكُمْ نَاصِحٌ أَمِينٌ"
+  },
+  {
+   "word_ref": "7:79:14:2",
+   "disposition": "CONSISTENT",
+   "note": "Every verbal (7:79:9:2, 7:93:9:2, 9:91:16:1 Form I; 11:34:7:1, 7:62:4:2 Form IV) and every nominal participle/masdar (7:68:6:1, 12:11:11:2, 28:12:16:1, 28:20:18:2, 7:21:5:2, 7:79:14:2, 11:34:3:1) construes its target through directional لِ (lakum/lahu/laka/lakumā/li-llāh), never a direct accusative patient. Form I vs Form IV shows no semantic contrast (Nuh's anSaḥu lakum 7:62 = Salih's naSaḥtu lakum 7:79 in identical messenger frames), and masdar nuSḥ names the same act as Form IV in one breath (11:34), so morphology does not partition sense here.",
+   "coverage_cluster_id": "C1_benefactive_directed_goodfaith",
+   "candidate_semantic_interpretation": "Genuine good-faith directed toward the good of / what is due to a party (marked by benefactive لِ) — realized as sincere counsel, beneficial warning, devoted caretaking, or loyal devotion; names the agent's stance, not the outcome or its acceptance.",
+   "cluster_supporting_evidence": "Distinctively separated from balāgh (7:62 «أُبَلِّغُكُمْ ... وَأَنصَحُ لَكُمْ»; 7:79, 7:93) and from amānah (7:68 «نَاصِحٌ أَمِينٌ», two listed attributes). Non-verbal caretaking (28:12 household nursing infant Musa) and Godward fidelity (9:91 «نَصَحُوا۟ لِلَّهِ») falsify the 'advice-content' gloss while remaining within directed good-faith.",
+   "counterevidence": [
+    "7:21:5:2",
+    "12:11:11:2",
+    "9:91:16:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Every verbal (7:79:9:2, 7:93:9:2, 9:91:16:1 Form I; 11:34:7:1, 7:62:4:2 Form IV) and every nominal participle/masdar (7:68:6:1, 12:11:11:2, 28:12:16:1, 28:20:18:2, 7:21:5:2, 7:79:14:2, 11:34:3:1) construes its target through directional لِ (lakum/lahu/laka/lakumā/li-llāh), never a direct accusative patient. Form I vs Form IV shows no semantic contrast (Nuh's anSaḥu lakum 7:62 = Salih's naSaḥtu lakum 7:79 in identical messenger frames), and masdar nuSḥ names the same act as Form IV in one breath (11:34), so morphology does not partition sense here.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:79",
+     "verse_text": "فَتَوَلَّىٰ عَنْهُمْ وَقَالَ يَٰقَوْمِ لَقَدْ أَبْلَغْتُكُمْ رِسَالَةَ رَبِّى وَنَصَحْتُ لَكُمْ وَلَٰكِن لَّا تُحِبُّونَ ٱلنَّٰصِحِينَ"
+    }
+   ],
+   "root_arabic": "ن ص ح",
+   "root_buckwalter": "nSH",
+   "root_id": "nSH",
+   "artifact_name": "n_53__48_.json",
+   "verse_ref": "7:79",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "n~a`SiHiyna",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَتَوَلَّىٰ عَنْهُمْ وَقَالَ يَٰقَوْمِ لَقَدْ أَبْلَغْتُكُمْ رِسَالَةَ رَبِّى وَنَصَحْتُ لَكُمْ وَلَٰكِن لَّا تُحِبُّونَ ٱلنَّٰصِحِينَ"
+  },
+  {
+   "word_ref": "7:79:9:2",
+   "disposition": "CONSISTENT",
+   "note": "Every verbal (7:79:9:2, 7:93:9:2, 9:91:16:1 Form I; 11:34:7:1, 7:62:4:2 Form IV) and every nominal participle/masdar (7:68:6:1, 12:11:11:2, 28:12:16:1, 28:20:18:2, 7:21:5:2, 7:79:14:2, 11:34:3:1) construes its target through directional لِ (lakum/lahu/laka/lakumā/li-llāh), never a direct accusative patient. Form I vs Form IV shows no semantic contrast (Nuh's anSaḥu lakum 7:62 = Salih's naSaḥtu lakum 7:79 in identical messenger frames), and masdar nuSḥ names the same act as Form IV in one breath (11:34), so morphology does not partition sense here.",
+   "coverage_cluster_id": "C1_benefactive_directed_goodfaith",
+   "candidate_semantic_interpretation": "Genuine good-faith directed toward the good of / what is due to a party (marked by benefactive لِ) — realized as sincere counsel, beneficial warning, devoted caretaking, or loyal devotion; names the agent's stance, not the outcome or its acceptance.",
+   "cluster_supporting_evidence": "Distinctively separated from balāgh (7:62 «أُبَلِّغُكُمْ ... وَأَنصَحُ لَكُمْ»; 7:79, 7:93) and from amānah (7:68 «نَاصِحٌ أَمِينٌ», two listed attributes). Non-verbal caretaking (28:12 household nursing infant Musa) and Godward fidelity (9:91 «نَصَحُوا۟ لِلَّهِ») falsify the 'advice-content' gloss while remaining within directed good-faith.",
+   "counterevidence": [
+    "7:21:5:2",
+    "12:11:11:2",
+    "9:91:16:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Every verbal (7:79:9:2, 7:93:9:2, 9:91:16:1 Form I; 11:34:7:1, 7:62:4:2 Form IV) and every nominal participle/masdar (7:68:6:1, 12:11:11:2, 28:12:16:1, 28:20:18:2, 7:21:5:2, 7:79:14:2, 11:34:3:1) construes its target through directional لِ (lakum/lahu/laka/lakumā/li-llāh), never a direct accusative patient. Form I vs Form IV shows no semantic contrast (Nuh's anSaḥu lakum 7:62 = Salih's naSaḥtu lakum 7:79 in identical messenger frames), and masdar nuSḥ names the same act as Form IV in one breath (11:34), so morphology does not partition sense here.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:79",
+     "verse_text": "فَتَوَلَّىٰ عَنْهُمْ وَقَالَ يَٰقَوْمِ لَقَدْ أَبْلَغْتُكُمْ رِسَالَةَ رَبِّى وَنَصَحْتُ لَكُمْ وَلَٰكِن لَّا تُحِبُّونَ ٱلنَّٰصِحِينَ"
+    }
+   ],
+   "root_arabic": "ن ص ح",
+   "root_buckwalter": "nSH",
+   "root_id": "nSH",
+   "artifact_name": "n_53__48_.json",
+   "verse_ref": "7:79",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "naSaHo",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَتَوَلَّىٰ عَنْهُمْ وَقَالَ يَٰقَوْمِ لَقَدْ أَبْلَغْتُكُمْ رِسَالَةَ رَبِّى وَنَصَحْتُ لَكُمْ وَلَٰكِن لَّا تُحِبُّونَ ٱلنَّٰصِحِينَ"
+  },
+  {
+   "word_ref": "7:93:9:2",
+   "disposition": "CONSISTENT",
+   "note": "Every verbal (7:79:9:2, 7:93:9:2, 9:91:16:1 Form I; 11:34:7:1, 7:62:4:2 Form IV) and every nominal participle/masdar (7:68:6:1, 12:11:11:2, 28:12:16:1, 28:20:18:2, 7:21:5:2, 7:79:14:2, 11:34:3:1) construes its target through directional لِ (lakum/lahu/laka/lakumā/li-llāh), never a direct accusative patient. Form I vs Form IV shows no semantic contrast (Nuh's anSaḥu lakum 7:62 = Salih's naSaḥtu lakum 7:79 in identical messenger frames), and masdar nuSḥ names the same act as Form IV in one breath (11:34), so morphology does not partition sense here.",
+   "coverage_cluster_id": "C1_benefactive_directed_goodfaith",
+   "candidate_semantic_interpretation": "Genuine good-faith directed toward the good of / what is due to a party (marked by benefactive لِ) — realized as sincere counsel, beneficial warning, devoted caretaking, or loyal devotion; names the agent's stance, not the outcome or its acceptance.",
+   "cluster_supporting_evidence": "Distinctively separated from balāgh (7:62 «أُبَلِّغُكُمْ ... وَأَنصَحُ لَكُمْ»; 7:79, 7:93) and from amānah (7:68 «نَاصِحٌ أَمِينٌ», two listed attributes). Non-verbal caretaking (28:12 household nursing infant Musa) and Godward fidelity (9:91 «نَصَحُوا۟ لِلَّهِ») falsify the 'advice-content' gloss while remaining within directed good-faith.",
+   "counterevidence": [
+    "7:21:5:2",
+    "12:11:11:2",
+    "9:91:16:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Every verbal (7:79:9:2, 7:93:9:2, 9:91:16:1 Form I; 11:34:7:1, 7:62:4:2 Form IV) and every nominal participle/masdar (7:68:6:1, 12:11:11:2, 28:12:16:1, 28:20:18:2, 7:21:5:2, 7:79:14:2, 11:34:3:1) construes its target through directional لِ (lakum/lahu/laka/lakumā/li-llāh), never a direct accusative patient. Form I vs Form IV shows no semantic contrast (Nuh's anSaḥu lakum 7:62 = Salih's naSaḥtu lakum 7:79 in identical messenger frames), and masdar nuSḥ names the same act as Form IV in one breath (11:34), so morphology does not partition sense here.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:93",
+     "verse_text": "فَتَوَلَّىٰ عَنْهُمْ وَقَالَ يَٰقَوْمِ لَقَدْ أَبْلَغْتُكُمْ رِسَٰلَٰتِ رَبِّى وَنَصَحْتُ لَكُمْ فَكَيْفَ ءَاسَىٰ عَلَىٰ قَوْمٍ كَٰفِرِينَ"
+    }
+   ],
+   "root_arabic": "ن ص ح",
+   "root_buckwalter": "nSH",
+   "root_id": "nSH",
+   "artifact_name": "n_53__48_.json",
+   "verse_ref": "7:93",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "naSaHo",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَتَوَلَّىٰ عَنْهُمْ وَقَالَ يَٰقَوْمِ لَقَدْ أَبْلَغْتُكُمْ رِسَٰلَٰتِ رَبِّى وَنَصَحْتُ لَكُمْ فَكَيْفَ ءَاسَىٰ عَلَىٰ قَوْمٍ كَٰفِرِينَ"
+  },
+  {
+   "word_ref": "9:91:16:1",
+   "disposition": "CONSISTENT",
+   "note": "Structural atypicality: «نَصَحُوا۟ لِلَّهِ وَرَسُولِهِ» directs nSH at God, who cannot be 'benefited/advised', forcing the nucleus up to 'loyal good-faith toward what is due to X'; this is the internal hinge bridging human-directed counsel/care with the Godward genuineness of naSūḥ (66:8).",
+   "coverage_cluster_id": "C1_benefactive_directed_goodfaith",
+   "candidate_semantic_interpretation": "Genuine good-faith directed toward the good of / what is due to a party (marked by benefactive لِ) — realized as sincere counsel, beneficial warning, devoted caretaking, or loyal devotion; names the agent's stance, not the outcome or its acceptance.",
+   "cluster_supporting_evidence": "Distinctively separated from balāgh (7:62 «أُبَلِّغُكُمْ ... وَأَنصَحُ لَكُمْ»; 7:79, 7:93) and from amānah (7:68 «نَاصِحٌ أَمِينٌ», two listed attributes). Non-verbal caretaking (28:12 household nursing infant Musa) and Godward fidelity (9:91 «نَصَحُوا۟ لِلَّهِ») falsify the 'advice-content' gloss while remaining within directed good-faith.",
+   "counterevidence": [
+    "7:21:5:2",
+    "12:11:11:2",
+    "9:91:16:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Every verbal (7:79:9:2, 7:93:9:2, 9:91:16:1 Form I; 11:34:7:1, 7:62:4:2 Form IV) and every nominal participle/masdar (7:68:6:1, 12:11:11:2, 28:12:16:1, 28:20:18:2, 7:21:5:2, 7:79:14:2, 11:34:3:1) construes its target through directional لِ (lakum/lahu/laka/lakumā/li-llāh), never a direct accusative patient. Form I vs Form IV shows no semantic contrast (Nuh's anSaḥu lakum 7:62 = Salih's naSaḥtu lakum 7:79 in identical messenger frames), and masdar nuSḥ names the same act as Form IV in one breath (11:34), so morphology does not partition sense here.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": "Resolved by pitching the nucleus at 'good-faith toward what is due to X'; welfare-seeking is the human-directed specialization, loyal devotion the Godward one. Retains the benefactive لِ signature, so it stays inside C1 and serves as the bridge to 66:8 rather than breaking the core.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "9:91:16:1",
+     "preliminary_disposition": "RESISTANT",
+     "preliminary_note": "li-llāh object seemed to resist a 'seek recipient's welfare' reading (one cannot benefit God).",
+     "final_disposition": "CONSISTENT",
+     "reconciliation_rationale": "Resolved by pitching the nucleus at 'good-faith toward what is due to X'; welfare-seeking is the human-directed specialization, loyal devotion the Godward one. Retains the benefactive لِ signature, so it stays inside C1 and serves as the bridge to 66:8 rather than breaking the core.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "9:91",
+     "verse_text": "لَّيْسَ عَلَى ٱلضُّعَفَآءِ وَلَا عَلَى ٱلْمَرْضَىٰ وَلَا عَلَى ٱلَّذِينَ لَا يَجِدُونَ مَا يُنفِقُونَ حَرَجٌ إِذَا نَصَحُوا۟ لِلَّهِ وَرَسُولِهِۦ مَا عَلَى ٱلْمُحْسِنِينَ مِن سَبِيلٍ وَٱللَّهُ غَفُورٌ رَّحِيمٌ"
+    }
+   ],
+   "root_arabic": "ن ص ح",
+   "root_buckwalter": "nSH",
+   "root_id": "nSH",
+   "artifact_name": "n_53__48_.json",
+   "verse_ref": "9:91",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "naSaHu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لَّيْسَ عَلَى ٱلضُّعَفَآءِ وَلَا عَلَى ٱلْمَرْضَىٰ وَلَا عَلَى ٱلَّذِينَ لَا يَجِدُونَ مَا يُنفِقُونَ حَرَجٌ إِذَا نَصَحُوا۟ لِلَّهِ وَرَسُولِهِۦ مَا عَلَى ٱلْمُحْسِنِينَ مِن سَبِيلٍ وَٱللَّهُ غَفُورٌ رَّحِيمٌ"
+  }
+ ],
+ "resistant_deep_analysis": [
+  {
+   "word_ref": "66:8:8:1",
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "66:8:8:1 «تَوْبَةً نَّصُوحًا» is the sole ADJ, predicated of an act with no لِ and no recipient. It cannot host the benefactive-directedness core and is bridged to C1 only inferentially via the shared genuineness component (and 9:91's Godward good-faith → repentance toward God). It is a lexicalized adjectival sub-class distinct from the verb/participle/masdar family.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "No verse forces the bridge from directed good-faith to bare genuineness-of-an-act; as the sole ADJ with no beneficiary it is a lexicalized sub-class and is recorded as the resistant seam that caps grading at MODERATE.",
+   "deep_analysis": true
+  }
+ ],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Three independent lenses (A, B, C) converged on the same partition, the same resistant seam (66:8), and the same MODERATE/REPRESENTATIVE grade.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "66:8:8:1"
+ ],
+ "unreconciled_count": 1,
+ "resistant_occurrences": [
+  "66:8:8:1"
+ ],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "nSH = genuine, unfeigned good-faith orientation directed toward the proper good of / what is due to a party — surfacing (for human recipients) as sincere counsel, beneficial warning, or devoted caretaking, and (toward God) as loyal sincere devotion; by intensive-adjectival extension, the wholehearted genuineness of a (Godward) directed act.",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "DERIVATIONAL_FAMILY",
+ "layer_attribution": {
+  "occurrence_evidence": "13 confirmed occurrences: 5 V (Form I naSaḥa 7:79:9:2, 7:93:9:2, 9:91:16:1; Form IV anSaḥa 11:34:7:1, 7:62:4:2), 7 N (participles nāSiḥ/nāSiḥūn/nāSiḥīn 7:68:6:1, 12:11:11:2, 28:12:16:1, 28:20:18:2, 7:21:5:2, 7:79:14:2 + masdar nuSḥ 11:34:3:1), 1 ADJ (naSūḥ 66:8:8:1). qac_verb_form is null throughout.",
+  "derivation": "One bridged derivational family: verb (I/IV, semantically non-contrastive) + active participle + masdar all share the benefactive-directed good-faith nucleus; the faʿūl intensive adjective extends the genuineness component to an act. Bridge hinge: 9:91 (Godward good-faith).",
+  "lexical_class": "C2 naSūḥ (66:8) is a resistant lexicalized adjectival sub-class (faʿūl intensive on تَوْبَة) distinct from the C1 verb/participle/masdar family; its resistance caps scope at REPRESENTATIVE and strength at MODERATE.",
+  "contextual_relation": "Narrative/legal contexts (prophetic self-descriptions, household caretaking, warning to Moses, the tawba injunction, the exemption clause) supply the specific manifestations (counsel, warning, nursing, loyalty, repentance) — these are contextual realizations and must NOT be elevated into the root claim, which stays at 'genuine directed good-faith'.",
+  "reconciliation": "9:91 reconciled from preliminary RESISTANT to CONSISTENT by abstracting the nucleus; 66:8 reconciled from candidate CONSISTENT to final RESISTANT for lack of a text-forced bridge. Deception cases (7:21, 12:11) reconciled as CONSISTENT adversarial boundaries.",
+  "unresolved_resistance": "66:8:8:1 (naSūḥ) persists as the resistant seam — genuine but bridged only by abstraction to the intensive genuineness of a Godward act; recorded, not forced into the interpersonal core."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "66:8:8:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "Sole ADJ (faʿūl intensive), sole non-لِ, sole occurrence with no directed party; nSH qualifies an act (repentance) not a recipient-directed relation, and is accommodated only by abstracting to the bare genuineness of a Godward act.",
+   "evidence_basis": {
+    "kind": "MORPHOSYNTACTIC_ISOLATION",
+    "statement": "66:8:8:1 «تَوْبَةً نَّصُوحًا» — the sole ADJ (faʿūl intensive), sole non-لِ, sole occurrence with no directed party: nSH qualifies an act (repentance), not a recipient-directed relation."
+   }
+  },
+  {
+   "word_ref": "7:21:5:2",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "The participle is sworn falsely by Iblis, showing nSH names a predicated good-faith stance whose truth is not self-guaranteed.",
+   "evidence_basis": {
+    "kind": "FALSE_PREDICATION",
+    "statement": "Iblis swears «إِنِّى لَكُمَا لَمِنَ ٱلنَّٰصِحِينَ» (reinforced by qāsama, an oath) while steering to the tree — the term denotes genuine directed good-faith, which is exactly why it is worth counterfeiting; the falsehood attaches to the speaker's claim, not to the lexeme."
+   }
+  },
+  {
+   "word_ref": "12:11:11:2",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "Yusuf's brothers claim nāSiḥūn status while plotting harm — same morphology as genuine cases; falsity is contextual, not lexical.",
+   "evidence_basis": {
+    "kind": "FALSE_PREDICATION",
+    "statement": "Yusuf's brothers assert «وَإِنَّا لَهُۥ لَنَٰصِحُونَ» while plotting the well — identical morphology to the genuine nāSiḥūn of 28:12; the predicated good-faith stance is asserted, its truth context-determined, not encoded."
+   }
+  },
+  {
+   "word_ref": "9:91:16:1",
+   "role": "STRUCTURAL_ATYPICALITY",
+   "reason": "Directs nSH at God, forcing the nucleus above 'benefit-seeking' to 'loyal good-faith toward what is due to X'; serves as the bridge to the naSūḥ sub-class.",
+   "evidence_basis": {
+    "kind": "ATYPICAL_TARGET",
+    "statement": "«نَصَحُوا۟ لِلَّهِ وَرَسُولِهِ» directs nSH at God, who cannot be 'benefited/advised', forcing the nucleus up to 'loyal good-faith toward what is due to X'; this is the internal hinge bridging human-directed counsel/care with the Godward genuineness of naSūḥ (66:8)."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "Each hard case is grounded in a specific packet occurrence's morphology/syntax: the RESISTANT_SEAM (66:8) is the sole ADJ outside the لِ pattern; the two ADVERSARIAL_BOUNDARY cases (7:21, 12:11) are false predications of the participle; the STRUCTURAL_ATYPICALITY (9:91) is the God-directed target. Statements are mirrored in strongest_counterexample and the occurrence/cluster notes."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A Quranic occurrence of nSH that construes its object as a direct accusative patient (act performed ON someone, e.g. correcting/informing them) rather than through benefactive لِ / directed orientation, OR an occurrence where nSH clearly means neutral information-transfer coextensive with balāgh rather than an accompanying good-faith stance.",
+  "search_location": "All 5 verbal forms (7:79:9:2, 7:93:9:2, 9:91:16:1, 11:34:7:1, 7:62:4:2) for accusative-patient construal, and the balāgh-coordinated verses (7:62, 7:79, 7:93) to test whether nSH collapses into message-conveyance.",
+  "verification_method": "Re-read qac_surface_form and verse_text to confirm the complement marker (لِ vs accusative) and whether nSH is coordinated with (distinct from) or appositive to a balāgh verb; check that no occurrence makes nSH the content delivered rather than the stance accompanying delivery.",
+  "confounder_control": "Exclude context-supplied meaning: the messenger-narrative setting supplies 'preaching', but the root claim must rest on the لِ construal and the explicit balāgh-vs-naSaḥa coordination, not on the surrounding prophetic frame; do not let high frequency of the counsel-manifestation be read as the lexical core.",
+  "failure_consequence": "If accusative-patient or pure information-transfer construal is confirmed, the benefactive-directedness core is falsified, the nucleus collapses toward generic 'advise/inform', and grading drops to WEAK or the account is REJECTED."
+ },
+ "falsification_status": "NOT_RUN",
+ "reopen_conditions": [
+  "If a future occurrence or re-reading shows naSūḥ (66:8) construing a directed party (لِ/ilā a beneficiary) rather than qualifying an act, the C2 sub-class would merge into the C1 nucleus and grading could rise toward STRONG.",
+  "If an occurrence establishes a genuine Form I vs Form IV (naSaḥa vs anSaḥa) semantic contrast — currently absent (cf. 7:62 anSaḥu lakum vs 7:79 naSaḥtu lakum in identical frames) — the single-nucleus derivational-family reading must be re-partitioned.",
+  "If 9:91 (naSaḥū li-llāh) is shown NOT to bridge the human-directed and Godward-genuineness poles, the two-pole polysemy competitor strengthens and the result should be reconsidered as UNRESOLVED/multi-class."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "7:62:4:2",
+  "7:68:6:1",
+  "7:79:9:2",
+  "7:79:14:2",
+  "7:93:9:2",
+  "11:34:3:1",
+  "11:34:7:1",
+  "28:12:16:1",
+  "28:20:18:2",
+  "9:91:16:1"
+ ],
+ "counterevidence_refs": [
+  "66:8:8:1",
+  "7:21:5:2",
+  "12:11:11:2"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "nSH_falsify_v1",
+  "verdict": "CORE_HOLDS_WITH_RECORDED_RESISTANCE",
+  "falsifiable": true,
+  "distinctiveness_ok": false,
+  "failing_occurrences": [
+   "66:8:8:1"
+  ],
+  "tested_material_clusters": [
+   "C1_benefactive_directed_goodfaith",
+   "C2_intensive_adj_naSuuh"
+  ],
+  "status_rationale": "The interpersonal core (C1, 12/13) survives adversarial pressure — the two false-claim cases confirm rather than break it, and the balāgh/amīn contrasts hold — but the intensive ADJ naSūḥ (66:8) resists the benefactive-directedness core and requires abstraction, so a full adversarial refutation returning SUPPORTED with distinctiveness_ok=true and no failing occurrences cannot be claimed. Per protocol, resistance-with-holding-core is recorded as NOT_RUN, not PASSED."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "nSH: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "nSH: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "nSH: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "nSH: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "nSH: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "nSH: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "nSH: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "nSH: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

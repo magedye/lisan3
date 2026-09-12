@@ -1,0 +1,457 @@
+{
+ "root_arabic": "ب ر ح",
+ "root_buckwalter": "brH",
+ "root_id": "brH",
+ "artifact_name": "br_48_.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave4",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "brH = to depart from / leave off / discontinue a maintained position or activity. It surfaces spatially as a full transitive verb 'leave (a place)' (12:80) and aspectually as a grammaticalized continuance-verb (sister of kana) 'cease / leave off (a state or ongoing act)' (18:60, 20:91). In the attested corpus every token is negated and closed by a hatta terminus, so the familiar 'remain steadfast until X' reading is a compositional product of the negator operating on 'depart/cease', not a positive contribution of the root itself.",
+ "internal_discovery": {
+  "candidate_root_contribution": "brH = to depart from / leave off / discontinue a maintained position or activity. It surfaces spatially as a full transitive verb 'leave (a place)' (12:80) and aspectually as a grammaticalized continuance-verb (sister of kana) 'cease / leave off (a state or ongoing act)' (18:60, 20:91). In the attested corpus every token is negated and closed by a hatta terminus, so the familiar 'remain steadfast until X' reading is a compositional product of the negator operating on 'depart/cease', not a positive contribution of the root itself.",
+  "plain_explanation": "All three occurrences of b-r-H are first-person imperfect verbs, all negated (lan/la), and all followed by a hatta 'until' clause naming an end event. The root itself means 'to depart / leave off / stop doing'. Because it is always negated here, the whole phrase means 'I/we will not leave off ... until ...', i.e. a vow to stay put or keep going until a boundary. In 12:80 it takes a concrete place-object ('the land'), so it is a plain motion verb 'depart'; in 18:60 and 20:91 it works like a helper verb of continuance ('will not cease'), with 20:91 attaching a state ('being devoted', 'akifin') rather than a place. The persistence sense belongs to the negation, not to the root.",
+  "layer_separation_note": "brH does NOT itself mean 'remain / persist / stay' — that reading appears only under negation and is contributed by la/lan. It does NOT entail physical motion (20:91's 'akifin are stationary and brH governs a devotional state). It does NOT require a spatial object (18:60 is complement-less; 20:91's complement is a state). It is NOT the terminal/arrival event — the hatta verb (permit/reach/return) carries the terminus; brH marks the durative non-cessation before it. It is NOT the maintained state itself — in 20:91 'akafa (root 'kf) supplies the devotional staying while brH supplies its (non-)cessation, proving brH is a departure/cessation operator, not a stay-verb. Its affirmative sense is UNATTESTED: no positive token exists, so the positive nucleus is inferred as the polar complement of the attested negated form, not directly observed.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 1,
+   "inconsistent_refs": [
+    "18:60:6:1",
+    "20:91:3:1"
+   ]
+  },
+  "strongest_counterexample": "20:91 نَّبْرَحَ governs the stative predicate عَٰكِفِينَ (a posture/devotional condition, not a place) while the devotees physically stay put, so برح here cannot mean locative departure and forces the abstract 'leave off/cease a maintained state' nucleus; conversely 12:80 أَبْرَحَ ٱلْأَرْضَ takes a concrete accusative place-object that a bare aspectual 'not-cease' auxiliary cannot host — the two poles mutually resist, and neither reduces to the other without importing the classical 'depart-place / cease-state' bridge, which is not demonstrated Quran-internally (no affirmative and no shared-construction control token exists).",
+  "strongest_competitor": "A two-lexeme splitting account: (a) a full motion verb baraHa 'depart a location' (12:80), and (b) a grammaticalized continuance-auxiliary (ma/la bariHa) 'still / not cease' behaving as a sister of kana (18:60, 20:91) — treated as distinct lexicalized functions sharing only a consonantal root. It is defensible on syntax (transitive full verb vs. copular auxiliary governing a predicate) and cannot be refuted Quran-internally because there is no affirmative or shared-construction token to prove one nucleus. It loses to the unified account only on parsimony and on the small, complement-mediated semantic distance ('quit a place' <-> 'not quit a posture', bridged by 20:91's postural complement), which is why unity is PREFERRED but capped at MODERATE rather than STRONG.",
+  "competing_hypothesis": "A two-lexeme splitting account: (a) a full motion verb baraHa 'depart a location' (12:80), and (b) a grammaticalized continuance-auxiliary (ma/la bariHa) 'still / not cease' behaving as a sister of kana (18:60, 20:91) — treated as distinct lexicalized functions sharing only a consonantal root. It is defensible on syntax (transitive full verb vs. copular auxiliary governing a predicate) and cannot be refuted Quran-internally because there is no affirmative or shared-construction token to prove one nucleus. It loses to the unified account only on parsimony and on the small, complement-mediated semantic distance ('quit a place' <-> 'not quit a posture', bridged by 20:91's postural complement), which is why unity is PREFERRED but capped at MODERATE rather than STRONG.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All three lenses converge: a single narrow nucleus 'depart / leave off / discontinue' fits all three tokens under the uniform negated + hatta frame, so the result is PREFERRED, not UNRESOLVED — a real Quran-internal schema exists. But STRONG is disallowed and scope is capped at REPRESENTATIVE / LEXICALIZED_CLASS for three reasons per contract: (1) a coherent lexicalized sub-class — the continuance-verb / kana-sister construction (18:60, 20:91) — is grammatically distinct from the full transitive departure verb (12:80), i.e. a resistant lexicalized class; (2) the evidence is thin and frame-homogeneous (n=3, 100% negated, 100% first-person, 100% hatta-framed), leaving cross-context distinctiveness untested; (3) the root is entirely negation-locked with zero affirmative attestation, so the positive nucleus is inferential and the cross-class bridge is not distinctively established against the splitting account. Hence MODERATE / REPRESENTATIVE / PREFERRED.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "brH_lexical_transitive_departure",
+     "where": {
+      "qac_pos": [
+       "V"
+      ],
+      "qac_verb_form": [
+       null
+      ],
+      "forms": [
+       "V"
+      ],
+      "word_refs": [
+       "12:80:25:1"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Full lexical transitive verb: depart / leave (a concrete place). 12:80 فَلَنْ أَبْرَحَ ٱلْأَرْضَ حَتَّىٰ يَأْذَنَ لِىٓ أَبِىٓ — أَبْرَحَ governs the overt accusative place-object ٱلْأَرْضَ; negated by لن (nasb, fatha). This is the spatial base of the nucleus.",
+     "classification_rationale": "The overt concrete accusative object ٱلْأَرْضَ fixes a transitive motion reading 'leave a place'; the negator لن composes as 'will not leave', and hatta names the release event (father's permission / God's judgment). This token cleanly instantiates the departure core.",
+     "supporting_evidence_note": "Sole token with a concrete place-object; anchors the spatial 'depart' pole of the nucleus and is the strongest positive support for a departure (not merely aspectual) semantics.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "brH_aspectual_continuance_verb",
+     "where": {
+      "qac_pos": [
+       "V"
+      ],
+      "qac_verb_form": [
+       null
+      ],
+      "forms": [
+       "V"
+      ],
+      "word_refs": [
+       "18:60:6:1",
+       "20:91:3:1"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "Grammaticalized continuance-verb (sister of kana): (not) cease / leave off a maintained activity or state, with no locative departure. 20:91 لَن نَّبْرَحَ عَلَيْهِ عَٰكِفِينَ — governs the state-predicate عَٰكِفِينَ; 18:60 لَآ أَبْرَحُ — absolute/objectless 'I will not cease [going]'.",
+     "classification_rationale": "This is a coherent lexicalized aspectual sub-class distinct from the transitive departure verb of 12:80: 20:91 نَّبْرَحَ governs the stative predicate عَٰكِفِينَ (a posture/devotional condition, not a place) while the devotees physically stay put, so برح here cannot mean locative departure and forces the abstract 'leave off/cease a maintained state' nucleus. 18:60 لَآ أَبْرَحُ has no complement at all, fitting neither the transitive place-object reading (12:80) nor a stated predicate, so it only supports the abstracted aspectual nucleus and cannot corroborate the concrete-departure sense. Both fit the abstract nucleus but resist reduction to concrete departure, and the bridge to the spatial pole is not proven Quran-internally — this lexicalized class caps strength at MODERATE.",
+     "supporting_evidence_note": "Both tokens support the abstract 'leave off / discontinue' nucleus and share the negated + hatta schema with 12:80; 20:91's postural complement عَٰكِفِينَ keeps the aspectual use tethered to the departure/cessation core, which is what permits (bridged, not proven) unity rather than a full split.",
+     "counterevidence": [
+      "20:91 نَّبْرَحَ governs the stative predicate عَٰكِفِينَ (a posture/devotional condition, not a place) while the devotees physically stay put, so برح here cannot mean locative departure and forces the abstract 'leave off/cease a maintained state' nucleus.",
+      "18:60 لَآ أَبْرَحُ has no complement at all, fitting neither the transitive place-object reading (12:80) nor a stated predicate, so it only supports the abstracted aspectual nucleus and cannot corroborate the concrete-departure sense."
+     ]
+    }
+   ],
+   "reconciliation": [
+    {
+     "word_ref": "20:91:3:1",
+     "final": "RESISTANT",
+     "rationale": "The stative predicate عَٰكِفِينَ with stationary subjects rules out locative departure and marks this token as part of a distinct lexicalized continuance-verb class; it fits the abstract nucleus but resists the concrete pole, so it is recorded as resistant seam capping strength at MODERATE."
+    },
+    {
+     "word_ref": "18:60:6:1",
+     "final": "RESISTANT",
+     "rationale": "With no complement it can neither confirm the transitive-departure face nor a stated predicate; it only fits the abstracted aspectual nucleus, so it is grouped with 20:91 in the lexicalized continuance-verb class and flagged as resistant seam."
+    }
+   ]
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "brH",
+  "verdict": "CORE_HOLDS_WITH_RECORDED_RESISTANCE",
+  "failing_occurrences": [],
+  "distinctiveness_ok": false,
+  "falsifiable": true,
+  "notes": "The 'depart/leave off/discontinue' nucleus survives all three tokens (no occurrence breaks it), so it is not FAILED. But a formal PASSED falsification is not warranted: distinctiveness is not cleanly established because the root is 100% negation-locked with no affirmative control and a coherent lexicalized continuance-verb sub-class (18:60, 20:91) resists reduction to the transitive departure of 12:80. Per contract, resistant sub-class present but core intact => NOT_RUN with the resistant seam recorded."
+ },
+ "coverage_validation": {
+  "root": "brH",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [
+   "18:60:6:1",
+   "20:91:3:1"
+  ],
+  "unresolved_visible": [
+   "18:60:6:1",
+   "20:91:3:1"
+  ]
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "12:80:25:1",
+   "disposition": "CONSISTENT",
+   "note": "The overt concrete accusative object ٱلْأَرْضَ fixes a transitive motion reading 'leave a place'; the negator لن composes as 'will not leave', and hatta names the release event (father's permission / God's judgment). This token cleanly instantiates the departure core.",
+   "coverage_cluster_id": "brH_lexical_transitive_departure",
+   "candidate_semantic_interpretation": "Full lexical transitive verb: depart / leave (a concrete place). 12:80 فَلَنْ أَبْرَحَ ٱلْأَرْضَ حَتَّىٰ يَأْذَنَ لِىٓ أَبِىٓ — أَبْرَحَ governs the overt accusative place-object ٱلْأَرْضَ; negated by لن (nasb, fatha). This is the spatial base of the nucleus.",
+   "cluster_supporting_evidence": "Sole token with a concrete place-object; anchors the spatial 'depart' pole of the nucleus and is the strongest positive support for a departure (not merely aspectual) semantics.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The overt concrete accusative object ٱلْأَرْضَ fixes a transitive motion reading 'leave a place'; the negator لن composes as 'will not leave', and hatta names the release event (father's permission / God's judgment). This token cleanly instantiates the departure core.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "12:80",
+     "verse_text": "فَلَمَّا ٱسْتَيْـَٔسُوا۟ مِنْهُ خَلَصُوا۟ نَجِيًّا قَالَ كَبِيرُهُمْ أَلَمْ تَعْلَمُوٓا۟ أَنَّ أَبَاكُمْ قَدْ أَخَذَ عَلَيْكُم مَّوْثِقًا مِّنَ ٱللَّهِ وَمِن قَبْلُ مَا فَرَّطتُمْ فِى يُوسُفَ فَلَنْ أَبْرَحَ ٱلْأَرْضَ حَتَّىٰ يَأْذَنَ لِىٓ أَبِىٓ أَوْ يَحْكُمَ ٱللَّهُ لِى وَهُوَ خَيْرُ ٱلْحَٰكِمِينَ"
+    }
+   ],
+   "root_arabic": "ب ر ح",
+   "root_buckwalter": "brH",
+   "root_id": "brH",
+   "artifact_name": "br_48_.json",
+   "verse_ref": "12:80",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">aboraHa",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَلَمَّا ٱسْتَيْـَٔسُوا۟ مِنْهُ خَلَصُوا۟ نَجِيًّا قَالَ كَبِيرُهُمْ أَلَمْ تَعْلَمُوٓا۟ أَنَّ أَبَاكُمْ قَدْ أَخَذَ عَلَيْكُم مَّوْثِقًا مِّنَ ٱللَّهِ وَمِن قَبْلُ مَا فَرَّطتُمْ فِى يُوسُفَ فَلَنْ أَبْرَحَ ٱلْأَرْضَ حَتَّىٰ يَأْذَنَ لِىٓ أَبِىٓ أَوْ يَحْكُمَ ٱللَّهُ لِى وَهُوَ خَيْرُ ٱلْحَٰكِمِينَ"
+  },
+  {
+   "word_ref": "18:60:6:1",
+   "disposition": "RESISTANT",
+   "note": "Assigned to the lexicalized aspectual continuance-verb sub-class; its complement-lessness constrains how concrete the nucleus may be and prevents it from confirming the spatial pole.",
+   "coverage_cluster_id": "brH_aspectual_continuance_verb",
+   "candidate_semantic_interpretation": "Grammaticalized continuance-verb (sister of kana): (not) cease / leave off a maintained activity or state, with no locative departure. 20:91 لَن نَّبْرَحَ عَلَيْهِ عَٰكِفِينَ — governs the state-predicate عَٰكِفِينَ; 18:60 لَآ أَبْرَحُ — absolute/objectless 'I will not cease [going]'.",
+   "cluster_supporting_evidence": "Both tokens support the abstract 'leave off / discontinue' nucleus and share the negated + hatta schema with 12:80; 20:91's postural complement عَٰكِفِينَ keeps the aspectual use tethered to the departure/cessation core, which is what permits (bridged, not proven) unity rather than a full split.",
+   "counterevidence": [
+    "20:91 نَّبْرَحَ governs the stative predicate عَٰكِفِينَ (a posture/devotional condition, not a place) while the devotees physically stay put, so برح here cannot mean locative departure and forces the abstract 'leave off/cease a maintained state' nucleus.",
+    "18:60 لَآ أَبْرَحُ has no complement at all, fitting neither the transitive place-object reading (12:80) nor a stated predicate, so it only supports the abstracted aspectual nucleus and cannot corroborate the concrete-departure sense."
+   ],
+   "preliminary_disposition": "STRUCTURAL_UNCERTAINTY",
+   "preliminary_note": "Objectless/elliptical token sitting between the transitive and continuance constructions.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "With no complement it can neither confirm the transitive-departure face nor a stated predicate; it only fits the abstracted aspectual nucleus, so it is grouped with 20:91 in the lexicalized continuance-verb class and flagged as resistant seam.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "18:60:6:1",
+     "preliminary_disposition": "STRUCTURAL_UNCERTAINTY",
+     "preliminary_note": "Ambiguous, objectless token not cleanly assignable to either construction.",
+     "final_disposition": "RESISTANT",
+     "reconciliation_rationale": "With no complement it can neither confirm the transitive-departure face nor a stated predicate; it only fits the abstracted aspectual nucleus, so it is grouped with 20:91 in the lexicalized continuance-verb class and flagged as resistant seam.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [
+    "18:60 لَآ أَبْرَحُ has no complement at all, fitting neither the transitive place-object reading (12:80) nor a stated predicate, so it only supports the abstracted aspectual nucleus and cannot corroborate the concrete-departure sense."
+   ],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "18:60",
+     "verse_text": "وَإِذْ قَالَ مُوسَىٰ لِفَتَىٰهُ لَآ أَبْرَحُ حَتَّىٰٓ أَبْلُغَ مَجْمَعَ ٱلْبَحْرَيْنِ أَوْ أَمْضِىَ حُقُبًا"
+    }
+   ],
+   "root_arabic": "ب ر ح",
+   "root_buckwalter": "brH",
+   "root_id": "brH",
+   "artifact_name": "br_48_.json",
+   "verse_ref": "18:60",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">aboraHu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِذْ قَالَ مُوسَىٰ لِفَتَىٰهُ لَآ أَبْرَحُ حَتَّىٰٓ أَبْلُغَ مَجْمَعَ ٱلْبَحْرَيْنِ أَوْ أَمْضِىَ حُقُبًا",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "20:91:3:1",
+   "disposition": "RESISTANT",
+   "note": "Assigned to the lexicalized aspectual continuance-verb sub-class; resists the locative-departure pole and is the strongest single counterexample to a purely spatial nucleus.",
+   "coverage_cluster_id": "brH_aspectual_continuance_verb",
+   "candidate_semantic_interpretation": "Grammaticalized continuance-verb (sister of kana): (not) cease / leave off a maintained activity or state, with no locative departure. 20:91 لَن نَّبْرَحَ عَلَيْهِ عَٰكِفِينَ — governs the state-predicate عَٰكِفِينَ; 18:60 لَآ أَبْرَحُ — absolute/objectless 'I will not cease [going]'.",
+   "cluster_supporting_evidence": "Both tokens support the abstract 'leave off / discontinue' nucleus and share the negated + hatta schema with 12:80; 20:91's postural complement عَٰكِفِينَ keeps the aspectual use tethered to the departure/cessation core, which is what permits (bridged, not proven) unity rather than a full split.",
+   "counterevidence": [
+    "20:91 نَّبْرَحَ governs the stative predicate عَٰكِفِينَ (a posture/devotional condition, not a place) while the devotees physically stay put, so برح here cannot mean locative departure and forces the abstract 'leave off/cease a maintained state' nucleus.",
+    "18:60 لَآ أَبْرَحُ has no complement at all, fitting neither the transitive place-object reading (12:80) nor a stated predicate, so it only supports the abstracted aspectual nucleus and cannot corroborate the concrete-departure sense."
+   ],
+   "preliminary_disposition": "STRUCTURAL_UNCERTAINTY",
+   "preliminary_note": "Initially read as a possible member of a single unified departure nucleus.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "The stative predicate عَٰكِفِينَ with stationary subjects rules out locative departure and marks this token as part of a distinct lexicalized continuance-verb class; it fits the abstract nucleus but resists the concrete pole, so it is recorded as resistant seam capping strength at MODERATE.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "20:91:3:1",
+     "preliminary_disposition": "STRUCTURAL_UNCERTAINTY",
+     "preliminary_note": "Considered for inclusion in one unbridged departure nucleus.",
+     "final_disposition": "RESISTANT",
+     "reconciliation_rationale": "The stative predicate عَٰكِفِينَ with stationary subjects rules out locative departure and marks this token as part of a distinct lexicalized continuance-verb class; it fits the abstract nucleus but resists the concrete pole, so it is recorded as resistant seam capping strength at MODERATE.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [
+    "20:91 نَّبْرَحَ governs the stative predicate عَٰكِفِينَ (a posture/devotional condition, not a place) while the devotees physically stay put, so برح here cannot mean locative departure and forces the abstract 'leave off/cease a maintained state' nucleus."
+   ],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "20:91",
+     "verse_text": "قَالُوا۟ لَن نَّبْرَحَ عَلَيْهِ عَٰكِفِينَ حَتَّىٰ يَرْجِعَ إِلَيْنَا مُوسَىٰ"
+    }
+   ],
+   "root_arabic": "ب ر ح",
+   "root_buckwalter": "brH",
+   "root_id": "brH",
+   "artifact_name": "br_48_.json",
+   "verse_ref": "20:91",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "n~aboraHa",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالُوا۟ لَن نَّبْرَحَ عَلَيْهِ عَٰكِفِينَ حَتَّىٰ يَرْجِعَ إِلَيْنَا مُوسَىٰ",
+   "deep_analysis": true
+  }
+ ],
+ "resistant_deep_analysis": [
+  {
+   "word_ref": "18:60:6:1",
+   "preliminary_disposition": "STRUCTURAL_UNCERTAINTY",
+   "preliminary_note": "Objectless/elliptical token sitting between the transitive and continuance constructions.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "With no complement it can neither confirm the transitive-departure face nor a stated predicate; it only fits the abstracted aspectual nucleus, so it is grouped with 20:91 in the lexicalized continuance-verb class and flagged as resistant seam.",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "20:91:3:1",
+   "preliminary_disposition": "STRUCTURAL_UNCERTAINTY",
+   "preliminary_note": "Initially read as a possible member of a single unified departure nucleus.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "The stative predicate عَٰكِفِينَ with stationary subjects rules out locative departure and marks this token as part of a distinct lexicalized continuance-verb class; it fits the abstract nucleus but resists the concrete pole, so it is recorded as resistant seam capping strength at MODERATE.",
+   "deep_analysis": true
+  }
+ ],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Three independent lenses (bottom-up A, nucleus B, adversary C) converged on the same nucleus, the same two-construction split, and the same MODERATE / REPRESENTATIVE grade; adversary C's splitting account was tested and could not be refuted Quran-internally, which is exactly why distinctiveness_ok=false.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "18:60:6:1",
+  "20:91:3:1"
+ ],
+ "unreconciled_count": 2,
+ "resistant_occurrences": [
+  "18:60:6:1",
+  "20:91:3:1"
+ ],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "brH = to depart from / leave off / discontinue a maintained position or activity. It surfaces spatially as a full transitive verb 'leave (a place)' (12:80) and aspectually as a grammaticalized continuance-verb (sister of kana) 'cease / leave off (a state or ongoing act)' (18:60, 20:91). In the attested corpus every token is negated and closed by a hatta terminus, so the familiar 'remain steadfast until X' reading is a compositional product of the negator operating on 'depart/cease', not a positive contribution of the root itself.",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "LEXICALIZED_CLASS",
+ "layer_attribution": {
+  "occurrence_evidence": "Three first-person imperfect verbs (qac_pos=V), all negated and all closed by a hatta terminus: 12:80 أَبْرَحَ ٱلْأَرْضَ (transitive place-object, لن/nasb), 18:60 أَبْرَحُ (absolute, لا/rafʿ), 20:91 نَّبْرَحَ عَلَيْهِ عَٰكِفِينَ (state-predicate, لن/nasb).",
+  "derivation": "All three carry qac_verb_form=null, i.e. base (Form I) finite imperfect verbs; the 'V' in form/qac_tag is the part-of-speech tag 'verb', NOT derivational Form V — no derived-form data is present, so no derivational-family claim is made.",
+  "lexical_class": "Two constructions share the root: a full lexical transitive of departure taking a concrete place-object (12:80) and a grammaticalized continuance-verb / sister-of-kana taking a state-predicate or standing absolute (18:60, 20:91). The latter is a coherent lexicalized aspectual sub-class, which is why claim_scope_kind=LEXICALIZED_CLASS.",
+  "contextual_relation": "The uniform pragmatic schema 'negated برح + hatta-terminus' = 'will not leave/cease X until Y' (father's permission, reaching the junction, Moses's return) is a narrative/compositional effect of the negator and the terminus clause; this steadfast-until reading is contextual and must NOT be promoted to the root's own meaning.",
+  "reconciliation": "18:60 and 20:91 were preliminarily marked STRUCTURAL_UNCERTAINTY and finalized RESISTANT: they fit the abstract 'leave off/discontinue' nucleus but resist the concrete departure pole, so they are grouped as the lexicalized continuance-verb class and recorded as the resistant seam that caps strength; 12:80 is CONSISTENT and anchors the spatial pole.",
+  "unresolved_resistance": "The affirmative/positive sense of برح is entirely unattested (0/3), so the nucleus is inferred as the polar complement of negated forms rather than directly observed; and the bridge between the transitive-departure and aspectual-continuance classes cannot be demonstrated Quran-internally (no affirmative and no shared-construction control token), leaving the splitting account irrefutable and distinctiveness unestablished."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "20:91:3:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "Governs a stative predicate (عَٰكِفِينَ) with physically stationary subjects, so it cannot bear a locative-departure reading and forces the nucleus to abstract to 'leave off/cease a maintained state'; it is the strongest counterexample to any spatial-only account and defines the seam between the transitive and aspectual classes.",
+   "evidence_basis": {
+    "kind": "STATIVE_PREDICATE_RESISTS_LOCATIVE",
+    "statement": "20:91 نَّبْرَحَ governs the stative predicate عَٰكِفِينَ (a posture/devotional condition, not a place) while the devotees physically stay put, so برح here cannot mean locative departure and forces the abstract 'leave off/cease a maintained state' nucleus."
+   }
+  },
+  {
+   "word_ref": "18:60:6:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "Complement-less token that fits neither the transitive place-object construction nor a stated predicate; it corroborates only the abstracted aspectual nucleus and constrains how concrete the unified account may be, marking the second edge of the class seam.",
+   "evidence_basis": {
+    "kind": "OBJECTLESS_APORIA",
+    "statement": "18:60 لَآ أَبْرَحُ has no complement at all, fitting neither the transitive place-object reading (12:80) nor a stated predicate, so it only supports the abstracted aspectual nucleus and cannot corroborate the concrete-departure sense."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "Two genuine hard cases (18:60, 20:91) form a lexicalized aspectual continuance-verb sub-class that resists reduction to the concrete transitive departure of 12:80. Each is grounded in an explicit Quran-internal syntactic fact (stative predicate عَٰكِفِينَ; total complement-lessness) that also appears as the strongest_counterexample and in the aspectual cluster's counterevidence notes. This resistant lexicalized class is the direct reason strength is capped at MODERATE and scope at REPRESENTATIVE."
+ },
+ "rejection_condition": {
+  "challenging_finding": "An affirmative (non-negated) or 3rd-person or nominal occurrence of b-r-H in which the root means 'remain / persist / stay' in its own right (not via a negator), OR a token in which negated برح plus hatta does NOT yield 'not depart / not cease until X' — either would show the persistence sense is lexical to the root and the departure/cessation nucleus is wrong.",
+  "search_location": "The full Quranic concordance for root b-r-H beyond this 3-token packet — specifically any affirmative, non-first-person, or nominal/participial derivative, and any occurrence outside the negated + hatta frame.",
+  "verification_method": "Read each additional occurrence's verse_text and qac morphology; test whether the root, stripped of its negator, profiles 'depart/leave off/cease' (predicted) or 'remain/persist' (would falsify), and whether the transitive-vs-continuance construction split recurs or collapses.",
+  "confounder_control": "Isolate the root's contribution from the negator (la/lan) and from the hatta terminus clause and from co-occurring state verbs like 'akafa; attribute the persistence reading to negation, not to برح, before accepting or rejecting.",
+  "failure_consequence": "If affirmative برح profiles 'remain/persist', the departure/cessation nucleus is rejected and the root reclassified as an inherent continuance verb; if the construction split fails to recur, the lexicalized-class cap is revisited and scope may narrow to OCCURRENCE_LEVEL."
+ },
+ "falsification_status": "NOT_RUN",
+ "reopen_conditions": [
+  "Any affirmative or non-first-person or nominal attestation of b-r-H is found (the corpus here is 100% negated first-person imperfect); test whether the positive root profiles 'depart/cease' or 'remain', since the entire nucleus is currently inferred as the polar complement of negated forms.",
+  "A token is found where برح takes a concrete place-object like 12:80's ٱلْأَرْضَ AND simultaneously behaves as a continuance-auxiliary like 20:91's عَٰكِفِينَ, i.e. a shared-construction bridge token; this would convert the currently-unproven cross-class bridge into a demonstrated one and could raise strength toward STRONG.",
+  "A negated برح occurs WITHOUT a following hatta terminus, or 20:91's اعتكاف/عكف pairing recurs elsewhere; either would test whether the durative 'until' schema and the برح/'akafa cessation-vs-state contrast are lexical to the root or merely local to these three narratives."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "12:80:25:1",
+  "18:60:6:1",
+  "20:91:3:1"
+ ],
+ "counterevidence_refs": [
+  "18:60:6:1",
+  "20:91:3:1"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "brH_falsify_v1",
+  "verdict": "CORE_HOLDS_WITH_RECORDED_RESISTANCE",
+  "falsifiable": true,
+  "distinctiveness_ok": false,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "brH_lexical_transitive_departure",
+   "brH_aspectual_continuance_verb"
+  ],
+  "status_rationale": "The 'depart/leave off/discontinue' nucleus survives all three tokens (no occurrence breaks it), so it is not FAILED. But a formal PASSED falsification is not warranted: distinctiveness is not cleanly established because the root is 100% negation-locked with no affirmative control and a coherent lexicalized continuance-verb sub-class (18:60, 20:91) resists reduction to the transitive departure of 12:80. Per contract, resistant sub-class present but core intact => NOT_RUN with the resistant seam recorded."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "brH: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "brH: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "brH: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "brH: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "brH: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "brH: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "brH: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "brH: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

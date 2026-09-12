@@ -1,0 +1,387 @@
+{
+ "root_arabic": "ك ب ت",
+ "root_buckwalter": "kbt",
+ "root_id": "kbt",
+ "artifact_name": "kbt.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave4",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "A divinely-inflicted defeat that brings God's active opponents low — checking/thwarting their aim and abasing them — while leaving them alive (explicitly short of destroying or killing them).",
+ "internal_discovery": {
+  "candidate_root_contribution": "A divinely-inflicted defeat that brings God's active opponents low — checking/thwarting their aim and abasing them — while leaving them alive (explicitly short of destroying or killing them).",
+  "plain_explanation": "Across all three verbal tokens (Form I, active and passive), k-b-t names something God does to those who oppose Him and His Messenger: it brings them low. In 3:127 the imperfect active يَكْبِتَهُمْ is set by أَوْ against لِيَقْطَعَ طَرَفًا ('cut off a portion'), i.e. it is the non-lethal alternative to destroying a group, and its result-clause فَيَنقَلِبُوا۟ خَآئِبِينَ shows survivors turning back thwarted/empty-handed. In 58:5 the two passives كُبِتُوا۟ / كُبِتَ assert a recurring pattern ('as those before them were') against the muḥāddūn, adjacent to a separately-promised عَذَابٌ مُّهِينٌ. The single field account 'humiliating bring-low of God's opponents, short of destruction' covers all three; whether the finer emphasis is dynamic thwarting (3:127) or settled abasement (58:5) is not arbitrated by the corpus.",
+  "layer_separation_note": "kbt does NOT entail killing/annihilation (in 3:127 it is disjoined by أَوْ from قَطْع طَرَف and its patients survive to retreat); it is NOT identical to the frustration it causes (خَآئِبِينَ, root ḫyb, is the effect, kbt the cause); it is NOT the promised humiliating punishment (عَذَابٌ مُّهِينٌ, root hwn, stands in a separate additional clause); and it is NOT agent-neutral or generic humiliation — the agent is always God (active subject in 3:127, divine passive in 58:5) and the patient is always an active opponent of God (kuffār, muḥāddūn), never a believer or neutral party.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "3:127:7:1 يَكْبِتَهُمْ is coordinated by أَوْ with لِيَقْطَعَ طَرَفًا and yields فَيَنقَلِبُوا۟ خَآئِبِينَ — a dynamic, non-lethal battlefield thwarting whose foregrounded content is frustration/repulse, not disgrace. This decisively refutes any 'kbt = kill/destroy' gloss (establishing the ≠ annihilation boundary) and simultaneously resists an 'abasement-primary' nucleus, since the salient outcome here is being foiled and turned back, not being disgraced.",
+  "strongest_competitor": "That kbt is simply 'to disgrace/abase/humiliate' (leaning on the مُّهِين collocation and the opponents-of-God patients in 58:5), treating خَآئِبِينَ as incidental. Rejected as the core because it under-reads 3:127, where the أَوْ-alternation to قَطْع and the خَآئِبِينَ result make thwarting/repulse the salient content. Its mirror ('to thwart/rout' as the core) is rejected symmetrically because it under-reads 58:5's abasement framing. The narrowest single account surviving both verse-events is the bridged field sense 'humiliating bring-low short of destruction' — but which facet is primary remains underdetermined on a 2-context base.",
+  "competing_hypothesis": "That kbt is simply 'to disgrace/abase/humiliate' (leaning on the مُّهِين collocation and the opponents-of-God patients in 58:5), treating خَآئِبِينَ as incidental. Rejected as the core because it under-reads 3:127, where the أَوْ-alternation to قَطْع and the خَآئِبِينَ result make thwarting/repulse the salient content. Its mirror ('to thwart/rout' as the core) is rejected symmetrically because it under-reads 58:5's abasement framing. The narrowest single account surviving both verse-events is the bridged field sense 'humiliating bring-low short of destruction' — but which facet is primary remains underdetermined on a 2-context base.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All three analysts (A, B, C) converge on MODERATE / REPRESENTATIVE. The evidence is internally CONSISTENT, adversarially clean (hard ≠ kill boundary, single divine agent, single opponent-patient type, no lexicalized/nominal sub-class — all tokens are Form I verbs), which rules out WEAK/UNRESOLVED and supports a PREFERRED field account. STRONG/UNIVERSAL is affirmatively barred on breadth: 3 tokens collapse to 2 independent contexts (58:5's pair is bound by an internal كَمَا equation asserting one event-type), a single POS, and no morphological spread. A genuine residual facet-tension (dynamic thwart in 3:127 vs. settled abasement in 58:5, tracked by active-imperfect vs. passive-perfect voice and by non-kbt co-text words that associate but cannot define) caps confidence: the finer nucleus is underdetermined even though the broad field account is not resisted by any token. Hence PREFERRED field account at MODERATE, with the sub-nucleus split recorded rather than forced.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "active-battle-thwart",
+     "where": {
+      "qac_pos": [
+       "V"
+      ],
+      "qac_verb_form": [
+       null
+      ],
+      "word_refs": [
+       "3:127:7:1"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Active imperfect divine act of bringing low a hostile force: يَكْبِتَهُمْ, disjoined by أَوْ from لِيَقْطَعَ طَرَفًا and resolving in فَيَنقَلِبُوا۟ خَآئِبِينَ — a non-lethal thwarting/repulse that leaves opponents alive but foiled and empty-handed.",
+     "classification_rationale": "Single token; active voice with explicit divine subject (from the لِيَقْطَعَ purpose-chain) and object -hum = the kuffār. Fits the field account and supplies the hardest negative boundary (≠ kill) via the أَوْ-disjunction from قَطْع طَرَف.",
+     "supporting_evidence_note": "3:127: أَوْ يَكْبِتَهُمْ fَيَنقَلِبُوا۟ خَآئِبِينَ marks kbt as the alternative to cutting off a portion; patients survive and retreat thwarted, foregrounding dynamic thwarting rather than disgrace.",
+     "counterevidence": [
+      "58:5:6:1",
+      "58:5:8:1"
+     ]
+    },
+    {
+     "cluster_id": "passive-abasement-pattern",
+     "where": {
+      "qac_pos": [
+       "V"
+      ],
+      "qac_verb_form": [
+       null
+      ],
+      "word_refs": [
+       "58:5:6:1",
+       "58:5:8:1"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Passive perfect (settled) bringing-low of those who set themselves in hostile opposition (يُحَآدُّونَ ٱللَّهَ), asserted as a recurring divine pattern كُبِتُوا۟ كَمَا كُبِتَ ٱلَّذِينَ مِن قَبْلِهِمْ; the abasement facet is foregrounded by the opponents-of-God framing and the adjacent عَذَابٌ مُّهِينٌ.",
+     "classification_rationale": "Two tokens in one verse-event bound by كَمَا (an internal equation, not two independent data); divine passive with suppressed agent. Fits the field account but foregrounds settled abasement rather than the dynamic thwarting of 3:127.",
+     "supporting_evidence_note": "58:5: كُبِتُوا۟ كَمَا كُبِتَ ٱلَّذِينَ مِن قَبْلِهِمْ … وَلِلْكَٰفِرِينَ عَذَابٌ مُّهِينٌ frames kbt as an already-accomplished humiliating downfall of opposers, distinct from and prior to the separately-promised humiliating punishment.",
+     "counterevidence": [
+      "3:127:7:1"
+     ]
+    }
+   ],
+   "reconciliation": []
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "kbt",
+  "verdict": "NOT_RUN",
+  "failing_occurrences": [],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "The broad field account is not resisted by any token and is internally distinctive (kbt held apart from قَطْع by أَوْ-disjunction, from ḫyb by cause/effect ordering, from hwn by separate-clause juxtaposition). A full adversarial refutation returning SUPPORTED is not affirmatively claimed (NOT_RUN rather than PASSED) because the finer nucleus is underdetermined on only 2 independent contexts: 3:127 and 58:5 mutually resist each other's narrow reading. No occurrence fails the core, so status is NOT_RUN with the residual facet-tension recorded, not FAILED."
+ },
+ "coverage_validation": {
+  "root": "kbt",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "3:127:7:1",
+   "disposition": "CONSISTENT",
+   "note": "Single token; active voice with explicit divine subject (from the لِيَقْطَعَ purpose-chain) and object -hum = the kuffār. Fits the field account and supplies the hardest negative boundary (≠ kill) via the أَوْ-disjunction from قَطْع طَرَف. | 3:127:7:1 يَكْبِتَهُمْ is coordinated by أَوْ with لِيَقْطَعَ طَرَفًا and yields فَيَنقَلِبُوا۟ خَآئِبِينَ — a dynamic, non-lethal battlefield thwarting whose foregrounded content is frustration/repulse, not disgrace.",
+   "coverage_cluster_id": "active-battle-thwart",
+   "candidate_semantic_interpretation": "Active imperfect divine act of bringing low a hostile force: يَكْبِتَهُمْ, disjoined by أَوْ from لِيَقْطَعَ طَرَفًا and resolving in فَيَنقَلِبُوا۟ خَآئِبِينَ — a non-lethal thwarting/repulse that leaves opponents alive but foiled and empty-handed.",
+   "cluster_supporting_evidence": "3:127: أَوْ يَكْبِتَهُمْ fَيَنقَلِبُوا۟ خَآئِبِينَ marks kbt as the alternative to cutting off a portion; patients survive and retreat thwarted, foregrounding dynamic thwarting rather than disgrace.",
+   "counterevidence": [
+    "58:5:6:1",
+    "58:5:8:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Single token; active voice with explicit divine subject (from the لِيَقْطَعَ purpose-chain) and object -hum = the kuffār. Fits the field account and supplies the hardest negative boundary (≠ kill) via the أَوْ-disjunction from قَطْع طَرَف.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:127",
+     "verse_text": "لِيَقْطَعَ طَرَفًا مِّنَ ٱلَّذِينَ كَفَرُوٓا۟ أَوْ يَكْبِتَهُمْ فَيَنقَلِبُوا۟ خَآئِبِينَ"
+    }
+   ],
+   "root_arabic": "ك ب ت",
+   "root_buckwalter": "kbt",
+   "root_id": "kbt",
+   "artifact_name": "kbt.json",
+   "verse_ref": "3:127",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yakobita",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لِيَقْطَعَ طَرَفًا مِّنَ ٱلَّذِينَ كَفَرُوٓا۟ أَوْ يَكْبِتَهُمْ فَيَنقَلِبُوا۟ خَآئِبِينَ"
+  },
+  {
+   "word_ref": "58:5:6:1",
+   "disposition": "CONSISTENT",
+   "note": "Two tokens in one verse-event bound by كَمَا (an internal equation, not two independent data); divine passive with suppressed agent. Fits the field account but foregrounds settled abasement rather than the dynamic thwarting of 3:127. | 58:5 frames kbt as an already-accomplished humiliating downfall of opposers, distinct from and prior to the separately-promised humiliating punishment.",
+   "coverage_cluster_id": "passive-abasement-pattern",
+   "candidate_semantic_interpretation": "Passive perfect (settled) bringing-low of those who set themselves in hostile opposition (يُحَآدُّونَ ٱللَّهَ), asserted as a recurring divine pattern كُبِتُوا۟ كَمَا كُبِتَ ٱلَّذِينَ مِن قَبْلِهِمْ; the abasement facet is foregrounded by the opponents-of-God framing and the adjacent عَذَابٌ مُّهِينٌ.",
+   "cluster_supporting_evidence": "58:5: كُبِتُوا۟ كَمَا كُبِتَ ٱلَّذِينَ مِن قَبْلِهِمْ … وَلِلْكَٰفِرِينَ عَذَابٌ مُّهِينٌ frames kbt as an already-accomplished humiliating downfall of opposers, distinct from and prior to the separately-promised humiliating punishment.",
+   "counterevidence": [
+    "3:127:7:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Two tokens in one verse-event bound by كَمَا (an internal equation, not two independent data); divine passive with suppressed agent. Fits the field account but foregrounds settled abasement rather than the dynamic thwarting of 3:127.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "58:5",
+     "verse_text": "إِنَّ ٱلَّذِينَ يُحَآدُّونَ ٱللَّهَ وَرَسُولَهُۥ كُبِتُوا۟ كَمَا كُبِتَ ٱلَّذِينَ مِن قَبْلِهِمْ وَقَدْ أَنزَلْنَآ ءَايَٰتٍۭ بَيِّنَٰتٍ وَلِلْكَٰفِرِينَ عَذَابٌ مُّهِينٌ"
+    }
+   ],
+   "root_arabic": "ك ب ت",
+   "root_buckwalter": "kbt",
+   "root_id": "kbt",
+   "artifact_name": "kbt.json",
+   "verse_ref": "58:5",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "kubitu",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱلَّذِينَ يُحَآدُّونَ ٱللَّهَ وَرَسُولَهُۥ كُبِتُوا۟ كَمَا كُبِتَ ٱلَّذِينَ مِن قَبْلِهِمْ وَقَدْ أَنزَلْنَآ ءَايَٰتٍۭ بَيِّنَٰتٍ وَلِلْكَٰفِرِينَ عَذَابٌ مُّهِينٌ"
+  },
+  {
+   "word_ref": "58:5:8:1",
+   "disposition": "CONSISTENT",
+   "note": "Two tokens in one verse-event bound by كَمَا (an internal equation, not two independent data); divine passive with suppressed agent. Fits the field account but foregrounds settled abasement rather than the dynamic thwarting of 3:127.",
+   "coverage_cluster_id": "passive-abasement-pattern",
+   "candidate_semantic_interpretation": "Passive perfect (settled) bringing-low of those who set themselves in hostile opposition (يُحَآدُّونَ ٱللَّهَ), asserted as a recurring divine pattern كُبِتُوا۟ كَمَا كُبِتَ ٱلَّذِينَ مِن قَبْلِهِمْ; the abasement facet is foregrounded by the opponents-of-God framing and the adjacent عَذَابٌ مُّهِينٌ.",
+   "cluster_supporting_evidence": "58:5: كُبِتُوا۟ كَمَا كُبِتَ ٱلَّذِينَ مِن قَبْلِهِمْ … وَلِلْكَٰفِرِينَ عَذَابٌ مُّهِينٌ frames kbt as an already-accomplished humiliating downfall of opposers, distinct from and prior to the separately-promised humiliating punishment.",
+   "counterevidence": [
+    "3:127:7:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Two tokens in one verse-event bound by كَمَا (an internal equation, not two independent data); divine passive with suppressed agent. Fits the field account but foregrounds settled abasement rather than the dynamic thwarting of 3:127.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "58:5",
+     "verse_text": "إِنَّ ٱلَّذِينَ يُحَآدُّونَ ٱللَّهَ وَرَسُولَهُۥ كُبِتُوا۟ كَمَا كُبِتَ ٱلَّذِينَ مِن قَبْلِهِمْ وَقَدْ أَنزَلْنَآ ءَايَٰتٍۭ بَيِّنَٰتٍ وَلِلْكَٰفِرِينَ عَذَابٌ مُّهِينٌ"
+    }
+   ],
+   "root_arabic": "ك ب ت",
+   "root_buckwalter": "kbt",
+   "root_id": "kbt",
+   "artifact_name": "kbt.json",
+   "verse_ref": "58:5",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "kubita",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱلَّذِينَ يُحَآدُّونَ ٱللَّهَ وَرَسُولَهُۥ كُبِتُوا۟ كَمَا كُبِتَ ٱلَّذِينَ مِن قَبْلِهِمْ وَقَدْ أَنزَلْنَآ ءَايَٰتٍۭ بَيِّنَٰتٍ وَلِلْكَٰفِرِينَ عَذَابٌ مُّهِينٌ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Three independent lenses (A bottom-up, B structural, C adversarial) converged on the same field account, the same ≠ kill boundary, and the same thwart-vs-abase underdetermination and MODERATE/REPRESENTATIVE grade.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "A divinely-inflicted defeat that brings God's active opponents low — checking/thwarting their aim and abasing them — while leaving them alive (explicitly short of destroying or killing them).",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "DERIVATIONAL_FAMILY",
+ "layer_attribution": {
+  "occurrence_evidence": "3 confirmed verbal tokens: active imperfect يَكْبِتَهُمْ (3:127:7:1); passive perfects كُبِتُوا۟ (58:5:6:1) and كُبِتَ (58:5:8:1), the latter pair bound by كَمَا within one verse.",
+  "derivation": "All Form I (qac_verb_form=null; 'V' = POS Verb, not derived Form V); active/passive voice alternants of one transitive triliteral verb — no nominal, participial, or augmented-form spread.",
+  "lexical_class": "No lexicalized or nominal sub-class exists; the root is attested only as a finite verb, so grading is not capped by a resistant lexicalized class but by breadth and the facet tension.",
+  "contextual_relation": "Co-text supplies associated but non-defining roots: خَآئِبِينَ (ḫyb, effect of kbt in 3:127), عَذَابٌ مُّهِينٌ (hwn, separate punishment in 58:5), قَطْع طَرَف (qṭʿ, the أَوْ-disjoined lethal alternative). These contextual/narrative facts inform boundaries but are kept out of the root claim itself.",
+  "reconciliation": "Preliminary voice-tracked split (active→thwart, passive→abase) is reconciled into one field nucleus ('humiliating bring-low short of destruction') that no token resists; the finer nucleus is left explicitly unresolved rather than forced, and recorded as two adversarial boundaries.",
+  "unresolved_resistance": "Residual, non-fatal: whether the definitional center is dynamic thwarting (3:127) or settled abasement (58:5) is unarbitrated on 2 independent contexts; this mutual facet-resistance caps strength at MODERATE / scope at REPRESENTATIVE."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "3:127:7:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "Its أَوْ-disjunction from لِيَقْطَعَ طَرَفًا and result فَيَنقَلِبُوا۟ خَآئِبِينَ both fix the ≠ annihilation boundary and foreground dynamic thwarting, resisting an abasement-primary nucleus.",
+   "evidence_basis": {
+    "kind": "internal-syntactic-disjunction",
+    "statement": "3:127:7:1 يَكْبِتَهُمْ is coordinated by أَوْ with لِيَقْطَعَ طَرَفًا and yields فَيَنقَلِبُوا۟ خَآئِبِينَ — a dynamic, non-lethal battlefield thwarting whose foregrounded content is frustration/repulse, not disgrace."
+   }
+  },
+  {
+   "word_ref": "58:5:6:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "Its مُّهِين + كَمَا-predecessors framing foregrounds settled abasement, resisting a thwart-in-battle-only nucleus and forming the mirror pole of the underdetermination.",
+   "evidence_basis": {
+    "kind": "internal-collocation-and-comparison",
+    "statement": "58:5 frames kbt as an already-accomplished humiliating downfall of opposers, distinct from and prior to the separately-promised humiliating punishment."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "No token finally RESISTS the broad field account, so there is no RESISTANT_SEAM. But two genuine adversarial boundaries are evidence-derived: 3:127 fixes the ≠ kill boundary and the dynamic-thwart pole, while 58:5 supplies the abasement pole. Their mutual resistance to each other's narrow nucleus is the recorded residual tension that caps strength at MODERATE; both statements also appear in the cluster supporting-evidence notes and the strongest_counterexample."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A kbt occurrence whose agent is not God, or whose patient is a believer or a neutral (non-adversarial) party, or one that denotes actual killing/annihilation rather than a survivable bring-low.",
+  "search_location": "Both attested contexts (3:127 battle disjunction; 58:5 muḥāddūn comparison) plus any newly surfaced kbt token; inspect agent, patient class, and whether the patients survive/retreat.",
+  "verification_method": "Check voice and the syntactic subject/agent, the identity of the patient (kuffār/muḥāddūn vs. others), and the result-clause (survival + retreat as in فَيَنقَلِبُوا۟ vs. elimination); compare against the أَوْ-disjunction from قَطْع طَرَف that marks the non-lethal boundary.",
+  "confounder_control": "Distinguish kbt itself from the co-text roots that only associate: ḫyb (خَآئِبِينَ, the effect), hwn (مُّهِين, the separate punishment), qṭʿ (قَطْع طَرَف, the disjoined lethal alternative). A finding grounded in those roots' semantics rather than kbt's own distribution does not count.",
+  "failure_consequence": "If such an occurrence is found, the 'divine-agent, opponent-patient, non-lethal' field account is falsified or must be narrowed, and the root would drop to WEAK/UNRESOLVED or require re-partition."
+ },
+ "falsification_status": "NOT_RUN",
+ "reopen_conditions": [
+  "If a kbt token appears with a non-divine agent, or directed at a believer/neutral party rather than an opponent of God (kuffār/muḥāddūn), reopen the 'divine-agent, opponent-patient' restriction.",
+  "If a kbt occurrence surfaces in a context that foregrounds neither thwarting (khayba / inqilāb) nor abasement (muhīn / hawn), thereby arbitrating the 3:127-vs-58:5 facet split, reopen the thwart-vs-abase underdetermination and re-grade toward STRONG or a partition."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "3:127:7:1",
+  "58:5:6:1",
+  "58:5:8:1"
+ ],
+ "counterevidence_refs": [
+  "3:127:7:1",
+  "58:5:6:1",
+  "58:5:8:1"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "kbt-fieldsense-2026-09-12",
+  "verdict": "NOT_RUN",
+  "falsifiable": true,
+  "distinctiveness_ok": true,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "active-battle-thwart",
+   "passive-abasement-pattern"
+  ],
+  "status_rationale": "The broad field account is not resisted by any token and is internally distinctive (kbt held apart from قَطْع by أَوْ-disjunction, from ḫyb by cause/effect ordering, from hwn by separate-clause juxtaposition). A full adversarial refutation returning SUPPORTED is not affirmatively claimed (NOT_RUN rather than PASSED) because the finer nucleus is underdetermined on only 2 independent contexts: 3:127 and 58:5 mutually resist each other's narrow reading. No occurrence fails the core, so status is NOT_RUN with the residual facet-tension recorded, not FAILED."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "kbt: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "kbt: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "kbt: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "kbt: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "kbt: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "kbt: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "kbt: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "kbt: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

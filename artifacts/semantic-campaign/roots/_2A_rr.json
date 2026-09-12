@@ -1,0 +1,2209 @@
+{
+ "root_arabic": "ذ ر ر",
+ "root_buckwalter": "*rr",
+ "root_id": "*rr",
+ "artifact_name": "_2A_rr.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave4",
+ "occurrences": 38,
+ "frozen_candidate_root_contribution": null,
+ "internal_discovery": {
+  "candidate_root_contribution": null,
+  "plain_explanation": "The geminate root ذ-ر-ر surfaces in the Quran only as nouns (form_inventory = {N:38}); there is no verb anywhere, so no process/action sense is attested. The 38 tokens split cleanly and without overlap into two lexicalized nominal classes that never co-occur, never gloss one another, and share no collocate or referent. Class A ذَرَّة (6 occ, surface *ar~apK) appears exclusively in the fixed idiom مِثْقَال ذَرَّة, denoting the smallest nameable quantity on a weight/magnitude scale used as a threshold-of-notice in divine reckoning (omniscience 10:61/34:3/34:22, justice 4:40, recompense 99:7-8); 10:61 and 34:3 themselves rank it between أَصْغَر and أَكْبَر, so it is a benchmark quantum, not the absolute minimum. Class B ذُرِّيَّة / ذُرِّيَّٰت (32 occ, surface *ur~iy~ap-/*ur~iy~a`t-) denotes progeny, the descending line issuing from a progenitor or stock, scalable from one child (3:38) to many, potentially trans-generational (6:84, 19:58). The only account that would unify 'smallest mote' with 'progeny' is the external etymology (a scatter/seed verb) which is barred by source policy and is attested for neither word in-corpus. Therefore the honest deliverable is two Quran-internally unbridged classes, not one root nucleus; each class is coherent on its own but no shared semantic contribution can be demonstrated.",
+  "layer_separation_note": "Root-level: the corpus licenses NO single concrete meaning attestable across both classes; the shared consonantal skeleton is a formal/etymological fact, not a demonstrable semantic identity (same root != one meaning; morphology != semantic identity). Class A (ذَرَّة) does NOT entail life, agency, descent, scattering, an indivisible 'atom', or the absolute minimum (10:61/34:3 append وَلَآ أَصْغَرَ مِن ذَٰلِكَ); it never stands free of مِثْقَال and never denotes offspring. Class B (ذُرِّيَّة) does NOT entail righteousness/blessing (37:113 مُحْسِنٌ وَظَالِمٌ; 7:173 disbelieving line), is NOT restricted to humankind (18:50 Iblis's ذُرِّيَّة), is NOT intrinsically plural (3:38 a single granted child), is NOT the progenitor himself but always what issues from him (7:172 مِن ظُهُورِهِمْ), and never denotes a weight/quantity.",
+  "presence": {
+   "occurrences_total": 38,
+   "occurrences_checked": 38,
+   "occurrences_consistent": 32,
+   "inconsistent_refs": [
+    "10:61:27:1",
+    "34:22:11:1",
+    "34:3:17:1",
+    "4:40:6:1",
+    "99:7:4:1",
+    "99:8:4:1"
+   ]
+  },
+  "strongest_counterexample": "34:3:17:1 (par. 10:61:27:1): مِثْقَالُ ذَرَّةٍ ... وَلَآ أَصْغَرُ مِن ذَٰلِكَ وَلَآ أَكْبَرُ — here the text itself defines ذَرَّة as a graded point on a magnitude continuum between 'smaller' and 'larger', a pure metrological term. This self-supplied frame is categorially incompatible with the living-descendant sense of ذُرِّيَّة (e.g. 3:38:11:1 ذُرِّيَّةً طَيِّبَةً, a goodly child), and because the verse fixes its own semantics it cannot be re-read toward the progeny class. No semantic operation maps 'a unit of weight' onto 'a descendant', so this occurrence blocks any single narrow nucleus spanning both classes.",
+  "strongest_competitor": "Unified-nucleus hypothesis: 'the minimal/multiplied units issuing or scattered from a source' — motes (ذَرَّة) and seed/offspring brought forth from the loins (ذُرِّيَّة), with 7:172 (offspring drawn مِن ظُهُورِهِمْ) as its best in-corpus image. Rejected Quran-internally: (a) the 'scatter/seed' seme is attested for neither word — ذَرَّة's demonstrated seme is minimal-measure fixed with مِثْقَال, ذُرِّيَّة's is descent-line, and the bridging verb (root ذ-ر-أ) is a different root absent from this packet, so the unifier is imported from outside the corpus in violation of source policy; (b) the two classes never co-occur, share no collocate and no referent, their distributions being perfect complements; (c) any abstraction vague enough to cover both ('small thing') would fit everything, explain nothing, and still fail to license the weight-idiom vs. lineage behaviors. The bridge is therefore speculative and not demonstrable.",
+  "competing_hypothesis": "Unified-nucleus hypothesis: 'the minimal/multiplied units issuing or scattered from a source' — motes (ذَرَّة) and seed/offspring brought forth from the loins (ذُرِّيَّة), with 7:172 (offspring drawn مِن ظُهُورِهِمْ) as its best in-corpus image. Rejected Quran-internally: (a) the 'scatter/seed' seme is attested for neither word — ذَرَّة's demonstrated seme is minimal-measure fixed with مِثْقَال, ذُرِّيَّة's is descent-line, and the bridging verb (root ذ-ر-أ) is a different root absent from this packet, so the unifier is imported from outside the corpus in violation of source policy; (b) the two classes never co-occur, share no collocate and no referent, their distributions being perfect complements; (c) any abstraction vague enough to cover both ('small thing') would fit everything, explain nothing, and still fail to license the weight-idiom vs. lineage behaviors. The bridge is therefore speculative and not demonstrable.",
+  "unresolved_cases": [],
+  "result": "UNRESOLVED",
+  "result_strength": "UNRESOLVED",
+  "rationale": "All three lenses (A, B, adversary C) independently reach the same structural finding: one consonantal root, two unbridged lexicalized nominal classes. Class B is internally strong (32/32 coherent as progeny-of-a-progenitor, surviving the multi-generation test 6:84/19:58 and the Iblis test 18:50), and Class A is internally clean but confined to a single idiom (6/6 مِثْقَال ذَرَّة). However, the load-bearing root-level question — is there a shared semantic contribution — has no affirmative Quran-internal answer. Under the coherence rule that two+ senses with no in-corpus bridge force UNRESOLVED rather than a forced nucleus, and that a resistant lexicalized nominal sub-class precludes STRONG, the root-level verdict is UNRESOLVED / multi-class. The measure-class (ذَرَّة) is the resistant seam that cannot be assimilated to the progeny account; asserting any unified gloss would be an unlicensed abstraction.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "A_dharrah_measure",
+     "where": {
+      "word_refs": [
+       "10:61:27:1",
+       "34:22:11:1",
+       "34:3:17:1",
+       "4:40:6:1",
+       "99:7:4:1",
+       "99:8:4:1"
+      ]
+     },
+     "occurrence_count_expected": 6,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "ذَرَّة: the smallest nameable quantity on a weight/magnitude scale, occurring only in the fixed idiom مِثْقَال ذَرَّة as a threshold-of-notice in divine reckoning (knowledge, ownership/power, justice, recompense); explicitly a benchmark, not the absolute minimum (10:61/34:3: وَلَآ أَصْغَرَ مِن ذَٰلِكَ).",
+     "classification_rationale": "All 6 are the identical indefinite genitive collocation with مِثْقَال; 10:61 and 34:3 rank it between أَصْغَر and أَكْبَر, fixing its metrological sense. This lexicalized measure-noun shares nothing semantically with the 32 progeny tokens beyond the consonantal root, so it constitutes the resistant sub-class that blocks any unified root nucleus.",
+     "supporting_evidence_note": "10:61:27:1 and 34:3:17:1 self-define ذَرَّة as a graded magnitude; 4:40:6:1 (لَا يَظْلِمُ مِثْقَالَ ذَرَّةٍ) and 99:7-8 (خَيْرًا/شَرًّا) show the invariant reckoning frame; 34:22:11:1 applies it to ownership/power.",
+     "counterevidence": [
+      "10:61:27:1",
+      "34:3:17:1"
+     ]
+    },
+    {
+     "cluster_id": "B_dhurriyyah_progeny",
+     "where": {
+      "word_refs": [
+       "10:83:5:1",
+       "13:23:9:2",
+       "13:38:9:2",
+       "14:37:5:1",
+       "14:40:6:1",
+       "17:3:1:1",
+       "17:62:13:1",
+       "18:50:17:2",
+       "19:58:16:1",
+       "19:58:9:1",
+       "25:74:8:2",
+       "29:27:7:1",
+       "2:124:14:1",
+       "2:128:6:1",
+       "2:266:22:1",
+       "36:41:5:1",
+       "37:113:6:1",
+       "37:77:2:1",
+       "3:34:1:1",
+       "3:36:21:2",
+       "3:38:11:1",
+       "40:8:12:2",
+       "46:15:39:1",
+       "4:9:7:1",
+       "52:21:4:1",
+       "52:21:8:1",
+       "57:26:7:1",
+       "6:133:16:1",
+       "6:84:12:1",
+       "6:87:3:2",
+       "7:172:9:1",
+       "7:173:9:1"
+      ]
+     },
+     "occurrence_count_expected": 32,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+     "classification_rationale": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+     "supporting_evidence_note": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+     "counterevidence": [
+      "18:50:17:2",
+      "10:83:5:1"
+     ]
+    }
+   ],
+   "reconciliation": [
+    {
+     "word_ref": "10:83:5:1",
+     "final": "CONSISTENT",
+     "rationale": "The partitive مِّن قَوْمِهِ marks the descended segment issuing from the stock; the source-derivation seme holds, so it instantiates rather than contradicts the Class B account."
+    },
+    {
+     "word_ref": "18:50:17:2",
+     "final": "CONSISTENT",
+     "rationale": "Class B is defined as progeny-of-a-progenitor, not human-exclusive; the Iblis case confirms this negative boundary."
+    }
+   ]
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "*rr",
+  "verdict": "NOT_REQUIRED_UNRESOLVED_CLASS_ONLY",
+  "failing_occurrences": [],
+  "distinctiveness_ok": false,
+  "falsifiable": true,
+  "notes": "No unified root contribution is asserted (candidate_root_contribution=null), so there is no positive root-level claim to adversarially refute; falsification of a nucleus is not applicable to an unresolved-class-only result. The class-internal accounts are reported but the root verdict rests on the demonstrated absence of an in-corpus bridge, not on a passed adversarial test."
+ },
+ "coverage_validation": {
+  "root": "*rr",
+  "expected_count": 38,
+  "researched_count": 38,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [
+   "10:61:27:1",
+   "34:22:11:1",
+   "34:3:17:1",
+   "4:40:6:1",
+   "99:7:4:1",
+   "99:8:4:1"
+  ],
+  "unresolved_visible": [
+   "10:61:27:1",
+   "34:22:11:1",
+   "34:3:17:1",
+   "4:40:6:1",
+   "99:7:4:1",
+   "99:8:4:1"
+  ]
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "10:61:27:1",
+   "disposition": "RESISTANT",
+   "note": "All 6 are the identical indefinite genitive collocation with مِثْقَال; 10:61 and 34:3 rank it between أَصْغَر and أَكْبَر, fixing its metrological sense. This lexicalized measure-noun shares nothing semantically with the 32 progeny tokens beyond the consonantal root, so it constitutes the resistant sub-class that blocks any unified root nucleus.",
+   "coverage_cluster_id": "A_dharrah_measure",
+   "candidate_semantic_interpretation": "ذَرَّة: the smallest nameable quantity on a weight/magnitude scale, occurring only in the fixed idiom مِثْقَال ذَرَّة as a threshold-of-notice in divine reckoning (knowledge, ownership/power, justice, recompense); explicitly a benchmark, not the absolute minimum (10:61/34:3: وَلَآ أَصْغَرَ مِن ذَٰلِكَ).",
+   "cluster_supporting_evidence": "10:61:27:1 and 34:3:17:1 self-define ذَرَّة as a graded magnitude; 4:40:6:1 (لَا يَظْلِمُ مِثْقَالَ ذَرَّةٍ) and 99:7-8 (خَيْرًا/شَرًّا) show the invariant reckoning frame; 34:22:11:1 applies it to ownership/power.",
+   "counterevidence": [
+    "10:61:27:1",
+    "34:3:17:1"
+   ],
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "All 6 are the identical indefinite genitive collocation with مِثْقَال; 10:61 and 34:3 rank it between أَصْغَر and أَكْبَر, fixing its metrological sense. This lexicalized measure-noun shares nothing semantically with the 32 progeny tokens beyond the consonantal root, so it constitutes the resistant sub-class that blocks any unified root nucleus.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "10:61",
+     "verse_text": "وَمَا تَكُونُ فِى شَأْنٍ وَمَا تَتْلُوا۟ مِنْهُ مِن قُرْءَانٍ وَلَا تَعْمَلُونَ مِنْ عَمَلٍ إِلَّا كُنَّا عَلَيْكُمْ شُهُودًا إِذْ تُفِيضُونَ فِيهِ وَمَا يَعْزُبُ عَن رَّبِّكَ مِن مِّثْقَالِ ذَرَّةٍ فِى ٱلْأَرْضِ وَلَا فِى ٱلسَّمَآءِ وَلَآ أَصْغَرَ مِن ذَٰلِكَ وَلَآ أَكْبَرَ إِلَّا فِى كِتَٰبٍ مُّبِينٍ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "10:61",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ar~apK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَمَا تَكُونُ فِى شَأْنٍ وَمَا تَتْلُوا۟ مِنْهُ مِن قُرْءَانٍ وَلَا تَعْمَلُونَ مِنْ عَمَلٍ إِلَّا كُنَّا عَلَيْكُمْ شُهُودًا إِذْ تُفِيضُونَ فِيهِ وَمَا يَعْزُبُ عَن رَّبِّكَ مِن مِّثْقَالِ ذَرَّةٍ فِى ٱلْأَرْضِ وَلَا فِى ٱلسَّمَآءِ وَلَآ أَصْغَرَ مِن ذَٰلِكَ وَلَآ أَكْبَرَ إِلَّا فِى كِتَٰبٍ مُّبِينٍ",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "10:83:5:1",
+   "disposition": "CONSISTENT",
+   "note": "Consistent with Class B as the line issuing from a stock; instantiated here as a descended sub-set of a living people.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "ذُرِّيَّةٌ مِّن قَوْمِهِ reads as a contemporaneous faction/remnant of a living community, appearing to resist the genealogical descent account.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": "The partitive مِّن قَوْمِهِ marks the descended segment issuing from the stock; the source-derivation seme holds, so it instantiates rather than contradicts the Class B account.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "10:83:5:1",
+     "preliminary_disposition": "RESISTANT",
+     "preliminary_note": "'a dhurriyyah of his people' looks like a social faction, not descendants of an ancestor.",
+     "final_disposition": "CONSISTENT",
+     "reconciliation_rationale": "The partitive مِّن قَوْمِهِ marks the descended segment issuing from the stock; the source-derivation seme holds, so it instantiates rather than contradicts the Class B account.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [
+    "It is still the descendant-remnant issuing from that people (partitive مِّن قَوْمِهِ), i.e. the younger/descended segment of the stock, not a synonym for 'group'; the source-derivation seme is preserved."
+   ],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "10:83",
+     "verse_text": "فَمَآ ءَامَنَ لِمُوسَىٰٓ إِلَّا ذُرِّيَّةٌ مِّن قَوْمِهِۦ عَلَىٰ خَوْفٍ مِّن فِرْعَوْنَ وَمَلَإِي۟هِمْ أَن يَفْتِنَهُمْ وَإِنَّ فِرْعَوْنَ لَعَالٍ فِى ٱلْأَرْضِ وَإِنَّهُۥ لَمِنَ ٱلْمُسْرِفِينَ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "10:83",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~apN",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَمَآ ءَامَنَ لِمُوسَىٰٓ إِلَّا ذُرِّيَّةٌ مِّن قَوْمِهِۦ عَلَىٰ خَوْفٍ مِّن فِرْعَوْنَ وَمَلَإِي۟هِمْ أَن يَفْتِنَهُمْ وَإِنَّ فِرْعَوْنَ لَعَالٍ فِى ٱلْأَرْضِ وَإِنَّهُۥ لَمِنَ ٱلْمُسْرِفِينَ"
+  },
+  {
+   "word_ref": "13:23:9:2",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "13:23",
+     "verse_text": "جَنَّٰتُ عَدْنٍ يَدْخُلُونَهَا وَمَن صَلَحَ مِنْ ءَابَآئِهِمْ وَأَزْوَٰجِهِمْ وَذُرِّيَّٰتِهِمْ وَٱلْمَلَٰٓئِكَةُ يَدْخُلُونَ عَلَيْهِم مِّن كُلِّ بَابٍ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "13:23",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~a`ti",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "جَنَّٰتُ عَدْنٍ يَدْخُلُونَهَا وَمَن صَلَحَ مِنْ ءَابَآئِهِمْ وَأَزْوَٰجِهِمْ وَذُرِّيَّٰتِهِمْ وَٱلْمَلَٰٓئِكَةُ يَدْخُلُونَ عَلَيْهِم مِّن كُلِّ بَابٍ"
+  },
+  {
+   "word_ref": "13:38:9:2",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "13:38",
+     "verse_text": "وَلَقَدْ أَرْسَلْنَا رُسُلًا مِّن قَبْلِكَ وَجَعَلْنَا لَهُمْ أَزْوَٰجًا وَذُرِّيَّةً وَمَا كَانَ لِرَسُولٍ أَن يَأْتِىَ بِـَٔايَةٍ إِلَّا بِإِذْنِ ٱللَّهِ لِكُلِّ أَجَلٍ كِتَابٌ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "13:38",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~apF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَقَدْ أَرْسَلْنَا رُسُلًا مِّن قَبْلِكَ وَجَعَلْنَا لَهُمْ أَزْوَٰجًا وَذُرِّيَّةً وَمَا كَانَ لِرَسُولٍ أَن يَأْتِىَ بِـَٔايَةٍ إِلَّا بِإِذْنِ ٱللَّهِ لِكُلِّ أَجَلٍ كِتَابٌ"
+  },
+  {
+   "word_ref": "14:37:5:1",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "14:37",
+     "verse_text": "رَّبَّنَآ إِنِّىٓ أَسْكَنتُ مِن ذُرِّيَّتِى بِوَادٍ غَيْرِ ذِى زَرْعٍ عِندَ بَيْتِكَ ٱلْمُحَرَّمِ رَبَّنَا لِيُقِيمُوا۟ ٱلصَّلَوٰةَ فَٱجْعَلْ أَفْـِٔدَةً مِّنَ ٱلنَّاسِ تَهْوِىٓ إِلَيْهِمْ وَٱرْزُقْهُم مِّنَ ٱلثَّمَرَٰتِ لَعَلَّهُمْ يَشْكُرُونَ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "14:37",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~ati",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "رَّبَّنَآ إِنِّىٓ أَسْكَنتُ مِن ذُرِّيَّتِى بِوَادٍ غَيْرِ ذِى زَرْعٍ عِندَ بَيْتِكَ ٱلْمُحَرَّمِ رَبَّنَا لِيُقِيمُوا۟ ٱلصَّلَوٰةَ فَٱجْعَلْ أَفْـِٔدَةً مِّنَ ٱلنَّاسِ تَهْوِىٓ إِلَيْهِمْ وَٱرْزُقْهُم مِّنَ ٱلثَّمَرَٰتِ لَعَلَّهُمْ يَشْكُرُونَ"
+  },
+  {
+   "word_ref": "14:40:6:1",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "14:40",
+     "verse_text": "رَبِّ ٱجْعَلْنِى مُقِيمَ ٱلصَّلَوٰةِ وَمِن ذُرِّيَّتِى رَبَّنَا وَتَقَبَّلْ دُعَآءِ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "14:40",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~ati",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "رَبِّ ٱجْعَلْنِى مُقِيمَ ٱلصَّلَوٰةِ وَمِن ذُرِّيَّتِى رَبَّنَا وَتَقَبَّلْ دُعَآءِ"
+  },
+  {
+   "word_ref": "17:3:1:1",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "17:3",
+     "verse_text": "ذُرِّيَّةَ مَنْ حَمَلْنَا مَعَ نُوحٍ إِنَّهُۥ كَانَ عَبْدًا شَكُورًا"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "17:3",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~apa",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ذُرِّيَّةَ مَنْ حَمَلْنَا مَعَ نُوحٍ إِنَّهُۥ كَانَ عَبْدًا شَكُورًا"
+  },
+  {
+   "word_ref": "17:62:13:1",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "17:62",
+     "verse_text": "قَالَ أَرَءَيْتَكَ هَٰذَا ٱلَّذِى كَرَّمْتَ عَلَىَّ لَئِنْ أَخَّرْتَنِ إِلَىٰ يَوْمِ ٱلْقِيَٰمَةِ لَأَحْتَنِكَنَّ ذُرِّيَّتَهُۥٓ إِلَّا قَلِيلًا"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "17:62",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~ata",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قَالَ أَرَءَيْتَكَ هَٰذَا ٱلَّذِى كَرَّمْتَ عَلَىَّ لَئِنْ أَخَّرْتَنِ إِلَىٰ يَوْمِ ٱلْقِيَٰمَةِ لَأَحْتَنِكَنَّ ذُرِّيَّتَهُۥٓ إِلَّا قَلِيلًا"
+  },
+  {
+   "word_ref": "18:50:17:2",
+   "disposition": "CONSISTENT",
+   "note": "Refines the negative boundary (not human-exclusive); does not resist the progeny account.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "وَذُرِّيَّتَهُ applied to Iblis (a jinn) appears to resist a human-lineage reading.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": "Class B is defined as progeny-of-a-progenitor, not human-exclusive; the Iblis case confirms this negative boundary.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "18:50:17:2",
+     "preliminary_disposition": "RESISTANT",
+     "preliminary_note": "Iblis's dhurriyyah extends the term to a non-human referent.",
+     "final_disposition": "CONSISTENT",
+     "reconciliation_rationale": "Class B is defined as progeny-of-a-progenitor, not human-exclusive; the Iblis case confirms this negative boundary.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [
+    "It confirms rather than breaks the account: the seme is 'progeny of a progenitor', not 'human children', so a non-human brood is fully in-scope."
+   ],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "18:50",
+     "verse_text": "وَإِذْ قُلْنَا لِلْمَلَٰٓئِكَةِ ٱسْجُدُوا۟ لِـَٔادَمَ فَسَجَدُوٓا۟ إِلَّآ إِبْلِيسَ كَانَ مِنَ ٱلْجِنِّ فَفَسَقَ عَنْ أَمْرِ رَبِّهِۦٓ أَفَتَتَّخِذُونَهُۥ وَذُرِّيَّتَهُۥٓ أَوْلِيَآءَ مِن دُونِى وَهُمْ لَكُمْ عَدُوٌّۢ بِئْسَ لِلظَّٰلِمِينَ بَدَلًا"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "18:50",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~ata",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِذْ قُلْنَا لِلْمَلَٰٓئِكَةِ ٱسْجُدُوا۟ لِـَٔادَمَ فَسَجَدُوٓا۟ إِلَّآ إِبْلِيسَ كَانَ مِنَ ٱلْجِنِّ فَفَسَقَ عَنْ أَمْرِ رَبِّهِۦٓ أَفَتَتَّخِذُونَهُۥ وَذُرِّيَّتَهُۥٓ أَوْلِيَآءَ مِن دُونِى وَهُمْ لَكُمْ عَدُوٌّۢ بِئْسَ لِلظَّٰلِمِينَ بَدَلًا"
+  },
+  {
+   "word_ref": "19:58:16:1",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "19:58",
+     "verse_text": "أُو۟لَٰٓئِكَ ٱلَّذِينَ أَنْعَمَ ٱللَّهُ عَلَيْهِم مِّنَ ٱلنَّبِيِّـۧنَ مِن ذُرِّيَّةِ ءَادَمَ وَمِمَّنْ حَمَلْنَا مَعَ نُوحٍ وَمِن ذُرِّيَّةِ إِبْرَٰهِيمَ وَإِسْرَٰٓءِيلَ وَمِمَّنْ هَدَيْنَا وَٱجْتَبَيْنَآ إِذَا تُتْلَىٰ عَلَيْهِمْ ءَايَٰتُ ٱلرَّحْمَٰنِ خَرُّوا۟ سُجَّدًا وَبُكِيًّا"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "19:58",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~api",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أُو۟لَٰٓئِكَ ٱلَّذِينَ أَنْعَمَ ٱللَّهُ عَلَيْهِم مِّنَ ٱلنَّبِيِّـۧنَ مِن ذُرِّيَّةِ ءَادَمَ وَمِمَّنْ حَمَلْنَا مَعَ نُوحٍ وَمِن ذُرِّيَّةِ إِبْرَٰهِيمَ وَإِسْرَٰٓءِيلَ وَمِمَّنْ هَدَيْنَا وَٱجْتَبَيْنَآ إِذَا تُتْلَىٰ عَلَيْهِمْ ءَايَٰتُ ٱلرَّحْمَٰنِ خَرُّوا۟ سُجَّدًا وَبُكِيًّا"
+  },
+  {
+   "word_ref": "19:58:9:1",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "19:58",
+     "verse_text": "أُو۟لَٰٓئِكَ ٱلَّذِينَ أَنْعَمَ ٱللَّهُ عَلَيْهِم مِّنَ ٱلنَّبِيِّـۧنَ مِن ذُرِّيَّةِ ءَادَمَ وَمِمَّنْ حَمَلْنَا مَعَ نُوحٍ وَمِن ذُرِّيَّةِ إِبْرَٰهِيمَ وَإِسْرَٰٓءِيلَ وَمِمَّنْ هَدَيْنَا وَٱجْتَبَيْنَآ إِذَا تُتْلَىٰ عَلَيْهِمْ ءَايَٰتُ ٱلرَّحْمَٰنِ خَرُّوا۟ سُجَّدًا وَبُكِيًّا"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "19:58",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~api",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أُو۟لَٰٓئِكَ ٱلَّذِينَ أَنْعَمَ ٱللَّهُ عَلَيْهِم مِّنَ ٱلنَّبِيِّـۧنَ مِن ذُرِّيَّةِ ءَادَمَ وَمِمَّنْ حَمَلْنَا مَعَ نُوحٍ وَمِن ذُرِّيَّةِ إِبْرَٰهِيمَ وَإِسْرَٰٓءِيلَ وَمِمَّنْ هَدَيْنَا وَٱجْتَبَيْنَآ إِذَا تُتْلَىٰ عَلَيْهِمْ ءَايَٰتُ ٱلرَّحْمَٰنِ خَرُّوا۟ سُجَّدًا وَبُكِيًّا"
+  },
+  {
+   "word_ref": "25:74:8:2",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "25:74",
+     "verse_text": "وَٱلَّذِينَ يَقُولُونَ رَبَّنَا هَبْ لَنَا مِنْ أَزْوَٰجِنَا وَذُرِّيَّٰتِنَا قُرَّةَ أَعْيُنٍ وَٱجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "25:74",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~a`ti",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱلَّذِينَ يَقُولُونَ رَبَّنَا هَبْ لَنَا مِنْ أَزْوَٰجِنَا وَذُرِّيَّٰتِنَا قُرَّةَ أَعْيُنٍ وَٱجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا"
+  },
+  {
+   "word_ref": "29:27:7:1",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "29:27",
+     "verse_text": "وَوَهَبْنَا لَهُۥٓ إِسْحَٰقَ وَيَعْقُوبَ وَجَعَلْنَا فِى ذُرِّيَّتِهِ ٱلنُّبُوَّةَ وَٱلْكِتَٰبَ وَءَاتَيْنَٰهُ أَجْرَهُۥ فِى ٱلدُّنْيَا وَإِنَّهُۥ فِى ٱلْـَٔاخِرَةِ لَمِنَ ٱلصَّٰلِحِينَ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "29:27",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~ati",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَوَهَبْنَا لَهُۥٓ إِسْحَٰقَ وَيَعْقُوبَ وَجَعَلْنَا فِى ذُرِّيَّتِهِ ٱلنُّبُوَّةَ وَٱلْكِتَٰبَ وَءَاتَيْنَٰهُ أَجْرَهُۥ فِى ٱلدُّنْيَا وَإِنَّهُۥ فِى ٱلْـَٔاخِرَةِ لَمِنَ ٱلصَّٰلِحِينَ"
+  },
+  {
+   "word_ref": "2:124:14:1",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:124",
+     "verse_text": "وَإِذِ ٱبْتَلَىٰٓ إِبْرَٰهِـۧمَ رَبُّهُۥ بِكَلِمَٰتٍ فَأَتَمَّهُنَّ قَالَ إِنِّى جَاعِلُكَ لِلنَّاسِ إِمَامًا قَالَ وَمِن ذُرِّيَّتِى قَالَ لَا يَنَالُ عَهْدِى ٱلظَّٰلِمِينَ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "2:124",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~ati",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِذِ ٱبْتَلَىٰٓ إِبْرَٰهِـۧمَ رَبُّهُۥ بِكَلِمَٰتٍ فَأَتَمَّهُنَّ قَالَ إِنِّى جَاعِلُكَ لِلنَّاسِ إِمَامًا قَالَ وَمِن ذُرِّيَّتِى قَالَ لَا يَنَالُ عَهْدِى ٱلظَّٰلِمِينَ"
+  },
+  {
+   "word_ref": "2:128:6:1",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:128",
+     "verse_text": "رَبَّنَا وَٱجْعَلْنَا مُسْلِمَيْنِ لَكَ وَمِن ذُرِّيَّتِنَآ أُمَّةً مُّسْلِمَةً لَّكَ وَأَرِنَا مَنَاسِكَنَا وَتُبْ عَلَيْنَآ إِنَّكَ أَنتَ ٱلتَّوَّابُ ٱلرَّحِيمُ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "2:128",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~ati",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "رَبَّنَا وَٱجْعَلْنَا مُسْلِمَيْنِ لَكَ وَمِن ذُرِّيَّتِنَآ أُمَّةً مُّسْلِمَةً لَّكَ وَأَرِنَا مَنَاسِكَنَا وَتُبْ عَلَيْنَآ إِنَّكَ أَنتَ ٱلتَّوَّابُ ٱلرَّحِيمُ"
+  },
+  {
+   "word_ref": "2:266:22:1",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:266",
+     "verse_text": "أَيَوَدُّ أَحَدُكُمْ أَن تَكُونَ لَهُۥ جَنَّةٌ مِّن نَّخِيلٍ وَأَعْنَابٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ لَهُۥ فِيهَا مِن كُلِّ ٱلثَّمَرَٰتِ وَأَصَابَهُ ٱلْكِبَرُ وَلَهُۥ ذُرِّيَّةٌ ضُعَفَآءُ فَأَصَابَهَآ إِعْصَارٌ فِيهِ نَارٌ فَٱحْتَرَقَتْ كَذَٰلِكَ يُبَيِّنُ ٱللَّهُ لَكُمُ ٱلْـَٔايَٰتِ لَعَلَّكُمْ تَتَفَكَّرُونَ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "2:266",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~apN",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَيَوَدُّ أَحَدُكُمْ أَن تَكُونَ لَهُۥ جَنَّةٌ مِّن نَّخِيلٍ وَأَعْنَابٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ لَهُۥ فِيهَا مِن كُلِّ ٱلثَّمَرَٰتِ وَأَصَابَهُ ٱلْكِبَرُ وَلَهُۥ ذُرِّيَّةٌ ضُعَفَآءُ فَأَصَابَهَآ إِعْصَارٌ فِيهِ نَارٌ فَٱحْتَرَقَتْ كَذَٰلِكَ يُبَيِّنُ ٱللَّهُ لَكُمُ ٱلْـَٔايَٰتِ لَعَلَّكُمْ تَتَفَكَّرُونَ"
+  },
+  {
+   "word_ref": "34:22:11:1",
+   "disposition": "RESISTANT",
+   "note": "All 6 are the identical indefinite genitive collocation with مِثْقَال; 10:61 and 34:3 rank it between أَصْغَر and أَكْبَر, fixing its metrological sense. This lexicalized measure-noun shares nothing semantically with the 32 progeny tokens beyond the consonantal root, so it constitutes the resistant sub-class that blocks any unified root nucleus.",
+   "coverage_cluster_id": "A_dharrah_measure",
+   "candidate_semantic_interpretation": "ذَرَّة: the smallest nameable quantity on a weight/magnitude scale, occurring only in the fixed idiom مِثْقَال ذَرَّة as a threshold-of-notice in divine reckoning (knowledge, ownership/power, justice, recompense); explicitly a benchmark, not the absolute minimum (10:61/34:3: وَلَآ أَصْغَرَ مِن ذَٰلِكَ).",
+   "cluster_supporting_evidence": "10:61:27:1 and 34:3:17:1 self-define ذَرَّة as a graded magnitude; 4:40:6:1 (لَا يَظْلِمُ مِثْقَالَ ذَرَّةٍ) and 99:7-8 (خَيْرًا/شَرًّا) show the invariant reckoning frame; 34:22:11:1 applies it to ownership/power.",
+   "counterevidence": [
+    "10:61:27:1",
+    "34:3:17:1"
+   ],
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "All 6 are the identical indefinite genitive collocation with مِثْقَال; 10:61 and 34:3 rank it between أَصْغَر and أَكْبَر, fixing its metrological sense. This lexicalized measure-noun shares nothing semantically with the 32 progeny tokens beyond the consonantal root, so it constitutes the resistant sub-class that blocks any unified root nucleus.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "34:22",
+     "verse_text": "قُلِ ٱدْعُوا۟ ٱلَّذِينَ زَعَمْتُم مِّن دُونِ ٱللَّهِ لَا يَمْلِكُونَ مِثْقَالَ ذَرَّةٍ فِى ٱلسَّمَٰوَٰتِ وَلَا فِى ٱلْأَرْضِ وَمَا لَهُمْ فِيهِمَا مِن شِرْكٍ وَمَا لَهُۥ مِنْهُم مِّن ظَهِيرٍ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "34:22",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ar~apK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قُلِ ٱدْعُوا۟ ٱلَّذِينَ زَعَمْتُم مِّن دُونِ ٱللَّهِ لَا يَمْلِكُونَ مِثْقَالَ ذَرَّةٍ فِى ٱلسَّمَٰوَٰتِ وَلَا فِى ٱلْأَرْضِ وَمَا لَهُمْ فِيهِمَا مِن شِرْكٍ وَمَا لَهُۥ مِنْهُم مِّن ظَهِيرٍ",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "34:3:17:1",
+   "disposition": "RESISTANT",
+   "note": "All 6 are the identical indefinite genitive collocation with مِثْقَال; 10:61 and 34:3 rank it between أَصْغَر and أَكْبَر, fixing its metrological sense. This lexicalized measure-noun shares nothing semantically with the 32 progeny tokens beyond the consonantal root, so it constitutes the resistant sub-class that blocks any unified root nucleus.",
+   "coverage_cluster_id": "A_dharrah_measure",
+   "candidate_semantic_interpretation": "ذَرَّة: the smallest nameable quantity on a weight/magnitude scale, occurring only in the fixed idiom مِثْقَال ذَرَّة as a threshold-of-notice in divine reckoning (knowledge, ownership/power, justice, recompense); explicitly a benchmark, not the absolute minimum (10:61/34:3: وَلَآ أَصْغَرَ مِن ذَٰلِكَ).",
+   "cluster_supporting_evidence": "10:61:27:1 and 34:3:17:1 self-define ذَرَّة as a graded magnitude; 4:40:6:1 (لَا يَظْلِمُ مِثْقَالَ ذَرَّةٍ) and 99:7-8 (خَيْرًا/شَرًّا) show the invariant reckoning frame; 34:22:11:1 applies it to ownership/power.",
+   "counterevidence": [
+    "10:61:27:1",
+    "34:3:17:1"
+   ],
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "All 6 are the identical indefinite genitive collocation with مِثْقَال; 10:61 and 34:3 rank it between أَصْغَر and أَكْبَر, fixing its metrological sense. This lexicalized measure-noun shares nothing semantically with the 32 progeny tokens beyond the consonantal root, so it constitutes the resistant sub-class that blocks any unified root nucleus.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "34:3",
+     "verse_text": "وَقَالَ ٱلَّذِينَ كَفَرُوا۟ لَا تَأْتِينَا ٱلسَّاعَةُ قُلْ بَلَىٰ وَرَبِّى لَتَأْتِيَنَّكُمْ عَٰلِمِ ٱلْغَيْبِ لَا يَعْزُبُ عَنْهُ مِثْقَالُ ذَرَّةٍ فِى ٱلسَّمَٰوَٰتِ وَلَا فِى ٱلْأَرْضِ وَلَآ أَصْغَرُ مِن ذَٰلِكَ وَلَآ أَكْبَرُ إِلَّا فِى كِتَٰبٍ مُّبِينٍ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "34:3",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ar~apK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَقَالَ ٱلَّذِينَ كَفَرُوا۟ لَا تَأْتِينَا ٱلسَّاعَةُ قُلْ بَلَىٰ وَرَبِّى لَتَأْتِيَنَّكُمْ عَٰلِمِ ٱلْغَيْبِ لَا يَعْزُبُ عَنْهُ مِثْقَالُ ذَرَّةٍ فِى ٱلسَّمَٰوَٰتِ وَلَا فِى ٱلْأَرْضِ وَلَآ أَصْغَرُ مِن ذَٰلِكَ وَلَآ أَكْبَرُ إِلَّا فِى كِتَٰبٍ مُّبِينٍ",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "36:41:5:1",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "36:41",
+     "verse_text": "وَءَايَةٌ لَّهُمْ أَنَّا حَمَلْنَا ذُرِّيَّتَهُمْ فِى ٱلْفُلْكِ ٱلْمَشْحُونِ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "36:41",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~ata",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَءَايَةٌ لَّهُمْ أَنَّا حَمَلْنَا ذُرِّيَّتَهُمْ فِى ٱلْفُلْكِ ٱلْمَشْحُونِ"
+  },
+  {
+   "word_ref": "37:113:6:1",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "37:113",
+     "verse_text": "وَبَٰرَكْنَا عَلَيْهِ وَعَلَىٰٓ إِسْحَٰقَ وَمِن ذُرِّيَّتِهِمَا مُحْسِنٌ وَظَالِمٌ لِّنَفْسِهِۦ مُبِينٌ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "37:113",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~ati",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَبَٰرَكْنَا عَلَيْهِ وَعَلَىٰٓ إِسْحَٰقَ وَمِن ذُرِّيَّتِهِمَا مُحْسِنٌ وَظَالِمٌ لِّنَفْسِهِۦ مُبِينٌ"
+  },
+  {
+   "word_ref": "37:77:2:1",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "37:77",
+     "verse_text": "وَجَعَلْنَا ذُرِّيَّتَهُۥ هُمُ ٱلْبَاقِينَ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "37:77",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~ata",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَجَعَلْنَا ذُرِّيَّتَهُۥ هُمُ ٱلْبَاقِينَ"
+  },
+  {
+   "word_ref": "3:34:1:1",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:34",
+     "verse_text": "ذُرِّيَّةًۢ بَعْضُهَا مِنۢ بَعْضٍ وَٱللَّهُ سَمِيعٌ عَلِيمٌ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "3:34",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~apF[",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ذُرِّيَّةًۢ بَعْضُهَا مِنۢ بَعْضٍ وَٱللَّهُ سَمِيعٌ عَلِيمٌ"
+  },
+  {
+   "word_ref": "3:36:21:2",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:36",
+     "verse_text": "فَلَمَّا وَضَعَتْهَا قَالَتْ رَبِّ إِنِّى وَضَعْتُهَآ أُنثَىٰ وَٱللَّهُ أَعْلَمُ بِمَا وَضَعَتْ وَلَيْسَ ٱلذَّكَرُ كَٱلْأُنثَىٰ وَإِنِّى سَمَّيْتُهَا مَرْيَمَ وَإِنِّىٓ أُعِيذُهَا بِكَ وَذُرِّيَّتَهَا مِنَ ٱلشَّيْطَٰنِ ٱلرَّجِيمِ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "3:36",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~ata",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَلَمَّا وَضَعَتْهَا قَالَتْ رَبِّ إِنِّى وَضَعْتُهَآ أُنثَىٰ وَٱللَّهُ أَعْلَمُ بِمَا وَضَعَتْ وَلَيْسَ ٱلذَّكَرُ كَٱلْأُنثَىٰ وَإِنِّى سَمَّيْتُهَا مَرْيَمَ وَإِنِّىٓ أُعِيذُهَا بِكَ وَذُرِّيَّتَهَا مِنَ ٱلشَّيْطَٰنِ ٱلرَّجِيمِ"
+  },
+  {
+   "word_ref": "3:38:11:1",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "3:38",
+     "verse_text": "هُنَالِكَ دَعَا زَكَرِيَّا رَبَّهُۥ قَالَ رَبِّ هَبْ لِى مِن لَّدُنكَ ذُرِّيَّةً طَيِّبَةً إِنَّكَ سَمِيعُ ٱلدُّعَآءِ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "3:38",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~apF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "هُنَالِكَ دَعَا زَكَرِيَّا رَبَّهُۥ قَالَ رَبِّ هَبْ لِى مِن لَّدُنكَ ذُرِّيَّةً طَيِّبَةً إِنَّكَ سَمِيعُ ٱلدُّعَآءِ"
+  },
+  {
+   "word_ref": "40:8:12:2",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "40:8",
+     "verse_text": "رَبَّنَا وَأَدْخِلْهُمْ جَنَّٰتِ عَدْنٍ ٱلَّتِى وَعَدتَّهُمْ وَمَن صَلَحَ مِنْ ءَابَآئِهِمْ وَأَزْوَٰجِهِمْ وَذُرِّيَّٰتِهِمْ إِنَّكَ أَنتَ ٱلْعَزِيزُ ٱلْحَكِيمُ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "40:8",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~a`ti",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "رَبَّنَا وَأَدْخِلْهُمْ جَنَّٰتِ عَدْنٍ ٱلَّتِى وَعَدتَّهُمْ وَمَن صَلَحَ مِنْ ءَابَآئِهِمْ وَأَزْوَٰجِهِمْ وَذُرِّيَّٰتِهِمْ إِنَّكَ أَنتَ ٱلْعَزِيزُ ٱلْحَكِيمُ"
+  },
+  {
+   "word_ref": "46:15:39:1",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "46:15",
+     "verse_text": "وَوَصَّيْنَا ٱلْإِنسَٰنَ بِوَٰلِدَيْهِ إِحْسَٰنًا حَمَلَتْهُ أُمُّهُۥ كُرْهًا وَوَضَعَتْهُ كُرْهًا وَحَمْلُهُۥ وَفِصَٰلُهُۥ ثَلَٰثُونَ شَهْرًا حَتَّىٰٓ إِذَا بَلَغَ أَشُدَّهُۥ وَبَلَغَ أَرْبَعِينَ سَنَةً قَالَ رَبِّ أَوْزِعْنِىٓ أَنْ أَشْكُرَ نِعْمَتَكَ ٱلَّتِىٓ أَنْعَمْتَ عَلَىَّ وَعَلَىٰ وَٰلِدَىَّ وَأَنْ أَعْمَلَ صَٰلِحًا تَرْضَىٰهُ وَأَصْلِحْ لِى فِى ذُرِّيَّتِىٓ إِنِّى تُبْتُ إِلَيْكَ وَإِنِّى مِنَ ٱلْمُسْلِمِينَ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "46:15",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~ati",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَوَصَّيْنَا ٱلْإِنسَٰنَ بِوَٰلِدَيْهِ إِحْسَٰنًا حَمَلَتْهُ أُمُّهُۥ كُرْهًا وَوَضَعَتْهُ كُرْهًا وَحَمْلُهُۥ وَفِصَٰلُهُۥ ثَلَٰثُونَ شَهْرًا حَتَّىٰٓ إِذَا بَلَغَ أَشُدَّهُۥ وَبَلَغَ أَرْبَعِينَ سَنَةً قَالَ رَبِّ أَوْزِعْنِىٓ أَنْ أَشْكُرَ نِعْمَتَكَ ٱلَّتِىٓ أَنْعَمْتَ عَلَىَّ وَعَلَىٰ وَٰلِدَىَّ وَأَنْ أَعْمَلَ صَٰلِحًا تَرْضَىٰهُ وَأَصْلِحْ لِى فِى ذُرِّيَّتِىٓ إِنِّى تُبْتُ إِلَيْكَ وَإِنِّى مِنَ ٱلْمُسْلِمِينَ"
+  },
+  {
+   "word_ref": "4:40:6:1",
+   "disposition": "RESISTANT",
+   "note": "All 6 are the identical indefinite genitive collocation with مِثْقَال; 10:61 and 34:3 rank it between أَصْغَر and أَكْبَر, fixing its metrological sense. This lexicalized measure-noun shares nothing semantically with the 32 progeny tokens beyond the consonantal root, so it constitutes the resistant sub-class that blocks any unified root nucleus.",
+   "coverage_cluster_id": "A_dharrah_measure",
+   "candidate_semantic_interpretation": "ذَرَّة: the smallest nameable quantity on a weight/magnitude scale, occurring only in the fixed idiom مِثْقَال ذَرَّة as a threshold-of-notice in divine reckoning (knowledge, ownership/power, justice, recompense); explicitly a benchmark, not the absolute minimum (10:61/34:3: وَلَآ أَصْغَرَ مِن ذَٰلِكَ).",
+   "cluster_supporting_evidence": "10:61:27:1 and 34:3:17:1 self-define ذَرَّة as a graded magnitude; 4:40:6:1 (لَا يَظْلِمُ مِثْقَالَ ذَرَّةٍ) and 99:7-8 (خَيْرًا/شَرًّا) show the invariant reckoning frame; 34:22:11:1 applies it to ownership/power.",
+   "counterevidence": [
+    "10:61:27:1",
+    "34:3:17:1"
+   ],
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "All 6 are the identical indefinite genitive collocation with مِثْقَال; 10:61 and 34:3 rank it between أَصْغَر and أَكْبَر, fixing its metrological sense. This lexicalized measure-noun shares nothing semantically with the 32 progeny tokens beyond the consonantal root, so it constitutes the resistant sub-class that blocks any unified root nucleus.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "4:40",
+     "verse_text": "إِنَّ ٱللَّهَ لَا يَظْلِمُ مِثْقَالَ ذَرَّةٍ وَإِن تَكُ حَسَنَةً يُضَٰعِفْهَا وَيُؤْتِ مِن لَّدُنْهُ أَجْرًا عَظِيمًا"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "4:40",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ar~apK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱللَّهَ لَا يَظْلِمُ مِثْقَالَ ذَرَّةٍ وَإِن تَكُ حَسَنَةً يُضَٰعِفْهَا وَيُؤْتِ مِن لَّدُنْهُ أَجْرًا عَظِيمًا",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "4:9:7:1",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "4:9",
+     "verse_text": "وَلْيَخْشَ ٱلَّذِينَ لَوْ تَرَكُوا۟ مِنْ خَلْفِهِمْ ذُرِّيَّةً ضِعَٰفًا خَافُوا۟ عَلَيْهِمْ فَلْيَتَّقُوا۟ ٱللَّهَ وَلْيَقُولُوا۟ قَوْلًا سَدِيدًا"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "4:9",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~apF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلْيَخْشَ ٱلَّذِينَ لَوْ تَرَكُوا۟ مِنْ خَلْفِهِمْ ذُرِّيَّةً ضِعَٰفًا خَافُوا۟ عَلَيْهِمْ فَلْيَتَّقُوا۟ ٱللَّهَ وَلْيَقُولُوا۟ قَوْلًا سَدِيدًا"
+  },
+  {
+   "word_ref": "52:21:4:1",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "52:21",
+     "verse_text": "وَٱلَّذِينَ ءَامَنُوا۟ وَٱتَّبَعَتْهُمْ ذُرِّيَّتُهُم بِإِيمَٰنٍ أَلْحَقْنَا بِهِمْ ذُرِّيَّتَهُمْ وَمَآ أَلَتْنَٰهُم مِّنْ عَمَلِهِم مِّن شَىْءٍ كُلُّ ٱمْرِئٍۭ بِمَا كَسَبَ رَهِينٌ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "52:21",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~atu",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱلَّذِينَ ءَامَنُوا۟ وَٱتَّبَعَتْهُمْ ذُرِّيَّتُهُم بِإِيمَٰنٍ أَلْحَقْنَا بِهِمْ ذُرِّيَّتَهُمْ وَمَآ أَلَتْنَٰهُم مِّنْ عَمَلِهِم مِّن شَىْءٍ كُلُّ ٱمْرِئٍۭ بِمَا كَسَبَ رَهِينٌ"
+  },
+  {
+   "word_ref": "52:21:8:1",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "52:21",
+     "verse_text": "وَٱلَّذِينَ ءَامَنُوا۟ وَٱتَّبَعَتْهُمْ ذُرِّيَّتُهُم بِإِيمَٰنٍ أَلْحَقْنَا بِهِمْ ذُرِّيَّتَهُمْ وَمَآ أَلَتْنَٰهُم مِّنْ عَمَلِهِم مِّن شَىْءٍ كُلُّ ٱمْرِئٍۭ بِمَا كَسَبَ رَهِينٌ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "52:21",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~ata",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱلَّذِينَ ءَامَنُوا۟ وَٱتَّبَعَتْهُمْ ذُرِّيَّتُهُم بِإِيمَٰنٍ أَلْحَقْنَا بِهِمْ ذُرِّيَّتَهُمْ وَمَآ أَلَتْنَٰهُم مِّنْ عَمَلِهِم مِّن شَىْءٍ كُلُّ ٱمْرِئٍۭ بِمَا كَسَبَ رَهِينٌ"
+  },
+  {
+   "word_ref": "57:26:7:1",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "57:26",
+     "verse_text": "وَلَقَدْ أَرْسَلْنَا نُوحًا وَإِبْرَٰهِيمَ وَجَعَلْنَا فِى ذُرِّيَّتِهِمَا ٱلنُّبُوَّةَ وَٱلْكِتَٰبَ فَمِنْهُم مُّهْتَدٍ وَكَثِيرٌ مِّنْهُمْ فَٰسِقُونَ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "57:26",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~ati",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَقَدْ أَرْسَلْنَا نُوحًا وَإِبْرَٰهِيمَ وَجَعَلْنَا فِى ذُرِّيَّتِهِمَا ٱلنُّبُوَّةَ وَٱلْكِتَٰبَ فَمِنْهُم مُّهْتَدٍ وَكَثِيرٌ مِّنْهُمْ فَٰسِقُونَ"
+  },
+  {
+   "word_ref": "6:133:16:1",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:133",
+     "verse_text": "وَرَبُّكَ ٱلْغَنِىُّ ذُو ٱلرَّحْمَةِ إِن يَشَأْ يُذْهِبْكُمْ وَيَسْتَخْلِفْ مِنۢ بَعْدِكُم مَّا يَشَآءُ كَمَآ أَنشَأَكُم مِّن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "6:133",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~api",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَرَبُّكَ ٱلْغَنِىُّ ذُو ٱلرَّحْمَةِ إِن يَشَأْ يُذْهِبْكُمْ وَيَسْتَخْلِفْ مِنۢ بَعْدِكُم مَّا يَشَآءُ كَمَآ أَنشَأَكُم مِّن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ"
+  },
+  {
+   "word_ref": "6:84:12:1",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:84",
+     "verse_text": "وَوَهَبْنَا لَهُۥٓ إِسْحَٰقَ وَيَعْقُوبَ كُلًّا هَدَيْنَا وَنُوحًا هَدَيْنَا مِن قَبْلُ وَمِن ذُرِّيَّتِهِۦ دَاوُۥدَ وَسُلَيْمَٰنَ وَأَيُّوبَ وَيُوسُفَ وَمُوسَىٰ وَهَٰرُونَ وَكَذَٰلِكَ نَجْزِى ٱلْمُحْسِنِينَ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "6:84",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~ati",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَوَهَبْنَا لَهُۥٓ إِسْحَٰقَ وَيَعْقُوبَ كُلًّا هَدَيْنَا وَنُوحًا هَدَيْنَا مِن قَبْلُ وَمِن ذُرِّيَّتِهِۦ دَاوُۥدَ وَسُلَيْمَٰنَ وَأَيُّوبَ وَيُوسُفَ وَمُوسَىٰ وَهَٰرُونَ وَكَذَٰلِكَ نَجْزِى ٱلْمُحْسِنِينَ"
+  },
+  {
+   "word_ref": "6:87:3:2",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:87",
+     "verse_text": "وَمِنْ ءَابَآئِهِمْ وَذُرِّيَّٰتِهِمْ وَإِخْوَٰنِهِمْ وَٱجْتَبَيْنَٰهُمْ وَهَدَيْنَٰهُمْ إِلَىٰ صِرَٰطٍ مُّسْتَقِيمٍ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "6:87",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~a`ti",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَمِنْ ءَابَآئِهِمْ وَذُرِّيَّٰتِهِمْ وَإِخْوَٰنِهِمْ وَٱجْتَبَيْنَٰهُمْ وَهَدَيْنَٰهُمْ إِلَىٰ صِرَٰطٍ مُّسْتَقِيمٍ"
+  },
+  {
+   "word_ref": "7:172:9:1",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:172",
+     "verse_text": "وَإِذْ أَخَذَ رَبُّكَ مِنۢ بَنِىٓ ءَادَمَ مِن ظُهُورِهِمْ ذُرِّيَّتَهُمْ وَأَشْهَدَهُمْ عَلَىٰٓ أَنفُسِهِمْ أَلَسْتُ بِرَبِّكُمْ قَالُوا۟ بَلَىٰ شَهِدْنَآ أَن تَقُولُوا۟ يَوْمَ ٱلْقِيَٰمَةِ إِنَّا كُنَّا عَنْ هَٰذَا غَٰفِلِينَ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "7:172",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~ata",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِذْ أَخَذَ رَبُّكَ مِنۢ بَنِىٓ ءَادَمَ مِن ظُهُورِهِمْ ذُرِّيَّتَهُمْ وَأَشْهَدَهُمْ عَلَىٰٓ أَنفُسِهِمْ أَلَسْتُ بِرَبِّكُمْ قَالُوا۟ بَلَىٰ شَهِدْنَآ أَن تَقُولُوا۟ يَوْمَ ٱلْقِيَٰمَةِ إِنَّا كُنَّا عَنْ هَٰذَا غَٰفِلِينَ"
+  },
+  {
+   "word_ref": "7:173:9:1",
+   "disposition": "CONSISTENT",
+   "note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "coverage_cluster_id": "B_dhurriyyah_progeny",
+   "candidate_semantic_interpretation": "ذُرِّيَّة: progeny, the descending line issuing from a progenitor or stock; a collective/mass noun scalable from a single child (3:38) to many, potentially trans-generational (6:84, 19:58), morally neutral (37:113, 7:173), and not human-exclusive (18:50).",
+   "cluster_supporting_evidence": "Positive anchors: 7:172:9:1 (issuing from the loins), 6:84:12:1 and 19:58:9:1 (trans-generational), 3:34:1:1 (بَعْضُهَا مِنۢ بَعْضٍ), 6:133:16:1 (raised مِن ذُرِّيَّةِ قَوْمٍ ءَاخَرِينَ). Boundary confirmers 18:50:17:2 (non-human) and 37:113:6:1 (moral neutrality) refine rather than break the account.",
+   "counterevidence": [
+    "18:50:17:2",
+    "10:83:5:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The 32 tokens cohere as the descent-vector: co-listed with but never conflated with آبَاء/أَزْوَاج/إِخْوَان (13:23, 6:87, 40:8, 25:74); drawn مِن ظُهُورِهِمْ (7:172); anchored to named progenitors/stock (6:84, 19:58, 6:133); the locus of covenant/prophethood (2:124, 29:27, 57:26). No token denotes a weight or particle.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:173",
+     "verse_text": "أَوْ تَقُولُوٓا۟ إِنَّمَآ أَشْرَكَ ءَابَآؤُنَا مِن قَبْلُ وَكُنَّا ذُرِّيَّةً مِّنۢ بَعْدِهِمْ أَفَتُهْلِكُنَا بِمَا فَعَلَ ٱلْمُبْطِلُونَ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "7:173",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ur~iy~apF",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَوْ تَقُولُوٓا۟ إِنَّمَآ أَشْرَكَ ءَابَآؤُنَا مِن قَبْلُ وَكُنَّا ذُرِّيَّةً مِّنۢ بَعْدِهِمْ أَفَتُهْلِكُنَا بِمَا فَعَلَ ٱلْمُبْطِلُونَ"
+  },
+  {
+   "word_ref": "99:7:4:1",
+   "disposition": "RESISTANT",
+   "note": "All 6 are the identical indefinite genitive collocation with مِثْقَال; 10:61 and 34:3 rank it between أَصْغَر and أَكْبَر, fixing its metrological sense. This lexicalized measure-noun shares nothing semantically with the 32 progeny tokens beyond the consonantal root, so it constitutes the resistant sub-class that blocks any unified root nucleus.",
+   "coverage_cluster_id": "A_dharrah_measure",
+   "candidate_semantic_interpretation": "ذَرَّة: the smallest nameable quantity on a weight/magnitude scale, occurring only in the fixed idiom مِثْقَال ذَرَّة as a threshold-of-notice in divine reckoning (knowledge, ownership/power, justice, recompense); explicitly a benchmark, not the absolute minimum (10:61/34:3: وَلَآ أَصْغَرَ مِن ذَٰلِكَ).",
+   "cluster_supporting_evidence": "10:61:27:1 and 34:3:17:1 self-define ذَرَّة as a graded magnitude; 4:40:6:1 (لَا يَظْلِمُ مِثْقَالَ ذَرَّةٍ) and 99:7-8 (خَيْرًا/شَرًّا) show the invariant reckoning frame; 34:22:11:1 applies it to ownership/power.",
+   "counterevidence": [
+    "10:61:27:1",
+    "34:3:17:1"
+   ],
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "All 6 are the identical indefinite genitive collocation with مِثْقَال; 10:61 and 34:3 rank it between أَصْغَر and أَكْبَر, fixing its metrological sense. This lexicalized measure-noun shares nothing semantically with the 32 progeny tokens beyond the consonantal root, so it constitutes the resistant sub-class that blocks any unified root nucleus.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "99:7",
+     "verse_text": "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُۥ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "99:7",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ar~apK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُۥ",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "99:8:4:1",
+   "disposition": "RESISTANT",
+   "note": "All 6 are the identical indefinite genitive collocation with مِثْقَال; 10:61 and 34:3 rank it between أَصْغَر and أَكْبَر, fixing its metrological sense. This lexicalized measure-noun shares nothing semantically with the 32 progeny tokens beyond the consonantal root, so it constitutes the resistant sub-class that blocks any unified root nucleus.",
+   "coverage_cluster_id": "A_dharrah_measure",
+   "candidate_semantic_interpretation": "ذَرَّة: the smallest nameable quantity on a weight/magnitude scale, occurring only in the fixed idiom مِثْقَال ذَرَّة as a threshold-of-notice in divine reckoning (knowledge, ownership/power, justice, recompense); explicitly a benchmark, not the absolute minimum (10:61/34:3: وَلَآ أَصْغَرَ مِن ذَٰلِكَ).",
+   "cluster_supporting_evidence": "10:61:27:1 and 34:3:17:1 self-define ذَرَّة as a graded magnitude; 4:40:6:1 (لَا يَظْلِمُ مِثْقَالَ ذَرَّةٍ) and 99:7-8 (خَيْرًا/شَرًّا) show the invariant reckoning frame; 34:22:11:1 applies it to ownership/power.",
+   "counterevidence": [
+    "10:61:27:1",
+    "34:3:17:1"
+   ],
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "All 6 are the identical indefinite genitive collocation with مِثْقَال; 10:61 and 34:3 rank it between أَصْغَر and أَكْبَر, fixing its metrological sense. This lexicalized measure-noun shares nothing semantically with the 32 progeny tokens beyond the consonantal root, so it constitutes the resistant sub-class that blocks any unified root nucleus.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "99:8",
+     "verse_text": "وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَرَهُۥ"
+    }
+   ],
+   "root_arabic": "ذ ر ر",
+   "root_buckwalter": "*rr",
+   "root_id": "*rr",
+   "artifact_name": "_2A_rr.json",
+   "verse_ref": "99:8",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "*ar~apK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَرَهُۥ",
+   "deep_analysis": true
+  }
+ ],
+ "resistant_deep_analysis": [
+  {
+   "word_ref": "10:61:27:1",
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "All 6 are the identical indefinite genitive collocation with مِثْقَال; 10:61 and 34:3 rank it between أَصْغَر and أَكْبَر, fixing its metrological sense. This lexicalized measure-noun shares nothing semantically with the 32 progeny tokens beyond the consonantal root, so it constitutes the resistant sub-class that blocks any unified root nucleus.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "34:22:11:1",
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "All 6 are the identical indefinite genitive collocation with مِثْقَال; 10:61 and 34:3 rank it between أَصْغَر and أَكْبَر, fixing its metrological sense. This lexicalized measure-noun shares nothing semantically with the 32 progeny tokens beyond the consonantal root, so it constitutes the resistant sub-class that blocks any unified root nucleus.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "34:3:17:1",
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "All 6 are the identical indefinite genitive collocation with مِثْقَال; 10:61 and 34:3 rank it between أَصْغَر and أَكْبَر, fixing its metrological sense. This lexicalized measure-noun shares nothing semantically with the 32 progeny tokens beyond the consonantal root, so it constitutes the resistant sub-class that blocks any unified root nucleus.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "4:40:6:1",
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "All 6 are the identical indefinite genitive collocation with مِثْقَال; 10:61 and 34:3 rank it between أَصْغَر and أَكْبَر, fixing its metrological sense. This lexicalized measure-noun shares nothing semantically with the 32 progeny tokens beyond the consonantal root, so it constitutes the resistant sub-class that blocks any unified root nucleus.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "99:7:4:1",
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "All 6 are the identical indefinite genitive collocation with مِثْقَال; 10:61 and 34:3 rank it between أَصْغَر and أَكْبَر, fixing its metrological sense. This lexicalized measure-noun shares nothing semantically with the 32 progeny tokens beyond the consonantal root, so it constitutes the resistant sub-class that blocks any unified root nucleus.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "99:8:4:1",
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "All 6 are the identical indefinite genitive collocation with مِثْقَال; 10:61 and 34:3 rank it between أَصْغَر and أَكْبَر, fixing its metrological sense. This lexicalized measure-noun shares nothing semantically with the 32 progeny tokens beyond the consonantal root, so it constitutes the resistant sub-class that blocks any unified root nucleus.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "deep_analysis": true
+  }
+ ],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "UNRESOLVED",
+ "result_strength": "UNRESOLVED",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Three independent lenses (A, B, adversary C) each concluded, without coordination, that ذ-ر-ر hosts two unbridged lexicalized nominal classes and that a unified nucleus is not Quran-internally demonstrable.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "10:61:27:1",
+  "34:22:11:1",
+  "34:3:17:1",
+  "4:40:6:1",
+  "99:7:4:1",
+  "99:8:4:1"
+ ],
+ "unreconciled_count": 6,
+ "resistant_occurrences": [
+  "10:61:27:1",
+  "34:22:11:1",
+  "34:3:17:1",
+  "4:40:6:1",
+  "99:7:4:1",
+  "99:8:4:1"
+ ],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": null,
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "LOCAL",
+ "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
+ "layer_attribution": {
+  "occurrence_evidence": "38/38 occurrences read from verse_text; Class A (6) all in مِثْقَال ذَرَّة with أَصْغَر/أَكْبَر ranking at 10:61/34:3; Class B (32) all denote progeny across covenant, petition, vulnerability, deliverance, adversary, and genealogical statements.",
+  "derivation": "No verbal derivation exists (form_inventory={N:38}); the two classes are distinct nominal templates (*ar~apK vs *ur~iy~ap-/*ur~iy~a`t-) preserving the geminate ر, i.e. separate lexicalizations, not inflections of one stem — so QAC tags (uniform N) carry no discriminating signal.",
+  "lexical_class": "Two lexicalized nominal classes: ذَرَّة (minimal measure-unit, idiom-bound) and ذُرِّيَّة (descending progeny). Each is class-internally coherent; neither generalizes to a shared root value.",
+  "contextual_relation": "Contextual/narrative uses (reckoning frames for ذَرَّة; election/prayer/vulnerability frames for ذُرِّيَّة) are noted but NOT elevated to a root claim; they describe class-level and occurrence-level meaning only.",
+  "reconciliation": "Two initially-resistant Class B tokens (10:83 faction/remnant; 18:50 non-human) were reconciled to the progeny account as source-derived instances; the 6 ذَرَّة tokens were NOT reconcilable to that account and persist as the resistant seam.",
+  "unresolved_resistance": "The unified-root nucleus is UNRESOLVED: the ذَرَّة measure-class and the ذُرِّيَّة progeny-class have no Quran-internal bridge, the only candidate unifier being external etymology barred by source policy. This structural resistance is the finding, not a failure."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "10:61:27:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "ذَرَّة as a weight-benchmark ranked between أَصْغَر and أَكْبَر; incommensurable with the progeny class, contributing to the unbridged partition.",
+   "evidence_basis": {
+    "kind": "SELF_DEFINITION",
+    "statement": "10:61 defines ذَرَّة as a graded magnitude (مِثْقَالِ ذَرَّةٍ ... وَلَآ أَصْغَرَ مِن ذَٰلِكَ), a metrological sense with no contact with descent."
+   }
+  },
+  {
+   "word_ref": "34:3:17:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "Self-defined graded quantity (أَصْغَر/أَكْبَر) categorially incompatible with 'progeny'; strongest single block to unification.",
+   "evidence_basis": {
+    "kind": "SELF_DEFINITION",
+    "statement": "34:3 fixes ذَرَّة between 'smaller than that' and 'larger', so the token supplies its own weight-scale frame and cannot be re-read toward ذُرِّيَّة."
+   }
+  },
+  {
+   "word_ref": "34:22:11:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "مِثْقَالَ ذَرَّةٍ of ownership/power; lexicalized measure-idiom sharing nothing with the progeny class.",
+   "evidence_basis": {
+    "kind": "COLLOCATION",
+    "statement": "34:22 uses the fixed idiom مِثْقَال ذَرَّة for ownership in the heavens/earth, a quantity sense disjoint from descent."
+   }
+  },
+  {
+   "word_ref": "4:40:6:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "لَا يَظْلِمُ مِثْقَالَ ذَرَّةٍ — minimal-measure in a justice frame; no bridge to offspring.",
+   "evidence_basis": {
+    "kind": "COLLOCATION",
+    "statement": "4:40 uses ذَرَّة as the smallest reckonable unit of desert, a metrological seme with no descent content."
+   }
+  },
+  {
+   "word_ref": "99:7:4:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "مِثْقَالَ ذَرَّةٍ خَيْرًا — weight-of-a-deed; the referent is a quantum, not a descendant.",
+   "evidence_basis": {
+    "kind": "REFERENT_INCOMMENSURABILITY",
+    "statement": "99:7 modifies ذَرَّة by a deed-quality (good), fixing it as a unit of weight, incommensurable with a living line."
+   }
+  },
+  {
+   "word_ref": "99:8:4:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "مِثْقَالَ ذَرَّةٍ شَرًّا — parallel weight-of-a-deed; part of the resistant measure sub-class.",
+   "evidence_basis": {
+    "kind": "REFERENT_INCOMMENSURABILITY",
+    "statement": "99:8 mirrors 99:7 with evil, confirming ذَرَّة as a recompense-weight unit disjoint from ذُرِّيَّة."
+   }
+  },
+  {
+   "word_ref": "10:83:5:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "ذُرِّيَّةٌ مِّن قَوْمِهِ names a descended faction/remnant of a living people, probing whether Class B is strictly ancestor-genealogical.",
+   "evidence_basis": {
+    "kind": "CONTEXTUAL",
+    "statement": "10:83's partitive مِّن قَوْمِهِ marks the descended segment of a stock, keeping the source-derivation seme intact."
+   }
+  },
+  {
+   "word_ref": "18:50:17:2",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "Iblis's ذُرِّيَّة tests human-exclusivity of the progeny account.",
+   "evidence_basis": {
+    "kind": "CONTEXTUAL",
+    "statement": "18:50 applies ذُرِّيَّة to a jinn, confirming the seme is progeny-of-a-progenitor, not human children."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL",
+  "rationale": "The resistance is structural at the root level: the 6 ذَرَّة (measure) occurrences form a lexicalized nominal sub-class that cannot be assimilated to the 32 ذُرِّيَّة (progeny) occurrences, and no Quran-internal bridge exists. These 6 persist as the resistant seam (RESISTANT_SEAM) and are recorded as counterevidence to any unified nucleus; 10:83 and 18:50 are adversarial boundaries within Class B that survive scrutiny."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A Quran-internal occurrence or relation is exhibited that bridges the two classes and collapses the partition into one nucleus — e.g. a verse in which ذَرَّة carries a descent/seed sense or ذُرِّيَّة carries a weight/magnitude sense, or a shared collocate placing a mote and progeny in one semantic operation.",
+  "search_location": "Re-examine the 6 ذَرَّة tokens (10:61, 34:3, 34:22, 4:40, 99:7-8) and boundary progeny tokens (7:172 مِن ظُهُورِهِمْ, 6:133 أَنشَأَكُم مِّن ذُرِّيَّةِ) for any co-text linking dispersal/multiplication of small units to generation.",
+  "verification_method": "Substitution test across the disputed occurrences: check whether the Class A sense can be read into any Class B token (or vice versa) without contradiction, and whether any verse licenses a shared abstract seme that still predicts the مِثْقَال-idiom vs. lineage distributions.",
+  "confounder_control": "Exclude external etymology, the scatter/seed verb (root ذ-ر-أ, absent here), classical lexica and inherited synonymy; admit only in-corpus verse_text and QAC morphology, which here is uniform N and thus non-discriminating.",
+  "failure_consequence": "If no such bridge is found, the unified-nucleus reading remains unlicensed and the root stays UNRESOLVED / multi-class; if a bridge is found, re-grade toward a single ROOT_GENERALIZATION nucleus."
+ },
+ "falsification_status": "NOT_REQUIRED",
+ "reopen_conditions": [
+  "A verse is identified in which ذَرَّة (currently only 10:61, 34:3, 34:22, 4:40, 99:7, 99:8) occurs outside the مِثْقَال idiom or bears a seed/dispersal/generation sense, providing contact with the ذُرِّيَّة class.",
+  "A verse is identified in which ذُرِّيَّة bears a weight/quantity/minimal-magnitude sense (as ذَرَّة does in 34:3), or a shared collocate places a mote and progeny in one operation.",
+  "A verbal form of the root ذ-ر-ر surfaces in the corpus (currently form_inventory={N:38}, zero verbs), introducing a process sense that could underwrite a shared nucleus.",
+  "A distinctive shared collocate or syntactic frame is found linking 7:172 (ذُرِّيَّة drawn مِن ظُهُورِهِمْ) to the ذَرَّة weighing frame, evidencing 'small units issuing from a source' in-corpus."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "7:172:9:1",
+  "6:84:12:1",
+  "19:58:9:1",
+  "3:34:1:1",
+  "6:133:16:1",
+  "10:61:27:1",
+  "34:3:17:1"
+ ],
+ "counterevidence_refs": [
+  "10:61:27:1",
+  "34:22:11:1",
+  "34:3:17:1",
+  "4:40:6:1",
+  "99:7:4:1",
+  "99:8:4:1"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "rr-unresolved-multiclass-2026",
+  "verdict": "NOT_REQUIRED_UNRESOLVED_CLASS_ONLY",
+  "falsifiable": true,
+  "distinctiveness_ok": false,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "A_dharrah_measure",
+   "B_dhurriyyah_progeny"
+  ],
+  "status_rationale": "No unified root contribution is asserted (candidate_root_contribution=null), so there is no positive root-level claim to adversarially refute; falsification of a nucleus is not applicable to an unresolved-class-only result. The class-internal accounts are reported but the root verdict rests on the demonstrated absence of an in-corpus bridge, not on a passed adversarial test."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "*rr: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "*rr: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "*rr: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "*rr: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "*rr: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "*rr: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "*rr: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "*rr: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}
