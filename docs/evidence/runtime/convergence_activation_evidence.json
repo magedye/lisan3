@@ -1,0 +1,41 @@
+{
+  "authoritative_database": "lisanapp.db (DEFAULT_DATABASE_PATH, Alembic head)",
+  "schema_status": "CURRENT",
+  "schema_revisions": [
+    "f2b7d1e9a3c5"
+  ],
+  "tanzil_snapshot": {
+    "id": "snap_tanzil_1_1_ac0724796cbb",
+    "validation_status": "VALIDATED",
+    "activation_status": "PRODUCTION_ACTIVE",
+    "fixture_only": false,
+    "verse_count": 6236,
+    "canonical_text_hash": "ac0724796cbbda0f4801470fbbd11d0f3c5802067bae0493466d0128b0c667af",
+    "identity_index_sha256": "0d0a2273e82ebb0d9848ccbf831f1bb297c0fb255413c5aeb299bbfaf2bbc967",
+    "is_production_validated": true,
+    "production_validation_failures": []
+  },
+  "tanzil_activation_audit": [
+    {
+      "id": "aud_tanzil_production_activation_ac0724796cbb",
+      "action": "AUTHORIZE_TANZIL_PRODUCTION_ACTIVATION",
+      "actor": "OWNER_AUTHORITY",
+      "entity_type": "CorpusSnapshot"
+    }
+  ],
+  "corpus_occurrences": 6236,
+  "structural_tokens": 49968,
+  "distinct_roots": 1642,
+  "methodology": {
+    "id": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+    "lifecycle_state": "CURRENT",
+    "research_run_eligible": true,
+    "allowed_use": "QURAN_INTERNAL_CUMULATIVE_RUN",
+    "source_reference": "skills/lisan-semantic-extraction/SKILL.md",
+    "source_sha256": "01784170cac4e715c1477cb6a04a2c34b21c4bdb91705aa1eb6b2a896efcedbd",
+    "authority_failures": []
+  },
+  "eligible_methodology_revision_ids": [
+    "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4"
+  ]
+}

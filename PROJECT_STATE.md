@@ -2,6 +2,32 @@
 
 State context only. Canonical repository contracts and runtime evidence remain authoritative.
 
+## Canonical Runtime Qualification Checkpoint (2026-09-12)
+
+- Branch `canonical-runtime-qualification` from main `6dea680052cf3ccf00ccb89396503763c0dc1839`.
+  Infrastructure/governance remediation only — NOT canonicalization, NOT five-root
+  semantic requalification. Batch 08 remains `NOT_AUTHORIZED`.
+- Authoritative runtime DB = `lisanapp.db` (default + only Alembic-stamped). The
+  non-governed `data/campaign/runtime.db` was NOT promoted.
+- Corpus converged into lisanapp.db via repository-native services only
+  (`tools/converge_runtime.py`): Tanzil `snap_tanzil_1_1_ac0724796cbb`
+  PRODUCTION_ACTIVE/VALIDATED (OWNER_AUTHORITY audit), 6,236 CorpusOccurrence,
+  49,968 StructuralToken (1,642 roots); methodology `…@01784170cac4` CURRENT/eligible.
+- Isolation hardened fail-closed: `establishment_status` (default NOT_ESTABLISHED) +
+  attestation + migration `f2b7d1e9a3c5`; canonicalization requires ESTABLISHED.
+- Word-level occurrence authority = `StructuralToken`; `token:<word_ref>` evidence
+  bridge + word-level host completeness; unauthorized-actor canonicalization guard.
+- Five-root exact-set structural derivation reproduces Batch 07 counts exactly
+  (ESw 12, dnw 133, flH 40, fwh 13, glm 13) — structural counting, not semantics.
+- Tests: 251 passed (non-e2e); 0 SemanticClaims/VerificationRecords/ACCEPTED for the
+  five roots; Batch 07 JSONs byte-identical.
+- Status: `CANONICAL_RUNTIME_READY_FOR_FRESH_INDEPENDENT_REVIEW`.
+  Report: `docs/LISAN3_CANONICAL_RUNTIME_QUALIFICATION.md`;
+  handoff: `docs/LISAN3_CANONICAL_RUNTIME_FRESH_REVIEW_HANDOFF.md`.
+  NEXT: fresh Sol xhigh read-only review must return
+  `CANONICAL_RUNTIME_INDEPENDENTLY_CONFIRMED` before any five-root requalification.
+  Hazard flagged: stale duplicate `backend/alembic` chain (head `5542b3a62e23`).
+
 ## Repository
 
 - Root: `D:\APP\tafseer\lisanapp3`
