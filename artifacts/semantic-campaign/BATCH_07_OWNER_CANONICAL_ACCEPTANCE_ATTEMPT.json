@@ -1,0 +1,63 @@
+{
+ "schema_version": "1.0.0",
+ "batch_id": "batch07",
+ "artifact_role": "Durable record of the owner canonical-acceptance EXECUTION attempt for the five threshold-clearing Batch 07 roots. No canonicalization was performed; no DB row was created or mutated. Governance/evidence only.",
+ "attempt_date": "2026-09-12",
+ "starting_main_sha": "fe444b43cc67d56bf3fa16617ed2ca82d1932acb",
+ "status": "OWNER_CANONICAL_ACCEPTANCE_TRANSITION_BLOCKED",
+ "authorized_root_set": ["ESw", "dnw", "flH", "fwh", "glm"],
+ "owner_decisions_consumed": {
+  "ESw": "VERIFY_AT_SCOPE",
+  "dnw": "VERIFY_AT_SCOPE",
+  "flH": "VERIFY_AT_SCOPE",
+  "fwh": "VERIFY_AT_SCOPE",
+  "glm": "VERIFY_AT_SCOPE",
+  "provenance": "Explicit human-owner decisions supplied with the execution instruction. Recorded here as genuine owner input. They are NOT AI-generated semantic verification and could NOT be persisted as repository-native VerificationRecords because no SemanticClaim exists to attach them to (see blocker)."
+ },
+ "roots_canonicalized": [],
+ "roots_pending": ["ESw", "dnw", "flH", "fwh", "glm", "SyH", "Twf", "...all other 241 ledger roots"],
+ "semantic_claims_created": 0,
+ "verification_records_created": 0,
+ "canonical_accepted_transitions": 0,
+ "semantic_artifacts_byte_identical": true,
+ "blocker": {
+  "summary": "No repository-native path exists to materialize the file-based Batch 07 research into canonicalizable SemanticClaims, and the databases lack every genuine precondition CanonicalizationPolicy requires. Satisfying them would require fabricating research-runtime controls or re-running the roots through the governed runtime (performing semantic research) — both explicitly forbidden.",
+  "no_native_materialization_path": "The only SemanticClaim constructor is backend/domain/services/research_judgment.py::ResearchJudgmentService.create, reachable only via the governed API pipeline POST /runs -> /runs/{id}/blind/preflight -> /runs/{id}/observations -> /runs/{id}/judgments -> /judgments/{id}/verification -> /judgments/{id}/canonicalize. There is NO file->claim/from_artifact/ingest/materialize function anywhere. tools/campaign.py emits only JSON artifacts + ledger + a CampaignState row and hardcodes canonical_authorization=PENDING by design (research/canonicalization separation).",
+  "database_scaffolding_genuinely_absent": {
+   "two_database_split": "runtime.db has the corpus (49,968 structural_tokens, snapshot snap_tanzil_1_1_ac0724796cbb) but 0 methodology_revisions; lisanapp.db has the methodology (LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4, CURRENT) but 0 corpus_snapshots/occurrences/tokens. Neither DB alone can host a genuine run.",
+   "snapshot_not_production_valid": "snap_tanzil_1_1_ac0724796cbb is validation_status=PENDING / activation_status=CANONICAL_ACTIVATION_PENDING in runtime.db (absent in lisanapp.db); is_production_validated()==False -> CanonicalizationPolicy 'Corpus snapshot is not production-valid'.",
+   "methodology_missing_in_corpus_db": "runtime.db methodology_revisions is EMPTY -> 'Methodology revision is missing'.",
+   "no_runs_isolation_observations": "research_runs=0, isolation_states=0, observation_artifacts=0, dependency_records=0, semantic_claims=0, verification_records=0 in BOTH DBs.",
+   "occurrences_verse_level_only": "corpus_occurrences are verse-level with empty expression (6236 rows); no per-root/per-expression occurrence rows exist, so resolve_evidence_refs cannot resolve 'occurrence:<id>' for a root and derive_completeness finds 0 eligible occurrences per target_expression.",
+   "evidence_format_mismatch": "campaign artifacts store bare word_refs (e.g. 20:18:3:1); ResearchJudgmentCreate requires typed 'occurrence:<CorpusOccurrence.id>' resolvable within the run's snapshot.",
+   "universal_coverage_gate": "dnw and fwh are UNIVERSAL/ROOT_GENERALIZATION; derive_completeness requires supported_ids==eligible_ids (an ObservationArtifact or supporting-evidence occurrence for EVERY eligible occurrence). The campaign never produced per-occurrence observation rows."
+  },
+  "fabrication_that_would_be_required_and_is_forbidden": [
+   "ISOLATION (highest risk): IsolationState=CLEAN is an unconditional default with NO enforcement/evidence; auto-creating it asserts a blind-lab isolation guarantee the file campaign never established through the runtime.",
+   "PRODUCTION: flipping the PENDING snapshot to VALIDATED/PRODUCTION_ACTIVE (a separate owner-authorized corpus-activation step, not part of 'canonicalize 5 roots').",
+   "RUNS/OBSERVATIONS: hand-creating ResearchRun + full-coverage ObservationArtifacts the campaign never produced.",
+   "METHODOLOGY: registering/aligning a CURRENT source-bound MethodologyRevision in the corpus DB.",
+   "Re-running the roots through the governed runtime pipeline instead would constitute PERFORMING SEMANTIC RESEARCH (forbidden by this task)."
+  ]
+ },
+ "investigation": {
+  "method": "6-way parallel read-only investigation (research-judgment service, API endpoints, canonicalization conditions, both-DB introspection, existing-materialize-path search, corpus/isolation/methodology services) plus direct DB introspection and code reading.",
+  "consensus": "Unanimous: no native file->claim materialization path; every canonicalization precondition genuinely absent; canonicalization impossible without fabrication or new research."
+ },
+ "negative_controls": "Governance suite fail-closed confirmed: 27 tests pass (canonicalization refuses missing/non-INDEPENDENT/stale verification and unauthorized actor; AI has no ACCEPTED transition; steward cannot bypass; research judgment has no canonical authority).",
+ "hard_boundaries_honored": [
+  "No fabricated human decision (owner decisions recorded as supplied).",
+  "No fabricated VerificationRecord / ResearchRun / IsolationState / ObservationArtifact / snapshot activation.",
+  "CanonicalizationPolicy not bypassed; canonical_state not set by SQL/JSON/ORM edit.",
+  "SyH/Twf not canonicalized; no MODERATE/UNRESOLVED root canonicalized.",
+  "No semantic research performed; five root JSONs byte-identical.",
+  "Batch 08 not started."
+ ],
+ "exact_unblock_options": [
+  "Owner/maintainer adds a genuine, reviewed repository-native ingestion path that binds frozen campaign research to real production-valid corpus occurrences with authentic isolation/observation evidence (a design change, not this task); OR",
+  "Owner authorizes and executes the corpus production-activation of snap_tanzil_1_1_ac0724796cbb and then runs the five roots through the governed research-runtime pipeline (POST /runs -> blind/preflight -> observations covering the full eligible set -> judgments -> INDEPENDENT verification -> canonicalize) — which is a re-execution through the runtime, not reuse of the file checkpoint.",
+  "In either case the INDEPENDENT VerificationRecord and TRUSTED_LOCAL_OWNER canonicalization must be performed by the authorized independent/owner actors, not the AI implementation agent."
+ ],
+ "batch_08": "NOT_AUTHORIZED",
+ "final_status": "OWNER_CANONICAL_ACCEPTANCE_TRANSITION_BLOCKED"
+}
