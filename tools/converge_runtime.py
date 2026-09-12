@@ -110,30 +110,47 @@ def converge(db, *, evidence: ConvergenceEvidence) -> ConvergenceEvidence:
             "against the authoritative DB first; refusing to populate an ungoverned schema."
         )
 
-    # --- Step 1: Tanzil pre-activation import (re-derives snapshot from artifact). ---
-    import_result = TanzilPreActivationImporter.import_candidate(db)
-    evidence.tanzil_snapshot_id = str(import_result.snapshot.id)
-    evidence.tanzil_occurrence_count = import_result.occurrence_count
-    evidence.tanzil_import_created = import_result.created
-    if import_result.snapshot.id != AUTHORIZED_SNAPSHOT_ID:
-        raise ConvergenceError(
-            "Tanzil import produced an unexpected snapshot id "
-            f"{import_result.snapshot.id!r}; expected {AUTHORIZED_SNAPSHOT_ID!r}."
-        )
-    evidence.notes.append(
-        "Tanzil snapshot "
-        + ("created" if import_result.created else "already present / verified")
-        + f" with {import_result.occurrence_count} verse-level CorpusOccurrence rows."
+    # If the governed snapshot is already production-valid, the import/activation
+    # services (which require the PRE-activation PENDING state) must NOT be re-run;
+    # verifying + re-deriving tokens is the idempotent path.
+    existing = db.get(models.CorpusSnapshot, AUTHORIZED_SNAPSHOT_ID)
+    already_active = (
+        existing is not None
+        and existing.activation_status == PRODUCTION_ACTIVE
+        and is_production_validated(existing)
     )
 
-    # --- Step 2: Governed production activation (idempotent; never hand-edited). ---
-    snapshot = db.get(models.CorpusSnapshot, AUTHORIZED_SNAPSHOT_ID)
-    assert snapshot is not None
-    if snapshot.activation_status == PRODUCTION_ACTIVE and is_production_validated(
-        snapshot
-    ):
-        evidence.notes.append("Snapshot already PRODUCTION_ACTIVE and production-valid.")
+    if already_active:
+        snapshot = existing
+        evidence.tanzil_snapshot_id = AUTHORIZED_SNAPSHOT_ID
+        evidence.tanzil_occurrence_count = (
+            db.query(models.CorpusOccurrence)
+            .filter(models.CorpusOccurrence.snapshot_id == AUTHORIZED_SNAPSHOT_ID)
+            .count()
+        )
+        evidence.tanzil_import_created = False
+        evidence.notes.append(
+            "Snapshot already PRODUCTION_ACTIVE and production-valid; governed "
+            "import/activation skipped (idempotent re-run)."
+        )
     else:
+        # --- Step 1: Tanzil pre-activation import (re-derives snapshot from artifact). ---
+        import_result = TanzilPreActivationImporter.import_candidate(db)
+        evidence.tanzil_snapshot_id = str(import_result.snapshot.id)
+        evidence.tanzil_occurrence_count = import_result.occurrence_count
+        evidence.tanzil_import_created = import_result.created
+        if import_result.snapshot.id != AUTHORIZED_SNAPSHOT_ID:
+            raise ConvergenceError(
+                "Tanzil import produced an unexpected snapshot id "
+                f"{import_result.snapshot.id!r}; expected {AUTHORIZED_SNAPSHOT_ID!r}."
+            )
+        evidence.notes.append(
+            "Tanzil snapshot "
+            + ("created" if import_result.created else "already present / verified")
+            + f" with {import_result.occurrence_count} verse-level CorpusOccurrence rows."
+        )
+
+        # --- Step 2: Governed production activation (never hand-edited). ---
         try:
             result = TanzilProductionActivationService.activate(db)
             snapshot = result.snapshot
@@ -143,6 +160,7 @@ def converge(db, *, evidence: ConvergenceEvidence) -> ConvergenceEvidence:
             )
         except CorpusActivationRejected as exc:
             raise ConvergenceError(f"Tanzil activation rejected: {exc}") from exc
+
     evidence.activation_status = str(snapshot.activation_status)
     evidence.validation_status = str(snapshot.validation_status)
     evidence.is_production_validated = is_production_validated(snapshot)
