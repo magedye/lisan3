@@ -21,12 +21,37 @@ State context only. Canonical repository contracts and runtime evidence remain a
   (ESw 12, dnw 133, flH 40, fwh 13, glm 13) — structural counting, not semantics.
 - Tests: 251 passed (non-e2e); 0 SemanticClaims/VerificationRecords/ACCEPTED for the
   five roots; Batch 07 JSONs byte-identical.
-- Status: `CANONICAL_RUNTIME_READY_FOR_FRESH_INDEPENDENT_REVIEW`.
+- Status: `CANONICAL_RUNTIME_READY_FOR_FRESH_INDEPENDENT_REVIEW` (superseded — see below).
   Report: `docs/LISAN3_CANONICAL_RUNTIME_QUALIFICATION.md`;
   handoff: `docs/LISAN3_CANONICAL_RUNTIME_FRESH_REVIEW_HANDOFF.md`.
   NEXT: fresh Sol xhigh read-only review must return
   `CANONICAL_RUNTIME_INDEPENDENTLY_CONFIRMED` before any five-root requalification.
   Hazard flagged: stale duplicate `backend/alembic` chain (head `5542b3a62e23`).
+
+## Canonical Runtime Qualification — Merged & Pushed (2026-09-13)
+
+- Independent read-only acceptance review of `82ed5f7f9b383ad14293c8817cbd2d35de571e94`
+  returned `CANONICAL_RUNTIME_INDEPENDENTLY_CONFIRMED` + `CANONICAL_RUNTIME_MERGE_READY`,
+  **0 material blockers**.
+- `canonical-runtime-qualification` fast-forwarded into `main`
+  (`6dea680052cf3ccf00ccb89396503763c0dc1839` → `82ed5f7f9b383ad14293c8817cbd2d35de571e94`),
+  no merge commit, and pushed normally: `origin/main == main == 82ed5f7`.
+- Post-merge verification re-run on `main`: DB authority `lisanapp.db`, sole Alembic head
+  `f2b7d1e9a3c5`, Tanzil snapshot VALIDATED/PRODUCTION_ACTIVE (failures `[]`), methodology
+  `…@01784170cac4` authority-failures `[]`; qualification tests 24 passed; non-e2e suite
+  251 passed; five-root exact-sets equal to committed evidence (ESw 12, dnw 133, flH 40,
+  fwh 13, glm 13); Batch 07 JSONs byte-identical; five-root SemanticClaims/VerificationRecords/
+  ACCEPTED/ResearchRuns all 0; governance smoke 32/32 fail-closed.
+- Status: `CANONICAL_RUNTIME_QUALIFICATION_MERGED_AND_PUSHED`. Infrastructure-only; NO
+  five-root semantics qualified or canonicalized. `BATCH_08_NOT_AUTHORIZED` stands.
+- NEXT: a separate, fresh `FIVE_ROOT_GOVERNED_REQUALIFICATION_TRACK` (ESw, dnw, flH, fwh,
+  glm) — not authorized by this task.
+- Deferred non-blocking debt (do NOT fix retroactively into this checkpoint): (1) isolation
+  canonicalization gate could additionally corroborate input_manifest/attesting_actor/
+  attested_at/audit_ref + isolation snapshot/methodology bindings; (2) legacy orphan
+  `backend/alembic/` + `backend/alembic.ini` (head `5542b3a62e23`); (3) research-judgment path
+  requires CLEAN but not ESTABLISHED — confirm design intent; (4) minor evidence-resolver /
+  convergence nits; (5) `ADMISSION_TANZIL.md` historical wording remains historical evidence.
 
 ## Repository
 
