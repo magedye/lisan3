@@ -1,0 +1,371 @@
+{
+ "root_arabic": "ج ا ر",
+ "root_buckwalter": "jAr",
+ "root_id": "jAr",
+ "artifact_name": "jAr.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave5",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "To raise an urgent, overt (audible) outcry wrung out by acute affliction, functioning as an appeal for relief/rescue. The distress-trigger and appeal-function are the recurrent nucleus; the addressee (God) and the outcome (heard vs. refused) are supplied by context, not by the root.",
+ "internal_discovery": {
+  "candidate_root_contribution": "To raise an urgent, overt (audible) outcry wrung out by acute affliction, functioning as an appeal for relief/rescue. The distress-trigger and appeal-function are the recurrent nucleus; the addressee (God) and the outcome (heard vs. refused) are supplied by context, not by the root.",
+  "plain_explanation": "Every attested token of this root (all Form I imperfect, masculine plural: تَجْـَٔرُونَ / يَجْـَٔرُونَ / لَا تَجْـَٔرُوا) describes people crying out under duress. In 16:53 the cry is triggered by harm (ٱلضُّرُّ) and directed 'to Him' (فَإِلَيْهِ). In 23:64 the punished affluent ones (مُتْرَفِيهِم) cry out the instant the punishment (ٱلْعَذَاب) seizes them, with no stated addressee. In 23:65 that same cry is forbidden and declared futile — 'do not cry out today; you will not be helped (لَا تُنصَرُونَ)' — which retro-construes the outcry as a plea for rescue. So the root names the affliction-driven outcry-for-relief itself, morally neutral, not a formulated prayer, not a guarantee of being answered, and not inherently addressed to God.",
+  "layer_separation_note": "Does NOT lexicalize: (1) a divine addressee — 'to Him' comes only from the preposition إِلَيْهِ in 16:53 and is absent in 23:64; (2) efficacy — 23:65 (لَا تُنصَرُونَ) explicitly denies rescue despite the cry; (3) legitimate worship/piety — the criers in 23:64 are the condemned مُتْرَفُون; (4) articulate/propositional speech — no content is ever quoted, it is raw vocal outcry; (5) a settled state/disposition — it is punctual and crisis-triggered (إِذَا مَسَّكُمُ ٱلضُّرُّ, إِذَا هُمْ يَجْـَٔرُونَ); (6) silence/inwardness — it is an overt act that can be commanded to cease (لَا تَجْـَٔرُوا).",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "23:64 (يَجْـَٔرُونَ) is bare — no addressee and no explicit appeal — so read in isolation it could denote a mere wordless scream of anguish, undercutting the 'appeal for relief' component and favoring a thinner acoustic-only nucleus. It is neutralized by its own continuation 23:65 ('do not cry out today; you will not be helped'), which construes that very cry as a plea for rescue; it therefore caps the pragmatic 'appeal' layer as context-reinforced rather than breaking the affliction-outcry nucleus.",
+  "strongest_competitor": "A more minimal acoustic/manner nucleus: جأر = merely 'to emit an urgent/clamorous cry,' with distress, directedness, and appeal ALL contributed by context (ٱلضُّرّ, ٱلْعَذَاب, إِلَيْهِ, لَا تُنصَرُونَ). With n=3, all crisis-bound and morphologically uniform, this rival cannot be excluded; the richer 'appeal-for-relief' nucleus is preferred only because the frame is unanimous (3/3) and twice carried by verb-adjacent grammar (إِلَيْهِ; لَا تُنصَرُونَ). This is why the claim is held at MODERATE rather than STRONG.",
+  "competing_hypothesis": "A more minimal acoustic/manner nucleus: جأر = merely 'to emit an urgent/clamorous cry,' with distress, directedness, and appeal ALL contributed by context (ٱلضُّرّ, ٱلْعَذَاب, إِلَيْهِ, لَا تُنصَرُونَ). With n=3, all crisis-bound and morphologically uniform, this rival cannot be excluded; the richer 'appeal-for-relief' nucleus is preferred only because the frame is unanimous (3/3) and twice carried by verb-adjacent grammar (إِلَيْهِ; لَا تُنصَرُونَ). This is why the claim is held at MODERATE rather than STRONG.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All three lenses converge: a single morphological window (Form I imperfect, plural, qac_verb_form=null), one coherent affliction-outcry nucleus, and NO resistant or lexicalized sub-class. The 16:53-vs-23:64/65 valence gap (rightful turn to God vs. condemned futile clamour) is contextual framing, not a lexical split — the identical act is described in both, so no unbridged multi-class arises and forcing UNRESOLVED would be dishonest. Strength is capped at MODERATE / REPRESENTATIVE because STRONG requires broad, distinctive evidence: here the base is narrow (3 tokens, one form/tense, effectively two contexts since 23:64–65 are one continuous scene), the sharpest feature (appeal-for-relief) is partly context-supplied and cannot be proven criterial against the minimalist acoustic rival, and distinctiveness against neighbouring cry/call roots (دعا, نادى, صرخ, استغاث, بكى) cannot be established Quran-internally because no comparanda are in the packet. Scope is DERIVATIONAL_FAMILY/REPRESENTATIVE rather than UNIVERSAL because only one derivational slice is attested. Note: packet root_id 'jAr' and root_arabic 'ج ا ر' are a label artifact; the surface Buckwalter (tajo_#aru/yajo_#aru, # = hamza) shows the operative radicals are ج-أ-ر (jaʾara), NOT the ج-و-ر neighbour/injustice root — nothing here attests that sense.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "C1_affliction_outcry_impf",
+     "where": {
+      "qac_pos": [
+       "V"
+      ],
+      "qac_verb_form": [
+       null
+      ],
+      "forms": [
+       "V"
+      ],
+      "word_refs": [
+       "16:53:12:1",
+       "23:64:8:1",
+       "23:65:2:1"
+      ]
+     },
+     "occurrence_count_expected": 3,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Form I imperfect (plural) 'to cry out urgently under affliction as an appeal for relief' — trigger is always acute distress (ٱلضُّرُّ 16:53; ٱلْعَذَاب 23:64–65); the appeal function is reinforced by directional إِلَيْهِ (16:53) and by the refusal لَا تُنصَرُونَ (23:65).",
+     "classification_rationale": "All 3/3 occurrences are one morphological class (finite imperfect verb, masc. plural, qac_verb_form=null), differing only in person/mood (2mp indicative, 3mp indicative, 2mp prohibitive). No nominal, participial, perfect, singular, or alternate-form token exists to partition, so a single cluster exhausts the packet.",
+     "supporting_evidence_note": "16:53: فَإِلَيْهِ تَجْـَٔرُونَ after مَسَّكُمُ ٱلضُّرُّ — distress-triggered, directed to God. 23:64: إِذَا هُمْ يَجْـَٔرُونَ upon seizure by ٱلْعَذَاب. 23:65: لَا تَجْـَٔرُوا۟ ... لَا تُنصَرُونَ — the cry named as a refused plea for rescue.",
+     "counterevidence": [
+      "23:64:8:1"
+     ]
+    }
+   ],
+   "reconciliation": [
+    {
+     "word_ref": "23:64:8:1",
+     "final": "CONSISTENT",
+     "rationale": "The continuous scene resolves it: 23:65 ('لَا تَجْـَٔرُوا۟ ٱلْيَوْمَ إِنَّكُم مِّنَّا لَا تُنصَرُونَ') gives the reason for prohibiting the same cry as 'you will not be helped,' construing the 23:64 outcry as a plea for rescue. The token neither breaks the nucleus nor forms a resistant sub-class; it only caps the appeal layer as context-reinforced, keeping strength at MODERATE."
+    }
+   ]
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "jAr",
+  "verdict": "CORE_HOLDS_DISTINCTIVENESS_UNVERIFIED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": false,
+  "falsifiable": true,
+  "notes": "The affliction-outcry nucleus is adversarially clean across 3/3 with no failing occurrence, so it is not refuted. Full falsification is marked NOT_RUN rather than PASSED because distinctiveness cannot be established Quran-internally (no cry/call comparanda — دعا, نادى, صرخ, استغاث, بكى — are in the packet), and the 'appeal-for-relief' vs. minimalist 'acoustic cry' sub-question cannot be adjudicated on n=3, so distinctiveness_ok=false."
+ },
+ "coverage_validation": {
+  "root": "jAr",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "16:53:12:1",
+   "disposition": "CONSISTENT",
+   "note": "All 3/3 occurrences are one morphological class (finite imperfect verb, masc. plural, qac_verb_form=null), differing only in person/mood (2mp indicative, 3mp indicative, 2mp prohibitive). No nominal, participial, perfect, singular, or alternate-form token exists to partition, so a single cluster exhausts the packet.",
+   "coverage_cluster_id": "C1_affliction_outcry_impf",
+   "candidate_semantic_interpretation": "Form I imperfect (plural) 'to cry out urgently under affliction as an appeal for relief' — trigger is always acute distress (ٱلضُّرُّ 16:53; ٱلْعَذَاب 23:64–65); the appeal function is reinforced by directional إِلَيْهِ (16:53) and by the refusal لَا تُنصَرُونَ (23:65).",
+   "cluster_supporting_evidence": "16:53: فَإِلَيْهِ تَجْـَٔرُونَ after مَسَّكُمُ ٱلضُّرُّ — distress-triggered, directed to God. 23:64: إِذَا هُمْ يَجْـَٔرُونَ upon seizure by ٱلْعَذَاب. 23:65: لَا تَجْـَٔرُوا۟ ... لَا تُنصَرُونَ — the cry named as a refused plea for rescue.",
+   "counterevidence": [
+    "23:64:8:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 3/3 occurrences are one morphological class (finite imperfect verb, masc. plural, qac_verb_form=null), differing only in person/mood (2mp indicative, 3mp indicative, 2mp prohibitive). No nominal, participial, perfect, singular, or alternate-form token exists to partition, so a single cluster exhausts the packet.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "16:53",
+     "verse_text": "وَمَا بِكُم مِّن نِّعْمَةٍ فَمِنَ ٱللَّهِ ثُمَّ إِذَا مَسَّكُمُ ٱلضُّرُّ فَإِلَيْهِ تَجْـَٔرُونَ"
+    }
+   ],
+   "root_arabic": "ج ا ر",
+   "root_buckwalter": "jAr",
+   "root_id": "jAr",
+   "artifact_name": "jAr.json",
+   "verse_ref": "16:53",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tajo_#aru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَمَا بِكُم مِّن نِّعْمَةٍ فَمِنَ ٱللَّهِ ثُمَّ إِذَا مَسَّكُمُ ٱلضُّرُّ فَإِلَيْهِ تَجْـَٔرُونَ"
+  },
+  {
+   "word_ref": "23:64:8:1",
+   "disposition": "CONSISTENT",
+   "note": "Bare token (no addressee, no explicit appeal) — the strongest adversarial boundary; in isolation it admits a thin 'wordless anguish-scream' reading. Fits the affliction-outcry nucleus and is disambiguated toward 'appeal' by the adjacent 23:65 (لَا تُنصَرُونَ). | 23:64 (يَجْـَٔرُونَ) is bare — no addressee and no explicit appeal — so read in isolation it could denote a mere wordless scream of anguish; it is neutralized by its own continuation 23:65 ('do not cry out today; you will not be helped'), which construes that very cry as a plea for rescue, capping the appeal layer without breaking the affliction-outcry nucleus.",
+   "coverage_cluster_id": "C1_affliction_outcry_impf",
+   "candidate_semantic_interpretation": "Form I imperfect (plural) 'to cry out urgently under affliction as an appeal for relief' — trigger is always acute distress (ٱلضُّرُّ 16:53; ٱلْعَذَاب 23:64–65); the appeal function is reinforced by directional إِلَيْهِ (16:53) and by the refusal لَا تُنصَرُونَ (23:65).",
+   "cluster_supporting_evidence": "16:53: فَإِلَيْهِ تَجْـَٔرُونَ after مَسَّكُمُ ٱلضُّرُّ — distress-triggered, directed to God. 23:64: إِذَا هُمْ يَجْـَٔرُونَ upon seizure by ٱلْعَذَاب. 23:65: لَا تَجْـَٔرُوا۟ ... لَا تُنصَرُونَ — the cry named as a refused plea for rescue.",
+   "counterevidence": [
+    "23:64:8:1"
+   ],
+   "preliminary_disposition": "STRUCTURAL_UNCERTAINTY",
+   "preliminary_note": "Could support acoustic-only 'scream of pain' rather than 'appeal for relief'.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": "The continuous scene resolves it: 23:65 ('لَا تَجْـَٔرُوا۟ ٱلْيَوْمَ إِنَّكُم مِّنَّا لَا تُنصَرُونَ') gives the reason for prohibiting the same cry as 'you will not be helped,' construing the 23:64 outcry as a plea for rescue. The token neither breaks the nucleus nor forms a resistant sub-class; it only caps the appeal layer as context-reinforced, keeping strength at MODERATE.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "23:64:8:1",
+     "preliminary_disposition": "STRUCTURAL_UNCERTAINTY",
+     "preliminary_note": "Read alone, يَجْـَٔرُونَ has no addressee and no explicit appeal, so it could denote a mere wordless anguish-cry, favoring a thinner acoustic-only nucleus over 'appeal for relief.'",
+     "final_disposition": "CONSISTENT",
+     "reconciliation_rationale": "The continuous scene resolves it: 23:65 ('لَا تَجْـَٔرُوا۟ ٱلْيَوْمَ إِنَّكُم مِّنَّا لَا تُنصَرُونَ') gives the reason for prohibiting the same cry as 'you will not be helped,' construing the 23:64 outcry as a plea for rescue. The token neither breaks the nucleus nor forms a resistant sub-class; it only caps the appeal layer as context-reinforced, keeping strength at MODERATE.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "23:64",
+     "verse_text": "حَتَّىٰٓ إِذَآ أَخَذْنَا مُتْرَفِيهِم بِٱلْعَذَابِ إِذَا هُمْ يَجْـَٔرُونَ"
+    }
+   ],
+   "root_arabic": "ج ا ر",
+   "root_buckwalter": "jAr",
+   "root_id": "jAr",
+   "artifact_name": "jAr.json",
+   "verse_ref": "23:64",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yajo_#aru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "حَتَّىٰٓ إِذَآ أَخَذْنَا مُتْرَفِيهِم بِٱلْعَذَابِ إِذَا هُمْ يَجْـَٔرُونَ"
+  },
+  {
+   "word_ref": "23:65:2:1",
+   "disposition": "CONSISTENT",
+   "note": "All 3/3 occurrences are one morphological class (finite imperfect verb, masc. plural, qac_verb_form=null), differing only in person/mood (2mp indicative, 3mp indicative, 2mp prohibitive). No nominal, participial, perfect, singular, or alternate-form token exists to partition, so a single cluster exhausts the packet.",
+   "coverage_cluster_id": "C1_affliction_outcry_impf",
+   "candidate_semantic_interpretation": "Form I imperfect (plural) 'to cry out urgently under affliction as an appeal for relief' — trigger is always acute distress (ٱلضُّرُّ 16:53; ٱلْعَذَاب 23:64–65); the appeal function is reinforced by directional إِلَيْهِ (16:53) and by the refusal لَا تُنصَرُونَ (23:65).",
+   "cluster_supporting_evidence": "16:53: فَإِلَيْهِ تَجْـَٔرُونَ after مَسَّكُمُ ٱلضُّرُّ — distress-triggered, directed to God. 23:64: إِذَا هُمْ يَجْـَٔرُونَ upon seizure by ٱلْعَذَاب. 23:65: لَا تَجْـَٔرُوا۟ ... لَا تُنصَرُونَ — the cry named as a refused plea for rescue.",
+   "counterevidence": [
+    "23:64:8:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 3/3 occurrences are one morphological class (finite imperfect verb, masc. plural, qac_verb_form=null), differing only in person/mood (2mp indicative, 3mp indicative, 2mp prohibitive). No nominal, participial, perfect, singular, or alternate-form token exists to partition, so a single cluster exhausts the packet.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "23:65",
+     "verse_text": "لَا تَجْـَٔرُوا۟ ٱلْيَوْمَ إِنَّكُم مِّنَّا لَا تُنصَرُونَ"
+    }
+   ],
+   "root_arabic": "ج ا ر",
+   "root_buckwalter": "jAr",
+   "root_id": "jAr",
+   "artifact_name": "jAr.json",
+   "verse_ref": "23:65",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "tajo_#aru",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لَا تَجْـَٔرُوا۟ ٱلْيَوْمَ إِنَّكُم مِّنَّا لَا تُنصَرُونَ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "All three independent lenses (A, B, C) concur: one root nucleus, no resistant sub-class, appeal-vs-acoustic sub-question unresolved, grade MODERATE / REPRESENTATIVE.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "To raise an urgent, overt (audible) outcry wrung out by acute affliction, functioning as an appeal for relief/rescue. The distress-trigger and appeal-function are the recurrent nucleus; the addressee (God) and the outcome (heard vs. refused) are supplied by context, not by the root.",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "DERIVATIONAL_FAMILY",
+ "layer_attribution": {
+  "occurrence_evidence": "Three tokens, all Form I imperfect masc. plural (16:53:12:1 تَجْـَٔرُونَ 2mp; 23:64:8:1 يَجْـَٔرُونَ 3mp; 23:65:2:1 لَا تَجْـَٔرُوا۟ 2mp prohibitive), qac_verb_form=null, qac_pos=V; each embedded in an acute-distress clause (ٱلضُّرُّ / ٱلْعَذَاب).",
+  "derivation": "Only one derivational slice is attested (Form I imperfect); no perfect, participle, verbal noun, or other pattern exists in the packet, so the derivational family is untested beyond this window — the basis for REPRESENTATIVE / DERIVATIONAL_FAMILY rather than UNIVERSAL.",
+  "lexical_class": "No lexicalized or nominal sub-class is present; the root does not fragment into a settled-noun sense, so no LEXICALIZED_CLASS carve-out and no resistance-based MODERATE cap from a lexicalized class.",
+  "contextual_relation": "Directionality 'to Him' (إِلَيْهِ, 16:53), the punitive trigger (بِٱلْعَذَابِ, 23:64), and the futility/refusal (لَا تُنصَرُونَ, 23:65) are contextual/narrative contributions; they reinforce but must NOT be absorbed into the root claim, which stays addressee-neutral and outcome-neutral.",
+  "reconciliation": "The 16:53 (rightful turn to God) vs. 23:64–65 (condemned futile clamour) valence gap is reconciled as contextual framing of one identical act, not a lexical split; 23:64's bare form is reconciled to the nucleus via the adjacent 23:65, yielding a single CONSISTENT cluster with no forced unity across genuine homonyms.",
+  "unresolved_resistance": "No occurrence resists the nucleus. The only live residual is the sub-question of whether 'appeal for relief' is criterial or a contextual overlay on a bare acoustic 'loud cry' core — unresolved on n=3 and left open (falsification NOT_RUN, distinctiveness_ok=false), not treated as occurrence-level resistance."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "23:64:8:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "Only token with no stated addressee and no explicit appeal; it is the best available lever against building 'appeal for relief' into the root, and the reason that component is graded context-reinforced rather than morphologically intrinsic.",
+   "evidence_basis": {
+    "kind": "DISCOURSE_CONTEXT",
+    "statement": "23:64 (يَجْـَٔرُونَ) is bare — no addressee and no explicit appeal — so read in isolation it could denote a mere wordless scream of anguish; it is neutralized by its own continuation 23:65 ('do not cry out today; you will not be helped'), which construes that very cry as a plea for rescue, capping the appeal layer without breaking the affliction-outcry nucleus."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "There is no RESISTANT occurrence and no lexicalized sub-class, but 23:64 is a genuine adversarial boundary that all three lenses identify; it is represented as an ADVERSARIAL_BOUNDARY hard case whose evidence_basis is textually anchored in 23:64→23:65 and matches the recorded strongest_counterexample."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A Quran-internal occurrence of ج-أ-ر used OUTSIDE an affliction/punishment context — e.g. a calm, private, praising, or ordinary-calling use, or a nominal/participial form denoting settled outcry — which would show the 'acute-distress trigger' is not part of the root but merely a distributional accident of these three tokens.",
+  "search_location": "Any further QAC-attested ج-أ-ر (jaʾara / juʾār) token beyond the three in this packet, especially nominal/derived forms or perfect-tense uses not present here.",
+  "verification_method": "Confirm the radicals are ج-أ-ر via surface Buckwalter (hamon middle radical, not ج-و-ر), then read the full verse to test whether the trigger is distress/punishment and whether the sense is an outcry-for-relief; check whether إِلَى / a divine addressee is present.",
+  "confounder_control": "Do NOT conflate this root with ج-و-ر (neighbour/deviation/injustice) despite the packet's 'jAr'/'ج ا ر' label; exclude tokens whose middle radical is و or ا. Treat contextual إِلَيْهِ and لَا تُنصَرُونَ as context, not root content.",
+  "failure_consequence": "If a non-distress, non-appeal use is found, the affliction-outcry nucleus is downgraded to a bare acoustic 'loud cry' core (the minimalist competitor) and the appeal/distress layers are relocated to context; the current MODERATE claim would be narrowed or re-clustered."
+ },
+ "falsification_status": "NOT_RUN",
+ "reopen_conditions": [
+  "If any ج-أ-ر token is attested in a non-affliction context (calm/private/praise/ordinary calling) or as a nominal/participial form, re-test whether 'acute-distress trigger' is criterial or merely distributional across 16:53 / 23:64 / 23:65.",
+  "If Quran-internal comparanda for other cry/call roots (دعا, نادى, صرخ/استصرخ, استغاث, بكى) become available, test whether ج-أ-ر is distinctively the affliction-driven refused-appeal outcry, which could lift the appeal-for-relief nucleus above the minimalist acoustic competitor.",
+  "If a ج-أ-ر occurrence appears with an addressee other than God, or with an explicit successful/answered outcome, re-examine the negative boundaries that the root does not lexicalize an addressee (currently from إِلَيْهِ in 16:53 alone) or efficacy (currently from لَا تُنصَرُونَ in 23:65 alone)."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "16:53:12:1",
+  "23:64:8:1",
+  "23:65:2:1"
+ ],
+ "counterevidence_refs": [
+  "23:64:8:1"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "jAr-falsif-01",
+  "verdict": "CORE_HOLDS_DISTINCTIVENESS_UNVERIFIED",
+  "falsifiable": true,
+  "distinctiveness_ok": false,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "C1_affliction_outcry_impf"
+  ],
+  "status_rationale": "The affliction-outcry nucleus is adversarially clean across 3/3 with no failing occurrence, so it is not refuted. Full falsification is marked NOT_RUN rather than PASSED because distinctiveness cannot be established Quran-internally (no cry/call comparanda — دعا, نادى, صرخ, استغاث, بكى — are in the packet), and the 'appeal-for-relief' vs. minimalist 'acoustic cry' sub-question cannot be adjudicated on n=3, so distinctiveness_ok=false."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jAr: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jAr: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jAr: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jAr: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jAr: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jAr: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jAr: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "jAr: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

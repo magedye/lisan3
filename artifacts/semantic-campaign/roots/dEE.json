@@ -1,0 +1,368 @@
+{
+ "root_arabic": "د ع ع",
+ "root_buckwalter": "dEE",
+ "root_id": "dEE",
+ "artifact_name": "dEE.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave5",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "Forceful, violent thrusting / shoving / driving of a person. The geminate root د-ع-ع supplies harsh, propulsive MANNER applied to a human patient; DIRECTION (away, as in repelling the orphan; toward a goal, as in driving to the Fire) is not encoded by the root but is supplied by argument structure (bare accusative object vs. إِلَىٰ + goal). The intensive register is corroborated by the cognate accusative دَعًّا.",
+ "internal_discovery": {
+  "candidate_root_contribution": "Forceful, violent thrusting / shoving / driving of a person. The geminate root د-ع-ع supplies harsh, propulsive MANNER applied to a human patient; DIRECTION (away, as in repelling the orphan; toward a goal, as in driving to the Fire) is not encoded by the root but is supplied by argument structure (bare accusative object vs. إِلَىٰ + goal). The intensive register is corroborated by the cognate accusative دَعًّا.",
+  "plain_explanation": "In its 3 Quranic occurrences (2 verses, effectively 2 independent contexts) the root د-ع-ع describes forcefully shoving or driving a person. In 107:2 the denier of the dīn physically thrusts/rebuffs the orphan (يَدُعُّ ٱلْيَتِيمَ, bare object). In 52:13 the deniers are violently driven toward the Fire (يُدَعُّونَ إِلَىٰ نَارِ جَهَنَّمَ دَعًّا, passive + intensifying verbal noun). The common core is a harsh, violent propulsion of a human being; whether the person is pushed away or driven toward something is fixed by the sentence, not by the root.",
+  "layer_separation_note": "Does NOT encode direction (both away-from in 107:2 and toward-a-goal in 52:13 are attested, so the root is not 'repel/drive-away' nor 'herd-toward' as such). Does NOT entail gentleness, invitation, leading, or summoning; despite surface similarity to the weak root د-ع-و ('call/invite/pray'), the geminate morphology and strictly physical person-patient relations exclude a communicative sense here. Does NOT denote a mental/verbal act (denial is a separate verb, يُكَذِّبُ 107:1) nor mere omission/withholding (contrasted with لَا يَحُضُّ 107:3, a failure to act). Does NOT name the terminal outcome (the burning/destruction), only the propulsion/manner. Attested only with human patients; not claimed for inanimate-object manipulation.",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "The directional split is the sharpest datum: 107:2:3:1 يَدُعُّ ٱلْيَتِيمَ has a bare accusative and thrusts the patient OFF/away, while 52:13:2:1 يُدَعُّونَ إِلَىٰ نَارِ جَهَنَّمَ drives the patients TOWARD an explicit goal. These mutually refute any single directional gloss: 'drive toward' is disproven by 107:2, 'repel away' is disproven by 52:13's إِلَىٰ. The account survives only by retreating to a direction-neutral 'forceful thrust of a person', which is broad; and it caps confidence because the unity is bought at the cost of specificity.",
+  "strongest_competitor": "'To reject / repel / drive away (with contempt)'. It fits 107:2 naturally and reads 52:13 loosely as coerced driving-off. It loses because 52:13's explicit إِلَىٰ نَارِ جَهَنَّمَ is motion TOWARD a goal, which a 'drive-away' nucleus cannot host without special pleading, and because an intensive cognate accusative دَعًّا is natural for a physical action, not for a bare attitude. The manner-nucleus ('forceful thrust, direction by syntax') covers both contexts with no residue, so 'reject/repel' is at most a contextual flavour of 107:2, not the root's contribution.",
+  "competing_hypothesis": "'To reject / repel / drive away (with contempt)'. It fits 107:2 naturally and reads 52:13 loosely as coerced driving-off. It loses because 52:13's explicit إِلَىٰ نَارِ جَهَنَّمَ is motion TOWARD a goal, which a 'drive-away' nucleus cannot host without special pleading, and because an intensive cognate accusative دَعًّا is natural for a physical action, not for a bare attitude. The manner-nucleus ('forceful thrust, direction by syntax') covers both contexts with no residue, so 'reject/repel' is at most a contextual flavour of 107:2, not the root's contribution.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All three analysts (A, B, adversary C) independently converge on the same account and the same grade. The evidence is internally clean: one geminate lexeme in active/passive/maṣdar alternation (a decisive minimal pair يَدُعُّ active vs. يُدَعُّونَ passive, plus the cognate accusative دَعًّا bound inside the same clause), with no lexicalized nominal split and no occurrence that breaks the direction-neutral nucleus. That cleanliness places it at the top of MODERATE. It is held BELOW STRONG because breadth is genuinely thin: only 3 tokens across 2 verses / 2 contexts, both in the same coercive/punitive register with human patients only, and the nominal دَعًّا is a dependent cognate-accusative witness (effectively 2 independent data points). STRONG requires broad, distinctive, adversarially-clean evidence; here (1) the corpus is minimal, (2) the physical-force component of 107:2 is partly imported by analogy to 52:13 rather than established locally within al-Māʿūn, and (3) distinctiveness from semantic neighbours (د-ف-ع 'push/repel/defend', د-ع-و 'call') could only be argued internally, not adversarially tested against neighbour packets. Per contract (breadth requirement; 'CONSISTENT != universally established'; low frequency limits scope) the honest ceiling is MODERATE / REPRESENTATIVE, scoped as a derivational-family generalization over the attested active/passive/maṣdar forms.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "dEE-forceful-thrust",
+     "where": {
+      "word_refs": [
+       "107:2:3:1",
+       "52:13:2:1",
+       "52:13:6:1"
+      ]
+     },
+     "occurrence_count_expected": 3,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Forceful/violent thrusting or driving of a human patient; harsh propulsive manner supplied by the root, direction supplied by syntax (bare accusative object in 107:2 = thrust off; إِلَىٰ + goal in 52:13 = drive toward). The maṣdar دَعًّا is the cognate accusative of يُدَعُّونَ and reinforces the intensive register.",
+     "classification_rationale": "The active verb (107:2:3:1 يَدُعُّ), its passive (52:13:2:1 يُدَعُّونَ) and its cognate maṣdar (52:13:6:1 دَعًّا) are one geminate lexeme in voice/derivational alternation, not distinct senses. The active/passive minimal pair fixes the voice alternation Quran-internally; the maṣdar sits inside the same clause as the passive verb, foreclosing any separate nominal class. No occurrence contradicts the direction-neutral 'forceful thrust of a person' nucleus.",
+     "supporting_evidence_note": "107:2:3:1 يَدُعُّ ٱلْيَتِيمَ (active, bare-transitive, person patient, thrust-off) and 52:13:2:1 يُدَعُّونَ إِلَىٰ نَارِ جَهَنَّمَ دَعًّا (passive + intensive cognate accusative, person patients, thrust-toward-goal) jointly establish the harsh-propulsion-of-a-person core with direction contributed by syntax.",
+     "counterevidence": [
+      "107:2:3:1",
+      "52:13:2:1"
+     ]
+    }
+   ],
+   "reconciliation": [
+    {
+     "word_ref": "107:2:3:1",
+     "final": "CONSISTENT",
+     "rationale": "Even under the socio-moral reading the image remains forceful pushing-away, so the thrust schema is retained as the source domain; 52:13 anchors the literal physical sense unambiguously (إِلَىٰ نَارِ جَهَنَّمَ + intensive دَعًّا). The residual literal-vs-social register is a matter of domain, not a distinct sense, so the occurrence joins the single cluster while being flagged as an adversarial boundary."
+    }
+   ]
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "dEE",
+  "verdict": "CORE_HOLDS_BOUNDARY_UNRESOLVED",
+  "failing_occurrences": [],
+  "distinctiveness_ok": false,
+  "falsifiable": true,
+  "notes": "No occurrence breaks the direction-neutral 'forceful thrust of a person' nucleus, so the core is not FAILED. But a completed adversarial refutation returning SUPPORTED with distinctiveness_ok=true could not be run: distinctiveness from the semantic neighbours د-ف-ع and د-ع-و was argued only internally (neighbour packets not provided), and 107:2's physical-force feature is partly imported by analogy. Hence NOT_RUN with the two boundary points recorded rather than a claimed PASS."
+ },
+ "coverage_validation": {
+  "root": "dEE",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "107:2:3:1",
+   "disposition": "CONSISTENT",
+   "note": "Within Sūrat al-Māʿūn alone, the force-component of yaduʿʿu l-yatīma is underdetermined: the local charity/neglect frame (paired with lā yaḥuḍḍu, 107:3) supports a socio-moral 'harshly turns the orphan away' reading, and the literal violent-shove sense is imported by analogy to 52:13 rather than established locally. It does not break the direction-neutral nucleus but prevents that nucleus from being adversarially clean and independent.",
+   "coverage_cluster_id": "dEE-forceful-thrust",
+   "candidate_semantic_interpretation": "Forceful/violent thrusting or driving of a human patient; harsh propulsive manner supplied by the root, direction supplied by syntax (bare accusative object in 107:2 = thrust off; إِلَىٰ + goal in 52:13 = drive toward). The maṣdar دَعًّا is the cognate accusative of يُدَعُّونَ and reinforces the intensive register.",
+   "cluster_supporting_evidence": "107:2:3:1 يَدُعُّ ٱلْيَتِيمَ (active, bare-transitive, person patient, thrust-off) and 52:13:2:1 يُدَعُّونَ إِلَىٰ نَارِ جَهَنَّمَ دَعًّا (passive + intensive cognate accusative, person patients, thrust-toward-goal) jointly establish the harsh-propulsion-of-a-person core with direction contributed by syntax.",
+   "counterevidence": [
+    "52:13:2:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The active verb (107:2:3:1 يَدُعُّ), its passive (52:13:2:1 يُدَعُّونَ) and its cognate maṣdar (52:13:6:1 دَعًّا) are one geminate lexeme in voice/derivational alternation, not distinct senses. The active/passive minimal pair fixes the voice alternation Quran-internally; the maṣdar sits inside the same clause as the passive verb, foreclosing any separate nominal class. No occurrence contradicts the direction-neutral 'forceful thrust of a person' nucleus.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": "Even under the socio-moral reading the image remains forceful pushing-away, so the thrust schema is retained as the source domain; 52:13 anchors the literal physical sense unambiguously (إِلَىٰ نَارِ جَهَنَّمَ + intensive دَعًّا). The residual literal-vs-social register is a matter of domain, not a distinct sense, so the occurrence joins the single cluster while being flagged as an adversarial boundary.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "107:2:3:1",
+     "preliminary_disposition": "STRUCTURAL_UNCERTAINTY",
+     "preliminary_note": "On its own local evidence (al-Māʿūn's charity/neglect frame), the occurrence reads as socio-moral rebuff of the orphan; its physical-force feature is underdetermined and appears imported from 52:13.",
+     "final_disposition": "CONSISTENT",
+     "reconciliation_rationale": "Even under the socio-moral reading the image remains forceful pushing-away, so the thrust schema is retained as the source domain; 52:13 anchors the literal physical sense unambiguously (إِلَىٰ نَارِ جَهَنَّمَ + intensive دَعًّا). The residual literal-vs-social register is a matter of domain, not a distinct sense, so the occurrence joins the single cluster while being flagged as an adversarial boundary.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [
+    "52:13:2:1"
+   ],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "107:2",
+     "verse_text": "فَذَٰلِكَ ٱلَّذِى يَدُعُّ ٱلْيَتِيمَ"
+    }
+   ],
+   "root_arabic": "د ع ع",
+   "root_buckwalter": "dEE",
+   "root_id": "dEE",
+   "artifact_name": "dEE.json",
+   "verse_ref": "107:2",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yaduE~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَذَٰلِكَ ٱلَّذِى يَدُعُّ ٱلْيَتِيمَ"
+  },
+  {
+   "word_ref": "52:13:2:1",
+   "disposition": "CONSISTENT",
+   "note": "The active verb (107:2:3:1 يَدُعُّ), its passive (52:13:2:1 يُدَعُّونَ) and its cognate maṣdar (52:13:6:1 دَعًّا) are one geminate lexeme in voice/derivational alternation, not distinct senses. The active/passive minimal pair fixes the voice alternation Quran-internally; the maṣdar sits inside the same clause as the passive verb, foreclosing any separate nominal class. No occurrence contradicts the direction-neutral 'forceful thrust of a person' nucleus.",
+   "coverage_cluster_id": "dEE-forceful-thrust",
+   "candidate_semantic_interpretation": "Forceful/violent thrusting or driving of a human patient; harsh propulsive manner supplied by the root, direction supplied by syntax (bare accusative object in 107:2 = thrust off; إِلَىٰ + goal in 52:13 = drive toward). The maṣdar دَعًّا is the cognate accusative of يُدَعُّونَ and reinforces the intensive register.",
+   "cluster_supporting_evidence": "107:2:3:1 يَدُعُّ ٱلْيَتِيمَ (active, bare-transitive, person patient, thrust-off) and 52:13:2:1 يُدَعُّونَ إِلَىٰ نَارِ جَهَنَّمَ دَعًّا (passive + intensive cognate accusative, person patients, thrust-toward-goal) jointly establish the harsh-propulsion-of-a-person core with direction contributed by syntax.",
+   "counterevidence": [
+    "107:2:3:1",
+    "52:13:2:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The active verb (107:2:3:1 يَدُعُّ), its passive (52:13:2:1 يُدَعُّونَ) and its cognate maṣdar (52:13:6:1 دَعًّا) are one geminate lexeme in voice/derivational alternation, not distinct senses. The active/passive minimal pair fixes the voice alternation Quran-internally; the maṣdar sits inside the same clause as the passive verb, foreclosing any separate nominal class. No occurrence contradicts the direction-neutral 'forceful thrust of a person' nucleus.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "52:13",
+     "verse_text": "يَوْمَ يُدَعُّونَ إِلَىٰ نَارِ جَهَنَّمَ دَعًّا"
+    }
+   ],
+   "root_arabic": "د ع ع",
+   "root_buckwalter": "dEE",
+   "root_id": "dEE",
+   "artifact_name": "dEE.json",
+   "verse_ref": "52:13",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "yudaE~u",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَوْمَ يُدَعُّونَ إِلَىٰ نَارِ جَهَنَّمَ دَعًّا"
+  },
+  {
+   "word_ref": "52:13:6:1",
+   "disposition": "CONSISTENT",
+   "note": "The active verb (107:2:3:1 يَدُعُّ), its passive (52:13:2:1 يُدَعُّونَ) and its cognate maṣdar (52:13:6:1 دَعًّا) are one geminate lexeme in voice/derivational alternation, not distinct senses. The active/passive minimal pair fixes the voice alternation Quran-internally; the maṣdar sits inside the same clause as the passive verb, foreclosing any separate nominal class. No occurrence contradicts the direction-neutral 'forceful thrust of a person' nucleus.",
+   "coverage_cluster_id": "dEE-forceful-thrust",
+   "candidate_semantic_interpretation": "Forceful/violent thrusting or driving of a human patient; harsh propulsive manner supplied by the root, direction supplied by syntax (bare accusative object in 107:2 = thrust off; إِلَىٰ + goal in 52:13 = drive toward). The maṣdar دَعًّا is the cognate accusative of يُدَعُّونَ and reinforces the intensive register.",
+   "cluster_supporting_evidence": "107:2:3:1 يَدُعُّ ٱلْيَتِيمَ (active, bare-transitive, person patient, thrust-off) and 52:13:2:1 يُدَعُّونَ إِلَىٰ نَارِ جَهَنَّمَ دَعًّا (passive + intensive cognate accusative, person patients, thrust-toward-goal) jointly establish the harsh-propulsion-of-a-person core with direction contributed by syntax.",
+   "counterevidence": [
+    "107:2:3:1",
+    "52:13:2:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The active verb (107:2:3:1 يَدُعُّ), its passive (52:13:2:1 يُدَعُّونَ) and its cognate maṣdar (52:13:6:1 دَعًّا) are one geminate lexeme in voice/derivational alternation, not distinct senses. The active/passive minimal pair fixes the voice alternation Quran-internally; the maṣdar sits inside the same clause as the passive verb, foreclosing any separate nominal class. No occurrence contradicts the direction-neutral 'forceful thrust of a person' nucleus.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "52:13",
+     "verse_text": "يَوْمَ يُدَعُّونَ إِلَىٰ نَارِ جَهَنَّمَ دَعًّا"
+    }
+   ],
+   "root_arabic": "د ع ع",
+   "root_buckwalter": "dEE",
+   "root_id": "dEE",
+   "artifact_name": "dEE.json",
+   "verse_ref": "52:13",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "daE~FA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَوْمَ يُدَعُّونَ إِلَىٰ نَارِ جَهَنَّمَ دَعًّا"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Three independent lenses (A, B, adversary C) each attempted the strongest counterexamples (directional split; 107:2 socio-moral reading) and each concluded the core holds while flagging the same breadth/distinctiveness limits; convergence is recorded but does not substitute for an untested neighbour-root distinctiveness check.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "Forceful, violent thrusting / shoving / driving of a person. The geminate root د-ع-ع supplies harsh, propulsive MANNER applied to a human patient; DIRECTION (away, as in repelling the orphan; toward a goal, as in driving to the Fire) is not encoded by the root but is supplied by argument structure (bare accusative object vs. إِلَىٰ + goal). The intensive register is corroborated by the cognate accusative دَعًّا.",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "DERIVATIONAL_FAMILY",
+ "layer_attribution": {
+  "occurrence_evidence": "3 confirmed tokens: 107:2:3:1 يَدُعُّ (V, active, bare accusative ٱلْيَتِيمَ); 52:13:2:1 يُدَعُّونَ (V, passive, goal إِلَىٰ نَارِ جَهَنَّمَ); 52:13:6:1 دَعًّا (N, cognate accusative). All qac_verb_form=null (base geminate), shadda on the ʿayn in every surface form.",
+  "derivation": "One geminate lexeme in voice/derivational alternation: active imperfect, passive imperfect, and its cognate maṣdar. The active/passive minimal pair fixes the voice alternation; the maṣdar is the mafʿūl muṭlaq of the passive verb in the same clause.",
+  "lexical_class": "No lexicalized nominal split: the sole noun دَعًّا is a dependent cognate accusative reinforcing يُدَعُّونَ, not an independent nominal sense. Treated as a derivational-family generalization, not a distinct lexical class.",
+  "contextual_relation": "Contextual/narrative content — the orphan as a vulnerable petitioner rebuffed by a dīn-denier (107), and the deniers driven into Hellfire (52) — supplies the moral/eschatological framing and the direction of movement, but is NOT the root claim; it must not be read back into د-ع-ع as 'reject the vulnerable' or 'punish'.",
+  "reconciliation": "107:2:3:1 was preliminarily flagged STRUCTURAL_UNCERTAINTY (register underdetermined locally) and reconciled to CONSISTENT because the forceful-pushing schema is retained under both readings and 52:13 anchors the literal physical sense; it is carried as an ADVERSARIAL_BOUNDARY hard case.",
+  "unresolved_resistance": "No persisted resistant occurrence and no unbridged class. Residual, non-fatal uncertainty: (1) the literal-vs-social register of 107:2, whose physical-force feature is imported by analogy; (2) untested distinctiveness from neighbours د-ف-ع and د-ع-و. These cap the grade at MODERATE but do not force an UNRESOLVED/multi-class result."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "107:2:3:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "The decisive semantic feature (violent physical propulsion) is not independently demonstrated in al-Māʿūn; the local frame equally supports a socio-moral 'harshly turns the orphan away', so unifying it with 52:13 is partly circular. This caps strength and blocks an adversarially-clean STRONG grade, without fracturing the direction-neutral nucleus.",
+   "evidence_basis": {
+    "kind": "REGISTER_UNDERDETERMINATION",
+    "statement": "Within Sūrat al-Māʿūn alone, the force-component of yaduʿʿu l-yatīma is underdetermined: the local charity/neglect frame (paired with lā yaḥuḍḍu, 107:3) supports a socio-moral 'harshly turns the orphan away' reading, and the literal violent-shove sense is imported by analogy to 52:13 rather than established locally."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "There is a genuine adversarial boundary (107:2's register underdetermination and the directional split) but no occurrence persists in resisting the direction-neutral 'forceful thrust of a person' nucleus. The core account holds; the hard case is an adversarial boundary that caps confidence, not a persisted resistant seam or an unbridged class."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A Quran-internal occurrence of the geminate root د-ع-ع (shadda on the ʿayn) whose patient is inanimate, or whose act is verbal/communicative (summoning, calling, inviting), or in which a single directional value (strictly 'away' or strictly 'toward') is lexicalized independent of syntax — any of which would refute the 'forceful physical thrust of a person, direction by syntax' nucleus.",
+  "search_location": "The full geminate د-ع-ع inventory (all 3 confirmed tokens: 107:2:3:1, 52:13:2:1, 52:13:6:1) and any future-surfaced geminate tokens; explicitly excluding the weak root د-ع-و tokens, which must be kept out of the sample.",
+  "verification_method": "Read verse_text and qac morphology (qac_pos, qac_verb_form, form) for each candidate; confirm the geminate radical (doubled ʿayn) is present; classify the patient (human vs. inanimate), the presence/absence of a goal preposition (إِلَىٰ vs. bare accusative), and whether any communicative complement is present.",
+  "confounder_control": "Segregate د-ع-ع (geminate, physical propulsion) from the homophonous-looking weak root د-ع-و (call/invite/pray) by morphology and syntax, not by surface resemblance; treat the cognate accusative دَعًّا as a dependent witness of يُدَعُّونَ, not as independent evidence; do not let the al-Māʿūn charity frame smuggle in a socio-moral gloss as the root's contribution.",
+  "failure_consequence": "If an inanimate-patient, communicative, or syntax-independent directional token appears, the direction-neutral physical-thrust nucleus is falsified or narrowed: the account would be downgraded (WEAK / UNRESOLVED) or split into distinct classes rather than one derivational-family generalization."
+ },
+ "falsification_status": "NOT_RUN",
+ "reopen_conditions": [
+  "A new or re-segmented geminate د-ع-ع occurrence appears with an inanimate patient or a communicative complement, testing whether the 'human-patient physical thrust' boundary holds.",
+  "Neighbour-root packets for د-ف-ع ('push/repel/defend') and د-ع-و ('call/invite') become available, enabling an adversarial distinctiveness test that could either confirm or dissolve the claimed boundary between د-ع-ع and its neighbours.",
+  "A reading of 107:2:3:1 يَدُعُّ ٱلْيَتِيمَ is established Quran-internally that fixes its register (literal physical shove vs. socio-moral rebuff) without importing 52:13, which would either strengthen the nucleus to STRONG or expose 107:2 as a distinct sense."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "107:2:3:1",
+  "52:13:2:1",
+  "52:13:6:1"
+ ],
+ "counterevidence_refs": [
+  "107:2:3:1",
+  "52:13:2:1"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "dEE-falsify-01",
+  "verdict": "CORE_HOLDS_BOUNDARY_UNRESOLVED",
+  "falsifiable": true,
+  "distinctiveness_ok": false,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "dEE-forceful-thrust"
+  ],
+  "status_rationale": "No occurrence breaks the direction-neutral 'forceful thrust of a person' nucleus, so the core is not FAILED. But a completed adversarial refutation returning SUPPORTED with distinctiveness_ok=true could not be run: distinctiveness from the semantic neighbours د-ف-ع and د-ع-و was argued only internally (neighbour packets not provided), and 107:2's physical-force feature is partly imported by analogy. Hence NOT_RUN with the two boundary points recorded rather than a claimed PASS."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "dEE: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "dEE: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "dEE: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "dEE: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "dEE: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "dEE: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "dEE: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "dEE: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

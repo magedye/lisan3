@@ -1,0 +1,887 @@
+{
+ "root_arabic": "ن ج م",
+ "root_buckwalter": "njm",
+ "root_id": "njm",
+ "artifact_name": "njm.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave5",
+ "occurrences": 13,
+ "frozen_candidate_root_contribution": "njm names a discrete luminous celestial body — a 'star' — as a class distinct from and enumerated after the sun (shams) and the moon (qamar); a countable point-light (conceived predominantly in multiplicity), holding a determinate position, shining/guiding through darkness, subject to divine command, and impermanent (setting, falling, and finally effaced).",
+ "internal_discovery": {
+  "candidate_root_contribution": "njm names a discrete luminous celestial body — a 'star' — as a class distinct from and enumerated after the sun (shams) and the moon (qamar); a countable point-light (conceived predominantly in multiplicity), holding a determinate position, shining/guiding through darkness, subject to divine command, and impermanent (setting, falling, and finally effaced).",
+  "plain_explanation": "Across all 13 occurrences the root surfaces only as a noun (no verb, no participle), inflected for number: plural nujūm (9x) and singular najm (4x). Both number-forms refer to the same thing — stars — and bridge cleanly (guidance najm 16:16 mirrors nujūm 6:97; setting najm 53:1 mirrors idbār al-nujūm 52:49; piercing najm 86:3). The Quran repeatedly lists the stars as a third, separate item AFTER sun and moon (16:12, 7:54, 22:18), fixing the referent as the lesser celestial lights rather than sun or moon. Attached features are stable: made for navigation in darkness (6:97, 16:16), possessing positions/settings (56:75, 52:49), objects of observation (37:88), subjected by command and prostrating (16:12, 7:54, 22:18), and eschatologically extinguished (77:8, 81:2). One token — 55:6 (najm paired with shajar/trees, both prostrating) — does not internally force the celestial reading and is the sole residual seam; the packet's own 22:18 (stars and trees co-prostrating) supplies a celestial precedent, but the singular minimal couplet of 55:6 remains underdetermined on Quran-internal evidence alone.",
+  "layer_separation_note": "njm is NOT the sun and NOT the moon — it is invariably listed as a distinct third category after shams and qamar (16:12, 7:54, 22:18). It is NOT divine or autonomous — always created, subjected (musakhkharāt bi-amrihi), prostrating, and destructible, never a worshipped agent. It does NOT entail permanence — the portrayal foregrounds setting/falling/effacement (52:49, 53:1, 77:8, 81:2). It is NOT undifferentiated 'light' — the referents are discrete, located bodies with mawāqiʿ (56:75) and individual identity (al-najm al-thāqib, 86:3). No eventive/agentive or 'installment/appointed-portion' sense is attested: zero verbs in 13/13, so any abstract 'appear/emerge/rise' nucleus is untestable and unimported.",
+  "presence": {
+   "occurrences_total": 13,
+   "occurrences_checked": 13,
+   "occurrences_consistent": 12,
+   "inconsistent_refs": [
+    "55:6:1:3"
+   ]
+  },
+  "strongest_counterexample": "55:6 wa-al-najmu wa-al-shajaru yasjudāni: singular najm is bound in a tight two-member couplet with shajar (trees), and the immediately preceding 55:5 (al-shamsu wa-al-qamaru bi-ḥusbān) already closes the celestial pair — structurally inviting najm here to be a low/stemless ground-vegetation term paired against woody trees. Quran-internal evidence cannot decisively exclude this terrestrial-flora reading, since no other token forces the celestial sense of THIS word and the immediate collocation is botanical; this leaves a possible unbridged non-celestial sub-reading on one token, which caps the account at MODERATE/REPRESENTATIVE.",
+  "strongest_competitor": "Two unbridged referential classes (homonymy): (A) celestial luminary for 12 occurrences and (B) terrestrial ground-vegetation for 55:6, with no single nucleus bridging A↔B. Rejected as the primary account because reading (B) has zero independent Quran-internal attestation (najm is never elsewhere vegetation) and depends on an external lexical prior the source policy forbids, whereas 22:18 (al-nujūm ... wa-al-shajar co-prostrating) gives an in-packet precedent for celestial najm alongside shajar. It is possible but under-demonstrated, so it survives only as a residual seam on one token, not as an established second class — hence a single preferred nucleus with capped strength rather than a forced UNRESOLVED partition.",
+  "competing_hypothesis": "Two unbridged referential classes (homonymy): (A) celestial luminary for 12 occurrences and (B) terrestrial ground-vegetation for 55:6, with no single nucleus bridging A↔B. Rejected as the primary account because reading (B) has zero independent Quran-internal attestation (najm is never elsewhere vegetation) and depends on an external lexical prior the source policy forbids, whereas 22:18 (al-nujūm ... wa-al-shajar co-prostrating) gives an in-packet precedent for celestial najm alongside shajar. It is possible but under-demonstrated, so it survives only as a residual seam on one token, not as an established second class — hence a single preferred nucleus with capped strength rather than a forced UNRESOLVED partition.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All three analysts converge on a celestial-luminary nucleus distinct from sun/moon, with broad (12/13) and distinctive support (repeated post-shams/qamar enumeration; navigation, positions, and eschatological-effacement profile) and clean singular/plural bridging. This clears MODERATE. It does NOT reach STRONG/UNIVERSAL for three contract-relevant reasons: (1) the root surfaces in a single morphological form (N, 13/13) with no verbal/derivational breadth, so the recovered meaning is a referent identification, not a triangulated semantic operation, and no action-semantics are attestable; (2) 55:6 is a materially resistant, Quran-internally underdetermined token admitting a non-celestial reading the packet cannot exclude — a coherent resistant seam that per the contract caps strength at MODERATE and scope at REPRESENTATIVE; (3) the account is purely referential/nominal. The homonym partition is not forced because reading (B) lacks any independent Quran-internal support, so the honest result is one preferred lexicalized nominal class (star), MODERATE/REPRESENTATIVE, with 55:6 logged as a persistent resistant seam rather than an established second sense.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "nujum_plural_celestial",
+     "where": {
+      "qac_pos": [
+       "N"
+      ],
+      "qac_verb_form": [
+       null
+      ],
+      "forms": [
+       "N"
+      ],
+      "word_refs": [
+       "16:12:7:3",
+       "7:54:22:3",
+       "22:18:15:3",
+       "6:97:5:2",
+       "37:88:4:2",
+       "52:49:5:2",
+       "56:75:4:2",
+       "77:8:2:2",
+       "81:2:2:2"
+      ]
+     },
+     "occurrence_count_expected": 13,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Plural nujūm = the stars: the class of lesser celestial luminaries, enumerated separately from and after sun and moon; created and subjected by command, made for guidance in darkness, possessing determinate positions/settings, objects of observation, and eschatologically effaced.",
+     "classification_rationale": "9/9 tokens fit one narrow referent with converging independent properties. The decisive boundary is the repeated co-listing as a third distinct item after al-shams and al-qamar (16:12, 7:54, 22:18), which excludes sun/moon. Guidance (6:97), positions (56:75), retreat at dawn (52:49), observation (37:88), and eschatological effacement (77:8 ţumisat, 81:2 inkadarat) all predicate of the same concrete luminary-class. Adversarially clean.",
+     "supporting_evidence_note": "musakhkharāt bi-amrihi after shams/qamar (16:12, 7:54); prostration inventory grouping with sun/moon (22:18); jaʿala lakum al-nujūma li-tahtadū bihā (6:97); mawāqiʿ al-nujūm (56:75); idbār al-nujūm (52:49); naẓra fī al-nujūm (37:88); ţumisat / inkadarat (77:8, 81:2).",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "najm_singular_celestial",
+     "where": {
+      "qac_pos": [
+       "N"
+      ],
+      "qac_verb_form": [
+       null
+      ],
+      "forms": [
+       "N"
+      ],
+      "word_refs": [
+       "16:16:2:4",
+       "53:1:1:3",
+       "86:3:1:2"
+      ]
+     },
+     "occurrence_count_expected": 0,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Singular najm = a star (collective/generic or individual), the same lexeme under number inflection: guiding luminary (16:16), a luminary that falls/sets (53:1), and a piercing bright luminary (86:3).",
+     "classification_rationale": "3/3 singular tokens bridge cleanly to the plural class: guidance najm 16:16 mirrors nujūm 6:97; setting najm 53:1 (hawā) mirrors idbār al-nujūm 52:49; al-najm al-thāqib 86:3 is unambiguously a bright celestial body. Inflection tracks grammatical number, not a shift in root contribution.",
+     "supporting_evidence_note": "wa-bi-al-najmi hum yahtadūn (16:16); wa-al-najmi idhā hawā (53:1); al-najmu al-thāqib (86:3).",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "najm_singular_resistant_seam",
+     "where": {
+      "qac_pos": [
+       "N"
+      ],
+      "qac_verb_form": [
+       null
+      ],
+      "forms": [
+       "N"
+      ],
+      "word_refs": [
+       "55:6:1:3"
+      ]
+     },
+     "occurrence_count_expected": 0,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "Underdetermined: most-supported reading is celestial najm (star prostrating, paralleling 22:18 where stars and trees co-prostrate), but the packet cannot exclude a distinct terrestrial ground-vegetation sense paired against shajar.",
+     "classification_rationale": "55:6 pairs najm minimally with shajar (trees), both prostrating, while 55:5 has already spent the celestial pair (sun+moon), structurally inviting a celestial→terrestrial pivot and a flora-flora couplet. Quran-internal evidence neither forces the celestial reading of this singular token nor establishes an independent vegetation sense (najm is never elsewhere vegetation). It therefore remains a genuine resistant seam: a possible unbridged non-celestial sub-reading on one token that the packet cannot resolve.",
+     "supporting_evidence_note": "22:18 lists al-nujūm ... wa-al-shajar both prostrating as distinct items, giving an in-packet precedent for a celestial najm alongside shajar; but 22:18 is plural in a long list whereas 55:6 is a singular minimal couplet, so the parallel is suggestive, not decisive.",
+     "counterevidence": [
+      "55:6:1:3"
+     ]
+    }
+   ],
+   "reconciliation": [
+    {
+     "word_ref": "55:6:1:3",
+     "final": "RESISTANT",
+     "rationale": "Analysts A and C, and the contract's caps, prevail: the 22:18 parallel is plural-long-list vs. a singular minimal couplet, and 55:5 has spent the celestial pair, so 55:6 is Quran-internally underdetermined. The vegetation reading is inadmissibly external, but it also cannot be internally disproven; the honest disposition is a logged resistant seam, not a resolved consistency, which caps strength at MODERATE and scope at REPRESENTATIVE without forcing an UNRESOLVED homonym partition."
+    }
+   ]
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "njm",
+  "verdict": "CORE_SUPPORTED_WITH_RESIDUAL_RESISTANCE",
+  "failing_occurrences": [
+   "55:6:1:3"
+  ],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "The celestial nucleus is distinctive and survives adversarial pressure for 12/13, but 55:6 resists a clean unified account and cannot be internally forced into the class; because the core holds while one occurrence genuinely resists, a full falsification PASS is not claimed — the resistance is recorded rather than the core being refuted."
+ },
+ "coverage_validation": {
+  "root": "njm",
+  "expected_count": 13,
+  "researched_count": 13,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [
+   "55:6:1:3"
+  ],
+  "unresolved_visible": [
+   "55:6:1:3"
+  ]
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "16:12:7:3",
+   "disposition": "CONSISTENT",
+   "note": "9/9 tokens fit one narrow referent with converging independent properties. The decisive boundary is the repeated co-listing as a third distinct item after al-shams and al-qamar (16:12, 7:54, 22:18), which excludes sun/moon. Guidance (6:97), positions (56:75), retreat at dawn (52:49), observation (37:88), and eschatological effacement (77:8 ţumisat, 81:2 inkadarat) all predicate of the same concrete luminary-class. Adversarially clean.",
+   "coverage_cluster_id": "nujum_plural_celestial",
+   "candidate_semantic_interpretation": "Plural nujūm = the stars: the class of lesser celestial luminaries, enumerated separately from and after sun and moon; created and subjected by command, made for guidance in darkness, possessing determinate positions/settings, objects of observation, and eschatologically effaced.",
+   "cluster_supporting_evidence": "musakhkharāt bi-amrihi after shams/qamar (16:12, 7:54); prostration inventory grouping with sun/moon (22:18); jaʿala lakum al-nujūma li-tahtadū bihā (6:97); mawāqiʿ al-nujūm (56:75); idbār al-nujūm (52:49); naẓra fī al-nujūm (37:88); ţumisat / inkadarat (77:8, 81:2).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "9/9 tokens fit one narrow referent with converging independent properties. The decisive boundary is the repeated co-listing as a third distinct item after al-shams and al-qamar (16:12, 7:54, 22:18), which excludes sun/moon. Guidance (6:97), positions (56:75), retreat at dawn (52:49), observation (37:88), and eschatological effacement (77:8 ţumisat, 81:2 inkadarat) all predicate of the same concrete luminary-class. Adversarially clean.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "16:12",
+     "verse_text": "وَسَخَّرَ لَكُمُ ٱلَّيْلَ وَٱلنَّهَارَ وَٱلشَّمْسَ وَٱلْقَمَرَ وَٱلنُّجُومُ مُسَخَّرَٰتٌۢ بِأَمْرِهِۦٓ إِنَّ فِى ذَٰلِكَ لَـَٔايَٰتٍ لِّقَوْمٍ يَعْقِلُونَ"
+    }
+   ],
+   "root_arabic": "ن ج م",
+   "root_buckwalter": "njm",
+   "root_id": "njm",
+   "artifact_name": "njm.json",
+   "verse_ref": "16:12",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "n~ujuwmu",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَسَخَّرَ لَكُمُ ٱلَّيْلَ وَٱلنَّهَارَ وَٱلشَّمْسَ وَٱلْقَمَرَ وَٱلنُّجُومُ مُسَخَّرَٰتٌۢ بِأَمْرِهِۦٓ إِنَّ فِى ذَٰلِكَ لَـَٔايَٰتٍ لِّقَوْمٍ يَعْقِلُونَ"
+  },
+  {
+   "word_ref": "16:16:2:4",
+   "disposition": "CONSISTENT",
+   "note": "9/9 tokens fit one narrow referent with converging independent properties. The decisive boundary is the repeated co-listing as a third distinct item after al-shams and al-qamar (16:12, 7:54, 22:18), which excludes sun/moon. Guidance (6:97), positions (56:75), retreat at dawn (52:49), observation (37:88), and eschatological effacement (77:8 ţumisat, 81:2 inkadarat) all predicate of the same concrete luminary-class. Adversarially clean.",
+   "coverage_cluster_id": "nujum_plural_celestial",
+   "candidate_semantic_interpretation": "Plural nujūm = the stars: the class of lesser celestial luminaries, enumerated separately from and after sun and moon; created and subjected by command, made for guidance in darkness, possessing determinate positions/settings, objects of observation, and eschatologically effaced.",
+   "cluster_supporting_evidence": "musakhkharāt bi-amrihi after shams/qamar (16:12, 7:54); prostration inventory grouping with sun/moon (22:18); jaʿala lakum al-nujūma li-tahtadū bihā (6:97); mawāqiʿ al-nujūm (56:75); idbār al-nujūm (52:49); naẓra fī al-nujūm (37:88); ţumisat / inkadarat (77:8, 81:2).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "9/9 tokens fit one narrow referent with converging independent properties. The decisive boundary is the repeated co-listing as a third distinct item after al-shams and al-qamar (16:12, 7:54, 22:18), which excludes sun/moon. Guidance (6:97), positions (56:75), retreat at dawn (52:49), observation (37:88), and eschatological effacement (77:8 ţumisat, 81:2 inkadarat) all predicate of the same concrete luminary-class. Adversarially clean.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "16:16",
+     "verse_text": "وَعَلَٰمَٰتٍ وَبِٱلنَّجْمِ هُمْ يَهْتَدُونَ"
+    }
+   ],
+   "root_arabic": "ن ج م",
+   "root_buckwalter": "njm",
+   "root_id": "njm",
+   "artifact_name": "njm.json",
+   "verse_ref": "16:16",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "n~ajomi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَعَلَٰمَٰتٍ وَبِٱلنَّجْمِ هُمْ يَهْتَدُونَ"
+  },
+  {
+   "word_ref": "22:18:15:3",
+   "disposition": "CONSISTENT",
+   "note": "9/9 tokens fit one narrow referent with converging independent properties. The decisive boundary is the repeated co-listing as a third distinct item after al-shams and al-qamar (16:12, 7:54, 22:18), which excludes sun/moon. Guidance (6:97), positions (56:75), retreat at dawn (52:49), observation (37:88), and eschatological effacement (77:8 ţumisat, 81:2 inkadarat) all predicate of the same concrete luminary-class. Adversarially clean.",
+   "coverage_cluster_id": "nujum_plural_celestial",
+   "candidate_semantic_interpretation": "Plural nujūm = the stars: the class of lesser celestial luminaries, enumerated separately from and after sun and moon; created and subjected by command, made for guidance in darkness, possessing determinate positions/settings, objects of observation, and eschatologically effaced.",
+   "cluster_supporting_evidence": "musakhkharāt bi-amrihi after shams/qamar (16:12, 7:54); prostration inventory grouping with sun/moon (22:18); jaʿala lakum al-nujūma li-tahtadū bihā (6:97); mawāqiʿ al-nujūm (56:75); idbār al-nujūm (52:49); naẓra fī al-nujūm (37:88); ţumisat / inkadarat (77:8, 81:2).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "9/9 tokens fit one narrow referent with converging independent properties. The decisive boundary is the repeated co-listing as a third distinct item after al-shams and al-qamar (16:12, 7:54, 22:18), which excludes sun/moon. Guidance (6:97), positions (56:75), retreat at dawn (52:49), observation (37:88), and eschatological effacement (77:8 ţumisat, 81:2 inkadarat) all predicate of the same concrete luminary-class. Adversarially clean.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "22:18",
+     "verse_text": "أَلَمْ تَرَ أَنَّ ٱللَّهَ يَسْجُدُ لَهُۥ مَن فِى ٱلسَّمَٰوَٰتِ وَمَن فِى ٱلْأَرْضِ وَٱلشَّمْسُ وَٱلْقَمَرُ وَٱلنُّجُومُ وَٱلْجِبَالُ وَٱلشَّجَرُ وَٱلدَّوَآبُّ وَكَثِيرٌ مِّنَ ٱلنَّاسِ وَكَثِيرٌ حَقَّ عَلَيْهِ ٱلْعَذَابُ وَمَن يُهِنِ ٱللَّهُ فَمَا لَهُۥ مِن مُّكْرِمٍ إِنَّ ٱللَّهَ يَفْعَلُ مَا يَشَآءُ"
+    }
+   ],
+   "root_arabic": "ن ج م",
+   "root_buckwalter": "njm",
+   "root_id": "njm",
+   "artifact_name": "njm.json",
+   "verse_ref": "22:18",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "n~ujuwmu",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَلَمْ تَرَ أَنَّ ٱللَّهَ يَسْجُدُ لَهُۥ مَن فِى ٱلسَّمَٰوَٰتِ وَمَن فِى ٱلْأَرْضِ وَٱلشَّمْسُ وَٱلْقَمَرُ وَٱلنُّجُومُ وَٱلْجِبَالُ وَٱلشَّجَرُ وَٱلدَّوَآبُّ وَكَثِيرٌ مِّنَ ٱلنَّاسِ وَكَثِيرٌ حَقَّ عَلَيْهِ ٱلْعَذَابُ وَمَن يُهِنِ ٱللَّهُ فَمَا لَهُۥ مِن مُّكْرِمٍ إِنَّ ٱللَّهَ يَفْعَلُ مَا يَشَآءُ"
+  },
+  {
+   "word_ref": "37:88:4:2",
+   "disposition": "CONSISTENT",
+   "note": "9/9 tokens fit one narrow referent with converging independent properties. The decisive boundary is the repeated co-listing as a third distinct item after al-shams and al-qamar (16:12, 7:54, 22:18), which excludes sun/moon. Guidance (6:97), positions (56:75), retreat at dawn (52:49), observation (37:88), and eschatological effacement (77:8 ţumisat, 81:2 inkadarat) all predicate of the same concrete luminary-class. Adversarially clean.",
+   "coverage_cluster_id": "nujum_plural_celestial",
+   "candidate_semantic_interpretation": "Plural nujūm = the stars: the class of lesser celestial luminaries, enumerated separately from and after sun and moon; created and subjected by command, made for guidance in darkness, possessing determinate positions/settings, objects of observation, and eschatologically effaced.",
+   "cluster_supporting_evidence": "musakhkharāt bi-amrihi after shams/qamar (16:12, 7:54); prostration inventory grouping with sun/moon (22:18); jaʿala lakum al-nujūma li-tahtadū bihā (6:97); mawāqiʿ al-nujūm (56:75); idbār al-nujūm (52:49); naẓra fī al-nujūm (37:88); ţumisat / inkadarat (77:8, 81:2).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "9/9 tokens fit one narrow referent with converging independent properties. The decisive boundary is the repeated co-listing as a third distinct item after al-shams and al-qamar (16:12, 7:54, 22:18), which excludes sun/moon. Guidance (6:97), positions (56:75), retreat at dawn (52:49), observation (37:88), and eschatological effacement (77:8 ţumisat, 81:2 inkadarat) all predicate of the same concrete luminary-class. Adversarially clean.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "37:88",
+     "verse_text": "فَنَظَرَ نَظْرَةً فِى ٱلنُّجُومِ"
+    }
+   ],
+   "root_arabic": "ن ج م",
+   "root_buckwalter": "njm",
+   "root_id": "njm",
+   "artifact_name": "njm.json",
+   "verse_ref": "37:88",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "n~ujuwmi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَنَظَرَ نَظْرَةً فِى ٱلنُّجُومِ"
+  },
+  {
+   "word_ref": "52:49:5:2",
+   "disposition": "CONSISTENT",
+   "note": "9/9 tokens fit one narrow referent with converging independent properties. The decisive boundary is the repeated co-listing as a third distinct item after al-shams and al-qamar (16:12, 7:54, 22:18), which excludes sun/moon. Guidance (6:97), positions (56:75), retreat at dawn (52:49), observation (37:88), and eschatological effacement (77:8 ţumisat, 81:2 inkadarat) all predicate of the same concrete luminary-class. Adversarially clean.",
+   "coverage_cluster_id": "nujum_plural_celestial",
+   "candidate_semantic_interpretation": "Plural nujūm = the stars: the class of lesser celestial luminaries, enumerated separately from and after sun and moon; created and subjected by command, made for guidance in darkness, possessing determinate positions/settings, objects of observation, and eschatologically effaced.",
+   "cluster_supporting_evidence": "musakhkharāt bi-amrihi after shams/qamar (16:12, 7:54); prostration inventory grouping with sun/moon (22:18); jaʿala lakum al-nujūma li-tahtadū bihā (6:97); mawāqiʿ al-nujūm (56:75); idbār al-nujūm (52:49); naẓra fī al-nujūm (37:88); ţumisat / inkadarat (77:8, 81:2).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "9/9 tokens fit one narrow referent with converging independent properties. The decisive boundary is the repeated co-listing as a third distinct item after al-shams and al-qamar (16:12, 7:54, 22:18), which excludes sun/moon. Guidance (6:97), positions (56:75), retreat at dawn (52:49), observation (37:88), and eschatological effacement (77:8 ţumisat, 81:2 inkadarat) all predicate of the same concrete luminary-class. Adversarially clean.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "52:49",
+     "verse_text": "وَمِنَ ٱلَّيْلِ فَسَبِّحْهُ وَإِدْبَٰرَ ٱلنُّجُومِ"
+    }
+   ],
+   "root_arabic": "ن ج م",
+   "root_buckwalter": "njm",
+   "root_id": "njm",
+   "artifact_name": "njm.json",
+   "verse_ref": "52:49",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "n~ujuwmi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَمِنَ ٱلَّيْلِ فَسَبِّحْهُ وَإِدْبَٰرَ ٱلنُّجُومِ"
+  },
+  {
+   "word_ref": "53:1:1:3",
+   "disposition": "CONSISTENT",
+   "note": "9/9 tokens fit one narrow referent with converging independent properties. The decisive boundary is the repeated co-listing as a third distinct item after al-shams and al-qamar (16:12, 7:54, 22:18), which excludes sun/moon. Guidance (6:97), positions (56:75), retreat at dawn (52:49), observation (37:88), and eschatological effacement (77:8 ţumisat, 81:2 inkadarat) all predicate of the same concrete luminary-class. Adversarially clean.",
+   "coverage_cluster_id": "nujum_plural_celestial",
+   "candidate_semantic_interpretation": "Plural nujūm = the stars: the class of lesser celestial luminaries, enumerated separately from and after sun and moon; created and subjected by command, made for guidance in darkness, possessing determinate positions/settings, objects of observation, and eschatologically effaced.",
+   "cluster_supporting_evidence": "musakhkharāt bi-amrihi after shams/qamar (16:12, 7:54); prostration inventory grouping with sun/moon (22:18); jaʿala lakum al-nujūma li-tahtadū bihā (6:97); mawāqiʿ al-nujūm (56:75); idbār al-nujūm (52:49); naẓra fī al-nujūm (37:88); ţumisat / inkadarat (77:8, 81:2).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "9/9 tokens fit one narrow referent with converging independent properties. The decisive boundary is the repeated co-listing as a third distinct item after al-shams and al-qamar (16:12, 7:54, 22:18), which excludes sun/moon. Guidance (6:97), positions (56:75), retreat at dawn (52:49), observation (37:88), and eschatological effacement (77:8 ţumisat, 81:2 inkadarat) all predicate of the same concrete luminary-class. Adversarially clean.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "53:1",
+     "verse_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلنَّجْمِ إِذَا هَوَىٰ"
+    }
+   ],
+   "root_arabic": "ن ج م",
+   "root_buckwalter": "njm",
+   "root_id": "njm",
+   "artifact_name": "njm.json",
+   "verse_ref": "53:1",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "n~ajomi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلنَّجْمِ إِذَا هَوَىٰ"
+  },
+  {
+   "word_ref": "55:6:1:3",
+   "disposition": "RESISTANT",
+   "note": "Held as a persistent resistant seam: the celestial reading is the most-supported but not forced; a distinct terrestrial-flora sense is possible yet has zero independent Quran-internal attestation. Caps the root account at MODERATE/REPRESENTATIVE. | 55:6 wa-al-najmu wa-al-shajaru yasjudāni: singular najm is bound in a tight two-member couplet with shajar (trees), and the immediately preceding 55:5 (al-shamsu wa-al-qamaru bi-ḥusbān) already closes the celestial pair — structurally inviting najm here to be a low/stemless ground-vegetation term paired against woody trees. Quran-internal evidence cannot decisively exclude this terrestrial-flora reading, since no other token forces the celestial sense of THIS word and the immediate collocation is botanical; this leaves a possible unbridged non-celestial sub-reading on one token, which caps the account at MODERATE/REPRESENTATIVE.",
+   "coverage_cluster_id": "nujum_plural_celestial",
+   "candidate_semantic_interpretation": "Plural nujūm = the stars: the class of lesser celestial luminaries, enumerated separately from and after sun and moon; created and subjected by command, made for guidance in darkness, possessing determinate positions/settings, objects of observation, and eschatologically effaced.",
+   "cluster_supporting_evidence": "musakhkharāt bi-amrihi after shams/qamar (16:12, 7:54); prostration inventory grouping with sun/moon (22:18); jaʿala lakum al-nujūma li-tahtadū bihā (6:97); mawāqiʿ al-nujūm (56:75); idbār al-nujūm (52:49); naẓra fī al-nujūm (37:88); ţumisat / inkadarat (77:8, 81:2).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Provisionally read as celestial najm prostrating, on the strength of the 22:18 in-packet precedent (stars and trees co-prostrate).",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "Analysts A and C, and the contract's caps, prevail: the 22:18 parallel is plural-long-list vs. a singular minimal couplet, and 55:5 has spent the celestial pair, so 55:6 is Quran-internally underdetermined. The vegetation reading is inadmissibly external, but it also cannot be internally disproven; the honest disposition is a logged resistant seam, not a resolved consistency, which caps strength at MODERATE and scope at REPRESENTATIVE without forcing an UNRESOLVED homonym partition.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "55:6:1:3",
+     "preliminary_disposition": "CONSISTENT",
+     "preliminary_note": "Analyst B resolves 55:6 to celestial via the 22:18 precedent (stars and trees co-prostrating), treating it as no genuine break in the nucleus.",
+     "final_disposition": "RESISTANT",
+     "reconciliation_rationale": "Analysts A and C, and the contract's caps, prevail: the 22:18 parallel is plural-long-list vs. a singular minimal couplet, and 55:5 has spent the celestial pair, so 55:6 is Quran-internally underdetermined. The vegetation reading is inadmissibly external, but it also cannot be internally disproven; the honest disposition is a logged resistant seam, not a resolved consistency, which caps strength at MODERATE and scope at REPRESENTATIVE without forcing an UNRESOLVED homonym partition.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [
+    "55:6 is a singular two-member couplet (najm+shajar) while 22:18 is a plural long-list; the parallel is suggestive, not decisive.",
+    "55:5 already assigns sun+moon, so the v.5→v.6 structure reads as celestial→terrestrial, admitting a ground-vegetation najm the packet cannot Quran-internally exclude."
+   ],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "55:6",
+     "verse_text": "وَٱلنَّجْمُ وَٱلشَّجَرُ يَسْجُدَانِ"
+    }
+   ],
+   "root_arabic": "ن ج م",
+   "root_buckwalter": "njm",
+   "root_id": "njm",
+   "artifact_name": "njm.json",
+   "verse_ref": "55:6",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "n~ajomu",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَٱلنَّجْمُ وَٱلشَّجَرُ يَسْجُدَانِ",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "56:75:4:2",
+   "disposition": "CONSISTENT",
+   "note": "9/9 tokens fit one narrow referent with converging independent properties. The decisive boundary is the repeated co-listing as a third distinct item after al-shams and al-qamar (16:12, 7:54, 22:18), which excludes sun/moon. Guidance (6:97), positions (56:75), retreat at dawn (52:49), observation (37:88), and eschatological effacement (77:8 ţumisat, 81:2 inkadarat) all predicate of the same concrete luminary-class. Adversarially clean.",
+   "coverage_cluster_id": "nujum_plural_celestial",
+   "candidate_semantic_interpretation": "Plural nujūm = the stars: the class of lesser celestial luminaries, enumerated separately from and after sun and moon; created and subjected by command, made for guidance in darkness, possessing determinate positions/settings, objects of observation, and eschatologically effaced.",
+   "cluster_supporting_evidence": "musakhkharāt bi-amrihi after shams/qamar (16:12, 7:54); prostration inventory grouping with sun/moon (22:18); jaʿala lakum al-nujūma li-tahtadū bihā (6:97); mawāqiʿ al-nujūm (56:75); idbār al-nujūm (52:49); naẓra fī al-nujūm (37:88); ţumisat / inkadarat (77:8, 81:2).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "9/9 tokens fit one narrow referent with converging independent properties. The decisive boundary is the repeated co-listing as a third distinct item after al-shams and al-qamar (16:12, 7:54, 22:18), which excludes sun/moon. Guidance (6:97), positions (56:75), retreat at dawn (52:49), observation (37:88), and eschatological effacement (77:8 ţumisat, 81:2 inkadarat) all predicate of the same concrete luminary-class. Adversarially clean.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "56:75",
+     "verse_text": "فَلَآ أُقْسِمُ بِمَوَٰقِعِ ٱلنُّجُومِ"
+    }
+   ],
+   "root_arabic": "ن ج م",
+   "root_buckwalter": "njm",
+   "root_id": "njm",
+   "artifact_name": "njm.json",
+   "verse_ref": "56:75",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "n~ujuwmi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَلَآ أُقْسِمُ بِمَوَٰقِعِ ٱلنُّجُومِ"
+  },
+  {
+   "word_ref": "6:97:5:2",
+   "disposition": "CONSISTENT",
+   "note": "9/9 tokens fit one narrow referent with converging independent properties. The decisive boundary is the repeated co-listing as a third distinct item after al-shams and al-qamar (16:12, 7:54, 22:18), which excludes sun/moon. Guidance (6:97), positions (56:75), retreat at dawn (52:49), observation (37:88), and eschatological effacement (77:8 ţumisat, 81:2 inkadarat) all predicate of the same concrete luminary-class. Adversarially clean.",
+   "coverage_cluster_id": "nujum_plural_celestial",
+   "candidate_semantic_interpretation": "Plural nujūm = the stars: the class of lesser celestial luminaries, enumerated separately from and after sun and moon; created and subjected by command, made for guidance in darkness, possessing determinate positions/settings, objects of observation, and eschatologically effaced.",
+   "cluster_supporting_evidence": "musakhkharāt bi-amrihi after shams/qamar (16:12, 7:54); prostration inventory grouping with sun/moon (22:18); jaʿala lakum al-nujūma li-tahtadū bihā (6:97); mawāqiʿ al-nujūm (56:75); idbār al-nujūm (52:49); naẓra fī al-nujūm (37:88); ţumisat / inkadarat (77:8, 81:2).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "9/9 tokens fit one narrow referent with converging independent properties. The decisive boundary is the repeated co-listing as a third distinct item after al-shams and al-qamar (16:12, 7:54, 22:18), which excludes sun/moon. Guidance (6:97), positions (56:75), retreat at dawn (52:49), observation (37:88), and eschatological effacement (77:8 ţumisat, 81:2 inkadarat) all predicate of the same concrete luminary-class. Adversarially clean.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:97",
+     "verse_text": "وَهُوَ ٱلَّذِى جَعَلَ لَكُمُ ٱلنُّجُومَ لِتَهْتَدُوا۟ بِهَا فِى ظُلُمَٰتِ ٱلْبَرِّ وَٱلْبَحْرِ قَدْ فَصَّلْنَا ٱلْـَٔايَٰتِ لِقَوْمٍ يَعْلَمُونَ"
+    }
+   ],
+   "root_arabic": "ن ج م",
+   "root_buckwalter": "njm",
+   "root_id": "njm",
+   "artifact_name": "njm.json",
+   "verse_ref": "6:97",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "n~ujuwma",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَهُوَ ٱلَّذِى جَعَلَ لَكُمُ ٱلنُّجُومَ لِتَهْتَدُوا۟ بِهَا فِى ظُلُمَٰتِ ٱلْبَرِّ وَٱلْبَحْرِ قَدْ فَصَّلْنَا ٱلْـَٔايَٰتِ لِقَوْمٍ يَعْلَمُونَ"
+  },
+  {
+   "word_ref": "77:8:2:2",
+   "disposition": "CONSISTENT",
+   "note": "9/9 tokens fit one narrow referent with converging independent properties. The decisive boundary is the repeated co-listing as a third distinct item after al-shams and al-qamar (16:12, 7:54, 22:18), which excludes sun/moon. Guidance (6:97), positions (56:75), retreat at dawn (52:49), observation (37:88), and eschatological effacement (77:8 ţumisat, 81:2 inkadarat) all predicate of the same concrete luminary-class. Adversarially clean.",
+   "coverage_cluster_id": "nujum_plural_celestial",
+   "candidate_semantic_interpretation": "Plural nujūm = the stars: the class of lesser celestial luminaries, enumerated separately from and after sun and moon; created and subjected by command, made for guidance in darkness, possessing determinate positions/settings, objects of observation, and eschatologically effaced.",
+   "cluster_supporting_evidence": "musakhkharāt bi-amrihi after shams/qamar (16:12, 7:54); prostration inventory grouping with sun/moon (22:18); jaʿala lakum al-nujūma li-tahtadū bihā (6:97); mawāqiʿ al-nujūm (56:75); idbār al-nujūm (52:49); naẓra fī al-nujūm (37:88); ţumisat / inkadarat (77:8, 81:2).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "9/9 tokens fit one narrow referent with converging independent properties. The decisive boundary is the repeated co-listing as a third distinct item after al-shams and al-qamar (16:12, 7:54, 22:18), which excludes sun/moon. Guidance (6:97), positions (56:75), retreat at dawn (52:49), observation (37:88), and eschatological effacement (77:8 ţumisat, 81:2 inkadarat) all predicate of the same concrete luminary-class. Adversarially clean.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "77:8",
+     "verse_text": "فَإِذَا ٱلنُّجُومُ طُمِسَتْ"
+    }
+   ],
+   "root_arabic": "ن ج م",
+   "root_buckwalter": "njm",
+   "root_id": "njm",
+   "artifact_name": "njm.json",
+   "verse_ref": "77:8",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "n~ujuwmu",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَإِذَا ٱلنُّجُومُ طُمِسَتْ"
+  },
+  {
+   "word_ref": "7:54:22:3",
+   "disposition": "CONSISTENT",
+   "note": "9/9 tokens fit one narrow referent with converging independent properties. The decisive boundary is the repeated co-listing as a third distinct item after al-shams and al-qamar (16:12, 7:54, 22:18), which excludes sun/moon. Guidance (6:97), positions (56:75), retreat at dawn (52:49), observation (37:88), and eschatological effacement (77:8 ţumisat, 81:2 inkadarat) all predicate of the same concrete luminary-class. Adversarially clean.",
+   "coverage_cluster_id": "nujum_plural_celestial",
+   "candidate_semantic_interpretation": "Plural nujūm = the stars: the class of lesser celestial luminaries, enumerated separately from and after sun and moon; created and subjected by command, made for guidance in darkness, possessing determinate positions/settings, objects of observation, and eschatologically effaced.",
+   "cluster_supporting_evidence": "musakhkharāt bi-amrihi after shams/qamar (16:12, 7:54); prostration inventory grouping with sun/moon (22:18); jaʿala lakum al-nujūma li-tahtadū bihā (6:97); mawāqiʿ al-nujūm (56:75); idbār al-nujūm (52:49); naẓra fī al-nujūm (37:88); ţumisat / inkadarat (77:8, 81:2).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "9/9 tokens fit one narrow referent with converging independent properties. The decisive boundary is the repeated co-listing as a third distinct item after al-shams and al-qamar (16:12, 7:54, 22:18), which excludes sun/moon. Guidance (6:97), positions (56:75), retreat at dawn (52:49), observation (37:88), and eschatological effacement (77:8 ţumisat, 81:2 inkadarat) all predicate of the same concrete luminary-class. Adversarially clean.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:54",
+     "verse_text": "إِنَّ رَبَّكُمُ ٱللَّهُ ٱلَّذِى خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ فِى سِتَّةِ أَيَّامٍ ثُمَّ ٱسْتَوَىٰ عَلَى ٱلْعَرْشِ يُغْشِى ٱلَّيْلَ ٱلنَّهَارَ يَطْلُبُهُۥ حَثِيثًا وَٱلشَّمْسَ وَٱلْقَمَرَ وَٱلنُّجُومَ مُسَخَّرَٰتٍۭ بِأَمْرِهِۦٓ أَلَا لَهُ ٱلْخَلْقُ وَٱلْأَمْرُ تَبَارَكَ ٱللَّهُ رَبُّ ٱلْعَٰلَمِينَ"
+    }
+   ],
+   "root_arabic": "ن ج م",
+   "root_buckwalter": "njm",
+   "root_id": "njm",
+   "artifact_name": "njm.json",
+   "verse_ref": "7:54",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "n~ujuwma",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ رَبَّكُمُ ٱللَّهُ ٱلَّذِى خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ فِى سِتَّةِ أَيَّامٍ ثُمَّ ٱسْتَوَىٰ عَلَى ٱلْعَرْشِ يُغْشِى ٱلَّيْلَ ٱلنَّهَارَ يَطْلُبُهُۥ حَثِيثًا وَٱلشَّمْسَ وَٱلْقَمَرَ وَٱلنُّجُومَ مُسَخَّرَٰتٍۭ بِأَمْرِهِۦٓ أَلَا لَهُ ٱلْخَلْقُ وَٱلْأَمْرُ تَبَارَكَ ٱللَّهُ رَبُّ ٱلْعَٰلَمِينَ"
+  },
+  {
+   "word_ref": "81:2:2:2",
+   "disposition": "CONSISTENT",
+   "note": "9/9 tokens fit one narrow referent with converging independent properties. The decisive boundary is the repeated co-listing as a third distinct item after al-shams and al-qamar (16:12, 7:54, 22:18), which excludes sun/moon. Guidance (6:97), positions (56:75), retreat at dawn (52:49), observation (37:88), and eschatological effacement (77:8 ţumisat, 81:2 inkadarat) all predicate of the same concrete luminary-class. Adversarially clean.",
+   "coverage_cluster_id": "nujum_plural_celestial",
+   "candidate_semantic_interpretation": "Plural nujūm = the stars: the class of lesser celestial luminaries, enumerated separately from and after sun and moon; created and subjected by command, made for guidance in darkness, possessing determinate positions/settings, objects of observation, and eschatologically effaced.",
+   "cluster_supporting_evidence": "musakhkharāt bi-amrihi after shams/qamar (16:12, 7:54); prostration inventory grouping with sun/moon (22:18); jaʿala lakum al-nujūma li-tahtadū bihā (6:97); mawāqiʿ al-nujūm (56:75); idbār al-nujūm (52:49); naẓra fī al-nujūm (37:88); ţumisat / inkadarat (77:8, 81:2).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "9/9 tokens fit one narrow referent with converging independent properties. The decisive boundary is the repeated co-listing as a third distinct item after al-shams and al-qamar (16:12, 7:54, 22:18), which excludes sun/moon. Guidance (6:97), positions (56:75), retreat at dawn (52:49), observation (37:88), and eschatological effacement (77:8 ţumisat, 81:2 inkadarat) all predicate of the same concrete luminary-class. Adversarially clean.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "81:2",
+     "verse_text": "وَإِذَا ٱلنُّجُومُ ٱنكَدَرَتْ"
+    }
+   ],
+   "root_arabic": "ن ج م",
+   "root_buckwalter": "njm",
+   "root_id": "njm",
+   "artifact_name": "njm.json",
+   "verse_ref": "81:2",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "n~ujuwmu",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِذَا ٱلنُّجُومُ ٱنكَدَرَتْ"
+  },
+  {
+   "word_ref": "86:3:1:2",
+   "disposition": "CONSISTENT",
+   "note": "9/9 tokens fit one narrow referent with converging independent properties. The decisive boundary is the repeated co-listing as a third distinct item after al-shams and al-qamar (16:12, 7:54, 22:18), which excludes sun/moon. Guidance (6:97), positions (56:75), retreat at dawn (52:49), observation (37:88), and eschatological effacement (77:8 ţumisat, 81:2 inkadarat) all predicate of the same concrete luminary-class. Adversarially clean.",
+   "coverage_cluster_id": "nujum_plural_celestial",
+   "candidate_semantic_interpretation": "Plural nujūm = the stars: the class of lesser celestial luminaries, enumerated separately from and after sun and moon; created and subjected by command, made for guidance in darkness, possessing determinate positions/settings, objects of observation, and eschatologically effaced.",
+   "cluster_supporting_evidence": "musakhkharāt bi-amrihi after shams/qamar (16:12, 7:54); prostration inventory grouping with sun/moon (22:18); jaʿala lakum al-nujūma li-tahtadū bihā (6:97); mawāqiʿ al-nujūm (56:75); idbār al-nujūm (52:49); naẓra fī al-nujūm (37:88); ţumisat / inkadarat (77:8, 81:2).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "9/9 tokens fit one narrow referent with converging independent properties. The decisive boundary is the repeated co-listing as a third distinct item after al-shams and al-qamar (16:12, 7:54, 22:18), which excludes sun/moon. Guidance (6:97), positions (56:75), retreat at dawn (52:49), observation (37:88), and eschatological effacement (77:8 ţumisat, 81:2 inkadarat) all predicate of the same concrete luminary-class. Adversarially clean.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "86:3",
+     "verse_text": "ٱلنَّجْمُ ٱلثَّاقِبُ"
+    }
+   ],
+   "root_arabic": "ن ج م",
+   "root_buckwalter": "njm",
+   "root_id": "njm",
+   "artifact_name": "njm.json",
+   "verse_ref": "86:3",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "n~ajomu",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱلنَّجْمُ ٱلثَّاقِبُ"
+  }
+ ],
+ "resistant_deep_analysis": [
+  {
+   "word_ref": "55:6:1:3",
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "Provisionally read as celestial najm prostrating, on the strength of the 22:18 in-packet precedent (stars and trees co-prostrate).",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "Analysts A and C, and the contract's caps, prevail: the 22:18 parallel is plural-long-list vs. a singular minimal couplet, and 55:5 has spent the celestial pair, so 55:6 is Quran-internally underdetermined. The vegetation reading is inadmissibly external, but it also cannot be internally disproven; the honest disposition is a logged resistant seam, not a resolved consistency, which caps strength at MODERATE and scope at REPRESENTATIVE without forcing an UNRESOLVED homonym partition.",
+   "deep_analysis": true
+  }
+ ],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Cross-analyst: A and C independently grade MODERATE/REPRESENTATIVE citing 55:6 resistance and single-form (N-only) morphology; B grades STRONG only under strict external-lexicon exclusion and concedes MODERATE if any botanical prior is admitted. The convergent honest floor is MODERATE with 55:6 as the residual crack.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "55:6:1:3"
+ ],
+ "unreconciled_count": 1,
+ "resistant_occurrences": [
+  "55:6:1:3"
+ ],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "njm names a discrete luminous celestial body — a 'star' — as a class distinct from and enumerated after the sun (shams) and the moon (qamar); a countable point-light (conceived predominantly in multiplicity), holding a determinate position, shining/guiding through darkness, subject to divine command, and impermanent (setting, falling, and finally effaced).",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "LEXICALIZED_CLASS",
+ "layer_attribution": {
+  "occurrence_evidence": "13/13 nominal tokens (N, no verb/participle): plural nujūm 9x and singular najm 4x, with verse_text and word_refs confirmed against the packet.",
+  "derivation": "No derivational family: a single morphological form (N), number-inflected only (najm/nujūm). No verbal or participial derivation exists to triangulate a semantic operation.",
+  "lexical_class": "One lexicalized nominal class — njm = 'star' (celestial luminary distinct from sun and moon) — covering 12/13, with 55:6 as a resistant seam whose possible second (terrestrial-flora) class is not Quran-internally established.",
+  "contextual_relation": "Contextual framings (creation/subjection lists, guidance statements, oath objects, prostration inventories, eschatological effacement) attach predicates to the star-referent but do NOT redefine the root; narrative/rhetorical roles are not promoted to root meaning.",
+  "reconciliation": "Analyst B's celestial resolution of 55:6 was demoted to a resistant seam per Analysts A and C and the contract caps; singular/plural were reconciled as one number-inflected lexeme via 16:16↔6:97, 53:1↔52:49, 86:3.",
+  "unresolved_resistance": "55:6:1:3 persists as an underdetermined token: celestial reading most-supported (22:18 precedent) but not forced; terrestrial ground-vegetation reading possible but externally dependent and internally unattested — capping the account at MODERATE/REPRESENTATIVE."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "55:6:1:3",
+   "role": "RESISTANT_SEAM",
+   "reason": "Singular najm paired minimally with shajar (trees), both prostrating, with sun+moon already spent in 55:5 — the sole token whose class is Quran-internally underdetermined between celestial star and terrestrial ground-vegetation.",
+   "evidence_basis": {
+    "kind": "STRUCTURAL_COLLOCATION",
+    "statement": "55:6 wa-al-najmu wa-al-shajaru yasjudāni: singular najm is bound in a tight two-member couplet with shajar (trees), and the immediately preceding 55:5 (al-shamsu wa-al-qamaru bi-ḥusbān) already closes the celestial pair — structurally inviting najm here to be a low/stemless ground-vegetation term paired against woody trees. Quran-internal evidence cannot decisively exclude this terrestrial-flora reading, since no other token forces the celestial sense of THIS word and the immediate collocation is botanical; this leaves a possible unbridged non-celestial sub-reading on one token, which caps the account at MODERATE/REPRESENTATIVE."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "There is exactly one genuine hard case (55:6), grounded in the packet's own collocational structure, but the celestial nucleus holds cleanly for the other 12/13, so the result is a preferred single lexicalized class with one logged resistant seam rather than an unresolved multi-class partition."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A Quran-internal demonstration that najm/nujūm carries a sense other than 'celestial star distinct from sun and moon' — e.g., an occurrence establishing an independent terrestrial ground-vegetation sense, or one where najm denotes the sun or moon themselves, or a verbal/eventive use forcing an abstract 'appear/emerge/rise' nucleus.",
+  "search_location": "The 13 packet occurrences, priority to 55:6:1:3 (najm+shajar couplet) and any future in-corpus najm collocated with plant terms; and the enumeration frames 16:12, 7:54, 22:18 where njm is positioned relative to shams/qamar and shajar.",
+  "verification_method": "Test whether the alternate sense is forced by Quran-internal collocation and predicate alone, without importing classical lexicons; check whether the same referent-features (positions, guidance, setting, effacement, subjection) transfer, and whether the 22:18 celestial-najm-plus-shajar precedent still covers the case.",
+  "confounder_control": "Exclude external dictionary/tafsir glosses (source policy); distinguish grammatical-number inflection from lexical sense-shift; do not let contextual/narrative framing (oath objects, prostration lists) be mistaken for a change in the root's referent; require independent attestation before admitting a second sense.",
+  "failure_consequence": "If an independent second sense is Quran-internally established, the single-nucleus LEXICALIZED_CLASS account fails and the root must be re-graded as UNRESOLVED_CLASS_ONLY (homonymous/multi-class) rather than a single celestial referent."
+ },
+ "falsification_status": "NOT_RUN",
+ "reopen_conditions": [
+  "If any occurrence establishes najm/nujūm as terrestrial ground-vegetation on Quran-internal grounds (independent of 55:6), re-grade 55:6 and reopen the homonym/UNRESOLVED_CLASS_ONLY partition.",
+  "If a verbal or derived-nominal form of njm enters the corpus, re-test whether an eventive 'appear/emerge/rise' nucleus underlies the noun, potentially bridging 55:6 and revising the referent-only account.",
+  "If further study of the 55:5–55:6 couplet vs. the 22:18 stars-and-trees prostration list yields a decisive Quran-internal disambiguation of najm in 55:6, upgrade or downgrade the 55:6 disposition accordingly."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "16:12:7:3",
+  "7:54:22:3",
+  "22:18:15:3",
+  "6:97:5:2",
+  "16:16:2:4",
+  "37:88:4:2",
+  "52:49:5:2",
+  "53:1:1:3",
+  "56:75:4:2",
+  "77:8:2:2",
+  "81:2:2:2",
+  "86:3:1:2"
+ ],
+ "counterevidence_refs": [
+  "55:6:1:3"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "njm-falsify-55-6-seam",
+  "verdict": "CORE_SUPPORTED_WITH_RESIDUAL_RESISTANCE",
+  "falsifiable": true,
+  "distinctiveness_ok": true,
+  "failing_occurrences": [
+   "55:6:1:3"
+  ],
+  "tested_material_clusters": [
+   "nujum_plural_celestial",
+   "najm_singular_celestial",
+   "najm_singular_resistant_seam"
+  ],
+  "status_rationale": "The celestial nucleus is distinctive and survives adversarial pressure for 12/13, but 55:6 resists a clean unified account and cannot be internally forced into the class; because the core holds while one occurrence genuinely resists, a full falsification PASS is not claimed — the resistance is recorded rather than the core being refuted."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "njm: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "njm: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "njm: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "njm: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "njm: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "njm: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "njm: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "njm: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

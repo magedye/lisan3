@@ -1,6 +1,6 @@
 {
   "campaign_id": "lisan-root-calibration",
-  "status": "BATCH_07_WAVE_04_COMPLETE",
+  "status": "BATCH_07_WAVE_05_COMPLETE",
   "verdict": "BATCH_06_REPRESENTATION_REMEDIATION_READY_FOR_FRESH_REVIEW",
   "produced_at": "2026-09-11",
   "reads_handoff": "artifacts/semantic-campaign/PHASE_1_HANDOFF.json",
@@ -108,10 +108,10 @@
   },
   "current_campaign_counts": {
     "eligible_roots": 1642,
-    "processed_roots": 208,
-    "remaining_roots": 1434,
-    "research_complete": 208,
-    "canonicalization_pending": 208
+    "processed_roots": 228,
+    "remaining_roots": 1414,
+    "research_complete": 228,
+    "canonicalization_pending": 228
   },
   "boundaries": {
     "canonical_publication": "NOT_AUTHORIZED",
@@ -219,6 +219,21 @@
       "final_resistant_occurrences": 74,
       "reconciliation_lineage_records": 74,
       "report": "docs/LISAN3_BATCH_07_WAVE_04.md"
+    },
+    "wave_05": {
+      "status": "COMPLETE",
+      "batch_id": "batch07-wave5",
+      "roots": 20,
+      "occurrences": 1236,
+      "coverage_exact_set": true,
+      "outcomes": {
+        "UNRESOLVED": 4,
+        "MODERATE": 15,
+        "STRONG": 1
+      },
+      "final_resistant_occurrences": 53,
+      "reconciliation_lineage_records": 53,
+      "report": "docs/LISAN3_BATCH_07_WAVE_05.md"
     }
   }
 }

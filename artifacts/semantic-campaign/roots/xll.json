@@ -1,0 +1,908 @@
+{
+ "root_arabic": "خ ل ل",
+ "root_buckwalter": "xll",
+ "root_id": "xll",
+ "artifact_name": "xll.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave5",
+ "occurrences": 13,
+ "frozen_candidate_root_contribution": null,
+ "internal_discovery": {
+  "candidate_root_contribution": null,
+  "plain_explanation": "The root خ ل ل surfaces in the Quran only as nominals (13/13 tagged N; no verb anywhere), and these fall into two groups the text never links. One group, spatial khilāl (خِلَٰل / خِلَٰلَ / خِلَٰلِ + suffix), means the interior gaps/interstices distributed through a single many-parted whole — a garden, twin gardens, the earth, a heaped/spread cloud, a cluster of dwellings, a human throng — through which water flows or people move (17:5, 9:47, 17:91, 18:33, 27:61, 24:43, 30:48). The other group, relational khalīl / khullah / akhillāʾ, means an intimate one deliberately takes as a friend, a bond that is fragile and turns to enmity at Judgment unless grounded in taqwā (4:125, 17:73, 25:28, 43:67, 2:254, and 14:31). The single word خِلَٰلٌ in 14:31 has the very shape of the spatial word yet means befriending, fixed by the near-identical Day-frame in 2:254 (خُلَّةٌ). Because no verse ever joins the spatial and relational senses, and the sole crossover form is a homograph, the Quran-internal evidence does not license one shared nucleus. Each class is clean on its own; their unity is unresolved (leaning homonymy).",
+  "layer_separation_note": "Class A (spatial khilāl) does NOT mean generic 'inside/within' (that is fī/jawf), nor two-sided 'between' two discrete bounded things (بَيْن) — established within-verse in 27:61 (خِلَٰلَهَا أَنْهَٰرًا vs. بَيْنَ ٱلْبَحْرَيْنِ حَاجِزًا) and in 24:43 where بَيْن-joining precedes the resulting heap's خِلَٰل; it is specifically the interior gaps between the parts of a single composite/multiplex referent, and it requires such a multiplex object; it carries no relational or affective content. Class B (khalīl/khullah/akhillāʾ) does NOT mean generic ally/helper (walī) or mere companion (ṣāḥib); it is a chosen/adopted intimacy (ٱتَّخَذَ ×3: 4:125, 17:73, 25:28), not kinship, not covenant, and it does NOT entail loyalty, permanence, or salvific value — it is regrettable (25:28), void at Judgment (2:254, 14:31), and turns to mutual enmity except for the muttaqīn (43:67); it carries no spatial content. No 'defect / خَلَل / emptiness / vinegar' sense occurs in the packet and none may be imported. Same surface form does NOT guarantee same meaning (14:31 خِلَٰلٌ vs. the seven spatial خِلَٰل).",
+  "presence": {
+   "occurrences_total": 13,
+   "occurrences_checked": 13,
+   "occurrences_consistent": 12,
+   "inconsistent_refs": [
+    "14:31:21:1"
+   ]
+  },
+  "strongest_counterexample": "14:31 خِلَٰلٌ shares the exact surface skeleton of spatial khilāl (17:5 خِلَٰلَ / 24:43 خِلَٰلِهِ) yet is fixed as 'befriending' by the near-verbatim Day-frame parallel 'yawmun laa bayʿun fiihi wa-laa ___' in 2:254 (خُلَّةٌ), so the same form carries a relational sense with zero interstitial content — blocking any single Quran-internal nucleus.",
+  "strongest_competitor": "A single-nucleus reading 'interpenetration / being interwoven into the interior of something' — rivers/rain threaded through gardens, clouds, earth (Class A), the hypocrite interspersed among a throng (9:47), and, relationally, one threaded into another's inner life (khalīl), with 14:31 as the pivot form spanning both. It is rejected as the root claim on three Quran-internal grounds: (1) no verse links the two senses — every spatial occurrence is silent on relation and every relational occurrence (14:31 included, anchored by 2:254) is silent on interior-space imagery; (2) 'interpenetration' is a fit-everything abstraction the contract forbids, whereas the narrowest defensible accounts are the two separate class-glosses; (3) the homograph collision cuts against it — if one live nucleus governed the form, 14:31 خِلَٰلٌ would read spatially, but the text forces the relational reading, showing lexical split, not two shades of one nucleus. Adopting the bridge would require the inherited etymological narrative ('love penetrating the interstices of the heart') barred by source policy.",
+  "competing_hypothesis": "A single-nucleus reading 'interpenetration / being interwoven into the interior of something' — rivers/rain threaded through gardens, clouds, earth (Class A), the hypocrite interspersed among a throng (9:47), and, relationally, one threaded into another's inner life (khalīl), with 14:31 as the pivot form spanning both. It is rejected as the root claim on three Quran-internal grounds: (1) no verse links the two senses — every spatial occurrence is silent on relation and every relational occurrence (14:31 included, anchored by 2:254) is silent on interior-space imagery; (2) 'interpenetration' is a fit-everything abstraction the contract forbids, whereas the narrowest defensible accounts are the two separate class-glosses; (3) the homograph collision cuts against it — if one live nucleus governed the form, 14:31 خِلَٰلٌ would read spatially, but the text forces the relational reading, showing lexical split, not two shades of one nucleus. Adopting the bridge would require the inherited etymological narrative ('love penetrating the interstices of the heart') barred by source policy.",
+  "unresolved_cases": [],
+  "result": "UNRESOLVED",
+  "result_strength": "UNRESOLVED",
+  "rationale": "All 13 occurrences are nominal (no verbal core to adjudicate a root action). The corpus resolves into two collocationally and thematically disjoint lexicalized classes: spatial interstices of a multiplex whole (7/7, distinctive and clean, with the within-verse minimal contrast خِلَٰل≠بَيْن in 27:61 and the join-then-interstice sequence in 24:43) and adopted-intimacy-fragile-at-Judgment (6/6, distinctive: chosen via ٱتَّخَذَ, regrettable, void/adversarial on the Day unless grounded in taqwā). Each class is internally strong, but the ROOT-level question 'is there one nucleus?' is not answerable from the text: the friendship class never invokes space and the spatial class never invokes relation, and the only crossover (14:31) is a homograph disambiguated purely by frame (2:254 parallel). Per contract — two+ senses with no Quran-internal bridge must be reported UNRESOLVED rather than forced into one nucleus; a coherent resistant lexicalized class bars STRONG; here essentially the whole root is lexicalized-nominal and split. Hence root verdict UNRESOLVED / LOCAL / UNRESOLVED_CLASS_ONLY, with the two clusters described as within-class consistent and the seam (14:31) marked resistant. Falsification of a unified claim is not required because no unified claim is asserted.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "A_spatial_interstices",
+     "where": {
+      "qac_pos": [
+       "N"
+      ],
+      "qac_verb_form": [
+       null
+      ],
+      "forms": [
+       "xila`la",
+       "xila`li"
+      ],
+      "word_refs": [
+       "17:5:13:1",
+       "9:47:9:1",
+       "17:91:10:1",
+       "18:33:10:1",
+       "27:61:6:1",
+       "24:43:17:1",
+       "30:48:18:1"
+      ]
+     },
+     "occurrence_count_expected": 7,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "khilāl = the interior gaps/interstices distributed through a single many-parted (composite/multiplex) whole, serving as the locus or path through which movement passes or water flows/issues. Governed noun is always multiplex: al-diyār (17:5), -kum a throng (9:47), a garden (17:91), the twin gardens (18:33), the earth (27:61), the heaped/spread cloud (24:43, 30:48).",
+     "classification_rationale": "7/7 consistent and distinctive: 5 collocate with flow/emergence (فجّر/أنهار in 17:91,18:33,27:61; يخرج ٱلودق مِن in 24:43,30:48) and 2 with through-movement of persons (جاسوا 17:5; أوضعوا 9:47). Not surface, not 'between two discrete things' (خِلَٰل vs. بَيْن within 27:61; بَيْن-joining precedes خِلَٰل in 24:43), but the intra-body penetrated interior. No resistant member within the class.",
+     "supporting_evidence_note": "Within-verse minimal contrast in 27:61 (خِلَٰلَهَآ أَنْهَٰرًا vs. بَيْنَ ٱلْبَحْرَيْنِ حَاجِزًا) fixes خِلَٰل as intra-body interstice distinct from inter-body بَيْن; 24:43 shows the cloud is first joined/heaped, then the heap has خِلَٰل.",
+     "counterevidence": [
+      "14:31:21:1"
+     ]
+    },
+    {
+     "cluster_id": "B_relational_intimacy",
+     "where": {
+      "qac_pos": [
+       "N"
+      ],
+      "qac_verb_form": [
+       null
+      ],
+      "forms": [
+       "xaliylFA",
+       ">axil~aA^'u",
+       "xul~apN",
+       "xila`lN"
+      ],
+      "word_refs": [
+       "4:125:17:1",
+       "17:73:13:1",
+       "25:28:6:1",
+       "43:67:1:2",
+       "2:254:16:1",
+       "14:31:21:1"
+      ]
+     },
+     "occurrence_count_expected": 6,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "khalīl / khullah / akhillāʾ (and homographic khilāl in 14:31) = a chosen/adopted intimate companion or the state of such befriending; a bond that is worldly and fragile — regrettable and void on the Day, turning to mutual enmity except for the muttaqīn — unless grounded in God/taqwā.",
+     "classification_rationale": "6/6 coherent, purely relational, no spatial content: chosen via ٱتَّخَذَ (4:125, 17:73, 25:28), eschatologically neutralized (2:254, 14:31: alongside بَيْع and شَفَاعَة in the no-transaction Day-frame; 43:67 enmity except ٱلمُتَّقِين). 14:31 خِلَٰلٌ is assigned here on frame despite its spatial-looking skeleton, fixed by the 2:254 parallel.",
+     "supporting_evidence_note": "The near-verbatim Day-frame 'yawmun laa bayʿun fiihi wa-laa ___' (2:254 خُلَّةٌ / 14:31 خِلَٰلٌ) and the ٱتَّخَذَ...خَلِيلًا collocation (4:125,17:73,25:28) mark a chosen bond distinct from kinship/covenant; 43:67 shows its fragility.",
+     "counterevidence": []
+    }
+   ],
+   "reconciliation": [
+    {
+     "word_ref": "14:31:21:1",
+     "final": "RESISTANT",
+     "rationale": "The verbatim Day-frame parallel with 2:254 (خُلَّةٌ) fixes the sense as befriending, not interstice; this homograph is the seam that resists a morphology-based partition and blocks a single nucleus, so it is recorded as a resistant seam within the relational class."
+    },
+    {
+     "word_ref": "9:47:9:1",
+     "final": "CONSISTENT",
+     "rationale": "It provides a social object for a purely spatial through-movement sense but no relational content; it is the boundary case that tempts the bridge yet supplies none, so it stays in spatial Class A."
+    }
+   ]
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "xll",
+  "verdict": "NOT_REQUIRED_UNRESOLVED_CLASS_ONLY",
+  "failing_occurrences": [],
+  "distinctiveness_ok": false,
+  "falsifiable": true,
+  "notes": "No unified root claim is asserted (candidate_root_contribution=null), so adversarial falsification of a single nucleus is not required. The unifying competitor was examined and rejected as under-determined (no bridging occurrence; 14:31 homograph collision). Within-class accounts are clean but are class-level, not root-level, claims."
+ },
+ "coverage_validation": {
+  "root": "xll",
+  "expected_count": 13,
+  "researched_count": 13,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [
+   "14:31:21:1"
+  ],
+  "unresolved_visible": [
+   "14:31:21:1"
+  ]
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "14:31:21:1",
+   "disposition": "RESISTANT",
+   "note": "14:31 خِلَٰلٌ shares the exact surface skeleton of spatial khilāl (17:5 خِلَٰلَ / 24:43 خِلَٰلِهِ) yet is fixed as 'befriending' by the near-verbatim Day-frame parallel 'yawmun laa bayʿun fiihi wa-laa ___' in 2:254 (خُلَّةٌ), so the same form carries a relational sense with zero interstitial content — blocking any single Quran-internal nucleus.",
+   "coverage_cluster_id": "B_relational_intimacy",
+   "candidate_semantic_interpretation": "khalīl / khullah / akhillāʾ (and homographic khilāl in 14:31) = a chosen/adopted intimate companion or the state of such befriending; a bond that is worldly and fragile — regrettable and void on the Day, turning to mutual enmity except for the muttaqīn — unless grounded in God/taqwā.",
+   "cluster_supporting_evidence": "The near-verbatim Day-frame 'yawmun laa bayʿun fiihi wa-laa ___' (2:254 خُلَّةٌ / 14:31 خِلَٰلٌ) and the ٱتَّخَذَ...خَلِيلًا collocation (4:125,17:73,25:28) mark a chosen bond distinct from kinship/covenant; 43:67 shows its fragility.",
+   "counterevidence": [
+    "2:254:16:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "By bare surface skeleton (xila`lN) resembles spatial Class-A khilāl and could be read as 'midst/interstices'.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "The verbatim Day-frame parallel with 2:254 (خُلَّةٌ) fixes the sense as befriending, not interstice; this homograph is the seam that resists a morphology-based partition and blocks a single nucleus, so it is recorded as a resistant seam within the relational class.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "14:31:21:1",
+     "preliminary_disposition": "CONSISTENT",
+     "preliminary_note": "Surface skeleton (xila`lN) matches spatial Class-A khilāl, inviting a 'midst/interstices' reading.",
+     "final_disposition": "RESISTANT",
+     "reconciliation_rationale": "The verbatim Day-frame parallel with 2:254 (خُلَّةٌ) fixes the sense as befriending, not interstice; this homograph is the seam that resists a morphology-based partition and blocks a single nucleus, so it is recorded as a resistant seam within the relational class.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [
+    "The fixed Day-frame 'laa bayʿun fiihi wa-laa ___' is shared verbatim with 2:254 where the slot is خُلَّةٌ (befriending); a spatial reading is Quran-internally excluded.",
+    "Reading it spatially would import an interstice sense the negated-rescue context (beside بَيْع and, in 2:254, شَفَاعَة) does not support."
+   ],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "14:31",
+     "verse_text": "قُل لِّعِبَادِىَ ٱلَّذِينَ ءَامَنُوا۟ يُقِيمُوا۟ ٱلصَّلَوٰةَ وَيُنفِقُوا۟ مِمَّا رَزَقْنَٰهُمْ سِرًّا وَعَلَانِيَةً مِّن قَبْلِ أَن يَأْتِىَ يَوْمٌ لَّا بَيْعٌ فِيهِ وَلَا خِلَٰلٌ"
+    }
+   ],
+   "root_arabic": "خ ل ل",
+   "root_buckwalter": "xll",
+   "root_id": "xll",
+   "artifact_name": "xll.json",
+   "verse_ref": "14:31",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "xila`lN",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قُل لِّعِبَادِىَ ٱلَّذِينَ ءَامَنُوا۟ يُقِيمُوا۟ ٱلصَّلَوٰةَ وَيُنفِقُوا۟ مِمَّا رَزَقْنَٰهُمْ سِرًّا وَعَلَانِيَةً مِّن قَبْلِ أَن يَأْتِىَ يَوْمٌ لَّا بَيْعٌ فِيهِ وَلَا خِلَٰلٌ",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "17:5:13:1",
+   "disposition": "CONSISTENT",
+   "note": "7/7 consistent and distinctive: 5 collocate with flow/emergence (فجّر/أنهار in 17:91,18:33,27:61; يخرج ٱلودق مِن in 24:43,30:48) and 2 with through-movement of persons (جاسوا 17:5; أوضعوا 9:47). Not surface, not 'between two discrete things' (خِلَٰل vs. بَيْن within 27:61; بَيْن-joining precedes خِلَٰل in 24:43), but the intra-body penetrated interior. No resistant member within the class.",
+   "coverage_cluster_id": "A_spatial_interstices",
+   "candidate_semantic_interpretation": "khilāl = the interior gaps/interstices distributed through a single many-parted (composite/multiplex) whole, serving as the locus or path through which movement passes or water flows/issues. Governed noun is always multiplex: al-diyār (17:5), -kum a throng (9:47), a garden (17:91), the twin gardens (18:33), the earth (27:61), the heaped/spread cloud (24:43, 30:48).",
+   "cluster_supporting_evidence": "Within-verse minimal contrast in 27:61 (خِلَٰلَهَآ أَنْهَٰرًا vs. بَيْنَ ٱلْبَحْرَيْنِ حَاجِزًا) fixes خِلَٰل as intra-body interstice distinct from inter-body بَيْن; 24:43 shows the cloud is first joined/heaped, then the heap has خِلَٰل.",
+   "counterevidence": [
+    "14:31:21:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "7/7 consistent and distinctive: 5 collocate with flow/emergence (فجّر/أنهار in 17:91,18:33,27:61; يخرج ٱلودق مِن in 24:43,30:48) and 2 with through-movement of persons (جاسوا 17:5; أوضعوا 9:47). Not surface, not 'between two discrete things' (خِلَٰل vs. بَيْن within 27:61; بَيْن-joining precedes خِلَٰل in 24:43), but the intra-body penetrated interior. No resistant member within the class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "17:5",
+     "verse_text": "فَإِذَا جَآءَ وَعْدُ أُولَىٰهُمَا بَعَثْنَا عَلَيْكُمْ عِبَادًا لَّنَآ أُو۟لِى بَأْسٍ شَدِيدٍ فَجَاسُوا۟ خِلَٰلَ ٱلدِّيَارِ وَكَانَ وَعْدًا مَّفْعُولًا"
+    }
+   ],
+   "root_arabic": "خ ل ل",
+   "root_buckwalter": "xll",
+   "root_id": "xll",
+   "artifact_name": "xll.json",
+   "verse_ref": "17:5",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "xila`la",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَإِذَا جَآءَ وَعْدُ أُولَىٰهُمَا بَعَثْنَا عَلَيْكُمْ عِبَادًا لَّنَآ أُو۟لِى بَأْسٍ شَدِيدٍ فَجَاسُوا۟ خِلَٰلَ ٱلدِّيَارِ وَكَانَ وَعْدًا مَّفْعُولًا"
+  },
+  {
+   "word_ref": "17:73:13:1",
+   "disposition": "CONSISTENT",
+   "note": "6/6 coherent, purely relational, no spatial content: chosen via ٱتَّخَذَ (4:125, 17:73, 25:28), eschatologically neutralized (2:254, 14:31: alongside بَيْع and شَفَاعَة in the no-transaction Day-frame; 43:67 enmity except ٱلمُتَّقِين). 14:31 خِلَٰلٌ is assigned here on frame despite its spatial-looking skeleton, fixed by the 2:254 parallel.",
+   "coverage_cluster_id": "B_relational_intimacy",
+   "candidate_semantic_interpretation": "khalīl / khullah / akhillāʾ (and homographic khilāl in 14:31) = a chosen/adopted intimate companion or the state of such befriending; a bond that is worldly and fragile — regrettable and void on the Day, turning to mutual enmity except for the muttaqīn — unless grounded in God/taqwā.",
+   "cluster_supporting_evidence": "The near-verbatim Day-frame 'yawmun laa bayʿun fiihi wa-laa ___' (2:254 خُلَّةٌ / 14:31 خِلَٰلٌ) and the ٱتَّخَذَ...خَلِيلًا collocation (4:125,17:73,25:28) mark a chosen bond distinct from kinship/covenant; 43:67 shows its fragility.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "6/6 coherent, purely relational, no spatial content: chosen via ٱتَّخَذَ (4:125, 17:73, 25:28), eschatologically neutralized (2:254, 14:31: alongside بَيْع and شَفَاعَة in the no-transaction Day-frame; 43:67 enmity except ٱلمُتَّقِين). 14:31 خِلَٰلٌ is assigned here on frame despite its spatial-looking skeleton, fixed by the 2:254 parallel.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "17:73",
+     "verse_text": "وَإِن كَادُوا۟ لَيَفْتِنُونَكَ عَنِ ٱلَّذِىٓ أَوْحَيْنَآ إِلَيْكَ لِتَفْتَرِىَ عَلَيْنَا غَيْرَهُۥ وَإِذًا لَّٱتَّخَذُوكَ خَلِيلًا"
+    }
+   ],
+   "root_arabic": "خ ل ل",
+   "root_buckwalter": "xll",
+   "root_id": "xll",
+   "artifact_name": "xll.json",
+   "verse_ref": "17:73",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "xaliylFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِن كَادُوا۟ لَيَفْتِنُونَكَ عَنِ ٱلَّذِىٓ أَوْحَيْنَآ إِلَيْكَ لِتَفْتَرِىَ عَلَيْنَا غَيْرَهُۥ وَإِذًا لَّٱتَّخَذُوكَ خَلِيلًا"
+  },
+  {
+   "word_ref": "17:91:10:1",
+   "disposition": "CONSISTENT",
+   "note": "7/7 consistent and distinctive: 5 collocate with flow/emergence (فجّر/أنهار in 17:91,18:33,27:61; يخرج ٱلودق مِن in 24:43,30:48) and 2 with through-movement of persons (جاسوا 17:5; أوضعوا 9:47). Not surface, not 'between two discrete things' (خِلَٰل vs. بَيْن within 27:61; بَيْن-joining precedes خِلَٰل in 24:43), but the intra-body penetrated interior. No resistant member within the class.",
+   "coverage_cluster_id": "A_spatial_interstices",
+   "candidate_semantic_interpretation": "khilāl = the interior gaps/interstices distributed through a single many-parted (composite/multiplex) whole, serving as the locus or path through which movement passes or water flows/issues. Governed noun is always multiplex: al-diyār (17:5), -kum a throng (9:47), a garden (17:91), the twin gardens (18:33), the earth (27:61), the heaped/spread cloud (24:43, 30:48).",
+   "cluster_supporting_evidence": "Within-verse minimal contrast in 27:61 (خِلَٰلَهَآ أَنْهَٰرًا vs. بَيْنَ ٱلْبَحْرَيْنِ حَاجِزًا) fixes خِلَٰل as intra-body interstice distinct from inter-body بَيْن; 24:43 shows the cloud is first joined/heaped, then the heap has خِلَٰل.",
+   "counterevidence": [
+    "14:31:21:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "7/7 consistent and distinctive: 5 collocate with flow/emergence (فجّر/أنهار in 17:91,18:33,27:61; يخرج ٱلودق مِن in 24:43,30:48) and 2 with through-movement of persons (جاسوا 17:5; أوضعوا 9:47). Not surface, not 'between two discrete things' (خِلَٰل vs. بَيْن within 27:61; بَيْن-joining precedes خِلَٰل in 24:43), but the intra-body penetrated interior. No resistant member within the class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "17:91",
+     "verse_text": "أَوْ تَكُونَ لَكَ جَنَّةٌ مِّن نَّخِيلٍ وَعِنَبٍ فَتُفَجِّرَ ٱلْأَنْهَٰرَ خِلَٰلَهَا تَفْجِيرًا"
+    }
+   ],
+   "root_arabic": "خ ل ل",
+   "root_buckwalter": "xll",
+   "root_id": "xll",
+   "artifact_name": "xll.json",
+   "verse_ref": "17:91",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "xila`la",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَوْ تَكُونَ لَكَ جَنَّةٌ مِّن نَّخِيلٍ وَعِنَبٍ فَتُفَجِّرَ ٱلْأَنْهَٰرَ خِلَٰلَهَا تَفْجِيرًا"
+  },
+  {
+   "word_ref": "18:33:10:1",
+   "disposition": "CONSISTENT",
+   "note": "7/7 consistent and distinctive: 5 collocate with flow/emergence (فجّر/أنهار in 17:91,18:33,27:61; يخرج ٱلودق مِن in 24:43,30:48) and 2 with through-movement of persons (جاسوا 17:5; أوضعوا 9:47). Not surface, not 'between two discrete things' (خِلَٰل vs. بَيْن within 27:61; بَيْن-joining precedes خِلَٰل in 24:43), but the intra-body penetrated interior. No resistant member within the class.",
+   "coverage_cluster_id": "A_spatial_interstices",
+   "candidate_semantic_interpretation": "khilāl = the interior gaps/interstices distributed through a single many-parted (composite/multiplex) whole, serving as the locus or path through which movement passes or water flows/issues. Governed noun is always multiplex: al-diyār (17:5), -kum a throng (9:47), a garden (17:91), the twin gardens (18:33), the earth (27:61), the heaped/spread cloud (24:43, 30:48).",
+   "cluster_supporting_evidence": "Within-verse minimal contrast in 27:61 (خِلَٰلَهَآ أَنْهَٰرًا vs. بَيْنَ ٱلْبَحْرَيْنِ حَاجِزًا) fixes خِلَٰل as intra-body interstice distinct from inter-body بَيْن; 24:43 shows the cloud is first joined/heaped, then the heap has خِلَٰل.",
+   "counterevidence": [
+    "14:31:21:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "7/7 consistent and distinctive: 5 collocate with flow/emergence (فجّر/أنهار in 17:91,18:33,27:61; يخرج ٱلودق مِن in 24:43,30:48) and 2 with through-movement of persons (جاسوا 17:5; أوضعوا 9:47). Not surface, not 'between two discrete things' (خِلَٰل vs. بَيْن within 27:61; بَيْن-joining precedes خِلَٰل in 24:43), but the intra-body penetrated interior. No resistant member within the class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "18:33",
+     "verse_text": "كِلْتَا ٱلْجَنَّتَيْنِ ءَاتَتْ أُكُلَهَا وَلَمْ تَظْلِم مِّنْهُ شَيْـًٔا وَفَجَّرْنَا خِلَٰلَهُمَا نَهَرًا"
+    }
+   ],
+   "root_arabic": "خ ل ل",
+   "root_buckwalter": "xll",
+   "root_id": "xll",
+   "artifact_name": "xll.json",
+   "verse_ref": "18:33",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "xila`la",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "كِلْتَا ٱلْجَنَّتَيْنِ ءَاتَتْ أُكُلَهَا وَلَمْ تَظْلِم مِّنْهُ شَيْـًٔا وَفَجَّرْنَا خِلَٰلَهُمَا نَهَرًا"
+  },
+  {
+   "word_ref": "24:43:17:1",
+   "disposition": "CONSISTENT",
+   "note": "7/7 consistent and distinctive: 5 collocate with flow/emergence (فجّر/أنهار in 17:91,18:33,27:61; يخرج ٱلودق مِن in 24:43,30:48) and 2 with through-movement of persons (جاسوا 17:5; أوضعوا 9:47). Not surface, not 'between two discrete things' (خِلَٰل vs. بَيْن within 27:61; بَيْن-joining precedes خِلَٰل in 24:43), but the intra-body penetrated interior. No resistant member within the class.",
+   "coverage_cluster_id": "A_spatial_interstices",
+   "candidate_semantic_interpretation": "khilāl = the interior gaps/interstices distributed through a single many-parted (composite/multiplex) whole, serving as the locus or path through which movement passes or water flows/issues. Governed noun is always multiplex: al-diyār (17:5), -kum a throng (9:47), a garden (17:91), the twin gardens (18:33), the earth (27:61), the heaped/spread cloud (24:43, 30:48).",
+   "cluster_supporting_evidence": "Within-verse minimal contrast in 27:61 (خِلَٰلَهَآ أَنْهَٰرًا vs. بَيْنَ ٱلْبَحْرَيْنِ حَاجِزًا) fixes خِلَٰل as intra-body interstice distinct from inter-body بَيْن; 24:43 shows the cloud is first joined/heaped, then the heap has خِلَٰل.",
+   "counterevidence": [
+    "14:31:21:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "7/7 consistent and distinctive: 5 collocate with flow/emergence (فجّر/أنهار in 17:91,18:33,27:61; يخرج ٱلودق مِن in 24:43,30:48) and 2 with through-movement of persons (جاسوا 17:5; أوضعوا 9:47). Not surface, not 'between two discrete things' (خِلَٰل vs. بَيْن within 27:61; بَيْن-joining precedes خِلَٰل in 24:43), but the intra-body penetrated interior. No resistant member within the class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "24:43",
+     "verse_text": "أَلَمْ تَرَ أَنَّ ٱللَّهَ يُزْجِى سَحَابًا ثُمَّ يُؤَلِّفُ بَيْنَهُۥ ثُمَّ يَجْعَلُهُۥ رُكَامًا فَتَرَى ٱلْوَدْقَ يَخْرُجُ مِنْ خِلَٰلِهِۦ وَيُنَزِّلُ مِنَ ٱلسَّمَآءِ مِن جِبَالٍ فِيهَا مِنۢ بَرَدٍ فَيُصِيبُ بِهِۦ مَن يَشَآءُ وَيَصْرِفُهُۥ عَن مَّن يَشَآءُ يَكَادُ سَنَا بَرْقِهِۦ يَذْهَبُ بِٱلْأَبْصَٰرِ"
+    }
+   ],
+   "root_arabic": "خ ل ل",
+   "root_buckwalter": "xll",
+   "root_id": "xll",
+   "artifact_name": "xll.json",
+   "verse_ref": "24:43",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "xila`li",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَلَمْ تَرَ أَنَّ ٱللَّهَ يُزْجِى سَحَابًا ثُمَّ يُؤَلِّفُ بَيْنَهُۥ ثُمَّ يَجْعَلُهُۥ رُكَامًا فَتَرَى ٱلْوَدْقَ يَخْرُجُ مِنْ خِلَٰلِهِۦ وَيُنَزِّلُ مِنَ ٱلسَّمَآءِ مِن جِبَالٍ فِيهَا مِنۢ بَرَدٍ فَيُصِيبُ بِهِۦ مَن يَشَآءُ وَيَصْرِفُهُۥ عَن مَّن يَشَآءُ يَكَادُ سَنَا بَرْقِهِۦ يَذْهَبُ بِٱلْأَبْصَٰرِ"
+  },
+  {
+   "word_ref": "25:28:6:1",
+   "disposition": "CONSISTENT",
+   "note": "6/6 coherent, purely relational, no spatial content: chosen via ٱتَّخَذَ (4:125, 17:73, 25:28), eschatologically neutralized (2:254, 14:31: alongside بَيْع and شَفَاعَة in the no-transaction Day-frame; 43:67 enmity except ٱلمُتَّقِين). 14:31 خِلَٰلٌ is assigned here on frame despite its spatial-looking skeleton, fixed by the 2:254 parallel.",
+   "coverage_cluster_id": "B_relational_intimacy",
+   "candidate_semantic_interpretation": "khalīl / khullah / akhillāʾ (and homographic khilāl in 14:31) = a chosen/adopted intimate companion or the state of such befriending; a bond that is worldly and fragile — regrettable and void on the Day, turning to mutual enmity except for the muttaqīn — unless grounded in God/taqwā.",
+   "cluster_supporting_evidence": "The near-verbatim Day-frame 'yawmun laa bayʿun fiihi wa-laa ___' (2:254 خُلَّةٌ / 14:31 خِلَٰلٌ) and the ٱتَّخَذَ...خَلِيلًا collocation (4:125,17:73,25:28) mark a chosen bond distinct from kinship/covenant; 43:67 shows its fragility.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "6/6 coherent, purely relational, no spatial content: chosen via ٱتَّخَذَ (4:125, 17:73, 25:28), eschatologically neutralized (2:254, 14:31: alongside بَيْع and شَفَاعَة in the no-transaction Day-frame; 43:67 enmity except ٱلمُتَّقِين). 14:31 خِلَٰلٌ is assigned here on frame despite its spatial-looking skeleton, fixed by the 2:254 parallel.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "25:28",
+     "verse_text": "يَٰوَيْلَتَىٰ لَيْتَنِى لَمْ أَتَّخِذْ فُلَانًا خَلِيلًا"
+    }
+   ],
+   "root_arabic": "خ ل ل",
+   "root_buckwalter": "xll",
+   "root_id": "xll",
+   "artifact_name": "xll.json",
+   "verse_ref": "25:28",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "xaliylFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰوَيْلَتَىٰ لَيْتَنِى لَمْ أَتَّخِذْ فُلَانًا خَلِيلًا"
+  },
+  {
+   "word_ref": "27:61:6:1",
+   "disposition": "CONSISTENT",
+   "note": "7/7 consistent and distinctive: 5 collocate with flow/emergence (فجّر/أنهار in 17:91,18:33,27:61; يخرج ٱلودق مِن in 24:43,30:48) and 2 with through-movement of persons (جاسوا 17:5; أوضعوا 9:47). Not surface, not 'between two discrete things' (خِلَٰل vs. بَيْن within 27:61; بَيْن-joining precedes خِلَٰل in 24:43), but the intra-body penetrated interior. No resistant member within the class.",
+   "coverage_cluster_id": "A_spatial_interstices",
+   "candidate_semantic_interpretation": "khilāl = the interior gaps/interstices distributed through a single many-parted (composite/multiplex) whole, serving as the locus or path through which movement passes or water flows/issues. Governed noun is always multiplex: al-diyār (17:5), -kum a throng (9:47), a garden (17:91), the twin gardens (18:33), the earth (27:61), the heaped/spread cloud (24:43, 30:48).",
+   "cluster_supporting_evidence": "Within-verse minimal contrast in 27:61 (خِلَٰلَهَآ أَنْهَٰرًا vs. بَيْنَ ٱلْبَحْرَيْنِ حَاجِزًا) fixes خِلَٰل as intra-body interstice distinct from inter-body بَيْن; 24:43 shows the cloud is first joined/heaped, then the heap has خِلَٰل.",
+   "counterevidence": [
+    "14:31:21:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "7/7 consistent and distinctive: 5 collocate with flow/emergence (فجّر/أنهار in 17:91,18:33,27:61; يخرج ٱلودق مِن in 24:43,30:48) and 2 with through-movement of persons (جاسوا 17:5; أوضعوا 9:47). Not surface, not 'between two discrete things' (خِلَٰل vs. بَيْن within 27:61; بَيْن-joining precedes خِلَٰل in 24:43), but the intra-body penetrated interior. No resistant member within the class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "27:61",
+     "verse_text": "أَمَّن جَعَلَ ٱلْأَرْضَ قَرَارًا وَجَعَلَ خِلَٰلَهَآ أَنْهَٰرًا وَجَعَلَ لَهَا رَوَٰسِىَ وَجَعَلَ بَيْنَ ٱلْبَحْرَيْنِ حَاجِزًا أَءِلَٰهٌ مَّعَ ٱللَّهِ بَلْ أَكْثَرُهُمْ لَا يَعْلَمُونَ"
+    }
+   ],
+   "root_arabic": "خ ل ل",
+   "root_buckwalter": "xll",
+   "root_id": "xll",
+   "artifact_name": "xll.json",
+   "verse_ref": "27:61",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "xila`la",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "أَمَّن جَعَلَ ٱلْأَرْضَ قَرَارًا وَجَعَلَ خِلَٰلَهَآ أَنْهَٰرًا وَجَعَلَ لَهَا رَوَٰسِىَ وَجَعَلَ بَيْنَ ٱلْبَحْرَيْنِ حَاجِزًا أَءِلَٰهٌ مَّعَ ٱللَّهِ بَلْ أَكْثَرُهُمْ لَا يَعْلَمُونَ"
+  },
+  {
+   "word_ref": "2:254:16:1",
+   "disposition": "CONSISTENT",
+   "note": "6/6 coherent, purely relational, no spatial content: chosen via ٱتَّخَذَ (4:125, 17:73, 25:28), eschatologically neutralized (2:254, 14:31: alongside بَيْع and شَفَاعَة in the no-transaction Day-frame; 43:67 enmity except ٱلمُتَّقِين). 14:31 خِلَٰلٌ is assigned here on frame despite its spatial-looking skeleton, fixed by the 2:254 parallel.",
+   "coverage_cluster_id": "B_relational_intimacy",
+   "candidate_semantic_interpretation": "khalīl / khullah / akhillāʾ (and homographic khilāl in 14:31) = a chosen/adopted intimate companion or the state of such befriending; a bond that is worldly and fragile — regrettable and void on the Day, turning to mutual enmity except for the muttaqīn — unless grounded in God/taqwā.",
+   "cluster_supporting_evidence": "The near-verbatim Day-frame 'yawmun laa bayʿun fiihi wa-laa ___' (2:254 خُلَّةٌ / 14:31 خِلَٰلٌ) and the ٱتَّخَذَ...خَلِيلًا collocation (4:125,17:73,25:28) mark a chosen bond distinct from kinship/covenant; 43:67 shows its fragility.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "6/6 coherent, purely relational, no spatial content: chosen via ٱتَّخَذَ (4:125, 17:73, 25:28), eschatologically neutralized (2:254, 14:31: alongside بَيْع and شَفَاعَة in the no-transaction Day-frame; 43:67 enmity except ٱلمُتَّقِين). 14:31 خِلَٰلٌ is assigned here on frame despite its spatial-looking skeleton, fixed by the 2:254 parallel.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "2:254",
+     "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ أَنفِقُوا۟ مِمَّا رَزَقْنَٰكُم مِّن قَبْلِ أَن يَأْتِىَ يَوْمٌ لَّا بَيْعٌ فِيهِ وَلَا خُلَّةٌ وَلَا شَفَٰعَةٌ وَٱلْكَٰفِرُونَ هُمُ ٱلظَّٰلِمُونَ"
+    }
+   ],
+   "root_arabic": "خ ل ل",
+   "root_buckwalter": "xll",
+   "root_id": "xll",
+   "artifact_name": "xll.json",
+   "verse_ref": "2:254",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "xul~apN",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ أَنفِقُوا۟ مِمَّا رَزَقْنَٰكُم مِّن قَبْلِ أَن يَأْتِىَ يَوْمٌ لَّا بَيْعٌ فِيهِ وَلَا خُلَّةٌ وَلَا شَفَٰعَةٌ وَٱلْكَٰفِرُونَ هُمُ ٱلظَّٰلِمُونَ"
+  },
+  {
+   "word_ref": "30:48:18:1",
+   "disposition": "CONSISTENT",
+   "note": "7/7 consistent and distinctive: 5 collocate with flow/emergence (فجّر/أنهار in 17:91,18:33,27:61; يخرج ٱلودق مِن in 24:43,30:48) and 2 with through-movement of persons (جاسوا 17:5; أوضعوا 9:47). Not surface, not 'between two discrete things' (خِلَٰل vs. بَيْن within 27:61; بَيْن-joining precedes خِلَٰل in 24:43), but the intra-body penetrated interior. No resistant member within the class.",
+   "coverage_cluster_id": "A_spatial_interstices",
+   "candidate_semantic_interpretation": "khilāl = the interior gaps/interstices distributed through a single many-parted (composite/multiplex) whole, serving as the locus or path through which movement passes or water flows/issues. Governed noun is always multiplex: al-diyār (17:5), -kum a throng (9:47), a garden (17:91), the twin gardens (18:33), the earth (27:61), the heaped/spread cloud (24:43, 30:48).",
+   "cluster_supporting_evidence": "Within-verse minimal contrast in 27:61 (خِلَٰلَهَآ أَنْهَٰرًا vs. بَيْنَ ٱلْبَحْرَيْنِ حَاجِزًا) fixes خِلَٰل as intra-body interstice distinct from inter-body بَيْن; 24:43 shows the cloud is first joined/heaped, then the heap has خِلَٰل.",
+   "counterevidence": [
+    "14:31:21:1"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "7/7 consistent and distinctive: 5 collocate with flow/emergence (فجّر/أنهار in 17:91,18:33,27:61; يخرج ٱلودق مِن in 24:43,30:48) and 2 with through-movement of persons (جاسوا 17:5; أوضعوا 9:47). Not surface, not 'between two discrete things' (خِلَٰل vs. بَيْن within 27:61; بَيْن-joining precedes خِلَٰل in 24:43), but the intra-body penetrated interior. No resistant member within the class.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "30:48",
+     "verse_text": "ٱللَّهُ ٱلَّذِى يُرْسِلُ ٱلرِّيَٰحَ فَتُثِيرُ سَحَابًا فَيَبْسُطُهُۥ فِى ٱلسَّمَآءِ كَيْفَ يَشَآءُ وَيَجْعَلُهُۥ كِسَفًا فَتَرَى ٱلْوَدْقَ يَخْرُجُ مِنْ خِلَٰلِهِۦ فَإِذَآ أَصَابَ بِهِۦ مَن يَشَآءُ مِنْ عِبَادِهِۦٓ إِذَا هُمْ يَسْتَبْشِرُونَ"
+    }
+   ],
+   "root_arabic": "خ ل ل",
+   "root_buckwalter": "xll",
+   "root_id": "xll",
+   "artifact_name": "xll.json",
+   "verse_ref": "30:48",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "xila`li",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱللَّهُ ٱلَّذِى يُرْسِلُ ٱلرِّيَٰحَ فَتُثِيرُ سَحَابًا فَيَبْسُطُهُۥ فِى ٱلسَّمَآءِ كَيْفَ يَشَآءُ وَيَجْعَلُهُۥ كِسَفًا فَتَرَى ٱلْوَدْقَ يَخْرُجُ مِنْ خِلَٰلِهِۦ فَإِذَآ أَصَابَ بِهِۦ مَن يَشَآءُ مِنْ عِبَادِهِۦٓ إِذَا هُمْ يَسْتَبْشِرُونَ"
+  },
+  {
+   "word_ref": "43:67:1:2",
+   "disposition": "CONSISTENT",
+   "note": "6/6 coherent, purely relational, no spatial content: chosen via ٱتَّخَذَ (4:125, 17:73, 25:28), eschatologically neutralized (2:254, 14:31: alongside بَيْع and شَفَاعَة in the no-transaction Day-frame; 43:67 enmity except ٱلمُتَّقِين). 14:31 خِلَٰلٌ is assigned here on frame despite its spatial-looking skeleton, fixed by the 2:254 parallel.",
+   "coverage_cluster_id": "B_relational_intimacy",
+   "candidate_semantic_interpretation": "khalīl / khullah / akhillāʾ (and homographic khilāl in 14:31) = a chosen/adopted intimate companion or the state of such befriending; a bond that is worldly and fragile — regrettable and void on the Day, turning to mutual enmity except for the muttaqīn — unless grounded in God/taqwā.",
+   "cluster_supporting_evidence": "The near-verbatim Day-frame 'yawmun laa bayʿun fiihi wa-laa ___' (2:254 خُلَّةٌ / 14:31 خِلَٰلٌ) and the ٱتَّخَذَ...خَلِيلًا collocation (4:125,17:73,25:28) mark a chosen bond distinct from kinship/covenant; 43:67 shows its fragility.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "6/6 coherent, purely relational, no spatial content: chosen via ٱتَّخَذَ (4:125, 17:73, 25:28), eschatologically neutralized (2:254, 14:31: alongside بَيْع and شَفَاعَة in the no-transaction Day-frame; 43:67 enmity except ٱلمُتَّقِين). 14:31 خِلَٰلٌ is assigned here on frame despite its spatial-looking skeleton, fixed by the 2:254 parallel.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "43:67",
+     "verse_text": "ٱلْأَخِلَّآءُ يَوْمَئِذٍۭ بَعْضُهُمْ لِبَعْضٍ عَدُوٌّ إِلَّا ٱلْمُتَّقِينَ"
+    }
+   ],
+   "root_arabic": "خ ل ل",
+   "root_buckwalter": "xll",
+   "root_id": "xll",
+   "artifact_name": "xll.json",
+   "verse_ref": "43:67",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">axil~aA^'u",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ٱلْأَخِلَّآءُ يَوْمَئِذٍۭ بَعْضُهُمْ لِبَعْضٍ عَدُوٌّ إِلَّا ٱلْمُتَّقِينَ"
+  },
+  {
+   "word_ref": "4:125:17:1",
+   "disposition": "CONSISTENT",
+   "note": "6/6 coherent, purely relational, no spatial content: chosen via ٱتَّخَذَ (4:125, 17:73, 25:28), eschatologically neutralized (2:254, 14:31: alongside بَيْع and شَفَاعَة in the no-transaction Day-frame; 43:67 enmity except ٱلمُتَّقِين). 14:31 خِلَٰلٌ is assigned here on frame despite its spatial-looking skeleton, fixed by the 2:254 parallel.",
+   "coverage_cluster_id": "B_relational_intimacy",
+   "candidate_semantic_interpretation": "khalīl / khullah / akhillāʾ (and homographic khilāl in 14:31) = a chosen/adopted intimate companion or the state of such befriending; a bond that is worldly and fragile — regrettable and void on the Day, turning to mutual enmity except for the muttaqīn — unless grounded in God/taqwā.",
+   "cluster_supporting_evidence": "The near-verbatim Day-frame 'yawmun laa bayʿun fiihi wa-laa ___' (2:254 خُلَّةٌ / 14:31 خِلَٰلٌ) and the ٱتَّخَذَ...خَلِيلًا collocation (4:125,17:73,25:28) mark a chosen bond distinct from kinship/covenant; 43:67 shows its fragility.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "6/6 coherent, purely relational, no spatial content: chosen via ٱتَّخَذَ (4:125, 17:73, 25:28), eschatologically neutralized (2:254, 14:31: alongside بَيْع and شَفَاعَة in the no-transaction Day-frame; 43:67 enmity except ٱلمُتَّقِين). 14:31 خِلَٰلٌ is assigned here on frame despite its spatial-looking skeleton, fixed by the 2:254 parallel.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "4:125",
+     "verse_text": "وَمَنْ أَحْسَنُ دِينًا مِّمَّنْ أَسْلَمَ وَجْهَهُۥ لِلَّهِ وَهُوَ مُحْسِنٌ وَٱتَّبَعَ مِلَّةَ إِبْرَٰهِيمَ حَنِيفًا وَٱتَّخَذَ ٱللَّهُ إِبْرَٰهِيمَ خَلِيلًا"
+    }
+   ],
+   "root_arabic": "خ ل ل",
+   "root_buckwalter": "xll",
+   "root_id": "xll",
+   "artifact_name": "xll.json",
+   "verse_ref": "4:125",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "xaliylFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَمَنْ أَحْسَنُ دِينًا مِّمَّنْ أَسْلَمَ وَجْهَهُۥ لِلَّهِ وَهُوَ مُحْسِنٌ وَٱتَّبَعَ مِلَّةَ إِبْرَٰهِيمَ حَنِيفًا وَٱتَّخَذَ ٱللَّهُ إِبْرَٰهِيمَ خَلِيلًا"
+  },
+  {
+   "word_ref": "9:47:9:1",
+   "disposition": "CONSISTENT",
+   "note": "Remains spatial Class A: movement through the gaps within a throng; it supplies a social OBJECT but no relational/affective SENSE, so it does not bridge the two classes — it only marks the boundary.",
+   "coverage_cluster_id": "A_spatial_interstices",
+   "candidate_semantic_interpretation": "khilāl = the interior gaps/interstices distributed through a single many-parted (composite/multiplex) whole, serving as the locus or path through which movement passes or water flows/issues. Governed noun is always multiplex: al-diyār (17:5), -kum a throng (9:47), a garden (17:91), the twin gardens (18:33), the earth (27:61), the heaped/spread cloud (24:43, 30:48).",
+   "cluster_supporting_evidence": "Within-verse minimal contrast in 27:61 (خِلَٰلَهَآ أَنْهَٰرًا vs. بَيْنَ ٱلْبَحْرَيْنِ حَاجِزًا) fixes خِلَٰل as intra-body interstice distinct from inter-body بَيْن; 24:43 shows the cloud is first joined/heaped, then the heap has خِلَٰل.",
+   "counterevidence": [
+    "14:31:21:1"
+   ],
+   "preliminary_disposition": "STRUCTURAL_UNCERTAINTY",
+   "preliminary_note": "Spatial خِلَٰل applied to a human collective (-kum) with hostile infiltration (يبغونكم ٱلفتنة) tempts a spatial→relational bridge.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": "It provides a social object for a purely spatial through-movement sense but no relational content; it is the boundary case that tempts the bridge yet supplies none, so it stays in spatial Class A.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "9:47:9:1",
+     "preliminary_disposition": "STRUCTURAL_UNCERTAINTY",
+     "preliminary_note": "Spatial form on a human collective with hostile infiltration looked like a possible bridge to the relational class.",
+     "final_disposition": "CONSISTENT",
+     "reconciliation_rationale": "It provides a social object for a purely spatial through-movement sense but no relational content; it is the boundary case that tempts the bridge yet supplies none, so it stays in spatial Class A.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "9:47",
+     "verse_text": "لَوْ خَرَجُوا۟ فِيكُم مَّا زَادُوكُمْ إِلَّا خَبَالًا وَلَأَوْضَعُوا۟ خِلَٰلَكُمْ يَبْغُونَكُمُ ٱلْفِتْنَةَ وَفِيكُمْ سَمَّٰعُونَ لَهُمْ وَٱللَّهُ عَلِيمٌۢ بِٱلظَّٰلِمِينَ"
+    }
+   ],
+   "root_arabic": "خ ل ل",
+   "root_buckwalter": "xll",
+   "root_id": "xll",
+   "artifact_name": "xll.json",
+   "verse_ref": "9:47",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "xila`la",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "لَوْ خَرَجُوا۟ فِيكُم مَّا زَادُوكُمْ إِلَّا خَبَالًا وَلَأَوْضَعُوا۟ خِلَٰلَكُمْ يَبْغُونَكُمُ ٱلْفِتْنَةَ وَفِيكُمْ سَمَّٰعُونَ لَهُمْ وَٱللَّهُ عَلِيمٌۢ بِٱلظَّٰلِمِينَ"
+  }
+ ],
+ "resistant_deep_analysis": [
+  {
+   "word_ref": "14:31:21:1",
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "By bare surface skeleton (xila`lN) resembles spatial Class-A khilāl and could be read as 'midst/interstices'.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": "The verbatim Day-frame parallel with 2:254 (خُلَّةٌ) fixes the sense as befriending, not interstice; this homograph is the seam that resists a morphology-based partition and blocks a single nucleus, so it is recorded as a resistant seam within the relational class.",
+   "deep_analysis": true
+  }
+ ],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "UNRESOLVED",
+ "result_strength": "UNRESOLVED",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Three independent lenses (A, B, adversary C) converged on two unbridged classes with 14:31 as the resistant seam; A and B proposed MODERATE two-class, C proposed RESISTANT/UNRESOLVED for the unified claim — aggregated to UNRESOLVED per the no-bridge coherence rule.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "14:31:21:1"
+ ],
+ "unreconciled_count": 1,
+ "resistant_occurrences": [
+  "14:31:21:1"
+ ],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": null,
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "LOCAL",
+ "claim_scope_kind": "UNRESOLVED_CLASS_ONLY",
+ "layer_attribution": {
+  "occurrence_evidence": "13/13 occurrences read from the packet; all nominal (qac_pos=N, qac_verb_form=null). Surface forms: xila`la/xila`li/xila`lN (8), xaliylFA (3), >axil~aA^'u (1), xul~apN (1). verse_text confirms frames used.",
+  "derivation": "No verbal attestation anywhere (no form-III/V/IV verb); there is no derivational verbal core to anchor a single root action, so any unified claim would have to be reconstructed from lexicalized nominals alone — a key reason unity is under-determined.",
+  "lexical_class": "Two lexicalized nominal classes: (A) spatial khilāl = interstices of a multiplex whole; (B) relational khalīl/khullah/akhillāʾ = chosen, eschatologically fragile intimacy. Classes are collocationally and thematically disjoint.",
+  "contextual_relation": "Context-specific colorings (9:47 hostile infiltration to sow fitnah; 43:67 Day-of-enmity; 25:28 personal regret; 17:5 punitive raiders) are narrative/contextual and must NOT be elevated to root meaning; they attach to the situation, not the root.",
+  "reconciliation": "14:31 was reconciled from a preliminary spatial reading (by skeleton) to a final relational RESISTANT-seam disposition via the verbatim 2:254 Day-frame parallel; 9:47 was reconciled from a bridge-tempting boundary back to plain spatial Class A.",
+  "unresolved_resistance": "The single-nucleus question is unresolved: no Quran-internal occurrence bridges spatial interstice and adopted intimacy, and the only crossover form (14:31) is a homograph — evidence leans to homonymy, so the root is reported as two unbridged classes rather than one forced nucleus."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "14:31:21:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "Homographic crossover: same surface skeleton as spatial khilāl but means befriending, demonstrating morphology≠semantic identity and preventing a unified nucleus.",
+   "evidence_basis": {
+    "kind": "WITHIN_CORPUS_PARALLEL",
+    "statement": "14:31 خِلَٰلٌ shares the exact surface skeleton of spatial khilāl (17:5 خِلَٰلَ / 24:43 خِلَٰلِهِ) yet is fixed as 'befriending' by the near-verbatim Day-frame parallel 'yawmun laa bayʿun fiihi wa-laa ___' in 2:254 (خُلَّةٌ), so the same form carries a relational sense with zero interstitial content — blocking any single Quran-internal nucleus."
+   }
+  },
+  {
+   "word_ref": "9:47:9:1",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "Spatial khilāl applied to a human collective with hostile infiltration is the pivot most tempting a spatial→relational bridge, but supplies no relational sense and stays spatial.",
+   "evidence_basis": {
+    "kind": "COLLOCATION_TEST",
+    "statement": "9:47 لَأَوْضَعُوا۟ خِلَٰلَكُمْ يَبْغُونَكُمُ ٱلْفِتْنَةَ places spatial through-movement on a social object (-kum) yet encodes no affective/relational sense, so it marks the class boundary without bridging it."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL",
+  "rationale": "Two internally coherent lexicalized classes persist with no Quran-internal bridge; the seam occurrence 14:31 resists a morphology-based partition (fixed as friendship by the 2:254 parallel), and 9:47 is the adversarial boundary that tempts but fails to establish a bridge. The unified-nucleus question remains unresolved (leaning homonymy)."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A Quran-internal occurrence that actually bridges the spatial and relational classes — e.g., a khalīl/khullah/akhillāʾ token carrying demonstrable interstitial/spatial content, or a spatial khilāl token carrying demonstrable relational-intimacy content — which would overturn the two-class partition and license one nucleus instead of the unresolved (homonymy-leaning) verdict.",
+  "search_location": "Cross-read the relational tokens (4:125, 17:73, 25:28, 43:67, 2:254, 14:31) for any spatial/interior imagery, and the spatial tokens (17:5, 9:47, 17:91, 18:33, 27:61, 24:43, 30:48) for any relational/affective predication, plus any wider-corpus verse pairing the two frames.",
+  "verification_method": "Require an explicit Quran-internal collocation or verbatim frame-parallel (as 2:254↔14:31 disambiguates) that forces a single occurrence to carry BOTH the interstitial and the intimacy sense; parallelism must be textual, not lexicon-driven.",
+  "confounder_control": "Exclude inherited etymology ('love penetrating the interstices of the heart'), exclude reasoning from the shared triliteral skeleton alone (14:31 proves same form ≠ same sense), and exclude a fit-everything 'interpenetration' abstraction; the bridge must be stated or entailed by the text.",
+  "failure_consequence": "If no such bridging occurrence is found, the two-class partition stands and the unified single-nucleus claim remains REJECTED at root level, keeping the verdict UNRESOLVED / UNRESOLVED_CLASS_ONLY."
+ },
+ "falsification_status": "NOT_REQUIRED",
+ "reopen_conditions": [
+  "Reopen the homonymy verdict if any khalīl/khullah/akhillāʾ occurrence (4:125, 17:73, 25:28, 43:67, 2:254) or the 14:31 خِلَٰلٌ is shown Quran-internally to carry interstitial/interior-space content, or if any spatial khilāl (17:5, 9:47, 17:91, 18:33, 27:61, 24:43, 30:48) is shown to carry relational-intimacy content.",
+  "Reopen the Class-A vs Class-B bridge if the 14:31↔2:254 parallel is demonstrated to encode 'interpenetration of the inner self' rather than abstract befriending, or if a verse is found placing the spatial 'flow-through-interstices' frame and the 'chosen intimate' frame on the same referent.",
+  "Reopen if a verbal attestation of خ ل ل (e.g., خالل/تخلّل/أخلّ) is added to the corpus, supplying a core action that could adjudicate between the two nominal classes."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "17:5:13:1",
+  "17:91:10:1",
+  "18:33:10:1",
+  "27:61:6:1",
+  "24:43:17:1",
+  "30:48:18:1",
+  "9:47:9:1",
+  "4:125:17:1",
+  "17:73:13:1",
+  "25:28:6:1",
+  "43:67:1:2",
+  "2:254:16:1"
+ ],
+ "counterevidence_refs": [
+  "14:31:21:1",
+  "2:254:16:1",
+  "4:125:17:1",
+  "43:67:1:2",
+  "24:43:17:1",
+  "27:61:6:1"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "xll-unified-nucleus-2026-09-12",
+  "verdict": "NOT_REQUIRED_UNRESOLVED_CLASS_ONLY",
+  "falsifiable": true,
+  "distinctiveness_ok": false,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "A_spatial_interstices",
+   "B_relational_intimacy"
+  ],
+  "status_rationale": "No unified root claim is asserted (candidate_root_contribution=null), so adversarial falsification of a single nucleus is not required. The unifying competitor was examined and rejected as under-determined (no bridging occurrence; 14:31 homograph collision). Within-class accounts are clean but are class-level, not root-level, claims."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "xll: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "xll: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "xll: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "xll: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "xll: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "xll: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "xll: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "xll: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

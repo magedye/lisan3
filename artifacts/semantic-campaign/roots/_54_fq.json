@@ -1,0 +1,373 @@
+{
+ "root_arabic": "ط ف ق",
+ "root_buckwalter": "Tfq",
+ "root_id": "Tfq",
+ "artifact_name": "_54_fq.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave5",
+ "occurrences": 3,
+ "frozen_candidate_root_contribution": "ط ف ق realizes a single frozen, defective inceptive/ingressive verb — 'set about / began (to do)' — that contributes aspectual onset-plus-engagement only, while the lexical content of the action is borne entirely by an obligatory following complement (a finite imperfect verb يخصفان, or an accusative maṣdar مسحًا). It denotes no concrete act, no completion/result, no moral valence, and no argument structure of its own.",
+ "internal_discovery": {
+  "candidate_root_contribution": "ط ف ق realizes a single frozen, defective inceptive/ingressive verb — 'set about / began (to do)' — that contributes aspectual onset-plus-engagement only, while the lexical content of the action is borne entirely by an obligatory following complement (a finite imperfect verb يخصفان, or an accusative maṣdar مسحًا). It denotes no concrete act, no completion/result, no moral valence, and no argument structure of its own.",
+  "plain_explanation": "Across all three Quranic occurrences the root appears only as a perfect verb (طَفِقَا / طَفِقَ) that means the subject 'took up / set about' doing something. طفق itself never names the activity — the activity is supplied by whatever follows it: 'they set about STITCHING leaves over themselves' (7:22, 20:121) and 'he set about WIPING the legs and necks' (38:33). Because the very same طفق attaches to two different kinds of complement (a finite verb and a bare verbal noun) yet the constant contributed sense is only 'commenced/undertook,' its own content is aspectual (phase-onset), not lexical. The account is internally clean but rests on thin evidence: three tokens, of which 7:22 and 20:121 are a near-verbatim echo of one Adam episode, leaving effectively two independent contexts and only one verbal form (perfect).",
+  "layer_separation_note": "Does NOT denote any concrete physical act (the concrete verbs are خصف, مسح, not طفق); does NOT entail completion, result, or telicity (marks entry into an activity, never its accomplishment); does NOT govern a patient-object directly (objects route through the complement — even accusative مسحًا in 38:33 is the content/manner of the begun act, not a patient of طفق); carries NO moral coloring (neutral in the Adam lapse frame with وعصى/فغوى and in Solomon's frame alike); is NOT domain-bound (clothing-repair vs. handling animals); is NOT productive (frozen perfect only — no imperfect, imperative, participle, maṣdar, nominal, or derived form of طفق itself); and makes NO claim about non-perfective behavior (attested perfective only).",
+  "presence": {
+   "occurrences_total": 3,
+   "occurrences_checked": 3,
+   "occurrences_consistent": 3,
+   "inconsistent_refs": []
+  },
+  "strongest_counterexample": "38:33 (فَطَفِقَ مَسْحًۢا بِٱلسُّوقِ وَٱلْأَعْنَاقِ) is the sole adversarial boundary: it is the only context outside the Adam/Eve narrative — i.e. the only genuinely independent data point — and it breaks the canonical 'طفق + finite imperfect' template by taking an accusative maṣdar complement (مسحًا) instead of a finite verb (contrast يخصفان). This changed construction keeps a live competing 'thin lexical verb' reading ('he applied himself to a wiping') available, so the class is not adversarially clean at the syntactic level. It does NOT, however, semantically break the account: 'he set about wiping' fits comfortably, so 38:33 caps strength and scope but does not overturn the inceptive nucleus.",
+  "strongest_competitor": "Two related competitors, neither Quran-internally defeasible on n=3: (1) durative/continuative 'kept on / persisted in doing' — grammatically available in 7:22/20:121 where يخصفان is imperfect, but it over-reads the bounded maṣdar مسحًا introduced right after a fresh command in 38:33; (2) a thin lexical verb of 'applying oneself to / setting upon' rather than pure bleached aspect — which unifies 38:33's maṣdar more naturally. The packet cannot fully adjudicate inceptive vs. durative vs. light-lexical, so the invariant is stated conservatively as 'entry into and engagement with an externally-specified activity,' which all three tokens support.",
+  "competing_hypothesis": "Two related competitors, neither Quran-internally defeasible on n=3: (1) durative/continuative 'kept on / persisted in doing' — grammatically available in 7:22/20:121 where يخصفان is imperfect, but it over-reads the bounded maṣdar مسحًا introduced right after a fresh command in 38:33; (2) a thin lexical verb of 'applying oneself to / setting upon' rather than pure bleached aspect — which unifies 38:33's maṣdar more naturally. The packet cannot fully adjudicate inceptive vs. durative vs. light-lexical, so the invariant is stated conservatively as 'entry into and engagement with an externally-specified activity,' which all three tokens support.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "All three lenses (A, B, adversary C) independently converge on one lexicalized aspectual verb with no second unbridged sense, so forcing UNRESOLVED would be dishonest — there is a single coherent class. But STRONG/UNIVERSAL is barred: (a) the lexeme is entirely frozen/defective (single perfect form, no derivational spread), which per contract caps strength at MODERATE and scope at REPRESENTATIVE; (b) evidence is thin and partly duplicated — 7:22 and 20:121 are one near-verbatim Adam context, leaving ~2 independent attestations; (c) the sole independent context (38:33) uses a variant single-attestation construction (maṣdar), keeping a live competing account; (d) aspect is underdetermined (inceptive vs. durative) and distinctiveness from other Quranic commencement verbs cannot be tested from this packet. The honest ceiling is a PREFERRED, directionally-correct account graded MODERATE / REPRESENTATIVE.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "tfq_inceptive_perfect",
+     "where": {
+      "qac_pos": [
+       "V"
+      ],
+      "qac_verb_form": [
+       null
+      ],
+      "forms": [
+       "V"
+      ],
+      "word_refs": [
+       "20:121:6:2",
+       "7:22:9:2",
+       "38:33:3:2"
+      ]
+     },
+     "occurrence_count_expected": 3,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Frozen perfect inceptive/ingressive verb 'set about / began (to do)': contributes aspectual onset-plus-engagement of an activity whose lexical content is supplied by an obligatory following complement (finite imperfect يخصفان in 7:22/20:121; accusative maṣdar مسحًا in 38:33). Content-neutral, result-neutral, morally neutral.",
+     "classification_rationale": "All 3 tokens are the same lexeme in the perfect, each immediately governing an independent expression of a distinct activity and carrying no object of its own; the constant contributed sense across a finite-verb complement and a maṣdar complement is 'commenced/undertook,' which is aspectual not lexical. Packet-internal contrast confirms distinctiveness: within the same verses طفق stands opposed to the surrounding punctual perfects (فأكلا/ذاقا 'ate/tasted', بدت 'became apparent') by opening a phase of continuing action rather than reporting a completed point-event. Cluster count = 3 = total_confirmed_occurrences.",
+     "supporting_evidence_note": "7:22 and 20:121: وَطَفِقَا يَخْصِفَانِ عَلَيْهِمَا مِن وَرَقِ ٱلْجَنَّةِ (dual perfect + ongoing imperfect). 38:33: فَطَفِقَ مَسْحًۢا بِٱلسُّوقِ وَٱلْأَعْنَاقِ (singular perfect + bounded maṣdar). Same aspectual sense held constant across changed complement syntax, changed subject number, and changed emotional register.",
+     "counterevidence": [
+      "38:33:3:2"
+     ]
+    }
+   ],
+   "reconciliation": [
+    {
+     "word_ref": "38:33:3:2",
+     "final": "CONSISTENT",
+     "rationale": "The resistance is syntactic, not semantic: 'he set about wiping' holds the inceptive sense constant across the changed construction, and the invariant is stated conservatively enough ('entry into and engagement with an externally-specified activity') to cover both parses. It therefore caps strength/scope but does not overturn the nucleus, so it is reconciled as CONSISTENT with an adversarial-boundary flag rather than left RESISTANT."
+    }
+   ]
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "Tfq",
+  "verdict": "NOT_RUN",
+  "failing_occurrences": [],
+  "distinctiveness_ok": false,
+  "falsifiable": true,
+  "notes": "The inceptive account is semantically clean (no occurrence resists it), but a genuine distinctiveness-passing falsification could not be run: distinctiveness from other Quranic commencement verbs (e.g. أخذ/جعل used inceptively) cannot be tested from this 3-token packet, aspect is underdetermined (inceptive vs. durative), and the sole independent context (38:33) uses a variant single-attestation construction. No occurrence was refuted, so the status is NOT_RUN with resistance recorded at 38:33 rather than PASSED or FAILED."
+ },
+ "coverage_validation": {
+  "root": "Tfq",
+  "expected_count": 3,
+  "researched_count": 3,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [],
+  "unresolved_visible": []
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "20:121:6:2",
+   "disposition": "CONSISTENT",
+   "note": "All 3 tokens are the same lexeme in the perfect, each immediately governing an independent expression of a distinct activity and carrying no object of its own; the constant contributed sense across a finite-verb complement and a maṣdar complement is 'commenced/undertook,' which is aspectual not lexical. Packet-internal contrast confirms distinctiveness: within the same verses طفق stands opposed to the surrounding punctual perfects (فأكلا/ذاقا 'ate/tasted', بدت 'became apparent') by opening a phase of continuing action rather than reporting a completed point-event. Cluster count = 3 = total_confirmed_occurrences.",
+   "coverage_cluster_id": "tfq_inceptive_perfect",
+   "candidate_semantic_interpretation": "Frozen perfect inceptive/ingressive verb 'set about / began (to do)': contributes aspectual onset-plus-engagement of an activity whose lexical content is supplied by an obligatory following complement (finite imperfect يخصفان in 7:22/20:121; accusative maṣdar مسحًا in 38:33). Content-neutral, result-neutral, morally neutral.",
+   "cluster_supporting_evidence": "7:22 and 20:121: وَطَفِقَا يَخْصِفَانِ عَلَيْهِمَا مِن وَرَقِ ٱلْجَنَّةِ (dual perfect + ongoing imperfect). 38:33: فَطَفِقَ مَسْحًۢا بِٱلسُّوقِ وَٱلْأَعْنَاقِ (singular perfect + bounded maṣdar). Same aspectual sense held constant across changed complement syntax, changed subject number, and changed emotional register.",
+   "counterevidence": [
+    "38:33:3:2"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 3 tokens are the same lexeme in the perfect, each immediately governing an independent expression of a distinct activity and carrying no object of its own; the constant contributed sense across a finite-verb complement and a maṣdar complement is 'commenced/undertook,' which is aspectual not lexical. Packet-internal contrast confirms distinctiveness: within the same verses طفق stands opposed to the surrounding punctual perfects (فأكلا/ذاقا 'ate/tasted', بدت 'became apparent') by opening a phase of continuing action rather than reporting a completed point-event. Cluster count = 3 = total_confirmed_occurrences.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "20:121",
+     "verse_text": "فَأَكَلَا مِنْهَا فَبَدَتْ لَهُمَا سَوْءَٰتُهُمَا وَطَفِقَا يَخْصِفَانِ عَلَيْهِمَا مِن وَرَقِ ٱلْجَنَّةِ وَعَصَىٰٓ ءَادَمُ رَبَّهُۥ فَغَوَىٰ"
+    }
+   ],
+   "root_arabic": "ط ف ق",
+   "root_buckwalter": "Tfq",
+   "root_id": "Tfq",
+   "artifact_name": "_54_fq.json",
+   "verse_ref": "20:121",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Tafiqa",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَأَكَلَا مِنْهَا فَبَدَتْ لَهُمَا سَوْءَٰتُهُمَا وَطَفِقَا يَخْصِفَانِ عَلَيْهِمَا مِن وَرَقِ ٱلْجَنَّةِ وَعَصَىٰٓ ءَادَمُ رَبَّهُۥ فَغَوَىٰ"
+  },
+  {
+   "word_ref": "38:33:3:2",
+   "disposition": "CONSISTENT",
+   "note": "Sole independent context and sole variant construction (accusative maṣdar مسحًا rather than finite imperfect). Semantically consistent with the inceptive nucleus ('he set about wiping'), but its distinct frame keeps a competing thin-lexical-verb reading live and is the reason strength is capped at MODERATE. Treated as an adversarial boundary, not a resistant seam. | 38:33 (فَطَفِقَ مَسْحًۢا بِٱلسُّوقِ وَٱلْأَعْنَاقِ) is the only context outside the Adam/Eve narrative and breaks the canonical 'طفق + finite imperfect' template by taking an accusative maṣdar complement (مسحًا) instead of a finite verb (contrast يخصفان), keeping a competing thin-lexical-verb reading available; it caps strength and scope but does not semantically overturn the inceptive nucleus.",
+   "coverage_cluster_id": "tfq_inceptive_perfect",
+   "candidate_semantic_interpretation": "Frozen perfect inceptive/ingressive verb 'set about / began (to do)': contributes aspectual onset-plus-engagement of an activity whose lexical content is supplied by an obligatory following complement (finite imperfect يخصفان in 7:22/20:121; accusative maṣdar مسحًا in 38:33). Content-neutral, result-neutral, morally neutral.",
+   "cluster_supporting_evidence": "7:22 and 20:121: وَطَفِقَا يَخْصِفَانِ عَلَيْهِمَا مِن وَرَقِ ٱلْجَنَّةِ (dual perfect + ongoing imperfect). 38:33: فَطَفِقَ مَسْحًۢا بِٱلسُّوقِ وَٱلْأَعْنَاقِ (singular perfect + bounded maṣdar). Same aspectual sense held constant across changed complement syntax, changed subject number, and changed emotional register.",
+   "counterevidence": [
+    "38:33:3:2"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 3 tokens are the same lexeme in the perfect, each immediately governing an independent expression of a distinct activity and carrying no object of its own; the constant contributed sense across a finite-verb complement and a maṣdar complement is 'commenced/undertook,' which is aspectual not lexical. Packet-internal contrast confirms distinctiveness: within the same verses طفق stands opposed to the surrounding punctual perfects (فأكلا/ذاقا 'ate/tasted', بدت 'became apparent') by opening a phase of continuing action rather than reporting a completed point-event. Cluster count = 3 = total_confirmed_occurrences.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": "The resistance is syntactic, not semantic: 'he set about wiping' holds the inceptive sense constant across the changed construction, and the invariant is stated conservatively enough ('entry into and engagement with an externally-specified activity') to cover both parses. It therefore caps strength/scope but does not overturn the nucleus, so it is reconciled as CONSISTENT with an adversarial-boundary flag rather than left RESISTANT.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "38:33:3:2",
+     "preliminary_disposition": "RESISTANT",
+     "preliminary_note": "Flagged as a possible resister because its maṣdar complement breaks the 'طفق + finite imperfect' template used by the two Adam tokens, admitting a thin-lexical-verb parse ('he applied himself to a wiping').",
+     "final_disposition": "CONSISTENT",
+     "reconciliation_rationale": "The resistance is syntactic, not semantic: 'he set about wiping' holds the inceptive sense constant across the changed construction, and the invariant is stated conservatively enough ('entry into and engagement with an externally-specified activity') to cover both parses. It therefore caps strength/scope but does not overturn the nucleus, so it is reconciled as CONSISTENT with an adversarial-boundary flag rather than left RESISTANT.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [
+    "38:33:3:2"
+   ],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "38:33",
+     "verse_text": "رُدُّوهَا عَلَىَّ فَطَفِقَ مَسْحًۢا بِٱلسُّوقِ وَٱلْأَعْنَاقِ"
+    }
+   ],
+   "root_arabic": "ط ف ق",
+   "root_buckwalter": "Tfq",
+   "root_id": "Tfq",
+   "artifact_name": "_54_fq.json",
+   "verse_ref": "38:33",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Tafiqa",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "رُدُّوهَا عَلَىَّ فَطَفِقَ مَسْحًۢا بِٱلسُّوقِ وَٱلْأَعْنَاقِ"
+  },
+  {
+   "word_ref": "7:22:9:2",
+   "disposition": "CONSISTENT",
+   "note": "All 3 tokens are the same lexeme in the perfect, each immediately governing an independent expression of a distinct activity and carrying no object of its own; the constant contributed sense across a finite-verb complement and a maṣdar complement is 'commenced/undertook,' which is aspectual not lexical. Packet-internal contrast confirms distinctiveness: within the same verses طفق stands opposed to the surrounding punctual perfects (فأكلا/ذاقا 'ate/tasted', بدت 'became apparent') by opening a phase of continuing action rather than reporting a completed point-event. Cluster count = 3 = total_confirmed_occurrences.",
+   "coverage_cluster_id": "tfq_inceptive_perfect",
+   "candidate_semantic_interpretation": "Frozen perfect inceptive/ingressive verb 'set about / began (to do)': contributes aspectual onset-plus-engagement of an activity whose lexical content is supplied by an obligatory following complement (finite imperfect يخصفان in 7:22/20:121; accusative maṣdar مسحًا in 38:33). Content-neutral, result-neutral, morally neutral.",
+   "cluster_supporting_evidence": "7:22 and 20:121: وَطَفِقَا يَخْصِفَانِ عَلَيْهِمَا مِن وَرَقِ ٱلْجَنَّةِ (dual perfect + ongoing imperfect). 38:33: فَطَفِقَ مَسْحًۢا بِٱلسُّوقِ وَٱلْأَعْنَاقِ (singular perfect + bounded maṣdar). Same aspectual sense held constant across changed complement syntax, changed subject number, and changed emotional register.",
+   "counterevidence": [
+    "38:33:3:2"
+   ],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "All 3 tokens are the same lexeme in the perfect, each immediately governing an independent expression of a distinct activity and carrying no object of its own; the constant contributed sense across a finite-verb complement and a maṣdar complement is 'commenced/undertook,' which is aspectual not lexical. Packet-internal contrast confirms distinctiveness: within the same verses طفق stands opposed to the surrounding punctual perfects (فأكلا/ذاقا 'ate/tasted', بدت 'became apparent') by opening a phase of continuing action rather than reporting a completed point-event. Cluster count = 3 = total_confirmed_occurrences.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "7:22",
+     "verse_text": "فَدَلَّىٰهُمَا بِغُرُورٍ فَلَمَّا ذَاقَا ٱلشَّجَرَةَ بَدَتْ لَهُمَا سَوْءَٰتُهُمَا وَطَفِقَا يَخْصِفَانِ عَلَيْهِمَا مِن وَرَقِ ٱلْجَنَّةِ وَنَادَىٰهُمَا رَبُّهُمَآ أَلَمْ أَنْهَكُمَا عَن تِلْكُمَا ٱلشَّجَرَةِ وَأَقُل لَّكُمَآ إِنَّ ٱلشَّيْطَٰنَ لَكُمَا عَدُوٌّ مُّبِينٌ"
+    }
+   ],
+   "root_arabic": "ط ف ق",
+   "root_buckwalter": "Tfq",
+   "root_id": "Tfq",
+   "artifact_name": "_54_fq.json",
+   "verse_ref": "7:22",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "Tafiqa",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "فَدَلَّىٰهُمَا بِغُرُورٍ فَلَمَّا ذَاقَا ٱلشَّجَرَةَ بَدَتْ لَهُمَا سَوْءَٰتُهُمَا وَطَفِقَا يَخْصِفَانِ عَلَيْهِمَا مِن وَرَقِ ٱلْجَنَّةِ وَنَادَىٰهُمَا رَبُّهُمَآ أَلَمْ أَنْهَكُمَا عَن تِلْكُمَا ٱلشَّجَرَةِ وَأَقُل لَّكُمَآ إِنَّ ٱلشَّيْطَٰنَ لَكُمَا عَدُوٌّ مُّبِينٌ"
+  }
+ ],
+ "resistant_deep_analysis": [],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Adversary C independently affirmed the nucleus while challenging breadth; effective independent contexts number ~2, insufficient to certify distinctiveness.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [],
+ "unreconciled_count": 0,
+ "resistant_occurrences": [],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "ط ف ق realizes a single frozen, defective inceptive/ingressive verb — 'set about / began (to do)' — that contributes aspectual onset-plus-engagement only, while the lexical content of the action is borne entirely by an obligatory following complement (a finite imperfect verb يخصفان, or an accusative maṣdar مسحًا). It denotes no concrete act, no completion/result, no moral valence, and no argument structure of its own.",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "LEXICALIZED_CLASS",
+ "layer_attribution": {
+  "occurrence_evidence": "Three confirmed perfect-verb tokens: 20:121:6:2 (وَطَفِقَا يَخْصِفَانِ), 7:22:9:2 (وَطَفِقَا يَخْصِفَانِ), 38:33:3:2 (فَطَفِقَ مَسْحًۢا) — each root segment at position :2 preceded by a proclitic conjunction (وَ/فَ), each governing an independent activity-expression and no object of its own.",
+  "derivation": "No derivational signal to reason from: qac_verb_form is null for all tokens (the 'V' in form_inventory is the POS tag 'Verb', not verb-form V); the root is a defective/frozen lexeme attested only in the perfect with no imperfect, imperative, participle, maṣdar, nominal, or derived form.",
+  "lexical_class": "A single lexicalized class — one monofunctional inceptive/ingressive verb 'set about / began (to do)' — content-empty, result-neutral, morally neutral; not a set of unbridged senses, hence LEXICALIZED_CLASS rather than UNRESOLVED_CLASS_ONLY.",
+  "contextual_relation": "Contextually the begun activities are stitching leaves in shame (Adam/Eve, 7:22/20:121) and wiping horses' legs and necks (Solomon, 38:33); these narrative specifics belong to the complements (خصف, مسح) and the surrounding verses, NOT to طفق, and are excluded from the root claim.",
+  "reconciliation": "38:33 was preliminarily flagged RESISTANT for its maṣdar construction but reconciled to CONSISTENT as an adversarial boundary: the inceptive sense survives the variant frame, so it caps grading (MODERATE/REPRESENTATIVE) without splitting the class or forcing UNRESOLVED.",
+  "unresolved_resistance": "No persisting semantic resistance: all three occurrences are consistent with the inceptive nucleus. The residual open questions are evidential/aspectual — inceptive-vs-durative underdetermination and untestable distinctiveness on ~2 independent contexts — which cap strength but do not constitute a resistant sub-class."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "38:33:3:2",
+   "role": "ADVERSARIAL_BOUNDARY",
+   "reason": "Only context outside the near-duplicate Adam/Eve pair (the sole genuinely independent attestation) and the only occurrence using an accusative maṣdar complement (مسحًا) instead of a finite imperfect verb, so it breaks the canonical commencement template and keeps a competing thin-lexical-verb reading alive.",
+   "evidence_basis": {
+    "kind": "CONSTRUCTIONAL_VARIANT_SINGLE_ATTESTATION",
+    "statement": "38:33 (فَطَفِقَ مَسْحًۢا بِٱلسُّوقِ وَٱلْأَعْنَاقِ) is the only context outside the Adam/Eve narrative and breaks the canonical 'طفق + finite imperfect' template by taking an accusative maṣdar complement (مسحًا) instead of a finite verb (contrast يخصفان), keeping a competing thin-lexical-verb reading available; it caps strength and scope but does not semantically overturn the inceptive nucleus."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "EVIDENCE_DERIVED",
+  "rationale": "No occurrence persists as RESISTANT under the inceptive account — all three are semantically consistent. The one genuine hard case, 38:33, is an adversarial/structural boundary (independent single context with a variant maṣdar construction) that caps grading rather than a resistant seam; its evidence basis is drawn directly from the packet surfaces and matches the strongest_counterexample statement."
+ },
+ "rejection_condition": {
+  "challenging_finding": "An occurrence (or a decisive re-parse of an existing one) in which طفق itself carries concrete lexical action-content, an object of its own, completion/result, moral valence, or non-perfective/derived morphology — i.e. طفق meaning a specific act (e.g. 'wipe/strike') with مسحًا read as its cognate object, rather than an empty inceptive governing a complement that supplies the action.",
+  "search_location": "The three confirmed tokens 20:121:6:2, 7:22:9:2, 38:33:3:2, especially the complement structure of 38:33 (مسحًا بالسوق والأعناق) and any future-discovered non-perfect or derived attestation of ط ف ق.",
+  "verification_method": "Test whether the activity-content and its objects hang off the complement (يخصفان / مسحًا) rather than off طفق, and whether the constant sense across the finite-verb and maṣdar complements is 'commenced/undertook'; check for any object governed directly by طفق or any reported completion of the act by طفق itself.",
+  "confounder_control": "Do not treat 7:22 and 20:121 as two independent confirmations (they are one near-verbatim Adam context); do not import classical lexicon glosses of طفق; and separate the moral verbs of the Adam pericope (وعصى, فغوى) from طفق, which is aspectually neutral.",
+  "failure_consequence": "If طفق is shown to carry its own lexical/resultative/argument content, the content-empty inceptive nucleus is falsified and the root must be re-analyzed as a thin lexical verb (downgrading candidate_root_contribution and possibly the research_state)."
+ },
+ "falsification_status": "NOT_RUN",
+ "reopen_conditions": [
+  "If any Quranic occurrence of ط ف ق surfaces in a non-perfect form (imperfect, imperative, participle, maṣdar, or a derived form), reopen to test whether the frozen-perfect/aspectual-onset characterization still holds or whether the root carries independent lexical content.",
+  "If 38:33 (فَطَفِقَ مَسْحًۢا) is re-parsed such that مسحًا is a cognate object of طفق rather than the content of a begun activity, reopen the content-empty inceptive claim and re-adjudicate the thin-lexical-verb competitor.",
+  "If a new occurrence outside the Adam/Eve pericope attests the 'طفق + finite imperfect' frame or shows the begun activity as completed/resulting, reopen to test the inceptive-vs-durative underdetermination that the current n=3 (effectively ~2 independent contexts) cannot resolve."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "20:121:6:2",
+  "7:22:9:2",
+  "38:33:3:2"
+ ],
+ "counterevidence_refs": [
+  "38:33:3:2"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "tfq_falsif_2026_09_12",
+  "verdict": "NOT_RUN",
+  "falsifiable": true,
+  "distinctiveness_ok": false,
+  "failing_occurrences": [],
+  "tested_material_clusters": [
+   "tfq_inceptive_perfect"
+  ],
+  "status_rationale": "The inceptive account is semantically clean (no occurrence resists it), but a genuine distinctiveness-passing falsification could not be run: distinctiveness from other Quranic commencement verbs (e.g. أخذ/جعل used inceptively) cannot be tested from this 3-token packet, aspect is underdetermined (inceptive vs. durative), and the sole independent context (38:33) uses a variant single-attestation construction. No occurrence was refuted, so the status is NOT_RUN with resistance recorded at 38:33 rather than PASSED or FAILED."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Tfq: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Tfq: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Tfq: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Tfq: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Tfq: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Tfq: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Tfq: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "Tfq: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}

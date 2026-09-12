@@ -1,0 +1,830 @@
+{
+ "root_arabic": "ش ي ع",
+ "root_buckwalter": "$yE",
+ "root_id": "$yE",
+ "artifact_name": "$yE.json",
+ "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+ "morphology_source": "QAC_MORPHOLOGY v0.4 (sha256 a1d12923...)",
+ "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+ "batch_id": "batch07-wave5",
+ "occurrences": 12,
+ "frozen_candidate_root_contribution": "A bounded body of people individuated within a larger whole by shared alignment/course/kind — a side, party, or faction, characteristically a proper part set off against other such bodies (and against the enemy). Valence is contextual, not lexical: it spans commended solidarity (Abraham of Noah's party 37:83; Moses' side 28:15) and condemned fragmentation (the sects produced by dividing religion 6:159, 30:32; imposed factionalism 28:4, 6:65). It does not entail kinship, contemporaneity, a living leader, or fixed polarity. The lone verbal token (24:19, indecency 'spreading/becoming current') is retained inside the same derivational family but is a semi-detached, singly-attested dynamic sense not independently bridged to the nominal nucleus Quran-internally.",
+ "internal_discovery": {
+  "candidate_root_contribution": "A bounded body of people individuated within a larger whole by shared alignment/course/kind — a side, party, or faction, characteristically a proper part set off against other such bodies (and against the enemy). Valence is contextual, not lexical: it spans commended solidarity (Abraham of Noah's party 37:83; Moses' side 28:15) and condemned fragmentation (the sects produced by dividing religion 6:159, 30:32; imposed factionalism 28:4, 6:65). It does not entail kinship, contemporaneity, a living leader, or fixed polarity. The lone verbal token (24:19, indecency 'spreading/becoming current') is retained inside the same derivational family but is a semi-detached, singly-attested dynamic sense not independently bridged to the nominal nucleus Quran-internally.",
+  "plain_explanation": "For 11 of 12 occurrences, ش ي ع names a distinguishable grouping of people held together by a common allegiance, course, or kind, and marked off from others — 'one's side/party' (شِيعَة), 'factions/sects' (شِيَعًا), or 'counterparts of the same kind' (أَشْيَاع). The word itself carries no fixed praise or blame; the surrounding context (siding with Moses vs. being made to fight; Abraham's righteous camp vs. religion split into rival sects) supplies the valence. One verb (تَشِيعَ, 24:19) means an abstract thing 'spreading' through people and denotes no group at all; it is kept in the same family but is the single case the nominal account cannot govern.",
+  "layer_separation_note": "Does NOT mean: (1) a fixed 'heretical/religious sect' — valence and referent range from a street-fight side (28:15) to generic ancient communities (15:10, 19:69) to mere counterparts-in-kind (54:51); (2) 'unity' or an undivided whole — it marks a part presupposing other sides, and the plural is the very product of fragmentation (فَرَّقُوا 6:159, 30:32); (3) a physical co-present crowd — alignment can span generations (Abraham to Noah 37:83; prior أَشْيَاع 34:54, 54:51); (4) 'followers of a named living leader' — leadership is optional; N2 factions follow a shared دِين/course with none named; (5) 'spreading/diffusion' for the nouns — that sense is confined to the single verb (24:19) and is not derivable from the nominal forms. It is also distinct from طَآئِفَة (a portion/section, 28:4) and حِزْب (a bounded party-unit, 30:32): شِيعَة foregrounds partisan co-alignment.",
+  "presence": {
+   "occurrences_total": 12,
+   "occurrences_checked": 12,
+   "occurrences_consistent": 11,
+   "inconsistent_refs": [
+    "24:19:5:1"
+   ]
+  },
+  "strongest_counterexample": "24:19:5:1 «أَن تَشِيعَ الْفَـحِشَةُ فِى الَّذِين ءَامَنُوا» — the lone verb. Its subject is an abstract act (الفَاحِشَة), not people; the sense is purely 'spread / become current' with zero grouping, party, or allegiance content. It resists any account built on 'faction/following' and can be salvaged only by retreating to an over-abstract 'coursing/propagation' nucleus resting on this single attestation — reasoning from morphology-family to sense, which the contract warns is not identity. Quran-internally the verb and the eleven nouns share no co-text, syntactic frame, or derivational demonstration (only a thin فِى-collective frame parallel), so the bridge is not independently established. This is the principal ceiling on confidence.",
+  "strongest_competitor": "That ش ي ع is two unbridged classes — a nominal 'faction/aligned bloc/those-of-a-kind' (11 occ) and a verbal 'spread/become widespread' (24:19 alone) — linked only by the barred classical etymon 'follow/go-together → gather/spread'. This is rejected as the FINAL verdict for two reasons: (a) the nominal class is internally coherent, broad, and distinctive enough to warrant a positive PREFERRED nominal account rather than collapsing the whole root to UNRESOLVED; (b) a thin but genuine Quran-internal resonance (the shared 'فِى a collective' frame: تَشِيعَ فِى الَّذِين ءَامَنُوا vs فِى شِيَعِ الأَوَّلِين) keeps the verb inside one under-articulated derivational family. But because that bridge is not independently demonstrable, the verb is held as a resistant sub-class and strength is capped at MODERATE rather than STRONG — the competitor is not defeated so much as it forces the ceiling.",
+  "competing_hypothesis": "That ش ي ع is two unbridged classes — a nominal 'faction/aligned bloc/those-of-a-kind' (11 occ) and a verbal 'spread/become widespread' (24:19 alone) — linked only by the barred classical etymon 'follow/go-together → gather/spread'. This is rejected as the FINAL verdict for two reasons: (a) the nominal class is internally coherent, broad, and distinctive enough to warrant a positive PREFERRED nominal account rather than collapsing the whole root to UNRESOLVED; (b) a thin but genuine Quran-internal resonance (the shared 'فِى a collective' frame: تَشِيعَ فِى الَّذِين ءَامَنُوا vs فِى شِيَعِ الأَوَّلِين) keeps the verb inside one under-articulated derivational family. But because that bridge is not independently demonstrable, the verb is held as a resistant sub-class and strength is capped at MODERATE rather than STRONG — the competitor is not defeated so much as it forces the ceiling.",
+  "unresolved_cases": [],
+  "result": "PREFERRED",
+  "result_strength": "MODERATE",
+  "rationale": "The nominal account is broad (Suras 6, 15, 19, 28, 30, 34, 37, 54), distinctive (allegiance axis شِيعَة↔عَدُوّ at 28:15; marked against حِزْب 30:32 and طَآئِفَة 28:4; robust شِيَعًا↔فَرَّق partition regularity across 6:159/30:32/28:4/6:65), and adversarially clean within all 11 nominal cases. That alone trends toward STRONG. Two contract-mandated caps hold it at MODERATE/REPRESENTATIVE: (1) a genuinely resistant single-token verbal sub-class (24:19) whose bridge to the nominal nucleus is not Quran-internally demonstrable — 'morphology ≠ semantic identity'; (2) a cohesion-vs-fragmentation valence spread inside the nouns (commendable being-of-a-شِيعَة vs. blameworthy becoming-شِيَعًا) which, while unified as one valence-neutral 'aligned bloc' invariant, shows the nominal use is itself a family of related senses. Per the contract, a resistant sub-class caps strength at MODERATE and scope at REPRESENTATIVE. The result is honestly PREFERRED (the nominal nucleus is confidently characterized), not a failure; the nominal↔verbal unity is plausible-but-unproven.",
+  "occurrence_classification": {
+   "clusters": [
+    {
+     "cluster_id": "N1_singular_side_party",
+     "where": {
+      "word_refs": [
+       "19:69:5:1",
+       "28:15:14:1",
+       "28:15:21:1",
+       "37:83:3:1"
+      ]
+     },
+     "occurrence_count_expected": 4,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Singular شِيعَة (with pronoun or after كل): 'one's own side / party / following' — a bloc defined by allegiance to a common course, individuated against others and against the enemy.",
+     "classification_rationale": "28:15 fixes the sense by direct opposition شِيعَتِهِ ↔ عَدُوِّهِ (his side vs. his enemy); 37:83 places Abraham 'of Noah's شِيعَة' across generations, so alignment/way — not contemporaneity or discipleship of a living leader; 19:69 'from every شِيعَة' individuates each grouping. Valence ranges neutral-to-commendable, showing it is contextual not lexical.",
+     "supporting_evidence_note": "شِيعَتِهِ→عَدُوِّهِ antonymy (28:15); cross-generational alignment (37:83); individuation مِن كُلِّ شِيعَةٍ (19:69).",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "N2_plural_factions_fragmentation",
+     "where": {
+      "word_refs": [
+       "15:10:6:1",
+       "28:4:8:1",
+       "30:32:6:1",
+       "6:159:6:1",
+       "6:65:17:1"
+      ]
+     },
+     "occurrence_count_expected": 5,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Plural شِيَع / شِيَعًا: 'factions / rival sects' — the same aligned-bloc notion in the plural, characteristically the product of division and mutual hostility.",
+     "classification_rationale": "The plural collocates tightly with fragmentation: فَرَّقُوا دِينَهُم وَكَانُوا شِيَعًا (6:159, 30:32, the latter glossed by كُلُّ حِزْبٍ), جَعَلَ أَهْلَهَا شِيَعًا (28:4, divide-and-rule, contrasted with طَآئِفَة), يَلْبِسَكُم شِيَعًا with mutual بَأس (6:65). 15:10 شِيَعِ الأَوَّلِين is the neutral plural 'groupings of the ancients'. Same 'aligned bloc' invariant; the condemnation comes from فَرَّق/بَأس, not from شِيعَة itself. A grouping here can be imposed, not voluntary.",
+     "supporting_evidence_note": "شِيَعًا↔فَرَّق partition pattern (6:159, 30:32); imposition جَعَل/يَلْبِس (28:4, 6:65); حِزْب and طَآئِفَة co-text distinguishing شِيعَة; neutral 15:10.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "N3_broken_plural_counterparts_of_kind",
+     "where": {
+      "word_refs": [
+       "34:54:8:2",
+       "54:51:3:1"
+      ]
+     },
+     "occurrence_count_expected": 2,
+     "disposition": "CONSISTENT",
+     "candidate_semantic_interpretation": "Broken plural أَشْيَاع: 'those of your/their same kind or persuasion' — predecessors on the same course who met a like fate.",
+     "classification_rationale": "كَمَا فُعِلَ بِأَشْيَاعِهِم مِن قَبْلُ (34:54) and أَهْلَكْنَا أَشْيَاعَكُم (54:51) group by sameness-of-category across generations, confirming the core is shared course/kind, not a co-present entourage. Grouping-by-kind stretches the concrete 'organized party' reading slightly but is absorbed under the aligned-bloc invariant.",
+     "supporting_evidence_note": "Cross-generational 'of your kind' both bound to مِن قَبْلُ / prior destruction (34:54, 54:51); confirms alignment, not contemporaneity.",
+     "counterevidence": []
+    },
+    {
+     "cluster_id": "V_verb_spread_become_current",
+     "where": {
+      "word_refs": [
+       "24:19:5:1"
+      ]
+     },
+     "occurrence_count_expected": 1,
+     "disposition": "RESISTANT",
+     "candidate_semantic_interpretation": "Verb تَشِيعَ: '(of an abstract phenomenon) to spread / become current' through a population — no group, persons, or allegiance denoted.",
+     "classification_rationale": "The sole verbal token; subject is الفَاحِشَة (an act), not people. It carries none of the nominal grouping content and is bridged to the nucleus only by an inferential, singly-attested 'coursing/propagation' abstraction and a thin فِى-collective frame parallel. Per 'same root ≠ one meaning' and 'morphology ≠ semantic identity', the bridge is not Quran-internally demonstrated; held as a resistant sub-class within the derivational family.",
+     "supporting_evidence_note": "Only فِى-collective frame links it to the nouns (تَشِيعَ فِى الَّذِين ءَامَنُوا vs فِى شِيَعِ الأَوَّلِين); no shared co-text, no verse forms a شِيعَة by an act of تشيع.",
+     "counterevidence": [
+      "24:19:5:1"
+     ]
+    }
+   ],
+   "reconciliation": [
+    {
+     "word_ref": "54:51:3:1",
+     "final": "CONSISTENT",
+     "rationale": "Grouping-by-sameness-of-kind is absorbed under the valence-neutral 'aligned bloc / shared course' invariant (paralleled by 34:54); it does not denote spreading and shares the nominal grouping core, so it is retained as CONSISTENT within N3, not a resistant class."
+    }
+   ]
+  }
+ },
+ "adversarial_verification": {
+  "root_buckwalter": "$yE",
+  "verdict": "CORE_HOLDS_WITH_RESIDUAL_RESISTANCE",
+  "failing_occurrences": [
+   "24:19:5:1"
+  ],
+  "distinctiveness_ok": true,
+  "falsifiable": true,
+  "notes": "The nominal nucleus survives adversarial pressure across all 11 nominal occurrences with a distinctive allegiance/individuation load (28:15 antonymy; حِزْب/طَආئِفَة contrast). However one occurrence (24:19, verb) genuinely resists and its bridge is not independently establishable, so a clean SUPPORTED/PASSED verdict with empty failing_occurrences is not available; recorded as NOT_RUN with the resistant token logged rather than claimed PASSED."
+ },
+ "coverage_validation": {
+  "root": "$yE",
+  "expected_count": 12,
+  "researched_count": 12,
+  "missing_word_refs": [],
+  "unexpected_word_refs": [],
+  "duplicate_word_refs": [],
+  "exact_set_match": true,
+  "disputed_visible": [
+   "24:19:5:1"
+  ],
+  "unresolved_visible": [
+   "24:19:5:1"
+  ]
+ },
+ "occurrence_dispositions": [
+  {
+   "word_ref": "15:10:6:1",
+   "disposition": "CONSISTENT",
+   "note": "The plural collocates tightly with fragmentation: فَرَّقُوا دِينَهُم وَكَانُوا شِيَعًا (6:159, 30:32, the latter glossed by كُلُّ حِزْبٍ), جَعَلَ أَهْلَهَا شِيَعًا (28:4, divide-and-rule, contrasted with طَآئِفَة), يَلْبِسَكُم شِيَعًا with mutual بَأس (6:65). 15:10 شِيَعِ الأَوَّلِين is the neutral plural 'groupings of the ancients'. Same 'aligned bloc' invariant; the condemnation comes from فَرَّق/بَأس, not from شِيعَة itself. A grouping here can be imposed, not voluntary.",
+   "coverage_cluster_id": "N2_plural_factions_fragmentation",
+   "candidate_semantic_interpretation": "Plural شِيَع / شِيَعًا: 'factions / rival sects' — the same aligned-bloc notion in the plural, characteristically the product of division and mutual hostility.",
+   "cluster_supporting_evidence": "شِيَعًا↔فَرَّق partition pattern (6:159, 30:32); imposition جَعَل/يَلْبِس (28:4, 6:65); حِزْب and طَآئِفَة co-text distinguishing شِيعَة; neutral 15:10.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The plural collocates tightly with fragmentation: فَرَّقُوا دِينَهُم وَكَانُوا شِيَعًا (6:159, 30:32, the latter glossed by كُلُّ حِزْبٍ), جَعَلَ أَهْلَهَا شِيَعًا (28:4, divide-and-rule, contrasted with طَآئِفَة), يَلْبِسَكُم شِيَعًا with mutual بَأس (6:65). 15:10 شِيَعِ الأَوَّلِين is the neutral plural 'groupings of the ancients'. Same 'aligned bloc' invariant; the condemnation comes from فَرَّق/بَأس, not from شِيعَة itself. A grouping here can be imposed, not voluntary.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "15:10",
+     "verse_text": "وَلَقَدْ أَرْسَلْنَا مِن قَبْلِكَ فِى شِيَعِ ٱلْأَوَّلِينَ"
+    }
+   ],
+   "root_arabic": "ش ي ع",
+   "root_buckwalter": "$yE",
+   "root_id": "$yE",
+   "artifact_name": "$yE.json",
+   "verse_ref": "15:10",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "$iyaEi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَقَدْ أَرْسَلْنَا مِن قَبْلِكَ فِى شِيَعِ ٱلْأَوَّلِينَ"
+  },
+  {
+   "word_ref": "19:69:5:1",
+   "disposition": "CONSISTENT",
+   "note": "28:15 fixes the sense by direct opposition شِيعَتِهِ ↔ عَدُوِّهِ (his side vs. his enemy); 37:83 places Abraham 'of Noah's شِيعَة' across generations, so alignment/way — not contemporaneity or discipleship of a living leader; 19:69 'from every شِيعَة' individuates each grouping. Valence ranges neutral-to-commendable, showing it is contextual not lexical.",
+   "coverage_cluster_id": "N1_singular_side_party",
+   "candidate_semantic_interpretation": "Singular شِيعَة (with pronoun or after كل): 'one's own side / party / following' — a bloc defined by allegiance to a common course, individuated against others and against the enemy.",
+   "cluster_supporting_evidence": "شِيعَتِهِ→عَدُوِّهِ antonymy (28:15); cross-generational alignment (37:83); individuation مِن كُلِّ شِيعَةٍ (19:69).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "28:15 fixes the sense by direct opposition شِيعَتِهِ ↔ عَدُوِّهِ (his side vs. his enemy); 37:83 places Abraham 'of Noah's شِيعَة' across generations, so alignment/way — not contemporaneity or discipleship of a living leader; 19:69 'from every شِيعَة' individuates each grouping. Valence ranges neutral-to-commendable, showing it is contextual not lexical.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "19:69",
+     "verse_text": "ثُمَّ لَنَنزِعَنَّ مِن كُلِّ شِيعَةٍ أَيُّهُمْ أَشَدُّ عَلَى ٱلرَّحْمَٰنِ عِتِيًّا"
+    }
+   ],
+   "root_arabic": "ش ي ع",
+   "root_buckwalter": "$yE",
+   "root_id": "$yE",
+   "artifact_name": "$yE.json",
+   "verse_ref": "19:69",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "$iyEapK",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "ثُمَّ لَنَنزِعَنَّ مِن كُلِّ شِيعَةٍ أَيُّهُمْ أَشَدُّ عَلَى ٱلرَّحْمَٰنِ عِتِيًّا"
+  },
+  {
+   "word_ref": "24:19:5:1",
+   "disposition": "RESISTANT",
+   "note": "Lone verb تَشِيعَ with abstract subject الفَاحِشَة = 'spread/become current'; carries no grouping semantics and is not Quran-internally bridged to the nominal nucleus. Resistant seam capping strength.",
+   "coverage_cluster_id": "V_verb_spread_become_current",
+   "candidate_semantic_interpretation": "Verb تَشِيعَ: '(of an abstract phenomenon) to spread / become current' through a population — no group, persons, or allegiance denoted.",
+   "cluster_supporting_evidence": "Only فِى-collective frame links it to the nouns (تَشِيعَ فِى الَّذِين ءَامَنُوا vs فِى شِيَعِ الأَوَّلِين); no shared co-text, no verse forms a شِيعَة by an act of تشيع.",
+   "counterevidence": [
+    "24:19:5:1"
+   ],
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "The sole verbal token; subject is الفَاحِشَة (an act), not people. It carries none of the nominal grouping content and is bridged to the nucleus only by an inferential, singly-attested 'coursing/propagation' abstraction and a thin فِى-collective frame parallel. Per 'same root ≠ one meaning' and 'morphology ≠ semantic identity', the bridge is not Quran-internally demonstrated; held as a resistant sub-class within the derivational family.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [
+    "24:19:5:1"
+   ],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "24:19",
+     "verse_text": "إِنَّ ٱلَّذِينَ يُحِبُّونَ أَن تَشِيعَ ٱلْفَٰحِشَةُ فِى ٱلَّذِينَ ءَامَنُوا۟ لَهُمْ عَذَابٌ أَلِيمٌ فِى ٱلدُّنْيَا وَٱلْـَٔاخِرَةِ وَٱللَّهُ يَعْلَمُ وَأَنتُمْ لَا تَعْلَمُونَ"
+    }
+   ],
+   "root_arabic": "ش ي ع",
+   "root_buckwalter": "$yE",
+   "root_id": "$yE",
+   "artifact_name": "$yE.json",
+   "verse_ref": "24:19",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "ta$iyEa",
+   "qac_tag": "V",
+   "qac_pos": "V",
+   "qac_verb_form": null,
+   "morphology": "V",
+   "form": "V",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱلَّذِينَ يُحِبُّونَ أَن تَشِيعَ ٱلْفَٰحِشَةُ فِى ٱلَّذِينَ ءَامَنُوا۟ لَهُمْ عَذَابٌ أَلِيمٌ فِى ٱلدُّنْيَا وَٱلْـَٔاخِرَةِ وَٱللَّهُ يَعْلَمُ وَأَنتُمْ لَا تَعْلَمُونَ",
+   "deep_analysis": true
+  },
+  {
+   "word_ref": "28:15:14:1",
+   "disposition": "CONSISTENT",
+   "note": "28:15 fixes the sense by direct opposition شِيعَتِهِ ↔ عَدُوِّهِ (his side vs. his enemy); 37:83 places Abraham 'of Noah's شِيعَة' across generations, so alignment/way — not contemporaneity or discipleship of a living leader; 19:69 'from every شِيعَة' individuates each grouping. Valence ranges neutral-to-commendable, showing it is contextual not lexical.",
+   "coverage_cluster_id": "N1_singular_side_party",
+   "candidate_semantic_interpretation": "Singular شِيعَة (with pronoun or after كل): 'one's own side / party / following' — a bloc defined by allegiance to a common course, individuated against others and against the enemy.",
+   "cluster_supporting_evidence": "شِيعَتِهِ→عَدُوِّهِ antonymy (28:15); cross-generational alignment (37:83); individuation مِن كُلِّ شِيعَةٍ (19:69).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "28:15 fixes the sense by direct opposition شِيعَتِهِ ↔ عَدُوِّهِ (his side vs. his enemy); 37:83 places Abraham 'of Noah's شِيعَة' across generations, so alignment/way — not contemporaneity or discipleship of a living leader; 19:69 'from every شِيعَة' individuates each grouping. Valence ranges neutral-to-commendable, showing it is contextual not lexical.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "28:15",
+     "verse_text": "وَدَخَلَ ٱلْمَدِينَةَ عَلَىٰ حِينِ غَفْلَةٍ مِّنْ أَهْلِهَا فَوَجَدَ فِيهَا رَجُلَيْنِ يَقْتَتِلَانِ هَٰذَا مِن شِيعَتِهِۦ وَهَٰذَا مِنْ عَدُوِّهِۦ فَٱسْتَغَٰثَهُ ٱلَّذِى مِن شِيعَتِهِۦ عَلَى ٱلَّذِى مِنْ عَدُوِّهِۦ فَوَكَزَهُۥ مُوسَىٰ فَقَضَىٰ عَلَيْهِ قَالَ هَٰذَا مِنْ عَمَلِ ٱلشَّيْطَٰنِ إِنَّهُۥ عَدُوٌّ مُّضِلٌّ مُّبِينٌ"
+    }
+   ],
+   "root_arabic": "ش ي ع",
+   "root_buckwalter": "$yE",
+   "root_id": "$yE",
+   "artifact_name": "$yE.json",
+   "verse_ref": "28:15",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "$iyEati",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَدَخَلَ ٱلْمَدِينَةَ عَلَىٰ حِينِ غَفْلَةٍ مِّنْ أَهْلِهَا فَوَجَدَ فِيهَا رَجُلَيْنِ يَقْتَتِلَانِ هَٰذَا مِن شِيعَتِهِۦ وَهَٰذَا مِنْ عَدُوِّهِۦ فَٱسْتَغَٰثَهُ ٱلَّذِى مِن شِيعَتِهِۦ عَلَى ٱلَّذِى مِنْ عَدُوِّهِۦ فَوَكَزَهُۥ مُوسَىٰ فَقَضَىٰ عَلَيْهِ قَالَ هَٰذَا مِنْ عَمَلِ ٱلشَّيْطَٰنِ إِنَّهُۥ عَدُوٌّ مُّضِلٌّ مُّبِينٌ"
+  },
+  {
+   "word_ref": "28:15:21:1",
+   "disposition": "CONSISTENT",
+   "note": "28:15 fixes the sense by direct opposition شِيعَتِهِ ↔ عَدُوِّهِ (his side vs. his enemy); 37:83 places Abraham 'of Noah's شِيعَة' across generations, so alignment/way — not contemporaneity or discipleship of a living leader; 19:69 'from every شِيعَة' individuates each grouping. Valence ranges neutral-to-commendable, showing it is contextual not lexical.",
+   "coverage_cluster_id": "N1_singular_side_party",
+   "candidate_semantic_interpretation": "Singular شِيعَة (with pronoun or after كل): 'one's own side / party / following' — a bloc defined by allegiance to a common course, individuated against others and against the enemy.",
+   "cluster_supporting_evidence": "شِيعَتِهِ→عَدُوِّهِ antonymy (28:15); cross-generational alignment (37:83); individuation مِن كُلِّ شِيعَةٍ (19:69).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "28:15 fixes the sense by direct opposition شِيعَتِهِ ↔ عَدُوِّهِ (his side vs. his enemy); 37:83 places Abraham 'of Noah's شِيعَة' across generations, so alignment/way — not contemporaneity or discipleship of a living leader; 19:69 'from every شِيعَة' individuates each grouping. Valence ranges neutral-to-commendable, showing it is contextual not lexical.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "28:15",
+     "verse_text": "وَدَخَلَ ٱلْمَدِينَةَ عَلَىٰ حِينِ غَفْلَةٍ مِّنْ أَهْلِهَا فَوَجَدَ فِيهَا رَجُلَيْنِ يَقْتَتِلَانِ هَٰذَا مِن شِيعَتِهِۦ وَهَٰذَا مِنْ عَدُوِّهِۦ فَٱسْتَغَٰثَهُ ٱلَّذِى مِن شِيعَتِهِۦ عَلَى ٱلَّذِى مِنْ عَدُوِّهِۦ فَوَكَزَهُۥ مُوسَىٰ فَقَضَىٰ عَلَيْهِ قَالَ هَٰذَا مِنْ عَمَلِ ٱلشَّيْطَٰنِ إِنَّهُۥ عَدُوٌّ مُّضِلٌّ مُّبِينٌ"
+    }
+   ],
+   "root_arabic": "ش ي ع",
+   "root_buckwalter": "$yE",
+   "root_id": "$yE",
+   "artifact_name": "$yE.json",
+   "verse_ref": "28:15",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "$iyEati",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَدَخَلَ ٱلْمَدِينَةَ عَلَىٰ حِينِ غَفْلَةٍ مِّنْ أَهْلِهَا فَوَجَدَ فِيهَا رَجُلَيْنِ يَقْتَتِلَانِ هَٰذَا مِن شِيعَتِهِۦ وَهَٰذَا مِنْ عَدُوِّهِۦ فَٱسْتَغَٰثَهُ ٱلَّذِى مِن شِيعَتِهِۦ عَلَى ٱلَّذِى مِنْ عَدُوِّهِۦ فَوَكَزَهُۥ مُوسَىٰ فَقَضَىٰ عَلَيْهِ قَالَ هَٰذَا مِنْ عَمَلِ ٱلشَّيْطَٰنِ إِنَّهُۥ عَدُوٌّ مُّضِلٌّ مُّبِينٌ"
+  },
+  {
+   "word_ref": "28:4:8:1",
+   "disposition": "CONSISTENT",
+   "note": "The plural collocates tightly with fragmentation: فَرَّقُوا دِينَهُم وَكَانُوا شِيَعًا (6:159, 30:32, the latter glossed by كُلُّ حِزْبٍ), جَعَلَ أَهْلَهَا شِيَعًا (28:4, divide-and-rule, contrasted with طَآئِفَة), يَلْبِسَكُم شِيَعًا with mutual بَأس (6:65). 15:10 شِيَعِ الأَوَّلِين is the neutral plural 'groupings of the ancients'. Same 'aligned bloc' invariant; the condemnation comes from فَرَّق/بَأس, not from شِيعَة itself. A grouping here can be imposed, not voluntary.",
+   "coverage_cluster_id": "N2_plural_factions_fragmentation",
+   "candidate_semantic_interpretation": "Plural شِيَع / شِيَعًا: 'factions / rival sects' — the same aligned-bloc notion in the plural, characteristically the product of division and mutual hostility.",
+   "cluster_supporting_evidence": "شِيَعًا↔فَرَّق partition pattern (6:159, 30:32); imposition جَعَل/يَلْبِس (28:4, 6:65); حِزْب and طَآئِفَة co-text distinguishing شِيعَة; neutral 15:10.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The plural collocates tightly with fragmentation: فَرَّقُوا دِينَهُم وَكَانُوا شِيَعًا (6:159, 30:32, the latter glossed by كُلُّ حِزْبٍ), جَعَلَ أَهْلَهَا شِيَعًا (28:4, divide-and-rule, contrasted with طَآئِفَة), يَلْبِسَكُم شِيَعًا with mutual بَأس (6:65). 15:10 شِيَعِ الأَوَّلِين is the neutral plural 'groupings of the ancients'. Same 'aligned bloc' invariant; the condemnation comes from فَرَّق/بَأس, not from شِيعَة itself. A grouping here can be imposed, not voluntary.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "28:4",
+     "verse_text": "إِنَّ فِرْعَوْنَ عَلَا فِى ٱلْأَرْضِ وَجَعَلَ أَهْلَهَا شِيَعًا يَسْتَضْعِفُ طَآئِفَةً مِّنْهُمْ يُذَبِّحُ أَبْنَآءَهُمْ وَيَسْتَحْىِۦ نِسَآءَهُمْ إِنَّهُۥ كَانَ مِنَ ٱلْمُفْسِدِينَ"
+    }
+   ],
+   "root_arabic": "ش ي ع",
+   "root_buckwalter": "$yE",
+   "root_id": "$yE",
+   "artifact_name": "$yE.json",
+   "verse_ref": "28:4",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "$iyaEFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ فِرْعَوْنَ عَلَا فِى ٱلْأَرْضِ وَجَعَلَ أَهْلَهَا شِيَعًا يَسْتَضْعِفُ طَآئِفَةً مِّنْهُمْ يُذَبِّحُ أَبْنَآءَهُمْ وَيَسْتَحْىِۦ نِسَآءَهُمْ إِنَّهُۥ كَانَ مِنَ ٱلْمُفْسِدِينَ"
+  },
+  {
+   "word_ref": "30:32:6:1",
+   "disposition": "CONSISTENT",
+   "note": "The plural collocates tightly with fragmentation: فَرَّقُوا دِينَهُم وَكَانُوا شِيَعًا (6:159, 30:32, the latter glossed by كُلُّ حِزْبٍ), جَعَلَ أَهْلَهَا شِيَعًا (28:4, divide-and-rule, contrasted with طَآئِفَة), يَلْبِسَكُم شِيَعًا with mutual بَأس (6:65). 15:10 شِيَعِ الأَوَّلِين is the neutral plural 'groupings of the ancients'. Same 'aligned bloc' invariant; the condemnation comes from فَرَّق/بَأس, not from شِيعَة itself. A grouping here can be imposed, not voluntary.",
+   "coverage_cluster_id": "N2_plural_factions_fragmentation",
+   "candidate_semantic_interpretation": "Plural شِيَع / شِيَعًا: 'factions / rival sects' — the same aligned-bloc notion in the plural, characteristically the product of division and mutual hostility.",
+   "cluster_supporting_evidence": "شِيَعًا↔فَرَّق partition pattern (6:159, 30:32); imposition جَعَل/يَلْبِس (28:4, 6:65); حِزْب and طَآئِفَة co-text distinguishing شِيعَة; neutral 15:10.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The plural collocates tightly with fragmentation: فَرَّقُوا دِينَهُم وَكَانُوا شِيَعًا (6:159, 30:32, the latter glossed by كُلُّ حِزْبٍ), جَعَلَ أَهْلَهَا شِيَعًا (28:4, divide-and-rule, contrasted with طَآئِفَة), يَلْبِسَكُم شِيَعًا with mutual بَأس (6:65). 15:10 شِيَعِ الأَوَّلِين is the neutral plural 'groupings of the ancients'. Same 'aligned bloc' invariant; the condemnation comes from فَرَّق/بَأس, not from شِيعَة itself. A grouping here can be imposed, not voluntary.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "30:32",
+     "verse_text": "مِنَ ٱلَّذِينَ فَرَّقُوا۟ دِينَهُمْ وَكَانُوا۟ شِيَعًا كُلُّ حِزْبٍۭ بِمَا لَدَيْهِمْ فَرِحُونَ"
+    }
+   ],
+   "root_arabic": "ش ي ع",
+   "root_buckwalter": "$yE",
+   "root_id": "$yE",
+   "artifact_name": "$yE.json",
+   "verse_ref": "30:32",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "$iyaEFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "مِنَ ٱلَّذِينَ فَرَّقُوا۟ دِينَهُمْ وَكَانُوا۟ شِيَعًا كُلُّ حِزْبٍۭ بِمَا لَدَيْهِمْ فَرِحُونَ"
+  },
+  {
+   "word_ref": "34:54:8:2",
+   "disposition": "CONSISTENT",
+   "note": "كَمَا فُعِلَ بِأَشْيَاعِهِم مِن قَبْلُ (34:54) and أَهْلَكْنَا أَشْيَاعَكُم (54:51) group by sameness-of-category across generations, confirming the core is shared course/kind, not a co-present entourage. Grouping-by-kind stretches the concrete 'organized party' reading slightly but is absorbed under the aligned-bloc invariant.",
+   "coverage_cluster_id": "N3_broken_plural_counterparts_of_kind",
+   "candidate_semantic_interpretation": "Broken plural أَشْيَاع: 'those of your/their same kind or persuasion' — predecessors on the same course who met a like fate.",
+   "cluster_supporting_evidence": "Cross-generational 'of your kind' both bound to مِن قَبْلُ / prior destruction (34:54, 54:51); confirms alignment, not contemporaneity.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "كَمَا فُعِلَ بِأَشْيَاعِهِم مِن قَبْلُ (34:54) and أَهْلَكْنَا أَشْيَاعَكُم (54:51) group by sameness-of-category across generations, confirming the core is shared course/kind, not a co-present entourage. Grouping-by-kind stretches the concrete 'organized party' reading slightly but is absorbed under the aligned-bloc invariant.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "34:54",
+     "verse_text": "وَحِيلَ بَيْنَهُمْ وَبَيْنَ مَا يَشْتَهُونَ كَمَا فُعِلَ بِأَشْيَاعِهِم مِّن قَبْلُ إِنَّهُمْ كَانُوا۟ فِى شَكٍّ مُّرِيبٍۭ"
+    }
+   ],
+   "root_arabic": "ش ي ع",
+   "root_buckwalter": "$yE",
+   "root_id": "$yE",
+   "artifact_name": "$yE.json",
+   "verse_ref": "34:54",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">a$oyaAEi",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَحِيلَ بَيْنَهُمْ وَبَيْنَ مَا يَشْتَهُونَ كَمَا فُعِلَ بِأَشْيَاعِهِم مِّن قَبْلُ إِنَّهُمْ كَانُوا۟ فِى شَكٍّ مُّرِيبٍۭ"
+  },
+  {
+   "word_ref": "37:83:3:1",
+   "disposition": "CONSISTENT",
+   "note": "28:15 fixes the sense by direct opposition شِيعَتِهِ ↔ عَدُوِّهِ (his side vs. his enemy); 37:83 places Abraham 'of Noah's شِيعَة' across generations, so alignment/way — not contemporaneity or discipleship of a living leader; 19:69 'from every شِيعَة' individuates each grouping. Valence ranges neutral-to-commendable, showing it is contextual not lexical.",
+   "coverage_cluster_id": "N1_singular_side_party",
+   "candidate_semantic_interpretation": "Singular شِيعَة (with pronoun or after كل): 'one's own side / party / following' — a bloc defined by allegiance to a common course, individuated against others and against the enemy.",
+   "cluster_supporting_evidence": "شِيعَتِهِ→عَدُوِّهِ antonymy (28:15); cross-generational alignment (37:83); individuation مِن كُلِّ شِيعَةٍ (19:69).",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "28:15 fixes the sense by direct opposition شِيعَتِهِ ↔ عَدُوِّهِ (his side vs. his enemy); 37:83 places Abraham 'of Noah's شِيعَة' across generations, so alignment/way — not contemporaneity or discipleship of a living leader; 19:69 'from every شِيعَة' individuates each grouping. Valence ranges neutral-to-commendable, showing it is contextual not lexical.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "37:83",
+     "verse_text": "وَإِنَّ مِن شِيعَتِهِۦ لَإِبْرَٰهِيمَ"
+    }
+   ],
+   "root_arabic": "ش ي ع",
+   "root_buckwalter": "$yE",
+   "root_id": "$yE",
+   "artifact_name": "$yE.json",
+   "verse_ref": "37:83",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "$iyEati",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَإِنَّ مِن شِيعَتِهِۦ لَإِبْرَٰهِيمَ"
+  },
+  {
+   "word_ref": "54:51:3:1",
+   "disposition": "CONSISTENT",
+   "note": "كَمَا فُعِلَ بِأَشْيَاعِهِم مِن قَبْلُ (34:54) and أَهْلَكْنَا أَشْيَاعَكُم (54:51) group by sameness-of-category across generations, confirming the core is shared course/kind, not a co-present entourage. Grouping-by-kind stretches the concrete 'organized party' reading slightly but is absorbed under the aligned-bloc invariant.",
+   "coverage_cluster_id": "N3_broken_plural_counterparts_of_kind",
+   "candidate_semantic_interpretation": "Broken plural أَشْيَاع: 'those of your/their same kind or persuasion' — predecessors on the same course who met a like fate.",
+   "cluster_supporting_evidence": "Cross-generational 'of your kind' both bound to مِن قَبْلُ / prior destruction (34:54, 54:51); confirms alignment, not contemporaneity.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "كَمَا فُعِلَ بِأَشْيَاعِهِم مِن قَبْلُ (34:54) and أَهْلَكْنَا أَشْيَاعَكُم (54:51) group by sameness-of-category across generations, confirming the core is shared course/kind, not a co-present entourage. Grouping-by-kind stretches the concrete 'organized party' reading slightly but is absorbed under the aligned-bloc invariant.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": "Grouping-by-sameness-of-kind is absorbed under the valence-neutral 'aligned bloc / shared course' invariant (paralleled by 34:54); it does not denote spreading and shares the nominal grouping core, so it is retained as CONSISTENT within N3, not a resistant class.",
+   "reconciliation_lineage": [
+    {
+     "word_ref": "54:51:3:1",
+     "preliminary_disposition": "STRUCTURAL_UNCERTAINTY",
+     "preliminary_note": "أَشْيَاعَكُم leans toward 'your likes/kind' rather than 'organized party', appearing at the edge of the concrete nominal sense.",
+     "final_disposition": "CONSISTENT",
+     "reconciliation_rationale": "Grouping-by-sameness-of-kind is absorbed under the valence-neutral 'aligned bloc / shared course' invariant (paralleled by 34:54); it does not denote spreading and shares the nominal grouping core, so it is retained as CONSISTENT within N3, not a resistant class.",
+     "deep_analysis": true
+    }
+   ],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "54:51",
+     "verse_text": "وَلَقَدْ أَهْلَكْنَآ أَشْيَاعَكُمْ فَهَلْ مِن مُّدَّكِرٍ"
+    }
+   ],
+   "root_arabic": "ش ي ع",
+   "root_buckwalter": "$yE",
+   "root_id": "$yE",
+   "artifact_name": "$yE.json",
+   "verse_ref": "54:51",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": ">a$oyaAEa",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "وَلَقَدْ أَهْلَكْنَآ أَشْيَاعَكُمْ فَهَلْ مِن مُّدَّكِرٍ"
+  },
+  {
+   "word_ref": "6:159:6:1",
+   "disposition": "CONSISTENT",
+   "note": "The plural collocates tightly with fragmentation: فَرَّقُوا دِينَهُم وَكَانُوا شِيَعًا (6:159, 30:32, the latter glossed by كُلُّ حِزْبٍ), جَعَلَ أَهْلَهَا شِيَعًا (28:4, divide-and-rule, contrasted with طَآئِفَة), يَلْبِسَكُم شِيَعًا with mutual بَأس (6:65). 15:10 شِيَعِ الأَوَّلِين is the neutral plural 'groupings of the ancients'. Same 'aligned bloc' invariant; the condemnation comes from فَرَّق/بَأس, not from شِيعَة itself. A grouping here can be imposed, not voluntary.",
+   "coverage_cluster_id": "N2_plural_factions_fragmentation",
+   "candidate_semantic_interpretation": "Plural شِيَع / شِيَعًا: 'factions / rival sects' — the same aligned-bloc notion in the plural, characteristically the product of division and mutual hostility.",
+   "cluster_supporting_evidence": "شِيَعًا↔فَرَّق partition pattern (6:159, 30:32); imposition جَعَل/يَلْبِس (28:4, 6:65); حِزْب and طَآئِفَة co-text distinguishing شِيعَة; neutral 15:10.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The plural collocates tightly with fragmentation: فَرَّقُوا دِينَهُم وَكَانُوا شِيَعًا (6:159, 30:32, the latter glossed by كُلُّ حِزْبٍ), جَعَلَ أَهْلَهَا شِيَعًا (28:4, divide-and-rule, contrasted with طَآئِفَة), يَلْبِسَكُم شِيَعًا with mutual بَأس (6:65). 15:10 شِيَعِ الأَوَّلِين is the neutral plural 'groupings of the ancients'. Same 'aligned bloc' invariant; the condemnation comes from فَرَّق/بَأس, not from شِيعَة itself. A grouping here can be imposed, not voluntary.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:159",
+     "verse_text": "إِنَّ ٱلَّذِينَ فَرَّقُوا۟ دِينَهُمْ وَكَانُوا۟ شِيَعًا لَّسْتَ مِنْهُمْ فِى شَىْءٍ إِنَّمَآ أَمْرُهُمْ إِلَى ٱللَّهِ ثُمَّ يُنَبِّئُهُم بِمَا كَانُوا۟ يَفْعَلُونَ"
+    }
+   ],
+   "root_arabic": "ش ي ع",
+   "root_buckwalter": "$yE",
+   "root_id": "$yE",
+   "artifact_name": "$yE.json",
+   "verse_ref": "6:159",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "$iyaEFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "إِنَّ ٱلَّذِينَ فَرَّقُوا۟ دِينَهُمْ وَكَانُوا۟ شِيَعًا لَّسْتَ مِنْهُمْ فِى شَىْءٍ إِنَّمَآ أَمْرُهُمْ إِلَى ٱللَّهِ ثُمَّ يُنَبِّئُهُم بِمَا كَانُوا۟ يَفْعَلُونَ"
+  },
+  {
+   "word_ref": "6:65:17:1",
+   "disposition": "CONSISTENT",
+   "note": "The plural collocates tightly with fragmentation: فَرَّقُوا دِينَهُم وَكَانُوا شِيَعًا (6:159, 30:32, the latter glossed by كُلُّ حِزْبٍ), جَعَلَ أَهْلَهَا شِيَعًا (28:4, divide-and-rule, contrasted with طَآئِفَة), يَلْبِسَكُم شِيَعًا with mutual بَأس (6:65). 15:10 شِيَعِ الأَوَّلِين is the neutral plural 'groupings of the ancients'. Same 'aligned bloc' invariant; the condemnation comes from فَرَّق/بَأس, not from شِيعَة itself. A grouping here can be imposed, not voluntary.",
+   "coverage_cluster_id": "N2_plural_factions_fragmentation",
+   "candidate_semantic_interpretation": "Plural شِيَع / شِيَعًا: 'factions / rival sects' — the same aligned-bloc notion in the plural, characteristically the product of division and mutual hostility.",
+   "cluster_supporting_evidence": "شِيَعًا↔فَرَّق partition pattern (6:159, 30:32); imposition جَعَل/يَلْبِس (28:4, 6:65); حِزْب and طَآئِفَة co-text distinguishing شِيعَة; neutral 15:10.",
+   "counterevidence": [],
+   "preliminary_disposition": "CONSISTENT",
+   "preliminary_note": "The plural collocates tightly with fragmentation: فَرَّقُوا دِينَهُم وَكَانُوا شِيَعًا (6:159, 30:32, the latter glossed by كُلُّ حِزْبٍ), جَعَلَ أَهْلَهَا شِيَعًا (28:4, divide-and-rule, contrasted with طَآئِفَة), يَلْبِسَكُم شِيَعًا with mutual بَأس (6:65). 15:10 شِيَعِ الأَوَّلِين is the neutral plural 'groupings of the ancients'. Same 'aligned bloc' invariant; the condemnation comes from فَرَّق/بَأس, not from شِيعَة itself. A grouping here can be imposed, not voluntary.",
+   "final_disposition": "CONSISTENT",
+   "reconciliation_rationale": null,
+   "reconciliation_lineage": [],
+   "verifier_objection": [],
+   "supporting_evidence": [
+    {
+     "source": "CANONICAL_TANZIL_VERSE",
+     "verse_ref": "6:65",
+     "verse_text": "قُلْ هُوَ ٱلْقَادِرُ عَلَىٰٓ أَن يَبْعَثَ عَلَيْكُمْ عَذَابًا مِّن فَوْقِكُمْ أَوْ مِن تَحْتِ أَرْجُلِكُمْ أَوْ يَلْبِسَكُمْ شِيَعًا وَيُذِيقَ بَعْضَكُم بَأْسَ بَعْضٍ ٱنظُرْ كَيْفَ نُصَرِّفُ ٱلْـَٔايَٰتِ لَعَلَّهُمْ يَفْقَهُونَ"
+    }
+   ],
+   "root_arabic": "ش ي ع",
+   "root_buckwalter": "$yE",
+   "root_id": "$yE",
+   "artifact_name": "$yE.json",
+   "verse_ref": "6:65",
+   "surface_form_arabic": null,
+   "surface_form_arabic_status": "NOT_AVAILABLE_CANONICALLY",
+   "surface_form_arabic_reason": "Canonical Tanzil authority is verse-level; no reviewed segment-level Buckwalter-to-Arabic alignment profile is adopted.",
+   "qac_surface_form_buckwalter": "$iyaEFA",
+   "qac_tag": "N",
+   "qac_pos": "N",
+   "qac_verb_form": null,
+   "morphology": "N",
+   "form": "N",
+   "structural_evidence": {
+    "source_id": "QAC_MORPHOLOGY",
+    "source_version": "0.4",
+    "extraction_version": "qac-0.4-import-v1",
+    "attribution_status": "CONFIRMED"
+   },
+   "verse_text": "قُلْ هُوَ ٱلْقَادِرُ عَلَىٰٓ أَن يَبْعَثَ عَلَيْكُمْ عَذَابًا مِّن فَوْقِكُمْ أَوْ مِن تَحْتِ أَرْجُلِكُمْ أَوْ يَلْبِسَكُمْ شِيَعًا وَيُذِيقَ بَعْضَكُم بَأْسَ بَعْضٍ ٱنظُرْ كَيْفَ نُصَرِّفُ ٱلْـَٔايَٰتِ لَعَلَّهُمْ يَفْقَهُونَ"
+  }
+ ],
+ "resistant_deep_analysis": [
+  {
+   "word_ref": "24:19:5:1",
+   "preliminary_disposition": "RESISTANT",
+   "preliminary_note": "The sole verbal token; subject is الفَاحِشَة (an act), not people. It carries none of the nominal grouping content and is bridged to the nucleus only by an inferential, singly-attested 'coursing/propagation' abstraction and a thin فِى-collective frame parallel. Per 'same root ≠ one meaning' and 'morphology ≠ semantic identity', the bridge is not Quran-internally demonstrated; held as a resistant sub-class within the derivational family.",
+   "final_disposition": "RESISTANT",
+   "reconciliation_rationale": null,
+   "deep_analysis": true
+  }
+ ],
+ "authority_level": "RESEARCH_JUDGMENT",
+ "research_state": "PREFERRED",
+ "result_strength": "MODERATE",
+ "research_completeness": "COMPLETE",
+ "independent_verification": "Three independent lenses (bottom-up A, derivational-distinctiveness B, adversarial C) converged on the same nominal nucleus, the same single resistant verbal token, and the same MODERATE/REPRESENTATIVE ceiling.",
+ "canonical_authorization": "PENDING",
+ "universal_presence_holds": false,
+ "unreconciled_occurrences": [
+  "24:19:5:1"
+ ],
+ "unreconciled_count": 1,
+ "resistant_occurrences": [
+  "24:19:5:1"
+ ],
+ "structural_uncertainty_occurrences": [],
+ "candidate_root_contribution": "A bounded body of people individuated within a larger whole by shared alignment/course/kind — a side, party, or faction, characteristically a proper part set off against other such bodies (and against the enemy). Valence is contextual, not lexical: it spans commended solidarity (Abraham of Noah's party 37:83; Moses' side 28:15) and condemned fragmentation (the sects produced by dividing religion 6:159, 30:32; imposed factionalism 28:4, 6:65). It does not entail kinship, contemporaneity, a living leader, or fixed polarity. The lone verbal token (24:19, indecency 'spreading/becoming current') is retained inside the same derivational family but is a semi-detached, singly-attested dynamic sense not independently bridged to the nominal nucleus Quran-internally.",
+ "contract_type": "ROOT_CONCEPT",
+ "claim_scope": "REPRESENTATIVE",
+ "claim_scope_kind": "DERIVATIONAL_FAMILY",
+ "layer_attribution": {
+  "occurrence_evidence": "12/12 confirmed occurrences read in full from the packet (11 nominal N, 1 verbal V); word_refs, qac_pos, and verse_text verified against the real packet.",
+  "derivation": "Morphology groups the data into singular شِيعَة (N1), sound plural شِيَع/شِيَعًا (N2), broken plural أَشْيَاع (N3), and one Form-I imperfect verb تَشِيعَ (V); morphology is used only to partition, not to assert semantic identity across the noun/verb boundary.",
+  "lexical_class": "The three nominal sub-forms share one valence-neutral invariant: an aligned bloc of people individuated within a larger whole (side/faction/those-of-a-kind). The verbal form is a segregated dynamic sense ('spread/become current') held as a resistant sub-class within the same derivational family.",
+  "contextual_relation": "Context supplies valence and referent (Moses' side vs. enemy; Abraham's righteous camp; religion split into rival sects; Pharaoh's divide-and-rule; abstract indecency spreading) but is NOT elevated into the root claim — the root itself remains valence-neutral 'aligned bloc', not 'sect' or 'schism'.",
+  "reconciliation": "54:51 (أَشْيَاعَكُم) was reconsidered from edge-uncertainty to CONSISTENT under the shared 'aligned bloc/kind' invariant; 24:19 (verb) was retained as RESISTANT after failing an internal bridge test, rather than forced into the nominal nucleus.",
+  "unresolved_resistance": "The verb 24:19 persists as an unbridged resistant seam: its 'spread/become current' sense is not Quran-internally demonstrated to share the nominal nucleus, capping result_strength at MODERATE and claim_scope at REPRESENTATIVE."
+ },
+ "hard_cases": [
+  {
+   "word_ref": "24:19:5:1",
+   "role": "RESISTANT_SEAM",
+   "reason": "The only verbal token; abstract subject الفَاحِشَة 'spreading', no group/allegiance content. Its bridge to the 11-token nominal nucleus is not demonstrable Quran-internally (only a thin فِى-collective frame), so it caps strength at MODERATE and keeps scope REPRESENTATIVE.",
+   "evidence_basis": {
+    "kind": "SYNTACTIC_FRAME_AND_SUBJECT_TYPE",
+    "statement": "24:19:5:1 «أَن تَشِيعَ الْفَـحِشَةُ فِى الَّذِين ءَامَنُوا» — the lone verb. Its subject is an abstract act (الفَاحِشَة), not people; the sense is purely 'spread / become current' with zero grouping, party, or allegiance content."
+   }
+  }
+ ],
+ "hard_case_representation": {
+  "status": "PERSISTED_RESISTANCE_OR_ADVERSARIAL",
+  "rationale": "One genuine resistant occurrence persists after reconciliation: the verb 24:19, whose 'spread/become current' sense is not Quran-internally bridged to the nominal 'aligned bloc' nucleus. The nominal account (11/12) is PREFERRED and clean; the single verbal token is carried as a resistant sub-class within the same derivational family rather than forced into unity."
+ },
+ "rejection_condition": {
+  "challenging_finding": "A demonstration that the verb 24:19 (تَشِيعَ الفَاحِشَة) and the nominal 'aligned bloc/faction' sense are Quran-internally the same sense (single nucleus) — or, conversely, that the nominal occurrences do NOT share the 'aligned-bloc individuated within a whole' invariant and instead resolve into two or more unbridged nominal senses.",
+  "search_location": "The abstract-subject verbal frame at 24:19:5:1 against the nominal grouping frames (28:15 side-vs-enemy, 6:159/30:32/28:4/6:65 شِيَعًا↔فَرَّق, 34:54/54:51 أَشْيَاع), plus حِزْب/طَآئِفَة contrast co-text.",
+  "verification_method": "Test whether any verse forms a شِيعَة by an act of تشيع or applies the grouping sense to the verb (or vice versa) without importing the classical 'follow→spread' etymon; and whether every nominal occurrence carries the allegiance/individuation load distinct from a generic جماعة.",
+  "confounder_control": "Exclude dictionary/lexicon/tafsir etymology and morphology-family inference as authority; require actual shared co-text or syntactic demonstration, not gloss overlap ('same gloss ≠ synonymy', 'morphology ≠ semantic identity').",
+  "failure_consequence": "If the verb is shown to share the nominal nucleus, strength rises toward STRONG and scope toward a fuller ROOT_GENERALIZATION; if the nominal invariant fractures, drop to UNRESOLVED_CLASS_ONLY and abandon the single nominal nucleus."
+ },
+ "falsification_status": "NOT_RUN",
+ "reopen_conditions": [
+  "If a further Quranic occurrence of the verb تشيع (or any other ش ي ع verbal form) appears with a human/collective subject or in a grouping frame, re-test whether the verb and the nominal 'aligned bloc' sense share one nucleus — potentially lifting 24:19 out of RESISTANT and raising strength toward STRONG.",
+  "If re-examination shows the أَشْيَاع occurrences (34:54, 54:51) mean strictly 'likes/kind' with no allegiance/course component, split N3 from N1/N2 and re-grade the nominal nucleus as narrower than 'aligned bloc'.",
+  "If the شِيَعًا↔فَرَّق fragmentation pattern (6:159, 30:32, 28:4, 6:65) is shown to be a distinct lexicalized 'schism' sense not reducible to the neutral 'side/party' of 28:15/37:83, partition the nouns into separate classes rather than one valence-neutral invariant."
+ ],
+ "purity_status": "NOT_EVALUATED",
+ "supporting_evidence_refs": [
+  "28:15:14:1",
+  "28:15:21:1",
+  "37:83:3:1",
+  "19:69:5:1",
+  "15:10:6:1",
+  "28:4:8:1",
+  "30:32:6:1",
+  "6:159:6:1",
+  "6:65:17:1",
+  "34:54:8:2",
+  "54:51:3:1"
+ ],
+ "counterevidence_refs": [
+  "24:19:5:1"
+ ],
+ "falsification_evidence": {
+  "attempt_id": "$yE-falsification-nominal-nucleus",
+  "verdict": "CORE_HOLDS_WITH_RESIDUAL_RESISTANCE",
+  "falsifiable": true,
+  "distinctiveness_ok": true,
+  "failing_occurrences": [
+   "24:19:5:1"
+  ],
+  "tested_material_clusters": [
+   "N1_singular_side_party",
+   "N2_plural_factions_fragmentation",
+   "N3_broken_plural_counterparts_of_kind",
+   "V_verb_spread_become_current"
+  ],
+  "status_rationale": "The nominal nucleus survives adversarial pressure across all 11 nominal occurrences with a distinctive allegiance/individuation load (28:15 antonymy; حِزْب/طَආئِفَة contrast). However one occurrence (24:19, verb) genuinely resists and its bridge is not independently establishable, so a clean SUPPORTED/PASSED verdict with empty failing_occurrences is not available; recorded as NOT_RUN with the resistant token logged rather than claimed PASSED."
+ },
+ "purity_diagnostics": {
+  "DICTIONARY_FIRST": {
+   "diagnostic": "DICTIONARY_FIRST",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "$yE: no separate DICTIONARY_FIRST extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CONTEXTUAL_LEAKAGE": {
+   "diagnostic": "CONTEXTUAL_LEAKAGE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "$yE: no separate CONTEXTUAL_LEAKAGE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "HERITAGE_BIAS": {
+   "diagnostic": "HERITAGE_BIAS",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "$yE: no separate HERITAGE_BIAS extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "TAFSIR_CONTAMINATION": {
+   "diagnostic": "TAFSIR_CONTAMINATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "$yE: no separate TAFSIR_CONTAMINATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "FORCED_UNIFICATION": {
+   "diagnostic": "FORCED_UNIFICATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "$yE: no separate FORCED_UNIFICATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "GENERIC_OVEREXTRACTION": {
+   "diagnostic": "GENERIC_OVEREXTRACTION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "$yE: no separate GENERIC_OVEREXTRACTION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "LETTER_SEMANTICS_OVERRELIANCE": {
+   "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "$yE: no separate LETTER_SEMANTICS_OVERRELIANCE extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  },
+  "CIRCULAR_CONFIRMATION": {
+   "diagnostic": "CIRCULAR_CONFIRMATION",
+   "status": "NOT_EVALUATED",
+   "severity": "NOT_APPLICABLE",
+   "details": "$yE: no separate CIRCULAR_CONFIRMATION extractor or diagnostic evidence was executed in this Quran-internal research pass.",
+   "evidence_refs": [],
+   "hard_blocker": false
+  }
+ }
+}
