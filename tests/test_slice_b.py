@@ -7,6 +7,12 @@ from sqlalchemy.pool import StaticPool
 from backend.domain import models
 from backend.infrastructure.database import Base, get_db
 from backend.main import app
+from tests.governed_baseline import (
+    AUTHORIZED_TANZIL_SNAPSHOT,
+    CURRENT_METHODOLOGY_ID,
+    seed_current_methodology,
+    seed_production_valid_tanzil_snapshot,
+)
 
 SQLALCHEMY_DATABASE_URL = "sqlite:///:memory:"
 
@@ -47,21 +53,28 @@ def setup_db():
 
 
 def create_fixture_run(run_id: str) -> str:
+    # Fail-closed isolation establishment (Track E) legitimately requires the run
+    # to bind a production-valid snapshot and a current source-bound methodology.
+    # This Blind Lab mechanics slice therefore runs on the genuinely governed
+    # Tanzil snapshot (not a toy fixture snapshot), exercising the same
+    # establishment path the real runtime uses.
     db = TestingSessionLocal()
+    seed_production_valid_tanzil_snapshot(db)
+    seed_current_methodology(db)
     db.add(
         models.ResearchRun(
             id=run_id,
             target_contract="ROOT_CORE",
             target_expression="ضرب",
-            methodology_revision="v7.1-test-fixture",
-            corpus_snapshot="snap1-test-fixture",
+            methodology_revision=CURRENT_METHODOLOGY_ID,
+            corpus_snapshot=AUTHORIZED_TANZIL_SNAPSHOT,
             authority_context={"profile": "test_fixture"},
         )
     )
     db.add(
         models.CorpusOccurrence(
             id="c1",
-            snapshot_id="snap1-test-fixture",
+            snapshot_id=AUTHORIZED_TANZIL_SNAPSHOT,
             expression="ضرب",
             verse_ref="2:60",
             text="اضرب بعصاك",

@@ -204,6 +204,12 @@ class IsolationStateResponse(IsolationStateBase):
     id: str
     research_run_id: str
     created_at: datetime
+    establishment_status: str = "NOT_ESTABLISHED"
+    prohibited_sources: list[str] | None = None
+    input_manifest: dict | None = None
+    attesting_actor: str | None = None
+    attested_at: datetime | None = None
+    audit_ref: str | None = None
 
     model_config = ConfigDict(from_attributes=True)
 

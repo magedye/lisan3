@@ -275,6 +275,25 @@ class IsolationState(Base):
     allowed_sources = Column(JSON)
     is_contaminated = Column(String, default="CLEAN")  # CLEAN, PRIOR_CONTAMINATED
     contamination_reason = Column(String, nullable=True)
+    # Fail-closed establishment axis (Canonical Runtime Qualification, Track E).
+    # Historically a preflight row defaulted straight to CLEAN, which let a run be
+    # treated as isolated with zero enforcement. The establishment axis defaults to
+    # NOT_ESTABLISHED; only a genuine attestation (production-valid snapshot, current
+    # source-bound methodology, an allowed-source boundary, a recorded input manifest
+    # and an immutable audit link) transitions it to ESTABLISHED. Canonicalization
+    # requires ESTABLISHED in addition to is_contaminated==CLEAN. "No contamination
+    # recorded yet" is NOT evidence of isolation.
+    establishment_status = Column(
+        String,
+        nullable=False,
+        default="NOT_ESTABLISHED",
+        server_default="NOT_ESTABLISHED",
+    )  # NOT_ESTABLISHED, ESTABLISHED
+    prohibited_sources = Column(JSON)
+    input_manifest = Column(JSON)
+    attesting_actor = Column(String, nullable=True)
+    attested_at = Column(DateTime, nullable=True)
+    audit_ref = Column(String, nullable=True)
     created_at = Column(DateTime, default=datetime.datetime.utcnow)
 
 

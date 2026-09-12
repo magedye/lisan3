@@ -15,6 +15,11 @@ from .domain.services.canonicalization import (
     reopen_accepted_results_for_new_evidence,
 )
 from .domain.services.claim_visibility import ClaimReleasePolicy
+from .domain.services.isolation import (
+    BlindLabIsolationService,
+    IsolationContaminationException,
+    IsolationEstablishmentRejected,
+)
 from .domain.services.knowledge_graph import (
     PROJECTION_REVISION,
     GraphAccessForbidden,
@@ -379,16 +384,16 @@ def start_isolation_preflight(
     if not run:
         raise HTTPException(status_code=404, detail="Run not found")
 
-    db_state = models.IsolationState(
-        id=f"iso_{uuid.uuid4().hex[:8]}",
-        research_run_id=run_id,
-        target_contract=run.target_contract,
-        corpus_snapshot=run.corpus_snapshot,
-        methodology_reference=run.methodology_revision,
-        allowed_sources=["ADMITTED_CANONICAL_QURAN", "SAME_RUN_ARTIFACTS"],
-        is_contaminated="CLEAN",
-    )
-    db.add(db_state)
+    # Fail-closed: a preflight no longer hard-codes CLEAN. It attempts genuine
+    # establishment (production-valid snapshot, current source-bound methodology,
+    # permitted source boundary, recorded manifest + immutable audit). Only a
+    # successful attestation yields establishment_status=ESTABLISHED / CLEAN.
+    try:
+        db_state = BlindLabIsolationService.establish_semantic_isolation(
+            db, run_id, actor="TRUSTED_LOCAL_USER"
+        )
+    except IsolationEstablishmentRejected as exc:
+        raise HTTPException(status_code=409, detail=exc.message) from exc
 
     # Update run stage
     run.current_stage = models.ResearchStage.RESEARCH.value
@@ -476,10 +481,6 @@ def record_observation(
 
 
 # --- Test Endpoint for Isolation Mock ---
-from .domain.services.isolation import (
-    BlindLabIsolationService,
-    IsolationContaminationException,
-)
 
 
 @app.get("/runs/{run_id}/read_semantic_dictionary")
