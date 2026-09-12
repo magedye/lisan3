@@ -455,8 +455,24 @@ def record_observation(
     run = db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
     if run is None:
         raise HTTPException(status_code=404, detail="Run not found")
+    # An observation references either a verse/lexeme-level CorpusOccurrence id or
+    # a word-level StructuralToken word_ref (root research). Both must be scoped to
+    # the run's corpus snapshot; nothing external can be smuggled in.
     occurrence = db.get(models.CorpusOccurrence, artifact.occurrence_ref)
-    if occurrence is None or occurrence.snapshot_id != run.corpus_snapshot:
+    occurrence_valid = (
+        occurrence is not None and occurrence.snapshot_id == run.corpus_snapshot
+    )
+    if not occurrence_valid:
+        token = (
+            db.query(models.StructuralToken)
+            .filter(
+                models.StructuralToken.snapshot_id == run.corpus_snapshot,
+                models.StructuralToken.word_ref == artifact.occurrence_ref,
+            )
+            .first()
+        )
+        occurrence_valid = token is not None
+    if not occurrence_valid:
         raise HTTPException(
             status_code=422,
             detail="Observation occurrence is absent or outside the run corpus",

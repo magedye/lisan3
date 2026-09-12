@@ -33,6 +33,7 @@ def test_journey_3_purity_check(page: Page, e2e_server: dict, monkeypatch):
             methodology_reference=run.methodology_revision,
             allowed_sources=["QURAN_CORPUS"],
             is_contaminated="CLEAN",
+            establishment_status="ESTABLISHED",
         )
         db.add(isolation)
 

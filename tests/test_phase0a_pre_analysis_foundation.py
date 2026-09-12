@@ -114,6 +114,23 @@ def clean_database():
             )
             for index in range(1, 4)
         )
+        # Word-level root-occurrence identity (the governed ROOT_CONCEPT unit).
+        db.add_all(
+            models.StructuralToken(
+                id=f"stok-katb-{index}",
+                snapshot_id=admission.authorized_snapshot_id,
+                word_ref=f"2:{index}:1:1",
+                verse_ref=f"2:{index}",
+                root="كتب",
+                form="N",
+                pos_tag="N",
+                source_id="TEST_STRUCTURAL_FIXTURE",
+                source_version="test",
+                extraction_version="test-fixture-v1",
+                attribution_status="CONFIRMED",
+            )
+            for index in range(1, 4)
+        )
         db.commit()
     yield
     app.dependency_overrides.clear()
@@ -266,7 +283,8 @@ def test_3_structural_uncertainty_is_preserved():
 # --------------------------------------------------------------------------- #
 def test_4_one_unexplained_occurrence_blocks_accepted_root_wide_concept():
     run_id = create_run("كتب", "ROOT_CONCEPT")
-    evidence = [f"observation:{add_observation(run_id, f'occ-{i}')}" for i in range(1, 4)]
+    # Word-level coverage: cite all three confirmed StructuralToken word_refs.
+    evidence = [f"token:2:{i}:1:1" for i in range(1, 4)]
     # Fully covered UNIVERSAL root concept, but one occurrence stays unexplained.
     judgment = client.post(
         f"/runs/{run_id}/judgments",
@@ -301,10 +319,10 @@ def test_4b_confirmed_counterexample_occurrence_blocks_universal_root_concept():
     # an occurrence the concept fails to explain; it must block acceptance and
     # must NOT count toward universal coverage.
     run_id = create_run("كتب", "ROOT_CONCEPT")
-    supporting = [f"observation:{add_observation(run_id, f'occ-{i}')}" for i in (1, 2)]
+    supporting = [f"token:2:{i}:1:1" for i in (1, 2)]
     payload = preferred_root_payload(supporting)
-    # occ-3 is a confirmed eligible occurrence that opposes the concept.
-    payload["counterevidence_refs"] = ["occurrence:occ-3"]
+    # 2:3:1:1 is a confirmed eligible word occurrence that opposes the concept.
+    payload["counterevidence_refs"] = ["token:2:3:1:1"]
     resp = client.post(f"/runs/{run_id}/judgments", json=payload)
     # Coverage is derived from supporting evidence only, so occ-3 is missing ->
     # a universal claim cannot even be PREFERRED on 2-of-3 support.
@@ -315,7 +333,7 @@ def test_4b_confirmed_counterexample_occurrence_blocks_universal_root_concept():
 def test_5_no_majority_threshold_bypasses_universal_presence():
     run_id = create_run("كتب", "ROOT_CONCEPT")
     # Majority coverage (2 of 3 eligible occurrences) must still fail a UNIVERSAL claim.
-    evidence = [f"observation:{add_observation(run_id, f'occ-{i}')}" for i in range(1, 3)]
+    evidence = [f"token:2:{i}:1:1" for i in range(1, 3)]
     response = client.post(
         f"/runs/{run_id}/judgments", json=preferred_root_payload(evidence)
     )

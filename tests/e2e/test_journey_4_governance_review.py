@@ -38,6 +38,7 @@ def test_journey_4_governance_review(page: Page, e2e_server: dict, monkeypatch):
             methodology_reference=run.methodology_revision,
             allowed_sources=["QURAN_CORPUS"],
             is_contaminated="CLEAN",
+            establishment_status="ESTABLISHED",
         )
         db.add_all([run, isolation])
 

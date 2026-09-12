@@ -37,6 +37,7 @@ def test_journey_7_golden_shell_and_real_audit(
                     methodology_reference="v4.0",
                     allowed_sources=["QURAN_CORPUS"],
                     is_contaminated="CLEAN",
+                    establishment_status="ESTABLISHED",
                 ),
                 AuditLog(
                     id="aud_e2e_golden_shell",

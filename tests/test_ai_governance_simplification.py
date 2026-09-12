@@ -116,6 +116,27 @@ def clean_database():
                 ),
             ]
         )
+        # Word-level root-occurrence identity for ROOT_CONCEPT research. The
+        # governed root-occurrence unit is the confirmed StructuralToken word_ref
+        # (from admitted morphology), NOT the verse-level CorpusOccurrence.
+        db.add_all(
+            [
+                models.StructuralToken(
+                    id=f"stok-katb-{index}",
+                    snapshot_id=snapshot_id,
+                    word_ref=f"2:{index}:1:1",
+                    verse_ref=f"2:{index}",
+                    root="كتب",
+                    form="N",
+                    pos_tag="N",
+                    source_id="TEST_STRUCTURAL_FIXTURE",
+                    source_version="test",
+                    extraction_version="test-fixture-v1",
+                    attribution_status="CONFIRMED",
+                )
+                for index in range(1, 4)
+            ]
+        )
         db.commit()
     yield
     app.dependency_overrides.clear()
@@ -303,10 +324,10 @@ def test_missing_or_cross_run_evidence_cannot_be_invented():
 
 def test_strong_root_canonicalization_memory_and_new_evidence_reopen():
     run_id = create_run("كتب", "ROOT_CONCEPT")
-    evidence_refs = [
-        f"observation:{add_observation(run_id, f'occ-{index}')}"
-        for index in range(1, 4)
-    ]
+    # ROOT_CONCEPT coverage is word-level: cite the confirmed StructuralToken
+    # word_refs via the `token:` evidence bridge. A UNIVERSAL root claim requires
+    # every confirmed word occurrence to be supported.
+    evidence_refs = [f"token:2:{index}:1:1" for index in range(1, 4)]
     judgment_response = client.post(
         f"/runs/{run_id}/judgments",
         json=preferred_payload(

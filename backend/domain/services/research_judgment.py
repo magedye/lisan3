@@ -1,11 +1,16 @@
 """Deterministic validation and persistence of AI/user Research Judgments."""
 
 import uuid
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 from sqlalchemy.orm import Session
 
 from backend.domain import models, schemas
+from backend.domain.services.research_coverage import confirmed_word_refs
+
+# Contract types whose governed occurrence unit is the word-level root occurrence
+# (StructuralToken word_ref), not the verse/lexeme-level CorpusOccurrence.
+WORD_LEVEL_CONTRACTS = frozenset({"ROOT_CONCEPT"})
 
 
 @dataclass(frozen=True)
@@ -13,6 +18,9 @@ class EvidenceResolution:
     valid: bool
     reasons: tuple[str, ...]
     occurrence_ids: frozenset[str]
+    # Word-level root occurrence identities (StructuralToken word_refs) resolved
+    # from `token:`/token-referencing-observation evidence for word-level contracts.
+    token_word_refs: frozenset[str] = field(default_factory=frozenset)
 
 
 @dataclass(frozen=True)
@@ -22,11 +30,61 @@ class JudgmentDecision:
     completeness: dict[str, object]
 
 
+def _token_reject_reason(
+    db: Session, run: models.ResearchRun, ref: str, word_ref: str
+) -> str:
+    """Precise reason a word-level token evidence ref is inadmissible.
+
+    Validity is defined as membership in the run's confirmed occurrence set; this
+    helper only explains WHY a non-member failed (wrong snapshot/absent, wrong
+    root, or non-CONFIRMED attribution) so negative controls get exact messages.
+    """
+    rows = (
+        db.query(models.StructuralToken)
+        .filter(
+            models.StructuralToken.snapshot_id == run.corpus_snapshot,
+            models.StructuralToken.word_ref == word_ref,
+        )
+        .all()
+    )
+    if not rows:
+        return f"Evidence reference '{ref}' is absent or outside the run corpus"
+    latest = max(r.extraction_version for r in rows)
+    current = [r for r in rows if r.extraction_version == latest]
+    roots = sorted({str(r.root) for r in current})
+    if run.target_expression not in roots:
+        return (
+            f"Evidence reference '{ref}' resolves to root(s) {roots}, "
+            f"not the run target root '{run.target_expression}'"
+        )
+    if not any(
+        r.root == run.target_expression
+        and r.attribution_status == models.StructuralAttributionStatus.CONFIRMED.value
+        for r in current
+    ):
+        return (
+            f"Evidence reference '{ref}' is not a CONFIRMED structural occurrence "
+            "for the run target root"
+        )
+    return f"Evidence reference '{ref}' is not in the confirmed occurrence set"
+
+
 def resolve_evidence_refs(
     db: Session, run: models.ResearchRun, refs: list[str]
 ) -> EvidenceResolution:
     reasons: list[str] = []
     occurrence_ids: set[str] = set()
+    token_word_refs: set[str] = set()
+    _confirmed_cache: set[str] | None = None
+
+    def confirmed() -> set[str]:
+        nonlocal _confirmed_cache
+        if _confirmed_cache is None:
+            _confirmed_cache = set(
+                confirmed_word_refs(db, run.corpus_snapshot, run.target_expression)
+            )
+        return _confirmed_cache
+
     for ref in refs:
         if ":" not in ref:
             reasons.append(f"Evidence reference '{ref}' has no supported type prefix")
@@ -41,16 +99,26 @@ def resolve_evidence_refs(
                 reasons.append(f"Evidence reference '{ref}' is absent or outside the run corpus")
             else:
                 occurrence_ids.add(str(item.id))
+        elif kind == "token":
+            # Word-level root occurrence bridge: Quranic word_ref -> the run's
+            # confirmed StructuralToken occurrence set (snapshot + root scoped).
+            if entity_id in confirmed():
+                token_word_refs.add(entity_id)
+            else:
+                reasons.append(_token_reject_reason(db, run, ref, entity_id))
         elif kind == "observation":
             item = db.get(models.ObservationArtifact, entity_id)
             if item is None or item.research_run_id != run.id:
                 reasons.append(f"Evidence reference '{ref}' is absent or cross-run")
             else:
                 occurrence = db.get(models.CorpusOccurrence, item.occurrence_ref)
-                if occurrence is None or occurrence.snapshot_id != run.corpus_snapshot:
-                    reasons.append(f"Observation evidence '{ref}' has invalid occurrence lineage")
-                else:
+                if occurrence is not None and occurrence.snapshot_id == run.corpus_snapshot:
                     occurrence_ids.add(str(occurrence.id))
+                elif str(item.occurrence_ref) in confirmed():
+                    # A word-level observation references a confirmed token word_ref.
+                    token_word_refs.add(str(item.occurrence_ref))
+                else:
+                    reasons.append(f"Observation evidence '{ref}' has invalid occurrence lineage")
         elif kind == "hypothesis":
             item = db.get(models.Hypothesis, entity_id)
             if item is None or item.research_run_id != run.id:
@@ -62,7 +130,12 @@ def resolve_evidence_refs(
                 reasons.append(f"Evidence reference '{ref}' is absent or cross-run")
         else:
             reasons.append(f"Evidence reference type '{kind}' is not admissible")
-    return EvidenceResolution(not reasons, tuple(reasons), frozenset(occurrence_ids))
+    return EvidenceResolution(
+        not reasons,
+        tuple(reasons),
+        frozenset(occurrence_ids),
+        frozenset(token_word_refs),
+    )
 
 
 def derive_completeness(
@@ -71,25 +144,54 @@ def derive_completeness(
     scope: str,
     sampling_basis: str | None,
     evidence_occurrence_ids: frozenset[str],
+    evidence_token_word_refs: frozenset[str] = frozenset(),
+    contract_type: str | None = None,
 ) -> dict[str, object]:
-    eligible = (
-        db.query(models.CorpusOccurrence)
-        .filter(
-            models.CorpusOccurrence.snapshot_id == run.corpus_snapshot,
-            models.CorpusOccurrence.expression == run.target_expression,
+    """Host-derive coverage. The occurrence UNIT depends on the contract type:
+
+    * ROOT_CONCEPT (word-level): the eligible set is the root's CONFIRMED
+      StructuralToken word_refs (from admitted QAC morphology). This is the only
+      honest universe for a claim about "every occurrence of a root"; the
+      verse-level CorpusOccurrence store (one row per verse, expression='') can
+      never represent it. Supported = word-level observations + `token:` evidence
+      that land in the eligible set.
+    * All other contracts: the existing verse/lexeme-level CorpusOccurrence set
+      keyed by (snapshot, expression).
+
+    Coverage is never self-certified: it is derived here from persisted rows only.
+    """
+    word_level = contract_type in WORD_LEVEL_CONTRACTS
+    if word_level:
+        eligible_ids = set(
+            confirmed_word_refs(db, run.corpus_snapshot, run.target_expression)
         )
-        .order_by(models.CorpusOccurrence.id)
-        .all()
-    )
-    eligible_ids = {str(item.id) for item in eligible}
-    observed_ids = {
-        str(item.occurrence_ref)
-        for item in db.query(models.ObservationArtifact)
-        .filter(models.ObservationArtifact.research_run_id == run.id)
-        .all()
-        if str(item.occurrence_ref) in eligible_ids
-    }
-    supported_ids = observed_ids | (set(evidence_occurrence_ids) & eligible_ids)
+        observed_ids = {
+            str(item.occurrence_ref)
+            for item in db.query(models.ObservationArtifact)
+            .filter(models.ObservationArtifact.research_run_id == run.id)
+            .all()
+            if str(item.occurrence_ref) in eligible_ids
+        }
+        supported_ids = observed_ids | (set(evidence_token_word_refs) & eligible_ids)
+    else:
+        eligible = (
+            db.query(models.CorpusOccurrence)
+            .filter(
+                models.CorpusOccurrence.snapshot_id == run.corpus_snapshot,
+                models.CorpusOccurrence.expression == run.target_expression,
+            )
+            .order_by(models.CorpusOccurrence.id)
+            .all()
+        )
+        eligible_ids = {str(item.id) for item in eligible}
+        observed_ids = {
+            str(item.occurrence_ref)
+            for item in db.query(models.ObservationArtifact)
+            .filter(models.ObservationArtifact.research_run_id == run.id)
+            .all()
+            if str(item.occurrence_ref) in eligible_ids
+        }
+        supported_ids = observed_ids | (set(evidence_occurrence_ids) & eligible_ids)
     index_complete = bool(eligible_ids)
     if scope == models.ClaimScope.UNIVERSAL.value:
         sufficient = index_complete and supported_ids == eligible_ids
@@ -99,6 +201,7 @@ def derive_completeness(
         sufficient = bool(supported_ids)
     return {
         "claim_scope": scope,
+        "occurrence_unit": "word_ref" if word_level else "occurrence",
         "eligible_occurrence_count": len(eligible_ids),
         "evidenced_occurrence_count": len(supported_ids),
         "index_complete": index_complete,
@@ -143,6 +246,8 @@ def evaluate_judgment(
         judgment.claim_scope.value,
         judgment.sampling_basis,
         supporting.occurrence_ids,
+        supporting.token_word_refs,
+        judgment.contract_type,
     )
     reasons = list(evidence.reasons)
     isolation = (

@@ -34,6 +34,7 @@ def test_journey_6_knowledge_explorer_uses_real_graph_projection(
             methodology_reference=run.methodology_revision,
             allowed_sources=["QURAN_CORPUS"],
             is_contaminated="CLEAN",
+            establishment_status="ESTABLISHED",
         )
         claim = models.SemanticClaim(
             id="claim_e2e_graph",

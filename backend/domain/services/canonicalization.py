@@ -9,7 +9,13 @@ from sqlalchemy.orm import Session
 from backend.domain import models
 from backend.domain.services.corpus.authority import is_production_validated
 from backend.domain.services.methodology_authority import methodology_authority_failures
+from backend.domain.services.research_coverage import confirmed_word_refs
 from backend.domain.services.research_judgment import resolve_evidence_refs
+
+# A server-owned authorized actor must explicitly perform canonicalization
+# (SIMPLIFIED_AI_AUTHORITY_AND_GOVERNANCE_CONTRACT.md, CANONICALIZATION REQUIRES §8).
+# AI/automation actors can never self-authorize ACCEPTED.
+AUTHORIZED_CANONICALIZATION_ACTORS = frozenset({"TRUSTED_LOCAL_OWNER"})
 
 
 @dataclass(frozen=True)
@@ -82,6 +88,13 @@ class CanonicalizationPolicy:
         )
         if isolation is None or isolation.is_contaminated != "CLEAN":
             reasons.append("Source isolation is absent or contaminated")
+        # Fail-closed establishment axis (Track E): CLEAN alone is insufficient —
+        # the run must have been genuinely established under the permitted source
+        # boundary. A NOT_ESTABLISHED row (default) blocks acceptance.
+        if isolation is not None and isolation.establishment_status != "ESTABLISHED":
+            reasons.append(
+                "Source isolation was never genuinely established (NOT_ESTABLISHED)"
+            )
         evidence = resolve_evidence_refs(
             db,
             run,
@@ -94,14 +107,13 @@ class CanonicalizationPolicy:
         # occurrence in the eligible set blocks acceptance (root semantic unity).
         if is_universal_root and claim.counterevidence:
             counter = resolve_evidence_refs(db, run, list(claim.counterevidence))
-            eligible_ids = {
-                str(item.id)
-                for item in db.query(models.CorpusOccurrence).filter(
-                    models.CorpusOccurrence.snapshot_id == run.corpus_snapshot,
-                    models.CorpusOccurrence.expression == run.target_expression,
-                )
-            }
-            if counter.occurrence_ids & eligible_ids:
+            # ROOT_CONCEPT occurrences are word-level (StructuralToken word_refs):
+            # a confirmed word occurrence recorded as counterevidence is one the
+            # concept fails to explain, which blocks universal acceptance.
+            eligible_word_refs = set(
+                confirmed_word_refs(db, run.corpus_snapshot, run.target_expression)
+            )
+            if counter.token_word_refs & eligible_word_refs:
                 reasons.append(
                     "A universal root concept cannot be accepted while a confirmed "
                     "occurrence remains a counterexample (root semantic unity)"
@@ -152,6 +164,11 @@ class CanonicalizationPolicy:
         rationale: str,
         actor: str = "TRUSTED_LOCAL_OWNER",
     ) -> models.SemanticClaim:
+        if actor not in AUTHORIZED_CANONICALIZATION_ACTORS:
+            raise ValueError(
+                f"Actor '{actor}' is not authorized to canonicalize; canonicalization "
+                "is a server-owned trusted-local-owner action"
+            )
         decision = cls.evaluate(db, claim)
         if not decision.accepted:
             raise ValueError("; ".join(decision.reasons))

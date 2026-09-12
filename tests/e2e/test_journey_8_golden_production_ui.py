@@ -33,6 +33,7 @@ def test_journey_8_golden_production_routes_are_rtl_responsive_and_real(
             methodology_reference=run.methodology_revision,
             allowed_sources=["QURAN_CORPUS"],
             is_contaminated="CLEAN",
+            establishment_status="ESTABLISHED",
         )
         claim = models.SemanticClaim(
             id="claim_e2e_ui",
