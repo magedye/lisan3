@@ -1,0 +1,95 @@
+{
+ "schema_version": "1.0.0",
+ "batch_id": "batch07",
+ "artifact_role": "Durable record of the fresh INDEPENDENT read-only semantic checkpoint review of Batch 07. This is review EVIDENCE, not a semantic authority store; the per-root artifacts under artifacts/semantic-campaign/roots/ remain authoritative. It does not rewrite any wave report or the campaign report.",
+ "reviewed_research_checkpoint_sha": "0c21d82f12439f7fd57bc4cdcae0eab31befeaaa",
+ "reviewed_branch": "semantic-campaign-batch07",
+ "reviewed_commit_subject": "docs(campaign): close Batch 07 — V3 verified, ready for fresh independent review",
+ "review_date": "2026-09-12",
+ "review_context": "Fresh independent read-only semantic review in a separate context against the exact checkpoint SHA. Read-only: no VerificationRecord, ledger, or per-root artifact was written by the review.",
+ "review_mode": "READ_ONLY",
+ "contract": "LISAN3_SEMANTIC_RUNTIME_V3_2026_09_06",
+ "checkpoint_verdict": "BATCH_07_SEMANTIC_CHECKPOINT_INDEPENDENTLY_CONFIRMED",
+ "merge_verdict": "BATCH_07_SEMANTIC_CHECKPOINT_MERGE_READY",
+ "material_blocker_count": 0,
+ "custody": {
+  "roots": 120,
+  "canonical_occurrence_identities": 8168,
+  "exact_set": {
+   "missing": 0,
+   "extra": 0,
+   "duplicate": 0
+  }
+ },
+ "result_distribution": {
+  "STRONG": 6,
+  "MODERATE": 96,
+  "WEAK": 0,
+  "UNRESOLVED": 18
+ },
+ "resistance": {
+  "final_resistant_occurrences": 357,
+  "roots_with_resistance": 72,
+  "reconciliations_reported": 167,
+  "failed_reconciliations": 0,
+  "lineage_incomplete": 0
+ },
+ "integrity": {
+  "canonical_contract_errors": 0,
+  "evidence_reference_validation": "CLEAN",
+  "hard_case_controls": "VALID",
+  "rejection_conditions_distinct": 120,
+  "reopen_condition_sets_distinct": 120,
+  "positional_hard_cases": [],
+  "unsupported_passed": [],
+  "unresolved_with_universal": [],
+  "purity_status": "NOT_EVALUATED"
+ },
+ "falsification": {
+  "PASSED": 17,
+  "NOT_RUN": 85,
+  "NOT_REQUIRED": 18
+ },
+ "prior_batch_preservation": {
+  "batches_preserved": "02-06",
+  "prior_root_files_modified": 0,
+  "note": "Only Batch07 artifacts + ledger/status touched since fff83c5; Batch05 corrective roots byte-identical."
+ },
+ "root_verdict_totals": {
+  "VERIFIED_AT_SCOPE": 100,
+  "VERIFIED_NARROWER_SCOPE": 2,
+  "UNRESOLVED": 18,
+  "NOT_VERIFIED": 0,
+  "CORRECTIVE_RESEARCH_REQUIRED": 0
+ },
+ "per_root_verdict_reference": {
+  "navigation_index": "artifacts/semantic-campaign/BATCH_07_INDEPENDENT_REVIEW_INDEX.json",
+  "campaign_verification": "artifacts/semantic-campaign/BATCH_07_V3_VERIFICATION.json",
+  "authoritative_per_root_artifacts": "artifacts/semantic-campaign/roots/",
+  "note": "Per-root independent verdicts are traceable through the navigation index plus the authoritative per-root artifacts. VERIFIED_NARROWER_SCOPE = {SyH, Twf}; UNRESOLVED = the 18 UNRESOLVED-strength roots; all remaining resolved roots = VERIFIED_AT_SCOPE."
+ },
+ "threshold_clearing_roots": [
+  {"root_arabic": "ع ص و", "root_buckwalter": "ESw", "result_strength": "STRONG", "claim_scope": "REPRESENTATIVE", "claim_scope_kind": "LEXICALIZED_CLASS", "falsification_status": "PASSED", "independent_verdict": "VERIFIED_AT_SCOPE", "artifact": "artifacts/semantic-campaign/roots/E_53_w.json"},
+  {"root_arabic": "د ن و", "root_buckwalter": "dnw", "result_strength": "STRONG", "claim_scope": "UNIVERSAL", "claim_scope_kind": "ROOT_GENERALIZATION", "falsification_status": "PASSED", "independent_verdict": "VERIFIED_AT_SCOPE", "artifact": "artifacts/semantic-campaign/roots/dnw.json"},
+  {"root_arabic": "ف ل ح", "root_buckwalter": "flH", "result_strength": "STRONG", "claim_scope": "REPRESENTATIVE", "claim_scope_kind": "DERIVATIONAL_FAMILY", "falsification_status": "PASSED", "independent_verdict": "VERIFIED_AT_SCOPE", "artifact": "artifacts/semantic-campaign/roots/fl_48_.json"},
+  {"root_arabic": "ف و ه", "root_buckwalter": "fwh", "result_strength": "STRONG", "claim_scope": "UNIVERSAL", "claim_scope_kind": "ROOT_GENERALIZATION", "falsification_status": "PASSED", "independent_verdict": "VERIFIED_AT_SCOPE", "artifact": "artifacts/semantic-campaign/roots/fwh.json"},
+  {"root_arabic": "غ ل م", "root_buckwalter": "glm", "result_strength": "STRONG", "claim_scope": "REPRESENTATIVE", "claim_scope_kind": "LEXICALIZED_CLASS", "falsification_status": "PASSED", "independent_verdict": "VERIFIED_AT_SCOPE", "artifact": "artifacts/semantic-campaign/roots/glm.json"}
+ ],
+ "narrower_scope_findings": [
+  {"root_arabic": "ص ي ح", "root_buckwalter": "SyH", "result_strength": "STRONG", "persisted_claim_scope": "UNIVERSAL", "persisted_claim_scope_kind": "ROOT_GENERALIZATION", "independent_verdict": "VERIFIED_NARROWER_SCOPE", "required_future_correction": "Re-scope from UNIVERSAL / ROOT_GENERALIZATION toward the evidence-supported lexicalized-class scope, then independently re-verify. NOT corrected in this task. Artifacts acceptable for research-checkpoint merge but NOT independently verified at the broader persisted scope for canonical adoption.", "adoption_disposition": "PENDING"},
+  {"root_arabic": "ط و ف", "root_buckwalter": "Twf", "result_strength": "MODERATE", "persisted_claim_scope": "REPRESENTATIVE", "persisted_claim_scope_kind": "DERIVATIONAL_FAMILY", "independent_verdict": "VERIFIED_NARROWER_SCOPE", "note": "MODERATE, therefore below the STRONG adoption minimum regardless of scope. Optional future scope precision.", "adoption_disposition": "PENDING"}
+ ],
+ "non_blocking_findings": [
+  "SyH narrower-scope requirement (re-scope + fresh independent re-verification).",
+  "Twf narrower-scope requirement (optional scope precision; MODERATE anyway).",
+  "Reconciliation-count traceability: reported 167 lacks a defined metric-generation trace.",
+  "Conservative lineage records carry null reconciliation_rationale where rationale actually resides in disposition notes.",
+  "One noncanonical historical disposition value on ftr 5:19:9:1.",
+  "Stale krh prose says 'STRONG for the family' while the persisted result is MODERATE.",
+  "Minor wording concerns."
+ ],
+ "non_blocking_disposition": "Recorded as post-merge corrective/representation debt. NOT repaired inside this checkpoint. See PROJECT_STATE.md deferred follow-up queue.",
+ "canonicalization_note": "Independent checkpoint acceptance (INDEPENDENTLY_CONFIRMED + MERGE_READY) does NOT imply canonical adoption. Per SIMPLIFIED_AI_AUTHORITY_AND_GOVERNANCE_CONTRACT.md, canonicalization to canonical_state=ACCEPTED is a single server-owned decision performed by a server-owned authorized actor (TRUSTED_LOCAL_OWNER via CanonicalizationPolicy.canonicalize), gated on a persisted INDEPENDENT VerificationRecord for the current claim revision. This read-only review wrote no VerificationRecord, the AI endpoint has no transition to ACCEPTED, and the campaign CLI exposes no canonicalize/adopt command. Therefore canonical adoption is NOT performed by this lifecycle task.",
+ "lifecycle_state": "BATCH_07_MERGED_AND_PUSHED_OWNER_CANONICAL_ACCEPTANCE_PENDING",
+ "owner_canonical_acceptance": "OWNER_CANONICAL_ACCEPTANCE_REQUIRED"
+}

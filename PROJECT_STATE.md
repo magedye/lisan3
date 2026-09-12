@@ -1170,8 +1170,73 @@ push, canonicalize, or start Batch 08.
   `VERIFIED` component of the adoption threshold must come from a separate,
   fresh, read-only independent review — not self-granted here.
 
+## Batch 07 Independent Review, Merge & Owner-Acceptance Checkpoint (2026-09-12)
+
+- Fresh independent read-only semantic review of the exact Batch 07 research
+  checkpoint `0c21d82f12439f7fd57bc4cdcae0eab31befeaaa`
+  (branch `semantic-campaign-batch07`) returned
+  `BATCH_07_SEMANTIC_CHECKPOINT_INDEPENDENTLY_CONFIRMED` and
+  `BATCH_07_SEMANTIC_CHECKPOINT_MERGE_READY`, **0 material blockers**. The
+  review was read-only: it wrote no VerificationRecord, ledger, or root artifact.
+- Independently reproduced custody: 120 roots / 8,168 occurrences, exact-set 0
+  missing / 0 extra / 0 duplicate; distribution 6 STRONG / 96 MODERATE / 0 WEAK /
+  18 UNRESOLVED; 357 resistant across 72 roots; canonical contract errors 0;
+  evidence-reference validation clean; 120/120 distinct rejection + reopen
+  controls; purity NOT_EVALUATED; Batch 02–06 preserved.
+- Per-root independent verdicts: `VERIFIED_AT_SCOPE` 100,
+  `VERIFIED_NARROWER_SCOPE` 2 (`SyH`, `Twf`), `UNRESOLVED` 18,
+  `NOT_VERIFIED` 0, `CORRECTIVE_RESEARCH_REQUIRED` 0.
+- Review evidence persisted as ADDITIONAL records (no history rewrite):
+  `artifacts/semantic-campaign/BATCH_07_INDEPENDENT_REVIEW_RESULT.json` and
+  the `independent_review` block in
+  `artifacts/semantic-campaign/CAMPAIGN_STATUS.json`. The reviewed research SHA
+  `0c21d82` is preserved as the checkpoint identity; the review record and this
+  state entry are a later state-only closure commit that adds review/governance
+  metadata only and does not alter any semantic conclusion.
+- Merge: the closure commit (review evidence + state) was fast-forwarded into
+  local `main` under the latest explicit owner instruction (research-checkpoint
+  publication). Pure `--ff-only`; no squash, rebase, or merge commit; no history
+  rewrite. Local `main` then normal-pushed to `origin/main` (fast-forward-safe;
+  no force). Git is authoritative for the exact merged/pushed SHA.
+- **Canonical adoption NOT performed — `OWNER_CANONICAL_ACCEPTANCE_REQUIRED`.**
+  Five roots clear every evidence + independent-verification component of the
+  adoption threshold: `ESw` (ع ص و), `dnw` (د ن و), `flH` (ف ل ح), `fwh` (ف و ه),
+  `glm` (غ ل م) — each STRONG, exact-set COMPLETE, falsification PASSED,
+  `VERIFIED_AT_SCOPE`. Governance (SIMPLIFIED_AI_AUTHORITY contract
+  "CANONICALIZATION REQUIRES" + `backend/domain/services/canonicalization.py`)
+  reserves `canonical_state=ACCEPTED` for a server-owned authorized actor
+  (`TRUSTED_LOCAL_OWNER` via `CanonicalizationPolicy.canonicalize`), gated on a
+  persisted **INDEPENDENT VerificationRecord** for the current revision. The AI
+  endpoint has no ACCEPTED transition; the campaign CLI has no canonicalize
+  command; the read-only review wrote no VerificationRecord. The owner's standing
+  "auto-adopt after independent review" authorization expresses intent but cannot
+  satisfy the repository's owner/server-owned transition when executed by the AI
+  implementation agent. All 248 processed roots (incl. the 5 candidates) remain
+  `canonical_authorization=PENDING`.
+- Explicit non-adoptions held PENDING: `SyH` (STRONG but scope-overclaimed:
+  re-scope UNIVERSAL/ROOT_GENERALIZATION → evidence-supported lexicalized class,
+  then re-verify — not corrected here); `Twf` (MODERATE, below STRONG minimum);
+  all 95 other MODERATE and all 18 UNRESOLVED roots.
+- `BATCH_08_NOT_AUTHORIZED`: no Batch 08 branch, manifest, packets, or selection.
+
+## Deferred Follow-Up Queue (post-merge; do NOT mix into Batch 07 adoption)
+
+- Semantic scope: `SyH` scope correction + fresh independent re-verification;
+  optional `Twf` scope precision.
+- Provenance/reporting: define/fix the "167 reconciliations" metric generation;
+  normalize the noncanonical historical disposition on `ftr 5:19:9:1`; fix stale
+  `krh` prose ("STRONG for the family" while persisted result is MODERATE);
+  null `reconciliation_rationale` on conservative lineage records where the
+  rationale lives in disposition notes; minor wording concerns.
+- Older Batch 06 representation debt: keep separately tracked (unchanged).
+
 ## Current Exact Next Action
 
-Stop. Run a fresh, independent, read-only semantic review of the Batch 07
-campaign-closure commit (separate context). Do not merge, push, adopt,
-canonicalize, or start Batch 08 before that review returns per-root verification.
+Batch 07 research checkpoint is INDEPENDENTLY CONFIRMED, merged to local `main`,
+and pushed. Canonical adoption of the five eligible roots
+(`ESw`, `dnw`, `flH`, `fwh`, `glm`) awaits an explicit owner/server-owned
+canonicalization transition: a `TRUSTED_LOCAL_OWNER` actor must record an
+INDEPENDENT verification for the current revision and then run
+`CanonicalizationPolicy.canonicalize` per eligible root. Do NOT self-grant
+ACCEPTED, do NOT upgrade `SyH`/`Twf`, do NOT adopt MODERATE/UNRESOLVED roots,
+and do NOT start Batch 08.

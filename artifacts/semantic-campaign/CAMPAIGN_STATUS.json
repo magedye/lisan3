@@ -1,7 +1,7 @@
 {
   "campaign_id": "lisan-root-calibration",
-  "status": "BATCH_07_READY_FOR_FRESH_INDEPENDENT_SEMANTIC_REVIEW",
-  "verdict": "BATCH_07_READY_FOR_FRESH_INDEPENDENT_SEMANTIC_REVIEW",
+  "status": "BATCH_07_INDEPENDENTLY_CONFIRMED_MERGE_READY_OWNER_CANONICAL_ACCEPTANCE_PENDING",
+  "verdict": "BATCH_07_INDEPENDENTLY_CONFIRMED_MERGE_READY_OWNER_CANONICAL_ACCEPTANCE_PENDING",
   "produced_at": "2026-09-11",
   "reads_handoff": "artifacts/semantic-campaign/PHASE_1_HANDOFF.json",
   "supersedes_prior_status": "BLOCKED_PENDING_QAC_MORPHOLOGY_ADMISSION",
@@ -128,7 +128,7 @@
     "independently_reviewed": false,
     "canonicalized": false
   },
-  "resume_instruction": "Batch 07 research complete (120/120) and V3-verified. Run a FRESH independent read-only semantic review (separate context). Do NOT self-grant VERIFIED/ACCEPTED. No merge/push/adoption/Batch 08 before that review.",
+  "resume_instruction": "Batch 07 research complete (120/120), V3-verified, and INDEPENDENTLY CONFIRMED + MERGE_READY at 0c21d82 (read-only review, 0 material blockers). Research checkpoint merged to local main and pushed. Canonical adoption NOT performed: OWNER_CANONICAL_ACCEPTANCE_REQUIRED — a server-owned authorized actor (TRUSTED_LOCAL_OWNER) must perform CanonicalizationPolicy.canonicalize per eligible root, which first requires a persisted INDEPENDENT VerificationRecord for the current revision. All roots remain PENDING. Do NOT self-grant ACCEPTED. Do NOT start Batch 08 (BATCH_08_NOT_AUTHORIZED).",
   "batch06_corrective_revision": {
     "revision_id": "BATCH_06_CORRECTIVE_REVISION_2026_09_11",
     "targets": [
@@ -270,9 +270,31 @@
     "purity": "NOT_EVALUATED",
     "report": "docs/LISAN3_BATCH_07_SEMANTIC_CAMPAIGN_REPORT.md",
     "review_index": "artifacts/semantic-campaign/BATCH_07_INDEPENDENT_REVIEW_INDEX.json",
+    "review_result": "artifacts/semantic-campaign/BATCH_07_INDEPENDENT_REVIEW_RESULT.json",
     "v3_verification": "artifacts/semantic-campaign/BATCH_07_V3_VERIFICATION.json",
-    "independently_reviewed": false,
+    "independently_reviewed": true,
+    "independent_review": {
+      "reviewed_research_checkpoint_sha": "0c21d82f12439f7fd57bc4cdcae0eab31befeaaa",
+      "review_date": "2026-09-12",
+      "review_mode": "READ_ONLY",
+      "checkpoint_verdict": "BATCH_07_SEMANTIC_CHECKPOINT_INDEPENDENTLY_CONFIRMED",
+      "merge_verdict": "BATCH_07_SEMANTIC_CHECKPOINT_MERGE_READY",
+      "material_blocker_count": 0,
+      "root_verdict_totals": {
+        "VERIFIED_AT_SCOPE": 100,
+        "VERIFIED_NARROWER_SCOPE": 2,
+        "UNRESOLVED": 18,
+        "NOT_VERIFIED": 0,
+        "CORRECTIVE_RESEARCH_REQUIRED": 0
+      },
+      "threshold_clearing_roots": ["ESw", "dnw", "flH", "fwh", "glm"],
+      "narrower_scope_roots": ["SyH", "Twf"],
+      "record": "artifacts/semantic-campaign/BATCH_07_INDEPENDENT_REVIEW_RESULT.json"
+    },
     "canonicalized": false,
+    "canonical_acceptance": "OWNER_CANONICAL_ACCEPTANCE_REQUIRED",
+    "canonicalization_note": "Independent checkpoint acceptance does not imply canonical adoption. canonical_state=ACCEPTED is reserved for a server-owned authorized actor (TRUSTED_LOCAL_OWNER) via CanonicalizationPolicy.canonicalize, gated on a persisted INDEPENDENT VerificationRecord for the current revision; the AI endpoint has no ACCEPTED transition and the campaign CLI exposes no canonicalize command. All 248 processed roots (incl. the 5 threshold-clearing Batch 07 roots and SyH) remain canonical_authorization=PENDING.",
+    "merge_push_authority": "Git is authoritative for merge/push of this checkpoint. The Batch-07 lifecycle-closure task fast-forward-merges this closure commit into local main and normal-pushes origin/main when fast-forward-safe. No force push; no history rewrite.",
     "merged": false,
     "pushed": false
   }
