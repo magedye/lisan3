@@ -80,6 +80,33 @@ State context only. Canonical repository contracts and runtime evidence remain a
   Batch 07 initially), then owner decision bound to exact `claim_id`/`revision_id`.
   `BATCH_08_NOT_AUTHORIZED`.
 
+## Five-Root Governed Requalification — Fresh Independent Review (Stage B) (2026-09-13)
+
+- Producer checkpoint reviewed: `de338810159ebbb3a5ffacc4d2d3551b7a75f95d`. A fresh Sol xhigh
+  context recorded all five verdicts before opening Batch 07, then performed the historical
+  comparison. The frozen pre-comparison verdict artifact SHA-256 is
+  `9a1012e1973f047c7a2d44ec3d4feddc2faabb171c4711170e9c855e5601c754`.
+- Exact reviewed revisions and results:
+  - ESw `jud_9506cecf@1`: `VERIFIED_AT_SCOPE`; `INDEPENDENT_CONVERGENCE`.
+  - dnw `jud_6733070a@1`: `CORRECTIVE_RESEARCH_REQUIRED`; `NEW_CLAIM_NARROWER`.
+  - flH `jud_50b6a890@1`: `CORRECTIVE_RESEARCH_REQUIRED`; `PARTIAL_CONVERGENCE`.
+  - fwh `jud_303cd726@1`: `VERIFIED_AT_SCOPE`; `NEW_CLAIM_NARROWER`.
+  - glm `jud_d51f1e74@1`: `VERIFIED_AT_SCOPE`; `PARTIAL_CONVERGENCE`.
+- Authoritative `lisanapp.db` SHA-256 before and after review:
+  `34dcc0a2a2fb3ae8c3774b681545459dfebd36df8c58a181d86c683e6c6eae68` (byte-identical).
+  Governed counts remain 5 SemanticClaims, 5 runs, 211 observations, 0 VerificationRecords,
+  0 ACCEPTED, and 0 AI execution records. All claims remain unchanged and non-canonical.
+- Next-action split: ESw/fwh/glm = `OWNER_DECISION_PENDING`; dnw/flH =
+  `CORRECTIVE_RESEARCH_REQUIRED`. The exact `dnw@1` and `flH@1` revisions are frozen
+  reviewed-but-not-verified history and MUST NOT receive a VerificationRecord or canonicalization.
+- Stage B evidence:
+  `docs/evidence/requalification/five_root_fresh_independent_verdicts.json`,
+  `docs/LISAN3_FIVE_ROOT_FRESH_INDEPENDENT_REVIEW.md`, and
+  `docs/evidence/requalification/five_root_owner_decision_package.json`. Historical Batch 07
+  root artifacts remain byte-identical. `BATCH_08_NOT_AUTHORIZED`.
+- Status: `FIVE_ROOT_STAGE_B_INDEPENDENT_REVIEW_PERSISTED`. This is evidence custody only;
+  no owner decision, VerificationRecord, canonicalization, merge, or release is implied.
+
 ## Repository
 
 - Root: `D:\APP\tafseer\lisanapp3`

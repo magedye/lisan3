@@ -1,0 +1,259 @@
+{
+  "artifact": "five_root_fresh_independent_verdicts",
+  "review_stage": "STAGE_B_FRESH_INDEPENDENT_SEMANTIC_REVIEW",
+  "review_date": "2026-09-13",
+  "candidate": {
+    "branch": "five-root-governed-requalification",
+    "head": "de338810159ebbb3a5ffacc4d2d3551b7a75f95d",
+    "authoritative_database": "lisanapp.db",
+    "authoritative_database_sha256_before_review": "34dcc0a2a2fb3ae8c3774b681545459dfebd36df8c58a181d86c683e6c6eae68",
+    "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+    "canonical_text_sha256": "ac0724796cbbda0f4801470fbbd11d0f3c5802067bae0493466d0128b0c667af",
+    "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+    "methodology_source_sha256": "01784170cac4e715c1477cb6a04a2c34b21c4bdb91705aa1eb6b2a896efcedbd"
+  },
+  "independence": {
+    "batch_07_artifacts_opened_before_freeze": false,
+    "batch_07_report_opened_before_freeze": false,
+    "historical_verdicts_opened_before_freeze": false,
+    "historical_owner_decisions_opened_before_freeze": false,
+    "external_lexica_dictionaries_tafsir_translations_or_web_used": false,
+    "occurrence_source": "Read-only join of CONFIRMED structural_tokens to canonical Tanzil corpus_occurrences in lisanapp.db",
+    "every_occurrence_inspected": true,
+    "live_read_endpoints": [
+      "GET /judgments/{claim_id}",
+      "GET /runs/{run_id}/workspace",
+      "GET /judgments/{claim_id}/provenance",
+      "GET /runs/{run_id}/manifest"
+    ]
+  },
+  "cross_claim_runtime_findings": {
+    "live_endpoint_status": "ALL_20_REQUESTS_HTTP_200",
+    "occurrence_populations_match_structural_manifest": true,
+    "observation_sets_equal_confirmed_occurrence_sets": true,
+    "evidence_references_resolve_to_same_snapshot_and_target_root": true,
+    "isolation_attestations": "All five runs persist ESTABLISHED + CLEAN with input_manifest, attesting_actor, attested_at, and audit_ref.",
+    "ai_execution_trace_limitation": "All five runs have zero ai_execution_records. Producer execution inputs and tools therefore cannot be reconstructed independently from the DB, although the persisted isolation attestations and current claim content can be inspected.",
+    "scope_kind_persistence_limitation": "claim_scope_kind appears in five_root_produced_claims.json but is absent from semantic_claims and GET /judgments/{claim_id}; it is a sidecar classification, not a DB-native claim field.",
+    "verification_records_created": 0
+  },
+  "verdicts": [
+    {
+      "root": "ESw",
+      "root_arabic": "ع ص و",
+      "claim_id": "jud_9506cecf",
+      "revision_id": 1,
+      "run_id": "run_9ee2ed12",
+      "claim_content_sha256": "70787c1eb461badb8a20546cbdb13c6b1e1474f2b60af2997994e76fffb19ddb",
+      "claim_scope": "REPRESENTATIVE",
+      "claim_scope_kind_sidecar": "LEXICALIZED_CLASS",
+      "result_strength": "STRONG",
+      "verdict": "VERIFIED_AT_SCOPE",
+      "rationale": "All 12 confirmed occurrences are nominal عَصَا/عِصِيّ and the same concrete held implement survives every cast, strike, leaning, and foliage-beating frame. 20:18 directly supplies ordinary handling and use; 20:66 and 26:44 distinguish the rigid items from حبال and disprove a Moses-only or inherently miraculous nucleus. Transformation, swallowing, sea-splitting, and water-emergence are predicates or narrative effects, not root content. The claim correctly refuses a productive whole-root universal and is strong only for the attested lexicalized class.",
+      "occurrence_review": {
+        "eligible": 12,
+        "inspected": 12,
+        "word_ref_set_sha256": "c3c96de1c2929b352adf3ef7bd5f838b93feb4355aa0c40e9f913437d10b9688",
+        "forms": {"N": 12},
+        "decisive_support": ["20:18:3:1", "20:66:6:2", "26:44:3:2"],
+        "hard_cases_checked": ["20:66:6:2", "26:44:3:2", "26:63:6:2", "20:18:3:1"],
+        "counterevidence_result": "No occurrence defeats the concrete staff/rod class; miraculous effects remain compositionally external."
+      },
+      "independent_research_questions": {
+        "q1_contribution": "A concrete rigid hand-held rod/staff in the one attested noun paradigm.",
+        "q2_one_or_multiple": "One lexical nucleus across singular/plural and possessive inflection.",
+        "q3_challenging": "The magicians' plural staffs and the strike-to-effect verses; both retain the same object while the construction supplies the event.",
+        "q4_lexicalized": "Yes; every occurrence is nominal and no productive derivation is present.",
+        "q5_family_narrower": "The evidence warrants only the lexicalized noun class, not a productive root generalization.",
+        "q6_tempting_feature": "Miracle, agency, and Moses-specificity are tempting contextual additions and are excluded.",
+        "q7_falsifier": "A confirmed ع ص و occurrence that is not this physical object or a non-nominal derivation incompatible with it.",
+        "q8_reopen": "Reopen upon a new confirmed non-nominal or non-staff occurrence, or a changed structural root assignment."
+      },
+      "diagnostics": {
+        "DICTIONARY_FIRST": "NOT_EVALUATED_FOR_PRODUCER_TRACE; NO_CONTENT_LEVEL_HARD_VIOLATION_FOUND",
+        "CONTEXTUAL_LEAKAGE": "EVALUATED_CLEAN",
+        "HERITAGE_BIAS": "NOT_EVALUATED_FOR_PRODUCER_TRACE; NO_CONTENT_LEVEL_HARD_VIOLATION_FOUND",
+        "TAFSIR_CONTAMINATION": "NOT_EVALUATED_FOR_PRODUCER_TRACE; NO_CONTENT_LEVEL_HARD_VIOLATION_FOUND",
+        "FORCED_UNIFICATION": "EVALUATED_CLEAN",
+        "GENERIC_OVEREXTRACTION": "EVALUATED_CLEAN",
+        "LETTER_SEMANTICS_OVERRELIANCE": "EVALUATED_CLEAN",
+        "CIRCULAR_CONFIRMATION": "EVALUATED_CLEAN"
+      },
+      "precise_narrowed_scope_or_correction": null
+    },
+    {
+      "root": "dnw",
+      "root_arabic": "د ن و",
+      "claim_id": "jud_6733070a",
+      "revision_id": 1,
+      "run_id": "run_54946c68",
+      "claim_content_sha256": "f19464de076109f092b1497ea1401ee40ac7e25573ecc21fb41bfc04da9c0c85",
+      "claim_scope": "REPRESENTATIVE",
+      "claim_scope_kind_sidecar": "ROOT_GENERALIZATION",
+      "result_strength": "MODERATE",
+      "verdict": "CORRECTIVE_RESEARCH_REQUIRED",
+      "rationale": "The Quran-internal evidence independently supports a MODERATE/REPRESENTATIVE proximity-lowness nucleus: دنا/أدنى in 53:8-9, الدنيا opposed to القصوى at 8:42, دانية in the reachable fruit/shade frames, and scalar أدنى opposed to أكبر/أكثر or followed by a quantity. The dominant الدنيا class and أدنى+أن frames require the stated lexicalization/construction boundaries. However, the exact persisted revision introduces an alternative 'homophonous baseness root d-n-'' in its semantic boundary, strongest counterexample, strongest competitor, and reopen conditions while explicitly admitting that this alternative is unverifiable from the packet. No such alternate root exists in the admitted structural population and no Quran-internal evidence reference supports its asserted meaning. That prohibited model-prior/external hypothesis content contradicts the run's CLEAN isolation attestation and prevents verification of this exact revision even though its main nucleus is salvageable.",
+      "occurrence_review": {
+        "eligible": 133,
+        "inspected": 133,
+        "word_ref_set_sha256": "071b60f7c750c7639e026fa2abec5eca42561c0fa7145fb57d54cc83ac7f2f76",
+        "forms": {"ADJ": 76, "N": 54, "T": 1, "V": 2},
+        "decisive_support": ["53:8:2:1", "53:9:5:1", "8:42:4:2", "55:54:9:1", "69:23:2:1", "76:14:1:2", "32:21:4:2", "58:7:26:1", "73:20:6:1"],
+        "hard_cases_checked": ["2:61:27:1", "4:3:26:1", "2:282:93:2", "5:108:2:1", "33:51:17:1", "33:59:13:1", "47:36:3:2", "57:20:4:2"],
+        "counterevidence_result": "2:61 supplies a value-scale pressure case; أدنى+أن is constructional; الدنيا is heavily lexicalized. These narrow strength/scope but do not independently defeat proximity-lowness."
+      },
+      "independent_research_questions": {
+        "q1_contribution": "A proximity relation, spatially near/low/reachable and, through the elative, the lesser point on a supported scale.",
+        "q2_one_or_multiple": "One productive nucleus is supported, with الدنيا retained as a lexicalized class whose clause-level value is not freshly composed from the root.",
+        "q3_challenging": "2:61, the five أدنى+أن frames, and the large الدنيا population are the decisive pressure cases.",
+        "q4_lexicalized": "Yes; الدنيا is a dominant lexicalized class internally identified by الحياة collocation and الآخرة contrast.",
+        "q5_family_narrower": "The productive verb/participle/elative minority licenses only a representative root generalization; the lexicalized class must remain separately visible.",
+        "q6_tempting_feature": "World, transience, deception, moral inferiority, and likelihood must not be loaded into the root when predicates, collocation, contrast, or أن-construction supply them.",
+        "q7_falsifier": "A confirmed productive occurrence whose stable spatial/scalar frame excludes proximity/lowness, or failure of the internal bridges between productive elatives and الدنيا.",
+        "q8_reopen": "Reopen on a changed admitted structural assignment, a genuinely incompatible occurrence, or formal separation of the lexicalized الدنيا class. Do not import an unevidenced alternate-root meaning."
+      },
+      "diagnostics": {
+        "DICTIONARY_FIRST": "FLAGGED_HARD_SOURCE_BOUNDARY: packet-unverifiable alternate root and meaning entered the persisted claim",
+        "CONTEXTUAL_LEAKAGE": "FLAGGED_MATERIAL_UNRESOLVED_SOURCE_LINEAGE",
+        "HERITAGE_BIAS": "NOT_EVALUATED_FOR_PRODUCER_TRACE",
+        "TAFSIR_CONTAMINATION": "NOT_EVALUATED_FOR_PRODUCER_TRACE",
+        "FORCED_UNIFICATION": "EVALUATED_CLEAN_AFTER_REPRESENTATIVE_SCOPE_AND_LEXICALIZATION_BOUNDARY",
+        "GENERIC_OVEREXTRACTION": "EVALUATED_CLEAN_FOR_THE_SALVAGEABLE_PROXIMITY_NUCLEUS",
+        "LETTER_SEMANTICS_OVERRELIANCE": "EVALUATED_CLEAN",
+        "CIRCULAR_CONFIRMATION": "FLAGGED_FOR_THE_UNEVIDENCED_ALTERNATE_ROOT_BRANCH"
+      },
+      "precise_narrowed_scope_or_correction": "Create a new clean revision/run retaining at most the MODERATE/REPRESENTATIVE proximity-lowness root generalization and the explicit الدنيا / أدنى+أن layer boundaries. Remove the unevidenced homophonous-baseness-root assertion from every field unless a future admitted Quran-internal artifact establishes it; rebuild competitor, counterexample, falsification, and reopen logic only from resolvable Quran-internal evidence, re-attest isolation, and record the actual AI execution trace."
+    },
+    {
+      "root": "flH",
+      "root_arabic": "ف ل ح",
+      "claim_id": "jud_50b6a890",
+      "revision_id": 1,
+      "run_id": "run_43ac7e13",
+      "claim_content_sha256": "7bf79f97f370fb943aaf3664b6d6d18b7ff1cafba728110d22a17796ed96296e",
+      "claim_scope": "REPRESENTATIVE",
+      "claim_scope_kind_sidecar": "DERIVATIONAL_FAMILY",
+      "result_strength": "MODERATE",
+      "verdict": "CORRECTIVE_RESEARCH_REQUIRED",
+      "rationale": "All 40 confirmed occurrences belong to Form IV, and the Quran-internal distribution supports a thin family-level predicate of coming out favorably/attaining the relevant successful outcome. 20:64 and 20:69 disprove an inherently eschatological or morally positive nucleus, while negated, purposive, and participial frames preserve the thin outcome relation. The exact persisted revision nevertheless expressly appeals to 'the concrete/agricultural sense a dictionary would list' and repeatedly injects unattested till/cleave/split-soil/plowman semantics into its boundary, rejection condition, failure consequence, and reopen conditions. That is actual prohibited external semantic content inside an internally isolated Research Judgment. It contradicts the CLEAN attestation and makes the exact revision ineligible for verification; the Quran-internal Form-IV finding can be salvaged only in a fresh corrected revision.",
+      "occurrence_review": {
+        "eligible": 40,
+        "inspected": 40,
+        "word_ref_set_sha256": "674ecee0235b3752df90ea588b045d71dc735b0cd494f4e487e20c2bf2602450",
+        "forms": {"N(IV)": 13, "V(IV)": 27},
+        "decisive_support": ["20:64:7:1", "20:69:13:1", "18:20:11:1", "23:1:2:1", "7:8:9:2", "10:17:13:1"],
+        "hard_cases_checked": ["20:64:7:1", "20:69:13:1", "18:20:11:1", "87:14:2:1", "91:9:2:1", "23:102:6:2", "7:8:9:2"],
+        "counterevidence_result": "Worldly contest, craft, and coercion cases defeat a salvation-only competitor but confirm the thin successful-outcome predicate. No admitted occurrence supplies the external agricultural branch."
+      },
+      "independent_research_questions": {
+        "q1_contribution": "Within the attested Form-IV family, attaining or being the party that attains the contextually relevant favorable outcome.",
+        "q2_one_or_multiple": "One Quran-attested Form-IV nucleus; no second Quranic class is present in the admitted population.",
+        "q3_challenging": "20:64, 20:69, and 18:20 strip away salvation-only and moralized readings while retaining the thin outcome predicate.",
+        "q4_lexicalized": "The participial formula is recurrent, but the finite verb remains productive across assertion, negation, and purposive frames; DERIVATIONAL_FAMILY is the honest sidecar classification.",
+        "q5_family_narrower": "Yes; all 40 occurrences are Form IV, so root-versus-form contribution cannot be separated and no whole-root universal is licensed.",
+        "q6_tempting_feature": "Salvation, piety, moral worth, and eschatological destination are supplied by subjects, complements, and discourse, not by the thin family predicate.",
+        "q7_falsifier": "A current Form-IV occurrence that cannot sustain the thin favorable-outcome relation. A hypothetical external non-Quranic sense is not an admissible falsifier.",
+        "q8_reopen": "Reopen if the admitted Quran structural population changes or a current token defeats the thin family predicate; do not preload an unattested external semantic branch."
+      },
+      "diagnostics": {
+        "DICTIONARY_FIRST": "FLAGGED_HARD_SOURCE_BOUNDARY: the persisted claim explicitly invokes a dictionary and external agricultural meanings",
+        "CONTEXTUAL_LEAKAGE": "FLAGGED_HARD: material boundary and falsification content falls outside the admitted Quran population",
+        "HERITAGE_BIAS": "NOT_EVALUATED_FOR_PRODUCER_TRACE",
+        "TAFSIR_CONTAMINATION": "NOT_EVALUATED_FOR_PRODUCER_TRACE",
+        "FORCED_UNIFICATION": "EVALUATED_CLEAN_FOR_THE_QURAN_ATTESTED_FORM_IV_FAMILY",
+        "GENERIC_OVEREXTRACTION": "EVALUATED_CLEAN_AT_MODERATE_DERIVATIONAL_FAMILY_SCOPE",
+        "LETTER_SEMANTICS_OVERRELIANCE": "EVALUATED_CLEAN",
+        "CIRCULAR_CONFIRMATION": "EVALUATED_CLEAN_FOR_THE_SALVAGEABLE_FORM_IV_NUCLEUS"
+      },
+      "precise_narrowed_scope_or_correction": "Create a new clean revision/run limited to the Quran-attested Form-IV derivational family. Remove every dictionary/agricultural/till/cleave/plow assertion and rerun the rejection condition, competitor, counterexample, falsification, and reopen logic using only the 40 resolvable Quran occurrences. Re-attest isolation and record the actual AI execution trace."
+    },
+    {
+      "root": "fwh",
+      "root_arabic": "ف و ه",
+      "claim_id": "jud_303cd726",
+      "revision_id": 1,
+      "run_id": "run_78a439c3",
+      "claim_content_sha256": "ceec2430b8435f76d02a140bb6536f39718ec9041e192994092ad93e82942229",
+      "claim_scope": "UNIVERSAL",
+      "claim_scope_kind_sidecar": "LEXICALIZED_CLASS",
+      "result_strength": "STRONG",
+      "verdict": "VERIFIED_AT_SCOPE",
+      "rationale": "All 13 confirmed occurrences are the noun فاه/أفواه. Water reaching فاه at 13:14, hands placed في أفواه at 14:9, and sealing أفواه at 36:65 fix the concrete bodily aperture independently of speech. In the other ten, قول/تخرج/بدت/يطفئوا and the bi-/min- constructions supply utterance, emergence, instrumentality, insincerity, or metaphorical futility. The six recorded counterevidence references are genuine pressure cases but are explicitly resolved rather than hidden. UNIVERSAL is verified only across the complete currently attested lexicalized class in the active snapshot; it is not evidence of an unattested productive derivational family.",
+      "occurrence_review": {
+        "eligible": 13,
+        "inspected": 13,
+        "word_ref_set_sha256": "651f5ec4b6c988ab4aa7a27954fa76f12a42e1d15509fb9435676ecd5515097e",
+        "forms": {"N": 13},
+        "decisive_support": ["13:14:18:1", "14:9:24:1", "36:65:4:1"],
+        "hard_cases_checked": ["13:14:18:1", "36:65:4:1", "61:8:5:2", "9:8:12:2", "5:41:13:2", "3:118:19:1"],
+        "counterevidence_result": "Speech and extinguishing frames remain coherent with the literal organ; construction and context carry the enriched meanings."
+      },
+      "independent_research_questions": {
+        "q1_contribution": "The concrete bodily mouth/oral aperture.",
+        "q2_one_or_multiple": "One noun nucleus across singular/plural and physical, source, and instrument roles.",
+        "q3_challenging": "The نور extinguishing metaphors and mouth-versus-heart utterance frames; neither requires an abstract speech sense in the noun.",
+        "q4_lexicalized": "Yes; the full population is one nominal lexeme with number/possessive inflection.",
+        "q5_family_narrower": "The verdict is universal only for the complete attested lexicalized class; no productive family is evidenced.",
+        "q6_tempting_feature": "Speech, false profession, insincerity, hatred, and futile opposition are constructional/contextual additions.",
+        "q7_falsifier": "Any confirmed occurrence in which the physical mouth cannot fill the noun slot, or a new admitted derivation with an incompatible abstraction.",
+        "q8_reopen": "Reopen on a new non-nominal or non-substitutable occurrence, a semantic number split, or changed structural assignment."
+      },
+      "diagnostics": {
+        "DICTIONARY_FIRST": "NOT_EVALUATED_FOR_PRODUCER_TRACE; NO_CONTENT_LEVEL_HARD_VIOLATION_FOUND",
+        "CONTEXTUAL_LEAKAGE": "EVALUATED_CLEAN",
+        "HERITAGE_BIAS": "NOT_EVALUATED_FOR_PRODUCER_TRACE; NO_CONTENT_LEVEL_HARD_VIOLATION_FOUND",
+        "TAFSIR_CONTAMINATION": "NOT_EVALUATED_FOR_PRODUCER_TRACE; NO_CONTENT_LEVEL_HARD_VIOLATION_FOUND",
+        "FORCED_UNIFICATION": "EVALUATED_CLEAN",
+        "GENERIC_OVEREXTRACTION": "EVALUATED_CLEAN",
+        "LETTER_SEMANTICS_OVERRELIANCE": "EVALUATED_CLEAN",
+        "CIRCULAR_CONFIRMATION": "EVALUATED_CLEAN"
+      },
+      "precise_narrowed_scope_or_correction": null
+    },
+    {
+      "root": "glm",
+      "root_arabic": "غ ل م",
+      "claim_id": "jud_d51f1e74",
+      "revision_id": 1,
+      "run_id": "run_af84788a",
+      "claim_content_sha256": "b80d46c458a9da56207f7a3580b71f61a845324f7e1ed42d602926f9c00b4456",
+      "claim_scope": "REPRESENTATIVE",
+      "claim_scope_kind_sidecar": "LEXICALIZED_CLASS",
+      "result_strength": "MODERATE",
+      "verdict": "VERIFIED_AT_SCOPE",
+      "rationale": "All 13 confirmed occurrences are nominal غلام/غلامين/غلمان and support the thin young-male-human class. Youth is directly constrained by 18:82 (the two غلامين have not yet reached أشدهما), the promised-child sequences (19:7-15, 19:19-34, 37:101-102), and the cohort presentation at 52:24. Male identity is internally confirmed by the promised-child sequences, including عيسى ابن مريم at 19:34 and يا بني at 37:102. Sonship is not lexical because 12:19-21, 18:74-80, and 52:24 use the noun outside a filial relation; service at 52:24 is supplied by يطوف. The wide age band and absence of non-nominal derivation justify MODERATE/REPRESENTATIVE lexicalized-class scope rather than a whole-root universal.",
+      "occurrence_review": {
+        "eligible": 13,
+        "inspected": 13,
+        "word_ref_set_sha256": "6f2b23df77197860cf39804276fd26c667d9331785a17211b18cff18a69ba523",
+        "forms": {"N": 13},
+        "decisive_support": ["18:82:4:2", "19:19:8:1", "37:101:2:2", "12:19:10:1", "52:24:3:1"],
+        "hard_cases_checked": ["52:24:3:1", "3:40:6:1", "19:8:6:1", "18:80:2:2", "12:19:10:1", "19:19:8:1"],
+        "counterevidence_result": "Promised unborn referents widen the age realization but do not erase the child/youth class; service, commodity status, and sonship remain frame-borne."
+      },
+      "independent_research_questions": {
+        "q1_contribution": "A young male human in the one attested noun class.",
+        "q2_one_or_multiple": "One thin nucleus; son, orphan, commodity, and attendant roles are not separate lexical senses.",
+        "q3_challenging": "Promised unborn children, the future-risk غلام at 18:80, the found غلام at 12:19, and the serving غلمان at 52:24.",
+        "q4_lexicalized": "Yes; every occurrence is the same nominal class with number inflection.",
+        "q5_family_narrower": "The attested noun class is narrower than a productive root family, which is absent from this corpus population.",
+        "q6_tempting_feature": "Sonship, service, ownership, moral quality, and a fixed age are supplied by construction or discourse.",
+        "q7_falsifier": "A confirmed female, non-human, or fully mature/old referent, or a frame-free token that lexically forces sonship or service.",
+        "q8_reopen": "Reopen on a new derivation, a cancelled young/male feature, a forced relational role, or changed structural assignment."
+      },
+      "diagnostics": {
+        "DICTIONARY_FIRST": "NOT_EVALUATED_FOR_PRODUCER_TRACE; NO_CONTENT_LEVEL_HARD_VIOLATION_FOUND",
+        "CONTEXTUAL_LEAKAGE": "EVALUATED_CLEAN",
+        "HERITAGE_BIAS": "NOT_EVALUATED_FOR_PRODUCER_TRACE; NO_CONTENT_LEVEL_HARD_VIOLATION_FOUND",
+        "TAFSIR_CONTAMINATION": "NOT_EVALUATED_FOR_PRODUCER_TRACE; NO_CONTENT_LEVEL_HARD_VIOLATION_FOUND",
+        "FORCED_UNIFICATION": "EVALUATED_CLEAN",
+        "GENERIC_OVEREXTRACTION": "EVALUATED_CLEAN_AT_THE_THIN_LEXICALIZED_CLASS_SCOPE",
+        "LETTER_SEMANTICS_OVERRELIANCE": "EVALUATED_CLEAN",
+        "CIRCULAR_CONFIRMATION": "EVALUATED_CLEAN"
+      },
+      "precise_narrowed_scope_or_correction": null
+    }
+  ],
+  "hard_boundary_result": "FAILED_FOR_DNW_AND_FLH_EXACT_REVISIONS_DUE_TO_PROHIBITED_SOURCE_CONTENT; PASSED_SEMANTIC_REVIEW_AT_STATED_SCOPE_FOR_ESW_FWH_GLM",
+  "authority_boundary": "These are fresh independent semantic review verdicts only. They do not create VerificationRecords, change verification_state, canonicalize, set ACCEPTED, authorize Batch 08, or transfer any historical owner decision."
+}
