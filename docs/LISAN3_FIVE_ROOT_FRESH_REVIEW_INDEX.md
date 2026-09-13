@@ -2,7 +2,7 @@
 
 > **Historical Stage A review index — superseded.** The five claims listed below
 > are the original Stage A candidates and are no longer the current live claims.
-> Use `docs/evidence/requalification/five_root_campaign_final_evidence.json` and
+> Use `docs/evidence/requalification/five_root_campaign_final_evidence_v2.json` and
 > `PROJECT_STATE.md` for current lineage and governed state. This file remains
 > review-history context except for this explicit supersession notice.
 
