@@ -129,7 +129,7 @@ State context only. Canonical repository contracts and runtime evidence remain a
   freeze new immutable claims with predecessor lineage, then launch fresh independent review.
   `BATCH_08_NOT_AUTHORIZED`.
 
-## Five-Root Campaign — Final Governed Automation State (2026-09-13)
+## Five-Root Campaign — Final-Review Remediation In Progress (2026-09-13)
 
 - Owner master delegation was executed continuously for exactly ESw, dnw, flH, fwh,
   and glm. Batch 08 was not started. Historical Batch 07 JSON artifacts remain
@@ -142,34 +142,37 @@ State context only. Canonical repository contracts and runtime evidence remain a
   flH remains a conservative all-Form-IV UNRESOLVED result with mechanical exact-set
   coverage; its form-only observation limitation is explicit and is not promoted as a
   positive semantic finding.
-- Final current claims: ESw `jud_924a83e6@1` (12/12), dnw `jud_6ff94cce@1`
-  (133/133), flH `jud_04cfe3db@1` (40/40), fwh `jud_92e71ead@1` (13/13), and
-  glm `jud_da6a8e4c@1` (13/13). Each is `UNRESOLVED/UNRESOLVED/UNIVERSAL`, has a
-  fresh `VERIFIED_AT_SCOPE` read-only review, and received an exact-revision
-  `OWNER_DELEGATED_DECISION=VERIFY_AT_SCOPE`.
+- Independent merge review rejected candidate `9c85e60f40feba7498fae677296ddd897e843bab`
+  because the then-current flH claim retained a stale pre-fix
+  `deep_analysis_complete=true`, two Stage A JSONs failed the line-ending whitespace
+  gate, and the Stage A review index lacked a superseded banner.
+- The flH predecessor `jud_04cfe3db@1` and its VerificationRecord remain immutable
+  history. Current flH successor `jud_f328d448@1` preserves the same conservative
+  `UNRESOLVED/UNRESOLVED/UNIVERSAL` semantics and 40/40 form-only exact set, while the
+  current host rule now truthfully derives `deep_analysis_complete=false` and
+  `sufficient_for_claim=true`. Fresh exact-claim review is pending.
 - Repository authority does not require a human identity for VerificationRecord. The
   repository-native endpoint therefore recorded five `INDEPENDENT/VERIFIED` records
   using its server-owned `TRUSTED_LOCAL_INDEPENDENT_VERIFIER` identity. This did not
   impersonate a human and did not grant canonical acceptance.
-- The real `CanonicalizationPolicy.evaluate` rejected all five current claims for the
+- The real `CanonicalizationPolicy.evaluate` rejected the five previously selected claims for the
   same semantic reasons: not PREFERRED, not STRONG, falsification not PASSED, missing
   positive root concept, unresolved universal occurrences, and confirmed
   counterexamples. No canonicalize operation was invoked, no gate was weakened, and
   all five remain `NOT_CANONICAL`; ACCEPTED remains 0.
-- Live governed counts: 12 ResearchRuns, 567 ObservationArtifacts, 12 SemanticClaims,
+- Live governed counts: 13 ResearchRuns, 607 ObservationArtifacts, 13 SemanticClaims,
   5 VerificationRecords, 0 ACCEPTED. `lisanapp.db` SHA-256 is
-  `eccece98393af8d66d79555d2275baea7efd4e7455d0cb9957a5d0a2b15a7217` and
+  `c2716f563339bdf2455428a1e2a8ff88d48cb3f883a8d7983ebc5f8f32459ecb` and
   SQLite integrity is `ok`.
 - Durable final-decision and transition evidence:
   `docs/evidence/requalification/five_root_final_owner_delegated_decisions.json` and
   `docs/evidence/requalification/five_root_verification_and_policy_results.json`.
-- Status: `FIVE_ROOT_CAMPAIGN_PARTIALLY_CANONICAL_COMPLETE` in the owner's allowed
-  taxonomy: automatable governance is complete, but zero roots are canonically accepted
-  because the Quran-internal evidence does not discriminate a positive root concept.
-  This is a legitimate semantic terminal state, not an authority blocker.
-- NEXT: run final verification, obtain fresh independent merge-readiness review of the
-  exact candidate, then fast-forward merge and normally push if remote custody remains
-  safe. No non-delegable human action is required for this campaign state.
+- Status: `FINAL_REVIEW_REMEDIATION_IN_PROGRESS`; the prior final-evidence artifact is
+  superseded until the current flH successor receives fresh review, decision,
+  VerificationRecord, and policy evaluation.
+- NEXT: freeze this successor and the two documentation/line-ending repairs, obtain a
+  fresh flH review, repeat the exact-revision transitions, regenerate final evidence,
+  and commission a fresh merge-readiness review. `BATCH_08_NOT_AUTHORIZED`.
 
 ## Repository
 

@@ -1,5 +1,11 @@
 # Five-Root Fresh Independent Review — Index
 
+> **Historical Stage A review index — superseded.** The five claims listed below
+> are the original Stage A candidates and are no longer the current live claims.
+> Use `docs/evidence/requalification/five_root_campaign_final_evidence.json` and
+> `PROJECT_STATE.md` for current lineage and governed state. This file remains
+> review-history context except for this explicit supersession notice.
+
 Entry point for the **Stage B** fresh independent semantic reviewer. The producer (Stage A) has
 frozen five DB-native, non-canonical Research Judgments in `lisanapp.db`. This index lists exactly
 what to inspect. Do **not** open the Batch 07 artifacts until each claim's verdict is recorded.

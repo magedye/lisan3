@@ -1,0 +1,62 @@
+{
+  "artifact": "FLH_CURRENT_RULE_COMPLETENESS_SUCCESSOR",
+  "recorded_at": "2026-09-13T12:35:12+03:00",
+  "trigger": {
+    "reviewed_candidate": "9c85e60f40feba7498fae677296ddd897e843bab",
+    "finding": "The final merge review found that jud_04cfe3db@1 retained deep_analysis_complete=true from before the semantic-depth runtime fix even though all 40 observations are form-only.",
+    "required_remediation": "Create an immutable successor whose completeness is freshly derived under the current rule, then repeat review, owner decision, verification, and policy evaluation."
+  },
+  "semantic_change": "NONE",
+  "lineage": {
+    "predecessor": "jud_04cfe3db@1",
+    "successor": "jud_f328d448@1",
+    "reason": "Replace stale predecessor completeness metadata with current host-derived completeness without overwriting history."
+  },
+  "runtime": {
+    "database_sha256_before": "eccece98393af8d66d79555d2275baea7efd4e7455d0cb9957a5d0a2b15a7217",
+    "database_sha256_after": "c2716f563339bdf2455428a1e2a8ff88d48cb3f883a8d7983ebc5f8f32459ecb",
+    "backup": "local-state-backups/lisanapp.before-flh-current-rule-successor.20260913-123000.db",
+    "backup_sha256": "eccece98393af8d66d79555d2275baea7efd4e7455d0cb9957a5d0a2b15a7217",
+    "disposable_dry_run": "PASS; current rule derived deep_analysis_complete=false and preserved exact-set sufficiency; disposable DB removed before live execution",
+    "integrity_after": "ok",
+    "snapshot": "snap_tanzil_1_1_ac0724796cbb",
+    "methodology": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4"
+  },
+  "successor": {
+    "run_id": "run_e9d621fd",
+    "claim": "jud_f328d448@1",
+    "claim_sha256": "839d5df55f428b98960f1a2e07108fd9af315d57588f65a377b3f86c412cea64",
+    "claim_projection_bytes": 4488,
+    "research_state": "UNRESOLVED",
+    "result_strength": "UNRESOLVED",
+    "scope_kind": "UNIVERSAL ROOT_CONCEPT",
+    "exact_set": "40/40",
+    "observation_semantic_detail": "0/40; form-only limitation preserved explicitly",
+    "research_completeness": {
+      "eligible_occurrence_count": 40,
+      "evidenced_occurrence_count": 40,
+      "index_complete": true,
+      "deep_analysis_complete": false,
+      "sampling_basis_recorded": true,
+      "sufficient_for_claim": true,
+      "derived_by": "ResearchJudgmentService"
+    },
+    "isolation": "ESTABLISHED/CLEAN",
+    "isolation_audit_ref": "aud_5b1ef41a",
+    "hypotheses": ["hyp_a434a296", "hyp_74687dcb", "hyp_c677fd4e"],
+    "ai_trace": "ai_8f8d25a9",
+    "audits": ["aud_30d567f5", "aud_957d8e2e"],
+    "verification_state": "NOT_REQUIRED",
+    "canonical_state": "NOT_CANONICAL"
+  },
+  "post_write_counts": {
+    "ResearchRuns": 13,
+    "Observations": 607,
+    "SemanticClaims": 13,
+    "VerificationRecords": 5,
+    "ACCEPTED": 0
+  },
+  "independent_review": "PENDING_FRESH_POST_FREEZE_REVIEW",
+  "batch_07_comparison": "PROHIBITED_UNTIL_INITIAL_REVIEW_IS_FROZEN",
+  "batch_08_status": "BATCH_08_NOT_AUTHORIZED"
+}
