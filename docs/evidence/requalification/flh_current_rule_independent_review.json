@@ -1,0 +1,53 @@
+{
+  "artifact": "FLH_CURRENT_RULE_FRESH_INDEPENDENT_REVIEW",
+  "recorded_at": "2026-09-13T12:49:53+03:00",
+  "review_mode": "FRESH_READ_ONLY_INDEPENDENT_REVIEW",
+  "review_binding": {
+    "exact_candidate": "aaa43c60806215e0bdab88bd0b138d934a63890e",
+    "later_formatting_only_checkpoint": "9cc1ab3f8ef867f6300bfcce571981f9140b0e5f",
+    "reviewed_scope_changed_by_later_checkpoint": false,
+    "database_sha256": "c2716f563339bdf2455428a1e2a8ff88d48cb3f883a8d7983ebc5f8f32459ecb",
+    "run_id": "run_e9d621fd",
+    "claim": "jud_f328d448@1",
+    "claim_projection_bytes": 4488,
+    "claim_sha256": "839d5df55f428b98960f1a2e07108fd9af315d57588f65a377b3f86c412cea64"
+  },
+  "initial_verdict_frozen_before_batch_07": "VERIFIED_AT_SCOPE",
+  "checks": {
+    "current_rule_rederived_completeness": {
+      "eligible_occurrence_count": 40,
+      "evidenced_occurrence_count": 40,
+      "index_complete": true,
+      "deep_analysis_complete": false,
+      "sampling_basis_recorded": true,
+      "sufficient_for_claim": true
+    },
+    "exact_set": "40/40; eligible, supporting, observation, and evidence-dependency sets identical; no missing, extra, or duplicate refs",
+    "structural_distribution": "27 V(IV) + 13 N(IV); all 40 confirmed Form IV",
+    "observation_semantic_detail": "0/40; form-only limitation accurately retained",
+    "successor_semantic_equivalence": "Compared with jud_04cfe3db@1, only identity/run/time, verification state, and stale completeness metadata changed; semantic fields are equivalent at field level.",
+    "isolation": "ESTABLISHED/CLEAN",
+    "authority_bindings": "Tanzil, QAC, and methodology hashes match admitted bindings; all support terminates in current-snapshot confirmed token refs.",
+    "lineage": "Corrective lineage and reason audits, AI trace, and isolation trace present.",
+    "semantic_result": "UNRESOLVED/UNRESOLVED is conservative; root concept and preferred conclusion remain null; canonical state remains NOT_CANONICAL.",
+    "overclaim": "NONE_FOUND"
+  },
+  "batch_07_comparison": {
+    "opened_after_initial_verdict_freeze": true,
+    "artifact": "artifacts/semantic-campaign/roots/fl_48_.json",
+    "size_bytes": 160928,
+    "sha256": "93824ef650f53116a22387f17ef266ec18896ff00c2fa139fae90f8584b32af8",
+    "classification": "PARTIAL_CONVERGENCE",
+    "summary": "Both results agree on the exact all-Form-IV 40-token population, the 20:64/20:69 boundary, rejection of an inherently moral or salvific gloss, and the outcome/attainment candidate. Batch 07 promoted that candidate to PREFERRED/STRONG at derivational-family scope; the successor properly leaves it unadopted and the bare-root concept unresolved.",
+    "comparison_changed_claim": false
+  },
+  "blockers": [],
+  "reviewer_writes": {
+    "files": 0,
+    "database_rows": 0,
+    "verification_records": 0,
+    "commit": false
+  },
+  "final_verdict": "VERIFIED_AT_SCOPE",
+  "batch_08_status": "BATCH_08_NOT_AUTHORIZED"
+}
