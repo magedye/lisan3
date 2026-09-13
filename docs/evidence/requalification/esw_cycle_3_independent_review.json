@@ -1,0 +1,35 @@
+{
+  "artifact": "ESW_CYCLE_3_INDEPENDENT_REVIEW",
+  "recorded_at": "2026-09-13T12:02:00+03:00",
+  "reviewed_git_checkpoint": "0a73eecdd1adbc42277467bd1754b5f1d1f79f56",
+  "database_sha256": "0c3d2e8a8eb7e1691bb8cca3e1b0beac95a20b3884639559719ce493e9693e97",
+  "review_mode": "fresh read-only gpt-5.6-sol/xhigh context; Batch 07 excluded until initial verdict frozen",
+  "claim": "jud_924a83e6@1",
+  "run_id": "run_65b6ce2c",
+  "claim_projection_bytes": 7255,
+  "claim_sha256": "9214eb953ddb189c154a3b46c1c0a88ab5c1d25c49020a889f2c48bd358b2e20",
+  "verdict": "VERIFIED_AT_SCOPE",
+  "blockers": [],
+  "findings": {
+    "exact_set": "12/12 CONFIRMED ESw tokens; tracked payload, live observations, and dependency set agree",
+    "semantic_observation_substance": "12/12 with nonblank form, syntax, participant roles, local context, and unresolved ambiguity",
+    "exact_verse_scope": "PASS; every observation manually checked against its exact Tanzil verse; no adjacent-verse actor, antecedent, consequence, or narrative fact remains",
+    "source_and_methodology": "production Tanzil, QAC structure, current source-bound methodology, and hashes passed",
+    "isolation": "ESTABLISHED/CLEAN; zero isolation events and zero prohibited semantic-source dependencies",
+    "layer_separation": "PASS",
+    "terminal_semantics": "UNRESOLVED/UNRESOLVED with null root concept and preferred conclusion is stable and methodologically correct for this evidence revision",
+    "lineage": "H1/H2/C0 predate observations; creation, correction reason, and jud_da40a233@1 -> jud_924a83e6@1 lineage audits resolve",
+    "verification_records_at_review": 0,
+    "writes": "NONE"
+  },
+  "batch_07_comparison": {
+    "classification": "HISTORICAL_CLAIM_NOT_REPRODUCED",
+    "historical_artifact": "artifacts/semantic-campaign/roots/E_53_w.json",
+    "historical_sha256": "f19863141c842606258a7de3ded9c62d22733eefe7ae5fbab326394c5378ff23",
+    "historical_hash_match": true,
+    "reason": "Both revisions agree on the exact nominal عصا/عصي inventory and on excluding constructional and narrative effects from root content. Batch 07 promoted a concrete staff/rod lexicalized-class claim to PREFERRED/STRONG/REPRESENTATIVE; cycle 3 finds that positive definition non-isolable and keeps ROOT_CONCEPT UNRESOLVED.",
+    "claim_changed_after_comparison": false
+  },
+  "custody_qualification": "The reviewer bound the semantic/evidence verdict to clean committed checkpoint 0a73eec and the live database hash. A concurrent one-line test lint repair appeared only after the verdict was frozen; it did not change reviewed semantic/evidence bytes or database state.",
+  "batch_08_status": "BATCH_08_NOT_AUTHORIZED"
+}
