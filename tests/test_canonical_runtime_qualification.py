@@ -346,7 +346,7 @@ def test_nonsemantic_pipeline_smoke_reaches_accepted():
     """production snapshot -> methodology -> run -> established isolation ->
     word-level evidence -> host completeness -> INDEPENDENT verification ->
     judgment validation -> canonicalization. Synthetic root only."""
-    run_id, claim_id = build_accepted_ready_claim()
+    _run_id, claim_id = build_accepted_ready_claim()
     # Premature canonicalization (before verification would be) is not the case
     # here; verification already recorded, so acceptance should now succeed.
     accepted = client.post(

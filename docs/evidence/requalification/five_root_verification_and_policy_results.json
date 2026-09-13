@@ -1,0 +1,117 @@
+{
+  "artifact": "FIVE_ROOT_VERIFICATION_AND_CANONICALIZATION_POLICY_RESULTS",
+  "recorded_at": "2026-09-13T12:12:00+03:00",
+  "authority_check": {
+    "result": "REPOSITORY_NATIVE_VERIFICATION_RECORD_PERMITTED",
+    "basis": [
+      "The current authority contract does not require a human identity for an independent VerificationRecord.",
+      "The repository endpoint requires verification_type=INDEPENDENT for VERIFIED, validates evidence against the exact run, binds evaluated_claim_revision to the current persisted revision, and records the server-owned verifier identity TRUSTED_LOCAL_INDEPENDENT_VERIFIER.",
+      "Each current claim had a fresh independent read-only review before this transition. The owner standing delegation supplied only the distinct OWNER DECISION layer."
+    ],
+    "human_impersonation": false,
+    "raw_database_state_flip": false,
+    "canonicalization_policy_bypass": false
+  },
+  "runtime": {
+    "database_sha256_before": "0c3d2e8a8eb7e1691bb8cca3e1b0beac95a20b3884639559719ce493e9693e97",
+    "database_sha256_after": "eccece98393af8d66d79555d2275baea7efd4e7455d0cb9957a5d0a2b15a7217",
+    "backup": "local-state-backups/lisanapp.before-final-verification.20260913-121100.db",
+    "backup_sha256": "0c3d2e8a8eb7e1691bb8cca3e1b0beac95a20b3884639559719ce493e9693e97",
+    "disposable_dry_run": "PASS; five exact owner-decision audits, five current-revision VerificationRecords, five policy rejections, zero canonicalizations; disposable copy removed before live execution",
+    "integrity_after": "ok"
+  },
+  "common_policy_result": {
+    "accepted": false,
+    "reasons": [
+      "Research state is not PREFERRED",
+      "Result strength is not STRONG",
+      "Falsification has not passed",
+      "Root concept is missing",
+      "A universal root concept cannot be accepted while confirmed occurrences remain unexplained (root semantic unity)",
+      "A universal root concept cannot be accepted while a confirmed occurrence remains a counterexample (root semantic unity)"
+    ],
+    "disposition": "No canonicalize operation was invoked because evaluate returned false. These are semantic qualification failures and were not patched or weakened."
+  },
+  "roots": {
+    "ESw": {
+      "claim": "jud_924a83e6@1",
+      "delegated_owner_decision": "VERIFY_AT_SCOPE",
+      "owner_decision_audit": "aud_78bc395e",
+      "verification_record": "ver_18857c76",
+      "verification_audit": "aud_39bb84e8",
+      "verifier_identity": "TRUSTED_LOCAL_INDEPENDENT_VERIFIER",
+      "verification_type": "INDEPENDENT",
+      "verification_decision": "VERIFIED",
+      "evaluated_claim_revision": 1,
+      "verification_evidence_ref_count": 12,
+      "canonicalization_policy": "FAIL",
+      "canonical_state": "NOT_CANONICAL"
+    },
+    "dnw": {
+      "claim": "jud_6ff94cce@1",
+      "delegated_owner_decision": "VERIFY_AT_SCOPE",
+      "owner_decision_audit": "aud_5358e2dd",
+      "verification_record": "ver_18e3fb7f",
+      "verification_audit": "aud_f4396f50",
+      "verifier_identity": "TRUSTED_LOCAL_INDEPENDENT_VERIFIER",
+      "verification_type": "INDEPENDENT",
+      "verification_decision": "VERIFIED",
+      "evaluated_claim_revision": 1,
+      "verification_evidence_ref_count": 133,
+      "canonicalization_policy": "FAIL",
+      "canonical_state": "NOT_CANONICAL"
+    },
+    "flH": {
+      "claim": "jud_04cfe3db@1",
+      "delegated_owner_decision": "VERIFY_AT_SCOPE",
+      "owner_decision_audit": "aud_c18172c6",
+      "verification_record": "ver_dfa79181",
+      "verification_audit": "aud_671ff138",
+      "verifier_identity": "TRUSTED_LOCAL_INDEPENDENT_VERIFIER",
+      "verification_type": "INDEPENDENT",
+      "verification_decision": "VERIFIED",
+      "evaluated_claim_revision": 1,
+      "verification_evidence_ref_count": 40,
+      "canonicalization_policy": "FAIL",
+      "canonical_state": "NOT_CANONICAL"
+    },
+    "fwh": {
+      "claim": "jud_92e71ead@1",
+      "delegated_owner_decision": "VERIFY_AT_SCOPE",
+      "owner_decision_audit": "aud_28f34ea9",
+      "verification_record": "ver_d947346d",
+      "verification_audit": "aud_70fd2d20",
+      "verifier_identity": "TRUSTED_LOCAL_INDEPENDENT_VERIFIER",
+      "verification_type": "INDEPENDENT",
+      "verification_decision": "VERIFIED",
+      "evaluated_claim_revision": 1,
+      "verification_evidence_ref_count": 13,
+      "canonicalization_policy": "FAIL",
+      "canonical_state": "NOT_CANONICAL"
+    },
+    "glm": {
+      "claim": "jud_da6a8e4c@1",
+      "delegated_owner_decision": "VERIFY_AT_SCOPE",
+      "owner_decision_audit": "aud_6fe21d81",
+      "verification_record": "ver_b92939b1",
+      "verification_audit": "aud_267491a4",
+      "verifier_identity": "TRUSTED_LOCAL_INDEPENDENT_VERIFIER",
+      "verification_type": "INDEPENDENT",
+      "verification_decision": "VERIFIED",
+      "evaluated_claim_revision": 1,
+      "verification_evidence_ref_count": 13,
+      "canonicalization_policy": "FAIL",
+      "canonical_state": "NOT_CANONICAL"
+    }
+  },
+  "post_transition_counts": {
+    "ResearchRuns": 12,
+    "Observations": 567,
+    "SemanticClaims": 12,
+    "VerificationRecords": 5,
+    "ACCEPTED": 0
+  },
+  "accepted_roots": [],
+  "non_accepted_roots": ["ESw", "dnw", "flH", "fwh", "glm"],
+  "batch_08_status": "BATCH_08_NOT_AUTHORIZED"
+}
