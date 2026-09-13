@@ -1,0 +1,91 @@
+{
+  "artifact": "FIVE_ROOT_FINAL_OWNER_DELEGATED_DECISIONS",
+  "decision_type": "OWNER_DELEGATED_DECISION",
+  "recorded_at": "2026-09-13T12:07:01+03:00",
+  "decision_checkpoint": "6f0990989069a5d694e0fe024a39d15aad99035b",
+  "delegation": {
+    "reference": "OWNER_MASTER_DELEGATION_2026_09_13_FIVE_ROOT_CAMPAIGN",
+    "source_kind": "LATEST_EXPLICIT_OWNER_INSTRUCTION",
+    "source_attachment_sha256": "d1be72ec204e43c1692fa1cb400a51ab6842d9505523050f445a42486077d391",
+    "source_attachment_size_bytes": 18715,
+    "authority_boundary": "The owner delegated the OWNER DECISION layer and selection among VERIFY_AT_SCOPE, REJECT, and RETURN_FOR_CORRECTION. These decisions do not impersonate a human reviewer, do not create a VerificationRecord, do not establish semantic truth, and do not authorize policy bypass.",
+    "prohibitions": [
+      "NO_FABRICATED_HUMAN_VERIFICATION",
+      "NO_IMPERSONATED_INDEPENDENT_HUMAN_VERIFIER",
+      "NO_CANONICALIZATION_POLICY_BYPASS",
+      "NO_EVIDENCE_THRESHOLD_WEAKENING",
+      "NO_FORCE_PUSH",
+      "NO_HISTORY_REWRITE",
+      "BATCH_08_NOT_AUTHORIZED"
+    ]
+  },
+  "review_packages": [
+    {
+      "path": "docs/evidence/requalification/five_root_corrective_independent_reviews.json",
+      "sha256": "7c3ae4ff5287b4dbdc76d6a999f92c49df6e0886aeabfe380ee91449fccb0f79"
+    },
+    {
+      "path": "docs/evidence/requalification/positive_root_cycle_2_independent_reviews.json",
+      "sha256": "b5fa760e7f419c696b9fd73f5ac254a265359e2af480e3e4751f06cc7108e461"
+    },
+    {
+      "path": "docs/evidence/requalification/esw_cycle_3_independent_review.json",
+      "sha256": "0b8d68e86cb980479086b248acd1a0284ecae1bac607ce04458a3e7868903e62"
+    }
+  ],
+  "decisions": [
+    {
+      "root": "ESw",
+      "claim_id": "jud_924a83e6",
+      "revision_id": 1,
+      "claim_content_sha256": "9214eb953ddb189c154a3b46c1c0a88ab5c1d25c49020a889f2c48bd358b2e20",
+      "independent_verdict": "VERIFIED_AT_SCOPE",
+      "decision": "VERIFY_AT_SCOPE",
+      "rationale": "The cycle-3 successor closes the exact-verse scope defect, covers all 12 confirmed tokens with substantive observations, preserves layer separation, and honestly concludes that a positive bare-root contribution is not discriminated. VERIFY_AT_SCOPE validates this stable UNRESOLVED result; it does not promote a root meaning or imply canonical acceptance."
+    },
+    {
+      "root": "dnw",
+      "claim_id": "jud_6ff94cce",
+      "revision_id": 1,
+      "claim_content_sha256": "040ec2d530d744185e930019fbf6c908ac3acf59c6583f416273a69d97edb935",
+      "independent_verdict": "VERIFIED_AT_SCOPE",
+      "decision": "VERIFY_AT_SCOPE",
+      "rationale": "The successor supplies substantive analysis for all 133 confirmed tokens and shows that the dominant dunya family, variable relational axes, and surviving multiple-unit competitor do not isolate one necessary distinctive root contribution. The stable UNRESOLVED result is verified at universal exact-set scope."
+    },
+    {
+      "root": "flH",
+      "claim_id": "jud_04cfe3db",
+      "revision_id": 1,
+      "claim_content_sha256": "ec3af6e66771c7dad0342d74b2327c9cb68c1cca51dc8506c47bd23b60d44a9c",
+      "independent_verdict": "VERIFIED_AT_SCOPE",
+      "decision": "VERIFY_AT_SCOPE",
+      "rationale": "All 40 confirmed tokens are one Form-IV family. The mechanically complete evidence cannot separate the bare root from that derivational family, so the conservative UNRESOLVED result is stable. Stored observation semantics remain form-only and are not represented as a positive semantic finding."
+    },
+    {
+      "root": "fwh",
+      "claim_id": "jud_92e71ead",
+      "revision_id": 1,
+      "claim_content_sha256": "daa2a5a8e3121c4f0ff8926d0fe02d7071d4fe2422af22e0c36c9eba74e70591",
+      "independent_verdict": "VERIFIED_AT_SCOPE",
+      "decision": "VERIFY_AT_SCOPE",
+      "rationale": "All 13 confirmed tokens support a bounded mouth lexeme finding, but the single nominal family does not isolate that content as a bare-root contribution. VERIFY_AT_SCOPE validates the universal exact-set UNRESOLVED root judgment without promoting the lexical finding."
+    },
+    {
+      "root": "glm",
+      "claim_id": "jud_da6a8e4c",
+      "revision_id": 1,
+      "claim_content_sha256": "08ce67b174bf26db74b96f1e528c0eb75414bea8bb62988b0488f33fc3a51fcb",
+      "independent_verdict": "VERIFIED_AT_SCOPE",
+      "decision": "VERIFY_AT_SCOPE",
+      "rationale": "All 13 confirmed tokens support a bounded ghulam lexeme finding, but the single nominal family does not isolate a positive bare-root contribution. VERIFY_AT_SCOPE validates the universal exact-set UNRESOLVED root judgment without promoting the lexical finding."
+    }
+  ],
+  "superseded_stage_b_decisions": {
+    "artifact": "docs/evidence/requalification/five_root_owner_delegated_decisions.json",
+    "effect": "The Stage B decisions remain immutable history. Their ESw, fwh, and glm VERIFY_AT_SCOPE selections were superseded after the global form-only completeness defect was found; dnw and flH correction decisions were executed."
+  },
+  "next_action": "AUTHORITY_CHECK_THEN_REPOSITORY_NATIVE_INDEPENDENT_VERIFICATION",
+  "verification_records_created_by_this_artifact": 0,
+  "canonicalizations_performed": 0,
+  "batch_08_status": "BATCH_08_NOT_AUTHORIZED"
+}
