@@ -236,6 +236,14 @@ State context only. Canonical repository contracts and runtime evidence remain a
   the implementation candidate. The current documentation/state custody delta
   requires a fresh final read-only review before commit/fast-forward. This is
   `INDEPENDENTLY_REVIEWED` technical evidence only, never `RELEASE_ACCEPTED`.
+- Independent review cycle 2 returned `PASS / MERGE_READY` for the full final
+  candidate including the cycle-1 custody record. Commit
+  `872f3ba519c6a0a21bf57f2d8d13af1a1e680919` was fast-forwarded into `main`
+  and pushed normally; `main == origin/main == 872f3ba`. No merge commit,
+  force push, migration, semantic DB write, or owner-artifact mutation was
+  performed. This following state-only custody update records the completed
+  integration and does not extend the independently reviewed product behavior
+  or grant `RELEASE_ACCEPTED`.
 
 ## Repository
 

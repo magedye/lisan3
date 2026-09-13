@@ -87,3 +87,7 @@ separately authorized research scope. No migration, semantic record, or Batch
   that the wrong-run negative test detaches the isolation row rather than
   directly mutating the audit entity binding; the implementation validates both
   audit binding fields.
+- Fresh independent review cycle 2 returned `PASS / MERGE_READY` after the
+  cycle-1 custody/state record was added. It independently confirmed the full
+  candidate, the documentation delta, semantic and Batch 07 immutability, and
+  the explicit separation of technical review from `RELEASE_ACCEPTED`.
