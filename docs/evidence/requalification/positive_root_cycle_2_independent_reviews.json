@@ -27,6 +27,12 @@
       "root_result": "UNRESOLVED",
       "semantic_basis": "The bodily-mouth finding is stable at LEXEME, but all 13 tokens are one nominal family; no derivative/form contrast promotes it to a bare-root contribution.",
       "pressure_cases": ["3:118", "9:32", "13:14", "14:9", "36:65", "61:8"],
+      "batch_07_comparison": {
+        "classification": "HISTORICAL_CLAIM_NOT_REPRODUCED",
+        "historical_sha256": "4aaa428e031a09f329f8dfba6ec8e1222cdaef3278811a0a63065086cb324e44",
+        "historical_size_bytes": 66814,
+        "reason": "Batch 07 promoted concrete mouth/oral aperture to PREFERRED/STRONG/UNIVERSAL ROOT_CONCEPT. The current successor retains bodily-mouth content only at LEXEME and cannot isolate a bare-root contribution from one nominal family."
+      },
       "prohibited_source_access": 0,
       "writes": 0
     },
@@ -39,6 +45,12 @@
       "root_result": "UNRESOLVED",
       "semantic_basis": "The bounded ghulam lexeme finding remains defensible at PREFERRED/MODERATE, but one nominal family cannot isolate a positive bare-root contribution.",
       "qualification": "Panel source run run_af84788a differs from persistence run run_a9434a53; identical snapshot/method, exact observation hashes, dependencies, traces, and lineage make this non-blocking.",
+      "batch_07_comparison": {
+        "classification": "HISTORICAL_CLAIM_NOT_REPRODUCED",
+        "historical_sha256": "4018dfcc3b688a7b5392c43c12b49622e1de7f3151563ff92a5c547059e03d6b",
+        "historical_size_bytes": 64631,
+        "reason": "Batch 07 promoted young-human-male/pre-maturity content to PREFERRED/STRONG ROOT_CONCEPT. The current successor preserves comparable content only as PREFERRED/MODERATE LEXEME and leaves the root unresolved."
+      },
       "prohibited_source_access": 0,
       "writes": 0
     }
@@ -47,8 +59,8 @@
   "canonical_transitions": 0,
   "batch_07_comparison": {
     "ESw": "DEFERRED_UNTIL_CYCLE_3_REVIEW",
-    "fwh": "AUTHORIZED_NEXT",
-    "glm": "AUTHORIZED_NEXT"
+    "fwh": "HISTORICAL_CLAIM_NOT_REPRODUCED",
+    "glm": "HISTORICAL_CLAIM_NOT_REPRODUCED"
   },
   "batch_08_status": "BATCH_08_NOT_AUTHORIZED"
 }

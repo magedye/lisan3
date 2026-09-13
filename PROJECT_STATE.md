@@ -1617,3 +1617,17 @@ Batch 07 comparison. Then perform final exact-revision delegated decisions.
   writes or VerificationRecords. Review evidence:
   `docs/evidence/requalification/positive_root_cycle_2_independent_reviews.json`.
 - Batch 07 comparison is now authorized for fwh/glm only; ESw remains deferred.
+
+## fwh / glm Post-Review Batch 07 Comparisons (2026-09-13)
+
+- `fwh`: `HISTORICAL_CLAIM_NOT_REPRODUCED`. Historical SHA-256
+  `4aaa428e031a09f329f8dfba6ec8e1222cdaef3278811a0a63065086cb324e44`
+  promoted concrete mouth/oral aperture to PREFERRED/STRONG/UNIVERSAL at
+  ROOT_CONCEPT. Current research preserves bodily-mouth content only at LEXEME.
+- `glm`: `HISTORICAL_CLAIM_NOT_REPRODUCED`. Historical SHA-256
+  `4018dfcc3b688a7b5392c43c12b49622e1de7f3151563ff92a5c547059e03d6b`
+  promoted young-human-male/pre-maturity content to PREFERRED/STRONG root
+  concept. Current research preserves comparable content only as a
+  PREFERRED/MODERATE lexeme finding.
+- Both comparisons occurred only after blind verdicts were frozen. Neither
+  current claim nor review verdict changed; reviewers performed no writes.
