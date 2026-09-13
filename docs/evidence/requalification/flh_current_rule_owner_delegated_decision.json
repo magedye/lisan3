@@ -1,0 +1,31 @@
+{
+  "artifact": "FLH_CURRENT_RULE_OWNER_DELEGATED_DECISION",
+  "decision_type": "OWNER_DELEGATED_DECISION",
+  "recorded_at": "2026-09-13T12:52:00+03:00",
+  "delegation": {
+    "reference": "OWNER_MASTER_DELEGATION_2026_09_13_FIVE_ROOT_CAMPAIGN",
+    "source_kind": "LATEST_EXPLICIT_OWNER_INSTRUCTION",
+    "source_attachment_sha256": "d1be72ec204e43c1692fa1cb400a51ab6842d9505523050f445a42486077d391",
+    "authority_boundary": "This is the owner-decision layer only. It is not an independent-human semantic review, a VerificationRecord, semantic truth, or permission to bypass CanonicalizationPolicy."
+  },
+  "root": "flH",
+  "claim_id": "jud_f328d448",
+  "revision_id": 1,
+  "claim_sha256": "839d5df55f428b98960f1a2e07108fd9af315d57588f65a377b3f86c412cea64",
+  "producer_evidence": {
+    "path": "docs/evidence/requalification/flh_current_rule_completeness_successor.json",
+    "checkpoint": "aaa43c60806215e0bdab88bd0b138d934a63890e"
+  },
+  "independent_review": {
+    "path": "docs/evidence/requalification/flh_current_rule_independent_review.json",
+    "sha256": "9585f9d798fd018a270f9a5383932a99b1c1a4a12365a21afa0a0692c038d55b",
+    "checkpoint": "2933a79ffe607851d6104b89a55b17bb14898a7d",
+    "verdict": "VERIFIED_AT_SCOPE"
+  },
+  "decision": "VERIFY_AT_SCOPE",
+  "rationale": "The immutable current-rule successor preserves the conservative semantic result, covers all 40 confirmed Form-IV tokens, explicitly records that all observations are form-only, and correctly derives deep_analysis_complete=false while exact-set sufficiency remains true. Fresh independent review found no blocker. VERIFY_AT_SCOPE validates this bounded UNRESOLVED result; it does not promote a positive bare-root meaning or imply canonical acceptance.",
+  "superseded_decision": "The earlier decision for jud_04cfe3db@1 remains immutable history and does not transfer to this successor.",
+  "verification_records_created_by_this_artifact": 0,
+  "canonicalizations_performed": 0,
+  "batch_08_status": "BATCH_08_NOT_AUTHORIZED"
+}
