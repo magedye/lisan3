@@ -51,7 +51,43 @@
         "the producer artifact's claim-hash projection wording omitted the accepted_at exclusion and id-to-claim_id alias"
       ],
       "minimum_correction": "Preserve jud_7805c0b0@1. Create a clean successor run with substantive occurrence-level root/form/lexeme/construction/context and ambiguity analysis for the exact 133-token set; persist actual panel outputs; compare the relational-axis and split-class competitors across all hard cases; derive semantic completeness from observation substance; publish an explicit claim-hash projection; then commission a new fresh independent review.",
-      "source_boundary": "Replacement reviewer reported zero access to Batch 07, PROJECT_STATE, predecessor prose, memory, web, dictionaries, translations, or tafsir."
+      "source_boundary": "Replacement reviewer reported zero access to Batch 07, PROJECT_STATE, predecessor prose, memory, web, dictionaries, translations, or tafsir.",
+      "cycle_2": {
+        "reviewed_git_checkpoint": "c2ed8dfe2f88e9b63f73db77d27c57ad47cf8e69",
+        "claim": "jud_6ff94cce@1",
+        "run_id": "run_4efa58a9",
+        "claim_projection_bytes": 10148,
+        "claim_sha256": "040ec2d530d744185e930019fbf6c908ac3acf59c6583f416273a69d97edb935",
+        "verdict": "VERIFIED_AT_SCOPE",
+        "stable_terminal": true,
+        "terminal_research_state": "UNRESOLVED",
+        "exact_set": {
+          "confirmed_tokens": 133,
+          "distinct_word_refs": 133,
+          "distinct_verses": 128,
+          "observations": 133,
+          "supporting_refs": 133,
+          "evidence_dependencies": 133,
+          "missing": 0,
+          "extra": 0,
+          "duplicates": 0
+        },
+        "semantic_observation_substance": {
+          "syntax_nonempty": 133,
+          "participant_roles_nonempty": 133,
+          "local_context_nonempty": 133,
+          "unresolved_ambiguity_nonempty": 133,
+          "aggregator_match": "133/133"
+        },
+        "semantic_verdict": "The 111-token life-domain family does not demonstrate a necessary active root residue. The nearer/lower candidate becomes axis-elastic, 3:45 is a valid counterexample to required local inferiority/proximity, and the multiple-lexical-unit competitor remains unrejected.",
+        "falsification": "NOT_REQUIRED for the unresolved claim; positive candidates were separately challenged.",
+        "lineage": "jud_7805c0b0@1 -> jud_6ff94cce@1",
+        "isolation": "ESTABLISHED/CLEAN",
+        "reviewer_prohibited_source_access": 0,
+        "producer_boundary_qualification": "The aggregator recorded one incidental Batch 07 engineering-search path/line hit with semantic_effect=NONE. It contained no historical root conclusion and supplied no semantic evidence; literal zero path-level hits is not claimed.",
+        "writes": "NONE",
+        "verification_records_created": 0
+      }
     },
     "flH": {
       "claim": "jud_04cfe3db@1",
@@ -96,12 +132,12 @@
     }
   },
   "next_state": {
-    "dnw": "CORRECTIVE_CYCLE_2_REQUIRED",
+    "dnw": "READY_FOR_POST_REVIEW_BATCH_07_COMPARISON",
     "flH": "READY_FOR_POST_REVIEW_BATCH_07_COMPARISON"
   },
   "batch_07_comparison": {
     "flH": "PARTIAL_CONVERGENCE_AFTER_FROZEN_REVIEW",
-    "dnw": "DEFERRED_UNTIL_CYCLE_2_FREEZE_AND_REVIEW"
+    "dnw": "AUTHORIZED_NEXT; NOT_YET_PERFORMED"
   },
   "batch_08_status": "BATCH_08_NOT_AUTHORIZED"
 }

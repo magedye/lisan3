@@ -1520,3 +1520,26 @@ Batch 07 comparison for the stable `flH` result without altering that claim.
 Commit and normally publish the cycle-2 producer checkpoint without changing
 the frozen claim. Launch a fresh blind read-only Sol/xhigh review of exact
 `jud_6ff94cce@1`; freeze that verdict before opening historical Batch 07 dnw.
+
+## dnw Cycle 2 Fresh Independent Review (2026-09-13)
+
+- Exact reviewed checkpoint:
+  `c2ed8dfe2f88e9b63f73db77d27c57ad47cf8e69`.
+- Fresh blind reviewer returned `VERIFIED_AT_SCOPE` for
+  `dnw jud_6ff94cce@1`; terminal research result is stable `UNRESOLVED` for the
+  exact current snapshot/methodology, not canonical acceptance.
+- Independently reproduced 10,148-byte claim projection SHA-256
+  `040ec2d530d744185e930019fbf6c908ac3acf59c6583f416273a69d97edb935`;
+  133/133 exact observations, support refs, and dependencies; all semantic
+  fields nonblank and source-grounded; host completeness and lineage clean.
+- Semantic basis: the dominant 111-token life-domain family does not require an
+  active relational residue; the nearer/lower candidate becomes axis-elastic;
+  3:45 resists required local inferiority/proximity; the multiple-lexical-unit
+  competitor survives. Positive candidates were challenged separately;
+  `falsification_status=NOT_REQUIRED` is correct for the unresolved claim.
+- Reviewer prohibited-source access was zero. Producer-boundary qualification:
+  the aggregator recorded one incidental Batch 07 engineering-search path/line
+  hit with `semantic_effect=NONE`; it contained no historical root conclusion
+  and supplied no semantic evidence, so literal zero path-level hits is not claimed.
+- No DB/file write or VerificationRecord occurred during review. Batch 07 dnw
+  comparison is now authorized but has not yet occurred.
