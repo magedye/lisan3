@@ -86,7 +86,15 @@
         "reviewer_prohibited_source_access": 0,
         "producer_boundary_qualification": "The aggregator recorded one incidental Batch 07 engineering-search path/line hit with semantic_effect=NONE. It contained no historical root conclusion and supplied no semantic evidence; literal zero path-level hits is not claimed.",
         "writes": "NONE",
-        "verification_records_created": 0
+        "verification_records_created": 0,
+        "batch_07_comparison": {
+          "classification": "HISTORICAL_CLAIM_NOT_REPRODUCED",
+          "historical_artifact": "artifacts/semantic-campaign/roots/dnw.json",
+          "historical_sha256": "3de4b1c875a74909df9b6c0a32db65867f112c762128dc2edf4084584c7306ce",
+          "historical_checkpoint": "416dd22b476ffcd1d0937daf956597daef9dd25b",
+          "reason": "Batch 07 asserted a universal STRONG near/low-pole nucleus with all 133 occurrences consistent. The blind successor review found no necessary distinctive residue across the 111-token dunya family; 3:45, the outcome constructions, and unresolved lexicalization keep the multiple-unit competitor alive.",
+          "claim_changed_after_comparison": false
+        }
       }
     },
     "flH": {
@@ -132,12 +140,12 @@
     }
   },
   "next_state": {
-    "dnw": "READY_FOR_POST_REVIEW_BATCH_07_COMPARISON",
+    "dnw": "STABLE_UNRESOLVED; COMPARISON_COMPLETE",
     "flH": "READY_FOR_POST_REVIEW_BATCH_07_COMPARISON"
   },
   "batch_07_comparison": {
     "flH": "PARTIAL_CONVERGENCE_AFTER_FROZEN_REVIEW",
-    "dnw": "AUTHORIZED_NEXT; NOT_YET_PERFORMED"
+    "dnw": "HISTORICAL_CLAIM_NOT_REPRODUCED_AFTER_FROZEN_REVIEW"
   },
   "batch_08_status": "BATCH_08_NOT_AUTHORIZED"
 }

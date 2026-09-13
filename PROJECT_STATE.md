@@ -1543,3 +1543,16 @@ the frozen claim. Launch a fresh blind read-only Sol/xhigh review of exact
   and supplied no semantic evidence, so literal zero path-level hits is not claimed.
 - No DB/file write or VerificationRecord occurred during review. Batch 07 dnw
   comparison is now authorized but has not yet occurred.
+
+## dnw Post-Review Batch 07 Comparison (2026-09-13)
+
+- After the cycle-2 blind verdict was frozen/published, the same reviewer opened
+  only `artifacts/semantic-campaign/roots/dnw.json` and verified SHA-256
+  `3de4b1c875a74909df9b6c0a32db65867f112c762128dc2edf4084584c7306ce`.
+- Classification: `HISTORICAL_CLAIM_NOT_REPRODUCED`. Batch 07 asserted a
+  universal STRONG near/low-pole nucleus. Current exact-set research found no
+  necessary distinctive residue across the 111-token dunya family; 3:45,
+  outcome constructions, and unresolved lexicalization leave the multiple-unit
+  competitor alive.
+- No Batch 07 review row was needed, no claim/review verdict changed, and no
+  file or DB write occurred during comparison.
