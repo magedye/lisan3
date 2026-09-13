@@ -1,0 +1,653 @@
+{
+  "artifact_type": "LISAN_ESW_CYCLE3_SCOPE_CORRECTION",
+  "artifact_revision": "ESW_CYCLE3_SCOPE_CORRECTION_V1_2026_09_13",
+  "generated_at_utc": "2026-09-13T08:33:01.9736173Z",
+  "trigger": {
+    "owner_authorization": "ESW_SCOPE_ONLY_CORRECTIVE_CYCLE_3",
+    "reported_fresh_review_verdict": "VERIFIED_NARROWER_SCOPE",
+    "use_of_reported_verdict": "Authorizes only the same-verse narrowing in this artifact; it does not change research_state, result_strength, canonical_state, or release authority."
+  },
+  "target": {
+    "expression": "ESw",
+    "arabic_label": "ع ص و",
+    "contract_type": "ROOT_CONCEPT",
+    "research_state": "UNRESOLVED",
+    "result_strength": "UNRESOLVED",
+    "claim_scope": "UNIVERSAL_OVER_EXACT_PRODUCTION_TOKEN_SET",
+    "exact_token_count": 12
+  },
+  "custody": {
+    "repository_branch": "five-root-governed-requalification",
+    "repository_head_at_initial_creation": "697695cddcef6829f5f1e594a7a2c9e996e376a3",
+    "repository_head_at_finalization": "fcd725acd3b2c7d0138dc9997ba1fff2494bee91",
+    "working_tree_was_dirty_before_write": true,
+    "pre_existing_work_preserved": true,
+    "files_written": [
+      "docs/evidence/requalification/esw_cycle3_scope_correction.json"
+    ],
+    "database_mode": "SQLITE_URI_MODE_RO_PLUS_PRAGMA_QUERY_ONLY",
+    "database_mutated": false,
+    "other_files_modified": false,
+    "commit_created": false
+  },
+  "source_isolation": {
+    "allowed_semantic_inputs": [
+      "Exact production-active Tanzil verse rows for the 12 confirmed ESw tokens",
+      "Exact QAC structural rows for root=ESw and attribution_status=CONFIRMED",
+      "Current source, methodology, and repository schema bindings"
+    ],
+    "prohibited_inputs": [
+      "Batch07 content",
+      "Persisted semantic_claims content",
+      "Persisted observation_artifacts content",
+      "PROJECT_STATE content",
+      "Other-root semantic artifacts",
+      "Dictionaries, tafsir, translations, heritage semantics, web semantics, or model memory as evidence",
+      "Adjacent Quran verse rows"
+    ],
+    "database_tables_read": [
+      "corpus_snapshots",
+      "structural_tokens filtered to exact ESw predicate",
+      "corpus_occurrences joined only on each target token's own verse_ref",
+      "research_runs target metadata only"
+    ],
+    "database_tables_not_read": [
+      "semantic_claims",
+      "observation_artifacts",
+      "hypotheses",
+      "essential_neighbors"
+    ],
+    "adjacent_verse_rows_loaded": false,
+    "prior_semantic_claim_content_read": false,
+    "prior_observation_content_read": false,
+    "batch07_content_read": false,
+    "external_semantic_content_read": false,
+    "model_parametric_memory_used_as_evidence": false,
+    "isolation_verdict": "CLEAN_SAME_VERSE_ONLY"
+  },
+  "source_bindings": {
+    "corpus_snapshot": {
+      "snapshot_id": "snap_tanzil_1_1_ac0724796cbb",
+      "canonical_text_source": "TANZIL_QURAN_UTHMANI",
+      "canonical_text_version": "1.1",
+      "canonical_text_sha256": "ac0724796cbbda0f4801470fbbd11d0f3c5802067bae0493466d0128b0c667af",
+      "validation_status": "VALIDATED",
+      "activation_status": "PRODUCTION_ACTIVE",
+      "fixture_only": false,
+      "verse_count": 6236,
+      "artifact_reference": "data/corpus/tanzil/tanzil-uthmani-1.1.txt",
+      "artifact_size_bytes": 1334737,
+      "identity_index_reference": "data/corpus/tanzil/quran-verse-index-v1.0.json",
+      "identity_index_sha256": "0d0a2273e82ebb0d9848ccbf831f1bb297c0fb255413c5aeb299bbfaf2bbc967"
+    },
+    "structural_layer": {
+      "source_id": "QAC_MORPHOLOGY",
+      "source_version": "0.4",
+      "extraction_version": "qac-0.4-import-v1",
+      "root_filter": "ESw",
+      "attribution_status_filter": "CONFIRMED",
+      "semantic_authority": "STRUCTURAL_ONLY"
+    },
+    "methodology": {
+      "methodology_revision_id": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+      "methodology_lifecycle_state": "CURRENT",
+      "source_reference": "skills/lisan-semantic-extraction/SKILL.md",
+      "source_sha256": "01784170cac4e715c1477cb6a04a2c34b21c4bdb91705aa1eb6b2a896efcedbd",
+      "allowed_use": "QURAN_INTERNAL_CUMULATIVE_RUN"
+    },
+    "read_time_file_hashes": {
+      "lisanapp.db": "f34436e278cba18bb68d9312d2066ae99b9d07be9d5dceaf4d9b181f1c45febe",
+      "data/corpus/tanzil/tanzil-uthmani-1.1.txt": "ac0724796cbbda0f4801470fbbd11d0f3c5802067bae0493466d0128b0c667af",
+      "data/corpus/tanzil/quran-verse-index-v1.0.json": "0d0a2273e82ebb0d9848ccbf831f1bb297c0fb255413c5aeb299bbfaf2bbc967",
+      "AGENTS.md": "0512fe7483999b38a2fcd0afd018fe8481e1a26964c6d805d56564630e556156",
+      "AUTHORITY_MAP.md": "6439e10895f295401f6fb89bd90e18e08a2a86e2ca3c49b435704d20014499f6",
+      "SIMPLIFIED_AI_AUTHORITY_AND_GOVERNANCE_CONTRACT.md": "7e26cc9f09eec183947fc6430fc5c3dfcf972fb1cb47d08039e6ae06ab7c1d30",
+      "docs/canonical/LISAN_PLATFORM_CANONICAL_IMPLEMENTATION_REFERENCE.md": "adf86e1dddf0d97d540315ce50bacfb922e1398ac1d74bc0da7c341bf7ad4086",
+      "docs/canonical/LISAN_PURITY_AND_STRUCTURAL_EVIDENCE_CONTRACT.md": "afbdb9d6c542fd1e562a6b10637d50d88443ea8610260224f39022af2d8fbc0b",
+      "docs/canonical/ADMISSION_TANZIL.md": "d3e1b7e046a2917be1df417c2b3afa42483e35e970144c645e07062f4666bec6",
+      "docs/canonical/ADMISSION_QAC.md": "4a3ffe025a0fae1740985a7cc2ba66373b0bd63e41b6df1640752f4e0660e626",
+      "skills/lisan-semantic-extraction/SKILL.md": "01784170cac4e715c1477cb6a04a2c34b21c4bdb91705aa1eb6b2a896efcedbd",
+      "backend/domain/schemas.py": "071d1ba9f40d98c477425d24848d78bdca1e2f34ceeed183a4c4d17b74d392fb"
+    }
+  },
+  "coverage": {
+    "query_predicate": "corpus_snapshots.activation_status=PRODUCTION_ACTIVE AND structural_tokens.root=ESw AND structural_tokens.attribution_status=CONFIRMED",
+    "confirmed_target_rows": 12,
+    "rows_joined_to_exact_same_verse": 12,
+    "unique_word_refs": 12,
+    "unique_verse_refs": 12,
+    "repository_observation_payloads": 12,
+    "missing_rows": 0,
+    "raw_tanzil_row_equality_checks_required": 12,
+    "index_coverage_verdict": "COMPLETE_FOR_EXACT_QUERY_PREDICATE",
+    "semantic_scope_verdict": "NARROWED_TO_EXACT_SAME_VERSE_RELATIONS",
+    "root_concept_sufficiency": "INSUFFICIENT_TO_ISOLATE_POSITIVE_BARE_ROOT_CONTENT"
+  },
+  "exact_ref_set": {
+    "word_refs": [
+      "2:60:7:2",
+      "7:107:2:1",
+      "7:117:6:1",
+      "7:160:14:2",
+      "20:18:3:1",
+      "20:66:6:2",
+      "26:32:2:1",
+      "26:44:3:2",
+      "26:45:3:1",
+      "26:63:6:2",
+      "27:10:2:1",
+      "28:31:3:1"
+    ],
+    "verse_refs": [
+      "2:60",
+      "7:107",
+      "7:117",
+      "7:160",
+      "20:18",
+      "20:66",
+      "26:32",
+      "26:44",
+      "26:45",
+      "26:63",
+      "27:10",
+      "28:31"
+    ]
+  },
+  "verse_evidence_registry": [
+    {
+      "word_ref": "2:60:7:2",
+      "verse_ref": "2:60",
+      "canonical_verse_line": 67,
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_2_60_7_2",
+      "occurrence_id": "occ_tanzil_1_1_002_060",
+      "verse_text": "وَإِذِ ٱسْتَسْقَىٰ مُوسَىٰ لِقَوْمِهِۦ فَقُلْنَا ٱضْرِب بِّعَصَاكَ ٱلْحَجَرَ فَٱنفَجَرَتْ مِنْهُ ٱثْنَتَا عَشْرَةَ عَيْنًا قَدْ عَلِمَ كُلُّ أُنَاسٍ مَّشْرَبَهُمْ كُلُوا۟ وَٱشْرَبُوا۟ مِن رِّزْقِ ٱللَّهِ وَلَا تَعْثَوْا۟ فِى ٱلْأَرْضِ مُفْسِدِينَ",
+      "field_anchors": {
+        "form": ["بِّعَصَاكَ"],
+        "syntax": ["ٱضْرِب بِّعَصَاكَ ٱلْحَجَرَ"],
+        "participant_roles": ["وَإِذِ ٱسْتَسْقَىٰ مُوسَىٰ لِقَوْمِهِۦ", "ٱضْرِب بِّعَصَاكَ ٱلْحَجَرَ"],
+        "local_context": ["وَإِذِ ٱسْتَسْقَىٰ مُوسَىٰ لِقَوْمِهِۦ", "فَٱنفَجَرَتْ مِنْهُ ٱثْنَتَا عَشْرَةَ عَيْنًا"],
+        "unresolved_ambiguity": ["بِّعَصَاكَ", "فَٱنفَجَرَتْ مِنْهُ"]
+      }
+    },
+    {
+      "word_ref": "7:107:2:1",
+      "verse_ref": "7:107",
+      "canonical_verse_line": 1061,
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_7_107_2_1",
+      "occurrence_id": "occ_tanzil_1_1_007_107",
+      "verse_text": "فَأَلْقَىٰ عَصَاهُ فَإِذَا هِىَ ثُعْبَانٌ مُّبِينٌ",
+      "field_anchors": {
+        "form": ["عَصَاهُ"],
+        "syntax": ["فَأَلْقَىٰ عَصَاهُ", "فَإِذَا هِىَ"],
+        "participant_roles": ["فَأَلْقَىٰ عَصَاهُ", "هِىَ ثُعْبَانٌ مُّبِينٌ"],
+        "local_context": ["فَأَلْقَىٰ عَصَاهُ", "فَإِذَا هِىَ ثُعْبَانٌ مُّبِينٌ"],
+        "unresolved_ambiguity": ["عَصَاهُ", "هِىَ ثُعْبَانٌ مُّبِينٌ"]
+      }
+    },
+    {
+      "word_ref": "7:117:6:1",
+      "verse_ref": "7:117",
+      "canonical_verse_line": 1071,
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_7_117_6_1",
+      "occurrence_id": "occ_tanzil_1_1_007_117",
+      "verse_text": "وَأَوْحَيْنَآ إِلَىٰ مُوسَىٰٓ أَنْ أَلْقِ عَصَاكَ فَإِذَا هِىَ تَلْقَفُ مَا يَأْفِكُونَ",
+      "field_anchors": {
+        "form": ["عَصَاكَ"],
+        "syntax": ["أَنْ أَلْقِ عَصَاكَ", "فَإِذَا هِىَ تَلْقَفُ"],
+        "participant_roles": ["وَأَوْحَيْنَآ إِلَىٰ مُوسَىٰٓ", "أَنْ أَلْقِ عَصَاكَ", "تَلْقَفُ مَا يَأْفِكُونَ"],
+        "local_context": ["وَأَوْحَيْنَآ إِلَىٰ مُوسَىٰٓ أَنْ أَلْقِ عَصَاكَ", "فَإِذَا هِىَ تَلْقَفُ مَا يَأْفِكُونَ"],
+        "unresolved_ambiguity": ["عَصَاكَ", "تَلْقَفُ مَا يَأْفِكُونَ"]
+      }
+    },
+    {
+      "word_ref": "7:160:14:2",
+      "verse_ref": "7:160",
+      "canonical_verse_line": 1114,
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_7_160_14_2",
+      "occurrence_id": "occ_tanzil_1_1_007_160",
+      "verse_text": "وَقَطَّعْنَٰهُمُ ٱثْنَتَىْ عَشْرَةَ أَسْبَاطًا أُمَمًا وَأَوْحَيْنَآ إِلَىٰ مُوسَىٰٓ إِذِ ٱسْتَسْقَىٰهُ قَوْمُهُۥٓ أَنِ ٱضْرِب بِّعَصَاكَ ٱلْحَجَرَ فَٱنۢبَجَسَتْ مِنْهُ ٱثْنَتَا عَشْرَةَ عَيْنًا قَدْ عَلِمَ كُلُّ أُنَاسٍ مَّشْرَبَهُمْ وَظَلَّلْنَا عَلَيْهِمُ ٱلْغَمَٰمَ وَأَنزَلْنَا عَلَيْهِمُ ٱلْمَنَّ وَٱلسَّلْوَىٰ كُلُوا۟ مِن طَيِّبَٰتِ مَا رَزَقْنَٰكُمْ وَمَا ظَلَمُونَا وَلَٰكِن كَانُوٓا۟ أَنفُسَهُمْ يَظْلِمُونَ",
+      "field_anchors": {
+        "form": ["بِّعَصَاكَ"],
+        "syntax": ["أَنِ ٱضْرِب بِّعَصَاكَ ٱلْحَجَرَ"],
+        "participant_roles": ["وَأَوْحَيْنَآ إِلَىٰ مُوسَىٰٓ", "إِذِ ٱسْتَسْقَىٰهُ قَوْمُهُۥٓ", "ٱضْرِب بِّعَصَاكَ ٱلْحَجَرَ"],
+        "local_context": ["إِذِ ٱسْتَسْقَىٰهُ قَوْمُهُۥٓ", "فَٱنۢبَجَسَتْ مِنْهُ ٱثْنَتَا عَشْرَةَ عَيْنًا"],
+        "unresolved_ambiguity": ["بِّعَصَاكَ", "فَٱنۢبَجَسَتْ مِنْهُ"]
+      }
+    },
+    {
+      "word_ref": "20:18:3:1",
+      "verse_ref": "20:18",
+      "canonical_verse_line": 2366,
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_20_18_3_1",
+      "occurrence_id": "occ_tanzil_1_1_020_018",
+      "verse_text": "قَالَ هِىَ عَصَاىَ أَتَوَكَّؤُا۟ عَلَيْهَا وَأَهُشُّ بِهَا عَلَىٰ غَنَمِى وَلِىَ فِيهَا مَـَٔارِبُ أُخْرَىٰ",
+      "field_anchors": {
+        "form": ["عَصَاىَ"],
+        "syntax": ["هِىَ عَصَاىَ", "عَلَيْهَا", "بِهَا", "فِيهَا"],
+        "participant_roles": ["عَصَاىَ", "أَتَوَكَّؤُا۟ عَلَيْهَا", "أَهُشُّ بِهَا عَلَىٰ غَنَمِى"],
+        "local_context": ["هِىَ عَصَاىَ أَتَوَكَّؤُا۟ عَلَيْهَا وَأَهُشُّ بِهَا عَلَىٰ غَنَمِى", "وَلِىَ فِيهَا مَـَٔارِبُ أُخْرَىٰ"],
+        "unresolved_ambiguity": ["مَـَٔارِبُ أُخْرَىٰ"]
+      }
+    },
+    {
+      "word_ref": "20:66:6:2",
+      "verse_ref": "20:66",
+      "canonical_verse_line": 2414,
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_20_66_6_2",
+      "occurrence_id": "occ_tanzil_1_1_020_066",
+      "verse_text": "قَالَ بَلْ أَلْقُوا۟ فَإِذَا حِبَالُهُمْ وَعِصِيُّهُمْ يُخَيَّلُ إِلَيْهِ مِن سِحْرِهِمْ أَنَّهَا تَسْعَىٰ",
+      "field_anchors": {
+        "form": ["وَعِصِيُّهُمْ"],
+        "syntax": ["حِبَالُهُمْ وَعِصِيُّهُمْ", "أَنَّهَا تَسْعَىٰ"],
+        "participant_roles": ["أَلْقُوا۟", "حِبَالُهُمْ وَعِصِيُّهُمْ", "يُخَيَّلُ إِلَيْهِ"],
+        "local_context": ["فَإِذَا حِبَالُهُمْ وَعِصِيُّهُمْ", "يُخَيَّلُ إِلَيْهِ مِن سِحْرِهِمْ أَنَّهَا تَسْعَىٰ"],
+        "unresolved_ambiguity": ["حِبَالُهُمْ وَعِصِيُّهُمْ", "يُخَيَّلُ إِلَيْهِ", "أَنَّهَا تَسْعَىٰ"]
+      }
+    },
+    {
+      "word_ref": "26:32:2:1",
+      "verse_ref": "26:32",
+      "canonical_verse_line": 2964,
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_26_32_2_1",
+      "occurrence_id": "occ_tanzil_1_1_026_032",
+      "verse_text": "فَأَلْقَىٰ عَصَاهُ فَإِذَا هِىَ ثُعْبَانٌ مُّبِينٌ",
+      "field_anchors": {
+        "form": ["عَصَاهُ"],
+        "syntax": ["فَأَلْقَىٰ عَصَاهُ", "فَإِذَا هِىَ"],
+        "participant_roles": ["فَأَلْقَىٰ عَصَاهُ", "هِىَ ثُعْبَانٌ مُّبِينٌ"],
+        "local_context": ["فَأَلْقَىٰ عَصَاهُ", "فَإِذَا هِىَ ثُعْبَانٌ مُّبِينٌ"],
+        "unresolved_ambiguity": ["عَصَاهُ", "هِىَ ثُعْبَانٌ مُّبِينٌ"]
+      }
+    },
+    {
+      "word_ref": "26:44:3:2",
+      "verse_ref": "26:44",
+      "canonical_verse_line": 2976,
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_26_44_3_2",
+      "occurrence_id": "occ_tanzil_1_1_026_044",
+      "verse_text": "فَأَلْقَوْا۟ حِبَالَهُمْ وَعِصِيَّهُمْ وَقَالُوا۟ بِعِزَّةِ فِرْعَوْنَ إِنَّا لَنَحْنُ ٱلْغَٰلِبُونَ",
+      "field_anchors": {
+        "form": ["وَعِصِيَّهُمْ"],
+        "syntax": ["فَأَلْقَوْا۟ حِبَالَهُمْ وَعِصِيَّهُمْ"],
+        "participant_roles": ["فَأَلْقَوْا۟", "حِبَالَهُمْ وَعِصِيَّهُمْ", "وَقَالُوا۟"],
+        "local_context": ["فَأَلْقَوْا۟ حِبَالَهُمْ وَعِصِيَّهُمْ", "بِعِزَّةِ فِرْعَوْنَ إِنَّا لَنَحْنُ ٱلْغَٰلِبُونَ"],
+        "unresolved_ambiguity": ["حِبَالَهُمْ وَعِصِيَّهُمْ"]
+      }
+    },
+    {
+      "word_ref": "26:45:3:1",
+      "verse_ref": "26:45",
+      "canonical_verse_line": 2977,
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_26_45_3_1",
+      "occurrence_id": "occ_tanzil_1_1_026_045",
+      "verse_text": "فَأَلْقَىٰ مُوسَىٰ عَصَاهُ فَإِذَا هِىَ تَلْقَفُ مَا يَأْفِكُونَ",
+      "field_anchors": {
+        "form": ["عَصَاهُ"],
+        "syntax": ["فَأَلْقَىٰ مُوسَىٰ عَصَاهُ", "فَإِذَا هِىَ تَلْقَفُ"],
+        "participant_roles": ["مُوسَىٰ", "عَصَاهُ", "تَلْقَفُ مَا يَأْفِكُونَ"],
+        "local_context": ["فَأَلْقَىٰ مُوسَىٰ عَصَاهُ", "فَإِذَا هِىَ تَلْقَفُ مَا يَأْفِكُونَ"],
+        "unresolved_ambiguity": ["عَصَاهُ", "تَلْقَفُ مَا يَأْفِكُونَ"]
+      }
+    },
+    {
+      "word_ref": "26:63:6:2",
+      "verse_ref": "26:63",
+      "canonical_verse_line": 2995,
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_26_63_6_2",
+      "occurrence_id": "occ_tanzil_1_1_026_063",
+      "verse_text": "فَأَوْحَيْنَآ إِلَىٰ مُوسَىٰٓ أَنِ ٱضْرِب بِّعَصَاكَ ٱلْبَحْرَ فَٱنفَلَقَ فَكَانَ كُلُّ فِرْقٍ كَٱلطَّوْدِ ٱلْعَظِيمِ",
+      "field_anchors": {
+        "form": ["بِّعَصَاكَ"],
+        "syntax": ["أَنِ ٱضْرِب بِّعَصَاكَ ٱلْبَحْرَ", "فَٱنفَلَقَ"],
+        "participant_roles": ["فَأَوْحَيْنَآ إِلَىٰ مُوسَىٰٓ", "ٱضْرِب بِّعَصَاكَ ٱلْبَحْرَ"],
+        "local_context": ["فَأَوْحَيْنَآ إِلَىٰ مُوسَىٰٓ أَنِ ٱضْرِب بِّعَصَاكَ ٱلْبَحْرَ", "فَٱنفَلَقَ فَكَانَ كُلُّ فِرْقٍ كَٱلطَّوْدِ ٱلْعَظِيمِ"],
+        "unresolved_ambiguity": ["بِّعَصَاكَ", "ٱلْبَحْرَ فَٱنفَلَقَ"]
+      }
+    },
+    {
+      "word_ref": "27:10:2:1",
+      "verse_ref": "27:10",
+      "canonical_verse_line": 3169,
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_27_10_2_1",
+      "occurrence_id": "occ_tanzil_1_1_027_010",
+      "verse_text": "وَأَلْقِ عَصَاكَ فَلَمَّا رَءَاهَا تَهْتَزُّ كَأَنَّهَا جَآنٌّ وَلَّىٰ مُدْبِرًا وَلَمْ يُعَقِّبْ يَٰمُوسَىٰ لَا تَخَفْ إِنِّى لَا يَخَافُ لَدَىَّ ٱلْمُرْسَلُونَ",
+      "field_anchors": {
+        "form": ["عَصَاكَ"],
+        "syntax": ["وَأَلْقِ عَصَاكَ", "رَءَاهَا تَهْتَزُّ", "كَأَنَّهَا جَآنٌّ"],
+        "participant_roles": ["وَأَلْقِ عَصَاكَ", "وَلَّىٰ مُدْبِرًا", "يَٰمُوسَىٰ لَا تَخَفْ"],
+        "local_context": ["فَلَمَّا رَءَاهَا تَهْتَزُّ كَأَنَّهَا جَآنٌّ", "وَلَّىٰ مُدْبِرًا وَلَمْ يُعَقِّبْ", "يَٰمُوسَىٰ لَا تَخَفْ"],
+        "unresolved_ambiguity": ["عَصَاكَ", "تَهْتَزُّ كَأَنَّهَا جَآنٌّ"]
+      }
+    },
+    {
+      "word_ref": "28:31:3:1",
+      "verse_ref": "28:31",
+      "canonical_verse_line": 3283,
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_28_31_3_1",
+      "occurrence_id": "occ_tanzil_1_1_028_031",
+      "verse_text": "وَأَنْ أَلْقِ عَصَاكَ فَلَمَّا رَءَاهَا تَهْتَزُّ كَأَنَّهَا جَآنٌّ وَلَّىٰ مُدْبِرًا وَلَمْ يُعَقِّبْ يَٰمُوسَىٰٓ أَقْبِلْ وَلَا تَخَفْ إِنَّكَ مِنَ ٱلْـَٔامِنِينَ",
+      "field_anchors": {
+        "form": ["عَصَاكَ"],
+        "syntax": ["أَلْقِ عَصَاكَ", "رَءَاهَا تَهْتَزُّ", "كَأَنَّهَا جَآنٌّ"],
+        "participant_roles": ["أَلْقِ عَصَاكَ", "وَلَّىٰ مُدْبِرًا", "يَٰمُوسَىٰٓ أَقْبِلْ وَلَا تَخَفْ"],
+        "local_context": ["فَلَمَّا رَءَاهَا تَهْتَزُّ كَأَنَّهَا جَآنٌّ", "وَلَّىٰ مُدْبِرًا وَلَمْ يُعَقِّبْ", "إِنَّكَ مِنَ ٱلْـَٔامِنِينَ"],
+        "unresolved_ambiguity": ["عَصَاكَ", "تَهْتَزُّ كَأَنَّهَا جَآنٌّ"]
+      }
+    }
+  ],
+  "repository_observation_payloads": [
+    {
+      "occurrence_ref": "2:60:7:2",
+      "form": "بِّعَصَاكَ: الصف البنيوي QAC يثبت form=N وpos_tag=N؛ السطح نفسه يتضمن الباء وضمير المخاطب «كَ».",
+      "syntax": "في «ٱضْرِب بِّعَصَاكَ ٱلْحَجَرَ» يتعلق الاسم المسبوق بالباء بفعل الأمر، ويأتي الحجر مفعولًا مستهدفًا للفعل.",
+      "participant_roles": "تذكر الآية موسى في «ٱسْتَسْقَىٰ مُوسَىٰ لِقَوْمِهِۦ»؛ وفي الأمر فاعل مخاطب مفرد، والعصا في علاقة الباء بالضرب، والحجر هدف مصرح به.",
+      "local_context": "داخل 2:60 نفسها ينتقل النص من استسقاء موسى لقومه إلى «ٱضْرِب بِّعَصَاكَ ٱلْحَجَرَ»، ثم يسند الانفجار إلى مرجع «مِنْهُ» بعد ذكر الحجر.",
+      "unresolved_ambiguity": "لا تفصل الآية بين ما قد يكون وصفًا للفظة وبين ما يضيفه تركيب الضرب بالباء؛ والانفجار نتيجة في الجملة نفسها لا يثبت مساهمة للجذر."
+    },
+    {
+      "occurrence_ref": "7:107:2:1",
+      "form": "عَصَاهُ: الصف البنيوي QAC يثبت form=N وpos_tag=N؛ السطح اسم مع ضمير الغائب «هُ».",
+      "syntax": "في «فَأَلْقَىٰ عَصَاهُ» الاسم مفعول به لفعل ذي فاعل مضمر، ثم تأتي «هِىَ» بعد «فَإِذَا» إحالة إلى الاسم المؤنث المذكور.",
+      "participant_roles": "فاعل «أَلْقَىٰ» غير مسمى داخل 7:107؛ الهاء تحدد منسوبًا إليه، والعصا ثيمة الإلقاء ثم مرجع الضمير في الخبر.",
+      "local_context": "تنحصر 7:107 في تسلسل «فَأَلْقَىٰ عَصَاهُ» ثم «فَإِذَا هِىَ ثُعْبَانٌ مُّبِينٌ» دون استدعاء سبب سابق أو حدث لاحق.",
+      "unresolved_ambiguity": "الخبر اللاحق داخل الآية لا يحدد هل له مساهمة من اللفظة أو الجذر، ولا يفسر النص نفسه استمرارية هوية المرجع."
+    },
+    {
+      "occurrence_ref": "7:117:6:1",
+      "form": "عَصَاكَ: الصف البنيوي QAC يثبت form=N وpos_tag=N؛ السطح اسم مع ضمير المخاطب «كَ».",
+      "syntax": "في «أَنْ أَلْقِ عَصَاكَ» الاسم مفعول به لأمر موجّه بعد «إِلَىٰ مُوسَىٰ»، ثم «هِىَ» مرجع نحوي يتلوه «تَلْقَفُ».",
+      "participant_roles": "تصرح 7:117 بجهة الوحي بصيغة «أَوْحَيْنَا» وبموسى متلقيًا؛ فاعل الأمر مخاطب، والعصا ثيمة الإلقاء ثم فاعل «تَلْقَفُ»، و«مَا يَأْفِكُونَ» متأثر.",
+      "local_context": "داخل 7:117 نفسها يرد الوحي إلى موسى بأن يلقي عصاه، ثم «فَإِذَا هِىَ تَلْقَفُ مَا يَأْفِكُونَ»؛ لا تدخل أفعال من آيات مجاورة.",
+      "unresolved_ambiguity": "التلقف محمول ما بعد الإلقاء في هذا الصف؛ لا يبين الصف وحده هل هو من معنى اللفظة أو الجذر أو من تحقق المشهد."
+    },
+    {
+      "occurrence_ref": "7:160:14:2",
+      "form": "بِّعَصَاكَ: الصف البنيوي QAC يثبت form=N وpos_tag=N؛ السطح يتضمن الباء وضمير المخاطب «كَ».",
+      "syntax": "في «أَنِ ٱضْرِب بِّعَصَاكَ ٱلْحَجَرَ» يتعلق الاسم بالباء بفعل الأمر، والحجر مفعول مستهدف، ثم يعود «مِنْهُ» على المذكور الأقرب.",
+      "participant_roles": "تذكر 7:160 موسى متلقيًا للوحي وقومه طالبي السقيا؛ فاعل الأمر مخاطب، والعصا في علاقة الباء بالضرب، والحجر هدف مصرح به.",
+      "local_context": "داخل 7:160 نفسها يرد استسقاء القوم والوحي إلى موسى بأمر الضرب، ثم «فَٱنۢبَجَسَتْ مِنْهُ ٱثْنَتَا عَشْرَةَ عَيْنًا».",
+      "unresolved_ambiguity": "الوساطة مقيدة بتركيب الآية، والانبجاس نتيجة مسندة بعد ذكر الحجر؛ لا يعزل ذلك معنى جذريًا موجبًا."
+    },
+    {
+      "occurrence_ref": "20:18:3:1",
+      "form": "عَصَاىَ: الصف البنيوي QAC يثبت form=N وpos_tag=N؛ السطح اسم مع ياء المتكلم.",
+      "syntax": "في «هِىَ عَصَاىَ» الاسم خبر للضمير، ثم تحيل ضمائر «عَلَيْهَا» و«بِهَا» و«فِيهَا» إلى المذكور نفسه.",
+      "participant_roles": "المتكلم في «قَالَ» ينسب العصا إلى نفسه، وهو فاعل «أَتَوَكَّؤُا۟» و«أَهُشُّ» وصاحب «لِىَ»؛ العصا متعلق الأفعال والضمائر، والغنم متعلق الهش.",
+      "local_context": "تصرح 20:18 وحدها بالتسمية «عَصَاىَ»، وبالتوكؤ والهش، ثم تترك «مَـَٔارِبُ أُخْرَىٰ» غير مفصلة.",
+      "unresolved_ambiguity": "المآرب الأخرى غير معدودة، فلا تكون الوظيفتان تعريفًا حصريًا للفظة، ولا تفصل الآية بين اللفظة وbare root."
+    },
+    {
+      "occurrence_ref": "20:66:6:2",
+      "form": "وَعِصِيُّهُمْ: الصف البنيوي QAC يثبت form=N وpos_tag=N؛ السطح جمع مع واو العطف وضمير الجمع «هُمْ».",
+      "syntax": "في «حِبَالُهُمْ وَعِصِيُّهُمْ» الاسم معطوف مرفوع، ثم يأتي «أَنَّهَا تَسْعَىٰ» بعد إسناد التخييل إلى متلق مفرد في «إِلَيْهِ».",
+      "participant_roles": "تتضمن 20:66 أمر الجمع «أَلْقُوا۟»؛ الحبال والعصي منسوبة إلى جماعة بضمير «هُمْ»، ومتلقّي التخييل مشار إليه بـ«إِلَيْهِ» من غير تسمية داخل الصف.",
+      "local_context": "تذكر 20:66 وحدها «أَلْقُوا۟»، ثم ظهور «حِبَالُهُمْ وَعِصِيُّهُمْ»، وتقيّد السعي بـ«يُخَيَّلُ إِلَيْهِ مِن سِحْرِهِمْ».",
+      "unresolved_ambiguity": "لا يحسم التركيب توزيع السعي المتخيل على كل عنصر، ومشاركة الحبال في الإسناد تمنع جعل الحركة فرقًا موجبًا للفظة أو الجذر."
+    },
+    {
+      "occurrence_ref": "26:32:2:1",
+      "form": "عَصَاهُ: الصف البنيوي QAC يثبت form=N وpos_tag=N؛ السطح اسم مع ضمير الغائب «هُ».",
+      "syntax": "في «فَأَلْقَىٰ عَصَاهُ» الاسم مفعول به لفاعل مضمر غير مسمى في الآية، ثم تأتي «هِىَ» بعد «فَإِذَا» إحالة إلى الاسم.",
+      "participant_roles": "فاعل الإلقاء غير مسمى داخل 26:32؛ الهاء تحدد منسوبًا إليه، والعصا ثيمة الإلقاء ثم مرجع الخبر.",
+      "local_context": "تنحصر 26:32 في «فَأَلْقَىٰ عَصَاهُ» ثم «فَإِذَا هِىَ ثُعْبَانٌ مُّبِينٌ» دون تعليل من صف سابق.",
+      "unresolved_ambiguity": "الخبر داخل الآية لا يثبت الثعبانية أو التحول مساهمة في اللفظة أو الجذر، ولا يفسر النص نفسه استمرارية المرجع."
+    },
+    {
+      "occurrence_ref": "26:44:3:2",
+      "form": "وَعِصِيَّهُمْ: الصف البنيوي QAC يثبت form=N وpos_tag=N؛ السطح جمع مع واو العطف وضمير الجمع «هُمْ».",
+      "syntax": "في «فَأَلْقَوْا۟ حِبَالَهُمْ وَعِصِيَّهُمْ» الاسم معطوف منصوب على «حِبَالَهُمْ»، وكلاهما مفعول للفعل نفسه.",
+      "participant_roles": "واو الجماعة في «أَلْقَوْا۟» و«قَالُوا۟» تدل على فاعلين جمعًا؛ الحبال والعصي منسوبة إليهم، ويذكر القول «فِرْعَوْنَ» صراحة.",
+      "local_context": "تجمع 26:44 نفسها إلقاء الحبال والعصي وقول الجماعة «بِعِزَّةِ فِرْعَوْنَ إِنَّا لَنَحْنُ ٱلْغَٰلِبُونَ».",
+      "unresolved_ambiguity": "العطف يثبت اشتراك الحبال والعصي في الإلقاء والملكية داخل الصف، ولا يثبت ترادفًا أو فرقًا دلاليًا موجبًا."
+    },
+    {
+      "occurrence_ref": "26:45:3:1",
+      "form": "عَصَاهُ: الصف البنيوي QAC يثبت form=N وpos_tag=N؛ السطح اسم مع ضمير الغائب «هُ».",
+      "syntax": "في «فَأَلْقَىٰ مُوسَىٰ عَصَاهُ» الاسم مفعول به وفاعله موسى مصرح به، ثم «هِىَ» مرجع يتلوه «تَلْقَفُ».",
+      "participant_roles": "موسى فاعل مصرح به؛ العصا منسوبة إليه وثيمة الإلقاء ثم فاعل «تَلْقَفُ»، و«مَا يَأْفِكُونَ» متأثر في الآية نفسها.",
+      "local_context": "تصرح 26:45 وحدها بإلقاء موسى عصاه ثم «فَإِذَا هِىَ تَلْقَفُ مَا يَأْفِكُونَ»؛ لا يدخل إلقاء سابق أو حدث تال.",
+      "unresolved_ambiguity": "التلقف محمول لاحق للإلقاء في الصف نفسه؛ لا يحدد الصف هل هو من اللفظة أو الجذر أو من تحقق المشهد."
+    },
+    {
+      "occurrence_ref": "26:63:6:2",
+      "form": "بِّعَصَاكَ: الصف البنيوي QAC يثبت form=N وpos_tag=N؛ السطح يتضمن الباء وضمير المخاطب «كَ».",
+      "syntax": "في «أَنِ ٱضْرِب بِّعَصَاكَ ٱلْبَحْرَ» يتعلق الاسم بالباء بفعل الأمر، والبحر مفعول مستهدف، ثم يسند «فَٱنفَلَقَ» إلى البحر.",
+      "participant_roles": "تصرح 26:63 بالوحي إلى موسى، فيكون مخاطب الأمر؛ العصا في علاقة الباء بالضرب، والبحر هدف مصرح به وفاعل «ٱنفَلَقَ».",
+      "local_context": "داخل 26:63 وحدها يرد الوحي إلى موسى بأمر ضرب البحر بالعصا، ثم «فَٱنفَلَقَ فَكَانَ كُلُّ فِرْقٍ كَٱلطَّوْدِ ٱلْعَظِيمِ».",
+      "unresolved_ambiguity": "الانفلاق وما بعده مسندان إلى البحر وفرقِه داخل الآية؛ مشاركة العصا في تركيب الباء لا تعزل معنى جذريًا مميزًا."
+    },
+    {
+      "occurrence_ref": "27:10:2:1",
+      "form": "عَصَاكَ: الصف البنيوي QAC يثبت form=N وpos_tag=N؛ السطح اسم مع ضمير المخاطب «كَ».",
+      "syntax": "في «وَأَلْقِ عَصَاكَ» الاسم مفعول به لأمر، ثم يعود عليه ضمير «هَا» في «رَءَاهَا» و«كَأَنَّهَا»، ويأتي «تَهْتَزُّ» ضمن مشهد الرؤية.",
+      "participant_roles": "المخاطب يسمى موسى في «يَٰمُوسَىٰ»؛ هو فاعل الأمر المفهوم، ثم راءٍ ومدبر، والعصا ثيمة الإلقاء ومرجع ضمائر الرؤية والتشبيه.",
+      "local_context": "تجمع 27:10 نفسها أمر إلقاء العصا، ورؤيتها تهتز كأنها جان، وإدبار موسى، ثم خطاب «لَا تَخَفْ».",
+      "unresolved_ambiguity": "الحركة والتشبيه والخوف علاقات داخل هذا الصف بعد الإلقاء؛ لا تثبت core للفظة أو للجذر، ولا يظهر هدف خارجي تتوسط العصا الفعل نحوه."
+    },
+    {
+      "occurrence_ref": "28:31:3:1",
+      "form": "عَصَاكَ: الصف البنيوي QAC يثبت form=N وpos_tag=N؛ السطح اسم مع ضمير المخاطب «كَ».",
+      "syntax": "في «أَلْقِ عَصَاكَ» الاسم مفعول به لأمر، ثم يعود عليه ضمير «هَا» في «رَءَاهَا» و«كَأَنَّهَا»، ويأتي «تَهْتَزُّ» ضمن مشهد الرؤية.",
+      "participant_roles": "المخاطب يسمى موسى في «يَٰمُوسَىٰٓ»؛ هو فاعل الأمر المفهوم ثم راءٍ ومدبر، والعصا ثيمة الإلقاء ومرجع الضمائر.",
+      "local_context": "تجمع 28:31 نفسها أمر إلقاء العصا، ورؤيتها تهتز كأنها جان، وإدبار موسى، ثم الأمر بالإقبال وعدم الخوف وبيان الأمان.",
+      "unresolved_ambiguity": "الحركة والتشبيه والخوف والأمان علاقات داخل الصف بعد الإلقاء؛ لا تفصل مساهمة اللفظة عن bare root، ولا يظهر هدف خارجي مستقل."
+    }
+  ],
+  "bounded_lexeme_and_construction_findings": {
+    "lexeme_family": {
+      "status": "SUPPORTED_AS_STRUCTURAL_SURFACE_FAMILY_NOT_SEMANTIC_DEFINITION",
+      "finding": "الصفوف المؤكدة الاثنا عشر كلها form=N وpos_tag=N من أسطح «عصا/عصي»: عشرة مفردة واثنان جمع، وكل سطح يحمل ضمير إضافة ظاهرًا.",
+      "limit": "هذه بنية اسمية وصرف ظاهر؛ لا يثبتان تعريفًا دلاليًا غير دائري للـlexeme ولا bare-root meaning."
+    },
+    "construction_findings": [
+      {
+        "class_id": "LOCAL_PREDICATION_AND_USES",
+        "refs": ["20:18:3:1"],
+        "finding": "خبر اسمي مع التوكؤ والهش و«مآرب أخرى» في الآية نفسها.",
+        "limit": "استعمالات محلية غير حصرية."
+      },
+      {
+        "class_id": "BI_MARKED_STRIKE_STONE",
+        "refs": ["2:60:7:2", "7:160:14:2"],
+        "finding": "اسم بالباء متعلق بأمر ضرب الحجر في كل صف.",
+        "limit": "الباء والفعل والهدف والنتيجة تبقى في البناء والصف."
+      },
+      {
+        "class_id": "BI_MARKED_STRIKE_SEA",
+        "refs": ["26:63:6:2"],
+        "finding": "اسم بالباء متعلق بأمر ضرب البحر في الصف نفسه.",
+        "limit": "الانفلاق مسند إلى البحر ولا يعرّف الجذر."
+      },
+      {
+        "class_id": "CAST_THEN_SNAKE_PREDICATION",
+        "refs": ["7:107:2:1", "26:32:2:1"],
+        "finding": "ثيمة إلقاء يتبعها خبر «ثعبان مبين» داخل كل صف.",
+        "limit": "الخبر المحلي لا يرقى إلى root content."
+      },
+      {
+        "class_id": "CAST_THEN_SWALLOWING",
+        "refs": ["7:117:6:1", "26:45:3:1"],
+        "finding": "ثيمة إلقاء يتبعها إسناد التلقف داخل كل صف.",
+        "limit": "التلقف محمول محلي بعد الإلقاء."
+      },
+      {
+        "class_id": "CAST_THEN_MOVEMENT_SIMILE",
+        "refs": ["27:10:2:1", "28:31:3:1"],
+        "finding": "ثيمة أمر إلقاء ثم رؤية واهتزاز وتشبيه داخل كل صف.",
+        "limit": "الحركة والتشبيه من المشهد المحلي."
+      },
+      {
+        "class_id": "PLURAL_COORDINATED_WITH_ROPES_APPARENT_MOTION",
+        "refs": ["20:66:6:2"],
+        "finding": "جمع منسق مع الحبال داخل تخييل مصرح به في الصف.",
+        "limit": "الإسناد مشترك ومقيد بالتخييل والسحر."
+      },
+      {
+        "class_id": "PLURAL_COORDINATED_WITH_ROPES_CAST_OBJECTS",
+        "refs": ["26:44:3:2"],
+        "finding": "جمع منسق مع الحبال بوصفهما مفعولي الإلقاء في الصف.",
+        "limit": "الإلقاء والإضافة لا يثبتان فرقًا موجبًا لـESw."
+      }
+    ],
+    "positive_bare_root_isolated": false,
+    "strongest_honest_root_verdict": "UNRESOLVED"
+  },
+  "correction_diff": {
+    "semantic_status_change": "NONE",
+    "token_set_change": "NONE",
+    "source_scope_change": "OBSERVATION_PROSE_NARROWED_TO_EXACT_SAME_VERSE_ONLY",
+    "rows": [
+      {"occurrence_ref": "2:60:7:2", "action": "AUDITED_NO_ADJACENT_DEPENDENCY", "removed_scope": null},
+      {"occurrence_ref": "7:107:2:1", "action": "REWRITE", "removed_scope": "سبب الإلقاء المستفاد من صف سابق؛ أبقي فعل الإلقاء والخبر الموجودين في 7:107 فقط."},
+      {"occurrence_ref": "7:117:6:1", "action": "REWRITE", "removed_scope": "فعل جماعة في صف سابق وحكم في صف تال؛ أبقي الوحي والإلقاء والتلقف الموجود في 7:117 فقط."},
+      {"occurrence_ref": "7:160:14:2", "action": "AUDITED_NO_ADJACENT_DEPENDENCY", "removed_scope": null},
+      {"occurrence_ref": "20:18:3:1", "action": "AUDITED_AND_NARROWED_SPEAKER_IDENTITY", "removed_scope": "اسم المتكلم غير الموجود في 20:18؛ أبقي أدوار المتكلم والمالك المرموزة في الصف نفسه."},
+      {"occurrence_ref": "20:66:6:2", "action": "REWRITE", "removed_scope": "هوية المتكلم والمخاطب والجماعة، وفعل أو خوف من صفوف مجاورة؛ أبقي الأمر والعطف والتخييل والسحر والسعي في 20:66 فقط."},
+      {"occurrence_ref": "26:32:2:1", "action": "REWRITE", "removed_scope": "طلب البرهان وهوية فاعل الإلقاء من صف سابق؛ أبقي الإلقاء والخبر الموجودين في 26:32 فقط."},
+      {"occurrence_ref": "26:44:3:2", "action": "AUDITED_AND_NARROWED_ACTOR_LABEL", "removed_scope": "تسمية فاعلي الجمع باسم غير وارد في 26:44؛ أبقي واو الجماعة والإضافة والقول الصريح فقط."},
+      {"occurrence_ref": "26:45:3:1", "action": "REWRITE", "removed_scope": "إلقاء سابق وسجود لاحق من صفوف مجاورة؛ أبقي إلقاء موسى والتلقف في 26:45 فقط."},
+      {"occurrence_ref": "26:63:6:2", "action": "REWRITE", "removed_scope": "قول سابق وإطار نجاة سابق أو لاحق؛ أبقي الوحي والأمر والانفلاق والتشبيه الموجود في 26:63 فقط."},
+      {"occurrence_ref": "27:10:2:1", "action": "AUDITED_NO_ADJACENT_DEPENDENCY", "removed_scope": null},
+      {"occurrence_ref": "28:31:3:1", "action": "REWRITE", "removed_scope": "موضع النداء وعلامة اليد من صفوف مجاورة؛ أبقي الإلقاء والرؤية والإدبار وخطاب الأمان في 28:31 فقط."}
+    ],
+    "judgment_preserved": "ROOT_CONCEPT UNRESOLVED / UNRESOLVED",
+    "bounded_findings_preserved": "Exact nominal surfaces and exact same-verse construction classes only",
+    "semantic_widening": false
+  },
+  "source_audit": {
+    "policy": "For each repository observation payload, every semantic assertion must terminate in its matching structural row and one or more literal substrings of its exact joined corpus_occurrence verse_text. No adjacent verse may supply actor identity, request, antecedent event, or next event.",
+    "per_row": [
+      {"occurrence_ref": "2:60:7:2", "exact_verse_ref": "2:60", "adjacent_clause_present": false, "all_field_anchors_same_row": true, "verdict": "PASS"},
+      {"occurrence_ref": "7:107:2:1", "exact_verse_ref": "7:107", "adjacent_clause_present": false, "all_field_anchors_same_row": true, "verdict": "PASS"},
+      {"occurrence_ref": "7:117:6:1", "exact_verse_ref": "7:117", "adjacent_clause_present": false, "all_field_anchors_same_row": true, "verdict": "PASS"},
+      {"occurrence_ref": "7:160:14:2", "exact_verse_ref": "7:160", "adjacent_clause_present": false, "all_field_anchors_same_row": true, "verdict": "PASS"},
+      {"occurrence_ref": "20:18:3:1", "exact_verse_ref": "20:18", "adjacent_clause_present": false, "all_field_anchors_same_row": true, "verdict": "PASS"},
+      {"occurrence_ref": "20:66:6:2", "exact_verse_ref": "20:66", "adjacent_clause_present": false, "all_field_anchors_same_row": true, "verdict": "PASS"},
+      {"occurrence_ref": "26:32:2:1", "exact_verse_ref": "26:32", "adjacent_clause_present": false, "all_field_anchors_same_row": true, "verdict": "PASS"},
+      {"occurrence_ref": "26:44:3:2", "exact_verse_ref": "26:44", "adjacent_clause_present": false, "all_field_anchors_same_row": true, "verdict": "PASS"},
+      {"occurrence_ref": "26:45:3:1", "exact_verse_ref": "26:45", "adjacent_clause_present": false, "all_field_anchors_same_row": true, "verdict": "PASS"},
+      {"occurrence_ref": "26:63:6:2", "exact_verse_ref": "26:63", "adjacent_clause_present": false, "all_field_anchors_same_row": true, "verdict": "PASS"},
+      {"occurrence_ref": "27:10:2:1", "exact_verse_ref": "27:10", "adjacent_clause_present": false, "all_field_anchors_same_row": true, "verdict": "PASS"},
+      {"occurrence_ref": "28:31:3:1", "exact_verse_ref": "28:31", "adjacent_clause_present": false, "all_field_anchors_same_row": true, "verdict": "PASS"}
+    ],
+    "forbidden_adjacent_narrative_markers_in_payloads": [
+      "الآية السابقة",
+      "الآية التالية",
+      "في السياق السابق",
+      "في السياق اللاحق",
+      "بعد طلب الإتيان",
+      "بعد فعل السحرة",
+      "بعد إلقاء السحرة",
+      "ثم يُلقى السحرة",
+      "وتتلوها علامة اليد",
+      "بعد قول موسى إن ربه سيهديه"
+    ],
+    "forbidden_marker_hits": 0,
+    "overall_verdict": "PASS_EXACT_SAME_VERSE_ONLY"
+  },
+  "repository_payload_projection": {
+    "contract_type": "ROOT_CONCEPT",
+    "research_state": "UNRESOLVED",
+    "claim_scope": "UNIVERSAL",
+    "sampling_basis": "فحص جميع الصفوف البنيوية الاثني عشر المنسوبة إلى ESw بحالة CONFIRMED في لقطة Tanzil الوحيدة PRODUCTION_ACTIVE، وربط كل صف بموضعه النصي الدقيق؛ لا تدخل أي آية مجاورة في ملاحظة الصف أو حجته.",
+    "result_strength": "UNRESOLVED",
+    "preferred_conclusion": null,
+    "root_concept": null,
+    "plain_explanation": "تثبت المادة أسرة اسمية سطحية واحدة «عصا/عصي» واستعمالات وأدوارًا محلية متعددة، لكنها لا توفر تغايرًا اشتقاقيًا أو مقارنة مميزة تعزل مساهمة الجذر من معنى اللفظة والصيغة والتركيب والسياق. لذلك لا يصح تفضيل مفهوم جذري موجب.",
+    "semantic_boundary": "يبقى في طبقة اللفظة والبناء: الأسطح الاسمية، الملكية الصرفية الظاهرة، التوكؤ والهش والمآرب المحلية، الضرب بالباء، الإلقاء، والتنسيق مع الحبال. وتبقى في السياق: الماء والانفلاق والثعبانية والتلقف والاهتزاز والسعي المتخيل والخوف. لا يرقى أي منها إلى bare-root meaning دون بقية موجبة مميزة واختبار فصل.",
+    "layer_attribution": {
+      "root": "UNRESOLVED: لم تُعزل بقية موجبة غير دائرية ومميزة عبر المادة المؤكدة.",
+      "derivation_inflection": "جميع الصفوف اسمية N؛ عشرة أسطح مفردة وسطحان جمعيان، مع ضمير ملكية ظاهر في الجميع؛ لا يوجد تغاير اشتقاقي مستقل.",
+      "lexeme": "تثبت أسرة سطحية «عصا/عصي» وحساب استعمالات محدود، لا تعريفًا دلاليًا مستقلاً ولا root core.",
+      "form": "الباء والواو والعدد والضمائر مساهمات صرفية أو شكلية محلية.",
+      "construction": "خبر مع استعمالات في موضع، ضرب بالباء في ثلاثة، ثيمة إلقاء في سبعة، وجمع منسق داخل تخييل حركة في موضع.",
+      "participant_roles": "المالك أو المتكلم أو المخاطب أو الفاعل أو المتلقي لا يسمى إلا حيث تسميه الآية نفسها؛ والعصا واسطة أو ثيمة أو مرجع وفق بناء صفها فقط.",
+      "context_discourse": "المحمولات والنتائج وخطاب الخوف أو الأمان لا تستخدم إلا إذا وردت في verse_ref نفسه، ولا تعيد تعريف الجذر.",
+      "local_meaning": "كل استعمال محفوظ بمرجعه الدقيق وبحدود الآية نفسها ولا يعمم خارج فئته.",
+      "final_statement": "ROOT_CONCEPT=UNRESOLVED؛ النتيجة الموجبة المتاحة حساب lexeme/construction محدود فقط."
+    },
+    "supporting_evidence_refs": [
+      "token:2:60:7:2",
+      "token:7:107:2:1",
+      "token:7:117:6:1",
+      "token:7:160:14:2",
+      "token:20:18:3:1",
+      "token:20:66:6:2",
+      "token:26:32:2:1",
+      "token:26:44:3:2",
+      "token:26:45:3:1",
+      "token:26:63:6:2",
+      "token:27:10:2:1",
+      "token:28:31:3:1"
+    ],
+    "counterevidence_refs": [
+      "token:20:18:3:1",
+      "token:20:66:6:2",
+      "token:26:44:3:2",
+      "token:27:10:2:1",
+      "token:28:31:3:1"
+    ],
+    "unresolved_cases": [
+      "فصل مساهمة root عن الأسرة الاسمية «عصا/عصي» مع غياب مشتق أو POS أو وحدة معجمية ثانية داخل ESw.",
+      "استخراج بقية موجبة مميزة أمام جار أساسي من المستوى نفسه؛ اختبار الحبال الحالي سلبي فقط.",
+      "تعيين ما يبقى بعد طرح الملكية والأفعال والباء والعطف والمحمولات اللاحقة دون الوقوع في الدائرية أو العمومية.",
+      "حد «مآرب أخرى» في 20:18 غير مفصل داخل المادة المأذونة."
+    ],
+    "hard_cases": [
+      "token:20:18:3:1 يثبت وظائف عادية متعددة وغير حصرية، فيعارض النوى القائمة على مشهد خارق أو فعل واحد.",
+      "token:20:66:6:2 وtoken:26:44:3:2 ينسقان العصي مع الحبال في أطر مشتركة، فيمنعان اعتبار الملكية أو الإلقاء أو الحركة الظاهرة بقية مميزة.",
+      "token:2:60:7:2 وtoken:7:160:14:2 وtoken:26:63:6:2 تشترك في بناء الضرب مع اختلاف الهدف والنتيجة.",
+      "صفوف الإلقاء ذات المحمول اللاحق تتفرق إلى خبر ثعبان وتلقف وتشبيه حركة، فلا يصح تعميم المحمول اللاحق.",
+      "الصفوف الاثنا عشر كلها اسمية من الأسرة نفسها، فلا يوجد تغاير اشتقاقي يعزل bare root."
+    ],
+    "strongest_counterexample": "token:20:18:3:1 هو المعارض الأوسع للنوى القائمة على التحول أو الإلقاء أو الضرب أو الأثر الخارق أو الوظيفة الحصرية؛ ويضيف token:20:66:6:2 مع token:26:44:3:2 اختبارًا مطابقًا يهدم البقايا العامة المشتركة مع الحبال، بينما ينقض token:27:10:2:1 مع token:28:31:3:1 صياغة الوساطة نحو هدف خارجي.",
+    "strongest_competitor": "C0_LEXEME_CONSTRUCTION_CONTEXT_ONLY: تكفي الأسرة الاسمية وفئات الصيغة والبناء والمشاركين والسياق لتفسير المشهود؛ ولم تُميز الأدلة بينها وبين أي مرشح جذري موجب غير دائري.",
+    "rejection_condition": null,
+    "falsification_status": "NOT_REQUIRED",
+    "reopen_conditions": [
+      "تغير لقطة الإنتاج أو مجموعة صفوف ESw المؤكدة الدقيقة.",
+      "تغير إسناد root أو word identity أو form أو POS أو attribution_status لأي صف مستهدف.",
+      "ظهور دليل قرآني داخلي مقبول يوفر مشتقًا أو وحدة معجمية أو POS مختلفًا يختبر ثبات الجذر.",
+      "توافر corpus مأذون لجار أساسي من المستوى نفسه يسمح باختبار فرق موجب عادل.",
+      "إثبات invariant موجب لكل صف بعد طرح الملكية والصيغة والبناء والمشاركين والسياق.",
+      "صياغة مرشح جديد بتنبؤ سابق للفحص يميزه من C0 ومن الحبال في السياق المطابق.",
+      "تغير جوهري في الحوكمة أو المنهجية النشطة.",
+      "انكشاف أي محتوى دلالي محظور؛ وعندها تلزم إعادة تجميع معزولة جديدة."
+    ]
+  },
+  "validation_claims": {
+    "json_valid": true,
+    "observation_payload_count": 12,
+    "observation_payload_exact_schema_field_set": true,
+    "observation_payloads_pydantic_valid": true,
+    "all_observation_fields_nonblank": true,
+    "observation_refs_unique": true,
+    "observation_refs_equal_exact_database_set": true,
+    "judgment_pydantic_valid": true,
+    "judgment_support_refs_resolve": true,
+    "judgment_counter_refs_resolve": true,
+    "all_claimed_arabic_anchors_are_exact_substrings": true,
+    "every_registry_verse_equals_joined_database_row": true,
+    "every_registry_verse_equals_canonical_tanzil_line": true,
+    "forbidden_adjacent_narrative_marker_hits": 0,
+    "root_judgment_preserved": "UNRESOLVED/UNRESOLVED"
+  },
+  "integrity": {
+    "hash_algorithm": "SHA-256",
+    "canonicalization": "UTF-8 JSON; ensure_ascii=false; object keys sorted; separators comma and colon; component hashes cover the named component value; artifact_core_sha256 excludes the complete integrity object.",
+    "component_hashes": {
+      "source_bindings_sha256": "88e85d4fc7b91a3897486c1e21d8620e1300b7bccb7685f1dabad70361113c45",
+      "exact_ref_set_sha256": "d1c101a3f8bc94e8e35c2a6b27aa1143935841cfa20089fa3fe2497c5f4566e3",
+      "verse_evidence_registry_sha256": "389046cee17d5f6e116efddb01b6d16cef84713b9ebbedcce336ee8231c12b56",
+      "repository_observation_payloads_sha256": "046db945a9de1b62caf18acf3429e061333639b0b762c9494cae30402a6f7b02",
+      "bounded_lexeme_and_construction_findings_sha256": "7fa76cc8fda6b542ec42cad116c28bb32491247935893aa95f99c3eee9e94b3b",
+      "correction_diff_sha256": "1c288ec0e2abb78d4822797333ed137fe7f936ca8dbf142a10faf7c918e5e3a5",
+      "source_audit_sha256": "926f437311ff261e251b7803b9c51551127aa23347eebd390662d250ce6d2909",
+      "repository_payload_projection_sha256": "2fb2d42d3196043168b683b3dc6654e6bbaa863fdff4789ce70292334960c7c0",
+      "validation_claims_sha256": "4c19f9221ebbcaff12ac6d3e7cfd28d083b0145966a36b10bcc5ea9ac1e1de56",
+      "artifact_core_sha256": "d74c0317981c8cb1ca453f800fd04a9df8a669c1c3dd86e2f21dd44980a3d953"
+    },
+    "self_hash_embedded": false,
+    "self_hash_note": "The complete-file byte hash is reported by final validation, not embedded, to avoid circular self-reference."
+  }
+}

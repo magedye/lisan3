@@ -1,0 +1,62 @@
+{
+  "artifact": "ESW_CORRECTIVE_CYCLE_3_EXACT_VERSE_SCOPE",
+  "recorded_at": "2026-09-13T11:52:20+03:00",
+  "authority": "OWNER_MASTER_DELEGATION_2026_09_13_FIVE_ROOT_CAMPAIGN",
+  "trigger": {
+    "review_verdict": "VERIFIED_NARROWER_SCOPE",
+    "predecessor": "jud_da40a233@1",
+    "defect": "Seven cycle-2 observations included narrative facts from adjacent verses even though each ObservationArtifact was required to stay within its exact occurrence verse.",
+    "correction": "Replace all 12 observations with exact-verse-only analyses and preserve the conservative root-level judgment."
+  },
+  "source_artifact": {
+    "path": "docs/evidence/requalification/esw_cycle3_scope_correction.json",
+    "sha256": "fc5549556a4ce3bf182f808eeac7d6c59e37d0182e8399557180201be67ca1b3",
+    "size_bytes": 52720,
+    "producer": "fresh ESw cycle-3 scope-correction aggregator",
+    "forbidden_adjacent_narrative_marker_hits": 0
+  },
+  "runtime": {
+    "database_sha256_before": "f34436e278cba18bb68d9312d2066ae99b9d07be9d5dceaf4d9b181f1c45febe",
+    "database_sha256_after": "0c3d2e8a8eb7e1691bb8cca3e1b0beac95a20b3884639559719ce493e9693e97",
+    "backup": "local-state-backups/lisanapp.before-esw-cycle3.20260913-114353.db",
+    "backup_sha256": "f34436e278cba18bb68d9312d2066ae99b9d07be9d5dceaf4d9b181f1c45febe",
+    "disposable_dry_run": "PASS; 12 runs, 567 observations, 12 claims, 0 verification records; integrity ok; disposable copy removed after successful live replay",
+    "integrity_after": "ok",
+    "snapshot": "snap_tanzil_1_1_ac0724796cbb",
+    "methodology": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4"
+  },
+  "successor": {
+    "run_id": "run_65b6ce2c",
+    "claim": "jud_924a83e6@1",
+    "claim_sha256": "9214eb953ddb189c154a3b46c1c0a88ab5c1d25c49020a889f2c48bd358b2e20",
+    "claim_projection_bytes": 7255,
+    "research_state": "UNRESOLVED",
+    "result_strength": "UNRESOLVED",
+    "canonical_state": "NOT_CANONICAL",
+    "verification_state": "NOT_REQUIRED",
+    "scope": "UNIVERSAL",
+    "exact_set": "12/12",
+    "semantic_observations": "12/12 with syntax, participant_roles, local_context, and unresolved_ambiguity all nonblank",
+    "research_completeness": {
+      "index_complete": true,
+      "deep_analysis_complete": true,
+      "sampling_basis_recorded": true,
+      "sufficient_for_claim": true
+    },
+    "isolation": "ESTABLISHED/CLEAN",
+    "isolation_audit_ref": "aud_56388a71",
+    "hypotheses": ["hyp_029fc639", "hyp_a2992738", "hyp_1746c0b1"],
+    "ai_trace": "ai_d1937f57",
+    "audits": ["aud_bb726c7c", "aud_282934b7"]
+  },
+  "post_write_counts": {
+    "ResearchRuns": 12,
+    "Observations": 567,
+    "SemanticClaims": 12,
+    "VerificationRecords": 0,
+    "ACCEPTED": 0
+  },
+  "independent_review": "PENDING_FRESH_POST_FREEZE_REVIEW",
+  "batch_07_comparison": "PROHIBITED_UNTIL_INITIAL_REVIEW_IS_FROZEN",
+  "batch_08_status": "BATCH_08_NOT_AUTHORIZED"
+}
