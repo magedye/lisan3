@@ -1,0 +1,44 @@
+{
+  "artifact": "FIVE_ROOT_FINAL_MERGE_REVIEW_AND_INTEGRATION",
+  "recorded_at": "2026-09-13T13:17:52+03:00",
+  "independent_review": {
+    "mode": "FRESH_READ_ONLY_SOL_XHIGH",
+    "candidate": "fb53e3e40ed6beaa645015681448cba0828d5ceb",
+    "database_sha256": "d03d69ca341b01012edd4274840984b43fcf66b59e4a349ae878563fd87b5621",
+    "findings": [],
+    "verdict": "FIVE_ROOT_CAMPAIGN_MERGE_READY",
+    "checks": [
+      "All three findings from the first review of 9c85e60 are closed.",
+      "All five current claims, reviews, decisions, VerificationRecords, policy failures, canonical states, exact sets, and totals match live persisted state.",
+      "All final runs are ESTABLISHED/CLEAN on authoritative Tanzil and the current source-bound methodology.",
+      "No human impersonation, raw database flip, policy bypass, Batch 07 mutation, or Batch 08 content/runtime record was found.",
+      "The whole origin/main...candidate diff passes git diff --check.",
+      "The affected canonical-runtime suite independently passed 26/26; candidate evidence binds the completed 260-test non-e2e pass."
+    ]
+  },
+  "integration": {
+    "starting_main": "d780476e4a3b119ae993588f20333f2ce5fe9246",
+    "reviewed_candidate": "fb53e3e40ed6beaa645015681448cba0828d5ceb",
+    "merge_mode": "FAST_FORWARD_ONLY",
+    "merge_commit_created": false,
+    "force_push": false,
+    "normal_push": true,
+    "main_after_fast_forward": "fb53e3e40ed6beaa645015681448cba0828d5ceb",
+    "origin_main_after_push": "fb53e3e40ed6beaa645015681448cba0828d5ceb",
+    "remote_divergence": false,
+    "owner_untracked_artifacts_preserved": true
+  },
+  "final_governed_state": {
+    "ResearchRuns": 13,
+    "Observations": 607,
+    "SemanticClaims": 13,
+    "VerificationRecords": 6,
+    "ACCEPTED": 0,
+    "accepted_roots": [],
+    "non_accepted_roots": ["ESw", "dnw", "flH", "fwh", "glm"],
+    "campaign_status": "FIVE_ROOT_CAMPAIGN_PARTIALLY_CANONICAL_COMPLETE",
+    "remaining_nondelegable_human_action": "NONE",
+    "batch_08_status": "BATCH_08_NOT_AUTHORIZED"
+  },
+  "closure_commit_scope": "This file and the matching PROJECT_STATE update are post-review administrative custody evidence only. They do not modify or extend the independently reviewed semantic candidate."
+}
