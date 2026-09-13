@@ -107,6 +107,28 @@ State context only. Canonical repository contracts and runtime evidence remain a
 - Status: `FIVE_ROOT_STAGE_B_INDEPENDENT_REVIEW_PERSISTED`. This is evidence custody only;
   no owner decision, VerificationRecord, canonicalization, merge, or release is implied.
 
+## Five-Root Campaign — Delegated Owner Decisions (Stage 1) (2026-09-13)
+
+- Latest explicit owner instruction delegates the five-root campaign decisions while expressly
+  prohibiting fabricated/impersonated human verification, policy bypass, weakened evidence,
+  forced semantic convergence, force push, history rewriting, and Batch 08.
+- Preflight independently reproduced branch/remote custody, authoritative `lisanapp.db` SHA-256
+  `34dcc0a2a2fb3ae8c3774b681545459dfebd36df8c58a181d86c683e6c6eae68`, sole Alembic
+  head/current `f2b7d1e9a3c5`, production-valid Tanzil, current source-bound methodology,
+  exact sets 12/133/40/13/13, exact Stage B revisions, 0 VerificationRecords, 0 ACCEPTED,
+  and no Batch 08 runtime records.
+- Exact delegated decisions: `ESw jud_9506cecf@1` = `VERIFY_AT_SCOPE`; `fwh
+  jud_303cd726@1` = `VERIFY_AT_SCOPE`; `glm jud_d51f1e74@1` = `VERIFY_AT_SCOPE` at its
+  unchanged MODERATE/REPRESENTATIVE lexicalized-class scope (not a strength upgrade and not
+  canonicalization eligibility). Frozen `dnw jud_6733070a@1` and `flH jud_50b6a890@1` =
+  `RETURN_FOR_CORRECTION`; neither may receive verification or canonicalization.
+- Durable decision artifact:
+  `docs/evidence/requalification/five_root_owner_delegated_decisions.json`. This is an
+  `OWNER_DELEGATED_DECISION`, not an independent-human review or VerificationRecord.
+- NEXT: complete fresh corrective producer/adversary/aggregator cycles for `dnw` and `flH`,
+  freeze new immutable claims with predecessor lineage, then launch fresh independent review.
+  `BATCH_08_NOT_AUTHORIZED`.
+
 ## Repository
 
 - Root: `D:\APP\tafseer\lisanapp3`

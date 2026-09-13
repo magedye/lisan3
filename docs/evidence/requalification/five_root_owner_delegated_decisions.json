@@ -1,0 +1,96 @@
+{
+  "artifact": "five_root_owner_delegated_decisions",
+  "decision_type": "OWNER_DELEGATED_DECISION",
+  "recorded_at": "2026-09-13T05:15:35.1734126Z",
+  "delegation": {
+    "reference": "OWNER_MASTER_DELEGATION_2026_09_13_FIVE_ROOT_CAMPAIGN",
+    "source_kind": "LATEST_EXPLICIT_OWNER_INSTRUCTION",
+    "source_attachment_sha256": "d1be72ec204e43c1692fa1cb400a51ab6842d9505523050f445a42486077d391",
+    "source_attachment_size_bytes": 18715,
+    "scope_roots": [
+      "ESw",
+      "dnw",
+      "flH",
+      "fwh",
+      "glm"
+    ],
+    "authority_note": "The owner explicitly delegated root-by-root choice among VERIFY_AT_SCOPE, REJECT, and RETURN_FOR_CORRECTION, corrective research, bounded revision loops, evidence commits, normal branch publication, and safe fast-forward integration. This record is an owner-decision layer only; it is not an independent-human semantic review or a VerificationRecord.",
+    "prohibitions": [
+      "NO_FABRICATED_HUMAN_VERIFICATION",
+      "NO_IMPERSONATED_INDEPENDENT_HUMAN_VERIFIER",
+      "NO_CANONICALIZATION_POLICY_BYPASS",
+      "NO_EVIDENCE_THRESHOLD_WEAKENING",
+      "NO_SEMANTIC_TRUTH_FORCED_TO_PASS",
+      "NO_FORCE_PUSH",
+      "NO_HISTORY_REWRITE",
+      "BATCH_08_NOT_AUTHORIZED"
+    ]
+  },
+  "candidate": {
+    "branch": "five-root-governed-requalification",
+    "stage_b_checkpoint": "8e853435df79b7c6fa0c79df8f5a0feb6cd62cee",
+    "starting_main": "d780476e4a3b119ae993588f20333f2ce5fe9246",
+    "authoritative_database": "lisanapp.db",
+    "authoritative_database_sha256": "34dcc0a2a2fb3ae8c3774b681545459dfebd36df8c58a181d86c683e6c6eae68",
+    "independent_review_artifact": "docs/evidence/requalification/five_root_fresh_independent_verdicts.json",
+    "independent_review_sha256": "9a1012e1973f047c7a2d44ec3d4feddc2faabb171c4711170e9c855e5601c754",
+    "owner_decision_package": "docs/evidence/requalification/five_root_owner_decision_package.json",
+    "owner_decision_package_sha256": "ed766034b56d77459319d35fa08797b5446e0ac183cac2d913f32944bd72ff24"
+  },
+  "decisions": [
+    {
+      "root": "ESw",
+      "claim_id": "jud_9506cecf",
+      "revision_id": 1,
+      "claim_content_sha256": "70787c1eb461badb8a20546cbdb13c6b1e1474f2b60af2997994e76fffb19ddb",
+      "independent_verdict": "VERIFIED_AT_SCOPE",
+      "decision": "VERIFY_AT_SCOPE",
+      "rationale": "The exact reviewed revision is unchanged; all 12 confirmed occurrences remain covered; the STRONG representative lexicalized-class claim preserves the physical staff nucleus while excluding narrative effects; evidence, falsification, source isolation, and provenance remain intact.",
+      "next_action": "INDEPENDENT_VERIFICATION_AUTHORITY_CHECK"
+    },
+    {
+      "root": "dnw",
+      "claim_id": "jud_6733070a",
+      "revision_id": 1,
+      "claim_content_sha256": "f19464de076109f092b1497ea1401ee40ac7e25573ecc21fb41bfc04da9c0c85",
+      "independent_verdict": "CORRECTIVE_RESEARCH_REQUIRED",
+      "decision": "RETURN_FOR_CORRECTION",
+      "rationale": "Revision 1 contains an unsupported non-Quran-internal semantic hypothesis. It remains frozen history and is ineligible for verification or canonicalization; fresh corrective research is authorized.",
+      "next_action": "FRESH_GOVERNED_CORRECTIVE_RESEARCH"
+    },
+    {
+      "root": "flH",
+      "claim_id": "jud_50b6a890",
+      "revision_id": 1,
+      "claim_content_sha256": "7bf79f97f370fb943aaf3664b6d6d18b7ff1cafba728110d22a17796ed96296e",
+      "independent_verdict": "CORRECTIVE_RESEARCH_REQUIRED",
+      "decision": "RETURN_FOR_CORRECTION",
+      "rationale": "Revision 1 contains an unsupported non-Quran-internal semantic hypothesis. It remains frozen history and is ineligible for verification or canonicalization; fresh corrective research is authorized.",
+      "next_action": "FRESH_GOVERNED_CORRECTIVE_RESEARCH"
+    },
+    {
+      "root": "fwh",
+      "claim_id": "jud_303cd726",
+      "revision_id": 1,
+      "claim_content_sha256": "ceec2430b8435f76d02a140bb6536f39718ec9041e192994092ad93e82942229",
+      "independent_verdict": "VERIFIED_AT_SCOPE",
+      "decision": "VERIFY_AT_SCOPE",
+      "rationale": "The exact reviewed revision is unchanged; all 13 confirmed occurrences remain covered; the STRONG universal claim is expressly bounded to the attested lexicalized noun class; evidence, falsification, source isolation, and provenance remain intact.",
+      "next_action": "INDEPENDENT_VERIFICATION_AUTHORITY_CHECK"
+    },
+    {
+      "root": "glm",
+      "claim_id": "jud_d51f1e74",
+      "revision_id": 1,
+      "claim_content_sha256": "b80d46c458a9da56207f7a3580b71f61a845324f7e1ed42d602926f9c00b4456",
+      "independent_verdict": "VERIFIED_AT_SCOPE",
+      "decision": "VERIFY_AT_SCOPE",
+      "rationale": "The exact reviewed revision is unchanged and the thin young-male-human lexicalized-class conclusion remains supported across all 13 occurrences at MODERATE representative scope. VERIFY_AT_SCOPE accepts that bounded research result; it does not upgrade strength or imply canonicalization eligibility.",
+      "next_action": "INDEPENDENT_VERIFICATION_AUTHORITY_CHECK_AND_EXPECTED_STRENGTH_GATE_FAILURE"
+    }
+  ],
+  "claim_state_changes": 0,
+  "verification_records_created": 0,
+  "canonicalizations_attempted": 0,
+  "batch_08_status": "NOT_AUTHORIZED"
+}
