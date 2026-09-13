@@ -1367,3 +1367,63 @@ INDEPENDENT verification for the current revision and then run
 `CanonicalizationPolicy.canonicalize` per eligible root. Do NOT self-grant
 ACCEPTED, do NOT upgrade `SyH`/`Twf`, do NOT adopt MODERATE/UNRESOLVED roots,
 and do NOT start Batch 08.
+
+## Five-Root Owner-Delegated Corrective Producer Checkpoint (2026-09-13)
+
+- Latest owner delegation SHA-256:
+  `d1be72ec204e43c1692fa1cb400a51ab6842d9505523050f445a42486077d391`.
+  It authorizes a continuous five-root campaign, including fresh corrective
+  research, independent reviews, normal publication, and safe fast-forward
+  integration, but forbids fabricated human verification, policy bypass,
+  semantic threshold weakening, force push, history rewrite, and Batch 08.
+- Stage-B decisions were already committed/pushed at `5e79b4b0c229ab17615e5725575866ca74a0ea70`:
+  `ESw`, `fwh`, and `glm` = `VERIFY_AT_SCOPE`; frozen `dnw jud_6733070a@1`
+  and `flH jud_50b6a890@1` = `RETURN_FOR_CORRECTION`. This decision layer is
+  not an independent-human review or VerificationRecord.
+- Each corrective root received two fresh Sol/xhigh analysts, a source-purity
+  adversary, an overclaim adversary, and a separate aggregator. Producer
+  contexts were Quran-internal/read-only and excluded Batch 07 conclusions,
+  predecessor prose, dictionaries, translations, tafsir, web semantics, and
+  memory. Both panels converged on an honest `UNRESOLVED` root result.
+- `dnw`: fresh admitted run `run_7aa9aa5f`; hypotheses H1/H2/C0 were frozen
+  before new-run observations; 133/133 DB-native observations; isolation
+  `ESTABLISHED/CLEAN`; successor `jud_7805c0b0@1`,
+  `UNRESOLVED/UNRESOLVED/UNIVERSAL`, claim hash
+  `c1578294733d60a60702bd9b4a22b27d63035a0f75bd636ff874e5ee6822ec9e`.
+  The blocker is the absence of a Quran-internal bridge from the dominant 111
+  current-world/life-domain `الدنيا` uses to one non-elastic root contribution.
+- `flH`: fresh admitted run `run_66fb3467`; hypotheses H1/H2/C0 were frozen
+  before new-run observations; 40/40 DB-native observations; isolation
+  `ESTABLISHED/CLEAN`; successor `jud_04cfe3db@1`,
+  `UNRESOLVED/UNRESOLVED/UNIVERSAL`, claim hash
+  `ec3af6e66771c7dad0342d74b2327c9cb68c1cca51dc8506c47bd23b60d44a9c`.
+  All 40 tokens are Form IV (27 V(IV), 13 N(IV)), so the bare-root
+  contribution cannot be separated from form/lexeme/construction/context.
+- The runtime has no non-accepted-claim numeric revision endpoint. Each
+  correction therefore uses the service-assigned new ResearchRun/new
+  SemanticClaim identity at revision 1, with predecessor and correction reason
+  persisted in AuditLog. The frozen predecessor rows remain unchanged; no raw
+  `revision_id`, research-state, or canonical-state edit was made.
+- Host-derived completeness is sufficient and exact for both successors;
+  supporting evidence is `token:<word_ref>` for every confirmed occurrence.
+  Phrase audits retain zero `UNSUPPORTED_MODEL_PRIOR` and zero
+  `EXTERNAL_SEMANTIC_ASSUMPTION` propositions. Post-write SQLite integrity is
+  `ok`; counts are 7 ResearchRuns, 384 observations, 7 SemanticClaims,
+  0 VerificationRecords, and 0 ACCEPTED.
+- Producer evidence:
+  `docs/evidence/requalification/five_root_corrective_producer_cycles.json`
+  (SHA-256 `871cc14718d26fd09565237db356600ffbe038eddcf0a3dc5ade1dd7238d4835`).
+  The pre-write DB backup is retained under `local-state-backups/` and matches
+  the original DB hash `34dcc0a2...eae68`; the live post-write DB hash is
+  `092f7bbb...e663`. Historical Batch 07 root artifact hashes remain unchanged.
+- This is a producer checkpoint only. The new claims have not yet received
+  their mandatory fresh post-freeze independent reviews, and Batch 07 semantic
+  comparison has not yet been performed. Focused governance/canonical-runtime
+  verification passed 35 tests. Batch 08 remains unauthorized.
+
+## Current Exact Next Action
+
+Commit and normally publish the corrective producer evidence without changing
+the frozen DB claim bytes. Then launch a fresh read-only Sol/xhigh reviewer for
+each exact successor claim. Only after each initial verdict is frozen may the
+reviewer open the corresponding historical Batch 07 conclusion for comparison.

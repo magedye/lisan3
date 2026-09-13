@@ -1,0 +1,268 @@
+{
+  "artifact": "FIVE_ROOT_CORRECTIVE_PRODUCER_CYCLES",
+  "recorded_at": "2026-09-13T09:08:00+03:00",
+  "authority": {
+    "delegation_artifact": "C:/Users/Majed/.codex/attachments/87eb22ea-d967-467c-8f7a-b723527c9739/pasted-text.txt",
+    "delegation_sha256": "d1be72ec204e43c1692fa1cb400a51ab6842d9505523050f445a42486077d391",
+    "delegation_size_bytes": 18715,
+    "scope": [
+      "dnw",
+      "flH"
+    ],
+    "boundary": "Research artifacts and DB-native successor claims only. This artifact is not an independent review, VerificationRecord, canonicalization, or ACCEPTED transition."
+  },
+  "producer_separation": {
+    "model_profile": "gpt-5.6-sol/xhigh",
+    "per_root_structure": "2 independent analysts + 1 source-purity adversary + 1 overclaim adversary + 1 aggregator",
+    "prohibited_sources": [
+      "Batch 07 semantic conclusions",
+      "prior SemanticClaim prose",
+      "historical dictionaries or lexicons",
+      "translations",
+      "tafsir",
+      "external web semantics",
+      "model or project memory"
+    ],
+    "access_result": "All producer contexts reported read-only Quran-internal access and zero prohibited-source access. The orchestrator separately retained preflight custody hashes; no producer received historical semantics before claim freeze."
+  },
+  "runtime_authority": {
+    "database": "lisanapp.db",
+    "database_sha256_before": "34dcc0a2a2fb3ae8c3774b681545459dfebd36df8c58a181d86c683e6c6eae68",
+    "database_sha256_after": "092f7bbb648cc5939d392364117b161dbf944d38564fd9c95fc3fc798e7be663",
+    "pre_mutation_backup": "local-state-backups/lisanapp.before-five-root-corrective.20260913-090250.db",
+    "pre_mutation_backup_sha256": "34dcc0a2a2fb3ae8c3774b681545459dfebd36df8c58a181d86c683e6c6eae68",
+    "disposable_dry_run": "PASSED_THEN_REMOVED",
+    "schema_revision": "f2b7d1e9a3c5",
+    "schema_status": "CURRENT",
+    "integrity_check_after": "ok",
+    "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+    "canonical_text_sha256": "ac0724796cbbda0f4801470fbbd11d0f3c5802067bae0493466d0128b0c667af",
+    "corpus_activation": "PRODUCTION_ACTIVE",
+    "corpus_fixture_only": false,
+    "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+    "methodology_source_sha256": "01784170cac4e715c1477cb6a04a2c34b21c4bdb91705aa1eb6b2a896efcedbd"
+  },
+  "revision_handling": {
+    "policy": "The runtime has no repository-native endpoint that overwrites or numerically revises a non-accepted SemanticClaim. Each correction therefore uses a new admitted ResearchRun and a new immutable SemanticClaim identity at its service-assigned revision 1. Predecessor linkage and correction reason are persisted as AuditLog records. The frozen predecessor row is unchanged.",
+    "forbidden_shortcut_avoided": "No direct revision_id edit, no raw canonical/research state flip, and no overwrite of jud_6733070a@1 or jud_50b6a890@1."
+  },
+  "claim_hash_contract": {
+    "algorithm": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators comma/colon, ensure_ascii=false)",
+    "projection": "All persisted claim identity, revision, run, status, scope, completeness, semantic, evidence, falsification, boundary, competitor, counterexample, and reopen fields; created_at excluded."
+  },
+  "roots": {
+    "dnw": {
+      "predecessor": "jud_6733070a@1",
+      "correction_reason": "UNPROVED_UNIVERSAL_BRIDGE / LAYER_AND_LEXICALIZATION_OVERCLAIM",
+      "producer_panel": {
+        "dnw_analyst_a": "PREFERRED/MODERATE/UNIVERSAL relational-axis candidate; lexicalization caveat retained.",
+        "dnw_analyst_b": "UNRESOLVED/UNRESOLVED/UNIVERSAL; no Quran-internal bridge from the dominant dunya class to the productive relational forms.",
+        "dnw_purity_adversary": "Selected UNRESOLVED; the relational axis and lexicalization are inferential and cannot supply a universal bridge.",
+        "dnw_overclaim_adversary": "Selected UNRESOLVED; the proposed axis was elastic and exempted 111 of 133 occurrences through unproved lexicalization.",
+        "dnw_aggregator": "UNRESOLVED/UNRESOLVED/UNIVERSAL; completed the exact 133 token evidence list after an explicit incomplete-list warning."
+      },
+      "phrase_audit": {
+        "DIRECTLY_QURAN_SUPPORTED": 3,
+        "STRUCTURALLY_QURAN_SUPPORTED": 3,
+        "CONTEXTUALLY_QURAN_SUPPORTED": 2,
+        "INFERENTIAL_BUT_FALSIFIABLE": 4,
+        "UNSUPPORTED_MODEL_PRIOR": 0,
+        "EXTERNAL_SEMANTIC_ASSUMPTION": 0,
+        "disposition": "No positive root proposition was promoted. The nearer/lower/lesser axis remains only the strongest falsifiable competitor."
+      },
+      "exact_set": {
+        "confirmed_tokens": 133,
+        "distinct_word_refs": 133,
+        "distinct_verses": 128,
+        "observations": 133,
+        "missing": 0,
+        "extra": 0,
+        "duplicates": 0,
+        "form_mismatches": 0,
+        "supporting_ref_set_sha256": "822b5f2c37d2aa0e928cb6826ec669a680d6c4311f85ff551cec1aadfe07fe27",
+        "observation_ref_set_sha256": "822b5f2c37d2aa0e928cb6826ec669a680d6c4311f85ff551cec1aadfe07fe27",
+        "population_note": "115 dunya surfaces, including 111 current-world/life-domain uses and four spatial/cosmic uses; 18 other forms."
+      },
+      "hypotheses_frozen_before_new_run_observations": [
+        {
+          "id": "hyp_521a0bec",
+          "type": "H1"
+        },
+        {
+          "id": "hyp_90d6080d",
+          "type": "H2"
+        },
+        {
+          "id": "hyp_0f4604ee",
+          "type": "C0"
+        }
+      ],
+      "successor": {
+        "run_id": "run_7aa9aa5f",
+        "claim_id": "jud_7805c0b0",
+        "revision_id": 1,
+        "claim_sha256": "c1578294733d60a60702bd9b4a22b27d63035a0f75bd636ff874e5ee6822ec9e",
+        "contract_type": "ROOT_CONCEPT",
+        "research_state": "UNRESOLVED",
+        "result_strength": "UNRESOLVED",
+        "claim_scope": "UNIVERSAL",
+        "preferred_conclusion": null,
+        "root_concept": null,
+        "falsification_status": "NOT_REQUIRED",
+        "canonical_state": "NOT_CANONICAL",
+        "verification_state": "NOT_REQUIRED",
+        "supporting_evidence_count": 133,
+        "counterevidence_count": 6,
+        "hard_cases": [
+          "2:61:27:1",
+          "7:169:10:2",
+          "30:3:2:1",
+          "32:21:4:2",
+          "58:7:26:1",
+          "73:20:6:1"
+        ],
+        "research_completeness": {
+          "claim_scope": "UNIVERSAL",
+          "occurrence_unit": "word_ref",
+          "eligible_occurrence_count": 133,
+          "evidenced_occurrence_count": 133,
+          "index_complete": true,
+          "deep_analysis_complete": true,
+          "sampling_basis_recorded": true,
+          "sufficient_for_claim": true,
+          "derived_by": "ResearchJudgmentService"
+        },
+        "isolation": {
+          "establishment_status": "ESTABLISHED",
+          "contamination_status": "CLEAN",
+          "audit_ref": "aud_a516a52b"
+        },
+        "audit_ids": [
+          "aud_20100cf7",
+          "aud_9b01008d",
+          "aud_42d974fd"
+        ],
+        "ai_trace_ids": [
+          "ai_cf48e0fd",
+          "ai_dd6d30cd",
+          "ai_1634d168",
+          "ai_522a49d8",
+          "ai_99643b7f"
+        ]
+      },
+      "independent_review": "PENDING_FRESH_POST_FREEZE_REVIEW",
+      "batch_07_comparison": "NOT_PERFORMED_BEFORE_FREEZE_OR_REVIEW"
+    },
+    "flH": {
+      "predecessor": "jud_50b6a890@1",
+      "correction_reason": "POSITIVE_ROOT_GLOSS_OVERCLAIM / ROOT_FORM_CONFLATION",
+      "producer_panel": {
+        "flh_analyst_a": "UNRESOLVED/UNRESOLVED/UNIVERSAL; all 40 occurrences are Form IV.",
+        "flh_analyst_b": "UNRESOLVED/UNRESOLVED/UNIVERSAL; no cross-form evidence isolates a bare-root contribution.",
+        "flh_purity_adversary": "Selected UNRESOLVED; even favorable-result wording may survive only as a context-indexed Form-IV-family hypothesis.",
+        "flh_overclaim_adversary": "Selected UNRESOLVED; blocked hidden preference, genericity, strength inflation, and root/form misattribution.",
+        "flh_aggregator": "UNRESOLVED/UNRESOLVED/UNIVERSAL with null preferred conclusion and root concept."
+      },
+      "phrase_audit": {
+        "DIRECTLY_QURAN_SUPPORTED": 4,
+        "STRUCTURALLY_QURAN_SUPPORTED": 4,
+        "CONTEXTUALLY_QURAN_SUPPORTED": 4,
+        "INFERENTIAL_BUT_FALSIFIABLE": 3,
+        "UNSUPPORTED_MODEL_PRIOR": 0,
+        "EXTERNAL_SEMANTIC_ASSUMPTION": 0,
+        "disposition": "No stable lexical gloss or positive bare-root proposition was admitted."
+      },
+      "exact_set": {
+        "confirmed_tokens": 40,
+        "distinct_word_refs": 40,
+        "distinct_verses": 40,
+        "observations": 40,
+        "missing": 0,
+        "extra": 0,
+        "duplicates": 0,
+        "form_mismatches": 0,
+        "form_distribution": {
+          "V(IV)": 27,
+          "N(IV)": 13
+        },
+        "supporting_ref_set_sha256": "37c9f617a67ff8ca6647f06ccc337ffff39003cc21f55fe5ab2bde21e18fa6e9",
+        "observation_ref_set_sha256": "37c9f617a67ff8ca6647f06ccc337ffff39003cc21f55fe5ab2bde21e18fa6e9"
+      },
+      "hypotheses_frozen_before_new_run_observations": [
+        {
+          "id": "hyp_724dfda2",
+          "type": "H1"
+        },
+        {
+          "id": "hyp_cc5fc805",
+          "type": "H2"
+        },
+        {
+          "id": "hyp_2acb2c3d",
+          "type": "C0"
+        }
+      ],
+      "successor": {
+        "run_id": "run_66fb3467",
+        "claim_id": "jud_04cfe3db",
+        "revision_id": 1,
+        "claim_sha256": "ec3af6e66771c7dad0342d74b2327c9cb68c1cca51dc8506c47bd23b60d44a9c",
+        "contract_type": "ROOT_CONCEPT",
+        "research_state": "UNRESOLVED",
+        "result_strength": "UNRESOLVED",
+        "claim_scope": "UNIVERSAL",
+        "preferred_conclusion": null,
+        "root_concept": null,
+        "falsification_status": "NOT_REQUIRED",
+        "canonical_state": "NOT_CANONICAL",
+        "verification_state": "NOT_REQUIRED",
+        "supporting_evidence_count": 40,
+        "counterevidence_count": 4,
+        "hard_cases": [
+          "20:64:7:1",
+          "20:69:13:1",
+          "18:20:11:1",
+          "91:9:2:1"
+        ],
+        "research_completeness": {
+          "claim_scope": "UNIVERSAL",
+          "occurrence_unit": "word_ref",
+          "eligible_occurrence_count": 40,
+          "evidenced_occurrence_count": 40,
+          "index_complete": true,
+          "deep_analysis_complete": true,
+          "sampling_basis_recorded": true,
+          "sufficient_for_claim": true,
+          "derived_by": "ResearchJudgmentService"
+        },
+        "isolation": {
+          "establishment_status": "ESTABLISHED",
+          "contamination_status": "CLEAN",
+          "audit_ref": "aud_9178ded2"
+        },
+        "audit_ids": [
+          "aud_4b18043b",
+          "aud_d1d69954",
+          "aud_104db68f"
+        ],
+        "ai_trace_ids": [
+          "ai_5d3b1d60",
+          "ai_b15aab06",
+          "ai_a46b979d",
+          "ai_bb116e8e",
+          "ai_598e66f4"
+        ]
+      },
+      "independent_review": "PENDING_FRESH_POST_FREEZE_REVIEW",
+      "batch_07_comparison": "NOT_PERFORMED_BEFORE_FREEZE_OR_REVIEW"
+    }
+  },
+  "post_persistence_counts": {
+    "ResearchRuns": 7,
+    "Observations": 384,
+    "SemanticClaims": 7,
+    "VerificationRecords": 0,
+    "ACCEPTED": 0
+  },
+  "batch_08_status": "BATCH_08_NOT_AUTHORIZED"
+}
