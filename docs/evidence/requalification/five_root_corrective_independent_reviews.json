@@ -82,13 +82,26 @@
         "91:9:2:1"
       ],
       "reopen_boundary": "Reopen if the confirmed set changes, a non-Form-IV occurrence is admitted, or Quran-internal evidence isolates a stable bare-root contribution.",
-      "source_boundary": "Reviewer reported zero Batch 07, predecessor prose, PROJECT_STATE, memory, web, dictionary, translation, or tafsir access before verdict."
+      "source_boundary": "Reviewer reported zero Batch 07, predecessor prose, PROJECT_STATE, memory, web, dictionary, translation, or tafsir access before verdict.",
+      "batch_07_comparison": {
+        "classification": "PARTIAL_CONVERGENCE",
+        "historical_artifact": "artifacts/semantic-campaign/roots/fl_48_.json",
+        "historical_sha256": "93824ef650f53116a22387f17ef266ec18896ff00c2fa139fae90f8584b32af8",
+        "historical_size_bytes": 160928,
+        "custody": "Working bytes identical to the befbc2103a1a8ba3267f82db473c8f31dc5407e6 checkpoint blob.",
+        "agreement": "Both analyses use the exact 40-token all-Form-IV population, treat 20:64/20:69 as a decisive boundary, reject a uniformly moral or eschatological gloss, and retain an outcome/attainment description as the strongest positive candidate.",
+        "divergence": "Batch 07 promoted that description as PREFERRED/STRONG at REPRESENTATIVE/DERIVATIONAL_FAMILY scope. The current successor retains it only as an unadopted competitor and leaves the bare-root concept unresolved because the single-form evidence cannot separate root from Form IV.",
+        "claim_changed_after_comparison": false
+      }
     }
   },
   "next_state": {
     "dnw": "CORRECTIVE_CYCLE_2_REQUIRED",
     "flH": "READY_FOR_POST_REVIEW_BATCH_07_COMPARISON"
   },
-  "batch_07_comparison": "NOT_YET_PERFORMED",
+  "batch_07_comparison": {
+    "flH": "PARTIAL_CONVERGENCE_AFTER_FROZEN_REVIEW",
+    "dnw": "DEFERRED_UNTIL_CYCLE_2_FREEZE_AND_REVIEW"
+  },
   "batch_08_status": "BATCH_08_NOT_AUTHORIZED"
 }

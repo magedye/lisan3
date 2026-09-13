@@ -1464,3 +1464,19 @@ outputs and semantically substantive 133-token observation set in a new run,
 freeze a new successor claim with explicit hash projection, and re-review it in
 a fresh blind context. Independently, perform the already-permitted post-review
 Batch 07 comparison for the stable `flH` result without altering that claim.
+
+## flH Post-Review Batch 07 Comparison (2026-09-13)
+
+- Only after the `flH` initial verdict was frozen and published, the same
+  independent reviewer opened the immutable historical root artifact
+  `artifacts/semantic-campaign/roots/fl_48_.json`.
+- Classification: `PARTIAL_CONVERGENCE`. Both analyses agree on the exact
+  40-token all-Form-IV population, the `20:64/20:69` boundary, rejection of a
+  uniformly moral/eschatological gloss, and the outcome/attainment family as the
+  strongest positive candidate. Batch 07 promoted it to PREFERRED/STRONG at a
+  derivational-family scope; the current successor leaves it unpromoted and the
+  bare-root result UNRESOLVED because root and Form IV cannot be separated.
+- Historical artifact SHA-256 remains
+  `93824ef650f53116a22387f17ef266ec18896ff00c2fa139fae90f8584b32af8`
+  (160,928 bytes), byte-identical to the checkpoint blob. The comparison did not
+  modify `jud_04cfe3db@1` or the initial independent verdict.
