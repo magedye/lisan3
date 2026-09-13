@@ -275,6 +275,62 @@ def test_completeness_is_word_level_and_host_derived():
         assert partial["sufficient_for_claim"] is False
 
 
+def test_form_only_observations_do_not_claim_deep_analysis():
+    run_id = make_run()
+    with SessionLocal() as db:
+        run = get_run(db, run_id)
+        for index, word_ref in enumerate(SMOKE_WORD_REFS):
+            db.add(
+                models.ObservationArtifact(
+                    id=f"obs-form-only-{index}",
+                    research_run_id=run_id,
+                    occurrence_ref=word_ref,
+                    form="N",
+                )
+            )
+        db.commit()
+        completeness = derive_completeness(
+            db,
+            run,
+            "UNIVERSAL",
+            None,
+            frozenset(),
+            frozenset(SMOKE_WORD_REFS),
+            "ROOT_CONCEPT",
+        )
+        assert completeness["sufficient_for_claim"] is True
+        assert completeness["deep_analysis_complete"] is False
+
+
+def test_semantically_substantive_observations_can_complete_deep_analysis():
+    run_id = make_run()
+    with SessionLocal() as db:
+        run = get_run(db, run_id)
+        for index, word_ref in enumerate(SMOKE_WORD_REFS):
+            db.add(
+                models.ObservationArtifact(
+                    id=f"obs-semantic-{index}",
+                    research_run_id=run_id,
+                    occurrence_ref=word_ref,
+                    form="N",
+                    local_context="Quran-internal contextual analysis",
+                    unresolved_ambiguity="none identified at this scope",
+                )
+            )
+        db.commit()
+        completeness = derive_completeness(
+            db,
+            run,
+            "UNIVERSAL",
+            None,
+            frozenset(),
+            frozenset(SMOKE_WORD_REFS),
+            "ROOT_CONCEPT",
+        )
+        assert completeness["sufficient_for_claim"] is True
+        assert completeness["deep_analysis_complete"] is True
+
+
 def test_universal_coverage_requires_every_confirmed_occurrence():
     run_id = make_run()
     partial = [f"token:{wr}" for wr in SMOKE_WORD_REFS[:2]]

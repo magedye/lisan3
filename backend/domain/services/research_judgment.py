@@ -13,6 +13,27 @@ from backend.domain.services.research_coverage import confirmed_word_refs
 WORD_LEVEL_CONTRACTS = frozenset({"ROOT_CONCEPT"})
 
 
+def _has_semantic_observation_content(
+    observation: models.ObservationArtifact,
+) -> bool:
+    """Return whether an observation records analysis beyond a form label.
+
+    A row that merely mirrors structural form/POS proves occurrence identity,
+    not deep semantic analysis.  The domain model keeps the richer analysis in
+    four optional fields, so at least one non-blank value is required before an
+    occurrence can contribute to ``deep_analysis_complete``.
+    """
+    return any(
+        isinstance(value, str) and bool(value.strip())
+        for value in (
+            observation.syntax,
+            observation.participant_roles,
+            observation.local_context,
+            observation.unresolved_ambiguity,
+        )
+    )
+
+
 @dataclass(frozen=True)
 class EvidenceResolution:
     valid: bool
@@ -159,18 +180,30 @@ def derive_completeness(
       keyed by (snapshot, expression).
 
     Coverage is never self-certified: it is derived here from persisted rows only.
+    ``deep_analysis_complete`` is stricter than row coverage: every eligible
+    occurrence must have a persisted observation with semantic content beyond
+    a structural form/POS label.
     """
     word_level = contract_type in WORD_LEVEL_CONTRACTS
+    observations = (
+        db.query(models.ObservationArtifact)
+        .filter(models.ObservationArtifact.research_run_id == run.id)
+        .all()
+    )
     if word_level:
         eligible_ids = set(
             confirmed_word_refs(db, run.corpus_snapshot, run.target_expression)
         )
         observed_ids = {
             str(item.occurrence_ref)
-            for item in db.query(models.ObservationArtifact)
-            .filter(models.ObservationArtifact.research_run_id == run.id)
-            .all()
+            for item in observations
             if str(item.occurrence_ref) in eligible_ids
+        }
+        semantically_observed_ids = {
+            str(item.occurrence_ref)
+            for item in observations
+            if str(item.occurrence_ref) in eligible_ids
+            and _has_semantic_observation_content(item)
         }
         supported_ids = observed_ids | (set(evidence_token_word_refs) & eligible_ids)
     else:
@@ -186,10 +219,14 @@ def derive_completeness(
         eligible_ids = {str(item.id) for item in eligible}
         observed_ids = {
             str(item.occurrence_ref)
-            for item in db.query(models.ObservationArtifact)
-            .filter(models.ObservationArtifact.research_run_id == run.id)
-            .all()
+            for item in observations
             if str(item.occurrence_ref) in eligible_ids
+        }
+        semantically_observed_ids = {
+            str(item.occurrence_ref)
+            for item in observations
+            if str(item.occurrence_ref) in eligible_ids
+            and _has_semantic_observation_content(item)
         }
         supported_ids = observed_ids | (set(evidence_occurrence_ids) & eligible_ids)
     index_complete = bool(eligible_ids)
@@ -205,7 +242,9 @@ def derive_completeness(
         "eligible_occurrence_count": len(eligible_ids),
         "evidenced_occurrence_count": len(supported_ids),
         "index_complete": index_complete,
-        "deep_analysis_complete": bool(eligible_ids) and observed_ids == eligible_ids,
+        "deep_analysis_complete": (
+            bool(eligible_ids) and semantically_observed_ids == eligible_ids
+        ),
         "sampling_basis_recorded": bool(sampling_basis),
         "sufficient_for_claim": sufficient,
         "derived_by": "ResearchJudgmentService",
