@@ -1,1 +1,11 @@
-Generic single-database configuration.
+# RETIRED — legacy Alembic history only
+
+This directory is retained solely as historical migration material from the
+pre-consolidation backend layout. It is **not** an Alembic script location and
+must never be used to create, upgrade, stamp, or otherwise operate a runtime
+database.
+
+The sole canonical migration configuration is the repository-root
+`alembic.ini`, which targets the repository-root `alembic/` tree. The former
+`backend/alembic.ini` execution entrypoint has been deliberately removed to
+prevent ambiguous migration invocation while preserving this historical tree.

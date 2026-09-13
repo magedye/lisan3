@@ -205,6 +205,38 @@ State context only. Canonical repository contracts and runtime evidence remain a
 - Remaining non-delegable human action: `NONE`. Batch 08 remains
   `BATCH_08_NOT_AUTHORIZED`.
 
+## Post-Campaign Maintenance and Governance Hardening (2026-09-14)
+
+- Branch `post-campaign-governance-hardening` from verified
+  `main == origin/main == 7578dc966727a977133940979ede8de97527af87`.
+  Scope is bounded nonsemantic maintenance only: no ResearchRun, observation,
+  SemanticClaim, VerificationRecord, canonicalization result, Batch 07
+  artifact, or Batch 08 record is created or changed for ESw/dnw/flH/fwh/glm.
+- Implemented: canonicalization-time corroboration of an ESTABLISHED isolation
+  attestation; removal of the executable legacy `backend/alembic.ini` while
+  preserving its migration history; convergence CLI pinning to resolved
+  canonical `lisanapp.db`; and replacement of application `utcnow()` defaults
+  with explicit UTC-now, timezone-naive storage-compatible timestamps.
+- Documented/deferred: Research Judgment retains its intentional no-Lock/Purity
+  rule; flH form-only data and fwh's nonblocking universal sampling diagnostic
+  remain unchanged; extraction-version ordering awaits canonical authority; the
+  historical campaign wording remains immutable, with current alias
+  `FIVE_ROOT_CAMPAIGN_COMPLETE_NO_CANONICAL_ADOPTIONS`; reopening is limited to
+  genuinely new admitted Quran-internal evidence.
+- Evidence: `docs/evidence/POST_CAMPAIGN_MAINTENANCE_HARDENING.md`. Full
+  non-E2E regression passed `267`; focused fresh-review regression passed `43`.
+  The 13 residual warnings are pre-existing Python 3.12 SQLite
+  datetime-adapter warnings from migration/test paths; application
+  models/tools/tests contain no `utcnow()` calls.
+- Read-only after-test custody: `lisanapp.db` SHA-256 unchanged at
+  `d03d69ca341b01012edd4274840984b43fcf66b59e4a349ae878563fd87b5621`,
+  integrity `ok`, counts `13/607/13/6/0`, all five Batch 07 hashes unchanged,
+  and no Batch 08 record. No migration was added or run against the live DB.
+- Independent review cycle 1 returned `PASS / MERGE_READY` with no blocker for
+  the implementation candidate. The current documentation/state custody delta
+  requires a fresh final read-only review before commit/fast-forward. This is
+  `INDEPENDENTLY_REVIEWED` technical evidence only, never `RELEASE_ACCEPTED`.
+
 ## Repository
 
 - Root: `D:\APP\tafseer\lisanapp3`

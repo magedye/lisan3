@@ -14,6 +14,8 @@ SemanticClaim for a production root.
 
 from __future__ import annotations
 
+from datetime import timedelta
+
 import pytest
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
@@ -431,6 +433,96 @@ def test_control_rejects_unestablished_isolation():
         accepted, reasons = _evaluate(db, claim_id)
         assert not accepted
         assert any("never genuinely established" in r for r in reasons)
+
+
+def test_control_rejects_missing_isolation_audit_reference():
+    _, claim_id = build_accepted_ready_claim()
+    with SessionLocal() as db:
+        run = db.get(models.SemanticClaim, claim_id).research_run
+        iso = db.query(models.IsolationState).filter_by(research_run_id=run.id).one()
+        iso.audit_ref = None
+        db.commit()
+        accepted, reasons = _evaluate(db, claim_id)
+        assert not accepted
+        assert "Source isolation attestation audit reference is missing" in reasons
+
+
+def test_control_rejects_wrong_isolation_audit_action():
+    _, claim_id = build_accepted_ready_claim()
+    with SessionLocal() as db:
+        run = db.get(models.SemanticClaim, claim_id).research_run
+        iso = db.query(models.IsolationState).filter_by(research_run_id=run.id).one()
+        db.get(models.AuditLog, iso.audit_ref).action = "OTHER_ACTION"
+        db.commit()
+        accepted, reasons = _evaluate(db, claim_id)
+        assert not accepted
+        assert "Source isolation attestation audit has the wrong establishment action" in reasons
+
+
+def test_control_rejects_isolation_attestation_for_wrong_run():
+    _, claim_id = build_accepted_ready_claim()
+    with SessionLocal() as db:
+        run = db.get(models.SemanticClaim, claim_id).research_run
+        iso = db.query(models.IsolationState).filter_by(research_run_id=run.id).one()
+        iso.research_run_id = "run_wrong_attestation"
+        db.commit()
+        accepted, reasons = _evaluate(db, claim_id)
+        assert not accepted
+        assert "Source isolation is absent or contaminated" in reasons
+
+
+def test_control_rejects_isolation_attestation_for_wrong_snapshot():
+    _, claim_id = build_accepted_ready_claim()
+    with SessionLocal() as db:
+        run = db.get(models.SemanticClaim, claim_id).research_run
+        iso = db.query(models.IsolationState).filter_by(research_run_id=run.id).one()
+        iso.corpus_snapshot = SECOND_SNAPSHOT
+        db.commit()
+        accepted, reasons = _evaluate(db, claim_id)
+        assert not accepted
+        assert (
+            "Source isolation attestation corpus snapshot does not match ResearchRun"
+            in reasons
+        )
+
+
+def test_control_rejects_isolation_attestation_for_wrong_methodology():
+    _, claim_id = build_accepted_ready_claim()
+    with SessionLocal() as db:
+        run = db.get(models.SemanticClaim, claim_id).research_run
+        iso = db.query(models.IsolationState).filter_by(research_run_id=run.id).one()
+        iso.methodology_reference = "methodology_wrong_attestation"
+        db.commit()
+        accepted, reasons = _evaluate(db, claim_id)
+        assert not accepted
+        assert (
+            "Source isolation attestation methodology reference does not match ResearchRun"
+            in reasons
+        )
+
+
+def test_control_rejects_forged_isolation_attestation_timestamp():
+    _, claim_id = build_accepted_ready_claim()
+    with SessionLocal() as db:
+        run = db.get(models.SemanticClaim, claim_id).research_run
+        iso = db.query(models.IsolationState).filter_by(research_run_id=run.id).one()
+        iso.attested_at = iso.attested_at + timedelta(seconds=1)
+        db.commit()
+        accepted, reasons = _evaluate(db, claim_id)
+        assert not accepted
+        assert "Source isolation attestation timestamp does not match audit record" in reasons
+
+
+def test_control_rejects_missing_isolation_attestation_manifest():
+    _, claim_id = build_accepted_ready_claim()
+    with SessionLocal() as db:
+        run = db.get(models.SemanticClaim, claim_id).research_run
+        iso = db.query(models.IsolationState).filter_by(research_run_id=run.id).one()
+        iso.input_manifest = {}
+        db.commit()
+        accepted, reasons = _evaluate(db, claim_id)
+        assert not accepted
+        assert "Source isolation attestation input manifest is missing" in reasons
 
 
 def test_control_rejects_contaminated_isolation():

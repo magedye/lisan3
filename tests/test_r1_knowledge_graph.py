@@ -1,5 +1,5 @@
 import uuid
-from datetime import datetime
+from datetime import datetime, timezone
 
 import networkx as nx
 import pytest
@@ -563,7 +563,7 @@ def test_unsupported_graph_vocabulary_fails_closed(edge_type):
                     entity_id=f"{suffix}:source",
                     entity_revision="1",
                     projection_revision="test",
-                    created_at=datetime.utcnow(),
+                    created_at=datetime.now(timezone.utc).replace(tzinfo=None),
                 ),
                 models.KnowledgeNode(
                     node_id=target_id,
@@ -571,7 +571,7 @@ def test_unsupported_graph_vocabulary_fails_closed(edge_type):
                     entity_id=f"{suffix}:target",
                     entity_revision="1",
                     projection_revision="test",
-                    created_at=datetime.utcnow(),
+                    created_at=datetime.now(timezone.utc).replace(tzinfo=None),
                 ),
             ]
         )

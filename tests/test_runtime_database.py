@@ -27,6 +27,16 @@ def test_default_database_url_is_repository_absolute():
     assert SQLALCHEMY_DATABASE_URL == f"sqlite:///{DEFAULT_DATABASE_PATH.as_posix()}"
 
 
+def test_legacy_backend_migration_entrypoint_is_quarantined():
+    legacy_config = REPOSITORY_ROOT / "backend" / "alembic.ini"
+    legacy_notice = REPOSITORY_ROOT / "backend" / "alembic" / "README"
+    assert not legacy_config.exists()
+    assert "RETIRED" in legacy_notice.read_text(encoding="utf-8")
+    assert "sole canonical migration configuration" in legacy_notice.read_text(
+        encoding="utf-8"
+    )
+
+
 def test_fresh_migrated_database_is_current(tmp_path):
     database_path = tmp_path / "fresh.db"
     _migrate(database_path)

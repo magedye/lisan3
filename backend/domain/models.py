@@ -21,6 +21,11 @@ from sqlalchemy.orm import relationship
 from ..infrastructure.database import Base
 
 
+def utc_now_naive() -> datetime.datetime:
+    """Return UTC in the project's existing timezone-naive DB representation."""
+    return datetime.datetime.now(datetime.UTC).replace(tzinfo=None)
+
+
 class ResearchStage(str, enum.Enum):
     RESEARCH = "RESEARCH"
     CHALLENGE = "CHALLENGE"
@@ -105,7 +110,7 @@ class MethodologyRevision(Base):
     source_sha256 = Column(String, nullable=False)
     allowed_use = Column(String, nullable=False)
     research_run_eligible = Column(Boolean, nullable=False, default=False)
-    created_at = Column(DateTime, nullable=False, default=datetime.datetime.utcnow)
+    created_at = Column(DateTime, nullable=False, default=utc_now_naive)
 
 
 @event.listens_for(MethodologyRevision, "before_update")
@@ -142,9 +147,9 @@ class ResearchRun(Base):
     authority_context = Column(JSON, nullable=False)
     current_stage = Column(String, default=ResearchStage.RESEARCH.value)
     status = Column(String, default="ACTIVE")
-    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    created_at = Column(DateTime, default=utc_now_naive)
     updated_at = Column(
-        DateTime, default=datetime.datetime.utcnow, onupdate=datetime.datetime.utcnow
+        DateTime, default=utc_now_naive, onupdate=utc_now_naive
     )
 
     claims = relationship("SemanticClaim", back_populates="research_run")
@@ -226,7 +231,7 @@ class SemanticClaim(Base):
     reopen_conditions = Column(JSON, nullable=False, default=list)
     accepted_at = Column(DateTime)
 
-    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    created_at = Column(DateTime, default=utc_now_naive)
 
     research_run = relationship("ResearchRun", back_populates="claims")
 
@@ -242,7 +247,7 @@ class VerificationRecord(Base):
     rationale = Column(String)
     evidence_refs = Column(JSON, nullable=False, default=list)
     evaluated_claim_revision = Column(Integer, nullable=False, default=1)
-    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    created_at = Column(DateTime, default=utc_now_naive)
 
 
 class AIExecutionRecord(Base):
@@ -259,7 +264,7 @@ class AIExecutionRecord(Base):
     output_artifact_refs = Column(JSON)
     execution_status = Column(String, nullable=False)  # SUCCESS, FAILED
     error_message = Column(String)
-    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    created_at = Column(DateTime, default=utc_now_naive)
 
     research_run = relationship("ResearchRun", back_populates="ai_execution_records")
 
@@ -294,7 +299,7 @@ class IsolationState(Base):
     attesting_actor = Column(String, nullable=True)
     attested_at = Column(DateTime, nullable=True)
     audit_ref = Column(String, nullable=True)
-    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    created_at = Column(DateTime, default=utc_now_naive)
 
 
 class ObservationArtifact(Base):
@@ -308,7 +313,7 @@ class ObservationArtifact(Base):
     participant_roles = Column(String)
     local_context = Column(String)
     unresolved_ambiguity = Column(String)
-    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    created_at = Column(DateTime, default=utc_now_naive)
 
 
 class CorpusSnapshot(Base):
@@ -359,7 +364,7 @@ class CorpusSnapshot(Base):
     verse_count = Column(Integer, nullable=True)
     canon_001_reconciliation = Column(String, nullable=True)
     fixture_only = Column(Boolean, nullable=False, default=True)
-    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    created_at = Column(DateTime, default=utc_now_naive)
 
 
 @event.listens_for(CorpusSnapshot, "before_insert")
@@ -446,7 +451,7 @@ class CorpusOccurrence(Base):
     expression = Column(String)
     verse_ref = Column(String, nullable=False)
     text = Column(String, nullable=False)
-    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    created_at = Column(DateTime, default=utc_now_naive)
 
 
 class IsolationEvent(Base):
@@ -455,7 +460,7 @@ class IsolationEvent(Base):
     research_run_id = Column(String, ForeignKey("research_runs.id"))
     attempted_action = Column(String)
     was_blocked = Column(Boolean, default=True)
-    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    created_at = Column(DateTime, default=utc_now_naive)
 
 
 class Hypothesis(Base):
@@ -486,7 +491,7 @@ class Hypothesis(Base):
     unresolved_cases = Column(JSON)
     rejection_condition = Column(JSON)  # Structured object
     provenance = Column(String)
-    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    created_at = Column(DateTime, default=utc_now_naive)
 
 
 @event.listens_for(Hypothesis, "before_update")
@@ -511,7 +516,7 @@ class EssentialNeighbor(Base):
     supporting_evidence = Column(JSON)
     counterevidence = Column(JSON)
     unresolved_distinction = Column(String)
-    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    created_at = Column(DateTime, default=utc_now_naive)
 
 
 # --- Governance (Slice E) ---
@@ -521,7 +526,7 @@ class GovernanceRule(Base):
     rule_code = Column(String, unique=True, nullable=False)
     description = Column(String)
     active_revision = Column(Integer, default=1)
-    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    created_at = Column(DateTime, default=utc_now_naive)
 
 
 class RuleRevision(Base):
@@ -531,7 +536,7 @@ class RuleRevision(Base):
     revision_number = Column(Integer, nullable=False)
     changes_described = Column(String)
     approved_by = Column(String)
-    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    created_at = Column(DateTime, default=utc_now_naive)
 
 
 class ChangeProposal(Base):
@@ -541,7 +546,7 @@ class ChangeProposal(Base):
     proposed_changes = Column(String)
     impact_analysis = Column(JSON)  # affected dependencies
     status = Column(String, default="PROPOSED")  # PROPOSED, APPROVED, REJECTED
-    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    created_at = Column(DateTime, default=utc_now_naive)
 
 
 class DependencyRecord(Base):
@@ -553,7 +558,7 @@ class DependencyRecord(Base):
     )  # e.g. "GOVERNANCE_RULE", "CORPUS_SNAPSHOT"
     dependency_ref = Column(String, nullable=False)  # e.g. rule_code
     dependency_revision = Column(Integer)
-    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    created_at = Column(DateTime, default=utc_now_naive)
 
 
 # --- R1 Knowledge Graph projection ---
@@ -740,7 +745,7 @@ class SemanticEmbedding(Base):
     index_revision = Column(String, nullable=False)
     lifecycle_state = Column(String, nullable=False, default="CURRENT")
     invalidated_reason = Column(String, nullable=True)
-    created_at = Column(DateTime, nullable=False, default=datetime.datetime.utcnow)
+    created_at = Column(DateTime, nullable=False, default=utc_now_naive)
 
 
 @event.listens_for(SemanticEmbedding, "before_insert")
@@ -781,7 +786,7 @@ class StewardCommand(Base):
     evaluated_rules = Column(JSON)
     execution_status = Column(String, default="PENDING")
     result_summary = Column(String)
-    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    created_at = Column(DateTime, default=utc_now_naive)
 
 
 # --- Knowledge & Operations (Slice G) ---
@@ -794,7 +799,7 @@ class AuditLog(Base):
     previous_state = Column(String)
     new_state = Column(String)
     actor = Column(String)
-    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    created_at = Column(DateTime, default=utc_now_naive)
 
 
 class QualityProfile(Base):
@@ -818,7 +823,7 @@ class QualityProfile(Base):
         JSON, default=list
     )  # e.g. ["tafsir_contamination", "dictionary_first"]
     evaluation_summary = Column(String)
-    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    created_at = Column(DateTime, default=utc_now_naive)
 
 
 # --- Descriptive Knowledge Base (INT-PRE-OWN-001) ---
@@ -863,7 +868,7 @@ class StructuralToken(Base):
     attribution_status = Column(
         String, nullable=False, default=StructuralAttributionStatus.CONFIRMED.value
     )
-    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    created_at = Column(DateTime, default=utc_now_naive)
 
 
 # --- Unified External Hypothesis Register (INT-EXT-001..007) ---
@@ -934,9 +939,9 @@ class ExternalHypothesisRecord(Base):
     result = Column(String)
     provenance = Column(String, nullable=False)
     research_run_id = Column(String, ForeignKey("research_runs.id"), nullable=True)
-    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    created_at = Column(DateTime, default=utc_now_naive)
     updated_at = Column(
-        DateTime, default=datetime.datetime.utcnow, onupdate=datetime.datetime.utcnow
+        DateTime, default=utc_now_naive, onupdate=utc_now_naive
     )
 
 
@@ -968,7 +973,7 @@ class CampaignState(Base):
     current_batch = Column(JSON, nullable=False, default=dict)
     findings = Column(JSON, nullable=False, default=list)
     status = Column(String, nullable=False, default="INITIALIZED")
-    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    created_at = Column(DateTime, default=utc_now_naive)
     updated_at = Column(
-        DateTime, default=datetime.datetime.utcnow, onupdate=datetime.datetime.utcnow
+        DateTime, default=utc_now_naive, onupdate=utc_now_naive
     )

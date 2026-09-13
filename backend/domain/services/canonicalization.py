@@ -8,6 +8,7 @@ from sqlalchemy.orm import Session
 
 from backend.domain import models
 from backend.domain.services.corpus.authority import is_production_validated
+from backend.domain.services.isolation import isolation_attestation_failures
 from backend.domain.services.methodology_authority import methodology_authority_failures
 from backend.domain.services.research_coverage import confirmed_word_refs
 from backend.domain.services.research_judgment import resolve_evidence_refs
@@ -95,6 +96,8 @@ class CanonicalizationPolicy:
             reasons.append(
                 "Source isolation was never genuinely established (NOT_ESTABLISHED)"
             )
+        if isolation is not None:
+            reasons.extend(isolation_attestation_failures(db, run, isolation))
         evidence = resolve_evidence_refs(
             db,
             run,

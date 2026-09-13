@@ -30,7 +30,9 @@ class ToolDispatcher:
                 "tool_name": name,
                 "input": kwargs,
                 "status": "SUCCESS",
-                "executed_at": datetime.datetime.utcnow().isoformat(),
+                "executed_at": datetime.datetime.now(datetime.UTC)
+                .replace(tzinfo=None)
+                .isoformat(),
             }
         )
 

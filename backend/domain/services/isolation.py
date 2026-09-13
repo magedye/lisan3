@@ -1,5 +1,6 @@
 import datetime
 import uuid
+from collections.abc import Mapping
 
 from sqlalchemy.orm import Session
 
@@ -27,6 +28,55 @@ PROHIBITED_SEMANTIC_SOURCES = (
 
 NOT_ESTABLISHED = "NOT_ESTABLISHED"
 ESTABLISHED = "ESTABLISHED"
+
+
+def isolation_attestation_failures(
+    db: Session,
+    run: ResearchRun,
+    state: IsolationState,
+) -> list[str]:
+    """Return fail-closed defects in an ESTABLISHED isolation attestation.
+
+    ``CLEAN`` and ``ESTABLISHED`` are necessary but not sufficient for
+    canonicalization.  The recorded attestation must still bind the exact run,
+    its corpus/methodology lineage, and the immutable audit event that asserted
+    the boundary.  This is intentionally a canonicalization guard rather than
+    a Research Judgment admission rule.
+    """
+    failures: list[str] = []
+    if state.establishment_status != ESTABLISHED:
+        return failures
+
+    if not isinstance(state.input_manifest, Mapping) or not state.input_manifest:
+        failures.append("Source isolation attestation input manifest is missing")
+    if not isinstance(state.attesting_actor, str) or not state.attesting_actor.strip():
+        failures.append("Source isolation attestation actor is missing")
+    if state.attested_at is None:
+        failures.append("Source isolation attestation timestamp is missing")
+    if not isinstance(state.audit_ref, str) or not state.audit_ref.strip():
+        failures.append("Source isolation attestation audit reference is missing")
+    if state.corpus_snapshot != run.corpus_snapshot:
+        failures.append(
+            "Source isolation attestation corpus snapshot does not match ResearchRun"
+        )
+    if state.methodology_reference != run.methodology_revision:
+        failures.append(
+            "Source isolation attestation methodology reference does not match ResearchRun"
+        )
+
+    audit = db.get(AuditLog, state.audit_ref) if state.audit_ref else None
+    if audit is None:
+        failures.append("Source isolation attestation audit record is missing")
+        return failures
+    if audit.entity_id != run.id or audit.entity_type != "IsolationState":
+        failures.append("Source isolation attestation audit does not bind this ResearchRun")
+    if audit.action != "ESTABLISH_SOURCE_ISOLATION" or audit.new_state != ESTABLISHED:
+        failures.append("Source isolation attestation audit has the wrong establishment action")
+    if audit.actor != state.attesting_actor:
+        failures.append("Source isolation attestation actor does not match audit record")
+    if audit.created_at != state.attested_at:
+        failures.append("Source isolation attestation timestamp does not match audit record")
+    return failures
 
 
 class IsolationContaminationException(Exception):

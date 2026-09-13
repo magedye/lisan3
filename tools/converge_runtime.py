@@ -20,10 +20,12 @@ duplicating it.
 Run (defaults to the authoritative lisanapp.db):
     python -m tools.converge_runtime
     python -m tools.converge_runtime --json            # machine-readable evidence
-    python -m tools.converge_runtime --db sqlite:///some/other.db   # explicit target
+    python -m tools.converge_runtime --db sqlite:///D:/APP/tafseer/lisanapp3/lisanapp.db
 
-By design it refuses to run against ``data/campaign/runtime.db`` (the
-non-governed side store) unless --allow-side-store is passed.
+The command permits only the repository's canonical ``lisanapp.db`` target.
+It rejects any side store by resolved database identity, including a renamed or
+alembic-stamped copy.  ``--db`` remains only to make an explicit canonical
+target auditable; it is not an arbitrary-target escape hatch.
 """
 
 from __future__ import annotations
@@ -32,9 +34,11 @@ import argparse
 import json
 import sys
 from dataclasses import asdict, dataclass
+from pathlib import Path
 from typing import Any
 
 from sqlalchemy import create_engine
+from sqlalchemy.engine import make_url
 from sqlalchemy.orm import sessionmaker
 
 from backend.domain import models
@@ -59,6 +63,7 @@ from backend.domain.services.methodology_authority import (
     methodology_authority_failures,
 )
 from backend.infrastructure.database import (
+    DEFAULT_DATABASE_PATH,
     SQLALCHEMY_DATABASE_URL,
     database_schema_status,
 )
@@ -92,6 +97,34 @@ class ConvergenceEvidence:
 
 class ConvergenceError(RuntimeError):
     pass
+
+
+def authoritative_target_failure(database_url: str) -> str | None:
+    """Return why a CLI target is not the one authoritative runtime database.
+
+    This deliberately checks parsed SQLite target identity, not filename
+    substrings.  A renamed campaign side store (or any other copy) cannot be
+    promoted simply by choosing a less recognizable file name.
+    """
+    try:
+        target = make_url(database_url)
+    except Exception as exc:  # argparse boundary; SQLAlchemy owns URL parsing.
+        return f"target database URL cannot be parsed: {exc}"
+    if target.get_backend_name() != "sqlite" or not target.database:
+        return "target must be the canonical SQLite runtime database"
+    if target.database == ":memory:":
+        return "in-memory databases are not an authoritative runtime target"
+    candidate = Path(target.database)
+    if not candidate.is_absolute():
+        candidate = (Path.cwd() / candidate).resolve()
+    else:
+        candidate = candidate.resolve()
+    if candidate != DEFAULT_DATABASE_PATH.resolve():
+        return (
+            "target is not the authoritative lisanapp.db path; refusing a side "
+            "store, renamed copy, or accidental wrong-path invocation"
+        )
+    return None
 
 
 def converge(db, *, evidence: ConvergenceEvidence) -> ConvergenceEvidence:
@@ -221,18 +254,12 @@ def main(argv: list[str] | None = None) -> int:
         help="SQLAlchemy URL of the authoritative runtime DB (default: lisanapp.db).",
     )
     parser.add_argument("--json", action="store_true", help="Emit JSON evidence only.")
-    parser.add_argument(
-        "--allow-side-store",
-        action="store_true",
-        help="Permit running against data/campaign/runtime.db (normally refused).",
-    )
     args = parser.parse_args(argv)
 
-    if "runtime.db" in args.db and not args.allow_side_store:
+    target_failure = authoritative_target_failure(args.db)
+    if target_failure:
         print(
-            "REFUSED: target looks like the non-governed campaign side store "
-            f"({args.db}). The authoritative runtime DB is lisanapp.db. "
-            "Pass --allow-side-store only if you really mean it.",
+            f"REFUSED: {target_failure}. Requested target: {args.db}",
             file=sys.stderr,
         )
         return 2
