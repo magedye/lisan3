@@ -1,0 +1,770 @@
+{
+  "artifact_type": "QURAN_INTERNAL_PURITY_OVERCLAIM_ADVERSARY",
+  "artifact_revision": "FWH_CYCLE2_ADVERSARY_V1_2026_09_13",
+  "root": "fwh",
+  "panel_role": "fresh_quran_internal_purity_overclaim_adversary",
+  "canonical_state": "NOT_CANONICAL",
+  "review_constraints": {
+    "semantic_input_policy": "CURRENT_GOVERNANCE_METHOD_PLUS_PRODUCTION_TANZIL_PLUS_EXACT_CONFIRMED_FWH_STRUCTURAL_ROWS_ONLY",
+    "allowed_inputs_used": [
+      "AUTHORITY_MAP.md",
+      "SIMPLIFIED_AI_AUTHORITY_AND_GOVERNANCE_CONTRACT.md",
+      "docs/canonical/LISAN_PLATFORM_CANONICAL_IMPLEMENTATION_REFERENCE.md",
+      "docs/canonical/LISAN_PURITY_AND_STRUCTURAL_EVIDENCE_CONTRACT.md",
+      "docs/canonical/ADMISSION_TANZIL.md",
+      "docs/canonical/ADMISSION_QAC.md",
+      "skills/lisan-semantic-extraction/SKILL.md",
+      "data/corpus/tanzil/tanzil-uthmani-1.1.txt",
+      "data/corpus/qac/quranic-corpus-morphology-0.4.txt",
+      "lisanapp.db:corpus_snapshots",
+      "lisanapp.db:corpus_occurrences",
+      "lisanapp.db:structural_tokens"
+    ],
+    "excluded_semantic_inputs_not_used": [
+      "model_memory",
+      "external_semantics",
+      "dictionaries",
+      "tafsir",
+      "translations",
+      "prior_observations",
+      "Batch07",
+      "PROJECT_STATE",
+      "five_root_artifacts"
+    ],
+    "actual_prohibited_semantic_content_exposure": false
+  },
+  "source_bindings": {
+    "quran_text": {
+      "snapshot_id": "snap_tanzil_1_1_ac0724796cbb",
+      "source_id": "TANZIL_QURAN_UTHMANI",
+      "version": "1.1",
+      "sha256": "ac0724796cbbda0f4801470fbbd11d0f3c5802067bae0493466d0128b0c667af",
+      "artifact_size_bytes": 1334737,
+      "validation_status": "VALIDATED",
+      "import_validation_status": "IMPORT_VALIDATED",
+      "activation_status": "PRODUCTION_ACTIVE",
+      "fixture_only": false,
+      "authority_use": "PRIMARY_QURAN_TEXT_AND_VERSE_IDENTITY"
+    },
+    "structural_annotation": {
+      "source_id": "QAC_MORPHOLOGY",
+      "version": "0.4",
+      "sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+      "artifact_size_bytes": 6309503,
+      "extraction_version": "qac-0.4-import-v1",
+      "attribution_status_required": "CONFIRMED",
+      "authority_use": "ROOT_AND_MORPHOLOGY_ANNOTATION_ONLY",
+      "semantic_authority": false
+    },
+    "active_method": {
+      "authority_revision": "LISAN3_CANONICAL_IMPLEMENTATION_V3_2026_09_06",
+      "ai_authority_revision": "LISAN3_AI_AUTHORITY_V3_2026_09_06",
+      "diagnostics_revision": "LISAN3_DIAGNOSTICS_CONTRACT_V3_2026_09_06",
+      "semantic_runtime_revision": "LISAN3_SEMANTIC_RUNTIME_V3_2026_09_06"
+    }
+  },
+  "evidence_reference_classes": [
+    {
+      "class": "PRIMARY_QURAN_TEXT",
+      "format": "TANZIL_QURAN_UTHMANI:1.1:<surah>:<ayah>",
+      "permitted_use": "Quran text, verse identity, and Quran-internal local context"
+    },
+    {
+      "class": "STRUCTURAL_ROOT_MORPHOLOGY",
+      "format": "QAC_MORPHOLOGY:0.4:<surah>:<ayah>:<word>:<segment>",
+      "permitted_use": "confirmed root, lemma, part of speech, number, case, and segment identity only"
+    },
+    {
+      "class": "SAME_RUN_OBSERVATION",
+      "format": "FWH-C2-OBS-<nn>",
+      "permitted_use": "derived phrase or distribution observation that must terminate in both exact source references"
+    },
+    {
+      "class": "ADVERSARIAL_TEST",
+      "format": "FWH-C2-PC-<nn> or FWH-C2-TEST-<nn>",
+      "permitted_use": "challenge result only; never independent Quran evidence"
+    }
+  ],
+  "coverage": {
+    "claim_universe": "all CONFIRMED structural_tokens with root=fwh on the PRODUCTION_ACTIVE Tanzil snapshot",
+    "confirmed_token_count": 13,
+    "audited_token_count": 13,
+    "uninspected_token_count": 0,
+    "attribution_distribution": {
+      "CONFIRMED": 13,
+      "DISPUTED": 0,
+      "UNRESOLVED": 0
+    },
+    "pos_and_form_distribution": {
+      "N": 13
+    },
+    "lemma_distribution": {
+      ">afowa`h": 12,
+      "faA": 1
+    },
+    "coverage_verdict": "COMPLETE_FOR_EXACT_CONFIRMED_ACTIVE_FWH_STRUCTURAL_SET",
+    "coverage_limit": "This does not create derivative diversity and does not by itself authorize a bare-root semantic conclusion."
+  },
+  "root_lexeme_form_separation": {
+    "structural_root_observation": "All 13 exact stem rows carry ROOT:fwh; this establishes a structural grouping only.",
+    "lexical_units_observed": [
+      {
+        "qac_lemma": ">afowa`h",
+        "count": 12,
+        "number_case_profile": "MP|GEN",
+        "quran_surface_family": "أَفْوَاه"
+      },
+      {
+        "qac_lemma": "faA",
+        "count": 1,
+        "number_case_profile": "MS|NOM",
+        "quran_surface_family": "فَاهُ"
+      }
+    ],
+    "form_observation": "Every exact row is a noun stem and the persisted form and POS fields are N; there is no verbal-form or distinct derivative contrast in the 13-token universe.",
+    "lexeme_level_inference": "The two observed noun lemma annotations are consistently compatible with the bodily mouth across every local construction.",
+    "root_level_inference": "UNRESOLVED: the Quran-internal set does not discriminate a concrete bodily-mouth root core from an oral-aperture/interface abstraction or from no separately recoverable abstraction beyond these noun lexemes.",
+    "prohibited_promotion": "Do not promote the concrete lexical referent or contextual speech function into a bare-root semantic claim."
+  },
+  "reference_classes": [
+    {
+      "class_id": "FWH-RC-01",
+      "label": "BODY_PART_IN_REACHING_RELATION",
+      "verse_refs": [
+        "13:14"
+      ],
+      "word_refs": [
+        "13:14:18:1"
+      ]
+    },
+    {
+      "class_id": "FWH-RC-02",
+      "label": "BODY_PART_CONTAINER",
+      "verse_refs": [
+        "14:9"
+      ],
+      "word_refs": [
+        "14:9:24:1"
+      ]
+    },
+    {
+      "class_id": "FWH-RC-03",
+      "label": "SEALED_BODY_PART",
+      "verse_refs": [
+        "36:65"
+      ],
+      "word_refs": [
+        "36:65:4:1"
+      ]
+    },
+    {
+      "class_id": "FWH-RC-04",
+      "label": "OUTPUT_SOURCE_WITH_MIN",
+      "verse_refs": [
+        "3:118",
+        "18:5"
+      ],
+      "word_refs": [
+        "3:118:19:1",
+        "18:5:12:1"
+      ]
+    },
+    {
+      "class_id": "FWH-RC-05",
+      "label": "ORAL_INSTRUMENT_OR_MEANS_WITH_BI",
+      "verse_refs": [
+        "3:167",
+        "5:41",
+        "9:8",
+        "9:30",
+        "24:15",
+        "33:4"
+      ],
+      "word_refs": [
+        "3:167:25:2",
+        "5:41:13:2",
+        "9:8:12:2",
+        "9:30:13:2",
+        "24:15:5:2",
+        "33:4:22:2"
+      ]
+    },
+    {
+      "class_id": "FWH-RC-06",
+      "label": "EXTINGUISHING_ATTEMPT_WITH_BI_HARD_PAIR",
+      "verse_refs": [
+        "9:32",
+        "61:8"
+      ],
+      "word_refs": [
+        "9:32:6:2",
+        "61:8:5:2"
+      ]
+    }
+  ],
+  "phrase_audit": [
+    {
+      "observation_id": "FWH-C2-OBS-01",
+      "verse_ref": "3:118",
+      "quran_text_ref": "TANZIL_QURAN_UTHMANI:1.1:3:118",
+      "structural_ref": "QAC_MORPHOLOGY:0.4:3:118:19:1",
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_3_118_19_1",
+      "exact_phrase": "قَدْ بَدَتِ ٱلْبَغْضَآءُ مِنْ أَفْوَٰهِهِمْ وَمَا تُخْفِى صُدُورُهُمْ أَكْبَرُ",
+      "qac_lemma": ">afowa`h",
+      "qac_features": "N|MP|GEN",
+      "construction_class": "OUTPUT_SOURCE_WITH_MIN",
+      "observation": "The mouth phrase is the marked source of what becomes manifest and is contrasted with chests.",
+      "lexeme_candidate_result": "SURVIVES",
+      "overclaim_guard": "Do not assign hatred, manifestation, hiddenness, or the mouth/chest contrast to ROOT:fwh."
+    },
+    {
+      "observation_id": "FWH-C2-OBS-02",
+      "verse_ref": "3:167",
+      "quran_text_ref": "TANZIL_QURAN_UTHMANI:1.1:3:167",
+      "structural_ref": "QAC_MORPHOLOGY:0.4:3:167:25:2",
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_3_167_25_2",
+      "exact_phrase": "يَقُولُونَ بِأَفْوَٰهِهِم مَّا لَيْسَ فِى قُلُوبِهِمْ",
+      "qac_lemma": ">afowa`h",
+      "qac_features": "N|MP|GEN",
+      "construction_class": "ORAL_INSTRUMENT_OR_MEANS_WITH_BI",
+      "observation": "The mouth is attached by bi to saying and is contrasted with hearts.",
+      "lexeme_candidate_result": "SURVIVES",
+      "overclaim_guard": "Do not make false saying, outwardness, or heart opposition part of ROOT:fwh."
+    },
+    {
+      "observation_id": "FWH-C2-OBS-03",
+      "verse_ref": "5:41",
+      "quran_text_ref": "TANZIL_QURAN_UTHMANI:1.1:5:41",
+      "structural_ref": "QAC_MORPHOLOGY:0.4:5:41:13:2",
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_5_41_13_2",
+      "exact_phrase": "قَالُوٓا۟ ءَامَنَّا بِأَفْوَٰهِهِمْ وَلَمْ تُؤْمِن قُلُوبُهُمْ",
+      "qac_lemma": ">afowa`h",
+      "qac_features": "N|MP|GEN",
+      "construction_class": "ORAL_INSTRUMENT_OR_MEANS_WITH_BI",
+      "observation": "The mouth marks the bodily means of a stated profession while the heart clause denies matching belief.",
+      "lexeme_candidate_result": "SURVIVES",
+      "overclaim_guard": "Belief, unbelief, profession, and hypocrisy belong to the saying and contrastive context, not ROOT:fwh."
+    },
+    {
+      "observation_id": "FWH-C2-OBS-04",
+      "verse_ref": "9:8",
+      "quran_text_ref": "TANZIL_QURAN_UTHMANI:1.1:9:8",
+      "structural_ref": "QAC_MORPHOLOGY:0.4:9:8:12:2",
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_9_8_12_2",
+      "exact_phrase": "يُرْضُونَكُم بِأَفْوَٰهِهِمْ وَتَأْبَىٰ قُلُوبُهُمْ",
+      "qac_lemma": ">afowa`h",
+      "qac_features": "N|MP|GEN",
+      "construction_class": "ORAL_INSTRUMENT_OR_MEANS_WITH_BI",
+      "observation": "The mouth is the marked means of placating effect and is contrasted with hearts.",
+      "lexeme_candidate_result": "SURVIVES",
+      "overclaim_guard": "Placating, refusal, insincerity, and the heart contrast are contextual contributions."
+    },
+    {
+      "observation_id": "FWH-C2-OBS-05",
+      "verse_ref": "9:30",
+      "quran_text_ref": "TANZIL_QURAN_UTHMANI:1.1:9:30",
+      "structural_ref": "QAC_MORPHOLOGY:0.4:9:30:13:2",
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_9_30_13_2",
+      "exact_phrase": "ذَٰلِكَ قَوْلُهُم بِأَفْوَٰهِهِمْ يُضَٰهِـُٔونَ قَوْلَ ٱلَّذِينَ كَفَرُوا۟ مِن قَبْلُ",
+      "qac_lemma": ">afowa`h",
+      "qac_features": "N|MP|GEN",
+      "construction_class": "ORAL_INSTRUMENT_OR_MEANS_WITH_BI",
+      "observation": "The noun qawl is separately present and the mouth phrase specifies the bodily means of their saying.",
+      "lexeme_candidate_result": "SURVIVES",
+      "overclaim_guard": "The co-occurrence blocks silently redefining fwh as qawl itself or importing the content and comparison into the root."
+    },
+    {
+      "observation_id": "FWH-C2-OBS-06",
+      "verse_ref": "9:32",
+      "quran_text_ref": "TANZIL_QURAN_UTHMANI:1.1:9:32",
+      "structural_ref": "QAC_MORPHOLOGY:0.4:9:32:6:2",
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_9_32_6_2",
+      "exact_phrase": "يُرِيدُونَ أَن يُطْفِـُٔوا۟ نُورَ ٱللَّهِ بِأَفْوَٰهِهِمْ",
+      "qac_lemma": ">afowa`h",
+      "qac_features": "N|MP|GEN",
+      "construction_class": "EXTINGUISHING_ATTEMPT_WITH_BI_HARD_PAIR",
+      "observation": "The mouth is the marked means in an attempted extinguishing construction.",
+      "lexeme_candidate_result": "PRESSURED_BUT_SURVIVES",
+      "overclaim_guard": "The verse does not by itself distinguish breath, speech, or a broader figurative mechanism; none may be assigned to ROOT:fwh."
+    },
+    {
+      "observation_id": "FWH-C2-OBS-07",
+      "verse_ref": "13:14",
+      "quran_text_ref": "TANZIL_QURAN_UTHMANI:1.1:13:14",
+      "structural_ref": "QAC_MORPHOLOGY:0.4:13:14:18:1",
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_13_14_18_1",
+      "exact_phrase": "كَبَٰسِطِ كَفَّيْهِ إِلَى ٱلْمَآءِ لِيَبْلُغَ فَاهُ وَمَا هُوَ بِبَٰلِغِهِۦ",
+      "qac_lemma": "faA",
+      "qac_features": "N|MS|NOM",
+      "construction_class": "BODY_PART_IN_REACHING_RELATION",
+      "observation": "The singular mouth is a bodily participant in a reaching construction involving outstretched hands and water.",
+      "lexeme_candidate_result": "STRONG_SUPPORT",
+      "overclaim_guard": "The exact direction and participant reference of reaching remain local questions; the one singular lemma annotation cannot define a bare-root abstraction."
+    },
+    {
+      "observation_id": "FWH-C2-OBS-08",
+      "verse_ref": "14:9",
+      "quran_text_ref": "TANZIL_QURAN_UTHMANI:1.1:14:9",
+      "structural_ref": "QAC_MORPHOLOGY:0.4:14:9:24:1",
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_14_9_24_1",
+      "exact_phrase": "فَرَدُّوٓا۟ أَيْدِيَهُمْ فِىٓ أَفْوَٰهِهِمْ وَقَالُوٓا۟ إِنَّا كَفَرْنَا",
+      "qac_lemma": ">afowa`h",
+      "qac_features": "N|MP|GEN",
+      "construction_class": "BODY_PART_CONTAINER",
+      "observation": "Hands and mouths are distinct bodily participants in a fi containment relation before a saying clause.",
+      "lexeme_candidate_result": "STRONG_SUPPORT_WITH_LOCAL_ACTION_UNRESOLVED",
+      "overclaim_guard": "The exact gesture, purpose, and discourse force are not fixed by ROOT:fwh and remain locally unresolved."
+    },
+    {
+      "observation_id": "FWH-C2-OBS-09",
+      "verse_ref": "18:5",
+      "quran_text_ref": "TANZIL_QURAN_UTHMANI:1.1:18:5",
+      "structural_ref": "QAC_MORPHOLOGY:0.4:18:5:12:1",
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_18_5_12_1",
+      "exact_phrase": "كَبُرَتْ كَلِمَةً تَخْرُجُ مِنْ أَفْوَٰهِهِمْ إِن يَقُولُونَ إِلَّا كَذِبًا",
+      "qac_lemma": ">afowa`h",
+      "qac_features": "N|MP|GEN",
+      "construction_class": "OUTPUT_SOURCE_WITH_MIN",
+      "observation": "A word is explicitly the thing exiting and the mouth is its source with min.",
+      "lexeme_candidate_result": "SURVIVES",
+      "overclaim_guard": "Word, exit, magnitude, and falsehood are supplied independently by the phrase and context."
+    },
+    {
+      "observation_id": "FWH-C2-OBS-10",
+      "verse_ref": "24:15",
+      "quran_text_ref": "TANZIL_QURAN_UTHMANI:1.1:24:15",
+      "structural_ref": "QAC_MORPHOLOGY:0.4:24:15:5:2",
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_24_15_5_2",
+      "exact_phrase": "إِذْ تَلَقَّوْنَهُۥ بِأَلْسِنَتِكُمْ وَتَقُولُونَ بِأَفْوَاهِكُم مَّا لَيْسَ لَكُم بِهِۦ عِلْمٌ",
+      "qac_lemma": ">afowa`h",
+      "qac_features": "N|MP|GEN",
+      "construction_class": "ORAL_INSTRUMENT_OR_MEANS_WITH_BI",
+      "observation": "Tongues and mouths occur as separately named bodily terms in adjacent constructions, and saying is separately lexicalized.",
+      "lexeme_candidate_result": "SURVIVES",
+      "overclaim_guard": "Do not merge mouth with tongue, saying, reception, or lack of knowledge at the root layer."
+    },
+    {
+      "observation_id": "FWH-C2-OBS-11",
+      "verse_ref": "33:4",
+      "quran_text_ref": "TANZIL_QURAN_UTHMANI:1.1:33:4",
+      "structural_ref": "QAC_MORPHOLOGY:0.4:33:4:22:2",
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_33_4_22_2",
+      "exact_phrase": "ذَٰلِكُمْ قَوْلُكُم بِأَفْوَٰهِكُمْ وَٱللَّهُ يَقُولُ ٱلْحَقَّ",
+      "qac_lemma": ">afowa`h",
+      "qac_features": "N|MP|GEN",
+      "construction_class": "ORAL_INSTRUMENT_OR_MEANS_WITH_BI",
+      "observation": "Qawl is separately lexicalized and the mouth phrase marks the bodily means in the first clause.",
+      "lexeme_candidate_result": "SURVIVES",
+      "overclaim_guard": "The truth contrast and legal or relational effect of labels are not fwh semantics."
+    },
+    {
+      "observation_id": "FWH-C2-OBS-12",
+      "verse_ref": "36:65",
+      "quran_text_ref": "TANZIL_QURAN_UTHMANI:1.1:36:65",
+      "structural_ref": "QAC_MORPHOLOGY:0.4:36:65:4:1",
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_36_65_4_1",
+      "exact_phrase": "ٱلْيَوْمَ نَخْتِمُ عَلَىٰٓ أَفْوَٰهِهِمْ وَتُكَلِّمُنَآ أَيْدِيهِمْ وَتَشْهَدُ أَرْجُلُهُم",
+      "qac_lemma": ">afowa`h",
+      "qac_features": "N|MP|GEN",
+      "construction_class": "SEALED_BODY_PART",
+      "observation": "Mouths, hands, and feet are separately named bodily participants; mouths are the target of sealing.",
+      "lexeme_candidate_result": "STRONG_SUPPORT",
+      "overclaim_guard": "Silencing is produced by khatm plus ala and the discourse; it is not the lexical or root meaning of fwh."
+    },
+    {
+      "observation_id": "FWH-C2-OBS-13",
+      "verse_ref": "61:8",
+      "quran_text_ref": "TANZIL_QURAN_UTHMANI:1.1:61:8",
+      "structural_ref": "QAC_MORPHOLOGY:0.4:61:8:5:2",
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_61_8_5_2",
+      "exact_phrase": "يُرِيدُونَ لِيُطْفِـُٔوا۟ نُورَ ٱللَّهِ بِأَفْوَٰهِهِمْ",
+      "qac_lemma": ">afowa`h",
+      "qac_features": "N|MP|GEN",
+      "construction_class": "EXTINGUISHING_ATTEMPT_WITH_BI_HARD_PAIR",
+      "observation": "The mouth is again the marked means in the paired attempted extinguishing construction.",
+      "lexeme_candidate_result": "PRESSURED_BUT_SURVIVES",
+      "overclaim_guard": "The local mechanism remains underdetermined; the parallel does not create independent derivative evidence for a root core."
+    }
+  ],
+  "six_pressure_counter_cases": [
+    {
+      "test_id": "FWH-C2-PC-01",
+      "refs": [
+        "13:14",
+        "13:14:18:1"
+      ],
+      "pressure": "A speech-only or outward-expression definition must explain the bodily mouth in the hands, water, and reaching relation without importing speech.",
+      "outcome": "COUNTERS_SPEECH_ONLY_COMPETITOR; SUPPORTS_BODILY_LEXEME; DOES_NOT_PROVE_ABSTRACT_ROOT_CORE"
+    },
+    {
+      "test_id": "FWH-C2-PC-02",
+      "refs": [
+        "14:9",
+        "14:9:24:1"
+      ],
+      "pressure": "Hands are put in mouths; any non-bodily universal must absorb a concrete containment relation, while the precise gesture remains unstated.",
+      "outcome": "COUNTERS_SPEECH_ONLY_COMPETITOR; LOCAL_GESTURE_UNRESOLVED"
+    },
+    {
+      "test_id": "FWH-C2-PC-03",
+      "refs": [
+        "36:65",
+        "36:65:4:1"
+      ],
+      "pressure": "Mouths are sealed while hands speak and feet testify; the text distinguishes the named bodily participants from their contextual actions.",
+      "outcome": "COUNTERS_MOUTH_EQUALS_SPEECH; SUPPORTS_BODY_PART_LEXEME"
+    },
+    {
+      "test_id": "FWH-C2-PC-04",
+      "refs": [
+        "3:118",
+        "3:118:19:1"
+      ],
+      "pressure": "Abstract hatred becomes manifest from mouths, so a narrow physical-contact-only gloss cannot explain the source construction without contextual output.",
+      "outcome": "BODY_PART_LEXEME_SURVIVES_VIA_MIN_SOURCE_CONSTRUCTION; ABSTRACT_CONTENT_EXCLUDED_FROM_ROOT"
+    },
+    {
+      "test_id": "FWH-C2-PC-05",
+      "refs": [
+        "18:5",
+        "18:5:12:1"
+      ],
+      "pressure": "A word exits from mouths and saying is separately named; this tests whether the candidate improperly equates mouth with word or speech.",
+      "outcome": "BODY_PART_LEXEME_SURVIVES; WORD_SPEECH_EXIT_AND_FALSEHOOD_REMAIN_SEPARATE"
+    },
+    {
+      "test_id": "FWH-C2-PC-06",
+      "refs": [
+        "9:32",
+        "9:32:6:2",
+        "61:8",
+        "61:8:5:2"
+      ],
+      "pressure": "The paired extinguishing construction is the strongest apparent nonliteral use and does not identify whether the local means is breath, speech, or another figurative relation.",
+      "outcome": "LEXEME_CANDIDATE_SURVIVES_AT_BODILY_INSTRUMENT_LEVEL; LOCAL_MECHANISM_AND_ROOT_ABSTRACTION_UNRESOLVED"
+    }
+  ],
+  "hard_cases": [
+    {
+      "refs": [
+        "9:32",
+        "61:8"
+      ],
+      "issue": "The exact local mechanism of extinguishing by mouths is not discriminated by the two parallel verses.",
+      "required_treatment": "Keep breath, speech, and broader figurative-means readings unresolved; do not use any one of them as root evidence."
+    },
+    {
+      "refs": [
+        "14:9"
+      ],
+      "issue": "The exact action and purpose of placing or returning hands in mouths are not specified by the local wording.",
+      "required_treatment": "Retain only the resolvable bodily-part and containment observation."
+    },
+    {
+      "refs": [
+        "3:118"
+      ],
+      "issue": "What exact manifestation carries hatred from mouths is not lexicalized in the phrase.",
+      "required_treatment": "Retain source/output structure and leave the precise carrier unresolved."
+    },
+    {
+      "refs": [
+        "24:15"
+      ],
+      "issue": "Tongue, mouth, reception, and saying co-occur and must not be collapsed into one root contribution.",
+      "required_treatment": "Preserve separate lexical and constructional attribution."
+    }
+  ],
+  "strongest_counterexample": {
+    "candidate_attacked": "BODILY_MOUTH_AS_A_COMPLETE_BARE_ROOT_CONCEPT",
+    "refs": [
+      "9:32",
+      "61:8"
+    ],
+    "reason": "Both occurrences place mouths in an extinguishing relation whose local mechanism is not made explicit, preventing a fully concrete root-level paraphrase from being demonstrated solely by the text.",
+    "effect": "Does not defeat the bodily lexeme reading, but blocks claiming that concrete corporeality rather than an oral-interface abstraction has been isolated as the root core."
+  },
+  "strongest_competitor": {
+    "competitor": "OUTWARD_SPEECH_OR_EXPRESSION_CHANNEL",
+    "best_supporting_refs": [
+      "3:167",
+      "5:41",
+      "9:8",
+      "9:30",
+      "18:5",
+      "24:15",
+      "33:4"
+    ],
+    "disconfirming_refs": [
+      "13:14",
+      "14:9",
+      "36:65"
+    ],
+    "verdict": "REJECTED_AS_UNIVERSAL_LEXEME_OR_ROOT_DEFINITION",
+    "boundary": "It may describe a contextual role for a subset, but it cannot replace the bodily noun in the complete 13-token set."
+  },
+  "semantic_boundary": {
+    "lexeme_includes": [
+      "the bodily mouth named in a reaching relation involving water and outstretched hands",
+      "the bodily mouth named as a container",
+      "the bodily mouth named as a sealed body part",
+      "the bodily mouth serving through construction as an output source or means"
+    ],
+    "lexeme_and_root_exclude": [
+      "speech or qawl itself",
+      "the content, truth, falsehood, belief, unbelief, hatred, or placating effect of speech",
+      "inner-versus-outer moral opposition",
+      "tongue identity",
+      "breath as an asserted mechanism",
+      "extinguishing as a root contribution",
+      "sealing, reaching, containment, emergence, or instrumentality when these are supplied by verbs and prepositions"
+    ],
+    "root_boundary": "No separate abstract ROOT:fwh contribution is established beyond the shared structural key and the observed bodily-mouth noun lexemes."
+  },
+  "layer_attribution": {
+    "root": "Structural grouping fwh only; semantic contribution unresolved.",
+    "derivation_inflection": "Noun number, case, and attached possessive/person suffixes account for singular/plural and referent differences.",
+    "lexeme": "faA and >afowa`h are each compatible with the bodily mouth in their audited occurrences.",
+    "form": "All rows are N; no derived-form contrast is available.",
+    "construction": "min marks source, bi marks means or instrument, fi marks containment, the 13:14 clause supplies a reaching relation, and khatm with ala marks a target in the audited local phrases.",
+    "context_discourse": "Speech content, sincerity contrasts, knowledge, truth, bodily testimony, and extinguishing supply local functions and evaluations.",
+    "local_meaning": "Recorded per phrase audit; three mechanisms remain expressly unresolved.",
+    "final_statement": "A strong universal bodily-mouth lexical finding is supportable; a preferred bare-root concept is not."
+  },
+  "purity_diagnostics": [
+    {
+      "diagnostic": "DICTIONARY_FIRST",
+      "status": "EVALUATED_CLEAN",
+      "severity": "NONE",
+      "hard_blocker": false,
+      "details": "No dictionary or external semantic frame was used."
+    },
+    {
+      "diagnostic": "CONTEXTUAL_LEAKAGE",
+      "status": "EVALUATED_CLEAN",
+      "severity": "NONE",
+      "hard_blocker": false,
+      "details": "Every observation terminates in one of the 13 exact active occurrence verses and its confirmed structural row."
+    },
+    {
+      "diagnostic": "HERITAGE_BIAS",
+      "status": "EVALUATED_CLEAN",
+      "severity": "NONE",
+      "hard_blocker": false,
+      "details": "No heritage material was used."
+    },
+    {
+      "diagnostic": "TAFSIR_CONTAMINATION",
+      "status": "EVALUATED_CLEAN",
+      "severity": "NONE",
+      "hard_blocker": false,
+      "details": "No tafsir content was used."
+    },
+    {
+      "diagnostic": "FORCED_UNIFICATION",
+      "status": "FLAGGED",
+      "severity": "MATERIAL_FOR_ROOT_LEVEL",
+      "hard_blocker": false,
+      "details": "Promoting a bodily-mouth lexical result to ROOT:fwh would collapse two noun lemma annotations and their shared structural key into an untested abstract root core; the final verdict contains this risk by leaving ROOT_CONCEPT unresolved."
+    },
+    {
+      "diagnostic": "GENERIC_OVEREXTRACTION",
+      "status": "FLAGGED",
+      "severity": "MATERIAL_FOR_ROOT_LEVEL",
+      "hard_blocker": false,
+      "details": "Oral outlet, interface, and outward-expression formulations can be broadened to fit the same one-lexeme evidence without being discriminated; the final root result is therefore unresolved."
+    },
+    {
+      "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+      "status": "EVALUATED_CLEAN",
+      "severity": "NONE",
+      "hard_blocker": false,
+      "details": "No letter-level claim was used."
+    },
+    {
+      "diagnostic": "CIRCULAR_CONFIRMATION",
+      "status": "FLAGGED",
+      "severity": "MATERIAL_FOR_ROOT_LEVEL",
+      "hard_blocker": false,
+      "details": "Restating the only observed lexical referent as the root concept would not add an independent derivative contrast; primary evidence remains resolvable, so the artifact limits rather than fabricates the conclusion."
+    }
+  ],
+  "candidate_reject_tests": [
+    {
+      "test_id": "FWH-C2-TEST-01",
+      "candidate": "FWH_MEANS_SPEECH_OR_OUTWARD_EXPRESSION",
+      "rejection_condition": "Any exact confirmed occurrence requires a bodily participant in a reaching, containment, or sealing relation without a speech-only reading.",
+      "observed_refs": [
+        "13:14",
+        "14:9",
+        "36:65"
+      ],
+      "result": "REJECTED"
+    },
+    {
+      "test_id": "FWH-C2-TEST-02",
+      "candidate": "FWH_MEANS_FALSE_OR_INSINCERE_SPEECH",
+      "rejection_condition": "Any exact occurrence is bodily or speech-related without falsehood or sincerity opposition.",
+      "observed_refs": [
+        "13:14",
+        "14:9",
+        "36:65",
+        "9:32",
+        "61:8"
+      ],
+      "result": "REJECTED"
+    },
+    {
+      "test_id": "FWH-C2-TEST-03",
+      "candidate": "BODILY_MOUTH_LEXEME_ACROSS_ALL_13",
+      "rejection_condition": "A confirmed token must require a distinct non-mouth lexical referent or make the bodily noun incompatible after construction and context are separately attributed.",
+      "observed_refs": [],
+      "result": "PASSED"
+    },
+    {
+      "test_id": "FWH-C2-TEST-04",
+      "candidate": "BODILY_MOUTH_AS_PREFERRED_BARE_ROOT_CONCEPT",
+      "rejection_condition": "All semantic support is confined to one noun family with no independent derivative or form contrast capable of separating root contribution from lexical meaning.",
+      "observed_refs": [
+        "FWH-C2-OBS-01",
+        "FWH-C2-OBS-02",
+        "FWH-C2-OBS-03",
+        "FWH-C2-OBS-04",
+        "FWH-C2-OBS-05",
+        "FWH-C2-OBS-06",
+        "FWH-C2-OBS-07",
+        "FWH-C2-OBS-08",
+        "FWH-C2-OBS-09",
+        "FWH-C2-OBS-10",
+        "FWH-C2-OBS-11",
+        "FWH-C2-OBS-12",
+        "FWH-C2-OBS-13"
+      ],
+      "result": "REJECTION_CONDITION_TRIGGERED"
+    }
+  ],
+  "lexeme_judgment": {
+    "contract_type": "LEXEME",
+    "research_state": "PREFERRED",
+    "claim_scope": "UNIVERSAL",
+    "result_strength": "STRONG",
+    "preferred_conclusion": "Across the exact 13-token active structural set, the observed faA and >afowa`h noun lexemes denote the bodily mouth; source, instrument, containment, reaching, sealing, and discourse effects are supplied by construction and context.",
+    "plain_explanation": "The three most concrete cases place a mouth in a reaching relation involving water, mouths in a containment relation with hands, and mouths as sealed body parts alongside other body parts. The remaining cases use the same bodily noun as a source or means without turning it into speech, falsehood, breath, or outwardness itself.",
+    "semantic_boundary_ref": "semantic_boundary",
+    "supporting_evidence_refs": [
+      "FWH-C2-OBS-01",
+      "FWH-C2-OBS-02",
+      "FWH-C2-OBS-03",
+      "FWH-C2-OBS-04",
+      "FWH-C2-OBS-05",
+      "FWH-C2-OBS-06",
+      "FWH-C2-OBS-07",
+      "FWH-C2-OBS-08",
+      "FWH-C2-OBS-09",
+      "FWH-C2-OBS-10",
+      "FWH-C2-OBS-11",
+      "FWH-C2-OBS-12",
+      "FWH-C2-OBS-13"
+    ],
+    "counterevidence_refs": [
+      "FWH-C2-PC-04",
+      "FWH-C2-PC-05",
+      "FWH-C2-PC-06"
+    ],
+    "hard_case_refs": [
+      "9:32",
+      "14:9",
+      "61:8"
+    ],
+    "strongest_counterexample_ref": "strongest_counterexample",
+    "strongest_competitor_ref": "strongest_competitor",
+    "unresolved_cases": [
+      "The exact extinguishing mechanism in 9:32 and 61:8.",
+      "The exact gesture and purpose in 14:9.",
+      "The exact carrier of manifested hatred in 3:118."
+    ],
+    "rejection_condition": {
+      "condition": "Reopen or reject the universal bodily-mouth lexical finding if a confirmed active fwh token resolves to a distinct referent, if any of the 13 source or structural bindings changes, or if a local phrase cannot retain bodily mouth after construction and context are independently accounted for.",
+      "current_result": "NOT_TRIGGERED"
+    },
+    "falsification_status": "PASSED",
+    "reopen_conditions": [
+      "Any change to the production Tanzil snapshot, QAC hash, extraction revision, or attribution status of an fwh row.",
+      "Any newly admitted confirmed fwh token outside the current 13-token set.",
+      "Evidence that faA or >afowa`h has a non-mouth referent in one of the exact audited phrases.",
+      "A source-valid analysis showing that a hard case cannot preserve bodily mouth after local construction is separated."
+    ]
+  },
+  "root_concept_judgment": {
+    "contract_type": "ROOT_CONCEPT",
+    "research_state": "UNRESOLVED",
+    "claim_scope": "UNIVERSAL",
+    "result_strength": "UNRESOLVED",
+    "preferred_conclusion": null,
+    "plain_explanation": "Complete token coverage is not the same as derivative coverage. Every fwh token is a noun in the same bodily-mouth lexical family, so the evidence cannot independently identify what, if anything, belongs to an abstract root core rather than to the noun lexeme.",
+    "semantic_boundary": "The bodily-mouth lexical conclusion is retained below the root layer; speech, outward expression, oral instrumentality, and abstract aperture/interface formulations are not adopted as ROOT:fwh.",
+    "supporting_evidence_refs": [],
+    "counterevidence_refs": [
+      "FWH-C2-TEST-04"
+    ],
+    "hard_case_refs": [
+      "9:32",
+      "61:8",
+      "14:9"
+    ],
+    "strongest_counterexample_ref": "strongest_counterexample",
+    "strongest_competitor": "ORAL_APERTURE_OR_INTERFACE_AS_AN_ABSTRACT_ROOT_CORE",
+    "unresolved_cases": [
+      "Whether concrete corporeality belongs to the root core or only to the observed noun lexemes.",
+      "Whether an oral aperture or interface abstraction is justified or merely a generic paraphrase.",
+      "Whether Quran-internal evidence permits any separately recoverable root abstraction for fwh."
+    ],
+    "rejection_condition": {
+      "condition": "Reject any preferred bare-root formulation that is supported only by restating faA or >afowa`h lexical meaning and lacks an independent derivative or form contrast.",
+      "current_result": "TRIGGERED_FOR_BODILY_MOUTH_ROOT_PROMOTION"
+    },
+    "falsification_status": "NOT_REQUIRED",
+    "reopen_conditions": [
+      "A newly admitted confirmed fwh occurrence supplies a lexeme or derived form outside faA and >afowa`h.",
+      "A Quran-internal contrast separates a stable root contribution from noun-lexeme and constructional contributions.",
+      "A current-method revision supplies an accepted, non-circular way to infer root contribution from a one-lexeme corpus without importing external semantics."
+    ]
+  },
+  "terminal_unresolved_alternative": {
+    "status": "TERMINAL_UNDER_CURRENT_QURAN_INTERNAL_EVIDENCE",
+    "alternatives": [
+      "ROOT:fwh contributes the concrete bodily mouth itself.",
+      "ROOT:fwh contributes a more abstract oral aperture or interface while bodily corporeality belongs to the noun lexeme.",
+      "No root contribution separate from the observed faA and >afowa`h noun lexemes is recoverable from the Quran-internal distribution."
+    ],
+    "why_not_discriminated": "All 13 confirmed occurrences are nouns in the same lexical family; constructional diversity changes local role but never supplies an independent root-bearing derivative.",
+    "required_disposition": "Do not choose among these alternatives. Preserve the lexeme judgment and leave ROOT_CONCEPT unresolved."
+  },
+  "minimum_observation_requirements": {
+    "to_retain_universal_lexeme_judgment": [
+      "Maintain exact inspection of all 13 active confirmed tokens with both a Tanzil verse ref and QAC word-segment ref.",
+      "Retain the three bodily controls 13:14, 14:9, and 36:65.",
+      "Retain explicit treatment of both extinguishing hard cases 9:32 and 61:8 and all remaining source, speech, and instrument phrases.",
+      "Keep construction and context contributions outside the lexeme and root."
+    ],
+    "to_reopen_root_concept": [
+      "At least one newly admitted confirmed fwh token from a genuinely distinct lexeme or derived form, not another inflection or occurrence of faA or >afowa`h.",
+      "At least one Quran-internal contrast that yields a falsifiable prediction distinguishing root contribution from lexeme, form, construction, and context.",
+      "Exact source-resolvable supporting and counterevidence refs for that contrast, including the strongest failure case.",
+      "A rejection condition that would fail the proposed root core without simultaneously rejecting the observed bodily-mouth lexemes."
+    ],
+    "to_resolve_extinguishing_local_mechanism": [
+      "An admitted Quran-internal observation that explicitly discriminates breath, speech, or another means in the 9:32 and 61:8 construction; absent that observation, the mechanism remains unresolved."
+    ],
+    "external_gloss_or_prior_claim_is_never_sufficient": true
+  },
+  "final_verdict": {
+    "purity": "SOURCE_CLEAN_WITHIN_DECLARED_INPUT_SET",
+    "universal_token_audit": "13_OF_13_COMPLETE",
+    "bodily_mouth_lexeme_candidate": "PREFERRED_STRONG_UNIVERSAL",
+    "bodily_mouth_bare_root_candidate": "REJECTED_AS_OVERCLAIM",
+    "root_concept": "UNRESOLVED",
+    "terminal_reason": "ONE_LEXICAL_FAMILY_WITH_NO_INDEPENDENT_DERIVATIVE_CONTRAST",
+    "canonical_acceptance_granted": false
+  }
+}

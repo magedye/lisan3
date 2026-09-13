@@ -1,0 +1,601 @@
+{
+  "artifact_type": "GLM_CYCLE2_GOVERNED_AGGREGATOR",
+  "artifact_version": "1.0.0",
+  "aggregator_role": "FRESH_CYCLE2_AGGREGATOR",
+  "generated_at_utc": "2026-09-13T07:55:28.028Z",
+  "target": {
+    "root": "glm",
+    "display_root": "غ ل م",
+    "contract_type": "ROOT_CONCEPT",
+    "run_id": "run_af84788a"
+  },
+  "source_boundary": {
+    "mode": "QURAN_INTERNAL_INDUCTION",
+    "allowed": [
+      "current repository governance and active methodology",
+      "production-active Tanzil Quran text limited to the confirmed glm occurrence set",
+      "read-only run, corpus snapshot, and methodology metadata for run_af84788a",
+      "read-only QAC structural fields limited to latest-version CONFIRMED glm tokens",
+      "repository ObservationArtifactCreate and ResearchJudgmentCreate schema definitions",
+      "docs/evidence/requalification/glm_cycle2_panel/producer.json",
+      "docs/evidence/requalification/glm_cycle2_panel/adversary.json"
+    ],
+    "prohibited": [
+      "prior glm claims, judgments, or observations outside the two authorized cycle-2 panel inputs",
+      "Batch07 material",
+      "PROJECT_STATE",
+      "other five-root artifacts or reviews",
+      "semantic_claims or semantic prose from the database",
+      "external semantics, dictionaries, translations, tafsir, web, or model-memory evidence"
+    ],
+    "prohibited_sources_queried_or_used_as_evidence": [],
+    "contamination_detected": false
+  },
+  "lineage_readback": {
+    "research_run": {
+      "id": "run_af84788a",
+      "target_contract": "ROOT_CONCEPT",
+      "target_expression": "glm",
+      "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+      "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+      "authority_context": {
+        "resolved_by": "ResearchRunAdmissionPolicy",
+        "actor": "TRUSTED_LOCAL_USER",
+        "source_policy": "QURAN_INTERNAL_INDUCTION"
+      },
+      "current_stage": "JUDGMENT",
+      "status": "ACTIVE"
+    },
+    "corpus_snapshot": {
+      "id": "snap_tanzil_1_1_ac0724796cbb",
+      "canonical_text_source": "TANZIL_QURAN_UTHMANI",
+      "canonical_text_version": "1.1",
+      "canonical_text_hash": "ac0724796cbbda0f4801470fbbd11d0f3c5802067bae0493466d0128b0c667af",
+      "validation_status": "VALIDATED",
+      "source_role_status": "SOURCE_ROLE_APPROVED",
+      "artifact_presence_status": "ARTIFACT_PRESENT",
+      "hash_verification_status": "HASH_VERIFIED",
+      "import_validation_status": "IMPORT_VALIDATED",
+      "activation_status": "PRODUCTION_ACTIVE",
+      "fixture_only": false,
+      "verse_count": 6236
+    },
+    "methodology": {
+      "id": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+      "lifecycle_state": "CURRENT",
+      "source_reference": "skills/lisan-semantic-extraction/SKILL.md",
+      "source_sha256": "01784170cac4e715c1477cb6a04a2c34b21c4bdb91705aa1eb6b2a896efcedbd",
+      "allowed_use": "QURAN_INTERNAL_CUMULATIVE_RUN",
+      "research_run_eligible": true
+    },
+    "structural_source": {
+      "source_id": "QAC_MORPHOLOGY",
+      "source_version": "0.4",
+      "extraction_version": "qac-0.4-import-v1",
+      "required_attribution_status": "CONFIRMED",
+      "authority_limit": "structural token identity, root membership, form, and POS only; no gloss or semantic field was read or used"
+    }
+  },
+  "panel_inputs": {
+    "producer": {
+      "path": "docs/evidence/requalification/glm_cycle2_panel/producer.json",
+      "sha256": "66aea02f10bc9a63cf96576bcc46ea79ec2bd1bbf851bd25f66e40e8c44cf448",
+      "root_contract_disposition": {
+        "research_state": "UNRESOLVED",
+        "result_strength": "UNRESOLVED",
+        "claim_scope": "UNIVERSAL",
+        "accepted_for_aggregation": true
+      }
+    },
+    "adversary": {
+      "path": "docs/evidence/requalification/glm_cycle2_panel/adversary.json",
+      "sha256": "d8b5a251f891fa893be7181d46f9cdaf402b3efb044ab9cc6f53256f73a107dc",
+      "root_contract_disposition": {
+        "research_state": "UNRESOLVED",
+        "result_strength": "UNRESOLVED",
+        "claim_scope": "UNIVERSAL",
+        "accepted_for_aggregation": true
+      },
+      "bounded_lexeme_disposition": {
+        "research_state": "PREFERRED",
+        "result_strength": "MODERATE",
+        "falsification_status": "PASSED",
+        "accepted_only_as_separate_lexeme_panel_finding": true
+      }
+    }
+  },
+  "panel_disposition": {
+    "producer_root_result": "ACCEPTED_AS_INPUT",
+    "adversary_root_result": "ACCEPTED_AS_INPUT",
+    "adversary_bounded_lexeme_result": "RETAINED_SEPARATELY_NOT_PROMOTED_TO_ROOT",
+    "conflict_resolution": "There is no root-level conflict: both inputs return ROOT_CONCEPT UNRESOLVED. The apparent difference is layer-specific because the adversary prefers only a bounded LEXEME conclusion at MODERATE strength.",
+    "decisive_constraint": "All 13 confirmed tokens belong to one visible nominal lexeme family, so the available corpus cannot subtract lexeme contribution and isolate a positive abstract glm root contribution.",
+    "strongest_honest_root_result": "UNRESOLVED",
+    "canonical_state": "NOT_CANONICAL",
+    "independently_reviewed": false,
+    "release_accepted": false
+  },
+  "coverage_and_exact_set": {
+    "claim_scope": "UNIVERSAL",
+    "scope_meaning": "Exhaustive coverage of the current latest-extraction CONFIRMED glm word_ref set; this does not make a positive root meaning universal or resolved.",
+    "occurrence_unit": "word_ref",
+    "confirmed_occurrence_count": 13,
+    "observation_count": 13,
+    "phrase_audit_count": 13,
+    "expected_word_refs": [
+      "3:40:6:1",
+      "12:19:10:1",
+      "15:53:6:2",
+      "18:74:5:1",
+      "18:80:2:2",
+      "18:82:4:2",
+      "19:7:4:2",
+      "19:8:6:1",
+      "19:19:8:1",
+      "19:20:5:1",
+      "37:101:2:2",
+      "51:28:8:2",
+      "52:24:3:1"
+    ],
+    "duplicate_word_refs": [],
+    "missing_word_refs": [],
+    "unexpected_word_refs": [],
+    "exact_set_match": true,
+    "form_distribution": {
+      "singular": 11,
+      "dual": 1,
+      "plural": 1,
+      "structural_form_N": 13,
+      "structural_pos_N": 13
+    }
+  },
+  "observations": [
+    {
+      "occurrence_ref": "3:40:6:1",
+      "form": "غُلَٰمٌ: اسم مفرد غير معرّف؛ QAC يثبت root=glm وform=N وpos=N فقط.",
+      "syntax": "في «أَنَّىٰ يَكُونُ لِى غُلَٰمٌ» يتأخر الاسم المرفوع بعد «يكون»، وتتقدمه علاقة «لِى» داخل التركيب.",
+      "participant_roles": "المتكلم طالب العلاقة «لِى»؛ الغلام هو الكيان المتوقَّع وجوده؛ الكبر وعقر المرأة شرطان مذكوران في تعليل الاستبعاد.",
+      "local_context": "الموضع يسأل عن إمكان تحقق غلام للمتكلم، فلا يصف عمر موجود حاضرًا؛ ويجعل علاقة الوصول إلى المتكلم جزءًا من السياق لا من الجذر.",
+      "unresolved_ambiguity": "لا يحسم الموضع هل «غلام» يشفّر سنًا محددًا أو مجرد صنف بشري مذكر في علاقة متوقعة، ولا يجيز حمل الكبر أو العقر على معنى الجذر."
+    },
+    {
+      "occurrence_ref": "12:19:10:1",
+      "form": "غُلَٰمٌ: اسم مفرد غير معرّف مرفوع في سطح النص؛ QAC يثبت root=glm وform=N وpos=N.",
+      "syntax": "يقع خبرًا في جملة الإشارة «هَٰذَا غُلَٰمٌ»، ثم تعود عليه علامة المفرد المذكر في «وَأَسَرُّوهُ».",
+      "participant_roles": "الوارد يعيّن المشار إليه بهذا؛ الجماعة تتصرف في referent بعد العثور عليه وتجعله متعلَّق فعل الإسرار ووصف البضاعة.",
+      "local_context": "اللفظ هنا تصنيف لشخص حاضر عُثر عليه، ثم يضيف السياق معاملةً تجارية له؛ تلك المعاملة لاحقة على التسمية وليست مثبتة جزءًا من معناها.",
+      "unresolved_ambiguity": "العمر الدقيق غير مذكور، وكونه بضاعة أو تحت سيطرة الجماعة أثر سياقي لا يثبت منزلة اجتماعية ملازمة للفظ."
+    },
+    {
+      "occurrence_ref": "15:53:6:2",
+      "form": "بِغُلَٰمٍ: اسم مفرد غير معرّف داخل تركيب بالباء، ويتبعه الوصف المذكر «عَلِيمٍ»؛ QAC يثبت root=glm وform=N وpos=N.",
+      "syntax": "جار ومجرور متعلق بـ«نُبَشِّرُكَ»، و«عَلِيمٍ» وصف تابع للغلام.",
+      "participant_roles": "جماعة المتكلمين تحمل البشارة، المخاطب متلقيها، والغلام محتواها الموصوف بالعلم.",
+      "local_context": "الموضع يقدم غلامًا في حدث بشارة ويضيف له صفة العلم؛ حدث البشارة والصفة لا يجوز نقلهما إلى مساهمة الجذر.",
+      "unresolved_ambiguity": "الآية وحدها لا تصرح بعلاقة نسب ولا بسن عند التحقق، ووصف «عليم» لا يحدد حدًا عمريًا."
+    },
+    {
+      "occurrence_ref": "18:74:5:1",
+      "form": "غُلَٰمًا: اسم مفرد غير معرّف منصوب في سطح النص؛ QAC يثبت root=glm وform=N وpos=N.",
+      "syntax": "مفعول «لَقِيَا»، ثم يعود عليه ضمير المفرد المذكر في «فَقَتَلَهُۥ»، ويعاد توصيفه في الاعتراض بـ«نَفْسًا زَكِيَّةً».",
+      "participant_roles": "الاثنان يلتقيان referent؛ أحدهما يقتله؛ الآخر يعترض ويقدمه بوصف نفسًا زكية لم تقتل نفسًا.",
+      "local_context": "اللفظ يعيّن شخصًا حيًا واقعًا عليه اللقاء ثم القتل؛ توصيف النفس والزكاة والحكم على الفعل تأتي من خطاب الموضع لا من الجذر.",
+      "unresolved_ambiguity": "لا يذكر النص عمره العددي أو بلوغه، ولا يكفي وصف «غلام» وحده لإسناد البراءة أو الزكاة أو وضع اجتماعي إلى الجذر."
+    },
+    {
+      "occurrence_ref": "18:80:2:2",
+      "form": "ٱلْغُلَٰمُ: اسم مفرد معرّف مرفوع؛ QAC يثبت root=glm وform=N وpos=N.",
+      "syntax": "موضوع بعد «وَأَمَّا»، ثم تسند الجملة «فَكَانَ أَبَوَاهُ مُؤْمِنَيْنِ» علاقة الأبوين إليه، وتعود عليه ضمائر لاحقة في تعليل الخشية.",
+      "participant_roles": "الغلام محور التفسير؛ له أبوان؛ الأبوان مشاركان متأثران بالفعل المتوقع المنسوب إليه.",
+      "local_context": "التعريف و«أما» يقدمانه كمرجع خطابي معلوم، ويضيف السياق علاقة الأبوين وتوقع طغيان وكفر؛ هذه الصفات العلائقية والمستقبلية ليست مساهمة جذرية مثبتة.",
+      "unresolved_ambiguity": "الربط بالمرجع المذكور في 18:74 مرجح تداوليًا لكنه لا يعين عمرًا، كما لا يثبت أن وجود الأبوين قيد معجمي في كل استعمال."
+    },
+    {
+      "occurrence_ref": "18:82:4:2",
+      "form": "لِغُلَٰمَيْنِ: اسم مثنى مجرور باللام، يتبعه «يَتِيمَيْنِ»؛ QAC يثبت root=glm وform=N وpos=N.",
+      "syntax": "الجار والمجرور خبر في «فَكَانَ لِغُلَٰمَيْنِ»، ثم يعود ضمير التثنية في «لَّهُمَا/أَبُوهُمَا/يَبْلُغَا/يَسْتَخْرِجَا» على الاثنين.",
+      "participant_roles": "الغلامان صاحبا الكنز وموصوفان باليتم؛ يذكر لهما أب صالح؛ وهما فاعلا البلوغ والاستخراج المتوقعين.",
+      "local_context": "هذا أقوى موضع عمري داخلي: «أَن يَبْلُغَآ أَشُدَّهُمَا» يجعل بلوغ الأشد مستقبلًا بالنسبة للحال الموصوفة، من غير تحديد عدد السنين.",
+      "unresolved_ambiguity": "يثبت عدم تحقق الأشد بعدُ لهذين الاثنين فقط؛ لا يكفي وحده لجعل ما قبل الأشد حدًا لازمًا لكل غلام، ولا يجعل اليتم أو ملك الكنز جزءًا من الجذر."
+    },
+    {
+      "occurrence_ref": "19:7:4:2",
+      "form": "بِغُلَٰمٍ: اسم مفرد غير معرّف داخل تركيب بالباء؛ QAC يثبت root=glm وform=N وpos=N.",
+      "syntax": "متعلق بـ«نُبَشِّرُكَ»، ثم جملة «ٱسْمُهُۥ يَحْيَىٰ» تسمي referent ويعود عليه ضمير المفرد المذكر في «لَّهُۥ».",
+      "participant_roles": "زكريا مخاطب بالبشارة؛ الغلام محتوى البشارة وصاحب الاسم؛ المتكلم يسند فعل الجعل إلى نفسه.",
+      "local_context": "التسمية وعدم جعل سمي من قبل يميزان referent في الخطاب، لكنهما إضافتان موضعيتان لا تعريفًا للفظ أو الجذر.",
+      "unresolved_ambiguity": "لا يحدد الموضع وحده العمر عند تحقق البشارة، ولا يثبت أن الاسم أو التفرد بالاسم سمة معجمية للغلام."
+    },
+    {
+      "occurrence_ref": "19:8:6:1",
+      "form": "غُلَٰمٌ: اسم مفرد غير معرّف مرفوع في سطح النص؛ QAC يثبت root=glm وform=N وpos=N.",
+      "syntax": "في «أَنَّىٰ يَكُونُ لِى غُلَٰمٌ» يأتي الاسم بعد «يكون» وتتقدمه علاقة «لِى».",
+      "participant_roles": "المتكلم متلقي الغلام المتوقع؛ امرأته موصوفة بالعقر؛ بلوغه من الكبر عتيًا شرط مذكور في السؤال.",
+      "local_context": "الموضع يعيد بناء الإمكان حول تحقق غلام للمتكلم مع مانعين مصرح بهما، ولا يعرض غلامًا موجودًا ذا عمر مشاهد.",
+      "unresolved_ambiguity": "لا يفصل الاستعمال بين معنى صنف بشري مذكر ومعنى علاقة ذرية، ولا يبيّن حد العمر الذي يصدق عليه اللفظ."
+    },
+    {
+      "occurrence_ref": "19:19:8:1",
+      "form": "غُلَٰمًا: اسم مفرد غير معرّف منصوب، موصوف بـ«زَكِيًّا»؛ QAC يثبت root=glm وform=N وpos=N.",
+      "syntax": "مفعول «لِأَهَبَ»، وتتقدمه علاقة «لَكِ» إلى المخاطبة، و«زَكِيًّا» وصف تابع له.",
+      "participant_roles": "المتكلم يعرّف نفسه رسولًا؛ المخاطبة متلقية؛ الغلام هو المعطى المتوقع والموصوف بالزكاة.",
+      "local_context": "اللفظ داخل وعد بالهبة للمخاطبة مع وصف مخصوص؛ الهبة والزكاة تحددان هذا referent ولا تثبتان نواة glm.",
+      "unresolved_ambiguity": "العمر عند التحقق غير مذكور، كما لا يحسم الموضع إن كانت علاقة «لك» نسبًا أو اختصاصًا على مستوى معنى اللفظ نفسه."
+    },
+    {
+      "occurrence_ref": "19:20:5:1",
+      "form": "غُلَٰمٌ: اسم مفرد غير معرّف مرفوع في سطح النص؛ QAC يثبت root=glm وform=N وpos=N.",
+      "syntax": "في «أَنَّىٰ يَكُونُ لِى غُلَٰمٌ» يتأخر الاسم عن «يكون» وتتقدم عليه «لِى»، ثم تأتي جملتا «لَمْ يَمْسَسْنِى بَشَرٌ» و«لَمْ أَكُ بَغِيًّا» تعليلًا للسؤال.",
+      "participant_roles": "المتكلمة طالبة تفسير إمكان العلاقة «لي»؛ الغلام كيان متوقع؛ البشر المذكور والمسّ وحال المتكلمة عناصر في تعليل الامتناع المتصور.",
+      "local_context": "الموضع يربط تحقق الغلام بسؤال عن شروط حدوثه لا بوصف عمره أو دوره بعد وجوده.",
+      "unresolved_ambiguity": "لا يجوز إدخال تفاصيل إنجابية غير مصرّح بها في اللفظ نفسه، ولا يثبت التركيب أن علاقة «لي» جزء لازم من bare root."
+    },
+    {
+      "occurrence_ref": "37:101:2:2",
+      "form": "بِغُلَٰمٍ: اسم مفرد غير معرّف داخل تركيب بالباء، موصوف بـ«حَلِيمٍ»؛ QAC يثبت root=glm وform=N وpos=N.",
+      "syntax": "الجار والمجرور متعلق بـ«فَبَشَّرْنَٰهُ»، و«حَلِيمٍ» وصف تابع للغلام.",
+      "participant_roles": "ضمير المفعول هو متلقي البشارة؛ الغلام محتواها والموصوف بالحلم؛ المتكلم الجمع يسند البشارة إلى نفسه.",
+      "local_context": "الموضع قصير ويقدم غلامًا بواسطة البشارة مع صفة الحلم؛ الصفة وحدث البشارة لا يعينان سنًا ولا يحملان على الجذر.",
+      "unresolved_ambiguity": "لا توجد في هذه الآية وحدها علاقة نسب مصرح بها أو علامة بلوغ، ولذلك تبقى دلالة السن والمنزلة غير محسومة."
+    },
+    {
+      "occurrence_ref": "51:28:8:2",
+      "form": "بِغُلَٰمٍ: اسم مفرد غير معرّف داخل تركيب بالباء، موصوف بـ«عَلِيمٍ»؛ QAC يثبت root=glm وform=N وpos=N.",
+      "syntax": "متعلق بـ«وَبَشَّرُوهُ»، و«عَلِيمٍ» وصف تابع للغلام؛ الضمير المذكر المفرد يحدد متلقي البشارة لا الغلام.",
+      "participant_roles": "جماعة تقول لا تخف وتبشر مخاطبًا؛ الغلام محتوى البشارة والموصوف بالعلم.",
+      "local_context": "الخوف ثم طمأنة المخاطب يمهدان للبشارة، لكنهما لا يحددان معنى الغلام؛ العلم صفة referent مخصوصة.",
+      "unresolved_ambiguity": "الآية لا تصرح بعمر referent أو علاقته التفصيلية بالمخاطب، فلا تكفي وحدها لإثبات offspring أو طور عمري كجزء من الجذر."
+    },
+    {
+      "occurrence_ref": "52:24:3:1",
+      "form": "غِلْمَانٌ: جمع غير معرّف مرفوع؛ QAC يثبت root=glm وform=N وpos=N، وهذا هو الشكل الجمعي الوحيد في المجموعة.",
+      "syntax": "فاعل «وَيَطُوفُ»، وتتعلق بهما علاقتا «عَلَيْهِمْ» و«لَهُمْ»، ثم يعود ضمير الجمع في «كَأَنَّهُمْ» على الغلمان.",
+      "participant_roles": "الغلمان قائمون بفعل الطواف؛ جماعة أخرى هي المحور الذي يطاف عليه وتربطهم بها «لهم»؛ التشبيه يصف ظهور الغلمان.",
+      "local_context": "الموضع يخرج عن سياقات البشارة والوجود للوالد: الجمع حاضر في فعل دوري وعلاقة اختصاص، والتشبيه يضيف صورة سياقية لا معنى جذريًا.",
+      "unresolved_ambiguity": "لا يصرح النص بعمرهم ولا بسبب علاقة «لهم» ولا باسم منزلة اجتماعية؛ لذا هو أقوى ضغط على فرضية offspring وأقوى اختبار لعدم تحميل الدور السياقي على اللفظ."
+    }
+  ],
+  "phrase_audit": [
+    {
+      "ordinal": 1,
+      "word_ref": "3:40:6:1",
+      "verse_ref": "3:40",
+      "token_surface": "غُلَٰمٌ",
+      "structural_ref": "structural_tokens/stok_qac_snap_tanzil_1_1_ac0724796cbb_3_40_6_1",
+      "text_ref": "corpus_occurrences/occ_tanzil_1_1_003_040",
+      "audited_phrase": "أَنَّىٰ يَكُونُ لِى غُلَٰمٌ ... بَلَغَنِىَ ٱلْكِبَرُ وَٱمْرَأَتِى عَاقِرٌ",
+      "assessment_classes": ["CONTEXTUAL_SUPPORT"],
+      "independent_context_constraints": ["The referent is prospective rather than an already present adult.", "The stated obstacle is the speaker's old age and the wife's barrenness, so procreation is the local issue."],
+      "supports": "A child or new-offspring reading, and therefore youth, at the lexeme-in-context layer.",
+      "does_not_support": "It does not isolate glm root meaning from the noun lexeme, and old age belongs to the speaker rather than to glm."
+    },
+    {
+      "ordinal": 2,
+      "word_ref": "12:19:10:1",
+      "verse_ref": "12:19",
+      "token_surface": "غُلَٰمٌ",
+      "structural_ref": "structural_tokens/stok_qac_snap_tanzil_1_1_ac0724796cbb_12_19_10_1",
+      "text_ref": "corpus_occurrences/occ_tanzil_1_1_012_019",
+      "audited_phrase": "هَٰذَا غُلَٰمٌ وَأَسَرُّوهُ بِضَٰعَةً",
+      "assessment_classes": ["COMPATIBLE_NON_DISCRIMINATING", "HARD_CASE", "COUNTEREXAMPLE_TO_NARROWER_COMPETITOR"],
+      "independent_context_constraints": ["The demonstrative presents a found individual.", "The same individual is concealed as merchandise."],
+      "supports": "An individual referent and compatibility with the bounded young-male lexeme candidate.",
+      "does_not_support": "No independent age predicate appears; merchandise treatment is contextual and cannot define the root. This occurrence also defeats an offspring-only definition."
+    },
+    {
+      "ordinal": 3,
+      "word_ref": "15:53:6:2",
+      "verse_ref": "15:53",
+      "token_surface": "بِغُلَٰمٍ",
+      "structural_ref": "structural_tokens/stok_qac_snap_tanzil_1_1_ac0724796cbb_15_53_6_2",
+      "text_ref": "corpus_occurrences/occ_tanzil_1_1_015_053",
+      "audited_phrase": "نُبَشِّرُكَ بِغُلَٰمٍ عَلِيمٍ",
+      "assessment_classes": ["CONTEXTUAL_SUPPORT"],
+      "independent_context_constraints": ["The token is the object of an announcement of good news.", "The adjective is in masculine agreement with the token."],
+      "supports": "Compatibility with a prospective male individual.",
+      "does_not_support": "عليم is a local attributed quality, not a root contribution; the verse alone does not independently state age."
+    },
+    {
+      "ordinal": 4,
+      "word_ref": "18:74:5:1",
+      "verse_ref": "18:74",
+      "token_surface": "غُلَٰمًا",
+      "structural_ref": "structural_tokens/stok_qac_snap_tanzil_1_1_ac0724796cbb_18_74_5_1",
+      "text_ref": "corpus_occurrences/occ_tanzil_1_1_018_074",
+      "audited_phrase": "لَقِيَا غُلَٰمًا فَقَتَلَهُۥ ... نَفْسًا زَكِيَّةً",
+      "assessment_classes": ["COMPATIBLE_NON_DISCRIMINATING", "HARD_CASE"],
+      "independent_context_constraints": ["The token denotes the encountered and killed individual.", "The same referent is called a pure self or person in the objection."],
+      "supports": "A human individual reading and masculine pronominal tracking.",
+      "does_not_support": "The verse contains no independent chronological-age marker; purity and killing are contextual predicates."
+    },
+    {
+      "ordinal": 5,
+      "word_ref": "18:80:2:2",
+      "verse_ref": "18:80",
+      "token_surface": "ٱلْغُلَٰمُ",
+      "structural_ref": "structural_tokens/stok_qac_snap_tanzil_1_1_ac0724796cbb_18_80_2_2",
+      "text_ref": "corpus_occurrences/occ_tanzil_1_1_018_080",
+      "audited_phrase": "ٱلْغُلَٰمُ فَكَانَ أَبَوَاهُ مُؤْمِنَيْنِ",
+      "assessment_classes": ["CONTEXTUAL_SUPPORT", "HARD_CASE"],
+      "independent_context_constraints": ["The definite token has two parents.", "The feared burden is projected onto the parents."],
+      "supports": "An offspring or dependent relation for this local referent and compatibility with youth.",
+      "does_not_support": "Parentage alone does not establish current age, and projected transgression is not a root contribution."
+    },
+    {
+      "ordinal": 6,
+      "word_ref": "18:82:4:2",
+      "verse_ref": "18:82",
+      "token_surface": "لِغُلَٰمَيْنِ",
+      "structural_ref": "structural_tokens/stok_qac_snap_tanzil_1_1_ac0724796cbb_18_82_4_2",
+      "text_ref": "corpus_occurrences/occ_tanzil_1_1_018_082",
+      "audited_phrase": "لِغُلَٰمَيْنِ يَتِيمَيْنِ ... أَن يَبْلُغَآ أَشُدَّهُمَا",
+      "assessment_classes": ["PRIMARY_DISCRIMINATING_SUPPORT"],
+      "independent_context_constraints": ["The surface is dual and receives a masculine-dual orphan adjective.", "The same two referents are intended to reach their full strength later."],
+      "supports": "The strongest same-verse internal support for male plurality and a not-yet-full-strength developmental position at the lexeme-in-context layer.",
+      "does_not_support": "Orphanhood, ownership of the treasure, and the father's righteousness are local relations, not root meaning; one row does not isolate a universal root invariant."
+    },
+    {
+      "ordinal": 7,
+      "word_ref": "19:7:4:2",
+      "verse_ref": "19:7",
+      "token_surface": "بِغُلَٰمٍ",
+      "structural_ref": "structural_tokens/stok_qac_snap_tanzil_1_1_ac0724796cbb_19_7_4_2",
+      "text_ref": "corpus_occurrences/occ_tanzil_1_1_019_007",
+      "audited_phrase": "نُبَشِّرُكَ بِغُلَٰمٍ ٱسْمُهُۥ يَحْيَىٰ",
+      "assessment_classes": ["CONTEXTUAL_SUPPORT"],
+      "independent_context_constraints": ["The token is announced to the addressee.", "The referent is assigned a name and tracked with a masculine singular pronoun."],
+      "supports": "A prospective individual and masculine grammatical tracking.",
+      "does_not_support": "The name and uniqueness statement are referent-specific; this verse alone does not independently state chronological age."
+    },
+    {
+      "ordinal": 8,
+      "word_ref": "19:8:6:1",
+      "verse_ref": "19:8",
+      "token_surface": "غُلَٰمٌ",
+      "structural_ref": "structural_tokens/stok_qac_snap_tanzil_1_1_ac0724796cbb_19_8_6_1",
+      "text_ref": "corpus_occurrences/occ_tanzil_1_1_019_008",
+      "audited_phrase": "أَنَّىٰ يَكُونُ لِى غُلَٰمٌ ... ٱمْرَأَتِى عَاقِرًا ... مِنَ ٱلْكِبَرِ عِتِيًّا",
+      "assessment_classes": ["CONTEXTUAL_SUPPORT"],
+      "independent_context_constraints": ["The referent is prospective.", "Barrenness and the speaker's advanced old age make procreation the local issue."],
+      "supports": "A child or new-offspring reading and thus youth at the local lexeme layer.",
+      "does_not_support": "The speaker's old age does not belong to glm; this is not independent of the same announced referent in 19:7."
+    },
+    {
+      "ordinal": 9,
+      "word_ref": "19:19:8:1",
+      "verse_ref": "19:19",
+      "token_surface": "غُلَٰمًا",
+      "structural_ref": "structural_tokens/stok_qac_snap_tanzil_1_1_ac0724796cbb_19_19_8_1",
+      "text_ref": "corpus_occurrences/occ_tanzil_1_1_019_019",
+      "audited_phrase": "لِأَهَبَ لَكِ غُلَٰمًا زَكِيًّا",
+      "assessment_classes": ["CONTEXTUAL_SUPPORT"],
+      "independent_context_constraints": ["The referent is prospective and presented as a gift to the female addressee.", "The adjective is in masculine agreement with the token."],
+      "supports": "A prospective male individual and compatibility with youth.",
+      "does_not_support": "Purity is an attributed local quality; age is not independently stated in this row."
+    },
+    {
+      "ordinal": 10,
+      "word_ref": "19:20:5:1",
+      "verse_ref": "19:20",
+      "token_surface": "غُلَٰمٌ",
+      "structural_ref": "structural_tokens/stok_qac_snap_tanzil_1_1_ac0724796cbb_19_20_5_1",
+      "text_ref": "corpus_occurrences/occ_tanzil_1_1_019_020",
+      "audited_phrase": "أَنَّىٰ يَكُونُ لِى غُلَٰمٌ وَلَمْ يَمْسَسْنِى بَشَرٌ",
+      "assessment_classes": ["CONTEXTUAL_SUPPORT"],
+      "independent_context_constraints": ["The referent is prospective.", "The stated obstacle is absence of human sexual contact, so procreation is the local issue."],
+      "supports": "A child or new-offspring reading and thus youth at the local lexeme layer.",
+      "does_not_support": "The sexual-contact circumstance is contextual, and this is not independent of the same prospective referent in 19:19."
+    },
+    {
+      "ordinal": 11,
+      "word_ref": "37:101:2:2",
+      "verse_ref": "37:101",
+      "token_surface": "بِغُلَٰمٍ",
+      "structural_ref": "structural_tokens/stok_qac_snap_tanzil_1_1_ac0724796cbb_37_101_2_2",
+      "text_ref": "corpus_occurrences/occ_tanzil_1_1_037_101",
+      "audited_phrase": "فَبَشَّرْنَٰهُ بِغُلَٰمٍ حَلِيمٍ",
+      "assessment_classes": ["CONTEXTUAL_SUPPORT"],
+      "independent_context_constraints": ["The token is the object of an announcement of good news.", "The adjective is in masculine agreement with the token."],
+      "supports": "Compatibility with a prospective male individual.",
+      "does_not_support": "Forbearance is a local attributed quality, not a root contribution; the verse alone does not independently state age."
+    },
+    {
+      "ordinal": 12,
+      "word_ref": "51:28:8:2",
+      "verse_ref": "51:28",
+      "token_surface": "بِغُلَٰمٍ",
+      "structural_ref": "structural_tokens/stok_qac_snap_tanzil_1_1_ac0724796cbb_51_28_8_2",
+      "text_ref": "corpus_occurrences/occ_tanzil_1_1_051_028",
+      "audited_phrase": "وَبَشَّرُوهُ بِغُلَٰمٍ عَلِيمٍ",
+      "assessment_classes": ["CONTEXTUAL_SUPPORT"],
+      "independent_context_constraints": ["The token is the object of an announcement of good news.", "The adjective is in masculine agreement with the token."],
+      "supports": "Compatibility with a prospective male individual.",
+      "does_not_support": "Knowledge is a local attributed quality, not a root contribution; the verse alone does not independently state age."
+    },
+    {
+      "ordinal": 13,
+      "word_ref": "52:24:3:1",
+      "verse_ref": "52:24",
+      "token_surface": "غِلْمَانٌ",
+      "structural_ref": "structural_tokens/stok_qac_snap_tanzil_1_1_ac0724796cbb_52_24_3_1",
+      "text_ref": "corpus_occurrences/occ_tanzil_1_1_052_024",
+      "audited_phrase": "يَطُوفُ عَلَيْهِمْ غِلْمَانٌ لَّهُمْ كَأَنَّهُمْ لُؤْلُؤٌ مَّكْنُونٌ",
+      "assessment_classes": ["COMPATIBLE_NON_DISCRIMINATING", "HARD_CASE", "COUNTEREXAMPLE_TO_NARROWER_COMPETITOR"],
+      "independent_context_constraints": ["The surface is plural and the referents circulate around or upon the pronominal group.", "The construction links them to that group with لهم and compares their appearance to protected pearls."],
+      "supports": "A masculine-plural associated group and compatibility with the bounded young-male lexeme candidate.",
+      "does_not_support": "The row contains no birth, parentage, maturation, or explicit age predicate. Circulation, association, and pearl comparison are construction and context, not root meaning. It defeats offspring-only and birth-announcement-only definitions."
+    }
+  ],
+  "lexeme_panel_finding": {
+    "contract_type": "LEXEME",
+    "research_state": "PREFERRED",
+    "claim_scope": "UNIVERSAL",
+    "result_strength": "MODERATE",
+    "preferred_conclusion": "Within the current production Tanzil snapshot, the 13 confirmed glm tokens form one nominal family whose best bounded Quran-internal reading is a male young-person class.",
+    "semantic_boundary": "This conclusion is limited to the attested غلام/غلامين/غلمان nominal family. The direct age anchor is strongest at 18:82; most other rows are contextual support or compatible but non-discriminating. Announcement, offspring, service, possession, orphanhood, moral quality, knowledge, forbearance, and beauty are excluded from the lexeme core unless separately proven.",
+    "falsification_status": "PASSED",
+    "strongest_counterexample": "52:24 has no independent birth, parentage, maturation, or explicit age predicate; it prevents STRONG and prevents promotion to an abstract root concept without contradicting the bounded lexeme candidate.",
+    "strongest_competitor": "A context-bound masculine human class whose youth or immaturity is supplied by some constructions rather than encoded by the abstract root.",
+    "projection_status": "SEPARATE_PANEL_FINDING_NOT_INCLUDED_IN_ROOT_CONCEPT_REPOSITORY_PAYLOAD"
+  },
+  "root_concept_result": {
+    "contract_type": "ROOT_CONCEPT",
+    "research_state": "UNRESOLVED",
+    "claim_scope": "UNIVERSAL",
+    "result_strength": "UNRESOLVED",
+    "preferred_conclusion": null,
+    "root_concept": null,
+    "reason": "The exact confirmed set is fully observed, but all 13 tokens are nouns in one visible غلام nominal family. The evidence supports bounded lexeme-level findings while leaving the abstract root contribution inseparable from that lexeme family.",
+    "terminal_unresolved_alternative": "The abstract glm contribution may be semantically thinner than young-male, or it may remain inseparable from the attested غلام lexeme family; the present corpus cannot discriminate these alternatives.",
+    "strongest_counterexample": "52:24 is the strongest pressure case because its plural غلمان occur in circulation and association without independent age, birth, parentage, or maturation wording.",
+    "strongest_competitor": "A root contribution of incomplete independence or strength in a masculine human referent survives, but 18:82 is the only direct maturation contrast and the single-family corpus cannot isolate that contribution from lexeme and context.",
+    "falsification_status": "NOT_REQUIRED",
+    "canonical_state": "NOT_CANONICAL"
+  },
+  "repository_payload_projection": {
+    "contract_type": "ROOT_CONCEPT",
+    "research_state": "UNRESOLVED",
+    "claim_scope": "UNIVERSAL",
+    "sampling_basis": "Exhaustive exact-set analysis of all 13 latest-extraction CONFIRMED glm word_ref rows bound to run_af84788a and snap_tanzil_1_1_ac0724796cbb.",
+    "result_strength": "UNRESOLVED",
+    "preferred_conclusion": null,
+    "root_concept": null,
+    "plain_explanation": "تغطي الملاحظات كل مواضع glm المؤكدة وتثبت نمطًا اسميًا بشريًا مذكرًا لـ«غلام/غلامين/غلمان»، مع ترجيح معجمي محدود لفئة الذكر اليافع، لكنها لا تستطيع فصل مساهمة الجذر المجرد عن معنى هذه الأسرة المعجمية الواحدة. العمر لا يملك حدًا عامًا مثبتًا إلا إشارة موضعية قوية في 18:82، والمنزلة تتبدل بحسب التركيب والسياق؛ لذلك يبقى Root Concept غير محسوم.",
+    "semantic_boundary": "المثبت في هذا النطاق: أسرة اسمية لكيانات بشرية ذات توافق مذكر وأشكال مفرد/مثنى/جمع، تدخل في علاقات خطابية متعددة. غير المثبت كجزء من bare root: حد عمري universal، أو معنى offspring-only، أو servant-only، أو منزلة اجتماعية ملازمة، أو صفة العلم/الحلم/الزكاة. ترجيح الذكر اليافع يبقى lexeme-level وبقوة MODERATE، ولا ينتقل إلى الجذر حتى يظهر دليل داخلي يفصل الطبقتين.",
+    "layer_attribution": {
+      "root": "QAC يثبت إسناد جميع word_refs إلى glm بنيويًا؛ أما المساهمة الدلالية الموجبة للجذر فلم تُعزل عن أسرة lexeme واحدة.",
+      "derivation_inflection": "التنوع الموثق عددي وتعريفي: غلام مفرد، غلامين مثنى، غلمان جمع، مع تعريف أو تنكير وحالات تركيبية مختلفة.",
+      "lexeme": "أشكال غلام/غلامين/غلمان ترجح ضمن المجموعة فئة بشرية مذكرة يافعة بقوة MODERATE؛ هذا ترجيح معجمي محدود لا تعريف للجذر.",
+      "form": "المفرد والمثنى والجمع يحددان العدد والتعريف أو التنكير؛ لا يثبت اختلافها Root Concept جديدًا.",
+      "construction": "تراكيب يكون لي، البشارة بغلام، اللقاء والقتل، كان أبواه، الملك لغلامين، والطواف عليهم/لهم تنظم العلاقة المحلية.",
+      "participants": "المواضع توزع referent بين متوقع لمخاطب، شخص ذي أبوين، صاحبي كنز، شخص معثور عليه أو مقتول، وجمع فاعل للطواف.",
+      "context": "البشارة والاستبعاد بسبب الكبر والعقر أو عدم المس، التفسير السردي، التصرف كبضاعة، ووصف العلم والحلم والزكاة كلها قرائن موضعية.",
+      "local_meaning": "كل موضع يختار علاقة referent ودوره؛ لا يجوز جمع هذه الأدوار في gloss جذري واحد.",
+      "semantic_boundary": "اكتمال occurrence coverage لا يعوض غياب الاشتقاق المقارن اللازم للفصل بين root وlexeme."
+    },
+    "supporting_evidence_refs": [
+      "token:3:40:6:1",
+      "token:12:19:10:1",
+      "token:15:53:6:2",
+      "token:18:74:5:1",
+      "token:18:80:2:2",
+      "token:18:82:4:2",
+      "token:19:7:4:2",
+      "token:19:8:6:1",
+      "token:19:19:8:1",
+      "token:19:20:5:1",
+      "token:37:101:2:2",
+      "token:51:28:8:2",
+      "token:52:24:3:1"
+    ],
+    "counterevidence_refs": [
+      "token:12:19:10:1",
+      "token:18:74:5:1",
+      "token:18:82:4:2",
+      "token:52:24:3:1"
+    ],
+    "unresolved_cases": [
+      "هل يشفّر lexeme «غلام» طورًا عمريًا لازمًا، وما حدوده إن كان كذلك؟",
+      "هل التذكير البشري المثبت lexeme-level فقط أم له بقية bare-root قابلة للعزل؟",
+      "هل عدم اكتمال القوة أو الاستقلال بقية جذرية، أم استنتاج من 18:82 وبعض علاقات السياق؟",
+      "لا توجد مشتقات مستقلة في corpus المؤكد تسمح بفصل Root Concept عن lexeme family الواحدة.",
+      "الربط التداولي بين 18:74 و18:80 مرجح، لكنه لا يحسم العمر أو الحد المعجمي."
+    ],
+    "hard_cases": [
+      "52:24 يجمع غلمانًا في فعل الطواف وعلاقة «لهم» من غير علامة نسب أو عمر صريح.",
+      "12:19 يسمي شخصًا حاضرًا ثم يجعله الفاعلون بضاعة، فيختبر فصل التصنيف عن المعاملة السياقية.",
+      "18:74 يسمي شخصًا ثم يعيد توصيفه نفسًا زكية، فيختبر عدم تحميل الحكم الخطابي على الجذر.",
+      "18:82 يجعل بلوغ الأشد مستقبلًا للغلامين، وهو أقوى قرينة عمرية لكنه موضع واحد لا يثبت حدًا universal.",
+      "صفات عليم وحليم وزكي لا تحدد العمر ولا تدخل النواة لمجرد مصاحبتها للفظ."
+    ],
+    "strongest_counterexample": "52:24 هو أقوى حالة ضغط: غلمان جمع يطوفون على جماعة ويربطهم بها «لهم»، ولا يذكر الموضع نسبًا أو سنًا أو بلوغًا؛ فلا يثبت الذرية أو الخدمة أو العمر كخاصية root، ولا ينفي وحده الترجيح المعجمي المحدود للذكر اليافع.",
+    "strongest_competitor": "Root Concept مرشح هو عدم اكتمال الاستقلال أو القوة لدى كيان بشري مذكر، مع اشتقاق علاقات الذرية والخدمة من السياق؛ لم يُفضَّل لأن 18:82 وحده يصرح ببلوغ الأشد مستقبلًا ولأن corpus أحادي lexeme فلا يعزل مساهمة الجذر.",
+    "rejection_condition": {
+      "challenging_finding": "ظهور مشتق glm مؤكد خارج lexeme family غلام/غلامين/غلمان لا ينسجم مع الطبقة البشرية المذكرة، أو ظهور مقارنة قرآنية عادلة تثبت أن العمر أو status خاصية bare-root ثابتة أو تنفيها.",
+      "search_location": "مجموعة latest-extraction CONFIRMED glm على snapshot الإنتاجي الحالي، وأي snapshot أو structural admission لاحق يغير هذه المجموعة.",
+      "verification_method": "إعادة الحصر exact-set، وبناء ملاحظات substantive لكل word_ref، ثم مقارنة مشتقات مستقلة على طبقة واحدة وطرح form/construction/context قبل اختبار المرشحين.",
+      "confounder_control": "Tanzil للنص والهوية فقط، وQAC للبنية فقط؛ لا gloss أو ترجمة أو تفسير أو prior semantic result، ولا تحويل اتفاق الصيغة أو أثر السياق إلى root evidence.",
+      "failure_consequence": "الإبقاء على UNRESOLVED أو تضييق النطاق؛ وإذا ظهر تمييز جذري موجب يعاد فتح الحكم وتنفذ دورة فرضية ودحض جديدة قبل أي PREFERRED."
+    },
+    "falsification_status": "NOT_REQUIRED",
+    "reopen_conditions": [
+      "قبول structural tokens جديدة لـglm أو تغيير latest extraction version.",
+      "ظهور مشتق قرآني مؤكد يوسع corpus خارج غلام/غلامين/غلمان.",
+      "توافر مقارنة داخلية عادلة تفصل root عن lexeme وتختبر العمر أو الاستقلال أو status.",
+      "تغيير corpus snapshot أو methodology revision المرتبطين بالrun.",
+      "كشف خطأ في word_ref أو نص Tanzil أو في أي ملاحظة من الملاحظات الثلاث عشرة.",
+      "دخول أي مصدر محظور أو claim دلالي سابق في سياق الاستقراء بوصفه دعمًا أوليًا."
+    ]
+  },
+  "hashes": {
+    "canonical_text_sha256": "ac0724796cbbda0f4801470fbbd11d0f3c5802067bae0493466d0128b0c667af",
+    "identity_index_sha256": "0d0a2273e82ebb0d9848ccbf831f1bb297c0fb255413c5aeb299bbfaf2bbc967",
+    "methodology_source_sha256": "01784170cac4e715c1477cb6a04a2c34b21c4bdb91705aa1eb6b2a896efcedbd",
+    "producer_input_sha256": "66aea02f10bc9a63cf96576bcc46ea79ec2bd1bbf851bd25f66e40e8c44cf448",
+    "adversary_input_sha256": "d8b5a251f891fa893be7181d46f9cdaf402b3efb044ab9cc6f53256f73a107dc",
+    "confirmed_token_ledger_sha256": "008c1a44fcc916a17d80647e6cf81035adccacdb9a9bcff5eb44db94c9b653f8",
+    "filtered_verse_corpus_sha256": "dab6fdd5b102e82c546213206453b821f17b59225c7cac7524c730dad4938c59",
+    "observations_payload_sha256": "2b972b5480a9e5a5ca6c4366d953b3fdd83d8a9430ef5f32b8b12ad2d8c3643e",
+    "phrase_audit_sha256": "ac1d71bded3ee9dce4e238303fbd3c41cdc9187cac12a8ea6b32c4cd74ffdb09",
+    "repository_payload_projection_sha256": "3b4c29ecd03641609c4559669793d1f1f80145bf7293de2015ecb948dad604ca",
+    "hash_serialization": {
+      "confirmed_token_ledger_sha256": "UTF-8 without BOM of 13 LF-joined, no-final-LF rows in numeric Quran order; TAB-separated snapshot_id, extraction_version, word_ref, verse_ref, root, form, pos_tag, source_id, source_version, attribution_status.",
+      "filtered_verse_corpus_sha256": "UTF-8 without BOM of 13 LF-joined, no-final-LF rows in numeric Quran order; TAB-separated snapshot_id, occurrence_id, verse_ref, exact Tanzil text.",
+      "json_subtree_hashes": "UTF-8 canonical JSON with recursively sorted object keys, no insignificant whitespace, and unescaped Unicode over the named subtree only."
+    }
+  },
+  "access_log": [
+    {
+      "sequence": 1,
+      "access_mode": "READ_ONLY",
+      "source": "current governance and active methodology",
+      "selector": "AUTHORITY_MAP.md; SIMPLIFIED_AI_AUTHORITY_AND_GOVERNANCE_CONTRACT.md; docs/canonical/LISAN_PLATFORM_CANONICAL_IMPLEMENTATION_REFERENCE.md; docs/canonical/ADMISSION_TANZIL.md; docs/canonical/ADMISSION_QAC.md; docs/canonical/LISAN_PURITY_AND_STRUCTURAL_EVIDENCE_CONTRACT.md; skills/lisan-semantic-extraction/SKILL.md; PROMPT/1.MD; lisan-quran method skill",
+      "semantic_payload_exposed": false
+    },
+    {
+      "sequence": 2,
+      "access_mode": "READ_ONLY",
+      "source": "authorized cycle-2 panel inputs",
+      "selector": "docs/evidence/requalification/glm_cycle2_panel/producer.json and adversary.json only",
+      "semantic_payload_exposed": true
+    },
+    {
+      "sequence": 3,
+      "access_mode": "READ_ONLY",
+      "source": "repository schemas and deterministic evidence-resolution code",
+      "selector": "ObservationArtifactCreate, ResearchJudgmentCreate, and token evidence-reference semantics",
+      "semantic_payload_exposed": false
+    },
+    {
+      "sequence": 4,
+      "access_mode": "SQLITE_READONLY",
+      "source": "lisanapp.db",
+      "selector": "research_runs, corpus_snapshots, and methodology_revisions limited to run_af84788a and its bound identities; no semantic_claims or semantic prose",
+      "rows_returned": 3,
+      "semantic_payload_exposed": false
+    },
+    {
+      "sequence": 5,
+      "access_mode": "SQLITE_READONLY",
+      "source": "lisanapp.db",
+      "selector": "structural_tokens limited to root='glm', the bound snapshot, MAX extraction_version, attribution_status='CONFIRMED', and structural fields only",
+      "rows_returned": 13,
+      "semantic_payload_exposed": false
+    },
+    {
+      "sequence": 6,
+      "access_mode": "SQLITE_READONLY",
+      "source": "lisanapp.db",
+      "selector": "corpus_occurrences joined only to the 13 confirmed glm verse_refs on the bound production snapshot; id, snapshot_id, verse_ref, exact Tanzil text",
+      "rows_returned": 13,
+      "semantic_payload_exposed": true
+    },
+    {
+      "sequence": 7,
+      "access_mode": "READ_ONLY_HASH",
+      "source": "authorized repository inputs and production artifacts",
+      "selector": "SHA-256 for canonical Tanzil bytes, identity index, methodology source, producer, adversary, confirmed-token ledger serialization, and filtered-corpus serialization",
+      "semantic_payload_exposed": false
+    }
+  ]
+}

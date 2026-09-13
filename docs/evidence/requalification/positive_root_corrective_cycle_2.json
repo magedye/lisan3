@@ -1,0 +1,108 @@
+{
+  "artifact": "POSITIVE_ROOT_CORRECTIVE_CYCLE_2",
+  "recorded_at": "2026-09-13T11:20:00+03:00",
+  "trigger": {
+    "finding": "The dnw independent review exposed that form-only ObservationArtifacts were being represented as deep semantic analysis. The same defect was then confirmed for all Stage B ESw, fwh, and glm runs.",
+    "stage_b_observation_substance": {
+      "ESw": "0/12 rows with any semantic detail field",
+      "fwh": "0/13 rows with any semantic detail field",
+      "glm": "0/13 rows with any semantic detail field"
+    },
+    "decision_effect": "The earlier VERIFY_AT_SCOPE decisions for jud_9506cecf@1, jud_303cd726@1, and jud_d51f1e74@1 were superseded by RETURN_FOR_CORRECTION_EXECUTED. The old claim rows and decision artifact remain immutable history.",
+    "authority": "OWNER_MASTER_DELEGATION_2026_09_13_FIVE_ROOT_CAMPAIGN"
+  },
+  "producer_design": {
+    "per_root": "fresh Quran-only producer + fresh Quran-only purity/overclaim adversary + fresh aggregator",
+    "model_profile": "gpt-5.6-sol/xhigh",
+    "prohibited_semantic_sources": "Prior claim prose/observations, Batch 07, PROJECT_STATE, other five-root artifacts, dictionaries, lexicons, translations, tafsir, web, and memory.",
+    "result": "All three panels kept positive lexeme/construction findings separate and returned root-level UNRESOLVED."
+  },
+  "runtime": {
+    "database_sha256_before": "8920d27c3fcdd1a832f091a78a2bad97ed1587b1ea6b9b274416b587d95905ba",
+    "database_sha256_after": "f34436e278cba18bb68d9312d2066ae99b9d07be9d5dceaf4d9b181f1c45febe",
+    "backup": "local-state-backups/lisanapp.before-positive-root-remediation.20260913-110427.db",
+    "backup_sha256": "8920d27c3fcdd1a832f091a78a2bad97ed1587b1ea6b9b274416b587d95905ba",
+    "disposable_dry_run": "PASS after correcting ESw evidence prefix from word: to repository-native token:; integrity ok; exact dry-run file removed",
+    "integrity_after": "ok",
+    "snapshot": "snap_tanzil_1_1_ac0724796cbb",
+    "methodology": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4"
+  },
+  "roots": {
+    "ESw": {
+      "predecessor": "jud_9506cecf@1",
+      "run_id": "run_e783b274",
+      "claim": "jud_da40a233@1",
+      "claim_sha256": "fde44a5e15e9b7d8a661f5ecaa9b3ccd5e8120b830d2c9c4d63915b785c053a0",
+      "claim_projection_bytes": 7221,
+      "result": "UNRESOLVED",
+      "strength": "UNRESOLVED",
+      "scope": "UNIVERSAL",
+      "exact_set": "12/12",
+      "semantic_observations": "12/12 all detail fields nonblank",
+      "isolation": "ESTABLISHED/CLEAN",
+      "isolation_audit_ref": "aud_444c4a62",
+      "hypotheses": ["hyp_94ea84f7", "hyp_423a8034", "hyp_80347676"],
+      "ai_traces": ["ai_102b8988", "ai_c44ade0c", "ai_53038604"],
+      "audits": ["aud_317c2652", "aud_4c6d5b78", "aud_62c0e852"],
+      "semantic_basis": "All 12 tokens belong to one concrete noun lexeme family; the stable lexeme/construction pattern does not independently isolate a bare-root contribution.",
+      "panel_artifacts": {
+        "producer": {"sha256": "d68031a2db3be19bfe27024d2b18ad65064abbf158e2e6c8bfef62eb04bb50f9", "size_bytes": 53293},
+        "adversary": {"sha256": "604755d2e376f1bf129473cd9d106d79cf731a8849d0e3e54bee5dbc6a9590a6", "size_bytes": 43025},
+        "aggregator": {"sha256": "3224d9772166aa8a7b9ecd930c0279ce191c674553900e2aa09d26b85f571e92", "size_bytes": 69268}
+      }
+    },
+    "fwh": {
+      "predecessor": "jud_303cd726@1",
+      "run_id": "run_aed26ed4",
+      "claim": "jud_92e71ead@1",
+      "claim_sha256": "daa2a5a8e3121c4f0ff8926d0fe02d7071d4fe2422af22e0c36c9eba74e70591",
+      "claim_projection_bytes": 6499,
+      "result": "UNRESOLVED",
+      "strength": "UNRESOLVED",
+      "scope": "UNIVERSAL",
+      "exact_set": "13/13",
+      "semantic_observations": "13/13 all detail fields nonblank",
+      "isolation": "ESTABLISHED/CLEAN",
+      "isolation_audit_ref": "aud_f1ba467f",
+      "hypotheses": ["hyp_30dc4c81", "hyp_09f42dfa", "hyp_b8ae067f"],
+      "ai_traces": ["ai_4901e86c", "ai_602e68e5", "ai_5ca8ff34"],
+      "audits": ["aud_64c1ca38", "aud_7efc855b", "aud_99e80451"],
+      "semantic_basis": "The mouth lexeme family is strongly attested, but all 13 tokens remain one nominal lexical family; no independent derivative/form contrast isolates that lexeme meaning as a bare-root contribution.",
+      "panel_artifacts": {
+        "producer": {"sha256": "d355cbedca35a474f8790857d638ec1f5e378d1d5e6cc2c96340cadb5f9fda12", "size_bytes": 49989},
+        "adversary": {"sha256": "f65710603d3ab46bc04e1e33893ea7c22ea167bb36512a030b72aa771e9d588a", "size_bytes": 36021},
+        "aggregator": {"sha256": "59bec02e28e3c28fcdb7e23b57b0d7deba75a85f15e4a3b85f7206c235bf6013", "size_bytes": 57526}
+      }
+    },
+    "glm": {
+      "predecessor": "jud_d51f1e74@1",
+      "run_id": "run_a9434a53",
+      "claim": "jud_da6a8e4c@1",
+      "claim_sha256": "08ce67b174bf26db74b96f1e528c0eb75414bea8bb62988b0488f33fc3a51fcb",
+      "claim_projection_bytes": 8411,
+      "result": "UNRESOLVED",
+      "strength": "UNRESOLVED",
+      "scope": "UNIVERSAL",
+      "exact_set": "13/13",
+      "semantic_observations": "13/13 all detail fields nonblank",
+      "isolation": "ESTABLISHED/CLEAN",
+      "isolation_audit_ref": "aud_296fe38b",
+      "hypotheses": ["hyp_31096130", "hyp_6c984a9e", "hyp_a17aaf52"],
+      "ai_traces": ["ai_2030d30a", "ai_2c9a7a1d", "ai_2947f69a"],
+      "audits": ["aud_37f98db6", "aud_7441edf2", "aud_37c2d6d0"],
+      "semantic_basis": "A bounded ghulam lexeme pattern survives, but all tokens belong to that lexeme family and do not isolate the positive content as a bare-root contribution.",
+      "panel_artifacts": {
+        "producer": {"sha256": "66aea02f10bc9a63cf96576bcc46ea79ec2bd1bbf851bd25f66e40e8c44cf448", "size_bytes": 43859},
+        "adversary": {"sha256": "d8b5a251f891fa893be7181d46f9cdaf402b3efb044ab9cc6f53256f73a107dc", "size_bytes": 38042},
+        "aggregator": {"sha256": "b4f49ca55a72f10bab408490c225b93aa9c20aab910c7e1e775064a12cf76b16", "size_bytes": 47305}
+      }
+    }
+  },
+  "claim_hash_projection": "For each successor: persisted JSON columns decoded; id renamed claim_id; created_at and accepted_at excluded; UTF-8 canonical JSON, sorted keys, compact separators, non-ASCII preserved.",
+  "research_completeness": "All three claims have exact index/evidence/deep analysis complete and sufficient_for_claim=true. fwh sampling_basis_recorded=false is non-blocking for UNIVERSAL exact-set coverage.",
+  "post_write_counts": {"ResearchRuns": 11, "Observations": 555, "SemanticClaims": 11, "VerificationRecords": 0, "ACCEPTED": 0},
+  "post_write_focused_tests": "tests/test_ai_governance_simplification.py + tests/test_canonical_runtime_qualification.py: 37 passed, exit 0",
+  "independent_review": "PENDING_FRESH_POST_FREEZE_REVIEWS",
+  "batch_07_comparison": "PROHIBITED_UNTIL_EACH_INITIAL_REVIEW_IS_FROZEN",
+  "batch_08_status": "BATCH_08_NOT_AUTHORIZED"
+}

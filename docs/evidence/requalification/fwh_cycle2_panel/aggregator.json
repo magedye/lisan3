@@ -1,0 +1,831 @@
+{
+  "artifact_type": "FWH_CYCLE2_FRESH_PANEL_AGGREGATOR",
+  "artifact_version": "1.0.0",
+  "generated_at_utc": "2026-09-13T07:54:39.475Z",
+  "panel_role": "FRESH_CYCLE2_AGGREGATOR",
+  "target": {
+    "root": "fwh",
+    "arabic_root_letters": "ف و ه",
+    "contract_type": "ROOT_CONCEPT",
+    "run_id": "run_78a439c3",
+    "corpus_snapshot_id": "snap_tanzil_1_1_ac0724796cbb",
+    "methodology_revision_id": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+    "claim_universe": "جميع الإسنادات البنيوية الثلاثة عشر ذات root=fwh وattribution_status=CONFIRMED في أحدث extraction_version لكل word_ref ضمن snapshot الإنتاجي المحدد",
+    "occurrence_unit": "word_ref",
+    "eligible_occurrence_count": 13
+  },
+  "source_isolation": {
+    "status": "CLEAN_WITHIN_DECLARED_AGGREGATOR_INPUT_SET",
+    "allowed_semantic_inputs": [
+      "CURRENT_OWNER_INSTRUCTION",
+      "CURRENT_REPOSITORY_GOVERNANCE_AND_METHOD",
+      "PRODUCTION_TANZIL_FWH_CORPUS_EVIDENCE",
+      "PRODUCTION_QAC_FWH_STRUCTURAL_EVIDENCE",
+      "docs/evidence/requalification/fwh_cycle2_panel/producer.json",
+      "docs/evidence/requalification/fwh_cycle2_panel/adversary.json"
+    ],
+    "compatibility_only_inputs": [
+      "backend/domain/schemas.py",
+      "backend/domain/services/research_judgment.py"
+    ],
+    "forbidden_semantic_inputs": [
+      "PRIOR_CLAIMS",
+      "PRIOR_OBSERVATIONS",
+      "BATCH07",
+      "PROJECT_STATE",
+      "OTHER_FIVE_ROOT_ARTIFACTS",
+      "EXTERNAL_SEMANTICS",
+      "DICTIONARIES",
+      "TRANSLATIONS",
+      "TAFSIR",
+      "WEB",
+      "MODEL_OR_PROJECT_MEMORY"
+    ],
+    "forbidden_semantic_content_accessed": false,
+    "db_write_performed": false,
+    "notes": "اقتصر الاستقراء الدلالي على نص Tanzil الإنتاجي والصفوف البنيوية المؤكدة للجذر fwh ومدخلي اللوحة الحاليين. لم تُقرأ claims أو observation_artifacts سابقة، ولم يُفتح Batch07 أو PROJECT_STATE أو أي أثر لجذر آخر."
+  },
+  "source_bindings": {
+    "quran_text": {
+      "snapshot_id": "snap_tanzil_1_1_ac0724796cbb",
+      "source_id": "TANZIL_QURAN_UTHMANI",
+      "version": "1.1",
+      "sha256": "ac0724796cbbda0f4801470fbbd11d0f3c5802067bae0493466d0128b0c667af",
+      "validation_status": "VALIDATED",
+      "import_validation_status": "IMPORT_VALIDATED",
+      "activation_status": "PRODUCTION_ACTIVE",
+      "fixture_only": false,
+      "verse_count": 6236,
+      "authority_use": "PRIMARY_QURAN_TEXT_AND_VERSE_IDENTITY"
+    },
+    "structural_annotation": {
+      "source_id": "QAC_MORPHOLOGY",
+      "version": "0.4",
+      "sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+      "extraction_version": "qac-0.4-import-v1",
+      "attribution_status_required": "CONFIRMED",
+      "authority_use": "ROOT_AND_MORPHOLOGY_ANNOTATION_ONLY",
+      "semantic_authority": false
+    },
+    "active_method": {
+      "authority_revision": "LISAN3_CANONICAL_IMPLEMENTATION_V3_2026_09_06",
+      "ai_authority_revision": "LISAN3_AI_AUTHORITY_V3_2026_09_06",
+      "diagnostics_revision": "LISAN3_DIAGNOSTICS_CONTRACT_V3_2026_09_06",
+      "semantic_runtime_revision": "LISAN3_SEMANTIC_RUNTIME_V3_2026_09_06",
+      "source_sha256": "01784170cac4e715c1477cb6a04a2c34b21c4bdb91705aa1eb6b2a896efcedbd"
+    }
+  },
+  "panel_inputs": {
+    "producer": {
+      "artifact_type": "FWH_CYCLE2_FRESH_GOVERNED_PRODUCER",
+      "research_state": "PREFERRED",
+      "claim_scope": "UNIVERSAL",
+      "result_strength": "MODERATE",
+      "root_candidate": "منفذ جسدي حدّي يصل عنده داخل صاحبه بخارجه ويقبل أدوار الوصول والإدخال والخروج والمنع والوساطة.",
+      "retained_value": "التغطية الكاملة، والفصل السياقي في الصفوف الثلاثة عشر، ودحض اختزال fwh في القول أو الكذب أو اتجاه الخروج وحده."
+    },
+    "adversary": {
+      "lexeme_research_state": "PREFERRED",
+      "lexeme_claim_scope": "UNIVERSAL",
+      "lexeme_result_strength": "STRONG",
+      "lexeme_conclusion": "السطحان الاسميان faA و>afowa`h متوافقان في المواضع الثلاثة عشر مع العضو الجسدي الفم، بينما تحدد التراكيب وظائف المصدر والآلة والمحل والغاية والهدف.",
+      "root_concept_research_state": "UNRESOLVED",
+      "root_concept_result_strength": "UNRESOLVED",
+      "root_objection": "لا يوجد في المجموعة سوى أسرة معجمية اسمية واحدة وform=N؛ لذلك لا يميز الدليل مساهمة جذرية مجردة مستقلة من معنى المفردة."
+    }
+  },
+  "panel_disposition": {
+    "status": "ADVERSARY_ROOT_LEVEL_OBJECTION_SUSTAINED",
+    "producer_root_candidate": "NOT_ADOPTED_AS_ROOT_CONCEPT",
+    "producer_evidence": "RETAINED_AFTER_LAYER_REATTRIBUTION",
+    "adversary_lexeme_judgment": "AFFIRMED_AS_PANEL_FINDING_NOT_PROMOTED_TO_ROOT",
+    "root_concept_research_state": "UNRESOLVED",
+    "claim_scope": "UNIVERSAL",
+    "result_strength": "UNRESOLVED",
+    "dispositive_reason": "التغطية التوكنية كاملة لكنها تغطية لاسمين مصنفين ضمن أسرة الفم نفسها وكلها form=N. اختلاف من والباء وفي وعلى وعلاقة البلوغ يبرهن ثبات المفردة الجسدية وتنوع البناء، لكنه لا يوفر مشتقا مستقلا أو مقابلة داخلية تفصل «الفم الجسدي» عن «المنفذ الفموي المجرد» أو عن عدم إمكان استرداد نواة مستقلة من هذه المادة.",
+    "strongest_honest_root_scope": "حكم UNIVERSAL على مجموعة fwh الحالية بأن ROOT_CONCEPT غير محسوم؛ لا صياغة موجبة مفضلة للجذر.",
+    "lexeme_boundary": "يمكن الاحتفاظ بنتيجة LEXEME قوية: الفم الجسدي في جميع المواضع الثلاثة عشر. لا تتحول هذه النتيجة تلقائيا إلى معنى الجذر المجرد.",
+    "canonical_acceptance_granted": false,
+    "database_persistence_authorized_or_performed": false
+  },
+  "coverage": {
+    "confirmed_token_count": 13,
+    "aggregated_observation_count": 13,
+    "phrase_audit_count": 13,
+    "uninspected_token_count": 0,
+    "attribution_distribution": {
+      "CONFIRMED": 13,
+      "DISPUTED": 0,
+      "UNRESOLVED": 0
+    },
+    "form_distribution": {
+      "N": 13
+    },
+    "lemma_distribution": {
+      ">afowa`h": 12,
+      "faA": 1
+    },
+    "construction_distribution": {
+      "OUTPUT_SOURCE_WITH_MIN": 2,
+      "ORAL_INSTRUMENT_OR_MEANS_WITH_BI": 6,
+      "EXTINGUISHING_ATTEMPT_WITH_BI_HARD_PAIR": 2,
+      "BODY_PART_IN_REACHING_RELATION": 1,
+      "BODY_PART_CONTAINER": 1,
+      "SEALED_BODY_PART": 1
+    },
+    "word_refs": [
+      "3:118:19:1",
+      "3:167:25:2",
+      "5:41:13:2",
+      "9:8:12:2",
+      "9:30:13:2",
+      "9:32:6:2",
+      "13:14:18:1",
+      "14:9:24:1",
+      "18:5:12:1",
+      "24:15:5:2",
+      "33:4:22:2",
+      "36:65:4:1",
+      "61:8:5:2"
+    ],
+    "coverage_verdict": "COMPLETE_FOR_EXACT_CURRENT_CONFIRMED_FWH_TOKEN_SET",
+    "coverage_limit": "اكتمال المواضع لا ينشئ تنوع مشتقات ولا يمنح وحده Root Concept."
+  },
+  "root_form_lexeme_construction_context_separation": {
+    "root": "UNRESOLVED؛ ROOT:fwh مثبت كمفتاح بنيوي جامع، لكن لا تثبت له مساهمة دلالية مستقلة عن الأسرة الاسمية المرصودة.",
+    "derivation_inflection": "كل الصفوف أسماء؛ المفرد والجمع والحالة الإعرابية والضمائر الملحقة فروق تصريفية لا تثبت نواة جذرية.",
+    "lexeme": "faA و>afowa`h يدلان في المجموعة الكاملة على الفم بوصفه عضوا جسديا؛ هذه خلاصة معجمية PREFERRED/STRONG داخل حدود corpus.",
+    "form": "form=N في 13/13؛ لا توجد صيغة فعلية أو مشتق مغاير يسمح بفصل أثر الجذر عن أثر المفردة الاسمية.",
+    "construction": "من يحدد المصدر، والباء تحدد وسيلة أو آلة، وفي تحدد الاحتواء، والبلوغ يحدد غاية، والختم مع على يحدد هدفا. هذه العلاقات ليست معنى الجذر.",
+    "local_form_roles": "تأتي المفردة مصدرا لخارج، أو وسيلة لفعل، أو طرفا في بلوغ، أو محلا لليد، أو هدفا للختم.",
+    "context": "القول ومضمونه والصدق والكذب والإيمان والقلب والبغضاء والعلم والإطفاء والنور والختم والكلام والشهادة إسهامات مسندية وخطابية محلية.",
+    "local_meaning": "يبقى نوع آلية الإطفاء في 9:32 و61:8، وهيئة رد الأيدي في 14:9، وحامل ظهور البغضاء في 3:118 غير محسوم.",
+    "final_statement": "يثبت panel معنى المفردة الجسدي، ويرفض مساواتها بالقول، لكنه لا يختار معنى مجردا للجذر من هذه الأسرة الاسمية وحدها."
+  },
+  "observations": [
+    {
+      "observation_id": "FWH-C2-AGG-OBS-01",
+      "word_ref": "3:118:19:1",
+      "verse_ref": "3:118",
+      "structural_observation": "ROOT:fwh؛ form=N؛ lemma=>afowa`h؛ MP|GEN؛ attribution_status=CONFIRMED.",
+      "lexeme_observation": "الأفواه تبقى اسما لعضو جسدي يضاف إلى أصحاب الضمير.",
+      "construction_observation": "«مِنْ أَفْوَاهِهِمْ» يعيّن جهة المصدر لما بدا.",
+      "context_observation": "البغضاء هي الظاهرة، والصدور موضع المقابلة بما يخفي؛ لا يحمل fwh البغضاء أو الخفاء.",
+      "root_concept_effect": "يدعم المفردة الجسدية في بناء المصدر، لكنه لا يميز نواة جذرية مجردة.",
+      "unresolved": "نوع حامل ظهور البغضاء وقصد إظهاره غير محسومين."
+    },
+    {
+      "observation_id": "FWH-C2-AGG-OBS-02",
+      "word_ref": "3:167:25:2",
+      "verse_ref": "3:167",
+      "structural_observation": "ROOT:fwh؛ form=N؛ lemma=>afowa`h؛ MP|GEN؛ attribution_status=CONFIRMED.",
+      "lexeme_observation": "الأفواه تسمّي العضو الجسدي لأصحاب القلوب المذكورة.",
+      "construction_observation": "الباء تربط الفم بأداء القول بوصفه وسيلة أو آلة.",
+      "context_observation": "القول ومضمونه وعدم وجوده في القلوب والكتمان عناصر مستقلة عن fwh.",
+      "root_concept_effect": "يفند مساواة الفم بالكذب أو مخالفة القلب، ولا يفصل معنى الجذر عن معنى المفردة.",
+      "unresolved": "التوصيف الأدق للباء بين الآلية والملابسة لا يؤثر في الحد الطبقي."
+    },
+    {
+      "observation_id": "FWH-C2-AGG-OBS-03",
+      "word_ref": "5:41:13:2",
+      "verse_ref": "5:41",
+      "structural_observation": "ROOT:fwh؛ form=N؛ lemma=>afowa`h؛ MP|GEN؛ attribution_status=CONFIRMED.",
+      "lexeme_observation": "الأفواه هي العضو الجسدي الذي يقع به الأداء المنطوق.",
+      "construction_observation": "الباء تجعل الأفواه وسيلة لقول «آمنا».",
+      "context_observation": "الإيمان المنطوق ونفي إيمان القلوب حكمان سياقيان لا مساهمة جذرية.",
+      "root_concept_effect": "يثبت فصلا بين العضو ومضمون القول، من غير دليل اشتقاقي لنواة الجذر.",
+      "unresolved": "القصد وكيفية التلفظ خارجان عن المادة المباشرة."
+    },
+    {
+      "observation_id": "FWH-C2-AGG-OBS-04",
+      "word_ref": "9:8:12:2",
+      "verse_ref": "9:8",
+      "structural_observation": "ROOT:fwh؛ form=N؛ lemma=>afowa`h؛ MP|GEN؛ attribution_status=CONFIRMED.",
+      "lexeme_observation": "الأفواه تبقى العضو الجسدي المضاف إلى فاعلي الإرضاء.",
+      "construction_observation": "الباء تسند إلى الأفواه دور الوسيلة في «يرضونكم».",
+      "context_observation": "الإرضاء وإباء القلوب وعدم التطابق تحددها الجملة لا لفظ الأفواه.",
+      "root_concept_effect": "ينفي إدخال الخداع أو الرفض في fwh، ولا يحوّل الوسيلة التركيبية إلى Root Concept.",
+      "unresolved": "المادة القولية المستعملة في الإرضاء غير مصرّح بها."
+    },
+    {
+      "observation_id": "FWH-C2-AGG-OBS-05",
+      "word_ref": "9:30:13:2",
+      "verse_ref": "9:30",
+      "structural_observation": "ROOT:fwh؛ form=N؛ lemma=>afowa`h؛ MP|GEN؛ attribution_status=CONFIRMED.",
+      "lexeme_observation": "الأفواه تسمّي الوسيلة الجسدية لصدور القول.",
+      "construction_observation": "الباء تقيد «قولهم» بالآلة أو الوسيلة، والقول نفسه مسمى مستقلا.",
+      "context_observation": "مضمون القول ومضاهاته والحكم عليه تأتي من السياق.",
+      "root_concept_effect": "التجاور مع «قولهم» يفند تعريف fwh بالقول نفسه، لكنه لا يعزل نواة مجردة.",
+      "unresolved": "لا يحسم الموضع لماذا ذُكر الفم مع القول فوق القدر الآمن من الآلية الظاهرة."
+    },
+    {
+      "observation_id": "FWH-C2-AGG-OBS-06",
+      "word_ref": "9:32:6:2",
+      "verse_ref": "9:32",
+      "structural_observation": "ROOT:fwh؛ form=N؛ lemma=>afowa`h؛ MP|GEN؛ attribution_status=CONFIRMED.",
+      "lexeme_observation": "قراءة الفم الجسدي تظل ممكنة كطرف وسائطي في البناء.",
+      "construction_observation": "الباء تجعل الأفواه وسيلة في محاولة الإطفاء.",
+      "context_observation": "الإطفاء والنور وإتمامه وفشل المحاولة من المسند والخطاب، لا من fwh.",
+      "root_concept_effect": "أقوى ضغط على التفسير الجسدي المكتفي بذاته؛ بقاء المفردة لا يثبت أن «المنفذ» نواة جذرية.",
+      "unresolved": "لا يميز النص المسموح النفخ من القول أو من آلية مجازية أخرى."
+    },
+    {
+      "observation_id": "FWH-C2-AGG-OBS-07",
+      "word_ref": "13:14:18:1",
+      "verse_ref": "13:14",
+      "structural_observation": "ROOT:fwh؛ form=N؛ lemma=faA؛ MS|NOM؛ attribution_status=CONFIRMED.",
+      "lexeme_observation": "فاه عضو جسدي مفرد داخل صورة اليدين والماء.",
+      "construction_observation": "الفم طرف في علاقة بلوغ؛ الفعل والسياق يحددان الغاية وفشل الوسيلة.",
+      "context_observation": "الدعاء والاستجابة والضلال تخص بنية التشبيه وخطابه ولا تعرف fwh.",
+      "root_concept_effect": "يدحض منافس القول فقط ويدعم LEXEME الجسدية بقوة، لكنه يظل شاهدا من الأسرة الاسمية نفسها.",
+      "unresolved": "تفاصيل مرجع الضمائر واتجاه البلوغ محلية ولا تمنح تجريدا جذريا مستقلا."
+    },
+    {
+      "observation_id": "FWH-C2-AGG-OBS-08",
+      "word_ref": "14:9:24:1",
+      "verse_ref": "14:9",
+      "structural_observation": "ROOT:fwh؛ form=N؛ lemma=>afowa`h؛ MP|GEN؛ attribution_status=CONFIRMED.",
+      "lexeme_observation": "الأيدي والأفواه مشاركان جسديان متميزان.",
+      "construction_observation": "«فِي أَفْوَاهِهِمْ» يثبت علاقة احتواء أو جهة مكانية لرد الأيدي.",
+      "context_observation": "القول اللاحق والكفر والشك لا يدخل شيء منها في fwh.",
+      "root_concept_effect": "يفند القول-only وoutward-only، لكنه لا يقرر أن قابلية الاحتواء جزء من الجذر بدلا من المفردة والبناء.",
+      "unresolved": "هيئة رد الأيدي وغرضها وقوتها الخطابية غير محسومة."
+    },
+    {
+      "observation_id": "FWH-C2-AGG-OBS-09",
+      "word_ref": "18:5:12:1",
+      "verse_ref": "18:5",
+      "structural_observation": "ROOT:fwh؛ form=N؛ lemma=>afowa`h؛ MP|GEN؛ attribution_status=CONFIRMED.",
+      "lexeme_observation": "الأفواه هي المصدر الجسدي للكلمة الخارجة.",
+      "construction_observation": "«تَخْرُجُ مِنْ أَفْوَاهِهِمْ» يفصل الخارج والفعل وحرف المصدر عن الاسم.",
+      "context_observation": "الكلمة وكبرها والكذب ونفي العلم محددات مستقلة.",
+      "root_concept_effect": "يدعم ثبات المفردة ويمنع إدخال الكلام أو الكذب في الجذر؛ اتجاه الخروج ناتج عن البناء.",
+      "unresolved": "لا ينتج الموضع بمفرده مقابلة اشتقاقية تفصل الجذر عن lexeme."
+    },
+    {
+      "observation_id": "FWH-C2-AGG-OBS-10",
+      "word_ref": "24:15:5:2",
+      "verse_ref": "24:15",
+      "structural_observation": "ROOT:fwh؛ form=N؛ lemma=>afowa`h؛ MP|GEN؛ attribution_status=CONFIRMED.",
+      "lexeme_observation": "الأفواه والألسنة اسمان جسديان منفصلان في الجملة.",
+      "construction_observation": "الباء تسند للأفواه دور وسيلة القول، كما تسند للألسنة دورا في التلقي.",
+      "context_observation": "التلقي والقول وغياب العلم والاستخفاف والتقويم عناصر سياقية.",
+      "root_concept_effect": "يمنع دمج الفم باللسان أو القول، ولا يوفر corpus المقيد تفريدا جذريا بينهما.",
+      "unresolved": "العلاقة التفريقية الدقيقة بين اللسان والفم غير محسومة ضمن المدخلات الحالية."
+    },
+    {
+      "observation_id": "FWH-C2-AGG-OBS-11",
+      "word_ref": "33:4:22:2",
+      "verse_ref": "33:4",
+      "structural_observation": "ROOT:fwh؛ form=N؛ lemma=>afowa`h؛ MP|GEN؛ attribution_status=CONFIRMED.",
+      "lexeme_observation": "الأفواه وسيلة جسدية للقول البشري المسمى مستقلا.",
+      "construction_observation": "الباء تقيد «قولكم» بالوسيلة ولا تجعل الاسم هو القول.",
+      "context_observation": "أثر التسميات والعلاقات والحق في القول المقابل أحكام خطابية وقانونية محلية.",
+      "root_concept_effect": "يثبت حد المفردة/القول، ولا يثبت تجريد منفذ حدّي على مستوى الجذر.",
+      "unresolved": "لا يعمم بطلان القول المعين على كل قول بالفم."
+    },
+    {
+      "observation_id": "FWH-C2-AGG-OBS-12",
+      "word_ref": "36:65:4:1",
+      "verse_ref": "36:65",
+      "structural_observation": "ROOT:fwh؛ form=N؛ lemma=>afowa`h؛ MP|GEN؛ attribution_status=CONFIRMED.",
+      "lexeme_observation": "الأفواه والأيدي والأرجل أعضاء جسدية منفصلة مسماة.",
+      "construction_observation": "الختم مع «على» يجعل الأفواه هدفا للفعل، بينما الكلام والشهادة يسندان إلى أعضاء أخرى.",
+      "context_observation": "المنع من الكلام والكلام والشهادة والكسب تحددها الأفعال والخطاب.",
+      "root_concept_effect": "يدحض مساواة الفم بالكلام ويدعم lexeme الجسدية؛ لا يثبت أن المنع أو الحدية نواة fwh.",
+      "unresolved": "كيفية الختم وكيفية كلام الأعضاء خارج دعوى المفردة والجذر."
+    },
+    {
+      "observation_id": "FWH-C2-AGG-OBS-13",
+      "word_ref": "61:8:5:2",
+      "verse_ref": "61:8",
+      "structural_observation": "ROOT:fwh؛ form=N؛ lemma=>afowa`h؛ MP|GEN؛ attribution_status=CONFIRMED.",
+      "lexeme_observation": "قراءة الفم الجسدي تبقى صالحة في دور الوسيلة.",
+      "construction_observation": "الباء تسند للأفواه محاولة الإطفاء في موازاة 9:32.",
+      "context_observation": "النور والإطفاء وإتمام النور وفشل المعارضة عناصر سياقية.",
+      "root_concept_effect": "التكرار يقوي انتظام البناء الوسائطي ولا يضيف مشتقا أو مفردة مستقلة تعزل Root Concept.",
+      "unresolved": "الموازاة لا تحسم النفخ أو القول أو آلية أخرى، ولا تحسم تجريد الجذر."
+    }
+  ],
+  "phrase_audit": [
+    {
+      "observation_id": "FWH-C2-AGG-OBS-01",
+      "verse_ref": "3:118",
+      "quran_text_ref": "TANZIL_QURAN_UTHMANI:1.1:3:118",
+      "structural_ref": "QAC_MORPHOLOGY:0.4:3:118:19:1",
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_3_118_19_1",
+      "exact_phrase": "قَدْ بَدَتِ ٱلْبَغْضَآءُ مِنْ أَفْوَٰهِهِمْ وَمَا تُخْفِى صُدُورُهُمْ أَكْبَرُ",
+      "qac_lemma": ">afowa`h",
+      "qac_features": "N|MP|GEN",
+      "construction_class": "OUTPUT_SOURCE_WITH_MIN",
+      "phrase_resolution": "LEXEME_BODY_PART_SUPPORTED; ROOT_CONCEPT_UNRESOLVED"
+    },
+    {
+      "observation_id": "FWH-C2-AGG-OBS-02",
+      "verse_ref": "3:167",
+      "quran_text_ref": "TANZIL_QURAN_UTHMANI:1.1:3:167",
+      "structural_ref": "QAC_MORPHOLOGY:0.4:3:167:25:2",
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_3_167_25_2",
+      "exact_phrase": "يَقُولُونَ بِأَفْوَٰهِهِم مَّا لَيْسَ فِى قُلُوبِهِمْ",
+      "qac_lemma": ">afowa`h",
+      "qac_features": "N|MP|GEN",
+      "construction_class": "ORAL_INSTRUMENT_OR_MEANS_WITH_BI",
+      "phrase_resolution": "SPEECH_AND_HEART_CONTRAST_EXCLUDED_FROM_ROOT"
+    },
+    {
+      "observation_id": "FWH-C2-AGG-OBS-03",
+      "verse_ref": "5:41",
+      "quran_text_ref": "TANZIL_QURAN_UTHMANI:1.1:5:41",
+      "structural_ref": "QAC_MORPHOLOGY:0.4:5:41:13:2",
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_5_41_13_2",
+      "exact_phrase": "قَالُوٓا۟ ءَامَنَّا بِأَفْوَٰهِهِمْ وَلَمْ تُؤْمِن قُلُوبُهُمْ",
+      "qac_lemma": ">afowa`h",
+      "qac_features": "N|MP|GEN",
+      "construction_class": "ORAL_INSTRUMENT_OR_MEANS_WITH_BI",
+      "phrase_resolution": "BELIEF_AND_UNBELIEF_EXCLUDED_FROM_ROOT"
+    },
+    {
+      "observation_id": "FWH-C2-AGG-OBS-04",
+      "verse_ref": "9:8",
+      "quran_text_ref": "TANZIL_QURAN_UTHMANI:1.1:9:8",
+      "structural_ref": "QAC_MORPHOLOGY:0.4:9:8:12:2",
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_9_8_12_2",
+      "exact_phrase": "يُرْضُونَكُم بِأَفْوَٰهِهِمْ وَتَأْبَىٰ قُلُوبُهُمْ",
+      "qac_lemma": ">afowa`h",
+      "qac_features": "N|MP|GEN",
+      "construction_class": "ORAL_INSTRUMENT_OR_MEANS_WITH_BI",
+      "phrase_resolution": "PLACATING_AND_INNER_REFUSAL_EXCLUDED_FROM_ROOT"
+    },
+    {
+      "observation_id": "FWH-C2-AGG-OBS-05",
+      "verse_ref": "9:30",
+      "quran_text_ref": "TANZIL_QURAN_UTHMANI:1.1:9:30",
+      "structural_ref": "QAC_MORPHOLOGY:0.4:9:30:13:2",
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_9_30_13_2",
+      "exact_phrase": "ذَٰلِكَ قَوْلُهُم بِأَفْوَٰهِهِمْ يُضَٰهِـُٔونَ قَوْلَ ٱلَّذِينَ كَفَرُوا۟ مِن قَبْلُ",
+      "qac_lemma": ">afowa`h",
+      "qac_features": "N|MP|GEN",
+      "construction_class": "ORAL_INSTRUMENT_OR_MEANS_WITH_BI",
+      "phrase_resolution": "QAWL_SEPARATELY_LEXICALIZED; ROOT_NOT_SPEECH"
+    },
+    {
+      "observation_id": "FWH-C2-AGG-OBS-06",
+      "verse_ref": "9:32",
+      "quran_text_ref": "TANZIL_QURAN_UTHMANI:1.1:9:32",
+      "structural_ref": "QAC_MORPHOLOGY:0.4:9:32:6:2",
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_9_32_6_2",
+      "exact_phrase": "يُرِيدُونَ أَن يُطْفِـُٔوا۟ نُورَ ٱللَّهِ بِأَفْوَٰهِهِمْ",
+      "qac_lemma": ">afowa`h",
+      "qac_features": "N|MP|GEN",
+      "construction_class": "EXTINGUISHING_ATTEMPT_WITH_BI_HARD_PAIR",
+      "phrase_resolution": "BODY_PART_LEXEME_SURVIVES; MECHANISM_AND_ROOT_ABSTRACTION_UNRESOLVED"
+    },
+    {
+      "observation_id": "FWH-C2-AGG-OBS-07",
+      "verse_ref": "13:14",
+      "quran_text_ref": "TANZIL_QURAN_UTHMANI:1.1:13:14",
+      "structural_ref": "QAC_MORPHOLOGY:0.4:13:14:18:1",
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_13_14_18_1",
+      "exact_phrase": "كَبَٰسِطِ كَفَّيْهِ إِلَى ٱلْمَآءِ لِيَبْلُغَ فَاهُ وَمَا هُوَ بِبَٰلِغِهِۦ",
+      "qac_lemma": "faA",
+      "qac_features": "N|MS|NOM",
+      "construction_class": "BODY_PART_IN_REACHING_RELATION",
+      "phrase_resolution": "SPEECH_ONLY_REJECTED; BODILY_LEXEME_STRONGLY_SUPPORTED; ROOT_UNRESOLVED"
+    },
+    {
+      "observation_id": "FWH-C2-AGG-OBS-08",
+      "verse_ref": "14:9",
+      "quran_text_ref": "TANZIL_QURAN_UTHMANI:1.1:14:9",
+      "structural_ref": "QAC_MORPHOLOGY:0.4:14:9:24:1",
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_14_9_24_1",
+      "exact_phrase": "فَرَدُّوٓا۟ أَيْدِيَهُمْ فِىٓ أَفْوَٰهِهِمْ وَقَالُوٓا۟ إِنَّا كَفَرْنَا",
+      "qac_lemma": ">afowa`h",
+      "qac_features": "N|MP|GEN",
+      "construction_class": "BODY_PART_CONTAINER",
+      "phrase_resolution": "BODILY_LEXEME_STRONGLY_SUPPORTED; LOCAL_GESTURE_AND_ROOT_UNRESOLVED"
+    },
+    {
+      "observation_id": "FWH-C2-AGG-OBS-09",
+      "verse_ref": "18:5",
+      "quran_text_ref": "TANZIL_QURAN_UTHMANI:1.1:18:5",
+      "structural_ref": "QAC_MORPHOLOGY:0.4:18:5:12:1",
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_18_5_12_1",
+      "exact_phrase": "كَبُرَتْ كَلِمَةً تَخْرُجُ مِنْ أَفْوَٰهِهِمْ إِن يَقُولُونَ إِلَّا كَذِبًا",
+      "qac_lemma": ">afowa`h",
+      "qac_features": "N|MP|GEN",
+      "construction_class": "OUTPUT_SOURCE_WITH_MIN",
+      "phrase_resolution": "WORD_EXIT_AND_FALSEHOOD_SEPARATE_FROM_FWH"
+    },
+    {
+      "observation_id": "FWH-C2-AGG-OBS-10",
+      "verse_ref": "24:15",
+      "quran_text_ref": "TANZIL_QURAN_UTHMANI:1.1:24:15",
+      "structural_ref": "QAC_MORPHOLOGY:0.4:24:15:5:2",
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_24_15_5_2",
+      "exact_phrase": "إِذْ تَلَقَّوْنَهُۥ بِأَلْسِنَتِكُمْ وَتَقُولُونَ بِأَفْوَاهِكُم مَّا لَيْسَ لَكُم بِهِۦ عِلْمٌ",
+      "qac_lemma": ">afowa`h",
+      "qac_features": "N|MP|GEN",
+      "construction_class": "ORAL_INSTRUMENT_OR_MEANS_WITH_BI",
+      "phrase_resolution": "TONGUE_MOUTH_SAYING_AND_KNOWLEDGE_KEPT_SEPARATE"
+    },
+    {
+      "observation_id": "FWH-C2-AGG-OBS-11",
+      "verse_ref": "33:4",
+      "quran_text_ref": "TANZIL_QURAN_UTHMANI:1.1:33:4",
+      "structural_ref": "QAC_MORPHOLOGY:0.4:33:4:22:2",
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_33_4_22_2",
+      "exact_phrase": "ذَٰلِكُمْ قَوْلُكُم بِأَفْوَٰهِكُمْ وَٱللَّهُ يَقُولُ ٱلْحَقَّ",
+      "qac_lemma": ">afowa`h",
+      "qac_features": "N|MP|GEN",
+      "construction_class": "ORAL_INSTRUMENT_OR_MEANS_WITH_BI",
+      "phrase_resolution": "QAWL_TRUTH_AND_RELATIONAL_EFFECT_EXCLUDED_FROM_ROOT"
+    },
+    {
+      "observation_id": "FWH-C2-AGG-OBS-12",
+      "verse_ref": "36:65",
+      "quran_text_ref": "TANZIL_QURAN_UTHMANI:1.1:36:65",
+      "structural_ref": "QAC_MORPHOLOGY:0.4:36:65:4:1",
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_36_65_4_1",
+      "exact_phrase": "ٱلْيَوْمَ نَخْتِمُ عَلَىٰٓ أَفْوَٰهِهِمْ وَتُكَلِّمُنَآ أَيْدِيهِمْ وَتَشْهَدُ أَرْجُلُهُم",
+      "qac_lemma": ">afowa`h",
+      "qac_features": "N|MP|GEN",
+      "construction_class": "SEALED_BODY_PART",
+      "phrase_resolution": "BODY_PART_LEXEME_STRONGLY_SUPPORTED; SEALING_AND_SPEECH_EXCLUDED_FROM_ROOT"
+    },
+    {
+      "observation_id": "FWH-C2-AGG-OBS-13",
+      "verse_ref": "61:8",
+      "quran_text_ref": "TANZIL_QURAN_UTHMANI:1.1:61:8",
+      "structural_ref": "QAC_MORPHOLOGY:0.4:61:8:5:2",
+      "structural_token_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_61_8_5_2",
+      "exact_phrase": "يُرِيدُونَ لِيُطْفِـُٔوا۟ نُورَ ٱللَّهِ بِأَفْوَٰهِهِمْ",
+      "qac_lemma": ">afowa`h",
+      "qac_features": "N|MP|GEN",
+      "construction_class": "EXTINGUISHING_ATTEMPT_WITH_BI_HARD_PAIR",
+      "phrase_resolution": "BODY_PART_LEXEME_SURVIVES; PARALLEL_ADDS_NO_ROOT_DISCRIMINATOR"
+    }
+  ],
+  "six_pressure_cases": [
+    {
+      "test_id": "FWH-C2-PC-01",
+      "refs": [
+        "13:14",
+        "13:14:18:1"
+      ],
+      "pressure": "اختزال fwh في الكلام أو التعبير الخارجي يجب أن يفسر الفم الجسدي في علاقة اليدين والماء والبلوغ دون استيراد الكلام.",
+      "producer_candidate_result": "SURVIVES_AS_BODILY_OR_BOUNDARY_DESCRIPTION",
+      "aggregate_result": "SPEECH_ONLY_REJECTED; LEXEME_SUPPORTED; ROOT_CONCEPT_NOT_PROVEN"
+    },
+    {
+      "test_id": "FWH-C2-PC-02",
+      "refs": [
+        "14:9",
+        "14:9:24:1"
+      ],
+      "pressure": "علاقة الأيدي بالأفواه مع «في» تضغط كل تعريف غير جسدي، مع بقاء هيئة الحركة غير مصرحة.",
+      "producer_candidate_result": "SURVIVES_WITH_LOCAL_ACTION_UNRESOLVED",
+      "aggregate_result": "BODILY_LEXEME_SUPPORTED; CONTAINMENT_ATTRIBUTED_TO_CONSTRUCTION; ROOT_CONCEPT_UNRESOLVED"
+    },
+    {
+      "test_id": "FWH-C2-PC-03",
+      "refs": [
+        "36:65",
+        "36:65:4:1"
+      ],
+      "pressure": "الختم على الأفواه مع كلام الأيدي وشهادة الأرجل يختبر مساواة الفم بالكلام.",
+      "producer_candidate_result": "SURVIVES_AND_SPEECH_IDENTITY_REJECTED",
+      "aggregate_result": "BODY_PART_LEXEME_STRONGLY_SUPPORTED; SEALING_AND_FUNCTION_CONTEXTUAL; ROOT_NOT_DISCRIMINATED"
+    },
+    {
+      "test_id": "FWH-C2-PC-04",
+      "refs": [
+        "3:118",
+        "3:118:19:1"
+      ],
+      "pressure": "ظهور البغضاء من الأفواه يضغط تعريفا ماديا ضيقا لا يسمح بدور المصدر التركيبي.",
+      "producer_candidate_result": "SURVIVES_WITH_CONTEXT_BOUNDARY",
+      "aggregate_result": "LEXEME_SURVIVES_VIA_MIN_SOURCE_CONSTRUCTION; HATRED_AND_MANIFESTATION_EXCLUDED_FROM_ROOT"
+    },
+    {
+      "test_id": "FWH-C2-PC-05",
+      "refs": [
+        "18:5",
+        "18:5:12:1"
+      ],
+      "pressure": "خروج كلمة من الأفواه وذكر القول مستقلا يختبران مساواة الفم بالكلمة أو الكلام.",
+      "producer_candidate_result": "SURVIVES_WITH_LAYER_BOUNDARY",
+      "aggregate_result": "BODILY_LEXEME_SURVIVES; WORD_SPEECH_EXIT_AND_FALSEHOOD_REMAIN_SEPARATE"
+    },
+    {
+      "test_id": "FWH-C2-PC-06",
+      "refs": [
+        "9:32",
+        "9:32:6:2",
+        "61:8",
+        "61:8:5:2"
+      ],
+      "pressure": "بناء الإطفاء بالأفواه هو أقوى استعمال غير حرفي ظاهرا ولا يحدد إن كانت الوسيلة نفخا أو قولا أو علاقة مجازية أخرى.",
+      "producer_candidate_result": "SURVIVES_AT_GENERIC_BOUNDARY_OR_INSTRUMENT_LEVEL",
+      "aggregate_result": "LEXEME_SURVIVES; LOCAL_MECHANISM_UNRESOLVED; GENERIC_ROOT_ABSTRACTION_NOT_DISCRIMINATED"
+    }
+  ],
+  "repository_observation_payloads": [
+    {
+      "occurrence_ref": "3:118:19:1",
+      "form": "ROOT:fwh؛ form=N؛ lemma=>afowa`h؛ MP|GEN؛ attribution_status=CONFIRMED.",
+      "syntax": "«مِنْ أَفْوَاهِهِمْ» يعيّن جهة المصدر لما بدا.",
+      "participant_roles": "الأفواه تبقى اسما لعضو جسدي يضاف إلى أصحاب الضمير.",
+      "local_context": "البغضاء هي الظاهرة، والصدور موضع المقابلة بما يخفي؛ لا يحمل fwh البغضاء أو الخفاء. يدعم المفردة الجسدية في بناء المصدر، لكنه لا يميز نواة جذرية مجردة.",
+      "unresolved_ambiguity": "نوع حامل ظهور البغضاء وقصد إظهاره غير محسومين."
+    },
+    {
+      "occurrence_ref": "3:167:25:2",
+      "form": "ROOT:fwh؛ form=N؛ lemma=>afowa`h؛ MP|GEN؛ attribution_status=CONFIRMED.",
+      "syntax": "الباء تربط الفم بأداء القول بوصفه وسيلة أو آلة.",
+      "participant_roles": "الأفواه تسمّي العضو الجسدي لأصحاب القلوب المذكورة.",
+      "local_context": "القول ومضمونه وعدم وجوده في القلوب والكتمان عناصر مستقلة عن fwh. يفند مساواة الفم بالكذب أو مخالفة القلب، ولا يفصل معنى الجذر عن معنى المفردة.",
+      "unresolved_ambiguity": "التوصيف الأدق للباء بين الآلية والملابسة لا يؤثر في الحد الطبقي."
+    },
+    {
+      "occurrence_ref": "5:41:13:2",
+      "form": "ROOT:fwh؛ form=N؛ lemma=>afowa`h؛ MP|GEN؛ attribution_status=CONFIRMED.",
+      "syntax": "الباء تجعل الأفواه وسيلة لقول «آمنا».",
+      "participant_roles": "الأفواه هي العضو الجسدي الذي يقع به الأداء المنطوق.",
+      "local_context": "الإيمان المنطوق ونفي إيمان القلوب حكمان سياقيان لا مساهمة جذرية. يثبت فصلا بين العضو ومضمون القول، من غير دليل اشتقاقي لنواة الجذر.",
+      "unresolved_ambiguity": "القصد وكيفية التلفظ خارجان عن المادة المباشرة."
+    },
+    {
+      "occurrence_ref": "9:8:12:2",
+      "form": "ROOT:fwh؛ form=N؛ lemma=>afowa`h؛ MP|GEN؛ attribution_status=CONFIRMED.",
+      "syntax": "الباء تسند إلى الأفواه دور الوسيلة في «يرضونكم».",
+      "participant_roles": "الأفواه تبقى العضو الجسدي المضاف إلى فاعلي الإرضاء.",
+      "local_context": "الإرضاء وإباء القلوب وعدم التطابق تحددها الجملة لا لفظ الأفواه. ينفي إدخال الخداع أو الرفض في fwh، ولا يحوّل الوسيلة التركيبية إلى Root Concept.",
+      "unresolved_ambiguity": "المادة القولية المستعملة في الإرضاء غير مصرّح بها."
+    },
+    {
+      "occurrence_ref": "9:30:13:2",
+      "form": "ROOT:fwh؛ form=N؛ lemma=>afowa`h؛ MP|GEN؛ attribution_status=CONFIRMED.",
+      "syntax": "الباء تقيد «قولهم» بالآلة أو الوسيلة، والقول نفسه مسمى مستقلا.",
+      "participant_roles": "الأفواه تسمّي الوسيلة الجسدية لصدور القول.",
+      "local_context": "مضمون القول ومضاهاته والحكم عليه تأتي من السياق. التجاور مع «قولهم» يفند تعريف fwh بالقول نفسه، لكنه لا يعزل نواة مجردة.",
+      "unresolved_ambiguity": "لا يحسم الموضع لماذا ذُكر الفم مع القول فوق القدر الآمن من الآلية الظاهرة."
+    },
+    {
+      "occurrence_ref": "9:32:6:2",
+      "form": "ROOT:fwh؛ form=N؛ lemma=>afowa`h؛ MP|GEN؛ attribution_status=CONFIRMED.",
+      "syntax": "الباء تجعل الأفواه وسيلة في محاولة الإطفاء.",
+      "participant_roles": "قراءة الفم الجسدي تظل ممكنة كطرف وسائطي في البناء.",
+      "local_context": "الإطفاء والنور وإتمامه وفشل المحاولة من المسند والخطاب، لا من fwh. هذا أقوى ضغط على التفسير الجسدي المكتفي بذاته؛ بقاء المفردة لا يثبت أن «المنفذ» نواة جذرية.",
+      "unresolved_ambiguity": "لا يميز النص المسموح النفخ من القول أو من آلية مجازية أخرى."
+    },
+    {
+      "occurrence_ref": "13:14:18:1",
+      "form": "ROOT:fwh؛ form=N؛ lemma=faA؛ MS|NOM؛ attribution_status=CONFIRMED.",
+      "syntax": "الفم طرف في علاقة بلوغ؛ الفعل والسياق يحددان الغاية وفشل الوسيلة.",
+      "participant_roles": "فاه عضو جسدي مفرد داخل صورة اليدين والماء.",
+      "local_context": "الدعاء والاستجابة والضلال تخص بنية التشبيه وخطابه ولا تعرف fwh. يدحض منافس القول فقط ويدعم LEXEME الجسدية بقوة، لكنه يظل شاهدا من الأسرة الاسمية نفسها.",
+      "unresolved_ambiguity": "تفاصيل مرجع الضمائر واتجاه البلوغ محلية ولا تمنح تجريدا جذريا مستقلا."
+    },
+    {
+      "occurrence_ref": "14:9:24:1",
+      "form": "ROOT:fwh؛ form=N؛ lemma=>afowa`h؛ MP|GEN؛ attribution_status=CONFIRMED.",
+      "syntax": "«فِي أَفْوَاهِهِمْ» يثبت علاقة احتواء أو جهة مكانية لرد الأيدي.",
+      "participant_roles": "الأيدي والأفواه مشاركان جسديان متميزان.",
+      "local_context": "القول اللاحق والكفر والشك لا يدخل شيء منها في fwh. يفند القول-only وoutward-only، لكنه لا يقرر أن قابلية الاحتواء جزء من الجذر بدلا من المفردة والبناء.",
+      "unresolved_ambiguity": "هيئة رد الأيدي وغرضها وقوتها الخطابية غير محسومة."
+    },
+    {
+      "occurrence_ref": "18:5:12:1",
+      "form": "ROOT:fwh؛ form=N؛ lemma=>afowa`h؛ MP|GEN؛ attribution_status=CONFIRMED.",
+      "syntax": "«تَخْرُجُ مِنْ أَفْوَاهِهِمْ» يفصل الخارج والفعل وحرف المصدر عن الاسم.",
+      "participant_roles": "الأفواه هي المصدر الجسدي للكلمة الخارجة.",
+      "local_context": "الكلمة وكبرها والكذب ونفي العلم محددات مستقلة. يدعم ثبات المفردة ويمنع إدخال الكلام أو الكذب في الجذر؛ اتجاه الخروج ناتج عن البناء.",
+      "unresolved_ambiguity": "لا ينتج الموضع بمفرده مقابلة اشتقاقية تفصل الجذر عن lexeme."
+    },
+    {
+      "occurrence_ref": "24:15:5:2",
+      "form": "ROOT:fwh؛ form=N؛ lemma=>afowa`h؛ MP|GEN؛ attribution_status=CONFIRMED.",
+      "syntax": "الباء تسند للأفواه دور وسيلة القول، كما تسند للألسنة دورا في التلقي.",
+      "participant_roles": "الأفواه والألسنة اسمان جسديان منفصلان في الجملة.",
+      "local_context": "التلقي والقول وغياب العلم والاستخفاف والتقويم عناصر سياقية. يمنع دمج الفم باللسان أو القول، ولا يوفر corpus المقيد تفريدا جذريا بينهما.",
+      "unresolved_ambiguity": "العلاقة التفريقية الدقيقة بين اللسان والفم غير محسومة ضمن المدخلات الحالية."
+    },
+    {
+      "occurrence_ref": "33:4:22:2",
+      "form": "ROOT:fwh؛ form=N؛ lemma=>afowa`h؛ MP|GEN؛ attribution_status=CONFIRMED.",
+      "syntax": "الباء تقيد «قولكم» بالوسيلة ولا تجعل الاسم هو القول.",
+      "participant_roles": "الأفواه وسيلة جسدية للقول البشري المسمى مستقلا.",
+      "local_context": "أثر التسميات والعلاقات والحق في القول المقابل أحكام خطابية وقانونية محلية. يثبت حد المفردة/القول، ولا يثبت تجريد منفذ حدّي على مستوى الجذر.",
+      "unresolved_ambiguity": "لا يعمم بطلان القول المعين على كل قول بالفم."
+    },
+    {
+      "occurrence_ref": "36:65:4:1",
+      "form": "ROOT:fwh؛ form=N؛ lemma=>afowa`h؛ MP|GEN؛ attribution_status=CONFIRMED.",
+      "syntax": "الختم مع «على» يجعل الأفواه هدفا للفعل، بينما الكلام والشهادة يسندان إلى أعضاء أخرى.",
+      "participant_roles": "الأفواه والأيدي والأرجل أعضاء جسدية منفصلة مسماة.",
+      "local_context": "المنع من الكلام والكلام والشهادة والكسب تحددها الأفعال والخطاب. يدحض مساواة الفم بالكلام ويدعم lexeme الجسدية؛ لا يثبت أن المنع أو الحدية نواة fwh.",
+      "unresolved_ambiguity": "كيفية الختم وكيفية كلام الأعضاء خارج دعوى المفردة والجذر."
+    },
+    {
+      "occurrence_ref": "61:8:5:2",
+      "form": "ROOT:fwh؛ form=N؛ lemma=>afowa`h؛ MP|GEN؛ attribution_status=CONFIRMED.",
+      "syntax": "الباء تسند للأفواه محاولة الإطفاء في موازاة 9:32.",
+      "participant_roles": "قراءة الفم الجسدي تبقى صالحة في دور الوسيلة.",
+      "local_context": "النور والإطفاء وإتمام النور وفشل المعارضة عناصر سياقية. التكرار يقوي انتظام البناء الوسائطي ولا يضيف مشتقا أو مفردة مستقلة تعزل Root Concept.",
+      "unresolved_ambiguity": "الموازاة لا تحسم النفخ أو القول أو آلية أخرى، ولا تحسم تجريد الجذر."
+    }
+  ],
+  "repository_payload_projection": {
+    "contract_type": "ROOT_CONCEPT",
+    "research_state": "UNRESOLVED",
+    "claim_scope": "UNIVERSAL",
+    "sampling_basis": null,
+    "result_strength": "UNRESOLVED",
+    "preferred_conclusion": null,
+    "root_concept": null,
+    "plain_explanation": "تثبت المجموعة الكاملة أن faA و>afowa`h مفردتا فم جسديتان في المواضع الثلاثة عشر، لكنها لا تحتوي مشتقا أو صيغة مغايرة تفصل معنى الجذر المجرد عن معنى هذه الأسرة الاسمية. لذلك لا يختار الحكم بين الفم الجسدي كنواة، أو منفذ فموي مجرد، أو عدم إمكان استرداد مساهمة جذرية مستقلة من corpus الحالي.",
+    "semantic_boundary": "تبقى نتيجة الفم الجسدي في طبقة LEXEME. لا يُنسب إلى ROOT:fwh الكلام أو القول أو الصدق أو الكذب أو موافقة القلب أو مخالفته أو النفخ أو الإطفاء أو الخروج أو الاحتواء أو البلوغ أو الختم أو الآلية؛ هذه من المفردة أو الصيغة أو التركيب أو السياق بحسب الموضع.",
+    "layer_attribution": {
+      "root": "UNRESOLVED؛ المفتاح البنيوي fwh جامع للصفوف، ولا تثبت له مساهمة دلالية مستقلة عن مفردتي الاسم المرصودتين.",
+      "derivation_inflection": "المفرد والجمع والحالة الإعرابية والضمائر فروق اسمية؛ لا تحمل دليلا مستقلا على النواة.",
+      "lexeme": "faA و>afowa`h يدلان على الفم الجسدي في 13/13 ضمن المجموعة الحالية، بقوة STRONG على مستوى LEXEME فقط.",
+      "form": "كل الصفوف form=N؛ غياب صيغة أو مشتق مستقل يمنع عزل أثر الجذر.",
+      "construction": "من والباء وفي وعلى وعلاقة البلوغ تسند أدوار المصدر والوسيلة والمحل والهدف والغاية ولا تعرّف الجذر.",
+      "local_form_roles": "تتوزع المفردة بين مصدر ووسيلة وطرف بلوغ ومحل وهدف بحسب البناء.",
+      "context": "مضمون القول وتقويمه، القلب والبغضاء والعلم والنور والإطفاء والختم والكلام والشهادة مساهمات سياقية.",
+      "local_meaning": "آلية الإطفاء وهيئة رد الأيدي وحامل ظهور البغضاء تبقى غير محسومة حيث لا يصرح النص بها.",
+      "final_statement": "PREFERRED/STRONG للـLEXEME الجسدية لا يساوي PREFERRED للـROOT_CONCEPT؛ النتيجة الجذرية الحالية UNRESOLVED."
+    },
+    "supporting_evidence_refs": [
+      "token:3:118:19:1",
+      "token:3:167:25:2",
+      "token:5:41:13:2",
+      "token:9:8:12:2",
+      "token:9:30:13:2",
+      "token:9:32:6:2",
+      "token:13:14:18:1",
+      "token:14:9:24:1",
+      "token:18:5:12:1",
+      "token:24:15:5:2",
+      "token:33:4:22:2",
+      "token:36:65:4:1",
+      "token:61:8:5:2"
+    ],
+    "counterevidence_refs": [
+      "token:9:32:6:2",
+      "token:14:9:24:1",
+      "token:61:8:5:2"
+    ],
+    "unresolved_cases": [
+      "هل الجسدانية نفسها مساهمة ROOT:fwh أم معنى الأسرة الاسمية faA و>afowa`h فقط؟",
+      "هل «منفذ فموي» أو «واجهة بين الداخل والخارج» تجريد مميز قابل للدحض أم إعادة صياغة عامة للمفردة؟",
+      "هل توجد مساهمة جذرية قابلة للاسترداد مستقلة من المفردة في corpus قرآني لا يقدم إلا form=N لهذه الأسرة؟",
+      "لا تحسم 9:32 و61:8 هل آلية الإطفاء قول أو نفخ أو غير ذلك.",
+      "لا تحسم 14:9 هيئة رد الأيدي في الأفواه وغرضها."
+    ],
+    "hard_cases": [
+      "token:9:32:6:2 وtoken:61:8:5:2 — المفردة الجسدية تبقى ممكنة في دور الوسيلة، لكن الآلية والتجريد الجذري غير مميزين.",
+      "token:14:9:24:1 — الاحتواء الجسدي ظاهر، أما الهيئة والغرض فغير محسومين ولا يجوز إدخالهما في الجذر.",
+      "token:3:118:19:1 — بنية المصدر ظاهرة، أما حامل ظهور البغضاء فغير مصرّح.",
+      "token:24:15:5:2 — الفم واللسان والقول والتلقي متجاورة ويجب إبقاؤها طبقات منفصلة."
+    ],
+    "strongest_counterexample": "جميع المواضع الثلاثة عشر أسماء من أسرة معجمية واحدة؛ وحتى 9:32 و61:8، وهما أشد المواضع ضغطا، يبقيان الفم الجسدي صالحا عبر بناء الباء من دون أن يميزا الفم المحسوس من تجريد «منفذ فموي» على مستوى الجذر.",
+    "strongest_competitor": "أن يساهم ROOT:fwh بتجريد «منفذ أو واجهة فموية بين الداخل والخارج» بدلا من الجسدانية المعجمية؛ corpus الحالي لا يميزه من مجرد إعادة صياغة lexeme ولا من عدم وجود نواة مستقلة قابلة للاسترداد.",
+    "rejection_condition": null,
+    "falsification_status": "NOT_REQUIRED",
+    "reopen_conditions": [
+      "إدخال موضع fwh مؤكد جديد من مفردة أو مشتق أو صيغة تختلف حقيقة عن faA و>afowa`h، لا مجرد تصريف أو تكرار.",
+      "وجود مقابلة قرآنية داخلية تنتج تنبؤا قابلا للدحض يميز مساهمة الجذر من المفردة والصيغة والتركيب والسياق.",
+      "تغير snapshot الإنتاجي أو QAC hash أو extraction_version أو attribution_status بما يغير المجموعة ذات المواضع الثلاثة عشر.",
+      "تعديل منهجي حاكم يقدم طريقة مقبولة غير دائرية لعزل Root Concept من corpus أحادي الأسرة المعجمية.",
+      "تحليل مصدري صالح يثبت أن أحد المواضع لا يحتفظ بمعنى الفم الجسدي بعد فصل البناء والسياق."
+    ]
+  },
+  "validation": {
+    "repository_schema": "backend.domain.schemas.ResearchJudgmentCreate",
+    "repository_observation_schema": "backend.domain.schemas.ObservationArtifactCreate",
+    "schema_mode": "PYDANTIC_MODEL_VALIDATE_WITH_EXTRA_FORBID",
+    "schema_validation": "PASSED",
+    "repository_observation_schema_validation": "PASSED_13_OF_13_ALL_SIX_FIELDS_NONBLANK",
+    "repository_observation_exact_ref_validation": "PASSED_EQUAL_TO_OBSERVATIONS_PHRASE_AUDIT_AND_CURRENT_DB_FWH_SET",
+    "repository_payload_exact_field_set": [
+      "claim_scope",
+      "contract_type",
+      "counterevidence_refs",
+      "falsification_status",
+      "hard_cases",
+      "layer_attribution",
+      "plain_explanation",
+      "preferred_conclusion",
+      "rejection_condition",
+      "reopen_conditions",
+      "research_state",
+      "result_strength",
+      "root_concept",
+      "sampling_basis",
+      "semantic_boundary",
+      "strongest_competitor",
+      "strongest_counterexample",
+      "supporting_evidence_refs",
+      "unresolved_cases"
+    ],
+    "exact_set_validation": "PASSED_13_OBSERVATIONS_13_PHRASE_ROWS_6_PRESSURE_CASES_AND_EXACT_SCHEMA_FIELDS",
+    "service_evaluation": "NOT_RUN_TO_PRESERVE_PROHIBITION_ON_PRIOR_OBSERVATION_ACCESS",
+    "database_write": "NOT_PERFORMED"
+  },
+  "integrity": {
+    "hash_algorithm": "SHA-256",
+    "canonical_section_serialization": "UTF-8; JSON sort_keys=true; separators=(',',':'); ensure_ascii=false",
+    "input_hashes": {
+      "AGENTS.md": "0512fe7483999b38a2fcd0afd018fe8481e1a26964c6d805d56564630e556156",
+      "AUTHORITY_MAP.md": "6439e10895f295401f6fb89bd90e18e08a2a86e2ca3c49b435704d20014499f6",
+      "SIMPLIFIED_AI_AUTHORITY_AND_GOVERNANCE_CONTRACT.md": "7e26cc9f09eec183947fc6430fc5c3dfcf972fb1cb47d08039e6ae06ab7c1d30",
+      "docs/canonical/LISAN_PLATFORM_CANONICAL_IMPLEMENTATION_REFERENCE.md": "adf86e1dddf0d97d540315ce50bacfb922e1398ac1d74bc0da7c341bf7ad4086",
+      "docs/canonical/LISAN_PURITY_AND_STRUCTURAL_EVIDENCE_CONTRACT.md": "afbdb9d6c542fd1e562a6b10637d50d88443ea8610260224f39022af2d8fbc0b",
+      "docs/canonical/ADMISSION_TANZIL.md": "d3e1b7e046a2917be1df417c2b3afa42483e35e970144c645e07062f4666bec6",
+      "docs/canonical/ADMISSION_QAC.md": "4a3ffe025a0fae1740985a7cc2ba66373b0bd63e41b6df1640752f4e0660e626",
+      "skills/lisan-semantic-extraction/SKILL.md": "01784170cac4e715c1477cb6a04a2c34b21c4bdb91705aa1eb6b2a896efcedbd",
+      "backend/domain/schemas.py": "071d1ba9f40d98c477425d24848d78bdca1e2f34ceeed183a4c4d17b74d392fb",
+      "backend/domain/services/research_judgment.py": "b6c345c7180237b9d98ca85d98d215ae642f510f7394c47233571f8227cc9689",
+      "data/corpus/tanzil/tanzil-uthmani-1.1.txt": "ac0724796cbbda0f4801470fbbd11d0f3c5802067bae0493466d0128b0c667af",
+      "data/corpus/tanzil/quran-verse-index-v1.0.json": "0d0a2273e82ebb0d9848ccbf831f1bb297c0fb255413c5aeb299bbfaf2bbc967",
+      "data/corpus/qac/quranic-corpus-morphology-0.4.txt": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+      "docs/evidence/requalification/fwh_cycle2_panel/producer.json": "d355cbedca35a474f8790857d638ec1f5e378d1d5e6cc2c96340cadb5f9fda12",
+      "docs/evidence/requalification/fwh_cycle2_panel/adversary.json": "f65710603d3ab46bc04e1e33893ea7c22ea167bb36512a030b72aa771e9d588a",
+      "lisanapp.db_before_and_after_read": "8920d27c3fcdd1a832f091a78a2bad97ed1587b1ea6b9b274416b587d95905ba"
+    },
+    "section_hashes": {
+      "panel_disposition_sha256": "4fc71f53e6569d4bb6e34e9f118044b19e3b13bd9294808f043f9ece766919ca",
+      "observations_sha256": "8715d1745a0989f8dbdd79fb0fbb157d1df0758502a7608f7633fffad0eb9eb5",
+      "phrase_audit_sha256": "6aae9162ae462b833d6994f7e25fe6ef5eb24985654b3be9703c211a3a02134c",
+      "six_pressure_cases_sha256": "da356c05c39c99ba78707fc9ff6ee6b5c2bbed6e7d2b7eca7793b6b811699371",
+      "repository_observation_payloads_sha256": "5ac4d822957ad976af8575fd6f5dca7727e654c06cecacb988e2789e4c7ea21c",
+      "repository_payload_projection_sha256": "ef28cd3ed8d91aba84e3c0c8355749dff72ded654322c8e1bbb59acdcfc3b1cc"
+    }
+  },
+  "access_log": [
+    {
+      "sequence": 1,
+      "resource": "CURRENT_OWNER_INSTRUCTION_AND_AGENTS_POLICY",
+      "access": "READ",
+      "purpose": "تثبيت مهمة aggregator والمحظورات وحدود الملف الوحيد المسموح",
+      "result": "AUTHORIZED_BOUNDARY_APPLIED"
+    },
+    {
+      "sequence": 2,
+      "resource": "skill://lisan-quran/SKILL.md; current repository governance and skills/lisan-semantic-extraction/SKILL.md",
+      "access": "READ_AND_SHA256_WHERE_REPOSITORY_BACKED",
+      "purpose": "تطبيق corpus-first والفصل الطبقي وحدود Root Concept وحالة UNRESOLVED",
+      "result": "CURRENT_GOVERNANCE_AND_METHOD_BOUND"
+    },
+    {
+      "sequence": 3,
+      "resource": "docs/evidence/requalification/fwh_cycle2_panel/producer.json; docs/evidence/requalification/fwh_cycle2_panel/adversary.json",
+      "access": "READ_AND_SHA256",
+      "purpose": "حل تعارض PREFERRED/MODERATE للجذر مع LEXEME PREFERRED/STRONG وROOT_CONCEPT UNRESOLVED",
+      "result": "BOTH_PANEL_INPUTS_AGGREGATED"
+    },
+    {
+      "sequence": 4,
+      "resource": "lisanapp.db/corpus_snapshots; research_runs; methodology_revisions; structural_tokens; corpus_occurrences",
+      "access": "SQLITE_READONLY_EXACT_FWH_FILTERS",
+      "purpose": "إعادة قراءة snapshot الإنتاجي وrun والمنهج وأحدث 13 صفا مؤكدا ونصوص آياتها",
+      "result": "13_OF_13_CURRENT_CONFIRMED_WORD_REFS_RESOLVED"
+    },
+    {
+      "sequence": 5,
+      "resource": "data/corpus/tanzil/tanzil-uthmani-1.1.txt; data/corpus/qac/quranic-corpus-morphology-0.4.txt",
+      "access": "SHA256_AND_EXACT_FWH_QAC_SEGMENT_READ",
+      "purpose": "ربط corpus والسمات الاسمية والlemma للمواضع الثلاثة عشر بالمصادر الإنتاجية",
+      "result": "TANZIL_AND_QAC_HASHES_MATCH_ADMISSION; 13_QAC_SEGMENTS_MATCH"
+    },
+    {
+      "sequence": 6,
+      "resource": "backend/domain/schemas.py; backend/domain/services/research_judgment.py",
+      "access": "READ_AND_SHA256_COMPATIBILITY_ONLY",
+      "purpose": "إنتاج exact ResearchJudgmentCreate projection وتحديد validation الآمن دون DB write أو قراءة prior observations",
+      "result": "EXACT_SCHEMA_FIELD_SET_RESOLVED"
+    },
+    {
+      "sequence": 7,
+      "resource": "WORKTREE_AND_DIRECTORY_METADATA",
+      "access": "METADATA_ONLY_NO_CONTENT",
+      "purpose": "التحقق من وجود target directory وحفظ أعمال المالك غير ذات الصلة",
+      "result": "NO_OTHER_SEMANTIC_ARTIFACT_CONTENT_ACCESSED"
+    },
+    {
+      "sequence": 8,
+      "resource": "FORBIDDEN_SEMANTIC_CLASSES",
+      "access": "NOT_ACCESSED",
+      "purpose": "حفظ استقلال aggregator cycle 2",
+      "result": "NO_PRIOR_CLAIMS_NO_PRIOR_OBSERVATIONS_NO_BATCH07_NO_PROJECT_STATE_NO_OTHER_ROOT_ARTIFACTS_NO_EXTERNAL_SEMANTICS_NO_WEB_NO_MEMORY"
+    },
+    {
+      "sequence": 9,
+      "resource": "aggregator.json observations; backend.domain.schemas.ObservationArtifactCreate; current exact fwh structural set",
+      "access": "READ_MAP_VALIDATE_NO_DB_WRITE",
+      "purpose": "إسقاط الملاحظات الغنية الثلاث عشرة إلى payloads المستودع ذات الحقول الستة دون فقد دلالي والتحقق من schema وتساوي المراجع",
+      "result": "13_OF_13_SCHEMA_VALID_ALL_FIELDS_NONBLANK_EXACT_REFS_EQUAL"
+    }
+  ]
+}

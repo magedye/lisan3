@@ -1556,3 +1556,43 @@ the frozen claim. Launch a fresh blind read-only Sol/xhigh review of exact
   competitor alive.
 - No Batch 07 review row was needed, no claim/review verdict changed, and no
   file or DB write occurred during comparison.
+
+## ESw / fwh / glm Completeness Remediation Checkpoint (2026-09-13)
+
+- The form-only observation defect was confirmed in all three Stage B positive
+  runs: ESw 0/12, fwh 0/13, glm 0/13 semantic-detail rows. Their earlier
+  `VERIFY_AT_SCOPE` delegated decisions were therefore superseded by
+  `RETURN_FOR_CORRECTION_EXECUTED`; the old claims and decision artifact remain
+  immutable history.
+- Each root received a fresh Quran-only producer, a fresh purity/overclaim
+  adversary, and a fresh aggregator, initially blind to prior claims and Batch 07.
+  All three aggregates separate strong/bounded lexeme findings from bare-root
+  attribution and conclude `UNRESOLVED/UNRESOLVED/UNIVERSAL` at ROOT_CONCEPT.
+- New successors with substantive exact-set observations:
+  - ESw: `run_e783b274`, 12/12, `jud_da40a233@1`, claim SHA-256
+    `fde44a5e15e9b7d8a661f5ecaa9b3ccd5e8120b830d2c9c4d63915b785c053a0`.
+  - fwh: `run_aed26ed4`, 13/13, `jud_92e71ead@1`, claim SHA-256
+    `daa2a5a8e3121c4f0ff8926d0fe02d7071d4fe2422af22e0c36c9eba74e70591`.
+  - glm: `run_a9434a53`, 13/13, `jud_da6a8e4c@1`, claim SHA-256
+    `08ce67b174bf26db74b96f1e528c0eb75414bea8bb62988b0488f33fc3a51fcb`.
+- Each new run is `ESTABLISHED/CLEAN`; H1/H2/C0 were frozen before observation
+  persistence; every observation has nonblank form, syntax/construction,
+  participant/layer, Quran-local context, and ambiguity treatment. Host-derived
+  exact/deep completeness is true for all three.
+- A disposable-copy dry run first caught and corrected ESw's inadmissible
+  `word:` evidence prefix to repository-native `token:`. The repeated dry run
+  passed fully; live integrity is `ok`. Retained pre-write backup hash
+  `8920d27c...05ba`; post-write DB hash `f34436e2...febe`.
+- Counts: 11 ResearchRuns, 555 observations, 11 SemanticClaims, 0
+  VerificationRecords, 0 ACCEPTED. Detailed evidence and complete panel outputs:
+  `docs/evidence/requalification/positive_root_corrective_cycle_2.json` and
+  `docs/evidence/requalification/{esw,fwh,glm}_cycle2_panel/*.json`.
+- Post-write focused governance/runtime verification: 37 passed (exit 0).
+- No Batch 07 comparison has occurred for these successors. Batch 08 remains
+  unauthorized.
+
+## Current Exact Next Action
+
+Commit/publish the three-root remediation checkpoint. Launch three fresh blind
+read-only reviews of the exact successors; freeze each verdict before historical
+Batch 07 comparison. Then perform final exact-revision delegated decisions.

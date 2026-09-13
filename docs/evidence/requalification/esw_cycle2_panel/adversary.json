@@ -1,0 +1,816 @@
+{
+  "artifact_type": "QURAN_INTERNAL_PURITY_OVERCLAIM_ADVERSARY",
+  "artifact_revision": "ESW_CYCLE2_ADVERSARY_V1_2026_09_13",
+  "panel": "esw_cycle2_panel",
+  "role": "ADVERSARY",
+  "root": {
+    "buckwalter": "ESw",
+    "arabic_spaced": "ع ص و",
+    "target_contract": "ROOT_CONCEPT"
+  },
+  "authority_and_scope": {
+    "research_state": "UNRESOLVED",
+    "canonical_state": "NOT_CANONICAL",
+    "result_strength": "UNRESOLVED",
+    "claim_scope": "UNIVERSAL",
+    "scope_boundary": "The root-wide question was challenged only against the complete predicate-defined set of 12 production-snapshot structural_tokens rows where root=ESw and attribution_status=CONFIRMED, joined to their exact production Tanzil corpus_occurrences rows.",
+    "preferred_conclusion": null,
+    "independent_review_claimed": false,
+    "release_or_owner_acceptance_claimed": false,
+    "falsification_status": "NOT_REQUIRED",
+    "falsification_note": "No preferred important judgment is issued. The adversarial attempt was completed and did not leave a qualified positive root-wide concept.",
+    "sampling_basis": "ALL_12_CONFIRMED_ESW_TOKENS_IN_PRODUCTION_ACTIVE_SNAPSHOT"
+  },
+  "source_policy": {
+    "production_snapshot_id": "snap_tanzil_1_1_ac0724796cbb",
+    "canonical_text_source": "TANZIL_QURAN_UTHMANI",
+    "canonical_text_version": "1.1",
+    "canonical_text_sha256": "ac0724796cbbda0f4801470fbbd11d0f3c5802067bae0493466d0128b0c667af",
+    "identity_index_sha256": "0d0a2273e82ebb0d9848ccbf831f1bb297c0fb255413c5aeb299bbfaf2bbc967",
+    "structural_provenance": {
+      "source_id": "QAC_MORPHOLOGY",
+      "source_version": "0.4",
+      "extraction_version": "qac-0.4-import-v1",
+      "attribution_status": "CONFIRMED",
+      "semantic_authority": "STRUCTURAL_ONLY"
+    },
+    "allowed_semantic_inputs": [
+      "Current repository governance and active semantic method",
+      "data/corpus/tanzil/tanzil-uthmani-1.1.txt",
+      "data/corpus/tanzil/quran-verse-index-v1.0.json",
+      "lisanapp.db production corpus_snapshots identity row",
+      "lisanapp.db exact CONFIRMED ESw structural_tokens rows and their joined corpus_occurrences rows"
+    ],
+    "prohibited_semantic_inputs": [
+      "Existing semantic claims or semantic prose",
+      "Existing observation artifacts",
+      "Batch07 material",
+      "PROJECT_STATE",
+      "Five-root artifacts",
+      "External semantics including dictionaries, tafsir, translations, heritage material, web content, and model memory"
+    ],
+    "semantic_inputs_used": [
+      "AUTHORITY_MAP.md",
+      "SIMPLIFIED_AI_AUTHORITY_AND_GOVERNANCE_CONTRACT.md",
+      "docs/canonical/LISAN_PLATFORM_CANONICAL_IMPLEMENTATION_REFERENCE.md",
+      "docs/canonical/LISAN_PURITY_AND_STRUCTURAL_EVIDENCE_CONTRACT.md",
+      "docs/canonical/ADMISSION_TANZIL.md",
+      "skills/lisan-semantic-extraction/SKILL.md",
+      "Current Quran-internal root-core, layer-separation, differentiation, and falsification method",
+      "Exact production Tanzil verses and exact CONFIRMED ESw structural rows listed in this artifact"
+    ],
+    "prohibited_semantic_content_read": false,
+    "setup_metadata_incident": {
+      "status": "DISCLOSED_AND_EXCLUDED_FROM_REASONING",
+      "details": "A setup-only read-only aggregate query disclosed row counts for two non-target root labels and a non-production campaign snapshot status. It disclosed no non-target token text, semantic claim, prose, observation, or five-root artifact content. Those aggregate values are not recorded or used anywhere in this artifact.",
+      "effect": "This artifact issues no preferred semantic judgment. Every substantive corpus statement below terminates only in the exact production ESw rows and canonical Tanzil bytes."
+    }
+  },
+  "coverage": {
+    "query_predicate": "corpus_snapshots.activation_status=PRODUCTION_ACTIVE AND structural_tokens.root=ESw AND structural_tokens.attribution_status=CONFIRMED",
+    "confirmed_target_rows": 12,
+    "rows_inspected": 12,
+    "unique_verse_refs": 12,
+    "raw_tanzil_row_equality_checks_passed": 12,
+    "index_coverage_verdict": "COMPLETE_FOR_EXACT_QUERY_PREDICATE",
+    "deep_analysis_coverage_claimed": false,
+    "manual_token_inspection": "12_OF_12",
+    "context_diversity_metric": "NOT_CALIBRATED",
+    "pseudoreplication_warning": "Twelve token rows are not twelve independent semantic contexts. Several rows are repeated or near-parallel narrative realizations and must not be counted as independent confirmation of a root concept."
+  },
+  "exact_ref_set": {
+    "word_refs": [
+      "2:60:7:2",
+      "7:107:2:1",
+      "7:117:6:1",
+      "7:160:14:2",
+      "20:18:3:1",
+      "20:66:6:2",
+      "26:32:2:1",
+      "26:44:3:2",
+      "26:45:3:1",
+      "26:63:6:2",
+      "27:10:2:1",
+      "28:31:3:1"
+    ],
+    "verse_refs": [
+      "2:60",
+      "7:107",
+      "7:117",
+      "7:160",
+      "20:18",
+      "20:66",
+      "26:32",
+      "26:44",
+      "26:45",
+      "26:63",
+      "27:10",
+      "28:31"
+    ],
+    "set_integrity": {
+      "word_ref_count": 12,
+      "word_refs_unique": true,
+      "verse_ref_count": 12,
+      "verse_refs_unique": true,
+      "class_partition_union_equals_word_ref_set": true,
+      "class_partition_overlaps": []
+    }
+  },
+  "surface_class_sets": [
+    {
+      "class_id": "SF_SELF_POSSESSED_SINGULAR",
+      "surfaces": ["عَصَاىَ"],
+      "word_refs": ["20:18:3:1"]
+    },
+    {
+      "class_id": "SF_SECOND_PERSON_POSSESSED_SINGULAR_UNPREFIXED",
+      "surfaces": ["عَصَاكَ"],
+      "word_refs": ["7:117:6:1", "27:10:2:1", "28:31:3:1"]
+    },
+    {
+      "class_id": "SF_SECOND_PERSON_POSSESSED_SINGULAR_BI_PREFIXED",
+      "surfaces": ["بِّعَصَاكَ"],
+      "word_refs": ["2:60:7:2", "7:160:14:2", "26:63:6:2"]
+    },
+    {
+      "class_id": "SF_THIRD_PERSON_POSSESSED_SINGULAR",
+      "surfaces": ["عَصَاهُ"],
+      "word_refs": ["7:107:2:1", "26:32:2:1", "26:45:3:1"]
+    },
+    {
+      "class_id": "SF_THIRD_PERSON_PLURAL_POSSESSED_NOMINATIVE_SURFACE",
+      "surfaces": ["وَعِصِيُّهُمْ"],
+      "word_refs": ["20:66:6:2"]
+    },
+    {
+      "class_id": "SF_THIRD_PERSON_PLURAL_POSSESSED_ACCUSATIVE_SURFACE",
+      "surfaces": ["وَعِصِيَّهُمْ"],
+      "word_refs": ["26:44:3:2"]
+    }
+  ],
+  "construction_class_sets": [
+    {
+      "class_id": "K1_LOCAL_SELF_DESCRIPTION_AND_LISTED_USES",
+      "word_refs": ["20:18:3:1"],
+      "verse_refs": ["20:18"],
+      "observable_anchor": "هِىَ عَصَاىَ أَتَوَكَّؤُا۟ عَلَيْهَا وَأَهُشُّ بِهَا عَلَىٰ غَنَمِى وَلِىَ فِيهَا مَـَٔارِبُ أُخْرَىٰ",
+      "root_level_limit": "The listed uses and the open phrase مَـَٔارِبُ أُخْرَىٰ are local predications; they do not establish an exhaustive root essence."
+    },
+    {
+      "class_id": "K2_BI_MARKED_STRIKE_AGAINST_STONE",
+      "word_refs": ["2:60:7:2", "7:160:14:2"],
+      "verse_refs": ["2:60", "7:160"],
+      "observable_anchors": ["ٱضْرِب بِّعَصَاكَ ٱلْحَجَرَ", "أَنِ ٱضْرِب بِّعَصَاكَ ٱلْحَجَرَ"],
+      "root_level_limit": "The bi-prefix, strike predicate, target, and following result are constructional or contextual material, not automatically root contribution."
+    },
+    {
+      "class_id": "K3_BI_MARKED_STRIKE_AGAINST_SEA",
+      "word_refs": ["26:63:6:2"],
+      "verse_refs": ["26:63"],
+      "observable_anchor": "أَنِ ٱضْرِب بِّعَصَاكَ ٱلْبَحْرَ فَٱنفَلَقَ",
+      "root_level_limit": "The target and following result differ from the stone class and remain local to the command-result sequence."
+    },
+    {
+      "class_id": "K4_CAST_SINGULAR_THEN_SNAKE_PREDICATION",
+      "word_refs": ["7:107:2:1", "26:32:2:1"],
+      "verse_refs": ["7:107", "26:32"],
+      "observable_anchors": ["فَأَلْقَىٰ عَصَاهُ فَإِذَا هِىَ ثُعْبَانٌ مُّبِينٌ", "فَأَلْقَىٰ عَصَاهُ فَإِذَا هِىَ ثُعْبَانٌ مُّبِينٌ"],
+      "root_level_limit": "The identical local sequence is repeated textually and supplies one construction pattern twice, not two independent root features."
+    },
+    {
+      "class_id": "K5_CAST_SINGULAR_THEN_SWALLOWING_PREDICATION",
+      "word_refs": ["7:117:6:1", "26:45:3:1"],
+      "verse_refs": ["7:117", "26:45"],
+      "observable_anchors": ["أَنْ أَلْقِ عَصَاكَ فَإِذَا هِىَ تَلْقَفُ مَا يَأْفِكُونَ", "فَأَلْقَىٰ مُوسَىٰ عَصَاهُ فَإِذَا هِىَ تَلْقَفُ مَا يَأْفِكُونَ"],
+      "root_level_limit": "The following predication belongs to the local post-cast sequence; it cannot be projected onto all ESw tokens."
+    },
+    {
+      "class_id": "K6_CAST_SINGULAR_THEN_MOVEMENT_SIMILE",
+      "word_refs": ["27:10:2:1", "28:31:3:1"],
+      "verse_refs": ["27:10", "28:31"],
+      "observable_anchors": ["وَأَلْقِ عَصَاكَ فَلَمَّا رَءَاهَا تَهْتَزُّ كَأَنَّهَا جَآنٌّ", "وَأَنْ أَلْقِ عَصَاكَ فَلَمَّا رَءَاهَا تَهْتَزُّ كَأَنَّهَا جَآنٌّ"],
+      "root_level_limit": "Movement and comparison occur after the cast and are local predication and discourse, not root-wide content."
+    },
+    {
+      "class_id": "K7_PLURAL_COORDINATED_WITH_ROPES_AND_APPARENT_MOTION",
+      "word_refs": ["20:66:6:2"],
+      "verse_refs": ["20:66"],
+      "observable_anchor": "حِبَالُهُمْ وَعِصِيُّهُمْ يُخَيَّلُ إِلَيْهِ مِن سِحْرِهِمْ أَنَّهَا تَسْعَىٰ",
+      "root_level_limit": "The same local predication spans ropes and ESw tokens as a coordinated group and is explicitly mediated by يُخَيَّلُ and مِن سِحْرِهِمْ."
+    },
+    {
+      "class_id": "K8_PLURAL_COORDINATED_WITH_ROPES_AS_CAST_OBJECTS",
+      "word_refs": ["26:44:3:2"],
+      "verse_refs": ["26:44"],
+      "observable_anchor": "فَأَلْقَوْا۟ حِبَالَهُمْ وَعِصِيَّهُمْ",
+      "root_level_limit": "Casting and possession apply in the same clause to ropes and ESw tokens, so they do not provide a positive distinctive residue for ESw."
+    }
+  ],
+  "token_audit": [
+    {
+      "word_ref": "2:60:7:2",
+      "verse_ref": "2:60",
+      "raw_tanzil_line": 67,
+      "surface": "بِّعَصَاكَ",
+      "structural_row_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_2_60_7_2",
+      "occurrence_id": "occ_tanzil_1_1_002_060",
+      "form": "N",
+      "pos_tag": "N",
+      "attribution_status": "CONFIRMED",
+      "class_id": "K2_BI_MARKED_STRIKE_AGAINST_STONE",
+      "anchor": "ٱضْرِب بِّعَصَاكَ ٱلْحَجَرَ",
+      "observed_structure": ["bi-prefixed nominal segment", "second-person possessive suffix", "occurs with strike predicate", "stone is the stated target"],
+      "overclaim_pressure": "Challenges cast-only, movement-only, and transformation-only root concepts."
+    },
+    {
+      "word_ref": "7:107:2:1",
+      "verse_ref": "7:107",
+      "raw_tanzil_line": 1061,
+      "surface": "عَصَاهُ",
+      "structural_row_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_7_107_2_1",
+      "occurrence_id": "occ_tanzil_1_1_007_107",
+      "form": "N",
+      "pos_tag": "N",
+      "attribution_status": "CONFIRMED",
+      "class_id": "K4_CAST_SINGULAR_THEN_SNAKE_PREDICATION",
+      "anchor": "فَأَلْقَىٰ عَصَاهُ فَإِذَا هِىَ ثُعْبَانٌ مُّبِينٌ",
+      "observed_structure": ["third-person possessive suffix", "object in a cast sequence", "followed by a pronoun-linked predication"],
+      "overclaim_pressure": "The following predication is local and duplicated at 26:32; it cannot be counted twice as independent root evidence."
+    },
+    {
+      "word_ref": "7:117:6:1",
+      "verse_ref": "7:117",
+      "raw_tanzil_line": 1071,
+      "surface": "عَصَاكَ",
+      "structural_row_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_7_117_6_1",
+      "occurrence_id": "occ_tanzil_1_1_007_117",
+      "form": "N",
+      "pos_tag": "N",
+      "attribution_status": "CONFIRMED",
+      "class_id": "K5_CAST_SINGULAR_THEN_SWALLOWING_PREDICATION",
+      "anchor": "أَنْ أَلْقِ عَصَاكَ فَإِذَا هِىَ تَلْقَفُ مَا يَأْفِكُونَ",
+      "observed_structure": ["second-person possessive suffix", "object in an imperative cast sequence", "followed by a pronoun-linked action"],
+      "overclaim_pressure": "The post-cast action is not observed in the strike, self-description, or plural coordinated classes."
+    },
+    {
+      "word_ref": "7:160:14:2",
+      "verse_ref": "7:160",
+      "raw_tanzil_line": 1114,
+      "surface": "بِّعَصَاكَ",
+      "structural_row_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_7_160_14_2",
+      "occurrence_id": "occ_tanzil_1_1_007_160",
+      "form": "N",
+      "pos_tag": "N",
+      "attribution_status": "CONFIRMED",
+      "class_id": "K2_BI_MARKED_STRIKE_AGAINST_STONE",
+      "anchor": "أَنِ ٱضْرِب بِّعَصَاكَ ٱلْحَجَرَ",
+      "observed_structure": ["bi-prefixed nominal segment", "second-person possessive suffix", "occurs with strike predicate", "stone is the stated target"],
+      "overclaim_pressure": "Near-parallel with 2:60; repetition supports a class but not added context diversity."
+    },
+    {
+      "word_ref": "20:18:3:1",
+      "verse_ref": "20:18",
+      "raw_tanzil_line": 2366,
+      "surface": "عَصَاىَ",
+      "structural_row_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_20_18_3_1",
+      "occurrence_id": "occ_tanzil_1_1_020_018",
+      "form": "N",
+      "pos_tag": "N",
+      "attribution_status": "CONFIRMED",
+      "class_id": "K1_LOCAL_SELF_DESCRIPTION_AND_LISTED_USES",
+      "anchor": "هِىَ عَصَاىَ أَتَوَكَّؤُا۟ عَلَيْهَا وَأَهُشُّ بِهَا عَلَىٰ غَنَمِى وَلِىَ فِيهَا مَـَٔارِبُ أُخْرَىٰ",
+      "observed_structure": ["first-person possessive suffix", "predicative identification", "three anaphoric prepositional links", "two named uses and unspecified other purposes"],
+      "overclaim_pressure": "Strongest single local challenge to miraculous-effect, cast-only, strike-only, or exhaustive-function concepts."
+    },
+    {
+      "word_ref": "20:66:6:2",
+      "verse_ref": "20:66",
+      "raw_tanzil_line": 2414,
+      "surface": "وَعِصِيُّهُمْ",
+      "structural_row_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_20_66_6_2",
+      "occurrence_id": "occ_tanzil_1_1_020_066",
+      "form": "N",
+      "pos_tag": "N",
+      "attribution_status": "CONFIRMED",
+      "class_id": "K7_PLURAL_COORDINATED_WITH_ROPES_AND_APPARENT_MOTION",
+      "anchor": "حِبَالُهُمْ وَعِصِيُّهُمْ يُخَيَّلُ إِلَيْهِ مِن سِحْرِهِمْ أَنَّهَا تَسْعَىٰ",
+      "observed_structure": ["coordinating waw", "third-person plural possessive suffix", "coordinated with ropes", "shared apparent-motion predication", "explicit mediation by يُخَيَّلُ and مِن سِحْرِهِمْ"],
+      "overclaim_pressure": "Strongest matched-context challenge to claims that motion, agency, directed effect, or the shared scene predication distinguishes ESw."
+    },
+    {
+      "word_ref": "26:32:2:1",
+      "verse_ref": "26:32",
+      "raw_tanzil_line": 2964,
+      "surface": "عَصَاهُ",
+      "structural_row_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_26_32_2_1",
+      "occurrence_id": "occ_tanzil_1_1_026_032",
+      "form": "N",
+      "pos_tag": "N",
+      "attribution_status": "CONFIRMED",
+      "class_id": "K4_CAST_SINGULAR_THEN_SNAKE_PREDICATION",
+      "anchor": "فَأَلْقَىٰ عَصَاهُ فَإِذَا هِىَ ثُعْبَانٌ مُّبِينٌ",
+      "observed_structure": ["third-person possessive suffix", "object in a cast sequence", "followed by a pronoun-linked predication"],
+      "overclaim_pressure": "Exact textual duplicate of the relevant 7:107 sequence; it cannot independently raise semantic strength."
+    },
+    {
+      "word_ref": "26:44:3:2",
+      "verse_ref": "26:44",
+      "raw_tanzil_line": 2976,
+      "surface": "وَعِصِيَّهُمْ",
+      "structural_row_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_26_44_3_2",
+      "occurrence_id": "occ_tanzil_1_1_026_044",
+      "form": "N",
+      "pos_tag": "N",
+      "attribution_status": "CONFIRMED",
+      "class_id": "K8_PLURAL_COORDINATED_WITH_ROPES_AS_CAST_OBJECTS",
+      "anchor": "فَأَلْقَوْا۟ حِبَالَهُمْ وَعِصِيَّهُمْ",
+      "observed_structure": ["coordinating waw", "third-person plural possessive suffix", "coordinated with ropes", "shares the cast predicate with ropes"],
+      "overclaim_pressure": "Casting, possession, and manipulability are non-distinctive in this exact matched construction."
+    },
+    {
+      "word_ref": "26:45:3:1",
+      "verse_ref": "26:45",
+      "raw_tanzil_line": 2977,
+      "surface": "عَصَاهُ",
+      "structural_row_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_26_45_3_1",
+      "occurrence_id": "occ_tanzil_1_1_026_045",
+      "form": "N",
+      "pos_tag": "N",
+      "attribution_status": "CONFIRMED",
+      "class_id": "K5_CAST_SINGULAR_THEN_SWALLOWING_PREDICATION",
+      "anchor": "فَأَلْقَىٰ مُوسَىٰ عَصَاهُ فَإِذَا هِىَ تَلْقَفُ مَا يَأْفِكُونَ",
+      "observed_structure": ["third-person possessive suffix", "object in a cast sequence", "followed by a pronoun-linked action"],
+      "overclaim_pressure": "Near-parallel with 7:117; local repetition does not make the following action a root invariant."
+    },
+    {
+      "word_ref": "26:63:6:2",
+      "verse_ref": "26:63",
+      "raw_tanzil_line": 2995,
+      "surface": "بِّعَصَاكَ",
+      "structural_row_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_26_63_6_2",
+      "occurrence_id": "occ_tanzil_1_1_026_063",
+      "form": "N",
+      "pos_tag": "N",
+      "attribution_status": "CONFIRMED",
+      "class_id": "K3_BI_MARKED_STRIKE_AGAINST_SEA",
+      "anchor": "أَنِ ٱضْرِب بِّعَصَاكَ ٱلْبَحْرَ فَٱنفَلَقَ",
+      "observed_structure": ["bi-prefixed nominal segment", "second-person possessive suffix", "occurs with strike predicate", "sea is the stated target"],
+      "overclaim_pressure": "The same broad strike construction has a different target and result from the stone rows, pushing target and outcome to local layers."
+    },
+    {
+      "word_ref": "27:10:2:1",
+      "verse_ref": "27:10",
+      "raw_tanzil_line": 3169,
+      "surface": "عَصَاكَ",
+      "structural_row_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_27_10_2_1",
+      "occurrence_id": "occ_tanzil_1_1_027_010",
+      "form": "N",
+      "pos_tag": "N",
+      "attribution_status": "CONFIRMED",
+      "class_id": "K6_CAST_SINGULAR_THEN_MOVEMENT_SIMILE",
+      "anchor": "وَأَلْقِ عَصَاكَ فَلَمَّا رَءَاهَا تَهْتَزُّ كَأَنَّهَا جَآنٌّ",
+      "observed_structure": ["second-person possessive suffix", "object in an imperative cast sequence", "pronoun-linked movement", "explicit comparison with كَأَنَّهَا"],
+      "overclaim_pressure": "Movement and comparison are post-cast local predications and nearly repeat at 28:31."
+    },
+    {
+      "word_ref": "28:31:3:1",
+      "verse_ref": "28:31",
+      "raw_tanzil_line": 3283,
+      "surface": "عَصَاكَ",
+      "structural_row_id": "stok_qac_snap_tanzil_1_1_ac0724796cbb_28_31_3_1",
+      "occurrence_id": "occ_tanzil_1_1_028_031",
+      "form": "N",
+      "pos_tag": "N",
+      "attribution_status": "CONFIRMED",
+      "class_id": "K6_CAST_SINGULAR_THEN_MOVEMENT_SIMILE",
+      "anchor": "وَأَنْ أَلْقِ عَصَاكَ فَلَمَّا رَءَاهَا تَهْتَزُّ كَأَنَّهَا جَآنٌّ",
+      "observed_structure": ["second-person possessive suffix", "object in an imperative cast sequence", "pronoun-linked movement", "explicit comparison with كَأَنَّهَا"],
+      "overclaim_pressure": "Near-parallel with 27:10; the repeated local scene cannot be converted into independent root-wide evidence."
+    }
+  ],
+  "parallelism_audit": [
+    {
+      "group_id": "P1_STONE_STRIKE",
+      "refs": ["2:60:7:2", "7:160:14:2"],
+      "treatment": "ONE_RECURRENT_CONSTRUCTION_CLASS_NOT_TWO_INDEPENDENT_SEMANTIC_DOMAINS"
+    },
+    {
+      "group_id": "P2_IDENTICAL_CAST_SNAKE_SEQUENCE",
+      "refs": ["7:107:2:1", "26:32:2:1"],
+      "treatment": "EXACT_RELEVANT_TEXT_DUPLICATION"
+    },
+    {
+      "group_id": "P3_CAST_SWALLOW_SEQUENCE",
+      "refs": ["7:117:6:1", "26:45:3:1"],
+      "treatment": "NEAR_PARALLEL_OUTCOME_CLASS"
+    },
+    {
+      "group_id": "P4_CAST_MOVEMENT_SIMILE",
+      "refs": ["27:10:2:1", "28:31:3:1"],
+      "treatment": "NEAR_PARALLEL_LOCAL_SEQUENCE"
+    },
+    {
+      "group_id": "P5_PLURAL_WITH_ROPES",
+      "refs": ["20:66:6:2", "26:44:3:2"],
+      "treatment": "RELATED_SCENE_BUT_DIFFERENT_LOCAL_PREDICATIONS"
+    }
+  ],
+  "root_wide_positive_concept_falsification": {
+    "leading_candidate": {
+      "candidate_id": "H_INSTRUMENTAL_EXTENSION",
+      "statement_ar": "شيء يُستعمل بتوجيه حامله ليكون امتدادًا لفعله",
+      "status": "NOT_QUALIFIED",
+      "why_it_initially_survives": "It can be made to fit the self-use, strike, cast, and plural display classes at a high level.",
+      "why_it_fails": [
+        "Possession is overtly supplied by suffixal morphology in every target token and therefore cannot be assigned to the root.",
+        "Direction and action are supplied by local predicates such as strike and cast, not by the root token alone.",
+        "At 20:66 and 26:44, ropes share the same possession, coordination, action, or apparent-motion frame, so the wording has no positive distinctive residue for ESw.",
+        "The formulation is broad enough to absorb many objects and therefore fails generic-overextraction and falsifiability pressure.",
+        "No same-level essential-neighbor corpus was authorized beyond the exact ESw rows, so root-level lexical distinctiveness cannot be established."
+      ],
+      "disposition": "RESCOPE_TO_LOCAL_OR_CONSTRUCTIONAL_OBSERVATION"
+    },
+    "challenged_candidates": [
+      {
+        "candidate_id": "H_DISOBEDIENCE_OR_REFUSAL",
+        "phrase_ar": "العصيان أو الامتناع عن الانقياد",
+        "disposition": "REJECT",
+        "reason": "No exact ESw row supplies this content; adopting it would import semantics from outside the authorized target corpus."
+      },
+      {
+        "candidate_id": "H_RIGIDITY_OR_OBSTINACY",
+        "phrase_ar": "الصلابة أو الاستعصاء أو المنعة",
+        "disposition": "REJECT",
+        "reason": "The exact rows do not assert these properties, and letter, shape, or etymological inference cannot establish them."
+      },
+      {
+        "candidate_id": "H_PHYSICAL_LONG_RIGID_OBJECT",
+        "phrase_ar": "جسم طويل صلب",
+        "disposition": "NOT_QUALIFIED",
+        "reason": "Length, material, and rigidity are not directly stated in the exact rows; importing them would exceed the Quran-internal evidence."
+      },
+      {
+        "candidate_id": "H_SUPPORT_OR_FLOCK_USE",
+        "phrase_ar": "ما يُتوكأ عليه ويُهش به على الغنم",
+        "disposition": "LOCAL_ONLY",
+        "reason": "Directly grounded only at 20:18 and expressly followed by unspecified other purposes; it cannot be the universal root core."
+      },
+      {
+        "candidate_id": "H_STRIKING_INSTRUMENT",
+        "phrase_ar": "ما يُضرب به",
+        "disposition": "CLASS_ONLY",
+        "reason": "Grounded only in the three bi-marked strike rows and absent from the self-description, cast, and plural coordinated classes."
+      },
+      {
+        "candidate_id": "H_CAST_THEN_TRANSFORM_OR_MOVE",
+        "phrase_ar": "ما يُلقى فيتحول أو يتحرك أو يلتقم",
+        "disposition": "REJECT_AS_ROOT_WIDE",
+        "reason": "It excludes the strike and self-description classes and collapses post-cast contextual predications into the root."
+      },
+      {
+        "candidate_id": "H_EXTRAORDINARY_EFFECT_MEDIUM",
+        "phrase_ar": "وسيلة لإحداث أثر خارق",
+        "disposition": "REJECT_AS_ROOT_WIDE",
+        "reason": "20:18 supplies ordinary local uses, while 20:66 marks apparent motion through imagination and sorcery; the effect belongs to scene and discourse, not a root invariant."
+      },
+      {
+        "candidate_id": "H_POSSESSED_OBJECT",
+        "phrase_ar": "شيء مملوك أو منسوب إلى صاحبه",
+        "disposition": "CONSTRUCTION_ONLY",
+        "reason": "All 12 surfaces are possessive, but that uniformity is overt morphology and syntax, not positive root content."
+      },
+      {
+        "candidate_id": "H_CIRCULAR_LEXEME_LABEL",
+        "phrase_ar": "العصا هي ما تدل عليه لفظة العصا",
+        "disposition": "REJECT",
+        "reason": "This is circular and supplies no independently testable positive content."
+      }
+    ],
+    "outcome": "NO_POSITIVE_ROOT_WIDE_CONCEPT_QUALIFIED"
+  },
+  "hard_cases": [
+    {
+      "rank": 1,
+      "refs": ["20:66:6:2", "26:44:3:2"],
+      "challenge": "Ropes and ESw tokens occur in the same coordinated plural frames, sharing apparent motion or casting. Generic features such as possession, manipulability, casting, movement, display, or directed effect therefore fail to distinguish ESw in these matched contexts.",
+      "affected_claims": ["H_INSTRUMENTAL_EXTENSION", "H_CAST_THEN_TRANSFORM_OR_MOVE", "H_EXTRAORDINARY_EFFECT_MEDIUM"]
+    },
+    {
+      "rank": 2,
+      "refs": ["20:18:3:1"],
+      "challenge": "The only explicit local self-description names more than one use and adds مَـَٔارِبُ أُخْرَىٰ, preventing an exhaustive functional definition and challenging scene-specific positive concepts.",
+      "affected_claims": ["H_STRIKING_INSTRUMENT", "H_CAST_THEN_TRANSFORM_OR_MOVE", "H_EXTRAORDINARY_EFFECT_MEDIUM", "H_SUPPORT_OR_FLOCK_USE"]
+    },
+    {
+      "rank": 3,
+      "refs": ["2:60:7:2", "7:160:14:2", "26:63:6:2"],
+      "challenge": "The same bi-marked strike construction takes different targets and different following results, so target and outcome cannot be smuggled into root content.",
+      "affected_claims": ["H_CAST_THEN_TRANSFORM_OR_MOVE", "H_EXTRAORDINARY_EFFECT_MEDIUM"]
+    },
+    {
+      "rank": 4,
+      "refs": ["7:107:2:1", "26:32:2:1", "7:117:6:1", "26:45:3:1", "27:10:2:1", "28:31:3:1"],
+      "challenge": "Six cast rows divide among snake predication, swallowing action, and movement simile; their shared cast frame does not license any one following predicate as root-wide content.",
+      "affected_claims": ["H_CAST_THEN_TRANSFORM_OR_MOVE", "H_EXTRAORDINARY_EFFECT_MEDIUM"]
+    },
+    {
+      "rank": 5,
+      "refs": ["2:60:7:2", "7:107:2:1", "7:117:6:1", "7:160:14:2", "20:18:3:1", "20:66:6:2", "26:32:2:1", "26:44:3:2", "26:45:3:1", "26:63:6:2", "27:10:2:1", "28:31:3:1"],
+      "challenge": "Every confirmed target row is nominal and possessive. There is no derivational or part-of-speech contrast inside the authorized corpus with which to subtract lexeme, form, and construction contributions and isolate a non-circular abstract root residue.",
+      "affected_claims": ["ANY_ABSTRACT_ROOT_CORE"]
+    }
+  ],
+  "strongest_counterexample": {
+    "status": "NO_SINGLE_TOKEN_DISPROVES_EVERY_VAGUE_CANDIDATE",
+    "primary_ref": "20:18:3:1",
+    "primary_reason": "It directly exhibits ordinary, multiple, and expressly non-exhaustive uses, defeating transformation-only, cast-only, strike-only, and extraordinary-effect cores.",
+    "matched_context_refs": ["20:66:6:2", "26:44:3:2"],
+    "matched_context_reason": "The exact rope coordination is stronger against the leading generic candidate because the alleged invariant also describes the competitor in the same construction.",
+    "falsifiability_warning": "If a candidate is broadened until none of these rows can oppose it, that breadth is evidence of generic overextraction, not survival."
+  },
+  "strongest_competitor": {
+    "competitor_id": "C0_LEXEME_CONSTRUCTION_CONTEXT_ONLY",
+    "type": "NULL_LAYER_MODEL",
+    "statement": "The restricted corpus establishes one confirmed nominal target set and several local construction classes, while every robust shared feature beyond token identity is explainable by possessive morphology, governing predicates, coordination, participant relations, or scene context. No independent abstract root residue is yet required.",
+    "same_level_matched_probe": {
+      "lexeme_surface": "حِبَالُهُمْ / حِبَالَهُمْ",
+      "refs": ["20:66", "26:44"],
+      "comparison_level": "LEXEME_TO_LEXEME_WITHIN_MATCHED_LOCAL_CONSTRUCTION",
+      "result": "The probe defeats generic residues shared by ropes and ESw tokens but does not itself establish a positive ESw residue."
+    },
+    "status": "NOT_DISCRIMINATED_FROM_LEADING_POSITIVE_CANDIDATE"
+  },
+  "terminal_unresolved_alternative": {
+    "status": "TERMINAL_FOR_CURRENT_SOURCE_BOUNDARY",
+    "alternatives": [
+      {
+        "alternative_id": "A1_MINIMAL_INSTRUMENTAL_RESIDUE",
+        "statement_ar": "شيء يُستعمل بتوجيه حامله",
+        "problem": "It remains generic and its apparent content is supplied by possession and local action predicates."
+      },
+      {
+        "alternative_id": "C0_LEXEME_ONLY_RESIDUE",
+        "statement_ar": "لا تُستخرج من هذه المادة نواة جذرية موجبة غير دائرية وراء هوية اللفظ الاسمي؛ وتبقى الوظائف والآثار موزعة على الصيغة والتركيب والسياق",
+        "problem": "It is a conservative null model, not a positive root concept."
+      }
+    ],
+    "why_unresolved": [
+      "All 12 target rows are nominal and possessive, so no derivational contrast tests root invariance.",
+      "The strongest generic candidate fails positive lexical distinctiveness in the matched rope constructions.",
+      "The authorized source boundary contains no complete same-level essential-neighbor corpus.",
+      "A lexical label alone would be circular, while richer physical or functional language exceeds what the exact rows state."
+    ],
+    "required_terminal_state": "UNRESOLVED"
+  },
+  "scope_strength_and_layer_audit": {
+    "scope_findings": [
+      "Structural statements about the exact 12-row predicate may use UNIVERSAL scope.",
+      "Local use statements must remain LOCAL to their exact refs.",
+      "Construction-class statements may cover only their enumerated class sets.",
+      "No representative subset may be promoted to a root-wide conclusion merely because the index set is complete.",
+      "Complete token indexing does not equal sufficient semantic differentiation or deep-analysis coverage."
+    ],
+    "strength_ceiling": "UNRESOLVED",
+    "layer_attribution": {
+      "root": "POSITIVE_CONTENT_UNRESOLVED",
+      "derivation_inflection": "NO_CONTRAST_AVAILABLE; all rows are form=N and pos_tag=N",
+      "lexeme": "Exact surface family is attested, but a non-circular semantic definition is not established",
+      "form": "Nominal form is structurally confirmed for all 12 rows",
+      "construction": "Predicative self-description, bi-marked strike, cast-object, and plural coordination classes are directly observable",
+      "participant_roles": "Possessor, actor, target, and anaphoric relations are local and cannot be assigned wholesale to the root",
+      "context_discourse": "Stone, sea, listed uses, post-cast predications, apparent motion, sorcery, and comparison are local context or discourse",
+      "local_meaning": "May be described only per exact verse and construction",
+      "final_statement": "No positive root-wide concept is qualified under the authorized source boundary"
+    },
+    "universal_choice": "REJECT_POSITIVE_ROOT_CONCEPT",
+    "representative_choice": "NOT_APPLICABLE_FOR_ROOT_WIDE_PREFERENCE",
+    "local_choice": "PERMITTED_ONLY_WITH_EXACT_REF_AND_LAYER_ATTRIBUTION"
+  },
+  "phrase_audit": [
+    {
+      "phrase_ar": "العصيان أو الامتناع عن الانقياد",
+      "verdict": "REJECT_SOURCE_PURITY",
+      "permitted_scope": null,
+      "reason": "No authorized ESw row contains or supports this content."
+    },
+    {
+      "phrase_ar": "الصلابة أو الاستعصاء أو المنعة",
+      "verdict": "REJECT_UNSUPPORTED_ROOT_ATTRIBUTE",
+      "permitted_scope": null,
+      "reason": "No exact target row directly supplies the asserted root attribute."
+    },
+    {
+      "phrase_ar": "جسم طويل صلب",
+      "verdict": "NOT_QUALIFIED",
+      "permitted_scope": null,
+      "reason": "Physical shape and material are not stated in the authorized rows."
+    },
+    {
+      "phrase_ar": "عَصَاىَ",
+      "verdict": "EXACT_TOKEN_LABEL_ONLY",
+      "permitted_scope": "20:18:3:1",
+      "reason": "The exact surface is admissible as text but cannot define itself."
+    },
+    {
+      "phrase_ar": "أَتَوَكَّؤُا۟ عَلَيْهَا وَأَهُشُّ بِهَا عَلَىٰ غَنَمِى",
+      "verdict": "LOCAL_ONLY",
+      "permitted_scope": "20:18",
+      "reason": "Directly stated local uses; not a universal root definition."
+    },
+    {
+      "phrase_ar": "ما يُضرب به",
+      "verdict": "CONSTRUCTION_CLASS_ONLY",
+      "permitted_scope": "2:60, 7:160, 26:63",
+      "reason": "The strike predicate and bi-marking define the local class."
+    },
+    {
+      "phrase_ar": "ما يُلقى فيتحول أو يتحرك أو يلتقم",
+      "verdict": "REJECT_AS_ROOT_WIDE",
+      "permitted_scope": "Only the enumerated post-cast local classes with their exact different predicates",
+      "reason": "It collapses cast construction and following contextual predications into the root."
+    },
+    {
+      "phrase_ar": "وسيلة لإحداث أثر خارق",
+      "verdict": "REJECT_CONTEXT_TO_ROOT_LEAKAGE",
+      "permitted_scope": null,
+      "reason": "Effects differ by scene, and 20:18 explicitly supplies ordinary uses."
+    },
+    {
+      "phrase_ar": "شيء مملوك أو منسوب إلى صاحبه",
+      "verdict": "MORPHOSYNTAX_ONLY",
+      "permitted_scope": "Structural observation across all 12 surfaces",
+      "reason": "The possessive relation is overt morphology or syntax, not root content."
+    },
+    {
+      "phrase_ar": "شيء يُستعمل بتوجيه حامله ليكون امتدادًا لفعله",
+      "verdict": "UNRESOLVED_GENERIC_CANDIDATE",
+      "permitted_scope": "Hypothesis only",
+      "reason": "It fits broadly but is non-distinctive against ropes at 20:66 and 26:44 and does not survive layer subtraction."
+    },
+    {
+      "phrase_ar": "العصا هي ما تدل عليه لفظة العصا",
+      "verdict": "REJECT_CIRCULAR",
+      "permitted_scope": null,
+      "reason": "It provides no independently testable positive semantic content."
+    }
+  ],
+  "diagnostic_audit": [
+    {
+      "diagnostic": "DICTIONARY_FIRST",
+      "status": "EVALUATED_CLEAN",
+      "hard_blocker": false,
+      "details": "No dictionary, gloss, translation, or inherited lexical definition was used."
+    },
+    {
+      "diagnostic": "CONTEXTUAL_LEAKAGE",
+      "status": "EVALUATED_CLEAN",
+      "hard_blocker": false,
+      "details": "Substantive evidence is limited to each target token's exact corpus_occurrence verse; no adjacent verse is used."
+    },
+    {
+      "diagnostic": "HERITAGE_BIAS",
+      "status": "EVALUATED_CLEAN",
+      "hard_blocker": false,
+      "details": "No heritage source was used."
+    },
+    {
+      "diagnostic": "TAFSIR_CONTAMINATION",
+      "status": "EVALUATED_CLEAN",
+      "hard_blocker": false,
+      "details": "No tafsir source was used."
+    },
+    {
+      "diagnostic": "FORCED_UNIFICATION",
+      "status": "FLAGGED",
+      "hard_blocker": true,
+      "details": "A positive universal core would currently erase material ordinary-use, strike, cast, and plural-with-ropes differences or become too generic to discriminate. The artifact therefore remains UNRESOLVED."
+    },
+    {
+      "diagnostic": "GENERIC_OVEREXTRACTION",
+      "status": "FLAGGED",
+      "hard_blocker": true,
+      "details": "The leading instrumental-extension candidate survives only by being broad enough to fit ropes in the same constructions and lacks a positive distinctive residue."
+    },
+    {
+      "diagnostic": "LETTER_SEMANTICS_OVERRELIANCE",
+      "status": "EVALUATED_CLEAN",
+      "hard_blocker": false,
+      "details": "No letter, orthographic, or etymological semantics was used."
+    },
+    {
+      "diagnostic": "CIRCULAR_CONFIRMATION",
+      "status": "FLAGGED",
+      "hard_blocker": true,
+      "details": "The only residue guaranteed by the exact rows is the nominal surface family itself; using that family to define its root concept would be circular."
+    }
+  ],
+  "minimum_observation_substance": {
+    "purpose": "Prevent a token from counting as deeply inspected merely because its verse reference or full verse was copied.",
+    "required_per_token_fields": [
+      "Exact word_ref and verse_ref",
+      "Exact token surface recovered at the indexed word position",
+      "Resolvable structural row id and corpus occurrence id",
+      "root, form, pos_tag, and attribution_status",
+      "Minimal exact Quranic anchor containing the material construction",
+      "Directly observable morphology and construction relations without a root gloss",
+      "Explicit layer assignment for every inferred property",
+      "At least one overclaim, counterexample, or alternative pressure contribution",
+      "Parallel-text group where applicable so repetition is not counted as independent diversity",
+      "Unresolved ambiguity instead of a filled semantic gap"
+    ],
+    "non_substantive_examples": [
+      "A bare verse reference",
+      "A copied full verse with no token-local structure",
+      "A dictionary-like gloss",
+      "A paraphrase of a candidate conclusion",
+      "A duplicated observation reused across a parallel verse without noting the parallelism",
+      "A constructional or contextual predicate relabeled as root meaning"
+    ],
+    "this_artifact_token_records_meet_minimum": true
+  },
+  "reject_conditions": [
+    {
+      "condition_id": "RJ1_UNENUMERATED_CORPUS",
+      "condition": "Reject any universal ESw concept that omits one or more of the 12 exact word refs or silently substitutes a representative subset."
+    },
+    {
+      "condition_id": "RJ2_LAYER_CAPTURE",
+      "condition": "Reject or rescope any feature fully supplied by possessive morphology, bi-marking, a governing predicate, coordination, participant role, following result clause, comparison, or scene context."
+    },
+    {
+      "condition_id": "RJ3_LOCAL_TO_ROOT",
+      "condition": "Reject any root-wide formulation built from only 20:18 uses, only strike rows, only cast rows, only plural rows, or only post-cast outcomes."
+    },
+    {
+      "condition_id": "RJ4_GENERICITY",
+      "condition": "Reject any wording broad enough to fit the coordinated ropes at 20:66 and 26:44 without a positive ESw-specific residue."
+    },
+    {
+      "condition_id": "RJ5_UNSUPPORTED_PHYSICAL_OR_MORAL_CONTENT",
+      "condition": "Reject length, rigidity, material, obstinacy, refusal, disobedience, or similar attributes unless newly admitted Quran-internal evidence establishes them at the correct layer."
+    },
+    {
+      "condition_id": "RJ6_CIRCULARITY",
+      "condition": "Reject a definition that merely repeats the lexeme or substitutes an unobserved synonym."
+    },
+    {
+      "condition_id": "RJ7_PSEUDOREPLICATION",
+      "condition": "Reject a strength upgrade that counts exact or near-parallel narrative rows as independent semantic domains."
+    },
+    {
+      "condition_id": "RJ8_UNTESTED_DISTINCTIVENESS",
+      "condition": "Reject a positive root-wide preference until a fair same-level essential-neighbor comparison supplies a positive residue, evidence, counterevidence search, discriminating test, and real rejection condition."
+    },
+    {
+      "condition_id": "RJ9_TERMINAL_ALTERNATIVE_OMITTED",
+      "condition": "Reject closure that does not retain C0_LEXEME_CONSTRUCTION_CONTEXT_ONLY as an unresolved terminal competitor."
+    }
+  ],
+  "reopen_conditions": [
+    {
+      "condition_id": "RO1_CORPUS_CHANGE",
+      "condition": "The production snapshot or exact confirmed ESw token set changes."
+    },
+    {
+      "condition_id": "RO2_STRUCTURAL_CHANGE",
+      "condition": "Any target row's root, word identity, form, POS, or attribution_status changes or becomes disputed."
+    },
+    {
+      "condition_id": "RO3_DERIVATIONAL_DIVERSITY",
+      "condition": "Newly admitted Quran-internal ESw evidence supplies a different derivative or part-of-speech contrast that can test root invariance."
+    },
+    {
+      "condition_id": "RO4_ESSENTIAL_NEIGHBOR_EVIDENCE",
+      "condition": "A source-authorized, same-level essential-neighbor corpus permits a fair positive-distinctiveness test."
+    },
+    {
+      "condition_id": "RO5_LAYER_SUBTRACTION_EVIDENCE",
+      "condition": "Per-token observations establish a positive invariant remaining after possession, form, construction, participant roles, and context are subtracted."
+    },
+    {
+      "condition_id": "RO6_DISCRIMINATING_TEST",
+      "condition": "A revised positive candidate includes a preregistered prediction that discriminates it from C0 and from the matched rope competitor."
+    },
+    {
+      "condition_id": "RO7_METHOD_REVISION",
+      "condition": "A governing source or active methodology revision materially changes the claim or evidence rules."
+    },
+    {
+      "condition_id": "RO8_PURITY_INCIDENT",
+      "condition": "Any prohibited semantic content is disclosed to the internal induction context; a fresh source-isolated review is then required."
+    }
+  ],
+  "final_verdict": {
+    "purity": "NO_PROHIBITED_SEMANTIC_CONTENT_USED",
+    "overclaim": "BLOCK_POSITIVE_ROOT_WIDE_CONCEPT",
+    "root_concept": "UNRESOLVED",
+    "scope": "UNIVERSAL_CHALLENGE_OVER_EXACT_12_TOKEN_SET",
+    "strength": "UNRESOLVED",
+    "strongest_counterexample_ref": "20:18:3:1",
+    "strongest_competitor_id": "C0_LEXEME_CONSTRUCTION_CONTEXT_ONLY",
+    "terminal_unresolved_alternative_retained": true,
+    "minimum_observation_substance_met": true,
+    "canonicalization_eligible": false,
+    "reason": "The exact corpus supports traceable structural and local-construction observations but does not discriminate a non-circular, layer-neutral, positive, lexically distinctive root-wide concept from the conservative null model."
+  }
+}

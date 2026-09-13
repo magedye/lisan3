@@ -1,0 +1,602 @@
+{
+  "artifact_type": "FWH_CYCLE2_FRESH_GOVERNED_PRODUCER",
+  "artifact_version": "1.0.0",
+  "generated_at_utc": "2026-09-13T07:41:54.262Z",
+  "producer_role": "FRESH_GOVERNED_PRODUCER",
+  "target": {
+    "root": "fwh",
+    "arabic_root_letters": "ف و ه",
+    "contract_type": "ROOT_CONCEPT",
+    "run_id": "run_78a439c3",
+    "corpus_snapshot_id": "snap_tanzil_1_1_ac0724796cbb",
+    "methodology_revision_id": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+    "claim_universe": "جميع المواضع الثلاثة عشر ذات الإسناد البنيوي CONFIRMED للجذر fwh في أحدث extraction_version لكل word_ref داخل snapshot الإنتاجي المحدد",
+    "occurrence_unit": "word_ref",
+    "eligible_occurrence_count": 13
+  },
+  "source_isolation": {
+    "status": "CLEAN_WITHIN_PRODUCER_CONTEXT",
+    "run_mode": "QURAN_INTERNAL_CUMULATIVE_RUN",
+    "prior_decision_reused": false,
+    "controlled_memory_open": "NOT_PERFORMED_BY_OWNER_SCOPE",
+    "allowed_input_classes": [
+      "CURRENT_OWNER_INSTRUCTION",
+      "CURRENT_REPOSITORY_GOVERNANCE",
+      "CURRENT_QURANIC_METHODOLOGY",
+      "PRODUCTION_TANZIL_QURAN_TEXT",
+      "READ_ONLY_FWH_CONFIRMED_STRUCTURAL_TOKENS",
+      "READ_ONLY_CORPUS_RUN_SNAPSHOT_METHODOLOGY_METADATA",
+      "REPOSITORY_SCHEMA_AND_DETERMINISTIC_VALIDATION_CODE_FOR_PAYLOAD_COMPATIBILITY_ONLY"
+    ],
+    "forbidden_input_classes": [
+      "SEMANTIC_CLAIMS_OR_SEMANTIC_PROSE",
+      "PRIOR_OBSERVATIONS",
+      "BATCH07",
+      "PROJECT_STATE",
+      "FIVE_ROOT_ARTIFACTS_OR_REVIEWS",
+      "EXTERNAL_SEMANTICS",
+      "DICTIONARIES",
+      "TRANSLATIONS",
+      "TAFSIR",
+      "WEB",
+      "MODEL_OR_PROJECT_MEMORY_AS_EVIDENCE"
+    ],
+    "forbidden_content_accessed": false,
+    "notes": "لم يفتح المنتج أي قرار سابق أو ملاحظة سابقة أو مادة دلالية خارجية، ولم يستعمل الذاكرة التراكمية. القراءة السياقية اقتصرت على نص Tanzil الإنتاجي للآيات المستهدفة والآية السابقة واللاحقة لكل موضع."
+  },
+  "corpus_ledger": {
+    "index_coverage": "13_OF_13_CONFIRMED_WORD_REFS",
+    "deep_analysis_coverage_in_this_artifact": "13_OF_13_SUBSTANTIVE_SIX_FIELD_ROWS",
+    "structural_stability": "جميع الصفوف الثلاثة عشر من أحدث extraction_version المرصود لكل word_ref، وكلها root=fwh وform=N وpos_tag=N وattribution_status=CONFIRMED.",
+    "form_distribution": {
+      "N": 13
+    },
+    "construction_distribution": {
+      "MIN_SOURCE": 2,
+      "BI_INSTRUMENT_OR_MEANS": 8,
+      "DIRECT_REACH_TARGET": 1,
+      "FI_LOCATIVE_INSERTION": 1,
+      "ALA_SEALING_TARGET": 1
+    },
+    "word_refs": [
+      "3:118:19:1",
+      "3:167:25:2",
+      "5:41:13:2",
+      "9:8:12:2",
+      "9:30:13:2",
+      "9:32:6:2",
+      "13:14:18:1",
+      "14:9:24:1",
+      "18:5:12:1",
+      "24:15:5:2",
+      "33:4:22:2",
+      "36:65:4:1",
+      "61:8:5:2"
+    ]
+  },
+  "initial_hypothesis_freeze": {
+    "freeze_status": "FROZEN_AFTER_CORPUS_INVENTORY_AND_INITIAL_OBSERVATION_BEFORE_ANY_PRIOR_ACCESS",
+    "frozen_at_utc": "2026-09-13T07:41:54.262Z",
+    "prior_material_opened_before_freeze": false,
+    "hypotheses": [
+      {
+        "hypothesis_id": "H1_POSITIVE_ROOT",
+        "kind": "POSITIVE",
+        "scope": "UNIVERSAL_OVER_13_CONFIRMED_FWH_WORD_REFS",
+        "statement": "يسهم الجذر في تسمية منفذ جسدي حدّي يتصل عنده داخل صاحب الجسد بخارجه، فيقبل أن يكون جهة لبلوغ شيء إليه أو إدخاله، ومبدأ لخروج شيء، وموضعا أو آلة لفعل صادر من صاحبه.",
+        "predictions": [
+          "ينبغي أن تقبل المواضع الحسية المباشرة أدوار الوصول إلى الفم أو الإدخال فيه أو الختم عليه دون افتراض القول.",
+          "ينبغي أن تقبل مواضع القول والخروج والإطفاء إسناد فعلها إلى تركيب المصدر أو الآلة أو السياق، من غير إدخال الصدق أو الكذب أو موافقة القلب في الجذر.",
+          "إذا كان المفهوم حديا حقا فينبغي أن تتنوع جهات العلاقة حوله بين الخروج والوصول والإدخال والمنع، لا أن تنحصر في اتجاه واحد."
+        ],
+        "rejection_condition": "ترفض أو تضيق H1 إذا وجد بين المواضع المؤكدة موضع لا يمكن فيه إسناد فاه أو أفواه إلى منفذ جسدي أو إلى استعمال تركيبي متتبع لذلك المنفذ، أو إذا لزم إدخال معنى قولي أو تقويمي خاص في النواة لتفسير موضع."
+      },
+      {
+        "hypothesis_id": "H2_BOUNDED_BI_CONSTRUCTION",
+        "kind": "BOUNDED",
+        "scope": "EIGHT_BI_AFWAH_CONSTRUCTIONS_ONLY",
+        "statement": "في بناء الباء مع أفواه، يقدّم التركيب الفم بوصفه آلة أو واسطة لفعل ظاهر صادر من صاحبه؛ أما مضمون الفعل وصدقه وموافقته للباطن ونجاح أثره فتأتي من المسند والسياق.",
+        "predictions": [
+          "تتبع الباء أفعالا أو أسماء أفعال يمكن أن يسند إنجازها الظاهر إلى الفم.",
+          "لا يلزم أن تكون الأفعال الثمانية أقوالا صريحة كلها.",
+          "تظهر أحكام الكذب أو مخالفة القلب أو بطلان الأثر خارج لفظ أفواه نفسه."
+        ],
+        "rejection_condition": "ترد H2 إذا أثبت موضع باء أن أفواه تحمل بنفسها مضمون الفعل أو حكمه أو باطن صاحبه، أو إذا تعذر تعيين أي دور آلي أو وسائطي للباء في موضع من الثمانية."
+      },
+      {
+        "hypothesis_id": "C0_UNRESOLVED_NULL",
+        "kind": "UNRESOLVED_NULL",
+        "scope": "UNIVERSAL_OVER_13_CONFIRMED_FWH_WORD_REFS",
+        "statement": "قد لا يميز النص بين نواة واحدة وبين قائمة استعمالات للعضو والقول والصورة؛ وحينئذ يبقى Root Concept غير محسوم مع الاكتفاء بالملاحظات الموضعية.",
+        "predictions": [
+          "ستقاوم المواضع الحسية والقولية صياغة موجبة مشتركة إلا إذا صارت الصياغة عامة بلا قدرة تفسيرية.",
+          "قد تحتاج مواضع الإطفاء ورد الأيدي إلى معنى مستقل لا يتتبع إلى المنفذ الجسدي وتركيبه.",
+          "إذا لم ينتج H1 فرقا قابلا للاختبار أمام منافس القول فقط، يبقى C0 قائما."
+        ],
+        "rejection_condition": "يضعف C0 إذا فسرت بنية موجبة واحدة اتجاهات من وإلى وفي وعلى وباء، وفصلت بانتظام بين مساهمة الجذر ومساهمات القول والقلب والكذب والإطفاء والسياق، ونجت من حالات الضغط الست."
+      }
+    ],
+    "hash_scope": "hypotheses canonical JSON only",
+    "hypotheses_canonical_json_sha256": "53c45dcaa6cd7a989d6d68d50402f253e7da48f000d46226ac84829e673485cd"
+  },
+  "observations": [
+    {
+      "occurrence_ref": "3:118:19:1",
+      "form": "QAC form=N وPOS=N؛ السطح القرآني «أَفْوَاهِهِمْ» اسم مضاف إلى ضمير الجمع ومسبوق بـ«مِنْ».",
+      "syntax": "شبه الجملة «مِنْ أَفْوَاهِهِمْ» متعلق بـ«بَدَتِ»؛ «ٱلْبَغْضَاءُ» هي البارزة، والفم جهة ابتداء ظهورها في العبارة.",
+      "participant_roles": "البارز: البغضاء؛ جهة الظهور: أفواه أصحاب الضمير؛ المقابل السياقي الداخلي: الصدور التي تخفي ما هو أكبر.",
+      "local_context": "تقابل الآية بين بروز البغضاء من الأفواه وخفاء شيء أكبر في الصدور؛ فيسند السياق الكشف إلى ما خرج عند الفم، لا إلى أن لفظ الفم نفسه يعني البغضاء أو الكذب.",
+      "unresolved_ambiguity": "لا يحدد النص هنا هل البروز كان بقول صريح وحده أم بكل أثر خرج عند الفم؛ لذلك لا يحمل قصد الكشف ولا نوع المخرج على الجذر."
+    },
+    {
+      "occurrence_ref": "3:167:25:2",
+      "form": "QAC form=N وPOS=N؛ السطح «بِأَفْوَاهِهِم» اسم جمع مضاف إلى ضمير الجمع داخل بناء الباء.",
+      "syntax": "«بِأَفْوَاهِهِم» قيد لـ«يَقُولُونَ» يعيّن آلة أو واسطة الأداء الظاهر، بينما «مَا لَيْسَ فِي قُلُوبِهِمْ» مفعول القول ومحل المقابلة.",
+      "participant_roles": "القائلون هم أصحاب الأفواه والقلوب؛ الفم واسطة القول؛ القلب موضع ما ينفي السياق وجود مضمون القول فيه؛ الكتمان فعل لاحق مسند إليهم.",
+      "local_context": "الموضع يثبت انفصال الأداء بالفم عن المحتوى القلبي في هذه الجماعة، لكنه لا يجعل عدم المطابقة خاصية لازمة للفم في كل موضع.",
+      "unresolved_ambiguity": "الباء قابلة للوصف آليا أو ملابسة؛ لا يؤثر هذا في ثبوت أن عدم موافقة القلب قيد سياقي لا مساهمة جذرية."
+    },
+    {
+      "occurrence_ref": "5:41:13:2",
+      "form": "QAC form=N وPOS=N؛ السطح «بِأَفْوَاهِهِمْ» اسم جمع مضاف إلى ضمير الجمع مع الباء.",
+      "syntax": "يتعلق «بِأَفْوَاهِهِمْ» بقولهم «ءَامَنَّا»، ثم يعطف «وَلَمْ تُؤْمِن قُلُوبُهُمْ» مقابلا يقيّد صدق ذلك القول.",
+      "participant_roles": "أصحاب الضمير يؤدون قول الإيمان بأفواههم؛ قلوبهم هي الطرف المنفي عنه الإيمان في هذا السياق.",
+      "local_context": "الفم قناة الأداء المنطوق، وحكم عدم الإيمان يأتي من نفي مستقل عن القلوب؛ فلا يسند الزيف إلى الجذر نفسه.",
+      "unresolved_ambiguity": "لا يبيّن هذا الموضع وحده مقدار القصد أو كيفية النطق؛ كلاهما خارج الحد الأدنى المرشح للجذر."
+    },
+    {
+      "occurrence_ref": "9:8:12:2",
+      "form": "QAC form=N وPOS=N؛ السطح «بِأَفْوَاهِهِمْ» اسم جمع مضاف مع الباء.",
+      "syntax": "«بِأَفْوَاهِهِمْ» قيد وسيلة للفعل «يُرْضُونَكُم»، ثم تأتي جملة «وَتَأْبَىٰ قُلُوبُهُمْ» مقابلة مستقلة.",
+      "participant_roles": "الفاعلون أصحاب الأفواه والقلوب؛ المخاطبون هدف الإرضاء؛ الفم واسطة الفعل الظاهر والقلب طرف الرفض الداخلي.",
+      "local_context": "التباين بين الإرضاء بالفم وإباء القلب يحدد عدم التطابق في هذا الخطاب، ولا يثبت أن الفم يحمل معنى الخداع أو الرفض.",
+      "unresolved_ambiguity": "مادة الإرضاء اللفظية غير منصوصة هنا؛ يستدل على الأداء الظاهر من تركيب الفعل مع الفم، لا على عبارة بعينها."
+    },
+    {
+      "occurrence_ref": "9:30:13:2",
+      "form": "QAC form=N وPOS=N؛ السطح «بِأَفْوَاهِهِمْ» اسم جمع مضاف مع الباء.",
+      "syntax": "«بِأَفْوَاهِهِمْ» قيد للاسم «قَوْلُهُم» بعد عرض قولين، ثم يرد تشبيه ذلك القول بقول سابق.",
+      "participant_roles": "أصحاب الضمير منتجو القول؛ الفم آلة إبرازه؛ مضمون القول والتشابه مع قول سابق محددان خارج لفظ الفم.",
+      "local_context": "اقتران القول بالفم يبرز تحققه كقول صادر، لكن الحكم عليه ومضاهاته مستمدان من الجمل المحيطة لا من الجذر.",
+      "unresolved_ambiguity": "لا يحسم الموضع هل ذكر الفم يركز على مجرد التلفظ أو على حد آخر في القول؛ القدر الآمن هو الآلية الظاهرة."
+    },
+    {
+      "occurrence_ref": "9:32:6:2",
+      "form": "QAC form=N وPOS=N؛ السطح «بِأَفْوَاهِهِمْ» اسم جمع مضاف مع الباء.",
+      "syntax": "شبه الجملة قيد آلي أو وسائطي لمحاولة «أَن يُطْفِئُوا نُورَ ٱللَّهِ»، ويقابلها امتناع تمام الأثر ثم إرادة الله إتمام النور.",
+      "participant_roles": "المريدون هم أصحاب الأفواه؛ الفم الأداة المسندة إلى محاولة الإطفاء؛ النور هو المتأثر المقصود؛ تمام النور نتيجة مقابلة تمنع نجاح المحاولة.",
+      "local_context": "هذا الموضع يضغط فرضية القول فقط: النص يسند إلى الفم محاولة تأثير، ولا يصرح داخل الآية هل الوسيلة نفخ أو قول أو معارضة أوسع؛ لذلك يبقى الفم أداة ويأتي نوع الفعل من السياق.",
+      "unresolved_ambiguity": "الآلية المحلية الدقيقة للإطفاء غير محسومة من النص المسموح؛ لا يجوز إدخال النفخ أو القول في Root Concept على سبيل القطع."
+    },
+    {
+      "occurrence_ref": "13:14:18:1",
+      "form": "QAC form=N وPOS=N؛ السطح «فَاهُ» اسم مفرد مضاف إلى الضمير ومفعول لـ«يَبْلُغَ».",
+      "syntax": "في التشبيه يبسط شخص كفيه إلى الماء لكي يبلغ الماء فاه، ثم تنفي الجملة التالية بلوغ الماء إياه.",
+      "participant_roles": "الباسط صاحب الكفين والفم؛ الماء هو الشيء المطلوب بلوغه؛ الفم غاية الوصول؛ نفي البلوغ يصف فشل الوسيلة.",
+      "local_context": "الموضع حسي مباشر لا يعتمد على القول: الفم جهة يراد وصول الماء إليها، وبذلك يمنع اختزال الجذر في الكلام أو الإظهار اللفظي.",
+      "unresolved_ambiguity": "الصورة تشبيه لسياق الدعاء وعدم الاستجابة، لكن وظيفة الفم داخل الصورة ثابتة كغاية وصول؛ دلالة الضلال لا تنسب إلى الجذر."
+    },
+    {
+      "occurrence_ref": "14:9:24:1",
+      "form": "QAC form=N وPOS=N؛ السطح «أَفْوَاهِهِمْ» اسم جمع مضاف إلى ضمير الجمع ومسبوق بـ«فِي».",
+      "syntax": "«أَيْدِيَهُمْ» مفعول «فَرَدُّوا»، و«فِي أَفْوَاهِهِمْ» جهة مكانية للحركة؛ يعقب الفعل قول صريح برفض الرسالة والشك.",
+      "participant_roles": "الأقوام المذكورون فاعلو الرد وأصحاب الأيدي؛ الضمير الظاهر في الأفواه يعود إلى الجماعة نفسها؛ الأيدي هي الشيء المحرك والفم جهة الإدخال أو الرد.",
+      "local_context": "يثبت الموضع صلاح الفم لأن يكون موضعا تتجه إليه اليد، ثم يفصل النص القول اللاحق في جملة مستقلة؛ وهذا يقاوم جعل الفم مرادفا للقول.",
+      "unresolved_ambiguity": "لا يحدد النص المسموح ماهية الحركة أو الإشارة المقصودة ولا مقدار دخول اليد؛ تبقى هيئة الفعل ومعناها الخطابي الدقيق UNRESOLVED."
+    },
+    {
+      "occurrence_ref": "18:5:12:1",
+      "form": "QAC form=N وPOS=N؛ السطح «أَفْوَاهِهِمْ» اسم جمع مضاف ومسبوق بـ«مِنْ».",
+      "syntax": "«كَلِمَةً» هي الخارجة، و«مِنْ أَفْوَاهِهِمْ» جهة ابتداء الخروج؛ ثم يقصر السياق قولهم على الكذب.",
+      "participant_roles": "الكلمة هي الخارج؛ أفواه أصحاب الضمير مبدأ الخروج؛ العلم منفي عنهم وعن آبائهم؛ الكذب حكم على القول.",
+      "local_context": "يعرض الفم حدا يخرج منه القول، أما كبر الكلمة وكذبها وغياب العلم بها فقيود تقويمية سياقية.",
+      "unresolved_ambiguity": "لا يحتاج الموضع إلى افتراض أن كل خارج من الفم قول كاذب؛ نوع الخارج مصرح به في «كلمة» وحكمه في «كذبا»."
+    },
+    {
+      "occurrence_ref": "24:15:5:2",
+      "form": "QAC form=N وPOS=N؛ السطح «بِأَفْوَاهِكُم» اسم جمع مضاف إلى ضمير المخاطبين مع الباء.",
+      "syntax": "«بِأَفْوَاهِكُم» قيد لـ«تَقُولُونَ»، مع بناء مواز «تَلَقَّوْنَهُ بِأَلْسِنَتِكُمْ»؛ مفعول القول شيء لا علم لهم به.",
+      "participant_roles": "المخاطبون متلقون باللسان وقائلون بالفم؛ القول المنقول هو المفعول؛ العلم منفي عن القائلين؛ تقدير الفعل بالهين مقابل عظمته عند الله.",
+      "local_context": "يسند السياق تداول القول إلى أدوات جسدية مسماة، ويجعل غياب العلم والاستخفاف حكمين مستقلين؛ فلا يحمل الفم معنى الجهل أو البهتان.",
+      "unresolved_ambiguity": "العلاقة الدقيقة بين «بألسنتكم» و«بأفواهكم» لا تكفي وحدها لتفريد جذري بين اللسان والفم ضمن المدخلات المقيدة."
+    },
+    {
+      "occurrence_ref": "33:4:22:2",
+      "form": "QAC form=N وPOS=N؛ السطح «بِأَفْوَاهِكُمْ» اسم جمع مضاف إلى المخاطبين مع الباء.",
+      "syntax": "«بِأَفْوَاهِكُمْ» قيد للاسم «قَوْلُكُم»؛ يقابل هذا القول نفي أن تكون التسميات القولية قد أحدثت العلاقات المذكورة، ثم يقابل بقول الله الحق.",
+      "participant_roles": "المخاطبون أصحاب القول والأفواه؛ العلاقات الأسرية هي موضوع القول المنفي عنه أثر الجعل؛ قول الله طرف المقابلة الموصوف بالحق.",
+      "local_context": "الفم آلة صدور تسمية بشرية لا تنشئ بذاتها الواقع المذكور؛ بطلان الأثر وحق المقابل قضيتان سياقيتان لا خاصيتان للجذر.",
+      "unresolved_ambiguity": "لا يثبت الموضع أن كل «قول بالفم» باطل؛ التقييد خاص بالأقوال المعينة التي عرضتها الآية."
+    },
+    {
+      "occurrence_ref": "36:65:4:1",
+      "form": "QAC form=N وPOS=N؛ السطح «أَفْوَاهِهِمْ» اسم جمع مضاف ومسبوق بـ«عَلَى».",
+      "syntax": "«عَلَى أَفْوَاهِهِمْ» يعيّن الهدف الذي يقع عليه الختم؛ بعده تسند المكالمة إلى الأيدي والشهادة إلى الأرجل.",
+      "participant_roles": "الله فاعل الختم؛ الأفواه هي الهدف المختوم؛ الأيدي والأرجل أعضاء بديلة أسند إليها الكلام والشهادة؛ أصحابها موضوع الحساب على الكسب.",
+      "local_context": "الختم على الفم يمنع وظيفته المعتادة في الأداء، بينما يمنح السياق أعضاء أخرى كلاما وشهادة؛ فيثبت أن الفم عضو قابل للمنع ولا يساوي الكلام ذاته.",
+      "unresolved_ambiguity": "كيفية الختم وكيفية كلام الأيدي خارجان عن دعوى الجذر؛ لا يستنبط منهما عامل صرفي أو قدرة ذاتية ثابتة للأعضاء."
+    },
+    {
+      "occurrence_ref": "61:8:5:2",
+      "form": "QAC form=N وPOS=N؛ السطح «بِأَفْوَاهِهِمْ» اسم جمع مضاف مع الباء.",
+      "syntax": "شبه الجملة قيد آلي أو وسائطي لـ«لِيُطْفِئُوا نُورَ ٱللَّهِ»؛ تقابله جملة «وَٱللَّهُ مُتِمُّ نُورِهِ».",
+      "participant_roles": "المريدون أصحاب الأفواه؛ الفم الأداة في محاولة الإطفاء؛ نور الله هو المتأثر المقصود؛ الإتمام نتيجة مقابلة.",
+      "local_context": "الآية السابقة تذكر افتراء الكذب واللاحقة ذكر الرسول والهدى، لكن الآية المستهدفة لا تعين وحدها هل الإطفاء بالقول أم بصورة أخرى؛ فالمثبت دور الفم الوسائطي وفشل الأثر المقصود.",
+      "unresolved_ambiguity": "كما في 9:32، تبقى الآلية الدقيقة لعلاقة الفم بالإطفاء UNRESOLVED، ولا تعد الموازاة بين الموضعين دليلا مستقلا على معنى غير مصرح."
+    }
+  ],
+  "layer_separation": {
+    "root": "المرشح الأدنى هو منفذ جسدي حدّي يصل عنده داخل صاحبه بخارجه ويقبل أدوار الوصول والإدخال والخروج والمنع والوساطة.",
+    "derivation_inflection": "لا توجد في المجموعة صيغة فعلية أو اشتقاقية أخرى؛ جميع الإسنادات البنيوية N. يظهر سطح مفرد مضاف في 13:14 وسطوح جمع مضافة في بقية المواضع، فلا ينسب فرق العدد أو الإضافة إلى النواة.",
+    "lexeme": "الفاه أو الأفواه في هذه المادة وحدة اسمية تسند إلى صاحب جسد وتعمل محلا أو غاية أو مبدأ أو أداة. لا تثبت المدخلات المقيدة وحدها خريطة وحدات معجمية خارج هذه المادة.",
+    "form": "ثبات form=N يمنع ادعاء أثر وزن أو صيغة مشتقة؛ مساهمة الاسمية هنا إتاحة أدوار المشاركين والمكان والآلة بحسب البناء.",
+    "construction": "من يختار مبدأ الخروج، والباء تختار الآلة أو الواسطة، والمفعول المباشر مع يبلغ يختار غاية الوصول، وفي تختار جهة الإدخال، وعلى تختار هدف الختم.",
+    "context": "القول والكلمة والبغضاء والإيمان والقلب والعلم والكذب والحق والنور والإطفاء والختم هي محددات مسندية أو خطابية محلية؛ لا تدخل تلقائيا في الجذر.",
+    "local_meaning": "يتحقق اللفظ محليا كغاية للماء، أو موضع لليد، أو مبدأ لخروج كلمة أو ظهور بغضاء، أو أداة لقول أو إرضاء أو محاولة إطفاء، أو هدف للختم.",
+    "final_boundary": "لا تساوي النواة الكلام، ولا الصدق أو الكذب، ولا الظاهر المخالف للباطن، ولا مضمون القول، ولا قصد صاحبه، ولا نجاح الأثر."
+  },
+  "pressure_case_tests": [
+    {
+      "evidence_ref": "token:3:118:19:1",
+      "pressure": "ظهور معنى مجرد هو البغضاء من الأفواه قد يغري بتحميل الفم معنى الكشف النفسي.",
+      "test": "هل يفسر H1 جهة «من» مع إبقاء البغضاء والخفاء في طبقة السياق؟",
+      "observed_result": "نعم؛ الفم مبدأ ظهور أثر، والبغضاء هي الظاهرة، والصدر موضع الخفاء المقابل.",
+      "verdict": "H1_SURVIVES_WITH_CONTEXT_BOUNDARY",
+      "residual_uncertainty": "نوع الأثر الخارج وقصد إظهاره غير محسومين."
+    },
+    {
+      "evidence_ref": "token:9:32:6:2",
+      "pressure": "إسناد محاولة إطفاء النور إلى الأفواه ليس قولا صريحا ولا فعلا حسيا مفصلا.",
+      "test": "هل يكفي دور الآلة في بناء الباء، أم يلزم إدخال النفخ أو القول في الجذر؟",
+      "observed_result": "يكفي الدور الوسائطي لسلامة H1، ولا يسمح النص بتعيين الآلية الدقيقة؛ لذلك لا يضاف النفخ أو القول إلى النواة.",
+      "verdict": "H1_SURVIVES_H2_BOUNDED_MECHANISM_UNRESOLVED",
+      "residual_uncertainty": "الآلية المحلية لعلاقة الفم بالإطفاء غير محسومة."
+    },
+    {
+      "evidence_ref": "token:13:14:18:1",
+      "pressure": "فاه غاية حسية لبلوغ الماء لا قناة قول.",
+      "test": "هل تصمد فرضية المنفذ الجسدي وهل تسقط فرضية القول فقط؟",
+      "observed_result": "الفم غاية مباشرة لوصول الماء داخل التشبيه؛ يوافق H1 ويفند المنافس القولي المحض.",
+      "verdict": "H1_SUPPORTED_SPEECH_ONLY_REJECTED",
+      "residual_uncertainty": "لا تؤثر دلالة التشبيه الكلية في هوية دور الفم المحلي."
+    },
+    {
+      "evidence_ref": "token:14:9:24:1",
+      "pressure": "رد الأيدي في الأفواه يعكس اتجاه الخروج ويترك هيئة الفعل الخطابية غير مبينة.",
+      "test": "هل يقبل H1 الإدخال إلى المنفذ من غير اختراع معنى الحركة؟",
+      "observed_result": "نعم؛ «في» تجعل الأفواه جهة للأيدي، لكن ماهية الحركة ودلالتها الخطابية لا تحسمان.",
+      "verdict": "H1_SURVIVES_LOCAL_MEANING_UNRESOLVED",
+      "residual_uncertainty": "هذا أقوى مثال صعب؛ هيئة الرد ومعناها الدقيق غير محسومين."
+    },
+    {
+      "evidence_ref": "token:36:65:4:1",
+      "pressure": "الختم على الأفواه ثم كلام الأيدي قد يوهم أن معنى الفم هو الكلام نفسه.",
+      "test": "هل يفرق H1 بين العضو المختوم والوظيفة التي يمنعها السياق؟",
+      "observed_result": "نعم؛ الفم هدف مادي للختم، والكلام يسند سياقيا إلى أعضاء أخرى؛ العضو والوظيفة غير متطابقين.",
+      "verdict": "H1_SUPPORTED_SPEECH_IDENTITY_REJECTED",
+      "residual_uncertainty": "كيفية الختم وكلام الأعضاء ليستا من دعوى الجذر."
+    },
+    {
+      "evidence_ref": "token:61:8:5:2",
+      "pressure": "تكرار محاولة الإطفاء بالأفواه في سياق آخر قد يدفع إلى حسم آلية غير مصرحة بالموازاة.",
+      "test": "هل يضيف التكرار ما يسمح بحسم القول أو النفخ، أم يثبت فقط الدور الوسائطي؟",
+      "observed_result": "يثبت التكرار انتظام بناء الآلة وفشل الأثر المقصود، ولا يحسم الآلية؛ لا تستعمل الموازاة لتوليد معنى زائد.",
+      "verdict": "H1_SURVIVES_H2_BOUNDED_MECHANISM_UNRESOLVED",
+      "residual_uncertainty": "الآلية المحلية تبقى غير محسومة في الموضعين 9:32 و61:8."
+    }
+  ],
+  "proposition_audit": [
+    {
+      "proposition_id": "P1_BOUNDARY_OPENING_CORE",
+      "proposition": "الجامع الموجب بين المواضع هو منفذ جسدي حدّي يقبل الوصول والإدخال والخروج والمنع والوساطة.",
+      "scope": "ALL_13_CONFIRMED_WORD_REFS",
+      "evidence_refs": [
+        "token:3:118:19:1",
+        "token:3:167:25:2",
+        "token:5:41:13:2",
+        "token:9:8:12:2",
+        "token:9:30:13:2",
+        "token:9:32:6:2",
+        "token:13:14:18:1",
+        "token:14:9:24:1",
+        "token:18:5:12:1",
+        "token:24:15:5:2",
+        "token:33:4:22:2",
+        "token:36:65:4:1",
+        "token:61:8:5:2"
+      ],
+      "finding_outcome": "SUPPORTED_WITH_EXPLICIT_LAYER_BOUNDARIES",
+      "rationale": "توزيع الاتجاهات والتركيبات الخمسة يفسر الأدوار دون إدخال مضمون القول أو تقويمه في النواة."
+    },
+    {
+      "proposition_id": "P2_SPEECH_ONLY_CORE",
+      "proposition": "الفم في الجذر هو القول أو قناة القول فقط.",
+      "scope": "ALL_13_CONFIRMED_WORD_REFS",
+      "evidence_refs": [
+        "token:13:14:18:1",
+        "token:14:9:24:1",
+        "token:36:65:4:1"
+      ],
+      "finding_outcome": "NOT_SUPPORTED",
+      "rationale": "غاية الماء وموضع اليد وهدف الختم أدوار لا تحتاج إلى قول؛ والقول وظيفة سياقية لا هوية الجذر."
+    },
+    {
+      "proposition_id": "P3_FALSE_OR_OUTER_VS_INNER_CORE",
+      "proposition": "الفم يحمل بذاته معنى قول ظاهر كاذب أو مخالف للباطن.",
+      "scope": "ALL_13_CONFIRMED_WORD_REFS",
+      "evidence_refs": [
+        "token:3:167:25:2",
+        "token:5:41:13:2",
+        "token:9:8:12:2",
+        "token:13:14:18:1",
+        "token:36:65:4:1"
+      ],
+      "finding_outcome": "NOT_SUPPORTED",
+      "rationale": "عدم المطابقة والكذب يصرح بهما القلب أو العلم أو الحكم السياقي، بينما المواضع الحسية لا تحملهما."
+    },
+    {
+      "proposition_id": "P4_OUTWARD_DIRECTION_ONLY",
+      "proposition": "مساهمة الجذر مقصورة على الخروج إلى الخارج.",
+      "scope": "ALL_13_CONFIRMED_WORD_REFS",
+      "evidence_refs": [
+        "token:3:118:19:1",
+        "token:18:5:12:1",
+        "token:13:14:18:1",
+        "token:14:9:24:1",
+        "token:36:65:4:1"
+      ],
+      "finding_outcome": "NOT_SUPPORTED",
+      "rationale": "من يثبت الخروج في موضعين، لكن بلوغ الماء والإدخال والختم تثبت أن الاتجاه تحدده التراكيب لا الجذر."
+    },
+    {
+      "proposition_id": "P5_BI_AFWAH_VISIBLE_MEANS",
+      "proposition": "الباء مع أفواه تقدم الفم آلة أو واسطة لفعل ظاهر، دون أن تحمل مضمون الفعل أو نجاحه.",
+      "scope": "EIGHT_BI_AFWAH_WORD_REFS",
+      "evidence_refs": [
+        "token:3:167:25:2",
+        "token:5:41:13:2",
+        "token:9:8:12:2",
+        "token:9:30:13:2",
+        "token:9:32:6:2",
+        "token:24:15:5:2",
+        "token:33:4:22:2",
+        "token:61:8:5:2"
+      ],
+      "finding_outcome": "SUPPORTED_BOUNDEDLY",
+      "rationale": "الأفعال القولية والإرضاء ومحاولتا الإطفاء تقبل الدور الآلي، لكن آلية الإطفاء الدقيقة تظل غير محسومة."
+    },
+    {
+      "proposition_id": "P6_FORM_AND_FAMILY_LIMIT",
+      "proposition": "المادة الحالية تكفي لإثبات اختلاف مشتقات أو تفريد الجذر عن جيران دلاليين.",
+      "scope": "CURRENT_RESTRICTED_INPUT",
+      "evidence_refs": [
+        "token:3:118:19:1",
+        "token:61:8:5:2"
+      ],
+      "finding_outcome": "NOT_ESTABLISHED",
+      "rationale": "كل الصفوف form=N، ولم يفتح corpus لجيران بنيويين أو دلاليين؛ لذلك لا يثبت أثر اشتقاقي ولا بقية مميزة أمام جار، ويمنع ذلك القوة STRONG."
+    }
+  ],
+  "falsification_summary": {
+    "status": "PASSED",
+    "tested_hypothesis": "H1_POSITIVE_ROOT",
+    "tested_against": [
+      "H2_SPEECH_ONLY_COMPETITOR",
+      "C0_UNRESOLVED_NULL",
+      "OUTWARD_DIRECTION_ONLY_VARIANT",
+      "FALSE_OR_OUTER_VS_INNER_VARIANT"
+    ],
+    "searched_corpus_refs": [
+      "token:3:118:19:1",
+      "token:3:167:25:2",
+      "token:5:41:13:2",
+      "token:9:8:12:2",
+      "token:9:30:13:2",
+      "token:9:32:6:2",
+      "token:13:14:18:1",
+      "token:14:9:24:1",
+      "token:18:5:12:1",
+      "token:24:15:5:2",
+      "token:33:4:22:2",
+      "token:36:65:4:1",
+      "token:61:8:5:2"
+    ],
+    "strongest_counterexample": "token:14:9:24:1 — «فَرَدُّوا أَيْدِيَهُمْ فِي أَفْوَاهِهِمْ» يثبت جهة الإدخال لكنه لا يحسم هيئة الفعل أو معناه الخطابي؛ بقيت المحلية UNRESOLVED ولم تحتج النواة إلى اختراعها.",
+    "result": "نجت H1 من جميع المواضع وحالات الضغط الست بشرط إبقاء نوع القول وتقويمه، مخالفة القلب، آلية الإطفاء، هيئة رد الأيدي، والختم في طبقات التركيب والسياق. سقط المنافس القولي المحض، لكن غياب تفريد عائلة دلالية وغياب تنوع صيغ مشتقة يبقيان القوة MODERATE."
+  },
+  "research_judgment": {
+    "contract_type": "ROOT_CONCEPT",
+    "research_state": "PREFERRED",
+    "claim_scope": "UNIVERSAL",
+    "sampling_basis": null,
+    "result_strength": "MODERATE",
+    "preferred_conclusion": "في جميع مواضع fwh الثلاثة عشر المؤكدة في snapshot المحدد، يسهم الجذر في تسمية منفذ جسدي حدّي يصل عنده داخل صاحب الجسد بخارجه، ويترك للتركيب والسياق تعيين الوصول إليه أو الإدخال فيه أو الخروج منه أو الختم عليه أو استعماله آلة لفعل.",
+    "root_concept": "منفذ جسدي حدّي يصل عنده داخل صاحبه بخارجه ويقبل أدوار الوصول والإدخال والخروج والمنع والوساطة.",
+    "plain_explanation": "تجمع الآيات بين ماء يراد أن يبلغ الفم، ويد ترد فيه، وكلمة تخرج منه، وأفواه يقع عليها الختم، وأفعال تؤدى بها. الجامع ليس الكلام ولا الكذب، بل العضو الحدّي الذي يكون موضعا أو غاية أو مبدأ أو أداة، بينما يحدد كل تركيب وسياق الفعل المحلي.",
+    "semantic_boundary": "يدخل في النواة كون الفم منفذا جسديا حديا صالحا لأدوار اتجاهية ووسائطية مثبتة. لا يدخل فيها الصدق أو الكذب، موافقة القلب أو مخالفته، العلم أو الجهل، مضمون القول، قصد صاحبه، جهة الحركة بعينها، نجاح الإطفاء، الآلية الدقيقة في 9:32 و61:8، ولا هيئة رد الأيدي في 14:9.",
+    "layer_attribution": {
+      "root": "منفذ جسدي حدّي بين داخل صاحب الجسد وخارجه، محايد لاتجاه الحركة ولمضمون الفعل وتقويمه.",
+      "derivation_inflection": "كل الإسنادات البنيوية N؛ فرق المفرد والجمع والإضافة للضمائر صرف اسمي ولا يغير النواة المثبتة.",
+      "lexeme": "الفاه أو الأفواه وحدة اسمية لعضو صاحب الجسد، ويستعار دوره التركيبي للقول أو الإرضاء أو محاولة الإطفاء دون تحويل تلك الأفعال إلى النواة.",
+      "form": "الاسمية تتيح إسناد أدوار المصدر والآلة والغاية والمحل والهدف؛ لا توجد صيغة مشتقة أخرى في corpus الحالي لتقرير أثر وزن.",
+      "construction": "من=مبدأ خروج أو ظهور؛ الباء=آلة أو واسطة؛ المفعول مع يبلغ=غاية وصول؛ في=جهة إدخال؛ على=هدف ختم.",
+      "local_form_roles": "الفم يتعاقب مبدأ للكلمة والبغضاء، وغاية للماء، ومحلا لليد، ووسيلة لأفعال ظاهرة، وهدفا للختم.",
+      "context": "القلب والصدر والعلم والكذب والحق والنور والإطفاء والختم تحدد محتوى الفعل وتقويمه ونجاحه محليا ولا تعيد تعريف الجذر.",
+      "local_meaning": "يحدد كل مسند وحرف جر معنى الموضع: خروج أو بلوغ أو إدخال أو أداء أو محاولة أو منع.",
+      "final_statement": "المفهوم المفضل جامع موجب داخل المجموعة الكاملة، لكنه MODERATE لاقتصار المادة على form=N ولعدم إجراء تفريد جار دلالي ضمن المدخلات المسموحة."
+    },
+    "supporting_evidence_refs": [
+      "token:3:118:19:1",
+      "token:3:167:25:2",
+      "token:5:41:13:2",
+      "token:9:8:12:2",
+      "token:9:30:13:2",
+      "token:9:32:6:2",
+      "token:13:14:18:1",
+      "token:14:9:24:1",
+      "token:18:5:12:1",
+      "token:24:15:5:2",
+      "token:33:4:22:2",
+      "token:36:65:4:1",
+      "token:61:8:5:2"
+    ],
+    "counterevidence_refs": [
+      "token:3:118:19:1",
+      "token:9:32:6:2",
+      "token:13:14:18:1",
+      "token:14:9:24:1",
+      "token:36:65:4:1",
+      "token:61:8:5:2"
+    ],
+    "unresolved_cases": [
+      "token:14:9:24:1 — هيئة رد الأيدي في الأفواه ومعناها الخطابي الدقيق غير محسومين من النص المسموح.",
+      "token:9:32:6:2 — الآلية الدقيقة لاستعمال الأفواه في محاولة الإطفاء غير محسومة.",
+      "token:61:8:5:2 — الموازاة مع 9:32 لا تحسم هل الآلية قول أو نفخ أو غير ذلك.",
+      "العلاقة التفريقية الموجبة بين fwh وأي جار دلالي لم تختبر لأن المدخلات المقيدة لا تشمل corpus جيران.",
+      "ثبات النواة عبر مشتقات أو صيغ غير اسمية غير قابل للاختبار لأن جميع المواضع المؤكدة الحالية form=N."
+    ],
+    "hard_cases": [
+      "token:3:118:19:1 — ظهور البغضاء من الأفواه مع مقابل الصدور.",
+      "token:9:32:6:2 — محاولة إطفاء نور الله بالأفواه وآليتها غير المصرحة.",
+      "token:13:14:18:1 — بلوغ الماء الفم يفند الاختزال في القول.",
+      "token:14:9:24:1 — رد الأيدي في الأفواه مع غموض هيئة الفعل.",
+      "token:36:65:4:1 — الختم على الأفواه مع كلام الأيدي وشهادة الأرجل.",
+      "token:61:8:5:2 — تكرار الإطفاء بالأفواه دون حسم الآلية."
+    ],
+    "strongest_counterexample": "token:14:9:24:1 هو أقوى موضع ضاغط: يثبت أن الفم جهة للأيدي لكنه لا يحدد هيئة الرد أو معناه الخطابي؛ بقي الغموض محليا ولم ينقض مفهوم المنفذ الحدّي.",
+    "strongest_competitor": "أن تكون مساهمة fwh هي قناة القول أو الإظهار اللفظي الخارجي فقط؛ يرفضها مباشرة بلوغ الماء فاه في 13:14، ورد الأيدي في الأفواه في 14:9، والختم على الأفواه في 36:65.",
+    "rejection_condition": {
+      "challenging_finding": "موضع مؤكد ضمن corpus يظهر فيه فاه أو أفواه بلا إمكان إسناده إلى منفذ جسدي أو إلى استعمال تركيبي متتبع لذلك المنفذ، أو يلزم فيه إدخال القول أو الصدق أو الكذب أو جهة حركة بعينها في النواة.",
+      "search_location": "جميع word_refs الثلاثة عشر المؤكدة للجذر fwh في snap_tanzil_1_1_ac0724796cbb، مع اختبار خاص لحالات الضغط الست المسجلة.",
+      "verification_method": "محاذاة كل token مع نص آيته وسياق الآية السابقة واللاحقة، ثم فصل root وform وlexeme وconstruction وparticipant roles وcontext وفحص اتجاهات من والباء والوصول المباشر وفي وعلى ضد H1 والمنافس القولي وC0.",
+      "confounder_control": "عدم إسناد دلالات المسندات مثل يقولون ويرضون ويطفئوا ويبلغ وتخرج ونختم، ولا أحكام القلب والعلم والكذب والحق، إلى الجذر؛ وعدم استعمال prior أو ترجمة أو معجم أو تفسير أو ذاكرة.",
+      "failure_consequence": "REJECT_OR_RESCOPE_H1؛ وإذا كشف الموضع مشكلة في إسناد الجذر فالعاقبة STRUCTURAL_REVIEW بدلا من اختراع نواة ثانية."
+    },
+    "falsification_status": "PASSED",
+    "reopen_conditions": [
+      "إضافة word_ref جديد أو تعديل إسناد fwh أو attribution_status أو extraction_version بما يغير مجموعة المواضع المؤكدة.",
+      "تفعيل snapshot قرآني إنتاجي آخر أو تغير بصمة نص Tanzil أو منهجية الاستخراج النشطة.",
+      "ظهور دليل قرآني داخلي من corpus جار يختبر التفريد ويعارض البقية الموجبة المقترحة.",
+      "حسم بنيوي موثق يغير تحليل 14:9 أو يثبت آلية 9:32 و61:8 بما يمس الحد بين الجذر والتركيب.",
+      "اكتشاف أن أي ملاحظة من الصفوف الثلاثة عشر تحمل معنى سياقيا داخل مساهمة الجذر دون مسوغ."
+    ]
+  },
+  "host_compatibility_expectations": {
+    "research_judgment_schema": "backend.domain.schemas.ResearchJudgmentCreate",
+    "canonical_state_intentionally_absent": true,
+    "expected_host_derived_occurrence_unit": "word_ref",
+    "expected_host_derived_eligible_occurrence_count": 13,
+    "expected_host_derived_evidenced_occurrence_count": 13,
+    "expected_host_derived_index_complete": true,
+    "expected_host_derived_sufficient_for_claim": true,
+    "deep_analysis_note": "الصفوف الستية هنا substantive، لكنها ليست ادعاء بأن observation_artifacts قد كتبت إلى DB؛ لم يجر أي DB write."
+  },
+  "integrity": {
+    "hash_algorithm": "SHA-256",
+    "canonical_section_serialization": "UTF-8; JSON sort_keys=true; separators=(',',':'); ensure_ascii=false",
+    "initial_hypotheses_sha256": "53c45dcaa6cd7a989d6d68d50402f253e7da48f000d46226ac84829e673485cd",
+    "observations_sha256": "de24ad095cb734d32d9d2884b42f5564e8c0f410651e3f037affc84629a9d5f6",
+    "pressure_case_tests_sha256": "eca0c9312836b88a62734134840bbec4cb34f093b13d237c14025c7a355c2d89",
+    "proposition_audit_sha256": "d882781e714d11c91c1d1ef465617a201b9e8e66872e5f55e6682c14757f280e",
+    "research_judgment_sha256": "b67edc3da95488e286f48b2cffab08501c92910df64fff16730f4a10ef164f40",
+    "source_hashes": {
+      "lisanapp_db_file_before_read": "8920d27c3fcdd1a832f091a78a2bad97ed1587b1ea6b9b274416b587d95905ba",
+      "production_tanzil_artifact": "ac0724796cbbda0f4801470fbbd11d0f3c5802067bae0493466d0128b0c667af",
+      "tanzil_identity_index": "0d0a2273e82ebb0d9848ccbf831f1bb297c0fb255413c5aeb299bbfaf2bbc967",
+      "active_semantic_runtime_skill": "01784170cac4e715c1477cb6a04a2c34b21c4bdb91705aa1eb6b2a896efcedbd",
+      "authority_map": "6439e10895f295401f6fb89bd90e18e08a2a86e2ca3c49b435704d20014499f6",
+      "ai_authority_contract": "7e26cc9f09eec183947fc6430fc5c3dfcf972fb1cb47d08039e6ae06ab7c1d30",
+      "platform_canonical_reference": "adf86e1dddf0d97d540315ce50bacfb922e1398ac1d74bc0da7c341bf7ad4086",
+      "purity_structural_evidence_contract": "afbdb9d6c542fd1e562a6b10637d50d88443ea8610260224f39022af2d8fbc0b",
+      "tanzil_admission_record": "d3e1b7e046a2917be1df417c2b3afa42483e35e970144c645e07062f4666bec6",
+      "root_agents_policy": "0512fe7483999b38a2fcd0afd018fe8481e1a26964c6d805d56564630e556156",
+      "research_judgment_schema_source": "071d1ba9f40d98c477425d24848d78bdca1e2f34ceeed183a4c4d17b74d392fb",
+      "research_judgment_validation_source": "b6c345c7180237b9d98ca85d98d215ae642f510f7394c47233571f8227cc9689"
+    },
+    "read_extract_hashes": {
+      "snapshot_extract_sha256": "c6c079bf3b9698de4f023defa2b9c09494c1dda50fc7f707273b63ad5fd2ae56",
+      "fwh_confirmed_token_and_target_verse_extract_sha256": "22e164ccca2e7934bd37d3b64b81244a2b360e1ffd6851115a0c3bbbd98a4d62",
+      "target_plus_adjacent_context_extract_sha256": "30ec1158aa2691fe104be86352642e7e367434f4c7a58dbe661a6178ec10aa3f",
+      "serialization": "SQLite ordered rows; U+001F field separator; U+001E row separator; UTF-8"
+    }
+  },
+  "access_log": [
+    {
+      "sequence": 1,
+      "resource": "CURRENT_OWNER_INSTRUCTION_AND_ROOT_AGENTS_POLICY",
+      "access": "READ",
+      "purpose": "تثبيت النطاق والمحظورات وترتيب السلطة",
+      "result": "AUTHORIZED_BOUNDARY_APPLIED"
+    },
+    {
+      "sequence": 2,
+      "resource": "skill://lisan-quran/SKILL.md_and_required_governance_methodology",
+      "access": "READ",
+      "purpose": "تطبيق corpus-first والفصل الطبقي والتجميد والدحض وحالات الصدق",
+      "result": "CURRENT_METHOD_LOADED_NO_SEMANTIC_PRIOR"
+    },
+    {
+      "sequence": 3,
+      "resource": "AUTHORITY_MAP.md; SIMPLIFIED_AI_AUTHORITY_AND_GOVERNANCE_CONTRACT.md; docs/canonical/LISAN_PLATFORM_CANONICAL_IMPLEMENTATION_REFERENCE.md; docs/canonical/LISAN_PURITY_AND_STRUCTURAL_EVIDENCE_CONTRACT.md; docs/canonical/ADMISSION_TANZIL.md",
+      "access": "READ",
+      "purpose": "التحقق من سلطة النص والمنهج وحدود Research Judgment والعزل",
+      "result": "CURRENT_GOVERNANCE_BOUND"
+    },
+    {
+      "sequence": 4,
+      "resource": "skills/lisan-semantic-extraction/SKILL.md",
+      "access": "READ_AND_SHA256",
+      "purpose": "تحميل runtime الدلالي النشط وربطه ببصمة المنهج المسجلة",
+      "result": "SHA256_MATCHES_CURRENT_METHODOLOGY_METADATA"
+    },
+    {
+      "sequence": 5,
+      "resource": "backend/domain/schemas.py; backend/domain/services/research_judgment.py",
+      "access": "READ_AND_SHA256",
+      "purpose": "مطابقة payload مع ResearchJudgmentCreate وقواعد الأدلة والتغطية الحتمية فقط",
+      "result": "SCHEMA_FIELDS_AND_VALIDATION_CONTRACT_RESOLVED"
+    },
+    {
+      "sequence": 6,
+      "resource": "lisanapp.db/corpus_snapshots",
+      "access": "SQLITE_READONLY_FILTER_activation_status_PRODUCTION_ACTIVE",
+      "purpose": "حل snapshot الإنتاجي والتحقق من metadata",
+      "result": "ONE_SNAPSHOT_snap_tanzil_1_1_ac0724796cbb"
+    },
+    {
+      "sequence": 7,
+      "resource": "lisanapp.db/research_runs",
+      "access": "SQLITE_READONLY_FILTER_target_expression_fwh",
+      "purpose": "حل run metadata من دون قراءة observations أو claims",
+      "result": "run_78a439c3"
+    },
+    {
+      "sequence": 8,
+      "resource": "lisanapp.db/methodology_revisions",
+      "access": "SQLITE_READONLY_FILTER_lifecycle_state_CURRENT",
+      "purpose": "حل منهجية run الحالية وبصمتها",
+      "result": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4"
+    },
+    {
+      "sequence": 9,
+      "resource": "lisanapp.db/structural_tokens_JOIN_corpus_occurrences",
+      "access": "SQLITE_READONLY_FILTER_latest_extraction_per_word_ref_AND_root_fwh_AND_attribution_CONFIRMED_AND_production_snapshot",
+      "purpose": "جرد جميع token refs الثلاثة عشر وقراءة نصوص آياتها من Tanzil",
+      "result": "13_CONFIRMED_WORD_REFS_13_TARGET_VERSES"
+    },
+    {
+      "sequence": 10,
+      "resource": "lisanapp.db/corpus_occurrences",
+      "access": "SQLITE_READONLY_FILTER_target_verse_plus_immediate_previous_and_next",
+      "purpose": "تحليل السياق الخطابي المحلي المسموح للمواضع المستهدفة",
+      "result": "39_ORDERED_CONTEXT_ROWS"
+    },
+    {
+      "sequence": 11,
+      "resource": "FORBIDDEN_CLASSES",
+      "access": "NOT_ACCESSED",
+      "purpose": "حفظ استقلال producer cycle 2",
+      "result": "NO_SEMANTIC_CLAIMS_NO_PRIOR_OBSERVATIONS_NO_BATCH07_NO_PROJECT_STATE_NO_FIVE_ROOT_ARTIFACTS_NO_EXTERNAL_SEMANTICS_NO_WEB_NO_MEMORY"
+    }
+  ]
+}
