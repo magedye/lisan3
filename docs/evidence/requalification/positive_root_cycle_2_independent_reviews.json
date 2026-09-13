@@ -1,0 +1,54 @@
+{
+  "artifact": "POSITIVE_ROOT_CYCLE_2_INDEPENDENT_REVIEWS",
+  "recorded_at": "2026-09-13T11:50:00+03:00",
+  "reviewed_git_checkpoint": "f6973891cbfb295ab8f6c60bdb369a87e010dd7f",
+  "database_sha256": "f34436e278cba18bb68d9312d2066ae99b9d07be9d5dceaf4d9b181f1c45febe",
+  "review_mode": "Three fresh read-only gpt-5.6-sol/xhigh contexts; Batch 07 and predecessor semantics excluded until each initial verdict was frozen.",
+  "roots": {
+    "ESw": {
+      "claim": "jud_da40a233@1",
+      "claim_sha256": "fde44a5e15e9b7d8a661f5ecaa9b3ccd5e8120b830d2c9c4d63915b785c053a0",
+      "claim_projection_bytes": 7221,
+      "exact_set": "12/12",
+      "verdict": "VERIFIED_NARROWER_SCOPE",
+      "root_result": "UNRESOLVED",
+      "stable_semantic_core": "The conservative bare-root unresolved result and strictly bounded nominal lexeme/construction findings are supported.",
+      "blocking_scope_defect": "At least seven persisted observation payloads add adjacent-verse narrative facts outside their declared exact occurrence row: 7:107, 7:117, 20:66, 26:32, 26:45, 26:63, and 28:31. This contradicts the producer diagnostic that no adjacent verse was used.",
+      "automatic_next_action": "SCOPE_ONLY_CORRECTION_CYCLE_3: remove all adjacent-verse clauses, preserve exact-verse source-grounded observations and the unresolved root result, create a new successor, and re-review.",
+      "prohibited_source_access": 0,
+      "writes": 0
+    },
+    "fwh": {
+      "claim": "jud_92e71ead@1",
+      "claim_sha256": "daa2a5a8e3121c4f0ff8926d0fe02d7071d4fe2422af22e0c36c9eba74e70591",
+      "claim_projection_bytes": 6499,
+      "exact_set": "13/13",
+      "verdict": "VERIFIED_AT_SCOPE",
+      "root_result": "UNRESOLVED",
+      "semantic_basis": "The bodily-mouth finding is stable at LEXEME, but all 13 tokens are one nominal family; no derivative/form contrast promotes it to a bare-root contribution.",
+      "pressure_cases": ["3:118", "9:32", "13:14", "14:9", "36:65", "61:8"],
+      "prohibited_source_access": 0,
+      "writes": 0
+    },
+    "glm": {
+      "claim": "jud_da6a8e4c@1",
+      "claim_sha256": "08ce67b174bf26db74b96f1e528c0eb75414bea8bb62988b0488f33fc3a51fcb",
+      "claim_projection_bytes": 8411,
+      "exact_set": "13/13",
+      "verdict": "VERIFIED_AT_SCOPE",
+      "root_result": "UNRESOLVED",
+      "semantic_basis": "The bounded ghulam lexeme finding remains defensible at PREFERRED/MODERATE, but one nominal family cannot isolate a positive bare-root contribution.",
+      "qualification": "Panel source run run_af84788a differs from persistence run run_a9434a53; identical snapshot/method, exact observation hashes, dependencies, traces, and lineage make this non-blocking.",
+      "prohibited_source_access": 0,
+      "writes": 0
+    }
+  },
+  "verification_records_created": 0,
+  "canonical_transitions": 0,
+  "batch_07_comparison": {
+    "ESw": "DEFERRED_UNTIL_CYCLE_3_REVIEW",
+    "fwh": "AUTHORIZED_NEXT",
+    "glm": "AUTHORIZED_NEXT"
+  },
+  "batch_08_status": "BATCH_08_NOT_AUTHORIZED"
+}

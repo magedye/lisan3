@@ -1596,3 +1596,24 @@ the frozen claim. Launch a fresh blind read-only Sol/xhigh review of exact
 Commit/publish the three-root remediation checkpoint. Launch three fresh blind
 read-only reviews of the exact successors; freeze each verdict before historical
 Batch 07 comparison. Then perform final exact-revision delegated decisions.
+
+## ESw / fwh / glm Cycle 2 Independent Reviews (2026-09-13)
+
+- Exact reviewed checkpoint:
+  `f6973891cbfb295ab8f6c60bdb369a87e010dd7f`.
+- `fwh jud_92e71ead@1`: `VERIFIED_AT_SCOPE`; stable root-level UNRESOLVED,
+  with bodily-mouth finding retained only at the single nominal lexeme layer.
+- `glm jud_da6a8e4c@1`: `VERIFIED_AT_SCOPE`; stable root-level UNRESOLVED,
+  with bounded ghulam lexeme result retained separately at MODERATE.
+- `ESw jud_da40a233@1`: `VERIFIED_NARROWER_SCOPE`. The conservative unresolved
+  root conclusion is stable, but at least seven observation payloads include
+  adjacent-verse narrative clauses outside their declared exact occurrence row
+  (7:107, 7:117, 20:66, 26:32, 26:45, 26:63, 28:31), contradicting the panel's
+  no-adjacent-verse diagnostic.
+- Automatic cycle-3 action for ESw: scope-only observation correction. Remove
+  the adjacent-verse clauses, preserve exact-verse source-grounded content and
+  the UNRESOLVED result, create a new successor, and commission fresh re-review.
+- All three reviewers reported zero prohibited-source access and performed no
+  writes or VerificationRecords. Review evidence:
+  `docs/evidence/requalification/positive_root_cycle_2_independent_reviews.json`.
+- Batch 07 comparison is now authorized for fwh/glm only; ESw remains deferred.
