@@ -1,0 +1,495 @@
+{
+  "report_id": "dnw-cycle2-overclaim-adversary-2026-09-13",
+  "report_type": "FRESH_INDEPENDENT_OVERCLAIM_SCOPE_ADVERSARY",
+  "panel": "overclaim_adversary",
+  "cycle": 2,
+  "root": "dnw",
+  "generated_at_utc": "2026-09-13T06:51:53.3693964Z",
+  "defect_category": "PRIOR_PERSISTED_OBSERVATIONS_LACKED_SEMANTIC_SUBSTANCE",
+  "defect_category_count": 1,
+  "scope_attestation": {
+    "fresh_review": true,
+    "read_only_database_access": true,
+    "database_path": "lisanapp.db",
+    "allowed_material_used": [
+      "current governing authority, AI-governance, methodology, semantic-runtime, structural-evidence, and Tanzil-admission contracts",
+      "production Tanzil identity and exact artifact hash",
+      "lisanapp.db structural_tokens rows filtered to root=dnw and attribution_status=CONFIRMED",
+      "the corresponding corpus_occurrences Quran text",
+      "the corresponding research_runs, corpus_snapshots, and methodology_revisions metadata"
+    ],
+    "forbidden_material_not_read": [
+      "semantic_claims payloads",
+      "persisted observation prose or prior observations",
+      "Batch07 artifacts",
+      "PROJECT_STATE",
+      "five-root artifacts",
+      "external semantics, dictionaries, translations, tafsir, web material, and memory"
+    ],
+    "database_tables_with_payload_rows_read": [
+      "structural_tokens",
+      "corpus_occurrences",
+      "research_runs",
+      "corpus_snapshots",
+      "methodology_revisions"
+    ],
+    "semantic_claims_read": false,
+    "prior_observation_prose_read": false,
+    "scope_result": "PASS"
+  },
+  "governing_basis": {
+    "authority_revision": "LISAN3_AI_AUTHORITY_V3_2026_09_06",
+    "implementation_revision": "LISAN3_CANONICAL_IMPLEMENTATION_V3_2026_09_06",
+    "diagnostics_revision": "LISAN3_DIAGNOSTICS_CONTRACT_V3_2026_09_06",
+    "semantic_runtime_revision": "LISAN3_SEMANTIC_RUNTIME_V3_2026_09_06",
+    "methodology_definition": "A Root Concept is the smallest shared semantic structure necessary to explain the root contribution across derivatives and uses after subtracting inflection, construction, and context; multiple lexical units may remain and UNRESOLVED is valid.",
+    "universal_coverage_rule": "A universal claim over all occurrences requires complete host-proven indexed coverage; evidence references must resolve to the same run and source lineage.",
+    "attribution_order": [
+      "root",
+      "derivation_or_inflection",
+      "lexeme",
+      "form",
+      "construction",
+      "local_form_and_roles",
+      "context_or_discourse",
+      "local_meaning",
+      "final_statement"
+    ]
+  },
+  "lineage": {
+    "snapshot_id": "snap_tanzil_1_1_ac0724796cbb",
+    "canonical_text_source": "TANZIL_QURAN_UTHMANI",
+    "canonical_text_version": "1.1",
+    "canonical_text_sha256": "ac0724796cbbda0f4801470fbbd11d0f3c5802067bae0493466d0128b0c667af",
+    "live_artifact_sha256_recomputed": "ac0724796cbbda0f4801470fbbd11d0f3c5802067bae0493466d0128b0c667af",
+    "snapshot_validation_status": "VALIDATED",
+    "snapshot_import_validation_status": "IMPORT_VALIDATED",
+    "snapshot_activation_status": "PRODUCTION_ACTIVE",
+    "snapshot_fixture_only": false,
+    "snapshot_verse_count": 6236,
+    "structural_source_id": "QAC_MORPHOLOGY",
+    "structural_source_version": "0.4",
+    "structural_extraction_version": "qac-0.4-import-v1",
+    "methodology_revision_id": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+    "methodology_source_sha256": "01784170cac4e715c1477cb6a04a2c34b21c4bdb91705aa1eb6b2a896efcedbd",
+    "methodology_lifecycle_state": "CURRENT",
+    "methodology_research_run_eligible": true,
+    "run_metadata": [
+      {
+        "run_id": "run_54946c68",
+        "target_contract": "ROOT_CONCEPT",
+        "current_stage": "JUDGMENT",
+        "status": "ACTIVE"
+      },
+      {
+        "run_id": "run_7aa9aa5f",
+        "target_contract": "ROOT_CONCEPT",
+        "current_stage": "JUDGMENT",
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "exact_set_audit": {
+    "filter": "lower(structural_tokens.root)='dnw' AND attribution_status='CONFIRMED'",
+    "confirmed_token_count": 133,
+    "distinct_token_id_count": 133,
+    "distinct_word_ref_count": 133,
+    "distinct_verse_count": 128,
+    "snapshot_count": 1,
+    "missing_occurrence_join_count": 0,
+    "all_133_tokens_reviewed_against_their_quran_occurrence_text": true,
+    "coverage_claim": "COMPLETE_FOR_THE_133_CONFIRMED_DNW_STRUCTURAL_TOKENS_ON_THE_NAMED_PRODUCTION_SNAPSHOT",
+    "coverage_boundary": "This proves exact-set review of the host-filtered CONFIRMED inventory. It does not independently prove that the structural source found every linguistically possible dnw attribution outside that inventory.",
+    "surface_distribution": [
+      {"surface": "ٱلدُّنْيَا", "form": "ADJ", "pos_tag": "ADJ", "count": 69},
+      {"surface": "ٱلدُّنْيَا", "form": "N", "pos_tag": "N", "count": 41},
+      {"surface": "ٱلدُّنْيَآ", "form": "ADJ", "pos_tag": "ADJ", "count": 5},
+      {"surface": "أَدْنَىٰٓ", "form": "N", "pos_tag": "N", "count": 4},
+      {"surface": "أَدْنَىٰ", "form": "N", "pos_tag": "N", "count": 3},
+      {"surface": "وَأَدْنَىٰٓ", "form": "N", "pos_tag": "N", "count": 1},
+      {"surface": "دَانِيَةٌ", "form": "ADJ", "pos_tag": "ADJ", "count": 1},
+      {"surface": "ٱلْأَدْنَىٰ", "form": "N", "pos_tag": "N", "count": 1},
+      {"surface": "أَدْنَى", "form": "N", "pos_tag": "N", "count": 1},
+      {"surface": "ٱلْأَدْنَىٰ", "form": "ADJ", "pos_tag": "ADJ", "count": 1},
+      {"surface": "يُدْنِينَ", "form": "V", "pos_tag": "V", "count": 1},
+      {"surface": "دَنَا", "form": "V", "pos_tag": "V", "count": 1},
+      {"surface": "دَانٍ", "form": "N", "pos_tag": "N", "count": 1},
+      {"surface": "دَانِيَةٌ", "form": "N", "pos_tag": "N", "count": 1},
+      {"surface": "أَدْنَىٰ", "form": "T", "pos_tag": "T", "count": 1},
+      {"surface": "وَدَانِيَةً", "form": "N", "pos_tag": "N", "count": 1}
+    ],
+    "semantic_partition": [
+      {
+        "cluster": "LEXICALIZED_DUNYA_LIFE_OR_WORLD_DOMAIN",
+        "count": 111,
+        "substance": "The token designates the present-life or present-world domain, either as an overt modifier of life or as an elliptical/substantivized domain expression. The local contexts vary from blame and transience to benefit, good, support, distinction, companionship, and glad tidings; those values belong to the proposition or discourse, not automatically to the root.",
+        "partition_rule": "All ٱلدُّنْيَا or ٱلدُّنْيَآ rows except the four spatial modifier rows named in COMPOSITIONAL_DUNYA_SPATIAL_RELATION."
+      },
+      {
+        "cluster": "COMPOSITIONAL_DUNYA_SPATIAL_RELATION",
+        "count": 4,
+        "word_refs": ["8:42:4:2", "37:6:4:2", "41:12:13:2", "67:5:4:2"],
+        "substance": "The token modifies a bank or a sky and participates in a locative ordering. At 8:42 the explicit opposite bank supplies a direct spatial comparator; the three sky rows identify one sky relationally within a plurality, while the exact geometric axis is not stated in the token alone."
+      },
+      {
+        "cluster": "DANI_STATIVE_NEAR_OR_ACCESSIBLE",
+        "count": 4,
+        "word_refs": ["6:99:24:1", "55:54:9:1", "69:23:2:1", "76:14:1:2"],
+        "substance": "The participial/stative tokens qualify clusters, fruit, or shade as brought within reach or close to a participant. Accessibility is supplied by the local participant relation and must not be inflated into moral value or temporal-world meaning."
+      },
+      {
+        "cluster": "APPROACH_OR_CAUSED_PLACEMENT",
+        "count": 2,
+        "word_refs": ["33:59:8:1", "53:8:2:1"],
+        "substance": "The verb at 53:8 presents approach followed by further relational movement; the verb at 33:59 directs controlled placement of garments upon participants. The second is not merely an instance of physical motion and requires causative/participant-role attribution."
+      },
+      {
+        "cluster": "ADNA_SPATIAL_OR_DISTANCE_SCALE",
+        "count": 2,
+        "word_refs": ["30:3:2:1", "53:9:5:1"],
+        "substance": "At 53:9 a measured-distance construction supplies a direct proximity reading. At 30:3 the land is ordered on a spatial or elevational axis, but the verse alone does not expose the reference point needed to choose nearest versus lower; that distinction remains locally unresolved."
+      },
+      {
+        "cluster": "ADNA_EVALUATIVE_OR_INTENSITY_SCALE",
+        "count": 2,
+        "word_refs": ["2:61:27:1", "32:21:4:2"],
+        "substance": "At 2:61 the explicit better comparator establishes an evaluative lower pole. At 32:21 the lesser/lower punishment is contrasted with the greater punishment, making degree or intensity constructional and excluding a purely spatial root gloss."
+      },
+      {
+        "cluster": "ADNA_QUANTITY_OR_DURATION_SCALE",
+        "count": 2,
+        "word_refs": ["58:7:26:1", "73:20:6:1"],
+        "substance": "The مِن construction orders number at 58:7 and measured duration at 73:20. The local contribution is less than a stated threshold; nearness alone would erase the quantitative axis."
+      },
+      {
+        "cluster": "ADNA_OUTCOME_CONDUCIVE_CONSTRUCTION",
+        "count": 5,
+        "word_refs": ["2:282:93:2", "4:3:26:1", "5:108:2:1", "33:51:17:1", "33:59:13:1"],
+        "substance": "The recurring ذَٰلِكَ أَدْنَىٰ أَنْ or equivalent construction relates a prescribed arrangement to an intended outcome: avoidance of doubt or burden, truthful testimony, emotional contentment, or recognition without harm. The outcome and its desirability come from the clause and discourse; they are not free-standing root content."
+      },
+      {
+        "cluster": "ADNA_LEXICALIZED_LOWER_DOMAIN",
+        "count": 1,
+        "word_refs": ["7:169:10:2"],
+        "substance": "The token qualifies an immediately taken عرض and is contrasted downstream with the later domain as better. It supports a lower/nearer scalar association but does not by itself decide whether temporal availability, value, or both set the axis."
+      }
+    ],
+    "partition_count_check": "111+4+4+2+2+2+2+5+1=133",
+    "reviewed_word_refs": [
+      "2:61:27:1",
+      "2:85:38:2",
+      "2:86:5:2",
+      "2:114:24:2",
+      "2:130:13:2",
+      "2:200:18:2",
+      "2:201:7:2",
+      "2:204:8:2",
+      "2:212:5:2",
+      "2:217:50:2",
+      "2:220:2:2",
+      "2:282:93:2",
+      "3:14:20:2",
+      "3:22:6:2",
+      "3:45:17:2",
+      "3:56:8:2",
+      "3:117:7:2",
+      "3:145:14:2",
+      "3:148:4:2",
+      "3:152:24:2",
+      "3:185:20:2",
+      "4:3:26:1",
+      "4:74:8:2",
+      "4:77:40:2",
+      "4:94:21:2",
+      "4:109:7:2",
+      "4:134:5:2",
+      "4:134:9:2",
+      "5:33:29:2",
+      "5:41:61:2",
+      "5:108:2:1",
+      "6:29:6:2",
+      "6:32:3:2",
+      "6:70:9:2",
+      "6:99:24:1",
+      "6:130:21:2",
+      "7:32:18:2",
+      "7:51:8:2",
+      "7:152:12:2",
+      "7:156:5:2",
+      "7:169:10:2",
+      "8:42:4:2",
+      "8:67:14:2",
+      "9:38:18:2",
+      "9:38:24:2",
+      "9:55:13:2",
+      "9:69:28:2",
+      "9:74:37:2",
+      "9:85:12:2",
+      "10:7:8:2",
+      "10:23:18:2",
+      "10:24:4:2",
+      "10:64:5:2",
+      "10:70:3:2",
+      "10:88:12:2",
+      "10:98:18:2",
+      "11:15:5:2",
+      "11:60:4:2",
+      "12:101:16:2",
+      "13:26:9:2",
+      "13:26:12:2",
+      "13:34:5:2",
+      "14:3:4:2",
+      "14:27:9:2",
+      "16:30:13:2",
+      "16:41:11:2",
+      "16:107:5:2",
+      "16:122:3:2",
+      "18:28:18:2",
+      "18:45:5:2",
+      "18:46:5:2",
+      "18:104:6:2",
+      "20:72:19:2",
+      "20:131:12:2",
+      "22:9:9:2",
+      "22:11:20:2",
+      "22:15:9:2",
+      "23:33:13:2",
+      "23:37:5:2",
+      "24:14:7:2",
+      "24:19:14:2",
+      "24:23:9:2",
+      "24:33:39:2",
+      "28:42:4:2",
+      "28:60:7:2",
+      "28:61:11:2",
+      "28:77:11:2",
+      "28:79:10:2",
+      "29:25:12:2",
+      "29:27:13:2",
+      "29:64:4:2",
+      "30:3:2:1",
+      "30:7:5:2",
+      "31:15:16:2",
+      "31:33:26:2",
+      "32:21:4:2",
+      "33:28:9:2",
+      "33:51:17:1",
+      "33:57:9:2",
+      "33:59:8:1",
+      "33:59:13:1",
+      "35:5:10:2",
+      "37:6:4:2",
+      "39:10:11:2",
+      "39:26:6:2",
+      "40:39:5:2",
+      "40:43:10:2",
+      "40:51:8:2",
+      "41:12:13:2",
+      "41:16:13:2",
+      "41:31:5:2",
+      "42:20:14:2",
+      "42:36:7:2",
+      "43:32:11:2",
+      "43:35:8:2",
+      "45:24:6:2",
+      "45:35:9:2",
+      "46:20:11:2",
+      "47:36:3:2",
+      "53:8:2:1",
+      "53:9:5:1",
+      "53:29:11:2",
+      "55:54:9:1",
+      "57:20:4:2",
+      "57:20:36:2",
+      "58:7:26:1",
+      "59:3:9:2",
+      "67:5:4:2",
+      "69:23:2:1",
+      "73:20:6:1",
+      "76:14:1:2",
+      "79:38:3:2",
+      "87:16:4:2"
+    ]
+  },
+  "universal_candidate_falsification": {
+    "claim_scope": "UNIVERSAL_WITHIN_THE_133_CONFIRMED_TOKEN_SET",
+    "candidate": "The root contributes orientation toward the nearer or lower pole of a relation, including reduced separation, reduced rank, reduced amount, or increased conduciveness to a target outcome.",
+    "candidate_status_before_challenge": "CANDIDATE_ONLY",
+    "structured_rejection_condition": {
+      "condition": "Reject preference for this universal if a material token cluster can be explained as a lexicalized unit or by construction/context without independently observable nearer-or-lower contribution, and preserving the candidate requires inventing an unstated comparator or freely changing the axis.",
+      "triggered": true,
+      "trigger_evidence": [
+        "The 111-token lexicalized dunya life/world cluster does not expose an active comparator in every local occurrence.",
+        "At 3:45:17:2, distinction is predicated in both الدنيا and الآخرة; local syntax supplies two domains but does not show that the الدنيا token contributes inferiority to that predication.",
+        "The same candidate changes among spatial distance, elevation or rank, value, intensity, count, duration, temporal domain, and likelihood of an outcome.",
+        "The five أدنى أن outcome constructions are explainable through a constructional relation between arrangement and consequence; their desired outcomes are not root content."
+      ]
+    },
+    "tests": [
+      {
+        "test": "direct spatial relation",
+        "result": "SUPPORTS_A_PROXIMITY_SUBFAMILY",
+        "evidence_refs": ["8:42:4:2", "53:8:2:1", "53:9:5:1", "55:54:9:1", "69:23:2:1", "76:14:1:2"]
+      },
+      {
+        "test": "quantity and degree without physical distance",
+        "result": "FORCES_AXIS_CHANGE",
+        "evidence_refs": ["2:61:27:1", "32:21:4:2", "58:7:26:1", "73:20:6:1"]
+      },
+      {
+        "test": "construction-supplied outcome likelihood",
+        "result": "ROOT_ATTRIBUTION_NOT_SEPARATED_FROM_CONSTRUCTION",
+        "evidence_refs": ["2:282:93:2", "4:3:26:1", "5:108:2:1", "33:51:17:1", "33:59:13:1"]
+      },
+      {
+        "test": "lexicalized dunya without a local active comparator",
+        "result": "UNIVERSAL_NECESSITY_NOT_DEMONSTRATED",
+        "evidence_refs": ["3:45:17:2", "10:64:5:2", "40:51:8:2", "41:31:5:2"]
+      },
+      {
+        "test": "negative-value universality",
+        "result": "FALSIFIED",
+        "evidence_refs": ["2:201:7:2", "3:45:17:2", "10:64:5:2", "16:30:13:2", "16:41:11:2", "16:122:3:2", "29:27:13:2", "39:10:11:2", "40:51:8:2", "41:31:5:2"]
+      }
+    ],
+    "candidate_survived_falsification": false,
+    "falsification_outcome": "REJECTION_CONDITION_MET",
+    "disposition": "DO_NOT_PREFER_AS_CURRENT_UNIVERSAL_ROOT_CONCEPT",
+    "reason": "The candidate is coherent for several compositional clusters but becomes elastic and non-discriminating when extended to the dominant lexicalized الدنيا cluster. It has not shown a single necessary contribution after subtracting lexeme, construction, and context."
+  },
+  "terminal_unresolved_falsification": {
+    "claim_tested": "The dnw root question is terminally UNRESOLVED and cannot be made discriminating from this exact set.",
+    "claim_survived_falsification": false,
+    "outcome": "TERMINALITY_REJECTED",
+    "evidence": [
+      "The exact set is finite, fully joined, and partitions into repeatable construction and lexeme clusters rather than undifferentiated noise.",
+      "The spatial and approach tokens directly support a proximity subfamily.",
+      "The evaluative, intensity, number, and duration tokens directly support ordered scalar subfamilies.",
+      "The four compositional الدنيا spatial tokens provide a bridge worth testing between proximity and the highly lexicalized life/world family.",
+      "Positive and neutral الدنيا contexts decisively reject the candidate that the root universally contributes contempt, evil, or low worth.",
+      "A multiple-lexical-unit outcome is allowed by the governing method, so failure of forced unification is not terminal failure of research."
+    ],
+    "current_honest_state": "UNRESOLVED_AT_THE_ONE-UNIVERSAL-CONCEPT_LEVEL_PENDING_SUBSTANTIVE_REOBSERVATION",
+    "terminal_unresolved_allowed": false,
+    "reopen_path": "Persist substantive per-occurrence observations, compare a bounded relational-core model against a multiple-lexical-unit model, and repeat falsification without importing external semantics."
+  },
+  "overclaim_and_scope_audit": {
+    "scope": {
+      "status": "BOUND_TO_EXACT_CONFIRMED_SET",
+      "finding": "The only defensible universal domain here is the 133 confirmed structural tokens on the named snapshot. A claim about every possible Quranic or Arabic dnw use would exceed the proven inventory."
+    },
+    "hidden_preference": {
+      "status": "MATERIAL_RISK",
+      "finding": "The high frequency of الدنيا in warnings about transience or afterlife contrast can bias the reviewer toward moral inferiority. Positive and neutral occurrences show that local evaluation is supplied by predicate and discourse. A second bias is the wish to rescue one elegant core even when a lexicalized unit may no longer expose it locally."
+    },
+    "elastic_axes": {
+      "status": "CURRENT_CANDIDATE_FAILS",
+      "axes_observed": ["spatial separation", "spatial or elevational ordering", "value or rank", "punishment intensity", "number", "duration", "outcome conduciveness", "present-life or world domain"],
+      "finding": "Nearer-or-lower becomes unfalsifiable if the axis and implicit comparator can change freely. A revised candidate must state what invariant predicts all axes and what occurrence would reject it."
+    },
+    "lexicalization": {
+      "status": "DOMINANT_UNRESOLVED_FACTOR",
+      "finding": "The 111-token الدنيا life/world family behaves as a stable lexical domain label in many occurrences. Historical or etymological connection is not enough to prove an active local root contribution; each observation must say whether the relational content is visible, merely compatible, or absent from the local evidence."
+    },
+    "layer_attribution": {
+      "status": "REQUIRES_EXPLICIT_PER_OCCURRENCE_SUBTRACTION",
+      "root_layer_candidate": "A bounded relational orientation may remain a candidate, not a conclusion.",
+      "derivation_or_form_layer": "Comparison or degree in أدنى, state in دان or دانية, event in دنا, and caused or controlled placement in يدنين must be recorded without assigning their whole effect to the root.",
+      "lexeme_layer": "الدنيا life/world, أدنى scalar comparison, and دان or دانية accessible nearness require separate lexical-unit testing.",
+      "construction_layer": "أدنى أن, أدنى من, explicit oppositions, locative في, modifier-head relations, and participant relations provide material meaning.",
+      "context_layer": "Praise, blame, transience, eschatological contrast, intended outcome, and participant benefit or harm come from the verse context and discourse.",
+      "finding": "A root observation that copies the final local meaning without this subtraction has no semantic substance for a Root Concept judgment."
+    },
+    "hard_cases": {
+      "status": "MATERIAL",
+      "cases": [
+        {"word_ref": "3:45:17:2", "pressure": "positive property holds in both الدنيا and الآخرة; blocks automatic inferiority attribution"},
+        {"word_ref": "30:3:2:1", "pressure": "spatial axis is present but the local text does not decide nearest versus lower"},
+        {"word_ref": "33:59:8:1", "pressure": "caused garment placement requires participant and construction attribution"},
+        {"word_ref": "33:59:13:1", "pressure": "same verse contains a distinct outcome-conducive أدنى construction and must not be conflated with يدنين"},
+        {"word_ref": "58:7:26:1", "pressure": "lesser number is not physical nearness"},
+        {"word_ref": "73:20:6:1", "pressure": "lesser duration is quantitatively measured"},
+        {"word_ref": "7:169:10:2", "pressure": "temporal availability and value may both explain the lower-domain description"},
+        {"word_ref": "8:42:4:2", "pressure": "direct near versus far spatial contrast is the cleanest compositional الدنيا case"}
+      ]
+    },
+    "strongest_counterexample": {
+      "word_ref": "3:45:17:2",
+      "verse_ref": "3:45",
+      "reason": "The occurrence places a positive distinction in both الدنيا and الآخرة. The lexical token distinguishes domains but does not locally require inferiority, reduced amount, physical approach, or beneficial outcome likelihood. A universal relational candidate survives only by importing an unstated historical or implicit comparator."
+    },
+    "strongest_competitor": {
+      "model": "MULTIPLE_LEXICAL_UNITS_WITH_A_FAMILY_RESEMBLANCE",
+      "description": "Treat direct proximity or approach, ordered scalar أدنى uses, and lexicalized الدنيا life/world as separately testable units. Permit a shared relational ancestry as a hypothesis, but do not count it as an active necessary contribution until occurrence observations discriminate it from lexicalization and construction.",
+      "why_stronger_now": "It explains the dominant lexicalized cluster without hidden comparators and preserves the clear spatial, scalar, and purposive distinctions instead of erasing them."
+    },
+    "exact_set_support": {
+      "status": "STRUCTURALLY_COMPLETE_BUT_SEMANTICALLY_INSUFFICIENT_FOR_PREFERENCE",
+      "finding": "Count and identity coverage are adequate for an exact-set challenge. Count coverage cannot replace semantically substantive per-occurrence observations, especially for the 111-token lexicalized cluster."
+    }
+  },
+  "minimum_per_occurrence_observation_substance": {
+    "purpose": "Repair the named defect without turning verse quotation, manifest membership, or conclusion repetition into evidence.",
+    "required_fields": [
+      {
+        "field": "evidence_identity",
+        "minimum": "snapshot_id, structural_token_id or word_ref, verse_ref, exact target surface, structural source and extraction version"
+      },
+      {
+        "field": "observable_local_relation",
+        "minimum": "Name both relata or state that one comparator is not locally expressed. For events, name participant, direction or state change, and endpoint if visible."
+      },
+      {
+        "field": "lexeme_and_construction",
+        "minimum": "Identify the local lexeme candidate and construction pattern, including head-modifier, ellipsis/substantivization, أدنى أن, أدنى من, explicit opposition, or locative frame."
+      },
+      {
+        "field": "axis_candidate",
+        "minimum": "Choose the locally evidenced axis such as spatial distance, elevation, value, intensity, number, duration, outcome conduciveness, or temporal/world domain; use UNRESOLVED when the verse does not discriminate."
+      },
+      {
+        "field": "local_contribution",
+        "minimum": "One occurrence-specific sentence stating what the token contributes here, not a paraphrase of the whole verse and not the proposed universal root concept."
+      },
+      {
+        "field": "layer_subtraction",
+        "minimum": "State separately what is plausibly root-level, what comes from derivation/form, what belongs to the lexeme, what the construction supplies, and what evaluation or discourse supplies."
+      },
+      {
+        "field": "challenge_role",
+        "minimum": "Mark SUPPORT, PRESSURE, COUNTEREXAMPLE, or NON_DISCRIMINATING for each named hypothesis and explain the discriminating fact."
+      },
+      {
+        "field": "uncertainty",
+        "minimum": "Record the unresolved local choice or absent comparator rather than silently selecting the preferred axis."
+      }
+    ],
+    "cluster_specific_requirements": {
+      "dunya_life_or_world": "Record overt head versus ellipsis, whether an afterlife or resurrection comparator is explicit, the local temporal/domain function, and whether praise or blame is context-supplied. Never encode negative valence merely because the token is الدنيا.",
+      "dunya_spatial": "Record the modified place, the reference point or opposite if explicit, and whether the data decides near, lower, or only relational ordering.",
+      "adna": "Record the comparison standard, axis, مِن or أَنْ construction, and whether the outcome relation is constructional rather than root content.",
+      "dana_dani_yudnina": "Record event versus state, initiator, affected entity, reference participant, endpoint or accessibility, and any caused-placement contribution."
+    },
+    "substance_fail_examples": [
+      "The verse contains a dnw token.",
+      "This supports the root concept.",
+      "The token means near or low.",
+      "A copy of the verse with no identified relation, axis, layers, or challenge role.",
+      "The same generic sentence repeated across all الدنيا occurrences without noting head, comparator, local domain role, and context-supplied evaluation."
+    ],
+    "grouping_rule": "Repeated construction families may share a template, but every one of the 133 rows still needs item-specific identity, local anchors, layer subtraction, and challenge role. Group counts alone are not semantic observations.",
+    "acceptance_test": "A reviewer who sees only the observation and its referenced verse must be able to tell what local fact bears on the hypothesis, which layer supplies it, and what competing reading remains."
+  },
+  "panel_verdict": {
+    "universal_root_concept": "NOT_CURRENTLY_PREFERRED",
+    "universal_claim_scope": "UNRESOLVED",
+    "result_strength": "UNRESOLVED",
+    "terminal_unresolved": "REJECTED_AS_OVERCLAIM",
+    "current_disposition": "PROVISIONAL_UNRESOLVED_WITH_MANDATORY_REOBSERVATION",
+    "canonical_candidate_ready": false,
+    "independent_verification_granted": false,
+    "release_acceptance_granted": false,
+    "required_next_evidence": "Persist semantically substantive observations for every confirmed token under the minimum contract above, then compare and falsify the bounded relational-core model and the multiple-lexical-unit model on the exact set.",
+    "stop_condition": "This report does not alter database state, semantic claims, observations, canonical state, Git history, or any file outside the requested report."
+  }
+}

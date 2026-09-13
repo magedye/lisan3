@@ -1,0 +1,155 @@
+{
+  "artifact": "DNW_CORRECTIVE_CYCLE_2",
+  "recorded_at": "2026-09-13T10:35:00+03:00",
+  "authority": {
+    "delegation_sha256": "d1be72ec204e43c1692fa1cb400a51ab6842d9505523050f445a42486077d391",
+    "root": "dnw",
+    "cycle": 2,
+    "trigger": "Fresh clean review of jud_7805c0b0@1 returned CORRECTIVE_RESEARCH_REQUIRED because 133 form-only observations did not substantiate deep semantic analysis."
+  },
+  "implementation_remediation": {
+    "checkpoint": "8b8a1b36f9d76d156609479be3a292a7bc57bd56",
+    "change": "ResearchJudgmentService now counts deep_analysis_complete only when every eligible occurrence has persisted semantic content beyond form/POS.",
+    "scope_effect": "sufficient_for_claim remains host-derived occurrence coverage; deep_analysis_complete is now a distinct semantic-substance fact.",
+    "focused_tests": "tests/test_canonical_runtime_qualification.py: 26 passed, exit 0"
+  },
+  "producer_separation": {
+    "model_profile": "gpt-5.6-sol/xhigh",
+    "structure": "2 fresh independent analysts + 1 fresh source-purity adversary + 1 fresh overclaim/scope adversary + 1 fresh aggregator",
+    "prohibited_sources": [
+      "SemanticClaim table and prior claim prose",
+      "prior observation content",
+      "Batch 07",
+      "PROJECT_STATE",
+      "other five-root artifacts and reviews",
+      "dictionaries and lexicons",
+      "translations and tafsir",
+      "web semantics and memory"
+    ],
+    "access_result": "All five contexts attested zero prohibited-source access."
+  },
+  "panel_artifacts": {
+    "analyst_a": {
+      "path": "docs/evidence/requalification/dnw_cycle2_panel/analyst_a.json",
+      "sha256": "4a9f04bc751632f7bf7668fb3f744b997579889b0df6063fa2d7348f7877a4b6",
+      "size_bytes": 316462,
+      "occurrence_mappings": 133
+    },
+    "analyst_b": {
+      "path": "docs/evidence/requalification/dnw_cycle2_panel/analyst_b.json",
+      "sha256": "a901153924738877307a4796f1a062e1609697cf2eead2d142af52e2e669a809",
+      "size_bytes": 308487,
+      "occurrence_mappings": 133
+    },
+    "source_purity_adversary": {
+      "path": "docs/evidence/requalification/dnw_cycle2_panel/purity_adversary.json",
+      "sha256": "80cd27674df04161ee59f522679b6d77cf236e52f6f45e510ad7af67adb83896",
+      "size_bytes": 36722
+    },
+    "overclaim_adversary": {
+      "path": "docs/evidence/requalification/dnw_cycle2_panel/overclaim_adversary.json",
+      "sha256": "b86c0d8ffc5c30a1da590b3018e9268f09355425ff2ec623084520f5155e89b3",
+      "size_bytes": 27361
+    },
+    "aggregator": {
+      "path": "docs/evidence/requalification/dnw_cycle2_panel/aggregator.json",
+      "sha256": "94af985eb8857b3f30fc9ed94d35891cbc1ab4581e74c985dced0cf25cffe6e8",
+      "size_bytes": 331548,
+      "observations": 133,
+      "repository_payload_schema_validation": "PASS"
+    }
+  },
+  "panel_disposition": {
+    "research_state": "UNRESOLVED",
+    "result_strength": "UNRESOLVED",
+    "claim_scope": "UNIVERSAL",
+    "preferred_conclusion": null,
+    "root_concept": null,
+    "falsification_status": "NOT_REQUIRED",
+    "positive_candidate_falsification": "PASSED_AS_SEPARATE_MATRIX",
+    "semantic_reason": "The exact set supports multiple contextual and lexical/construction families. A nearer/lower/lesser relational candidate remains falsifiable, but no non-elastic Quran-internal bridge makes it a necessary root contribution across the 111 life-domain dunya tokens and the remaining 22 tokens.",
+    "phrase_audit": {
+      "UNSUPPORTED_MODEL_PRIOR": 0,
+      "EXTERNAL_SEMANTIC_ASSUMPTION": 0
+    }
+  },
+  "runtime_write": {
+    "database": "lisanapp.db",
+    "database_sha256_before": "092f7bbb648cc5939d392364117b161dbf944d38564fd9c95fc3fc798e7be663",
+    "database_sha256_after": "8920d27c3fcdd1a832f091a78a2bad97ed1587b1ea6b9b274416b587d95905ba",
+    "pre_write_backup": "local-state-backups/lisanapp.before-dnw-cycle2.20260913-102717.db",
+    "backup_sha256": "092f7bbb648cc5939d392364117b161dbf944d38564fd9c95fc3fc798e7be663",
+    "disposable_dry_run": "PASSED; integrity ok; then exact dry-run file removed",
+    "integrity_after": "ok",
+    "run_id": "run_4efa58a9",
+    "isolation": {
+      "establishment_status": "ESTABLISHED",
+      "contamination_status": "CLEAN",
+      "audit_ref": "aud_5db02b6a"
+    },
+    "hypotheses_frozen_before_observations": [
+      "hyp_6c54564e",
+      "hyp_1251bfe1",
+      "hyp_dee611ca"
+    ],
+    "observation_count": 133,
+    "observation_semantic_substance": {
+      "syntax_nonempty": 133,
+      "participant_roles_nonempty": 133,
+      "local_context_nonempty": 133,
+      "unresolved_ambiguity_nonempty": 133
+    },
+    "successor": {
+      "predecessor": "jud_7805c0b0@1",
+      "claim": "jud_6ff94cce@1",
+      "claim_sha256": "040ec2d530d744185e930019fbf6c908ac3acf59c6583f416273a69d97edb935",
+      "claim_projection_bytes": 10148,
+      "claim_hash_projection": "Persisted claim JSON columns decoded; id renamed claim_id; created_at and accepted_at excluded; UTF-8 canonical JSON with sorted keys, compact separators, and non-ASCII preservation.",
+      "research_state": "UNRESOLVED",
+      "result_strength": "UNRESOLVED",
+      "claim_scope": "UNIVERSAL",
+      "canonical_state": "NOT_CANONICAL",
+      "verification_state": "NOT_REQUIRED",
+      "falsification_status": "NOT_REQUIRED"
+    },
+    "research_completeness": {
+      "eligible_occurrence_count": 133,
+      "evidenced_occurrence_count": 133,
+      "index_complete": true,
+      "deep_analysis_complete": true,
+      "sampling_basis_recorded": true,
+      "sufficient_for_claim": true,
+      "derived_by": "ResearchJudgmentService"
+    },
+    "panel_ai_trace_ids": [
+      "ai_7b4eecd4",
+      "ai_2874e5bb",
+      "ai_44c01bdb",
+      "ai_9a56b0cb",
+      "ai_7dd24f6c"
+    ],
+    "lineage_audit_ids": [
+      "aud_f65e47b9",
+      "aud_34731c40"
+    ]
+  },
+  "post_write_counts": {
+    "ResearchRuns": 8,
+    "Observations": 517,
+    "SemanticClaims": 8,
+    "VerificationRecords": 0,
+    "ACCEPTED": 0
+  },
+  "post_write_focused_tests": "tests/test_ai_governance_simplification.py + tests/test_canonical_runtime_qualification.py: 37 passed, exit 0",
+  "historical_custody": {
+    "E_53_w.json": "f19863141c842606258a7de3ded9c62d22733eefe7ae5fbab326394c5378ff23",
+    "dnw.json": "3de4b1c875a74909df9b6c0a32db65867f112c762128dc2edf4084584c7306ce",
+    "fl_48_.json": "93824ef650f53116a22387f17ef266ec18896ff00c2fa139fae90f8584b32af8",
+    "fwh.json": "4aaa428e031a09f329f8dfba6ec8e1222cdaef3278811a0a63065086cb324e44",
+    "glm.json": "4018dfcc3b688a7b5392c43c12b49622e1de7f3151563ff92a5c547059e03d6b",
+    "result": "UNCHANGED"
+  },
+  "independent_review": "PENDING_FRESH_POST_FREEZE_REVIEW",
+  "batch_07_comparison": "NOT_PERFORMED_BEFORE_FREEZE_AND_REVIEW",
+  "batch_08_status": "BATCH_08_NOT_AUTHORIZED"
+}

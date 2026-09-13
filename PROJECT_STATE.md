@@ -1480,3 +1480,43 @@ Batch 07 comparison for the stable `flH` result without altering that claim.
   `93824ef650f53116a22387f17ef266ec18896ff00c2fa139fae90f8584b32af8`
   (160,928 bytes), byte-identical to the checkpoint blob. The comparison did not
   modify `jud_04cfe3db@1` or the initial independent verdict.
+
+## dnw Corrective Cycle 2 Producer Checkpoint (2026-09-13)
+
+- Runtime completeness defect remediated at
+  `8b8a1b36f9d76d156609479be3a292a7bc57bd56`: a form/POS-only observation no
+  longer counts toward `deep_analysis_complete`. Semantic content beyond form is
+  required for every eligible occurrence. Canonical-runtime tests: 26 passed.
+- A fresh separated cycle-2 panel produced and persisted its actual outputs:
+  two 133-row analyst mappings, a source-purity adversary report, an overclaim
+  adversary report, and a 133-row aggregator. The final aggregate has zero
+  unsupported model priors and zero external semantic assumptions.
+- New admitted run `run_4efa58a9`; isolation `ESTABLISHED/CLEAN` with audit
+  `aud_5db02b6a`. H1/H2/C0 (`hyp_6c54564e`, `hyp_1251bfe1`,
+  `hyp_dee611ca`) were persisted before the first observation.
+- All 133 exact dnw tokens now have nonblank syntax, participant/axis,
+  Quran-local context, and ambiguity treatment. Host-derived completeness is
+  133/133 with `index_complete=true`, `deep_analysis_complete=true`, and
+  `sufficient_for_claim=true`.
+- Frozen successor: `jud_6ff94cce@1`, predecessor `jud_7805c0b0@1`, reason
+  `SEMANTIC_OBSERVATION_SUBSTANCE_AND_HASH_PROJECTION_REMEDIATION`.
+  Result remains honestly `UNRESOLVED/UNRESOLVED/UNIVERSAL`, with null preferred
+  conclusion/root concept. Explicit claim projection SHA-256:
+  `040ec2d530d744185e930019fbf6c908ac3acf59c6583f416273a69d97edb935`.
+- Pre-write DB SHA-256 `092f7bbb...e663`; retained byte-identical backup
+  `local-state-backups/lisanapp.before-dnw-cycle2.20260913-102717.db`.
+  Disposable-copy dry run passed and was removed. Live post-write DB SHA-256
+  `8920d27c...05ba`; integrity `ok`. Counts: 8 runs, 517 observations, 8 claims,
+  0 VerificationRecords, 0 ACCEPTED.
+- Post-write focused governance/runtime verification: 37 passed (exit 0).
+- Detailed evidence:
+  `docs/evidence/requalification/dnw_corrective_cycle_2.json` and
+  `docs/evidence/requalification/dnw_cycle2_panel/*.json`.
+- Historical five-root Batch 07 artifacts remain byte-identical. No comparison
+  to historical dnw semantics has occurred yet. Batch 08 remains unauthorized.
+
+## Current Exact Next Action
+
+Commit and normally publish the cycle-2 producer checkpoint without changing
+the frozen claim. Launch a fresh blind read-only Sol/xhigh review of exact
+`jud_6ff94cce@1`; freeze that verdict before opening historical Batch 07 dnw.

@@ -1,0 +1,458 @@
+{
+  "artifact_type": "DNW_CYCLE2_QURAN_INTERNAL_SOURCE_PURITY_ADVERSARY",
+  "schema_version": "1.0.0",
+  "generated_at": "2026-09-13T09:55:19+03:00",
+  "target_root": "dnw",
+  "review_role": "PURITY_ADVERSARY",
+  "review_mode": "FRESH_CORRECTIVE_CYCLE_2_QURAN_INTERNAL",
+  "defect_category": "PRIOR_OBSERVATIONS_LACKED_SEMANTIC_SUBSTANCE",
+  "review_outcome": "UNRESOLVED_WITH_SUBSTANTIVE_QURAN_INTERNAL_FINDINGS",
+  "defect_handling": {
+    "prior_payload_inspected": false,
+    "assessment_basis": "The defect category was supplied as the cycle-2 correction target; forbidden prior observations were not opened or re-evaluated.",
+    "correction_delivered": "Every confirmed token is assigned to an exact constructional-semantic class, hard cases are tested, propositions are source-classified, and the root/form/lexeme/construction/context boundary is explicit.",
+    "cycle2_semantic_substance_gate": "PASS",
+    "root_core_resolution_gate": "UNRESOLVED"
+  },
+  "source_policy": {
+    "status": "CLEAN",
+    "allowed_content_used": [
+      "current governing contracts and methodology",
+      "production Tanzil Uthmani 1.1",
+      "lisanapp.db structural_tokens filtered by root=dnw and attribution_status=CONFIRMED",
+      "corpus_occurrences joined only by the dnw token snapshot and verse references",
+      "corpus_snapshots metadata for the exact dnw snapshot",
+      "research_runs metadata filtered by target_expression=dnw"
+    ],
+    "forbidden_payload_content_accessed": false,
+    "forbidden_sources_not_opened": [
+      "semantic_claims",
+      "semantic prose and prior observations",
+      "Batch07",
+      "PROJECT_STATE",
+      "five-root artifacts",
+      "external semantics",
+      "dictionaries",
+      "translations",
+      "tafsir",
+      "web",
+      "model memory"
+    ],
+    "discovery_note": "Forbidden artifact path names and the semantic_claims table name were visible only in file/table-name discovery; no forbidden payload bytes or rows were opened and none entered the analysis.",
+    "semantic_primary_evidence": "TANZIL_QURAN_UTHMANI@1.1",
+    "structural_evidence_role": "QAC_MORPHOLOGY@0.4 supplies snapshot-bound token identity and coarse form/POS labels only; it does not supply meaning."
+  },
+  "governing_contracts": [
+    "AUTHORITY_MAP.md",
+    "skills/lisan-semantic-extraction/SKILL.md@LISAN3_SEMANTIC_RUNTIME_V3_2026_09_06",
+    "docs/canonical/LISAN_PURITY_AND_STRUCTURAL_EVIDENCE_CONTRACT.md@LISAN3_DIAGNOSTICS_CONTRACT_V3_2026_09_06",
+    "docs/canonical/ADMISSION_TANZIL.md@LISAN3_TANZIL_ACTIVATION_V2_2026_08_26",
+    "LISAN-CONSTITUTIONAL-CORE-5.0",
+    "RUNTIME_KERNEL_V7",
+    "QURAN_INTERNAL_CUMULATIVE_RUN_PROTOCOL_v1.0",
+    "ABSTRACT_ROOT_CORE_SPECIFICATION@v7.3.0-candidate",
+    "SEMANTIC_FAMILY_DIFFERENTIATION_PROTOCOL@v1.1-candidate",
+    "OCD-006"
+  ],
+  "corpus_binding": {
+    "snapshot_id": "snap_tanzil_1_1_ac0724796cbb",
+    "canonical_text_source": "TANZIL_QURAN_UTHMANI",
+    "canonical_text_version": "1.1",
+    "canonical_text_hash_sha256": "ac0724796cbbda0f4801470fbbd11d0f3c5802067bae0493466d0128b0c667af",
+    "computed_raw_artifact_sha256": "ac0724796cbbda0f4801470fbbd11d0f3c5802067bae0493466d0128b0c667af",
+    "identity_index_sha256": "0d0a2273e82ebb0d9848ccbf831f1bb297c0fb255413c5aeb299bbfaf2bbc967",
+    "computed_identity_index_sha256": "0d0a2273e82ebb0d9848ccbf831f1bb297c0fb255413c5aeb299bbfaf2bbc967",
+    "activation_status": "PRODUCTION_ACTIVE",
+    "fixture_only": false,
+    "canonical_verse_count": 6236,
+    "confirmed_dnw_token_count": 133,
+    "distinct_word_ref_count": 133,
+    "distinct_dnw_verse_count": 128,
+    "occurrence_join_rows": 133,
+    "exact_tanzil_text_matches": 128,
+    "exact_tanzil_text_mismatches": 0,
+    "snapshot_count": 1,
+    "structural_source_count": 1,
+    "extraction_version_count": 1,
+    "index_coverage": "133_OF_133_CONFIRMED_TOKENS",
+    "deep_analysis_coverage": "133_OF_133_CONFIRMED_TOKENS",
+    "structural_stability": "ALL_REFERENCES_RESOLVE_TO_ONE_PRODUCTION_SNAPSHOT"
+  },
+  "dnw_run_metadata": [
+    {
+      "run_id": "run_54946c68",
+      "target_expression": "dnw",
+      "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+      "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+      "current_stage": "JUDGMENT",
+      "status": "ACTIVE",
+      "created_at": "2026-09-12 21:56:44.955317",
+      "updated_at": "2026-09-12 21:56:47.755988"
+    },
+    {
+      "run_id": "run_7aa9aa5f",
+      "target_expression": "dnw",
+      "methodology_revision": "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4",
+      "corpus_snapshot": "snap_tanzil_1_1_ac0724796cbb",
+      "current_stage": "JUDGMENT",
+      "status": "ACTIVE",
+      "created_at": "2026-09-13 06:06:49.203529",
+      "updated_at": "2026-09-13 06:06:54.953712"
+    }
+  ],
+  "database_form_distribution": [
+    {"form": "ADJ", "pos_tag": "ADJ", "token_count": 76, "verse_count": 73},
+    {"form": "N", "pos_tag": "N", "token_count": 54, "verse_count": 53},
+    {"form": "T", "pos_tag": "T", "token_count": 1, "verse_count": 1},
+    {"form": "V", "pos_tag": "V", "token_count": 2, "verse_count": 2}
+  ],
+  "semantic_construction_class_inventories": [
+    {
+      "class_id": "DUNYA_LIFE_MODIFIER",
+      "description_ar": "لفظ الدنيا تابعًا للحياة أو حياتنا أو حياتكم؛ هذا جرد تركيبي ولا يجعل الزمن نواة للجذر.",
+      "token_count": 71,
+      "unique_verse_count": 68,
+      "word_refs": ["2:85:38:2","2:86:5:2","2:204:8:2","2:212:5:2","3:14:20:2","3:117:7:2","3:185:20:2","4:74:8:2","4:94:21:2","4:109:7:2","6:29:6:2","6:32:3:2","6:70:9:2","6:130:21:2","7:32:18:2","7:51:8:2","7:152:12:2","8:67:14:2","9:38:18:2","9:38:24:2","9:55:13:2","10:7:8:2","10:23:18:2","10:24:4:2","10:64:5:2","10:88:12:2","10:98:18:2","11:15:5:2","13:26:9:2","13:26:12:2","13:34:5:2","14:3:4:2","14:27:9:2","16:107:5:2","18:28:18:2","18:45:5:2","18:46:5:2","18:104:6:2","20:72:19:2","20:131:12:2","23:33:13:2","23:37:5:2","24:33:39:2","28:60:7:2","28:61:11:2","28:79:10:2","29:25:12:2","29:64:4:2","30:7:5:2","31:33:26:2","33:28:9:2","35:5:10:2","39:26:6:2","40:39:5:2","40:51:8:2","41:16:13:2","41:31:5:2","42:20:14:2","42:36:7:2","43:32:11:2","43:35:8:2","45:24:6:2","45:35:9:2","46:20:11:2","47:36:3:2","53:29:11:2","57:20:4:2","57:20:36:2","67:5:4:2","79:38:3:2","87:16:4:2"],
+      "verse_refs": ["2:85","2:86","2:204","2:212","3:14","3:117","3:185","4:74","4:94","4:109","6:29","6:32","6:70","6:130","7:32","7:51","7:152","8:67","9:38","9:55","10:7","10:23","10:24","10:64","10:88","10:98","11:15","13:26","13:34","14:3","14:27","16:107","18:28","18:45","18:46","18:104","20:72","20:131","23:33","23:37","24:33","28:60","28:61","28:79","29:25","29:64","30:7","31:33","33:28","35:5","39:26","40:39","40:51","41:16","41:31","42:20","42:36","43:32","43:35","45:24","45:35","46:20","47:36","53:29","57:20","67:5","79:38","87:16"]
+    },
+    {
+      "class_id": "DUNYA_SUBSTANTIVE",
+      "description_ar": "لفظ الدنيا مستقلًا اسميًا في الوسم البنيوي، وغالبًا في تقابل صريح مع الآخرة أو يوم القيامة.",
+      "token_count": 41,
+      "unique_verse_count": 40,
+      "word_refs": ["2:114:24:2","2:130:13:2","2:200:18:2","2:201:7:2","2:217:50:2","2:220:2:2","3:22:6:2","3:45:17:2","3:56:8:2","3:145:14:2","3:148:4:2","3:152:24:2","4:77:40:2","4:134:5:2","4:134:9:2","5:33:29:2","5:41:61:2","7:156:5:2","9:69:28:2","9:74:37:2","9:85:12:2","10:70:3:2","11:60:4:2","12:101:16:2","16:30:13:2","16:41:11:2","16:122:3:2","22:9:9:2","22:11:20:2","22:15:9:2","24:14:7:2","24:19:14:2","24:23:9:2","28:42:4:2","28:77:11:2","29:27:13:2","31:15:16:2","33:57:9:2","39:10:11:2","40:43:10:2","59:3:9:2"],
+      "verse_refs": ["2:114","2:130","2:200","2:201","2:217","2:220","3:22","3:45","3:56","3:145","3:148","3:152","4:77","4:134","5:33","5:41","7:156","9:69","9:74","9:85","10:70","11:60","12:101","16:30","16:41","16:122","22:9","22:11","22:15","24:14","24:19","24:23","28:42","28:77","29:27","31:15","33:57","39:10","40:43","59:3"]
+    },
+    {
+      "class_id": "DUNYA_OTHER_SPATIAL_MODIFIER",
+      "description_ar": "ثلاثة مواضع تعدل فيها الدنيا العدوة أو السماء، فتمنع تعميم الزمن على اللفظ أو الجذر.",
+      "token_count": 3,
+      "unique_verse_count": 3,
+      "word_refs": ["8:42:4:2","37:6:4:2","41:12:13:2"],
+      "verse_refs": ["8:42","37:6","41:12"]
+    },
+    {
+      "class_id": "ADNA_OUTCOME_ORIENTATION",
+      "description_ar": "بناء ذلك أدنى أن يربط أدنى بنتيجة جملية، ولا يثبت مسافة مكانية.",
+      "token_count": 5,
+      "unique_verse_count": 5,
+      "word_refs": ["2:282:93:2","4:3:26:1","5:108:2:1","33:51:17:1","33:59:13:1"],
+      "verse_refs": ["2:282","4:3","5:108","33:51","33:59"]
+    },
+    {
+      "class_id": "ADNA_QUANTITY_SCALE",
+      "description_ar": "أدنى في ترتيب كمّي صريح مع من وأكثر أو كسر الليل.",
+      "token_count": 2,
+      "unique_verse_count": 2,
+      "word_refs": ["58:7:26:1","73:20:6:1"],
+      "verse_refs": ["58:7","73:20"]
+    },
+    {
+      "class_id": "ADNA_SPATIAL_SCALE",
+      "description_ar": "أدنى في تركيب مكاني، مع بقاء جهة المعيار في 30:3 غير محسومة من النص المسموح وحده.",
+      "token_count": 2,
+      "unique_verse_count": 2,
+      "word_refs": ["30:3:2:1","53:9:5:1"],
+      "verse_refs": ["30:3","53:9"]
+    },
+    {
+      "class_id": "ADNA_VALUE_OR_RANK_SCALE",
+      "description_ar": "أدنى في تقابل قيمي أو رتبي يحدده التركيب مع خير أو الأكبر.",
+      "token_count": 3,
+      "unique_verse_count": 3,
+      "word_refs": ["2:61:27:1","7:169:10:2","32:21:4:2"],
+      "verse_refs": ["2:61","7:169","32:21"]
+    },
+    {
+      "class_id": "DAN_DANIYA_RELATION",
+      "description_ar": "دان أو دانية في صلة الثمر أو القطف أو الظلال بمشارك أو مجال قريب يحدده الموضع.",
+      "token_count": 4,
+      "unique_verse_count": 4,
+      "word_refs": ["6:99:24:1","55:54:9:1","69:23:2:1","76:14:1:2"],
+      "verse_refs": ["6:99","55:54","69:23","76:14"]
+    },
+    {
+      "class_id": "DANA_EVENT",
+      "description_ar": "حدث دنا في تسلسل ثم دنا فتدلى.",
+      "token_count": 1,
+      "unique_verse_count": 1,
+      "word_refs": ["53:8:2:1"],
+      "verse_refs": ["53:8"]
+    },
+    {
+      "class_id": "YUDNINA_EVENT",
+      "description_ar": "حدث يدنين مع عليهن ومن جلابيبهن؛ أدوار الفاعل والمتأثر والإضافة من التركيب لا من الجذر.",
+      "token_count": 1,
+      "unique_verse_count": 1,
+      "word_refs": ["33:59:8:1"],
+      "verse_refs": ["33:59"]
+    }
+  ],
+  "inventory_reconciliation": {
+    "semantic_class_token_sum": 133,
+    "database_token_count": 133,
+    "unclassified_tokens": 0,
+    "duplicate_word_refs_across_classes": 0,
+    "verse_overlap_note": "33:59 contains one YUDNINA_EVENT token and one ADNA_OUTCOME_ORIENTATION token; token inventories remain disjoint."
+  },
+  "root_form_lexeme_construction_context_separation": {
+    "root_layer": {
+      "status": "INFERENTIAL_BUT_FALSIFIABLE",
+      "candidate_ar": "علاقة أو انتقال نحو الطرف الداني أو الأدنى من مقياس أو ترتيب يعيّنه التركيب والسياق.",
+      "boundary_ar": "لا يدخل في النواة نوع المقياس، ولا الحكم الأخلاقي، ولا الزمن، ولا السببية، ولا هوية المشاركين.",
+      "qualification": "The bridge maps every observed class but is not preferred because it may be generic and the dunya lexicalization boundary is unresolved."
+    },
+    "form_layer": [
+      {"surface_family": "دنا", "db_class": "V", "contribution_ar": "تحقق علاقة الدنو بوصفها حدثًا في 53:8؛ اتجاه الحركة التفصيلي سياقي."},
+      {"surface_family": "يدنين", "db_class": "V", "contribution_ar": "إحداث علاقة على مفعول ومتعلقين في 33:59؛ الإحداث وأدوار المشاركين من صورة اللفظ والتركيب، لا من النواة وحدها."},
+      {"surface_family": "دان ودانية", "db_classes": ["N","ADJ"], "contribution_ar": "إسناد العلاقة إلى اسم أو وصف في أربعة مواضع؛ لا يُفترض اسم صرفي تراثي غير موجود في الطبقة البنيوية."},
+      {"surface_family": "أدنى", "db_classes": ["N","ADJ","T"], "contribution_ar": "تعيين طرف أدنى على مقياس؛ المقارنة والكم والقيمة والغاية تُثبتها التراكيب الخاصة."}
+    ],
+    "lexeme_layer": {
+      "lexeme": "الدنيا",
+      "status": "CONTEXTUALLY_QURAN_SUPPORTED_LEXICALIZATION_CANDIDATE",
+      "distribution": {
+        "life_modifier": 71,
+        "substantive": 41,
+        "other_spatial_modifier": 3
+      },
+      "boundary_ar": "يجوز وصف فئة الحياة والاسم المستقل بمجال الحياة الدنيا على مستوى اللفظ؛ لا يجوز جعل الزمن أو الحقارة نواة الجذر ولا جعل جميع مواضع الدنيا زمانية."
+    },
+    "construction_layer": [
+      {"construction": "الحياة أو حياتنا أو حياتكم + الدنيا", "token_count": 71, "effect_ar": "يختار مجال الحياة."},
+      {"construction": "الدنيا اسم مستقل", "token_count": 41, "effect_ar": "يختار مجالًا يقابل الآخرة أو يوم القيامة في 37 من 41 موضعًا داخل الآية نفسها."},
+      {"construction": "العدوة أو السماء + الدنيا", "token_count": 3, "effect_ar": "يختار ترتيبًا مكانيًا غير زمني."},
+      {"construction": "ذلك + أدنى + أن", "token_count": 5, "effect_ar": "يوجه المقارنة نحو نتيجة جملية."},
+      {"construction": "أدنى + من", "token_count": 2, "effect_ar": "يبني مقارنة كمية صريحة في 58:7 و73:20."},
+      {"construction": "أدنى أو الأدنى مع مقابل", "token_count": 5, "effect_ar": "المقابل يحدد المكان أو القيمة أو الرتبة."}
+    ],
+    "context_layer": {
+      "dimensions_selected": ["spatial relation","quantity","value or rank","outcome orientation","life-domain ordering"],
+      "rule": "The selected dimension is contextual and must never be copied into the root core as universal content."
+    }
+  },
+  "relational_bridge_adversarial_test": {
+    "tested_hypotheses": [
+      {
+        "hypothesis_id": "RB-H1-PHYSICAL_PROXIMITY_ONLY",
+        "outcome": "REJECTED",
+        "reason_ar": "المواضع الكمية والقيمية والنتيجية لا تسمح بقصر المادة على المسافة المكانية.",
+        "decisive_refs": ["2:61","2:282","4:3","5:108","32:21","33:51","33:59","58:7","73:20"]
+      },
+      {
+        "hypothesis_id": "RB-H2-TEMPORAL_OR_MORAL_CORE",
+        "outcome": "REJECTED",
+        "reason_ar": "مواضع دنا ودانية وأدنى الكمية والمكان غير زمانية، ومواضع البشرى والحسنة والولاية تمنع حمل الحقارة الأخلاقية على الجذر أو لفظ الدنيا.",
+        "decisive_refs": ["6:99","8:42","10:64","16:30","16:122","37:6","41:12","41:31","53:8","53:9","55:54","58:7","69:23","73:20","76:14"]
+      },
+      {
+        "hypothesis_id": "RB-H3-CONTEXT_SELECTED_NEAR_LOWER_ENDPOINT",
+        "outcome": "SURVIVES_TOKEN_LEVEL_REJECTION_TEST_BUT_REMAINS_UNRESOLVED",
+        "reason_ar": "يصل جميع الفئات إذا بقي نوع المقياس في التركيب والسياق، لكنه قد يكون عامًا أكثر من اللازم ولا يثبت وحده أن الدنيا لم تصبح وحدة معجمية تحجب مساهمة الجذر.",
+        "coverage": "133_OF_133",
+        "rejection_refs_examined": ["2:61","2:282","4:3","5:108","7:169","8:42","30:3","32:21","33:59","37:6","41:12","53:8","53:9","58:7","73:20"]
+      },
+      {
+        "hypothesis_id": "RB-C0-LEXEME_PARTITION_CANDIDATE",
+        "outcome": "NOT_REJECTED",
+        "reason_ar": "توزيع الدنيا الكثيف والمتميز يسمح بأن تكون وحدة معجمية داخل الأسرة؛ corpus الهدف وحده لا يحسم مقدار شفافية الجذر فيها."
+      }
+    ],
+    "bridge_decision": "UNRESOLVED",
+    "strongest_counterexample_to_physical_only": "58:7: ولا أدنى من ذلك ولا أكثر",
+    "strongest_competitor": "LEXEME_PARTITION_CANDIDATE_FOR_DUNYA",
+    "genericity_risk": "HIGH_FOR_PREFERRED_ROOT_CORE",
+    "lexical_distinctiveness_status": "NOT_EVALUATED_OUTSIDE_DNW_BY_SOURCE_BOUNDARY"
+  },
+  "lexicalization_audit": {
+    "observed_token_total": 115,
+    "surface_distribution": {
+      "life_modifier": 71,
+      "substantive": 41,
+      "other_spatial_modifier": 3
+    },
+    "findings": [
+      {
+        "claim": "الدنيا ليست فئة نحوية واحدة في الوسم البنيوي.",
+        "classification": "DIRECTLY_QURAN_SUPPORTED",
+        "evidence": "74 ADJ-tagged tokens and 41 N-tagged tokens; the semantic construction split is 71/41/3."
+      },
+      {
+        "claim": "فئة الحياة أو الاسم المستقل مجال معجمي متكرر لا يجوز اختزاله في صفة مكانية محلية.",
+        "classification": "CONTEXTUALLY_QURAN_SUPPORTED",
+        "evidence_refs": ["2:86","2:114","2:220","6:32","9:38","13:26","40:39","57:20"]
+      },
+      {
+        "claim": "شفافية مساهمة الجذر داخل كل موضع من الدنيا مكتملة ومثبتة.",
+        "classification": "UNSUPPORTED_MODEL_PRIOR",
+        "disposition": "REJECT_FROM_FINAL_CONTENT"
+      }
+    ],
+    "decision": "LEXICALIZATION_IS_SUPPORTED_AS_A_DISTRIBUTIONAL_CANDIDATE_NOT_AS_AN_ETYMOLOGICAL_FACT"
+  },
+  "temporal_dunya_audit": {
+    "dunya_token_total": 115,
+    "signal_classes": [
+      {
+        "signal": "EXPLICIT_AFTERLIFE_SAME_VERSE",
+        "token_count": 58,
+        "unique_verse_count": 54,
+        "word_refs": ["2:86:5:2","2:114:24:2","2:130:13:2","2:200:18:2","2:201:7:2","2:217:50:2","2:220:2:2","3:22:6:2","3:45:17:2","3:56:8:2","3:145:14:2","3:148:4:2","3:152:24:2","4:74:8:2","4:77:40:2","4:134:5:2","4:134:9:2","5:33:29:2","5:41:61:2","6:32:3:2","7:156:5:2","8:67:14:2","9:38:18:2","9:38:24:2","9:69:28:2","9:74:37:2","10:64:5:2","12:101:16:2","13:26:9:2","13:26:12:2","13:34:5:2","14:3:4:2","14:27:9:2","16:30:13:2","16:41:11:2","16:107:5:2","16:122:3:2","22:11:20:2","22:15:9:2","23:33:13:2","24:14:7:2","24:19:14:2","24:23:9:2","28:77:11:2","29:27:13:2","29:64:4:2","30:7:5:2","33:57:9:2","39:26:6:2","40:39:5:2","40:43:10:2","41:16:13:2","41:31:5:2","42:20:14:2","43:35:8:2","57:20:4:2","57:20:36:2","59:3:9:2"]
+      },
+      {
+        "signal": "EXPLICIT_RESURRECTION_DAY_SAME_VERSE",
+        "token_count": 10,
+        "unique_verse_count": 10,
+        "word_refs": ["2:85:38:2","2:212:5:2","3:185:20:2","4:109:7:2","7:32:18:2","11:60:4:2","22:9:9:2","28:42:4:2","28:61:11:2","29:25:12:2"]
+      },
+      {
+        "signal": "NO_EXPLICIT_AFTERLIFE_OR_RESURRECTION_PAIR_SAME_VERSE",
+        "token_count": 47,
+        "unique_verse_count": 47,
+        "word_refs": ["2:204:8:2","3:14:20:2","3:117:7:2","4:94:21:2","6:29:6:2","6:70:9:2","6:130:21:2","7:51:8:2","7:152:12:2","8:42:4:2","9:55:13:2","9:85:12:2","10:7:8:2","10:23:18:2","10:24:4:2","10:70:3:2","10:88:12:2","10:98:18:2","11:15:5:2","18:28:18:2","18:45:5:2","18:46:5:2","18:104:6:2","20:72:19:2","20:131:12:2","23:37:5:2","24:33:39:2","28:60:7:2","28:79:10:2","31:15:16:2","31:33:26:2","33:28:9:2","35:5:10:2","37:6:4:2","39:10:11:2","40:51:8:2","41:12:13:2","42:36:7:2","43:32:11:2","45:24:6:2","45:35:9:2","46:20:11:2","47:36:3:2","53:29:11:2","67:5:4:2","79:38:3:2","87:16:4:2"]
+      }
+    ],
+    "cross_tabulation": [
+      {"construction": "DUNYA_LIFE_MODIFIER", "explicit_afterlife": 24, "explicit_resurrection_day": 7, "no_explicit_pair": 40, "total": 71},
+      {"construction": "DUNYA_SUBSTANTIVE", "explicit_afterlife": 34, "explicit_resurrection_day": 3, "no_explicit_pair": 4, "total": 41},
+      {"construction": "DUNYA_OTHER_SPATIAL_MODIFIER", "explicit_afterlife": 0, "explicit_resurrection_day": 0, "no_explicit_pair": 3, "total": 3}
+    ],
+    "decisions": [
+      {
+        "claim": "كل الجذر dnw زمني.",
+        "outcome": "REJECTED",
+        "decisive_refs": ["6:99","8:42","30:3","37:6","41:12","53:8","53:9","55:54","58:7","69:23","73:20","76:14"]
+      },
+      {
+        "claim": "كل موضع للسطح الدنيا زمني.",
+        "outcome": "REJECTED",
+        "decisive_refs": ["8:42","37:6","41:12"]
+      },
+      {
+        "claim": "مواضع الحياة الدنيا والاسم المستقل وعددها 112 تكوّن فئة مجال حياة، ووضعها قبالة الآخرة أو يوم القيامة مؤيد صريح في 68 توكن.",
+        "outcome": "CONTEXTUALLY_QURAN_SUPPORTED",
+        "boundary": "This is a lexeme/construction classification, not a temporal root core and not a claim that every local verse explicitly contains the contrast."
+      },
+      {
+        "claim": "الدنيا تعني الفناء أو القصر في كل موضع.",
+        "outcome": "REJECTED_AS_UNSUPPORTED_UNIVERSAL",
+        "reason": "Some verses provide brevity or perishing imagery, but the feature is neither present nor necessary in every occurrence."
+      }
+    ]
+  },
+  "hard_case_audit": [
+    {"case_id": "HC-01", "refs": ["58:7"], "pressure": "أدنى مقترنة بأكثر في عدد الأشخاص.", "effect": "Rejects physical-nearness-only and makes quantity a construction-selected scale."},
+    {"case_id": "HC-02", "refs": ["73:20"], "pressure": "أدنى من ثلثي الليل مع نصفه وثلثه.", "effect": "Blocks reading every adna as space; exact endpoint relation remains scalar."},
+    {"case_id": "HC-03", "refs": ["30:3"], "pressure": "في أدنى الأرض.", "effect": "Nearest versus lower geographic endpoint is unresolved from the authorized verse alone; no geography may be imported."},
+    {"case_id": "HC-04", "refs": ["32:21"], "pressure": "العذاب الأدنى دون العذاب الأكبر.", "effect": "The larger contrast supports rank or magnitude; temporal-nearness is not licensed by this verse alone."},
+    {"case_id": "HC-05", "refs": ["2:61"], "pressure": "أدنى مقابل خير.", "effect": "Value is supplied by the explicit comparison; moral baseness cannot be copied into the root."},
+    {"case_id": "HC-06", "refs": ["33:59"], "pressure": "يدنين عليهن من جلابيبهن ثم ذلك أدنى أن يعرفن.", "effect": "Contains two root tokens but they are not independent evidence; participant roles and outcome belong to construction/context."},
+    {"case_id": "HC-07", "refs": ["8:42"], "pressure": "العدوة الدنيا مقابل العدوة القصوى.", "effect": "Direct non-temporal spatial counterexample to a universal temporal dunya reading."},
+    {"case_id": "HC-08", "refs": ["37:6","41:12"], "pressure": "السماء الدنيا within an ordered set of heavens.", "effect": "Supports ordering but does not identify the deictic anchor inside either occurrence verse."},
+    {"case_id": "HC-09", "refs": ["6:99","55:54","69:23","76:14"], "pressure": "قنوان أو جنى أو قطوف أو ظلال موصوفة بدانية أو دان.", "effect": "Supports a participant-relative relation; only 76:14 states عليهم explicitly, so downwardness and reachability cannot be universalized."},
+    {"case_id": "HC-10", "refs": ["10:64","16:30","16:122","41:31"], "pressure": "البشرى والحسنة والولاية occur in the dunya class.", "effect": "Rejects an intrinsic moral-debasement reading of dunya."},
+    {"case_id": "HC-11", "refs": ["9:85","10:70","31:15","39:10"], "pressure": "Bare dunya without an explicit akhira or resurrection-day token in the same verse.", "effect": "Their class membership is contextual across the corpus; no same-verse contrast may be fabricated."},
+    {"case_id": "HC-12", "refs": ["53:8","53:9"], "pressure": "دنا followed by قاب قوسين أو أدنى across two authorized occurrence verses.", "effect": "Strongest internal bridge between event and scalar proximity, but the two adjacent verses do not by themselves prove the bridge for lexicalized dunya."
+    }
+  ],
+  "proposition_phrase_audit": {
+    "required_classifications": [
+      "DIRECTLY_QURAN_SUPPORTED",
+      "STRUCTURALLY_QURAN_SUPPORTED",
+      "CONTEXTUALLY_QURAN_SUPPORTED",
+      "INFERENTIAL_BUT_FALSIFIABLE",
+      "UNSUPPORTED_MODEL_PRIOR",
+      "EXTERNAL_SEMANTIC_ASSUMPTION"
+    ],
+    "entries": [
+      {"id": "PP-01", "phrase_ar": "المادة المؤكدة 133 توكنًا في 128 آية.", "classification": "DIRECTLY_QURAN_SUPPORTED", "disposition": "ALLOW", "refs": ["DB:structural_tokens:dnw:CONFIRMED","DB:corpus_occurrences:dnw-joined"]},
+      {"id": "PP-02", "phrase_ar": "الدنيا موزعة إلى 71 تابعًا للحياة و41 اسمًا مستقلًا و3 معدلات مكانية أخرى.", "classification": "STRUCTURALLY_QURAN_SUPPORTED", "disposition": "ALLOW", "refs": ["CLASS:DUNYA_LIFE_MODIFIER","CLASS:DUNYA_SUBSTANTIVE","CLASS:DUNYA_OTHER_SPATIAL_MODIFIER"]},
+      {"id": "PP-03", "phrase_ar": "تكرر بناء ذلك أدنى أن في خمسة مواضع.", "classification": "STRUCTURALLY_QURAN_SUPPORTED", "disposition": "ALLOW", "refs": ["2:282","4:3","5:108","33:51","33:59"]},
+      {"id": "PP-04", "phrase_ar": "أدنى تعمل على مقياس كمّي في 58:7 و73:20.", "classification": "CONTEXTUALLY_QURAN_SUPPORTED", "disposition": "ALLOW", "refs": ["58:7","73:20"]},
+      {"id": "PP-05", "phrase_ar": "الحياة الدنيا والاسم المستقل للدنيا يشكلان فئة مجال حياة على مستوى اللفظ والتركيب.", "classification": "CONTEXTUALLY_QURAN_SUPPORTED", "disposition": "ALLOW_WITH_LEXEME_LAYER_BOUNDARY", "refs": ["CLASS:DUNYA_LIFE_MODIFIER","CLASS:DUNYA_SUBSTANTIVE"]},
+      {"id": "PP-06", "phrase_ar": "ثلاثة مواضع للدنيا غير زمانية في العدوة والسماء.", "classification": "DIRECTLY_QURAN_SUPPORTED", "disposition": "ALLOW", "refs": ["8:42","37:6","41:12"]},
+      {"id": "PP-07", "phrase_ar": "الجسر المرشح هو علاقة أو انتقال نحو طرف دان أو أدنى من مقياس يحدده التركيب والسياق.", "classification": "INFERENTIAL_BUT_FALSIFIABLE", "disposition": "ALLOW_ONLY_AS_UNRESOLVED_CANDIDATE", "refs": ["53:8","53:9","58:7","73:20","CLASS:ALL"]},
+      {"id": "PP-08", "phrase_ar": "يدنين يحمل أدوار الفاعل والمتأثر والمتعلق في 33:59، ولا تنتمي تلك الأدوار كلها إلى الجذر.", "classification": "CONTEXTUALLY_QURAN_SUPPORTED", "disposition": "ALLOW", "refs": ["33:59"]},
+      {"id": "PP-09", "phrase_ar": "الدنيا زمان حاضر في كل موضع.", "classification": "UNSUPPORTED_MODEL_PRIOR", "disposition": "REJECT", "refs": ["8:42","37:6","41:12"]},
+      {"id": "PP-10", "phrase_ar": "الدنيا تحمل حكمًا أخلاقيًا بالحقارة أو الشر.", "classification": "UNSUPPORTED_MODEL_PRIOR", "disposition": "REJECT", "refs": ["10:64","16:30","16:122","41:31"]},
+      {"id": "PP-11", "phrase_ar": "أدنى الأرض في 30:3 هي أخفض نقطة جغرافية معلومة.", "classification": "EXTERNAL_SEMANTIC_ASSUMPTION", "disposition": "REJECT", "refs": ["30:3"]},
+      {"id": "PP-12", "phrase_ar": "العذاب الأدنى في 32:21 أقرب زمنًا بالضرورة.", "classification": "UNSUPPORTED_MODEL_PRIOR", "disposition": "REJECT", "refs": ["32:21"]},
+      {"id": "PP-13", "phrase_ar": "تسمية يدنين بصيغة صرفية تراثية محددة تكفي لإثبات السببية الدلالية.", "classification": "EXTERNAL_SEMANTIC_ASSUMPTION", "disposition": "REJECT", "refs": ["33:59"]},
+      {"id": "PP-14", "phrase_ar": "الانتساب البنيوي المؤكد إلى dnw يثبت المعنى المشترك.", "classification": "UNSUPPORTED_MODEL_PRIOR", "disposition": "REJECT", "refs": ["DB:structural_tokens:dnw:CONFIRMED"]},
+      {"id": "PP-15", "phrase_ar": "الانتساب البنيوي المؤكد إلى dnw يثبت هوية corpus فقط ولا يمنح الدلالة.", "classification": "STRUCTURALLY_QURAN_SUPPORTED", "disposition": "ALLOW", "refs": ["DB:structural_tokens:dnw:CONFIRMED"]}
+    ],
+    "proposed_final_content_ids": ["PP-01","PP-02","PP-03","PP-04","PP-05","PP-06","PP-07","PP-08","PP-15"],
+    "unsupported_model_prior_in_proposed_final_content": 0,
+    "external_semantic_assumption_in_proposed_final_content": 0
+  },
+  "reject_and_reopen_tests": [
+    {"test_id": "RR-01", "trigger": "Any confirmed token requires time, morality, causation, participant identity, or scale type to be placed in the root rather than form/construction/context.", "action": "REJECT_OR_REVISE_ROOT_BRIDGE"},
+    {"test_id": "RR-02", "trigger": "The candidate bridge cannot distinguish dnw from arbitrary scalar or relational expressions under a Quran-internal neighbor test.", "action": "REJECT_AS_GENERIC_OR_RESCOPE"},
+    {"test_id": "RR-03", "trigger": "A universal temporal dunya claim cannot account for 8:42, 37:6, or 41:12.", "action": "REJECT_UNIVERSAL_TEMPORAL_CLASSIFICATION"},
+    {"test_id": "RR-04", "trigger": "The dunya life-domain reading is asserted for a local verse with no life construction or corpus-level lexicalization rationale.", "action": "REOPEN_LOCAL_CLASSIFICATION"},
+    {"test_id": "RR-05", "trigger": "The structural attribution, snapshot, extraction version, or exact word reference for any of the 133 tokens changes.", "action": "STRUCTURAL_REVIEW_AND_FULL_RECOUNT"},
+    {"test_id": "RR-06", "trigger": "A Quran-internal lexical-family comparison produces a positive distinctive residue incompatible with the near/lower endpoint candidate.", "action": "REOPEN_ROOT_CORE"},
+    {"test_id": "RR-07", "trigger": "Prohibited prose, prior observations, translation, tafsir, dictionary, web, or model memory enters evidence or hypothesis lineage.", "action": "SOURCE_POLICY_BLOCKED_AND_RESTART_FRESH"},
+    {"test_id": "RR-08", "trigger": "The production Tanzil or identity-index hash differs from the bound values.", "action": "REOPEN_CORPUS_BINDING_BEFORE_SEMANTIC_USE"},
+    {"test_id": "RR-09", "trigger": "The five outcome-orientation occurrences are used as proof of physical movement.", "action": "REJECT_LAYER_COLLAPSE"},
+    {"test_id": "RR-10", "trigger": "The two root tokens in 33:59 are counted as independent corroboration.", "action": "REJECT_CIRCULAR_WEIGHTING"
+    }
+  ],
+  "diagnostic_summary": [
+    {"diagnostic": "DICTIONARY_FIRST", "status": "EVALUATED_CLEAN", "hard_blocker": false},
+    {"diagnostic": "CONTEXTUAL_LEAKAGE", "status": "EVALUATED_CLEAN", "hard_blocker": false},
+    {"diagnostic": "HERITAGE_BIAS", "status": "EVALUATED_CLEAN", "hard_blocker": false},
+    {"diagnostic": "TAFSIR_CONTAMINATION", "status": "EVALUATED_CLEAN", "hard_blocker": false},
+    {"diagnostic": "FORCED_UNIFICATION", "status": "FLAGGED", "hard_blocker": true, "details": "Blocks a preferred universal bridge until the dunya lexicalization and family-boundary competitor are resolved; it does not erase the class findings."},
+    {"diagnostic": "GENERIC_OVEREXTRACTION", "status": "FLAGGED", "hard_blocker": true, "details": "The surviving near/lower endpoint bridge may be too general for a preferred root core."},
+    {"diagnostic": "LETTER_SEMANTICS_OVERRELIANCE", "status": "EVALUATED_CLEAN", "hard_blocker": false},
+    {"diagnostic": "CIRCULAR_CONFIRMATION", "status": "EVALUATED_CLEAN", "hard_blocker": false, "details": "33:59 is explicitly treated as one local evidence context despite containing two dnw tokens."}
+  ],
+  "bounded_admissible_conclusion": {
+    "classification": "INFERENTIAL_BUT_FALSIFIABLE",
+    "text_ar": "تفصل المادة المؤكدة ثلاث طبقات كبرى: دنا ويدنين ودان ودانية في علاقات دنو موضعية؛ وأدنى في مقاييس المكان والكم والقيمة وتوجيه النتيجة؛ والدنيا في توزيع معجمي يضم 112 توكنًا في مجال الحياة أو الاسم المستقل و3 معدلات مكانية غير زمانية. الجسر الجامع الذي لم يسقط هو علاقة أو انتقال نحو الطرف الداني أو الأدنى من ترتيب يحدده التركيب والسياق، لكنه يبقى غير محسوم لأنه قد يكون عامًا ولأن شفافية الجذر داخل الدنيا لم تثبت.",
+    "contains_unsupported_model_prior": false,
+    "contains_external_semantic_assumption": false
+  },
+  "research_judgment": {
+    "contract_type": "ROOT_CONCEPT",
+    "research_state": "UNRESOLVED",
+    "claim_scope": "UNIVERSAL",
+    "result_strength": "UNRESOLVED",
+    "preferred_conclusion": null,
+    "plain_explanation": "All 133 confirmed tokens are classified and semantically tested. A context-selected near/lower relational bridge survives the token-level counterexamples but is not distinctive enough to prefer, and dunya may be partly lexicalized.",
+    "semantic_boundary": "Root contribution must exclude time, moral value, causation, participant roles, and the selected scale; those belong to lexeme, form, construction, or context.",
+    "layer_attribution": {
+      "root": "unresolved near/lower relational endpoint candidate",
+      "form": "event, state/description, and scalar-selection behavior observed in the surface families",
+      "lexeme": "dunya life-domain/spatial distribution",
+      "construction": "comparison, outcome clause, participant relation, and noun-modifier patterns",
+      "context": "space, quantity, value/rank, outcome, or life-domain ordering"
+    },
+    "supporting_evidence_refs": ["CLASS:DANA_EVENT","CLASS:YUDNINA_EVENT","CLASS:DAN_DANIYA_RELATION","CLASS:ADNA_OUTCOME_ORIENTATION","CLASS:ADNA_QUANTITY_SCALE","CLASS:ADNA_SPATIAL_SCALE","CLASS:ADNA_VALUE_OR_RANK_SCALE","CLASS:DUNYA_LIFE_MODIFIER","CLASS:DUNYA_SUBSTANTIVE","CLASS:DUNYA_OTHER_SPATIAL_MODIFIER"],
+    "counterevidence_refs": ["58:7","73:20","8:42","37:6","41:12","30:3","32:21"],
+    "hard_cases": ["HC-01","HC-02","HC-03","HC-04","HC-05","HC-06","HC-07","HC-08","HC-09","HC-10","HC-11","HC-12"],
+    "strongest_counterexample": "58:7 rejects a purely physical bridge through the explicit quantity frame: ولا أدنى من ذلك ولا أكثر.",
+    "strongest_competitor": "LEXEME_PARTITION_CANDIDATE_FOR_DUNYA",
+    "unresolved_cases": ["30:3 nearest-versus-lower spatial endpoint","32:21 magnitude/rank-versus-temporal reading","root transparency inside lexicalized dunya","Quran-internal lexical distinctiveness against neighbors"],
+    "rejection_condition": {
+      "reject": "A confirmed occurrence cannot be composed from the candidate root relation plus separately evidenced form, lexeme, construction, and context, or a family test shows the bridge has no positive distinctive residue.",
+      "revise": "The bridge fits all tokens only by adding scale type, time, morality, causation, or participant roles to the root.",
+      "rescope": "Dunya proves opaque enough to require a lexeme partition while the other surface families remain coherent."
+    },
+    "falsification_status": "PASSED",
+    "falsification_qualification": "Passed only the exact 133-token internal rejection attempts; this does not satisfy lexical distinctiveness or justify PREFERRED.",
+    "reopen_conditions": ["RR-01","RR-02","RR-03","RR-04","RR-05","RR-06","RR-07","RR-08","RR-09","RR-10"]
+  },
+  "final_integrity": {
+    "all_133_tokens_inventoried": true,
+    "per_class_exact_word_refs_present": true,
+    "hard_cases_audited": true,
+    "six_classification_phrase_audit_present": true,
+    "root_form_lexeme_construction_context_separated": true,
+    "unsupported_or_external_content_in_bounded_conclusion": 0,
+    "canonical_acceptance_claimed": false,
+    "database_modified": false,
+    "commit_created": false
+  }
+}
