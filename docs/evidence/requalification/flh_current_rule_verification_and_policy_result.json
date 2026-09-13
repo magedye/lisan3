@@ -1,0 +1,52 @@
+{
+  "artifact": "FLH_CURRENT_RULE_VERIFICATION_AND_CANONICALIZATION_POLICY_RESULT",
+  "recorded_at": "2026-09-13T12:56:00+03:00",
+  "authority": {
+    "owner_decision": "docs/evidence/requalification/flh_current_rule_owner_delegated_decision.json",
+    "independent_review": "docs/evidence/requalification/flh_current_rule_independent_review.json",
+    "repository_native_verification_record_permitted": true,
+    "human_impersonation": false,
+    "raw_database_state_flip": false,
+    "canonicalization_policy_bypass": false
+  },
+  "runtime": {
+    "database_sha256_before": "c2716f563339bdf2455428a1e2a8ff88d48cb3f883a8d7983ebc5f8f32459ecb",
+    "database_sha256_after": "d03d69ca341b01012edd4274840984b43fcf66b59e4a349ae878563fd87b5621",
+    "backup": "local-state-backups/lisanapp.before-flh-current-verification.20260913-125500.db",
+    "backup_sha256": "c2716f563339bdf2455428a1e2a8ff88d48cb3f883a8d7983ebc5f8f32459ecb",
+    "disposable_dry_run": "PASS; exact owner-decision audit, current-revision VerificationRecord, policy rejection, and zero canonicalizations; disposable copy removed before live execution",
+    "integrity_after": "ok"
+  },
+  "root": "flH",
+  "claim": "jud_f328d448@1",
+  "delegated_owner_decision": "VERIFY_AT_SCOPE",
+  "owner_decision_audit": "aud_98604e27",
+  "verification_record": "ver_f1154f4d",
+  "verification_audit": "aud_5d40cde6",
+  "verifier_identity": "TRUSTED_LOCAL_INDEPENDENT_VERIFIER",
+  "verification_type": "INDEPENDENT",
+  "verification_decision": "VERIFIED",
+  "evaluated_claim_revision": 1,
+  "verification_evidence_ref_count": 40,
+  "canonicalization_policy": {
+    "accepted": false,
+    "reasons": [
+      "Research state is not PREFERRED",
+      "Result strength is not STRONG",
+      "Falsification has not passed",
+      "Root concept is missing",
+      "A universal root concept cannot be accepted while confirmed occurrences remain unexplained (root semantic unity)",
+      "A universal root concept cannot be accepted while a confirmed occurrence remains a counterexample (root semantic unity)"
+    ]
+  },
+  "canonicalize_operation_invoked": false,
+  "canonical_state": "NOT_CANONICAL",
+  "post_transition_counts": {
+    "ResearchRuns": 13,
+    "Observations": 607,
+    "SemanticClaims": 13,
+    "VerificationRecords": 6,
+    "ACCEPTED": 0
+  },
+  "batch_08_status": "BATCH_08_NOT_AUTHORIZED"
+}

@@ -129,7 +129,7 @@ State context only. Canonical repository contracts and runtime evidence remain a
   freeze new immutable claims with predecessor lineage, then launch fresh independent review.
   `BATCH_08_NOT_AUTHORIZED`.
 
-## Five-Root Campaign — Final-Review Remediation In Progress (2026-09-13)
+## Five-Root Campaign — Final Candidate After Review Remediation (2026-09-13)
 
 - Owner master delegation was executed continuously for exactly ESw, dnw, flH, fwh,
   and glm. Batch 08 was not started. Historical Batch 07 JSON artifacts remain
@@ -149,30 +149,32 @@ State context only. Canonical repository contracts and runtime evidence remain a
 - The flH predecessor `jud_04cfe3db@1` and its VerificationRecord remain immutable
   history. Current flH successor `jud_f328d448@1` preserves the same conservative
   `UNRESOLVED/UNRESOLVED/UNIVERSAL` semantics and 40/40 form-only exact set, while the
-  current host rule now truthfully derives `deep_analysis_complete=false` and
-  `sufficient_for_claim=true`. Fresh exact-claim review is pending.
+  current host rule truthfully derives `deep_analysis_complete=false` and
+  `sufficient_for_claim=true`. Fresh read-only review returned `VERIFIED_AT_SCOPE`;
+  Batch 07 comparison is `PARTIAL_CONVERGENCE`.
 - Repository authority does not require a human identity for VerificationRecord. The
-  repository-native endpoint therefore recorded five `INDEPENDENT/VERIFIED` records
+  repository-native endpoint therefore recorded six `INDEPENDENT/VERIFIED` records
   using its server-owned `TRUSTED_LOCAL_INDEPENDENT_VERIFIER` identity. This did not
-  impersonate a human and did not grant canonical acceptance.
-- The real `CanonicalizationPolicy.evaluate` rejected the five previously selected claims for the
+  impersonate a human and did not grant canonical acceptance. The current flH record
+  is `ver_f1154f4d`, bound to `jud_f328d448@1`; the predecessor record remains history.
+- The real `CanonicalizationPolicy.evaluate` rejected all five current claims for the
   same semantic reasons: not PREFERRED, not STRONG, falsification not PASSED, missing
   positive root concept, unresolved universal occurrences, and confirmed
   counterexamples. No canonicalize operation was invoked, no gate was weakened, and
   all five remain `NOT_CANONICAL`; ACCEPTED remains 0.
 - Live governed counts: 13 ResearchRuns, 607 ObservationArtifacts, 13 SemanticClaims,
-  5 VerificationRecords, 0 ACCEPTED. `lisanapp.db` SHA-256 is
-  `c2716f563339bdf2455428a1e2a8ff88d48cb3f883a8d7983ebc5f8f32459ecb` and
+  6 VerificationRecords, 0 ACCEPTED. `lisanapp.db` SHA-256 is
+  `d03d69ca341b01012edd4274840984b43fcf66b59e4a349ae878563fd87b5621` and
   SQLite integrity is `ok`.
-- Durable final-decision and transition evidence:
-  `docs/evidence/requalification/five_root_final_owner_delegated_decisions.json` and
-  `docs/evidence/requalification/five_root_verification_and_policy_results.json`.
-- Status: `FINAL_REVIEW_REMEDIATION_IN_PROGRESS`; the prior final-evidence artifact is
-  superseded until the current flH successor receives fresh review, decision,
-  VerificationRecord, and policy evaluation.
-- NEXT: freeze this successor and the two documentation/line-ending repairs, obtain a
-  fresh flH review, repeat the exact-revision transitions, regenerate final evidence,
-  and commission a fresh merge-readiness review. `BATCH_08_NOT_AUTHORIZED`.
+- Durable current-rule flH review, delegated decision, verification/policy result, and
+  final v2 package are under `docs/evidence/requalification/`. The earlier
+  `five_root_campaign_final_evidence.json` remains explicitly superseded history.
+- Ruff, the 26-test canonical-runtime suite, and the full 260-test non-e2e regression
+  pass (51,891 deprecation warnings are non-blocking).
+- Status: `FINAL_CANDIDATE_READY_FOR_INDEPENDENT_MERGE_REVIEW`. NEXT: freeze the
+  final evidence candidate, obtain a fresh read-only whole-range
+  merge-readiness verdict, and fast-forward only if it is merge-ready and origin/main
+  remains unchanged. `BATCH_08_NOT_AUTHORIZED`.
 
 ## Repository
 
