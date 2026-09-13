@@ -1427,3 +1427,40 @@ Commit and normally publish the corrective producer evidence without changing
 the frozen DB claim bytes. Then launch a fresh read-only Sol/xhigh reviewer for
 each exact successor claim. Only after each initial verdict is frozen may the
 reviewer open the corresponding historical Batch 07 conclusion for comparison.
+
+## Five-Root Corrective Independent-Review Checkpoint (2026-09-13)
+
+- Fresh read-only post-freeze review of `flH jud_04cfe3db@1` at
+  `f5f20bb48f4ee574e82914d3bd37d81068238404` returned `VERIFIED_AT_SCOPE`.
+  The stable research result remains `UNRESOLVED`: all 40 confirmed tokens are
+  Form IV (27 V(IV), 13 N(IV)), so a bare-root contribution cannot be isolated.
+- The first `dnw` reviewer disclosed an incidental Batch 07 report snippet from
+  a broad path search and was not accepted as the mandatory clean review. A
+  replacement exact-path/exact-table read-only review, with zero prohibited-source
+  access, returned `CORRECTIVE_RESEARCH_REQUIRED` for `jud_7805c0b0@1`.
+- `dnw` exact-set mechanics are clean (133 confirmed tokens, observations,
+  supports, and dependencies; zero missing/extra/duplicate/form mismatch), but
+  all 133 observations contain only form/POS. Syntax, participant roles, local
+  context, and ambiguity are empty in 133/133. Row presence therefore cannot
+  substantiate `deep_analysis_complete=true` or stable terminal semantic analysis.
+- Claim-hash custody was also clarified. The stored `dnw` digest reproduces as
+  `c1578294...ec9e` only when both timestamps (`created_at`, `accepted_at`) are
+  excluded, JSON columns decoded, and `id` is aliased to `claim_id`. The producer
+  artifact's statement that only `created_at` was excluded was incomplete; the
+  clean reviewer correctly detected a mismatch under that literal description.
+- Review evidence:
+  `docs/evidence/requalification/five_root_corrective_independent_reviews.json`.
+  No VerificationRecord, canonical transition, or DB mutation occurred.
+- `flH` may proceed to its post-review Batch 07 comparison. `dnw` enters
+  corrective cycle 2 under the owner's automatic-continuation authority, with
+  substantive per-occurrence semantic observations and a fresh re-review required.
+  Batch 08 remains unauthorized.
+
+## Current Exact Next Action
+
+Commit and normally publish the clean independent-review checkpoint. Then run
+`dnw` corrective cycle 2 with a fresh separated panel, persist the actual panel
+outputs and semantically substantive 133-token observation set in a new run,
+freeze a new successor claim with explicit hash projection, and re-review it in
+a fresh blind context. Independently, perform the already-permitted post-review
+Batch 07 comparison for the stable `flH` result without altering that claim.

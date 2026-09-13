@@ -1,0 +1,94 @@
+{
+  "artifact": "FIVE_ROOT_CORRECTIVE_INDEPENDENT_REVIEWS",
+  "recorded_at": "2026-09-13T09:40:28+03:00",
+  "reviewed_git_checkpoint": "f5f20bb48f4ee574e82914d3bd37d81068238404",
+  "database_sha256": "092f7bbb648cc5939d392364117b161dbf944d38564fd9c95fc3fc798e7be663",
+  "review_boundary": {
+    "model_profile": "gpt-5.6-sol/xhigh",
+    "mode": "fresh read-only post-freeze review",
+    "batch_07_initial_access": "NONE",
+    "writes": "NONE",
+    "verification_records_created": 0,
+    "canonical_transitions": 0,
+    "note": "The first dnw reviewer disclosed an incidental Batch 07 report snippet from a broad path search. Its verdict was not accepted as the mandatory clean review. A replacement fresh reviewer used exact paths and exact-table queries, reported zero prohibited-source access, and independently reached the recorded dnw verdict."
+  },
+  "claim_hash_contract_clarification": {
+    "producer_artifact_wording_defect": "The producer artifact said only created_at was excluded. The recorded digest actually excludes both created_at and accepted_at, decodes JSON-valued columns, renames persisted id to claim_id, and hashes canonical UTF-8 JSON with sorted keys, compact separators, and non-ASCII preservation.",
+    "dnw_reproduced_with_clarified_projection": "c1578294733d60a60702bd9b4a22b27d63035a0f75bd636ff874e5ee6822ec9e",
+    "disposition": "The bytes are reproducible under the clarified projection, but the projection description must be explicit in the next successor evidence. The clean replacement reviewer correctly detected the mismatch under the producer artifact's literal wording."
+  },
+  "roots": {
+    "dnw": {
+      "claim": "jud_7805c0b0@1",
+      "run_id": "run_7aa9aa5f",
+      "claim_sha256": "c1578294733d60a60702bd9b4a22b27d63035a0f75bd636ff874e5ee6822ec9e",
+      "verdict": "CORRECTIVE_RESEARCH_REQUIRED",
+      "stable_terminal": false,
+      "exact_set": {
+        "confirmed_tokens": 133,
+        "distinct_word_refs": 133,
+        "distinct_verses": 128,
+        "observations": 133,
+        "supporting_refs": 133,
+        "evidence_dependencies": 133,
+        "missing": 0,
+        "extra": 0,
+        "duplicates": 0,
+        "form_mismatches": 0,
+        "ref_set_sha256": "822b5f2c37d2aa0e928cb6826ec669a680d6c4311f85ff551cec1aadfe07fe27"
+      },
+      "semantic_observation_substance": {
+        "form_only_rows": 133,
+        "syntax_nonempty": 0,
+        "participant_roles_nonempty": 0,
+        "local_context_nonempty": 0,
+        "unresolved_ambiguity_nonempty": 0
+      },
+      "blocking_findings": [
+        "deep_analysis_complete=true is derived from observation-row identity coverage and does not prove semantic depth for these rows",
+        "the hard cases, layer attribution, semantic boundary, competitor, and counterexample are claim-level assertions without occurrence-level semantic observations",
+        "the universal terminal UNRESOLVED conclusion is plausible but not independently traceable from the persisted observation content",
+        "the producer artifact's claim-hash projection wording omitted the accepted_at exclusion and id-to-claim_id alias"
+      ],
+      "minimum_correction": "Preserve jud_7805c0b0@1. Create a clean successor run with substantive occurrence-level root/form/lexeme/construction/context and ambiguity analysis for the exact 133-token set; persist actual panel outputs; compare the relational-axis and split-class competitors across all hard cases; derive semantic completeness from observation substance; publish an explicit claim-hash projection; then commission a new fresh independent review.",
+      "source_boundary": "Replacement reviewer reported zero access to Batch 07, PROJECT_STATE, predecessor prose, memory, web, dictionaries, translations, or tafsir."
+    },
+    "flH": {
+      "claim": "jud_04cfe3db@1",
+      "run_id": "run_66fb3467",
+      "claim_sha256": "ec3af6e66771c7dad0342d74b2327c9cb68c1cca51dc8506c47bd23b60d44a9c",
+      "verdict": "VERIFIED_AT_SCOPE",
+      "stable_terminal": true,
+      "terminal_research_state": "UNRESOLVED",
+      "exact_set": {
+        "confirmed_tokens": 40,
+        "distinct_word_refs": 40,
+        "observations": 40,
+        "supporting_refs": 40,
+        "missing": 0,
+        "extra": 0,
+        "duplicates": 0,
+        "form_distribution": {
+          "V(IV)": 27,
+          "N(IV)": 13
+        },
+        "ref_set_sha256": "37c9f617a67ff8ca6647f06ccc337ffff39003cc21f55fe5ab2bde21e18fa6e9"
+      },
+      "qualification": "Observation-row coverage is mechanically complete but the semantic detail columns are null. This does not invalidate the conservative null root conclusion because every attested token is Form IV and the record makes no positive root claim.",
+      "hard_cases": [
+        "20:64:7:1",
+        "20:69:13:1",
+        "18:20:11:1",
+        "91:9:2:1"
+      ],
+      "reopen_boundary": "Reopen if the confirmed set changes, a non-Form-IV occurrence is admitted, or Quran-internal evidence isolates a stable bare-root contribution.",
+      "source_boundary": "Reviewer reported zero Batch 07, predecessor prose, PROJECT_STATE, memory, web, dictionary, translation, or tafsir access before verdict."
+    }
+  },
+  "next_state": {
+    "dnw": "CORRECTIVE_CYCLE_2_REQUIRED",
+    "flH": "READY_FOR_POST_REVIEW_BATCH_07_COMPARISON"
+  },
+  "batch_07_comparison": "NOT_YET_PERFORMED",
+  "batch_08_status": "BATCH_08_NOT_AUTHORIZED"
+}
