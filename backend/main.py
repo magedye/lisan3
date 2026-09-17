@@ -639,6 +639,40 @@ def create_research_judgment(
 def get_research_judgment(claim_id: str, db: Session = Depends(get_db)):
     return _require_released_claim(db, claim_id)
 
+from .domain.services.provenance import ProvenanceService
+
+@app.get("/runs/{run_id}/provenance")
+def get_provenance(run_id: str, db: Session = Depends(get_db)):
+    run = db.query(models.ResearchRun).filter_by(id=run_id).first()
+    if not run:
+        raise HTTPException(status_code=404, detail="Run not found")
+    return ProvenanceService.get_run_provenance(db, run_id)
+
+@app.post("/judgments/{claim_id}/reviews")
+def add_independent_review(claim_id: str, payload: dict, db: Session = Depends(get_db)):
+    claim = db.query(models.SemanticClaim).filter_by(id=claim_id).first()
+    if not claim:
+        raise HTTPException(status_code=404, detail="Claim not found")
+        
+    import uuid
+    from datetime import datetime, timezone
+    review = models.IndependentReview(
+        id=f"rev_{uuid.uuid4().hex[:8]}",
+        claim_id=claim_id,
+        revision_id=claim.revision_id,
+        reviewer_identity=payload.get("reviewer_identity", "SYSTEM"),
+        review_status="COMPLETED",
+        verdict=payload.get("verdict"),
+        scope_disposition=payload.get("scope_disposition"),
+        evidence_package_ref=payload.get("evidence_package_ref"),
+        created_at=datetime.now(timezone.utc).replace(tzinfo=None)
+    )
+    db.add(review)
+    db.commit()
+    db.refresh(review)
+    return {"status": "success", "review_id": review.id}
+
+
 
 @app.post(
     "/judgments/{claim_id}/verification",

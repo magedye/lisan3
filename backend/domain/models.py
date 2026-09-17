@@ -977,3 +977,30 @@ class CampaignState(Base):
     updated_at = Column(
         DateTime, default=utc_now_naive, onupdate=utc_now_naive
     )
+
+
+# --- Independent Review & Provenance (Track 3, 5, 6) ---
+class IndependentReview(Base):
+    __tablename__ = "independent_reviews"
+    id = Column(String, primary_key=True, index=True)
+    claim_id = Column(String, ForeignKey("semantic_claims.id"), nullable=False)
+    revision_id = Column(Integer, nullable=False)
+    reviewer_identity = Column(String, nullable=False)
+    review_status = Column(String, nullable=False) # PENDING, COMPLETED
+    verdict = Column(String) # VERIFIED, REJECTED
+    scope_disposition = Column(String)
+    evidence_package_ref = Column(String)
+    independence_metadata = Column(JSON)
+    superseded_by = Column(String, nullable=True)
+    created_at = Column(DateTime, default=utc_now_naive)
+    completed_at = Column(DateTime, nullable=True)
+
+class ClaimRevision(Base):
+    __tablename__ = "claim_revisions"
+    id = Column(String, primary_key=True, index=True)
+    claim_id = Column(String, ForeignKey("semantic_claims.id"), nullable=False)
+    revision_number = Column(Integer, nullable=False)
+    correction_reason = Column(String)
+    payload = Column(JSON)
+    created_at = Column(DateTime, default=utc_now_naive)
+
