@@ -1,0 +1,18 @@
+{
+  "dataset_id": "SYNONYMS_DATASET_1",
+  "status": "EVALUATION_ONLY",
+  "semantic_authority": "NONE",
+  "file": "../datasets/Synonyms Dataset(1).xlsx",
+  "sha256": "a8622546d057f60d2cee0db3b8fdc79cf30303db6ae83001be1634215bb00035",
+  "allowed_uses": [
+    "evaluation_of_similarity_spectrum",
+    "reviewer_disagreement_cases",
+    "neighbor_method_development"
+  ],
+  "forbidden_uses": [
+    "quranic_semantic_evidence",
+    "root_concept_proof",
+    "internal_confidence_boost"
+  ],
+  "notes_ar": "مجموعة تقييم خارجية؛ لا تثبت معنى قرآنيا وبعض النصوص العربية تحتاج تدقيقًا."
+}

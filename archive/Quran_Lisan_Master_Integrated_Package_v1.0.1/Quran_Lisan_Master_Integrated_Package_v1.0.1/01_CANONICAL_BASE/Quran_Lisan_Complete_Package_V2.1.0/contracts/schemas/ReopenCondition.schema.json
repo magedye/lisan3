@@ -1,0 +1,70 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.1.0",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "record_revision": {
+      "default": 1,
+      "minimum": 1,
+      "title": "Record Revision",
+      "type": "integer"
+    },
+    "supersedes_id": {
+      "anyOf": [
+        {
+          "maxLength": 128,
+          "minLength": 3,
+          "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Supersedes Id"
+    },
+    "reopen_condition_id": {
+      "maxLength": 128,
+      "minLength": 3,
+      "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+      "title": "Reopen Condition Id",
+      "type": "string"
+    },
+    "run_id": {
+      "maxLength": 128,
+      "minLength": 3,
+      "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+      "title": "Run Id",
+      "type": "string"
+    },
+    "trigger": {
+      "title": "Trigger",
+      "type": "string"
+    },
+    "required_new_evidence": {
+      "title": "Required New Evidence",
+      "type": "string"
+    },
+    "affected_result_id": {
+      "maxLength": 128,
+      "minLength": 3,
+      "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+      "title": "Affected Result Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "reopen_condition_id",
+    "run_id",
+    "trigger",
+    "required_new_evidence",
+    "affected_result_id"
+  ],
+  "title": "ReopenCondition",
+  "type": "object"
+}

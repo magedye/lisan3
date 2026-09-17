@@ -1,0 +1,19 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "occurrence_id": {
+      "title": "Occurrence Id",
+      "type": "string"
+    },
+    "window_policy": {
+      "default": "VERSE_ONLY",
+      "title": "Window Policy",
+      "type": "string"
+    }
+  },
+  "required": [
+    "occurrence_id"
+  ],
+  "title": "GetContextRequest",
+  "type": "object"
+}

@@ -1,0 +1,152 @@
+{
+  "$defs": {
+    "DecisionDisposition": {
+      "enum": [
+        "PREFERRED",
+        "UNRESOLVED",
+        "REJECTED",
+        "NO_DIFFERENCE_ESTABLISHED"
+      ],
+      "title": "DecisionDisposition",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.1.0",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "record_revision": {
+      "default": 1,
+      "minimum": 1,
+      "title": "Record Revision",
+      "type": "integer"
+    },
+    "supersedes_id": {
+      "anyOf": [
+        {
+          "maxLength": 128,
+          "minLength": 3,
+          "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Supersedes Id"
+    },
+    "neighbor_result_id": {
+      "maxLength": 128,
+      "minLength": 3,
+      "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+      "title": "Neighbor Result Id",
+      "type": "string"
+    },
+    "run_id": {
+      "maxLength": 128,
+      "minLength": 3,
+      "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+      "title": "Run Id",
+      "type": "string"
+    },
+    "target_id": {
+      "maxLength": 128,
+      "minLength": 3,
+      "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+      "title": "Target Id",
+      "type": "string"
+    },
+    "neighbor_id": {
+      "maxLength": 128,
+      "minLength": 3,
+      "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+      "title": "Neighbor Id",
+      "type": "string"
+    },
+    "shared_domain": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Shared Domain"
+    },
+    "target_residue": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Target Residue",
+      "type": "array"
+    },
+    "neighbor_residue": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Neighbor Residue",
+      "type": "array"
+    },
+    "tested_dimensions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Tested Dimensions",
+      "type": "array"
+    },
+    "established_differences": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Established Differences",
+      "type": "array"
+    },
+    "unresolved_differences": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Unresolved Differences",
+      "type": "array"
+    },
+    "same_context_collisions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Same Context Collisions",
+      "type": "array"
+    },
+    "substitution_cases": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Substitution Cases",
+      "type": "array"
+    },
+    "counterfactual_losses": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Counterfactual Losses",
+      "type": "array"
+    },
+    "disposition": {
+      "$ref": "#/$defs/DecisionDisposition"
+    }
+  },
+  "required": [
+    "neighbor_result_id",
+    "run_id",
+    "target_id",
+    "neighbor_id",
+    "disposition"
+  ],
+  "title": "SemanticNeighborResult",
+  "type": "object"
+}

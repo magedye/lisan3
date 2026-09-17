@@ -1,0 +1,85 @@
+{
+  "$defs": {
+    "MOARole": {
+      "enum": [
+        "ROOT_CORE_ANALYST",
+        "FALSIFICATION_ANALYST",
+        "SEMANTIC_FAMILY_ANALYST",
+        "MORPHOSYNTAX_ANALYST",
+        "EVIDENCE_GOVERNANCE_AUDITOR"
+      ],
+      "title": "MOARole",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.1.0",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "record_revision": {
+      "default": 1,
+      "minimum": 1,
+      "title": "Record Revision",
+      "type": "integer"
+    },
+    "supersedes_id": {
+      "anyOf": [
+        {
+          "maxLength": 128,
+          "minLength": 3,
+          "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Supersedes Id"
+    },
+    "role": {
+      "$ref": "#/$defs/MOARole"
+    },
+    "finding": {
+      "title": "Finding",
+      "type": "string"
+    },
+    "evidence_relation_ids": {
+      "items": {
+        "maxLength": 128,
+        "minLength": 3,
+        "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+        "type": "string"
+      },
+      "title": "Evidence Relation Ids",
+      "type": "array"
+    },
+    "unresolved_items": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Unresolved Items",
+      "type": "array"
+    },
+    "receipt_ids": {
+      "items": {
+        "maxLength": 128,
+        "minLength": 3,
+        "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+        "type": "string"
+      },
+      "title": "Receipt Ids",
+      "type": "array"
+    }
+  },
+  "required": [
+    "role",
+    "finding"
+  ],
+  "title": "MOARoleFinding",
+  "type": "object"
+}

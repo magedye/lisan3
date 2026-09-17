@@ -1,0 +1,91 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.1.0",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "record_revision": {
+      "default": 1,
+      "minimum": 1,
+      "title": "Record Revision",
+      "type": "integer"
+    },
+    "supersedes_id": {
+      "anyOf": [
+        {
+          "maxLength": 128,
+          "minLength": 3,
+          "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Supersedes Id"
+    },
+    "external_revision_id": {
+      "maxLength": 128,
+      "minLength": 3,
+      "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+      "title": "External Revision Id",
+      "type": "string"
+    },
+    "parent_internal_snapshot_id": {
+      "maxLength": 128,
+      "minLength": 3,
+      "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+      "title": "Parent Internal Snapshot Id",
+      "type": "string"
+    },
+    "run_id": {
+      "maxLength": 128,
+      "minLength": 3,
+      "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+      "title": "Run Id",
+      "type": "string"
+    },
+    "source_ids": {
+      "items": {
+        "maxLength": 128,
+        "minLength": 3,
+        "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Source Ids",
+      "type": "array"
+    },
+    "agreements": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Agreements",
+      "type": "array"
+    },
+    "disagreements": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Disagreements",
+      "type": "array"
+    },
+    "reopen_internal_research": {
+      "default": false,
+      "title": "Reopen Internal Research",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "external_revision_id",
+    "parent_internal_snapshot_id",
+    "run_id",
+    "source_ids"
+  ],
+  "title": "ExternalComparisonRevision",
+  "type": "object"
+}

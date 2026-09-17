@@ -1,0 +1,303 @@
+{
+  "$defs": {
+    "ExecutionActor": {
+      "enum": [
+        "TOOL",
+        "MODEL",
+        "AGENT",
+        "SKILL",
+        "HUMAN",
+        "SYSTEM"
+      ],
+      "title": "ExecutionActor",
+      "type": "string"
+    },
+    "ExecutionReceipt": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "default": "2.1.0",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "record_revision": {
+          "default": 1,
+          "minimum": 1,
+          "title": "Record Revision",
+          "type": "integer"
+        },
+        "supersedes_id": {
+          "anyOf": [
+            {
+              "maxLength": 128,
+              "minLength": 3,
+              "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Supersedes Id"
+        },
+        "receipt_id": {
+          "maxLength": 128,
+          "minLength": 3,
+          "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+          "title": "Receipt Id",
+          "type": "string"
+        },
+        "run_id": {
+          "maxLength": 128,
+          "minLength": 3,
+          "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+          "title": "Run Id",
+          "type": "string"
+        },
+        "actor": {
+          "$ref": "#/$defs/ExecutionActor"
+        },
+        "actor_id": {
+          "title": "Actor Id",
+          "type": "string"
+        },
+        "actor_version": {
+          "title": "Actor Version",
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/$defs/ExecutionStatus"
+        },
+        "started_at": {
+          "format": "date-time",
+          "title": "Started At",
+          "type": "string"
+        },
+        "ended_at": {
+          "format": "date-time",
+          "title": "Ended At",
+          "type": "string"
+        },
+        "input_digest": {
+          "title": "Input Digest",
+          "type": "string"
+        },
+        "output_digest": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Output Digest"
+        },
+        "source_ids": {
+          "items": {
+            "maxLength": 128,
+            "minLength": 3,
+            "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+            "type": "string"
+          },
+          "title": "Source Ids",
+          "type": "array"
+        },
+        "tool_call_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tool Call Id"
+        },
+        "error_code": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Error Code"
+        },
+        "retry_of_receipt_id": {
+          "anyOf": [
+            {
+              "maxLength": 128,
+              "minLength": 3,
+              "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Retry Of Receipt Id"
+        }
+      },
+      "required": [
+        "receipt_id",
+        "run_id",
+        "actor",
+        "actor_id",
+        "actor_version",
+        "status",
+        "started_at",
+        "ended_at",
+        "input_digest"
+      ],
+      "title": "ExecutionReceipt",
+      "type": "object"
+    },
+    "ExecutionStatus": {
+      "enum": [
+        "SUCCEEDED",
+        "FAILED",
+        "BLOCKED",
+        "NOT_EVALUATED"
+      ],
+      "title": "ExecutionStatus",
+      "type": "string"
+    },
+    "Occurrence": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "default": "2.1.0",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "record_revision": {
+          "default": 1,
+          "minimum": 1,
+          "title": "Record Revision",
+          "type": "integer"
+        },
+        "supersedes_id": {
+          "anyOf": [
+            {
+              "maxLength": 128,
+              "minLength": 3,
+              "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Supersedes Id"
+        },
+        "occurrence_id": {
+          "maxLength": 128,
+          "minLength": 3,
+          "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+          "title": "Occurrence Id",
+          "type": "string"
+        },
+        "snapshot_id": {
+          "maxLength": 128,
+          "minLength": 3,
+          "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+          "title": "Snapshot Id",
+          "type": "string"
+        },
+        "surah": {
+          "maximum": 114,
+          "minimum": 1,
+          "title": "Surah",
+          "type": "integer"
+        },
+        "ayah": {
+          "minimum": 1,
+          "title": "Ayah",
+          "type": "integer"
+        },
+        "word_index": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Word Index"
+        },
+        "surface_text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Surface Text"
+        },
+        "target_id": {
+          "maxLength": 128,
+          "minLength": 3,
+          "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+          "title": "Target Id",
+          "type": "string"
+        },
+        "source_locator": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Locator"
+        }
+      },
+      "required": [
+        "occurrence_id",
+        "snapshot_id",
+        "surah",
+        "ayah",
+        "target_id"
+      ],
+      "title": "Occurrence",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "occurrences": {
+      "items": {
+        "$ref": "#/$defs/Occurrence"
+      },
+      "title": "Occurrences",
+      "type": "array"
+    },
+    "receipt": {
+      "$ref": "#/$defs/ExecutionReceipt"
+    }
+  },
+  "required": [
+    "occurrences",
+    "receipt"
+  ],
+  "title": "GetOccurrencesResponse",
+  "type": "object"
+}

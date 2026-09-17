@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CAP-GO-01 Result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "protocol_version",
+    "environment",
+    "tests",
+    "overall"
+  ],
+  "properties": {
+    "protocol_version": {
+      "const": "1.0.1"
+    },
+    "environment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "platform",
+        "account_type",
+        "tested_at",
+        "model_or_mode"
+      ],
+      "properties": {
+        "platform": {
+          "type": "string"
+        },
+        "account_type": {
+          "type": "string"
+        },
+        "tested_at": {
+          "type": "string"
+        },
+        "model_or_mode": {
+          "type": "string"
+        },
+        "platform_build": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "tests": {
+      "type": "array",
+      "minItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "test_id",
+          "result",
+          "evidence_files"
+        ],
+        "properties": {
+          "test_id": {
+            "type": "string"
+          },
+          "result": {
+            "enum": [
+              "PASS",
+              "FAIL",
+              "PARTIAL"
+            ]
+          },
+          "evidence_files": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "overall": {
+      "enum": [
+        "PASS",
+        "FAIL"
+      ]
+    }
+  }
+}

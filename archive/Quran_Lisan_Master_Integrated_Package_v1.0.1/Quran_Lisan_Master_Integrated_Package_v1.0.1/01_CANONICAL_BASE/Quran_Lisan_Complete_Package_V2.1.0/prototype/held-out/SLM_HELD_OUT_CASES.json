@@ -1,0 +1,21 @@
+{
+  "fixture_id": "SLM_HELD_OUT_V1",
+  "root": "س ل م",
+  "policy": "These locators are hidden from primary hypothesis-building in PROTOTYPE-SLM-01 and revealed for hard-case evaluation.",
+  "cases": [
+    "6:35:14",
+    "52:38:3",
+    "2:233:53",
+    "8:43:16",
+    "21:69:5",
+    "39:29:9",
+    "37:26:4"
+  ],
+  "semantic_expected_answer": null,
+  "expected_behavior": [
+    "do_not_force_single_gloss",
+    "separate_form_context_root",
+    "record_counterevidence_or_explanation",
+    "allow_branch_or_unresolved"
+  ]
+}

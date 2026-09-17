@@ -1,0 +1,133 @@
+{
+  "$defs": {
+    "ClaimEstablishment": {
+      "enum": [
+        "ESTABLISHED",
+        "SUPPORTED",
+        "TENTATIVE",
+        "UNKNOWN",
+        "NOT_APPLICABLE"
+      ],
+      "title": "ClaimEstablishment",
+      "type": "string"
+    },
+    "SemanticOperatorType": {
+      "enum": [
+        "INFLECTION",
+        "DERIVATION",
+        "STEM_FORM",
+        "ASPECT_VIEW",
+        "VOICE",
+        "MOOD",
+        "NOMINALIZATION_PARTICIPLE",
+        "PARTICLE",
+        "CONSTRUCTION",
+        "ARGUMENT_ROLE"
+      ],
+      "title": "SemanticOperatorType",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.1.0",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "record_revision": {
+      "default": 1,
+      "minimum": 1,
+      "title": "Record Revision",
+      "type": "integer"
+    },
+    "supersedes_id": {
+      "anyOf": [
+        {
+          "maxLength": 128,
+          "minLength": 3,
+          "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Supersedes Id"
+    },
+    "contribution_id": {
+      "maxLength": 128,
+      "minLength": 3,
+      "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+      "title": "Contribution Id",
+      "type": "string"
+    },
+    "run_id": {
+      "maxLength": 128,
+      "minLength": 3,
+      "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+      "title": "Run Id",
+      "type": "string"
+    },
+    "operator_type": {
+      "$ref": "#/$defs/SemanticOperatorType"
+    },
+    "operator_label": {
+      "title": "Operator Label",
+      "type": "string"
+    },
+    "general_function": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "General Function"
+    },
+    "local_realization": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Local Realization"
+    },
+    "evidence_scope": {
+      "title": "Evidence Scope",
+      "type": "string"
+    },
+    "evidence_relation_ids": {
+      "items": {
+        "maxLength": 128,
+        "minLength": 3,
+        "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+        "type": "string"
+      },
+      "title": "Evidence Relation Ids",
+      "type": "array"
+    },
+    "establishment": {
+      "$ref": "#/$defs/ClaimEstablishment",
+      "default": "UNKNOWN"
+    }
+  },
+  "required": [
+    "contribution_id",
+    "run_id",
+    "operator_type",
+    "operator_label",
+    "evidence_scope"
+  ],
+  "title": "SemanticOperatorContribution",
+  "type": "object"
+}

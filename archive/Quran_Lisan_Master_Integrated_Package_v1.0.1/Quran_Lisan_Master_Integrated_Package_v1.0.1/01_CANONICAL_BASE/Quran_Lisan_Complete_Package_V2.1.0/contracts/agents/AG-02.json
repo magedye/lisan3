@@ -1,0 +1,13 @@
+{
+  "agent_id": "AG-02",
+  "name": "Adversarial Verifier",
+  "version": "2.0.0",
+  "status": "ACCEPTED",
+  "purpose_ar": "يحاول الدحض والحالات الصعبة وفق شروط رفض تشغيلية",
+  "allowed_skills": [
+    "SK-10"
+  ],
+  "limits_ar": "لا يختلق اعتراضًا بلا موضع/اختبار؛ لا يعيد صياغة الفرضية لصالحها.",
+  "required_receipt": true,
+  "provider_neutral": true
+}

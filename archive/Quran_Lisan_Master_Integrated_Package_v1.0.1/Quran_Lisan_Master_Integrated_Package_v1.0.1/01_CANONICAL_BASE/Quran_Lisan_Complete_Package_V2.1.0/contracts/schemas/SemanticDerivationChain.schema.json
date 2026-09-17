@@ -1,0 +1,213 @@
+{
+  "$defs": {
+    "ClaimEstablishment": {
+      "enum": [
+        "ESTABLISHED",
+        "SUPPORTED",
+        "TENTATIVE",
+        "UNKNOWN",
+        "NOT_APPLICABLE"
+      ],
+      "title": "ClaimEstablishment",
+      "type": "string"
+    },
+    "SemanticDerivationStage": {
+      "enum": [
+        "ROOT_CONTRIBUTION",
+        "INFLECTION_DERIVATION_GENERAL",
+        "LEXEME_ROOT_RELATION",
+        "FORM_GENERAL",
+        "CONSTRUCTION_GENERAL",
+        "FORM_LOCAL",
+        "CONSTRUCTION_LOCAL",
+        "ARGUMENT_ROLES",
+        "CONTEXT_REQUIREMENT",
+        "LOCAL_MEANING",
+        "FINAL_SEMANTIC_STATEMENT"
+      ],
+      "title": "SemanticDerivationStage",
+      "type": "string"
+    },
+    "SemanticDerivationStep": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "default": "2.1.0",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "record_revision": {
+          "default": 1,
+          "minimum": 1,
+          "title": "Record Revision",
+          "type": "integer"
+        },
+        "supersedes_id": {
+          "anyOf": [
+            {
+              "maxLength": 128,
+              "minLength": 3,
+              "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Supersedes Id"
+        },
+        "step_id": {
+          "maxLength": 128,
+          "minLength": 3,
+          "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+          "title": "Step Id",
+          "type": "string"
+        },
+        "run_id": {
+          "maxLength": 128,
+          "minLength": 3,
+          "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+          "title": "Run Id",
+          "type": "string"
+        },
+        "stage": {
+          "$ref": "#/$defs/SemanticDerivationStage"
+        },
+        "statement": {
+          "title": "Statement",
+          "type": "string"
+        },
+        "establishment": {
+          "$ref": "#/$defs/ClaimEstablishment"
+        },
+        "evidence_relation_ids": {
+          "items": {
+            "maxLength": 128,
+            "minLength": 3,
+            "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+            "type": "string"
+          },
+          "title": "Evidence Relation Ids",
+          "type": "array"
+        },
+        "attribution_ids": {
+          "items": {
+            "maxLength": 128,
+            "minLength": 3,
+            "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+            "type": "string"
+          },
+          "title": "Attribution Ids",
+          "type": "array"
+        },
+        "evidence_scope": {
+          "title": "Evidence Scope",
+          "type": "string"
+        },
+        "unresolved_notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Unresolved Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "step_id",
+        "run_id",
+        "stage",
+        "statement",
+        "establishment",
+        "evidence_scope"
+      ],
+      "title": "SemanticDerivationStep",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.1.0",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "record_revision": {
+      "default": 1,
+      "minimum": 1,
+      "title": "Record Revision",
+      "type": "integer"
+    },
+    "supersedes_id": {
+      "anyOf": [
+        {
+          "maxLength": 128,
+          "minLength": 3,
+          "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Supersedes Id"
+    },
+    "chain_id": {
+      "maxLength": 128,
+      "minLength": 3,
+      "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+      "title": "Chain Id",
+      "type": "string"
+    },
+    "run_id": {
+      "maxLength": 128,
+      "minLength": 3,
+      "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+      "title": "Run Id",
+      "type": "string"
+    },
+    "target_id": {
+      "maxLength": 128,
+      "minLength": 3,
+      "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+      "title": "Target Id",
+      "type": "string"
+    },
+    "analysis_unit": {
+      "title": "Analysis Unit",
+      "type": "string"
+    },
+    "steps": {
+      "items": {
+        "$ref": "#/$defs/SemanticDerivationStep"
+      },
+      "minItems": 1,
+      "title": "Steps",
+      "type": "array"
+    },
+    "final_statement": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Final Statement"
+    }
+  },
+  "required": [
+    "chain_id",
+    "run_id",
+    "target_id",
+    "analysis_unit",
+    "steps"
+  ],
+  "title": "SemanticDerivationChain",
+  "type": "object"
+}

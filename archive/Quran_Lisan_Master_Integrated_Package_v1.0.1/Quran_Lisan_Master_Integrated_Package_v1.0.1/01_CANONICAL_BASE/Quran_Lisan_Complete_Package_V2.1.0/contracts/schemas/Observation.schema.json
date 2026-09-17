@@ -1,0 +1,108 @@
+{
+  "$defs": {
+    "InterpretationLayer": {
+      "enum": [
+        "ROOT_CONTRIBUTION",
+        "LEXICAL_UNIT",
+        "INFLECTION_DERIVATION",
+        "MORPHOLOGICAL_FORM",
+        "CONSTRUCTION",
+        "SEMANTIC_ROLE",
+        "CONTEXT",
+        "LOCAL_MEANING",
+        "DISCOURSE",
+        "UNRESOLVED"
+      ],
+      "title": "InterpretationLayer",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.1.0",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "record_revision": {
+      "default": 1,
+      "minimum": 1,
+      "title": "Record Revision",
+      "type": "integer"
+    },
+    "supersedes_id": {
+      "anyOf": [
+        {
+          "maxLength": 128,
+          "minLength": 3,
+          "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Supersedes Id"
+    },
+    "observation_id": {
+      "maxLength": 128,
+      "minLength": 3,
+      "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+      "title": "Observation Id",
+      "type": "string"
+    },
+    "run_id": {
+      "maxLength": 128,
+      "minLength": 3,
+      "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+      "title": "Run Id",
+      "type": "string"
+    },
+    "statement": {
+      "title": "Statement",
+      "type": "string"
+    },
+    "occurrence_ids": {
+      "items": {
+        "maxLength": 128,
+        "minLength": 3,
+        "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Occurrence Ids",
+      "type": "array"
+    },
+    "layer": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/InterpretationLayer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "source_ids": {
+      "items": {
+        "maxLength": 128,
+        "minLength": 3,
+        "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+        "type": "string"
+      },
+      "title": "Source Ids",
+      "type": "array"
+    }
+  },
+  "required": [
+    "observation_id",
+    "run_id",
+    "statement",
+    "occurrence_ids"
+  ],
+  "title": "Observation",
+  "type": "object"
+}

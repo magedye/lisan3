@@ -1,0 +1,23 @@
+{
+  "source_id": "QAC_MORPHOLOGY_WEB_V0_4_FIXTURE",
+  "name": "Quranic Arabic Corpus",
+  "upstream": "https://corpus.quran.com/download/",
+  "root_dictionary_slm": "https://corpus.quran.com/qurandictionary.jsp?q=slm",
+  "root_dictionary_slh": "https://corpus.quran.com/qurandictionary.jsp?q=SlH",
+  "version_reference": "0.4",
+  "status": "STRUCTURAL_FIXTURE_ONLY",
+  "runtime_admission": "NOT_AUTHORIZED",
+  "allowed_fields": [
+    "verse_word_locator",
+    "root",
+    "derived_form_class",
+    "surface_form_when_curated"
+  ],
+  "forbidden_fields": [
+    "gloss_as_semantic_evidence",
+    "ontology_as_semantic_authority",
+    "confidence",
+    "root_core"
+  ],
+  "note_ar": "يستخدم فقط لتثبيت Fixture قابل لإعادة الاختبار للنموذج الأول. أي توسع إنتاجي يحتاج STRUCT-SOURCE-QUALIFICATION."
+}

@@ -1,0 +1,39 @@
+{
+  "package_name": "Quran Lisan Initial Reference Package",
+  "version": "0.9.0",
+  "date": "2026-09-05",
+  "status": "INITIAL_REFERENCE_BASELINE / PENDING_REUSE_KIT_RECONCILIATION",
+  "authority_note": "This package is the current SSOT for the new project until superseded by an approved revision.",
+  "modules": [
+    "00_README_AND_PACKAGE_AUTHORITY.md",
+    "01_PRODUCT_CHARTER_AND_SCOPE.md",
+    "02_TERMINOLOGY_AND_LANGUAGE_GOVERNANCE.md",
+    "03_METHODOLOGY_AND_EVIDENCE_CONSTITUTION.md",
+    "04_SEMANTIC_ANALYSIS_MODEL.md",
+    "05_ROOT_CONCEPT_CONTRACT.md",
+    "06_SOURCE_ISOLATION_AND_EXTERNAL_COMPARISON.md",
+    "07_AI_CONTROL_GOVERNANCE.md",
+    "08_TARGET_LOGICAL_ARCHITECTURE.md",
+    "09_AGENTS_SKILLS_TOOLS.md",
+    "10_FUNCTIONAL_REQUIREMENTS.md",
+    "11_NON_FUNCTIONAL_REQUIREMENTS.md",
+    "12_DATA_MEMORY_AND_TRACEABILITY_MODEL.md",
+    "13_CONFIDENCE_COMPLETENESS_VERIFICATION.md",
+    "14_OUTPUT_AND_RESEARCH_UX_CONTRACT.md",
+    "15_TESTING_EVALUATION_ACCEPTANCE.md",
+    "16_IMPLEMENTATION_STANDARDS_AND_ROADMAP.md",
+    "17_DECISIONS_AND_OPEN_QUESTIONS.md",
+    "18_REUSE_KIT_RECONCILIATION_PROTOCOL.md",
+    "19_SOURCE_TRACEABILITY.md",
+    "APPENDIX_A_EXPERIMENTAL_DATASETS.md"
+  ],
+  "registries": [
+    "CONTROL_REGISTRY.csv",
+    "DECISION_REGISTER.csv",
+    "OPEN_QUESTIONS.csv",
+    "REQUIREMENTS_REGISTRY.csv",
+    "TERMINOLOGY_REGISTRY.csv"
+  ],
+  "source_hashes": "SOURCE_HASHES.json",
+  "master_docx": "Quran_Lisan_Initial_Reference_Package_v0.9.0.docx"
+}

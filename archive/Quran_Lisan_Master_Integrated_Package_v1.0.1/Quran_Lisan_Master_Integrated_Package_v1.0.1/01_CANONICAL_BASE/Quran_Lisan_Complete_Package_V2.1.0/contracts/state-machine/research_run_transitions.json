@@ -1,0 +1,62 @@
+{
+  "version": "1.0.1",
+  "initial": "CREATED",
+  "terminal": [
+    "PRESENTED",
+    "FAILED"
+  ],
+  "transitions": {
+    "CREATED": [
+      "ANALYSIS_UNIT_RESOLVED",
+      "FAILED"
+    ],
+    "ANALYSIS_UNIT_RESOLVED": [
+      "INTERNAL_DATA_READY",
+      "FAILED"
+    ],
+    "INTERNAL_DATA_READY": [
+      "OBSERVATIONS_READY",
+      "FAILED"
+    ],
+    "OBSERVATIONS_READY": [
+      "HYPOTHESES_READY",
+      "INTERNAL_DATA_READY",
+      "FAILED"
+    ],
+    "HYPOTHESES_READY": [
+      "FALSIFICATION_COMPLETED",
+      "OBSERVATIONS_READY",
+      "FAILED"
+    ],
+    "FALSIFICATION_COMPLETED": [
+      "JUDGMENT_READY",
+      "HYPOTHESES_READY",
+      "FAILED"
+    ],
+    "JUDGMENT_READY": [
+      "INTERNAL_RESULT_CLOSED",
+      "HYPOTHESES_READY",
+      "FAILED"
+    ],
+    "INTERNAL_RESULT_CLOSED": [
+      "INDEPENDENT_VERIFIED",
+      "EXTERNAL_COMPARED",
+      "PRESENTED",
+      "FAILED"
+    ],
+    "INDEPENDENT_VERIFIED": [
+      "EXTERNAL_COMPARED",
+      "PRESENTED",
+      "FAILED"
+    ],
+    "EXTERNAL_COMPARED": [
+      "PRESENTED",
+      "FAILED"
+    ]
+  },
+  "rules": [
+    "No transition may skip mandatory evidence/receipt predicates.",
+    "Backtracking creates a recorded reason; it does not overwrite prior receipts.",
+    "External comparison cannot begin before INTERNAL_RESULT_CLOSED."
+  ]
+}

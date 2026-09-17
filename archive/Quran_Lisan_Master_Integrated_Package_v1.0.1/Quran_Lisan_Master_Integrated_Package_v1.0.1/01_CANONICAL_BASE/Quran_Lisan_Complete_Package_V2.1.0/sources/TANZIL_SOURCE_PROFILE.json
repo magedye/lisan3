@@ -1,0 +1,28 @@
+{
+  "source_id": "TANZIL_QURAN_UTHMANI",
+  "version": "1.1",
+  "reading_profile": "Hafs an Asim",
+  "text_profile": "Madinah Mushaf Uthmani",
+  "expected_filename": "tanzil-uthmani-1.1.txt",
+  "sha256": "ac0724796cbbda0f4801470fbbd11d0f3c5802067bae0493466d0128b0c667af",
+  "size_bytes": 1334737,
+  "verse_records": 6236,
+  "encoding": "UTF-8",
+  "bom": false,
+  "newline": "LF",
+  "canonical_normalization": "NONE",
+  "official_download_page": "https://tanzil.net/download/",
+  "acquisition_endpoint": "https://tanzil.net/pub/download/",
+  "acquisition_profile": {
+    "quranType": "uthmani",
+    "outType": "txt",
+    "agree": "true",
+    "alef": "true"
+  },
+  "rights_note": "يلزم اتباع شروط Tanzil والحفاظ على نسبة المصدر عند إعادة توزيع نسخة من النص. هذه الحزمة لا توزع النص نفسه.",
+  "provenance_basis": "Lisan3 ADMISSION_TANZIL.md at commit 5667528297f4f0f3e4b245fa47cec60e992f1798",
+  "distributed_in_package": false,
+  "dependency_class": "CONTROLLED_EXTERNAL_CANONICAL_ARTIFACT",
+  "v2_self_containment_note": "V2 is self-contained for methodology/contracts/execution; the canonical Quran text artifact must be acquired and validated separately before corpus-dependent runtime use.",
+  "web_verification_date": "2026-09-05"
+}

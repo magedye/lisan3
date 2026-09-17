@@ -1,0 +1,1851 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Quran Lisan Tool Gateway Contract",
+    "version": "2.0.0"
+  },
+  "paths": {
+    "/tools/occurrences": {
+      "post": {
+        "summary": "Occurrences",
+        "operationId": "occurrences_tools_occurrences_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetOccurrencesRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetOccurrencesResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tools/verse": {
+      "post": {
+        "summary": "Verse",
+        "operationId": "verse_tools_verse_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetVerseRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetVerseResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tools/context": {
+      "post": {
+        "summary": "Context",
+        "operationId": "context_tools_context_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetContextRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetContextResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tools/morphology": {
+      "post": {
+        "summary": "Morphology",
+        "operationId": "morphology_tools_morphology_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetMorphologyRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetMorphologyResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tools/derivational-family": {
+      "post": {
+        "summary": "Deriv",
+        "operationId": "deriv_tools_derivational_family_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetDerivationalFamilyRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDerivationalFamilyResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tools/syntax": {
+      "post": {
+        "summary": "Syntax",
+        "operationId": "syntax_tools_syntax_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetSyntacticRelationsRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetSyntacticRelationsResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tools/collocations": {
+      "post": {
+        "summary": "Colloc",
+        "operationId": "colloc_tools_collocations_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetCollocationsRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetCollocationsResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tools/completeness": {
+      "post": {
+        "summary": "Completeness",
+        "operationId": "completeness_tools_completeness_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CalculateCompletenessRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CalculateCompletenessResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tools/evidence/validate": {
+      "post": {
+        "summary": "Ev",
+        "operationId": "ev_tools_evidence_validate_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ValidateEvidenceRefsRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidateEvidenceRefsResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tools/source-policy": {
+      "post": {
+        "summary": "Policy",
+        "operationId": "policy_tools_source_policy_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ApplySourcePolicyRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApplySourcePolicyResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tools/confidence-components": {
+      "post": {
+        "summary": "Confidence",
+        "operationId": "confidence_tools_confidence_components_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CalculateConfidenceComponentsRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CalculateConfidenceComponentsResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tools/external-retrieval": {
+      "post": {
+        "summary": "External",
+        "operationId": "external_tools_external_retrieval_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RetrieveExternalSourcesRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RetrieveExternalSourcesResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tools/execution-receipts": {
+      "post": {
+        "summary": "Receipt",
+        "operationId": "receipt_tools_execution_receipts_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RecordToolExecutionRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RecordToolExecutionResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ApplySourcePolicyRequest": {
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "title": "Source Id"
+          },
+          "phase": {
+            "$ref": "#/components/schemas/ResearchPhase"
+          },
+          "requested_fields": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Requested Fields"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "source_id",
+          "phase"
+        ],
+        "title": "ApplySourcePolicyRequest"
+      },
+      "ApplySourcePolicyResponse": {
+        "properties": {
+          "outcome": {
+            "$ref": "#/components/schemas/SourceAccessOutcome"
+          },
+          "allowed_fields": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Allowed Fields"
+          },
+          "denied_fields": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Denied Fields"
+          },
+          "reason": {
+            "type": "string",
+            "title": "Reason"
+          },
+          "receipt": {
+            "$ref": "#/components/schemas/ExecutionReceipt"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "outcome",
+          "allowed_fields",
+          "denied_fields",
+          "reason",
+          "receipt"
+        ],
+        "title": "ApplySourcePolicyResponse"
+      },
+      "CalculateCompletenessRequest": {
+        "properties": {
+          "run_id": {
+            "type": "string",
+            "title": "Run Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "run_id"
+        ],
+        "title": "CalculateCompletenessRequest"
+      },
+      "CalculateCompletenessResponse": {
+        "properties": {
+          "profile": {
+            "$ref": "#/components/schemas/CompletenessProfile"
+          },
+          "receipt": {
+            "$ref": "#/components/schemas/ExecutionReceipt"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "profile",
+          "receipt"
+        ],
+        "title": "CalculateCompletenessResponse"
+      },
+      "CalculateConfidenceComponentsRequest": {
+        "properties": {
+          "run_id": {
+            "type": "string",
+            "title": "Run Id"
+          },
+          "calibration_version": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Calibration Version"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "run_id"
+        ],
+        "title": "CalculateConfidenceComponentsRequest"
+      },
+      "CalculateConfidenceComponentsResponse": {
+        "properties": {
+          "components": {
+            "items": {
+              "$ref": "#/components/schemas/ConfidenceComponent"
+            },
+            "type": "array",
+            "title": "Components"
+          },
+          "overall_numeric": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Overall Numeric"
+          },
+          "receipt": {
+            "$ref": "#/components/schemas/ExecutionReceipt"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "components",
+          "receipt"
+        ],
+        "title": "CalculateConfidenceComponentsResponse"
+      },
+      "CompletenessDimension": {
+        "type": "string",
+        "enum": [
+          "OCCURRENCE_COVERAGE",
+          "DERIVATIONAL_COVERAGE",
+          "FORM_COVERAGE",
+          "CONSTRUCTION_COVERAGE",
+          "CONTEXT_DIVERSITY",
+          "NEIGHBOR_COVERAGE",
+          "HARD_CASE_COVERAGE",
+          "FALSIFICATION_COVERAGE",
+          "SOURCE_INTEGRITY",
+          "DECISIVE_CONTEXT_COVERAGE",
+          "DERIVATION_CHAIN_COVERAGE"
+        ],
+        "title": "CompletenessDimension"
+      },
+      "CompletenessDimensionStatus": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+\\.\\d+$",
+            "title": "Schema Version",
+            "default": "2.1.0"
+          },
+          "record_revision": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Record Revision",
+            "default": 1
+          },
+          "supersedes_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 128,
+                "minLength": 3,
+                "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Supersedes Id"
+          },
+          "dimension": {
+            "$ref": "#/components/schemas/CompletenessDimension"
+          },
+          "expected_count": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Expected Count"
+          },
+          "examined_count": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Examined Count"
+          },
+          "status": {
+            "type": "string",
+            "title": "Status"
+          },
+          "gap_notes": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Gap Notes"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "dimension",
+          "status"
+        ],
+        "title": "CompletenessDimensionStatus"
+      },
+      "CompletenessProfile": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+\\.\\d+$",
+            "title": "Schema Version",
+            "default": "2.1.0"
+          },
+          "record_revision": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Record Revision",
+            "default": 1
+          },
+          "supersedes_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 128,
+                "minLength": 3,
+                "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Supersedes Id"
+          },
+          "completeness_profile_id": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 3,
+            "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+            "title": "Completeness Profile Id"
+          },
+          "run_id": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 3,
+            "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+            "title": "Run Id"
+          },
+          "dimensions": {
+            "items": {
+              "$ref": "#/components/schemas/CompletenessDimensionStatus"
+            },
+            "type": "array",
+            "minItems": 1,
+            "title": "Dimensions"
+          },
+          "unresolved_gaps": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Unresolved Gaps"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "completeness_profile_id",
+          "run_id",
+          "dimensions"
+        ],
+        "title": "CompletenessProfile"
+      },
+      "ConfidenceBand": {
+        "type": "string",
+        "enum": [
+          "NOT_EVALUATED",
+          "WEAK",
+          "TENTATIVE",
+          "SUPPORTED",
+          "STRONG"
+        ],
+        "title": "ConfidenceBand"
+      },
+      "ConfidenceComponent": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+\\.\\d+$",
+            "title": "Schema Version",
+            "default": "2.1.0"
+          },
+          "record_revision": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Record Revision",
+            "default": 1
+          },
+          "supersedes_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 128,
+                "minLength": 3,
+                "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Supersedes Id"
+          },
+          "component_id": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 3,
+            "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+            "title": "Component Id"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "band": {
+            "$ref": "#/components/schemas/ConfidenceBand"
+          },
+          "evaluated": {
+            "type": "boolean",
+            "title": "Evaluated"
+          },
+          "reason": {
+            "type": "string",
+            "title": "Reason"
+          },
+          "numeric_value": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Numeric Value"
+          },
+          "calibration_version": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Calibration Version"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "component_id",
+          "name",
+          "band",
+          "evaluated",
+          "reason"
+        ],
+        "title": "ConfidenceComponent"
+      },
+      "ExecutionActor": {
+        "type": "string",
+        "enum": [
+          "TOOL",
+          "MODEL",
+          "AGENT",
+          "SKILL",
+          "HUMAN",
+          "SYSTEM"
+        ],
+        "title": "ExecutionActor"
+      },
+      "ExecutionReceipt": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+\\.\\d+$",
+            "title": "Schema Version",
+            "default": "2.1.0"
+          },
+          "record_revision": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Record Revision",
+            "default": 1
+          },
+          "supersedes_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 128,
+                "minLength": 3,
+                "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Supersedes Id"
+          },
+          "receipt_id": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 3,
+            "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+            "title": "Receipt Id"
+          },
+          "run_id": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 3,
+            "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+            "title": "Run Id"
+          },
+          "actor": {
+            "$ref": "#/components/schemas/ExecutionActor"
+          },
+          "actor_id": {
+            "type": "string",
+            "title": "Actor Id"
+          },
+          "actor_version": {
+            "type": "string",
+            "title": "Actor Version"
+          },
+          "status": {
+            "$ref": "#/components/schemas/ExecutionStatus"
+          },
+          "started_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Started At"
+          },
+          "ended_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Ended At"
+          },
+          "input_digest": {
+            "type": "string",
+            "title": "Input Digest"
+          },
+          "output_digest": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Output Digest"
+          },
+          "source_ids": {
+            "items": {
+              "type": "string",
+              "maxLength": 128,
+              "minLength": 3,
+              "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$"
+            },
+            "type": "array",
+            "title": "Source Ids"
+          },
+          "tool_call_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Tool Call Id"
+          },
+          "error_code": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Error Code"
+          },
+          "retry_of_receipt_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 128,
+                "minLength": 3,
+                "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Retry Of Receipt Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "receipt_id",
+          "run_id",
+          "actor",
+          "actor_id",
+          "actor_version",
+          "status",
+          "started_at",
+          "ended_at",
+          "input_digest"
+        ],
+        "title": "ExecutionReceipt"
+      },
+      "ExecutionStatus": {
+        "type": "string",
+        "enum": [
+          "SUCCEEDED",
+          "FAILED",
+          "BLOCKED",
+          "NOT_EVALUATED"
+        ],
+        "title": "ExecutionStatus"
+      },
+      "GetCollocationsRequest": {
+        "properties": {
+          "target_id": {
+            "type": "string",
+            "title": "Target Id"
+          },
+          "scope": {
+            "type": "string",
+            "title": "Scope"
+          },
+          "text_profile_id": {
+            "type": "string",
+            "title": "Text Profile Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "target_id",
+          "scope",
+          "text_profile_id"
+        ],
+        "title": "GetCollocationsRequest"
+      },
+      "GetCollocationsResponse": {
+        "properties": {
+          "target_id": {
+            "type": "string",
+            "title": "Target Id"
+          },
+          "counts": {
+            "additionalProperties": {
+              "type": "integer"
+            },
+            "type": "object",
+            "title": "Counts"
+          },
+          "receipt": {
+            "$ref": "#/components/schemas/ExecutionReceipt"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "target_id",
+          "counts",
+          "receipt"
+        ],
+        "title": "GetCollocationsResponse"
+      },
+      "GetContextRequest": {
+        "properties": {
+          "occurrence_id": {
+            "type": "string",
+            "title": "Occurrence Id"
+          },
+          "window_policy": {
+            "type": "string",
+            "title": "Window Policy",
+            "default": "VERSE_ONLY"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "occurrence_id"
+        ],
+        "title": "GetContextRequest"
+      },
+      "GetContextResponse": {
+        "properties": {
+          "occurrence_id": {
+            "type": "string",
+            "title": "Occurrence Id"
+          },
+          "context_verse_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Context Verse Ids"
+          },
+          "exact_texts": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Exact Texts"
+          },
+          "receipt": {
+            "$ref": "#/components/schemas/ExecutionReceipt"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "occurrence_id",
+          "context_verse_ids",
+          "exact_texts",
+          "receipt"
+        ],
+        "title": "GetContextResponse"
+      },
+      "GetDerivationalFamilyRequest": {
+        "properties": {
+          "root_id": {
+            "type": "string",
+            "title": "Root Id"
+          },
+          "text_profile_id": {
+            "type": "string",
+            "title": "Text Profile Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "root_id",
+          "text_profile_id"
+        ],
+        "title": "GetDerivationalFamilyRequest"
+      },
+      "GetDerivationalFamilyResponse": {
+        "properties": {
+          "root_id": {
+            "type": "string",
+            "title": "Root Id"
+          },
+          "occurrence_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Occurrence Ids"
+          },
+          "annotations": {
+            "items": {
+              "$ref": "#/components/schemas/StructuralAnnotation"
+            },
+            "type": "array",
+            "title": "Annotations"
+          },
+          "receipt": {
+            "$ref": "#/components/schemas/ExecutionReceipt"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "root_id",
+          "occurrence_ids",
+          "annotations",
+          "receipt"
+        ],
+        "title": "GetDerivationalFamilyResponse"
+      },
+      "GetMorphologyRequest": {
+        "properties": {
+          "occurrence_id": {
+            "type": "string",
+            "title": "Occurrence Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "occurrence_id"
+        ],
+        "title": "GetMorphologyRequest"
+      },
+      "GetMorphologyResponse": {
+        "properties": {
+          "annotations": {
+            "items": {
+              "$ref": "#/components/schemas/StructuralAnnotation"
+            },
+            "type": "array",
+            "title": "Annotations"
+          },
+          "receipt": {
+            "$ref": "#/components/schemas/ExecutionReceipt"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "annotations",
+          "receipt"
+        ],
+        "title": "GetMorphologyResponse"
+      },
+      "GetOccurrencesRequest": {
+        "properties": {
+          "target_id": {
+            "type": "string",
+            "title": "Target Id"
+          },
+          "text_profile_id": {
+            "type": "string",
+            "title": "Text Profile Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "target_id",
+          "text_profile_id"
+        ],
+        "title": "GetOccurrencesRequest"
+      },
+      "GetOccurrencesResponse": {
+        "properties": {
+          "occurrences": {
+            "items": {
+              "$ref": "#/components/schemas/Occurrence"
+            },
+            "type": "array",
+            "title": "Occurrences"
+          },
+          "receipt": {
+            "$ref": "#/components/schemas/ExecutionReceipt"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "occurrences",
+          "receipt"
+        ],
+        "title": "GetOccurrencesResponse"
+      },
+      "GetSyntacticRelationsRequest": {
+        "properties": {
+          "occurrence_id": {
+            "type": "string",
+            "title": "Occurrence Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "occurrence_id"
+        ],
+        "title": "GetSyntacticRelationsRequest"
+      },
+      "GetSyntacticRelationsResponse": {
+        "properties": {
+          "occurrence_id": {
+            "type": "string",
+            "title": "Occurrence Id"
+          },
+          "relations": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "type": "array",
+            "title": "Relations"
+          },
+          "receipt": {
+            "$ref": "#/components/schemas/ExecutionReceipt"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "occurrence_id",
+          "relations",
+          "receipt"
+        ],
+        "title": "GetSyntacticRelationsResponse"
+      },
+      "GetVerseRequest": {
+        "properties": {
+          "surah": {
+            "type": "integer",
+            "maximum": 114.0,
+            "minimum": 1.0,
+            "title": "Surah"
+          },
+          "ayah": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Ayah"
+          },
+          "text_profile_id": {
+            "type": "string",
+            "title": "Text Profile Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "surah",
+          "ayah",
+          "text_profile_id"
+        ],
+        "title": "GetVerseRequest"
+      },
+      "GetVerseResponse": {
+        "properties": {
+          "verse_id": {
+            "type": "string",
+            "title": "Verse Id"
+          },
+          "exact_text": {
+            "type": "string",
+            "title": "Exact Text"
+          },
+          "receipt": {
+            "$ref": "#/components/schemas/ExecutionReceipt"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "verse_id",
+          "exact_text",
+          "receipt"
+        ],
+        "title": "GetVerseResponse"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "Occurrence": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+\\.\\d+$",
+            "title": "Schema Version",
+            "default": "2.1.0"
+          },
+          "record_revision": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Record Revision",
+            "default": 1
+          },
+          "supersedes_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 128,
+                "minLength": 3,
+                "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Supersedes Id"
+          },
+          "occurrence_id": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 3,
+            "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+            "title": "Occurrence Id"
+          },
+          "snapshot_id": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 3,
+            "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+            "title": "Snapshot Id"
+          },
+          "surah": {
+            "type": "integer",
+            "maximum": 114.0,
+            "minimum": 1.0,
+            "title": "Surah"
+          },
+          "ayah": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Ayah"
+          },
+          "word_index": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 1.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Word Index"
+          },
+          "surface_text": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Surface Text"
+          },
+          "target_id": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 3,
+            "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+            "title": "Target Id"
+          },
+          "source_locator": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Source Locator"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "occurrence_id",
+          "snapshot_id",
+          "surah",
+          "ayah",
+          "target_id"
+        ],
+        "title": "Occurrence"
+      },
+      "RecordToolExecutionRequest": {
+        "properties": {
+          "receipt": {
+            "$ref": "#/components/schemas/ExecutionReceipt"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "receipt"
+        ],
+        "title": "RecordToolExecutionRequest"
+      },
+      "RecordToolExecutionResponse": {
+        "properties": {
+          "stored": {
+            "type": "boolean",
+            "title": "Stored"
+          },
+          "receipt_id": {
+            "type": "string",
+            "title": "Receipt Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "stored",
+          "receipt_id"
+        ],
+        "title": "RecordToolExecutionResponse"
+      },
+      "ResearchPhase": {
+        "type": "string",
+        "enum": [
+          "INTERNAL_ANALYSIS",
+          "EXTERNAL_COMPARISON"
+        ],
+        "title": "ResearchPhase"
+      },
+      "RetrieveExternalSourcesRequest": {
+        "properties": {
+          "run_id": {
+            "type": "string",
+            "title": "Run Id"
+          },
+          "query": {
+            "type": "string",
+            "title": "Query"
+          },
+          "source_classes": {
+            "items": {
+              "$ref": "#/components/schemas/SourceClass"
+            },
+            "type": "array",
+            "title": "Source Classes"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "run_id",
+          "query"
+        ],
+        "title": "RetrieveExternalSourcesRequest"
+      },
+      "RetrieveExternalSourcesResponse": {
+        "properties": {
+          "source_records": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "type": "array",
+            "title": "Source Records"
+          },
+          "receipt": {
+            "$ref": "#/components/schemas/ExecutionReceipt"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "source_records",
+          "receipt"
+        ],
+        "title": "RetrieveExternalSourcesResponse"
+      },
+      "SourceAccessOutcome": {
+        "type": "string",
+        "enum": [
+          "ALLOWED",
+          "DENIED",
+          "NOT_EVALUATED"
+        ],
+        "title": "SourceAccessOutcome"
+      },
+      "SourceClass": {
+        "type": "string",
+        "enum": [
+          "QURAN_TEXT",
+          "STRUCTURAL",
+          "EXTERNAL_TRADITION",
+          "EXTERNAL_LINGUISTIC",
+          "EXPERIMENTAL_DATASET",
+          "MODEL_MEMORY",
+          "PRIOR_RESULT"
+        ],
+        "title": "SourceClass"
+      },
+      "StructuralAnnotation": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+\\.\\d+$",
+            "title": "Schema Version",
+            "default": "2.1.0"
+          },
+          "record_revision": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Record Revision",
+            "default": 1
+          },
+          "supersedes_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 128,
+                "minLength": 3,
+                "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Supersedes Id"
+          },
+          "annotation_id": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 3,
+            "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+            "title": "Annotation Id"
+          },
+          "occurrence_id": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 3,
+            "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+            "title": "Occurrence Id"
+          },
+          "source_id": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 3,
+            "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+            "title": "Source Id"
+          },
+          "root": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Root"
+          },
+          "lemma": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Lemma"
+          },
+          "form_label": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Form Label"
+          },
+          "pos": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Pos"
+          },
+          "segmentation": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Segmentation"
+          },
+          "syntactic_relations": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "type": "array",
+            "title": "Syntactic Relations"
+          },
+          "ambiguity_notes": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Ambiguity Notes"
+          },
+          "review_status": {
+            "type": "string",
+            "title": "Review Status",
+            "default": "UNREVIEWED"
+          },
+          "fixture_only": {
+            "type": "boolean",
+            "title": "Fixture Only",
+            "default": false
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "annotation_id",
+          "occurrence_id",
+          "source_id"
+        ],
+        "title": "StructuralAnnotation"
+      },
+      "ValidateEvidenceRefsRequest": {
+        "properties": {
+          "run_id": {
+            "type": "string",
+            "title": "Run Id"
+          },
+          "evidence_relation_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Evidence Relation Ids"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "run_id",
+          "evidence_relation_ids"
+        ],
+        "title": "ValidateEvidenceRefsRequest"
+      },
+      "ValidateEvidenceRefsResponse": {
+        "properties": {
+          "valid": {
+            "type": "boolean",
+            "title": "Valid"
+          },
+          "missing_refs": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Missing Refs"
+          },
+          "receipt": {
+            "$ref": "#/components/schemas/ExecutionReceipt"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "valid",
+          "missing_refs",
+          "receipt"
+        ],
+        "title": "ValidateEvidenceRefsResponse"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}

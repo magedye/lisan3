@@ -1,0 +1,35 @@
+{
+  "$defs": {
+    "ResearchPhase": {
+      "enum": [
+        "INTERNAL_ANALYSIS",
+        "EXTERNAL_COMPARISON"
+      ],
+      "title": "ResearchPhase",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "source_id": {
+      "title": "Source Id",
+      "type": "string"
+    },
+    "phase": {
+      "$ref": "#/$defs/ResearchPhase"
+    },
+    "requested_fields": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Requested Fields",
+      "type": "array"
+    }
+  },
+  "required": [
+    "source_id",
+    "phase"
+  ],
+  "title": "ApplySourcePolicyRequest",
+  "type": "object"
+}

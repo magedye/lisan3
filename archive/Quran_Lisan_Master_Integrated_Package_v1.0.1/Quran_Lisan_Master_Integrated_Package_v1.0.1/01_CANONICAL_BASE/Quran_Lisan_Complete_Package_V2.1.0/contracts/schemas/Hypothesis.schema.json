@@ -1,0 +1,135 @@
+{
+  "$defs": {
+    "HypothesisKind": {
+      "enum": [
+        "ROOT_CONCEPT",
+        "LEXICAL_UNIT",
+        "LOCAL_MEANING",
+        "SEMANTIC_DIFFERENCE",
+        "FORM_EFFECT",
+        "CONSTRUCTION_EFFECT"
+      ],
+      "title": "HypothesisKind",
+      "type": "string"
+    },
+    "HypothesisOrigin": {
+      "enum": [
+        "INDEPENDENT_INTERNAL_DERIVATION",
+        "PRIOR_MATERIAL_CANDIDATE",
+        "PRIOR_RESULT_CANDIDATE",
+        "EXTERNAL_CANDIDATE",
+        "MIXED_ORIGIN"
+      ],
+      "title": "HypothesisOrigin",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.1.0",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "record_revision": {
+      "default": 1,
+      "minimum": 1,
+      "title": "Record Revision",
+      "type": "integer"
+    },
+    "supersedes_id": {
+      "anyOf": [
+        {
+          "maxLength": 128,
+          "minLength": 3,
+          "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Supersedes Id"
+    },
+    "hypothesis_id": {
+      "maxLength": 128,
+      "minLength": 3,
+      "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+      "title": "Hypothesis Id",
+      "type": "string"
+    },
+    "run_id": {
+      "maxLength": 128,
+      "minLength": 3,
+      "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+      "title": "Run Id",
+      "type": "string"
+    },
+    "kind": {
+      "$ref": "#/$defs/HypothesisKind"
+    },
+    "statement": {
+      "title": "Statement",
+      "type": "string"
+    },
+    "scope": {
+      "title": "Scope",
+      "type": "string"
+    },
+    "observation_ids": {
+      "items": {
+        "maxLength": 128,
+        "minLength": 3,
+        "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+        "type": "string"
+      },
+      "title": "Observation Ids",
+      "type": "array"
+    },
+    "rejection_condition_ids": {
+      "items": {
+        "maxLength": 128,
+        "minLength": 3,
+        "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+        "type": "string"
+      },
+      "title": "Rejection Condition Ids",
+      "type": "array"
+    },
+    "is_serious_competitor": {
+      "default": true,
+      "title": "Is Serious Competitor",
+      "type": "boolean"
+    },
+    "status": {
+      "default": "OPEN",
+      "title": "Status",
+      "type": "string"
+    },
+    "origin": {
+      "$ref": "#/$defs/HypothesisOrigin",
+      "default": "INDEPENDENT_INTERNAL_DERIVATION"
+    },
+    "origin_source_ids": {
+      "items": {
+        "maxLength": 128,
+        "minLength": 3,
+        "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+        "type": "string"
+      },
+      "title": "Origin Source Ids",
+      "type": "array"
+    }
+  },
+  "required": [
+    "hypothesis_id",
+    "run_id",
+    "kind",
+    "statement",
+    "scope"
+  ],
+  "title": "Hypothesis",
+  "type": "object"
+}

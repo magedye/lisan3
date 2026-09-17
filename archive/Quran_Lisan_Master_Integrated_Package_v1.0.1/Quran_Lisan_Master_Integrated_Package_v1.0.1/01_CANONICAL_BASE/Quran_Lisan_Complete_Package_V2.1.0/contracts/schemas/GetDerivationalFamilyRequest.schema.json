@@ -1,0 +1,19 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "root_id": {
+      "title": "Root Id",
+      "type": "string"
+    },
+    "text_profile_id": {
+      "title": "Text Profile Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "root_id",
+    "text_profile_id"
+  ],
+  "title": "GetDerivationalFamilyRequest",
+  "type": "object"
+}

@@ -1,0 +1,51 @@
+﻿id,candidate,kit_class,final_disposition,priority,source_locator
+C01,Resolve analysis unit before research,ADAPT,ADOPTED_ADAPTED,P0,Semantic Skill §2 `TARGET_CONTRACT`
+C02,Quran-internal induction first,REUSE_AS_IS,ADOPTED,P0,Semantic Skill P1 and Phase 1
+C03,Layered local-meaning equation,REUSE_AS_IS,ADOPTED,P0,Semantic Skill P2
+C04,Observation → Interpretation → Hypothesis → Claim,ADAPT,ADOPTED_ADAPTED,P0,Semantic Skill P3
+C05,H1/H2/C0 competing set,ADAPT,ADOPTED_ADAPTED,P0,Semantic Skill Phase 4
+C06,Distinctive residue,ADAPT,ADOPTED_ADAPTED,P1,"Semantic Skill P5, §§8–9"
+C07,Operational rejection condition,REUSE_AS_IS,ADOPTED,P0,Semantic Skill §10; `schemas.RejectionCondition`; `test_slice_c.py`
+C08,Counterevidence + unresolved cases + failed predictions,REUSE_AS_IS,ADOPTED,P0,Semantic Skill P6/§10; Hypothesis/Claim fields
+C09,Multidimensional coverage,ADAPT,ADOPTED_ADAPTED,P0,Semantic Skill §6; `QualityProfile`
+C10,Stratified sampling with declared limits,REUSE_AS_IS,ADOPTED,P1,Semantic Skill §6.1
+C11,Semantic branches and no forced unity,ADAPT,ADOPTED_ADAPTED,P0,Semantic Skill §12.1
+C12,Definition/Meaning/Concept separation,ADAPT,ADOPTED_ADAPTED,P1,Semantic Skill §4 and §21
+C13,Byte-bound Quran/corpus identity,REUSE_AS_IS,ADOPTED,P0,Platform corpus section; Tanzil admission; corpus authority/importer
+C14,Source role and field-level admission,REUSE_AS_IS,ADOPTED,P0,QAC admission; Purity contract; QAC quarantine test
+C15,Exact Tanzil/QAC lifecycle statuses,REFERENCE_ONLY,REFERENCE_DEFERRED,P2,`ADMISSION_TANZIL.md`; `ADMISSION_QAC.md`
+C16,Token/segment structural annotation boundary,ADAPT,ADOPTED_ADAPTED,P0,Purity contract §Future structural annotation
+C17,Blind Lab source isolation,ADAPT,ADOPTED_ADAPTED,P0,Isolation service; AI context; Hybrid Retrieval §25; Slice B tests
+C18,Blocked access ≠ actual contamination,REUSE_AS_IS,ADOPTED,P1,Isolation service and `test_contamination_audit`
+C19,Pretrained-knowledge contamination control,OPEN_QUESTION,RISK_CONTROL_ADOPTED_NO_ABSENCE_CLAIM,P0,Vector model manifest exposure fields; Blind Lab policy
+C20,Post-analysis external comparison,ADAPT,ADOPTED_ADAPTED,P0,Semantic Skill §13.3; Purity contract; legacy six-layer result
+C21,Persistent ResearchRun,ADAPT,ADOPTED_ADAPTED,P0,`models.ResearchRun`; run admission; workspace APIs
+C22,AI execution record,ADAPT,ADOPTED_ADAPTED,P0,`models.AIExecutionRecord`; AI endpoint; tooling §12
+C23,Strict structured contracts with Pydantic,REUSE_AS_IS,ADOPTED,P0,Tooling §3.3; `schemas.BaseSchema`; vector contracts
+C24,Pydantic AI,ADAPT,ADOPTED_ADAPTED,P1,Tooling §5.1; AI endpoint
+C25,Deterministic fake/test provider,REUSE_AS_IS,ADOPTED,P1,Tooling §5.2; `test_ai_runtime.py`
+C26,Controlled ToolDispatcher,ADAPT,ADOPTED_ADAPTED,P0,`ai_tools.py`
+C27,Provider abstraction and degraded mode,ADAPT,ADOPTED_ADAPTED,P1,Platform AI section; `ai_provider.py`
+C28,SQLite local persistence,ADAPT,ADOPTED_ADAPTED,P1,Platform/tooling §3.6; implemented models
+C29,Exact/FTS retrieval first,REUSE_AS_IS,ADOPTED,P0,Tooling §7.1; Hybrid Retrieval §7
+C30,Vector results as candidates,ADAPT,ADOPTED_ADAPTED,P1,"Hybrid Retrieval §§8, 22–24; `RetrievalCandidate`; R2 tests"
+C31,Six separate embedding spaces,OPEN_QUESTION,CAPABILITY_GATE_DEFERRED,P2,Hybrid Retrieval §11; vector contracts
+C32,Benchmark-before-model adoption,ADAPT,ADOPTED_ADAPTED,P1,Hybrid Retrieval §13; R2 benchmark report
+C33,Rebuildable graph projection,REFERENCE_ONLY,REFERENCE_DEFERRED,P3,Hybrid Retrieval §§15–18; graph service/tests
+C34,NetworkX analysis,REFERENCE_ONLY,REFERENCE_DEFERRED,P3,Hybrid Retrieval §19; graph service
+C35,EvidenceResolver boundary,ADAPT,ADOPTED_ADAPTED,P0,"Hybrid Retrieval §23 (contract, R3 not implemented)"
+C36,Typed RetrievalCandidate,REUSE_AS_IS,ADOPTED,P1,`vector_contracts.RetrievalCandidate`; Hybrid §22
+C37,Lisan3 Purity/Internal Lock gates as a whole,DO_NOT_REUSE,REJECTED,P0,Gate service; Purity contract
+C38,Four independent official status axes,DO_NOT_REUSE,REJECTED,P1,Platform §Governance; model enums
+C39,Steward role/command authority,DO_NOT_REUSE,REJECTED,P3,Steward service; PROMPT §§14
+C40,Governance proposals + transitive invalidation,REFERENCE_ONLY,REFERENCE_DEFERRED,P2,Rule/Revision/ChangeProposal/Dependency models; Slice E tests
+C41,Publication/review workflow,DO_NOT_REUSE,REJECTED,P3,"ReviewDecision, publication endpoints/axes"
+C42,Promptfoo methodology eval concept,ADAPT,ADOPTED_ADAPTED,P1,"Tooling §§10.1, 11; state says configured-not-executed"
+C43,Hypothesis/property/mutation/contract test stack,REFERENCE_ONLY,REFERENCE_DEFERRED,P2,Tooling §§8–10; test suites/reports
+C44,Initial hypothesis freeze + influence log,ADAPT,ADOPTED_ADAPTED,P0,Legacy freeze/internal-reference schemas and regressions
+C45,Six-layer result package,ADAPT,ADOPTED_ADAPTED,P1,Legacy six-layer schema/regression
+C46,Legacy release/public/card authority fields,DO_NOT_REUSE,REJECTED,P3,Legacy public/release/root-card schemas
+C47,Gem conversational interface,OPEN_QUESTION,ADOPTED_AS_INTERFACE_WITH_CAPABILITY_LIMITS,P0,Owner context; no repository implementation
+C48,Opal workflow/orchestration,ADAPT,ADOPTED_CONDITIONALLY_CAP_GO_01,P0,Owner context; Lisan ResearchRun lessons
+C49,LangGraph/second workflow system,DO_NOT_REUSE,REJECTED,P3,Tooling §5.5 and §14
+C50,Governed terminology system,ADAPT,ADOPTED_ADAPTED,P0,Semantic Skill §4 plus observed Definition/Meaning/Concept duplication

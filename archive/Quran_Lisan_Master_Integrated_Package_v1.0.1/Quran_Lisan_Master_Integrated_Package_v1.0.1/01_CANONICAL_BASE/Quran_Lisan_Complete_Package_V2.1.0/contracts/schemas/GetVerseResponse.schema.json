@@ -1,0 +1,195 @@
+{
+  "$defs": {
+    "ExecutionActor": {
+      "enum": [
+        "TOOL",
+        "MODEL",
+        "AGENT",
+        "SKILL",
+        "HUMAN",
+        "SYSTEM"
+      ],
+      "title": "ExecutionActor",
+      "type": "string"
+    },
+    "ExecutionReceipt": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "default": "2.1.0",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "record_revision": {
+          "default": 1,
+          "minimum": 1,
+          "title": "Record Revision",
+          "type": "integer"
+        },
+        "supersedes_id": {
+          "anyOf": [
+            {
+              "maxLength": 128,
+              "minLength": 3,
+              "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Supersedes Id"
+        },
+        "receipt_id": {
+          "maxLength": 128,
+          "minLength": 3,
+          "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+          "title": "Receipt Id",
+          "type": "string"
+        },
+        "run_id": {
+          "maxLength": 128,
+          "minLength": 3,
+          "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+          "title": "Run Id",
+          "type": "string"
+        },
+        "actor": {
+          "$ref": "#/$defs/ExecutionActor"
+        },
+        "actor_id": {
+          "title": "Actor Id",
+          "type": "string"
+        },
+        "actor_version": {
+          "title": "Actor Version",
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/$defs/ExecutionStatus"
+        },
+        "started_at": {
+          "format": "date-time",
+          "title": "Started At",
+          "type": "string"
+        },
+        "ended_at": {
+          "format": "date-time",
+          "title": "Ended At",
+          "type": "string"
+        },
+        "input_digest": {
+          "title": "Input Digest",
+          "type": "string"
+        },
+        "output_digest": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Output Digest"
+        },
+        "source_ids": {
+          "items": {
+            "maxLength": 128,
+            "minLength": 3,
+            "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+            "type": "string"
+          },
+          "title": "Source Ids",
+          "type": "array"
+        },
+        "tool_call_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tool Call Id"
+        },
+        "error_code": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Error Code"
+        },
+        "retry_of_receipt_id": {
+          "anyOf": [
+            {
+              "maxLength": 128,
+              "minLength": 3,
+              "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Retry Of Receipt Id"
+        }
+      },
+      "required": [
+        "receipt_id",
+        "run_id",
+        "actor",
+        "actor_id",
+        "actor_version",
+        "status",
+        "started_at",
+        "ended_at",
+        "input_digest"
+      ],
+      "title": "ExecutionReceipt",
+      "type": "object"
+    },
+    "ExecutionStatus": {
+      "enum": [
+        "SUCCEEDED",
+        "FAILED",
+        "BLOCKED",
+        "NOT_EVALUATED"
+      ],
+      "title": "ExecutionStatus",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "verse_id": {
+      "title": "Verse Id",
+      "type": "string"
+    },
+    "exact_text": {
+      "title": "Exact Text",
+      "type": "string"
+    },
+    "receipt": {
+      "$ref": "#/$defs/ExecutionReceipt"
+    }
+  },
+  "required": [
+    "verse_id",
+    "exact_text",
+    "receipt"
+  ],
+  "title": "GetVerseResponse",
+  "type": "object"
+}

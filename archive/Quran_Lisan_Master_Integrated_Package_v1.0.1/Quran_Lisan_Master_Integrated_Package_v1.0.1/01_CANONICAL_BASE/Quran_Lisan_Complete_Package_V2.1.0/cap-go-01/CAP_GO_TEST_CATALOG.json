@@ -1,0 +1,77 @@
+{
+  "protocol": "CAP-GO-01",
+  "version": "1.0.1",
+  "status": "NOT_EXECUTED",
+  "tests": [
+    {
+      "test_id": "CAP-GO-01-01",
+      "name": "Tool allowlist enforcement",
+      "result": "NOT_EXECUTED",
+      "expected": "Tool خارج allowlist يفشل ولا يدعي الوكيل نجاحه.",
+      "evidence_required": true
+    },
+    {
+      "test_id": "CAP-GO-01-02",
+      "name": "Server-owned execution receipt",
+      "result": "NOT_EXECUTED",
+      "expected": "كل Tool call يعاد معه receipt يمكن readback والتحقق من digest.",
+      "evidence_required": true
+    },
+    {
+      "test_id": "CAP-GO-01-03",
+      "name": "Structured output external validation",
+      "result": "NOT_EXECUTED",
+      "expected": "unknown field يرفض خارج المنصة.",
+      "evidence_required": true
+    },
+    {
+      "test_id": "CAP-GO-01-04",
+      "name": "Stable run/artifact IDs",
+      "result": "NOT_EXECUTED",
+      "expected": "IDs تصدر وتقرأ بعد الجلسة.",
+      "evidence_required": true
+    },
+    {
+      "test_id": "CAP-GO-01-05",
+      "name": "Resume with lineage",
+      "result": "NOT_EXECUTED",
+      "expected": "استئناف run لا يفقد lineage.",
+      "evidence_required": true
+    },
+    {
+      "test_id": "CAP-GO-01-06",
+      "name": "Branch and join",
+      "result": "NOT_EXECUTED",
+      "expected": "فرضان متنافسان يبقيان منفصلين حتى join دون overwrite.",
+      "evidence_required": true
+    },
+    {
+      "test_id": "CAP-GO-01-07",
+      "name": "Internal source isolation",
+      "result": "NOT_EXECUTED",
+      "expected": "external tool/index محظور فعليا في INTERNAL_ANALYSIS.",
+      "evidence_required": true
+    },
+    {
+      "test_id": "CAP-GO-01-08",
+      "name": "Immutable internal snapshot",
+      "result": "NOT_EXECUTED",
+      "expected": "بعد الإغلاق لا يعدل snapshot عند فتح external.",
+      "evidence_required": true
+    },
+    {
+      "test_id": "CAP-GO-01-09",
+      "name": "Retry lineage/idempotency",
+      "result": "NOT_EXECUTED",
+      "expected": "retry لا ينشئ SemanticDecision مكررًا.",
+      "evidence_required": true
+    },
+    {
+      "test_id": "CAP-GO-01-10",
+      "name": "Model/config/memory influence logging",
+      "result": "NOT_EXECUTED",
+      "expected": "يسجل ما تسمح المنصة به من model/config/memory influence.",
+      "evidence_required": true
+    }
+  ]
+}

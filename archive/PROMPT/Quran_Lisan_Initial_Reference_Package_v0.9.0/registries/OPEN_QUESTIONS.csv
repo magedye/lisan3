@@ -1,0 +1,11 @@
+﻿id,question,decision_owner,impact,note
+OQ-001,ملف النص القرآني المعتمد والقراءة/الرواية في النسخة الأولى,OWNER/REUSE-KIT,BLOCKS_DATA_IMPLEMENTATION,يجب حسم المصدر والإصدار والهاش والترخيص قبل بناء مدونة الإنتاج.
+OQ-002,مصدر التحليل الصرفي/النحوي البنيوي,REUSE-KIT/TECH,BLOCKS_STRUCTURAL_LAYER,يجب تحديد ما إذا كان QAC أو تحليل محلي أو مزيجًا، وما الحقول المسموح بها.
+OQ-003,الدور الدقيق للبيان النبوي الصحيح داخل سياسة المصادر,OWNER/METHODOLOGY,BLOCKS_EXTERNAL_SOURCE_POLICY,الوثيقة المنهجية تمنحه رتبة خاصة؛ يحتاج قرارًا صريحًا للمشروع الجديد.
+OQ-004,نموذج معايرة الثقة وأوزانه وعتباته,EVALS,BLOCKS_CALIBRATED_PERCENTAGES,لا تعتمد النسب النهائية قبل benchmark ومعايرة.
+OQ-005,مشغلات التحقق الأعمى المستقل,EVALS,DOES_NOT_BLOCK_CORE,تحدد من نتائج التجارب: تقارب البدائل، أهمية النتيجة، شك التسرب، إلخ.
+OQ-006,التقنية النهائية للمحرك المستقل والتخزين,REUSE-KIT/ARCH,BLOCKS_PLATFORM_COMMITMENT,العقد المنطقي ثابت؛ اختيار Python/FastAPI/SQLite أو غيره بعد المصالحة.
+OQ-007,حدود استخدام Gem وOpal في المنتج النهائي,PLATFORM/ARCH,DOES_NOT_BLOCK_LOGICAL_CORE,قد يكونان واجهة/تنسيق أو مجرد بيئة prototyping.
+OQ-008,سياسة المصادر الخارجية التفصيلية: معاجم، تفاسير، شعر، نقوش، لغات سامية، دراسات,METHODOLOGY,BLOCKS_EXTERNAL_COMPARISON_MODULE,يجب تحديد أدوارها وترتيبها ودرجة استقلالها.
+OQ-009,دعم تعدد القراءات في النسخة الأولى,OWNER/PRODUCT,DOES_NOT_BLOCK_SINGLE_PROFILE_MVP,إذا لم يدعم MVP التعدد، يجب تثبيت ملف قراءة واحد وعدم دمج غيره.
+OQ-010,سياسة النشر والمشاركة والهوية متعددة المستخدمين,PRODUCT,DOES_NOT_BLOCK_RESEARCH_CORE,لم يحسم في النقاش؛ لا يفترض Multi-user أو Public publishing.

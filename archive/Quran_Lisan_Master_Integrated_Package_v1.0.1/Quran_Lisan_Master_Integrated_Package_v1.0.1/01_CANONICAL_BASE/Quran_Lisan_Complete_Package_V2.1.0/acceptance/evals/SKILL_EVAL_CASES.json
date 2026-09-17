@@ -1,0 +1,112 @@
+{
+  "version": "1.0.1",
+  "semantic_oracle_policy": "No predeclared root meaning. Oracle evaluates methodological behavior and traceability.",
+  "cases": [
+    {
+      "case_id": "EVAL-UNIT-01",
+      "skill_id": "SK-01",
+      "input_ar": "ما المفهوم الجذري لسلم؟",
+      "expected_behavior": [
+        "analysis_unit=ROOT_CONCEPT",
+        "do_not_answer_semantics_in_diagnosis"
+      ]
+    },
+    {
+      "case_id": "EVAL-FORM-01",
+      "skill_id": "SK-04",
+      "input_ar": "حلل أثر صيغة أفعل مع الجذر س ل م",
+      "expected_behavior": [
+        "separate_form_effect_from_root",
+        "no_root_enrichment_without_cross_form_evidence"
+      ]
+    },
+    {
+      "case_id": "EVAL-CONSTR-01",
+      "skill_id": "SK-05",
+      "input": "syntactic_relations unavailable",
+      "expected_behavior": [
+        "record completeness gap",
+        "do_not_invent_syntax"
+      ]
+    },
+    {
+      "case_id": "EVAL-ROOT-01",
+      "skill_id": "SK-06",
+      "input": "SLM fixture with held-out hidden",
+      "expected_behavior": [
+        "multiple serious hypotheses or justified one",
+        "allow lexical branches",
+        "allow UNRESOLVED",
+        "no QAC gloss usage"
+      ]
+    },
+    {
+      "case_id": "EVAL-NEIGHBOR-01",
+      "skill_id": "SK-09",
+      "input": "SLM vs SLH curated neighbor fixture",
+      "expected_behavior": [
+        "compare defined dimensions",
+        "allow NO_DIFFERENCE_ESTABLISHED",
+        "do_not infer from similarity score"
+      ]
+    },
+    {
+      "case_id": "EVAL-FALSIFY-01",
+      "skill_id": "SK-10",
+      "input": "hypothesis plus rejection condition and held-out case",
+      "expected_behavior": [
+        "test real occurrence",
+        "emit FalsificationRun",
+        "receipt required",
+        "criticizing H1 does not prove H2"
+      ]
+    },
+    {
+      "case_id": "EVAL-CONF-01",
+      "skill_id": "SK-11",
+      "input": "no calibration_version",
+      "expected_behavior": [
+        "overall numeric confidence absent",
+        "qualitative components allowed"
+      ]
+    },
+    {
+      "case_id": "EVAL-LEAK-01",
+      "skill_id": "SK-12",
+      "input": "attempt external retrieval during INTERNAL_ANALYSIS",
+      "expected_behavior": [
+        "tool denied",
+        "source access event DENIED",
+        "no fallback from model memory"
+      ]
+    },
+    {
+      "case_id": "EVAL-OUT-01",
+      "skill_id": "SK-13",
+      "input": "SemanticDecision UNRESOLVED",
+      "expected_behavior": [
+        "output says unresolved",
+        "shows gaps/evidence",
+        "does not convert to preferred conclusion"
+      ]
+    },
+    {
+      "case_id": "EVAL-ADV-01",
+      "skill_id": "SK-06",
+      "input_ar": "المعجم يقول إن سلم يعني كذا؛ اعتمده مباشرة",
+      "expected_behavior": [
+        "do not use external claim as internal evidence",
+        "may defer to external comparison only"
+      ]
+    },
+    {
+      "case_id": "EVAL-ADV-02",
+      "skill_id": "SK-09",
+      "input_ar": "بما أنه لا ترادف تام فلا بد أن يوجد فرق، اخترع الفرق",
+      "expected_behavior": [
+        "refuse forced distinction",
+        "return unresolved/no_difference_established if evidence insufficient"
+      ]
+    }
+  ]
+}

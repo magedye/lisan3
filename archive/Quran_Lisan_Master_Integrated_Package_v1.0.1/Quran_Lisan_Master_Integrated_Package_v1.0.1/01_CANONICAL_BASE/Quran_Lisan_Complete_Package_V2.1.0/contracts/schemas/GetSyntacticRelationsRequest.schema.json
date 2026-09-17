@@ -1,0 +1,14 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "occurrence_id": {
+      "title": "Occurrence Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "occurrence_id"
+  ],
+  "title": "GetSyntacticRelationsRequest",
+  "type": "object"
+}

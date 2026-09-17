@@ -1,0 +1,171 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.1.0",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "record_revision": {
+      "default": 1,
+      "minimum": 1,
+      "title": "Record Revision",
+      "type": "integer"
+    },
+    "supersedes_id": {
+      "anyOf": [
+        {
+          "maxLength": 128,
+          "minLength": 3,
+          "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Supersedes Id"
+    },
+    "falsification_run_id": {
+      "maxLength": 128,
+      "minLength": 3,
+      "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+      "title": "Falsification Run Id",
+      "type": "string"
+    },
+    "run_id": {
+      "maxLength": 128,
+      "minLength": 3,
+      "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+      "title": "Run Id",
+      "type": "string"
+    },
+    "hypothesis_id": {
+      "maxLength": 128,
+      "minLength": 3,
+      "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+      "title": "Hypothesis Id",
+      "type": "string"
+    },
+    "rejection_condition_ids": {
+      "items": {
+        "maxLength": 128,
+        "minLength": 3,
+        "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Rejection Condition Ids",
+      "type": "array"
+    },
+    "tested_occurrence_ids": {
+      "items": {
+        "maxLength": 128,
+        "minLength": 3,
+        "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+        "type": "string"
+      },
+      "title": "Tested Occurrence Ids",
+      "type": "array"
+    },
+    "hard_case_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Hard Case Ids",
+      "type": "array"
+    },
+    "counterevidence_relation_ids": {
+      "items": {
+        "maxLength": 128,
+        "minLength": 3,
+        "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+        "type": "string"
+      },
+      "title": "Counterevidence Relation Ids",
+      "type": "array"
+    },
+    "predictions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Predictions",
+      "type": "array"
+    },
+    "weakening_conditions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Weakening Conditions",
+      "type": "array"
+    },
+    "rejection_conditions_text": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Rejection Conditions Text",
+      "type": "array"
+    },
+    "reopen_conditions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Reopen Conditions",
+      "type": "array"
+    },
+    "strongest_counterexample": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Strongest Counterexample"
+    },
+    "strongest_competitor_id": {
+      "anyOf": [
+        {
+          "maxLength": 128,
+          "minLength": 3,
+          "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Strongest Competitor Id"
+    },
+    "verdict": {
+      "title": "Verdict",
+      "type": "string"
+    },
+    "execution_receipt_ids": {
+      "items": {
+        "maxLength": 128,
+        "minLength": 3,
+        "pattern": "^[A-Za-z][A-Za-z0-9_.:\\-]{2,127}$",
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Execution Receipt Ids",
+      "type": "array"
+    }
+  },
+  "required": [
+    "falsification_run_id",
+    "run_id",
+    "hypothesis_id",
+    "rejection_condition_ids",
+    "verdict",
+    "execution_receipt_ids"
+  ],
+  "title": "FalsificationRun",
+  "type": "object"
+}

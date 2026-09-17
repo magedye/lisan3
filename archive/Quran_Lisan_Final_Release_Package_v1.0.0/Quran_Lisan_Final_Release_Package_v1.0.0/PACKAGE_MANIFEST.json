@@ -1,0 +1,229 @@
+{
+  "package": "Quran_Lisan_Final_Release_Package",
+  "version": "1.1.0",
+  "date": "2026-09-06",
+  "status": "V1_1_REFERENCE_BASELINE_READY_FOR_IMPLEMENTATION",
+  "file_count": 44,
+  "files": [
+    {
+      "path": "00_README_AND_PACKAGE_AUTHORITY.md",
+      "bytes": 7769,
+      "sha256": "c7b83c17a03b2324679a654ed5c080e32c8864016d9c664a738f625ebbb44473"
+    },
+    {
+      "path": "01_PRODUCT_CHARTER_AND_SCOPE.md",
+      "bytes": 4305,
+      "sha256": "be3f4292a7b6e8038e98f8c29b393eb0fb01abc5520dad30c20681476889c047"
+    },
+    {
+      "path": "02_TERMINOLOGY_AND_LANGUAGE_GOVERNANCE.md",
+      "bytes": 19701,
+      "sha256": "f87a79856670076c7cd5c3789ea254408809d478ae0b4a41d73b86a07bbbb3c3"
+    },
+    {
+      "path": "03_METHODOLOGY_AND_EVIDENCE_CONSTITUTION.md",
+      "bytes": 9037,
+      "sha256": "c4326bb46d66d3241165dbe6607cafdc339dffe85ffa2a49b99796c32a2be212"
+    },
+    {
+      "path": "04_SEMANTIC_ANALYSIS_MODEL.md",
+      "bytes": 7062,
+      "sha256": "b9042cc6bccb4b30c41fbcb265b66d1a25d1dfcf8110b53b5380c7353d6621fb"
+    },
+    {
+      "path": "05_ROOT_CONCEPT_CONTRACT.md",
+      "bytes": 10460,
+      "sha256": "df3aff919ba411115e74f7ae9f4babf8ca2705bb9684d2b8dc81d2b42c3bf17b"
+    },
+    {
+      "path": "06_SOURCE_ISOLATION_AND_EXTERNAL_COMPARISON.md",
+      "bytes": 4796,
+      "sha256": "1499f44a308c95f517f5dc450fda71d364e8e4d19df86a43d740c9dd48de50c6"
+    },
+    {
+      "path": "07_AI_CONTROL_GOVERNANCE.md",
+      "bytes": 10219,
+      "sha256": "5001ad26818a7fa9dd3b44ea8b16cab1e0126bf8369e95abc9fa6147965b79af"
+    },
+    {
+      "path": "08_TARGET_LOGICAL_ARCHITECTURE.md",
+      "bytes": 3837,
+      "sha256": "fe7a46a9567273d41394c4b9076380b2b0fea0f9a967c7ac3d9d27937068b79c"
+    },
+    {
+      "path": "09_AGENTS_SKILLS_TOOLS.md",
+      "bytes": 4260,
+      "sha256": "d60a4a91a4e78c0a78bb89620a740d756dd7df97f8c7acd87a5cab9c62769b40"
+    },
+    {
+      "path": "10_FUNCTIONAL_REQUIREMENTS.md",
+      "bytes": 10429,
+      "sha256": "81b7c690a11933d66f3844e9fbf9bc7c1af63257aade72e0520e456b2f247262"
+    },
+    {
+      "path": "11_NON_FUNCTIONAL_REQUIREMENTS.md",
+      "bytes": 5455,
+      "sha256": "f4ffc73524d539083455b03e09531511050d07f9ab8529aed3805477b1475f19"
+    },
+    {
+      "path": "12_DATA_MEMORY_AND_TRACEABILITY_MODEL.md",
+      "bytes": 4526,
+      "sha256": "0e5582fbec40decc1eec2bc631efd2bb289a96c572c405434ab1a454e076a3fb"
+    },
+    {
+      "path": "13_CONFIDENCE_COMPLETENESS_VERIFICATION.md",
+      "bytes": 4103,
+      "sha256": "f64ea3e4edb89c3d5a505fc7a2f55ee7a8993aa3439ba340cd560b485425e12f"
+    },
+    {
+      "path": "14_OUTPUT_AND_RESEARCH_UX_CONTRACT.md",
+      "bytes": 3150,
+      "sha256": "ec4ffa754a61176aa0028f28b643a27134394722038760db82f3917d69de7f54"
+    },
+    {
+      "path": "15_TESTING_EVALUATION_ACCEPTANCE.md",
+      "bytes": 7243,
+      "sha256": "28a7d331beeb8bae262efc8996a297315b4f74a2507a53248a81d3dfb02d9512"
+    },
+    {
+      "path": "16_IMPLEMENTATION_STANDARDS_AND_ROADMAP.md",
+      "bytes": 5094,
+      "sha256": "c88d1e3e3ae9add807ac51514fb674ebdcb442883cb0bbeff4162a037e45a3bc"
+    },
+    {
+      "path": "17_DECISIONS_AND_OPEN_QUESTIONS.md",
+      "bytes": 6248,
+      "sha256": "13d351c84e940cf45121e74cd730a0116d25ff56989dc12cc26736b7246a9c1d"
+    },
+    {
+      "path": "18_REUSE_KIT_RECONCILIATION_OUTCOME.md",
+      "bytes": 6567,
+      "sha256": "e1a05492871efcaecc85a4316d224da1c76c571bb0b6c722ec6d72c5c145c23c"
+    },
+    {
+      "path": "19_SOURCE_TRACEABILITY.md",
+      "bytes": 6018,
+      "sha256": "df6278a5cb80d19f613fe34f49d81b3a3009bc45f08f4b5e26928ecd44815091"
+    },
+    {
+      "path": "20_CHANGELOG_v0.9_to_v1.0.md",
+      "bytes": 1414,
+      "sha256": "de01203e51c0f14c5331c352beeaeaa5e2c40d1a52c91919b39449ee3f3add22"
+    },
+    {
+      "path": "21_IMPLEMENTATION_PROFILE_V1.md",
+      "bytes": 2693,
+      "sha256": "b5d07b394908ee66aea72eb03f8967b7281d47d17f9626f03ae4aaa1fbb113e4"
+    },
+    {
+      "path": "22_GEM_OPAL_CAPABILITY_GATE.md",
+      "bytes": 1832,
+      "sha256": "0fbfe8a567f66626f2587bc8d5e5819af943a80fbc31d35ce388c529d276ff04"
+    },
+    {
+      "path": "23_FINAL_RELEASE_VERIFICATION.md",
+      "bytes": 4979,
+      "sha256": "a18b8282463afefb33385a9f49dccff85405190630123ee99301853f1a4c77de"
+    },
+    {
+      "path": "24_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md",
+      "bytes": 13251,
+      "sha256": "d4ffbd66bb209d04a73230ea2dc79ed7902c792a0c231a2eb200ff3060e11ba1"
+    },
+    {
+      "path": "25_CHANGELOG_v1.0_to_v1.1.md",
+      "bytes": 3246,
+      "sha256": "cfd6ee121f147c574430c2a1b691b51eb05fb183ace4db740c10e2fd8107dd27"
+    },
+    {
+      "path": "APPENDIX_A_EXPERIMENTAL_DATASETS.md",
+      "bytes": 915,
+      "sha256": "ba2851d318a0d6c3fe4aa9c72f0b5d47ad13143ae10778ecdec43d681ed9c6dd"
+    },
+    {
+      "path": "evidence/REUSE_KIT_ADOPTION_MATRIX.csv",
+      "bytes": 5506,
+      "sha256": "b504b4cb35407f99114999c5ca4183f884499f609490ce9d19e87e5d9ce652f6"
+    },
+    {
+      "path": "materials/EVALUATION_CASE_TEMPLATE.md",
+      "bytes": 1281,
+      "sha256": "21dd47095fcc8562f3aec0b948937a6731122baa0abbbd1f452cf46182f8d667"
+    },
+    {
+      "path": "materials/MINIMUM_REVIEWABLE_SEMANTIC_RESULT_TEMPLATE.md",
+      "bytes": 1730,
+      "sha256": "9ecd4add2760adfbc64b5a3bdec1fcf9b09886ee2f8348b09708452519b39098"
+    },
+    {
+      "path": "materials/README.md",
+      "bytes": 1293,
+      "sha256": "0cf2ff78d09f38b343127ce51836bfb1d5c6ffa5237f05f2e1614a740cfba164"
+    },
+    {
+      "path": "materials/ROOT_RESEARCH_RUN_TEMPLATE.md",
+      "bytes": 1881,
+      "sha256": "ff9ed3851f2f0d59d00dfcb8a41c6571daeff2af0f03b709d3dad5fc6984739e"
+    },
+    {
+      "path": "materials/SOURCE_ROLE_PROFILE_TEMPLATE.md",
+      "bytes": 1307,
+      "sha256": "4e1be8698248acd15f26221c3c6ca5cdf60c0ab7fcd9c1b73fd87dd188a869d3"
+    },
+    {
+      "path": "Quran_Lisan_Final_Release_Package_v1.0.0.docx",
+      "bytes": 88118,
+      "sha256": "25d686b850664938563c6df3027a9c0d40fe1d1067dbec7f1862aeb37b321ecf"
+    },
+    {
+      "path": "registries/CONTROL_REGISTRY.csv",
+      "bytes": 12830,
+      "sha256": "be7a500d1f5a04b4e188fd1a0726c7408d37b9af0ffa97d95e88b4297677f80f"
+    },
+    {
+      "path": "registries/DECISION_REGISTER.csv",
+      "bytes": 3964,
+      "sha256": "f8dc0d91c8880289036c9e4389b94aead071aa98e1652555946708994a365afc"
+    },
+    {
+      "path": "registries/FINAL_CONTROL_REGISTRY.csv",
+      "bytes": 12830,
+      "sha256": "be7a500d1f5a04b4e188fd1a0726c7408d37b9af0ffa97d95e88b4297677f80f"
+    },
+    {
+      "path": "registries/FINAL_DECISION_REGISTER.csv",
+      "bytes": 3964,
+      "sha256": "f8dc0d91c8880289036c9e4389b94aead071aa98e1652555946708994a365afc"
+    },
+    {
+      "path": "registries/FINAL_TERMINOLOGY_REGISTRY.csv",
+      "bytes": 13353,
+      "sha256": "2e4c539091f54dcec1b6be108a04f2679322091f73893e9202583077fcd2cfaa"
+    },
+    {
+      "path": "registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv",
+      "bytes": 15775,
+      "sha256": "6ea45a2136db8d01c55fad31bd21eac21e6967524ef0c9e32d58cc93f9cb6454"
+    },
+    {
+      "path": "registries/OPEN_QUESTIONS.csv",
+      "bytes": 1147,
+      "sha256": "a27832fe841969e9986d840de32fec8bc6ce3f5cacb6941ef741f4dd39832af0"
+    },
+    {
+      "path": "registries/REQUIREMENTS_REGISTRY.csv",
+      "bytes": 13829,
+      "sha256": "17f40e48cf783130790cb8846e5dbfac10721d451ee32da352c4da9bf5c815dd"
+    },
+    {
+      "path": "registries/TERMINOLOGY_REGISTRY.csv",
+      "bytes": 13353,
+      "sha256": "2e4c539091f54dcec1b6be108a04f2679322091f73893e9202583077fcd2cfaa"
+    },
+    {
+      "path": "SOURCE_HASHES.json",
+      "bytes": 379,
+      "sha256": "5e83655ea468da2d79d68a455d8de735b2f7c0c2605541c5c748dac111f6646d"
+    }
+  ]
+}

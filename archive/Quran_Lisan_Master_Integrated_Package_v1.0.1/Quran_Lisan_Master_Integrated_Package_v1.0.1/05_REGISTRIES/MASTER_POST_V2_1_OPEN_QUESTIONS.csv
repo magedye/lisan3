@@ -1,0 +1,10 @@
+﻿_source_package,id,question,decision_owner,impact,note,version,status,source_intake_ids_json
+preanalysis,GQ-PRE-001,هل يعتمد تنظيم التحضير في المسارات P1..P8 بوصفه البرنامج الرسمي لما قبل التحليل؟,OWNER,PROGRAM_STRUCTURE,التوصية تنظيمية؛ لا يقصد بها إنشاء ثمانية Gates.,NEXT,OPEN,"[""INT-PRE-A-001""]"
+preanalysis,GQ-PRE-002,هل يعتمد ترتيب التنفيذ المقترح أم يبقى مجرد dependency suggestion؟,OWNER,ROADMAP,يسمح بالتوازي حيث لا توجد تبعيات.,NEXT,OPEN,"[""INT-PRE-A-010""]"
+preanalysis,GQ-PRE-003,هل تصبح قاعدة المعرفة الوصفية مكوّنًا مشتركًا مستقلًا في المعمارية أم امتدادًا لخدمات V2.1 الحالية؟,OWNER/ARCH,DATA_ARCHITECTURE,المبدأ المالكي معتمد؛ شكل التنفيذ غير محسوم.,NEXT,OPEN,"[""INT-PRE-OWN-001"", ""INT-PRE-A-004""]"
+preanalysis,GQ-PRE-004,ما أقل مجموعة حالات تكفي لتمييز الحقيقة النصية عن التحليل البنيوي المؤهل والمختلف فيه؟,OWNER/METHOD/TECH,DATA_QUALITY,الأسماء الثلاثة المقترحة ليست معتمدة.,NEXT,OPEN,"[""INT-PRE-A-005""]"
+preanalysis,GQ-PRE-005,ما المصطلحات العربية النهائية التي يجب إغلاقها قبل Scale؟,OWNER/TERMINOLOGY,TERMINOLOGY,استمرار لسؤال GQ-CAP-002 في ملحق الالتقاط السابق.,NEXT,OPEN,"[""INT-PRE-A-006""]"
+preanalysis,GQ-PRE-006,هل نجاح Calibration Set شرط إلزامي قبل دفعات واسعة؟,OWNER,CAMPAIGN_SCALE,المساعد يوصي نعم.,NEXT,OPEN,"[""INT-PRE-A-008""]"
+preanalysis,GQ-PRE-007,هل يعتمد Dual-Lane دائمًا أم فقط للمعايرة والجذور عالية الأهمية؟,OWNER,RESEARCH_COST_AND_INDEPENDENCE,مرتبطة بالمقترح السابق CP-EXT-009؛ التوصية الحالية تبدأ به انتقائيًا.,NEXT,OPEN,"[""INT-PRE-A-013""]"
+preanalysis,GQ-PRE-008,هل يكون برنامج آثار الحروف مسارًا موازيًا غير مانع لحملة الجذور؟,OWNER/METHOD,LETTER_RESEARCH,المساعد يوصي بعدم جعله blocker في البداية.,NEXT,OPEN,"[""INT-PRE-A-012""]"
+preanalysis,GQ-PRE-009,هل يكتفى PRE_ANALYSIS_READINESS_CHECKLIST أم توجد حاجة مثبتة إلى Gate جديد؟,OWNER/ARCH,GOVERNANCE_COMPLEXITY,التوصية Checklist خفيف + hard blockers محدودة.,NEXT,OPEN,"[""INT-PRE-A-011""]"

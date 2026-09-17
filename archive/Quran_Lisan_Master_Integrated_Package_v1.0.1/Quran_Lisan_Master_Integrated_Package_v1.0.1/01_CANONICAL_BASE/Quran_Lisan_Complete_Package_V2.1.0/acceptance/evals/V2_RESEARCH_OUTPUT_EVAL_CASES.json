@@ -1,0 +1,48 @@
+{
+  "version": "2.0.0",
+  "cases": [
+    {
+      "id": "V2-EVAL-01",
+      "intent": "local meaning",
+      "must_show_order": [
+        "ROOT_CONTRIBUTION",
+        "INFLECTION_DERIVATION_GENERAL",
+        "LEXEME_ROOT_RELATION",
+        "FORM_GENERAL",
+        "CONSTRUCTION_GENERAL",
+        "FORM_LOCAL",
+        "CONSTRUCTION_LOCAL",
+        "ARGUMENT_ROLES",
+        "CONTEXT_REQUIREMENT",
+        "LOCAL_MEANING",
+        "FINAL_SEMANTIC_STATEMENT"
+      ],
+      "critical_failures": [
+        "context effect attributed to root without independent evidence",
+        "local claim presented as general rule without scope"
+      ]
+    },
+    {
+      "id": "V2-EVAL-02",
+      "intent": "root qualification",
+      "must_include": [
+        "SemanticBoundary",
+        "DecisiveContextAssessment",
+        "competing hypotheses",
+        "falsification/reopen",
+        "CompletenessProfile"
+      ]
+    },
+    {
+      "id": "V2-EVAL-03",
+      "intent": "MOA review",
+      "must_preserve": [
+        "unresolved disagreements",
+        "evidence refs"
+      ],
+      "must_not": [
+        "count agent consensus as evidence"
+      ]
+    }
+  ]
+}

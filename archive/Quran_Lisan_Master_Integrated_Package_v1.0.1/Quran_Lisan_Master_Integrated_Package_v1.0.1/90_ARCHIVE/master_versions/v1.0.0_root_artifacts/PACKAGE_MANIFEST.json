@@ -1,0 +1,1484 @@
+{
+  "package": "Quran_Lisan_Master_Integrated_Package_v1.0.0",
+  "version": "1.0.0",
+  "created_at": "2026-09-06",
+  "authority_model": "V2.1 preserved + post-V2.1 owner directive overlay",
+  "file_count_excluding_manifest_and_sums": 295,
+  "files": [
+    {
+      "path": "00_START_HERE/00_MASTER_AUTHORITY.md",
+      "size": 2267,
+      "sha256": "8eae3308740b9a6cc41214a440a7c392d0b5728256abc0472eaeeab3ba8ec299"
+    },
+    {
+      "path": "00_START_HERE/01_MASTER_MAP.md",
+      "size": 1407,
+      "sha256": "b46058d54516d57909ea8e9117df016e7bd7db71b9ffb10712d09743aced93d2"
+    },
+    {
+      "path": "00_START_HERE/02_CURRENT_STATUS_AND_VERDICT.md",
+      "size": 3096,
+      "sha256": "9c9828c073c33af86019b38cf341f9545a1ceb709686a7c8dccf37a4d89159ae"
+    },
+    {
+      "path": "00_START_HERE/03_EXECUTION_ORDER.md",
+      "size": 1848,
+      "sha256": "99cb8fc3e3952953e5cf55412826affd2593d956994f313e5b9fcf92a14e5908"
+    },
+    {
+      "path": "00_START_HERE/04_FIRST_CODEX_REQUEST.md",
+      "size": 10003,
+      "sha256": "64fc5d286f8bf07293a060c59bfd34b4a94c8f547f623040c53dff66adf75d4e"
+    },
+    {
+      "path": "00_START_HERE/05_ARCHIVE_AND_HANDOFF_PROTOCOL.md",
+      "size": 1230,
+      "sha256": "c198844fadadb6f6113fb8db701eeb776d4a33569b306489877f07326a55b454"
+    },
+    {
+      "path": "00_START_HERE/06_INSEPARABLE_CORE_SET.md",
+      "size": 1393,
+      "sha256": "f48904821980faafe479ee1dbecc19e73b3bb03848706446b53e31f12e99e0b8"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/00_PACKAGE_AUTHORITY.md",
+      "size": 4869,
+      "sha256": "4842a04f70d376a3099a695302547c57c551491682608fb311e5768fe85c150e"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/01_PACKAGE_MAP_AND_START_HERE.md",
+      "size": 2241,
+      "sha256": "97567c93d7a5a6bc679678fa80f06175ee6e313597dee1aea445601de6ff5f21"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/02_V2_CHANGELOG_AND_INTEGRATION.md",
+      "size": 3026,
+      "sha256": "34d2528532595068c0407f2a8a07019463f42d9b4e740196e217c3479fba2d3b"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/03_V2_ACCEPTANCE_AND_LIMITS.md",
+      "size": 760,
+      "sha256": "5f3694c97afadb492ce97f9e2f8ff5f846ebd77eddc9099c68235c5dc7cfdf82"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/04_CANONICAL_COMPONENTS.md",
+      "size": 1016,
+      "sha256": "45e3b1c7643a6e331d5a2b7687a964c88f5c48db175207e21fa8a89d6ee632f7"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/05_FINAL_V2_VERIFICATION.md",
+      "size": 6402,
+      "sha256": "a4ec7c333f7eb0082ea06f7956f45448df36ab237e9f87842fa7eb72cbd7c523"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/Quran_Lisan_Complete_Package_V2.1.0.docx",
+      "size": 171454,
+      "sha256": "69462f92ad49dbfef76a194e26dec7333810165b9f852301cf5868a746f13993"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/acceptance/TEST_CATALOG.csv",
+      "size": 7286,
+      "sha256": "3c1d6561073cc07c822eaf9c971df73ad5cd99e67c00ff16afec73bff5a39752"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/acceptance/TRACEABILITY_MATRIX.csv",
+      "size": 15456,
+      "sha256": "21f917f310194c80768fefe925f6fe82091d67957b1ff6dc430b5ad774b01eda"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/acceptance/evals/SKILL_EVAL_CASES.json",
+      "size": 3302,
+      "sha256": "95f0f3c7ad97c6e8dcead527c99fc36eb39efa7426f85c61e7a104cc6fc974cf"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/acceptance/evals/V2_RESEARCH_OUTPUT_EVAL_CASES.json",
+      "size": 1153,
+      "sha256": "b750d4719399213b5f5a4877b397478fda613ed5b89a72f0b9c9a51cd6489a52"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/acceptance/expected-outcomes/CLOSURE_STATIC_EXPECTED.json",
+      "size": 364,
+      "sha256": "abe636c3222ff0480e901dc38ec95f88f6468e27ae42c33dcdd0685ed51d248c"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/acceptance/rubrics/SEMANTIC_BEHAVIOR_RUBRIC.md",
+      "size": 547,
+      "sha256": "2bfce07bd05d1609742c9bd547d0d7ec81e82bbabcc47d04d5e8dd2290050530"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/cap-go-01/CAP_GO_TEST_CATALOG.json",
+      "size": 2492,
+      "sha256": "a9e505979813831fa086d98becc137bfcad0d9f63204326f0964cd3c036dcc93"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/cap-go-01/PROTOCOL.md",
+      "size": 888,
+      "sha256": "3f1a888b6773687badd84c9346664d2c955830212d8804e9f3744f163999fa4f"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/cap-go-01/REPORT_TEMPLATE.md",
+      "size": 274,
+      "sha256": "70ded5537886a490d5aa06348e969f12e8d955dfca06015c7f7359473bac1cc4"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/cap-go-01/REQUALIFICATION_POLICY.md",
+      "size": 525,
+      "sha256": "ddf9f4e34b3128cd56d4e4741ec76536accdda1984ee01414c983ff624e2c7e6"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/cap-go-01/RESULT_SCHEMA.json",
+      "size": 1692,
+      "sha256": "6477fd318f2969572225984e3ee69c3189a01c13933a624af5d9f6b755085b6b"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/cap-go-01/TEST_STEPS.md",
+      "size": 3868,
+      "sha256": "be7ecbea83097fcd45b74802e1ba04a305f00552017b843080aa7b2c51c1b838"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/cap-go-01/fixtures/CAP_GO_FIXTURES.json",
+      "size": 508,
+      "sha256": "fff371c3e810051f87f0e52938834fac11c34160c74b168530d5eb0cfd1dfd89"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/agents/AG-01.json",
+      "size": 620,
+      "sha256": "008381a58e5a71085bdf5828b00bb25202b54142023b16f78e654c00cc452bf8"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/agents/AG-02.json",
+      "size": 448,
+      "sha256": "8cc6c4a4e0f6453c37288ac1744dffe4a847baf8ffdf3a34c6bdbd9a488c8f37"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/agents/AG-03.json",
+      "size": 451,
+      "sha256": "a651218513a0b01ef9d37cdd345d9168b482261ae12073ba8136b4397a30aefe"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/agents/AG-04.json",
+      "size": 530,
+      "sha256": "880a53466d28b2847f60a1cf0048c8a8b66ae39218f317757215508e34bb9eec"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/agents/AG-05.json",
+      "size": 410,
+      "sha256": "b286959745d649e079d76c4156a9c91355caf22313c84272024ca4ce8bba5bbf"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/agents/MOA_ROLE_PROFILES.json",
+      "size": 1297,
+      "sha256": "a06a8d5d88ed579621b1b74b27fdb1dbe1edd31bbcccb73e126df83887221cf2"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/agents/README.md",
+      "size": 327,
+      "sha256": "8143dfd6cf878874a164c68729fd6044f05bf715a8be0854f86a70921ee164b2"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/api/__pycache__/app_contract.cpython-313.pyc",
+      "size": 4249,
+      "sha256": "18e9c7a967ce488e653325f8c1a96edd7b3b75a2b4d76a316bd696e1bd1cf2c5"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/api/app_contract.py",
+      "size": 1965,
+      "sha256": "181e2361b907032bda1a20b9d0907e8b4f27121bb5bd8f56e15759585fc6dca6"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/api/openapi.json",
+      "size": 48064,
+      "sha256": "06ebc8a0adada8d85c27414e4c514fc3d13128cb7c150cc140715ebf36f77c9b"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/python/README.md",
+      "size": 563,
+      "sha256": "1e7983a3b6957b99105e00542950b245d7db0a9bd3ab70b6ac6c211f2b806813"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/python/quran_lisan_contracts/__init__.py",
+      "size": 65,
+      "sha256": "4a75a84fd292130654308cbc5e168ea65ccfc7e16ba052026558489ee485dd88"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/python/quran_lisan_contracts/__pycache__/__init__.cpython-313.pyc",
+      "size": 282,
+      "sha256": "cd80a2e983868bd51cdc6858dbbff31208b4aa36d80ef7a875677a477201d961"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/python/quran_lisan_contracts/__pycache__/enums.cpython-313.pyc",
+      "size": 11614,
+      "sha256": "06b78786f466e9d16172365b9b14d64ccc6588fa07b034d0c47e05338935c970"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/python/quran_lisan_contracts/__pycache__/records.cpython-313.pyc",
+      "size": 33716,
+      "sha256": "74982f1c923addca8a23d2f0316a99dc72d8e5f5fad960aa435a3638d94e9363"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/python/quran_lisan_contracts/__pycache__/tools.cpython-313.pyc",
+      "size": 7820,
+      "sha256": "8489e5646ab5623ad1d0616a2df5f8c6c961f4240174362893ac24e4c6d26f64"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/python/quran_lisan_contracts/enums.py",
+      "size": 6636,
+      "sha256": "0b970a845b761a268c45a625973bd70255b65df2e0ee0f963313e092a32fc77c"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/python/quran_lisan_contracts/records.py",
+      "size": 16715,
+      "sha256": "44f79e05c06d0f5dde9a5907b1b35a2fe37c4e636160d8f93c66c17729ed6c3e"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/python/quran_lisan_contracts/tools.py",
+      "size": 2882,
+      "sha256": "ae20d0053bad60aa2579258ce56c0f40c7ffec16f06e8032dd5d6a0bab9dec42"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/python/requirements-contracts.txt",
+      "size": 34,
+      "sha256": "854785771a8608641f6da5dacfe8ae3fa0198236bb5b775afca29815075bab3d"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/ApplySourcePolicyRequest.schema.json",
+      "size": 631,
+      "sha256": "c0eea40376590efb37927b3d00894d5a4429f7af77a71d09448ad7551f54e6ac"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/ApplySourcePolicyResponse.schema.json",
+      "size": 4898,
+      "sha256": "72502ad6fe47758f06478b85cc203cf0ecea978cf8ef1fa2744d526c02563330"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/CalculateCompletenessRequest.schema.json",
+      "size": 226,
+      "sha256": "500c09a5621bbed26cd44d7765b2e2f708df213a728cd0c6047d8081ada2ab2c"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/CalculateCompletenessResponse.schema.json",
+      "size": 8422,
+      "sha256": "d59245223c5e3414fb56a42f95ad285661a5a31677290445d4305dd054110a15"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/CalculateConfidenceComponentsRequest.schema.json",
+      "size": 449,
+      "sha256": "fcbf18b651fbc6d9a50d4267448d26b8e7a53027ec907403a4002490bcbace7d"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/CalculateConfidenceComponentsResponse.schema.json",
+      "size": 6888,
+      "sha256": "bf891d8190ffed9dc361da3058d1e06badcfa847642237a5bb557e1f00462722"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/CanonicalAuthorization.schema.json",
+      "size": 2872,
+      "sha256": "1641a336ff98e10ed5e60d704f681d4418f7f93918587c656bf7bb06556b1767"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/CompletenessDimensionStatus.schema.json",
+      "size": 1989,
+      "sha256": "816af7f0f8a2172176b58b70cd0b3883e83f63dc2d4f9066b93df8106168ef24"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/CompletenessProfile.schema.json",
+      "size": 3824,
+      "sha256": "2d514dc9c08b0531e50a084b412b6fc8b7b2ce7c821b5e7fb34b11287d697a20"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/ConfidenceComponent.schema.json",
+      "size": 1914,
+      "sha256": "a22b081dd7eb7f7f649d2cb5fbb25abadff40db8144c8725b1b95c7a9825748b"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/CorpusSnapshot.schema.json",
+      "size": 2020,
+      "sha256": "f9f3558b7df9ad28719bc8cb664c939fe5d504741a0e58718008f5f9d6a1b455"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/CrossRootConsistencyReview.schema.json",
+      "size": 1803,
+      "sha256": "b2bee28734fb5f5cc199a96dc17c6e33e17fc2b8e0425d3f689e6e41295f4e52"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/DecisiveContextAssessment.schema.json",
+      "size": 2459,
+      "sha256": "d285beb140b1b76f5abdf6e6f5b77ec5213c089483ba5c0287b232654847f897"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/EvidenceRelation.schema.json",
+      "size": 3222,
+      "sha256": "08b53a1fa9b8a54bbfbcc66ecefc34d3a4ec584abcf2795aecf468dcfe261293"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/ExecutionReceipt.schema.json",
+      "size": 3401,
+      "sha256": "ccb5c2961a9db8fd170f03acb656e04375dcf64c52c577e76f23f9f370080986"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/ExternalComparisonRevision.schema.json",
+      "size": 2073,
+      "sha256": "4bbc9b7364b307c168f58183d2429f89e606c6c0c7827cf5979310eac46c28c2"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/FalsificationRun.schema.json",
+      "size": 3868,
+      "sha256": "b1b699dc646d4d9bc3897933913b7582908c3aaa74575a173ac271bd37f6fb9d"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/GetCollocationsRequest.schema.json",
+      "size": 423,
+      "sha256": "8216a6a32737a39ea0d567b51e6040eb42b89db1bd7c8102b4e4374f8a3b70c8"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/GetCollocationsResponse.schema.json",
+      "size": 4476,
+      "sha256": "2b41f518228552ff417c491654781d6f673fd541f14e72ae5526082ba04e98f6"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/GetContextRequest.schema.json",
+      "size": 352,
+      "sha256": "28f38c06fa045ad90980820c727e8ba1e1900b521f3af0279d41c43bd9789399"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/GetContextResponse.schema.json",
+      "size": 4649,
+      "sha256": "e81c4efd5dcb8420b140d20bffb5cc375921bb2f57d9a17683a0d4e88a424764"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/GetDerivationalFamilyRequest.schema.json",
+      "size": 341,
+      "sha256": "cc2818cb2c4ac5f53497a638d3fa2935ee821fdc93fa94acad127955031385a1"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/GetDerivationalFamilyResponse.schema.json",
+      "size": 8015,
+      "sha256": "92aa4434405ead94eb261a60ce3c0890aa9836c21262b881c4a150a49c615ac5"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/GetMorphologyRequest.schema.json",
+      "size": 239,
+      "sha256": "8ae812fbc1a1e7d7e93551ef2be634d81ce4644d96dc13112a50cadb52bb3ae5"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/GetMorphologyResponse.schema.json",
+      "size": 7760,
+      "sha256": "f91dff197cc42a35007766ee89bd1cc3aeed4e3288d718c74c2984cd17fb0f01"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/GetOccurrencesRequest.schema.json",
+      "size": 340,
+      "sha256": "38d79ff578ee723c8da0dde08d5943f3bab53da8c738aabab6799761826b893c"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/GetOccurrencesResponse.schema.json",
+      "size": 7025,
+      "sha256": "8dfdcc17eb371662e4655aa7ccd55c21e775543ab09ac621baa526e89f8f3857"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/GetSyntacticRelationsRequest.schema.json",
+      "size": 247,
+      "sha256": "e4eaa23c811eadc0c43a3e81be4e02fe8970ba86f5a212576ed9ebc77d7d000c"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/GetSyntacticRelationsResponse.schema.json",
+      "size": 4524,
+      "sha256": "00571cb0781ce3adc5eab845f2fd101e621a6b5dd734a6a9cd123e5572787dd7"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/GetVerseRequest.schema.json",
+      "size": 465,
+      "sha256": "d24537f84bd7c67c12def54669beff6e33bf25a11b4c7f272c58e969c28a46d2"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/GetVerseResponse.schema.json",
+      "size": 4411,
+      "sha256": "fe0310a373955e974b955827eca1f5dae4c16229c0014f8c5b49749aae716615"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/Hypothesis.schema.json",
+      "size": 3027,
+      "sha256": "caa739b040176f532555bfc9f36f449102cfe4d9b650badb4133200d520c4b07"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/IndependentVerification.schema.json",
+      "size": 2567,
+      "sha256": "97094a9b589d4479d0eadda58421b7b11c2cecdfd62303f19459695547c6ea68"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/InternalSnapshot.schema.json",
+      "size": 1582,
+      "sha256": "a9b273cb72c7a4fe170a97db5048345e36f8e330d8a10b0166a75a958af3a063"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/LayerAttribution.schema.json",
+      "size": 2073,
+      "sha256": "394c758317afae7b58d35cc35ec75587a260f23ed8fd94faf161763f44d79c70"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/LexicalUnitHypothesis.schema.json",
+      "size": 3738,
+      "sha256": "57d1ac5a973cd2b817ff74965b175103c122552551baf5fb2fd366930c761bc8"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/MOADeepReviewReport.schema.json",
+      "size": 4172,
+      "sha256": "7da32955e5c542f867daf050c73725c4f8670db5886c187b6f822f2c2d2c98fe"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/MOARoleFinding.schema.json",
+      "size": 1799,
+      "sha256": "0ab79baa0ae39e80651882d1694b94dce78ab423392640e108c35c466b783438"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/Observation.schema.json",
+      "size": 2311,
+      "sha256": "f21c4fc2bcdef5d84ef606e9935b56532ab84476a56c608a0475dc5c2029d868"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/Occurrence.schema.json",
+      "size": 2179,
+      "sha256": "ec525009183c9a8935119b0027226c45cae03892a7577c61440ad8a1d4fda8c7"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/PriorClaimAssessment.schema.json",
+      "size": 2466,
+      "sha256": "3d1feba3022287cced7171f8b723c2917034199ce154a7345f1e89d248b59c6c"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/RecordToolExecutionRequest.schema.json",
+      "size": 4233,
+      "sha256": "e4dacebc220de0c4135766346511cb1cf2201bf01724c0882eedaf2f12968b25"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/RecordToolExecutionResponse.schema.json",
+      "size": 323,
+      "sha256": "17f4dacd6a1c84d4c33d9d34a07a5164d3f9e6b687a31b8fbaca56ddc05034d5"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/RejectionCondition.schema.json",
+      "size": 1396,
+      "sha256": "adbe45a874edbd15c1505d780a16e4f8fd8bd147a42134d08e87e615b552cb57"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/ReopenCondition.schema.json",
+      "size": 1579,
+      "sha256": "f37c4272a91eae64c64f046deba95875c308723b45b1706b8407f44f8137e74b"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/ResearchBlocker.schema.json",
+      "size": 2072,
+      "sha256": "9abede78b24830f34dde9d6ce0996f342965921ffed05df3a89af95db35038d6"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/ResearchRun.schema.json",
+      "size": 2921,
+      "sha256": "3d9fb69f22cc345e6ed86bc395bd77784d490223484e7a13098e6271aad5c387"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/RetrieveExternalSourcesRequest.schema.json",
+      "size": 767,
+      "sha256": "6b73242bdae3e80517623fa1ad8a204b90f4e6b127e7195c6f313168e75b9e99"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/RetrieveExternalSourcesResponse.schema.json",
+      "size": 4435,
+      "sha256": "16a2ac88437472ca8eff2552e2a78e10961abb643ff32e0a38956fc2487f468d"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/RootCard.schema.json",
+      "size": 2937,
+      "sha256": "37c4fd842e61900df07a90628161fc9bf71b257c1f3eed35e35589029186ec68"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/RootResearchArtifact.schema.json",
+      "size": 6157,
+      "sha256": "87c15eed562da4a44c30a88bf94586cd99697c2141ba95758b409512caa6bc6b"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/SemanticBoundary.schema.json",
+      "size": 3835,
+      "sha256": "b8315d14a3027b1545aa61a6ed0bd9733d1355f38dc08c81f2a9ce2c37837607"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/SemanticBoundaryItem.schema.json",
+      "size": 2036,
+      "sha256": "e78d22da8dca13a89fe453333c88f9e8284dcb26ca2148e2e8eddfcf841cc4a9"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/SemanticDecision.schema.json",
+      "size": 7460,
+      "sha256": "05a528848475aa4b70bb63d73c7449ec75559e4e56261b4d1e40e7d8b3ec1dd3"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/SemanticDerivationChain.schema.json",
+      "size": 5052,
+      "sha256": "2f5da38a5947e2d3df54b899865d4da3c4f887d2eea735e33aa25487246b1df5"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/SemanticDerivationStep.schema.json",
+      "size": 2838,
+      "sha256": "a81388b22e8a7fcdbc18cc5edd0d62b50531b58060897a9bc2ead6d7a66afbee"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/SemanticNeighborResult.schema.json",
+      "size": 3251,
+      "sha256": "34290e3193dcebc6b4b02aaa44d8070ebb671ed1d1131084d3b414b407222a46"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/SemanticOperatorContribution.schema.json",
+      "size": 2829,
+      "sha256": "1c3cdbe5741a01dfc8a95208f60a68313fd4316df13f4d46296c98666129eb1c"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/SourceAccessEvent.schema.json",
+      "size": 2223,
+      "sha256": "62bfb776334c4678b0dfbe32140fa27dc68a62dbd45ecf6bccffcf74889474fe"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/SourceIdentity.schema.json",
+      "size": 2884,
+      "sha256": "d0d156d958bccd4c79e93abeebd483bf7a47a35f23e53ec9f55a1ce771655440"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/StructuralAnnotation.schema.json",
+      "size": 2775,
+      "sha256": "e564f7719c3759116f089e0785e791caa74d4b98b8caf58d65865f45ba983e71"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/TermCard.schema.json",
+      "size": 3225,
+      "sha256": "a34226bf293275e4d127b70430ec528b733ab4eb6525a898e6e6da866d9fd941"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/TermResearchArtifact.schema.json",
+      "size": 4291,
+      "sha256": "b382f25dac1aad2e262710acb941184780b83bfc6c1a9ab574fa4397da181b44"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/ValidateEvidenceRefsRequest.schema.json",
+      "size": 405,
+      "sha256": "b0ce26fca0c48b5cd0a9f9bdfdfdc7c80d1a5c3ecb030ba5db4f655377dfcde7"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/ValidateEvidenceRefsResponse.schema.json",
+      "size": 4471,
+      "sha256": "24ebd1d69b66c327bf3a5f203a83ebb199bfb9c68f2c8b48e1b4045ea04835e9"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/schemas/VerseSemanticAnalysisArtifact.schema.json",
+      "size": 2760,
+      "sha256": "60c07f3eea7a34fefc77c20794ca6dd9a9f24e24dfb9b0f09c177a0b18741bc4"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/state-machine/research_run_transitions.json",
+      "size": 1317,
+      "sha256": "1fa6a084fdc50f921fe5582cd19739186f05aff8c1be7693af541091453f4860"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/tools/TOOL_GATEWAY_CONTRACT.md",
+      "size": 920,
+      "sha256": "5440e6a1e3babd891925d852296c04fdb0cb1adbfb53b515a5375998f6b08cfe"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/tools/TOOL_REGISTRY.csv",
+      "size": 2833,
+      "sha256": "bf3677bda08e0d7c0f3e61bad67f207a474d78ea3d595abea30a48ef2a91484f"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/contracts/tools/error_catalog.json",
+      "size": 647,
+      "sha256": "ae893c632316cc22bde579b515da086eacb3f5f2adcffe1dd5833c6618aefc6a"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/history/11_CHANGELOG_v1.0.0_to_v1.0.1.md",
+      "size": 1218,
+      "sha256": "46dbbcff53a78b4c2d9ee628d99dd5b451aec6e3e650673a48f37788dd861266"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/history/13_FINAL_CLOSURE_VERIFICATION.md",
+      "size": 6713,
+      "sha256": "8a64b955f4c6a01ccc9ccec43ee765d633b613f1208193d9c8f21ff9b45a25ec"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/history/20_CHANGELOG_v0.9_to_v1.0.md",
+      "size": 1414,
+      "sha256": "de01203e51c0f14c5331c352beeaeaa5e2c40d1a52c91919b39449ee3f3add22"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/history/23_FINAL_RELEASE_VERIFICATION.md",
+      "size": 4979,
+      "sha256": "a18b8282463afefb33385a9f49dccff85405190630123ee99301853f1a4c77de"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/history/AI_GOVERNANCE_ADOPTION_RECONCILIATION_V2.1.md",
+      "size": 2469,
+      "sha256": "47e7dd17747f21c4961dadf26223f011fdb4e7cedaed0860e8f4af7a21f19b49"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/history/V1_0_1_BASELINE_REFERENCE.json",
+      "size": 423,
+      "sha256": "d6d227ddb2e22899b3e3fe0e33b15184b6f517ebaac749bbd19d0b72fb38d514"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/history/V1_SOURCE_HASHES.json",
+      "size": 379,
+      "sha256": "5e83655ea468da2d79d68a455d8de735b2f7c0c2605541c5c748dac111f6646d"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/history/v1-reconciliation-evidence/REUSE_KIT_ADOPTION_MATRIX.csv",
+      "size": 5506,
+      "sha256": "b504b4cb35407f99114999c5ca4183f884499f609490ce9d19e87e5d9ce652f6"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/implementation/00_RELEASE_AUTHORITY.md",
+      "size": 2115,
+      "sha256": "50dc6142b7a715dc833b1fdf60aae55bce18cf3e92c991f3b22baa3a9dabc6e4"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/implementation/01_CLOSURE_DECISIONS.md",
+      "size": 3275,
+      "sha256": "f0ac7fbd7500e0ea3e6dc436f85bc544e45d7cf11a5b8aa98370e1718a0b1fad"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/implementation/02_IMPLEMENTATION_SCOPE.md",
+      "size": 1675,
+      "sha256": "a394df3011f2bbca1ff64526ed7d84b70cdbae97556a3602b7ba51b53e113b92"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/implementation/03_SOURCE_AND_FIXTURE_POLICY.md",
+      "size": 968,
+      "sha256": "9e99d3842240709f368c2fc11b924110a4a20028561a97b883bde44dc00310cc"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/implementation/04_DATA_CONTRACTS_GUIDE.md",
+      "size": 1568,
+      "sha256": "b1b1f10df6af5b20bc613861bb93419d490b582d6b9bc573667711a8d1031a61"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/implementation/05_SKILL_AGENT_TOOL_MAPPING.md",
+      "size": 1540,
+      "sha256": "e7f16808e4ee679f31857713b0d9279a01a0f6da72ca2c9f86e47def566a5d36"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/implementation/06_RELEASE_REPRODUCIBILITY.md",
+      "size": 973,
+      "sha256": "87b3eeddd4c06ec00edaecc3fa92341317eb244ae9f069529f24937fd553ec8e"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/implementation/07_IMPLEMENTER_START_HERE.md",
+      "size": 1656,
+      "sha256": "f4812e20fec36adf29b17bad01b5f0998278099582041cc7d80e678da43e9a2a"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/implementation/08_REQUIREMENT_TEST_ACCEPTANCE_GUIDE.md",
+      "size": 822,
+      "sha256": "2286407ecad2f27fbfe9d5bcdc6c13fde69f597e0314c1e5810b519990e85b14"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/implementation/09_MIGRATION_AND_COMPATIBILITY.md",
+      "size": 962,
+      "sha256": "50a829eba611bdee5fce78ddca4732e7fd5dece3370cdad10fb64a228df7b5cb"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/implementation/10_KNOWN_DEFERRED_GATES.md",
+      "size": 706,
+      "sha256": "331b4a89f001300407b8051036abc490f8aa04b71c4580f1637737d6cc04f21f"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/implementation/12_CLOSURE_ACCEPTANCE.md",
+      "size": 1364,
+      "sha256": "8566426e9af97db04b3a8c528071326c15c8ec578b61bd08c7deeb9271f2f1b9"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/inputs/AI_GOVERNANCE_CONSTITUTION_OWNER_SOURCE_2026-09-05.md",
+      "size": 29416,
+      "sha256": "451d357c1d9ca64455a2233ffa16c71b90c79a55b6629501a5c08f9c044aacf6"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/inputs/SECOND_PROMPT.md",
+      "size": 20972,
+      "sha256": "2360779c7d141cedc301e5a7bb50a7ac382386442db5596476a08972a784ae9d"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/inputs/USER_SEMANTIC_OUTPUT_DIRECTIVE.md",
+      "size": 1237,
+      "sha256": "b8d6c9597186bce903be5509fcf0be7bbc01e4b6e65d5ef2554f4a09094d4fcf"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/prototype/PROTOTYPE_ROOT_DECISION.md",
+      "size": 1807,
+      "sha256": "040cb1f715d3efa20acf3d6ac6ffabf4530448b410a57e424e2912902dd0c756"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/prototype/fixture/SLM_FORM_COUNTS.json",
+      "size": 759,
+      "sha256": "0d16c4ba85e174597e74705f326adf15857454256864ef0aa0ab88587b2443c9"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/prototype/held-out/SLM_HELD_OUT_CASES.json",
+      "size": 527,
+      "sha256": "a46e6750f27c1a555342a481f897d4acd72b1bab0611797967ef5fc2502eaddf"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/prototype/semantic-neighbor/SLH_NEIGHBOR_FIXTURE.json",
+      "size": 499,
+      "sha256": "407c3bbcb70a28f1e940916587596eb2cf8570ea2f55473ecc9a7467362db7d5"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/prototype/structural-annotations/slm_full_fixture.csv",
+      "size": 17776,
+      "sha256": "31674963f4c5fcef2acc3ec396bb0901f7bd49cb3be147dddf081493d8c0d768"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/reference/00_README_AND_PACKAGE_AUTHORITY.md",
+      "size": 6935,
+      "sha256": "10696ec05c92ecbc91392ab0a714cce71464403d20fded0b7c48b33986d73535"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/reference/01_PRODUCT_CHARTER_AND_SCOPE.md",
+      "size": 4339,
+      "sha256": "ada108be25ac3e2ad55b7b8da2af42f11d8f5a504ea0be21fc96cfc26b5442cd"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/reference/02_TERMINOLOGY_AND_LANGUAGE_GOVERNANCE.md",
+      "size": 17227,
+      "sha256": "58b49c8990ab8a5ff77f5a24675031d2283a200ac48751515ab09f27de85841c"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/reference/03_METHODOLOGY_AND_EVIDENCE_CONSTITUTION.md",
+      "size": 8198,
+      "sha256": "99e9c03985f690b01d1b5b97a822c8c89da2b4efca1b33597cf6b0a8b5ba98ac"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/reference/04_SEMANTIC_ANALYSIS_MODEL.md",
+      "size": 6893,
+      "sha256": "aa30d0300d52174d547f28afdf38fd8937335eb1f66929d55d2f407ec14c2fc7"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/reference/05_ROOT_CONCEPT_CONTRACT.md",
+      "size": 6936,
+      "sha256": "a807cfe9ace82420806b6564d8437d3ded66b0d9d71961f2a173172dd52119f5"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/reference/06_SOURCE_ISOLATION_AND_EXTERNAL_COMPARISON.md",
+      "size": 4849,
+      "sha256": "814bab5939cfa0d759a49fbf715bd612ef171f2cd01888f157c75825015e0270"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/reference/07A_AI_ADOPTION_RATIONALE_AND_EXPECTED_ROLE.md",
+      "size": 15988,
+      "sha256": "78441daf4fa7d48ab068f0ac49cc9b258f5eed5e9fc2bdd09e5c2d4c9812cfcb"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/reference/07B_AI_GOVERNANCE_CONSTITUTION.md",
+      "size": 36161,
+      "sha256": "50622bf6e29f4729aaaf09e9d90b6ff3620a68c8e858295c2d1657bd17db9829"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/reference/07C_AI_GOVERNANCE_CONTROL_MAPPING.md",
+      "size": 3474,
+      "sha256": "47304df79bf8217effc94abb75efd13d10d29de5b67d5183c55a76da9b43f0b3"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/reference/07_AI_CONTROL_GOVERNANCE.md",
+      "size": 10982,
+      "sha256": "994a4b83d2ccc1a178c46399a5f60e2b1c6cbadd90e989b97eae73b5badc2efc"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/reference/08_TARGET_LOGICAL_ARCHITECTURE.md",
+      "size": 3871,
+      "sha256": "85a7f383cacce0b04948ed6ad86ced7208a72fd3ebb6c66e672a0225006e79cb"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/reference/09_AGENTS_SKILLS_TOOLS.md",
+      "size": 3463,
+      "sha256": "35511a833c8fcc62660aea5187dd2d13d4cd14bb259f5752db64c76196dd1db2"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/reference/10_FUNCTIONAL_REQUIREMENTS.md",
+      "size": 10463,
+      "sha256": "73cd79e56d39a7422457b40b8831e757f8cd9b2ca6e7d312c211d4fb4a13b0db"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/reference/11_NON_FUNCTIONAL_REQUIREMENTS.md",
+      "size": 5489,
+      "sha256": "8e0dbbcc9feb4b4db636b62e8430278ff89aa7fc018398dfcd8317bd33abacc3"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/reference/12_DATA_MEMORY_AND_TRACEABILITY_MODEL.md",
+      "size": 2813,
+      "sha256": "8738a62c06aeedba586956a7c918afd1212f053aafc712db9204c2b615ed9176"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/reference/13_CONFIDENCE_COMPLETENESS_VERIFICATION.md",
+      "size": 2759,
+      "sha256": "75d79f55ff416b029fee2187cde97e404bd287fa4af1e9a675bddb97feba392d"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/reference/14_OUTPUT_AND_RESEARCH_UX_CONTRACT.md",
+      "size": 4620,
+      "sha256": "0269f0b3efb02786226c6c83e044625e876be2de95e128c965e648e0334f0f6b"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/reference/15_TESTING_EVALUATION_ACCEPTANCE.md",
+      "size": 5035,
+      "sha256": "b656df3c544382e182fa83a8942d9730655cf19b9c44fb8868379cac95de2076"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/reference/16_IMPLEMENTATION_STANDARDS_AND_ROADMAP.md",
+      "size": 2732,
+      "sha256": "8e2a208408e32650ad7dc112e6f62aeb87baa1ccd754b31e54a8303beac98ea3"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/reference/17_DECISIONS_AND_OPEN_QUESTIONS.md",
+      "size": 4254,
+      "sha256": "924f09fe9ec53a32e3b3e55fcac0a3e80a18c1c88ea9056fbfe7c8e599d4e66a"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/reference/18_REUSE_KIT_RECONCILIATION_OUTCOME.md",
+      "size": 6601,
+      "sha256": "34f36f6d5ffcdb262839c8a1f770e6bad65634b97a1f8ad0940eb8013d8d9fd2"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/reference/19_SOURCE_TRACEABILITY.md",
+      "size": 6018,
+      "sha256": "df6278a5cb80d19f613fe34f49d81b3a3009bc45f08f4b5e26928ecd44815091"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/reference/21_IMPLEMENTATION_PROFILE_V1.md",
+      "size": 2727,
+      "sha256": "accb43c147a46d0efa96a15863e969113e36c59c1493da2f0d6a0a8523a7930a"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/reference/22_GEM_OPAL_CAPABILITY_GATE.md",
+      "size": 1866,
+      "sha256": "0a2be29c2dd95e9fa169e6f0d5193c4101d7c98c65f588a46ca6df56fd0c48b2"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/reference/APPENDIX_A_EXPERIMENTAL_DATASETS.md",
+      "size": 949,
+      "sha256": "1930214eb9a62ed900e1644c1f5d5c02d3c3a6d9fa59cc46a52109bd832cedde"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/registries/CONTROL_REGISTRY.csv",
+      "size": 15852,
+      "sha256": "b4351022d755640bb3d8de8599bf22107abf4ff48f32de4c500c0d96358a8c7f"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/registries/DECISION_REGISTER.csv",
+      "size": 7910,
+      "sha256": "afc9fe4ee2adeda9b59ff46b014171482423e4abc72460a51b1047eda4f02f25"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/registries/ENUM_REGISTRY.csv",
+      "size": 2198,
+      "sha256": "0c1564056e992dc083203d67e8d03930765e620e6cf0eb0c17479c63d74cb07f"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/registries/OPEN_QUESTIONS.csv",
+      "size": 737,
+      "sha256": "26c052e80b42d6b5b5c744c304a9fc772a4811b3cbb202c276b643ad33468ca3"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/registries/REQUIREMENTS_REGISTRY.csv",
+      "size": 22462,
+      "sha256": "551370cb0515b3c65679711b55102c512537e337b4fb6edb9e6589174a9b05b4"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/registries/SOURCE_TRACEABILITY.csv",
+      "size": 33063,
+      "sha256": "b46d045a00d3413d5502cae1b3790b4c4f1fabec6ef30de397a20105b8d0cb23"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/registries/STATUS_REGISTRY.csv",
+      "size": 1082,
+      "sha256": "00d958f0a4a5486eb55e11e08e3dff2bfe8a6ddcce5e08fdbcd2ebe30e521aa7"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/registries/TERMINOLOGY_REGISTRY.csv",
+      "size": 20577,
+      "sha256": "0371e13d72ca7606bf8a56ccc141cacf5e326eb613f9f52ccf680ebdc34b87b9"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/release-evidence/V2_1_STATIC_SELF_TESTS.txt",
+      "size": 543,
+      "sha256": "1932c28eb725b7269852d47b9ae74dd2161619c31cd019a50882862646cfe76f"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/release-evidence/V2_STATIC_SELF_TESTS.txt",
+      "size": 493,
+      "sha256": "eb3b9e81b1c6156a987dbeb0d5ccddd1ef7771a5b46960f7d39f59e13beeb5b2"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/release-evidence/docx/DOCX_RENDER_QA.json",
+      "size": 841,
+      "sha256": "c34d85326be007d34754e5af310b0bc73182137388442219db143657d20f58c1"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/release-evidence/docx/ENVIRONMENT.txt",
+      "size": 202,
+      "sha256": "0f5603deb0cf884531b05e2c4e6ae476b20d5deba5f7ebe658ddb37cd9986af1"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/release-evidence/docx/Quran_Lisan_Complete_Package_V2.1.0.rendered.pdf",
+      "size": 3240095,
+      "sha256": "fd4a28e88d47e9fef482db0d4b08d7546df45b41552f841f664a3f7b99cc0647"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/release-evidence/docx/contact-sheets/super-01.jpg",
+      "size": 265969,
+      "sha256": "74025a5c5ab1b6ff4ce6e784c4ddb9fea36fc7e00ad769cb08786322a6a57bb4"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/release-evidence/docx/contact-sheets/super-02.jpg",
+      "size": 342581,
+      "sha256": "616c2f30f460920a3ebd57bd80f1d1d166560570293a3896db32d05f63caae63"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/release-evidence/docx/contact-sheets/super-03.jpg",
+      "size": 403634,
+      "sha256": "89270530e9783be7ca0864262aa43176952c7ace15bff66bcc138a7ed96cd967"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/release-evidence/docx/contact-sheets/super-04.jpg",
+      "size": 442222,
+      "sha256": "c04193d0dd1c5c9f41e3312634d15cdba4fffd149b213341110938779e698953"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/release-evidence/docx/contact-sheets/super-05.jpg",
+      "size": 351952,
+      "sha256": "ee80daad409fa6456cf78e195f333a020fc4c580ae2a7302adac663dddf29923"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/release-evidence/docx/contact-sheets/super-06.jpg",
+      "size": 503185,
+      "sha256": "3c1c185aecc283437dc9e5bebd04a632377d938dc488f29b6b41805feb1a18b4"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/release-evidence/docx/contact-sheets/super-07.jpg",
+      "size": 242096,
+      "sha256": "962cb2e9cd87dcf043c6061deea83ca5d61dcc23bc0a6a0b886fcfad97956f0f"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/release-evidence/source-acquisition/TANZIL_WEB_VERIFICATION_2026-09-05.md",
+      "size": 1749,
+      "sha256": "2d3b044ba5da8dc4d27e33f65bca1ea55ce15e331e63253cef91c73e6628cdff"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/research/01_FINAL_RESULT_AND_SEMANTIC_DERIVATION_CONTRACT.md",
+      "size": 3494,
+      "sha256": "86543e8d40d790c2c203dbbfe4a428561d4f83b77ee843a64ec4b7d7d99ee2de"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md",
+      "size": 1702,
+      "sha256": "03a36a6996f79fc079b948a1dbed8c8a6da8087fa9c8297ac892cad28f8149b2"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/research/03_TERM_VERSE_ARTIFACT_CONTRACT.md",
+      "size": 1788,
+      "sha256": "1e6c7276cfdac86bb9acb0dc0a7605a5a6ee6baea65fbc002e5a5d52bf375096"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/research/04_SEMANTIC_BOUNDARY_AND_DECISIVE_CONTEXT.md",
+      "size": 1073,
+      "sha256": "eecff69112bec98edb9795fd77fbe32d391207eaf1766bed6984eb9cd4ccab3f"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/research/05_SEMANTIC_NEIGHBOR_DISTINCTION_CONTRACT.md",
+      "size": 749,
+      "sha256": "767356bd2343dee147c509d9b2e86a29c5658016cafaea487aaf05991302bec0"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/research/06_MOA_DEEP_REVIEW_PROTOCOL.md",
+      "size": 1604,
+      "sha256": "25dbf82067a93cddb1d8dd812261457cb22d3eb06c0dc96a36e5503f15def5d5"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/research/07_PRIOR_MATERIAL_AND_CROSS_ROOT_PROTOCOL.md",
+      "size": 1109,
+      "sha256": "5271154ffe7c3ce6db1d490684eca212614961f03f8e2906e651edf4ee944c37"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/research/templates/ROOT_CARD_TEMPLATE.md",
+      "size": 348,
+      "sha256": "88f6ee7c0ce6dd2d88e30f82a7a875b5abca87e860beaf77001abedee7e78267"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/research/templates/ROOT_RESEARCH_ARTIFACT_TEMPLATE.md",
+      "size": 1444,
+      "sha256": "5fdb77cadd0e3f658d990f852fa0412440efad55fa553a9ad2f19787a7cdf0fd"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/research/templates/TERM_CARD_TEMPLATE.md",
+      "size": 313,
+      "sha256": "da9e4ed5fc075c9f192eb265e52f4c5aeee3b23af25dce1d5a87217ee9f1b019"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/research/templates/TERM_RESEARCH_ARTIFACT_TEMPLATE.md",
+      "size": 937,
+      "sha256": "de4c232cb1b44fc357d8c3edacba40806f6a3c734ba167f392b013e06343d9e2"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/research/templates/VERSE_SEMANTIC_ANALYSIS_TEMPLATE.md",
+      "size": 684,
+      "sha256": "6cccc598d395e1ee3c766e5792dfd16e6ca57bf9dcc6d3d3885e0fac58a493c8"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/scripts/acquire_tanzil.py",
+      "size": 716,
+      "sha256": "3b756593f446b291a46963902555b8a2518345a187f0dc6299265c5a30a8d103"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/scripts/build_docx.py",
+      "size": 9509,
+      "sha256": "70468c5ac9c12424899c53fd40476722d735afe1aa2e71227f443cd026addc79"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/scripts/build_release.py",
+      "size": 1132,
+      "sha256": "d28a7610b27f5d81ede0c5d64a9c920a610690b6a844cb22207fb912414114a1"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/scripts/build_release_v2.py",
+      "size": 969,
+      "sha256": "cff741438ca70eb97d28b19e47c1a1f2941719f9ad5cd1dddfb3fd285161c7f4"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/scripts/build_v21_docx.py",
+      "size": 11336,
+      "sha256": "5d39beebc32a7646e34fda21f5a6b738efdb60c95480c8c559c83ba4a0d4be16"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/scripts/create_release_zip.py",
+      "size": 1196,
+      "sha256": "8cef12990bf8bb2e8dd7d2ff0f2f7d99913fbee2746b4e919c7873af6fd86ac3"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/scripts/generate_openapi.py",
+      "size": 341,
+      "sha256": "6182d50bc0a327c6b468a0c227446bdf999eebafe54e75597bdc2f2eb9bb300d"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/scripts/generate_schemas.py",
+      "size": 771,
+      "sha256": "509326fccf7a1c8b2d6109444fa8675a607ce134f0c114e34ab730d2c4be033d"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/scripts/run_closure_acceptance.py",
+      "size": 664,
+      "sha256": "fe3c8848603d0826a0e86fd090f7f733c9bef90f22923084b29e6f9a678b8ac5"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/scripts/run_v2_acceptance.py",
+      "size": 722,
+      "sha256": "d95f5bbd53737238b4c1ae3120d0c6da4e2ac79f4819b5b16ce4db34e3a92b68"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/scripts/validate_ai_governance_v21.py",
+      "size": 996,
+      "sha256": "32e8c5a8cb5a25868497e72411310642d20afda4ada14fdec767acf583fec2c2"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/scripts/validate_cap_go_contract.py",
+      "size": 585,
+      "sha256": "a01c99b5ddcf04416626f0587ca1839f6a8fa8ddf8b2cd1b0c18a524aea1f9a7"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/scripts/validate_contracts.py",
+      "size": 1299,
+      "sha256": "1276cc290ea53c788272fa5d6ff96bb0c462ac7e3673d90402588c4df3437dc5"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/scripts/validate_package.py",
+      "size": 471,
+      "sha256": "0df8e2409516091c250341634d1780eb79a02809cd25fe932d47de4dd7008c4d"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/scripts/validate_prototype_fixture.py",
+      "size": 919,
+      "sha256": "1da0bfb870d591beb06752ebd0f0a8d4875a74cc084dd01f0cb93a977ecbe182"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/scripts/validate_registries.py",
+      "size": 778,
+      "sha256": "9d562271c8edfddab0433364b43876b54b334ac1d7805e335abb4667e83bbbaf"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/scripts/validate_source_traceability.py",
+      "size": 762,
+      "sha256": "9e1d93d596b40aa1edc35dd9f2a4055097f00e1112edb40b18df0bd7ba58cad8"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/scripts/validate_tanzil.py",
+      "size": 1147,
+      "sha256": "3b15f1543335bbcfbde1165151adb228686a24e80c2233fbb2133d772b1f03f7"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/scripts/validate_tool_gateway_contract.py",
+      "size": 887,
+      "sha256": "a447c0aec19368d59a324bb51b1badf17bddb1f848ff823dd6bacffa34486748"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/scripts/validate_traceability.py",
+      "size": 814,
+      "sha256": "26cb0846b343678291f6f5aa7aea987956e79242625bccaeecd0ed5a1cd2e2e7"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/scripts/validate_v2_research_contracts.py",
+      "size": 1845,
+      "sha256": "112d689d50ce6d4c0f1d603b66a2aa17401294d7af061cd4ccca3b8f40bf4e05"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/skills/SK-01/SKILL.md",
+      "size": 2317,
+      "sha256": "c52b39618fb4a0dbb780b408d043d0f06a5d64561935f5868f037fb122d8ac7a"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/skills/SK-02/SKILL.md",
+      "size": 2270,
+      "sha256": "be79e115c58ea7b70de6693dad1552e3500a61d13ab00bdf7f050460948b1afe"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/skills/SK-03/SKILL.md",
+      "size": 2730,
+      "sha256": "8b229f32858d567ee1515085206d61a21965c73c7fdcd7d7f26380a8a1b34b5d"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/skills/SK-04/SKILL.md",
+      "size": 2549,
+      "sha256": "cda96a06e46d62256b4c442315f23dc096e49b1ba7746db854ac4cdb4fbdb046"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/skills/SK-05/SKILL.md",
+      "size": 2531,
+      "sha256": "7dc2fa2c9d3c661df4981c240e8e297b09a5f9991db4411acca148b7b9793a05"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/skills/SK-06/SKILL.md",
+      "size": 2629,
+      "sha256": "08d5d3b1cde92fd3ffe422ccd89500b2c1743ad19c00fb063a412040c8e545e7"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/skills/SK-07/SKILL.md",
+      "size": 2740,
+      "sha256": "f45940d65be4492dd4849205201c292fbdc948ab18ff8ff1ad99b9744a0ddd19"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/skills/SK-08/SKILL.md",
+      "size": 2313,
+      "sha256": "cfdbde02c820c8b9603484dca035a861513ebe5afd3257af0224fc488888a036"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/skills/SK-09/SKILL.md",
+      "size": 2597,
+      "sha256": "2d2fcb9c0507d7aecda9d7b382dddc40c5160c61d5eb6dffc59392ec67b1342e"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/skills/SK-10/SKILL.md",
+      "size": 2597,
+      "sha256": "e67862a128696b4882c2b654e4b3df6d68370f996227c9667e38c4fad31e8d3a"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/skills/SK-11/SKILL.md",
+      "size": 2299,
+      "sha256": "bae83ea3719aaa13084b2aeeeb4f694226ead19f2982dec2311fa79c3a67de0e"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/skills/SK-12/SKILL.md",
+      "size": 2341,
+      "sha256": "770db14af8d046e0bde1ca4e7fa7bb41f328a905b014bb9b16190666bba8ec8c"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/skills/SK-13/SKILL.md",
+      "size": 2706,
+      "sha256": "8e7a9ac1e868c94ab8d7bdb2975c120b086af327373cb913bc4e7ec14ab74b52"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/sources/AI_CAPABILITY_EVIDENCE_NOTES.md",
+      "size": 5947,
+      "sha256": "97bf26ab4c301ee0124667baecc906af6a59a4b5876f54eba793769aa0b06ae3"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/sources/AI_CAPABILITY_EVIDENCE_REGISTRY.csv",
+      "size": 3341,
+      "sha256": "b934ee535a388b7516283f2d74656d47f7d8f9e4c1bbab77a804bf39f7a10803"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/sources/DEPENDENCY_MANIFEST.json",
+      "size": 422,
+      "sha256": "7f3c8e651cda6c7c67df53bbad73f3df25beddb594908ce0a28bfdfc9d3377dc"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/sources/QAC_FIXTURE_SOURCE_PROFILE.json",
+      "size": 856,
+      "sha256": "ed40ca99d8b8aa1a4686eec13701ae0c115267c9b43642d706ffe5f08818e1c5"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/sources/README_AI_CAPABILITY_EVIDENCE.md",
+      "size": 449,
+      "sha256": "eb9c6b17c749da751b1fbac192848cb22e03cdf92162f4f5f80e3fbdcb783054"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/sources/TANZIL_SOURCE_PROFILE.json",
+      "size": 1314,
+      "sha256": "3a8d0ee7cafdc710f8c7ec74c35e938e668ba8fe1691437ad3971885790e5388"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/sources/acquisition/README.md",
+      "size": 574,
+      "sha256": "7c2f20566e740e8f0fd606295a6b55a4e4812bbb880a0b5c60aaed265523c7a6"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/sources/datasets/Synonyms Dataset(1).xlsx",
+      "size": 306625,
+      "sha256": "a8622546d057f60d2cee0db3b8fdc79cf30303db6ae83001be1634215bb00035"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/sources/external-dataset-registry/SYNONYMS_DATASET_PROFILE.json",
+      "size": 643,
+      "sha256": "d436016d8270cad234cd950d7a1c64a55c73be88890a79049476c6ad8a883853"
+    },
+    {
+      "path": "01_CANONICAL_BASE/Quran_Lisan_Complete_Package_V2.1.0/sources/licenses/TANZIL_RIGHTS_NOTE.md",
+      "size": 544,
+      "sha256": "032022dd29b7aef288c094f2beed929d14310eea0c29343c4b7575e1a6170aac"
+    },
+    {
+      "path": "02_CURRENT_OWNER_DIRECTIVES/00_POST_V2_1_OWNER_DIRECTIVES.md",
+      "size": 1659,
+      "sha256": "971c22844223bc7122b36e3de51af7b9811d6c6c659a091a27adfe3c271b997d"
+    },
+    {
+      "path": "02_CURRENT_OWNER_DIRECTIVES/01_GOVERNED_CAPTURE_CURRENT_POLICY.md",
+      "size": 943,
+      "sha256": "590ef68e0b7c8fc7488ea9e46d7a9808c8917ff7ec3e3006ab97fd78e3d21dda"
+    },
+    {
+      "path": "02_CURRENT_OWNER_DIRECTIVES/02_ROOT_MEANING_UNIVERSAL_PRESENCE.md",
+      "size": 1732,
+      "sha256": "dc9ff29e06eed58f44e418d3fdd9d96152a31e4bf97c545c2011eed211228a4f"
+    },
+    {
+      "path": "02_CURRENT_OWNER_DIRECTIVES/03_DESCRIPTIVE_KNOWLEDGE_BEFORE_SEMANTIC_REASONING.md",
+      "size": 12748,
+      "sha256": "46c6cb91d275a2ecdbac56c0c32bd318dddc2aa18e6d1386c6407642db63f731"
+    },
+    {
+      "path": "02_CURRENT_OWNER_DIRECTIVES/04_EXTERNAL_HYPOTHESIS_TESTING_CURRENT_POLICY.md",
+      "size": 12104,
+      "sha256": "c233009187ba9f42f399bef27006179a356a39e18f1308cc11fd874e2fb2c5fb"
+    },
+    {
+      "path": "02_CURRENT_OWNER_DIRECTIVES/05_TERMINOLOGY_CLARITY_DELTA.md",
+      "size": 1496,
+      "sha256": "68c9c6cb7a2a60ab8d8b5a1f959c464fe4993815d0e192a31acbf8f5c2191c1f"
+    },
+    {
+      "path": "03_PRE_ANALYSIS/00_PROGRAM_STATUS.md",
+      "size": 593,
+      "sha256": "04649c9a9c92e1fab246360e7beff77f0a6e22083233e10860b2a97f10b4fe27"
+    },
+    {
+      "path": "03_PRE_ANALYSIS/01_PRE_ANALYSIS_FOUNDATION_PROGRAM_PROPOSAL.md",
+      "size": 6712,
+      "sha256": "416ba9e13adf6cffbb6ecc2e98cbd36d68b66a98c5e3dbd991479c5a04411ea3"
+    },
+    {
+      "path": "03_PRE_ANALYSIS/02_ROUTE_CARDS.md",
+      "size": 5464,
+      "sha256": "166699d9966924717c94d2e0915bbefc8a06de336a17be66ca70105786f74035"
+    },
+    {
+      "path": "03_PRE_ANALYSIS/03_OPEN_OWNER_DECISIONS.md",
+      "size": 2453,
+      "sha256": "22b44e5094895811db7e4b715cb596e2a00db4d817ea67dc443f7cb447004e6f"
+    },
+    {
+      "path": "03_PRE_ANALYSIS/04_READINESS_CHECKLIST.md",
+      "size": 1361,
+      "sha256": "7a6d85a55d14ca0ff1659a9529453eca72e15fe96ae98e40acec80782995af8c"
+    },
+    {
+      "path": "03_PRE_ANALYSIS/05_CURRENT_OPEN_DECISIONS_DISTILLED.md",
+      "size": 1480,
+      "sha256": "a884e99bf922edde4f4858e97cafba59c10a094ca790f1aa0d89240c80b1f139"
+    },
+    {
+      "path": "04_RUNTIME_PROMPTS/CURRENT_LISAN_METHODOLOGY_PROMPT.md",
+      "size": 8565,
+      "sha256": "aabd36f64eb4a07ad3b59f4b0784c6a523931bef59b720111ee35279759913e9"
+    },
+    {
+      "path": "04_RUNTIME_PROMPTS/CURRENT_SEMANTIC_CAMPAIGN_PROMPT.md",
+      "size": 6731,
+      "sha256": "3bdaa2c26cbed86bea3e17e57ef80910fe82a5add857402cf6be0e6ac99b1822"
+    },
+    {
+      "path": "04_RUNTIME_PROMPTS/provenance/PREVIOUS_LISAN_METHODOLOGY_PROMPT.md",
+      "size": 32220,
+      "sha256": "8d79adf100019974a1ba3c9917bc8a9c6486245727ace38afd31134853ab243a"
+    },
+    {
+      "path": "04_RUNTIME_PROMPTS/provenance/PREVIOUS_SEMANTIC_CAMPAIGN_PROMPT.md",
+      "size": 25177,
+      "sha256": "8e855f7d980b6f8591a3b7f5bc4c9e93e25fb8379f18bc5118f2d672e950686c"
+    },
+    {
+      "path": "05_REGISTRIES/MASTER_POST_V2_1_CHANGE_PROPOSALS.csv",
+      "size": 18749,
+      "sha256": "74c9caa030bb1bc57abbc09f7251a7500a33dab041c258a82b215fa0f384ae2f"
+    },
+    {
+      "path": "05_REGISTRIES/MASTER_POST_V2_1_INTAKE.csv",
+      "size": 129453,
+      "sha256": "cf1629aaace97f38b5fd48f162a023c74e85f7c9651f41cd6896c6ecf44e51fc"
+    },
+    {
+      "path": "05_REGISTRIES/MASTER_POST_V2_1_METHODOLOGY_FINDINGS.csv",
+      "size": 6364,
+      "sha256": "5547c043077557752bdeef68a5a50e457c25c770d316805ebdcc016c152905dc"
+    },
+    {
+      "path": "05_REGISTRIES/MASTER_POST_V2_1_OPEN_QUESTIONS.csv",
+      "size": 2643,
+      "sha256": "e18e22c444255fa711a0767fd9b3041a53b590684871adb5f2324897adb97765"
+    },
+    {
+      "path": "05_REGISTRIES/MASTER_SUPERSESSION_MAP.csv",
+      "size": 1833,
+      "sha256": "0f329bf6c188607332a6c9874a1b531ff26ebf6b432571b09b719a2ece2da177"
+    },
+    {
+      "path": "05_REGISTRIES/OPEN_QUESTIONS_PATCH_FROM_CAPTURE_APPLIED.csv",
+      "size": 3063,
+      "sha256": "874236fae7d99c4840f9cd82d1d5aacda033ed3511911408e2162a79c5a96a43"
+    },
+    {
+      "path": "05_REGISTRIES/SOURCE_PACKAGE_IDENTITIES.csv",
+      "size": 1349,
+      "sha256": "25f87d99f17e3b3200ff9b6ac3bb193f8c2c56f90bef60735fca3669fe24b832"
+    },
+    {
+      "path": "06_RESEARCH_REFERENCES/Lisan_Quran_Heritage_Comparative_Study_v1.0.docx",
+      "size": 49431,
+      "sha256": "549308065a4e9ae4b1f3fefac0f4a358398d918f85ca005edd0ffec3e046b48e"
+    },
+    {
+      "path": "06_RESEARCH_REFERENCES/Lisan_Quran_Heritage_Comparative_Study_v1.0.md",
+      "size": 32107,
+      "sha256": "324dadf6cde6ec9dd51b54667fff377f143f828cb32b76146b1c40d357ea2027"
+    },
+    {
+      "path": "06_RESEARCH_REFERENCES/README.md",
+      "size": 708,
+      "sha256": "5809cf3e2687c756ce237ba8fb7841566f63ffdacedfc051b035e8f015df6dd4"
+    },
+    {
+      "path": "07_ACCEPTANCE/DOCX_QA.txt",
+      "size": 208,
+      "sha256": "692719edfb0179a37fcc47068a4a991129c81265a57ed37b2f005183b866e270"
+    },
+    {
+      "path": "07_ACCEPTANCE/MASTER_TEST_CATALOG.csv",
+      "size": 1251,
+      "sha256": "abceea96f7a752e44708765bc78466069e28c534a1811163c49675be8c42b230"
+    },
+    {
+      "path": "07_ACCEPTANCE/RECONCILIATION_REPORT.md",
+      "size": 1944,
+      "sha256": "d5d27dfa37a574ba2e0fda082fe8f8327bcf78744900b177cb0ea70dfcaa453d"
+    },
+    {
+      "path": "07_ACCEPTANCE/V21_EXPECTED_FILE_HASHES.csv",
+      "size": 26560,
+      "sha256": "4bf2b19fff96b2a25008f5f6e9e4364b7e4fc02851cc75a3fd60081810dcdc87"
+    },
+    {
+      "path": "07_ACCEPTANCE/validate_master_package.py",
+      "size": 3178,
+      "sha256": "479f817b7e032f34f54b420f11911ccc2bc4abad16a575912134f73c9415bf74"
+    },
+    {
+      "path": "90_ARCHIVE/HISTORICAL_PACKAGES/Quran_Lisan_Final_Release_Package_v1.0.0.zip",
+      "size": 183466,
+      "sha256": "a5ff96d094ea6d5836a2206dd7bb88570140bd41fbef41842f5523bfc3c8e287"
+    },
+    {
+      "path": "90_ARCHIVE/HISTORICAL_PACKAGES/Quran_Lisan_Implementation_Closure_Pack_v1.0.1.zip",
+      "size": 7854536,
+      "sha256": "e5629a6b8e23cb7fa98b1b0247ffad4a456e9504bb38261ee8889b917031a88a"
+    },
+    {
+      "path": "90_ARCHIVE/HISTORICAL_PACKAGES/Quran_Lisan_Initial_Reference_Package_v0.9.0.zip",
+      "size": 137719,
+      "sha256": "f2802d4af91afb32e8f542589eda91a5a28895fab6c19d9e805d5f932f89c3f1"
+    },
+    {
+      "path": "90_ARCHIVE/ORIGINAL_PACKAGES/Quran_Lisan_Complete_Package_V2.0.0.zip",
+      "size": 5975572,
+      "sha256": "98dd950f10268b79e1a685d6100deb4113fa1cb342455d4acd17ca3ffd1cc8c0"
+    },
+    {
+      "path": "90_ARCHIVE/ORIGINAL_PACKAGES/Quran_Lisan_Complete_Package_V2.1.0.zip",
+      "size": 3745763,
+      "sha256": "2ca0ca69e441171dd148a85441cdd6428f37173c4b433abddee09a35a558778d"
+    },
+    {
+      "path": "90_ARCHIVE/ORIGINAL_PACKAGES/Quran_Lisan_External_Source_Testing_Capture_Addendum_v1.0.0.zip",
+      "size": 56171,
+      "sha256": "7849863f6ec20e1d710cc303fb4bd611cccaf89f22f2496a1599ded526ed830e"
+    },
+    {
+      "path": "90_ARCHIVE/ORIGINAL_PACKAGES/Quran_Lisan_Governed_Capture_Applied_2026-09-06.zip",
+      "size": 58105,
+      "sha256": "3f1815be1dc2ebd2940207c418abec4b103d7db276c84d001cc203721c8fc5b7"
+    },
+    {
+      "path": "90_ARCHIVE/ORIGINAL_PACKAGES/Quran_Lisan_Pre_Analysis_Foundation_Program_Capture_v1.0.0.zip",
+      "size": 72824,
+      "sha256": "54afb558adb349b4a03a89d6b5ae98acd9d3d40f781014cbb558a28ce8d25177"
+    },
+    {
+      "path": "90_ARCHIVE/ORIGINAL_PACKAGES/Quran_Lisan_V2.1_Governed_Intent_Capture_Addendum_v1.0.0.zip",
+      "size": 88381,
+      "sha256": "60ca67e6099c6062237c3286bea2fdb203c306470217a0b21e88b1e9c44775ea"
+    },
+    {
+      "path": "90_ARCHIVE/ORIGINAL_STANDALONE/LISAN_Semantic_Campaign_Prompt_previous.md",
+      "size": 25177,
+      "sha256": "8e855f7d980b6f8591a3b7f5bc4c9e93e25fb8379f18bc5118f2d672e950686c"
+    },
+    {
+      "path": "90_ARCHIVE/ORIGINAL_STANDALONE/Lisan_Quran_Heritage_Comparative_Study_v1.0.docx",
+      "size": 49431,
+      "sha256": "549308065a4e9ae4b1f3fefac0f4a358398d918f85ca005edd0ffec3e046b48e"
+    },
+    {
+      "path": "90_ARCHIVE/ORIGINAL_STANDALONE/Lisan_Quran_Heritage_Comparative_Study_v1.0.md",
+      "size": 32107,
+      "sha256": "324dadf6cde6ec9dd51b54667fff377f143f828cb32b76146b1c40d357ea2027"
+    },
+    {
+      "path": "90_ARCHIVE/ORIGINAL_STANDALONE/PROMPT_الحاكم_السابق.md",
+      "size": 32220,
+      "sha256": "8d79adf100019974a1ba3c9917bc8a9c6486245727ace38afd31134853ab243a"
+    },
+    {
+      "path": "90_ARCHIVE/ORIGINAL_STANDALONE/مبدأ_بناء_المعرفة_الوصفية_الصلبة.md",
+      "size": 12748,
+      "sha256": "46c6cb91d275a2ecdbac56c0c32bd318dddc2aa18e6d1386c6407642db63f731"
+    },
+    {
+      "path": "Quran_Lisan_Master_Integrated_Package_v1.0.0.docx",
+      "size": 39986,
+      "sha256": "26ec6dd4434c57238ac39b55dc53fbf717a059005ea79efc5f59b69847ec6257"
+    },
+    {
+      "path": "README.md",
+      "size": 332,
+      "sha256": "c27ea098721f234e8f3e8231930fdc964b00da9d840360947072f2f9629301b2"
+    }
+  ]
+}

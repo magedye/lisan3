@@ -1,0 +1,41 @@
+{
+  "$defs": {
+    "SourceClass": {
+      "enum": [
+        "QURAN_TEXT",
+        "STRUCTURAL",
+        "EXTERNAL_TRADITION",
+        "EXTERNAL_LINGUISTIC",
+        "EXPERIMENTAL_DATASET",
+        "MODEL_MEMORY",
+        "PRIOR_RESULT"
+      ],
+      "title": "SourceClass",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "run_id": {
+      "title": "Run Id",
+      "type": "string"
+    },
+    "query": {
+      "title": "Query",
+      "type": "string"
+    },
+    "source_classes": {
+      "items": {
+        "$ref": "#/$defs/SourceClass"
+      },
+      "title": "Source Classes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "run_id",
+    "query"
+  ],
+  "title": "RetrieveExternalSourcesRequest",
+  "type": "object"
+}

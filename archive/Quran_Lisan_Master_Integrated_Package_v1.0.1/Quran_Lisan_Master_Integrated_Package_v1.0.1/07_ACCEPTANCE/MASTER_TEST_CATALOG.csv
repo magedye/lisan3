@@ -1,0 +1,11 @@
+﻿test_id,name,acceptance,severity
+MST-001,V2.1 base byte preservation,Hashes of all files in master 01_CANONICAL_BASE match extracted uploaded V2.1 source,HARD
+MST-002,No assistant proposal silently accepted,Post-V2.1 intake records from ASSISTANT cannot be ACCEPTED without approval_ref,HARD
+MST-003,Universal root presence in current prompt,Current methodology prompt contains universal all-occurrence criterion and no MULTIPLE_LEXICAL_UNITS final outcome,HARD
+MST-004,Descriptive knowledge before semantic reasoning,Current prompt and first Codex request require deterministic descriptive profile before semantic inference,HARD
+MST-005,External hypothesis authority boundary,Current docs allow hypothesis/test use but prohibit scholar/source authority,HARD
+MST-006,No uncalibrated numeric confidence,Current active prompts prohibit numeric confidence before calibration,HARD
+MST-007,Archive source identity,All archived source packages have SHA-256 recorded,HARD
+MST-008,First request scope,"First Codex request explicitly excludes large-scale semantic analysis, push/merge/release, unrelated redesign",HARD
+MST-009,Open proposals remain open,P1..P8 and full dual-lane are not declared canonical in Master Authority/current status,HARD
+MST-010,Non-negotiable root semantic unity directive,Owner directive file exists and active prompt states ROOT_SEMANTIC_UNITY = NON_NEGOTIABLE; no majority substitute or terminal unrelated multiple-root-meaning escape is allowed for a confirmed single root,HARD

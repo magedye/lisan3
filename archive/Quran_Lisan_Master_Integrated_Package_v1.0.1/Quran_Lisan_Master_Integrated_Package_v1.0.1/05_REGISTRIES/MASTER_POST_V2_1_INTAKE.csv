@@ -1,0 +1,1207 @@
+﻿_source_package,intake_id,parent_intake_id,source_actor,authority_level,source_reference,captured_at,raw_statement,raw_statement_sha256,normalized_statement,item_type,scope,status,disposition,implementation_state,target_refs_json,related_ids_json,approval_ref,supersedes_ids_json,superseded_by_ids_json,rationale,verification_refs_json
+capture_addendum,INT-BOOT-001,,OWNER,OWNER_DIRECTIVE,OWNER_DIRECTIVE_2026-09-06_GOVERNED_CAPTURE,2026-09-06T01:30:00+03:00,عندما أقدم طلبات ونقاطًا وأفكارًا، وكذلك عندما يقدم المساعد أفكارًا ومقترحات ونقاطًا، يجب ضمان تسجيلها وتثبيتها بالتصنيف والموضع المناسب وعدم إهمالها أو تجاوزها.,54cb46a3218878b24b5dce6c3d20229b8ebd99ebbbd55f05a421115adac098a9,اعتماد حلقة محكومة لالتقاط كل نقطة جوهرية وتصنيفها وربطها بمصير وموضع قابل للتتبع.,OWNER_DIRECTIVE,PROJECT_GOVERNANCE,CLOSED,ACCEPTED,IMPLEMENTED,"[""00_ADDENDUM_AUTHORITY.md"", ""01_GOVERNED_INTENT_AND_KNOWLEDGE_CAPTURE_LOOP.md"", ""integration/registry-patches/CONTROL_REGISTRY_PATCH.csv"", ""integration/registry-patches/REQUIREMENTS_REGISTRY_PATCH.csv""]",[],,[],[],Owner-authorized addendum creation.,"[""evidence/ADDENDUM_SELF_TESTS.txt""]"
+capture_applied,INT-OWN-FND-001,,OWNER,OWNER_PROPOSAL,conversation:owner:foundational-premises,2026-09-06T02:30:00+03:00,هناك مقترح مهم وهو ضرورة تحديد وتقديم البديهيات والاساسيات والافتراضات التي يتم الاعتماد عليها في منهجية لسان القران قبل البدء بتحليل الجذور فماذا تقترح,ec418faaf4b3bd53367802190a083785dbcf582830a6d9ec59deea11ffe99cb7,تحديد وتقديم المرتكزات والبديهيات والافتراضات التي يعتمد عليها منهج لسان القرآن قبل تحليل الجذور.,PROPOSAL,FOUNDATIONAL_METHODOLOGY,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv""]",[],,[],[],Owner-origin proposal; exact structure and wording remain to be approved.,[]
+capture_applied,INT-OWN-TERM-001,,OWNER,OWNER_DIRECTIVE,conversation:owner:terminology-clarity,2026-09-06T02:30:00+03:00,اشعر ان مفردة دلالة غير واضح احيانا ... افضل عدم استخدام الفاظ غير قرانية وغير قاطعة في معناها,054b70cd216dbb602d4a74d4168b9d89ad9875435d4054ccba0654c88c9416ea,تقليل أو تجنب الألفاظ المنهجية الغامضة أو التقنية غير الواضحة، ومنها «دلالة» عندما تلتبس و«الوحدة المعجمية»، وتفضيل ألفاظ عربية واضحة وقاطعة قدر الإمكان.,TERMINOLOGY,LANGUAGE_GOVERNANCE,CLOSED,ACCEPTED,PENDING,"[""V2.1:reference/02_TERMINOLOGY_AND_LANGUAGE_GOVERNANCE.md"", ""V2.1:registries/TERMINOLOGY_REGISTRY.csv""]",[],,[],[],Explicit owner terminology directive.,[]
+capture_applied,INT-OWN-CAMP-001,,OWNER,OWNER_DIRECTIVE,conversation:owner:large-scale-root-campaign,2026-09-06T02:30:00+03:00,اريدك ان تقدم طريقة مناسبة لكي اجعل وكيل الذكاء CODEX يقوم باختيار اكبر عدد ممكن من المفردات او الجذور من القران الكريم ثم يقوم بتطبيق منهجية لسان القران بشكل كامل ودقيق ... مع تسجيل العوائق والانحرافات والدروس وبناء قاعدة بيانات للنتائج والثقة,91f0dc337f1ee2ebd65c38ae10c82f81d1a2f7034fc20de18f0987a259f67d17,إنشاء حملة واسعة قابلة للاستمرار لتحليل أكبر عدد عملي من الجذور بمنهج لسان القرآن، مع حفظ النتائج والثقة والعوائق والدروس ومقترحات تحسين المنهج.,REQUIREMENT,SEMANTIC_CAMPAIGN,CLOSED,ACCEPTED,PENDING,"[""PROPOSED:campaign/SEMANTIC_DISCOVERY_AND_METHODOLOGY_CALIBRATION_CAMPAIGN.md"", ""V2.1:reference/16_IMPLEMENTATION_STANDARDS_AND_ROADMAP.md"", ""V2.1:reference/12_DATA_MEMORY_AND_TRACEABILITY_MODEL.md"", ""V2.1:contracts/schemas/RootResearchArtifact.schema.json""]",[],,[],[],Explicit owner project objective; implementation design remains pending.,[]
+capture_applied,INT-OWN-ROOT-001,,OWNER,OWNER_DIRECTIVE,conversation:owner:universal-root-presence,2026-09-06T02:30:00+03:00,جميع مواضع واستعمالات الجذر لابد ان يظهر فيها المفهوم الجذري او المعنى الجذري او النواة الدلالية ... وينبغي توضيح مرجعية ومبرر هذا الامر وانه ناتج عن معنى عربي ومبين و غير ذي عوج ...,30d35328761258a7a8176e935378cdc3ed692526b765b2318d1dfd0c9b1dbbcc,ما يثبت للجذر من معنى يجب أن يظهر أثره في جميع مواضعه واستعمالاته الثابتة الانتماء إليه؛ ويُرفع ذلك إلى معيار حاكم صارم مع بيان مرجعيته من عربي مبين وغير ذي عوج وقابلية اللسان المنضبط للاستقراء.,METHODOLOGY_PRINCIPLE,ROOT_CONCEPT,CLOSED,ACCEPTED,PENDING,"[""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md"", ""V2.1:acceptance/TEST_CATALOG.csv"", ""V2.1:acceptance/TRACEABILITY_MATRIX.csv""]",[],,[],[],Latest explicit owner directive; it supersedes the conflicting allowance that a confirmed single root may legitimately lack a common root meaning.,[]
+capture_applied,INT-FND-001,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L1-L13,2026-09-06T02:30:00+03:00,"أقترح أن يصبح هذا **مرحلة إلزامية تسبق أي تحليل جذري**، لكن بصورة خفيفة وواضحة حتى لا نعيد تضخم الحوكمة.
+
+الأنسب هو إضافة وثيقة حاكمة واحدة اسمها مثلًا:
+
+# **دستور المرتكزات والبديهيات والافتراضات التأسيسية لمنهج لسان القرآن**
+
+`FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER`
+
+وتكون وظيفتها الإجابة قبل أي بحث على سؤال:
+
+> **ما الأشياء التي يعتبرها المنهج نقطة انطلاق؟ وما الذي يعتبره افتراضًا قابلًا للمراجعة؟ وما الذي لا يجوز افتراضه أصلًا؟**
+
+وهذا مهم جدًا لأن أي تحليل للجذور يتأثر حتمًا بما يحمله الباحث أو النموذج من مقدمات، حتى لو لم يصرح بها.",3796e13cdff700430aaa1a3e2ca5f0fe06c13aa345772db1a8ef955c797087eb,إنشاء دستور تأسيسي يصرح بما يعد نقطة انطلاق، وما هو افتراض قابل للمراجعة، وما لا يجوز افتراضه.,PROPOSAL,FOUNDATIONAL_METHODOLOGY,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv""]","[""INT-OWN-FND-001""]",,[],[],,[]
+capture_applied,INT-FND-002,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L15-L27,2026-09-06T02:30:00+03:00,"## أولًا: يجب عدم جمع كل شيء تحت اسم «بديهيات»
+
+أقترح الفصل إلى خمس طبقات:
+
+| الطبقة                   | معناها                                         | هل تقبل المراجعة؟           |
+| ------------------------ | ---------------------------------------------- | --------------------------- |
+| **المرتكزات النصية**     | ما ينطلق منه المشروع من أوصاف القرآن وتصريحاته | ثابتة داخل المنهج           |
+| **البديهيات المنهجية**   | قواعد تأسيسية تحكم كيفية البحث                 | لا تتغير أثناء البحث العادي |
+| **الافتراضات التشغيلية** | افتراضات ضرورية للعمل لكنها قابلة للتعديل      | نعم                         |
+| **الفرضيات البحثية**     | أفكار يجب اختبارها بالأدلة                     | نعم، وقد ترفض               |
+| **ما لا يجوز افتراضه**   | أمور يمنع المنهج اتخاذها نقطة انطلاق           | ثابتة كحدود منهجية          |
+
+وهذا التفريق بالغ الأهمية.",269d832ec9063c3775bb04facff8fb1556ff2f5ad373fc580163f42bd1fdd5bb,فصل المقدمات إلى: مرتكزات نصية، بديهيات منهجية، افتراضات تشغيلية، فرضيات بحثية، وما لا يجوز افتراضه.,PROPOSAL,FOUNDATIONAL_METHODOLOGY,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv""]","[""INT-OWN-FND-001""]",,[],[],,[]
+capture_applied,INT-FND-003,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L37-L44,2026-09-06T02:30:00+03:00,"### أ. القرآن «بلسان عربي مبين»
+
+ويترتب منهجيًا على ذلك البحث عن:
+
+* قابلية الدلالة للبيان.
+* انتظام استعمال الألفاظ والتراكيب.
+* إمكانية الاستقراء من الاستعمال القرآني نفسه.
+* عدم جعل الغموض أو التناقض هو الافتراض الأول.",289229453083f316522dc868a3a26b47d7d244625cfadb2c33f9b723a79ecad5,من «لسان عربي مبين» يُبحث عن قابلية كشف معاني الألفاظ والتراكيب وانتظام الاستعمال وإمكان الاستقراء الداخلي، مع عدم جعل الغموض أو التناقض نقطة البداية.,METHODOLOGY_PRINCIPLE,FOUNDATIONAL_TEXTUAL_PREMISE,CLOSED,SUPERSEDED,NOT_APPLICABLE,"[""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv""]",[],,[],"[""INT-TERM-003"", ""INT-TERM-004""]","The underlying premise remains open, but the wording «قابلية الدلالة للبيان» is superseded by the later terminology clarification.",[]
+capture_applied,INT-FND-004,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L46-L58,2026-09-06T02:30:00+03:00,"### ب. «قرآنًا عربيًا غير ذي عوج»
+
+يُعامل ذلك باعتباره دافعًا للبحث عن:
+
+* الاتساق.
+* انتظام العلاقات الدلالية.
+* تفسير الاختلاف الظاهري قبل نسبة الاضطراب إلى النص.
+
+ولكن يجب صياغة قاعدة دقيقة:
+
+> **الاتساق المتوقع لا يجيز اختراع توافق مصطنع بين المواضع.**
+
+إذا بقي اختلاف غير مفسر، يسجل `UNRESOLVED`.",a3091745dfd05652ec1ca6b88a39f95de514aed4700318571f51bc57c7522e20,من «غير ذي عوج» يُبحث عن الاتساق وانتظام العلاقات، مع منع اختراع توافق مصطنع؛ وما لا يحل يبقى غير محسوم.,METHODOLOGY_PRINCIPLE,FOUNDATIONAL_TEXTUAL_PREMISE,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv"", ""V2.1:reference/03_METHODOLOGY_AND_EVIDENCE_CONSTITUTION.md"", ""V2.1:reference/04_SEMANTIC_ANALYSIS_MODEL.md""]","[""INT-TERM-011""]",,[],[],,[]
+capture_applied,INT-FND-005,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L60-L62,2026-09-06T02:30:00+03:00,"### ج. «قرآنًا عربيًا لعلكم تعقلون»
+
+يستفاد منه منهجيًا أن الخطاب قابل للتعقل والفحص والاستدلال، لا أنه مغلق على معنى لا يمكن الوصول إليه إلا بمصدر خارجي.",daa41b1bd7f8d1c5c5345ce575330b401f2761319ed1592178257a8073c28bfe,من «لعلكم تعقلون» يُعامل الخطاب بوصفه قابلًا للتعقل والفحص والاستدلال، وليس مغلقًا على مصدر خارجي.,METHODOLOGY_PRINCIPLE,FOUNDATIONAL_TEXTUAL_PREMISE,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv""]",[],,[],[],,[]
+capture_applied,INT-FND-006,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L64-L72,2026-09-06T02:30:00+03:00,"### د. «ولو كان من عند غير الله لوجدوا فيه اختلافًا كثيرًا»
+
+ينتج عنه افتراض منهجي قوي بالاتساق الداخلي، مع ضرورة التفريق بين:
+
+* اختلاف حقيقي.
+* تنوع دلالي.
+* اختلاف المقام.
+* اختلاف الصيغة أو التركيب.
+* تطور أو تخصيص المعنى الموضعي.",8bd709bb38e33cd0bf3c2611bd5d9e19d7b7d5976bb4eaa7bd12d1c56967dc00,من «لو كان من عند غير الله...» يُتخذ الاتساق الداخلي مرتكزًا مع التفريق بين الاختلاف والتنوع والمقام والصيغة والتركيب.,METHODOLOGY_PRINCIPLE,FOUNDATIONAL_TEXTUAL_PREMISE,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv""]",[],,[],[],,[]
+capture_applied,INT-FND-007,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L76-L90,2026-09-06T02:30:00+03:00,"# 2. معنى «عربي»
+
+هذه النقطة تحتاج تثبيتًا صريحًا، لكن أنصح بصياغتها بدقة.
+
+بدل كتابة:
+
+> عربي ليست قومية.
+
+فقط، نجعلها:
+
+> **يعامل منهج لسان القرآن وصف «عربي» بوصفه وصفًا للسان الذي جاء به الخطاب وخصائصه البيانية والدلالية، وليس بوصفه أساسًا عرقيًا أو قوميًّا لتحديد المعنى.**
+
+ثم نضيف:
+
+> الانتماء القومي للمتكلم أو الباحث لا يمنحه سلطة دلالية.",3c774755cf0fca1ade24f447b98082ef534c69fed7b16cf0bbe897bf81f31be0,يعامل وصف «عربي» وصفًا للسان وخصائصه لا أساسًا عرقيًا أو قوميًّا للمعنى، ولا يمنح الانتماء القومي سلطة دلالية.,METHODOLOGY_PRINCIPLE,FOUNDATIONAL_TEXTUAL_PREMISE,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv"", ""V2.1:reference/02_TERMINOLOGY_AND_LANGUAGE_GOVERNANCE.md"", ""V2.1:registries/TERMINOLOGY_REGISTRY.csv""]",[],,[],[],,[]
+capture_applied,INT-FND-008,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L100-L106,2026-09-06T02:30:00+03:00,"### البديهية 1 — القرآن هو مادة الاستقراء الأولى
+
+عند البحث الداخلي:
+
+> الاستعمال القرآني نفسه هو نقطة البداية للاكتشاف الدلالي.
+
+ولا يبدأ البحث بتعريف معجمي ثم يبحث عن آيات تلائمه.",599c7fc218aeb32215ba9a35dab7fc1d57a0191bb779e4eafbb0bb25f464970a,الاستعمال القرآني هو مادة الاستقراء الأولى في البحث الداخلي، ولا يبدأ البحث بتعريف خارجي جاهز.,METHODOLOGY_PRINCIPLE,INTERNAL_INDUCTION,CLOSED,ACCEPTED,VERIFIED,"[""V2.1:reference/03_METHODOLOGY_AND_EVIDENCE_CONSTITUTION.md"", ""V2.1:reference/04_SEMANTIC_ANALYSIS_MODEL.md""]",[],V2.1_EXISTING_AUTHORITY,[],[],Already governed in V2.1 internal-induction/source-isolation contracts.,[]
+capture_applied,INT-FND-009,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L110-L116,2026-09-06T02:30:00+03:00,"### البديهية 2 — المبنى والدلالة ليسا شيئًا واحدًا
+
+الجذر، الصيغة، التركيب، السياق ليست طبقة واحدة.
+
+لذلك:
+
+> **الجذر ≠ الصيغة ≠ التركيب ≠ السياق ≠ المعنى الموضعي**",1b5479e881a67a12419cbff9ded67a45136b7c5f64a15d84d58b106db2bcba11,الجذر والصيغة والتركيب والسياق والمعنى في الموضع طبقات متمايزة ولا يجوز خلطها.,METHODOLOGY_PRINCIPLE,LAYER_SEPARATION,CLOSED,ACCEPTED,VERIFIED,"[""V2.1:reference/03_METHODOLOGY_AND_EVIDENCE_CONSTITUTION.md"", ""V2.1:reference/04_SEMANTIC_ANALYSIS_MODEL.md"", ""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md""]",[],V2.1_EXISTING_AUTHORITY,[],[],Already central to V2.1 semantic derivation and root concept contracts.,[]
+capture_applied,INT-FND-010,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L120-L124,2026-09-06T02:30:00+03:00,"### البديهية 3 — اختلاف المبنى يستدعي البحث ولا يثبت الفرق
+
+هذه من أهم قواعد المشروع:
+
+> **اختلاف المبنى ينشئ فرضية بوجود أثر دلالي يستحق البحث، لكنه لا يثبت ذلك الأثر ولا يجيز اختراعه.**",40c50c077d09c7ba5ca53c45ac8eb69465e3191f92f291d1affd4474eb76b055,اختلاف المبنى ينشئ فرضية بوجود أثر يستحق البحث ولا يثبت الفرق ولا يجيز اختراعه.,METHODOLOGY_PRINCIPLE,FORM_DIFFERENCE,CLOSED,ACCEPTED,VERIFIED,"[""V2.1:reference/03_METHODOLOGY_AND_EVIDENCE_CONSTITUTION.md"", ""V2.1:reference/04_SEMANTIC_ANALYSIS_MODEL.md""]",[],V2.1_EXISTING_AUTHORITY,[],[],,[]
+capture_applied,INT-FND-011,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L128-L138,2026-09-06T02:30:00+03:00,"### البديهية 4 — لا ترادف تام مفترض ولا اختلاف تام مفترض
+
+لا نبدأ بقول:
+
+> هاتان المفردتان مترادفتان.
+
+ولا:
+
+> بما أنهما مختلفتان لفظًا فلا بد أن معناهما مختلف.
+
+بل نبحث.",904e59ffd0e8cf7491c75eda6991feef835d666f5f24e6590e96011d72361455,لا يفترض الترادف التام ولا الاختلاف التام مسبقًا؛ كلاهما موضوع بحث.,METHODOLOGY_PRINCIPLE,SEMANTIC_COMPARISON,CLOSED,ACCEPTED,VERIFIED,"[""V2.1:reference/03_METHODOLOGY_AND_EVIDENCE_CONSTITUTION.md"", ""V2.1:reference/04_SEMANTIC_ANALYSIS_MODEL.md""]",[],V2.1_EXISTING_AUTHORITY,[],[],,[]
+capture_applied,INT-FND-012,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L142-L152,2026-09-06T02:30:00+03:00,"### البديهية 5 — السياق يحقق الدلالة ولا يجوز أن يبتلعها
+
+السياق:
+
+* يخصص.
+* يقيد.
+* يفعّل.
+* يبرز.
+* يربط.
+
+لكنه لا يسمح بأن ننسب كل ما في السياق إلى الجذر.",7d86ffa217088ab027ea830fb3a9918ae2e442309e73f284b603aa419db54acc,السياق يخصص ويقيد ويبرز ويربط، لكنه لا يبرر نسبة كل أثر سياقي إلى الجذر.,METHODOLOGY_PRINCIPLE,CONTEXT_LAYER,CLOSED,ACCEPTED,VERIFIED,"[""V2.1:reference/03_METHODOLOGY_AND_EVIDENCE_CONSTITUTION.md"", ""V2.1:reference/04_SEMANTIC_ANALYSIS_MODEL.md"", ""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md""]",[],V2.1_EXISTING_AUTHORITY,[],[],,[]
+capture_applied,INT-FND-013,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L156-L162,2026-09-06T02:30:00+03:00,"### البديهية 6 — المعنى الموضعي مركب
+
+اعتماد الصيغة:
+
+> **المعنى الموضعي = مساهمة الجذر + الاشتقاق والتصريف + الصيغة + التركيب والأدوار + السياق والخطاب**
+
+مع التأكيد أنها خريطة تحليلية وليست معادلة حسابية.",1891e2ce04de561432efdba70a1a52b0f7d75badb33e54eb08683e3136a3d33c,المعنى في الموضع نتيجة مركبة من مساهمة الجذر وما تضيفه بقية الطبقات؛ والصيغة تحليلية لا حسابية.,METHODOLOGY_PRINCIPLE,LOCAL_MEANING,CLOSED,ACCEPTED,VERIFIED,"[""V2.1:reference/03_METHODOLOGY_AND_EVIDENCE_CONSTITUTION.md"", ""V2.1:reference/04_SEMANTIC_ANALYSIS_MODEL.md""]",[],V2.1_EXISTING_AUTHORITY,[],[],,[]
+capture_applied,INT-FND-014,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L166-L177,2026-09-06T02:30:00+03:00,"### البديهية 7 — الجذر لا يلزم أن يكون له «مرادف تعريفي»
+
+المفهوم الجذري قد يكون:
+
+* علاقة.
+* حركة.
+* تحولًا.
+* اتجاهًا.
+* حالة بنيوية.
+* نمط تفاعل.
+
+وليس بالضرورة كلمة عربية واحدة تقابل الجذر.",158b14c28586cf2115727cdfd2a7c34527d12efb7563fd4e0cdd740b4e894842,ما يثبت للجذر من معنى لا يلزم أن يكون مرادفًا واحدًا؛ قد يكون علاقة أو حركة أو تحولًا أو اتجاهًا أو بنية.,METHODOLOGY_PRINCIPLE,ROOT_CONCEPT,CLOSED,ACCEPTED,VERIFIED,"[""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md""]",[],V2.1_EXISTING_AUTHORITY,[],[],,[]
+capture_applied,INT-FND-015,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L181-L190,2026-09-06T02:30:00+03:00,"### البديهية 8 — النتيجة الأقل افتراضًا مفضلة
+
+إذا فسرت فرضية المادة كاملة بمكونات أقل، فهي أقوى مبدئيًا من فرضية تحتاج:
+
+* استثناءات كثيرة.
+* معاني غير مثبتة.
+* تغييرات حسب السياق.
+* تحميلًا زائدًا للجذر.
+
+لكن هذا **معيار ترجيح** وليس برهانًا مستقلًا.",b5b7269119972e2bfd2275b970e4d4eba3afc2eb271fbf4aa29bc45fd1d10a13,يفضل المرشح الأقل افتراضًا والأقل استثناءً عند تساوي القدرة التفسيرية؛ الاقتصاد معيار ترجيح لا برهان مستقل.,METHODOLOGY_PRINCIPLE,HYPOTHESIS_RANKING,CLOSED,ACCEPTED,VERIFIED,"[""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md""]",[],V2.1_EXISTING_AUTHORITY,[],[],,[]
+capture_applied,INT-FND-016,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L194-L204,2026-09-06T02:30:00+03:00,"### البديهية 9 — عدم الحسم نتيجة مشروعة
+
+لا يجب أن ينتج كل بحث معنى نهائيًا.
+
+قد تكون النتيجة:
+
+* مفهوم واحد مرجح.
+* عدة مفاهيم متنافسة.
+* وحدات معجمية متعددة.
+* عدم كفاية الأدلة.
+* `UNRESOLVED`.",c5bb517090c37e19c5734a201bf61c1862ead7b3f1be7679388b40462262b88d,عدم الحسم نتيجة صحيحة ولا يجب إجبار كل بحث على جواب نهائي.,METHODOLOGY_PRINCIPLE,EPISTEMIC_OUTCOME,CLOSED,ACCEPTED,VERIFIED,"[""V2.1:reference/03_METHODOLOGY_AND_EVIDENCE_CONSTITUTION.md"", ""V2.1:reference/04_SEMANTIC_ANALYSIS_MODEL.md"", ""V2.1:reference/13_CONFIDENCE_COMPLETENESS_VERIFICATION.md"", ""V2.1:acceptance/evals/V2_RESEARCH_OUTPUT_EVAL_CASES.json""]",[],V2.1_EXISTING_AUTHORITY,[],[],,[]
+capture_applied,INT-FND-017,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L208-L214,2026-09-06T02:30:00+03:00,"### البديهية 10 — الاتساق يجب اختباره لا افتراض النتيجة مسبقًا
+
+نتوقع اتساق القرآن، لكن:
+
+> لا يجوز تعديل البيانات أو اختراع معنى فقط للحفاظ على توقع الاتساق.
+
+هذه حماية مهمة جدًا من الاستدلال الدائري.",228e46ae9cbcccd3fc206e9a177e588a501110c934abf99e4ff94fc9e1cd6115,الصياغة «الاتساق يجب اختباره» تحتاج استبدالًا لأنها قد توحي باختبار اتساق القرآن نفسه؛ لا يجوز فرض التوافق لحماية الفرضية.,METHODOLOGY_PRINCIPLE,CONSISTENCY,CLOSED,SUPERSEDED,NOT_APPLICABLE,"[""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv"", ""V2.1:reference/03_METHODOLOGY_AND_EVIDENCE_CONSTITUTION.md"", ""V2.1:reference/04_SEMANTIC_ANALYSIS_MODEL.md""]",[],,[],"[""INT-TERM-011""]",Later wording distinguishes the premise of consistency from analytical demonstration of how it is realized.,[]
+capture_applied,INT-FND-018,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L224-L230,2026-09-06T02:30:00+03:00,"### «للجذر نواة دلالية مشتركة»
+
+لا أنصح بتسجيلها كبديهية مطلقة.
+
+الأفضل:
+
+> **نفترض مبدئيًا إمكانية وجود نواة مشتركة للجذر، ثم نختبر ذلك، ويجوز أن تنتهي الدراسة إلى عدم ثبوت مفهوم جذري موحد أو إلى تعدد الوحدات المعجمية.**",966896d6f68a33f1abad5be7ca34f6b558520b62f116e42d69080e974774f6aa,الطرح السابق جعل وجود معنى جامع للجذر افتراضًا تشغيليًا يمكن أن يفشل أو ينتهي إلى تعدد وحدات.,METHODOLOGY_PRINCIPLE,ROOT_CONCEPT,CLOSED,SUPERSEDED,NOT_APPLICABLE,"[""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md""]",[],,[],"[""INT-OWN-ROOT-001"", ""INT-ROOT-015""]","Superseded by the latest owner directive requiring universal presence for all confirmed uses of one root. Failure now means unresolved/review root attribution, not acceptance of a root with no common meaning.",[]
+capture_applied,INT-FND-019,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L236-L242,2026-09-06T02:30:00+03:00,"### «كل صيغة لها دلالة ثابتة»
+
+لا تكون بديهية.
+
+بل:
+
+> نفترض إمكانية وجود أثر منتظم للصيغة ونبحث عنه عبر الاستعمال.",9611f35a7a3231ed3c85a7ebadd928f4f50759491a767241ddd56c13a0d7329a,وجود أثر منتظم للصيغة فرضية تُختبر عبر الاستعمال، وليس بديهية بأن لكل صيغة أثرًا ثابتًا.,METHODOLOGY_PRINCIPLE,MORPHOLOGY,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv"", ""V2.1:reference/03_METHODOLOGY_AND_EVIDENCE_CONSTITUTION.md"", ""V2.1:reference/04_SEMANTIC_ANALYSIS_MODEL.md""]",[],,[],[],,[]
+capture_applied,INT-FND-020,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L246-L257,2026-09-06T02:30:00+03:00,"# 5. الفرضيات البحثية التي لا يجوز ترقيتها إلى بديهيات
+
+مثل:
+
+* الهمزة تدل دائمًا على التعدية.
+* وزن فاعل يدل دائمًا على المشاركة.
+* كل حرف زيادة يملك دلالة مستقلة.
+* كل جذر له مفهوم واحد.
+* كل لفظين مختلفين يجب أن يكون بينهما فرق جوهري.
+* كل مواضع الجذر يمكن تفسيرها بتعريف واحد.
+
+هذه كلها **فرضيات قابلة للاختبار** وليست أساسًا حاكمًا.",e0d7c757022ce1ca5ace66936ebc166bb266ea35c3377a5eddc97e1893cd15d9,لا تُرقى إلى بديهيات دعاوى مثل: الهمزة للتعدية دائمًا، فاعل للمشاركة دائمًا، لكل زيادة أثر مستقل، كل لفظين مختلفين لهما فرق جوهري.,CONTROL,ASSUMPTION_DISCIPLINE,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv"", ""V2.1:reference/03_METHODOLOGY_AND_EVIDENCE_CONSTITUTION.md"", ""V2.1:reference/04_SEMANTIC_ANALYSIS_MODEL.md""]",[],,[],[],,[]
+capture_applied,INT-FND-021,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L269-L274,2026-09-06T02:30:00+03:00,"لا نفترض أن:
+
+* معنى المعجم هو معنى القرآن.
+* معنى التفسير الموروث هو النتيجة التي يجب الوصول إليها.
+* معرفة النموذج دليل.
+* الشيوع اللغوي الحديث حجة على الاستعمال القرآني.",04773ba538d8715c513a5426c246db4126e212559ba2aecafc9662609a1ac40a,لا يفترض أن المعجم أو التفسير الموروث أو معرفة النموذج أو الشيوع الحديث حجة داخل الاستقراء القرآني.,CONTROL,SOURCE_AUTHORITY,CLOSED,ACCEPTED,VERIFIED,"[""V2.1:reference/03_METHODOLOGY_AND_EVIDENCE_CONSTITUTION.md"", ""V2.1:reference/04_SEMANTIC_ANALYSIS_MODEL.md""]",[],V2.1_EXISTING_AUTHORITY,[],[],,[]
+capture_applied,INT-FND-022,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L275-L277,2026-09-06T02:30:00+03:00,"* كل زيادة صرفية لها أثر واحد في جميع المواضع.
+* الجذر يساوي معنى المفردة.
+* معنى المفردة يساوي معنى الآية.",da0af5172d7766c87b301a0fe34c49dbde266aa0788d232abd87f501b67345e3,لا يفترض أن لكل زيادة صرفية أثرًا واحدًا، ولا أن الجذر يساوي معنى المفردة، ولا أن معنى المفردة يساوي معنى الآية.,CONTROL,LAYER_SEPARATION,CLOSED,ACCEPTED,VERIFIED,"[""V2.1:reference/03_METHODOLOGY_AND_EVIDENCE_CONSTITUTION.md"", ""V2.1:reference/04_SEMANTIC_ANALYSIS_MODEL.md"", ""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md""]",[],V2.1_EXISTING_AUTHORITY,[],[],,[]
+capture_applied,INT-FND-023,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L278-L279,2026-09-06T02:30:00+03:00,"* اختلاف اللفظ يثبت الاختلاف الدلالي.
+* التشابه يثبت الترادف.",2caef0514aefe1bba8bd0e31ec7bb2af480873db4be1707565df11bf9e4a0b69,اختلاف اللفظ لا يثبت الاختلاف في المعنى، والتشابه لا يثبت الترادف.,CONTROL,SEMANTIC_COMPARISON,CLOSED,ACCEPTED,VERIFIED,"[""V2.1:reference/03_METHODOLOGY_AND_EVIDENCE_CONSTITUTION.md"", ""V2.1:reference/04_SEMANTIC_ANALYSIS_MODEL.md""]",[],V2.1_EXISTING_AUTHORITY,[],[],,[]
+capture_applied,INT-FND-024,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L280-L281,2026-09-06T02:30:00+03:00,"* وجود نتيجة سابقة يمنع إعادة فتح البحث.
+* الاتفاق بين عدة نماذج يثبت المعنى.",bcb7d84c8c4a12e468a6ae2cf08c5d15abd195b08dfce93b8f349c347e432962,وجود نتيجة سابقة لا يمنع إعادة فتح البحث، واتفاق عدة نماذج لا يثبت المعنى.,CONTROL,PRIOR_AND_VERIFICATION,CLOSED,ACCEPTED,VERIFIED,"[""V2.1:reference/03_METHODOLOGY_AND_EVIDENCE_CONSTITUTION.md"", ""V2.1:reference/04_SEMANTIC_ANALYSIS_MODEL.md"", ""V2.1:reference/13_CONFIDENCE_COMPLETENESS_VERIFICATION.md"", ""V2.1:acceptance/evals/V2_RESEARCH_OUTPUT_EVAL_CASES.json""]",[],V2.1_EXISTING_AUTHORITY,[],[],,[]
+capture_applied,INT-FND-025,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L285-L317,2026-09-06T02:30:00+03:00,"# 7. سجل افتراضات رسمي
+
+أقترح إضافة سجل واحد فقط:
+
+`FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv`
+
+وفيه مثلًا:
+
+```text
+id
+statement
+type
+authority
+scope
+status
+testability
+revisability
+rationale
+evidence_or_basis
+methodological_effect
+risk_if_wrong
+review_trigger
+supersedes
+```
+
+وتكون `type` مثلًا:
+
+```text
+TEXTUAL_PREMISE
+METHODOLOGICAL_AXIOM
+WORKING_ASSUMPTION
+RESEARCH_HYPOTHESIS
+NON_ASSUMPTION",d963727288652bcf9ac71ef5e0ffc8f828b64c4ff4b90196a52d922b898d7221,إنشاء سجل رسمي للمرتكزات والافتراضات يميز النوع والسلطة والنطاق والقابلية للمراجعة والتأثير وخطر الخطأ ومحفز المراجعة.,PROPOSAL,FOUNDATIONAL_REGISTRY,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv""]",[],,[],[],,[]
+capture_applied,INT-FND-026,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L322-L336,2026-09-06T02:30:00+03:00,"# 8. شرط مهم جدًا: كل افتراض يجب أن يصرح بتأثيره
+
+لا يكفي أن نكتب:
+
+> القرآن متسق.
+
+بل يجب أن نكتب:
+
+```text
+methodological_effect:
+عند ظهور تعارض ظاهري، يجب أولًا اختبار اختلاف
+الصيغة والتركيب والسياق والوحدة المعجمية قبل الحكم بالتعارض.
+```
+
+وبذلك نعرف **ماذا تفعل البديهية فعليًا في المنهج**.",f2a7540885e4e74195297aff77981422e278bc623a10d5e563a68a783ad924f8,كل مرتكز/افتراض يجب أن يصرح بأثره المنهجي العملي لا أن يبقى عبارة عامة.,REQUIREMENT,FOUNDATIONAL_REGISTRY,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv""]",[],,[],[],,[]
+capture_applied,INT-FND-027,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L340-L358,2026-09-06T02:30:00+03:00,"# 9. كذلك يجب تسجيل «خطر الافتراض»
+
+هذه إضافة أراها مهمة جدًا.
+
+مثلًا:
+
+```text
+Assumption:
+يفترض وجود نواة مشتركة للجذر.
+
+Risk if wrong:
+قد يدفع الباحث إلى اختراع مفهوم عام مصطنع
+لجمع استعمالات تنتمي فعليًا إلى وحدات معجمية مختلفة.
+
+Mitigation:
+MULTIPLE_LEXICAL_UNITS و UNRESOLVED نتائج مسموحة.
+```
+
+وبهذا يصبح المنهج **واعيًا بتحيزاته التأسيسية**.",310335a92178006730982a421e07f3adc93d402b56409c5294f2c3fa44e59137,كل افتراض يجب أن يسجل خطره إن كان خطأ وآلية التخفيف، كي يكون المنهج واعيًا بتحيزاته التأسيسية.,REQUIREMENT,FOUNDATIONAL_REGISTRY,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv""]",[],,[],[],,[]
+capture_applied,INT-FND-028,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L362-L383,2026-09-06T02:30:00+03:00,"# 10. لا أوصي ببوابة ثقيلة قبل كل جذر
+
+بعد كل ما ناقشناه عن التعقيد، لا أنصح بإنشاء:
+
+`FOUNDATION_GATE`
+
+كبنية ضخمة تمر بها كل دراسة.
+
+يكفي:
+
+> كل `ResearchRun` يسجل `foundational_profile_version`.
+
+مثلًا:
+
+```text
+methodology_version: 2.2
+foundational_profile: FND-1.0
+```
+
+والنظام يتحقق فقط أن النسخة موجودة ومعتمدة.
+
+لا حاجة لأن يعيد Codex قراءة عشرات البديهيات وإثباتها في كل جذر.",df2897b84eb85403f003f1b691c145a23c1d977b943dcc69646fe889e5f6ef4b,تجنب بوابة تأسيس ثقيلة قبل كل جذر؛ يكفي ربط ResearchRun بنسخة foundational_profile والتحقق من اعتمادها.,PROPOSAL,FOUNDATIONAL_RUNTIME,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv"", ""V2.1:contracts/schemas/ResearchRun.schema.json""]",[],,[],[],,[]
+capture_applied,INT-FND-029,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L387-L417,2026-09-06T02:30:00+03:00,"# 11. لكن هناك اختبار واحد مهم قبل الحملة الكبيرة
+
+قبل تشغيل حملة مئات الجذور، يجب إجراء:
+
+## **Foundational Assumption Stress Test**
+
+نأخذ كل بديهية/افتراض ونسأل:
+
+> ماذا يحدث لو كانت هذه المقدمة غير صحيحة أو أضعف مما نتصور؟
+
+مثلًا:
+
+### افتراض:
+
+يوجد مفهوم جذري موحد.
+
+نختبر جذورًا محتملة التعدد.
+
+### افتراض:
+
+للصيغة أثر منتظم.
+
+نختبر الصيغة عبر جذور مختلفة.
+
+### افتراض:
+
+الفروق اللفظية تحمل فروقًا دلالية.
+
+نختبر أقرب الأزواج.
+
+وهذه الاختبارات قد تكشف مبكرًا أخطر تحيزات المنهج.",fbf27c4b92b1237302bd8876158e0edb441d053d90ad452b1048da36c62e4071,إجراء Foundational Assumption Stress Test قبل الحملة الواسعة لاختبار حساسية المنهج لافتراضاته التأسيسية.,EVAL_CASE,FOUNDATIONAL_VALIDATION,CLOSED,OPEN,NOT_APPLICABLE,"[""V2.1:acceptance/TEST_CATALOG.csv"", ""V2.1:acceptance/TRACEABILITY_MATRIX.csv"", ""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv""]",[],,[],[],,[]
+capture_applied,INT-FND-030,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L421-L440,2026-09-06T02:30:00+03:00,"# الهيكل الذي أوصي باعتماده
+
+قبل تحليل أي جذر تكون بنية المنهج:
+
+```text
+1. Quranic Foundational Premises
+        ↓
+2. Methodological Axioms
+        ↓
+3. Working Assumptions
+        ↓
+4. Explicit Non-Assumptions
+        ↓
+5. Research Hypotheses
+        ↓
+6. Root / Lexeme / Verse Analysis
+        ↓
+7. Falsification
+        ↓
+8. Judgment",16f4ce8c19f34dfc3820d992374272dc95994996d9c9e6f7faeaaa8cc78831a2,ترتيب البحث: مرتكزات نصية ثم بديهيات منهجية ثم افتراضات تشغيلية ثم ما لا يجوز افتراضه ثم فرضيات البحث ثم التحليل ثم الدحض ثم الحكم.,REQUIREMENT,FOUNDATIONAL_WORKFLOW,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv"", ""V2.1:reference/03_METHODOLOGY_AND_EVIDENCE_CONSTITUTION.md"", ""V2.1:reference/04_SEMANTIC_ANALYSIS_MODEL.md""]",[],,[],[],,[]
+capture_applied,INT-FND-031,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L443-L449,2026-09-06T02:30:00+03:00,"وأرى أن هذه الإضافة **مهمة جدًا قبل بدء حملة تحليل الجذور الواسعة**؛ لأنها ستجعلنا بعد ذلك قادرين على معرفة:
+
+> هل النتيجة جاءت فعلًا من القرآن؟
+
+أم:
+
+> جاءت جزئيًا من فرضية تأسيسية وضعناها نحن دون أن نشعر؟",a5004ff4c7a5314929edd9b3774fb3b43edc0ced6f88e3e1b07d2e9ef595e70f,الغرض من التصريح بالمقدمات هو كشف ما إذا كانت النتيجة جاءت من القرآن أو من مقدمة تأسيسية غير ملحوظة.,METHODOLOGY_PRINCIPLE,FOUNDATIONAL_AUDIT,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv""]",[],,[],[],,[]
+capture_applied,INT-CAM-001,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L453-L465,2026-09-06T02:30:00+03:00,"الطريقة التي أوصي بها
+
+لا نجعل وحدة العمل الأساسية «المفردة» وإنما الجذر، ثم يبحث Codex داخله جميع المشتقات والمفردات والصيغ والتراكيب والمواضع. بهذا نحصل على أصل دلالي يمكن إعادة استعماله لاحقًا في عشرات الأسئلة عن الآيات والمفردات.
+
+لكن التوسع يكون على مراحل:
+
+المرحلة	الغرض
+مسح شامل	استخراج جميع الجذور الممكن بحثها وتصنيفها، دون بحث دلالي عميق
+عينة معايرة	دراسة نحو 8–12 جذرًا متنوعة جدًا لاختبار المنهج
+مراجعة المنهج	جمع المشاكل والدروس دون تغيير المنهج أثناء الدفعة
+دفعة توسع	نحو 20–30 جذرًا
+دفعات واسعة	نحو 50 جذرًا في الدفعة أو ما تسمح به الموارد
+استكمال	الاستمرار حتى نفاد الجذور المؤهلة أو ظهور مانع منهجي عام",7e81fc0d4fd0646acfc9e1051ad3adc9aef2423b40ef6bb5acc4e0a0b5ccaf9f,استخدام الجذر كوحدة حملة أساسية، ثم التوسع من مسح شامل إلى عينة معايرة ثم دفعات أكبر حتى استنفاد الجذور المؤهلة.,PROPOSAL,SEMANTIC_CAMPAIGN,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:campaign/SEMANTIC_DISCOVERY_AND_METHODOLOGY_CALIBRATION_CAMPAIGN.md"", ""V2.1:reference/16_IMPLEMENTATION_STANDARDS_AND_ROADMAP.md""]","[""INT-OWN-CAMP-001""]",,[],[],,[]
+capture_applied,INT-CAM-002,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L467-L473,2026-09-06T02:30:00+03:00,"والقاعدة الأهم:
+
+لا تتغير المنهجية أثناء الدفعة الواحدة.
+
+إذا اكتشف الجذر السابع مشكلة في المنهج، يسجل Codex المشكلة ويقترح الحل، لكنه لا يغير المنهج ثم يعامل الجذور 8–12 بمنهج مختلف. بعد اكتمال الدفعة تراجع الاقتراحات، وإذا اعتمد تعديل ينشأ Methodology Revision جديد، ثم يعاد تشغيل مجموعة جذور مرجعية للتأكد أن التحسين لم يسبب تراجعًا.
+
+هذه النقطة وحدها مهمة جدًا؛ لأنها تحول المشروع إلى مختبر لتحسين المنهج بدل أن يصبح سلسلة إجابات غير قابلة للمقارنة.",47f2413779d01fefe82f8a3dc2c8d1b6f0c0feea45633d8151fd948e8d909b76,تجميد نسخة المنهج داخل كل دفعة؛ تجمع الملاحظات أثناءها ولا تغير قواعدها حتى مراجعة الدفعة وإنشاء Methodology Revision جديد.,METHODOLOGY_PRINCIPLE,SEMANTIC_CAMPAIGN,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:campaign/SEMANTIC_DISCOVERY_AND_METHODOLOGY_CALIBRATION_CAMPAIGN.md"", ""V2.1:reference/16_IMPLEMENTATION_STANDARDS_AND_ROADMAP.md""]",[],,[],[],,[]
+capture_applied,INT-CAM-003,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L475-L487,2026-09-06T02:30:00+03:00,"قاعدة البيانات النهائية لا ينبغي أن تحتوي «النتائج المقبولة» فقط
+
+أوصي بأربع طبقات معرفية:
+
+قاعدة النتائج البحثية: كل الجذور بما فيها STRONG, MODERATE, UNRESOLVED, REJECTED.
+
+قاعدة المعرفة المقبولة: النتائج الجذرية القوية التي اجتازت الشروط وأصبحت ACCEPTED.
+
+قاعدة تعلم المنهج: جميع المشاكل والانحرافات والدروس والاقتراحات التي اكتُشفت عبر الجذور.
+
+مجموعة التقييم الدلالي: الحالات الصعبة والأمثلة المضادة والحالات التي كشفت أخطاء في المنهج، بحيث تتحول تدريجيًا إلى اختبارات Regression دلالية.
+
+بهذا لا تضيع قيمة الجذر الذي فشلنا في حسمه؛ فقد يكون أهم من الجذر السهل في تحسين المنهج.",47d04649bfa16e36a1becad90d3493c6f0c9da533c0ee6059a71da9b8a0fef78,قاعدة الحملة يجب أن تفصل بين نتائج البحث، المعرفة المقبولة، تعلم المنهج، وحالات التقييم الدلالي.,PROPOSAL,SEMANTIC_CAMPAIGN_DATA,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:campaign/SEMANTIC_DISCOVERY_AND_METHODOLOGY_CALIBRATION_CAMPAIGN.md"", ""V2.1:reference/16_IMPLEMENTATION_STANDARDS_AND_ROADMAP.md"", ""V2.1:reference/12_DATA_MEMORY_AND_TRACEABILITY_MODEL.md"", ""V2.1:contracts/schemas/RootResearchArtifact.schema.json""]",[],,[],[],,[]
+capture_applied,INT-CAM-004,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L489-L504,2026-09-06T02:30:00+03:00,"اختيار الجذور
+
+لا أنصح بترتيبها حسب كثرة التكرار فقط. ينبغي أن يبني Codex محفظة بحث متنوعة بحسب:
+
+عدد المواضع.
+عدد المشتقات.
+تنوع الصيغ.
+تنوع التراكيب.
+تنوع المشاركين.
+وجود جيران دلاليين قريبين.
+احتمال تعدد الوحدات المعجمية.
+سهولة/صعوبة الفصل بين الجذر والسياق.
+جودة البيانات البنيوية المتاحة.
+وجود مواضع صعبة أو استثنائية.
+
+وبذلك تشمل أول دفعة جذورًا سهلة ومتوسطة وصعبة، قليلة وكثيرة المواضع، بدل دراسة عشرة جذور متشابهة.",8a07cdc7f2bbdbd6d97fdfa149befbafe7dd9eb85bfa2d0f00ba42adb65c07ec,اختيار الجذور بمحفظة متنوعة حسب التكرار والمشتقات والصيغ والتراكيب والمشاركين والجيران والصعوبة وجودة البيانات، لا حسب الكثرة فقط.,PROPOSAL,ROOT_SELECTION,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:campaign/SEMANTIC_DISCOVERY_AND_METHODOLOGY_CALIBRATION_CAMPAIGN.md"", ""V2.1:reference/16_IMPLEMENTATION_STANDARDS_AND_ROADMAP.md""]",[],,[],[],,[]
+capture_applied,INT-CAM-005,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L506-L506,2026-09-06T02:30:00+03:00,إذا لم يكن مصدر تحديد الجذور والصيغ مؤهلًا بما يكفي، يجب أن يسجل Codex ذلك كمانع توسع بنيوي، لا أن يخمن الجذور من ذاكرته.,60178a588c12fc6146ea8c7b843e175204fd1c98d6d944b5f47a4cd6903b9164,إذا لم يكن مصدر الجذور والصيغ مؤهلًا، يسجل مانع توسع بنيوي ولا تخمن الجذور من ذاكرة النموذج.,CONTROL,ROOT_INVENTORY_SOURCE,CLOSED,DEFERRED,NOT_APPLICABLE,"[""V2.1:registries/OPEN_QUESTIONS.csv"", ""PROPOSED:campaign/SEMANTIC_DISCOVERY_AND_METHODOLOGY_CALIBRATION_CAMPAIGN.md"", ""V2.1:reference/16_IMPLEMENTATION_STANDARDS_AND_ROADMAP.md""]",[],,[],[],"Aligned with existing V2.1 GQ-001 structural source qualification gate, currently deferred post-prototype.",[]
+capture_applied,INT-CAM-006,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L508-L530,2026-09-06T02:30:00+03:00,"كيف نقيس الثقة؟
+
+لا أوصي الآن بنسبة مثل 92% يختارها النموذج بنفسه.
+
+كل نتيجة ينبغي أن تحمل ملف ثقة متعدد الأبعاد، مثل:
+
+Coverage — اكتمال التغطية.
+Structural Reliability — موثوقية بيانات الجذر والصيغة.
+Cross-occurrence Consistency — قدرة المفهوم على تفسير المواضع المختلفة.
+Layer Separation — نجاح فصل الجذر عن الصيغة والتركيب والسياق.
+Neighbor Differentiation — قدرته على التمييز عن الجيران.
+Counterevidence Burden — حجم الأدلة المعارضة.
+Falsification Survival — مدى صموده للدحض.
+Holdout Performance — أداؤه على مواضع لم تستخدم في بناء الفرضية.
+Independent Verification — حالة التحقق المستقل.
+
+ثم يعطى الحكم:
+
+STRONG / MODERATE / WEAK / UNRESOLVED
+
+ومعه مبرر صريح.
+
+أما تحويل ذلك لاحقًا إلى 0–100% فيتم فقط بعد وجود بيانات كافية للمعايرة.",c995b34865010550856b97adb5e305e52e868a3183f524ba5c7f71973a514c67,الثقة تُعرض كملف متعدد الأبعاد يضم التغطية وموثوقية البنية والاتساق عبر المواضع وفصل الطبقات والتمييز والدحض والـholdout والتحقق؛ ولا تحول إلى 0–100 قبل المعايرة.,REQUIREMENT,CONFIDENCE,CLOSED,ACCEPTED,VERIFIED,"[""V2.1:reference/13_CONFIDENCE_COMPLETENESS_VERIFICATION.md"", ""V2.1:acceptance/evals/V2_RESEARCH_OUTPUT_EVAL_CASES.json""]",[],V2.1_EXISTING_AUTHORITY,[],[],V2.1 already separates confidence/completeness/verification and forbids uncalibrated percentages; some listed components are existing or candidate components.,[]
+capture_applied,INT-CAM-007,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L536-L536,2026-09-06T02:30:00+03:00,Held-out occurrences: اخفِ بعض المواضع عن مرحلة بناء مفهوم الجذر، ثم اختبر هل يستطيع المفهوم تفسيرها لاحقًا.,4e36c1dd825f7b28c7d09c4d90675f6030d4993bef09c3423ff356eb11ba8c2e,استخدام مواضع محجوبة عن بناء الفرضية ثم اختبار قدرة المفهوم عليها.,EVAL_CASE,CONFIDENCE_ROBUSTNESS,CLOSED,ACCEPTED,VERIFIED,"[""V2.1:reference/13_CONFIDENCE_COMPLETENESS_VERIFICATION.md"", ""V2.1:acceptance/evals/V2_RESEARCH_OUTPUT_EVAL_CASES.json"", ""V2.1:acceptance/TEST_CATALOG.csv"", ""V2.1:acceptance/TRACEABILITY_MATRIX.csv""]",[],V2.1_EXISTING_AUTHORITY,[],[],,[]
+capture_applied,INT-CAM-008,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L538-L538,2026-09-06T02:30:00+03:00,Leave-one-cluster-out: اخفِ مجموعة كاملة من السياقات أو صيغة صرفية ثم اختبر القدرة التفسيرية عليها.,105654f8149db4db677db24cb0ade045549846bc204358852005296c574a630c,اختبار ترك مجموعة سياق أو صيغة كاملة خارج بناء الفرضية ثم اختبارها لاحقًا.,EVAL_CASE,CONFIDENCE_ROBUSTNESS,CLOSED,OPEN,NOT_APPLICABLE,"[""V2.1:reference/13_CONFIDENCE_COMPLETENESS_VERIFICATION.md"", ""V2.1:acceptance/evals/V2_RESEARCH_OUTPUT_EVAL_CASES.json"", ""V2.1:acceptance/TEST_CATALOG.csv"", ""V2.1:acceptance/TRACEABILITY_MATRIX.csv""]",[],,[],[],,[]
+capture_applied,INT-CAM-009,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L540-L540,2026-09-06T02:30:00+03:00,Order-sensitivity test: غيّر ترتيب عرض المواضع على النموذج؛ إذا تغير مفهوم الجذر جذريًا فهذا مؤشر ضعف مهم.,30c6e8198ba45357d7fabb4afc650c48aacd66e04fdc4059ca4acadc1d9b7b31,اختبار حساسية النتيجة لترتيب عرض المواضع؛ التغير الجذري مؤشر ضعف.,EVAL_CASE,CONFIDENCE_ROBUSTNESS,CLOSED,OPEN,NOT_APPLICABLE,"[""V2.1:reference/13_CONFIDENCE_COMPLETENESS_VERIFICATION.md"", ""V2.1:acceptance/evals/V2_RESEARCH_OUTPUT_EVAL_CASES.json"", ""V2.1:acceptance/TEST_CATALOG.csv"", ""V2.1:acceptance/TRACEABILITY_MATRIX.csv""]",[],,[],[],,[]
+capture_applied,INT-CAM-010,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L542-L542,2026-09-06T02:30:00+03:00,Blind adversarial review: وكيل ثانٍ يرى الأدلة ولا يرى النتيجة الأولى ويحاول إسقاطها.,db8ba1f7feddf39a470994ee6a7d76e7a6ab8f209fc509f08431f9b0b2f9da1c,مراجعة عمياء معارضة ترى الأدلة وتحاول إسقاط النتيجة دون تبني النتيجة الأولى.,EVAL_CASE,INDEPENDENT_VERIFICATION,CLOSED,ACCEPTED,VERIFIED,"[""V2.1:reference/13_CONFIDENCE_COMPLETENESS_VERIFICATION.md"", ""V2.1:acceptance/evals/V2_RESEARCH_OUTPUT_EVAL_CASES.json"", ""V2.1:acceptance/TEST_CATALOG.csv"", ""V2.1:acceptance/TRACEABILITY_MATRIX.csv""]",[],V2.1_EXISTING_AUTHORITY,[],[],,[]
+capture_applied,INT-CAM-011,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L544-L544,2026-09-06T02:30:00+03:00,Model-diversity check: نموذج مختلف يعيد التحليل. الاتفاق ليس دليلًا، لكنه مقياس Robustness مفيد.,660cd5ae75b304888a2a3d40d8342b20052a49cb2c472e6e3dbf0e5a38d0fb80,استخدام نموذج مختلف كاختبار Robustness؛ الاتفاق ليس دليلًا دلاليًا.,EVAL_CASE,INDEPENDENT_VERIFICATION,CLOSED,ACCEPTED,VERIFIED,"[""V2.1:reference/13_CONFIDENCE_COMPLETENESS_VERIFICATION.md"", ""V2.1:acceptance/evals/V2_RESEARCH_OUTPUT_EVAL_CASES.json"", ""V2.1:acceptance/TEST_CATALOG.csv"", ""V2.1:acceptance/TRACEABILITY_MATRIX.csv""]",[],V2.1_EXISTING_AUTHORITY,[],[],,[]
+capture_applied,INT-CAM-012,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L546-L546,2026-09-06T02:30:00+03:00,Neighbor challenge: إجبار كل مفهوم جذري قوي على مواجهة أقرب جار دلالي.,5237070e0aff1d5221436561e077020826cf85a1edfc2dd87a082fcc451adb7f,إجبار المفهوم الجذري القوي على مواجهة أقرب جار معنوي لاختبار التمييز.,EVAL_CASE,ROOT_DISTINCTIVENESS,CLOSED,OPEN,NOT_APPLICABLE,"[""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md"", ""V2.1:acceptance/TEST_CATALOG.csv"", ""V2.1:acceptance/TRACEABILITY_MATRIX.csv""]",[],,[],[],,[]
+capture_applied,INT-CAM-013,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L548-L548,2026-09-06T02:30:00+03:00,Prediction test: قبل كشف المواضع المحجوبة، يسجل المفهوم ما يتوقعه عنها ثم يقارن بالواقع.,2d9f7cf981676a9129bd911787c5775a53fb98a4a8c7fa4dbb1f3d3cec60d515,تسجيل تنبؤ المفهوم قبل كشف المواضع المحجوبة ثم مقارنته بها.,EVAL_CASE,PREDICTIVE_VALIDATION,CLOSED,ACCEPTED,VERIFIED,"[""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md"", ""V2.1:reference/13_CONFIDENCE_COMPLETENESS_VERIFICATION.md"", ""V2.1:acceptance/evals/V2_RESEARCH_OUTPUT_EVAL_CASES.json"", ""V2.1:acceptance/TEST_CATALOG.csv"", ""V2.1:acceptance/TRACEABILITY_MATRIX.csv""]",[],V2.1_EXISTING_AUTHORITY,[],[],,[]
+capture_applied,INT-CAM-014,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L550-L550,2026-09-06T02:30:00+03:00,Methodology sentinels: مجموعة ثابتة من الجذور تعاد بعد كل تعديل منهجي لاكتشاف Regression.,678257c87383fb9f039c7ce1bf581df4340e30005738f22847d95f63e840e903,إنشاء جذور حارسة ثابتة تعاد بعد كل تعديل منهجي لكشف التراجع.,EVAL_CASE,METHODOLOGY_REGRESSION,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:campaign/SEMANTIC_DISCOVERY_AND_METHODOLOGY_CALIBRATION_CAMPAIGN.md"", ""V2.1:reference/16_IMPLEMENTATION_STANDARDS_AND_ROADMAP.md"", ""V2.1:acceptance/TEST_CATALOG.csv"", ""V2.1:acceptance/TRACEABILITY_MATRIX.csv""]",[],,[],[],,[]
+capture_applied,INT-CAM-015,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L552-L568,2026-09-06T02:30:00+03:00,"والأهم: كيف نستخرج معاني إضافية من الحملة؟
+
+بعد دراسة عشرات الجذور سيظهر نوع جديد من المعرفة لا يمكن الحصول عليه بسهولة من دراسة جذر واحد:
+
+هل لصيغة صرفية معينة أثر مشترك عبر جذور متعددة؟
+
+هل لتركيب مع حرف جر معين مساهمة مستقرة عبر جذور متعددة؟
+
+ما الأبعاد التي تفصل مجموعات الجيران الدلاليين؟
+
+هل توجد أنماط متكررة في انتقال النواة الجذرية إلى المعنى الموضعي؟
+
+ما السياقات التي تتسبب باستمرار في تضخم معنى الجذر؟
+
+هل توجد علاقات مفهومية بين عدة جذور لا تظهر عند دراستها منفردة؟
+
+هذه يجب تسجيلها كـ Cross-root Hypotheses، لا حقائق تلقائية. ثم تصبح موضوع دورة بحث جديدة.",c9701f9b15f9fd760accc0e1aff1486abe30466a6833b0027e972e83205dbd67,بعد عدد كاف من الجذور، تولد فرضيات عبر الجذور عن أثر الصيغ والتراكيب والجيران وانتقال معنى الجذر إلى الموضع والسياقات والعلاقات المفهومية؛ تبقى فرضيات لا حقائق.,METHODOLOGY_PRINCIPLE,CROSS_ROOT_RESEARCH,CLOSED,OPEN,NOT_APPLICABLE,"[""V2.1:research/07_PRIOR_MATERIAL_AND_CROSS_ROOT_PROTOCOL.md"", ""PROPOSED:campaign/CROSS_ROOT_HYPOTHESIS_REGISTER.csv""]",[],,[],[],,[]
+capture_applied,INT-CAM-016,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L570-L586,2026-09-06T02:30:00+03:00,"مهمة Codex وهدفها
+
+مهمة Codex التي أوصي بها هي إنشاء وتشغيل:
+
+LISAN Semantic Discovery & Methodology Calibration Campaign
+
+وهدفها:
+
+إنشاء حصر مؤهل للجذور القابلة للدراسة.
+اختيار عينة متنوعة منهجيًا.
+تطبيق منهج لسان القرآن كاملًا على كل جذر.
+تخزين النتيجة والأدلة والدحض والثقة.
+اكتشاف مشاكل المنهج من واقع التطبيق.
+تحويل المشاكل المهمة إلى اقتراحات منهجية مصنفة، لا تعديلات تلقائية.
+بناء قاعدة متنامية من النتائج الجذرية المقبولة.
+بناء مجموعة تقييم دلالية من الحالات الصعبة.
+التوسع تدريجيًا حتى أكبر عدد من الجذور يمكن بحثه بجودة مؤهلة.",efbfca5b16d11a20bd266790399673dd16d7f2501345c5f8dd3ae5a2bc4916d2,إنشاء وتشغيل حملة LISAN Semantic Discovery & Methodology Calibration لبناء حصر الجذور والنتائج والثقة والدروس وحالات التقييم والتوسع التدريجي.,PROPOSAL,SEMANTIC_CAMPAIGN,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:campaign/SEMANTIC_DISCOVERY_AND_METHODOLOGY_CALIBRATION_CAMPAIGN.md"", ""V2.1:reference/16_IMPLEMENTATION_STANDARDS_AND_ROADMAP.md"", ""V2.1:reference/12_DATA_MEMORY_AND_TRACEABILITY_MODEL.md"", ""V2.1:contracts/schemas/RootResearchArtifact.schema.json""]","[""INT-OWN-CAMP-001""]",,[],[],,[]
+capture_applied,INT-TERM-001,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L592-L617,2026-09-06T02:30:00+03:00,"## 1. «قابلية الدلالة للبيان»
+
+هذه العبارة لا أوصي بالإبقاء عليها بصورتها الحالية.
+
+سبب الإشكال أن كلمة **«دلالة»** نستعملها أحيانًا بمعنى:
+
+* ما يشير إليه اللفظ،
+* وأحيانًا مساهمة الجذر،
+* وأحيانًا الأثر الذي تضيفه الصيغة،
+* وأحيانًا المعنى نفسه.
+
+وبهذا تصبح العبارة:
+
+> قابلية الدلالة للبيان
+
+غير واضحة: ما الذي يُبيَّن تحديدًا؟
+
+الأفضل أن نقول:
+
+> **قابلية معاني ألفاظ القرآن وتراكيبه لأن تُكشف وتُبيَّن من خلال استعمالها وعلاقاتها داخل القرآن.**
+
+أو بصورة أدق:
+
+> **يفترض المنهج أن لسان القرآن قابل للبيان، وأن معنى اللفظ لا يُطلب من اللفظ منفردًا فقط، بل يُكشف من مجموع مواضعه وصِيَغه وتراكيبه وعلاقاته وسياقاته.**
+
+وهذه أفضل من «قابلية الدلالة للبيان».",6a453a0d4e84ba8e1fa36162979d029000baee0af003d16bdde7f0800f256e7b,الصياغة «قابلية الدلالة للبيان» غامضة ويجب استبدالها بعبارة تبين أن معاني الألفاظ والتراكيب قابلة للكشف من الاستعمال والعلاقات داخل القرآن.,TERMINOLOGY,LANGUAGE_GOVERNANCE,CLOSED,SUPERSEDED,NOT_APPLICABLE,"[""V2.1:reference/02_TERMINOLOGY_AND_LANGUAGE_GOVERNANCE.md"", ""V2.1:registries/TERMINOLOGY_REGISTRY.csv""]","[""INT-OWN-TERM-001""]",,[],"[""INT-TERM-003"", ""INT-TERM-004""]",Old wording explicitly identified as unclear.,[]
+capture_applied,INT-TERM-002,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L619-L659,2026-09-06T02:30:00+03:00,"### وماذا نفعل بمفردة «دلالة» نفسها؟
+
+أقترح **تقليل استخدامها جدًا** في الوثائق الحاكمة، وعدم استخدامها إلا عندما يكون المقصود محددًا.
+
+بدل:
+
+> دلالة الجذر
+
+يمكن أن نقول:
+
+> **ما يقتضيه الجذر في المعنى**
+
+أو:
+
+> **المعنى الذي يثبت للجذر**
+
+وبدل:
+
+> دلالة الصيغة
+
+نقول:
+
+> **الأثر الذي تضيفه الصيغة إلى المعنى**
+
+وبدل:
+
+> دلالة التركيب
+
+نقول:
+
+> **ما يضيفه التركيب إلى المعنى**
+
+وبدل:
+
+> الدلالة السياقية
+
+نقول:
+
+> **ما يقتضيه السياق في هذا الموضع**
+
+وهذه الصياغات أوضح بكثير.",6a2d25320266cb7df48fee809cc05ee86652a03fc55b03bc04ef188ff68354c3,تقليل استخدام «دلالة» في الوثائق الحاكمة واستبدالها بعبارات تحدد المقصود: معنى الجذر، أثر الصيغة، أثر التركيب، وما يقتضيه السياق.,TERMINOLOGY,LANGUAGE_GOVERNANCE,CLOSED,OPEN,NOT_APPLICABLE,"[""V2.1:reference/02_TERMINOLOGY_AND_LANGUAGE_GOVERNANCE.md"", ""V2.1:registries/TERMINOLOGY_REGISTRY.csv""]","[""INT-OWN-TERM-001""]",,[],[],,[]
+capture_applied,INT-TERM-003,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L609-L612,2026-09-06T02:30:00+03:00,"الأفضل أن نقول:
+
+> **قابلية معاني ألفاظ القرآن وتراكيبه لأن تُكشف وتُبيَّن من خلال استعمالها وعلاقاتها داخل القرآن.**",dce5ca443d1b787b929ec515f4afe7882e1ccf71b1249311c59f8c4e730a2b8a,مرشح صياغة: «قابلية معاني ألفاظ القرآن وتراكيبه لأن تُكشف وتُبيَّن من خلال استعمالها وعلاقاتها داخل القرآن».,PROPOSAL,FOUNDATIONAL_TERMINOLOGY,CLOSED,OPEN,NOT_APPLICABLE,"[""V2.1:reference/02_TERMINOLOGY_AND_LANGUAGE_GOVERNANCE.md"", ""V2.1:registries/TERMINOLOGY_REGISTRY.csv"", ""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv""]","[""INT-OWN-TERM-001""]",,[],[],,[]
+capture_applied,INT-TERM-004,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L613-L616,2026-09-06T02:30:00+03:00,"أو بصورة أدق:
+
+> **يفترض المنهج أن لسان القرآن قابل للبيان، وأن معنى اللفظ لا يُطلب من اللفظ منفردًا فقط، بل يُكشف من مجموع مواضعه وصِيَغه وتراكيبه وعلاقاته وسياقاته.**",cf3173f56f85a2761fb8a18e19e9c890ce520d5cb3938259c2da5b1e9c05d4ff,مرشح صياغة أدق: لسان القرآن قابل للبيان، ومعنى اللفظ يُكشف من مجموع مواضعه وصِيَغه وتراكيبه وعلاقاته وسياقاته.,PROPOSAL,FOUNDATIONAL_TERMINOLOGY,CLOSED,OPEN,NOT_APPLICABLE,"[""V2.1:reference/02_TERMINOLOGY_AND_LANGUAGE_GOVERNANCE.md"", ""V2.1:registries/TERMINOLOGY_REGISTRY.csv"", ""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv""]","[""INT-OWN-TERM-001""]",,[],[],,[]
+capture_applied,INT-TERM-005,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L625-L633,2026-09-06T02:30:00+03:00,"> دلالة الجذر
+
+يمكن أن نقول:
+
+> **ما يقتضيه الجذر في المعنى**
+
+أو:
+
+> **المعنى الذي يثبت للجذر**",a9c9d2ae61cc9570181e7ae242753870f1e7f9b77931c14be72e08e7eccacd4b,مرشح بديل لـ«دلالة الجذر»: «ما يثبت للجذر من معنى» أو «ما يقتضيه الجذر في المعنى».,PROPOSAL,TERMINOLOGY_ROOT,CLOSED,OPEN,NOT_APPLICABLE,"[""V2.1:reference/02_TERMINOLOGY_AND_LANGUAGE_GOVERNANCE.md"", ""V2.1:registries/TERMINOLOGY_REGISTRY.csv"", ""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md""]","[""INT-OWN-TERM-001""]",,[],[],,[]
+capture_applied,INT-TERM-006,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L637-L641,2026-09-06T02:30:00+03:00,"> دلالة الصيغة
+
+نقول:
+
+> **الأثر الذي تضيفه الصيغة إلى المعنى**",6d23a0bb815776752dfc73cb6ac3633d946cf79e258eaab16bdf6cc5656b05e0,مرشح بديل لـ«الدلالة الصرفية/الصيغة»: «ما يضيفه التصريف أو الاشتقاق إلى المعنى» / «الأثر الذي تضيفه الصيغة».,PROPOSAL,TERMINOLOGY_MORPHOLOGY,CLOSED,OPEN,NOT_APPLICABLE,"[""V2.1:reference/02_TERMINOLOGY_AND_LANGUAGE_GOVERNANCE.md"", ""V2.1:registries/TERMINOLOGY_REGISTRY.csv""]","[""INT-OWN-TERM-001""]",,[],[],,[]
+capture_applied,INT-TERM-007,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L645-L649,2026-09-06T02:30:00+03:00,"> دلالة التركيب
+
+نقول:
+
+> **ما يضيفه التركيب إلى المعنى**",b6f39d25c58a433271a98803f70062ee4c6dd2b34ea771d193703080cd734fec,مرشح بديل لـ«الدلالة التركيبية»: «ما يضيفه التركيب إلى المعنى».,PROPOSAL,TERMINOLOGY_CONSTRUCTION,CLOSED,OPEN,NOT_APPLICABLE,"[""V2.1:reference/02_TERMINOLOGY_AND_LANGUAGE_GOVERNANCE.md"", ""V2.1:registries/TERMINOLOGY_REGISTRY.csv""]","[""INT-OWN-TERM-001""]",,[],[],,[]
+capture_applied,INT-TERM-008,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L653-L657,2026-09-06T02:30:00+03:00,"> الدلالة السياقية
+
+نقول:
+
+> **ما يقتضيه السياق في هذا الموضع**",b7ab7b3549eeccf0c7eb593a788d4a4e167f66b0128d06b913f735bd6a1ee89f,مرشح بديل لـ«الدلالة السياقية»: «ما يقتضيه السياق في هذا الموضع».,PROPOSAL,TERMINOLOGY_CONTEXT,CLOSED,OPEN,NOT_APPLICABLE,"[""V2.1:reference/02_TERMINOLOGY_AND_LANGUAGE_GOVERNANCE.md"", ""V2.1:registries/TERMINOLOGY_REGISTRY.csv""]","[""INT-OWN-TERM-001""]",,[],[],,[]
+capture_applied,INT-TERM-009,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L661-L679,2026-09-06T02:30:00+03:00,"أي أن التسلسل الذي كنا نقوله:
+
+> دلالة الجذر → دلالة الصيغة → دلالة التركيب → دلالة السياق
+
+يمكن أن يصبح:
+
+> **ما يثبت للجذر من معنى**
+> ↓
+> **ما يضيفه التصريف والاشتقاق**
+> ↓
+> **ما تضيفه الصيغة**
+> ↓
+> **ما يضيفه التركيب والعلاقات**
+> ↓
+> **ما يقتضيه السياق**
+> ↓
+> **المعنى في هذا الموضع**
+
+وهذا في رأيي أدق وأقرب إلى روح مشروعك.",385662b64d3e19b651c1dfe4582196f5372f63139b6bf42241db5837c5ab3ca2,مرشح تسلسل اصطلاحي أوضح: معنى الجذر ثم أثر التصريف والاشتقاق ثم أثر الصيغة ثم أثر التركيب والعلاقات ثم مقتضى السياق ثم المعنى في الموضع.,PROPOSAL,SEMANTIC_DERIVATION_OUTPUT,CLOSED,OPEN,NOT_APPLICABLE,"[""V2.1:reference/02_TERMINOLOGY_AND_LANGUAGE_GOVERNANCE.md"", ""V2.1:registries/TERMINOLOGY_REGISTRY.csv"", ""V2.1:reference/03_METHODOLOGY_AND_EVIDENCE_CONSTITUTION.md"", ""V2.1:reference/04_SEMANTIC_ANALYSIS_MODEL.md""]","[""INT-OWN-TERM-001""]",,[],[],,[]
+capture_applied,INT-TERM-010,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L683-L743,2026-09-06T02:30:00+03:00,"# 2. «الاتساق يجب اختباره لا افتراض النتيجة مسبقًا»
+
+المقصود هنا ليس أننا نشك في اتساق القرآن.
+
+بل نميز بين أمرين:
+
+### الأصل الذي ننطلق منه
+
+من قول الله:
+
+> ولو كان من عند غير الله لوجدوا فيه اختلافًا كثيرًا
+
+نأخذ أن **عدم الاختلاف والاتساق من خصائص القرآن**.
+
+إذن هذا أصل تأسيسي في المنهج.
+
+لكن المشكلة تحدث عندما يتحول هذا الأصل إلى طريقة خاطئة في التحليل.
+
+مثلًا:
+
+لدينا خمسة مواضع لجذر ما.
+
+أربعة منها تناسب المعنى الذي افترضناه، والخامس لا يناسبه.
+
+الطريقة الخاطئة:
+
+> القرآن لا يختلف، إذن لا بد أن الموضع الخامس يعني أيضًا ما افترضناه.
+
+ثم نبدأ بتغيير معنى الكلمات أو تحميل السياق ما لا يحتمل حتى نحافظ على فرضيتنا.
+
+هذا هو الاستدلال الدائري.
+
+## الطريقة الصحيحة
+
+نقول:
+
+> نحن ننطلق من أن القرآن ليس فيه اختلاف، ولذلك فإن عدم قدرة فرضيتنا على تفسير أحد المواضع مشكلة في **فرضيتنا أو تحليلنا** أولًا، لا سببًا لإجبار الموضع على موافقتها.
+
+ثم نسأل:
+
+* هل أخطأنا في الجذر؟
+* هل للصيغة أثر لم نفصله؟
+* هل التركيب مختلف؟
+* هل السياق يغير تحقق المعنى؟
+* هل جمعنا استعمالين مختلفين تحت معنى واحد؟
+* هل مفهومنا للجذر أوسع أو أضيق مما ينبغي؟
+* هل بقي شيء لم نفهمه؟
+
+فالصياغة الأفضل للمبدأ هي:
+
+> **ثبوت اتساق القرآن أصل حاكم، أما كيفية تحقق هذا الاتساق في كل استعمال فهي موضوع بحث واختبار، ولا يجوز حماية فرضية الباحث بتأويل البيانات قسرًا.**
+
+وأفضل من عبارة:
+
+> الاتساق يجب اختباره
+
+أن نقول:
+
+> **الاتساق أصل، أما تفسير كيفية تحقق الاتساق في المواضع المختلفة فيجب أن يثبت بالتحليل.**
+
+هذه أدق؛ لأن عبارة «اختبار الاتساق» قد توحي بأننا نختبر هل القرآن متسق أصلًا، وهذا ليس ما نقصده.",617f573ed895d2f43e42a80ac2d29453e5141b3097915298d823d14096057eff,استبدال عبارة «الاتساق يجب اختباره» بقاعدة: الاتساق أصل حاكم، أما كيفية تحققه في المواضع فتثبت بالتحليل ولا تحمى فرضية الباحث بالتأويل القسري.,PROPOSAL,CONSISTENCY_TERMINOLOGY,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv"", ""V2.1:reference/03_METHODOLOGY_AND_EVIDENCE_CONSTITUTION.md"", ""V2.1:reference/04_SEMANTIC_ANALYSIS_MODEL.md""]","[""INT-FND-017""]",,[],[],,[]
+capture_applied,INT-TERM-011,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L731-L742,2026-09-06T02:30:00+03:00,"فالصياغة الأفضل للمبدأ هي:
+
+> **ثبوت اتساق القرآن أصل حاكم، أما كيفية تحقق هذا الاتساق في كل استعمال فهي موضوع بحث واختبار، ولا يجوز حماية فرضية الباحث بتأويل البيانات قسرًا.**
+
+وأفضل من عبارة:
+
+> الاتساق يجب اختباره
+
+أن نقول:
+
+> **الاتساق أصل، أما تفسير كيفية تحقق الاتساق في المواضع المختلفة فيجب أن يثبت بالتحليل.**",31b675533e1d8730682a6a4da9467f1698b234eec7c6e3461dfb6937fef04140,الصياغة المقترحة الحاكمة: ثبوت اتساق القرآن أصل، وكيفية تحقق الاتساق في الاستعمالات موضوع تحليل، ولا يجوز حماية الفرضية بتأويل البيانات قسرًا.,METHODOLOGY_PRINCIPLE,CONSISTENCY,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv"", ""V2.1:reference/03_METHODOLOGY_AND_EVIDENCE_CONSTITUTION.md"", ""V2.1:reference/04_SEMANTIC_ANALYSIS_MODEL.md""]",[],,"[""INT-FND-017""]",[],,[]
+capture_applied,INT-TERM-012,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L747-L805,2026-09-06T02:30:00+03:00,"# 3. «تعدد الوحدات المعجمية»
+
+أتفق معك أن **«الوحدة المعجمية» مصطلح تقني مستورد وغير مناسب ليكون من لغة المنهج الأساسية**.
+
+المقصود الذي كنت أريده منه بسيط:
+
+قد نجمع ألفاظًا تحت جذر واحد من ناحية الاشتقاق، لكن البحث قد يكشف أنه **لا يمكن رد جميع استعمالاتها إلى معنى جذري واحد دون تكلف**.
+
+مثلًا ـ من حيث المبدأ فقط ـ قد نجد تحت جذر واحد مجموعتين من الاستعمال:
+
+```text
+مجموعة أ
+→ يجمعها معنى معين
+
+مجموعة ب
+→ يجمعها معنى آخر
+
+ولا يثبت بعد البحث جامع دلالي واحد بينهما.
+```
+
+في هذه الحالة لا ينبغي أن نجبرهما على مفهوم جذري واحد.
+
+هذا ما كان يقصد بـ:
+
+`multiple lexical units`
+
+لكن أوافق على تغيير المصطلح.
+
+## البديل الذي أوصي به
+
+الأوضح:
+
+> **تعدد أوجه الاستعمال**
+
+لكن هذه قد توحي أن الاختلاف مجرد سياقي.
+
+لذلك الأفضل عند الحديث عن حالة أعمق:
+
+> **تعدد أصول المعنى في المادة**
+
+أو:
+
+> **عدم ثبوت معنى جامع واحد للمادة**
+
+والثانية أدق لأنها لا تدعي أكثر مما أثبته البحث.
+
+فبدل أن يقول النظام:
+
+> `MULTIPLE_LEXICAL_UNITS`
+
+يمكن أن تكون النتيجة العربية:
+
+> **لم يثبت معنى جامع واحد لجميع استعمالات المادة.**
+
+ثم يوضح:
+
+> ظهرت مجموعتان أو أكثر من الاستعمالات، ولم يثبت حتى الآن أنها ترجع إلى أصل معنوي واحد.
+
+هذه الصياغة ممتازة لأنها لا تضطرنا إلى اختراع مصطلح «وحدة معجمية».",b2258cf736dc86566f12fee15099a25f3e41a694180106f0bf9a18c032a4c6ca,عدم اعتماد «الوحدة المعجمية» كمصطلح حاكم؛ عند عدم الوصول لجامع يقال وصفًا: «لم يثبت معنى جامع واحد لجميع استعمالات المادة»، دون افتراض كيانات تقنية غير واضحة.,TERMINOLOGY,LANGUAGE_GOVERNANCE,CLOSED,SUPERSEDED,NOT_APPLICABLE,"[""V2.1:reference/02_TERMINOLOGY_AND_LANGUAGE_GOVERNANCE.md"", ""V2.1:registries/TERMINOLOGY_REGISTRY.csv"", ""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md""]","[""INT-OWN-TERM-001"", ""INT-OWN-ROOT-001""]",,[],"[""INT-ROOT-006"", ""INT-ROOT-015""]",The term is disfavored by owner; later universal-root directive further narrows the acceptable interpretation of a non-unified result.,[]
+capture_applied,INT-TERM-013,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L809-L827,2026-09-06T02:30:00+03:00,"# 4. نقطة أعمق بشأن ألفاظ المنهج
+
+ملاحظتك تقودني إلى قاعدة مهمة ينبغي إضافتها للمنهج:
+
+> **لا نستخدم مصطلحًا فنيًا لمجرد أنه شائع في اللسانيات إذا كان يمكن التعبير عنه بعبارة عربية أوضح وأقل التباسًا.**
+
+وأقترح ترتيبًا للألفاظ:
+
+1. **اللفظ القرآني نفسه** عندما يصلح.
+2. **لفظ عربي واضح قريب من الاستعمال القرآني.**
+3. **عبارة تفسيرية واضحة.**
+4. المصطلح الفني فقط عند الضرورة، مع تعريفه.
+
+أي أن الغاية ليست أن تكون كل كلمة في الوثيقة واردة حرفيًا في القرآن؛ فهذا قد يصعب تحقيقه في بعض التفاصيل التقنية.
+
+لكن ينبغي أن يكون المبدأ:
+
+> **لغة المنهج نفسها عربية مبينة قدر الإمكان، ولا نبني المنهج على مصطلحات لا نفهم حدودها بدقة.**",901bd2a223fe141b55a5abcd42f454655319cd924defe6f865863a3130f3acf8,قاعدة لغة المنهج المقترحة: لفظ قرآني صالح، ثم لفظ عربي واضح قريب، ثم عبارة تفسيرية، ثم المصطلح الفني عند الضرورة مع تعريفه؛ ولغة المنهج عربية مبينة قدر الإمكان.,PROPOSAL,LANGUAGE_GOVERNANCE,CLOSED,OPEN,NOT_APPLICABLE,"[""V2.1:reference/02_TERMINOLOGY_AND_LANGUAGE_GOVERNANCE.md"", ""V2.1:registries/TERMINOLOGY_REGISTRY.csv""]","[""INT-OWN-TERM-001""]",,[],[],,[]
+capture_applied,INT-TERM-014,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L832-L865,2026-09-06T02:30:00+03:00,"# 5. أقترح تعديل ثلاثة مصطلحات أساسية
+
+| القديم                | المقترح                                           |
+| --------------------- | ------------------------------------------------- |
+| دلالة الجذر           | **ما يثبت للجذر من معنى**                         |
+| الدلالة الصرفية       | **ما يضيفه التصريف أو الاشتقاق إلى المعنى**       |
+| الدلالة التركيبية     | **ما يضيفه التركيب إلى المعنى**                   |
+| الدلالة السياقية      | **ما يقتضيه السياق**                              |
+| الوحدة المعجمية       | **يُستغنى عنها بعبارة تصف الحالة**                |
+| تعدد الوحدات المعجمية | **لم يثبت معنى جامع واحد لجميع استعمالات المادة** |
+
+أما كلمة **«دلالة»** فلا أمنعها نهائيًا، لكن أجعلها لفظًا مساعدًا لا مصطلحًا حاكمًا إلا بعد تعريف دقيق.
+
+## والصياغة النهائية الأوضح للتسلسل
+
+بدل:
+
+> دلالة الجذر → دلالة الصيغة → دلالة التركيب → دلالة السياق
+
+أوصي من الآن بـ:
+
+> **ما يثبت للجذر من معنى**
+> ↓
+> **ما يضيفه التصريف والاشتقاق**
+> ↓
+> **ما تضيفه صيغة المفردة**
+> ↓
+> **ما يضيفه التركيب والعلاقات**
+> ↓
+> **ما يقتضيه السياق**
+> ↓
+> **المعنى الذي يتحقق في هذا الموضع**
+
+وأرى أن هذا التعديل ينبغي أن يدخل لاحقًا في **معجم المصطلحات الحاكم للحزمة**، لأن ملاحظتك ليست مجرد تحسين لغوي، بل تمنع غموضًا منهجيًا حقيقيًا.",cb5b474c0faa1295cdc20b572cb9a7a5fd0f4849209e54a3bce2315fdd98fb36,تحديث معجم المصطلحات والتسلسل الحاكم باستبدال «دلالة الجذر/الصرف/التركيب/السياق» بعبارات صريحة عن معنى الجذر وما تضيفه الطبقات وما يقتضيه السياق.,PROPOSAL,LANGUAGE_GOVERNANCE,CLOSED,OPEN,NOT_APPLICABLE,"[""V2.1:reference/02_TERMINOLOGY_AND_LANGUAGE_GOVERNANCE.md"", ""V2.1:registries/TERMINOLOGY_REGISTRY.csv"", ""V2.1:reference/03_METHODOLOGY_AND_EVIDENCE_CONSTITUTION.md"", ""V2.1:reference/04_SEMANTIC_ANALYSIS_MODEL.md""]","[""INT-OWN-TERM-001""]",,[],[],,[]
+capture_applied,INT-ROOT-001,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L870-L884,2026-09-06T02:30:00+03:00,"## 1. الصياغة التي أقترح اعتمادها
+
+أقترح تسميته بعبارة عربية مباشرة:
+
+# **شرط حضور معنى الجذر في جميع مواضعه**
+
+ونصه:
+
+> **لا يُقبل معنى مقترح لجذر بوصفه معنى جذريًا جامعًا إلا إذا أمكن إثبات حضوره ومساهمته في المعنى في كل موضع من مواضع الجذر، وفي جميع مشتقاته واستعمالاته التي ثبت انتماؤها إليه، دون استثناء اعتباطي، ودون تحميل الجذر ما يعود إلى الصيغة أو التركيب أو السياق.**
+
+ثم القاعدة الأشد صرامة:
+
+> **وجود موضع واحد ثابت الانتماء إلى الجذر لا يمكن تفسير مساهمة الجذر فيه بالمفهوم المقترح يُعد معارضًا جوهريًا لذلك المفهوم، ويمنع اعتماده بصورته الحالية حتى يُحل الإشكال.**
+
+هذا في رأيي يجب أن يصبح **المعيار الأول لقبول المفهوم الجذري**.",61a2f042a7d40c89f0f28b8c299904eca0fd683e2cb8b5944ae76eab402b2eb0,صياغة شرط حاكم: لا يقبل معنى جذري جامع إلا إذا ظهر أثره في كل موضع ومشتق ثبت انتماؤه للجذر، بلا استثناء اعتباطي أو خلط بطبقات أخرى.,METHODOLOGY_PRINCIPLE,ROOT_CONCEPT,CLOSED,OPEN,NOT_APPLICABLE,"[""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md"", ""V2.1:acceptance/TEST_CATALOG.csv"", ""V2.1:acceptance/TRACEABILITY_MATRIX.csv""]","[""INT-OWN-ROOT-001""]",,[],[],,[]
+capture_applied,INT-ROOT-002,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L880-L884,2026-09-06T02:30:00+03:00,"ثم القاعدة الأشد صرامة:
+
+> **وجود موضع واحد ثابت الانتماء إلى الجذر لا يمكن تفسير مساهمة الجذر فيه بالمفهوم المقترح يُعد معارضًا جوهريًا لذلك المفهوم، ويمنع اعتماده بصورته الحالية حتى يُحل الإشكال.**
+
+هذا في رأيي يجب أن يصبح **المعيار الأول لقبول المفهوم الجذري**.",2adc30dca301e5a112b5f37b70effbc604ba152a382cf5971d01d8cfe9a78378,موضع واحد ثابت الانتماء لا يمكن تفسير مساهمة الجذر فيه بالمرشح يعد معارضًا جوهريًا ويمنع اعتماده بصورته الحالية.,REQUIREMENT,ROOT_ACCEPTANCE,CLOSED,ACCEPTED,PENDING,"[""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md"", ""V2.1:acceptance/TEST_CATALOG.csv"", ""V2.1:acceptance/TRACEABILITY_MATRIX.csv""]","[""INT-OWN-ROOT-001""]",OWNER_DIRECTIVE:universal-root-presence,[],[],,[]
+capture_applied,INT-ROOT-003,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L888-L917,2026-09-06T02:30:00+03:00,"# 2. لكن ماذا نعني بـ«يظهر معنى الجذر»؟
+
+هذه أهم نقطة.
+
+لا نقصد أن يظهر الجذر في كل موضع **بنفس العبارة أو المرادف الظاهر**.
+
+ولا نقصد أن معنى الجذر هو المعنى الكامل للمفردة.
+
+مثلًا، لو افترضنا لجذر ما معنى مجردًا مثل:
+
+> انتقال شيء من حالة إلى حالة على وجه معين
+
+فقد يتحقق هذا في:
+
+* فعل.
+* اسم.
+* صيغة مبالغة.
+* اسم فاعل.
+* تركيب مع حرف.
+* سياق مختلف.
+
+بصور مختلفة.
+
+إذن «الحضور» يعني:
+
+> **أن يبقى للجذر أثر معنوي لازم يمكن التعرف عليه داخل المعنى المتحقق للمفردة، بعد فصل ما أضافته الصيغة والتركيب والسياق.**
+
+وبذلك:
+
+**معنى الجذر ليس بالضرورة أبرز شيء في الموضع، لكنه يجب ألا يختفي منه.**",64b95da68dfd107a4178d0b92356de5dfcd03de549087f512e2f767fd81edf9b,تعريف تشغيلي مقترح للحضور: يبقى للجذر أثر معنوي لازم يمكن التعرف عليه داخل المعنى في الموضع بعد فصل ما أضافته الصيغة والتركيب والسياق؛ لا يلزم نفس اللفظ ولا أن يكون هو المعنى الكامل.,PROPOSAL,ROOT_CONCEPT_OPERATIONALIZATION,CLOSED,OPEN,NOT_APPLICABLE,"[""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md""]","[""INT-OWN-ROOT-001""]",,[],[],,[]
+capture_applied,INT-ROOT-004,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L921-L952,2026-09-06T02:30:00+03:00,"# 3. الفرق بين «الحضور» و«المعنى الكامل»
+
+هذه قاعدة ضرورية:
+
+> **كل موضع يجب أن يحمل معنى الجذر، ولكن ليس كل ما في معنى الموضع يعود إلى الجذر.**
+
+أي:
+
+```text
+معنى الجذر
+    +
+ما أضافه الاشتقاق والتصريف
+    +
+ما أضافته الصيغة
+    +
+ما أضافه التركيب
+    +
+ما اقتضاه السياق
+    =
+المعنى المتحقق في الموضع
+```
+
+فإذا وجدنا في آية معنى مثل «الخضوع» مثلًا، لا يجوز أن نستنتج تلقائيًا أن «الخضوع» هو معنى الجذر، فقد يكون بعضه ناشئًا من:
+
+* الصيغة،
+* أو المفعول،
+* أو التركيب،
+* أو المقام.
+
+نريد أن نعرف:
+
+> **ما الشيء الذي بقي من الجذر نفسه في جميع هذه الصور؟**",470a0675d43c53cba6325afafa107a43cbfd5563fb2eb43aa471bd6b7640b1f3,كل موضع يحمل معنى الجذر، لكن ليس كل معنى الموضع من الجذر؛ بقية المعنى يفسر بما تضيفه الطبقات الأخرى.,METHODOLOGY_PRINCIPLE,ROOT_TO_LOCAL_MEANING,CLOSED,OPEN,NOT_APPLICABLE,"[""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md"", ""V2.1:reference/03_METHODOLOGY_AND_EVIDENCE_CONSTITUTION.md"", ""V2.1:reference/04_SEMANTIC_ANALYSIS_MODEL.md""]",[],,[],[],,[]
+capture_applied,INT-ROOT-005,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L956-L980,2026-09-06T02:30:00+03:00,"# 4. لماذا أرى هذا المبدأ قويًا جدًا؟
+
+لأنه يعطي كلمة **«الجذر»** معنى منهجيًا حقيقيًا.
+
+إذا قلنا إن لجذر ما معنى، ثم سمحنا بأن:
+
+* يظهر في بعض المواضع،
+* ويختفي في بعضها،
+* ويتغير إلى معنى آخر تمامًا في بعضها،
+
+فما الذي بقي من كونه **معنى جذريًا**؟
+
+حينها يصبح قولنا «هذا معنى الجذر» ضعيفًا؛ لأنه في الواقع وصف لبعض الاستعمالات فقط.
+
+لذلك يمكن صياغة الحجة المنطقية هكذا:
+
+> إذا كان الجذر عنصرًا مشتركًا ثابتًا في بنية مشتقاته، وكان له إسهام في المعنى، فإن ما ننسبه **إلى الجذر نفسه** ينبغي أن يكون مشتركًا بين جميع المواضع التي ثبت أنها منه.
+
+وما يتغير من موضع إلى آخر نبحث عن مصدر تغيره في:
+
+* الصيغة،
+* الاشتقاق،
+* التركيب،
+* المشاركين،
+* السياق.",268741ccd0d4b43e594a8645dec136de9d7205fcbf5d1372a28d48c558a0f1b9,الحجة المنطقية المقترحة: إذا كان الجذر عنصرًا بنيويًا مشتركًا وله إسهام في المعنى، فما ينسب إليه يجب أن يكون مشتركًا في جميع المواضع؛ والمتغير يبحث في الصيغة والتركيب والسياق.,PROPOSAL,ROOT_CONCEPT_RATIONALE,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv"", ""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md""]",[],,[],[],,[]
+capture_applied,INT-ROOT-006,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L984-L1007,2026-09-06T02:30:00+03:00,"# 5. مرجعية هذا المبدأ في «لسان عربي مبين»
+
+هنا يلزم التفريق بين **النص القرآني نفسه** وبين **النتيجة المنهجية التي نستنبطها منه**.
+
+القرآن لا يقول حرفيًا:
+
+> «يجب أن يكون لكل جذر معنى مشترك ظاهر في جميع مشتقاته».
+
+ولذلك لا ينبغي أن ننسب هذه العبارة إليه نصًا.
+
+لكننا نبنيها **استنباطًا منهجيًا** من مجموعة مرتكزات.
+
+## «بلسان عربي مبين»
+
+نحن نفهم منها في المنهج أن اللسان الذي جاء به القرآن:
+
+* قابل للبيان.
+* قابل للفهم.
+* قابل للتعقل.
+* وأن العلاقات بين ألفاظه ليست نظامًا اعتباطيًا مغلقًا على الباحث.
+
+ومن هنا نقول:
+
+> إذا كان اللسان مبينًا، فينبغي أن يمكن كشف العلاقة بين الأصل وما تفرع منه، بدل اعتبار كل مشتق معنى مستقلًا لا رابط يمكن بيانه بينه وبين أصله.",ad8cd573af3d15cc43c9d910dda6c146c7398f87d16fdc4f255d330f3763707f,التصريح بأن شرط حضور معنى الجذر استنباط منهجي من مرتكزات القرآن وليس نصًا حرفيًا يصرح بقاعدة الجذور.,METHODOLOGY_PRINCIPLE,FOUNDATIONAL_RATIONALE,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv"", ""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md""]","[""INT-OWN-ROOT-001""]",,[],[],,[]
+capture_applied,INT-ROOT-007,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L996-L1007,2026-09-06T02:30:00+03:00,"## «بلسان عربي مبين»
+
+نحن نفهم منها في المنهج أن اللسان الذي جاء به القرآن:
+
+* قابل للبيان.
+* قابل للفهم.
+* قابل للتعقل.
+* وأن العلاقات بين ألفاظه ليست نظامًا اعتباطيًا مغلقًا على الباحث.
+
+ومن هنا نقول:
+
+> إذا كان اللسان مبينًا، فينبغي أن يمكن كشف العلاقة بين الأصل وما تفرع منه، بدل اعتبار كل مشتق معنى مستقلًا لا رابط يمكن بيانه بينه وبين أصله.",1bb6ee61894474379ee9de2b57a10a71ed669b338298c582ca485b09b0b0122b,من «لسان عربي مبين» يستنبط أن العلاقة بين الأصل وما تفرع منه قابلة للكشف والبيان ولا تعامل المشتقات كمعان مستقلة بلا رابط قابل للبحث.,PROPOSAL,FOUNDATIONAL_RATIONALE,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv"", ""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md""]",[],,[],[],,[]
+capture_applied,INT-ROOT-008,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L1011-L1028,2026-09-06T02:30:00+03:00,"# 6. «قرآنًا عربيًا غير ذي عوج»
+
+هذه أقوى في جانب آخر.
+
+إذا كنا ننسب إلى **الجذر الواحد** عدة معانٍ متناقضة أو لا جامع بينها، ثم لا نستطيع بيان سبب الانتقال بينها، فقد يكون لدينا أحد الاحتمالات:
+
+1. مفهومنا للجذر خطأ.
+2. جمعنا تحت أصل واحد ما ليس من معنى واحد.
+3. أغفلنا أثر الصيغة.
+4. أغفلنا أثر التركيب.
+5. أغفلنا أثر السياق.
+6. أو ما زال البحث غير مكتمل.
+
+ولا ينبغي أن يكون الحل:
+
+> «الجذر هنا يعني كذا وهناك يعني شيئًا آخر تمامًا»،
+
+دون تفسير منضبط.",a03619d31f026fca635f5aeac7e560ce9fd15957eabe711ac5fa531b990afd40,من «غير ذي عوج» إذا نُسبت للجذر معان متناقضة بلا جامع مفسر، تراجع فرضية الجذر أو أثر الصيغة/التركيب/السياق أو اكتمال البحث بدل قبول التعدد بلا تفسير.,PROPOSAL,FOUNDATIONAL_RATIONALE,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv"", ""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md""]",[],,[],[],,[]
+capture_applied,INT-ROOT-009,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L1032-L1058,2026-09-06T02:30:00+03:00,"# 7. «قرآنًا عربيًا لعلكم تعقلون»
+
+وهذا يعزز عندنا مبدأ مهمًا:
+
+> **ينبغي أن يكون تفسير العلاقات اللغوية قابلًا للتعقل.**
+
+أي يمكن تتبع:
+
+```text
+الجذر
+↓
+المشتق
+↓
+الصيغة
+↓
+التركيب
+↓
+السياق
+↓
+المعنى
+```
+
+وليس مجرد قائمة:
+
+> هنا تعني أ، وهنا ب، وهنا ج.
+
+دون قاعدة تربط بينها.",094dcc07773269dd15f141fb19d21ae1047c5f7fcd38bdb47023f51241cb0b35,من «لعلكم تعقلون» ينبغي أن تكون علاقة الجذر بالمشتق والصيغة والتركيب والسياق والمعنى قابلة للتتبع والتعقل لا مجرد قائمة معان منفصلة.,PROPOSAL,FOUNDATIONAL_RATIONALE,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv"", ""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md""]",[],,[],[],,[]
+capture_applied,INT-ROOT-010,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L1062-L1080,2026-09-06T02:30:00+03:00,"# 8. «ولو كان من عند غير الله لوجدوا فيه اختلافًا كثيرًا»
+
+وهنا يرتبط الأمر بمبدأ الاتساق الذي ناقشناه.
+
+نتوقع أن يؤدي التحليل الصحيح إلى **تفسير متسق للاستعمالات**.
+
+لكن نثبت الحماية التي اتفقنا عليها:
+
+> **ثبوت اتساق القرآن لا يثبت صحة تفسيرنا نحن.**
+
+فإذا لم يستطع مفهوم جذري تفسير موضع ما، لا نقول:
+
+> لا بد أن الموضع يحمل هذا المعنى لأن القرآن متسق.
+
+بل نقول:
+
+> مفهومنا المقترح للجذر فشل حتى الآن في تفسير هذا الموضع، ولذلك يجب مراجعته.
+
+وهذا يمنع الاستدلال الدائري.",55b2bfb361d77f768ce516680b876565a688e327a0bd831952210e172e8c121a,اتساق القرآن لا يثبت صحة تفسير الباحث؛ إذا فشل المرشح في موضع فالمشكلة في المرشح/التحليل أولًا لا في إجبار الموضع على التوافق.,METHODOLOGY_PRINCIPLE,ANTI_CIRCULARITY,CLOSED,ACCEPTED,PENDING,"[""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv"", ""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md"", ""V2.1:acceptance/TEST_CATALOG.csv"", ""V2.1:acceptance/TRACEABILITY_MATRIX.csv""]",[],OWNER_DIRECTIVE:universal-root-presence,[],[],,[]
+capture_applied,INT-ROOT-011,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L1084-L1102,2026-09-06T02:30:00+03:00,"# 9. هل هذا خاص بالقرآن؟
+
+هنا أوافقك في الأصل مع تحفظ مهم في الصياغة.
+
+المبدأ المنطقي أوسع من القرآن:
+
+> **في أي لسان منضبط يمكن استقراؤه، إذا نسبنا معنى إلى عنصر ثابت مشترك بين مجموعة من الألفاظ، فينبغي أن يظهر أثر هذا العنصر المشترك في المجموعة كلها، وإلا وجب علينا مراجعة ما نسبناه إلى ذلك العنصر.**
+
+هذه قاعدة تحليلية عامة معقولة.
+
+لكن لا أوصي بأن نقول:
+
+> ثبت أن جميع لغات البشر تعمل دائمًا بهذه الصورة.
+
+لأن هذا ادعاء أوسع يحتاج بحثًا تاريخيًا ولسانيًا مستقلًا، وتوجد في اللغات ظواهر تغير تاريخي وتداخل أصول وغيرها.
+
+أما داخل **منهج لسان القرآن** فالموقف أقوى:
+
+> لأننا نتعامل مع نص واحد محدود كامل، موصوف بأنه عربي ومبين وغير ذي عوج، فإننا نتخذ قابلية الوصول إلى انتظام داخلي أعلى فرضًا منهجيًا قويًا جدًا.",0c0630f211b6d833c81a44c93ad4303fa2ae27b181866fa61033559050d29f7a,توسيع المبدأ لأي لسان منضبط بوصفه قاعدة تحليلية محتملة، مع تجنب الادعاء التجريبي بأن جميع لغات البشر تعمل دائمًا بهذه الصورة.,PROPOSAL,GENERAL_LANGUAGE_RATIONALE,CLOSED,OPEN,NOT_APPLICABLE,"[""PROPOSED:reference/20_FOUNDATIONAL_PREMISES_AND_ASSUMPTIONS_CHARTER.md"", ""PROPOSED:registries/FOUNDATIONAL_ASSUMPTIONS_REGISTER.csv"", ""V2.1:registries/OPEN_QUESTIONS.csv""]","[""INT-OWN-ROOT-001""]",,[],[],,[]
+capture_applied,INT-ROOT-012,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L1106-L1148,2026-09-06T02:30:00+03:00,"# 10. ماذا لو لم نجد معنى واحدًا يظهر في جميع المواضع؟
+
+هذه المسألة مهمة جدًا.
+
+لا يجوز تخفيف المعيار.
+
+إذا فشل جميع المرشحين، فالنتيجة لا تكون:
+
+> «نقبل أفضلهم ولو لم يشمل الجميع».
+
+بل نتحقق بالترتيب:
+
+### أولًا
+
+هل جميع المواضع نُسبت إلى الجذر بصورة صحيحة؟
+
+### ثانيًا
+
+هل حملنا على الجذر شيئًا من أثر الصيغة؟
+
+### ثالثًا
+
+هل خلطنا أثر التركيب بالجذر؟
+
+### رابعًا
+
+هل خلطنا ما اقتضاه السياق بمعنى الجذر؟
+
+### خامسًا
+
+هل المفهوم المقترح ضيق أكثر مما ينبغي؟
+
+### سادسًا
+
+هل هو واسع وفارغ بحيث يستطيع تفسير أي شيء؟
+
+### سابعًا
+
+هل هناك بالفعل مجموعات من الاستعمال لم يثبت حتى الآن معنى جامع بينها؟
+
+وعندها تكون النتيجة:
+
+> **لم يثبت حتى الآن معنى جذري جامع يفسر جميع المواضع.**",2436261c13baf5d5eaa88f8e107a4d939893b6f3afda9e48dac6fec5c3dc698a,إذا لم نجد جامعًا، لا يقبل أفضل المرشحين بالأغلبية؛ نراجع صحة نسبة المواضع للجذر وفصل الصيغة والتركيب والسياق وضيق/اتساع المرشح، ثم تبقى النتيجة غير محسومة إن لم يظهر جامع.,REQUIREMENT,ROOT_FAILURE_HANDLING,CLOSED,ACCEPTED,PENDING,"[""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md"", ""V2.1:acceptance/TEST_CATALOG.csv"", ""V2.1:acceptance/TRACEABILITY_MATRIX.csv""]","[""INT-OWN-ROOT-001""]",OWNER_DIRECTIVE:universal-root-presence,[],[],,[]
+capture_applied,INT-ROOT-013,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L1154-L1182,2026-09-06T02:30:00+03:00,"# 11. وهنا يظهر معياران لا معيار واحد
+
+لكي يكون مفهوم الجذر قويًا، يجب أن يحقق شرطين معًا:
+
+## أ. الشمول
+
+> يظهر في **كل المواضع**.
+
+## ب. التمييز
+
+> لا يكون عامًا إلى درجة أنه يصلح لجذور كثيرة أخرى.
+
+وهذه نقطة شديدة الأهمية.
+
+مثلًا، مفهوم:
+
+> «حدوث شيء»
+
+قد يظهر في ألف موضع، لكنه لا يصلح مفهومًا جذريًا؛ لأنه لا يميز شيئًا.
+
+إذن نحتاج:
+
+> **أوسع شمول مع أعلى تمييز بأقل تحميل زائد.**
+
+أو بصياغة أوضح:
+
+> **المفهوم الجذري الصحيح هو أقل معنى ثابت يكفي للحضور في جميع المواضع ويتميز به الجذر عن أقرب ما يشبهه.**
+
+وهذا في رأيي أقوى تعريف وصلنا إليه حتى الآن.",9b0804e6f3b3f56ad46f981bc8a612a6f6d3b5afcf7db8f3a34591c9842913df,المفهوم الجذري القوي يحتاج شرطين معًا: الشمول في كل المواضع والتمييز عن أقرب الجذور؛ العموم الفارغ لا يكفي.,PROPOSAL,ROOT_ACCEPTANCE,CLOSED,OPEN,NOT_APPLICABLE,"[""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md"", ""V2.1:acceptance/TEST_CATALOG.csv"", ""V2.1:acceptance/TRACEABILITY_MATRIX.csv""]",[],,[],[],,[]
+capture_applied,INT-ROOT-014,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L1186-L1194,2026-09-06T02:30:00+03:00,"# 12. أقترح تحديث تعريف «المفهوم الجذري»
+
+كان تعريفنا السابق جيدًا، لكن يمكن تشديده الآن:
+
+> **المفهوم الجذري هو أقل معنى ثابت مشترك يجب أن يظهر أثره في كل موضع ثبت انتماؤه إلى الجذر، ويكون لازمًا لتفسير مساهمة الجذر في مشتقاته واستعمالاته، بعد طرح ما يعود إلى التصريف والاشتقاق والصيغة والتركيب والسياق، مع وجوب أن يكون مميزًا عن أقرب الجذور وقابلًا للدحض.**
+
+ثم نضيف:
+
+> **فإن عجز المفهوم المرشح عن تفسير موضع واحد ثابت الانتماء دون تكلف أو استثناء غير مبرر، فلا يعتمد مفهومًا جذريًا بصورته الحالية.**",fd7f7f7d37d1113027fc7745a9c48f953ee9d3471bd27e80eb9be52488b9ba5b,تحديث تعريف المفهوم الجذري ليصبح أقل معنى ثابت مشترك يظهر أثره في كل موضع ثابت الانتماء، بعد فصل الطبقات، مع التمييز وقابلية الدحض.,PROPOSAL,ROOT_CONCEPT_DEFINITION,CLOSED,OPEN,NOT_APPLICABLE,"[""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md"", ""V2.1:reference/02_TERMINOLOGY_AND_LANGUAGE_GOVERNANCE.md"", ""V2.1:registries/TERMINOLOGY_REGISTRY.csv""]","[""INT-OWN-ROOT-001""]",,[],[],,[]
+capture_applied,INT-ROOT-015,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L1198-L1241,2026-09-06T02:30:00+03:00,"# 13. معيار قبول رسمي أقترحه للحزمة
+
+أقترح إضافة:
+
+## `ROOT_MEANING_UNIVERSAL_PRESENCE`
+
+وبالعربية الحاكمة:
+
+**شرط حضور معنى الجذر في جميع مواضعه**
+
+ويكون:
+
+`MANDATORY`
+
+و`CRITICAL`.
+
+ولكل Root Concept نحتاج شيئًا مثل:
+
+```text
+إجمالي المواضع: 84
+
+المواضع التي ظهر فيها أثر المفهوم الجذري
+بصورة قابلة للتفسير: 84
+
+المواضع المتعارضة: 0
+
+المواضع غير المحسومة: 0
+```
+
+إذا كان:
+
+```text
+83 / 84
+```
+
+فلا نقول:
+
+> 98.8% إذن المفهوم قوي ونقبله.
+
+بل:
+
+> يوجد موضع واحد يعارض دعوى «المعنى الجذري الجامع»، ولذلك تبقى النتيجة غير مكتملة حتى يُفسر هذا الموضع أو تتغير الفرضية.
+
+**هذه من أهم نتائج فكرتك.**",671b3a71a3c542173d38f1e7283168d7f163f5296191111f9d29c0e28b93d0e5,إضافة معيار ROOT_MEANING_UNIVERSAL_PRESENCE إلزامي/حرج؛ مفهوم الجذر ليس مسألة أغلبية، و83 من 84 لا يكفي لاعتماد جامع.,CONTROL,ROOT_ACCEPTANCE,CLOSED,ACCEPTED,PENDING,"[""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md"", ""V2.1:acceptance/TEST_CATALOG.csv"", ""V2.1:acceptance/TRACEABILITY_MATRIX.csv""]","[""INT-OWN-ROOT-001""]",OWNER_DIRECTIVE:universal-root-presence,[],[],,[]
+capture_applied,INT-ROOT-016,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L1247-L1263,2026-09-06T02:30:00+03:00,"# 14. ولكن «غير محسوم» يختلف عن «مخالف»
+
+إذا كان الموضع غير واضح بسبب:
+
+* مشكلة في القراءة البنيوية،
+* عدم حسم الاشتقاق،
+* غموض في الإسناد،
+
+فنسجله:
+
+> `UNRESOLVED`
+
+ولا نقول إنه فند المفهوم.
+
+لكن أيضًا:
+
+> **لا نسمح بالاعتماد النهائي الكامل قبل حل الموضع إذا كان جوهريًا لدعوى الشمول.**",2f950aeb78953e16706c9d30353252c4979ab3a4b09ee627a1ee7d44b4034b28,الموضع غير المحسوم لا يعد مثالًا مخالفًا، لكنه إذا كان جوهريًا لدعوى الشمول يمنع الاعتماد النهائي الكامل حتى يحل.,METHODOLOGY_PRINCIPLE,ROOT_ACCEPTANCE,CLOSED,OPEN,NOT_APPLICABLE,"[""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md"", ""V2.1:acceptance/TEST_CATALOG.csv"", ""V2.1:acceptance/TRACEABILITY_MATRIX.csv""]",[],,[],[],,[]
+capture_applied,INT-ROOT-017,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L1267-L1285,2026-09-06T02:30:00+03:00,"# 15. وأقترح اختبارًا أشد من مجرد التفسير بعد معرفة المواضع
+
+حتى لا نخدع أنفسنا بتكييف المفهوم مع كل موضع بعد رؤيته، نستخدم:
+
+## الاختبار التنبؤي
+
+نحجب مجموعة من المواضع.
+
+نبني المفهوم الجذري من البقية.
+
+ثم نسأل قبل كشف المواضع المحجوبة:
+
+> ماذا يجب أن نتوقع من مساهمة هذا الجذر فيها إذا كان المفهوم صحيحًا؟
+
+ثم نكشف المواضع.
+
+إذا استطاع المفهوم تفسيرها **دون تعديل جوهره** ترتفع قوته كثيرًا.
+
+هذا من أقوى وسائل زيادة الثقة التي ناقشناها.",b5bb86a13262c64adf1f479f37b0e2855b10eb91c7abe7e5b9a92be358633a5b,اختبار تنبؤي: حجب مواضع، بناء المفهوم من البقية، تسجيل ما يتوقعه قبل الكشف، ثم اختبارها دون تعديل جوهر المفهوم.,EVAL_CASE,ROOT_PREDICTIVE_VALIDATION,CLOSED,OPEN,NOT_APPLICABLE,"[""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md"", ""V2.1:reference/13_CONFIDENCE_COMPLETENESS_VERIFICATION.md"", ""V2.1:acceptance/evals/V2_RESEARCH_OUTPUT_EVAL_CASES.json"", ""V2.1:acceptance/TEST_CATALOG.csv"", ""V2.1:acceptance/TRACEABILITY_MATRIX.csv""]",[],,[],[],,[]
+capture_applied,INT-ROOT-018,,ASSISTANT,NON_OWNER_PROPOSAL,turn45file0:L1289-L1310,2026-09-06T02:30:00+03:00,"## الخلاصة التي أوصي بتثبيتها
+
+أرى أن فكرتك تستحق أن تصبح **أحد أعلى مبادئ منهج لسان القرآن**:
+
+> ### شرط حضور معنى الجذر في جميع مواضعه
+>
+> **ما ينسب إلى الجذر نفسه يجب أن يبقى حاضرًا بوصفه مساهمة معنوية ثابتة في جميع المواضع والمشتقات التي ثبت انتماؤها إليه. وما يتغير بينها يُبحث أولًا في أثر التصريف والاشتقاق والصيغة والتركيب والسياق. ولا يُقبل مفهوم جذري يعجز عن تفسير موضع ثابت الانتماء دون تكلف أو استثناء اعتباطي.**
+
+ومبرره المنهجي:
+
+> **إذا كان القرآن بلسان عربي مبين، عربيًا قابلًا للتعقل، غير ذي عوج، متسقًا لا اختلاف فيه، فإن المنهج يفترض أن علاقات أصول الألفاظ بفروعها قابلة للبيان والاستقراء وفق نظام معقول ومتسق؛ لكنه لا يفرض مسبقًا شكل ذلك النظام ولا يسمح بتغيير البيانات لحماية فرضية الباحث.**
+
+وأضيف إليها القاعدة المكملة:
+
+> **الشمول شرط لازم، لكنه غير كافٍ؛ فلا بد مع الشمول من التمييز.**
+
+أي أن المفهوم الجذري المقبول يجب أن ينجح في سؤالين معًا:
+
+1. **هل يظهر في كل موضع؟**
+2. **هل يفسر لماذا استُعمل هذا الجذر تحديدًا لا أقرب جذر آخر؟**
+
+وأرى أن هذين السؤالين معًا يمكن أن يصبحا **أدق اختبار مركزي للمفهوم الجذري في المشروع كله**.",c729d75c078f197b5f292af2549d795f52107bcb6f57c6e39702ffb147007c2e,الخلاصة المقترحة: حضور معنى الجذر في جميع المواضع شرط لازم، ويكمله التمييز؛ يسأل الاختبار المركزي هل يظهر في كل موضع وهل يفسر اختيار هذا الجذر لا أقرب جذر.,PROPOSAL,ROOT_ACCEPTANCE,CLOSED,OPEN,NOT_APPLICABLE,"[""V2.1:reference/05_ROOT_CONCEPT_CONTRACT.md"", ""V2.1:research/02_ROOT_RESEARCH_ARTIFACT_CONTRACT.md"", ""V2.1:skills/SK-06/SKILL.md"", ""V2.1:acceptance/TEST_CATALOG.csv"", ""V2.1:acceptance/TRACEABILITY_MATRIX.csv""]","[""INT-OWN-ROOT-001""]",,[],[],,[]
+external_addendum,INT-EXT-001,,OWNER,OWNER_DIRECTIVE,OWNER_CONVERSATION_2026-09-06_EXTERNAL_SOURCES_AND_HYPOTHESIS_TESTING,2026-09-06T03:33:00+03:00,لا ينبغي قصر الاستفادة من المصادر الخارجية على الاستئناس بعد النتيجة؛ بل تستخدم بصورة منظمة لتوليد اختبارات وتحسين آليات وقواعد المنهج.,0b01e3fac6eaacb544f84041fa2d180437fc6b878ccaed4b0368bbbbd593153b,السماح للمصادر الخارجية بأدوار بحثية منظمة قبل الحكم النهائي: توليد فرضيات واختبارات ومادة لتحسين المنهج، دون منحها سلطة تقرير النتيجة.,OWNER_DIRECTIVE,SOURCE_POLICY,CLOSED,ACCEPTED,PROPOSED_INTEGRATION,"[""Quran_Lisan_External_Source_Testing_Capture_Addendum_v1.0.0.docx""]","[""CP-EXT-001"", ""CP-EXT-002""]",OWNER_CURRENT_TURN,[],[],Explicit owner directive in current turn.,[]
+external_addendum,INT-EXT-002,,OWNER,OWNER_DIRECTIVE,OWNER_CONVERSATION_2026-09-06_EXTERNAL_SOURCES_AND_HYPOTHESIS_TESTING,2026-09-06T03:33:00+03:00,تحسين وضبط الآليات والقواعد والنتائج يجب أن يكون لتتوافق مع منهجية لسان القرآن.,86050ef99504916570f0cff8f8f74ac0269612be49f9c0b9c9eba4022b0668e4,المصادر الخارجية تساعد على تحسين امتثال عملية البحث للمنهج؛ ولا يجوز استخدامها لإجبار النتيجة الدلالية على معنى مسبق.,METHODOLOGY_PRINCIPLE,METHODOLOGY_GOVERNANCE,CLOSED,ACCEPTED,PROPOSED_INTEGRATION,"[""Quran_Lisan_External_Source_Testing_Capture_Addendum_v1.0.0.docx""]","[""CP-EXT-003""]",OWNER_CURRENT_TURN,[],[],Explicit owner directive in current turn.,[]
+external_addendum,INT-EXT-003,,OWNER,OWNER_DIRECTIVE,OWNER_CONVERSATION_2026-09-06_EXTERNAL_SOURCES_AND_HYPOTHESIS_TESTING,2026-09-06T03:33:00+03:00,يمكن الانطلاق من المعنى المحوري الذي يقدمه المعجم الاشتقاقي لمحمد حسن جبل كأحد أهم الفرضيات التي يمكن البدء منها.,61844896ec41600f51b68206a1b67c1ccf47e5c7d8e2327b65a2c2936a0fa2ae,معنى محمد حسن جبل المحوري لجذر معين مرشح خارجي عالي الأولوية يمكن إدخاله كفرضية اختبار، لا كحقيقة أو نتيجة معتمدة.,OWNER_DIRECTIVE,ROOT_RESEARCH,CLOSED,ACCEPTED,PROPOSED_INTEGRATION,"[""Quran_Lisan_External_Source_Testing_Capture_Addendum_v1.0.0.docx""]","[""CP-EXT-004""]",OWNER_CURRENT_TURN,[],[],Explicit owner directive in current turn.,[]
+external_addendum,INT-EXT-004,,OWNER,OWNER_DIRECTIVE,OWNER_CONVERSATION_2026-09-06_EXTERNAL_SOURCES_AND_HYPOTHESIS_TESTING,2026-09-06T03:33:00+03:00,إقرار العالم للقاعدة لا يعني أنه استطاع الالتزام بتطبيقها في كل الحالات.,b0257d84d05a3c5b4aba9e1ae7be36e73fdbeab2e7239a2e5fb8c0679d57e13c,افصل تقييم القاعدة النظرية عن تقييم تطبيقات صاحبها؛ ففشل بعض التطبيقات لا يثبت وحده بطلان القاعدة، ونجاح بعضها لا يثبت عمومها.,METHODOLOGY_PRINCIPLE,EXTERNAL_EVIDENCE_EVALUATION,CLOSED,ACCEPTED,PROPOSED_INTEGRATION,"[""Quran_Lisan_External_Source_Testing_Capture_Addendum_v1.0.0.docx""]","[""CP-EXT-005""]",OWNER_CURRENT_TURN,[],[],Explicit owner directive in current turn.,[]
+external_addendum,INT-EXT-005,,OWNER,OWNER_DIRECTIVE,OWNER_CONVERSATION_2026-09-06_EXTERNAL_SOURCES_AND_HYPOTHESIS_TESTING,2026-09-06T03:33:00+03:00,عدم تغيير أو حرف مسار منهجيتنا نتيجة قول ابن فارس أو أي عالم آخر.,ad8b60592e1cb3699d7c33e53df4dc92b9cba1422c575154e54f46a2d91882a8,لا يملك أي عالم أو مصدر خارجي سلطة تعديل منهج لسان القرآن بمجرد مكانته؛ التعارض يولد اختبارًا أو Finding أو Proposal، ولا يغيّر المنهج إلا بمسار اعتماد مستقل.,CONTROL,METHODOLOGY_AUTHORITY,CLOSED,ACCEPTED,PROPOSED_INTEGRATION,"[""Quran_Lisan_External_Source_Testing_Capture_Addendum_v1.0.0.docx""]","[""CP-EXT-006""]",OWNER_CURRENT_TURN,[],[],Explicit owner directive in current turn.,[]
+external_addendum,INT-EXT-006,,OWNER,OWNER_DIRECTIVE,OWNER_CONVERSATION_2026-09-06_EXTERNAL_SOURCES_AND_HYPOTHESIS_TESTING,2026-09-06T03:33:00+03:00,هناك مصادر تذكر معاني ودلالات موحدة للحروف ويمكن الاستفادة منها.,da505cd6473a802c154ecd4fb0ced5ae43aa01d5a01228405400b09ba1f39a6a,أقوال معاني الحروف تسجل كفرضيات خارجية قابلة للاختبار عبر جذور ومواضع متعددة، ولا تصبح قاعدة حاكمة بمجرد ورودها في مصدر.,REQUIREMENT,LETTER_RESEARCH,CLOSED,ACCEPTED,PROPOSED_INTEGRATION,"[""Quran_Lisan_External_Source_Testing_Capture_Addendum_v1.0.0.docx""]","[""CP-EXT-007""]",OWNER_CURRENT_TURN,[],[],Explicit owner directive in current turn.,[]
+external_addendum,INT-EXT-007,,OWNER,OWNER_DIRECTIVE,OWNER_CONVERSATION_2026-09-06_EXTERNAL_SOURCES_AND_HYPOTHESIS_TESTING,2026-09-06T03:33:00+03:00,هناك مصادر تذكر معاني وآثار كل اشتقاق ويمكن الاستفادة منها.,993811eb0baf9d672e41c163d24f205547630f5b82b816eb763aca7821eea00c,أقوال آثار الصيغ والاشتقاقات تسجل كفرضيات خارجية منظمة وتختبر عبر الاستعمال القرآني مع فصل أثر الجذر والتركيب والسياق.,REQUIREMENT,FORM_DERIVATION_RESEARCH,CLOSED,ACCEPTED,PROPOSED_INTEGRATION,"[""Quran_Lisan_External_Source_Testing_Capture_Addendum_v1.0.0.docx""]","[""CP-EXT-008""]",OWNER_CURRENT_TURN,[],[],Explicit owner directive in current turn.,[]
+external_addendum,INT-EXT-008,,ASSISTANT,NON_OWNER_PROPOSAL,OWNER_CONVERSATION_2026-09-06_EXTERNAL_SOURCES_AND_HYPOTHESIS_TESTING,2026-09-06T03:33:00+03:00,فصل مسار اكتشاف داخلي أعمى عن مسار اختبار فرضيات خارجية ثم المقارنة بعد تجميد مخرجات كل مسار.,9b7bce3285eca8299e2a0ec6ccc251e2b968a1f3ddb118d2de486eafa3391037,إنشاء مسارين مستقلين يحفظان نقاء الاستقراء الداخلي ويتيحان في الوقت نفسه استخدام فرضية جبل أو غيره منذ بداية مسار الاختبار الخارجي.,PROPOSAL,RESEARCH_WORKFLOW,CLOSED,OPEN,NOT_APPLICABLE,[],"[""CP-EXT-009""]",,[],[],Latest owner directives preserved; non-owner proposals remain open.,[]
+external_addendum,INT-EXT-009,,ASSISTANT,NON_OWNER_PROPOSAL,OWNER_CONVERSATION_2026-09-06_EXTERNAL_SOURCES_AND_HYPOTHESIS_TESTING,2026-09-06T03:33:00+03:00,إنشاء سجل موحد لادعاءات المصادر الخارجية بدل ثلاثة سجلات متوازية.,4744cac397abb11c2432e3adca96343313aef19fb52751009666a43dff87903a,استخدام EXTERNAL_HYPOTHESIS_REGISTER مع نوع claim_type للجذر والحرف والصيغة والتركيب والقاعدة المنهجية، لتقليل التعقيد.,PROPOSAL,DATA_MODEL,CLOSED,OPEN,NOT_APPLICABLE,[],"[""CP-EXT-010""]",,[],[],Latest owner directives preserved; non-owner proposals remain open.,[]
+external_addendum,INT-EXT-010,,ASSISTANT,NON_OWNER_PROPOSAL,OWNER_CONVERSATION_2026-09-06_EXTERNAL_SOURCES_AND_HYPOTHESIS_TESTING,2026-09-06T03:33:00+03:00,تحويل أقوال المصادر إلى مولدات حالات اختبار وفشل ورجوع منهجي.,0e44b470526dd040aee2267aadb4e72156030ee576eac2a0e57c088c9db480a3,كل claim خارجي مهم يولد test plan مع حالات موجبة وسالبة ومضادة، وتخزن النتيجة منفصلة عن قول المصدر.,PROPOSAL,EVALUATION,CLOSED,OPEN,NOT_APPLICABLE,[],"[""CP-EXT-011""]",,[],[],Latest owner directives preserved; non-owner proposals remain open.,[]
+external_addendum,INT-EXT-011,,SYSTEM,SYSTEM_DERIVED,OWNER_CONVERSATION_2026-09-06_EXTERNAL_SOURCES_AND_HYPOTHESIS_TESTING,2026-09-06T03:33:00+03:00,صياغة عبارة توافق النتائج مع المنهج قد تُفهم خطأ على أنها فرض نتيجة مسبقة.,ddac19fc104c701c8f9123c2404a0b0585406b030774ba4f026ddc3eed7d8999,التوافق المقصود هو التزام النتيجة بقواعد إنتاجها وتتبعها ودحضها، لا تطابقها مع معنى متوقع مسبقًا.,METHODOLOGY_FINDING,METHODOLOGY_GOVERNANCE,CLOSED,ACCEPTED,DOCUMENTED,"[""Quran_Lisan_External_Source_Testing_Capture_Addendum_v1.0.0.docx""]","[""FIND-EXT-001""]",,[],[],Latest owner directives preserved; non-owner proposals remain open.,[]
+external_addendum,INT-EXT-012,,RESEARCH,RESEARCH_DERIVED,OWNER_CONVERSATION_2026-09-06_EXTERNAL_SOURCES_AND_HYPOTHESIS_TESTING,2026-09-06T03:33:00+03:00,المصدر المنشور للمعجم الاشتقاقي يصرح بالمعنى المحوري الجامع وبمعالجة تطبيقية واسعة وضرورة بيان تحققه في كل استعمال.,6f593d6f2bdea79fe3de4a6b5b916130f154041b3f9095cccc536decd156ef83,هذا يجعل المعجم الاشتقاقي مصدرًا خارجيًا قويًا لتوليد فرضية الجذر واختبارات الشمول، لكنه لا يمنحه سلطة قبول النتيجة.,RESEARCH_FINDING,EXTERNAL_SOURCE_QUALIFICATION,CLOSED,ACCEPTED,DOCUMENTED,"[""Quran_Lisan_External_Source_Testing_Capture_Addendum_v1.0.0.docx""]","[""FIND-EXT-002""]",,[],[],Latest owner directives preserved; non-owner proposals remain open.,[]
+preanalysis,INT-PRE-OWN-001,,OWNER,OWNER_DIRECTIVE,conversation:2026-09-06:pre-analysis-foundation-program,2026-09-06T03:50:00+03:00,هناك بيانات ومعلومات ليست اجتهادية وإنما إحصائية ويمكن استخراجها وحفظها في قاعدة بيانات وسجل خاص، مثل عدد الجذور وعدد وماهية التصريفات والاشتقاقات والتراكيب، وعند تحليل مفردة يرجع إلى الجذر ومخزونه الوصفي قبل الاجتهاد.,d714bb676b76787024f271d2ff5fc6dd0c9d5238107b56731f5e87fecb801470,بناء قاعدة معرفة نصية ووصفية وبنيوية قابلة للتحقق قبل الاجتهاد الدلالي، وإعادة استخدامها في كل تحليل لاحق.,METHODOLOGY_PRINCIPLE,DESCRIPTIVE_KNOWLEDGE,CLOSED,ACCEPTED,PROPOSED_INTEGRATION,"[""01_PRE_ANALYSIS_FOUNDATION_PROGRAM_PROPOSAL.md"", ""02_ROUTE_CARDS.md"", ""CP-PRE-003""]",[],OWNER_CURRENT_CONVERSATION,[],[],Explicit owner directive from the preceding conversation.,[]
+preanalysis,INT-PRE-A-001,,ASSISTANT,NON_OWNER_PROPOSAL,conversation:2026-09-06:pre-analysis-foundation-program,2026-09-06T03:50:00+03:00,تنظيم ما قبل التحليل في ثمانية مسارات داخلية مترابطة.,7d6523a088c33f3ad9e2d2423d51375c10073b7515766acbe34a06b0c33f0a6e,اعتماد P1..P8 كبرنامج تنظيمي قبل حملة الجذور.,PROPOSAL,PRE_ANALYSIS_PROGRAM,CLOSED,OPEN,NOT_APPLICABLE,[],"[""CP-PRE-001""]",,[],[],Assistant proposal; remains open pending owner approval.,[]
+preanalysis,INT-PRE-A-002,,ASSISTANT,NON_OWNER_PROPOSAL,conversation:2026-09-06:pre-analysis-foundation-program,2026-09-06T03:50:00+03:00,جعل المرتكزات والبديهيات والافتراضات مسارًا تأسيسيًا مستقلًا.,4841517e21659e9e7dcf4bec1b0a1d86b9ddacbcb4d8d939d55059f044c160fe,P1 Foundational Profile كمسار قبل البحث.,PROPOSAL,FOUNDATIONAL_METHODOLOGY,CLOSED,OPEN,NOT_APPLICABLE,[],"[""CP-PRE-002""]",,[],[],Assistant proposal; remains open pending owner approval.,[]
+preanalysis,INT-PRE-A-003,,ASSISTANT,NON_OWNER_PROPOSAL,conversation:2026-09-06:pre-analysis-foundation-program,2026-09-06T03:50:00+03:00,اعتبار النص القرآني المرجعي مسارًا صريحًا في البرنامج.,6497113118513c9a7e8e7f4ad4fa145d6ea9731ae490e4799e888b1f01727e55,P2 يربط البرنامج بالمصدر المرجعي القائم في V2.1 ولا ينشئ بديلًا.,PROPOSAL,CORPUS_IDENTITY,CLOSED,OPEN,NOT_APPLICABLE,[],"[""CP-PRE-001""]",,[],[],Assistant proposal; remains open pending owner approval.,[]
+preanalysis,INT-PRE-A-004,,ASSISTANT,NON_OWNER_PROPOSAL,conversation:2026-09-06:pre-analysis-foundation-program,2026-09-06T03:50:00+03:00,تحويل المعرفة الوصفية إلى أصل مشترك/مكوّن مستقل يمكن لكل بحث استرجاعه.,fe76815be97c25a0294c793c5a41190755b0f4af330fcbc90390a0f00accf58c,P3 قاعدة معرفة وصفية مشتركة وملف وصفي لكل جذر/مفردة.,PROPOSAL,DATA_ARCHITECTURE,CLOSED,OPEN,NOT_APPLICABLE,[],"[""CP-PRE-003""]",,[],[],Assistant proposal; remains open pending owner approval.,[]
+preanalysis,INT-PRE-A-005,,ASSISTANT,NON_OWNER_PROPOSAL,conversation:2026-09-06:pre-analysis-foundation-program,2026-09-06T03:50:00+03:00,فصل الحقيقة النصية المباشرة عن التحليل البنيوي المؤهل أو المختلف فيه.,54d5ce60e59e43f2ee0e3c4474852fd8c2a12adbea25f71f0d2985a583eddfd0,P4 تأهيل البيانات البنيوية وربطها بالمصدر والموثوقية.,PROPOSAL,STRUCTURAL_QUALIFICATION,CLOSED,OPEN,NOT_APPLICABLE,[],"[""CP-PRE-004""]",,[],[],Assistant proposal; remains open pending owner approval.,[]
+preanalysis,INT-PRE-A-006,,ASSISTANT,NON_OWNER_PROPOSAL,conversation:2026-09-06:pre-analysis-foundation-program,2026-09-06T03:50:00+03:00,جعل إغلاق المصطلحات الحاكمة مسارًا سابقًا للتوسع.,bc444d5697e10eeac5647f2da7101bb5b18f43266ebd7be87b3934c0f0cd4647,P5 حسم المصطلحات المؤثرة في العقود والمخرجات قبل Scale.,PROPOSAL,TERMINOLOGY,CLOSED,OPEN,NOT_APPLICABLE,[],"[""CP-PRE-005""]",,[],[],Assistant proposal; remains open pending owner approval.,[]
+preanalysis,INT-PRE-A-007,,ASSISTANT,NON_OWNER_PROPOSAL,conversation:2026-09-06:pre-analysis-foundation-program,2026-09-06T03:50:00+03:00,جعل تثبيت نسخة المنهج ومعايير قبول الجذر مسارًا قبل الدفعة.,089e906217ea7e2c76fdcedbc62c0cd178e6415acf4f6cc1077d2b87a53916ad,P6 Methodology Revision ثابتة لكل Batch وقواعد قبول قابلة للاختبار.,PROPOSAL,METHODOLOGY_VERSIONING,CLOSED,OPEN,NOT_APPLICABLE,[],"[""CP-PRE-006""]",,[],[],Assistant proposal; remains open pending owner approval.,[]
+preanalysis,INT-PRE-A-008,,ASSISTANT,NON_OWNER_PROPOSAL,conversation:2026-09-06:pre-analysis-foundation-program,2026-09-06T03:50:00+03:00,إجراء معايرة على جذور متنوعة قبل التوسع الواسع.,edec14913c555a50e590f3f3eda8f0ea029f7a5c203abd91952a6330ff7fae62,P7 Calibration/Sentinel/Holdout قبل Scale.,PROPOSAL,EVALUATION,CLOSED,OPEN,NOT_APPLICABLE,[],"[""CP-PRE-007""]",,[],[],Assistant proposal; remains open pending owner approval.,[]
+preanalysis,INT-PRE-A-009,,ASSISTANT,NON_OWNER_PROPOSAL,conversation:2026-09-06:pre-analysis-foundation-program,2026-09-06T03:50:00+03:00,تنظيم الذاكرة والعزل والتعلم التراكمي في مسار واضح.,8dfb3c39bd640a7937685ede036e09a54373aa59edb662c474bc0597e3a4c151,P8 حفظ المعرفة المقبولة والدروس مع عزلها عند البحث الأعمى.,PROPOSAL,MEMORY_ISOLATION,CLOSED,OPEN,NOT_APPLICABLE,[],"[""CP-PRE-008""]",,[],[],Assistant proposal; remains open pending owner approval.,[]
+preanalysis,INT-PRE-A-010,,ASSISTANT,NON_OWNER_PROPOSAL,conversation:2026-09-06:pre-analysis-foundation-program,2026-09-06T03:50:00+03:00,اعتماد ترتيب تنفيذ افتراضي للبرنامج قبل حملة الجذور.,232ab2e9d790b743709c4cfb8dd1f4df6fa238c6ae65de4344caec7dee531649,ترتيب P1→P2→P3→P4→P5→P6→E1/E2/E3→P7→P8 ثم Scale.,PROPOSAL,EXECUTION_SEQUENCE,CLOSED,OPEN,NOT_APPLICABLE,[],"[""CP-PRE-009""]",,[],[],Assistant proposal; remains open pending owner approval.,[]
+preanalysis,INT-PRE-A-011,,ASSISTANT,NON_OWNER_PROPOSAL,conversation:2026-09-06:pre-analysis-foundation-program,2026-09-06T03:50:00+03:00,استخدام Checklist للجاهزية بدل Gate ثقيل جديد مبدئيًا.,fc218672de086c80f95972f34d5793104ef58d46f3dc6feba4ca4af478db8340,PRE_ANALYSIS_READINESS_CHECKLIST مع hard blockers محدودة فقط.,PROPOSAL,GOVERNANCE_SIMPLIFICATION,CLOSED,OPEN,NOT_APPLICABLE,[],"[""CP-PRE-010""]",,[],[],Assistant proposal; remains open pending owner approval.,[]
+preanalysis,INT-PRE-A-012,,ASSISTANT,NON_OWNER_PROPOSAL,conversation:2026-09-06:pre-analysis-foundation-program,2026-09-06T03:50:00+03:00,إعطاء آثار الحروف معالجة أكثر تحفظًا من الحقائق النصية والبنيوية.,03930662370dde93b9f7772d6a1df5a86e97543eaf15e1f586c005cf345fb6ca,إبقاء Letter Effects استكشافية حتى إثباتها عبر نطاق عابر للجذور.,PROPOSAL,LETTER_RESEARCH,CLOSED,OPEN,NOT_APPLICABLE,[],"[""CP-PRE-011""]",,[],[],Assistant proposal; remains open pending owner approval.,[]
+preanalysis,INT-PRE-A-013,,ASSISTANT,NON_OWNER_PROPOSAL,conversation:2026-09-06:pre-analysis-foundation-program,2026-09-06T03:50:00+03:00,استخدام مسار أعمى داخلي ومسار خارجي متوازٍ للجذور المهمة.,0074b182b9193a6f3eeaf75efea65a990a4d8432543b298117c42a0b0abf9709,اعتماد Dual-Lane على الأقل في المعايرة والجذور عالية الأهمية.,PROPOSAL,RESEARCH_WORKFLOW,CLOSED,OPEN,NOT_APPLICABLE,[],"[""CP-PRE-012""]",,[],[],Assistant proposal; remains open pending owner approval.,[]
+preanalysis,INT-PRE-REF-E1,,SYSTEM,SYSTEM_DERIVED,conversation:2026-09-06:pre-analysis-foundation-program,2026-09-06T03:50:00+03:00,المسار الخارجي لمعاني الجذور والمفاهيم المحورية سبق التقاطه.,5a0420acb4394cc89dda8e4d1d0af1abeee0da0fb139bf254f25c3d9cadfcaf7,Reference to owner-accepted external root-hypothesis scope.,REFERENCE_LINK,EXTERNAL_SOURCE_POLICY,CLOSED,ACCEPTED,PROPOSED_INTEGRATION,"[""01_PRE_ANALYSIS_FOUNDATION_PROGRAM_PROPOSAL.md"", ""05_INTEGRATION_MAPPING_TO_V2.1.md""]","[""INT-EXT-003 / CP-EXT-004""]",,[],[],No duplicate authority created; this row only links to an already captured owner directive.,[]
+preanalysis,INT-PRE-REF-E2,,SYSTEM,SYSTEM_DERIVED,conversation:2026-09-06:pre-analysis-foundation-program,2026-09-06T03:50:00+03:00,المسار الخارجي لآثار الصيغ والاشتقاقات سبق التقاطه.,e0324d9d0edf7d5b3fc317543990db111a7ce0113a34efb4b2f8a6242a66d89a,Reference to owner-accepted form-effect testing scope.,REFERENCE_LINK,EXTERNAL_SOURCE_POLICY,CLOSED,ACCEPTED,PROPOSED_INTEGRATION,"[""01_PRE_ANALYSIS_FOUNDATION_PROGRAM_PROPOSAL.md"", ""05_INTEGRATION_MAPPING_TO_V2.1.md""]","[""INT-EXT-007 / CP-EXT-008""]",,[],[],No duplicate authority created; this row only links to an already captured owner directive.,[]
+preanalysis,INT-PRE-REF-E3,,SYSTEM,SYSTEM_DERIVED,conversation:2026-09-06:pre-analysis-foundation-program,2026-09-06T03:50:00+03:00,المسار الخارجي لآثار الحروف سبق التقاطه.,a14458086bae6c66952a7b2bda98d3eaa4c75130db0ce573194cb440f8127f62,Reference to owner-accepted letter-effect testing scope.,REFERENCE_LINK,EXTERNAL_SOURCE_POLICY,CLOSED,ACCEPTED,PROPOSED_INTEGRATION,"[""01_PRE_ANALYSIS_FOUNDATION_PROGRAM_PROPOSAL.md"", ""05_INTEGRATION_MAPPING_TO_V2.1.md""]","[""INT-EXT-006 / CP-EXT-007""]",,[],[],No duplicate authority created; this row only links to an already captured owner directive.,[]
+master_v1.0.1_delta,INT-OWN-ROOT-002,INT-OWN-ROOT-001,OWNER,OWNER_DIRECTIVE,conversation:owner:root-semantic-unity-reaffirmation,2026-09-06T04:40:00+03:00,اغلب ماذكرته من عبارات وقواعد في الاجابة السابقة يستحق التوثيق والتثبيت,a6e90569ad6792b78d2d569d33b0e7dfb15e784e1c496920ff1c0d4f83050989,تثبيت جوهر قواعد وحدة معنى الجذر وحضوره الشامل وعدم قبول الاستثناء الاعتباطي أو الأغلبية أو تعدد المعاني الجذرية لجذر واحد ثابت، مع بقاء عدم الحسم عند العجز وعدم سلطة المصادر الخارجية على تغيير هذا الأصل.,METHODOLOGY_PRINCIPLE,ROOT_CONCEPT,CLOSED,ACCEPTED,IMPLEMENTED,"[""02_CURRENT_OWNER_DIRECTIVES/06_ROOT_SEMANTIC_UNITY_NON_NEGOTIABLE.md"", ""04_RUNTIME_PROMPTS/CURRENT_LISAN_METHODOLOGY_PROMPT.md"", ""04_RUNTIME_PROMPTS/CURRENT_SEMANTIC_CAMPAIGN_PROMPT.md"", ""07_ACCEPTANCE/MASTER_TEST_CATALOG.csv""]","[""INT-OWN-ROOT-001""]",OWNER_DIRECTIVE_CURRENT_TURN,[],[],Owner explicitly affirmed that the core rules in the prior answer deserve documentation and fixation. Only the core governing rules were promoted; illustrative wording remains explanatory.,"[""07_ACCEPTANCE/validate_master_package.py""]"
