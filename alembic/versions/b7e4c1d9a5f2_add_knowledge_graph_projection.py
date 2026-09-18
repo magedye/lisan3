@@ -27,7 +27,9 @@ def upgrade() -> None:
         sa.Column("projection_revision", sa.String(), nullable=False),
         sa.Column("created_at", sa.DateTime(), nullable=False),
         sa.PrimaryKeyConstraint("node_id"),
-        sa.UniqueConstraint("entity_type", "entity_id", name="uq_knowledge_node_entity"),
+        sa.UniqueConstraint(
+            "entity_type", "entity_id", name="uq_knowledge_node_entity"
+        ),
     )
     op.create_table(
         "knowledge_edges",

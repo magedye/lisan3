@@ -123,7 +123,17 @@ def seed_workspace(db, *, contaminated: bool = False):
         actor="TEST",
     )
     db.add_all(
-        [snapshot, run, isolation, observation, hypothesis, claim, rule, proposal, audit]
+        [
+            snapshot,
+            run,
+            isolation,
+            observation,
+            hypothesis,
+            claim,
+            rule,
+            proposal,
+            audit,
+        ]
     )
     db.commit()
     return run, claim, snapshot, proposal
@@ -196,4 +206,6 @@ def test_direct_judgment_and_overview_release_when_isolation_is_clean(test_db):
     assert judgment_response.status_code == 200
     assert judgment_response.json()["research_state"] == "PREFERRED"
     overview = overview_response.json()
-    assert [item["id"] for item in overview["canonicalization_candidates"]] == [claim.id]
+    assert [item["id"] for item in overview["canonicalization_candidates"]] == [
+        claim.id
+    ]

@@ -72,44 +72,87 @@ def upgrade() -> None:
         batch_op.drop_constraint("ck_semantic_claim_freshness_state", type_="check")
         batch_op.drop_constraint("ck_semantic_claim_publication_state", type_="check")
         batch_op.add_column(
-            sa.Column("research_state", sa.String(), nullable=False, server_default="UNRESOLVED")
+            sa.Column(
+                "research_state",
+                sa.String(),
+                nullable=False,
+                server_default="UNRESOLVED",
+            )
         )
         batch_op.add_column(
-            sa.Column("canonical_state", sa.String(), nullable=False, server_default="NOT_CANONICAL")
+            sa.Column(
+                "canonical_state",
+                sa.String(),
+                nullable=False,
+                server_default="NOT_CANONICAL",
+            )
         )
         batch_op.add_column(
-            sa.Column("result_strength", sa.String(), nullable=False, server_default="UNRESOLVED")
+            sa.Column(
+                "result_strength",
+                sa.String(),
+                nullable=False,
+                server_default="UNRESOLVED",
+            )
         )
         batch_op.add_column(
-            sa.Column("verification_state", sa.String(), nullable=False, server_default="NOT_REQUIRED")
+            sa.Column(
+                "verification_state",
+                sa.String(),
+                nullable=False,
+                server_default="NOT_REQUIRED",
+            )
         )
         batch_op.add_column(
-            sa.Column("falsification_status", sa.String(), nullable=False, server_default="NOT_REQUIRED")
+            sa.Column(
+                "falsification_status",
+                sa.String(),
+                nullable=False,
+                server_default="NOT_REQUIRED",
+            )
         )
         batch_op.add_column(
-            sa.Column("claim_scope", sa.String(), nullable=False, server_default="LOCAL")
+            sa.Column(
+                "claim_scope", sa.String(), nullable=False, server_default="LOCAL"
+            )
         )
         batch_op.add_column(sa.Column("sampling_basis", sa.String(), nullable=True))
         batch_op.add_column(
-            sa.Column("research_completeness", sa.JSON(), nullable=False, server_default="{}")
+            sa.Column(
+                "research_completeness", sa.JSON(), nullable=False, server_default="{}"
+            )
         )
-        batch_op.add_column(sa.Column("preferred_conclusion", sa.String(), nullable=True))
+        batch_op.add_column(
+            sa.Column("preferred_conclusion", sa.String(), nullable=True)
+        )
         batch_op.add_column(sa.Column("plain_explanation", sa.String(), nullable=True))
         batch_op.add_column(sa.Column("semantic_boundary", sa.String(), nullable=True))
         batch_op.add_column(
-            sa.Column("layer_attribution", sa.JSON(), nullable=False, server_default="{}")
+            sa.Column(
+                "layer_attribution", sa.JSON(), nullable=False, server_default="{}"
+            )
         )
         batch_op.add_column(
             sa.Column("hard_cases", sa.JSON(), nullable=False, server_default="[]")
         )
-        batch_op.add_column(sa.Column("strongest_counterexample", sa.String(), nullable=True))
-        batch_op.add_column(sa.Column("strongest_competitor", sa.String(), nullable=True))
         batch_op.add_column(
-            sa.Column("reopen_conditions", sa.JSON(), nullable=False, server_default="[]")
+            sa.Column("strongest_counterexample", sa.String(), nullable=True)
+        )
+        batch_op.add_column(
+            sa.Column("strongest_competitor", sa.String(), nullable=True)
+        )
+        batch_op.add_column(
+            sa.Column(
+                "reopen_conditions", sa.JSON(), nullable=False, server_default="[]"
+            )
         )
         batch_op.add_column(sa.Column("accepted_at", sa.DateTime(), nullable=True))
 
-    rows = bind.execute(sa.text("SELECT * FROM semantic_claims ORDER BY id")).mappings().all()
+    rows = (
+        bind.execute(sa.text("SELECT * FROM semantic_claims ORDER BY id"))
+        .mappings()
+        .all()
+    )
     for row in rows:
         old_epistemic = row["epistemic_state"]
         if old_epistemic == "REJECTED":
@@ -124,7 +167,9 @@ def upgrade() -> None:
         was_published = row["publication_state"] == "PUBLISHED"
         canonical_state = "REOPEN_REQUIRED" if was_published else "NOT_CANONICAL"
         verification_state = (
-            "NOT_VERIFIED" if research_state == "PREFERRED" or was_published else "NOT_REQUIRED"
+            "NOT_VERIFIED"
+            if research_state == "PREFERRED" or was_published
+            else "NOT_REQUIRED"
         )
         preferred_conclusion = (
             row["root_concept"]
@@ -155,7 +200,9 @@ def upgrade() -> None:
                 "canonical_state": canonical_state,
                 "result_strength": result_strength,
                 "verification_state": verification_state,
-                "falsification_status": "NOT_RUN" if research_state == "PREFERRED" else "NOT_REQUIRED",
+                "falsification_status": "NOT_RUN"
+                if research_state == "PREFERRED"
+                else "NOT_REQUIRED",
                 "completeness": json.dumps(completeness, sort_keys=True),
                 "preferred_conclusion": preferred_conclusion,
                 "plain_explanation": row["root_definition"] or row["root_meaning"],
@@ -181,7 +228,9 @@ def upgrade() -> None:
             "result_strength": result_strength,
             "verification_state": verification_state,
         }
-        digest = hashlib.sha256(f"{row['id']}|{json.dumps(before, sort_keys=True)}".encode()).hexdigest()[:20]
+        digest = hashlib.sha256(
+            f"{row['id']}|{json.dumps(before, sort_keys=True)}".encode()
+        ).hexdigest()[:20]
         bind.execute(
             sa.text(
                 "INSERT INTO audit_logs (id, entity_id, entity_type, action, previous_state, "
@@ -221,9 +270,15 @@ def upgrade() -> None:
             type_=sa.JSON(),
             existing_nullable=True,
         )
-        batch_op.alter_column("supporting_evidence", existing_type=sa.JSON(), nullable=False)
-        batch_op.alter_column("counterevidence", existing_type=sa.JSON(), nullable=False)
-        batch_op.alter_column("unresolved_cases", existing_type=sa.JSON(), nullable=False)
+        batch_op.alter_column(
+            "supporting_evidence", existing_type=sa.JSON(), nullable=False
+        )
+        batch_op.alter_column(
+            "counterevidence", existing_type=sa.JSON(), nullable=False
+        )
+        batch_op.alter_column(
+            "unresolved_cases", existing_type=sa.JSON(), nullable=False
+        )
         batch_op.create_check_constraint(
             "ck_semantic_claim_research_state",
             "research_state IN ('PREFERRED', 'UNRESOLVED', 'REJECTED')",
@@ -249,7 +304,9 @@ def upgrade() -> None:
             "claim_scope IN ('UNIVERSAL', 'REPRESENTATIVE', 'LOCAL')",
         )
 
-    gate_rows = bind.execute(sa.text("SELECT * FROM gate_reports ORDER BY id")).mappings().all()
+    gate_rows = (
+        bind.execute(sa.text("SELECT * FROM gate_reports ORDER BY id")).mappings().all()
+    )
     for row in gate_rows:
         payload = {
             key: (_json(row[key]) if key == "evidence_refs" else row[key])
@@ -335,13 +392,17 @@ def downgrade() -> None:
         sa.PrimaryKeyConstraint("id"),
     )
     op.create_index(op.f("ix_gate_reports_id"), "gate_reports", ["id"], unique=False)
-    gate_audits = bind.execute(
-        sa.text(
-            "SELECT id, new_state, created_at FROM audit_logs "
-            "WHERE action='ARCHIVE_RETIRED_RESEARCH_GATE' "
-            "AND actor='ALEMBIC_F1A6C3D9E204'"
+    gate_audits = (
+        bind.execute(
+            sa.text(
+                "SELECT id, new_state, created_at FROM audit_logs "
+                "WHERE action='ARCHIVE_RETIRED_RESEARCH_GATE' "
+                "AND actor='ALEMBIC_F1A6C3D9E204'"
+            )
         )
-    ).mappings().all()
+        .mappings()
+        .all()
+    )
     for audit in gate_audits:
         payload = json.loads(audit["new_state"])
         bind.execute(
@@ -391,21 +452,35 @@ def downgrade() -> None:
         batch_op.add_column(sa.Column("freshness_state", sa.String(), nullable=True))
         batch_op.add_column(sa.Column("publication_state", sa.String(), nullable=True))
         batch_op.add_column(sa.Column("index_coverage", sa.String(), nullable=True))
-        batch_op.add_column(sa.Column("deep_analysis_coverage", sa.String(), nullable=True))
+        batch_op.add_column(
+            sa.Column("deep_analysis_coverage", sa.String(), nullable=True)
+        )
         batch_op.add_column(sa.Column("abstract_root_core", sa.String(), nullable=True))
         batch_op.add_column(sa.Column("root_definition", sa.String(), nullable=True))
         batch_op.add_column(sa.Column("root_meaning", sa.String(), nullable=True))
 
-    rows = bind.execute(sa.text("SELECT * FROM semantic_claims ORDER BY id")).mappings().all()
+    rows = (
+        bind.execute(sa.text("SELECT * FROM semantic_claims ORDER BY id"))
+        .mappings()
+        .all()
+    )
     for row in rows:
         epistemic = {
             "PREFERRED": "LOCK_INTERNAL_RESULT",
             "REJECTED": "REJECTED",
             "UNRESOLVED": "UNRESOLVED",
         }[row["research_state"]]
-        review = "APPROVED" if row["verification_state"] == "VERIFIED" else "NOT_REVIEWED"
-        freshness = "REVALIDATION_REQUIRED" if row["canonical_state"] == "REOPEN_REQUIRED" else "CURRENT"
-        publication = "PUBLISHED" if row["canonical_state"] == "ACCEPTED" else "PRIVATE_WORKING"
+        review = (
+            "APPROVED" if row["verification_state"] == "VERIFIED" else "NOT_REVIEWED"
+        )
+        freshness = (
+            "REVALIDATION_REQUIRED"
+            if row["canonical_state"] == "REOPEN_REQUIRED"
+            else "CURRENT"
+        )
+        publication = (
+            "PUBLISHED" if row["canonical_state"] == "ACCEPTED" else "PRIVATE_WORKING"
+        )
         completeness = _json(row["research_completeness"]) or {}
         bind.execute(
             sa.text(
@@ -455,9 +530,13 @@ def downgrade() -> None:
             type_=sa.String(),
             existing_nullable=True,
         )
-        batch_op.alter_column("supporting_evidence", existing_type=sa.JSON(), nullable=True)
+        batch_op.alter_column(
+            "supporting_evidence", existing_type=sa.JSON(), nullable=True
+        )
         batch_op.alter_column("counterevidence", existing_type=sa.JSON(), nullable=True)
-        batch_op.alter_column("unresolved_cases", existing_type=sa.JSON(), nullable=True)
+        batch_op.alter_column(
+            "unresolved_cases", existing_type=sa.JSON(), nullable=True
+        )
         batch_op.create_check_constraint(
             "ck_semantic_claim_epistemic_state",
             "epistemic_state IN ('OBSERVATION', 'HYPOTHESIS', 'TESTED', 'SUPPORTED', "
@@ -477,7 +556,12 @@ def downgrade() -> None:
             "publication_state IN ('PRIVATE_WORKING', 'REVIEWABLE', 'PUBLISHABLE', "
             "'PUBLISHED', 'WITHDRAWN')",
         )
-        for column in ("epistemic_state", "review_state", "freshness_state", "publication_state"):
+        for column in (
+            "epistemic_state",
+            "review_state",
+            "freshness_state",
+            "publication_state",
+        ):
             batch_op.alter_column(column, existing_type=sa.String(), nullable=False)
 
     bind.execute(
@@ -487,7 +571,10 @@ def downgrade() -> None:
             "AND actor='ALEMBIC_F1A6C3D9E204'"
         )
     )
-    bind.execute(sa.text("DELETE FROM methodology_revisions WHERE id=:id"), {"id": NEW_REVISION_ID})
+    bind.execute(
+        sa.text("DELETE FROM methodology_revisions WHERE id=:id"),
+        {"id": NEW_REVISION_ID},
+    )
     bind.execute(
         sa.text(
             "UPDATE methodology_revisions SET lifecycle_state='CURRENT', research_run_eligible=1 "

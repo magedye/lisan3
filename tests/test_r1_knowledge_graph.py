@@ -169,7 +169,9 @@ def test_dependency_projection_matches_its_governed_source(graph_sources, monkey
     allow_graph_access(monkeypatch)
     projection = rebuild_via_api(graph_sources["run_id"])
     dependency_edges = [
-        edge for edge in projection["edges"] if edge["provenance_ref"].startswith("dependency_record:dep_r1")
+        edge
+        for edge in projection["edges"]
+        if edge["provenance_ref"].startswith("dependency_record:dep_r1")
     ]
     assert len(dependency_edges) == 2
     assert all(edge["edge_type"] == "DEPENDS_ON" for edge in dependency_edges)
@@ -265,7 +267,9 @@ def test_rebuild_removes_projection_when_run_becomes_ineligible(
         db.close()
 
 
-def test_networkx_analysis_reconstructs_from_persisted_projection(graph_sources, monkeypatch):
+def test_networkx_analysis_reconstructs_from_persisted_projection(
+    graph_sources, monkeypatch
+):
     allow_graph_access(monkeypatch)
     rebuild_via_api(graph_sources["run_id"])
     db = TestingSessionLocal()
@@ -410,7 +414,10 @@ def test_stale_projection_is_replaced_after_source_deletion(graph_sources, monke
     finally:
         db.close()
     rebuilt = rebuild_via_api(graph_sources["run_id"])
-    assert not any(edge["provenance_ref"].startswith("dependency_record:dep_r1") for edge in rebuilt["edges"])
+    assert not any(
+        edge["provenance_ref"].startswith("dependency_record:dep_r1")
+        for edge in rebuilt["edges"]
+    )
 
 
 def test_graph_scope_does_not_expose_another_run(graph_sources, monkeypatch):
@@ -426,7 +433,9 @@ def test_graph_scope_does_not_expose_another_run(graph_sources, monkeypatch):
             authority_context={"source": "test"},
         )
         other_claim = models.SemanticClaim(
-            id="claim_other", research_run_id=other_run.id, contract_type="LOCAL_MEANING"
+            id="claim_other",
+            research_run_id=other_run.id,
+            contract_type="LOCAL_MEANING",
         )
         db.add_all([other_run, other_claim])
         db.commit()
@@ -437,9 +446,7 @@ def test_graph_scope_does_not_expose_another_run(graph_sources, monkeypatch):
     assert "node::SEMANTIC_CLAIM::claim_other" not in node_ids
     db = TestingSessionLocal()
     try:
-        assert (
-            db.get(models.KnowledgeNode, "node::SEMANTIC_CLAIM::claim_other") is None
-        )
+        assert db.get(models.KnowledgeNode, "node::SEMANTIC_CLAIM::claim_other") is None
     finally:
         db.close()
 
@@ -530,8 +537,13 @@ def test_candidate_edge_cannot_be_promoted_or_presented_as_established(
         db.close()
     response = client.get(f"/runs/{graph_sources['run_id']}/knowledge-graph")
     assert response.status_code == 200
-    candidate_response = next(edge for edge in response.json()["edges"] if edge["edge_id"] == "candidate_r1")
-    assert candidate_response["presentation_label"] == "DISCOVERY_CANDIDATE_NOT_ESTABLISHED"
+    candidate_response = next(
+        edge for edge in response.json()["edges"] if edge["edge_id"] == "candidate_r1"
+    )
+    assert (
+        candidate_response["presentation_label"]
+        == "DISCOVERY_CANDIDATE_NOT_ESTABLISHED"
+    )
 
 
 @pytest.mark.parametrize(
@@ -544,11 +556,17 @@ def test_candidate_edge_cannot_be_promoted_or_presented_as_established(
 )
 def test_edge_origin_presentation_labels_preserve_authority(origin, expected_label):
     edge = models.KnowledgeEdge(edge_origin=origin)
-    assert knowledge_graph.KnowledgeGraphService.presentation_label(edge) == expected_label
+    assert (
+        knowledge_graph.KnowledgeGraphService.presentation_label(edge) == expected_label
+    )
 
 
 @settings(max_examples=12, deadline=None)
-@given(edge_type=st.text(min_size=1, max_size=24).filter(lambda value: value not in {item.value for item in models.GraphEdgeType}))
+@given(
+    edge_type=st.text(min_size=1, max_size=24).filter(
+        lambda value: value not in {item.value for item in models.GraphEdgeType}
+    )
+)
 def test_unsupported_graph_vocabulary_fails_closed(edge_type):
     db = TestingSessionLocal()
     try:

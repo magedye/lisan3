@@ -21,9 +21,7 @@ from backend.domain.services.corpus.qac import QACAdapter
 from backend.domain.services.corpus.tanzil import TanzilAdapter, TanzilArtifactParser
 
 TANZIL_IMPORT_REVISION = "tanzil-one-verse-per-line-v1"
-TANZIL_PROVENANCE = (
-    "docs/canonical/ADMISSION_TANZIL.md#artifact-provenance"
-)
+TANZIL_PROVENANCE = "docs/canonical/ADMISSION_TANZIL.md#artifact-provenance"
 
 
 @dataclass(frozen=True)
@@ -196,9 +194,7 @@ class TanzilPreActivationImporter:
             identity_index_reference=admission.identity_index_reference,
             identity_index_sha256=parsed.identity_index_sha256,
             verse_count=len(parsed.verses),
-            canon_001_reconciliation=(
-                CANON_001_ARTIFACT_IDENTITY_MATCH_CONFIRMED
-            ),
+            canon_001_reconciliation=(CANON_001_ARTIFACT_IDENTITY_MATCH_CONFIRMED),
             fixture_only=False,
             created_at=verified_at,
         )
@@ -250,9 +246,7 @@ class TanzilPreActivationImporter:
             "identity_index_reference": admission.identity_index_reference,
             "identity_index_sha256": admission.identity_index_sha256,
             "verse_count": admission.expected_verse_count,
-            "canon_001_reconciliation": (
-                CANON_001_ARTIFACT_IDENTITY_MATCH_CONFIRMED
-            ),
+            "canon_001_reconciliation": (CANON_001_ARTIFACT_IDENTITY_MATCH_CONFIRMED),
             "fixture_only": False,
             "validation_status": "PENDING",
         }

@@ -54,9 +54,7 @@ def test_real_tanzil_artifact_reconciles_every_canonical_identity():
     [
         lambda data: data[:-1],
         lambda data: data + "آية زائدة\n".encode(),
-        lambda data: unicodedata.normalize(
-            "NFC", data.decode("utf-8")
-        ).encode("utf-8"),
+        lambda data: unicodedata.normalize("NFC", data.decode("utf-8")).encode("utf-8"),
     ],
     ids=("truncated", "extra-record", "unicode-normalized"),
 )
@@ -68,9 +66,7 @@ def test_changed_tanzil_bytes_fail_the_authority_bound_hash(mutate):
 
 
 def test_malformed_utf8_fails_even_under_a_matching_test_authority():
-    raw_bytes = RAW_PATH.read_bytes().replace(
-        "بِسْمِ".encode(), b"\xff", 1
-    )
+    raw_bytes = RAW_PATH.read_bytes().replace("بِسْمِ".encode(), b"\xff", 1)
     index = json.loads(INDEX_PATH.read_text(encoding="utf-8"))
     admission, index_bytes = _authority_for(raw_bytes, index)
 
@@ -79,9 +75,7 @@ def test_malformed_utf8_fails_even_under_a_matching_test_authority():
 
 
 def test_malformed_record_fails_even_under_a_matching_test_authority():
-    raw_bytes = RAW_PATH.read_bytes().replace(
-        "بِسْمِ".encode(), b"\t" + "بِسْمِ".encode(), 1
-    )
+    raw_bytes = RAW_PATH.read_bytes().replace("بِسْمِ".encode(), b"\t" + "بِسْمِ".encode(), 1)
     index = json.loads(INDEX_PATH.read_text(encoding="utf-8"))
     admission, index_bytes = _authority_for(raw_bytes, index)
 
@@ -91,9 +85,9 @@ def test_malformed_record_fails_even_under_a_matching_test_authority():
 
 def test_wrong_authority_verse_count_fails_closed():
     with pytest.raises(ValueError, match="verse_count does not match authority"):
-        TanzilArtifactParser(
-            replace(_admission(), expected_verse_count=6_235)
-        ).parse(RAW_PATH.read_bytes(), INDEX_PATH.read_bytes())
+        TanzilArtifactParser(replace(_admission(), expected_verse_count=6_235)).parse(
+            RAW_PATH.read_bytes(), INDEX_PATH.read_bytes()
+        )
 
 
 @pytest.mark.parametrize(
@@ -134,6 +128,6 @@ def test_wrong_source_or_version_cannot_use_tanzil_parser():
             raw_bytes, index_bytes
         )
     with pytest.raises(ValueError, match="Wrong canonical Tanzil version"):
-        TanzilArtifactParser(
-            replace(_admission(), canonical_text_version="0.0")
-        ).parse(raw_bytes, index_bytes)
+        TanzilArtifactParser(replace(_admission(), canonical_text_version="0.0")).parse(
+            raw_bytes, index_bytes
+        )

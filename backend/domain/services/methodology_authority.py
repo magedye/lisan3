@@ -37,7 +37,9 @@ def methodology_authority_failures(
             f"Methodology revision lifecycle is '{lifecycle_state}', expected 'CURRENT'"
         )
     if not research_run_eligible:
-        failures.append("Methodology revision is not eligible for ResearchRun admission")
+        failures.append(
+            "Methodology revision is not eligible for ResearchRun admission"
+        )
     if allowed_use != QURAN_INTERNAL_CUMULATIVE_RUN:
         failures.append(
             "Methodology revision is not approved for QURAN_INTERNAL_CUMULATIVE_RUN"
@@ -51,7 +53,9 @@ def methodology_authority_failures(
     else:
         actual_sha256 = hashlib.sha256(source_path.read_bytes()).hexdigest()
         if actual_sha256 != source_sha256:
-            failures.append("Methodology source artifact hash does not match its revision")
+            failures.append(
+                "Methodology source artifact hash does not match its revision"
+            )
     return failures
 
 

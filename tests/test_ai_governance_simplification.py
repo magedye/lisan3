@@ -15,7 +15,6 @@ from backend.domain.services.corpus.authority import CANONICAL_CORPUS_ADMISSIONS
 from backend.infrastructure.database import Base, get_db
 from backend.main import app
 
-
 engine = create_engine(
     "sqlite:///:memory:",
     connect_args={"check_same_thread": False},
@@ -196,7 +195,9 @@ def preferred_payload(
         "contract_type": contract,
         "research_state": "PREFERRED",
         "claim_scope": scope,
-        "sampling_basis": "عينة تغطي الأنماط المسجلة" if scope == "REPRESENTATIVE" else None,
+        "sampling_basis": "عينة تغطي الأنماط المسجلة"
+        if scope == "REPRESENTATIVE"
+        else None,
         "result_strength": strength,
         "preferred_conclusion": "ترجيح دلالي مضبوط قابل للدحض",
         "root_concept": "مفهوم جذري اختباري" if contract == "ROOT_CONCEPT" else None,
@@ -388,15 +389,24 @@ def test_unavailable_diagnostics_and_tools_are_honest_non_gates():
     response = client.post(
         f"/runs/{run_id}/judgments",
         json=preferred_payload(
-            "LEXEME", [f"observation:{observation_id}"], {"root": "كتب", "lexeme": "كتاب"}
+            "LEXEME",
+            [f"observation:{observation_id}"],
+            {"root": "كتب", "lexeme": "كتاب"},
         ),
     )
     claim_id = response.json()["id"]
     diagnostics = client.get(f"/judgments/{claim_id}/diagnostics")
     assert diagnostics.status_code == 200
-    assert len(
-        [item for item in diagnostics.json()["findings"] if item["status"] == "NOT_EVALUATED"]
-    ) == 8
+    assert (
+        len(
+            [
+                item
+                for item in diagnostics.json()["findings"]
+                if item["status"] == "NOT_EVALUATED"
+            ]
+        )
+        == 8
+    )
     assert diagnostics.json()["hard_blockers"] == []
     assert tool_dispatcher.get_available_tools() == {}
     assert "/runs/{run_id}/gates" not in app.openapi()["paths"]
@@ -407,7 +417,9 @@ def test_ai_runtime_can_persist_judgment_but_has_no_acceptance_transition(monkey
     observation_id = add_observation(run_id, "occ-local")
     output = schemas.ResearchJudgmentCreate.model_validate(
         preferred_payload(
-            "LEXEME", [f"observation:{observation_id}"], {"root": "كتب", "lexeme": "كتاب"}
+            "LEXEME",
+            [f"observation:{observation_id}"],
+            {"root": "كتب", "lexeme": "كتاب"},
         )
     )
 
@@ -424,4 +436,6 @@ def test_ai_runtime_can_persist_judgment_but_has_no_acceptance_transition(monkey
     assert response.json()["status"] == "CREATED"
     assert response.json()["judgment"]["canonical_state"] == "NOT_CANONICAL"
     assert response.json()["trace"]["tools_available"] == []
-    assert all("canonicalize" not in path for path in app.openapi()["paths"] if "/ai/" in path)
+    assert all(
+        "canonicalize" not in path for path in app.openapi()["paths"] if "/ai/" in path
+    )

@@ -117,7 +117,9 @@ def resolve_evidence_refs(
         if kind == "occurrence":
             item = db.get(models.CorpusOccurrence, entity_id)
             if item is None or item.snapshot_id != run.corpus_snapshot:
-                reasons.append(f"Evidence reference '{ref}' is absent or outside the run corpus")
+                reasons.append(
+                    f"Evidence reference '{ref}' is absent or outside the run corpus"
+                )
             else:
                 occurrence_ids.add(str(item.id))
         elif kind == "token":
@@ -133,13 +135,18 @@ def resolve_evidence_refs(
                 reasons.append(f"Evidence reference '{ref}' is absent or cross-run")
             else:
                 occurrence = db.get(models.CorpusOccurrence, item.occurrence_ref)
-                if occurrence is not None and occurrence.snapshot_id == run.corpus_snapshot:
+                if (
+                    occurrence is not None
+                    and occurrence.snapshot_id == run.corpus_snapshot
+                ):
                     occurrence_ids.add(str(occurrence.id))
                 elif str(item.occurrence_ref) in confirmed():
                     # A word-level observation references a confirmed token word_ref.
                     token_word_refs.add(str(item.occurrence_ref))
                 else:
-                    reasons.append(f"Observation evidence '{ref}' has invalid occurrence lineage")
+                    reasons.append(
+                        f"Observation evidence '{ref}' has invalid occurrence lineage"
+                    )
         elif kind == "hypothesis":
             item = db.get(models.Hypothesis, entity_id)
             if item is None or item.research_run_id != run.id:
@@ -147,7 +154,11 @@ def resolve_evidence_refs(
         elif kind == "neighbor":
             item = db.get(models.EssentialNeighbor, entity_id)
             hypothesis = db.get(models.Hypothesis, item.hypothesis_id) if item else None
-            if item is None or hypothesis is None or hypothesis.research_run_id != run.id:
+            if (
+                item is None
+                or hypothesis is None
+                or hypothesis.research_run_id != run.id
+            ):
                 reasons.append(f"Evidence reference '{ref}' is absent or cross-run")
         else:
             reasons.append(f"Evidence reference type '{kind}' is not admissible")
@@ -271,9 +282,9 @@ def _required_layers(contract_type: str) -> set[str]:
 def evaluate_judgment(
     db: Session, run: models.ResearchRun, judgment: schemas.ResearchJudgmentCreate
 ) -> JudgmentDecision:
-    refs = list(dict.fromkeys(
-        judgment.supporting_evidence_refs + judgment.counterevidence_refs
-    ))
+    refs = list(
+        dict.fromkeys(judgment.supporting_evidence_refs + judgment.counterevidence_refs)
+    )
     evidence = resolve_evidence_refs(db, run, refs)
     # Coverage is derived from SUPPORTING evidence only. A counterevidence
     # occurrence is an occurrence the concept fails to explain; it must never
@@ -307,7 +318,9 @@ def evaluate_judgment(
         if not completeness["sufficient_for_claim"]:
             reasons.append("Host-derived coverage is insufficient for the claim scope")
         if judgment.rejection_condition is None:
-            reasons.append("A preferred judgment requires a structured rejection condition")
+            reasons.append(
+                "A preferred judgment requires a structured rejection condition"
+            )
         if judgment.falsification_status != models.FalsificationStatus.PASSED:
             reasons.append("A preferred judgment requires passed falsification")
         if not judgment.strongest_competitor:
@@ -381,9 +394,11 @@ class ResearchJudgmentService:
                 dependency_ref=run.corpus_snapshot,
             )
         )
-        for ref in list(dict.fromkeys(
-            judgment.supporting_evidence_refs + judgment.counterevidence_refs
-        )):
+        for ref in list(
+            dict.fromkeys(
+                judgment.supporting_evidence_refs + judgment.counterevidence_refs
+            )
+        ):
             db.add(
                 models.DependencyRecord(
                     id=f"dep_{uuid.uuid4().hex[:8]}",

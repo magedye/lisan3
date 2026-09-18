@@ -59,8 +59,9 @@ def test_wrong_schema_is_rejected_before_any_convergence_mutation(tmp_path):
     database_path = tmp_path / "wrong-schema.db"
     engine = create_engine(_database_url(database_path))
     try:
-        with Session(engine) as db, pytest.raises(
-            ConvergenceError, match="schema is not CURRENT"
+        with (
+            Session(engine) as db,
+            pytest.raises(ConvergenceError, match="schema is not CURRENT"),
         ):
             converge(db, evidence=_evidence(database_path))
     finally:

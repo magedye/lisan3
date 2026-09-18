@@ -69,13 +69,21 @@ def isolation_attestation_failures(
         failures.append("Source isolation attestation audit record is missing")
         return failures
     if audit.entity_id != run.id or audit.entity_type != "IsolationState":
-        failures.append("Source isolation attestation audit does not bind this ResearchRun")
+        failures.append(
+            "Source isolation attestation audit does not bind this ResearchRun"
+        )
     if audit.action != "ESTABLISH_SOURCE_ISOLATION" or audit.new_state != ESTABLISHED:
-        failures.append("Source isolation attestation audit has the wrong establishment action")
+        failures.append(
+            "Source isolation attestation audit has the wrong establishment action"
+        )
     if audit.actor != state.attesting_actor:
-        failures.append("Source isolation attestation actor does not match audit record")
+        failures.append(
+            "Source isolation attestation actor does not match audit record"
+        )
     if audit.created_at != state.attested_at:
-        failures.append("Source isolation attestation timestamp does not match audit record")
+        failures.append(
+            "Source isolation attestation timestamp does not match audit record"
+        )
     return failures
 
 
@@ -195,7 +203,9 @@ class BlindLabIsolationService:
             entity_type="IsolationState",
             action="ESTABLISH_SOURCE_ISOLATION",
             previous_state=(
-                str(state.establishment_status) if state is not None else NOT_ESTABLISHED
+                str(state.establishment_status)
+                if state is not None
+                else NOT_ESTABLISHED
             ),
             new_state=ESTABLISHED,
             actor=actor,

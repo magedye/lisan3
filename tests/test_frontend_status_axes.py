@@ -4,11 +4,7 @@ import pytest
 
 HOME_PAGE = Path(__file__).parents[1] / "frontend" / "src" / "app" / "page.tsx"
 STATUS_COMPONENT = (
-    Path(__file__).parents[1]
-    / "frontend"
-    / "src"
-    / "components"
-    / "status-axes.tsx"
+    Path(__file__).parents[1] / "frontend" / "src" / "components" / "status-axes.tsx"
 )
 # The simplified contract replaces the four independent lifecycle axes with the
 # two decision-bearing states (research + canonical) plus optional strength and

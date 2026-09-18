@@ -1,11 +1,11 @@
 import json
 import sqlite3
 
-conn = sqlite3.connect('lisanapp.db')
+conn = sqlite3.connect("lisanapp.db")
 c = conn.cursor()
 
-manifest = json.load(open('artifacts/semantic-campaign/BATCH_08_MANIFEST.json'))
-batch08_roots = [r['root_buckwalter'] for r in manifest['roots']]
+manifest = json.load(open("artifacts/semantic-campaign/BATCH_08_MANIFEST.json"))
+batch08_roots = [r["root_buckwalter"] for r in manifest["roots"]]
 
 runs = c.execute("SELECT id, target_expression FROM research_runs").fetchall()
 b08_runs = [r for r in runs if r[1] in batch08_roots]

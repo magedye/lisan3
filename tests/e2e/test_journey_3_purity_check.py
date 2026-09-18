@@ -41,11 +41,8 @@ def test_journey_3_purity_check(page: Page, e2e_server: dict, monkeypatch):
             id="clm_trace_01",
             research_run_id="run_trace_01",
             contract_type="ROOT_CORE",
-            abstract_root_core="الرقة والتعطف الدال على الإحسان",
-            epistemic_state="LOCK_INTERNAL_RESULT",
-            review_state="NOT_REVIEWED",
-            freshness_state="CURRENT",
-            publication_state="PRIVATE_WORKING",
+            research_state="PREFERRED",
+            canonical_state="NOT_CANONICAL",
         )
         db.add(claim)
 
@@ -65,7 +62,7 @@ def test_journey_3_purity_check(page: Page, e2e_server: dict, monkeypatch):
             actor="RESEARCHER",
         )
         db.add(audit)
-        
+
         hyp = models.Hypothesis(
             id="hyp_trace_01",
             research_run_id="run_trace_01",
@@ -79,7 +76,8 @@ def test_journey_3_purity_check(page: Page, e2e_server: dict, monkeypatch):
         db.close()
 
     monkeypatch.setattr(
-        "backend.domain.services.claim_visibility.has_valid_gate", lambda *_args: True
+        "backend.domain.services.claim_visibility.ClaimReleasePolicy.evaluate_run",
+        lambda *_args: type("ReleaseDecision", (), {"released": True})(),
     )
 
     # 1. Verify Claim Provenance Read Model
@@ -90,11 +88,11 @@ def test_journey_3_purity_check(page: Page, e2e_server: dict, monkeypatch):
     expect(page.locator("#prov-deps")).to_contain_text("1 dependencies")
     expect(page.locator("#prov-audit")).to_contain_text("LOCK_INTERNAL")
 
-    # 2. Verify Multidimensional Quality & 8-Dimension Purity Report
-    expect(page.locator("#qual-rating")).to_contain_text("CONTAMINATED")
+    # 2. Verify Multidimensional Quality & 8-Dimension Diagnostics Report
     expect(page.locator("#qual-findings")).to_contain_text("8 findings")
-    expect(page.locator("#quality-availability")).to_contain_text("UNAVAILABLE")
-    expect(page.get_by_text("QualityProfile unavailable", exact=False)).to_be_visible()
+    expect(page.get_by_text("Hard blockers").first).to_be_visible()
+    expect(page.get_by_text("DICTIONARY_FIRST")).to_be_visible()
+    expect(page.get_by_text("FLAGGED")).to_be_visible()
 
     # 3. Verify Reproduction Manifest
     expect(page.locator("#man-corpus")).to_contain_text("snap_tanzil_01")

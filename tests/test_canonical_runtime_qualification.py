@@ -72,7 +72,9 @@ def governed_db():
         seed_production_valid_tanzil_snapshot(db)
         seed_current_methodology(db)
         # Word-level occurrence identity for the synthetic smoke root.
-        seed_structural_tokens(db, AUTHORIZED_TANZIL_SNAPSHOT, SMOKE_ROOT, SMOKE_WORD_REFS)
+        seed_structural_tokens(
+            db, AUTHORIZED_TANZIL_SNAPSHOT, SMOKE_ROOT, SMOKE_WORD_REFS
+        )
         # A DISPUTED (non-confirmed) occurrence of the same root.
         seed_structural_tokens(
             db,
@@ -264,15 +266,25 @@ def test_completeness_is_word_level_and_host_derived():
         eligible = set(confirmed_word_refs(db, run.corpus_snapshot, SMOKE_ROOT))
         assert eligible == set(SMOKE_WORD_REFS)  # DISPUTED + other-root excluded
         full = derive_completeness(
-            db, run, "UNIVERSAL", None,
-            frozenset(), frozenset(SMOKE_WORD_REFS), "ROOT_CONCEPT",
+            db,
+            run,
+            "UNIVERSAL",
+            None,
+            frozenset(),
+            frozenset(SMOKE_WORD_REFS),
+            "ROOT_CONCEPT",
         )
         assert full["occurrence_unit"] == "word_ref"
         assert full["eligible_occurrence_count"] == 3
         assert full["sufficient_for_claim"] is True
         partial = derive_completeness(
-            db, run, "UNIVERSAL", None,
-            frozenset(), frozenset(SMOKE_WORD_REFS[:2]), "ROOT_CONCEPT",
+            db,
+            run,
+            "UNIVERSAL",
+            None,
+            frozenset(),
+            frozenset(SMOKE_WORD_REFS[:2]),
+            "ROOT_CONCEPT",
         )
         assert partial["sufficient_for_claim"] is False
 
@@ -456,7 +468,10 @@ def test_control_rejects_wrong_isolation_audit_action():
         db.commit()
         accepted, reasons = _evaluate(db, claim_id)
         assert not accepted
-        assert "Source isolation attestation audit has the wrong establishment action" in reasons
+        assert (
+            "Source isolation attestation audit has the wrong establishment action"
+            in reasons
+        )
 
 
 def test_control_rejects_isolation_attestation_for_wrong_run():
@@ -510,7 +525,10 @@ def test_control_rejects_forged_isolation_attestation_timestamp():
         db.commit()
         accepted, reasons = _evaluate(db, claim_id)
         assert not accepted
-        assert "Source isolation attestation timestamp does not match audit record" in reasons
+        assert (
+            "Source isolation attestation timestamp does not match audit record"
+            in reasons
+        )
 
 
 def test_control_rejects_missing_isolation_attestation_manifest():

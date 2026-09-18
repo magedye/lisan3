@@ -1,19 +1,20 @@
-import json
-import sqlite3
 import hashlib
 import os
+import sqlite3
 import subprocess
+
 
 def run_cmd(cmd):
     return subprocess.check_output(cmd, shell=True, text=True).strip()
 
-db_path = 'lisanapp.db'
+
+db_path = "lisanapp.db"
 if not os.path.exists(db_path):
     print("No DB")
     exit(1)
 
 # DB Hash before
-db_hash_before = hashlib.sha256(open(db_path, 'rb').read()).hexdigest()
+db_hash_before = hashlib.sha256(open(db_path, "rb").read()).hexdigest()
 
 conn = sqlite3.connect(db_path)
 c = conn.cursor()
@@ -23,7 +24,9 @@ c.execute("SELECT id, target_expression FROM research_runs WHERE id LIKE 'run_%'
 runs = c.fetchall()
 
 # Phase 8 - Claims
-c.execute("SELECT id, research_run_id, revision_id FROM semantic_claims WHERE id LIKE 'claim_%'")
+c.execute(
+    "SELECT id, research_run_id, revision_id FROM semantic_claims WHERE id LIKE 'claim_%'"
+)
 claims = c.fetchall()
 
 # Phase 12 - VerificationRecords
@@ -43,5 +46,5 @@ print(f"Claims: {len(claims)}")
 print(f"Verifications: {len(verifications)}")
 print(f"Observations: {obs_count}")
 
-db_hash_after = hashlib.sha256(open(db_path, 'rb').read()).hexdigest()
+db_hash_after = hashlib.sha256(open(db_path, "rb").read()).hexdigest()
 print(f"DB Hash Match: {db_hash_before == db_hash_after}")

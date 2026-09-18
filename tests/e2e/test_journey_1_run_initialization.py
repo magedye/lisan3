@@ -24,14 +24,7 @@ def test_journey_1_run_initialization(page: Page, e2e_server: dict):
     # Expect insufficient evidence message
     expect(page.locator("h3:has-text('Insufficient Evidence')")).to_be_visible()
 
-    # 2. Only the exact active Corpus and eligible Methodology are selectable.
-    methodology = page.locator("#run-methodology")
-    corpus = page.locator("#run-corpus")
-    expect(methodology.locator("option")).to_have_count(2)
-    expect(corpus.locator("option")).to_have_count(2)
-    methodology.select_option("LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4")
-    corpus.select_option("snap_tanzil_1_1_ac0724796cbb")
-
+    # 2. Methodology and Corpus are resolved automatically by the host.
     rejected = page.request.post(
         f"{e2e_server['api_url']}/runs",
         data={

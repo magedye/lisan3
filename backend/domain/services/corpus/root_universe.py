@@ -116,7 +116,8 @@ class RootUniverseService:
                         "occurrence_count": len(confirmed),
                         "form_diversity": len(forms),
                         "surah_spread": len(surahs),
-                        "structural_uncertainty": int(has_disputed) + int(has_unresolved),
+                        "structural_uncertainty": int(has_disputed)
+                        + int(has_unresolved),
                     },
                 )
             )

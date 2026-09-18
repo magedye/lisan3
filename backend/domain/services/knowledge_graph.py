@@ -52,7 +52,9 @@ class KnowledgeGraphService:
 
     @staticmethod
     def require_read_access(db: Session, run_id: str) -> models.ResearchRun:
-        run = db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
+        run = (
+            db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
+        )
         if run is None:
             raise GraphSourceNotFound(run_id)
         decision = ClaimReleasePolicy.evaluate_run(db, run_id)
@@ -117,11 +119,15 @@ class KnowledgeGraphService:
 
         snapshots = {
             snapshot.id: snapshot
-            for snapshot in db.query(models.CorpusSnapshot).order_by(models.CorpusSnapshot.id)
+            for snapshot in db.query(models.CorpusSnapshot).order_by(
+                models.CorpusSnapshot.id
+            )
         }
         rules = {
             rule.rule_code: rule
-            for rule in db.query(models.GovernanceRule).order_by(models.GovernanceRule.rule_code)
+            for rule in db.query(models.GovernanceRule).order_by(
+                models.GovernanceRule.rule_code
+            )
         }
         runs = [
             run
@@ -134,7 +140,9 @@ class KnowledgeGraphService:
             if claim.research_run_id:
                 claims_by_run.setdefault(claim.research_run_id, []).append(claim)
         dependencies_by_claim: dict[str, list[models.DependencyRecord]] = {}
-        for dependency in db.query(models.DependencyRecord).order_by(models.DependencyRecord.id):
+        for dependency in db.query(models.DependencyRecord).order_by(
+            models.DependencyRecord.id
+        ):
             dependencies_by_claim.setdefault(dependency.dependent_claim_id, []).append(
                 dependency
             )
@@ -231,8 +239,15 @@ class KnowledgeGraphService:
 
     @staticmethod
     def _scoped_node_ids(db: Session, run: models.ResearchRun) -> set[str]:
-        scoped = {_node_id("RESEARCH_RUN", run.id), _node_id("METHODOLOGY_REFERENCE", run.methodology_revision)}
-        if db.query(models.CorpusSnapshot).filter(models.CorpusSnapshot.id == run.corpus_snapshot).first():
+        scoped = {
+            _node_id("RESEARCH_RUN", run.id),
+            _node_id("METHODOLOGY_REFERENCE", run.methodology_revision),
+        }
+        if (
+            db.query(models.CorpusSnapshot)
+            .filter(models.CorpusSnapshot.id == run.corpus_snapshot)
+            .first()
+        ):
             scoped.add(_node_id("CORPUS_SNAPSHOT", run.corpus_snapshot))
         for claim in (
             db.query(models.SemanticClaim)
@@ -251,7 +266,9 @@ class KnowledgeGraphService:
                 elif dependency.dependency_type == "GOVERNANCE_RULE":
                     rule = (
                         db.query(models.GovernanceRule)
-                        .filter(models.GovernanceRule.rule_code == dependency.dependency_ref)
+                        .filter(
+                            models.GovernanceRule.rule_code == dependency.dependency_ref
+                        )
                         .first()
                     )
                     if rule is not None:
@@ -283,7 +300,11 @@ class KnowledgeGraphService:
         return graph
 
     @classmethod
-    def read(cls, db: Session, run_id: str) -> tuple[list[models.KnowledgeNode], list[models.KnowledgeEdge], dict[str, object]]:
+    def read(
+        cls, db: Session, run_id: str
+    ) -> tuple[
+        list[models.KnowledgeNode], list[models.KnowledgeEdge], dict[str, object]
+    ]:
         run = cls.require_read_access(db, run_id)
         scoped_ids = cls._scoped_node_ids(db, run)
         nodes = (
@@ -307,17 +328,23 @@ class KnowledgeGraphService:
             else []
         )
         graph = cls.to_networkx(nodes, edges)
-        cycle_nodes = sorted({node for cycle in nx.simple_cycles(graph) for node in cycle})
+        cycle_nodes = sorted(
+            {node for cycle in nx.simple_cycles(graph) for node in cycle}
+        )
         run_node_id = _node_id("RESEARCH_RUN", run_id)
         reachable = (
             sorted(nx.descendants(graph, run_node_id)) if run_node_id in graph else []
         )
-        return nodes, edges, {
-            "node_count": graph.number_of_nodes(),
-            "edge_count": graph.number_of_edges(),
-            "cycle_node_ids": cycle_nodes,
-            "reachable_node_ids": reachable,
-        }
+        return (
+            nodes,
+            edges,
+            {
+                "node_count": graph.number_of_nodes(),
+                "edge_count": graph.number_of_edges(),
+                "cycle_node_ids": cycle_nodes,
+                "reachable_node_ids": reachable,
+            },
+        )
 
     @staticmethod
     def presentation_label(edge: models.KnowledgeEdge) -> str:

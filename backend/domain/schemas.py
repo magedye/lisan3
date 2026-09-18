@@ -139,10 +139,10 @@ class SemanticClaimResponse(BaseSchema):
     semantic_boundary: str | None = None
     layer_attribution: dict[str, str]
     rejection_condition: RejectionCondition | None = None
-    supporting_evidence: list[str]
-    counterevidence: list[str]
-    unresolved_cases: list[str]
-    hard_cases: list[str]
+    supporting_evidence: list[str] = []
+    counterevidence: list[str] = []
+    unresolved_cases: list[str] = []
+    hard_cases: list[str] = []
     strongest_counterexample: str | None = None
     strongest_competitor: str | None = None
     reopen_conditions: list[str]
@@ -150,6 +150,19 @@ class SemanticClaimResponse(BaseSchema):
     created_at: datetime
 
     model_config = ConfigDict(from_attributes=True)
+
+
+class ClaimAmendmentRequest(BaseSchema):
+    correction_reason: str
+    preferred_conclusion: str | None = None
+    root_concept: str | None = None
+    plain_explanation: str | None = None
+    semantic_boundary: str | None = None
+    layer_attribution: dict[str, str] | None = None
+    supporting_evidence: list[str] | None = None
+    counterevidence: list[str] | None = None
+    unresolved_cases: list[str] | None = None
+    hard_cases: list[str] | None = None
 
 
 class VerificationRecordCreate(BaseSchema):
@@ -255,9 +268,9 @@ class HypothesisBase(BaseSchema):
     # Defaults to internal derivation; an external candidate (e.g. Jabal's central
     # meaning) must declare itself so it cannot masquerade as blind internal
     # discovery. External origin grants no confidence bonus and is never canonical.
-    origin: Literal[
-        "INDEPENDENT_INTERNAL_DERIVATION", "EXTERNAL_CANDIDATE"
-    ] = "INDEPENDENT_INTERNAL_DERIVATION"
+    origin: Literal["INDEPENDENT_INTERNAL_DERIVATION", "EXTERNAL_CANDIDATE"] = (
+        "INDEPENDENT_INTERNAL_DERIVATION"
+    )
     target_contract: str
     scope: str
     statement: str

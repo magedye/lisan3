@@ -195,11 +195,11 @@ def create_run(run: schemas.ResearchRunCreate, db: Session = Depends(get_db)):
     if not authority.accepted:
         raise HTTPException(
             status_code=503,
-            detail="Run admission denied: " + "; ".join(authority.reasons),
+            detail=f"Run admission denied: {'; '.join(authority.reasons)}",
         )
-    run_id = f"run_{uuid.uuid4().hex[:8]}"
+
     db_run = models.ResearchRun(
-        id=run_id,
+        id=f"run_{uuid.uuid4().hex[:8]}",
         target_contract=run.target_contract,
         target_expression=run.target_expression,
         methodology_revision=authority.methodology_revision_id,
@@ -377,17 +377,7 @@ def get_blind_lab_state(run_id: str, db: Session = Depends(get_db)):
 @app.post(
     "/runs/{run_id}/blind/preflight", response_model=schemas.IsolationStateResponse
 )
-def start_isolation_preflight(
-    run_id: str, db: Session = Depends(get_db)
-):
-    run = db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
-    if not run:
-        raise HTTPException(status_code=404, detail="Run not found")
-
-    # Fail-closed: a preflight no longer hard-codes CLEAN. It attempts genuine
-    # establishment (production-valid snapshot, current source-bound methodology,
-    # permitted source boundary, recorded manifest + immutable audit). Only a
-    # successful attestation yields establishment_status=ESTABLISHED / CLEAN.
+def start_isolation_preflight(run_id: str, db: Session = Depends(get_db)):
     try:
         db_state = BlindLabIsolationService.establish_semantic_isolation(
             db, run_id, actor="TRUSTED_LOCAL_USER"
@@ -395,10 +385,11 @@ def start_isolation_preflight(
     except IsolationEstablishmentRejected as exc:
         raise HTTPException(status_code=409, detail=exc.message) from exc
 
-    # Update run stage
-    run.current_stage = models.ResearchStage.RESEARCH.value
-    db.commit()
-    db.refresh(db_state)
+    run = db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
+    if run:
+        run.current_stage = models.ResearchStage.RESEARCH.value
+        db.commit()
+        db.refresh(db_state)
     return db_state
 
 
@@ -455,9 +446,6 @@ def record_observation(
     run = db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
     if run is None:
         raise HTTPException(status_code=404, detail="Run not found")
-    # An observation references either a verse/lexeme-level CorpusOccurrence id or
-    # a word-level StructuralToken word_ref (root research). Both must be scoped to
-    # the run's corpus snapshot; nothing external can be smuggled in.
     occurrence = db.get(models.CorpusOccurrence, artifact.occurrence_ref)
     occurrence_valid = (
         occurrence is not None and occurrence.snapshot_id == run.corpus_snapshot
@@ -535,7 +523,9 @@ def create_hypothesis(
         .first()
     )
     if state is None:
-        raise HTTPException(status_code=400, detail="Run has no source-isolation preflight")
+        raise HTTPException(
+            status_code=400, detail="Run has no source-isolation preflight"
+        )
     if state.is_contaminated == "PRIOR_CONTAMINATED":
         raise HTTPException(
             status_code=403, detail="Cannot create hypothesis: Run is contaminated"
@@ -588,7 +578,9 @@ def add_neighbor(
         .first()
     )
     if state is None:
-        raise HTTPException(status_code=400, detail="Run has no source-isolation preflight")
+        raise HTTPException(
+            status_code=400, detail="Run has no source-isolation preflight"
+        )
     if state.is_contaminated == "PRIOR_CONTAMINATED":
         raise HTTPException(
             status_code=403, detail="Cannot differentiate: Run is contaminated"
@@ -616,9 +608,7 @@ def add_neighbor(
     return db_neighbor
 
 
-@app.post(
-    "/runs/{run_id}/judgments", response_model=schemas.SemanticClaimResponse
-)
+@app.post("/runs/{run_id}/judgments", response_model=schemas.SemanticClaimResponse)
 def create_research_judgment(
     run_id: str,
     judgment: schemas.ResearchJudgmentCreate,
@@ -635,11 +625,65 @@ def create_research_judgment(
         raise HTTPException(status_code=422, detail=str(exc)) from exc
 
 
+@app.post("/claims/{claim_id}/amend", response_model=schemas.SemanticClaimResponse)
+def amend_claim(
+    claim_id: str, request: schemas.ClaimAmendmentRequest, db: Session = Depends(get_db)
+):
+    """Stage 9: Claim Revision Model - support atomic amendments."""
+    claim = db.get(models.SemanticClaim, claim_id)
+    if not claim:
+        raise HTTPException(status_code=404, detail="Claim not found")
+
+    import uuid
+
+    from backend.infrastructure.database import utc_now_naive
+
+    old_revision = models.ClaimRevision(
+        id=f"rev_{uuid.uuid4().hex[:8]}",
+        claim_id=claim_id,
+        revision_number=getattr(claim, "revision_id", 1),
+        correction_reason=request.correction_reason,
+        payload=schemas.SemanticClaimResponse.model_validate(
+            claim, from_attributes=True
+        ).model_dump(mode="json"),
+        created_at=utc_now_naive(),
+    )
+    db.add(old_revision)
+
+    if request.preferred_conclusion is not None:
+        claim.preferred_conclusion = request.preferred_conclusion
+    if request.root_concept is not None:
+        claim.root_concept = request.root_concept
+    if request.plain_explanation is not None:
+        claim.plain_explanation = request.plain_explanation
+    if request.semantic_boundary is not None:
+        claim.semantic_boundary = request.semantic_boundary
+    if request.layer_attribution is not None:
+        claim.layer_attribution = request.layer_attribution
+    if request.supporting_evidence is not None:
+        claim.supporting_evidence = request.supporting_evidence
+    if request.counterevidence is not None:
+        claim.counterevidence = request.counterevidence
+    if request.unresolved_cases is not None:
+        claim.unresolved_cases = request.unresolved_cases
+    if request.hard_cases is not None:
+        claim.hard_cases = request.hard_cases
+
+    claim.revision_id = getattr(claim, "revision_id", 1) + 1
+
+    db.commit()
+    db.refresh(claim)
+
+    return schemas.SemanticClaimResponse.model_validate(claim, from_attributes=True)
+
+
 @app.get("/judgments/{claim_id}", response_model=schemas.SemanticClaimResponse)
 def get_research_judgment(claim_id: str, db: Session = Depends(get_db)):
     return _require_released_claim(db, claim_id)
 
+
 from .domain.services.provenance import ProvenanceService
+
 
 @app.get("/runs/{run_id}/provenance")
 def get_provenance(run_id: str, db: Session = Depends(get_db)):
@@ -647,31 +691,6 @@ def get_provenance(run_id: str, db: Session = Depends(get_db)):
     if not run:
         raise HTTPException(status_code=404, detail="Run not found")
     return ProvenanceService.get_run_provenance(db, run_id)
-
-@app.post("/judgments/{claim_id}/reviews")
-def add_independent_review(claim_id: str, payload: dict, db: Session = Depends(get_db)):
-    claim = db.query(models.SemanticClaim).filter_by(id=claim_id).first()
-    if not claim:
-        raise HTTPException(status_code=404, detail="Claim not found")
-        
-    import uuid
-    from datetime import datetime, timezone
-    review = models.IndependentReview(
-        id=f"rev_{uuid.uuid4().hex[:8]}",
-        claim_id=claim_id,
-        revision_id=claim.revision_id,
-        reviewer_identity=payload.get("reviewer_identity", "SYSTEM"),
-        review_status="COMPLETED",
-        verdict=payload.get("verdict"),
-        scope_disposition=payload.get("scope_disposition"),
-        evidence_package_ref=payload.get("evidence_package_ref"),
-        created_at=datetime.now(timezone.utc).replace(tzinfo=None)
-    )
-    db.add(review)
-    db.commit()
-    db.refresh(review)
-    return {"status": "success", "review_id": review.id}
-
 
 
 @app.post(
@@ -686,7 +705,10 @@ def record_independent_verification(
     claim = db.get(models.SemanticClaim, claim_id)
     if not claim:
         raise HTTPException(status_code=404, detail="Research Judgment not found")
-    if verification.decision == "VERIFIED" and verification.verification_type != "INDEPENDENT":
+    if (
+        verification.decision == "VERIFIED"
+        and verification.verification_type != "INDEPENDENT"
+    ):
         raise HTTPException(
             status_code=422,
             detail="A VERIFIED decision requires verification_type=INDEPENDENT",
@@ -1100,7 +1122,9 @@ def _graph_response(run_id: str, db: Session) -> schemas.KnowledgeGraphResponse:
     return schemas.KnowledgeGraphResponse(
         run_id=run_id,
         projection_revision=PROJECTION_REVISION,
-        nodes=[schemas.GraphKnowledgeNodeResponse.model_validate(node) for node in nodes],
+        nodes=[
+            schemas.GraphKnowledgeNodeResponse.model_validate(node) for node in nodes
+        ],
         edges=[
             schemas.GraphKnowledgeEdgeResponse(
                 edge_id=edge.edge_id,

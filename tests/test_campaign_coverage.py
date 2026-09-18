@@ -36,7 +36,9 @@ from backend.domain.services.research_coverage import (
 from backend.infrastructure.database import Base
 
 engine = create_engine(
-    "sqlite:///:memory:", connect_args={"check_same_thread": False}, poolclass=StaticPool
+    "sqlite:///:memory:",
+    connect_args={"check_same_thread": False},
+    poolclass=StaticPool,
 )
 SessionLocal = sessionmaker(bind=engine)
 Base.metadata.create_all(engine)
@@ -52,31 +54,57 @@ def db():
     for table in reversed(Base.metadata.sorted_tables):
         session.execute(table.delete())
     session.commit()
-    session.add(models.CorpusSnapshot(
-        id=SNAP, canonical_text_source="TANZIL_QURAN_UTHMANI",
-        canonical_text_version="COV_TEST", canonical_text_hash="cafe",
-        validation_status="UNVERIFIED", fixture_only=True))
+    session.add(
+        models.CorpusSnapshot(
+            id=SNAP,
+            canonical_text_source="TANZIL_QURAN_UTHMANI",
+            canonical_text_version="COV_TEST",
+            canonical_text_hash="cafe",
+            validation_status="UNVERIFIED",
+            fixture_only=True,
+        )
+    )
     for ref in REFS:
-        session.add(models.StructuralToken(
-            id=f"stok_{ref.replace(':', '_')}", snapshot_id=SNAP,
-            word_ref=ref, verse_ref=":".join(ref.split(":")[:2]), root=ROOT,
-            form="N", source_id="TEST", source_version="v0",
-            extraction_version="t1",
-            attribution_status=models.StructuralAttributionStatus.CONFIRMED.value))
+        session.add(
+            models.StructuralToken(
+                id=f"stok_{ref.replace(':', '_')}",
+                snapshot_id=SNAP,
+                word_ref=ref,
+                verse_ref=":".join(ref.split(":")[:2]),
+                root=ROOT,
+                form="N",
+                source_id="TEST",
+                source_version="v0",
+                extraction_version="t1",
+                attribution_status=models.StructuralAttributionStatus.CONFIRMED.value,
+            )
+        )
     # One disputed member: separately visible, never part of the confirmed set.
-    session.add(models.StructuralToken(
-        id="stok_disp", snapshot_id=SNAP, word_ref="9:9:1:1", verse_ref="9:9",
-        root=ROOT, form="N", source_id="TEST", source_version="v0",
-        extraction_version="t1",
-        attribution_status=models.StructuralAttributionStatus.DISPUTED.value))
+    session.add(
+        models.StructuralToken(
+            id="stok_disp",
+            snapshot_id=SNAP,
+            word_ref="9:9:1:1",
+            verse_ref="9:9",
+            root=ROOT,
+            form="N",
+            source_id="TEST",
+            source_version="v0",
+            extraction_version="t1",
+            attribution_status=models.StructuralAttributionStatus.DISPUTED.value,
+        )
+    )
     session.commit()
     yield session
     session.close()
 
 
 def _judgment(result="PREFERRED", strength="STRONG"):
-    return {"result": result, "result_strength": strength,
-            "candidate_root_contribution": "x"}
+    return {
+        "result": result,
+        "result_strength": strength,
+        "candidate_root_contribution": "x",
+    }
 
 
 def test_1_confirmed_set_has_every_word_ref_exactly_once(db):
@@ -91,7 +119,9 @@ def test_2_missing_occurrence_blocks_complete(db):
     v = validate_root_research_coverage(db, SNAP, ROOT, REFS[:-1])
     assert v.exact_set_match is False
     assert v.missing_word_refs == ("3:5:2:1",)
-    disp = finalize_root_disposition(_judgment(), {"verdict": "SUPPORTED"}, v, [], [], 4)
+    disp = finalize_root_disposition(
+        _judgment(), {"verdict": "SUPPORTED"}, v, [], [], 4
+    )
     assert disp["research_completeness"] == COMPLETENESS_PENDING
     assert disp["universal_presence_holds"] is False
 
@@ -114,19 +144,23 @@ def test_4_resistant_confirmed_occurrence_blocks_universal(db):
     assert v.exact_set_match is True
     assert v.disputed_visible == ("9:9:1:1",)  # separately visible
     disp = finalize_root_disposition(
-        _judgment(), {"verdict": "SUPPORTED"}, v, ["2:2:1:1"], [], 4)
+        _judgment(), {"verdict": "SUPPORTED"}, v, ["2:2:1:1"], [], 4
+    )
     assert disp["universal_presence_holds"] is False
     assert disp["result_strength"] == "WEAK"
     assert disp["unreconciled_occurrences"] == ["2:2:1:1"]
     # Structural uncertainty also blocks universal presence.
     disp2 = finalize_root_disposition(
-        _judgment(), {"verdict": "SUPPORTED"}, v, [], ["3:5:2:1"], 4)
+        _judgment(), {"verdict": "SUPPORTED"}, v, [], ["3:5:2:1"], 4
+    )
     assert disp2["universal_presence_holds"] is False
 
 
 def test_5_research_and_canonicalization_remain_independent(db):
     v = validate_root_research_coverage(db, SNAP, ROOT, REFS)
-    disp = finalize_root_disposition(_judgment(), {"verdict": "SUPPORTED"}, v, [], [], 4)
+    disp = finalize_root_disposition(
+        _judgment(), {"verdict": "SUPPORTED"}, v, [], [], 4
+    )
     # A maximal research result still leaves canonicalization pending.
     assert disp["research_completeness"] == COMPLETENESS_COMPLETE
     assert disp["universal_presence_holds"] is True
@@ -138,22 +172,32 @@ def test_5_research_and_canonicalization_remain_independent(db):
 
 def test_6_campaign_resume_preserves_exact_sets(db):
     CampaignStateService.initialize(
-        db, campaign_id="cov-test", methodology_revision="m",
-        corpus_snapshot=SNAP, queue=["a", "b", "c"])
+        db,
+        campaign_id="cov-test",
+        methodology_revision="m",
+        corpus_snapshot=SNAP,
+        queue=["a", "b", "c"],
+    )
     CampaignStateService.checkpoint_root(db, "cov-test", "b")
     with SessionLocal() as fresh:
-        state = (fresh.query(models.CampaignState)
-                 .filter_by(campaign_id="cov-test").one())
+        state = (
+            fresh.query(models.CampaignState).filter_by(campaign_id="cov-test").one()
+        )
         assert set(state.completed_roots) == {"b"}
         assert set(state.queue) == {"a", "c"}
 
 
 def test_7_repeated_persistence_is_idempotent():
     ledger = {"roots": {}}
-    entry = {"batch_id": "b1", "result_strength": "STRONG",
-             "research_state": "PREFERRED", "research_completeness": "COMPLETE",
-             "independent_verification": "PASSED", "universal_presence_holds": True,
-             "adversarial_verdict": "SUPPORTED"}
+    entry = {
+        "batch_id": "b1",
+        "result_strength": "STRONG",
+        "research_state": "PREFERRED",
+        "research_completeness": "COMPLETE",
+        "independent_verification": "PASSED",
+        "universal_presence_holds": True,
+        "adversarial_verdict": "SUPPORTED",
+    }
     fold_root_into_ledger(ledger, ROOT, dict(entry))
     fold_root_into_ledger(ledger, ROOT, dict(entry))  # identical re-persist
     assert "lineage" not in ledger["roots"][ROOT]  # no spurious lineage entry
@@ -161,15 +205,24 @@ def test_7_repeated_persistence_is_idempotent():
 
 def test_8_reprocessing_preserves_lineage():
     ledger = {"roots": {}}
-    first = {"batch_id": "b1", "result_strength": "WEAK",
-             "research_state": "PREFERRED",
-             "research_completeness": "PENDING_COVERAGE_EVIDENCE",
-             "independent_verification": "PARTIAL", "universal_presence_holds": False,
-             "adversarial_verdict": "PARTIALLY_SUPPORTED"}
-    second = {"batch_id": "b2-coverage", "result_strength": "STRONG",
-              "research_state": "PREFERRED", "research_completeness": "COMPLETE",
-              "independent_verification": "PASSED", "universal_presence_holds": True,
-              "adversarial_verdict": "SUPPORTED"}
+    first = {
+        "batch_id": "b1",
+        "result_strength": "WEAK",
+        "research_state": "PREFERRED",
+        "research_completeness": "PENDING_COVERAGE_EVIDENCE",
+        "independent_verification": "PARTIAL",
+        "universal_presence_holds": False,
+        "adversarial_verdict": "PARTIALLY_SUPPORTED",
+    }
+    second = {
+        "batch_id": "b2-coverage",
+        "result_strength": "STRONG",
+        "research_state": "PREFERRED",
+        "research_completeness": "COMPLETE",
+        "independent_verification": "PASSED",
+        "universal_presence_holds": True,
+        "adversarial_verdict": "SUPPORTED",
+    }
     fold_root_into_ledger(ledger, ROOT, first)
     fold_root_into_ledger(ledger, ROOT, second)
     entry = ledger["roots"][ROOT]
@@ -191,8 +244,13 @@ def test_9_reconciliation_preserves_preliminary_disposition_and_note():
         _mapper("2:1:1:1", "CONSISTENT", "plain"),
         _mapper("2:1:3:1", "RESISTANT", "mapper flagged: residue absent here"),
     ]
-    reconciliation = [{"word_ref": "2:1:3:1", "final": "CONSISTENT",
-                       "rationale": "bridged via form IV causation"}]
+    reconciliation = [
+        {
+            "word_ref": "2:1:3:1",
+            "final": "CONSISTENT",
+            "rationale": "bridged via form IV causation",
+        }
+    ]
     final, lineage = merge_reconciliation(dispositions, reconciliation)
     fin = {d["word_ref"]: d for d in final}
     reconciled = fin["2:1:3:1"]
@@ -210,25 +268,34 @@ def test_9_reconciliation_preserves_preliminary_disposition_and_note():
     # untouched occurrence carries no invented lineage fields
     assert "preliminary_disposition" not in fin["2:1:1:1"]
     # durable lineage record retains all five provenance fields, not a count
-    assert lineage == [{
-        "word_ref": "2:1:3:1",
-        "preliminary_disposition": "RESISTANT",
-        "preliminary_note": "mapper flagged: residue absent here",
-        "final_disposition": "CONSISTENT",
-        "reconciliation_rationale": "bridged via form IV causation",
-        "deep_analysis": True,
-    }]
+    assert lineage == [
+        {
+            "word_ref": "2:1:3:1",
+            "preliminary_disposition": "RESISTANT",
+            "preliminary_note": "mapper flagged: residue absent here",
+            "final_disposition": "CONSISTENT",
+            "reconciliation_rationale": "bridged via form IV causation",
+            "deep_analysis": True,
+        }
+    ]
 
 
 def test_10_reconciled_to_consistent_retains_flagged_state_in_lineage():
     # The exact HIGH gap: reconciled-to-CONSISTENT must remain traceable as
     # originally flagged, both in the final disposition and the lineage record.
-    dispositions = [_mapper("7:1:1:1", "STRUCTURAL_UNCERTAINTY", "segmentation unclear")]
-    reconciliation = [{"word_ref": "7:1:1:1", "final": "CONSISTENT",
-                       "rationale": "segmentation resolved"}]
+    dispositions = [
+        _mapper("7:1:1:1", "STRUCTURAL_UNCERTAINTY", "segmentation unclear")
+    ]
+    reconciliation = [
+        {
+            "word_ref": "7:1:1:1",
+            "final": "CONSISTENT",
+            "rationale": "segmentation resolved",
+        }
+    ]
     final, lineage = merge_reconciliation(dispositions, reconciliation)
     only = final[0]
-    assert only["disposition"] == "CONSISTENT"          # final intact
+    assert only["disposition"] == "CONSISTENT"  # final intact
     assert only["preliminary_disposition"] == "STRUCTURAL_UNCERTAINTY"
     assert only["deep_analysis"] is True
     assert lineage[0]["preliminary_disposition"] == "STRUCTURAL_UNCERTAINTY"
@@ -257,8 +324,10 @@ def test_11_duplicate_word_ref_fails_exact_set_even_when_set_equality_holds(db):
     assert v.missing_word_refs == ()
     assert v.unexpected_word_refs == ()
     assert v.duplicate_word_refs == (REFS[0],)
-    assert v.exact_set_match is False           # duplicate blocks exact-set
-    disp = finalize_root_disposition(_judgment(), {"verdict": "SUPPORTED"}, v, [], [], 4)
+    assert v.exact_set_match is False  # duplicate blocks exact-set
+    disp = finalize_root_disposition(
+        _judgment(), {"verdict": "SUPPORTED"}, v, [], [], 4
+    )
     assert disp["research_completeness"] == COMPLETENESS_PENDING
 
 
@@ -267,13 +336,15 @@ def test_12_coverage_batch_log_is_idempotent_on_replay():
     upsert_coverage_batch(ledger, "b5-coverage", ["a", "b"])
     upsert_coverage_batch(ledger, "b5-coverage", ["a", "b", "c"])  # replay
     batches = ledger["coverage_batches"]
-    assert len(batches) == 1                    # no duplicate append
+    assert len(batches) == 1  # no duplicate append
     assert batches[0] == {"batch_id": "b5-coverage", "roots": ["a", "b", "c"]}
     # self-heals a pre-existing duplicate log
-    dirty = {"coverage_batches": [
-        {"batch_id": "b4-coverage", "roots": ["x"]},
-        {"batch_id": "b4-coverage", "roots": ["x"]},
-    ]}
+    dirty = {
+        "coverage_batches": [
+            {"batch_id": "b4-coverage", "roots": ["x"]},
+            {"batch_id": "b4-coverage", "roots": ["x"]},
+        ]
+    }
     upsert_coverage_batch(dirty, "b4-coverage", ["x"])
     assert [b["batch_id"] for b in dirty["coverage_batches"]] == ["b4-coverage"]
 
@@ -283,17 +354,26 @@ def test_13_final_resistant_from_merge_still_blocks_universal(db):
     # and COMPLETE still requires exact confirmed coverage.
     dispositions = [_mapper(r, "CONSISTENT", "") for r in REFS]
     dispositions[2] = _mapper(REFS[2], "RESISTANT", "residue absent")
-    reconciliation = [{"word_ref": REFS[2], "final": "RESISTANT",
-                       "rationale": "genuine anomaly; not forced"}]
+    reconciliation = [
+        {
+            "word_ref": REFS[2],
+            "final": "RESISTANT",
+            "rationale": "genuine anomaly; not forced",
+        }
+    ]
     final, _lineage = merge_reconciliation(dispositions, reconciliation)
     fin = {d["word_ref"]: d for d in final}
     assert fin[REFS[2]]["disposition"] == "RESISTANT"
     assert fin[REFS[2]]["preliminary_disposition"] == "RESISTANT"
     resistant = [r for r, d in fin.items() if d["disposition"] == "RESISTANT"]
-    v = validate_root_research_coverage(db, SNAP, ROOT, [d["word_ref"] for d in dispositions])
-    assert v.exact_set_match is True            # exact coverage holds
-    disp = finalize_root_disposition(_judgment(), {"verdict": "SUPPORTED"}, v, resistant, [], 4)
-    assert disp["universal_presence_holds"] is False   # one RESISTANT blocks it
+    v = validate_root_research_coverage(
+        db, SNAP, ROOT, [d["word_ref"] for d in dispositions]
+    )
+    assert v.exact_set_match is True  # exact coverage holds
+    disp = finalize_root_disposition(
+        _judgment(), {"verdict": "SUPPORTED"}, v, resistant, [], 4
+    )
+    assert disp["universal_presence_holds"] is False  # one RESISTANT blocks it
     assert disp["research_completeness"] == COMPLETENESS_COMPLETE
 
 
@@ -304,20 +384,28 @@ def test_14_reconciliation_to_consistent_lifts_universal_block(db):
     # against sourcing final_resistant/final_uncertain from the preliminary set.)
     dispositions = [_mapper(r, "CONSISTENT", "") for r in REFS]
     dispositions[1] = _mapper(REFS[1], "RESISTANT", "mapper flag")
-    reconciliation = [{"word_ref": REFS[1], "final": "CONSISTENT", "rationale": "bridged"}]
+    reconciliation = [
+        {"word_ref": REFS[1], "final": "CONSISTENT", "rationale": "bridged"}
+    ]
     final, _lineage = merge_reconciliation(dispositions, reconciliation)
     fin = {d["word_ref"]: d for d in final}
     # finals computed exactly as cmd_persist_coverage does (from the FINAL dict)
-    final_resistant = sorted(r for r, d in fin.items() if d["disposition"] == "RESISTANT")
-    final_uncertain = sorted(r for r, d in fin.items()
-                             if d["disposition"] == "STRUCTURAL_UNCERTAINTY")
+    final_resistant = sorted(
+        r for r, d in fin.items() if d["disposition"] == "RESISTANT"
+    )
+    final_uncertain = sorted(
+        r for r, d in fin.items() if d["disposition"] == "STRUCTURAL_UNCERTAINTY"
+    )
     assert final_resistant == [] and final_uncertain == []
-    v = validate_root_research_coverage(db, SNAP, ROOT, [d["word_ref"] for d in dispositions])
+    v = validate_root_research_coverage(
+        db, SNAP, ROOT, [d["word_ref"] for d in dispositions]
+    )
     disp = finalize_root_disposition(
-        _judgment(), {"verdict": "SUPPORTED"}, v, final_resistant, final_uncertain, 4)
-    assert disp["universal_presence_holds"] is True    # block lifted by reconciliation
+        _judgment(), {"verdict": "SUPPORTED"}, v, final_resistant, final_uncertain, 4
+    )
+    assert disp["universal_presence_holds"] is True  # block lifted by reconciliation
     assert disp["result_strength"] == "STRONG"
-    assert disp["canonical_authorization"] == "PENDING"   # research != canonical
+    assert disp["canonical_authorization"] == "PENDING"  # research != canonical
 
 
 def _run_persist_coverage(tmp_path, monkeypatch, coverage, verdict="SUPPORTED"):
@@ -330,32 +418,46 @@ def _run_persist_coverage(tmp_path, monkeypatch, coverage, verdict="SUPPORTED"):
     monkeypatch.setattr(camp, "SNAP", SNAP)
     monkeypatch.setattr(camp, "LEDGER", tmp_path / "ledger.json")
     monkeypatch.setattr(camp, "ROOT_ARTIFACTS", tmp_path / "roots")
-    research = [{"root": ROOT, "judgment": _judgment(),
-                 "verdict": {"verdict": verdict}}]
+    research = [
+        {"root": ROOT, "judgment": _judgment(), "verdict": {"verdict": verdict}}
+    ]
     rf = tmp_path / "research.json"
     rf.write_text(_json.dumps(research), encoding="utf-8")
     cf = tmp_path / "coverage.json"
     cf.write_text(_json.dumps(coverage), encoding="utf-8")
-    ns = type("Args", (), {"research": str(rf), "coverage": str(cf),
-                           "batch": "b5-coverage"})()
+    ns = type(
+        "Args", (), {"research": str(rf), "coverage": str(cf), "batch": "b5-coverage"}
+    )()
     camp.cmd_persist_coverage(ns)
     art = _json.loads((tmp_path / "roots" / "ktb.json").read_text(encoding="utf-8"))
     ledger = _json.loads((tmp_path / "ledger.json").read_text(encoding="utf-8"))
     return camp, ns, art, ledger
 
 
-def test_15_persist_coverage_persists_preliminary_and_lifts_block(tmp_path, monkeypatch, db):
+def test_15_persist_coverage_persists_preliminary_and_lifts_block(
+    tmp_path, monkeypatch, db
+):
     # End-to-end through the actual command: a preliminary RESISTANT reconciled to
     # CONSISTENT must (a) be persisted with its preliminary state in the artifact,
     # and (b) have its universal-presence block lifted.
-    coverage = [{"root": ROOT, "dispositions": [
-        _mapper("2:1:1:1", "CONSISTENT", "a"),
-        _mapper("2:1:3:1", "RESISTANT", "mapper flagged: absent"),
-        _mapper("2:2:1:1", "CONSISTENT", "c"),
-        _mapper("3:5:2:1", "CONSISTENT", "d"),
-    ], "reconciliation": [
-        {"word_ref": "2:1:3:1", "final": "CONSISTENT", "rationale": "bridged via causation"},
-    ]}]
+    coverage = [
+        {
+            "root": ROOT,
+            "dispositions": [
+                _mapper("2:1:1:1", "CONSISTENT", "a"),
+                _mapper("2:1:3:1", "RESISTANT", "mapper flagged: absent"),
+                _mapper("2:2:1:1", "CONSISTENT", "c"),
+                _mapper("3:5:2:1", "CONSISTENT", "d"),
+            ],
+            "reconciliation": [
+                {
+                    "word_ref": "2:1:3:1",
+                    "final": "CONSISTENT",
+                    "rationale": "bridged via causation",
+                },
+            ],
+        }
+    ]
     camp, ns, art, _ledger = _run_persist_coverage(tmp_path, monkeypatch, coverage)
     recon = {d["word_ref"]: d for d in art["occurrence_dispositions"]}["2:1:3:1"]
     # (a) preliminary preserved in the PERSISTED artifact (not just the helper)
@@ -365,7 +467,7 @@ def test_15_persist_coverage_persists_preliminary_and_lifts_block(tmp_path, monk
     assert recon["reconciliation_rationale"] == "bridged via causation"
     lin = art["resistant_deep_analysis"]
     assert lin[0]["preliminary_disposition"] == "RESISTANT"
-    assert lin[0]["final_disposition"] == "CONSISTENT"        # lineage, not a count
+    assert lin[0]["final_disposition"] == "CONSISTENT"  # lineage, not a count
     # (b) block lifted; exact coverage; canonical still pending
     assert art["coverage_validation"]["exact_set_match"] is True
     assert art["universal_presence_holds"] is True
@@ -396,21 +498,30 @@ def test_15_persist_coverage_persists_preliminary_and_lifts_block(tmp_path, monk
     # replay is idempotent at the batch-log level (no duplicate coverage_batches)
     camp.cmd_persist_coverage(ns)
     import json as _json
+
     replayed = _json.loads((tmp_path / "ledger.json").read_text(encoding="utf-8"))
     assert [b["batch_id"] for b in replayed["coverage_batches"]] == ["b5-coverage"]
 
 
-def test_16_persist_coverage_duplicate_researched_ref_blocks_complete(tmp_path, monkeypatch, db):
+def test_16_persist_coverage_duplicate_researched_ref_blocks_complete(
+    tmp_path, monkeypatch, db
+):
     # The command must validate on the PRE-merge researched list: a duplicated
     # researched ref (which merge_reconciliation's dict-collapse would hide) must
     # still fail exact-set and block COMPLETE.
-    coverage = [{"root": ROOT, "dispositions": [
-        _mapper("2:1:1:1", "CONSISTENT", "a"),
-        _mapper("2:1:1:1", "CONSISTENT", "dup"),   # duplicate of a confirmed ref
-        _mapper("2:1:3:1", "CONSISTENT", "b"),
-        _mapper("2:2:1:1", "CONSISTENT", "c"),
-        _mapper("3:5:2:1", "CONSISTENT", "d"),
-    ], "reconciliation": []}]
+    coverage = [
+        {
+            "root": ROOT,
+            "dispositions": [
+                _mapper("2:1:1:1", "CONSISTENT", "a"),
+                _mapper("2:1:1:1", "CONSISTENT", "dup"),  # duplicate of a confirmed ref
+                _mapper("2:1:3:1", "CONSISTENT", "b"),
+                _mapper("2:2:1:1", "CONSISTENT", "c"),
+                _mapper("3:5:2:1", "CONSISTENT", "d"),
+            ],
+            "reconciliation": [],
+        }
+    ]
     _camp, _ns, art, _ledger = _run_persist_coverage(tmp_path, monkeypatch, coverage)
     assert art["coverage_validation"]["duplicate_word_refs"] == ["2:1:1:1"]
     assert art["coverage_validation"]["exact_set_match"] is False
@@ -427,7 +538,9 @@ def test_persist_coverage_rejects_root_population_mismatch(tmp_path, monkeypatch
     monkeypatch.setattr(camp, "SNAP", SNAP)
     monkeypatch.setattr(camp, "LEDGER", tmp_path / "ledger.json")
     monkeypatch.setattr(camp, "ROOT_ARTIFACTS", tmp_path / "roots")
-    research = [{"root": ROOT, "judgment": _judgment(), "verdict": {"verdict": "SUPPORTED"}}]
+    research = [
+        {"root": ROOT, "judgment": _judgment(), "verdict": {"verdict": "SUPPORTED"}}
+    ]
     coverage = [{"root": "other", "dispositions": [], "reconciliation": []}]
     rf = tmp_path / "research.json"
     cf = tmp_path / "coverage.json"
@@ -443,25 +556,41 @@ def test_materialize_coverage_is_explicit_count_pinned_and_fail_closed():
     from tools.campaign import materialize_occurrence_dispositions
 
     occurrences = [
-        {"word_ref": "1:1:1:1", "qac_pos": "N", "qac_verb_form": None,
-         "qac_surface_form_buckwalter": "kitaAb"},
-        {"word_ref": "1:1:2:1", "qac_pos": "V", "qac_verb_form": "II",
-         "qac_surface_form_buckwalter": "kat~aba"},
+        {
+            "word_ref": "1:1:1:1",
+            "qac_pos": "N",
+            "qac_verb_form": None,
+            "qac_surface_form_buckwalter": "kitaAb",
+        },
+        {
+            "word_ref": "1:1:2:1",
+            "qac_pos": "V",
+            "qac_verb_form": "II",
+            "qac_surface_form_buckwalter": "kat~aba",
+        },
     ]
     base = {
         "clusters": [
-            {"cluster_id": "noun", "where": {"qac_pos": ["N"]},
-             "occurrence_count_expected": 1, "disposition": "CONSISTENT",
-             "candidate_semantic_interpretation": "fixed record",
-             "classification_rationale": "noun instantiates the reviewed record class",
-             "supporting_evidence_note": "the supplied canonical verse was reviewed",
-             "counterevidence": []},
-            {"cluster_id": "verb", "where": {"qac_pos": ["V"]},
-             "occurrence_count_expected": 1, "disposition": "RESISTANT",
-             "candidate_semantic_interpretation": "fixing action",
-             "classification_rationale": "verb is retained as a contested class",
-             "supporting_evidence_note": "the supplied canonical verse was reviewed",
-             "counterevidence": ["candidate residue is not explicit"]},
+            {
+                "cluster_id": "noun",
+                "where": {"qac_pos": ["N"]},
+                "occurrence_count_expected": 1,
+                "disposition": "CONSISTENT",
+                "candidate_semantic_interpretation": "fixed record",
+                "classification_rationale": "noun instantiates the reviewed record class",
+                "supporting_evidence_note": "the supplied canonical verse was reviewed",
+                "counterevidence": [],
+            },
+            {
+                "cluster_id": "verb",
+                "where": {"qac_pos": ["V"]},
+                "occurrence_count_expected": 1,
+                "disposition": "RESISTANT",
+                "candidate_semantic_interpretation": "fixing action",
+                "classification_rationale": "verb is retained as a contested class",
+                "supporting_evidence_note": "the supplied canonical verse was reviewed",
+                "counterevidence": ["candidate residue is not explicit"],
+            },
         ],
         "reconciliation": [],
     }
@@ -513,7 +642,12 @@ def test_17_unresolved_discovery_blocks_universal_presence(db):
     assert v.exact_set_match is True
     disp = finalize_root_disposition(
         _judgment(result="UNRESOLVED", strength="UNRESOLVED"),
-        {"verdict": "SUPPORTED"}, v, [], [], 4)
+        {"verdict": "SUPPORTED"},
+        v,
+        [],
+        [],
+        4,
+    )
     assert disp["research_state"] == "UNRESOLVED"
     assert disp["universal_presence_holds"] is False
     assert disp["independent_verification"] != "PASSED"
@@ -525,9 +659,12 @@ def test_18_discovery_inconsistent_ref_blocks_universal_and_is_reported(db):
     # AND surfaces in unreconciled_occurrences — even when the coverage mapper
     # marked it CONSISTENT (0 final_resistant) and the verdict is SUPPORTED.
     v = validate_root_research_coverage(db, SNAP, ROOT, REFS)
-    judgment = {"result": "PREFERRED", "result_strength": "STRONG",
-                "candidate_root_contribution": "x",
-                "presence": {"inconsistent_refs": ["3:5:2:1"]}}
+    judgment = {
+        "result": "PREFERRED",
+        "result_strength": "STRONG",
+        "candidate_root_contribution": "x",
+        "presence": {"inconsistent_refs": ["3:5:2:1"]},
+    }
     disp = finalize_root_disposition(judgment, {"verdict": "SUPPORTED"}, v, [], [], 4)
     assert disp["universal_presence_holds"] is False
     assert "3:5:2:1" in disp["unreconciled_occurrences"]
@@ -539,14 +676,21 @@ def test_19_safe_name_is_case_insensitive_collision_safe():
     # T=ط vs t=ت, Z=ظ vs z=ز, H=ح vs h=ه). On a case-insensitive filesystem two
     # such roots must NOT share an artifact filename (the swm/Swm data-loss bug).
     from tools.campaign import safe_name
-    for upper, lower in [("Swm", "swm"), ("Dll", "dll"), ("SbH", "sbH"),
-                         ("HSn", "Hsn"), ("Trq", "trq"), ("Zll", "zll")]:
+
+    for upper, lower in [
+        ("Swm", "swm"),
+        ("Dll", "dll"),
+        ("SbH", "sbH"),
+        ("HSn", "Hsn"),
+        ("Trq", "trq"),
+        ("Zll", "zll"),
+    ]:
         assert safe_name(upper).lower() != safe_name(lower).lower(), (upper, lower)
     # Deterministic + stable for the safe (non-colliding) letters A/E and symbols.
     assert safe_name("Aty") == "Aty"
     assert safe_name("qwm") == "qwm"
-    assert safe_name("w*r") == "w_2A_r"     # FS-illegal '*' still escaped
-    assert safe_name("Swm") == "_53_wm"      # homograph 'S' escaped, distinct from swm
+    assert safe_name("w*r") == "w_2A_r"  # FS-illegal '*' still escaped
+    assert safe_name("Swm") == "_53_wm"  # homograph 'S' escaped, distinct from swm
     assert safe_name("swm") == "swm"
     assert safe_name("w*r") == safe_name("w*r")  # deterministic replay
 
@@ -555,15 +699,23 @@ def test_20_committed_root_artifact_identities_are_unique_and_resolvable():
     from tools.campaign import safe_name
 
     repository_root = Path(__file__).resolve().parents[1]
-    ledger = json.loads((repository_root / "artifacts/semantic-campaign/"
-                         "CAMPAIGN_RESEARCH_LEDGER.json").read_text(encoding="utf-8"))
+    ledger = json.loads(
+        (
+            repository_root / "artifacts/semantic-campaign/"
+            "CAMPAIGN_RESEARCH_LEDGER.json"
+        ).read_text(encoding="utf-8")
+    )
     physical_names = [f"{safe_name(root)}.json" for root in ledger["roots"]]
     assert len(physical_names) == len({name.casefold() for name in physical_names})
 
     for root, entry in ledger["roots"].items():
-        relative_path = Path("artifacts/semantic-campaign/roots") / f"{safe_name(root)}.json"
+        relative_path = (
+            Path("artifacts/semantic-campaign/roots") / f"{safe_name(root)}.json"
+        )
         assert entry["artifact"] == relative_path.as_posix()
-        artifact = json.loads((repository_root / relative_path).read_text(encoding="utf-8"))
+        artifact = json.loads(
+            (repository_root / relative_path).read_text(encoding="utf-8")
+        )
         assert artifact["root_buckwalter"] == root
 
 
@@ -599,12 +751,16 @@ def test_21_prep_refuses_foreign_root_artifact_collision(tmp_path, monkeypatch, 
 
 
 def test_22_persist_coverage_refuses_foreign_root_artifact_collision(
-        tmp_path, monkeypatch, db):
-    coverage = [{"root": ROOT, "dispositions": [
-        _mapper(ref, "CONSISTENT", "mapped") for ref in REFS
-    ], "reconciliation": []}]
-    camp, ns, _art, _ledger = _run_persist_coverage(
-        tmp_path, monkeypatch, coverage)
+    tmp_path, monkeypatch, db
+):
+    coverage = [
+        {
+            "root": ROOT,
+            "dispositions": [_mapper(ref, "CONSISTENT", "mapped") for ref in REFS],
+            "reconciliation": [],
+        }
+    ]
+    camp, ns, _art, _ledger = _run_persist_coverage(tmp_path, monkeypatch, coverage)
     artifact_path = tmp_path / "roots" / "ktb.json"
     original = json.dumps({"root_buckwalter": "foreign", "sentinel": "preserve"})
     artifact_path.write_text(original, encoding="utf-8")
@@ -623,12 +779,20 @@ def test_22_persist_coverage_refuses_foreign_root_artifact_collision(
 
 def _batch06_repository_artifacts():
     repository_root = Path(__file__).resolve().parents[1]
-    manifest = json.loads((repository_root / "artifacts/semantic-campaign/"
-                           "BATCH_06_MANIFEST.json").read_text(encoding="utf-8"))
+    manifest = json.loads(
+        (
+            repository_root / "artifacts/semantic-campaign/BATCH_06_MANIFEST.json"
+        ).read_text(encoding="utf-8")
+    )
     artifacts = {}
     for entry in manifest["roots"]:
-        artifact = json.loads((repository_root / "artifacts/semantic-campaign/roots"
-                               / entry["artifact_name"]).read_text(encoding="utf-8"))
+        artifact = json.loads(
+            (
+                repository_root
+                / "artifacts/semantic-campaign/roots"
+                / entry["artifact_name"]
+            ).read_text(encoding="utf-8")
+        )
         artifacts[entry["root_buckwalter"]] = artifact
     return repository_root, manifest, artifacts
 
@@ -639,13 +803,22 @@ def test_23_batch06_all_40_artifacts_have_resolvable_root_judgment_contract():
     repository_root, manifest, artifacts = _batch06_repository_artifacts()
     assert len(artifacts) == 40
     assert sum(artifact["occurrences"] for artifact in artifacts.values()) == 3098
-    assert all(artifact["coverage_validation"]["exact_set_match"] for artifact in artifacts.values())
-    assert all(not validate_batch06_root_judgment_contract(artifact)
-               for artifact in artifacts.values())
+    assert all(
+        artifact["coverage_validation"]["exact_set_match"]
+        for artifact in artifacts.values()
+    )
+    assert all(
+        not validate_batch06_root_judgment_contract(artifact)
+        for artifact in artifacts.values()
+    )
     names = [entry["artifact_name"] for entry in manifest["roots"]]
     assert len(names) == len({name.casefold() for name in names})
-    ledger = json.loads((repository_root / "artifacts/semantic-campaign/"
-                         "CAMPAIGN_RESEARCH_LEDGER.json").read_text(encoding="utf-8"))
+    ledger = json.loads(
+        (
+            repository_root / "artifacts/semantic-campaign/"
+            "CAMPAIGN_RESEARCH_LEDGER.json"
+        ).read_text(encoding="utf-8")
+    )
     for root, artifact in artifacts.items():
         assert ledger["roots"][root]["artifact"].endswith(artifact["artifact_name"])
 
@@ -657,8 +830,10 @@ def test_24_class_only_cannot_serialize_universal_presence():
     invalid = json.loads(json.dumps(artifacts["qlb"]))
     invalid["universal_presence_holds"] = True
     errors = validate_batch06_root_judgment_contract(invalid)
-    assert any("non-UNIVERSAL claim cannot serialize universal presence" in error
-               for error in errors)
+    assert any(
+        "non-UNIVERSAL claim cannot serialize universal presence" in error
+        for error in errors
+    )
 
 
 def test_25_contract_requires_hard_cases_rejection_falsification_and_reopen():
@@ -680,30 +855,48 @@ def test_25_contract_requires_hard_cases_rejection_falsification_and_reopen():
 def test_26_wlj_restores_resistance_and_preserves_invalidated_reconciliation_lineage():
     _root, _manifest, artifacts = _batch06_repository_artifacts()
     wlj = artifacts["wlj"]
-    occurrence = next(item for item in wlj["occurrence_dispositions"]
-                      if item["word_ref"] == "9:16:20:1")
+    occurrence = next(
+        item
+        for item in wlj["occurrence_dispositions"]
+        if item["word_ref"] == "9:16:20:1"
+    )
     assert occurrence["preliminary_disposition"] == "RESISTANT"
     assert occurrence["disposition"] == "RESISTANT"
     assert occurrence["final_disposition"] == "RESISTANT"
-    assert occurrence["corrective_review_outcome"] == "INVALID_INSUFFICIENT_QURAN_INTERNAL_BRIDGE"
+    assert (
+        occurrence["corrective_review_outcome"]
+        == "INVALID_INSUFFICIENT_QURAN_INTERNAL_BRIDGE"
+    )
     historical = occurrence["reconciliation_lineage"]
     assert historical[0]["final_disposition"] == "CONSISTENT"
-    assert historical[0]["corrective_review_outcome"] == "INVALID_INSUFFICIENT_QURAN_INTERNAL_BRIDGE"
-    assert wlj["resistant_deep_analysis"][0]["preliminary_note"] == occurrence["preliminary_note"]
+    assert (
+        historical[0]["corrective_review_outcome"]
+        == "INVALID_INSUFFICIENT_QURAN_INTERNAL_BRIDGE"
+    )
+    assert (
+        wlj["resistant_deep_analysis"][0]["preliminary_note"]
+        == occurrence["preliminary_note"]
+    )
 
 
 def test_27_opaque_seam_and_qualified_productive_family_remain_distinct():
     _root, _manifest, artifacts = _batch06_repository_artifacts()
     kvr = artifacts["kvr"]
-    opaque = next(item for item in kvr["occurrence_dispositions"]
-                  if item["word_ref"] == "108:1:3:2")
+    opaque = next(
+        item
+        for item in kvr["occurrence_dispositions"]
+        if item["word_ref"] == "108:1:3:2"
+    )
     assert opaque["final_disposition"] == "RESISTANT"
     assert kvr["claim_scope_kind"] == "LEXICALIZED_CLASS"
     assert kvr["universal_presence_holds"] is False
     mvl = artifacts["mvl"]
     assert mvl["claim_scope_kind"] == "DERIVATIONAL_FAMILY"
     assert mvl["universal_presence_holds"] is False
-    assert sum(item["occurrence_count"] for item in mvl["corrective_usage_partition"]) == 169
+    assert (
+        sum(item["occurrence_count"] for item in mvl["corrective_usage_partition"])
+        == 169
+    )
     lineage = mvl["resistant_deep_analysis"][0]
     assert lineage["word_ref"] == "19:17:8:2"
     assert lineage["corrective_review_outcome"] == "VALID_WITH_QUALIFICATION"
@@ -713,8 +906,12 @@ def test_28_corrective_replay_preserves_preliminary_and_reconciliation_lineage()
     from tools.campaign import _apply_target_judgment
 
     repository_root, _manifest, artifacts = _batch06_repository_artifacts()
-    plan = json.loads((repository_root / "artifacts/semantic-campaign/"
-                       "BATCH_06_CORRECTIVE_JUDGMENTS.json").read_text(encoding="utf-8"))
+    plan = json.loads(
+        (
+            repository_root / "artifacts/semantic-campaign/"
+            "BATCH_06_CORRECTIVE_JUDGMENTS.json"
+        ).read_text(encoding="utf-8")
+    )
     wlj = json.loads(json.dumps(artifacts["wlj"]))
     before = json.loads(json.dumps(wlj["resistant_deep_analysis"]))
     pre_corrective = json.loads(json.dumps(wlj["corrective_lineage"]))
@@ -744,7 +941,9 @@ def test_30_final_contract_uses_canonical_evidence_fields_and_no_aliases():
         refs = {item["word_ref"] for item in artifact["occurrence_dispositions"]}
         assert "root_evidence_refs" not in artifact
         assert "root_counterevidence_refs" not in artifact
-        assert artifact["supporting_evidence_refs"] == _root_supporting_evidence_refs(artifact)
+        assert artifact["supporting_evidence_refs"] == _root_supporting_evidence_refs(
+            artifact
+        )
         assert artifact["counterevidence_refs"] == _root_counterevidence_refs(artifact)
         assert set(artifact["supporting_evidence_refs"]) <= refs
         assert set(artifact["counterevidence_refs"]) <= refs
@@ -757,21 +956,31 @@ def test_31_final_contract_controls_are_claim_specific_not_generic_templates():
         for artifact in artifacts.values()
     }
     reopen_conditions = {
-        tuple(artifact["reopen_conditions"])
-        for artifact in artifacts.values()
+        tuple(artifact["reopen_conditions"]) for artifact in artifacts.values()
     }
     assert len(rejection_conditions) == 40
     assert len(reopen_conditions) == 40
     for root, artifact in artifacts.items():
-        assert all(case["role"] != "PERSISTED_STRESS_CASE" for case in artifact["hard_cases"])
-        assert all(case["reason"].startswith(f"{root}:") for case in artifact["hard_cases"])
-        assert all(condition.startswith(f"{root}:") for condition in artifact["reopen_conditions"])
+        assert all(
+            case["role"] != "PERSISTED_STRESS_CASE" for case in artifact["hard_cases"]
+        )
+        assert all(
+            case["reason"].startswith(f"{root}:") for case in artifact["hard_cases"]
+        )
+        assert all(
+            condition.startswith(f"{root}:")
+            for condition in artifact["reopen_conditions"]
+        )
 
 
 def test_32_final_contract_falsification_and_diagnostics_are_evidence_bound():
     repository_root, _manifest, artifacts = _batch06_repository_artifacts()
-    plan = json.loads((repository_root / "artifacts/semantic-campaign/"
-                       "BATCH_06_FINAL_CONTRACT_REMEDIATION.json").read_text(encoding="utf-8"))
+    plan = json.loads(
+        (
+            repository_root / "artifacts/semantic-campaign/"
+            "BATCH_06_FINAL_CONTRACT_REMEDIATION.json"
+        ).read_text(encoding="utf-8")
+    )
     for root, artifact in artifacts.items():
         adversarial = artifact["adversarial_verification"]
         evidence = artifact["falsification_evidence"]
@@ -786,16 +995,22 @@ def test_32_final_contract_falsification_and_diagnostics_are_evidence_bound():
             assert adversarial["distinctiveness_ok"] is True
         if artifact["research_state"] == "UNRESOLVED":
             assert artifact["falsification_status"] == "NOT_REQUIRED"
-        assert all(record["status"] == "NOT_EVALUATED"
-                   and record["hard_blocker"] is False
-                   and record["evidence_refs"] == []
-                   for record in artifact["purity_diagnostics"].values())
+        assert all(
+            record["status"] == "NOT_EVALUATED"
+            and record["hard_blocker"] is False
+            and record["evidence_refs"] == []
+            for record in artifact["purity_diagnostics"].values()
+        )
     for root, target in plan["target_adversarial_representation"].items():
         artifact = artifacts[root]
         adversarial = artifact["adversarial_verification"]
         assert adversarial["verdict"] == target["verdict"]
-        assert adversarial["failing_occurrences"] == sorted(target["failing_occurrences"])
-        expected_status = "NOT_REQUIRED" if artifact["research_state"] == "UNRESOLVED" else "NOT_RUN"
+        assert adversarial["failing_occurrences"] == sorted(
+            target["failing_occurrences"]
+        )
+        expected_status = (
+            "NOT_REQUIRED" if artifact["research_state"] == "UNRESOLVED" else "NOT_RUN"
+        )
         assert artifact["falsification_status"] == expected_status
 
 
@@ -803,8 +1018,12 @@ def test_33_final_contract_replay_preserves_the_frozen_semantic_payload():
     from tools.campaign import _batch06_semantic_snapshot
 
     repository_root, manifest, artifacts = _batch06_repository_artifacts()
-    plan = json.loads((repository_root / "artifacts/semantic-campaign/"
-                       "BATCH_06_FINAL_CONTRACT_REMEDIATION.json").read_text(encoding="utf-8"))
+    plan = json.loads(
+        (
+            repository_root / "artifacts/semantic-campaign/"
+            "BATCH_06_FINAL_CONTRACT_REMEDIATION.json"
+        ).read_text(encoding="utf-8")
+    )
     for entry in manifest["roots"]:
         relative_path = "artifacts/semantic-campaign/roots/" + entry["artifact_name"]
         baseline = subprocess.run(
@@ -816,29 +1035,43 @@ def test_33_final_contract_replay_preserves_the_frozen_semantic_payload():
             encoding="utf-8",
         )
         baseline_artifact = json.loads(baseline.stdout)
-        assert _batch06_semantic_snapshot(artifacts[entry["root_buckwalter"]]) == \
-            _batch06_semantic_snapshot(baseline_artifact)
+        assert _batch06_semantic_snapshot(
+            artifacts[entry["root_buckwalter"]]
+        ) == _batch06_semantic_snapshot(baseline_artifact)
 
 
 def test_34_representation_remediation_preserves_frozen_campaign_counts_and_handoff_state():
     _repository_root, manifest, artifacts = _batch06_repository_artifacts()
-    assert manifest["status"] == "BATCH_06_REPRESENTATION_REMEDIATION_READY_FOR_FRESH_REVIEW"
+    assert (
+        manifest["status"]
+        == "BATCH_06_REPRESENTATION_REMEDIATION_READY_FOR_FRESH_REVIEW"
+    )
     assert manifest["final_checkpoint"]["outcomes"] == {
-        "STRONG": 12, "MODERATE": 8, "WEAK": 9, "UNRESOLVED": 11,
+        "STRONG": 12,
+        "MODERATE": 8,
+        "WEAK": 9,
+        "UNRESOLVED": 11,
     }
     assert manifest["final_checkpoint"]["resistant_occurrences"] == 565
     assert sum(artifact["occurrences"] for artifact in artifacts.values()) == 3098
     assert manifest["final_contract_remediation"]["semantic_payload_frozen"] is True
     assert manifest["representation_remediation"]["semantic_payload_frozen"] is True
-    assert manifest["representation_remediation"]["no_genuine_hard_case_roots"] == ["Eyr", "Hdq"]
+    assert manifest["representation_remediation"]["no_genuine_hard_case_roots"] == [
+        "Eyr",
+        "Hdq",
+    ]
 
 
 def test_35_representation_hard_cases_are_explicitly_evidence_derived_or_honestly_absent():
     from tools.campaign import BATCH06_POSITIONAL_HARD_CASE_ROOTS
 
     repository_root, _manifest, artifacts = _batch06_repository_artifacts()
-    plan = json.loads((repository_root / "artifacts/semantic-campaign/"
-                       "BATCH_06_REPRESENTATION_REMEDIATION.json").read_text(encoding="utf-8"))
+    plan = json.loads(
+        (
+            repository_root / "artifacts/semantic-campaign/"
+            "BATCH_06_REPRESENTATION_REMEDIATION.json"
+        ).read_text(encoding="utf-8")
+    )
     assert set(plan["positional_hard_case_roots"]) == BATCH06_POSITIONAL_HARD_CASE_ROOTS
     for root in BATCH06_POSITIONAL_HARD_CASE_ROOTS:
         artifact = artifacts[root]
@@ -859,14 +1092,19 @@ def test_35_representation_hard_cases_are_explicitly_evidence_derived_or_honestl
                     "discovery": artifact["internal_discovery"],
                     "adversarial": artifact["adversarial_verification"],
                     "occurrences": artifact["occurrence_dispositions"],
-                }, ensure_ascii=False,
+                },
+                ensure_ascii=False,
             )
 
 
 def test_36_representation_controls_are_scope_bound_and_not_identifier_templates():
     repository_root, _manifest, artifacts = _batch06_repository_artifacts()
-    plan = json.loads((repository_root / "artifacts/semantic-campaign/"
-                       "BATCH_06_REPRESENTATION_REMEDIATION.json").read_text(encoding="utf-8"))
+    plan = json.loads(
+        (
+            repository_root / "artifacts/semantic-campaign/"
+            "BATCH_06_REPRESENTATION_REMEDIATION.json"
+        ).read_text(encoding="utf-8")
+    )
     normalized_rejections = set()
     normalized_reopens = set()
     for root, artifact in artifacts.items():
@@ -883,8 +1121,13 @@ def test_36_representation_controls_are_scope_bound_and_not_identifier_templates
         normalized_rejections.add(rejection.replace(root, "{ROOT}"))
         reopen = tuple(artifact["reopen_conditions"])
         assert all("for the current claim:" not in condition for condition in reopen)
-        assert all("changes any listed supporting_evidence_refs" not in condition for condition in reopen)
-        normalized_reopens.add(tuple(condition.replace(root, "{ROOT}") for condition in reopen))
+        assert all(
+            "changes any listed supporting_evidence_refs" not in condition
+            for condition in reopen
+        )
+        normalized_reopens.add(
+            tuple(condition.replace(root, "{ROOT}") for condition in reopen)
+        )
     assert len(normalized_rejections) == 40
     assert len(normalized_reopens) == 40
 
@@ -893,8 +1136,12 @@ def test_37_representation_replay_preserves_every_frozen_payload_field():
     from tools.campaign import _batch06_representation_snapshot
 
     repository_root, manifest, artifacts = _batch06_repository_artifacts()
-    plan = json.loads((repository_root / "artifacts/semantic-campaign/"
-                       "BATCH_06_REPRESENTATION_REMEDIATION.json").read_text(encoding="utf-8"))
+    plan = json.loads(
+        (
+            repository_root / "artifacts/semantic-campaign/"
+            "BATCH_06_REPRESENTATION_REMEDIATION.json"
+        ).read_text(encoding="utf-8")
+    )
     for entry in manifest["roots"]:
         relative_path = "artifacts/semantic-campaign/roots/" + entry["artifact_name"]
         baseline = subprocess.run(
@@ -906,8 +1153,9 @@ def test_37_representation_replay_preserves_every_frozen_payload_field():
             encoding="utf-8",
         )
         baseline_artifact = json.loads(baseline.stdout)
-        assert _batch06_representation_snapshot(artifacts[entry["root_buckwalter"]]) == \
-            _batch06_representation_snapshot(baseline_artifact)
+        assert _batch06_representation_snapshot(
+            artifacts[entry["root_buckwalter"]]
+        ) == _batch06_representation_snapshot(baseline_artifact)
 
 
 def test_38_representation_validator_rejects_positional_and_unsupported_hard_case_forms():
@@ -917,7 +1165,10 @@ def test_38_representation_validator_rejects_positional_and_unsupported_hard_cas
     positional = json.loads(json.dumps(artifacts["rsl"]))
     positional["hard_cases"][0].pop("evidence_basis")
     errors = validate_batch06_root_judgment_contract(positional)
-    assert any("evidence-derived hard case lacks an evidence basis" in error for error in errors)
+    assert any(
+        "evidence-derived hard case lacks an evidence basis" in error
+        for error in errors
+    )
 
     hidden_resistance = json.loads(json.dumps(artifacts["kvr"]))
     hidden_resistance["hard_cases"] = []

@@ -149,13 +149,16 @@ class CanonicalizationPolicy:
             .all()
         )
         if len(corpus_dependencies) != 1 or (
-            corpus_dependencies and corpus_dependencies[0].dependency_ref != run.corpus_snapshot
+            corpus_dependencies
+            and corpus_dependencies[0].dependency_ref != run.corpus_snapshot
         ):
             reasons.append("Canonical corpus dependency is absent or ambiguous")
         if run.target_contract.startswith("test_fixture_") or (
             snapshot is not None and snapshot.fixture_only
         ):
-            reasons.append("Synthetic fixtures cannot become canonical project knowledge")
+            reasons.append(
+                "Synthetic fixtures cannot become canonical project knowledge"
+            )
         return CanonicalizationDecision(not reasons, tuple(dict.fromkeys(reasons)))
 
     @classmethod
@@ -214,10 +217,14 @@ def reopen_accepted_results_for_new_evidence(
 ) -> list[str]:
     accepted = (
         db.query(models.SemanticClaim)
-        .join(models.ResearchRun, models.SemanticClaim.research_run_id == models.ResearchRun.id)
+        .join(
+            models.ResearchRun,
+            models.SemanticClaim.research_run_id == models.ResearchRun.id,
+        )
         .filter(
             models.ResearchRun.target_expression == run.target_expression,
-            models.SemanticClaim.canonical_state == models.CanonicalState.ACCEPTED.value,
+            models.SemanticClaim.canonical_state
+            == models.CanonicalState.ACCEPTED.value,
         )
         .all()
     )
@@ -247,16 +254,18 @@ def reopen_accepted_results_for_new_evidence(
     return reopened
 
 
-def accepted_root_result(
-    db: Session, expression: str
-) -> models.SemanticClaim | None:
+def accepted_root_result(db: Session, expression: str) -> models.SemanticClaim | None:
     return (
         db.query(models.SemanticClaim)
-        .join(models.ResearchRun, models.SemanticClaim.research_run_id == models.ResearchRun.id)
+        .join(
+            models.ResearchRun,
+            models.SemanticClaim.research_run_id == models.ResearchRun.id,
+        )
         .filter(
             models.ResearchRun.target_expression == expression,
             models.SemanticClaim.contract_type == "ROOT_CONCEPT",
-            models.SemanticClaim.canonical_state == models.CanonicalState.ACCEPTED.value,
+            models.SemanticClaim.canonical_state
+            == models.CanonicalState.ACCEPTED.value,
             models.SemanticClaim.result_strength == models.ResultStrength.STRONG.value,
         )
         .order_by(models.SemanticClaim.accepted_at.desc())

@@ -148,9 +148,7 @@ class ResearchRun(Base):
     current_stage = Column(String, default=ResearchStage.RESEARCH.value)
     status = Column(String, default="ACTIVE")
     created_at = Column(DateTime, default=utc_now_naive)
-    updated_at = Column(
-        DateTime, default=utc_now_naive, onupdate=utc_now_naive
-    )
+    updated_at = Column(DateTime, default=utc_now_naive, onupdate=utc_now_naive)
 
     claims = relationship("SemanticClaim", back_populates="research_run")
     ai_execution_records = relationship(
@@ -429,7 +427,9 @@ def preserve_imported_corpus_provenance(_mapper, _connection, snapshot):
         "canon_001_reconciliation",
         "fixture_only",
     )
-    changed = [field for field in immutable_fields if state.attrs[field].history.has_changes()]
+    changed = [
+        field for field in immutable_fields if state.attrs[field].history.has_changes()
+    ]
     if changed:
         raise ValueError(
             "Cannot mutate imported CorpusSnapshot provenance: " + ", ".join(changed)
@@ -931,7 +931,9 @@ class ExternalHypothesisRecord(Base):
         String, nullable=False, default=ExternalClaimRole.RULE_CLAIM.value
     )
     status = Column(
-        String, nullable=False, default=ExternalHypothesisStatus.EXTERNAL_CANDIDATE.value
+        String,
+        nullable=False,
+        default=ExternalHypothesisStatus.EXTERNAL_CANDIDATE.value,
     )
     test_plan = Column(String)
     test_evidence_refs = Column(JSON, nullable=False, default=list)
@@ -940,9 +942,7 @@ class ExternalHypothesisRecord(Base):
     provenance = Column(String, nullable=False)
     research_run_id = Column(String, ForeignKey("research_runs.id"), nullable=True)
     created_at = Column(DateTime, default=utc_now_naive)
-    updated_at = Column(
-        DateTime, default=utc_now_naive, onupdate=utc_now_naive
-    )
+    updated_at = Column(DateTime, default=utc_now_naive, onupdate=utc_now_naive)
 
 
 @event.listens_for(ExternalHypothesisRecord, "before_insert")
@@ -974,9 +974,7 @@ class CampaignState(Base):
     findings = Column(JSON, nullable=False, default=list)
     status = Column(String, nullable=False, default="INITIALIZED")
     created_at = Column(DateTime, default=utc_now_naive)
-    updated_at = Column(
-        DateTime, default=utc_now_naive, onupdate=utc_now_naive
-    )
+    updated_at = Column(DateTime, default=utc_now_naive, onupdate=utc_now_naive)
 
 
 # --- Independent Review & Provenance (Track 3, 5, 6) ---
@@ -986,14 +984,15 @@ class IndependentReview(Base):
     claim_id = Column(String, ForeignKey("semantic_claims.id"), nullable=False)
     revision_id = Column(Integer, nullable=False)
     reviewer_identity = Column(String, nullable=False)
-    review_status = Column(String, nullable=False) # PENDING, COMPLETED
-    verdict = Column(String) # VERIFIED, REJECTED
+    review_status = Column(String, nullable=False)  # PENDING, COMPLETED
+    verdict = Column(String)  # VERIFIED, REJECTED
     scope_disposition = Column(String)
     evidence_package_ref = Column(String)
     independence_metadata = Column(JSON)
     superseded_by = Column(String, nullable=True)
     created_at = Column(DateTime, default=utc_now_naive)
     completed_at = Column(DateTime, nullable=True)
+
 
 class ClaimRevision(Base):
     __tablename__ = "claim_revisions"
@@ -1003,4 +1002,3 @@ class ClaimRevision(Base):
     correction_reason = Column(String)
     payload = Column(JSON)
     created_at = Column(DateTime, default=utc_now_naive)
-

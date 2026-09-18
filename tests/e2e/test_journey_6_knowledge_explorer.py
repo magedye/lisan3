@@ -8,29 +8,35 @@ def test_journey_6_knowledge_explorer_uses_real_graph_projection(
 ):
     """R1: backend projection -> read-only React Flow -> provenance table."""
     monkeypatch.setattr(
-        "backend.domain.services.claim_visibility.has_valid_gate", lambda *_args: True
+        "backend.domain.services.claim_visibility.ClaimReleasePolicy.evaluate_run",
+        lambda *_args: type("ReleaseDecision", (), {"released": True})(),
     )
     db = e2e_server["db_session"]()
     try:
-        snapshot = models.CorpusSnapshot(
-            id="snap_e2e_graph_j6",
-            canonical_text_source="fixture",
-            canonical_text_version="v1",
-            canonical_text_hash="fixture-hash-j6",
+        methodology = models.MethodologyRevision(
+            id="method-e2e-j6",
+            methodology_id="method-e2e-j6",
+            revision="fixture",
+            lifecycle_state="CURRENT",
+            authority_reference="docs/canonical/LISAN_PLATFORM_CANONICAL_IMPLEMENTATION_REFERENCE.md",
+            source_reference="docs/canonical/LISAN_PLATFORM_CANONICAL_IMPLEMENTATION_REFERENCE.md",
+            source_sha256="adf86e1dddf0d97d540315ce50bacfb922e1398ac1d74bc0da7c341bf7ad4086",
+            allowed_use="QURAN_INTERNAL_CUMULATIVE_RUN",
+            research_run_eligible=True,
         )
         run = models.ResearchRun(
             id="run_e2e_graph",
             target_contract="ROOT_CORE",
             target_expression="علم",
             methodology_revision="method-e2e",
-            corpus_snapshot=snapshot.id,
+            corpus_snapshot="snap_tanzil_1_1_ac0724796cbb",
             authority_context={"source": "e2e"},
         )
         isolation = models.IsolationState(
             id="iso_e2e_graph",
             research_run_id=run.id,
             target_contract=run.target_contract,
-            corpus_snapshot=snapshot.id,
+            corpus_snapshot="snap_tanzil_1_1_ac0724796cbb",
             methodology_reference=run.methodology_revision,
             allowed_sources=["QURAN_CORPUS"],
             is_contaminated="CLEAN",
@@ -45,9 +51,9 @@ def test_journey_6_knowledge_explorer_uses_real_graph_projection(
             id="dep_e2e_graph",
             dependent_claim_id=claim.id,
             dependency_type="CORPUS_SNAPSHOT",
-            dependency_ref=snapshot.id,
+            dependency_ref="snap_tanzil_1_1_ac0724796cbb",
         )
-        db.add_all([snapshot, run, isolation, claim, dependency])
+        db.add_all([methodology, run, isolation, claim, dependency])
         db.commit()
     finally:
         db.close()

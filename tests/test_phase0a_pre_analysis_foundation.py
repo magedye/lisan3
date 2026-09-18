@@ -259,7 +259,9 @@ def test_2_deterministic_counts_are_reproducible():
 
 
 def test_3_structural_uncertainty_is_preserved():
-    profile = RootDescriptiveProfileService.build("س ل م", _slm_tokens(include_disputed=True))
+    profile = RootDescriptiveProfileService.build(
+        "س ل م", _slm_tokens(include_disputed=True)
+    )
     # The disputed attribution is surfaced, not silently counted as a fact.
     assert profile.total_confirmed_occurrences == 4
     assert profile.total_eligible_occurrences == 5
@@ -311,7 +313,10 @@ def test_4_one_unexplained_occurrence_blocks_accepted_root_wide_concept():
     assert blocked.status_code == 403
     assert "root semantic unity" in blocked.text
     # And it stays non-canonical.
-    assert client.get(f"/judgments/{claim_id}").json()["canonical_state"] == "NOT_CANONICAL"
+    assert (
+        client.get(f"/judgments/{claim_id}").json()["canonical_state"]
+        == "NOT_CANONICAL"
+    )
 
 
 def test_4b_confirmed_counterexample_occurrence_blocks_universal_root_concept():
@@ -344,7 +349,9 @@ def test_5_no_majority_threshold_bypasses_universal_presence():
 
     fields = ResearchJudgmentCreate.model_fields.keys()
     assert not any(
-        token in name for name in fields for token in ("threshold", "percent", "majority")
+        token in name
+        for name in fields
+        for token in ("threshold", "percent", "majority")
     )
 
 
@@ -393,9 +400,12 @@ def test_7_external_hypothesis_cannot_masquerade_as_blind_internal():
 
     # A hypothesis (external or not) has no canonical/acceptance transition and no
     # confidence field: an external candidate can never become project authority.
-    assert "canonicalize" not in str(app.openapi()["paths"].get("/hypotheses/{hyp_id}", {}))
+    assert "canonicalize" not in str(
+        app.openapi()["paths"].get("/hypotheses/{hyp_id}", {})
+    )
     assert not any(
-        key in external.json() for key in ("confidence", "confidence_bonus", "canonical_state")
+        key in external.json()
+        for key in ("confidence", "confidence_bonus", "canonical_state")
     )
     # An illegal origin value is rejected, not coerced to internal.
     bad = client.post(
@@ -528,7 +538,9 @@ def test_9_canonical_preserved_content_is_not_silently_rewritten():
         snapshot = db.get(models.CorpusSnapshot, admission.authorized_snapshot_id)
         assert snapshot is not None
         snapshot.canonical_text_hash = "0" * 64
-        with pytest.raises(ValueError, match="does not match the canonical expected hash"):
+        with pytest.raises(
+            ValueError, match="does not match the canonical expected hash"
+        ):
             db.flush()
         db.rollback()
 

@@ -61,9 +61,7 @@ def test_real_tanzil_import_persists_exact_pre_activation_snapshot(db, tmp_path)
     index = (tmp_path / str(admission.identity_index_reference)).read_bytes()
     parsed = TanzilArtifactParser(admission).parse(raw, index)
 
-    result = TanzilPreActivationImporter.import_candidate(
-        db, repository_root=tmp_path
-    )
+    result = TanzilPreActivationImporter.import_candidate(db, repository_root=tmp_path)
 
     assert result.created is True
     assert result.occurrence_count == 6_236
@@ -81,8 +79,7 @@ def test_real_tanzil_import_persists_exact_pre_activation_snapshot(db, tmp_path)
     assert snapshot.fixture_only is False
     assert snapshot.structural_source is None
     assert (
-        snapshot.canon_001_reconciliation
-        == CANON_001_ARTIFACT_IDENTITY_MATCH_CONFIRMED
+        snapshot.canon_001_reconciliation == CANON_001_ARTIFACT_IDENTITY_MATCH_CONFIRMED
     )
 
     occurrences = (
@@ -108,12 +105,8 @@ def test_exact_reimport_is_idempotent_and_partial_existing_import_fails_closed(
     db, tmp_path
 ):
     _copy_authority_artifacts(tmp_path)
-    first = TanzilPreActivationImporter.import_candidate(
-        db, repository_root=tmp_path
-    )
-    second = TanzilPreActivationImporter.import_candidate(
-        db, repository_root=tmp_path
-    )
+    first = TanzilPreActivationImporter.import_candidate(db, repository_root=tmp_path)
+    second = TanzilPreActivationImporter.import_candidate(db, repository_root=tmp_path)
     assert second.created is False
     assert second.snapshot.id == first.snapshot.id
     assert db.query(CorpusSnapshot).count() == 1
@@ -201,7 +194,9 @@ def test_production_activation_and_imported_provenance_mutation_fail_closed(
     ).snapshot
 
     snapshot.activation_status = PRODUCTION_ACTIVE
-    with pytest.raises(ValueError, match="production-active snapshot must be VALIDATED"):
+    with pytest.raises(
+        ValueError, match="production-active snapshot must be VALIDATED"
+    ):
         db.flush()
     db.rollback()
 
@@ -222,7 +217,9 @@ def test_tanzil_provenance_migration_is_reversible_and_matches_models(tmp_path):
     command.upgrade(config, "head")
     engine = create_engine(f"sqlite:///{database_path.as_posix()}")
     inspector = sa.inspect(engine)
-    snapshot_columns = {item["name"] for item in inspector.get_columns("corpus_snapshots")}
+    snapshot_columns = {
+        item["name"] for item in inspector.get_columns("corpus_snapshots")
+    }
     assert {column.name for column in CorpusSnapshot.__table__.columns}.issubset(
         snapshot_columns
     )
@@ -232,15 +229,19 @@ def test_tanzil_provenance_migration_is_reversible_and_matches_models(tmp_path):
     assert nullable["verse_ref"] is False
     assert nullable["text"] is False
     assert {
-        constraint["name"] for constraint in inspector.get_unique_constraints("corpus_snapshots")
+        constraint["name"]
+        for constraint in inspector.get_unique_constraints("corpus_snapshots")
     } >= {"uq_corpus_snapshot_artifact_identity"}
     assert {
-        constraint["name"] for constraint in inspector.get_unique_constraints("corpus_occurrences")
+        constraint["name"]
+        for constraint in inspector.get_unique_constraints("corpus_occurrences")
     } >= {"uq_corpus_occurrence_snapshot_verse"}
 
     command.downgrade(config, "e8b3f6a1c204")
     inspector = sa.inspect(engine)
-    snapshot_columns = {item["name"] for item in inspector.get_columns("corpus_snapshots")}
+    snapshot_columns = {
+        item["name"] for item in inspector.get_columns("corpus_snapshots")
+    }
     assert "artifact_reference" not in snapshot_columns
 
     command.upgrade(config, "head")

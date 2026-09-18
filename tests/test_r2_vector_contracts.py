@@ -175,7 +175,11 @@ def test_production_handoff_accepts_only_the_exact_governed_artifact():
             {},
             "unknown or prohibited",
         ),
-        ({"quran_corpus": corpus_binding().model_copy(update={"version": "other"})}, {}, "Quran corpus"),
+        (
+            {"quran_corpus": corpus_binding().model_copy(update={"version": "other"})},
+            {},
+            "Quran corpus",
+        ),
     ],
 )
 def test_production_handoff_rejects_mismatched_governed_metadata(

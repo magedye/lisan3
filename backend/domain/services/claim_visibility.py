@@ -29,9 +29,7 @@ class ClaimReleasePolicy:
             .one_or_none()
         )
         if isolation is None:
-            return ClaimReleaseDecision(
-                False, "Blind Lab isolation is absent"
-            )
+            return ClaimReleaseDecision(False, "Blind Lab isolation is absent")
         if isolation.is_contaminated != "CLEAN":
             return ClaimReleaseDecision(False, "Blind Lab run is contaminated")
         return ClaimReleaseDecision(True)

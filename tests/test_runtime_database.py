@@ -55,10 +55,10 @@ def test_legacy_revision_is_reported_without_mutation(tmp_path):
     database_path = tmp_path / "legacy.db"
     engine = create_engine(f"sqlite:///{database_path.as_posix()}")
     with engine.begin() as connection:
-        connection.execute(text("CREATE TABLE alembic_version (version_num VARCHAR(32))"))
         connection.execute(
-            text("INSERT INTO alembic_version VALUES ('5542b3a62e23')")
+            text("CREATE TABLE alembic_version (version_num VARCHAR(32))")
         )
+        connection.execute(text("INSERT INTO alembic_version VALUES ('5542b3a62e23')"))
 
     with Session(engine) as session:
         status = database_schema_status(session)

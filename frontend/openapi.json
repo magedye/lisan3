@@ -1387,6 +1387,102 @@
         }
       }
     },
+    "/claims/{claim_id}/amend": {
+      "post": {
+        "summary": "Amend Claim",
+        "description": "Stage 9: Claim Revision Model - support atomic amendments.",
+        "operationId": "amend_claim_claims__claim_id__amend_post",
+        "parameters": [
+          {
+            "name": "claim_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Claim Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ClaimAmendmentRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SemanticClaimResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "409": {
+            "description": "Conflict"
+          }
+        }
+      }
+    },
     "/judgments/{claim_id}": {
       "get": {
         "summary": "Get Research Judgment",
@@ -1410,6 +1506,89 @@
                 "schema": {
                   "$ref": "#/components/schemas/SemanticClaimResponse"
                 }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "409": {
+            "description": "Conflict"
+          }
+        }
+      }
+    },
+    "/runs/{run_id}/provenance": {
+      "get": {
+        "summary": "Get Provenance",
+        "operationId": "get_provenance_runs__run_id__provenance_get",
+        "parameters": [
+          {
+            "name": "run_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Run Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
               }
             }
           },
@@ -3714,6 +3893,133 @@
         ],
         "title": "ChangeProposalResponse"
       },
+      "ClaimAmendmentRequest": {
+        "properties": {
+          "correction_reason": {
+            "type": "string",
+            "title": "Correction Reason"
+          },
+          "preferred_conclusion": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Preferred Conclusion"
+          },
+          "root_concept": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Root Concept"
+          },
+          "plain_explanation": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Plain Explanation"
+          },
+          "semantic_boundary": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Semantic Boundary"
+          },
+          "layer_attribution": {
+            "anyOf": [
+              {
+                "additionalProperties": {
+                  "type": "string"
+                },
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Layer Attribution"
+          },
+          "supporting_evidence": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Supporting Evidence"
+          },
+          "counterevidence": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Counterevidence"
+          },
+          "unresolved_cases": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Unresolved Cases"
+          },
+          "hard_cases": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Hard Cases"
+          }
+        },
+        "type": "object",
+        "required": [
+          "correction_reason"
+        ],
+        "title": "ClaimAmendmentRequest"
+      },
       "ClaimHistoryResponse": {
         "properties": {
           "claim_id": {
@@ -4382,6 +4688,15 @@
             "type": "string",
             "title": "Hypothesis Type"
           },
+          "origin": {
+            "type": "string",
+            "enum": [
+              "INDEPENDENT_INTERNAL_DERIVATION",
+              "EXTERNAL_CANDIDATE"
+            ],
+            "title": "Origin",
+            "default": "INDEPENDENT_INTERNAL_DERIVATION"
+          },
           "target_contract": {
             "type": "string",
             "title": "Target Contract"
@@ -4442,6 +4757,15 @@
           "hypothesis_type": {
             "type": "string",
             "title": "Hypothesis Type"
+          },
+          "origin": {
+            "type": "string",
+            "enum": [
+              "INDEPENDENT_INTERNAL_DERIVATION",
+              "EXTERNAL_CANDIDATE"
+            ],
+            "title": "Origin",
+            "default": "INDEPENDENT_INTERNAL_DERIVATION"
           },
           "target_contract": {
             "type": "string",
@@ -4563,6 +4887,71 @@
             "type": "string",
             "format": "date-time",
             "title": "Created At"
+          },
+          "establishment_status": {
+            "type": "string",
+            "title": "Establishment Status",
+            "default": "NOT_ESTABLISHED"
+          },
+          "prohibited_sources": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Prohibited Sources"
+          },
+          "input_manifest": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Input Manifest"
+          },
+          "attesting_actor": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Attesting Actor"
+          },
+          "attested_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Attested At"
+          },
+          "audit_ref": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Audit Ref"
           }
         },
         "type": "object",
@@ -5730,28 +6119,32 @@
               "type": "string"
             },
             "type": "array",
-            "title": "Supporting Evidence"
+            "title": "Supporting Evidence",
+            "default": []
           },
           "counterevidence": {
             "items": {
               "type": "string"
             },
             "type": "array",
-            "title": "Counterevidence"
+            "title": "Counterevidence",
+            "default": []
           },
           "unresolved_cases": {
             "items": {
               "type": "string"
             },
             "type": "array",
-            "title": "Unresolved Cases"
+            "title": "Unresolved Cases",
+            "default": []
           },
           "hard_cases": {
             "items": {
               "type": "string"
             },
             "type": "array",
-            "title": "Hard Cases"
+            "title": "Hard Cases",
+            "default": []
           },
           "strongest_counterexample": {
             "anyOf": [
@@ -5813,10 +6206,6 @@
           "revision_id",
           "research_completeness",
           "layer_attribution",
-          "supporting_evidence",
-          "counterevidence",
-          "unresolved_cases",
-          "hard_cases",
           "reopen_conditions",
           "created_at"
         ],

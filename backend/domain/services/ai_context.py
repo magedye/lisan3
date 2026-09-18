@@ -89,7 +89,8 @@ class AIContextBuilder:
             db.query(Hypothesis)
             .filter(
                 Hypothesis.research_run_id == run_id,
-                Hypothesis.origin == HypothesisOrigin.INDEPENDENT_INTERNAL_DERIVATION.value,
+                Hypothesis.origin
+                == HypothesisOrigin.INDEPENDENT_INTERNAL_DERIVATION.value,
             )
             .all()
         )

@@ -98,9 +98,7 @@ def upgrade() -> None:
         )
 
     with op.batch_alter_table("corpus_occurrences") as batch_op:
-        batch_op.alter_column(
-            "snapshot_id", existing_type=sa.String(), nullable=False
-        )
+        batch_op.alter_column("snapshot_id", existing_type=sa.String(), nullable=False)
         batch_op.alter_column("verse_ref", existing_type=sa.String(), nullable=False)
         batch_op.alter_column("text", existing_type=sa.String(), nullable=False)
         batch_op.create_foreign_key(
@@ -117,15 +115,11 @@ def upgrade() -> None:
 
 def downgrade() -> None:
     with op.batch_alter_table("corpus_occurrences") as batch_op:
-        batch_op.drop_constraint(
-            "uq_corpus_occurrence_snapshot_verse", type_="unique"
-        )
+        batch_op.drop_constraint("uq_corpus_occurrence_snapshot_verse", type_="unique")
         batch_op.drop_constraint("fk_corpus_occurrence_snapshot", type_="foreignkey")
         batch_op.alter_column("text", existing_type=sa.String(), nullable=True)
         batch_op.alter_column("verse_ref", existing_type=sa.String(), nullable=True)
-        batch_op.alter_column(
-            "snapshot_id", existing_type=sa.String(), nullable=True
-        )
+        batch_op.alter_column("snapshot_id", existing_type=sa.String(), nullable=True)
 
     with op.batch_alter_table("corpus_snapshots") as batch_op:
         batch_op.drop_constraint(
@@ -134,9 +128,7 @@ def downgrade() -> None:
         batch_op.drop_constraint(
             "ck_corpus_snapshot_artifact_size_positive", type_="check"
         )
-        batch_op.drop_constraint(
-            "uq_corpus_snapshot_artifact_identity", type_="unique"
-        )
+        batch_op.drop_constraint("uq_corpus_snapshot_artifact_identity", type_="unique")
         batch_op.drop_column("canon_001_reconciliation")
         batch_op.drop_column("verse_count")
         batch_op.drop_column("identity_index_sha256")

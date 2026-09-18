@@ -114,32 +114,42 @@ class GovernedModelArtifactManifest(EmbeddingModelManifest):
     issued_at: datetime
     expires_at: datetime
 
-    @field_validator(
-        "artifact_sha256", "tokenizer_sha256", "configuration_sha256"
-    )
+    @field_validator("artifact_sha256", "tokenizer_sha256", "configuration_sha256")
     @classmethod
     def require_sha256(cls, value: str) -> str:
         if not _SHA256_PATTERN.fullmatch(value):
-            raise ValueError("Artifact, tokenizer, and configuration hashes must be SHA-256")
+            raise ValueError(
+                "Artifact, tokenizer, and configuration hashes must be SHA-256"
+            )
         return value.lower()
 
     @field_validator("artifact_location")
     @classmethod
     def require_immutable_artifact_reference(cls, value: str) -> str:
         if not value.startswith(_IMMUTABLE_ARTIFACT_REFERENCE_PREFIX):
-            raise ValueError("Artifact location must be an immutable artifact reference")
+            raise ValueError(
+                "Artifact location must be an immutable artifact reference"
+            )
         return value
 
     @model_validator(mode="after")
     def validate_handoff_completeness(self) -> "GovernedModelArtifactManifest":
         if not self.governance_decision_ref:
-            raise ValueError("Governed model artifact manifest requires a decision reference")
+            raise ValueError(
+                "Governed model artifact manifest requires a decision reference"
+            )
         if self.configuration_sha256 != self.config_hash:
-            raise ValueError("Configuration hash does not match the declared model configuration")
+            raise ValueError(
+                "Configuration hash does not match the declared model configuration"
+            )
         if set(self.metrics_by_space) != set(self.allowed_spaces):
-            raise ValueError("Metrics must cover exactly the supported embedding spaces")
+            raise ValueError(
+                "Metrics must cover exactly the supported embedding spaces"
+            )
         if any(not metrics for metrics in self.metrics_by_space.values()):
-            raise ValueError("Each supported embedding space requires benchmark metrics")
+            raise ValueError(
+                "Each supported embedding space requires benchmark metrics"
+            )
         issued_at = _as_utc(self.issued_at)
         expires_at = _as_utc(self.expires_at)
         if expires_at <= issued_at:
@@ -164,9 +174,7 @@ class GovernedModelArtifactRequirements(VectorContract):
     approved_training_data_provenance: tuple[str, ...] = Field(min_length=1)
     approved_exposure_classifications: tuple[str, ...] = Field(min_length=1)
 
-    @field_validator(
-        "artifact_sha256", "tokenizer_sha256", "configuration_sha256"
-    )
+    @field_validator("artifact_sha256", "tokenizer_sha256", "configuration_sha256")
     @classmethod
     def require_sha256(cls, value: str) -> str:
         if not _SHA256_PATTERN.fullmatch(value):
@@ -199,22 +207,40 @@ def require_governed_model_manifest(
             "Evaluation-only manifests cannot activate a governed model artifact"
         )
     if manifest.governance_decision_ref != requirements.governance_decision_ref:
-        raise GovernedModelManifestRequired("Manifest decision reference is not accepted")
-    if manifest.model_id != requirements.model_id or manifest.revision != requirements.revision:
-        raise GovernedModelManifestRequired("Model revision is not supported by the governed decision")
+        raise GovernedModelManifestRequired(
+            "Manifest decision reference is not accepted"
+        )
+    if (
+        manifest.model_id != requirements.model_id
+        or manifest.revision != requirements.revision
+    ):
+        raise GovernedModelManifestRequired(
+            "Model revision is not supported by the governed decision"
+        )
     if manifest.artifact_sha256 != requirements.artifact_sha256:
-        raise GovernedModelManifestRequired("Artifact hash is not accepted by the governed decision")
+        raise GovernedModelManifestRequired(
+            "Artifact hash is not accepted by the governed decision"
+        )
     if manifest.dimensions != requirements.dimensions:
         raise GovernedModelManifestRequired("Embedding dimension is not supported")
     if manifest.tokenizer_sha256 != requirements.tokenizer_sha256:
-        raise GovernedModelManifestRequired("Tokenizer hash is not accepted by the governed decision")
+        raise GovernedModelManifestRequired(
+            "Tokenizer hash is not accepted by the governed decision"
+        )
     if manifest.configuration_sha256 != requirements.configuration_sha256:
-        raise GovernedModelManifestRequired("Configuration hash is not accepted by the governed decision")
+        raise GovernedModelManifestRequired(
+            "Configuration hash is not accepted by the governed decision"
+        )
     if manifest.normalization != requirements.normalization:
         raise GovernedModelManifestRequired("Embedding normalization is not compatible")
     if manifest.quran_corpus != requirements.quran_corpus:
-        raise GovernedModelManifestRequired("Quran corpus snapshot does not match the governed decision")
-    if space not in manifest.allowed_spaces or space not in requirements.authorized_spaces:
+        raise GovernedModelManifestRequired(
+            "Quran corpus snapshot does not match the governed decision"
+        )
+    if (
+        space not in manifest.allowed_spaces
+        or space not in requirements.authorized_spaces
+    ):
         raise GovernedModelManifestRequired(
             f"Governed embedding manifest does not authorize {space.value}"
         )
@@ -225,8 +251,13 @@ def require_governed_model_manifest(
         raise GovernedModelManifestRequired("Blind Lab eligibility is not approved")
     if not manifest.provenance_approved:
         raise GovernedModelManifestRequired("Model provenance is not approved")
-    if manifest.training_data_provenance not in requirements.approved_training_data_provenance:
-        raise GovernedModelManifestRequired("Training-data provenance is unknown or prohibited")
+    if (
+        manifest.training_data_provenance
+        not in requirements.approved_training_data_provenance
+    ):
+        raise GovernedModelManifestRequired(
+            "Training-data provenance is unknown or prohibited"
+        )
     if (
         manifest.tafsir_heritage_islamic_qa_exposure
         not in requirements.approved_exposure_classifications
@@ -252,7 +283,11 @@ def verify_artifact_sha256(
 
 
 def _as_utc(value: datetime) -> datetime:
-    return value.replace(tzinfo=timezone.utc) if value.tzinfo is None else value.astimezone(timezone.utc)
+    return (
+        value.replace(tzinfo=timezone.utc)
+        if value.tzinfo is None
+        else value.astimezone(timezone.utc)
+    )
 
 
 class EmbeddingModelAdapter(Protocol):

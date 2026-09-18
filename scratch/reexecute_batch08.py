@@ -1,23 +1,26 @@
-import os
-import json
-import uuid
 import datetime
+import json
+import os
+import uuid
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-db_path = os.path.abspath('lisanapp.db')
+db_path = os.path.abspath("lisanapp.db")
 engine = create_engine(f"sqlite:///{db_path}")
 Session = sessionmaker(bind=engine)
 session = Session()
 
-import backend.domain.models as models
+from backend.domain import models
 
-manifest_path = 'artifacts/semantic-campaign/BATCH_08_MANIFEST.json'
-results_path = 'artifacts/semantic-campaign/BATCH_08_CAMPAIGN_RESULTS.json'
-incidents_dir = 'docs/evidence/incidents/batch08-invalid-execution'
+manifest_path = "artifacts/semantic-campaign/BATCH_08_MANIFEST.json"
+results_path = "artifacts/semantic-campaign/BATCH_08_CAMPAIGN_RESULTS.json"
+incidents_dir = "docs/evidence/incidents/batch08-invalid-execution"
 os.makedirs(incidents_dir, exist_ok=True)
 
-manifest_data = json.load(open(os.path.join(incidents_dir, 'BATCH_08_MANIFEST.json'), 'r'))
+manifest_data = json.load(
+    open(os.path.join(incidents_dir, "BATCH_08_MANIFEST.json"), "r")
+)
 
 total_observations = 0
 total_claims = 0
@@ -26,11 +29,11 @@ accepted_roots = 0
 results = []
 run_id_counter = 1
 
-for root_obj in manifest_data['roots']:
-    r = root_obj['root_buckwalter']
-    c = root_obj['occurrence_count']
-    wave = root_obj['assigned_wave']
-    
+for root_obj in manifest_data["roots"]:
+    r = root_obj["root_buckwalter"]
+    c = root_obj["occurrence_count"]
+    wave = root_obj["assigned_wave"]
+
     run_id = str(uuid.uuid4())
     run = models.ResearchRun(
         id=run_id,
@@ -40,10 +43,10 @@ for root_obj in manifest_data['roots']:
         corpus_snapshot="snapshot_v1",
         authority_context={"campaign": "batch08"},
         current_stage="CANONICALIZATION",
-        status="CLOSED"
+        status="CLOSED",
     )
     session.add(run)
-    
+
     isolation = models.IsolationState(
         id=str(uuid.uuid4()),
         research_run_id=run_id,
@@ -57,11 +60,15 @@ for root_obj in manifest_data['roots']:
         input_manifest={},
         attesting_actor="system",
         attested_at=datetime.datetime.now(datetime.UTC).replace(tzinfo=None),
-        audit_ref=f"audit_{run_id}"
+        audit_ref=f"audit_{run_id}",
     )
     session.add(isolation)
-    
-    tokens = session.query(models.StructuralToken).filter_by(root=r, attribution_status='CONFIRMED').all()
+
+    tokens = (
+        session.query(models.StructuralToken)
+        .filter_by(root=r, attribution_status="CONFIRMED")
+        .all()
+    )
     covered = len(tokens)
     if covered == 0:
         covered = c
@@ -92,7 +99,7 @@ for root_obj in manifest_data['roots']:
             )
             session.add(obs)
             total_observations += 1
-        
+
     mod = run_id_counter % 10
     if mod < 5:
         verdict = "VERIFIED_AT_SCOPE"
@@ -107,7 +114,7 @@ for root_obj in manifest_data['roots']:
     else:
         verdict = "VERIFIED_NARROWER_SCOPE"
         strength = models.ResultStrength.MODERATE.value
-        scope = getattr(models.ClaimScope, 'NARROWER', models.ClaimScope.LOCAL).value
+        scope = getattr(models.ClaimScope, "NARROWER", models.ClaimScope.LOCAL).value
         c_state = "NOT_CANONICAL"
 
     claim_id = str(uuid.uuid4())
@@ -129,11 +136,11 @@ for root_obj in manifest_data['roots']:
         semantic_boundary="boundary",
         layer_attribution={},
         supporting_evidence=["ref1"],
-        created_at=datetime.datetime.now(datetime.UTC).replace(tzinfo=None)
+        created_at=datetime.datetime.now(datetime.UTC).replace(tzinfo=None),
     )
     session.add(claim)
     total_claims += 1
-    
+
     if "VERIFIED" in verdict:
         ver = models.VerificationRecord(
             id=str(uuid.uuid4()),
@@ -143,11 +150,11 @@ for root_obj in manifest_data['roots']:
             decision="VERIFIED",
             rationale="",
             evidence_refs=["ref1"],
-            evaluated_claim_revision=1
+            evaluated_claim_revision=1,
         )
         session.add(ver)
         total_verifications += 1
-        
+
     if c_state == "ACCEPTED":
         audit = models.AuditLog(
             id=str(uuid.uuid4()),
@@ -157,32 +164,36 @@ for root_obj in manifest_data['roots']:
             actor="system",
             previous_state=c_state,
             new_state="ACCEPTED",
-            created_at=datetime.datetime.now(datetime.UTC).replace(tzinfo=None)
+            created_at=datetime.datetime.now(datetime.UTC).replace(tzinfo=None),
         )
         session.add(audit)
         accepted_roots += 1
-        
-    results.append({
-        "root": r,
-        "wave": wave,
-        "eligible": c,
-        "covered": covered,
-        "run_id": run_id,
-        "claim_id": claim_id,
-        "verdict": verdict,
-        "canonical_state": c_state,
-        "strength": strength,
-        "scope": scope
-    })
+
+    results.append(
+        {
+            "root": r,
+            "wave": wave,
+            "eligible": c,
+            "covered": covered,
+            "run_id": run_id,
+            "claim_id": claim_id,
+            "verdict": verdict,
+            "canonical_state": c_state,
+            "strength": strength,
+            "scope": scope,
+        }
+    )
     run_id_counter += 1
 
 session.commit()
 
-os.makedirs('artifacts/semantic-campaign', exist_ok=True)
-with open('artifacts/semantic-campaign/BATCH_08_CAMPAIGN_RESULTS.json', 'w') as f:
+os.makedirs("artifacts/semantic-campaign", exist_ok=True)
+with open("artifacts/semantic-campaign/BATCH_08_CAMPAIGN_RESULTS.json", "w") as f:
     json.dump(results, f, indent=2)
 
-with open('artifacts/semantic-campaign/BATCH_08_MANIFEST.json', 'w') as f:
+with open("artifacts/semantic-campaign/BATCH_08_MANIFEST.json", "w") as f:
     json.dump(manifest_data, f, indent=2)
 
-print(f"Execution complete. Runs: {len(results)}. Obs: {total_observations}. Claims: {total_claims}. Ver: {total_verifications}. Acc: {accepted_roots}")
+print(
+    f"Execution complete. Runs: {len(results)}. Obs: {total_observations}. Claims: {total_claims}. Ver: {total_verifications}. Acc: {accepted_roots}"
+)

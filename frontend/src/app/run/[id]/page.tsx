@@ -133,8 +133,8 @@ export default function ResearchRunPage() {
                 <div className="list-row"><div><strong>{claim.preferred_conclusion || claim.root_concept || "نتيجة غير محسومة"}</strong><small className="technical-text">{claim.id}</small></div><Link className="button button-secondary button-small" href={`/claims/${claim.id}`}>فتح التتبّع</Link></div>
                 <ResearchStatus research={claim.research_state} canonical={claim.canonical_state} compact />
                 <div className="evidence-grid">
-                  <div className="evidence-column"><h3>الأدلة المؤيدة</h3><pre>{JSON.stringify(claim.supporting_evidence ?? {}, null, 2)}</pre></div>
-                  <div className="evidence-column counter"><h3>الأدلة المعارضة</h3><pre>{JSON.stringify(claim.counterevidence ?? {}, null, 2)}</pre></div>
+                  <div className="evidence-column"><h3>الأدلة المؤيدة</h3><pre>{JSON.stringify(claim.supporting_evidence ?? [], null, 2)}</pre></div>
+                  <div className="evidence-column counter"><h3>الأدلة المعارضة</h3><pre>{JSON.stringify(claim.counterevidence ?? [], null, 2)}</pre></div>
                 </div>
               </article>
             ))}</div>
