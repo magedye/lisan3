@@ -4,12 +4,8 @@ from backend.domain import models
 
 
 def test_journey_8_golden_production_routes_are_rtl_responsive_and_real(
-    page: Page, e2e_server: dict, monkeypatch
+    page: Page, e2e_server: dict
 ):
-    monkeypatch.setattr(
-        "backend.domain.services.claim_visibility.ClaimReleasePolicy.evaluate_run",
-        lambda *_args: type("ReleaseDecision", (), {"released": True})(),
-    )
     with e2e_server["db_session"]() as session:
         methodology = models.MethodologyRevision(
             id="method-e2e-j8",

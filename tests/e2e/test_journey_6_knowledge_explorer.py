@@ -4,13 +4,9 @@ from backend.domain import models
 
 
 def test_journey_6_knowledge_explorer_uses_real_graph_projection(
-    page: Page, e2e_server: dict, monkeypatch
+    page: Page, e2e_server: dict
 ):
     """R1: backend projection -> read-only React Flow -> provenance table."""
-    monkeypatch.setattr(
-        "backend.domain.services.claim_visibility.ClaimReleasePolicy.evaluate_run",
-        lambda *_args: type("ReleaseDecision", (), {"released": True})(),
-    )
     db = e2e_server["db_session"]()
     try:
         methodology = models.MethodologyRevision(

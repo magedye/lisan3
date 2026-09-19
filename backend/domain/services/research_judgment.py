@@ -6,6 +6,7 @@ from dataclasses import dataclass, field
 from sqlalchemy.orm import Session
 
 from backend.domain import models, schemas
+from backend.domain.services.actor_context import ActorContext, ActorRole
 from backend.domain.services.research_coverage import confirmed_word_refs
 
 # Contract types whose governed occurrence unit is the word-level root occurrence
@@ -349,8 +350,17 @@ class ResearchJudgmentService:
         run: models.ResearchRun,
         judgment: schemas.ResearchJudgmentCreate,
         *,
-        actor: str,
+        actor_context: ActorContext | None = None,
+        actor: str | None = None,
     ) -> models.SemanticClaim:
+        if actor_context:
+            ActorContext.require_role(actor_context, ActorRole.RESEARCHER)
+            resolved_actor = actor_context.identity
+        elif actor:
+            resolved_actor = actor
+        else:
+            raise ValueError("Actor must be provided")
+            
         decision = evaluate_judgment(db, run, judgment)
         if not decision.accepted:
             raise ValueError("; ".join(decision.reasons))
@@ -415,7 +425,7 @@ class ResearchJudgmentService:
                 action="CREATE_RESEARCH_JUDGMENT",
                 previous_state=None,
                 new_state=claim.research_state,
-                actor=actor,
+                actor=resolved_actor,
             )
         )
         run.current_stage = models.ResearchStage.JUDGMENT.value

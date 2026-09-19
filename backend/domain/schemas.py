@@ -152,6 +152,50 @@ class SemanticClaimResponse(BaseSchema):
     model_config = ConfigDict(from_attributes=True)
 
 
+class ClaimRevisionResponse(BaseSchema):
+    id: str
+    claim_id: str
+    revision_number: int
+    predecessor_revision_id: str | None = None
+    correction_reason: str | None = None
+    payload: dict
+    semantic_payload_hash: str
+    creation_actor: str
+    created_at: datetime
+    frozen_at: datetime | None = None
+    superseded: bool
+
+    model_config = ConfigDict(from_attributes=True)
+
+
+class ClaimRevisionItem(BaseSchema):
+    revision_id: int
+    research_state: str
+    canonical_state: str
+    result_strength: str
+    verification_state: str
+    falsification_status: str
+    correction_reason: str | None = None
+    predecessor_revision_id: str | None = None
+    semantic_payload_hash: str
+    frozen_at: datetime | None = None
+    superseded: bool
+    created_at: datetime
+    creation_actor: str
+
+    model_config = ConfigDict(from_attributes=True)
+
+
+class ClaimHistoryResponse(BaseSchema):
+    claim_id: str
+    current_revision: int
+    revisions: list[ClaimRevisionItem] = []
+    verification_records: list["VerificationRecordResponse"] = []
+    audit_events: list["AuditLogResponse"] = []
+
+    model_config = ConfigDict(from_attributes=True)
+
+
 class ClaimAmendmentRequest(BaseSchema):
     correction_reason: str
     preferred_conclusion: str | None = None
@@ -179,10 +223,32 @@ class VerificationRecordResponse(VerificationRecordCreate):
     verifier_identity: str
     evaluated_claim_revision: int
     created_at: datetime
-
     model_config = ConfigDict(from_attributes=True)
 
 
+class IndependentReviewCreate(BaseSchema):
+    verdict: Literal["VERIFIED", "REJECTED"]
+    scope_disposition: str
+    evidence_package_ref: str
+    independence_metadata: dict
+    model_config = ConfigDict(extra="forbid")
+
+
+class IndependentReviewResponse(BaseSchema):
+    id: str
+    claim_id: str
+    revision_id: int
+    reviewer_identity: str
+    review_status: str
+    verdict: str | None = None
+    scope_disposition: str | None = None
+    evidence_package_ref: str | None = None
+    independence_metadata: dict | None = None
+    superseded_by: str | None = None
+    created_at: datetime
+    completed_at: datetime | None = None
+
+    model_config = ConfigDict(from_attributes=True)
 class CanonicalizationRequest(BaseSchema):
     rationale: str
     model_config = ConfigDict(extra="forbid")
@@ -538,17 +604,6 @@ class ErrorResponse(BaseSchema):
 
     model_config = ConfigDict(from_attributes=True)
 
-
-class ClaimRevisionItem(BaseSchema):
-    revision_id: int
-    research_state: ResearchState
-    canonical_state: CanonicalState
-    result_strength: ResultStrength
-    verification_state: VerificationState
-    falsification_status: FalsificationStatus
-    created_at: datetime
-
-    model_config = ConfigDict(from_attributes=True)
 
 
 class ClaimHistoryResponse(BaseSchema):

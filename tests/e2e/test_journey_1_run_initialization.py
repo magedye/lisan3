@@ -25,8 +25,11 @@ def test_journey_1_run_initialization(page: Page, e2e_server: dict):
     expect(page.locator("h3:has-text('Insufficient Evidence')")).to_be_visible()
 
     # 2. Methodology and Corpus are resolved automatically by the host.
+    import pathlib
+    token = pathlib.Path(".lisan_owner_token").read_text(encoding="utf-8").strip()
     rejected = page.request.post(
         f"{e2e_server['api_url']}/runs",
+        headers={"X-Lisan-Owner-Token": token},
         data={
             "target_contract": "ROOT_CORE",
             "target_expression": "ضرب",

@@ -85,6 +85,9 @@ def test_complete_provenance_graph(test_db):
             claim_id=claim_id,
             revision_number=1,
             correction_reason="initial",
+            payload={"dummy": True},
+            semantic_payload_hash="dummy_hash",
+            creation_actor="SYSTEM",
         )
     )
 

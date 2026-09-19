@@ -9,10 +9,10 @@ from sqlalchemy.orm import Session
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from .domain import models, schemas
+from .domain.services.actor_context import ActorContext, ActorRole
 from .domain.services.canonicalization import (
     CanonicalizationPolicy,
     accepted_root_result,
-    reopen_accepted_results_for_new_evidence,
 )
 from .domain.services.claim_visibility import ClaimReleasePolicy
 from .domain.services.isolation import (
@@ -26,13 +26,20 @@ from .domain.services.knowledge_graph import (
     GraphSourceNotFound,
     KnowledgeGraphService,
 )
+from .domain.services.observation import ObservationService
 from .domain.services.purity import evaluate_methodology_diagnostics
 from .domain.services.research_judgment import (
     ResearchJudgmentService,
     resolve_evidence_refs,
 )
+from .domain.services.research_run import ResearchRunService
 from .domain.services.run_admission import ResearchRunAdmissionPolicy
 from .domain.services.steward import StewardAuthorityRejected, StewardCommandService
+from .infrastructure.auth import (
+    get_owner_actor,
+    get_researcher_actor,
+    get_verifier_actor,
+)
 from .infrastructure.database import database_schema_status, get_db
 
 app = FastAPI(
@@ -190,26 +197,18 @@ def ask_lisan(request: schemas.AskLisanRequest, db: Session = Depends(get_db)):
     response_model=schemas.ResearchRunResponse,
     responses={503: {"description": "Governed run authority unavailable"}},
 )
-def create_run(run: schemas.ResearchRunCreate, db: Session = Depends(get_db)):
-    authority = ResearchRunAdmissionPolicy.resolve(db)
-    if not authority.accepted:
-        raise HTTPException(
-            status_code=503,
-            detail=f"Run admission denied: {'; '.join(authority.reasons)}",
+def create_run(run: schemas.ResearchRunCreate, db: Session = Depends(get_db), actor: ActorContext = Depends(get_researcher_actor)):
+    try:
+        run_record = ResearchRunService.create_run(
+            db,
+            target_contract=run.target_contract,
+            target_expression=run.target_expression,
+            actor_context=actor,
         )
-
-    db_run = models.ResearchRun(
-        id=f"run_{uuid.uuid4().hex[:8]}",
-        target_contract=run.target_contract,
-        target_expression=run.target_expression,
-        methodology_revision=authority.methodology_revision_id,
-        corpus_snapshot=authority.corpus_snapshot_id,
-        authority_context=authority.authority_context,
-    )
-    db.add(db_run)
-    db.commit()
-    db.refresh(db_run)
-    return db_run
+        db.commit()
+        return run_record
+    except ValueError as e:
+        raise HTTPException(status_code=503, detail=str(e))
 
 
 @app.get(
@@ -429,59 +428,29 @@ def record_observation(
     run_id: str,
     artifact: schemas.ObservationArtifactCreate,
     db: Session = Depends(get_db),
+    actor: ActorContext = Depends(get_researcher_actor),
 ):
-    state = (
-        db.query(models.IsolationState)
-        .filter(models.IsolationState.research_run_id == run_id)
-        .first()
-    )
-    if not state:
-        raise HTTPException(status_code=400, detail="Run has no isolation preflight")
-
-    if state.is_contaminated == "PRIOR_CONTAMINATED":
-        raise HTTPException(
-            status_code=403, detail="Cannot record observation: Run is contaminated"
+    try:
+        obs = ObservationService.create_observation(
+            db,
+            run_id=run_id,
+            occurrence_ref=artifact.occurrence_ref,
+            form=artifact.form,
+            syntax=artifact.syntax,
+            participant_roles=artifact.participant_roles,
+            local_context=artifact.local_context,
+            unresolved_ambiguity=artifact.unresolved_ambiguity,
+            actor_context=actor,
         )
-
-    run = db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
-    if run is None:
-        raise HTTPException(status_code=404, detail="Run not found")
-    occurrence = db.get(models.CorpusOccurrence, artifact.occurrence_ref)
-    occurrence_valid = (
-        occurrence is not None and occurrence.snapshot_id == run.corpus_snapshot
-    )
-    if not occurrence_valid:
-        token = (
-            db.query(models.StructuralToken)
-            .filter(
-                models.StructuralToken.snapshot_id == run.corpus_snapshot,
-                models.StructuralToken.word_ref == artifact.occurrence_ref,
-            )
-            .first()
-        )
-        occurrence_valid = token is not None
-    if not occurrence_valid:
-        raise HTTPException(
-            status_code=422,
-            detail="Observation occurrence is absent or outside the run corpus",
-        )
-    db_artifact = models.ObservationArtifact(
-        id=f"obs_{uuid.uuid4().hex[:8]}",
-        research_run_id=run_id,
-        occurrence_ref=artifact.occurrence_ref,
-        form=artifact.form,
-        syntax=artifact.syntax,
-        participant_roles=artifact.participant_roles,
-        local_context=artifact.local_context,
-        unresolved_ambiguity=artifact.unresolved_ambiguity,
-    )
-    db.add(db_artifact)
-
-    db.flush()
-    reopen_accepted_results_for_new_evidence(db, run, db_artifact)
-    db.commit()
-    db.refresh(db_artifact)
-    return db_artifact
+        db.commit()
+        db.refresh(obs)
+        return obs
+    except PermissionError as e:
+        raise HTTPException(status_code=403, detail=str(e))
+    except LookupError as e:
+        raise HTTPException(status_code=404, detail=str(e))
+    except ValueError as e:
+        raise HTTPException(status_code=422, detail=str(e))
 
 
 # --- Test Endpoint for Isolation Mock ---
@@ -613,13 +582,14 @@ def create_research_judgment(
     run_id: str,
     judgment: schemas.ResearchJudgmentCreate,
     db: Session = Depends(get_db),
+    actor_context: ActorContext = Depends(get_researcher_actor),
 ):
     run = db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
     if run is None:
         raise HTTPException(status_code=404, detail="ResearchRun not found")
     try:
         return ResearchJudgmentService.create(
-            db, run, judgment, actor="TRUSTED_LOCAL_RESEARCHER"
+            db, run, judgment, actor_context=actor_context
         )
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
@@ -627,54 +597,81 @@ def create_research_judgment(
 
 @app.post("/claims/{claim_id}/amend", response_model=schemas.SemanticClaimResponse)
 def amend_claim(
-    claim_id: str, request: schemas.ClaimAmendmentRequest, db: Session = Depends(get_db)
+    claim_id: str, request: schemas.ClaimAmendmentRequest, db: Session = Depends(get_db), actor_context: ActorContext = Depends(get_researcher_actor)
 ):
     """Stage 9: Claim Revision Model - support atomic amendments."""
     claim = db.get(models.SemanticClaim, claim_id)
     if not claim:
         raise HTTPException(status_code=404, detail="Claim not found")
 
-    import uuid
+    from .domain.services.revision import ClaimRevisionService
+    
+    # prepare payload
+    payload = request.model_dump(exclude_unset=True)
+    if "correction_reason" in payload:
+        del payload["correction_reason"]
 
-    from backend.infrastructure.database import utc_now_naive
-
-    old_revision = models.ClaimRevision(
-        id=f"rev_{uuid.uuid4().hex[:8]}",
-        claim_id=claim_id,
-        revision_number=getattr(claim, "revision_id", 1),
-        correction_reason=request.correction_reason,
-        payload=schemas.SemanticClaimResponse.model_validate(
-            claim, from_attributes=True
-        ).model_dump(mode="json"),
-        created_at=utc_now_naive(),
-    )
-    db.add(old_revision)
-
-    if request.preferred_conclusion is not None:
-        claim.preferred_conclusion = request.preferred_conclusion
-    if request.root_concept is not None:
-        claim.root_concept = request.root_concept
-    if request.plain_explanation is not None:
-        claim.plain_explanation = request.plain_explanation
-    if request.semantic_boundary is not None:
-        claim.semantic_boundary = request.semantic_boundary
-    if request.layer_attribution is not None:
-        claim.layer_attribution = request.layer_attribution
-    if request.supporting_evidence is not None:
-        claim.supporting_evidence = request.supporting_evidence
-    if request.counterevidence is not None:
-        claim.counterevidence = request.counterevidence
-    if request.unresolved_cases is not None:
-        claim.unresolved_cases = request.unresolved_cases
-    if request.hard_cases is not None:
-        claim.hard_cases = request.hard_cases
-
-    claim.revision_id = getattr(claim, "revision_id", 1) + 1
+    try:
+        successor = ClaimRevisionService.create_successor(
+            db, claim, payload=payload, correction_reason=request.correction_reason, actor_context=actor_context
+        )
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+        
+    # Apply changes to current claim
+    for key, value in payload.items():
+        setattr(claim, key, value)
 
     db.commit()
     db.refresh(claim)
 
     return schemas.SemanticClaimResponse.model_validate(claim, from_attributes=True)
+
+
+@app.get("/judgments/{claim_id}/history", response_model=schemas.ClaimHistoryResponse)
+def get_research_judgment_history(claim_id: str, db: Session = Depends(get_db)):
+    claim = db.get(models.SemanticClaim, claim_id)
+    if not claim:
+        raise HTTPException(status_code=404, detail="Claim not found")
+        
+    revisions = db.query(models.ClaimRevision).filter(
+        models.ClaimRevision.claim_id == claim_id
+    ).order_by(models.ClaimRevision.revision_number.desc()).all()
+    
+    verifications = db.query(models.VerificationRecord).filter(
+        models.VerificationRecord.claim_id == claim_id
+    ).order_by(models.VerificationRecord.created_at.desc()).all()
+    
+    audit_events = db.query(models.AuditLog).filter(
+        models.AuditLog.entity_id == claim_id,
+        models.AuditLog.entity_type == "SemanticClaim"
+    ).order_by(models.AuditLog.created_at.desc()).all()
+    
+    rev_items = []
+    for r in revisions:
+        rev_items.append(schemas.ClaimRevisionItem(
+            revision_id=r.revision_number,
+            research_state=r.payload.get("research_state", "UNRESOLVED"),
+            canonical_state=r.payload.get("canonical_state", "NOT_CANONICAL"),
+            result_strength=r.payload.get("result_strength", "UNRESOLVED"),
+            verification_state=r.payload.get("verification_state", "NOT_VERIFIED"),
+            falsification_status=r.payload.get("falsification_status", "NOT_FALSIFIED"),
+            correction_reason=r.correction_reason,
+            predecessor_revision_id=r.predecessor_revision_id,
+            semantic_payload_hash=r.semantic_payload_hash,
+            frozen_at=r.frozen_at,
+            superseded=r.superseded if hasattr(r, "superseded") else False,
+            created_at=r.created_at,
+            creation_actor=r.creation_actor,
+        ))
+        
+    return schemas.ClaimHistoryResponse(
+        claim_id=claim_id,
+        current_revision=claim.revision_id,
+        revisions=rev_items,
+        verification_records=[schemas.VerificationRecordResponse.model_validate(v, from_attributes=True) for v in verifications],
+        audit_events=[schemas.AuditLogResponse.model_validate(a, from_attributes=True) for a in audit_events],
+    )
 
 
 @app.get("/judgments/{claim_id}", response_model=schemas.SemanticClaimResponse)
@@ -694,61 +691,156 @@ def get_provenance(run_id: str, db: Session = Depends(get_db)):
 
 
 @app.post(
-    "/judgments/{claim_id}/verification",
-    response_model=schemas.VerificationRecordResponse,
+    "/judgments/{claim_id}/reviews",
+    response_model=schemas.IndependentReviewResponse,
 )
-def record_independent_verification(
+def record_independent_review(
     claim_id: str,
-    verification: schemas.VerificationRecordCreate,
+    review_data: schemas.IndependentReviewCreate,
     db: Session = Depends(get_db),
+    actor: ActorContext = Depends(get_verifier_actor),
 ):
+    from .domain.services.independent_review import IndependentReviewService
+
     claim = db.get(models.SemanticClaim, claim_id)
     if not claim:
         raise HTTPException(status_code=404, detail="Research Judgment not found")
-    if (
-        verification.decision == "VERIFIED"
-        and verification.verification_type != "INDEPENDENT"
-    ):
-        raise HTTPException(
-            status_code=422,
-            detail="A VERIFIED decision requires verification_type=INDEPENDENT",
-        )
+        
     run = db.get(models.ResearchRun, claim.research_run_id)
     if run is None:
         raise HTTPException(status_code=422, detail="ResearchRun not found")
-    evidence = resolve_evidence_refs(db, run, verification.evidence_refs)
-    if not evidence.valid:
-        raise HTTPException(status_code=422, detail="; ".join(evidence.reasons))
-    record = models.VerificationRecord(
-        id=f"ver_{uuid.uuid4().hex[:8]}",
-        claim_id=claim_id,
-        verifier_identity="TRUSTED_LOCAL_INDEPENDENT_VERIFIER",
-        verification_type=verification.verification_type,
-        decision=verification.decision,
-        rationale=verification.rationale,
-        evidence_refs=verification.evidence_refs,
-        evaluated_claim_revision=claim.revision_id,
-    )
-    db.add(record)
-    claim.verification_state = (
-        models.VerificationState.VERIFIED.value
-        if verification.decision == "VERIFIED"
-        else models.VerificationState.NOT_VERIFIED.value
-    )
+
+    # assign review context
+    review = IndependentReviewService.assign_review_context(db, claim, actor)
+    
+    try:
+        # record verdict
+        review = IndependentReviewService.record_verdict(
+            db=db,
+            review_id=review.id,
+            verdict=review_data.verdict,
+            scope_disposition=review_data.scope_disposition,
+            evidence_package_ref=review_data.evidence_package_ref,
+            independence_metadata=review_data.independence_metadata
+        )
+    except ValueError as e:
+        raise HTTPException(status_code=422, detail=str(e))
+        
     db.add(
         models.AuditLog(
             id=f"aud_{uuid.uuid4().hex[:8]}",
             entity_id=claim.id,
             entity_type="ResearchJudgment",
-            action="RECORD_INDEPENDENT_VERIFICATION",
+            action="RECORD_INDEPENDENT_REVIEW",
             previous_state=None,
             new_state=claim.verification_state,
             actor="TRUSTED_LOCAL_INDEPENDENT_VERIFIER",
         )
     )
     db.commit()
-    db.refresh(record)
-    return record
+    db.refresh(review)
+    return schemas.IndependentReviewResponse.model_validate(review, from_attributes=True)
+
+
+@app.post(
+    "/judgments/{claim_id}/verification",
+    response_model=schemas.VerificationRecordResponse,
+)
+def record_verification(
+    claim_id: str,
+    verification_data: schemas.VerificationRecordCreate,
+    db: Session = Depends(get_db),
+    actor: ActorContext = Depends(get_verifier_actor),
+):
+    from .domain.services.verification import VerificationService
+
+    claim = db.get(models.SemanticClaim, claim_id)
+    if not claim:
+        raise HTTPException(status_code=404, detail="Research Judgment not found")
+        
+    try:
+        record = VerificationService.create_record(
+            db,
+            claim_id=claim_id,
+            verification_type=verification_data.verification_type,
+            decision=verification_data.decision,
+            rationale=verification_data.rationale,
+            evidence_refs=verification_data.evidence_refs,
+            actor_context=actor,
+        )
+        db.commit()
+        db.refresh(record)
+        return schemas.VerificationRecordResponse.model_validate(record, from_attributes=True)
+    except ValueError as e:
+        raise HTTPException(status_code=422, detail=str(e))
+    except LookupError as e:
+        raise HTTPException(status_code=404, detail=str(e))
+
+
+@app.get("/api/graph/{root_id}", response_model=schemas.KnowledgeGraphResponse)
+def get_root_graph_projection(root_id: str, db: Session = Depends(get_db)):
+    try:
+        nodes, edges = KnowledgeGraphService.build_root_projection(db, root_id)
+        graph = KnowledgeGraphService.to_networkx(nodes, edges)
+        import networkx as nx
+
+        from .domain.services.knowledge_graph import _node_id
+        cycle_nodes = sorted({node for cycle in nx.simple_cycles(graph) for node in cycle})
+        reachable = sorted(nx.descendants(graph, _node_id("SEMANTIC_CLAIM", root_id))) if _node_id("SEMANTIC_CLAIM", root_id) in graph else []
+        return schemas.KnowledgeGraphResponse(
+            run_id=root_id,
+            projection_revision=PROJECTION_REVISION,
+            nodes=[schemas.GraphKnowledgeNodeResponse.model_validate(n, from_attributes=True) for n in nodes],
+            edges=[schemas.GraphKnowledgeEdgeResponse.model_validate(e, from_attributes=True) for e in edges],
+            analysis=schemas.GraphAnalysisResponse(
+                node_count=len(nodes),
+                edge_count=len(edges),
+                cycle_node_ids=cycle_nodes,
+                reachable_node_ids=reachable
+            ),
+            authority_notice="R1 Derived Projection"
+        )
+    except GraphSourceNotFound as e:
+        raise HTTPException(status_code=404, detail=str(e))
+
+
+from .domain.vector_contracts import (
+    CandidateType,
+    EmbeddingModelManifest,
+    EmbeddingSpace,
+)
+
+
+class SearchRequest(schemas.BaseSchema):
+    query_vector: list[float]
+    run_id: str
+    space: EmbeddingSpace
+    manifest: EmbeddingModelManifest
+    top_k: int = 10
+    candidate_type: CandidateType = CandidateType.SEMANTIC_NEIGHBOR
+
+@app.post("/api/search")
+def hybrid_search(request: SearchRequest, db: Session = Depends(get_db)):
+    from .domain.services.vector_discovery import (
+        VectorAccessForbidden,
+        VectorDiscoveryService,
+        VectorStateStale,
+    )
+    try:
+        candidates = VectorDiscoveryService.discover(
+            db=db,
+            run_id=request.run_id,
+            space=request.space,
+            manifest=request.manifest,
+            query_vector=request.query_vector,
+            candidate_type=request.candidate_type,
+            top_k=request.top_k,
+        )
+        return {"results": candidates}
+    except (VectorStateStale, VectorAccessForbidden) as e:
+        raise HTTPException(status_code=422, detail=str(e))
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
 
 
 @app.post(
@@ -759,13 +851,14 @@ def canonicalize_research_judgment(
     claim_id: str,
     request: schemas.CanonicalizationRequest,
     db: Session = Depends(get_db),
+    actor_context: ActorContext = Depends(get_owner_actor),
 ):
     claim = db.get(models.SemanticClaim, claim_id)
     if not claim:
         raise HTTPException(status_code=404, detail="Research Judgment not found")
     try:
         return CanonicalizationPolicy.canonicalize(
-            db, claim, rationale=request.rationale
+            db, claim, rationale=request.rationale, actor_context=actor_context
         )
     except ValueError as exc:
         raise HTTPException(status_code=403, detail=str(exc)) from exc
@@ -811,7 +904,10 @@ def ai_create_research_judgment(run_id: str, db: Session = Depends(get_db)):
         result = agent.run_sync(prompt)
         judgment_input = result.output
         judgment = ResearchJudgmentService.create(
-            db, run, judgment_input, actor="AI_RESEARCH_RUNTIME"
+            db, run, judgment_input, actor_context=ActorContext(
+                role=ActorRole.RESEARCHER,
+                identity="AI_RESEARCH_RUNTIME"
+            )
         )
         record = models.AIExecutionRecord(
             id=f"ai_{uuid.uuid4().hex[:8]}",
@@ -1042,20 +1138,8 @@ def approve_proposal(proposal_id: str, db: Session = Depends(get_db)):
             .first()
         )
         if claim and claim.canonical_state == "ACCEPTED":
-            claim.canonical_state = "REOPEN_REQUIRED"
-            claim.verification_state = "NOT_VERIFIED"
-            claim.revision_id += 1
-            db.add(
-                models.AuditLog(
-                    id=f"aud_{uuid.uuid4().hex[:8]}",
-                    entity_id=claim.id,
-                    entity_type="ResearchJudgment",
-                    action="REOPEN_FOR_GOVERNING_REVISION",
-                    previous_state="ACCEPTED",
-                    new_state="REOPEN_REQUIRED",
-                    actor="GOVERNANCE_IMPACT_POLICY",
-                )
-            )
+            actor = ActorContext(identity="GOVERNANCE_IMPACT_POLICY", role=ActorRole.OWNER_OPERATOR)
+            CanonicalizationPolicy.reopen_for_governance(db, claim, actor_context=actor)
 
     db.commit()
     db.refresh(proposal)
@@ -1358,17 +1442,13 @@ def get_claim_history(claim_id: str, db: Session = Depends(get_db)):
         .all()
     )
 
-    revisions = [
-        schemas.ClaimRevisionItem(
-            revision_id=claim.revision_id,
-            research_state=claim.research_state,
-            canonical_state=claim.canonical_state,
-            result_strength=claim.result_strength,
-            verification_state=claim.verification_state,
-            falsification_status=claim.falsification_status,
-            created_at=claim.created_at,
-        )
-    ]
+    db_revisions = (
+        db.query(models.ClaimRevision)
+        .filter(models.ClaimRevision.claim_id == claim_id)
+        .order_by(models.ClaimRevision.revision_number.asc())
+        .all()
+    )
+    revisions = [schemas.ClaimRevisionItem.model_validate(r) for r in db_revisions]
 
     return schemas.ClaimHistoryResponse(
         claim_id=claim.id,

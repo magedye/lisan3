@@ -1,10 +1,28 @@
+import pathlib
+
 import pytest
+from fastapi.testclient import TestClient
 from sqlalchemy import create_engine, text
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 
 from backend.infrastructure.database import Base, canonical_migration_heads, get_db
 from backend.main import app
+
+# Patch TestClient to automatically include the owner token
+original_request = TestClient.request
+
+def patched_request(self, method, url, **kwargs):
+    headers = kwargs.get("headers", {}) or {}
+    try:
+        token = pathlib.Path(".lisan_owner_token").read_text(encoding="utf-8").strip()
+        headers.setdefault("X-Lisan-Owner-Token", token)
+    except FileNotFoundError:
+        pass
+    kwargs["headers"] = headers
+    return original_request(self, method, url, **kwargs)
+
+TestClient.request = patched_request
 
 SQLALCHEMY_DATABASE_URL = "sqlite:///:memory:"
 engine = create_engine(

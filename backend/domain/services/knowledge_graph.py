@@ -346,6 +346,26 @@ class KnowledgeGraphService:
             },
         )
 
+    @classmethod
+    def build_root_projection(
+        cls, db: Session, root_id: str
+    ) -> tuple[list[models.KnowledgeNode], list[models.KnowledgeEdge]]:
+        """Return the canonical slice of the node space originating from the given ROOT_CONCEPT claim."""
+        root_node_id = _node_id("SEMANTIC_CLAIM", root_id)
+        nodes = db.query(models.KnowledgeNode).all()
+        edges = db.query(models.KnowledgeEdge).all()
+        graph = cls.to_networkx(nodes, edges)
+        
+        if root_node_id not in graph:
+            raise GraphSourceNotFound(f"Root node {root_node_id} not found in projection.")
+            
+        reachable_ids = {root_node_id} | set(nx.descendants(graph, root_node_id))
+        
+        slice_nodes = [n for n in nodes if n.node_id in reachable_ids]
+        slice_edges = [e for e in edges if e.source_node_id in reachable_ids and e.target_node_id in reachable_ids]
+        
+        return slice_nodes, slice_edges
+
     @staticmethod
     def presentation_label(edge: models.KnowledgeEdge) -> str:
         if edge.edge_origin == models.GraphEdgeOrigin.DISCOVERY_CANDIDATE.value:

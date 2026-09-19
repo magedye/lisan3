@@ -3,7 +3,7 @@ from playwright.sync_api import Page, expect
 from backend.domain import models
 
 
-def test_journey_4_governance_review(page: Page, e2e_server: dict, monkeypatch):
+def test_journey_4_governance_review(page: Page, e2e_server: dict):
     """
     Journey 4: Governance Rule Change, Impact Analysis, & Transitive Invalidation
     - Rule/Proposal -> impact -> approved revision -> affected claim becomes REVALIDATION_REQUIRED -> unrelated claim unchanged.
@@ -71,11 +71,6 @@ def test_journey_4_governance_review(page: Page, e2e_server: dict, monkeypatch):
         db.commit()
     finally:
         db.close()
-
-    monkeypatch.setattr(
-        "backend.domain.services.claim_visibility.ClaimReleasePolicy.evaluate_run",
-        lambda *_args: type("ReleaseDecision", (), {"released": True})(),
-    )
 
     # 2. Submit a ChangeProposal
     page.goto(f"{base_url}/governance")

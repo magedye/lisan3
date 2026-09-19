@@ -7,16 +7,17 @@ from datetime import datetime, timezone
 from sqlalchemy.orm import Session
 
 from backend.domain import models
+from backend.domain.services.actor_context import ActorContext, ActorRole
 from backend.domain.services.corpus.authority import is_production_validated
-from backend.domain.services.isolation import isolation_attestation_failures
-from backend.domain.services.methodology_authority import methodology_authority_failures
-from backend.domain.services.research_coverage import confirmed_word_refs
-from backend.domain.services.research_judgment import resolve_evidence_refs
 
 # A server-owned authorized actor must explicitly perform canonicalization
 # (SIMPLIFIED_AI_AUTHORITY_AND_GOVERNANCE_CONTRACT.md, CANONICALIZATION REQUIRES §8).
 # AI/automation actors can never self-authorize ACCEPTED.
 AUTHORIZED_CANONICALIZATION_ACTORS = frozenset({"TRUSTED_LOCAL_OWNER"})
+from backend.domain.services.isolation import isolation_attestation_failures
+from backend.domain.services.methodology_authority import methodology_authority_failures
+from backend.domain.services.research_coverage import confirmed_word_refs
+from backend.domain.services.research_judgment import resolve_evidence_refs
 
 
 @dataclass(frozen=True)
@@ -69,6 +70,14 @@ class CanonicalizationPolicy:
                 "A universal root concept cannot be accepted while confirmed "
                 "occurrences remain unexplained (root semantic unity)"
             )
+
+        if claim.contract_type == "LEXEME":
+            # For LEXEME, ensure that morphological expansion was performed.
+            # We can check if `sampling_basis` or some other field indicates morphological expansion,
+            # or require the caller to provide it in the claim scope/research completeness.
+            completeness = claim.research_completeness or {}
+            if not completeness.get("morphological_expansion_performed"):
+                reasons.append("LEXEME requires full morphological expansion")
 
         run = db.get(models.ResearchRun, claim.research_run_id)
         if run is None:
@@ -168,11 +177,18 @@ class CanonicalizationPolicy:
         claim: models.SemanticClaim,
         *,
         rationale: str,
+        actor_context: ActorContext | None = None,
         actor: str = "TRUSTED_LOCAL_OWNER",
     ) -> models.SemanticClaim:
-        if actor not in AUTHORIZED_CANONICALIZATION_ACTORS:
+        if actor_context:
+            ActorContext.require_role(actor_context, ActorRole.OWNER_OPERATOR)
+            resolved_actor = actor_context.identity
+        else:
+            resolved_actor = actor
+            
+        if resolved_actor not in AUTHORIZED_CANONICALIZATION_ACTORS:
             raise ValueError(
-                f"Actor '{actor}' is not authorized to canonicalize; canonicalization "
+                f"Actor '{resolved_actor}' is not authorized to canonicalize; canonicalization "
                 "is a server-owned trusted-local-owner action"
             )
         decision = cls.evaluate(db, claim)
@@ -193,7 +209,7 @@ class CanonicalizationPolicy:
                 action="CANONICALIZE",
                 previous_state=previous,
                 new_state=models.CanonicalState.ACCEPTED.value,
-                actor=actor,
+                actor=resolved_actor,
             )
         )
         db.add(
@@ -204,12 +220,32 @@ class CanonicalizationPolicy:
                 action="RECORD_RATIONALE",
                 previous_state=None,
                 new_state=rationale,
-                actor=actor,
+                actor=resolved_actor,
             )
         )
         db.commit()
         db.refresh(claim)
         return claim
+
+    @classmethod
+    def reopen_for_governance(cls, db: Session, claim: models.SemanticClaim, actor_context: ActorContext):
+        ActorContext.require_role(actor_context, ActorRole.OWNER_OPERATOR)
+        previous = claim.canonical_state
+        claim.canonical_state = models.CanonicalState.REOPEN_REQUIRED.value
+        claim.verification_state = models.VerificationState.NOT_VERIFIED.value
+        claim.revision_id += 1
+        import uuid
+        db.add(
+            models.AuditLog(
+                id=f"aud_{uuid.uuid4().hex[:8]}",
+                entity_id=claim.id,
+                entity_type="ResearchJudgment",
+                action="REOPEN_FOR_GOVERNING_REVISION",
+                previous_state=previous,
+                new_state=models.CanonicalState.REOPEN_REQUIRED.value,
+                actor=actor_context.identity,
+            )
+        )
 
 
 def reopen_accepted_results_for_new_evidence(

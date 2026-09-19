@@ -3,7 +3,7 @@ from playwright.sync_api import Page, expect
 from backend.domain import models
 
 
-def test_journey_3_purity_check(page: Page, e2e_server: dict, monkeypatch):
+def test_journey_3_purity_check(page: Page, e2e_server: dict):
     """
     Journey 3: Claim Traceability & Methodological Purity Check
     - Claim -> Evidence/Counterevidence -> ResearchRun -> CorpusSnapshot/provenance -> 8-dimension Purity report.
@@ -74,11 +74,6 @@ def test_journey_3_purity_check(page: Page, e2e_server: dict, monkeypatch):
         db.commit()
     finally:
         db.close()
-
-    monkeypatch.setattr(
-        "backend.domain.services.claim_visibility.ClaimReleasePolicy.evaluate_run",
-        lambda *_args: type("ReleaseDecision", (), {"released": True})(),
-    )
 
     # 1. Verify Claim Provenance Read Model
     page.goto(f"{base_url}/claims/clm_trace_01")

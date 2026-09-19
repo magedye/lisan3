@@ -1,0 +1,25 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-9.1.1, pluggy-1.6.0 -- D:\APP\tafseer\lisanapp3\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+hypothesis profile 'default'
+rootdir: D:\APP\tafseer\lisanapp3
+plugins: anyio-4.14.2, hypothesis-6.165.10, logfire-4.41.0, base-url-2.1.0, playwright-0.9.0, schemathesis-4.25.0
+collecting ... collected 1 item
+
+tests/test_canonical_runtime_qualification.py::test_nonsemantic_pipeline_smoke_reaches_accepted FAILED
+
+================================== FAILURES ===================================
+______________ test_nonsemantic_pipeline_smoke_reaches_accepted _______________
+tests\test_canonical_runtime_qualification.py:363: in test_nonsemantic_pipeline_smoke_reaches_accepted
+    _run_id, claim_id = build_accepted_ready_claim()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_canonical_runtime_qualification.py:174: in build_accepted_ready_claim
+    assert verification.status_code == 200, verification.text
+E   AssertionError: {"status":"ERROR","message":"Not Found","detail":"Not Found"}
+E   assert 404 == 200
+E    +  where 404 = <Response [404 Not Found]>.status_code
+=========================== short test summary info ===========================
+FAILED tests/test_canonical_runtime_qualification.py::test_nonsemantic_pipeline_smoke_reaches_accepted - AssertionError: {"status":"ERROR","message":"Not Found","detail":"Not Found"}
+assert 404 == 200
+ +  where 404 = <Response [404 Not Found]>.status_code
+============================== 1 failed in 3.86s ==============================

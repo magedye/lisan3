@@ -1747,3 +1747,9 @@ Batch 07 comparison. Then perform final exact-revision delegated decisions.
   PREFERRED/MODERATE lexeme finding.
 - Both comparisons occurred only after blind verdicts were frozen. Neither
   current claim nor review verdict changed; reviewers performed no writes.
+
+## Batch 08 & Batch 09 Freeze (2026-09-18)
+
+- Batch 08 Execution is currently UNVERIFIED and FROZEN_FOR_PLATFORM_COMPLETION.
+- Batch 09 remains explicitly NOT_AUTHORIZED.
+- Architectural boundary remediation is active, replacing monkeypatched E2E and direct ORM mutation with governed Domain Services and true out-of-process isolation.

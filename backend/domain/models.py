@@ -996,9 +996,46 @@ class IndependentReview(Base):
 
 class ClaimRevision(Base):
     __tablename__ = "claim_revisions"
+    __table_args__ = (
+        UniqueConstraint("claim_id", "revision_number", name="uq_claim_revision_identity"),
+    )
+
     id = Column(String, primary_key=True, index=True)
     claim_id = Column(String, ForeignKey("semantic_claims.id"), nullable=False)
     revision_number = Column(Integer, nullable=False)
+    predecessor_revision_id = Column(String, ForeignKey("claim_revisions.id"), nullable=True)
     correction_reason = Column(String)
-    payload = Column(JSON)
+    payload = Column(JSON, nullable=False)
+    semantic_payload_hash = Column(String, nullable=False)
+    creation_actor = Column(String, nullable=False)
     created_at = Column(DateTime, default=utc_now_naive)
+    frozen_at = Column(DateTime, nullable=True)
+    superseded = Column(Boolean, default=False, nullable=False)
+
+
+@event.listens_for(ClaimRevision, "before_update")
+def enforce_claim_revision_immutability(_mapper, _connection, revision):
+    state = inspect(revision)
+    was_frozen = "frozen_at" in state.attrs.frozen_at.history.deleted and state.attrs.frozen_at.history.deleted[0] is not None
+    is_frozen = revision.frozen_at is not None
+
+    if was_frozen or (is_frozen and not state.attrs.frozen_at.history.added):
+        immutable_fields = (
+            "claim_id",
+            "revision_number",
+            "predecessor_revision_id",
+            "correction_reason",
+            "payload",
+            "semantic_payload_hash",
+            "creation_actor",
+            "created_at",
+            "frozen_at",
+        )
+        changed = [
+            field for field in immutable_fields if state.attrs[field].history.has_changes()
+        ]
+        if changed:
+            raise ValueError(
+                "Cannot mutate a frozen ClaimRevision: " + ", ".join(changed)
+            )
+

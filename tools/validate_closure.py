@@ -1,13 +1,17 @@
+import argparse
 import json
 import os
 import sys
 from collections import Counter
 
+# Ensure PYTHONPATH handles local imports natively
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 
-def validate_closure(db_path, results_path):
+def validate_closure(db_path, results_path, campaign_id):
     if not os.path.exists(results_path):
         print(f"FAILED: Results file not found at {results_path}")
         return False
@@ -39,7 +43,7 @@ def validate_closure(db_path, results_path):
         r
         for r in all_runs
         if isinstance(r.authority_context, dict)
-        and r.authority_context.get("campaign") == "batch08"
+        and r.authority_context.get("campaign") == campaign_id
     ]
     db_run_ids = {r.id for r in db_runs}
 
@@ -78,8 +82,16 @@ def validate_closure(db_path, results_path):
 
 
 if __name__ == "__main__":
-    db = os.path.abspath("lisanapp.db")
-    res = os.path.abspath("artifacts/semantic-campaign/BATCH_08_CAMPAIGN_RESULTS.json")
-    if not validate_closure(db, res):
+    parser = argparse.ArgumentParser(description="Validate closure of a campaign.")
+    parser.add_argument("--db", default="lisanapp.db", help="Path to SQLite database")
+    parser.add_argument("--results", required=True, help="Path to campaign results JSON")
+    parser.add_argument("--campaign", required=True, help="Campaign ID to validate (e.g. batch08)")
+    
+    args = parser.parse_args()
+    
+    db = os.path.abspath(args.db)
+    res = os.path.abspath(args.results)
+    
+    if not validate_closure(db, res, args.campaign):
         sys.exit(1)
     sys.exit(0)

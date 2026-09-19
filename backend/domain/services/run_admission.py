@@ -92,7 +92,7 @@ class ResearchRunAdmissionPolicy:
 
     @staticmethod
     def evaluate(
-        db: Session, corpus_snapshot_id: str, methodology_revision: str
+        db: Session, corpus_snapshot_id: str, methodology_revision: str, target_contract: str | None = None, target_expression: str | None = None
     ) -> RunAdmissionDecision:
         snapshot = db.get(models.CorpusSnapshot, corpus_snapshot_id)
         methodology = db.get(models.MethodologyRevision, methodology_revision)
@@ -122,6 +122,13 @@ class ResearchRunAdmissionPolicy:
                 )
             reasons.extend(production_validation_failures(snapshot))
         reasons.extend(methodology_authority_failures(methodology))
+
+        if target_contract == "WORD_CONCEPT" and target_expression and " " in target_expression:
+            reasons.append("WORD_CONCEPT target expression must not contain spaces")
+            
+        if target_contract == "LEXEME" and target_expression and " " in target_expression:
+            reasons.append("LEXEME target expression must be a single recognized lemma without spaces")
+
         return RunAdmissionDecision(
             not reasons,
             "ADMITTED" if not reasons else "AUTHORITY_UNAVAILABLE",

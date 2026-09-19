@@ -1,0 +1,30 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-9.1.1, pluggy-1.6.0 -- D:\APP\tafseer\lisanapp3\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+hypothesis profile 'default'
+rootdir: D:\APP\tafseer\lisanapp3
+plugins: anyio-4.14.2, hypothesis-6.165.10, logfire-4.41.0, base-url-2.1.0, playwright-0.9.0, schemathesis-4.25.0
+collecting ... collected 2 items
+
+tests/test_revision_lifecycle.py::test_claim_revision_success_and_immutability FAILED
+tests/test_revision_lifecycle.py::test_revision_service_negative_tests FAILED
+
+================================== FAILURES ===================================
+________________ test_claim_revision_success_and_immutability _________________
+tests\test_revision_lifecycle.py:56: in test_claim_revision_success_and_immutability
+    with pytest.raises(ValueError, match="Cannot mutate a frozen ClaimRevision"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: DID NOT RAISE ValueError
+____________________ test_revision_service_negative_tests _____________________
+tests\test_revision_lifecycle.py:69: in test_revision_service_negative_tests
+    with pytest.raises(ValueError, match="Predecessor revision 1 not found"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Regex pattern did not match.
+E     Expected regex: 'Predecessor revision 1 not found'
+E     Actual message: 'Predecessor revision None not found for claim claim_test_2'
+=========================== short test summary info ===========================
+FAILED tests/test_revision_lifecycle.py::test_claim_revision_success_and_immutability - Failed: DID NOT RAISE ValueError
+FAILED tests/test_revision_lifecycle.py::test_revision_service_negative_tests - AssertionError: Regex pattern did not match.
+  Expected regex: 'Predecessor revision 1 not found'
+  Actual message: 'Predecessor revision None not found for claim claim_test_2'
+============================== 2 failed in 3.71s ==============================
