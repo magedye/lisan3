@@ -1753,3 +1753,15 @@ Batch 07 comparison. Then perform final exact-revision delegated decisions.
 - Batch 08 Execution is currently UNVERIFIED and FROZEN_FOR_PLATFORM_COMPLETION.
 - Batch 09 remains explicitly NOT_AUTHORIZED.
 - Architectural boundary remediation is active, replacing monkeypatched E2E and direct ORM mutation with governed Domain Services and true out-of-process isolation.
+
+## LISAN3 Platform Completion Candidate (2026-09-19)
+
+- Implementation candidate: f0cb5ea
+- Restored API mutation authority check using standard Owner Token injection via custom Next.js API proxy (/api/[...route]/route.ts).
+- Migrated legacy Observation properties to strictly match current Database and Domain conventions.
+- Added comprehensive lifecycle support for ClaimRevision and VerificationRecord including required validation payload fields.
+- Fixed structural validation integrity constraints around ResearchRun (enforcing methodology_revision, corpus_snapshot, authority_context).
+- The completion gate tool 	ools/validate_platform_completion.py executed successfully.
+- Clean detached verification passed: static quality (Ruff), full unit tests, integration tests, E2E tests, and evidence artifacts all passed.
+- Verdict: LISAN3_PLATFORM_CANDIDATE_READY_FOR_INDEPENDENT_REVIEW.
+- Did NOT grant LISAN3_PLATFORM_COMPLETION_CONFIRMED, LISAN3_PLATFORM_MERGE_READY, or INDEPENDENTLY_REVIEWED.
