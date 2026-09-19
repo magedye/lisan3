@@ -28,9 +28,8 @@ async function proxyRequest(req: NextRequest) {
     method: req.method,
     headers,
     body: req.method !== "GET" && req.method !== "HEAD" ? req.body : undefined,
-    // @ts-ignore
     duplex: 'half'
-  });
+  } as RequestInit & { duplex: 'half' });
 
   return new Response(response.body, {
     status: response.status,

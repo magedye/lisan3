@@ -3,9 +3,9 @@ import subprocess
 import sys
 
 
-def run_cmd(cmd: list[str]) -> bool:
+def run_cmd(cmd: list[str], cwd: str | None = None) -> bool:
     print(f"Running: {' '.join(cmd)}")
-    result = subprocess.run(cmd, capture_output=True, text=True, check=False)
+    result = subprocess.run(cmd, capture_output=True, text=True, check=False, cwd=cwd)
     if result.returncode != 0:
         print(f"FAILED: {' '.join(cmd)}")
         print(result.stdout)
@@ -33,13 +33,23 @@ def validate_platform_completion():
         # Warning only if pyright fails due to strictness, but let's be strict.
         pass
 
-    # 3. Test Passage
-    print("\n3. Checking Unit and E2E Tests...")
+    # 3. Frontend Quality & Build
+    print("\n3. Checking Frontend Quality and Build...")
+    frontend_dir = os.path.join(os.path.dirname(__file__), "..", "frontend")
+    # Windows fallback for npm
+    npm_cmd = "npm.cmd" if os.name == "nt" else "npm"
+    if not run_cmd([npm_cmd, "run", "lint"], cwd=frontend_dir):
+        return False
+    if not run_cmd([npm_cmd, "run", "build"], cwd=frontend_dir):
+        return False
+
+    # 4. Test Passage
+    print("\n4. Checking Unit and E2E Tests...")
     if not run_cmd([sys.executable, "-m", "pytest", "tests/"]):
         return False
 
-    # 4. Evidence
-    print("\n4. Checking Evidence artifacts...")
+    # 5. Evidence
+    print("\n5. Checking Evidence artifacts...")
     if not os.path.exists("docs/evidence/platform"):
         print("FAILED: docs/evidence/platform missing.")
         return False
