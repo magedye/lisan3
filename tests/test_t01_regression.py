@@ -42,7 +42,7 @@ def test_t01_t41_latest_wins_memory_conflict(test_db):
     test_db.commit()
     
     mem1 = SemanticMemoryService.admit(test_db, schemas.SemanticMemoryCreate(
-        claim_id='claim_1', target_type='ROOT', target_expression='test', scope='UNIVERSAL', reliability='TRUSTED', reopen_if=['x']
+        claim_id='claim_1', target_type='ROOT', target_expression='test', scope='UNIVERSAL', reliability='TRUSTED', reopen_if=['x'], evidence_refs=['ev1']
     ))
     
     claim2 = SemanticClaim(id='claim_2', contract_type='ROOT', result_strength='STRONG', falsification_status='PASSED')
