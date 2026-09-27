@@ -5,9 +5,11 @@ from sqlalchemy.orm import Session
 from backend.domain.models import (
     IndependentReview,
     SemanticClaim,
+    InternalResultSnapshotRecord,
     utc_now_naive,
 )
 from backend.domain.services.actor_context import ActorContext
+from backend.domain.services.tool_reality import ToolRealityService
 
 
 class IndependentReviewService:
@@ -58,11 +60,25 @@ class IndependentReviewService:
                 "Independence metadata is strictly required for an independent review"
             )
 
+        claim = db.query(SemanticClaim).filter(SemanticClaim.id == review.claim_id).first()
+        if not claim:
+            raise ValueError(f"Claim {review.claim_id} not found")
+
+        # Runtime Integration of Slice H (Tool Reality) & Track 4 (Internal Snapshot)
+        if verdict == "VERIFIED":
+            snapshot = db.query(InternalResultSnapshotRecord).filter(InternalResultSnapshotRecord.claim_id == claim.id).first()
+            if not snapshot:
+                raise ValueError("External comparison requires a valid frozen internal snapshot")
+            
+            if claim.research_run_id:
+                # Assuming generic required_tools for now, or fetch from claim metadata
+                # Just checking that ToolReality validate passes if any tools were required
+                required_tools = claim.falsification_plan.get("required_tools", []) if claim.falsification_plan else []
+                if required_tools:
+                    ToolRealityService.validate_tool_reality_for_claim(db, claim.research_run_id, required_tools)
+
         # Invalidate pending reviews if claim was revised
-        claim = (
-            db.query(SemanticClaim).filter(SemanticClaim.id == review.claim_id).first()
-        )
-        if claim and claim.revision_id != review.revision_id:
+        if claim.revision_id != review.revision_id:
             review.review_status = "INVALIDATED"
             db.add(review)
             raise ValueError(f"Claim {claim.id} was revised. Review is obsolete.")

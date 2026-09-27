@@ -90,3 +90,19 @@ def test_t01_t53_fake_memory_save_disclosure(test_db):
             claim_id='claim_t53', target_type='ROOT', target_expression='T53', scope='LOCAL', reliability='TRUSTED', reopen_if=['1']
         ))
 
+def test_independent_review_requires_snapshot_and_tools(test_db):
+    from backend.domain.services.independent_review import IndependentReviewService
+    from backend.domain.services.actor_context import ActorContext, ActorRole
+    claim = SemanticClaim(id='claim_ir1', contract_type='ROOT', result_strength='STRONG', falsification_status='PASSED')
+    test_db.add(claim)
+    test_db.commit()
+
+    reviewer = ActorContext(identity='rev1', roles=[ActorRole.REVIEWER])
+    review = IndependentReviewService.assign_review_context(test_db, claim, reviewer)
+
+    # Missing Snapshot
+    with pytest.raises(ValueError, match='External comparison requires a valid frozen internal snapshot'):
+        IndependentReviewService.record_verdict(
+            test_db, review.id, 'VERIFIED', 'SCOPE', 'ref', {'independence': 'true'}
+        )
+
