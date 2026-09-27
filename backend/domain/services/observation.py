@@ -35,9 +35,7 @@ class ObservationService:
             raise PermissionError("Cannot record observation: Run is contaminated")
 
         run = (
-            db.query(models.ResearchRun)
-            .filter(models.ResearchRun.id == run_id)
-            .first()
+            db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
         )
         if run is None:
             raise LookupError("Run not found")

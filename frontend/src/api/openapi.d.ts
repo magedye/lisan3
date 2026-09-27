@@ -302,6 +302,26 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/judgments/{claim_id}/history": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * Get Claim History
+         * @description Returns the complete history and revision timeline of a SemanticClaim.
+         */
+        get: operations["get_claim_history_judgments__claim_id__history_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/judgments/{claim_id}": {
         parameters: {
             query?: never;
@@ -336,6 +356,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/judgments/{claim_id}/reviews": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Record Independent Review */
+        post: operations["record_independent_review_judgments__claim_id__reviews_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/judgments/{claim_id}/verification": {
         parameters: {
             query?: never;
@@ -345,8 +382,42 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** Record Independent Verification */
-        post: operations["record_independent_verification_judgments__claim_id__verification_post"];
+        /** Record Verification */
+        post: operations["record_verification_judgments__claim_id__verification_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/graph/{root_id}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Get Root Graph Projection */
+        get: operations["get_root_graph_projection_api_graph__root_id__get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/search": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Hybrid Search */
+        post: operations["hybrid_search_api_search_post"];
         delete?: never;
         options?: never;
         head?: never;
@@ -617,26 +688,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/judgments/{claim_id}/history": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /**
-         * Get Claim History
-         * @description Returns the complete history and revision timeline of a SemanticClaim.
-         */
-        get: operations["get_claim_history_judgments__claim_id__history_get"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
     "/governance/rules/{rule_code}/history": {
         parameters: {
             query?: never;
@@ -855,6 +906,11 @@ export interface components {
             created_at: string;
         };
         /**
+         * CandidateType
+         * @enum {string}
+         */
+        CandidateType: "SEMANTIC_NEIGHBOR" | "COUNTEREVIDENCE";
+        /**
          * CanonicalState
          * @enum {string}
          */
@@ -942,16 +998,33 @@ export interface components {
         ClaimRevisionItem: {
             /** Revision Id */
             revision_id: number;
-            research_state: components["schemas"]["ResearchState"];
-            canonical_state: components["schemas"]["CanonicalState"];
-            result_strength: components["schemas"]["ResultStrength"];
-            verification_state: components["schemas"]["VerificationState"];
-            falsification_status: components["schemas"]["FalsificationStatus"];
+            /** Research State */
+            research_state: string;
+            /** Canonical State */
+            canonical_state: string;
+            /** Result Strength */
+            result_strength: string;
+            /** Verification State */
+            verification_state: string;
+            /** Falsification Status */
+            falsification_status: string;
+            /** Correction Reason */
+            correction_reason?: string | null;
+            /** Predecessor Revision Id */
+            predecessor_revision_id?: string | null;
+            /** Semantic Payload Hash */
+            semantic_payload_hash: string;
+            /** Frozen At */
+            frozen_at?: string | null;
+            /** Superseded */
+            superseded: boolean;
             /**
              * Created At
              * Format: date-time
              */
             created_at: string;
+            /** Creation Actor */
+            creation_actor: string;
         };
         /**
          * ClaimScope
@@ -1024,6 +1097,28 @@ export interface components {
              */
             created_at: string;
         };
+        /** EmbeddingModelManifest */
+        EmbeddingModelManifest: {
+            /** Model Id */
+            model_id: string;
+            /** Revision */
+            revision: string;
+            /** Dimensions */
+            dimensions: number;
+            /** Preprocessing Config */
+            preprocessing_config: {
+                [key: string]: string | number | boolean;
+            };
+            /** Allowed Spaces */
+            allowed_spaces: components["schemas"]["EmbeddingSpace"][];
+            /** Governance Decision Ref */
+            governance_decision_ref?: string | null;
+        };
+        /**
+         * EmbeddingSpace
+         * @enum {string}
+         */
+        EmbeddingSpace: "VERSE_CONTEXT" | "STRUCTURAL_PROFILE" | "HYPOTHESIS" | "CLAIM" | "ROOT_CANDIDATE" | "EXTERNAL_RESEARCH";
         /** ErrorResponse */
         ErrorResponse: {
             /** Status */
@@ -1250,6 +1345,54 @@ export interface components {
              * Format: date-time
              */
             created_at: string;
+        };
+        /** IndependentReviewCreate */
+        IndependentReviewCreate: {
+            /**
+             * Verdict
+             * @enum {string}
+             */
+            verdict: "VERIFIED" | "REJECTED";
+            /** Scope Disposition */
+            scope_disposition: string;
+            /** Evidence Package Ref */
+            evidence_package_ref: string;
+            /** Independence Metadata */
+            independence_metadata: {
+                [key: string]: unknown;
+            };
+        };
+        /** IndependentReviewResponse */
+        IndependentReviewResponse: {
+            /** Id */
+            id: string;
+            /** Claim Id */
+            claim_id: string;
+            /** Revision Id */
+            revision_id: number;
+            /** Reviewer Identity */
+            reviewer_identity: string;
+            /** Review Status */
+            review_status: string;
+            /** Verdict */
+            verdict?: string | null;
+            /** Scope Disposition */
+            scope_disposition?: string | null;
+            /** Evidence Package Ref */
+            evidence_package_ref?: string | null;
+            /** Independence Metadata */
+            independence_metadata?: {
+                [key: string]: unknown;
+            } | null;
+            /** Superseded By */
+            superseded_by?: string | null;
+            /**
+             * Created At
+             * Format: date-time
+             */
+            created_at: string;
+            /** Completed At */
+            completed_at?: string | null;
         };
         /** IsolationStateResponse */
         IsolationStateResponse: {
@@ -1697,6 +1840,22 @@ export interface components {
              * @default []
              */
             audit_events: components["schemas"]["AuditLogResponse"][];
+        };
+        /** SearchRequest */
+        SearchRequest: {
+            /** Query Vector */
+            query_vector: number[];
+            /** Run Id */
+            run_id: string;
+            space: components["schemas"]["EmbeddingSpace"];
+            manifest: components["schemas"]["EmbeddingModelManifest"];
+            /**
+             * Top K
+             * @default 10
+             */
+            top_k: number;
+            /** @default SEMANTIC_NEIGHBOR */
+            candidate_type: components["schemas"]["CandidateType"];
         };
         /** SemanticClaimResponse */
         SemanticClaimResponse: {
@@ -3269,6 +3428,87 @@ export interface operations {
             };
         };
     };
+    get_claim_history_judgments__claim_id__history_get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                claim_id: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ClaimHistoryResponse"];
+                };
+            };
+            /** @description Bad Request */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Unauthorized */
+            401: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Forbidden */
+            403: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Not Found */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Conflict */
+            409: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Internal Server Error */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+        };
+    };
     get_research_judgment_judgments__claim_id__get: {
         parameters: {
             query?: never;
@@ -3431,7 +3671,92 @@ export interface operations {
             };
         };
     };
-    record_independent_verification_judgments__claim_id__verification_post: {
+    record_independent_review_judgments__claim_id__reviews_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                claim_id: string;
+            };
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["IndependentReviewCreate"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["IndependentReviewResponse"];
+                };
+            };
+            /** @description Bad Request */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Unauthorized */
+            401: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Forbidden */
+            403: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Not Found */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Conflict */
+            409: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Internal Server Error */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+        };
+    };
+    record_verification_judgments__claim_id__verification_post: {
         parameters: {
             query?: never;
             header?: never;
@@ -3453,6 +3778,170 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["VerificationRecordResponse"];
+                };
+            };
+            /** @description Bad Request */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Unauthorized */
+            401: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Forbidden */
+            403: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Not Found */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Conflict */
+            409: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Internal Server Error */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+        };
+    };
+    get_root_graph_projection_api_graph__root_id__get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                root_id: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["KnowledgeGraphResponse"];
+                };
+            };
+            /** @description Bad Request */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Unauthorized */
+            401: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Forbidden */
+            403: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Not Found */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Conflict */
+            409: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Internal Server Error */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+        };
+    };
+    hybrid_search_api_search_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["SearchRequest"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": unknown;
                 };
             };
             /** @description Bad Request */
@@ -4597,87 +5086,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["AuditLogResponse"][];
-                };
-            };
-            /** @description Bad Request */
-            400: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["ErrorResponse"];
-                };
-            };
-            /** @description Unauthorized */
-            401: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-            /** @description Forbidden */
-            403: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["ErrorResponse"];
-                };
-            };
-            /** @description Not Found */
-            404: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["ErrorResponse"];
-                };
-            };
-            /** @description Conflict */
-            409: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content?: never;
-            };
-            /** @description Validation Error */
-            422: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["ErrorResponse"];
-                };
-            };
-            /** @description Internal Server Error */
-            500: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["ErrorResponse"];
-                };
-            };
-        };
-    };
-    get_claim_history_judgments__claim_id__history_get: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                claim_id: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            /** @description Successful Response */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": components["schemas"]["ClaimHistoryResponse"];
                 };
             };
             /** @description Bad Request */

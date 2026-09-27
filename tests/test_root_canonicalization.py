@@ -36,15 +36,19 @@ def test_root_semantic_unity(test_db):
         hard_cases=["hard"],
         reopen_conditions=["reopen"],
         root_concept="root",
-        unresolved_cases=["unexplained_occurrence"], # <--- violates unity
-        research_completeness={"sufficient_for_claim": True}
+        unresolved_cases=["unexplained_occurrence"],  # <--- violates unity
+        research_completeness={"sufficient_for_claim": True},
     )
     test_db.add(claim)
     test_db.commit()
 
     decision = CanonicalizationPolicy.evaluate(test_db, claim)
     assert not decision.accepted
-    assert any("A universal root concept cannot be accepted while confirmed occurrences remain unexplained" in r for r in decision.reasons)
+    assert any(
+        "A universal root concept cannot be accepted while confirmed occurrences remain unexplained"
+        in r
+        for r in decision.reasons
+    )
 
     # test counterevidence blocks it
     claim.unresolved_cases = []

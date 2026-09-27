@@ -48,7 +48,7 @@ def e2e_server(tmp_path_factory):
 
     env = os.environ.copy()
     env["LISAN_DATABASE_URL"] = f"sqlite:///{db_path.as_posix()}"
-    
+
     import sys
 
     api_process = subprocess.Popen(
@@ -57,8 +57,10 @@ def e2e_server(tmp_path_factory):
             "-m",
             "uvicorn",
             "backend.main:app",
-            "--host", host,
-            "--port", str(api_port),
+            "--host",
+            host,
+            "--port",
+            str(api_port),
         ],
         env=env,
     )

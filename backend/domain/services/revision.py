@@ -28,10 +28,14 @@ class ClaimRevisionService:
         This enforces that N cannot be edited in place and N+1 is created.
         """
         # Validate predecessor exists
-        predecessor = db.query(ClaimRevision).filter(
-            ClaimRevision.claim_id == claim.id,
-            ClaimRevision.revision_number == claim.revision_id
-        ).first()
+        predecessor = (
+            db.query(ClaimRevision)
+            .filter(
+                ClaimRevision.claim_id == claim.id,
+                ClaimRevision.revision_number == claim.revision_id,
+            )
+            .first()
+        )
 
         if predecessor is None:
             raise ValueError(
@@ -87,13 +91,19 @@ class ClaimRevisionService:
         if not claim:
             raise ValueError(f"Claim {claim_id} not found")
 
-        current = db.query(ClaimRevision).filter(
-            ClaimRevision.claim_id == claim_id,
-            ClaimRevision.revision_number == claim.revision_id
-        ).first()
+        current = (
+            db.query(ClaimRevision)
+            .filter(
+                ClaimRevision.claim_id == claim_id,
+                ClaimRevision.revision_number == claim.revision_id,
+            )
+            .first()
+        )
 
         if not current:
-            raise ValueError(f"Current revision {claim.revision_id} not found for claim {claim_id}")
+            raise ValueError(
+                f"Current revision {claim.revision_id} not found for claim {claim_id}"
+            )
 
         return current
 

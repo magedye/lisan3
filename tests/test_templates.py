@@ -25,7 +25,7 @@ def test_root_concept_template_compliance():
         created_at=datetime.now(timezone.utc),
         research_completeness={},
         layer_attribution={},
-        reopen_conditions=[]
+        reopen_conditions=[],
     )
     dumped = response.model_dump()
     assert "root_concept" in dumped
@@ -33,6 +33,7 @@ def test_root_concept_template_compliance():
     assert "semantic_boundary" in dumped
     assert "strongest_counterexample" in dumped
     assert "strongest_competitor" in dumped
+
 
 def test_word_concept_template_compliance():
     response = SemanticClaimResponse(
@@ -48,7 +49,7 @@ def test_word_concept_template_compliance():
         created_at=datetime.now(timezone.utc),
         research_completeness={},
         layer_attribution={},
-        reopen_conditions=[]
+        reopen_conditions=[],
     )
     dumped = response.model_dump()
     assert "plain_explanation" in dumped

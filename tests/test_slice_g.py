@@ -180,7 +180,7 @@ def test_judgment_history_read_model(test_db, setup_claim):
         evaluated_claim_revision=1,
     )
     test_db.add(record)
-    
+
     revision = models.ClaimRevision(
         id=f"rev_{uuid.uuid4().hex[:8]}",
         claim_id=claim_id,
@@ -190,23 +190,23 @@ def test_judgment_history_read_model(test_db, setup_claim):
             "canonical_state": "PROPOSED",
             "result_strength": "STRONG",
             "verification_state": "UNVERIFIED",
-            "falsification_status": "UNTESTED"
+            "falsification_status": "UNTESTED",
         },
         semantic_payload_hash="dummy_hash",
-        creation_actor="SYSTEM"
+        creation_actor="SYSTEM",
     )
     test_db.add(revision)
-    
+
     audit_event = models.AuditLog(
         id=f"aud_{uuid.uuid4().hex[:8]}",
         entity_id=claim_id,
         entity_type="SemanticClaim",
         action="CREATE",
         actor="SYSTEM",
-        new_state="PROPOSED"
+        new_state="PROPOSED",
     )
     test_db.add(audit_event)
-    
+
     test_db.commit()
 
     res = client.get(f"/judgments/{claim_id}/history")

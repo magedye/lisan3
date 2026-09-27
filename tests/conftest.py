@@ -12,6 +12,7 @@ from backend.main import app
 # Patch TestClient to automatically include the owner token
 original_request = TestClient.request
 
+
 def patched_request(self, method, url, **kwargs):
     headers = kwargs.get("headers", {}) or {}
     try:
@@ -21,6 +22,7 @@ def patched_request(self, method, url, **kwargs):
         pass
     kwargs["headers"] = headers
     return original_request(self, method, url, **kwargs)
+
 
 TestClient.request = patched_request
 

@@ -185,7 +185,7 @@ class CanonicalizationPolicy:
             resolved_actor = actor_context.identity
         else:
             resolved_actor = actor
-            
+
         if resolved_actor not in AUTHORIZED_CANONICALIZATION_ACTORS:
             raise ValueError(
                 f"Actor '{resolved_actor}' is not authorized to canonicalize; canonicalization "
@@ -228,13 +228,16 @@ class CanonicalizationPolicy:
         return claim
 
     @classmethod
-    def reopen_for_governance(cls, db: Session, claim: models.SemanticClaim, actor_context: ActorContext):
+    def reopen_for_governance(
+        cls, db: Session, claim: models.SemanticClaim, actor_context: ActorContext
+    ):
         ActorContext.require_role(actor_context, ActorRole.OWNER_OPERATOR)
         previous = claim.canonical_state
         claim.canonical_state = models.CanonicalState.REOPEN_REQUIRED.value
         claim.verification_state = models.VerificationState.NOT_VERIFIED.value
         claim.revision_id += 1
         import uuid
+
         db.add(
             models.AuditLog(
                 id=f"aud_{uuid.uuid4().hex[:8]}",

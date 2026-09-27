@@ -246,7 +246,12 @@
           "409": {
             "description": "Conflict"
           }
-        }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
       }
     },
     "/methodologies": {
@@ -836,6 +841,11 @@
       "post": {
         "summary": "Record Observation",
         "operationId": "record_observation_runs__run_id__observations_post",
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
         "parameters": [
           {
             "name": "run_id",
@@ -1296,6 +1306,11 @@
       "post": {
         "summary": "Create Research Judgment",
         "operationId": "create_research_judgment_runs__run_id__judgments_post",
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
         "parameters": [
           {
             "name": "run_id",
@@ -1392,6 +1407,11 @@
         "summary": "Amend Claim",
         "description": "Stage 9: Claim Revision Model - support atomic amendments.",
         "operationId": "amend_claim_claims__claim_id__amend_post",
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
         "parameters": [
           {
             "name": "claim_id",
@@ -1420,6 +1440,92 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/SemanticClaimResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "409": {
+            "description": "Conflict"
+          }
+        }
+      }
+    },
+    "/judgments/{claim_id}/history": {
+      "get": {
+        "summary": "Get Claim History",
+        "description": "Returns the complete history and revision timeline of a SemanticClaim.",
+        "operationId": "get_claim_history_judgments__claim_id__history_get",
+        "parameters": [
+          {
+            "name": "claim_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Claim Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClaimHistoryResponse"
                 }
               }
             }
@@ -1651,10 +1757,115 @@
         }
       }
     },
+    "/judgments/{claim_id}/reviews": {
+      "post": {
+        "summary": "Record Independent Review",
+        "operationId": "record_independent_review_judgments__claim_id__reviews_post",
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "claim_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Claim Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IndependentReviewCreate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IndependentReviewResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "409": {
+            "description": "Conflict"
+          }
+        }
+      }
+    },
     "/judgments/{claim_id}/verification": {
       "post": {
-        "summary": "Record Independent Verification",
-        "operationId": "record_independent_verification_judgments__claim_id__verification_post",
+        "summary": "Record Verification",
+        "operationId": "record_verification_judgments__claim_id__verification_post",
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
         "parameters": [
           {
             "name": "claim_id",
@@ -1746,10 +1957,182 @@
         }
       }
     },
+    "/api/graph/{root_id}": {
+      "get": {
+        "summary": "Get Root Graph Projection",
+        "operationId": "get_root_graph_projection_api_graph__root_id__get",
+        "parameters": [
+          {
+            "name": "root_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Root Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/KnowledgeGraphResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "409": {
+            "description": "Conflict"
+          }
+        }
+      }
+    },
+    "/api/search": {
+      "post": {
+        "summary": "Hybrid Search",
+        "operationId": "hybrid_search_api_search_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SearchRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "409": {
+            "description": "Conflict"
+          }
+        }
+      }
+    },
     "/judgments/{claim_id}/canonicalize": {
       "post": {
         "summary": "Canonicalize Research Judgment",
         "operationId": "canonicalize_research_judgment_judgments__claim_id__canonicalize_post",
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
         "parameters": [
           {
             "name": "claim_id",
@@ -2977,92 +3360,6 @@
         }
       }
     },
-    "/judgments/{claim_id}/history": {
-      "get": {
-        "summary": "Get Claim History",
-        "description": "Returns the complete history and revision timeline of a SemanticClaim.",
-        "operationId": "get_claim_history_judgments__claim_id__history_get",
-        "parameters": [
-          {
-            "name": "claim_id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "title": "Claim Id"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Successful Response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ClaimHistoryResponse"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Bad Request",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "422": {
-            "description": "Validation Error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "500": {
-            "description": "Internal Server Error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "409": {
-            "description": "Conflict"
-          }
-        }
-      }
-    },
     "/governance/rules/{rule_code}/history": {
       "get": {
         "summary": "Get Rule History",
@@ -3812,6 +4109,14 @@
         ],
         "title": "AuditLogResponse"
       },
+      "CandidateType": {
+        "type": "string",
+        "enum": [
+          "SEMANTIC_NEIGHBOR",
+          "COUNTEREVIDENCE"
+        ],
+        "title": "CandidateType"
+      },
       "CanonicalState": {
         "type": "string",
         "enum": [
@@ -4069,24 +4374,75 @@
             "title": "Revision Id"
           },
           "research_state": {
-            "$ref": "#/components/schemas/ResearchState"
+            "type": "string",
+            "title": "Research State"
           },
           "canonical_state": {
-            "$ref": "#/components/schemas/CanonicalState"
+            "type": "string",
+            "title": "Canonical State"
           },
           "result_strength": {
-            "$ref": "#/components/schemas/ResultStrength"
+            "type": "string",
+            "title": "Result Strength"
           },
           "verification_state": {
-            "$ref": "#/components/schemas/VerificationState"
+            "type": "string",
+            "title": "Verification State"
           },
           "falsification_status": {
-            "$ref": "#/components/schemas/FalsificationStatus"
+            "type": "string",
+            "title": "Falsification Status"
+          },
+          "correction_reason": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Correction Reason"
+          },
+          "predecessor_revision_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Predecessor Revision Id"
+          },
+          "semantic_payload_hash": {
+            "type": "string",
+            "title": "Semantic Payload Hash"
+          },
+          "frozen_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Frozen At"
+          },
+          "superseded": {
+            "type": "boolean",
+            "title": "Superseded"
           },
           "created_at": {
             "type": "string",
             "format": "date-time",
             "title": "Created At"
+          },
+          "creation_actor": {
+            "type": "string",
+            "title": "Creation Actor"
           }
         },
         "type": "object",
@@ -4097,7 +4453,10 @@
           "result_strength",
           "verification_state",
           "falsification_status",
-          "created_at"
+          "semantic_payload_hash",
+          "superseded",
+          "created_at",
+          "creation_actor"
         ],
         "title": "ClaimRevisionItem"
       },
@@ -4269,6 +4628,86 @@
           "created_at"
         ],
         "title": "DependencyRecordResponse"
+      },
+      "EmbeddingModelManifest": {
+        "properties": {
+          "model_id": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Model Id"
+          },
+          "revision": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Revision"
+          },
+          "dimensions": {
+            "type": "integer",
+            "exclusiveMinimum": 0.0,
+            "title": "Dimensions"
+          },
+          "preprocessing_config": {
+            "additionalProperties": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
+            },
+            "type": "object",
+            "title": "Preprocessing Config"
+          },
+          "allowed_spaces": {
+            "items": {
+              "$ref": "#/components/schemas/EmbeddingSpace"
+            },
+            "type": "array",
+            "minItems": 1,
+            "title": "Allowed Spaces"
+          },
+          "governance_decision_ref": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Governance Decision Ref"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "model_id",
+          "revision",
+          "dimensions",
+          "preprocessing_config",
+          "allowed_spaces"
+        ],
+        "title": "EmbeddingModelManifest"
+      },
+      "EmbeddingSpace": {
+        "type": "string",
+        "enum": [
+          "VERSE_CONTEXT",
+          "STRUCTURAL_PROFILE",
+          "HYPOTHESIS",
+          "CLAIM",
+          "ROOT_CANDIDATE",
+          "EXTERNAL_RESEARCH"
+        ],
+        "title": "EmbeddingSpace"
       },
       "ErrorResponse": {
         "properties": {
@@ -4837,6 +5276,147 @@
           "created_at"
         ],
         "title": "HypothesisResponse"
+      },
+      "IndependentReviewCreate": {
+        "properties": {
+          "verdict": {
+            "type": "string",
+            "enum": [
+              "VERIFIED",
+              "REJECTED"
+            ],
+            "title": "Verdict"
+          },
+          "scope_disposition": {
+            "type": "string",
+            "title": "Scope Disposition"
+          },
+          "evidence_package_ref": {
+            "type": "string",
+            "title": "Evidence Package Ref"
+          },
+          "independence_metadata": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Independence Metadata"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "verdict",
+          "scope_disposition",
+          "evidence_package_ref",
+          "independence_metadata"
+        ],
+        "title": "IndependentReviewCreate"
+      },
+      "IndependentReviewResponse": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "claim_id": {
+            "type": "string",
+            "title": "Claim Id"
+          },
+          "revision_id": {
+            "type": "integer",
+            "title": "Revision Id"
+          },
+          "reviewer_identity": {
+            "type": "string",
+            "title": "Reviewer Identity"
+          },
+          "review_status": {
+            "type": "string",
+            "title": "Review Status"
+          },
+          "verdict": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Verdict"
+          },
+          "scope_disposition": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Scope Disposition"
+          },
+          "evidence_package_ref": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Evidence Package Ref"
+          },
+          "independence_metadata": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Independence Metadata"
+          },
+          "superseded_by": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Superseded By"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          },
+          "completed_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Completed At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "claim_id",
+          "revision_id",
+          "reviewer_identity",
+          "review_status",
+          "created_at"
+        ],
+        "title": "IndependentReviewResponse"
       },
       "IsolationStateResponse": {
         "properties": {
@@ -5994,6 +6574,44 @@
         ],
         "title": "RunWorkspaceResponse"
       },
+      "SearchRequest": {
+        "properties": {
+          "query_vector": {
+            "items": {
+              "type": "number"
+            },
+            "type": "array",
+            "title": "Query Vector"
+          },
+          "run_id": {
+            "type": "string",
+            "title": "Run Id"
+          },
+          "space": {
+            "$ref": "#/components/schemas/EmbeddingSpace"
+          },
+          "manifest": {
+            "$ref": "#/components/schemas/EmbeddingModelManifest"
+          },
+          "top_k": {
+            "type": "integer",
+            "title": "Top K",
+            "default": 10
+          },
+          "candidate_type": {
+            "$ref": "#/components/schemas/CandidateType",
+            "default": "SEMANTIC_NEIGHBOR"
+          }
+        },
+        "type": "object",
+        "required": [
+          "query_vector",
+          "run_id",
+          "space",
+          "manifest"
+        ],
+        "title": "SearchRequest"
+      },
       "SemanticClaimResponse": {
         "properties": {
           "id": {
@@ -6416,6 +7034,13 @@
           "VERIFIED"
         ],
         "title": "VerificationState"
+      }
+    },
+    "securitySchemes": {
+      "APIKeyHeader": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-Lisan-Owner-Token"
       }
     }
   }

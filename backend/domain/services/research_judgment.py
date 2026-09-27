@@ -335,6 +335,52 @@ def evaluate_judgment(
                 "Missing material semantic layer attribution: "
                 + ", ".join(sorted(missing_layers))
             )
+    if run.target_contract:
+        if run.target_contract == "LOCAL_MEANING" and judgment.contract_type in (
+            "ROOT_CORE",
+            "ROOT_CONCEPT",
+        ):
+            reasons.append(
+                f"Target contract mismatch: Run target_contract '{run.target_contract}' cannot produce '{judgment.contract_type}' judgment without explicit declaration"
+            )
+
+    if (
+        judgment.contract_type in ("ROOT_CORE", "ROOT_CONCEPT")
+        and judgment.result_strength == models.ResultStrength.STRONG
+    ):
+        if not judgment.distinctive_residue or not judgment.distinctive_residue.strip():
+            reasons.append(
+                "A strong root judgment requires distinctive residue against neighboring roots (cannot be generic)"
+            )
+
+    # Check for unresolved essential neighbors in this run
+    unresolved_nbrs = (
+        db.query(models.EssentialNeighbor)
+        .join(
+            models.Hypothesis,
+            models.EssentialNeighbor.hypothesis_id == models.Hypothesis.id,
+        )
+        .filter(
+            models.Hypothesis.research_run_id == run.id,
+            (models.EssentialNeighbor.status == "UNRESOLVED")
+            | (models.EssentialNeighbor.unresolved_distinction.isnot(None)),
+        )
+        .all()
+    )
+    if unresolved_nbrs and judgment.result_strength == models.ResultStrength.STRONG:
+        reasons.append(
+            "Unresolved essential neighbor blocks full distinctiveness (cannot claim STRONG support)"
+        )
+
+    if judgment.decisive_contexts and judgment.illustrative_verses:
+        if (
+            set(judgment.decisive_contexts) == set(judgment.illustrative_verses)
+            and len(judgment.decisive_contexts) > 0
+        ):
+            reasons.append(
+                "Epistemic role confusion: decisive_contexts (falsification role) cannot be identical to illustrative_verses (presentation role)"
+            )
+
     if judgment.research_state == models.ResearchState.UNRESOLVED:
         if judgment.result_strength != models.ResultStrength.UNRESOLVED:
             reasons.append("UNRESOLVED research state requires UNRESOLVED strength")
@@ -360,7 +406,7 @@ class ResearchJudgmentService:
             resolved_actor = actor
         else:
             raise ValueError("Actor must be provided")
-            
+
         decision = evaluate_judgment(db, run, judgment)
         if not decision.accepted:
             raise ValueError("; ".join(decision.reasons))
@@ -380,6 +426,9 @@ class ResearchJudgmentService:
             root_concept=judgment.root_concept,
             plain_explanation=judgment.plain_explanation,
             semantic_boundary=judgment.semantic_boundary,
+            distinctive_residue=judgment.distinctive_residue,
+            illustrative_verses=judgment.illustrative_verses,
+            decisive_contexts=judgment.decisive_contexts,
             layer_attribution=judgment.layer_attribution,
             rejection_condition=(
                 judgment.rejection_condition.model_dump()

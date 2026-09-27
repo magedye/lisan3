@@ -18,6 +18,7 @@ class ActorContext:
     Structured context to enforce strict authority boundaries across domain services.
     Services must accept this context rather than arbitrary string actor names.
     """
+
     identity: str
     role: ActorRole
 

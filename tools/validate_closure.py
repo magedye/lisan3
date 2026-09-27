@@ -84,14 +84,18 @@ def validate_closure(db_path, results_path, campaign_id):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Validate closure of a campaign.")
     parser.add_argument("--db", default="lisanapp.db", help="Path to SQLite database")
-    parser.add_argument("--results", required=True, help="Path to campaign results JSON")
-    parser.add_argument("--campaign", required=True, help="Campaign ID to validate (e.g. batch08)")
-    
+    parser.add_argument(
+        "--results", required=True, help="Path to campaign results JSON"
+    )
+    parser.add_argument(
+        "--campaign", required=True, help="Campaign ID to validate (e.g. batch08)"
+    )
+
     args = parser.parse_args()
-    
+
     db = os.path.abspath(args.db)
     res = os.path.abspath(args.results)
-    
+
     if not validate_closure(db, res, args.campaign):
         sys.exit(1)
     sys.exit(0)

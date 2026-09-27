@@ -5,9 +5,7 @@ from playwright.sync_api import Page, expect
 from backend.domain.models import AuditLog, IsolationState, ResearchRun, SemanticClaim
 
 
-def test_journey_7_golden_shell_and_audit(
-    page: Page, e2e_server: dict
-):
+def test_journey_7_golden_shell_and_audit(page: Page, e2e_server: dict):
     with e2e_server["db_session"]() as session:
         session.add_all(
             [

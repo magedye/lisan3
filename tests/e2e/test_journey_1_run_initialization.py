@@ -26,6 +26,7 @@ def test_journey_1_run_initialization(page: Page, e2e_server: dict):
 
     # 2. Methodology and Corpus are resolved automatically by the host.
     import pathlib
+
     token = pathlib.Path(".lisan_owner_token").read_text(encoding="utf-8").strip()
     rejected = page.request.post(
         f"{e2e_server['api_url']}/runs",

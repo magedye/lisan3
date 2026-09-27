@@ -355,15 +355,21 @@ class KnowledgeGraphService:
         nodes = db.query(models.KnowledgeNode).all()
         edges = db.query(models.KnowledgeEdge).all()
         graph = cls.to_networkx(nodes, edges)
-        
+
         if root_node_id not in graph:
-            raise GraphSourceNotFound(f"Root node {root_node_id} not found in projection.")
-            
+            raise GraphSourceNotFound(
+                f"Root node {root_node_id} not found in projection."
+            )
+
         reachable_ids = {root_node_id} | set(nx.descendants(graph, root_node_id))
-        
+
         slice_nodes = [n for n in nodes if n.node_id in reachable_ids]
-        slice_edges = [e for e in edges if e.source_node_id in reachable_ids and e.target_node_id in reachable_ids]
-        
+        slice_edges = [
+            e
+            for e in edges
+            if e.source_node_id in reachable_ids and e.target_node_id in reachable_ids
+        ]
+
         return slice_nodes, slice_edges
 
     @staticmethod
