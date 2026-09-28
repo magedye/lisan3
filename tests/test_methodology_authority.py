@@ -101,7 +101,7 @@ def _active_snapshot(test_db, monkeypatch) -> models.CorpusSnapshot:
 
 def _payload() -> dict:
     return {
-        "target_contract": "ROOT_CONCEPT",
+        "target_contract": "ROOT_CORE",
         "target_expression": "test",
     }
 
@@ -221,7 +221,7 @@ def test_methodology_migration_seeds_source_bound_revision_and_is_reversible(
                 "WHERE lifecycle_state='CURRENT'"
             )
         ).one()
-        assert record.id == "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4"
+        assert record.id == "LISAN_QURANIC_SEMANTIC_EXTRACTION@b30ee619d8b8"
         assert record.lifecycle_state == "CURRENT"
         assert record.source_reference == SOURCE_REFERENCE
         assert record.source_sha256 == SOURCE_SHA256
@@ -238,6 +238,6 @@ def test_methodology_migration_seeds_source_bound_revision_and_is_reversible(
             connection.execute(
                 sa.text("SELECT count(*) FROM methodology_revisions")
             ).scalar_one()
-            == 2
+            == 3
         )
     engine.dispose()

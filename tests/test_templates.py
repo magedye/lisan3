@@ -14,7 +14,7 @@ from backend.domain.schemas import SemanticClaimResponse
 def test_root_concept_template_compliance():
     response = SemanticClaimResponse(
         id="test_claim",
-        contract_type="ROOT_CONCEPT",
+        contract_type="ROOT_CORE",
         research_state=ResearchState.PREFERRED,
         canonical_state=CanonicalState.ACCEPTED,
         result_strength=ResultStrength.STRONG,

@@ -85,7 +85,7 @@ def test_migration_upgrade_from_previous_head_with_legacy_data(tmp_path):
     c = conn.cursor()
     c.execute(
         "INSERT INTO hypotheses (id, origin, hypothesis_type, target_contract, scope, statement) "
-        "VALUES ('hyp_legacy_1', 'INDEPENDENT_INTERNAL_DERIVATION', 'ROOT_CORE', 'ROOT_CONCEPT', 'UNIVERSAL', 'statement 1')"
+        "VALUES ('hyp_legacy_1', 'INDEPENDENT_INTERNAL_DERIVATION', 'ROOT_CORE', 'ROOT_CORE', 'UNIVERSAL', 'statement 1')"
     )
     c.execute(
         "INSERT INTO essential_neighbors (id, hypothesis_id, shared_domain, positive_distinguishing_candidate, "

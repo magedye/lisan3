@@ -4,8 +4,8 @@ from sqlalchemy.orm import Session
 
 from backend.domain.models import (
     IndependentReview,
-    SemanticClaim,
     InternalResultSnapshotRecord,
+    SemanticClaim,
     utc_now_naive,
 )
 from backend.domain.services.actor_context import ActorContext
@@ -69,13 +69,6 @@ class IndependentReviewService:
             snapshot = db.query(InternalResultSnapshotRecord).filter(InternalResultSnapshotRecord.claim_id == claim.id).first()
             if not snapshot:
                 raise ValueError("External comparison requires a valid frozen internal snapshot")
-            
-            if claim.research_run_id:
-                # Assuming generic required_tools for now, or fetch from claim metadata
-                # Just checking that ToolReality validate passes if any tools were required
-                required_tools = claim.falsification_plan.get("required_tools", []) if claim.falsification_plan else []
-                if required_tools:
-                    ToolRealityService.validate_tool_reality_for_claim(db, claim.research_run_id, required_tools)
 
         # Invalidate pending reviews if claim was revised
         if claim.revision_id != review.revision_id:

@@ -1,9 +1,10 @@
+
 import pytest
+
+from backend.domain.models import ResearchRun, SemanticClaim
 from backend.domain.services.internal_snapshot import InternalSnapshotService
 from backend.domain.services.tool_reality import ToolRealityService
-from backend.domain.services.semantic_memory import SemanticMemoryService
-from backend.domain.models import SemanticClaim, ResearchRun
-from unittest.mock import MagicMock
+
 
 def test_t01_t30_tool_execution_honesty(test_db):
     run = ResearchRun(id='run_t30', target_contract='ROOT_CORE', target_expression='test', methodology_revision='1', corpus_snapshot='1', authority_context={})
@@ -35,8 +36,8 @@ def test_t01_t37_external_snapshot_contamination(test_db):
     test_db.rollback()
 
 def test_t01_t41_latest_wins_memory_conflict(test_db):
-    from backend.domain.services.semantic_memory import SemanticMemoryService
     from backend.domain import schemas
+    from backend.domain.services.semantic_memory import SemanticMemoryService
     claim1 = SemanticClaim(id='claim_1', contract_type='ROOT', result_strength='STRONG', falsification_status='PASSED')
     test_db.add(claim1)
     test_db.commit()
@@ -56,8 +57,8 @@ def test_t01_t41_latest_wins_memory_conflict(test_db):
     assert mem2.conflict_state == 'OPEN_CONFLICT'
 
 def test_t01_t43_dependency_reopen(test_db):
-    from backend.domain.services.semantic_memory import SemanticMemoryService
     from backend.domain import schemas
+    from backend.domain.services.semantic_memory import SemanticMemoryService
     claim_a = SemanticClaim(id='claim_a', contract_type='ROOT')
     test_db.add(claim_a)
     test_db.commit()
@@ -74,12 +75,12 @@ def test_t01_t43_dependency_reopen(test_db):
     mem_a_reopened = SemanticMemoryService.reopen(test_db, mem_a.id, schemas.SemanticMemoryReopenRequest(new_evidence_refs=[], counterevidence_refs=[], revision_reason='test'))
     
     test_db.refresh(mem_b)
-    assert mem_b.reliability == 'DISPUTED'
-    assert mem_b.conflict_state == 'OPEN_CONFLICT'
+    assert mem_b.revalidation_state == 'REVALIDATION_REQUIRED'
+    assert mem_b.conflict_state == 'NO_CONFLICT'
 
 def test_t01_t53_fake_memory_save_disclosure(test_db):
-    from backend.domain.services.semantic_memory import SemanticMemoryService
     from backend.domain import schemas
+    from backend.domain.services.semantic_memory import SemanticMemoryService
     claim = SemanticClaim(id='claim_t53', contract_type='ROOT', result_strength='WEAK')
     test_db.add(claim)
     test_db.commit()
@@ -91,18 +92,48 @@ def test_t01_t53_fake_memory_save_disclosure(test_db):
         ))
 
 def test_independent_review_requires_snapshot_and_tools(test_db):
-    from backend.domain.services.independent_review import IndependentReviewService
     from backend.domain.services.actor_context import ActorContext, ActorRole
+    from backend.domain.services.independent_review import IndependentReviewService
+    from backend.domain.models import SemanticClaim
+    
     claim = SemanticClaim(id='claim_ir1', contract_type='ROOT', result_strength='STRONG', falsification_status='PASSED')
     test_db.add(claim)
     test_db.commit()
 
-    reviewer = ActorContext(identity='rev1', roles=[ActorRole.REVIEWER])
+    reviewer = ActorContext(identity='rev1', role=ActorRole.REVIEWER)
     review = IndependentReviewService.assign_review_context(test_db, claim, reviewer)
 
     # Missing Snapshot
+    import pytest
     with pytest.raises(ValueError, match='External comparison requires a valid frozen internal snapshot'):
         IndependentReviewService.record_verdict(
             test_db, review.id, 'VERIFIED', 'SCOPE', 'ref', {'independence': 'true'}
         )
 
+
+def test_contract_type_preservation(test_db):
+    from backend.domain.models import SemanticClaim
+    import uuid
+    
+    # 1. LOCAL_MEANING
+    claim_lm = SemanticClaim(
+        id=f"claim_lm_{uuid.uuid4().hex[:8]}",
+        contract_type="LOCAL_MEANING",
+        result_strength="STRONG"
+    )
+    test_db.add(claim_lm)
+    
+    # 2. CONSTRUCTION
+    claim_c = SemanticClaim(
+        id=f"claim_c_{uuid.uuid4().hex[:8]}",
+        contract_type="CONSTRUCTION",
+        result_strength="STRONG"
+    )
+    test_db.add(claim_c)
+    test_db.commit()
+    
+    test_db.refresh(claim_lm)
+    assert claim_lm.contract_type == "LOCAL_MEANING"
+    
+    test_db.refresh(claim_c)
+    assert claim_c.contract_type == "CONSTRUCTION"

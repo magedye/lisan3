@@ -29,7 +29,7 @@ def test_actor_context_require_role():
 
 
 def test_canonicalize_requires_owner_operator(test_db):
-    claim = SemanticClaim(id="test_claim", contract_type="ROOT_CONCEPT")
+    claim = SemanticClaim(id="test_claim", contract_type="ROOT_CORE")
     test_db.add(claim)
 
     # Negative test: Canonicalize by RESEARCHER should fail

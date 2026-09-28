@@ -73,13 +73,13 @@ def test_research_run_persistence():
     from backend.domain.schemas import ResearchRunCreate
 
     validated = ResearchRunCreate.model_validate(
-        {"target_contract": "ROOT_CONCEPT", "target_expression": "TEST"}
+        {"target_contract": "ROOT_CORE", "target_expression": "TEST"}
     )
     assert validated.target_expression == "TEST"
     with pytest.raises(ValueError):
         ResearchRunCreate.model_validate(
             {
-                "target_contract": "ROOT_CONCEPT",
+                "target_contract": "ROOT_CORE",
                 "target_expression": "TEST",
                 "corpus_snapshot": "caller-must-not-select-authority",
             }
@@ -151,18 +151,18 @@ def test_ask_found_claim_returns_simplified_research_and_canonical_state():
                 research_completeness={"sufficient_for_claim": True},
                 preferred_conclusion="ترجيح بحثي",
                 plain_explanation="شرح موجز",
-                semantic_boundary="فصل الجذر عن السياق",
+                semantic_boundary={"required": ["فصل الجذر عن السياق"]},
                 layer_attribution={"root": "نور", "lexeme": "نور"},
                 supporting_evidence=["observation:one"],
                 hard_cases=["موضع صعب"],
                 strongest_counterexample="مثال مضاد",
                 strongest_competitor="بديل منافس",
                 rejection_condition={
-                    "challenging_finding": "موضع لا يفسره الحكم",
-                    "search_location": "النطاق",
+                    "observable_trigger": "موضع لا يفسره الحكم",
+                    "search_space": "النطاق",
                     "verification_method": "مقارنة",
-                    "confounder_control": "طرح السياق",
-                    "failure_consequence": "رفض الحكم",
+                    "confound_controls": "طرح السياق",
+                    "decision_effect": "REJECT",
                 },
             ),
             models.IsolationState(

@@ -11,7 +11,7 @@ from backend.domain.services.research_coverage import confirmed_word_refs
 
 # Contract types whose governed occurrence unit is the word-level root occurrence
 # (StructuralToken word_ref), not the verse/lexeme-level CorpusOccurrence.
-WORD_LEVEL_CONTRACTS = frozenset({"ROOT_CONCEPT"})
+WORD_LEVEL_CONTRACTS = frozenset({"ROOT_CORE"})
 
 
 def _has_semantic_observation_content(
@@ -266,7 +266,10 @@ def derive_completeness(
 def _required_layers(contract_type: str) -> set[str]:
     return {
         "ROOT_CONCEPT": {"root"},
+        "ROOT_CORE": {"root"},
         "LEXEME": {"root", "lexeme"},
+        "FORM": {"root", "lexeme", "form"},
+        "CONSTRUCTION": {"root", "lexeme", "form", "construction"},
         "LOCAL_MEANING": {
             "root",
             "lexeme",
@@ -275,9 +278,13 @@ def _required_layers(contract_type: str) -> set[str]:
             "context",
             "local_meaning",
         },
+        "VERSE": {"construction", "context", "final_statement"},
         "VERSE_MEANING": {"construction", "context", "final_statement"},
+        "CONCEPT": {"root", "concept"},
+        "COMPARISON": {"lexeme", "semantic_boundary"},
         "SEMANTIC_DIFFERENCE": {"lexeme", "semantic_boundary"},
-    }[contract_type]
+        "PRACTICE": {"context", "practice"},
+    }.get(contract_type, set())
 
 
 def evaluate_judgment(
@@ -335,23 +342,22 @@ def evaluate_judgment(
                 "Missing material semantic layer attribution: "
                 + ", ".join(sorted(missing_layers))
             )
-    if run.target_contract:
-        if run.target_contract == "LOCAL_MEANING" and judgment.contract_type in (
-            "ROOT_CORE",
-            "ROOT_CONCEPT",
-        ):
-            reasons.append(
-                f"Target contract mismatch: Run target_contract '{run.target_contract}' cannot produce '{judgment.contract_type}' judgment without explicit declaration"
-            )
+    if run.target_contract and run.target_contract == "LOCAL_MEANING" and judgment.contract_type in (
+        "ROOT_CORE",
+        "ROOT_CONCEPT",
+    ):
+        reasons.append(
+            f"Target contract mismatch: Run target_contract '{run.target_contract}' cannot produce '{judgment.contract_type}' judgment without explicit declaration"
+        )
 
     if (
         judgment.contract_type in ("ROOT_CORE", "ROOT_CONCEPT")
         and judgment.result_strength == models.ResultStrength.STRONG
+        and (not judgment.distinctive_residue or not judgment.distinctive_residue.strip())
     ):
-        if not judgment.distinctive_residue or not judgment.distinctive_residue.strip():
-            reasons.append(
-                "A strong root judgment requires distinctive residue against neighboring roots (cannot be generic)"
-            )
+        reasons.append(
+            "A strong root judgment requires distinctive residue against neighboring roots (cannot be generic)"
+        )
 
     # Check for unresolved essential neighbors in this run
     unresolved_nbrs = (
@@ -372,14 +378,15 @@ def evaluate_judgment(
             "Unresolved essential neighbor blocks full distinctiveness (cannot claim STRONG support)"
         )
 
-    if judgment.decisive_contexts and judgment.illustrative_verses:
-        if (
-            set(judgment.decisive_contexts) == set(judgment.illustrative_verses)
-            and len(judgment.decisive_contexts) > 0
-        ):
-            reasons.append(
-                "Epistemic role confusion: decisive_contexts (falsification role) cannot be identical to illustrative_verses (presentation role)"
-            )
+    if (
+        judgment.decisive_contexts 
+        and judgment.illustrative_verses
+        and set(judgment.decisive_contexts) == set(judgment.illustrative_verses)
+        and len(judgment.decisive_contexts) > 0
+    ):
+        reasons.append(
+            "Epistemic role confusion: decisive_contexts (falsification role) cannot be identical to illustrative_verses (presentation role)"
+        )
 
     if judgment.research_state == models.ResearchState.UNRESOLVED:
         if judgment.result_strength != models.ResultStrength.UNRESOLVED:
@@ -479,6 +486,27 @@ class ResearchJudgmentService:
         )
         run.current_stage = models.ResearchStage.JUDGMENT.value
         run.status = "ACTIVE"
+        
+        required_tools = getattr(judgment, 'falsification_plan', {}).get("required_tools", []) if hasattr(judgment, 'falsification_plan') and judgment.falsification_plan else []
+        if required_tools:
+            from backend.domain.services.tool_reality import ToolRealityService
+            ToolRealityService.validate_tool_reality_for_claim(db, run.id, required_tools)
+
+        
+        # Internal Lock: Create Immutable Snapshot before external visibility
+        from backend.domain.services.internal_snapshot import InternalSnapshotService
+        snapshot_obj = db.get(models.CorpusSnapshot, run.corpus_snapshot) if hasattr(models, 'CorpusSnapshot') else None
+        methodology_obj = db.get(models.MethodologyRevision, run.methodology_revision) if hasattr(models, 'MethodologyRevision') else None
+        
+        c_id = getattr(snapshot_obj, 'corpus_identity', run.corpus_snapshot) if snapshot_obj else run.corpus_snapshot
+        m_id = getattr(methodology_obj, 'revision', run.methodology_revision) if methodology_obj else run.methodology_revision
+        
+        InternalSnapshotService.create_snapshot(
+            db, claim, 
+            corpus_identity=c_id, 
+            methodology_version=m_id
+        )
+
         db.commit()
         db.refresh(claim)
         return claim

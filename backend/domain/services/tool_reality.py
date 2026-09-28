@@ -1,7 +1,10 @@
 import uuid
 from datetime import datetime, timezone
+
 from sqlalchemy.orm import Session
+
 from backend.domain import models
+
 
 class ToolRealityService:
     @staticmethod

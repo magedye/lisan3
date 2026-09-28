@@ -7,7 +7,7 @@ from backend.domain.services.independent_review import IndependentReviewService
 
 
 def test_independent_review_negative_tests(test_db: Session):
-    claim = SemanticClaim(id="claim_rev_1", contract_type="ROOT_CONCEPT", revision_id=1)
+    claim = SemanticClaim(id="claim_rev_1", contract_type="ROOT_CORE", revision_id=1)
     test_db.add(claim)
     test_db.commit()
 

@@ -12,7 +12,7 @@ from backend.domain.services.canonicalization import CanonicalizationPolicy
 def test_root_semantic_unity(test_db):
     run = ResearchRun(
         id="run1",
-        target_contract="ROOT_CONCEPT",
+        target_contract="ROOT_CORE",
         target_expression="root",
         methodology_revision="dummy_method",
         corpus_snapshot="dummy_snap",
@@ -23,7 +23,7 @@ def test_root_semantic_unity(test_db):
     claim = SemanticClaim(
         id="root_claim",
         research_run_id="run1",
-        contract_type="ROOT_CONCEPT",
+        contract_type="ROOT_CORE",
         claim_scope=ClaimScope.UNIVERSAL.value,
         research_state=ResearchState.PREFERRED.value,
         result_strength=ResultStrength.STRONG.value,

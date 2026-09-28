@@ -8,7 +8,7 @@ from backend.domain.services.revision import ClaimRevisionService
 
 def test_claim_revision_success_and_immutability(test_db: Session):
     # Setup
-    claim = SemanticClaim(id="claim_test_1", contract_type="ROOT_CONCEPT")
+    claim = SemanticClaim(id="claim_test_1", contract_type="ROOT_CORE")
     test_db.add(claim)
 
     # Predecessor rev 1
@@ -61,7 +61,7 @@ def test_claim_revision_success_and_immutability(test_db: Session):
 
 
 def test_revision_service_negative_tests(test_db: Session):
-    claim = SemanticClaim(id="claim_test_2", contract_type="ROOT_CONCEPT")
+    claim = SemanticClaim(id="claim_test_2", contract_type="ROOT_CORE")
     test_db.add(claim)
     test_db.flush()
 

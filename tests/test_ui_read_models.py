@@ -85,11 +85,11 @@ def seed_workspace(db, *, contaminated: bool = False):
         counterevidence_refs=[],
         unresolved_cases=["case-1"],
         rejection_condition={
-            "challenging_finding": "counterexample",
-            "search_location": "corpus",
+            "observable_trigger": "counterexample",
+            "search_space": "corpus",
             "verification_method": "exact source check",
-            "confounder_control": "same form",
-            "failure_consequence": "reject hypothesis",
+            "confound_controls": "same form",
+            "decision_effect": "REJECT",
         },
         provenance="fixture:test_ui_read_models",
     )

@@ -52,7 +52,7 @@ class CanonicalizationPolicy:
             reasons.append("Hard cases are missing")
         if not claim.reopen_conditions:
             reasons.append("Reopen conditions are missing")
-        if claim.contract_type == "ROOT_CONCEPT" and not claim.root_concept:
+        if claim.contract_type in ("ROOT_CONCEPT", "ROOT_CORE") and not claim.root_concept:
             reasons.append("Root concept is missing")
 
         # Root semantic unity (INT-OWN-ROOT-002, NON_NEGOTIABLE): an accepted
@@ -62,7 +62,7 @@ class CanonicalizationPolicy:
         # explanation: a still-unresolved (confirmed unexplained) occurrence must
         # block acceptance. No majority substitute is permitted.
         is_universal_root = (
-            claim.contract_type == "ROOT_CONCEPT"
+            claim.contract_type in ("ROOT_CONCEPT", "ROOT_CORE")
             and claim.claim_scope == models.ClaimScope.UNIVERSAL.value
         )
         if is_universal_root and (claim.unresolved_cases or []):

@@ -218,8 +218,7 @@ class SemanticMemoryService:
         )
         for dep in downstream:
             if entry.id in dep.dependencies or entry.claim_id in dep.dependencies:
-                dep.reliability = "DISPUTED"
-                dep.conflict_state = "OPEN_CONFLICT"
+                dep.revalidation_state = "REVALIDATION_REQUIRED"
                 db.add(dep)
 
         db.commit()
@@ -239,7 +238,7 @@ class SemanticMemoryService:
     @staticmethod
     def assert_saved_result_not_evidence(ref: str) -> None:
         """Enforces Section 7 & A15-R07: Saved result != Quranic evidence."""
-        if ref.startswith("mem_") or ref.startswith("card_") or ref.startswith("jud_"):
+        if ref.startswith(("mem_", "card_", "jud_")):
             raise ValueError(
                 f"Methodological Invariant Violated: Prior research result '{ref}' cannot serve as primary Quranic evidence"
             )

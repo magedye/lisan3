@@ -38,10 +38,10 @@ def test_status_axis_migration_reconciles_with_audit_and_is_reversible(tmp_path)
     engine = sa.create_engine(f"sqlite:///{db_path.as_posix()}")
     _seed_claim(engine, review_state="PENDING_REVIEW", publication_state="UNPUBLISHED")
 
-    # Upgrading to head first reconciles the legacy four axes (d4f7a2c8e901)
+    # Upgrading to f1a6c3d9e204 first reconciles the legacy four axes (d4f7a2c8e901)
     # and then collapses them into the simplified two-state model
     # (research_state + canonical_state) via f1a6c3d9e204.
-    alembic.command.upgrade(config, "head")
+    alembic.command.upgrade(config, "f1a6c3d9e204")
     with engine.begin() as connection:
         states = connection.execute(
             sa.text(
@@ -104,5 +104,5 @@ def test_status_axis_migration_refuses_unknown_meaning(tmp_path):
     _seed_claim(engine, review_state="UNKNOWN_REVIEW", publication_state="UNPUBLISHED")
 
     with pytest.raises(RuntimeError, match="without inventing meaning"):
-        alembic.command.upgrade(config, "head")
+        alembic.command.upgrade(config, "f1a6c3d9e204")
     engine.dispose()

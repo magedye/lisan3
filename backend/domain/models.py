@@ -603,6 +603,7 @@ class SemanticMemory(Base):
     reliability = Column(String, nullable=False, default="PROVISIONAL")
     scope = Column(String, nullable=False)
     conflict_state = Column(String, nullable=False, default="NO_CONFLICT")
+    revalidation_state = Column(String, nullable=False, default="CURRENT")
     lifecycle = Column(String, nullable=False, default="ACTIVE")
     # Epistemic and qualification axes (A15/C04)
     result_strength = Column(String, nullable=False, default="UNRESOLVED")

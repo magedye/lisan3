@@ -105,7 +105,7 @@ def governed_db():
 # --------------------------------------------------------------------------- #
 # Helpers
 # --------------------------------------------------------------------------- #
-def make_run(expression: str = SMOKE_ROOT, contract: str = "ROOT_CONCEPT") -> str:
+def make_run(expression: str = SMOKE_ROOT, contract: str = "ROOT_CORE") -> str:
     resp = client.post(
         "/runs", json={"target_contract": contract, "target_expression": expression}
     )
@@ -121,17 +121,17 @@ def make_run(expression: str = SMOKE_ROOT, contract: str = "ROOT_CONCEPT") -> st
 
 def _rejection_condition() -> dict[str, str]:
     return {
-        "challenging_finding": "a concrete falsifier",
-        "search_location": "all occurrences",
+        "observable_trigger": "a concrete falsifier",
+        "search_space": "all occurrences",
         "verification_method": "structural comparison",
-        "confounder_control": "subtract form/construction/context",
-        "failure_consequence": "reject or narrow the judgment",
+        "confound_controls": "subtract form/construction/context",
+        "decision_effect": "REJECT",
     }
 
 
 def root_payload(evidence_refs: list[str], *, counter: list[str] | None = None) -> dict:
     return {
-        "contract_type": "ROOT_CONCEPT",
+        "contract_type": "ROOT_CORE",
         "research_state": "PREFERRED",
         "claim_scope": "UNIVERSAL",
         "sampling_basis": None,
@@ -139,7 +139,8 @@ def root_payload(evidence_refs: list[str], *, counter: list[str] | None = None) 
         "preferred_conclusion": "a falsifiable abstract root contribution",
         "root_concept": "synthetic abstract root contribution",
         "plain_explanation": "plain explanation",
-        "semantic_boundary": "carries no form/context effect on the root",
+        "semantic_boundary": {"required": ["carries no form/context effect on the root"]},
+        "distinctive_residue": "distinctive root residue",
         "layer_attribution": {"root": "the root contribution"},
         "supporting_evidence_refs": evidence_refs,
         "counterevidence_refs": counter or [],
@@ -272,7 +273,7 @@ def test_completeness_is_word_level_and_host_derived():
             None,
             frozenset(),
             frozenset(SMOKE_WORD_REFS),
-            "ROOT_CONCEPT",
+            "ROOT_CORE",
         )
         assert full["occurrence_unit"] == "word_ref"
         assert full["eligible_occurrence_count"] == 3
@@ -284,7 +285,7 @@ def test_completeness_is_word_level_and_host_derived():
             None,
             frozenset(),
             frozenset(SMOKE_WORD_REFS[:2]),
-            "ROOT_CONCEPT",
+            "ROOT_CORE",
         )
         assert partial["sufficient_for_claim"] is False
 
@@ -310,7 +311,7 @@ def test_form_only_observations_do_not_claim_deep_analysis():
             None,
             frozenset(),
             frozenset(SMOKE_WORD_REFS),
-            "ROOT_CONCEPT",
+            "ROOT_CORE",
         )
         assert completeness["sufficient_for_claim"] is True
         assert completeness["deep_analysis_complete"] is False
@@ -339,7 +340,7 @@ def test_semantically_substantive_observations_can_complete_deep_analysis():
             None,
             frozenset(),
             frozenset(SMOKE_WORD_REFS),
-            "ROOT_CONCEPT",
+            "ROOT_CORE",
         )
         assert completeness["sufficient_for_claim"] is True
         assert completeness["deep_analysis_complete"] is True
@@ -662,7 +663,7 @@ def test_control_fixture_contract_cannot_become_canonical():
         claim = models.SemanticClaim(
             id="jud_fixture_smoke",
             research_run_id=run.id,
-            contract_type="ROOT_CONCEPT",
+            contract_type="ROOT_CORE",
             research_state="PREFERRED",
             result_strength="STRONG",
             falsification_status="PASSED",
