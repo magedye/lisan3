@@ -168,7 +168,7 @@ def test_run_workspace_hides_judgments_when_source_boundary_is_contaminated(test
     assert len(data["hypotheses"]) == 1
     assert data["judgments_visible"] is False
     assert data["research_judgments"] == []
-    assert claim.id not in response.text
+    assert str(claim.id) not in response.text
 
 
 def test_run_workspace_exposes_judgments_when_isolation_is_clean(test_db):

@@ -81,7 +81,7 @@ def test_repeat_convergence_is_idempotent_in_a_disposable_governed_db(tmp_path):
             second = converge(db, evidence=_evidence(database_path))
             assert second.tanzil_import_created is False
             assert second.qac_tokens_persisted == first_tokens
-            assert any("idempotent" in note for note in second.notes)
+            assert any("idempotent" in note for note in (second.notes or []))
     finally:
         engine.dispose()
 

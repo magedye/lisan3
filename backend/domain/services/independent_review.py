@@ -9,7 +9,6 @@ from backend.domain.models import (
     utc_now_naive,
 )
 from backend.domain.services.actor_context import ActorContext
-from backend.domain.services.tool_reality import ToolRealityService
 
 
 class IndependentReviewService:

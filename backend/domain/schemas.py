@@ -237,15 +237,6 @@ class ClaimRevisionItem(BaseSchema):
     model_config = ConfigDict(from_attributes=True)
 
 
-class ClaimHistoryResponse(BaseSchema):
-    claim_id: str
-    current_revision: int
-    revisions: list[ClaimRevisionItem] = []
-    verification_records: list["VerificationRecordResponse"] = []
-    audit_events: list["AuditLogResponse"] = []
-
-    model_config = ConfigDict(from_attributes=True)
-
 
 class ClaimAmendmentRequest(BaseSchema):
     correction_reason: str
@@ -586,7 +577,7 @@ class DerivedCardBase(BaseSchema):
 
 
 class DerivedRootCard(DerivedCardBase):
-    card_type: Literal["ROOT_CARD"] = "ROOT_CARD"
+    card_type: Literal["ROOT_CARD"] = "ROOT_CARD"  # type: ignore
     root_axial_meaning: str | None = None  # A15-R11: null if not qualified
     root_core_status: str
     distinctive_residue: str | None = None

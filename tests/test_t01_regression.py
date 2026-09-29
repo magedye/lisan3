@@ -92,9 +92,9 @@ def test_t01_t53_fake_memory_save_disclosure(test_db):
         ))
 
 def test_independent_review_requires_snapshot_and_tools(test_db):
+    from backend.domain.models import SemanticClaim
     from backend.domain.services.actor_context import ActorContext, ActorRole
     from backend.domain.services.independent_review import IndependentReviewService
-    from backend.domain.models import SemanticClaim
     
     claim = SemanticClaim(id='claim_ir1', contract_type='ROOT', result_strength='STRONG', falsification_status='PASSED')
     test_db.add(claim)
@@ -112,8 +112,9 @@ def test_independent_review_requires_snapshot_and_tools(test_db):
 
 
 def test_contract_type_preservation(test_db):
-    from backend.domain.models import SemanticClaim
     import uuid
+
+    from backend.domain.models import SemanticClaim
     
     # 1. LOCAL_MEANING
     claim_lm = SemanticClaim(
