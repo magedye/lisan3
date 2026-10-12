@@ -1,0 +1,94 @@
+diff a/backend/main.py b/backend/main.py	(rejected hunks)
+@@ -618,8 +582,9 @@ def create_research_judgment(
+     if run is None:
+         raise HTTPException(status_code=404, detail="ResearchRun not found")
+     try:
++        actor = ActorContext(identity="TRUSTED_LOCAL_RESEARCHER", role=ActorRole.RESEARCHER)
+         return ResearchJudgmentService.create(
+-            db, run, judgment, actor="TRUSTED_LOCAL_RESEARCHER"
++            db, run, judgment, actor_context=actor
+         )
+     except ValueError as exc:
+         raise HTTPException(status_code=422, detail=str(exc)) from exc
+@@ -702,53 +667,24 @@ def record_independent_verification(
+     verification: schemas.VerificationRecordCreate,
+     db: Session = Depends(get_db),
+ ):
+-    claim = db.get(models.SemanticClaim, claim_id)
+-    if not claim:
+-        raise HTTPException(status_code=404, detail="Research Judgment not found")
+-    if (
+-        verification.decision == "VERIFIED"
+-        and verification.verification_type != "INDEPENDENT"
+-    ):
+-        raise HTTPException(
+-            status_code=422,
+-            detail="A VERIFIED decision requires verification_type=INDEPENDENT",
+-        )
+-    run = db.get(models.ResearchRun, claim.research_run_id)
+-    if run is None:
+-        raise HTTPException(status_code=422, detail="ResearchRun not found")
+-    evidence = resolve_evidence_refs(db, run, verification.evidence_refs)
+-    if not evidence.valid:
+-        raise HTTPException(status_code=422, detail="; ".join(evidence.reasons))
+-    record = models.VerificationRecord(
+-        id=f"ver_{uuid.uuid4().hex[:8]}",
+-        claim_id=claim_id,
+-        verifier_identity="TRUSTED_LOCAL_INDEPENDENT_VERIFIER",
+-        verification_type=verification.verification_type,
+-        decision=verification.decision,
+-        rationale=verification.rationale,
+-        evidence_refs=verification.evidence_refs,
+-        evaluated_claim_revision=claim.revision_id,
+-    )
+-    db.add(record)
+-    claim.verification_state = (
+-        models.VerificationState.VERIFIED.value
+-        if verification.decision == "VERIFIED"
+-        else models.VerificationState.NOT_VERIFIED.value
+-    )
+-    db.add(
+-        models.AuditLog(
+-            id=f"aud_{uuid.uuid4().hex[:8]}",
+-            entity_id=claim.id,
+-            entity_type="ResearchJudgment",
+-            action="RECORD_INDEPENDENT_VERIFICATION",
+-            previous_state=None,
+-            new_state=claim.verification_state,
+-            actor="TRUSTED_LOCAL_INDEPENDENT_VERIFIER",
++    try:
++        actor = ActorContext(identity="TRUSTED_LOCAL_INDEPENDENT_VERIFIER", role=ActorRole.VERIFIER)
++        record = VerificationService.create_record(
++            db,
++            claim_id=claim_id,
++            verification_type=verification.verification_type,
++            decision=verification.decision,
++            rationale=verification.rationale,
++            evidence_refs=verification.evidence_refs,
++            actor_context=actor,
+         )
+-    )
+-    db.commit()
+-    db.refresh(record)
+-    return record
++        db.commit()
++        db.refresh(record)
++        return record
++    except LookupError as e:
++        raise HTTPException(status_code=404, detail=str(e))
++    except ValueError as e:
++        raise HTTPException(status_code=422, detail=str(e))
+ 
+ 
+ @app.post(
+@@ -764,8 +700,9 @@ def canonicalize_research_judgment(
+     if not claim:
+         raise HTTPException(status_code=404, detail="Research Judgment not found")
+     try:
++        actor = ActorContext(identity="TRUSTED_LOCAL_OWNER", role=ActorRole.OWNER_OPERATOR)
+         return CanonicalizationPolicy.canonicalize(
+-            db, claim, rationale=request.rationale
++            db, claim, rationale=request.rationale, actor_context=actor
+         )
+     except ValueError as exc:
+         raise HTTPException(status_code=403, detail=str(exc)) from exc

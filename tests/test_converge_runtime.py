@@ -59,8 +59,9 @@ def test_wrong_schema_is_rejected_before_any_convergence_mutation(tmp_path):
     database_path = tmp_path / "wrong-schema.db"
     engine = create_engine(_database_url(database_path))
     try:
-        with Session(engine) as db, pytest.raises(
-            ConvergenceError, match="schema is not CURRENT"
+        with (
+            Session(engine) as db,
+            pytest.raises(ConvergenceError, match="schema is not CURRENT"),
         ):
             converge(db, evidence=_evidence(database_path))
     finally:
@@ -80,7 +81,7 @@ def test_repeat_convergence_is_idempotent_in_a_disposable_governed_db(tmp_path):
             second = converge(db, evidence=_evidence(database_path))
             assert second.tanzil_import_created is False
             assert second.qac_tokens_persisted == first_tokens
-            assert any("idempotent" in note for note in second.notes)
+            assert any("idempotent" in note for note in (second.notes or []))
     finally:
         engine.dispose()
 

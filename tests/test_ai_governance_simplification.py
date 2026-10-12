@@ -15,7 +15,6 @@ from backend.domain.services.corpus.authority import CANONICAL_CORPUS_ADMISSIONS
 from backend.infrastructure.database import Base, get_db
 from backend.main import app
 
-
 engine = create_engine(
     "sqlite:///:memory:",
     connect_args={"check_same_thread": False},
@@ -176,11 +175,11 @@ def add_observation(run_id: str, occurrence_id: str) -> str:
 
 def rejection_condition() -> dict[str, str]:
     return {
-        "challenging_finding": "موضع صحيح لا يفسره الحكم",
-        "search_location": "كل مواضع النطاق",
+        "observable_trigger": "موضع صحيح لا يفسره الحكم",
+        "search_space": "كل مواضع النطاق",
         "verification_method": "مقارنة التنبؤ بالدليل المستقل",
-        "confounder_control": "طرح أثر الصيغة والتركيب والسياق",
-        "failure_consequence": "رفض الحكم أو تضييق نطاقه",
+        "confound_controls": "طرح أثر الصيغة والتركيب والسياق",
+        "decision_effect": "REJECT",
     }
 
 
@@ -196,12 +195,15 @@ def preferred_payload(
         "contract_type": contract,
         "research_state": "PREFERRED",
         "claim_scope": scope,
-        "sampling_basis": "عينة تغطي الأنماط المسجلة" if scope == "REPRESENTATIVE" else None,
+        "sampling_basis": "عينة تغطي الأنماط المسجلة"
+        if scope == "REPRESENTATIVE"
+        else None,
         "result_strength": strength,
         "preferred_conclusion": "ترجيح دلالي مضبوط قابل للدحض",
-        "root_concept": "مفهوم جذري اختباري" if contract == "ROOT_CONCEPT" else None,
+        "root_concept": "مفهوم جذري اختباري" if contract == "ROOT_CORE" else None,
+        "distinctive_residue": "أثر دلالي لا ينفك عن الجذر" if contract == "ROOT_CORE" and strength == "STRONG" else None,
         "plain_explanation": "شرح عربي مباشر",
-        "semantic_boundary": "لا يحمل أثر الصيغة أو السياق على الجذر",
+        "semantic_boundary": {"required": ["لا يحمل أثر الصيغة أو السياق على الجذر"]},
         "layer_attribution": layers,
         "supporting_evidence_refs": evidence_refs,
         "counterevidence_refs": [],
@@ -234,7 +236,7 @@ def preferred_payload(
         ),
         (
             "2:5",
-            "VERSE_MEANING",
+            "VERSE",
             "occ-verse",
             {
                 "construction": "العلاقات",
@@ -244,7 +246,7 @@ def preferred_payload(
         ),
         (
             "كتب|خط",
-            "SEMANTIC_DIFFERENCE",
+            "COMPARISON",
             "occ-difference",
             {"lexeme": "المجال المشترك", "semantic_boundary": "الفارق"},
         ),
@@ -266,11 +268,11 @@ def test_ai_research_freedom_across_semantic_question_types(
 
 
 def test_unresolved_is_valid_without_canonical_cost():
-    run_id = create_run("كتب", "ROOT_CONCEPT")
+    run_id = create_run("كتب", "ROOT_CORE")
     response = client.post(
         f"/runs/{run_id}/judgments",
         json={
-            "contract_type": "ROOT_CONCEPT",
+            "contract_type": "ROOT_CORE",
             "research_state": "UNRESOLVED",
             "claim_scope": "UNIVERSAL",
             "result_strength": "UNRESOLVED",
@@ -283,7 +285,7 @@ def test_unresolved_is_valid_without_canonical_cost():
 
 
 def test_external_source_is_blocked_by_runtime_and_not_disclosed():
-    run_id = create_run("كتب", "ROOT_CONCEPT")
+    run_id = create_run("كتب", "ROOT_CORE")
     response = client.get(f"/runs/{run_id}/read_semantic_dictionary")
     assert response.status_code == 403
     assert "secret semantic definition" not in response.text
@@ -295,10 +297,10 @@ def test_external_source_is_blocked_by_runtime_and_not_disclosed():
 
 
 def test_falsification_and_incomplete_universal_coverage_fail_deterministically():
-    run_id = create_run("كتب", "ROOT_CONCEPT")
+    run_id = create_run("كتب", "ROOT_CORE")
     observation_id = add_observation(run_id, "occ-1")
     payload = preferred_payload(
-        "ROOT_CONCEPT",
+        "ROOT_CORE",
         [f"observation:{observation_id}"],
         {"root": "كتب"},
         scope="UNIVERSAL",
@@ -323,7 +325,7 @@ def test_missing_or_cross_run_evidence_cannot_be_invented():
 
 
 def test_strong_root_canonicalization_memory_and_new_evidence_reopen():
-    run_id = create_run("كتب", "ROOT_CONCEPT")
+    run_id = create_run("كتب", "ROOT_CORE")
     # ROOT_CONCEPT coverage is word-level: cite the confirmed StructuralToken
     # word_refs via the `token:` evidence bridge. A UNIVERSAL root claim requires
     # every confirmed word occurrence to be supported.
@@ -331,7 +333,7 @@ def test_strong_root_canonicalization_memory_and_new_evidence_reopen():
     judgment_response = client.post(
         f"/runs/{run_id}/judgments",
         json=preferred_payload(
-            "ROOT_CONCEPT",
+            "ROOT_CORE",
             evidence_refs,
             {"root": "مساهمة الجذر المجردة"},
             scope="UNIVERSAL",
@@ -365,19 +367,19 @@ def test_strong_root_canonicalization_memory_and_new_evidence_reopen():
     assert accepted.json()["accepted_at"] is not None
 
     recalled = client.post(
-        "/ask", json={"expression": "كتب", "contract_type": "ROOT_CONCEPT"}
+        "/ask", json={"expression": "كتب", "contract_type": "ROOT_CORE"}
     )
     assert recalled.status_code == 200
     assert recalled.json()["status"] == "ACCEPTED_RESULT"
     assert recalled.json()["claim"]["id"] == claim_id
 
-    new_run = create_run("كتب", "ROOT_CONCEPT")
+    new_run = create_run("كتب", "ROOT_CORE")
     add_observation(new_run, "occ-1")
     reopened = client.get(f"/judgments/{claim_id}")
     assert reopened.status_code == 200
     assert reopened.json()["canonical_state"] == "REOPEN_REQUIRED"
     recalled_after = client.post(
-        "/ask", json={"expression": "كتب", "contract_type": "ROOT_CONCEPT"}
+        "/ask", json={"expression": "كتب", "contract_type": "ROOT_CORE"}
     )
     assert recalled_after.json()["status"] != "ACCEPTED_RESULT"
 
@@ -388,15 +390,24 @@ def test_unavailable_diagnostics_and_tools_are_honest_non_gates():
     response = client.post(
         f"/runs/{run_id}/judgments",
         json=preferred_payload(
-            "LEXEME", [f"observation:{observation_id}"], {"root": "كتب", "lexeme": "كتاب"}
+            "LEXEME",
+            [f"observation:{observation_id}"],
+            {"root": "كتب", "lexeme": "كتاب"},
         ),
     )
     claim_id = response.json()["id"]
     diagnostics = client.get(f"/judgments/{claim_id}/diagnostics")
     assert diagnostics.status_code == 200
-    assert len(
-        [item for item in diagnostics.json()["findings"] if item["status"] == "NOT_EVALUATED"]
-    ) == 8
+    assert (
+        len(
+            [
+                item
+                for item in diagnostics.json()["findings"]
+                if item["status"] == "NOT_EVALUATED"
+            ]
+        )
+        == 8
+    )
     assert diagnostics.json()["hard_blockers"] == []
     assert tool_dispatcher.get_available_tools() == {}
     assert "/runs/{run_id}/gates" not in app.openapi()["paths"]
@@ -407,7 +418,9 @@ def test_ai_runtime_can_persist_judgment_but_has_no_acceptance_transition(monkey
     observation_id = add_observation(run_id, "occ-local")
     output = schemas.ResearchJudgmentCreate.model_validate(
         preferred_payload(
-            "LEXEME", [f"observation:{observation_id}"], {"root": "كتب", "lexeme": "كتاب"}
+            "LEXEME",
+            [f"observation:{observation_id}"],
+            {"root": "كتب", "lexeme": "كتاب"},
         )
     )
 
@@ -424,4 +437,6 @@ def test_ai_runtime_can_persist_judgment_but_has_no_acceptance_transition(monkey
     assert response.json()["status"] == "CREATED"
     assert response.json()["judgment"]["canonical_state"] == "NOT_CANONICAL"
     assert response.json()["trace"]["tools_available"] == []
-    assert all("canonicalize" not in path for path in app.openapi()["paths"] if "/ai/" in path)
+    assert all(
+        "canonicalize" not in path for path in app.openapi()["paths"] if "/ai/" in path
+    )

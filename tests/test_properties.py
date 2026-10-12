@@ -10,7 +10,7 @@ from backend.domain.schemas import ResearchJudgmentCreate
 @given(st.sampled_from(["PREFERRED", "UNRESOLVED", "REJECTED"]))
 def test_research_judgment_input_has_no_canonical_authority(state):
     payload = {
-        "contract_type": "ROOT_CONCEPT",
+        "contract_type": "ROOT_CORE",
         "research_state": state,
         "claim_scope": "LOCAL",
         "result_strength": "UNRESOLVED" if state == "UNRESOLVED" else "WEAK",

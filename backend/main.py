@@ -9,10 +9,10 @@ from sqlalchemy.orm import Session
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from .domain import models, schemas
+from .domain.services.actor_context import ActorContext, ActorRole
 from .domain.services.canonicalization import (
     CanonicalizationPolicy,
     accepted_root_result,
-    reopen_accepted_results_for_new_evidence,
 )
 from .domain.services.claim_visibility import ClaimReleasePolicy
 from .domain.services.isolation import (
@@ -26,13 +26,20 @@ from .domain.services.knowledge_graph import (
     GraphSourceNotFound,
     KnowledgeGraphService,
 )
+from .domain.services.observation import ObservationService
 from .domain.services.purity import evaluate_methodology_diagnostics
 from .domain.services.research_judgment import (
     ResearchJudgmentService,
     resolve_evidence_refs,
 )
+from .domain.services.research_run import ResearchRunService
 from .domain.services.run_admission import ResearchRunAdmissionPolicy
 from .domain.services.steward import StewardAuthorityRejected, StewardCommandService
+from .infrastructure.auth import (
+    get_owner_actor,
+    get_researcher_actor,
+    get_verifier_actor,
+)
 from .infrastructure.database import database_schema_status, get_db
 
 app = FastAPI(
@@ -190,26 +197,22 @@ def ask_lisan(request: schemas.AskLisanRequest, db: Session = Depends(get_db)):
     response_model=schemas.ResearchRunResponse,
     responses={503: {"description": "Governed run authority unavailable"}},
 )
-def create_run(run: schemas.ResearchRunCreate, db: Session = Depends(get_db)):
-    authority = ResearchRunAdmissionPolicy.resolve(db)
-    if not authority.accepted:
-        raise HTTPException(
-            status_code=503,
-            detail="Run admission denied: " + "; ".join(authority.reasons),
+def create_run(
+    run: schemas.ResearchRunCreate,
+    db: Session = Depends(get_db),
+    actor: ActorContext = Depends(get_researcher_actor),
+):
+    try:
+        run_record = ResearchRunService.create_run(
+            db,
+            target_contract=run.target_contract,
+            target_expression=run.target_expression,
+            actor_context=actor,
         )
-    run_id = f"run_{uuid.uuid4().hex[:8]}"
-    db_run = models.ResearchRun(
-        id=run_id,
-        target_contract=run.target_contract,
-        target_expression=run.target_expression,
-        methodology_revision=authority.methodology_revision_id,
-        corpus_snapshot=authority.corpus_snapshot_id,
-        authority_context=authority.authority_context,
-    )
-    db.add(db_run)
-    db.commit()
-    db.refresh(db_run)
-    return db_run
+        db.commit()
+        return run_record
+    except ValueError as e:
+        raise HTTPException(status_code=503, detail=str(e))
 
 
 @app.get(
@@ -377,17 +380,7 @@ def get_blind_lab_state(run_id: str, db: Session = Depends(get_db)):
 @app.post(
     "/runs/{run_id}/blind/preflight", response_model=schemas.IsolationStateResponse
 )
-def start_isolation_preflight(
-    run_id: str, db: Session = Depends(get_db)
-):
-    run = db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
-    if not run:
-        raise HTTPException(status_code=404, detail="Run not found")
-
-    # Fail-closed: a preflight no longer hard-codes CLEAN. It attempts genuine
-    # establishment (production-valid snapshot, current source-bound methodology,
-    # permitted source boundary, recorded manifest + immutable audit). Only a
-    # successful attestation yields establishment_status=ESTABLISHED / CLEAN.
+def start_isolation_preflight(run_id: str, db: Session = Depends(get_db)):
     try:
         db_state = BlindLabIsolationService.establish_semantic_isolation(
             db, run_id, actor="TRUSTED_LOCAL_USER"
@@ -395,10 +388,11 @@ def start_isolation_preflight(
     except IsolationEstablishmentRejected as exc:
         raise HTTPException(status_code=409, detail=exc.message) from exc
 
-    # Update run stage
-    run.current_stage = models.ResearchStage.RESEARCH.value
-    db.commit()
-    db.refresh(db_state)
+    run = db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
+    if run:
+        run.current_stage = models.ResearchStage.RESEARCH.value
+        db.commit()
+        db.refresh(db_state)
     return db_state
 
 
@@ -438,62 +432,29 @@ def record_observation(
     run_id: str,
     artifact: schemas.ObservationArtifactCreate,
     db: Session = Depends(get_db),
+    actor: ActorContext = Depends(get_researcher_actor),
 ):
-    state = (
-        db.query(models.IsolationState)
-        .filter(models.IsolationState.research_run_id == run_id)
-        .first()
-    )
-    if not state:
-        raise HTTPException(status_code=400, detail="Run has no isolation preflight")
-
-    if state.is_contaminated == "PRIOR_CONTAMINATED":
-        raise HTTPException(
-            status_code=403, detail="Cannot record observation: Run is contaminated"
+    try:
+        obs = ObservationService.create_observation(
+            db,
+            run_id=run_id,
+            occurrence_ref=artifact.occurrence_ref,
+            form=artifact.form,
+            syntax=artifact.syntax,
+            participant_roles=artifact.participant_roles,
+            local_context=artifact.local_context,
+            unresolved_ambiguity=artifact.unresolved_ambiguity,
+            actor_context=actor,
         )
-
-    run = db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
-    if run is None:
-        raise HTTPException(status_code=404, detail="Run not found")
-    # An observation references either a verse/lexeme-level CorpusOccurrence id or
-    # a word-level StructuralToken word_ref (root research). Both must be scoped to
-    # the run's corpus snapshot; nothing external can be smuggled in.
-    occurrence = db.get(models.CorpusOccurrence, artifact.occurrence_ref)
-    occurrence_valid = (
-        occurrence is not None and occurrence.snapshot_id == run.corpus_snapshot
-    )
-    if not occurrence_valid:
-        token = (
-            db.query(models.StructuralToken)
-            .filter(
-                models.StructuralToken.snapshot_id == run.corpus_snapshot,
-                models.StructuralToken.word_ref == artifact.occurrence_ref,
-            )
-            .first()
-        )
-        occurrence_valid = token is not None
-    if not occurrence_valid:
-        raise HTTPException(
-            status_code=422,
-            detail="Observation occurrence is absent or outside the run corpus",
-        )
-    db_artifact = models.ObservationArtifact(
-        id=f"obs_{uuid.uuid4().hex[:8]}",
-        research_run_id=run_id,
-        occurrence_ref=artifact.occurrence_ref,
-        form=artifact.form,
-        syntax=artifact.syntax,
-        participant_roles=artifact.participant_roles,
-        local_context=artifact.local_context,
-        unresolved_ambiguity=artifact.unresolved_ambiguity,
-    )
-    db.add(db_artifact)
-
-    db.flush()
-    reopen_accepted_results_for_new_evidence(db, run, db_artifact)
-    db.commit()
-    db.refresh(db_artifact)
-    return db_artifact
+        db.commit()
+        db.refresh(obs)
+        return obs
+    except PermissionError as e:
+        raise HTTPException(status_code=403, detail=str(e))
+    except LookupError as e:
+        raise HTTPException(status_code=404, detail=str(e))
+    except ValueError as e:
+        raise HTTPException(status_code=422, detail=str(e))
 
 
 # --- Test Endpoint for Isolation Mock ---
@@ -535,7 +496,9 @@ def create_hypothesis(
         .first()
     )
     if state is None:
-        raise HTTPException(status_code=400, detail="Run has no source-isolation preflight")
+        raise HTTPException(
+            status_code=400, detail="Run has no source-isolation preflight"
+        )
     if state.is_contaminated == "PRIOR_CONTAMINATED":
         raise HTTPException(
             status_code=403, detail="Cannot create hypothesis: Run is contaminated"
@@ -588,7 +551,9 @@ def add_neighbor(
         .first()
     )
     if state is None:
-        raise HTTPException(status_code=400, detail="Run has no source-isolation preflight")
+        raise HTTPException(
+            status_code=400, detail="Run has no source-isolation preflight"
+        )
     if state.is_contaminated == "PRIOR_CONTAMINATED":
         raise HTTPException(
             status_code=403, detail="Cannot differentiate: Run is contaminated"
@@ -598,12 +563,31 @@ def add_neighbor(
         id=f"nbr_{uuid.uuid4().hex[:8]}",
         hypothesis_id=hyp_id,
         shared_domain=neighbor.shared_domain,
-        positive_distinguishing_candidate=neighbor.positive_distinguishing_candidate,
+        # v1.1 canonical fields
+        shared_features=neighbor.shared_features or [],
+        distinctive_difference=neighbor.distinctive_difference
+        or neighbor.positive_distinguishing_candidate,
+        layer_of_difference=neighbor.layer_of_difference
+        or (
+            str(neighbor.relevant_differentiation_axes)
+            if neighbor.relevant_differentiation_axes
+            else None
+        ),
+        discriminating_evidence=neighbor.discriminating_evidence
+        or neighbor.supporting_evidence
+        or [],
+        counterevidence=neighbor.counterevidence or [],
+        status=neighbor.status
+        or ("UNRESOLVED" if neighbor.unresolved_distinction else "RESOLVED"),
+        # Legacy compatibility fields (ensuring zero information loss)
+        positive_distinguishing_candidate=neighbor.positive_distinguishing_candidate
+        or neighbor.distinctive_difference,
         relevant_differentiation_axes=neighbor.relevant_differentiation_axes,
         substitution_probe=neighbor.substitution_probe,
-        boundary_negative_cases=neighbor.boundary_negative_cases,
-        supporting_evidence=neighbor.supporting_evidence,
-        counterevidence=neighbor.counterevidence,
+        boundary_negative_cases=neighbor.boundary_negative_cases or [],
+        supporting_evidence=neighbor.supporting_evidence
+        or neighbor.discriminating_evidence
+        or [],
         unresolved_distinction=neighbor.unresolved_distinction,
     )
     db.add(db_neighbor)
@@ -616,23 +600,129 @@ def add_neighbor(
     return db_neighbor
 
 
-@app.post(
-    "/runs/{run_id}/judgments", response_model=schemas.SemanticClaimResponse
-)
+@app.post("/runs/{run_id}/judgments", response_model=schemas.SemanticClaimResponse)
 def create_research_judgment(
     run_id: str,
     judgment: schemas.ResearchJudgmentCreate,
     db: Session = Depends(get_db),
+    actor_context: ActorContext = Depends(get_researcher_actor),
 ):
     run = db.query(models.ResearchRun).filter(models.ResearchRun.id == run_id).first()
     if run is None:
         raise HTTPException(status_code=404, detail="ResearchRun not found")
     try:
         return ResearchJudgmentService.create(
-            db, run, judgment, actor="TRUSTED_LOCAL_RESEARCHER"
+            db, run, judgment, actor_context=actor_context
         )
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+@app.post("/claims/{claim_id}/amend", response_model=schemas.SemanticClaimResponse)
+def amend_claim(
+    claim_id: str,
+    request: schemas.ClaimAmendmentRequest,
+    db: Session = Depends(get_db),
+    actor_context: ActorContext = Depends(get_researcher_actor),
+):
+    """Stage 9: Claim Revision Model - support atomic amendments."""
+    claim = db.get(models.SemanticClaim, claim_id)
+    if not claim:
+        raise HTTPException(status_code=404, detail="Claim not found")
+
+    from .domain.services.revision import ClaimRevisionService
+
+    # prepare payload
+    payload = request.model_dump(exclude_unset=True)
+    if "correction_reason" in payload:
+        del payload["correction_reason"]
+
+    try:
+        successor = ClaimRevisionService.create_successor(
+            db,
+            claim,
+            payload=payload,
+            correction_reason=request.correction_reason,
+            actor_context=actor_context,
+        )
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+    # Apply changes to current claim
+    for key, value in payload.items():
+        setattr(claim, key, value)
+
+    db.commit()
+    db.refresh(claim)
+
+    return schemas.SemanticClaimResponse.model_validate(claim, from_attributes=True)
+
+
+@app.get("/judgments/{claim_id}/history", response_model=schemas.ClaimHistoryResponse)
+def get_research_judgment_history(claim_id: str, db: Session = Depends(get_db)):
+    claim = db.get(models.SemanticClaim, claim_id)
+    if not claim:
+        raise HTTPException(status_code=404, detail="Claim not found")
+
+    revisions = (
+        db.query(models.ClaimRevision)
+        .filter(models.ClaimRevision.claim_id == claim_id)
+        .order_by(models.ClaimRevision.revision_number.desc())
+        .all()
+    )
+
+    verifications = (
+        db.query(models.VerificationRecord)
+        .filter(models.VerificationRecord.claim_id == claim_id)
+        .order_by(models.VerificationRecord.created_at.desc())
+        .all()
+    )
+
+    audit_events = (
+        db.query(models.AuditLog)
+        .filter(
+            models.AuditLog.entity_id == claim_id,
+            models.AuditLog.entity_type == "SemanticClaim",
+        )
+        .order_by(models.AuditLog.created_at.desc())
+        .all()
+    )
+
+    rev_items = []
+    for r in revisions:
+        rev_items.append(
+            schemas.ClaimRevisionItem(
+                revision_id=r.revision_number,
+                research_state=r.payload.get("research_state", "UNRESOLVED"),
+                canonical_state=r.payload.get("canonical_state", "NOT_CANONICAL"),
+                result_strength=r.payload.get("result_strength", "UNRESOLVED"),
+                verification_state=r.payload.get("verification_state", "NOT_VERIFIED"),
+                falsification_status=r.payload.get(
+                    "falsification_status", "NOT_FALSIFIED"
+                ),
+                correction_reason=r.correction_reason,
+                predecessor_revision_id=r.predecessor_revision_id,
+                semantic_payload_hash=r.semantic_payload_hash,
+                frozen_at=r.frozen_at,
+                superseded=r.superseded if hasattr(r, "superseded") else False,
+                created_at=r.created_at,
+                creation_actor=r.creation_actor,
+            )
+        )
+
+    return schemas.ClaimHistoryResponse(
+        claim_id=claim_id,
+        current_revision=claim.revision_id,
+        revisions=rev_items,
+        verification_records=[
+            schemas.VerificationRecordResponse.model_validate(v, from_attributes=True)
+            for v in verifications
+        ],
+        audit_events=[
+            schemas.AuditLogResponse.model_validate(a, from_attributes=True)
+            for a in audit_events
+        ],
+    )
 
 
 @app.get("/judgments/{claim_id}", response_model=schemas.SemanticClaimResponse)
@@ -640,59 +730,191 @@ def get_research_judgment(claim_id: str, db: Session = Depends(get_db)):
     return _require_released_claim(db, claim_id)
 
 
+from .domain.services.provenance import ProvenanceService
+
+
+@app.get("/runs/{run_id}/provenance")
+def get_provenance(run_id: str, db: Session = Depends(get_db)):
+    run = db.query(models.ResearchRun).filter_by(id=run_id).first()
+    if not run:
+        raise HTTPException(status_code=404, detail="Run not found")
+    return ProvenanceService.get_run_provenance(db, run_id)
+
+
 @app.post(
-    "/judgments/{claim_id}/verification",
-    response_model=schemas.VerificationRecordResponse,
+    "/judgments/{claim_id}/reviews",
+    response_model=schemas.IndependentReviewResponse,
 )
-def record_independent_verification(
+def record_independent_review(
     claim_id: str,
-    verification: schemas.VerificationRecordCreate,
+    review_data: schemas.IndependentReviewCreate,
     db: Session = Depends(get_db),
+    actor: ActorContext = Depends(get_verifier_actor),
 ):
+    from .domain.services.independent_review import IndependentReviewService
+
     claim = db.get(models.SemanticClaim, claim_id)
     if not claim:
         raise HTTPException(status_code=404, detail="Research Judgment not found")
-    if verification.decision == "VERIFIED" and verification.verification_type != "INDEPENDENT":
-        raise HTTPException(
-            status_code=422,
-            detail="A VERIFIED decision requires verification_type=INDEPENDENT",
-        )
+
     run = db.get(models.ResearchRun, claim.research_run_id)
     if run is None:
         raise HTTPException(status_code=422, detail="ResearchRun not found")
-    evidence = resolve_evidence_refs(db, run, verification.evidence_refs)
-    if not evidence.valid:
-        raise HTTPException(status_code=422, detail="; ".join(evidence.reasons))
-    record = models.VerificationRecord(
-        id=f"ver_{uuid.uuid4().hex[:8]}",
-        claim_id=claim_id,
-        verifier_identity="TRUSTED_LOCAL_INDEPENDENT_VERIFIER",
-        verification_type=verification.verification_type,
-        decision=verification.decision,
-        rationale=verification.rationale,
-        evidence_refs=verification.evidence_refs,
-        evaluated_claim_revision=claim.revision_id,
-    )
-    db.add(record)
-    claim.verification_state = (
-        models.VerificationState.VERIFIED.value
-        if verification.decision == "VERIFIED"
-        else models.VerificationState.NOT_VERIFIED.value
-    )
+
+    # assign review context
+    review = IndependentReviewService.assign_review_context(db, claim, actor)
+
+    try:
+        # record verdict
+        review = IndependentReviewService.record_verdict(
+            db=db,
+            review_id=review.id,
+            verdict=review_data.verdict,
+            scope_disposition=review_data.scope_disposition,
+            evidence_package_ref=review_data.evidence_package_ref,
+            independence_metadata=review_data.independence_metadata,
+        )
+    except ValueError as e:
+        raise HTTPException(status_code=422, detail=str(e))
+
     db.add(
         models.AuditLog(
             id=f"aud_{uuid.uuid4().hex[:8]}",
             entity_id=claim.id,
             entity_type="ResearchJudgment",
-            action="RECORD_INDEPENDENT_VERIFICATION",
+            action="RECORD_INDEPENDENT_REVIEW",
             previous_state=None,
             new_state=claim.verification_state,
             actor="TRUSTED_LOCAL_INDEPENDENT_VERIFIER",
         )
     )
     db.commit()
-    db.refresh(record)
-    return record
+    db.refresh(review)
+    return schemas.IndependentReviewResponse.model_validate(
+        review, from_attributes=True
+    )
+
+
+@app.post(
+    "/judgments/{claim_id}/verification",
+    response_model=schemas.VerificationRecordResponse,
+)
+def record_verification(
+    claim_id: str,
+    verification_data: schemas.VerificationRecordCreate,
+    db: Session = Depends(get_db),
+    actor: ActorContext = Depends(get_verifier_actor),
+):
+    from .domain.services.verification import VerificationService
+
+    claim = db.get(models.SemanticClaim, claim_id)
+    if not claim:
+        raise HTTPException(status_code=404, detail="Research Judgment not found")
+
+    try:
+        record = VerificationService.create_record(
+            db,
+            claim_id=claim_id,
+            verification_type=verification_data.verification_type,
+            decision=verification_data.decision,
+            rationale=verification_data.rationale,
+            evidence_refs=verification_data.evidence_refs,
+            actor_context=actor,
+        )
+        db.commit()
+        db.refresh(record)
+        return schemas.VerificationRecordResponse.model_validate(
+            record, from_attributes=True
+        )
+    except ValueError as e:
+        raise HTTPException(status_code=422, detail=str(e))
+    except LookupError as e:
+        raise HTTPException(status_code=404, detail=str(e))
+
+
+@app.get("/api/graph/{root_id}", response_model=schemas.KnowledgeGraphResponse)
+def get_root_graph_projection(root_id: str, db: Session = Depends(get_db)):
+    try:
+        nodes, edges = KnowledgeGraphService.build_root_projection(db, root_id)
+        graph = KnowledgeGraphService.to_networkx(nodes, edges)
+        import networkx as nx
+
+        from .domain.services.knowledge_graph import _node_id
+
+        cycle_nodes = sorted(
+            {node for cycle in nx.simple_cycles(graph) for node in cycle}
+        )
+        reachable = (
+            sorted(nx.descendants(graph, _node_id("SEMANTIC_CLAIM", root_id)))
+            if _node_id("SEMANTIC_CLAIM", root_id) in graph
+            else []
+        )
+        return schemas.KnowledgeGraphResponse(
+            run_id=root_id,
+            projection_revision=PROJECTION_REVISION,
+            nodes=[
+                schemas.GraphKnowledgeNodeResponse.model_validate(
+                    n, from_attributes=True
+                )
+                for n in nodes
+            ],
+            edges=[
+                schemas.GraphKnowledgeEdgeResponse.model_validate(
+                    e, from_attributes=True
+                )
+                for e in edges
+            ],
+            analysis=schemas.GraphAnalysisResponse(
+                node_count=len(nodes),
+                edge_count=len(edges),
+                cycle_node_ids=cycle_nodes,
+                reachable_node_ids=reachable,
+            ),
+            authority_notice="R1 Derived Projection",
+        )
+    except GraphSourceNotFound as e:
+        raise HTTPException(status_code=404, detail=str(e))
+
+
+from .domain.vector_contracts import (
+    CandidateType,
+    EmbeddingModelManifest,
+    EmbeddingSpace,
+)
+
+
+class SearchRequest(schemas.BaseSchema):
+    query_vector: list[float]
+    run_id: str
+    space: EmbeddingSpace
+    manifest: EmbeddingModelManifest
+    top_k: int = 10
+    candidate_type: CandidateType = CandidateType.SEMANTIC_NEIGHBOR
+
+
+@app.post("/api/search")
+def hybrid_search(request: SearchRequest, db: Session = Depends(get_db)):
+    from .domain.services.vector_discovery import (
+        VectorAccessForbidden,
+        VectorDiscoveryService,
+        VectorStateStale,
+    )
+
+    try:
+        candidates = VectorDiscoveryService.discover(
+            db=db,
+            run_id=request.run_id,
+            space=request.space,
+            manifest=request.manifest,
+            query_vector=request.query_vector,
+            candidate_type=request.candidate_type,
+            top_k=request.top_k,
+        )
+        return {"results": candidates}
+    except (VectorStateStale, VectorAccessForbidden) as e:
+        raise HTTPException(status_code=422, detail=str(e))
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
 
 
 @app.post(
@@ -703,13 +925,14 @@ def canonicalize_research_judgment(
     claim_id: str,
     request: schemas.CanonicalizationRequest,
     db: Session = Depends(get_db),
+    actor_context: ActorContext = Depends(get_owner_actor),
 ):
     claim = db.get(models.SemanticClaim, claim_id)
     if not claim:
         raise HTTPException(status_code=404, detail="Research Judgment not found")
     try:
         return CanonicalizationPolicy.canonicalize(
-            db, claim, rationale=request.rationale
+            db, claim, rationale=request.rationale, actor_context=actor_context
         )
     except ValueError as exc:
         raise HTTPException(status_code=403, detail=str(exc)) from exc
@@ -755,7 +978,12 @@ def ai_create_research_judgment(run_id: str, db: Session = Depends(get_db)):
         result = agent.run_sync(prompt)
         judgment_input = result.output
         judgment = ResearchJudgmentService.create(
-            db, run, judgment_input, actor="AI_RESEARCH_RUNTIME"
+            db,
+            run,
+            judgment_input,
+            actor_context=ActorContext(
+                role=ActorRole.RESEARCHER, identity="AI_RESEARCH_RUNTIME"
+            ),
         )
         record = models.AIExecutionRecord(
             id=f"ai_{uuid.uuid4().hex[:8]}",
@@ -986,20 +1214,10 @@ def approve_proposal(proposal_id: str, db: Session = Depends(get_db)):
             .first()
         )
         if claim and claim.canonical_state == "ACCEPTED":
-            claim.canonical_state = "REOPEN_REQUIRED"
-            claim.verification_state = "NOT_VERIFIED"
-            claim.revision_id += 1
-            db.add(
-                models.AuditLog(
-                    id=f"aud_{uuid.uuid4().hex[:8]}",
-                    entity_id=claim.id,
-                    entity_type="ResearchJudgment",
-                    action="REOPEN_FOR_GOVERNING_REVISION",
-                    previous_state="ACCEPTED",
-                    new_state="REOPEN_REQUIRED",
-                    actor="GOVERNANCE_IMPACT_POLICY",
-                )
+            actor = ActorContext(
+                identity="GOVERNANCE_IMPACT_POLICY", role=ActorRole.OWNER_OPERATOR
             )
+            CanonicalizationPolicy.reopen_for_governance(db, claim, actor_context=actor)
 
     db.commit()
     db.refresh(proposal)
@@ -1066,7 +1284,9 @@ def _graph_response(run_id: str, db: Session) -> schemas.KnowledgeGraphResponse:
     return schemas.KnowledgeGraphResponse(
         run_id=run_id,
         projection_revision=PROJECTION_REVISION,
-        nodes=[schemas.GraphKnowledgeNodeResponse.model_validate(node) for node in nodes],
+        nodes=[
+            schemas.GraphKnowledgeNodeResponse.model_validate(node) for node in nodes
+        ],
         edges=[
             schemas.GraphKnowledgeEdgeResponse(
                 edge_id=edge.edge_id,
@@ -1300,17 +1520,13 @@ def get_claim_history(claim_id: str, db: Session = Depends(get_db)):
         .all()
     )
 
-    revisions = [
-        schemas.ClaimRevisionItem(
-            revision_id=claim.revision_id,
-            research_state=claim.research_state,
-            canonical_state=claim.canonical_state,
-            result_strength=claim.result_strength,
-            verification_state=claim.verification_state,
-            falsification_status=claim.falsification_status,
-            created_at=claim.created_at,
-        )
-    ]
+    db_revisions = (
+        db.query(models.ClaimRevision)
+        .filter(models.ClaimRevision.claim_id == claim_id)
+        .order_by(models.ClaimRevision.revision_number.asc())
+        .all()
+    )
+    revisions = [schemas.ClaimRevisionItem.model_validate(r) for r in db_revisions]
 
     return schemas.ClaimHistoryResponse(
         claim_id=claim.id,
@@ -1410,6 +1626,125 @@ def get_run_reproduction_manifest(run_id: str, db: Session = Depends(get_db)):
         "reproduction_level": "TRACEABLE_INPUTS",
         "replay_guarantee": "NOT_EXACT_AI_REPLAY",
     }
+
+
+# --- Semantic Memory (Appendix A15) ---
+from backend.domain.services.semantic_memory import SemanticMemoryService
+
+
+@app.post("/semantic-memory", response_model=schemas.SemanticMemoryResponse)
+def create_semantic_memory(
+    entry: schemas.SemanticMemoryCreate,
+    db: Session = Depends(get_db),
+    actor_context: ActorContext = Depends(get_researcher_actor),
+):
+    try:
+        return SemanticMemoryService.admit(db, entry, actor_context=actor_context)
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+@app.get("/semantic-memory", response_model=list[schemas.SemanticMemoryResponse])
+def list_semantic_memory(
+    target_type: str | None = None,
+    target_expression: str | None = None,
+    lifecycle: str = "ACTIVE",
+    db: Session = Depends(get_db),
+):
+    query = db.query(models.SemanticMemory).filter(
+        models.SemanticMemory.lifecycle == lifecycle
+    )
+    if target_type:
+        query = query.filter(models.SemanticMemory.target_type == target_type)
+    if target_expression:
+        query = query.filter(
+            models.SemanticMemory.target_expression == target_expression
+        )
+    return query.order_by(models.SemanticMemory.created_at.desc()).all()
+
+
+@app.get("/semantic-memory/{memory_id}", response_model=schemas.SemanticMemoryResponse)
+def get_semantic_memory(memory_id: str, db: Session = Depends(get_db)):
+    entry = db.get(models.SemanticMemory, memory_id)
+    if not entry:
+        raise HTTPException(status_code=404, detail="Semantic memory entry not found")
+    return entry
+
+
+@app.post(
+    "/semantic-memory/{memory_id}/reopen", response_model=schemas.SemanticMemoryResponse
+)
+def reopen_semantic_memory(
+    memory_id: str,
+    request: schemas.SemanticMemoryReopenRequest,
+    db: Session = Depends(get_db),
+    actor_context: ActorContext = Depends(get_researcher_actor),
+):
+    try:
+        return SemanticMemoryService.reopen(
+            db, memory_id, request, actor_context=actor_context
+        )
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+# --- Derived Cards (Appendix C04 & A15) ---
+@app.get("/cards/roots/{root}", response_model=schemas.DerivedRootCard)
+def get_derived_root_card(
+    root: str,
+    db: Session = Depends(get_db),
+):
+    """Derive a canonical Root Card from qualified semantic claims (C04 §2)."""
+    claim = (
+        db.query(models.SemanticClaim)
+        .join(
+            models.ResearchRun,
+            models.SemanticClaim.research_run_id == models.ResearchRun.id,
+        )
+        .filter(
+            models.ResearchRun.target_expression == root,
+            models.SemanticClaim.contract_type.in_(["ROOT_CORE", "ROOT_CONCEPT"]),
+        )
+        .order_by(models.SemanticClaim.created_at.desc())
+        .first()
+    )
+
+    if not claim:
+        raise HTTPException(
+            status_code=404, detail=f"No qualified research record for root '{root}'"
+        )
+
+    # A15-R11: Null semantics in machine contract when not qualified
+    root_meaning = (
+        claim.preferred_conclusion if claim.result_strength == "STRONG" else None
+    )
+    root_status = (
+        "STRONGLY_SUPPORTED"
+        if claim.result_strength == "STRONG"
+        else (
+            "DISPUTED"
+            if claim.counterevidence
+            else ("UNRESOLVED" if claim.unresolved_cases else "PROVISIONAL")
+        )
+    )
+
+    return schemas.DerivedRootCard(
+        target_expression=root,
+        card_strength=claim.result_strength,
+        display_level="CORE",
+        upstream_ids=[claim.id],
+        upstream_revisions={claim.id: getattr(claim, "revision_id", 1)},
+        derivation_version="C04_v1.1",
+        upstream_hashes={},
+        counterevidence_summary=claim.counterevidence or [],
+        unresolved_summary=claim.unresolved_cases or [],
+        root_axial_meaning=root_meaning,
+        root_core_status=root_status,
+        distinctive_residue=claim.distinctive_residue,
+        semantic_boundary=claim.semantic_boundary,
+        illustrative_verses=claim.illustrative_verses or [],
+        decisive_contexts=claim.decisive_contexts or [],
+    )
 
 
 # --- Operational / Health ---

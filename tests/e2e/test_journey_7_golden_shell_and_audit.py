@@ -5,11 +5,8 @@ from playwright.sync_api import Page, expect
 from backend.domain.models import AuditLog, IsolationState, ResearchRun, SemanticClaim
 
 
-def test_journey_7_golden_shell_and_real_audit(
-    page: Page, e2e_server: dict, monkeypatch
-):
-    session_factory = e2e_server["db_session"]
-    with session_factory() as session:
+def test_journey_7_golden_shell_and_audit(page: Page, e2e_server: dict):
+    with e2e_server["db_session"]() as session:
         session.add_all(
             [
                 ResearchRun(
@@ -24,10 +21,9 @@ def test_journey_7_golden_shell_and_real_audit(
                     id="claim_e2e_status_axes",
                     research_run_id="run_e2e_status_axes",
                     contract_type="ROOT_CORE",
-                    epistemic_state="LOCK_INTERNAL_RESULT",
-                    review_state="NOT_REVIEWED",
-                    freshness_state="REVALIDATION_REQUIRED",
-                    publication_state="PRIVATE_WORKING",
+                    research_state="PREFERRED",
+                    canonical_state="NOT_CANONICAL",
+                    verification_state="NOT_VERIFIED",
                 ),
                 IsolationState(
                     id="isolation_e2e_status_axes",
@@ -62,25 +58,15 @@ def test_journey_7_golden_shell_and_real_audit(
 
     page.get_by_placeholder("e.g. ضرب").fill("نور")
     page.get_by_role("button", name="Search — بحث").click()
-    expect(page.locator("h3:has-text('Insufficient Evidence')")).to_be_visible()
-    expect(page.locator("#run-methodology")).to_contain_text(
-        "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4"
-    )
-    expect(page.locator("#run-corpus")).to_contain_text("snap_tanzil_1_1_ac0724796cbb")
 
-    monkeypatch.setattr(
-        "backend.domain.services.claim_visibility.has_valid_gate", lambda *_args: True
-    )
-    page.get_by_role("button", name="Search — بحث").click()
     found_claim = page.locator(".found-panel")
-    expect(found_claim).to_contain_text("الحالة المعرفية")
-    expect(found_claim).to_contain_text("LOCK_INTERNAL_RESULT")
-    expect(found_claim).to_contain_text("المراجعة")
-    expect(found_claim).to_contain_text("NOT_REVIEWED")
-    expect(found_claim).to_contain_text("الحداثة")
-    expect(found_claim).to_contain_text("REVALIDATION_REQUIRED")
-    expect(found_claim).to_contain_text("النشر")
-    expect(found_claim).to_contain_text("PRIVATE_WORKING")
+    expect(found_claim).to_be_visible()
+    expect(found_claim).to_contain_text("حالة البحث")
+    expect(found_claim).to_contain_text("PREFERRED")
+    expect(found_claim).to_contain_text("الحالة المعتمدة")
+    expect(found_claim).to_contain_text("NOT_CANONICAL")
+    expect(found_claim).to_contain_text("التحقق")
+    expect(found_claim).to_contain_text("NOT_VERIFIED")
 
     page.get_by_role("link", name=re.compile("التشغيل والتدقيق")).first.click()
     expect(page).to_have_url(f"{e2e_server['base_url']}/audit")

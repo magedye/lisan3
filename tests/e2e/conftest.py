@@ -1,20 +1,16 @@
 import os
 import socket
 import subprocess
-import threading
 import time
 from pathlib import Path
 
 import pytest
-import uvicorn
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 
 from backend.domain.services.corpus.activation import TanzilProductionActivationService
 from backend.domain.services.corpus.importer import TanzilPreActivationImporter
-from backend.infrastructure.database import get_db
-from backend.main import app
 
 
 def get_free_port():
@@ -50,20 +46,41 @@ def e2e_server(tmp_path_factory):
         TanzilPreActivationImporter.import_candidate(session)
         TanzilProductionActivationService.activate(session)
 
-    def override_db():
-        db = TestSession()
+    env = os.environ.copy()
+    env["LISAN_DATABASE_URL"] = f"sqlite:///{db_path.as_posix()}"
+
+    import sys
+
+    api_process = subprocess.Popen(
+        [
+            sys.executable,
+            "-m",
+            "uvicorn",
+            "backend.main:app",
+            "--host",
+            host,
+            "--port",
+            str(api_port),
+        ],
+        env=env,
+    )
+
+    # Wait for FastAPI to be ready
+    import urllib.error
+    import urllib.request
+
+    max_retries = 20
+    for _ in range(max_retries):
         try:
-            yield db
-        finally:
-            db.close()
-
-    app.dependency_overrides[get_db] = override_db
-
-    server_config = uvicorn.Config(app, host=host, port=api_port, log_level="error")
-    server = uvicorn.Server(server_config)
-
-    thread = threading.Thread(target=server.run, daemon=True)
-    thread.start()
+            urllib.request.urlopen(f"http://{host}:{api_port}/docs")
+            break
+        except urllib.error.URLError:
+            time.sleep(0.5)
+    else:
+        api_process.kill()
+        raise RuntimeError(
+            f"FastAPI failed to start on port {api_port} after {max_retries / 2} seconds."
+        )
 
     env = os.environ.copy()
     env["BACKEND_URL"] = f"http://{host}:{api_port}"
@@ -121,7 +138,11 @@ def e2e_server(tmp_path_factory):
         frontend_process.kill()
         frontend_process.wait(timeout=10.0)
 
-    server.should_exit = True
-    thread.join(timeout=10.0)
-    app.dependency_overrides.pop(get_db, None)
+    api_process.terminate()
+    try:
+        api_process.wait(timeout=10.0)
+    except subprocess.TimeoutExpired:
+        api_process.kill()
+        api_process.wait(timeout=10.0)
+
     test_engine.dispose()

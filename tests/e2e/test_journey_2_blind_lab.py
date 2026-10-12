@@ -14,15 +14,20 @@ def test_journey_2_blind_lab(page: Page, e2e_server: dict):
     with e2e_server["db_session"]() as session:
         session.add_all(
             [
-                models.CorpusSnapshot(
-                    id="snap_e2e_blind_j2",
-                    canonical_text_source="fixture",
-                    canonical_text_version="v1",
-                    canonical_text_hash="fixture-hash-j2",
+                models.MethodologyRevision(
+                    id="method-e2e-j2",
+                    methodology_id="method-e2e-j2",
+                    revision="fixture",
+                    lifecycle_state="CURRENT",
+                    authority_reference="docs/canonical/LISAN_PLATFORM_CANONICAL_IMPLEMENTATION_REFERENCE.md",
+                    source_reference="docs/canonical/LISAN_PLATFORM_CANONICAL_IMPLEMENTATION_REFERENCE.md",
+                    source_sha256="adf86e1dddf0d97d540315ce50bacfb922e1398ac1d74bc0da7c341bf7ad4086",
+                    allowed_use="QURAN_INTERNAL_CUMULATIVE_RUN",
+                    research_run_eligible=True,
                 ),
                 models.CorpusOccurrence(
                     id="occ_e2e_blind_j2",
-                    snapshot_id="snap_e2e_blind_j2",
+                    snapshot_id="snap_tanzil_1_1_ac0724796cbb",
                     expression="كتب",
                     verse_ref="fixture:1",
                     text="نص قرآني تجريبي مميز صراحة للاختبار",
@@ -31,8 +36,8 @@ def test_journey_2_blind_lab(page: Page, e2e_server: dict):
                     id="run_e2e_blind",
                     target_contract="ROOT_CORE",
                     target_expression="كتب",
-                    methodology_revision="method-e2e-fixture",
-                    corpus_snapshot="snap_e2e_blind_j2",
+                    methodology_revision="method-e2e-j2",
+                    corpus_snapshot="snap_tanzil_1_1_ac0724796cbb",
                     authority_context={"source": "explicit-e2e-fixture"},
                 ),
             ]

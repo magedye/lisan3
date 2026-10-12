@@ -1,0 +1,687 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-9.1.1, pluggy-1.6.0
+rootdir: D:\APP\tafseer\lisanapp3
+plugins: anyio-4.14.2, hypothesis-6.165.10, logfire-4.41.0, base-url-2.1.0, playwright-0.9.0, schemathesis-4.25.0
+collected 297 items
+
+tests\e2e\test_journey_1_run_initialization.py .                         [  0%]
+tests\e2e\test_journey_2_blind_lab.py .                                  [  0%]
+tests\e2e\test_journey_3_purity_check.py .                               [  1%]
+tests\e2e\test_journey_4_governance_review.py .                          [  1%]
+tests\e2e\test_journey_5_steward_command.py .                            [  1%]
+tests\e2e\test_journey_6_knowledge_explorer.py .                         [  2%]
+tests\e2e\test_journey_7_golden_shell_and_audit.py .                     [  2%]
+tests\e2e\test_journey_8_golden_production_ui.py .                       [  2%]
+tests\test_actor_context.py ..                                           [  3%]
+tests\test_ai_governance_simplification.py ...........                   [  7%]
+tests\test_ai_runtime.py ...                                             [  8%]
+tests\test_api_completion.py ..                                          [  8%]
+tests\test_backend.py .....                                              [ 10%]
+tests\test_campaign_coverage.py ........................................ [ 23%]
+..                                                                       [ 24%]
+tests\test_canonical_runtime_qualification.py .......................... [ 33%]
+.......                                                                  [ 35%]
+tests\test_converge_runtime.py ......                                    [ 37%]
+tests\test_corpus_adapter.py .....                                       [ 39%]
+tests\test_corpus_authority_mutation.py .                                [ 39%]
+tests\test_frontend_status_axes.py ..                                    [ 40%]
+tests\test_gates_mutation.py .                                           [ 40%]
+tests\test_independent_review.py .                                       [ 41%]
+tests\test_methodology_authority.py .....                                [ 42%]
+tests\test_orchestrator.py .......                                       [ 45%]
+tests\test_phase0a_pre_analysis_foundation.py ............               [ 49%]
+tests\test_properties.py .                                               [ 49%]
+tests\test_provenance.py F.                                              [ 50%]
+tests\test_purity.py .                                                   [ 50%]
+tests\test_qac_morphology.py ......                                      [ 52%]
+tests\test_r01_migration.py .                                            [ 52%]
+tests\test_r01_pre_analysis_capabilities.py .........                    [ 55%]
+tests\test_r1_knowledge_graph.py ...................                     [ 62%]
+tests\test_r2_vector_contracts.py .................                      [ 68%]
+tests\test_r2_vector_lifecycle.py ................                       [ 73%]
+tests\test_r2_vector_persistence.py ........                             [ 76%]
+tests\test_registry_mutation.py .                                        [ 76%]
+tests\test_revision_lifecycle.py ..                                      [ 77%]
+tests\test_root_canonicalization.py F                                    [ 77%]
+tests\test_runtime_database.py ....                                      [ 78%]
+tests\test_slice_b.py ...                                                [ 79%]
+tests\test_slice_c.py ..                                                 [ 80%]
+tests\test_slice_e.py ...                                                [ 81%]
+tests\test_slice_f.py ..                                                 [ 82%]
+tests\test_slice_g.py ...F.........                                      [ 86%]
+tests\test_status_axis_migration.py ..                                   [ 87%]
+tests\test_tanzil_artifact_parser.py ...........                         [ 90%]
+tests\test_tanzil_pre_activation_import.py .......                       [ 93%]
+tests\test_tanzil_production_activation.py ..........                    [ 96%]
+tests\test_templates.py ..                                               [ 97%]
+tests\test_ui_read_models.py .....                                       [ 98%]
+tests\test_word_lexeme.py ...                                            [100%]
+
+================================== FAILURES ===================================
+_______________________ test_complete_provenance_graph ________________________
+
+self = <sqlalchemy.engine.base.Connection object at 0x00000210058D1250>
+dialect = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x000002107456F260>
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x00000210058872F0>
+statement = <sqlalchemy.dialects.sqlite.base.SQLiteCompiler object at 0x0000021005884620>
+parameters = [('rev_2e008674', 'claim_84eec7a4', 1, None, 'initial', None, ...)]
+
+    def _exec_single_context(
+        self,
+        dialect: Dialect,
+        context: ExecutionContext,
+        statement: Union[str, Compiled],
+        parameters: Optional[_AnyMultiExecuteParams],
+    ) -> CursorResult[Any]:
+        """continue the _execute_context() method for a single DBAPI
+        cursor.execute() or cursor.executemany() call.
+    
+        """
+        if dialect.bind_typing is BindTyping.SETINPUTSIZES:
+            generic_setinputsizes = context._prepare_set_input_sizes()
+    
+            if generic_setinputsizes:
+                try:
+                    dialect.do_set_input_sizes(
+                        context.cursor, generic_setinputsizes, context
+                    )
+                except BaseException as e:
+                    self._handle_dbapi_exception(
+                        e, str(statement), parameters, None, context
+                    )
+    
+        cursor, str_statement, parameters = (
+            context.cursor,
+            context.statement,
+            context.parameters,
+        )
+    
+        effective_parameters: Optional[_AnyExecuteParams]
+    
+        if not context.executemany:
+            effective_parameters = parameters[0]
+        else:
+            effective_parameters = parameters
+    
+        if self._has_events or self.engine._has_events:
+            for fn in self.dispatch.before_cursor_execute:
+                str_statement, effective_parameters = fn(
+                    self,
+                    cursor,
+                    str_statement,
+                    effective_parameters,
+                    context,
+                    context.executemany,
+                )
+    
+        if self._echo:
+            self._log_info(str_statement)
+    
+            stats = context._get_cache_stats()
+    
+            if not self.engine.hide_parameters:
+                self._log_info(
+                    "[%s] %r",
+                    stats,
+                    sql_util._repr_params(
+                        effective_parameters,
+                        batches=10,
+                        ismulti=context.executemany,
+                    ),
+                )
+            else:
+                self._log_info(
+                    "[%s] [SQL parameters hidden due to hide_parameters=True]",
+                    stats,
+                )
+    
+        evt_handled: bool = False
+        try:
+            if context.execute_style is ExecuteStyle.EXECUTEMANY:
+                effective_parameters = cast(
+                    "_CoreMultiExecuteParams", effective_parameters
+                )
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_executemany:
+                        if fn(
+                            cursor,
+                            str_statement,
+                            effective_parameters,
+                            context,
+                        ):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+                    self.dialect.do_executemany(
+                        cursor,
+                        str_statement,
+                        effective_parameters,
+                        context,
+                    )
+            elif not effective_parameters and context.no_parameters:
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_execute_no_params:
+                        if fn(cursor, str_statement, context):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+                    self.dialect.do_execute_no_params(
+                        cursor, str_statement, context
+                    )
+            else:
+                effective_parameters = cast(
+                    "_CoreSingleExecuteParams", effective_parameters
+                )
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_execute:
+                        if fn(
+                            cursor,
+                            str_statement,
+                            effective_parameters,
+                            context,
+                        ):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+>                   self.dialect.do_execute(
+                        cursor, str_statement, effective_parameters, context
+                    )
+
+.venv\Lib\site-packages\sqlalchemy\engine\base.py:1967: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x000002107456F260>
+cursor = <sqlite3.Cursor object at 0x0000021005842540>
+statement = 'INSERT INTO claim_revisions (id, claim_id, revision_number, predecessor_revision_id, correction_reason, semantic_payload_hash, creation_actor, created_at, frozen_at, superseded) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
+parameters = ('rev_2e008674', 'claim_84eec7a4', 1, None, 'initial', None, ...)
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x00000210058872F0>
+
+    def do_execute(self, cursor, statement, parameters, context=None):
+>       cursor.execute(statement, parameters)
+E       sqlite3.IntegrityError: NOT NULL constraint failed: claim_revisions.payload
+
+.venv\Lib\site-packages\sqlalchemy\engine\default.py:924: IntegrityError
+
+The above exception was the direct cause of the following exception:
+
+test_db = <sqlalchemy.orm.session.Session object at 0x00000210051E7E60>
+
+    def test_complete_provenance_graph(test_db):
+        snapshot_id = f"snap_{uuid.uuid4().hex[:8]}"
+        run_id = f"run_{uuid.uuid4().hex[:8]}"
+        claim_id = f"claim_{uuid.uuid4().hex[:8]}"
+    
+        # Snapshot
+        test_db.add(
+            models.CorpusSnapshot(
+                id=snapshot_id,
+                canonical_text_source="test",
+                canonical_text_version="1",
+                canonical_text_hash="hash",
+                activation_status="ACTIVE",
+            )
+        )
+    
+        # Run
+        test_db.add(
+            models.ResearchRun(
+                id=run_id,
+                target_contract="ROOT_CORE",
+                target_expression="foo",
+                methodology_revision="test-m-1",
+                corpus_snapshot=snapshot_id,
+                authority_context={},
+            )
+        )
+    
+        # Token/Occurrence
+        test_db.add(
+            models.CorpusOccurrence(
+                id=f"occ_{uuid.uuid4().hex[:8]}",
+                snapshot_id=snapshot_id,
+                expression="foo",
+                verse_ref="1:1",
+                text="foo text",
+            )
+        )
+    
+        # Isolation
+        test_db.add(
+            models.IsolationState(
+                id=f"iso_{uuid.uuid4().hex[:8]}",
+                research_run_id=run_id,
+                establishment_status="ESTABLISHED",
+                corpus_snapshot=snapshot_id,
+                audit_ref="aud_123",
+                is_contaminated="CLEAN",
+            )
+        )
+    
+        # Observation
+        test_db.add(
+            models.ObservationArtifact(
+                id=f"obs_{uuid.uuid4().hex[:8]}",
+                research_run_id=run_id,
+                occurrence_ref="1:1",
+                form="form_test",
+            )
+        )
+    
+        # Claim
+        test_db.add(
+            models.SemanticClaim(
+                id=claim_id,
+                research_run_id=run_id,
+                contract_type="ROOT_CORE",
+                revision_id=1,
+                canonical_state="NOT_CANONICAL",
+                research_state="PREFERRED",
+                verification_state="VERIFIED",
+            )
+        )
+    
+        # Claim Revision
+        test_db.add(
+            models.ClaimRevision(
+                id=f"rev_{uuid.uuid4().hex[:8]}",
+                claim_id=claim_id,
+                revision_number=1,
+                correction_reason="initial",
+            )
+        )
+    
+        # Independent Review
+        test_db.add(
+            models.IndependentReview(
+                id=f"ir_{uuid.uuid4().hex[:8]}",
+                claim_id=claim_id,
+                revision_id=1,
+                reviewer_identity="REV1",
+                review_status="COMPLETED",
+                verdict="AGREE",
+            )
+        )
+    
+        # Verification Record
+        test_db.add(
+            models.VerificationRecord(
+                id=f"vr_{uuid.uuid4().hex[:8]}",
+                claim_id=claim_id,
+                verifier_identity="VER1",
+                verification_type="INDEPENDENT",
+                decision="VERIFIED",
+                evaluated_claim_revision=1,
+            )
+        )
+    
+        # Audit Log
+        test_db.add(
+            models.AuditLog(
+                id=f"aud_{uuid.uuid4().hex[:8]}",
+                entity_id=claim_id,
+                entity_type="SemanticClaim",
+                action="STATE_TRANSITION",
+                actor="TEST_USER",
+                new_state="VERIFIED",
+            )
+        )
+    
+>       test_db.commit()
+
+tests\test_provenance.py:127: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+.venv\Lib\site-packages\sqlalchemy\orm\session.py:2017: in commit
+    trans.commit(_to_root=True)
+<string>:2: in commit
+    ???
+.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\sqlalchemy\orm\session.py:1302: in commit
+    self._prepare_impl()
+<string>:2: in _prepare_impl
+    ???
+.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\sqlalchemy\orm\session.py:1277: in _prepare_impl
+    self.session.flush()
+.venv\Lib\site-packages\sqlalchemy\orm\session.py:4341: in flush
+    self._flush(objects)
+.venv\Lib\site-packages\sqlalchemy\orm\session.py:4476: in _flush
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+.venv\Lib\site-packages\sqlalchemy\orm\session.py:4437: in _flush
+    flush_context.execute()
+.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py:466: in execute
+    rec.execute(self)
+.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+.venv\Lib\site-packages\sqlalchemy\orm\persistence.py:93: in save_obj
+    _emit_insert_statements(
+.venv\Lib\site-packages\sqlalchemy\orm\persistence.py:1048: in _emit_insert_statements
+    result = connection.execute(
+.venv\Lib\site-packages\sqlalchemy\engine\base.py:1418: in execute
+    return meth(
+.venv\Lib\site-packages\sqlalchemy\sql\elements.py:515: in _execute_on_connection
+    return connection._execute_clauseelement(
+.venv\Lib\site-packages\sqlalchemy\engine\base.py:1640: in _execute_clauseelement
+    ret = self._execute_context(
+.venv\Lib\site-packages\sqlalchemy\engine\base.py:1846: in _execute_context
+    return self._exec_single_context(
+.venv\Lib\site-packages\sqlalchemy\engine\base.py:1986: in _exec_single_context
+    self._handle_dbapi_exception(
+.venv\Lib\site-packages\sqlalchemy\engine\base.py:2353: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+.venv\Lib\site-packages\sqlalchemy\engine\base.py:1967: in _exec_single_context
+    self.dialect.do_execute(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x000002107456F260>
+cursor = <sqlite3.Cursor object at 0x0000021005842540>
+statement = 'INSERT INTO claim_revisions (id, claim_id, revision_number, predecessor_revision_id, correction_reason, semantic_payload_hash, creation_actor, created_at, frozen_at, superseded) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
+parameters = ('rev_2e008674', 'claim_84eec7a4', 1, None, 'initial', None, ...)
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x00000210058872F0>
+
+    def do_execute(self, cursor, statement, parameters, context=None):
+>       cursor.execute(statement, parameters)
+E       sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: claim_revisions.payload
+E       [SQL: INSERT INTO claim_revisions (id, claim_id, revision_number, predecessor_revision_id, correction_reason, semantic_payload_hash, creation_actor, created_at, frozen_at, superseded) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+E       [parameters: ('rev_2e008674', 'claim_84eec7a4', 1, None, 'initial', None, None, '2026-09-18 20:58:41.867639', None, 0)]
+E       (Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+.venv\Lib\site-packages\sqlalchemy\engine\default.py:924: IntegrityError
+__________________________ test_root_semantic_unity ___________________________
+
+self = <sqlalchemy.engine.base.Connection object at 0x00000210068AFB00>
+dialect = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x000002107456F260>
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x00000210050E2F30>
+statement = <sqlalchemy.dialects.sqlite.base.SQLiteCompiler object at 0x00000210050E2F60>
+parameters = [('run1', 'ROOT_CONCEPT', 'root', None, None, 'RESEARCH', ...)]
+
+    def _exec_single_context(
+        self,
+        dialect: Dialect,
+        context: ExecutionContext,
+        statement: Union[str, Compiled],
+        parameters: Optional[_AnyMultiExecuteParams],
+    ) -> CursorResult[Any]:
+        """continue the _execute_context() method for a single DBAPI
+        cursor.execute() or cursor.executemany() call.
+    
+        """
+        if dialect.bind_typing is BindTyping.SETINPUTSIZES:
+            generic_setinputsizes = context._prepare_set_input_sizes()
+    
+            if generic_setinputsizes:
+                try:
+                    dialect.do_set_input_sizes(
+                        context.cursor, generic_setinputsizes, context
+                    )
+                except BaseException as e:
+                    self._handle_dbapi_exception(
+                        e, str(statement), parameters, None, context
+                    )
+    
+        cursor, str_statement, parameters = (
+            context.cursor,
+            context.statement,
+            context.parameters,
+        )
+    
+        effective_parameters: Optional[_AnyExecuteParams]
+    
+        if not context.executemany:
+            effective_parameters = parameters[0]
+        else:
+            effective_parameters = parameters
+    
+        if self._has_events or self.engine._has_events:
+            for fn in self.dispatch.before_cursor_execute:
+                str_statement, effective_parameters = fn(
+                    self,
+                    cursor,
+                    str_statement,
+                    effective_parameters,
+                    context,
+                    context.executemany,
+                )
+    
+        if self._echo:
+            self._log_info(str_statement)
+    
+            stats = context._get_cache_stats()
+    
+            if not self.engine.hide_parameters:
+                self._log_info(
+                    "[%s] %r",
+                    stats,
+                    sql_util._repr_params(
+                        effective_parameters,
+                        batches=10,
+                        ismulti=context.executemany,
+                    ),
+                )
+            else:
+                self._log_info(
+                    "[%s] [SQL parameters hidden due to hide_parameters=True]",
+                    stats,
+                )
+    
+        evt_handled: bool = False
+        try:
+            if context.execute_style is ExecuteStyle.EXECUTEMANY:
+                effective_parameters = cast(
+                    "_CoreMultiExecuteParams", effective_parameters
+                )
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_executemany:
+                        if fn(
+                            cursor,
+                            str_statement,
+                            effective_parameters,
+                            context,
+                        ):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+                    self.dialect.do_executemany(
+                        cursor,
+                        str_statement,
+                        effective_parameters,
+                        context,
+                    )
+            elif not effective_parameters and context.no_parameters:
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_execute_no_params:
+                        if fn(cursor, str_statement, context):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+                    self.dialect.do_execute_no_params(
+                        cursor, str_statement, context
+                    )
+            else:
+                effective_parameters = cast(
+                    "_CoreSingleExecuteParams", effective_parameters
+                )
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_execute:
+                        if fn(
+                            cursor,
+                            str_statement,
+                            effective_parameters,
+                            context,
+                        ):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+>                   self.dialect.do_execute(
+                        cursor, str_statement, effective_parameters, context
+                    )
+
+.venv\Lib\site-packages\sqlalchemy\engine\base.py:1967: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x000002107456F260>
+cursor = <sqlite3.Cursor object at 0x00000210055A8E40>
+statement = 'INSERT INTO research_runs (id, target_contract, target_expression, methodology_revision, corpus_snapshot, current_stage, status, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)'
+parameters = ('run1', 'ROOT_CONCEPT', 'root', None, None, 'RESEARCH', ...)
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x00000210050E2F30>
+
+    def do_execute(self, cursor, statement, parameters, context=None):
+>       cursor.execute(statement, parameters)
+E       sqlite3.IntegrityError: NOT NULL constraint failed: research_runs.methodology_revision
+
+.venv\Lib\site-packages\sqlalchemy\engine\default.py:924: IntegrityError
+
+The above exception was the direct cause of the following exception:
+
+test_db = <sqlalchemy.orm.session.Session object at 0x000002100556E3C0>
+
+    def test_root_semantic_unity(test_db):
+        run = ResearchRun(id="run1", target_contract="ROOT_CONCEPT", target_expression="root")
+        test_db.add(run)
+    
+        claim = SemanticClaim(
+            id="root_claim",
+            research_run_id="run1",
+            contract_type="ROOT_CONCEPT",
+            claim_scope=ClaimScope.UNIVERSAL.value,
+            research_state=ResearchState.PREFERRED.value,
+            result_strength=ResultStrength.STRONG.value,
+            falsification_status=FalsificationStatus.PASSED.value,
+            plain_explanation="valid",
+            semantic_boundary="valid",
+            strongest_counterexample="none",
+            strongest_competitor="none",
+            supporting_evidence=["ev1"],
+            hard_cases=["hard"],
+            reopen_conditions=["reopen"],
+            root_concept="root",
+            unresolved_cases=["unexplained_occurrence"], # <--- violates unity
+            research_completeness={"sufficient_for_claim": True}
+        )
+        test_db.add(claim)
+>       test_db.commit()
+
+tests\test_root_canonicalization.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+.venv\Lib\site-packages\sqlalchemy\orm\session.py:2017: in commit
+    trans.commit(_to_root=True)
+<string>:2: in commit
+    ???
+.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\sqlalchemy\orm\session.py:1302: in commit
+    self._prepare_impl()
+<string>:2: in _prepare_impl
+    ???
+.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\sqlalchemy\orm\session.py:1277: in _prepare_impl
+    self.session.flush()
+.venv\Lib\site-packages\sqlalchemy\orm\session.py:4341: in flush
+    self._flush(objects)
+.venv\Lib\site-packages\sqlalchemy\orm\session.py:4476: in _flush
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+.venv\Lib\site-packages\sqlalchemy\orm\session.py:4437: in _flush
+    flush_context.execute()
+.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py:466: in execute
+    rec.execute(self)
+.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+.venv\Lib\site-packages\sqlalchemy\orm\persistence.py:93: in save_obj
+    _emit_insert_statements(
+.venv\Lib\site-packages\sqlalchemy\orm\persistence.py:1048: in _emit_insert_statements
+    result = connection.execute(
+.venv\Lib\site-packages\sqlalchemy\engine\base.py:1418: in execute
+    return meth(
+.venv\Lib\site-packages\sqlalchemy\sql\elements.py:515: in _execute_on_connection
+    return connection._execute_clauseelement(
+.venv\Lib\site-packages\sqlalchemy\engine\base.py:1640: in _execute_clauseelement
+    ret = self._execute_context(
+.venv\Lib\site-packages\sqlalchemy\engine\base.py:1846: in _execute_context
+    return self._exec_single_context(
+.venv\Lib\site-packages\sqlalchemy\engine\base.py:1986: in _exec_single_context
+    self._handle_dbapi_exception(
+.venv\Lib\site-packages\sqlalchemy\engine\base.py:2353: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+.venv\Lib\site-packages\sqlalchemy\engine\base.py:1967: in _exec_single_context
+    self.dialect.do_execute(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x000002107456F260>
+cursor = <sqlite3.Cursor object at 0x00000210055A8E40>
+statement = 'INSERT INTO research_runs (id, target_contract, target_expression, methodology_revision, corpus_snapshot, current_stage, status, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)'
+parameters = ('run1', 'ROOT_CONCEPT', 'root', None, None, 'RESEARCH', ...)
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x00000210050E2F30>
+
+    def do_execute(self, cursor, statement, parameters, context=None):
+>       cursor.execute(statement, parameters)
+E       sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: research_runs.methodology_revision
+E       [SQL: INSERT INTO research_runs (id, target_contract, target_expression, methodology_revision, corpus_snapshot, current_stage, status, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)]
+E       [parameters: ('run1', 'ROOT_CONCEPT', 'root', None, None, 'RESEARCH', 'ACTIVE', '2026-09-18 20:59:58.690472', '2026-09-18 20:59:58.690472')]
+E       (Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+.venv\Lib\site-packages\sqlalchemy\engine\default.py:924: IntegrityError
+______________________ test_judgment_history_read_model _______________________
+
+test_db = <sqlalchemy.orm.session.Session object at 0x0000021006236120>
+setup_claim = {'claim_id': 'jud_cb2c9323', 'run_id': 'run_58c18124', 'ai_rec_id': 'ai_9fc4f031'}
+
+    def test_judgment_history_read_model(test_db, setup_claim):
+        claim_id = setup_claim["claim_id"]
+        record = models.VerificationRecord(
+            id=f"ver_{uuid.uuid4().hex[:8]}",
+            claim_id=claim_id,
+            verifier_identity="expert_1",
+            verification_type="INDEPENDENT",
+            decision="VERIFIED",
+            rationale="Independently reproduced against the admitted corpus.",
+            evidence_refs=[],
+            evaluated_claim_revision=1,
+        )
+        test_db.add(record)
+        test_db.commit()
+    
+        res = client.get(f"/judgments/{claim_id}/history")
+        assert res.status_code == 200
+        data = res.json()
+        assert data["claim_id"] == claim_id
+        assert data["current_revision"] == 1
+>       assert len(data["revisions"]) >= 1
+E       assert 0 >= 1
+E        +  where 0 = len([])
+
+tests\test_slice_g.py:190: AssertionError
+============================== warnings summary ===============================
+tests/e2e/test_journey_1_run_initialization.py: 1 warning
+tests/test_backend.py: 1 warning
+tests/test_converge_runtime.py: 1 warning
+tests/test_methodology_authority.py: 2 warnings
+tests/test_r01_migration.py: 1 warning
+tests/test_r2_vector_persistence.py: 2 warnings
+tests/test_runtime_database.py: 1 warning
+tests/test_status_axis_migration.py: 3 warnings
+tests/test_tanzil_pre_activation_import.py: 2 warnings
+  D:\APP\tafseer\lisanapp3\.venv\Lib\site-packages\sqlalchemy\engine\default.py:924: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+    cursor.execute(statement, parameters)
+
+tests/test_word_lexeme.py::test_lexeme_morphological_expansion
+  D:\APP\tafseer\lisanapp3\backend\domain\services\canonicalization.py:82: SAWarning: fully NULL primary key identity cannot load any object.  This condition may raise an error in a future release.
+    run = db.get(models.ResearchRun, claim.research_run_id)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/test_provenance.py::test_complete_provenance_graph - sqlalchemy....
+FAILED tests/test_root_canonicalization.py::test_root_semantic_unity - sqlalc...
+FAILED tests/test_slice_g.py::test_judgment_history_read_model - assert 0 >= 1
+=========== 3 failed, 294 passed, 15 warnings in 603.52s (0:10:03) ============

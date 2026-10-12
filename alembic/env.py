@@ -3,6 +3,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
+import os
 from logging.config import fileConfig
 
 from sqlalchemy import engine_from_config, pool
@@ -16,7 +17,14 @@ from backend.infrastructure.database import SQLALCHEMY_DATABASE_URL
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
 config = context.config
-if config.get_main_option("sqlalchemy.url") == "sqlite:///lisanapp.db":
+x_args = context.get_x_argument(as_dictionary=True)
+if "db_url" in x_args:
+    config.set_main_option("sqlalchemy.url", x_args["db_url"].replace("%", "%%"))
+elif os.environ.get("DATABASE_URL"):
+    config.set_main_option(
+        "sqlalchemy.url", os.environ["DATABASE_URL"].replace("%", "%%")
+    )
+elif config.get_main_option("sqlalchemy.url") == "sqlite:///lisanapp.db":
     config.set_main_option("sqlalchemy.url", SQLALCHEMY_DATABASE_URL.replace("%", "%%"))
 
 # Interpret the config file for Python logging.
@@ -73,7 +81,7 @@ def run_migrations_online() -> None:
 
     with connectable.connect() as connection:
         context.configure(
-            connection=connection, target_metadata=target_metadata
+            connection=connection, target_metadata=target_metadata, render_as_batch=True
         )
 
         with context.begin_transaction():

@@ -30,9 +30,7 @@ from backend.domain import models
 QAC_SOURCE_ID = "QAC_MORPHOLOGY"
 QAC_SOURCE_VERSION = "0.4"
 QAC_EXTRACTION_VERSION = "qac-0.4-import-v1"
-QAC_EXPECTED_SHA256 = (
-    "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46"
-)
+QAC_EXPECTED_SHA256 = "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46"
 QAC_EXPECTED_BYTES = 6309503
 QAC_LICENSE = "GNU General Public License"
 QAC_COPYRIGHT = "Copyright (C) 2011 Kais Dukes"
@@ -48,11 +46,43 @@ _HEADER = "LOCATION\tFORM\tTAG\tFEATURES"
 _LOC_RE = re.compile(r"^\((\d+):(\d+):(\d+):(\d+)\)$")
 # Buckwalter -> Arabic letters (display only; the Buckwalter form remains the key).
 _BW2AR = {
-    "'": "ء", "|": "آ", ">": "أ", "&": "ؤ", "<": "إ", "}": "ئ", "A": "ا", "b": "ب",
-    "p": "ة", "t": "ت", "v": "ث", "j": "ج", "H": "ح", "x": "خ", "d": "د", "*": "ذ",
-    "r": "ر", "z": "ز", "s": "س", "$": "ش", "S": "ص", "D": "ض", "T": "ط", "Z": "ظ",
-    "E": "ع", "g": "غ", "f": "ف", "q": "ق", "k": "ك", "l": "ل", "m": "م", "n": "ن",
-    "h": "ه", "w": "و", "y": "ي", "Y": "ى", "{": "ٱ",
+    "'": "ء",
+    "|": "آ",
+    ">": "أ",
+    "&": "ؤ",
+    "<": "إ",
+    "}": "ئ",
+    "A": "ا",
+    "b": "ب",
+    "p": "ة",
+    "t": "ت",
+    "v": "ث",
+    "j": "ج",
+    "H": "ح",
+    "x": "خ",
+    "d": "د",
+    "*": "ذ",
+    "r": "ر",
+    "z": "ز",
+    "s": "س",
+    "$": "ش",
+    "S": "ص",
+    "D": "ض",
+    "T": "ط",
+    "Z": "ظ",
+    "E": "ع",
+    "g": "غ",
+    "f": "ف",
+    "q": "ق",
+    "k": "ك",
+    "l": "ل",
+    "m": "م",
+    "n": "ن",
+    "h": "ه",
+    "w": "و",
+    "y": "ي",
+    "Y": "ى",
+    "{": "ٱ",
 }
 
 
@@ -138,8 +168,15 @@ def parse_segments(raw_bytes: bytes) -> list[QacSegment]:
                 verb_form = tok.strip("()")
         segments.append(
             QacSegment(
-                surah=surah, ayah=ayah, word=word, segment=segment,
-                form=form, tag=tag, root=root, pos=pos, verb_form=verb_form,
+                surah=surah,
+                ayah=ayah,
+                word=word,
+                segment=segment,
+                form=form,
+                tag=tag,
+                root=root,
+                pos=pos,
+                verb_form=verb_form,
             )
         )
     return segments

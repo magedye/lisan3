@@ -235,7 +235,9 @@ def converge(db, *, evidence: ConvergenceEvidence) -> ConvergenceEvidence:
     evidence.authorized_methodology_present = AUTHORIZED_METHODOLOGY_ID in eligible
     authorized = db.get(models.MethodologyRevision, AUTHORIZED_METHODOLOGY_ID)
     evidence.methodology_authority_failures = (
-        methodology_authority_failures(authorized) if authorized is not None else ["revision absent"]
+        methodology_authority_failures(authorized)
+        if authorized is not None
+        else ["revision absent"]
     )
     if not evidence.authorized_methodology_present:
         raise ConvergenceError(
@@ -292,10 +294,14 @@ def main(argv: list[str] | None = None) -> int:
     else:
         print("CANONICAL RUNTIME CONVERGENCE — OK")
         print(f"  database                : {evidence.database_url}")
-        print(f"  schema                  : {evidence.schema_status} {evidence.schema_actual_revisions}")
+        print(
+            f"  schema                  : {evidence.schema_status} {evidence.schema_actual_revisions}"
+        )
         print(f"  tanzil snapshot         : {evidence.tanzil_snapshot_id}")
         print(f"  tanzil occurrences      : {evidence.tanzil_occurrence_count}")
-        print(f"  activation / validation : {evidence.activation_status} / {evidence.validation_status}")
+        print(
+            f"  activation / validation : {evidence.activation_status} / {evidence.validation_status}"
+        )
         print(f"  production-valid        : {evidence.is_production_validated}")
         print(f"  qac tokens persisted    : {evidence.qac_tokens_persisted}")
         print(f"  qac distinct roots      : {evidence.qac_distinct_roots}")

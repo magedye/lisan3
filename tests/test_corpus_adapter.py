@@ -129,7 +129,9 @@ def test_f4_corpus_validation_invariant_regression():
         fixture_only=False,
     )
     db.add(forged)
-    with pytest.raises(ValueError, match="snapshot expected hash is not authority-bound"):
+    with pytest.raises(
+        ValueError, match="snapshot expected hash is not authority-bound"
+    ):
         db.flush()
 
     db.rollback()

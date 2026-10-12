@@ -17,9 +17,7 @@ down_revision: str | None = "d4f7a2c8e901"
 branch_labels: str | Sequence[str] | None = None
 depends_on: str | Sequence[str] | None = None
 
-METHODOLOGY_REVISION_ID = (
-    "LISAN_QURANIC_SEMANTIC_EXTRACTION@6bb1c10a0f9a"
-)
+METHODOLOGY_REVISION_ID = "LISAN_QURANIC_SEMANTIC_EXTRACTION@6bb1c10a0f9a"
 SOURCE_SHA256 = "43c0a40b3f465fa95695607c2de838effd07946966c57ad15275d0051e92a288"
 
 

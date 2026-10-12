@@ -11,9 +11,9 @@
 `Research Judgment` قابل للتتبع. ليست مصدرًا قرآنيًا، ولا Validator، ولا سلطة
 `Canonical Project Acceptance`.
 
-`Root Concept` هو أقل بنية دلالية مشتركة لازمة لتفسير مساهمة الجذر عبر مشتقاته
+`Root Axial Meaning` (أو المعنى المحوري للجذر) هو أقل بنية دلالية مشتركة لازمة لتفسير مساهمة الجذر عبر مشتقاته
 واستعمالاته، بعد طرح ما يمكن تفسيره بالصرف والتركيب والسياق، مع اختبار تميزه عن
-الجذور القريبة وقابليته للدحض.
+الجذور القريبة (Distinctive Residue) وقابليته للدحض.
 
 يجوز بقاء وحدات معجمية متعددة. لا تُخترع وحدة ولا فارق مميز. `UNRESOLVED`
 نتيجة صحيحة.
@@ -93,13 +93,14 @@ unification, genericity, letter overreliance, circularity) أدوات نقد. ل
 يشمل الحكم المحفوظ الحد الأدنى الآتي بحسب نوع السؤال:
 
 ```yaml
-contract_type: ROOT_CONCEPT | LEXEME | LOCAL_MEANING | VERSE_MEANING | SEMANTIC_DIFFERENCE
+contract_type: ROOT_CORE | LEXEME | FORM | CONSTRUCTION | LOCAL_MEANING | VERSE | CONCEPT | COMPARISON | PRACTICE
 research_state: PREFERRED | UNRESOLVED | REJECTED
 claim_scope: UNIVERSAL | REPRESENTATIVE | LOCAL
 result_strength: WEAK | MODERATE | STRONG | UNRESOLVED
 preferred_conclusion: string|null
 plain_explanation: string|null
-semantic_boundary: string|null
+semantic_boundary: object|null
+distinctive_residue: string|null
 layer_attribution: {}
 supporting_evidence_refs: []
 counterevidence_refs: []
@@ -110,6 +111,8 @@ unresolved_cases: []
 rejection_condition: object|null
 falsification_status: NOT_REQUIRED | NOT_RUN | PASSED | FAILED
 reopen_conditions: []
+illustrative_verses: []
+decisive_contexts: []
 ```
 
 `research_completeness`, corpus/method versions, verification, and canonical

@@ -7,16 +7,17 @@ from datetime import datetime, timezone
 from sqlalchemy.orm import Session
 
 from backend.domain import models
+from backend.domain.services.actor_context import ActorContext, ActorRole
 from backend.domain.services.corpus.authority import is_production_validated
-from backend.domain.services.isolation import isolation_attestation_failures
-from backend.domain.services.methodology_authority import methodology_authority_failures
-from backend.domain.services.research_coverage import confirmed_word_refs
-from backend.domain.services.research_judgment import resolve_evidence_refs
 
 # A server-owned authorized actor must explicitly perform canonicalization
 # (SIMPLIFIED_AI_AUTHORITY_AND_GOVERNANCE_CONTRACT.md, CANONICALIZATION REQUIRES §8).
 # AI/automation actors can never self-authorize ACCEPTED.
 AUTHORIZED_CANONICALIZATION_ACTORS = frozenset({"TRUSTED_LOCAL_OWNER"})
+from backend.domain.services.isolation import isolation_attestation_failures
+from backend.domain.services.methodology_authority import methodology_authority_failures
+from backend.domain.services.research_coverage import confirmed_word_refs
+from backend.domain.services.research_judgment import resolve_evidence_refs
 
 
 @dataclass(frozen=True)
@@ -51,7 +52,7 @@ class CanonicalizationPolicy:
             reasons.append("Hard cases are missing")
         if not claim.reopen_conditions:
             reasons.append("Reopen conditions are missing")
-        if claim.contract_type == "ROOT_CONCEPT" and not claim.root_concept:
+        if claim.contract_type in ("ROOT_CONCEPT", "ROOT_CORE") and not claim.root_concept:
             reasons.append("Root concept is missing")
 
         # Root semantic unity (INT-OWN-ROOT-002, NON_NEGOTIABLE): an accepted
@@ -61,7 +62,7 @@ class CanonicalizationPolicy:
         # explanation: a still-unresolved (confirmed unexplained) occurrence must
         # block acceptance. No majority substitute is permitted.
         is_universal_root = (
-            claim.contract_type == "ROOT_CONCEPT"
+            claim.contract_type in ("ROOT_CONCEPT", "ROOT_CORE")
             and claim.claim_scope == models.ClaimScope.UNIVERSAL.value
         )
         if is_universal_root and (claim.unresolved_cases or []):
@@ -69,6 +70,14 @@ class CanonicalizationPolicy:
                 "A universal root concept cannot be accepted while confirmed "
                 "occurrences remain unexplained (root semantic unity)"
             )
+
+        if claim.contract_type == "LEXEME":
+            # For LEXEME, ensure that morphological expansion was performed.
+            # We can check if `sampling_basis` or some other field indicates morphological expansion,
+            # or require the caller to provide it in the claim scope/research completeness.
+            completeness = claim.research_completeness or {}
+            if not completeness.get("morphological_expansion_performed"):
+                reasons.append("LEXEME requires full morphological expansion")
 
         run = db.get(models.ResearchRun, claim.research_run_id)
         if run is None:
@@ -149,13 +158,16 @@ class CanonicalizationPolicy:
             .all()
         )
         if len(corpus_dependencies) != 1 or (
-            corpus_dependencies and corpus_dependencies[0].dependency_ref != run.corpus_snapshot
+            corpus_dependencies
+            and corpus_dependencies[0].dependency_ref != run.corpus_snapshot
         ):
             reasons.append("Canonical corpus dependency is absent or ambiguous")
         if run.target_contract.startswith("test_fixture_") or (
             snapshot is not None and snapshot.fixture_only
         ):
-            reasons.append("Synthetic fixtures cannot become canonical project knowledge")
+            reasons.append(
+                "Synthetic fixtures cannot become canonical project knowledge"
+            )
         return CanonicalizationDecision(not reasons, tuple(dict.fromkeys(reasons)))
 
     @classmethod
@@ -165,11 +177,18 @@ class CanonicalizationPolicy:
         claim: models.SemanticClaim,
         *,
         rationale: str,
+        actor_context: ActorContext | None = None,
         actor: str = "TRUSTED_LOCAL_OWNER",
     ) -> models.SemanticClaim:
-        if actor not in AUTHORIZED_CANONICALIZATION_ACTORS:
+        if actor_context:
+            ActorContext.require_role(actor_context, ActorRole.OWNER_OPERATOR)
+            resolved_actor = actor_context.identity
+        else:
+            resolved_actor = actor
+
+        if resolved_actor not in AUTHORIZED_CANONICALIZATION_ACTORS:
             raise ValueError(
-                f"Actor '{actor}' is not authorized to canonicalize; canonicalization "
+                f"Actor '{resolved_actor}' is not authorized to canonicalize; canonicalization "
                 "is a server-owned trusted-local-owner action"
             )
         decision = cls.evaluate(db, claim)
@@ -190,7 +209,7 @@ class CanonicalizationPolicy:
                 action="CANONICALIZE",
                 previous_state=previous,
                 new_state=models.CanonicalState.ACCEPTED.value,
-                actor=actor,
+                actor=resolved_actor,
             )
         )
         db.add(
@@ -201,12 +220,35 @@ class CanonicalizationPolicy:
                 action="RECORD_RATIONALE",
                 previous_state=None,
                 new_state=rationale,
-                actor=actor,
+                actor=resolved_actor,
             )
         )
         db.commit()
         db.refresh(claim)
         return claim
+
+    @classmethod
+    def reopen_for_governance(
+        cls, db: Session, claim: models.SemanticClaim, actor_context: ActorContext
+    ):
+        ActorContext.require_role(actor_context, ActorRole.OWNER_OPERATOR)
+        previous = claim.canonical_state
+        claim.canonical_state = models.CanonicalState.REOPEN_REQUIRED.value
+        claim.verification_state = models.VerificationState.NOT_VERIFIED.value
+        claim.revision_id += 1
+        import uuid
+
+        db.add(
+            models.AuditLog(
+                id=f"aud_{uuid.uuid4().hex[:8]}",
+                entity_id=claim.id,
+                entity_type="ResearchJudgment",
+                action="REOPEN_FOR_GOVERNING_REVISION",
+                previous_state=previous,
+                new_state=models.CanonicalState.REOPEN_REQUIRED.value,
+                actor=actor_context.identity,
+            )
+        )
 
 
 def reopen_accepted_results_for_new_evidence(
@@ -214,10 +256,14 @@ def reopen_accepted_results_for_new_evidence(
 ) -> list[str]:
     accepted = (
         db.query(models.SemanticClaim)
-        .join(models.ResearchRun, models.SemanticClaim.research_run_id == models.ResearchRun.id)
+        .join(
+            models.ResearchRun,
+            models.SemanticClaim.research_run_id == models.ResearchRun.id,
+        )
         .filter(
             models.ResearchRun.target_expression == run.target_expression,
-            models.SemanticClaim.canonical_state == models.CanonicalState.ACCEPTED.value,
+            models.SemanticClaim.canonical_state
+            == models.CanonicalState.ACCEPTED.value,
         )
         .all()
     )
@@ -247,16 +293,18 @@ def reopen_accepted_results_for_new_evidence(
     return reopened
 
 
-def accepted_root_result(
-    db: Session, expression: str
-) -> models.SemanticClaim | None:
+def accepted_root_result(db: Session, expression: str) -> models.SemanticClaim | None:
     return (
         db.query(models.SemanticClaim)
-        .join(models.ResearchRun, models.SemanticClaim.research_run_id == models.ResearchRun.id)
+        .join(
+            models.ResearchRun,
+            models.SemanticClaim.research_run_id == models.ResearchRun.id,
+        )
         .filter(
             models.ResearchRun.target_expression == expression,
             models.SemanticClaim.contract_type == "ROOT_CONCEPT",
-            models.SemanticClaim.canonical_state == models.CanonicalState.ACCEPTED.value,
+            models.SemanticClaim.canonical_state
+            == models.CanonicalState.ACCEPTED.value,
             models.SemanticClaim.result_strength == models.ResultStrength.STRONG.value,
         )
         .order_by(models.SemanticClaim.accepted_at.desc())

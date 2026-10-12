@@ -150,9 +150,7 @@ def upgrade() -> None:
 def downgrade() -> None:
     bind = op.get_bind()
     with op.batch_alter_table("semantic_claims") as batch_op:
-        batch_op.drop_constraint(
-            "ck_semantic_claim_publication_state", type_="check"
-        )
+        batch_op.drop_constraint("ck_semantic_claim_publication_state", type_="check")
         batch_op.drop_constraint("ck_semantic_claim_freshness_state", type_="check")
         batch_op.drop_constraint("ck_semantic_claim_review_state", type_="check")
         batch_op.drop_constraint("ck_semantic_claim_epistemic_state", type_="check")
@@ -169,13 +167,17 @@ def downgrade() -> None:
     for audit in audits:
         before = json.loads(audit["previous_state"])
         after = json.loads(audit["new_state"])
-        current = bind.execute(
-            sa.text(
-                "SELECT epistemic_state, review_state, freshness_state, "
-                "publication_state FROM semantic_claims WHERE id=:id"
-            ),
-            {"id": audit["entity_id"]},
-        ).mappings().first()
+        current = (
+            bind.execute(
+                sa.text(
+                    "SELECT epistemic_state, review_state, freshness_state, "
+                    "publication_state FROM semantic_claims WHERE id=:id"
+                ),
+                {"id": audit["entity_id"]},
+            )
+            .mappings()
+            .first()
+        )
         if current is not None and dict(current) == after:
             bind.execute(
                 sa.text(
@@ -185,4 +187,6 @@ def downgrade() -> None:
                 ),
                 {"id": audit["entity_id"], **before},
             )
-        bind.execute(sa.text("DELETE FROM audit_logs WHERE id=:id"), {"id": audit["id"]})
+        bind.execute(
+            sa.text("DELETE FROM audit_logs WHERE id=:id"), {"id": audit["id"]}
+        )

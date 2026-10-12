@@ -2,6 +2,17 @@
 
 State context only. Canonical repository contracts and runtime evidence remain authoritative.
 
+## Quran Lisan v1.1 Integration (2026-09-19)
+
+- Executed full audit and reconciliation of LISAN3 against `Quran-Lisan-v1.1.zip`.
+- Expanded Data Models: Added `distinctive_residue`, `illustrative_verses`, `decisive_contexts` to `SemanticClaim`. Overhauled `EssentialNeighbor` invariant fields (`shared_features`, `distinctive_difference`, `layer_of_difference`, `discriminating_evidence`).
+- Added `SemanticMemory` table and read models.
+- Re-aligned `contract_type` across the platform to include specific granular structural units (`ROOT_CORE`, `LEXEME`, `FORM`, `CONSTRUCTION`, etc.).
+- Schema and Database migrations generated and applied successfully (`bac8ad155a7c`).
+- AI Skills updated: `skills/lisan-semantic-extraction/SKILL.md` aligned with v1.1 invariant vocabulary (Root Axial Meaning, Distinctive Residue).
+- `docs/QURAN_LISAN_V1_1_INTEGRATION_REPORT.md` generated.
+- Status: `QURAN_LISAN_V1_1_INTEGRATED`.
+
 ## Canonical Runtime Qualification Checkpoint (2026-09-12)
 
 - Branch `canonical-runtime-qualification` from main `6dea680052cf3ccf00ccb89396503763c0dc1839`.
@@ -1747,3 +1758,21 @@ Batch 07 comparison. Then perform final exact-revision delegated decisions.
   PREFERRED/MODERATE lexeme finding.
 - Both comparisons occurred only after blind verdicts were frozen. Neither
   current claim nor review verdict changed; reviewers performed no writes.
+
+## Batch 08 & Batch 09 Freeze (2026-09-18)
+
+- Batch 08 Execution is currently UNVERIFIED and FROZEN_FOR_PLATFORM_COMPLETION.
+- Batch 09 remains explicitly NOT_AUTHORIZED.
+- Architectural boundary remediation is active, replacing monkeypatched E2E and direct ORM mutation with governed Domain Services and true out-of-process isolation.
+
+## LISAN3 Platform Completion Candidate (2026-09-19)
+
+- Implementation candidate: f0cb5ea
+- Restored API mutation authority check using standard Owner Token injection via custom Next.js API proxy (/api/[...route]/route.ts).
+- Migrated legacy Observation properties to strictly match current Database and Domain conventions.
+- Added comprehensive lifecycle support for ClaimRevision and VerificationRecord including required validation payload fields.
+- Fixed structural validation integrity constraints around ResearchRun (enforcing methodology_revision, corpus_snapshot, authority_context).
+- The completion gate tool 	ools/validate_platform_completion.py executed successfully.
+- Clean detached verification passed: static quality (Ruff), full unit tests, integration tests, E2E tests, and evidence artifacts all passed.
+- Verdict: LISAN3_PLATFORM_CANDIDATE_READY_FOR_INDEPENDENT_REVIEW.
+- Did NOT grant LISAN3_PLATFORM_COMPLETION_CONFIRMED, LISAN3_PLATFORM_MERGE_READY, or INDEPENDENTLY_REVIEWED.

@@ -83,7 +83,9 @@ def upgrade() -> None:
         ),
         sa.Column("test_plan", sa.String(), nullable=True),
         sa.Column("test_evidence_refs", sa.JSON(), nullable=False, server_default="[]"),
-        sa.Column("counterevidence_refs", sa.JSON(), nullable=False, server_default="[]"),
+        sa.Column(
+            "counterevidence_refs", sa.JSON(), nullable=False, server_default="[]"
+        ),
         sa.Column("result", sa.String(), nullable=True),
         sa.Column("provenance", sa.String(), nullable=False),
         sa.Column("research_run_id", sa.String(), nullable=True),
@@ -107,7 +109,9 @@ def upgrade() -> None:
             name="ck_external_hypothesis_status",
         ),
     )
-    op.create_index(op.f("ix_external_hypothesis_records_id"), "external_hypothesis_records", ["id"])
+    op.create_index(
+        op.f("ix_external_hypothesis_records_id"), "external_hypothesis_records", ["id"]
+    )
     op.create_index(
         "ix_external_hypothesis_target",
         "external_hypothesis_records",
@@ -136,9 +140,16 @@ def upgrade() -> None:
 def downgrade() -> None:
     op.drop_index(op.f("ix_campaign_states_id"), table_name="campaign_states")
     op.drop_table("campaign_states")
-    op.drop_index("ix_external_hypothesis_target", table_name="external_hypothesis_records")
-    op.drop_index(op.f("ix_external_hypothesis_records_id"), table_name="external_hypothesis_records")
+    op.drop_index(
+        "ix_external_hypothesis_target", table_name="external_hypothesis_records"
+    )
+    op.drop_index(
+        op.f("ix_external_hypothesis_records_id"),
+        table_name="external_hypothesis_records",
+    )
     op.drop_table("external_hypothesis_records")
-    op.drop_index(op.f("ix_structural_tokens_snapshot_id"), table_name="structural_tokens")
+    op.drop_index(
+        op.f("ix_structural_tokens_snapshot_id"), table_name="structural_tokens"
+    )
     op.drop_index("ix_structural_tokens_root", table_name="structural_tokens")
     op.drop_table("structural_tokens")

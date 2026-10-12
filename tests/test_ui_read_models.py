@@ -85,11 +85,11 @@ def seed_workspace(db, *, contaminated: bool = False):
         counterevidence_refs=[],
         unresolved_cases=["case-1"],
         rejection_condition={
-            "challenging_finding": "counterexample",
-            "search_location": "corpus",
+            "observable_trigger": "counterexample",
+            "search_space": "corpus",
             "verification_method": "exact source check",
-            "confounder_control": "same form",
-            "failure_consequence": "reject hypothesis",
+            "confound_controls": "same form",
+            "decision_effect": "REJECT",
         },
         provenance="fixture:test_ui_read_models",
     )
@@ -123,7 +123,17 @@ def seed_workspace(db, *, contaminated: bool = False):
         actor="TEST",
     )
     db.add_all(
-        [snapshot, run, isolation, observation, hypothesis, claim, rule, proposal, audit]
+        [
+            snapshot,
+            run,
+            isolation,
+            observation,
+            hypothesis,
+            claim,
+            rule,
+            proposal,
+            audit,
+        ]
     )
     db.commit()
     return run, claim, snapshot, proposal
@@ -158,7 +168,7 @@ def test_run_workspace_hides_judgments_when_source_boundary_is_contaminated(test
     assert len(data["hypotheses"]) == 1
     assert data["judgments_visible"] is False
     assert data["research_judgments"] == []
-    assert claim.id not in response.text
+    assert str(claim.id) not in response.text
 
 
 def test_run_workspace_exposes_judgments_when_isolation_is_clean(test_db):
@@ -196,4 +206,6 @@ def test_direct_judgment_and_overview_release_when_isolation_is_clean(test_db):
     assert judgment_response.status_code == 200
     assert judgment_response.json()["research_state"] == "PREFERRED"
     overview = overview_response.json()
-    assert [item["id"] for item in overview["canonicalization_candidates"]] == [claim.id]
+    assert [item["id"] for item in overview["canonicalization_candidates"]] == [
+        claim.id
+    ]

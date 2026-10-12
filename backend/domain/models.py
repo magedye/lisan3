@@ -148,9 +148,7 @@ class ResearchRun(Base):
     current_stage = Column(String, default=ResearchStage.RESEARCH.value)
     status = Column(String, default="ACTIVE")
     created_at = Column(DateTime, default=utc_now_naive)
-    updated_at = Column(
-        DateTime, default=utc_now_naive, onupdate=utc_now_naive
-    )
+    updated_at = Column(DateTime, default=utc_now_naive, onupdate=utc_now_naive)
 
     claims = relationship("SemanticClaim", back_populates="research_run")
     ai_execution_records = relationship(
@@ -217,12 +215,15 @@ class SemanticClaim(Base):
     preferred_conclusion = Column(String)
     root_concept = Column(String)
     plain_explanation = Column(String)
-    semantic_boundary = Column(String)
+    semantic_boundary = Column(JSON, nullable=False, default=dict)
+    distinctive_residue = Column(String)
     layer_attribution = Column(JSON, nullable=False, default=dict)
 
     # Falsification
     rejection_condition = Column(JSON)
     supporting_evidence = Column(JSON, nullable=False, default=list)
+    illustrative_verses = Column(JSON, nullable=False, default=list)
+    decisive_contexts = Column(JSON, nullable=False, default=list)
     counterevidence = Column(JSON, nullable=False, default=list)
     unresolved_cases = Column(JSON, nullable=False, default=list)
     hard_cases = Column(JSON, nullable=False, default=list)
@@ -429,7 +430,9 @@ def preserve_imported_corpus_provenance(_mapper, _connection, snapshot):
         "canon_001_reconciliation",
         "fixture_only",
     )
-    changed = [field for field in immutable_fields if state.attrs[field].history.has_changes()]
+    changed = [
+        field for field in immutable_fields if state.attrs[field].history.has_changes()
+    ]
     if changed:
         raise ValueError(
             "Cannot mutate imported CorpusSnapshot provenance: " + ", ".join(changed)
@@ -509,13 +512,20 @@ class EssentialNeighbor(Base):
     id = Column(String, primary_key=True, index=True)
     hypothesis_id = Column(String, ForeignKey("hypotheses.id"))
     shared_domain = Column(String)
-    positive_distinguishing_candidate = Column(String)
-    relevant_differentiation_axes = Column(JSON)
-    substitution_probe = Column(String)
-    boundary_negative_cases = Column(JSON)
-    supporting_evidence = Column(JSON)
-    counterevidence = Column(JSON)
-    unresolved_distinction = Column(String)
+    # v1.1 canonical fields
+    shared_features = Column(JSON, nullable=False, default=list)
+    distinctive_difference = Column(String)
+    layer_of_difference = Column(String)
+    discriminating_evidence = Column(JSON, nullable=False, default=list)
+    counterevidence = Column(JSON, nullable=False, default=list)
+    status = Column(String)
+    # Legacy compatibility fields (preserved for zero information loss)
+    positive_distinguishing_candidate = Column(String, nullable=True)
+    relevant_differentiation_axes = Column(JSON, nullable=True)
+    substitution_probe = Column(String, nullable=True)
+    boundary_negative_cases = Column(JSON, nullable=True)
+    supporting_evidence = Column(JSON, nullable=True)
+    unresolved_distinction = Column(String, nullable=True)
     created_at = Column(DateTime, default=utc_now_naive)
 
 
@@ -559,6 +569,56 @@ class DependencyRecord(Base):
     dependency_ref = Column(String, nullable=False)  # e.g. rule_code
     dependency_revision = Column(Integer)
     created_at = Column(DateTime, default=utc_now_naive)
+
+
+class SemanticMemory(Base):
+    __tablename__ = "semantic_memory"
+    __table_args__ = (
+        CheckConstraint(
+            "reliability IN ('TRUSTED', 'PROVISIONAL', 'DISPUTED', 'RETIRED')",
+            name="ck_semantic_memory_reliability",
+        ),
+        CheckConstraint(
+            "scope IN ('UNIVERSAL', 'REPRESENTATIVE', 'LOCAL')",
+            name="ck_semantic_memory_scope",
+        ),
+        CheckConstraint(
+            "target_type IN ('ROOT', 'LEXEME', 'FORM', 'CONSTRUCTION', 'LOCAL_MEANING', 'VERSE', 'CONCEPT', 'COMPARISON', 'PRACTICE')",
+            name="ck_semantic_memory_target_type",
+        ),
+        CheckConstraint(
+            "lifecycle IN ('ACTIVE', 'REOPENED', 'SUPERSEDED', 'REJECTED')",
+            name="ck_semantic_memory_lifecycle",
+        ),
+        CheckConstraint(
+            "conflict_state IN ('NO_CONFLICT', 'OPEN_CONFLICT', 'RESOLVED_CONFLICT')",
+            name="ck_semantic_memory_conflict_state",
+        ),
+    )
+
+    id = Column(String, primary_key=True, index=True)
+    claim_id = Column(String, ForeignKey("semantic_claims.id"), nullable=False)
+    target_type = Column(String, nullable=False)
+    target_expression = Column(String, nullable=False)
+    reliability = Column(String, nullable=False, default="PROVISIONAL")
+    scope = Column(String, nullable=False)
+    conflict_state = Column(String, nullable=False, default="NO_CONFLICT")
+    revalidation_state = Column(String, nullable=False, default="CURRENT")
+    lifecycle = Column(String, nullable=False, default="ACTIVE")
+    # Epistemic and qualification axes (A15/C04)
+    result_strength = Column(String, nullable=False, default="UNRESOLVED")
+    research_completeness = Column(String, nullable=False, default="PARTIAL")
+    independent_verification = Column(String, nullable=False, default="UNVERIFIED")
+    evidence_refs = Column(JSON, nullable=False, default=list)
+    counterevidence_refs = Column(JSON, nullable=False, default=list)
+    dependencies = Column(JSON, nullable=False, default=list)
+    reopen_if = Column(JSON, nullable=False, default=list)
+    parent_revision = Column(String, nullable=True)
+    revision_reason = Column(String, nullable=True)
+    created_at = Column(DateTime, default=utc_now_naive)
+    updated_at = Column(DateTime, default=utc_now_naive, onupdate=utc_now_naive)
+
+    claim = relationship("SemanticClaim")
 
 
 # --- R1 Knowledge Graph projection ---
@@ -931,7 +991,9 @@ class ExternalHypothesisRecord(Base):
         String, nullable=False, default=ExternalClaimRole.RULE_CLAIM.value
     )
     status = Column(
-        String, nullable=False, default=ExternalHypothesisStatus.EXTERNAL_CANDIDATE.value
+        String,
+        nullable=False,
+        default=ExternalHypothesisStatus.EXTERNAL_CANDIDATE.value,
     )
     test_plan = Column(String)
     test_evidence_refs = Column(JSON, nullable=False, default=list)
@@ -940,9 +1002,7 @@ class ExternalHypothesisRecord(Base):
     provenance = Column(String, nullable=False)
     research_run_id = Column(String, ForeignKey("research_runs.id"), nullable=True)
     created_at = Column(DateTime, default=utc_now_naive)
-    updated_at = Column(
-        DateTime, default=utc_now_naive, onupdate=utc_now_naive
-    )
+    updated_at = Column(DateTime, default=utc_now_naive, onupdate=utc_now_naive)
 
 
 @event.listens_for(ExternalHypothesisRecord, "before_insert")
@@ -974,6 +1034,111 @@ class CampaignState(Base):
     findings = Column(JSON, nullable=False, default=list)
     status = Column(String, nullable=False, default="INITIALIZED")
     created_at = Column(DateTime, default=utc_now_naive)
-    updated_at = Column(
-        DateTime, default=utc_now_naive, onupdate=utc_now_naive
+    updated_at = Column(DateTime, default=utc_now_naive, onupdate=utc_now_naive)
+
+
+# --- Independent Review & Provenance (Track 3, 5, 6) ---
+class IndependentReview(Base):
+    __tablename__ = "independent_reviews"
+    id = Column(String, primary_key=True, index=True)
+    claim_id = Column(String, ForeignKey("semantic_claims.id"), nullable=False)
+    revision_id = Column(Integer, nullable=False)
+    reviewer_identity = Column(String, nullable=False)
+    review_status = Column(String, nullable=False)  # PENDING, COMPLETED
+    verdict = Column(String)  # VERIFIED, REJECTED
+    scope_disposition = Column(String)
+    evidence_package_ref = Column(String)
+    independence_metadata = Column(JSON)
+    superseded_by = Column(String, nullable=True)
+    created_at = Column(DateTime, default=utc_now_naive)
+    completed_at = Column(DateTime, nullable=True)
+
+
+class ClaimRevision(Base):
+    __tablename__ = "claim_revisions"
+    __table_args__ = (
+        UniqueConstraint(
+            "claim_id", "revision_number", name="uq_claim_revision_identity"
+        ),
     )
+
+    id = Column(String, primary_key=True, index=True)
+    claim_id = Column(String, ForeignKey("semantic_claims.id"), nullable=False)
+    revision_number = Column(Integer, nullable=False)
+    predecessor_revision_id = Column(
+        String, ForeignKey("claim_revisions.id"), nullable=True
+    )
+    correction_reason = Column(String)
+    payload = Column(JSON, nullable=False)
+    semantic_payload_hash = Column(String, nullable=False)
+    creation_actor = Column(String, nullable=False)
+    created_at = Column(DateTime, default=utc_now_naive)
+    frozen_at = Column(DateTime, nullable=True)
+    superseded = Column(Boolean, default=False, nullable=False)
+
+
+@event.listens_for(ClaimRevision, "before_update")
+def enforce_claim_revision_immutability(_mapper, _connection, revision):
+    state = inspect(revision)
+    was_frozen = (
+        "frozen_at" in state.attrs.frozen_at.history.deleted
+        and state.attrs.frozen_at.history.deleted[0] is not None
+    )
+    is_frozen = revision.frozen_at is not None
+
+    if was_frozen or (is_frozen and not state.attrs.frozen_at.history.added):
+        immutable_fields = (
+            "claim_id",
+            "revision_number",
+            "predecessor_revision_id",
+            "correction_reason",
+            "payload",
+            "semantic_payload_hash",
+            "creation_actor",
+            "created_at",
+            "frozen_at",
+        )
+        changed = [
+            field
+            for field in immutable_fields
+            if state.attrs[field].history.has_changes()
+        ]
+        if changed:
+            raise ValueError(
+                "Cannot mutate a frozen ClaimRevision: " + ", ".join(changed)
+            )
+
+# --- Internal Result Snapshot (Track 4) ---
+class InternalResultSnapshotRecord(Base):
+    __tablename__ = "internal_result_snapshots"
+    id = Column(String, primary_key=True, index=True)
+    snapshot_id = Column(String, unique=True, nullable=False)
+    claim_id = Column(String, ForeignKey("semantic_claims.id"), nullable=False)
+    methodology_version = Column(String, nullable=False)
+    corpus_identity = Column(String, nullable=False)
+    evidence_refs = Column(JSON, nullable=False, default=list)
+    counterevidence_refs = Column(JSON, nullable=False, default=list)
+    dependencies = Column(JSON, nullable=False, default=list)
+    snapshot_hash = Column(String, nullable=False)
+    created_at = Column(DateTime, default=utc_now_naive)
+
+@event.listens_for(InternalResultSnapshotRecord, "before_update")
+def enforce_internal_snapshot_immutability(_mapper, _connection, snapshot):
+    raise ValueError("InternalResultSnapshotRecord is strictly immutable.")
+
+# --- Tool Reality (Slice H) ---
+class ToolReceipt(Base):
+    __tablename__ = "tool_receipts"
+    id = Column(String, primary_key=True, index=True)
+    research_run_id = Column(String, ForeignKey("research_runs.id"), nullable=False)
+    tool_id = Column(String, nullable=False)
+    trigger = Column(String)
+    actual_execution = Column(Boolean, nullable=False, default=False)
+    execution_status = Column(String) # e.g. SUCCEEDED, FAILED, NOT_EXECUTED
+    source_role = Column(String) # e.g. DISCOVERY, FALSIFICATION
+    output_ref = Column(String)
+    what_it_can_reveal = Column(String)
+    what_it_cannot_prove = Column(String)
+    evidence_effect = Column(String)
+    created_at = Column(DateTime, default=utc_now_naive)
+

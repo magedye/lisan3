@@ -161,17 +161,17 @@ def add_observation(run_id: str, occurrence_id: str) -> str:
 
 def rejection_condition() -> dict[str, str]:
     return {
-        "challenging_finding": "موضع صحيح لا يفسره الحكم",
-        "search_location": "كل مواضع النطاق",
+        "observable_trigger": "موضع صحيح لا يفسره الحكم",
+        "search_space": "كل مواضع النطاق",
         "verification_method": "مقارنة التنبؤ بالدليل المستقل",
-        "confounder_control": "طرح أثر الصيغة والتركيب والسياق",
-        "failure_consequence": "رفض الحكم أو تضييق نطاقه",
+        "confound_controls": "طرح أثر الصيغة والتركيب والسياق",
+        "decision_effect": "REJECT",
     }
 
 
 def preferred_root_payload(evidence_refs, *, strength="STRONG", unresolved=None):
     return {
-        "contract_type": "ROOT_CONCEPT",
+        "contract_type": "ROOT_CORE",
         "research_state": "PREFERRED",
         "claim_scope": "UNIVERSAL",
         "sampling_basis": None,
@@ -179,7 +179,8 @@ def preferred_root_payload(evidence_refs, *, strength="STRONG", unresolved=None)
         "preferred_conclusion": "ترجيح جذري قابل للدحض",
         "root_concept": "مساهمة الجذر المجردة",
         "plain_explanation": "شرح عربي مباشر",
-        "semantic_boundary": "لا يحمل أثر الصيغة أو السياق على الجذر",
+        "semantic_boundary": {"required": ["لا يحمل أثر الصيغة أو السياق على الجذر"]},
+        "distinctive_residue": "أثر مميز للجذر",
         "layer_attribution": {"root": "مساهمة الجذر"},
         "supporting_evidence_refs": evidence_refs,
         "counterevidence_refs": [],
@@ -259,7 +260,9 @@ def test_2_deterministic_counts_are_reproducible():
 
 
 def test_3_structural_uncertainty_is_preserved():
-    profile = RootDescriptiveProfileService.build("س ل م", _slm_tokens(include_disputed=True))
+    profile = RootDescriptiveProfileService.build(
+        "س ل م", _slm_tokens(include_disputed=True)
+    )
     # The disputed attribution is surfaced, not silently counted as a fact.
     assert profile.total_confirmed_occurrences == 4
     assert profile.total_eligible_occurrences == 5
@@ -282,7 +285,7 @@ def test_3_structural_uncertainty_is_preserved():
 # 4-5  Root semantic unity / universal presence.
 # --------------------------------------------------------------------------- #
 def test_4_one_unexplained_occurrence_blocks_accepted_root_wide_concept():
-    run_id = create_run("كتب", "ROOT_CONCEPT")
+    run_id = create_run("كتب", "ROOT_CORE")
     # Word-level coverage: cite all three confirmed StructuralToken word_refs.
     evidence = [f"token:2:{i}:1:1" for i in range(1, 4)]
     # Fully covered UNIVERSAL root concept, but one occurrence stays unexplained.
@@ -311,14 +314,17 @@ def test_4_one_unexplained_occurrence_blocks_accepted_root_wide_concept():
     assert blocked.status_code == 403
     assert "root semantic unity" in blocked.text
     # And it stays non-canonical.
-    assert client.get(f"/judgments/{claim_id}").json()["canonical_state"] == "NOT_CANONICAL"
+    assert (
+        client.get(f"/judgments/{claim_id}").json()["canonical_state"]
+        == "NOT_CANONICAL"
+    )
 
 
 def test_4b_confirmed_counterexample_occurrence_blocks_universal_root_concept():
     # Phase 0B remediation: a confirmed occurrence recorded as counterevidence is
     # an occurrence the concept fails to explain; it must block acceptance and
     # must NOT count toward universal coverage.
-    run_id = create_run("كتب", "ROOT_CONCEPT")
+    run_id = create_run("كتب", "ROOT_CORE")
     supporting = [f"token:2:{i}:1:1" for i in (1, 2)]
     payload = preferred_root_payload(supporting)
     # 2:3:1:1 is a confirmed eligible word occurrence that opposes the concept.
@@ -331,7 +337,7 @@ def test_4b_confirmed_counterexample_occurrence_blocks_universal_root_concept():
 
 
 def test_5_no_majority_threshold_bypasses_universal_presence():
-    run_id = create_run("كتب", "ROOT_CONCEPT")
+    run_id = create_run("كتب", "ROOT_CORE")
     # Majority coverage (2 of 3 eligible occurrences) must still fail a UNIVERSAL claim.
     evidence = [f"token:2:{i}:1:1" for i in range(1, 3)]
     response = client.post(
@@ -344,7 +350,9 @@ def test_5_no_majority_threshold_bypasses_universal_presence():
 
     fields = ResearchJudgmentCreate.model_fields.keys()
     assert not any(
-        token in name for name in fields for token in ("threshold", "percent", "majority")
+        token in name
+        for name in fields
+        for token in ("threshold", "percent", "majority")
     )
 
 
@@ -352,7 +360,7 @@ def test_5_no_majority_threshold_bypasses_universal_presence():
 # 6-7  External source / external hypothesis isolation.
 # --------------------------------------------------------------------------- #
 def test_6_external_source_claim_cannot_become_semantic_authority():
-    run_id = create_run("كتب", "ROOT_CONCEPT")
+    run_id = create_run("كتب", "ROOT_CORE")
     response = client.get(f"/runs/{run_id}/read_semantic_dictionary")
     assert response.status_code == 403
     assert "secret semantic definition" not in response.text
@@ -364,12 +372,12 @@ def test_6_external_source_claim_cannot_become_semantic_authority():
 
 
 def test_7_external_hypothesis_cannot_masquerade_as_blind_internal():
-    run_id = create_run("كتب", "ROOT_CONCEPT")
+    run_id = create_run("كتب", "ROOT_CORE")
 
     def make(origin: str | None):
         payload = {
             "hypothesis_type": "H_JABAL" if origin == "EXTERNAL_CANDIDATE" else "H1",
-            "target_contract": "ROOT_CONCEPT",
+            "target_contract": "ROOT_CORE",
             "scope": "UNIVERSAL",
             "statement": "المعنى المحوري المنقول" if origin else "استقراء داخلي",
             "supporting_evidence_refs": [],
@@ -393,9 +401,12 @@ def test_7_external_hypothesis_cannot_masquerade_as_blind_internal():
 
     # A hypothesis (external or not) has no canonical/acceptance transition and no
     # confidence field: an external candidate can never become project authority.
-    assert "canonicalize" not in str(app.openapi()["paths"].get("/hypotheses/{hyp_id}", {}))
+    assert "canonicalize" not in str(
+        app.openapi()["paths"].get("/hypotheses/{hyp_id}", {})
+    )
     assert not any(
-        key in external.json() for key in ("confidence", "confidence_bonus", "canonical_state")
+        key in external.json()
+        for key in ("confidence", "confidence_bonus", "canonical_state")
     )
     # An illegal origin value is rejected, not coerced to internal.
     bad = client.post(
@@ -403,7 +414,7 @@ def test_7_external_hypothesis_cannot_masquerade_as_blind_internal():
         json={
             "hypothesis_type": "H1",
             "origin": "BLIND_INTERNAL_DISGUISE",
-            "target_contract": "ROOT_CONCEPT",
+            "target_contract": "ROOT_CORE",
             "scope": "UNIVERSAL",
             "statement": "x",
             "supporting_evidence_refs": [],
@@ -418,13 +429,13 @@ def test_7_external_hypothesis_cannot_masquerade_as_blind_internal():
 
 def test_7b_hypothesis_origin_is_write_once():
     # Phase 0B remediation: a persisted external candidate cannot be relabelled.
-    run_id = create_run("كتب", "ROOT_CONCEPT")
+    run_id = create_run("كتب", "ROOT_CORE")
     external = client.post(
         f"/runs/{run_id}/hypotheses",
         json={
             "hypothesis_type": "H_JABAL",
             "origin": "EXTERNAL_CANDIDATE",
-            "target_contract": "ROOT_CONCEPT",
+            "target_contract": "ROOT_CORE",
             "scope": "UNIVERSAL",
             "statement": "external",
             "supporting_evidence_refs": [],
@@ -448,7 +459,7 @@ def test_7c_external_hypothesis_excluded_from_blind_internal_context():
     # internal-induction context (else they masquerade as internal discovery).
     from backend.domain.services.ai_context import AIContextBuilder
 
-    run_id = create_run("كتب", "ROOT_CONCEPT")
+    run_id = create_run("كتب", "ROOT_CORE")
     for origin, statement in (
         ("INDEPENDENT_INTERNAL_DERIVATION", "internal induction"),
         ("EXTERNAL_CANDIDATE", "Jabal central meaning"),
@@ -458,7 +469,7 @@ def test_7c_external_hypothesis_excluded_from_blind_internal_context():
             json={
                 "hypothesis_type": "H1",
                 "origin": origin,
-                "target_contract": "ROOT_CONCEPT",
+                "target_contract": "ROOT_CORE",
                 "scope": "UNIVERSAL",
                 "statement": statement,
                 "supporting_evidence_refs": [],
@@ -528,7 +539,9 @@ def test_9_canonical_preserved_content_is_not_silently_rewritten():
         snapshot = db.get(models.CorpusSnapshot, admission.authorized_snapshot_id)
         assert snapshot is not None
         snapshot.canonical_text_hash = "0" * 64
-        with pytest.raises(ValueError, match="does not match the canonical expected hash"):
+        with pytest.raises(
+            ValueError, match="does not match the canonical expected hash"
+        ):
             db.flush()
         db.rollback()
 

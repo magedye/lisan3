@@ -20,9 +20,7 @@ MODULE = "backend/domain/services/knowledge_graph.py"
 EXPECTED_SELECTED = 32
 REACHABILITY = ("read", 351, "AddNot")
 EQUIVALENT = ("_is_projection_eligible", 58, "ReplaceComparisonOperator_Eq_LtE")
-EXACT_CLEAN_GATE_GUARD = (
-    'if isolation is None or isolation.is_contaminated != "CLEAN":'
-)
+EXACT_CLEAN_GATE_GUARD = 'if isolation is None or isolation.is_contaminated != "CLEAN":'
 
 
 def short_operator(mutation: dict[str, object]) -> str:
@@ -49,16 +47,12 @@ def is_critical(mutation: dict[str, object]) -> bool:
         )
     if definition == "rebuild":
         return line in {150, 151, 154, 155, 158, 163, 193, 204, 215} or (
-            line in {229, 246}
-            and operator == "ReplaceComparisonOperator_Eq_NotEq"
+            line in {229, 246} and operator == "ReplaceComparisonOperator_Eq_NotEq"
         )
     if definition == "_scoped_node_ids":
         return (
             (line in {269, 275, 291} and operator == "ZeroIterationForLoop")
-            or (
-                line in {277, 283}
-                and operator == "ReplaceComparisonOperator_Eq_NotEq"
-            )
+            or (line in {277, 283} and operator == "ReplaceComparisonOperator_Eq_NotEq")
             or (line == 281 and operator == "AddNot")
         )
     if definition == "read":
@@ -68,7 +62,9 @@ def is_critical(mutation: dict[str, object]) -> bool:
     return False
 
 
-def completed(command: list[str], environment: dict[str, str]) -> subprocess.CompletedProcess[str]:
+def completed(
+    command: list[str], environment: dict[str, str]
+) -> subprocess.CompletedProcess[str]:
     return subprocess.run(
         command,
         cwd=ROOT,
@@ -104,9 +100,7 @@ def main() -> int:
 
     with tempfile.TemporaryDirectory(prefix="lisan-r1-critical-") as temporary:
         temporary_path = Path(temporary)
-        environment["HYPOTHESIS_STORAGE_DIRECTORY"] = str(
-            temporary_path / "hypothesis"
-        )
+        environment["HYPOTHESIS_STORAGE_DIRECTORY"] = str(temporary_path / "hypothesis")
         test_arguments = [
             sys.executable,
             "-m",
@@ -147,18 +141,17 @@ def main() -> int:
                 int(mutation["occurrence"]),
             ),
         )
-        if len(selected) != EXPECTED_SELECTED or sum(
-            fingerprint(mutation) == REACHABILITY for mutation in selected
-        ) != 1:
+        if (
+            len(selected) != EXPECTED_SELECTED
+            or sum(fingerprint(mutation) == REACHABILITY for mutation in selected) != 1
+        ):
             print(
                 f"Mutation selection drifted: universe={len(universe)} "
                 f"selected={len(selected)}",
                 file=sys.stderr,
             )
             return 1
-        print(
-            f"MUTATION_UNIVERSE={len(universe)} SELECTED={len(selected)}", flush=True
-        )
+        print(f"MUTATION_UNIVERSE={len(universe)} SELECTED={len(selected)}", flush=True)
 
         test_command = subprocess.list2cmdline(
             [argument.replace("\\", "/") for argument in test_arguments]
@@ -177,7 +170,9 @@ def main() -> int:
                 environment,
             )
             if source.read_bytes() != original_source:
-                print("Cosmic Ray did not restore the production source", file=sys.stderr)
+                print(
+                    "Cosmic Ray did not restore the production source", file=sys.stderr
+                )
                 return 1
             if worker.returncode != 0:
                 print(worker.stdout, worker.stderr, file=sys.stderr)
@@ -191,7 +186,9 @@ def main() -> int:
                 flush=True,
             )
 
-    survivors = [(key, result) for key, result in results if result["test_outcome"] == "survived"]
+    survivors = [
+        (key, result) for key, result in results if result["test_outcome"] == "survived"
+    ]
     equivalent = [
         (key, result)
         for key, result in survivors

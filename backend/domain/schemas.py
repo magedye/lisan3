@@ -2,7 +2,7 @@ from datetime import datetime, timezone
 from enum import Enum
 from typing import Any, Literal
 
-from pydantic import BaseModel, ConfigDict, field_validator
+from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
 from .models import (
     CanonicalState,
@@ -70,11 +70,11 @@ class MethodologyRevisionResponse(BaseSchema):
 
 
 class RejectionCondition(BaseSchema):
-    challenging_finding: str
-    search_location: str
+    observable_trigger: str
+    search_space: str
     verification_method: str
-    confounder_control: str
-    failure_consequence: str
+    confound_controls: str
+    decision_effect: Literal["REJECT", "NARROW_SCOPE", "REOPEN", "BLOCK_STRONG_SUPPORT"]
 
     def model_post_init(self, __context: Any) -> None:
         circular_phrases = [
@@ -82,21 +82,59 @@ class RejectionCondition(BaseSchema):
             "if incorrect",
             "if it fails",
             "reject if false",
+            "proven wrong",
+            "reject if proven wrong",
+            "if disproven",
+            "if not true",
+            "if found wrong",
+            "unless proven true",
+            "tautological",
         ]
-        combined = f"{self.challenging_finding} {self.verification_method}".lower()
+        combined = f"{self.observable_trigger} {self.verification_method}".lower()
         for phrase in circular_phrases:
             if phrase in combined:
                 raise ValueError("Rejection condition cannot be circular.")
 
 
+class SemanticBoundary(BaseSchema):
+    required: list[str] = Field(default_factory=list)
+    permitted: list[str] = Field(default_factory=list)
+    excluded: list[str] = Field(default_factory=list)
+    unknown: list[str] = Field(default_factory=list)
+
+    @model_validator(mode="after")
+    def validate_no_absence_alone_exclusion(self) -> "SemanticBoundary":
+        absence_cues = [
+            "not mentioned",
+            "absent from corpus",
+            "corpus silence",
+            "absence alone",
+            "لم يرد في النص",
+            "لم يذكر",
+            "عدم الورود بمفرده",
+            "لم يرد",
+        ]
+        for item in self.excluded:
+            lower_item = item.lower()
+            if any(cue in lower_item for cue in absence_cues):
+                raise ValueError(
+                    f"Methodological Invariant Violated: Absence alone must not create an EXCLUDED boundary: {item}"
+                )
+        return self
+
+
 # --- Research Judgment Schemas ---
 class ResearchJudgmentCreate(BaseSchema):
     contract_type: Literal[
-        "ROOT_CONCEPT",
+        "ROOT_CORE",
         "LEXEME",
+        "FORM",
+        "CONSTRUCTION",
         "LOCAL_MEANING",
-        "VERSE_MEANING",
-        "SEMANTIC_DIFFERENCE",
+        "VERSE",
+        "CONCEPT",
+        "COMPARISON",
+        "PRACTICE",
     ]
     research_state: ResearchState
     claim_scope: ClaimScope
@@ -105,9 +143,12 @@ class ResearchJudgmentCreate(BaseSchema):
     preferred_conclusion: str | None = None
     root_concept: str | None = None
     plain_explanation: str | None = None
-    semantic_boundary: str | None = None
+    semantic_boundary: dict | None = None
+    distinctive_residue: str | None = None
     layer_attribution: dict[str, str] = {}
     supporting_evidence_refs: list[str] = []
+    illustrative_verses: list[str] = []
+    decisive_contexts: list[str] = []
     counterevidence_refs: list[str] = []
     unresolved_cases: list[str] = []
     hard_cases: list[str] = []
@@ -116,6 +157,13 @@ class ResearchJudgmentCreate(BaseSchema):
     rejection_condition: RejectionCondition | None = None
     falsification_status: FalsificationStatus = FalsificationStatus.NOT_REQUIRED
     reopen_conditions: list[str] = []
+
+    @field_validator("semantic_boundary", mode="before")
+    @classmethod
+    def validate_boundary(cls, v):
+        if isinstance(v, dict):
+            SemanticBoundary.model_validate(v)
+        return v
 
     model_config = ConfigDict(extra="forbid")
 
@@ -136,13 +184,16 @@ class SemanticClaimResponse(BaseSchema):
     preferred_conclusion: str | None = None
     root_concept: str | None = None
     plain_explanation: str | None = None
-    semantic_boundary: str | None = None
+    semantic_boundary: dict | None = None
+    distinctive_residue: str | None = None
     layer_attribution: dict[str, str]
     rejection_condition: RejectionCondition | None = None
-    supporting_evidence: list[str]
-    counterevidence: list[str]
-    unresolved_cases: list[str]
-    hard_cases: list[str]
+    supporting_evidence: list[str] = []
+    illustrative_verses: list[str] = []
+    decisive_contexts: list[str] = []
+    counterevidence: list[str] = []
+    unresolved_cases: list[str] = []
+    hard_cases: list[str] = []
     strongest_counterexample: str | None = None
     strongest_competitor: str | None = None
     reopen_conditions: list[str]
@@ -150,6 +201,54 @@ class SemanticClaimResponse(BaseSchema):
     created_at: datetime
 
     model_config = ConfigDict(from_attributes=True)
+
+
+class ClaimRevisionResponse(BaseSchema):
+    id: str
+    claim_id: str
+    revision_number: int
+    predecessor_revision_id: str | None = None
+    correction_reason: str | None = None
+    payload: dict
+    semantic_payload_hash: str
+    creation_actor: str
+    created_at: datetime
+    frozen_at: datetime | None = None
+    superseded: bool
+
+    model_config = ConfigDict(from_attributes=True)
+
+
+class ClaimRevisionItem(BaseSchema):
+    revision_id: int
+    research_state: str
+    canonical_state: str
+    result_strength: str
+    verification_state: str
+    falsification_status: str
+    correction_reason: str | None = None
+    predecessor_revision_id: str | None = None
+    semantic_payload_hash: str
+    frozen_at: datetime | None = None
+    superseded: bool
+    created_at: datetime
+    creation_actor: str
+
+    model_config = ConfigDict(from_attributes=True)
+
+
+
+class ClaimAmendmentRequest(BaseSchema):
+    correction_reason: str
+    preferred_conclusion: str | None = None
+    root_concept: str | None = None
+    plain_explanation: str | None = None
+    semantic_boundary: str | None = None
+    layer_attribution: dict[str, str] | None = None
+    supporting_evidence: list[str] | None = None
+    counterevidence: list[str] | None = None
+    unresolved_cases: list[str] | None = None
+    hard_cases: list[str] | None = None
 
 
 class VerificationRecordCreate(BaseSchema):
@@ -166,6 +265,30 @@ class VerificationRecordResponse(VerificationRecordCreate):
     verifier_identity: str
     evaluated_claim_revision: int
     created_at: datetime
+    model_config = ConfigDict(from_attributes=True)
+
+
+class IndependentReviewCreate(BaseSchema):
+    verdict: Literal["VERIFIED", "REJECTED"]
+    scope_disposition: str
+    evidence_package_ref: str
+    independence_metadata: dict
+    model_config = ConfigDict(extra="forbid")
+
+
+class IndependentReviewResponse(BaseSchema):
+    id: str
+    claim_id: str
+    revision_id: int
+    reviewer_identity: str
+    review_status: str
+    verdict: str | None = None
+    scope_disposition: str | None = None
+    evidence_package_ref: str | None = None
+    independence_metadata: dict | None = None
+    superseded_by: str | None = None
+    created_at: datetime
+    completed_at: datetime | None = None
 
     model_config = ConfigDict(from_attributes=True)
 
@@ -255,9 +378,9 @@ class HypothesisBase(BaseSchema):
     # Defaults to internal derivation; an external candidate (e.g. Jabal's central
     # meaning) must declare itself so it cannot masquerade as blind internal
     # discovery. External origin grants no confidence bonus and is never canonical.
-    origin: Literal[
-        "INDEPENDENT_INTERNAL_DERIVATION", "EXTERNAL_CANDIDATE"
-    ] = "INDEPENDENT_INTERNAL_DERIVATION"
+    origin: Literal["INDEPENDENT_INTERNAL_DERIVATION", "EXTERNAL_CANDIDATE"] = (
+        "INDEPENDENT_INTERNAL_DERIVATION"
+    )
     target_contract: str
     scope: str
     statement: str
@@ -281,14 +404,37 @@ class HypothesisResponse(HypothesisBase):
 
 
 class EssentialNeighborBase(BaseSchema):
-    shared_domain: str
-    positive_distinguishing_candidate: str
-    relevant_differentiation_axes: list[str]
-    substitution_probe: str
-    boundary_negative_cases: list[str]
-    supporting_evidence: list[str]
-    counterevidence: list[str]
-    unresolved_distinction: str
+    shared_domain: str | None = None
+    shared_features: list[str] = Field(default_factory=list)
+    distinctive_difference: str | None = None
+    layer_of_difference: str | None = None
+    discriminating_evidence: list[str] = Field(default_factory=list)
+    counterevidence: list[str] = Field(default_factory=list)
+    status: str | None = None
+
+    # Legacy compatibility fields (zero information loss)
+    positive_distinguishing_candidate: str | None = None
+    relevant_differentiation_axes: list[str] | dict | None = None
+    substitution_probe: str | None = None
+    boundary_negative_cases: list[str] = Field(default_factory=list)
+    supporting_evidence: list[str] = Field(default_factory=list)
+    unresolved_distinction: str | None = None
+
+    @model_validator(mode="after")
+    def reconcile_compatibility(self) -> "EssentialNeighborBase":
+        if self.positive_distinguishing_candidate and not self.distinctive_difference:
+            self.distinctive_difference = self.positive_distinguishing_candidate
+        elif self.distinctive_difference and not self.positive_distinguishing_candidate:
+            self.positive_distinguishing_candidate = self.distinctive_difference
+
+        if self.supporting_evidence and not self.discriminating_evidence:
+            self.discriminating_evidence = list(self.supporting_evidence)
+        elif self.discriminating_evidence and not self.supporting_evidence:
+            self.supporting_evidence = list(self.discriminating_evidence)
+
+        if self.unresolved_distinction and not self.status:
+            self.status = "UNRESOLVED"
+        return self
 
 
 class EssentialNeighborCreate(EssentialNeighborBase):
@@ -348,12 +494,109 @@ class HypothesisProposal(BaseSchema):
 
 
 class EssentialNeighborProposal(BaseSchema):
-    shared_domain: str
-    positive_distinguishing_candidate: str
-    relevant_differentiation_axes: list[str]
-    substitution_probe: str
-    boundary_negative_cases: list[str]
-    unresolved_distinction: str
+    shared_domain: str | None = None
+    shared_features: list[str] = Field(default_factory=list)
+    distinctive_difference: str | None = None
+    layer_of_difference: str | None = None
+    discriminating_evidence: list[str] = Field(default_factory=list)
+    counterevidence: list[str] = Field(default_factory=list)
+    status: str | None = None
+    positive_distinguishing_candidate: str | None = None
+    relevant_differentiation_axes: list[str] | dict | None = None
+    substitution_probe: str | None = None
+    boundary_negative_cases: list[str] = Field(default_factory=list)
+    supporting_evidence: list[str] = Field(default_factory=list)
+    unresolved_distinction: str | None = None
+
+
+# --- Semantic Memory ---
+class SemanticMemoryBase(BaseSchema):
+    target_type: Literal[
+        "ROOT",
+        "LEXEME",
+        "FORM",
+        "CONSTRUCTION",
+        "LOCAL_MEANING",
+        "VERSE",
+        "CONCEPT",
+        "COMPARISON",
+        "PRACTICE",
+    ]
+    target_expression: str
+    reliability: Literal["TRUSTED", "PROVISIONAL", "DISPUTED", "RETIRED"] = (
+        "PROVISIONAL"
+    )
+    scope: Literal["UNIVERSAL", "REPRESENTATIVE", "LOCAL"]
+    conflict_state: Literal["NO_CONFLICT", "OPEN_CONFLICT", "RESOLVED_CONFLICT"] = (
+        "NO_CONFLICT"
+    )
+    lifecycle: Literal["ACTIVE", "REOPENED", "SUPERSEDED", "REJECTED"] = "ACTIVE"
+    result_strength: str = "UNRESOLVED"
+    research_completeness: str = "PARTIAL"
+    independent_verification: str = "UNVERIFIED"
+    evidence_refs: list[str] = Field(default_factory=list)
+    counterevidence_refs: list[str] = Field(default_factory=list)
+    dependencies: list[str] = Field(default_factory=list)
+    reopen_if: list[str] = Field(default_factory=list)
+    parent_revision: str | None = None
+    revision_reason: str | None = None
+
+
+class SemanticMemoryCreate(SemanticMemoryBase):
+    claim_id: str
+
+
+class SemanticMemoryReopenRequest(BaseSchema):
+    new_evidence_refs: list[str] = Field(default_factory=list)
+    counterevidence_refs: list[str] = Field(default_factory=list)
+    revision_reason: str
+
+
+class SemanticMemoryResponse(SemanticMemoryBase):
+    id: str
+    claim_id: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+
+# --- Derived Cards and Determinism (C04/A15) ---
+class DerivedCardBase(BaseSchema):
+    card_type: Literal["ROOT_CARD", "TERM_CARD", "VERSE_CARD", "COMPARISON_CARD"]
+    target_expression: str
+    card_strength: str
+    display_level: Literal["CORE", "TECHNICAL", "COMPARATIVE"] = "CORE"
+    upstream_ids: list[str] = Field(default_factory=list)
+    upstream_revisions: dict[str, int] = Field(default_factory=dict)
+    derivation_version: str = "C04_v1.1"
+    upstream_hashes: dict[str, str] = Field(default_factory=dict)
+    counterevidence_summary: list[str] = Field(default_factory=list)
+    unresolved_summary: list[str] = Field(default_factory=list)
+    created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+
+
+class DerivedRootCard(DerivedCardBase):
+    card_type: Literal["ROOT_CARD"] = "ROOT_CARD"  # type: ignore
+    root_axial_meaning: str | None = None  # A15-R11: null if not qualified
+    root_core_status: str
+    distinctive_residue: str | None = None
+    semantic_boundary: dict | None = None
+    illustrative_verses: list[str] = Field(default_factory=list)
+    decisive_contexts: list[str] = Field(default_factory=list)
+
+
+class InternalResultSnapshot(BaseSchema):
+    snapshot_id: str
+    claim_id: str
+    claim_statement: str
+    evidence_refs: list[str]
+    counterevidence_refs: list[str]
+    dependencies: list[str]
+    corpus_identity: str
+    methodology_version: str
+    snapshot_hash: str
+    frozen_at: datetime
 
 
 # --- Governance (Slice E) ---
@@ -522,18 +765,6 @@ class ErrorResponse(BaseSchema):
     status: str
     message: str
     details: dict | None = None
-
-    model_config = ConfigDict(from_attributes=True)
-
-
-class ClaimRevisionItem(BaseSchema):
-    revision_id: int
-    research_state: ResearchState
-    canonical_state: CanonicalState
-    result_strength: ResultStrength
-    verification_state: VerificationState
-    falsification_status: FalsificationStatus
-    created_at: datetime
 
     model_config = ConfigDict(from_attributes=True)
 

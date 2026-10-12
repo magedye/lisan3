@@ -6,11 +6,12 @@ from dataclasses import dataclass, field
 from sqlalchemy.orm import Session
 
 from backend.domain import models, schemas
+from backend.domain.services.actor_context import ActorContext, ActorRole
 from backend.domain.services.research_coverage import confirmed_word_refs
 
 # Contract types whose governed occurrence unit is the word-level root occurrence
 # (StructuralToken word_ref), not the verse/lexeme-level CorpusOccurrence.
-WORD_LEVEL_CONTRACTS = frozenset({"ROOT_CONCEPT"})
+WORD_LEVEL_CONTRACTS = frozenset({"ROOT_CORE"})
 
 
 def _has_semantic_observation_content(
@@ -117,7 +118,9 @@ def resolve_evidence_refs(
         if kind == "occurrence":
             item = db.get(models.CorpusOccurrence, entity_id)
             if item is None or item.snapshot_id != run.corpus_snapshot:
-                reasons.append(f"Evidence reference '{ref}' is absent or outside the run corpus")
+                reasons.append(
+                    f"Evidence reference '{ref}' is absent or outside the run corpus"
+                )
             else:
                 occurrence_ids.add(str(item.id))
         elif kind == "token":
@@ -133,13 +136,18 @@ def resolve_evidence_refs(
                 reasons.append(f"Evidence reference '{ref}' is absent or cross-run")
             else:
                 occurrence = db.get(models.CorpusOccurrence, item.occurrence_ref)
-                if occurrence is not None and occurrence.snapshot_id == run.corpus_snapshot:
+                if (
+                    occurrence is not None
+                    and occurrence.snapshot_id == run.corpus_snapshot
+                ):
                     occurrence_ids.add(str(occurrence.id))
                 elif str(item.occurrence_ref) in confirmed():
                     # A word-level observation references a confirmed token word_ref.
                     token_word_refs.add(str(item.occurrence_ref))
                 else:
-                    reasons.append(f"Observation evidence '{ref}' has invalid occurrence lineage")
+                    reasons.append(
+                        f"Observation evidence '{ref}' has invalid occurrence lineage"
+                    )
         elif kind == "hypothesis":
             item = db.get(models.Hypothesis, entity_id)
             if item is None or item.research_run_id != run.id:
@@ -147,7 +155,11 @@ def resolve_evidence_refs(
         elif kind == "neighbor":
             item = db.get(models.EssentialNeighbor, entity_id)
             hypothesis = db.get(models.Hypothesis, item.hypothesis_id) if item else None
-            if item is None or hypothesis is None or hypothesis.research_run_id != run.id:
+            if (
+                item is None
+                or hypothesis is None
+                or hypothesis.research_run_id != run.id
+            ):
                 reasons.append(f"Evidence reference '{ref}' is absent or cross-run")
         else:
             reasons.append(f"Evidence reference type '{kind}' is not admissible")
@@ -254,7 +266,10 @@ def derive_completeness(
 def _required_layers(contract_type: str) -> set[str]:
     return {
         "ROOT_CONCEPT": {"root"},
+        "ROOT_CORE": {"root"},
         "LEXEME": {"root", "lexeme"},
+        "FORM": {"root", "lexeme", "form"},
+        "CONSTRUCTION": {"root", "lexeme", "form", "construction"},
         "LOCAL_MEANING": {
             "root",
             "lexeme",
@@ -263,17 +278,21 @@ def _required_layers(contract_type: str) -> set[str]:
             "context",
             "local_meaning",
         },
+        "VERSE": {"construction", "context", "final_statement"},
         "VERSE_MEANING": {"construction", "context", "final_statement"},
+        "CONCEPT": {"root", "concept"},
+        "COMPARISON": {"lexeme", "semantic_boundary"},
         "SEMANTIC_DIFFERENCE": {"lexeme", "semantic_boundary"},
-    }[contract_type]
+        "PRACTICE": {"context", "practice"},
+    }.get(contract_type, set())
 
 
 def evaluate_judgment(
     db: Session, run: models.ResearchRun, judgment: schemas.ResearchJudgmentCreate
 ) -> JudgmentDecision:
-    refs = list(dict.fromkeys(
-        judgment.supporting_evidence_refs + judgment.counterevidence_refs
-    ))
+    refs = list(
+        dict.fromkeys(judgment.supporting_evidence_refs + judgment.counterevidence_refs)
+    )
     evidence = resolve_evidence_refs(db, run, refs)
     # Coverage is derived from SUPPORTING evidence only. A counterevidence
     # occurrence is an occurrence the concept fails to explain; it must never
@@ -307,7 +326,9 @@ def evaluate_judgment(
         if not completeness["sufficient_for_claim"]:
             reasons.append("Host-derived coverage is insufficient for the claim scope")
         if judgment.rejection_condition is None:
-            reasons.append("A preferred judgment requires a structured rejection condition")
+            reasons.append(
+                "A preferred judgment requires a structured rejection condition"
+            )
         if judgment.falsification_status != models.FalsificationStatus.PASSED:
             reasons.append("A preferred judgment requires passed falsification")
         if not judgment.strongest_competitor:
@@ -321,6 +342,52 @@ def evaluate_judgment(
                 "Missing material semantic layer attribution: "
                 + ", ".join(sorted(missing_layers))
             )
+    if run.target_contract and run.target_contract == "LOCAL_MEANING" and judgment.contract_type in (
+        "ROOT_CORE",
+        "ROOT_CONCEPT",
+    ):
+        reasons.append(
+            f"Target contract mismatch: Run target_contract '{run.target_contract}' cannot produce '{judgment.contract_type}' judgment without explicit declaration"
+        )
+
+    if (
+        judgment.contract_type in ("ROOT_CORE", "ROOT_CONCEPT")
+        and judgment.result_strength == models.ResultStrength.STRONG
+        and (not judgment.distinctive_residue or not judgment.distinctive_residue.strip())
+    ):
+        reasons.append(
+            "A strong root judgment requires distinctive residue against neighboring roots (cannot be generic)"
+        )
+
+    # Check for unresolved essential neighbors in this run
+    unresolved_nbrs = (
+        db.query(models.EssentialNeighbor)
+        .join(
+            models.Hypothesis,
+            models.EssentialNeighbor.hypothesis_id == models.Hypothesis.id,
+        )
+        .filter(
+            models.Hypothesis.research_run_id == run.id,
+            (models.EssentialNeighbor.status == "UNRESOLVED")
+            | (models.EssentialNeighbor.unresolved_distinction.isnot(None)),
+        )
+        .all()
+    )
+    if unresolved_nbrs and judgment.result_strength == models.ResultStrength.STRONG:
+        reasons.append(
+            "Unresolved essential neighbor blocks full distinctiveness (cannot claim STRONG support)"
+        )
+
+    if (
+        judgment.decisive_contexts 
+        and judgment.illustrative_verses
+        and set(judgment.decisive_contexts) == set(judgment.illustrative_verses)
+        and len(judgment.decisive_contexts) > 0
+    ):
+        reasons.append(
+            "Epistemic role confusion: decisive_contexts (falsification role) cannot be identical to illustrative_verses (presentation role)"
+        )
+
     if judgment.research_state == models.ResearchState.UNRESOLVED:
         if judgment.result_strength != models.ResultStrength.UNRESOLVED:
             reasons.append("UNRESOLVED research state requires UNRESOLVED strength")
@@ -336,8 +403,17 @@ class ResearchJudgmentService:
         run: models.ResearchRun,
         judgment: schemas.ResearchJudgmentCreate,
         *,
-        actor: str,
+        actor_context: ActorContext | None = None,
+        actor: str | None = None,
     ) -> models.SemanticClaim:
+        if actor_context:
+            ActorContext.require_role(actor_context, ActorRole.RESEARCHER)
+            resolved_actor = actor_context.identity
+        elif actor:
+            resolved_actor = actor
+        else:
+            raise ValueError("Actor must be provided")
+
         decision = evaluate_judgment(db, run, judgment)
         if not decision.accepted:
             raise ValueError("; ".join(decision.reasons))
@@ -357,6 +433,9 @@ class ResearchJudgmentService:
             root_concept=judgment.root_concept,
             plain_explanation=judgment.plain_explanation,
             semantic_boundary=judgment.semantic_boundary,
+            distinctive_residue=judgment.distinctive_residue,
+            illustrative_verses=judgment.illustrative_verses,
+            decisive_contexts=judgment.decisive_contexts,
             layer_attribution=judgment.layer_attribution,
             rejection_condition=(
                 judgment.rejection_condition.model_dump()
@@ -381,9 +460,11 @@ class ResearchJudgmentService:
                 dependency_ref=run.corpus_snapshot,
             )
         )
-        for ref in list(dict.fromkeys(
-            judgment.supporting_evidence_refs + judgment.counterevidence_refs
-        )):
+        for ref in list(
+            dict.fromkeys(
+                judgment.supporting_evidence_refs + judgment.counterevidence_refs
+            )
+        ):
             db.add(
                 models.DependencyRecord(
                     id=f"dep_{uuid.uuid4().hex[:8]}",
@@ -400,11 +481,32 @@ class ResearchJudgmentService:
                 action="CREATE_RESEARCH_JUDGMENT",
                 previous_state=None,
                 new_state=claim.research_state,
-                actor=actor,
+                actor=resolved_actor,
             )
         )
         run.current_stage = models.ResearchStage.JUDGMENT.value
         run.status = "ACTIVE"
+        
+        required_tools = getattr(judgment, 'falsification_plan', {}).get("required_tools", []) if hasattr(judgment, 'falsification_plan') and judgment.falsification_plan else []
+        if required_tools:
+            from backend.domain.services.tool_reality import ToolRealityService
+            ToolRealityService.validate_tool_reality_for_claim(db, run.id, required_tools)
+
+        
+        # Internal Lock: Create Immutable Snapshot before external visibility
+        from backend.domain.services.internal_snapshot import InternalSnapshotService
+        snapshot_obj = db.get(models.CorpusSnapshot, run.corpus_snapshot) if hasattr(models, 'CorpusSnapshot') else None
+        methodology_obj = db.get(models.MethodologyRevision, run.methodology_revision) if hasattr(models, 'MethodologyRevision') else None
+        
+        c_id = getattr(snapshot_obj, 'corpus_identity', run.corpus_snapshot) if snapshot_obj else run.corpus_snapshot
+        m_id = getattr(methodology_obj, 'revision', run.methodology_revision) if methodology_obj else run.methodology_revision
+        
+        InternalSnapshotService.create_snapshot(
+            db, claim, 
+            corpus_identity=c_id, 
+            methodology_version=m_id
+        )
+
         db.commit()
         db.refresh(claim)
         return claim

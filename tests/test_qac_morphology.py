@@ -27,7 +27,9 @@ AUTHORED = Path("data/fixtures/qac/authored_sample.tsv")
 QAC_PRESENT = DEFAULT_QAC_ARTIFACT.exists()
 
 engine = create_engine(
-    "sqlite:///:memory:", connect_args={"check_same_thread": False}, poolclass=StaticPool
+    "sqlite:///:memory:",
+    connect_args={"check_same_thread": False},
+    poolclass=StaticPool,
 )
 SessionLocal = sessionmaker(bind=engine)
 Base.metadata.create_all(engine)
@@ -69,7 +71,9 @@ def test_parse_rejects_malformed_location():
         parse_segments(bad)
 
 
-@pytest.mark.skipif(not QAC_PRESENT, reason="local QAC artifact not present (acquire-per-install)")
+@pytest.mark.skipif(
+    not QAC_PRESENT, reason="local QAC artifact not present (acquire-per-install)"
+)
 def test_real_qac_import_builds_qualified_root_universe():
     from backend.domain.services.corpus.importer import TanzilPreActivationImporter
     from backend.domain.services.corpus.root_universe import RootUniverseService
@@ -83,25 +87,28 @@ def test_real_qac_import_builds_qualified_root_universe():
     snap = res.snapshot.id
 
     qac = QacMorphologyImporter.import_tokens(db, snap)
-    assert qac.source_sha256 == QAC_EXPECTED_SHA256          # byte-preserved (q2)
-    assert qac.segments_total == 128219                       # deterministic (q7)
+    assert qac.source_sha256 == QAC_EXPECTED_SHA256  # byte-preserved (q2)
+    assert qac.segments_total == 128219  # deterministic (q7)
     assert qac.root_bearing_segments == 49968
-    assert qac.distinct_roots == 1642                         # root inventory (q6)
+    assert qac.distinct_roots == 1642  # root inventory (q6)
     assert qac.tokens_persisted == 49968
-    assert qac.reconciliation["verse_sets_equal"] is True     # canonical mapping (q5)
+    assert qac.reconciliation["verse_sets_equal"] is True  # canonical mapping (q5)
     assert qac.reconciliation["unmatched_qac_verses"] == []
 
     universe = RootUniverseService.derive(db, snap)
     assert len(universe) == 1642
     total = sum(e.confirmed_occurrences for e in universe)
-    assert total == 49968                                     # counts deterministic
+    assert total == 49968  # counts deterministic
     # Reproducible across a fresh session.
     with SessionLocal() as other:
         universe2 = RootUniverseService.derive(other, snap)
     assert [e.as_dict() for e in universe] == [e.as_dict() for e in universe2]
 
     # Tanzil text authority preserved (q4): QAC did not replace any verse text.
-    verse = db.query(models.CorpusOccurrence).filter_by(
-        snapshot_id=snap, verse_ref="1:1").one()
+    verse = (
+        db.query(models.CorpusOccurrence)
+        .filter_by(snapshot_id=snap, verse_ref="1:1")
+        .one()
+    )
     assert "بِسْمِ" in verse.text or verse.text  # real Tanzil text present
     db.close()

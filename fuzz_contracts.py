@@ -1,23 +1,22 @@
-import sys
+import pytest
+import schemathesis
+from hypothesis import settings
 
-from schemathesis.cli import execute
+from backend.main import app
 
+# Load schema from ASGI app
+schema = schemathesis.openapi.from_asgi("/openapi.json", app)
+# Apply the Slice G filter
+schema = schema.include(path_regex="^/governance/.*|^/claims/.*/publish")
 
-def run_fuzzer():
-    # Execute schemathesis on our FastAPI application via its OpenAPI spec
-    # We use ASGI directly instead of starting a live server to be faster and simpler in CI
-    print("Running API contract fuzzing on Lisanapp backend...")
-    
-    args = [
-        "run", 
-        "--app", "backend.main:app", 
-        "/openapi.json", 
-        "--checks", "not_a_server_error",
-        "--hypothesis-max-examples", "10", 
-        "--endpoints", "^/governance/.*|^/claims/.*/publish" 
-    ]
-    
-    sys.exit(execute(args))
+@schema.parametrize()
+@settings(max_examples=10)
+def test_api(case):
+    response = case.call()
+    case.validate_response(response, checks=(schemathesis.checks.not_a_server_error,))
 
 if __name__ == "__main__":
-    run_fuzzer()
+    import sys
+
+    import pytest
+    sys.exit(pytest.main(["-v", __file__]))

@@ -3,7 +3,7 @@ from playwright.sync_api import Page, expect
 from backend.domain import models
 
 
-def test_journey_4_governance_review(page: Page, e2e_server: dict, monkeypatch):
+def test_journey_4_governance_review(page: Page, e2e_server: dict):
     """
     Journey 4: Governance Rule Change, Impact Analysis, & Transitive Invalidation
     - Rule/Proposal -> impact -> approved revision -> affected claim becomes REVALIDATION_REQUIRED -> unrelated claim unchanged.
@@ -26,7 +26,7 @@ def test_journey_4_governance_review(page: Page, e2e_server: dict, monkeypatch):
             id="run_gov_review",
             target_contract="ROOT_CORE",
             target_expression="governance",
-            methodology_revision="method-e2e-fixture",
+            methodology_revision="method-e2e-j4",
             corpus_snapshot="snapshot-e2e-fixture",
             authority_context={"source": "e2e"},
         )
@@ -46,19 +46,17 @@ def test_journey_4_governance_review(page: Page, e2e_server: dict, monkeypatch):
             id="clm_gov_dep",
             research_run_id=run.id,
             contract_type="ROOT_CORE",
-            epistemic_state="LOCK_INTERNAL_RESULT",
-            review_state="NOT_REVIEWED",
-            freshness_state="CURRENT",
-            publication_state="PRIVATE_WORKING",
+            research_state="PREFERRED",
+            canonical_state="ACCEPTED",
+            verification_state="VERIFIED",
         )
         claim_unrelated = models.SemanticClaim(
             id="clm_gov_unrelated",
             research_run_id=run.id,
             contract_type="ROOT_CORE",
-            epistemic_state="LOCK_INTERNAL_RESULT",
-            review_state="NOT_REVIEWED",
-            freshness_state="CURRENT",
-            publication_state="PRIVATE_WORKING",
+            research_state="PREFERRED",
+            canonical_state="ACCEPTED",
+            verification_state="VERIFIED",
         )
         db.add_all([claim_dep, claim_unrelated])
 
@@ -74,42 +72,47 @@ def test_journey_4_governance_review(page: Page, e2e_server: dict, monkeypatch):
     finally:
         db.close()
 
-    monkeypatch.setattr(
-        "backend.domain.services.claim_visibility.has_valid_gate", lambda *_args: True
-    )
-
     # 2. Submit a ChangeProposal
     page.goto(f"{base_url}/governance")
     expect(page.locator("h1")).to_contain_text("Governance Center")
-    
+
     page.fill("#proposal-rule-code", "RULE_E2E_ROOT")
-    page.fill("#proposed-changes", "Introduce strict non-circularity constraint in rejection conditions.")
+    page.fill(
+        "#proposed-changes",
+        "Introduce strict non-circularity constraint in rejection conditions.",
+    )
     page.click("button:has-text('Submit Proposal')")
 
     # 3. Approve ChangeProposal
-    expect(
-        page.get_by_role("status").filter(has_text="Proposal ID:")
-    ).to_be_visible(timeout=10000)
+    expect(page.get_by_role("status").filter(has_text="Proposal ID:")).to_be_visible(
+        timeout=10000
+    )
     page.click("button:has-text('Approve Proposal')")
     with page.expect_response(
-        lambda response: response.request.method == "POST"
-        and "/governance/proposals/" in response.url
-        and response.url.endswith("/approve")
+        lambda response: (
+            response.request.method == "POST"
+            and "/governance/proposals/" in response.url
+            and response.url.endswith("/approve")
+        )
     ) as approval_response:
         page.get_by_role("button", name="تأكيد الاعتماد").click()
     assert approval_response.value.status == 200
 
     # 4. Verify Rule History shows active revision 2
     page.click("button:has-text('Check History')")
-    expect(page.locator("#active-revision")).to_contain_text("Revision: 2", timeout=10000)
+    expect(page.locator("#active-revision")).to_contain_text(
+        "Revision: 2", timeout=10000
+    )
     expect(page.locator("#revisions-count")).to_contain_text("Revisions: ")
 
-    # 5. Verify Dependent Claim became REVALIDATION_REQUIRED and Unrelated remained CURRENT
+    # 5. Verify Dependent Claim became REOPEN_REQUIRED and Unrelated remained ACCEPTED
     # (Since there is no UI for knowledge explorer yet, we fall back to API for this assertion)
     kn_dep = page.request.get(f"{e2e_server['api_url']}/knowledge/explorer/clm_gov_dep")
     assert kn_dep.status == 200
-    assert kn_dep.json()["freshness_state"] == "REVALIDATION_REQUIRED"
+    assert kn_dep.json()["canonical_state"] == "REOPEN_REQUIRED"
 
-    kn_unrelated = page.request.get(f"{e2e_server['api_url']}/knowledge/explorer/clm_gov_unrelated")
+    kn_unrelated = page.request.get(
+        f"{e2e_server['api_url']}/knowledge/explorer/clm_gov_unrelated"
+    )
     assert kn_unrelated.status == 200
-    assert kn_unrelated.json()["freshness_state"] == "CURRENT"
+    assert kn_unrelated.json()["canonical_state"] == "ACCEPTED"

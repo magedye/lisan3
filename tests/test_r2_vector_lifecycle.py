@@ -24,24 +24,24 @@ def create_session():
 
 def add_run(db, run_id: str, *, contamination: str = "CLEAN", judgment: bool = True):
     records = [
-            models.ResearchRun(
-                id=run_id,
-                target_contract="ROOT_CORE",
-                target_expression="synthetic",
-                methodology_revision="fixture-method",
-                corpus_snapshot=f"fixture-snapshot-{run_id}",
-                authority_context={"mode": "SYNTHETIC_EVALUATION"},
-            ),
-            models.IsolationState(
-                id=f"isolation-{run_id}",
-                research_run_id=run_id,
-                target_contract="ROOT_CORE",
-                corpus_snapshot=f"fixture-snapshot-{run_id}",
-                methodology_reference="fixture-method",
-                allowed_sources=["SYNTHETIC_EVALUATION"],
-                is_contaminated=contamination,
-            ),
-        ]
+        models.ResearchRun(
+            id=run_id,
+            target_contract="ROOT_CORE",
+            target_expression="synthetic",
+            methodology_revision="fixture-method",
+            corpus_snapshot=f"fixture-snapshot-{run_id}",
+            authority_context={"mode": "SYNTHETIC_EVALUATION"},
+        ),
+        models.IsolationState(
+            id=f"isolation-{run_id}",
+            research_run_id=run_id,
+            target_contract="ROOT_CORE",
+            corpus_snapshot=f"fixture-snapshot-{run_id}",
+            methodology_reference="fixture-method",
+            allowed_sources=["SYNTHETIC_EVALUATION"],
+            is_contaminated=contamination,
+        ),
+    ]
     if judgment:
         records.append(
             models.SemanticClaim(
@@ -342,7 +342,8 @@ def test_prelock_access_is_blocked_without_marking_contamination():
     add_run(db, "run-prelock", judgment=False)
     try:
         with pytest.raises(
-            vector_discovery.VectorAccessForbidden, match="after an internal Research Judgment"
+            vector_discovery.VectorAccessForbidden,
+            match="after an internal Research Judgment",
         ):
             vector_discovery.VectorDiscoveryService.rebuild_evaluation(
                 db,

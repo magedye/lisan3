@@ -20,6 +20,7 @@ Research progress and canonicalization progress remain independent
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+from typing import cast
 
 from sqlalchemy.orm import Session
 
@@ -36,11 +37,7 @@ COMPLETENESS_PENDING = "PENDING_COVERAGE_EVIDENCE"
 
 
 def confirmed_word_refs(db: Session, snapshot_id: str, root: str) -> list[str]:
-    """Single source of truth for a root's confirmed occurrence identity.
-
-    Mirrors RootDescriptiveProfileService: latest extraction version only, and
-    only CONFIRMED attributions. Ordered deterministically by word_ref.
-    """
+    """Confirmed StructuralToken word_refs for root in snapshot (latest extraction)."""
     rows = (
         db.query(models.StructuralToken)
         .filter(
@@ -54,14 +51,16 @@ def confirmed_word_refs(db: Session, snapshot_id: str, root: str) -> list[str]:
         return []
     latest = max(r.extraction_version for r in rows)
     return [
-        r.word_ref
+        cast(str, r.word_ref)
         for r in rows
         if r.extraction_version == latest
         and r.attribution_status == models.StructuralAttributionStatus.CONFIRMED.value
     ]
 
 
-def non_confirmed_word_refs(db: Session, snapshot_id: str, root: str) -> dict[str, list[str]]:
+def non_confirmed_word_refs(
+    db: Session, snapshot_id: str, root: str
+) -> dict[str, list[str]]:
     """Disputed/unresolved structural membership, kept separately visible."""
     rows = (
         db.query(models.StructuralToken)
@@ -80,9 +79,11 @@ def non_confirmed_word_refs(db: Session, snapshot_id: str, root: str) -> dict[st
         if r.extraction_version != latest:
             continue
         if r.attribution_status == models.StructuralAttributionStatus.DISPUTED.value:
-            out["DISPUTED"].append(r.word_ref)
-        elif r.attribution_status == models.StructuralAttributionStatus.UNRESOLVED.value:
-            out["UNRESOLVED"].append(r.word_ref)
+            out["DISPUTED"].append(cast(str, r.word_ref))
+        elif (
+            r.attribution_status == models.StructuralAttributionStatus.UNRESOLVED.value
+        ):
+            out["UNRESOLVED"].append(cast(str, r.word_ref))
     return out
 
 
@@ -143,7 +144,10 @@ def validate_root_research_coverage(
         # would otherwise hold (a repeated ref never counts as full "exactly once"
         # coverage). verse_ref substitution stays impossible via word_ref
         # granularity (a verse-level ref lands in ``unexpected``).
-        exact_set_match=bool(expected) and not missing and not unexpected and not duplicates,
+        exact_set_match=bool(expected)
+        and not missing
+        and not unexpected
+        and not duplicates,
         disputed_visible=tuple(visible["DISPUTED"]),
         unresolved_visible=tuple(visible["UNRESOLVED"]),
     )
@@ -181,9 +185,7 @@ def merge_reconciliation(
                 f"Invalid final reconciliation disposition for {ref}: {r['final']!r}"
             )
         if not r.get("rationale"):
-            raise ValueError(
-                f"Reconciliation for {ref} requires a non-empty rationale"
-            )
+            raise ValueError(f"Reconciliation for {ref} requires a non-empty rationale")
         prev = preliminary[ref]
         lineage_entry = {
             "word_ref": ref,
@@ -236,7 +238,9 @@ def finalize_root_disposition(
     verdict_val = v.get("verdict")
     discover_result = j.get("result")
 
-    completeness = COMPLETENESS_COMPLETE if coverage.exact_set_match else COMPLETENESS_PENDING
+    completeness = (
+        COMPLETENESS_COMPLETE if coverage.exact_set_match else COMPLETENESS_PENDING
+    )
     # Root semantic unity is NON-NEGOTIABLE and cross-lens: an occurrence held
     # unreconciled by ANY lens blocks universal presence. Besides coverage-mapping
     # RESISTANT/STRUCTURAL_UNCERTAINTY, this includes the discovery pass's own
@@ -246,16 +250,20 @@ def finalize_root_disposition(
     # established is not "present, reconciled, in every occurrence". (Without this
     # a root could be simultaneously research_state=UNRESOLVED and
     # universal_presence_holds=True — a contradiction that violated root unity.)
-    discover_inconsistent = list((j.get("presence") or {}).get("inconsistent_refs") or [])
-    unreconciled = sorted(set(final_resistant) | set(final_uncertain) | set(discover_inconsistent))
+    discover_inconsistent = list(
+        (j.get("presence") or {}).get("inconsistent_refs") or []
+    )
+    unreconciled = sorted(
+        set(final_resistant) | set(final_uncertain) | set(discover_inconsistent)
+    )
     universal = (
         coverage.exact_set_match
         and not unreconciled
         and verdict_val == "SUPPORTED"
         and discover_result != "UNRESOLVED"
     )
-    independent_verification = "PASSED" if universal else (
-        "FAILED" if verdict_val == "REFUTED" else "PARTIAL"
+    independent_verification = (
+        "PASSED" if universal else ("FAILED" if verdict_val == "REFUTED" else "PARTIAL")
     )
     if discover_result == "UNRESOLVED" or verdict_val == "REFUTED":
         research_state, strength = "UNRESOLVED", "UNRESOLVED"

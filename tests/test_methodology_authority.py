@@ -101,7 +101,7 @@ def _active_snapshot(test_db, monkeypatch) -> models.CorpusSnapshot:
 
 def _payload() -> dict:
     return {
-        "target_contract": "ROOT_CONCEPT",
+        "target_contract": "ROOT_CORE",
         "target_expression": "test",
     }
 
@@ -173,9 +173,7 @@ def test_registry_read_model_and_active_authorities_admit_run(test_db, monkeypat
     assert test_db.query(models.ResearchRun).count() == 1
 
 
-def test_unknown_retired_and_hash_drift_reject_future_admission(
-    test_db, monkeypatch
-):
+def test_unknown_retired_and_hash_drift_reject_future_admission(test_db, monkeypatch):
     methodology = _methodology()
     test_db.add(methodology)
     snapshot = _active_snapshot(test_db, monkeypatch)
@@ -223,7 +221,7 @@ def test_methodology_migration_seeds_source_bound_revision_and_is_reversible(
                 "WHERE lifecycle_state='CURRENT'"
             )
         ).one()
-        assert record.id == "LISAN_QURANIC_SEMANTIC_EXTRACTION@01784170cac4"
+        assert record.id == "LISAN_QURANIC_SEMANTIC_EXTRACTION@b30ee619d8b8"
         assert record.lifecycle_state == "CURRENT"
         assert record.source_reference == SOURCE_REFERENCE
         assert record.source_sha256 == SOURCE_SHA256
@@ -236,7 +234,10 @@ def test_methodology_migration_seeds_source_bound_revision_and_is_reversible(
 
     alembic.command.upgrade(config, "head")
     with engine.connect() as connection:
-        assert connection.execute(
-            sa.text("SELECT count(*) FROM methodology_revisions")
-        ).scalar_one() == 2
+        assert (
+            connection.execute(
+                sa.text("SELECT count(*) FROM methodology_revisions")
+            ).scalar_one()
+            == 3
+        )
     engine.dispose()

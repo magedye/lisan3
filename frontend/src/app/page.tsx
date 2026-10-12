@@ -16,7 +16,7 @@ type ResearchRun = components["schemas"]["ResearchRunResponse"];
 export default function AttentionCenter() {
   const attention = useApiResource<AttentionResponse>("/api/attention");
   const [expression, setExpression] = useState("");
-  const [contractType, setContractType] = useState("ROOT_CONCEPT");
+  const [contractType, setContractType] = useState("ROOT_CORE");
   const [submitting, setSubmitting] = useState(false);
   const [result, setResult] = useState<AskResponse | null>(null);
   const [actionError, setActionError] = useState<string | null>(null);
@@ -156,7 +156,7 @@ export default function AttentionCenter() {
           <label className="form-field">
             <span>نوع العقد الدلالي</span>
             <select id="ask-contract" name="contract_type" className="select" value={contractType} onChange={(event) => setContractType(event.target.value)}>
-              <option value="ROOT_CONCEPT">مفهوم الجذر (Root Concept)</option>
+              <option value="ROOT_CORE">مفهوم الجذر (Root Concept)</option>
               <option value="LEXEME">معنى المفردة العام</option>
               <option value="LOCAL_MEANING">المعنى الموضعي (Local Meaning)</option>
               <option value="VERSE_MEANING">معنى الآية</option>

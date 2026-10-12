@@ -18,7 +18,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import sys
 from pathlib import Path
 
 from backend.domain.services.research_coverage import (
@@ -91,7 +90,9 @@ def main(argv: list[str] | None = None) -> int:
     if args.json:
         print(json.dumps(report, indent=2, ensure_ascii=False))
     else:
-        print(f"Five-root exact-set structural derivation (snapshot {report['snapshot']})")
+        print(
+            f"Five-root exact-set structural derivation (snapshot {report['snapshot']})"
+        )
         for root, r in report["roots"].items():
             flag = "OK" if r["exact_count_match"] else "DIFF"
             print(
